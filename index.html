@@ -489,6 +489,43 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .ab-spark{position:fixed;width:9px;height:9px;border-radius:50%;z-index:60;pointer-events:none}
 .actionbar.shake{animation:barShake .42s cubic-bezier(.36,.07,.19,.97)}
 @keyframes barShake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-4px)}40%,60%{transform:translateX(4px)}}
+
+/* ===== MOBILE REFINEMENT — phone-only, desktop untouched ===== */
+@media(max-width:600px){
+  /* tighter side gutters + section spacing so things stop feeling oversized */
+  .wrap{padding:0 16px}
+  .section{padding:24px 0}
+  .section h2{font-size:22px}
+  .section .sub{font-size:14px;margin-bottom:18px}
+
+  /* hero: a little shorter and less padding */
+  .hero-inner{min-height:200px;padding:22px 18px}
+  .hero-text h1{font-size:clamp(28px,8vw,38px)}
+  .hero-sub{font-size:13.5px;padding:5px 12px}
+
+  /* lesson path: smaller peaks + labels, tighter trail */
+  .trail{gap:18px;padding:18px 0 8px}
+  .peak{width:68px;height:68px;border-radius:18px}
+  .peak .sym{font-size:23px}
+  .peak .badge{width:21px;height:21px;font-size:11px}
+  .peak-label{font-size:12.5px;max-width:118px}
+  .peak-label .sub{font-size:10px;padding:2px 9px}
+
+  /* zone headers */
+  .zone-head{margin:22px 0 4px;padding:10px 13px}
+  .zone-head .t{font-size:15.5px}
+  .zone-head .d{font-size:11.5px}
+
+  /* exercise card breathing room */
+  .excard{padding:22px 18px}
+  .exq{font-size:20px}
+  .note-body{font-size:15px}
+}
+@media(max-width:380px){
+  .peak{width:62px;height:62px}
+  .peak .sym{font-size:21px}
+  .hero-text h1{font-size:26px}
+}
 </style>
 </head>
 <body>
