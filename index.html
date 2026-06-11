@@ -490,6 +490,10 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .actionbar.shake{animation:barShake .42s cubic-bezier(.36,.07,.19,.97)}
 @keyframes barShake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-4px)}40%,60%{transform:translateX(4px)}}
 
+/* review-tab due badge */
+.tab-badge{display:none;margin-left:6px;background:var(--crimson);color:#fff;font-size:11px;font-weight:800;padding:1px 7px;border-radius:100px;line-height:1.5;vertical-align:1px}
+.tab-badge.on{display:inline-block}
+
 /* ===== MOBILE REFINEMENT — phone-only, desktop untouched ===== */
 @media(max-width:600px){
   /* tighter side gutters + section spacing so things stop feeling oversized */
@@ -526,6 +530,87 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   .peak .sym{font-size:21px}
   .hero-text h1{font-size:26px}
 }
+
+/* ===== MOBILE REFINEMENT pt.2 — alphabet / review / exercise ===== */
+@media(max-width:600px){
+  /* --- alphabet page --- */
+  .alpha-grid{grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:9px}
+  .glyph{padding:14px 4px 11px;border-radius:13px}
+  .glyph .d{font-size:27px}
+  .glyph .r{font-size:11px;margin-top:5px}
+  .alpha-panel{margin-top:30px}
+  .alpha-spotlight{gap:15px;padding:14px 16px;margin-bottom:18px;top:64px}
+  .alpha-spotlight .big{font-size:46px;min-width:52px}
+  .alpha-spotlight .meta{font-size:13.5px}
+  .section h3{font-size:16px}
+
+  /* --- review (flip card) page --- */
+  .flip,.flip-inner{min-height:200px}
+  .flip-face{padding:24px 18px}
+  .flip .front{font-size:44px;gap:12px}
+  .flip .meaning{font-size:28px}
+  .flip .rom{font-size:14px}
+  .srs-back-deva{font-size:19px}
+  .reveal-btn{padding:12px 28px;font-size:14px}
+  .grades{gap:8px;margin-top:14px}
+  .grade{padding:11px 8px;font-size:13px}
+
+  /* --- exercise inner content --- */
+  .exbig{font-size:36px;gap:10px}
+  .exq{font-size:19px}
+  .mcgrid{gap:10px;margin-top:18px}
+  .mc{font-size:16px;padding:14px 14px}
+  .tinput input{font-size:16px;padding:12px 14px}
+  .fill-sentence{font-size:21px}
+  .note-eg .egcard .nd{font-size:17px}
+  .li-bigbtn{width:72px;height:72px;font-size:30px}
+}
+
+/* ===== MOBILE REFINEMENT pt.3 — header / modals / settings / tiles ===== */
+@media(max-width:600px){
+  /* --- header: stop the right-side cluster from crowding the logo --- */
+  .bar{height:56px;gap:10px}
+  .logo{font-size:16px;gap:8px}
+  .logo .mark{width:28px;height:28px;font-size:15px;border-radius:8px}
+  .iconbtn{height:33px;min-width:33px;padding:0 10px;font-size:12.5px;white-space:nowrap}
+  .levelwrap{padding:3px 4px;gap:6px}
+  .lvl-badge{width:30px;height:30px;font-size:13px}
+
+  /* --- modals: less padding, use the screen width --- */
+  .modal-bg{padding:16px}
+  .modal{padding:24px 22px;max-width:none}
+  .modal h3{font-size:21px}
+  .modal p{font-size:13.5px}
+  .levelup-card .big-badge{width:84px;height:84px;font-size:36px}
+  .levelup-card h3{font-size:26px}
+  .profile-rank .big-badge{width:46px;height:46px;font-size:19px}
+  .profile-stat{font-size:14px;padding:10px 0}
+
+  /* --- settings rows --- */
+  .set-row{padding:14px 15px;gap:12px}
+  .set-row .desc{font-size:12.5px}
+  #voice-select{max-width:150px!important;font-size:13px}
+
+  /* --- word-bank & match tiles --- */
+  .wb-answer{min-height:50px;margin:16px 0 4px}
+  .wbtile{font-size:16px;padding:9px 13px}
+  .wb-bank{gap:8px;margin-top:14px}
+  .match-grid{gap:10px;margin-top:18px}
+  .match-col{gap:8px}
+  .mtile{padding:12px 10px;min-height:46px}
+  .mtile.deva{font-size:17px}
+}
+/* small phones (~360px): trim the header a touch more so nothing clips */
+@media(max-width:380px){
+  .logo{font-size:15px}
+  .iconbtn{padding:0 8px}
+  .bar{gap:8px}
+}
+/* very small phones (≤340px): collapse wordmark to just the ने mark */
+@media(max-width:340px){
+  .logo{font-size:0;gap:0}
+  .logo .mark{font-size:15px}
+}
 </style>
 </head>
 <body>
@@ -536,7 +621,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
     <nav class="tabs" id="tabs">
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
-      <button class="tab" data-v="review" onclick="show('review')">Review</button>
+      <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
     <div style="display:flex;gap:8px;align-items:center">
@@ -706,7 +791,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
     <div class="profile-stat"><span class="pk">⭐ Total XP</span><span class="pv" id="pf-xp">0</span></div>
     <div class="profile-stat"><span class="pk">📚 Words learned</span><span class="pv" id="pf-words">0</span></div>
     <div class="profile-stat"><span class="pk">🎓 Lessons done</span><span class="pv" id="pf-lessons">0 / 17</span></div>
-    <div class="profile-stat"><span class="pk">🎬 Accuracy</span><span class="pv" id="pf-acc">—</span></div>
+    <div class="profile-stat"><span class="pk">💯 Accuracy</span><span class="pv" id="pf-acc">—</span></div>
   </div>
 </div>
 
@@ -745,11 +830,11 @@ const UNITS=[
   {n:3,t:'To be & describing',d:'हो / छ, negation & adjectives',lessons:['tobe1','tobe2','negate','thisthat','adj','colors','have','smalltalk']},
   {n:4,t:'Postpositions & places',d:'मा, बाट, लाई, को & getting around',lessons:['pma','pbata','plai','pko','places','directions']},
   {n:5,t:'Present tense & daily life',d:'Verbs you use every day',lessons:['verbs','presI','presOth','presNeg','food','drinks','family','routine']},
-  {n:6,t:'Time, past & future',d:'Clock, calendar & talking across time',lessons:['time','week','past1','past2','future','quest1','quest2']},
+  {n:6,t:'Time, past & future',d:'Clock, calendar & talking across time',lessons:['time','week','past1','past2','ergative','future','quest1','quest2']},
   {n:7,t:'Express more',d:'Can, must & happening now',lessons:['cansk','must','cont']},
   {n:8,t:'Out in the world',d:'Shopping, wanting & travel',lessons:['shop','want','travel']},
-  {n:9,t:'Connect & converse',d:'Weather, feelings & real talk',lessons:['weather','body','feelings','conn1','conn2','convo']},
-  {n:10,t:'Sound like a local',d:'Respect, comparison & opinions',lessons:['hon','requests','compare','opinion']},
+  {n:9,t:'Connect & converse',d:'Weather, feelings & real talk',lessons:['weather','body','feelings','experiencer','conn1','conn2','conditional','convo']},
+  {n:10,t:'Sound like a local',d:'Respect, comparison & opinions',lessons:['hon','levels','requests','compare','opinion']},
 ];
 const LESSONS = [
   /* ===================== UNIT 1 · THE SCRIPT ===================== */
@@ -1277,6 +1362,17 @@ const LESSONS = [
     {t:'mc',q:'"Yesterday she came"',o:['हिजो उनी आइन्','भोलि उनी आउँछिन्','उनी आउँछिन्','ऊ आयो'],a:0},
     {t:'fill',q:'Complete: "We went to the market"',s:'हामी बजार ___',o:['गयौं','गयो','गए','गएँ'],a:0,r:'Haami bajaar gayaun'},
   ]},
+  {id:'ergative',emoji:'✍️',title:'The doer — ले',meta:'मैले … past-tense subject',vocab:[['मैले','maile','I (as the doer)'],['उसले','usle','he/she (as doer)'],['तिमीले','timile','you (doer, familiar)'],['हामीले','haamile','we (as doer)'],['तपाईंले','tapaile','you (doer, polite)'],['मैले भात खाएँ','maile bhaat khaaen','I ate rice'],['उसले के गर्यो?','usle ke garyo?','what did he do?']],ex:[
+    {t:'note',tag:'Key grammar',q:'In the past, the doer takes ले',body:'<p>When you <b>do something to something</b> in the past, the doer gets the ending <span class="deva">ले</span>.</p><p>So <span class="deva">म</span> (I) becomes <span class="deva">मैले</span> when I am the one acting:</p>',eg:[['मैले भात खाएँ','maile bhaat khaaen','I ate rice'],['उसले पानी पियो','usle paani piyo','he drank water'],['तपाईंले के भन्नुभयो?','tapaile ke bhannubhayo?','what did you say?']],tip:'For "went / came" (no object) you usually skip ले: म गएँ — not मैले गएँ.'},
+    {t:'mc',q:'"I ate rice" — which is right?',o:['मैले भात खाएँ','म भात खाएँ','मलाई भात खाएँ','मेरो भात खाएँ'],a:0},
+    {t:'mc',q:'What does ले mark?',o:['the place','the doer (in the past)','a question','the time'],a:1},
+    {t:'fill',q:'Add the doer: "I ate rice"',s:'___ भात खाएँ',o:['मैले','म','मलाई','मेरो'],a:0,r:'maile bhaat khaaen'},
+    {t:'tr',q:'Translate: "I ate rice"',a:'मैले भात खाएँ',r:'Maile bhaat khaaen',h:'doer म → मैले'},
+    {t:'match',q:'Pronoun → doer form',pairs:[['म','मैले'],['ऊ','उसले'],['हामी','हामीले'],['तिमी','तिमीले']]},
+    {t:'li',q:'What did you hear?',say:'मैले',r:'Maile',o:['to me','my','I (doer)','we'],a:2},
+    {t:'mc',q:'"उसले" means…',d:'उसले',r:'Usle',o:['to him','he/she (as doer)','his','they'],a:1},
+    {t:'mc',q:'Which sentence needs NO ले?',o:['म गएँ (I went)','मैले लेखेँ (I wrote)','उसले खायो (he ate)','तपाईंले पढ्नुभयो'],a:0},
+  ]},
   {id:'future',emoji:'➡️',title:'Future tense',meta:'म ___नेछु',vocab:[['जानेछु','jaanechu','I will go'],['खानेछु','khaanechu','I will eat'],['गर्नेछु','garnechu','I will do'],['आउनेछु','aaunechu','I will come'],['भोलि','bholi','tomorrow']],ex:[
     {t:'note',tag:'Grammar',q:'Future = stem + नेछु',body:'<p>For a clear future with <b>म</b>, add <span class="deva">-नेछु</span>. In everyday speech, the plain present (खान्छु) is also often used for the future when the time is clear.</p>',eg:[['जानु → जानेछु','jaanu → jaanechu','I will go'],['खानु → खानेछु','khaanu → khaanechu','I will eat'],['गर्नु → गर्नेछु','garnu → garnechu','I will do']]},
     {t:'mc',q:'"I will eat"',o:['म खानेछु','म खाएँ','म खान्छु','मैले खाएँ'],a:0},
@@ -1424,6 +1520,17 @@ const LESSONS = [
     {t:'mc',q:'"I feel sleepy"',o:['मलाई निद्रा लाग्यो','मलाई भोक लाग्यो','म खुसी छु','म थाकेँ'],a:0},
     {t:'fill',q:'Complete: "I feel cold"',s:'मलाई ___ लाग्यो',o:['जाडो','भोक','प्यास','खुसी'],a:0,r:'Malai jaado lagyo'},
   ]},
+  {id:'experiencer',emoji:'💭',title:'It happens to me — मलाई',meta:'भोक लाग्यो, मन पर्छ …',vocab:[['मलाई','malai','to me / for me'],['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry'],['मलाई मन पर्छ','malai man parchha','I like it'],['मलाई थाहा छ','malai thaahaa chha','I know'],['मलाई चाहियो','malai chaahiyo','I want / need'],['मलाई जाडो लाग्यो','malai jaado laagyo','I feel cold'],['लाग्नु','laagnu','to be felt / to seem']],ex:[
+    {t:'note',tag:'Big idea',q:'Feelings happen TO you',body:'<p>English says "I <b>am</b> hungry." Nepali says hunger <b>happened to me</b>:</p><p><span class="deva">मलाई भोक लाग्यो</span> — literally "to-me hunger felt."</p><p>The person is <span class="deva">मलाई</span> (to me), <b>not</b> <span class="deva">म</span> (I).</p>',eg:[['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry'],['मलाई जाडो लाग्यो','malai jaado laagyo','I feel cold'],['मलाई मन पर्छ','malai man parchha','I like it']],tip:'This one frame covers hunger, thirst, cold, sleepiness, liking, knowing & wanting.'},
+    {t:'mc',q:'"I am hungry" in Nepali is…',o:['मलाई भोक लाग्यो','म भोक छु','मेरो भोक छ','मैले भोक खाएँ'],a:0},
+    {t:'mc',q:'Which word means "to me"?',o:['म','मेरो','मलाई','मैले'],a:2},
+    {t:'fill',q:'"I feel tired"',s:'___ थकाइ लाग्यो',o:['मलाई','म','मेरो','मैले'],a:0,r:'malai thakaai laagyo'},
+    {t:'tr',q:'Translate: "I like it"',a:'मलाई मन पर्छ',r:'Malai man parchha',h:'starts with मलाई'},
+    {t:'match',q:'Match the feeling',pairs:[['मलाई भोक लाग्यो','I am hungry'],['मलाई मन पर्छ','I like it'],['मलाई थाहा छ','I know'],['मलाई चाहियो','I want']]},
+    {t:'li',q:'What did you hear?',say:'मलाई भोक लाग्यो',r:'Malai bhok laagyo',o:['I am cold','I am hungry','I am happy','I know'],a:1},
+    {t:'mc',q:'"मलाई थाहा छ" means…',d:'मलाई थाहा छ',r:'Malai thaahaa chha',o:['I want','I know','I am hungry','I like'],a:1},
+    {t:'wb',q:'Build: "I like it"',a:['मलाई','मन','पर्छ'],r:'malai man parchha'},
+  ]},
   {id:'conn1',emoji:'🔗',title:'And, but, because',meta:'Joining ideas',vocab:[['र','ra','and'],['तर','tara','but'],['किनभने','kinabhane','because'],['या','yaa','or'],['पनि','pani','also / too']],ex:[
     {t:'note',tag:'Tip',q:'Small words, big difference',body:'<p>These connectors let you build longer sentences: <span class="deva">र</span> (and), <span class="deva">तर</span> (but), <span class="deva">किनभने</span> (because), <span class="deva">पनि</span> (also).</p>'},
     {t:'mc',q:'What does "र" mean?',o:['but','and','because','or'],a:1},
@@ -1447,6 +1554,16 @@ const LESSONS = [
     {t:'mc',q:'"If it rains, I will not go"',o:['यदि पानी पर्यो भने म जान्न','पानी पर्यो र म गएँ','म जान्छु तर पानी','पानी पर्दैन'],a:0},
     {t:'tr',q:'Translate: "and then"',a:'अनि',r:'Ani',h:'links the next action'},
     {t:'fill',q:'Complete: "... so I went home"',s:'___ म घर गएँ',o:['त्यसैले','यदि','जब','या'],a:0,r:'Tyasaile ma ghar gaen'},
+  ]},
+  {id:'conditional',emoji:'🔀',title:'If… — the -ए ending',meta:'गए, आए … "if"',vocab:[['भने','bhane','if / then (clause marker)'],['यदि','yadi','if (optional opener)'],['पानी परे','paani pare','if it rains'],['तिमी आए','timi aae','if you come'],['सम्भव भए','sambhav bhae','if possible'],['गए','gae','if (one) goes']],ex:[
+    {t:'note',tag:'Pattern',q:'"If" = verb + ए',body:'<p>To say "if", add <span class="deva">ए</span> to the verb stem:</p><p><span class="deva">आउनु</span> (to come) → <span class="deva">आए</span> (if come)<br><span class="deva">हुनु</span> (to be) → <span class="deva">भए</span> (if it is)</p><p>You can add <span class="deva">भने</span> after it for emphasis.</p>',eg:[['तिमी आए म जान्छु','timi aae ma jaanchu','if you come, I will go'],['पानी परे','paani pare','if it rains'],['सम्भव भए','sambhav bhae','if possible']],tip:'In speech, भने alone can mean "if": काम सकियो भने… = "if the work is done…".'},
+    {t:'mc',q:'"If it rains" is…',o:['पानी परे','पानी पर्यो','पानी पर्छ','पानी पानी'],a:0},
+    {t:'fill',q:'"If you come, I will go"',s:'तिमी ___ म जान्छु',o:['आए','आउँछ','गयो','आउनु'],a:0,r:'timi aae ma jaanchu'},
+    {t:'mc',q:'What does भने mark?',o:['the question','the "if" clause','the past','the place'],a:1},
+    {t:'tr',q:'Translate: "if possible"',a:'सम्भव भए',r:'Sambhav bhae',h:'हुनु → भए'},
+    {t:'match',q:'Match the "if" phrases',pairs:[['पानी परे','if it rains'],['तिमी आए','if you come'],['सम्भव भए','if possible'],['भने','then / if']]},
+    {t:'li',q:'What did you hear?',say:'तिमी आए',r:'Timi aae',o:['you came','if you come','you go','you eat'],a:1},
+    {t:'mc',q:'Turn "to be" (हुनु) into "if it is":',o:['भए','भयो','हुन्छ','हो'],a:0},
   ]},
   {id:'convo',emoji:'💬',title:'Putting it together',meta:'A real conversation',vocab:[['कस्तो छ?','kasto chha?','how are you?'],['सञ्चै छु','sanchai chhu','I am well'],['भेटेर खुसी लाग्यो','bhetera khusi lagyo','nice to meet you'],['फेरि भेटौंला','pheri bhetaunla','see you again']],ex:[
     {t:'note',tag:'You made it!',q:'Time to put it all together',body:'<p>This final lesson stitches together greetings, names, origin and goodbyes into one real exchange. Read each line aloud — you now know all of it.</p>'},
@@ -1472,6 +1589,16 @@ const LESSONS = [
     {t:'wb',q:'Build (polite): "You eat"',a:['तपाईं','खानुहुन्छ'],r:'Tapai khaanuhunchha',pool:['तपाईं','खानुहुन्छ','खान्छौ','म']},
     {t:'tr',q:'Translate politely: "Where are you going?"',a:'तपाईं कहाँ जानुहुन्छ?',r:'Tapai kahaa jaanuhunchha?',h:'तपाईं + verb-नुहुन्छ'},
     {t:'note',tag:'Always safe',q:'When unsure, be polite',body:'<p>With elders, strangers and anyone you respect, use <span class="deva">तपाईं</span> + <span class="deva">-नुहुन्छ</span>. It is never wrong.</p>'},
+  ]},
+  {id:'levels',emoji:'🙏',title:'Levels of respect',meta:'तँ · तिमी · तपाईं',vocab:[['तँ','ta','you (very informal)'],['तिमी','timi','you (familiar)'],['तपाईं','tapai','you (polite)'],['जान्छस्','jaanchas','go (with तँ)'],['जान्छौ','jaanchau','go (with तिमी)'],['जानुहुन्छ','jaanuhunchha','go (with तपाईं)'],['जी','ji','respectful suffix (Ram-ji)']],ex:[
+    {t:'note',tag:'Culture + grammar',q:'One verb, three respect levels',body:'<p>The verb ending changes with how much respect you show. "You go":</p><p><span class="deva">तँ जान्छस्</span> — very informal<br><span class="deva">तिमी जान्छौ</span> — familiar<br><span class="deva">तपाईं जानुहुन्छ</span> — polite</p>',eg:[['तपाईं कहाँ जानुहुन्छ?','tapai kahaa jaanuhunchha?','where are you going? (polite)'],['राम जी','raam ji','Ram-ji (respectful)']],tip:'With elders or strangers, always use तपाईं. Add जी to a name to show respect.'},
+    {t:'mc',q:'Polite "you go" is…',o:['तपाईं जानुहुन्छ','तँ जान्छस्','तिमी जान्छौ','म जान्छु'],a:0},
+    {t:'mc',q:'Safest "you" with a stranger?',o:['तँ','तिमी','तपाईं','ऊ'],a:2},
+    {t:'fill',q:'Polite: "do you eat?"',s:'___ खानुहुन्छ?',o:['तपाईं','तँ','तिमी','ऊ'],a:0,r:'tapai khaanuhunchha?'},
+    {t:'tr',q:'Translate: "you" (polite)',a:'तपाईं',r:'Tapai',h:'the safe, respectful form'},
+    {t:'match',q:'Match the respect level',pairs:[['तँ','very informal'],['तिमी','familiar'],['तपाईं','polite'],['जी','respectful suffix']]},
+    {t:'li',q:'What did you hear?',say:'तपाईं जानुहुन्छ',r:'Tapai jaanuhunchha',o:['I go','you go (polite)','we go','he goes'],a:1},
+    {t:'mc',q:'Adding जी to a name shows…',o:['anger','respect','a question','the past'],a:1},
   ]},
   {id:'requests',emoji:'होस्',title:'Polite requests',meta:'... -नुहोस् = please ...',vocab:[['गर्नुहोस्','garnuhos','please do'],['बस्नुहोस्','basnuhos','please sit'],['दिनुहोस्','dinuhos','please give'],['आउनुहोस्','aaunuhos','please come'],['जानुहोस्','jaanuhos','please go (ahead)'],['पर्खनुहोस्','parkhanuhos','please wait'],['सुन्नुहोस्','sunnuhos','please listen']],ex:[
     {t:'note',tag:'Asking nicely',q:'Requests with -नुहोस्',body:'<p>To politely ask someone to do something, add <span class="deva">-नुहोस्</span> to the verb.</p>',eg:[['गर्नु → गर्नुहोस्','garnuhos','please do'],['बस्नु → बस्नुहोस्','basnuhos','please sit'],['दिनु → दिनुहोस्','dinuhos','please give']]},
@@ -1551,19 +1678,75 @@ async function sendMagicLink(){const email=document.getElementById('auth-email')
   catch(e){m.className='msg-line err';m.textContent=e.message||'Could not send link.';}}
 async function signOut(){if(sb)await sb.auth.signOut();user=null;onAuthChange();closeAuth();}
 
+/* ===== AUDIO: recorded files first, speech-synthesis as fallback ===== */
+const AUDIO_BASE='audio/';
+let AUDIO_KEYS=new Set();
+const audioCache=new Map();
+function audioKey(s){let h=0x811c9dc5;const b=new TextEncoder().encode(s);for(let i=0;i<b.length;i++){h^=b[i];h=Math.imul(h,0x01000193);}return (h>>>0).toString(16).padStart(8,'0');}
+function loadAudioManifest(){
+  fetch(AUDIO_BASE+'manifest.json',{cache:'no-cache'})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{if(!d)return;const keys=Array.isArray(d)?d:(d.keys||[]);AUDIO_KEYS=new Set(keys);if(AUDIO_KEYS.size)loadVoices();})
+    .catch(()=>{});
+}
+function playFile(t,rate){
+  const k=audioKey(t);
+  if(!AUDIO_KEYS.has(k))return false;
+  try{
+    let a=audioCache.get(k);
+    if(!a){a=new Audio(AUDIO_BASE+k+'.mp3');audioCache.set(k,a);}
+    a.pause();a.currentTime=0;a.playbackRate=rate||1;
+    const p=a.play();
+    if(p&&p.catch)p.catch(()=>speakTTS(t,rate&&rate<1?0.5:undefined));
+    return true;
+  }catch(e){return false;}
+}
+/* public entry points used throughout the app */
+function speak(t){if(!t)return;if(playFile(t,1))return;speakTTS(t);}
+function speakSlow(t){if(!t)return;if(playFile(t,0.6))return;speakTTS(t,0.5);}
+
+/* ----- speech-synthesis fallback (improved voice selection + iOS unlock) ----- */
 let voices=[],chosenVoice=null;
-function loadVoices(){voices=speechSynthesis.getVoices();const sel=document.getElementById('voice-select');const ne=voices.filter(v=>/ne|hi/i.test(v.lang));sel.innerHTML='';
-  if(!voices.length){document.getElementById('voice-status').textContent='No system voices found';return;}
-  const list=ne.length?ne:voices;list.forEach(v=>{const o=document.createElement('option');o.value=v.name;o.textContent=v.name+' ('+v.lang+')';sel.appendChild(o);});
-  const saved=list.find(v=>v.name===S.voice);chosenVoice=saved||list[0];sel.value=chosenVoice.name;
-  document.getElementById('voice-status').textContent=ne.length?ne.length+' Nepali/Hindi voice(s) available':'Using closest available voice';
-  sel.onchange=()=>{chosenVoice=voices.find(v=>v.name===sel.value);S.voice=sel.value;save();};}
-function speak(t){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ne-NP';if(chosenVoice){u.voice=chosenVoice;u.lang=chosenVoice.lang;}u.rate=.85;speechSynthesis.speak(u);}
-function speakSlow(t){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ne-NP';if(chosenVoice){u.voice=chosenVoice;u.lang=chosenVoice.lang;}u.rate=.5;speechSynthesis.speak(u);}
+function loadVoices(){
+  if(!('speechSynthesis'in window))return;
+  voices=speechSynthesis.getVoices()||[];
+  const ne=voices.filter(v=>/^ne(\b|[-_])/i.test(v.lang)||/nepali/i.test(v.name));
+  const hi=voices.filter(v=>/^hi(\b|[-_])/i.test(v.lang)||/hindi/i.test(v.name));
+  const pool=[...ne,...hi];
+  chosenVoice=voices.find(v=>v.name===S.voice)||pool[0]||null;
+  const sel=document.getElementById('voice-select');
+  if(sel){
+    const list=pool.length?pool:voices;
+    sel.innerHTML='';
+    if(!list.length){const o=document.createElement('option');o.textContent=AUDIO_KEYS.size?'Recorded audio':'System default';sel.appendChild(o);}
+    list.forEach(v=>{const o=document.createElement('option');o.value=v.name;o.textContent=v.name+' ('+v.lang+')';sel.appendChild(o);});
+    if(chosenVoice)sel.value=chosenVoice.name;
+    sel.onchange=()=>{chosenVoice=voices.find(v=>v.name===sel.value)||null;try{S.voice=sel.value;save();}catch(e){}};
+  }
+  const status=document.getElementById('voice-status');
+  if(status){
+    if(AUDIO_KEYS.size)status.textContent='Using recorded Nepali audio'+(pool.length?' (+ system voice fallback)':'');
+    else if(ne.length)status.textContent=ne.length+' Nepali voice(s) available';
+    else if(hi.length)status.textContent='Using a Hindi voice (no Nepali on this device)';
+    else status.textContent='No system voice — add a Nepali or Hindi voice in your device settings';
+  }
+}
+function speakTTS(t,rate){
+  if(!('speechSynthesis'in window))return;
+  try{speechSynthesis.cancel();}catch(e){}
+  const u=new SpeechSynthesisUtterance(t);u.lang='ne-NP';
+  if(chosenVoice){u.voice=chosenVoice;u.lang=chosenVoice.lang;}
+  u.rate=rate||.85;
+  speechSynthesis.speak(u);
+}
 if('speechSynthesis'in window)speechSynthesis.onvoiceschanged=loadVoices;
+/* iOS needs a first speech call inside a user gesture to enable audio */
+let _audioUnlocked=false;
+function unlockAudio(){if(_audioUnlocked)return;_audioUnlocked=true;if('speechSynthesis'in window){try{const u=new SpeechSynthesisUtterance(' ');u.volume=0;speechSynthesis.speak(u);}catch(e){}}}
+document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
-  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});if(v==='review'){srsSession=null;renderSRS();}}
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();}
 
 /* ===== LEVELING ENGINE ===== */
 const MAX_LEVEL=50;
@@ -1580,6 +1763,12 @@ function paintStats(){
     else g.textContent='🎉 You finished the course!';
   }
   paintLevel();
+  paintHomeStats();
+}
+function paintHomeStats(){
+  const due=S.srs.filter(c=>c.due<=Date.now()).length;
+  const b=document.getElementById('review-badge');
+  if(b){if(due>0){b.textContent=due;b.classList.add('on');}else{b.classList.remove('on');b.textContent='';}}
 }
 function paintLevel(pop){const li=levelInfo(S.xp);const rk=rankFor(li.level);
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
@@ -1639,12 +1828,12 @@ function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);docum
   document.getElementById('profile-modal').classList.add('show');}
 function closeProfile(){document.getElementById('profile-modal').classList.remove('show');}
 
-const SYM={sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चा',greet:'न',pron:'म',num1:'१',num2:'सय',courtesy:'ह',intro:'ना',daytime:'बि',tobe1:'हो',tobe2:'छ',negate:'नै',thisthat:'यो',adj:'रा',colors:'रं',have:'सँ',pma:'मा',pbata:'बा',plai:'ला',pko:'को',places:'घर',directions:'दा',verbs:'ख',presI:'छु',presOth:'छन',presNeg:'न्न',food:'भा',family:'आ',routine:'दि',past1:'एँ',past2:'यो',future:'ने',quest1:'के',quest2:'क',shop:'स',travel:'ब',weather:'घा',body:'टा',feelings:'खु',conn1:'र',conn2:'यदि',convo:'भे',smalltalk:'क',drinks:'चि',week:'आ',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',compare:'भन्',opinion:'ला',requests:'होस्'};
-function buildPath(){const root=document.getElementById('path-root');root.innerHTML='';let g=0,lastPw=null;const firstUndone=LESSONS.find(l=>!S.done.includes(l.id));const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
+const SYM={sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चा',greet:'न',pron:'म',num1:'१',num2:'सय',courtesy:'ह',intro:'ना',daytime:'बि',tobe1:'हो',tobe2:'छ',negate:'नै',thisthat:'यो',adj:'रा',colors:'रं',have:'सँ',pma:'मा',pbata:'बा',plai:'ला',pko:'को',places:'घर',directions:'दा',verbs:'ख',presI:'छु',presOth:'छन',presNeg:'न्न',food:'भा',family:'आ',routine:'दि',past1:'एँ',past2:'यो',ergative:'ले',future:'ने',quest1:'के',quest2:'क',shop:'स',travel:'ब',weather:'घा',body:'टा',feelings:'खु',experiencer:'भो',conn1:'र',conn2:'यदि',conditional:'भए',convo:'भे',smalltalk:'क',drinks:'चि',week:'आ',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'ला',requests:'होस्'};
+function buildPath(){const root=document.getElementById('path-root');root.innerHTML='';let lastPw=null,prevId=null;const firstUndone=LESSONS.find(l=>!S.done.includes(l.id));const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
   UNITS.forEach((u,ui)=>{if(ui>0){const col=accent[ui%4];const dv=document.createElement('div');dv.className='zone-divider';dv.innerHTML='<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 L0 40 L150 22 L320 46 L480 16 L640 42 L820 20 L1000 44 L1160 24 L1200 36 L1200 60 Z" fill="'+col+'" opacity=".16"/><path d="M0 60 L0 50 L180 32 L360 52 L520 30 L700 50 L880 32 L1060 52 L1200 38 L1200 60 Z" fill="'+col+'" opacity=".3"/></svg>';root.appendChild(dv);}const doneInU=u.lessons.filter(id=>S.done.includes(id)).length;const zone=document.createElement('div');zone.className='zone';zone.style.setProperty('--zacc',accent[ui%4]);
     zone.innerHTML='<div class="zone-head" style="border-left:5px solid '+accent[ui%4]+'"><div class="unit-num" style="background:'+accent[ui%4]+'">'+u.n+'</div><div><div class="t">'+u.t+'</div><div class="d">'+u.d+'</div></div><div class="ucount">'+doneInU+'/'+u.lessons.length+'</div></div>';
     const trail=document.createElement('div');trail.className='trail';
-    u.lessons.forEach((id,li)=>{const l=lessonById(id);const done=S.done.includes(id);const locked=g>0&&!S.done.includes(LESSONS[g-1].id);const isNext=firstUndone&&firstUndone.id===id;
+    u.lessons.forEach((id,li)=>{const l=lessonById(id);const done=S.done.includes(id);const locked=prevId!==null&&!S.done.includes(prevId);const isNext=firstUndone&&firstUndone.id===id;
       const pw=document.createElement('div');pw.className='peakwrap';pw.style.transform='translateX('+[0,52,0,-52,0][li%5]+'px)';
       const peak=document.createElement('button');peak.className='peak'+(locked?' locked':'')+(done?' done':'')+(isNext?' active-next':'');
       const sym=SYM[l.id]||'·';
@@ -1653,7 +1842,7 @@ function buildPath(){const root=document.getElementById('path-root');root.innerH
       pw.appendChild(peak);
       const lab=document.createElement('div');lab.className='peak-label'+(done?' done':isNext?' next':locked?' locked':'');lab.innerHTML=l.title+'<span class="sub">'+(done?'Done ✓':isNext?'Start →':locked?'Locked':l.ex.length+' exercises')+'</span>';pw.appendChild(lab);
       if(isNext){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('happy');pw.appendChild(y);}
-      trail.appendChild(pw);lastPw=pw;g++;});
+      trail.appendChild(pw);lastPw=pw;prevId=id;});
     zone.appendChild(trail);root.appendChild(zone);});
   if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('cheer');lastPw.appendChild(y);}}
 
@@ -1781,6 +1970,7 @@ function nextDueText(){const now=Date.now();const up=S.srs.filter(c=>c.due>now).
 function renderSRS(){
   const now=Date.now();
   const due=S.srs.filter(c=>c.due<=now).sort((a,b)=>a.due-b.due);
+  paintHomeStats();
   const st=document.getElementById('srs-stage');
   if(!due.length){
     srsIdx=-1;
@@ -1863,7 +2053,7 @@ function resetAll(){if(confirm('Reset all progress? This cannot be undone.')){co
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;buildPath();paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;
 document.getElementById('home-mascot').innerHTML=mascotSVG('happy');
-buildPath();buildAlpha();paintStats();loadVoices();initSupabase();paintAccount();
+buildPath();buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
 </script>
 </body>
 </html>
