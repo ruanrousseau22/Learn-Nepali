@@ -335,7 +335,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .modal{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;max-width:390px;width:100%;box-shadow:0 30px 80px -20px rgba(0,0,0,.4)}
 .modal h3{font-size:23px;font-weight:700;margin-bottom:6px;letter-spacing:-.02em}
 .modal p{color:var(--ink-soft);font-size:14px;margin-bottom:18px}
-.modal input{width:100%;font-size:15px;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);color:var(--ink);margin-bottom:12px}
+.modal input{width:100%;font-size:16px;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);color:var(--ink);margin-bottom:12px}
 .modal input:focus{outline:none;border-color:var(--saffron)}
 .modal .btn{width:100%;justify-content:center}
 .modal .close{float:right;background:none;border:none;color:var(--ink-soft);font-size:22px;cursor:pointer;margin-top:-10px;margin-right:-6px}
@@ -668,6 +668,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .li-btn.ghost:hover{background:color-mix(in srgb,var(--crimson) 8%,transparent)}
 .li-card.li-start{padding:16px 17px}
 .li-card.li-start>.s{margin-bottom:0}
+.li-card.li-start .s2{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-top:11px}
+.li-start .ilink{color:var(--crimson);font-weight:700;cursor:pointer;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--crimson) 40%,transparent);white-space:nowrap}
+.li-start .ilink:hover{border-bottom-color:var(--crimson)}
 .li-cta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .li-meta{margin-top:13px;font-size:12px;color:var(--ink-soft);font-weight:600}
 .li-meta a{color:var(--crimson);font-weight:700;text-decoration:none}
@@ -707,6 +710,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .li-res-sub{font-size:13px;color:var(--ink-soft);margin:0 0 3px;line-height:1.5}
 .li-res-list{display:flex;flex-direction:column;gap:11px;padding:15px 22px 20px}
 @media(max-width:560px){.li-hero h3{font-size:22px}.li-link .tx span{max-width:62vw}}
+/* mobile touch feel */
+button,a,.cnode,.tab,.mc,.glyph,.wbtile,.mtile,.grade,.iconbtn,.li-res-btn,.li-link{-webkit-tap-highlight-color:transparent}
+button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res-btn,.li-link,.nextbtn,.ab-btn{touch-action:manipulation}
 </style>
 </head>
 <body>
@@ -869,19 +875,15 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
     </svg>
     <div class="pb-inner">
       <h2>Language Intensive <span class="deva">सघन</span></h2>
-      <div class="pb-sub">12 weeks · 60 days — from your first hello to sharing the gospel in Nepali.</div>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
     <div id="intensive-intro"><div class="li-wrap">
 
       <div class="li-card li-start">
-        <div class="h">📖 Start here &mdash; two weeks of script</div>
-        <div class="s">Spend your first two weeks on one thing: the script. Memorize the alphabet until you can read it on sight — Nepali is written <em>almost exactly as it sounds</em>, so once the characters click, you can sound out nearly any word you meet.</div>
-        <div class="li-cta">
-          <button class="li-btn" onclick="show('alphabet')">Open the Alphabet →</button>
-          <button class="li-btn ghost" onclick="show('home')">Start Unit 1</button>
-        </div>
+        <div class="h">Start here</div>
+        <div class="s">Spend your first two weeks on the script. Nepali reads <em>almost exactly as it sounds</em>, so once the alphabet clicks you can sound out nearly any word.</div>
+        <div class="s2">You can practice the characters anytime on the <a class="ilink" onclick="show('alphabet')">Alphabet</a> page, and the first unit on the <a class="ilink" onclick="show('home')">Learn</a> page is all about the alphabet too.</div>
       </div>
 
       <button class="li-res-btn" onclick="openResources()"><span class="ic">📚</span><span class="tx">Extra Language Intensive resources</span><span class="chev">›</span></button>
