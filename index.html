@@ -6714,7 +6714,7 @@ const LESSONS = [
     {t:'mc',q:'"I lost my wallet, but my wife found it" &mdash; "found" is:',o:['भेटाइदियो','हरायो','किन्यो','दियो'],a:0},
     {t:'wb',q:'Build: "have you found Jesus?"',a:['के','तपाईंले','येशूलाई','भेटाउनुभएको','छ?'],pool:['येशूलाई','के','छ?','तपाईंले','भेटाउनुभएको']},
     {t:'mc',q:'फेला पार्नु is the opposite of:',o:['हराउनु (to lose)','दिनु (to give)','सुन्नु (to listen)','बस्नु (to live)'],a:0},
-    {t:'match',q:'Match to meaning',pairs:[['फेला पार्नु','to find'],['भेटाउनु','to find'],['हराउनु','to lose'],['खोज्नु','to search']]}
+    {t:'match',q:'Match to meaning',pairs:[['फेला पार्नु','to find'],['भेटाउनु','to locate'],['हराउनु','to lose'],['खोज्नु','to search']]}
   ]},
 
   {id:'li_w7d5_4',title:'Finding hope',step:'mix',vocab:[['विश्वविद्यालय','wishwawidyalaya','university'],['तपाईं एक्लै हुनुहुन्न','tapain eklai hununhunna','you are not alone'],['परमेश्वरसँग तपाईंको जीवनको लागि असल योजना छ','parameshwarsanga tapainko jiwanko lagi asal yojana chha','God has a good plan for your life']],ex:[
@@ -6973,7 +6973,7 @@ const LESSONS = [
     {t:'mc',q:'"My house is in the middle of the street" &mdash; "middle" is:',o:['बीच','माथि','तल','बाहिर'],a:0},
     {t:'mc',q:'"I am the middle child" uses बीच to mean:',o:['middle','oldest','youngest','only'],a:0},
     {t:'fill',q:'Complete: "where is it? in the middle of the room"',s:'कोठाको ___ छ',o:['बीचमा','माथि','तल','बाहिर'],a:0},
-    {t:'match',q:'Match to meaning',pairs:[['बीच','middle'],['माझ','among'],['मध्य','middle'],['कोठा','room']]}
+    {t:'match',q:'Match to meaning',pairs:[['बीच','between'],['माझ','among'],['मध्य','middle'],['कोठा','room']]}
   ]},
 
   {id:'li_w8d5_4',title:'Similar & under',step:'mix',vocab:[['उस्तै','ustai','similar'],['मुनि','muni','under / beneath'],['हामी देख्दा उस्तै छौं, तर हामी फरक छौं','haami dekhda ustai chhau, tara haami pharak chhau','we look similar, but we are different'],['किताब टेबलको मुनि छ','kitab tebalko muni chha','the book is under the table']],ex:[
@@ -8008,10 +8008,12 @@ const lessonById=id=>LESSONS.find(l=>l.id===id);
 
 let S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true};
 function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0}));}
-function load(){try{const j=localStorage.getItem('sajilo');if(j)S={...S,...JSON.parse(j)};}catch(e){}if(!S.srs.length)S.srs=freshSRS();updateStreak();rolloverDaily();}
+function load(){try{const j=localStorage.getItem('sajilo');if(j)S={...S,...JSON.parse(j)};}catch(e){}if(!S.srs.length)S.srs=freshSRS();checkStreakBreak();rolloverDaily();}
 function rolloverDaily(){const today=new Date().toDateString();if(S.dailyDate!==today){S.dailyXp=0;S.dailyDate=today;}}
 function save(){try{localStorage.setItem('sajilo',JSON.stringify(S));}catch(e){}cloudPush();}
+/* streak only advances on real practice (answered exercise / review), not on merely opening the app */
 function updateStreak(){const today=new Date().toDateString();if(S.lastDay!==today){const y=new Date(Date.now()-864e5).toDateString();S.streak=(S.lastDay===y)?S.streak+1:1;S.lastDay=today;}if(S.streak>(S.bestStreak||0))S.bestStreak=S.streak;}
+function checkStreakBreak(){if(!S.lastDay)return;const today=new Date().toDateString();const y=new Date(Date.now()-864e5).toDateString();if(S.lastDay!==today&&S.lastDay!==y)S.streak=0;}
 
 let sb=null,user=null,pushTimer=null;
 function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON||!window.supabase)return;
@@ -8019,9 +8021,27 @@ function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON||!window.supabase)retur
   sb.auth.onAuthStateChange((_e,s)=>{user=s?.user||null;onAuthChange();});
   sb.auth.getSession().then(({data})=>{user=data.session?.user||null;onAuthChange();});}
 async function onAuthChange(){paintAccount();if(user)await cloudPull();}
+/* merge local + cloud instead of last-write-wins, so progress made on another device (or before logging in) is never lost */
+function mergeState(loc,cld){const m={...loc,...cld};
+  m.done=[...new Set([...(loc.done||[]),...(cld.done||[])])];
+  m.xp=Math.max(loc.xp||0,cld.xp||0);
+  m.total=Math.max(loc.total||0,cld.total||0);
+  m.correct=Math.max(loc.correct||0,cld.correct||0);
+  m.bestStreak=Math.max(loc.bestStreak||0,cld.bestStreak||0);
+  const lt=loc.lastDay?new Date(loc.lastDay).getTime():0,ct=cld.lastDay?new Date(cld.lastDay).getTime():0;
+  if(lt>ct){m.streak=loc.streak;m.lastDay=loc.lastDay;}
+  else if(lt===ct)m.streak=Math.max(loc.streak||0,cld.streak||0);
+  if(loc.dailyDate===cld.dailyDate)m.dailyXp=Math.max(loc.dailyXp||0,cld.dailyXp||0);
+  else if((loc.dailyDate?new Date(loc.dailyDate).getTime():0)>(cld.dailyDate?new Date(cld.dailyDate).getTime():0)){m.dailyXp=loc.dailyXp;m.dailyDate=loc.dailyDate;}
+  const byWord=new Map();(cld.srs||[]).forEach(c=>byWord.set(c.d,c));
+  (loc.srs||[]).forEach(c=>{const o=byWord.get(c.d);if(!o||(c.reps||0)>(o.reps||0)||((c.reps||0)===(o.reps||0)&&(c.due||0)>(o.due||0)))byWord.set(c.d,c);});
+  m.srs=[...byWord.values()];m.words=m.srs.length;
+  /* device-local prefs stay local */
+  m.theme=loc.theme;m.voice=loc.voice;m.rom=loc.rom;m.sound=loc.sound;m.autoNext=loc.autoNext;
+  return m;}
 async function cloudPull(){if(!sb||!user)return;
   try{const {data}=await sb.from('progress').select('data').eq('user_id',user.id).maybeSingle();
-    if(data&&data.data){S={...S,...data.data};if(!S.srs||!S.srs.length)S.srs=freshSRS();updateStreak();localStorage.setItem('sajilo',JSON.stringify(S));refreshAll();}
+    if(data&&data.data){S=mergeState(S,data.data);if(!S.srs||!S.srs.length)S.srs=freshSRS();checkStreakBreak();localStorage.setItem('sajilo',JSON.stringify(S));refreshAll();cloudPush();}
     else cloudPush(true);}catch(e){console.warn('pull',e);}}
 function cloudPush(now){if(!sb||!user)return;clearTimeout(pushTimer);
   pushTimer=setTimeout(async()=>{try{await sb.from('progress').upsert({user_id:user.id,data:S,updated_at:new Date().toISOString()});}catch(e){console.warn('push',e);}},now?0:1200);}
@@ -8060,7 +8080,7 @@ function playFile(t,rate){
   try{
     let a=audioCache.get(k);
     if(!a){a=new Audio(AUDIO_BASE+k+'.mp3');audioCache.set(k,a);}
-    a.pause();a.currentTime=0;a.playbackRate=rate||1;
+    a.pause();a.currentTime=0;a.playbackRate=rate||1;a.preservesPitch=true;a.webkitPreservesPitch=true;
     currentAudio=a;
     const p=a.play();
     if(p&&p.catch)p.catch(()=>speakTTS(t,rate&&rate<1?0.5:undefined));
@@ -8115,7 +8135,13 @@ function unlockAudio(){if(_audioUnlocked)return;_audioUnlocked=true;if('speechSy
 document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
-  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');}
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
+  if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:'smooth'});}
+/* land on the current node instead of the top of a 60+-node path; timeout lets same-tick rebuilds finish first */
+function scrollToCurrent(v){const root=document.getElementById(v==='intensive'?'path-root-intensive':'path-root');
+  const row=root?root.querySelector('.topic-row.has-next'):null;
+  if(row&&root.querySelector('.cdot.on')){const y=row.getBoundingClientRect().top+window.scrollY-Math.round(innerHeight*.32);window.scrollTo({top:Math.max(0,y),behavior:'smooth'});}
+  else window.scrollTo({top:0,behavior:'smooth'});}
 
 /* ===== LEVELING ENGINE ===== */
 const MAX_LEVEL=50;
@@ -8294,7 +8320,7 @@ function checkAnswer(){const ex=LESSONS[curL].ex[curE];let ok,ansEl,fb;
   else if(ex.t==='li'){if(selMC<0)return;const btns=document.querySelectorAll('.mc');btns.forEach(b=>b.disabled=true);ok=selMC===ex.a;btns[ex.a].classList.add('correct');if(!ok)btns[selMC].classList.add('wrong');ansEl=btns[ex.a];speak(ex.say);fb='Heard: <span class="deva">'+ex.say+'</span>'+(ex.r?' · '+ex.r:'')+' — '+ex.o[ex.a];finishQuestion(ok,ansEl,fb,15,false);}
   else if(ex.t==='wb'){if(!wbAns.length)return;document.querySelectorAll('#wb-bank .wbtile,#wb-answer .wbtile').forEach(b=>b.disabled=true);ok=wbAns.join('\u0001')===ex.a.join('\u0001');ansEl=document.getElementById('wb-answer');speak(ex.a.join(' '));fb='Answer: <span class="deva">'+ex.a.join(' ')+'</span>'+(ex.r?' · '+ex.r:'');finishQuestion(ok,ansEl,fb,20,false);}
   else{const inp=document.getElementById('tin');const v=(inp.value||'').trim();if(!v)return;inp.disabled=true;ok=trCorrect(ex,v);ansEl=inp;speak(ex.a);fb='Answer: <span class="deva">'+ex.a+'</span>'+(ex.r?' · '+ex.r:'');finishQuestion(ok,ansEl,fb,15,false);}}
-function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.getElementById('ex-card');S.total++;
+function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.getElementById('ex-card');S.total++;updateStreak();
   if(ok){S.correct++;if(breakCombo)combo=0;else combo++;const mult=comboMult(combo);const gained=Math.round(base*(combo>0?mult:1));award(gained,ansEl);if(combo>=3){showCombo(combo,mult);playSound('combo');}else playSound('correct');card.classList.remove('pulse');void card.offsetWidth;card.classList.add('pulse');abBurst();}
   else{combo=0;playSound('wrong');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');const bar=document.getElementById('actionbar');bar.classList.remove('shake');void bar.offsetWidth;bar.classList.add('shake');}
   const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');
@@ -8306,11 +8332,11 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
 function animateOut(cb){const c=document.getElementById('ex-card');c.classList.remove('q-in');c.classList.add('q-out');setTimeout(cb,180);}
 function advance(){if(phase!=='checked')return;stopAudio();phase='moving';animateOut(()=>{curE++;if(curE>=LESSONS[curL].ex.length)finishLesson();else renderEx();});}
 function addVocab(list){if(!list||!list.length)return;list.forEach(w=>{if(!S.srs.some(c=>c.d===w[0]))S.srs.push({i:S.srs.length,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0});});}
-function finishLesson(){const l=LESSONS[curL];if(!S.done.includes(l.id)){S.done.push(l.id);addVocab(l.vocab);S.words=S.srs.length;award(50);}
+function finishLesson(){const l=LESSONS[curL];const first=!S.done.includes(l.id);if(first){S.done.push(l.id);addVocab(l.vocab);S.words=S.srs.length;award(50);}
   [...document.getElementById('segbar').children].forEach(s=>s.classList.add('done'));
   document.getElementById('actionbar').classList.add('hidden');
   const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
-  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>'+(l.vocab&&l.vocab.length?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
   buildTrack(curTrack);save();}
 
 function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('div');e.className='glyph';e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');}
@@ -8410,7 +8436,7 @@ function srsGrade(q){
   const c=S.srs[srsIdx];const r=srsSchedule(c,q);
   c.ef=r.ef;c.int=r.int;c.reps=r.reps;c.due=Date.now()+c.int*864e5;
   if(srsSession){srsSession.done++;srsSession.xp+=5;if(q<3)srsSession.again++;else if(q>=5)srsSession.easy++;else srsSession.good++;}
-  award(5);save();renderSRS();
+  updateStreak();award(5);save();renderSRS();
 }
 // Keyboard shortcuts — only while the Review view is active.
 document.addEventListener('keydown',e=>{
