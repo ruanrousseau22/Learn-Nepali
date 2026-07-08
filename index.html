@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sajilo Nepali — Learn Nepali the easy way</title>
+<meta name="description" content="Learn Nepali the easy way — read Devanagari, build real sentences, and practice with recorded Nepali audio. Free.">
+<meta name="theme-color" content="#C2362E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C2362E'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E%E0%A4%A8%E0%A5%87%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Sajilo Nepali — Learn Nepali the easy way">
+<meta property="og:description" content="Read Devanagari, build real sentences, and practice with recorded Nepali audio. Free.">
+<meta property="og:url" content="https://sajilonepali.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
@@ -925,7 +933,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
   </div>
 </div>
 
-<div class="modal-bg" id="resources-modal" onclick="if(event.target===this)closeResources()">
+<div class="modal-bg" id="resources-modal">
   <div class="modal li-res-modal">
     <div class="li-res-head">
       <h3>Extra resources</h3>
@@ -8004,7 +8012,8 @@ const VOWELS=[['अ','a'],['आ','aa'],['इ','i'],['ई','ee'],['उ','u'],['�
 const CONS=[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha'],['ङ','nga'],['च','cha'],['छ','chha'],['ज','ja'],['झ','jha'],['ञ','nya'],['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha'],['ण','ṇa'],['त','ta'],['थ','tha'],['द','da'],['ध','dha'],['न','na'],['प','pa'],['फ','pha'],['ब','ba'],['भ','bha'],['म','ma'],['य','ya'],['र','ra'],['ल','la'],['व','wa'],['श','sha'],['ष','ṣha'],['स','sa'],['ह','ha']];
 const NUMS=[['०','0'],['१','1'],['२','2'],['३','3'],['४','4'],['५','5'],['६','6'],['७','7'],['८','8'],['९','9']];
 const SRS_SEED=[['नमस्ते','Namaste','Hello'],['धन्यवाद','Dhanyabad','Thank you'],['माफ गर्नुस्','Maaf garnoos','Excuse me / Sorry'],['हो','Ho','Yes'],['होइन','Hoina','No'],['ठीक छ','Theek chha','It is okay'],['पानी','Paani','Water'],['खाना','Khaana','Food'],['घर','Ghar','Home'],['मान्छे','Maanchhe','Person'],['राम्रो','Raamro','Good / Beautiful'],['ठूलो','Thoolo','Big'],['सानो','Saano','Small'],['आज','Aaja','Today'],['भोलि','Bholi','Tomorrow'],['पैसा','Paisa','Money'],['बाटो','Baato','Road / Way'],['पहाड','Pahaad','Mountain'],['खुसी','Khusi','Happy'],['चिया','Chiya','Tea']];
-const lessonById=id=>LESSONS.find(l=>l.id===id);
+const LESSON_MAP=new Map(LESSONS.map(l=>[l.id,l]));
+const lessonById=id=>LESSON_MAP.get(id);
 
 let S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true};
 function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0}));}
@@ -8224,18 +8233,22 @@ function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);docum
 function closeProfile(){document.getElementById('profile-modal').classList.remove('show');}
 function openResources(){document.getElementById('resources-modal').classList.add('show');document.body.style.overflow='hidden';}
 function closeResources(){document.getElementById('resources-modal').classList.remove('show');document.body.style.overflow='';}
+/* shared modal behavior: click the backdrop or press Escape to close any open modal */
+function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='auth-modal')closeAuth();}
+document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
-const SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_cons1_2:'क',sc_cons1_3:'क',sc_cons1_4:'क',sc_cons1_5:'क',sc_cons2_2:'प',sc_cons2_3:'प',sc_cons2_4:'प',sc_cons2_5:'प',sc_cons3_2:'ट',sc_cons3_3:'ट',sc_cons3_4:'ट',sc_cons3_5:'ट',sc_conjuncts_2:'क्ष',sc_conjuncts_3:'क्ष',sc_conjuncts_4:'क्ष',sc_conjuncts_5:'क्ष',sc_read_2:'१',sc_read_3:'१',sc_read_4:'१',sc_read_5:'१',sc_confuse_2:'श',sc_confuse_3:'श',sc_confuse_4:'श',sc_confuse_5:'श',sc_vowels:'अ',sc_vowels_2:'अ',sc_vowels_3:'अ',sc_vowels_4:'अ',sc_vowels_5:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',greet_2:'न',greet_3:'न',greet_4:'न',greet_5:'न',pron_2:'म',pron_3:'म',pron_4:'म',pron_5:'म',num1_2:'१',num1_3:'१',num1_4:'१',num1_5:'१',num2_2:'सय',num2_3:'सय',num2_4:'सय',num2_5:'सय',courtesy_2:'ह',courtesy_3:'ह',courtesy_4:'ह',courtesy_5:'ह',intro_2:'ना',intro_3:'ना',intro_4:'ना',intro_5:'ना',daytime_2:'बि',daytime_3:'बि',daytime_4:'बि',daytime_5:'बि',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',pma_2:'मा',pma_3:'मा',pma_4:'मा',pma_5:'मा',pbata_2:'बा',pbata_3:'बा',pbata_4:'बा',pbata_5:'बा',plai_2:'ला',plai_3:'ला',plai_4:'ला',plai_5:'ला',pko_2:'को',pko_3:'को',pko_4:'को',pko_5:'को',places_2:'घर',places_3:'घर',places_4:'घर',places_5:'घर',directions_2:'दा',directions_3:'दा',directions_4:'दा',directions_5:'दा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',verbs_2:'ख',verbs_3:'ख',verbs_4:'ख',verbs_5:'ख',presI_2:'छु',presI_3:'छु',presI_4:'छु',presI_5:'छु',presOth_2:'छन',presOth_3:'छन',presOth_4:'छन',presOth_5:'छन',presNeg_2:'न्न',presNeg_3:'न्न',presNeg_4:'न्न',presNeg_5:'न्न',food_2:'भा',food_3:'भा',food_4:'भा',food_5:'भा',drinks_2:'चि',drinks_3:'चि',drinks_4:'चि',drinks_5:'चि',family_2:'आ',family_3:'आ',family_4:'आ',family_5:'आ',routine_2:'दि',routine_3:'दि',routine_4:'दि',routine_5:'दि',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',tobe1_2:'हो',tobe1_3:'हो',tobe1_4:'हो',tobe1_5:'हो',tobe2_2:'छ',tobe2_3:'छ',tobe2_4:'छ',tobe2_5:'छ',negate_2:'नै',negate_3:'नै',negate_4:'नै',negate_5:'नै',thisthat_2:'यो',thisthat_3:'यो',thisthat_4:'यो',thisthat_5:'यो',adj_2:'रा',adj_3:'रा',adj_4:'रा',adj_5:'रा',colors_2:'रं',colors_3:'रं',colors_4:'रं',colors_5:'रं',have_2:'सँ',have_3:'सँ',have_4:'सँ',have_5:'सँ',smalltalk_2:'क',smalltalk_3:'क',smalltalk_4:'क',smalltalk_5:'क',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्',time_2:'बजे',time_3:'बजे',time_4:'बजे',time_5:'बजे',week_2:'आ',week_3:'आ',week_4:'आ',week_5:'आ',past1_2:'एँ',past1_3:'एँ',past1_4:'एँ',past1_5:'एँ',past2_2:'यो',past2_3:'यो',past2_4:'यो',past2_5:'यो',ergative_2:'ले',ergative_3:'ले',ergative_4:'ले',ergative_5:'ले',future_2:'ने',future_3:'ने',future_4:'ने',future_5:'ने',quest1_2:'के',quest1_3:'के',quest1_4:'के',quest1_5:'के',quest2_2:'क',quest2_3:'क',quest2_4:'क',quest2_5:'क',cansk_2:'सक',cansk_3:'सक',cansk_4:'सक',cansk_5:'सक',must_2:'पर',must_3:'पर',must_4:'पर',must_5:'पर',cont_2:'दै',cont_3:'दै',cont_4:'दै',cont_5:'दै',shop_2:'🛍️',shop_3:'🛍️',shop_4:'🛍️',shop_5:'🛍️',want_2:'🙋',want_3:'🙋',want_4:'🙋',want_5:'🙋',travel_2:'🏔️',travel_3:'🏔️',travel_4:'🏔️',travel_5:'🏔️',weather_2:'⛅',weather_3:'⛅',weather_4:'⛅',weather_5:'⛅',body_2:'🩺',body_3:'🩺',body_4:'🩺',body_5:'🩺',feelings_2:'😊',feelings_3:'😊',feelings_4:'😊',feelings_5:'😊',experiencer_2:'💭',experiencer_3:'💭',experiencer_4:'💭',experiencer_5:'💭',conn1_2:'🔗',conn1_3:'🔗',conn1_4:'🔗',conn1_5:'🔗',conn2_2:'🧩',conn2_3:'🧩',conn2_4:'🧩',conn2_5:'🧩',conditional_2:'🔀',conditional_3:'🔀',conditional_4:'🔀',conditional_5:'🔀',convo_2:'💬',convo_3:'💬',convo_4:'💬',convo_5:'💬',hon_2:'हुन्',hon_3:'हुन्',hon_4:'हुन्',hon_5:'हुन्',levels_2:'🙏',levels_3:'🙏',levels_4:'🙏',levels_5:'🙏',requests_2:'होस्',requests_3:'होस्',requests_4:'होस्',requests_5:'होस्',compare_2:'भन्',compare_3:'भन्',compare_4:'भन्',compare_5:'भन्',opinion_2:'ला',opinion_3:'ला',opinion_4:'ला',opinion_5:'ला'};
-function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';const root=document.getElementById(rootId);if(!root)return;root.innerHTML='';let lastPw=null,prevId=null;const trackIds=units.flatMap(u=>u.lessons);const firstUndoneId=trackIds.find(id=>!S.done.includes(id));const firstUndone=firstUndoneId?lessonById(firstUndoneId):null;const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
-  units.forEach((u,ui)=>{if(ui>0){const col=accent[ui%4];const dv=document.createElement('div');dv.className='zone-divider';dv.innerHTML='<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 L0 40 L150 22 L320 46 L480 16 L640 42 L820 20 L1000 44 L1160 24 L1200 36 L1200 60 Z" fill="'+col+'" opacity=".16"/><path d="M0 60 L0 50 L180 32 L360 52 L520 30 L700 50 L880 32 L1060 52 L1200 38 L1200 60 Z" fill="'+col+'" opacity=".3"/></svg>';root.appendChild(dv);}const doneInU=u.lessons.filter(id=>S.done.includes(id)).length;const zone=document.createElement('div');zone.className='zone polish';zone.style.setProperty('--zacc',accent[ui%4]);
+const SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्'};
+function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';const root=document.getElementById(rootId);if(!root)return;root.innerHTML='';const doneSet=new Set(S.done);let lastPw=null,prevId=null;const trackIds=units.flatMap(u=>u.lessons);const firstUndoneId=trackIds.find(id=>!doneSet.has(id));const firstUndone=firstUndoneId?lessonById(firstUndoneId):null;const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
+  units.forEach((u,ui)=>{if(ui>0){const col=accent[ui%4];const dv=document.createElement('div');dv.className='zone-divider';dv.innerHTML='<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 L0 40 L150 22 L320 46 L480 16 L640 42 L820 20 L1000 44 L1160 24 L1200 36 L1200 60 Z" fill="'+col+'" opacity=".16"/><path d="M0 60 L0 50 L180 32 L360 52 L520 30 L700 50 L880 32 L1060 52 L1200 38 L1200 60 Z" fill="'+col+'" opacity=".3"/></svg>';root.appendChild(dv);}const doneInU=u.lessons.filter(id=>doneSet.has(id)).length;const zone=document.createElement('div');zone.className='zone polish';zone.style.setProperty('--zacc',accent[ui%4]);
     zone.innerHTML='<div class="zone-head" style="border-left:5px solid '+accent[ui%4]+'"><div class="unit-num" style="background:'+accent[ui%4]+'">'+u.n+'</div><div><div class="t">'+u.t+'</div><div class="d">'+u.d+'</div></div><div class="ucount">'+doneInU+'/'+u.lessons.length+'</div></div>';
     const trail=document.createElement('div');trail.className='trail';
     let tinner=null,trow=null;
       const groups=[];let cg=null;
       u.lessons.forEach(id=>{const ll=lessonById(id);const c=ll.step==='recognize'||ll.step==='build'||ll.step==='mix'||ll.step==='checkpoint';if(!c||!cg){cg=[];groups.push(cg);}cg.push(ll);});
-      groups.forEach((grp,gi)=>{const ids=grp.map(x=>x.id);const doneN=ids.filter(x=>S.done.includes(x)).length;const total=grp.length;const complete=doneN>=total;
-        const locked=gi===0?(prevId!==null&&!S.done.includes(prevId)):!groups[gi-1].every(x=>S.done.includes(x.id));
-        const target=grp.find(x=>!S.done.includes(x.id))||grp[0];const isNext=!!(firstUndone&&ids.includes(firstUndone.id));
+      groups.forEach((grp,gi)=>{const ids=grp.map(x=>x.id);const doneN=ids.filter(x=>doneSet.has(x)).length;const total=grp.length;const complete=doneN>=total;
+        const locked=gi===0?(prevId!==null&&!doneSet.has(prevId)):!groups[gi-1].every(x=>doneSet.has(x.id));
+        const target=grp.find(x=>!doneSet.has(x.id))||grp[0];const isNext=!!(firstUndone&&ids.includes(firstUndone.id));
         trow=document.createElement('div');trow.className='topic-row crow'+(isNext?' has-next':'');tinner=document.createElement('div');tinner.className='topic-inner';trow.appendChild(tinner);trail.appendChild(trow);
         const pw=document.createElement('div');pw.className='peakwrap';
         const peak=document.createElement('button');peak.className='cnode'+(locked?' locked':'')+(complete?' done':'')+(isNext?' active-next':'');
@@ -8245,7 +8258,7 @@ function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';c
         pw.appendChild(peak);
         const sub=complete?'Done ✓':locked?'Locked':(doneN>0?doneN+'/'+total+' · Continue →':'Start →');
         const lab=document.createElement('div');lab.className='peak-label'+(complete?' done':isNext?' next':locked?' locked':'');lab.innerHTML=grp[0].title+'<span class=\"sub\">'+sub+'</span>';pw.appendChild(lab);
-        const seg=document.createElement('div');seg.className='cseg';seg.innerHTML=grp.map(x=>'<span class=\"cdot'+(S.done.includes(x.id)?' on':'')+'\"></span>').join('');pw.appendChild(seg);
+        const seg=document.createElement('div');seg.className='cseg';seg.innerHTML=grp.map(x=>'<span class=\"cdot'+(doneSet.has(x.id)?' on':'')+'\"></span>').join('');pw.appendChild(seg);
         if(isNext){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('happy');pw.appendChild(y);}
         tinner.appendChild(pw);lastPw=pw;});
       prevId=u.lessons[u.lessons.length-1];
@@ -8256,7 +8269,7 @@ let curL=0,curE=0;
 let curTrack='home';
 function trackOf(id){return (typeof UNITS_INTENSIVE!=='undefined'&&UNITS_INTENSIVE.some(u=>u.lessons.includes(id)))?'intensive':'home';}
 function buildTrack(t){if(t==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');else buildPath();}
-function exitLesson(){show(curTrack==='intensive'?'intensive':'home');}
+function exitLesson(){const l=LESSONS[curL];if(curE>=2&&curE<l.ex.length&&!confirm('Leave this lesson? Your progress in it will be lost.'))return;stopAudio();show(curTrack==='intensive'?'intensive':'home');}
 let combo=0;
 let selMC=-1,phase='answer',wbAns=[],wbBank=[],matchSel=null,matchMiss=false,matchDone=0,matchTotal=0;
 function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><circle cx="32" cy="9" r="7" fill="#EEF3F8"/><circle cx="44" cy="13" r="6" fill="#EEF3F8"/><circle cx="12" cy="27" r="6" fill="#EEF3F8"/><circle cx="52" cy="27" r="6" fill="#EEF3F8"/><circle cx="11" cy="41" r="7" fill="#EEF3F8"/><circle cx="53" cy="41" r="7" fill="#EEF3F8"/><path d="M32 7 C18 7 12 17 12 31 C12 47 21 58 32 58 C43 58 52 47 52 31 C52 17 46 7 32 7 Z" fill="#F6F9FC"/><ellipse cx="32" cy="37" rx="14.5" ry="13.5" fill="#E8D7BE"/><circle cx="21" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="43" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/>';
@@ -8449,6 +8462,19 @@ document.addEventListener('keydown',e=>{
     if(e.key==='1'||k==='h'){e.preventDefault();srsGrade(1);}
     else if(e.key==='2'||k==='g'){e.preventDefault();srsGrade(3);}
     else if(e.key==='3'||k==='e'){e.preventDefault();srsGrade(5);}
+  }
+});
+/* Lesson keyboard shortcuts — 1–9 picks an option, Enter/Space checks & continues, Esc exits. */
+document.addEventListener('keydown',e=>{
+  const ev=document.getElementById('view-exercise');
+  if(!ev||!ev.classList.contains('active')||document.querySelector('.modal-bg.show'))return;
+  const tag=(e.target&&e.target.tagName)||'';
+  if(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT')return;
+  if(e.key==='Escape'){e.preventDefault();exitLesson();return;}
+  if(e.key==='Enter'||e.code==='Space'){const b=document.getElementById('ab-btn');if(b&&!b.disabled&&!document.getElementById('actionbar').classList.contains('hidden')){e.preventDefault();barPrimary();}return;}
+  if(phase==='answer'&&/^[1-9]$/.test(e.key)){const ex=LESSONS[curL].ex[curE];const i=+e.key-1;
+    if((ex.t==='mc'||ex.t==='li')&&ex.o&&i<ex.o.length){e.preventDefault();selectMC(i);}
+    else if(ex.t==='fill'&&ex.o&&i<ex.o.length){e.preventDefault();selectFill(i);}
   }
 });
 
