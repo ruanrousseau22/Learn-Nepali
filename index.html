@@ -8182,7 +8182,7 @@ function paintLevel(pop){const li=levelInfo(S.xp);const rk=rankFor(li.level);
 }
 function award(n,fromEl){const before=levelInfo(S.xp).level;S.xp+=n;S.dailyXp+=n;const after=levelInfo(S.xp).level;
   paintStats();xpFloat(n,fromEl);save();
-  if(after>before){setTimeout(()=>celebrate(after),650);paintLevel(true);}else paintLevel();
+  if(after>before){setTimeout(()=>celebrate(after),650);paintLevel(true);}
 }
 
 /* ===== JUICE: float, combo, sound, confetti ===== */
@@ -8272,6 +8272,7 @@ function buildTrack(t){if(t==='intensive')buildPath(UNITS_INTENSIVE,'path-root-i
 function exitLesson(){const l=LESSONS[curL];if(curE>=2&&curE<l.ex.length&&!confirm('Leave this lesson? Your progress in it will be lost.'))return;stopAudio();show(curTrack==='intensive'?'intensive':'home');}
 let combo=0;
 let selMC=-1,phase='answer',wbAns=[],wbBank=[],matchSel=null,matchMiss=false,matchDone=0,matchTotal=0;
+let exToken=0; /* bumped on every renderEx so delayed listening autoplay can tell it's stale */
 function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><circle cx="32" cy="9" r="7" fill="#EEF3F8"/><circle cx="44" cy="13" r="6" fill="#EEF3F8"/><circle cx="12" cy="27" r="6" fill="#EEF3F8"/><circle cx="52" cy="27" r="6" fill="#EEF3F8"/><circle cx="11" cy="41" r="7" fill="#EEF3F8"/><circle cx="53" cy="41" r="7" fill="#EEF3F8"/><path d="M32 7 C18 7 12 17 12 31 C12 47 21 58 32 58 C43 58 52 47 52 31 C52 17 46 7 32 7 Z" fill="#F6F9FC"/><ellipse cx="32" cy="37" rx="14.5" ry="13.5" fill="#E8D7BE"/><circle cx="21" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="43" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/>';
   var f;
   if(m==='cheer')f='<path d="M19.5 28.5 Q24 26 28.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.4" stroke-linecap="round" opacity=".55"/><path d="M35.5 28.5 Q40 26 44.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.4" stroke-linecap="round" opacity=".55"/><path d="M22 34 Q25 30.5 28 34" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><path d="M36 34 Q39 30.5 42 34" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="41" r="3.2" fill="var(--crimson)" opacity="0.22"/><circle cx="44" cy="41" r="3.2" fill="var(--crimson)" opacity="0.22"/><path d="M26 42 Q32 50 38 42 Z" fill="var(--crimson)"/><path d="M28.5 43 Q32 45 35.5 43" fill="#fff" opacity=".6"/>';
@@ -8286,7 +8287,7 @@ function hasDeva(s){return /[\u0900-\u097F]/.test(s||'');}
 function normDeva(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[\s?।.,_'"!:;-]/g,'');}
 function normRom(s){return normDeva(s).replace(/(.)\1+/g,'$1');}
 function trCorrect(ex,v){return normDeva(v)===normDeva(ex.a)||(ex.r&&normRom(v)===normRom(ex.r));}
-function renderEx(){stopAudio();const l=LESSONS[curL],ex=l.ex[curE];selMC=-1;phase='answer';wbAns=[];wbBank=[];matchSel=null;matchMiss=false;matchDone=0;buildSegs(l.ex.length);updateSegs();
+function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=l.ex[curE];selMC=-1;phase='answer';wbAns=[];wbBank=[];matchSel=null;matchMiss=false;matchDone=0;buildSegs(l.ex.length);updateSegs();
   const bar=document.getElementById('actionbar');bar.classList.remove('hidden','correct','wrong','checked');
   document.getElementById('ab-fb').innerHTML='';
   const btn=document.getElementById('ab-btn');btn.textContent='Check';btn.disabled=true;
@@ -8296,7 +8297,7 @@ function renderEx(){stopAudio();const l=LESSONS[curL],ex=l.ex[curE];selMC=-1;pha
     btn.textContent='Got it';btn.disabled=false;phase='note';}
   else if(ex.t==='mc')c.innerHTML='<div class="extype">Multiple choice</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+'<button class="spk" onclick="speak(\''+ex.d+'\')">🔊</button></div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
   else if(ex.t==='fill')c.innerHTML='<div class="extype">Fill in the blank</div><div class="exq">'+ex.q+'</div><div class="fill-sentence">'+ex.s.replace('___','<span class="blank" id="fill-blank">___</span>')+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectFill('+i+')">'+o+'</button>').join('')+'</div>';
-  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';setTimeout(()=>speak(ex.say),420);}
+  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
   else if(ex.t==='wb'){renderWB(ex,c);}
   else if(ex.t==='match'){renderMatch(ex,c);btn.textContent='Match the pairs';}
   else{c.innerHTML='<div class="extype">Type the translation</div><div class="exq">'+ex.q+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="tinput"><input id="tin" class="deva" placeholder="Type in Nepali or romanized…" oninput="document.getElementById(\'ab-btn\').disabled=!this.value.trim()"></div>';
@@ -8484,7 +8485,7 @@ function applyTheme(){document.documentElement.setAttribute('data-theme',S.theme
 function toggleRom(){S.rom=document.getElementById('set-rom').checked;save();if(document.getElementById('view-exercise').classList.contains('active'))renderEx();}
 function toggleSound(){S.sound=document.getElementById('set-sound').checked;save();if(S.sound)playSound('correct');}
 function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').checked;save();}
-function resetAll(){if(confirm('Reset all progress? This cannot be undone.')){const k=S.theme;localStorage.removeItem('sajilo');S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');}}
+function resetAll(){if(confirm('Reset all progress? This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.')){const k=S.theme;localStorage.removeItem('sajilo');S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');}}
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;
