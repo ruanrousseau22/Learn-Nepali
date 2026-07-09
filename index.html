@@ -340,6 +340,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .confirm-card p{margin:10px 0 0;color:var(--ink-soft);font-size:14.5px;line-height:1.55}
 .cf-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
 .cf-actions .btn{padding:11px 20px;font-size:14px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
 .danger-btn:hover{background:var(--bad);color:#fff}
 
 .modal-bg{position:fixed;inset:0;background:rgba(20,15,10,.5);backdrop-filter:blur(4px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
@@ -747,9 +748,9 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
           <div class="lvl-bar"><span id="hdr-fill"></span></div>
         </div>
       </div>
-      <button class="iconbtn" id="themebtn" onclick="toggleTheme()" title="Toggle theme">◐</button>
+      <button class="iconbtn" id="themebtn" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode">◐</button>
       <span id="account-slot"><button class="iconbtn" onclick="openAuth()">Log in</button></span>
-      <button class="iconbtn menutoggle" onclick="document.getElementById('tabs').classList.toggle('open')">☰</button>
+      <button class="iconbtn menutoggle" onclick="document.getElementById('tabs').classList.toggle('open')" aria-label="Menu">☰</button>
     </div>
   </div>
 </header>
@@ -800,7 +801,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
   <div class="wrap section">
     <div class="exwrap">
       <div class="exhead">
-        <button class="backlink" onclick="exitLesson()">✕</button>
+        <button class="backlink" onclick="exitLesson()" aria-label="Exit lesson">✕</button>
         <div class="segbar" id="segbar"></div>
       </div>
       <div class="excard" id="ex-card"></div>
@@ -869,8 +870,9 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <div class="set-row"><div><div class="label">Account</div><div class="desc" id="acct-desc">Not logged in — progress is local only</div></div><button class="iconbtn" id="acct-action" onclick="openAuth()">Log in</button></div>
       <div class="set-row"><div><div class="label">Dark mode</div><div class="desc">Warm paper or midnight</div></div><label class="switch"><input type="checkbox" id="set-dark" onchange="toggleTheme()"><span class="slider"></span></label></div>
       <div class="set-row"><div><div class="label">Show romanization</div><div class="desc">Latin spelling under Devanagari</div></div><label class="switch"><input type="checkbox" id="set-rom" checked onchange="toggleRom()"><span class="slider"></span></label></div>
-      <div class="set-row"><div><div class="label">Sound effects</div><div class="desc">Answer, combo & level-up sounds</div></div><label class="switch"><input type="checkbox" id="set-sound" checked onchange="toggleSound()"><span class="slider"></span></label></div>
+      <div class="set-row"><div><div class="label">Sound & vibration</div><div class="desc">Answer, combo & level-up feedback</div></div><label class="switch"><input type="checkbox" id="set-sound" checked onchange="toggleSound()"><span class="slider"></span></label></div>
       <div class="set-row"><div><div class="label">Auto-continue</div><div class="desc">Advance automatically after a correct answer</div></div><label class="switch"><input type="checkbox" id="set-autonext" checked onchange="toggleAutoNext()"><span class="slider"></span></label></div>
+      <div class="set-row"><div><div class="label">Daily XP goal</div><div class="desc">Tracked in your profile</div></div><select id="set-goal" onchange="changeGoal()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)"><option value="20">20 · easy</option><option value="50">50 · steady</option><option value="100">100 · serious</option><option value="200">200 · intense</option></select></div>
       <div class="set-row"><div><div class="label">Pronunciation voice</div><div class="desc" id="voice-status">Detecting voices…</div></div><select id="voice-select" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:190px"></select></div>
       <div class="set-row"><div><div class="label">Reset all progress</div><div class="desc">Clears XP, streak, lessons, reviews</div></div><button class="danger-btn" onclick="resetAll()">Reset</button></div>
     </div>
@@ -920,7 +922,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <!-- PROFILE MODAL -->
 <div class="modal-bg" id="profile-modal">
   <div class="modal">
-    <button class="close" onclick="closeProfile()">×</button>
+    <button class="close" onclick="closeProfile()" aria-label="Close">×</button>
     <h3 style="margin-bottom:14px">Your progress</h3>
     <div class="profile-rank">
       <div class="big-badge" id="pf-badge">1</div>
@@ -941,7 +943,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
   <div class="modal li-res-modal">
     <div class="li-res-head">
       <h3>Extra resources</h3>
-      <button class="close" onclick="closeResources()">×</button>
+      <button class="close" onclick="closeResources()" aria-label="Close">×</button>
     </div>
     <div class="li-res-list">
       <p class="li-res-sub">Flashcards, videos, conversation practice and tools to support your two weeks of script.</p>
@@ -1001,12 +1003,12 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
   </div>
 </div>
 
-<div class="combo-tag" id="combo-tag"></div>
-<div id="confetti"></div>
+<div class="combo-tag" id="combo-tag" aria-hidden="true"></div>
+<div id="confetti" aria-hidden="true"></div>
 
 <div class="modal-bg" id="auth-modal">
   <div class="modal">
-    <button class="close" onclick="closeAuth()">×</button>
+    <button class="close" onclick="closeAuth()" aria-label="Close">×</button>
     <div id="auth-loggedout">
       <h3>Save your progress</h3>
       <p>Log in with your email to sync XP, streaks, and reviews across devices. We'll send a one-time sign-in link — no password.</p>
@@ -8173,14 +8175,15 @@ let _audioUnlocked=false;
 function unlockAudio(){if(_audioUnlocked)return;_audioUnlocked=true;if('speechSynthesis'in window){try{const u=new SpeechSynthesisUtterance(' ');u.volume=0;speechSynthesis.speak(u);}catch(e){}}}
 document.addEventListener('pointerdown',unlockAudio,{once:true});
 
+const SMOOTH=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth';
 function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
-  if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:'smooth'});}
+  if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});}
 /* land on the current node instead of the top of a 60+-node path; timeout lets same-tick rebuilds finish first */
 function scrollToCurrent(v){const root=document.getElementById(v==='intensive'?'path-root-intensive':'path-root');
   const row=root?root.querySelector('.topic-row.has-next'):null;
-  if(row&&root.querySelector('.cdot.on')){const y=row.getBoundingClientRect().top+window.scrollY-Math.round(innerHeight*.32);window.scrollTo({top:Math.max(0,y),behavior:'smooth'});}
-  else window.scrollTo({top:0,behavior:'smooth'});}
+  if(row&&root.querySelector('.cdot.on')){const y=row.getBoundingClientRect().top+window.scrollY-Math.round(innerHeight*.32);window.scrollTo({top:Math.max(0,y),behavior:SMOOTH});}
+  else window.scrollTo({top:0,behavior:SMOOTH});}
 
 /* ===== LEVELING ENGINE ===== */
 const MAX_LEVEL=50;
@@ -8254,7 +8257,7 @@ function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);docum
   document.getElementById('pf-bar').style.width=li.pct+'%';
   document.getElementById('pf-next').textContent=li.max?'Highest rank reached 🎉':((li.need-li.into)+' XP to level '+(li.level+1));
   document.getElementById('pf-streak').textContent=S.streak+(S.bestStreak>S.streak?(' (best '+S.bestStreak+')'):'');
-  document.getElementById('pf-daily').textContent=S.dailyXp+' / '+(S.dailyGoal||50);
+  document.getElementById('pf-daily').textContent=S.dailyXp+' / '+(S.dailyGoal||50)+(S.dailyXp>=(S.dailyGoal||50)?' ✓':'');
   document.getElementById('pf-xp').textContent=S.xp;
   document.getElementById('pf-words').textContent=S.words;
   document.getElementById('pf-lessons').textContent=S.done.length+' / '+LESSONS.length;
@@ -8309,11 +8312,12 @@ let curTrack='home';
 function trackOf(id){return (typeof UNITS_INTENSIVE!=='undefined'&&UNITS_INTENSIVE.some(u=>u.lessons.includes(id)))?'intensive':'home';}
 function buildTrack(t){if(t==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');else buildPath();}
 function exitLesson(){const l=LESSONS[curL];const leave=()=>{stopAudio();show(curTrack==='intensive'?'intensive':'home');};
-  if(curE>=2&&curE<l.ex.length)askConfirm(l.step==='test'?'Leave the test?':'Leave this lesson?','Your progress in this '+(l.step==='test'?'attempt':'lesson')+' will be lost.','Leave',leave);
+  if(curE>=2&&curE<exQ.length)askConfirm(l.step==='test'?'Leave the test?':'Leave this lesson?','Your progress in this '+(l.step==='test'?'attempt':'lesson')+' will be lost.','Leave',leave);
   else leave();}
 let combo=0;
 let selMC=-1,phase='answer',wbAns=[],wbBank=[],matchSel=null,matchMiss=false,matchDone=0,matchTotal=0;
 let exToken=0; /* bumped on every renderEx so delayed listening autoplay can tell it's stale */
+let exQ=[],exQBase=0; /* session question queue — wrong answers requeue at the end (lessons only, not tests) */
 let lessonCorrect=0; /* first-try correct answers in the current lesson — scored by weekly tests */
 function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><circle cx="32" cy="9" r="7" fill="#EEF3F8"/><circle cx="44" cy="13" r="6" fill="#EEF3F8"/><circle cx="12" cy="27" r="6" fill="#EEF3F8"/><circle cx="52" cy="27" r="6" fill="#EEF3F8"/><circle cx="11" cy="41" r="7" fill="#EEF3F8"/><circle cx="53" cy="41" r="7" fill="#EEF3F8"/><path d="M32 7 C18 7 12 17 12 31 C12 47 21 58 32 58 C43 58 52 47 52 31 C52 17 46 7 32 7 Z" fill="#F6F9FC"/><ellipse cx="32" cy="37" rx="14.5" ry="13.5" fill="#E8D7BE"/><circle cx="21" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="43" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/>';
   var f;
@@ -8325,6 +8329,7 @@ function buildSegs(n){const sb=document.getElementById('segbar');if(sb.children.
 function updateSegs(){const sb=document.getElementById('segbar');[...sb.children].forEach((s,i)=>s.classList.toggle('done',i<curE));}
 function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;lessonCorrect=0;phase='answer';selMC=-1;
   if(LESSONS[i].step==='test')LESSONS[i].ex=buildTestEx(LESSONS[i].id);else prefetchLesson(LESSONS[i]);
+  exQ=LESSONS[i].ex.slice();exQBase=exQ.length;
   show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
 /* deal a fresh random 20 questions from the test's unit on every attempt:
@@ -8354,7 +8359,7 @@ function hasDeva(s){return /[\u0900-\u097F]/.test(s||'');}
 function normDeva(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[\s?।.,_'"!:;-]/g,'');}
 function normRom(s){return normDeva(s).replace(/(.)\1+/g,'$1');}
 function trCorrect(ex,v){return normDeva(v)===normDeva(ex.a)||(ex.r&&normRom(v)===normRom(ex.r));}
-function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=l.ex[curE];selMC=-1;phase='answer';wbAns=[];wbBank=[];matchSel=null;matchMiss=false;matchDone=0;buildSegs(l.ex.length);updateSegs();
+function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=exQ[curE];selMC=-1;phase='answer';wbAns=[];wbBank=[];matchSel=null;matchMiss=false;matchDone=0;buildSegs(exQ.length);updateSegs();
   const bar=document.getElementById('actionbar');bar.classList.remove('hidden','correct','wrong','checked');
   document.getElementById('ab-fb').innerHTML='';
   const btn=document.getElementById('ab-btn');btn.textContent='Check';btn.disabled=true;
@@ -8362,16 +8367,17 @@ function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=l.ex[curE];se
   if(ex.t==='note'){const eg=ex.eg?('<div class="note-eg">'+ex.eg.map(e=>'<div class="egcard"><span class="nd">'+e[0]+'</span>'+(e[1]&&S.rom?'<span class="nr">'+e[1]+'</span>':'')+(e[2]?'<span class="nm">'+e[2]+'</span>':'')+'</div>').join('')+'</div>'):'';
     c.innerHTML='<div class="extype">'+(ex.tag||'Quick note')+'</div><div class="exq">'+ex.q+'</div><div class="note-body">'+ex.body+'</div>'+eg+(ex.tip?'<div class="note-tip">💡 '+ex.tip+'</div>':'');
     btn.textContent='Got it';btn.disabled=false;phase='note';}
-  else if(ex.t==='mc')c.innerHTML='<div class="extype">'+(l.step==='test'?'Test · multiple choice':'Multiple choice')+'</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+(l.step==='test'?'':'<button class="spk" onclick="speak(\''+ex.d+'\')">🔊</button>')+'</div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
+  else if(ex.t==='mc')c.innerHTML='<div class="extype">'+(l.step==='test'?'Test · multiple choice':'Multiple choice')+'</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+(l.step==='test'?'':'<button class="spk" aria-label="Play audio" onclick="speak(\''+ex.d+'\')">🔊</button>')+'</div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
   else if(ex.t==='fill')c.innerHTML='<div class="extype">Fill in the blank</div><div class="exq">'+ex.q+'</div><div class="fill-sentence">'+ex.s.replace('___','<span class="blank" id="fill-blank">___</span>')+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectFill('+i+')">'+o+'</button>').join('')+'</div>';
-  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
+  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" aria-label="Play audio" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
   else if(ex.t==='wb'){renderWB(ex,c);}
   else if(ex.t==='match'){renderMatch(ex,c);btn.textContent='Match the pairs';}
   else{c.innerHTML='<div class="extype">Type the translation</div><div class="exq">'+ex.q+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="tinput"><input id="tin" class="deva" placeholder="Type in Nepali or romanized…" oninput="document.getElementById(\'ab-btn\').disabled=!this.value.trim()"></div>';
     setTimeout(()=>{const t=document.getElementById('tin');if(t){t.focus();t.onkeydown=e=>{if(e.key==='Enter')barPrimary();};}},40);}
+  if(curE>=exQBase){const et=c.querySelector('.extype');if(et)et.textContent='↻ Try again · '+et.textContent;}
   c.classList.remove('q-out','q-in');void c.offsetWidth;c.classList.add('q-in');}
 function selectMC(i){if(phase!=='answer')return;selMC=i;document.querySelectorAll('.mc').forEach((b,j)=>b.classList.toggle('sel',j===i));document.getElementById('ab-btn').disabled=false;}
-function selectFill(i){if(phase!=='answer')return;selMC=i;document.querySelectorAll('.mc').forEach((b,j)=>b.classList.toggle('sel',j===i));const bl=document.getElementById('fill-blank');if(bl){bl.textContent=LESSONS[curL].ex[curE].o[i];bl.classList.add('filled');}document.getElementById('ab-btn').disabled=false;}
+function selectFill(i){if(phase!=='answer')return;selMC=i;document.querySelectorAll('.mc').forEach((b,j)=>b.classList.toggle('sel',j===i));const bl=document.getElementById('fill-blank');if(bl){bl.textContent=exQ[curE].o[i];bl.classList.add('filled');}document.getElementById('ab-btn').disabled=false;}
 /* word bank */
 function renderWB(ex,c){wbBank=shuffle((ex.pool?ex.pool.slice():ex.a.slice())).map(w=>({w,used:false}));wbAns=[];
   c.innerHTML='<div class="extype">Build the sentence</div><div class="exq">'+ex.q+'</div><div class="wb-answer" id="wb-answer"></div><div class="wb-bank" id="wb-bank"></div>';
@@ -8391,11 +8397,11 @@ function matchTap(btn){if(phase!=='answer'||btn.classList.contains('done'))retur
   if(matchSel&&matchSel.el===btn){btn.classList.remove('sel');matchSel=null;return;}
   if(!matchSel){matchSel={side,id,el:btn};btn.classList.add('sel');return;}
   if(matchSel.side===side){matchSel.el.classList.remove('sel');matchSel={side,id,el:btn};btn.classList.add('sel');return;}
-  if(matchSel.id===id){matchSel.el.classList.remove('sel');matchSel.el.classList.add('done');btn.classList.add('done');matchSel=null;matchDone++;playSound('correct');speak(LESSONS[curL].ex[curE].pairs[+id][0]);if(matchDone>=matchTotal)matchComplete();}
+  if(matchSel.id===id){matchSel.el.classList.remove('sel');matchSel.el.classList.add('done');btn.classList.add('done');matchSel=null;matchDone++;playSound('correct');speak(exQ[curE].pairs[+id][0]);if(matchDone>=matchTotal)matchComplete();}
   else{const prev=matchSel.el;prev.classList.add('mwrong');btn.classList.add('mwrong');playSound('wrong');matchMiss=true;setTimeout(()=>{prev.classList.remove('mwrong','sel');btn.classList.remove('mwrong');},480);matchSel=null;}}
 function matchComplete(){finishQuestion(true,document.getElementById('hdr-badge'),'All pairs matched! 🎉',20,matchMiss);}
 function barPrimary(){if(phase==='note'){const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');phase='checked';advance();return;}if(phase==='answer')checkAnswer();else if(phase==='checked')advance();}
-function checkAnswer(){const ex=LESSONS[curL].ex[curE];let ok,ansEl,fb;
+function checkAnswer(){const ex=exQ[curE];let ok,ansEl,fb;
   if(ex.t==='mc'){if(selMC<0)return;const btns=document.querySelectorAll('.mc');btns.forEach(b=>b.disabled=true);ok=selMC===ex.a;btns[ex.a].classList.add('correct');if(!ok)btns[selMC].classList.add('wrong');ansEl=btns[ex.a];if(hasDeva(ex.o[ex.a]))speak(ex.o[ex.a]);fb='Answer: <span class="deva">'+ex.o[ex.a]+'</span>';finishQuestion(ok,ansEl,fb,10,false);}
   else if(ex.t==='fill'){if(selMC<0)return;const btns=document.querySelectorAll('.mc');btns.forEach(b=>b.disabled=true);ok=selMC===ex.a;btns[ex.a].classList.add('correct');if(!ok)btns[selMC].classList.add('wrong');ansEl=btns[ex.a];const full=ex.s.replace('___',ex.o[ex.a]);speak(full);fb='Answer: <span class="deva">'+full+'</span>'+(ex.r?' · '+ex.r:'');finishQuestion(ok,ansEl,fb,12,false);}
   else if(ex.t==='li'){if(selMC<0)return;const btns=document.querySelectorAll('.mc');btns.forEach(b=>b.disabled=true);ok=selMC===ex.a;btns[ex.a].classList.add('correct');if(!ok)btns[selMC].classList.add('wrong');ansEl=btns[ex.a];speak(ex.say);fb='Heard: <span class="deva">'+ex.say+'</span>'+(ex.r?' · '+ex.r:'')+' — '+ex.o[ex.a];finishQuestion(ok,ansEl,fb,15,false);}
@@ -8405,13 +8411,15 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
   if(ok){S.correct++;if(breakCombo)combo=0;else combo++;const mult=comboMult(combo);const gained=Math.round(base*(combo>0?mult:1));award(gained,ansEl);if(combo>=3){showCombo(combo,mult);playSound('combo');}else playSound('correct');card.classList.remove('pulse');void card.offsetWidth;card.classList.add('pulse');abBurst();}
   else{combo=0;playSound('wrong');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');const bar=document.getElementById('actionbar');bar.classList.remove('shake');void bar.offsetWidth;bar.classList.add('shake');}
   const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');
-  phase='checked';const last=curE+1>=LESSONS[curL].ex.length;
+  if(!ok&&LESSONS[curL].step!=='test')exQ.push(exQ[curE]); /* missed it? it comes back at the end */
+  try{if(S.sound&&navigator.vibrate)navigator.vibrate(ok?12:[45,60,45]);}catch(e){}
+  phase='checked';const last=curE+1>=exQ.length;
   document.getElementById('actionbar').classList.add('checked',ok?'correct':'wrong');
   document.getElementById('ab-fb').innerHTML='<div class="mascot mascot-pop">'+mascotSVG(ok?'cheer':'oops')+'</div><div class="fbtext"><div class="fbtitle">'+(ok?'Nailed it!':'Not quite')+'</div><div class="fbans">'+fbHtml+'</div></div>';
   const btn=document.getElementById('ab-btn');btn.disabled=false;btn.textContent=last?'Finish':'Continue';
   save();if(ok&&S.autoNext!==false)setTimeout(()=>{if(phase==='checked')advance();},1050);}
 function animateOut(cb){const c=document.getElementById('ex-card');c.classList.remove('q-in');c.classList.add('q-out');setTimeout(cb,180);}
-function advance(){if(phase!=='checked')return;stopAudio();phase='moving';animateOut(()=>{curE++;if(curE>=LESSONS[curL].ex.length)finishLesson();else renderEx();});}
+function advance(){if(phase!=='checked')return;stopAudio();phase='moving';animateOut(()=>{curE++;if(curE>=exQ.length)finishLesson();else renderEx();});}
 function addVocab(list){if(!list||!list.length)return;list.forEach(w=>{if(!S.srs.some(c=>c.d===w[0]))S.srs.push({i:S.srs.length,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0});});}
 function finishLesson(){const l=LESSONS[curL];if(l.step==='test'){finishTest(l);return;}
   const first=!S.done.includes(l.id);if(first){S.done.push(l.id);addVocab(l.vocab);S.words=S.srs.length;award(50);}
@@ -8507,7 +8515,7 @@ function renderSRS(){
   st.innerHTML='<div class="srs-ascent"><div class="srs-track"><div class="srs-fill" style="width:'+prog+'%"></div><div class="srs-summit"></div></div>'
     +'<div class="srs-count">'+srsSession.done+' / '+srsSession.total+' reviewed · '+due.length+' to go</div></div>'
     +'<div class="flip" id="srs-flip" onclick="srsReveal()"><div class="flip-inner">'
-      +'<div class="flip-face flip-front"><div class="ridge-clip">'+RIDGE_SVG+'</div><div class="srs-eyebrow">Recall the meaning</div><div class="front deva">'+c.d+'<button class="spk" onclick="event.stopPropagation();speak(\''+c.d+'\')">🔊</button></div><div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
+      +'<div class="flip-face flip-front"><div class="ridge-clip">'+RIDGE_SVG+'</div><div class="srs-eyebrow">Recall the meaning</div><div class="front deva">'+c.d+'<button class="spk" aria-label="Play audio" onclick="event.stopPropagation();speak(\''+c.d+'\')">🔊</button></div><div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
       +'<div class="flip-face flip-back"><div class="srs-back-deva deva">'+c.d+'</div><div class="meaning">'+c.m+'</div>'+(S.rom?'<div class="rom">'+c.r+'</div>':'')+'</div>'
     +'</div></div>'
     +'<div id="srs-action"><button class="reveal-btn ghost" onclick="event.stopPropagation();srsReveal()">Show answer</button></div>';
@@ -8552,7 +8560,7 @@ document.addEventListener('keydown',e=>{
   if(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT')return;
   if(e.key==='Escape'){e.preventDefault();exitLesson();return;}
   if(e.key==='Enter'||e.code==='Space'){const b=document.getElementById('ab-btn');if(b&&!b.disabled&&!document.getElementById('actionbar').classList.contains('hidden')){e.preventDefault();barPrimary();}return;}
-  if(phase==='answer'&&/^[1-9]$/.test(e.key)){const ex=LESSONS[curL].ex[curE];const i=+e.key-1;
+  if(phase==='answer'&&/^[1-9]$/.test(e.key)){const ex=exQ[curE];if(!ex)return;const i=+e.key-1;
     if((ex.t==='mc'||ex.t==='li')&&ex.o&&i<ex.o.length){e.preventDefault();selectMC(i);}
     else if(ex.t==='fill'&&ex.o&&i<ex.o.length){e.preventDefault();selectFill(i);}
   }
@@ -8564,10 +8572,11 @@ function applyTheme(){document.documentElement.setAttribute('data-theme',S.theme
 function toggleRom(){S.rom=document.getElementById('set-rom').checked;save();if(document.getElementById('view-exercise').classList.contains('active'))renderEx();}
 function toggleSound(){S.sound=document.getElementById('set-sound').checked;save();if(S.sound)playSound('correct');}
 function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').checked;save();}
+function changeGoal(){S.dailyGoal=+document.getElementById('set-goal').value||50;save();}
 function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;localStorage.removeItem('sajilo');S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');});}
 
-function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
-load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;
+function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
+load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
 document.getElementById('home-mascot').innerHTML=mascotSVG('happy');
 buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
 </script>
