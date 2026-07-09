@@ -638,9 +638,6 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .zone.polish .cbadge{position:absolute;right:-5px;top:-5px;width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800;border:3px solid var(--card);z-index:3}
 .zone.polish .cbadge.done{background:color-mix(in srgb,var(--zacc) 82%,#000);color:#fff}
 .zone.polish .cbadge.lock{background:var(--paper-2);font-size:11px}
-/* weekly test node — gold, Duolingo-style */
-.zone.polish .cnode.test{--zacc:#D9A421}
-[data-theme="dark"] .zone.polish .cnode.test{--zacc:#C89A2E}
 /* progress: 5-dash bar hugging the tile, then the label */
 .zone.polish .cseg{order:2;display:flex;gap:5px;margin-top:11px}
 .zone.polish .cdot{width:18px;height:6px;border-radius:3px;background:color-mix(in srgb,var(--zacc) 16%,var(--line));transition:background .25s}
@@ -8010,271 +8007,19 @@ const LESSONS = [
     {t:'note',tag:'🎉 You did it!',q:'12 weeks · 60 days complete',body:'<p>You\'ve finished the entire Language Intensive &mdash; from <span class="deva">नमस्ते</span> to sharing the whole gospel in Nepali. You can now introduce yourself, talk about daily life, tell your story, narrate Bible stories, and share the good news. <span class="deva">बधाई छ!</span> &mdash; congratulations! Keep going, keep speaking, and <span class="deva">तुलना नगर्नुहोस्</span> &mdash; don\'t compare. <span class="deva">परमेश्वरसँग तपाईंको लागि असल योजना छ।</span></p>'},
     {t:'mc',q:'Tutor\u2019s final question: "How do we grow in our faith?" begins by choosing to:',o:['follow Jesus (रोज्नु)','stay busy (व्यस्त)','compare (तुलना)','hate (घृणा)'],a:0}
   ]},
-/* ===== WEEKLY TESTS · Language Intensive (auto-built from each week's exercises) ===== */
-  {id:'li_w1test',emoji:'🏆',title:'Week 1 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does this title mean?","d":"दिदी","r":"didi","o":["older sister","older brother","younger sister","mother"],"a":0},
-{"t":"mc","q":"What does this ask?","d":"तपाईंको नाम के हो?","r":"tapainko naam ke ho?","o":["What is your name?","How old are you?","Where are you from?","How are you?"],"a":0},
-{"t":"mc","q":"What does मनपर्छ mean?","d":"मनपर्छ","r":"manparchha","o":["to like","to love","to do","to want"],"a":0},
-{"t":"mc","q":"What does कहाँ mean?","d":"कहाँ","r":"kaha","o":["where","who","what","why"],"a":0},
-{"t":"mc","q":"What does काम mean?","d":"काम","r":"kaam","o":["work","language","weekend","word"],"a":0},
-{"t":"mc","q":"You didn't catch what someone said. You say:","o":["मैले बुझिन","सुरु गरौं","धन्यवाद","हुन्छ"],"a":0},
-{"t":"mc","q":"You want to count objects. You ask:","o":["कति वटा?","कति जना?","कति बज्यो?","यो के हो?"],"a":0},
-{"t":"fill","q":"Complete: \"what is this?\"","s":"यो ___ हो?","o":["के","को","कति","कहाँ"],"a":0},
-{"t":"mc","q":"\"यो सजिलो छैन\" means:","d":"यो सजिलो छैन","r":"yo sajilo chhaina","o":["this is not easy","this is easy","this is hard","this is good"],"a":0},
-{"t":"mc","q":"\"I know how to cook food\" is:","o":["मलाई खाना पकाउन आउँछ","मलाई थाहा छ","मलाई आउँदैन","तपाईंलाई कसरी थाहा छ?"],"a":0},
-{"t":"wb","q":"Build: &ldquo;It's so hot today!&rdquo;","a":["आज","धेरै","गर्मी","छ"],"pool":["छ","आज","गर्मी","धेरै"]},
-{"t":"mc","q":"\"I love my family\" is:","o":["मेरो परिवारलाई धेरै माया गर्छु","मेरो परिवारसँग बस्छु","परिवार महत्त्वपूर्ण छ","मेरो गाडी छ"],"a":0},
-{"t":"mc","q":"You didn't catch a fast sentence. You say:","o":["बिस्तारी भन्नुस्","सीधा जानुस्","रोक्नुस्","यो के हो?"],"a":0},
-{"t":"mc","q":"\"Jesus is my savior\" is:","o":["येशू मेरो मुक्तिदाता हुनुहुन्छ","येशू दयालु हुनुहुन्छ","म येशूमा विश्वास गर्छु","येशूले तपाईंलाई प्रेम गर्नुहुन्छ"],"a":0},
-{"t":"mc","q":"\"I don't really know Nepali\" is:","o":["मलाई खासै नेपाली आउँदैन","मलाई नेपाली आउँछ","मलाई नेपाली मनपर्छ","म नेपाली बोल्न सक्छु"],"a":0},
-{"t":"mc","q":"How do you ask &ldquo;How do you say this in Nepali?&rdquo;","o":["यसलाई नेपालीमा के भन्छ?","कहाँ जानुहुन्छ?","कस्तो छ?","खाना खानुभयो?"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["दुई","two"],["कालो","black"],["परिवार","family"],["भोलि","tomorrow"]]},
-{"t":"mc","q":"Which word means \"why\"?","o":["किन","के","को","कति"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["चार","four"],["रातो","red"],["मा","in / at / on"],["विश्वास","faith"]]},
-{"t":"match","q":"Match to meaning","pairs":[["पाँच","five"],["हरियो","green"],["काम","work"],["भाषा","language"]]}
-  ]},
-  {id:'li_w2test',emoji:'🏆',title:'Week 2 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does उहाँ mean?","d":"उहाँ","r":"wahaa","o":["he / she (respectful)","they","we","you"],"a":0},
-{"t":"mc","q":"What does दुब्लो mean?","d":"दुब्लो","r":"dublo","o":["skinny","fat","tall","kind"],"a":0},
-{"t":"mc","q":"What does भन्दा mean?","d":"भन्दा","r":"bhanda","o":["than","because","if","before"],"a":0},
-{"t":"mc","q":"What does किनभने mean?","d":"किनभने","r":"kinabhane","o":["because","if","then","than"],"a":0},
-{"t":"mc","q":"What does चाहिन्छ mean?","d":"चाहिन्छ","r":"chahinchha","o":["is needed","is wanted","is good","is big"],"a":0},
-{"t":"mc","q":"A lovely line: \"मेरो मन ठूलो छ\" means:","d":"मेरो मन ठूलो छ","r":"mero man thulo chha","o":["my heart is big","my house is big","I am important","my family is big"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["अग्लो","tall"],["होचो","short"],["बच्चा","child"],["धेरै","very"]]},
-{"t":"match","q":"Match to meaning","pairs":[["नयाँ","new"],["पुरानो","old"],["गाडी","car"],["जीवन","life"]]},
-{"t":"mc","q":"\"I think that you are amazing\" begins with which opener?","o":["मलाई लाग्छ","मलाई थाहा छ","मलाई चाहिन्छ","मलाई मनपर्छ"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["अघि","before"],["पहिले","before / earlier"],["अहिले","now"],["काम","work"]]},
-{"t":"mc","q":"\"I think my mom is beautiful\" starts with:","o":["मलाई लाग्छ","मलाई मनपर्छ","मलाई थाहा छ","मलाई चाहिन्छ"],"a":0},
-{"t":"wb","q":"Build: \"before I was fat\"","a":["पहिले","म","मोटो","थिएँ"],"pool":["मोटो","पहिले","थिएँ","म"]},
-{"t":"mc","q":"\"If you come with me, then I would be happy\" &mdash; the \"then\" word is:","o":["भने","यदि","भन्दा","किनभने"],"a":0},
-{"t":"wb","q":"Build: \"I want to tell you something\"","a":["म","तपाईंलाई","केही","भन्न","चाहन्छु"],"pool":["भन्न","म","केही","चाहन्छु","तपाईंलाई"]},
-{"t":"wb","q":"Build: \"I want God’s love\"","a":["म","परमेश्वरको","प्रेम","चाहन्छु"],"pool":["प्रेम","म","चाहन्छु","परमेश्वरको"]},
-{"t":"mc","q":"\"What did you do this morning?\" is:","o":["तपाईंले आज बिहान के गर्नुभयो?","तपाईं कहाँबाट हो?","कति बज्यो?","यो के हो?"],"a":0},
-{"t":"mc","q":"\"Do you know English?\" is:","o":["तपाईंलाई अङ्ग्रेजी आउँछ?","तपाईंको नाम के हो?","तपाईं कहाँ हुनुहुन्छ?","कति बज्यो?"],"a":0},
-{"t":"mc","q":"\"Are you married yet?\" is:","o":["तपाईंको बिहे भयो?","तपाईंको नाम के हो?","कति बज्यो?","तपाईं कहाँबाट हो?"],"a":0},
-{"t":"mc","q":"\"How many kids do you have?\" is:","o":["तपाईंको कति जना बच्चाहरू छन्?","तपाईंको बिहे भयो?","तपाईं कहाँबाट हो?","कति बज्यो?"],"a":0},
-{"t":"mc","q":"What number is this?","d":"दस","r":"das","o":["ten","nine","eight","five"],"a":0}
-  ]},
-  {id:'li_w3test',emoji:'🏆',title:'Week 3 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does हरेक दिन mean?","d":"हरेक दिन","r":"harek din","o":["every day","morning","normally","at night"],"a":0},
-{"t":"mc","q":"What does उठ्नु mean?","d":"उठ्नु","r":"uthnu","o":["to get up","to sleep","to shower","to eat"],"a":0},
-{"t":"mc","q":"What does र mean?","d":"र","r":"ra","o":["and","or","but","than"],"a":0},
-{"t":"mc","q":"What does दिउँसो mean?","d":"दिउँसो","r":"diuso","o":["afternoon","morning","night","every day"],"a":0},
-{"t":"mc","q":"What does प्रायजसो mean?","d":"प्रायजसो","r":"praayjaso","o":["mostly","never","tomorrow","already"],"a":0},
-{"t":"mc","q":"\"My habit is to wake up early\" &mdash; \"habit\" is:","o":["बानी","बिहान","दिन","धेरैजसो"],"a":0},
-{"t":"mc","q":"\"I don't like showers\" is:","o":["मलाई नुहाउनु मनपर्दैन","मलाई सुत्न मनपर्छ","म हरेक बिहान नुहाउँछु","मलाई गर्मी हुन्छ"],"a":0},
-{"t":"mc","q":"\"The classroom is my favorite place\" &mdash; classroom is:","o":["कक्षा कोठा","शौचालय","बजार","घर"],"a":0},
-{"t":"mc","q":"\"Do you like to exercise?\" is:","o":["तपाईंलाई व्यायाम गर्न मनपर्छ?","तपाईंलाई आराम गर्न मनपर्छ?","तपाईं कति बजे उठ्नुहुन्छ?","तपाईं कहाँ हुनुहुन्छ?"],"a":0},
-{"t":"fill","q":"Complete: \"every night I sleep at 10\"","s":"हरेक राति म १० बजे ___","o":["सुत्छु","उठ्छु","दौडिन्छु","नुहाउँछु"],"a":0},
-{"t":"wb","q":"Build: \"I prayed, then I worshipped\"","a":["मैले","प्रार्थना","गरेँ","त्यसपछि","आराधना","गरेँ"],"pool":["आराधना","मैले","गरेँ","प्रार्थना","त्यसपछि","गरेँ"]},
-{"t":"mc","q":"\"After I take a shower, I brush my teeth\" begins:","o":["नुहाएपछि…","खाएपछि…","उठेपछि…","पढेपछि…"],"a":0},
-{"t":"wb","q":"Build: \"I spend time with my friends\"","a":["म","साथीहरूसँग","समय","बिताउँछु"],"pool":["समय","म","बिताउँछु","साथीहरूसँग"]},
-{"t":"mc","q":"\"What time is the meeting?\" is:","o":["बैठक कहिले हुन्छ?","बैठक कहाँ हुन्छ?","खेल कहिले हुन्छ?","कति बज्यो?"],"a":0},
-{"t":"mc","q":"\"After lunch, I will nap\" &mdash; \"lunch\" is:","o":["दिउँसोको खाना","बिहानको खाजा","बेलुकाको खाना","खाजा"],"a":0},
-{"t":"mc","q":"What number is this?","d":"बीस","r":"bis","o":["twenty","ten","thirty","two"],"a":0},
-{"t":"mc","q":"What number is this?","d":"तीस","r":"tis","o":["thirty","twenty","forty","thirteen"],"a":0},
-{"t":"mc","q":"What number is this?","d":"चालीस","r":"chalis","o":["forty","thirty","fourteen","fifty"],"a":0},
-{"t":"mc","q":"What number is this?","d":"पचास","r":"pachas","o":["fifty","forty","fifteen","sixty"],"a":0},
-{"t":"mc","q":"What number is this?","d":"साठी","r":"saathi","o":["sixty","sixteen","fifty","seventy"],"a":0}
-  ]},
-  {id:'li_w4test',emoji:'🏆',title:'Week 4 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does बजार mean?","d":"बजार","r":"bajar","o":["market","village","monastery","house"],"a":0},
-{"t":"mc","q":"What does ठाउँ mean?","d":"ठाउँ","r":"thaau","o":["place","road","market","house"],"a":0},
-{"t":"mc","q":"What does गाडी mean?","d":"गाडी","r":"gadi","o":["car","bicycle","road","house"],"a":0},
-{"t":"mc","q":"What does साइकल mean?","d":"साइकल","r":"saikal","o":["bicycle","car","road","house"],"a":0},
-{"t":"mc","q":"What does अस्पताल mean?","d":"अस्पताल","r":"aspataal","o":["hospital","school","market","house"],"a":0},
-{"t":"fill","q":"Complete: \"go straight on the big road\"","s":"सीधा ठूलो ___ जानुहोस्","o":["बाटो","गाउँ","घर","ठाउँ"],"a":0},
-{"t":"mc","q":"\"How far is that house from here?\" uses यहाँ to mean:","o":["from here","to there","inside","above"],"a":0},
-{"t":"mc","q":"\"Go forward\" is:","o":["अगाडि जानुहोस्","पछाडि जानुहोस्","बाहिर जानुहोस्","भित्र आउनुहोस्"],"a":0},
-{"t":"fill","q":"Complete: \"do you like to hike?\"","s":"तपाईंलाई पहाड ___ मनपर्छ?","o":["चढ्न","किन्न","चलाउन","हेर्न"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["बेच्नु","to sell"],["किन्नु","to buy"],["सस्तो","cheap"],["महँगो","expensive"]]},
-{"t":"wb","q":"Build: \"what is inside your home?\"","a":["तपाईंको","घरभित्र","के","छ?"],"pool":["के","तपाईंको","छ?","घरभित्र"]},
-{"t":"fill","q":"Complete: \"every time I eat bread, I get sick\"","s":"___ पटक रोटी खाँदा म बिरामी हुन्छु","o":["हरेक","यो","त्यो","कुन"],"a":0},
-{"t":"wb","q":"Build: \"what do you want to buy?\"","a":["तपाईं","के","किन्न","चाहनुहुन्छ?"],"pool":["किन्न","तपाईं","चाहनुहुन्छ?","के"]},
-{"t":"mc","q":"\"Salvation is why I follow Jesus\" &mdash; \"why / reason\" is:","o":["कारण","ठाउँ","समय","बाटो"],"a":0},
-{"t":"mc","q":"\"This coffee shop has the best coffee\" &mdash; \"coffee shop\" is:","o":["कफी पसल","बगैचा","खाने ठाउँ","बजार"],"a":0},
-{"t":"mc","q":"What number is this?","d":"सत्तरी","r":"sattari","o":["seventy","sixty","seventeen","eighty"],"a":0},
-{"t":"mc","q":"What number is this?","d":"नब्बे","r":"nabbe","o":["ninety","seventy","nineteen","hundred"],"a":0},
-{"t":"mc","q":"What number is this?","d":"सय","r":"saya","o":["one hundred","ninety","one thousand","ten"],"a":0},
-{"t":"mc","q":"What number is this?","d":"हजार","r":"hajaar","o":["one thousand","one hundred","ninety","ten thousand"],"a":0},
-{"t":"mc","q":"What number is this?","d":"असी","r":"asi","o":["eighty","ninety","eighteen","seventy"],"a":0}
-  ]},
-  {id:'li_w5test',emoji:'🏆',title:'Week 5 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does सायद mean?","d":"सायद","r":"sayad","o":["maybe / probably","always","never","today"],"a":0},
-{"t":"mc","q":"What does बस्नु mean?","d":"बस्नु","r":"basnu","o":["to live / stay","to leave","to walk","to decide"],"a":0},
-{"t":"mc","q":"What does महिना mean?","d":"महिना","r":"mahina","o":["month","week","day","year"],"a":0},
-{"t":"mc","q":"\"म खाँदैछु\" means:","d":"म खाँदैछु","r":"ma khaadaichhu","o":["I am eating","I ate","I will eat","I want to eat"],"a":0},
-{"t":"mc","q":"What does जस्तो mean?","d":"जस्तो","r":"jasto","o":["like / as","than","because","maybe"],"a":0},
-{"t":"mc","q":"\"Do you want to come with me or what?\" ends with कि के? &mdash; कि means:","o":["or","and","because","so"],"a":0},
-{"t":"fill","q":"Complete: \"please put that down\"","s":"त्यसलाई तल ___","o":["राख्नुहोस्","लिनुहोस्","चिन्नुहोस्","हेर्नुहोस्"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["कहिलेकाहीँ","sometimes"],["धेरैजसो","normally"],["हरेक दिन","every day"],["एक्लै","alone"]]},
-{"t":"fill","q":"Complete (past): \"I ran\"","s":"म ___","o":["दौडेँ","दौडदैछु","दौडनेछु","दौडन्छु"],"a":0},
-{"t":"mc","q":"\"God loves all people\" &mdash; \"people\" is:","o":["मानिसहरू","समूह","कर्मचारी","छिमेकी"],"a":0},
-{"t":"mc","q":"What does निस्कनु mean?","d":"निस्कनु","r":"niskanu","o":["to leave / exit","to enter","to live","to decide"],"a":0},
-{"t":"mc","q":"\"I study the Bible so that I can help others\" &mdash; \"so that / in order to\" is:","o":["…को लागि","किनभने","त्यसैले","कि"],"a":0},
-{"t":"mc","q":"\"Suddenly, my neighbor ran out of his house\" begins with:","o":["अचानक","कहिलेकाहीँ","सायद","त्यसैले"],"a":0},
-{"t":"mc","q":"What does दिनु mean?","d":"दिनु","r":"dinu","o":["to give","to take","to put","to decide"],"a":0},
-{"t":"mc","q":"\"When I was little\" is:","o":["जब म सानो थिएँ","जब म ठूलो भएँ","जब म जान्छु","म सानो छु"],"a":0},
-{"t":"mc","q":"\"What is God teaching you lately?\" begins with:","o":["परमेश्वरले तपाईंलाई…","तपाईं कहाँबाट…","कति बज्यो…","तपाईंको नाम…"],"a":0},
-{"t":"mc","q":"\"What did you learn this week?\" is:","o":["तपाईंले यो हप्तामा के सिक्नुभयो?","तपाईं कहाँ बस्नुहुन्छ?","कति बज्यो?","तपाईंको नाम के हो?"],"a":0},
-{"t":"mc","q":"\"How long have you worked here?\" uses which question word for \"how long\"?","o":["कति समयदेखि","कहाँ","किन","को"],"a":0},
-{"t":"mc","q":"\"Why did you decide…?\" uses which question word for \"why\"?","o":["किन","कहाँ","को","कति"],"a":0},
-{"t":"mc","q":"\"What was your favorite thing this week?\" uses थियो to mean:","o":["was (past)","is (now)","will be","can"],"a":0}
-  ]},
-  {id:'li_w6test',emoji:'🏆',title:'Week 6 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does आजभोलि mean?","d":"आजभोलि","r":"aajbholi","o":["these days","yesterday","tomorrow","every day"],"a":0},
-{"t":"mc","q":"What does जब mean?","d":"जब","r":"jaba","o":["when (whenever)","where","why","who"],"a":0},
-{"t":"mc","q":"What does मार्फत mean?","d":"मार्फत","r":"marfat","o":["through / by means of","before","after","without"],"a":0},
-{"t":"mc","q":"What does दुख्नु mean?","d":"दुख्नु","r":"dukhnu","o":["to hurt","to heal","to walk","to feel"],"a":0},
-{"t":"mc","q":"What does अनुभव mean?","d":"अनुभव","r":"anubhav","o":["experience","idea","mistake","story"],"a":0},
-{"t":"fill","q":"Complete: \"I like your shoes\"","s":"मलाई तिम्रो ___ मनपर्‍यो","o":["जुत्ता","पसिना","घर","साइकल"],"a":0},
-{"t":"fill","q":"Complete: \"I feel happy\"","s":"म खुसी ___ गर्छु","o":["महसुस","विचार","सुरु","सेवा"],"a":0},
-{"t":"mc","q":"\"Why do we need a translator?\" implies अनुवादक helps with:","o":["languages","cooking","driving","cleaning"],"a":0},
-{"t":"fill","q":"Complete: \"this year has been really hard\"","s":"___ वर्ष धेरै गाह्रो भएको छ","o":["यो","अर्को","गएको","हरेक"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["सेवा गर्नु","to serve"],["अगुवा","leader"],["बोलाउनु","to call"],["येशू","Jesus"]]},
-{"t":"mc","q":"\"I couldn't sleep\" is:","o":["म सुत्न सकिनँ","म सुतेँ","म सुत्छु","म सुत्न चाहन्छु"],"a":0},
-{"t":"mc","q":"\"When I am sad, I want to eat\" begins with:","o":["जब","किनभने","सायद","त्यसैले"],"a":0},
-{"t":"mc","q":"What does गल्ती mean?","d":"गल्ती","r":"galti","o":["mistake","idea","study","start"],"a":0},
-{"t":"mc","q":"\"What's your favorite story in the Bible?\" &mdash; \"story\" is:","o":["कथा","पाठ","विचार","कुरा"],"a":0},
-{"t":"mc","q":"\"Do you have a good relationship with your family?\" &mdash; \"relationship\" is:","o":["सम्बन्ध","अनुभव","विचार","कथा"],"a":0},
-{"t":"mc","q":"\"What animal do you like?\" &mdash; \"animal\" is:","o":["जनावर","जुत्ता","जीवन","जना"],"a":0},
-{"t":"mc","q":"\"How do you feel?\" begins with:","o":["तपाईंलाई कस्तो…","तपाईं कहाँ…","कति बज्यो…","तपाईं को…"],"a":0},
-{"t":"mc","q":"\"अन्तर्राष्ट्रिय\" means:","d":"अन्तर्राष्ट्रिय","r":"antarrastriya","o":["international","national","spiritual","traditional"],"a":0},
-{"t":"mc","q":"\"What’s your favorite story?\" &mdash; \"story\" is:","o":["कथा","वर्ष","गल्ती","हात"],"a":0},
-{"t":"mc","q":"\"What was your favorite experience this year?\" &mdash; \"experience\" is:","o":["अनुभव","विचार","कथा","गल्ती"],"a":0}
-  ]},
-  {id:'li_w7test',emoji:'🏆',title:'Week 7 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does बाँड्नु mean?","d":"बाँड्नु","r":"baadnu","o":["to share","to listen","to receive","to know"],"a":0},
-{"t":"mc","q":"What does आशा mean?","d":"आशा","r":"aasha","o":["hope","know","peace","joy"],"a":0},
-{"t":"mc","q":"What does रिसाउनु mean?","d":"रिसाउनु","r":"risaaunu","o":["to get angry","to be sad","to be happy","to be afraid"],"a":0},
-{"t":"mc","q":"What does एक्लै mean?","d":"एक्लै","r":"eklai","o":["alone","together","happy","far"],"a":0},
-{"t":"mc","q":"What does आनन्द mean?","d":"आनन्द","r":"aananda","o":["joy","anger","fear","sadness"],"a":0},
-{"t":"mc","q":"What does पाउनु mean?","d":"पाउनु","r":"paunu","o":["to receive / get","to give","to share","to lose"],"a":0},
-{"t":"mc","q":"\"Have you ever met a monk?\" &mdash; \"monk\" is:","o":["लामा","गुरु","साथी","छिमेकी"],"a":0},
-{"t":"wb","q":"Build: \"Jesus gives us peace\"","a":["येशूले","हामीलाई","शान्ति","दिनुहुन्छ"],"pool":["शान्ति","येशूले","दिनुहुन्छ","हामीलाई"]},
-{"t":"match","q":"Match to meaning","pairs":[["भरोसा","trust"],["भरोसा गर्नु","to trust"],["चिन्नु","to know"],["बढाउनु","to grow"]]},
-{"t":"mc","q":"Warmth (न्यानोपन) is the feeling of being:","o":["welcomed & loved","ignored","rushed","alone"],"a":0},
-{"t":"mc","q":"\"I want to work with youth\" is:","o":["म जवानहरूसँग काम गर्न चाहन्छु","म एक्लै काम गर्छु","म जवान हुँ","जवानहरू कहाँ छन्?"],"a":0},
-{"t":"mc","q":"\"God made me to love people\" &mdash; \"made / created\" is:","o":["सिर्जना गर्नु","असफल हुनु","प्राप्त गर्नु","दुख्नु"],"a":0},
-{"t":"wb","q":"Build: \"Jesus changed my life\"","a":["येशूले","मेरो","जीवन","परिवर्तन","गर्नुभयो"],"pool":["परिवर्तन","येशूले","गर्नुभयो","मेरो","जीवन"]},
-{"t":"mc","q":"What does अनाथालय mean?","d":"अनाथालय","r":"anaathalaya","o":["orphanage","hospital","school","church"],"a":0},
-{"t":"mc","q":"Someone shares deep pain with you. The most important first response is to:","o":["respond with love and help them find support","change the subject","tell them to cheer up","leave"],"a":0},
-{"t":"mc","q":"\"Can you share your testimony?\" &mdash; \"testimony\" is:","o":["गवाही","आशा","शान्ति","चर्च"],"a":0},
-{"t":"mc","q":"\"What gives you hope?\" &mdash; \"hope\" is:","o":["आशा","थाहा","शान्ति","धर्म"],"a":0},
-{"t":"mc","q":"\"What gives you peace?\" &mdash; \"peace\" is:","o":["शान्ति","आशा","दुखी","रिस"],"a":0},
-{"t":"mc","q":"\"Do you like to spend time alone?\" &mdash; \"alone\" is:","o":["एक्लै","सँगै","खुसी","फरक"],"a":0},
-{"t":"mc","q":"\"What brings you joy?\" &mdash; \"joy\" is:","o":["आनन्द","दुख","रिस","फरक"],"a":0}
-  ]},
-  {id:'li_w8test',emoji:'🏆',title:'Week 8 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does स्पष्ट mean?","d":"स्पष्ट","r":"spashta","o":["clear / clearly","quiet","fast","loud"],"a":0},
-{"t":"mc","q":"What does \"भए पनि\" mean?","d":"भए पनि","r":"bhae pani","o":["even if / even though","because","before","only if"],"a":0},
-{"t":"mc","q":"What does कहिलेपनि mean?","d":"कहिलेपनि","r":"kahilepani","o":["never","always","sometimes","ever"],"a":0},
-{"t":"mc","q":"What does डराउनु mean?","d":"डराउनु","r":"daraaunu","o":["to be afraid","to be sad","to be angry","to be happy"],"a":0},
-{"t":"mc","q":"What does तुलना mean?","d":"तुलना","r":"tulana","o":["comparison","protection","interest","faith"],"a":0},
-{"t":"fill","q":"Complete: \"where are you? I can’t see you\"","s":"तपाईं कहाँ हुनुहुन्छ? म तपाईंलाई ___ सक्दिन","o":["देख्न","सुन्न","भन्न","जान्न"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["रुचि","interest"],["राख्नु","to keep / hold"],["पछ्याउनु","to follow"],["काम","work"]]},
-{"t":"fill","q":"Complete: \"I will follow Jesus until the end of time\"","s":"म समयको अन्त्य___ येशूलाई पछ्याउनेछु","o":["सम्म","पनि","बाट","मा"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["रक्षा गर्नु","to protect"],["रोग","sickness"],["राष्ट्र","nation"],["समुदाय","community"]]},
-{"t":"mc","q":"\"I want to show you what I made\" &mdash; \"show\" is:","o":["देखाउनु","देख्नु","हेर्नु","तुलना गर्नु"],"a":0},
-{"t":"mc","q":"What does पाप mean?","d":"पाप","r":"paap","o":["sin","faith","hope","peace"],"a":0},
-{"t":"mc","q":"\"How can we grow in our faith?\" &mdash; \"faith\" is:","o":["विश्वास","रुचि","आशा","भरोसा"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["मात्रै","just / only"],["सम्म","until"],["कहिल्यै","ever"],["कहिलेपनि","never"]]},
-{"t":"mc","q":"\"What are you waiting for?\" &mdash; \"waiting\" is:","o":["पर्खनु","हेर्नु","देख्नु","डराउनु"],"a":0},
-{"t":"mc","q":"मुनि (under) is the opposite of:","o":["माथि (above)","बीच (middle)","बाहिर (outside)","अगाडि (front)"],"a":0},
-{"t":"mc","q":"\"What always helps you rest?\" &mdash; \"always\" is:","o":["सधैं","कहिलेकाहीँ","सायद","स्पष्ट"],"a":0},
-{"t":"mc","q":"\"How can your faith grow?\" &mdash; \"faith\" is:","o":["विश्वास","रुचि","आशा","भरोसा"],"a":0},
-{"t":"mc","q":"\"keep going forward\" &mdash; \"go forward\" is:","o":["अगाडि बढ्नु","पछाडि जानु","रोकिनु","बस्नु"],"a":0},
-{"t":"mc","q":"\"When you are afraid…\" &mdash; \"afraid\" is:","o":["डराउनु","खुसी","गाह्रो","सधैं"],"a":0},
-{"t":"mc","q":"The wisdom of this week: comparison (तुलना) steals your:","o":["joy (आनन्द)","health","time","money"],"a":0}
-  ]},
-  {id:'li_w9test',emoji:'🏆',title:'Week 9 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does \"धेरै समय पहिले\" mean?","d":"धेरै समय पहिले","r":"dherai samaya pahile","o":["a long time ago","tomorrow","every day","right now"],"a":0},
-{"t":"mc","q":"What does बोलावट mean?","d":"बोलावट","r":"bolawat","o":["calling","promise","land","angel"],"a":0},
-{"t":"mc","q":"What does ईर्ष्या mean?","d":"ईर्ष्या","r":"irshya","o":["jealousy","blessing","power","promise"],"a":0},
-{"t":"mc","q":"What does पवित्र आत्मा mean?","d":"पवित्र आत्मा","r":"pawitra aatma","o":["Holy Spirit","angel","apostle","heaven"],"a":0},
-{"t":"mc","q":"What does प्रकाश mean?","d":"प्रकाश","r":"prakash","o":["light","darkness","voice","plan"],"a":0},
-{"t":"fill","q":"Complete: \"I have never ridden a boat\"","s":"मैले कहिल्यै ___ चलाएको छैन","o":["डुंगा","समुद्र","गाडी","साइकल"],"a":0},
-{"t":"mc","q":"\"The promised land\" is:","o":["प्रतिज्ञाको भूमि","नयाँ डुंगा","ठूलो समुद्र","दुष्ट शहर"],"a":0},
-{"t":"mc","q":"\"How can I be a blessing to you?\" &mdash; \"blessing\" is:","o":["आशिष","ईर्ष्या","शक्ति","झूट"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["प्रेरित","apostle"],["चेला","disciple"],["पछि लाग्नु","to follow"],["प्रचारक","missionary"]]},
-{"t":"mc","q":"\"I have never traveled\" is:","o":["मैले कहिल्यै यात्रा गरेको छैन","म यात्रा गर्न चाहन्छु","मैले यात्रा गरेँ","म यात्रा गर्छु"],"a":0},
-{"t":"mc","q":"\"How long will it take?\" is:","o":["कति समय लाग्छ?","कति बज्यो?","कहाँ जाने?","यो के हो?"],"a":0},
-{"t":"mc","q":"\"You are a very faithful person\" &mdash; \"faithful\" is:","o":["विश्वासयोग्य","महत्त्वपूर्ण","विशेष","दुष्ट"],"a":0},
-{"t":"mc","q":"What does परिस्थिति mean?","d":"परिस्थिति","r":"paristhiti","o":["situation","power","angel","calling"],"a":0},
-{"t":"mc","q":"What does भवन mean?","d":"भवन","r":"bhawan","o":["building","land","boat","base"],"a":0},
-{"t":"mc","q":"\"You are very special\" is:","o":["तपाईं धेरै विशेष हुनुहुन्छ","तपाईं महत्त्वपूर्ण हुनुहुन्छ","तपाईं विश्वासयोग्य हुनुहुन्छ","तपाईं राम्रो हुनुहुन्छ"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What helps you obey God?\" &mdash; \"obey\" is:","o":["आज्ञा मान्नु","यात्रा गर्नु","हेर्नु","भर्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What helps you look to God?\" &mdash; \"look\" is:","o":["हेर्नु","सुन्नु","भन्नु","देख्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question asks about your hardest:","o":["परिस्थिति (situation)","आशिष (blessing)","योजना (plan)","यात्रा (travel)"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"How has the Holy Spirit changed your life?\" &mdash; \"Holy Spirit\" is:","o":["पवित्र आत्मा","स्वर्गदूत","प्रेरित","आशिष"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What is God’s plan for your life?\" &mdash; \"plan\" is:","o":["योजना","आवाज","यात्रा","प्रकाश"],"a":0}
-  ]},
-  {id:'li_w10test',emoji:'🏆',title:'Week 10 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does गोठालो mean?","d":"गोठालो","r":"gothalo","o":["shepherd","soldier","king","farmer"],"a":0},
-{"t":"mc","q":"What does वरिपरि mean?","d":"वरिपरि","r":"waripari","o":["around","near","under","during"],"a":0},
-{"t":"mc","q":"What does राजा mean?","d":"राजा","r":"raja","o":["king","soldier","shepherd","lion"],"a":0},
-{"t":"mc","q":"What does नजिक mean?","d":"नजिक","r":"najik","o":["near","far","around","under"],"a":0},
-{"t":"mc","q":"What does बचाउनु mean?","d":"बचाउनु","r":"bachaaunu","o":["to save / rescue","to allow","to realize","to become"],"a":0},
-{"t":"mc","q":"\"War is not something to laugh about\" &mdash; \"war\" is:","o":["युद्ध","मजाक","शान्ति","खेल"],"a":0},
-{"t":"fill","q":"Complete: \"I have won 10 times\"","s":"मैले १० ___ जितेँ","o":["पटक","समय","वर्ष","ठाउँ"],"a":0},
-{"t":"mc","q":"\"Jesus is the Lion of Judah\" &mdash; \"lion\" is:","o":["सिंह","थुमा","गोठालो","राजा"],"a":0},
-{"t":"mc","q":"\"Where did you buy your clothes?\" &mdash; \"clothes\" is:","o":["लुगा","खाना","किताब","गाडी"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["आगो","fire"],["बाल्नु","to ignite"],["बत्ती","light"],["हृदय","heart"]]},
-{"t":"mc","q":"\"I want to become a person who loves God\" &mdash; \"become\" is:","o":["बन्न","देख्न","हेर्न","भर्न"],"a":0},
-{"t":"mc","q":"What does कराउनु mean?","d":"कराउनु","r":"karaaunu","o":["to yell","to whisper","to sing","to walk"],"a":0},
-{"t":"mc","q":"\"I am proud of you\" is:","o":["म तपाईंमा गर्व गर्छु","म तपाईंलाई माया गर्छु","म खुसी छु","तपाईं विशेष हुनुहुन्छ"],"a":0},
-{"t":"mc","q":"What does भेडा mean?","d":"भेडा","r":"bheda","o":["sheep","lion","dog","clothing"],"a":0},
-{"t":"mc","q":"\"Please allow me to do it\" &mdash; \"allow\" is:","o":["अनुमति दिनु","गुनासो गर्नु","बचाउनु","बाल्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What do you want to be when older?\" uses which verb?","o":["बन्नु","हुनु","जानु","देख्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What makes you want to yell?\" &mdash; \"yell\" is:","o":["कराउनु","गाउनु","हिँड्नु","जित्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"If you could become any animal, which?\" &mdash; \"become\" is:","o":["बन्नु","हुनु","देख्नु","जान्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What helps you get near to Jesus?\" &mdash; \"near\" is:","o":["नजिक","टाढा","वरिपरि","मुनि"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What helped you realize you wanted to follow Jesus?\" &mdash; \"realize\" is:","o":["थाहा पाउनु","बचाउनु","बाल्नु","बन्नु"],"a":0}
-  ]},
-  {id:'li_w11test',emoji:'🏆',title:'Week 11 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does माफ गर्नु mean?","d":"माफ गर्नु","r":"maaph garnu","o":["to forgive","to find","to feed","to spend"],"a":0},
-{"t":"mc","q":"What does योग्य mean?","d":"योग्य","r":"yogya","o":["worthy","humble","lost","rich"],"a":0},
-{"t":"mc","q":"What does \"…दा खेरी\" mean?","d":"खाँदा खेरी","r":"khaada kheri","o":["while …","after …","before …","because …"],"a":0},
-{"t":"mc","q":"What does धनी mean?","d":"धनी","r":"dhani","o":["rich","poor","lost","worthy"],"a":0},
-{"t":"mc","q":"What does पश्चाताप गर्नु mean?","d":"पश्चाताप गर्नु","r":"paschattaap garnu","o":["to repent","to preach","to feed","to answer"],"a":0},
-{"t":"mc","q":"\"We are all servants of God\" &mdash; \"servants\" is:","o":["सेवक","मालिक","राजा","सिपाही"],"a":0},
-{"t":"mc","q":"\"How can I have more humility?\" &mdash; \"humility\" is:","o":["नम्रता","योग्यता","नराम्रो","सरप्राइज"],"a":0},
-{"t":"mc","q":"\"My life feels like I'm in the middle of a storm\" &mdash; \"storm\" is:","o":["आँधी","शान्ति","डुंगा","भोज"],"a":0},
-{"t":"mc","q":"\"How can we reach the lost?\" &mdash; \"the lost\" is:","o":["हराएका मानिसहरू","धनी मानिसहरू","नम्र मानिसहरू","सेवकहरू"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["प्रचार गर्नु","to preach"],["वचन","word"],["पास्टर","pastor"],["सुसमाचार","gospel"]]},
-{"t":"mc","q":"What does क्रूस mean?","d":"क्रूस","r":"krus","o":["cross","sin","gospel","owner"],"a":0},
-{"t":"mc","q":"\"Jesus rose again\" &mdash; \"again\" is:","o":["फेरि","योग्य","नम्र","संसार"],"a":0},
-{"t":"mc","q":"What does अचम्म लाग्नु mean?","d":"अचम्म लाग्नु","r":"achamma laagnu","o":["to wonder / be amazed","to be calm","to be quiet","to forgive"],"a":0},
-{"t":"mc","q":"\"Farmers live on farms\" &mdash; \"farm\" is:","o":["खेत","बाटो","घर","भवन"],"a":0},
-{"t":"mc","q":"\"Please answer the question\" &mdash; \"answer\" is:","o":["जवाफ दिनु","प्रचार गर्नु","खुवाउनु","पश्चाताप गर्नु"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"biggest surprise since following God?\" &mdash; \"surprise\" is:","o":["सरप्राइज","पाप","भोज","मालिक"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"How can I be more humble?\" &mdash; \"humble\" is:","o":["नम्र","योग्य","धनी","संसार"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"Where do you go to feel calm?\" &mdash; \"calm\" is:","o":["शान्त","आँधी","अचम्म","धनी"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"How can we reach the lost?\" &mdash; \"the lost\" is:","o":["हराएका","धनी","नम्र","सेवक"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"How do we grow in our faith?\" &mdash; \"how\" is:","o":["कसरी","किन","कहाँ","कति"],"a":0}
-  ]},
-  {id:'li_w12test',emoji:'🏆',title:'Week 12 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
-{"t":"mc","q":"What does छत mean?","d":"छत","r":"chhat","o":["roof","floor","wall","table"],"a":0},
-{"t":"mc","q":"What does घृणा mean?","d":"घृणा","r":"ghrina","o":["hate","love","fear","joy"],"a":0},
-{"t":"mc","q":"What does ध्यान दिनु mean?","d":"ध्यान दिनु","r":"dhyaan dinu","o":["to focus / pay attention","to hate","to gather","to grow"],"a":0},
-{"t":"mc","q":"What does एकदम mean?","d":"एकदम","r":"ekdam","o":["very","a little","too much","half"],"a":0},
-{"t":"mc","q":"What does रोज्नु mean?","d":"रोज्नु","r":"rojnu","o":["to choose","to gather","to grow","to ask"],"a":0},
-{"t":"fill","q":"Complete: \"I have seen you grow a lot this year\"","s":"मैले तपाईंलाई यस वर्ष धेरै ___ देखेको छु","o":["बढिरहेको","सुत्दै","उठ्दै","हिँड्दै"],"a":0},
-{"t":"mc","q":"\"I need to gather my possessions before I go\" &mdash; \"gather\" is:","o":["जम्मा गर्नु","खर्च गर्नु","हराउनु","सकाउनु"],"a":0},
-{"t":"mc","q":"\"Let's go to another place\" &mdash; \"another\" is:","o":["अर्को","यही","उस्तै","हरेक"],"a":0},
-{"t":"match","q":"Match to meaning","pairs":[["अचानक","suddenly"],["पानी पर्नु","to rain"],["टोक्नु","to bite"],["हिँड्नु","to walk"]]},
-{"t":"mc","q":"सबैजना (everyone) vs सबै कुरा (?). सबै कुरा means:","o":["everything","everyone","nothing","anyone"],"a":0},
-{"t":"mc","q":"What does सोध्नु mean?","d":"सोध्नु","r":"sodhnu","o":["to ask","to answer","to grow","to gather"],"a":0},
-{"t":"mc","q":"\"How can we help all the poor people?\" &mdash; \"poor\" is:","o":["गरीब","धनी","नम्र","हराएको"],"a":0},
-{"t":"mc","q":"\"Did you know Jesus has more power than ghosts?\" &mdash; \"ghosts\" is:","o":["भूत","भर","भेला","स्तर"],"a":0},
-{"t":"mc","q":"\"The food is on the table\" &mdash; \"table\" is:","o":["टेबल","छत","भुइँ","कुर्सी"],"a":0},
-{"t":"mc","q":"What does घटना mean?","d":"घटना","r":"ghatana","o":["incident / event","option","distraction","level"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What reminds you of home?\" &mdash; \"everyone\" (a related word) is:","o":["सबैजना","सबै कुरा","कोही","केही"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What’s your favorite activity here?\" &mdash; \"activity\" is:","o":["क्रियाकलाप","घृणा","तरिका","स्तर"],"a":0},
-{"t":"mc","q":"Tutor’s question: \"What helps you focus on Jesus?\" &mdash; \"focus\" is:","o":["ध्यान","घृणा","स्तर","भूत"],"a":0},
-{"t":"mc","q":"Tutor’s question is a silly one this time &mdash; but \"suddenly\" you can now answer it! \"suddenly\" is:","o":["अचानक","एकदम","सकियो","टेबल"],"a":0},
-{"t":"mc","q":"Tutor’s final question: \"How do we grow in our faith?\" begins by choosing to:","o":["follow Jesus (रोज्नु)","stay busy (व्यस्त)","compare (तुलना)","hate (घृणा)"],"a":0}
-  ]},
+/* ===== WEEKLY TESTS · Language Intensive — buildTestEx deals 20 random questions from the week on every attempt ===== */
+  {id:'li_w1test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w2test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w3test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w4test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w5test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w6test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w7test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w8test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w9test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w10test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w11test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+  {id:'li_w12test',emoji:'🏆',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
 ];
 const VOWELS=[['अ','a'],['आ','aa'],['इ','i'],['ई','ee'],['उ','u'],['ऊ','oo'],['ए','e'],['ऐ','ai'],['ओ','o'],['औ','au'],['अं','an'],['अः','ah']];
 const CONS=[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha'],['ङ','nga'],['च','cha'],['छ','chha'],['ज','ja'],['झ','jha'],['ञ','nya'],['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha'],['ण','ṇa'],['त','ta'],['थ','tha'],['द','da'],['ध','dha'],['न','na'],['प','pa'],['फ','pha'],['ब','ba'],['भ','bha'],['म','ma'],['य','ya'],['र','ra'],['ल','la'],['व','wa'],['श','sha'],['ष','ṣha'],['स','sa'],['ह','ha']];
@@ -8554,8 +8299,33 @@ function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><c
   return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 function buildSegs(n){const sb=document.getElementById('segbar');if(sb.children.length!==n){sb.innerHTML='';for(let i=0;i<n;i++){const s=document.createElement('div');s.className='seg';s.innerHTML='<span></span>';sb.appendChild(s);}}}
 function updateSegs(){const sb=document.getElementById('segbar');[...sb.children].forEach((s,i)=>s.classList.toggle('done',i<curE));}
-function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;lessonCorrect=0;phase='answer';selMC=-1;if(LESSONS[i].step!=='test')prefetchLesson(LESSONS[i]);show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
+function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;lessonCorrect=0;phase='answer';selMC=-1;
+  if(LESSONS[i].step==='test')LESSONS[i].ex=buildTestEx(LESSONS[i].id);else prefetchLesson(LESSONS[i]);
+  show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
+/* deal a fresh random 20 questions from the test's unit on every attempt:
+   4 per topic-day, tap-only types, no listening prompts, at most 3 match rounds */
+function buildTestEx(testId){
+  const unit=[...UNITS,...UNITS_INTENSIVE].find(u=>u.lessons.includes(testId));
+  if(!unit)return [];
+  const byDay=new Map(),seen=new Set();
+  unit.lessons.forEach(id=>{if(id===testId)return;const l=lessonById(id);if(!l)return;
+    const day=id.replace(/_\d+$/,'');
+    (l.ex||[]).forEach(ex=>{
+      if(!['mc','fill','wb','match'].includes(ex.t))return;
+      if(/listen|hear/i.test(ex.q||''))return;
+      const sig=JSON.stringify(ex);if(seen.has(sig))return;seen.add(sig);
+      if(!byDay.has(day))byDay.set(day,[]);byDay.get(day).push(ex);});});
+  const days=[...byDay.values()];days.forEach(shuffle);
+  const per=Math.ceil(20/Math.max(1,days.length));
+  const picked=[],leftovers=[];let matches=0;
+  days.forEach(pool=>{let n=0;pool.forEach(ex=>{const m=ex.t==='match';
+    if(n<per&&picked.length<20&&(!m||matches<3)){picked.push(ex);n++;if(m)matches++;}
+    else leftovers.push(ex);});});
+  shuffle(leftovers);
+  for(const ex of leftovers){if(picked.length>=20)break;if(ex.t==='match'&&matches>=3)continue;picked.push(ex);if(ex.t==='match')matches++;}
+  return shuffle(picked).slice(0,20);
+}
 function hasDeva(s){return /[\u0900-\u097F]/.test(s||'');}
 function normDeva(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[\s?।.,_'"!:;-]/g,'');}
 function normRom(s){return normDeva(s).replace(/(.)\1+/g,'$1');}

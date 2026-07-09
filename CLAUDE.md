@@ -42,11 +42,13 @@ Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensi
 - Unit: `{n, t, d, lessons:[ids]}`
 - A topic = 5 lessons: `learn → recognize → build → mix → checkpoint`.
   Intensive ids: `li_wWdD` / `li_wWdD_2.._5`.
-- Weekly test = ONE lesson `li_wNtest` with `step:'test'`, 20 tap-only questions
-  reused from that week (mc/fill/wb/match only — no li/tr/note), empty vocab.
-  Renders as its own gold node (`.cnode.test`); pass = 80% first-try correct
-  (`finishTest`); audio fully muted while active (`testMuted`); optional — the
-  next week unlocks off the last core lesson, not the test.
+- Weekly test = ONE lesson `li_wNtest` with `step:'test'`, titled just "Test",
+  `ex:[]` in the data — `buildTestEx` deals a fresh random 20 tap-only questions
+  from that week's pool on every attempt (mc/fill/wb/match, no listen/hear
+  prompts, ≤3 match rounds, ~4 per topic-day). Renders as its own node in normal
+  zone colors with the week number (Devanagari numeral) as symbol; pass = 80%
+  first-try correct (`finishTest`); audio fully muted while active (`testMuted`);
+  optional — the next week unlocks off the last core lesson, not the test.
 - Exercise types: `note{tag,q,body,tip?,eg?}`, `mc{q,d?,r?,o,a}`, `fill{q,s,o,a}`,
   `li{q,say,o,a}`, `wb{q,a:[ordered],pool:[shuffled]}`, `match{q,pairs:[[deva,gloss]]}`,
   `tr{q,a,r,h?}`.
@@ -95,7 +97,8 @@ Recorded MP3s first, device TTS fallback.
 3. Romanization scan: `[\u0900-\u097F]` must NOT appear in `vocab[1]` or `ex.r`.
 4. Integrity: answer indices in range; wb answers ⊆ pool; match pairs well-formed; no
    duplicate options; every topic has exactly 5 lessons (exception: `li_wNtest`
-   nodes are single lessons with exactly 20 scoring questions, no li/tr/note).
+   nodes are single lessons with `ex:[]` — instead check the week's eligible
+   question pool holds ≥20 for `buildTestEx` to deal from).
 5. Confirm main course (63 nodes) untouched and intensive (60 nodes) all-Devanagari.
 6. Inline-handler safety: strings interpolated into `onclick` handlers (vocab `[0]`,
    `ex.d`, `ex.say`, match `pairs[i][0]`) must not contain `'`, `"`, `<`, `>`, or `\`
