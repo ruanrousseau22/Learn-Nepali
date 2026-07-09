@@ -35,13 +35,18 @@ Two tracks share one `LESSONS` array (it ends right before `const VOWELS`).
   Both tracks use Devanagari node symbols (no emoji on nodes).
 
 Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensive =
-12 weeks / 300 lessons / 60 topics.
+12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics.
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
 - Unit: `{n, t, d, lessons:[ids]}`
 - A topic = 5 lessons: `learn → recognize → build → mix → checkpoint`.
   Intensive ids: `li_wWdD` / `li_wWdD_2.._5`.
+- Weekly test = ONE lesson `li_wNtest` with `step:'test'`, 20 tap-only questions
+  reused from that week (mc/fill/wb/match only — no li/tr/note), empty vocab.
+  Renders as its own gold node (`.cnode.test`); pass = 80% first-try correct
+  (`finishTest`); audio fully muted while active (`testMuted`); optional — the
+  next week unlocks off the last core lesson, not the test.
 - Exercise types: `note{tag,q,body,tip?,eg?}`, `mc{q,d?,r?,o,a}`, `fill{q,s,o,a}`,
   `li{q,say,o,a}`, `wb{q,a:[ordered],pool:[shuffled]}`, `match{q,pairs:[[deva,gloss]]}`,
   `tr{q,a,r,h?}`.
@@ -62,7 +67,8 @@ Recorded MP3s first, device TTS fallback.
 - Lessons **prefetch** their recorded clips on start (`prefetchLesson`) for instant playback.
 - Spoken strings = vocab `[0]`, every `say`, mc `d` + correct option, fill's `s` with
   `___` filled, wb `a.join(' ')`, match `pairs[i][0]`, tr `a`, and alphabet
-  `VOWELS/CONS/NUMS`.
+  `VOWELS/CONS/NUMS`. **Exclude `step:'test'` lessons** — tests are silent and
+  reuse already-recorded content anyway.
 
 ### Regenerating audio
 `generate_audio.py` reads `audio_strings.json`, synthesizes with edge-tts, writes
@@ -88,7 +94,8 @@ Recorded MP3s first, device TTS fallback.
    them, inject `window.__X = X` on a throwaway copy.
 3. Romanization scan: `[\u0900-\u097F]` must NOT appear in `vocab[1]` or `ex.r`.
 4. Integrity: answer indices in range; wb answers ⊆ pool; match pairs well-formed; no
-   duplicate options; every topic has exactly 5 lessons.
+   duplicate options; every topic has exactly 5 lessons (exception: `li_wNtest`
+   nodes are single lessons with exactly 20 scoring questions, no li/tr/note).
 5. Confirm main course (63 nodes) untouched and intensive (60 nodes) all-Devanagari.
 6. Inline-handler safety: strings interpolated into `onclick` handlers (vocab `[0]`,
    `ex.d`, `ex.say`, match `pairs[i][0]`) must not contain `'`, `"`, `<`, `>`, or `\`

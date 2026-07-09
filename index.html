@@ -638,6 +638,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .zone.polish .cbadge{position:absolute;right:-5px;top:-5px;width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800;border:3px solid var(--card);z-index:3}
 .zone.polish .cbadge.done{background:color-mix(in srgb,var(--zacc) 82%,#000);color:#fff}
 .zone.polish .cbadge.lock{background:var(--paper-2);font-size:11px}
+/* weekly test node — gold, Duolingo-style */
+.zone.polish .cnode.test{--zacc:#D9A421}
+[data-theme="dark"] .zone.polish .cnode.test{--zacc:#C89A2E}
 /* progress: 5-dash bar hugging the tile, then the label */
 .zone.polish .cseg{order:2;display:flex;gap:5px;margin-top:11px}
 .zone.polish .cdot{width:18px;height:6px;border-radius:3px;background:color-mix(in srgb,var(--zacc) 16%,var(--line));transition:background .25s}
@@ -1040,18 +1043,18 @@ const UNITS=[
 ];
 /* ===== LANGUAGE INTENSIVE track — populated in content stages ===== */
 const UNITS_INTENSIVE = [
-  {n:1,t:'Week 1 · Self-Introduction',d:'Greetings, honor titles & your first words',lessons:['li_w1d1','li_w1d1_2','li_w1d1_3','li_w1d1_4','li_w1d1_5','li_w1d2','li_w1d2_2','li_w1d2_3','li_w1d2_4','li_w1d2_5','li_w1d3','li_w1d3_2','li_w1d3_3','li_w1d3_4','li_w1d3_5','li_w1d4','li_w1d4_2','li_w1d4_3','li_w1d4_4','li_w1d4_5','li_w1d5','li_w1d5_2','li_w1d5_3','li_w1d5_4','li_w1d5_5']},
-  {n:2,t:'Week 2 · Friends & Family',d:'People, adjectives & describing those you love',lessons:['li_w2d1','li_w2d1_2','li_w2d1_3','li_w2d1_4','li_w2d1_5','li_w2d2','li_w2d2_2','li_w2d2_3','li_w2d2_4','li_w2d2_5','li_w2d3','li_w2d3_2','li_w2d3_3','li_w2d3_4','li_w2d3_5','li_w2d4','li_w2d4_2','li_w2d4_3','li_w2d4_4','li_w2d4_5','li_w2d5','li_w2d5_2','li_w2d5_3','li_w2d5_4','li_w2d5_5']},
-  {n:3,t:'Week 3 · Daily Routine',d:'Your day from morning to night',lessons:['li_w3d1','li_w3d1_2','li_w3d1_3','li_w3d1_4','li_w3d1_5','li_w3d2','li_w3d2_2','li_w3d2_3','li_w3d2_4','li_w3d2_5','li_w3d3','li_w3d3_2','li_w3d3_3','li_w3d3_4','li_w3d3_5','li_w3d4','li_w3d4_2','li_w3d4_3','li_w3d4_4','li_w3d4_5','li_w3d5','li_w3d5_2','li_w3d5_3','li_w3d5_4','li_w3d5_5']},
-  {n:4,t:'Week 4 · Out in the World',d:'Market, village, places & getting around',lessons:['li_w4d1','li_w4d1_2','li_w4d1_3','li_w4d1_4','li_w4d1_5','li_w4d2','li_w4d2_2','li_w4d2_3','li_w4d2_4','li_w4d2_5','li_w4d3','li_w4d3_2','li_w4d3_3','li_w4d3_4','li_w4d3_5','li_w4d4','li_w4d4_2','li_w4d4_3','li_w4d4_4','li_w4d4_5','li_w4d5','li_w4d5_2','li_w4d5_3','li_w4d5_4','li_w4d5_5']},
-  {n:5,t:'Week 5 · Share a Story',d:'Days of the week, story connectives & past/present/future',lessons:['li_w5d1','li_w5d1_2','li_w5d1_3','li_w5d1_4','li_w5d1_5','li_w5d2','li_w5d2_2','li_w5d2_3','li_w5d2_4','li_w5d2_5','li_w5d3','li_w5d3_2','li_w5d3_3','li_w5d3_4','li_w5d3_5','li_w5d4','li_w5d4_2','li_w5d4_3','li_w5d4_4','li_w5d4_5','li_w5d5','li_w5d5_2','li_w5d5_3','li_w5d5_4','li_w5d5_5']},
-  {n:6,t:'Week 6 · Share a Story (cont.)',d:'The full week, feelings, body & healing',lessons:['li_w6d1','li_w6d1_2','li_w6d1_3','li_w6d1_4','li_w6d1_5','li_w6d2','li_w6d2_2','li_w6d2_3','li_w6d2_4','li_w6d2_5','li_w6d3','li_w6d3_2','li_w6d3_3','li_w6d3_4','li_w6d3_5','li_w6d4','li_w6d4_2','li_w6d4_3','li_w6d4_4','li_w6d4_5','li_w6d5','li_w6d5_2','li_w6d5_3','li_w6d5_4','li_w6d5_5']},
-  {n:7,t:'Week 7 · Share Your Testimony',d:'Telling your story of changed life & faith',lessons:['li_w7d1','li_w7d1_2','li_w7d1_3','li_w7d1_4','li_w7d1_5','li_w7d2','li_w7d2_2','li_w7d2_3','li_w7d2_4','li_w7d2_5','li_w7d3','li_w7d3_2','li_w7d3_3','li_w7d3_4','li_w7d3_5','li_w7d4','li_w7d4_2','li_w7d4_3','li_w7d4_4','li_w7d4_5','li_w7d5','li_w7d5_2','li_w7d5_3','li_w7d5_4','li_w7d5_5']},
-  {n:8,t:'Week 8 · Testimony, Deeper',d:'Faith, hard times & speaking your story clearly',lessons:['li_w8d1','li_w8d1_2','li_w8d1_3','li_w8d1_4','li_w8d1_5','li_w8d2','li_w8d2_2','li_w8d2_3','li_w8d2_4','li_w8d2_5','li_w8d3','li_w8d3_2','li_w8d3_3','li_w8d3_4','li_w8d3_5','li_w8d4','li_w8d4_2','li_w8d4_3','li_w8d4_4','li_w8d4_5','li_w8d5','li_w8d5_2','li_w8d5_3','li_w8d5_4','li_w8d5_5']},
-  {n:9,t:'Week 9 · Share a Bible Story',d:'Narrating Bible stories: Jonah, Abraham, Joseph, the Spirit, Paul',lessons:['li_w9d1','li_w9d1_2','li_w9d1_3','li_w9d1_4','li_w9d1_5','li_w9d2','li_w9d2_2','li_w9d2_3','li_w9d2_4','li_w9d2_5','li_w9d3','li_w9d3_2','li_w9d3_3','li_w9d3_4','li_w9d3_5','li_w9d4','li_w9d4_2','li_w9d4_3','li_w9d4_4','li_w9d4_5','li_w9d5','li_w9d5_2','li_w9d5_3','li_w9d5_4','li_w9d5_5']},
-  {n:10,t:'Week 10 · Share a Bible Story (cont.)',d:'David, Joshua, Daniel, Jacob & Moses',lessons:['li_w10d1','li_w10d1_2','li_w10d1_3','li_w10d1_4','li_w10d1_5','li_w10d2','li_w10d2_2','li_w10d2_3','li_w10d2_4','li_w10d2_5','li_w10d3','li_w10d3_2','li_w10d3_3','li_w10d3_4','li_w10d3_5','li_w10d4','li_w10d4_2','li_w10d4_3','li_w10d4_4','li_w10d4_5','li_w10d5','li_w10d5_2','li_w10d5_3','li_w10d5_4','li_w10d5_5']},
-  {n:11,t:'Week 11 · Evangelism',d:'Sharing the Gospel: forgiveness, the lost & the good news',lessons:['li_w11d1','li_w11d1_2','li_w11d1_3','li_w11d1_4','li_w11d1_5','li_w11d2','li_w11d2_2','li_w11d2_3','li_w11d2_4','li_w11d2_5','li_w11d3','li_w11d3_2','li_w11d3_3','li_w11d3_4','li_w11d3_5','li_w11d4','li_w11d4_2','li_w11d4_3','li_w11d4_4','li_w11d4_5','li_w11d5','li_w11d5_2','li_w11d5_3','li_w11d5_4','li_w11d5_5']},
-  {n:12,t:'Week 12 · Evangelism (finale)',d:'Focus on Jesus, the problem of sin & choosing him',lessons:['li_w12d1','li_w12d1_2','li_w12d1_3','li_w12d1_4','li_w12d1_5','li_w12d2','li_w12d2_2','li_w12d2_3','li_w12d2_4','li_w12d2_5','li_w12d3','li_w12d3_2','li_w12d3_3','li_w12d3_4','li_w12d3_5','li_w12d4','li_w12d4_2','li_w12d4_3','li_w12d4_4','li_w12d4_5','li_w12d5','li_w12d5_2','li_w12d5_3','li_w12d5_4','li_w12d5_5']},
+  {n:1,t:'Week 1 · Self-Introduction',d:'Greetings, honor titles & your first words',lessons:['li_w1d1','li_w1d1_2','li_w1d1_3','li_w1d1_4','li_w1d1_5','li_w1d2','li_w1d2_2','li_w1d2_3','li_w1d2_4','li_w1d2_5','li_w1d3','li_w1d3_2','li_w1d3_3','li_w1d3_4','li_w1d3_5','li_w1d4','li_w1d4_2','li_w1d4_3','li_w1d4_4','li_w1d4_5','li_w1d5','li_w1d5_2','li_w1d5_3','li_w1d5_4','li_w1d5_5','li_w1test']},
+  {n:2,t:'Week 2 · Friends & Family',d:'People, adjectives & describing those you love',lessons:['li_w2d1','li_w2d1_2','li_w2d1_3','li_w2d1_4','li_w2d1_5','li_w2d2','li_w2d2_2','li_w2d2_3','li_w2d2_4','li_w2d2_5','li_w2d3','li_w2d3_2','li_w2d3_3','li_w2d3_4','li_w2d3_5','li_w2d4','li_w2d4_2','li_w2d4_3','li_w2d4_4','li_w2d4_5','li_w2d5','li_w2d5_2','li_w2d5_3','li_w2d5_4','li_w2d5_5','li_w2test']},
+  {n:3,t:'Week 3 · Daily Routine',d:'Your day from morning to night',lessons:['li_w3d1','li_w3d1_2','li_w3d1_3','li_w3d1_4','li_w3d1_5','li_w3d2','li_w3d2_2','li_w3d2_3','li_w3d2_4','li_w3d2_5','li_w3d3','li_w3d3_2','li_w3d3_3','li_w3d3_4','li_w3d3_5','li_w3d4','li_w3d4_2','li_w3d4_3','li_w3d4_4','li_w3d4_5','li_w3d5','li_w3d5_2','li_w3d5_3','li_w3d5_4','li_w3d5_5','li_w3test']},
+  {n:4,t:'Week 4 · Out in the World',d:'Market, village, places & getting around',lessons:['li_w4d1','li_w4d1_2','li_w4d1_3','li_w4d1_4','li_w4d1_5','li_w4d2','li_w4d2_2','li_w4d2_3','li_w4d2_4','li_w4d2_5','li_w4d3','li_w4d3_2','li_w4d3_3','li_w4d3_4','li_w4d3_5','li_w4d4','li_w4d4_2','li_w4d4_3','li_w4d4_4','li_w4d4_5','li_w4d5','li_w4d5_2','li_w4d5_3','li_w4d5_4','li_w4d5_5','li_w4test']},
+  {n:5,t:'Week 5 · Share a Story',d:'Days of the week, story connectives & past/present/future',lessons:['li_w5d1','li_w5d1_2','li_w5d1_3','li_w5d1_4','li_w5d1_5','li_w5d2','li_w5d2_2','li_w5d2_3','li_w5d2_4','li_w5d2_5','li_w5d3','li_w5d3_2','li_w5d3_3','li_w5d3_4','li_w5d3_5','li_w5d4','li_w5d4_2','li_w5d4_3','li_w5d4_4','li_w5d4_5','li_w5d5','li_w5d5_2','li_w5d5_3','li_w5d5_4','li_w5d5_5','li_w5test']},
+  {n:6,t:'Week 6 · Share a Story (cont.)',d:'The full week, feelings, body & healing',lessons:['li_w6d1','li_w6d1_2','li_w6d1_3','li_w6d1_4','li_w6d1_5','li_w6d2','li_w6d2_2','li_w6d2_3','li_w6d2_4','li_w6d2_5','li_w6d3','li_w6d3_2','li_w6d3_3','li_w6d3_4','li_w6d3_5','li_w6d4','li_w6d4_2','li_w6d4_3','li_w6d4_4','li_w6d4_5','li_w6d5','li_w6d5_2','li_w6d5_3','li_w6d5_4','li_w6d5_5','li_w6test']},
+  {n:7,t:'Week 7 · Share Your Testimony',d:'Telling your story of changed life & faith',lessons:['li_w7d1','li_w7d1_2','li_w7d1_3','li_w7d1_4','li_w7d1_5','li_w7d2','li_w7d2_2','li_w7d2_3','li_w7d2_4','li_w7d2_5','li_w7d3','li_w7d3_2','li_w7d3_3','li_w7d3_4','li_w7d3_5','li_w7d4','li_w7d4_2','li_w7d4_3','li_w7d4_4','li_w7d4_5','li_w7d5','li_w7d5_2','li_w7d5_3','li_w7d5_4','li_w7d5_5','li_w7test']},
+  {n:8,t:'Week 8 · Testimony, Deeper',d:'Faith, hard times & speaking your story clearly',lessons:['li_w8d1','li_w8d1_2','li_w8d1_3','li_w8d1_4','li_w8d1_5','li_w8d2','li_w8d2_2','li_w8d2_3','li_w8d2_4','li_w8d2_5','li_w8d3','li_w8d3_2','li_w8d3_3','li_w8d3_4','li_w8d3_5','li_w8d4','li_w8d4_2','li_w8d4_3','li_w8d4_4','li_w8d4_5','li_w8d5','li_w8d5_2','li_w8d5_3','li_w8d5_4','li_w8d5_5','li_w8test']},
+  {n:9,t:'Week 9 · Share a Bible Story',d:'Narrating Bible stories: Jonah, Abraham, Joseph, the Spirit, Paul',lessons:['li_w9d1','li_w9d1_2','li_w9d1_3','li_w9d1_4','li_w9d1_5','li_w9d2','li_w9d2_2','li_w9d2_3','li_w9d2_4','li_w9d2_5','li_w9d3','li_w9d3_2','li_w9d3_3','li_w9d3_4','li_w9d3_5','li_w9d4','li_w9d4_2','li_w9d4_3','li_w9d4_4','li_w9d4_5','li_w9d5','li_w9d5_2','li_w9d5_3','li_w9d5_4','li_w9d5_5','li_w9test']},
+  {n:10,t:'Week 10 · Share a Bible Story (cont.)',d:'David, Joshua, Daniel, Jacob & Moses',lessons:['li_w10d1','li_w10d1_2','li_w10d1_3','li_w10d1_4','li_w10d1_5','li_w10d2','li_w10d2_2','li_w10d2_3','li_w10d2_4','li_w10d2_5','li_w10d3','li_w10d3_2','li_w10d3_3','li_w10d3_4','li_w10d3_5','li_w10d4','li_w10d4_2','li_w10d4_3','li_w10d4_4','li_w10d4_5','li_w10d5','li_w10d5_2','li_w10d5_3','li_w10d5_4','li_w10d5_5','li_w10test']},
+  {n:11,t:'Week 11 · Evangelism',d:'Sharing the Gospel: forgiveness, the lost & the good news',lessons:['li_w11d1','li_w11d1_2','li_w11d1_3','li_w11d1_4','li_w11d1_5','li_w11d2','li_w11d2_2','li_w11d2_3','li_w11d2_4','li_w11d2_5','li_w11d3','li_w11d3_2','li_w11d3_3','li_w11d3_4','li_w11d3_5','li_w11d4','li_w11d4_2','li_w11d4_3','li_w11d4_4','li_w11d4_5','li_w11d5','li_w11d5_2','li_w11d5_3','li_w11d5_4','li_w11d5_5','li_w11test']},
+  {n:12,t:'Week 12 · Evangelism (finale)',d:'Focus on Jesus, the problem of sin & choosing him',lessons:['li_w12d1','li_w12d1_2','li_w12d1_3','li_w12d1_4','li_w12d1_5','li_w12d2','li_w12d2_2','li_w12d2_3','li_w12d2_4','li_w12d2_5','li_w12d3','li_w12d3_2','li_w12d3_3','li_w12d3_4','li_w12d3_5','li_w12d4','li_w12d4_2','li_w12d4_3','li_w12d4_4','li_w12d4_5','li_w12d5','li_w12d5_2','li_w12d5_3','li_w12d5_4','li_w12d5_5','li_w12test']},
 ];
 const LESSONS = [
   /* ===================== UNIT 1 · THE SCRIPT ===================== */
@@ -8006,7 +8009,272 @@ const LESSONS = [
     {t:'note',tag:'The Gospel & the choice',q:'Everything has led here',body:'<p><span class="deva">हामी परमेश्वरसँग सम्बन्ध राख्न सृष्टि भयौं, तर पापले हामीलाई टाढा बनायो। येशू हाम्रो पापको मूल्य चुकाउन क्रूसमा मर्नुभयो र फेरि बौरिउठ्नुभयो। अब हामीले उहाँलाई रोज्ने निर्णय गर्नुपर्छ।</span></p><p>We were made for God; sin separated us; Jesus died and rose for us. Now the choice is ours: <span class="deva">म येशूलाई रोज्छु</span> &mdash; I choose Jesus.</p>'},
     {t:'note',tag:'🎉 You did it!',q:'12 weeks · 60 days complete',body:'<p>You\'ve finished the entire Language Intensive &mdash; from <span class="deva">नमस्ते</span> to sharing the whole gospel in Nepali. You can now introduce yourself, talk about daily life, tell your story, narrate Bible stories, and share the good news. <span class="deva">बधाई छ!</span> &mdash; congratulations! Keep going, keep speaking, and <span class="deva">तुलना नगर्नुहोस्</span> &mdash; don\'t compare. <span class="deva">परमेश्वरसँग तपाईंको लागि असल योजना छ।</span></p>'},
     {t:'mc',q:'Tutor\u2019s final question: "How do we grow in our faith?" begins by choosing to:',o:['follow Jesus (रोज्नु)','stay busy (व्यस्त)','compare (तुलना)','hate (घृणा)'],a:0}
-  ]}
+  ]},
+/* ===== WEEKLY TESTS · Language Intensive (auto-built from each week's exercises) ===== */
+  {id:'li_w1test',emoji:'🏆',title:'Week 1 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does this title mean?","d":"दिदी","r":"didi","o":["older sister","older brother","younger sister","mother"],"a":0},
+{"t":"mc","q":"What does this ask?","d":"तपाईंको नाम के हो?","r":"tapainko naam ke ho?","o":["What is your name?","How old are you?","Where are you from?","How are you?"],"a":0},
+{"t":"mc","q":"What does मनपर्छ mean?","d":"मनपर्छ","r":"manparchha","o":["to like","to love","to do","to want"],"a":0},
+{"t":"mc","q":"What does कहाँ mean?","d":"कहाँ","r":"kaha","o":["where","who","what","why"],"a":0},
+{"t":"mc","q":"What does काम mean?","d":"काम","r":"kaam","o":["work","language","weekend","word"],"a":0},
+{"t":"mc","q":"You didn't catch what someone said. You say:","o":["मैले बुझिन","सुरु गरौं","धन्यवाद","हुन्छ"],"a":0},
+{"t":"mc","q":"You want to count objects. You ask:","o":["कति वटा?","कति जना?","कति बज्यो?","यो के हो?"],"a":0},
+{"t":"fill","q":"Complete: \"what is this?\"","s":"यो ___ हो?","o":["के","को","कति","कहाँ"],"a":0},
+{"t":"mc","q":"\"यो सजिलो छैन\" means:","d":"यो सजिलो छैन","r":"yo sajilo chhaina","o":["this is not easy","this is easy","this is hard","this is good"],"a":0},
+{"t":"mc","q":"\"I know how to cook food\" is:","o":["मलाई खाना पकाउन आउँछ","मलाई थाहा छ","मलाई आउँदैन","तपाईंलाई कसरी थाहा छ?"],"a":0},
+{"t":"wb","q":"Build: &ldquo;It's so hot today!&rdquo;","a":["आज","धेरै","गर्मी","छ"],"pool":["छ","आज","गर्मी","धेरै"]},
+{"t":"mc","q":"\"I love my family\" is:","o":["मेरो परिवारलाई धेरै माया गर्छु","मेरो परिवारसँग बस्छु","परिवार महत्त्वपूर्ण छ","मेरो गाडी छ"],"a":0},
+{"t":"mc","q":"You didn't catch a fast sentence. You say:","o":["बिस्तारी भन्नुस्","सीधा जानुस्","रोक्नुस्","यो के हो?"],"a":0},
+{"t":"mc","q":"\"Jesus is my savior\" is:","o":["येशू मेरो मुक्तिदाता हुनुहुन्छ","येशू दयालु हुनुहुन्छ","म येशूमा विश्वास गर्छु","येशूले तपाईंलाई प्रेम गर्नुहुन्छ"],"a":0},
+{"t":"mc","q":"\"I don't really know Nepali\" is:","o":["मलाई खासै नेपाली आउँदैन","मलाई नेपाली आउँछ","मलाई नेपाली मनपर्छ","म नेपाली बोल्न सक्छु"],"a":0},
+{"t":"mc","q":"How do you ask &ldquo;How do you say this in Nepali?&rdquo;","o":["यसलाई नेपालीमा के भन्छ?","कहाँ जानुहुन्छ?","कस्तो छ?","खाना खानुभयो?"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["दुई","two"],["कालो","black"],["परिवार","family"],["भोलि","tomorrow"]]},
+{"t":"mc","q":"Which word means \"why\"?","o":["किन","के","को","कति"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["चार","four"],["रातो","red"],["मा","in / at / on"],["विश्वास","faith"]]},
+{"t":"match","q":"Match to meaning","pairs":[["पाँच","five"],["हरियो","green"],["काम","work"],["भाषा","language"]]}
+  ]},
+  {id:'li_w2test',emoji:'🏆',title:'Week 2 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does उहाँ mean?","d":"उहाँ","r":"wahaa","o":["he / she (respectful)","they","we","you"],"a":0},
+{"t":"mc","q":"What does दुब्लो mean?","d":"दुब्लो","r":"dublo","o":["skinny","fat","tall","kind"],"a":0},
+{"t":"mc","q":"What does भन्दा mean?","d":"भन्दा","r":"bhanda","o":["than","because","if","before"],"a":0},
+{"t":"mc","q":"What does किनभने mean?","d":"किनभने","r":"kinabhane","o":["because","if","then","than"],"a":0},
+{"t":"mc","q":"What does चाहिन्छ mean?","d":"चाहिन्छ","r":"chahinchha","o":["is needed","is wanted","is good","is big"],"a":0},
+{"t":"mc","q":"A lovely line: \"मेरो मन ठूलो छ\" means:","d":"मेरो मन ठूलो छ","r":"mero man thulo chha","o":["my heart is big","my house is big","I am important","my family is big"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["अग्लो","tall"],["होचो","short"],["बच्चा","child"],["धेरै","very"]]},
+{"t":"match","q":"Match to meaning","pairs":[["नयाँ","new"],["पुरानो","old"],["गाडी","car"],["जीवन","life"]]},
+{"t":"mc","q":"\"I think that you are amazing\" begins with which opener?","o":["मलाई लाग्छ","मलाई थाहा छ","मलाई चाहिन्छ","मलाई मनपर्छ"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["अघि","before"],["पहिले","before / earlier"],["अहिले","now"],["काम","work"]]},
+{"t":"mc","q":"\"I think my mom is beautiful\" starts with:","o":["मलाई लाग्छ","मलाई मनपर्छ","मलाई थाहा छ","मलाई चाहिन्छ"],"a":0},
+{"t":"wb","q":"Build: \"before I was fat\"","a":["पहिले","म","मोटो","थिएँ"],"pool":["मोटो","पहिले","थिएँ","म"]},
+{"t":"mc","q":"\"If you come with me, then I would be happy\" &mdash; the \"then\" word is:","o":["भने","यदि","भन्दा","किनभने"],"a":0},
+{"t":"wb","q":"Build: \"I want to tell you something\"","a":["म","तपाईंलाई","केही","भन्न","चाहन्छु"],"pool":["भन्न","म","केही","चाहन्छु","तपाईंलाई"]},
+{"t":"wb","q":"Build: \"I want God’s love\"","a":["म","परमेश्वरको","प्रेम","चाहन्छु"],"pool":["प्रेम","म","चाहन्छु","परमेश्वरको"]},
+{"t":"mc","q":"\"What did you do this morning?\" is:","o":["तपाईंले आज बिहान के गर्नुभयो?","तपाईं कहाँबाट हो?","कति बज्यो?","यो के हो?"],"a":0},
+{"t":"mc","q":"\"Do you know English?\" is:","o":["तपाईंलाई अङ्ग्रेजी आउँछ?","तपाईंको नाम के हो?","तपाईं कहाँ हुनुहुन्छ?","कति बज्यो?"],"a":0},
+{"t":"mc","q":"\"Are you married yet?\" is:","o":["तपाईंको बिहे भयो?","तपाईंको नाम के हो?","कति बज्यो?","तपाईं कहाँबाट हो?"],"a":0},
+{"t":"mc","q":"\"How many kids do you have?\" is:","o":["तपाईंको कति जना बच्चाहरू छन्?","तपाईंको बिहे भयो?","तपाईं कहाँबाट हो?","कति बज्यो?"],"a":0},
+{"t":"mc","q":"What number is this?","d":"दस","r":"das","o":["ten","nine","eight","five"],"a":0}
+  ]},
+  {id:'li_w3test',emoji:'🏆',title:'Week 3 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does हरेक दिन mean?","d":"हरेक दिन","r":"harek din","o":["every day","morning","normally","at night"],"a":0},
+{"t":"mc","q":"What does उठ्नु mean?","d":"उठ्नु","r":"uthnu","o":["to get up","to sleep","to shower","to eat"],"a":0},
+{"t":"mc","q":"What does र mean?","d":"र","r":"ra","o":["and","or","but","than"],"a":0},
+{"t":"mc","q":"What does दिउँसो mean?","d":"दिउँसो","r":"diuso","o":["afternoon","morning","night","every day"],"a":0},
+{"t":"mc","q":"What does प्रायजसो mean?","d":"प्रायजसो","r":"praayjaso","o":["mostly","never","tomorrow","already"],"a":0},
+{"t":"mc","q":"\"My habit is to wake up early\" &mdash; \"habit\" is:","o":["बानी","बिहान","दिन","धेरैजसो"],"a":0},
+{"t":"mc","q":"\"I don't like showers\" is:","o":["मलाई नुहाउनु मनपर्दैन","मलाई सुत्न मनपर्छ","म हरेक बिहान नुहाउँछु","मलाई गर्मी हुन्छ"],"a":0},
+{"t":"mc","q":"\"The classroom is my favorite place\" &mdash; classroom is:","o":["कक्षा कोठा","शौचालय","बजार","घर"],"a":0},
+{"t":"mc","q":"\"Do you like to exercise?\" is:","o":["तपाईंलाई व्यायाम गर्न मनपर्छ?","तपाईंलाई आराम गर्न मनपर्छ?","तपाईं कति बजे उठ्नुहुन्छ?","तपाईं कहाँ हुनुहुन्छ?"],"a":0},
+{"t":"fill","q":"Complete: \"every night I sleep at 10\"","s":"हरेक राति म १० बजे ___","o":["सुत्छु","उठ्छु","दौडिन्छु","नुहाउँछु"],"a":0},
+{"t":"wb","q":"Build: \"I prayed, then I worshipped\"","a":["मैले","प्रार्थना","गरेँ","त्यसपछि","आराधना","गरेँ"],"pool":["आराधना","मैले","गरेँ","प्रार्थना","त्यसपछि","गरेँ"]},
+{"t":"mc","q":"\"After I take a shower, I brush my teeth\" begins:","o":["नुहाएपछि…","खाएपछि…","उठेपछि…","पढेपछि…"],"a":0},
+{"t":"wb","q":"Build: \"I spend time with my friends\"","a":["म","साथीहरूसँग","समय","बिताउँछु"],"pool":["समय","म","बिताउँछु","साथीहरूसँग"]},
+{"t":"mc","q":"\"What time is the meeting?\" is:","o":["बैठक कहिले हुन्छ?","बैठक कहाँ हुन्छ?","खेल कहिले हुन्छ?","कति बज्यो?"],"a":0},
+{"t":"mc","q":"\"After lunch, I will nap\" &mdash; \"lunch\" is:","o":["दिउँसोको खाना","बिहानको खाजा","बेलुकाको खाना","खाजा"],"a":0},
+{"t":"mc","q":"What number is this?","d":"बीस","r":"bis","o":["twenty","ten","thirty","two"],"a":0},
+{"t":"mc","q":"What number is this?","d":"तीस","r":"tis","o":["thirty","twenty","forty","thirteen"],"a":0},
+{"t":"mc","q":"What number is this?","d":"चालीस","r":"chalis","o":["forty","thirty","fourteen","fifty"],"a":0},
+{"t":"mc","q":"What number is this?","d":"पचास","r":"pachas","o":["fifty","forty","fifteen","sixty"],"a":0},
+{"t":"mc","q":"What number is this?","d":"साठी","r":"saathi","o":["sixty","sixteen","fifty","seventy"],"a":0}
+  ]},
+  {id:'li_w4test',emoji:'🏆',title:'Week 4 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does बजार mean?","d":"बजार","r":"bajar","o":["market","village","monastery","house"],"a":0},
+{"t":"mc","q":"What does ठाउँ mean?","d":"ठाउँ","r":"thaau","o":["place","road","market","house"],"a":0},
+{"t":"mc","q":"What does गाडी mean?","d":"गाडी","r":"gadi","o":["car","bicycle","road","house"],"a":0},
+{"t":"mc","q":"What does साइकल mean?","d":"साइकल","r":"saikal","o":["bicycle","car","road","house"],"a":0},
+{"t":"mc","q":"What does अस्पताल mean?","d":"अस्पताल","r":"aspataal","o":["hospital","school","market","house"],"a":0},
+{"t":"fill","q":"Complete: \"go straight on the big road\"","s":"सीधा ठूलो ___ जानुहोस्","o":["बाटो","गाउँ","घर","ठाउँ"],"a":0},
+{"t":"mc","q":"\"How far is that house from here?\" uses यहाँ to mean:","o":["from here","to there","inside","above"],"a":0},
+{"t":"mc","q":"\"Go forward\" is:","o":["अगाडि जानुहोस्","पछाडि जानुहोस्","बाहिर जानुहोस्","भित्र आउनुहोस्"],"a":0},
+{"t":"fill","q":"Complete: \"do you like to hike?\"","s":"तपाईंलाई पहाड ___ मनपर्छ?","o":["चढ्न","किन्न","चलाउन","हेर्न"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["बेच्नु","to sell"],["किन्नु","to buy"],["सस्तो","cheap"],["महँगो","expensive"]]},
+{"t":"wb","q":"Build: \"what is inside your home?\"","a":["तपाईंको","घरभित्र","के","छ?"],"pool":["के","तपाईंको","छ?","घरभित्र"]},
+{"t":"fill","q":"Complete: \"every time I eat bread, I get sick\"","s":"___ पटक रोटी खाँदा म बिरामी हुन्छु","o":["हरेक","यो","त्यो","कुन"],"a":0},
+{"t":"wb","q":"Build: \"what do you want to buy?\"","a":["तपाईं","के","किन्न","चाहनुहुन्छ?"],"pool":["किन्न","तपाईं","चाहनुहुन्छ?","के"]},
+{"t":"mc","q":"\"Salvation is why I follow Jesus\" &mdash; \"why / reason\" is:","o":["कारण","ठाउँ","समय","बाटो"],"a":0},
+{"t":"mc","q":"\"This coffee shop has the best coffee\" &mdash; \"coffee shop\" is:","o":["कफी पसल","बगैचा","खाने ठाउँ","बजार"],"a":0},
+{"t":"mc","q":"What number is this?","d":"सत्तरी","r":"sattari","o":["seventy","sixty","seventeen","eighty"],"a":0},
+{"t":"mc","q":"What number is this?","d":"नब्बे","r":"nabbe","o":["ninety","seventy","nineteen","hundred"],"a":0},
+{"t":"mc","q":"What number is this?","d":"सय","r":"saya","o":["one hundred","ninety","one thousand","ten"],"a":0},
+{"t":"mc","q":"What number is this?","d":"हजार","r":"hajaar","o":["one thousand","one hundred","ninety","ten thousand"],"a":0},
+{"t":"mc","q":"What number is this?","d":"असी","r":"asi","o":["eighty","ninety","eighteen","seventy"],"a":0}
+  ]},
+  {id:'li_w5test',emoji:'🏆',title:'Week 5 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does सायद mean?","d":"सायद","r":"sayad","o":["maybe / probably","always","never","today"],"a":0},
+{"t":"mc","q":"What does बस्नु mean?","d":"बस्नु","r":"basnu","o":["to live / stay","to leave","to walk","to decide"],"a":0},
+{"t":"mc","q":"What does महिना mean?","d":"महिना","r":"mahina","o":["month","week","day","year"],"a":0},
+{"t":"mc","q":"\"म खाँदैछु\" means:","d":"म खाँदैछु","r":"ma khaadaichhu","o":["I am eating","I ate","I will eat","I want to eat"],"a":0},
+{"t":"mc","q":"What does जस्तो mean?","d":"जस्तो","r":"jasto","o":["like / as","than","because","maybe"],"a":0},
+{"t":"mc","q":"\"Do you want to come with me or what?\" ends with कि के? &mdash; कि means:","o":["or","and","because","so"],"a":0},
+{"t":"fill","q":"Complete: \"please put that down\"","s":"त्यसलाई तल ___","o":["राख्नुहोस्","लिनुहोस्","चिन्नुहोस्","हेर्नुहोस्"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["कहिलेकाहीँ","sometimes"],["धेरैजसो","normally"],["हरेक दिन","every day"],["एक्लै","alone"]]},
+{"t":"fill","q":"Complete (past): \"I ran\"","s":"म ___","o":["दौडेँ","दौडदैछु","दौडनेछु","दौडन्छु"],"a":0},
+{"t":"mc","q":"\"God loves all people\" &mdash; \"people\" is:","o":["मानिसहरू","समूह","कर्मचारी","छिमेकी"],"a":0},
+{"t":"mc","q":"What does निस्कनु mean?","d":"निस्कनु","r":"niskanu","o":["to leave / exit","to enter","to live","to decide"],"a":0},
+{"t":"mc","q":"\"I study the Bible so that I can help others\" &mdash; \"so that / in order to\" is:","o":["…को लागि","किनभने","त्यसैले","कि"],"a":0},
+{"t":"mc","q":"\"Suddenly, my neighbor ran out of his house\" begins with:","o":["अचानक","कहिलेकाहीँ","सायद","त्यसैले"],"a":0},
+{"t":"mc","q":"What does दिनु mean?","d":"दिनु","r":"dinu","o":["to give","to take","to put","to decide"],"a":0},
+{"t":"mc","q":"\"When I was little\" is:","o":["जब म सानो थिएँ","जब म ठूलो भएँ","जब म जान्छु","म सानो छु"],"a":0},
+{"t":"mc","q":"\"What is God teaching you lately?\" begins with:","o":["परमेश्वरले तपाईंलाई…","तपाईं कहाँबाट…","कति बज्यो…","तपाईंको नाम…"],"a":0},
+{"t":"mc","q":"\"What did you learn this week?\" is:","o":["तपाईंले यो हप्तामा के सिक्नुभयो?","तपाईं कहाँ बस्नुहुन्छ?","कति बज्यो?","तपाईंको नाम के हो?"],"a":0},
+{"t":"mc","q":"\"How long have you worked here?\" uses which question word for \"how long\"?","o":["कति समयदेखि","कहाँ","किन","को"],"a":0},
+{"t":"mc","q":"\"Why did you decide…?\" uses which question word for \"why\"?","o":["किन","कहाँ","को","कति"],"a":0},
+{"t":"mc","q":"\"What was your favorite thing this week?\" uses थियो to mean:","o":["was (past)","is (now)","will be","can"],"a":0}
+  ]},
+  {id:'li_w6test',emoji:'🏆',title:'Week 6 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does आजभोलि mean?","d":"आजभोलि","r":"aajbholi","o":["these days","yesterday","tomorrow","every day"],"a":0},
+{"t":"mc","q":"What does जब mean?","d":"जब","r":"jaba","o":["when (whenever)","where","why","who"],"a":0},
+{"t":"mc","q":"What does मार्फत mean?","d":"मार्फत","r":"marfat","o":["through / by means of","before","after","without"],"a":0},
+{"t":"mc","q":"What does दुख्नु mean?","d":"दुख्नु","r":"dukhnu","o":["to hurt","to heal","to walk","to feel"],"a":0},
+{"t":"mc","q":"What does अनुभव mean?","d":"अनुभव","r":"anubhav","o":["experience","idea","mistake","story"],"a":0},
+{"t":"fill","q":"Complete: \"I like your shoes\"","s":"मलाई तिम्रो ___ मनपर्‍यो","o":["जुत्ता","पसिना","घर","साइकल"],"a":0},
+{"t":"fill","q":"Complete: \"I feel happy\"","s":"म खुसी ___ गर्छु","o":["महसुस","विचार","सुरु","सेवा"],"a":0},
+{"t":"mc","q":"\"Why do we need a translator?\" implies अनुवादक helps with:","o":["languages","cooking","driving","cleaning"],"a":0},
+{"t":"fill","q":"Complete: \"this year has been really hard\"","s":"___ वर्ष धेरै गाह्रो भएको छ","o":["यो","अर्को","गएको","हरेक"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["सेवा गर्नु","to serve"],["अगुवा","leader"],["बोलाउनु","to call"],["येशू","Jesus"]]},
+{"t":"mc","q":"\"I couldn't sleep\" is:","o":["म सुत्न सकिनँ","म सुतेँ","म सुत्छु","म सुत्न चाहन्छु"],"a":0},
+{"t":"mc","q":"\"When I am sad, I want to eat\" begins with:","o":["जब","किनभने","सायद","त्यसैले"],"a":0},
+{"t":"mc","q":"What does गल्ती mean?","d":"गल्ती","r":"galti","o":["mistake","idea","study","start"],"a":0},
+{"t":"mc","q":"\"What's your favorite story in the Bible?\" &mdash; \"story\" is:","o":["कथा","पाठ","विचार","कुरा"],"a":0},
+{"t":"mc","q":"\"Do you have a good relationship with your family?\" &mdash; \"relationship\" is:","o":["सम्बन्ध","अनुभव","विचार","कथा"],"a":0},
+{"t":"mc","q":"\"What animal do you like?\" &mdash; \"animal\" is:","o":["जनावर","जुत्ता","जीवन","जना"],"a":0},
+{"t":"mc","q":"\"How do you feel?\" begins with:","o":["तपाईंलाई कस्तो…","तपाईं कहाँ…","कति बज्यो…","तपाईं को…"],"a":0},
+{"t":"mc","q":"\"अन्तर्राष्ट्रिय\" means:","d":"अन्तर्राष्ट्रिय","r":"antarrastriya","o":["international","national","spiritual","traditional"],"a":0},
+{"t":"mc","q":"\"What’s your favorite story?\" &mdash; \"story\" is:","o":["कथा","वर्ष","गल्ती","हात"],"a":0},
+{"t":"mc","q":"\"What was your favorite experience this year?\" &mdash; \"experience\" is:","o":["अनुभव","विचार","कथा","गल्ती"],"a":0}
+  ]},
+  {id:'li_w7test',emoji:'🏆',title:'Week 7 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does बाँड्नु mean?","d":"बाँड्नु","r":"baadnu","o":["to share","to listen","to receive","to know"],"a":0},
+{"t":"mc","q":"What does आशा mean?","d":"आशा","r":"aasha","o":["hope","know","peace","joy"],"a":0},
+{"t":"mc","q":"What does रिसाउनु mean?","d":"रिसाउनु","r":"risaaunu","o":["to get angry","to be sad","to be happy","to be afraid"],"a":0},
+{"t":"mc","q":"What does एक्लै mean?","d":"एक्लै","r":"eklai","o":["alone","together","happy","far"],"a":0},
+{"t":"mc","q":"What does आनन्द mean?","d":"आनन्द","r":"aananda","o":["joy","anger","fear","sadness"],"a":0},
+{"t":"mc","q":"What does पाउनु mean?","d":"पाउनु","r":"paunu","o":["to receive / get","to give","to share","to lose"],"a":0},
+{"t":"mc","q":"\"Have you ever met a monk?\" &mdash; \"monk\" is:","o":["लामा","गुरु","साथी","छिमेकी"],"a":0},
+{"t":"wb","q":"Build: \"Jesus gives us peace\"","a":["येशूले","हामीलाई","शान्ति","दिनुहुन्छ"],"pool":["शान्ति","येशूले","दिनुहुन्छ","हामीलाई"]},
+{"t":"match","q":"Match to meaning","pairs":[["भरोसा","trust"],["भरोसा गर्नु","to trust"],["चिन्नु","to know"],["बढाउनु","to grow"]]},
+{"t":"mc","q":"Warmth (न्यानोपन) is the feeling of being:","o":["welcomed & loved","ignored","rushed","alone"],"a":0},
+{"t":"mc","q":"\"I want to work with youth\" is:","o":["म जवानहरूसँग काम गर्न चाहन्छु","म एक्लै काम गर्छु","म जवान हुँ","जवानहरू कहाँ छन्?"],"a":0},
+{"t":"mc","q":"\"God made me to love people\" &mdash; \"made / created\" is:","o":["सिर्जना गर्नु","असफल हुनु","प्राप्त गर्नु","दुख्नु"],"a":0},
+{"t":"wb","q":"Build: \"Jesus changed my life\"","a":["येशूले","मेरो","जीवन","परिवर्तन","गर्नुभयो"],"pool":["परिवर्तन","येशूले","गर्नुभयो","मेरो","जीवन"]},
+{"t":"mc","q":"What does अनाथालय mean?","d":"अनाथालय","r":"anaathalaya","o":["orphanage","hospital","school","church"],"a":0},
+{"t":"mc","q":"Someone shares deep pain with you. The most important first response is to:","o":["respond with love and help them find support","change the subject","tell them to cheer up","leave"],"a":0},
+{"t":"mc","q":"\"Can you share your testimony?\" &mdash; \"testimony\" is:","o":["गवाही","आशा","शान्ति","चर्च"],"a":0},
+{"t":"mc","q":"\"What gives you hope?\" &mdash; \"hope\" is:","o":["आशा","थाहा","शान्ति","धर्म"],"a":0},
+{"t":"mc","q":"\"What gives you peace?\" &mdash; \"peace\" is:","o":["शान्ति","आशा","दुखी","रिस"],"a":0},
+{"t":"mc","q":"\"Do you like to spend time alone?\" &mdash; \"alone\" is:","o":["एक्लै","सँगै","खुसी","फरक"],"a":0},
+{"t":"mc","q":"\"What brings you joy?\" &mdash; \"joy\" is:","o":["आनन्द","दुख","रिस","फरक"],"a":0}
+  ]},
+  {id:'li_w8test',emoji:'🏆',title:'Week 8 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does स्पष्ट mean?","d":"स्पष्ट","r":"spashta","o":["clear / clearly","quiet","fast","loud"],"a":0},
+{"t":"mc","q":"What does \"भए पनि\" mean?","d":"भए पनि","r":"bhae pani","o":["even if / even though","because","before","only if"],"a":0},
+{"t":"mc","q":"What does कहिलेपनि mean?","d":"कहिलेपनि","r":"kahilepani","o":["never","always","sometimes","ever"],"a":0},
+{"t":"mc","q":"What does डराउनु mean?","d":"डराउनु","r":"daraaunu","o":["to be afraid","to be sad","to be angry","to be happy"],"a":0},
+{"t":"mc","q":"What does तुलना mean?","d":"तुलना","r":"tulana","o":["comparison","protection","interest","faith"],"a":0},
+{"t":"fill","q":"Complete: \"where are you? I can’t see you\"","s":"तपाईं कहाँ हुनुहुन्छ? म तपाईंलाई ___ सक्दिन","o":["देख्न","सुन्न","भन्न","जान्न"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["रुचि","interest"],["राख्नु","to keep / hold"],["पछ्याउनु","to follow"],["काम","work"]]},
+{"t":"fill","q":"Complete: \"I will follow Jesus until the end of time\"","s":"म समयको अन्त्य___ येशूलाई पछ्याउनेछु","o":["सम्म","पनि","बाट","मा"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["रक्षा गर्नु","to protect"],["रोग","sickness"],["राष्ट्र","nation"],["समुदाय","community"]]},
+{"t":"mc","q":"\"I want to show you what I made\" &mdash; \"show\" is:","o":["देखाउनु","देख्नु","हेर्नु","तुलना गर्नु"],"a":0},
+{"t":"mc","q":"What does पाप mean?","d":"पाप","r":"paap","o":["sin","faith","hope","peace"],"a":0},
+{"t":"mc","q":"\"How can we grow in our faith?\" &mdash; \"faith\" is:","o":["विश्वास","रुचि","आशा","भरोसा"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["मात्रै","just / only"],["सम्म","until"],["कहिल्यै","ever"],["कहिलेपनि","never"]]},
+{"t":"mc","q":"\"What are you waiting for?\" &mdash; \"waiting\" is:","o":["पर्खनु","हेर्नु","देख्नु","डराउनु"],"a":0},
+{"t":"mc","q":"मुनि (under) is the opposite of:","o":["माथि (above)","बीच (middle)","बाहिर (outside)","अगाडि (front)"],"a":0},
+{"t":"mc","q":"\"What always helps you rest?\" &mdash; \"always\" is:","o":["सधैं","कहिलेकाहीँ","सायद","स्पष्ट"],"a":0},
+{"t":"mc","q":"\"How can your faith grow?\" &mdash; \"faith\" is:","o":["विश्वास","रुचि","आशा","भरोसा"],"a":0},
+{"t":"mc","q":"\"keep going forward\" &mdash; \"go forward\" is:","o":["अगाडि बढ्नु","पछाडि जानु","रोकिनु","बस्नु"],"a":0},
+{"t":"mc","q":"\"When you are afraid…\" &mdash; \"afraid\" is:","o":["डराउनु","खुसी","गाह्रो","सधैं"],"a":0},
+{"t":"mc","q":"The wisdom of this week: comparison (तुलना) steals your:","o":["joy (आनन्द)","health","time","money"],"a":0}
+  ]},
+  {id:'li_w9test',emoji:'🏆',title:'Week 9 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does \"धेरै समय पहिले\" mean?","d":"धेरै समय पहिले","r":"dherai samaya pahile","o":["a long time ago","tomorrow","every day","right now"],"a":0},
+{"t":"mc","q":"What does बोलावट mean?","d":"बोलावट","r":"bolawat","o":["calling","promise","land","angel"],"a":0},
+{"t":"mc","q":"What does ईर्ष्या mean?","d":"ईर्ष्या","r":"irshya","o":["jealousy","blessing","power","promise"],"a":0},
+{"t":"mc","q":"What does पवित्र आत्मा mean?","d":"पवित्र आत्मा","r":"pawitra aatma","o":["Holy Spirit","angel","apostle","heaven"],"a":0},
+{"t":"mc","q":"What does प्रकाश mean?","d":"प्रकाश","r":"prakash","o":["light","darkness","voice","plan"],"a":0},
+{"t":"fill","q":"Complete: \"I have never ridden a boat\"","s":"मैले कहिल्यै ___ चलाएको छैन","o":["डुंगा","समुद्र","गाडी","साइकल"],"a":0},
+{"t":"mc","q":"\"The promised land\" is:","o":["प्रतिज्ञाको भूमि","नयाँ डुंगा","ठूलो समुद्र","दुष्ट शहर"],"a":0},
+{"t":"mc","q":"\"How can I be a blessing to you?\" &mdash; \"blessing\" is:","o":["आशिष","ईर्ष्या","शक्ति","झूट"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["प्रेरित","apostle"],["चेला","disciple"],["पछि लाग्नु","to follow"],["प्रचारक","missionary"]]},
+{"t":"mc","q":"\"I have never traveled\" is:","o":["मैले कहिल्यै यात्रा गरेको छैन","म यात्रा गर्न चाहन्छु","मैले यात्रा गरेँ","म यात्रा गर्छु"],"a":0},
+{"t":"mc","q":"\"How long will it take?\" is:","o":["कति समय लाग्छ?","कति बज्यो?","कहाँ जाने?","यो के हो?"],"a":0},
+{"t":"mc","q":"\"You are a very faithful person\" &mdash; \"faithful\" is:","o":["विश्वासयोग्य","महत्त्वपूर्ण","विशेष","दुष्ट"],"a":0},
+{"t":"mc","q":"What does परिस्थिति mean?","d":"परिस्थिति","r":"paristhiti","o":["situation","power","angel","calling"],"a":0},
+{"t":"mc","q":"What does भवन mean?","d":"भवन","r":"bhawan","o":["building","land","boat","base"],"a":0},
+{"t":"mc","q":"\"You are very special\" is:","o":["तपाईं धेरै विशेष हुनुहुन्छ","तपाईं महत्त्वपूर्ण हुनुहुन्छ","तपाईं विश्वासयोग्य हुनुहुन्छ","तपाईं राम्रो हुनुहुन्छ"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What helps you obey God?\" &mdash; \"obey\" is:","o":["आज्ञा मान्नु","यात्रा गर्नु","हेर्नु","भर्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What helps you look to God?\" &mdash; \"look\" is:","o":["हेर्नु","सुन्नु","भन्नु","देख्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question asks about your hardest:","o":["परिस्थिति (situation)","आशिष (blessing)","योजना (plan)","यात्रा (travel)"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"How has the Holy Spirit changed your life?\" &mdash; \"Holy Spirit\" is:","o":["पवित्र आत्मा","स्वर्गदूत","प्रेरित","आशिष"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What is God’s plan for your life?\" &mdash; \"plan\" is:","o":["योजना","आवाज","यात्रा","प्रकाश"],"a":0}
+  ]},
+  {id:'li_w10test',emoji:'🏆',title:'Week 10 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does गोठालो mean?","d":"गोठालो","r":"gothalo","o":["shepherd","soldier","king","farmer"],"a":0},
+{"t":"mc","q":"What does वरिपरि mean?","d":"वरिपरि","r":"waripari","o":["around","near","under","during"],"a":0},
+{"t":"mc","q":"What does राजा mean?","d":"राजा","r":"raja","o":["king","soldier","shepherd","lion"],"a":0},
+{"t":"mc","q":"What does नजिक mean?","d":"नजिक","r":"najik","o":["near","far","around","under"],"a":0},
+{"t":"mc","q":"What does बचाउनु mean?","d":"बचाउनु","r":"bachaaunu","o":["to save / rescue","to allow","to realize","to become"],"a":0},
+{"t":"mc","q":"\"War is not something to laugh about\" &mdash; \"war\" is:","o":["युद्ध","मजाक","शान्ति","खेल"],"a":0},
+{"t":"fill","q":"Complete: \"I have won 10 times\"","s":"मैले १० ___ जितेँ","o":["पटक","समय","वर्ष","ठाउँ"],"a":0},
+{"t":"mc","q":"\"Jesus is the Lion of Judah\" &mdash; \"lion\" is:","o":["सिंह","थुमा","गोठालो","राजा"],"a":0},
+{"t":"mc","q":"\"Where did you buy your clothes?\" &mdash; \"clothes\" is:","o":["लुगा","खाना","किताब","गाडी"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["आगो","fire"],["बाल्नु","to ignite"],["बत्ती","light"],["हृदय","heart"]]},
+{"t":"mc","q":"\"I want to become a person who loves God\" &mdash; \"become\" is:","o":["बन्न","देख्न","हेर्न","भर्न"],"a":0},
+{"t":"mc","q":"What does कराउनु mean?","d":"कराउनु","r":"karaaunu","o":["to yell","to whisper","to sing","to walk"],"a":0},
+{"t":"mc","q":"\"I am proud of you\" is:","o":["म तपाईंमा गर्व गर्छु","म तपाईंलाई माया गर्छु","म खुसी छु","तपाईं विशेष हुनुहुन्छ"],"a":0},
+{"t":"mc","q":"What does भेडा mean?","d":"भेडा","r":"bheda","o":["sheep","lion","dog","clothing"],"a":0},
+{"t":"mc","q":"\"Please allow me to do it\" &mdash; \"allow\" is:","o":["अनुमति दिनु","गुनासो गर्नु","बचाउनु","बाल्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What do you want to be when older?\" uses which verb?","o":["बन्नु","हुनु","जानु","देख्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What makes you want to yell?\" &mdash; \"yell\" is:","o":["कराउनु","गाउनु","हिँड्नु","जित्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"If you could become any animal, which?\" &mdash; \"become\" is:","o":["बन्नु","हुनु","देख्नु","जान्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What helps you get near to Jesus?\" &mdash; \"near\" is:","o":["नजिक","टाढा","वरिपरि","मुनि"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What helped you realize you wanted to follow Jesus?\" &mdash; \"realize\" is:","o":["थाहा पाउनु","बचाउनु","बाल्नु","बन्नु"],"a":0}
+  ]},
+  {id:'li_w11test',emoji:'🏆',title:'Week 11 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does माफ गर्नु mean?","d":"माफ गर्नु","r":"maaph garnu","o":["to forgive","to find","to feed","to spend"],"a":0},
+{"t":"mc","q":"What does योग्य mean?","d":"योग्य","r":"yogya","o":["worthy","humble","lost","rich"],"a":0},
+{"t":"mc","q":"What does \"…दा खेरी\" mean?","d":"खाँदा खेरी","r":"khaada kheri","o":["while …","after …","before …","because …"],"a":0},
+{"t":"mc","q":"What does धनी mean?","d":"धनी","r":"dhani","o":["rich","poor","lost","worthy"],"a":0},
+{"t":"mc","q":"What does पश्चाताप गर्नु mean?","d":"पश्चाताप गर्नु","r":"paschattaap garnu","o":["to repent","to preach","to feed","to answer"],"a":0},
+{"t":"mc","q":"\"We are all servants of God\" &mdash; \"servants\" is:","o":["सेवक","मालिक","राजा","सिपाही"],"a":0},
+{"t":"mc","q":"\"How can I have more humility?\" &mdash; \"humility\" is:","o":["नम्रता","योग्यता","नराम्रो","सरप्राइज"],"a":0},
+{"t":"mc","q":"\"My life feels like I'm in the middle of a storm\" &mdash; \"storm\" is:","o":["आँधी","शान्ति","डुंगा","भोज"],"a":0},
+{"t":"mc","q":"\"How can we reach the lost?\" &mdash; \"the lost\" is:","o":["हराएका मानिसहरू","धनी मानिसहरू","नम्र मानिसहरू","सेवकहरू"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["प्रचार गर्नु","to preach"],["वचन","word"],["पास्टर","pastor"],["सुसमाचार","gospel"]]},
+{"t":"mc","q":"What does क्रूस mean?","d":"क्रूस","r":"krus","o":["cross","sin","gospel","owner"],"a":0},
+{"t":"mc","q":"\"Jesus rose again\" &mdash; \"again\" is:","o":["फेरि","योग्य","नम्र","संसार"],"a":0},
+{"t":"mc","q":"What does अचम्म लाग्नु mean?","d":"अचम्म लाग्नु","r":"achamma laagnu","o":["to wonder / be amazed","to be calm","to be quiet","to forgive"],"a":0},
+{"t":"mc","q":"\"Farmers live on farms\" &mdash; \"farm\" is:","o":["खेत","बाटो","घर","भवन"],"a":0},
+{"t":"mc","q":"\"Please answer the question\" &mdash; \"answer\" is:","o":["जवाफ दिनु","प्रचार गर्नु","खुवाउनु","पश्चाताप गर्नु"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"biggest surprise since following God?\" &mdash; \"surprise\" is:","o":["सरप्राइज","पाप","भोज","मालिक"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"How can I be more humble?\" &mdash; \"humble\" is:","o":["नम्र","योग्य","धनी","संसार"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"Where do you go to feel calm?\" &mdash; \"calm\" is:","o":["शान्त","आँधी","अचम्म","धनी"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"How can we reach the lost?\" &mdash; \"the lost\" is:","o":["हराएका","धनी","नम्र","सेवक"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"How do we grow in our faith?\" &mdash; \"how\" is:","o":["कसरी","किन","कहाँ","कति"],"a":0}
+  ]},
+  {id:'li_w12test',emoji:'🏆',title:'Week 12 Test',step:'test',meta:'20 questions · no audio help · 16 to pass',vocab:[],ex:[
+{"t":"mc","q":"What does छत mean?","d":"छत","r":"chhat","o":["roof","floor","wall","table"],"a":0},
+{"t":"mc","q":"What does घृणा mean?","d":"घृणा","r":"ghrina","o":["hate","love","fear","joy"],"a":0},
+{"t":"mc","q":"What does ध्यान दिनु mean?","d":"ध्यान दिनु","r":"dhyaan dinu","o":["to focus / pay attention","to hate","to gather","to grow"],"a":0},
+{"t":"mc","q":"What does एकदम mean?","d":"एकदम","r":"ekdam","o":["very","a little","too much","half"],"a":0},
+{"t":"mc","q":"What does रोज्नु mean?","d":"रोज्नु","r":"rojnu","o":["to choose","to gather","to grow","to ask"],"a":0},
+{"t":"fill","q":"Complete: \"I have seen you grow a lot this year\"","s":"मैले तपाईंलाई यस वर्ष धेरै ___ देखेको छु","o":["बढिरहेको","सुत्दै","उठ्दै","हिँड्दै"],"a":0},
+{"t":"mc","q":"\"I need to gather my possessions before I go\" &mdash; \"gather\" is:","o":["जम्मा गर्नु","खर्च गर्नु","हराउनु","सकाउनु"],"a":0},
+{"t":"mc","q":"\"Let's go to another place\" &mdash; \"another\" is:","o":["अर्को","यही","उस्तै","हरेक"],"a":0},
+{"t":"match","q":"Match to meaning","pairs":[["अचानक","suddenly"],["पानी पर्नु","to rain"],["टोक्नु","to bite"],["हिँड्नु","to walk"]]},
+{"t":"mc","q":"सबैजना (everyone) vs सबै कुरा (?). सबै कुरा means:","o":["everything","everyone","nothing","anyone"],"a":0},
+{"t":"mc","q":"What does सोध्नु mean?","d":"सोध्नु","r":"sodhnu","o":["to ask","to answer","to grow","to gather"],"a":0},
+{"t":"mc","q":"\"How can we help all the poor people?\" &mdash; \"poor\" is:","o":["गरीब","धनी","नम्र","हराएको"],"a":0},
+{"t":"mc","q":"\"Did you know Jesus has more power than ghosts?\" &mdash; \"ghosts\" is:","o":["भूत","भर","भेला","स्तर"],"a":0},
+{"t":"mc","q":"\"The food is on the table\" &mdash; \"table\" is:","o":["टेबल","छत","भुइँ","कुर्सी"],"a":0},
+{"t":"mc","q":"What does घटना mean?","d":"घटना","r":"ghatana","o":["incident / event","option","distraction","level"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What reminds you of home?\" &mdash; \"everyone\" (a related word) is:","o":["सबैजना","सबै कुरा","कोही","केही"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What’s your favorite activity here?\" &mdash; \"activity\" is:","o":["क्रियाकलाप","घृणा","तरिका","स्तर"],"a":0},
+{"t":"mc","q":"Tutor’s question: \"What helps you focus on Jesus?\" &mdash; \"focus\" is:","o":["ध्यान","घृणा","स्तर","भूत"],"a":0},
+{"t":"mc","q":"Tutor’s question is a silly one this time &mdash; but \"suddenly\" you can now answer it! \"suddenly\" is:","o":["अचानक","एकदम","सकियो","टेबल"],"a":0},
+{"t":"mc","q":"Tutor’s final question: \"How do we grow in our faith?\" begins by choosing to:","o":["follow Jesus (रोज्नु)","stay busy (व्यस्त)","compare (तुलना)","hate (घृणा)"],"a":0}
+  ]},
 ];
 const VOWELS=[['अ','a'],['आ','aa'],['इ','i'],['ई','ee'],['उ','u'],['ऊ','oo'],['ए','e'],['ऐ','ai'],['ओ','o'],['औ','au'],['अं','an'],['अः','ah']];
 const CONS=[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha'],['ङ','nga'],['च','cha'],['छ','chha'],['ज','ja'],['झ','jha'],['ञ','nya'],['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha'],['ण','ṇa'],['त','ta'],['थ','tha'],['द','da'],['ध','dha'],['न','na'],['प','pa'],['फ','pha'],['ब','ba'],['भ','bha'],['म','ma'],['य','ya'],['र','ra'],['ल','la'],['व','wa'],['श','sha'],['ष','ṣha'],['स','sa'],['ह','ha']];
@@ -8097,8 +8365,10 @@ function playFile(t,rate){
   }catch(e){return false;}
 }
 /* public entry points used throughout the app */
-function speak(t){if(!t)return;stopAudio();if(playFile(t,1))return;speakTTS(t);}
-function speakSlow(t){if(!t)return;stopAudio();if(playFile(t,0.6))return;speakTTS(t,0.5);}
+/* weekly tests run silent — no audio assistance while a test lesson is on screen */
+function testMuted(){return typeof LESSONS!=='undefined'&&LESSONS[curL]&&LESSONS[curL].step==='test'&&document.getElementById('view-exercise').classList.contains('active');}
+function speak(t){if(!t||testMuted())return;stopAudio();if(playFile(t,1))return;speakTTS(t);}
+function speakSlow(t){if(!t||testMuted())return;stopAudio();if(playFile(t,0.6))return;speakTTS(t,0.5);}
 /* prefetch a lesson's recorded audio so clips play instantly */
 function collectLessonStrings(l){const out=[];const hd=s=>/[\u0900-\u097F]/.test(s||'');(l.vocab||[]).forEach(v=>{if(v[0])out.push(v[0]);});(l.ex||[]).forEach(ex=>{if(ex.t==='mc'){if(ex.d)out.push(ex.d);if(ex.o&&typeof ex.a==='number'&&hd(ex.o[ex.a]))out.push(ex.o[ex.a]);}else if(ex.t==='fill'){if(ex.s&&ex.o&&typeof ex.a==='number')out.push(ex.s.replace('___',ex.o[ex.a]));}else if(ex.t==='li'){if(ex.say)out.push(ex.say);}else if(ex.t==='wb'){if(ex.a)out.push(ex.a.join(' '));}else if(ex.t==='match'){(ex.pairs||[]).forEach(p=>out.push(p[0]));}else if(ex.t==='tr'){if(ex.a)out.push(ex.a);}});return out.filter(hd);}
 function prefetchLesson(l){if(!AUDIO_KEYS.size||!l)return;collectLessonStrings(l).forEach(s=>{const k=audioKey(s);if(AUDIO_KEYS.has(k)&&!audioCache.has(k)){try{const a=new Audio(AUDIO_BASE+k+'.mp3');a.preload='auto';if(a.load)a.load();audioCache.set(k,a);}catch(e){}}});}
@@ -8238,7 +8508,7 @@ function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id===
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
-const SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्'};
+const SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्',li_w1test:'१',li_w2test:'२',li_w3test:'३',li_w4test:'४',li_w5test:'५',li_w6test:'६',li_w7test:'७',li_w8test:'८',li_w9test:'९',li_w10test:'१०',li_w11test:'११',li_w12test:'१२'};
 function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';const root=document.getElementById(rootId);if(!root)return;root.innerHTML='';const doneSet=new Set(S.done);let lastPw=null,prevId=null;const trackIds=units.flatMap(u=>u.lessons);const firstUndoneId=trackIds.find(id=>!doneSet.has(id));const firstUndone=firstUndoneId?lessonById(firstUndoneId):null;const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
   units.forEach((u,ui)=>{if(ui>0){const col=accent[ui%4];const dv=document.createElement('div');dv.className='zone-divider';dv.innerHTML='<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 L0 40 L150 22 L320 46 L480 16 L640 42 L820 20 L1000 44 L1160 24 L1200 36 L1200 60 Z" fill="'+col+'" opacity=".16"/><path d="M0 60 L0 50 L180 32 L360 52 L520 30 L700 50 L880 32 L1060 52 L1200 38 L1200 60 Z" fill="'+col+'" opacity=".3"/></svg>';root.appendChild(dv);}const doneInU=u.lessons.filter(id=>doneSet.has(id)).length;const zone=document.createElement('div');zone.className='zone polish';zone.style.setProperty('--zacc',accent[ui%4]);
     zone.innerHTML='<div class="zone-head" style="border-left:5px solid '+accent[ui%4]+'"><div class="unit-num" style="background:'+accent[ui%4]+'">'+u.n+'</div><div><div class="t">'+u.t+'</div><div class="d">'+u.d+'</div></div><div class="ucount">'+doneInU+'/'+u.lessons.length+'</div></div>';
@@ -8251,17 +8521,19 @@ function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';c
         const target=grp.find(x=>!doneSet.has(x.id))||grp[0];const isNext=!!(firstUndone&&ids.includes(firstUndone.id));
         trow=document.createElement('div');trow.className='topic-row crow'+(isNext?' has-next':'');tinner=document.createElement('div');tinner.className='topic-inner';trow.appendChild(tinner);trail.appendChild(trow);
         const pw=document.createElement('div');pw.className='peakwrap';
-        const peak=document.createElement('button');peak.className='cnode'+(locked?' locked':'')+(complete?' done':'')+(isNext?' active-next':'');
+        const isTest=grp[0].step==='test';
+        const peak=document.createElement('button');peak.className='cnode'+(isTest?' test':'')+(locked?' locked':'')+(complete?' done':'')+(isNext?' active-next':'');
         const sym=SYM[grp[0].id]||'·';
         peak.innerHTML='<span class=\"cinner\"><span class=\"sym\">'+sym+'</span></span>'+(complete?'<span class=\"cbadge done\">✓</span>':locked?'<span class=\"cbadge lock\">🔒</span>':'');
         if(!locked)peak.onclick=()=>startLesson(LESSONS.indexOf(target));
         pw.appendChild(peak);
-        const sub=complete?'Done ✓':locked?'Locked':(doneN>0?doneN+'/'+total+' · Continue →':'Start →');
+        const sub=complete?(isTest?'Passed ✓':'Done ✓'):locked?'Locked':isTest?'Take the test →':(doneN>0?doneN+'/'+total+' · Continue →':'Start →');
         const lab=document.createElement('div');lab.className='peak-label'+(complete?' done':isNext?' next':locked?' locked':'');lab.innerHTML=grp[0].title+'<span class=\"sub\">'+sub+'</span>';pw.appendChild(lab);
-        const seg=document.createElement('div');seg.className='cseg';seg.innerHTML=grp.map(x=>'<span class=\"cdot'+(doneSet.has(x.id)?' on':'')+'\"></span>').join('');pw.appendChild(seg);
+        if(!isTest){const seg=document.createElement('div');seg.className='cseg';seg.innerHTML=grp.map(x=>'<span class=\"cdot'+(doneSet.has(x.id)?' on':'')+'\"></span>').join('');pw.appendChild(seg);}
         if(isNext){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('happy');pw.appendChild(y);}
         tinner.appendChild(pw);lastPw=pw;});
-      prevId=u.lessons[u.lessons.length-1];
+      /* tests are optional: the next unit unlocks off the last core lesson, not the test */
+      prevId=[...u.lessons].reverse().find(id=>{const ll=lessonById(id);return !ll||ll.step!=='test';});
     zone.appendChild(trail);root.appendChild(zone);});
   if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('cheer');lastPw.appendChild(y);const pr=lastPw.closest('.topic-row');if(pr)pr.classList.add('has-next');}}
 
@@ -8273,6 +8545,7 @@ function exitLesson(){const l=LESSONS[curL];if(curE>=2&&curE<l.ex.length&&!confi
 let combo=0;
 let selMC=-1,phase='answer',wbAns=[],wbBank=[],matchSel=null,matchMiss=false,matchDone=0,matchTotal=0;
 let exToken=0; /* bumped on every renderEx so delayed listening autoplay can tell it's stale */
+let lessonCorrect=0; /* first-try correct answers in the current lesson — scored by weekly tests */
 function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><circle cx="32" cy="9" r="7" fill="#EEF3F8"/><circle cx="44" cy="13" r="6" fill="#EEF3F8"/><circle cx="12" cy="27" r="6" fill="#EEF3F8"/><circle cx="52" cy="27" r="6" fill="#EEF3F8"/><circle cx="11" cy="41" r="7" fill="#EEF3F8"/><circle cx="53" cy="41" r="7" fill="#EEF3F8"/><path d="M32 7 C18 7 12 17 12 31 C12 47 21 58 32 58 C43 58 52 47 52 31 C52 17 46 7 32 7 Z" fill="#F6F9FC"/><ellipse cx="32" cy="37" rx="14.5" ry="13.5" fill="#E8D7BE"/><circle cx="21" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="43" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/>';
   var f;
   if(m==='cheer')f='<path d="M19.5 28.5 Q24 26 28.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.4" stroke-linecap="round" opacity=".55"/><path d="M35.5 28.5 Q40 26 44.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.4" stroke-linecap="round" opacity=".55"/><path d="M22 34 Q25 30.5 28 34" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><path d="M36 34 Q39 30.5 42 34" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="41" r="3.2" fill="var(--crimson)" opacity="0.22"/><circle cx="44" cy="41" r="3.2" fill="var(--crimson)" opacity="0.22"/><path d="M26 42 Q32 50 38 42 Z" fill="var(--crimson)"/><path d="M28.5 43 Q32 45 35.5 43" fill="#fff" opacity=".6"/>';
@@ -8281,7 +8554,7 @@ function mascotSVG(m){var base='<circle cx="20" cy="13" r="6" fill="#EEF3F8"/><c
   return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 function buildSegs(n){const sb=document.getElementById('segbar');if(sb.children.length!==n){sb.innerHTML='';for(let i=0;i<n;i++){const s=document.createElement('div');s.className='seg';s.innerHTML='<span></span>';sb.appendChild(s);}}}
 function updateSegs(){const sb=document.getElementById('segbar');[...sb.children].forEach((s,i)=>s.classList.toggle('done',i<curE));}
-function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;phase='answer';selMC=-1;prefetchLesson(LESSONS[i]);show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
+function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;lessonCorrect=0;phase='answer';selMC=-1;if(LESSONS[i].step!=='test')prefetchLesson(LESSONS[i]);show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function hasDeva(s){return /[\u0900-\u097F]/.test(s||'');}
 function normDeva(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[\s?।.,_'"!:;-]/g,'');}
@@ -8295,7 +8568,7 @@ function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=l.ex[curE];se
   if(ex.t==='note'){const eg=ex.eg?('<div class="note-eg">'+ex.eg.map(e=>'<div class="egcard"><span class="nd">'+e[0]+'</span>'+(e[1]&&S.rom?'<span class="nr">'+e[1]+'</span>':'')+(e[2]?'<span class="nm">'+e[2]+'</span>':'')+'</div>').join('')+'</div>'):'';
     c.innerHTML='<div class="extype">'+(ex.tag||'Quick note')+'</div><div class="exq">'+ex.q+'</div><div class="note-body">'+ex.body+'</div>'+eg+(ex.tip?'<div class="note-tip">💡 '+ex.tip+'</div>':'');
     btn.textContent='Got it';btn.disabled=false;phase='note';}
-  else if(ex.t==='mc')c.innerHTML='<div class="extype">Multiple choice</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+'<button class="spk" onclick="speak(\''+ex.d+'\')">🔊</button></div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
+  else if(ex.t==='mc')c.innerHTML='<div class="extype">'+(l.step==='test'?'Test · multiple choice':'Multiple choice')+'</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+(l.step==='test'?'':'<button class="spk" onclick="speak(\''+ex.d+'\')">🔊</button>')+'</div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
   else if(ex.t==='fill')c.innerHTML='<div class="extype">Fill in the blank</div><div class="exq">'+ex.q+'</div><div class="fill-sentence">'+ex.s.replace('___','<span class="blank" id="fill-blank">___</span>')+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectFill('+i+')">'+o+'</button>').join('')+'</div>';
   else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
   else if(ex.t==='wb'){renderWB(ex,c);}
@@ -8334,7 +8607,7 @@ function checkAnswer(){const ex=LESSONS[curL].ex[curE];let ok,ansEl,fb;
   else if(ex.t==='li'){if(selMC<0)return;const btns=document.querySelectorAll('.mc');btns.forEach(b=>b.disabled=true);ok=selMC===ex.a;btns[ex.a].classList.add('correct');if(!ok)btns[selMC].classList.add('wrong');ansEl=btns[ex.a];speak(ex.say);fb='Heard: <span class="deva">'+ex.say+'</span>'+(ex.r?' · '+ex.r:'')+' — '+ex.o[ex.a];finishQuestion(ok,ansEl,fb,15,false);}
   else if(ex.t==='wb'){if(!wbAns.length)return;document.querySelectorAll('#wb-bank .wbtile,#wb-answer .wbtile').forEach(b=>b.disabled=true);ok=wbAns.join('\u0001')===ex.a.join('\u0001');ansEl=document.getElementById('wb-answer');speak(ex.a.join(' '));fb='Answer: <span class="deva">'+ex.a.join(' ')+'</span>'+(ex.r?' · '+ex.r:'');finishQuestion(ok,ansEl,fb,20,false);}
   else{const inp=document.getElementById('tin');const v=(inp.value||'').trim();if(!v)return;inp.disabled=true;ok=trCorrect(ex,v);ansEl=inp;speak(ex.a);fb='Answer: <span class="deva">'+ex.a+'</span>'+(ex.r?' · '+ex.r:'');finishQuestion(ok,ansEl,fb,15,false);}}
-function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.getElementById('ex-card');S.total++;updateStreak();
+function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.getElementById('ex-card');S.total++;updateStreak();if(ok&&!breakCombo)lessonCorrect++;
   if(ok){S.correct++;if(breakCombo)combo=0;else combo++;const mult=comboMult(combo);const gained=Math.round(base*(combo>0?mult:1));award(gained,ansEl);if(combo>=3){showCombo(combo,mult);playSound('combo');}else playSound('correct');card.classList.remove('pulse');void card.offsetWidth;card.classList.add('pulse');abBurst();}
   else{combo=0;playSound('wrong');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');const bar=document.getElementById('actionbar');bar.classList.remove('shake');void bar.offsetWidth;bar.classList.add('shake');}
   const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');
@@ -8346,11 +8619,23 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
 function animateOut(cb){const c=document.getElementById('ex-card');c.classList.remove('q-in');c.classList.add('q-out');setTimeout(cb,180);}
 function advance(){if(phase!=='checked')return;stopAudio();phase='moving';animateOut(()=>{curE++;if(curE>=LESSONS[curL].ex.length)finishLesson();else renderEx();});}
 function addVocab(list){if(!list||!list.length)return;list.forEach(w=>{if(!S.srs.some(c=>c.d===w[0]))S.srs.push({i:S.srs.length,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0});});}
-function finishLesson(){const l=LESSONS[curL];const first=!S.done.includes(l.id);if(first){S.done.push(l.id);addVocab(l.vocab);S.words=S.srs.length;award(50);}
+function finishLesson(){const l=LESSONS[curL];if(l.step==='test'){finishTest(l);return;}
+  const first=!S.done.includes(l.id);if(first){S.done.push(l.id);addVocab(l.vocab);S.words=S.srs.length;award(50);}
   [...document.getElementById('segbar').children].forEach(s=>s.classList.add('done'));
   document.getElementById('actionbar').classList.add('hidden');
   const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
   c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+  buildTrack(curTrack);save();}
+/* weekly test: pass at 80% first-try correct; failing keeps the node open for a retry */
+function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const need=Math.ceil(total*0.8);const pass=lessonCorrect>=need;
+  [...document.getElementById('segbar').children].forEach(s=>s.classList.add('done'));
+  document.getElementById('actionbar').classList.add('hidden');
+  const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
+  const backBtn='<button class="nextbtn" style="background:transparent;color:var(--ink);border:1px solid var(--line)" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button>';
+  if(pass){const first=!S.done.includes(l.id);if(first){S.done.push(l.id);award(100);}
+    c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>Test passed!</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct'+(first?' \u00b7 +100 XP bonus':'')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+    playSound('levelup');confetti();}
+  else c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('oops')+'</div><h3>Not this time</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct \u2014 you need '+need+' to pass. Have another look at the week, then try again.</p><button class="nextbtn" onclick="startLesson('+curL+')">Try again</button> '+backBtn+'</div>';
   buildTrack(curTrack);save();}
 
 function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('div');e.className='glyph';e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');}
