@@ -894,6 +894,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
   </div>
   <div class="wrap section" style="padding-top:6px">
     <div class="set-grid">
+      <div class="set-row" id="lang-row" style="display:none"><div><div class="label">Course language</div><div class="desc">Learn path, Alphabet &amp; Review follow this</div></div><select id="lang-select" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:190px"></select></div>
       <div class="set-row"><div><div class="label">Account</div><div class="desc" id="acct-desc">Not logged in — progress is local only</div></div><button class="iconbtn" id="acct-action" onclick="openAuth()">Log in</button></div>
       <div class="set-row"><div><div class="label">Dark mode</div><div class="desc">Warm paper or midnight</div></div><label class="switch"><input type="checkbox" id="set-dark" onchange="toggleTheme()"><span class="slider"></span></label></div>
       <div class="set-row"><div><div class="label">Show romanization</div><div class="desc">Latin spelling under Devanagari</div></div><label class="switch"><input type="checkbox" id="set-rom" checked onchange="toggleRom()"><span class="slider"></span></label></div>
@@ -8074,11 +8075,22 @@ const NE_NUMS=[['०','0'],['१','1'],['२','2'],['३','3'],['४','4'],['५
 const NE_SRS_SEED=[['नमस्ते','Namaste','Hello'],['धन्यवाद','Dhanyabad','Thank you'],['माफ गर्नुस्','Maaf garnoos','Excuse me / Sorry'],['हो','Ho','Yes'],['होइन','Hoina','No'],['ठीक छ','Theek chha','It is okay'],['पानी','Paani','Water'],['खाना','Khaana','Food'],['घर','Ghar','Home'],['मान्छे','Maanchhe','Person'],['राम्रो','Raamro','Good / Beautiful'],['ठूलो','Thoolo','Big'],['सानो','Saano','Small'],['आज','Aaja','Today'],['भोलि','Bholi','Tomorrow'],['पैसा','Paisa','Money'],['बाटो','Baato','Road / Way'],['पहाड','Pahaad','Mountain'],['खुसी','Khusi','Happy'],['चिया','Chiya','Tea']];
 /* LESSON_MAP + lessonById moved to the LANGUAGE PACKS block (below NE_SYM) */
 
-let S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true};
+function defaultS(){return {lang:'ne',xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true};}
+let S=defaultS();
 function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0}));}
-function load(){try{const j=localStorage.getItem(LANG.storageKey);if(j)S={...S,...JSON.parse(j)};}catch(e){}if(!S.srs.length)S.srs=freshSRS();checkStreakBreak();rolloverDaily();}
+/* state splits three ways: per-language progress (sajilo_<code>), global stats shared
+   across languages (sajilo_global — streak/XP, Duolingo model), and device prefs
+   (stored in the global key but never synced to the cloud) */
+function lPick(o){return {done:o.done||[],srs:o.srs||[],words:o.words||0};}
+function gPick(o){return {lang:o.lang||'ne',xp:o.xp||0,streak:o.streak||0,lastDay:o.lastDay||null,bestStreak:o.bestStreak||0,dailyXp:o.dailyXp||0,dailyDate:o.dailyDate||null,dailyGoal:o.dailyGoal||50,total:o.total||0,correct:o.correct||0};}
+function prefsPick(o){return {theme:o.theme,rom:o.rom,voice:o.voice,sound:o.sound,autoNext:o.autoNext};}
+const GLOBAL_KEY='sajilo_global';
+/* one-time migration: pre-multi-language blob 'sajilo' → sajilo_ne + sajilo_global
+   (the old key is kept as a backup; resetAll clears it too) */
+function migrateLegacy(){try{if(localStorage.getItem(GLOBAL_KEY)||localStorage.getItem('sajilo_ne'))return;const j=localStorage.getItem('sajilo');if(!j)return;const o=JSON.parse(j);localStorage.setItem('sajilo_ne',JSON.stringify(lPick(o)));localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(o),...prefsPick(o),lang:'ne'}));}catch(e){}}
+function load(){try{migrateLegacy();const g=JSON.parse(localStorage.getItem(GLOBAL_KEY)||'null');if(g)S={...S,...g};const l=JSON.parse(localStorage.getItem(LANG.storageKey)||'null');if(l)S={...S,...l};}catch(e){}if(!S.srs.length)S.srs=freshSRS();checkStreakBreak();rolloverDaily();}
 function rolloverDaily(){const today=new Date().toDateString();if(S.dailyDate!==today){S.dailyXp=0;S.dailyDate=today;}}
-function save(){try{localStorage.setItem(LANG.storageKey,JSON.stringify(S));}catch(e){}cloudPush();}
+function save(){try{localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(S),...prefsPick(S)}));localStorage.setItem(LANG.storageKey,JSON.stringify(lPick(S)));}catch(e){}cloudPush();}
 /* streak only advances on real practice (answered exercise / review), not on merely opening the app */
 function updateStreak(){const today=new Date().toDateString();if(S.lastDay!==today){const y=new Date(Date.now()-864e5).toDateString();S.streak=(S.lastDay===y)?S.streak+1:1;S.lastDay=today;}if(S.streak>(S.bestStreak||0))S.bestStreak=S.streak;}
 function checkStreakBreak(){if(!S.lastDay)return;const today=new Date().toDateString();const y=new Date(Date.now()-864e5).toDateString();if(S.lastDay!==today&&S.lastDay!==y)S.streak=0;}
@@ -8090,8 +8102,7 @@ function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON||!window.supabase)retur
   sb.auth.getSession().then(({data})=>{user=data.session?.user||null;onAuthChange();});}
 async function onAuthChange(){paintAccount();if(user)await cloudPull();}
 /* merge local + cloud instead of last-write-wins, so progress made on another device (or before logging in) is never lost */
-function mergeState(loc,cld){const m={...loc,...cld};
-  m.done=[...new Set([...(loc.done||[]),...(cld.done||[])])];
+function mergeGlobal(loc,cld){const m={...loc,...cld};
   m.xp=Math.max(loc.xp||0,cld.xp||0);
   m.total=Math.max(loc.total||0,cld.total||0);
   m.correct=Math.max(loc.correct||0,cld.correct||0);
@@ -8101,18 +8112,33 @@ function mergeState(loc,cld){const m={...loc,...cld};
   else if(lt===ct)m.streak=Math.max(loc.streak||0,cld.streak||0);
   if(loc.dailyDate===cld.dailyDate)m.dailyXp=Math.max(loc.dailyXp||0,cld.dailyXp||0);
   else if((loc.dailyDate?new Date(loc.dailyDate).getTime():0)>(cld.dailyDate?new Date(cld.dailyDate).getTime():0)){m.dailyXp=loc.dailyXp;m.dailyDate=loc.dailyDate;}
+  m.lang=loc.lang; /* the active language is a per-device choice */
+  return m;}
+function mergeLang(loc,cld){loc=loc||{};cld=cld||{};const m={};
+  m.done=[...new Set([...(loc.done||[]),...(cld.done||[])])];
   const byWord=new Map();(cld.srs||[]).forEach(c=>byWord.set(c.d,c));
   (loc.srs||[]).forEach(c=>{const o=byWord.get(c.d);if(!o||(c.reps||0)>(o.reps||0)||((c.reps||0)===(o.reps||0)&&(c.due||0)>(o.due||0)))byWord.set(c.d,c);});
   m.srs=[...byWord.values()];m.words=m.srs.length;
-  /* device-local prefs stay local */
-  m.theme=loc.theme;m.voice=loc.voice;m.rom=loc.rom;m.sound=loc.sound;m.autoNext=loc.autoNext;
   return m;}
+/* cloud payload v2: one row per user carrying every language + global stats.
+   v1 rows (flat Nepali blob from pre-multi-language clients) still merge cleanly. */
+function cloudData(){const langs={};
+  try{Object.keys(localStorage).forEach(k=>{if(k.indexOf('sajilo_')===0&&k!==GLOBAL_KEY){try{const o=JSON.parse(localStorage.getItem(k));if(o)langs[k.slice(7)]=lPick(o);}catch(e){}}});}catch(e){}
+  langs[LANG.code]=lPick(S);return {v:2,global:gPick(S),langs};}
 async function cloudPull(){if(!sb||!user)return;
   try{const {data}=await sb.from('progress').select('data').eq('user_id',user.id).maybeSingle();
-    if(data&&data.data){S=mergeState(S,data.data);if(!S.srs||!S.srs.length)S.srs=freshSRS();checkStreakBreak();localStorage.setItem(LANG.storageKey,JSON.stringify(S));refreshAll();cloudPush();}
+    if(data&&data.data){const d=data.data;
+      const cg=(d.v===2)?(d.global||{}):gPick(d);
+      const cl=(d.v===2)?(d.langs||{}):{ne:lPick(d)};
+      S={...S,...mergeGlobal(gPick(S),cg),...prefsPick(S)};
+      Object.keys(cl).forEach(c=>{
+        if(c===LANG.code){const m=mergeLang(lPick(S),cl[c]);S.done=m.done;S.srs=m.srs;S.words=m.words;}
+        else{let loc=null;try{loc=JSON.parse(localStorage.getItem('sajilo_'+c)||'null');}catch(e){}
+          try{localStorage.setItem('sajilo_'+c,JSON.stringify(mergeLang(loc,cl[c])));}catch(e){}}});
+      if(!S.srs||!S.srs.length)S.srs=freshSRS();checkStreakBreak();save();refreshAll();}
     else cloudPush(true);}catch(e){console.warn('pull',e);}}
 function cloudPush(now){if(!sb||!user)return;clearTimeout(pushTimer);
-  pushTimer=setTimeout(async()=>{try{await sb.from('progress').upsert({user_id:user.id,data:S,updated_at:new Date().toISOString()});}catch(e){console.warn('push',e);}},now?0:1200);}
+  pushTimer=setTimeout(async()=>{try{await sb.from('progress').upsert({user_id:user.id,data:cloudData(),updated_at:new Date().toISOString()});}catch(e){console.warn('push',e);}},now?0:1200);}
 function openAuth(){document.getElementById('tabs').classList.remove('open');paintAccount();document.getElementById('auth-modal').classList.add('show');}
 function closeAuth(){document.getElementById('auth-modal').classList.remove('show');}
 function paintAccount(){const slot=document.getElementById('account-slot');const dot=document.getElementById('sync-dot');const st=document.getElementById('sync-text');
@@ -8326,7 +8352,8 @@ registerPack({
   ttsLocale:'ne-NP',
   script:/[\u0900-\u097F]/, /* native-script char range: audio collection + script detection */
   audioBase:'audio/',
-  storageKey:'sajilo',
+  storageKey:'sajilo_ne',
+  brand:{glyph:'ने',h1:'Learn <em>Nepali</em>'},
   voiceTest:v=>/^ne(\b|[-_])/i.test(v.lang)||/nepali/i.test(v.name),
   fbVoiceTest:v=>/^hi(\b|[-_])/i.test(v.lang)||/hindi/i.test(v.name),
   fbVoiceName:'Hindi',
@@ -8341,6 +8368,39 @@ function applyPack(code){const p=PACKS[code];if(!p)return false;LANG=p;
   LESSON_MAP=new Map(LESSONS.map(l=>[l.id,l]));AUDIO_BASE=p.audioBase;return true;}
 applyPack('ne');
 const lessonById=id=>LESSON_MAP.get(id);
+
+/* ===== LANGUAGE SWITCHER =====
+   Languages offered in the Settings picker. Ship a new language by adding
+   {code,label} here + a lang/<code>.js file that calls registerPack().
+   The picker row stays hidden while only one language exists. */
+const LANG_CATALOG=[
+  {code:'ne',label:'Nepali — नेपाली'},
+];
+function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
+async function switchLang(code){
+  if(!LANG||code===LANG.code)return;
+  if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
+  if(!PACKS[code]&&LANG_CATALOG.some(l=>l.code===code))await loadLangScript(code);
+  if(!PACKS[code]){S.lang=LANG.code;save();paintLangPicker();return;} /* unknown/failed pack: stay put */
+  save();               /* persist the outgoing language */
+  applyPack(code);
+  S=defaultS();load();  /* global stats + prefs carry over; progress is per-language */
+  S.lang=code;save();
+  AUDIO_KEYS=new Set();audioCache.clear();stopAudio();loadAudioManifest();loadVoices();
+  srsSession=null;
+  applyBranding();refreshAll();buildAlpha();
+  show('home');}
+/* everything language-flavored outside the path/alphabet data */
+function applyBranding(){const b=LANG.brand||{};
+  const mk=document.querySelector('.logo .mark');if(mk&&b.glyph)mk.textContent=b.glyph;
+  const h=document.querySelector('.hero-text h1');if(h&&b.h1)h.innerHTML=b.h1;
+  const it=document.querySelector('.tab[data-v="intensive"]');if(it)it.style.display=UNITS_INTENSIVE.length?'':'none';
+  paintLangPicker();}
+function paintLangPicker(){const row=document.getElementById('lang-row');if(!row)return;
+  row.style.display=LANG_CATALOG.length>1?'':'none';
+  const sel=document.getElementById('lang-select');if(!sel)return;sel.innerHTML='';
+  LANG_CATALOG.forEach(l=>{const o=document.createElement('option');o.value=l.code;o.textContent=l.label;sel.appendChild(o);});
+  sel.value=LANG.code;sel.onchange=()=>switchLang(sel.value);}
 
 function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';const root=document.getElementById(rootId);if(!root)return;root.innerHTML='';const doneSet=new Set(S.done);let lastPw=null,prevId=null;const trackIds=units.flatMap(u=>u.lessons);const firstUndoneId=trackIds.find(id=>!doneSet.has(id));const firstUndone=firstUndoneId?lessonById(firstUndoneId):null;const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
   units.forEach((u,ui)=>{if(ui>0){const col=accent[ui%4];const dv=document.createElement('div');dv.className='zone-divider';dv.innerHTML='<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 60 L0 40 L150 22 L320 46 L480 16 L640 42 L820 20 L1000 44 L1160 24 L1200 36 L1200 60 Z" fill="'+col+'" opacity=".16"/><path d="M0 60 L0 50 L180 32 L360 52 L520 30 L700 50 L880 32 L1060 52 L1200 38 L1200 60 Z" fill="'+col+'" opacity=".3"/></svg>';root.appendChild(dv);}const doneInU=u.lessons.filter(id=>doneSet.has(id)).length;const zone=document.createElement('div');zone.className='zone polish';zone.style.setProperty('--zacc',accent[ui%4]);
@@ -8638,12 +8698,13 @@ function toggleRom(){S.rom=document.getElementById('set-rom').checked;save();if(
 function toggleSound(){S.sound=document.getElementById('set-sound').checked;save();if(S.sound)playSound('correct');}
 function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').checked;save();}
 function changeGoal(){S.dailyGoal=+document.getElementById('set-goal').value||50;save();}
-function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;localStorage.removeItem(LANG.storageKey);S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');});}
+function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;try{Object.keys(localStorage).filter(x=>x==='sajilo'||x.indexOf('sajilo_')===0).forEach(x=>localStorage.removeItem(x));}catch(e){}S={...defaultS(),lang:LANG.code,theme:k,srs:freshSRS(),dailyDate:new Date().toDateString()};save();refreshAll();show('home');});}
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
 document.getElementById('home-mascot').innerHTML=mascotSVG('happy');
-buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
+applyBranding();buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
+if(S.lang&&S.lang!==LANG.code)switchLang(S.lang); /* resume the language chosen last session */
 </script>
 </body>
 </html>

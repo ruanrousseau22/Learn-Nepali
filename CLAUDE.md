@@ -38,6 +38,24 @@ engine reads (`LESSONS`, `UNITS`, `UNITS_INTENSIVE`, `SYM`, `VOWELS`, `CONS`,
 `NE_*` directly.** Future languages load from `lang/<code>.js` and call
 `registerPack`.
 
+**Language switcher (since July 2026).** `LANG_CATALOG` (next to `switchLang`)
+lists offered languages; the Settings "Course language" row auto-hides while it
+has one entry, so shipping a language = add `{code,label}` + `lang/<code>.js`.
+`switchLang(code)` lazy-loads the pack script, saves the outgoing language,
+applies the pack, reloads state/audio-manifest/voices, calls `applyBranding()`
+(header glyph, hero h1 from `pack.brand`, hides the Intensive tab when
+`unitsIntensive` is empty) and rebuilds all views. Site name/branding stays
+"Sajilo Nepali" everywhere until Ruan picks the umbrella name.
+
+**State & storage.** `S` is the merged working state the engine reads. On disk it
+splits: `sajilo_global` = global stats shared across languages (XP, streak, daily,
+total/correct — Duolingo model) + device prefs (theme/rom/voice/sound/autoNext,
+never synced); `sajilo_<code>` = per-language `{done, srs, words}` (`lPick`/
+`gPick`/`prefsPick` define the split). `migrateLegacy()` converts the old `sajilo`
+blob once (kept as backup; `resetAll` clears every `sajilo*` key). Cloud rows are
+`data:{v:2, global, langs:{<code>:{done,srs,words}}}`; v1 flat rows from old
+cached clients are treated as `{global:gPick(d), langs:{ne:lPick(d)}}` on pull.
+
 Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`).
 - Zones live in `UNITS` (main course, `#path-root`, tab "Learn") and
   `UNITS_INTENSIVE` (`#path-root-intensive`, tab "Intensive").
@@ -78,8 +96,9 @@ Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensi
 - Streak advances **only on real practice** (`updateStreak()` in `finishQuestion`
   and `srsGrade`), never on load — `checkStreakBreak()` on load just zeroes a
   broken streak. Don't re-add `updateStreak()` to `load()`.
-- Cloud sync **merges** via `mergeState` (union of done, max XP, more-advanced SRS
-  card, device prefs stay local) — never blob-overwrite `S` from the cloud.
+- Cloud sync **merges** via `mergeGlobal` + `mergeLang` (union of done, max XP,
+  more-advanced SRS card, device prefs stay local, active `lang` stays local) —
+  never blob-overwrite `S` from the cloud; push the v2 payload from `cloudData()`.
 - `speak()`/`speakSlow()` are muted during tests via `testMuted()`. Speaker icons
   use `spkSVG()` (inline SVG) — never the 🔊 emoji.
 - Keyboard: lessons accept 1–9 (pick option), Enter/Space (check/continue), Esc
@@ -119,11 +138,17 @@ Decisions made (July 2026):
 - **Step 1 — DONE (July 2026): the language-pack refactor with Nepali provably
   untouched** — 63 main nodes + 60 topics + 12 tests all render identically, full
   validation green (see Architecture → Language packs). Golden rule 2 is now:
-  never break any shipped language. Still deferred to the language-switcher step:
-  per-language storage keys (`sajilo_<code>`) + the one-time `sajilo` → `sajilo_ne`
-  migration (the key is read from `LANG.storageKey`, currently `'sajilo'`), the
-  Supabase lang discriminator, per-language manifest reload on switch, and
-  pack-driven hero branding.
+  never break any shipped language.
+- **Step 2 — DONE (July 2026): the language switcher** — per-language storage
+  (`sajilo_<code>` + one-time `sajilo` → `sajilo_ne` migration), global streak/XP
+  in `sajilo_global`, cloud payload v2 with per-language blobs (v1 rows still
+  merge), audio manifest + voices reload on switch, pack-driven branding, Settings
+  picker hidden until `LANG_CATALOG` has ≥2 entries (see Architecture → Language
+  switcher / State & storage). **Step 3 — NEXT: the Khmer pack itself**
+  (`lang/km.js` + catalog entry): Zone 1 script + Zone 2 foundations, `km-KH`
+  audio in `audio-km/` (needs `generate_audio.py --lang` support + per-language
+  manifest), and per-language Alphabet-view chrome (headings/YouTube links are
+  still Nepali-static HTML).
 
 ## Design / content rules
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
