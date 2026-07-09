@@ -18,23 +18,35 @@ Sajilo Nepali is a **single-file HTML** Nepali-learning web app, faith-forward
 
 ## Golden rules
 1. **Always work directly on `index.html`.** Edit it in place.
-2. **Never break the main course.** Two tracks share the file; changes to the
-   Intensive track must leave the main course provably untouched.
+2. **Never break any shipped language.** Two tracks share the file; changes to the
+   Intensive track must leave the main course provably untouched, and new-language
+   work must leave every shipped language pack provably untouched.
 3. **Validate before committing** (see Validation below). Never commit a build that
    fails `node --check` or the jsdom smoke test.
 4. **Regenerate `audio_strings.json` whenever spoken content changes** (see Audio).
 5. Keep the UI minimal and uncluttered. Faith-forward but never preachy in mechanics.
 
 ## Architecture
-Two tracks share one `LESSONS` array (it ends right before `const VOWELS`).
+**Language packs (since July 2026).** Nepali data lives inline as `NE_*` consts
+(`NE_LESSONS`, `NE_UNITS`, `NE_UNITS_INTENSIVE`, `NE_SYM`, `NE_VOWELS`, `NE_CONS`,
+`NE_NUMS`, `NE_SRS_SEED`), bundled into `PACKS.ne` via `registerPack({...})` (see
+the LANGUAGE PACKS block after `NE_SYM`). The pack also carries `ttsLocale`,
+`script` (native-script regex), `audioBase`, `storageKey`, and voice-picker
+predicates. `applyPack(code)` assigns the active pack to the global bindings the
+engine reads (`LESSONS`, `UNITS`, `UNITS_INTENSIVE`, `SYM`, `VOWELS`, `CONS`,
+`NUMS`, `SRS_SEED`, `LESSON_MAP`, `AUDIO_BASE`, `LANG`). **The engine never reads
+`NE_*` directly.** Future languages load from `lang/<code>.js` and call
+`registerPack`.
+
+Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`).
 - Zones live in `UNITS` (main course, `#path-root`, tab "Learn") and
   `UNITS_INTENSIVE` (`#path-root-intensive`, tab "Intensive").
 - Shared renderer: `buildPath(units, rootId)`. Helpers: `curTrack`, `trackOf`,
   `buildTrack`, `startLesson`, `renderEx`, `advance`, `finishLesson`, `exitLesson`,
   `lessonById`.
-- **Node symbols come from the `SYM` map** (`const SYM={...}`), keyed by each topic's
-  *learn-lesson id* — NOT the lesson `emoji` field (which is unused in rendering).
-  Both tracks use Devanagari node symbols (no emoji on nodes).
+- **Node symbols come from the `SYM` map** (`NE_SYM` in the Nepali pack), keyed by
+  each topic's *learn-lesson id* — NOT the lesson `emoji` field (which is unused in
+  rendering). Both tracks use Devanagari node symbols (no emoji on nodes).
 
 Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensive =
 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics.
@@ -104,10 +116,14 @@ Decisions made (July 2026):
   audio dir + manifest, same FNV-1a hashing).
 - **Branding/domain deferred** — do NOT rename the site yet; sajilonepali.com
   stays as-is until Ruan decides the umbrella name.
-- **Step 1 (do this first): the language-pack refactor with Nepali provably
+- **Step 1 — DONE (July 2026): the language-pack refactor with Nepali provably
   untouched** — 63 main nodes + 60 topics + 12 tests all render identically, full
-  validation green, before any Khmer content is written. Golden rule 2 then
-  becomes: never break any shipped language.
+  validation green (see Architecture → Language packs). Golden rule 2 is now:
+  never break any shipped language. Still deferred to the language-switcher step:
+  per-language storage keys (`sajilo_<code>`) + the one-time `sajilo` → `sajilo_ne`
+  migration (the key is read from `LANG.storageKey`, currently `'sajilo'`), the
+  Supabase lang discriminator, per-language manifest reload on switch, and
+  pack-driven hero branding.
 
 ## Design / content rules
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
