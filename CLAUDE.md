@@ -13,6 +13,8 @@ Sajilo Nepali is a **single-file HTML** Nepali-learning web app, faith-forward
 - **Netlify** auto-deploys on every push to this repo (1–2 min). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
+- **Multi-language expansion is underway — Khmer first.** Read the
+  "Multi-language expansion" section below before starting any work on it.
 
 ## Golden rules
 1. **Always work directly on `index.html`.** Edit it in place.
@@ -52,6 +54,60 @@ Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensi
 - Exercise types: `note{tag,q,body,tip?,eg?}`, `mc{q,d?,r?,o,a}`, `fill{q,s,o,a}`,
   `li{q,say,o,a}`, `wb{q,a:[ordered],pool:[shuffled]}`, `match{q,pairs:[[deva,gloss]]}`,
   `tr{q,a,r,h?}`.
+
+### Engine invariants (added July 2026 — respect these when touching lesson flow)
+- Lessons run on a session queue `exQ` (copy of `l.ex`): a wrong answer requeues
+  that question at the end ("↻ Try again" tag, `curE>=exQBase`) until answered
+  correctly. **Tests are exempt** — fixed dealt 20, scored on first tries
+  (`lessonCorrect`, incremented in `finishQuestion` only when `ok&&!breakCombo`).
+- **Never use native `confirm()`** — use the in-app dialog `askConfirm(title,msg,
+  okLabel,onOk)` / `closeConfirm()` (#confirm-modal). All modals close on backdrop
+  click + Escape via `closeModalById`.
+- Streak advances **only on real practice** (`updateStreak()` in `finishQuestion`
+  and `srsGrade`), never on load — `checkStreakBreak()` on load just zeroes a
+  broken streak. Don't re-add `updateStreak()` to `load()`.
+- Cloud sync **merges** via `mergeState` (union of done, max XP, more-advanced SRS
+  card, device prefs stay local) — never blob-overwrite `S` from the cloud.
+- `speak()`/`speakSlow()` are muted during tests via `testMuted()`. Speaker icons
+  use `spkSVG()` (inline SVG) — never the 🔊 emoji.
+- Keyboard: lessons accept 1–9 (pick option), Enter/Space (check/continue), Esc
+  (exit w/ confirm when ≥2 exercises in); review accepts Space + 1/2/3 (H/G/E).
+- Paths scroll to the current node (`scrollToCurrent`, `.topic-row.has-next`) —
+  respect `SMOOTH` (prefers-reduced-motion). Hero CTA `heroGo()` does the same.
+- `lessonById` is a Map lookup (`LESSON_MAP`); `buildPath` uses a `doneSet` Set.
+- CSS: `.section` must keep longhand top/bottom padding (shorthand kills `.wrap`'s
+  side gutters on `wrap section` elements — this was a real mobile bug).
+
+## Multi-language expansion (NEXT UP: Khmer)
+Ruan is expanding beyond Nepali. Researched roadmap (demand vs competition) —
+Phase 1: Nepali (done), Amharic, Khmer · Phase 2: Burmese, Sinhala, Lao ·
+Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda. **Khmer is being built first.**
+
+Decisions made (July 2026):
+- **One app with a language switcher** — Learn path, Alphabet, and Review all
+  follow the active language. NOT separate sites.
+- Refactor to **language packs**: one object per language bundling
+  LESSONS/UNITS/SYM/alphabet arrays/SRS_SEED/ttsLocale/audio dir/hero branding.
+  Engine reads the active pack. Nepali stays inline in index.html; other
+  languages load on demand from `lang/<code>.js` so initial load stays light.
+- **Per-language progress** (storage key `sajilo_<code>`; Supabase progress rows
+  gain a lang discriminator), **global streak/XP** across languages (Duolingo
+  model). One-time migration: existing `sajilo` blob → `sajilo_ne`.
+- Khmer launch scope: **Zone 1 (script) + Zone 2 (foundations)** (~60–70 lessons),
+  labeled early access; grow zone by zone. **No Intensive track for Khmer** (that
+  curriculum is Nepal-ministry-specific).
+- Khmer content rules: two consonant series, subscript consonants (ជើង), no word
+  spaces; **pick ONE romanization scheme and enforce it** (same rule as Nepali:
+  no Khmer script in rom fields — scan `[ក-៿]`). Audio via edge-tts
+  `km-KH-PisethNeural` (male) / `km-KH-SreymomNeural` (female) for now; Ruan may
+  record **native voices later** — keep the pipeline voice-agnostic (per-language
+  audio dir + manifest, same FNV-1a hashing).
+- **Branding/domain deferred** — do NOT rename the site yet; sajilonepali.com
+  stays as-is until Ruan decides the umbrella name.
+- **Step 1 (do this first): the language-pack refactor with Nepali provably
+  untouched** — 63 main nodes + 60 topics + 12 tests all render identically, full
+  validation green, before any Khmer content is written. Golden rule 2 then
+  becomes: never break any shipped language.
 
 ## Design / content rules
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
