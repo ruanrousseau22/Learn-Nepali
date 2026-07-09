@@ -56,7 +56,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .view{display:none;animation:fade .3s ease}
 .view.active{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.section{padding:36px 0}
+.section{padding-top:36px;padding-bottom:36px} /* longhand so .wrap's 24px side padding survives on `wrap section` elements */
 .section h2{font-weight:700;font-size:27px;letter-spacing:-.025em;margin-bottom:4px}
 .section .sub{color:var(--ink-soft);font-size:15px;margin-bottom:24px;max-width:58ch}
 .btn{font-weight:700;font-size:15px;padding:13px 26px;border-radius:100px;border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:.18s;letter-spacing:-.01em}
@@ -499,7 +499,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 @media(max-width:600px){
   /* tighter side gutters + section spacing so things stop feeling oversized */
   .wrap{padding:0 16px}
-  .section{padding:24px 0}
+  .section{padding-top:24px;padding-bottom:24px}
   .section h2{font-size:22px}
   .section .sub{font-size:14px;margin-bottom:18px}
 
