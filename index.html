@@ -32,6 +32,7 @@
   --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;letter-spacing:-.01em;transition:background .4s,color .4s}
 .deva{font-family:'Noto Sans Devanagari','Plus Jakarta Sans',sans-serif;letter-spacing:0}
@@ -76,6 +77,8 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-text{position:relative;z-index:2;max-width:64%}
 .hero-text h1{font-size:clamp(34px,5.4vw,54px)}
 .hero-sub{margin-top:10px;font-size:15px;font-weight:600;color:var(--ink-soft);background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);display:inline-block;padding:6px 14px;border-radius:100px}
+.hero-cta{margin-top:14px;box-shadow:0 10px 24px -10px rgba(155,40,32,.6)}
+@media(max-width:640px){.hero-cta{padding:11px 20px;font-size:14px}}
 .hero-yeti{position:absolute;right:8px;bottom:8px;width:132px;height:132px;z-index:3;filter:drop-shadow(0 10px 12px rgba(0,0,0,.22))}
 @media(max-width:640px){.hero-inner{min-height:236px}.hero-yeti{width:96px;height:96px}.hero-text{max-width:70%}}
 @media(max-width:430px){.hero-yeti{width:78px;height:78px;opacity:.95}}
@@ -213,7 +216,8 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .mtile.mwrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card));color:var(--bad);animation:cardShake .4s}
 
 .alpha-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:12px;margin-bottom:8px}
-.glyph{position:relative;background:var(--card);border:1px solid var(--line-soft);border-radius:16px;padding:18px 6px 14px;text-align:center;cursor:pointer;transition:transform .16s cubic-bezier(.34,1.4,.5,1),box-shadow .16s,border-color .16s}
+.glyph{position:relative;background:var(--card);border:1px solid var(--line-soft);border-radius:16px;padding:18px 6px 14px;text-align:center;cursor:pointer;font-family:inherit;color:inherit;transition:transform .16s cubic-bezier(.34,1.4,.5,1),box-shadow .16s,border-color .16s}
+.glyph.sel{border-color:var(--saffron);background:var(--saffron-soft);box-shadow:0 6px 16px -10px color-mix(in srgb,var(--saffron) 70%,transparent)}
 .glyph:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--zacc) 45%,var(--line));box-shadow:0 10px 22px -12px color-mix(in srgb,var(--zacc) 80%,transparent)}
 .glyph:active{transform:translateY(-1px)}
 .glyph .d{font-family:'Noto Sans Devanagari';font-size:32px;font-weight:500;color:var(--ink);line-height:1}
@@ -356,8 +360,9 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .modal .msg-line.ok{color:var(--teal)} .modal .msg-line.err{color:var(--bad)}
 
 footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;color:var(--ink-soft);font-size:13px;margin-top:24px}
-.spk{cursor:pointer;color:var(--crimson);background:none;border:none;font-size:.6em;display:inline-grid;place-items:center;width:1.6em;height:1.6em;border-radius:50%;transition:.14s}
-.spk:hover{background:var(--saffron-soft)}
+.spk{cursor:pointer;color:var(--crimson);background:color-mix(in srgb,var(--crimson) 9%,transparent);border:none;font-size:.6em;display:inline-grid;place-items:center;width:1.6em;height:1.6em;border-radius:50%;transition:.14s}
+.spk:hover{background:color-mix(in srgb,var(--crimson) 18%,transparent);transform:scale(1.06)}
+.spk svg,.li-bigbtn svg{display:block}
 .sync-pill{display:inline-flex;align-items:center;gap:6px}
 .sync-dot{width:7px;height:7px;border-radius:50%;background:var(--ink-soft)}
 .sync-dot.on{background:var(--teal)}
@@ -379,7 +384,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .lvl-bar-top{display:flex;justify-content:space-between;font-size:10px;font-weight:700;color:var(--ink-soft);margin-bottom:3px;letter-spacing:.02em}
 .lvl-bar{height:8px;background:var(--paper-2);border-radius:100px;overflow:hidden;border:1px solid var(--line-soft)}
 .lvl-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--saffron),var(--crimson));border-radius:100px;width:0;transition:width .7s cubic-bezier(.22,1,.36,1)}
-@media(max-width:560px){.lvl-bar-wrap{display:none}}
+@media(max-width:560px){.lvl-bar-wrap{display:none}
+/* phone: XP progress becomes a ring around the level badge */
+.lvl-badge::after{content:'';position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(var(--saffron) var(--pct,0%),color-mix(in srgb,var(--ink-soft) 22%,transparent) 0);-webkit-mask:radial-gradient(closest-side,transparent calc(100% - 3.5px),#000 calc(100% - 3px));mask:radial-gradient(closest-side,transparent calc(100% - 3.5px),#000 calc(100% - 3px))}}
 
 /* home level card */
 
@@ -790,6 +797,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <div class="hero-text">
         <h1 class="display">Learn <em>Nepali</em></h1>
         <p class="hero-sub" id="home-greeting">Pick up where you left off.</p>
+        <div><button class="btn btn-primary hero-cta" id="hero-cta" onclick="heroGo()">Continue learning →</button></div>
       </div>
       <div class="hero-yeti mascot-bob" id="home-mascot"></div>
     </div>
@@ -818,10 +826,13 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-alphabet">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path class="far" d="M0 158 Q300 140 600 154 Q900 168 1200 148 L1200 200 L0 200 Z"/>
-      <path class="mid" d="M0 174 L230 142 L430 164 L640 132 L860 162 L1060 144 L1200 160 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="628 150 640 132 652 150"/>
-      <path class="near" d="M0 190 Q300 174 600 185 Q900 196 1200 181 L1200 200 L0 200 Z"/>
+      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
+      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <path class="far" d="M0 132 L150 98 L300 124 L460 86 L620 118 L780 92 L940 120 L1100 98 L1200 114 L1200 200 L0 200 Z"/>
+      <path class="mid" d="M0 160 L200 124 L380 148 L560 76 L720 130 L880 92 L1060 136 L1200 106 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="544 96 560 76 576 96"/>
+      <polygon class="snow" points="866 110 880 92 894 110"/>
+      <path class="near" d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>The alphabet <span class="deva">देवनागरी</span></h2>
@@ -847,10 +858,13 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-review">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path class="far" d="M0 158 Q300 140 600 154 Q900 168 1200 148 L1200 200 L0 200 Z"/>
-      <path class="mid" d="M0 174 L230 142 L430 164 L640 132 L860 162 L1060 144 L1200 160 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="628 150 640 132 652 150"/>
-      <path class="near" d="M0 190 Q300 174 600 185 Q900 196 1200 181 L1200 200 L0 200 Z"/>
+      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
+      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <path class="far" d="M0 132 L150 98 L300 124 L460 86 L620 118 L780 92 L940 120 L1100 98 L1200 114 L1200 200 L0 200 Z"/>
+      <path class="mid" d="M0 160 L200 124 L380 148 L560 76 L720 130 L880 92 L1060 136 L1200 106 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="544 96 560 76 576 96"/>
+      <polygon class="snow" points="866 110 880 92 894 110"/>
+      <path class="near" d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>Review <span class="deva">अभ्यास</span></h2>
@@ -863,9 +877,22 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 
 
 <section class="view" id="view-settings">
-  <div class="wrap section">
-    <h2>Settings</h2>
-    <p class="sub">Progress saves to this browser. Log in to sync across devices.</p>
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
+      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <path class="far" d="M0 132 L150 98 L300 124 L460 86 L620 118 L780 92 L940 120 L1100 98 L1200 114 L1200 200 L0 200 Z"/>
+      <path class="mid" d="M0 160 L200 124 L380 148 L560 76 L720 130 L880 92 L1060 136 L1200 106 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="544 96 560 76 576 96"/>
+      <polygon class="snow" points="866 110 880 92 894 110"/>
+      <path class="near" d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+    </svg>
+    <div class="pb-inner">
+      <h2>Settings <span class="deva">सेटिङ</span></h2>
+      <p class="pb-sub">Progress saves to this browser. Log in to sync across devices.</p>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:6px">
     <div class="set-grid">
       <div class="set-row"><div><div class="label">Account</div><div class="desc" id="acct-desc">Not logged in — progress is local only</div></div><button class="iconbtn" id="acct-action" onclick="openAuth()">Log in</button></div>
       <div class="set-row"><div><div class="label">Dark mode</div><div class="desc">Warm paper or midnight</div></div><label class="switch"><input type="checkbox" id="set-dark" onchange="toggleTheme()"><span class="slider"></span></label></div>
@@ -882,10 +909,13 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-intensive">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path class="far" d="M0 158 Q300 140 600 154 Q900 168 1200 148 L1200 200 L0 200 Z"/>
-      <path class="mid" d="M0 174 L230 142 L430 164 L640 132 L860 162 L1060 144 L1200 160 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="628 150 640 132 652 150"/>
-      <path class="near" d="M0 190 Q300 174 600 185 Q900 196 1200 181 L1200 200 L0 200 Z"/>
+      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
+      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <path class="far" d="M0 132 L150 98 L300 124 L460 86 L620 118 L780 92 L940 120 L1100 98 L1200 114 L1200 200 L0 200 Z"/>
+      <path class="mid" d="M0 160 L200 124 L380 148 L560 76 L720 130 L880 92 L1060 136 L1200 106 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="544 96 560 76 576 96"/>
+      <polygon class="snow" points="866 110 880 92 894 110"/>
+      <path class="near" d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>Language Intensive <span class="deva">सघन</span></h2>
@@ -8193,15 +8223,16 @@ function xpToAdvance(lvl){return 100+(lvl-1)*50;}
 function levelInfo(total){let lvl=1,rem=total;while(lvl<MAX_LEVEL&&rem>=xpToAdvance(lvl)){rem-=xpToAdvance(lvl);lvl++;}const need=xpToAdvance(lvl);return{level:lvl,into:rem,need,pct:lvl>=MAX_LEVEL?100:Math.min(100,rem/need*100),max:lvl>=MAX_LEVEL};}
 
 function paintStats(){
-  const g=document.getElementById('home-greeting');
-  if(g){
-    if(S.done.length===0)g.textContent='Begin your first lesson.';
-    else if(LESSONS.find(l=>!S.done.includes(l.id)))g.textContent='Pick up where you left off.';
-    else g.textContent='🎉 You finished the course!';
-  }
+  const g=document.getElementById('home-greeting'),cta=document.getElementById('hero-cta');
+  const fresh=S.done.length===0,unfinished=!!LESSONS.find(l=>!S.done.includes(l.id));
+  if(g)g.textContent=fresh?'Begin your first lesson.':unfinished?'Pick up where you left off.':'🎉 You finished the course!';
+  if(cta)cta.textContent=fresh?'Start learning →':unfinished?'Continue learning →':'Practice your words →';
   paintLevel();
   paintHomeStats();
 }
+function heroGo(){const row=document.querySelector('#path-root .topic-row.has-next');
+  if(row){const y=row.getBoundingClientRect().top+window.scrollY-Math.round(innerHeight*.32);window.scrollTo({top:Math.max(0,y),behavior:SMOOTH});}
+  else show('review');}
 function paintHomeStats(){
   const due=S.srs.filter(c=>c.due<=Date.now()).length;
   const b=document.getElementById('review-badge');
@@ -8211,6 +8242,7 @@ function paintLevel(pop){const li=levelInfo(S.xp);const rk=rankFor(li.level);
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   set('hdr-lvl',li.level);set('hdr-rank',rk.name);set('hdr-xp',li.max?'MAX':li.into+'/'+li.need);
   const f=document.getElementById('hdr-fill');if(f)f.style.width=li.pct+'%';
+  const bd=document.getElementById('hdr-badge');if(bd)bd.style.setProperty('--pct',li.pct+'%');
   if(pop){const b=document.getElementById('hdr-badge');if(b){b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');}}
 }
 function award(n,fromEl){const before=levelInfo(S.xp).level;S.xp+=n;S.dailyXp+=n;const after=levelInfo(S.xp).level;
@@ -8332,6 +8364,8 @@ function startLesson(i){curL=i;curTrack=trackOf(LESSONS[i].id);curE=0;combo=0;le
   exQ=LESSONS[i].ex.slice();exQBase=exQ.length;
   show('exercise');document.getElementById('actionbar').classList.remove('hidden');renderEx();}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
+/* crisp speaker icon — replaces the platform-dependent 🔊 emoji */
+function spkSVG(){return '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" aria-hidden="true"><path d="M3.5 9.2v5.6c0 .5.4.9.9.9h2.8l4.6 3.6c.6.5 1.5 0 1.5-.7V5.4c0-.7-.9-1.2-1.5-.7L7.2 8.3H4.4c-.5 0-.9.4-.9.9z" fill="currentColor"/><path d="M16 8.6a4.4 4.4 0 010 6.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M18.6 6a8 8 0 010 12" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>';}
 /* deal a fresh random 20 questions from the test's unit on every attempt:
    4 per topic-day, tap-only types, no listening prompts, at most 3 match rounds */
 function buildTestEx(testId){
@@ -8367,9 +8401,9 @@ function renderEx(){stopAudio();exToken++;const l=LESSONS[curL],ex=exQ[curE];sel
   if(ex.t==='note'){const eg=ex.eg?('<div class="note-eg">'+ex.eg.map(e=>'<div class="egcard"><span class="nd">'+e[0]+'</span>'+(e[1]&&S.rom?'<span class="nr">'+e[1]+'</span>':'')+(e[2]?'<span class="nm">'+e[2]+'</span>':'')+'</div>').join('')+'</div>'):'';
     c.innerHTML='<div class="extype">'+(ex.tag||'Quick note')+'</div><div class="exq">'+ex.q+'</div><div class="note-body">'+ex.body+'</div>'+eg+(ex.tip?'<div class="note-tip">💡 '+ex.tip+'</div>':'');
     btn.textContent='Got it';btn.disabled=false;phase='note';}
-  else if(ex.t==='mc')c.innerHTML='<div class="extype">'+(l.step==='test'?'Test · multiple choice':'Multiple choice')+'</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+(l.step==='test'?'':'<button class="spk" aria-label="Play audio" onclick="speak(\''+ex.d+'\')">🔊</button>')+'</div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
+  else if(ex.t==='mc')c.innerHTML='<div class="extype">'+(l.step==='test'?'Test · multiple choice':'Multiple choice')+'</div><div class="exq">'+ex.q+'</div>'+(ex.d?'<div class="exbig deva">'+ex.d+(l.step==='test'?'':'<button class="spk" aria-label="Play audio" onclick="speak(\''+ex.d+'\')">'+spkSVG()+'</button>')+'</div>':'')+(ex.r&&S.rom?'<div class="exrom">'+ex.r+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';
   else if(ex.t==='fill')c.innerHTML='<div class="extype">Fill in the blank</div><div class="exq">'+ex.q+'</div><div class="fill-sentence">'+ex.s.replace('___','<span class="blank" id="fill-blank">___</span>')+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc deva" onclick="selectFill('+i+')">'+o+'</button>').join('')+'</div>';
-  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" aria-label="Play audio" onclick="speak(\''+ex.say+'\')">🔊</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
+  else if(ex.t==='li'){c.innerHTML='<div class="extype">Listening</div><div class="exq">'+(ex.q||'What did you hear?')+'</div><div class="li-play"><button class="li-bigbtn" aria-label="Play audio" onclick="speak(\''+ex.say+'\')">'+spkSVG()+'</button><button class="li-slow" onclick="speakSlow(\''+ex.say+'\')">🐢 Play slowly</button></div><div class="mcgrid">'+ex.o.map((o,i)=>'<button class="mc eng" onclick="selectMC('+i+')">'+o+'</button>').join('')+'</div>';const tk=exToken;setTimeout(()=>{if(tk===exToken&&document.getElementById('view-exercise').classList.contains('active'))speak(ex.say);},420);}
   else if(ex.t==='wb'){renderWB(ex,c);}
   else if(ex.t==='match'){renderMatch(ex,c);btn.textContent='Match the pairs';}
   else{c.innerHTML='<div class="extype">Type the translation</div><div class="exq">'+ex.q+'</div>'+(ex.h?'<div class="exhint">💡 '+ex.h+'</div>':'')+'<div class="tinput"><input id="tin" class="deva" placeholder="Type in Nepali or romanized…" oninput="document.getElementById(\'ab-btn\').disabled=!this.value.trim()"></div>';
@@ -8440,7 +8474,7 @@ function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const nee
   else c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('oops')+'</div><h3>Not this time</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct \u2014 you need '+need+' to pass. Have another look at the week, then try again.</p><button class="nextbtn" onclick="startLesson('+curL+')">Try again</button> '+backBtn+'</div>';
   buildTrack(curTrack);save();}
 
-function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('div');e.className='glyph';e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');}
+function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('button');e.type='button';e.className='glyph';e.setAttribute('aria-label','Play '+r);e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{document.querySelectorAll('.glyph.sel').forEach(x=>x.classList.remove('sel'));e.classList.add('sel');spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');}
 function spot(d,r){const s=document.getElementById('spotlight');s.classList.add('show');document.getElementById('spot-d').textContent=d;document.getElementById('spot-m').innerHTML='<div style="font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.01em">Romanized "'+r+'"</div><div style="margin-top:3px">Tap any letter to hear it spoken</div>';}
 
 let srsIdx=-1, srsRevealed=false, srsSession=null;
@@ -8515,7 +8549,7 @@ function renderSRS(){
   st.innerHTML='<div class="srs-ascent"><div class="srs-track"><div class="srs-fill" style="width:'+prog+'%"></div><div class="srs-summit"></div></div>'
     +'<div class="srs-count">'+srsSession.done+' / '+srsSession.total+' reviewed · '+due.length+' to go</div></div>'
     +'<div class="flip" id="srs-flip" onclick="srsReveal()"><div class="flip-inner">'
-      +'<div class="flip-face flip-front"><div class="ridge-clip">'+RIDGE_SVG+'</div><div class="srs-eyebrow">Recall the meaning</div><div class="front deva">'+c.d+'<button class="spk" aria-label="Play audio" onclick="event.stopPropagation();speak(\''+c.d+'\')">🔊</button></div><div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
+      +'<div class="flip-face flip-front"><div class="ridge-clip">'+RIDGE_SVG+'</div><div class="srs-eyebrow">Recall the meaning</div><div class="front deva">'+c.d+'<button class="spk" aria-label="Play audio" onclick="event.stopPropagation();speak(\''+c.d+'\')">'+spkSVG()+'</button></div><div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
       +'<div class="flip-face flip-back"><div class="srs-back-deva deva">'+c.d+'</div><div class="meaning">'+c.m+'</div>'+(S.rom?'<div class="rom">'+c.r+'</div>':'')+'</div>'
     +'</div></div>'
     +'<div id="srs-action"><button class="reveal-btn ghost" onclick="event.stopPropagation();srsReveal()">Show answer</button></div>';
