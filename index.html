@@ -336,6 +336,10 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .switch input:checked + .slider{background:var(--teal)}
 .switch input:checked + .slider:before{transform:translateX(20px);background:#fff}
 .danger-btn{background:none;border:1px solid var(--bad);color:var(--bad);padding:9px 18px;border-radius:100px;font-weight:700;cursor:pointer;font-size:14px}
+.confirm-card{max-width:360px}
+.confirm-card p{margin:10px 0 0;color:var(--ink-soft);font-size:14.5px;line-height:1.55}
+.cf-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.cf-actions .btn{padding:11px 20px;font-size:14px}
 .danger-btn:hover{background:var(--bad);color:#fff}
 
 .modal-bg{position:fixed;inset:0;background:rgba(20,15,10,.5);backdrop-filter:blur(4px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
@@ -1009,12 +1013,23 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <input id="auth-email" type="email" placeholder="you@example.com" autocomplete="email">
       <button class="btn btn-primary" id="auth-send" onclick="sendMagicLink()">Send sign-in link</button>
       <div class="msg-line" id="auth-msg"></div>
-      <p style="margin-top:14px;font-size:12px">Not set up yet? Add a free Supabase project (README). Progress still saves locally meanwhile.</p>
     </div>
     <div id="auth-loggedin" class="hidden">
       <h3>You're signed in</h3>
       <p id="loggedin-email">—</p>
       <button class="btn btn-ghost" onclick="signOut()">Sign out</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIRM DIALOG (in-app replacement for native confirm) -->
+<div class="modal-bg" id="confirm-modal">
+  <div class="modal confirm-card">
+    <h3 id="cf-title">Are you sure?</h3>
+    <p id="cf-msg"></p>
+    <div class="cf-actions">
+      <button class="btn btn-ghost" onclick="closeConfirm()">Cancel</button>
+      <button class="btn btn-primary" id="cf-ok">Yes</button>
     </div>
   </div>
 </div>
@@ -8074,10 +8089,10 @@ function paintAccount(){const slot=document.getElementById('account-slot');const
   if(user){const initial=(user.email||'?')[0].toUpperCase();slot.innerHTML='<span class="avatar" onclick="openAuth()">'+initial+'</span>';
     dot.classList.add('on');st.textContent='synced';lo.classList.add('hidden');li.classList.remove('hidden');document.getElementById('loggedin-email').textContent=user.email;ad.textContent='Synced as '+user.email;aa.textContent='Account';
   }else{slot.innerHTML='<button class="iconbtn" onclick="openAuth()">Log in</button>';dot.classList.remove('on');st.textContent=sb?'not signed in':'local only';
-    lo.classList.remove('hidden');li.classList.add('hidden');ad.textContent=sb?'Not logged in — progress is local only':'Login not configured (see README) — progress is local only';aa.textContent='Log in';}}
+    lo.classList.remove('hidden');li.classList.add('hidden');ad.textContent='Not logged in — progress is local only';aa.textContent='Log in';}}
 async function sendMagicLink(){const email=document.getElementById('auth-email').value.trim();const m=document.getElementById('auth-msg');
   if(!email){m.className='msg-line err';m.textContent='Enter your email first.';return;}
-  if(!sb){m.className='msg-line err';m.textContent='Login isn\'t set up yet — add a Supabase project (README).';return;}
+  if(!sb){m.className='msg-line err';m.textContent='Login is unavailable right now — please try again later.';return;}
   m.className='msg-line';m.textContent='Sending…';
   try{const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.href}});if(error)throw error;m.className='msg-line ok';m.textContent='Check your inbox for the sign-in link!';}
   catch(e){m.className='msg-line err';m.textContent=e.message||'Could not send link.';}}
@@ -8248,8 +8263,15 @@ function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);docum
 function closeProfile(){document.getElementById('profile-modal').classList.remove('show');}
 function openResources(){document.getElementById('resources-modal').classList.add('show');document.body.style.overflow='hidden';}
 function closeResources(){document.getElementById('resources-modal').classList.remove('show');document.body.style.overflow='';}
+/* in-app confirm dialog — replaces native confirm() so it matches the app on every device */
+let cfOnOk=null;
+function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').textContent=title;document.getElementById('cf-msg').textContent=msg;
+  const ok=document.getElementById('cf-ok');ok.textContent=okLabel;cfOnOk=onOk;
+  document.getElementById('confirm-modal').classList.add('show');setTimeout(()=>ok.focus(),60);}
+function closeConfirm(){document.getElementById('confirm-modal').classList.remove('show');cfOnOk=null;}
+document.getElementById('cf-ok').onclick=()=>{const f=cfOnOk;closeConfirm();if(f)f();};
 /* shared modal behavior: click the backdrop or press Escape to close any open modal */
-function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='auth-modal')closeAuth();}
+function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='auth-modal')closeAuth();else if(id==='confirm-modal')closeConfirm();}
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
@@ -8286,7 +8308,9 @@ let curL=0,curE=0;
 let curTrack='home';
 function trackOf(id){return (typeof UNITS_INTENSIVE!=='undefined'&&UNITS_INTENSIVE.some(u=>u.lessons.includes(id)))?'intensive':'home';}
 function buildTrack(t){if(t==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');else buildPath();}
-function exitLesson(){const l=LESSONS[curL];if(curE>=2&&curE<l.ex.length&&!confirm('Leave this lesson? Your progress in it will be lost.'))return;stopAudio();show(curTrack==='intensive'?'intensive':'home');}
+function exitLesson(){const l=LESSONS[curL];const leave=()=>{stopAudio();show(curTrack==='intensive'?'intensive':'home');};
+  if(curE>=2&&curE<l.ex.length)askConfirm(l.step==='test'?'Leave the test?':'Leave this lesson?','Your progress in this '+(l.step==='test'?'attempt':'lesson')+' will be lost.','Leave',leave);
+  else leave();}
 let combo=0;
 let selMC=-1,phase='answer',wbAns=[],wbBank=[],matchSel=null,matchMiss=false,matchDone=0,matchTotal=0;
 let exToken=0; /* bumped on every renderEx so delayed listening autoplay can tell it's stale */
@@ -8540,7 +8564,7 @@ function applyTheme(){document.documentElement.setAttribute('data-theme',S.theme
 function toggleRom(){S.rom=document.getElementById('set-rom').checked;save();if(document.getElementById('view-exercise').classList.contains('active'))renderEx();}
 function toggleSound(){S.sound=document.getElementById('set-sound').checked;save();if(S.sound)playSound('correct');}
 function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').checked;save();}
-function resetAll(){if(confirm('Reset all progress? This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.')){const k=S.theme;localStorage.removeItem('sajilo');S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');}}
+function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;localStorage.removeItem('sajilo');S={xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:freshSRS(),theme:k,rom:true,voice:'',sound:true,dailyXp:0,dailyDate:new Date().toDateString(),dailyGoal:50,bestStreak:0,autoNext:true};save();refreshAll();show('home');});}
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;
