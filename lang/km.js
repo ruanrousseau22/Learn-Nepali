@@ -601,8 +601,9 @@ const KM_LESSONS=[
 /* ---- Cambodian scenery & mascot ----
    Same layer classes as the Nepali art (orb / far / mid / near, clouds, stars)
    so the engine CSS — palette vars, cloud drift, star twinkle — applies as-is.
-   far = jungle treeline · mid = Angkor Wat quincunx skyline · near = rice
-   paddies with sugar palms. Mascot = baby elephant (ដំរី — taught in Zone 1!). */
+   far = jungle treeline · mid = rural stilt house + distant palms (secular
+   imagery only — no temples or religious symbols, per Ruan) · near = rice
+   paddies with a sugar palm. Mascot = baby elephant (ដំរី — taught in Zone 1!). */
 const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="orb" cx="930" cy="94" r="46"/>'
 +'<g class="hero-stars" aria-hidden="true"><circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="240" cy="104" r="1.2"/><circle cx="360" cy="46" r="2"/><circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="560" cy="70" r="1.6"/><circle cx="675" cy="40" r="1.3" class="tw" style="animation-delay:.6s"/><circle cx="785" cy="112" r="1.8"/><circle cx="870" cy="150" r="1.3"/><circle cx="1015" cy="62" r="1.6" class="tw" style="animation-delay:1.8s"/><circle cx="1085" cy="118" r="1.4"/><circle cx="1130" cy="44" r="1.2"/><circle cx="175" cy="138" r="1.5"/><circle cx="320" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/><circle cx="620" cy="134" r="1.5"/></g>'
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
@@ -610,13 +611,15 @@ const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* jungle treeline */
 +'<path class="far" d="M0 236 Q45 212 90 228 Q135 206 180 224 Q225 204 270 222 Q315 206 360 224 Q405 208 450 226 Q495 206 540 224 Q585 204 630 222 Q675 208 720 226 Q765 206 810 224 Q855 204 900 222 Q945 208 990 226 Q1035 206 1080 224 Q1125 208 1160 222 Q1180 214 1200 220 L1200 320 L0 320 Z"/>'
-/* Angkor Wat: stepped platform + five lotus-bud towers */
-+'<path class="mid" d="M320 320 L320 272 L380 272 L380 254 L860 254 L860 272 L920 272 L920 320 Z '
-+'M586 254 L586 224 L593 224 L593 196 L600 196 L600 168 L606 168 L606 142 L612 142 L616 122 L620 108 L624 122 L628 142 L634 142 L634 168 L640 168 L640 196 L647 196 L647 224 L654 224 L654 254 Z '
-+'M474 254 L474 228 L480 228 L480 204 L486 204 L486 182 L492 182 L496 166 L500 152 L504 166 L508 182 L514 182 L514 204 L520 204 L520 228 L526 228 L526 254 Z '
-+'M714 254 L714 228 L720 228 L720 204 L726 204 L726 182 L732 182 L736 166 L740 152 L744 166 L748 182 L754 182 L754 204 L760 204 L760 228 L766 228 L766 254 Z '
-+'M398 254 L398 232 L403 232 L403 214 L408 214 L412 202 L415 190 L418 202 L422 214 L427 214 L427 232 L432 232 L432 254 Z '
-+'M808 254 L808 232 L813 232 L813 214 L818 214 L822 202 L825 190 L828 202 L832 214 L837 214 L837 232 L842 232 L842 254 Z"/>'
+/* rural Cambodia: low fields, a stilt house & distant palms */
++'<path class="mid" d="M0 320 L0 284 Q300 270 600 280 Q900 290 1200 276 L1200 320 Z '
++'M598 282 L598 240 L606 240 L606 282 Z M646 284 L646 240 L654 240 L654 284 Z M694 284 L694 240 L702 240 L702 284 Z M742 282 L742 240 L750 240 L750 282 Z '
++'M586 244 L586 206 L762 206 L762 244 Z M566 212 L674 154 L782 212 Z '
++'M600 282 L620 246 L627 246 L607 282 Z '
++'M488 272 C490 248 488 226 491 202 L495 203 C493 226 496 248 494 273 Z '
++'M493 200 C480 192 466 190 455 194 C468 194 480 198 491 204 Z M493 200 C504 190 517 187 528 191 C517 192 505 197 495 204 Z M493 200 C487 186 478 179 467 177 C478 184 486 192 491 202 Z M493 200 C499 186 508 179 519 177 C508 184 499 192 494 202 Z M493 200 C493 184 489 173 481 167 C487 176 490 188 491 200 Z '
++'M524 268 C527 240 525 212 528 186 L532 187 C530 212 533 242 531 270 Z '
++'M529 184 C515 175 500 173 488 177 C502 177 515 181 527 188 Z M529 184 C541 173 555 170 567 174 C555 176 542 181 531 188 Z M529 184 C522 169 512 161 500 159 C512 167 521 175 527 186 Z M529 184 C536 169 546 161 558 159 C546 167 537 175 531 186 Z M529 184 C529 167 524 155 515 148 C522 158 526 171 527 184 Z"/>'
 /* rice paddies + sugar palms */
 +'<g class="near"><path d="M0 296 Q160 258 320 290 Q480 318 640 284 Q800 254 960 292 Q1080 312 1200 288 L1200 320 L0 320 Z"/>'
 +'<path d="M975 300 C981 260 977 220 983 186 L989 188 C985 222 991 260 987 302 Z"/>'
@@ -625,10 +628,12 @@ const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="
 +'</g>';
 const KM_BAND='<circle class="orb-glow" cx="1046" cy="54" r="36"/><circle class="orb" cx="1046" cy="54" r="21"/>'
 +'<path class="far" d="M0 148 Q60 128 120 142 Q180 124 240 140 Q300 122 360 138 Q420 124 480 140 Q540 124 600 138 Q660 124 720 140 Q780 124 840 138 Q900 124 960 140 Q1020 126 1080 140 Q1140 126 1200 140 L1200 200 L0 200 Z"/>'
-+'<path class="mid" d="M420 200 L420 168 L460 168 L460 156 L740 156 L740 168 L780 168 L780 200 Z '
-+'M560 156 L560 134 L566 134 L566 116 L572 116 L577 104 L582 94 L587 104 L592 116 L598 116 L598 134 L604 134 L604 156 Z '
-+'M488 156 L488 138 L493 138 L493 124 L498 124 L502 112 L506 124 L511 124 L511 138 L516 138 L516 156 Z '
-+'M648 156 L648 138 L653 138 L653 124 L658 124 L662 112 L666 124 L671 124 L671 138 L676 138 L676 156 Z"/>'
++'<path class="mid" d="M0 200 L0 174 Q300 164 600 172 Q900 180 1200 168 L1200 200 Z '
++'M576 172 L576 146 L582 146 L582 172 Z M608 174 L608 146 L614 146 L614 174 Z M640 174 L640 146 L646 146 L646 174 Z M672 172 L672 146 L678 146 L678 172 Z '
++'M568 148 L568 124 L686 124 L686 148 Z M554 128 L627 92 L700 128 Z '
++'M578 172 L592 150 L598 150 L584 172 Z '
++'M486 168 C489 146 487 128 490 110 L494 111 C492 128 495 148 493 170 Z '
++'M491 108 C478 100 464 98 453 102 C466 102 478 106 489 112 Z M491 108 C502 98 515 95 526 99 C515 100 503 105 493 112 Z M491 108 C485 94 476 87 465 85 C476 92 484 100 489 110 Z M491 108 C497 94 506 87 517 85 C506 92 497 100 492 110 Z M491 108 C491 92 487 81 479 75 C485 84 488 96 489 108 Z"/>'
 +'<g class="near"><path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>'
 +'<path d="M954 186 C958 162 956 142 960 124 L965 126 C962 144 966 166 964 188 Z"/>'
 +'<path d="M962 122 C946 112 930 110 916 116 C932 114 948 118 960 126 Z"/><path d="M962 122 C976 108 992 104 1006 110 C992 110 976 116 964 126 Z"/><path d="M962 122 C954 104 942 96 928 94 C942 102 952 110 960 124 Z"/><path d="M962 122 C970 104 982 96 996 94 C982 102 972 110 964 124 Z"/><path d="M962 122 C962 102 956 88 946 80 C954 92 958 106 960 122 Z"/>'

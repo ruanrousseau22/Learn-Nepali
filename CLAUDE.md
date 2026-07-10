@@ -56,9 +56,9 @@ innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
 render via `artMascot()` — never call `mascotSVG()` directly at new call
 sites. `applyArt()` also stamps `data-lang` on `<html>`, which drives the
 per-language scenery palette in CSS (`:root[data-lang="km"]` light + dark
-blocks next to the theme vars). Khmer art (Angkor Wat skyline, sugar palms,
-rice paddies, baby-elephant mascot) lives in `lang/km.js` (`KM_HERO`,
-`KM_BAND`, `KM_MASCOT`).
+blocks next to the theme vars). Khmer art (stilt house, sugar palms, rice
+paddies, baby-elephant mascot) lives in `lang/km.js` (`KM_HERO`, `KM_BAND`,
+`KM_MASCOT`). **Art must be secular** — see Design / content rules.
 
 **State & storage.** `S` is the merged working state the engine reads. On disk it
 splits: `sajilo_global` = global stats shared across languages (XP, streak, daily,
@@ -177,6 +177,11 @@ Decisions made (July 2026):
   scan `[ऀ-ॿ]` for Nepali, `[ក-៿]` for Khmer (each pack's `script` regex).
 - Sensitive topics (suicide/abuse/addiction) handled soberly as recognition vocab,
   framed by care — never gamified.
+- **No religious buildings or symbols in the artwork of ANY language** (Ruan:
+  Christian conviction — depicting temples is idolatry). Secular imagery only:
+  landscapes, nature, homes, daily life, animals. No temples/pagodas/stupas/
+  shrines/monks/prayer flags, however iconic (no Angkor Wat for Cambodia, no
+  stupas for Nepal, no rock churches for Amharic).
 
 ## Audio system
 Recorded MP3s first, device TTS fallback.
