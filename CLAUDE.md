@@ -7,16 +7,28 @@ Bhasaly (formerly Sajilo Nepali; भाषा bhasa = "language") is a **single-
 HTML** language-learning web app, faith-forward (Christian ministry context).
 Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one file.
 
-- **Live file in this repo: `index.html`** (keep this exact filename — Netlify serves
-  it as the site root. Drafts from chat may be named Sajilo_Nepali_V5.html; their
-  contents go into `index.html`).
+- **Live file in this repo: `index.html`** (keep this exact filename — Netlify
+  serves it as the site root).
 - Live at **bhasaly.com** (primary domain on Netlify; **sajilonepali.com**
   301-redirects to it and both are whitelisted in Supabase Auth).
 - **Netlify** auto-deploys on every push to this repo (1–2 min). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Multi-language expansion is underway — Khmer first.** Read the
-  "Multi-language expansion" section below before starting any work on it.
+- **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
+  in early access at 4 zones and growing zone by zone. Read the
+  "Multi-language expansion" section below before touching any of it.
+
+## Repo layout
+- `index.html` — the whole app + the inline Nepali pack
+- `lang/km.js` — Khmer pack (data, art, registerPack call)
+- `audio/` — Nepali recorded clips + `manifest.json` (its `audio_strings.json`
+  source was never committed — regenerate from the pack if Nepali audio ever
+  needs rebuilding)
+- `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
+- `generate_audio.py` — per-language edge-tts generator (see Audio)
+- `_redirects` — Netlify rules 301-ing sajilonepali.com → bhasaly.com
+- `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
+  `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
 ## Golden rules
 1. **Always work directly on `index.html`.** Edit it in place.
@@ -25,7 +37,9 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
    work must leave every shipped language pack provably untouched.
 3. **Validate before committing** (see Validation below). Never commit a build that
    fails `node --check` or the jsdom smoke test.
-4. **Regenerate `audio_strings.json` whenever spoken content changes** (see Audio).
+4. **Regenerate that language's audio strings file whenever spoken content
+   changes** (`audio_strings.json` / `audio_strings_km.json` — see Audio), then
+   run `generate_audio.py` for that language and commit the new clips + manifest.
 5. Keep the UI minimal and uncluttered. Faith-forward but never preachy in mechanics.
 
 ## Architecture
@@ -132,10 +146,22 @@ no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, 
 - CSS: `.section` must keep longhand top/bottom padding (shorthand kills `.wrap`'s
   side gutters on `wrap section` elements — this was a real mobile bug).
 
-## Multi-language expansion (NEXT UP: Khmer)
-Ruan is expanding beyond Nepali. Researched roadmap (demand vs competition) —
-Phase 1: Nepali (done), Amharic, Khmer · Phase 2: Burmese, Sinhala, Lao ·
-Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda. **Khmer is being built first.**
+## Multi-language expansion
+Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
+(early access live), Amharic (next new language) · Phase 2: Burmese, Sinhala,
+Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
+
+**Where things stand / next up:**
+- Khmer grows zone by zone (Zones 1–4 shipped; Zone 5 candidates: shopping &
+  bargaining, getting around, health & body — mirror the Nepali arc). Append to
+  `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add SYM entries, regen audio.
+- **Before dropping the "early access" label, a native Khmer speaker should
+  review Zones 2–4** (content was written against standard beginner material,
+  unreviewed by a native).
+- A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
+  (secular!) + audio dir + font added to the Devanagari font stacks if its
+  script needs one (the Khmer step is the template — see Step 3 below).
+- Keep sajilonepali.com registered — old links depend on the 301.
 
 Decisions made (July 2026):
 - **One app with a language switcher** — Learn path, Alphabet, and Review all
@@ -147,8 +173,8 @@ Decisions made (July 2026):
 - **Per-language progress** (storage key `sajilo_<code>`; Supabase progress rows
   gain a lang discriminator), **global streak/XP** across languages (Duolingo
   model). One-time migration: existing `sajilo` blob → `sajilo_ne`.
-- Khmer launch scope: **Zone 1 (script) + Zone 2 (foundations)** (~60–70 lessons),
-  labeled early access; grow zone by zone. **No Intensive track for Khmer** (that
+- Khmer launch scope was Zones 1–2, labeled early access, growing zone by zone
+  (now at 4 zones / 140 lessons). **No Intensive track for Khmer** (that
   curriculum is Nepal-ministry-specific).
 - Khmer content rules: two consonant series, subscript consonants (ជើង), no word
   spaces; **pick ONE romanization scheme and enforce it** (same rule as Nepali:
@@ -231,12 +257,19 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
    `fetch`, `matchMedia`, `HTMLMediaElement.play`. Note: top-level `const`s
    (`LESSONS`, `UNITS_INTENSIVE`, `audioKey`, etc.) are NOT on `window`; to inspect
    them, inject `window.__X = X` on a throwaway copy.
-3. Romanization scan: `[\u0900-\u097F]` must NOT appear in `vocab[1]` or `ex.r`.
-4. Integrity: answer indices in range; wb answers ⊆ pool; match pairs well-formed; no
-   duplicate options; every topic has exactly 5 lessons (exception: `li_wNtest`
-   nodes are single lessons with `ex:[]` — instead check the week's eligible
-   question pool holds ≥20 for `buildTestEx` to deal from).
-5. Confirm main course (63 nodes) untouched and intensive (60 nodes) all-Devanagari.
+3. Romanization scan per pack `script` regex: native script must NOT appear in
+   `vocab[1]` or `ex.r` (`[\u0900-\u097F]` Nepali, `[ក-៿]` Khmer).
+4. Integrity (run for the language you touched): answer indices in range; li
+   `o[a] === say` and no duplicate options; wb answers ⊆ pool AND pool bigger
+   than the answer (real distractors); match pairs well-formed, no dup keys or
+   values; every topic exactly 5 lessons in learn→recognize→build→mix→checkpoint
+   order; every learn-lesson id has a SYM entry (exception: `li_wNtest` nodes
+   are single lessons with `ex:[]` — instead check the week's eligible question
+   pool holds ≥20 for `buildTestEx` to deal from).
+5. Prove untouched languages untouched: evaluate each pack's data consts from
+   `git show HEAD:` vs working tree and hash-compare JSON per structure; plus
+   fresh-state DOM fingerprints (topic-row/cdot counts + innerHTML hash of
+   `#path-root`, `#path-root-intensive`, alphabet grids) before/after.
 6. Inline-handler safety: strings interpolated into `onclick` handlers (vocab `[0]`,
    `ex.d`, `ex.say`, match `pairs[i][0]`) must not contain `'`, `"`, `<`, `>`, or `\`
    — one apostrophe silently breaks that card's HTML.
@@ -247,6 +280,9 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 ## Git / deploy
 - Local repo: `~/Desktop/Learn-Nepali`. Push triggers Netlify redeploy.
 - `git push` password = GitHub **Personal Access Token** (not the account password).
-- The `audio/` folder must sit at the **top level** of the repo, next to the HTML.
+- The `audio/` and `audio-km/` folders must sit at the **top level** of the
+  repo, next to the HTML.
 - Verify after deploy: hard-refresh bhasaly.com; Settings → Pronunciation voice
-  should read "Using recorded Nepali audio"; tapping an alphabet letter plays the voice.
+  should read "Using recorded Nepali audio" (or "… Khmer audio" after switching
+  language); tapping an alphabet letter plays the voice; sajilonepali.com still
+  301s to bhasaly.com.
