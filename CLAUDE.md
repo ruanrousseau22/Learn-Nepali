@@ -81,10 +81,11 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
-(early access, `lang/km.js`) = 3 zones / 105 lessons / 21 topics, no Intensive
-(Zone 3 "Describe your world": to be ជា/គឺ, adjectives as stative verbs,
-មិន…ទេ negation + ទេ questions, colors, មាន have/there-is + ប៉ុន្មាន,
-want/need ចង់/ចង់បាន/ត្រូវការ, street small talk ទៅណា / eaten-yet).
+(early access, `lang/km.js`) = 4 zones / 140 lessons / 28 topics, no Intensive
+(Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
+colors, have, want/need, street small talk; Zone 4 "Daily life": core verbs +
+no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, family incl. the
+បង politeness note, routine, places with នៅ/ជិត/ឆ្ងាយ).
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
