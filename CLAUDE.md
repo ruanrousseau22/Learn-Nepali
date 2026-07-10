@@ -1,15 +1,18 @@
-# CLAUDE.md — Sajilo Nepali
+# CLAUDE.md — Bhasaly
 
 Guidance for working in this repo. Read this fully before making changes.
 
 ## What this is
-Sajilo Nepali is a **single-file HTML** Nepali-learning web app, faith-forward
-(Christian ministry context). Everything — HTML, CSS, and JS — lives in one file.
+Bhasaly (formerly Sajilo Nepali; भाषा bhasa = "language") is a **single-file
+HTML** language-learning web app, faith-forward (Christian ministry context).
+Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one file.
 
 - **Live file in this repo: `index.html`** (keep this exact filename — Netlify serves
   it as the site root. Drafts from chat may be named Sajilo_Nepali_V5.html; their
   contents go into `index.html`).
-- Live at **sajilonepali.com**.
+- Live at **sajilonepali.com** (domain migration to **bhasaly.com** pending —
+  in-app branding already says Bhasaly; og:url + the deploy checklist switch
+  once the new domain is connected in Netlify + Supabase).
 - **Netlify** auto-deploys on every push to this repo (1–2 min). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
@@ -44,8 +47,9 @@ has one entry, so shipping a language = add `{code,label}` + `lang/<code>.js`.
 `switchLang(code)` lazy-loads the pack script, saves the outgoing language,
 applies the pack, reloads state/audio-manifest/voices, calls `applyBranding()`
 (header glyph, hero h1 from `pack.brand`, hides the Intensive tab when
-`unitsIntensive` is empty) and rebuilds all views. Site name/branding stays
-"Sajilo Nepali" everywhere until Ruan picks the umbrella name.
+`unitsIntensive` is empty) and rebuilds all views. Umbrella name (July 2026): **Bhasaly** —
+title/meta/header/footer/favicon renamed; hero h1 stays per-language.
+**Storage keys stay `sajilo_*`** (renaming them would orphan user progress).
 
 **Per-language art (since July 2026).** Every language gets national scenery:
 the built-in SVGs are the Nepali art (Himalaya + yeti), captured once by
@@ -151,8 +155,10 @@ Decisions made (July 2026):
   `km-KH-PisethNeural` (male) / `km-KH-SreymomNeural` (female) for now; Ruan may
   record **native voices later** — keep the pipeline voice-agnostic (per-language
   audio dir + manifest, same FNV-1a hashing).
-- **Branding/domain deferred** — do NOT rename the site yet; sajilonepali.com
-  stays as-is until Ruan decides the umbrella name.
+- **Branding — DECIDED (July 2026): Bhasaly** (भाषा bhasa "language" + -ly).
+  In-app rename done. Domain: bhasaly.com to be connected in Netlify (keep
+  sajilonepali.com as a redirect) + added to Supabase Auth URL config, then
+  update og:url.
 - **Step 1 — DONE (July 2026): the language-pack refactor with Nepali provably
   untouched** — 63 main nodes + 60 topics + 12 tests all render identically, full
   validation green (see Architecture → Language packs). Golden rule 2 is now:

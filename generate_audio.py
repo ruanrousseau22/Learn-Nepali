@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate recorded audio for Sajilo language packs via edge-tts.
+"""Generate recorded audio for Bhasaly language packs via edge-tts.
 
 Reads the language's strings file (a JSON array of native-script strings),
 synthesizes each with Microsoft edge-tts, and writes <outdir>/<fnv1a-8hex>.mp3
