@@ -598,6 +598,48 @@ const KM_LESSONS=[
 {t:'mc',q:'អរគុណ — you finished the Khmer early access! More zones are…',o:['on the way','finished','cancelled','imaginary'],a:0}]},
 ];
 
+/* ---- Cambodian scenery & mascot ----
+   Same layer classes as the Nepali art (orb / far / mid / near, clouds, stars)
+   so the engine CSS — palette vars, cloud drift, star twinkle — applies as-is.
+   far = jungle treeline · mid = Angkor Wat quincunx skyline · near = rice
+   paddies with sugar palms. Mascot = baby elephant (ដំរី — taught in Zone 1!). */
+const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="orb" cx="930" cy="94" r="46"/>'
++'<g class="hero-stars" aria-hidden="true"><circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="240" cy="104" r="1.2"/><circle cx="360" cy="46" r="2"/><circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="560" cy="70" r="1.6"/><circle cx="675" cy="40" r="1.3" class="tw" style="animation-delay:.6s"/><circle cx="785" cy="112" r="1.8"/><circle cx="870" cy="150" r="1.3"/><circle cx="1015" cy="62" r="1.6" class="tw" style="animation-delay:1.8s"/><circle cx="1085" cy="118" r="1.4"/><circle cx="1130" cy="44" r="1.2"/><circle cx="175" cy="138" r="1.5"/><circle cx="320" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/><circle cx="620" cy="134" r="1.5"/></g>'
++'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
++'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>'
++'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
+/* jungle treeline */
++'<path class="far" d="M0 236 Q45 212 90 228 Q135 206 180 224 Q225 204 270 222 Q315 206 360 224 Q405 208 450 226 Q495 206 540 224 Q585 204 630 222 Q675 208 720 226 Q765 206 810 224 Q855 204 900 222 Q945 208 990 226 Q1035 206 1080 224 Q1125 208 1160 222 Q1180 214 1200 220 L1200 320 L0 320 Z"/>'
+/* Angkor Wat: stepped platform + five lotus-bud towers */
++'<path class="mid" d="M320 320 L320 272 L380 272 L380 254 L860 254 L860 272 L920 272 L920 320 Z '
++'M586 254 L586 224 L593 224 L593 196 L600 196 L600 168 L606 168 L606 142 L612 142 L616 122 L620 108 L624 122 L628 142 L634 142 L634 168 L640 168 L640 196 L647 196 L647 224 L654 224 L654 254 Z '
++'M474 254 L474 228 L480 228 L480 204 L486 204 L486 182 L492 182 L496 166 L500 152 L504 166 L508 182 L514 182 L514 204 L520 204 L520 228 L526 228 L526 254 Z '
++'M714 254 L714 228 L720 228 L720 204 L726 204 L726 182 L732 182 L736 166 L740 152 L744 166 L748 182 L754 182 L754 204 L760 204 L760 228 L766 228 L766 254 Z '
++'M398 254 L398 232 L403 232 L403 214 L408 214 L412 202 L415 190 L418 202 L422 214 L427 214 L427 232 L432 232 L432 254 Z '
++'M808 254 L808 232 L813 232 L813 214 L818 214 L822 202 L825 190 L828 202 L832 214 L837 214 L837 232 L842 232 L842 254 Z"/>'
+/* rice paddies + sugar palms */
++'<g class="near"><path d="M0 296 Q160 258 320 290 Q480 318 640 284 Q800 254 960 292 Q1080 312 1200 288 L1200 320 L0 320 Z"/>'
++'<path d="M975 300 C981 260 977 220 983 186 L989 188 C985 222 991 260 987 302 Z"/>'
++'<path d="M986 184 C963 170 939 168 919 176 C941 174 965 180 984 190 Z"/><path d="M986 184 C1005 166 1029 162 1051 170 C1031 170 1007 178 989 190 Z"/><path d="M986 184 C975 162 957 150 935 148 C957 156 973 168 983 188 Z"/><path d="M986 184 C997 160 1015 148 1039 146 C1017 154 999 168 990 188 Z"/><path d="M986 184 C985 158 977 138 961 128 C973 142 981 162 984 186 Z"/><path d="M986 184 C993 158 1003 140 1021 130 C1007 144 995 164 989 187 Z"/><path d="M986 184 C959 184 937 192 923 208 C945 198 967 192 985 190 Z"/><path d="M987 184 C1013 186 1035 194 1047 210 C1027 198 1005 192 988 190 Z"/>'
++'<circle cx="981" cy="188" r="3"/><circle cx="992" cy="188" r="3"/><circle cx="986" cy="193" r="3"/>'
++'</g>';
+const KM_BAND='<circle class="orb-glow" cx="1046" cy="54" r="36"/><circle class="orb" cx="1046" cy="54" r="21"/>'
++'<path class="far" d="M0 148 Q60 128 120 142 Q180 124 240 140 Q300 122 360 138 Q420 124 480 140 Q540 124 600 138 Q660 124 720 140 Q780 124 840 138 Q900 124 960 140 Q1020 126 1080 140 Q1140 126 1200 140 L1200 200 L0 200 Z"/>'
++'<path class="mid" d="M420 200 L420 168 L460 168 L460 156 L740 156 L740 168 L780 168 L780 200 Z '
++'M560 156 L560 134 L566 134 L566 116 L572 116 L577 104 L582 94 L587 104 L592 116 L598 116 L598 134 L604 134 L604 156 Z '
++'M488 156 L488 138 L493 138 L493 124 L498 124 L502 112 L506 124 L511 124 L511 138 L516 138 L516 156 Z '
++'M648 156 L648 138 L653 138 L653 124 L658 124 L662 112 L666 124 L671 124 L671 138 L676 138 L676 156 Z"/>'
++'<g class="near"><path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>'
++'<path d="M954 186 C958 162 956 142 960 124 L965 126 C962 144 966 166 964 188 Z"/>'
++'<path d="M962 122 C946 112 930 110 916 116 C932 114 948 118 960 126 Z"/><path d="M962 122 C976 108 992 104 1006 110 C992 110 976 116 964 126 Z"/><path d="M962 122 C954 104 942 96 928 94 C942 102 952 110 960 124 Z"/><path d="M962 122 C970 104 982 96 996 94 C982 102 972 110 964 124 Z"/><path d="M962 122 C962 102 956 88 946 80 C954 92 958 106 960 122 Z"/>'
++'</g>';
+function KM_MASCOT(m){var base='<ellipse cx="11" cy="30" rx="10" ry="12" fill="#9FB9D0"/><ellipse cx="53" cy="30" rx="10" ry="12" fill="#9FB9D0"/><ellipse cx="12" cy="30" rx="5.5" ry="7.5" fill="#C9D9E8"/><ellipse cx="52" cy="30" rx="5.5" ry="7.5" fill="#C9D9E8"/><circle cx="32" cy="32" r="20" fill="#B7CBDD"/><circle cx="20" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="44" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><path d="M25.5 46 Q23.5 50 25.8 52.5 Q27 49.5 27 46.5 Z" fill="#F6F9FC"/><path d="M38.5 46 Q40.5 50 38.2 52.5 Q37 49.5 37 46.5 Z" fill="#F6F9FC"/>';
+  var f;
+  if(m==='cheer')f='<path d="M22 31 Q25 27.5 28 31" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><path d="M36 31 Q39 27.5 42 31" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/><circle cx="19.5" cy="40.5" r="3.4" fill="var(--crimson)" opacity="0.22"/><circle cx="44.5" cy="40.5" r="3.4" fill="var(--crimson)" opacity="0.22"/><path d="M32 37 C32 43 36 46.5 41.5 45.5 C38.5 50 30.5 49 28.5 42.5 L28.5 37 Z" fill="#A9BFD3"/><circle cx="41.8" cy="44.6" r="1.7" fill="#A9BFD3"/>';
+  else if(m==='oops')f='<path d="M21.5 28.5 Q25 27 28.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.5" stroke-linecap="round"/><path d="M35.5 28.5 Q39 27 42.5 28.5" fill="none" stroke="#2f2a24" stroke-width="1.5" stroke-linecap="round"/><circle cx="25" cy="33" r="2.5" fill="#2f2a24"/><circle cx="39" cy="33" r="2.5" fill="#2f2a24"/><path d="M32 38 C32 45 31.5 50 28.5 53.5 C33.5 53 35.5 48.5 35.5 42.5 L35.5 38 Z" fill="#A9BFD3"/><path d="M50 22 Q52.5 27 50 29 Q47.5 27 50 22 Z" fill="#7EC8E3" opacity=".85"/>';
+  else f='<circle cx="25" cy="32" r="2.6" fill="#2f2a24"/><circle cx="39" cy="32" r="2.6" fill="#2f2a24"/><circle cx="25.9" cy="31.1" r="0.7" fill="#fff"/><circle cx="39.9" cy="31.1" r="0.7" fill="#fff"/><path d="M32 38 C32 45 30 49.5 25.5 51.5 C30.5 52 34.5 48.5 35 42.5 L35 38 Z" fill="#A9BFD3"/><circle cx="25.9" cy="51" r="1.6" fill="#A9BFD3"/>';
+  return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
+
 /* register the pack — the engine picks it up via switchLang('km') */
 registerPack({
   code:'km',
@@ -609,6 +651,7 @@ registerPack({
   storageKey:'sajilo_km',
   brand:{glyph:'ខ',h1:'Learn <em>Khmer</em>'},
   alpha:{native:'អក្សរខ្មែរ',vowels:'ស្រៈ',cons:'ព្យញ្ជនៈ',nums:'លេខ'},
+  art:{hero:KM_HERO,band:KM_BAND,mascot:KM_MASCOT},
   voiceTest:v=>/^km(\b|[-_])/i.test(v.lang)||/khmer/i.test(v.name),
   fbVoiceTest:v=>false,
   fbVoiceName:'',

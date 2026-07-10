@@ -47,6 +47,19 @@ applies the pack, reloads state/audio-manifest/voices, calls `applyBranding()`
 `unitsIntensive` is empty) and rebuilds all views. Site name/branding stays
 "Sajilo Nepali" everywhere until Ruan picks the umbrella name.
 
+**Per-language art (since July 2026).** Every language gets national scenery:
+the built-in SVGs are the Nepali art (Himalaya + yeti), captured once by
+`applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
+innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
+`orb/far/mid/near` + cloud/star groups so engine CSS animates them) and a
+`mascot(mood)` function (moods `happy/cheer/oops`, 64×64 viewBox). Mascots
+render via `artMascot()` — never call `mascotSVG()` directly at new call
+sites. `applyArt()` also stamps `data-lang` on `<html>`, which drives the
+per-language scenery palette in CSS (`:root[data-lang="km"]` light + dark
+blocks next to the theme vars). Khmer art (Angkor Wat skyline, sugar palms,
+rice paddies, baby-elephant mascot) lives in `lang/km.js` (`KM_HERO`,
+`KM_BAND`, `KM_MASCOT`).
+
 **State & storage.** `S` is the merged working state the engine reads. On disk it
 splits: `sajilo_global` = global stats shared across languages (XP, streak, daily,
 total/correct — Duolingo model) + device prefs (theme/rom/voice/sound/autoNext,

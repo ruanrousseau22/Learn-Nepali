@@ -31,6 +31,10 @@
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
   --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
 }
+/* per-language scenery palette (set via data-lang by applyArt) —
+   Cambodia: golden dawn sky, jungle haze, Angkor stone, paddy green */
+:root[data-lang="km"]{--sky1:#F7E3C2;--sky2:#FBF3E4;--mtn-far:#CBAF83;--mtn-mid:#7E6553;--mtn-near:#2F8E5B;--orb:#F2A93B}
+:root[data-theme="dark"][data-lang="km"]{--sky1:#241E33;--sky2:#141119;--mtn-far:#39304E;--mtn-mid:#4A3B31;--mtn-near:#1B5038;--orb:#E9DFC8}
 *{box-sizing:border-box;margin:0;padding:0}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 html{scroll-behavior:smooth}
@@ -8399,7 +8403,20 @@ function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
   const it=document.querySelector('.tab[data-v="intensive"]');if(it)it.style.display=UNITS_INTENSIVE.length?'':'none';
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};
   set('alpha-native',al.native);set('pdeva-vowels',al.vowels);set('pdeva-consonants',al.cons);set('pdeva-numerals',al.nums);
-  paintLangPicker();}
+  applyArt();paintLangPicker();}
+/* per-language scenery: the built-in SVGs are the Nepali art (captured once as
+   the default); a pack overrides them via art:{hero,band,mascot}. The data-lang
+   attribute drives the per-language color palette in CSS. */
+let ART_DEFAULT=null;
+function artMascot(m){return (LANG.art&&LANG.art.mascot)?LANG.art.mascot(m):mascotSVG(m);}
+function applyArt(){
+  const hero=document.querySelector('.hero-mtns'),bands=document.querySelectorAll('.pb-mtns');
+  if(!ART_DEFAULT)ART_DEFAULT={hero:hero?hero.innerHTML:'',bands:[...bands].map(p=>p.innerHTML)};
+  const a=LANG.art||{};
+  if(hero)hero.innerHTML=a.hero||ART_DEFAULT.hero;
+  bands.forEach((p,i)=>{p.innerHTML=a.band||ART_DEFAULT.bands[i];});
+  document.documentElement.setAttribute('data-lang',LANG.code);
+  const hm=document.getElementById('home-mascot');if(hm)hm.innerHTML=artMascot('happy');}
 function paintLangPicker(){const row=document.getElementById('lang-row');if(!row)return;
   row.style.display=LANG_CATALOG.length>1?'':'none';
   const sel=document.getElementById('lang-select');if(!sel)return;sel.innerHTML='';
@@ -8427,12 +8444,12 @@ function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';c
         const sub=complete?(isTest?'Passed ✓':'Done ✓'):locked?'Locked':isTest?'Take the test →':(doneN>0?doneN+'/'+total+' · Continue →':'Start →');
         const lab=document.createElement('div');lab.className='peak-label'+(complete?' done':isNext?' next':locked?' locked':'');lab.innerHTML=grp[0].title+'<span class=\"sub\">'+sub+'</span>';pw.appendChild(lab);
         if(!isTest){const seg=document.createElement('div');seg.className='cseg';seg.innerHTML=grp.map(x=>'<span class=\"cdot'+(doneSet.has(x.id)?' on':'')+'\"></span>').join('');pw.appendChild(seg);}
-        if(isNext){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('happy');pw.appendChild(y);}
+        if(isNext){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=artMascot('happy');pw.appendChild(y);}
         tinner.appendChild(pw);lastPw=pw;});
       /* tests are optional: the next unit unlocks off the last core lesson, not the test */
       prevId=[...u.lessons].reverse().find(id=>{const ll=lessonById(id);return !ll||ll.step!=='test';});
     zone.appendChild(trail);root.appendChild(zone);});
-  if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=mascotSVG('cheer');lastPw.appendChild(y);const pr=lastPw.closest('.topic-row');if(pr)pr.classList.add('has-next');}}
+  if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=artMascot('cheer');lastPw.appendChild(y);const pr=lastPw.closest('.topic-row');if(pr)pr.classList.add('has-next');}}
 
 let curL=0,curE=0;
 let curTrack='home';
@@ -8544,7 +8561,7 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
   try{if(S.sound&&navigator.vibrate)navigator.vibrate(ok?12:[45,60,45]);}catch(e){}
   phase='checked';const last=curE+1>=exQ.length;
   document.getElementById('actionbar').classList.add('checked',ok?'correct':'wrong');
-  document.getElementById('ab-fb').innerHTML='<div class="mascot mascot-pop">'+mascotSVG(ok?'cheer':'oops')+'</div><div class="fbtext"><div class="fbtitle">'+(ok?'Nailed it!':'Not quite')+'</div><div class="fbans">'+fbHtml+'</div></div>';
+  document.getElementById('ab-fb').innerHTML='<div class="mascot mascot-pop">'+artMascot(ok?'cheer':'oops')+'</div><div class="fbtext"><div class="fbtitle">'+(ok?'Nailed it!':'Not quite')+'</div><div class="fbans">'+fbHtml+'</div></div>';
   const btn=document.getElementById('ab-btn');btn.disabled=false;btn.textContent=last?'Finish':'Continue';
   save();if(ok&&S.autoNext!==false)setTimeout(()=>{if(phase==='checked')advance();},1050);}
 function animateOut(cb){const c=document.getElementById('ex-card');c.classList.remove('q-in');c.classList.add('q-out');setTimeout(cb,180);}
@@ -8706,8 +8723,7 @@ function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, l
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
-document.getElementById('home-mascot').innerHTML=mascotSVG('happy');
-applyBranding();buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
+applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
 if(S.lang&&S.lang!==LANG.code)switchLang(S.lang); /* resume the language chosen last session */
 </script>
 </body>
