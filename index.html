@@ -6,7 +6,7 @@
 <title>Bhasaly — Learn Nepali, Khmer & more</title>
 <meta name="description" content="Learn Nepali, Khmer & more the easy way — read the script, build real sentences, and practice with recorded audio. Free.">
 <meta name="theme-color" content="#C2362E">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C2362E'/%3E%3Ctext x='32' y='45' font-size='32' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E%E0%A4%AD%E0%A4%BE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2EEE3'/%3E%3Cpath fill='%232C5F3A' d='M32 8 L44 24 L38.5 24 L50 38 L43 38 L54 52 L35.5 52 L35.5 57 L28.5 57 L28.5 52 L10 52 L21 38 L14 38 L25.5 24 L20 24 Z'/%3E%3C/svg%3E">
 <meta property="og:title" content="Bhasaly — Learn Nepali, Khmer & more">
 <meta property="og:description" content="Read the script, build real sentences, and practice with recorded audio. Free.">
 <meta property="og:url" content="https://sajilonepali.com/">
@@ -22,6 +22,7 @@
   --teal:#0F8C74; --teal-soft:#CFEEE6; --line:rgba(27,36,48,0.10); --line-soft:rgba(27,36,48,0.055);
   --good:#0F8C74; --bad:#C2362E; --card:#FFFFFF;
   --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#A7C4DD; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --snow:#FFFFFF; --orb:#F6D98F;
+  --tree:#2C5F3A;
   --r-sm:8px; --r-md:14px; --r-lg:20px; --shadow:0 1px 2px rgba(27,36,48,0.05), 0 10px 26px -16px rgba(20,40,80,0.30);
 }
 [data-theme="dark"]{
@@ -30,6 +31,7 @@
   --teal:#5FC6B0; --teal-soft:#15302B; --line:rgba(233,240,247,0.12); --line-soft:rgba(233,240,247,0.06);
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
   --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
+  --tree:#4FA06A;
 }
 /* per-language scenery palette (set via data-lang by applyArt) —
    Cambodia: golden dawn sky, jungle haze, Angkor stone, paddy green */
@@ -47,7 +49,8 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--paper
 header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--ink);text-decoration:none;white-space:nowrap}
-.logo .mark{width:32px;height:32px;border-radius:9px;background:var(--crimson);color:#fff;display:grid;place-items:center;font-family:'Noto Sans Devanagari','Noto Sans Khmer';font-size:17px;font-weight:600}
+.logo .mark{width:32px;height:32px;display:grid;place-items:center}
+.logo .mark svg{width:100%;height:100%;fill:var(--tree)}
 nav.tabs{display:flex;gap:2px;margin-left:auto}
 .tab{font-size:14px;font-weight:600;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:8px 14px;border-radius:100px;transition:.15s}
 .tab:hover{color:var(--ink)}
@@ -578,7 +581,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   /* --- header: stop the right-side cluster from crowding the logo --- */
   .bar{height:56px;gap:10px}
   .logo{font-size:16px;gap:8px}
-  .logo .mark{width:28px;height:28px;font-size:15px;border-radius:8px}
+  .logo .mark{width:28px;height:28px}
   .iconbtn{height:33px;min-width:33px;padding:0 10px;font-size:12.5px;white-space:nowrap}
   .levelwrap{padding:3px 4px;gap:6px}
   .lvl-badge{width:30px;height:30px;font-size:13px}
@@ -743,7 +746,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#" onclick="show('home');return false"><span class="mark deva">ने</span> Bhasaly</a>
+    <a class="logo" href="#" onclick="show('home');return false"><span class="mark" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/></svg></span> Bhasaly</a>
     <nav class="tabs" id="tabs">
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
@@ -8357,7 +8360,7 @@ registerPack({
   script:/[\u0900-\u097F]/, /* native-script char range: audio collection + script detection */
   audioBase:'audio/',
   storageKey:'sajilo_ne',
-  brand:{glyph:'ने',h1:'Learn <em>Nepali</em>'},
+  brand:{h1:'Learn <em>Nepali</em>'},
   alpha:{native:'देवनागरी',vowels:'स्वर',cons:'व्यञ्जन',nums:'अंक'},
   voiceTest:v=>/^ne(\b|[-_])/i.test(v.lang)||/nepali/i.test(v.name),
   fbVoiceTest:v=>/^hi(\b|[-_])/i.test(v.lang)||/hindi/i.test(v.name),
@@ -8398,7 +8401,7 @@ async function switchLang(code){
   show('home');}
 /* everything language-flavored outside the path/alphabet data */
 function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
-  const mk=document.querySelector('.logo .mark');if(mk&&b.glyph)mk.textContent=b.glyph;
+  /* header mark is the fixed Bhasaly tree — packs no longer brand it */
   const h=document.querySelector('.hero-text h1');if(h&&b.h1)h.innerHTML=b.h1;
   const it=document.querySelector('.tab[data-v="intensive"]');if(it)it.style.display=UNITS_INTENSIVE.length?'':'none';
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};

@@ -46,8 +46,9 @@ lists offered languages; the Settings "Course language" row auto-hides while it
 has one entry, so shipping a language = add `{code,label}` + `lang/<code>.js`.
 `switchLang(code)` lazy-loads the pack script, saves the outgoing language,
 applies the pack, reloads state/audio-manifest/voices, calls `applyBranding()`
-(header glyph, hero h1 from `pack.brand`, hides the Intensive tab when
-`unitsIntensive` is empty) and rebuilds all views. Umbrella name (July 2026): **Bhasaly** —
+(hero h1 from `pack.brand`, hides the Intensive tab when `unitsIntensive` is
+empty) and rebuilds all views. The header mark is the fixed Bhasaly tree
+(inline SVG, color `--tree` with a dark-mode variant) — packs do not brand it. Umbrella name (July 2026): **Bhasaly** —
 title/meta/header/footer/favicon renamed; hero h1 stays per-language.
 **Storage keys stay `sajilo_*`** (renaming them would orphan user progress).
 
