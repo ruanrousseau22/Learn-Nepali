@@ -100,14 +100,19 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
-(early access, `lang/km.js`) = 5 zones / 175 lessons / 35 topics, no Intensive
+(early access, `lang/km.js`) = 6 zones / 210 lessons / 42 topics, no Intensive
 (Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
 colors, have, want/need, street small talk; Zone 4 "Daily life": core verbs +
 no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, family incl. the
 បង politeness note, routine, places with នៅ/ជិត/ឆ្ងាយ; Zone 5 "Out & about":
 money/riel-vs-dollars/thousands ពាន់, shopping & bargaining ចុះថ្លៃ, transport
 with ជិះ + fare-first note, directions ឆ្វេង/ស្តាំ/ត្រង់, weather & the two
-seasons, body parts, health via the ឈឺ + body-part pattern).
+seasons, body parts, health via the ឈឺ + body-part pattern; Zone 6 "Connect &
+converse": past with បាន + មិនបាន…ទេ, the អាច…បាន can-sandwich vs ចេះ,
+question words នរណា/ពេលណា/ហេតុអ្វី/ម៉េច + ម៉េចដែរ, feelings in ចិត្ត
+(សប្បាយចិត្ត/ពិបាកចិត្ត/ខឹង/ខ្លាច/នឹក/ស្រឡាញ់), connectors
+ប៉ុន្តែ/ព្រោះ/បើ, comparisons ជាង/ជាងគេ/ដូចគ្នា, opinions គិតថា +
+ប្រហែល/ពិត/មែនទេ/មែនហើយ).
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
@@ -155,12 +160,13 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- Khmer grows zone by zone (Zones 1–5 shipped; Zone 6 candidates: past tense
-  in practice / បាន, connectors, comparisons, opinions — mirror the Nepali
-  "Connect & converse" / "Sound like a local" arc). Append to
-  `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add SYM entries, regen audio.
+- Khmer grows zone by zone (Zones 1–6 shipped; Zone 7 candidates: politeness
+  registers & requests (បាទ/ចាស in practice, សូម patterns), ធ្លាប់ ever /
+  used to, dates & months, occupations — finish mirroring the Nepali "Sound
+  like a local" arc). Append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add
+  SYM entries, regen audio.
 - **Before dropping the "early access" label, a native Khmer speaker should
-  review Zones 2–5** (content was written against standard beginner material,
+  review Zones 2–6** (content was written against standard beginner material,
   unreviewed by a native).
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
