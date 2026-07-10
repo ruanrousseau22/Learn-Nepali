@@ -10,9 +10,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - **Live file in this repo: `index.html`** (keep this exact filename — Netlify serves
   it as the site root. Drafts from chat may be named Sajilo_Nepali_V5.html; their
   contents go into `index.html`).
-- Live at **sajilonepali.com** (domain migration to **bhasaly.com** pending —
-  in-app branding already says Bhasaly; og:url + the deploy checklist switch
-  once the new domain is connected in Netlify + Supabase).
+- Live at **bhasaly.com** (primary domain on Netlify; **sajilonepali.com**
+  301-redirects to it and both are whitelisted in Supabase Auth).
 - **Netlify** auto-deploys on every push to this repo (1–2 min). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
@@ -156,10 +155,10 @@ Decisions made (July 2026):
   `km-KH-PisethNeural` (male) / `km-KH-SreymomNeural` (female) for now; Ruan may
   record **native voices later** — keep the pipeline voice-agnostic (per-language
   audio dir + manifest, same FNV-1a hashing).
-- **Branding — DECIDED (July 2026): Bhasaly** (भाषा bhasa "language" + -ly).
-  In-app rename done. Domain: bhasaly.com to be connected in Netlify (keep
-  sajilonepali.com as a redirect) + added to Supabase Auth URL config, then
-  update og:url.
+- **Branding — DONE (July 2026): Bhasaly** (भाषा bhasa "language" + -ly).
+  In-app rename, tree logo, bhasaly.com primary on Netlify DNS (sajilonepali.com
+  kept as a 301 redirect — do not let it lapse), Supabase Site URL + redirect
+  allowlist updated, og:url points at bhasaly.com.
 - **Step 1 — DONE (July 2026): the language-pack refactor with Nepali provably
   untouched** — 63 main nodes + 60 topics + 12 tests all render identically, full
   validation green (see Architecture → Language packs). Golden rule 2 is now:
@@ -248,5 +247,5 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 - Local repo: `~/Desktop/Learn-Nepali`. Push triggers Netlify redeploy.
 - `git push` password = GitHub **Personal Access Token** (not the account password).
 - The `audio/` folder must sit at the **top level** of the repo, next to the HTML.
-- Verify after deploy: hard-refresh sajilonepali.com; Settings → Pronunciation voice
+- Verify after deploy: hard-refresh bhasaly.com; Settings → Pronunciation voice
   should read "Using recorded Nepali audio"; tapping an alphabet letter plays the voice.
