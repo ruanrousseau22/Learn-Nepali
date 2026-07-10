@@ -52,7 +52,8 @@ title/meta/header/footer/favicon renamed; hero h1 stays per-language.
 **Storage keys stay `sajilo_*`** (renaming them would orphan user progress).
 
 **Per-language art (since July 2026).** Every language gets national scenery:
-the built-in SVGs are the Nepali art (Himalaya + yeti), captured once by
+the built-in SVGs are the Nepali art (snow-capped Himalaya, terraced
+hillsides, village house, valley pine + yeti), captured once by
 `applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
 innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
 `orb/far/mid/near` + cloud/star groups so engine CSS animates them) and a
