@@ -1,0 +1,5 @@
+# Old domain → Bhasaly (301s preserve old links & bookmarks)
+https://sajilonepali.com/* https://bhasaly.com/:splat 301!
+https://www.sajilonepali.com/* https://bhasaly.com/:splat 301!
+http://sajilonepali.com/* https://bhasaly.com/:splat 301!
+http://www.sajilonepali.com/* https://bhasaly.com/:splat 301!
