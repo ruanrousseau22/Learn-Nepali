@@ -100,11 +100,14 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
-(early access, `lang/km.js`) = 4 zones / 140 lessons / 28 topics, no Intensive
+(early access, `lang/km.js`) = 5 zones / 175 lessons / 35 topics, no Intensive
 (Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
 colors, have, want/need, street small talk; Zone 4 "Daily life": core verbs +
 no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, family incl. the
-បង politeness note, routine, places with នៅ/ជិត/ឆ្ងាយ).
+បង politeness note, routine, places with នៅ/ជិត/ឆ្ងាយ; Zone 5 "Out & about":
+money/riel-vs-dollars/thousands ពាន់, shopping & bargaining ចុះថ្លៃ, transport
+with ជិះ + fare-first note, directions ឆ្វេង/ស្តាំ/ត្រង់, weather & the two
+seasons, body parts, health via the ឈឺ + body-part pattern).
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
@@ -152,11 +155,12 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- Khmer grows zone by zone (Zones 1–4 shipped; Zone 5 candidates: shopping &
-  bargaining, getting around, health & body — mirror the Nepali arc). Append to
+- Khmer grows zone by zone (Zones 1–5 shipped; Zone 6 candidates: past tense
+  in practice / បាន, connectors, comparisons, opinions — mirror the Nepali
+  "Connect & converse" / "Sound like a local" arc). Append to
   `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add SYM entries, regen audio.
 - **Before dropping the "early access" label, a native Khmer speaker should
-  review Zones 2–4** (content was written against standard beginner material,
+  review Zones 2–5** (content was written against standard beginner material,
   unreviewed by a native).
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
@@ -174,7 +178,7 @@ Decisions made (July 2026):
   gain a lang discriminator), **global streak/XP** across languages (Duolingo
   model). One-time migration: existing `sajilo` blob → `sajilo_ne`.
 - Khmer launch scope was Zones 1–2, labeled early access, growing zone by zone
-  (now at 4 zones / 140 lessons). **No Intensive track for Khmer** (that
+  (now at 5 zones / 175 lessons). **No Intensive track for Khmer** (that
   curriculum is Nepal-ministry-specific).
 - Khmer content rules: two consonant series, subscript consonants (ជើង), no word
   spaces; **pick ONE romanization scheme and enforce it** (same rule as Nepali:
@@ -208,6 +212,12 @@ Decisions made (July 2026):
   here — next zones append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`.
 
 ## Design / content rules
+- **Course content is secular language learning** (Ruan, July 2026): every
+  language course — Nepali main, Khmer, future languages — teaches the language
+  in the best, most efficient way with everyday secular content, NO ministry or
+  Christian material. The ONE exception is the Nepali **Language Intensive**
+  track, which is ministry-centered by design (built for Ruan's community);
+  that is also why no other language gets an Intensive.
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
 - Teach-before-test. Colloquial Nepali (मेरो for all possessives).
 - **Romanization fields contain NO native script** (`vocab[i][1]` and `ex.r`):
