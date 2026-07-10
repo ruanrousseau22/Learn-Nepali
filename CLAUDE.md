@@ -66,8 +66,9 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
   each topic's *learn-lesson id* — NOT the lesson `emoji` field (which is unused in
   rendering). Both tracks use Devanagari node symbols (no emoji on nodes).
 
-Current size: main course = 10 zones / 315 lessons / 63 topics. Language Intensive =
-12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics.
+Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
+Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
+(early access, `lang/km.js`) = 2 zones / 70 lessons / 14 topics, no Intensive.
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
@@ -144,16 +145,23 @@ Decisions made (July 2026):
   in `sajilo_global`, cloud payload v2 with per-language blobs (v1 rows still
   merge), audio manifest + voices reload on switch, pack-driven branding, Settings
   picker hidden until `LANG_CATALOG` has ≥2 entries (see Architecture → Language
-  switcher / State & storage). **Step 3 — NEXT: the Khmer pack itself**
-  (`lang/km.js` + catalog entry): Zone 1 script + Zone 2 foundations, `km-KH`
-  audio in `audio-km/` (needs `generate_audio.py --lang` support + per-language
-  manifest), and per-language Alphabet-view chrome (headings/YouTube links are
-  still Nepali-static HTML).
+  switcher / State & storage).
+- **Step 3 — DONE (July 2026): Khmer early access** — `lang/km.js` (2 zones /
+  70 lessons / 14 topics: script incl. two series + subscripts, then greetings,
+  pronouns, numbers to 100, courtesy, introductions, time words), catalog entry
+  "Khmer — ខ្មែរ · early access", pack-driven alphabet labels (`pack.alpha` →
+  `#alpha-native`, `#pdeva-*`), Noto Sans Khmer appended to every Devanagari
+  font stack (Google Fonts serves it only when Khmer glyphs render), Khmer
+  romanization scheme documented at the top of `lang/km.js` (ASCII only;
+  aspirates kh/chh/th/ph; consonant names carry their series vowel), audio via
+  `generate_audio.py --lang km` → `audio-km/`. Khmer grows zone by zone from
+  here — next zones append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`.
 
 ## Design / content rules
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
 - Teach-before-test. Colloquial Nepali (मेरो for all possessives).
-- **Romanization fields contain NO Devanagari** (`vocab[i][1]` and `ex.r`).
+- **Romanization fields contain NO native script** (`vocab[i][1]` and `ex.r`):
+  scan `[ऀ-ॿ]` for Nepali, `[ក-៿]` for Khmer (each pack's `script` regex).
 - Sensitive topics (suicide/abuse/addiction) handled soberly as recognition vocab,
   framed by care — never gamified.
 
@@ -170,18 +178,21 @@ Recorded MP3s first, device TTS fallback.
   reuse already-recorded content anyway.
 
 ### Regenerating audio
-`generate_audio.py` reads `audio_strings.json`, synthesizes with edge-tts, writes
-`audio/<hash>.mp3` + `manifest.json`. **Defaults to the MALE Nepali voice**
-(`ne-NP-SagarNeural`).
+`generate_audio.py` is per-language: `--lang ne` (default) reads
+`audio_strings.json` → `audio/`; `--lang km` reads `audio_strings_km.json` →
+`audio-km/`. Strings files are plain JSON arrays of native-script strings; the
+script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
+`km-KH-PisethNeural`; `--voice female` = `ne-NP-HemkalaNeural` /
+`km-KH-SreymomNeural`).
 
-- Whenever lesson/spoken content changes, **regenerate `audio_strings.json` first**
-  (extract every spoken Devanagari string, hash with the same FNV-1a, write the array).
+- Whenever lesson/spoken content changes, **regenerate that language's strings
+  file first** (extract every spoken native-script string per the list above).
 - To (re)generate audio locally:
   ```
   pip install edge-tts          # once
-  # switching voice? delete first so all clips regenerate:
-  rm -rf audio
-  python3 generate_audio.py     # male by default; --voice female / --rate -10% available
+  # switching voice? delete the outdir first so all clips regenerate:
+  rm -rf audio-km
+  python3 generate_audio.py --lang km   # --voice female / --rate -10% available
   ```
 - edge-tts needs internet (Microsoft TTS). It's resumable (skips existing files).
 
