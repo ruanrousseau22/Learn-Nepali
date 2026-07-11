@@ -15,7 +15,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
-  in early access at 4 zones and growing zone by zone. Read the
+  in early access at 6 zones and growing zone by zone. Read the
   "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -28,6 +28,12 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `_redirects` — Netlify rules 301-ing sajilonepali.com → bhasaly.com
+- `og-image.png` + `og-card.svg` — the 1200×630 social share card (referenced by
+  `og:image` / `twitter:card summary_large_image` in the head) and its editable
+  SVG source. To regenerate on this Mac (no Node/Chrome): wrap the SVG content
+  in a 1200×1200 canvas at y-offset 285 (qlmanage crops non-square SVGs), then
+  `qlmanage -t -s 1200 -o . wrapped.svg` and `sips -c 630 1200` to center-crop.
+  Chat apps cache link previews for days after the image changes.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -72,7 +78,9 @@ hillsides, village house + yeti; the hero's near hill runs edge to edge —
 the old centered valley pine was removed July 2026 because it duplicated
 the Bhasaly tree logo), captured once by `applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
 innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
-`orb/far/mid/near` + cloud/star groups so engine CSS animates them) and a
+`orb/far/mid/near` + cloud/star groups so engine CSS animates them; every
+hill path must close along the SVG bottom edge — `…L1200 H L0 H Z` — or the
+pale far layer peeks through under it, a real bug fixed July 2026) and a
 `mascot(mood)` function (moods `happy/cheer/oops`, 64×64 viewBox). Mascots
 render via `artMascot()` — never call `mascotSVG()` directly at new call
 sites. `applyArt()` also stamps `data-lang` on `<html>`, which drives the
@@ -201,7 +209,7 @@ Decisions made (July 2026):
   gain a lang discriminator), **global streak/XP** across languages (Duolingo
   model). One-time migration: existing `sajilo` blob → `sajilo_ne`.
 - Khmer launch scope was Zones 1–2, labeled early access, growing zone by zone
-  (now at 5 zones / 175 lessons). **No Intensive track for Khmer** (that
+  (now at 6 zones / 210 lessons). **No Intensive track for Khmer** (that
   curriculum is Nepal-ministry-specific).
 - Khmer content rules: two consonant series, subscript consonants (ជើង), no word
   spaces; **pick ONE romanization scheme and enforce it** (same rule as Nepali:
