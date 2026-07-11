@@ -67,8 +67,9 @@ title/meta/header/footer/favicon renamed; hero h1 stays per-language.
 
 **Per-language art (since July 2026).** Every language gets national scenery:
 the built-in SVGs are the Nepali art (snow-capped Himalaya, terraced
-hillsides, village house, valley pine + yeti), captured once by
-`applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
+hillsides, village house + yeti; the hero's near hill runs edge to edge —
+the old centered valley pine was removed July 2026 because it duplicated
+the Bhasaly tree logo), captured once by `applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
 innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
 `orb/far/mid/near` + cloud/star groups so engine CSS animates them) and a
 `mascot(mood)` function (moods `happy/cheer/oops`, 64×64 viewBox). Mascots
@@ -88,6 +89,14 @@ blob once (kept as backup; `resetAll` clears every `sajilo*` key). Cloud rows ar
 `data:{v:2, global, langs:{<code>:{done,srs,words}}}`; v1 flat rows from old
 cached clients are treated as `{global:gPick(d), langs:{ne:lPick(d)}}` on pull.
 
+**Access codes (since July 2026).** `S.unlocks` (array, in `sajilo_global` via
+`gPick` and in the cloud v2 global blob; `mergeGlobal` unions it, so unlocking
+on any logged-in device unlocks everywhere). Code **`ffh`** ("fine fragrance
+Himalayas") unlocks the Nepali Language Intensive — entered in Settings →
+"Additional content" (`applyCode`/`hasIntensive`/`paintUnlock`). The Intensive
+tab shows only when `UNITS_INTENSIVE.length && hasIntensive()`; `show()` also
+guards direct navigation. `resetAll` clears unlocks with everything else.
+
 Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`).
 - Zones live in `UNITS` (main course, `#path-root`, tab "Learn") and
   `UNITS_INTENSIVE` (`#path-root-intensive`, tab "Intensive").
@@ -97,6 +106,13 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 - **Node symbols come from the `SYM` map** (`NE_SYM` in the Nepali pack), keyed by
   each topic's *learn-lesson id* — NOT the lesson `emoji` field (which is unused in
   rendering). Both tracks use Devanagari node symbols (no emoji on nodes).
+- The Intensive page header carries one "💡 Advice for Intensive" `.pb-btn` that
+  opens `#resources-modal` (start-with-the-script advice + resource accordions,
+  incl. ministry material — Intensive-only). The Alphabet page header carries a
+  "🃏 Alphabet flashcards" `.pb-btn` → `#alphacards-modal`: a simple
+  flip-to-reveal deck over the active pack's `VOWELS/CONS/NUMS` (`acMenu`/
+  `acStart`/`acFlip`/`acGrade` — misses requeue until cleared; not SRS, so the
+  Review word deck stays vocab-only).
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer

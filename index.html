@@ -99,7 +99,9 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .pb-inner h2{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-size:clamp(28px,4.6vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.04;color:var(--ink)}
 .pb-inner h2 .deva{font-family:'Noto Sans Devanagari','Noto Sans Khmer';color:var(--crimson);font-weight:500;margin-left:9px}
 .pb-sub{margin-top:11px;align-self:flex-start;font-size:14px;font-weight:600;color:var(--ink-soft);max-width:54ch;background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);padding:6px 14px;border-radius:100px}
-@media(max-width:520px){.pb-inner{min-height:122px;padding:20px 22px}.pb-sub{font-size:13px}}
+.pb-btn{margin-top:11px;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:100px;border:1px solid var(--line);background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(5px);color:var(--ink);font-family:inherit;font-weight:800;font-size:13.5px;letter-spacing:-.01em;cursor:pointer;box-shadow:var(--shadow);transition:.15s}
+.pb-btn:hover{border-color:var(--crimson);background:var(--card)}
+@media(max-width:520px){.pb-inner{min-height:122px;padding:20px 22px}.pb-sub{font-size:13px}.pb-btn{font-size:12.5px;padding:8px 14px}}
 
 .zone-head{display:flex;align-items:center;gap:13px;margin:30px 0 6px;padding:12px 15px;border-radius:16px;background:var(--paper-2)}
 .zone-head .t{font-weight:800;font-size:17px;letter-spacing:-.02em}
@@ -696,7 +698,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .li-card.li-start{padding:16px 17px}
 .li-card.li-start>.h{font-size:14.5px}
 .li-card.li-start>.s{font-size:14.5px;line-height:1.6;margin-bottom:0}
-.li-start .ilink{color:var(--crimson);font-weight:700;cursor:pointer;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--crimson) 40%,transparent);white-space:nowrap}
+.ilink{color:var(--crimson);font-weight:700;cursor:pointer;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--crimson) 40%,transparent);white-space:nowrap}
 .li-start .ilink:hover{border-bottom-color:var(--crimson)}
 .li-cta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .li-meta{margin-top:13px;font-size:12px;color:var(--ink-soft);font-weight:600}
@@ -735,7 +737,26 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .li-res-head h3{font-size:20px;margin:0;letter-spacing:-.01em}
 .li-res-head .close{position:static;float:none;margin:0;font-size:24px;line-height:1}
 .li-res-sub{font-size:13px;color:var(--ink-soft);margin:0 0 3px;line-height:1.5}
+.li-res-advice{font-size:13.5px;color:var(--ink);line-height:1.55;background:var(--saffron-soft);border-radius:var(--r-md);padding:12px 15px}
 .li-res-list{display:flex;flex-direction:column;gap:11px;padding:15px 22px 20px}
+/* ===== ALPHABET FLASHCARDS ===== */
+.ac-modal{max-width:480px;width:100%}
+.ac-sub{font-size:13.5px;color:var(--ink-soft);margin:6px 0 14px;line-height:1.5}
+.ac-picks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ac-pick{display:flex;flex-direction:column;gap:3px;align-items:flex-start;padding:14px 16px;border-radius:var(--r-md);border:1px solid var(--line);border-left:4px solid var(--zacc);background:var(--card);cursor:pointer;font-family:inherit;transition:.15s;box-shadow:var(--shadow)}
+.ac-pick:hover{border-color:var(--zacc)}
+.ac-pick .t{font-weight:800;font-size:15px;color:var(--ink)}
+.ac-pick .n{font-size:12px;color:var(--ink-soft);font-weight:600}
+.ac-count{text-align:center;font-size:12.5px;font-weight:700;color:var(--ink-soft);margin-bottom:10px}
+.ac-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;min-height:230px;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--paper);cursor:pointer;font-family:inherit;box-shadow:var(--shadow);transition:.15s}
+.ac-card:hover{border-color:var(--crimson)}
+.ac-card .d{font-size:84px;line-height:1.15;color:var(--ink)}
+.ac-card .r{font-size:14px;font-weight:700;color:var(--ink-soft);min-height:30px;display:flex;align-items:center}
+.ac-card.flipped .r{color:var(--crimson);font-size:24px;font-weight:800}
+.ac-row{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.ac-row .btn{min-width:120px;justify-content:center}
+.ac-done{display:flex;justify-content:center;margin-bottom:6px}
+.ac-done svg{width:96px;height:96px}
 @media(max-width:560px){.li-hero h3{font-size:22px}.li-link .tx span{max-width:62vw}}
 /* mobile touch feel */
 button,a,.cnode,.tab,.mc,.glyph,.wbtile,.mtile,.grade,.iconbtn,.li-res-btn,.li-link{-webkit-tap-highlight-color:transparent}
@@ -808,8 +829,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
       <path class="mid" d="M805 214 L805 182 L875 182 L875 214 Z M793 184 L840 156 L887 184 Z"/>
       <g class="near">
-        <path d="M0 320 L0 296 Q200 260 420 288 Q640 314 860 288 Q1040 268 1200 292 L1200 320 Z"/>
-        <path d="M600 190 L624 226 L614 226 L632 254 L620 254 L638 282 L606 282 L606 298 L594 298 L594 282 L562 282 L580 254 L568 254 L586 226 L576 226 Z"/>
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
     </svg>
     <div class="hero-inner">
@@ -861,6 +881,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     </svg>
     <div class="pb-inner">
       <h2>The alphabet <span class="deva" id="alpha-native">देवनागरी</span></h2>
+      <button class="pb-btn" onclick="openAlphaCards()"><span aria-hidden="true">🃏</span> Alphabet flashcards</button>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -939,6 +960,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <div class="set-row"><div><div class="label">Auto-continue</div><div class="desc">Advance automatically after a correct answer</div></div><label class="switch"><input type="checkbox" id="set-autonext" checked onchange="toggleAutoNext()"><span class="slider"></span></label></div>
       <div class="set-row"><div><div class="label">Daily XP goal</div><div class="desc">Tracked in your profile</div></div><select id="set-goal" onchange="changeGoal()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)"><option value="20">20 · easy</option><option value="50">50 · steady</option><option value="100">100 · serious</option><option value="200">200 · intense</option></select></div>
       <div class="set-row"><div><div class="label">Pronunciation voice</div><div class="desc" id="voice-status">Detecting voices…</div></div><select id="voice-select" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:190px"></select></div>
+      <div class="set-row"><div><div class="label">Additional content</div><div class="desc" id="unlock-desc">Have an access code? Enter it to unlock extra content</div></div><span style="display:flex;gap:8px;align-items:center"><input id="unlock-code" type="text" autocomplete="off" autocapitalize="off" placeholder="Code" onkeydown="if(event.key==='Enter')applyCode()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);width:90px;font-family:inherit"><button class="iconbtn" onclick="applyCode()">Unlock</button></span></div>
       <div class="set-row"><div><div class="label">Reset all progress</div><div class="desc">Clears XP, streak, lessons, reviews</div></div><button class="danger-btn" onclick="resetAll()">Reset</button></div>
     </div>
   </div>
@@ -963,19 +985,10 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     </svg>
     <div class="pb-inner">
       <h2>Language Intensive <span class="deva">सघन</span></h2>
+      <button class="pb-btn" onclick="openResources()"><span aria-hidden="true">💡</span> Advice for Intensive</button>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
-    <div id="intensive-intro"><div class="li-wrap">
-
-      <div class="li-card li-start">
-        <div class="h">Start here</div>
-        <div class="s">Spend your first two weeks on the script. Nepali reads <em>almost exactly as it sounds</em>, so once the alphabet clicks you can sound out nearly any word. You can practice the characters anytime on the <a class="ilink" onclick="show('alphabet')">Alphabet</a> page, and the first unit on the <a class="ilink" onclick="show('home')">Learn</a> page is all about the alphabet too.</div>
-      </div>
-
-      <button class="li-res-btn" onclick="openResources()"><span class="ic">📚</span><span class="tx">Extra Language Intensive resources</span><span class="chev">›</span></button>
-
-    </div></div>
     <div id="path-root-intensive"></div>
   </div>
 </section>
@@ -1016,11 +1029,12 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <div class="modal-bg" id="resources-modal">
   <div class="modal li-res-modal">
     <div class="li-res-head">
-      <h3>Extra resources</h3>
+      <h3>Advice for Intensive</h3>
       <button class="close" onclick="closeResources()" aria-label="Close">×</button>
     </div>
     <div class="li-res-list">
-      <p class="li-res-sub">Flashcards, videos, conversation practice and tools to support your two weeks of script.</p>
+      <div class="li-res-advice"><b>Start with the script.</b> Spend your first two weeks on it — Nepali reads <em>almost exactly as it sounds</em>, so once the alphabet clicks you can sound out nearly any word. Practice the characters anytime on the <a class="ilink" onclick="closeResources();show('alphabet')">Alphabet</a> page, and the first unit on the <a class="ilink" onclick="closeResources();show('intensive')">Intensive path</a> covers the script too.</div>
+      <p class="li-res-sub">Then lean on these flashcards, videos, conversation practice and tools.</p>
       <details class="li-acc">
         <summary><span class="lic">🃏</span> Anki flashcards <span class="cnt">4 guides</span><span class="chev">›</span></summary>
         <div class="body">
@@ -1095,6 +1109,14 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <p id="loggedin-email">—</p>
       <button class="btn btn-ghost" onclick="signOut()">Sign out</button>
     </div>
+  </div>
+</div>
+
+<!-- ALPHABET FLASHCARDS -->
+<div class="modal-bg" id="alphacards-modal">
+  <div class="modal ac-modal">
+    <button class="close" onclick="closeAlphaCards()" aria-label="Close">×</button>
+    <div id="ac-stage"></div>
   </div>
 </div>
 
@@ -8118,14 +8140,14 @@ const NE_NUMS=[['०','0'],['१','1'],['२','2'],['३','3'],['४','4'],['५
 const NE_SRS_SEED=[['नमस्ते','Namaste','Hello'],['धन्यवाद','Dhanyabad','Thank you'],['माफ गर्नुस्','Maaf garnoos','Excuse me / Sorry'],['हो','Ho','Yes'],['होइन','Hoina','No'],['ठीक छ','Theek chha','It is okay'],['पानी','Paani','Water'],['खाना','Khaana','Food'],['घर','Ghar','Home'],['मान्छे','Maanchhe','Person'],['राम्रो','Raamro','Good / Beautiful'],['ठूलो','Thoolo','Big'],['सानो','Saano','Small'],['आज','Aaja','Today'],['भोलि','Bholi','Tomorrow'],['पैसा','Paisa','Money'],['बाटो','Baato','Road / Way'],['पहाड','Pahaad','Mountain'],['खुसी','Khusi','Happy'],['चिया','Chiya','Tea']];
 /* LESSON_MAP + lessonById moved to the LANGUAGE PACKS block (below NE_SYM) */
 
-function defaultS(){return {lang:'ne',xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true};}
+function defaultS(){return {lang:'ne',xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true,unlocks:[]};}
 let S=defaultS();
 function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0}));}
 /* state splits three ways: per-language progress (sajilo_<code>), global stats shared
    across languages (sajilo_global — streak/XP, Duolingo model), and device prefs
    (stored in the global key but never synced to the cloud) */
 function lPick(o){return {done:o.done||[],srs:o.srs||[],words:o.words||0};}
-function gPick(o){return {lang:o.lang||'ne',xp:o.xp||0,streak:o.streak||0,lastDay:o.lastDay||null,bestStreak:o.bestStreak||0,dailyXp:o.dailyXp||0,dailyDate:o.dailyDate||null,dailyGoal:o.dailyGoal||50,total:o.total||0,correct:o.correct||0};}
+function gPick(o){return {lang:o.lang||'ne',xp:o.xp||0,streak:o.streak||0,lastDay:o.lastDay||null,bestStreak:o.bestStreak||0,dailyXp:o.dailyXp||0,dailyDate:o.dailyDate||null,dailyGoal:o.dailyGoal||50,total:o.total||0,correct:o.correct||0,unlocks:o.unlocks||[]};}
 function prefsPick(o){return {theme:o.theme,rom:o.rom,voice:o.voice,sound:o.sound,autoNext:o.autoNext};}
 const GLOBAL_KEY='sajilo_global';
 /* one-time migration: pre-multi-language blob 'sajilo' → sajilo_ne + sajilo_global
@@ -8156,6 +8178,7 @@ function mergeGlobal(loc,cld){const m={...loc,...cld};
   if(loc.dailyDate===cld.dailyDate)m.dailyXp=Math.max(loc.dailyXp||0,cld.dailyXp||0);
   else if((loc.dailyDate?new Date(loc.dailyDate).getTime():0)>(cld.dailyDate?new Date(cld.dailyDate).getTime():0)){m.dailyXp=loc.dailyXp;m.dailyDate=loc.dailyDate;}
   m.lang=loc.lang; /* the active language is a per-device choice */
+  m.unlocks=[...new Set([...(loc.unlocks||[]),...(cld.unlocks||[])])]; /* access codes: union — unlocking anywhere unlocks everywhere */
   return m;}
 function mergeLang(loc,cld){loc=loc||{};cld=cld||{};const m={};
   m.done=[...new Set([...(loc.done||[]),...(cld.done||[])])];
@@ -8274,7 +8297,8 @@ function unlockAudio(){if(_audioUnlocked)return;_audioUnlocked=true;if('speechSy
 document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 const SMOOTH=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth';
-function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
+function show(v){if(v==='intensive'&&!hasIntensive())v='home';
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
   if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});}
 /* land on the current node instead of the top of a 60+-node path; timeout lets same-tick rebuilds finish first */
@@ -8366,6 +8390,42 @@ function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);docum
 function closeProfile(){document.getElementById('profile-modal').classList.remove('show');}
 function openResources(){document.getElementById('resources-modal').classList.add('show');document.body.style.overflow='hidden';}
 function closeResources(){document.getElementById('resources-modal').classList.remove('show');document.body.style.overflow='';}
+
+/* ===== ACCESS CODES (Settings → Additional content) =====
+   'ffh' unlocks the Nepali Language Intensive. Codes live in S.unlocks
+   (global storage + cloud v2 payload, merged as a union) so logging in
+   restores them on any device. */
+function hasIntensive(){return (S.unlocks||[]).indexOf('ffh')>=0;}
+function paintUnlock(){const it=document.querySelector('.tab[data-v="intensive"]');
+  if(it)it.style.display=(UNITS_INTENSIVE.length&&hasIntensive())?'':'none';
+  const d=document.getElementById('unlock-desc');if(d&&hasIntensive())d.textContent='Language Intensive unlocked ✓';}
+function applyCode(){const inp=document.getElementById('unlock-code');const d=document.getElementById('unlock-desc');
+  const code=(inp.value||'').trim().toLowerCase();if(!code)return;inp.value='';
+  if(code==='ffh'){const had=hasIntensive();
+    if(!had){S.unlocks=[...(S.unlocks||[]),'ffh'];save();playSound('correct');}
+    paintUnlock();if(d)d.textContent=had?'Language Intensive is already unlocked ✓':'Language Intensive unlocked ✓ — check the new tab!';}
+  else if(d)d.textContent='Hmm, that code was not recognized.';}
+
+/* ===== ALPHABET FLASHCARDS (Alphabet page → button in the band) ===== */
+let acDeck=[],acFlipped=false;
+function openAlphaCards(){document.getElementById('alphacards-modal').classList.add('show');document.body.style.overflow='hidden';acMenu();}
+function closeAlphaCards(){document.getElementById('alphacards-modal').classList.remove('show');document.body.style.overflow='';stopAudio();}
+function acMenu(){const st=document.getElementById('ac-stage');
+  const opt=(label,n,kind,acc)=>'<button class="ac-pick" style="--zacc:'+acc+'" onclick="acStart(String.fromCharCode('+kind.charCodeAt(0)+'))"><span class="t">'+label+'</span><span class="n">'+n+' cards</span></button>';
+  st.innerHTML='<h3>Alphabet flashcards</h3><p class="ac-sub">See the letter, say it out loud, then flip to check — you will hear it too. Cards you miss come back until the deck is clear.</p>'
+    +'<div class="ac-picks">'+opt('Vowels',VOWELS.length,'v','#1F8A5B')+opt('Consonants',CONS.length,'c','#2E6FA8')+opt('Numerals',NUMS.length,'n','#C07A14')+opt('Everything',VOWELS.length+CONS.length+NUMS.length,'a','#5B6FA0')+'</div>';}
+function acStart(kind){const src=kind==='v'?VOWELS:kind==='c'?CONS:kind==='n'?NUMS:[...VOWELS,...CONS,...NUMS];
+  acDeck=src.map(x=>x).sort(()=>Math.random()-.5);acRender();}
+function acRender(){const st=document.getElementById('ac-stage');
+  if(!acDeck.length){st.innerHTML='<div class="ac-done">'+artMascot('cheer')+'</div><h3 style="text-align:center">Deck cleared! 🎉</h3><p class="ac-sub" style="text-align:center">Every card marked got-it. Well done.</p><div class="ac-row"><button class="btn btn-ghost" onclick="acMenu()">Another deck</button><button class="btn btn-primary" onclick="closeAlphaCards()">Done</button></div>';return;}
+  acFlipped=false;const d=acDeck[0][0];
+  st.innerHTML='<div class="ac-count">'+acDeck.length+(acDeck.length===1?' card':' cards')+' left</div>'
+    +'<button class="ac-card" id="ac-card" onclick="acFlip()"><div class="d deva">'+d+'</div><div class="r" id="ac-r">tap to flip</div></button>'
+    +'<div class="ac-row"><button class="btn btn-ghost" onclick="acGrade(false)">↻ Again</button><button class="btn btn-primary" onclick="acGrade(true)">Got it ✓</button></div>';}
+function acFlip(){const c=acDeck[0];if(!c)return;
+  if(acFlipped){speak(c[0]);return;} /* tap again to re-hear */
+  acFlipped=true;document.getElementById('ac-r').textContent=c[1];document.getElementById('ac-card').classList.add('flipped');speak(c[0]);}
+function acGrade(ok){const c=acDeck.shift();if(!ok&&c)acDeck.push(c);acRender();}
 /* in-app confirm dialog — replaces native confirm() so it matches the app on every device */
 let cfOnOk=null;
 function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').textContent=title;document.getElementById('cf-msg').textContent=msg;
@@ -8374,7 +8434,7 @@ function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').
 function closeConfirm(){document.getElementById('confirm-modal').classList.remove('show');cfOnOk=null;}
 document.getElementById('cf-ok').onclick=()=>{const f=cfOnOk;closeConfirm();if(f)f();};
 /* shared modal behavior: click the backdrop or press Escape to close any open modal */
-function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='auth-modal')closeAuth();else if(id==='confirm-modal')closeConfirm();}
+function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='alphacards-modal')closeAlphaCards();else if(id==='auth-modal')closeAuth();else if(id==='confirm-modal')closeConfirm();}
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
@@ -8439,7 +8499,7 @@ async function switchLang(code){
 function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
   /* header mark is the fixed Bhasaly tree — packs no longer brand it */
   const h=document.querySelector('.hero-text h1');if(h&&b.h1)h.innerHTML=b.h1;
-  const it=document.querySelector('.tab[data-v="intensive"]');if(it)it.style.display=UNITS_INTENSIVE.length?'':'none';
+  paintUnlock(); /* Intensive tab: needs a pack with an Intensive track AND the access code */
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};
   set('alpha-native',al.native);set('pdeva-vowels',al.vowels);set('pdeva-consonants',al.cons);set('pdeva-numerals',al.nums);
   applyArt();paintLangPicker();}
@@ -8760,7 +8820,7 @@ function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').che
 function changeGoal(){S.dailyGoal=+document.getElementById('set-goal').value||50;save();}
 function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;try{Object.keys(localStorage).filter(x=>x==='sajilo'||x.indexOf('sajilo_')===0).forEach(x=>localStorage.removeItem(x));}catch(e){}S={...defaultS(),lang:LANG.code,theme:k,srs:freshSRS(),dailyDate:new Date().toDateString()};save();refreshAll();show('home');});}
 
-function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
+function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);paintUnlock();buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
 applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
 if(S.lang&&S.lang!==LANG.code)switchLang(S.lang); /* resume the language chosen last session */
