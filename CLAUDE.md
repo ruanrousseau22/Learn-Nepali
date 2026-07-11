@@ -21,9 +21,10 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 ## Repo layout
 - `index.html` — the whole app + the inline Nepali pack
 - `lang/km.js` — Khmer pack (data, art, registerPack call)
-- `audio/` — Nepali recorded clips + `manifest.json` (its `audio_strings.json`
-  source was never committed — regenerate from the pack if Nepali audio ever
-  needs rebuilding)
+- `audio/` — Nepali recorded clips + `manifest.json`; `audio_strings.json` is
+  its committed strings source (regenerated from the pack July 2026 during the
+  audio health check that re-recorded मान्छे — the one seed word that had been
+  falling back to device TTS, heard as a female voice)
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `_redirects` — Netlify rules 301-ing sajilonepali.com → bhasaly.com
