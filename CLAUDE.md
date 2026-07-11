@@ -15,7 +15,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
-  in early access at 6 zones and growing zone by zone. Read the
+  in early access at 7 zones and growing zone by zone. Read the
   "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -125,7 +125,7 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
-(early access, `lang/km.js`) = 6 zones / 210 lessons / 42 topics, no Intensive
+(early access, `lang/km.js`) = 7 zones / 245 lessons / 49 topics, no Intensive
 (Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
 colors, have, want/need, street small talk; Zone 4 "Daily life": core verbs +
 no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, family incl. the
@@ -137,7 +137,13 @@ converse": past with បាន + មិនបាន…ទេ, the អាច…�
 question words នរណា/ពេលណា/ហេតុអ្វី/ម៉េច + ម៉េចដែរ, feelings in ចិត្ត
 (សប្បាយចិត្ត/ពិបាកចិត្ត/ខឹង/ខ្លាច/នឹក/ស្រឡាញ់), connectors
 ប៉ុន្តែ/ព្រោះ/បើ, comparisons ជាង/ជាងគេ/ដូចគ្នា, opinions គិតថា +
-ប្រហែល/ពិត/មែនទេ/មែនហើយ).
+ប្រហែល/ពិត/មែនទេ/មែនហើយ; Zone 7 "Sound like a local": age-based address
+terms ពូ/មីង/តា/យាយ/អូន + formal លោក/លោកស្រី, requests with សូម + verb
+vs សុំ + thing + the host word អញ្ជើញ, must ត្រូវ/ត្រូវតែ + ត្រូវហើយ/ខុស
+right-and-wrong + មិនបាច់ទេ no need, ever/used-to ធ្លាប់ + times ម្តង/ដង/
+ច្រើនដង, days of the week ថ្ងៃច័ន្ទ…ថ្ងៃអាទិត្យ + សប្តាហ៍, dates &
+months by number ខែមួយ vs មួយខែ + ថ្ងៃទី + ខួបកំណើត birthday,
+occupations via the អ្នក + verb doer trick + កសិករ/ធ្វើស្រែ).
 
 ### Schemas
 - Lesson: `{id, emoji, title, step, meta, vocab:[[deva,rom,gloss]], ex:[...]}`
@@ -185,13 +191,14 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- Khmer grows zone by zone (Zones 1–6 shipped; Zone 7 candidates: politeness
-  registers & requests (បាទ/ចាស in practice, សូម patterns), ធ្លាប់ ever /
-  used to, dates & months, occupations — finish mirroring the Nepali "Sound
-  like a local" arc). Append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add
-  SYM entries, regen audio.
+- Khmer grows zone by zone (Zones 1–7 shipped — Zone 7 "Sound like a local"
+  landed July 2026 and completed the Nepali arc mirror. Zone 8 candidates:
+  telling clock time ម៉ោង (the biggest remaining gap vs Nepali), visiting &
+  hosting (មកលេង, ភ្ញៀវ guest phrases), formal month names as recognition
+  vocab, phone & messaging). Append to `KM_UNITS`/`KM_LESSONS` in
+  `lang/km.js`, add SYM entries, regen audio.
 - **Before dropping the "early access" label, a native Khmer speaker should
-  review Zones 2–6** (content was written against standard beginner material,
+  review Zones 2–7** (content was written against standard beginner material,
   unreviewed by a native).
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
@@ -209,7 +216,7 @@ Decisions made (July 2026):
   gain a lang discriminator), **global streak/XP** across languages (Duolingo
   model). One-time migration: existing `sajilo` blob → `sajilo_ne`.
 - Khmer launch scope was Zones 1–2, labeled early access, growing zone by zone
-  (now at 6 zones / 210 lessons). **No Intensive track for Khmer** (that
+  (now at 7 zones / 245 lessons). **No Intensive track for Khmer** (that
   curriculum is Nepal-ministry-specific).
 - Khmer content rules: two consonant series, subscript consonants (ជើង), no word
   spaces; **pick ONE romanization scheme and enforce it** (same rule as Nepali:
