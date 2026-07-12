@@ -8257,10 +8257,14 @@ function loadVoices(){
   const ne=voices.filter(LANG.voiceTest);
   const hi=voices.filter(LANG.fbVoiceTest);
   const pool=[...ne,...hi];
-  chosenVoice=voices.find(v=>v.name===S.voice)||pool[0]||null;
+  const saved=voices.find(v=>v.name===S.voice);
+  chosenVoice=(saved&&pool.includes(saved))?saved:(pool[0]||null);
   const sel=document.getElementById('voice-select');
   if(sel){
-    const list=pool.length?pool:voices;
+    /* at most 3 relevant voices; never dump the device's full voice list
+       (recorded audio is the primary path — TTS is only the fallback) */
+    let list=pool.slice(0,3);
+    if(chosenVoice&&!list.includes(chosenVoice))list=[chosenVoice,...list.slice(0,2)];
     sel.innerHTML='';
     if(!list.length){const o=document.createElement('option');o.textContent=AUDIO_KEYS.size?'Recorded audio':'System default';sel.appendChild(o);}
     list.forEach(v=>{const o=document.createElement('option');o.value=v.name;o.textContent=v.name+' ('+v.lang+')';sel.appendChild(o);});
