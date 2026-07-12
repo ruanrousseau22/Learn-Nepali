@@ -27,6 +27,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   falling back to device TTS, heard as a female voice)
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
+- `extract_audio_strings.js` — JXA extractor that regenerates a language's
+  audio strings file from its pack (see Audio → Regenerating audio)
 - `_redirects` — Netlify rules 301-ing sajilonepali.com → bhasaly.com
 - `og-image.png` + `og-card.svg` — the 1200×630 social share card (referenced by
   `og:image` / `twitter:card summary_large_image` in the head) and its editable
@@ -289,7 +291,19 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 `km-KH-SreymomNeural`).
 
 - Whenever lesson/spoken content changes, **regenerate that language's strings
-  file first** (extract every spoken native-script string per the list above).
+  file first** with the committed extractor (JXA — no Node needed; run from the
+  repo root):
+  ```
+  osascript -l JavaScript extract_audio_strings.js km          # lang/km.js  → audio_strings_km.json
+  osascript -l JavaScript extract_audio_strings.js ne          # index.html  → audio_strings.json
+  osascript -l JavaScript extract_audio_strings.js km --check  # verify only, writes nothing
+  ```
+  It implements the spoken-strings list above plus the exact committed-file
+  conventions: lessons in unit order (main, then Intensive) → alphabet → SRS
+  seed, dedup by first occurrence, filter by the pack's `script` regex, skip
+  combining-marks-only strings and `step:'test'` lessons. `--check` proves a
+  strings file still matches its pack (both were verified byte-identical when
+  the tool landed, July 2026).
 - To (re)generate audio locally:
   ```
   pip install edge-tts          # once
