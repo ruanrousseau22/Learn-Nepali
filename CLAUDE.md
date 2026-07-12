@@ -15,8 +15,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
-  in early access at 8 zones and growing zone by zone. Read the
-  "Multi-language expansion" section below before touching any of it.
+  at 8 zones and growing zone by zone (early-access label dropped July 2026).
+  Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
 - `index.html` — the whole app + the inline Nepali pack
@@ -127,7 +127,7 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
 
 Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
-(early access, `lang/km.js`) = 8 zones / 280 lessons / 56 topics, no Intensive
+(`lang/km.js`) = 8 zones / 280 lessons / 56 topics, no Intensive
 (Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
 colors, have, want/need, street small talk; Zone 4 "Daily life": core verbs +
 no-conjugation, time markers កំពុង/នឹង/ហើយ, food, drinks, family incl. the
@@ -195,7 +195,7 @@ here-or-takeaway, visiting មកលេង/ភ្ញៀវ/host phrases, phone &
 
 ## Multi-language expansion
 Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
-(early access live), Amharic (next new language) · Phase 2: Burmese, Sinhala,
+(live), Amharic (next new language) · Phase 2: Burmese, Sinhala,
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
@@ -212,9 +212,10 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   ថោក/ថ្លៃ + ចុះថ្លៃបានទេ, formal month names as recognition vocab.
   Append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`, add SYM entries,
   regen audio.
-- **Before dropping the "early access" label, a native Khmer speaker should
-  review Zones 2–8** (content was written against standard beginner material,
-  unreviewed by a native).
+- The "early access" label was dropped July 2026 on Ruan's call. **A native
+  Khmer speaker reviewing Zones 2–8 is still wanted** (content was written
+  against standard beginner material, unreviewed by a native) — patch lessons
+  surgically + re-record affected clips if the review flags anything.
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
   script needs one (the Khmer step is the template — see Step 3 below).

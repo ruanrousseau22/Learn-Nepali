@@ -1,4 +1,4 @@
-/* ===== KHMER LANGUAGE PACK (early access · Zones 1–8) =====
+/* ===== KHMER LANGUAGE PACK (Zones 1–8) =====
    Romanization scheme (ASCII only, enforced — no Khmer script in rom fields):
    - aspirates kh chh th ph; ng (ង), nh (ញ)
    - consonant names carry their series vowel: a-series ka kha cha... o-series ko kho ngo cho...
