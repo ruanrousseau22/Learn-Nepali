@@ -85,9 +85,12 @@ title/meta/header/footer/favicon renamed; hero h1 stays per-language.
 
 **Per-language art (since July 2026).** Every language gets national scenery:
 the built-in SVGs are the Nepali art (snow-capped Himalaya, terraced
-hillsides, village house + yeti; the hero's near hill runs edge to edge —
+hillsides, village house; the hero's near hill runs edge to edge —
 the old centered valley pine was removed July 2026 because it duplicated
 the Bhasaly tree logo), captured once by `applyArt()` as the default; a pack overrides via `art:{hero,band,mascot}` —
+The floating hero-banner mascot (`#home-mascot`/`.hero-yeti`) was **removed
+July 2026** (Ruan: it cluttered the banner) — the pack `mascot(mood)` now
+appears only by the current path node (`.trail-yeti`) and in lesson feedback.
 innerHTML strings for `.hero-mtns` / `.pb-mtns` (keep the layer classes
 `orb/far/mid/near` + cloud/star groups so engine CSS animates them; every
 hill path must close along the SVG bottom edge — `…L1200 H L0 H Z` — or the
@@ -210,6 +213,13 @@ small-talk trio អាយុប៉ុន្មាន/រៀបការហើយ
   that question at the end ("↻ Try again" tag, `curE>=exQBase`) until answered
   correctly. **Tests are exempt** — fixed dealt 20, scored on first tries
   (`lessonCorrect`, incremented in `finishQuestion` only when `ok&&!breakCombo`).
+- **MC/fill/li options are shuffled at render** (`shufOpts` in `renderEx`, July
+  2026 fix): the pack data authors many questions with `a:0`, so without this the
+  correct answer always sat in the first slot. `shufOpts` clones the exercise,
+  shuffles `o`, and remaps `a` — the **source pack data is never mutated** (the
+  clone is stored back into `exQ[curE]`, marked `_sh` so a mid-question re-render
+  like a romanization toggle keeps the same order). Keep answers keyed by the
+  `o[a]` index, not by option position, and never assume slot 0 is correct.
 - **Never use native `confirm()`** — use the in-app dialog `askConfirm(title,msg,
   okLabel,onOk)` / `closeConfirm()` (#confirm-modal). All modals close on backdrop
   click + Escape via `closeModalById`.
@@ -341,6 +351,11 @@ Decisions made (July 2026):
   landscapes, nature, homes, daily life, animals. No temples/pagodas/stupas/
   shrines/monks/prayer flags, however iconic (no Angkor Wat for Cambodia, no
   stupas for Nepal, no rock churches for Amharic).
+  - **Exception — national flags** (Ruan, July 2026): the `LANG_FLAGS`
+    inline-SVG flags in the language switcher are exempt — a country's official
+    flag is a factual state symbol, not devotional art. Cambodia's flag keeps
+    its white Angkor Wat silhouette even though a temple in the *scenery* is
+    forbidden. The rule governs authored art (hero/band/mascot), not real flags.
 
 ## Audio system
 Recorded MP3s first, device TTS fallback.
