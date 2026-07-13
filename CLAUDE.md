@@ -36,6 +36,15 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   in a 1200×1200 canvas at y-offset 285 (qlmanage crops non-square SVGs), then
   `qlmanage -t -s 1200 -o . wrapped.svg` and `sips -c 630 1200` to center-crop.
   Chat apps cache link previews for days after the image changes.
+- `robots.txt` + `sitemap.xml` — SEO basics (allow-all + one URL, https://bhasaly.com/).
+  Served from the repo root by Netlify.
+- **SEO / discoverability lives in the `<head>`** — `<title>`, `meta description`,
+  `meta keywords`, `link canonical`, Open Graph + Twitter cards, and a JSON-LD
+  `<script type="application/ld+json">` block (`WebSite` + `WebApplication`/
+  `EducationalApplication` with a `teaches` array + one `Course` per language).
+  **Update all of these when you ship a new language**: add the language to the
+  title/description/keywords, the `teaches` array, and add a `Course` entry — so
+  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -264,7 +273,10 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   open task — see the review workflow the new-chat handoff describes.
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
-  script needs one (the Khmer step is the template — see Step 3 below).
+  script needs one (the Khmer step is the template — see Step 3 below) + an
+  inline-SVG flag in `LANG_FLAGS` for the home-hero language switcher + an
+  **SEO refresh** (title/description/keywords, JSON-LD `teaches` + a new `Course`
+  entry — see Repo layout's SEO note) so the site ranks for "learn &lt;language&gt;".
 - Keep sajilonepali.com registered — old links depend on the 301.
 
 Decisions made (July 2026):
