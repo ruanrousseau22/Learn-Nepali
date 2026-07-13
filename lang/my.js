@@ -305,6 +305,8 @@ const MY_HERO='<circle class="orb-glow" cx="922" cy="96" r="74"/><circle class="
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
 +'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>'
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
+/* a few distant birds over the water */
++'<g fill="none" stroke="var(--mtn-mid)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M636 84 q6 -5 12 0 q6 -5 12 0"/><path d="M690 96 q5 -4.5 10 0 q5 -4.5 10 0"/><path d="M734 78 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* far: tall misty Shan ridges — the flat fill below them reads as the lake */
 +'<path class="far" d="M0 236 Q60 184 120 214 Q200 148 280 206 Q340 178 400 212 Q470 158 560 208 Q630 182 700 214 Q780 154 870 206 Q940 180 1010 214 Q1090 172 1200 204 L1200 320 L0 320 Z"/>'
 /* mid (teak brown): U Bein-style footbridge on A-frame stilts with tiny
@@ -335,21 +337,21 @@ const MY_HERO='<circle class="orb-glow" cx="922" cy="96" r="74"/><circle class="
 +'<path d="M680 303 L685 286 L688 297 L692 283 L695 298 L700 289 L703 304 Z"/>'
 +'<path d="M1140 302 L1145 286 L1148 296 L1152 284 L1155 297 L1159 288 L1162 303 Z"/>'
 +'</g>';
-const MY_BAND='<circle class="orb-glow" cx="1046" cy="54" r="36"/><circle class="orb" cx="1046" cy="54" r="21"/>'
-+'<path class="far" d="M0 148 Q60 112 120 134 Q200 92 280 130 Q340 108 400 134 Q470 96 560 130 Q630 110 700 136 Q780 94 870 130 Q940 108 1010 136 Q1090 102 1200 128 L1200 200 L0 200 Z"/>'
+/* band = a calmer echo: misty ridges + water glints + a lone leg-rowing
+   fisherman on the FAR RIGHT, so the left stays clear of the header text */
+const MY_BAND='<circle class="orb-glow" cx="1092" cy="48" r="32"/><circle class="orb" cx="1092" cy="48" r="19"/>'
++'<path class="far" d="M0 150 Q80 116 160 138 Q240 102 320 136 Q400 116 480 138 Q560 106 640 136 Q720 116 800 138 Q880 104 960 136 Q1040 114 1120 138 Q1160 128 1200 136 L1200 200 L0 200 Z"/>'
 +'<g class="mid">'
-+'<path d="M420 126 L1200 126 L1200 131 L420 131 Z"/>'
-+'<path d="M420 116 L1200 116 L1200 118.5 L420 118.5 Z"/>'
-+'<path d="M430 118.5 L433.5 118.5 L433.5 126 L430 126 Z M495 118.5 L498.5 118.5 L498.5 126 L495 126 Z M560 118.5 L563.5 118.5 L563.5 126 L560 126 Z M625 118.5 L628.5 118.5 L628.5 126 L625 126 Z M690 118.5 L693.5 118.5 L693.5 126 L690 126 Z M755 118.5 L758.5 118.5 L758.5 126 L755 126 Z M820 118.5 L823.5 118.5 L823.5 126 L820 126 Z M885 118.5 L888.5 118.5 L888.5 126 L885 126 Z M950 118.5 L953.5 118.5 L953.5 126 L950 126 Z M1015 118.5 L1018.5 118.5 L1018.5 126 L1015 126 Z M1080 118.5 L1083.5 118.5 L1083.5 126 L1080 126 Z M1145 118.5 L1148.5 118.5 L1148.5 126 L1145 126 Z"/>'
-+'<path d="M453.5 131 L444 176 L448 176 L455 141 L462 176 L466 176 L456.5 131 Z M563.5 131 L554 176 L558 176 L565 141 L572 176 L576 176 L566.5 131 Z M673.5 131 L664 176 L668 176 L675 141 L682 176 L686 176 L676.5 131 Z M783.5 131 L774 176 L778 176 L785 141 L792 176 L796 176 L786.5 131 Z M893.5 131 L884 176 L888 176 L895 141 L902 176 L906 176 L896.5 131 Z M1003.5 131 L994 176 L998 176 L1005 141 L1012 176 L1016 176 L1006.5 131 Z M1113.5 131 L1104 176 L1108 176 L1115 141 L1122 176 L1126 176 L1116.5 131 Z"/>'
-+'<path d="M757.5 114 L762.5 114 L761.7 126 L758.3 126 Z"/><circle cx="760" cy="109.8" r="2.7"/>'
-+'<path d="M997.5 114 L1002.5 114 L1001.7 126 L998.3 126 Z"/><circle cx="1000" cy="109.8" r="2.7"/>'
-+'<path d="M990 107 Q1000 98 1010 107 L1008.4 108.6 Q1000 101.5 991.6 108.6 Z"/><path d="M999.4 100 L1000.6 100 L1000.6 112 L999.4 112 Z"/>'
++'<path d="M1042 180 Q1100 171 1160 178 L1155 187 Q1100 178 1047 187 Z"/>'
++'<circle cx="1104" cy="151" r="3.6"/>'
++'<path d="M1101 155 L1108 155 L1110 178 L1103 178 Z"/>'
++'<path d="M1108 160 L1129 152 L1130.3 155 L1109 163 Z"/>'
++'<path d="M1129 152 L1142 187 L1138.5 188.3 L1125.5 154 Z"/>'
 +'</g>'
-+'<g class="snow" opacity=".5"><rect x="130" y="178" width="90" height="2.5" rx="1.25"/><rect x="380" y="186" width="130" height="2.5" rx="1.25"/><rect x="640" y="180" width="90" height="2.5" rx="1.25"/><rect x="860" y="188" width="120" height="2.5" rx="1.25"/><rect x="1060" y="180" width="80" height="2.5" rx="1.25"/></g>'
++'<g class="snow" opacity=".45"><rect x="360" y="182" width="120" height="2.5" rx="1.25"/><rect x="560" y="176" width="90" height="2.5" rx="1.25"/><rect x="720" y="185" width="110" height="2.5" rx="1.25"/><rect x="930" y="179" width="80" height="2.5" rx="1.25"/></g>'
 +'<g class="near"><path d="M0 200 L0 188 Q200 181 400 186 Q650 191 900 184 Q1050 181 1200 187 L1200 200 Z"/>'
-+'<path d="M82 189 L86 175 L89 183 L93 173 L96 184 L100 177 L102 190 Z"/>'
-+'<path d="M1122 187 L1126 174 L1129 182 L1133 172 L1136 183 L1140 176 L1142 188 Z"/>'
++'<path d="M120 189 L124 175 L127 183 L131 173 L134 184 L138 177 L140 190 Z"/>'
++'<path d="M980 187 L984 174 L987 182 L991 172 L994 183 L998 176 L1000 188 Z"/>'
 +'</g>';
 /* mascot: a friendly Burmese cat (warm sable-brown, copper eyes) */
 function MY_MASCOT(m){var base='<path d="M14 21 L20 6 L28 20 Z" fill="#8A6A52"/><path d="M50 21 L44 6 L36 20 Z" fill="#8A6A52"/><path d="M17.5 18 L21 9 L25 18 Z" fill="#E4B4A2"/><path d="M46.5 18 L43 9 L39 18 Z" fill="#E4B4A2"/><circle cx="32" cy="34" r="21" fill="#9A7A62"/><ellipse cx="32" cy="41" rx="12.5" ry="9" fill="#EEDDC8"/><circle cx="20" cy="41" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="44" cy="41" r="3" fill="var(--crimson)" opacity="0.18"/><path d="M30 39 L34 39 L32 42 Z" fill="#7A4A3A"/><g stroke="#EEDDC8" stroke-width="1" stroke-linecap="round" opacity=".85"><line x1="20" y1="41" x2="9" y2="39"/><line x1="20" y1="43" x2="9" y2="45"/><line x1="44" y1="41" x2="55" y2="39"/><line x1="44" y1="43" x2="55" y2="45"/></g>';
