@@ -96,8 +96,8 @@ function serialize(arr){return '[\n'+arr.map(function(s){return JSON.stringify(s
 
 function run(argv){
   var lang=argv[0],check=argv.indexOf('--check')>=0;
-  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'}}[lang];
-  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km [--check]';
+  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'}}[lang];
+  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my [--check]';
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
   var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));
   var txt=serialize(extract(pack));

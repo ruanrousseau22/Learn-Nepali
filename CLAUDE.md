@@ -15,17 +15,22 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
-  at 12 zones and growing zone by zone (early-access label dropped July 2026).
+  at 12 zones and growing zone by zone (early-access label dropped July 2026);
+  **Burmese launched at Zone 1 (The Script) July 2026** and grows zone by zone.
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
 - `index.html` — the whole app + the inline Nepali pack
 - `lang/km.js` — Khmer pack (data, art, registerPack call)
+- `lang/my.js` — Burmese pack (Zone 1 · The Script; data, secular art, registerPack)
 - `audio/` — Nepali recorded clips + `manifest.json`; `audio_strings.json` is
   its committed strings source (regenerated from the pack July 2026 during the
   audio health check that re-recorded मान्छे — the one seed word that had been
   falling back to device TTS, heard as a female voice)
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
+- `audio-my/` + `audio_strings_my.json` — Burmese clips, manifest and strings source
+  (74 clips: ဎ / U+100E, a rare Pali letter, has no clip — edge-tts returns no
+  audio for it, so it gracefully falls back to device TTS)
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `extract_audio_strings.js` — JXA extractor that regenerates a language's
   audio strings file from its pack (see Audio → Regenerating audio)
@@ -44,7 +49,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `EducationalApplication` with a `teaches` array + one `Course` per language).
   **Update all of these when you ship a new language**: add the language to the
   title/description/keywords, the `teaches` array, and add a `Course` entry — so
-  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer.
+  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer + Burmese.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -241,10 +246,25 @@ small-talk trio អាយុប៉ុន្មាន/រៀបការហើយ
 
 ## Multi-language expansion
 Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
-(live), Amharic (next new language) · Phase 2: Burmese, Sinhala,
+(live), Amharic · Phase 2: Burmese (started July 2026 — Zone 1 live), Sinhala,
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
+- **Burmese (`lang/my.js`)** launched at Zone 1 "The Script" (7 topics / 35
+  lessons: velars, sibilants, dentals, labials, the remaining consonants,
+  vowel signs, then tones + first words). Romanization is the h-prefix
+  aspiration scheme (hk/hs/ht/hp) so **th stays reserved for သ /θ/** — documented
+  at the top of `lang/my.js`. No Intensive (Nepal-specific). Grow zone by zone:
+  append to `MY_UNITS`/`MY_LESSONS`, add SYM, `extract_audio_strings.js my` then
+  `generate_audio.py --lang my`. Zone 2 candidates: greetings, pronouns, numbers
+  (Burmese digits ၀–၉ are defined in `MY_NUMS` but not yet taught), courtesy,
+  introductions — mirror Khmer's early zones, researched against Burmese sources.
+  **Burmese font gotcha:** its reordering vowels/medials (prevowel ေ, ya-yit ြ,
+  ya-pin ျ) shatter into dotted boxes when rendered in the system fallback font.
+  Any Burmese must keep **Noto Sans Myanmar in its font stack** — `.deva`/`.mc`/
+  `.mtile` etc. already do; bare Burmese in note titles (`.exq`) / prose
+  (`.note-body`) is covered by the `:root[data-lang="my"]` font rule next to the
+  scenery palette. Put inline Burmese in notes inside `<span class="deva">`.
 - Khmer grows zone by zone (Zones 1–12 shipped). **From Zone 8 on, the Khmer
   curriculum is Khmer-driven, not a Nepali mirror** (Ruan, July 2026):
   topics come from what Khmer itself needs — researched against FSI
@@ -382,6 +402,7 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
   repo root):
   ```
   osascript -l JavaScript extract_audio_strings.js km          # lang/km.js  → audio_strings_km.json
+  osascript -l JavaScript extract_audio_strings.js my          # lang/my.js  → audio_strings_my.json
   osascript -l JavaScript extract_audio_strings.js ne          # index.html  → audio_strings.json
   osascript -l JavaScript extract_audio_strings.js km --check  # verify only, writes nothing
   ```

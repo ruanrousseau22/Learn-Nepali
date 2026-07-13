@@ -31,6 +31,11 @@ LANGS = {
         "outdir": "audio-km",
         "voices": {"male": "km-KH-PisethNeural", "female": "km-KH-SreymomNeural"},
     },
+    "my": {
+        "strings": "audio_strings_my.json",
+        "outdir": "audio-my",
+        "voices": {"male": "my-MM-ThihaNeural", "female": "my-MM-NilarNeural"},
+    },
 }
 
 
