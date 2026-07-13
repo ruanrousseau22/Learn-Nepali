@@ -94,6 +94,16 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-yeti{position:absolute;right:8px;bottom:8px;width:132px;height:132px;z-index:3;filter:drop-shadow(0 10px 12px rgba(0,0,0,.22))}
 @media(max-width:640px){.hero-inner{min-height:236px}.hero-yeti{width:96px;height:96px}.hero-text{max-width:70%}}
 @media(max-width:430px){.hero-yeti{width:78px;height:78px;opacity:.95}}
+/* home-page language switcher — sits inside the hero art, top-right */
+.lang-switch{position:absolute;top:13px;right:14px;z-index:5;display:flex;gap:7px}
+.lang-chip{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 8px;border-radius:100px;border:1px solid var(--line);background:color-mix(in srgb,var(--card) 76%,transparent);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);color:var(--ink);font-family:inherit;font-weight:800;font-size:12.5px;letter-spacing:-.01em;cursor:pointer;box-shadow:var(--shadow);transition:.15s ease;opacity:.8}
+.lang-chip:hover{opacity:1;border-color:var(--crimson)}
+.lang-chip.on{opacity:1;border-color:var(--crimson);background:var(--card);box-shadow:0 4px 14px -6px rgba(155,40,32,.5)}
+.lang-chip .flag{height:15px;width:auto;display:block;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 1px 2px rgba(0,0,0,.25);flex:none}
+.lang-chip .flag-np{border-radius:0;box-shadow:none;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.3))}
+.lang-chip-name{white-space:nowrap}
+@media(max-width:560px){.lang-switch{top:10px;right:10px;gap:5px}.lang-chip{padding:5px 9px 5px 7px;font-size:11.5px;gap:6px}.lang-chip .flag{height:13px}}
+@media(max-width:400px){.lang-chip-name{display:none}.lang-chip{padding:6px}}
 
 /* slim mountain band for sub-pages — a calmer echo of the home hero */
 .page-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;margin-bottom:24px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
@@ -837,6 +847,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
         <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
     </svg>
+    <div class="lang-switch" id="lang-switch" role="group" aria-label="Choose course language"></div>
     <div class="hero-inner">
       <div class="hero-text">
         <h1 class="display">Learn <em>Nepali</em></h1>
@@ -885,7 +896,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     </svg>
     <div class="pb-inner">
       <h2>The alphabet <span class="deva" id="alpha-native">देवनागरी</span></h2>
-      <button class="pb-btn" onclick="openAlphaCards()"><span aria-hidden="true">🃏</span> Alphabet flashcards</button>
+      <button class="pb-btn" onclick="openAlphaCards()">Alphabet flashcards</button>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -989,7 +1000,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     </svg>
     <div class="pb-inner">
       <h2>Language Intensive <span class="deva">सघन</span></h2>
-      <button class="pb-btn" onclick="openResources()"><span aria-hidden="true">💡</span> Advice for Intensive</button>
+      <button class="pb-btn" onclick="openResources()">Advice for Intensive</button>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -8478,6 +8489,22 @@ const LANG_CATALOG=[
   {code:'ne',label:'Nepali — नेपाली'},
   {code:'km',label:'Khmer — ខ្មែរ'},
 ];
+/* inline SVG national flags for the home switcher (crisp & consistent across
+   devices, unlike emoji flags). Nepal = crimson double-pennant with white
+   moon & sun; Cambodia = blue-red-blue with the white Angkor Wat silhouette. */
+const LANG_FLAGS={
+  ne:'<svg class="flag flag-np" viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3 L34 20 L18 27 L34 36 L3 47 Z" fill="#DC143C" stroke="#003893" stroke-width="2.6" stroke-linejoin="round"/><path d="M13 9 A4 4 0 1 0 13 17 A2.9 2.9 0 1 1 13 9 Z" fill="#fff"/><g stroke="#fff" stroke-width="1.15" stroke-linecap="round"><line x1="10.5" y1="31.8" x2="10.5" y2="40.2"/><line x1="6.3" y1="36" x2="14.7" y2="36"/><line x1="7.5" y1="33" x2="13.5" y2="39"/><line x1="13.5" y1="33" x2="7.5" y2="39"/></g><circle cx="10.5" cy="36" r="2.4" fill="#fff"/></svg>',
+  km:'<svg class="flag flag-kh" viewBox="0 0 34 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="34" height="22" rx="2.5" fill="#032EA1"/><rect y="5.5" width="34" height="11" fill="#E00025"/><g fill="#fff"><rect x="7.5" y="14.6" width="19" height="1.5"/><rect x="9.2" y="13.1" width="15.6" height="1.4"/><path d="M15.4 13 C15.4 10.2 15.6 8.6 17 6.4 C18.4 8.6 18.6 10.2 18.6 13 Z"/><path d="M11 13 C11 11.2 11.1 10 12.1 8.6 C13.1 10 13.2 11.2 13.2 13 Z"/><path d="M20.8 13 C20.8 11.2 20.9 10 21.9 8.6 C22.9 10 23 11.2 23 13 Z"/><path d="M17 6.4 L16.4 4.6 L17 3.4 L17.6 4.6 Z"/></g></svg>',
+};
+function paintHomeLangSwitch(){
+  const w=document.getElementById('lang-switch');if(!w)return;
+  if(LANG_CATALOG.length<2){w.style.display='none';w.innerHTML='';return;}
+  w.style.display='';
+  w.innerHTML=LANG_CATALOG.map(function(l){
+    const on=l.code===LANG.code,name=l.label.split('—')[0].trim();
+    return '<button type="button" class="lang-chip'+(on?' on':'')+'"'+(on?' aria-current="true"':'')+' title="'+name+'" onclick="switchLang(\''+l.code+'\')">'+(LANG_FLAGS[l.code]||'')+'<span class="lang-chip-name">'+name+'</span></button>';
+  }).join('');
+}
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
 async function switchLang(code){
   if(!LANG||code===LANG.code)return;
@@ -8499,7 +8526,7 @@ function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
   paintUnlock(); /* Intensive tab: needs a pack with an Intensive track AND the access code */
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};
   set('alpha-native',al.native);set('pdeva-vowels',al.vowels);set('pdeva-consonants',al.cons);set('pdeva-numerals',al.nums);
-  applyArt();paintLangPicker();}
+  applyArt();paintLangPicker();paintHomeLangSwitch();}
 /* per-language scenery: the built-in SVGs are the Nepali art (captured once as
    the default); a pack overrides them via art:{hero,band,mascot}. The data-lang
    attribute drives the per-language color palette in CSS. */
