@@ -297,37 +297,59 @@ const MY_LESSONS=[
 {t:'match',q:'Match word and meaning',pairs:[['ရေ','water'],['လူ','person'],['ကောင်း','good'],['မင်္ဂလာပါ','hello']]}]},
 ];
 
-/* ---------- per-language art (secular: Shan hills, timber house, toddy palms,
-   rice paddies — NO pagodas/temples, per the art rule) ---------- */
+/* ---------- per-language art (secular: misty Shan ridges over a lake, a
+   U Bein-style teak footbridge with tiny walkers, an Inle leg-rowing fisherman
+   with his cone net — NO pagodas/temples, per the art rule) ---------- */
 const MY_HERO='<circle class="orb-glow" cx="922" cy="96" r="74"/><circle class="orb" cx="922" cy="96" r="45"/>'
 +'<g class="hero-stars" aria-hidden="true"><circle cx="130" cy="60" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="250" cy="108" r="1.2"/><circle cx="366" cy="48" r="2"/><circle cx="478" cy="124" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="566" cy="72" r="1.6"/><circle cx="684" cy="42" r="1.3" class="tw" style="animation-delay:.6s"/><circle cx="792" cy="114" r="1.8"/><circle cx="864" cy="150" r="1.3"/><circle cx="1020" cy="64" r="1.6" class="tw" style="animation-delay:1.8s"/><circle cx="1092" cy="120" r="1.4"/><circle cx="1136" cy="46" r="1.2"/><circle cx="180" cy="140" r="1.5"/><circle cx="326" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/><circle cx="626" cy="136" r="1.5"/></g>'
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
 +'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>'
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
-/* far: rolling Shan hills */
-+'<path class="far" d="M0 214 Q110 168 220 202 Q330 164 440 200 Q550 166 660 200 Q770 162 880 200 Q990 168 1100 200 Q1155 184 1200 196 L1200 320 L0 320 Z"/>'
-/* mid: closer hills, a timber house on posts & two toddy palms */
-+'<path class="mid" d="M0 320 L0 276 Q220 250 440 268 Q680 288 900 262 Q1050 246 1200 268 L1200 320 Z '
-+'M598 268 L598 232 L606 232 L606 268 Z M646 270 L646 232 L654 232 L654 270 Z M694 270 L694 232 L702 232 L702 270 Z M742 268 L742 232 L750 232 L750 268 Z '
-+'M586 236 L586 200 L762 200 L762 236 Z M566 206 L674 150 L782 206 Z '
-+'M600 268 L620 236 L627 236 L607 268 Z '
-+'M492 262 C495 234 493 210 496 186 L500 187 C498 210 501 236 499 264 Z '
-+'M497 184 C484 176 470 174 459 178 C472 178 484 182 495 188 Z M497 184 C508 174 521 171 532 175 C521 176 509 181 499 188 Z M497 184 C491 170 482 163 471 161 C482 168 490 176 495 186 Z M497 184 C503 170 512 163 523 161 C512 168 503 176 498 186 Z M497 184 C497 168 493 157 485 151 C491 160 494 172 495 184 Z"/>'
-/* near: rice paddies + a toddy palm */
-+'<g class="near"><path d="M0 298 Q160 262 320 294 Q480 320 640 288 Q800 258 960 296 Q1080 314 1200 292 L1200 320 L0 320 Z"/>'
-+'<path d="M980 302 C986 262 982 222 988 188 L994 190 C990 224 996 262 992 304 Z"/>'
-+'<path d="M991 186 C968 172 944 170 924 178 C946 176 970 182 989 192 Z"/><path d="M991 186 C1010 168 1034 164 1056 172 C1036 172 1012 180 994 192 Z"/><path d="M991 186 C980 164 962 152 940 150 C962 158 978 170 988 190 Z"/><path d="M991 186 C1002 162 1020 150 1044 148 C1022 156 1004 170 995 190 Z"/><path d="M991 186 C990 160 982 140 966 130 C978 144 986 164 989 188 Z"/>'
-+'<circle cx="986" cy="190" r="3"/><circle cx="997" cy="190" r="3"/><circle cx="991" cy="195" r="3"/>'
+/* far: tall misty Shan ridges — the flat fill below them reads as the lake */
++'<path class="far" d="M0 236 Q60 184 120 214 Q200 148 280 206 Q340 178 400 212 Q470 158 560 208 Q630 182 700 214 Q780 154 870 206 Q940 180 1010 214 Q1090 172 1200 204 L1200 320 L0 320 Z"/>'
+/* mid (teak brown): U Bein-style footbridge on A-frame stilts with tiny
+   walkers (one under a parasol) + an Inle leg-rowing fisherman & his cone net */
++'<g class="mid">'
++'<path d="M455 202 L1200 202 L1200 208 L455 208 Z"/>'
++'<path d="M455 189 L1200 189 L1200 192 L455 192 Z"/>'
++'<path d="M465 192 L469 192 L469 202 L465 202 Z M530 192 L534 192 L534 202 L530 202 Z M595 192 L599 192 L599 202 L595 202 Z M660 192 L664 192 L664 202 L660 202 Z M725 192 L729 192 L729 202 L725 202 Z M790 192 L794 192 L794 202 L790 202 Z M855 192 L859 192 L859 202 L855 202 Z M920 192 L924 192 L924 202 L920 202 Z M985 192 L989 192 L989 202 L985 202 Z M1050 192 L1054 192 L1054 202 L1050 202 Z M1115 192 L1119 192 L1119 202 L1115 202 Z M1180 192 L1184 192 L1184 202 L1180 202 Z"/>'
++'<path d="M488 208 L475 280 L480 280 L490 220 L500 280 L505 280 L492 208 Z M598 208 L585 280 L590 280 L600 220 L610 280 L615 280 L602 208 Z M708 208 L695 280 L700 280 L710 220 L720 280 L725 280 L712 208 Z M818 208 L805 280 L810 280 L820 220 L830 280 L835 280 L822 208 Z M928 208 L915 280 L920 280 L930 220 L940 280 L945 280 L932 208 Z M1038 208 L1025 280 L1030 280 L1040 220 L1050 280 L1055 280 L1042 208 Z M1148 208 L1135 280 L1140 280 L1150 220 L1160 280 L1165 280 L1152 208 Z"/>'
++'<path d="M697 189 L703 189 L702 202 L698 202 Z"/><circle cx="700" cy="184.5" r="3"/>'
++'<path d="M947 189 L953 189 L952 202 L948 202 Z"/><circle cx="950" cy="184.5" r="3"/>'
++'<path d="M938 181 Q950 170 962 181 L960 183 Q950 174 940 183 Z"/><path d="M949.3 172 L950.7 172 L950.7 186 L949.3 186 Z"/>'
++'<path d="M1087.5 190 L1092.5 190 L1091.7 202 L1088.3 202 Z"/><circle cx="1090" cy="185.8" r="2.7"/>'
++'<path d="M212 262 Q276 250 344 258 L338 269 Q276 258 220 270 Z"/>'
++'<path d="M320 226 L327 225 L331 248 L324 250 Z"/><circle cx="325" cy="219" r="4.8"/>'
++'<path d="M324 249 L322 258 L327 258 L329 249 Z"/>'
++'<path d="M330 246 Q340 248 345 240 L348 243 Q342 253 331 251 Z"/>'
++'<path d="M345 240 L362 276 L358.5 278 L342 243 Z"/>'
++'<path d="M321 231 L305 244 L307 247 L323 235 Z"/>'
++'<path d="M306 244 L288 272 L291.5 274 L309 247 Z"/><path d="M307 246 L300 274 L303 275 L310 248 Z"/>'
++'<ellipse cx="292" cy="272.5" rx="13" ry="3.2"/>'
++'</g>'
+/* moon/sun glints on the lake */
++'<g class="snow" opacity=".5"><rect x="140" y="282" width="110" height="3" rx="1.5"/><rect x="350" y="292" width="150" height="3" rx="1.5"/><rect x="600" y="286" width="100" height="3" rx="1.5"/><rect x="770" y="294" width="120" height="3" rx="1.5"/><rect x="1000" y="284" width="90" height="3" rx="1.5"/><rect x="520" y="300" width="90" height="3" rx="1.5"/></g>'
+/* near: low grassy bank with elephant-grass tufts */
++'<g class="near"><path d="M0 320 L0 304 Q170 294 340 302 Q560 310 780 300 Q1000 292 1200 302 L1200 320 Z"/>'
++'<path d="M84 305 L89 285 L92 298 L97 283 L100 299 L105 289 L108 306 Z"/>'
++'<path d="M680 303 L685 286 L688 297 L692 283 L695 298 L700 289 L703 304 Z"/>'
++'<path d="M1140 302 L1145 286 L1148 296 L1152 284 L1155 297 L1159 288 L1162 303 Z"/>'
 +'</g>';
 const MY_BAND='<circle class="orb-glow" cx="1046" cy="54" r="36"/><circle class="orb" cx="1046" cy="54" r="21"/>'
-+'<path class="far" d="M0 150 Q80 126 160 144 Q240 124 320 142 Q400 124 480 142 Q560 124 640 142 Q720 124 800 142 Q880 124 960 142 Q1040 126 1120 142 Q1160 134 1200 142 L1200 200 L0 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 172 Q300 162 600 170 Q900 178 1200 166 L1200 200 Z '
-+'M576 170 L576 144 L582 144 L582 170 Z M608 172 L608 144 L614 144 L614 172 Z M640 172 L640 144 L646 144 L646 172 Z M672 170 L672 144 L678 144 L678 170 Z '
-+'M568 146 L568 122 L686 122 L686 146 Z M554 126 L627 90 L700 126 Z '
-+'M578 170 L592 148 L598 148 L584 170 Z"/>'
-+'<g class="near"><path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>'
-+'<path d="M958 186 C962 162 960 142 964 124 L969 126 C966 144 970 166 968 188 Z"/>'
-+'<path d="M966 122 C950 112 934 110 920 116 C936 114 952 118 964 126 Z"/><path d="M966 122 C980 108 996 104 1010 110 C996 110 980 116 968 126 Z"/><path d="M966 122 C958 104 946 96 932 94 C946 102 956 110 964 124 Z"/><path d="M966 122 C974 104 986 96 1000 94 C986 102 976 110 968 124 Z"/>'
++'<path class="far" d="M0 148 Q60 112 120 134 Q200 92 280 130 Q340 108 400 134 Q470 96 560 130 Q630 110 700 136 Q780 94 870 130 Q940 108 1010 136 Q1090 102 1200 128 L1200 200 L0 200 Z"/>'
++'<g class="mid">'
++'<path d="M420 126 L1200 126 L1200 131 L420 131 Z"/>'
++'<path d="M420 116 L1200 116 L1200 118.5 L420 118.5 Z"/>'
++'<path d="M430 118.5 L433.5 118.5 L433.5 126 L430 126 Z M495 118.5 L498.5 118.5 L498.5 126 L495 126 Z M560 118.5 L563.5 118.5 L563.5 126 L560 126 Z M625 118.5 L628.5 118.5 L628.5 126 L625 126 Z M690 118.5 L693.5 118.5 L693.5 126 L690 126 Z M755 118.5 L758.5 118.5 L758.5 126 L755 126 Z M820 118.5 L823.5 118.5 L823.5 126 L820 126 Z M885 118.5 L888.5 118.5 L888.5 126 L885 126 Z M950 118.5 L953.5 118.5 L953.5 126 L950 126 Z M1015 118.5 L1018.5 118.5 L1018.5 126 L1015 126 Z M1080 118.5 L1083.5 118.5 L1083.5 126 L1080 126 Z M1145 118.5 L1148.5 118.5 L1148.5 126 L1145 126 Z"/>'
++'<path d="M453.5 131 L444 176 L448 176 L455 141 L462 176 L466 176 L456.5 131 Z M563.5 131 L554 176 L558 176 L565 141 L572 176 L576 176 L566.5 131 Z M673.5 131 L664 176 L668 176 L675 141 L682 176 L686 176 L676.5 131 Z M783.5 131 L774 176 L778 176 L785 141 L792 176 L796 176 L786.5 131 Z M893.5 131 L884 176 L888 176 L895 141 L902 176 L906 176 L896.5 131 Z M1003.5 131 L994 176 L998 176 L1005 141 L1012 176 L1016 176 L1006.5 131 Z M1113.5 131 L1104 176 L1108 176 L1115 141 L1122 176 L1126 176 L1116.5 131 Z"/>'
++'<path d="M757.5 114 L762.5 114 L761.7 126 L758.3 126 Z"/><circle cx="760" cy="109.8" r="2.7"/>'
++'<path d="M997.5 114 L1002.5 114 L1001.7 126 L998.3 126 Z"/><circle cx="1000" cy="109.8" r="2.7"/>'
++'<path d="M990 107 Q1000 98 1010 107 L1008.4 108.6 Q1000 101.5 991.6 108.6 Z"/><path d="M999.4 100 L1000.6 100 L1000.6 112 L999.4 112 Z"/>'
++'</g>'
++'<g class="snow" opacity=".5"><rect x="130" y="178" width="90" height="2.5" rx="1.25"/><rect x="380" y="186" width="130" height="2.5" rx="1.25"/><rect x="640" y="180" width="90" height="2.5" rx="1.25"/><rect x="860" y="188" width="120" height="2.5" rx="1.25"/><rect x="1060" y="180" width="80" height="2.5" rx="1.25"/></g>'
++'<g class="near"><path d="M0 200 L0 188 Q200 181 400 186 Q650 191 900 184 Q1050 181 1200 187 L1200 200 Z"/>'
++'<path d="M82 189 L86 175 L89 183 L93 173 L96 184 L100 177 L102 190 Z"/>'
++'<path d="M1122 187 L1126 174 L1129 182 L1133 172 L1136 183 L1140 176 L1142 188 Z"/>'
 +'</g>';
 /* mascot: a friendly Burmese cat (warm sable-brown, copper eyes) */
 function MY_MASCOT(m){var base='<path d="M14 21 L20 6 L28 20 Z" fill="#8A6A52"/><path d="M50 21 L44 6 L36 20 Z" fill="#8A6A52"/><path d="M17.5 18 L21 9 L25 18 Z" fill="#E4B4A2"/><path d="M46.5 18 L43 9 L39 18 Z" fill="#E4B4A2"/><circle cx="32" cy="34" r="21" fill="#9A7A62"/><ellipse cx="32" cy="41" rx="12.5" ry="9" fill="#EEDDC8"/><circle cx="20" cy="41" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="44" cy="41" r="3" fill="var(--crimson)" opacity="0.18"/><path d="M30 39 L34 39 L32 42 Z" fill="#7A4A3A"/><g stroke="#EEDDC8" stroke-width="1" stroke-linecap="round" opacity=".85"><line x1="20" y1="41" x2="9" y2="39"/><line x1="20" y1="43" x2="9" y2="45"/><line x1="44" y1="41" x2="55" y2="39"/><line x1="44" y1="43" x2="55" y2="45"/></g>';
