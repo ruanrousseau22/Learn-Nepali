@@ -1015,8 +1015,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     <div class="lu-label">Level up!</div>
     <div class="big-badge" id="lu-badge">2</div>
     <h3 class="display" id="lu-title">Level 2</h3>
-    <div class="rank" id="lu-rank">🏔️ <span class="deva">यात्री</span> · Traveler</div>
-    <p id="lu-msg">Keep climbing — new words await.</p>
+    <div class="rank" id="lu-rank">Traveler</div>
+    <p id="lu-msg">Keep going — new words await.</p>
     <button class="btn btn-primary" onclick="closeLevelup()" style="width:100%;justify-content:center">Continue</button>
   </div>
 </div>
@@ -1032,12 +1032,12 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     </div>
     <div class="profile-bar"><span id="pf-bar"></span></div>
     <div style="text-align:center;font-size:13px;color:var(--ink-soft);margin-bottom:8px" id="pf-next">100 XP to level 2</div>
-    <div class="profile-stat"><span class="pk">🔥 Day streak</span><span class="pv" id="pf-streak">0</span></div>
-    <div class="profile-stat"><span class="pk">🎯 Today's XP</span><span class="pv" id="pf-daily">0 / 50</span></div>
-    <div class="profile-stat"><span class="pk">⭐ Total XP</span><span class="pv" id="pf-xp">0</span></div>
-    <div class="profile-stat"><span class="pk">📚 Words learned</span><span class="pv" id="pf-words">0</span></div>
-    <div class="profile-stat"><span class="pk">🎓 Lessons done</span><span class="pv" id="pf-lessons">0 / 17</span></div>
-    <div class="profile-stat"><span class="pk">💯 Accuracy</span><span class="pv" id="pf-acc">—</span></div>
+    <div class="profile-stat"><span class="pk">Day streak</span><span class="pv" id="pf-streak">0</span></div>
+    <div class="profile-stat"><span class="pk">Today's XP</span><span class="pv" id="pf-daily">0 / 50</span></div>
+    <div class="profile-stat"><span class="pk">Total XP</span><span class="pv" id="pf-xp">0</span></div>
+    <div class="profile-stat"><span class="pk">Words learned</span><span class="pv" id="pf-words">0</span></div>
+    <div class="profile-stat"><span class="pk">Lessons done</span><span class="pv" id="pf-lessons">0 / 17</span></div>
+    <div class="profile-stat"><span class="pk">Accuracy</span><span class="pv" id="pf-acc">—</span></div>
   </div>
 </div>
 
@@ -8317,7 +8317,9 @@ function scrollToCurrent(v){const root=document.getElementById(v==='intensive'?'
 
 /* ===== LEVELING ENGINE ===== */
 const MAX_LEVEL=50;
-const RANKS=[{min:50,name:'Sherpa',deva:'शेर्पा',emoji:'🏔️'},{min:35,name:'Mountaineer',deva:'हिमारोही',emoji:'⛰️'},{min:20,name:'Climber',deva:'आरोही',emoji:'🧗'},{min:10,name:'Trekker',deva:'पदयात्री',emoji:'🥾'},{min:5,name:'Traveler',deva:'यात्री',emoji:'🧭'},{min:1,name:'Newcomer',deva:'नौलो',emoji:'🌱'}];
+/* Ranks are global across all languages (shared XP), so they are language-neutral
+   — no native script, no emoji. A journey/exploration ladder. */
+const RANKS=[{min:50,name:'Globetrotter'},{min:35,name:'Voyager'},{min:20,name:'Adventurer'},{min:10,name:'Explorer'},{min:5,name:'Traveler'},{min:1,name:'Newcomer'}];
 function rankFor(lvl){return RANKS.find(r=>lvl>=r.min)||RANKS[RANKS.length-1];}
 function xpToAdvance(lvl){return 100+(lvl-1)*50;}
 function levelInfo(total){let lvl=1,rem=total;while(lvl<MAX_LEVEL&&rem>=xpToAdvance(lvl)){rem-=xpToAdvance(lvl);lvl++;}const need=xpToAdvance(lvl);return{level:lvl,into:rem,need,pct:lvl>=MAX_LEVEL?100:Math.min(100,rem/need*100),max:lvl>=MAX_LEVEL};}
@@ -8378,16 +8380,16 @@ function abBurst(){const bar=document.getElementById('actionbar');if(!bar)return
 
 /* ===== LEVEL-UP & PROFILE MODALS ===== */
 function celebrate(level){const rk=rankFor(level);document.getElementById('lu-badge').textContent=level;document.getElementById('lu-title').textContent='Level '+level;
-  document.getElementById('lu-rank').innerHTML=rk.emoji+' <span class="deva">'+rk.deva+'</span> · '+rk.name;
-  const prevRank=rankFor(level-1);document.getElementById('lu-msg').textContent=(rk.name!==prevRank.name)?('New rank unlocked: '+rk.name+'! Keep climbing.'):'Keep climbing — you\'re getting fluent.';
+  document.getElementById('lu-rank').textContent=rk.name;
+  const prevRank=rankFor(level-1);document.getElementById('lu-msg').textContent=(rk.name!==prevRank.name)?('New rank unlocked: '+rk.name+'! Keep going.'):'Keep going — you\'re getting fluent.';
   document.getElementById('levelup-modal').classList.add('show');playSound('levelup');confetti();}
 function closeLevelup(){document.getElementById('levelup-modal').classList.remove('show');}
 function openProfile(){const li=levelInfo(S.xp);const rk=rankFor(li.level);document.getElementById('tabs').classList.remove('open');
   document.getElementById('pf-badge').textContent=li.level;
-  document.getElementById('pf-rank').innerHTML='<span class="deva">'+rk.deva+'</span> '+rk.name;
+  document.getElementById('pf-rank').textContent=rk.name;
   document.getElementById('pf-level').textContent='Level '+li.level+(li.max?' · max':'');
   document.getElementById('pf-bar').style.width=li.pct+'%';
-  document.getElementById('pf-next').textContent=li.max?'Highest rank reached 🎉':((li.need-li.into)+' XP to level '+(li.level+1));
+  document.getElementById('pf-next').textContent=li.max?'Highest rank reached':((li.need-li.into)+' XP to level '+(li.level+1));
   document.getElementById('pf-streak').textContent=S.streak+(S.bestStreak>S.streak?(' (best '+S.bestStreak+')'):'');
   document.getElementById('pf-daily').textContent=S.dailyXp+' / '+(S.dailyGoal||50)+(S.dailyXp>=(S.dailyGoal||50)?' ✓':'');
   document.getElementById('pf-xp').textContent=S.xp;
