@@ -16,7 +16,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
   at 12 zones and growing zone by zone (early-access label dropped July 2026);
-  **Burmese launched at Zone 1 (The Script) July 2026** and grows zone by zone.
+  **Burmese live at 2 zones (Script + Foundations), launched July 2026** and
+  growing zone by zone.
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -29,7 +30,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   falling back to device TTS, heard as a female voice)
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
 - `audio-my/` + `audio_strings_my.json` — Burmese clips, manifest and strings source
-  (74 clips: ဎ / U+100E, a rare Pali letter, has no clip — edge-tts returns no
+  (116 clips: ဎ / U+100E, a rare Pali letter, has no clip — edge-tts returns no
   audio for it, so it gracefully falls back to device TTS)
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `extract_audio_strings.js` — JXA extractor that regenerates a language's
@@ -250,15 +251,21 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Burmese (`lang/my.js`)** launched at Zone 1 "The Script" (7 topics / 35
-  lessons: velars, sibilants, dentals, labials, the remaining consonants,
-  vowel signs, then tones + first words). Romanization is the h-prefix
-  aspiration scheme (hk/hs/ht/hp) so **th stays reserved for သ /θ/** — documented
-  at the top of `lang/my.js`. No Intensive (Nepal-specific). Grow zone by zone:
-  append to `MY_UNITS`/`MY_LESSONS`, add SYM, `extract_audio_strings.js my` then
-  `generate_audio.py --lang my`. Zone 2 candidates: greetings, pronouns, numbers
-  (Burmese digits ၀–၉ are defined in `MY_NUMS` but not yet taught), courtesy,
-  introductions — mirror Khmer's early zones, researched against Burmese sources.
+- **Burmese (`lang/my.js`)** live at 2 zones. Zone 1 "The Script" (7 topics:
+  velars, sibilants, dentals, labials, the remaining consonants, vowel signs,
+  then tones + first words). Zone 2 "Foundations" (7 topics: greetings,
+  pronouns incl. speaker-dependent I/you + the တို့ plural, numbers 1–10,
+  numbers to 100 with the flip ဆယ့်တစ်=11 vs နှစ်ဆယ်=20 + ရာ, courtesy,
+  introductions, your-day time words). Romanization is the h-prefix aspiration
+  scheme (hk/hs/ht/hp) so **th stays reserved for သ /θ/**, checked finals take
+  **q** (houq, tiq, shiq), and words are romanized as pronounced (kyanaw,
+  chauq) — documented at the top of `lang/my.js`. No Intensive (Nepal-specific).
+  Grow zone by zone: append to `MY_UNITS`/`MY_LESSONS`, add SYM,
+  `extract_audio_strings.js my` then `generate_audio.py --lang my`. Zone 3
+  candidates: family & kinship terms (which double as pronouns), this/that +
+  basic questions (ဘာ what / ဘယ်မှာ where), simple verbs + the ...တယ်/...မယ်
+  present/future, food & eating out, days & months — research each against
+  Burmese sources (Wikivoyage/Okell/Wiktionary) before shipping.
   **Burmese font gotcha:** its reordering vowels/medials (prevowel ေ, ya-yit ြ,
   ya-pin ျ) shatter into dotted boxes when rendered in the system fallback font.
   Any Burmese must keep **Noto Sans Myanmar in its font stack** — `.deva`/`.mc`/

@@ -12,9 +12,10 @@
 
 const MY_UNITS=[
   {n:1,t:'The Script',d:'မြန်မာအက္ခရာ — read & sound out Burmese',lessons:['my_c1','my_c1_2','my_c1_3','my_c1_4','my_c1_5','my_c2','my_c2_2','my_c2_3','my_c2_4','my_c2_5','my_c3','my_c3_2','my_c3_3','my_c3_4','my_c3_5','my_c4','my_c4_2','my_c4_3','my_c4_4','my_c4_5','my_c5','my_c5_2','my_c5_3','my_c5_4','my_c5_5','my_v1','my_v1_2','my_v1_3','my_v1_4','my_v1_5','my_v2','my_v2_2','my_v2_3','my_v2_4','my_v2_5']},
+  {n:2,t:'Foundations',d:'Greetings, people, numbers & your day',lessons:['my_greet','my_greet_2','my_greet_3','my_greet_4','my_greet_5','my_pron','my_pron_2','my_pron_3','my_pron_4','my_pron_5','my_num1','my_num1_2','my_num1_3','my_num1_4','my_num1_5','my_num2','my_num2_2','my_num2_3','my_num2_4','my_num2_5','my_court','my_court_2','my_court_3','my_court_4','my_court_5','my_intro','my_intro_2','my_intro_3','my_intro_4','my_intro_5','my_day','my_day_2','my_day_3','my_day_4','my_day_5']},
 ];
 
-const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ'};
+const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်'};
 
 const MY_VOWELS=[['အာ','aa'],['အိ','i'],['အီ','ii'],['အု','u'],['အူ','uu'],['အေ','e'],['အဲ','eh'],['အော','aw'],['အို','o'],['အံ','an']];
 /* full traditional 33 for the Alphabet reference. Several are rare Pali-only
@@ -295,6 +296,270 @@ const MY_LESSONS=[
 {t:'mc',q:'Which word means good?',o:['ကောင်း','ရေ','လူ','မင်္ဂလာပါ'],a:0},
 {t:'li',q:'Listen — which word?',say:'မင်္ဂလာပါ',o:['မင်္ဂလာပါ','ရေ','လူ','ကောင်း'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ရေ','water'],['လူ','person'],['ကောင်း','good'],['မင်္ဂလာပါ','hello']]}]},
+
+/* ===================== ZONE 2 · FOUNDATIONS ===================== */
+/* --- Topic 1: greetings --- */
+{id:'my_greet',title:'Greetings',step:'learn',meta:'Hello, how are you & goodbye',vocab:[['မင်္ဂလာပါ','mingalaba','hello'],['နေကောင်းလား','ne kaung la','how are you'],['နေကောင်းပါတယ်','ne kaung ba de','I am well'],['သွားတော့မယ်','thwa daw meh','goodbye'],['တွေ့မယ်','twei meh','see you']],ex:[
+{t:'note',tag:'Zone 2',q:'Everyday Burmese',body:'<p>You can read now — time to <b>talk</b>. You already know <span class="deva">မင်္ဂလာပါ</span> <b>mingalaba</b> (hello). Let us add a few warm everyday lines.</p>',tip:'Keep tapping the speaker to copy the tones.'},
+{t:'note',tag:'How are you?',q:'နေကောင်းလား',body:'<p><span class="deva">နေ</span> (ne) = to be / stay, <span class="deva">ကောင်း</span> (kaung) = well — you know it! — and <span class="deva">လား</span> (la) turns it into a yes/no question. So <span class="deva">နေကောင်းလား</span> = "Are you well?"</p><p>Reply: <span class="deva">နေကောင်းပါတယ်</span> <b>ne kaung ba de</b> — I am well.</p>',eg:[['နေကောင်းလား','ne kaung la','how are you'],['နေကောင်းပါတယ်','ne kaung ba de','I am well']]},
+{t:'mc',q:'Which means "How are you?"',o:['နေကောင်းလား','နေကောင်းပါတယ်','မင်္ဂလာပါ','တွေ့မယ်'],a:0},
+{t:'mc',q:'You are asked နေကောင်းလား. A good reply is…',d:'နေကောင်းလား',o:['နေကောင်းပါတယ်','မင်္ဂလာပါ','သွားတော့မယ်','တွေ့မယ်'],a:0},
+{t:'note',tag:'Saying bye',q:'သွားတော့မယ် · တွေ့မယ်',body:'<p>To leave, say <span class="deva">သွားတော့မယ်</span> <b>thwa daw meh</b> — "I will be going now". Or a light <span class="deva">တွေ့မယ်</span> <b>twei meh</b> — "See you!"</p>',eg:[['သွားတော့မယ်','thwa daw meh','goodbye'],['တွေ့မယ်','twei meh','see you']]},
+{t:'mc',q:'How do you say goodbye (I will be going)?',o:['သွားတော့မယ်','မင်္ဂလာပါ','နေကောင်းလား','နေကောင်းပါတယ်'],a:0},
+{t:'li',q:'Listen — which greeting?',say:'မင်္ဂလာပါ',o:['မင်္ဂလာပါ','နေကောင်းလား','သွားတော့မယ်','တွေ့မယ်'],a:0}]},
+{id:'my_greet_2',title:'Hear the greetings',step:'recognize',meta:'Spot each line',vocab:[],ex:[
+{t:'li',q:'Listen — which line?',say:'နေကောင်းလား',o:['နေကောင်းလား','နေကောင်းပါတယ်','မင်္ဂလာပါ','သွားတော့မယ်'],a:0},
+{t:'mc',q:'Which means "I am well"?',o:['နေကောင်းပါတယ်','နေကောင်းလား','တွေ့မယ်','မင်္ဂလာပါ'],a:0},
+{t:'li',q:'Listen — which line?',say:'သွားတော့မယ်',o:['သွားတော့မယ်','တွေ့မယ်','မင်္ဂလာပါ','နေကောင်းလား'],a:0},
+{t:'mc',q:'The particle လား at the end of a sentence makes it a…',o:['yes/no question','command','number','greeting'],a:0},
+{t:'li',q:'Listen — which line?',say:'တွေ့မယ်',o:['တွေ့မယ်','သွားတော့မယ်','နေကောင်းပါတယ်','မင်္ဂလာပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'နေကောင်းပါတယ်',o:['I am well','hello','goodbye','see you'],a:0},
+{t:'mc',q:'Which word means "hello"?',o:['မင်္ဂလာပါ','တွေ့မယ်','နေကောင်းလား','သွားတော့မယ်'],a:0}]},
+{id:'my_greet_3',title:'Put it together',step:'build',meta:'Greet and reply',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['မင်္ဂလာပါ','hello'],['နေကောင်းလား','how are you'],['နေကောင်းပါတယ်','I am well'],['သွားတော့မယ်','goodbye']]},
+{t:'mc',q:'Someone says မင်္ဂလာပါ. You reply…',o:['မင်္ဂလာပါ','သွားတော့မယ်','တွေ့မယ်','နေကောင်းလား'],a:0},
+{t:'li',q:'Listen — which line?',say:'နေကောင်းပါတယ်',o:['နေကောင်းပါတယ်','နေကောင်းလား','မင်္ဂလာပါ','တွေ့မယ်'],a:0},
+{t:'mc',q:'Which means "see you"?',o:['တွေ့မယ်','မင်္ဂလာပါ','နေကောင်းလား','သွားတော့မယ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['တွေ့မယ်','see you'],['နေကောင်းလား','how are you'],['မင်္ဂလာပါ','hello'],['နေကောင်းပါတယ်','I am well']]}]},
+{id:'my_greet_4',title:'Mix it',step:'mix',meta:'All the greetings',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'သွားတော့မယ်',o:['goodbye','hello','I am well','see you'],a:0},
+{t:'li',q:'Listen — which line?',say:'မင်္ဂလာပါ',o:['မင်္ဂလာပါ','နေကောင်းပါတယ်','သွားတော့မယ်','တွေ့မယ်'],a:0},
+{t:'mc',q:'How do you ask if someone is well?',o:['နေကောင်းလား','နေကောင်းပါတယ်','မင်္ဂလာပါ','တွေ့မယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'တွေ့မယ်',o:['see you','hello','sorry','I am well'],a:0},
+{t:'li',q:'Listen — which line?',say:'နေကောင်းလား',o:['နေကောင်းလား','နေကောင်းပါတယ်','မင်္ဂလာပါ','သွားတော့မယ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['မင်္ဂလာပါ','hello'],['သွားတော့မယ်','goodbye'],['တွေ့မယ်','see you'],['နေကောင်းပါတယ်','I am well']]}]},
+{id:'my_greet_5',title:'Checkpoint',step:'checkpoint',meta:'Greetings mastered?',vocab:[],ex:[
+{t:'mc',q:'Say hello:',o:['မင်္ဂလာပါ','သွားတော့မယ်','နေကောင်းလား','တွေ့မယ်'],a:0},
+{t:'li',q:'Listen — which line?',say:'နေကောင်းပါတယ်',o:['နေကောင်းပါတယ်','နေကောင်းလား','မင်္ဂလာပါ','သွားတော့မယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'နေကောင်းလား',o:['how are you','I am well','goodbye','hello'],a:0},
+{t:'mc',q:'Say goodbye (I will be going):',o:['သွားတော့မယ်','မင်္ဂလာပါ','နေကောင်းပါတယ်','တွေ့မယ်'],a:0},
+{t:'li',q:'Listen — which line?',say:'တွေ့မယ်',o:['တွေ့မယ်','မင်္ဂလာပါ','သွားတော့မယ်','နေကောင်းလား'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['မင်္ဂလာပါ','hello'],['နေကောင်းလား','how are you'],['နေကောင်းပါတယ်','I am well'],['တွေ့မယ်','see you']]}]},
+
+/* --- Topic 2: pronouns --- */
+{id:'my_pron',title:'People',step:'learn',meta:'I, you, he/she, we, they',vocab:[['ကျွန်တော်','kyanaw','I (man speaking)'],['ကျွန်မ','kyama','I (woman speaking)'],['ခင်ဗျား','hkamya','you (man speaking)'],['ရှင်','shin','you (woman speaking)'],['သူ','thu','he / she'],['ကျွန်တော်တို့','kyanaw do','we'],['သူတို့','thu do','they']],ex:[
+{t:'note',tag:'Who is who',q:'I: ကျွန်တော် / ကျွန်မ',body:'<p>Burmese has a polite word for "I" that depends on the <b>speaker</b>: a man says <span class="deva">ကျွန်တော်</span> <b>kyanaw</b>, a woman says <span class="deva">ကျွန်မ</span> <b>kyama</b>.</p>',eg:[['ကျွန်တော်','kyanaw','I — man speaking'],['ကျွန်မ','kyama','I — woman speaking']]},
+{t:'mc',q:'A man says "I" as…',o:['ကျွန်တော်','ကျွန်မ','ခင်ဗျား','သူ'],a:0},
+{t:'mc',q:'A woman says "I" as…',o:['ကျွန်မ','ကျွန်တော်','ရှင်','သူ'],a:0},
+{t:'note',tag:'You & who',q:'ခင်ဗျား / ရှင် / သူ',body:'<p>"You" also depends on the speaker: a man says <span class="deva">ခင်ဗျား</span> <b>hkamya</b>, a woman says <span class="deva">ရှင်</span> <b>shin</b>. And one handy word, <span class="deva">သူ</span> <b>thu</b>, means <b>both</b> "he" and "she".</p>',eg:[['ခင်ဗျား','hkamya','you — man speaking'],['ရှင်','shin','you — woman speaking'],['သူ','thu','he / she']]},
+{t:'mc',q:'Which word means both "he" and "she"?',o:['သူ','ခင်ဗျား','ကျွန်တော်','ရှင်'],a:0},
+{t:'note',tag:'Make it plural',q:'Add တို့',body:'<p>Add <span class="deva">တို့</span> (do) to make a pronoun plural: <span class="deva">ကျွန်တော်တို့</span> = <b>we</b>, <span class="deva">သူတို့</span> = <b>they</b>.</p><p>Tip: Burmese speakers are polite and often <b>drop</b> pronouns, or use a name or title instead.</p>',eg:[['ကျွန်တော်တို့','kyanaw do','we'],['သူတို့','thu do','they']]},
+{t:'mc',q:'How do you say "they"?',o:['သူတို့','ကျွန်တော်တို့','သူ','ရှင်'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'သူ',o:['သူ','ခင်ဗျား','ကျွန်မ','ရှင်'],a:0}]},
+{id:'my_pron_2',title:'Hear the people',step:'recognize',meta:'Spot each pronoun',vocab:[],ex:[
+{t:'li',q:'Listen — which pronoun?',say:'ကျွန်တော်',o:['ကျွန်တော်','ကျွန်မ','ခင်ဗျား','သူ'],a:0},
+{t:'mc',q:'Which means "I" for a woman?',o:['ကျွန်မ','ကျွန်တော်','ရှင်','သူတို့'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ရှင်',o:['ရှင်','ခင်ဗျား','သူ','ကျွန်မ'],a:0},
+{t:'mc',q:'What does this mean?',d:'သူတို့',o:['they','we','you','he / she'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ကျွန်မ',o:['ကျွန်မ','ကျွန်တော်','သူ','ခင်ဗျား'],a:0},
+{t:'mc',q:'ခင်ဗျား is "you" said by a…',o:['man','woman','child','group'],a:0},
+{t:'mc',q:'Which means "we"?',o:['ကျွန်တော်တို့','သူတို့','ကျွန်တော်','ခင်ဗျား'],a:0}]},
+{id:'my_pron_3',title:'Put it together',step:'build',meta:'Match people',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ကျွန်တော်','I (man)'],['ကျွန်မ','I (woman)'],['သူ','he / she'],['သူတို့','they']]},
+{t:'mc',q:'Which means "you" when a woman speaks?',o:['ရှင်','ခင်ဗျား','ကျွန်မ','သူ'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'သူတို့',o:['သူတို့','ကျွန်တော်တို့','သူ','ရှင်'],a:0},
+{t:'mc',q:'The suffix တို့ makes a pronoun…',o:['plural','a question','polite','past'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ခင်ဗျား','you (man)'],['ရှင်','you (woman)'],['ကျွန်တော်တို့','we'],['သူတို့','they']]}]},
+{id:'my_pron_4',title:'Mix it',step:'mix',meta:'All the pronouns',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ကျွန်တော်',o:['I (man speaking)','you','he / she','we'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ခင်ဗျား',o:['ခင်ဗျား','ရှင်','ကျွန်တော်','သူ'],a:0},
+{t:'mc',q:'Which word covers both "he" and "she"?',o:['သူ','သူတို့','ရှင်','ကျွန်မ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ကျွန်တော်တို့',o:['we','they','I','you'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ကျွန်တော်',o:['ကျွန်တော်','ကျွန်မ','သူ','ခင်ဗျား'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ကျွန်မ','I (woman)'],['ခင်ဗျား','you (man)'],['သူ','he / she'],['ကျွန်တော်တို့','we']]}]},
+{id:'my_pron_5',title:'Checkpoint',step:'checkpoint',meta:'People mastered?',vocab:[],ex:[
+{t:'mc',q:'A man says "I" as…',o:['ကျွန်တော်','ကျွန်မ','သူ','ရှင်'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ရှင်',o:['ရှင်','ခင်ဗျား','ကျွန်မ','သူ'],a:0},
+{t:'mc',q:'What does this mean?',d:'သူ',o:['he / she','they','we','you'],a:0},
+{t:'mc',q:'Which means "they"?',o:['သူတို့','ကျွန်တော်တို့','သူ','ခင်ဗျား'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ကျွန်မ',o:['ကျွန်မ','ကျွန်တော်','သူတို့','ခင်ဗျား'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ကျွန်တော်','I (man)'],['ရှင်','you (woman)'],['သူ','he / she'],['သူတို့','they']]}]},
+
+/* --- Topic 3: numbers 1–10 --- */
+{id:'my_num1',title:'Numbers 1–10',step:'learn',meta:'တစ် နှစ် သုံး … ဆယ်',vocab:[['တစ်','tiq','one (၁)'],['နှစ်','hniq','two (၂)'],['သုံး','thoun','three (၃)'],['လေး','le','four (၄)'],['ငါး','nga','five (၅)'],['ခြောက်','chauq','six (၆)'],['ခုနစ်','hkuniq','seven (၇)'],['ရှစ်','shiq','eight (၈)'],['ကိုး','ko','nine (၉)'],['ဆယ်','hse','ten (၁၀)']],ex:[
+{t:'note',tag:'Numbers 1–5',q:'တစ် နှစ် သုံး လေး ငါး',body:'<p><span class="deva">၁ တစ်</span> <b>tiq</b> · <span class="deva">၂ နှစ်</span> <b>hniq</b> · <span class="deva">၃ သုံး</span> <b>thoun</b> · <span class="deva">၄ လေး</span> <b>le</b> · <span class="deva">၅ ငါး</span> <b>nga</b>.</p><p>Burmese has its own digits too: <span class="deva">၁ ၂ ၃ ၄ ၅</span>.</p>',eg:[['တစ်','tiq','1'],['နှစ်','hniq','2'],['သုံး','thoun','3'],['ငါး','nga','5']]},
+{t:'mc',q:'Which number is this?',d:'၃',o:['thoun (3)','hniq (2)','le (4)','nga (5)'],a:0},
+{t:'mc',q:'Which word means "five"?',o:['ငါး','လေး','သုံး','နှစ်'],a:0},
+{t:'note',tag:'Numbers 6–10',q:'ခြောက် ခုနစ် ရှစ် ကိုး ဆယ်',body:'<p><span class="deva">၆ ခြောက်</span> <b>chauq</b> · <span class="deva">၇ ခုနစ်</span> <b>hkuniq</b> · <span class="deva">၈ ရှစ်</span> <b>shiq</b> · <span class="deva">၉ ကိုး</span> <b>ko</b> · <span class="deva">၁၀ ဆယ်</span> <b>hse</b>.</p>',eg:[['ခြောက်','chauq','6'],['ရှစ်','shiq','8'],['ကိုး','ko','9'],['ဆယ်','hse','10']]},
+{t:'mc',q:'Which number is this?',d:'၈',o:['shiq (8)','chauq (6)','ko (9)','hse (10)'],a:0},
+{t:'li',q:'Listen — which number?',say:'ခြောက်',o:['ခြောက်','ကိုး','ဆယ်','ရှစ်'],a:0},
+{t:'mc',q:'Which word means "ten"?',o:['ဆယ်','ကိုး','ရှစ်','ခုနစ်'],a:0}]},
+{id:'my_num1_2',title:'Hear the numbers',step:'recognize',meta:'Spot 1–10',vocab:[],ex:[
+{t:'li',q:'Listen — which number?',say:'သုံး',o:['သုံး','လေး','ငါး','နှစ်'],a:0},
+{t:'mc',q:'Which number is this?',d:'၇',o:['hkuniq (7)','chauq (6)','shiq (8)','ko (9)'],a:0},
+{t:'li',q:'Listen — which number?',say:'ကိုး',o:['ကိုး','ဆယ်','ရှစ်','ခြောက်'],a:0},
+{t:'mc',q:'Which is "two"?',o:['နှစ်','သုံး','လေး','တစ်'],a:0},
+{t:'li',q:'Listen — which number?',say:'ဆယ်',o:['ဆယ်','ကိုး','ငါး','သုံး'],a:0},
+{t:'mc',q:'Which number is this?',d:'၄',o:['le (4)','thoun (3)','nga (5)','hniq (2)'],a:0},
+{t:'mc',q:'Which is "one"?',o:['တစ်','နှစ်','ကိုး','လေး'],a:0}]},
+{id:'my_num1_3',title:'Put it together',step:'build',meta:'Match numbers',vocab:[],ex:[
+{t:'match',q:'Match number and word',pairs:[['တစ်','one'],['နှစ်','two'],['သုံး','three'],['လေး','four'],['ငါး','five']]},
+{t:'mc',q:'Which is "seven"?',o:['ခုနစ်','ခြောက်','ရှစ်','ကိုး'],a:0},
+{t:'li',q:'Listen — which number?',say:'ရှစ်',o:['ရှစ်','ခြောက်','ကိုး','ဆယ်'],a:0},
+{t:'mc',q:'Which number is this?',d:'၆',o:['chauq (6)','shiq (8)','le (4)','hse (10)'],a:0},
+{t:'match',q:'Match number and word',pairs:[['ခြောက်','six'],['ခုနစ်','seven'],['ရှစ်','eight'],['ကိုး','nine'],['ဆယ်','ten']]}]},
+{id:'my_num1_4',title:'Mix it',step:'mix',meta:'All of 1–10',vocab:[],ex:[
+{t:'mc',q:'Which number is this?',d:'၉',o:['ko (9)','chauq (6)','hse (10)','shiq (8)'],a:0},
+{t:'li',q:'Listen — which number?',say:'ငါး',o:['ငါး','လေး','သုံး','နှစ်'],a:0},
+{t:'mc',q:'Which is "ten"?',o:['ဆယ်','ကိုး','ရှစ်','ခုနစ်'],a:0},
+{t:'li',q:'Listen — which number?',say:'တစ်',o:['တစ်','နှစ်','သုံး','လေး'],a:0},
+{t:'mc',q:'Which number is this?',d:'၅',o:['nga (5)','le (4)','thoun (3)','chauq (6)'],a:0},
+{t:'match',q:'Match number and word',pairs:[['တစ်','one'],['သုံး','three'],['ငါး','five'],['ခုနစ်','seven'],['ကိုး','nine']]}]},
+{id:'my_num1_5',title:'Checkpoint',step:'checkpoint',meta:'1–10 mastered?',vocab:[],ex:[
+{t:'mc',q:'Which number is this?',d:'၂',o:['hniq (2)','tiq (1)','thoun (3)','le (4)'],a:0},
+{t:'li',q:'Listen — which number?',say:'ခုနစ်',o:['ခုနစ်','ခြောက်','ရှစ်','ကိုး'],a:0},
+{t:'mc',q:'Which is "four"?',o:['လေး','သုံး','ငါး','နှစ်'],a:0},
+{t:'mc',q:'Which number is this?',d:'၁၀',o:['hse (10)','ko (9)','shiq (8)','chauq (6)'],a:0},
+{t:'li',q:'Listen — which number?',say:'ဆယ်',o:['ဆယ်','ကိုး','ရှစ်','ငါး'],a:0},
+{t:'match',q:'Match number and word',pairs:[['နှစ်','two'],['လေး','four'],['ခြောက်','six'],['ရှစ်','eight'],['ဆယ်','ten']]}]},
+
+/* --- Topic 4: numbers 11–100 --- */
+{id:'my_num2',title:'Numbers to 100',step:'learn',meta:'Teens, tens & ရာ',vocab:[['ဆယ့်တစ်','hse tiq','eleven (၁၁)'],['ဆယ့်နှစ်','hse hniq','twelve (၁၂)'],['ဆယ့်ငါး','hse nga','fifteen (၁၅)'],['နှစ်ဆယ်','hniq hse','twenty (၂၀)'],['သုံးဆယ်','thoun hse','thirty (၃၀)'],['တစ်ရာ','tiq ya','one hundred (၁၀၀)']],ex:[
+{t:'note',tag:'Teens: ten-and',q:'ဆယ့် + unit',body:'<p>For 11–19, start with <span class="deva">ဆယ့်</span> <b>hse</b> ("ten-and") then the unit: <span class="deva">ဆယ့်တစ်</span> = 11, <span class="deva">ဆယ့်နှစ်</span> = 12, <span class="deva">ဆယ့်ငါး</span> = 15.</p>',eg:[['ဆယ့်တစ်','hse tiq','11'],['ဆယ့်နှစ်','hse hniq','12'],['ဆယ့်ငါး','hse nga','15']]},
+{t:'mc',q:'Which is "eleven"?',o:['ဆယ့်တစ်','ဆယ့်နှစ်','နှစ်ဆယ်','ဆယ်'],a:0},
+{t:'mc',q:'Which number is this?',d:'၁၂',o:['hse hniq (12)','hse tiq (11)','hniq hse (20)','hse nga (15)'],a:0},
+{t:'note',tag:'Tens: unit-ten',q:'unit + ဆယ်',body:'<p>For 20, 30, 40…, put the unit <b>first</b>: <span class="deva">နှစ်ဆယ်</span> (2 × 10 = 20), <span class="deva">သုံးဆယ်</span> (3 × 10 = 30). Notice the order flips!</p><p>And 100 is <span class="deva">ရာ</span> <b>ya</b> — <span class="deva">တစ်ရာ</span> = one hundred.</p>',eg:[['နှစ်ဆယ်','hniq hse','20'],['သုံးဆယ်','thoun hse','30'],['တစ်ရာ','tiq ya','100']]},
+{t:'mc',q:'Which is "twenty"?',o:['နှစ်ဆယ်','သုံးဆယ်','ဆယ့်နှစ်','တစ်ရာ'],a:0},
+{t:'mc',q:'Which means "one hundred"?',o:['တစ်ရာ','ဆယ်','နှစ်ဆယ်','ဆယ့်တစ်'],a:0},
+{t:'li',q:'Listen — which number?',say:'သုံးဆယ်',o:['သုံးဆယ်','နှစ်ဆယ်','ဆယ့်နှစ်','တစ်ရာ'],a:0}]},
+{id:'my_num2_2',title:'Hear the numbers',step:'recognize',meta:'Spot 11–100',vocab:[],ex:[
+{t:'li',q:'Listen — which number?',say:'ဆယ့်တစ်',o:['ဆယ့်တစ်','ဆယ့်နှစ်','နှစ်ဆယ်','ဆယ့်ငါး'],a:0},
+{t:'mc',q:'Which is "fifteen"?',o:['ဆယ့်ငါး','ဆယ့်နှစ်','နှစ်ဆယ်','သုံးဆယ်'],a:0},
+{t:'li',q:'Listen — which number?',say:'နှစ်ဆယ်',o:['နှစ်ဆယ်','ဆယ့်နှစ်','သုံးဆယ်','တစ်ရာ'],a:0},
+{t:'mc',q:'For the "teens", which word comes FIRST?',o:['ဆယ့် (ten)','the unit','ရာ (hundred)','နှစ် (two)'],a:0},
+{t:'li',q:'Listen — which number?',say:'တစ်ရာ',o:['တစ်ရာ','နှစ်ဆယ်','သုံးဆယ်','ဆယ့်ငါး'],a:0},
+{t:'mc',q:'What does this mean?',d:'သုံးဆယ်',o:['thirty','thirteen','three','three hundred'],a:0}]},
+{id:'my_num2_3',title:'Put it together',step:'build',meta:'Build the numbers',vocab:[],ex:[
+{t:'match',q:'Match number and value',pairs:[['ဆယ့်တစ်','11'],['ဆယ့်နှစ်','12'],['ဆယ့်ငါး','15'],['နှစ်ဆယ်','20'],['သုံးဆယ်','30']]},
+{t:'mc',q:'Which is "twelve"?',o:['ဆယ့်နှစ်','ဆယ့်တစ်','နှစ်ဆယ်','ဆယ့်ငါး'],a:0},
+{t:'li',q:'Listen — which number?',say:'ဆယ့်ငါး',o:['ဆယ့်ငါး','ဆယ့်တစ်','နှစ်ဆယ်','သုံးဆယ်'],a:0},
+{t:'mc',q:'How is 20 built?',o:['unit then ten (နှစ်ဆယ်)','ten then unit (ဆယ့်နှစ်)','just ရာ','just ဆယ်'],a:0},
+{t:'match',q:'Match number and value',pairs:[['နှစ်ဆယ်','20'],['သုံးဆယ်','30'],['တစ်ရာ','100'],['ဆယ့်ငါး','15']]}]},
+{id:'my_num2_4',title:'Mix it',step:'mix',meta:'Teens & tens together',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဆယ့်တစ်',o:['eleven','twenty','one','one hundred'],a:0},
+{t:'li',q:'Listen — which number?',say:'သုံးဆယ်',o:['သုံးဆယ်','နှစ်ဆယ်','ဆယ့်နှစ်','တစ်ရာ'],a:0},
+{t:'mc',q:'Which means "one hundred"?',o:['တစ်ရာ','ဆယ်','နှစ်ဆယ်','ဆယ့်ငါး'],a:0},
+{t:'mc',q:'Which is "twenty"?',o:['နှစ်ဆယ်','ဆယ့်နှစ်','သုံးဆယ်','တစ်ရာ'],a:0},
+{t:'li',q:'Listen — which number?',say:'ဆယ့်နှစ်',o:['ဆယ့်နှစ်','ဆယ့်တစ်','နှစ်ဆယ်','ဆယ့်ငါး'],a:0},
+{t:'match',q:'Match number and value',pairs:[['ဆယ့်တစ်','11'],['ဆယ့်ငါး','15'],['နှစ်ဆယ်','20'],['တစ်ရာ','100']]}]},
+{id:'my_num2_5',title:'Checkpoint',step:'checkpoint',meta:'To 100 mastered?',vocab:[],ex:[
+{t:'mc',q:'Which is "eleven"?',o:['ဆယ့်တစ်','နှစ်ဆယ်','ဆယ့်နှစ်','တစ်ရာ'],a:0},
+{t:'li',q:'Listen — which number?',say:'နှစ်ဆယ်',o:['နှစ်ဆယ်','သုံးဆယ်','ဆယ့်နှစ်','တစ်ရာ'],a:0},
+{t:'mc',q:'What does this mean?',d:'တစ်ရာ',o:['one hundred','eleven','ten','twenty'],a:0},
+{t:'mc',q:'Which is "thirty"?',o:['သုံးဆယ်','နှစ်ဆယ်','ဆယ့်သုံး','တစ်ရာ'],a:0},
+{t:'li',q:'Listen — which number?',say:'ဆယ့်ငါး',o:['ဆယ့်ငါး','ဆယ့်တစ်','နှစ်ဆယ်','သုံးဆယ်'],a:0},
+{t:'match',q:'Match number and value',pairs:[['ဆယ့်နှစ်','12'],['ဆယ့်ငါး','15'],['နှစ်ဆယ်','20'],['သုံးဆယ်','30'],['တစ်ရာ','100']]}]},
+
+/* --- Topic 5: courtesy --- */
+{id:'my_court',title:'Courtesy',step:'learn',meta:'Thanks, sorry, yes & no',vocab:[['ကျေးဇူးတင်ပါတယ်','kyeizu tin ba de','thank you'],['ရပါတယ်','ya ba de','you are welcome'],['တောင်းပန်ပါတယ်','taun ban ba de','sorry'],['တစ်ဆိတ်လောက်','ta hseiq lauk','excuse me'],['ဟုတ်ကဲ့','houq keh','yes'],['မဟုတ်ဘူး','ma houq bu','no']],ex:[
+{t:'note',tag:'Thanks',q:'ကျေးဇူးတင်ပါတယ်',body:'<p><span class="deva">ကျေးဇူးတင်ပါတယ်</span> <b>kyeizu tin ba de</b> — thank you. The reply is a warm <span class="deva">ရပါတယ်</span> <b>ya ba de</b> — "it is fine / you are welcome".</p>',eg:[['ကျေးဇူးတင်ပါတယ်','kyeizu tin ba de','thank you'],['ရပါတယ်','ya ba de','you are welcome']]},
+{t:'mc',q:'How do you say "thank you"?',o:['ကျေးဇူးတင်ပါတယ်','ရပါတယ်','တောင်းပန်ပါတယ်','ဟုတ်ကဲ့'],a:0},
+{t:'mc',q:'Someone thanks you. You reply…',o:['ရပါတယ်','ကျေးဇူးတင်ပါတယ်','မဟုတ်ဘူး','တစ်ဆိတ်လောက်'],a:0},
+{t:'note',tag:'Sorry & excuse me',q:'တောင်းပန် · တစ်ဆိတ်လောက်',body:'<p><span class="deva">တောင်းပန်ပါတယ်</span> <b>taun ban ba de</b> — I am sorry. To get by or get attention, say <span class="deva">တစ်ဆိတ်လောက်</span> <b>ta hseiq lauk</b> — excuse me / just a moment.</p>',eg:[['တောင်းပန်ပါတယ်','taun ban ba de','sorry'],['တစ်ဆိတ်လောက်','ta hseiq lauk','excuse me']]},
+{t:'mc',q:'How do you say "sorry"?',o:['တောင်းပန်ပါတယ်','ကျေးဇူးတင်ပါတယ်','ဟုတ်ကဲ့','ရပါတယ်'],a:0},
+{t:'note',tag:'Yes & no',q:'ဟုတ်ကဲ့ · မဟုတ်ဘူး',body:'<p><span class="deva">ဟုတ်ကဲ့</span> <b>houq keh</b> — yes (polite). <span class="deva">မဟုတ်ဘူး</span> <b>ma houq bu</b> — no. Notice the <span class="deva">မ</span> (ma) in front flips it to "not".</p><p>Small word, big politeness: adding <span class="deva">ပါ</span> (ba) to almost anything makes it softer.</p>',eg:[['ဟုတ်ကဲ့','houq keh','yes'],['မဟုတ်ဘူး','ma houq bu','no']]},
+{t:'li',q:'Listen — which word?',say:'ဟုတ်ကဲ့',o:['ဟုတ်ကဲ့','မဟုတ်ဘူး','ရပါတယ်','ကျေးဇူးတင်ပါတယ်'],a:0}]},
+{id:'my_court_2',title:'Hear the courtesies',step:'recognize',meta:'Spot each phrase',vocab:[],ex:[
+{t:'li',q:'Listen — which phrase?',say:'ကျေးဇူးတင်ပါတယ်',o:['ကျေးဇူးတင်ပါတယ်','ရပါတယ်','တောင်းပန်ပါတယ်','ဟုတ်ကဲ့'],a:0},
+{t:'mc',q:'Which means "no"?',o:['မဟုတ်ဘူး','ဟုတ်ကဲ့','ရပါတယ်','တစ်ဆိတ်လောက်'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'တောင်းပန်ပါတယ်',o:['တောင်းပန်ပါတယ်','ကျေးဇူးတင်ပါတယ်','ရပါတယ်','မဟုတ်ဘူး'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရပါတယ်',o:['you are welcome','thank you','sorry','no'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'မဟုတ်ဘူး',o:['မဟုတ်ဘူး','ဟုတ်ကဲ့','ရပါတယ်','တစ်ဆိတ်လောက်'],a:0},
+{t:'mc',q:'The little word ပါ (ba) added to a phrase makes it more…',o:['polite','loud','past','plural'],a:0}]},
+{id:'my_court_3',title:'Put it together',step:'build',meta:'Match the courtesies',vocab:[],ex:[
+{t:'match',q:'Match phrase and meaning',pairs:[['ကျေးဇူးတင်ပါတယ်','thank you'],['ရပါတယ်','you are welcome'],['တောင်းပန်ပါတယ်','sorry'],['ဟုတ်ကဲ့','yes']]},
+{t:'mc',q:'How do you say "excuse me"?',o:['တစ်ဆိတ်လောက်','ဟုတ်ကဲ့','ကျေးဇူးတင်ပါတယ်','ရပါတယ်'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ဟုတ်ကဲ့',o:['ဟုတ်ကဲ့','မဟုတ်ဘူး','ရပါတယ်','တောင်းပန်ပါတယ်'],a:0},
+{t:'mc',q:'Which means "yes"?',o:['ဟုတ်ကဲ့','မဟုတ်ဘူး','တစ်ဆိတ်လောက်','ရပါတယ်'],a:0},
+{t:'match',q:'Match phrase and meaning',pairs:[['တစ်ဆိတ်လောက်','excuse me'],['မဟုတ်ဘူး','no'],['ဟုတ်ကဲ့','yes'],['ကျေးဇူးတင်ပါတယ်','thank you']]}]},
+{id:'my_court_4',title:'Mix it',step:'mix',meta:'All the courtesies',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'တောင်းပန်ပါတယ်',o:['sorry','thank you','yes','you are welcome'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ရပါတယ်',o:['ရပါတယ်','ကျေးဇူးတင်ပါတယ်','မဟုတ်ဘူး','ဟုတ်ကဲ့'],a:0},
+{t:'mc',q:'How do you say "thank you"?',o:['ကျေးဇူးတင်ပါတယ်','တောင်းပန်ပါတယ်','ရပါတယ်','တစ်ဆိတ်လောက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မဟုတ်ဘူး',o:['no','yes','sorry','thank you'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'တစ်ဆိတ်လောက်',o:['တစ်ဆိတ်လောက်','တောင်းပန်ပါတယ်','ရပါတယ်','ဟုတ်ကဲ့'],a:0},
+{t:'match',q:'Match phrase and meaning',pairs:[['ကျေးဇူးတင်ပါတယ်','thank you'],['တောင်းပန်ပါတယ်','sorry'],['ဟုတ်ကဲ့','yes'],['မဟုတ်ဘူး','no']]}]},
+{id:'my_court_5',title:'Checkpoint',step:'checkpoint',meta:'Courtesy mastered?',vocab:[],ex:[
+{t:'mc',q:'Say "thank you":',o:['ကျေးဇူးတင်ပါတယ်','ရပါတယ်','ဟုတ်ကဲ့','တစ်ဆိတ်လောက်'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'မဟုတ်ဘူး',o:['မဟုတ်ဘူး','ဟုတ်ကဲ့','ရပါတယ်','တောင်းပန်ပါတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရပါတယ်',o:['you are welcome','sorry','no','excuse me'],a:0},
+{t:'mc',q:'Which means "yes"?',o:['ဟုတ်ကဲ့','မဟုတ်ဘူး','ရပါတယ်','တစ်ဆိတ်လောက်'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ကျေးဇူးတင်ပါတယ်',o:['ကျေးဇူးတင်ပါတယ်','တောင်းပန်ပါတယ်','ရပါတယ်','မဟုတ်ဘူး'],a:0},
+{t:'match',q:'Match phrase and meaning',pairs:[['ကျေးဇူးတင်ပါတယ်','thank you'],['ရပါတယ်','you are welcome'],['တောင်းပန်ပါတယ်','sorry'],['မဟုတ်ဘူး','no']]}]},
+
+/* --- Topic 6: introductions --- */
+{id:'my_intro',title:'Introductions',step:'learn',meta:'Name, meeting & where from',vocab:[['နာမည်','nameh','name'],['နာမည်ဘယ်လိုခေါ်လဲ','nameh beh lo hkaw leh','what is your name'],['တွေ့ရတာဝမ်းသာပါတယ်','twei ya da wun tha ba de','nice to meet you'],['ဘယ်ကလာလဲ','beh ga la leh','where are you from'],['မြန်မာ','myanma','Myanmar / Burmese'],['နိုင်ငံ','naingngan','country']],ex:[
+{t:'note',tag:'Names',q:'နာမည်',body:'<p><span class="deva">နာမည်</span> <b>nameh</b> = name. To ask a name: <span class="deva">နာမည်ဘယ်လိုခေါ်လဲ</span> <b>nameh beh lo hkaw leh</b> — literally "name, how is it called?"</p>',eg:[['နာမည်','nameh','name'],['နာမည်ဘယ်လိုခေါ်လဲ','nameh beh lo hkaw leh','what is your name']]},
+{t:'mc',q:'Which means "name"?',o:['နာမည်','နိုင်ငံ','မြန်မာ','ဘယ်ကလာလဲ'],a:0},
+{t:'mc',q:'How do you ask "what is your name"?',o:['နာမည်ဘယ်လိုခေါ်လဲ','ဘယ်ကလာလဲ','တွေ့ရတာဝမ်းသာပါတယ်','နိုင်ငံ'],a:0},
+{t:'note',tag:'Nice to meet you',q:'တွေ့ရတာဝမ်းသာပါတယ်',body:'<p>When you meet someone: <span class="deva">တွေ့ရတာဝမ်းသာပါတယ်</span> <b>twei ya da wun tha ba de</b> — glad to meet you. <span class="deva">ဝမ်းသာ</span> (wun tha) literally means "happy" (belly-good!).</p>',eg:[['တွေ့ရတာဝမ်းသာပါတယ်','twei ya da wun tha ba de','nice to meet you']]},
+{t:'mc',q:'Which means "nice to meet you"?',o:['တွေ့ရတာဝမ်းသာပါတယ်','နာမည်','ဘယ်ကလာလဲ','မြန်မာ'],a:0},
+{t:'note',tag:'Where from',q:'ဘယ်ကလာလဲ',body:'<p><span class="deva">ဘယ်ကလာလဲ</span> <b>beh ga la leh</b> — where are you from? A country is a <span class="deva">နိုင်ငံ</span> <b>naingngan</b>, and this one is <span class="deva">မြန်မာ</span> <b>myanma</b> — Myanmar.</p>',eg:[['ဘယ်ကလာလဲ','beh ga la leh','where are you from'],['မြန်မာ','myanma','Myanmar'],['နိုင်ငံ','naingngan','country']]},
+{t:'li',q:'Listen — which word?',say:'မြန်မာ',o:['မြန်မာ','နိုင်ငံ','နာမည်','ဘယ်ကလာလဲ'],a:0}]},
+{id:'my_intro_2',title:'Hear the introductions',step:'recognize',meta:'Spot each phrase',vocab:[],ex:[
+{t:'li',q:'Listen — which word?',say:'နာမည်',o:['နာမည်','နိုင်ငံ','မြန်မာ','ဘယ်ကလာလဲ'],a:0},
+{t:'mc',q:'Which means "where are you from"?',o:['ဘယ်ကလာလဲ','နာမည်ဘယ်လိုခေါ်လဲ','တွေ့ရတာဝမ်းသာပါတယ်','နိုင်ငံ'],a:0},
+{t:'li',q:'Listen — which word?',say:'နိုင်ငံ',o:['နိုင်ငံ','မြန်မာ','နာမည်','ဘယ်ကလာလဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'မြန်မာ',o:['Myanmar','country','name','hello'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ဘယ်ကလာလဲ',o:['ဘယ်ကလာလဲ','နာမည်ဘယ်လိုခေါ်လဲ','တွေ့ရတာဝမ်းသာပါတယ်','မြန်မာ'],a:0},
+{t:'mc',q:'ဝမ်းသာ (wun tha) literally means…',o:['happy (belly-good)','country','name','tired'],a:0}]},
+{id:'my_intro_3',title:'Put it together',step:'build',meta:'Match the phrases',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['နာမည်','name'],['နိုင်ငံ','country'],['မြန်မာ','Myanmar'],['ဘယ်ကလာလဲ','where are you from']]},
+{t:'mc',q:'Which asks "what is your name"?',o:['နာမည်ဘယ်လိုခေါ်လဲ','ဘယ်ကလာလဲ','နိုင်ငံ','မြန်မာ'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'တွေ့ရတာဝမ်းသာပါတယ်',o:['တွေ့ရတာဝမ်းသာပါတယ်','ဘယ်ကလာလဲ','နာမည်ဘယ်လိုခေါ်လဲ','နိုင်ငံ'],a:0},
+{t:'mc',q:'Which means "country"?',o:['နိုင်ငံ','မြန်မာ','နာမည်','ဘယ်ကလာလဲ'],a:0},
+{t:'match',q:'Match phrase and meaning',pairs:[['တွေ့ရတာဝမ်းသာပါတယ်','nice to meet you'],['နာမည်ဘယ်လိုခေါ်လဲ','what is your name'],['မြန်မာ','Myanmar'],['နိုင်ငံ','country']]}]},
+{id:'my_intro_4',title:'Mix it',step:'mix',meta:'All the introductions',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'နိုင်ငံ',o:['country','name','Myanmar','hello'],a:0},
+{t:'li',q:'Listen — which word?',say:'မြန်မာ',o:['မြန်မာ','နိုင်ငံ','နာမည်','ဘယ်ကလာလဲ'],a:0},
+{t:'mc',q:'How do you greet a new person (nice to meet you)?',o:['တွေ့ရတာဝမ်းသာပါတယ်','ဘယ်ကလာလဲ','နာမည်','မြန်မာ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်ကလာလဲ',o:['where are you from','what is your name','nice to meet you','your country'],a:0},
+{t:'li',q:'Listen — which word?',say:'နာမည်',o:['နာမည်','နိုင်ငံ','မြန်မာ','တွေ့ရတာဝမ်းသာပါတယ်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['နာမည်','name'],['ဘယ်ကလာလဲ','where are you from'],['မြန်မာ','Myanmar'],['တွေ့ရတာဝမ်းသာပါတယ်','nice to meet you']]}]},
+{id:'my_intro_5',title:'Checkpoint',step:'checkpoint',meta:'Introductions mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "name"?',o:['နာမည်','နိုင်ငံ','မြန်မာ','ဘယ်ကလာလဲ'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ဘယ်ကလာလဲ',o:['ဘယ်ကလာလဲ','နာမည်ဘယ်လိုခေါ်လဲ','နိုင်ငံ','မြန်မာ'],a:0},
+{t:'mc',q:'What does this mean?',d:'မြန်မာ',o:['Myanmar','country','name','yes'],a:0},
+{t:'mc',q:'How do you ask "what is your name"?',o:['နာမည်ဘယ်လိုခေါ်လဲ','ဘယ်ကလာလဲ','တွေ့ရတာဝမ်းသာပါတယ်','နိုင်ငံ'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'တွေ့ရတာဝမ်းသာပါတယ်',o:['တွေ့ရတာဝမ်းသာပါတယ်','ဘယ်ကလာလဲ','နာမည်ဘယ်လိုခေါ်လဲ','မြန်မာ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['နာမည်','name'],['နိုင်ငံ','country'],['မြန်မာ','Myanmar'],['တွေ့ရတာဝမ်းသာပါတယ်','nice to meet you']]}]},
+
+/* --- Topic 7: your day --- */
+{id:'my_day',title:'Your day',step:'learn',meta:'Today, tomorrow & times of day',vocab:[['ဒီနေ့','di neh','today'],['မနက်ဖြန်','ma neq hpyan','tomorrow'],['မနေ့က','ma neh ga','yesterday'],['မနက်','ma neq','morning'],['ညနေ','nya ne','evening'],['ည','nya','night']],ex:[
+{t:'note',tag:'Today & around it',q:'ဒီနေ့ · မနက်ဖြန် · မနေ့က',body:'<p><span class="deva">ဒီနေ့</span> <b>di neh</b> = today · <span class="deva">မနက်ဖြန်</span> <b>ma neq hpyan</b> = tomorrow · <span class="deva">မနေ့က</span> <b>ma neh ga</b> = yesterday. The word <span class="deva">နေ့</span> (neh) means "day".</p>',eg:[['ဒီနေ့','di neh','today'],['မနက်ဖြန်','ma neq hpyan','tomorrow'],['မနေ့က','ma neh ga','yesterday']]},
+{t:'mc',q:'Which means "today"?',o:['ဒီနေ့','မနက်ဖြန်','မနေ့က','ည'],a:0},
+{t:'mc',q:'Which means "tomorrow"?',o:['မနက်ဖြန်','ဒီနေ့','မနေ့က','မနက်'],a:0},
+{t:'note',tag:'Times of day',q:'မနက် · ညနေ · ည',body:'<p><span class="deva">မနက်</span> <b>ma neq</b> = morning · <span class="deva">ညနေ</span> <b>nya ne</b> = evening · <span class="deva">ည</span> <b>nya</b> = night.</p>',eg:[['မနက်','ma neq','morning'],['ညနေ','nya ne','evening'],['ည','nya','night']]},
+{t:'mc',q:'Which means "morning"?',o:['မနက်','ည','ညနေ','ဒီနေ့'],a:0},
+{t:'li',q:'Listen — which word?',say:'ည',o:['ည','မနက်','ညနေ','ဒီနေ့'],a:0},
+{t:'mc',q:'Which means "night"?',o:['ည','မနက်','မနေ့က','ဒီနေ့'],a:0}]},
+{id:'my_day_2',title:'Hear the day',step:'recognize',meta:'Spot each word',vocab:[],ex:[
+{t:'li',q:'Listen — which word?',say:'ဒီနေ့',o:['ဒီနေ့','မနက်ဖြန်','မနေ့က','မနက်'],a:0},
+{t:'mc',q:'Which means "yesterday"?',o:['မနေ့က','ဒီနေ့','မနက်ဖြန်','ညနေ'],a:0},
+{t:'li',q:'Listen — which word?',say:'မနက်',o:['မနက်','ည','ညနေ','ဒီနေ့'],a:0},
+{t:'mc',q:'What does this mean?',d:'ညနေ',o:['evening','morning','night','today'],a:0},
+{t:'li',q:'Listen — which word?',say:'မနက်ဖြန်',o:['မနက်ဖြန်','မနေ့က','ဒီနေ့','မနက်'],a:0},
+{t:'mc',q:'The word နေ့ (neh) means…',o:['day','night','morning','year'],a:0}]},
+{id:'my_day_3',title:'Put it together',step:'build',meta:'Match the day',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ဒီနေ့','today'],['မနက်ဖြန်','tomorrow'],['မနေ့က','yesterday'],['မနက်','morning']]},
+{t:'mc',q:'Which means "evening"?',o:['ညနေ','မနက်','ည','ဒီနေ့'],a:0},
+{t:'li',q:'Listen — which word?',say:'ည',o:['ည','ညနေ','မနက်','မနေ့က'],a:0},
+{t:'mc',q:'Which means "tomorrow"?',o:['မနက်ဖြန်','မနေ့က','ဒီနေ့','ညနေ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['မနက်','morning'],['ညနေ','evening'],['ည','night'],['ဒီနေ့','today']]}]},
+{id:'my_day_4',title:'Mix it',step:'mix',meta:'All the day words',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'မနေ့က',o:['yesterday','tomorrow','today','morning'],a:0},
+{t:'li',q:'Listen — which word?',say:'ညနေ',o:['ညနေ','ည','မနက်','ဒီနေ့'],a:0},
+{t:'mc',q:'Which means "today"?',o:['ဒီနေ့','မနက်ဖြန်','မနေ့က','ည'],a:0},
+{t:'mc',q:'What does this mean?',d:'မနက်',o:['morning','night','evening','day'],a:0},
+{t:'li',q:'Listen — which word?',say:'မနက်ဖြန်',o:['မနက်ဖြန်','မနေ့က','ဒီနေ့','ညနေ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဒီနေ့','today'],['မနက်ဖြန်','tomorrow'],['မနေ့က','yesterday'],['ည','night']]}]},
+{id:'my_day_5',title:'Checkpoint',step:'checkpoint',meta:'Your day mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "today"?',o:['ဒီနေ့','မနက်ဖြန်','မနေ့က','မနက်'],a:0},
+{t:'li',q:'Listen — which word?',say:'ည',o:['ည','ညနေ','မနက်','ဒီနေ့'],a:0},
+{t:'mc',q:'What does this mean?',d:'မနက်ဖြန်',o:['tomorrow','yesterday','today','evening'],a:0},
+{t:'mc',q:'Which means "morning"?',o:['မနက်','ည','ညနေ','မနေ့က'],a:0},
+{t:'li',q:'Listen — which word?',say:'ဒီနေ့',o:['ဒီနေ့','မနက်','မနေ့က','ညနေ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဒီနေ့','today'],['မနက်ဖြန်','tomorrow'],['မနက်','morning'],['ည','night']]}]},
 ];
 
 /* ---------- per-language art (secular: misty Shan ridges over a lake, a
