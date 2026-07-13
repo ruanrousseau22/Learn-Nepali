@@ -226,7 +226,7 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- Khmer grows zone by zone (Zones 1–9 shipped). **From Zone 8 on, the Khmer
+- Khmer grows zone by zone (Zones 1–12 shipped). **From Zone 8 on, the Khmer
   curriculum is Khmer-driven, not a Nepali mirror** (Ruan, July 2026):
   topics come from what Khmer itself needs — researched against FSI
   Cambodian Basic/Contemporary and the MSU "Basic Khmer" open textbook.
@@ -242,18 +242,26 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   "Make Cambodia home" the settling-in layer (fruits & tastes, kitchen,
   big riel numbers, errands, emergencies, the married/kids/age small-talk
   trio, how-long duration). Zone 13 candidates: storytelling round 2
-  (ពេលនោះ at that time, ស្រាប់តែ suddenly — verify with native),
+  (ពេលនោះ at that time, ស្រាប់តែ suddenly — research/verify carefully),
   giving & receiving round 2 (ខ្ចី borrow / ឱ្យខ្ចី lend),
   festivals as recognition vocab (ភ្ជុំបិណ្ឌ, បុណ្យអុំទូក — CULTURAL
   NAMES ONLY, no religious teaching, per the secular-content rule),
   nature & trips (សមុទ្រ sea, ភ្នំ review, ព្រៃ forest), and colors
-  round 2 + patterns. Append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`,
-  add SYM entries, regen audio (`extract_audio_strings.js km` then
-  `generate_audio.py --lang km`).
-- The "early access" label was dropped July 2026 on Ruan's call. **A native
-  Khmer speaker reviewing Zones 2–12 is still wanted** (content was written
-  against standard beginner material, unreviewed by a native) — patch lessons
-  surgically + re-record affected clips if the review flags anything.
+  round 2 + patterns (research each new word against sources before shipping —
+  see the research-not-native standard below). Append to `KM_UNITS`/
+  `KM_LESSONS` in `lang/km.js`, add SYM entries, regen audio
+  (`extract_audio_strings.js km` then `generate_audio.py --lang km`).
+- **Content quality is verified by research, not a native reviewer** (Ruan,
+  July 2026 — no native speaker is available, and that's fine; the standard is
+  "research it well enough to ship confidently"). When a word/spelling/usage is
+  uncertain, cross-check it against multiple sources before committing: the MSU
+  "Basic Khmer" open textbook, FSI Cambodian, Wiktionary Khmer entries, and
+  learner references (learnkhmernow, ling-app). Prefer the colloquial spoken
+  form taught by beginner courses over formal/literary variants. Flag any
+  genuinely unresolved call inline in the lesson's `note` rather than guessing
+  silently. A **staged content health-check of Zones 1–12** (romanization
+  consistency, gloss accuracy, natural phrasing, difficulty ramp) is the top
+  open task — see the review workflow the new-chat handoff describes.
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
   script needs one (the Khmer step is the template — see Step 3 below).
