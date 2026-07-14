@@ -240,7 +240,8 @@ small-talk trio អាយុប៉ុន្មាន/រៀបការហើយ
 - Keyboard: lessons accept 1–9 (pick option), Enter/Space (check/continue), Esc
   (exit w/ confirm when ≥2 exercises in); review accepts Space + 1/2/3 (H/G/E).
 - Paths scroll to the current node (`scrollToCurrent`, `.topic-row.has-next`) —
-  respect `SMOOTH` (prefers-reduced-motion). Hero CTA `heroGo()` does the same.
+  respect `SMOOTH` (prefers-reduced-motion). (The hero "Start learning" CTA was
+  removed July 2026 — the hero is now just the heading over the art.)
 - `lessonById` is a Map lookup (`LESSON_MAP`); `buildPath` uses a `doneSet` Set.
 - CSS: `.section` must keep longhand top/bottom padding (shorthand kills `.wrap`'s
   side gutters on `wrap section` elements — this was a real mobile bug).
