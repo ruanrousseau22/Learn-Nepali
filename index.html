@@ -61,12 +61,15 @@
    Cambodia: golden dawn sky, jungle haze, Angkor stone, paddy green */
 :root[data-lang="km"]{--sky1:#F7E3C2;--sky2:#FBF3E4;--mtn-far:#CBAF83;--mtn-mid:#7E6553;--mtn-near:#2F8E5B;--orb:#F2A93B}
 :root[data-theme="dark"][data-lang="km"]{--sky1:#241E33;--sky2:#141119;--mtn-far:#39304E;--mtn-mid:#4A3B31;--mtn-near:#1B5038;--orb:#E9DFC8}
-/* Myanmar: misty Shan highlands, teak-brown timber, golden paddy, warm sun */
-:root[data-lang="my"]{--sky1:#D7E8E5;--sky2:#F2F7F1;--mtn-far:#A6BFB1;--mtn-mid:#6E5540;--mtn-near:#37955C;--orb:#F2B24A}
-:root[data-theme="dark"][data-lang="my"]{--sky1:#182428;--sky2:#0F1517;--mtn-far:#2E4038;--mtn-mid:#3D3227;--mtn-near:#175038;--orb:#EFE0BF}
+/* Myanmar: misty karst lake — pale limestone spires, forested green foothills */
+:root[data-lang="my"]{--sky1:#DCEAEE;--sky2:#F1F7F4;--mtn-far:#AEC6C6;--mtn-mid:#5F8072;--mtn-near:#37955C;--orb:#F2B24A}
+:root[data-theme="dark"][data-lang="my"]{--sky1:#141F27;--sky2:#0E1417;--mtn-far:#2C3E44;--mtn-mid:#2C4A3C;--mtn-near:#175038;--orb:#EFE0BF}
 /* Burmese reordering vowels/medials break in the system fallback font, so any
    bare Burmese (note titles, note prose) must keep Noto Sans Myanmar in-stack */
 :root[data-lang="my"] .exq,:root[data-lang="my"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Myanmar',sans-serif}
+/* declutter scenery on phones: hide the fine `art-detail` extras (fisherman,
+   birds, reeds) so the centered mountains read cleanly on the mobile crop */
+@media(max-width:560px){.hero-mtns .art-detail,.pb-mtns .art-detail{display:none}}
 *{box-sizing:border-box;margin:0;padding:0}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 html{scroll-behavior:smooth}

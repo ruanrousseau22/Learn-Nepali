@@ -261,11 +261,36 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   **q** (houq, tiq, shiq), and words are romanized as pronounced (kyanaw,
   chauq) — documented at the top of `lang/my.js`. No Intensive (Nepal-specific).
   Grow zone by zone: append to `MY_UNITS`/`MY_LESSONS`, add SYM,
-  `extract_audio_strings.js my` then `generate_audio.py --lang my`. Zone 3
-  candidates: family & kinship terms (which double as pronouns), this/that +
-  basic questions (ဘာ what / ဘယ်မှာ where), simple verbs + the ...တယ်/...မယ်
-  present/future, food & eating out, days & months — research each against
-  Burmese sources (Wikivoyage/Okell/Wiktionary) before shipping.
+  `extract_audio_strings.js my` then `generate_audio.py --lang my`.
+- **The Burmese curriculum is Burmese-DRIVEN, not a Nepali/Khmer mirror**
+  (Ruan, July 2026 — like the Khmer "Khmer-driven from Zone 8" rule, but from
+  the start for Burmese). Researched against how Burmese is actually taught
+  (Wikipedia "Burmese grammar", John Okell *Burmese by Ear*, *Burmese for
+  Beginners* / Paw Paw Tin, Wikivoyage). What makes Burmese its own thing, and
+  drives the sequence:
+  - **Verb-final (SOV) grammar with sentence-final verb particles is THE core**
+    — teach it early. A Burmese statement ends in the verb + ...တယ် (realis /
+    general/present) or ...မယ် (irrealis / future/intention); negation wraps the
+    verb မ...ဘူး; yes/no questions add …လား, wh-questions add …လဲ. This "grammar
+    engine" should be Zone 3, before piling on vocab.
+  - **Bound/postpositional particles** do the work word-order does in English:
+    က (subject/from), ကို (object/to), မှာ (at/in), နဲ့ (with/and) — a whole zone.
+  - **Classifiers** (noun + number + classifier, e.g. ကလေး ၅ ယောက် "5 children")
+    come mid-course, once counting and nouns are solid — not up front.
+  - **Tones are taught inside real words/sentences, never in isolation** (Zone 1
+    does this) — exaggerate + slow down, let the ear + audio lead.
+  - **Lean into the freebies as encouragement**: Burmese has *no* verb
+    conjugation, *no* grammatical gender, *no* plural agreement.
+  - **Kinship / status terms are used where English uses pronouns** (pronoun
+    avoidance, already flagged in Zone 2) — treat family terms as address, not
+    just vocab.
+  Resulting roadmap (research each word against sources before shipping):
+  Zone 3 "Say a sentence" (ဒါ this / ဟို that + ...ပါ, the ...တယ်/...မယ် verb
+  endings, core verbs စား/သောက်/သွား/လာ/နေ/ကြိုက်/ချင်, negation မ...ဘူး,
+  ဘာ…လဲ questions); Zone 4 "Where & with" (the က/ကို/မှာ/နဲ့ particles, places,
+  kinship terms as address, food & eating out); Zone 5 "How many" (classifiers,
+  counting money ကျပ် kyat, shopping & prices, clock time); Zone 6+ adjectives-
+  as-stative-verbs, feelings, the past ...ခဲ့, ability ...နိုင်, connectors.
   **Burmese font gotcha:** its reordering vowels/medials (prevowel ေ, ya-yit ြ,
   ya-pin ျ) shatter into dotted boxes when rendered in the system fallback font.
   Any Burmese must keep **Noto Sans Myanmar in its font stack** — `.deva`/`.mc`/
