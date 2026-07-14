@@ -114,7 +114,9 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-mtns .snow{fill:var(--snow)}
 .hero-mtns .orb{fill:var(--orb)}
 .hero-inner{position:relative;max-width:1020px;margin:0 auto;display:flex;align-items:center;min-height:300px;padding:28px 24px}
-.hero-text{position:relative;z-index:2;max-width:64%}
+/* reserve the space the old CTA held so the title keeps its original upper spot
+   instead of sinking to the vertical middle now that the button is gone */
+.hero-text{position:relative;z-index:2;max-width:64%;padding-bottom:56px}
 .hero-text h1{font-size:clamp(34px,5.4vw,54px)}
 .hero-sub{margin-top:10px;font-size:15px;font-weight:600;color:var(--ink-soft);background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);display:inline-block;padding:6px 14px;border-radius:100px}
 @media(max-width:640px){.hero-inner{min-height:236px}.hero-text{max-width:70%}}
@@ -505,6 +507,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .actionbar.wrong{background:linear-gradient(180deg,color-mix(in srgb,var(--bad) 8%,var(--card)),color-mix(in srgb,var(--bad) 16%,var(--card)))}
 .hero{position:relative}
 .hero:before{content:"";position:absolute;inset:0;z-index:0;background-image:radial-gradient(circle,color-mix(in srgb,var(--ink) 10%,transparent) 1px,transparent 1px);background-size:24px 24px;opacity:.5;-webkit-mask:linear-gradient(180deg,#000 22%,transparent 68%);mask:linear-gradient(180deg,#000 22%,transparent 68%)}
+/* soft haze on the left so the "Learn X" title reads clear of the scenery
+   behind it (sits above the art at z1, below the title at z2) */
+.hero:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--sky2) 0%,color-mix(in srgb,var(--sky2) 62%,transparent) 30%,transparent 58%)}
 .hero-mtns{z-index:1}
 .excard{background-color:var(--card);background-image:radial-gradient(circle at 1px 1px,color-mix(in srgb,var(--ink) 4%,transparent) 1px,transparent 0);background-size:18px 18px}
 .tinput input{border:none;border-bottom:2px solid var(--line);border-radius:0;background:transparent;padding:12px 4px}
