@@ -78,6 +78,9 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--paper
 .serif{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.025em}
 .display{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-weight:600;letter-spacing:-.02em}
 .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+/* the header bar runs full-bleed (logo at the left edge, controls at the right)
+   even on wide/fullscreen windows — page content below stays centered */
+header .wrap.bar{max-width:none}
 
 header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
@@ -841,8 +844,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view active" id="view-home">
   <div class="hero">
     <svg class="hero-mtns" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="930" cy="94" r="76"/>
-      <circle class="orb" cx="930" cy="94" r="46"/>
+      <circle class="orb-glow" cx="930" cy="122" r="76"/>
+      <circle class="orb" cx="930" cy="122" r="46"/>
       <g class="hero-stars" aria-hidden="true">
         <circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/>
         <circle cx="240" cy="104" r="1.2"/>
@@ -910,8 +913,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-alphabet">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
-      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
       <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 139 L770 126 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
       <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
@@ -947,8 +950,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-review">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
-      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
       <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 139 L770 126 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
       <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
@@ -972,8 +975,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-settings">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
-      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
       <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 139 L770 126 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
       <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
@@ -1008,8 +1011,8 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <section class="view" id="view-intensive">
   <div class="page-band">
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="54" r="36"/>
-      <circle class="orb" cx="1046" cy="54" r="21"/>
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
       <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 139 L770 126 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
       <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
@@ -8217,7 +8220,22 @@ function mergeLang(loc,cld){loc=loc||{};cld=cld||{};const m={};
 function cloudData(){const langs={};
   try{Object.keys(localStorage).forEach(k=>{if(k.indexOf('sajilo_')===0&&k!==GLOBAL_KEY){try{const o=JSON.parse(localStorage.getItem(k));if(o)langs[k.slice(7)]=lPick(o);}catch(e){}}});}catch(e){}
   langs[LANG.code]=lPick(S);return {v:2,global:gPick(S),langs};}
+/* the device remembers which account its local data belongs to: anonymous
+   progress merges into the FIRST account that signs in (that's the point of
+   merging), but a DIFFERENT account signing in on the same computer must never
+   inherit it (real cross-account XP bug, July 2026) — wipe to defaults first so
+   that account starts from exactly its own cloud copy. Device prefs stay. */
+const OWNER_KEY='sajilo_owner';
+function adoptDevice(uid){let owner=null;try{owner=localStorage.getItem(OWNER_KEY);}catch(e){}
+  if(owner===uid)return;
+  if(owner){const prefs=prefsPick(S);
+    try{Object.keys(localStorage).filter(x=>x==='sajilo'||x.indexOf('sajilo_')===0).forEach(x=>localStorage.removeItem(x));}catch(e){}
+    S={...defaultS(),...prefs,lang:LANG.code,srs:freshSRS(),dailyDate:new Date().toDateString()};
+    try{localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(S),...prefsPick(S)}));localStorage.setItem(LANG.storageKey,JSON.stringify(lPick(S)));}catch(e){}
+    refreshAll();}
+  try{localStorage.setItem(OWNER_KEY,uid);}catch(e){}}
 async function cloudPull(){if(!sb||!user)return;
+  adoptDevice(user.id);
   try{const {data}=await sb.from('progress').select('data').eq('user_id',user.id).maybeSingle();
     if(data&&data.data){const d=data.data;
       const cg=(d.v===2)?(d.global||{}):gPick(d);

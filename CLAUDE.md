@@ -495,10 +495,9 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 
 ## Git / deploy
 - Local repo: `~/Desktop/Learn-Nepali`. Push triggers Netlify redeploy.
-- **BATCH DEPLOYS — push rarely** (Ruan, July 2026): every push costs ~15
-  Netlify credits, so do NOT push after each task. Commit locally as work
-  completes; only `git push` once a large chunk of validated work has
-  accumulated, or when Ruan says to deploy.
+- **DEPLOY ONLY WHEN RUAN SAYS SO** (Ruan, July 2026): every push costs ~15
+  Netlify credits. NEVER `git push` on your own judgment — commit locally as
+  work completes and wait for Ruan to explicitly say "deploy"/"push".
 - `git push` password = GitHub **Personal Access Token** (not the account password).
 - The `audio/` and `audio-km/` folders must sit at the **top level** of the
   repo, next to the HTML.
