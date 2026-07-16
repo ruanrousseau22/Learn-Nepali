@@ -84,7 +84,10 @@ has one entry, so shipping a language = add `{code,label}` + `lang/<code>.js`.
 `switchLang(code)` lazy-loads the pack script, saves the outgoing language,
 applies the pack, reloads state/audio-manifest/voices, calls `applyBranding()`
 (hero h1 from `pack.brand`, hides the Intensive tab when `unitsIntensive` is
-empty) and rebuilds all views. The header mark is the fixed Bhasaly tree
+empty) and rebuilds all views. **The visible picker is a dropdown in the
+HEADER, right of the logo** (`#lang-switch`, `paintHomeLangSwitch()`,
+`LANG_FLAGS` inline-SVG flags; moved out of the hero art July 2026 — flag-only
+below 560px). The header mark is the fixed Bhasaly tree
 (inline SVG, color `--tree` with a dark-mode variant) — packs do not brand it. Umbrella name (July 2026): **Bhasaly** —
 title/meta/header/footer/favicon renamed; hero h1 stays per-language.
 **Storage keys stay `sajilo_*`** (renaming them would orphan user progress).
@@ -108,6 +111,14 @@ per-language scenery palette in CSS (`:root[data-lang="km"]` light + dark
 blocks next to the theme vars). Khmer art (stilt house, sugar palms, rice
 paddies, baby-elephant mascot) lives in `lang/km.js` (`KM_HERO`, `KM_BAND`,
 `KM_MASCOT`). **Art must be secular** — see Design / content rules.
+**Keep the title zone clear** (Ruan, July 2026 — applies to every language,
+hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
+sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
+SVG coords: hero — nothing taller than y≈235 in x∈[130,710] (tall scenery
+lives right of x≈720, where the phone crop still shows it beside the title);
+band — keep x≲770 flat/low. Fine details (fishermen, birds, reeds, the band
+house) carry class `art-detail`, hidden ≤560px by an index.html rule so
+phones show only the calm centered scenery.
 
 **State & storage.** `S` is the merged working state the engine reads. On disk it
 splits: `sajilo_global` = global stats shared across languages (XP, streak, daily,
@@ -337,7 +348,7 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 - A new language = new `lang/<code>.js` pack + `LANG_CATALOG` entry + art
   (secular!) + audio dir + font added to the Devanagari font stacks if its
   script needs one (the Khmer step is the template — see Step 3 below) + an
-  inline-SVG flag in `LANG_FLAGS` for the home-hero language switcher + an
+  inline-SVG flag in `LANG_FLAGS` for the header language switcher + an
   **SEO refresh** (title/description/keywords, JSON-LD `teaches` + a new `Course`
   entry — see Repo layout's SEO note) so the site ranks for "learn &lt;language&gt;".
 - Keep sajilonepali.com registered — old links depend on the 301.

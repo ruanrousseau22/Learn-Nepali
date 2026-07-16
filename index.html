@@ -120,8 +120,8 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-text h1{font-size:clamp(34px,5.4vw,54px)}
 .hero-sub{margin-top:10px;font-size:15px;font-weight:600;color:var(--ink-soft);background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);display:inline-block;padding:6px 14px;border-radius:100px}
 @media(max-width:640px){.hero-inner{min-height:236px}.hero-text{max-width:70%}}
-/* home-page language switcher — a dropdown in the hero art, top-left */
-.lang-switch{position:absolute;top:13px;left:14px;z-index:6}
+/* language switcher — a dropdown in the header, right of the logo */
+.lang-switch{position:relative;flex:none}
 .lang-toggle{display:inline-flex;align-items:center;gap:8px;padding:6px 10px 6px 9px;border-radius:100px;border:1px solid var(--line);background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);color:var(--ink);font-family:inherit;font-weight:800;font-size:12.5px;letter-spacing:-.01em;cursor:pointer;box-shadow:var(--shadow);transition:.15s ease}
 .lang-toggle:hover{border-color:var(--crimson)}
 .lang-switch.open .lang-toggle{border-color:var(--crimson);background:var(--card)}
@@ -136,7 +136,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .lang-toggle .flag,.lang-opt .flag{height:15px;width:auto;display:block;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 1px 2px rgba(0,0,0,.25);flex:none}
 .lang-toggle .flag-np,.lang-opt .flag-np{border-radius:0;box-shadow:none;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.3))}
 .lang-tog-name,.lang-opt-name{white-space:nowrap}
-@media(max-width:560px){.lang-switch{top:10px;left:10px}.lang-toggle{padding:5px 9px 5px 7px;font-size:11.5px;gap:6px}.lang-toggle .flag,.lang-opt .flag{height:13px}}
+@media(max-width:560px){.lang-toggle{padding:5px 8px;font-size:11.5px;gap:6px}.lang-toggle .flag,.lang-opt .flag{height:13px}.lang-tog-name{display:none}}
 
 /* slim mountain band for sub-pages — a calmer echo of the home hero */
 .page-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;margin-bottom:24px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
@@ -506,11 +506,7 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .actionbar.correct{background:linear-gradient(180deg,color-mix(in srgb,var(--teal) 10%,var(--card)),var(--teal-soft))}
 .actionbar.wrong{background:linear-gradient(180deg,color-mix(in srgb,var(--bad) 8%,var(--card)),color-mix(in srgb,var(--bad) 16%,var(--card)))}
 .hero{position:relative}
-.hero:before{content:"";position:absolute;inset:0;z-index:0;background-image:radial-gradient(circle,color-mix(in srgb,var(--ink) 10%,transparent) 1px,transparent 1px);background-size:24px 24px;opacity:.5;-webkit-mask:linear-gradient(180deg,#000 22%,transparent 68%);mask:linear-gradient(180deg,#000 22%,transparent 68%)}
-/* soft haze on the left so the "Learn X" title reads clear of the scenery
-   behind it (sits above the art at z1, below the title at z2) */
-.hero:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--sky2) 0%,color-mix(in srgb,var(--sky2) 62%,transparent) 30%,transparent 58%)}
-.hero-mtns{z-index:1}
+.hero:before{content:"";position:absolute;inset:0;z-index:0;background-image:radial-gradient(circle,color-mix(in srgb,var(--ink) 10%,transparent) 1px,transparent 1px);background-size:24px 24px;opacity:.5;-webkit-mask:linear-gradient(180deg,#000 22%,transparent 68%);mask:linear-gradient(180deg,#000 22%,transparent 68%)}.hero-mtns{z-index:1}
 .excard{background-color:var(--card);background-image:radial-gradient(circle at 1px 1px,color-mix(in srgb,var(--ink) 4%,transparent) 1px,transparent 0);background-size:18px 18px}
 .tinput input{border:none;border-bottom:2px solid var(--line);border-radius:0;background:transparent;padding:12px 4px}
 .tinput input:focus{outline:none;border-bottom-color:var(--saffron)}
@@ -819,6 +815,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <header>
   <div class="wrap bar">
     <a class="logo" href="#" onclick="show('home');return false"><span class="mark" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/></svg></span> Bhasaly</a>
+    <div class="lang-switch" id="lang-switch"></div>
     <nav class="tabs" id="tabs">
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
@@ -865,16 +862,16 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 236 L130 204 L250 226 L370 198 L470 216 L580 120 L650 180 L735 96 L820 170 L905 130 L980 190 L1060 140 L1200 210 L1200 320 L0 320 Z"/>
-      <polygon class="snow" points="559 141 580 120 600 140 592 138 585 145 575 137"/>
-      <polygon class="snow" points="709 122 735 96 760 121 750 119 742 127 731 118 720 124"/>
-      <polygon class="snow" points="884 151 905 130 925 150 916 148 909 155 899 147"/>
-      <polygon class="snow" points="1040 160 1060 140 1079 159 1071 157 1064 163 1054 156"/>
+      <path class="far" d="M0 236 L130 230 L250 234 L370 226 L470 232 L560 228 L640 210 L720 130 L790 180 L860 100 L930 172 L1000 136 L1060 190 L1120 150 L1200 205 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="699 149 720 130 740 148 732 146 726 153 715 145"/>
+      <polygon class="snow" points="834 125 860 100 885 124 875 122 867 130 856 121 845 127"/>
+      <polygon class="snow" points="979 156 1000 136 1020 155 1012 153 1005 161 995 152"/>
+      <polygon class="snow" points="1100 169 1120 150 1139 168 1131 166 1124 172 1114 165"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="mid" d="M0 320 L0 238 Q140 176 260 190 Q400 206 520 280 L560 300 L560 320 Z"/>
+      <path class="mid" d="M0 320 L0 260 Q140 242 260 250 Q400 258 520 292 L560 304 L560 320 Z"/>
       <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
-      <path class="snow" opacity=".26" d="M60 268 Q200 224 340 244 L338 250 Q200 232 64 274 Z"/>
-      <path class="snow" opacity=".26" d="M170 222 Q260 202 348 214 L346 220 Q260 210 172 228 Z"/>
+      <path class="snow" opacity=".26" d="M60 288 Q200 260 340 276 L338 282 Q200 268 64 294 Z"/>
+      <path class="snow" opacity=".26" d="M150 266 Q250 250 340 258 L338 264 Q250 256 152 272 Z"/>
       <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
       <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
       <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
@@ -883,7 +880,6 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
         <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
     </svg>
-    <div class="lang-switch" id="lang-switch"></div>
     <div class="hero-inner">
       <div class="hero-text">
         <h1 class="display">Learn <em>Nepali</em></h1>
@@ -916,13 +912,11 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="54" r="36"/>
       <circle class="orb" cx="1046" cy="54" r="21"/>
-      <path class="far" d="M0 148 L100 100 L190 132 L280 84 L370 126 L470 92 L560 130 L660 100 L750 134 L850 106 L940 136 L1040 112 L1200 140 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="258 104 280 84 301 103 292 101 285 108 275 100"/>
-      <polygon class="snow" points="452 108 470 92 487 107 480 105 473 111 464 104"/>
-      <polygon class="snow" points="643 115 660 100 676 114 669 112 663 118 654 111"/>
-      <path class="mid" d="M0 200 L0 168 Q160 128 320 140 Q480 152 620 184 L660 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 178 Q200 146 350 156 L348 161 Q200 152 53 183 Z"/>
-      <path class="snow" opacity=".26" d="M110 160 Q240 136 370 148 L368 153 Q240 142 113 165 Z"/>
+      <path class="far" d="M0 148 L120 142 L260 146 L400 138 L540 144 L660 136 L770 128 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
+      <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
@@ -955,13 +949,11 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="54" r="36"/>
       <circle class="orb" cx="1046" cy="54" r="21"/>
-      <path class="far" d="M0 148 L100 100 L190 132 L280 84 L370 126 L470 92 L560 130 L660 100 L750 134 L850 106 L940 136 L1040 112 L1200 140 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="258 104 280 84 301 103 292 101 285 108 275 100"/>
-      <polygon class="snow" points="452 108 470 92 487 107 480 105 473 111 464 104"/>
-      <polygon class="snow" points="643 115 660 100 676 114 669 112 663 118 654 111"/>
-      <path class="mid" d="M0 200 L0 168 Q160 128 320 140 Q480 152 620 184 L660 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 178 Q200 146 350 156 L348 161 Q200 152 53 183 Z"/>
-      <path class="snow" opacity=".26" d="M110 160 Q240 136 370 148 L368 153 Q240 142 113 165 Z"/>
+      <path class="far" d="M0 148 L120 142 L260 146 L400 138 L540 144 L660 136 L770 128 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
+      <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
@@ -982,13 +974,11 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="54" r="36"/>
       <circle class="orb" cx="1046" cy="54" r="21"/>
-      <path class="far" d="M0 148 L100 100 L190 132 L280 84 L370 126 L470 92 L560 130 L660 100 L750 134 L850 106 L940 136 L1040 112 L1200 140 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="258 104 280 84 301 103 292 101 285 108 275 100"/>
-      <polygon class="snow" points="452 108 470 92 487 107 480 105 473 111 464 104"/>
-      <polygon class="snow" points="643 115 660 100 676 114 669 112 663 118 654 111"/>
-      <path class="mid" d="M0 200 L0 168 Q160 128 320 140 Q480 152 620 184 L660 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 178 Q200 146 350 156 L348 161 Q200 152 53 183 Z"/>
-      <path class="snow" opacity=".26" d="M110 160 Q240 136 370 148 L368 153 Q240 142 113 165 Z"/>
+      <path class="far" d="M0 148 L120 142 L260 146 L400 138 L540 144 L660 136 L770 128 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
+      <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
@@ -1020,13 +1010,11 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="54" r="36"/>
       <circle class="orb" cx="1046" cy="54" r="21"/>
-      <path class="far" d="M0 148 L100 100 L190 132 L280 84 L370 126 L470 92 L560 130 L660 100 L750 134 L850 106 L940 136 L1040 112 L1200 140 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="258 104 280 84 301 103 292 101 285 108 275 100"/>
-      <polygon class="snow" points="452 108 470 92 487 107 480 105 473 111 464 104"/>
-      <polygon class="snow" points="643 115 660 100 676 114 669 112 663 118 654 111"/>
-      <path class="mid" d="M0 200 L0 168 Q160 128 320 140 Q480 152 620 184 L660 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 178 Q200 146 350 156 L348 161 Q200 152 53 183 Z"/>
-      <path class="snow" opacity=".26" d="M110 160 Q240 136 370 148 L368 153 Q240 142 113 165 Z"/>
+      <path class="far" d="M0 148 L120 142 L260 146 L400 138 L540 144 L660 136 L770 128 L840 76 L910 118 L1000 88 L1080 130 L1200 112 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="819 95 840 76 860 94 852 92 846 99 836 91"/>
+      <polygon class="snow" points="981 106 1000 88 1018 105 1011 103 1005 110 996 102"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
