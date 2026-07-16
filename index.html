@@ -1179,6 +1179,8 @@ const NE_UNITS=[
   {n:8,t:'Out in the world',d:'Shopping, wanting & travel',lessons:['shop','shop_2','shop_3','shop_4','shop_5','want','want_2','want_3','want_4','want_5','travel','travel_2','travel_3','travel_4','travel_5']},
   {n:9,t:'Connect & converse',d:'Weather, feelings & real talk',lessons:['weather','weather_2','weather_3','weather_4','weather_5','body','body_2','body_3','body_4','body_5','feelings','feelings_2','feelings_3','feelings_4','feelings_5','experiencer','experiencer_2','experiencer_3','experiencer_4','experiencer_5','conn1','conn1_2','conn1_3','conn1_4','conn1_5','conn2','conn2_2','conn2_3','conn2_4','conn2_5','conditional','conditional_2','conditional_3','conditional_4','conditional_5','convo','convo_2','convo_3','convo_4','convo_5']},
   {n:10,t:'Sound like a local',d:'Respect, comparison & opinions',lessons:['hon','hon_2','hon_3','hon_4','hon_5','levels','levels_2','levels_3','levels_4','levels_5','requests','requests_2','requests_3','requests_4','requests_5','compare','compare_2','compare_3','compare_4','compare_5','opinion','opinion_2','opinion_3','opinion_4','opinion_5']},
+  {n:11,t:'Chain your sentences',d:'-एर, the perfect छ, first/then & how often',lessons:['chain','chain_2','chain_3','chain_4','chain_5','perf','perf_2','perf_3','perf_4','perf_5','seq2','seq2_2','seq2_3','seq2_4','seq2_5','freq2','freq2_2','freq2_3','freq2_4','freq2_5','slow','slow_2','slow_3','slow_4','slow_5','pos2','pos2_2','pos2_3','pos2_4','pos2_5','years','years_2','years_3','years_4','years_5']},
+  {n:12,t:'Living in Nepal',d:'Himals & villages, animals, clothes, phone & help',lessons:['trek','trek_2','trek_3','trek_4','trek_5','animals','animals_2','animals_3','animals_4','animals_5','clothes','clothes_2','clothes_3','clothes_4','clothes_5','home2','home2_2','home2_3','home2_4','home2_5','fruits','fruits_2','fruits_3','fruits_4','fruits_5','phone2','phone2_2','phone2_3','phone2_4','phone2_5','help2','help2_2','help2_3','help2_4','help2_5']},
 ];
 /* ===== LANGUAGE INTENSIVE track — populated in content stages ===== */
 const NE_UNITS_INTENSIVE = [
@@ -8162,6 +8164,631 @@ const NE_LESSONS = [
   {id:'li_w10test',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
   {id:'li_w11test',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
   {id:'li_w12test',title:'Test',step:'test',meta:'20 random questions · no audio help · 16 to pass',vocab:[],ex:[]},
+
+/* ===================== ZONE 11 · CHAIN YOUR SENTENCES =====================
+   The grammar that turns sentences into speech: the -एर converb (do-and-then),
+   the perfect -एको छ (have done / have ever been), first/then/finally,
+   frequency words, the slow-down lifelines, positions, and years & lakhs.
+   Researched against Matthews Complete Nepali & Teach Yourself Nepali. */
+  /* --- Topic 1: the -एर chain --- */
+  {id:'chain',title:'Do & then: -एर',step:'learn',meta:'गएर खाएर — chain your verbs',vocab:[['गएर','gaera','having gone / go and…'],['खाएर','khaaera','having eaten / eat and…'],['बसेर','basera','sitting / having sat'],['आएर','aaera','having come / come and…'],['खाना खाएर जान्छु','khaana khaaera jaanchhu','I eat and then go']],ex:[
+    {t:'note',tag:'Zone 11',q:'The chain ending -एर',body:'<p>Nepali does not say "I eat AND go" — it chains: <span class="deva">खाएर जान्छु</span> = having-eaten, I go. Swap -नु for <span class="deva">-एर</span>: खानु → <span class="deva">खाएर</span> · जानु → <span class="deva">गएर</span> · बस्नु → <span class="deva">बसेर</span>.</p><p>One sentence, many actions — this is how Nepali actually flows.</p>'},
+    {t:'mc',q:'What does खाएर mean?',d:'खाएर',r:'Khaaera',o:['having eaten / eat and…','I will eat','please eat','eaten (long ago)'],a:0},
+    {t:'mc',q:'What does गएर mean?',d:'गएर',r:'Gaera',o:['having gone / go and…','I go','he went','let us go'],a:0},
+    {t:'note',tag:'Chains everywhere',q:'बसेर · आएर',body:'<p><span class="deva">बसेर खान्छु</span> = I sit and eat (literally sitting, I eat). <span class="deva">घर आएर सुत्छु</span> = I come home and sleep.</p><p>The -एर half never changes — only the final verb carries the tense.</p>'},
+    {t:'mc',q:'In खाना खाएर जान्छु, which verb carries the tense?',o:['जान्छु — the last one','खाएर','खाना','both'],a:0},
+    {t:'li',q:'What did you hear?',say:'खाना खाएर जान्छु',r:'Khaana khaaera jaanchhu',o:['I eat and then go','I go and then eat','I am eating now','I want to eat'],a:0},
+    {t:'mc',q:'How do you say "sitting / having sat"?',o:['बसेर','बस्नु','बस्छु','बसें'],a:0}
+  ]},
+  {id:'chain_2',title:'Recognize',step:'recognize',meta:'Spot the -एर chains',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'गएर',r:'Gaera',o:['having gone','having eaten','having come','having sat'],a:0},
+    {t:'mc',q:'What does आएर mean?',d:'आएर',r:'Aaera',o:['having come / come and…','having gone','coming soon','he came'],a:0},
+    {t:'match',q:'Match the chains',pairs:[['गएर','having gone'],['खाएर','having eaten'],['बसेर','having sat'],['आएर','having come']]},
+    {t:'li',q:'What did you hear?',say:'खाएर',r:'Khaaera',o:['having eaten','having gone','having come','having seen'],a:0},
+    {t:'mc',q:'खाएर जान्छु means…',o:['I eat and then go','I go to eat','I ate yesterday','eat, then go! (command)'],a:0},
+    {t:'mc',q:'The chain ending is…',o:['-एर','-नु','-छु','-यो'],a:0},
+    {t:'mc',q:'बजार गएर किन्छु means…',o:['I go to the bazaar and buy','I buy, then go to the bazaar','I went to the bazaar','buy me a bazaar'],a:0}
+  ]},
+  {id:'chain_3',title:'Build',step:'build',meta:'Chain two actions',vocab:[],ex:[
+    {t:'wb',q:'Build: "I eat and then go"',a:['खाना','खाएर','जान्छु'],r:'Khaana khaaera jaanchhu',pool:['खाना','खाएर','जान्छु','खान्छु']},
+    {t:'fill',q:'Complete: "I sit and eat"',s:'___ खान्छु',o:['बसेर','बस्नु','बसें','बस'],a:0,r:'Basera khaanchhu'},
+    {t:'mc',q:'"I come home and sleep" =',o:['घर आएर सुत्छु','घर आउँछु र सुत्नु','घर सुतेर आउँछु','घरमा सुत्छु आएर'],a:0},
+    {t:'tr',q:'Translate: "having eaten / eat and…"',a:'खाएर',r:'khaaera',h:'खा + एर'},
+    {t:'wb',q:'Build: "I go to the bazaar and buy"',a:['बजार','गएर','किन्छु'],r:'Bajaar gaera kinchhu',pool:['बजार','गएर','किन्छु','जान्छु']},
+    {t:'match',q:'Match chain and meaning',pairs:[['खाएर','having eaten'],['गएर','having gone'],['आएर','having come'],['खाना खाएर जान्छु','I eat and then go']]}
+  ]},
+  {id:'chain_4',title:'Mix it',step:'mix',meta:'Chains in real speech',vocab:[],ex:[
+    {t:'mc',q:'What does बसेर mean?',d:'बसेर',r:'Basera',o:['sitting / having sat','sit down!','I sit','he sat'],a:0},
+    {t:'li',q:'What did you hear?',say:'आएर',r:'Aaera',o:['having come','having gone','having eaten','having done'],a:0},
+    {t:'wb',q:'Build: "I come home and sleep"',a:['घर','आएर','सुत्छु'],r:'Ghar aaera sutchhu',pool:['घर','आएर','सुत्छु','जान्छु']},
+    {t:'fill',q:'Complete: "having gone to the village…"',s:'गाउँ ___ …',o:['गएर','जान्छु','गएँ','जाने'],a:0,r:'Gaaun gaera…'},
+    {t:'mc',q:'Which sentence chains correctly?',o:['चिया खाएर काम गर्छु','चिया खान्छु एर काम','काम चिया खाएर','खाएर चिया गर्छु काम'],a:0},
+    {t:'match',q:'Match the flow',pairs:[['बसेर','sitting…'],['खाएर','having eaten…'],['गएर','having gone…'],['आएर','having come…']]}
+  ]},
+  {id:'chain_5',title:'Checkpoint',step:'checkpoint',meta:'-एर mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "having eaten"?',o:['खाएर','खान्छु','खाएँ','खानु'],a:0},
+    {t:'li',q:'What did you hear?',say:'खाना खाएर जान्छु',r:'Khaana khaaera jaanchhu',o:['I eat and then go','I go and eat','I am eating','I will not eat'],a:0},
+    {t:'mc',q:'What does गएर mean?',d:'गएर',r:'Gaera',o:['having gone','I go','went','will go'],a:0},
+    {t:'wb',q:'Build: "I sit and eat"',a:['बसेर','खान्छु'],r:'Basera khaanchhu',pool:['बसेर','खान्छु','बस्छु']},
+    {t:'mc',q:'In a chain, tense lives on…',o:['the final verb only','every verb','the first verb','none'],a:0},
+    {t:'match',q:'Match chain and meaning',pairs:[['गएर','having gone'],['खाएर','having eaten'],['बसेर','having sat'],['आएर','having come']]}
+  ]},
+
+  /* --- Topic 2: the perfect -एको छ --- */
+  {id:'perf',title:'Have you ever?',step:'learn',meta:'गएको छु — the perfect',vocab:[['गएको छु','gaeko chhu','(I) have gone / have been'],['खाएको छु','khaaeko chhu','(I) have eaten (before)'],['गएको छैन','gaeko chhaina','(I) have not been'],['कहिल्यै','kahilyai','ever / (with छैन) never'],['म पोखरा गएको छु','ma pokhara gaeko chhu','I have been to Pokhara']],ex:[
+    {t:'note',tag:'Life experience',q:'-एको छ',body:'<p>To say what you HAVE done (ever, in life), use verb + <span class="deva">-एको</span> + छ: <span class="deva">म पोखरा गएको छु</span> — I have been to Pokhara.</p><p>Negative: <span class="deva">गएको छैन</span> — I have not been.</p>'},
+    {t:'mc',q:'What does गएको छु mean?',d:'गएको छु',r:'Gaeko chhu',o:['(I) have been / have gone','(I) went yesterday','(I) am going','(I) will go'],a:0},
+    {t:'mc',q:'What does खाएको छु mean?',d:'खाएको छु',r:'Khaaeko chhu',o:['(I) have eaten (before)','(I) am eating','(I) ate it all','(I) must eat'],a:0},
+    {t:'note',tag:'Ever & never',q:'कहिल्यै',body:'<p><span class="deva">कहिल्यै</span> = ever: <span class="deva">तपाईं कहिल्यै पोखरा जानुभएको छ?</span> — have you ever been to Pokhara?</p><p>With a negative it means never: <span class="deva">म कहिल्यै गएको छैन</span> — I have never been.</p>'},
+    {t:'mc',q:'What does कहिल्यै mean?',d:'कहिल्यै',r:'Kahilyai',o:['ever / never (with negative)','always','sometimes','once'],a:0},
+    {t:'li',q:'What did you hear?',say:'म पोखरा गएको छु',r:'Ma pokhara gaeko chhu',o:['I have been to Pokhara','I am going to Pokhara','I live in Pokhara','I like Pokhara'],a:0},
+    {t:'mc',q:'"I have NOT been" =',o:['गएको छैन','गएको छु','गइनँ','जान्न'],a:0}
+  ]},
+  {id:'perf_2',title:'Recognize',step:'recognize',meta:'Spot the perfect',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'गएको छु',r:'Gaeko chhu',o:['I have been','I went','I am going','I will go'],a:0},
+    {t:'mc',q:'What does गएको छैन mean?',d:'गएको छैन',r:'Gaeko chhaina',o:['(I) have not been','(I) did not go','(I) will not go','(I) am not going'],a:0},
+    {t:'match',q:'Match the experiences',pairs:[['गएको छु','have been'],['खाएको छु','have eaten'],['गएको छैन','have not been'],['कहिल्यै','ever / never']]},
+    {t:'li',q:'What did you hear?',say:'कहिल्यै',r:'Kahilyai',o:['ever / never','always','soon','again'],a:0},
+    {t:'mc',q:'म कहिल्यै गएको छैन means…',o:['I have never been','I always go','I just went','I have been once'],a:0},
+    {t:'mc',q:'The perfect pairs -एको with…',o:['छ / छु / छैन','हो / होइन','थियो','हुनेछ'],a:0},
+    {t:'mc',q:'खाएको छु vs खाएँ —',o:['have eaten (ever) vs ate (then)','ate vs have eaten','both the same','eat vs will eat'],a:0}
+  ]},
+  {id:'perf_3',title:'Build',step:'build',meta:'Share experiences',vocab:[],ex:[
+    {t:'wb',q:'Build: "I have been to Pokhara"',a:['म','पोखरा','गएको','छु'],r:'Ma pokhara gaeko chhu',pool:['म','पोखरा','गएको','छु','जान्छु']},
+    {t:'fill',q:'Complete: "I have not been"',s:'गएको ___',o:['छैन','छु','हो','थियो'],a:0,r:'Gaeko chhaina'},
+    {t:'mc',q:'"I have eaten momo before" =',o:['मैले मम खाएको छु','म मम खान्छु','मैले मम खाएँ','मलाई मम मनपर्छ'],a:0},
+    {t:'tr',q:'Translate: "(I) have been / have gone"',a:'गएको छु',r:'gaeko chhu',h:'गएको + …'},
+    {t:'wb',q:'Build: "I have never been"',a:['म','कहिल्यै','गएको','छैन'],r:'Ma kahilyai gaeko chhaina',pool:['म','कहिल्यै','गएको','छैन','छु']},
+    {t:'match',q:'Match question and answer',pairs:[['कहिल्यै जानुभएको छ?','गएको छु'],['खानुभएको छ?','खाएको छु'],['गएको छैन?','कहिल्यै गएको छैन'],['कस्तो छ?','राम्रो छ']]}
+  ]},
+  {id:'perf_4',title:'Mix it',step:'mix',meta:'Ever & never in action',vocab:[],ex:[
+    {t:'mc',q:'What does खाएको छैन mean?',o:['(I) have not eaten (it)','(I) did not eat','(I) will not eat','(I) do not like it'],a:0},
+    {t:'li',q:'What did you hear?',say:'गएको छैन',r:'Gaeko chhaina',o:['have not been','have been','did not go','will not go'],a:0},
+    {t:'wb',q:'Build: "(I) have eaten (before)"',a:['खाएको','छु'],r:'Khaaeko chhu',pool:['खाएको','छु','छैन']},
+    {t:'fill',q:'Complete: "have you EVER been?"',s:'___ जानुभएको छ?',o:['कहिल्यै','सधैं','भोलि','हिजो'],a:0,r:'Kahilyai jaanubhaeko chha?'},
+    {t:'mc',q:'A friend offers dhindo; you have never tried it:',o:['मैले कहिल्यै खाएको छैन','म खान्न','मैले खाएँ','खाना छैन'],a:0},
+    {t:'match',q:'Match the tense flavors',pairs:[['खाएको छु','have eaten (ever)'],['खाएँ','ate (then)'],['खान्छु','eat (daily)'],['खाँदै छु','am eating (now)']]}
+  ]},
+  {id:'perf_5',title:'Checkpoint',step:'checkpoint',meta:'Perfect mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "I have been"?',o:['गएको छु','गएँ','जान्छु','जानेछु'],a:0},
+    {t:'li',q:'What did you hear?',say:'म पोखरा गएको छु',r:'Ma pokhara gaeko chhu',o:['I have been to Pokhara','I am in Pokhara','I will go to Pokhara','Pokhara is nice'],a:0},
+    {t:'mc',q:'What does कहिल्यै … छैन mean?',o:['never','ever','sometimes','not yet'],a:0},
+    {t:'wb',q:'Build: "I have never eaten (it)"',a:['मैले','कहिल्यै','खाएको','छैन'],r:'Maile kahilyai khaaeko chhaina',pool:['मैले','कहिल्यै','खाएको','छैन','छु']},
+    {t:'mc',q:'The experience ending is…',o:['-एको छ','-एर','-दै छ','-नेछ'],a:0},
+    {t:'match',q:'Match line and meaning',pairs:[['गएको छु','have been'],['गएको छैन','have not been'],['कहिल्यै','ever / never'],['खाएको छु','have eaten']]}
+  ]},
+
+  /* --- Topic 3: first, then & just now --- */
+  {id:'seq2',title:'First & then',step:'learn',meta:'पहिले त्यसपछि अन्त्यमा भर्खर',vocab:[['पहिले','pahile','first / before'],['त्यसपछि','tyaspachhi','after that / then'],['अन्त्यमा','antyamaa','finally / at the end'],['भर्खर','bharkhar','just now'],['भर्खर आएँ','bharkhar aaen','(I) just came']],ex:[
+    {t:'note',tag:'Tell it in order',q:'पहिले → त्यसपछि → अन्त्यमा',body:'<p>March a story along: <span class="deva">पहिले</span> first… <span class="deva">त्यसपछि</span> after that… <span class="deva">अन्त्यमा</span> finally.</p><p><span class="deva">पहिले चिया खान्छु, त्यसपछि काम गर्छु</span> — first I have tea, then I work.</p>'},
+    {t:'mc',q:'What does पहिले mean?',d:'पहिले',r:'Pahile',o:['first / before','later','after that','finally'],a:0},
+    {t:'mc',q:'What does त्यसपछि mean?',d:'त्यसपछि',r:'Tyaspachhi',o:['after that / then','before that','because of that','instead'],a:0},
+    {t:'note',tag:'Hot off the stove',q:'भर्खर',body:'<p><span class="deva">भर्खर</span> = just now, freshly: <span class="deva">भर्खर आएँ</span> — I just arrived · <span class="deva">भर्खरको रोटी</span> — fresh-made roti.</p>'},
+    {t:'mc',q:'What does भर्खर mean?',d:'भर्खर',r:'Bharkhar',o:['just now','long ago','soon','always'],a:0},
+    {t:'li',q:'What did you hear?',say:'भर्खर आएँ',r:'Bharkhar aaen',o:['(I) just came','(I) came yesterday','(I) will come','(I) am coming'],a:0},
+    {t:'mc',q:'How do you say "finally"?',o:['अन्त्यमा','पहिले','त्यसपछि','भर्खर'],a:0}
+  ]},
+  {id:'seq2_2',title:'Recognize',step:'recognize',meta:'Order words by ear',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'पहिले',r:'Pahile',o:['first / before','after that','finally','just now'],a:0},
+    {t:'mc',q:'What does अन्त्यमा mean?',d:'अन्त्यमा',r:'Antyamaa',o:['finally / at the end','at the start','in the middle','after that'],a:0},
+    {t:'match',q:'Match the order words',pairs:[['पहिले','first'],['त्यसपछि','then'],['अन्त्यमा','finally'],['भर्खर','just now']]},
+    {t:'li',q:'What did you hear?',say:'त्यसपछि',r:'Tyaspachhi',o:['after that','before that','finally','first'],a:0},
+    {t:'mc',q:'भर्खर आएँ means…',o:['(I) just came','(I) came early','(I) always come','(I) never came'],a:0},
+    {t:'mc',q:'The natural story order is…',o:['पहिले · त्यसपछि · अन्त्यमा','अन्त्यमा · पहिले · त्यसपछि','त्यसपछि · पहिले · अन्त्यमा','भर्खर · अन्त्यमा · पहिले'],a:0},
+    {t:'li',q:'What did you hear?',say:'भर्खर',r:'Bharkhar',o:['just now','later','first','then'],a:0}
+  ]},
+  {id:'seq2_3',title:'Build',step:'build',meta:'Sequence your day',vocab:[],ex:[
+    {t:'wb',q:'Build: "first I have tea, then I work" (part 1)',a:['पहिले','चिया','खान्छु'],r:'Pahile chiyaa khaanchhu',pool:['पहिले','चिया','खान्छु','त्यसपछि']},
+    {t:'fill',q:'Complete: "…after that I work"',s:'___ काम गर्छु',o:['त्यसपछि','पहिले','भर्खर','अन्त्यमा'],a:0,r:'Tyaspachhi kaam garchhu'},
+    {t:'mc',q:'"(I) just ate" =',o:['भर्खर खाएँ','पहिले खाएँ','खाएको छु','खान्छु'],a:0},
+    {t:'tr',q:'Translate: "after that / then"',a:'त्यसपछि',r:'tyaspachhi',h:'त्यस + पछि'},
+    {t:'wb',q:'Build: "finally I sleep"',a:['अन्त्यमा','म','सुत्छु'],r:'Antyamaa ma sutchhu',pool:['अन्त्यमा','म','सुत्छु','पहिले']},
+    {t:'match',q:'Match order and word',pairs:[['1st','पहिले'],['2nd','त्यसपछि'],['last','अन्त्यमा'],['this moment','भर्खर']]}
+  ]},
+  {id:'seq2_4',title:'Mix it',step:'mix',meta:'Stories in order',vocab:[],ex:[
+    {t:'mc',q:'What does त्यसपछि mean?',o:['after that / then','before','if so','so that'],a:0},
+    {t:'li',q:'What did you hear?',say:'अन्त्यमा',r:'Antyamaa',o:['finally','firstly','after that','just now'],a:0},
+    {t:'wb',q:'Build: "(I) just came"',a:['भर्खर','आएँ'],r:'Bharkhar aaen',pool:['भर्खर','आएँ','आउँछु']},
+    {t:'fill',q:'Complete: "FIRST I wash my hands"',s:'___ हात धुन्छु',o:['पहिले','अन्त्यमा','त्यसपछि','भर्खर'],a:0,r:'Pahile haat dhunchhu'},
+    {t:'mc',q:'Fresh roti from the stove is…',o:['भर्खरको','पुरानो','अन्त्यमा','पहिलेको'],a:0},
+    {t:'match',q:'Match the story',pairs:[['पहिले','first I get up'],['त्यसपछि','then I eat'],['अन्त्यमा','finally I sleep'],['भर्खर','just now']]}
+  ]},
+  {id:'seq2_5',title:'Checkpoint',step:'checkpoint',meta:'Order mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "first / before"?',o:['पहिले','त्यसपछि','अन्त्यमा','अहिले'],a:0},
+    {t:'li',q:'What did you hear?',say:'त्यसपछि',r:'Tyaspachhi',o:['after that','finally','before','just now'],a:0},
+    {t:'mc',q:'What does भर्खर mean?',d:'भर्खर',r:'Bharkhar',o:['just now','always','early','later'],a:0},
+    {t:'wb',q:'Build: "first tea, then work" — first tea eat, then work do',a:['पहिले','चिया','खाएर','काम','गर्छु'],r:'Pahile chiyaa khaaera kaam garchhu',pool:['पहिले','चिया','खाएर','काम','गर्छु','त्यसपछि']},
+    {t:'mc',q:'first · then · finally =',o:['पहिले · त्यसपछि · अन्त्यमा','त्यसपछि · पहिले · अन्त्यमा','अन्त्यमा · त्यसपछि · पहिले','पहिले · अन्त्यमा · त्यसपछि'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['पहिले','first'],['त्यसपछि','then'],['अन्त्यमा','finally'],['भर्खर आएँ','(I) just came']]}
+  ]},
+
+  /* --- Topic 4: how often --- */
+  {id:'freq2',title:'How often?',step:'learn',meta:'सधैं कहिलेकाहीँ प्रायः',vocab:[['सधैं','sadhain','always'],['कहिलेकाहीँ','kahilekaahin','sometimes'],['प्रायः','praayah','usually / mostly'],['हरेक दिन','harek din','every day'],['म कहिल्यै खाँदिन','ma kahilyai khaandina','I never eat (it)']],ex:[
+    {t:'note',tag:'Rhythm of life',q:'सधैं · कहिलेकाहीँ · प्रायः',body:'<p><span class="deva">सधैं</span> = always · <span class="deva">प्रायः</span> = usually · <span class="deva">कहिलेकाहीँ</span> = sometimes.</p><p><span class="deva">म सधैं चिया खान्छु</span> — I always drink tea. (Nepali "eats" tea!)</p>'},
+    {t:'mc',q:'What does सधैं mean?',d:'सधैं',r:'Sadhain',o:['always','sometimes','usually','never'],a:0},
+    {t:'mc',q:'What does कहिलेकाहीँ mean?',d:'कहिलेकाहीँ',r:'Kahilekaahin',o:['sometimes','always','every day','once'],a:0},
+    {t:'note',tag:'Every day & never',q:'हरेक दिन · कहिल्यै …-दिन',body:'<p><span class="deva">हरेक दिन</span> = every day: <span class="deva">म हरेक दिन पढ्छु</span>.</p><p>Never = <span class="deva">कहिल्यै</span> + negative verb: <span class="deva">म कहिल्यै खाँदिन</span> — I never eat it.</p>'},
+    {t:'mc',q:'What does हरेक दिन mean?',d:'हरेक दिन',r:'Harek din',o:['every day','one day','all day','some days'],a:0},
+    {t:'li',q:'What did you hear?',say:'म कहिल्यै खाँदिन',r:'Ma kahilyai khaandina',o:['I never eat (it)','I always eat (it)','I just ate','I have eaten'],a:0},
+    {t:'mc',q:'How do you say "usually"?',o:['प्रायः','सधैं','कहिलेकाहीँ','भर्खर'],a:0}
+  ]},
+  {id:'freq2_2',title:'Recognize',step:'recognize',meta:'Spot the frequency',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'सधैं',r:'Sadhain',o:['always','sometimes','usually','never'],a:0},
+    {t:'mc',q:'What does प्रायः mean?',d:'प्रायः',r:'Praayah',o:['usually / mostly','rarely','never','right now'],a:0},
+    {t:'match',q:'Match the frequencies',pairs:[['सधैं','always'],['प्रायः','usually'],['कहिलेकाहीँ','sometimes'],['हरेक दिन','every day']]},
+    {t:'li',q:'What did you hear?',say:'कहिलेकाहीँ',r:'Kahilekaahin',o:['sometimes','always','every day','usually'],a:0},
+    {t:'mc',q:'म सधैं चिया खान्छु means…',o:['I always drink tea','I sometimes drink tea','I never drink tea','I just had tea'],a:0},
+    {t:'mc',q:'"Never" needs कहिल्यै plus…',o:['a negative verb','a question','सधैं','the past'],a:0},
+    {t:'li',q:'What did you hear?',say:'हरेक दिन',r:'Harek din',o:['every day','all night','one day','each week'],a:0}
+  ]},
+  {id:'freq2_3',title:'Build',step:'build',meta:'Say how often',vocab:[],ex:[
+    {t:'wb',q:'Build: "I always drink tea"',a:['म','सधैं','चिया','खान्छु'],r:'Ma sadhain chiyaa khaanchhu',pool:['म','सधैं','चिया','खान्छु','कहिलेकाहीँ']},
+    {t:'fill',q:'Complete: "I SOMETIMES play"',s:'म ___ खेल्छु',o:['कहिलेकाहीँ','सधैं','कहिल्यै','हरेक'],a:0,r:'Ma kahilekaahin khelchhu'},
+    {t:'mc',q:'"I read every day" =',o:['म हरेक दिन पढ्छु','म सधैं दिन पढ्छु','म दिन पढ्छु','हरेक म पढ्छु'],a:0},
+    {t:'tr',q:'Translate: "sometimes"',a:'कहिलेकाहीँ',r:'kahilekaahin'},
+    {t:'wb',q:'Build: "I never eat (it)"',a:['म','कहिल्यै','खाँदिन'],r:'Ma kahilyai khaandina',pool:['म','कहिल्यै','खाँदिन','खान्छु']},
+    {t:'match',q:'Match often to rare',pairs:[['सधैं','always'],['प्रायः','usually'],['कहिलेकाहीँ','sometimes'],['कहिल्यै …-दिन','never']]}
+  ]},
+  {id:'freq2_4',title:'Mix it',step:'mix',meta:'Habits & routines',vocab:[],ex:[
+    {t:'mc',q:'What does प्रायः mean?',o:['usually','rarely','again','already'],a:0},
+    {t:'li',q:'What did you hear?',say:'प्रायः',r:'Praayah',o:['usually','always','sometimes','never'],a:0},
+    {t:'wb',q:'Build: "I usually eat daal bhaat"',a:['म','प्रायः','दालभात','खान्छु'],r:'Ma praayah daalbhaat khaanchhu',pool:['म','प्रायः','दालभात','खान्छु','सधैं']},
+    {t:'fill',q:'Complete: "I ALWAYS get up early"',s:'म ___ चाँडै उठ्छु',o:['सधैं','कहिल्यै','भर्खर','अन्त्यमा'],a:0,r:'Ma sadhain chaandai uthchhu'},
+    {t:'mc',q:'Momo twice a month — that is…',o:['कहिलेकाहीँ','सधैं','हरेक दिन','कहिल्यै'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['हरेक दिन','every day'],['सधैं','always'],['कहिलेकाहीँ','sometimes'],['प्रायः','usually']]}
+  ]},
+  {id:'freq2_5',title:'Checkpoint',step:'checkpoint',meta:'Frequency mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "always"?',o:['सधैं','कहिलेकाहीँ','प्रायः','कहिल्यै'],a:0},
+    {t:'li',q:'What did you hear?',say:'कहिलेकाहीँ',r:'Kahilekaahin',o:['sometimes','always','never','usually'],a:0},
+    {t:'mc',q:'What does म कहिल्यै खाँदिन mean?',o:['I never eat (it)','I rarely eat','I have not eaten yet','I am not eating now'],a:0},
+    {t:'wb',q:'Build: "I drink tea every day"',a:['म','हरेक दिन','चिया','खान्छु'],r:'Ma harek din chiyaa khaanchhu',pool:['म','हरेक दिन','चिया','खान्छु','कहिल्यै']},
+    {t:'mc',q:'always · usually · sometimes =',o:['सधैं · प्रायः · कहिलेकाहीँ','प्रायः · सधैं · कहिलेकाहीँ','कहिलेकाहीँ · प्रायः · सधैं','सधैं · कहिलेकाहीँ · प्रायः'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['सधैं','always'],['प्रायः','usually'],['कहिलेकाहीँ','sometimes'],['हरेक दिन','every day']]}
+  ]},
+
+  /* --- Topic 5: slowly, please — the pace lifelines --- */
+  {id:'slow',title:'Slowly, please!',step:'learn',meta:'बिस्तारै छिटो ढिलो चाँडै',vocab:[['बिस्तारै','bistaarai','slowly'],['बिस्तारै भन्नुहोस्','bistaarai bhannuhos','please speak slowly'],['छिटो','chhito','fast / quickly'],['ढिलो','dhilo','late'],['चाँडै','chaandai','soon / early']],ex:[
+    {t:'note',tag:'The learner lifeline',q:'बिस्तारै भन्नुहोस्',body:'<p>The phrase that rescues every conversation: <span class="deva">बिस्तारै भन्नुहोस्</span> — please speak slowly! (<span class="deva">बिस्तारै</span> slowly + your polite -नुहोस्.)</p>'},
+    {t:'mc',q:'What does बिस्तारै mean?',d:'बिस्तारै',r:'Bistaarai',o:['slowly','quickly','loudly','again'],a:0},
+    {t:'mc',q:'How do you ask someone to speak slowly?',o:['बिस्तारै भन्नुहोस्','छिटो भन्नुहोस्','फेरि भन्नुहोस्','बस्नुहोस्'],a:0},
+    {t:'note',tag:'Fast, late & soon',q:'छिटो · ढिलो · चाँडै',body:'<p><span class="deva">छिटो</span> = fast/quickly: <span class="deva">छिटो आउनुहोस्!</span> — come quickly!</p><p><span class="deva">ढिलो</span> = late · <span class="deva">चाँडै</span> = soon/early: <span class="deva">चाँडै आउनुहोस् है</span> — come soon, OK?</p>'},
+    {t:'mc',q:'What does छिटो mean?',d:'छिटो',r:'Chhito',o:['fast / quickly','slowly','late','soon'],a:0},
+    {t:'li',q:'What did you hear?',say:'बिस्तारै भन्नुहोस्',r:'Bistaarai bhannuhos',o:['please speak slowly','please say it again','please come quickly','please sit down'],a:0},
+    {t:'mc',q:'What does ढिलो mean?',d:'ढिलो',r:'Dhilo',o:['late','early','slow','fast'],a:0}
+  ]},
+  {id:'slow_2',title:'Recognize',step:'recognize',meta:'Pace by ear',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'छिटो',r:'Chhito',o:['fast / quickly','slowly','late','soon'],a:0},
+    {t:'mc',q:'What does चाँडै mean?',d:'चाँडै',r:'Chaandai',o:['soon / early','late','slowly','always'],a:0},
+    {t:'match',q:'Match the pace words',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['ढिलो','late'],['चाँडै','soon / early']]},
+    {t:'li',q:'What did you hear?',say:'बिस्तारै',r:'Bistaarai',o:['slowly','quickly','late','loudly'],a:0},
+    {t:'mc',q:'The bus is ढिलो. It is…',o:['late','early','fast','full'],a:0},
+    {t:'li',q:'What did you hear?',say:'चाँडै',r:'Chaandai',o:['soon / early','late','slowly','never'],a:0},
+    {t:'mc',q:'छिटो आउनुहोस् means…',o:['come quickly!','come slowly!','come later!','do not come!'],a:0}
+  ]},
+  {id:'slow_3',title:'Build',step:'build',meta:'Set the pace',vocab:[],ex:[
+    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुहोस्'],r:'Bistaarai bhannuhos',pool:['बिस्तारै','भन्नुहोस्','छिटो']},
+    {t:'fill',q:'Complete: "come QUICKLY"',s:'___ आउनुहोस्',o:['छिटो','ढिलो','बिस्तारै','सधैं'],a:0,r:'Chhito aaunuhos'},
+    {t:'mc',q:'"(I) got up early today" =',o:['आज चाँडै उठें','आज ढिलो उठें','आज छिटो सुतें','आज बिस्तारै उठें'],a:0},
+    {t:'tr',q:'Translate: "slowly"',a:'बिस्तारै',r:'bistaarai'},
+    {t:'wb',q:'Build: "come soon, OK?"',a:['चाँडै','आउनुहोस्','है'],r:'Chaandai aaunuhos hai',pool:['चाँडै','आउनुहोस्','है','ढिलो']},
+    {t:'match',q:'Match request and situation',pairs:[['बिस्तारै भन्नुहोस्','too fast for me!'],['छिटो आउनुहोस्','hurry!'],['चाँडै आउनुहोस् है','see you soon'],['फेरि भन्नुहोस्','say it again']]}
+  ]},
+  {id:'slow_4',title:'Mix it',step:'mix',meta:'Fast talk, slow talk',vocab:[],ex:[
+    {t:'mc',q:'What does चाँडै mean?',o:['soon / early','late','slow','loud'],a:0},
+    {t:'li',q:'What did you hear?',say:'ढिलो',r:'Dhilo',o:['late','early','fast','slow'],a:0},
+    {t:'wb',q:'Build: "the bus is late"',a:['बस','ढिलो','छ'],r:'Bas dhilo chha',pool:['बस','ढिलो','छ','चाँडै']},
+    {t:'fill',q:'Complete: "please walk SLOWLY"',s:'___ हिँड्नुहोस्',o:['बिस्तारै','छिटो','ढिलो','सधैं'],a:0,r:'Bistaarai hindnuhos'},
+    {t:'mc',q:'A fast talker loses you at the bazaar:',o:['बिस्तारै भन्नुहोस्','छिटो भन्नुहोस्','ढिलो छ','चाँडै जानुहोस्'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['चाँडै','soon'],['ढिलो','late']]}
+  ]},
+  {id:'slow_5',title:'Checkpoint',step:'checkpoint',meta:'Pace mastered?',vocab:[],ex:[
+    {t:'mc',q:'The magic slow-down phrase is…',o:['बिस्तारै भन्नुहोस्','छिटो आउनुहोस्','ढिलो भयो','चाँडै आउनुहोस्'],a:0},
+    {t:'li',q:'What did you hear?',say:'छिटो',r:'Chhito',o:['fast / quickly','slowly','soon','late'],a:0},
+    {t:'mc',q:'What does ढिलो mean?',d:'ढिलो',r:'Dhilo',o:['late','soon','early','never'],a:0},
+    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुहोस्'],r:'Bistaarai bhannuhos',pool:['बिस्तारै','भन्नुहोस्','आउनुहोस्']},
+    {t:'mc',q:'slowly · quickly · late · soon =',o:['बिस्तारै · छिटो · ढिलो · चाँडै','छिटो · बिस्तारै · चाँडै · ढिलो','बिस्तारै · ढिलो · छिटो · चाँडै','चाँडै · छिटो · ढिलो · बिस्तारै'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['ढिलो','late'],['चाँडै','soon / early']]}
+  ]},
+
+  /* --- Topic 6: above, below, inside, outside --- */
+  {id:'pos2',title:'Where exactly?',step:'learn',meta:'माथि तल भित्र बाहिर अगाडि',vocab:[['माथि','maathi','above / up'],['तल','tala','below / down'],['भित्र','bhitra','inside'],['बाहिर','baahira','outside'],['अगाडि','agaadi','in front'],['घरभित्र','gharbhitra','inside the house']],ex:[
+    {t:'note',tag:'Pin it down',q:'माथि · तल',body:'<p><span class="deva">माथि</span> = above/up · <span class="deva">तल</span> = below/down. Nepal is a country of माथि and तल — everything is up or down a hill!</p><p><span class="deva">किताब माथि छ</span> — the book is up above.</p>'},
+    {t:'mc',q:'What does माथि mean?',d:'माथि',r:'Maathi',o:['above / up','below','inside','behind'],a:0},
+    {t:'mc',q:'What does तल mean?',d:'तल',r:'Tala',o:['below / down','above','outside','in front'],a:0},
+    {t:'note',tag:'In, out & front',q:'भित्र · बाहिर · अगाडि',body:'<p><span class="deva">भित्र</span> = inside · <span class="deva">बाहिर</span> = outside · <span class="deva">अगाडि</span> = in front.</p><p>Glue them to nouns: <span class="deva">घरभित्र</span> inside the house · <span class="deva">पसल अगाडि</span> in front of the shop.</p>'},
+    {t:'mc',q:'What does भित्र mean?',d:'भित्र',r:'Bhitra',o:['inside','outside','above','under'],a:0},
+    {t:'li',q:'What did you hear?',say:'घरभित्र',r:'Gharbhitra',o:['inside the house','outside the house','above the house','behind the house'],a:0},
+    {t:'mc',q:'How do you say "outside"?',o:['बाहिर','भित्र','माथि','तल'],a:0}
+  ]},
+  {id:'pos2_2',title:'Recognize',step:'recognize',meta:'Spot the positions',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'माथि',r:'Maathi',o:['above / up','below','inside','outside'],a:0},
+    {t:'mc',q:'What does अगाडि mean?',d:'अगाडि',r:'Agaadi',o:['in front','behind','beside','far'],a:0},
+    {t:'match',q:'Match the positions',pairs:[['माथि','above'],['तल','below'],['भित्र','inside'],['बाहिर','outside']]},
+    {t:'li',q:'What did you hear?',say:'बाहिर',r:'Baahira',o:['outside','inside','above','front'],a:0},
+    {t:'mc',q:'चिया पसलभित्र छ means the tea is…',o:['inside the shop','outside the shop','above the shop','in front of the shop'],a:0},
+    {t:'li',q:'What did you hear?',say:'तल',r:'Tala',o:['below / down','above / up','inside','soon'],a:0},
+    {t:'mc',q:'Nepal life happens माथि and तल because of…',o:['the hills','the rivers','the weather','the roads'],a:0}
+  ]},
+  {id:'pos2_3',title:'Build',step:'build',meta:'Place things right',vocab:[],ex:[
+    {t:'wb',q:'Build: "the book is up above"',a:['किताब','माथि','छ'],r:'Kitaab maathi chha',pool:['किताब','माथि','छ','तल']},
+    {t:'fill',q:'Complete: "INSIDE the house"',s:'घर___',o:['भित्र','बाहिर','माथि','तल'],a:0,r:'Gharbhitra'},
+    {t:'mc',q:'"The dog is outside" =',o:['कुकुर बाहिर छ','कुकुर भित्र छ','कुकुर माथि छ','कुकुर अगाडि हो'],a:0},
+    {t:'tr',q:'Translate: "inside"',a:'भित्र',r:'bhitra'},
+    {t:'wb',q:'Build: "in front of the shop"',a:['पसल','अगाडि'],r:'Pasal agaadi',pool:['पसल','अगाडि','भित्र']},
+    {t:'match',q:'Match position and meaning',pairs:[['माथि','above'],['अगाडि','in front'],['बाहिर','outside'],['तल','below']]}
+  ]},
+  {id:'pos2_4',title:'Mix it',step:'mix',meta:'Everything in its place',vocab:[],ex:[
+    {t:'mc',q:'What does बाहिर mean?',o:['outside','inside','above','below'],a:0},
+    {t:'li',q:'What did you hear?',say:'भित्र',r:'Bhitra',o:['inside','outside','in front','below'],a:0},
+    {t:'wb',q:'Build: "the key is inside the house"',a:['साँचो','घरभित्र','छ'],r:'Saancho gharbhitra chha',pool:['साँचो','घरभित्र','छ','बाहिर']},
+    {t:'fill',q:'Complete: "the village is DOWN below"',s:'गाउँ ___ छ',o:['तल','माथि','अगाडि','भित्र'],a:0,r:'Gaaun tala chha'},
+    {t:'mc',q:'The himal is माथि; the river is…',o:['तल','भित्र','अगाडि','बाहिर'],a:0},
+    {t:'match',q:'Match position and meaning',pairs:[['भित्र','inside'],['बाहिर','outside'],['माथि','above'],['अगाडि','in front']]}
+  ]},
+  {id:'pos2_5',title:'Checkpoint',step:'checkpoint',meta:'Positions mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "above / up"?',o:['माथि','तल','भित्र','बाहिर'],a:0},
+    {t:'li',q:'What did you hear?',say:'अगाडि',r:'Agaadi',o:['in front','behind','above','outside'],a:0},
+    {t:'mc',q:'What does घरभित्र mean?',d:'घरभित्र',r:'Gharbhitra',o:['inside the house','outside the house','on the house','near the house'],a:0},
+    {t:'wb',q:'Build: "the cat is inside"',a:['बिरालो','भित्र','छ'],r:'Biraalo bhitra chha',pool:['बिरालो','भित्र','छ','माथि']},
+    {t:'mc',q:'above · below · inside · outside =',o:['माथि · तल · भित्र · बाहिर','तल · माथि · बाहिर · भित्र','माथि · भित्र · तल · बाहिर','बाहिर · भित्र · तल · माथि'],a:0},
+    {t:'match',q:'Match position and meaning',pairs:[['माथि','above'],['तल','below'],['भित्र','inside'],['बाहिर','outside']]}
+  ]},
+
+  /* --- Topic 7: years & lakhs --- */
+  {id:'years',title:'Years & lakhs',step:'learn',meta:'वर्ष + लाख — big time, big money',vocab:[['वर्ष','barsha','year'],['यो वर्ष','yo barsha','this year'],['अर्को वर्ष','arko barsha','next year'],['लाख','laakh','one hundred thousand'],['एक लाख रुपैयाँ','ek laakh rupaiyaan','one lakh rupees']],ex:[
+    {t:'note',tag:'The years',q:'वर्ष',body:'<p><span class="deva">वर्ष</span> = year: <span class="deva">यो वर्ष</span> this year · <span class="deva">अर्को वर्ष</span> next year.</p><p><span class="deva">म अर्को वर्ष नेपाल जान्छु</span> — I am going to Nepal next year.</p>'},
+    {t:'mc',q:'What does वर्ष mean?',d:'वर्ष',r:'Barsha',o:['year','month','week','season'],a:0},
+    {t:'mc',q:'What does अर्को वर्ष mean?',d:'अर्को वर्ष',r:'Arko barsha',o:['next year','last year','this year','every year'],a:0},
+    {t:'note',tag:'Count like Nepal',q:'लाख',body:'<p>Beyond हजार (thousand), South Asia counts in <span class="deva">लाख</span> — one hundred thousand. Rent, motorbikes and land are all lakh-talk: <span class="deva">एक लाख रुपैयाँ</span> = Rs 1,00,000.</p>'},
+    {t:'mc',q:'What does लाख mean?',d:'लाख',r:'Laakh',o:['one hundred thousand','one thousand','one million','ten thousand'],a:0},
+    {t:'li',q:'What did you hear?',say:'एक लाख रुपैयाँ',r:'Ek laakh rupaiyaan',o:['one lakh rupees','one thousand rupees','one hundred rupees','ten lakh rupees'],a:0},
+    {t:'mc',q:'How do you say "this year"?',o:['यो वर्ष','अर्को वर्ष','हरेक वर्ष','यो महिना'],a:0}
+  ]},
+  {id:'years_2',title:'Recognize',step:'recognize',meta:'Years & lakhs by ear',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'वर्ष',r:'Barsha',o:['year','month','day','week'],a:0},
+    {t:'mc',q:'What does एक लाख mean?',d:'एक लाख',r:'Ek laakh',o:['100,000','1,000','10,000','1,000,000'],a:0},
+    {t:'match',q:'Match the spans',pairs:[['दिन','day'],['हप्ता','week'],['महिना','month'],['वर्ष','year']]},
+    {t:'li',q:'What did you hear?',say:'अर्को वर्ष',r:'Arko barsha',o:['next year','last year','this year','next month'],a:0},
+    {t:'mc',q:'हजार vs लाख —',o:['1,000 vs 100,000','100 vs 1,000','both 1,000','10,000 vs 1,000'],a:0},
+    {t:'li',q:'What did you hear?',say:'लाख',r:'Laakh',o:['one hundred thousand','one thousand','one hundred','million'],a:0},
+    {t:'mc',q:'यो वर्ष means…',o:['this year','this month','every year','new year'],a:0}
+  ]},
+  {id:'years_3',title:'Build',step:'build',meta:'Talk big numbers',vocab:[],ex:[
+    {t:'wb',q:'Build: "I am going to Nepal next year"',a:['म','अर्को वर्ष','नेपाल','जान्छु'],r:'Ma arko barsha nepaal jaanchhu',pool:['म','अर्को वर्ष','नेपाल','जान्छु','यो वर्ष']},
+    {t:'fill',q:'Complete: "one LAKH rupees"',s:'एक ___ रुपैयाँ',o:['लाख','हजार','सय','वर्ष'],a:0,r:'Ek laakh rupaiyaan'},
+    {t:'mc',q:'"Two lakh rupees" =',o:['दुई लाख रुपैयाँ','दुई हजार रुपैयाँ','बीस लाख रुपैयाँ','दुई सय रुपैयाँ'],a:0},
+    {t:'tr',q:'Translate: "year"',a:'वर्ष',r:'barsha'},
+    {t:'wb',q:'Build: "this year I am learning Nepali"',a:['यो वर्ष','म','नेपाली','सिक्छु'],r:'Yo barsha ma nepaali sikchhu',pool:['यो वर्ष','म','नेपाली','सिक्छु','अर्को वर्ष']},
+    {t:'match',q:'Match amount and figure',pairs:[['सय','100'],['हजार','1,000'],['लाख','100,000'],['एक लाख रुपैयाँ','Rs 1,00,000']]}
+  ]},
+  {id:'years_4',title:'Mix it',step:'mix',meta:'Time & treasure',vocab:[],ex:[
+    {t:'mc',q:'What does अर्को वर्ष mean?',o:['next year','last year','other years','new year'],a:0},
+    {t:'li',q:'What did you hear?',say:'यो वर्ष',r:'Yo barsha',o:['this year','this month','next year','every year'],a:0},
+    {t:'wb',q:'Build: "the motorbike costs two lakh"',a:['मोटरसाइकल','दुई','लाख','पर्छ'],r:'Motorsaaikal dui laakh parchha',pool:['मोटरसाइकल','दुई','लाख','पर्छ','हजार']},
+    {t:'fill',q:'Complete: "how many YEARS?"',s:'कति ___?',o:['वर्ष','महिना','लाख','दिन'],a:0,r:'Kati barsha?'},
+    {t:'mc',q:'A house price is usually quoted in…',o:['लाख','सय','हजार','दिन'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['वर्ष','year'],['लाख','100,000'],['अर्को वर्ष','next year'],['रुपैयाँ','rupees']]}
+  ]},
+  {id:'years_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 11 complete!',vocab:[],ex:[
+    {t:'mc',q:'How do you say "next year"?',o:['अर्को वर्ष','यो वर्ष','अर्को महिना','हरेक वर्ष'],a:0},
+    {t:'li',q:'What did you hear?',say:'एक लाख रुपैयाँ',r:'Ek laakh rupaiyaan',o:['one lakh rupees','one thousand rupees','a hundred rupees','one rupee'],a:0},
+    {t:'mc',q:'What does लाख mean?',d:'लाख',r:'Laakh',o:['100,000','1,000','1,000,000','100'],a:0},
+    {t:'wb',q:'Build: "I will go next year"',a:['म','अर्को वर्ष','जान्छु'],r:'Ma arko barsha jaanchhu',pool:['म','अर्को वर्ष','जान्छु','गएँ']},
+    {t:'mc',q:'100 · 1,000 · 100,000 =',o:['सय · हजार · लाख','हजार · सय · लाख','लाख · हजार · सय','सय · लाख · हजार'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['वर्ष','year'],['यो वर्ष','this year'],['लाख','100,000'],['एक लाख रुपैयाँ','one lakh rupees']]}
+  ]},
+
+/* ===================== ZONE 12 · LIVING IN NEPAL =====================
+   The daily-life vocabulary that fills out the course: hills & villages,
+   animals, clothes (the topi!), around the house, fruits & tastes,
+   phone & post, and getting help. Secular everyday content throughout. */
+  /* --- Topic 1: hills, rivers & villages --- */
+  {id:'trek',title:'Hills & himals',step:'learn',meta:'हिमाल पहाड नदी गाउँ',vocab:[['हिमाल','himaal','snow mountain / the Himalaya'],['पहाड','pahaad','hill'],['नदी','nadi','river'],['जङ्गल','jangal','forest / jungle'],['गाउँ','gaaun','village'],['रुख','rukh','tree']],ex:[
+    {t:'note',tag:'Zone 12',q:'The Nepali landscape',body:'<p>Nepal in four words: <span class="deva">हिमाल</span> the snow mountains · <span class="deva">पहाड</span> the green hills · <span class="deva">नदी</span> the rivers · <span class="deva">गाउँ</span> the villages between them.</p>'},
+    {t:'mc',q:'What does हिमाल mean?',d:'हिमाल',r:'Himaal',o:['snow mountain','hill','valley','glacier'],a:0},
+    {t:'mc',q:'What does गाउँ mean?',d:'गाउँ',r:'Gaaun',o:['village','town','farm','house'],a:0},
+    {t:'note',tag:'Green places',q:'जङ्गल · रुख',body:'<p><span class="deva">जङ्गल</span> = forest (yes — English "jungle" came FROM this word!). <span class="deva">रुख</span> = tree.</p><p><span class="deva">पहाडमा धेरै रुख छन्</span> — there are many trees on the hill.</p>'},
+    {t:'mc',q:'What does जङ्गल mean?',d:'जङ्गल',r:'Jangal',o:['forest / jungle','garden','field','park'],a:0},
+    {t:'li',q:'What did you hear?',say:'नदी',r:'Nadi',o:['river','lake','sea','rain'],a:0},
+    {t:'mc',q:'हिमाल vs पहाड —',o:['snow mountain vs green hill','hill vs mountain','both the same','peak vs valley'],a:0}
+  ]},
+  {id:'trek_2',title:'Recognize',step:'recognize',meta:'Spot the landscape',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'हिमाल',r:'Himaal',o:['snow mountain','hill','river','forest'],a:0},
+    {t:'mc',q:'What does रुख mean?',d:'रुख',r:'Rukh',o:['tree','bush','flower','wood'],a:0},
+    {t:'match',q:'Match the landscape',pairs:[['हिमाल','snow mountain'],['पहाड','hill'],['नदी','river'],['गाउँ','village']]},
+    {t:'li',q:'What did you hear?',say:'गाउँ',r:'Gaaun',o:['village','house','field','town'],a:0},
+    {t:'mc',q:'English borrowed "jungle" from…',o:['जङ्गल','रुख','पहाड','नदी'],a:0},
+    {t:'li',q:'What did you hear?',say:'पहाड',r:'Pahaad',o:['hill','snow mountain','rock','road'],a:0},
+    {t:'mc',q:'पहाडमा धेरै रुख छन् means…',o:['there are many trees on the hill','the hill has no trees','the trees are tall','the forest is far'],a:0}
+  ]},
+  {id:'trek_3',title:'Build',step:'build',meta:'Describe the view',vocab:[],ex:[
+    {t:'wb',q:'Build: "the village is on the hill"',a:['गाउँ','पहाडमा','छ'],r:'Gaaun pahaadmaa chha',pool:['गाउँ','पहाडमा','छ','नदीमा']},
+    {t:'fill',q:'Complete: "the RIVER is below"',s:'___ तल छ',o:['नदी','हिमाल','रुख','गाउँ'],a:0,r:'Nadi tala chha'},
+    {t:'mc',q:'"The himal is very beautiful" =',o:['हिमाल धेरै राम्रो छ','हिमाल सानो छ','पहाड ठूलो हो','नदी राम्रो छ'],a:0},
+    {t:'tr',q:'Translate: "village"',a:'गाउँ',r:'gaaun'},
+    {t:'wb',q:'Build: "there are trees in the forest"',a:['जङ्गलमा','रुख','छन्'],r:'Jangalmaa rukh chhan',pool:['जङ्गलमा','रुख','छन्','छ']},
+    {t:'match',q:'Match place and position',pairs:[['हिमाल','माथि'],['नदी','तल'],['रुख','जङ्गलमा'],['गाउँ','पहाडमा']]}
+  ]},
+  {id:'trek_4',title:'Mix it',step:'mix',meta:'Out on the trail',vocab:[],ex:[
+    {t:'mc',q:'What does नदी mean?',o:['river','lake','waterfall','stream only'],a:0},
+    {t:'li',q:'What did you hear?',say:'जङ्गल',r:'Jangal',o:['forest','village','garden','hill'],a:0},
+    {t:'wb',q:'Build: "I have been to the himal"',a:['म','हिमाल','गएको','छु'],r:'Ma himaal gaeko chhu',pool:['म','हिमाल','गएको','छु','जान्छु']},
+    {t:'fill',q:'Complete: "my village is far"',s:'मेरो ___ टाढा छ',o:['गाउँ','रुख','नदी','जङ्गल'],a:0,r:'Mero gaaun taadhaa chha'},
+    {t:'mc',q:'Crossing water on a trek means finding a…',o:['नदी','रुख','पहाड','गाउँ'],a:0},
+    {t:'match',q:'Match the landscape',pairs:[['हिमाल','snow mountain'],['जङ्गल','forest'],['रुख','tree'],['नदी','river']]}
+  ]},
+  {id:'trek_5',title:'Checkpoint',step:'checkpoint',meta:'Landscape mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "hill"?',o:['पहाड','हिमाल','गाउँ','रुख'],a:0},
+    {t:'li',q:'What did you hear?',say:'रुख',r:'Rukh',o:['tree','forest','wood','leaf'],a:0},
+    {t:'mc',q:'What does गाउँ mean?',d:'गाउँ',r:'Gaaun',o:['village','city','home','field'],a:0},
+    {t:'wb',q:'Build: "the village is beautiful"',a:['गाउँ','राम्रो','छ'],r:'Gaaun raamro chha',pool:['गाउँ','राम्रो','छ','हो']},
+    {t:'mc',q:'himal · hill · river · forest =',o:['हिमाल · पहाड · नदी · जङ्गल','पहाड · हिमाल · जङ्गल · नदी','हिमाल · नदी · पहाड · जङ्गल','जङ्गल · पहाड · नदी · हिमाल'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['हिमाल','snow mountain'],['पहाड','hill'],['नदी','river'],['गाउँ','village']]}
+  ]},
+
+  /* --- Topic 2: animals --- */
+  {id:'animals',title:'Animals',step:'learn',meta:'कुकुर बिरालो गाई बाख्रा',vocab:[['कुकुर','kukur','dog'],['बिरालो','biraalo','cat'],['गाई','gaai','cow'],['बाख्रा','baakhraa','goat'],['चरा','charaa','bird'],['हात्ती','haatti','elephant']],ex:[
+    {t:'note',tag:'Around the yard',q:'कुकुर · बिरालो · गाई',body:'<p><span class="deva">कुकुर</span> = dog · <span class="deva">बिरालो</span> = cat · <span class="deva">गाई</span> = cow — you will meet all three on any Nepali lane.</p>'},
+    {t:'mc',q:'What does कुकुर mean?',d:'कुकुर',r:'Kukur',o:['dog','cat','cow','goat'],a:0},
+    {t:'mc',q:'What does बिरालो mean?',d:'बिरालो',r:'Biraalo',o:['cat','dog','bird','rabbit'],a:0},
+    {t:'note',tag:'Hills & wilds',q:'बाख्रा · चरा · हात्ती',body:'<p><span class="deva">बाख्रा</span> = goat (the sound of every hill village) · <span class="deva">चरा</span> = bird · <span class="deva">हात्ती</span> = elephant, down in the Terai jungles.</p>'},
+    {t:'mc',q:'What does बाख्रा mean?',d:'बाख्रा',r:'Baakhraa',o:['goat','sheep','cow','buffalo'],a:0},
+    {t:'li',q:'What did you hear?',say:'हात्ती',r:'Haatti',o:['elephant','horse','cow','tiger'],a:0},
+    {t:'mc',q:'How do you say "bird"?',o:['चरा','बाख्रा','बिरालो','गाई'],a:0}
+  ]},
+  {id:'animals_2',title:'Recognize',step:'recognize',meta:'Spot each animal',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'कुकुर',r:'Kukur',o:['dog','cat','goat','cow'],a:0},
+    {t:'mc',q:'What does गाई mean?',d:'गाई',r:'Gaai',o:['cow','goat','buffalo','ox'],a:0},
+    {t:'match',q:'Match the animals',pairs:[['कुकुर','dog'],['बिरालो','cat'],['गाई','cow'],['बाख्रा','goat']]},
+    {t:'li',q:'What did you hear?',say:'चरा',r:'Charaa',o:['bird','cat','goat','chicken'],a:0},
+    {t:'mc',q:'The Terai jungle giant is the…',o:['हात्ती','गाई','बाख्रा','कुकुर'],a:0},
+    {t:'li',q:'What did you hear?',say:'बाख्रा',r:'Baakhraa',o:['goat','cow','cat','bird'],a:0},
+    {t:'mc',q:'रुखमा चरा छ means…',o:['there is a bird in the tree','the bird flew away','the tree is tall','a bird sings'],a:0}
+  ]},
+  {id:'animals_3',title:'Build',step:'build',meta:'Animal sentences',vocab:[],ex:[
+    {t:'wb',q:'Build: "there is a bird in the tree"',a:['रुखमा','चरा','छ'],r:'Rukhmaa charaa chha',pool:['रुखमा','चरा','छ','हो']},
+    {t:'fill',q:'Complete: "the DOG is outside"',s:'___ बाहिर छ',o:['कुकुर','बिरालो','गाई','चरा'],a:0,r:'Kukur baahira chha'},
+    {t:'mc',q:'"I have a cat" =',o:['मसँग बिरालो छ','म बिरालो हुँ','बिरालो मसँग हो','बिरालो छ म'],a:0},
+    {t:'tr',q:'Translate: "dog"',a:'कुकुर',r:'kukur'},
+    {t:'wb',q:'Build: "the goat eats grass" — goat grass eats (घाँस grass)',a:['बाख्राले','घाँस','खान्छ'],r:'Baakhraale ghaans khaanchha',pool:['बाख्राले','घाँस','खान्छ','खान्छु']},
+    {t:'match',q:'Match animal and home',pairs:[['हात्ती','the Terai jungle'],['बाख्रा','the hill village'],['चरा','the tree'],['बिरालो','the house']]}
+  ]},
+  {id:'animals_4',title:'Mix it',step:'mix',meta:'A farmyard walk',vocab:[],ex:[
+    {t:'mc',q:'What does हात्ती mean?',o:['elephant','horse','buffalo','rhino'],a:0},
+    {t:'li',q:'What did you hear?',say:'बिरालो',r:'Biraalo',o:['cat','dog','goat','bird'],a:0},
+    {t:'wb',q:'Build: "the cow is big"',a:['गाई','ठूलो','छ'],r:'Gaai thulo chha',pool:['गाई','ठूलो','छ','सानो']},
+    {t:'fill',q:'Complete: "I like DOGS"',s:'मलाई ___ मन पर्छ',o:['कुकुर','किताब','खाना','घर'],a:0,r:'Malai kukur man parchha'},
+    {t:'mc',q:'Which animal bleats from every hill village?',o:['बाख्रा','हात्ती','बिरालो','गाई'],a:0},
+    {t:'match',q:'Match the animals',pairs:[['गाई','cow'],['बाख्रा','goat'],['चरा','bird'],['हात्ती','elephant']]}
+  ]},
+  {id:'animals_5',title:'Checkpoint',step:'checkpoint',meta:'Animals mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "cat"?',o:['बिरालो','कुकुर','बाख्रा','चरा'],a:0},
+    {t:'li',q:'What did you hear?',say:'गाई',r:'Gaai',o:['cow','goat','dog','cat'],a:0},
+    {t:'mc',q:'What does चरा mean?',d:'चरा',r:'Charaa',o:['bird','chicken','crow','bat'],a:0},
+    {t:'wb',q:'Build: "the dog is in the village"',a:['कुकुर','गाउँमा','छ'],r:'Kukur gaaunmaa chha',pool:['कुकुर','गाउँमा','छ','हो']},
+    {t:'mc',q:'dog · cat · cow · goat =',o:['कुकुर · बिरालो · गाई · बाख्रा','बिरालो · कुकुर · बाख्रा · गाई','कुकुर · गाई · बिरालो · बाख्रा','बाख्रा · बिरालो · गाई · कुकुर'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['कुकुर','dog'],['बिरालो','cat'],['बाख्रा','goat'],['हात्ती','elephant']]}
+  ]},
+
+  /* --- Topic 3: clothes & the topi --- */
+  {id:'clothes',title:'The topi',step:'learn',meta:'लुगा टोपी जुत्ता + लगाउनु',vocab:[['लुगा','lugaa','clothes'],['टोपी','topi','hat / the Nepali topi'],['जुत्ता','juttaa','shoes'],['लगाउनु','lagaaunu','to wear / put on'],['जुत्ता खोल्नुहोस्','juttaa kholnuhos','please take off (your) shoes']],ex:[
+    {t:'note',tag:'Dress like a local',q:'लुगा · टोपी',body:'<p><span class="deva">लुगा</span> = clothes. <span class="deva">टोपी</span> = hat — and THE topi, the brimless cap that crowns Nepali menswear.</p><p><span class="deva">लगाउनु</span> = to wear/put on: <span class="deva">म टोपी लगाउँछु</span>.</p>'},
+    {t:'mc',q:'What does लुगा mean?',d:'लुगा',r:'Lugaa',o:['clothes','cloth shop','laundry','blanket'],a:0},
+    {t:'mc',q:'What does टोपी mean?',d:'टोपी',r:'Topi',o:['hat / topi','shirt','scarf','shoe'],a:0},
+    {t:'note',tag:'Shoes off!',q:'जुत्ता · खोल्नुहोस्',body:'<p><span class="deva">जुत्ता</span> = shoes. In every Nepali home they come off at the door — <span class="deva">जुत्ता खोल्नुहोस्</span>: please take off your shoes (खोल्नु = open/take off).</p>'},
+    {t:'mc',q:'What does जुत्ता खोल्नुहोस् mean?',d:'जुत्ता खोल्नुहोस्',r:'Juttaa kholnuhos',o:['please take off your shoes','please put on shoes','the shoes are new','shoes for sale'],a:0},
+    {t:'li',q:'What did you hear?',say:'टोपी',r:'Topi',o:['hat / topi','shoes','clothes','shirt'],a:0},
+    {t:'mc',q:'What does लगाउनु mean?',d:'लगाउनु',r:'Lagaaunu',o:['to wear / put on','to take off','to wash','to buy'],a:0}
+  ]},
+  {id:'clothes_2',title:'Recognize',step:'recognize',meta:'Spot the wardrobe',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'लुगा',r:'Lugaa',o:['clothes','shoes','hat','bag'],a:0},
+    {t:'mc',q:'What does जुत्ता mean?',d:'जुत्ता',r:'Juttaa',o:['shoes','socks','feet','sandals only'],a:0},
+    {t:'match',q:'Match the wardrobe',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['लगाउनु','to wear']]},
+    {t:'li',q:'What did you hear?',say:'जुत्ता खोल्नुहोस्',r:'Juttaa kholnuhos',o:['please take off your shoes','please wear shoes','where are the shoes?','nice shoes!'],a:0},
+    {t:'mc',q:'Entering a Nepali home, you first…',o:['जुत्ता खोल्नुहोस्','टोपी लगाउनुहोस्','लुगा किन्नुहोस्','बस्नुहोस्'],a:0},
+    {t:'li',q:'What did you hear?',say:'लगाउनु',r:'Lagaaunu',o:['to wear','to open','to wash','to fold'],a:0},
+    {t:'mc',q:'The brimless Nepali cap is the…',o:['टोपी','लुगा','जुत्ता','झोला'],a:0}
+  ]},
+  {id:'clothes_3',title:'Build',step:'build',meta:'Get dressed',vocab:[],ex:[
+    {t:'wb',q:'Build: "I wear a topi"',a:['म','टोपी','लगाउँछु'],r:'Ma topi lagaaunchhu',pool:['म','टोपी','लगाउँछु','खोल्छु']},
+    {t:'fill',q:'Complete: "please take off your SHOES"',s:'___ खोल्नुहोस्',o:['जुत्ता','टोपी','लुगा','झ्याल'],a:0,r:'Juttaa kholnuhos'},
+    {t:'mc',q:'"I want to buy clothes" =',o:['म लुगा किन्न चाहन्छु','म लुगा लगाउँछु','मलाई लुगा छ','लुगा राम्रो छ'],a:0},
+    {t:'tr',q:'Translate: "shoes"',a:'जुत्ता',r:'juttaa'},
+    {t:'wb',q:'Build: "the topi is beautiful"',a:['टोपी','राम्रो','छ'],r:'Topi raamro chha',pool:['टोपी','राम्रो','छ','हो']},
+    {t:'match',q:'Match item and action',pairs:[['टोपी','लगाउनु'],['जुत्ता','खोल्नुहोस्'],['लुगा','किन्नु'],['नयाँ लुगा','new clothes']]}
+  ]},
+  {id:'clothes_4',title:'Mix it',step:'mix',meta:'Dressed for the hills',vocab:[],ex:[
+    {t:'mc',q:'What does लगाउनु mean?',o:['to wear / put on','to remove','to wash','to iron'],a:0},
+    {t:'li',q:'What did you hear?',say:'जुत्ता',r:'Juttaa',o:['shoes','hat','clothes','socks'],a:0},
+    {t:'wb',q:'Build: "I will buy new clothes"',a:['म','नयाँ','लुगा','किन्छु'],r:'Ma nayaan lugaa kinchhu',pool:['म','नयाँ','लुगा','किन्छु','पुरानो']},
+    {t:'fill',q:'Complete: "grandfather wears a TOPI"',s:'हजुरबुबा ___ लगाउनुहुन्छ',o:['टोपी','जुत्ता','झोला','घडी'],a:0,r:'Hajurbubaa topi lagaaunuhunchha'},
+    {t:'mc',q:'At the door of a Nepali home you hear…',o:['जुत्ता खोल्नुहोस्','जुत्ता लगाउनुहोस्','जुत्ता किन्नुहोस्','जुत्ता दिनुहोस्'],a:0},
+    {t:'match',q:'Match the wardrobe',pairs:[['लुगा','clothes'],['जुत्ता','shoes'],['टोपी','hat / topi'],['लगाउनु','to wear']]}
+  ]},
+  {id:'clothes_5',title:'Checkpoint',step:'checkpoint',meta:'Wardrobe mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "clothes"?',o:['लुगा','जुत्ता','टोपी','कपडा पसल'],a:0},
+    {t:'li',q:'What did you hear?',say:'टोपी',r:'Topi',o:['hat / topi','shoes','shirt','clothes'],a:0},
+    {t:'mc',q:'What does जुत्ता खोल्नुहोस् mean?',o:['please take off your shoes','please put on your shoes','the shoes are off','whose shoes are these?'],a:0},
+    {t:'wb',q:'Build: "I wear clothes" — clothes wear',a:['लुगा','लगाउँछु'],r:'Lugaa lagaaunchhu',pool:['लुगा','लगाउँछु','खोल्छु']},
+    {t:'mc',q:'clothes · hat · shoes =',o:['लुगा · टोपी · जुत्ता','टोपी · लुगा · जुत्ता','जुत्ता · टोपी · लुगा','लुगा · जुत्ता · टोपी'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['जुत्ता खोल्नुहोस्','shoes off, please']]}
+  ]},
+
+  /* --- Topic 4: around the house --- */
+  {id:'home2',title:'Around the house',step:'learn',meta:'झ्याल खाट टेबल कुर्सी साँचो',vocab:[['झ्याल','jhyaal','window'],['खाट','khaat','bed'],['टेबल','tebal','table'],['कुर्सी','kursi','chair'],['साँचो','saancho','key'],['सफा','saphaa','clean']],ex:[
+    {t:'note',tag:'In the room',q:'झ्याल · खाट',body:'<p>You know घर, कोठा and ढोका. Add <span class="deva">झ्याल</span> = window and <span class="deva">खाट</span> = bed — the wooden cot of every Nepali home.</p>'},
+    {t:'mc',q:'What does झ्याल mean?',d:'झ्याल',r:'Jhyaal',o:['window','door','wall','roof'],a:0},
+    {t:'mc',q:'What does खाट mean?',d:'खाट',r:'Khaat',o:['bed','chair','table','mat'],a:0},
+    {t:'note',tag:'Sit, work, lock',q:'टेबल · कुर्सी · साँचो · सफा',body:'<p><span class="deva">टेबल</span> = table · <span class="deva">कुर्सी</span> = chair · <span class="deva">साँचो</span> = key.</p><p><span class="deva">सफा</span> = clean: <span class="deva">कोठा सफा छ</span> — the room is clean.</p>'},
+    {t:'mc',q:'What does साँचो mean?',d:'साँचो',r:'Saancho',o:['key','lock','door','safe'],a:0},
+    {t:'li',q:'What did you hear?',say:'कुर्सी',r:'Kursi',o:['chair','table','bed','window'],a:0},
+    {t:'mc',q:'What does सफा mean?',d:'सफा',r:'Saphaa',o:['clean','dirty','tidy room','new'],a:0}
+  ]},
+  {id:'home2_2',title:'Recognize',step:'recognize',meta:'Spot the furniture',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'झ्याल',r:'Jhyaal',o:['window','door','key','bed'],a:0},
+    {t:'mc',q:'What does टेबल mean?',d:'टेबल',r:'Tebal',o:['table','chair','shelf','desk lamp'],a:0},
+    {t:'match',q:'Match the furniture',pairs:[['खाट','bed'],['टेबल','table'],['कुर्सी','chair'],['झ्याल','window']]},
+    {t:'li',q:'What did you hear?',say:'साँचो',r:'Saancho',o:['key','lock','window','clean'],a:0},
+    {t:'mc',q:'कोठा सफा छ means…',o:['the room is clean','the room is dirty','clean the room!','the room is big'],a:0},
+    {t:'li',q:'What did you hear?',say:'खाट',r:'Khaat',o:['bed','chair','door','wall'],a:0},
+    {t:'mc',q:'You lock the ढोका with a…',o:['साँचो','झ्याल','कुर्सी','टेबल'],a:0}
+  ]},
+  {id:'home2_3',title:'Build',step:'build',meta:'Furnish the room',vocab:[],ex:[
+    {t:'wb',q:'Build: "the key is on the table"',a:['साँचो','टेबलमा','छ'],r:'Saancho tebalmaa chha',pool:['साँचो','टेबलमा','छ','खाटमा']},
+    {t:'fill',q:'Complete: "the room is CLEAN"',s:'कोठा ___ छ',o:['सफा','ठूलो','नयाँ','राम्रो'],a:0,r:'Kothaa saphaa chha'},
+    {t:'mc',q:'"Please open the window" =',o:['झ्याल खोल्नुहोस्','ढोका खोल्नुहोस्','झ्याल हेर्नुहोस्','साँचो दिनुहोस्'],a:0},
+    {t:'tr',q:'Translate: "key"',a:'साँचो',r:'saancho'},
+    {t:'wb',q:'Build: "the cat is on the bed"',a:['बिरालो','खाटमा','छ'],r:'Biraalo khaatmaa chha',pool:['बिरालो','खाटमा','छ','टेबलमा']},
+    {t:'match',q:'Match thing and use',pairs:[['खाट','for sleeping'],['कुर्सी','for sitting'],['टेबल','for working'],['साँचो','for locking']]}
+  ]},
+  {id:'home2_4',title:'Mix it',step:'mix',meta:'Home sweet home',vocab:[],ex:[
+    {t:'mc',q:'What does कुर्सी mean?',o:['chair','table','bed','stool only'],a:0},
+    {t:'li',q:'What did you hear?',say:'टेबल',r:'Tebal',o:['table','bed','chair','wall'],a:0},
+    {t:'wb',q:'Build: "the window is open" (खुला open)',a:['झ्याल','खुला','छ'],r:'Jhyaal khulaa chha',pool:['झ्याल','खुला','छ','सफा']},
+    {t:'fill',q:'Complete: "where is the KEY?"',s:'___ कहाँ छ?',o:['साँचो','झ्याल','खाट','कुर्सी'],a:0,r:'Saancho kahaan chha?'},
+    {t:'mc',q:'Sunlight comes into the कोठा through the…',o:['झ्याल','खाट','साँचो','कुर्सी'],a:0},
+    {t:'match',q:'Match the furniture',pairs:[['झ्याल','window'],['खाट','bed'],['साँचो','key'],['सफा','clean']]}
+  ]},
+  {id:'home2_5',title:'Checkpoint',step:'checkpoint',meta:'Home mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "window"?',o:['झ्याल','ढोका','खाट','साँचो'],a:0},
+    {t:'li',q:'What did you hear?',say:'साँचो',r:'Saancho',o:['key','clean','chair','window'],a:0},
+    {t:'mc',q:'What does खाट mean?',d:'खाट',r:'Khaat',o:['bed','table','door','floor'],a:0},
+    {t:'wb',q:'Build: "my room is clean"',a:['मेरो','कोठा','सफा','छ'],r:'Mero kothaa saphaa chha',pool:['मेरो','कोठा','सफा','छ','हो']},
+    {t:'mc',q:'window · bed · table · chair =',o:['झ्याल · खाट · टेबल · कुर्सी','खाट · झ्याल · कुर्सी · टेबल','झ्याल · टेबल · खाट · कुर्सी','कुर्सी · खाट · टेबल · झ्याल'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['झ्याल','window'],['खाट','bed'],['कुर्सी','chair'],['साँचो','key']]}
+  ]},
+
+  /* --- Topic 5: fruits & tastes --- */
+  {id:'fruits',title:'Fruit shop',step:'learn',meta:'आँप केरा स्याउ + गुलियो पिरो',vocab:[['फलफूल','phalphul','fruit'],['आँप','aanp','mango'],['केरा','keraa','banana'],['स्याउ','syaau','apple'],['गुलियो','guliyo','sweet'],['पिरो','piro','spicy']],ex:[
+    {t:'note',tag:'At the stall',q:'आँप · केरा · स्याउ',body:'<p><span class="deva">फलफूल</span> = fruit. The stall stars: <span class="deva">आँप</span> mango (summer!), <span class="deva">केरा</span> banana, <span class="deva">स्याउ</span> apple — Mustang और Jumla grow famous ones.</p>'},
+    {t:'mc',q:'What does आँप mean?',d:'आँप',r:'Aanp',o:['mango','apple','banana','orange'],a:0},
+    {t:'mc',q:'What does स्याउ mean?',d:'स्याउ',r:'Syaau',o:['apple','mango','grape','pear'],a:0},
+    {t:'note',tag:'Sweet & spicy',q:'गुलियो · पिरो',body:'<p>Two tastes rule Nepali tables: <span class="deva">गुलियो</span> = sweet · <span class="deva">पिरो</span> = spicy!</p><p><span class="deva">आँप गुलियो छ</span> — the mango is sweet · <span class="deva">अचार पिरो छ</span> — the pickle is spicy.</p>'},
+    {t:'mc',q:'What does गुलियो mean?',d:'गुलियो',r:'Guliyo',o:['sweet','sour','spicy','bitter'],a:0},
+    {t:'li',q:'What did you hear?',say:'पिरो',r:'Piro',o:['spicy','sweet','sour','salty'],a:0},
+    {t:'mc',q:'How do you say "banana"?',o:['केरा','आँप','स्याउ','सुन्तला'],a:0}
+  ]},
+  {id:'fruits_2',title:'Recognize',step:'recognize',meta:'Taste the words',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'आँप',r:'Aanp',o:['mango','apple','banana','orange'],a:0},
+    {t:'mc',q:'What does फलफूल mean?',d:'फलफूल',r:'Phalphul',o:['fruit','flower','vegetable','food'],a:0},
+    {t:'match',q:'Match the fruits',pairs:[['आँप','mango'],['केरा','banana'],['स्याउ','apple'],['फलफूल','fruit']]},
+    {t:'li',q:'What did you hear?',say:'गुलियो',r:'Guliyo',o:['sweet','spicy','salty','sour'],a:0},
+    {t:'mc',q:'अचार पिरो छ means…',o:['the pickle is spicy','the pickle is sweet','I like pickle','the pickle is fresh'],a:0},
+    {t:'li',q:'What did you hear?',say:'स्याउ',r:'Syaau',o:['apple','mango','banana','melon'],a:0},
+    {t:'mc',q:'Summer in Nepal means mountains of…',o:['आँप','स्याउ','केरा','सुन्तला'],a:0}
+  ]},
+  {id:'fruits_3',title:'Build',step:'build',meta:'Shop the stall',vocab:[],ex:[
+    {t:'wb',q:'Build: "the mango is sweet"',a:['आँप','गुलियो','छ'],r:'Aanp guliyo chha',pool:['आँप','गुलियो','छ','पिरो']},
+    {t:'fill',q:'Complete: "the curry is SPICY"',s:'तरकारी ___ छ',o:['पिरो','गुलियो','सफा','चिसो'],a:0,r:'Tarkaari piro chha'},
+    {t:'mc',q:'"How much are the bananas?" =',o:['केरा कति पर्छ?','केरा कहाँ छ?','केरा मीठो छ?','केरा दिनुहोस्'],a:0},
+    {t:'tr',q:'Translate: "mango"',a:'आँप',r:'aanp'},
+    {t:'wb',q:'Build: "I like fruit"',a:['मलाई','फलफूल','मन पर्छ'],r:'Malai phalphul man parchha',pool:['मलाई','फलफूल','मन पर्छ','मन पर्दैन']},
+    {t:'match',q:'Match taste and food',pairs:[['गुलियो','आँप'],['पिरो','अचार'],['फलफूल','स्याउ, केरा…'],['मीठो','tasty']]}
+  ]},
+  {id:'fruits_4',title:'Mix it',step:'mix',meta:'Five a day',vocab:[],ex:[
+    {t:'mc',q:'What does केरा mean?',o:['banana','mango','apple','grape'],a:0},
+    {t:'li',q:'What did you hear?',say:'फलफूल',r:'Phalphul',o:['fruit','flower','farm','vegetables'],a:0},
+    {t:'wb',q:'Build: "give me two apples, please" — two apple give',a:['दुईवटा','स्याउ','दिनुहोस्'],r:'Duiwataa syaau dinuhos',pool:['दुईवटा','स्याउ','दिनुहोस्','केरा']},
+    {t:'fill',q:'Complete: "the tea is SWEET"',s:'चिया ___ छ',o:['गुलियो','पिरो','चिसो','तातो'],a:0,r:'Chiyaa guliyo chha'},
+    {t:'mc',q:'One bite and your eyes water — the achar is…',o:['पिरो','गुलियो','सफा','नयाँ'],a:0},
+    {t:'match',q:'Match the fruits',pairs:[['आँप','mango'],['केरा','banana'],['स्याउ','apple'],['गुलियो','sweet']]}
+  ]},
+  {id:'fruits_5',title:'Checkpoint',step:'checkpoint',meta:'Fruits mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "apple"?',o:['स्याउ','आँप','केरा','फलफूल'],a:0},
+    {t:'li',q:'What did you hear?',say:'केरा',r:'Keraa',o:['banana','mango','apple','orange'],a:0},
+    {t:'mc',q:'What does पिरो mean?',d:'पिरो',r:'Piro',o:['spicy','sweet','hot (temperature)','bitter'],a:0},
+    {t:'wb',q:'Build: "the apple is sweet"',a:['स्याउ','गुलियो','छ'],r:'Syaau guliyo chha',pool:['स्याउ','गुलियो','छ','पिरो']},
+    {t:'mc',q:'mango · banana · apple =',o:['आँप · केरा · स्याउ','केरा · आँप · स्याउ','स्याउ · केरा · आँप','आँप · स्याउ · केरा'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['फलफूल','fruit'],['आँप','mango'],['गुलियो','sweet'],['पिरो','spicy']]}
+  ]},
+
+  /* --- Topic 6: phone & post --- */
+  {id:'phone2',title:'Phone & post',step:'learn',meta:'फोन नम्बर चिठी पठाउनु',vocab:[['फोन','phon','phone'],['नम्बर','nambar','number'],['फोन गर्नु','phon garnu','to phone / call'],['चिठी','chithi','letter'],['पठाउनु','pathaaunu','to send'],['तपाईंको नम्बर के हो?','tapaainko nambar ke ho','what is your number?']],ex:[
+    {t:'note',tag:'Stay in touch',q:'फोन · नम्बर',body:'<p><span class="deva">फोन</span> = phone · <span class="deva">नम्बर</span> = number (two English guests in Nepali!). <span class="deva">फोन गर्नु</span> = to call — गर्नु turning a noun into a verb, as always.</p><p>Swap digits: <span class="deva">तपाईंको नम्बर के हो?</span></p>'},
+    {t:'mc',q:'What does फोन गर्नु mean?',d:'फोन गर्नु',r:'Phon garnu',o:['to phone / call','to text','to buy a phone','to answer'],a:0},
+    {t:'mc',q:'How do you ask for a number?',o:['तपाईंको नम्बर के हो?','तपाईंको नाम के हो?','फोन कहाँ छ?','फोन गर्नुहोस्'],a:0},
+    {t:'note',tag:'Letters still travel',q:'चिठी · पठाउनु',body:'<p><span class="deva">चिठी</span> = letter · <span class="deva">पठाउनु</span> = to send: <span class="deva">म चिठी पठाउँछु</span> — I send a letter. (पठाउनु also sends parcels, messages and people!)</p>'},
+    {t:'mc',q:'What does पठाउनु mean?',d:'पठाउनु',r:'Pathaaunu',o:['to send','to receive','to write','to carry'],a:0},
+    {t:'li',q:'What did you hear?',say:'तपाईंको नम्बर के हो?',r:'Tapaainko nambar ke ho?',o:['what is your number?','what is your name?','where is your phone?','who is calling?'],a:0},
+    {t:'mc',q:'What does चिठी mean?',d:'चिठी',r:'Chithi',o:['letter','stamp','postcard','envelope'],a:0}
+  ]},
+  {id:'phone2_2',title:'Recognize',step:'recognize',meta:'Calls & letters by ear',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'फोन',r:'Phon',o:['phone','number','letter','photo'],a:0},
+    {t:'mc',q:'What does नम्बर mean?',d:'नम्बर',r:'Nambar',o:['number','name','letter','phone'],a:0},
+    {t:'match',q:'Match the connections',pairs:[['फोन','phone'],['नम्बर','number'],['चिठी','letter'],['पठाउनु','to send']]},
+    {t:'li',q:'What did you hear?',say:'चिठी',r:'Chithi',o:['letter','key','bird','paper'],a:0},
+    {t:'mc',q:'म चिठी पठाउँछु means…',o:['I send a letter','I write a letter','I read a letter','I got a letter'],a:0},
+    {t:'li',q:'What did you hear?',say:'फोन गर्नु',r:'Phon garnu',o:['to phone / call','to send','to answer','to hang up'],a:0},
+    {t:'mc',q:'फोन and नम्बर came into Nepali from…',o:['English','Hindi','Newari','Sanskrit'],a:0}
+  ]},
+  {id:'phone2_3',title:'Build',step:'build',meta:'Swap numbers',vocab:[],ex:[
+    {t:'wb',q:'Build: "what is your number?"',a:['तपाईंको','नम्बर','के','हो?'],r:'Tapaainko nambar ke ho?',pool:['तपाईंको','नम्बर','के','हो?','नाम']},
+    {t:'fill',q:'Complete: "I will CALL tomorrow"',s:'म भोलि फोन ___',o:['गर्छु','जान्छु','पठाउँछु','हुन्छु'],a:0,r:'Ma bholi phon garchhu'},
+    {t:'mc',q:'"I send a letter" =',o:['म चिठी पठाउँछु','म चिठी लेख्छु','म चिठी पढ्छु','म चिठी किन्छु'],a:0},
+    {t:'tr',q:'Translate: "to send"',a:'पठाउनु',r:'pathaaunu'},
+    {t:'wb',q:'Build: "please call me" — to-me phone do',a:['मलाई','फोन','गर्नुहोस्'],r:'Malai phon garnuhos',pool:['मलाई','फोन','गर्नुहोस्','पठाउनुहोस्']},
+    {t:'match',q:'Match action and thing',pairs:[['फोन गर्नु','call'],['चिठी पठाउनु','send a letter'],['नम्बर','digits'],['तपाईंको नम्बर के हो?','asking for a number']]}
+  ]},
+  {id:'phone2_4',title:'Mix it',step:'mix',meta:'Keep in touch',vocab:[],ex:[
+    {t:'mc',q:'What does चिठी mean?',o:['letter','note only','book','message app'],a:0},
+    {t:'li',q:'What did you hear?',say:'नम्बर',r:'Nambar',o:['number','name','phone','never'],a:0},
+    {t:'wb',q:'Build: "I will call you tonight" — tonight phone do',a:['आज राति','फोन','गर्छु'],r:'Aaja raati phon garchhu',pool:['आज राति','फोन','गर्छु','पठाउँछु']},
+    {t:'fill',q:'Complete: "please SEND the letter"',s:'चिठी ___',o:['पठाउनुहोस्','गर्नुहोस्','खोल्नुहोस्','लगाउनुहोस्'],a:0,r:'Chithi pathaaunuhos'},
+    {t:'mc',q:'New friend at the teashop — before leaving, ask…',o:['तपाईंको नम्बर के हो?','तपाईं को हो?','फोन कति पर्छ?','चिठी कहाँ छ?'],a:0},
+    {t:'match',q:'Match the connections',pairs:[['फोन','phone'],['चिठी','letter'],['पठाउनु','to send'],['फोन गर्नु','to call']]}
+  ]},
+  {id:'phone2_5',title:'Checkpoint',step:'checkpoint',meta:'In touch mastered?',vocab:[],ex:[
+    {t:'mc',q:'How do you say "to call"?',o:['फोन गर्नु','फोन पठाउनु','फोन खोल्नु','फोन लिनु'],a:0},
+    {t:'li',q:'What did you hear?',say:'पठाउनु',r:'Pathaaunu',o:['to send','to call','to write','to read'],a:0},
+    {t:'mc',q:'What does तपाईंको नम्बर के हो? mean?',o:['what is your number?','what is your address?','is this your phone?','can I call you?'],a:0},
+    {t:'wb',q:'Build: "I send a letter"',a:['म','चिठी','पठाउँछु'],r:'Ma chithi pathaaunchhu',pool:['म','चिठी','पठाउँछु','गर्छु']},
+    {t:'mc',q:'phone · number · letter · send =',o:['फोन · नम्बर · चिठी · पठाउनु','नम्बर · फोन · पठाउनु · चिठी','फोन · चिठी · नम्बर · पठाउनु','चिठी · नम्बर · फोन · पठाउनु'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['फोन','phone'],['नम्बर','number'],['चिठी','letter'],['पठाउनु','to send']]}
+  ]},
+
+  /* --- Topic 7: help & staying safe --- */
+  {id:'help2',title:'Help!',step:'learn',meta:'मद्दत प्रहरी होसियार हरायो',vocab:[['मद्दत','maddat','help'],['मद्दत गर्नुहोस्','maddat garnuhos','please help (me)'],['प्रहरी','prahari','police'],['होसियार','hosiyaar','careful!'],['हरायो','haraayo','(it) got lost'],['ज्वरो आयो','jwaro aayo','(I) got a fever']],ex:[
+    {t:'note',tag:'When it matters',q:'मद्दत गर्नुहोस्',body:'<p>Memorise this one cold: <span class="deva">मद्दत गर्नुहोस्</span> — please help me! (<span class="deva">मद्दत</span> help + गर्नु + your polite -नुहोस्.)</p><p><span class="deva">प्रहरी</span> = police.</p>'},
+    {t:'mc',q:'How do you say "please help me"?',o:['मद्दत गर्नुहोस्','होसियार','फोन गर्नुहोस्','बस्नुहोस्'],a:0},
+    {t:'mc',q:'What does प्रहरी mean?',d:'प्रहरी',r:'Prahari',o:['police','doctor','guard','army'],a:0},
+    {t:'note',tag:'Watch out!',q:'होसियार · हरायो · ज्वरो',body:'<p><span class="deva">होसियार!</span> — careful! (also the send-off friends give travelers).</p><p><span class="deva">हरायो</span> — it got lost: <span class="deva">मेरो झोला हरायो</span>. And for the clinic: <span class="deva">ज्वरो आयो</span> — a fever came (Nepali fevers arrive!).</p>'},
+    {t:'mc',q:'What does होसियार mean?',d:'होसियार',r:'Hosiyaar',o:['careful!','hurry!','help!','stop!'],a:0},
+    {t:'li',q:'What did you hear?',say:'हरायो',r:'Haraayo',o:['(it) got lost','(it) was found','(it) broke','(it) fell'],a:0},
+    {t:'mc',q:'What does ज्वरो आयो mean?',d:'ज्वरो आयो',r:'Jwaro aayo',o:['(I) got a fever','(I) got better','a guest came','it got hot'],a:0}
+  ]},
+  {id:'help2_2',title:'Recognize',step:'recognize',meta:'Spot the safety words',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'मद्दत',r:'Maddat',o:['help','careful','police','danger'],a:0},
+    {t:'mc',q:'What does हरायो mean?',d:'हरायो',r:'Haraayo',o:['(it) got lost','(it) is here','(it) is old','(he) went home'],a:0},
+    {t:'match',q:'Match the safety words',pairs:[['मद्दत','help'],['प्रहरी','police'],['होसियार','careful!'],['हरायो','got lost']]},
+    {t:'li',q:'What did you hear?',say:'होसियार',r:'Hosiyaar',o:['careful!','help!','hello!','slowly!'],a:0},
+    {t:'mc',q:'मेरो झोला हरायो means…',o:['my bag got lost','my bag is heavy','I found my bag','whose bag is this?'],a:0},
+    {t:'li',q:'What did you hear?',say:'प्रहरी',r:'Prahari',o:['police','doctor','driver','porter'],a:0},
+    {t:'mc',q:'Nepali fevers "come": ज्वरो…',o:['आयो','गयो','छ','हो'],a:0}
+  ]},
+  {id:'help2_3',title:'Build',step:'build',meta:'Get help fast',vocab:[],ex:[
+    {t:'wb',q:'Build: "please help me"',a:['मलाई','मद्दत','गर्नुहोस्'],r:'Malai maddat garnuhos',pool:['मलाई','मद्दत','गर्नुहोस्','होसियार']},
+    {t:'fill',q:'Complete: "my bag GOT LOST"',s:'मेरो झोला ___',o:['हरायो','आयो','छ','गयो'],a:0,r:'Mero jholaa haraayo'},
+    {t:'mc',q:'Someone is hurt — who do you call first?',o:['डाक्टर','प्रहरी','साथी','पसले'],a:0},
+    {t:'tr',q:'Translate: "help"',a:'मद्दत',r:'maddat'},
+    {t:'wb',q:'Build: "(I) got a fever, (I) will go to the doctor"',a:['ज्वरो आयो','म','डाक्टरकहाँ','जान्छु'],r:'Jwaro aayo, ma daaktarkahaa jaanchhu',pool:['ज्वरो आयो','म','डाक्टरकहाँ','जान्छु','हरायो']},
+    {t:'match',q:'Match problem and helper',pairs:[['झोला हरायो','प्रहरी'],['ज्वरो आयो','डाक्टर'],['बाटो बिराएँ','मद्दत गर्नुहोस्'],['यात्रा जाँदै','होसियार!']]}
+  ]},
+  {id:'help2_4',title:'Mix it',step:'mix',meta:'Cool head, right words',vocab:[],ex:[
+    {t:'mc',q:'What does मद्दत गर्नुहोस् mean?',o:['please help (me)','be careful','call the police','wait here'],a:0},
+    {t:'li',q:'What did you hear?',say:'ज्वरो आयो',r:'Jwaro aayo',o:['(I) got a fever','a guest came','it rained','(I) got better'],a:0},
+    {t:'wb',q:'Build: "careful! the road is bad"',a:['होसियार!','बाटो','नराम्रो','छ'],r:'Hosiyaar! Baato naraamro chha',pool:['होसियार!','बाटो','नराम्रो','छ','राम्रो']},
+    {t:'fill',q:'Complete: "the POLICE are there"',s:'___ त्यहाँ छन्',o:['प्रहरी','डाक्टर','पाहुना','साथी'],a:0,r:'Prahari tyahaan chhan'},
+    {t:'mc',q:'Wallet gone at the bazaar. First words to the प्रहरी:',o:['मेरो पैसा हरायो, मद्दत गर्नुहोस्','कति पर्छ?','नमस्ते, म जान्छु','ढिलो भयो'],a:0},
+    {t:'match',q:'Match the safety words',pairs:[['होसियार','careful!'],['हरायो','got lost'],['ज्वरो आयो','got a fever'],['मद्दत','help']]}
+  ]},
+  {id:'help2_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 12 complete!',vocab:[],ex:[
+    {t:'mc',q:'How do you say "police"?',o:['प्रहरी','डाक्टर','मद्दत','पहरा'],a:0},
+    {t:'li',q:'What did you hear?',say:'मद्दत गर्नुहोस्',r:'Maddat garnuhos',o:['please help (me)','be careful','please come','call a doctor'],a:0},
+    {t:'mc',q:'What does हरायो mean?',d:'हरायो',r:'Haraayo',o:['(it) got lost','(it) came back','(it) broke','(he) left'],a:0},
+    {t:'wb',q:'Build: "careful!" + "the dog is outside"',a:['होसियार!','कुकुर','बाहिर','छ'],r:'Hosiyaar! Kukur baahira chha',pool:['होसियार!','कुकुर','बाहिर','छ','भित्र']},
+    {t:'mc',q:'help · police · careful =',o:['मद्दत · प्रहरी · होसियार','प्रहरी · मद्दत · होसियार','होसियार · प्रहरी · मद्दत','मद्दत · होसियार · प्रहरी'],a:0},
+    {t:'match',q:'Match word and meaning',pairs:[['मद्दत','help'],['प्रहरी','police'],['होसियार','careful!'],['ज्वरो आयो','got a fever']]}
+  ]},
 ];
 const NE_VOWELS=[['अ','a'],['आ','aa'],['इ','i'],['ई','ee'],['उ','u'],['ऊ','oo'],['ए','e'],['ऐ','ai'],['ओ','o'],['औ','au'],['अं','an'],['अः','ah']];
 const NE_CONS=[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha'],['ङ','nga'],['च','cha'],['छ','chha'],['ज','ja'],['झ','jha'],['ञ','nya'],['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha'],['ण','ṇa'],['त','ta'],['थ','tha'],['द','da'],['ध','dha'],['न','na'],['प','pa'],['फ','pha'],['ब','ba'],['भ','bha'],['म','ma'],['य','ya'],['र','ra'],['ल','la'],['व','wa'],['श','sha'],['ष','ṣha'],['स','sa'],['ह','ha']];
@@ -8484,7 +9111,7 @@ function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id===
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
-const NE_SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्',li_w1test:'१',li_w2test:'२',li_w3test:'३',li_w4test:'४',li_w5test:'५',li_w6test:'६',li_w7test:'७',li_w8test:'८',li_w9test:'९',li_w10test:'१०',li_w11test:'११',li_w12test:'१२'};
+const NE_SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'ने',li_w1d5:'काम',li_w2d1:'परि',li_w2d2:'मोटो',li_w2d3:'भन्',li_w2d4:'किन',li_w2d5:'चा',li_w3d1:'दिन',li_w3d2:'उठ',li_w3d3:'र',li_w3d4:'बेला',li_w3d5:'दौड',li_w4d1:'बजा',li_w4d2:'ठाउँ',li_w4d3:'गाडी',li_w4d4:'साइ',li_w4d5:'इस्',li_w5d1:'सोम',li_w5d2:'मंग',li_w5d3:'बुध',li_w5d4:'दै',li_w5d5:'बिही',li_w6d1:'शुक्र',li_w6d2:'शनि',li_w6d3:'आइत',li_w6d4:'घाउ',li_w6d5:'अनु',li_w7d1:'बाँड',li_w7d2:'था',li_w7d3:'रिस',li_w7d4:'एक्',li_w7d5:'आन',li_w8d1:'स्प',li_w8d2:'भए',li_w8d3:'कहि',li_w8d4:'डर',li_w8d5:'तुल',li_w9d1:'कथा',li_w9d2:'बोला',li_w9d3:'ईर्',li_w9d4:'आत्',li_w9d5:'ज्यो',li_w10d1:'गोठ',li_w10d2:'वरि',li_w10d3:'राज',li_w10d4:'नजि',li_w10d5:'बचा',li_w11d1:'माफ',li_w11d2:'योग',li_w11d3:'खे',li_w11d4:'धन',li_w11d5:'पश्',li_w12d1:'छत',li_w12d2:'घृ',li_w12d3:'ध्या',li_w12d4:'एक',li_w12d5:'रोज',sc_vowels:'अ',sc_cons1:'क',sc_cons2:'प',sc_read:'१',time:'बजे',want:'चाहि',greet:'नम',pron:'म',num1:'१',num2:'सय',courtesy:'धन्',intro:'नाम',daytime:'आज',tobe1:'हो',tobe2:'छ',negate:'छैन',thisthat:'यो',adj:'ठूलो',colors:'रंग',have:'सँग',pma:'मा',pbata:'बाट',plai:'लाई',pko:'को',places:'घर',directions:'दिशा',verbs:'गर्',presI:'छु',presOth:'छन्',presNeg:'न्न',food:'भात',family:'आमा',routine:'दिन',past1:'एँ',past2:'गयो',ergative:'ले',future:'ने',quest1:'के',quest2:'किन',shop:'पसल',travel:'बस',weather:'मौसम',body:'शरीर',feelings:'खुसी',experiencer:'भोक',conn1:'र',conn2:'जब',conditional:'भए',convo:'भेट',smalltalk:'कस्',drinks:'चिया',week:'बार',cansk:'सक',must:'पर',cont:'दै',sc_cons3:'ट',sc_conjuncts:'क्ष',sc_confuse:'श',hon:'हुन्',levels:'जी',compare:'भन्',opinion:'लाग्',requests:'होस्',li_w1test:'१',li_w2test:'२',li_w3test:'३',li_w4test:'४',li_w5test:'५',li_w6test:'६',li_w7test:'७',li_w8test:'८',li_w9test:'९',li_w10test:'१०',li_w11test:'११',li_w12test:'१२',chain:'एर',perf:'गएको',seq2:'पछि',freq2:'सधैं',slow:'बिस्',pos2:'माथि',years:'लाख',trek:'हिमाल',animals:'कुकुर',clothes:'टोपी',home2:'खाट',fruits:'आँप',phone2:'फोन',help2:'मद्दत'};
 
 /* ===== LANGUAGE PACKS =====
    One pack per language bundles ALL language-specific data. The engine never
