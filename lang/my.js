@@ -15,9 +15,11 @@ const MY_UNITS=[
   {n:2,t:'Foundations',d:'Greetings, people, numbers & your day',lessons:['my_greet','my_greet_2','my_greet_3','my_greet_4','my_greet_5','my_pron','my_pron_2','my_pron_3','my_pron_4','my_pron_5','my_num1','my_num1_2','my_num1_3','my_num1_4','my_num1_5','my_num2','my_num2_2','my_num2_3','my_num2_4','my_num2_5','my_court','my_court_2','my_court_3','my_court_4','my_court_5','my_intro','my_intro_2','my_intro_3','my_intro_4','my_intro_5','my_day','my_day_2','my_day_3','my_day_4','my_day_5']},
   {n:3,t:'Say a sentence',d:'The sentence engine — verbs, no & questions',lessons:['my_this','my_this_2','my_this_3','my_this_4','my_this_5','my_verb','my_verb_2','my_verb_3','my_verb_4','my_verb_5','my_fut','my_fut_2','my_fut_3','my_fut_4','my_fut_5','my_neg','my_neg_2','my_neg_3','my_neg_4','my_neg_5','my_yn','my_yn_2','my_yn_3','my_yn_4','my_yn_5','my_wh','my_wh_2','my_wh_3','my_wh_4','my_wh_5','my_want','my_want_2','my_want_3','my_want_4','my_want_5']},
   {n:4,t:'Where & with',d:'The little particles မှာ ကို က နဲ့ & real life',lessons:['my_hma','my_hma_2','my_hma_3','my_hma_4','my_hma_5','my_ko','my_ko_2','my_ko_3','my_ko_4','my_ko_5','my_ka','my_ka_2','my_ka_3','my_ka_4','my_ka_5','my_neh','my_neh_2','my_neh_3','my_neh_4','my_neh_5','my_kin','my_kin_2','my_kin_3','my_kin_4','my_kin_5','my_food','my_food_2','my_food_3','my_food_4','my_food_5','my_shop','my_shop_2','my_shop_3','my_shop_4','my_shop_5']},
+  {n:5,t:'How many',d:'Counters, kyat, bargaining, time & the week',lessons:['my_clf','my_clf_2','my_clf_3','my_clf_4','my_clf_5','my_hownum','my_hownum_2','my_hownum_3','my_hownum_4','my_hownum_5','my_money','my_money_2','my_money_3','my_money_4','my_money_5','my_bignum','my_bignum_2','my_bignum_3','my_bignum_4','my_bignum_5','my_buy','my_buy_2','my_buy_3','my_buy_4','my_buy_5','my_time','my_time_2','my_time_3','my_time_4','my_time_5','my_days','my_days_2','my_days_3','my_days_4','my_days_5']},
+  {n:6,t:'Describe it',d:'Adjectives, colors, feelings, weather & health',lessons:['my_adj','my_adj_2','my_adj_3','my_adj_4','my_adj_5','my_taste','my_taste_2','my_taste_3','my_taste_4','my_taste_5','my_color','my_color_2','my_color_3','my_color_4','my_color_5','my_cmp','my_cmp_2','my_cmp_3','my_cmp_4','my_cmp_5','my_feel','my_feel_2','my_feel_3','my_feel_4','my_feel_5','my_wx','my_wx_2','my_wx_3','my_wx_4','my_wx_5','my_body','my_body_2','my_body_3','my_body_4','my_body_5']},
 ];
 
-const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်'};
+const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်',my_clf:'ယောက်',my_hownum:'ဘယ်နှ',my_money:'ကျပ်',my_bignum:'ထောင်',my_buy:'ဝယ်',my_time:'နာရီ',my_days:'စနေ',my_adj:'ကြီး',my_taste:'ပူ',my_color:'အနီ',my_cmp:'ပို',my_feel:'ပျော်',my_wx:'မိုး',my_body:'ဆေး'};
 
 const MY_VOWELS=[['အာ','aa'],['အိ','i'],['အီ','ii'],['အု','u'],['အူ','uu'],['အေ','e'],['အဲ','eh'],['အော','aw'],['အို','o'],['အံ','an']];
 /* full traditional 33 for the Alphabet reference. Several are rare Pali-only
@@ -1120,6 +1122,560 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Fruit, please',a:['သစ်သီး','ပေးပါ'],pool:['သစ်သီး','ပေးပါ','စားတယ်']},
 {t:'mc',q:'Polite requests end in the same syllable as မင်္ဂလာပါ:',o:['ပါ','တယ်','လား','ဘူး'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ရေပေးပါ','water, please'],['ဒါပဲ','that is all'],['ကောင်းတယ်','it is good'],['လက်ဖက်ရည်ဆိုင်','teashop']]}]},
+
+/* ===================== ZONE 5 · HOW MANY =====================
+   Numbers in action: classifiers (noun + number + classifier), money in
+   kyat, prices & bargaining, clock time, days of the week. Sequenced per
+   Mesher L5–6/L9 & Okell U1 (prices) / U2 (counting). */
+/* --- Topic 1: classifiers ယောက် ခု ကောင် --- */
+{id:'my_clf',title:'Counting words',step:'learn',meta:'noun + number + ယောက်/ခု/ကောင်',vocab:[['ယောက်','yauq','counter for people'],['ခု','hku','counter for things'],['ကောင်','kaung','counter for animals'],['ကလေး','hkalei','child'],['ကလေးနှစ်ယောက်','hkalei hna yauq','two children'],['သုံးခု','thoun hku','three (things)']],ex:[
+{t:'note',tag:'Zone 5',q:'The counting recipe',body:'<p>Burmese never says "two children". It says <b>child – two – person-counter</b>: <span class="deva">ကလေးနှစ်ယောက်</span>.</p><p>The recipe is always <b>noun + number + counter</b>. People take <span class="deva">ယောက်</span> <b>yauq</b>, things take <span class="deva">ခု</span> <b>hku</b>, animals take <span class="deva">ကောင်</span> <b>kaung</b>.</p>',eg:[['ယောက်','yauq','people'],['ခု','hku','things'],['ကောင်','kaung','animals']]},
+{t:'mc',q:'Which counter is for people?',o:['ယောက်','ခု','ကောင်','ရာ'],a:0},
+{t:'mc',q:'Which counter is for things?',o:['ခု','ယောက်','ကောင်','ဆယ်'],a:0},
+{t:'note',tag:'Say it lighter',q:'တစ် → ta · နှစ် → hna',body:'<p>Before a counter, <span class="deva">တစ်</span> and <span class="deva">နှစ်</span> relax: <b>tiq → ta</b>, <b>hniq → hna</b>. So <span class="deva">ကလေးနှစ်ယောက်</span> is said <b>hkalei hna yauq</b>. You have already said it in <span class="deva">တစ်ဆိတ်လောက်</span> (ta hseiq lauk)!</p><p><span class="deva">ကလေး</span> <b>hkalei</b> = child.</p>',eg:[['ကလေးနှစ်ယောက်','hkalei hna yauq','two children'],['သုံးခု','thoun hku','three things']]},
+{t:'mc',q:'What does this mean?',d:'ကလေးနှစ်ယောက်',o:['two children','two dogs','three children','two cups'],a:0},
+{t:'mc',q:'Before a counter, နှစ် (two) is said…',o:['hna','hniq','hse','htaung'],a:0},
+{t:'li',q:'Listen — which one?',say:'ကလေးနှစ်ယောက်',o:['ကလေးနှစ်ယောက်','ကလေး','သုံးခု','ယောက်'],a:0}]},
+{id:'my_clf_2',title:'Hear the counters',step:'recognize',meta:'Spot ယောက် ခု ကောင်',vocab:[],ex:[
+{t:'li',q:'Listen — which counter?',say:'ယောက်',o:['ယောက်','ခု','ကောင်','ကလေး'],a:0},
+{t:'mc',q:'Which counter is for animals?',o:['ကောင်','ယောက်','ခု','ခွက်'],a:0},
+{t:'li',q:'Listen — which word?',say:'ကလေး',o:['ကလေး','ကောင်','ယောက်','ခု'],a:0},
+{t:'mc',q:'What does this mean?',d:'သုံးခု',o:['three (things)','three (people)','three (animals)','thirty'],a:0},
+{t:'mc',q:'"Two people" is လူနှစ်ယောက် — the order is…',o:['noun + number + counter','counter + noun + number','number + noun + counter','any order'],a:0},
+{t:'li',q:'Listen — which counter?',say:'ခု',o:['ခု','ကောင်','ယောက်','ဒါ'],a:0},
+{t:'mc',q:'A dog would be counted with…',o:['ကောင်','ယောက်','ခု','ရာ'],a:0}]},
+{id:'my_clf_3',title:'Put it together',step:'build',meta:'Count people & things',vocab:[],ex:[
+{t:'match',q:'Match counter and use',pairs:[['ယောက်','people'],['ခု','things'],['ကောင်','animals'],['ကလေး','child']]},
+{t:'wb',q:'Build: two children — child two counter',a:['ကလေး','နှစ်','ယောက်'],pool:['ကလေး','နှစ်','ယောက်','ခု']},
+{t:'mc',q:'"Three things" is…',o:['သုံးခု','သုံးယောက်','သုံးကောင်','ခုသုံး'],a:0},
+{t:'li',q:'Listen — which one?',say:'သုံးခု',o:['သုံးခု','သုံးဆယ်','ကလေးနှစ်ယောက်','ခု'],a:0},
+{t:'wb',q:'Build: two people — person two counter',a:['လူ','နှစ်','ယောက်'],pool:['လူ','နှစ်','ယောက်','ကောင်']},
+{t:'match',q:'Match phrase and meaning',pairs:[['ကလေးနှစ်ယောက်','two children'],['သုံးခု','three (things)'],['လူ','person'],['ကောင်','counter for animals']]}]},
+{id:'my_clf_4',title:'Mix it',step:'mix',meta:'All three counters',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ယောက်',o:['counter for people','counter for things','counter for animals','child'],a:0},
+{t:'li',q:'Listen — which word?',say:'ကောင်',o:['ကောင်','ကောင်း','ယောက်','ခု'],a:0},
+{t:'mc',q:'ငါးနှစ်ကောင် means…',o:['two fish','two children','five fish','two people'],a:0},
+{t:'wb',q:'Build: three children',a:['ကလေး','သုံး','ယောက်'],pool:['ကလေး','သုံး','ယောက်','ကောင်']},
+{t:'li',q:'Listen — which one?',say:'ကလေး',o:['ကလေး','ကလေးနှစ်ယောက်','ခု','လူ'],a:0},
+{t:'mc',q:'ကောင် (counter) and ကောင်း (good) differ by…',o:['tone — listen closely','nothing','the first letter','word order'],a:0}]},
+{id:'my_clf_5',title:'Checkpoint',step:'checkpoint',meta:'Counters mastered?',vocab:[],ex:[
+{t:'mc',q:'Which counter goes with people?',o:['ယောက်','ခု','ကောင်','နာရီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ကလေးနှစ်ယောက်',o:['ကလေးနှစ်ယောက်','သုံးခု','ကလေး','လူနှစ်ယောက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ကလေး',o:['child','animal','person','counter'],a:0},
+{t:'wb',q:'Build: two children',a:['ကလေး','နှစ်','ယောက်'],pool:['ကလေး','နှစ်','ယောက်','ငါး']},
+{t:'mc',q:'The Burmese counting recipe is…',o:['noun + number + counter','number + counter + noun','counter first','number last'],a:0},
+{t:'match',q:'Match counter and use',pairs:[['ယောက်','people'],['ခု','things'],['ကောင်','animals'],['သုံးခု','three (things)']]}]},
+
+/* --- Topic 2: cups & how many — ခွက် + ဘယ်နှ --- */
+{id:'my_hownum',title:'How many?',step:'learn',meta:'ဘယ်နှ + counter · ခွက်',vocab:[['ဘယ်နှ','beh hna','how many'],['ဘယ်နှယောက်လဲ','beh hna yauq leh','how many people?'],['ခွက်','hkweq','cup / glass'],['လက်ဖက်ရည်နှစ်ခွက်','lahpeq yeh hna hkweq','two cups of tea'],['တစ်ခွက်ပေးပါ','ta hkweq pei ba','one cup, please']],ex:[
+{t:'note',tag:'Ask how many',q:'ဘယ်နှ + counter + လဲ',body:'<p>You know the ဘ-family: ဘာ, ဘယ်မှာ, ဘယ်သူ. Add <span class="deva">ဘယ်နှ</span> <b>beh hna</b> = how many. It always brings the counter along: <span class="deva">ဘယ်နှယောက်လဲ</span> — how many <b>people</b>?</p>',eg:[['ဘယ်နှ','beh hna','how many'],['ဘယ်နှယောက်လဲ','beh hna yauq leh','how many people?']]},
+{t:'mc',q:'Which means "how many"?',o:['ဘယ်နှ','ဘယ်မှာ','ဘယ်သူ','ဘယ်က'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်နှယောက်လဲ',o:['how many people?','how many things?','how much is it?','who is it?'],a:0},
+{t:'note',tag:'Back to the teashop',q:'ခွက် — cups',body:'<p>Drinks get their own counter: <span class="deva">ခွက်</span> <b>hkweq</b> = cup. Now you can order properly: <span class="deva">လက်ဖက်ရည်နှစ်ခွက်</span> two teas · <span class="deva">တစ်ခွက်ပေးပါ</span> — one cup, please!</p>',eg:[['ခွက်','hkweq','cup'],['တစ်ခွက်ပေးပါ','ta hkweq pei ba','one cup, please']]},
+{t:'mc',q:'What does this mean?',d:'လက်ဖက်ရည်နှစ်ခွက်',o:['two cups of tea','two teashops','one cup of tea','two cups of coffee'],a:0},
+{t:'mc',q:'How do you ask for one cup?',o:['တစ်ခွက်ပေးပါ','နှစ်ခွက်','ဘယ်နှခွက်လဲ','ခွက်'],a:0},
+{t:'li',q:'Listen — which one?',say:'တစ်ခွက်ပေးပါ',o:['တစ်ခွက်ပေးပါ','လက်ဖက်ရည်နှစ်ခွက်','ခွက်','ရေပေးပါ'],a:0}]},
+{id:'my_hownum_2',title:'Hear it',step:'recognize',meta:'Spot ဘယ်နှ & ခွက်',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှ',o:['ဘယ်နှ','ဘယ်မှာ','ဘယ်သူ','ဘယ်က'],a:0},
+{t:'mc',q:'Which means "cup"?',o:['ခွက်','ခု','ကောင်','ခွဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'လက်ဖက်ရည်နှစ်ခွက်',o:['လက်ဖက်ရည်နှစ်ခွက်','လက်ဖက်ရည်','တစ်ခွက်ပေးပါ','လက်ဖက်ရည်ဆိုင်'],a:0},
+{t:'mc',q:'What does this mean?',d:'တစ်ခွက်ပေးပါ',o:['one cup, please','two cups, please','how many cups?','the cup is good'],a:0},
+{t:'mc',q:'"How many children?" is…',o:['ကလေးဘယ်နှယောက်လဲ','ကလေးဘယ်မှာလဲ','ကလေးဘယ်သူလဲ','ကလေးလား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှယောက်လဲ',o:['ဘယ်နှယောက်လဲ','ဘယ်နှ','ဘယ်သူလဲ','ဘယ်မှာလဲ'],a:0},
+{t:'mc',q:'ဘယ်နှ always brings along…',o:['the right counter','a color','the verb first','nothing'],a:0}]},
+{id:'my_hownum_3',title:'Put it together',step:'build',meta:'Order by the cup',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ဘယ်နှ','how many'],['ခွက်','cup'],['ဘယ်နှယောက်လဲ','how many people?'],['တစ်ခွက်ပေးပါ','one cup, please']]},
+{t:'wb',q:'Build: Two cups of tea, please — tea two cup please-give',a:['လက်ဖက်ရည်','နှစ်','ခွက်','ပေးပါ'],pool:['လက်ဖက်ရည်','နှစ်','ခွက်','ပေးပါ','ယောက်']},
+{t:'mc',q:'To ask "how many cups?", say…',o:['ဘယ်နှခွက်လဲ','ဘယ်နှယောက်လဲ','ဘယ်မှာလဲ','ခွက်လား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခွက်',o:['ခွက်','ခု','ခွဲ','ကောင်'],a:0},
+{t:'wb',q:'Build: One coffee, please — coffee one cup please-give',a:['ကော်ဖီ','တစ်','ခွက်','ပေးပါ'],pool:['ကော်ဖီ','တစ်','ခွက်','ပေးပါ','နှစ်']},
+{t:'match',q:'Match line and meaning',pairs:[['လက်ဖက်ရည်နှစ်ခွက်','two cups of tea'],['ကလေးနှစ်ယောက်','two children'],['ဘယ်နှ','how many'],['ခွက်','cup']]}]},
+{id:'my_hownum_4',title:'Mix it',step:'mix',meta:'Counting in real life',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဘယ်နှ',o:['how many','how much','where','who'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှယောက်လဲ',o:['ဘယ်နှယောက်လဲ','ဘယ်နှ','ဘယ်သူလဲ','တစ်ခွက်ပေးပါ'],a:0},
+{t:'mc',q:'The waiter asks ဘယ်နှခွက်လဲ. You want two:',o:['နှစ်ခွက်','နှစ်ယောက်','နှစ်ခု','ဆယ်'],a:0},
+{t:'wb',q:'Build: Water two cups, please',a:['ရေ','နှစ်','ခွက်','ပေးပါ'],pool:['ရေ','နှစ်','ခွက်','ပေးပါ','ခု']},
+{t:'li',q:'Listen — which one?',say:'လက်ဖက်ရည်နှစ်ခွက်',o:['လက်ဖက်ရည်နှစ်ခွက်','တစ်ခွက်ပေးပါ','လက်ဖက်ရည်ပေးပါ','ခွက်'],a:0},
+{t:'mc',q:'Counting people at your table uses…',o:['ယောက်','ခွက်','ကောင်','ခု'],a:0}]},
+{id:'my_hownum_5',title:'Checkpoint',step:'checkpoint',meta:'How many mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "how many people?"',o:['ဘယ်နှယောက်လဲ','ဘယ်နှခွက်လဲ','ဘယ်သူလဲ','ဘယ်လောက်လဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'တစ်ခွက်ပေးပါ',o:['တစ်ခွက်ပေးပါ','နှစ်ခွက်','ရေပေးပါ','ခွက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခွက်',o:['cup / glass','plate','counter for people','half'],a:0},
+{t:'wb',q:'Build: Two coffees, please',a:['ကော်ဖီ','နှစ်','ခွက်','ပေးပါ'],pool:['ကော်ဖီ','နှစ်','ခွက်','ပေးပါ','ယောက်']},
+{t:'mc',q:'ဘယ်နှ means…',o:['how many','how much money','what time','which place'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ဘယ်နှယောက်လဲ','how many people?'],['တစ်ခွက်ပေးပါ','one cup, please'],['ခွက်','cup'],['ဘယ်နှ','how many']]}]},
+
+/* --- Topic 3: money & prices --- */
+{id:'my_money',title:'Money & prices',step:'learn',meta:'ကျပ် ပိုက်ဆံ ဘယ်လောက်လဲ',vocab:[['ပိုက်ဆံ','paiq hsan','money'],['ကျပ်','kyaq','kyat (Myanmar money)'],['ဘယ်လောက်လဲ','beh lauq leh','how much?'],['ဒါဘယ်လောက်လဲ','da beh lauq leh','how much is this?'],['ဈေးကြီးတယ်','zei kyi de','it is expensive'],['ဈေးပေါတယ်','zei paw de','it is cheap']],ex:[
+{t:'note',tag:'Kyat',q:'ပိုက်ဆံ · ကျပ်',body:'<p><span class="deva">ပိုက်ဆံ</span> <b>paiq hsan</b> = money. Myanmar money is the <span class="deva">ကျပ်</span> <b>kyaq</b> — the kyat.</p><p>Point at anything and ask <span class="deva">ဒါဘယ်လောက်လဲ</span> <b>da beh lauq leh</b> — how much is this? (ဘယ်လောက် = how much, for amounts; ဘယ်နှ counts pieces.)</p>',eg:[['ကျပ်','kyaq','kyat'],['ဒါဘယ်လောက်လဲ','da beh lauq leh','how much is this?']]},
+{t:'mc',q:'Which means "money"?',o:['ပိုက်ဆံ','ကျပ်','ဈေး','ခွက်'],a:0},
+{t:'mc',q:'How do you ask "How much is this?"',o:['ဒါဘယ်လောက်လဲ','ဒါဘာလဲ','ဘယ်နှယောက်လဲ','ဒါဘယ်မှာလဲ'],a:0},
+{t:'note',tag:'Dear or a deal',q:'ဈေးကြီး · ဈေးပေါ',body:'<p>Remember <span class="deva">ဈေး</span> (market)? It also means <b>price</b>. A price can be big — <span class="deva">ဈေးကြီးတယ်</span> expensive — or plentiful-cheap: <span class="deva">ဈေးပေါတယ်</span> cheap.</p>',eg:[['ဈေးကြီးတယ်','zei kyi de','expensive'],['ဈေးပေါတယ်','zei paw de','cheap']]},
+{t:'mc',q:'What does this mean?',d:'ဈေးကြီးတယ်',o:['it is expensive','it is cheap','it is the market','it is money'],a:0},
+{t:'mc',q:'Which means "it is cheap"?',o:['ဈေးပေါတယ်','ဈေးကြီးတယ်','ဈေးကိုသွားတယ်','ပိုက်ဆံ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒါဘယ်လောက်လဲ',o:['ဒါဘယ်လောက်လဲ','ဒါဘာလဲ','ဈေးကြီးတယ်','ပိုက်ဆံ'],a:0}]},
+{id:'my_money_2',title:'Hear the prices',step:'recognize',meta:'Spot the money words',vocab:[],ex:[
+{t:'li',q:'Listen — which word?',say:'ပိုက်ဆံ',o:['ပိုက်ဆံ','ကျပ်','ဈေး','ခွက်'],a:0},
+{t:'mc',q:'Myanmar money is the…',o:['ကျပ်','ပိုက်ဆံ','ဈေး','ရာ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဈေးပေါတယ်',o:['ဈေးပေါတယ်','ဈေးကြီးတယ်','ဈေးကိုသွားတယ်','ဒါဘယ်လောက်လဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်လောက်လဲ',o:['how much?','how many people?','where is it?','what is this?'],a:0},
+{t:'mc',q:'ဘယ်လောက် vs ဘယ်နှ —',o:['amounts vs counted pieces','pieces vs amounts','both the same','places vs people'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဈေးကြီးတယ်',o:['ဈေးကြီးတယ်','ဈေးပေါတယ်','ကြီးတယ်','ဒါဘယ်လောက်လဲ'],a:0},
+{t:'mc',q:'ဈေး means market AND…',o:['price','money','shop','cup'],a:0}]},
+{id:'my_money_3',title:'Put it together',step:'build',meta:'Talk prices',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ပိုက်ဆံ','money'],['ကျပ်','kyat'],['ဒါဘယ်လောက်လဲ','how much is this?'],['ဈေးပေါတယ်','it is cheap']]},
+{t:'wb',q:'Build: How much is this?',a:['ဒါ','ဘယ်လောက်','လဲ'],pool:['ဒါ','ဘယ်လောက်','လဲ','လား']},
+{t:'mc',q:'The price is shockingly high. You mutter…',o:['ဈေးကြီးတယ်','ဈေးပေါတယ်','ကောင်းတယ်','ရတယ်'],a:0},
+{t:'li',q:'Listen — which word?',say:'ကျပ်',o:['ကျပ်','ပိုက်ဆံ','ခွက်','ဈေး'],a:0},
+{t:'wb',q:'Build: The fish is expensive — fish price-big',a:['ငါး','ဈေးကြီးတယ်'],pool:['ငါး','ဈေးကြီးတယ်','ဈေးပေါတယ်']},
+{t:'match',q:'Match line and meaning',pairs:[['ဈေးကြီးတယ်','expensive'],['ဈေးပေါတယ်','cheap'],['ဘယ်လောက်လဲ','how much?'],['ပိုက်ဆံ','money']]}]},
+{id:'my_money_4',title:'Mix it',step:'mix',meta:'Prices in the market',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဒါဘယ်လောက်လဲ',o:['how much is this?','what is this?','how many are these?','is this cheap?'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပိုက်ဆံ',o:['ပိုက်ဆံ','ကျပ်','ဈေးပေါတယ်','ဈေး'],a:0},
+{t:'mc',q:'A good deal! You smile:',o:['ဈေးပေါတယ်','ဈေးကြီးတယ်','မကြိုက်ဘူး','ဘယ်နှယောက်လဲ'],a:0},
+{t:'wb',q:'Build: How much is the fish?',a:['ငါး','ဘယ်လောက်','လဲ'],pool:['ငါး','ဘယ်လောက်','လဲ','ဘယ်နှ']},
+{t:'li',q:'Listen — which one?',say:'ဈေးကြီးတယ်',o:['ဈေးကြီးတယ်','ဈေးပေါတယ်','ဒါဘယ်လောက်လဲ','ကျပ်'],a:0},
+{t:'mc',q:'For "how much water" (an amount), use…',o:['ဘယ်လောက်','ဘယ်နှ','ဘယ်သူ','ဘယ်မှာ'],a:0}]},
+{id:'my_money_5',title:'Checkpoint',step:'checkpoint',meta:'Money mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "kyat"?',o:['ကျပ်','ပိုက်ဆံ','ဈေး','ရာ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒါဘယ်လောက်လဲ',o:['ဒါဘယ်လောက်လဲ','ဈေးပေါတယ်','ဒါဘာလဲ','ဘယ်နှယောက်လဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဈေးပေါတယ်',o:['it is cheap','it is expensive','it is the market','it is far'],a:0},
+{t:'wb',q:'Build: How much is this?',a:['ဒါ','ဘယ်လောက်','လဲ'],pool:['ဒါ','ဘယ်လောက်','လဲ','ပေးပါ']},
+{t:'mc',q:'Amounts (money, water) ask with…',o:['ဘယ်လောက်','ဘယ်နှ','ဘာ','ဘယ်သူ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ကျပ်','kyat'],['ပိုက်ဆံ','money'],['ဈေးကြီးတယ်','expensive'],['ဒါဘယ်လောက်လဲ','how much is this?']]}]},
+
+/* --- Topic 4: hundreds & thousands --- */
+{id:'my_bignum',title:'Big numbers',step:'learn',meta:'ရာ ထောင် သောင်း — kyat prices',vocab:[['ရာ','ya','hundred'],['ထောင်','htaung','thousand'],['သောင်း','thaung','ten thousand'],['ငါးရာ','nga ya','five hundred (၅၀၀)'],['တစ်ထောင်','ta htaung','one thousand (၁၀၀၀)'],['ငါးထောင်ကျပ်','nga htaung kyaq','five thousand kyat']],ex:[
+{t:'note',tag:'Real prices',q:'ရာ · ထောင် · သောင်း',body:'<p>Kyat prices live in the hundreds and thousands. You know <span class="deva">ရာ</span> <b>ya</b> = hundred. Now: <span class="deva">ထောင်</span> <b>htaung</b> = thousand · <span class="deva">သောင်း</span> <b>thaung</b> = ten thousand.</p><p>Stack them just like ဆယ်: <span class="deva">ငါးရာ</span> 500 · <span class="deva">တစ်ထောင်</span> 1000 · <span class="deva">ငါးထောင်</span> 5000.</p>',eg:[['ငါးရာ','nga ya','500'],['တစ်ထောင်','ta htaung','1000'],['သောင်း','thaung','10,000']]},
+{t:'mc',q:'Which means "thousand"?',o:['ထောင်','ရာ','သောင်း','ဆယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ငါးရာ',o:['five hundred','five thousand','fifty','five hundred thousand'],a:0},
+{t:'note',tag:'Listen for the h',q:'ထောင် vs သောင်း',body:'<p>Careful ears: <span class="deva">ထောင်</span> <b>htaung</b> (1000) starts with the puffed t; <span class="deva">သောင်း</span> <b>thaung</b> (10,000) starts with the soft th of "thin". A 9000-kyat difference!</p><p><span class="deva">ငါးထောင်ကျပ်</span> — five thousand kyat, a typical taxi ride across town.</p>',eg:[['ငါးထောင်ကျပ်','nga htaung kyaq','5000 kyat']]},
+{t:'mc',q:'What does this mean?',d:'တစ်ထောင်',o:['one thousand','one hundred','ten thousand','ten'],a:0},
+{t:'mc',q:'သောင်း is…',o:['ten thousand','one thousand','one hundred','one million'],a:0},
+{t:'li',q:'Listen — which one?',say:'ငါးထောင်ကျပ်',o:['ငါးထောင်ကျပ်','ငါးရာ','တစ်ထောင်','သောင်း'],a:0}]},
+{id:'my_bignum_2',title:'Hear the amounts',step:'recognize',meta:'ရာ ထောင် သောင်း by ear',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ရာ',o:['ရာ','ထောင်','သောင်း','ဆယ်'],a:0},
+{t:'mc',q:'Which is 500?',o:['ငါးရာ','ငါးထောင်','ငါးဆယ်','ငါး'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထောင်',o:['ထောင်','သောင်း','ရာ','ကျပ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ငါးထောင်ကျပ်',o:['5000 kyat','500 kyat','50,000 kyat','5 kyat'],a:0},
+{t:'mc',q:'ထောင် vs သောင်း — the difference you hear is…',o:['ht (puff) vs th (soft)','nothing','the vowel','the tone only'],a:0},
+{t:'li',q:'Listen — which one?',say:'သောင်း',o:['သောင်း','ထောင်','ရာ','သုံး'],a:0},
+{t:'mc',q:'တစ်ထောင် is said…',o:['ta htaung','tiq htaung','ta thaung','hna htaung'],a:0}]},
+{id:'my_bignum_3',title:'Put it together',step:'build',meta:'Build kyat prices',vocab:[],ex:[
+{t:'match',q:'Match amount and meaning',pairs:[['ရာ','hundred'],['ထောင်','thousand'],['သောင်း','ten thousand'],['ငါးရာ','five hundred']]},
+{t:'wb',q:'Build: five thousand kyat',a:['ငါး','ထောင်','ကျပ်'],pool:['ငါး','ထောင်','ကျပ်','ရာ']},
+{t:'mc',q:'"Three hundred" is…',o:['သုံးရာ','သုံးထောင်','သုံးဆယ်','သုံးသောင်း'],a:0},
+{t:'li',q:'Listen — which one?',say:'ငါးရာ',o:['ငါးရာ','ငါးထောင်','ငါးဆယ်','ငါး'],a:0},
+{t:'wb',q:'Build: two thousand kyat',a:['နှစ်','ထောင်','ကျပ်'],pool:['နှစ်','ထောင်','ကျပ်','သောင်း']},
+{t:'match',q:'Match amount and figure',pairs:[['ငါးရာ','500'],['တစ်ထောင်','1000'],['ငါးထောင်ကျပ်','5000 kyat'],['သောင်း','10,000']]}]},
+{id:'my_bignum_4',title:'Mix it',step:'mix',meta:'Prices big & small',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ထောင်',o:['thousand','hundred','ten thousand','ten'],a:0},
+{t:'li',q:'Listen — which one?',say:'တစ်ထောင်',o:['တစ်ထောင်','ငါးထောင်ကျပ်','ငါးရာ','သောင်း'],a:0},
+{t:'mc',q:'The taxi driver says ငါးထောင်. That is…',o:['5000 kyat','500 kyat','50 kyat','5 kyat'],a:0},
+{t:'wb',q:'Build: How much? Five hundred kyat. — 500 kyat',a:['ငါး','ရာ','ကျပ်'],pool:['ငါး','ရာ','ကျပ်','ထောင်']},
+{t:'li',q:'Listen — which one?',say:'ကျပ်',o:['ကျပ်','ရာ','ထောင်','ပိုက်ဆံ'],a:0},
+{t:'mc',q:'From small to large:',o:['ဆယ် · ရာ · ထောင် · သောင်း','ရာ · ဆယ် · သောင်း · ထောင်','ထောင် · ရာ · ဆယ် · သောင်း','သောင်း · ထောင် · ရာ · ဆယ်'],a:0}]},
+{id:'my_bignum_5',title:'Checkpoint',step:'checkpoint',meta:'Big numbers mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "ten thousand"?',o:['သောင်း','ထောင်','ရာ','ဆယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ငါးထောင်ကျပ်',o:['ငါးထောင်ကျပ်','ငါးရာ','တစ်ထောင်','ကျပ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ငါးရာ',o:['500','5000','50','50,000'],a:0},
+{t:'wb',q:'Build: one thousand kyat',a:['တစ်','ထောင်','ကျပ်'],pool:['တစ်','ထောင်','ကျပ်','ရာ']},
+{t:'mc',q:'1000 is said…',o:['ta htaung','ta thaung','tiq ya','ta hkweq'],a:0},
+{t:'match',q:'Match amount and figure',pairs:[['ရာ','100'],['ထောင်','1000'],['သောင်း','10,000'],['ငါးရာ','500']]}]},
+
+/* --- Topic 5: buying, selling & bargaining --- */
+{id:'my_buy',title:'Buy & bargain',step:'learn',meta:'ဝယ်တယ် ရောင်းတယ် လျှော့ပေးပါ',vocab:[['ဝယ်တယ်','weh de','buy'],['ရောင်းတယ်','yaung de','sell'],['ဝယ်ချင်တယ်','weh chin de','want to buy'],['လျှော့ပေးပါ','shaw pei ba','please lower the price'],['ယူမယ်','yu meh','(I) will take it']],ex:[
+{t:'note',tag:'At the stall',q:'ဝယ် · ရောင်း',body:'<p><span class="deva">ဝယ်တယ်</span> <b>weh de</b> = buy · <span class="deva">ရောင်းတယ်</span> <b>yaung de</b> = sell. All your engine parts fit: <span class="deva">ဝယ်ချင်တယ်</span> want to buy · <span class="deva">ဝယ်မလား</span> will you buy?</p>',eg:[['ဝယ်တယ်','weh de','buy'],['ရောင်းတယ်','yaung de','sell']]},
+{t:'mc',q:'Which means "buy"?',o:['ဝယ်တယ်','ရောင်းတယ်','ယူမယ်','ပေးပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဝယ်ချင်တယ်',o:['want to buy','want to sell','will take it','bought it'],a:0},
+{t:'note',tag:'The magic words',q:'လျှော့ပေးပါ · ယူမယ်',body:'<p>Market bargaining is friendly sport. Smile and ask <span class="deva">လျှော့ပေးပါ</span> <b>shaw pei ba</b> — "please lower it" (လျှော့ reduce + our ပေးပါ).</p><p>Deal struck? <span class="deva">ယူမယ်</span> <b>yu meh</b> — "I will take it!" (ယူ = take.)</p>',eg:[['လျှော့ပေးပါ','shaw pei ba','please lower the price'],['ယူမယ်','yu meh','(I) will take it']]},
+{t:'mc',q:'How do you ask for a better price?',o:['လျှော့ပေးပါ','ယူမယ်','ဝယ်တယ်','ဒါပဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ယူမယ်',o:['(I) will take it','(I) will sell it','lower the price','it is cheap'],a:0},
+{t:'li',q:'Listen — which one?',say:'လျှော့ပေးပါ',o:['လျှော့ပေးပါ','ယူမယ်','ဝယ်ချင်တယ်','ရောင်းတယ်'],a:0}]},
+{id:'my_buy_2',title:'Hear the deal',step:'recognize',meta:'Spot the market lines',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဝယ်တယ်',o:['ဝယ်တယ်','ရောင်းတယ်','ယူမယ်','ဝယ်ချင်တယ်'],a:0},
+{t:'mc',q:'Which means "sell"?',o:['ရောင်းတယ်','ဝယ်တယ်','ယူမယ်','လျှော့ပေးပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ယူမယ်',o:['ယူမယ်','ဝယ်မယ်','လျှော့ပေးပါ','ရောင်းတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လျှော့ပေးပါ',o:['please lower the price','please give a cup','I will take it','it is expensive'],a:0},
+{t:'mc',q:'The seller at the stall does what?',o:['ရောင်းတယ်','ဝယ်တယ်','ကလေး','နေတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဝယ်ချင်တယ်',o:['ဝယ်ချင်တယ်','ဝယ်တယ်','စားချင်တယ်','ယူမယ်'],a:0},
+{t:'mc',q:'လျှော့ပေးပါ ends in the polite…',o:['ပါ','တယ်','လား','ဘူး'],a:0}]},
+{id:'my_buy_3',title:'Put it together',step:'build',meta:'Strike a deal',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ဝယ်တယ်','buy'],['ရောင်းတယ်','sell'],['လျှော့ပေးပါ','please lower the price'],['ယူမယ်','(I) will take it']]},
+{t:'wb',q:'Build: I want to buy fruit (woman speaking)',a:['ကျွန်မ','သစ်သီး','ဝယ်ချင်တယ်'],pool:['ကျွန်မ','သစ်သီး','ဝယ်ချင်တယ်','ရောင်းတယ်']},
+{t:'mc',q:'ဈေးကြီးတယ်… then you say…',o:['လျှော့ပေးပါ','ယူမယ်','ကောင်းတယ်','ရတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရောင်းတယ်',o:['ရောင်းတယ်','ဝယ်တယ်','ယူမယ်','လာတယ်'],a:0},
+{t:'wb',q:'Build: Will you buy fish?',a:['ငါး','ဝယ်မလား'],pool:['ငါး','ဝယ်မလား','ဝယ်တယ်']},
+{t:'match',q:'Match line and meaning',pairs:[['ဝယ်ချင်တယ်','want to buy'],['ယူမယ်','(I) will take it'],['ဈေးပေါတယ်','it is cheap'],['လျှော့ပေးပါ','please lower the price']]}]},
+{id:'my_buy_4',title:'Mix it',step:'mix',meta:'A whole market visit',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဝယ်တယ်',o:['buy','sell','take','give'],a:0},
+{t:'li',q:'Listen — which one?',say:'ယူမယ်',o:['ယူမယ်','ဝယ်တယ်','လာမယ်','စားမယ်'],a:0},
+{t:'mc',q:'Bargaining went well — 500 off. You close with…',o:['ယူမယ်','လျှော့ပေးပါ','မဝယ်ဘူး','ဘယ်လောက်လဲ'],a:0},
+{t:'wb',q:'Build: I will not buy (it) — not-buy',a:['မဝယ်ဘူး'],pool:['မဝယ်ဘူး','ဝယ်မယ်']},
+{t:'li',q:'Listen — which one?',say:'ဝယ်တယ်',o:['ဝယ်တယ်','ရောင်းတယ်','ဝယ်ချင်တယ်','ယူမယ်'],a:0},
+{t:'match',q:'Match the market flow',pairs:[['ဒါဘယ်လောက်လဲ','how much is this?'],['ဈေးကြီးတယ်','it is expensive'],['လျှော့ပေးပါ','please lower the price'],['ယူမယ်','(I) will take it']]}]},
+{id:'my_buy_5',title:'Checkpoint',step:'checkpoint',meta:'Bargaining mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "want to buy"?',o:['ဝယ်ချင်တယ်','ရောင်းတယ်','ယူမယ်','ဝယ်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'လျှော့ပေးပါ',o:['လျှော့ပေးပါ','ပေးပါ','ယူမယ်','ဝယ်ချင်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရောင်းတယ်',o:['sell','buy','take','reduce'],a:0},
+{t:'wb',q:'Build: I will take it — take + future',a:['ယူ','မယ်'],pool:['ယူ','မယ်','တယ်']},
+{t:'mc',q:'The friendly bargaining opener is…',o:['လျှော့ပေးပါ','မဝယ်ဘူး','ရောင်းတယ်','ဒါပဲ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ဝယ်တယ်','buy'],['ရောင်းတယ်','sell'],['ယူမယ်','(I) will take it'],['ဝယ်ချင်တယ်','want to buy']]}]},
+
+/* --- Topic 6: clock time --- */
+{id:'my_time',title:'What time is it?',step:'learn',meta:'နာရီ မိနစ် ခွဲ',vocab:[['နာရီ','nayi','hour / o’clock / clock'],['မိနစ်','miniq','minute'],['ခွဲ','hkweh','half past'],['ဘယ်နှနာရီလဲ','beh hna nayi leh','what time is it?'],['သုံးနာရီ','thoun nayi','three o’clock'],['သုံးနာရီခွဲ','thoun nayi hkweh','half past three']],ex:[
+{t:'note',tag:'Clock words',q:'နာရီ · မိနစ်',body:'<p><span class="deva">နာရီ</span> <b>nayi</b> is the hour, the o’clock and the clock itself. <span class="deva">မိနစ်</span> <b>miniq</b> = minute.</p><p>Ask the time with your how-many word: <span class="deva">ဘယ်နှနာရီလဲ</span> <b>beh hna nayi leh</b> — literally "how many hours?"</p>',eg:[['နာရီ','nayi','hour / clock'],['ဘယ်နှနာရီလဲ','beh hna nayi leh','what time is it?']]},
+{t:'mc',q:'Which means "hour / o’clock"?',o:['နာရီ','မိနစ်','ခွဲ','ရာ'],a:0},
+{t:'mc',q:'How do you ask the time?',o:['ဘယ်နှနာရီလဲ','ဘယ်လောက်လဲ','ဘယ်နှယောက်လဲ','ဘယ်မှာလဲ'],a:0},
+{t:'note',tag:'On the half',q:'number + နာရီ (+ ခွဲ)',body:'<p>Saying the time is pure recipe: number + <span class="deva">နာရီ</span>. <span class="deva">သုံးနာရီ</span> = three o’clock.</p><p>Add <span class="deva">ခွဲ</span> <b>hkweh</b> (split-in-half) for half past: <span class="deva">သုံးနာရီခွဲ</span> = 3:30.</p>',eg:[['သုံးနာရီ','thoun nayi','3:00'],['သုံးနာရီခွဲ','thoun nayi hkweh','3:30']]},
+{t:'mc',q:'What does this mean?',d:'သုံးနာရီ',o:['three o’clock','three minutes','half past three','three hundred'],a:0},
+{t:'mc',q:'What does this mean?',d:'သုံးနာရီခွဲ',o:['half past three','three o’clock','a third','three thirty-three'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှနာရီလဲ',o:['ဘယ်နှနာရီလဲ','သုံးနာရီ','နာရီ','မိနစ်'],a:0}]},
+{id:'my_time_2',title:'Hear the time',step:'recognize',meta:'Spot hours & halves',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'နာရီ',o:['နာရီ','မိနစ်','ခွဲ','ရာ'],a:0},
+{t:'mc',q:'Which means "minute"?',o:['မိနစ်','နာရီ','ခွဲ','မနက်'],a:0},
+{t:'li',q:'Listen — which one?',say:'သုံးနာရီခွဲ',o:['သုံးနာရီခွဲ','သုံးနာရီ','ဘယ်နှနာရီလဲ','သုံးမိနစ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခွဲ',o:['half past','quarter past','minute','hour'],a:0},
+{t:'mc',q:'"Five o’clock" is…',o:['ငါးနာရီ','ငါးမိနစ်','ငါးရာ','ငါးခွဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'မိနစ်',o:['မိနစ်','နာရီ','မနက်','ခွဲ'],a:0},
+{t:'mc',q:'ဘယ်နှနာရီလဲ literally asks…',o:['how many hours?','how much time costs?','which clock?','when tomorrow?'],a:0}]},
+{id:'my_time_3',title:'Put it together',step:'build',meta:'Tell the time',vocab:[],ex:[
+{t:'match',q:'Match time and meaning',pairs:[['နာရီ','hour / clock'],['မိနစ်','minute'],['ခွဲ','half past'],['ဘယ်နှနာရီလဲ','what time is it?']]},
+{t:'wb',q:'Build: half past three',a:['သုံး','နာရီ','ခွဲ'],pool:['သုံး','နာရီ','ခွဲ','မိနစ်']},
+{t:'mc',q:'"Ten o’clock" is…',o:['ဆယ်နာရီ','ဆယ်မိနစ်','နာရီဆယ်','ဆယ်ခွဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'သုံးနာရီ',o:['သုံးနာရီ','သုံးနာရီခွဲ','သုံးမိနစ်','သုံးခု'],a:0},
+{t:'wb',q:'Build: What time is it?',a:['ဘယ်နှ','နာရီ','လဲ'],pool:['ဘယ်နှ','နာရီ','လဲ','လား']},
+{t:'match',q:'Match time and clock',pairs:[['သုံးနာရီ','3:00'],['သုံးနာရီခွဲ','3:30'],['ငါးနာရီ','5:00'],['ဆယ်နာရီ','10:00']]}]},
+{id:'my_time_4',title:'Mix it',step:'mix',meta:'Times through the day',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဘယ်နှနာရီလဲ',o:['what time is it?','how many minutes?','which clock is it?','how long?'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခွဲ',o:['ခွဲ','ခွက်','ခု','နာရီ'],a:0},
+{t:'mc',q:'Your friend says မနက် ဆယ်နာရီ — meet at…',o:['10 in the morning','10 at night','half past ten','10 minutes'],a:0},
+{t:'wb',q:'Build: five o’clock in the evening — evening five hour',a:['ညနေ','ငါး','နာရီ'],pool:['ညနေ','ငါး','နာရီ','မနက်']},
+{t:'li',q:'Listen — which one?',say:'သုံးနာရီခွဲ',o:['သုံးနာရီခွဲ','သုံးနာရီ','ငါးနာရီ','မိနစ်'],a:0},
+{t:'match',q:'Match time and meaning',pairs:[['မနက်','morning'],['ညနေ','evening'],['နာရီ','hour / clock'],['ခွဲ','half past']]}]},
+{id:'my_time_5',title:'Checkpoint',step:'checkpoint',meta:'Time mastered?',vocab:[],ex:[
+{t:'mc',q:'How do you ask "What time is it?"',o:['ဘယ်နှနာရီလဲ','ဘယ်လောက်လဲ','ဘယ်သူလဲ','ဘယ်နှယောက်လဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'သုံးနာရီ',o:['သုံးနာရီ','သုံးနာရီခွဲ','သုံးမိနစ်','ဆယ်နာရီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'မိနစ်',o:['minute','hour','half','morning'],a:0},
+{t:'wb',q:'Build: half past five',a:['ငါး','နာရီ','ခွဲ'],pool:['ငါး','နာရီ','ခွဲ','မိနစ်']},
+{t:'mc',q:'Half past = number + နာရီ +…',o:['ခွဲ','မိနစ်','ခု','ရာ'],a:0},
+{t:'match',q:'Match time and clock',pairs:[['ငါးနာရီ','5:00'],['ငါးနာရီခွဲ','5:30'],['သုံးနာရီ','3:00'],['ဆယ်နာရီ','10:00']]}]},
+
+/* --- Topic 7: days of the week --- */
+{id:'my_days',title:'Days of the week',step:'learn',meta:'တနင်္လာ … တနင်္ဂနွေ',vocab:[['တနင်္လာ','ta nin la','Monday'],['အင်္ဂါ','in ga','Tuesday'],['ဗုဒ္ဓဟူး','bouq da hu','Wednesday'],['ကြာသပတေး','kya tha ba dei','Thursday'],['သောကြာ','thauq kya','Friday'],['စနေ','sa nei','Saturday'],['တနင်္ဂနွေ','ta nin ga nwei','Sunday']],ex:[
+{t:'note',tag:'The week',q:'Monday to Wednesday',body:'<p>Burmese days are named after the planets, like ours. Add <span class="deva">နေ့</span> (day) when you speak: <span class="deva">တနင်္လာနေ့</span> "on Monday".</p><p><span class="deva">တနင်္လာ</span> <b>ta nin la</b> Monday · <span class="deva">အင်္ဂါ</span> <b>in ga</b> Tuesday · <span class="deva">ဗုဒ္ဓဟူး</span> <b>bouq da hu</b> Wednesday.</p>',eg:[['တနင်္လာ','ta nin la','Monday'],['အင်္ဂါ','in ga','Tuesday'],['ဗုဒ္ဓဟူး','bouq da hu','Wednesday']]},
+{t:'mc',q:'Which is Monday?',o:['တနင်္လာ','အင်္ဂါ','စနေ','သောကြာ'],a:0},
+{t:'mc',q:'What day is အင်္ဂါ?',d:'အင်္ဂါ',o:['Tuesday','Monday','Wednesday','Friday'],a:0},
+{t:'note',tag:'To the weekend',q:'Thursday to Sunday',body:'<p><span class="deva">ကြာသပတေး</span> <b>kya tha ba dei</b> Thursday · <span class="deva">သောကြာ</span> <b>thauq kya</b> Friday · <span class="deva">စနေ</span> <b>sa nei</b> Saturday · <span class="deva">တနင်္ဂနွေ</span> <b>ta nin ga nwei</b> Sunday.</p><p>Spot the twins: Monday တနင်္<b>လာ</b>, Sunday တနင်္ဂ<b>နွေ</b>.</p>',eg:[['သောကြာ','thauq kya','Friday'],['စနေ','sa nei','Saturday'],['တနင်္ဂနွေ','ta nin ga nwei','Sunday']]},
+{t:'mc',q:'Which is Friday?',o:['သောကြာ','ကြာသပတေး','စနေ','တနင်္ဂနွေ'],a:0},
+{t:'mc',q:'What day is စနေ?',d:'စနေ',o:['Saturday','Sunday','Friday','Monday'],a:0},
+{t:'li',q:'Listen — which day?',say:'တနင်္ဂနွေ',o:['တနင်္ဂနွေ','တနင်္လာ','စနေ','သောကြာ'],a:0}]},
+{id:'my_days_2',title:'Hear the days',step:'recognize',meta:'Spot each day',vocab:[],ex:[
+{t:'li',q:'Listen — which day?',say:'တနင်္လာ',o:['တနင်္လာ','တနင်္ဂနွေ','အင်္ဂါ','စနေ'],a:0},
+{t:'mc',q:'Which is Wednesday?',o:['ဗုဒ္ဓဟူး','ကြာသပတေး','အင်္ဂါ','သောကြာ'],a:0},
+{t:'li',q:'Listen — which day?',say:'သောကြာ',o:['သောကြာ','ကြာသပတေး','စနေ','တနင်္လာ'],a:0},
+{t:'mc',q:'What day is ကြာသပတေး?',d:'ကြာသပတေး',o:['Thursday','Tuesday','Friday','Wednesday'],a:0},
+{t:'mc',q:'"On Monday" adds which word?',o:['နေ့ — တနင်္လာနေ့','မှာ only','လဲ','ခွဲ'],a:0},
+{t:'li',q:'Listen — which day?',say:'အင်္ဂါ',o:['အင်္ဂါ','တနင်္လာ','ဗုဒ္ဓဟူး','စနေ'],a:0},
+{t:'mc',q:'The weekend pair is…',o:['စနေ + တနင်္ဂနွေ','တနင်္လာ + အင်္ဂါ','သောကြာ + ဗုဒ္ဓဟူး','ကြာသပတေး + သောကြာ'],a:0}]},
+{id:'my_days_3',title:'Put it together',step:'build',meta:'Plan your week',vocab:[],ex:[
+{t:'match',q:'Match day and meaning',pairs:[['တနင်္လာ','Monday'],['အင်္ဂါ','Tuesday'],['ဗုဒ္ဓဟူး','Wednesday'],['ကြာသပတေး','Thursday']]},
+{t:'mc',q:'Which day comes after သောကြာ (Friday)?',o:['စနေ','တနင်္ဂနွေ','တနင်္လာ','ဗုဒ္ဓဟူး'],a:0},
+{t:'li',q:'Listen — which day?',say:'စနေ',o:['စနေ','သောကြာ','တနင်္ဂနွေ','ညနေ'],a:0},
+{t:'wb',q:'Build: (I) will go on Saturday — Saturday-day go-will',a:['စနေနေ့','သွားမယ်'],pool:['စနေနေ့','သွားမယ်','သွားတယ်']},
+{t:'match',q:'Match day and meaning',pairs:[['သောကြာ','Friday'],['စနေ','Saturday'],['တနင်္ဂနွေ','Sunday'],['တနင်္လာ','Monday']]},
+{t:'mc',q:'Which day is the twin of Monday တနင်္လာ?',o:['တနင်္ဂနွေ','အင်္ဂါ','စနေ','သောကြာ'],a:0}]},
+{id:'my_days_4',title:'Mix it',step:'mix',meta:'All seven days',vocab:[],ex:[
+{t:'mc',q:'What day is ဗုဒ္ဓဟူး?',d:'ဗုဒ္ဓဟူး',o:['Wednesday','Thursday','Tuesday','Sunday'],a:0},
+{t:'li',q:'Listen — which day?',say:'ကြာသပတေး',o:['ကြာသပတေး','သောကြာ','တနင်္လာ','အင်္ဂါ'],a:0},
+{t:'mc',q:'Your friend says စနေနေ့ တွေ့မယ် — see you on…',o:['Saturday','Sunday','Friday','Monday'],a:0},
+{t:'wb',q:'Build: (I) will come on Friday — Friday-day come-will',a:['သောကြာနေ့','လာမယ်'],pool:['သောကြာနေ့','လာမယ်','လာတယ်']},
+{t:'li',q:'Listen — which day?',say:'တနင်္လာ',o:['တနင်္လာ','တနင်္ဂနွေ','စနေ','ဗုဒ္ဓဟူး'],a:0},
+{t:'match',q:'Match day and meaning',pairs:[['အင်္ဂါ','Tuesday'],['ဗုဒ္ဓဟူး','Wednesday'],['သောကြာ','Friday'],['တနင်္ဂနွေ','Sunday']]}]},
+{id:'my_days_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 5 complete!',vocab:[],ex:[
+{t:'mc',q:'Which is Sunday?',o:['တနင်္ဂနွေ','တနင်္လာ','စနေ','သောကြာ'],a:0},
+{t:'li',q:'Listen — which day?',say:'ဗုဒ္ဓဟူး',o:['ဗုဒ္ဓဟူး','ကြာသပတေး','အင်္ဂါ','တနင်္လာ'],a:0},
+{t:'mc',q:'What day is သောကြာ?',d:'သောကြာ',o:['Friday','Thursday','Saturday','Tuesday'],a:0},
+{t:'mc',q:'Monday · Tuesday · Wednesday =',o:['တနင်္လာ · အင်္ဂါ · ဗုဒ္ဓဟူး','အင်္ဂါ · တနင်္လာ · ဗုဒ္ဓဟူး','စနေ · သောကြာ · အင်္ဂါ','တနင်္ဂနွေ · စနေ · သောကြာ'],a:0},
+{t:'li',q:'Listen — which day?',say:'စနေ',o:['စနေ','ညနေ','တနင်္ဂနွေ','သောကြာ'],a:0},
+{t:'match',q:'Match day and meaning',pairs:[['တနင်္လာ','Monday'],['ကြာသပတေး','Thursday'],['စနေ','Saturday'],['တနင်္ဂနွေ','Sunday']]}]},
+
+/* ===================== ZONE 6 · DESCRIBE IT =====================
+   Adjectives ARE verbs in Burmese (stative verbs): ကြီးတယ် "bigs".
+   Tastes, colors, comparisons ပို/ထက်/အ…ဆုံး, feelings, the three
+   seasons, body & health. Per Mesher L8/L10 & Okell topical units. */
+/* --- Topic 1: adjectives are verbs --- */
+{id:'my_adj',title:'Describing words',step:'learn',meta:'ကြီးတယ် သေးတယ် — adjectives are verbs',vocab:[['ကြီးတယ်','kyi de','is big'],['သေးတယ်','thei de','is small'],['ဆိုးတယ်','hso de','is bad'],['အသစ်','a thiq','new'],['အဟောင်း','a haung','old (things)'],['မကောင်းဘူး','ma kaung bu','is not good']],ex:[
+{t:'note',tag:'Zone 6',q:'Adjectives ARE verbs',body:'<p>Here is a Burmese secret: there is no separate word for "is big". <span class="deva">ကြီး</span> works exactly like a verb — <span class="deva">ကြီးတယ်</span> "it bigs" = it is big.</p><p>That means everything you know works: <span class="deva">မကြီးဘူး</span> not big · <span class="deva">ကြီးလား</span> is it big? You have been doing this since <span class="deva">ကောင်းတယ်</span>!</p>',eg:[['ကြီးတယ်','kyi de','is big'],['သေးတယ်','thei de','is small']]},
+{t:'mc',q:'Which means "is big"?',o:['ကြီးတယ်','သေးတယ်','ဆိုးတယ်','ကောင်းတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'သေးတယ်',o:['is small','is big','is bad','is new'],a:0},
+{t:'note',tag:'Good, bad, new, old',q:'ဆိုး · အသစ် · အဟောင်း',body:'<p><span class="deva">ဆိုးတယ်</span> <b>hso de</b> = is bad. And the flip of good you already own: <span class="deva">မကောင်းဘူး</span> — not good.</p><p>Things are <span class="deva">အသစ်</span> <b>a thiq</b> (new) or <span class="deva">အဟောင်း</span> <b>a haung</b> (old): ဖုန်းအသစ် a new phone.</p>',eg:[['ဆိုးတယ်','hso de','is bad'],['အသစ်','a thiq','new'],['အဟောင်း','a haung','old (things)']]},
+{t:'mc',q:'Which means "new"?',o:['အသစ်','အဟောင်း','ဆိုးတယ်','သေးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မကောင်းဘူး',o:['is not good','is good','is not big','is not new'],a:0},
+{t:'li',q:'Listen — which one?',say:'ကြီးတယ်',o:['ကြီးတယ်','သေးတယ်','ဆိုးတယ်','ကောင်းတယ်'],a:0}]},
+{id:'my_adj_2',title:'Hear the qualities',step:'recognize',meta:'Spot each describing word',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'သေးတယ်',o:['သေးတယ်','ကြီးတယ်','ဆိုးတယ်','သိတယ်'],a:0},
+{t:'mc',q:'Which means "is bad"?',o:['ဆိုးတယ်','ကောင်းတယ်','ကြီးတယ်','မကောင်းဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆိုးတယ်',o:['ဆိုးတယ်','သေးတယ်','ဆိုတယ်','ကြီးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'အဟောင်း',o:['old (things)','new','big','small'],a:0},
+{t:'mc',q:'"Is it big?" is simply…',o:['ကြီးလား','ကြီးတယ်','မကြီးဘူး','အကြီး'],a:0},
+{t:'li',q:'Listen — which one?',say:'အသစ်',o:['အသစ်','အဟောင်း','သစ်သီး','သေးတယ်'],a:0},
+{t:'mc',q:'Burmese adjectives behave like…',o:['verbs','nouns','particles','numbers'],a:0}]},
+{id:'my_adj_3',title:'Put it together',step:'build',meta:'Describe things',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ကြီးတယ်','is big'],['သေးတယ်','is small'],['ဆိုးတယ်','is bad'],['အသစ်','new']]},
+{t:'wb',q:'Build: The house is big — house bigs',a:['အိမ်','ကြီးတယ်'],pool:['အိမ်','ကြီးတယ်','သေးတယ်']},
+{t:'mc',q:'"Not small" is…',o:['မသေးဘူး','သေးတယ်','မကြီးဘူး','သေးလား'],a:0},
+{t:'li',q:'Listen — which one?',say:'အဟောင်း',o:['အဟောင်း','အသစ်','ဟင်း','ဆိုးတယ်'],a:0},
+{t:'wb',q:'Build: Is the shop big? — shop bigs-question',a:['ဆိုင်','ကြီးလား'],pool:['ဆိုင်','ကြီးလား','ကြီးတယ်']},
+{t:'match',q:'Match word and meaning',pairs:[['အဟောင်း','old (things)'],['မကောင်းဘူး','is not good'],['ကောင်းတယ်','is good'],['သေးတယ်','is small']]}]},
+{id:'my_adj_4',title:'Mix it',step:'mix',meta:'Qualities everywhere',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဆိုးတယ်',o:['is bad','is small','is old','is not good'],a:0},
+{t:'li',q:'Listen — which one?',say:'မကောင်းဘူး',o:['မကောင်းဘူး','ကောင်းတယ်','မကြီးဘူး','ဆိုးတယ်'],a:0},
+{t:'mc',q:'ကလေးက သေးတယ် means…',o:['the child is small','the child is big','the child is bad','the small child left'],a:0},
+{t:'wb',q:'Build: The market is not good',a:['ဈေး','မကောင်းဘူး'],pool:['ဈေး','မကောင်းဘူး','ကောင်းတယ်']},
+{t:'li',q:'Listen — which one?',say:'ကြီးလား',o:['ကြီးလား','ကြီးတယ်','သေးလား','ဆိုးတယ်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ကြီးတယ်','is big'],['ဆိုးတယ်','is bad'],['အသစ်','new'],['အဟောင်း','old (things)']]}]},
+{id:'my_adj_5',title:'Checkpoint',step:'checkpoint',meta:'Describing mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is small"?',o:['သေးတယ်','ကြီးတယ်','ဆိုးတယ်','အသစ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆိုးတယ်',o:['ဆိုးတယ်','ကြီးတယ်','သေးတယ်','မကောင်းဘူး'],a:0},
+{t:'mc',q:'What does this mean?',d:'အသစ်',o:['new','old','small','good'],a:0},
+{t:'wb',q:'Build: The teashop is good',a:['လက်ဖက်ရည်ဆိုင်','ကောင်းတယ်'],pool:['လက်ဖက်ရည်ဆိုင်','ကောင်းတယ်','ဆိုးတယ်']},
+{t:'mc',q:'To negate any describing word:',o:['မ + word + ဘူး','word + လား','အ + word','word + မယ်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ကြီးတယ်','is big'],['သေးတယ်','is small'],['အသစ်','new'],['မကောင်းဘူး','is not good']]}]},
+
+/* --- Topic 2: hot, cold & tastes --- */
+{id:'my_taste',title:'Hot, cold & tasty',step:'learn',meta:'ပူ အေး စပ် ချို',vocab:[['ပူတယ်','pu de','is hot'],['အေးတယ်','ei de','is cold'],['စပ်တယ်','saq de','is spicy'],['ချိုတယ်','cho de','is sweet'],['လက်ဖက်ရည်ပူတယ်','lahpeq yeh pu de','the tea is hot'],['ရေအေးတယ်','ye ei de','the water is cold']],ex:[
+{t:'note',tag:'Feel it',q:'ပူ · အေး',body:'<p><span class="deva">ပူတယ်</span> <b>pu de</b> = is hot · <span class="deva">အေးတယ်</span> <b>ei de</b> = is cold. Weather, tea, soup — same words.</p><p><span class="deva">လက်ဖက်ရည်ပူတယ်</span> — careful, the tea is hot!</p>',eg:[['ပူတယ်','pu de','is hot'],['အေးတယ်','ei de','is cold']]},
+{t:'mc',q:'Which means "is hot"?',o:['ပူတယ်','အေးတယ်','စပ်တယ်','ချိုတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရေအေးတယ်',o:['the water is cold','the water is hot','the tea is cold','cold water, please'],a:0},
+{t:'note',tag:'Taste it',q:'စပ် · ချို',body:'<p>Two tastes rule Myanmar tables: <span class="deva">စပ်တယ်</span> <b>saq de</b> — spicy! — and <span class="deva">ချိုတယ်</span> <b>cho de</b> — sweet (that teashop tea is famously sweet).</p>',eg:[['စပ်တယ်','saq de','is spicy'],['ချိုတယ်','cho de','is sweet']]},
+{t:'mc',q:'Which means "is spicy"?',o:['စပ်တယ်','ချိုတယ်','ပူတယ်','အေးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ချိုတယ်',o:['is sweet','is spicy','is sour','is cold'],a:0},
+{t:'li',q:'Listen — which one?',say:'စပ်တယ်',o:['စပ်တယ်','ချိုတယ်','ပူတယ်','အေးတယ်'],a:0}]},
+{id:'my_taste_2',title:'Hear the tastes',step:'recognize',meta:'Spot ပူ အေး စပ် ချို',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ပူတယ်',o:['ပူတယ်','အေးတယ်','စပ်တယ်','ချိုတယ်'],a:0},
+{t:'mc',q:'Which means "is cold"?',o:['အေးတယ်','ပူတယ်','ချိုတယ်','စပ်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရေအေးတယ်',o:['ရေအေးတယ်','လက်ဖက်ရည်ပူတယ်','အေးတယ်','ရေ'],a:0},
+{t:'mc',q:'What does this mean?',d:'စပ်တယ်',o:['is spicy','is sweet','is salty','is hot (temperature)'],a:0},
+{t:'mc',q:'Teashop tea is famously…',o:['ချိုတယ်','စပ်တယ်','အေးတယ်','ဆိုးတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ချိုတယ်',o:['ချိုတယ်','ကျိုတယ်','စပ်တယ်','ပူတယ်'],a:0},
+{t:'mc',q:'ပူတယ် can describe…',o:['weather AND food','only weather','only food','only people'],a:0}]},
+{id:'my_taste_3',title:'Put it together',step:'build',meta:'Say how it tastes',vocab:[],ex:[
+{t:'match',q:'Match taste and meaning',pairs:[['ပူတယ်','is hot'],['အေးတယ်','is cold'],['စပ်တယ်','is spicy'],['ချိုတယ်','is sweet']]},
+{t:'wb',q:'Build: The curry is spicy',a:['ဟင်း','စပ်တယ်'],pool:['ဟင်း','စပ်တယ်','ချိုတယ်']},
+{t:'mc',q:'"The coffee is hot" is…',o:['ကော်ဖီပူတယ်','ကော်ဖီအေးတယ်','ကော်ဖီချိုတယ်','ကော်ဖီပေးပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'အေးတယ်',o:['အေးတယ်','ပူတယ်','ချိုတယ်','နေတယ်'],a:0},
+{t:'wb',q:'Build: Is the curry spicy?',a:['ဟင်း','စပ်လား'],pool:['ဟင်း','စပ်လား','စပ်တယ်']},
+{t:'match',q:'Match line and meaning',pairs:[['လက်ဖက်ရည်ပူတယ်','the tea is hot'],['ရေအေးတယ်','the water is cold'],['ချိုတယ်','is sweet'],['စပ်တယ်','is spicy']]}]},
+{id:'my_taste_4',title:'Mix it',step:'mix',meta:'Tastes at the table',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'အေးတယ်',o:['is cold','is hot','is sweet','is fresh'],a:0},
+{t:'li',q:'Listen — which one?',say:'လက်ဖက်ရည်ပူတယ်',o:['လက်ဖက်ရည်ပူတယ်','ရေအေးတယ်','ပူတယ်','လက်ဖက်ရည်ချိုတယ်'],a:0},
+{t:'mc',q:'One bite and your eyes water. The curry…',o:['စပ်တယ်','ချိုတယ်','အေးတယ်','ကောင်းတယ်'],a:0},
+{t:'wb',q:'Build: Cold water, please — water cold-cold give',a:['ရေ','အေးအေး','ပေးပါ'],pool:['ရေ','အေးအေး','ပေးပါ','ပူပူ']},
+{t:'li',q:'Listen — which one?',say:'ချိုတယ်',o:['ချိုတယ်','ကျိုတယ်','စပ်တယ်','အေးတယ်'],a:0},
+{t:'match',q:'Match taste and meaning',pairs:[['ပူတယ်','is hot'],['စပ်တယ်','is spicy'],['ချိုတယ်','is sweet'],['ရေအေးတယ်','the water is cold']]}]},
+{id:'my_taste_5',title:'Checkpoint',step:'checkpoint',meta:'Tastes mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is sweet"?',o:['ချိုတယ်','စပ်တယ်','ပူတယ်','အေးတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'စပ်တယ်',o:['စပ်တယ်','ချိုတယ်','ပူတယ်','ဆိုးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လက်ဖက်ရည်ပူတယ်',o:['the tea is hot','the tea is sweet','the water is hot','hot tea, please'],a:0},
+{t:'wb',q:'Build: The fish curry is sweet',a:['ငါးဟင်း','ချိုတယ်'],pool:['ငါးဟင်း','ချိုတယ်','စပ်တယ်']},
+{t:'mc',q:'Hot / cold / spicy / sweet =',o:['ပူ · အေး · စပ် · ချို','အေး · ပူ · ချို · စပ်','ပူ · စပ် · အေး · ချို','ချို · စပ် · အေး · ပူ'],a:0},
+{t:'match',q:'Match taste and meaning',pairs:[['ပူတယ်','is hot'],['အေးတယ်','is cold'],['စပ်တယ်','is spicy'],['ချိုတယ်','is sweet']]}]},
+
+/* --- Topic 3: colors --- */
+{id:'my_color',title:'Colors',step:'learn',meta:'အနီ အပြာ အဝါ အစိမ်း အဖြူ အမည်း',vocab:[['အနီ','a ni','red'],['အပြာ','a pya','blue'],['အဝါ','a wa','yellow'],['အစိမ်း','a sein','green'],['အဖြူ','a hpyu','white'],['အမည်း','a meh','black']],ex:[
+{t:'note',tag:'The အ trick',q:'Colors wear အ',body:'<p>Color words wear the little prefix <span class="deva">အ</span>: <span class="deva">အနီ</span> <b>a ni</b> red · <span class="deva">အပြာ</span> <b>a pya</b> blue · <span class="deva">အဝါ</span> <b>a wa</b> yellow.</p><p>Add <span class="deva">ရောင်</span> (color/shade) for "the color red": အနီရောင်.</p>',eg:[['အနီ','a ni','red'],['အပြာ','a pya','blue'],['အဝါ','a wa','yellow']]},
+{t:'mc',q:'Which is "red"?',o:['အနီ','အပြာ','အဝါ','အစိမ်း'],a:0},
+{t:'mc',q:'What does this mean?',d:'အပြာ',o:['blue','red','yellow','green'],a:0},
+{t:'note',tag:'Three more',q:'အစိမ်း · အဖြူ · အမည်း',body:'<p><span class="deva">အစိမ်း</span> <b>a sein</b> green (also "raw"!) · <span class="deva">အဖြူ</span> <b>a hpyu</b> white · <span class="deva">အမည်း</span> <b>a meh</b> black.</p>',eg:[['အစိမ်း','a sein','green'],['အဖြူ','a hpyu','white'],['အမည်း','a meh','black']]},
+{t:'mc',q:'Which is "green"?',o:['အစိမ်း','အဖြူ','အမည်း','အနီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'အဖြူ',o:['white','black','blue','yellow'],a:0},
+{t:'li',q:'Listen — which color?',say:'အနီ',o:['အနီ','အပြာ','အဝါ','အမည်း'],a:0}]},
+{id:'my_color_2',title:'Hear the colors',step:'recognize',meta:'Spot each color',vocab:[],ex:[
+{t:'li',q:'Listen — which color?',say:'အပြာ',o:['အပြာ','အဝါ','အနီ','အဖြူ'],a:0},
+{t:'mc',q:'Which is "yellow"?',o:['အဝါ','အဖြူ','အနီ','အစိမ်း'],a:0},
+{t:'li',q:'Listen — which color?',say:'အစိမ်း',o:['အစိမ်း','အမည်း','အဖြူ','အနီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'အမည်း',o:['black','white','green','blue'],a:0},
+{t:'mc',q:'အစိမ်း also means…',o:['raw','cooked','ripe','old'],a:0},
+{t:'li',q:'Listen — which color?',say:'အဖြူ',o:['အဖြူ','အပြာ','အဝါ','အစိမ်း'],a:0},
+{t:'mc',q:'"The color red" (with the color word) is…',o:['အနီရောင်','အနီတယ်','နီပါ','ရောင်နီ'],a:0}]},
+{id:'my_color_3',title:'Put it together',step:'build',meta:'Color your world',vocab:[],ex:[
+{t:'match',q:'Match color and meaning',pairs:[['အနီ','red'],['အပြာ','blue'],['အဝါ','yellow'],['အစိမ်း','green']]},
+{t:'mc',q:'Rice is which color?',o:['အဖြူ','အမည်း','အနီ','အပြာ'],a:0},
+{t:'li',q:'Listen — which color?',say:'အဝါ',o:['အဝါ','အပြာ','အနီ','အဖြူ'],a:0},
+{t:'wb',q:'Build: I like blue (man speaking)',a:['ကျွန်တော်','အပြာ','ကြိုက်တယ်'],pool:['ကျွန်တော်','အပြာ','ကြိုက်တယ်','အနီ']},
+{t:'match',q:'Match color and meaning',pairs:[['အဖြူ','white'],['အမည်း','black'],['အနီ','red'],['အဝါ','yellow']]},
+{t:'mc',q:'Fresh green vegetables are…',o:['အစိမ်း','အမည်း','အဝါ','အဖြူ'],a:0}]},
+{id:'my_color_4',title:'Mix it',step:'mix',meta:'All six colors',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'အဝါ',o:['yellow','white','green','red'],a:0},
+{t:'li',q:'Listen — which color?',say:'အမည်း',o:['အမည်း','အစိမ်း','အနီ','အဖြူ'],a:0},
+{t:'mc',q:'Strong teashop coffee is…',o:['အမည်း','အဖြူ','အပြာ','အစိမ်း'],a:0},
+{t:'wb',q:'Build: Do you like red?',a:['အနီ','ကြိုက်လား'],pool:['အနီ','ကြိုက်လား','ကြိုက်တယ်']},
+{t:'li',q:'Listen — which color?',say:'အစိမ်း',o:['အစိမ်း','အသစ်','အမည်း','အပြာ'],a:0},
+{t:'match',q:'Match color and meaning',pairs:[['အနီ','red'],['အစိမ်း','green'],['အဖြူ','white'],['အမည်း','black']]}]},
+{id:'my_color_5',title:'Checkpoint',step:'checkpoint',meta:'Colors mastered?',vocab:[],ex:[
+{t:'mc',q:'Which is "white"?',o:['အဖြူ','အမည်း','အဝါ','အပြာ'],a:0},
+{t:'li',q:'Listen — which color?',say:'အနီ',o:['အနီ','အဝါ','အပြာ','အစိမ်း'],a:0},
+{t:'mc',q:'What does this mean?',d:'အစိမ်း',o:['green','blue','yellow','black'],a:0},
+{t:'wb',q:'Build: I like green (woman speaking)',a:['ကျွန်မ','အစိမ်း','ကြိုက်တယ်'],pool:['ကျွန်မ','အစိမ်း','ကြိုက်တယ်','အပြာ']},
+{t:'mc',q:'Color words wear the prefix…',o:['အ','မ','ဘ','တ'],a:0},
+{t:'match',q:'Match color and meaning',pairs:[['အပြာ','blue'],['အဝါ','yellow'],['အဖြူ','white'],['အနီ','red']]}]},
+
+/* --- Topic 4: comparisons ပို / ထက် / အ…ဆုံး --- */
+{id:'my_cmp',title:'Bigger & best',step:'learn',meta:'ပို…တယ် ထက် အ…ဆုံး',vocab:[['ပို','po','more'],['ပိုကြီးတယ်','po kyi de','is bigger'],['ပိုကောင်းတယ်','po kaung de','is better'],['ထက်','htaq','than'],['အကြီးဆုံး','a kyi zoun','the biggest'],['အကောင်းဆုံး','a kaung zoun','the best']],ex:[
+{t:'note',tag:'More of it',q:'ပို + verb',body:'<p>To compare, slide <span class="deva">ပို</span> <b>po</b> (more) in front of the describing verb: <span class="deva">ပိုကြီးတယ်</span> bigger · <span class="deva">ပိုကောင်းတယ်</span> better.</p><p>"Than" is <span class="deva">ထက်</span> after the loser: <span class="deva">ဒါထက် ပိုကြီးတယ်</span> — bigger than this.</p>',eg:[['ပိုကြီးတယ်','po kyi de','is bigger'],['ထက်','htaq','than']]},
+{t:'mc',q:'Which means "is bigger"?',o:['ပိုကြီးတယ်','ကြီးတယ်','အကြီးဆုံး','ကြီးလား'],a:0},
+{t:'mc',q:'What does this mean?',d:'ပိုကောင်းတယ်',o:['is better','is best','is good','is bigger'],a:0},
+{t:'note',tag:'The very most',q:'အ + verb + ဆုံး',body:'<p>Superlatives wrap the verb in <span class="deva">အ</span>…<span class="deva">ဆုံး</span>: <span class="deva">အကြီးဆုံး</span> <b>a kyi zoun</b> the biggest · <span class="deva">အကောင်းဆုံး</span> <b>a kaung zoun</b> the best.</p>',eg:[['အကြီးဆုံး','a kyi zoun','the biggest'],['အကောင်းဆုံး','a kaung zoun','the best']]},
+{t:'mc',q:'Which means "the best"?',o:['အကောင်းဆုံး','ပိုကောင်းတယ်','ကောင်းတယ်','အကြီးဆုံး'],a:0},
+{t:'mc',q:'What does this mean?',d:'ထက်',o:['than','more','most','with'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပိုကောင်းတယ်',o:['ပိုကောင်းတယ်','ကောင်းတယ်','အကောင်းဆုံး','ပိုကြီးတယ်'],a:0}]},
+{id:'my_cmp_2',title:'Hear the comparison',step:'recognize',meta:'more / than / most',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ပို',o:['ပို','ထက်','ပူ','ပါ'],a:0},
+{t:'mc',q:'Which means "the biggest"?',o:['အကြီးဆုံး','ပိုကြီးတယ်','ကြီးတယ်','အကြီး'],a:0},
+{t:'li',q:'Listen — which one?',say:'အကောင်းဆုံး',o:['အကောင်းဆုံး','ပိုကောင်းတယ်','ကောင်းတယ်','အကြီးဆုံး'],a:0},
+{t:'mc',q:'What does this mean?',d:'ပိုကြီးတယ်',o:['is bigger','is the biggest','is big','more or less'],a:0},
+{t:'mc',q:'"Sweeter" would be…',o:['ပိုချိုတယ်','အချိုဆုံး','ချိုတယ်','ချိုထက်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထက်',o:['ထက်','ပို','ဆုံး','တစ်'],a:0},
+{t:'mc',q:'The superlative recipe is…',o:['အ + verb + ဆုံး','ပို + verb','verb + ထက်','မ + verb + ဘူး'],a:0}]},
+{id:'my_cmp_3',title:'Put it together',step:'build',meta:'Compare things',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ပိုကြီးတယ်','is bigger'],['ပိုကောင်းတယ်','is better'],['အကြီးဆုံး','the biggest'],['အကောင်းဆုံး','the best']]},
+{t:'wb',q:'Build: This is better — this more-goods',a:['ဒါ','ပိုကောင်းတယ်'],pool:['ဒါ','ပိုကောင်းတယ်','အကောင်းဆုံး']},
+{t:'mc',q:'"Cheaper" is…',o:['ဈေးပိုပေါတယ်','ဈေးပေါတယ်','အပေါဆုံး','ဈေးထက်'],a:0},
+{t:'li',q:'Listen — which one?',say:'အကြီးဆုံး',o:['အကြီးဆုံး','ပိုကြီးတယ်','အကောင်းဆုံး','ကြီးတယ်'],a:0},
+{t:'wb',q:'Build: bigger than this — this-than more-bigs',a:['ဒါထက်','ပိုကြီးတယ်'],pool:['ဒါထက်','ပိုကြီးတယ်','အကြီးဆုံး']},
+{t:'match',q:'Match line and meaning',pairs:[['ပို','more'],['ထက်','than'],['အကောင်းဆုံး','the best'],['ပိုကြီးတယ်','is bigger']]}]},
+{id:'my_cmp_4',title:'Mix it',step:'mix',meta:'Compare everything',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'အကြီးဆုံး',o:['the biggest','bigger','big','than big'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပိုကြီးတယ်',o:['ပိုကြီးတယ်','အကြီးဆုံး','ကြီးတယ်','ပိုကောင်းတယ်'],a:0},
+{t:'mc',q:'Two mangoes; you want the sweeter one. It is…',o:['ပိုချိုတယ်','ပိုစပ်တယ်','အချိုဆုံး','ပိုပူတယ်'],a:0},
+{t:'wb',q:'Build: The teashop is the best',a:['လက်ဖက်ရည်ဆိုင်','အကောင်းဆုံး','ပါ'],pool:['လက်ဖက်ရည်ဆိုင်','အကောင်းဆုံး','ပါ','ပိုကောင်းတယ်']},
+{t:'li',q:'Listen — which one?',say:'အကောင်းဆုံး',o:['အကောင်းဆုံး','အကြီးဆုံး','ပိုကောင်းတယ်','ကောင်းတယ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ပိုကောင်းတယ်','is better'],['အကြီးဆုံး','the biggest'],['ထက်','than'],['ပို','more']]}]},
+{id:'my_cmp_5',title:'Checkpoint',step:'checkpoint',meta:'Comparisons mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is better"?',o:['ပိုကောင်းတယ်','အကောင်းဆုံး','ကောင်းတယ်','ကောင်းလား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထက်',o:['ထက်','ပို','ဆုံး','ကက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'အကောင်းဆုံး',o:['the best','better','good','the biggest'],a:0},
+{t:'wb',q:'Build: This one is bigger',a:['ဒါက','ပိုကြီးတယ်'],pool:['ဒါက','ပိုကြီးတယ်','အကြီးဆုံး']},
+{t:'mc',q:'more · than · most =',o:['ပို · ထက် · အ…ဆုံး','ထက် · ပို · အ…ဆုံး','အ…ဆုံး · ပို · ထက်','ပို · အ…ဆုံး · ထက်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ပိုကြီးတယ်','is bigger'],['ပိုကောင်းတယ်','is better'],['အကြီးဆုံး','the biggest'],['အကောင်းဆုံး','the best']]}]},
+
+/* --- Topic 5: feelings --- */
+{id:'my_feel',title:'Feelings',step:'learn',meta:'ပျော် ဝမ်းနည်း ပင်ပန်း ဆာ ကြောက်',vocab:[['ပျော်တယ်','pyaw de','is happy'],['ဝမ်းနည်းတယ်','wun neh de','is sad'],['ပင်ပန်းတယ်','pin ban de','is tired'],['ဗိုက်ဆာတယ်','baiq hsa de','is hungry'],['ရေဆာတယ်','ye hsa de','is thirsty'],['ကြောက်တယ်','kyauq de','is afraid']],ex:[
+{t:'note',tag:'How you feel',q:'ပျော် · ဝမ်းနည်း · ပင်ပန်း',body:'<p>Feelings are stative verbs too. <span class="deva">ပျော်တယ်</span> <b>pyaw de</b> happy (you met ပျော် in Zone 1!) · <span class="deva">ဝမ်းနည်းတယ်</span> <b>wun neh de</b> sad · <span class="deva">ပင်ပန်းတယ်</span> <b>pin ban de</b> tired.</p>',eg:[['ပျော်တယ်','pyaw de','is happy'],['ဝမ်းနည်းတယ်','wun neh de','is sad'],['ပင်ပန်းတယ်','pin ban de','is tired']]},
+{t:'mc',q:'Which means "is happy"?',o:['ပျော်တယ်','ဝမ်းနည်းတယ်','ပင်ပန်းတယ်','ကြောက်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ပင်ပန်းတယ်',o:['is tired','is sad','is happy','is hungry'],a:0},
+{t:'note',tag:'Belly talk',q:'ဗိုက်ဆာ · ရေဆာ · ကြောက်',body:'<p>Hungry is literally <b>belly-hungry</b>: <span class="deva">ဗိုက်ဆာတယ်</span> <b>baiq hsa de</b>. Thirsty is <b>water-hungry</b>: <span class="deva">ရေဆာတယ်</span>!</p><p>And <span class="deva">ကြောက်တယ်</span> <b>kyauq de</b> = is afraid.</p>',eg:[['ဗိုက်ဆာတယ်','baiq hsa de','is hungry'],['ရေဆာတယ်','ye hsa de','is thirsty'],['ကြောက်တယ်','kyauq de','is afraid']]},
+{t:'mc',q:'Which means "is hungry"?',o:['ဗိုက်ဆာတယ်','ရေဆာတယ်','ပင်ပန်းတယ်','ပျော်တယ်'],a:0},
+{t:'mc',q:'ရေဆာတယ် is literally…',d:'ရေဆာတယ်',o:['water-hungry = thirsty','water-cold = cool','water-good = fresh','water-big = flood'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပျော်တယ်',o:['ပျော်တယ်','ကြောက်တယ်','ပင်ပန်းတယ်','ဝမ်းနည်းတယ်'],a:0}]},
+{id:'my_feel_2',title:'Hear the feelings',step:'recognize',meta:'Spot each feeling',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဝမ်းနည်းတယ်',o:['ဝမ်းနည်းတယ်','ပျော်တယ်','ပင်ပန်းတယ်','ကြောက်တယ်'],a:0},
+{t:'mc',q:'Which means "is afraid"?',o:['ကြောက်တယ်','ကြိုက်တယ်','ပျော်တယ်','ဆာတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဗိုက်ဆာတယ်',o:['ဗိုက်ဆာတယ်','ရေဆာတယ်','ပင်ပန်းတယ်','ဝမ်းနည်းတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဝမ်းနည်းတယ်',o:['is sad','is happy','is tired','is sorry'],a:0},
+{t:'mc',q:'ကြောက်တယ် vs ကြိုက်တယ် —',o:['afraid vs like','like vs afraid','both mean like','both mean afraid'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပင်ပန်းတယ်',o:['ပင်ပန်းတယ်','ပျော်တယ်','ဗိုက်ဆာတယ်','ကြောက်တယ်'],a:0},
+{t:'mc',q:'After a long day of lessons you might say…',o:['ပင်ပန်းတယ်','ကြောက်တယ်','ဝမ်းနည်းတယ်','ရေဆာတယ်'],a:0}]},
+{id:'my_feel_3',title:'Put it together',step:'build',meta:'Say how you feel',vocab:[],ex:[
+{t:'match',q:'Match feeling and meaning',pairs:[['ပျော်တယ်','is happy'],['ဝမ်းနည်းတယ်','is sad'],['ပင်ပန်းတယ်','is tired'],['ကြောက်တယ်','is afraid']]},
+{t:'wb',q:'Build: I am hungry (man speaking)',a:['ကျွန်တော်','ဗိုက်ဆာတယ်'],pool:['ကျွန်တော်','ဗိုက်ဆာတယ်','ရေဆာတယ်']},
+{t:'mc',q:'"Not afraid" is…',o:['မကြောက်ဘူး','ကြောက်တယ်','မကြိုက်ဘူး','ကြောက်လား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရေဆာတယ်',o:['ရေဆာတယ်','ဗိုက်ဆာတယ်','ရေအေးတယ်','ပျော်တယ်'],a:0},
+{t:'wb',q:'Build: Are you tired?',a:['ပင်ပန်း','လား'],pool:['ပင်ပန်း','လား','တယ်']},
+{t:'match',q:'Match feeling and meaning',pairs:[['ဗိုက်ဆာတယ်','is hungry'],['ရေဆာတယ်','is thirsty'],['ပျော်တယ်','is happy'],['ပင်ပန်းတယ်','is tired']]}]},
+{id:'my_feel_4',title:'Mix it',step:'mix',meta:'Feelings in sentences',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ကြောက်တယ်',o:['is afraid','likes','is tired','is sad'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပျော်တယ်',o:['ပျော်တယ်','ပင်ပန်းတယ်','ကြောက်တယ်','ဝမ်းနည်းတယ်'],a:0},
+{t:'mc',q:'Lunchtime! Your stomach growls:',o:['ဗိုက်ဆာတယ်','ရေဆာတယ်','ပင်ပန်းတယ်','ဝမ်းနည်းတယ်'],a:0},
+{t:'wb',q:'Build: I am thirsty (woman speaking)',a:['ကျွန်မ','ရေဆာတယ်'],pool:['ကျွန်မ','ရေဆာတယ်','ဗိုက်ဆာတယ်']},
+{t:'li',q:'Listen — which one?',say:'ကြောက်တယ်',o:['ကြောက်တယ်','ကြိုက်တယ်','ပျော်တယ်','ကောင်းတယ်'],a:0},
+{t:'match',q:'Match feeling and meaning',pairs:[['ပျော်တယ်','is happy'],['ဝမ်းနည်းတယ်','is sad'],['ရေဆာတယ်','is thirsty'],['ကြောက်တယ်','is afraid']]}]},
+{id:'my_feel_5',title:'Checkpoint',step:'checkpoint',meta:'Feelings mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is sad"?',o:['ဝမ်းနည်းတယ်','ပျော်တယ်','ပင်ပန်းတယ်','ကြောက်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပင်ပန်းတယ်',o:['ပင်ပန်းတယ်','ပျော်တယ်','ဝမ်းနည်းတယ်','ဗိုက်ဆာတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဗိုက်ဆာတယ်',o:['is hungry','is thirsty','stomach hurts','is full'],a:0},
+{t:'wb',q:'Build: I am happy (man speaking)',a:['ကျွန်တော်','ပျော်တယ်'],pool:['ကျွန်တော်','ပျော်တယ်','ဝမ်းနည်းတယ်']},
+{t:'mc',q:'Thirsty is literally…',o:['water-hungry','belly-empty','mouth-dry','tea-wanting'],a:0},
+{t:'match',q:'Match feeling and meaning',pairs:[['ပျော်တယ်','is happy'],['ပင်ပန်းတယ်','is tired'],['ဗိုက်ဆာတယ်','is hungry'],['ကြောက်တယ်','is afraid']]}]},
+
+/* --- Topic 6: weather & the three seasons --- */
+{id:'my_wx',title:'Weather & seasons',step:'learn',meta:'မိုး နေ လေ + ရာသီ',vocab:[['မိုး','mo','rain'],['မိုးရွာတယ်','mo ywa de','it is raining'],['နေပူတယ်','ne pu de','it is sunny & hot'],['လေ','lei','wind'],['နွေရာသီ','nwei yathi','the hot season'],['မိုးရာသီ','mo yathi','the rainy season'],['ဆောင်းရာသီ','hsaung yathi','the cool season']],ex:[
+{t:'note',tag:'Sky talk',q:'မိုး · နေ · လေ',body:'<p><span class="deva">မိုး</span> <b>mo</b> = rain (and the sky). <span class="deva">မိုးရွာတယ်</span> — it is raining. <span class="deva">နေ</span> — the sun, same word as "stay"! — gives <span class="deva">နေပူတယ်</span> — sunny and hot. <span class="deva">လေ</span> <b>lei</b> = wind.</p>',eg:[['မိုးရွာတယ်','mo ywa de','it is raining'],['နေပူတယ်','ne pu de','sunny & hot'],['လေ','lei','wind']]},
+{t:'mc',q:'Which means "it is raining"?',o:['မိုးရွာတယ်','နေပူတယ်','လေ','မိုးရာသီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'နေပူတယ်',o:['it is sunny & hot','it is raining','it is windy','it is cool'],a:0},
+{t:'note',tag:'Three seasons',q:'ရာသီ',body:'<p>Myanmar has <b>three</b> seasons (<span class="deva">ရာသီ</span> <b>yathi</b>): <span class="deva">နွေရာသီ</span> the hot season (Mar–May) · <span class="deva">မိုးရာသီ</span> the rainy season (Jun–Oct) · <span class="deva">ဆောင်းရာသီ</span> the cool season (Nov–Feb).</p>',eg:[['နွေရာသီ','nwei yathi','hot season'],['မိုးရာသီ','mo yathi','rainy season'],['ဆောင်းရာသီ','hsaung yathi','cool season']]},
+{t:'mc',q:'How many seasons does Myanmar have?',o:['three','four','two','five'],a:0},
+{t:'mc',q:'What does this mean?',d:'မိုးရာသီ',o:['the rainy season','the hot season','the cool season','the rain'],a:0},
+{t:'li',q:'Listen — which one?',say:'မိုးရွာတယ်',o:['မိုးရွာတယ်','နေပူတယ်','မိုးရာသီ','လေ'],a:0}]},
+{id:'my_wx_2',title:'Hear the weather',step:'recognize',meta:'Spot rain, sun & wind',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'မိုး',o:['မိုး','လေ','နေ','မို့'],a:0},
+{t:'mc',q:'Which means "wind"?',o:['လေ','မိုး','နေ','ရာသီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'နေပူတယ်',o:['နေပူတယ်','မိုးရွာတယ်','ပူတယ်','နေကောင်းတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဆောင်းရာသီ',o:['the cool season','the hot season','the rainy season','the windy day'],a:0},
+{t:'mc',q:'June to October in Myanmar is…',o:['မိုးရာသီ','နွေရာသီ','ဆောင်းရာသီ','စနေ'],a:0},
+{t:'li',q:'Listen — which one?',say:'နွေရာသီ',o:['နွေရာသီ','မိုးရာသီ','ဆောင်းရာသီ','ရာသီ'],a:0},
+{t:'mc',q:'နေ means the sun and also…',o:['stay / live','rain','wind','cold'],a:0}]},
+{id:'my_wx_3',title:'Put it together',step:'build',meta:'Talk about the sky',vocab:[],ex:[
+{t:'match',q:'Match weather and meaning',pairs:[['မိုးရွာတယ်','it is raining'],['နေပူတယ်','sunny & hot'],['လေ','wind'],['မိုး','rain']]},
+{t:'wb',q:'Build: It is raining today — today rain falls',a:['ဒီနေ့','မိုးရွာတယ်'],pool:['ဒီနေ့','မိုးရွာတယ်','နေပူတယ်']},
+{t:'mc',q:'"Is it raining?" is…',o:['မိုးရွာလား','မိုးရွာတယ်','မိုးရာသီလား','နေပူလား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆောင်းရာသီ',o:['ဆောင်းရာသီ','နွေရာသီ','မိုးရာသီ','ဆောင်း'],a:0},
+{t:'wb',q:'Build: The hot season is very hot — hot-season hots',a:['နွေရာသီ','ပူတယ်'],pool:['နွေရာသီ','ပူတယ်','အေးတယ်']},
+{t:'match',q:'Match season and time',pairs:[['နွေရာသီ','hot season'],['မိုးရာသီ','rainy season'],['ဆောင်းရာသီ','cool season'],['ရာသီ','season']]}]},
+{id:'my_wx_4',title:'Mix it',step:'mix',meta:'All weathers',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'မိုးရွာတယ်',o:['it is raining','it is sunny','it is windy','the rainy season'],a:0},
+{t:'li',q:'Listen — which one?',say:'လေ',o:['လေ','လေး','မိုး','နေ'],a:0},
+{t:'mc',q:'Grey sky, first drops. You grab an umbrella:',o:['မိုးရွာတယ်','နေပူတယ်','ဆောင်းရာသီ','လေ'],a:0},
+{t:'wb',q:'Build: The cool season is cold',a:['ဆောင်းရာသီ','အေးတယ်'],pool:['ဆောင်းရာသီ','အေးတယ်','ပူတယ်']},
+{t:'li',q:'Listen — which one?',say:'မိုးရာသီ',o:['မိုးရာသီ','နွေရာသီ','ဆောင်းရာသီ','မိုးရွာတယ်'],a:0},
+{t:'match',q:'Match weather and meaning',pairs:[['နေပူတယ်','sunny & hot'],['မိုးရွာတယ်','it is raining'],['နွေရာသီ','hot season'],['ဆောင်းရာသီ','cool season']]}]},
+{id:'my_wx_5',title:'Checkpoint',step:'checkpoint',meta:'Weather mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "rain"?',o:['မိုး','လေ','နေ','ရာသီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'နေပူတယ်',o:['နေပူတယ်','မိုးရွာတယ်','ပူတယ်','နွေရာသီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'နွေရာသီ',o:['the hot season','the rainy season','the cool season','the sunny day'],a:0},
+{t:'mc',q:'Myanmar’s three seasons are…',o:['hot · rainy · cool','spring · summer · autumn','wet · dry · windy','hot · cold · mild'],a:0},
+{t:'li',q:'Listen — which one?',say:'မိုးရွာတယ်',o:['မိုးရွာတယ်','မိုးရာသီ','မိုး','နေပူတယ်'],a:0},
+{t:'match',q:'Match weather and meaning',pairs:[['မိုး','rain'],['လေ','wind'],['မိုးရွာတယ်','it is raining'],['မိုးရာသီ','rainy season']]}]},
+
+/* --- Topic 7: body & health --- */
+{id:'my_body',title:'Body & health',step:'learn',meta:'ခေါင်း ဗိုက် နာ ဆေး ဆရာဝန်',vocab:[['ခေါင်း','gaung','head'],['ဗိုက်','baiq','stomach / belly'],['ခေါင်းကိုက်တယ်','gaung kaiq de','have a headache'],['ဗိုက်နာတယ်','baiq na de','stomach hurts'],['ဆေး','hsei','medicine'],['ဆရာဝန်','hsaya wun','doctor'],['နေမကောင်းဘူး','ne ma kaung bu','not feeling well']],ex:[
+{t:'note',tag:'Where it hurts',q:'ခေါင်း · ဗိုက် + ကိုက်/နာ',body:'<p><span class="deva">ခေါင်း</span> <b>gaung</b> = head · <span class="deva">ဗိုက်</span> <b>baiq</b> = belly (you know it from ဗိုက်ဆာတယ်!).</p><p>Pain: <span class="deva">ခေါင်းကိုက်တယ်</span> headache (ကိုက် = ache/bite) · <span class="deva">ဗိုက်နာတယ်</span> stomach hurts (နာ = hurt).</p>',eg:[['ခေါင်းကိုက်တယ်','gaung kaiq de','headache'],['ဗိုက်နာတယ်','baiq na de','stomach hurts']]},
+{t:'mc',q:'Which means "head"?',o:['ခေါင်း','ဗိုက်','ဆေး','ကောင်း'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခေါင်းကိုက်တယ်',o:['have a headache','stomach hurts','feel dizzy','head is big'],a:0},
+{t:'note',tag:'Getting help',q:'ဆေး · ဆရာဝန် · နေမကောင်းဘူး',body:'<p><span class="deva">ဆေး</span> <b>hsei</b> = medicine · <span class="deva">ဆရာဝန်</span> <b>hsaya wun</b> = doctor (a respected ဆရာ!).</p><p>And the all-purpose "I am unwell": <span class="deva">နေမကောင်းဘူး</span> — the exact flip of <span class="deva">နေကောင်းလား</span> from your very first lesson.</p>',eg:[['ဆေး','hsei','medicine'],['ဆရာဝန်','hsaya wun','doctor'],['နေမကောင်းဘူး','ne ma kaung bu','not feeling well']]},
+{t:'mc',q:'Which means "medicine"?',o:['ဆေး','ဈေး','ဆရာဝန်','ခေါင်း'],a:0},
+{t:'mc',q:'What does this mean?',d:'နေမကောင်းဘူး',o:['not feeling well','feeling great','not staying home','the weather is bad'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆရာဝန်',o:['ဆရာဝန်','ဆရာ','ဆရာမ','ဆေး'],a:0}]},
+{id:'my_body_2',title:'Hear the aches',step:'recognize',meta:'Spot the health words',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ခေါင်း',o:['ခေါင်း','ဗိုက်','ကောင်း','ခေါင်းကိုက်တယ်'],a:0},
+{t:'mc',q:'Which means "stomach hurts"?',o:['ဗိုက်နာတယ်','ခေါင်းကိုက်တယ်','ဗိုက်ဆာတယ်','နေမကောင်းဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆေး',o:['ဆေး','ဈေး','ဆယ်','ဆိုင်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဆရာဝန်',o:['doctor','teacher','nurse','medicine'],a:0},
+{t:'mc',q:'ဗိုက်ဆာတယ် vs ဗိုက်နာတယ် —',o:['hungry vs stomach-ache','stomach-ache vs hungry','both hungry','both hurt'],a:0},
+{t:'li',q:'Listen — which one?',say:'နေမကောင်းဘူး',o:['နေမကောင်းဘူး','နေကောင်းပါတယ်','နေကောင်းလား','မကောင်းဘူး'],a:0},
+{t:'mc',q:'ဆေး (medicine) vs ဈေး (market) differ in…',o:['the first letter — hs vs z','nothing','the vowel','the tone only'],a:0}]},
+{id:'my_body_3',title:'Put it together',step:'build',meta:'Explain what hurts',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ခေါင်း','head'],['ဗိုက်','stomach'],['ဆေး','medicine'],['ဆရာဝန်','doctor']]},
+{t:'wb',q:'Build: I have a headache (man speaking)',a:['ကျွန်တော်','ခေါင်းကိုက်တယ်'],pool:['ကျွန်တော်','ခေါင်းကိုက်တယ်','ဗိုက်နာတယ်']},
+{t:'mc',q:'You feel awful. Tell your friend…',o:['နေမကောင်းဘူး','နေကောင်းပါတယ်','ကောင်းတယ်','ပျော်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဗိုက်နာတယ်',o:['ဗိုက်နာတယ်','ဗိုက်ဆာတယ်','ခေါင်းကိုက်တယ်','နာတယ်'],a:0},
+{t:'wb',q:'Build: Medicine, please',a:['ဆေး','ပေးပါ'],pool:['ဆေး','ပေးပါ','ဈေး']},
+{t:'match',q:'Match line and meaning',pairs:[['ခေါင်းကိုက်တယ်','headache'],['ဗိုက်နာတယ်','stomach hurts'],['နေမကောင်းဘူး','not feeling well'],['ဆေး','medicine']]}]},
+{id:'my_body_4',title:'Mix it',step:'mix',meta:'A visit to the doctor',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဗိုက်နာတယ်',o:['stomach hurts','is hungry','head aches','is unwell'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခေါင်းကိုက်တယ်',o:['ခေါင်းကိုက်တယ်','ဗိုက်နာတယ်','ခေါင်း','ကိုက်တယ်'],a:0},
+{t:'mc',q:'Who do you see when ဆေး is not enough?',o:['ဆရာဝန်','ဆရာ','အစ်ကို','ဒေါ်'],a:0},
+{t:'wb',q:'Build: I am not feeling well (woman speaking)',a:['ကျွန်မ','နေမကောင်းဘူး'],pool:['ကျွန်မ','နေမကောင်းဘူး','နေကောင်းပါတယ်']},
+{t:'li',q:'Listen — which one?',say:'ဗိုက်',o:['ဗိုက်','ခေါင်း','ဆေး','ကိုက်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဗိုက်','stomach'],['ခေါင်း','head'],['ဆရာဝန်','doctor'],['နေမကောင်းဘူး','not feeling well']]}]},
+{id:'my_body_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 6 complete!',vocab:[],ex:[
+{t:'mc',q:'Which means "doctor"?',o:['ဆရာဝန်','ဆရာမ','ဆေး','ဦး'],a:0},
+{t:'li',q:'Listen — which one?',say:'နေမကောင်းဘူး',o:['နေမကောင်းဘူး','နေကောင်းလား','မကောင်းဘူး','နေကောင်းပါတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဆေး',o:['medicine','market','shop','pain'],a:0},
+{t:'wb',q:'Build: My head aches — head bites',a:['ခေါင်း','ကိုက်တယ်'],pool:['ခေါင်း','ကိုက်တယ်','နာတယ်']},
+{t:'mc',q:'The flip of နေကောင်းလား when you are ill:',o:['နေမကောင်းဘူး','နေကောင်းပါတယ်','မသိဘူး','ဝမ်းနည်းတယ်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ခေါင်း','head'],['ဗိုက်','stomach'],['ဆေး','medicine'],['ဆရာဝန်','doctor']]}]},
 ];
 
 /* ---------- per-language art (secular: dramatic Hpa-an-style karst limestone
