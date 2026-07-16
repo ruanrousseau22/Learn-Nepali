@@ -274,6 +274,20 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
+- **Scaffolds live for the next four languages (July 2026):** Sinhala (`si`),
+  Lao (`lo`), Pashto (`ps`), Mongolian (`mn`) — `lang/<code>.js` packs with
+  EMPTY lessons/units/alphabet, full secular art (hero/band/mascot: Sri Lanka
+  tea-coast + leopard cub; Mekong karsts + baby buffalo; Hindu Kush + markhor
+  kid; steppe gers + foal), catalog entries labeled "· coming soon", flags in
+  `LANG_FLAGS`, CSS palettes, fonts (Noto Sans Sinhala/Lao/Arabic in every
+  script font stack), and empty `audio-<code>/manifest.json`. The engine shows
+  a `comingSoonHTML()` card on the Learn path & Alphabet pages while a pack
+  has no lessons/letters (guards in `buildPath`/`buildAlpha`). NO Course
+  entries in the JSON-LD yet — add them (plus title/keywords) only when each
+  course actually ships. **Pashto is right-to-left** — word banks/fills need
+  an RTL pass before its Zone 1. Building one out = fill the pack arrays the
+  way Burmese was built (research-first, zone by zone), then remove nothing:
+  the coming-soon states vanish on their own once lessons exist.
 - **Burmese (`lang/my.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
   (July 2026, staged A–E). Zone 1 "The Script"; Zone 2 "Foundations";
   Zone 3 "Say a sentence" (ဒါ/အဲဒါ/ဟိုဟာ + ပါ, verbs + …တယ်, future …မယ်,
