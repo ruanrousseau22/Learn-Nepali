@@ -17,9 +17,11 @@ const MY_UNITS=[
   {n:4,t:'Where & with',d:'The little particles မှာ ကို က နဲ့ & real life',lessons:['my_hma','my_hma_2','my_hma_3','my_hma_4','my_hma_5','my_ko','my_ko_2','my_ko_3','my_ko_4','my_ko_5','my_ka','my_ka_2','my_ka_3','my_ka_4','my_ka_5','my_neh','my_neh_2','my_neh_3','my_neh_4','my_neh_5','my_kin','my_kin_2','my_kin_3','my_kin_4','my_kin_5','my_food','my_food_2','my_food_3','my_food_4','my_food_5','my_shop','my_shop_2','my_shop_3','my_shop_4','my_shop_5']},
   {n:5,t:'How many',d:'Counters, kyat, bargaining, time & the week',lessons:['my_clf','my_clf_2','my_clf_3','my_clf_4','my_clf_5','my_hownum','my_hownum_2','my_hownum_3','my_hownum_4','my_hownum_5','my_money','my_money_2','my_money_3','my_money_4','my_money_5','my_bignum','my_bignum_2','my_bignum_3','my_bignum_4','my_bignum_5','my_buy','my_buy_2','my_buy_3','my_buy_4','my_buy_5','my_time','my_time_2','my_time_3','my_time_4','my_time_5','my_days','my_days_2','my_days_3','my_days_4','my_days_5']},
   {n:6,t:'Describe it',d:'Adjectives, colors, feelings, weather & health',lessons:['my_adj','my_adj_2','my_adj_3','my_adj_4','my_adj_5','my_taste','my_taste_2','my_taste_3','my_taste_4','my_taste_5','my_color','my_color_2','my_color_3','my_color_4','my_color_5','my_cmp','my_cmp_2','my_cmp_3','my_cmp_4','my_cmp_5','my_feel','my_feel_2','my_feel_3','my_feel_4','my_feel_5','my_wx','my_wx_2','my_wx_3','my_wx_4','my_wx_5','my_body','my_body_2','my_body_3','my_body_4','my_body_5']},
+  {n:7,t:'Then & now',d:'Past ခဲ့, right-now နေ, ever ဖူး, can & must',lessons:['my_past','my_past_2','my_past_3','my_past_4','my_past_5','my_prog','my_prog_2','my_prog_3','my_prog_4','my_prog_5','my_ever','my_ever_2','my_ever_3','my_ever_4','my_ever_5','my_pri','my_pri_2','my_pri_3','my_pri_4','my_pri_5','my_can','my_can_2','my_can_3','my_can_4','my_can_5','my_must','my_must_2','my_must_3','my_must_4','my_must_5','my_req','my_req_2','my_req_3','my_req_4','my_req_5']},
+  {n:8,t:'Out & about',d:'Rides, directions, tickets, hotel & the calendar',lessons:['my_go','my_go_2','my_go_3','my_go_4','my_go_5','my_dir','my_dir_2','my_dir_3','my_dir_4','my_dir_5','my_farnear','my_farnear_2','my_farnear_3','my_farnear_4','my_farnear_5','my_tik','my_tik_2','my_tik_3','my_tik_4','my_tik_5','my_hotel','my_hotel_2','my_hotel_3','my_hotel_4','my_hotel_5','my_month','my_month_2','my_month_3','my_month_4','my_month_5','my_phone','my_phone_2','my_phone_3','my_phone_4','my_phone_5']},
 ];
 
-const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်',my_clf:'ယောက်',my_hownum:'ဘယ်နှ',my_money:'ကျပ်',my_bignum:'ထောင်',my_buy:'ဝယ်',my_time:'နာရီ',my_days:'စနေ',my_adj:'ကြီး',my_taste:'ပူ',my_color:'အနီ',my_cmp:'ပို',my_feel:'ပျော်',my_wx:'မိုး',my_body:'ဆေး'};
+const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်',my_clf:'ယောက်',my_hownum:'ဘယ်နှ',my_money:'ကျပ်',my_bignum:'ထောင်',my_buy:'ဝယ်',my_time:'နာရီ',my_days:'စနေ',my_adj:'ကြီး',my_taste:'ပူ',my_color:'အနီ',my_cmp:'ပို',my_feel:'ပျော်',my_wx:'မိုး',my_body:'ဆေး',my_past:'ခဲ့',my_prog:'နေတယ်',my_ever:'ဖူး',my_pri:'ပြီ',my_can:'နိုင်',my_must:'ရမယ်',my_req:'ပါ',my_go:'ကား',my_dir:'ညာ',my_farnear:'ဝေး',my_tik:'ဘူတာ',my_hotel:'အခန်း',my_month:'လ',my_phone:'ဖုန်း'};
 
 const MY_VOWELS=[['အာ','aa'],['အိ','i'],['အီ','ii'],['အု','u'],['အူ','uu'],['အေ','e'],['အဲ','eh'],['အော','aw'],['အို','o'],['အံ','an']];
 /* full traditional 33 for the Alphabet reference. Several are rare Pali-only
@@ -1676,6 +1678,561 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: My head aches — head bites',a:['ခေါင်း','ကိုက်တယ်'],pool:['ခေါင်း','ကိုက်တယ်','နာတယ်']},
 {t:'mc',q:'The flip of နေကောင်းလား when you are ill:',o:['နေမကောင်းဘူး','နေကောင်းပါတယ်','မသိဘူး','ဝမ်းနည်းတယ်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ခေါင်း','head'],['ဗိုက်','stomach'],['ဆေး','medicine'],['ဆရာဝန်','doctor']]}]},
+
+/* ===================== ZONE 7 · THEN & NOW =====================
+   Time-depth & ability: past ခဲ့, happening-now နေ, ever ဖူး, already ပြီ,
+   can နိုင် vs know-how တတ်, must ရ, polite requests verb+ပါ.
+   Per Wikipedia Burmese grammar (verb particles) & Mesher L7 (have-ever). */
+/* --- Topic 1: the past with ခဲ့ --- */
+{id:'my_past',title:'Back then: ခဲ့',step:'learn',meta:'သွားခဲ့တယ် — yesterday & before',vocab:[['သွားခဲ့တယ်','thwa geh de','went'],['စားခဲ့တယ်','sa geh de','ate'],['လာခဲ့တယ်','la geh de','came'],['ဝယ်ခဲ့တယ်','weh geh de','bought'],['မနေ့ကသွားခဲ့တယ်','ma neh ga thwa geh de','went yesterday']],ex:[
+{t:'note',tag:'Zone 7',q:'Time travel with ခဲ့',body:'<p>Here is a relief: <span class="deva">တယ်</span> already covers the past — <span class="deva">မနေ့က စားတယ်</span> "ate yesterday" is fine. But Burmese loves to mark "back then, over there" with <span class="deva">ခဲ့</span> <b>geh</b> slotted before the ending: <span class="deva">သွားခဲ့တယ်</span> — went.</p><p>It slots exactly where ချင် goes: verb + ခဲ့ + တယ်.</p>',eg:[['သွားခဲ့တယ်','thwa geh de','went'],['စားခဲ့တယ်','sa geh de','ate']]},
+{t:'mc',q:'Which means "went"?',o:['သွားခဲ့တယ်','သွားတယ်','သွားမယ်','သွားချင်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'စားခဲ့တယ်',o:['ate','will eat','is eating','wants to eat'],a:0},
+{t:'note',tag:'With yesterday',q:'မနေ့က + ခဲ့',body:'<p>Pair it with <span class="deva">မနေ့က</span> (yesterday — note the "from" particle က hiding in it!): <span class="deva">မနေ့ကသွားခဲ့တယ်</span> — "(I) went yesterday."</p><p>The negative wraps as always: <span class="deva">မသွားခဲ့ဘူး</span> — did not go.</p>',eg:[['မနေ့ကသွားခဲ့တယ်','ma neh ga thwa geh de','went yesterday'],['ဝယ်ခဲ့တယ်','weh geh de','bought']]},
+{t:'mc',q:'Which means "bought"?',o:['ဝယ်ခဲ့တယ်','ဝယ်တယ်','ဝယ်မယ်','ရောင်းတယ်'],a:0},
+{t:'mc',q:'"Did not go" is…',o:['မသွားခဲ့ဘူး','သွားခဲ့တယ်','မသွားဘူးခဲ့','သွားမယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'သွားခဲ့တယ်',o:['သွားခဲ့တယ်','သွားတယ်','စားခဲ့တယ်','လာခဲ့တယ်'],a:0}]},
+{id:'my_past_2',title:'Hear the past',step:'recognize',meta:'Then or now?',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'စားခဲ့တယ်',o:['စားခဲ့တယ်','စားတယ်','သွားခဲ့တယ်','ဝယ်ခဲ့တယ်'],a:0},
+{t:'mc',q:'Which means "came"?',o:['လာခဲ့တယ်','လာတယ်','လာမယ်','သွားခဲ့တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဝယ်ခဲ့တယ်',o:['ဝယ်ခဲ့တယ်','ဝယ်တယ်','သွားခဲ့တယ်','ရောင်းတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မနေ့ကသွားခဲ့တယ်',o:['went yesterday','will go tomorrow','goes today','went last year'],a:0},
+{t:'mc',q:'ခဲ့ slots in…',o:['between the verb and its ending','at the very start','after တယ်','before the subject'],a:0},
+{t:'li',q:'Listen — which one?',say:'လာခဲ့တယ်',o:['လာခဲ့တယ်','လာတယ်','စားခဲ့တယ်','သွားခဲ့တယ်'],a:0},
+{t:'mc',q:'မနေ့က hides which little particle?',o:['က (from)','ကို (to)','မှာ (at)','နဲ့ (with)'],a:0}]},
+{id:'my_past_3',title:'Put it together',step:'build',meta:'Tell what happened',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['သွားခဲ့တယ်','went'],['စားခဲ့တယ်','ate'],['လာခဲ့တယ်','came'],['ဝယ်ခဲ့တယ်','bought']]},
+{t:'wb',q:'Build: (I) went to the market yesterday',a:['မနေ့က','ဈေး','ကို','သွားခဲ့တယ်'],pool:['မနေ့က','ဈေး','ကို','သွားခဲ့တယ်','သွားမယ်']},
+{t:'mc',q:'Turn ဝယ်တယ် into "bought":',o:['ဝယ်ခဲ့တယ်','ဝယ်မယ်','ဝယ်ချင်တယ်','မဝယ်ဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'မနေ့ကသွားခဲ့တယ်',o:['မနေ့ကသွားခဲ့တယ်','သွားခဲ့တယ်','မနေ့က','သွားတယ်'],a:0},
+{t:'wb',q:'Build: (She) ate fish curry yesterday',a:['မနေ့က','ငါးဟင်း','စားခဲ့တယ်'],pool:['မနေ့က','ငါးဟင်း','စားခဲ့တယ်','စားမယ်']},
+{t:'match',q:'Match time and line',pairs:[['မနေ့က','yesterday'],['ဒီနေ့','today'],['မနက်ဖြန်','tomorrow'],['သွားခဲ့တယ်','went']]}]},
+{id:'my_past_4',title:'Mix it',step:'mix',meta:'Past, present & future',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'လာခဲ့တယ်',o:['came','will come','comes','wants to come'],a:0},
+{t:'li',q:'Listen — which one?',say:'သွားတယ်',o:['သွားတယ်','သွားခဲ့တယ်','သွားမယ်','လာတယ်'],a:0},
+{t:'mc',q:'Yesterday, today, tomorrow — went, go, will go:',o:['သွားခဲ့တယ် · သွားတယ် · သွားမယ်','သွားမယ် · သွားတယ် · သွားခဲ့တယ်','သွားတယ် · သွားမယ် · သွားခဲ့တယ်','all သွားတယ်'],a:0},
+{t:'wb',q:'Build: (He) bought fruit yesterday',a:['မနေ့က','သစ်သီး','ဝယ်ခဲ့တယ်'],pool:['မနေ့က','သစ်သီး','ဝယ်ခဲ့တယ်','ဝယ်မယ်']},
+{t:'li',q:'Listen — which one?',say:'စားခဲ့တယ်',o:['စားခဲ့တယ်','စားမယ်','ဝယ်ခဲ့တယ်','စားချင်တယ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['သွားခဲ့တယ်','went'],['သွားတယ်','go'],['သွားမယ်','will go'],['မသွားခဲ့ဘူး','did not go']]}]},
+{id:'my_past_5',title:'Checkpoint',step:'checkpoint',meta:'The past mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "ate"?',o:['စားခဲ့တယ်','စားတယ်','စားမယ်','စားနေတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဝယ်ခဲ့တယ်',o:['ဝယ်ခဲ့တယ်','ဝယ်တယ်','လာခဲ့တယ်','စားခဲ့တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မနေ့ကသွားခဲ့တယ်',o:['went yesterday','going today','will go tomorrow','never went'],a:0},
+{t:'wb',q:'Build: (I) came yesterday',a:['မနေ့က','လာခဲ့တယ်'],pool:['မနေ့က','လာခဲ့တယ်','လာမယ်']},
+{t:'mc',q:'The past marker that slots before တယ် is…',o:['ခဲ့','ချင်','နေ','ဖူး'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['စားခဲ့တယ်','ate'],['လာခဲ့တယ်','came'],['ဝယ်ခဲ့တယ်','bought'],['သွားခဲ့တယ်','went']]}]},
+
+/* --- Topic 2: happening now with နေ --- */
+{id:'my_prog',title:'Right now: နေ',step:'learn',meta:'စားနေတယ် — in the middle of it',vocab:[['စားနေတယ်','sa ne de','is eating'],['လုပ်နေတယ်','louq ne de','is doing / working'],['လာနေတယ်','la ne de','is coming'],['မိုးရွာနေတယ်','mo ywa ne de','it is raining (right now)'],['ဘာလုပ်နေလဲ','ba louq ne leh','what are you doing?']],ex:[
+{t:'note',tag:'Caught in the act',q:'verb + နေ + တယ်',body:'<p>Remember <span class="deva">နေ</span> = stay? Slot it after a verb and the action is <b>going on right now</b>: <span class="deva">စားနေတယ်</span> — is eating (literally "eat-staying").</p><p><span class="deva">မိုးရွာနေတယ်</span> — it is raining, right now, look out the window.</p>',eg:[['စားနေတယ်','sa ne de','is eating'],['မိုးရွာနေတယ်','mo ywa ne de','raining right now']]},
+{t:'mc',q:'Which means "is eating (now)"?',o:['စားနေတယ်','စားတယ်','စားခဲ့တယ်','စားမယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လုပ်နေတယ်',o:['is doing / working','did','will do','must do'],a:0},
+{t:'note',tag:'The classic question',q:'ဘာလုပ်နေလဲ',body:'<p>Now you can ask the most Burmese of questions: <span class="deva">ဘာလုပ်နေလဲ</span> <b>ba louq ne leh</b> — "What are you doing?"</p><p>Answer with any verb + နေတယ်: <span class="deva">ထမင်းစားနေတယ်</span> — eating!</p>',eg:[['ဘာလုပ်နေလဲ','ba louq ne leh','what are you doing?'],['လာနေတယ်','la ne de','is coming']]},
+{t:'mc',q:'How do you ask "What are you doing?"',o:['ဘာလုပ်နေလဲ','ဘာစားမလဲ','ဘယ်မှာလဲ','ဘာလဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'မိုးရွာနေတယ်',o:['it is raining right now','it rained','it will rain','the rainy season'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘာလုပ်နေလဲ',o:['ဘာလုပ်နေလဲ','လုပ်နေတယ်','ဘာစားမလဲ','ဘယ်သူလဲ'],a:0}]},
+{id:'my_prog_2',title:'Hear it happening',step:'recognize',meta:'Now or in general?',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'စားနေတယ်',o:['စားနေတယ်','စားတယ်','စားခဲ့တယ်','လုပ်နေတယ်'],a:0},
+{t:'mc',q:'Which means "is coming"?',o:['လာနေတယ်','လာတယ်','လာခဲ့တယ်','လာမယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'မိုးရွာနေတယ်',o:['မိုးရွာနေတယ်','မိုးရွာတယ်','မိုးရာသီ','နေပူတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘာလုပ်နေလဲ',o:['what are you doing?','what did you do?','what will you do?','where are you?'],a:0},
+{t:'mc',q:'The right-now marker နေ is the same word as…',o:['stay / live','sun','rain','go'],a:0},
+{t:'li',q:'Listen — which one?',say:'လုပ်နေတယ်',o:['လုပ်နေတယ်','လုပ်တယ်','စားနေတယ်','လာနေတယ်'],a:0},
+{t:'mc',q:'စားနေတယ် is literally…',o:['eat-staying','eat-going','eat-wanting','eat-finished'],a:0}]},
+{id:'my_prog_3',title:'Put it together',step:'build',meta:'Say what is happening',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['စားနေတယ်','is eating'],['လုပ်နေတယ်','is working'],['လာနေတယ်','is coming'],['မိုးရွာနေတယ်','raining right now']]},
+{t:'wb',q:'Build: What are you doing?',a:['ဘာ','လုပ်နေ','လဲ'],pool:['ဘာ','လုပ်နေ','လဲ','လား']},
+{t:'mc',q:'Someone asks ဘာလုပ်နေလဲ while you eat. Reply…',o:['ထမင်းစားနေတယ်','ထမင်းစားမယ်','ထမင်းစားခဲ့တယ်','မစားဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'လာနေတယ်',o:['လာနေတယ်','လာတယ်','လုပ်နေတယ်','စားနေတယ်'],a:0},
+{t:'wb',q:'Build: He is eating a meal now',a:['သူ','ထမင်း','စားနေတယ်'],pool:['သူ','ထမင်း','စားနေတယ်','စားခဲ့တယ်']},
+{t:'match',q:'Match line and meaning',pairs:[['ဘာလုပ်နေလဲ','what are you doing?'],['စားနေတယ်','is eating'],['မိုးရွာနေတယ်','raining right now'],['လုပ်နေတယ်','is working']]}]},
+{id:'my_prog_4',title:'Mix it',step:'mix',meta:'ခဲ့ and နေ together',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'လာနေတယ်',o:['is coming','came','will come','comes sometimes'],a:0},
+{t:'li',q:'Listen — which one?',say:'မိုးရွာနေတယ်',o:['မိုးရွာနေတယ်','မိုးရွာတယ်','နေပူတယ်','မိုးရာသီ'],a:0},
+{t:'mc',q:'Phone rings mid-meal. "I am eating!" =',o:['စားနေတယ်','စားခဲ့တယ်','စားမယ်','စားချင်တယ်'],a:0},
+{t:'wb',q:'Build: It is raining right now — rain falls-staying',a:['မိုး','ရွာနေတယ်'],pool:['မိုး','ရွာနေတယ်','ရွာခဲ့တယ်']},
+{t:'li',q:'Listen — which one?',say:'စားခဲ့တယ်',o:['စားခဲ့တယ်','စားနေတယ်','စားတယ်','လုပ်နေတယ်'],a:0},
+{t:'match',q:'Match marker and meaning',pairs:[['ခဲ့','back then'],['နေ','right now'],['မယ်','future'],['ချင်','want to']]}]},
+{id:'my_prog_5',title:'Checkpoint',step:'checkpoint',meta:'Right now mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is working"?',o:['လုပ်နေတယ်','လုပ်တယ်','လုပ်ခဲ့တယ်','လုပ်မယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘာလုပ်နေလဲ',o:['ဘာလုပ်နေလဲ','ဘာစားမလဲ','လုပ်နေတယ်','ဘယ်မှာလဲ'],a:0},
+{t:'mc',q:'What does this mean?',d:'စားနေတယ်',o:['is eating','ate','will eat','eats daily'],a:0},
+{t:'wb',q:'Build: She is coming now',a:['သူ','လာနေတယ်'],pool:['သူ','လာနေတယ်','လာခဲ့တယ်']},
+{t:'mc',q:'"In the middle of doing it" slots which word before တယ်?',o:['နေ','ခဲ့','ဖူး','ရ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['စားနေတယ်','is eating'],['လာနေတယ်','is coming'],['လုပ်နေတယ်','is working'],['ဘာလုပ်နေလဲ','what are you doing?']]}]},
+
+/* --- Topic 3: ever / have-you-ever ဖူး --- */
+{id:'my_ever',title:'Ever done it? ဖူး',step:'learn',meta:'သွားဖူးတယ် — life experience',vocab:[['သွားဖူးတယ်','thwa hpu de','have been (there)'],['စားဖူးတယ်','sa hpu de','have eaten / tried'],['မစားဖူးဘူး','ma sa hpu bu','have never eaten'],['ရန်ကုန်ကိုသွားဖူးလား','yangoun go thwa hpu la','have you ever been to Yangon?'],['တစ်ခါ','ta hka','once / one time']],ex:[
+{t:'note',tag:'Life experience',q:'verb + ဖူး',body:'<p><span class="deva">ဖူး</span> <b>hpu</b> marks "ever, at least once in life": <span class="deva">သွားဖူးတယ်</span> — I have been there · <span class="deva">စားဖူးတယ်</span> — I have tried (eating) it.</p><p>The great traveler question: <span class="deva">ရန်ကုန်ကိုသွားဖူးလား</span> — Have you ever been to Yangon?</p>',eg:[['သွားဖူးတယ်','thwa hpu de','have been'],['စားဖူးတယ်','sa hpu de','have tried']]},
+{t:'mc',q:'Which means "have been (there)"?',o:['သွားဖူးတယ်','သွားနေတယ်','သွားခဲ့တယ်','သွားမယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'စားဖူးတယ်',o:['have eaten / tried it','am eating','ate yesterday','will eat'],a:0},
+{t:'note',tag:'Never ever',q:'မ…ဖူးဘူး · တစ်ခါ',body:'<p>"Never" is the no-sandwich around ဖူး: <span class="deva">မစားဖူးဘူး</span> — never eaten it. (Yes, ဖူး and ဘူး rhyme — ears open!)</p><p><span class="deva">တစ်ခါ</span> <b>ta hka</b> = once, one time.</p>',eg:[['မစားဖူးဘူး','ma sa hpu bu','never eaten'],['တစ်ခါ','ta hka','once']]},
+{t:'mc',q:'Which means "have never eaten"?',o:['မစားဖူးဘူး','စားဖူးတယ်','မစားဘူး','စားခဲ့တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'တစ်ခါ',o:['once / one time','one cup','one person','first'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရန်ကုန်ကိုသွားဖူးလား',o:['ရန်ကုန်ကိုသွားဖူးလား','ရန်ကုန်ကိုသွားမယ်','သွားဖူးတယ်','မစားဖူးဘူး'],a:0}]},
+{id:'my_ever_2',title:'Hear the experience',step:'recognize',meta:'Ever or never?',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'သွားဖူးတယ်',o:['သွားဖူးတယ်','သွားခဲ့တယ်','သွားနေတယ်','စားဖူးတယ်'],a:0},
+{t:'mc',q:'Which asks "Have you ever been to Yangon?"',o:['ရန်ကုန်ကိုသွားဖူးလား','ရန်ကုန်ကိုသွားမလား','ရန်ကုန်မှာနေလား','ရန်ကုန်ကဘယ်မှာလဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'မစားဖူးဘူး',o:['မစားဖူးဘူး','စားဖူးတယ်','မစားဘူး','မစားချင်ဘူး'],a:0},
+{t:'mc',q:'What does this mean?',d:'သွားဖူးတယ်',o:['have been there','am going','went yesterday','will go'],a:0},
+{t:'mc',q:'ဖူး (ever) and ဘူး (not) —',o:['rhyme — listen for the first sound','are the same word','never meet','both mean never'],a:0},
+{t:'li',q:'Listen — which one?',say:'တစ်ခါ',o:['တစ်ခါ','တစ်ခု','တစ်ခွက်','တစ်ယောက်'],a:0},
+{t:'mc',q:'Answering သွားဖူးလား with "yes, once":',o:['တစ်ခါသွားဖူးတယ်','မသွားဖူးဘူး','သွားမယ်','သွားနေတယ်'],a:0}]},
+{id:'my_ever_3',title:'Put it together',step:'build',meta:'Swap experiences',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['သွားဖူးတယ်','have been'],['စားဖူးတယ်','have tried'],['မစားဖူးဘူး','never eaten'],['တစ်ခါ','once']]},
+{t:'wb',q:'Build: Have you ever been to Mandalay?',a:['မန္တလေး','ကို','သွားဖူးလား'],pool:['မန္တလေး','ကို','သွားဖူးလား','သွားမလား']},
+{t:'mc',q:'"I have never been" is…',o:['မသွားဖူးဘူး','သွားဖူးတယ်','မသွားဘူး','မသွားခဲ့ဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'စားဖူးတယ်',o:['စားဖူးတယ်','သွားဖူးတယ်','မစားဖူးဘူး','စားနေတယ်'],a:0},
+{t:'wb',q:'Build: (I) have tried fish curry once',a:['ငါးဟင်း','တစ်ခါ','စားဖူးတယ်'],pool:['ငါးဟင်း','တစ်ခါ','စားဖူးတယ်','စားနေတယ်']},
+{t:'match',q:'Match marker and meaning',pairs:[['ဖူး','ever (life experience)'],['နေ','right now'],['ခဲ့','back then'],['မ…ဖူးဘူး','never']]}]},
+{id:'my_ever_4',title:'Mix it',step:'mix',meta:'Ever, now & then',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'မစားဖူးဘူး',o:['have never eaten it','do not eat it','did not eat it','am not eating'],a:0},
+{t:'li',q:'Listen — which one?',say:'သွားဖူးတယ်',o:['သွားဖူးတယ်','သွားဖူးလား','မသွားဖူးဘူး','သွားခဲ့တယ်'],a:0},
+{t:'mc',q:'A friend offers durian. You have never tried it:',o:['မစားဖူးဘူး','စားဖူးတယ်','မစားချင်ဘူး','စားနေတယ်'],a:0},
+{t:'wb',q:'Build: Have you ever eaten chicken curry?',a:['ကြက်သားဟင်း','စားဖူးလား'],pool:['ကြက်သားဟင်း','စားဖူးလား','စားဖူးတယ်']},
+{t:'li',q:'Listen — which one?',say:'တစ်ခါ',o:['တစ်ခါ','နှစ်ခါ','တစ်ခု','ခဏ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['သွားဖူးတယ်','have been'],['သွားနေတယ်','is going now'],['သွားခဲ့တယ်','went'],['သွားမယ်','will go']]}]},
+{id:'my_ever_5',title:'Checkpoint',step:'checkpoint',meta:'Ever mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "have tried (eating)"?',o:['စားဖူးတယ်','စားနေတယ်','စားခဲ့တယ်','စားရမယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'မစားဖူးဘူး',o:['မစားဖူးဘူး','စားဖူးတယ်','မသွားဖူးဘူး','မစားဘူး'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရန်ကုန်ကိုသွားဖူးလား',o:['have you ever been to Yangon?','will you go to Yangon?','are you in Yangon?','did you go to Yangon yesterday?'],a:0},
+{t:'wb',q:'Build: (I) have been once',a:['တစ်ခါ','သွားဖူးတယ်'],pool:['တစ်ခါ','သွားဖူးတယ်','သွားနေတယ်']},
+{t:'mc',q:'The life-experience marker is…',o:['ဖူး','ဘူး','နေ','ခဲ့'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['စားဖူးတယ်','have tried'],['မစားဖူးဘူး','never eaten'],['တစ်ခါ','once'],['သွားဖူးတယ်','have been']]}]},
+
+/* --- Topic 4: already / change of state ပြီ --- */
+{id:'my_pri',title:'Already! ပြီ',step:'learn',meta:'ရောက်ပြီ စားပြီးပြီ',vocab:[['ပြီးပြီ','pi bi','finished / done'],['စားပြီးပြီ','sa pi bi','already eaten'],['ရောက်ပြီ','yauq pi','arrived / here now'],['ရပြီ','ya bi','got it / OK now'],['ရောက်တယ်','yauq de','arrive / reach']],ex:[
+{t:'note',tag:'The news ending',q:'…ပြီ',body:'<p><span class="deva">ပြီ</span> announces <b>news — something has just become true</b>: <span class="deva">ရောက်ပြီ</span> <b>yauq pi</b> "(we have) arrived!" (<span class="deva">ရောက်</span> = arrive) · <span class="deva">ရပြီ</span> "got it / OK now!"</p>',eg:[['ရောက်ပြီ','yauq pi','arrived!'],['ရပြီ','ya bi','got it / OK now']]},
+{t:'mc',q:'The taxi stops at your street. The driver says…',o:['ရောက်ပြီ','သွားမယ်','ထွက်မယ်','ရပြီလား'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရပြီ',o:['got it / OK now','arrived','finished eating','not yet'],a:0},
+{t:'note',tag:'All done',q:'ပြီး + ပြီ',body:'<p><span class="deva">ပြီး</span> = to finish. So <span class="deva">ပြီးပြီ</span> <b>pi bi</b> = "finished!" and <span class="deva">စားပြီးပြီ</span> <b>sa pi bi</b> = "(I have) already eaten" — the polite answer when a host offers more.</p>',eg:[['ပြီးပြီ','pi bi','finished'],['စားပြီးပြီ','sa pi bi','already eaten']]},
+{t:'mc',q:'Which means "already eaten"?',o:['စားပြီးပြီ','စားနေတယ်','စားဖူးတယ်','စားမယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ပြီးပြီ',o:['finished / done','starting','not yet','again'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရောက်ပြီ',o:['ရောက်ပြီ','ရပြီ','ပြီးပြီ','ရောက်တယ်'],a:0}]},
+{id:'my_pri_2',title:'Hear the news',step:'recognize',meta:'Spot the ပြီ lines',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ပြီးပြီ',o:['ပြီးပြီ','ရပြီ','ရောက်ပြီ','စားပြီးပြီ'],a:0},
+{t:'mc',q:'Which means "arrive / reach"?',o:['ရောက်တယ်','ရတယ်','လာတယ်','ထွက်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'စားပြီးပြီ',o:['စားပြီးပြီ','ပြီးပြီ','စားနေတယ်','စားဖူးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရောက်ပြီ',o:['arrived / here now','will arrive','never arrived','leaving now'],a:0},
+{t:'mc',q:'ပြီ announces…',o:['news that just became true','a question','a wish','the past long ago'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရပြီ',o:['ရပြီ','ရတယ်','ရလား','ပြီးပြီ'],a:0},
+{t:'mc',q:'Your host offers a third helping. Pat your belly:',o:['စားပြီးပြီ','စားမယ်','ဗိုက်ဆာတယ်','မစားဖူးဘူး'],a:0}]},
+{id:'my_pri_3',title:'Put it together',step:'build',meta:'Announce the news',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ပြီးပြီ','finished'],['စားပြီးပြီ','already eaten'],['ရောက်ပြီ','arrived'],['ရပြီ','got it / OK now']]},
+{t:'wb',q:'Build: (I have) already eaten a meal',a:['ထမင်း','စားပြီးပြီ'],pool:['ထမင်း','စားပြီးပြီ','စားနေတယ်']},
+{t:'mc',q:'The bus pulls into ဘူတာ… everyone calls:',o:['ရောက်ပြီ','ထွက်ပြီ','ရပြီ','ပြီးပြီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရောက်တယ်',o:['ရောက်တယ်','ရောက်ပြီ','ရတယ်','ထွက်တယ်'],a:0},
+{t:'wb',q:'Build: The work is finished — work finish-already',a:['အလုပ်','ပြီးပြီ'],pool:['အလုပ်','ပြီးပြီ','လုပ်နေတယ်']},
+{t:'match',q:'Match ending and job',pairs:[['ပြီ','news! just became true'],['တယ်','plain statement'],['မယ်','future'],['လား','yes/no question']]}]},
+{id:'my_pri_4',title:'Mix it',step:'mix',meta:'News all around',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'စားပြီးပြီ',o:['already eaten','still eating','never eaten','will eat'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရောက်ပြီ',o:['ရောက်ပြီ','ရောက်တယ်','ရပြီ','ထွက်ပြီ'],a:0},
+{t:'mc',q:'Homework done, pencil down. You announce…',o:['ပြီးပြီ','လုပ်နေတယ်','လုပ်မယ်','မပြီးဘူး'],a:0},
+{t:'wb',q:'Build: The rain has arrived — rain arrive-news',a:['မိုး','ရောက်ပြီ'],pool:['မိုး','ရောက်ပြီ','ရွာနေတယ်']},
+{t:'li',q:'Listen — which one?',say:'စားပြီးပြီ',o:['စားပြီးပြီ','စားပြီ','ပြီးပြီ','စားဖူးတယ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ရောက်ပြီ','arrived'],['ရပြီ','OK now'],['ပြီးပြီ','finished'],['ရောက်တယ်','arrive / reach']]}]},
+{id:'my_pri_5',title:'Checkpoint',step:'checkpoint',meta:'ပြီ mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "finished"?',o:['ပြီးပြီ','ရပြီ','ရောက်ပြီ','ပြီလား'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရပြီ',o:['ရပြီ','ရတယ်','ရောက်ပြီ','ပြီးပြီ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရောက်တယ်',o:['arrive / reach','arrived just now','leave','return'],a:0},
+{t:'wb',q:'Build: (I have) already eaten',a:['စားပြီးပြီ'],pool:['စားပြီးပြီ','စားနေတယ်']},
+{t:'mc',q:'"We are here!" =',o:['ရောက်ပြီ','ရပြီ','သွားပြီ','လာပြီလား'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ပြီးပြီ','finished'],['စားပြီးပြီ','already eaten'],['ရပြီ','got it / OK now'],['ရောက်ပြီ','arrived']]}]},
+
+/* --- Topic 5: can နိုင် & know-how တတ် --- */
+{id:'my_can',title:'Can & know how',step:'learn',meta:'နိုင် vs တတ် + မြန်မာလို',vocab:[['ပြောတယ်','pyaw de','speak / say'],['မြန်မာလို','myanma lo','in Burmese'],['ပြောတတ်တယ်','pyaw daq de','know how to speak'],['သွားနိုင်တယ်','thwa naing de','can go (possible)'],['မသွားနိုင်ဘူး','ma thwa naing bu','cannot go'],['နည်းနည်း','neh neh','a little']],ex:[
+{t:'note',tag:'Two cans',q:'နိုင် vs တတ်',body:'<p>Burmese splits "can" in two. <span class="deva">နိုင်</span> <b>naing</b> = can, it is possible: <span class="deva">သွားနိုင်တယ်</span> — I can go. <span class="deva">တတ်</span> <b>taq</b> = can because you <b>learned how</b>: <span class="deva">ပြောတတ်တယ်</span> — I know how to speak.</p><p><span class="deva">ပြော</span> <b>pyaw</b> = speak (careful: ပျော် pyaw = happy — tone twins!).</p>',eg:[['သွားနိုင်တယ်','thwa naing de','can go'],['ပြောတတ်တယ်','pyaw daq de','know how to speak']]},
+{t:'mc',q:'Which means "can go (it is possible)"?',o:['သွားနိုင်တယ်','သွားတတ်တယ်','သွားချင်တယ်','သွားရမယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ပြောတတ်တယ်',o:['know how to speak','can possibly speak','want to speak','spoke'],a:0},
+{t:'note',tag:'Your proudest line',q:'မြန်မာလို နည်းနည်း',body:'<p><span class="deva">မြန်မာလို</span> <b>myanma lo</b> = in Burmese (လို = "like/as"). <span class="deva">နည်းနည်း</span> <b>neh neh</b> = a little.</p><p>Put your whole course in one sentence: <span class="deva">မြန်မာလို နည်းနည်း ပြောတတ်တယ်</span> — "I can speak a little Burmese." Say it to a real person this week!</p>',eg:[['မြန်မာလို','myanma lo','in Burmese'],['နည်းနည်း','neh neh','a little']]},
+{t:'mc',q:'Which means "in Burmese"?',o:['မြန်မာလို','မြန်မာ','မြန်မာက','မြန်မာနဲ့'],a:0},
+{t:'mc',q:'What does this mean?',d:'နည်းနည်း',o:['a little','a lot','never','always'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပြောတတ်တယ်',o:['ပြောတတ်တယ်','ပြောတယ်','သွားနိုင်တယ်','ပျော်တယ်'],a:0}]},
+{id:'my_can_2',title:'Hear the ability',step:'recognize',meta:'နိုင် or တတ်?',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'သွားနိုင်တယ်',o:['သွားနိုင်တယ်','သွားတယ်','မသွားနိုင်ဘူး','ပြောတတ်တယ်'],a:0},
+{t:'mc',q:'Which means "speak / say"?',o:['ပြောတယ်','ပျော်တယ်','ပြီးပြီ','ပေးပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'နည်းနည်း',o:['နည်းနည်း','နာရီ','နှစ်','နေတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မသွားနိုင်ဘူး',o:['cannot go','do not want to go','never went','must not go'],a:0},
+{t:'mc',q:'Swimming, reading, speaking Burmese — learned skills take…',o:['တတ်','နိုင်','ချင်','ဖူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'မြန်မာလို',o:['မြန်မာလို','မြန်မာ','မန္တလေး','မြန်မာနိုင်ငံ'],a:0},
+{t:'mc',q:'ပြော (speak) vs ပျော် (happy) differ by…',o:['tone & a tiny sound — listen','spelling only','meaning only','nothing'],a:0}]},
+{id:'my_can_3',title:'Put it together',step:'build',meta:'Say what you can do',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['သွားနိုင်တယ်','can go'],['ပြောတတ်တယ်','know how to speak'],['မသွားနိုင်ဘူး','cannot go'],['နည်းနည်း','a little']]},
+{t:'wb',q:'Build: I can speak a little Burmese (man speaking)',a:['ကျွန်တော်','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်'],pool:['ကျွန်တော်','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်','ပြောနေတယ်']},
+{t:'mc',q:'"Cannot come" is…',o:['မလာနိုင်ဘူး','လာနိုင်တယ်','မလာချင်ဘူး','မလာခဲ့ဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'မသွားနိုင်ဘူး',o:['မသွားနိုင်ဘူး','သွားနိုင်တယ်','မသွားချင်ဘူး','မသွားဖူးဘူး'],a:0},
+{t:'wb',q:'Build: Can you go tomorrow?',a:['မနက်ဖြန်','သွားနိုင်လား'],pool:['မနက်ဖြန်','သွားနိုင်လား','သွားနိုင်တယ်']},
+{t:'match',q:'Match "can" and its kind',pairs:[['နိုင်','possible'],['တတ်','learned skill'],['ချင်','want to'],['ရ','allowed / must']]}]},
+{id:'my_can_4',title:'Mix it',step:'mix',meta:'Abilities in action',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'မြန်မာလို',o:['in Burmese','Myanmar country','to Myanmar','Burmese person'],a:0},
+{t:'li',q:'Listen — which one?',say:'ပြောတယ်',o:['ပြောတယ်','ပျော်တယ်','ပြောတတ်တယ်','ပေးပါ'],a:0},
+{t:'mc',q:'Rain floods the road. You phone ahead:',o:['မလာနိုင်ဘူး','လာတတ်တယ်','လာချင်တယ်','လာဖူးတယ်'],a:0},
+{t:'wb',q:'Build: She knows how to speak Burmese',a:['သူ','မြန်မာလို','ပြောတတ်တယ်'],pool:['သူ','မြန်မာလို','ပြောတတ်တယ်','ပြောနိုင်လား']},
+{t:'li',q:'Listen — which one?',say:'နည်းနည်း',o:['နည်းနည်း','နီးတယ်','အေးအေး','နှစ်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ပြောတယ်','speak'],['ပြောတတ်တယ်','know how to speak'],['သွားနိုင်တယ်','can go'],['နည်းနည်း','a little']]}]},
+{id:'my_can_5',title:'Checkpoint',step:'checkpoint',meta:'Can mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "know how to speak"?',o:['ပြောတတ်တယ်','ပြောနိုင်တယ်','ပြောချင်တယ်','ပြောနေတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'မြန်မာလို',o:['မြန်မာလို','နည်းနည်း','မြန်မာ','ပြောတတ်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မသွားနိုင်ဘူး',o:['cannot go','will not go','never went','must not go'],a:0},
+{t:'wb',q:'Build: I can speak a little Burmese (woman speaking)',a:['ကျွန်မ','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်'],pool:['ကျွန်မ','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်','ကြိုက်တယ်']},
+{t:'mc',q:'Possible vs learned-skill =',o:['နိုင် vs တတ်','တတ် vs နိုင်','နိုင် vs ချင်','ရ vs နိုင်'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['သွားနိုင်တယ်','can go'],['ပြောတတ်တယ်','know how to speak'],['မြန်မာလို','in Burmese'],['နည်းနည်း','a little']]}]},
+
+/* --- Topic 6: must / have to ရ --- */
+{id:'my_must',title:'Have to: ရ',step:'learn',meta:'သွားရမယ် — duties & rules',vocab:[['သွားရမယ်','thwa ya meh','must go / have to go'],['လုပ်ရမယ်','louq ya meh','must do'],['အလုပ်','alouq','work (noun)'],['အလုပ်လုပ်တယ်','alouq louq de','to work'],['မလုပ်ရဘူး','ma louq ya bu','not allowed to do']],ex:[
+{t:'note',tag:'Duty calls',q:'verb + ရ + မယ်',body:'<p>You know <span class="deva">ရ</span> as "OK / get" (<span class="deva">ရတယ်</span>, <span class="deva">ရပြီ</span>). Slotted after a verb with မယ် it becomes <b>must</b>: <span class="deva">သွားရမယ်</span> — I have to go · <span class="deva">လုပ်ရမယ်</span> — I must do it.</p>',eg:[['သွားရမယ်','thwa ya meh','must go'],['လုပ်ရမယ်','louq ya meh','must do']]},
+{t:'mc',q:'Which means "must go"?',o:['သွားရမယ်','သွားနိုင်တယ်','သွားချင်တယ်','သွားဖူးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လုပ်ရမယ်',o:['must do','can do','want to do','did'],a:0},
+{t:'note',tag:'Work & rules',q:'အလုပ် · မ…ရဘူး',body:'<p><span class="deva">အလုပ်</span> <b>alouq</b> = work (the verb လုပ် wearing the noun-making အ, like the colors!). <span class="deva">အလုပ်လုပ်တယ်</span> = to work.</p><p>Negated, ရ means <b>not allowed</b>: <span class="deva">မလုပ်ရဘူး</span> — you may not do that.</p>',eg:[['အလုပ်','alouq','work'],['မလုပ်ရဘူး','ma louq ya bu','not allowed']]},
+{t:'mc',q:'Which means "work (noun)"?',o:['အလုပ်','လုပ်တယ်','အသစ်','လုပ်ရမယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မလုပ်ရဘူး',o:['not allowed to do it','must do it','cannot manage it','did not do it'],a:0},
+{t:'li',q:'Listen — which one?',say:'သွားရမယ်',o:['သွားရမယ်','သွားမယ်','လုပ်ရမယ်','သွားနိုင်တယ်'],a:0}]},
+{id:'my_must_2',title:'Hear the duty',step:'recognize',meta:'Must, may & may not',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'လုပ်ရမယ်',o:['လုပ်ရမယ်','လုပ်မယ်','သွားရမယ်','မလုပ်ရဘူး'],a:0},
+{t:'mc',q:'Which means "to work"?',o:['အလုပ်လုပ်တယ်','အလုပ်','လုပ်ရမယ်','လုပ်နေပြီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'အလုပ်',o:['အလုပ်','လုပ်တယ်','အလုပ်လုပ်တယ်','အသုပ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'သွားရမယ်',o:['must go','may go','went','can go'],a:0},
+{t:'mc',q:'A "no entry" sign says, in spirit…',o:['မဝင်ရဘူး — may not enter','ဝင်ရမယ်','ဝင်နိုင်တယ်','ဝင်ချင်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'အလုပ်လုပ်တယ်',o:['အလုပ်လုပ်တယ်','အလုပ်','လုပ်နေတယ်','လုပ်ရမယ်'],a:0},
+{t:'mc',q:'ရ after a verb + မယ် means…',o:['must / have to','maybe','want to','already'],a:0}]},
+{id:'my_must_3',title:'Put it together',step:'build',meta:'State your duties',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['သွားရမယ်','must go'],['လုပ်ရမယ်','must do'],['မလုပ်ရဘူး','not allowed'],['အလုပ်','work (noun)']]},
+{t:'wb',q:'Build: I must go to work tomorrow (man speaking)',a:['ကျွန်တော်','မနက်ဖြန်','အလုပ်','သွားရမယ်'],pool:['ကျွန်တော်','မနက်ဖြန်','အလုပ်','သွားရမယ်','သွားချင်တယ်']},
+{t:'mc',q:'"Must eat" is…',o:['စားရမယ်','စားနိုင်တယ်','စားချင်တယ်','စားပြီးပြီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'မလုပ်ရဘူး',o:['မလုပ်ရဘူး','လုပ်ရမယ်','မလုပ်ဘူး','မသွားရဘူး'],a:0},
+{t:'wb',q:'Build: She works at the school',a:['သူ','ကျောင်း','မှာ','အလုပ်လုပ်တယ်'],pool:['သူ','ကျောင်း','မှာ','အလုပ်လုပ်တယ်','နေတယ်']},
+{t:'match',q:'Match marker and force',pairs:[['ရမယ်','must'],['နိုင်','can (possible)'],['တတ်','know how'],['မ…ရဘူး','not allowed']]}]},
+{id:'my_must_4',title:'Mix it',step:'mix',meta:'Duties & abilities',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'အလုပ်လုပ်တယ်',o:['to work','must work','the work','can work'],a:0},
+{t:'li',q:'Listen — which one?',say:'သွားရမယ်',o:['သွားရမယ်','သွားရဘူး','သွားမယ်','လုပ်ရမယ်'],a:0},
+{t:'mc',q:'The teashop closes; you point at your watch:',o:['သွားရမယ်','သွားဖူးတယ်','မသွားနိုင်ဘူး','သွားနေတယ်'],a:0},
+{t:'wb',q:'Build: Do you have to go?',a:['သွားရ','မလား'],pool:['သွားရ','မလား','မယ်']},
+{t:'li',q:'Listen — which one?',say:'အလုပ်',o:['အလုပ်','ဗိုက်','လုပ်တယ်','အခန်း'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['သွားရမယ်','must go'],['မလုပ်ရဘူး','not allowed'],['အလုပ်လုပ်တယ်','to work'],['လုပ်ရမယ်','must do']]}]},
+{id:'my_must_5',title:'Checkpoint',step:'checkpoint',meta:'Must mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "must do"?',o:['လုပ်ရမယ်','လုပ်နိုင်တယ်','လုပ်ချင်တယ်','လုပ်နေတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'အလုပ်လုပ်တယ်',o:['အလုပ်လုပ်တယ်','လုပ်ရမယ်','အလုပ်','မလုပ်ရဘူး'],a:0},
+{t:'mc',q:'What does this mean?',d:'မလုပ်ရဘူး',o:['not allowed to do','must do','cannot do','did not do'],a:0},
+{t:'wb',q:'Build: I must go home (woman speaking)',a:['ကျွန်မ','အိမ်','ကို','သွားရမယ်'],pool:['ကျွန်မ','အိမ်','ကို','သွားရမယ်','သွားဖူးတယ်']},
+{t:'mc',q:'ရ shows up as "OK" (ရတယ်), "got it" (ရပြီ) and…',o:['must (ရမယ်)','ever (ဖူး)','still (နေ)','want (ချင်)'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['သွားရမယ်','must go'],['အလုပ်','work (noun)'],['မလုပ်ရဘူး','not allowed'],['အလုပ်လုပ်တယ်','to work']]}]},
+
+/* --- Topic 7: polite requests & commands verb + ပါ --- */
+{id:'my_req',title:'Please do: verb + ပါ',step:'learn',meta:'လာပါ ထိုင်ပါ ခဏစောင့်ပါ',vocab:[['လာပါ','la ba','please come'],['ထိုင်ပါ','htain ba','please sit'],['စားပါ','sa ba','please eat'],['ခဏ','hkana','a moment'],['ခဏစောင့်ပါ','hkana saun ba','wait a moment, please']],ex:[
+{t:'note',tag:'Gentle commands',q:'verb + ပါ',body:'<p>To ask someone to do something, just say the bare verb + our polite <span class="deva">ပါ</span>: <span class="deva">လာပါ</span> come! · <span class="deva">ထိုင်ပါ</span> sit down! (<span class="deva">ထိုင်</span> = sit) · <span class="deva">စားပါ</span> — eat, please! (what every host says).</p><p>You have used this shape all along: ပေးပါ, လျှော့ပေးပါ.</p>',eg:[['လာပါ','la ba','please come'],['ထိုင်ပါ','htain ba','please sit'],['စားပါ','sa ba','please eat']]},
+{t:'mc',q:'Which means "please sit"?',o:['ထိုင်ပါ','လာပါ','စားပါ','သွားပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'စားပါ',o:['please eat','I eat','ate','please give'],a:0},
+{t:'note',tag:'One moment',q:'ခဏ · ခဏစောင့်ပါ',body:'<p><span class="deva">ခဏ</span> <b>hkana</b> = a moment. <span class="deva">စောင့်</span> <b>saun</b> = wait. Together, the phrase you will hear at every counter in Myanmar: <span class="deva">ခဏစောင့်ပါ</span> — "please wait a moment."</p>',eg:[['ခဏ','hkana','a moment'],['ခဏစောင့်ပါ','hkana saun ba','wait a moment, please']]},
+{t:'mc',q:'Which means "wait a moment, please"?',o:['ခဏစောင့်ပါ','ခဏ','လာပါ','ထိုင်ပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခဏ',o:['a moment','a cup','once','slowly'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခဏစောင့်ပါ',o:['ခဏစောင့်ပါ','ခဏ','ထိုင်ပါ','လာပါ'],a:0}]},
+{id:'my_req_2',title:'Hear the requests',step:'recognize',meta:'Spot each polite ask',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'လာပါ',o:['လာပါ','လာတယ်','စားပါ','ထိုင်ပါ'],a:0},
+{t:'mc',q:'A host waves at the food and says…',o:['စားပါ','စားတယ်','စားရမယ်','စားပြီးပြီ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထိုင်ပါ',o:['ထိုင်ပါ','ထိုင်','လာပါ','စားပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခဏစောင့်ပါ',o:['wait a moment, please','come quickly','sit here','a long time'],a:0},
+{t:'mc',q:'The polite command recipe is…',o:['verb + ပါ','verb + တယ်','ပါ + verb','verb + မယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခဏ',o:['ခဏ','ခါ','ခု','ခွက်'],a:0},
+{t:'mc',q:'You already knew two verb+ပါ lines:',o:['ပေးပါ & လျှော့ပေးပါ','တယ် & မယ်','လား & လဲ','ဟုတ်ကဲ့ & ရပါတယ်'],a:0}]},
+{id:'my_req_3',title:'Put it together',step:'build',meta:'Host like a local',vocab:[],ex:[
+{t:'match',q:'Match request and meaning',pairs:[['လာပါ','please come'],['ထိုင်ပါ','please sit'],['စားပါ','please eat'],['ခဏစောင့်ပါ','wait a moment']]},
+{t:'wb',q:'Build: Please wait a moment',a:['ခဏ','စောင့်ပါ'],pool:['ခဏ','စောင့်ပါ','ထိုင်ပါ']},
+{t:'mc',q:'A guest arrives at your door. First words…',o:['လာပါ၊ ထိုင်ပါ','သွားပါ','ခဏစောင့်ပါ','မလာရဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'စားပါ',o:['စားပါ','စားတယ်','လာပါ','စားမလား'],a:0},
+{t:'wb',q:'Build: Please come to my house — house to come-please',a:['အိမ်','ကို','လာပါ'],pool:['အိမ်','ကို','လာပါ','သွားပါ']},
+{t:'match',q:'Match line and situation',pairs:[['ထိုင်ပါ','offering a chair'],['စားပါ','offering food'],['ခဏစောင့်ပါ','at the counter'],['လျှော့ပေးပါ','at the market']]}]},
+{id:'my_req_4',title:'Mix it',step:'mix',meta:'Polite in every room',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ထိုင်ပါ',o:['please sit','please stand','please wait','please come'],a:0},
+{t:'li',q:'Listen — which one?',say:'ခဏစောင့်ပါ',o:['ခဏစောင့်ပါ','ခဏ','စားပါ','ပေးပါ'],a:0},
+{t:'mc',q:'The shopkeeper checks the back room. She says…',o:['ခဏစောင့်ပါ','လာပါ','ထိုင်ပါ','ဒါပဲ'],a:0},
+{t:'wb',q:'Build: Please drink tea — tea drink-please',a:['လက်ဖက်ရည်','သောက်ပါ'],pool:['လက်ဖက်ရည်','သောက်ပါ','သောက်တယ်']},
+{t:'li',q:'Listen — which one?',say:'လာပါ',o:['လာပါ','လာမယ်','ထိုင်ပါ','လာနေတယ်'],a:0},
+{t:'match',q:'Match request and meaning',pairs:[['လာပါ','please come'],['စားပါ','please eat'],['ခဏ','a moment'],['ထိုင်ပါ','please sit']]}]},
+{id:'my_req_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 7 complete!',vocab:[],ex:[
+{t:'mc',q:'Which means "please come"?',o:['လာပါ','လာတယ်','လာနိုင်တယ်','လာခဲ့တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထိုင်ပါ',o:['ထိုင်ပါ','စားပါ','လာပါ','ခဏစောင့်ပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ခဏစောင့်ပါ',o:['wait a moment, please','come at once','sit a while','eat slowly'],a:0},
+{t:'wb',q:'Build: Please eat a meal — meal eat-please',a:['ထမင်း','စားပါ'],pool:['ထမင်း','စားပါ','စားမယ်']},
+{t:'mc',q:'Gentle commands = bare verb +…',o:['ပါ','တယ်','မယ်','ရ'],a:0},
+{t:'match',q:'Match request and meaning',pairs:[['လာပါ','please come'],['ထိုင်ပါ','please sit'],['စားပါ','please eat'],['ခဏစောင့်ပါ','wait a moment']]}]},
+
+/* ===================== ZONE 8 · OUT & ABOUT =====================
+   Getting around Myanmar: vehicles + စီး ride, directions (ဘယ်/ညာ/
+   တည့်တည့် per Okell U2 taxis & asiapearltravels directions lessons),
+   far & near, tickets & stations, hotel (ရှိ have/exist), months &
+   dates, phone. */
+/* --- Topic 1: vehicles & riding --- */
+{id:'my_go',title:'Wheels',step:'learn',meta:'ကား ရထား ဆိုင်ကယ် + စီး',vocab:[['ကား','ka','car / bus'],['ဘတ်စ်ကား','baq sa ka','bus'],['တက္ကစီ','teq ka si','taxi'],['ဆိုင်ကယ်','hsain keh','motorbike'],['ရထား','ya hta','train'],['ကားစီးတယ်','ka si de','ride a car / bus']],ex:[
+{t:'note',tag:'Zone 8',q:'Riding, not driving',body:'<p>Time to move! <span class="deva">ကား</span> <b>ka</b> = car (often any bus too) · <span class="deva">ဘတ်စ်ကား</span> bus · <span class="deva">တက္ကစီ</span> taxi · <span class="deva">ဆိုင်ကယ်</span> motorbike · <span class="deva">ရထား</span> train.</p><p>You <b>ride</b> them all: <span class="deva">စီးတယ်</span> <b>si de</b> — <span class="deva">ကားစီးတယ်</span> take the bus.</p>',eg:[['ကား','ka','car / bus'],['ရထား','ya hta','train'],['ကားစီးတယ်','ka si de','ride a car / bus']]},
+{t:'mc',q:'Which means "train"?',o:['ရထား','ကား','တက္ကစီ','ဆိုင်ကယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ကားစီးတယ်',o:['ride a car / bus','drive a car','buy a car','wash a car'],a:0},
+{t:'note',tag:'Street sounds',q:'တက္ကစီ · ဆိုင်ကယ်',body:'<p><span class="deva">တက္ကစီ</span> <b>teq ka si</b> — hear the English "taxi" hiding in Burmese clothes? <span class="deva">ဘတ်စ်ကား</span> <b>baq sa ka</b> does the same with "bus".</p><p><span class="deva">ဆိုင်ကယ်</span> <b>hsain keh</b> (motorbike) rules the roads outside Yangon.</p>',eg:[['တက္ကစီ','teq ka si','taxi'],['ဆိုင်ကယ်','hsain keh','motorbike']]},
+{t:'mc',q:'Which means "taxi"?',o:['တက္ကစီ','ဘတ်စ်ကား','ရထား','ကား'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဆိုင်ကယ်',o:['motorbike','bicycle','taxi','shop'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရထား',o:['ရထား','ကား','တက္ကစီ','ဆိုင်ကယ်'],a:0}]},
+{id:'my_go_2',title:'Hear the traffic',step:'recognize',meta:'Spot each vehicle',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ကား',o:['ကား','ရထား','ခါ','ကာ'],a:0},
+{t:'mc',q:'Which means "bus"?',o:['ဘတ်စ်ကား','တက္ကစီ','ဆိုင်ကယ်','ရထား'],a:0},
+{t:'li',q:'Listen — which one?',say:'တက္ကစီ',o:['တက္ကစီ','ဘတ်စ်ကား','ဆိုင်ကယ်','ကားစီးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရထား',o:['train','bus','motorbike','boat'],a:0},
+{t:'mc',q:'The verb for taking any vehicle is…',o:['စီးတယ်','သွားတယ်','လုပ်တယ်','ဝယ်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဆိုင်ကယ်',o:['ဆိုင်ကယ်','ဆိုင်','တက္ကစီ','ကား'],a:0},
+{t:'mc',q:'တက္ကစီ and ဘတ်စ်ကား are borrowed from…',o:['English','Pali','Hindi','Thai'],a:0}]},
+{id:'my_go_3',title:'Put it together',step:'build',meta:'Choose your ride',vocab:[],ex:[
+{t:'match',q:'Match vehicle and meaning',pairs:[['ကား','car / bus'],['တက္ကစီ','taxi'],['ဆိုင်ကယ်','motorbike'],['ရထား','train']]},
+{t:'wb',q:'Build: (I) ride the train — train ride',a:['ရထား','စီးတယ်'],pool:['ရထား','စီးတယ်','သွားတယ်']},
+{t:'mc',q:'"Ride a motorbike" is…',o:['ဆိုင်ကယ်စီးတယ်','ဆိုင်ကယ်သွားတယ်','ဆိုင်ကယ်ဝယ်တယ်','ဆိုင်ကယ်လုပ်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘတ်စ်ကား',o:['ဘတ်စ်ကား','ကား','တက္ကစီ','ရထား'],a:0},
+{t:'wb',q:'Build: (I) will take a taxi to Yangon',a:['ရန်ကုန်','ကို','တက္ကစီ','စီးမယ်'],pool:['ရန်ကုန်','ကို','တက္ကစီ','စီးမယ်','စီးတယ်']},
+{t:'match',q:'Match vehicle and meaning',pairs:[['ဘတ်စ်ကား','bus'],['ရထား','train'],['ကားစီးတယ်','ride a car / bus'],['တက္ကစီ','taxi']]}]},
+{id:'my_go_4',title:'Mix it',step:'mix',meta:'On the move',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'တက္ကစီ',o:['taxi','bus','train','motorbike'],a:0},
+{t:'li',q:'Listen — which one?',say:'ကားစီးတယ်',o:['ကားစီးတယ်','ကား','ရထားစီးတယ်','စီးတယ်'],a:0},
+{t:'mc',q:'Cheapest way across town, weaving through traffic:',o:['ဆိုင်ကယ်','ရထား','တက္ကစီ','လေဆိပ်'],a:0},
+{t:'wb',q:'Build: Have you ever ridden a train?',a:['ရထား','စီးဖူးလား'],pool:['ရထား','စီးဖူးလား','စီးတယ်']},
+{t:'li',q:'Listen — which one?',say:'ရထား',o:['ရထား','ယထာ','ကား','ဘတ်စ်ကား'],a:0},
+{t:'match',q:'Match vehicle and meaning',pairs:[['ကား','car / bus'],['ဆိုင်ကယ်','motorbike'],['ရထား','train'],['ဘတ်စ်ကား','bus']]}]},
+{id:'my_go_5',title:'Checkpoint',step:'checkpoint',meta:'Wheels mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "motorbike"?',o:['ဆိုင်ကယ်','တက္ကစီ','ရထား','ကား'],a:0},
+{t:'li',q:'Listen — which one?',say:'တက္ကစီ',o:['တက္ကစီ','ဆိုင်ကယ်','ဘတ်စ်ကား','ကား'],a:0},
+{t:'mc',q:'What does this mean?',d:'ကားစီးတယ်',o:['ride a car / bus','drive fast','walk','buy a ticket'],a:0},
+{t:'wb',q:'Build: (I) will ride a motorbike tomorrow',a:['မနက်ဖြန်','ဆိုင်ကယ်','စီးမယ်'],pool:['မနက်ဖြန်','ဆိုင်ကယ်','စီးမယ်','စီးခဲ့တယ်']},
+{t:'mc',q:'Vehicles take which verb?',o:['စီး','စား','စောင့်','ဝယ်'],a:0},
+{t:'match',q:'Match vehicle and meaning',pairs:[['တက္ကစီ','taxi'],['ရထား','train'],['ဆိုင်ကယ်','motorbike'],['ကားစီးတယ်','ride a car / bus']]}]},
+
+/* --- Topic 2: directions --- */
+{id:'my_dir',title:'Left, right, straight',step:'learn',meta:'ဘယ် ညာ တည့်တည့် ကွေ့',vocab:[['ဘယ်ဘက်','beh beq','left side'],['ညာဘက်','nya beq','right side'],['တည့်တည့်','teh deh','straight ahead'],['ညာကွေ့','nya kweh','turn right'],['ဘယ်ကွေ့','beh kweh','turn left'],['တည့်တည့်သွားပါ','teh deh thwa ba','go straight, please']],ex:[
+{t:'note',tag:'Taxi talk',q:'ဘယ် · ညာ · ဘက်',body:'<p><span class="deva">ဘက်</span> <b>beq</b> = side. <span class="deva">ဘယ်ဘက်</span> = left side · <span class="deva">ညာဘက်</span> = right side.</p><p>Wait — <span class="deva">ဘယ်</span> is also "which"?! Yes: ဘယ်သူ which-person, ဘယ်ဘက် the ဘယ် side. Context (and your driver) will know.</p>',eg:[['ဘယ်ဘက်','beh beq','left side'],['ညာဘက်','nya beq','right side']]},
+{t:'mc',q:'Which means "right side"?',o:['ညာဘက်','ဘယ်ဘက်','တည့်တည့်','ဘက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်ဘက်',o:['left side','right side','which side?','straight'],a:0},
+{t:'note',tag:'Steer the taxi',q:'တည့်တည့် · ကွေ့',body:'<p><span class="deva">တည့်တည့်</span> <b>teh deh</b> = straight ahead. <span class="deva">ကွေ့</span> <b>kweh</b> = turn: <span class="deva">ညာကွေ့</span> turn right · <span class="deva">ဘယ်ကွေ့</span> turn left.</p><p>Add polite ပါ to steer politely: <span class="deva">တည့်တည့်သွားပါ</span> — go straight, please.</p>',eg:[['တည့်တည့်','teh deh','straight ahead'],['ညာကွေ့','nya kweh','turn right'],['ဘယ်ကွေ့','beh kweh','turn left']]},
+{t:'mc',q:'Which means "turn left"?',o:['ဘယ်ကွေ့','ညာကွေ့','တည့်တည့်','ဘယ်ဘက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'တည့်တည့်သွားပါ',o:['go straight, please','turn around, please','stop here, please','go slowly, please'],a:0},
+{t:'li',q:'Listen — which one?',say:'ညာကွေ့',o:['ညာကွေ့','ဘယ်ကွေ့','ညာဘက်','တည့်တည့်'],a:0}]},
+{id:'my_dir_2',title:'Hear the way',step:'recognize',meta:'Left or right by ear',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဘယ်ဘက်',o:['ဘယ်ဘက်','ညာဘက်','ဘယ်ကွေ့','ဘက'],a:0},
+{t:'mc',q:'Which means "straight ahead"?',o:['တည့်တည့်','ကွေ့','ဘက်','ညာ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်ကွေ့',o:['ဘယ်ကွေ့','ညာကွေ့','ဘယ်ဘက်','တည့်တည့်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ညာဘက်',o:['right side','left side','both sides','side street'],a:0},
+{t:'mc',q:'ဘယ် means left AND…',o:['which','right','straight','side'],a:0},
+{t:'li',q:'Listen — which one?',say:'တည့်တည့်',o:['တည့်တည့်','ထည့်ထည့်','နည်းနည်း','ဘယ်ဘက်'],a:0},
+{t:'mc',q:'"Turn" in ညာကွေ့ / ဘယ်ကွေ့ is…',o:['ကွေ့','ဘက်','ညာ','ပါ'],a:0}]},
+{id:'my_dir_3',title:'Put it together',step:'build',meta:'Direct the driver',vocab:[],ex:[
+{t:'match',q:'Match direction and meaning',pairs:[['ဘယ်ဘက်','left side'],['ညာဘက်','right side'],['တည့်တည့်','straight ahead'],['ညာကွေ့','turn right']]},
+{t:'wb',q:'Build: Go straight, please',a:['တည့်တည့်','သွားပါ'],pool:['တည့်တည့်','သွားပါ','ကွေ့ပါ']},
+{t:'mc',q:'"Turn right, please" is…',o:['ညာကွေ့ပါ','ဘယ်ကွေ့ပါ','ညာဘက်','တည့်တည့်သွားပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'တည့်တည့်သွားပါ',o:['တည့်တည့်သွားပါ','တည့်တည့်','ညာကွေ့','ဘယ်ကွေ့'],a:0},
+{t:'wb',q:'Build: Turn left, please — left-turn please',a:['ဘယ်ကွေ့','ပါ'],pool:['ဘယ်ကွေ့','ပါ','ညာကွေ့']},
+{t:'match',q:'Match instruction and action',pairs:[['ညာကွေ့','turn right'],['ဘယ်ကွေ့','turn left'],['တည့်တည့်သွားပါ','go straight, please'],['ခဏစောင့်ပါ','wait a moment']]}]},
+{id:'my_dir_4',title:'Mix it',step:'mix',meta:'Navigate the streets',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ညာကွေ့',o:['turn right','turn left','right side','go straight'],a:0},
+{t:'li',q:'Listen — which one?',say:'ညာဘက်',o:['ညာဘက်','ဘယ်ဘက်','ညာကွေ့','ဘက်'],a:0},
+{t:'mc',q:'The teashop is on the LEFT. Tell the driver…',o:['ဘယ်ဘက်မှာ','ညာဘက်မှာ','တည့်တည့်','ရောက်ပြီ'],a:0},
+{t:'wb',q:'Build: Turn right at the school — school at right-turn',a:['ကျောင်း','မှာ','ညာကွေ့'],pool:['ကျောင်း','မှာ','ညာကွေ့','ဘယ်ကွေ့']},
+{t:'li',q:'Listen — which one?',say:'ကွေ့',o:['ကွေ့','ခွေ့','ဘက်','ခွဲ'],a:0},
+{t:'match',q:'Match direction and meaning',pairs:[['တည့်တည့်','straight ahead'],['ဘယ်ဘက်','left side'],['ညာဘက်','right side'],['ဘယ်ကွေ့','turn left']]}]},
+{id:'my_dir_5',title:'Checkpoint',step:'checkpoint',meta:'Directions mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "go straight, please"?',o:['တည့်တည့်သွားပါ','ညာကွေ့ပါ','ဘယ်ကွေ့ပါ','ခဏစောင့်ပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်ကွေ့',o:['ဘယ်ကွေ့','ညာကွေ့','ဘယ်ဘက်','ကွေ့'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘက်',o:['side','turn','straight','street'],a:0},
+{t:'wb',q:'Build: Turn right, please',a:['ညာကွေ့','ပါ'],pool:['ညာကွေ့','ပါ','တည့်တည့်']},
+{t:'mc',q:'left · right · straight =',o:['ဘယ် · ညာ · တည့်တည့်','ညာ · ဘယ် · တည့်တည့်','ဘယ် · တည့်တည့် · ညာ','ညာ · တည့်တည့် · ဘယ်'],a:0},
+{t:'match',q:'Match direction and meaning',pairs:[['ဘယ်ဘက်','left side'],['ညာကွေ့','turn right'],['တည့်တည့်','straight ahead'],['ညာဘက်','right side']]}]},
+
+/* --- Topic 3: far & near --- */
+{id:'my_farnear',title:'Far & near',step:'learn',meta:'ဝေးတယ် နီးတယ် ဒီနားမှာ',vocab:[['ဝေးတယ်','wei de','is far'],['နီးတယ်','ni de','is near'],['ဝေးလား','wei la','is it far?'],['ဒီနားမှာ','di na hma','near here'],['ဟိုမှာ','ho hma','over there']],ex:[
+{t:'note',tag:'How far?',q:'ဝေး · နီး',body:'<p>Two more describing verbs for the road: <span class="deva">ဝေးတယ်</span> <b>wei de</b> — it is far · <span class="deva">နီးတယ်</span> <b>ni de</b> — it is near.</p><p>Before hopping on that ဆိုင်ကယ်, ask: <span class="deva">ဝေးလား</span> — is it far?</p>',eg:[['ဝေးတယ်','wei de','is far'],['နီးတယ်','ni de','is near'],['ဝေးလား','wei la','is it far?']]},
+{t:'mc',q:'Which means "is far"?',o:['ဝေးတယ်','နီးတယ်','ဝေးလား','ဒီနားမှာ'],a:0},
+{t:'mc',q:'What does this mean?',d:'နီးတယ်',o:['is near','is far','is here','is small'],a:0},
+{t:'note',tag:'Point it out',q:'ဒီနားမှာ · ဟိုမှာ',body:'<p><span class="deva">ဒီနားမှာ</span> <b>di na hma</b> = near here, in this area (ဒီ this + နား vicinity + our မှာ!).</p><p><span class="deva">ဟိုမှာ</span> <b>ho hma</b> = over there — the pointing word ဟို from ဟိုဟာ, plus မှာ.</p>',eg:[['ဒီနားမှာ','di na hma','near here'],['ဟိုမှာ','ho hma','over there']]},
+{t:'mc',q:'Which means "near here"?',o:['ဒီနားမှာ','ဟိုမှာ','နီးတယ်','ဘယ်မှာ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဟိုမှာ',o:['over there','near here','which place','far away'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဝေးလား',o:['ဝေးလား','ဝေးတယ်','နီးတယ်','ဝယ်လား'],a:0}]},
+{id:'my_farnear_2',title:'Hear the distance',step:'recognize',meta:'Far or near by ear',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဝေးတယ်',o:['ဝေးတယ်','နီးတယ်','ဝယ်တယ်','ဝေးလား'],a:0},
+{t:'mc',q:'Which means "is it far?"',o:['ဝေးလား','ဝေးတယ်','နီးလား','ဘယ်မှာလဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒီနားမှာ',o:['ဒီနားမှာ','ဟိုမှာ','ဒီမှာ','နီးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဝေးတယ်',o:['is far','is near','went away','is slow'],a:0},
+{t:'mc',q:'ဝေးတယ် vs ဝယ်တယ် —',o:['far vs buy','buy vs far','both far','both buy'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဟိုမှာ',o:['ဟိုမှာ','ဒီနားမှာ','ဟိုဟာ','ဘယ်မှာ'],a:0},
+{t:'mc',q:'ဒီနားမှာ is built from this + vicinity +…',o:['မှာ (at)','ကို (to)','က (from)','နဲ့ (with)'],a:0}]},
+{id:'my_farnear_3',title:'Put it together',step:'build',meta:'Size up the trip',vocab:[],ex:[
+{t:'match',q:'Match line and meaning',pairs:[['ဝေးတယ်','is far'],['နီးတယ်','is near'],['ဒီနားမှာ','near here'],['ဟိုမှာ','over there']]},
+{t:'wb',q:'Build: Is the airport far?',a:['လေဆိပ်','ဝေးလား'],pool:['လေဆိပ်','ဝေးလား','နီးတယ်']},
+{t:'mc',q:'Good news — the teashop is close:',o:['နီးတယ်','ဝေးတယ်','ဝေးလား','မနီးဘူး'],a:0},
+{t:'li',q:'Listen — which one?',say:'နီးတယ်',o:['နီးတယ်','ဝေးတယ်','နည်းနည်း','နေတယ်'],a:0},
+{t:'wb',q:'Build: The market is near here',a:['ဈေး','ဒီနားမှာ','ရှိတယ်'],pool:['ဈေး','ဒီနားမှာ','ရှိတယ်','ဝေးတယ်']},
+{t:'match',q:'Match line and meaning',pairs:[['ဝေးလား','is it far?'],['နီးတယ်','is near'],['ဟိုမှာ','over there'],['ဝေးတယ်','is far']]}]},
+{id:'my_farnear_4',title:'Mix it',step:'mix',meta:'Distance decisions',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဒီနားမှာ',o:['near here','over there','far away','at which place'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဝေးတယ်',o:['ဝေးတယ်','ဝယ်တယ်','နီးတယ်','ဝေးလား'],a:0},
+{t:'mc',q:'ဝေးတယ်! Which ride makes sense?',o:['တက္ကစီ','ခဏ','သော့','ထိုင်ပါ'],a:0},
+{t:'wb',q:'Build: Is the station near? — station nears-question',a:['ဘူတာ','နီးလား'],pool:['ဘူတာ','နီးလား','ဝေးလား']},
+{t:'li',q:'Listen — which one?',say:'ဟိုမှာ',o:['ဟိုမှာ','ဟိုဟာ','ဒီနားမှာ','မှာ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ဝေးတယ်','is far'],['ဒီနားမှာ','near here'],['ဝေးလား','is it far?'],['နီးတယ်','is near']]}]},
+{id:'my_farnear_5',title:'Checkpoint',step:'checkpoint',meta:'Distance mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "is near"?',o:['နီးတယ်','ဝေးတယ်','နည်းနည်း','ဒီနားမှာ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒီနားမှာ',o:['ဒီနားမှာ','ဟိုမှာ','ဘယ်မှာ','နီးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဝေးလား',o:['is it far?','is it near?','how much?','where is it?'],a:0},
+{t:'wb',q:'Build: The school is over there',a:['ကျောင်း','ဟိုမှာ','ရှိတယ်'],pool:['ကျောင်း','ဟိုမှာ','ရှိတယ်','ဒီနားမှာ']},
+{t:'mc',q:'far · near =',o:['ဝေး · နီး','နီး · ဝေး','ဝယ် · နီး','ဝေး · နေ'],a:0},
+{t:'match',q:'Match line and meaning',pairs:[['ဝေးတယ်','is far'],['နီးတယ်','is near'],['ဟိုမှာ','over there'],['ဒီနားမှာ','near here']]}]},
+
+/* --- Topic 4: tickets & stations --- */
+{id:'my_tik',title:'Tickets & stations',step:'learn',meta:'လက်မှတ် ဘူတာ လေဆိပ် ထွက်',vocab:[['လက်မှတ်','leq hmaq','ticket'],['ဘူတာ','bu ta','train station'],['လေဆိပ်','lei zeiq','airport'],['ထွက်တယ်','htweq de','leave / depart'],['အချိန်','a chein','time'],['ဘယ်အချိန်ထွက်လဲ','beh a chein htweq leh','what time does it leave?']],ex:[
+{t:'note',tag:'At the counter',q:'လက်မှတ် · ဘူတာ · လေဆိပ်',body:'<p><span class="deva">လက်မှတ်</span> <b>leq hmaq</b> = ticket (literally "hand-mark"!). Buy one at the <span class="deva">ဘူတာ</span> <b>bu ta</b> (train station) or the <span class="deva">လေဆိပ်</span> <b>lei zeiq</b> (airport — "air port", literally).</p>',eg:[['လက်မှတ်','leq hmaq','ticket'],['ဘူတာ','bu ta','station'],['လေဆိပ်','lei zeiq','airport']]},
+{t:'mc',q:'Which means "ticket"?',o:['လက်မှတ်','ဘူတာ','လေဆိပ်','အချိန်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လေဆိပ်',o:['airport','train station','bus stop','harbor'],a:0},
+{t:'note',tag:'When does it go?',q:'ထွက် · အချိန်',body:'<p><span class="deva">ထွက်တယ်</span> <b>htweq de</b> = leave, depart. <span class="deva">အချိန်</span> <b>a chein</b> = time.</p><p>The traveler question: <span class="deva">ဘယ်အချိန်ထွက်လဲ</span> — what time does it leave?</p>',eg:[['ထွက်တယ်','htweq de','depart'],['ဘယ်အချိန်ထွက်လဲ','beh a chein htweq leh','what time does it leave?']]},
+{t:'mc',q:'Which means "leave / depart"?',o:['ထွက်တယ်','ရောက်တယ်','သွားတယ်','စီးတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်အချိန်ထွက်လဲ',o:['what time does it leave?','what time is it?','when does it arrive?','how long does it take?'],a:0},
+{t:'li',q:'Listen — which one?',say:'လက်မှတ်',o:['လက်မှတ်','ဘူတာ','လေဆိပ်','အချိန်'],a:0}]},
+{id:'my_tik_2',title:'Hear the journey',step:'recognize',meta:'Spot the travel words',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဘူတာ',o:['ဘူတာ','ဘူး','လေဆိပ်','ဘတ်စ်ကား'],a:0},
+{t:'mc',q:'Which means "airport"?',o:['လေဆိပ်','ဘူတာ','လက်မှတ်','လေ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ထွက်တယ်',o:['ထွက်တယ်','ရောက်တယ်','ထိုင်တယ်','ဝယ်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'အချိန်',o:['time','ticket','hour','clock'],a:0},
+{t:'mc',q:'ထွက်တယ် vs ရောက်တယ် —',o:['depart vs arrive','arrive vs depart','both depart','both arrive'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်အချိန်ထွက်လဲ',o:['ဘယ်အချိန်ထွက်လဲ','ဘယ်နှနာရီလဲ','ထွက်တယ်','အချိန်'],a:0},
+{t:'mc',q:'လက်မှတ် is literally…',o:['hand-mark','paper-money','seat-paper','way-pass'],a:0}]},
+{id:'my_tik_3',title:'Put it together',step:'build',meta:'Buy your passage',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['လက်မှတ်','ticket'],['ဘူတာ','train station'],['လေဆိပ်','airport'],['အချိန်','time']]},
+{t:'wb',q:'Build: One ticket, please — ticket one thing please-give',a:['လက်မှတ်','တစ်','ခု','ပေးပါ'],pool:['လက်မှတ်','တစ်','ခု','ပေးပါ','ယောက်']},
+{t:'mc',q:'"The train leaves" is…',o:['ရထားထွက်တယ်','ရထားရောက်တယ်','ရထားစီးတယ်','ရထားလာတယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'လေဆိပ်',o:['လေဆိပ်','ဘူတာ','လက်မှတ်','လေ'],a:0},
+{t:'wb',q:'Build: What time does the bus leave?',a:['ဘတ်စ်ကား','ဘယ်အချိန်','ထွက်လဲ'],pool:['ဘတ်စ်ကား','ဘယ်အချိန်','ထွက်လဲ','ရောက်လဲ']},
+{t:'match',q:'Match line and meaning',pairs:[['ထွက်တယ်','depart'],['ရောက်တယ်','arrive'],['ဘယ်အချိန်ထွက်လဲ','what time does it leave?'],['လက်မှတ်','ticket']]}]},
+{id:'my_tik_4',title:'Mix it',step:'mix',meta:'Catch that train',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဘူတာ',o:['train station','airport','bus','ticket'],a:0},
+{t:'li',q:'Listen — which one?',say:'အချိန်',o:['အချိန်','ချိန်','အခန်း','နာရီ'],a:0},
+{t:'mc',q:'Flying to Mandalay — first stop:',o:['လေဆိပ်','ဘူတာ','ဈေး','လက်ဖက်ရည်ဆိုင်'],a:0},
+{t:'wb',q:'Build: Ticket, please',a:['လက်မှတ်','ပေးပါ'],pool:['လက်မှတ်','ပေးပါ','ဝယ်ပါ']},
+{t:'li',q:'Listen — which one?',say:'ထွက်တယ်',o:['ထွက်တယ်','ထွက်လဲ','ရောက်တယ်','ထိုင်ပါ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဘူတာ','train station'],['လေဆိပ်','airport'],['အချိန်','time'],['ထွက်တယ်','depart']]}]},
+{id:'my_tik_5',title:'Checkpoint',step:'checkpoint',meta:'Journeys mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "train station"?',o:['ဘူတာ','လေဆိပ်','ဘတ်စ်ကား','လက်မှတ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်အချိန်ထွက်လဲ',o:['ဘယ်အချိန်ထွက်လဲ','ဘယ်နှနာရီလဲ','ဘယ်အချိန်ရောက်လဲ','ထွက်တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လက်မှတ်',o:['ticket','time','station','money'],a:0},
+{t:'wb',q:'Build: What time does the train leave?',a:['ရထား','ဘယ်အချိန်','ထွက်လဲ'],pool:['ရထား','ဘယ်အချိန်','ထွက်လဲ','နီးလား']},
+{t:'mc',q:'depart · arrive =',o:['ထွက် · ရောက်','ရောက် · ထွက်','သွား · လာ','စီး · ဆင်း'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['လက်မှတ်','ticket'],['ဘူတာ','train station'],['လေဆိပ်','airport'],['ဘယ်အချိန်ထွက်လဲ','what time does it leave?']]}]},
+
+/* --- Topic 5: hotel & the have-verb ရှိ --- */
+{id:'my_hotel',title:'At the hotel',step:'learn',meta:'ရှိ — have & there-is + အခန်း',vocab:[['ရှိတယ်','shi de','there is / have'],['မရှိဘူး','ma shi bu','there is not / do not have'],['ဟိုတယ်','ho teh','hotel'],['အခန်း','a hkan','room'],['အခန်းရှိလား','a hkan shi la','do you have a room?'],['သော့','thaw','key']],ex:[
+{t:'note',tag:'The have-verb',q:'ရှိတယ် · မရှိဘူး',body:'<p>Meet the most useful verb you did not know you were missing: <span class="deva">ရှိတယ်</span> <b>shi de</b> — there is / I have. <span class="deva">မရှိဘူး</span> — there is not / I do not have.</p><p><span class="deva">ပိုက်ဆံရှိလား</span> — got money? <span class="deva">အချိန်မရှိဘူး</span> — no time!</p>',eg:[['ရှိတယ်','shi de','there is / have'],['မရှိဘူး','ma shi bu','there is not']]},
+{t:'mc',q:'Which means "there is / have"?',o:['ရှိတယ်','ရတယ်','ရောက်တယ်','နေတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'မရှိဘူး',o:['there is not / do not have','must not','cannot','never was'],a:0},
+{t:'note',tag:'Checking in',q:'ဟိုတယ် · အခန်း · သော့',body:'<p><span class="deva">ဟိုတယ်</span> <b>ho teh</b> = hotel (another English word in Burmese clothes). <span class="deva">အခန်း</span> <b>a hkan</b> = room · <span class="deva">သော့</span> <b>thaw</b> = key.</p><p>At the desk: <span class="deva">အခန်းရှိလား</span> — do you have a room?</p>',eg:[['အခန်း','a hkan','room'],['အခန်းရှိလား','a hkan shi la','do you have a room?'],['သော့','thaw','key']]},
+{t:'mc',q:'How do you ask "Do you have a room?"',o:['အခန်းရှိလား','အခန်းဘယ်မှာလဲ','အခန်းကြီးလား','အခန်းပေးပါ'],a:0},
+{t:'mc',q:'What does this mean?',d:'သော့',o:['key','room','door','lock'],a:0},
+{t:'li',q:'Listen — which one?',say:'အခန်းရှိလား',o:['အခန်းရှိလား','အခန်း','ရှိတယ်','ဟိုတယ်'],a:0}]},
+{id:'my_hotel_2',title:'Hear the check-in',step:'recognize',meta:'Spot the hotel words',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ရှိတယ်',o:['ရှိတယ်','မရှိဘူး','ရတယ်','ရှိလား'],a:0},
+{t:'mc',q:'Which means "room"?',o:['အခန်း','ဟိုတယ်','သော့','အချိန်'],a:0},
+{t:'li',q:'Listen — which one?',say:'သော့',o:['သော့','သွား','သော','ဆော့'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဟိုတယ်',o:['hotel','over there','that one','house'],a:0},
+{t:'mc',q:'The desk answers မရှိဘူး. That means…',o:['no rooms available','rooms available','come tomorrow','too expensive'],a:0},
+{t:'li',q:'Listen — which one?',say:'အခန်း',o:['အခန်း','အချိန်','ခဏ','အလုပ်'],a:0},
+{t:'mc',q:'"No time!" is…',o:['အချိန်မရှိဘူး','အချိန်ရှိတယ်','အခန်းမရှိဘူး','ခဏစောင့်ပါ'],a:0}]},
+{id:'my_hotel_3',title:'Put it together',step:'build',meta:'Check in smoothly',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ရှိတယ်','there is / have'],['ဟိုတယ်','hotel'],['အခန်း','room'],['သော့','key']]},
+{t:'wb',q:'Build: Do you have a room?',a:['အခန်း','ရှိလား'],pool:['အခန်း','ရှိလား','ရှိတယ်']},
+{t:'mc',q:'"I have money" is…',o:['ပိုက်ဆံရှိတယ်','ပိုက်ဆံမရှိဘူး','ပိုက်ဆံရတယ်','ပိုက်ဆံပေးပါ'],a:0},
+{t:'li',q:'Listen — which one?',say:'မရှိဘူး',o:['မရှိဘူး','ရှိတယ်','မသိဘူး','မရဘူး'],a:0},
+{t:'wb',q:'Build: Key, please',a:['သော့','ပေးပါ'],pool:['သော့','ပေးပါ','ရှိလား']},
+{t:'match',q:'Match line and meaning',pairs:[['အခန်းရှိလား','do you have a room?'],['မရှိဘူး','there is not'],['ရှိတယ်','there is'],['သော့','key']]}]},
+{id:'my_hotel_4',title:'Mix it',step:'mix',meta:'A night in town',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'အခန်းရှိလား',o:['do you have a room?','where is the room?','is the room big?','room key, please'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဟိုတယ်',o:['ဟိုတယ်','ဟိုဟာ','ဟိုမှာ','ဟုတ်တယ်'],a:0},
+{t:'mc',q:'You lost your key. At the desk:',o:['သော့မရှိဘူး','သော့ရှိတယ်','အခန်းကြီးတယ်','ရောက်ပြီ'],a:0},
+{t:'wb',q:'Build: Is there a teashop near here?',a:['ဒီနားမှာ','လက်ဖက်ရည်ဆိုင်','ရှိလား'],pool:['ဒီနားမှာ','လက်ဖက်ရည်ဆိုင်','ရှိလား','ရှိတယ်']},
+{t:'li',q:'Listen — which one?',say:'ရှိလား',o:['ရှိလား','ရှိတယ်','ရလား','မရှိဘူး'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဟိုတယ်','hotel'],['အခန်း','room'],['သော့','key'],['မရှိဘူး','do not have']]}]},
+{id:'my_hotel_5',title:'Checkpoint',step:'checkpoint',meta:'Hotel mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "key"?',o:['သော့','အခန်း','ဟိုတယ်','လက်မှတ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'အခန်းရှိလား',o:['အခန်းရှိလား','အခန်း','ရှိလား','ဟိုတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရှိတယ်',o:['there is / have','it is OK','arrived','know'],a:0},
+{t:'wb',q:'Build: I do not have time',a:['အချိန်','မရှိဘူး'],pool:['အချိန်','မရှိဘူး','ရှိတယ်']},
+{t:'mc',q:'The have/there-is verb is…',o:['ရှိ','ရ','နေ','ရောက်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ရှိတယ်','there is / have'],['အခန်း','room'],['သော့','key'],['ဟိုတယ်','hotel']]}]},
+
+/* --- Topic 6: months, years & dates --- */
+{id:'my_month',title:'Months & dates',step:'learn',meta:'လ နှစ် ရက် — the calendar',vocab:[['လ','la','month (& the moon)'],['ဒီလ','di la','this month'],['နောက်လ','nauq la','next month'],['နှစ်','hniq','year'],['ဒီနှစ်','di hniq','this year'],['ရက်','yeq','day (of the month)'],['ဘယ်နှရက်လဲ','beh hna yeq leh','what date is it?']],ex:[
+{t:'note',tag:'Moon months',q:'လ · ဒီလ · နောက်လ',body:'<p><span class="deva">လ</span> <b>la</b> is the moon — and so also the month. <span class="deva">ဒီလ</span> this month (there is our ဒီ from ဒီနေ့!) · <span class="deva">နောက်လ</span> <b>nauq la</b> next month.</p>',eg:[['လ','la','month / moon'],['ဒီလ','di la','this month'],['နောက်လ','nauq la','next month']]},
+{t:'mc',q:'Which means "month"?',o:['လ','နှစ်','ရက်','နေ့'],a:0},
+{t:'mc',q:'What does this mean?',d:'နောက်လ',o:['next month','last month','this month','the moon'],a:0},
+{t:'note',tag:'Years & dates',q:'နှစ် · ရက်',body:'<p>Surprise: <span class="deva">နှစ်</span> <b>hniq</b> = year… and also "two"! Same sound, context decides. <span class="deva">ဒီနှစ်</span> = this year.</p><p><span class="deva">ရက်</span> <b>yeq</b> = day of the month. <span class="deva">ဒီနေ့ ဘယ်နှရက်လဲ</span> — what date is today?</p>',eg:[['ဒီနှစ်','di hniq','this year'],['ရက်','yeq','date'],['ဘယ်နှရက်လဲ','beh hna yeq leh','what date is it?']]},
+{t:'mc',q:'Which means "this year"?',o:['ဒီနှစ်','ဒီလ','ဒီနေ့','နောက်လ'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဘယ်နှရက်လဲ',o:['what date is it?','what day of the week?','what time is it?','how many years?'],a:0},
+{t:'li',q:'Listen — which one?',say:'နောက်လ',o:['နောက်လ','ဒီလ','နှစ်','လ'],a:0}]},
+{id:'my_month_2',title:'Hear the calendar',step:'recognize',meta:'Month, year or date?',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'လ',o:['လ','နှစ်','ရက်','လာ'],a:0},
+{t:'mc',q:'Which means "year"?',o:['နှစ်','လ','ရက်','နေ့'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒီနှစ်',o:['ဒီနှစ်','ဒီလ','ဒီနေ့','နှစ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ရက်',o:['day of the month','week','month','hour'],a:0},
+{t:'mc',q:'နှစ် means year AND…',o:['two','new','moon','day'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှရက်လဲ',o:['ဘယ်နှရက်လဲ','ဘယ်နှနာရီလဲ','ဘယ်နှယောက်လဲ','ရက်'],a:0},
+{t:'mc',q:'လ means month because it is also the word for…',o:['the moon','the sun','the sky','the night'],a:0}]},
+{id:'my_month_3',title:'Put it together',step:'build',meta:'Date your plans',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['လ','month'],['နှစ်','year'],['ရက်','date'],['နောက်လ','next month']]},
+{t:'wb',q:'Build: (I) will go to Myanmar next month',a:['နောက်လ','မြန်မာ','ကို','သွားမယ်'],pool:['နောက်လ','မြန်မာ','ကို','သွားမယ်','ဒီလ']},
+{t:'mc',q:'"This month" is…',o:['ဒီလ','ဒီနှစ်','ဒီနေ့','နောက်လ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဒီလ',o:['ဒီလ','ဒီနှစ်','နောက်လ','ဒီနေ့'],a:0},
+{t:'wb',q:'Build: What date is today?',a:['ဒီနေ့','ဘယ်နှရက်','လဲ'],pool:['ဒီနေ့','ဘယ်နှရက်','လဲ','လား']},
+{t:'match',q:'Match word and meaning',pairs:[['ဒီလ','this month'],['ဒီနှစ်','this year'],['ဒီနေ့','today'],['နောက်လ','next month']]}]},
+{id:'my_month_4',title:'Mix it',step:'mix',meta:'Calendar in action',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဒီနှစ်',o:['this year','this month','today','two of these'],a:0},
+{t:'li',q:'Listen — which one?',say:'ရက်',o:['ရက်','ရေ','နှစ်','လ'],a:0},
+{t:'mc',q:'Your visa run is coming. "Next month I must go":',o:['နောက်လသွားရမယ်','ဒီလသွားဖူးတယ်','ဒီနှစ်လာမယ်','မနေ့ကသွားခဲ့တယ်'],a:0},
+{t:'wb',q:'Build: (I) will work this year',a:['ဒီနှစ်','အလုပ်လုပ်မယ်'],pool:['ဒီနှစ်','အလုပ်လုပ်မယ်','အလုပ်လုပ်တယ်']},
+{t:'li',q:'Listen — which one?',say:'ဒီနှစ်',o:['ဒီနှစ်','နှစ်','ဒီလ','ဒီနေ့'],a:0},
+{t:'match',q:'Match span and word',pairs:[['ရက်','day of the month'],['လ','month'],['နှစ်','year'],['နာရီ','hour']]}]},
+{id:'my_month_5',title:'Checkpoint',step:'checkpoint',meta:'Calendar mastered?',vocab:[],ex:[
+{t:'mc',q:'Which means "next month"?',o:['နောက်လ','ဒီလ','နောက်နှစ်','ဒီနှစ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဘယ်နှရက်လဲ',o:['ဘယ်နှရက်လဲ','ဘယ်နှရာလဲ','ဘယ်နှနာရီလဲ','ရက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'လ',o:['month / moon','year','date','week'],a:0},
+{t:'wb',q:'Build: (She) will come next month',a:['နောက်လ','လာမယ်'],pool:['နောက်လ','လာမယ်','လာခဲ့တယ်']},
+{t:'mc',q:'day · month · year =',o:['ရက် · လ · နှစ်','လ · ရက် · နှစ်','နှစ် · လ · ရက်','ရက် · နှစ် · လ'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ရက်','date'],['ဒီလ','this month'],['ဒီနှစ်','this year'],['နောက်လ','next month']]}]},
+
+/* --- Topic 7: phone & keeping in touch --- */
+{id:'my_phone',title:'On the phone',step:'learn',meta:'ဖုန်း နံပါတ် ဆက် ပို့',vocab:[['ဖုန်း','hpoun','phone'],['နံပါတ်','nan baq','number'],['ဖုန်းဆက်တယ်','hpoun hseq de','make a call'],['စာပို့တယ်','sa po de','send a message'],['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','hpoun nan baq beh lauq leh','what is your phone number?']],ex:[
+{t:'note',tag:'Stay in touch',q:'ဖုန်း · နံပါတ်',body:'<p><span class="deva">ဖုန်း</span> <b>hpoun</b> = phone · <span class="deva">နံပါတ်</span> <b>nan baq</b> = number (two more English words dressed in Burmese!).</p><p>Ask for digits with the amount-question: <span class="deva">ဖုန်းနံပါတ်ဘယ်လောက်လဲ</span> — what is your phone number?</p>',eg:[['ဖုန်း','hpoun','phone'],['နံပါတ်','nan baq','number']]},
+{t:'mc',q:'Which means "phone"?',o:['ဖုန်း','နံပါတ်','စာ','သော့'],a:0},
+{t:'mc',q:'How do you ask for someone’s phone number?',o:['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','ဖုန်းဘယ်မှာလဲ','ဖုန်းရှိလား','ဖုန်းဆက်တယ်'],a:0},
+{t:'note',tag:'Call & text',q:'ဆက် · ပို့',body:'<p><span class="deva">ဖုန်းဆက်တယ်</span> <b>hpoun hseq de</b> = make a call (ဆက် = connect). <span class="deva">စာပို့တယ်</span> <b>sa po de</b> = send a message (စာ = writing, ပို့ = send).</p>',eg:[['ဖုန်းဆက်တယ်','hpoun hseq de','make a call'],['စာပို့တယ်','sa po de','send a message']]},
+{t:'mc',q:'Which means "make a call"?',o:['ဖုန်းဆက်တယ်','စာပို့တယ်','ဖုန်းဝယ်တယ်','ဖုန်းရှိတယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'စာပို့တယ်',o:['send a message','make a call','write a book','read a letter'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဖုန်းဆက်တယ်',o:['ဖုန်းဆက်တယ်','စာပို့တယ်','ဖုန်း','နံပါတ်'],a:0}]},
+{id:'my_phone_2',title:'Hear the call',step:'recognize',meta:'Spot the phone words',vocab:[],ex:[
+{t:'li',q:'Listen — which one?',say:'ဖုန်း',o:['ဖုန်း','နံပါတ်','ဖုန်းဆက်တယ်','ဟုန်း'],a:0},
+{t:'mc',q:'Which means "number"?',o:['နံပါတ်','ဖုန်း','ရက်','စာ'],a:0},
+{t:'li',q:'Listen — which one?',say:'စာပို့တယ်',o:['စာပို့တယ်','ဖုန်းဆက်တယ်','စာ','ပို့တယ်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဖုန်းနံပါတ်ဘယ်လောက်လဲ',o:['what is your phone number?','where is your phone?','do you have a phone?','whose number is this?'],a:0},
+{t:'mc',q:'ဆက် in ဖုန်းဆက်တယ် means…',o:['connect','send','buy','hold'],a:0},
+{t:'li',q:'Listen — which one?',say:'နံပါတ်',o:['နံပါတ်','ဖုန်း','နာရီ','ရာ'],a:0},
+{t:'mc',q:'ဖုန်း and နံပါတ် came into Burmese from…',o:['English','Pali','Mon','Chinese'],a:0}]},
+{id:'my_phone_3',title:'Put it together',step:'build',meta:'Swap numbers',vocab:[],ex:[
+{t:'match',q:'Match word and meaning',pairs:[['ဖုန်း','phone'],['နံပါတ်','number'],['ဖုန်းဆက်တယ်','make a call'],['စာပို့တယ်','send a message']]},
+{t:'wb',q:'Build: What is your phone number?',a:['ဖုန်းနံပါတ်','ဘယ်လောက်','လဲ'],pool:['ဖုန်းနံပါတ်','ဘယ်လောက်','လဲ','လား']},
+{t:'mc',q:'"(I) will call tomorrow" is…',o:['မနက်ဖြန်ဖုန်းဆက်မယ်','မနက်ဖြန်စာပို့ခဲ့တယ်','ဒီနေ့ဖုန်းဆက်တယ်','ဖုန်းနံပါတ်ဘယ်လောက်လဲ'],a:0},
+{t:'li',q:'Listen — which one?',say:'ဖုန်းနံပါတ်ဘယ်လောက်လဲ',o:['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','ဖုန်းဆက်တယ်','ဒါဘယ်လောက်လဲ','နံပါတ်'],a:0},
+{t:'wb',q:'Build: Please send a message — message send-please',a:['စာ','ပို့ပါ'],pool:['စာ','ပို့ပါ','ပို့တယ်']},
+{t:'match',q:'Match action and meaning',pairs:[['ဖုန်းဆက်တယ်','make a call'],['စာပို့တယ်','send a message'],['ဖုန်း','phone'],['နံပါတ်','number']]}]},
+{id:'my_phone_4',title:'Mix it',step:'mix',meta:'Keep in touch',vocab:[],ex:[
+{t:'mc',q:'What does this mean?',d:'ဖုန်းဆက်တယ်',o:['make a call','send a message','buy a phone','answer'],a:0},
+{t:'li',q:'Listen — which one?',say:'စာပို့တယ်',o:['စာပို့တယ်','စားပို့တယ်','ဖုန်းဆက်တယ်','စာ'],a:0},
+{t:'mc',q:'New friend at the teashop. Before leaving, ask…',o:['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','ဘယ်နှရက်လဲ','အခန်းရှိလား','ဘယ်အချိန်ထွက်လဲ'],a:0},
+{t:'wb',q:'Build: (I) will call tonight — night phone-call-will',a:['ည','ဖုန်းဆက်မယ်'],pool:['ည','ဖုန်းဆက်မယ်','ဖုန်းဆက်တယ်']},
+{t:'li',q:'Listen — which one?',say:'ဖုန်း',o:['ဖုန်း','ဖူး','ပုန်း','နံပါတ်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဖုန်း','phone'],['စာပို့တယ်','send a message'],['နံပါတ်','number'],['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','what is your number?']]}]},
+{id:'my_phone_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 8 complete!',vocab:[],ex:[
+{t:'mc',q:'Which means "send a message"?',o:['စာပို့တယ်','ဖုန်းဆက်တယ်','ဖုန်းဝယ်တယ်','စာဖတ်တယ်'],a:0},
+{t:'li',q:'Listen — which one?',say:'နံပါတ်',o:['နံပါတ်','ဖုန်း','နာရီ','ရက်'],a:0},
+{t:'mc',q:'What does this mean?',d:'ဖုန်း',o:['phone','number','message','call'],a:0},
+{t:'wb',q:'Build: I will make a call tomorrow (man speaking)',a:['ကျွန်တော်','မနက်ဖြန်','ဖုန်းဆက်မယ်'],pool:['ကျွန်တော်','မနက်ဖြန်','ဖုန်းဆက်မယ်','စာပို့တယ်']},
+{t:'mc',q:'call · text =',o:['ဆက် · ပို့','ပို့ · ဆက်','ဝယ် · ရောင်း','ထွက် · ရောက်'],a:0},
+{t:'match',q:'Match word and meaning',pairs:[['ဖုန်း','phone'],['နံပါတ်','number'],['ဖုန်းဆက်တယ်','make a call'],['စာပို့တယ်','send a message']]}]},
 ];
 
 /* ---------- per-language art (secular: dramatic Hpa-an-style karst limestone
