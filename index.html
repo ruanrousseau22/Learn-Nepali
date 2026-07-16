@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="Bhasaly">
 <meta property="og:title" content="Bhasaly — Learn Nepali &amp; Khmer, free">
-<meta property="og:description" content="Read the script, build real sentences, and practice with audio. A free, beginner-friendly way to learn Nepali and Khmer.">
+<meta property="og:description" content="Read the script, build real sentences, and practice with audio. A free, beginner-friendly way to learn Nepali, Khmer and Burmese.">
 <meta property="og:url" content="https://bhasaly.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
@@ -25,15 +25,15 @@
 <meta property="og:image:alt" content="Bhasaly — learn Nepali and Khmer, free">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bhasaly — Learn Nepali &amp; Khmer, free">
-<meta name="twitter:description" content="Read the script, build real sentences, and practice with audio. A free, beginner-friendly way to learn Nepali and Khmer.">
+<meta name="twitter:description" content="Read the script, build real sentences, and practice with audio. A free, beginner-friendly way to learn Nepali, Khmer and Burmese.">
 <meta name="twitter:image" content="https://bhasaly.com/og-image.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://bhasaly.com/#website","url":"https://bhasaly.com/","name":"Bhasaly","description":"Learn Nepali and Khmer for free."},
+{"@type":"WebSite","@id":"https://bhasaly.com/#website","url":"https://bhasaly.com/","name":"Bhasaly","description":"Learn Nepali, Khmer and Burmese for free."},
 {"@type":["WebApplication","EducationalApplication"],"@id":"https://bhasaly.com/#app","name":"Bhasaly","url":"https://bhasaly.com/","applicationCategory":"EducationalApplication","operatingSystem":"Web browser","browserRequirements":"Requires JavaScript","description":"Learn Nepali, Khmer and Burmese free — read the script, build real sentences, and practice with audio.","inLanguage":"en","teaches":["Nepali language","Khmer language","Burmese language"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
 {"@type":"Course","name":"Learn Nepali","description":"Learn to read Devanagari and speak everyday Nepali for free — from the alphabet to real conversations, with audio.","url":"https://bhasaly.com/","inLanguage":"ne","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"Bhasaly","url":"https://bhasaly.com/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"Free"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"}},
 {"@type":"Course","name":"Learn Khmer","description":"Learn to read the Khmer script and speak everyday Cambodian Khmer for free — from the alphabet to real conversations, with audio.","url":"https://bhasaly.com/","inLanguage":"km","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"Bhasaly","url":"https://bhasaly.com/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"Free"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"}},
-{"@type":"Course","name":"Learn Burmese","description":"Learn to read the Burmese (Myanmar) script and sound out everyday Burmese for free — starting from the alphabet, with audio.","url":"https://bhasaly.com/","inLanguage":"my","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"Bhasaly","url":"https://bhasaly.com/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"Free"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"}}
+{"@type":"Course","name":"Learn Burmese","description":"Learn to read the Burmese (Myanmar) script and speak everyday Burmese for free — from the alphabet to real conversations, with audio.","url":"https://bhasaly.com/","inLanguage":"my","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"Bhasaly","url":"https://bhasaly.com/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"Free"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"}}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -963,7 +963,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       </g>
     </svg>
     <div class="pb-inner">
-      <h2>Review <span class="deva">अभ्यास</span></h2>
+      <h2>Review <span class="deva" id="review-native">अभ्यास</span></h2>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -988,7 +988,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       </g>
     </svg>
     <div class="pb-inner">
-      <h2>Settings <span class="deva">सेटिङ</span></h2>
+      <h2>Settings <span class="deva" id="settings-native">सेटिङ</span></h2>
       <p class="pb-sub">Progress saves to this browser. Log in to sync across devices.</p>
     </div>
   </div>
@@ -1200,7 +1200,7 @@ const NE_UNITS_INTENSIVE = [
 const NE_LESSONS = [
   /* ===================== UNIT 1 · THE SCRIPT ===================== */
   {id:'sc_vowels',title:'Vowels',step:'learn',meta:'The 10 vowel sounds',vocab:[['अ','a','vowel: a (cup)'],['आ','aa','vowel: aa (father)'],['इ','i','vowel: i (sit)'],['ई','ee','vowel: ee (see)'],['उ','u','vowel: u (put)'],['ऊ','oo','vowel: oo (moon)'],['ए','e','vowel: e (day)'],['ऐ','ai','vowel: ai (ice)'],['ओ','o','vowel: o (go)'],['औ','au','vowel: au (cow)']],ex:[
-{t:'note',tag:'Start here',q:'Meet Devanagari',body:'<p>Nepali is written in <b>Devanagari</b>, left to right. You will never have to type it — in these lessons you just <b>listen and tap</b>.</p><p>We begin with the <b>10 vowels</b>. Learn their sounds and you can pronounce almost anything.</p>',tip:'Tap the on any letter to hear it.'},
+{t:'note',tag:'Start here',q:'Meet Devanagari',body:'<p>Nepali is written in <b>Devanagari</b>, left to right. You will never have to type it — in these lessons you just <b>listen and tap</b>.</p><p>We begin with the <b>10 vowels</b>. Learn their sounds and you can pronounce almost anything.</p>',tip:'Tap the speaker on any letter to hear it.'},
 {t:'note',tag:'First two',q:'अ and आ',body:'<p><span class="deva">अ</span> = <b>a</b> — a short "uh", like the <i>u</i> in "cup".</p><p><span class="deva">आ</span> = <b>aa</b> — long, like the <i>a</i> in "father". Notice <span class="deva">आ</span> is just <span class="deva">अ</span> with one extra upright stroke.</p>',eg:[['अ','a','like u in cup'],['आ','aa','like a in father']]},
 {t:'mc',q:'What sound does this letter make?',d:'अ',o:['a (u in cup)','aa','ee','o'],a:0},
 {t:'mc',q:'And this one?',d:'आ',o:['aa (a in father)','a','i','u'],a:0},
@@ -9130,7 +9130,7 @@ registerPack({
   audioBase:'audio/',
   storageKey:'sajilo_ne',
   brand:{h1:'Learn <em>Nepali</em>'},
-  alpha:{native:'देवनागरी',vowels:'स्वर',cons:'व्यञ्जन',nums:'अंक'},
+  alpha:{native:'देवनागरी',vowels:'स्वर',cons:'व्यञ्जन',nums:'अंक',review:'अभ्यास',settings:'सेटिङ'},
   voiceTest:v=>/^ne(\b|[-_])/i.test(v.lang)||/nepali/i.test(v.name),
   fbVoiceTest:v=>/^hi(\b|[-_])/i.test(v.lang)||/hindi/i.test(v.name),
   fbVoiceName:'Hindi',
@@ -9204,6 +9204,7 @@ function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
   paintUnlock(); /* Intensive tab: needs a pack with an Intensive track AND the access code */
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};
   set('alpha-native',al.native);set('pdeva-vowels',al.vowels);set('pdeva-consonants',al.cons);set('pdeva-numerals',al.nums);
+  set('review-native',al.review);set('settings-native',al.settings); /* per-language "practice"/"settings" labels */
   applyArt();paintLangPicker();paintHomeLangSwitch();}
 /* per-language scenery: the built-in SVGs are the Nepali art (captured once as
    the default); a pack overrides them via art:{hero,band,mascot}. The data-lang

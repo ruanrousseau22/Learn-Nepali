@@ -3542,7 +3542,7 @@ registerPack({
   audioBase:'audio-km/',
   storageKey:'sajilo_km',
   brand:{h1:'Learn <em>Khmer</em>'},
-  alpha:{native:'អក្សរខ្មែរ',vowels:'ស្រៈ',cons:'ព្យញ្ជនៈ',nums:'លេខ'},
+  alpha:{native:'អក្សរខ្មែរ',vowels:'ស្រៈ',cons:'ព្យញ្ជនៈ',nums:'លេខ',review:'លំហាត់',settings:'ការកំណត់'},
   art:{hero:KM_HERO,band:KM_BAND,mascot:KM_MASCOT},
   voiceTest:v=>/^km(\b|[-_])/i.test(v.lang)||/khmer/i.test(v.name),
   fbVoiceTest:v=>false,

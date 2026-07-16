@@ -16,10 +16,11 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
-  at 12 zones and growing zone by zone (early-access label dropped July 2026);
-  **Burmese live at 2 zones (Script + Foundations), launched July 2026** and
-  growing zone by zone.
+- **Status (July 2026):** all three courses complete at 12 zones each —
+  Nepali (main 12 zones / 385 lessons + the Intensive track), Khmer
+  (12 zones / 420 lessons; early-access label dropped July 2026), and
+  Burmese (12 zones / 420 lessons; Zones 3–12 shipped in one July 2026
+  build-out, staged A–E, curriculum below).
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -32,8 +33,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   falling back to device TTS, heard as a female voice)
 - `audio-km/` + `audio_strings_km.json` — Khmer clips, manifest and strings source
 - `audio-my/` + `audio_strings_my.json` — Burmese clips, manifest and strings source
-  (116 clips: ဎ / U+100E, a rare Pali letter, has no clip — edge-tts returns no
-  audio for it, so it gracefully falls back to device TTS)
+  (934 clips for 935 strings: ဎ / U+100E, a rare Pali letter, has no clip —
+  edge-tts returns no audio for it, so it gracefully falls back to device TTS)
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `extract_audio_strings.js` — JXA extractor that regenerates a language's
   audio strings file from its pack (see Audio → Regenerating audio)
@@ -156,7 +157,15 @@ Two tracks share one `LESSONS` array (`NE_LESSONS` ends right before `NE_VOWELS`
   `acStart`/`acFlip`/`acGrade` — misses requeue until cleared; not SRS, so the
   Review word deck stays vocab-only).
 
-Current size: Nepali main course = 10 zones / 315 lessons / 63 topics; Language
+Current size: Nepali main course = 12 zones / 385 lessons / 77 topics (Zones
+11–12 added July 2026: Zone 11 "Chain your sentences" — the -एर converb,
+perfect -एको छ + कहिल्यै, पहिले/त्यसपछि/अन्त्यमा + भर्खर, frequency सधैं/
+प्रायः/कहिलेकाहीँ, pace बिस्तारै/छिटो/ढिलो/चाँडै, positions माथि/तल/भित्र/
+बाहिर/अगाडि, years & lakhs; Zone 12 "Living in Nepal" — हिमाल/पहाड/नदी/
+जङ्गल/गाउँ, animals, clothes incl. टोपी + जुत्ता खोल्नुहोस्, house झ्याल/
+खाट/टेबल/कुर्सी/साँचो, fruits आँप/केरा/स्याउ + गुलियो/पिरो, phone & post,
+help मद्दत/प्रहरी/होसियार/हरायो — all gap-checked against a main-course-only
+vocab extraction so nothing duplicates Zones 1–10); Language
 Intensive = 12 weeks / 312 lessons (300 + 12 weekly tests) / 60 topics. Khmer
 (`lang/km.js`) = 12 zones / 420 lessons / 84 topics, no Intensive
 (Zone 3 "Describe your world": to be, adjectives as stative verbs, negation,
@@ -265,17 +274,36 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Burmese (`lang/my.js`)** live at 2 zones. Zone 1 "The Script" (7 topics:
-  velars, sibilants, dentals, labials, the remaining consonants, vowel signs,
-  then tones + first words). Zone 2 "Foundations" (7 topics: greetings,
-  pronouns incl. speaker-dependent I/you + the တို့ plural, numbers 1–10,
-  numbers to 100 with the flip ဆယ့်တစ်=11 vs နှစ်ဆယ်=20 + ရာ, courtesy,
-  introductions, your-day time words). Romanization is the h-prefix aspiration
-  scheme (hk/hs/ht/hp) so **th stays reserved for သ /θ/**, checked finals take
-  **q** (houq, tiq, shiq), and words are romanized as pronounced (kyanaw,
-  chauq) — documented at the top of `lang/my.js`. No Intensive (Nepal-specific).
-  Grow zone by zone: append to `MY_UNITS`/`MY_LESSONS`, add SYM,
-  `extract_audio_strings.js my` then `generate_audio.py --lang my`.
+- **Burmese (`lang/my.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
+  (July 2026, staged A–E). Zone 1 "The Script"; Zone 2 "Foundations";
+  Zone 3 "Say a sentence" (ဒါ/အဲဒါ/ဟိုဟာ + ပါ, verbs + …တယ်, future …မယ်,
+  negation မ…ဘူး, yes/no …လား + echo answers, wh ဘာ/ဘယ်မှာ/ဘယ်သူ + …လဲ,
+  want ချင် + like ကြိုက်); Zone 4 "Where & with" (မှာ/ကို/က/နဲ့, cities,
+  kin terms as address ဦး/ဒေါ်/အစ်ကို/အစ်မ/ဆရာ, food, teashop …ပေးပါ);
+  Zone 5 "How many" (classifiers ယောက်/ခု/ကောင်/ခွက် + the ta/hna weakening,
+  money ကျပ် + ဘယ်လောက်လဲ, big numbers ရာ/ထောင်/သောင်း, bargaining
+  လျှော့ပေးပါ/ယူမယ်, clock time နာရီ/ခွဲ, days of the week); Zone 6
+  "Describe it" (adjectives-as-stative-verbs, tastes, အ-prefix colors,
+  comparisons ပို/ထက်/အ…ဆုံး, feelings, three seasons, body & health);
+  Zone 7 "Then & now" (past ခဲ့, now နေ, ever ဖူး, news ပြီ, can နိုင် vs
+  know-how တတ် + မြန်မာလို, must ရ, commands verb+ပါ); Zone 8 "Out & about"
+  (vehicles + စီး, directions ဘယ်/ညာ/တည့်တည့်/ကွေ့, far/near, tickets &
+  stations + ထွက်/ရောက်, hotel + the have-verb ရှိ, calendar လ/နှစ်/ရက်,
+  phone); Zone 9 "Say more" (ဒါပေမဲ့/လို့/ပြီးရင် glue, if ရင်, think ထင် +
+  နားလည်/ပြန်ပြောပါ, occupations via doer suffixes, hobbies, home routine,
+  help & safety); Zone 10 "Your Burmese life" (degrees အရမ်း/သိပ်မ…ဘူး,
+  family, age & married small talk, not-yet သေး, language talk, အခု/နောက်မှ/
+  ဘယ်တော့, tell-your-day); Zone 11 "Little extras" (need လို, pace
+  ဖြည်းဖြည်း/မြန်မြန်, longyi & clothes, animals, nature, remember/forget,
+  together/alone + years); Zone 12 "Make Myanmar home" (lakhs သိန်း/သန်း,
+  Pali ordinals, errands, စိတ် feelings + ဂရုစိုက်ပါ, guests & visiting,
+  -သီး fruits, polite polish ပါ-inside + နော်). Romanization is the h-prefix
+  aspiration scheme (hk/hs/ht/hp) so **th stays reserved for သ /θ/**, checked
+  finals take **q** (houq, tiq, shiq), words romanized as pronounced (kyanaw,
+  chauq) — documented at the top of `lang/my.js`. No Intensive
+  (Nepal-specific). Future Zone 13+ candidates: months by loan-name as
+  recognition vocab, weather round 2, ချစ်တယ် & relationships, more
+  storytelling (ပြောပြ) — research each word before shipping.
 - **The Burmese curriculum is Burmese-DRIVEN, not a Nepali/Khmer mirror**
   (Ruan, July 2026 — like the Khmer "Khmer-driven from Zone 8" rule, but from
   the start for Burmese). Researched against how Burmese is actually taught
@@ -298,13 +326,9 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   - **Kinship / status terms are used where English uses pronouns** (pronoun
     avoidance, already flagged in Zone 2) — treat family terms as address, not
     just vocab.
-  Resulting roadmap (research each word against sources before shipping):
-  Zone 3 "Say a sentence" (ဒါ this / ဟို that + ...ပါ, the ...တယ်/...မယ် verb
-  endings, core verbs စား/သောက်/သွား/လာ/နေ/ကြိုက်/ချင်, negation မ...ဘူး,
-  ဘာ…လဲ questions); Zone 4 "Where & with" (the က/ကို/မှာ/နဲ့ particles, places,
-  kinship terms as address, food & eating out); Zone 5 "How many" (classifiers,
-  counting money ကျပ် kyat, shopping & prices, clock time); Zone 6+ adjectives-
-  as-stative-verbs, feelings, the past ...ခဲ့, ability ...နိုင်, connectors.
+  That roadmap was DELIVERED in full as Zones 3–12 (see the zone list above);
+  key spellings were verified against Wiktionary as they shipped (ဒါပေမဲ့ not
+  ဒါပေမယ့်; တစ်ခါတစ်လေ; ဈေး; တည့်တည့် per asiapearltravels directions).
   **Burmese font gotcha:** its reordering vowels/medials (prevowel ေ, ya-yit ြ,
   ya-pin ျ) shatter into dotted boxes when rendered in the system fallback font.
   Any Burmese must keep **Noto Sans Myanmar in its font stack** — `.deva`/`.mc`/
