@@ -3497,8 +3497,10 @@ const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
 +'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>'
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
+/* distant birds over the fields */
++'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.8" stroke-linecap="round" opacity=".5" aria-hidden="true"><path d="M160 96 q6 -5 12 0 q6 -5 12 0"/><path d="M225 112 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* jungle treeline */
-+'<path class="far" d="M0 236 Q45 228 90 232 Q135 224 180 230 Q225 222 270 228 Q315 224 360 230 Q405 224 450 230 Q495 222 540 228 Q585 224 630 230 Q675 226 720 230 Q765 206 810 224 Q855 204 900 222 Q945 208 990 226 Q1035 206 1080 224 Q1125 208 1160 222 Q1180 214 1200 220 L1200 320 L0 320 Z"/>'
++'<path class="far" d="M0 236 Q45 224 90 229 Q135 218 180 226 Q225 216 270 224 Q315 218 360 226 Q405 216 450 224 Q495 218 540 226 Q585 216 630 224 Q675 220 720 228 Q765 206 810 224 Q855 204 900 222 Q945 208 990 226 Q1035 206 1080 224 Q1125 208 1160 222 Q1180 214 1200 220 L1200 320 L0 320 Z"/>'
 /* rural Cambodia: low fields, a stilt house & distant palms */
 +'<path class="mid" d="M0 320 L0 284 Q300 270 600 280 Q900 290 1200 276 L1200 320 Z '
 +'M688 282 L688 240 L696 240 L696 282 Z M736 284 L736 240 L744 240 L744 284 Z M784 284 L784 240 L792 240 L792 284 Z M832 282 L832 240 L840 240 L840 282 Z '
@@ -3506,6 +3508,9 @@ const KM_HERO='<circle class="orb-glow" cx="930" cy="94" r="76"/><circle class="
 +'M690 282 L710 246 L717 246 L697 282 Z '
 +'M944 268 C947 240 945 212 948 186 L952 187 C950 212 953 242 951 270 Z '
 +'M949 184 C935 175 920 173 908 177 C922 177 935 181 947 188 Z M949 184 C961 173 975 170 987 174 C975 176 962 181 951 188 Z M949 184 C942 169 932 161 920 159 C932 167 941 175 947 186 Z M949 184 C956 169 966 161 978 159 C966 167 957 175 951 186 Z M949 184 C949 167 944 155 935 148 C942 158 946 171 947 184 Z"/>'
+/* faint furrows on the left fields (texture under the title) */
++'<path class="snow" opacity=".22" d="M70 254 Q220 246 370 252 L368 258 Q220 250 74 260 Z"/>'
++'<path class="snow" opacity=".22" d="M150 266 Q300 256 430 262 L428 268 Q300 260 154 272 Z"/>'
 /* rice paddies + sugar palms */
 +'<g class="near"><path d="M0 296 Q160 258 320 290 Q480 318 640 284 Q800 254 960 292 Q1080 312 1200 288 L1200 320 L0 320 Z"/>'
 +'<path d="M975 300 C981 260 977 220 983 186 L989 188 C985 222 991 260 987 302 Z"/>'

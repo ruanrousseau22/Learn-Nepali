@@ -11,7 +11,9 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   serves it as the site root).
 - Live at **bhasaly.com** (primary domain on Netlify; **sajilonepali.com**
   301-redirects to it and both are whitelisted in Supabase Auth).
-- **Netlify** auto-deploys on every push to this repo (1–2 min). **Supabase** handles
+- **Netlify** auto-deploys on every push to this repo (1–2 min) — so **batch
+  work and push rarely** (each deploy costs ~15 Netlify credits; see Git /
+  deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
 - **Status (July 2026):** Nepali complete (main + Intensive tracks); Khmer live
@@ -493,6 +495,10 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 
 ## Git / deploy
 - Local repo: `~/Desktop/Learn-Nepali`. Push triggers Netlify redeploy.
+- **BATCH DEPLOYS — push rarely** (Ruan, July 2026): every push costs ~15
+  Netlify credits, so do NOT push after each task. Commit locally as work
+  completes; only `git push` once a large chunk of validated work has
+  accumulated, or when Ruan says to deploy.
 - `git push` password = GitHub **Personal Access Token** (not the account password).
 - The `audio/` and `audio-km/` folders must sit at the **top level** of the
   repo, next to the HTML.
