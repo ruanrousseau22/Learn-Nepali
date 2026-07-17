@@ -274,11 +274,27 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Scaffolds live for the next four languages (July 2026):** Sinhala (`si`),
+- **Sinhala (`lang/si.js`) IN PROGRESS — Zone 1 "The Script" live (July 2026,
+  Stage A; catalog label "· early access").** 7 topics / 35 lessons: ක ග න ම;
+  the two T families ත ද ට ඩ (dental-vs-retroflex is THE consonant story);
+  ප බ ස හ; ච ජ ය ර ල ව; the half-nasals ඟ ඬ ඳ ඹ (unique to Sinhala); vowel
+  signs incl. කැ (the "a of cat" — no other regional script has it) + hal
+  kirima ක්; first words වතුර/බත්/තේ/හොඳයි/ආයුබෝවන්. Romanization (documented
+  at the top of `lang/si.js`): Sri Lankan convention — soft dental th/dh vs
+  hard retroflex t/d, doubled long vowels, ae for ඇ; the course teaches
+  SPOKEN Sinhala (diglossia: colloquial verbs never conjugate for person —
+  teach that as the freebie). The researched 12-zone roadmap sits in the
+  si.js header — build Zones 2+ from it, Burmese-style (research-first,
+  Sinhala-driven). SI_NUMS teaches spoken number words (modern Sinhala
+  writes Western digits). Audio: 83/86 clips via `si-LK-SameeraNeural`
+  (ඞ ඣ ඦ get no edge-tts audio → device TTS fallback, like Burmese ဎ);
+  extractor + generator both know `si` now. SEO/JSON-LD still pending —
+  add the Course entry + title/keywords when the course ships properly.
+- **Scaffolds live for the remaining three languages (July 2026):**
   Lao (`lo`), Pashto (`ps`), Mongolian (`mn`) — `lang/<code>.js` packs with
-  EMPTY lessons/units/alphabet, full secular art (hero/band/mascot: Sri Lanka
-  tea-coast + leopard cub; Mekong karsts + baby buffalo; Hindu Kush + markhor
-  kid; steppe gers + foal), catalog entries labeled "· coming soon", flags in
+  EMPTY lessons/units/alphabet, full secular art (hero/band/mascot: Mekong
+  karsts + baby buffalo; Hindu Kush + markhor kid; steppe gers + foal),
+  catalog entries labeled "· coming soon", flags in
   `LANG_FLAGS`, CSS palettes, fonts (Noto Sans Sinhala/Lao/Arabic in every
   script font stack), and empty `audio-<code>/manifest.json`. The engine shows
   a `comingSoonHTML()` card on the Learn path & Alphabet pages while a pack
