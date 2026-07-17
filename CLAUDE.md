@@ -274,22 +274,47 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Sinhala (`lang/si.js`) IN PROGRESS — Zone 1 "The Script" live (July 2026,
-  Stage A; catalog label "· early access").** 7 topics / 35 lessons: ක ග න ම;
-  the two T families ත ද ට ඩ (dental-vs-retroflex is THE consonant story);
-  ප බ ස හ; ච ජ ය ර ල ව; the half-nasals ඟ ඬ ඳ ඹ (unique to Sinhala); vowel
-  signs incl. කැ (the "a of cat" — no other regional script has it) + hal
-  kirima ක්; first words වතුර/බත්/තේ/හොඳයි/ආයුබෝවන්. Romanization (documented
-  at the top of `lang/si.js`): Sri Lankan convention — soft dental th/dh vs
-  hard retroflex t/d, doubled long vowels, ae for ඇ; the course teaches
-  SPOKEN Sinhala (diglossia: colloquial verbs never conjugate for person —
-  teach that as the freebie). The researched 12-zone roadmap sits in the
-  si.js header — build Zones 2+ from it, Burmese-style (research-first,
-  Sinhala-driven). SI_NUMS teaches spoken number words (modern Sinhala
-  writes Western digits). Audio: 83/86 clips via `si-LK-SameeraNeural`
-  (ඞ ඣ ඦ get no edge-tts audio → device TTS fallback, like Burmese ဎ);
-  extractor + generator both know `si` now. SEO/JSON-LD still pending —
-  add the Course entry + title/keywords when the course ships properly.
+- **Sinhala (`lang/si.js`) IN PROGRESS — Zones 1–6 live (July 2026, Stages
+  A–B; catalog label "· early access"; 6 zones / 42 topics / 210 lessons).**
+  Zone 1 "The Script": ක ග න ම; the two T families ත ද ට ඩ (dental-vs-
+  retroflex is THE consonant story); ප බ ස හ; ච ජ ය ර ල ව; the half-nasals
+  ඟ ඬ ඳ ඹ (unique to Sinhala); vowel signs incl. කැ + hal kirima ක්; first
+  words. Zone 2 "Foundations": kohomadha + the gihin ennam goodbye, pronouns
+  mama/oyaa/eyaa/api + formal oba as recognition, family words AS ADDRESS
+  TERMS (ayiyaa/akkaa to strangers), numbers 1-10, courtesies + hari, magee
+  nama intros (no-copula rule), time words adha/heta/iiyee + day parts.
+  Zone 3 "Say a sentence": SOV + one -nawaa form for all persons (the
+  freebie) + present-covers-future, innawaa-vs-thiyenawaa animacy, 4-way
+  deixis meeka/ooka/araka/eeka, negation -nnee naee + nemeyi for nouns +
+  mama dhannee naee, yes/no ...dha + ov/naee + echo answers, wh-words +
+  mata theerennee naee, want mata oonae / epaa / kaemathiyi (dative
+  subject). Zone 4 "Cases & places": -ta to/for, -gee possession + kaagedha,
+  ekka with + -en from + kohendha, positions uda/yata/aethulee/langa +
+  meesee-uda locative trick, town words + the loanword "bas eka" pattern +
+  bas eke by-bus, food incl. aappa/indhiaappa, the kadee order pattern
+  mata X ekak dhenna + thawa/tikak. Zone 5 "How many": teens, tens +
+  combining forms (wisi eka), rupees + kiiyadha + number-yi price answers,
+  bargaining ganan waediyi/laabayi/adu karanna/gannawaa, clock welaawa
+  kiiyadha + N-yi/hamaara/kiiyatadha + N-ta, days of the week (iridhaa
+  sun-day, sandhudhaa moon-day), counting thing+number+k (aappa dhekak) +
+  kiiyak. Zone 6 "Describe it": -yi predicate adjectives (lokuyi) vs bare
+  attributives (loku gedhara), lassanayi/usa/parana/aluth, colors + paata,
+  comparisons X-ta wadaa + superlative -ma, dative feelings mata
+  badaginiyi (belly-fire!)/mahansiyi/nidhimathayi/bayayi/sathutuyi, weather
+  waessa/wahinawaa/rasneyi/siithalayi + the two monsoons, body + mata X
+  ridhenawaa + beheth/dhosthara. Romanization (documented at the top of
+  `lang/si.js`): Sri Lankan convention — soft dental th/dh vs hard
+  retroflex t/d, doubled long vowels, ae for ඇ; the course teaches SPOKEN
+  Sinhala (diglossia). Zones 7-12 remain per the roadmap in the si.js
+  header (past tense, puluwan/oonae round 2, -nna imperatives, transport,
+  connectors, family, nature, settling in). SI_NUMS teaches spoken number
+  words (modern Sinhala writes Western digits). Audio via
+  `si-LK-SameeraNeural` (ඞ ඣ ඦ get no edge-tts audio → device TTS
+  fallback, like Burmese ဎ); extractor + generator both know `si`.
+  Verified spellings against Wikivoyage Sinhala phrasebook (ඕනැ, ගණන්
+  වැඩියි, ලාබයි, අඩු කරන්න, -න්නෙ නෑ, days, teens/tens), Wikipedia,
+  Omniglot. SEO/JSON-LD still pending — add the Course entry +
+  title/keywords when the course ships properly.
 - **Scaffolds live for the remaining three languages (July 2026):**
   Lao (`lo`), Pashto (`ps`), Mongolian (`mn`) — `lang/<code>.js` packs with
   EMPTY lessons/units/alphabet, full secular art (hero/band/mascot: Mekong
