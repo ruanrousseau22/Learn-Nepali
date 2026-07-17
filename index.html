@@ -823,6 +823,30 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 /* mobile touch feel */
 button,a,.cnode,.tab,.mc,.glyph,.wbtile,.mtile,.grade,.iconbtn,.li-res-btn,.li-link{-webkit-tap-highlight-color:transparent}
 button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res-btn,.li-link,.nextbtn,.ab-btn{touch-action:manipulation}
+
+/* ===== modes: language learning vs religious studies (July 2026) ===== */
+.tab.faith-tab{display:none}
+body.faith .tab.faith-tab{display:inline-block}
+body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .tab[data-v="alphabet"],body.faith .tab[data-v="review"]{display:none}
+#mode-switch .mode-ico{display:inline-flex;width:18px;height:18px;flex:none;color:var(--crimson)}
+#mode-switch .mode-ico svg{width:100%;height:100%}
+@media(max-width:700px){#mode-switch .lang-tog-name{display:none}}
+/* story reader */
+.fpick{display:flex;border:1.5px solid var(--line);border-radius:12px;overflow:hidden;width:max-content;margin:12px auto 6px}
+.fpick button{padding:9px 20px;border:0;background:transparent;font-weight:700;font-size:.95rem;cursor:pointer;color:var(--muted)}
+.fpick button.on{background:var(--crimson);color:#fff}
+.fpick-hint{text-align:center;color:var(--muted);font-size:.85rem;margin:0 0 14px}
+.fintro{color:var(--muted);max-width:640px;margin:6px auto 20px;text-align:center;line-height:1.6}
+.fsec{margin:30px 0}
+.fh{display:flex;align-items:baseline;gap:10px;font-size:1.12rem;margin:0 0 10px;flex-wrap:wrap}
+.fnum{flex:none;width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;font-size:.85rem;font-weight:800;display:inline-flex;align-items:center;justify-content:center;align-self:center}
+.fh-ne{color:var(--muted);font-weight:600;font-size:1rem}
+.fpara{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin:10px 0}
+.fne{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;font-size:1.13rem;line-height:1.9}
+.fne .from{line-height:1.55;font-size:1.02rem}
+.fne .spk{flex:none;margin-top:2px}
+.fen{color:var(--muted);margin-top:7px;font-size:.94rem;line-height:1.55;border-top:1px dashed var(--line);padding-top:7px}
+.fref{color:var(--muted);font-size:.8rem;margin-top:4px;font-style:italic}
 </style>
 </head>
 <body>
@@ -830,12 +854,15 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 <header>
   <div class="wrap bar">
     <a class="logo" href="#" onclick="show('home');return false"><span class="mark" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/></svg></span> Bhasaly</a>
+    <div class="lang-switch" id="mode-switch"></div>
     <div class="lang-switch" id="lang-switch"></div>
     <nav class="tabs" id="tabs">
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
+      <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
+      <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
     <div style="display:flex;gap:8px;align-items:center">
@@ -1017,6 +1044,54 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
       <div class="set-row"><div><div class="label">Additional content</div><div class="desc" id="unlock-desc">Have an access code? Enter it to unlock extra content</div></div><span style="display:flex;gap:8px;align-items:center"><input id="unlock-code" type="text" autocomplete="off" autocapitalize="off" placeholder="Code" onkeydown="if(event.key==='Enter')applyCode()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);width:90px;font-family:inherit"><button class="iconbtn" onclick="applyCode()">Unlock</button></span></div>
       <div class="set-row"><div><div class="label">Reset all progress</div><div class="desc">Clears XP, streak, lessons, reviews</div></div><button class="danger-btn" onclick="resetAll()">Reset</button></div>
     </div>
+  </div>
+</section>
+
+<section class="view" id="view-fstory">
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 137 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner">
+      <h2>God&rsquo;s Story <span class="deva">परमेश्वरको कथा</span></h2>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:6px">
+    <div id="fstory-root"></div>
+  </div>
+</section>
+
+<section class="view" id="view-fjesus">
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 137 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner">
+      <h2>Jesus <span class="deva">येशू</span></h2>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:6px">
+    <div id="fjesus-root"></div>
   </div>
 </section>
 
@@ -8808,7 +8883,7 @@ const NE_NUMS=[['०','0'],['१','1'],['२','2'],['३','3'],['४','4'],['५
 const NE_SRS_SEED=[['नमस्ते','Namaste','Hello'],['धन्यवाद','Dhanyabad','Thank you'],['माफ गर्नुस्','Maaf garnoos','Excuse me / Sorry'],['हो','Ho','Yes'],['होइन','Hoina','No'],['ठीक छ','Theek chha','It is okay'],['पानी','Paani','Water'],['खाना','Khaana','Food'],['घर','Ghar','Home'],['मान्छे','Maanchhe','Person'],['राम्रो','Raamro','Good / Beautiful'],['ठूलो','Thoolo','Big'],['सानो','Saano','Small'],['आज','Aaja','Today'],['भोलि','Bholi','Tomorrow'],['पैसा','Paisa','Money'],['बाटो','Baato','Road / Way'],['पहाड','Pahaad','Mountain'],['खुसी','Khusi','Happy'],['चिया','Chiya','Tea']];
 /* LESSON_MAP + lessonById moved to the LANGUAGE PACKS block (below NE_SYM) */
 
-function defaultS(){return {lang:'ne',xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true,unlocks:[]};}
+function defaultS(){return {lang:'ne',xp:0,words:0,streak:0,lastDay:null,total:0,correct:0,done:[],srs:[],theme:'light',rom:true,voice:'',sound:true,dailyXp:0,dailyDate:null,dailyGoal:50,bestStreak:0,autoNext:true,unlocks:[],mode:'learn',fRom:'script'};}
 let S=defaultS();
 function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date.now(),int:1,ef:2.5,reps:0}));}
 /* state splits three ways: per-language progress (sajilo_<code>), global stats shared
@@ -8816,7 +8891,7 @@ function freshSRS(){return SRS_SEED.map((w,i)=>({i,d:w[0],r:w[1],m:w[2],due:Date
    (stored in the global key but never synced to the cloud) */
 function lPick(o){return {done:o.done||[],srs:o.srs||[],words:o.words||0};}
 function gPick(o){return {lang:o.lang||'ne',xp:o.xp||0,streak:o.streak||0,lastDay:o.lastDay||null,bestStreak:o.bestStreak||0,dailyXp:o.dailyXp||0,dailyDate:o.dailyDate||null,dailyGoal:o.dailyGoal||50,total:o.total||0,correct:o.correct||0,unlocks:o.unlocks||[]};}
-function prefsPick(o){return {theme:o.theme,rom:o.rom,voice:o.voice,sound:o.sound,autoNext:o.autoNext};}
+function prefsPick(o){return {theme:o.theme,rom:o.rom,voice:o.voice,sound:o.sound,autoNext:o.autoNext,mode:o.mode,fRom:o.fRom};}
 const GLOBAL_KEY='sajilo_global';
 /* one-time migration: pre-multi-language blob 'sajilo' → sajilo_ne + sajilo_global
    (the old key is kept as a backup; resetAll clears it too) */
@@ -8919,10 +8994,12 @@ function loadAudioManifest(){
 }
 function playFile(t,rate){
   const k=audioKey(t);
-  if(!AUDIO_KEYS.has(k))return false;
+  /* course clips first, then religious-studies clips (audio-nef/) — hashes never collide across real content */
+  const base=AUDIO_KEYS.has(k)?AUDIO_BASE:(FAITH_KEYS.has(k)?'audio-nef/':null);
+  if(!base)return false;
   try{
     let a=audioCache.get(k);
-    if(!a){a=new Audio(AUDIO_BASE+k+'.mp3');audioCache.set(k,a);}
+    if(!a){a=new Audio(base+k+'.mp3');audioCache.set(k,a);}
     a.pause();a.currentTime=0;a.playbackRate=rate||1;a.preservesPitch=true;a.webkitPreservesPitch=true;
     currentAudio=a;
     const p=a.play();
@@ -8985,6 +9062,8 @@ document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 const SMOOTH=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth';
 function show(v){if(v==='intensive'&&!hasIntensive())v='home';
+  if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'))v='fstory'; /* faith mode replaces the course pages */
+  if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'))v='home';
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
   if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});}
@@ -9191,10 +9270,11 @@ const LS_CHECK='<svg class="check" viewBox="0 0 14 14" fill="none" xmlns="http:/
 const lsName=l=>l.label.split('—')[0].trim();
 function paintHomeLangSwitch(){
   const w=document.getElementById('lang-switch');if(!w)return;
-  if(LANG_CATALOG.length<2){w.style.display='none';w.innerHTML='';return;}
+  const CAT=(S.mode==='faith')?FAITH_CATALOG:LANG_CATALOG; /* faith mode lists its own languages */
+  if(CAT.length<2){w.style.display='none';w.innerHTML='';return;}
   w.style.display='';w.classList.remove('open');
-  const cur=LANG_CATALOG.find(l=>l.code===LANG.code)||LANG_CATALOG[0];
-  const opts=LANG_CATALOG.map(function(l){
+  const cur=CAT.find(l=>l.code===LANG.code)||CAT[0];
+  const opts=CAT.map(function(l){
     const on=l.code===LANG.code;
     return '<button type="button" role="option" class="lang-opt'+(on?' on':'')+'"'+(on?' aria-selected="true"':'')+' onclick="pickLang(\''+l.code+'\')">'+(LANG_FLAGS[l.code]||'')+'<span class="lang-opt-name">'+lsName(l)+'</span>'+(on?LS_CHECK:'')+'</button>';
   }).join('');
@@ -9204,10 +9284,83 @@ function toggleLangMenu(e){if(e)e.stopPropagation();const w=document.getElementB
 function closeLangMenu(){const w=document.getElementById('lang-switch');if(w&&w.classList.contains('open')){w.classList.remove('open');const t=document.getElementById('lang-toggle');if(t)t.setAttribute('aria-expanded','false');}}
 function pickLang(code){closeLangMenu();if(code===LANG.code)return;switchLang(code);}
 document.addEventListener('click',function(e){const w=document.getElementById('lang-switch');if(w&&w.classList.contains('open')&&!w.contains(e.target))closeLangMenu();});
+
+/* ===== MODES (July 2026): language learning vs religious studies =====
+   Religious studies is a bilingual story reader (God's Story + Jesus) in
+   Nepali for now — it reuses the ne pack (art, voices, recorded audio) and
+   loads its content from faith/<code>.js via registerFaith. Faith clips live
+   in audio-nef/ (see playFile). Mode + script/roman choice are device prefs. */
+const MODE_CATALOG=[{code:'learn',label:'Language learning'},{code:'faith',label:'Religious studies'}];
+const MODE_ICONS={
+  learn:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg></span>',
+  faith:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 4.9 7.4 4.5 4 4.5v13.7c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V4.5c-3.4 0-6 .4-8 2z"/><path d="M12 6.5v13.7"/></svg></span>'};
+const FAITH_CATALOG=[{code:'ne',label:'Nepali — नेपाली'}];
+let FAITH=null,FAITH_KEYS=new Set();
+function registerFaith(p){FAITH=p;}
+function loadFaithScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='faith/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
+function loadFaithManifest(){fetch('audio-nef/manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;FAITH_KEYS=new Set(Array.isArray(d)?d:(d.keys||[]));}).catch(()=>{});}
+function curMode(){return S.mode==='faith'?'faith':'learn';}
+async function switchMode(m){
+  if(m===curMode())return;
+  closeModeMenu();
+  if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
+  if(m==='faith'){
+    if(LANG.code!=='ne')await switchLang('ne'); /* runs before S.mode flips, so the faith lock does not block it */
+    if(LANG.code!=='ne')return;
+    if(!FAITH)await loadFaithScript('ne');
+    if(!FAITH)return; /* failed load: stay put */
+    S.mode='faith';save();
+    document.body.classList.add('faith');
+    loadFaithManifest();buildFaith();show('fstory');
+  }else{
+    S.mode='learn';save();
+    document.body.classList.remove('faith');
+    show('home');
+  }
+  paintModeSwitch();paintHomeLangSwitch();
+}
+function pickMode(m){switchMode(m);}
+function paintModeSwitch(){
+  const w=document.getElementById('mode-switch');if(!w)return;
+  w.style.display='';w.classList.remove('open');
+  const cur=MODE_CATALOG.find(x=>x.code===curMode())||MODE_CATALOG[0];
+  const opts=MODE_CATALOG.map(function(x){
+    const on=x.code===cur.code;
+    return '<button type="button" role="option" class="lang-opt'+(on?' on':'')+'"'+(on?' aria-selected="true"':'')+' onclick="pickMode(\''+x.code+'\')">'+MODE_ICONS[x.code]+'<span class="lang-opt-name">'+x.label+'</span>'+(on?LS_CHECK:'')+'</button>';
+  }).join('');
+  w.innerHTML='<button type="button" class="lang-toggle" id="mode-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Mode: '+cur.label+'. Tap to change" onclick="toggleModeMenu(event)">'+MODE_ICONS[cur.code]+'<span class="lang-tog-name">'+cur.label+'</span>'+LS_CARET+'</button><div class="lang-menu" role="listbox" aria-label="Choose mode">'+opts+'</div>';
+}
+function toggleModeMenu(e){if(e)e.stopPropagation();closeLangMenu();const w=document.getElementById('mode-switch');if(!w)return;const open=w.classList.toggle('open');const t=document.getElementById('mode-toggle');if(t)t.setAttribute('aria-expanded',open?'true':'false');}
+function closeModeMenu(){const w=document.getElementById('mode-switch');if(w&&w.classList.contains('open')){w.classList.remove('open');const t=document.getElementById('mode-toggle');if(t)t.setAttribute('aria-expanded','false');}}
+document.addEventListener('click',function(e){const w=document.getElementById('mode-switch');if(w&&w.classList.contains('open')&&!w.contains(e.target))closeModeMenu();});
+async function initFaithMode(){if(curMode()!=='faith')return;S.mode='learn';await switchMode('faith');}
+
+/* ----- the bilingual story reader ----- */
+function setFRom(v){S.fRom=v;save();buildFaith();}
+function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(el)el.innerHTML=storyHTML(st);});}
+function storyHTML(st){
+  const rom=(S.fRom||'script')==='rom';
+  let h='<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
+    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
+    +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>'
+    +'<p class="fpick-hint">'+(rom?'Nepali shown in roman letters — tap any line to hear it.':'Nepali shown in Devanagari script — tap the speaker to hear each line.')+'</p>';
+  if(st.intro)h+='<p class="fintro">'+st.intro+'</p>';
+  (st.sections||[]).forEach(function(s,i){
+    h+='<section class="fsec"><h3 class="fh"><span class="fnum">'+(i+1)+'</span><span>'+s.t+'</span>'+(s.ne?'<span class="deva fh-ne">'+s.ne+'</span>':'')+'</h3>';
+    h+=(s.paras||[]).map(function(p){
+      return '<div class="fpara"><div class="fne">'+(rom?'<span class="from">'+p[1]+'</span>':'<span class="deva">'+p[0]+'</span>')
+        +'<button class="spk" aria-label="Play audio" onclick="speak(\''+p[0]+'\')">'+spkSVG()+'</button></div>'
+        +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';
+    }).join('');
+    h+='</section>';
+  });
+  return h;
+}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLangMenu();});
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
 async function switchLang(code){
   if(!LANG||code===LANG.code)return;
+  if(S.mode==='faith')return; /* religious studies is Nepali-only for now — language is locked while in faith mode */
   if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
   if(!PACKS[code]&&LANG_CATALOG.some(l=>l.code===code))await loadLangScript(code);
   if(!PACKS[code]){S.lang=LANG.code;save();paintLangPicker();return;} /* unknown/failed pack: stay put */
@@ -9564,7 +9717,7 @@ function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, l
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);paintUnlock();buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
-applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();
+applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();paintModeSwitch();initFaithMode();
 if(S.lang&&S.lang!==LANG.code)switchLang(S.lang); /* resume the language chosen last session */
 </script>
 </body>

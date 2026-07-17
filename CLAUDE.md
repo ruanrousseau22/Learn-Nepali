@@ -26,6 +26,8 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 ## Repo layout
 - `index.html` — the whole app + the inline Nepali pack
 - `lang/km.js` — Khmer pack (data, art, registerPack call)
+- `faith/ne.js` + `audio-nef/` + `audio_strings_nef.json` — Religious studies
+  mode content & clips (see the Religious studies section below)
 - `lang/my.js` — Burmese pack (Zone 1 · The Script; data, secular art, registerPack)
 - `audio/` — Nepali recorded clips + `manifest.json`; `audio_strings.json` is
   its committed strings source (regenerated from the pack July 2026 during the
@@ -478,13 +480,52 @@ Decisions made (July 2026):
   `generate_audio.py --lang km` → `audio-km/`. Khmer grows zone by zone from
   here — next zones append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`.
 
+## Religious studies (faith mode — July 2026)
+A second app MODE next to language learning, chosen from the **mode dropdown
+left of the language picker** in the header (`#mode-switch`, styled like the
+language switcher; globe = Language learning, book = Religious studies).
+Deliberately Christian by design (Ruan) — the secular-content rule does NOT
+apply inside this mode; it teaches Christianity with contextualised language
+and art. Current scope: **Nepali only** (`FAITH_CATALOG`), reusing the Nepali
+pack's art, voices and recorded-audio plumbing.
+- **It is a bilingual STORY READER, not a lesson course** — no XP/exercises.
+  Two pages replace Learn/Alphabet/Review while the mode is active (tabs swap
+  via `body.faith` CSS): **God's Story** (`view-fstory`) — the whole biblical
+  narrative in ten movements, creation → fall (fellowship broken) → covenants
+  → Jesus → new creation (framing informed by BibleProject: one unified story
+  that leads to Jesus; kept within orthodox/Nicene Christianity) — and
+  **Jesus** (`view-fjesus`) — his life and parables. Settings stays.
+- Content lives in **`faith/ne.js`** (`registerFaith({code,stories})`;
+  stories → sections → `paras:[[nepali, roman, english, reference?]]`).
+  Rules in its header: paraphrase only (never copy Bible translation text),
+  references name the passages, high honorific for God/Jesus, vocabulary
+  consistent with the Intensive track (परमेश्वर, येशू, पाप, सङ्गति…), Nepali
+  strings must avoid `' " < > \` (inline onclick), rom fields ASCII.
+- **Script/Roman picker** (`.fpick`, `setFRom`) sits at the top of each story
+  page — shows the Nepali as Devanagari or as course-style romanization.
+  Mode + fRom are device prefs (`prefsPick`), never synced.
+- Engine pieces: `MODE_CATALOG`/`switchMode`/`paintModeSwitch`/`initFaithMode`
+  (next to the language-switcher code), `buildFaith`/`storyHTML`, faith reroute
+  in `show()`, and **language is locked while in faith mode** (guard at the top
+  of `switchLang`; `paintHomeLangSwitch` lists `FAITH_CATALOG` instead — hidden
+  while it has one entry).
+- **Audio**: clips in `audio-nef/` — regenerate with
+  `osascript -l JavaScript extract_audio_strings.js nef` (extracts every
+  `paras[i][0]`) then `python3 generate_audio.py --lang nef` (same
+  `ne-NP-SagarNeural` voice as the course). `playFile` checks the course
+  manifest first, then `FAITH_KEYS` (loaded by `loadFaithManifest`).
+- Adding a faith language later = `faith/<code>.js` + `FAITH_CATALOG` entry +
+  `nef`-style extractor/generator entries + an audio dir.
+- Future content candidates (Ruan): Jesus' followers / Acts.
+
 ## Design / content rules
 - **Course content is secular language learning** (Ruan, July 2026): every
   language course — Nepali main, Khmer, future languages — teaches the language
   in the best, most efficient way with everyday secular content, NO ministry or
-  Christian material. The ONE exception is the Nepali **Language Intensive**
-  track, which is ministry-centered by design (built for Ruan's community);
-  that is also why no other language gets an Intensive.
+  Christian material. TWO exceptions, both deliberate: the Nepali **Language
+  Intensive** track (ministry-centered, built for Ruan's community — why no
+  other language gets an Intensive), and the whole **Religious studies mode**
+  (see its section above), which is Christian teaching by design.
 - No Devanagari *typing* where Roman suffices (tap-based mc/li/wb/match; ≤1 `tr` per day).
 - Teach-before-test. Colloquial Nepali (मेरो for all possessives).
 - **Romanization fields contain NO native script** (`vocab[i][1]` and `ex.r`):

@@ -41,6 +41,12 @@ LANGS = {
         "outdir": "audio-si",
         "voices": {"male": "si-LK-SameeraNeural", "female": "si-LK-ThiliniNeural"},
     },
+    # religious studies (faith mode) — Nepali story reader, same voice as the course
+    "nef": {
+        "strings": "audio_strings_nef.json",
+        "outdir": "audio-nef",
+        "voices": {"male": "ne-NP-SagarNeural", "female": "ne-NP-HemkalaNeural"},
+    },
 }
 
 

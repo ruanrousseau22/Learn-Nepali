@@ -97,11 +97,25 @@ function serialize(arr){return '[\n'+arr.map(function(s){return JSON.stringify(s
 
 function run(argv){
   var lang=argv[0],check=argv.indexOf('--check')>=0;
-  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'}}[lang];
-  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si [--check]';
+  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'},nef:{src:'faith/ne.js',out:'audio_strings_nef.json'}}[lang];
+  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si|nef [--check]';
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
-  var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));
-  var txt=serialize(extract(pack));
+  var strings;
+  if(lang==='nef'){
+    /* faith story reader: the spoken strings are exactly the Nepali side of
+       every paragraph (paras[i][0]), in story order, deduped */
+    var faith=null;
+    new Function('registerFaith',readFile(cwd+conf.src))(function(p){faith=p;});
+    if(!faith)throw new Error('registerFaith never called in '+conf.src);
+    var out=[],seen={};
+    (faith.stories||[]).forEach(function(st){(st.sections||[]).forEach(function(s){(s.paras||[]).forEach(function(p){
+      var t=p[0];if(typeof t!=='string'||!t||seen[t])return;seen[t]=1;out.push(t);});});});
+    strings=out;
+  }else{
+    var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));
+    strings=extract(pack);
+  }
+  var txt=serialize(strings);
   var old=null;try{old=readFile(cwd+conf.out);}catch(e){}
   var same=old===txt;
   if(check)return conf.out+': '+(same?'MATCHES the pack ('+(txt.split('\n').length-2)+' strings)':'*** DIFFERS from the pack — rerun without --check to regenerate ***');
