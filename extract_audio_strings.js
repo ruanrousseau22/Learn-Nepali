@@ -102,14 +102,17 @@ function run(argv){
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
   var strings;
   if(lang==='nef'){
-    /* faith story reader: the spoken strings are exactly the Nepali side of
-       every paragraph (paras[i][0]), in story order, deduped */
+    /* faith story reader: the spoken strings are the Nepali side of every
+       paragraph (paras[i][0]) plus each section note ([0] of the triple),
+       in story order, deduped */
     var faith=null;
     new Function('registerFaith',readFile(cwd+conf.src))(function(p){faith=p;});
     if(!faith)throw new Error('registerFaith never called in '+conf.src);
     var out=[],seen={};
-    (faith.stories||[]).forEach(function(st){(st.sections||[]).forEach(function(s){(s.paras||[]).forEach(function(p){
-      var t=p[0];if(typeof t!=='string'||!t||seen[t])return;seen[t]=1;out.push(t);});});});
+    function addF(t){if(typeof t!=='string'||!t||seen[t])return;seen[t]=1;out.push(t);}
+    (faith.stories||[]).forEach(function(st){(st.sections||[]).forEach(function(s){
+      (s.paras||[]).forEach(function(p){addF(p[0]);});
+      if(s.note&&s.note.length)addF(s.note[0]);});});
     strings=out;
   }else{
     var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));

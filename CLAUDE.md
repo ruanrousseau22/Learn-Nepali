@@ -486,8 +486,12 @@ left of the language picker** in the header (`#mode-switch`, styled like the
 language switcher; globe = Language learning, book = Religious studies).
 Deliberately Christian by design (Ruan) — the secular-content rule does NOT
 apply inside this mode; it teaches Christianity with contextualised language
-and art. Current scope: **Nepali only** (`FAITH_CATALOG`), reusing the Nepali
-pack's art, voices and recorded-audio plumbing.
+and art. **The audience is NEPALI PEOPLE learning about Jesus** (Ruan, July
+2026): Nepali is the PRIMARY language on every surface — hero, tabs, node
+titles, story text, the explanations, buttons, even Devanagari numerals in
+progress counts — with English as the quiet second line (never English-first
+with a Nepali translation). Current scope: **Nepali only** (`FAITH_CATALOG`),
+reusing the Nepali pack's art, voices and recorded-audio plumbing.
 - **It is a bilingual STORY PATH, not a lesson course** — no XP/exercises.
   Two pages replace Learn/Alphabet/Review while the mode is active (tabs swap
   via `body.faith` CSS): **God's Story** (`view-fstory`) — the whole biblical
@@ -499,8 +503,10 @@ pack's art, voices and recorded-audio plumbing.
   short story each** (unlike the 5-lesson language topics). A node card shows
   its scene art + bilingual title + a read-tick; tapping opens the story
   reader in place (`openFNode`/`closeFNode`): enlarged art, the bilingual
-  paragraphs, a "Why it matters" explanation box (`note`), and a
-  Continue/Finish button (`markFRead`) that advances to the next moment.
+  paragraphs, a bilingual "किन महत्त्वपूर्ण · Why it matters" explanation box
+  (`note` — a [nepali, roman, english] triple with its own recorded audio;
+  the whole Nepali line is tappable to play), and an अगाडि/समाप्त button
+  (`markFRead`) that advances to the next moment. `intro` is also a triple.
   **Progress** ("continue where you left off") persists per device in
   localStorage `sajilo_faith` (`{<code>:{done:[sectionIds]}}` —
   `loadFaithDone`/`saveFaithDone`; cleared by resetAll like every sajilo*
@@ -512,13 +518,15 @@ pack's art, voices and recorded-audio plumbing.
 - Content lives in **`faith/ne.js`** (`registerFaith({code,stories})`;
   stories → sections → `{id, t, ne, art, note,
   paras:[[nepali, roman, english, reference?]]}`; scene art = `FNE_ART`,
-  small SVG emblems, viewBox 0 0 120 84 — scenes & symbols only, no
-  depictions of God or of Jesus' face). Rules in its header: paraphrase only
+  SVG scene emblems with gradient skies, viewBox 0 0 120 84, per-scene
+  gradient ids gA..gR — scenes & symbols only, no depictions of God or of
+  Jesus' face). Rules in its header: paraphrase only
   (never copy Bible translation text), references name the passages, high
   honorific for God/Jesus, vocabulary consistent with the Intensive track
   (परमेश्वर, येशू, पाप, सङ्गति…), Nepali strings must avoid `' " < > \`
-  (inline onclick), rom fields ASCII. **Keep `paras[i][0]` byte-stable unless
-  you regenerate the nef audio** — clips are hashed from those exact strings.
+  (inline onclick), rom fields ASCII. **Keep `paras[i][0]` AND `note[0]` byte-stable
+  unless you regenerate the nef audio** — clips are hashed from those exact
+  strings (the extractor pulls both).
 - **Script/Roman picker** (`.fpick`, `setFRom`) sits at the top of each open
   story — shows the Nepali as Devanagari or as course-style romanization.
   Mode + fRom are device prefs (`prefsPick`), never synced.

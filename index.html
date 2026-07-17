@@ -842,15 +842,22 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnum{flex:none;width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;font-size:.85rem;font-weight:800;display:inline-flex;align-items:center;justify-content:center;align-self:center}
 .fh-ne{color:var(--muted);font-weight:600;font-size:1rem}
 .fpara{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin:10px 0}
-.fne{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;font-size:1.13rem;line-height:1.9}
+.fne{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;font-size:1.18rem;line-height:1.95;cursor:pointer;border-radius:10px}
+.fne:hover .spk{transform:scale(1.12)}
 .fne .from{line-height:1.55;font-size:1.02rem}
-.fne .spk{flex:none;margin-top:2px}
+.fne .spk{flex:none;margin-top:2px;transition:transform .12s}
+.fnote .fne{font-size:1.05rem;line-height:1.85;margin-bottom:4px}
 .fen{color:var(--muted);margin-top:7px;font-size:.94rem;line-height:1.55;border-top:1px dashed var(--line);padding-top:7px}
 .fref{color:var(--muted);font-size:.8rem;margin-top:4px;font-style:italic}
 /* story path nodes */
 .hero-fsub{font-size:1.18rem;margin-top:8px;opacity:.85}
-.fprog{text-align:center;color:var(--muted);font-size:.85rem;font-weight:700;margin:4px 0 14px}
-.fnodes{display:flex;flex-direction:column;gap:12px;max-width:620px;margin:0 auto}
+.fprog{display:flex;flex-direction:column;gap:2px;align-items:center;text-align:center;color:var(--ink);font-size:.95rem;font-weight:700;margin:4px 0 16px}
+.fprog-en{color:var(--muted);font-size:.78rem;font-weight:600}
+.fintro-ne{display:block;font-size:1.05rem;color:var(--ink);line-height:1.9;margin-bottom:6px}
+.fintro-en{display:block;font-size:.88rem;line-height:1.55}
+.fnodes{display:flex;flex-direction:column;gap:14px;max-width:620px;margin:0 auto;position:relative}
+.fnodes::before{content:"";position:absolute;left:60px;top:24px;bottom:24px;border-left:2.5px dashed color-mix(in srgb,var(--crimson) 35%,var(--line));z-index:0}
+.fnode{z-index:1}
 .fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
 .fnode:hover{transform:translateY(-1px);border-color:var(--crimson)}
 .fnode.next{border-color:var(--crimson);box-shadow:0 4px 14px color-mix(in srgb,var(--crimson) 14%,transparent)}
@@ -858,8 +865,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnode-art{flex:none;width:96px;height:68px;border-radius:10px;overflow:hidden}
 .fnode-art svg{width:100%;height:100%;display:block}
 .fnode-tx{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
-.fnode-t{font-weight:800;font-size:1rem}
-.fnode-ne{color:var(--muted);font-size:.92rem}
+.fnode-t{font-weight:800;font-size:1.08rem;line-height:1.7}
+.fnode-en{color:var(--muted);font-size:.85rem}
 .fnode-tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;font-weight:800;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem}
 .fnode-go{flex:none;background:var(--crimson);color:#fff;font-weight:800;font-size:.8rem;border-radius:999px;padding:6px 12px}
 .fnode-mascot{position:absolute;top:-16px;right:10px;width:34px;height:34px;pointer-events:none}
@@ -876,6 +883,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fdone-btn{background:var(--crimson);color:#fff;border:0;border-radius:14px;padding:12px 24px;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 3px 0 color-mix(in srgb,var(--crimson) 60%,#000)}
 .fdone-btn:active{transform:translateY(2px);box-shadow:none}
 .fread-count{color:var(--muted);font-weight:700;font-size:.9rem}
+.pb-en{font-size:1rem;opacity:.75;font-weight:600}
 </style>
 </head>
 <body>
@@ -890,8 +898,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
-      <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
-      <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
+      <button class="tab faith-tab deva" data-v="fstory" onclick="show('fstory')">परमेश्वरको कथा</button>
+      <button class="tab faith-tab deva" data-v="fjesus" onclick="show('fjesus')">येशू</button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
     <div style="display:flex;gap:8px;align-items:center">
@@ -1120,8 +1128,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1 class="display">God&rsquo;s <em>Story</em></h1>
-        <div class="deva hero-fsub">परमेश्वरको कथा</div>
+        <h1 class="display deva">परमेश्वरको कथा</h1>
+        <div class="hero-fsub">God&rsquo;s Story</div>
       </div>
     </div>
   </div>
@@ -1144,7 +1152,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       </g>
     </svg>
     <div class="pb-inner">
-      <h2>Jesus <span class="deva">येशू</span></h2>
+      <h2><span class="deva">येशू</span> <span class="pb-en">Jesus</span></h2>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -9399,39 +9407,55 @@ function saveFaithDone(){try{const o=JSON.parse(localStorage.getItem('sajilo_fai
 function setFRom(v){S.fRom=v;save();buildFaith();}
 function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(!el)return;
   el.innerHTML=(FVIEW&&FVIEW.sid===st.id)?freadHTML(st,FVIEW.i):fnodesHTML(st);});}
+const DDIG=['०','१','२','३','४','५','६','७','८','९'];
+function devNum(n){return String(n).split('').map(c=>DDIG[c]||c).join('');}
+function fpickHTML(){const rom=(S.fRom||'script')==='rom';
+  return '<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
+    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
+    +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>';}
+function fparaHTML(p){const rom=(S.fRom||'script')==='rom';
+  return '<div class="fpara"><div class="fne" role="button" tabindex="0" aria-label="Play audio" onclick="speak(\''+p[0]+'\')">'
+    +(rom?'<span class="from">'+p[1]+'</span>':'<span class="deva">'+p[0]+'</span>')
+    +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></div>'
+    +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';}
 function fnodesHTML(st){
   const secs=st.sections||[],nRead=secs.filter(s=>FAITH_DONE.has(s.id)).length,next=secs.findIndex(s=>!FAITH_DONE.has(s.id));
+  const rom=(S.fRom||'script')==='rom';
   let h='';
-  if(st.intro)h+='<p class="fintro">'+st.intro+'</p>';
-  h+='<div class="fprog">'+(nRead?nRead+' of '+secs.length+' read':secs.length+' moments — start anywhere')+'</div><div class="fnodes">';
+  if(st.intro)h+='<p class="fintro"><span class="fintro-ne '+(rom?'from':'deva')+'">'+(rom?st.intro[1]:st.intro[0])+'</span><span class="fintro-en">'+st.intro[2]+'</span></p>';
+  const total=secs.length;
+  let prog;
+  if(nRead>=total)prog='<span class="deva">सबै '+devNum(total)+' घटना पढियो — बधाई छ!</span><span class="fprog-en">All '+total+' read — well done!</span>';
+  else if(nRead)prog='<span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span>';
+  else prog='<span class="deva">'+devNum(total)+' घटनाहरू — जहाँबाट पनि सुरु गर्नुहोस्</span><span class="fprog-en">'+total+' moments — start anywhere</span>';
+  h+='<div class="fprog">'+prog+'</div><div class="fnodes">';
   secs.forEach(function(s,i){
     const done=FAITH_DONE.has(s.id),isNext=i===next;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
       +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t">'+(i+1)+' · '+s.t+'</span><span class="fnode-ne deva">'+(s.ne||'')+'</span></span>'
-      +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go">'+(nRead?'Continue':'Start')+'</span>':''))
+      +'<span class="fnode-tx"><span class="fnode-t deva">'+devNum(i+1)+' · '+(s.ne||s.t)+'</span><span class="fnode-en">'+s.t+'</span></span>'
+      +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?'अगाडि':'सुरु')+'</span>':''))
       +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
       +'</button>';
   });
   return h+'</div>';
 }
 function freadHTML(st,i){
-  const s=st.sections[i],rom=(S.fRom||'script')==='rom',last=i>=st.sections.length-1;
-  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()">&larr; All moments</button>'
+  const s=st.sections[i],last=i>=st.sections.length-1;
+  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; सबै घटनाहरू</span> · all moments</button>'
     +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
-    +'<h3 class="fread-t">'+s.t+(s.ne?' <span class="deva fh-ne">'+s.ne+'</span>':'')+'</h3>'
-    +'<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
-    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
-    +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>';
-  h+=(s.paras||[]).map(function(p){
-    return '<div class="fpara"><div class="fne">'+(rom?'<span class="from">'+p[1]+'</span>':'<span class="deva">'+p[0]+'</span>')
-      +'<button class="spk" aria-label="Play audio" onclick="speak(\''+p[0]+'\')">'+spkSVG()+'</button></div>'
-      +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';
-  }).join('');
-  if(s.note)h+='<div class="fnote"><div class="fnote-tag">Why it matters</div>'+s.note+'</div>';
+    +'<h3 class="fread-t"><span class="deva">'+(s.ne||'')+'</span>'+(s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
+    +fpickHTML();
+  h+=(s.paras||[]).map(fparaHTML).join('');
+  if(s.note){const rom=(S.fRom||'script')==='rom';
+    h+='<div class="fnote"><div class="fnote-tag"><span class="deva">किन महत्त्वपूर्ण</span> · why it matters</div>'
+      +'<div class="fne" role="button" tabindex="0" aria-label="Play audio" onclick="speak(\''+s.note[0]+'\')">'
+      +(rom?'<span class="from">'+s.note[1]+'</span>':'<span class="deva">'+s.note[0]+'</span>')
+      +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></div>'
+      +'<div class="fen">'+s.note[2]+'</div></div>';}
   h+='<div class="fread-nav"><button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
-    +(last?'Finish &#10003;':'Continue &rarr;')+'</button>'
-    +'<div class="fread-count">'+(i+1)+' / '+st.sections.length+'</div></div></div>';
+    +(last?'<span class="deva">समाप्त</span> &#10003;':'<span class="deva">अगाडि</span> &rarr;')+'</button>'
+    +'<div class="fread-count">'+devNum(i+1)+' / '+devNum(st.sections.length)+'</div></div></div>';
   return h;
 }
 function openFNode(sid,i){FVIEW={sid,i};buildFaith();window.scrollTo({top:0,behavior:SMOOTH});}
