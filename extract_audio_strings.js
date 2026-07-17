@@ -58,8 +58,9 @@ function loadNePack(html){
   if(end<0)throw new Error('end of ne registerPack call not found');
   return loadPackFromSource(html.slice(start,end+4));
 }
-/* combining-marks-only test: Khmer dependent vowels & signs + Devanagari matras/signs */
-var COMBINING_ONLY=/^[ា-៓ऀ-ःऺ-ॏ॑-ॗॢ-ॣ]+$/;
+/* combining-marks-only test: Khmer dependent vowels & signs + Devanagari
+   matras/signs + Sinhala signs (ං ඃ, hal kirima ්, dependent vowels ා-ෟ ෲ ෳ) */
+var COMBINING_ONLY=/^[ា-៓ऀ-ःऺ-ॏ॑-ॗॢ-ॣං-ඃ්ා-ෟෲ-ෳ]+$/;
 
 function extract(pack){
   var out=[],seen={};
@@ -96,8 +97,8 @@ function serialize(arr){return '[\n'+arr.map(function(s){return JSON.stringify(s
 
 function run(argv){
   var lang=argv[0],check=argv.indexOf('--check')>=0;
-  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'}}[lang];
-  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my [--check]';
+  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'}}[lang];
+  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si [--check]';
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
   var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));
   var txt=serialize(extract(pack));

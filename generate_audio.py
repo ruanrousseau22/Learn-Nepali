@@ -36,6 +36,11 @@ LANGS = {
         "outdir": "audio-my",
         "voices": {"male": "my-MM-ThihaNeural", "female": "my-MM-NilarNeural"},
     },
+    "si": {
+        "strings": "audio_strings_si.json",
+        "outdir": "audio-si",
+        "voices": {"male": "si-LK-SameeraNeural", "female": "si-LK-ThiliniNeural"},
+    },
 }
 
 
