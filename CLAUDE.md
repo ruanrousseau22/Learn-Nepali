@@ -488,27 +488,46 @@ Deliberately Christian by design (Ruan) — the secular-content rule does NOT
 apply inside this mode; it teaches Christianity with contextualised language
 and art. Current scope: **Nepali only** (`FAITH_CATALOG`), reusing the Nepali
 pack's art, voices and recorded-audio plumbing.
-- **It is a bilingual STORY READER, not a lesson course** — no XP/exercises.
+- **It is a bilingual STORY PATH, not a lesson course** — no XP/exercises.
   Two pages replace Learn/Alphabet/Review while the mode is active (tabs swap
   via `body.faith` CSS): **God's Story** (`view-fstory`) — the whole biblical
   narrative in ten movements, creation → fall (fellowship broken) → covenants
   → Jesus → new creation (framing informed by BibleProject: one unified story
   that leads to Jesus; kept within orthodox/Nicene Christianity) — and
   **Jesus** (`view-fjesus`) — his life and parables. Settings stays.
+  Each page is a list of **big-moment NODES (July 2026): none locked, ONE
+  short story each** (unlike the 5-lesson language topics). A node card shows
+  its scene art + bilingual title + a read-tick; tapping opens the story
+  reader in place (`openFNode`/`closeFNode`): enlarged art, the bilingual
+  paragraphs, a "Why it matters" explanation box (`note`), and a
+  Continue/Finish button (`markFRead`) that advances to the next moment.
+  **Progress** ("continue where you left off") persists per device in
+  localStorage `sajilo_faith` (`{<code>:{done:[sectionIds]}}` —
+  `loadFaithDone`/`saveFaithDone`; cleared by resetAll like every sajilo*
+  key; not cloud-synced yet). The next unread node carries the mascot and a
+  Start/Continue chip. `view-fstory` carries the full Nepali HOME HERO art
+  (a verbatim static copy — `applyArt` only targets the FIRST `.hero-mtns`,
+  which is view-home's, so the faith hero stays Nepali no matter what);
+  `view-fjesus` keeps a page band.
 - Content lives in **`faith/ne.js`** (`registerFaith({code,stories})`;
-  stories → sections → `paras:[[nepali, roman, english, reference?]]`).
-  Rules in its header: paraphrase only (never copy Bible translation text),
-  references name the passages, high honorific for God/Jesus, vocabulary
-  consistent with the Intensive track (परमेश्वर, येशू, पाप, सङ्गति…), Nepali
-  strings must avoid `' " < > \` (inline onclick), rom fields ASCII.
-- **Script/Roman picker** (`.fpick`, `setFRom`) sits at the top of each story
-  page — shows the Nepali as Devanagari or as course-style romanization.
+  stories → sections → `{id, t, ne, art, note,
+  paras:[[nepali, roman, english, reference?]]}`; scene art = `FNE_ART`,
+  small SVG emblems, viewBox 0 0 120 84 — scenes & symbols only, no
+  depictions of God or of Jesus' face). Rules in its header: paraphrase only
+  (never copy Bible translation text), references name the passages, high
+  honorific for God/Jesus, vocabulary consistent with the Intensive track
+  (परमेश्वर, येशू, पाप, सङ्गति…), Nepali strings must avoid `' " < > \`
+  (inline onclick), rom fields ASCII. **Keep `paras[i][0]` byte-stable unless
+  you regenerate the nef audio** — clips are hashed from those exact strings.
+- **Script/Roman picker** (`.fpick`, `setFRom`) sits at the top of each open
+  story — shows the Nepali as Devanagari or as course-style romanization.
   Mode + fRom are device prefs (`prefsPick`), never synced.
 - Engine pieces: `MODE_CATALOG`/`switchMode`/`paintModeSwitch`/`initFaithMode`
-  (next to the language-switcher code), `buildFaith`/`storyHTML`, faith reroute
-  in `show()`, and **language is locked while in faith mode** (guard at the top
-  of `switchLang`; `paintHomeLangSwitch` lists `FAITH_CATALOG` instead — hidden
-  while it has one entry).
+  (next to the language-switcher code), `buildFaith`/`fnodesHTML`/`freadHTML`,
+  faith reroute in `show()`, and **language is locked while in faith mode**
+  (guard at the top of `switchLang`; `paintHomeLangSwitch` lists
+  `FAITH_CATALOG` instead and shows the picker even with ONE entry — so the
+  faith language dropdown is always visible).
 - **Audio**: clips in `audio-nef/` — regenerate with
   `osascript -l JavaScript extract_audio_strings.js nef` (extracts every
   `paras[i][0]`) then `python3 generate_audio.py --lang nef` (same

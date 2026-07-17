@@ -1,5 +1,7 @@
 /* ===== RELIGIOUS STUDIES · NEPALI (faith pack, July 2026) =====
-   A bilingual story reader — NOT a lesson course. Two stories:
+   A bilingual story PATH — big-moment nodes (none locked, one story each),
+   each opening a short illustrated story + a “Why it matters” explanation.
+   Two stories:
    - fstory  "God's Story"  — the whole biblical narrative in ten movements:
      creation & fellowship, the fall (fellowship broken), sin spreads, the
      covenant promises (Abraham, Exodus, David, the prophets), the wait, and
@@ -9,8 +11,8 @@
      Christianity. Every paragraph paraphrases — no Bible translation text
      is copied. References name the passages retold.
    - fjesus  "Jesus" — his life and the stories he told.
-   Format: sections:[{t:english title, ne:nepali title,
-     paras:[[nepali, roman, english, reference?]]}]
+   Format: sections:[{id, t:english title, ne:nepali title, art:FNE_ART.<id>,
+     note:english explanation, paras:[[nepali, roman, english, reference?]]}]
    Rules: Nepali strings must avoid ' " < > \\ (they ride inline onclick
    handlers — use dashes for speech, danda for sentence ends). High
    honorific (-नुभयो / हुनुहुन्छ) for God and Jesus throughout, as in the
@@ -18,52 +20,97 @@
    course style (aa/ee/oo doubling, sentence-capitalized). Vocabulary stays
    consistent with the Intensive track: परमेश्वर, येशू, पाप, विश्वास,
    प्रेम, मुक्ति, सुसमाचार, क्रूस, पवित्र आत्मा, प्रतिज्ञा, सङ्गति.
-   Audio: clips live in audio-nef/ (extract with
-   `osascript -l JavaScript extract_audio_strings.js nef`, then
-   `python3 generate_audio.py --lang nef` — same Nepali voice as the course). */
+   IMPORTANT: keep paras[i][0] byte-stable unless you also regenerate audio —
+   clips in audio-nef/ are hashed from these exact strings. Regenerate with
+   `osascript -l JavaScript extract_audio_strings.js nef` then
+   `python3 generate_audio.py --lang nef` (same Nepali voice as the course).
+   Art: FNE_ART — small SVG scene emblems (viewBox 0 0 120 84), shown on the
+   path node and enlarged at the top of each story. Christian imagery is
+   intentional here (Ruan) — the secular-art rule does not apply in faith
+   mode. No depictions of God or of Jesus' face — scenes and symbols only. */
+
+const FNE_ART={
+creation:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#D8ECF5"/><circle cx="88" cy="26" r="15" fill="#F3C24B" opacity=".35"/><circle cx="88" cy="26" r="10" fill="#F3C24B"/><path d="M22 24 q4 -3 8 0 M34 31 q3 -2.4 6 0" stroke="#6B8CA3" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M0 60 Q30 42 60 56 Q90 70 120 52 L120 84 L0 84 Z" fill="#7FA98A"/><path d="M0 70 Q40 58 78 68 Q100 73 120 66 L120 84 L0 84 Z" fill="#5D8B6F"/><path d="M50 84 Q55 74 49 66 Q45 60 52 54" stroke="#9CC4DB" stroke-width="5" fill="none" stroke-linecap="round"/></svg>',
+fall:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#E9EFE2"/><path d="M0 68 Q60 60 120 68 L120 84 L0 84 Z" fill="#A9BF9A"/><path d="M57 68 C59 54 57 44 59 36 L63 36 C61 46 63 56 62 68 Z" fill="#8A6A4B"/><circle cx="60" cy="30" r="15" fill="#6F9B76"/><circle cx="47" cy="36" r="10" fill="#6F9B76"/><circle cx="73" cy="36" r="10" fill="#6F9B76"/><circle cx="66" cy="28" r="3" fill="#C44536"/><circle cx="50" cy="34" r="3" fill="#C44536"/><circle cx="76" cy="65" r="3" fill="#C44536"/><path d="M36 70 q7 -7 14 -1 q6 5 12 -1" fill="none" stroke="#517D4F" stroke-width="3.4" stroke-linecap="round"/><circle cx="35" cy="68" r="1.7" fill="#2F3B2F"/></svg>',
+spread:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#CFE3EF"/><path d="M8 34 A26 26 0 0 1 60 34" stroke="#E7B04E" stroke-width="3.2" fill="none"/><path d="M13 34 A21 21 0 0 1 55 34" stroke="#D68A6E" stroke-width="3.2" fill="none"/><path d="M18 34 A16 16 0 0 1 50 34" stroke="#7FA98A" stroke-width="3.2" fill="none"/><rect x="56" y="38" width="22" height="11" rx="2" fill="#A8845F"/><path d="M52 38 L67 29 L82 38 Z" fill="#6E5138"/><path d="M40 49 L94 49 L84 63 L50 63 Z" fill="#8A6A4B"/><path d="M0 66 Q15 61 30 66 T60 66 T90 66 T120 66 L120 84 L0 84 Z" fill="#8FB8D4"/><path d="M0 74 Q15 69 30 74 T60 74 T90 74 T120 74 L120 84 L0 84 Z" fill="#6FA0C2"/></svg>',
+abraham:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#2E4057"/><g fill="#F4EBD8"><circle cx="16" cy="14" r="1.6"/><circle cx="34" cy="24" r="1.1"/><circle cx="50" cy="10" r="1.8"/><circle cx="66" cy="20" r="1.2"/><circle cx="80" cy="9" r="1.5"/><circle cx="95" cy="18" r="1.9"/><circle cx="108" cy="10" r="1.2"/><circle cx="25" cy="36" r="1.3"/><circle cx="58" cy="32" r="1.5"/><circle cx="88" cy="32" r="1.1"/><circle cx="104" cy="28" r="1.4"/><circle cx="42" cy="40" r="1"/><circle cx="72" cy="42" r="1.3"/><circle cx="12" cy="26" r="1"/><circle cx="112" cy="40" r="1"/></g><path d="M0 60 Q40 50 70 60 Q95 68 120 58 L120 84 L0 84 Z" fill="#54677A"/><path d="M0 72 Q45 62 120 72 L120 84 L0 84 Z" fill="#3F5165"/><path d="M28 68 L41 50 L54 68 Z" fill="#C9B18C"/><path d="M41 50 L48 68 L54 68 Z" fill="#A78F6C"/></svg>',
+exodus:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#E8DCC9"/><path d="M0 68 Q60 62 120 68 L120 84 L0 84 Z" fill="#D9C9AC"/><path d="M44 68 L44 32 L76 32 L76 68" stroke="#8A6A4B" stroke-width="7" fill="none"/><path d="M55 26 q5 -6 10 0" stroke="#B33A3A" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="44" cy="44" r="3.4" fill="#B33A3A"/><circle cx="76" cy="44" r="3.4" fill="#B33A3A"/><ellipse cx="58" cy="61" rx="11" ry="7" fill="#F6F1E7"/><circle cx="70" cy="56" r="4.6" fill="#F6F1E7"/><circle cx="71.8" cy="55.4" r=".9" fill="#333"/><path d="M52 67 v5 M58 68 v5 M64 67 v5" stroke="#C0B49A" stroke-width="2.2" stroke-linecap="round"/></svg>',
+kings:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#EDE4D3"/><ellipse cx="66" cy="62" rx="28" ry="10" fill="#8E5A5A"/><path d="M48 58 L48 40 L57 50 L66 34 L75 50 L84 40 L84 58 Z" fill="#E0B54F" stroke="#C1922F" stroke-width="1.6" stroke-linejoin="round"/><circle cx="66" cy="52" r="2.4" fill="#B33A3A"/><circle cx="55" cy="54" r="1.8" fill="#4E7997"/><circle cx="77" cy="54" r="1.8" fill="#4E7997"/><rect x="16" y="44" width="16" height="21" rx="2" fill="#F4EBD8" stroke="#C9BFA8"/><path d="M20 50 h8 M20 55 h8 M20 60 h5" stroke="#A79A7F" stroke-width="1.5" stroke-linecap="round"/></svg>',
+wait:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#33415C"/><circle cx="88" cy="20" r="10" fill="#EDE4D3"/><circle cx="92" cy="17" r="9" fill="#33415C"/><path d="M0 58 L14 58 L14 48 L24 48 L24 56 L38 56 L38 62 L0 62 Z" fill="#26334A"/><path d="M96 62 L120 62 L120 54 L108 54 L108 60 L96 60 Z" fill="#26334A"/><path d="M0 62 L120 62 L120 84 L0 84 Z" fill="#2A3850"/><path d="M52 62 q8 7 16 0 l-2 -6 l-12 0 Z" fill="#8A6A4B"/><path d="M60 46 q5 6 0 10 q-5 -4 0 -10" fill="#F3C24B"/><circle cx="60" cy="52" r="8" fill="#F3C24B" opacity=".22"/></svg>',
+immanuel:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#31456B"/><path d="M60 8 L63.5 24 L78 27.5 L63.5 31 L60 47 L56.5 31 L42 27.5 L56.5 24 Z" fill="#F6D77A"/><path d="M60 34 L60 58" stroke="#F6D77A" stroke-width="2" opacity=".55"/><circle cx="24" cy="16" r="1.3" fill="#F4EBD8"/><circle cx="98" cy="14" r="1.5" fill="#F4EBD8"/><circle cx="106" cy="34" r="1.1" fill="#F4EBD8"/><circle cx="16" cy="38" r="1.1" fill="#F4EBD8"/><path d="M0 70 L120 70 L120 84 L0 84 Z" fill="#26334A"/><path d="M36 70 L60 54 L84 70 Z" fill="#7A5C3E"/><path d="M40 70 L40 62 M80 70 L80 62" stroke="#6E5138" stroke-width="3"/><path d="M51 70 L69 70 L65 77 L55 77 Z" fill="#A8845F"/><path d="M53 68 q7 -4 14 0" stroke="#E0B54F" stroke-width="3" fill="none" stroke-linecap="round"/></svg>',
+cross:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#8E7F93"/><circle cx="88" cy="20" r="8" fill="#EDE4D3" opacity=".55"/><path d="M0 66 Q60 42 120 66 L120 84 L0 84 Z" fill="#5B4E5E"/><path d="M58 20 L62 20 L62 32 L72 32 L72 36 L62 36 L62 62 L58 62 L58 36 L48 36 L48 32 L58 32 Z" fill="#3E3630"/><path d="M32 40 L35 40 L35 48 L41 48 L41 51 L35 51 L35 66 L32 66 L32 51 L26 51 L26 48 L32 48 Z" fill="#4A3F35"/><path d="M85 40 L88 40 L88 48 L94 48 L94 51 L88 51 L88 66 L85 66 L85 51 L79 51 L79 48 L85 48 Z" fill="#4A3F35"/></svg>',
+newcreation:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#F6E3C5"/><circle cx="60" cy="46" r="16" fill="#F3C24B"/><g stroke="#F3C24B" stroke-width="2.6" stroke-linecap="round"><path d="M60 20 v-8 M38 28 l-6 -6 M82 28 l6 -6 M30 46 h-9 M90 46 h9"/></g><path d="M0 56 Q30 48 55 54 Q90 61 120 52 L120 84 L0 84 Z" fill="#7FA98A"/><path d="M48 84 Q54 72 60 66 Q66 60 60 54" stroke="#9CC4DB" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M87 62 C88 56 87 52 88 48 L91 48 C90 53 91 57 90 62 Z" fill="#8A6A4B"/><circle cx="89" cy="45" r="7.5" fill="#6F9B76"/><circle cx="86" cy="44" r="1.7" fill="#C44536"/><circle cx="92" cy="47" r="1.7" fill="#C44536"/></svg>',
+jbirth:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#31456B"/><path d="M60 10 L62.5 21 L73 23.5 L62.5 26 L60 37 L57.5 26 L47 23.5 L57.5 21 Z" fill="#F6D77A"/><circle cx="22" cy="18" r="1.3" fill="#F4EBD8"/><circle cx="100" cy="16" r="1.4" fill="#F4EBD8"/><circle cx="90" cy="36" r="1.1" fill="#F4EBD8"/><path d="M0 70 L120 70 L120 84 L0 84 Z" fill="#26334A"/><path d="M44 44 L76 44 L70 60 L50 60 Z" fill="#A8845F"/><path d="M46 46 q14 -8 28 0" stroke="#E0B54F" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M46 62 L58 44 M74 62 L62 44" stroke="#8A6A4B" stroke-width="3.4" stroke-linecap="round"/></svg>',
+jbaptism:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#D8ECF5"/><g stroke="#F3C24B" stroke-width="2.4" stroke-linecap="round"><path d="M48 10 L53 22 M60 8 v14 M72 10 L67 22"/></g><ellipse cx="60" cy="38" rx="7" ry="4.6" fill="#FDFBF5" stroke="#B9C9D6" stroke-width="1"/><path d="M60 36 Q52 28 46 32 Q52 33 55 38 Z" fill="#FDFBF5" stroke="#B9C9D6" stroke-width="1"/><path d="M66 40 Q73 42 76 47 Q70 46 65 42 Z" fill="#FDFBF5" stroke="#B9C9D6" stroke-width="1"/><circle cx="64" cy="37" r=".8" fill="#555"/><path d="M0 60 Q15 55 30 60 T60 60 T90 60 T120 60 L120 84 L0 84 Z" fill="#8FB8D4"/><path d="M0 70 Q15 65 30 70 T60 70 T90 70 T120 70 L120 84 L0 84 Z" fill="#6FA0C2"/></svg>',
+jkingdom:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#EAF0DC"/><circle cx="96" cy="18" r="8" fill="#F3C24B"/><path d="M0 66 Q60 58 120 66 L120 84 L0 84 Z" fill="#A9BF9A"/><path d="M40 70 Q60 58 80 70 Z" fill="#8A6A4B"/><path d="M60 62 L60 44" stroke="#5D8B6F" stroke-width="3" stroke-linecap="round"/><path d="M60 50 Q50 46 46 38 Q56 40 60 46 Z" fill="#6F9B76"/><path d="M60 46 Q70 42 74 34 Q64 36 60 42 Z" fill="#6F9B76"/></svg>',
+jmiracles:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#F0E7D4"/><path d="M38 52 L82 52 L75 70 L45 70 Z" fill="#A8845F"/><path d="M42 57 L78 57 M44 62 L76 62" stroke="#8A6A4B" stroke-width="1.6"/><circle cx="48" cy="47" r="5.5" fill="#E0B54F"/><circle cx="59" cy="45" r="5.5" fill="#E7C468"/><circle cx="70" cy="47" r="5.5" fill="#E0B54F"/><circle cx="54" cy="51" r="5" fill="#D6A93F"/><circle cx="65" cy="51" r="5" fill="#E7C468"/><path d="M20 30 Q28 24 36 30 Q28 36 20 30 Z" fill="#7FA6C2"/><path d="M20 30 L14 26 L14 34 Z" fill="#7FA6C2"/><circle cx="31" cy="29" r=".9" fill="#333"/><path d="M84 34 Q92 28 100 34 Q92 40 84 34 Z" fill="#7FA6C2"/><path d="M100 34 L106 30 L106 38 Z" fill="#7FA6C2"/><circle cx="89" cy="33" r=".9" fill="#333"/></svg>',
+jlostson:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#F3E7CE"/><circle cx="24" cy="20" r="9" fill="#F3C24B" opacity=".8"/><path d="M0 66 Q60 58 120 66 L120 84 L0 84 Z" fill="#C4B491"/><path d="M8 84 Q40 76 62 68 Q78 62 84 58" stroke="#D9C9AC" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="72" y="40" width="30" height="24" fill="#C9B18C"/><path d="M68 40 L87 26 L106 40 Z" fill="#8E5A5A"/><rect x="82" y="48" width="10" height="16" fill="#6E5138"/><rect x="84" y="50" width="6" height="12" fill="#F3C24B"/></svg>',
+jsamaritan:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#E4D9C3"/><path d="M0 40 L16 22 L34 40 L28 62 L4 60 Z" fill="#B3A183"/><path d="M120 36 L102 20 L86 38 L92 60 L116 58 Z" fill="#A8946F"/><path d="M0 76 Q40 62 70 60 Q95 58 120 62 L120 84 L0 84 Z" fill="#D9C9AC"/><path d="M56 56 C53 48 53 42 56 38 L64 38 C67 42 67 48 64 56 Q60 60 56 56 Z" fill="#8E5A5A"/><path d="M56 38 q4 -3 8 0" stroke="#6E4141" stroke-width="2" fill="none"/><rect x="72" y="46" width="14" height="8" rx="4" fill="#FDFBF5" stroke="#C9BFA8"/><path d="M58 26 c-3 -4 1 -8 4 -5 c3 -3 7 1 4 5 l-4 4 Z" fill="#C44536"/></svg>',
+jcross:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#6E5F76"/><circle cx="60" cy="38" r="22" fill="#F4EBD8" opacity=".14"/><circle cx="60" cy="38" r="32" fill="#F4EBD8" opacity=".08"/><path d="M0 68 Q60 50 120 68 L120 84 L0 84 Z" fill="#4C4152"/><path d="M56 16 L64 16 L64 32 L78 32 L78 40 L64 40 L64 68 L56 68 L56 40 L42 40 L42 32 L56 32 Z" fill="#3E3630"/></svg>',
+jrisen:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="84" rx="10" fill="#F6E3C5"/><path d="M0 70 Q60 62 120 70 L120 84 L0 84 Z" fill="#A9BF9A"/><path d="M14 70 Q16 34 52 30 Q84 28 88 70 Z" fill="#9C8F7B"/><path d="M36 70 Q36 48 52 46 Q68 48 68 70 Z" fill="#2F2A24"/><g stroke="#F3C24B" stroke-width="2.6" stroke-linecap="round"><path d="M52 40 v-9 M40 44 l-6 -7 M64 44 l6 -7"/></g><circle cx="97" cy="58" r="12" fill="#B9B2A5"/><circle cx="97" cy="58" r="12" fill="none" stroke="#9C8F7B" stroke-width="2"/><path d="M22 74 q3 -6 0 -10 M28 74 q-3 -5 0 -9" stroke="#5D8B6F" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>'};
 
 registerFaith({code:'ne',
 stories:[
 {id:'fstory',title:'God’s Story',ne:'परमेश्वरको कथा',
-intro:'One story runs from the first page of the Bible to the last: God made us for fellowship with himself, we broke it, and God — at great cost — made the way back. Read it in Nepali and English, and listen as you go.',
+intro:'One story runs from the first page of the Bible to the last: God made us for fellowship with himself, we broke it, and God — at great cost — made the way back. Walk through the big moments below; each one is a short story you can read and listen to in Nepali and English.',
 sections:[
-{t:'In the beginning',ne:'सुरुमा',paras:[
+{id:'creation',t:'In the beginning',ne:'सुरुमा',art:FNE_ART.creation,
+note:'God did not need us — he wanted us. Human beings were made in his image, for friendship with their Maker, and the story opens in a world where that friendship is whole and everything is good.',
+paras:[
 ['सुरुमा परमेश्वरले आकाश र पृथ्वी बनाउनुभयो। सबै कुरा असल थियो।','Surumaa Parameshwarle aakaash ra prithvi banaunubhayo. Sabai kuraa asal thiyo.','In the beginning God made the heavens and the earth. Everything he made was good.','Genesis 1'],
 ['परमेश्वरले मानिसलाई आफ्नै स्वरूपमा बनाउनुभयो — पुरुष र स्त्री।','Parameshwarle maanislaai aaphnai swaroopmaa banaunubhayo — purush ra stree.','God made human beings in his own image — male and female.','Genesis 1:27'],
 ['परमेश्वर मानिसहरूसँग बगैंचामा हिँड्नुहुन्थ्यो। मानिस र परमेश्वरको बीचमा मीठो सङ्गति थियो।','Parameshwar maanisharusanga bagainchaamaa hindnuhunthyo. Maanis ra Parameshwarko beechmaa meetho sangati thiyo.','God walked with the humans in the garden. There was sweet fellowship between humanity and God.','Genesis 2–3']]},
-{t:'The break',ne:'सङ्गति भाँचियो',paras:[
+{id:'fall',t:'The break',ne:'सङ्गति भाँचियो',art:FNE_ART.fall,
+note:'The heart of sin is not rule-breaking but trust-breaking — believing that God is holding out on us. Yet notice: even on the darkest page, God is already promising a Rescuer who will crush the serpent.',
+paras:[
 ['एउटा सर्पले झूट बोल्यो। मानिसहरूले परमेश्वरको वचन छोडेर सर्पको कुरामा विश्वास गरे।','Eutaa sarpale jhoot bolyo. Maanisharule Parameshwarko wachan chhodera sarpako kuraamaa vishwaas gare.','A serpent told a lie — and the humans left God’s word and trusted the snake instead.','Genesis 3:1–6'],
 ['परमेश्वरको आज्ञा नमान्नु नै पाप हो। पापले मानिस र परमेश्वरको सङ्गति भाँच्यो।','Parameshwarko aagyaa namaannu nai paap ho. Paaple maanis ra Parameshwarko sangati bhaanchyo.','Turning from God’s command — that is sin. And sin broke the fellowship between humanity and God.','Genesis 3:8–10'],
 ['मानिसहरू बगैंचाबाट टाढा गए। तर परमेश्वरले प्रतिज्ञा दिनुभयो — एक दिन एक जना उद्धारक आउनुहुनेछ।','Maanisharu bagainchaabaata taadhaa gae. Tara Parameshwarle pratigyaa dinubhayo — ek din ek janaa uddhaarak aaunuhunechha.','The humans went out from the garden. But God gave a promise: one day a Rescuer would come.','Genesis 3:15']]},
-{t:'Sin spreads',ne:'पाप फैलियो',paras:[
+{id:'spread',t:'Sin spreads',ne:'पाप फैलियो',art:FNE_ART.spread,
+note:'Sin never stays private — it spreads outward into families, cities and whole societies. Yet God keeps answering growing evil with grace: the ark carries a family through, and the rainbow seals a promise.',
+paras:[
 ['पाप संसारभरि फैलियो। मानिसको मन परमेश्वरबाट टाढा भयो।','Paap sansaarbhari phailiyo. Maanisko man Parameshwarbaata taadhaa bhayo.','Sin spread through the whole world, and the human heart drifted far from God.','Genesis 4–6'],
 ['तैपनि परमेश्वरले संसारलाई छोड्नुभएन। नोआको परिवारमाथि उहाँले अनुग्रह देखाउनुभयो।','Taipani Parameshwarle sansaarlaai chhodnubhaena. Noaako pariwaarmaathi uhaanle anugraha dekhaunubhayo.','Even so, God did not abandon the world. He showed grace to Noah and his family.','Genesis 6–9'],
 ['बाबेलमा मानिसहरूले आफ्नै नाम ठूलो बनाउन खोजे। तर परमेश्वरको योजना अझै अगाडि बढिरहेको थियो।','Baabelmaa maanisharule aaphnai naam thulo banaauna khoje. Tara Parameshwarko yojanaa ajhai agaadi badhiraheko thiyo.','At Babel people tried to make their own name great. But God’s plan kept moving forward.','Genesis 11']]},
-{t:'A promise to Abraham',ne:'अब्राहामलाई प्रतिज्ञा',paras:[
+{id:'abraham',t:'A promise to Abraham',ne:'अब्राहामलाई प्रतिज्ञा',art:FNE_ART.abraham,
+note:'God’s answer to a broken world is, surprisingly, one ordinary family. The promise that ALL nations would be blessed through Abraham is the seed of the whole gospel — and it reaches Nepal too.',
+paras:[
 ['परमेश्वरले अब्राहामलाई बोलाउनुभयो — तिम्रो परिवारद्वारा संसारका सबै जातिले आशिष् पाउनेछन्।','Parameshwarle Abrahaamlaai bolaunubhayo — timro pariwaardwaaraa sansaarkaa sabai jaatile aashish paaunechhan.','God called Abraham: through your family, all the peoples of the earth will be blessed.','Genesis 12:1–3'],
 ['अब्राहामले परमेश्वरलाई विश्वास गरे, र परमेश्वरले उनलाई धर्मी ठहराउनुभयो।','Abrahaamle Parameshwarlaai vishwaas gare, ra Parameshwarle unlaai dharmi thaharaunubhayo.','Abraham trusted God — and God counted him as righteous.','Genesis 15:6'],
 ['यही एउटा परिवारबाट परमेश्वरको उद्धारको कथा अगाडि बढ्यो।','Yahi eutaa pariwaarbaata Parameshwarko uddhaarko kathaa agaadi badhyo.','From this one family, God’s rescue story moved forward.','Genesis 12–50']]},
-{t:'Rescue from Egypt',ne:'मिश्रबाट छुटकारा',paras:[
+{id:'exodus',t:'Rescue from Egypt',ne:'मिश्रबाट छुटकारा',art:FNE_ART.exodus,
+note:'The Passover paints the pattern of the whole Bible: rescue comes through a substitute. Israel walked free not because they were strong, but because a lamb died in their place and God kept his promise.',
+paras:[
 ['अब्राहामको परिवार मिश्रमा कमारा भयो। तिनीहरूले परमेश्वरलाई पुकारे, र उहाँले सुन्नुभयो।','Abrahaamko pariwaar Mishramaa kamaaraa bhayo. Tiniharule Parameshwarlaai pukaare, ra uhaanle sunnubhayo.','Abraham’s family became slaves in Egypt. They cried out to God — and he heard.','Exodus 2:23–25'],
 ['थुमाको रगतले तिनीहरूलाई मृत्युबाट बचायो। परमेश्वरले आफ्ना मानिसहरूलाई छुटाउनुभयो।','Thumaako ragatle tiniharulaai mrityubaata bachaayo. Parameshwarle aaphnaa maanisharulaai chhutaunubhayo.','The blood of a lamb sheltered them from death, and God set his people free.','Exodus 12'],
 ['परमेश्वरले तिनीहरूसँग करार बाँध्नुभयो र तिनीहरूकै बीचमा बास गर्नुभयो।','Parameshwarle tiniharusanga karaar baandhnubhayo ra tiniharukai beechmaa baas garnubhayo.','God made a covenant with them and came to dwell right among his people.','Exodus 19–40']]},
-{t:'Kings and prophets',ne:'राजा र अगमवक्ताहरू',paras:[
+{id:'kings',t:'Kings and prophets',ne:'राजा र अगमवक्ताहरू',art:FNE_ART.kings,
+note:'Every king fails — and that is the point. The story is training us to long for a better King: one who bears God’s image without corruption, whose kingdom never ends.',
+paras:[
 ['परमेश्वरले दाऊदलाई राजा बनाउनुभयो र प्रतिज्ञा दिनुभयो — तिम्रो वंशबाट एउटा अनन्त राजा आउनुहुनेछ।','Parameshwarle Daaudlaai raajaa banaunubhayo ra pratigyaa dinubhayo — timro wanshabaata eutaa ananta raajaa aaunuhunechha.','God made David king and promised: from your line will come a King whose kingdom never ends.','2 Samuel 7'],
 ['तर राजाहरू र मानिसहरू बारम्बार पापमा फर्के।','Tara raajaaharu ra maanisharu baarambaar paapmaa pharke.','But the kings and the people kept turning back to sin.','1–2 Kings'],
 ['अगमवक्ताहरूले भने — परमेश्वरले नयाँ करार बाँध्नुहुनेछ, र उहाँको सेवकले हाम्रो पाप बोक्नुहुनेछ।','Agamwaktaaharule bhane — Parameshwarle nayaan karaar baandhnuhunechha, ra uhaanko sewakle haamro paap boknuhunechha.','The prophets spoke of hope: God will make a new covenant, and his Servant will carry our sin.','Jeremiah 31 · Isaiah 53']]},
-{t:'The long wait',ne:'लामो प्रतीक्षा',paras:[
+{id:'wait',t:'The long wait',ne:'लामो प्रतीक्षा',art:FNE_ART.wait,
+note:'God’s silences are not absences. Four hundred quiet years between the testaments were full of preparation — the lamp of hope stayed lit for the greatest arrival in history.',
+paras:[
 ['मानिसहरू आफ्नो देशबाट टाढा निर्वासनमा गए। सबै आशा हराएजस्तो देखियो।','Maanisharu aaphno deshbaata taadhaa nirwaasanmaa gae. Sabai aashaa haraaejasto dekhiyo.','The people were carried far from their land into exile. It looked as if all hope was lost.','2 Kings 25'],
 ['तैपनि तिनीहरूले पर्खिरहे — प्रतिज्ञा गरिएको उद्धारक, मसीह, कहिले आउनुहुन्छ?','Taipani tiniharule parkhirahe — pratigyaa garieko uddhaarak, Maseeh, kahile aaunuhunchha?','Still they waited: when would the promised Rescuer — the Messiah — come?','Isaiah 9:6–7'],
 ['चार सय वर्षसम्म सन्नाटा रह्यो। तर परमेश्वरले आफ्नो प्रतिज्ञा बिर्सनुभएको थिएन।','Chaar saya barshasamma sannaataa rahyo. Tara Parameshwarle aaphno pratigyaa birsanubhaeko thiena.','For four hundred years, silence. But God had not forgotten his promise.','Malachi → Matthew']]},
-{t:'God with us',ne:'इम्मानुएल',paras:[
+{id:'immanuel',t:'God with us',ne:'इम्मानुएल',art:FNE_ART.immanuel,
+note:'The Creator stepped inside his own creation. In Jesus, God did not send help from a distance — he came himself, close enough to touch, born under a village sky.',
+paras:[
 ['अनि येशू जन्मनुभयो — इम्मानुएल, अर्थात् परमेश्वर हामीसँग।','Ani Yeshu janmanubhayo — Immaanuel, arthaat Parameshwar haamisanga.','Then Jesus was born — Immanuel, which means God with us.','Matthew 1:23'],
 ['परमेश्वर आफैँ मानिस बन्नुभयो र हाम्रै बीचमा बस्नुभयो।','Parameshwar aaphain maanis bannubhayo ra haamrai beechmaa basnubhayo.','God himself became human and made his home among us.','John 1:14'],
 ['येशूले परमेश्वरको राज्यको सुसमाचार सुनाउनुभयो र हराएकाहरूलाई खोज्नुभयो।','Yeshule Parameshwarko raajyako susamaachaar sunaunubhayo ra haraaekaaharulaai khojnubhayo.','Jesus announced the good news of God’s kingdom and went looking for the lost.','Luke 4 · Luke 19:10']]},
-{t:'The cross and the empty tomb',ne:'क्रूस र रित्तो चिहान',paras:[
+{id:'crossgs',t:'The cross and the empty tomb',ne:'क्रूस र रित्तो चिहान',art:FNE_ART.cross,
+note:'Here the broken fellowship of Eden is answered. The true Passover Lamb takes our sin on himself, and the empty tomb is God’s public receipt that the payment was accepted in full.',
+paras:[
 ['क्रूसमा येशूले हाम्रो पाप आफैँमाथि लिनुभयो। उहाँ नै साँचो निस्तारको थुमा हुनुहुन्छ।','Kroosmaa Yeshule haamro paap aaphainmaathi linubhayo. Uhaan nai saancho nistaarko thumaa hunuhunchha.','On the cross Jesus took our sin upon himself. He is the true Passover Lamb.','Isaiah 53 · 1 Corinthians 5:7'],
 ['तेस्रो दिन येशू मृत्युबाट जीवित हुनुभयो। मृत्यु पराजित भयो।','Tesro din Yeshu mrityubaata jeewit hunubhayo. Mrityu paraajit bhayo.','On the third day Jesus rose from the dead. Death itself was defeated.','Luke 24'],
 ['अब परमेश्वरकहाँ फर्कने बाटो खुल्यो। भाँचिएको सङ्गति फेरि जोडियो।','Aba Parameshwarkahaan pharkane baato khulyo. Bhaanchieko sangati pheri jodiyo.','Now the way back to God stands open. The broken fellowship is joined again.','Romans 5:1–11']]},
-{t:'New creation',ne:'नयाँ सृष्टि',paras:[
+{id:'newcreation',t:'New creation',ne:'नयाँ सृष्टि',art:FNE_ART.newcreation,
+note:'The story does not end with souls floating away to somewhere else. It ends with heaven and earth made new, God at home with his people, and the garden restored — better than the beginning. And the door is open.',
+paras:[
 ['येशूले आफ्ना चेलाहरूलाई पवित्र आत्मा दिनुभयो र संसारभरि पठाउनुभयो।','Yeshule aaphnaa chelaaharulaai Pawitra Aatmaa dinubhayo ra sansaarbhari pathaunubhayo.','Jesus gave his followers the Holy Spirit and sent them out into all the world.','Acts 1–2'],
 ['एक दिन येशू फेरि आउनुहुनेछ। परमेश्वरले नयाँ आकाश र नयाँ पृथ्वी बनाउनुहुनेछ।','Ek din Yeshu pheri aaunuhunechha. Parameshwarle nayaan aakaash ra nayaan prithvi banaunuhunechha.','One day Jesus will come again, and God will make a new heaven and a new earth.','Revelation 21:1'],
 ['त्यहाँ परमेश्वर आफ्ना मानिसहरूसँग बास गर्नुहुनेछ। न आँसु, न मृत्यु — सङ्गति सधैँको लागि।','Tyahaan Parameshwar aaphnaa maanisharusanga baas garnuhunechha. Na aansu, na mrityu — sangati sadhainko laagi.','There God will dwell with his people. No more tears, no more death — fellowship forever.','Revelation 21:3–4'],
@@ -73,33 +120,49 @@ sections:[
 {id:'fjesus',title:'Jesus',ne:'येशू',
 intro:'The center of the story: the life of Jesus and the stories he told — from the manger to the empty tomb.',
 sections:[
-{t:'The birth',ne:'जन्म',paras:[
+{id:'jbirth',t:'The birth',ne:'जन्म',art:FNE_ART.jbirth,
+note:'The King of everything arrived with no palace and no trumpet — and God chose shepherds, ordinary overlooked working men, to be the first witnesses. That is how this kingdom works from its very first night.',
+paras:[
 ['गब्रिएल स्वर्गदूतले मरियमलाई भने — तिमीले एउटा छोरो जन्माउनेछ्यौ, र उहाँको नाम येशू राख्नू।','Gabriel swargadootle Mariyamlaai bhane — timile eutaa chhoro janmaunechhyau, ra uhaanko naam Yeshu raakhnu.','The angel Gabriel told Mary: you will have a son, and you are to name him Jesus.','Luke 1:26–33'],
 ['येशू बेथलेहेममा जन्मनुभयो — सानो गाउँ, सानो डुँड। गोठालाहरू पहिलो पाहुना भए।','Yeshu Bethlehemmaa janmanubhayo — saano gaaun, saano dund. Gothaalaaharu pahilo paahunaa bhae.','Jesus was born in Bethlehem — a small town, a humble manger. Shepherds were the first visitors.','Luke 2'],
 ['येशू नामको अर्थ यही हो — उहाँले आफ्ना मानिसहरूलाई तिनीहरूका पापबाट बचाउनुहुनेछ।','Yeshu naamko artha yahi ho — uhaanle aaphnaa maanisharulaai tiniharukaa paapbaata bachaunuhunechha.','The name Jesus carries his mission: he will save his people from their sins.','Matthew 1:21']]},
-{t:'Baptism and the wilderness',ne:'बप्तिस्मा र उजाडस्थान',paras:[
+{id:'jbaptism',t:'Baptism and the wilderness',ne:'बप्तिस्मा र उजाडस्थान',art:FNE_ART.jbaptism,
+note:'Jesus stands where we stand — in the water alongside sinners — and then stands firm where we fall, facing the tempter in the desert. He succeeds in every place Adam and Israel failed.',
+paras:[
 ['यूहन्नाले येशूलाई नदीमा बप्तिस्मा दिए। आकाशबाट आवाज आयो — यिनी मेरा प्रिय पुत्र हुन्।','Yuhannaale Yeshulaai nadeemaa baptismaa die. Aakaashbaata aawaaj aayo — yini meraa priya putra hun.','John baptized Jesus in the river, and a voice came from heaven: this is my beloved Son.','Matthew 3:13–17'],
 ['उजाडस्थानमा शैतानले येशूलाई परीक्षा गर्यो। तर आदमजस्तो होइन — येशूले जित्नुभयो।','Ujaadsthaanmaa shaitaanle Yeshulaai parikshaa garyo. Tara Aadamjasto hoina — Yeshule jitnubhayo.','In the wilderness Satan tested Jesus. But where Adam fell, Jesus stood firm and won.','Matthew 4:1–11']]},
-{t:'The kingdom announced',ne:'राज्यको सुसमाचार',paras:[
+{id:'jkingdom',t:'The kingdom announced',ne:'राज्यको सुसमाचार',art:FNE_ART.jkingdom,
+note:'The kingdom of God is not a place on a map — it is God’s own good rule breaking into the world, quiet as a seed pushing up through soil. And its door opens first to the least likely people.',
+paras:[
 ['येशूले भन्नुभयो — परमेश्वरको राज्य नजिकै आएको छ। फर्केर आओ र सुसमाचारमा विश्वास गर।','Yeshule bhannubhayo — Parameshwarko raajya najikai aaeko chha. Pharkera aau ra susamaachaarmaa vishwaas gara.','Jesus announced: the kingdom of God has come near. Turn around, and believe the good news.','Mark 1:15'],
 ['उहाँले गरिबहरूलाई, बिरामीहरूलाई र पापीहरूलाई नजिक बोलाउनुभयो।','Uhaanle garibharulaai, biraamiharulaai ra paapiharulaai najik bolaunubhayo.','He called the poor, the sick and the sinners near — the very people others pushed away.','Luke 5:27–32']]},
-{t:'Power and compassion',ne:'शक्ति र दया',paras:[
+{id:'jmiracles',t:'Power and compassion',ne:'शक्ति र दया',art:FNE_ART.jmiracles,
+note:'The miracles are not magic shows — they are previews. Every healing, every calmed storm, every multiplied loaf is a window into the world as God intends it: no sickness, no hunger, no fear.',
+paras:[
 ['येशूले बिरामीलाई निको पार्नुभयो र अन्धालाई देख्ने बनाउनुभयो।','Yeshule biraamilaai niko paarnubhayo ra andhaalaai dekhne banaunubhayo.','Jesus healed the sick and gave the blind their sight.','Matthew 9'],
 ['उहाँले आँधीलाई शान्त पार्नुभयो। चेलाहरूले सोधे — यिनी को हुन्?','Uhaanle aandhilaai shaanta paarnubhayo. Chelaaharule sodhe — yini ko hun?','He calmed a storm with a word. His disciples asked each other: who IS this?','Mark 4:35–41'],
 ['पाँचवटा रोटी र दुईवटा माछाले उहाँले हजारौंलाई खुवाउनुभयो।','Paanchwataa roti ra duiwataa maachhaale uhaanle hajaraunlaai khuwaunubhayo.','With five loaves and two fish he fed thousands.','John 6:1–14']]},
-{t:'The lost son',ne:'हराएको छोरा',paras:[
+{id:'jlostson',t:'The lost son',ne:'हराएको छोरा',art:FNE_ART.jlostson,
+note:'The father RUNNING is the center of this parable — in that culture a dignified man never ran. God is gloriously undignified in his eagerness to welcome the returning child home.',
+paras:[
 ['येशूले कथा भन्नुभयो — एउटा छोराले बुबाको सम्पत्ति लिएर टाढा गयो र सबै उडायो।','Yeshule kathaa bhannubhayo — eutaa chhoraale bubaako sampatti liera taadhaa gayo ra sabai udaayo.','Jesus told a story: a son took his father’s wealth, went far away, and wasted it all.','Luke 15:11–16'],
 ['छोरो घर फर्कंदा बुबा दौडेर आए र अँगालो हाले।','Chhoro ghar pharkandaa bubaa daudera aae ra angaalo haale.','When the son came home, the father RAN to him and threw his arms around him.','Luke 15:20–24'],
 ['परमेश्वरको हृदय त्यस्तै छ — फर्कने हरेकलाई उहाँले खुशीसाथ ग्रहण गर्नुहुन्छ।','Parameshwarko hridaya tyastai chha — pharkane hareklaai uhaanle khushisaath grahan garnuhunchha.','That is the heart of God: he joyfully welcomes everyone who comes home.','Luke 15']]},
-{t:'The good Samaritan',ne:'असल सामरी',paras:[
+{id:'jsamaritan',t:'The good Samaritan',ne:'असल सामरी',art:FNE_ART.jsamaritan,
+note:'Jesus flips the lawyer’s question. Not WHO deserves my love — but how can I BE a neighbor? And he makes the despised outsider the hero of the story, which stung his hearers on purpose.',
+paras:[
 ['कसैले सोध्यो — मेरो छिमेकी को हो? येशूले कथाले जवाफ दिनुभयो।','Kasaile sodhyo — mero chhimeki ko ho? Yeshule kathaale jawaaph dinubhayo.','Someone asked Jesus: who is my neighbor? He answered with a story.','Luke 10:25–29'],
 ['बाटोमा घाइते मानिसलाई धर्मगुरुहरूले छोडे। तर एक जना सामरीले रोकिएर उसको हेरचाह गरे।','Baatomaa ghaaite maanislaai dharmaguruharule chhode. Tara ek janaa Saamarile rokiera usko herchaah gare.','Religious leaders passed the wounded man by. But a Samaritan — an outsider — stopped and cared for him.','Luke 10:30–35'],
 ['येशूले भन्नुभयो — जाओ, तिमी पनि त्यस्तै गर।','Yeshule bhannubhayo — jaau, timi pani tyastai gara.','Jesus said: go and do the same.','Luke 10:37']]},
-{t:'The cross',ne:'क्रूस',paras:[
+{id:'jcross',t:'The cross',ne:'क्रूस',art:FNE_ART.jcross,
+note:'The cross was not an accident that interrupted Jesus’ mission — it WAS the mission. Nobody took his life from him; he laid it down, love paying the full price willingly.',
+paras:[
 ['आफ्ना साथीहरूका लागि ज्यान दिनुभन्दा ठूलो प्रेम अरू छैन — अनि येशूले त्यही गर्नुभयो।','Aaphnaa saathiharukaa laagi jyaan dinubhandaa thulo prem aru chhaina — ani Yeshule tyahi garnubhayo.','There is no greater love than to lay down your life for your friends — and that is exactly what Jesus did.','John 15:13'],
 ['क्रूसमा उहाँले प्रार्थना गर्नुभयो — पिता, यिनीहरूलाई क्षमा गर्नुहोस्।','Kroosmaa uhaanle praarthanaa garnubhayo — Pitaa, yiniharulaai kshamaa garnuhos.','From the cross he prayed: Father, forgive them.','Luke 23:34'],
 ['उहाँले भन्नुभयो — सिद्धियो। हाम्रो पापको मोल पूरा तिरियो।','Uhaanle bhannubhayo — siddhiyo. Haamro paapko mol puraa tiriyo.','He said: it is finished. The price of our sin was fully paid.','John 19:30']]},
-{t:'He is risen',ne:'जीवित हुनुहुन्छ',paras:[
+{id:'jrisen',t:'He is risen',ne:'जीवित हुनुहुन्छ',art:FNE_ART.jrisen,
+note:'Everything stands or falls on this morning. Because the tomb is empty, death is no longer a wall but a door — and the risen Jesus is not a memory. He is alive, and he still calls people by name.',
+paras:[
 ['आइतबार बिहान चिहान रित्तो थियो। येशू जीवित हुनुभएको थियो।','Aaitabaar bihaana chihaan ritto thiyo. Yeshu jeewit hunubhaeko thiyo.','On Sunday morning the tomb was empty. Jesus was alive.','Luke 24:1–8'],
 ['उहाँले चेलाहरूलाई भन्नुभयो — जाओ, सबै जातिहरूलाई मेरा चेला बनाओ। म सधैँ तिमीहरूसँग छु।','Uhaanle chelaaharulaai bhannubhayo — jaau, sabai jaatiharulaai meraa chelaa banaau. Ma sadhain timiharusanga chhu.','He told his followers: go, make disciples of all nations — and remember, I am with you always.','Matthew 28:18–20'],
 ['आज पनि येशू जीवित हुनुहुन्छ, र उहाँले तपाईंलाई बोलाउनुहुन्छ।','Aaja pani Yeshu jeewit hunuhunchha, ra uhaanle tapaainlaai bolaunuhunchha.','Jesus is alive today — and he is calling you.','Revelation 3:20']]}

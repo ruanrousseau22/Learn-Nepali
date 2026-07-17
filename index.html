@@ -847,6 +847,35 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fne .spk{flex:none;margin-top:2px}
 .fen{color:var(--muted);margin-top:7px;font-size:.94rem;line-height:1.55;border-top:1px dashed var(--line);padding-top:7px}
 .fref{color:var(--muted);font-size:.8rem;margin-top:4px;font-style:italic}
+/* story path nodes */
+.hero-fsub{font-size:1.18rem;margin-top:8px;opacity:.85}
+.fprog{text-align:center;color:var(--muted);font-size:.85rem;font-weight:700;margin:4px 0 14px}
+.fnodes{display:flex;flex-direction:column;gap:12px;max-width:620px;margin:0 auto}
+.fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
+.fnode:hover{transform:translateY(-1px);border-color:var(--crimson)}
+.fnode.next{border-color:var(--crimson);box-shadow:0 4px 14px color-mix(in srgb,var(--crimson) 14%,transparent)}
+.fnode.done{opacity:.82}
+.fnode-art{flex:none;width:96px;height:68px;border-radius:10px;overflow:hidden}
+.fnode-art svg{width:100%;height:100%;display:block}
+.fnode-tx{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.fnode-t{font-weight:800;font-size:1rem}
+.fnode-ne{color:var(--muted);font-size:.92rem}
+.fnode-tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;font-weight:800;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem}
+.fnode-go{flex:none;background:var(--crimson);color:#fff;font-weight:800;font-size:.8rem;border-radius:999px;padding:6px 12px}
+.fnode-mascot{position:absolute;top:-16px;right:10px;width:34px;height:34px;pointer-events:none}
+/* story reader */
+.fread{max-width:640px;margin:0 auto}
+.fback{background:transparent;border:0;color:var(--muted);font-weight:700;cursor:pointer;padding:6px 0;font-size:.9rem}
+.fback:hover{color:var(--crimson)}
+.fread-art{width:min(320px,80%);margin:6px auto 12px;border-radius:14px;overflow:hidden}
+.fread-art svg{width:100%;height:auto;display:block}
+.fread-t{text-align:center;font-size:1.28rem;margin:0 0 8px}
+.fnote{background:color-mix(in srgb,var(--crimson) 7%,var(--card));border:1px solid color-mix(in srgb,var(--crimson) 30%,var(--line));border-radius:14px;padding:13px 15px;margin:16px 0;line-height:1.6}
+.fnote-tag{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--crimson);margin-bottom:5px}
+.fread-nav{display:flex;align-items:center;justify-content:space-between;margin:18px 0 6px}
+.fdone-btn{background:var(--crimson);color:#fff;border:0;border-radius:14px;padding:12px 24px;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 3px 0 color-mix(in srgb,var(--crimson) 60%,#000)}
+.fdone-btn:active{transform:translateY(2px);box-shadow:none}
+.fread-count{color:var(--muted);font-weight:700;font-size:.9rem}
 </style>
 </head>
 <body>
@@ -1048,27 +1077,55 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 </section>
 
 <section class="view" id="view-fstory">
-  <div class="page-band">
-    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
-      <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 148 L110 138 L240 144 L360 133 L480 141 L580 131 L680 137 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
-      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
-      <path class="mid" d="M0 200 L0 180 Q160 166 320 172 Q480 178 620 192 L660 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
-      <g class="near">
-        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
-        <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+  <div class="hero">
+    <svg class="hero-mtns" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="930" cy="122" r="76"/>
+      <circle class="orb" cx="930" cy="122" r="46"/>
+      <g class="hero-stars" aria-hidden="true">
+        <circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/>
+        <circle cx="240" cy="104" r="1.2"/>
+        <circle cx="360" cy="46" r="2"/>
+        <circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/>
+        <circle cx="560" cy="70" r="1.6"/>
+        <circle cx="675" cy="40" r="1.3" class="tw" style="animation-delay:.6s"/>
+        <circle cx="785" cy="112" r="1.8"/>
+        <circle cx="870" cy="150" r="1.3"/>
+        <circle cx="1015" cy="62" r="1.6" class="tw" style="animation-delay:1.8s"/>
+        <circle cx="1085" cy="118" r="1.4"/>
+        <circle cx="1130" cy="44" r="1.2"/>
+        <circle cx="175" cy="138" r="1.5"/>
+        <circle cx="320" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/>
+        <circle cx="620" cy="134" r="1.5"/>
       </g>
+      <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
+      <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
+      <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
+      <path class="far" d="M0 236 L110 218 L230 229 L350 214 L470 225 L555 222 L610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
+      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
+      <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
+      <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
+      <path class="mid" d="M0 320 L0 250 Q140 228 260 240 Q400 254 520 290 L560 302 L560 320 Z"/>
+      <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M60 280 Q200 250 340 266 L338 272 Q200 258 64 286 Z"/>
+      <path class="snow" opacity=".26" d="M150 258 Q250 240 340 250 L338 256 Q250 246 152 264 Z"/>
+      <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
+      <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
+      <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
+      <path class="mid" d="M760 214 L760 182 L830 182 L830 214 Z M748 184 L795 156 L842 184 Z"/>
+      <g class="near">
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
+        </g>
     </svg>
-    <div class="pb-inner">
-      <h2>God&rsquo;s Story <span class="deva">परमेश्वरको कथा</span></h2>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="display">God&rsquo;s <em>Story</em></h1>
+        <div class="deva hero-fsub">परमेश्वरको कथा</div>
+      </div>
     </div>
   </div>
-  <div class="wrap section" style="padding-top:6px">
-    <div id="fstory-root"></div>
-  </div>
+  <div class="wrap section" style="padding-top:4px"><div id="fstory-root"></div></div>
 </section>
 
 <section class="view" id="view-fjesus">
@@ -9271,7 +9328,7 @@ const lsName=l=>l.label.split('—')[0].trim();
 function paintHomeLangSwitch(){
   const w=document.getElementById('lang-switch');if(!w)return;
   const CAT=(S.mode==='faith')?FAITH_CATALOG:LANG_CATALOG; /* faith mode lists its own languages */
-  if(CAT.length<2){w.style.display='none';w.innerHTML='';return;}
+  if(CAT.length<2&&S.mode!=='faith'){w.style.display='none';w.innerHTML='';return;} /* faith shows its picker even with one language */
   w.style.display='';w.classList.remove('open');
   const cur=CAT.find(l=>l.code===LANG.code)||CAT[0];
   const opts=CAT.map(function(l){
@@ -9311,7 +9368,7 @@ async function switchMode(m){
     if(!FAITH)return; /* failed load: stay put */
     S.mode='faith';save();
     document.body.classList.add('faith');
-    loadFaithManifest();buildFaith();show('fstory');
+    loadFaithDone();loadFaithManifest();buildFaith();show('fstory');
   }else{
     S.mode='learn';save();
     document.body.classList.remove('faith');
@@ -9335,27 +9392,53 @@ function closeModeMenu(){const w=document.getElementById('mode-switch');if(w&&w.
 document.addEventListener('click',function(e){const w=document.getElementById('mode-switch');if(w&&w.classList.contains('open')&&!w.contains(e.target))closeModeMenu();});
 async function initFaithMode(){if(curMode()!=='faith')return;S.mode='learn';await switchMode('faith');}
 
-/* ----- the bilingual story reader ----- */
+/* ----- the story path: big-moment nodes (none locked, one story each) ----- */
+let FVIEW=null,FAITH_DONE=new Set(); /* FVIEW={sid,i} while a story is open; done ids persist in sajilo_faith */
+function loadFaithDone(){try{const o=JSON.parse(localStorage.getItem('sajilo_faith')||'{}');FAITH_DONE=new Set(((o[FAITH?FAITH.code:'ne']||{}).done)||[]);}catch(e){FAITH_DONE=new Set();}}
+function saveFaithDone(){try{const o=JSON.parse(localStorage.getItem('sajilo_faith')||'{}');o[FAITH.code]={done:[...FAITH_DONE]};localStorage.setItem('sajilo_faith',JSON.stringify(o));}catch(e){}}
 function setFRom(v){S.fRom=v;save();buildFaith();}
-function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(el)el.innerHTML=storyHTML(st);});}
-function storyHTML(st){
-  const rom=(S.fRom||'script')==='rom';
-  let h='<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
-    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
-    +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>'
-    +'<p class="fpick-hint">'+(rom?'Nepali shown in roman letters — tap any line to hear it.':'Nepali shown in Devanagari script — tap the speaker to hear each line.')+'</p>';
+function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(!el)return;
+  el.innerHTML=(FVIEW&&FVIEW.sid===st.id)?freadHTML(st,FVIEW.i):fnodesHTML(st);});}
+function fnodesHTML(st){
+  const secs=st.sections||[],nRead=secs.filter(s=>FAITH_DONE.has(s.id)).length,next=secs.findIndex(s=>!FAITH_DONE.has(s.id));
+  let h='';
   if(st.intro)h+='<p class="fintro">'+st.intro+'</p>';
-  (st.sections||[]).forEach(function(s,i){
-    h+='<section class="fsec"><h3 class="fh"><span class="fnum">'+(i+1)+'</span><span>'+s.t+'</span>'+(s.ne?'<span class="deva fh-ne">'+s.ne+'</span>':'')+'</h3>';
-    h+=(s.paras||[]).map(function(p){
-      return '<div class="fpara"><div class="fne">'+(rom?'<span class="from">'+p[1]+'</span>':'<span class="deva">'+p[0]+'</span>')
-        +'<button class="spk" aria-label="Play audio" onclick="speak(\''+p[0]+'\')">'+spkSVG()+'</button></div>'
-        +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';
-    }).join('');
-    h+='</section>';
+  h+='<div class="fprog">'+(nRead?nRead+' of '+secs.length+' read':secs.length+' moments — start anywhere')+'</div><div class="fnodes">';
+  secs.forEach(function(s,i){
+    const done=FAITH_DONE.has(s.id),isNext=i===next;
+    h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
+      +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
+      +'<span class="fnode-tx"><span class="fnode-t">'+(i+1)+' · '+s.t+'</span><span class="fnode-ne deva">'+(s.ne||'')+'</span></span>'
+      +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go">'+(nRead?'Continue':'Start')+'</span>':''))
+      +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
+      +'</button>';
   });
+  return h+'</div>';
+}
+function freadHTML(st,i){
+  const s=st.sections[i],rom=(S.fRom||'script')==='rom',last=i>=st.sections.length-1;
+  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()">&larr; All moments</button>'
+    +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
+    +'<h3 class="fread-t">'+s.t+(s.ne?' <span class="deva fh-ne">'+s.ne+'</span>':'')+'</h3>'
+    +'<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
+    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
+    +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>';
+  h+=(s.paras||[]).map(function(p){
+    return '<div class="fpara"><div class="fne">'+(rom?'<span class="from">'+p[1]+'</span>':'<span class="deva">'+p[0]+'</span>')
+      +'<button class="spk" aria-label="Play audio" onclick="speak(\''+p[0]+'\')">'+spkSVG()+'</button></div>'
+      +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';
+  }).join('');
+  if(s.note)h+='<div class="fnote"><div class="fnote-tag">Why it matters</div>'+s.note+'</div>';
+  h+='<div class="fread-nav"><button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
+    +(last?'Finish &#10003;':'Continue &rarr;')+'</button>'
+    +'<div class="fread-count">'+(i+1)+' / '+st.sections.length+'</div></div></div>';
   return h;
 }
+function openFNode(sid,i){FVIEW={sid,i};buildFaith();window.scrollTo({top:0,behavior:SMOOTH});}
+function closeFNode(){FVIEW=null;buildFaith();window.scrollTo({top:0,behavior:SMOOTH});}
+function markFRead(sid,i){const st=(FAITH.stories||[]).find(x=>x.id===sid);if(!st)return;
+  FAITH_DONE.add(st.sections[i].id);saveFaithDone();
+  if(i+1<st.sections.length)openFNode(sid,i+1);else closeFNode();}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLangMenu();});
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
 async function switchLang(code){
