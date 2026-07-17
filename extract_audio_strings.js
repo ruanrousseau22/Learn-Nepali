@@ -110,7 +110,9 @@ function run(argv){
     if(!faith)throw new Error('registerFaith never called in '+conf.src);
     var out=[],seen={};
     function addF(t){if(typeof t!=='string'||!t||seen[t])return;seen[t]=1;out.push(t);}
-    (faith.stories||[]).forEach(function(st){(st.sections||[]).forEach(function(s){
+    (faith.stories||[]).forEach(function(st){
+      if(st.overview)(st.overview.paras||[]).forEach(function(p){addF(p[0]);});
+      (st.sections||[]).forEach(function(s){
       (s.paras||[]).forEach(function(p){addF(p[0]);});
       if(s.note&&s.note.length)addF(s.note[0]);});});
     strings=out;

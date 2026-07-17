@@ -531,7 +531,15 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   teaches prayer — the Lord's Prayer paraphrased — and the two builders).
   Settings stays. Finishing every moment of a story shows a completion
   banner (cheer mascot + cross-link button to the other story); open
-  stories have a previous-link (`.fprev`) beside the अगाडि button.
+  stories have a previous-link (`.fprev`). Both pages carry the full
+  Nepali HOME HERO art (verbatim static copies). Each page opens with an
+  **Overview card** (`.fnode.fov`, July 2026 — replaced the old intro
+  paragraph): a five-beat gospel summary for God's Story (सुसमाचार —
+  छोटकरीमा) and "Who is Jesus?" for the Jesus page — authored as
+  `overview:{t,ne,art,start,paras}` in the story data, opened via
+  `openFNode(sid,'ov')`, rendered like a story (script/roman picker,
+  recorded audio, play-all) but outside read-progress; its primary button
+  starts moment 1. The extractor pulls `overview.paras[i][0]` too.
   Each page is a list of **big-moment NODES (July 2026): none locked, ONE
   short story each** (unlike the 5-lesson language topics). A node card shows
   its scene art + bilingual title + a read-tick; tapping opens the story
