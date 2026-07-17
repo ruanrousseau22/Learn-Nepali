@@ -16,11 +16,12 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Status (July 2026):** all three courses complete at 12 zones each —
+- **Status (July 2026):** all FOUR courses complete at 12 zones each —
   Nepali (main 12 zones / 385 lessons + the Intensive track), Khmer
-  (12 zones / 420 lessons; early-access label dropped July 2026), and
-  Burmese (12 zones / 420 lessons; Zones 3–12 shipped in one July 2026
-  build-out, staged A–E, curriculum below).
+  (12 zones / 420 lessons; early-access label dropped July 2026),
+  Burmese (12 zones / 420 lessons; staged A–E), and Sinhala
+  (12 zones / 420 lessons; staged A–D July 2026, early-access label
+  dropped on completion). Plus the Religious studies mode (Nepali).
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -55,7 +56,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `EducationalApplication` with a `teaches` array + one `Course` per language).
   **Update all of these when you ship a new language**: add the language to the
   title/description/keywords, the `teaches` array, and add a `Course` entry — so
-  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer + Burmese.
+  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer + Burmese + Sinhala.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -276,8 +277,9 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Sinhala (`lang/si.js`) IN PROGRESS — Zones 1–10 live (July 2026, Stages
-  A–C; catalog label "· early access"; 10 zones / 70 topics / 350 lessons).**
+- **Sinhala (`lang/si.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
+  (July 2026, Stages A–D; early-access label dropped + SEO/JSON-LD Course
+  entry added on completion).
   Zone 1 "The Script": ක ග න ම; the two T families ත ද ට ඩ (dental-vs-
   retroflex is THE consonant story); ප බ ස හ; ච ජ ය ර ල ව; the half-nasals
   ඟ ඬ ඳ ඹ (unique to Sinhala); vowel signs incl. කැ + hal kirima ක්; first
@@ -335,10 +337,19 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   at the top of
   `lang/si.js`): Sri Lankan convention — soft dental th/dh vs hard
   retroflex t/d, doubled long vowels, ae for ඇ; the course teaches SPOKEN
-  Sinhala (diglossia). Zones 11-12 remain per the roadmap in the si.js
-  header (little extras: need/pace/clothes/animals/nature/remember; and
-  Make Sri Lanka home: lakhs, errands, guests, fruit incl. thaembili,
-  polite polish + formal oba as recognition). SI_NUMS teaches spoken number
+  Sinhala (diglossia). Zone 11 "Little extras": pace hemin
+  hemin/ikmanata/dhaenma/parakku wunaa, clothes aendhum/sarama/kamisaya/
+  sapaththu + andhinawaa (shoes off at the door), animals aliyaa/wandhuraa/
+  kurullaa/harakaa, nature kandha/ganga/waewa (the ancient tanks!)/gasa/
+  mala, choices mona ekadha + naethnam or + kopi, degrees godak/harima/
+  poddak, duration kochchara kal + maasa thunak + hitiyaa. Zone 12 "Make
+  Sri Lanka home": thousands dhaaha/dhedhaaha/pandhaaha + lakshaya,
+  errands kondee kapanna/redhi hoodhanawaa/hadhanawaa fix-or-make,
+  guests amuththoo/aethulata enna/waadiwenna/thee bonna enna + aayeth
+  enna, fruit thaembili/kesel/kos/dhodam + gediyak counter, tastes
+  saerayi (+saera epaa!)/paeni rasayi/aembul/thiththayi, polite polish
+  bohoma sthuuthiyi + formal oba/karunaakara as recognition, capstone
+  wagee + mama lankaawata aadhareyi. SI_NUMS teaches spoken number
   words (modern Sinhala writes Western digits). Audio via
   `si-LK-SameeraNeural` (ඞ ඣ ඦ get no edge-tts audio → device TTS
   fallback, like Burmese ဎ); extractor + generator both know `si`.
