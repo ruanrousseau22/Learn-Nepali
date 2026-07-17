@@ -276,8 +276,8 @@ Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
 Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
 
 **Where things stand / next up:**
-- **Sinhala (`lang/si.js`) IN PROGRESS — Zones 1–6 live (July 2026, Stages
-  A–B; catalog label "· early access"; 6 zones / 42 topics / 210 lessons).**
+- **Sinhala (`lang/si.js`) IN PROGRESS — Zones 1–10 live (July 2026, Stages
+  A–C; catalog label "· early access"; 10 zones / 70 topics / 350 lessons).**
   Zone 1 "The Script": ක ග න ම; the two T families ත ද ට ඩ (dental-vs-
   retroflex is THE consonant story); ප බ ස හ; ච ජ ය ර ල ව; the half-nasals
   ඟ ඬ ඳ ඹ (unique to Sinhala); vowel signs incl. කැ + hal kirima ක්; first
@@ -304,12 +304,41 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   comparisons X-ta wadaa + superlative -ma, dative feelings mata
   badaginiyi (belly-fire!)/mahansiyi/nidhimathayi/bayayi/sathutuyi, weather
   waessa/wahinawaa/rasneyi/siithalayi + the two monsoons, body + mata X
-  ridhenawaa + beheth/dhosthara. Romanization (documented at the top of
+  ridhenawaa + beheth/dhosthara. Zone 7 "Then & now": the vowel-change past
+  (kanawaa->kaeaewaa, giyaa/aawaa/kalaa/gaththaa/dhunnaa/kiwwaa +
+  hitiyaa-vs-thibunaa animacy in the past), past negative -ee naee + past
+  questions -aadha with echo answers, the -laa perfect incl. the warm
+  bath kaaladha greeting, can/cannot mata puluwan / baee + infinitive -nna,
+  the -nna polite imperative (revealing dhenna/karanna) + yanna epaa
+  prohibitive, want-to-do -nna + oonae and the -mu hortative (yamu! kamu!).
+  Zone 8 "Out & about": kochchiya/thriiwiil eka/payin + bas staend eka,
+  directions wamata/dhakunata/kelinma + methana nawaththanna, tickets
+  (mata Kolambata tikat ekak dhenna, kiiyatadha), hotel kaamarayak
+  thiyenawadha + dhawasakata kiiyadha + yathura + the hootalee-is-an-eatery
+  note, loan-name months + maasaya/awurudhdha + aluth awurudhdha (April new
+  year), phone foon eka/nambar eka/kool ekak dhenna/fotoo ekak ganna
+  puluwandha, asking the way dhura/langadha dhuradha + the four theres
+  methana/othana/athana/ethana. Zone 9 "Say more": eeth/haebaeyi + postposed
+  nisaa + ee nisaa, if nam (puluwan nam / oonae nam), hithanawaa + dative
+  mata mathakayi / amathaka unaa, work waeda karanawaa + rassaawa/ofis eka/
+  guruwarayaa/goviyaa + monawadha karannee, free time kriket + X-walata
+  kaemathiyi (the full like-pattern) + sindhu ahanawaa/natanawaa/muhudha,
+  daily verbs naegitinawaa/naanawaa/uyanawaa/nidhaagannawaa + udheeta,
+  help mata udhaw oonae / udhaw karanna / poliisiya / naethi unaa /
+  praweesamen (sober framing). Zone 10 "Your Sinhala life": pawula +
+  mahaththayaa/noonaa/puthaa/dhuwa/lamayi as warm address, the small-talk
+  trio wayasa kiiyadha / baendhaladha / lamayi innawadha + mata awurudhu
+  wissayi + people-counter dhennek, thaama (naee) + igenagannawaa, learner
+  lifelines hemin kiyanna / aayeth kiyanna / sinhalen mokakdha, home
+  kussiya/waththa/ballaa/puusaa, plans anidhdhaa/pereedhaa/sathi anthaya,
+  storytelling issellaa / iita passee / anthimata. Romanization (documented
+  at the top of
   `lang/si.js`): Sri Lankan convention — soft dental th/dh vs hard
   retroflex t/d, doubled long vowels, ae for ඇ; the course teaches SPOKEN
-  Sinhala (diglossia). Zones 7-12 remain per the roadmap in the si.js
-  header (past tense, puluwan/oonae round 2, -nna imperatives, transport,
-  connectors, family, nature, settling in). SI_NUMS teaches spoken number
+  Sinhala (diglossia). Zones 11-12 remain per the roadmap in the si.js
+  header (little extras: need/pace/clothes/animals/nature/remember; and
+  Make Sri Lanka home: lakhs, errands, guests, fruit incl. thaembili,
+  polite polish + formal oba as recognition). SI_NUMS teaches spoken number
   words (modern Sinhala writes Western digits). Audio via
   `si-LK-SameeraNeural` (ඞ ඣ ඦ get no edge-tts audio → device TTS
   fallback, like Burmese ဎ); extractor + generator both know `si`.
