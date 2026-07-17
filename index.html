@@ -903,8 +903,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
-      <button class="tab faith-tab deva" data-v="fstory" onclick="show('fstory')">परमेश्वरको कथा</button>
-      <button class="tab faith-tab deva" data-v="fjesus" onclick="show('fjesus')">येशू</button>
+      <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
+      <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
     <div style="display:flex;gap:8px;align-items:center">
@@ -1133,8 +1133,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1 class="display deva">परमेश्वरको कथा</h1>
-        <div class="hero-fsub">God&rsquo;s Story</div>
+        <h1 class="display">God&rsquo;s <em>Story</em></h1>
+        <div class="deva hero-fsub">परमेश्वरको कथा</div>
       </div>
     </div>
   </div>
@@ -1157,7 +1157,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       </g>
     </svg>
     <div class="pb-inner">
-      <h2><span class="deva">येशू</span> <span class="pb-en">Jesus</span></h2>
+      <h2>Jesus <span class="deva pb-en">येशू</span></h2>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px">
@@ -9361,7 +9361,7 @@ document.addEventListener('click',function(e){const w=document.getElementById('l
    Nepali for now — it reuses the ne pack (art, voices, recorded audio) and
    loads its content from faith/<code>.js via registerFaith. Faith clips live
    in audio-nef/ (see playFile). Mode + script/roman choice are device prefs. */
-const MODE_CATALOG=[{code:'learn',label:'Language learning',short:'Language learning'},{code:'faith',label:'धार्मिक अध्ययन · Religious studies',short:'धार्मिक अध्ययन'}];
+const MODE_CATALOG=[{code:'learn',label:'Language learning',short:'Language learning'},{code:'faith',label:'Religious studies',short:'Religious studies'}];
 const MODE_ICONS={
   learn:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg></span>',
   faith:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 4.9 7.4 4.5 4 4.5v13.7c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V4.5c-3.4 0-6 .4-8 2z"/><path d="M12 6.5v13.7"/></svg></span>'};
