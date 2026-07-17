@@ -527,7 +527,11 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   narrative in ten movements, creation → fall (fellowship broken) → covenants
   → Jesus → new creation (framing informed by BibleProject: one unified story
   that leads to Jesus; kept within orthodox/Nicene Christianity) — and
-  **Jesus** (`view-fjesus`) — his life and parables. Settings stays.
+  **Jesus** (`view-fjesus`) — his life and parables (10 moments incl. Jesus
+  teaches prayer — the Lord's Prayer paraphrased — and the two builders).
+  Settings stays. Finishing every moment of a story shows a completion
+  banner (cheer mascot + cross-link button to the other story); open
+  stories have a previous-link (`.fprev`) beside the अगाडि button.
   Each page is a list of **big-moment NODES (July 2026): none locked, ONE
   short story each** (unlike the 5-lesson language topics). A node card shows
   its scene art + bilingual title + a read-tick; tapping opens the story
@@ -652,7 +656,11 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
 3. Romanization scan per pack `script` regex: native script must NOT appear in
    `vocab[1]` or `ex.r` (`[\u0900-\u097F]` Nepali, `[ក-៿]` Khmer).
 4. Integrity (run for the language you touched): answer indices in range; li
-   `o[a] === say` and no duplicate options; wb answers ⊆ pool AND pool bigger
+   `o[a] === say` and no duplicate options; **mc `r` must never equal one of
+   that exercise's own options** (the rom renders above the choices BEFORE
+   answering — a July 2026 sweep removed 192 such answer-giveaways across
+   all four packs; keep `r` only where options are meanings, not
+   romanizations); wb answers ⊆ pool AND pool bigger
    than the answer (real distractors); match pairs well-formed, no dup keys or
    values; every topic exactly 5 lessons in learn→recognize→build→mix→checkpoint
    order; every learn-lesson id has a SYM entry (exception: `li_wNtest` nodes

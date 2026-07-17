@@ -889,6 +889,15 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fplay-btn:hover{background:color-mix(in srgb,var(--crimson) 8%,transparent)}
 .fplay-btn.playing{background:var(--crimson);color:#fff}
 .fpara.fplaying,.fnote.fplaying{border-color:var(--crimson);box-shadow:0 0 0 2.5px color-mix(in srgb,var(--crimson) 25%,transparent)}
+.fdone-banner{display:flex;align-items:center;gap:14px;max-width:620px;margin:4px auto 18px;background:color-mix(in srgb,var(--crimson) 8%,var(--card));border:1.5px solid color-mix(in srgb,var(--crimson) 35%,var(--line));border-radius:16px;padding:14px 16px}
+.fdb-mascot{flex:none;width:52px;height:52px}
+.fdb-tx{flex:1;min-width:0}
+.fdb-ne{font-weight:800;font-size:1.02rem;line-height:1.7}
+.fdb-en{color:var(--muted);font-size:.82rem}
+.fdb-btn{flex:none;background:var(--crimson);color:#fff;border:0;border-radius:999px;padding:9px 16px;font-weight:800;font-size:.88rem;cursor:pointer}
+.fprev{background:transparent;border:0;color:var(--muted);font-weight:700;cursor:pointer;font-size:.9rem;padding:6px 0}
+.fprev:hover{color:var(--crimson)}
+.fprev-spacer{width:64px}
 </style>
 </head>
 <body>
@@ -1423,25 +1432,25 @@ const NE_LESSONS = [
     {t:'note',tag:'Built-in vowel',q:'Every consonant ends in "a"',body:'<p>Each consonant has a built-in <span class="deva">अ</span> sound. So <span class="deva">क</span> is <b>ka</b>, <span class="deva">ग</span> is <b>ga</b>.</p><p>Consonants are grouped by where they are made in the mouth — we will take them in order.</p>',eg:[['क','ka','throat'],['च','cha','palate'],['ट','ṭa','curled tongue'],['त','ta','teeth'],['प','pa','lips']]},
     {t:'mc',q:'What sound does this make?',d:'क',o:['ka','ga','pa','ta'],a:0},
     {t:'match',q:'The "k/g" group',pairs:[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha']]},
-    {t:'li',q:'Which consonant is this?',say:'ग',r:'ga',o:['ka','ga','ja','da'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ग',o:['ka','ga','ja','da'],a:1},
     {t:'mc',q:'Which letter is "ja"?',o:['च','छ','ज','झ'],a:2},
     {t:'match',q:'The "ch/j" group',pairs:[['च','cha'],['छ','chha'],['ज','ja'],['झ','jha']]},
     {t:'note',tag:'Tricky pair',q:'Two kinds of "t" and "d"',body:'<p>Nepali has <b>two</b> t-sounds and two d-sounds. The <b>retroflex</b> ones (<span class="deva">ट ठ ड ढ</span>) curl the tongue back; the <b>dental</b> ones (<span class="deva">त थ द ध</span>) touch the teeth.</p>',eg:[['ट','ṭa','tongue curled back'],['त','ta','tongue on teeth'],['ड','ḍa','curled d'],['द','da','dental d']]},
     {t:'match',q:'Dental t/d group',pairs:[['त','ta'],['थ','tha'],['द','da'],['न','na']]},
-    {t:'li',q:'What did you hear?',say:'म',r:'ma',o:['na','ma','ba','la'],a:1},
+    {t:'li',q:'What did you hear?',say:'म',o:['na','ma','ba','la'],a:1},
     {t:'mc',q:'Which letter is "na"?',o:['म','न','ण','ङ'],a:1},
     {t:'mc',q:'What sound does this make?',d:'द',o:['ṭa','da','dha','ba'],a:1},
     {t:'note',tag:'Halfway',q:'Half the consonants down',body:'<p>You now know the throat, palate, retroflex and dental groups. Next lesson: lips, then र ल स ह and a few combined letters.</p>'},
   ]},
   {id:'sc_cons1_2',title:'Recognize',step:'recognize',meta:'Hear & spot the letters',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ग',r:'ga',o:['ka','ga','ja','da'],a:1},
-    {t:'li',q:'What did you hear?',say:'म',r:'ma',o:['na','ma','ba','la'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ग',o:['ka','ga','ja','da'],a:1},
+    {t:'li',q:'What did you hear?',say:'म',o:['na','ma','ba','la'],a:1},
     {t:'mc',q:'What sound does this make?',d:'क',o:['ka','ga','cha','ta'],a:0},
     {t:'match',q:'The k/g group',pairs:[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha']]},
-    {t:'li',q:'Which consonant is this?',say:'ज',r:'ja',o:['cha','ja','ga','jha'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ज',o:['cha','ja','ga','jha'],a:1},
     {t:'mc',q:'What sound does this make?',d:'न',o:['ma','na','ṇa','nga'],a:1},
     {t:'match',q:'The ch/j group',pairs:[['च','cha'],['छ','chha'],['ज','ja'],['झ','jha']]},
-    {t:'li',q:'What did you hear?',say:'द',r:'da',o:['ta','da','dha','ḍa'],a:1},
+    {t:'li',q:'What did you hear?',say:'द',o:['ta','da','dha','ḍa'],a:1},
     {t:'mc',q:'What sound does this make?',d:'त',o:['ṭa','ta','tha','da'],a:1},
     {t:'match',q:'The dental t/d group',pairs:[['त','ta'],['थ','tha'],['द','da'],['न','na']]},
   ]},
@@ -1458,26 +1467,26 @@ const NE_LESSONS = [
     {t:'fill',q:'Tongue on the teeth (dental)',s:'on the teeth → ___ (ta)',o:['त','ट','द','थ'],a:0,r:'ta',h:'not curled back'},
   ]},
   {id:'sc_cons1_4',title:'Mix',step:'mix',meta:'All letters, mixed',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ट',r:'ṭa',o:['ta','ṭa','da','ḍa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ट',o:['ta','ṭa','da','ḍa'],a:1},
     {t:'mc',q:'Which is the curled (retroflex) "ṭa"?',o:['त','ट','थ','द'],a:1},
     {t:'mc',q:'Tap the letter for the "kha" sound.',o:['क','ग','ख','च'],a:2},
     {t:'match',q:'Match the letters',pairs:[['क','ka'],['ज','ja'],['म','ma'],['न','na']]},
-    {t:'li',q:'Curled or dental — which did you hear?',say:'त',r:'ta',o:['ṭa','ta','tha','da'],a:1},
+    {t:'li',q:'Curled or dental — which did you hear?',say:'त',o:['ṭa','ta','tha','da'],a:1},
     {t:'mc',q:'Which letter is "gha"?',o:['ग','घ','ख','क'],a:1},
     {t:'fill',q:'Turn the voice on',s:'क (unvoiced) → ___ (voiced)',o:['ग','ख','घ','च'],a:0,r:'ga',h:'voiced version of ka'},
     {t:'wb',q:'Order: ta tha da na',a:['त','थ','द','न'],r:'ta tha da na',pool:['द','न','त','थ']},
-    {t:'li',q:'Which consonant is this?',say:'झ',r:'jha',o:['ja','jha','cha','chha'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'झ',o:['ja','jha','cha','chha'],a:1},
     {t:'mc',q:'Tap the letter for the "da" sound. (dental d)',o:['त','द','न','म'],a:1},
   ]},
   {id:'sc_cons1_5',title:'Checkpoint',step:'checkpoint',meta:'Prove it — no hints',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ग',r:'ga',o:['ka','ga','ja','da'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ग',o:['ka','ga','ja','da'],a:1},
     {t:'mc',q:'What sound does this make?',d:'च',o:['cha','ja','chha','ta'],a:0},
     {t:'mc',q:'Tap the letter for the "ma" sound.',o:['भ','म','न','स'],a:1},
-    {t:'li',q:'What did you hear?',say:'द',r:'da',o:['ta','da','dha','na'],a:1},
+    {t:'li',q:'What did you hear?',say:'द',o:['ta','da','dha','na'],a:1},
     {t:'match',q:'The k/g group',pairs:[['क','ka'],['ख','kha'],['ग','ga'],['घ','gha']]},
     {t:'mc',q:'Tap the letter for the "na" sound.',o:['न','म','त','द'],a:0},
     {t:'mc',q:'Which is the retroflex "ṭa"?',o:['त','द','ट','थ'],a:2},
-    {t:'li',q:'Which consonant is this?',say:'ज',r:'ja',o:['cha','ja','jha','ga'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ज',o:['cha','ja','jha','ga'],a:1},
     {t:'mc',q:'Tap the letter for the "ka" sound.',o:['ख','ग','त','क'],a:3},
     {t:'match',q:'Match the letters',pairs:[['च','cha'],['ज','ja'],['त','ta'],['न','na']]},
   ]},
@@ -1485,25 +1494,25 @@ const NE_LESSONS = [
     {t:'note',tag:'Lips',q:'The "p / b / m" group',body:'<p>These are made with the lips — easy for English speakers.</p>',eg:[['प','pa',''],['फ','pha',''],['ब','ba',''],['भ','bha',''],['म','ma','']]},
     {t:'match',q:'The lip group',pairs:[['प','pa'],['फ','pha'],['ब','ba'],['भ','bha']]},
     {t:'mc',q:'Which letter is "ba"?',o:['प','फ','ब','म'],a:2},
-    {t:'li',q:'Which consonant is this?',say:'र',r:'ra',o:['la','ra','ya','wa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'र',o:['la','ra','ya','wa'],a:1},
     {t:'note',tag:'Common letters',q:'य र ल व — semivowels',body:'<p>These four show up everywhere: <span class="deva">य</span> ya, <span class="deva">र</span> ra, <span class="deva">ल</span> la, <span class="deva">व</span> wa/va.</p>',eg:[['य','ya',''],['र','ra',''],['ल','la',''],['व','wa','']]},
     {t:'match',q:'Match these',pairs:[['य','ya'],['र','ra'],['ल','la'],['व','wa']]},
     {t:'mc',q:'What sound does this make?',d:'ह',o:['sa','ha','sha','na'],a:1},
     {t:'match',q:'The s/h letters',pairs:[['स','sa'],['श','sha'],['ष','ṣha'],['ह','ha']]},
-    {t:'li',q:'What did you hear?',say:'ल',r:'la',o:['ra','la','na','ma'],a:1},
+    {t:'li',q:'What did you hear?',say:'ल',o:['ra','la','na','ma'],a:1},
     {t:'note',tag:'Combined letters',q:'A few conjuncts',body:'<p>Some letters are written as combinations. You will meet these in real words:</p>',eg:[['क्ष','kshya','as in नक्षत्र'],['त्र','tra','as in त्रिशूल'],['ज्ञ','gya','as in ज्ञान']]},
     {t:'mc',q:'You see this in नमस्ते. What sound?',d:'स',o:['sha','sa','cha','ta'],a:1},
     {t:'note',tag:'Almost there',q:'Most letters down',body:'<p>You now know the throat, palate, dental and lip groups, plus र ल स ह य व. Next: the curled <b>retroflex</b> letters and the two nasals.</p>'},
   ]},
   {id:'sc_cons2_2',title:'Recognize',step:'recognize',meta:'Hear & spot the letters',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'र',r:'ra',o:['la','ra','ya','wa'],a:1},
-    {t:'li',q:'What did you hear?',say:'ल',r:'la',o:['ra','la','na','ma'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'र',o:['la','ra','ya','wa'],a:1},
+    {t:'li',q:'What did you hear?',say:'ल',o:['ra','la','na','ma'],a:1},
     {t:'mc',q:'What sound does this make?',d:'ह',o:['sa','ha','sha','na'],a:1},
     {t:'match',q:'The lip group',pairs:[['प','pa'],['फ','pha'],['ब','ba'],['भ','bha']]},
-    {t:'li',q:'Which consonant is this?',say:'व',r:'wa',o:['ba','wa','ya','ra'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'व',o:['ba','wa','ya','ra'],a:1},
     {t:'mc',q:'What sound does this make?',d:'ब',o:['pa','ba','bha','ma'],a:1},
     {t:'match',q:'The semivowels',pairs:[['य','ya'],['र','ra'],['ल','la'],['व','wa']]},
-    {t:'li',q:'What did you hear?',say:'स',r:'sa',o:['sha','sa','cha','ha'],a:1},
+    {t:'li',q:'What did you hear?',say:'स',o:['sha','sa','cha','ha'],a:1},
     {t:'mc',q:'What sound does this make?',d:'भ',o:['ba','bha','pa','pha'],a:1},
     {t:'match',q:'Match the letters',pairs:[['स','sa'],['श','sha'],['ह','ha'],['र','ra']]},
   ]},
@@ -1520,26 +1529,26 @@ const NE_LESSONS = [
     {t:'fill',q:'Add the puff of air',s:'ब → ___ (bha)',o:['भ','प','फ','म'],a:0,r:'bha'},
   ]},
   {id:'sc_cons2_4',title:'Mix',step:'mix',meta:'All letters, mixed',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ल',r:'la',o:['ra','la','na','wa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ल',o:['ra','la','na','wa'],a:1},
     {t:'mc',q:'Tap the letter for the "ba" sound.',o:['ब','व','भ','प'],a:0},
     {t:'match',q:'Match the letters',pairs:[['प','pa'],['र','ra'],['स','sa'],['ह','ha']]},
     {t:'mc',q:'Which letter is "pha"?',o:['प','फ','भ','ब'],a:1},
-    {t:'li',q:'Which consonant is this?',say:'य',r:'ya',o:['ya','wa','ra','la'],a:0},
+    {t:'li',q:'Which consonant is this?',say:'य',o:['ya','wa','ra','la'],a:0},
     {t:'fill',q:'Which "s" is the plain sa?',s:'plain s → ___',o:['स','श','ष','ह'],a:0,r:'sa',h:'not the sh-sound'},
     {t:'mc',q:'Tap the letter for the "ra" sound.',o:['ल','व','य','र'],a:3},
     {t:'wb',q:'Order: pa pha ba bha',a:['प','फ','ब','भ'],r:'pa pha ba bha',pool:['भ','ब','फ','प']},
-    {t:'li',q:'What did you hear?',say:'ह',r:'ha',o:['sa','ha','ra','ba'],a:1},
+    {t:'li',q:'What did you hear?',say:'ह',o:['sa','ha','ra','ba'],a:1},
     {t:'mc',q:'Which letter is "wa / va"?',o:['य','र','ल','व'],a:3},
   ]},
   {id:'sc_cons2_5',title:'Checkpoint',step:'checkpoint',meta:'Prove it — no hints',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'र',r:'ra',o:['la','ra','ya','wa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'र',o:['la','ra','ya','wa'],a:1},
     {t:'mc',q:'Tap the letter for the "pa" sound.',o:['प','ब','भ','य'],a:0},
     {t:'mc',q:'What sound does this make?',d:'ब',o:['pa','ba','bha','ma'],a:1},
     {t:'mc',q:'Tap the letter for the "ha" sound.',o:['व','य','स','ह'],a:3},
-    {t:'li',q:'Which consonant is this?',say:'व',r:'wa',o:['ba','wa','ya','la'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'व',o:['ba','wa','ya','la'],a:1},
     {t:'match',q:'The lip group',pairs:[['प','pa'],['फ','pha'],['ब','ba'],['भ','bha']]},
     {t:'mc',q:'Tap the letter for the "la" sound.',o:['र','व','ल','य'],a:2},
-    {t:'li',q:'What did you hear?',say:'स',r:'sa',o:['sha','sa','ha','cha'],a:1},
+    {t:'li',q:'What did you hear?',say:'स',o:['sha','sa','ha','cha'],a:1},
     {t:'mc',q:'Which letter is "ya"?',o:['य','र','ल','व'],a:0},
     {t:'mc',q:'Tap the letter for the "sa" sound.',o:['श','स','ह','र'],a:1},
   ]},
@@ -1547,25 +1556,25 @@ const NE_LESSONS = [
     {t:'note',tag:'Curl your tongue',q:'The retroflex group ट ठ ड ढ ण',body:'<p>For these the tongue curls <b>up and back</b> to touch the roof of the mouth. To an English ear they sound like a hard, hollow t and d.</p>',eg:[['ट','ṭa','curled t'],['ठ','ṭha','curled t + breath'],['ड','ḍa','curled d'],['ढ','ḍha','curled d + breath'],['ण','ṇa','curled n']]},
     {t:'match',q:'The retroflex group',pairs:[['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha']]},
     {t:'mc',q:'Which letter is the curled "ḍa"?',o:['ट','ड','द','ण'],a:1},
-    {t:'li',q:'Which consonant is this?',say:'ट',r:'ṭa',o:['ta','ṭa','da','pa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ट',o:['ta','ṭa','da','pa'],a:1},
     {t:'note',tag:'Two nasals',q:'ङ (ṅa) and ञ (ña)',body:'<p>These almost never start a word — you meet them <b>inside</b> words. <span class="deva">ङ</span> is the "ng" in <i>sing</i>; <span class="deva">ञ</span> is a soft "ny" as in <i>canyon</i>.</p>',eg:[['ङ','ṅa','ng (sing)'],['ञ','ña','ny (canyon)']]},
     {t:'mc',q:'Which letter makes the "ng" sound?',o:['ण','ङ','न','ञ'],a:1},
     {t:'note',tag:'Three "s" letters',q:'श, ष and स',body:'<p>Nepali writes three sibilants. In everyday speech <span class="deva">श</span> and <span class="deva">ष</span> both sound like <b>sha</b>, while <span class="deva">स</span> is a plain <b>sa</b>.</p>',eg:[['स','sa','plain s — सात (seven)'],['श','sha','sh — शहर (city)'],['ष','ṣha','sh — भाषा (language)']]},
     {t:'mc',q:'Which letter is the plain "sa"?',o:['श','ष','स','ह'],a:2},
-    {t:'li',q:'What did you hear?',say:'ड',r:'ḍa',o:['da','ḍa','ṭa','ba'],a:1},
+    {t:'li',q:'What did you hear?',say:'ड',o:['da','ḍa','ṭa','ba'],a:1},
     {t:'note',tag:'Every letter learned',q:'You know the full alphabet',body:'<p>That is the complete consonant set. Next we learn how letters <b>join together</b> when no vowel sits between them.</p>'},
   ]},
   {id:'sc_cons3_2',title:'Recognize',step:'recognize',meta:'Hear & spot the letters',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ट',r:'ṭa',o:['ta','ṭa','da','pa'],a:1},
-    {t:'li',q:'What did you hear?',say:'ड',r:'ḍa',o:['da','ḍa','ṭa','ba'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ट',o:['ta','ṭa','da','pa'],a:1},
+    {t:'li',q:'What did you hear?',say:'ड',o:['da','ḍa','ṭa','ba'],a:1},
     {t:'mc',q:'What sound does this make?',d:'ण',o:['na','ṇa','ṅa','ma'],a:1},
     {t:'match',q:'The retroflex group',pairs:[['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha']]},
     {t:'mc',q:'Which letter makes the "ng" sound (as in sing)?',o:['ण','ङ','न','ञ'],a:1},
-    {t:'li',q:'Which consonant is this?',say:'ढ',r:'ḍha',o:['ḍa','ḍha','ṭha','da'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ढ',o:['ḍa','ḍha','ṭha','da'],a:1},
     {t:'mc',q:'What sound does this make (ny, as in canyon)?',d:'ञ',o:['na','ṅa','ña','ṇa'],a:2},
     {t:'match',q:'Match the curled letters',pairs:[['ट','ṭa'],['ड','ḍa'],['ण','ṇa'],['ङ','ṅa']]},
     {t:'mc',q:'Which is the plain "sa" (not sh)?',o:['श','ष','स','ह'],a:2},
-    {t:'li',q:'What did you hear?',say:'ठ',r:'ṭha',o:['ṭa','ṭha','ḍa','tha'],a:1},
+    {t:'li',q:'What did you hear?',say:'ठ',o:['ṭa','ṭha','ḍa','tha'],a:1},
   ]},
   {id:'sc_cons3_3',title:'Build',step:'build',meta:'Produce the letters',vocab:[],ex:[
     {t:'fill',q:'Curl the tongue back (retroflex)',s:'curled → ___ (ṭa)',o:['ट','त','ठ','ड'],a:0,r:'ṭa',h:'tongue curls to the roof'},
@@ -1580,25 +1589,25 @@ const NE_LESSONS = [
     {t:'fill',q:'Add the puff of air',s:'ड → ___ (ḍha)',o:['ढ','ठ','द','ध'],a:0,r:'ḍha'},
   ]},
   {id:'sc_cons3_4',title:'Mix',step:'mix',meta:'Curled vs dental',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ट',r:'ṭa',o:['ta','ṭa','da','ḍa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ट',o:['ta','ṭa','da','ḍa'],a:1},
     {t:'mc',q:'Which is the retroflex (curled) "ḍa"?',o:['द','ड','ढ','त'],a:1},
     {t:'match',q:'Match the letters',pairs:[['ट','ṭa'],['ड','ḍa'],['ण','ṇa'],['श','sha']]},
-    {t:'li',q:'What did you hear?',say:'ण',r:'ṇa',o:['na','ṇa','ma','ṅa'],a:1},
+    {t:'li',q:'What did you hear?',say:'ण',o:['na','ṇa','ma','ṅa'],a:1},
     {t:'fill',q:'Roof of the mouth (retroflex)',s:'curled t → ___',o:['ट','त','ठ','थ'],a:0,r:'ṭa',h:'not on the teeth'},
     {t:'mc',q:'Which nasal means "ng" (sing)?',o:['ञ','ण','ङ','न'],a:2},
     {t:'wb',q:'Order the curled group: ṭa ṭha ḍa ḍha',a:['ट','ठ','ड','ढ'],r:'ṭa ṭha ḍa ḍha',pool:['ढ','ट','ड','ठ']},
-    {t:'li',q:'Which consonant is this?',say:'ढ',r:'ḍha',o:['da','ḍha','ḍa','dha'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ढ',o:['da','ḍha','ḍa','dha'],a:1},
     {t:'mc',q:'In भाषा (language), the sh is written…',d:'भाषा',r:'bhaaṣaa',o:['श','ष','स','छ'],a:1},
     {t:'fill',q:'The "ny" sound (canyon)',s:'ny → ___',o:['ञ','ङ','ण','य'],a:0,r:'ña'},
   ]},
   {id:'sc_cons3_5',title:'Checkpoint',step:'checkpoint',meta:'Prove it — no hints',vocab:[],ex:[
-    {t:'li',q:'Which consonant is this?',say:'ट',r:'ṭa',o:['ta','ṭa','da','ḍa'],a:1},
+    {t:'li',q:'Which consonant is this?',say:'ट',o:['ta','ṭa','da','ḍa'],a:1},
     {t:'mc',q:'Which is retroflex "ḍa"?',o:['द','ड','ढ','त'],a:1},
     {t:'match',q:'The retroflex group',pairs:[['ट','ṭa'],['ठ','ṭha'],['ड','ḍa'],['ढ','ḍha']]},
-    {t:'li',q:'What did you hear?',say:'ड',r:'ḍa',o:['da','ḍa','ṭa','ba'],a:1},
+    {t:'li',q:'What did you hear?',say:'ड',o:['da','ḍa','ṭa','ba'],a:1},
     {t:'mc',q:'Which makes the "ng" sound?',o:['ण','न','ङ','ञ'],a:2},
     {t:'fill',q:'The curled "ṭa"',s:'curled t → ___',o:['ट','त','ठ','द'],a:0,r:'ṭa'},
-    {t:'li',q:'What did you hear?',say:'ण',r:'ṇa',o:['na','ṇa','ma','ṅa'],a:1},
+    {t:'li',q:'What did you hear?',say:'ण',o:['na','ṇa','ma','ṅa'],a:1},
     {t:'mc',q:'The plain "sa" (not sh) is…',o:['श','ष','स','ह'],a:2},
     {t:'fill',q:'Add the puff of air',s:'ट → ___ (ṭha)',o:['ठ','ड','त','थ'],a:0,r:'ṭha'},
     {t:'match',q:'Match the curled letters',pairs:[['ट','ṭa'],['ड','ḍa'],['ण','ṇa'],['ङ','ṅa']]},
@@ -1729,7 +1738,7 @@ const NE_LESSONS = [
     {t:'mc',q:'Which one is "ba"?',o:['व','ब','म','भ'],a:1},
     {t:'mc',q:'Which one is "dha"?',o:['घ','ध','द','थ'],a:1},
     {t:'note',tag:'Sound-alikes',q:'The puff of air (aspiration)',body:'<p>Many letters come in pairs that differ only by a <b>puff of air</b>. The breathy one has an "h" in its romanization.</p>',eg:[['क / ख','ka / kha','kha = k + breath'],['प / फ','pa / pha',''],['त / थ','ta / tha',''],['ग / घ','ga / gha','']]},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',r:'kha',o:['ka','kha'],a:1},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',o:['ka','kha'],a:1},
     {t:'match',q:'Match the breathy letters',pairs:[['ख','kha'],['फ','pha'],['थ','tha'],['घ','gha']]},
     {t:'note',tag:'Read real words',q:'Put it all together',body:'<p>Sound out these everyday words — every letter is one you already know:</p>',eg:[['दिन','din','day'],['रात','raat','night'],['साथी','saathi','friend'],['माया','maayaa','love']]},
     {t:'li',q:'Which word is this?',say:'रात',r:'raat',o:['day','night','friend','love'],a:1},
@@ -1740,14 +1749,14 @@ const NE_LESSONS = [
   {id:'sc_confuse_2',title:'Recognize',step:'recognize',meta:'Tell them apart',vocab:[],ex:[
     {t:'mc',q:'Which one is "ba"?',o:['व','ब','म','भ'],a:1},
     {t:'mc',q:'Which one is "dha"?',o:['घ','ध','द','थ'],a:1},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',r:'kha',o:['ka','kha'],a:1},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'फ',r:'pha',o:['pa','pha'],a:1},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',o:['ka','kha'],a:1},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'फ',o:['pa','pha'],a:1},
     {t:'match',q:'Match the breathy letters',pairs:[['ख','kha'],['फ','pha'],['थ','tha'],['घ','gha']]},
     {t:'mc',q:'Which one is "ma"?',o:['भ','म','ब','व'],a:1},
     {t:'li',q:'Which word is this?',say:'दिन',r:'din',o:['day','night','friend','love'],a:0},
     {t:'mc',q:'What does रात mean?',d:'रात',r:'raat',o:['day','night','friend','love'],a:1},
     {t:'mc',q:'Which one is "ḍha" (extra hook)?',o:['ड','ढ','द','घ'],a:1},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'थ',r:'tha',o:['ta','tha'],a:1},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'थ',o:['ta','tha'],a:1},
   ]},
   {id:'sc_confuse_3',title:'Build',step:'build',meta:'Pick the right one',vocab:[],ex:[
     {t:'fill',q:'Add a puff of air to क (ka)',s:'क → ___ (kha)',o:['ख','ग','घ','क'],a:0,r:'kha'},
@@ -1763,7 +1772,7 @@ const NE_LESSONS = [
   ]},
   {id:'sc_confuse_4',title:'Mix',step:'mix',meta:'Look-alikes in words',vocab:[],ex:[
     {t:'mc',q:'Which one is "wa / va" (no inner bar)?',o:['ब','व','भ','म'],a:1},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'ग',r:'ga',o:['ga','gha'],a:0},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'ग',o:['ga','gha'],a:0},
     {t:'mc',q:'Tap the word that reads as "din".',o:['रात','घर','दिन','माया'],a:2},
     {t:'mc',q:'Which one is "gha"?',o:['ग','घ','ध','द'],a:1},
     {t:'li',q:'Which word is this?',say:'साथी',r:'saathi',o:['family','friend','teacher','neighbour'],a:1},
@@ -1775,7 +1784,7 @@ const NE_LESSONS = [
   ]},
   {id:'sc_confuse_5',title:'Checkpoint',step:'checkpoint',meta:'Prove it — no hints',vocab:[],ex:[
     {t:'mc',q:'Which one is "ba"?',o:['व','ब','म','भ'],a:1},
-    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',r:'kha',o:['ka','kha'],a:1},
+    {t:'li',q:'Plain or breathy — which did you hear?',say:'ख',o:['ka','kha'],a:1},
     {t:'mc',q:'Which one is "dha"?',o:['घ','ध','द','थ'],a:1},
     {t:'mc',q:'Tap the word that reads as "saathi".',o:['साथी','माया','पानी','नेपाल'],a:0},
     {t:'li',q:'Which word is this?',say:'रात',r:'raat',o:['day','night','friend','love'],a:1},
@@ -2155,7 +2164,7 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete "I am Nepali"',s:'म नेपाली ___ = I am Nepali.',o:['हुँ','हो','छ','नाम'],a:0,r:'hun'},
     {t:'mc',q:'Ask "What is your name?"',o:['तपाईंको नाम के हो?','मेरो नाम के हो?','के छ?','तपाईं नेपाली हो?'],a:0},
     {t:'wb',q:'Build "Nice to meet you"',a:['भेटेर','खुसी','लाग्यो'],r:'bhetera khusi laagyo',pool:['खुसी','लाग्यो','भेटेर','नाम']},
-    {t:'li',q:'What did you hear?',say:'नेपाली',r:'Nepali',o:['Nepali','Student','Name','Friend'],a:0},
+    {t:'li',q:'What did you hear?',say:'नेपाली',o:['Nepali','Student','Name','Friend'],a:0},
     {t:'tr',q:'Type "name"',a:'नाम',r:'naam'},
   ]},
   {id:'daytime',title:'Days & times',step:'learn',meta:'When things happen',vocab:[['आज','Aaja','Today'],['हिजो','Hijo','Yesterday'],['भोलि','Bholi','Tomorrow'],['अहिले','Ahile','Now'],['बिहान','Bihaana','Morning'],['दिउँसो','Diuso','Daytime / Afternoon'],['साँझ','Saanjh','Evening'],['राति','Raati','Night']],ex:[
@@ -2973,7 +2982,7 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'विद्यालय',r:'Vidyaalaya',o:['Hospital','School','Bank','Temple'],a:1},
     {t:'mc',q:'What does this mean?',d:'बैंक',o:['Bank','Shop','Temple','Restaurant'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['विद्यालय','School'],['बैंक','Bank'],['रेस्टुरेन्ट','Restaurant'],['घर','Home']]},
-    {t:'li',q:'What did you hear?',say:'रेस्टुरेन्ट',r:'Restaurant',o:['Restaurant','Hospital','Shop','Temple'],a:0},
+    {t:'li',q:'What did you hear?',say:'रेस्टुरेन्ट',o:['Restaurant','Hospital','Shop','Temple'],a:0},
     {t:'mc',q:'Where do you pray?',o:['मन्दिर','बैंक','पसल','अस्पताल'],a:0},
     {t:'mc',q:'Where do you study?',o:['विद्यालय','अस्पताल','रेस्टुरेन्ट','बैंक'],a:0},
   ]},
@@ -3006,11 +3015,11 @@ const NE_LESSONS = [
     {t:'tr',q:'Type "shop"',a:'पसल',r:'pasal'},
     {t:'mc',q:'What does this mean?',d:'मन्दिर',r:'mandir',o:['Temple','Shop','Bank','Home'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['घर','Home'],['पसल','Shop'],['अस्पताल','Hospital'],['विद्यालय','School']]},
-    {t:'li',q:'What did you hear?',say:'बैंक',r:'Bank',o:['Bank','Shop','Temple','Restaurant'],a:0},
+    {t:'li',q:'What did you hear?',say:'बैंक',o:['Bank','Shop','Temple','Restaurant'],a:0},
     {t:'tr',q:'Type "temple"',a:'मन्दिर',r:'mandir'},
     {t:'mc',q:'Where do you study?',o:['विद्यालय','अस्पताल','रेस्टुरेन्ट','बैंक'],a:0},
     {t:'wb',q:'Build "I am at the temple"',a:['म','मन्दिरमा','छु'],r:'ma mandirma chhu',pool:['मन्दिरमा','छु','म','छ']},
-    {t:'li',q:'What did you hear?',say:'रेस्टुरेन्ट',r:'Restaurant',o:['Restaurant','Hospital','Shop','Temple'],a:0},
+    {t:'li',q:'What did you hear?',say:'रेस्टुरेन्ट',o:['Restaurant','Hospital','Shop','Temple'],a:0},
     {t:'tr',q:'Type "hospital"',a:'अस्पताल',r:'aspataal'},
   ]},
   {id:'directions',title:'Directions',step:'learn',meta:'Getting around',vocab:[['दायाँ','daayaa','right'],['बायाँ','baayaa','left'],['सीधा','seedhaa','straight'],['पछाडि','pachhaadi','behind'],['नजिक','najik','near'],['टाढा','taadhaa','far']],ex:[
@@ -7831,7 +7840,7 @@ const NE_LESSONS = [
 
   {id:'li_w11d1_3',title:'Party & surprise',step:'build',vocab:[['पार्टी','party','party'],['भोज','bhoj','feast'],['सरप्राइज','surprise','surprise'],['म मेरी श्रीमतीलाई सरप्राइज दिन चाहन्छु','ma meri shrimatilai surprise dina chahanchhu','I want to surprise my wife']],ex:[
     {t:'note',tag:'Celebration & surprise',q:'पार्टी / भोज & सरप्राइज',body:'<p><span class="deva">पार्टी</span> / <span class="deva">भोज</span> party / feast &middot; <span class="deva">सरप्राइज</span> surprise.</p><p>Jesus\' first miracle happened at a <span class="deva">भोज</span> (party) &mdash; turning water into wine surprised everyone!</p>'},
-    {t:'mc',q:'What does सरप्राइज mean?',d:'सरप्राइज',r:'surprise',o:['surprise','party','owner','servant'],a:0},
+    {t:'mc',q:'What does सरप्राइज mean?',d:'सरप्राइज',o:['surprise','party','owner','servant'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'भोज',o:['feast / party','surprise','servant','owner'],a:0},
     {t:'mc',q:'"I\'m having a party tonight, want to come?" &mdash; "party" is:',o:['पार्टी','सरप्राइज','मालिक','सेवक'],a:0},
     {t:'mc',q:'"I want to surprise my wife" &mdash; "surprise" is:',o:['सरप्राइज','पार्टी','भोज','मालिक'],a:0},
@@ -9474,10 +9483,18 @@ function fnodesHTML(st){
   if(st.intro)h+='<p class="fintro"><span class="fintro-ne '+(rom?'from':'deva')+'">'+(rom?st.intro[1]:st.intro[0])+'</span><span class="fintro-en">'+st.intro[2]+'</span></p>';
   const total=secs.length;
   let prog;
-  if(nRead>=total)prog='<span class="deva">सबै '+devNum(total)+' घटना पढियो — बधाई छ!</span><span class="fprog-en">All '+total+' read — well done!</span>';
-  else if(nRead)prog='<span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span>';
-  else prog='<span class="deva">'+devNum(total)+' घटनाहरू — जहाँबाट पनि सुरु गर्नुहोस्</span><span class="fprog-en">'+total+' moments — start anywhere</span>';
-  h+='<div class="fprog">'+prog+'</div><div class="fnodes">';
+  if(nRead>=total){
+    const other=(FAITH.stories||[]).find(x=>x.id!==st.id);
+    h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
+      +'<div class="fdb-tx"><div class="deva fdb-ne">सबै '+devNum(total)+' घटना पढियो — बधाई छ!</div><div class="fdb-en">All '+total+' moments read — well done!</div></div>'
+      +(other?'<button type="button" class="fdb-btn" onclick="show(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> &rarr;</button>':'')
+      +'</div>';
+  }else{
+    if(nRead)prog='<span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span>';
+    else prog='<span class="deva">'+devNum(total)+' घटनाहरू — जहाँबाट पनि सुरु गर्नुहोस्</span><span class="fprog-en">'+total+' moments — start anywhere</span>';
+    h+='<div class="fprog">'+prog+'</div>';
+  }
+  h+='<div class="fnodes">';
   secs.forEach(function(s,i){
     const done=FAITH_DONE.has(s.id),isNext=i===next;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
@@ -9503,7 +9520,9 @@ function freadHTML(st,i){
       +(rom?'<span class="from">'+s.note[1]+'</span>':'<span class="deva">'+s.note[0]+'</span>')
       +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></div>'
       +'<div class="fen">'+s.note[2]+'</div></div>';}
-  h+='<div class="fread-nav"><button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
+  h+='<div class="fread-nav">'
+    +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">&larr; <span class="deva">अघिल्लो</span></button>':'<span class="fprev-spacer"></span>')
+    +'<button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
     +(last?'<span class="deva">समाप्त</span> &#10003;':'<span class="deva">अगाडि</span> &rarr;')+'</button>'
     +'<div class="fread-count">'+devNum(i+1)+' / '+devNum(st.sections.length)+'</div></div></div>';
   return h;
