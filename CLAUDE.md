@@ -761,13 +761,21 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   banner (cheer mascot + cross-link button to the other story); open
   stories have a previous-link (`.fprev`). Both pages carry the full
   Nepali HOME HERO art (verbatim static copies). Each page opens with an
-  **Overview card** (`.fnode.fov`, July 2026 — replaced the old intro
-  paragraph): a five-beat gospel summary for God's Story (सुसमाचार —
+  **Overview node** (restyled July 2026 v9 — the old `.fov` gradient card
+  is gone): a five-beat gospel summary for God's Story (सुसमाचार —
   छोटकरीमा) and "Who is Jesus?" for the Jesus page — authored as
   `overview:{t,ne,art,start,paras}` in the story data, opened via
   `openFNode(sid,'ov')`, rendered like a story (script/roman picker,
-  recorded audio, play-all) but outside read-progress; its primary button
-  starts moment 1. The extractor pulls `overview.paras[i][0]` too.
+  recorded audio, play-all). It renders as the FIRST card *inside* the
+  `.fnodes` path, visually identical to the moment cards (unnumbered);
+  while nothing is read it carries the mascot + सुरु chip. Its closing
+  paragraph and button hand off into detail ("सुरुदेखि हेरौं" — from
+  here, the whole story in detail): the button calls `markFOv(sid)`,
+  which ticks the overview (stored as `<storyId>-ov` in FAITH_DONE —
+  section progress counts stay sections-only) and opens moment 1. The
+  old "N moments — start anywhere" line is REMOVED (Ruan, July 2026);
+  the progress line appears only once ≥1 moment is read. The extractor
+  pulls `overview.paras[i][0]` too.
   Each page is a list of **big-moment NODES (July 2026): none locked, ONE
   short story each** (unlike the 5-lesson language topics). A node card shows
   its scene art + bilingual title + a read-tick; tapping opens the story
@@ -789,7 +797,19 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   paras:[[nepali, roman, english, reference?]]}`; scene art = `FNE_ART`,
   SVG scene emblems with gradient skies, viewBox 0 0 120 84, per-scene
   gradient ids gA..gR — scenes & symbols only, no depictions of God or of
-  Jesus' face). Rules in its header: paraphrase only
+  Jesus' face). **Content register (Ruan, July 2026 — "storytelling
+  mode"): written for the un-churched reader.** Every person, place and
+  church-word is introduced INSIDE the story on first use in its section —
+  never assume the reader knows who David, the prophets, Israel, or Mary
+  Magdalene are (e.g. kings: "after Egypt Israel settled in their land →
+  the best-loved king was a man named David → over hundreds of years many
+  kings lived in deep sin → so God kept sending prophets, people chosen to
+  speak his words to kings and people → in the end Israel was disciplined,
+  forced from their land"). Same for बलि sacrifice, निर्वासन exile, चेला
+  disciples, बप्तिस्मा baptism. Rich, flowing narrative — full, not
+  shortened; each section bridges from the previous one. Apply this
+  standard to ALL future faith content and languages. Other rules in its
+  header: paraphrase only
   (never copy Bible translation text), references name the passages, high
   honorific for God/Jesus, vocabulary consistent with the Intensive track
   (परमेश्वर, येशू, पाप, सङ्गति…), Nepali strings must avoid `' " < > \`

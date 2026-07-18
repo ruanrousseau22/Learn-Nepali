@@ -909,8 +909,6 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fplay-btn:hover{background:color-mix(in srgb,var(--crimson) 8%,transparent)}
 .fplay-btn.playing{background:var(--crimson);color:#fff}
 .fpara.fplaying,.fnote.fplaying{border-color:var(--crimson);box-shadow:0 0 0 2.5px color-mix(in srgb,var(--crimson) 25%,transparent)}
-.fnode.fov{background:linear-gradient(120deg,color-mix(in srgb,var(--crimson) 9%,var(--card)),var(--card) 70%);border-color:color-mix(in srgb,var(--crimson) 45%,var(--line));margin-bottom:18px;max-width:620px;margin-left:auto;margin-right:auto;display:flex}
-.fov-chip{flex:none;border:1.5px solid var(--crimson);color:var(--crimson);font-weight:800;font-size:.78rem;border-radius:999px;padding:5px 12px;letter-spacing:.04em}
 .fdone-banner{display:flex;align-items:center;gap:14px;max-width:620px;margin:4px auto 18px;background:color-mix(in srgb,var(--crimson) 8%,var(--card));border:1.5px solid color-mix(in srgb,var(--crimson) 35%,var(--line));border-radius:16px;padding:14px 16px}
 .fdb-mascot{flex:none;width:52px;height:52px}
 .fdb-tx{flex:1;min-width:0}
@@ -9535,27 +9533,31 @@ function fparaHTML(p){const rom=(S.fRom||'script')==='rom';
     +'<div class="fen">'+p[2]+(p[3]?'<div class="fref">'+p[3]+'</div>':'')+'</div></div>';}
 function fnodesHTML(st){
   const secs=st.sections||[],nRead=secs.filter(s=>FAITH_DONE.has(s.id)).length,next=secs.findIndex(s=>!FAITH_DONE.has(s.id));
+  /* the overview rides in the node list as the FIRST card (same look as every
+     other node); it is the suggested start while nothing has been read yet */
+  const ovDone=FAITH_DONE.has(st.id+'-ov'),ovNext=!!st.overview&&!ovDone&&nRead===0;
   let h='';
-  if(st.overview)h+='<button type="button" class="fnode fov" onclick="openFNode(\''+st.id+'\',\'ov\')">'
-    +'<span class="fnode-art" aria-hidden="true">'+(st.overview.art||'')+'</span>'
-    +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.overview.ne||'')+'</span><span class="fnode-en">'+st.overview.t+'</span></span>'
-    +'<span class="fov-chip">Overview</span></button>';
   const total=secs.length;
-  let prog;
   if(nRead>=total){
     const other=(FAITH.stories||[]).find(x=>x.id!==st.id);
     h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
       +'<div class="fdb-tx"><div class="deva fdb-ne">सबै '+devNum(total)+' घटना पढियो — बधाई छ!</div><div class="fdb-en">All '+total+' moments read — well done!</div></div>'
       +(other?'<button type="button" class="fdb-btn" onclick="show(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> &rarr;</button>':'')
       +'</div>';
-  }else{
-    if(nRead)prog='<span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span>';
-    else prog='<span class="deva">'+devNum(total)+' घटनाहरू — जहाँबाट पनि सुरु गर्नुहोस्</span><span class="fprog-en">'+total+' moments — start anywhere</span>';
-    h+='<div class="fprog">'+prog+'</div>';
+  }else if(nRead){
+    h+='<div class="fprog"><span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span></div>';
   }
   h+='<div class="fnodes">';
+  if(st.overview){
+    h+='<button type="button" class="fnode'+(ovDone?' done':'')+(ovNext?' next':'')+'" onclick="openFNode(\''+st.id+'\',\'ov\')">'
+      +'<span class="fnode-art" aria-hidden="true">'+(st.overview.art||'')+'</span>'
+      +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.overview.ne||'')+'</span><span class="fnode-en">'+st.overview.t+'</span></span>'
+      +(ovDone?'<span class="fnode-tick" aria-label="Read">✓</span>':(ovNext?'<span class="fnode-go deva">सुरु</span>':''))
+      +(ovNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
+      +'</button>';
+  }
   secs.forEach(function(s,i){
-    const done=FAITH_DONE.has(s.id),isNext=i===next;
+    const done=FAITH_DONE.has(s.id),isNext=i===next&&!ovNext;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
       +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
       +'<span class="fnode-tx"><span class="fnode-t deva">'+devNum(i+1)+' · '+(s.ne||s.t)+'</span><span class="fnode-en">'+s.t+'</span></span>'
@@ -9574,7 +9576,7 @@ function freadHTML(st,i){
       +fpickHTML()
       +'<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\',\'ov\')"></button></div>';
     g+=(ov.paras||[]).map(fparaHTML).join('');
-    g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="closeFNode();openFNode(\''+st.id+'\',0)"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> &rarr;</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
+    g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> &rarr;</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
     return g;
   }
   const s=st.sections[i],last=i>=st.sections.length-1;
@@ -9602,6 +9604,8 @@ function closeFNode(){fstopAll();FVIEW=null;buildFaith();window.scrollTo({top:0,
 function markFRead(sid,i){fstopAll();const st=(FAITH.stories||[]).find(x=>x.id===sid);if(!st)return;
   FAITH_DONE.add(st.sections[i].id);saveFaithDone();
   if(i+1<st.sections.length)openFNode(sid,i+1);else closeFNode();}
+/* finishing the overview marks it read and flows straight into moment 1 */
+function markFOv(sid){fstopAll();FAITH_DONE.add(sid+'-ov');saveFaithDone();openFNode(sid,0);}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLangMenu();});
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
 async function switchLang(code){
