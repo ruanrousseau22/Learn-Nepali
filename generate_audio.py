@@ -56,6 +56,12 @@ LANGS = {
         "outdir": "audio-mn",
         "voices": {"male": "mn-MN-BataaNeural", "female": "mn-MN-YesuiNeural"},
     },
+    # Bengali — bn-IN (Indian Bengali; the course teaches Kolkata / West Bengal usage)
+    "bn": {
+        "strings": "audio_strings_bn.json",
+        "outdir": "audio-bn",
+        "voices": {"male": "bn-IN-BashkarNeural", "female": "bn-IN-TanishaaNeural"},
+    },
     # religious studies (faith mode) — Nepali story reader, same voice as the course
     "nef": {
         "strings": "audio_strings_nef.json",

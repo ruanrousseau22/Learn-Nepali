@@ -24,8 +24,10 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `lang/ps.js` — the app's first RIGHT-TO-LEFT course; early-access label
   dropped at 12 zones, July 2026) — plus **Mongolian** live in EARLY
   ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/mn.js`, July 2026
-  — Cyrillic; growing zone by zone like Khmer did). Plus the Religious
-  studies mode (Nepali). ALL SEVEN offered languages now have live courses.
+  — Cyrillic; growing zone by zone like Khmer did) and **Bengali** live in
+  EARLY ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/bn.js`, July
+  2026 — Kolkata standard; growing zone by zone). Plus the Religious
+  studies mode (Nepali). ALL EIGHT offered languages now have live courses.
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -47,6 +49,9 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   (850 strings via `lo-LA-ChanthavongNeural`)
 - `audio-ps/` + `audio_strings_ps.json` — Pashto clips, manifest and strings
   source (824 strings via `ps-AF-GulNawazNeural`)
+- `audio-bn/` + `audio_strings_bn.json` — Bengali clips, manifest and strings
+  source (186 strings via `bn-IN-BashkarNeural`; 183 clips — the bare signs
+  ং ঃ ঁ get no edge-tts audio → device-TTS fallback, same as Burmese ဎ)
 - `audio-mn/` + `audio_strings_mn.json` — Mongolian clips, manifest and
   strings source (142 clips for 143 strings via `mn-MN-BataaNeural`: the
   loan letter Щщ gets no edge-tts audio — device-TTS fallback, same as
@@ -69,7 +74,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `EducationalApplication` with a `teaches` array + one `Course` per language).
   **Update all of these when you ship a new language**: add the language to the
   title/description/keywords, the `teaches` array, and add a `Course` entry — so
-  the site ranks for "learn &lt;language&gt;". Currently: all seven — Nepali + Khmer + Burmese + Sinhala + Lao + Pashto + Mongolian.
+  the site ranks for "learn &lt;language&gt;". Currently: all eight — Nepali + Khmer + Burmese + Bengali + Sinhala + Lao + Pashto + Mongolian.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -537,6 +542,52 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   to-be & байна sentences, verbs + the -x infinitive, want/like, food &
   the ger kitchen (сүүтэй цай!), family, cases little by little —
   research each word before shipping.
+- **Bengali (`lang/bn.js`) LIVE in EARLY ACCESS at 2 zones / 14 topics /
+  70 lessons** (July 2026, Bengali-driven, research-first; verified against
+  the Wikivoyage Bengali phrasebook — incl. the Akademi -ো teen spellings
+  এগারো…চোদ্দো — and Wikipedia "Bengali alphabet"; added outside the
+  original phase roadmap because Ruan's friends are going to ministry work
+  in Kolkata — the course itself is secular per the house rule). Target
+  variety: **Standard Colloquial Bengali as spoken in KOLKATA / West
+  Bengal** (cholito bhasha, the Rarhi/Nadia-based standard; never the
+  literary shadhu register). Kolkata word choices flagged in notes where
+  the two banks differ: জল water vs BD পানি, নুন salt vs BD লবণ. Zone 1
+  "The Script" tells Bengali's own story: the hidden inherent **ô** (ক =
+  ko; মন = mon!) + the মাত্রা headline; the vowel-sign dance (ে written
+  BEFORE its consonant — the Burmese-prevowel trick — ো hugging both
+  sides); everyday consonants + the দাদা/দিদি street-politeness words;
+  the two T families (soft dental ত দ vs hard retroflex ট ড — English
+  t/d ARE the hard ones); the aspirate puff (মাছ-ভাত machhe-bhate
+  Bangali!); the three-letters-one-sound শ ষ স family + চা/জল; nasal
+  signs ং ঁ + first sight conjunct হ্যাঁ, ending reading বাংলা and
+  কলকাতা. Zone 2 "Foundations": কেমন আছেন?/ভালো আছি + the reply loop +
+  আসি goodbye (নমস্কার taught factually as the common WB greeting;
+  Muslim neighbours' সালাম noted in a tip), the তুই/তুমি/আপনি respect
+  ladder + সে = he AND she (no gender!), numbers 1–10, courtesy
+  (হ্যাঁ/না/ধন্যবাদ/মাফ করবেন/ঠিক আছে/আচ্ছা), zero-copula intros আমার
+  নাম… + আপনার নাম কী?, time words আজ/কাল (kal = tomorrow AND
+  yesterday!) + গতকাল/আগামীকাল, teens এগারো…বিশ + market কুড়ি.
+  Romanization scheme documented at the top of `lang/bn.js` (ASCII;
+  inherent vowel & অ AND ও all written "o" — audio carries the ô/o
+  split; letter tiles teach soft-vs-hard t/d, word roms collapse both to
+  plain t/d — taka, thik, dada — the Mongolian ö/ü precedent). Art:
+  dawn over the Hooghly — violet river, Howrah bridge silhouette right
+  (a bridge, secular), nouka country boat + boatman, coconut palms,
+  banana leaves; mascot = Bengal tiger cub; India flag in LANG_FLAGS.
+  Audio via `bn-IN-BashkarNeural` (female `bn-IN-TanishaaNeural`);
+  extractor + generator both know `bn`; extractor's COMBINING_ONLY
+  regex gained the Bengali vowel signs া-্ ৗ. No Intensive
+  (Nepal-specific). Zone 3+ candidates (grow like Khmer; drop the
+  early-access label at 12 zones): "Say a sentence" — SOV + zero copula,
+  the PERSON-based verb endings (আমি করি / তুমি করো / আপনি করেন / সে
+  করে — Bengali conjugates by person+politeness, NOT gender/number),
+  আছে/নেই have-and-exist, negation with না, yes/no questions by tone +
+  কি; then cases little by little (-এ/-তে locative, -র genitive, -কে
+  objective), the -টা/-খানা classifiers, want/like (আমার চাই/ভালো
+  লাগে dative subjects) — research each word before shipping, then
+  append to `BN_UNITS`/the zone consts in `lang/bn.js`, add SYM
+  entries, and regen audio (`extract_audio_strings.js bn` then
+  `generate_audio.py --lang bn`).
 - **Burmese (`lang/my.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
   (July 2026, staged A–E). Zone 1 "The Script"; Zone 2 "Foundations";
   Zone 3 "Say a sentence" (ဒါ/အဲဒါ/ဟိုဟာ + ပါ, verbs + …တယ်, future …မယ်,
