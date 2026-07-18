@@ -59,41 +59,45 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
 +'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>'
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
-/* gulls over the water (fine detail, hidden on phones) */
-+'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.8" stroke-linecap="round" opacity=".5" aria-hidden="true"><path d="M170 100 q6 -5 12 0 q6 -5 12 0"/><path d="M240 116 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: rolling tea-country hills, rising only right of the title zone */
-+'<path class="far" d="M0 244 Q120 236 240 240 Q360 234 480 240 Q600 234 720 238 Q780 210 850 226 Q910 190 980 216 Q1040 178 1110 208 Q1160 190 1200 200 L1200 320 L0 320 Z"/>'
-/* mid: coast line with a stilt-fisherman row & a leaning palm on the right */
-+'<path class="mid" d="M0 320 L0 286 Q300 274 600 282 Q900 290 1200 278 L1200 320 Z '
-/* stilt fishermen: three poles with tiny cross-seats */
-+'M812 284 L812 236 L818 236 L818 284 Z M818 244 L836 244 L836 249 L818 249 Z M830 244 L830 236 L834 236 L834 244 Z '
-+'M862 286 L862 232 L868 232 L868 286 Z M868 240 L886 240 L886 245 L868 245 Z M880 240 L880 232 L884 232 L884 240 Z '
-+'M912 284 L912 238 L918 238 L918 284 Z M918 246 L936 246 L936 251 L918 251 Z M930 246 L930 238 L934 238 L934 246 Z '
-/* palm trunk */
-+'M1012 280 C1016 246 1013 214 1018 186 L1023 187 C1019 216 1023 248 1020 282 Z '
-/* palm fronds */
-+'M1020 184 C1002 172 982 169 966 175 C984 174 1003 179 1018 188 Z M1020 184 C1036 170 1056 166 1073 172 C1056 173 1037 179 1022 188 Z M1020 184 C1012 166 999 156 982 154 C999 162 1010 172 1018 186 Z M1020 184 C1028 166 1041 156 1058 154 C1041 162 1030 172 1022 186 Z '
-+'M1016 190 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M1024 190 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 Z'
-/* soft wave lines under the title (calm texture) */
-+'<path class="snow" opacity=".22" d="M70 256 Q220 250 370 254 L368 260 Q220 254 74 262 Z"/>'
-+'<path class="snow" opacity=".22" d="M150 268 Q300 260 430 266 L428 272 Q300 264 154 274 Z"/>'
-/* near: beach & surf band, a second palm far right */
-+'<g class="near"><path d="M0 298 Q160 264 320 292 Q480 316 640 286 Q800 258 960 294 Q1080 312 1200 290 L1200 320 L0 320 Z"/>'
-+'<path d="M1108 300 C1112 264 1109 232 1114 202 L1120 204 C1115 234 1120 266 1116 302 Z"/>'
-+'<path d="M1117 200 C1097 187 1075 184 1057 191 C1077 189 1098 194 1115 204 Z"/><path d="M1117 200 C1134 185 1156 181 1174 188 C1156 188 1136 194 1119 204 Z"/><path d="M1117 200 C1108 181 1093 170 1074 168 C1093 176 1106 187 1114 202 Z"/><path d="M1117 200 C1126 181 1141 170 1160 168 C1141 176 1128 187 1120 202 Z"/>'
-+'<circle cx="1112" cy="205" r="3"/><circle cx="1123" cy="205" r="3"/><circle cx="1117" cy="210" r="3"/>'
-+'</g>';
+/* gulls over the water */
++'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".65" aria-hidden="true"><path d="M190 96 q6 -5 12 0 q6 -5 12 0"/><path d="M262 114 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
+/* far: the sea to the left, misty tea highlands rising right of the title */
++'<path class="far" d="M0 254 L600 254 Q660 252 720 250 Q770 226 830 234 Q880 200 950 216 Q1010 184 1080 204 Q1140 192 1200 200 L1200 320 L0 320 Z"/>'
+/* a tiny catamaran sail out at sea (fine detail) */
++'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--tree)" d="M590 254 Q602 258 616 254 L613 250 L593 250 Z"/></g>'
+/* mid: the warm sandy shore */
++'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
+/* soft wave lines under the title */
++'<path class="snow" opacity=".28" d="M70 264 Q220 258 370 262 L368 268 Q220 262 74 270 Z"/>'
++'<path class="snow" opacity=".28" d="M150 276 Q300 268 430 274 L428 280 Q300 272 154 282 Z"/>'
+/* stilt fishermen — the iconic silhouettes, perched over the shallows */
++'<g class="art-detail" aria-hidden="true">'
+/* each: slim pole, small side-perch, seated figure with a long rod angled to the sea */
++'<g fill="var(--tree)"><path d="M806 288 L806 240 L810 240 L810 288 Z M810 252 L820 252 L820 255 L810 255 Z"/><circle cx="815" cy="238" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M810 252 L811 243 Q815 241 819 244 L820 252 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M818 244 L786 262"/></g>'
++'<g fill="var(--tree)"><path d="M858 290 L858 236 L862 236 L862 290 Z M862 248 L872 248 L872 251 L862 251 Z"/><circle cx="867" cy="234" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M862 248 L863 239 Q867 237 871 240 L872 248 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M870 240 L838 258"/></g>'
++'<g fill="var(--tree)"><path d="M910 288 L910 244 L914 244 L914 288 Z M914 256 L924 256 L924 259 L914 259 Z"/><circle cx="919" cy="242" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M914 256 L915 247 Q919 245 923 248 L924 256 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M922 248 L890 266"/></g>'
++'</g>'
+/* coconut palms leaning over the shore */
++'<g class="near">'
++'<path d="M1046 296 C1052 254 1046 220 1056 190 L1063 192 C1053 222 1060 256 1054 298 Z"/>'
++'<path d="M1059 190 C1038 176 1014 173 995 181 C1016 180 1038 186 1056 195 Z M1059 190 C1078 174 1102 170 1122 177 C1102 179 1080 186 1062 195 Z M1059 190 C1050 170 1035 159 1015 157 C1035 166 1048 177 1056 192 Z M1059 190 C1068 170 1083 159 1103 157 C1083 166 1070 177 1062 192 Z M1059 190 C1057 168 1049 152 1035 143 C1047 156 1054 172 1056 190 Z'
++' M1054 196 m-3.4 0 a3.4 3.4 0 1 0 6.8 0 a3.4 3.4 0 1 0 -6.8 0 M1064 196 m-3.4 0 a3.4 3.4 0 1 0 6.8 0 a3.4 3.4 0 1 0 -6.8 0"/>'
++'<path d="M1152 298 C1146 264 1152 238 1144 214 L1150 212 C1158 238 1152 266 1158 298 Z"/>'
++'<path d="M1146 214 C1128 204 1108 202 1092 209 C1109 208 1128 212 1144 219 Z M1146 214 C1162 200 1182 196 1199 202 C1182 204 1163 210 1148 218 Z M1146 214 C1140 197 1128 187 1111 185 C1128 192 1139 202 1144 216 Z M1146 214 C1153 197 1165 188 1182 186 C1166 194 1155 204 1148 216 Z"/>'
++'</g>'
+/* near: lush green shore */
++'<g class="near"><path d="M0 304 Q160 286 320 298 Q480 310 640 298 Q800 286 960 300 Q1080 308 1200 298 L1200 320 L0 320 Z"/></g>';
 
-/* --- band: calm left, tea hill + palm right --- */
+/* --- band: calm sea left, palm + headland right --- */
 const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
-+'<path class="far" d="M0 150 Q100 144 200 148 Q300 142 400 146 Q500 142 600 146 Q700 142 770 146 Q830 124 890 138 Q950 118 1010 134 Q1070 116 1130 132 Q1170 124 1200 130 L1200 200 L0 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 176 Q300 166 600 174 Q900 182 1200 170 L1200 200 Z"/>'
-/* stilt fisherman + palm (fine detail) */
-+'<g class="mid art-detail"><path d="M836 176 L836 140 L841 140 L841 176 Z M841 146 L856 146 L856 151 L841 151 Z M851 146 L851 140 L855 140 L855 146 Z"/></g>'
-+'<g class="near"><path d="M0 186 Q300 160 600 178 Q900 196 1200 174 L1200 200 L0 200 Z"/>'
-+'<path d="M964 188 C968 162 966 142 970 124 L975 126 C972 144 976 166 974 190 Z"/>'
-+'<path d="M972 122 C956 112 940 110 926 116 C942 114 958 118 970 126 Z"/><path d="M972 122 C986 108 1002 104 1016 110 C1002 110 986 116 974 126 Z"/><path d="M972 122 C964 104 952 96 938 94 C952 102 962 110 970 124 Z"/><path d="M972 122 C980 104 992 96 1006 94 C992 102 982 110 974 124 Z"/>'
-+'</g>';
++'<path class="far" d="M0 154 L700 154 Q740 152 780 150 Q830 134 890 140 Q950 122 1010 132 Q1080 122 1140 130 Q1170 128 1200 130 L1200 200 L0 200 Z"/>'
++'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 170 L1200 200 Z"/>'
+/* stilt fisherman (fine detail) */
++'<g class="art-detail" aria-hidden="true"><g fill="var(--tree)"><path d="M816 178 L816 142 L819 142 L819 178 Z M819 152 L827 152 L827 155 L819 155 Z"/><circle cx="823" cy="140" r="2.8" fill="var(--tree)"/><path fill="var(--tree)" d="M819 152 L820 145 Q823 143 826 146 L827 152 Z"/><path stroke="var(--tree)" stroke-width="1.2" fill="none" d="M825 146 L800 160"/></g></g>'
+/* palm */
++'<g class="near"><path d="M1076 186 C1080 158 1076 136 1082 116 L1087 117 C1081 138 1086 160 1082 188 Z"/>'
++'<path d="M1084 116 C1070 106 1054 104 1041 109 C1055 109 1070 113 1082 120 Z M1084 116 C1097 105 1113 102 1126 107 C1113 109 1098 114 1086 120 Z M1084 116 C1078 103 1069 95 1056 93 C1069 99 1078 107 1082 117 Z M1084 116 C1090 103 1099 95 1112 93 C1100 99 1091 107 1086 117 Z"/></g>'
++'<g class="near"><path d="M0 188 Q300 168 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/></g>';
 
 /* --- mascot: leopard cub (moods: happy / cheer / oops) --- */
 function SI_MASCOT(m){

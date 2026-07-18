@@ -97,8 +97,8 @@ function serialize(arr){return '[\n'+arr.map(function(s){return JSON.stringify(s
 
 function run(argv){
   var lang=argv[0],check=argv.indexOf('--check')>=0;
-  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'},nef:{src:'faith/ne.js',out:'audio_strings_nef.json'}}[lang];
-  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si|nef [--check]';
+  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'},lo:{src:'lang/lo.js',out:'audio_strings_lo.json'},ps:{src:'lang/ps.js',out:'audio_strings_ps.json'},mn:{src:'lang/mn.js',out:'audio_strings_mn.json'},nef:{src:'faith/ne.js',out:'audio_strings_nef.json'}}[lang];
+  if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si|lo|ps|mn|nef [--check]';
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
   var strings;
   if(lang==='nef'){

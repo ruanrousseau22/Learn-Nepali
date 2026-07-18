@@ -16,12 +16,16 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Status (July 2026):** all FOUR courses complete at 12 zones each —
+- **Status (July 2026):** SIX courses complete at 12 zones each —
   Nepali (main 12 zones / 385 lessons + the Intensive track), Khmer
-  (12 zones / 420 lessons; early-access label dropped July 2026),
-  Burmese (12 zones / 420 lessons; staged A–E), and Sinhala
-  (12 zones / 420 lessons; staged A–D July 2026, early-access label
-  dropped on completion). Plus the Religious studies mode (Nepali).
+  (12 zones / 420 lessons), Burmese (12 zones / 420 lessons), Sinhala
+  (12 zones / 420 lessons), **Lao** (12 zones / 74 topics / 370 lessons,
+  `lang/lo.js`), and **Pashto** (12 zones / 74 topics / 370 lessons,
+  `lang/ps.js` — the app's first RIGHT-TO-LEFT course; early-access label
+  dropped at 12 zones, July 2026) — plus **Mongolian** live in EARLY
+  ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/mn.js`, July 2026
+  — Cyrillic; growing zone by zone like Khmer did). Plus the Religious
+  studies mode (Nepali). ALL SEVEN offered languages now have live courses.
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -38,6 +42,15 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - `audio-my/` + `audio_strings_my.json` — Burmese clips, manifest and strings source
   (934 clips for 935 strings: ဎ / U+100E, a rare Pali letter, has no clip —
   edge-tts returns no audio for it, so it gracefully falls back to device TTS)
+- `audio-si/` + `audio_strings_si.json` — Sinhala clips, manifest and strings source
+- `audio-lo/` + `audio_strings_lo.json` — Lao clips, manifest and strings source
+  (850 strings via `lo-LA-ChanthavongNeural`)
+- `audio-ps/` + `audio_strings_ps.json` — Pashto clips, manifest and strings
+  source (824 strings via `ps-AF-GulNawazNeural`)
+- `audio-mn/` + `audio_strings_mn.json` — Mongolian clips, manifest and
+  strings source (142 clips for 143 strings via `mn-MN-BataaNeural`: the
+  loan letter Щщ gets no edge-tts audio — device-TTS fallback, same as
+  Burmese ဎ and the rare Sinhala letters)
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `extract_audio_strings.js` — JXA extractor that regenerates a language's
   audio strings file from its pack (see Audio → Regenerating audio)
@@ -56,7 +69,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `EducationalApplication` with a `teaches` array + one `Course` per language).
   **Update all of these when you ship a new language**: add the language to the
   title/description/keywords, the `teaches` array, and add a `Course` entry — so
-  the site ranks for "learn &lt;language&gt;". Currently: Nepali + Khmer + Burmese + Sinhala.
+  the site ranks for "learn &lt;language&gt;". Currently: all seven — Nepali + Khmer + Burmese + Sinhala + Lao + Pashto + Mongolian.
 - `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
   `sajilo-alt` (8647) for local validation via the Claude Code browser panel
 
@@ -117,6 +130,19 @@ per-language scenery palette in CSS (`:root[data-lang="km"]` light + dark
 blocks next to the theme vars). Khmer art (stilt house, sugar palms, rice
 paddies, baby-elephant mascot) lives in `lang/km.js` (`KM_HERO`, `KM_BAND`,
 `KM_MASCOT`). **Art must be secular** — see Design / content rules.
+**Art quality standard (July 2026 — the Lao/Pashto/Mongolian/Sinhala art
+upgrade):** a hero must not read as "dim layers over each other". Two rules
+learned the hard way: (1) the language's palette needs THREE DISTINCT HUE
+STEPS like Nepali's (cool/misty --mtn-far, warm contrasting --mtn-mid,
+saturated green/dark --mtn-near) — never three greens or three grays; (2)
+landmark objects (houses, gers, boats, palms, trees) must sit in a layer
+that CONTRASTS their background, never inside the same-colored mid path:
+white landmarks use class `snow` (gers), dark silhouettes use
+`fill="var(--tree)"` (stilt houses, boats, horses, fishermen, poplars —
+adapts in dark mode and echoes the logo color), accents may use
+`var(--crimson)` (pomegranate fruit). Also: no cross-shaped silhouettes
+ever (a stilt-fisherman pole+crossbar read as a cross until the figure and
+angled rod were added).
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
@@ -357,20 +383,160 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   වැඩියි, ලාබයි, අඩු කරන්න, -න්නෙ නෑ, days, teens/tens), Wikipedia,
   Omniglot. SEO/JSON-LD still pending — add the Course entry +
   title/keywords when the course ships properly.
-- **Scaffolds live for the remaining three languages (July 2026):**
-  Lao (`lo`), Pashto (`ps`), Mongolian (`mn`) — `lang/<code>.js` packs with
-  EMPTY lessons/units/alphabet, full secular art (hero/band/mascot: Mekong
-  karsts + baby buffalo; Hindu Kush + markhor kid; steppe gers + foal),
-  catalog entries labeled "· coming soon", flags in
-  `LANG_FLAGS`, CSS palettes, fonts (Noto Sans Sinhala/Lao/Arabic in every
-  script font stack), and empty `audio-<code>/manifest.json`. The engine shows
-  a `comingSoonHTML()` card on the Learn path & Alphabet pages while a pack
-  has no lessons/letters (guards in `buildPath`/`buildAlpha`). NO Course
-  entries in the JSON-LD yet — add them (plus title/keywords) only when each
-  course actually ships. **Pashto is right-to-left** — word banks/fills need
-  an RTL pass before its Zone 1. Building one out = fill the pack arrays the
-  way Burmese was built (research-first, zone by zone), then remove nothing:
-  the coming-soon states vanish on their own once lessons exist.
+- **Lao (`lang/lo.js`) COMPLETE at 12 zones / 74 topics / 370 lessons**
+  (July 2026, Lao-driven, research-first per the standard below; catalog
+  "coming soon" label dropped + SEO/JSON-LD Course entry + title/keywords
+  added on ship; moved into the shipped catalog group). Zones 11–12 added
+  July 2026: Zone 11 "Little extras" — frequency ທຸກມື້/ບາງຄັ້ງ/ເລື້ອຍໆ/
+  ຕະຫຼອດ, clothes incl. the ສິ້ນ sinh + shoes-off custom, animals ຊ້າງ/
+  ຄວາຍ + the ລ້ານຊ້າງ Lan Xang hook, nature ແມ່ນ້ຳຂອງ Mekong/ພູ/ປ່າ/
+  ນ້ຳຕົກ, the four tastes ຫວານ/ສົ້ມ/ເຄັມ/ຂົມ + ຈືດ, choosing ເລືອກ/
+  ອັນໃດ/ທັງສອງ/ຕ່າງກັນ; Zone 12 "Make Laos home" — ໝາກ-fruits incl.
+  ໝາກຫຸ່ງ papaya, cooking verbs ຕົ້ມ/ຈືນ/ປີ້ງ/ໜຶ້ງ/ຕຳ (ping kai! tam mak
+  hung!), errands ຕັດຜົມ/ສ້ອມແປງ/ໄປສະນີ/ຮ້ານຂາຍຢາ, guests ແຂກ/ມາຫຼິ້ນ/
+  ເຊີນ..., wishes ໂຊກດີ/ຂໍໃຫ້/ສຸກສັນວັນເກີດ + ປີໃໝ່ລາວ Pi Mai (cultural
+  name only), duration ດົນປານໃດ/ຕັ້ງແຕ່ + ຂອງ possession + the capstone
+  ບ້ານຂອງຂ້ອຍຢູ່ລາວ. Zone 1 "The Script":
+  the k-family ກ ຂ ຄ ງ + the THREE tone classes (Lao's answer to Khmer's two
+  series — taught by ear, same-sound letters like ຂ/ຄ distinguished as high/
+  low, never pitted against each other in listen exercises), ຈ ສ ຊ ຍ, the
+  d/t/n row, the labials (ph = a hard p, NOT f — the romanization trap), ຢ ລ
+  ວ ຫ ຮ + the silent carrier ອ, then vowels and first readable words. Zone 2
+  "Foundations": greetings (sabaidee + the ...ບໍ່ question trick), pronouns
+  (ລາວ = he AND she, ພວກ pluralizer), numbers 1–10 & 11–100 (11 = ສິບເອັດ,
+  20 = ຊາວ irregular), courtesy (ຂໍ…ແດ່ request frame), intros (no-copula
+  name-giving), days & parts of day. Zone 3 "Say a sentence" (the grammar
+  engine, taught early): ແມ່ນ (identity) vs ຢູ່ (location), verbs + SVO +
+  the no-conjugation freebie, ບໍ່ negation, yes/no …ບໍ່ + echo answers,
+  wh-words in situ, ຢາກ want-to vs ຕ້ອງການ need + ມັກ like. Zone 4
+  "Where & with": places (ໂຮງ big-building prefix), positions (ໃກ້ near vs
+  ໄກ far — a tones-matter pair), family as address terms, food (ເຂົ້າໜຽວ
+  sticky rice), ordering (ຂໍ…ແດ່ + ຄິດເງິນ), daily routine. Zone 5 "How many":
+  money & ກີບ + ເທົ່າໃດ, big numbers ຮ້ອຍ/ພັນ/ໝື່ນ/ແສນ/ລ້ານ, classifiers
+  (noun+number+ໂຕ/ຄົນ/ອັນ/ຄັນ + ຈັກ how-many), clock ໂມງ + ເຄິ່ງ,
+  market/bargaining (ແພງໂພດ + ຫຼຸດໄດ້ບໍ່), quantities. Zone 6 "Describe it":
+  adjectives-as-stative-verbs (no ແມ່ນ), ສີ colors, ກວ່າ/ທີ່ສຸດ comparisons,
+  ໃຈ-feelings, weather & the two seasons, body & ເຈັບ+part. Zone 7 "Then &
+  now": ແລ້ວ past + ຍັງບໍ່ not-yet, ຈະ/ຊິ future, ກຳລັງ progressive, ເຄີຍ
+  ever, ໄດ້ (able/allowed) vs ເປັນ (know-how) can, ຕ້ອງ/ຄວນ/ຢ່າ modals.
+  Zone 8 "Out & about": vehicles + ຂຶ້ນ/ຂີ່, directions, tickets ປີ້ +
+  ອອກ/ຮອດ, hotel (ມີຫ້ອງວ່າງບໍ່ + ຄືນລະ), months-by-number + dates + year,
+  phone/wifi. Zone 9 "Say more": connectors ແຕ່/ເພາະ/ຖ້າ/ຫຼື, ຄິດວ່າ + ຮູ້/
+  ເຂົ້າໃຈ, jobs via ເປັນ, hobbies (ມ່ວນ), home rooms & chores, help & safety
+  (ຊ່ວຍແດ່/ຊ່ວຍດ້ວຍ, sober). Zone 10 "Your Lao life": like-degrees (ບໍ່ຄ່ອຍ/
+  ຫຼາຍ/ທີ່ສຸດ), age/married/kids small talk, learner lifelines (ເວົ້າຊ້າໆ,
+  ...ພາສາລາວວ່າແນວໃດ), furniture & pets, plans (ວ່າງ/ຫຍຸ້ງ/ນຳກັນ),
+  storytelling connectors (ທຳອິດ…ສຸດທ້າຍ) + the capstone ຂ້ອຍຮັກລາວ.
+  **Romanization scheme documented at the top of `lang/lo.js`** (ASCII,
+  no tone marks written — tones taught by ear; ph = hard p not f; aspirates
+  kh/th/ph; long vowels doubled). No Intensive (Nepal-specific). Audio via
+  `lo-LA-ChanthavongNeural` (ຂ/ຄ etc. are fine; a few mc correct-options mix
+  Lao + English but TTS handles them). Extractor + generator both know `lo`.
+  Verified against Wikipedia (Lao script/grammar), Wikivoyage Lao phrasebook,
+  Omniglot, Preply Lao word/family lists (+ sinh/animals/tastes/fruits
+  verified for Zones 11–12 against Preply clothes/animals/fruits lists and
+  the Wikipedia green-papaya-salad ໝາກຫຸ່ງ spelling). Zone 13+ candidates:
+  Boun Pi Mai round 2 / boat racing as CULTURAL names only, weaving &
+  crafts, storytelling round 2 — research each word before shipping, then
+  append to `LO_UNITS`/the zone consts in `lang/lo.js`, add SYM entries,
+  and regen audio (`extract_audio_strings.js lo` then
+  `generate_audio.py --lang lo`).
+- **Pashto (`lang/ps.js`) COMPLETE at 12 zones / 74 topics / 370
+  lessons** (July 2026, Pashto-driven, research-first; researched
+  against Wikipedia Pashto alphabet/grammar, Wikivoyage Pashto phrasebook,
+  Omniglot, LingDocs). **The app's first RIGHT-TO-LEFT course** — the RTL
+  pass lives in index.html next to the per-language font rules, keyed on
+  `:root[data-lang="ps"]`: `.wb-answer`/`.wb-bank` (word-bank tiles
+  assemble right-to-left), `.fill-sentence` and `.exbig` flow rtl; every
+  tile/option is a single text run so nothing else needed flipping
+  (verified via computed styles in the preview panel). Curriculum spine:
+  Zone 1 "The Script" — the Perso-Arabic letters by SHAPE FAMILY (dots
+  decide the sound), the four retroflexes ټ ډ ړ ڼ (romanized doubled:
+  tt/dd/rr/nn), Pashto's own څ ts / ځ dz / ښ x / ږ g (regional values
+  noted, audio leads), the ye-family vowels ی ي ې ۍ, first words. Zone 2
+  "Foundations" — سلام + the beloved ستړی مه شې, pronouns incl. polite
+  تاسو, the PRESENT EQUATIVE PARADIGM یم/یې/دی/ده/یو/دي (with the دی/ده
+  he-is/she-is gender split), numbers 1–10 & the own-word tens (شل 20,
+  دېرش 30 … سل 100), intros زما نوم … دی, courtesy مهرباني وکړه/بخښنه
+  غواړم/پروا نه لري. Zone 3 "Say a sentence" (the grammar engine): GENDER
+  + agreeing adjectives BEFORE the noun (غټ/غټه), SOV verbs with the
+  -م/-ې/-ي endings (خورم/څښم/ځم/راځم/کوم/وایم), نه negation (+ the
+  lifesaver نه پوهېږم), in-situ question words څه/چېرې/څوک/کله/ولې/څنګه,
+  have لرم/لرې/لري, want غواړم. Zone 4 "People & places": family (کورنۍ
+  built on کور), town places (روغتون health-place, Afghan هوټل =
+  eatery), the په…کې CIRCUMPOSITION sandwich, food (ډوډۍ = bread AND
+  food), TEA CULTURE (شین چای / تور چای / بوره / چای وڅښه), parts of day +
+  کوم/کېږم compound verbs. Zone 5 "How many": پیسې/افغانۍ + څو/څومره,
+  ګران(=dear!)/ارزان, hundreds سوه / thousands زر / لک lakh, clock بجې +
+  څو بجې دي, Afghan weekday names from شنبه + جمعه day off (recognition),
+  bazaar bargaining (ډېر ګران دی! ارزان یې کړه!), quantities ډېر/لږ/نور/
+  بس/ټول/هېڅ. Zone 6 "Describe it": agreement round 2 (نوی/نوې, زوړ/زړه,
+  ښکلی), colors incl. شین = green AND blue + feminine سره, comparison
+  تر…(zə tar taa loy yam) + له ټولو superlative, feelings (ستړی ties back
+  to the greeting; ناروغ = un-healthy), weather (ګرمي/یخني/باران/واوره —
+  Hindu Kush snow), body + درد کوي pain pattern. Zone 7 "Then & now":
+  past equative وم/وې/و/وه/وو, star past verbs لاړم/راغلم (+ لاړ/لاړه/
+  راغی/راغله gender), **the ERGATIVE PAST FLIP taught gently as
+  recognition** (زه→ما, تا; ما ډوډۍ وخوړه — pattern-recognition only, no
+  full paradigm), future به in second position, can = verb+شم (پښتو ویلی
+  شم!), must باید + warm commands راشه/کېنه/وخوره + مه prohibitive.
+  Zone 8 "Out & about": transport + په موټر کې, directions ښي/کیڼ/مخامخ +
+  دلته ودرېږه, hotel خونه/کیلي/تشناب + خالي خونه لرئ, phone شمېره/زنګ
+  ووهه/پیغام/واي فای, **مېلمستیا hospitality** (مېلمه/کوربه/راشئ/کور مو
+  ودان), learner lifelines (ورو ورو ووایه, بیا ووایه, په پښتو کې څنګه
+  وایې, لږ پښتو زده لرم). Zone 9 "Say more"
+  (July 2026): connectors خو/ځکه چې/که/یا/نو, mind-verbs فکر کوم/وینم/
+  اورم/زده کوم/هېروم + زما په فکر opinions, occupations via the -وونکی
+  doer suffix (ښوونکی/زده کوونکی) + بزګر/دوکاندار/موټروان, THE FLIP ROUND
+  2 (ما وویل/واورېدل/زده کړل/وکړل + تا څه وویل + هغې she-past-doer),
+  کال/میاشت + the four seasons پسرلی/دوبی/منی/ژمی, storytelling لومړی/
+  بیا/وروسته/په پای کې + یوه ورځ + کیسه. Zone 10 "Your Pashto life": the
+  خوښ like-pattern (زما چای خوښ دی — the liked thing agrees!), small talk
+  عمر/کلن/کلنه/ماشومان لرې, village & valley کلی/غر/سیند/باغ/ونه/ګل,
+  animals آس/اوښ/وزه/سپی/پیشو/مرغه, the partug-kamis clothes کمیس/پرتوګ/
+  پګړۍ/خولۍ/څپلۍ, Afghan fruits انار/انګور/مڼه/هندواڼه/بادام + وچه مېوه.
+  Zone 11 "Little extras": frequency هره ورځ/کله کله/تل/هېڅکله, school
+  کتاب/قلم/کاغذ + لولم/لیکم, tastes خوږ/تروش/تریخ/مالګه/مرچ, the room
+  دروازه/کړکۍ/مېز/چوکۍ/توشک/بام (guests sit on toshaks!), conversation
+  glue سمه ده/رښتیا/البته/شاید/یعنې/ضرور, timing اوس/ژر/ناوخته/وخت.
+  Zone 12 "Make it home": blessings مبارک شه/ژوندی اوسې/ښه سفر/په خیر
+  راغلې, doing-verbs جوړوم/مينځم/پاکوم + the جوړ fix-and-greet root,
+  beloved words ملګری/ګاونډی/خلک/وطن/سوله/زړه, the arts اتڼ/سندره/شعر/
+  رباب/لنډۍ (the two-line landay!), duration څومره وخت/له پرونه/تر اوسه
+  + زه دوه کاله دلته یم, and the capstone مینه: زه له پښتو سره مینه لرم.
+  Romanization scheme documented at the top of
+  `lang/ps.js` (ASCII; schwa written "a" à la manana; retroflexes doubled;
+  ښ=x, ږ=g with regional notes). No Intensive (Nepal-specific). Audio via
+  `ps-AF-GulNawazNeural` (824 clips); extractor + generator both know
+  `ps`. Zone 13+ candidates: the oblique case round-up, months by name,
+  more past-transitive paradigms, proverbs (متلونه) as recognition —
+  research each word before shipping.
+- **Mongolian (`lang/mn.js`) LIVE in EARLY ACCESS at 2 zones / 14
+  topics / 70 lessons** (July 2026, Mongolian-driven, research-first;
+  core phrases/numbers verified against the Wikivoyage Mongolian
+  phrasebook; catalog label "· early access"; SEO/JSON-LD Course entry +
+  title/keywords added on ship). CYRILLIC, left-to-right, system fonts —
+  no webfont or RTL work needed. Zone 1 "The Script" tells Cyrillic's own
+  story: the lookalike vowels А О У Э И, Mongolia's OWN two letters Ө Ү
+  (+ Ы Й), the FALSE FRIENDS Н Р С В Х (look Latin, sound different — the
+  zone's running joke is "trust your ears, not your eyes"), the reliable
+  crew Б Г Д З Л М Т, the hushers Ж Ч Ш + Ц (цай!), the y-team Е Ё Ю Я +
+  loan letters К П Ф Щ, and the silent signs Ь Ъ + first real words (гэр,
+  морь, тал, айраг, монгол). Zone 2 "Foundations": the repeat-it-back
+  greeting Сайн байна уу (+ Юу байна?), pronouns with the чи/та respect
+  split (тэр = he AND she), numbers 1–10 and the regular арван-teens +
+  own-word tens (хорь/гуч/дөч/тавь → зуу), courtesy тийм/үгүй/уучлаарай/
+  за/зүгээр/болно, the Намайг … гэдэг name pattern (+ Миний нэр starter,
+  хэн who), and time words өнөөдөр/маргааш/өчигдөр/өдөр/шөнө/одоо.
+  Romanization scheme documented at the top of `lang/mn.js` (letter tiles
+  may use ö/ü for the Ө/Ү distinction; WORD roms use the informal ASCII
+  ө→o, ү→u convention — ugui, suu, onoodor — with the audio carrying the
+  true vowels; х=kh, ц=ts, doubled long vowels). Audio via
+  `mn-MN-BataaNeural`; extractor + generator both know `mn`. Zone 3+
+  candidates (grow like Khmer; drop the early-access label at 12 zones):
+  to-be & байна sentences, verbs + the -x infinitive, want/like, food &
+  the ger kitchen (сүүтэй цай!), family, cases little by little —
+  research each word before shipping.
 - **Burmese (`lang/my.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
   (July 2026, staged A–E). Zone 1 "The Script"; Zone 2 "Foundations";
   Zone 3 "Say a sentence" (ဒါ/အဲဒါ/ဟိုဟာ + ပါ, verbs + …တယ်, future …မယ်,
@@ -648,6 +814,9 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
   ```
   osascript -l JavaScript extract_audio_strings.js km          # lang/km.js  → audio_strings_km.json
   osascript -l JavaScript extract_audio_strings.js my          # lang/my.js  → audio_strings_my.json
+  osascript -l JavaScript extract_audio_strings.js lo          # lang/lo.js  → audio_strings_lo.json
+  osascript -l JavaScript extract_audio_strings.js ps          # lang/ps.js  → audio_strings_ps.json
+  osascript -l JavaScript extract_audio_strings.js mn          # lang/mn.js  → audio_strings_mn.json
   osascript -l JavaScript extract_audio_strings.js ne          # index.html  → audio_strings.json
   osascript -l JavaScript extract_audio_strings.js km --check  # verify only, writes nothing
   ```
