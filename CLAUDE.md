@@ -152,14 +152,15 @@ silhouettes ever. **(3) NO HUMAN FIGURES in scenery art** (Ruan, July
 are welcome; people never. The Lao/Bengali boatmen, Burmese leg-rowers
 and Sinhala stilt-fishermen were all removed (Sinhala's whole stilt
 groups went — bare pole+crossbar would have read as crosses); empty
-boats stayed. The July 2026 Nepali hero refresh (final form, per Ruan):
-the village house is REMOVED entirely, and the old blocky far-blue
-plateau on the left is now a chain of LITTLE DISTANT PEAKS (small
-triangular summits y≈208–240 with two tiny snowcaps) sitting calmly
-under the titles, with the golden terraced hill at its original low
-sweep in front — layered depth instead of a slab. Edit the hero via
-replace_all: the markup exists as THREE verbatim copies (home + both
-faith pages).
+boats stayed. The July 2026 Nepali hero refresh (final form, per Ruan —
+"make it look like the Pashto one"): the village house is REMOVED and
+the hero + band now MIRROR THE PASHTO COMPOSITION — one calm low far
+ridge sweeping x0→~730 (band →~775), then ALL the bold snow-capped
+peaks rising right of it; ONE continuous terraced mid band edge-to-edge
+(no mid-page gap); gentle continuous green near. Only the palette and
+snow peaks make it Nepali. Edit via replace_all: the hero markup exists
+as THREE verbatim copies (home + both faith pages) and the band as FOUR
+verbatim copies.
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
@@ -774,8 +775,16 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   stories have a previous-link (`.fprev`). Both pages carry the full
   Nepali HOME HERO art (verbatim static copies). Each page opens with an
   **Overview node** (restyled July 2026 v9 — the old `.fov` gradient card
-  is gone): a five-beat gospel summary for God's Story (सुसमाचार —
-  छोटकरीमा) and "Who is Jesus?" for the Jesus page — authored as
+  is gone): for God's Story an ELEVEN-beat full gospel presentation
+  (सुसमाचार — छोटकरीमा; rewritten July 2026 to Ruan's outline — a story
+  you can PLAY to someone via the play-all button: creation for
+  relationship → friendship broken by our rebellion → God's plan born of
+  love → Israel chosen from Abraham to bless all nations → Jesus from
+  that nation, virgin-born Son of God → cross as sacrifice +
+  resurrection over the darkness → alive at God's right hand, believers
+  restored as God's children → the Holy Spirit given → Jesus' return →
+  the healing message = the gospel → walk-through transition) and "Who
+  is Jesus?" for the Jesus page — authored as
   `overview:{t,ne,art,start,paras}` in the story data, opened via
   `openFNode(sid,'ov')`, rendered like a story (script/roman picker,
   recorded audio, play-all). It renders as the FIRST card *inside* the
