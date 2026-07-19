@@ -158,7 +158,11 @@ July 2026): the village house is REMOVED; one calm low far ridge sweeps
 x0→~730 (band →~775) with the bold peaks right of it, ONE continuous
 terraced mid band edge-to-edge, gentle continuous green near — but the
 peaks are a STEPPED HIMALAYAN MASSIF (double summits with snow-capped
-shoulders; 7 hero caps / 4 band caps, tallest apex y112) and a GLACIAL
+shoulders; 9 hero caps / 6 band caps, tallest apex y112; July 2026
+round 3 per Ruan extended the chain LEFT with two smaller foothill
+peaks — hero apexes 648/y206 + 718/y182, band 692/y122 + 742/y100 —
+which poke above the old y235 rule-of-thumb but stay BELOW the title
+text line, ~y165 on desktop) and a GLACIAL
 RIVER (class `river`, fill var(--river): light #8FBADC / dark #31536E
 defined beside the scenery vars; the hero adds a snow-opacity sparkle
 streak) descends from the peak valley across the mid + near layers to
