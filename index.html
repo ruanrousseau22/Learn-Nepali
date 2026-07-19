@@ -52,7 +52,7 @@
   --crimson:#C2362E; --crimson-deep:#9B2820; --saffron:#C67911; --saffron-soft:#FCEBCC;
   --teal:#0F8C74; --teal-soft:#CFEEE6; --line:rgba(27,36,48,0.10); --line-soft:rgba(27,36,48,0.055);
   --good:#0F8C74; --bad:#C2362E; --card:#FFFFFF;
-  --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#A7C4DD; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --snow:#FFFFFF; --orb:#F6D98F;
+  --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#A7C4DD; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --river:#8FBADC; --snow:#FFFFFF; --orb:#F6D98F;
   --tree:#2C5F3A;
   --r-sm:8px; --r-md:14px; --r-lg:20px; --shadow:0 1px 2px rgba(27,36,48,0.05), 0 10px 26px -16px rgba(20,40,80,0.30);
 }
@@ -61,7 +61,7 @@
   --crimson:#E8836A; --crimson-deep:#CB5F47; --saffron:#E7AD5E; --saffron-soft:#332A1C;
   --teal:#5FC6B0; --teal-soft:#15302B; --line:rgba(233,240,247,0.12); --line-soft:rgba(233,240,247,0.06);
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
-  --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
+  --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --river:#31536E; --snow:#C7D6E6; --orb:#D9E4F0;
   --tree:#4FA06A;
 }
 /* per-language scenery palette (set via data-lang by applyArt) —
@@ -150,6 +150,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-mtns .mid{fill:var(--mtn-mid)}
 .hero-mtns .near{fill:var(--mtn-near)}
 .hero-mtns .snow{fill:var(--snow)}
+.hero-mtns .river{fill:var(--river)}
 .hero-mtns .orb{fill:var(--orb)}
 .hero-inner{position:relative;max-width:1020px;margin:0 auto;display:flex;align-items:center;min-height:300px;padding:28px 24px}
 /* reserve the space the old CTA held so the title keeps its original upper spot
@@ -181,6 +182,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .pb-mtns{position:absolute;inset:0;width:100%;height:100%;display:block}
 .pb-mtns .far{fill:var(--mtn-far)} .pb-mtns .mid{fill:var(--mtn-mid)} .pb-mtns .near{fill:var(--mtn-near)} .pb-mtns .snow{fill:var(--snow)}
 .pb-mtns .orb{fill:var(--orb)} .pb-mtns .orb-glow{fill:var(--orb);opacity:.3}
+.pb-mtns .river{fill:var(--river)}
 .pb-inner{position:relative;z-index:2;max-width:1020px;margin:0 auto;min-height:140px;display:flex;flex-direction:column;justify-content:flex-start;padding:22px 24px}
 .pb-inner h2{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-size:clamp(28px,4.6vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.04;color:var(--ink)}
 .pb-inner h2 .deva{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic';color:var(--crimson);font-weight:500;margin-left:9px}
@@ -988,12 +990,14 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L742 234 L790 170 L826 210 L872 138 L916 192 L956 124 L1004 184 L1042 148 L1086 198 L1126 164 L1166 206 L1200 196 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M790 170 L802 186 L795 184 L790 178 L783 185 L778 183 Z"/>
-      <path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 158 L858 156 Z"/>
-      <path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 146 L940 143 Z"/>
-      <path class="snow" d="M1042 148 L1054 164 L1047 162 L1042 156 L1035 163 L1030 161 Z"/>
-      <path class="snow" d="M1126 164 L1136 178 L1130 176 L1126 171 L1120 177 L1115 175 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L744 232 L786 178 L820 214 L864 130 L890 168 L914 196 L952 112 L978 150 L1002 186 L1046 142 L1090 200 L1134 158 L1170 208 L1200 198 L1200 320 L0 320 Z"/>
+      <path class="snow" d="M786 178 L798 194 L791 192 L786 186 L779 193 L774 191 Z"/>
+      <path class="snow" d="M864 130 L880 152 L871 149 L864 143 L855 152 L848 149 Z"/>
+      <path class="snow" d="M890 168 L900 181 L894 179 L890 174 L884 180 L879 178 Z"/>
+      <path class="snow" d="M952 112 L970 138 L960 134 L952 127 L942 137 L934 133 Z"/>
+      <path class="snow" d="M978 150 L988 163 L982 161 L978 156 L972 162 L967 160 Z"/>
+      <path class="snow" d="M1046 142 L1058 158 L1051 156 L1046 150 L1039 157 L1034 155 Z"/>
+      <path class="snow" d="M1134 158 L1144 172 L1138 170 L1134 165 L1128 171 L1123 169 Z"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
       <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
       <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
@@ -1002,6 +1006,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
             <g class="near">
         <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
         </g>
+      <path class="river" d="M1008 254 Q996 274 962 286 Q920 298 878 303 Q830 309 806 320 L862 320 Q878 310 918 304 Q960 298 990 286 Q1016 275 1024 258 Q1027 252 1018 250 Z"/>
+      <path class="snow" opacity=".3" d="M1006 262 Q990 278 950 290 Q910 299 862 306 L866 309 Q914 302 954 293 Q996 281 1012 264 Z"/>
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
@@ -1035,15 +1041,18 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>
-      <path class="snow" d="M898 74 L912 92 L904 90 L898 84 L890 91 L884 89 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L826 92 L850 114 L880 62 L898 86 L920 108 L952 88 L982 120 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
+      <path class="snow" d="M826 92 L837 106 L831 104 L826 99 L820 105 L815 103 Z"/>
+      <path class="snow" d="M880 62 L894 82 L886 79 L880 73 L872 81 L866 78 Z"/>
+      <path class="snow" d="M898 86 L906 97 L901 95 L898 91 L893 96 L889 94 Z"/>
+      <path class="snow" d="M952 88 L962 101 L956 99 L952 94 L947 100 L942 98 Z"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
       </g>
+      <path class="river" d="M986 146 Q978 162 956 174 Q934 186 914 200 L944 200 Q960 188 976 176 Q994 162 998 150 Q1000 144 992 144 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>The alphabet <span class="deva" id="alpha-native">देवनागरी</span></h2>
@@ -1072,15 +1081,18 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>
-      <path class="snow" d="M898 74 L912 92 L904 90 L898 84 L890 91 L884 89 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L826 92 L850 114 L880 62 L898 86 L920 108 L952 88 L982 120 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
+      <path class="snow" d="M826 92 L837 106 L831 104 L826 99 L820 105 L815 103 Z"/>
+      <path class="snow" d="M880 62 L894 82 L886 79 L880 73 L872 81 L866 78 Z"/>
+      <path class="snow" d="M898 86 L906 97 L901 95 L898 91 L893 96 L889 94 Z"/>
+      <path class="snow" d="M952 88 L962 101 L956 99 L952 94 L947 100 L942 98 Z"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
       </g>
+      <path class="river" d="M986 146 Q978 162 956 174 Q934 186 914 200 L944 200 Q960 188 976 176 Q994 162 998 150 Q1000 144 992 144 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>Review <span class="deva" id="review-native">अभ्यास</span></h2>
@@ -1097,15 +1109,18 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>
-      <path class="snow" d="M898 74 L912 92 L904 90 L898 84 L890 91 L884 89 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L826 92 L850 114 L880 62 L898 86 L920 108 L952 88 L982 120 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
+      <path class="snow" d="M826 92 L837 106 L831 104 L826 99 L820 105 L815 103 Z"/>
+      <path class="snow" d="M880 62 L894 82 L886 79 L880 73 L872 81 L866 78 Z"/>
+      <path class="snow" d="M898 86 L906 97 L901 95 L898 91 L893 96 L889 94 Z"/>
+      <path class="snow" d="M952 88 L962 101 L956 99 L952 94 L947 100 L942 98 Z"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
       </g>
+      <path class="river" d="M986 146 Q978 162 956 174 Q934 186 914 200 L944 200 Q960 188 976 176 Q994 162 998 150 Q1000 144 992 144 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>Settings <span class="deva" id="settings-native">सेटिङ</span></h2>
@@ -1152,12 +1167,14 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L742 234 L790 170 L826 210 L872 138 L916 192 L956 124 L1004 184 L1042 148 L1086 198 L1126 164 L1166 206 L1200 196 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M790 170 L802 186 L795 184 L790 178 L783 185 L778 183 Z"/>
-      <path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 158 L858 156 Z"/>
-      <path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 146 L940 143 Z"/>
-      <path class="snow" d="M1042 148 L1054 164 L1047 162 L1042 156 L1035 163 L1030 161 Z"/>
-      <path class="snow" d="M1126 164 L1136 178 L1130 176 L1126 171 L1120 177 L1115 175 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L744 232 L786 178 L820 214 L864 130 L890 168 L914 196 L952 112 L978 150 L1002 186 L1046 142 L1090 200 L1134 158 L1170 208 L1200 198 L1200 320 L0 320 Z"/>
+      <path class="snow" d="M786 178 L798 194 L791 192 L786 186 L779 193 L774 191 Z"/>
+      <path class="snow" d="M864 130 L880 152 L871 149 L864 143 L855 152 L848 149 Z"/>
+      <path class="snow" d="M890 168 L900 181 L894 179 L890 174 L884 180 L879 178 Z"/>
+      <path class="snow" d="M952 112 L970 138 L960 134 L952 127 L942 137 L934 133 Z"/>
+      <path class="snow" d="M978 150 L988 163 L982 161 L978 156 L972 162 L967 160 Z"/>
+      <path class="snow" d="M1046 142 L1058 158 L1051 156 L1046 150 L1039 157 L1034 155 Z"/>
+      <path class="snow" d="M1134 158 L1144 172 L1138 170 L1134 165 L1128 171 L1123 169 Z"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
       <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
       <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
@@ -1166,6 +1183,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
             <g class="near">
         <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
         </g>
+      <path class="river" d="M1008 254 Q996 274 962 286 Q920 298 878 303 Q830 309 806 320 L862 320 Q878 310 918 304 Q960 298 990 286 Q1016 275 1024 258 Q1027 252 1018 250 Z"/>
+      <path class="snow" opacity=".3" d="M1006 262 Q990 278 950 290 Q910 299 862 306 L866 309 Q914 302 954 293 Q996 281 1012 264 Z"/>
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
@@ -1201,12 +1220,14 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L742 234 L790 170 L826 210 L872 138 L916 192 L956 124 L1004 184 L1042 148 L1086 198 L1126 164 L1166 206 L1200 196 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M790 170 L802 186 L795 184 L790 178 L783 185 L778 183 Z"/>
-      <path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 158 L858 156 Z"/>
-      <path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 146 L940 143 Z"/>
-      <path class="snow" d="M1042 148 L1054 164 L1047 162 L1042 156 L1035 163 L1030 161 Z"/>
-      <path class="snow" d="M1126 164 L1136 178 L1130 176 L1126 171 L1120 177 L1115 175 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 242 L744 232 L786 178 L820 214 L864 130 L890 168 L914 196 L952 112 L978 150 L1002 186 L1046 142 L1090 200 L1134 158 L1170 208 L1200 198 L1200 320 L0 320 Z"/>
+      <path class="snow" d="M786 178 L798 194 L791 192 L786 186 L779 193 L774 191 Z"/>
+      <path class="snow" d="M864 130 L880 152 L871 149 L864 143 L855 152 L848 149 Z"/>
+      <path class="snow" d="M890 168 L900 181 L894 179 L890 174 L884 180 L879 178 Z"/>
+      <path class="snow" d="M952 112 L970 138 L960 134 L952 127 L942 137 L934 133 Z"/>
+      <path class="snow" d="M978 150 L988 163 L982 161 L978 156 L972 162 L967 160 Z"/>
+      <path class="snow" d="M1046 142 L1058 158 L1051 156 L1046 150 L1039 157 L1034 155 Z"/>
+      <path class="snow" d="M1134 158 L1144 172 L1138 170 L1134 165 L1128 171 L1123 169 Z"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
       <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
       <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
@@ -1215,6 +1236,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
             <g class="near">
         <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
         </g>
+      <path class="river" d="M1008 254 Q996 274 962 286 Q920 298 878 303 Q830 309 806 320 L862 320 Q878 310 918 304 Q960 298 990 286 Q1016 275 1024 258 Q1027 252 1018 250 Z"/>
+      <path class="snow" opacity=".3" d="M1006 262 Q990 278 950 290 Q910 299 862 306 L866 309 Q914 302 954 293 Q996 281 1012 264 Z"/>
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
@@ -1231,15 +1254,18 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>
-      <path class="snow" d="M898 74 L912 92 L904 90 L898 84 L890 91 L884 89 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 L790 134 L826 92 L850 114 L880 62 L898 86 L920 108 L952 88 L982 120 Q1100 138 1200 142 L1200 200 L0 200 Z"/>
+      <path class="snow" d="M826 92 L837 106 L831 104 L826 99 L820 105 L815 103 Z"/>
+      <path class="snow" d="M880 62 L894 82 L886 79 L880 73 L872 81 L866 78 Z"/>
+      <path class="snow" d="M898 86 L906 97 L901 95 L898 91 L893 96 L889 94 Z"/>
+      <path class="snow" d="M952 88 L962 101 L956 99 L952 94 L947 100 L942 98 Z"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
         <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
         <path d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
       </g>
+      <path class="river" d="M986 146 Q978 162 956 174 Q934 186 914 200 L944 200 Q960 188 976 176 Q994 162 998 150 Q1000 144 992 144 Z"/>
     </svg>
     <div class="pb-inner">
       <h2>Language Intensive <span class="deva">सघन</span></h2>

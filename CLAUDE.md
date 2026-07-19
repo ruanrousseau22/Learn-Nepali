@@ -152,13 +152,18 @@ silhouettes ever. **(3) NO HUMAN FIGURES in scenery art** (Ruan, July
 are welcome; people never. The Lao/Bengali boatmen, Burmese leg-rowers
 and Sinhala stilt-fishermen were all removed (Sinhala's whole stilt
 groups went — bare pole+crossbar would have read as crosses); empty
-boats stayed. The July 2026 Nepali hero refresh (final form, per Ruan —
-"make it look like the Pashto one"): the village house is REMOVED and
-the hero + band now MIRROR THE PASHTO COMPOSITION — one calm low far
-ridge sweeping x0→~730 (band →~775), then ALL the bold snow-capped
-peaks rising right of it; ONE continuous terraced mid band edge-to-edge
-(no mid-page gap); gentle continuous green near. Only the palette and
-snow peaks make it Nepali. Edit via replace_all: the hero markup exists
+boats stayed. The July 2026 Nepali hero refresh (per Ruan —
+Pashto-LIKE composition, then deliberately DIFFERENTIATED in round 2,
+July 2026): the village house is REMOVED; one calm low far ridge sweeps
+x0→~730 (band →~775) with the bold peaks right of it, ONE continuous
+terraced mid band edge-to-edge, gentle continuous green near — but the
+peaks are a STEPPED HIMALAYAN MASSIF (double summits with snow-capped
+shoulders; 7 hero caps / 4 band caps, tallest apex y112) and a GLACIAL
+RIVER (class `river`, fill var(--river): light #8FBADC / dark #31536E
+defined beside the scenery vars; the hero adds a snow-opacity sparkle
+streak) descends from the peak valley across the mid + near layers to
+the bottom edge — the river paths sit AFTER the near group so they
+overlay the fields. Edit via replace_all: the hero markup exists
 as THREE verbatim copies (home + both faith pages) and the band as FOUR
 verbatim copies.
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
