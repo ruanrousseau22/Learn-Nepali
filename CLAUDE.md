@@ -25,7 +25,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   dropped at 12 zones, July 2026) — plus **Mongolian** live in EARLY
   ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/mn.js`, July 2026
   — Cyrillic; growing zone by zone like Khmer did) and **Bengali** live in
-  EARLY ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/bn.js`, July
+  EARLY ACCESS at **6 zones / 42 topics / 210 lessons** (`lang/bn.js`, July
   2026 — Kolkata standard; growing zone by zone). Plus the Religious
   studies mode (Nepali). ALL EIGHT offered languages now have live courses.
   Read the "Multi-language expansion" section below before touching any of it.
@@ -50,7 +50,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - `audio-ps/` + `audio_strings_ps.json` — Pashto clips, manifest and strings
   source (824 strings via `ps-AF-GulNawazNeural`)
 - `audio-bn/` + `audio_strings_bn.json` — Bengali clips, manifest and strings
-  source (186 strings via `bn-IN-BashkarNeural`; 183 clips — the bare signs
+  source (635 strings via `bn-IN-BashkarNeural`; the bare signs
   ং ঃ ঁ get no edge-tts audio → device-TTS fallback, same as Burmese ဎ)
 - `audio-mn/` + `audio_strings_mn.json` — Mongolian clips, manifest and
   strings source (142 clips for 143 strings via `mn-MN-BataaNeural`: the
@@ -555,8 +555,8 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   to-be & байна sentences, verbs + the -x infinitive, want/like, food &
   the ger kitchen (сүүтэй цай!), family, cases little by little —
   research each word before shipping.
-- **Bengali (`lang/bn.js`) LIVE in EARLY ACCESS at 2 zones / 14 topics /
-  70 lessons** (July 2026, Bengali-driven, research-first; verified against
+- **Bengali (`lang/bn.js`) LIVE in EARLY ACCESS at 6 zones / 42 topics /
+  210 lessons** (July 2026, Bengali-driven, research-first; verified against
   the Wikivoyage Bengali phrasebook — incl. the Akademi -ো teen spellings
   এগারো…চোদ্দো — and Wikipedia "Bengali alphabet"; added outside the
   original phase roadmap because Ruan's friends are going to ministry work
@@ -580,6 +580,34 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   (হ্যাঁ/না/ধন্যবাদ/মাফ করবেন/ঠিক আছে/আচ্ছা), zero-copula intros আমার
   নাম… + আপনার নাম কী?, time words আজ/কাল (kal = tomorrow AND
   yesterday!) + গতকাল/আগামীকাল, teens এগারো…বিশ + market কুড়ি.
+  Zones 3–6 (July 2026): Zone 3 "Building sentences" — zero-copula
+  demonstratives এটা/ওটা/সেটা, the PERSON-based present endings -i/-o/
+  -en/-e (করি করো করেন করে; খাওয়া = eat AND drink), আছে/নেই have-and-
+  exist + এখানে/ওখানে, negation verb+না / নয় / জানি না-বুঝি না, yes-no
+  কি (vs কী!) + echo answers, question words কোথায়/কখন/কেন/কোনটা,
+  want/like চাই + -তে চাই + dative আমার…ভালো লাগে. Zone 4 "Cases &
+  places" — town words, locative -এ/-তে/-য়, possessive -র/-এর + কার,
+  object -কে + কাকে, positions উপরে/নিচে/ভিতরে/বাইরে/কাছে/দূরে +
+  টেবিলের উপরে, present continuous -ছি/-ছ/-ছেন/-ছে (কোথায় যাচ্ছ?),
+  food & ordering (এক কাপ চা দিন; দিন=give AND day). Zone 5 "Numbers &
+  daily life" — tens to একশো (ষাট 60 vs সাত 7 = the retroflex payoff!),
+  দাম কত + সস্তা/দামি, the -টা classifier (একটা/দুটো/তিনটে, বইটা the,
+  -গুলো plural), shopping লাগবে/নেব/দেবেন/কম করুন/আর/ব্যাস, clock কটা
+  বাজে + সাড়ে, weekdays -বার + আজ কী বার, family ভাই/বোন (younger; 
+  দাদা/দিদি elder) + ছেলে/মেয়ে/স্বামী/স্ত্রী/পরিবার. Zone 6
+  "Describing things" — invariant adjectives, রং colors (হলুদ = yellow
+  AND turmeric), চেয়ে/সবচেয়ে comparisons, dative feelings মন খারাপ/
+  খিদে-তেষ্টা পেয়েছে/ঘুম পাচ্ছে, weather গরম/ঠান্ডা/বৃষ্টি/বর্ষা, body,
+  health ব্যথা/জ্বর/ডাক্তার/ওষুধ. **Node-title register (Ruan, July
+  2026): PROFESSIONAL, standard-curriculum terminology** — "The inherent
+  vowel", "Vowel signs", "Dental & retroflex", "Aspirated consonants",
+  "The three sibilants", "Personal pronouns", "Courtesy expressions";
+  never cutesy names ("the vowel dance" was retitled). The mix step is
+  titled "Mixed practice". Apply this register to all future Bengali
+  zones. Zone 7+ candidates: past tense -লাম/-লে/-লেন/-ল, future -ব/
+  -বে/-বেন, postpositions সঙ্গে/জন্য/পরে/আগে, transport & the Kolkata
+  metro/tram, hobbies, months & festivals as cultural names — research
+  each before shipping.
   Romanization scheme documented at the top of `lang/bn.js` (ASCII;
   inherent vowel & অ AND ও all written "o" — audio carries the ô/o
   split; letter tiles teach soft-vs-hard t/d, word roms collapse both to
