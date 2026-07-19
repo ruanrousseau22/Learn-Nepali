@@ -24,9 +24,9 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `lang/ps.js` — the app's first RIGHT-TO-LEFT course; early-access label
   dropped at 12 zones, July 2026) — plus **Mongolian** live in EARLY
   ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/mn.js`, July 2026
-  — Cyrillic; growing zone by zone like Khmer did) and **Bengali** live in
-  EARLY ACCESS at **6 zones / 42 topics / 210 lessons** (`lang/bn.js`, July
-  2026 — Kolkata standard; growing zone by zone). Plus the Religious
+  — Cyrillic; growing zone by zone like Khmer did) and **Bengali**
+  COMPLETE at **12 zones / 84 topics / 420 lessons** (`lang/bn.js`, July
+  2026 — Kolkata standard; early-access label dropped at 12 zones). Plus the Religious
   studies mode (Nepali). ALL EIGHT offered languages now have live courses.
   Read the "Multi-language expansion" section below before touching any of it.
 
@@ -50,7 +50,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - `audio-ps/` + `audio_strings_ps.json` — Pashto clips, manifest and strings
   source (824 strings via `ps-AF-GulNawazNeural`)
 - `audio-bn/` + `audio_strings_bn.json` — Bengali clips, manifest and strings
-  source (635 strings via `bn-IN-BashkarNeural`; the bare signs
+  source (1380 strings via `bn-IN-BashkarNeural`; the bare signs
   ং ঃ ঁ get no edge-tts audio → device-TTS fallback, same as Burmese ဎ)
 - `audio-mn/` + `audio_strings_mn.json` — Mongolian clips, manifest and
   strings source (142 clips for 143 strings via `mn-MN-BataaNeural`: the
@@ -555,8 +555,8 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   to-be & байна sentences, verbs + the -x infinitive, want/like, food &
   the ger kitchen (сүүтэй цай!), family, cases little by little —
   research each word before shipping.
-- **Bengali (`lang/bn.js`) LIVE in EARLY ACCESS at 6 zones / 42 topics /
-  210 lessons** (July 2026, Bengali-driven, research-first; verified against
+- **Bengali (`lang/bn.js`) COMPLETE at 12 zones / 84 topics / 420
+  lessons** (early-access label dropped at 12 zones, July 2026) (July 2026, Bengali-driven, research-first; verified against
   the Wikivoyage Bengali phrasebook — incl. the Akademi -ো teen spellings
   এগারো…চোদ্দো — and Wikipedia "Bengali alphabet"; added outside the
   original phase roadmap because Ruan's friends are going to ministry work
@@ -603,11 +603,40 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   vowel", "Vowel signs", "Dental & retroflex", "Aspirated consonants",
   "The three sibilants", "Personal pronouns", "Courtesy expressions";
   never cutesy names ("the vowel dance" was retitled). The mix step is
-  titled "Mixed practice". Apply this register to all future Bengali
-  zones. Zone 7+ candidates: past tense -লাম/-লে/-লেন/-ল, future -ব/
-  -বে/-বেন, postpositions সঙ্গে/জন্য/পরে/আগে, transport & the Kolkata
-  metro/tram, hobbies, months & festivals as cultural names — research
-  each before shipping.
+  titled "Mixed practice". **This register is now the HOUSE STANDARD for
+  every language** (Ruan, July 2026): a sweep retitled the casual tier
+  across Khmer, Burmese, Sinhala, Pashto and Mongolian (52 nodes — e.g.
+  "The magic ឱ្យ"→"The verb ឱ្យ", "Hissing sounds"→"The s family",
+  "Letters that hum"→"The half-nasals", "The past flip"→"The ergative
+  past", "The reliable crew"→"The familiar consonants"). Descriptive
+  communicative titles ("Directions", "At the hotel", "Tell your story")
+  and factual cultural ones ("Tea culture", "Guests & melmastia", "At
+  the kadee") stay; linguistics terms are used where they exist
+  ("false friends" is a real term and stays). Retitles are audio-neutral
+  (titles are never spoken). The Nepali main course was already
+  professional; the Nepali Intensive keeps Ruan's own ministry titles. Zones 7–12 (July 2026): Z7 "Past & future" — simple past -লাম (গেলাম
+  stem-change), perfect -েছি + the beloved ভাত খেয়েছ? greeting, future
+  -ব/-বে/-বেন + চা খাবেন?, sequencing প্রথমে/তারপর/শেষে, can -তে পারি,
+  need/must দরকার + আমাকে -তে হবে (dative doer!), polite -উন requests.
+  Z8 "Getting around" — the tram!, ভাড়া/উঠি/নামি + এখানে নামব,
+  directions, tickets + কখন ছাড়বে-পৌঁছাবে + -টায় at-times, loan months
+  + এই/গত/আগামী, থাকি + কোথায় থাকো?, phone. Z9 "Conversation" —
+  connectors, যদি…তাহলে + না হলে, ভাবি/আমার মনে হয়/সত্যি, জানি-vs-চিনি
+  + মনে আছে/ভুলে গেছি/বুঝেছি, work, learner lifelines (আস্তে-আবার বলুন,
+  বাংলায় কী বলে?, বাংলা শিখছি), help (sober). Z10 "Everyday life" —
+  রোজ routine, home rooms + the ছাদ, hobbies, পড়ি-লিখি-শিখি + ছবি,
+  small-talk trio বয়স-বিয়ে-দেশ, hospitality (অতিথি, আরেকটু, খেয়ে যান,
+  আবার আসবেন), plans চলো/দেখা হবে/ব্যস্ত-ফাঁকা. Z11 "Nature & living"
+  — নদী/পাহাড়/সমুদ্র, animals incl. বাঘ, fruits + টক/ঝাল, clothing +
+  পরি-vs-পড়ি homograph + জুতো খোলো, kitchen + চিনি homograph,
+  quantities কেজি/অনেক/কিছু, times of day ভোর→রাত. Z12 "Making it
+  home" — হাজার/লাখ/কোটি, errands (চুল কাটাতে চাই causative), 
+  emergencies বাঁচাও/তাড়াতাড়ি/ভয় নেই (sober), duration কতদিন-কতক্ষণ +
+  ধরে-vs-থেকে, wishes (শুভ জন্মদিন, ভালো থেকো, স্বাগতম), postpositions
+  সঙ্গে/জন্য/পর্যন্ত, capstone আমি বাংলা ভালোবাসি. Zone 13+ candidates:
+  past habitual -তাম, compound verbs (নিয়ে যাওয়া family), relative
+  যে-clauses, Bengali-calendar months as cultural names — research
+  before shipping.
   Romanization scheme documented at the top of `lang/bn.js` (ASCII;
   inherent vowel & অ AND ও all written "o" — audio carries the ô/o
   split; letter tiles teach soft-vs-hard t/d, word roms collapse both to
