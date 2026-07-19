@@ -217,7 +217,7 @@ const MN_Z1=[
 {t:'match',q:'Match letter and sound',pairs:[['Нн','n'],['Рр','r'],['Сс','s'],['Вв','v'],['Хх','kh']]},
 {t:'mc',q:'В sounds like…',o:['v','b','w','p'],a:0}]},
 
-{id:'mn_c4',title:'The reliable crew',step:'learn',meta:'Б Г Д З Л М Т',vocab:[['Бб','b','consonant: b'],['Гг','g','consonant: g'],['Дд','d','consonant: d'],['Зз','z','consonant: z'],['Лл','l','consonant: l'],['Мм','m','consonant: m'],['Тт','t','consonant: t']],ex:[
+{id:'mn_c4',title:'The familiar consonants',step:'learn',meta:'Б Г Д З Л М Т',vocab:[['Бб','b','consonant: b'],['Гг','g','consonant: g'],['Дд','d','consonant: d'],['Зз','z','consonant: z'],['Лл','l','consonant: l'],['Мм','m','consonant: m'],['Тт','t','consonant: t']],ex:[
 {t:'note',tag:'These behave',q:'Б Г Д З Л М Т',body:'<p>Good news — these seven do what you expect: <span class="deva">Б</span> b, <span class="deva">Г</span> g, <span class="deva">Д</span> d, <span class="deva">З</span> z (dz-ish), <span class="deva">Л</span> l, <span class="deva">М</span> m, <span class="deva">Т</span> t.</p><p><span class="deva">би</span> = <b>bi</b> "I", <span class="deva">та</span> = <b>ta</b> "you", <span class="deva">гэр</span> = <b>ger</b> — the round felt home of the steppe!</p>',eg:[['би','bi','I'],['та','ta','you'],['гэр','ger','ger / home']]},
 {t:'mc',q:'What sound does this letter make?',d:'Бб',o:['b','v','p','d'],a:0},
 {t:'mc',q:'And this one?',d:'Гг',o:['g','j','k','z'],a:0},
@@ -257,7 +257,7 @@ const MN_Z1=[
 {t:'match',q:'Match word and meaning',pairs:[['гэр','home'],['ном','book'],['зам','road'],['мал','livestock'],['би','I']]},
 {t:'mc',q:'Which seven letters "behave"?',o:['Б Г Д З Л М Т','Н Р С В Х','Ө Ү Ы Й','Е Ё Ю Я'],a:0}]},
 
-{id:'mn_c5',title:'The hushers & ts',step:'learn',meta:'Ж Ч Ш Ц',vocab:[['Жж','j','consonant: j'],['Чч','ch','consonant: ch'],['Шш','sh','consonant: sh'],['Цц','ts','consonant: ts']],ex:[
+{id:'mn_c5',title:'Sibilants & ц',step:'learn',meta:'Ж Ч Ш Ц',vocab:[['Жж','j','consonant: j'],['Чч','ch','consonant: ch'],['Шш','sh','consonant: sh'],['Цц','ts','consonant: ts']],ex:[
 {t:'note',tag:'The hushing row',q:'Ж Ч Ш',body:'<p><span class="deva">Ж</span> = <b>j</b> as in "jam", <span class="deva">Ч</span> = <b>ch</b> as in "chai", <span class="deva">Ш</span> = <b>sh</b> as in "shah". <span class="deva">чи</span> = <b>chi</b> "you (informal)"!</p>',eg:[['Жж','j','j as in jam'],['Чч','ch','ch as in chai'],['Шш','sh','sh as in shah']]},
 {t:'mc',q:'What sound does this letter make?',d:'Жж',o:['j','z','ch','sh'],a:0},
 {t:'mc',q:'And this one?',d:'Шш',o:['sh','ch','s','ts'],a:0},
@@ -297,7 +297,7 @@ const MN_Z1=[
 {t:'match',q:'Match letter and sound',pairs:[['Жж','j'],['Чч','ch'],['Шш','sh'],['Цц','ts']]},
 {t:'mc',q:'ц opens which beloved word?',o:['цай (tea)','гэр (home)','нар (sun)','ном (book)'],a:0}]},
 
-{id:'mn_c6',title:'The y-team & loans',step:'learn',meta:'Е Ё Ю Я + К П Ф',vocab:[['Ее','ye','vowel: ye'],['Ёё','yo','vowel: yo'],['Юю','yu','vowel: yu'],['Яя','ya','vowel: ya'],['Кк','k','consonant: k (loan)'],['Пп','p','consonant: p (loan)']],ex:[
+{id:'mn_c6',title:'Iotated vowels & loans',step:'learn',meta:'Е Ё Ю Я + К П Ф',vocab:[['Ее','ye','vowel: ye'],['Ёё','yo','vowel: yo'],['Юю','yu','vowel: yu'],['Яя','ya','vowel: ya'],['Кк','k','consonant: k (loan)'],['Пп','p','consonant: p (loan)']],ex:[
 {t:'note',tag:'Y + vowel in one letter',q:'Е Ё Ю Я',body:'<p>Four letters pack a y-glide + vowel: <span class="deva">Е</span> <b>ye</b>, <span class="deva">Ё</span> <b>yo</b>, <span class="deva">Ю</span> <b>yu</b>, <span class="deva">Я</span> <b>ya</b>. <span class="deva">хоёр</span> <b>khoyor</b> (two) hides a Ё; <span class="deva">ес</span> <b>yes</b> = nine!</p>',eg:[['Ёё','yo','as in yoghurt'],['Яя','ya','as in yard'],['ес','yes','nine']]},
 {t:'mc',q:'What sound does this letter make?',d:'Яя',o:['ya','ye','yo','yu'],a:0},
 {t:'mc',q:'And this one?',d:'Ёё',o:['yo','ya','yu','ye'],a:0},

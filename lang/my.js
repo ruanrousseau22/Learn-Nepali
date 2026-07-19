@@ -79,7 +79,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match letter and sound',pairs:[['က','ka'],['ခ','hka'],['ဂ','ga'],['င','nga']]}]},
 
 /* --- Topic 2: sibilants စ ဆ ဇ ည --- */
-{id:'my_c2',title:'Hissing sounds',step:'learn',meta:'စ ဆ ဇ ည',vocab:[['စ','sa','consonant: s'],['ဆ','hsa','consonant: s with a puff'],['ဇ','za','consonant: z'],['ည','nya','consonant: ny']],ex:[
+{id:'my_c2',title:'The s family',step:'learn',meta:'စ ဆ ဇ ည',vocab:[['စ','sa','consonant: s'],['ဆ','hsa','consonant: s with a puff'],['ဇ','za','consonant: z'],['ည','nya','consonant: ny']],ex:[
 {t:'note',tag:'Hiss it',q:'စ and ဆ',body:'<p><span class="deva">စ</span> = <b>sa</b>, the s of "see".</p><p><span class="deva">ဆ</span> = <b>hsa</b> — s said with a <b>puff of air</b> (there is our h again).</p>',eg:[['စ','sa','s as in see'],['ဆ','hsa','s + a puff']]},
 {t:'mc',q:'What sound does this letter make?',d:'စ',o:['sa','hsa','za','nya'],a:0},
 {t:'mc',q:'And this one?',d:'ဆ',o:['hsa','sa','za','nya'],a:0},
@@ -1766,7 +1766,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match line and meaning',pairs:[['စားနေတယ်','is eating'],['လာနေတယ်','is coming'],['လုပ်နေတယ်','is working'],['ဘာလုပ်နေလဲ','what are you doing?']]}]},
 
 /* --- Topic 3: ever / have-you-ever ဖူး --- */
-{id:'my_ever',title:'Ever done it? ဖူး',step:'learn',meta:'သွားဖူးတယ် — life experience',vocab:[['သွားဖူးတယ်','thwa hpu de','have been (there)'],['စားဖူးတယ်','sa hpu de','have eaten / tried'],['မစားဖူးဘူး','ma sa hpu bu','have never eaten'],['ရန်ကုန်ကိုသွားဖူးလား','yangoun go thwa hpu la','have you ever been to Yangon?'],['တစ်ခါ','ta hka','once / one time']],ex:[
+{id:'my_ever',title:'Ever: ဖူး',step:'learn',meta:'သွားဖူးတယ် — life experience',vocab:[['သွားဖူးတယ်','thwa hpu de','have been (there)'],['စားဖူးတယ်','sa hpu de','have eaten / tried'],['မစားဖူးဘူး','ma sa hpu bu','have never eaten'],['ရန်ကုန်ကိုသွားဖူးလား','yangoun go thwa hpu la','have you ever been to Yangon?'],['တစ်ခါ','ta hka','once / one time']],ex:[
 {t:'note',tag:'Life experience',q:'verb + ဖူး',body:'<p><span class="deva">ဖူး</span> <b>hpu</b> marks "ever, at least once in life": <span class="deva">သွားဖူးတယ်</span> — I have been there · <span class="deva">စားဖူးတယ်</span> — I have tried (eating) it.</p><p>The great traveler question: <span class="deva">ရန်ကုန်ကိုသွားဖူးလား</span> — Have you ever been to Yangon?</p>',eg:[['သွားဖူးတယ်','thwa hpu de','have been'],['စားဖူးတယ်','sa hpu de','have tried']]},
 {t:'mc',q:'Which means "have been (there)"?',o:['သွားဖူးတယ်','သွားနေတယ်','သွားခဲ့တယ်','သွားမယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'စားဖူးတယ်',o:['have eaten / tried it','am eating','ate yesterday','will eat'],a:0},
@@ -1805,7 +1805,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match line and meaning',pairs:[['စားဖူးတယ်','have tried'],['မစားဖူးဘူး','never eaten'],['တစ်ခါ','once'],['သွားဖူးတယ်','have been']]}]},
 
 /* --- Topic 4: already / change of state ပြီ --- */
-{id:'my_pri',title:'Already! ပြီ',step:'learn',meta:'ရောက်ပြီ စားပြီးပြီ',vocab:[['ပြီးပြီ','pi bi','finished / done'],['စားပြီးပြီ','sa pi bi','already eaten'],['ရောက်ပြီ','yauq pi','arrived / here now'],['ရပြီ','ya bi','got it / OK now'],['ရောက်တယ်','yauq de','arrive / reach']],ex:[
+{id:'my_pri',title:'Already: ပြီ',step:'learn',meta:'ရောက်ပြီ စားပြီးပြီ',vocab:[['ပြီးပြီ','pi bi','finished / done'],['စားပြီးပြီ','sa pi bi','already eaten'],['ရောက်ပြီ','yauq pi','arrived / here now'],['ရပြီ','ya bi','got it / OK now'],['ရောက်တယ်','yauq de','arrive / reach']],ex:[
 {t:'note',tag:'The news ending',q:'…ပြီ',body:'<p><span class="deva">ပြီ</span> announces <b>news — something has just become true</b>: <span class="deva">ရောက်ပြီ</span> <b>yauq pi</b> "(we have) arrived!" (<span class="deva">ရောက်</span> = arrive) · <span class="deva">ရပြီ</span> "got it / OK now!"</p>',eg:[['ရောက်ပြီ','yauq pi','arrived!'],['ရပြီ','ya bi','got it / OK now']]},
 {t:'mc',q:'The taxi stops at your street. The driver says…',o:['ရောက်ပြီ','သွားမယ်','ထွက်မယ်','ရပြီလား'],a:0},
 {t:'mc',q:'What does this mean?',d:'ရပြီ',o:['got it / OK now','arrived','finished eating','not yet'],a:0},
@@ -1966,7 +1966,7 @@ const MY_LESSONS=[
    far & near, tickets & stations, hotel (ရှိ have/exist), months &
    dates, phone. */
 /* --- Topic 1: vehicles & riding --- */
-{id:'my_go',title:'Wheels',step:'learn',meta:'ကား ရထား ဆိုင်ကယ် + စီး',vocab:[['ကား','ka','car / bus'],['ဘတ်စ်ကား','baq sa ka','bus'],['တက္ကစီ','teq ka si','taxi'],['ဆိုင်ကယ်','hsain keh','motorbike'],['ရထား','ya hta','train'],['ကားစီးတယ်','ka si de','ride a car / bus']],ex:[
+{id:'my_go',title:'Transport',step:'learn',meta:'ကား ရထား ဆိုင်ကယ် + စီး',vocab:[['ကား','ka','car / bus'],['ဘတ်စ်ကား','baq sa ka','bus'],['တက္ကစီ','teq ka si','taxi'],['ဆိုင်ကယ်','hsain keh','motorbike'],['ရထား','ya hta','train'],['ကားစီးတယ်','ka si de','ride a car / bus']],ex:[
 {t:'note',tag:'Zone 8',q:'Riding, not driving',body:'<p>Time to move! <span class="deva">ကား</span> <b>ka</b> = car (often any bus too) · <span class="deva">ဘတ်စ်ကား</span> bus · <span class="deva">တက္ကစီ</span> taxi · <span class="deva">ဆိုင်ကယ်</span> motorbike · <span class="deva">ရထား</span> train.</p><p>You <b>ride</b> them all: <span class="deva">စီးတယ်</span> <b>si de</b> — <span class="deva">ကားစီးတယ်</span> take the bus.</p>',eg:[['ကား','ka','car / bus'],['ရထား','ya hta','train'],['ကားစီးတယ်','ka si de','ride a car / bus']]},
 {t:'mc',q:'Which means "train"?',o:['ရထား','ကား','တက္ကစီ','ဆိုင်ကယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'ကားစီးတယ်',o:['ride a car / bus','drive a car','buy a car','wash a car'],a:0},
@@ -2478,7 +2478,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match word and meaning',pairs:[['ထတယ်','get up'],['အိပ်တယ်','sleep'],['တံခါး','door'],['စားပွဲ','table']]}]},
 
 /* --- Topic 7: help & staying safe --- */
-{id:'my_help',title:'Help!',step:'learn',meta:'ကူညီပါ ရဲ ဆေးရုံ သတိထားပါ',vocab:[['ကူညီပါ','ku nyi ba','help (me), please'],['ရဲ','yeh','police'],['ဆေးရုံ','hsei youn','hospital'],['သတိထားပါ','thadi hta ba','be careful!'],['ပျောက်သွားပြီ','pyauq thwa bi','(it) is lost']],ex:[
+{id:'my_help',title:'Help & safety',step:'learn',meta:'ကူညီပါ ရဲ ဆေးရုံ သတိထားပါ',vocab:[['ကူညီပါ','ku nyi ba','help (me), please'],['ရဲ','yeh','police'],['ဆေးရုံ','hsei youn','hospital'],['သတိထားပါ','thadi hta ba','be careful!'],['ပျောက်သွားပြီ','pyauq thwa bi','(it) is lost']],ex:[
 {t:'note',tag:'When it matters',q:'ကူညီပါ',body:'<p>The one to memorise cold: <span class="deva">ကူညီပါ</span> <b>ku nyi ba</b> — help me, please. (ကူညီ = help + our ပါ.)</p><p>Who to find: <span class="deva">ရဲ</span> <b>yeh</b> police · <span class="deva">ဆေးရုံ</span> <b>hsei youn</b> hospital (a building full of ဆေး!).</p>',eg:[['ကူညီပါ','ku nyi ba','help, please'],['ရဲ','yeh','police'],['ဆေးရုံ','hsei youn','hospital']]},
 {t:'mc',q:'Which means "help (me), please"?',o:['ကူညီပါ','သတိထားပါ','ခဏစောင့်ပါ','ပေးပါ'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဆေးရုံ',o:['hospital','pharmacy','clinic doctor','medicine'],a:0},
@@ -2561,7 +2561,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match line and meaning',pairs:[['အရမ်း','very'],['သိပ်မကြိုက်ဘူး','not much'],['နည်းနည်းပဲ','just a little'],['အရမ်းကြိုက်တယ်','really like']]}]},
 
 /* --- Topic 2: close family --- */
-{id:'my_fam2',title:'Mum & dad',step:'learn',meta:'အမေ အဖေ သား သမီး',vocab:[['အမေ','a me','mother'],['အဖေ','a hpe','father'],['သား','tha','son'],['သမီး','thami','daughter'],['ကလေးရှိလား','hkalei shi la','do you have children?']],ex:[
+{id:'my_fam2',title:'Family',step:'learn',meta:'အမေ အဖေ သား သမီး',vocab:[['အမေ','a me','mother'],['အဖေ','a hpe','father'],['သား','tha','son'],['သမီး','thami','daughter'],['ကလေးရှိလား','hkalei shi la','do you have children?']],ex:[
 {t:'note',tag:'The inner circle',q:'အမေ · အဖေ',body:'<p><span class="deva">အမေ</span> <b>a me</b> = mother · <span class="deva">အဖေ</span> <b>a hpe</b> = father. Like everywhere on earth, among the first words Burmese children say.</p>',eg:[['အမေ','a me','mother'],['အဖေ','a hpe','father']]},
 {t:'mc',q:'Which means "mother"?',o:['အမေ','အဖေ','အစ်မ','ဒေါ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'အဖေ',o:['father','mother','uncle','older brother'],a:0},
@@ -2600,7 +2600,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match person and meaning',pairs:[['အမေ','mother'],['အဖေ','father'],['သား','son'],['သမီး','daughter']]}]},
 
 /* --- Topic 3: age & married — the small-talk trio --- */
-{id:'my_age',title:'Age & married?',step:'learn',meta:'အသက် အိမ်ထောင် — friendly questions',vocab:[['အသက်','a theq','age'],['အသက်ဘယ်လောက်ရှိပြီလဲ','a theq beh lauq shi bi leh','how old are you?'],['အိမ်ထောင်ရှိလား','ein daung shi la','are you married?'],['အိမ်ထောင်ရှိတယ်','ein daung shi de','(I) am married'],['အိမ်ထောင်မရှိဘူး','ein daung ma shi bu','(I) am not married']],ex:[
+{id:'my_age',title:'Small talk',step:'learn',meta:'အသက် အိမ်ထောင် — friendly questions',vocab:[['အသက်','a theq','age'],['အသက်ဘယ်လောက်ရှိပြီလဲ','a theq beh lauq shi bi leh','how old are you?'],['အိမ်ထောင်ရှိလား','ein daung shi la','are you married?'],['အိမ်ထောင်ရှိတယ်','ein daung shi de','(I) am married'],['အိမ်ထောင်မရှိဘူး','ein daung ma shi bu','(I) am not married']],ex:[
 {t:'note',tag:'Not rude here!',q:'Age & marriage',body:'<p>In Myanmar, asking age and marriage is <b>friendly interest</b>, not nosiness — it helps people pick the right kin term for you (ဦး or ကို? ဒေါ် or မ?).</p><p><span class="deva">အသက်</span> <b>a theq</b> = age: <span class="deva">အသက်ဘယ်လောက်ရှိပြီလဲ</span> — how old are you? (Literally: age how-much have-already?)</p>',eg:[['အသက်','a theq','age'],['အသက်ဘယ်လောက်ရှိပြီလဲ','a theq beh lauq shi bi leh','how old are you?']]},
 {t:'mc',q:'Which means "age"?',o:['အသက်','အသစ်','နှစ်','အချိန်'],a:0},
 {t:'mc',q:'What does this mean?',d:'အသက်ဘယ်လောက်ရှိပြီလဲ',o:['how old are you?','how tall are you?','when were you born?','how long have you stayed?'],a:0},
@@ -2838,7 +2838,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match word and meaning',pairs:[['လိုတယ်','need'],['ပေးတယ်','give'],['ယူတယ်','take'],['မလိုဘူး','no need']]}]},
 
 /* --- Topic 2: slowly & quickly --- */
-{id:'my_manner',title:'Slow down!',step:'learn',meta:'ဖြည်းဖြည်း မြန်မြန်',vocab:[['ဖြည်းဖြည်း','hpyei hpyei','slowly'],['မြန်မြန်','myan myan','quickly'],['ဖြည်းဖြည်းပြောပါ','hpyei hpyei pyaw ba','please speak slowly'],['မြန်တယ်','myan de','is fast'],['နှေးတယ်','hnei de','is slow']],ex:[
+{id:'my_manner',title:'Learner phrases',step:'learn',meta:'ဖြည်းဖြည်း မြန်မြန်',vocab:[['ဖြည်းဖြည်း','hpyei hpyei','slowly'],['မြန်မြန်','myan myan','quickly'],['ဖြည်းဖြည်းပြောပါ','hpyei hpyei pyaw ba','please speak slowly'],['မြန်တယ်','myan de','is fast'],['နှေးတယ်','hnei de','is slow']],ex:[
 {t:'note',tag:'Double it',q:'ဖြည်းဖြည်း · မြန်မြန်',body:'<p>Burmese makes "how you do it" by <b>doubling</b>: <span class="deva">မြန်တယ်</span> fast → <span class="deva">မြန်မြန်</span> quickly · <span class="deva">ဖြည်းဖြည်း</span> <b>hpyei hpyei</b> slowly.</p><p>The learner magic phrase: <span class="deva">ဖြည်းဖြည်းပြောပါ</span> — please speak slowly!</p>',eg:[['ဖြည်းဖြည်း','hpyei hpyei','slowly'],['မြန်မြန်','myan myan','quickly'],['ဖြည်းဖြည်းပြောပါ','hpyei hpyei pyaw ba','please speak slowly']]},
 {t:'mc',q:'Which means "slowly"?',o:['ဖြည်းဖြည်း','မြန်မြန်','နည်းနည်း','အရမ်း'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဖြည်းဖြည်းပြောပါ',o:['please speak slowly','please speak up','please say it again','please be quiet'],a:0},
@@ -2877,7 +2877,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match word and meaning',pairs:[['ဖြည်းဖြည်း','slowly'],['မြန်မြန်','quickly'],['မြန်တယ်','is fast'],['ဖြည်းဖြည်းပြောပါ','please speak slowly']]}]},
 
 /* --- Topic 3: clothes & the longyi --- */
-{id:'my_wear',title:'The longyi',step:'learn',meta:'အင်္ကျီ လုံချည် ဖိနပ် + ဝတ်',vocab:[['အင်္ကျီ','in ji','shirt / top'],['လုံချည်','loun ji','longyi (sarong)'],['ဖိနပ်','hpanaq','shoes / sandals'],['ဝတ်တယ်','wuq de','wear'],['ဖိနပ်ချွတ်ပါ','hpanaq chuq ba','please take off (your) shoes']],ex:[
+{id:'my_wear',title:'Clothing & the longyi',step:'learn',meta:'အင်္ကျီ လုံချည် ဖိနပ် + ဝတ်',vocab:[['အင်္ကျီ','in ji','shirt / top'],['လုံချည်','loun ji','longyi (sarong)'],['ဖိနပ်','hpanaq','shoes / sandals'],['ဝတ်တယ်','wuq de','wear'],['ဖိနပ်ချွတ်ပါ','hpanaq chuq ba','please take off (your) shoes']],ex:[
 {t:'note',tag:'Dress like a local',q:'အင်္ကျီ · လုံချည်',body:'<p><span class="deva">အင်္ကျီ</span> <b>in ji</b> = shirt/top. <span class="deva">လုံချည်</span> <b>loun ji</b> = the longyi — the wrap-around sarong worn by men and women all over Myanmar. Wear one and watch faces light up.</p><p><span class="deva">ဝတ်တယ်</span> <b>wuq de</b> = wear: <span class="deva">လုံချည်ဝတ်တယ်</span>.</p>',eg:[['အင်္ကျီ','in ji','shirt'],['လုံချည်','loun ji','longyi'],['ဝတ်တယ်','wuq de','wear']]},
 {t:'mc',q:'Which is the famous Myanmar sarong?',o:['လုံချည်','အင်္ကျီ','ဖိနပ်','ခွက်'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဝတ်တယ်',o:['wear','wash','buy clothes','take off'],a:0},
@@ -2994,7 +2994,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match place and meaning',pairs:[['တောင်','mountain'],['ပင်လယ်','sea'],['ရွာ','village'],['လမ်း','road']]}]},
 
 /* --- Topic 6: remember & forget --- */
-{id:'my_mem',title:'Remember me?',step:'learn',meta:'မေ့ မှတ်မိ သတိရ',vocab:[['မေ့သွားပြီ','meh thwa bi','(I) forgot'],['မှတ်မိတယ်','hmaq mi de','remember'],['မမှတ်မိဘူး','ma hmaq mi bu','do not remember'],['သတိရတယ်','thadi ya de','miss (someone) / think of'],['နာမည်မေ့သွားပြီ','nameh meh thwa bi','(I) forgot the name']],ex:[
+{id:'my_mem',title:'Remember & forget',step:'learn',meta:'မေ့ မှတ်မိ သတိရ',vocab:[['မေ့သွားပြီ','meh thwa bi','(I) forgot'],['မှတ်မိတယ်','hmaq mi de','remember'],['မမှတ်မိဘူး','ma hmaq mi bu','do not remember'],['သတိရတယ်','thadi ya de','miss (someone) / think of'],['နာမည်မေ့သွားပြီ','nameh meh thwa bi','(I) forgot the name']],ex:[
 {t:'note',tag:'Oops',q:'မေ့သွားပြီ',body:'<p><span class="deva">မေ့သွားပြီ</span> <b>meh thwa bi</b> — "I forgot!" (forget + gone + the news-ပြီ: the memory has LEFT).</p><p>Most useful version: <span class="deva">နာမည်မေ့သွားပြီ</span> — I forgot the name. Say it smiling; everyone does.</p>',eg:[['မေ့သွားပြီ','meh thwa bi','(I) forgot'],['နာမည်မေ့သွားပြီ','nameh meh thwa bi','forgot the name']]},
 {t:'mc',q:'Which means "(I) forgot"?',o:['မေ့သွားပြီ','မှတ်မိတယ်','သတိရတယ်','မသိဘူး'],a:0},
 {t:'mc',q:'What does this mean?',d:'နာမည်မေ့သွားပြီ',o:['(I) forgot the name','(I) remember the name','what is the name?','the name is new'],a:0},
@@ -3077,7 +3077,7 @@ const MY_LESSONS=[
    guests & visiting, market fruits (the -သီး family), and the polite
    polish (ပါ inside statements, the နော် softener). */
 /* --- Topic 1: lakhs & millions --- */
-{id:'my_lakh',title:'Big money',step:'learn',meta:'သိန်း သန်း — real prices',vocab:[['သိန်း','thein','one hundred thousand (a lakh)'],['သန်း','than','one million'],['တစ်သိန်း','ta thein','100,000'],['ငွေ','ngwei','money / silver'],['ပိုက်ဆံလဲတယ်','paiq hsan leh de','exchange money']],ex:[
+{id:'my_lakh',title:'Large numbers',step:'learn',meta:'သိန်း သန်း — real prices',vocab:[['သိန်း','thein','one hundred thousand (a lakh)'],['သန်း','than','one million'],['တစ်သိန်း','ta thein','100,000'],['ငွေ','ngwei','money / silver'],['ပိုက်ဆံလဲတယ်','paiq hsan leh de','exchange money']],ex:[
 {t:'note',tag:'Serious kyat',q:'သိန်း · သန်း',body:'<p>Rent, motorbikes, gold — priced in <span class="deva">သိန်း</span> <b>thein</b> = 100,000 (a lakh). <span class="deva">သန်း</span> <b>than</b> = a million. <span class="deva">ဆယ်သိန်း</span> = တစ်သန်း!</p><p>Your number ladder is complete: ဆယ် · ရာ · ထောင် · သောင်း · သိန်း · သန်း.</p>',eg:[['သိန်း','thein','100,000'],['သန်း','than','1,000,000']]},
 {t:'mc',q:'Which means "one hundred thousand"?',o:['သိန်း','သန်း','သောင်း','ထောင်'],a:0},
 {t:'mc',q:'What does this mean?',d:'တစ်သိန်း',o:['100,000','10,000','1,000,000','1,000'],a:0},
@@ -3155,7 +3155,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match rank and meaning',pairs:[['ပထမ','first'],['ဒုတိယ','second'],['တတိယ','third'],['ပထမဆုံး','the very first']]}]},
 
 /* --- Topic 3: errands around town --- */
-{id:'my_errand',title:'Errand day',step:'learn',meta:'စာတိုက် ဘဏ် ဆေးဆိုင် ဆံပင်',vocab:[['စာတိုက်','sa daiq','post office'],['ဘဏ်','ban','bank'],['ဆေးဆိုင်','hsei zaing','pharmacy'],['ဆံပင်','hsabin','hair'],['ဆံပင်ညှပ်တယ်','hsabin hnyaq de','get a haircut']],ex:[
+{id:'my_errand',title:'Errands',step:'learn',meta:'စာတိုက် ဘဏ် ဆေးဆိုင် ဆံပင်',vocab:[['စာတိုက်','sa daiq','post office'],['ဘဏ်','ban','bank'],['ဆေးဆိုင်','hsei zaing','pharmacy'],['ဆံပင်','hsabin','hair'],['ဆံပင်ညှပ်တယ်','hsabin hnyaq de','get a haircut']],ex:[
 {t:'note',tag:'Around town',q:'စာတိုက် · ဘဏ် · ဆေးဆိုင်',body:'<p>Errand words built from pieces you own: <span class="deva">စာတိုက်</span> <b>sa daiq</b> = post office (letter-building!) · <span class="deva">ဘဏ်</span> <b>ban</b> = bank · <span class="deva">ဆေးဆိုင်</span> <b>hsei zaing</b> = pharmacy (medicine-shop!).</p>',eg:[['စာတိုက်','sa daiq','post office'],['ဘဏ်','ban','bank'],['ဆေးဆိုင်','hsei zaing','pharmacy']]},
 {t:'mc',q:'Which means "pharmacy"?',o:['ဆေးဆိုင်','ဆေးရုံ','စာတိုက်','ဘဏ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'စာတိုက်',o:['post office','library','bookshop','school office'],a:0},
@@ -3233,7 +3233,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match state and meaning',pairs:[['စိတ်ဝင်စားတယ်','interested'],['ပျင်းတယ်','bored'],['အံ့ဩတယ်','surprised'],['စိတ်','mind / heart']]}]},
 
 /* --- Topic 5: guests & visiting --- */
-{id:'my_visit',title:'Come visit!',step:'learn',meta:'ဧည့်သည် အလည်လာပါ ဝမ်းသာ ပြန်',vocab:[['ဧည့်သည်','eh theh','guest'],['အလည်လာပါ','a leh la ba','come and visit!'],['ဝမ်းသာတယ်','wun tha de','glad / delighted'],['ပြန်မယ်','pyan meh','(I) am heading back'],['ပြန်လာမယ်','pyan la meh','(I) will come back']],ex:[
+{id:'my_visit',title:'Hospitality',step:'learn',meta:'ဧည့်သည် အလည်လာပါ ဝမ်းသာ ပြန်',vocab:[['ဧည့်သည်','eh theh','guest'],['အလည်လာပါ','a leh la ba','come and visit!'],['ဝမ်းသာတယ်','wun tha de','glad / delighted'],['ပြန်မယ်','pyan meh','(I) am heading back'],['ပြန်လာမယ်','pyan la meh','(I) will come back']],ex:[
 {t:'note',tag:'Open doors',q:'ဧည့်သည် · အလည်လာပါ',body:'<p>Myanmar hospitality is legendary. <span class="deva">ဧည့်သည်</span> <b>eh theh</b> = guest. The invitation you WILL receive: <span class="deva">အလည်လာပါ</span> <b>a leh la ba</b> — come and visit!</p>',eg:[['ဧည့်သည်','eh theh','guest'],['အလည်လာပါ','a leh la ba','come and visit!']]},
 {t:'mc',q:'Which means "guest"?',o:['ဧည့်သည်','ဈေးသည်','သူငယ်ချင်း','နိုင်ငံခြားသား'],a:0},
 {t:'mc',q:'What does this mean?',d:'အလည်လာပါ',o:['come and visit!','come quickly!','come back!','come in!'],a:0},
@@ -3272,7 +3272,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match line and meaning',pairs:[['ဧည့်သည်','guest'],['အလည်လာပါ','come and visit!'],['ပြန်မယ်','heading back'],['ဝမ်းသာတယ်','glad']]}]},
 
 /* --- Topic 6: fruits — the သီး family --- */
-{id:'my_fruit',title:'Fruit stall',step:'learn',meta:'သရက်သီး ငှက်ပျောသီး အုန်းသီး',vocab:[['အသီး','a thi','fruit'],['သရက်သီး','thayeq thi','mango'],['ငှက်ပျောသီး','hngeq pyaw thi','banana'],['အုန်းသီး','oun thi','coconut'],['နာနတ်သီး','na naq thi','pineapple']],ex:[
+{id:'my_fruit',title:'Fruits',step:'learn',meta:'သရက်သီး ငှက်ပျောသီး အုန်းသီး',vocab:[['အသီး','a thi','fruit'],['သရက်သီး','thayeq thi','mango'],['ငှက်ပျောသီး','hngeq pyaw thi','banana'],['အုန်းသီး','oun thi','coconut'],['နာနတ်သီး','na naq thi','pineapple']],ex:[
 {t:'note',tag:'The သီး family',q:'Everything ends in သီး',body:'<p>Fruit words all wear <span class="deva">သီး</span> (fruit/round thing): <span class="deva">အသီး</span> fruit · <span class="deva">သရက်သီး</span> <b>thayeq thi</b> mango — Myanmar summer in one bite.</p>',eg:[['အသီး','a thi','fruit'],['သရက်သီး','thayeq thi','mango']]},
 {t:'mc',q:'Which means "mango"?',o:['သရက်သီး','ငှက်ပျောသီး','အုန်းသီး','နာနတ်သီး'],a:0},
 {t:'mc',q:'Fruit words end in…',o:['သီး','ပင်','စား','ချို'],a:0},
@@ -3311,7 +3311,7 @@ const MY_LESSONS=[
 {t:'match',q:'Match fruit and meaning',pairs:[['သရက်သီး','mango'],['ငှက်ပျောသီး','banana'],['အုန်းသီး','coconut'],['နာနတ်သီး','pineapple']]}]},
 
 /* --- Topic 7: the polite polish — course capstone --- */
-{id:'my_cap',title:'The final polish',step:'learn',meta:'ပါ everywhere + နော်',vocab:[['ဟုတ်ပါတယ်','houq pa de','yes, that is right (polite)'],['မသိပါဘူး','ma thi ba bu','(I) do not know (polite)'],['ကိစ္စမရှိပါဘူး','keiq sa ma shi ba bu','no problem'],['တော်ပြီ','taw bi','that is enough'],['နောက်တွေ့မယ်နော်','nauq twei meh naw','see you later, OK?']],ex:[
+{id:'my_cap',title:'Polite particles',step:'learn',meta:'ပါ everywhere + နော်',vocab:[['ဟုတ်ပါတယ်','houq pa de','yes, that is right (polite)'],['မသိပါဘူး','ma thi ba bu','(I) do not know (polite)'],['ကိစ္စမရှိပါဘူး','keiq sa ma shi ba bu','no problem'],['တော်ပြီ','taw bi','that is enough'],['နောက်တွေ့မယ်နော်','nauq twei meh naw','see you later, OK?']],ex:[
 {t:'note',tag:'ပါ inside',q:'Polish any sentence',body:'<p>Final secret: <span class="deva">ပါ</span> does not just end requests — slide it INTO statements to soften them: ဟုတ်တယ် → <span class="deva">ဟုတ်ပါတယ်</span> · မသိဘူး → <span class="deva">မသိပါဘူး</span>. Same meaning, warmer voice. You heard it in နေကောင်း<b>ပါ</b>တယ် long ago!</p>',eg:[['ဟုတ်ပါတယ်','houq pa de','yes (polite)'],['မသိပါဘူး','ma thi ba bu','do not know (polite)']]},
 {t:'mc',q:'The polite version of မသိဘူး is…',o:['မသိပါဘူး','မသိသေးဘူး','မသိရဘူး','သိပါတယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဟုတ်ပါတယ်',o:['yes, that is right (polite)','really?','maybe','of course not'],a:0},

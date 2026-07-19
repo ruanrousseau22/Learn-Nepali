@@ -278,7 +278,7 @@ const PS_Z1=[
 {t:'match',q:'Match letter and sound',pairs:[['س','s'],['ش','sh'],['ښ','x']]},
 {t:'mc',q:'How will you master the regional ښ sound?',o:['copy the audio','pick a random sound','skip it','always say s'],a:0}]},
 
-{id:'ps_c5',title:'The deep letters',step:'learn',meta:'غ ف ق ع & loan letters',vocab:[['غ','gh','letter: gh'],['ف','f','letter: f'],['ق','q','letter: q'],['ع','(silent)','letter: ain (loan)']],ex:[
+{id:'ps_c5',title:'The guttural letters',step:'learn',meta:'غ ف ق ع & loan letters',vocab:[['غ','gh','letter: gh'],['ف','f','letter: f'],['ق','q','letter: q'],['ع','(silent)','letter: ain (loan)']],ex:[
 {t:'note',tag:'From deep in the throat',q:'غ ق',body:'<p><span class="deva">غ</span> <b>gh</b> — a gargled g, deep in the throat: <span class="deva">غټ</span> <b>ghatt</b> = "big". <span class="deva">ق</span> <b>q</b> — a k pressed further back: <span class="deva">قلم</span> qalam "pen".</p>',eg:[['غ','gh','gargled g'],['ق','q','deep k'],['ف','f','f as in fun']]},
 {t:'mc',q:'What sound does this letter make?',d:'غ',o:['gh','q','f','kh'],a:0},
 {t:'mc',q:'And this one?',d:'ف',o:['f','q','gh','p'],a:0},
@@ -1084,7 +1084,7 @@ const PS_Z4=[
 {t:'mc',q:'"I do not eat meat" =',o:['زه غوښه نه خورم','زه غوښه خورم','زه نه غوښه خورم','غوښه زه خورم'],a:0},
 {t:'li',q:'Listen — which food?',say:'مېوه',o:['مېوه','سابه','شیدې','غوښه'],a:0}]},
 
-{id:'ps_tea',title:'Tea!',step:'learn',meta:'چای — the drink of friendship',vocab:[['چای','chaay','tea'],['شین چای','shin chaay','green tea'],['تور چای','tor chaay','black tea'],['بوره','bura','sugar'],['خوندور','khwandawar','tasty'],['چای وڅښه','chaay wutsxa','drink tea! (offer)']],ex:[
+{id:'ps_tea',title:'Tea culture',step:'learn',meta:'چای — the drink of friendship',vocab:[['چای','chaay','tea'],['شین چای','shin chaay','green tea'],['تور چای','tor chaay','black tea'],['بوره','bura','sugar'],['خوندور','khwandawar','tasty'],['چای وڅښه','chaay wutsxa','drink tea! (offer)']],ex:[
 {t:'note',tag:'The drink of friendship',q:'چای',body:'<p>Nothing happens in Afghanistan without <span class="deva">چای</span> <b>chaay</b>. Guests are poured <span class="deva">شین چای</span> <b>shin chaay</b> (green tea) or <span class="deva">تور چای</span> <b>tor chaay</b> (black tea), refilled until you gently signal enough!</p>',tip:'شین means green — the same word will return with colors.'},
 {t:'mc',q:'Which means "tea"?',o:['چای','بوره','اوبه','شیدې'],a:0},
 {t:'mc',q:'"green tea" =',o:['شین چای','تور چای','چای','بوره چای'],a:0},
@@ -1730,7 +1730,7 @@ const PS_Z7=[
 {t:'mc',q:'Past verbs still sit…',o:['at the end','first','second','anywhere'],a:0},
 {t:'li',q:'Listen — which verb?',say:'راغله',o:['راغله','راغی','لاړه','راغلم'],a:0}]},
 
-{id:'ps_erg',title:'The past flip',step:'learn',meta:'ما … the famous quirk',vocab:[['ما','maa','I (past-doer form)'],['ما ډوډۍ وخوړه','maa ddoddey wukhorra','I ate bread'],['ما اوبه وڅښلې','maa oba wutsxale','I drank water'],['ما ولیدل','maa wulidal','I saw'],['تا','taa','you (past-doer form)'],['ما چای وڅښه','maa chaay wutsxa','I drank tea']],ex:[
+{id:'ps_erg',title:'The ergative past',step:'learn',meta:'ما … the famous quirk',vocab:[['ما','maa','I (past-doer form)'],['ما ډوډۍ وخوړه','maa ddoddey wukhorra','I ate bread'],['ما اوبه وڅښلې','maa oba wutsxale','I drank water'],['ما ولیدل','maa wulidal','I saw'],['تا','taa','you (past-doer form)'],['ما چای وڅښه','maa chaay wutsxa','I drank tea']],ex:[
 {t:'note',tag:'Pashto’s famous quirk',q:'زه → ما',body:'<p>Here is Pashto’s party trick. In the past, with verbs that take an object, the doer changes form: <span class="deva">زه</span> becomes <span class="deva">ما</span> <b>maa</b>, <span class="deva">ته</span> becomes <span class="deva">تا</span>. <span class="deva">ما ډوډۍ وخوړه</span> = "I ate bread".</p><p>Stranger still: the verb agrees with the <b>bread</b>, not with you! For now, just <b>recognize the pattern</b> — ما + thing + verb.</p>',tip:'Linguists call this "ergative". You can just call it the past flip.'},
 {t:'mc',q:'In the past, "I" (with an object) becomes…',o:['ما','زه','تا','زما'],a:0},
 {t:'mc',q:'"I ate bread" =',o:['ما ډوډۍ وخوړه','زه ډوډۍ خورم','زه ډوډۍ وخوړه','ما خورم'],a:0},
@@ -2254,7 +2254,7 @@ const PS_Z9=[
 {t:'mc',q:'Most of Afghanistan works as…',o:['بزګران (farmers)','موټروانان','ډاکټران','ښوونکي'],a:0},
 {t:'li',q:'Listen — which job?',say:'بزګر',o:['بزګر','دوکاندار','ښوونکی','موټروان'],a:0}]},
 
-{id:'ps_erg2',title:'The flip, round 2',step:'learn',meta:'Said, heard, learned',vocab:[['ما وویل','maa wuwayal','I said'],['تا څه وویل','taa tsa wuwayal','what did you say?'],['ما واورېدل','maa waawredal','I heard'],['ما زده کړل','maa zda krral','I learned'],['ما وکړل','maa wukrral','I did'],['هغې','haghe','she (past-doer)']],ex:[
+{id:'ps_erg2',title:'The ergative past II',step:'learn',meta:'Said, heard, learned',vocab:[['ما وویل','maa wuwayal','I said'],['تا څه وویل','taa tsa wuwayal','what did you say?'],['ما واورېدل','maa waawredal','I heard'],['ما زده کړل','maa zda krral','I learned'],['ما وکړل','maa wukrral','I did'],['هغې','haghe','she (past-doer)']],ex:[
 {t:'note',tag:'More flipped pasts',q:'ما وویل',body:'<p>The past flip again: <span class="deva">ما وویل</span> <b>maa wuwayal</b> = I said, <span class="deva">ما واورېدل</span> = I heard, <span class="deva">ما وکړل</span> = I did. Ask back: <span class="deva">تا څه وویل؟</span> = "what did you say?" — a phrase you will use daily!</p>',eg:[['ما وویل','maa wuwayal','I said'],['تا څه وویل','taa tsa wuwayal','what did you say?'],['ما وکړل','maa wukrral','I did']]},
 {t:'mc',q:'"I said" =',o:['ما وویل','ما واورېدل','ما وکړل','وایم'],a:0},
 {t:'mc',q:'"what did you say?" =',o:['تا څه وویل','ته څه وایې','ما وویل','څه دي'],a:0},

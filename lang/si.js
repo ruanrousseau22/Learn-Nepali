@@ -310,7 +310,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match letter and sound',pairs:[['ච','cha'],['ජ','ja'],['ර','ra'],['ව','wa']]}]},
 
 /* --- Topic 5: the half-nasals ඟ ඬ ඳ ඹ --- */
-{id:'si_c5',title:'Letters that hum',step:'learn',meta:'ඟ ඬ ඳ ඹ — Sinhala’s special trick',vocab:[['ඟ','nga','half-nasal: ng+g in one beat'],['ඬ','nda','half-nasal: n+hard d'],['ඳ','ndha','half-nasal: n+soft d'],['ඹ','mba','half-nasal: m+b'],['අඹ','amba','mango']],ex:[
+{id:'si_c5',title:'The half-nasals',step:'learn',meta:'ඟ ඬ ඳ ඹ — Sinhala’s special trick',vocab:[['ඟ','nga','half-nasal: ng+g in one beat'],['ඬ','nda','half-nasal: n+hard d'],['ඳ','ndha','half-nasal: n+soft d'],['ඹ','mba','half-nasal: m+b'],['අඹ','amba','mango']],ex:[
 {t:'note',tag:'One beat',q:'The half-nasal letters',body:'<p>Here is something almost no other script has: letters with a tiny <b>hum tucked inside</b>. <span class="deva">ඹ</span> = <b>mba</b> — an m melting straight into a b, said as <b>one quick beat</b>.</p><p>Your first real word: <span class="deva">අඹ</span> <b>amba</b> — mango!</p>',eg:[['ඹ','mba','m+b in one beat'],['අඹ','amba','mango']]},
 {t:'mc',q:'What sound does this letter make?',d:'ඹ',o:['mba','ndha','nda','nga'],a:0},
 {t:'mc',q:'What does අඹ mean?',d:'අඹ',r:'amba',o:['mango','water','rice','tea'],a:0},
@@ -508,7 +508,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match word and meaning',pairs:[['මම','I'],['ඔයා','you'],['එයා','he / she'],['අපි','we']]}]},
 
 /* --- Topic 10: family words as address --- */
-{id:'si_people',title:'Calling people',step:'learn',meta:'අම්මා තාත්තා අයියා අක්කා නංගී මල්ලී',vocab:[['අම්මා','ammaa','mother'],['තාත්තා','thaaththaa','father'],['අයියා','ayiyaa','older brother'],['අක්කා','akkaa','older sister'],['නංගී','nangii','younger sister'],['මල්ලී','mallii','younger brother']],ex:[
+{id:'si_people',title:'Terms of address',step:'learn',meta:'අම්මා තාත්තා අයියා අක්කා නංගී මල්ලී',vocab:[['අම්මා','ammaa','mother'],['තාත්තා','thaaththaa','father'],['අයියා','ayiyaa','older brother'],['අක්කා','akkaa','older sister'],['නංගී','nangii','younger sister'],['මල්ලී','mallii','younger brother']],ex:[
 {t:'note',tag:'The family six',q:'අම්මා තාත්තා & the siblings',body:'<p><span class="deva">අම්මා</span> <b>ammaa</b> mother · <span class="deva">තාත්තා</span> <b>thaaththaa</b> father.</p><p>Siblings split by age, not just gender: <span class="deva">අයියා</span> <b>ayiyaa</b> older brother · <span class="deva">අක්කා</span> <b>akkaa</b> older sister · <span class="deva">මල්ලී</span> <b>mallii</b> younger brother · <span class="deva">නංගී</span> <b>nangii</b> younger sister.</p>',eg:[['අයියා','ayiyaa','older brother'],['අක්කා','akkaa','older sister'],['මල්ලී','mallii','younger brother'],['නංගී','nangii','younger sister']]},
 {t:'mc',q:'What does අම්මා mean?',d:'අම්මා',r:'ammaa',o:['mother','father','older sister','younger brother'],a:0},
 {t:'mc',q:'Which word is "older brother"?',d:'අයියා',r:'ayiyaa',o:['අයියා','මල්ලී','අක්කා','තාත්තා'],a:0},
@@ -586,7 +586,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match number and value',pairs:[['තුන','3'],['හය','6'],['නවය','9'],['දහය','10']]}]},
 
 /* --- Topic 12: courtesies --- */
-{id:'si_court',title:'Little courtesies',step:'learn',meta:'ස්තූතියි කරුණාකරලා සමාවෙන්න හරි',vocab:[['ස්තූතියි','sthuuthiyi','thank you'],['කරුණාකරලා','karunaakaralaa','please'],['සමාවෙන්න','samaawenna','sorry / excuse me'],['කමක් නෑ','kamak naee','no problem'],['හරි','hari','okay / right']],ex:[
+{id:'si_court',title:'Courtesy expressions',step:'learn',meta:'ස්තූතියි කරුණාකරලා සමාවෙන්න හරි',vocab:[['ස්තූතියි','sthuuthiyi','thank you'],['කරුණාකරලා','karunaakaralaa','please'],['සමාවෙන්න','samaawenna','sorry / excuse me'],['කමක් නෑ','kamak naee','no problem'],['හරි','hari','okay / right']],ex:[
 {t:'note',tag:'Thanks & please',q:'ස්තූතියි & කරුණාකරලා',body:'<p><span class="deva">ස්තූතියි</span> <b>sthuuthiyi</b> = thank you. <span class="deva">කරුණාකරලා</span> <b>karunaakaralaa</b> = please — literally "having shown kindness".</p><p>Heads-up: Sinhala speakers say please and thank you <b>less</b> than English does — warmth lives in the family words and the smile instead.</p>',eg:[['ස්තූතියි','sthuuthiyi','thank you'],['කරුණාකරලා','karunaakaralaa','please']]},
 {t:'mc',q:'What does ස්තූතියි mean?',d:'ස්තූතියි',r:'sthuuthiyi',o:['thank you','please','sorry','okay'],a:0},
 {t:'mc',q:'Which word means "please"?',o:['කරුණාකරලා','ස්තූතියි','සමාවෙන්න','හරි'],a:0},
@@ -625,7 +625,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match phrase and meaning',pairs:[['ස්තූතියි','thank you'],['කරුණාකරලා','please'],['කමක් නෑ','no problem'],['හරි','okay!']]}]},
 
 /* --- Topic 13: introductions --- */
-{id:'si_intro',title:'Who are you?',step:'learn',meta:'මගේ නම … & no word for "is"',vocab:[['නම','nama','name'],['මගේ නම','magee nama','my name'],['ඔයාගේ නම මොකක්ද','oyaagee nama mokakdha','what is your name?'],['යාළුවා','yaaluwaa','friend'],['මේ','mee','this (before a noun)']],ex:[
+{id:'si_intro',title:'Introductions',step:'learn',meta:'මගේ නම … & no word for "is"',vocab:[['නම','nama','name'],['මගේ නම','magee nama','my name'],['ඔයාගේ නම මොකක්ද','oyaagee nama mokakdha','what is your name?'],['යාළුවා','yaaluwaa','friend'],['මේ','mee','this (before a noun)']],ex:[
 {t:'note',tag:'Names',q:'මගේ නම …',body:'<p><span class="deva">නම</span> <b>nama</b> = name (hear the echo of English "name"? They are ancient cousins!).</p><p><span class="deva">මගේ නම නිමල්</span> <b>magee nama Nimal</b> = my name (is) Nimal. Notice — <b>no word for "is"</b>. Two nouns side by side make a full sentence in Sinhala.</p>',eg:[['මගේ නම නිමල්','magee nama Nimal','my name is Nimal']]},
 {t:'mc',q:'What does නම mean?',d:'නම',r:'nama',o:['name','friend','this','my'],a:0},
 {t:'mc',q:'මගේ නම කමලා means…',d:'මගේ නම කමලා',r:'magee nama Kamalaa',o:['my name is Kamala','your name is Kamala','who is Kamala?','Kamala is here'],a:0},
@@ -783,7 +783,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match sentence and meaning',pairs:[['මම ගෙදර ඉන්නවා','I am at home'],['තේ තියෙනවා','there is tea'],['එයා ගෙදර යනවා','he is going home'],['අපි ඉන්නවා','we are here']]}]},
 
 /* --- Topic 17: 4-way this & that --- */
-{id:'si_dem',title:'This, that & THAT',step:'learn',meta:'මේක ඕක අරක ඒක — 4-way pointing',vocab:[['මේක','meeka','this (near me)'],['ඕක','ooka','that (near you)'],['අරක','araka','that over there (visible)'],['ඒක','eeka','it / that (out of sight)'],['පොත','potha','book']],ex:[
+{id:'si_dem',title:'Demonstratives',step:'learn',meta:'මේක ඕක අරක ඒක — 4-way pointing',vocab:[['මේක','meeka','this (near me)'],['ඕක','ooka','that (near you)'],['අරක','araka','that over there (visible)'],['ඒක','eeka','it / that (out of sight)'],['පොත','potha','book']],ex:[
 {t:'note',tag:'Four, not two',q:'මේක ඕක අරක ඒක',body:'<p>English points two ways (this/that). Sinhala points <b>four</b>:</p><p><span class="deva">මේක</span> <b>meeka</b> — near ME · <span class="deva">ඕක</span> <b>ooka</b> — near YOU · <span class="deva">අරක</span> <b>araka</b> — over there, we can both see it · <span class="deva">ඒක</span> <b>eeka</b> — out of sight, the one we mentioned.</p>',eg:[['මේක','meeka','this by me'],['ඕක','ooka','that by you'],['අරක','araka','that over there'],['ඒක','eeka','it (not visible)']]},
 {t:'mc',q:'Something in YOUR OWN hand is…',o:['මේක','ඕක','අරක','ඒක'],a:0},
 {t:'mc',q:'Something in the OTHER person’s hand is…',o:['ඕක','මේක','අරක','ඒක'],a:0},
@@ -822,7 +822,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match pointer and meaning',pairs:[['මේක','this (by me)'],['ඕක','that (by you)'],['අරක','that (visible)'],['ඒක','it (unseen)']]}]},
 
 /* --- Topic 18: negation --- */
-{id:'si_neg',title:'Say no',step:'learn',meta:'-න්නේ නෑ & නෙමෙයි',vocab:[['නෑ','naee','no / not'],['දන්නවා','dhannawaa','knows'],['මම දන්නේ නෑ','mama dhannee naee','I do not know'],['මම කන්නේ නෑ','mama kannee naee','I do not eat'],['නෙමෙයි','nemeyi','is not (for nouns)']],ex:[
+{id:'si_neg',title:'Negation',step:'learn',meta:'-න්නේ නෑ & නෙමෙයි',vocab:[['නෑ','naee','no / not'],['දන්නවා','dhannawaa','knows'],['මම දන්නේ නෑ','mama dhannee naee','I do not know'],['මම කන්නේ නෑ','mama kannee naee','I do not eat'],['නෙමෙයි','nemeyi','is not (for nouns)']],ex:[
 {t:'note',tag:'Flip the verb',q:'-නවා → -න්නේ නෑ',body:'<p>To say NO to a verb, swap <b>-නවා</b> for <b>-න්නේ</b> and add <span class="deva">නෑ</span>: <span class="deva">කනවා</span> → <span class="deva">කන්නේ නෑ</span> <b>kannee naee</b> = does not eat. <span class="deva">යනවා</span> → <span class="deva">යන්නේ නෑ</span>. <span class="deva">බොනවා</span> → <span class="deva">බොන්නේ නෑ</span>.</p><p>Learn this one by heart today: <span class="deva">මම දන්නේ නෑ</span> <b>mama dhannee naee</b> = I do not know (from <span class="deva">දන්නවා</span> <b>dhannawaa</b> = know).</p>',eg:[['කන්නේ නෑ','kannee naee','does not eat'],['මම දන්නේ නෑ','mama dhannee naee','I do not know']]},
 {t:'mc',q:'How do you say "does not go"?',o:['යන්නේ නෑ','යනවා නෑ','නෑ යනවා','යන්නවා'],a:0},
 {t:'mc',q:'මම දන්නේ නෑ means…',d:'මම දන්නේ නෑ',r:'mama dhannee naee',o:['I do not know','I do not go','I know','who knows?'],a:0},
@@ -1381,7 +1381,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match phrase and meaning',pairs:[['මේක කීයද','how much is this?'],['රුපියල් සීයයි','it is 100 rupees'],['සල්ලි','money'],['විස්සයි','it is 20']]}]},
 
 /* --- Topic 32: bargaining --- */
-{id:'si_shop',title:'Bargain a little',step:'learn',meta:'ගණන් වැඩියි … අඩු කරන්න',vocab:[['ගණන් වැඩියි','ganan waediyi','too expensive'],['ලාබයි','laabayi','cheap'],['අඩු කරන්න','adu karanna','please reduce it'],['ටිකක් අඩු කරන්න','tikak adu karanna','reduce it a little'],['මම මේක ගන්නවා','mama meeka gannawaa','I will take this'],['ගන්නවා','gannawaa','takes / buys']],ex:[
+{id:'si_shop',title:'Bargaining',step:'learn',meta:'ගණන් වැඩියි … අඩු කරන්න',vocab:[['ගණන් වැඩියි','ganan waediyi','too expensive'],['ලාබයි','laabayi','cheap'],['අඩු කරන්න','adu karanna','please reduce it'],['ටිකක් අඩු කරන්න','tikak adu karanna','reduce it a little'],['මම මේක ගන්නවා','mama meeka gannawaa','I will take this'],['ගන්නවා','gannawaa','takes / buys']],ex:[
 {t:'note',tag:'Too much!',q:'ගණන් වැඩියි',body:'<p>Heard the price? If it stings: <span class="deva">ගණන් වැඩියි</span> <b>ganan waediyi</b> — "the price is too much". The happy opposite: <span class="deva">ලාබයි</span> <b>laabayi</b> — cheap!</p><p>Then ask, with a smile: <span class="deva">ටිකක් අඩු කරන්න</span> <b>tikak adu karanna</b> — reduce it a little. (There is your kadē word <span class="deva">ටිකක්</span> doing diplomacy.)</p>',eg:[['ගණන් වැඩියි','ganan waediyi','too expensive'],['ටිකක් අඩු කරන්න','tikak adu karanna','reduce it a little'],['ලාබයි','laabayi','cheap']]},
 {t:'mc',q:'ගණන් වැඩියි means…',d:'ගණන් වැඩියි',r:'ganan waediyi',o:['too expensive','very cheap','good price','no money'],a:0},
 {t:'mc',q:'Ask for a better price:',o:['ටිකක් අඩු කරන්න','ගණන් වැඩියි','ලාබයි','මම ගන්නවා'],a:0},
@@ -1542,7 +1542,7 @@ const SI_LESSONS=[
 
 /* ===================== ZONE 6 · DESCRIBE IT ===================== */
 /* --- Topic 36: -yi means is --- */
-{id:'si_adj',title:'-යි means "is"',step:'learn',meta:'ලොකුයි පොඩියි රසයි',vocab:[['ලොකුයි','lokuyi','is big'],['පොඩියි','podiyi','is small'],['රසයි','rasayi','is tasty'],['නරකයි','narakayi','is bad'],['ලොකු','loku','big (before a noun)']],ex:[
+{id:'si_adj',title:'Predicate -යි',step:'learn',meta:'ලොකුයි පොඩියි රසයි',vocab:[['ලොකුයි','lokuyi','is big'],['පොඩියි','podiyi','is small'],['රසයි','rasayi','is tasty'],['නරකයි','narakayi','is bad'],['ලොකු','loku','big (before a noun)']],ex:[
 {t:'note',tag:'The -යි secret',q:'adjective + යි = a sentence',body:'<p>Stick <b>-යි</b> on a describing word and you have a whole sentence: <span class="deva">මේක ලොකුයි</span> <b>meeka lokuyi</b> = this is big · <span class="deva">පොඩියි</span> it is small · <span class="deva">රසයි</span> <b>rasayi</b> it is tasty — THE word to make a cook glow.</p><p>You have known this since day one: <span class="deva">හොඳ</span> + යි = <span class="deva">හොඳයි</span>! And prices too: <span class="deva">සීයයි</span>.</p>',eg:[['මේක ලොකුයි','meeka lokuyi','this is big'],['රසයි','rasayi','tasty!'],['හොඳයි','hondhayi','good!']]},
 {t:'mc',q:'What does රසයි mean?',d:'රසයි',r:'rasayi',o:['it is tasty','it is big','it is bad','it is hot'],a:0},
 {t:'mc',q:'"This is small" =',o:['මේක පොඩියි','මේක පොඩි','පොඩියි මේක ද','මේක ලොකුයි'],a:0},
@@ -1823,7 +1823,7 @@ const SI_LESSONS=[
 
 /* ===================== ZONE 7 · THEN & NOW ===================== */
 /* --- Topic 43: the vowel-change past --- */
-{id:'si_past',title:'Yesterday’s verbs',step:'learn',meta:'කෑවා බිව්වා ගියා ආවා',vocab:[['කෑවා','kaeaewaa','ate'],['බිව්වා','biwwaa','drank'],['ගියා','giyaa','went'],['ආවා','aawaa','came'],['මම ඊයේ ගමට ගියා','mama iiyee gamata giyaa','I went to the village yesterday']],ex:[
+{id:'si_past',title:'The past tense',step:'learn',meta:'කෑවා බිව්වා ගියා ආවා',vocab:[['කෑවා','kaeaewaa','ate'],['බිව්වා','biwwaa','drank'],['ගියා','giyaa','went'],['ආවා','aawaa','came'],['මම ඊයේ ගමට ගියා','mama iiyee gamata giyaa','I went to the village yesterday']],ex:[
 {t:'note',tag:'The vowel flips',q:'කනවා → කෑවා',body:'<p>Sinhala makes the past by <b>changing the vowel inside</b> the verb: <span class="deva">කනවා</span> eats → <span class="deva">කෑවා</span> <b>kaeaewaa</b> ate · <span class="deva">බොනවා</span> → <span class="deva">බිව්වා</span> <b>biwwaa</b> drank.</p><p>Still ONE form for everyone: <span class="deva">මම කෑවා, අපි කෑවා, එයා කෑවා</span>.</p>',eg:[['කනවා → කෑවා','kanawaa → kaeaewaa','eats → ate'],['බොනවා → බිව්වා','bonawaa → biwwaa','drinks → drank']]},
 {t:'mc',q:'What does කෑවා mean?',d:'කෑවා',r:'kaeaewaa',o:['ate','eats','will eat','is eating'],a:0},
 {t:'mc',q:'"Drank" =',o:['බිව්වා','බොනවා','කෑවා','ගියා'],a:0},
@@ -1863,7 +1863,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match present and past',pairs:[['කනවා','කෑවා'],['බොනවා','බිව්වා'],['යනවා','ගියා'],['එනවා','ආවා']]}]},
 
 /* --- Topic 44: more pasts --- */
-{id:'si_past2',title:'More pasts',step:'learn',meta:'කළා ගත්තා දුන්නා කිව්වා හිටියා',vocab:[['කළා','kalaa','did'],['ගත්තා','gaththaa','took / bought'],['දුන්නා','dhunnaa','gave'],['කිව්වා','kiwwaa','said'],['හිටියා','hitiyaa','was / stayed (living)'],['තිබුණා','thibunaa','was / there was (thing)']],ex:[
+{id:'si_past2',title:'Irregular pasts',step:'learn',meta:'කළා ගත්තා දුන්නා කිව්වා හිටියා',vocab:[['කළා','kalaa','did'],['ගත්තා','gaththaa','took / bought'],['දුන්නා','dhunnaa','gave'],['කිව්වා','kiwwaa','said'],['හිටියා','hitiyaa','was / stayed (living)'],['තිබුණා','thibunaa','was / there was (thing)']],ex:[
 {t:'note',tag:'The busy three',q:'කළා ගත්තා දුන්නා',body:'<p><span class="deva">කරනවා</span> → <span class="deva">කළා</span> <b>kalaa</b> did · <span class="deva">ගන්නවා</span> → <span class="deva">ගත්තා</span> <b>gaththaa</b> took, bought · <span class="deva">දෙනවා</span> → <span class="deva">දුන්නා</span> <b>dhunnaa</b> gave.</p><p><span class="deva">මම ආප්ප ගත්තා</span> — I bought hoppers. Your kadē verbs now work yesterday too!</p>',eg:[['කරනවා → කළා','karanawaa → kalaa','does → did'],['ගන්නවා → ගත්තා','gannawaa → gaththaa','takes → took'],['දෙනවා → දුන්නා','dhenawaa → dhunnaa','gives → gave']]},
 {t:'mc',q:'What does ගත්තා mean?',d:'ගත්තා',r:'gaththaa',o:['took / bought','gave','did','said'],a:0},
 {t:'mc',q:'"Gave" =',o:['දුන්නා','ගත්තා','කළා','කිව්වා'],a:0},
@@ -1903,7 +1903,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match present and past',pairs:[['කරනවා','කළා'],['ගන්නවා','ගත්තා'],['ඉන්නවා','හිටියා'],['තියෙනවා','තිබුණා']]}]},
 
 /* --- Topic 45: past negative & questions --- */
-{id:'si_pastneg',title:'Didn’t & did you?',step:'learn',meta:'ගියේ නෑ … ගියාද?',vocab:[['ගියේ නෑ','giyee naee','did not go'],['කෑවේ නෑ','kaeaewee naee','did not eat'],['ගියාද','giyaadha','did (you) go?'],['කෑවද','kaeaewadha','did (you) eat?'],['මම ඊයේ ගියේ නෑ','mama iiyee giyee naee','I did not go yesterday']],ex:[
+{id:'si_pastneg',title:'Past negation & questions',step:'learn',meta:'ගියේ නෑ … ගියාද?',vocab:[['ගියේ නෑ','giyee naee','did not go'],['කෑවේ නෑ','kaeaewee naee','did not eat'],['ගියාද','giyaadha','did (you) go?'],['කෑවද','kaeaewadha','did (you) eat?'],['මම ඊයේ ගියේ නෑ','mama iiyee giyee naee','I did not go yesterday']],ex:[
 {t:'note',tag:'No in the past',q:'-ා → -ේ නෑ',body:'<p>Past negatives swap the final <b>-ා</b> for <b>-ේ</b> and add <span class="deva">නෑ</span>: <span class="deva">ගියා</span> → <span class="deva">ගියේ නෑ</span> <b>giyee naee</b> did not go · <span class="deva">කෑවා</span> → <span class="deva">කෑවේ නෑ</span> did not eat.</p><p>Same shape you learned in Zone 3 — <span class="deva">කන්නේ නෑ</span> — just built on the past stem.</p>',eg:[['ගියා → ගියේ නෑ','giyaa → giyee naee','went → did not go'],['කෑවා → කෑවේ නෑ','kaeaewaa → kaeaewee naee','ate → did not eat']]},
 {t:'mc',q:'"Did not go" =',o:['ගියේ නෑ','යන්නේ නෑ','ගියා නෑ','නෑ ගියා'],a:0},
 {t:'mc',q:'මම කෑවේ නෑ means…',d:'මම කෑවේ නෑ',r:'mama kaeaewee naee',o:['I did not eat','I do not eat','I will not eat','I ate'],a:0},
@@ -3348,7 +3348,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match phrase and meaning',pairs:[['අමුත්තෝ','guests'],['ඇතුළට එන්න','come inside'],['වාඩිවෙන්න','sit please'],['ආයෙත් එන්න','come again!']]}]},
 
 /* --- Topic 81: fruit --- */
-{id:'si_fruit',title:'Fruit of the island',step:'learn',meta:'තැඹිලි කෙසෙල් කොස් දොඩම්',vocab:[['තැඹිලි','thaembili','king coconut'],['කෙසෙල්','kesel','banana'],['කොස්','kos','jackfruit'],['දොඩම්','dhodam','orange'],['තැඹිලි ගෙඩියක්','thaembili gediyak','one king coconut']],ex:[
+{id:'si_fruit',title:'Fruits',step:'learn',meta:'තැඹිලි කෙසෙල් කොස් දොඩම්',vocab:[['තැඹිලි','thaembili','king coconut'],['කෙසෙල්','kesel','banana'],['කොස්','kos','jackfruit'],['දොඩම්','dhodam','orange'],['තැඹිලි ගෙඩියක්','thaembili gediyak','one king coconut']],ex:[
 {t:'note',tag:'The orange coconut',q:'තැඹිලි',body:'<p><span class="deva">තැඹිලි</span> <b>thaembili</b> — the king coconut: bright orange, sold at every roadside, machete-opened while you wait. Nature’s own bottled drink (spot the humming <span class="deva">ඹ</span>!).</p><p>Order one: <span class="deva">තැඹිලි ගෙඩියක් දෙන්න</span> (<span class="deva">ගෙඩිය</span> = a round fruit — the fruit counter-word).</p>',eg:[['තැඹිලි','thaembili','king coconut'],['තැඹිලි ගෙඩියක් දෙන්න','thaembili gediyak dhenna','one king coconut please']]},
 {t:'mc',q:'A තැඹිලි is…',d:'තැඹිලි',r:'thaembili',o:['the orange king coconut you drink','a mango','a spice','a sweet'],a:0},
 {t:'mc',q:'Fruit get counted with…',o:['ගෙඩියක්','එකක් only','දෙනෙක්','ටිකක්'],a:0},
@@ -3428,7 +3428,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match taste and meaning',pairs:[['සැරයි','spicy'],['පැණි රසයි','sweet'],['ඇඹුල්','sour'],['තිත්තයි','bitter']]}]},
 
 /* --- Topic 83: polite polish --- */
-{id:'si_oba',title:'The polite polish',step:'learn',meta:'බොහොම ස්තූතියි · ඔබ as recognition',vocab:[['බොහොම','bohoma','very much'],['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good'],['කරුණාකර','karunaakara','please (formal)'],['ඔබ','oba','you (formal — recognize it)']],ex:[
+{id:'si_oba',title:'Polite forms',step:'learn',meta:'බොහොම ස්තූතියි · ඔබ as recognition',vocab:[['බොහොම','bohoma','very much'],['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good'],['කරුණාකර','karunaakara','please (formal)'],['ඔබ','oba','you (formal — recognize it)']],ex:[
 {t:'note',tag:'The golden thanks',q:'බොහොම ස්තූතියි',body:'<p><span class="deva">බොහොම</span> <b>bohoma</b> = very much. The warmest thanks on the island: <span class="deva">බොහොම ස්තූතියි</span> <b>bohoma sthuuthiyi</b> — thank you very much.</p><p>Also: <span class="deva">බොහොම හොඳයි</span> — very good, well done!</p>',eg:[['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good!']]},
 {t:'mc',q:'බොහොම ස්තූතියි means…',d:'බොහොම ස්තූතියි',r:'bohoma sthuuthiyi',o:['thank you very much','thanks a little','you are welcome','goodbye'],a:0},
 {t:'mc',q:'බොහොම vs ගොඩක් vs හරිම:',o:['all crank things up — bohoma is the politest','all mean small','opposites','only one is real'],a:0},
