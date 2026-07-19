@@ -152,12 +152,14 @@ silhouettes ever. **(3) NO HUMAN FIGURES in scenery art** (Ruan, July
 are welcome; people never. The Lao/Bengali boatmen, Burmese leg-rowers
 and Sinhala stilt-fishermen were all removed (Sinhala's whole stilt
 groups went — bare pole+crossbar would have read as crosses); empty
-boats stayed. The July 2026 Nepali hero refresh follows all three rules:
-the left golden hill was raised to cover the blocky far-blue slab under
-the title (thin misty ridge only), the far ridge smoothed into curves,
-and the village house rebuilt with `snow` whitewashed walls, a
-`var(--tree)` roof, door and windows — edit it via replace_all: the hero
-markup exists as THREE verbatim copies (home + both faith pages).
+boats stayed. The July 2026 Nepali hero refresh (final form, per Ruan):
+the village house is REMOVED entirely, and the old blocky far-blue
+plateau on the left is now a chain of LITTLE DISTANT PEAKS (small
+triangular summits y≈208–240 with two tiny snowcaps) sitting calmly
+under the titles, with the golden terraced hill at its original low
+sweep in front — layered depth instead of a slab. Edit the hero via
+replace_all: the markup exists as THREE verbatim copies (home + both
+faith pages).
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
