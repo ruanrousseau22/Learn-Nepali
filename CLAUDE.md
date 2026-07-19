@@ -16,18 +16,18 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Status (July 2026):** SIX courses complete at 12 zones each —
+- **Status (July 2026):** ALL EIGHT courses COMPLETE at 12 zones each —
   Nepali (main 12 zones / 385 lessons + the Intensive track), Khmer
   (12 zones / 420 lessons), Burmese (12 zones / 420 lessons), Sinhala
   (12 zones / 420 lessons), **Lao** (12 zones / 74 topics / 370 lessons,
-  `lang/lo.js`), and **Pashto** (12 zones / 74 topics / 370 lessons,
+  `lang/lo.js`), **Pashto** (12 zones / 74 topics / 370 lessons,
   `lang/ps.js` — the app's first RIGHT-TO-LEFT course; early-access label
-  dropped at 12 zones, July 2026) — plus **Mongolian** live in EARLY
-  ACCESS at **2 zones / 14 topics / 70 lessons** (`lang/mn.js`, July 2026
-  — Cyrillic; growing zone by zone like Khmer did) and **Bengali**
-  COMPLETE at **12 zones / 84 topics / 420 lessons** (`lang/bn.js`, July
-  2026 — Kolkata standard; early-access label dropped at 12 zones). Plus the Religious
-  studies mode (Nepali). ALL EIGHT offered languages now have live courses.
+  dropped at 12 zones, July 2026), **Mongolian** (**12 zones / 84
+  topics / 420 lessons**, `lang/mn.js`, July 2026 — Cyrillic; early-access
+  label dropped at 12 zones), and **Bengali** (**12 zones / 84 topics /
+  420 lessons**, `lang/bn.js`, July 2026 — Kolkata standard; early-access
+  label dropped at 12 zones). Plus the Religious
+  studies mode (Nepali). No course carries an early-access label anymore.
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
@@ -53,7 +53,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   source (1380 strings via `bn-IN-BashkarNeural`; the bare signs
   ং ঃ ঁ get no edge-tts audio → device-TTS fallback, same as Burmese ဎ)
 - `audio-mn/` + `audio_strings_mn.json` — Mongolian clips, manifest and
-  strings source (142 clips for 143 strings via `mn-MN-BataaNeural`: the
+  strings source (1401 clips for 1402 strings via `mn-MN-BataaNeural`: the
   loan letter Щщ gets no edge-tts audio — device-TTS fallback, same as
   Burmese ဎ and the rare Sinhala letters)
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
@@ -529,32 +529,94 @@ Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
   `ps`. Zone 13+ candidates: the oblique case round-up, months by name,
   more past-transitive paradigms, proverbs (متلونه) as recognition —
   research each word before shipping.
-- **Mongolian (`lang/mn.js`) LIVE in EARLY ACCESS at 2 zones / 14
-  topics / 70 lessons** (July 2026, Mongolian-driven, research-first;
+- **Mongolian (`lang/mn.js`) COMPLETE at 12 zones / 84 topics / 420
+  lessons** (July 2026, Mongolian-driven, research-first;
   core phrases/numbers verified against the Wikivoyage Mongolian
-  phrasebook; catalog label "· early access"; SEO/JSON-LD Course entry +
-  title/keywords added on ship). CYRILLIC, left-to-right, system fonts —
-  no webfont or RTL work needed. Zone 1 "The Script" tells Cyrillic's own
-  story: the lookalike vowels А О У Э И, Mongolia's OWN two letters Ө Ү
-  (+ Ы Й), the FALSE FRIENDS Н Р С В Х (look Latin, sound different — the
-  zone's running joke is "trust your ears, not your eyes"), the reliable
-  crew Б Г Д З Л М Т, the hushers Ж Ч Ш + Ц (цай!), the y-team Е Ё Ю Я +
-  loan letters К П Ф Щ, and the silent signs Ь Ъ + first real words (гэр,
-  морь, тал, айраг, монгол). Zone 2 "Foundations": the repeat-it-back
-  greeting Сайн байна уу (+ Юу байна?), pronouns with the чи/та respect
-  split (тэр = he AND she), numbers 1–10 and the regular арван-teens +
-  own-word tens (хорь/гуч/дөч/тавь → зуу), courtesy тийм/үгүй/уучлаарай/
-  за/зүгээр/болно, the Намайг … гэдэг name pattern (+ Миний нэр starter,
-  хэн who), and time words өнөөдөр/маргааш/өчигдөр/өдөр/шөнө/одоо.
+  phrasebook; early-access label dropped at 12 zones, July 2026; SEO/JSON-LD
+  Course entry + title/keywords added on ship). CYRILLIC, left-to-right,
+  system fonts — no webfont or RTL work needed. Zone 1 "The Script" tells
+  Cyrillic's own story: the lookalike vowels А О У Э И, Mongolia's OWN
+  two letters Ө Ү (+ Ы Й), the FALSE FRIENDS Н Р С В Х (look Latin,
+  sound different — the zone's running joke is "trust your ears, not
+  your eyes"), the reliable crew Б Г Д З Л М Т, the hushers Ж Ч Ш + Ц
+  (цай!), the y-team Е Ё Ю Я + loan letters К П Ф Щ, and the silent
+  signs Ь Ъ + first real words (гэр, морь, тал, айраг, монгол). Zone 2
+  "Foundations": the repeat-it-back greeting Сайн байна уу (+ Юу байна?),
+  pronouns with the чи/та respect split (тэр = he AND she), numbers 1–10
+  and the regular арван-teens + own-word tens (хорь/гуч/дөч/тавь → зуу),
+  courtesy тийм/үгүй/уучлаарай/за/зүгээр/болно, the Намайг … гэдэг name
+  pattern (+ Миний нэр starter, хэн who), and time words өнөөдөр/маргааш/
+  өчигдөр/өдөр/шөнө/одоо. Zones 3–8 (July 2026): Zone 3 "Building
+  sentences" — байна to-be sentences, the -на/-нэ/-но/-нө present-future
+  with NO person conjugation (the freebie), -гүй negation + биш for
+  nouns, уу/үү yes-no questions (vowel harmony picks the vowel!) + echo
+  answers, юу/хаана/хэн/хэзээ in-situ, надад байна the have-pattern,
+  хүсэж байна want. Zone 4 "Cases & places" — family terms (ээж/аав/
+  эгч/ах by age), town places, the -д/-т dative-locative, -ын/-ийн
+  genitive, -аас/-ээс ablative + хаанаас ирсэн бэ, positions дотор/
+  гадаа/дээр/доор, food & the ger kitchen (бууз! сүүтэй цай! the -тай
+  with/having suffix). Zone 5 "Numbers & daily life" — мянга/сая big
+  numbers, төгрөг money + хэдэн төгрөг вэ, shopping (авна/үнэтэй/хямд),
+  clock time хэдэн цаг вэ + цагт, the Tibetan-loan weekday names
+  Даваа…Ням (recognition), quantities их/бага/олон/цөөн, the насны
+  small-talk trio + Та хэдэн настай вэ. Zone 6 "Describing things" —
+  adjectives before nouns with no agreement, colors + the Улаанбаатар
+  red-hero hook, comparisons надаас + -аас … илүү, feelings (даарч
+  байна — Mongolia's word for freezing!), дуртай + dative liking
+  (Би цайнд дуртай), weather тэнгэр/хүйтэн/халуун/салхитай, body parts
+  + өвдөж байна. Zone 7 "Past & present" — the -сан/-сэн past, -ж/-ч
+  байна progressive (Цай ууж байна), -лаа just-now past, чадна can
+  (Би морь унаж чадна!), хэрэгтэй need + ёстой must, -аарай/-ээрэй
+  polite requests, тэгээд sequencing + storytelling. Zone 8 "Getting
+  around" — transport incl. галт тэрэг the fire-cart train + -аар
+  by-vehicle, суух board / буух get off / морь унах ride + Энд бууна,
+  directions with THE compass fact (ger doors face south, so баруун =
+  right AND west, зүүн = left AND east) + чигээрээ/эргээрэй/зогсоорой,
+  tickets билет (тасалбар on signs) + хэзээ хөдлөх вэ, staying зочид
+  буудал the guests'-station hotel + өрөө/түлхүүр/хэдэн хоног + Та
+  хаана амьдардаг вэ (-даг habitual), phone утас (= thread/wire!) +
+  дугаар/залгаарай/вайфай, months by number (нэгдүгээр сар January —
+  сар = moon AND month) + өнгөрсөн/энэ/ирэх жил. Zones 9–12 (July 2026):
+  Zone 9 "Conversation" — connectors гэхдээ/учраас (postposed!)/эсвэл/бас/
+  тэгвэл, mind-verbs гэж бодож байна + санах remember-AND-miss + мартсан,
+  jobs багш/малчин/жолооч/оюутан + Би багшаар ажилладаг (-аар as "as"),
+  hobbies дуулах/бүжиглэх/зурах/хөгжим сонсох/кино үзэх, наадам sports
+  (factual: бөх/морин уралдаан/сур харваа + хурдан/хүчтэй), chores
+  цэвэрлэх/угаах/хоол хийх + завгүй busy = free-time-less + амрах,
+  learner lifelines Дахиад/Удаан хэлээрэй + Монголоор юу гэдэг вэ + Би
+  жаахан монголоор ярьдаг. Zone 10 "The countryside" — the four seasons
+  хавар/зун/намар/өвөл + улирал, хөдөө/нутаг homeland/нүүдэлчин nomad/
+  нүүх migrate, THE FIVE LIVESTOCK таван хошуу мал (хонь/ямаа/үхэр/
+  тэмээ/адуу — адуу herd vs морь riding horse), wild animals чоно/үнэг/
+  бүргэд eagle-hunters/буга/загас/шувуу, nature уул/гол/нуур/ой/мод/
+  цэцэг, inside the ger эсгий felt/тооно roof-ring/зуух stove + гэр
+  барих/буулгах, dishes хуушуур/цуйван/шөл/аарул + Амттай байна +
+  Сайхан хооллоорой. Zone 11 "Little extras" — frequency үргэлж/
+  ихэвчлэн/заримдаа/өдөр бүр + хэзээ ч + -гүй never, times of day
+  өглөө/үд/орой + Өглөөний мэнд/Оройн мэнд, clothes дээл/малгай/гутал/
+  цамц/өмд + өмсөх vs тайлах, choosing аль нь/сонгох/хоёулаа/өөр/
+  адилхан, pace эрт/оройтох (Би оройтлоо!)/яг/бараг/аль хэдийн/
+  аажуухан, reading & writing бичих/унших/хичээл/дэвтэр/харандаа,
+  hospitality зочин/Тавтай морилно уу/Ороорой/Суугаарай/Цай уугаарай/
+  дайлах + the right-hand custom. Zone 12 "Make Mongolia home" — он vs
+  жил (Хэдэн онд төрсөн бэ? + Өнөөдөр сарын хэдэн вэ?), errands засах/
+  үс засуулах (-уул causative)/шуудан/мөнгө солих/захиа илгээх, help &
+  safety (sober: Туслаарай/аюултай/Болгоомжтой/цагдаа/гээсэн), wishes
+  Баяр хүргэе deliver-the-joy/Төрсөн өдрийн мэнд/Шинэ жилийн мэнд/
+  Сайхан амраарай/Сайн яваарай + ерөөл, duration хэр удаан + Хоёр жил
+  болж байна + саяхан/удахгүй/-аас хойш, little words тухай/шиг/хамт/
+  зөвхөн/ганц, capstone хайртай (dative loved one: Би чамд хайртай) +
+  зүрх/мөрөөдөл/ирээдүй + Би Монголд хайртай.
   Romanization scheme documented at the top of `lang/mn.js` (letter tiles
   may use ö/ü for the Ө/Ү distinction; WORD roms use the informal ASCII
   ө→o, ү→u convention — ugui, suu, onoodor — with the audio carrying the
   true vowels; х=kh, ц=ts, doubled long vowels). Audio via
-  `mn-MN-BataaNeural`; extractor + generator both know `mn`. Zone 3+
-  candidates (grow like Khmer; drop the early-access label at 12 zones):
-  to-be & байна sentences, verbs + the -x infinitive, want/like, food &
-  the ger kitchen (сүүтэй цай!), family, cases little by little —
-  research each word before shipping.
+  `mn-MN-BataaNeural`; extractor + generator both know `mn`. Zone 13+
+  candidates: Цагаан сар round 2 (Сар шинийн мэнд — cultural names only
+  per the secular rule), the -вал/-вэл conditional, хэлмэрч
+  interpreter & language talk round 2, morin khuur & long song as
+  cultural recognition vocab, more -уул causatives — research each word
+  before shipping.
 - **Bengali (`lang/bn.js`) COMPLETE at 12 zones / 84 topics / 420
   lessons** (early-access label dropped at 12 zones, July 2026) (July 2026, Bengali-driven, research-first; verified against
   the Wikivoyage Bengali phrasebook — incl. the Akademi -ো teen spellings
