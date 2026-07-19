@@ -73,9 +73,6 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* stilt fishermen — the iconic silhouettes, perched over the shallows */
 +'<g class="art-detail" aria-hidden="true">'
 /* each: slim pole, small side-perch, seated figure with a long rod angled to the sea */
-+'<g fill="var(--tree)"><path d="M806 288 L806 240 L810 240 L810 288 Z M810 252 L820 252 L820 255 L810 255 Z"/><circle cx="815" cy="238" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M810 252 L811 243 Q815 241 819 244 L820 252 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M818 244 L786 262"/></g>'
-+'<g fill="var(--tree)"><path d="M858 290 L858 236 L862 236 L862 290 Z M862 248 L872 248 L872 251 L862 251 Z"/><circle cx="867" cy="234" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M862 248 L863 239 Q867 237 871 240 L872 248 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M870 240 L838 258"/></g>'
-+'<g fill="var(--tree)"><path d="M910 288 L910 244 L914 244 L914 288 Z M914 256 L924 256 L924 259 L914 259 Z"/><circle cx="919" cy="242" r="3.4" fill="var(--tree)"/><path fill="var(--tree)" d="M914 256 L915 247 Q919 245 923 248 L924 256 Z"/><path stroke="var(--tree)" stroke-width="1.4" fill="none" d="M922 248 L890 266"/></g>'
 +'</g>'
 /* coconut palms leaning over the shore */
 +'<g class="near">'
@@ -93,7 +90,6 @@ const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'<path class="far" d="M0 154 L700 154 Q740 152 780 150 Q830 134 890 140 Q950 122 1010 132 Q1080 122 1140 130 Q1170 128 1200 130 L1200 200 L0 200 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 170 L1200 200 Z"/>'
 /* stilt fisherman (fine detail) */
-+'<g class="art-detail" aria-hidden="true"><g fill="var(--tree)"><path d="M816 178 L816 142 L819 142 L819 178 Z M819 152 L827 152 L827 155 L819 155 Z"/><circle cx="823" cy="140" r="2.8" fill="var(--tree)"/><path fill="var(--tree)" d="M819 152 L820 145 Q823 143 826 146 L827 152 Z"/><path stroke="var(--tree)" stroke-width="1.2" fill="none" d="M825 146 L800 160"/></g></g>'
 /* palm */
 +'<g class="near"><path d="M1076 186 C1080 158 1076 136 1082 116 L1087 117 C1081 138 1086 160 1082 188 Z"/>'
 +'<path d="M1084 116 C1070 106 1054 104 1041 109 C1055 109 1070 113 1082 120 Z M1084 116 C1097 105 1113 102 1126 107 C1113 109 1098 114 1086 120 Z M1084 116 C1078 103 1069 95 1056 93 C1069 99 1078 107 1082 117 Z M1084 116 C1090 103 1099 95 1112 93 C1100 99 1091 107 1086 117 Z"/></g>'

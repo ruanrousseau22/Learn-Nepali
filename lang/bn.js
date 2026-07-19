@@ -65,8 +65,6 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<path d="M560 261 Q600 272 648 272 Q694 272 726 260 Q718 276 692 280 L600 280 Q572 276 560 261 Z"/>'
 +'<path d="M636 238 Q652 246 656 260 L640 272 Q630 254 636 238 Z"/>'
 +'</g>'
-/* boatman with angled oar (fine detail — figure + slanted oar, never a bare cross) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><circle cx="604" cy="254" r="4.6"/><path d="M598 259 Q604 266 612 262 L612 272 L598 272 Z"/><path d="M613 255 L634 276 L631 279 L610 258 Z"/></g>'
 /* coconut palms on the near bank, right of the title zone */
 +'<g fill="var(--tree)" aria-hidden="true">'
 +'<path d="M752 300 Q748 250 758 212 L764 212 Q758 252 762 300 Z"/>'

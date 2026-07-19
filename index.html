@@ -105,6 +105,9 @@
 *{box-sizing:border-box;margin:0;padding:0}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 html{scroll-behavior:smooth}
+/* nothing may force sideways scrolling — the layout below is sized to fit,
+   and clip guarantees a stray pixel never pushes the page off-center on phones */
+html,body{overflow-x:clip}
 body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;letter-spacing:-.01em;transition:background .4s,color .4s}
 .deva{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic','Plus Jakarta Sans',sans-serif;letter-spacing:0}
 .serif{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.025em}
@@ -124,7 +127,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .tab:hover{color:var(--ink)}
 .tab.active{color:var(--crimson-deep);background:var(--saffron-soft)}
 [data-theme="dark"] .tab.active{color:var(--saffron)}
-.iconbtn{background:none;border:1px solid var(--line);color:var(--ink-soft);height:36px;min-width:36px;padding:0 12px;border-radius:100px;cursor:pointer;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;justify-content:center;transition:.15s}
+.iconbtn{background:none;border:1px solid var(--line);color:var(--ink-soft);height:36px;min-width:36px;padding:0 12px;border-radius:100px;cursor:pointer;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;justify-content:center;transition:.15s;white-space:nowrap}
 .iconbtn:hover{border-color:var(--crimson);color:var(--crimson)}
 .avatar{width:30px;height:30px;border-radius:50%;background:var(--crimson);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex-shrink:0;cursor:pointer}
 .menutoggle{display:none}
@@ -662,7 +665,9 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 /* ===== MOBILE REFINEMENT pt.3 — header / modals / settings / tiles ===== */
 @media(max-width:600px){
   /* --- header: stop the right-side cluster from crowding the logo --- */
+  header .wrap.bar{padding:0 12px}
   .bar{height:56px;gap:10px}
+  nav.tabs.open{top:56px}
   .logo{font-size:16px;gap:8px}
   .logo .mark{width:28px;height:28px}
   .iconbtn{height:33px;min-width:33px;padding:0 10px;font-size:12.5px;white-space:nowrap}
@@ -693,9 +698,14 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   .mtile{padding:12px 10px;min-height:46px}
   .mtile.deva{font-size:17px}
 }
+/* phones (≤480px): the wordmark is the widest flexible piece — collapse it to
+   the tree mark so the whole bar (logo + two pickers + level/theme/login/menu)
+   fits a 360–430px screen with no horizontal scroll */
+@media(max-width:480px){
+  .logo{font-size:0;gap:0}
+}
 /* small phones (~360px): trim the header a touch more so nothing clips */
 @media(max-width:380px){
-  .logo{font-size:15px}
   .iconbtn{padding:0 8px}
   .bar{gap:8px}
 }
@@ -978,20 +988,20 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 236 L110 218 L230 229 L350 214 L470 225 L555 222 L610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <path class="far" d="M0 234 Q90 222 180 226 Q280 230 370 218 Q460 208 540 218 Q580 222 610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
       <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
       <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="mid" d="M0 320 L0 250 Q140 228 260 240 Q400 254 520 290 L560 302 L560 320 Z"/>
+      <path class="mid" d="M0 320 L0 246 Q150 222 280 231 Q420 241 530 262 Q595 276 640 300 L640 320 Z"/>
       <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
-      <path class="snow" opacity=".26" d="M60 280 Q200 250 340 266 L338 272 Q200 258 64 286 Z"/>
-      <path class="snow" opacity=".26" d="M150 258 Q250 240 340 250 L338 256 Q250 246 152 264 Z"/>
+      <path class="snow" opacity=".26" d="M60 268 Q200 240 340 254 L338 260 Q200 248 64 274 Z"/>
+      <path class="snow" opacity=".26" d="M150 246 Q250 230 340 240 L338 246 Q250 236 152 252 Z"/>
       <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
       <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
       <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
-      <path class="mid" d="M760 214 L760 182 L830 182 L830 214 Z M748 184 L795 156 L842 184 Z"/>
+      <g aria-hidden="true"><path class="snow" d="M762 234 L762 190 L828 190 L828 234 Z"/><path fill="var(--tree)" d="M746 192 L795 159 L844 192 Z"/><path fill="var(--tree)" opacity=".85" d="M788 234 L788 214 L802 214 L802 234 Z"/><path fill="var(--tree)" opacity=".6" d="M769 199 L779 199 L779 208 L769 208 Z M811 199 L821 199 L821 208 L811 208 Z"/></g>
       <g class="near">
         <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
@@ -1145,20 +1155,20 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 236 L110 218 L230 229 L350 214 L470 225 L555 222 L610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <path class="far" d="M0 234 Q90 222 180 226 Q280 230 370 218 Q460 208 540 218 Q580 222 610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
       <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
       <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="mid" d="M0 320 L0 250 Q140 228 260 240 Q400 254 520 290 L560 302 L560 320 Z"/>
+      <path class="mid" d="M0 320 L0 246 Q150 222 280 231 Q420 241 530 262 Q595 276 640 300 L640 320 Z"/>
       <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
-      <path class="snow" opacity=".26" d="M60 280 Q200 250 340 266 L338 272 Q200 258 64 286 Z"/>
-      <path class="snow" opacity=".26" d="M150 258 Q250 240 340 250 L338 256 Q250 246 152 264 Z"/>
+      <path class="snow" opacity=".26" d="M60 268 Q200 240 340 254 L338 260 Q200 248 64 274 Z"/>
+      <path class="snow" opacity=".26" d="M150 246 Q250 230 340 240 L338 246 Q250 236 152 252 Z"/>
       <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
       <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
       <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
-      <path class="mid" d="M760 214 L760 182 L830 182 L830 214 Z M748 184 L795 156 L842 184 Z"/>
+      <g aria-hidden="true"><path class="snow" d="M762 234 L762 190 L828 190 L828 234 Z"/><path fill="var(--tree)" d="M746 192 L795 159 L844 192 Z"/><path fill="var(--tree)" opacity=".85" d="M788 234 L788 214 L802 214 L802 234 Z"/><path fill="var(--tree)" opacity=".6" d="M769 199 L779 199 L779 208 L769 208 Z M811 199 L821 199 L821 208 L811 208 Z"/></g>
       <g class="near">
         <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
@@ -1197,20 +1207,20 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 236 L110 218 L230 229 L350 214 L470 225 L555 222 L610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <path class="far" d="M0 234 Q90 222 180 226 Q280 230 370 218 Q460 208 540 218 Q580 222 610 206 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
       <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
       <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="mid" d="M0 320 L0 250 Q140 228 260 240 Q400 254 520 290 L560 302 L560 320 Z"/>
+      <path class="mid" d="M0 320 L0 246 Q150 222 280 231 Q420 241 530 262 Q595 276 640 300 L640 320 Z"/>
       <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
-      <path class="snow" opacity=".26" d="M60 280 Q200 250 340 266 L338 272 Q200 258 64 286 Z"/>
-      <path class="snow" opacity=".26" d="M150 258 Q250 240 340 250 L338 256 Q250 246 152 264 Z"/>
+      <path class="snow" opacity=".26" d="M60 268 Q200 240 340 254 L338 260 Q200 248 64 274 Z"/>
+      <path class="snow" opacity=".26" d="M150 246 Q250 230 340 240 L338 246 Q250 236 152 252 Z"/>
       <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
       <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
       <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
-      <path class="mid" d="M760 214 L760 182 L830 182 L830 214 Z M748 184 L795 156 L842 184 Z"/>
+      <g aria-hidden="true"><path class="snow" d="M762 234 L762 190 L828 190 L828 234 Z"/><path fill="var(--tree)" d="M746 192 L795 159 L844 192 Z"/><path fill="var(--tree)" opacity=".85" d="M788 234 L788 214 L802 214 L802 234 Z"/><path fill="var(--tree)" opacity=".6" d="M769 199 L779 199 L779 208 L769 208 Z M811 199 L821 199 L821 208 L811 208 Z"/></g>
       <g class="near">
         <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>

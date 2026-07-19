@@ -57,7 +57,7 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* crossed gable finials — the Lao rooftop signature */
 +'<g stroke="var(--tree)" stroke-width="3" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M1058 208 L1050 194"/><path d="M1070 208 L1078 194"/></g>'
 /* longtail boat on the river (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M846 302 Q876 310 910 302 L903 295 L853 295 Z M846 302 Q839 298 837 291 L841 290 Q843 296 849 299 Z"/><circle cx="884" cy="291" r="3.2"/><path stroke="var(--tree)" stroke-width="2" fill="none" d="M888 293 L906 288"/></g>'
++'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M846 302 Q876 310 910 302 L903 295 L853 295 Z M846 302 Q839 298 837 291 L841 290 Q843 296 849 299 Z"/></g>'
 /* near: green river band with reeds right */
 +'<g class="near"><path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>'
 +'<path d="M1148 306 C1146 284 1147 262 1145 244 L1149 244 C1151 262 1150 284 1152 306 Z M1160 308 C1160 288 1162 268 1161 250 L1165 250 C1166 268 1164 290 1164 308 Z M1174 306 C1172 286 1173 266 1171 250 L1175 250 C1177 266 1176 288 1178 306 Z"/>'
@@ -73,7 +73,7 @@ const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'Q1060 142 1200 146 L1200 200 L0 200 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>'
 /* longtail boat (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M986 176 Q1010 182 1038 176 L1032 170 L992 170 Z M986 176 Q981 173 979 168 L982 167 Q984 172 989 174 Z"/><circle cx="1016" cy="167" r="2.6"/></g>'
++'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M986 176 Q1010 182 1038 176 L1032 170 L992 170 Z M986 176 Q981 173 979 168 L982 167 Q984 172 989 174 Z"/></g>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/>'
 +'<path d="M1130 190 C1128 172 1129 156 1127 142 L1131 142 C1133 156 1132 174 1134 190 Z M1144 190 C1144 174 1146 158 1145 144 L1149 144 C1150 158 1148 176 1148 190 Z"/>'
 +'<ellipse cx="1129" cy="140" rx="2.4" ry="5"/><ellipse cx="1147" cy="142" rx="2.4" ry="5"/>'

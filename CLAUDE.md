@@ -142,12 +142,22 @@ STEPS like Nepali's (cool/misty --mtn-far, warm contrasting --mtn-mid,
 saturated green/dark --mtn-near) — never three greens or three grays; (2)
 landmark objects (houses, gers, boats, palms, trees) must sit in a layer
 that CONTRASTS their background, never inside the same-colored mid path:
-white landmarks use class `snow` (gers), dark silhouettes use
-`fill="var(--tree)"` (stilt houses, boats, horses, fishermen, poplars —
-adapts in dark mode and echoes the logo color), accents may use
-`var(--crimson)` (pomegranate fruit). Also: no cross-shaped silhouettes
-ever (a stilt-fisherman pole+crossbar read as a cross until the figure and
-angled rod were added).
+white landmarks use class `snow` (gers, the Nepali house walls), dark
+silhouettes use
+`fill="var(--tree)"` (stilt houses, boats, horses, poplars, the Nepali
+house roof — adapts in dark mode and echoes the logo color), accents may
+use `var(--crimson)` (pomegranate fruit). Also: no cross-shaped
+silhouettes ever. **(3) NO HUMAN FIGURES in scenery art** (Ruan, July
+2026 — "little dark green stickmen"): boats, houses, animals and plants
+are welcome; people never. The Lao/Bengali boatmen, Burmese leg-rowers
+and Sinhala stilt-fishermen were all removed (Sinhala's whole stilt
+groups went — bare pole+crossbar would have read as crosses); empty
+boats stayed. The July 2026 Nepali hero refresh follows all three rules:
+the left golden hill was raised to cover the blocky far-blue slab under
+the title (thin misty ridge only), the far ridge smoothed into curves,
+and the village house rebuilt with `snow` whitewashed walls, a
+`var(--tree)` roof, door and windows — edit it via replace_all: the hero
+markup exists as THREE verbatim copies (home + both faith pages).
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
