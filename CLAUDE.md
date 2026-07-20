@@ -157,17 +157,16 @@ Pashto-LIKE composition, then deliberately DIFFERENTIATED in round 2,
 July 2026): the village house is REMOVED; one calm low far ridge sweeps
 x0→~730 (band →~775) with the bold peaks right of it, ONE continuous
 terraced mid band edge-to-edge, gentle continuous green near — but the
-peaks are a STEPPED HIMALAYAN MASSIF (double summits with snow-capped
-shoulders; 9 hero caps / 6 band caps, tallest apex y112; July 2026
-round 3 per Ruan extended the chain LEFT with two smaller foothill
-peaks — hero apexes 648/y206 + 718/y182, band 692/y122 + 742/y100 —
-which poke above the old y235 rule-of-thumb but stay BELOW the title
-text line, ~y165 on desktop) and a GLACIAL
-RIVER (class `river`, fill var(--river): light #8FBADC / dark #31536E
-defined beside the scenery vars; the hero adds a snow-opacity sparkle
-streak) descends from the peak valley across the mid + near layers to
-the bottom edge — the river paths sit AFTER the near group so they
-overlay the fields. Edit via replace_all: the hero markup exists
+peaks are THREE BIG BOLD PEAKS (July 2026 round 4, per Ruan — "less
+mountains that are bigger", prepping faith mode for translation: hero
+summits 760/y150 + 940/y92 + 1120/y128 with one flank bend each + 3
+large snow caps; band summits 840/y96 + 960/y74 + 1080/y88 — keep the
+band's middle apex ≥y74: wide viewports crop the band's top ~y80 under
+xMidYMax slice). The round-2 glacial river and round-3 foothills were
+REMOVED in round 4 (river CSS + --river vars deleted too). Same round:
+the Jesus faith hero h1 dropped the Fraunces display font (it rendered
+"wrinkled") for Plus Jakarta Sans w700 via the #view-fjesus .hero-text
+h1 rule; God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
 as THREE verbatim copies (home + both faith pages) and the band as FOUR
 verbatim copies.
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
