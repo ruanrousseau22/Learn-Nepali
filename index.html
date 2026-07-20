@@ -52,7 +52,7 @@
   --crimson:#C2362E; --crimson-deep:#9B2820; --saffron:#C67911; --saffron-soft:#FCEBCC;
   --teal:#0F8C74; --teal-soft:#CFEEE6; --line:rgba(27,36,48,0.10); --line-soft:rgba(27,36,48,0.055);
   --good:#0F8C74; --bad:#C2362E; --card:#FFFFFF;
-  --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#B9D2E6; --mtn-far2:#89AECC; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --snow:#FFFFFF; --orb:#F6D98F;
+  --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#A7C4DD; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --snow:#FFFFFF; --orb:#F6D98F;
   --tree:#2C5F3A;
   --r-sm:8px; --r-md:14px; --r-lg:20px; --shadow:0 1px 2px rgba(27,36,48,0.05), 0 10px 26px -16px rgba(20,40,80,0.30);
 }
@@ -61,7 +61,7 @@
   --crimson:#E8836A; --crimson-deep:#CB5F47; --saffron:#E7AD5E; --saffron-soft:#332A1C;
   --teal:#5FC6B0; --teal-soft:#15302B; --line:rgba(233,240,247,0.12); --line-soft:rgba(233,240,247,0.06);
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
-  --sky1:#142539; --sky2:#0F1419; --mtn-far:#1E3348; --mtn-far2:#31506E; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
+  --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
   --tree:#4FA06A;
 }
 /* per-language scenery palette (set via data-lang by applyArt) —
@@ -147,7 +147,6 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero{position:relative;width:100%;overflow:hidden;border-radius:0 0 30px 30px;margin-bottom:12px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
 .hero-mtns{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero-mtns .far{fill:var(--mtn-far)}
-.hero-mtns .far2{fill:var(--mtn-far2)}
 .hero-mtns .mid{fill:var(--mtn-mid)}
 .hero-mtns .near{fill:var(--mtn-near)}
 .hero-mtns .snow{fill:var(--snow)}
@@ -180,7 +179,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 /* slim mountain band for sub-pages — a calmer echo of the home hero */
 .page-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;margin-bottom:24px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
 .pb-mtns{position:absolute;inset:0;width:100%;height:100%;display:block}
-.pb-mtns .far{fill:var(--mtn-far)} .pb-mtns .far2{fill:var(--mtn-far2)} .pb-mtns .mid{fill:var(--mtn-mid)} .pb-mtns .near{fill:var(--mtn-near)} .pb-mtns .snow{fill:var(--snow)}
+.pb-mtns .far{fill:var(--mtn-far)} .pb-mtns .mid{fill:var(--mtn-mid)} .pb-mtns .near{fill:var(--mtn-near)} .pb-mtns .snow{fill:var(--snow)}
 .pb-mtns .orb{fill:var(--orb)} .pb-mtns .orb-glow{fill:var(--orb);opacity:.3}
 .pb-inner{position:relative;z-index:2;max-width:1020px;margin:0 auto;min-height:140px;display:flex;flex-direction:column;justify-content:flex-start;padding:22px 24px}
 .pb-inner h2{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-size:clamp(28px,4.6vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.04;color:var(--ink)}
@@ -989,25 +988,25 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 246 L660 234 L724 186 L760 150 L800 196 L830 228 L872 170 L940 92 L988 164 L1030 222 L1080 168 L1120 128 L1160 172 L1200 206 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M760 150 L778 174 L768 170 L760 162 L750 172 L742 169 Z"/>
-      <path class="snow" d="M940 92 L962 124 L950 118 L940 109 L928 121 L918 116 Z"/>
-      <path class="snow" d="M1120 128 L1136 150 L1127 146 L1120 139 L1110 148 L1102 144 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
+      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
+      <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="far2" d="M560 320 L560 288 L636 266 L716 196 L790 240 L868 172 L940 224 L1014 180 L1084 230 L1150 188 L1200 216 L1200 320 Z"/>
-      <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
-      <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
-      <path class="snow" opacity=".22" d="M170 304 Q320 296 450 302 L448 308 Q320 300 174 310 Z"/>
-      <path class="snow" opacity=".22" d="M840 296 Q960 290 1080 294 L1078 300 Q960 294 844 302 Z"/>
+      <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
+      <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
+      <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
             <g class="near">
-        <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
       <g fill="var(--tree)">
-        <path d="M1096 262 L1107.6 278.7 L1102.4 278.7 L1111.4 294.1 L1105 294.1 L1114 308.3 L1098.6 308.3 L1098.6 316 L1093.4 316 L1093.4 308.3 L1078 308.3 L1087 294.1 L1080.6 294.1 L1089.6 278.7 L1084.4 278.7 Z"/>
-        <path d="M1146 272 L1155 285 L1151 285 L1158 297 L1153 297 L1160 308 L1148 308 L1148 314 L1144 314 L1144 308 L1132 308 L1139 297 L1134 297 L1141 285 L1137 285 Z"/>
-        <path d="M1058 286 L1064.9 295.9 L1061.8 295.9 L1067.1 305 L1063.3 305 L1068.7 313.4 L1059.5 313.4 L1059.5 318 L1056.5 318 L1056.5 313.4 L1047.3 313.4 L1052.7 305 L1048.9 305 L1054.2 295.9 L1051.1 295.9 Z"/>
-        <path d="M176 270 L184.1 281.8 L180.5 281.8 L186.9 292.6 L182.3 292.6 L188.7 302.6 L177.8 302.6 L177.8 308 L174.2 308 L174.2 302.6 L163.3 302.6 L169.7 292.6 L165.1 292.6 L171.5 281.8 L167.9 281.8 Z"/>
-        <path d="M222 284 L228 292.7 L225.3 292.7 L230 300.7 L226.7 300.7 L231.3 308 L223.3 308 L223.3 312 L220.7 312 L220.7 308 L212.7 308 L217.3 300.7 L214 300.7 L218.7 292.7 L216 292.7 Z"/>
+        <path d="M1096 236 L1107.6 252.7 L1102.4 252.7 L1111.4 268.1 L1105 268.1 L1114 282.3 L1098.6 282.3 L1098.6 290 L1093.4 290 L1093.4 282.3 L1078 282.3 L1087 268.1 L1080.6 268.1 L1089.6 252.7 L1084.4 252.7 Z"/>
+        <path d="M1146 250 L1155 263 L1151 263 L1158 275 L1153 275 L1160 286 L1148 286 L1148 292 L1144 292 L1144 286 L1132 286 L1139 275 L1134 275 L1141 263 L1137 263 Z"/>
+        <path d="M1058 256 L1064.9 265.9 L1061.8 265.9 L1067.1 275 L1063.3 275 L1068.7 283.4 L1059.5 283.4 L1059.5 288 L1056.5 288 L1056.5 283.4 L1047.3 283.4 L1052.7 275 L1048.9 275 L1054.2 265.9 L1051.1 265.9 Z"/>
+        <path d="M176 251 L184.1 262.8 L180.5 262.8 L186.9 273.6 L182.3 273.6 L188.7 283.6 L177.8 283.6 L177.8 289 L174.2 289 L174.2 283.6 L163.3 283.6 L169.7 273.6 L165.1 273.6 L171.5 262.8 L167.9 262.8 Z"/>
+        <path d="M222 259 L228 267.7 L225.3 267.7 L230 275.7 L226.7 275.7 L231.3 283 L223.3 283 L223.3 287 L220.7 287 L220.7 283 L212.7 283 L217.3 275.7 L214 275.7 L218.7 267.7 L216 267.7 Z"/>
       </g>
     </svg>
     <div class="hero-inner">
@@ -1042,11 +1041,9 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 146 760 140 L840 96 L900 138 L960 74 L1024 134 L1080 88 L1140 132 Q1170 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M840 96 L853 114 L846 111 L840 104 L832 112 L826 109 Z"/>
-      <path class="snow" d="M960 74 L976 96 L967 92 L960 85 L951 94 L944 90 Z"/>
-      <path class="snow" d="M1080 88 L1092 104 L1086 101 L1080 96 L1072 103 L1066 100 Z"/>
-      <path class="far2" d="M720 200 L720 176 L792 160 L848 118 L900 146 L944 104 L996 142 L1052 110 L1104 146 L1150 116 L1200 148 L1200 200 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1083,11 +1080,9 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 146 760 140 L840 96 L900 138 L960 74 L1024 134 L1080 88 L1140 132 Q1170 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M840 96 L853 114 L846 111 L840 104 L832 112 L826 109 Z"/>
-      <path class="snow" d="M960 74 L976 96 L967 92 L960 85 L951 94 L944 90 Z"/>
-      <path class="snow" d="M1080 88 L1092 104 L1086 101 L1080 96 L1072 103 L1066 100 Z"/>
-      <path class="far2" d="M720 200 L720 176 L792 160 L848 118 L900 146 L944 104 L996 142 L1052 110 L1104 146 L1150 116 L1200 148 L1200 200 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1112,11 +1107,9 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 146 760 140 L840 96 L900 138 L960 74 L1024 134 L1080 88 L1140 132 Q1170 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M840 96 L853 114 L846 111 L840 104 L832 112 L826 109 Z"/>
-      <path class="snow" d="M960 74 L976 96 L967 92 L960 85 L951 94 L944 90 Z"/>
-      <path class="snow" d="M1080 88 L1092 104 L1086 101 L1080 96 L1072 103 L1066 100 Z"/>
-      <path class="far2" d="M720 200 L720 176 L792 160 L848 118 L900 146 L944 104 L996 142 L1052 110 L1104 146 L1150 116 L1200 148 L1200 200 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1171,25 +1164,25 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 246 L660 234 L724 186 L760 150 L800 196 L830 228 L872 170 L940 92 L988 164 L1030 222 L1080 168 L1120 128 L1160 172 L1200 206 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M760 150 L778 174 L768 170 L760 162 L750 172 L742 169 Z"/>
-      <path class="snow" d="M940 92 L962 124 L950 118 L940 109 L928 121 L918 116 Z"/>
-      <path class="snow" d="M1120 128 L1136 150 L1127 146 L1120 139 L1110 148 L1102 144 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
+      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
+      <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="far2" d="M560 320 L560 288 L636 266 L716 196 L790 240 L868 172 L940 224 L1014 180 L1084 230 L1150 188 L1200 216 L1200 320 Z"/>
-      <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
-      <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
-      <path class="snow" opacity=".22" d="M170 304 Q320 296 450 302 L448 308 Q320 300 174 310 Z"/>
-      <path class="snow" opacity=".22" d="M840 296 Q960 290 1080 294 L1078 300 Q960 294 844 302 Z"/>
+      <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
+      <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
+      <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
             <g class="near">
-        <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
       <g fill="var(--tree)">
-        <path d="M1096 262 L1107.6 278.7 L1102.4 278.7 L1111.4 294.1 L1105 294.1 L1114 308.3 L1098.6 308.3 L1098.6 316 L1093.4 316 L1093.4 308.3 L1078 308.3 L1087 294.1 L1080.6 294.1 L1089.6 278.7 L1084.4 278.7 Z"/>
-        <path d="M1146 272 L1155 285 L1151 285 L1158 297 L1153 297 L1160 308 L1148 308 L1148 314 L1144 314 L1144 308 L1132 308 L1139 297 L1134 297 L1141 285 L1137 285 Z"/>
-        <path d="M1058 286 L1064.9 295.9 L1061.8 295.9 L1067.1 305 L1063.3 305 L1068.7 313.4 L1059.5 313.4 L1059.5 318 L1056.5 318 L1056.5 313.4 L1047.3 313.4 L1052.7 305 L1048.9 305 L1054.2 295.9 L1051.1 295.9 Z"/>
-        <path d="M176 270 L184.1 281.8 L180.5 281.8 L186.9 292.6 L182.3 292.6 L188.7 302.6 L177.8 302.6 L177.8 308 L174.2 308 L174.2 302.6 L163.3 302.6 L169.7 292.6 L165.1 292.6 L171.5 281.8 L167.9 281.8 Z"/>
-        <path d="M222 284 L228 292.7 L225.3 292.7 L230 300.7 L226.7 300.7 L231.3 308 L223.3 308 L223.3 312 L220.7 312 L220.7 308 L212.7 308 L217.3 300.7 L214 300.7 L218.7 292.7 L216 292.7 Z"/>
+        <path d="M1096 236 L1107.6 252.7 L1102.4 252.7 L1111.4 268.1 L1105 268.1 L1114 282.3 L1098.6 282.3 L1098.6 290 L1093.4 290 L1093.4 282.3 L1078 282.3 L1087 268.1 L1080.6 268.1 L1089.6 252.7 L1084.4 252.7 Z"/>
+        <path d="M1146 250 L1155 263 L1151 263 L1158 275 L1153 275 L1160 286 L1148 286 L1148 292 L1144 292 L1144 286 L1132 286 L1139 275 L1134 275 L1141 263 L1137 263 Z"/>
+        <path d="M1058 256 L1064.9 265.9 L1061.8 265.9 L1067.1 275 L1063.3 275 L1068.7 283.4 L1059.5 283.4 L1059.5 288 L1056.5 288 L1056.5 283.4 L1047.3 283.4 L1052.7 275 L1048.9 275 L1054.2 265.9 L1051.1 265.9 Z"/>
+        <path d="M176 251 L184.1 262.8 L180.5 262.8 L186.9 273.6 L182.3 273.6 L188.7 283.6 L177.8 283.6 L177.8 289 L174.2 289 L174.2 283.6 L163.3 283.6 L169.7 273.6 L165.1 273.6 L171.5 262.8 L167.9 262.8 Z"/>
+        <path d="M222 259 L228 267.7 L225.3 267.7 L230 275.7 L226.7 275.7 L231.3 283 L223.3 283 L223.3 287 L220.7 287 L220.7 283 L212.7 283 L217.3 275.7 L214 275.7 L218.7 267.7 L216 267.7 Z"/>
       </g>
     </svg>
     <div class="hero-inner">
@@ -1226,25 +1219,25 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
-      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 246 L660 234 L724 186 L760 150 L800 196 L830 228 L872 170 L940 92 L988 164 L1030 222 L1080 168 L1120 128 L1160 172 L1200 206 L1200 320 L0 320 Z"/>
-      <path class="snow" d="M760 150 L778 174 L768 170 L760 162 L750 172 L742 169 Z"/>
-      <path class="snow" d="M940 92 L962 124 L950 118 L940 109 L928 121 L918 116 Z"/>
-      <path class="snow" d="M1120 128 L1136 150 L1127 146 L1120 139 L1110 148 L1102 144 Z"/>
+      <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
+      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
+      <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
-      <path class="far2" d="M560 320 L560 288 L636 266 L716 196 L790 240 L868 172 L940 224 L1014 180 L1084 230 L1150 188 L1200 216 L1200 320 Z"/>
-      <path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>
-      <path class="snow" opacity=".22" d="M80 292 Q230 286 380 290 L378 296 Q230 290 84 298 Z"/>
-      <path class="snow" opacity=".22" d="M170 304 Q320 296 450 302 L448 308 Q320 300 174 310 Z"/>
-      <path class="snow" opacity=".22" d="M840 296 Q960 290 1080 294 L1078 300 Q960 294 844 302 Z"/>
+      <path class="mid" d="M640 320 L640 300 Q700 246 790 226 Q900 202 1010 238 Q1110 268 1200 262 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M700 292 Q880 246 1060 270 L1058 276 Q880 254 704 298 Z"/>
+      <path class="snow" opacity=".26" d="M760 268 Q900 232 1040 254 L1038 260 Q900 240 764 274 Z"/>
+      <path class="snow" opacity=".26" d="M820 246 Q920 222 1020 240 L1018 246 Q920 230 824 252 Z"/>
             <g class="near">
-        <path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
         </g>
       <g fill="var(--tree)">
-        <path d="M1096 262 L1107.6 278.7 L1102.4 278.7 L1111.4 294.1 L1105 294.1 L1114 308.3 L1098.6 308.3 L1098.6 316 L1093.4 316 L1093.4 308.3 L1078 308.3 L1087 294.1 L1080.6 294.1 L1089.6 278.7 L1084.4 278.7 Z"/>
-        <path d="M1146 272 L1155 285 L1151 285 L1158 297 L1153 297 L1160 308 L1148 308 L1148 314 L1144 314 L1144 308 L1132 308 L1139 297 L1134 297 L1141 285 L1137 285 Z"/>
-        <path d="M1058 286 L1064.9 295.9 L1061.8 295.9 L1067.1 305 L1063.3 305 L1068.7 313.4 L1059.5 313.4 L1059.5 318 L1056.5 318 L1056.5 313.4 L1047.3 313.4 L1052.7 305 L1048.9 305 L1054.2 295.9 L1051.1 295.9 Z"/>
-        <path d="M176 270 L184.1 281.8 L180.5 281.8 L186.9 292.6 L182.3 292.6 L188.7 302.6 L177.8 302.6 L177.8 308 L174.2 308 L174.2 302.6 L163.3 302.6 L169.7 292.6 L165.1 292.6 L171.5 281.8 L167.9 281.8 Z"/>
-        <path d="M222 284 L228 292.7 L225.3 292.7 L230 300.7 L226.7 300.7 L231.3 308 L223.3 308 L223.3 312 L220.7 312 L220.7 308 L212.7 308 L217.3 300.7 L214 300.7 L218.7 292.7 L216 292.7 Z"/>
+        <path d="M1096 236 L1107.6 252.7 L1102.4 252.7 L1111.4 268.1 L1105 268.1 L1114 282.3 L1098.6 282.3 L1098.6 290 L1093.4 290 L1093.4 282.3 L1078 282.3 L1087 268.1 L1080.6 268.1 L1089.6 252.7 L1084.4 252.7 Z"/>
+        <path d="M1146 250 L1155 263 L1151 263 L1158 275 L1153 275 L1160 286 L1148 286 L1148 292 L1144 292 L1144 286 L1132 286 L1139 275 L1134 275 L1141 263 L1137 263 Z"/>
+        <path d="M1058 256 L1064.9 265.9 L1061.8 265.9 L1067.1 275 L1063.3 275 L1068.7 283.4 L1059.5 283.4 L1059.5 288 L1056.5 288 L1056.5 283.4 L1047.3 283.4 L1052.7 275 L1048.9 275 L1054.2 265.9 L1051.1 265.9 Z"/>
+        <path d="M176 251 L184.1 262.8 L180.5 262.8 L186.9 273.6 L182.3 273.6 L188.7 283.6 L177.8 283.6 L177.8 289 L174.2 289 L174.2 283.6 L163.3 283.6 L169.7 273.6 L165.1 273.6 L171.5 262.8 L167.9 262.8 Z"/>
+        <path d="M222 259 L228 267.7 L225.3 267.7 L230 275.7 L226.7 275.7 L231.3 283 L223.3 283 L223.3 287 L220.7 287 L220.7 283 L212.7 283 L217.3 275.7 L214 275.7 L218.7 267.7 L216 267.7 Z"/>
       </g>
     </svg>
     <div class="hero-inner">
@@ -1262,11 +1255,9 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 146 760 140 L840 96 L900 138 L960 74 L1024 134 L1080 88 L1140 132 Q1170 138 1200 142 L1200 200 L0 200 Z"/>
-      <path class="snow" d="M840 96 L853 114 L846 111 L840 104 L832 112 L826 109 Z"/>
-      <path class="snow" d="M960 74 L976 96 L967 92 L960 85 L951 94 L944 90 Z"/>
-      <path class="snow" d="M1080 88 L1092 104 L1086 101 L1080 96 L1072 103 L1066 100 Z"/>
-      <path class="far2" d="M720 200 L720 176 L792 160 L848 118 L900 146 L944 104 L996 142 L1052 110 L1104 146 L1150 116 L1200 148 L1200 200 Z"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
+      <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">

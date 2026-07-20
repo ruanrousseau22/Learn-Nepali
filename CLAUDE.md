@@ -152,38 +152,27 @@ silhouettes ever. **(3) NO HUMAN FIGURES in scenery art** (Ruan, July
 are welcome; people never. The Lao/Bengali boatmen, Burmese leg-rowers
 and Sinhala stilt-fishermen were all removed (Sinhala's whole stilt
 groups went — bare pole+crossbar would have read as crosses); empty
-boats stayed. The July 2026 Nepali hero refresh (per Ruan —
-Pashto-LIKE composition, then deliberately DIFFERENTIATED in round 2,
-July 2026): the village house is REMOVED; one calm low far ridge sweeps
-x0→~730 (band →~775) with the bold peaks right of it, ONE continuous
-terraced mid band edge-to-edge, gentle continuous green near — but the
-peaks are THREE BIG BOLD PEAKS (July 2026 round 4, per Ruan — "less
-mountains that are bigger", prepping faith mode for translation: hero
-summits 760/y150 + 940/y92 + 1120/y128 with one flank bend each + 3
-large snow caps; band summits 840/y96 + 960/y74 + 1080/y88 — keep the
-band's middle apex ≥y74: wide viewports crop the band's top ~y80 under
-xMidYMax slice). The round-2 glacial river and round-3 foothills were
-REMOVED in round 4 (river CSS + --river vars deleted too). Round 5
-(July 2026, per Ruan; raised in round 7) added a LOWER FRONT RIDGE
-between the big peaks and the mid band: class `far2`, fill
-var(--mtn-far2) — a rolling snowless foothill line drawn just before
-the mid path so mid/near overlap its base. Round 7 RAISED it (hero
-summits y172-196, band y104-118) so it clearly overlaps the big
-peaks' flanks, and strengthened the layer contrast the atmospheric
-way — back peaks hazier (--mtn-far light #B9D2E6 / dark #1E3348),
-front ridge deeper (--mtn-far2 light #89AECC / dark #31506E). The
-swap (light front / dark back) was tried and rejected — depth order
-read as ambiguous. Round 6 (July 2026,
-per Ruan) planted PINE GROVES in fill="var(--tree)" (the logo green,
-dark-mode aware): hero — a grove of 3 (h54/42/32) on the near band
-right at x1058-1146 + a pair (h38/28) on the left at x176-222, in a
-<g> after the near group; band — the original x1120 pine now carries
-explicit var(--tree) plus two new sizes (h48 at x1058, h32 at x1170),
-a grove of three. All pines share the band pine's chevron proportions
-(half-widths 18/24/28 per 84 height, scaled). Same round-4 note:
-the Jesus faith hero h1 dropped the Fraunces display font (it rendered
-"wrinkled") for Plus Jakarta Sans w700 via the #view-fjesus .hero-text
-h1 rule; God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
+boats stayed. The Nepali hero/band FINAL FORM (July 2026, settled
+after 8 rounds of iteration with Ruan): the ORIGINAL pre-refresh art
+restored — the original jagged Himalaya (hero peaks 675/y132, 815/y102,
+955/y136, 1080/y148 with the original 4 polygon snow caps; band peaks
+805/y78 + 965/y90 with 2 polygons), the original warm terraced RIGHT
+hill (mid path M640… Q790 226 Q900 202… with its 3 terrace streaks)
+and the original rolling near green — BUT with two keepers from the
+refresh era: (1) the far ridge flattens to a CALM STRAIGHT sweep under
+the "Learn Nepali" title (M0 252 Q150 246 … flowing into the peaks at
+x~622; no left hill, no left streaks — the left stays calm), and
+(2) the round-6 PINE GROVES in fill="var(--tree)" (hero: grove of 3
+h54/42/32 at x1058-1146 + pair h38/28 at x176-222, bases ~y287-292 on
+the near crest; band: grove of three at x1058/x1120/x1170). The
+village house stays REMOVED; the experimental glacial river, the
+left-foothill extension, the three-big-peaks rework and the far2
+front ridge (+ its --mtn-far2/--river vars and CSS) were ALL tried
+and rolled back — do not reintroduce them. --mtn-far is back to its
+original #A7C4DD / dark #21384F. Also from that era: the Jesus faith
+hero h1 dropped the Fraunces display font (it rendered "wrinkled")
+for Plus Jakarta Sans w700 via the #view-fjesus .hero-text h1 rule;
+God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
 as THREE verbatim copies (home + both faith pages) and the band as FOUR
 verbatim copies.
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
