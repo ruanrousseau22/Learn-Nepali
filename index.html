@@ -907,6 +907,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fread-art{width:min(320px,80%);margin:6px auto 12px;border-radius:14px;overflow:hidden}
 .fread-art svg{width:100%;height:auto;display:block}
 .fread-t{text-align:center;font-size:1.28rem;margin:0 0 8px}
+.fsoon{margin:22px 0;padding:18px 16px;border:1.5px dashed var(--line);border-radius:14px;text-align:center;font-style:italic;opacity:.75}
+.fsoon span{display:block;margin-top:5px;font-size:.92em}
 .fnote{background:color-mix(in srgb,var(--crimson) 7%,var(--card));border:1px solid color-mix(in srgb,var(--crimson) 30%,var(--line));border-radius:14px;padding:13px 15px;margin:16px 0;line-height:1.6}
 .fnote-tag{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--crimson);margin-bottom:5px}
 .fread-nav{display:flex;align-items:center;justify-content:space-between;margin:18px 0 6px}
@@ -9152,7 +9154,7 @@ function loadAudioManifest(){
 function playFile(t,rate){
   const k=audioKey(t);
   /* course clips first, then religious-studies clips (audio-nef/) — hashes never collide across real content */
-  const base=AUDIO_KEYS.has(k)?AUDIO_BASE:(FAITH_KEYS.has(k)?'audio-nef/':null);
+  const base=AUDIO_KEYS.has(k)?AUDIO_BASE:(FAITH_KEYS.has(k)?faithBase():null);
   if(!base)return false;
   try{
     let a=audioCache.get(k);
@@ -9444,7 +9446,7 @@ function paintHomeLangSwitch(){
 }
 function toggleLangMenu(e){if(e)e.stopPropagation();const w=document.getElementById('lang-switch');if(!w)return;const open=w.classList.toggle('open');const t=document.getElementById('lang-toggle');if(t)t.setAttribute('aria-expanded',open?'true':'false');}
 function closeLangMenu(){const w=document.getElementById('lang-switch');if(w&&w.classList.contains('open')){w.classList.remove('open');const t=document.getElementById('lang-toggle');if(t)t.setAttribute('aria-expanded','false');}}
-function pickLang(code){closeLangMenu();if(code===LANG.code)return;switchLang(code);}
+function pickLang(code){closeLangMenu();if(S.mode==='faith'){switchFaithLang(code);return;}if(code===LANG.code)return;switchLang(code);}
 document.addEventListener('click',function(e){const w=document.getElementById('lang-switch');if(w&&w.classList.contains('open')&&!w.contains(e.target))closeLangMenu();});
 
 /* ===== MODES (July 2026): language learning vs religious studies =====
@@ -9456,24 +9458,82 @@ const MODE_CATALOG=[{code:'learn',label:'Language learning',short:'Language lear
 const MODE_ICONS={
   learn:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg></span>',
   faith:'<span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 4.9 7.4 4.5 4 4.5v13.7c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V4.5c-3.4 0-6 .4-8 2z"/><path d="M12 6.5v13.7"/></svg></span>'};
-const FAITH_CATALOG=[{code:'ne',label:'Nepali — नेपाली'}];
+const FAITH_CATALOG=[
+  {code:'ne',label:'Nepali — नेपाली'},
+  {code:'bn',label:'Bengali — বাংলা'},
+  {code:'my',label:'Burmese — မြန်မာ'},
+  {code:'km',label:'Khmer — ខ្មែរ'},
+  {code:'lo',label:'Lao — ລາວ'},
+  {code:'mn',label:'Mongolian — Монгол'},
+  {code:'ps',label:'Pashto — پښتو'},
+  {code:'si',label:'Sinhala — සිංහල'},
+];
 let FAITH=null,FAITH_KEYS=new Set();
-function registerFaith(p){FAITH=p;}
+const FAITHS={}; /* every loaded faith pack by code; FAITH = the active one */
+function registerFaith(p){FAITHS[p.code]=p;if(!FAITH||FAITH.code===p.code)FAITH=p;}
+function faithBase(){return 'audio-'+((FAITH&&FAITH.code)||'ne')+'f/';}
 function loadFaithScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='faith/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
-function loadFaithManifest(){fetch('audio-nef/manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;FAITH_KEYS=new Set(Array.isArray(d)?d:(d.keys||[]));}).catch(()=>{});}
+function loadFaithManifest(){FAITH_KEYS=new Set();fetch(faithBase()+'manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;FAITH_KEYS=new Set(Array.isArray(d)?d:(d.keys||[]));}).catch(()=>{});}
+/* ----- multi-language faith (July 2026): a skeleton exists for every course
+   language (faith/<code>.js — structure, art and UI slots; content translated
+   later). switchFaithLang loads the pack, applies the matching COURSE pack
+   (fonts, TTS voice, scenery palette follow via switchLang) and swaps the
+   faith heroes to that pack's art. UI strings route through fui() — a faith
+   pack's ui{} overrides the built-in Nepali defaults; fnum() uses the pack's
+   digits[] where the script has native numerals. ----- */
+async function switchFaithLang(code){
+  if(FAITH&&FAITH.code===code)return;
+  fstopAll();
+  if(!FAITHS[code])await loadFaithScript(code);
+  if(!FAITHS[code])return; /* failed load: stay put */
+  if(LANG.code!==code)await switchLang(code,true);
+  if(LANG.code!==code)return;
+  FAITH=FAITHS[code];FVIEW=null;
+  loadFaithDone();loadFaithManifest();applyFaithBrand();buildFaith();paintHomeLangSwitch();
+  const act=document.querySelector('.view.active');
+  show(act&&act.id==='view-fjesus'?'fjesus':'fstory');
+}
+let FHERO_DEF=null; /* built-in faith-page hero art + headings (Nepali), captured once */
+function applyFaithBrand(){
+  const vs={fstory:document.getElementById('view-fstory'),fjesus:document.getElementById('view-fjesus')};
+  if(!FHERO_DEF&&vs.fstory){FHERO_DEF={};['fstory','fjesus'].forEach(function(k){const v=vs[k];if(!v)return;
+    const m=v.querySelector('.hero-mtns'),h=v.querySelector('.hero-text h1'),sub=v.querySelector('.hero-fsub');
+    FHERO_DEF[k]={art:m?m.innerHTML:'',h1:h?h.innerHTML:'',sub:sub?sub.textContent:''};});}
+  const isNe=!FAITH||FAITH.code==='ne';
+  const pk=(typeof PACKS!=='undefined')&&PACKS[FAITH?FAITH.code:'ne'];
+  ['fstory','fjesus'].forEach(function(k){
+    const v=vs[k];if(!v||!FHERO_DEF||!FHERO_DEF[k])return;
+    const m=v.querySelector('.hero-mtns'),h=v.querySelector('.hero-text h1'),sub=v.querySelector('.hero-fsub');
+    const st=(FAITH&&FAITH.stories||[]).find(x=>'view-'+x.id==='view-'+k)|| (FAITH&&FAITH.stories||[]).find(x=>x.id===k);
+    if(isNe){
+      if(m)m.innerHTML=FHERO_DEF[k].art;
+      if(h)h.innerHTML=FHERO_DEF[k].h1;
+      if(sub){sub.textContent=FHERO_DEF[k].sub;sub.style.display='';}
+    }else{
+      if(m)m.innerHTML=(pk&&pk.art&&pk.art.hero)?pk.art.hero:FHERO_DEF[k].art;
+      if(h)h.textContent=(st&&st.title)||FHERO_DEF[k].h1;
+      if(sub){sub.textContent=(st&&st.ne)||'';sub.style.display=(st&&st.ne)?'':'none';}
+    }
+  });
+}
+const FUI_NE={start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'Content coming soon',soonEn:'यहाँ चाँडै सामग्री आउँदैछ'};
+function fui(k){const u=FAITH&&FAITH.ui;return (u&&u[k]!=null)?u[k]:FUI_NE[k];}
+function fnum(n){const d=FAITH&&FAITH.digits;if(d)return String(n).split('').map(c=>d[c]||c).join('');return (!FAITH||FAITH.code==='ne')?devNum(n):String(n);}
 function curMode(){return S.mode==='faith'?'faith':'learn';}
 async function switchMode(m){
   if(m===curMode())return;
   closeModeMenu();
   if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
   if(m==='faith'){
-    if(LANG.code!=='ne')await switchLang('ne'); /* runs before S.mode flips, so the faith lock does not block it */
-    if(LANG.code!=='ne')return;
-    if(!FAITH)await loadFaithScript('ne');
-    if(!FAITH)return; /* failed load: stay put */
+    const fcode=(FAITH&&FAITH.code)||'ne';
+    if(LANG.code!==fcode)await switchLang(fcode); /* runs before S.mode flips, so the faith lock does not block it */
+    if(LANG.code!==fcode)return;
+    if(!FAITHS[fcode])await loadFaithScript(fcode);
+    if(!FAITHS[fcode])return; /* failed load: stay put */
+    FAITH=FAITHS[fcode];
     S.mode='faith';save();
     document.body.classList.add('faith');
-    loadFaithDone();loadFaithManifest();buildFaith();show('fstory');
+    loadFaithDone();loadFaithManifest();applyFaithBrand();buildFaith();show('fstory');
   }else{
     S.mode='learn';save();
     document.body.classList.remove('faith');
@@ -9527,7 +9587,7 @@ function fplayNext(){
   const el=blocks[FPLAY.idx];
   if(el){el.classList.add('fplaying');try{el.scrollIntoView({block:'center',behavior:SMOOTH});}catch(e){}}
   const t=FPLAY.list[FPLAY.idx];
-  const k=audioKey(t),base=AUDIO_KEYS.has(k)?AUDIO_BASE:(FAITH_KEYS.has(k)?'audio-nef/':null);
+  const k=audioKey(t),base=AUDIO_KEYS.has(k)?AUDIO_BASE:(FAITH_KEYS.has(k)?faithBase():null);
   if(base){
     stopAudio();
     let a=audioCache.get(k);if(!a){a=new Audio(base+k+'.mp3');audioCache.set(k,a);}
@@ -9542,8 +9602,8 @@ function fplayNext(){
 function paintFPlay(){const b=document.getElementById('fplay-btn');if(!b)return;
   b.classList.toggle('playing',!!FPLAY);
   b.innerHTML=FPLAY
-    ?'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg><span class="deva">रोक्नुहोस्</span>'
-    :'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 5 L19 12 L7 19 Z" fill="currentColor"/></svg><span class="deva">पूरै कथा सुन्नुहोस्</span>';}
+    ?'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg><span class="deva">'+fui('stop')+'</span>'
+    :'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 5 L19 12 L7 19 Z" fill="currentColor"/></svg><span class="deva">'+fui('play')+'</span>';}
 function setFRom(v){fstopAll();S.fRom=v;save();buildFaith();}
 function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(!el)return;
   el.innerHTML=(FVIEW&&FVIEW.sid===st.id)?freadHTML(st,FVIEW.i):fnodesHTML(st);});}
@@ -9551,7 +9611,7 @@ const DDIG=['०','१','२','३','४','५','६','७','८','९'];
 function devNum(n){return String(n).split('').map(c=>DDIG[c]||c).join('');}
 function fpickHTML(){const rom=(S.fRom||'script')==='rom';
   return '<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
-    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">देवनागरी</button>'
+    +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">'+fui('scriptLabel')+'</button>'
     +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>';}
 function fparaHTML(p){const rom=(S.fRom||'script')==='rom';
   return '<div class="fpara"><div class="fne" role="button" tabindex="0" aria-label="Play audio" onclick="fsay(\''+p[0]+'\')">'
@@ -9568,18 +9628,18 @@ function fnodesHTML(st){
   if(nRead>=total){
     const other=(FAITH.stories||[]).find(x=>x.id!==st.id);
     h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
-      +'<div class="fdb-tx"><div class="deva fdb-ne">सबै '+devNum(total)+' घटना पढियो — बधाई छ!</div><div class="fdb-en">All '+total+' moments read — well done!</div></div>'
+      +'<div class="fdb-tx"><div class="deva fdb-ne">'+fui('done').replace('{t}',fnum(total))+'</div>'+(fui('doneEn')?'<div class="fdb-en">'+fui('doneEn').replace('{t}',total)+'</div>':'')+'</div>'
       +(other?'<button type="button" class="fdb-btn" onclick="show(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> &rarr;</button>':'')
       +'</div>';
   }else if(nRead){
-    h+='<div class="fprog"><span class="deva">'+devNum(total)+' मध्ये '+devNum(nRead)+' पढियो</span><span class="fprog-en">'+nRead+' of '+total+' read</span></div>';
+    h+='<div class="fprog"><span class="deva">'+fui('prog').replace('{t}',fnum(total)).replace('{n}',fnum(nRead))+'</span>'+(fui('progEn')?'<span class="fprog-en">'+fui('progEn').replace('{n}',nRead).replace('{t}',total)+'</span>':'')+'</div>';
   }
   h+='<div class="fnodes">';
   if(st.overview){
     h+='<button type="button" class="fnode'+(ovDone?' done':'')+(ovNext?' next':'')+'" onclick="openFNode(\''+st.id+'\',\'ov\')">'
       +'<span class="fnode-art" aria-hidden="true">'+(st.overview.art||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.overview.ne||'')+'</span><span class="fnode-en">'+st.overview.t+'</span></span>'
-      +(ovDone?'<span class="fnode-tick" aria-label="Read">✓</span>':(ovNext?'<span class="fnode-go deva">सुरु</span>':''))
+      +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.overview.ne||st.overview.t)+'</span>'+(st.overview.ne?'<span class="fnode-en">'+st.overview.t+'</span>':'')+'</span>'
+      +(ovDone?'<span class="fnode-tick" aria-label="Read">✓</span>':(ovNext?'<span class="fnode-go deva">'+fui('start')+'</span>':''))
       +(ovNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
       +'</button>';
   }
@@ -9587,8 +9647,8 @@ function fnodesHTML(st){
     const done=FAITH_DONE.has(s.id),isNext=i===next&&!ovNext;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
       +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t deva">'+devNum(i+1)+' · '+(s.ne||s.t)+'</span><span class="fnode-en">'+s.t+'</span></span>'
-      +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?'अगाडि':'सुरु')+'</span>':''))
+      +'<span class="fnode-tx"><span class="fnode-t deva">'+fnum(i+1)+' · '+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
+      +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?fui('next'):fui('start'))+'</span>':''))
       +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
       +'</button>';
   });
@@ -9597,33 +9657,41 @@ function fnodesHTML(st){
 function freadHTML(st,i){
   if(i==='ov'){
     const ov=st.overview;
-    let g='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; सबै घटनाहरू</span> · all moments</button>'
+    let g='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
       +'<div class="fread-art" aria-hidden="true">'+(ov.art||'')+'</div>'
-      +'<h3 class="fread-t"><span class="deva">'+(ov.ne||'')+'</span> <span class="fh-ne">'+ov.t+'</span></h3>'
-      +fpickHTML()
-      +'<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\',\'ov\')"></button></div>';
-    g+=(ov.paras||[]).map(fparaHTML).join('');
+      +'<h3 class="fread-t"><span class="deva">'+(ov.ne||ov.t)+'</span>'+(ov.ne?' <span class="fh-ne">'+ov.t+'</span>':'')+'</h3>'
+      +fpickHTML();
+    if(ov.paras&&ov.paras.length){
+      g+='<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\',\'ov\')"></button></div>';
+      g+=ov.paras.map(fparaHTML).join('');
+    }else{
+      g+='<div class="fsoon">'+fui('soon')+(fui('soonEn')?'<span class="deva">'+fui('soonEn')+'</span>':'')+'</div>';
+    }
     g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> &rarr;</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
     return g;
   }
   const s=st.sections[i],last=i>=st.sections.length-1;
-  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; सबै घटनाहरू</span> · all moments</button>'
+  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
     +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
-    +'<h3 class="fread-t"><span class="deva">'+(s.ne||'')+'</span>'+(s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
-    +fpickHTML()
-    +'<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\','+i+')"></button></div>';
-  h+=(s.paras||[]).map(fparaHTML).join('');
-  if(s.note){const rom=(S.fRom||'script')==='rom';
-    h+='<div class="fnote"><div class="fnote-tag"><span class="deva">किन महत्त्वपूर्ण</span> · why it matters</div>'
+    +'<h3 class="fread-t"><span class="deva">'+(s.ne||s.t)+'</span>'+(s.ne&&s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
+    +fpickHTML();
+  if(s.paras&&s.paras.length){
+    h+='<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\','+i+')"></button></div>';
+    h+=s.paras.map(fparaHTML).join('');
+  }else{
+    h+='<div class="fsoon">'+fui('soon')+(fui('soonEn')?'<span class="deva">'+fui('soonEn')+'</span>':'')+'</div>';
+  }
+  if(s.note&&s.note.length){const rom=(S.fRom||'script')==='rom';
+    h+='<div class="fnote"><div class="fnote-tag"><span class="deva">'+fui('why')+'</span>'+(fui('whyEn')?' · '+fui('whyEn'):'')+'</div>'
       +'<div class="fne" role="button" tabindex="0" aria-label="Play audio" onclick="fsay(\''+s.note[0]+'\')">'
       +(rom?'<span class="from">'+s.note[1]+'</span>':'<span class="deva">'+s.note[0]+'</span>')
       +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></div>'
       +'<div class="fen">'+s.note[2]+'</div></div>';}
   h+='<div class="fread-nav">'
-    +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">&larr; <span class="deva">अघिल्लो</span></button>':'<span class="fprev-spacer"></span>')
+    +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">&larr; <span class="deva">'+fui('prev')+'</span></button>':'<span class="fprev-spacer"></span>')
     +'<button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
-    +(last?'<span class="deva">समाप्त</span> &#10003;':'<span class="deva">अगाडि</span> &rarr;')+'</button>'
-    +'<div class="fread-count">'+devNum(i+1)+' / '+devNum(st.sections.length)+'</div></div></div>';
+    +(last?'<span class="deva">'+fui('finish')+'</span> &#10003;':'<span class="deva">'+fui('next')+'</span> &rarr;')+'</button>'
+    +'<div class="fread-count">'+fnum(i+1)+' / '+fnum(st.sections.length)+'</div></div></div>';
   return h;
 }
 function openFNode(sid,i){fstopAll();FVIEW={sid,i};buildFaith();paintFPlay();window.scrollTo({top:0,behavior:SMOOTH});}
@@ -9635,9 +9703,9 @@ function markFRead(sid,i){fstopAll();const st=(FAITH.stories||[]).find(x=>x.id==
 function markFOv(sid){fstopAll();FAITH_DONE.add(sid+'-ov');saveFaithDone();openFNode(sid,0);}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLangMenu();});
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
-async function switchLang(code){
+async function switchLang(code,fromFaith){
   if(!LANG||code===LANG.code)return;
-  if(S.mode==='faith')return; /* religious studies is Nepali-only for now — language is locked while in faith mode */
+  if(S.mode==='faith'&&!fromFaith)return; /* language locked in faith mode — switchFaithLang drives it */
   if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
   if(!PACKS[code]&&LANG_CATALOG.some(l=>l.code===code))await loadLangScript(code);
   if(!PACKS[code]){S.lang=LANG.code;save();paintLangPicker();return;} /* unknown/failed pack: stay put */

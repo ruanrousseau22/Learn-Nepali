@@ -896,8 +896,9 @@ and art. **The audience is NEPALI PEOPLE learning about Jesus** (Ruan, July
 2026): Nepali is the PRIMARY language on every surface — hero, tabs, node
 titles, story text, the explanations, buttons, even Devanagari numerals in
 progress counts — with English as the quiet second line (never English-first
-with a Nepali translation). Current scope: **Nepali only** (`FAITH_CATALOG`),
-reusing the Nepali pack's art, voices and recorded-audio plumbing.
+with a Nepali translation). Content scope today: **Nepali only** — but every
+course language now has a skeleton pack and the faith picker lists all 8
+(see the multi-language bullet below).
 - **It is a bilingual STORY PATH, not a lesson course** — no XP/exercises.
   Two pages replace Learn/Alphabet/Review while the mode is active (tabs swap
   via `body.faith` CSS): **God's Story** (`view-fstory`) — the whole biblical
@@ -987,8 +988,30 @@ reusing the Nepali pack's art, voices and recorded-audio plumbing.
   `paras[i][0]`) then `python3 generate_audio.py --lang nef` (same
   `ne-NP-SagarNeural` voice as the course). `playFile` checks the course
   manifest first, then `FAITH_KEYS` (loaded by `loadFaithManifest`).
-- Adding a faith language later = `faith/<code>.js` + `FAITH_CATALOG` entry +
-  `nef`-style extractor/generator entries + an audio dir.
+- **Multi-language faith SKELETONS (July 2026): every course language has a
+  faith pack.** `FAITH_CATALOG` lists all 8; `faith/km|my|si|lo|ps|bn|mn.js`
+  are STRUCTURE-ONLY skeletons — the same two stories / 10+10 sections /
+  shared scene art as ne (the `FNE_ART` emblems copied as `F<CODE>_ART`),
+  English titles in place, `ne:''` native fields + `paras:[]` empty, a
+  header documenting exactly how to translate (the `ne` field name always
+  holds the NATIVE string). Engine pieces: `FAITHS{}` registry
+  (`registerFaith` stores by code), `switchFaithLang(code)` (driven by the
+  faith language picker via `pickLang`; loads the pack, applies the matching
+  COURSE pack via `switchLang(code,true)` — the faith lock takes a bypass
+  arg — so fonts/TTS/palette/data-lang follow), `applyFaithBrand()` (swaps
+  both faith heroes to the pack's `art.hero` and paints h1/sub from story
+  `title`/`ne`; the built-in Nepali markup is captured once in `FHERO_DEF`
+  and restored for ne), `fui(key)` (faith UI strings — a pack's `ui{}`
+  overrides the built-in Nepali `FUI_NE` defaults; skeletons carry English
+  placeholders + a native `scriptLabel`), `fnum(n)` (uses a pack's
+  `digits[]` — km/my/lo/ps/bn have native numerals; si/mn use Western; ne
+  keeps Devanagari), and `faithBase()` = `audio-<code>f/` (per-language
+  faith clips; manifest 404s harmlessly for skeletons). Sections with empty
+  `paras` render a dashed "Content coming soon" card (`.fsoon`) instead of
+  the play row. Extractor + generator already know every `<code>f` (same
+  voices as the course) — run them only after a pack is translated.
+  Filling in a language = translate its `faith/<code>.js` (ui strings,
+  story/section `ne` titles, `note` triples, `paras`), then regen audio.
 - Future content candidates (Ruan): Jesus' followers / Acts.
 
 ## Design / content rules

@@ -62,11 +62,48 @@ LANGS = {
         "outdir": "audio-bn",
         "voices": {"male": "bn-IN-BashkarNeural", "female": "bn-IN-TanishaaNeural"},
     },
-    # religious studies (faith mode) — Nepali story reader, same voice as the course
+    # religious studies (faith mode) — per-language story reader, same voice
+    # as that language's course ("<code>f" pattern; skeletons have no strings
+    # yet — generate only after a pack is translated)
     "nef": {
         "strings": "audio_strings_nef.json",
         "outdir": "audio-nef",
         "voices": {"male": "ne-NP-SagarNeural", "female": "ne-NP-HemkalaNeural"},
+    },
+    "kmf": {
+        "strings": "audio_strings_kmf.json",
+        "outdir": "audio-kmf",
+        "voices": {"male": "km-KH-PisethNeural", "female": "km-KH-SreymomNeural"},
+    },
+    "myf": {
+        "strings": "audio_strings_myf.json",
+        "outdir": "audio-myf",
+        "voices": {"male": "my-MM-ThihaNeural", "female": "my-MM-NilarNeural"},
+    },
+    "sif": {
+        "strings": "audio_strings_sif.json",
+        "outdir": "audio-sif",
+        "voices": {"male": "si-LK-SameeraNeural", "female": "si-LK-ThiliniNeural"},
+    },
+    "lof": {
+        "strings": "audio_strings_lof.json",
+        "outdir": "audio-lof",
+        "voices": {"male": "lo-LA-ChanthavongNeural", "female": "lo-LA-KeomanyNeural"},
+    },
+    "psf": {
+        "strings": "audio_strings_psf.json",
+        "outdir": "audio-psf",
+        "voices": {"male": "ps-AF-GulNawazNeural", "female": "ps-AF-LatifaNeural"},
+    },
+    "bnf": {
+        "strings": "audio_strings_bnf.json",
+        "outdir": "audio-bnf",
+        "voices": {"male": "bn-IN-BashkarNeural", "female": "bn-IN-TanishaaNeural"},
+    },
+    "mnf": {
+        "strings": "audio_strings_mnf.json",
+        "outdir": "audio-mnf",
+        "voices": {"male": "mn-MN-BataaNeural", "female": "mn-MN-YesuiNeural"},
     },
 }
 
