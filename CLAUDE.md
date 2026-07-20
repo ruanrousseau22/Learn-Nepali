@@ -168,7 +168,14 @@ REMOVED in round 4 (river CSS + --river vars deleted too). Round 5
 and the mid band: class `far2`, fill var(--mtn-far2) (light #8FB2CF /
 dark #2B4560, beside the other scenery vars) — a rolling snowless
 foothill line (hero summits y210-226, band y126-138) drawn just
-before the mid path so mid/near overlap its base. Same round:
+before the mid path so mid/near overlap its base. Round 6 (July 2026,
+per Ruan) planted PINE GROVES in fill="var(--tree)" (the logo green,
+dark-mode aware): hero — a grove of 3 (h54/42/32) on the near band
+right at x1058-1146 + a pair (h38/28) on the left at x176-222, in a
+<g> after the near group; band — the original x1120 pine now carries
+explicit var(--tree) plus two new sizes (h48 at x1058, h32 at x1170),
+a grove of three. All pines share the band pine's chevron proportions
+(half-widths 18/24/28 per 84 height, scaled). Same round-4 note:
 the Jesus faith hero h1 dropped the Fraunces display font (it rendered
 "wrinkled") for Plus Jakarta Sans w700 via the #view-fjesus .hero-text
 h1 rule; God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
