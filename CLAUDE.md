@@ -988,9 +988,12 @@ course language now has a skeleton pack and the faith picker lists all 8
   `paras[i][0]`) then `python3 generate_audio.py --lang nef` (same
   `ne-NP-SagarNeural` voice as the course). `playFile` checks the course
   manifest first, then `FAITH_KEYS` (loaded by `loadFaithManifest`).
-- **Multi-language faith SKELETONS (July 2026): every course language has a
-  faith pack.** `FAITH_CATALOG` lists all 8; `faith/km|my|si|lo|ps|bn|mn.js`
-  are STRUCTURE-ONLY skeletons — the same two stories / 10+10 sections /
+- **Multi-language faith packs (July 2026): every course language has one.**
+  `FAITH_CATALOG` lists all 8. **TRANSLATION STATUS — Nepali (original),
+  Bengali and Burmese are FULLY TRANSLATED and shipped; Khmer, Lao,
+  Mongolian, Pashto and Sinhala are still STRUCTURE-ONLY skeletons.** See
+  the "Faith translation backlog" section below for the remaining work and
+  the exact method. A skeleton = the same two stories / 10+10 sections /
   shared scene art as ne (the `FNE_ART` emblems copied as `F<CODE>_ART`),
   English titles in place, `ne:''` native fields + `paras:[]` empty, a
   header documenting exactly how to translate (the `ne` field name always
@@ -1012,6 +1015,41 @@ course language now has a skeleton pack and the faith picker lists all 8
   voices as the course) — run them only after a pack is translated.
   Filling in a language = translate its `faith/<code>.js` (ui strings,
   story/section `ne` titles, `note` triples, `paras`), then regen audio.
+
+### Faith translation backlog (July 2026 — READ THIS BEFORE TRANSLATING)
+**Done:** ne (original source), **bn** (Kolkata Bengali, 178 clips in
+`audio-bnf/`), **my** (Burmese, 178 clips in `audio-myf/`).
+**Remaining, in this order: km → lo → mn → ps → si** — all five are still
+the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
+**Do ONE language per session, single-threaded.** A parallel-subagent
+attempt across four languages at once blew through the usage limit and
+produced nothing — the careful one-at-a-time approach is what actually
+shipped bn and my.
+Method that worked (mirror it exactly):
+1. Read `faith/ne.js` (authoritative source) + a finished pack
+   (`faith/bn.js` or `faith/my.js`) as the working example.
+2. Slice the skeleton's `const F<CODE>_ART={…}` block (~28.6KB, identical
+   language-independent scene art) and reuse it VERBATIM.
+3. Write a python generator that emits the whole `faith/<code>.js` (header,
+   art const, `registerFaith({code,digits?,ui,stories})`) with
+   `para()`/`note()` helpers that JSON-escape every value.
+4. Translate ONLY native `[0]` + romanization `[1]`. **English `[2]` and
+   the scripture ref `[3]` stay BYTE-IDENTICAL to faith/ne.js** — diffing
+   them back against ne is the automated proof of no content drift.
+   Native-primary, English quiet second line; storytelling register for the
+   un-churched reader; that language's real church vocabulary + honorific
+   register for God/Jesus (research it); romanization per the scheme at the
+   top of `lang/<code>.js` (no non-ASCII letters); native strings must
+   avoid `' " < > \`; paraphrase only; localize the two Nepal references
+   (`abraham` note + `newcreation` para) to the new country.
+5. Validate: JXA parse (2 stories, 10+10 sections, every section has `ne` +
+   3-part `note` + non-empty `paras`), char guards, English/ref diff vs ne.
+6. Audio: `extract_audio_strings.js <code>f` → `generate_audio.py --lang
+   <code>f` → prune orphans + write `audio-<code>f/manifest.json` (FNV-1a),
+   then `extract_audio_strings.js <code>f --check`.
+7. Verify in the browser preview (faith mode → switch language → hero art,
+   script/roman toggle, console clean) AND confirm ne/bn/my still render.
+8. Commit locally; never push without Ruan saying so.
 - Future content candidates (Ruan): Jesus' followers / Acts.
 
 ## Design / content rules
