@@ -163,7 +163,12 @@ summits 760/y150 + 940/y92 + 1120/y128 with one flank bend each + 3
 large snow caps; band summits 840/y96 + 960/y74 + 1080/y88 — keep the
 band's middle apex ≥y74: wide viewports crop the band's top ~y80 under
 xMidYMax slice). The round-2 glacial river and round-3 foothills were
-REMOVED in round 4 (river CSS + --river vars deleted too). Same round:
+REMOVED in round 4 (river CSS + --river vars deleted too). Round 5
+(July 2026, per Ruan) added a LOWER FRONT RIDGE between the big peaks
+and the mid band: class `far2`, fill var(--mtn-far2) (light #8FB2CF /
+dark #2B4560, beside the other scenery vars) — a rolling snowless
+foothill line (hero summits y210-226, band y126-138) drawn just
+before the mid path so mid/near overlap its base. Same round:
 the Jesus faith hero h1 dropped the Fraunces display font (it rendered
 "wrinkled") for Plus Jakarta Sans w700 via the #view-fjesus .hero-text
 h1 rule; God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
