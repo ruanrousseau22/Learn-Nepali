@@ -156,8 +156,11 @@ boats stayed. The Nepali hero/band FINAL FORM (July 2026, settled
 after 8 rounds of iteration with Ruan): the ORIGINAL pre-refresh art
 restored — the original jagged Himalaya (hero peaks 675/y132, 815/y102,
 955/y136, 1080/y148 with the original 4 polygon snow caps; band peaks
-805/y78 + 965/y90 with 2 polygons), the original warm terraced RIGHT
-hill (mid path M640… Q790 226 Q900 202… with its 3 terrace streaks)
+805/y78 + 965/y90 with 2 polygons), a warm terraced RIGHT
+hill (mid path M640 320 L640 306 Q710 274 800 258 Q900 242 1010 268
+Q1110 290 1200 296… with its 3 terrace streaks — lowered from the
+original hill and sloped down to x=1200 so it runs edge-to-edge like
+the peaks & near green)
 and the original rolling near green — BUT with two keepers from the
 refresh era: (1) the far ridge flattens to a CALM STRAIGHT sweep under
 the "Learn Nepali" title (M0 252 Q150 246 … flowing into the peaks at
