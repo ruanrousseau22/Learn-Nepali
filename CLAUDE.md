@@ -164,11 +164,16 @@ large snow caps; band summits 840/y96 + 960/y74 + 1080/y88 — keep the
 band's middle apex ≥y74: wide viewports crop the band's top ~y80 under
 xMidYMax slice). The round-2 glacial river and round-3 foothills were
 REMOVED in round 4 (river CSS + --river vars deleted too). Round 5
-(July 2026, per Ruan) added a LOWER FRONT RIDGE between the big peaks
-and the mid band: class `far2`, fill var(--mtn-far2) (light #8FB2CF /
-dark #2B4560, beside the other scenery vars) — a rolling snowless
-foothill line (hero summits y210-226, band y126-138) drawn just
-before the mid path so mid/near overlap its base. Round 6 (July 2026,
+(July 2026, per Ruan; raised in round 7) added a LOWER FRONT RIDGE
+between the big peaks and the mid band: class `far2`, fill
+var(--mtn-far2) — a rolling snowless foothill line drawn just before
+the mid path so mid/near overlap its base. Round 7 RAISED it (hero
+summits y172-196, band y104-118) so it clearly overlaps the big
+peaks' flanks, and strengthened the layer contrast the atmospheric
+way — back peaks hazier (--mtn-far light #B9D2E6 / dark #1E3348),
+front ridge deeper (--mtn-far2 light #89AECC / dark #31506E). The
+swap (light front / dark back) was tried and rejected — depth order
+read as ambiguous. Round 6 (July 2026,
 per Ruan) planted PINE GROVES in fill="var(--tree)" (the logo green,
 dark-mode aware): hero — a grove of 3 (h54/42/32) on the near band
 right at x1058-1146 + a pair (h38/28) on the left at x176-222, in a
