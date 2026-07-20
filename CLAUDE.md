@@ -1018,8 +1018,15 @@ course language now has a skeleton pack and the faith picker lists all 8
 
 ### Faith translation backlog (July 2026 — READ THIS BEFORE TRANSLATING)
 **Done:** ne (original source), **bn** (Kolkata Bengali, 178 clips in
-`audio-bnf/`), **my** (Burmese, 178 clips in `audio-myf/`).
-**Remaining, in this order: km → lo → mn → ps → si** — all five are still
+`audio-bnf/`), **my** (Burmese, 178 clips in `audio-myf/`), **km** (Khmer,
+181 clips in `audio-kmf/`, July 2026 — vocabulary checked against Khmer
+Bible usage: ព្រះជាម្ចាស់ God / ព្រះអង្គ he-of-God / ព្រះយេស៊ូ Jesus /
+ទ្រង់ he-of-Jesus / បាប sin / ដំណឹងល្អ gospel / ឈើឆ្កាង cross /
+ព្រះវិញ្ញាណបរិសុទ្ធ Holy Spirit / សម្ពន្ធមេត្រី covenant / ព្យាការី
+prophet / សិស្ស disciple / យញ្ញបូជា sacrifice / និរទេស exile /
+អាណាចក្រ kingdom, with the royal verbs មានព្រះបន្ទូល said, ប្រទាន gave,
+យាងមក came, គង់នៅ dwells, សុគត died).
+**Remaining, in this order: lo → mn → ps → si** — all four are still
 the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
 **Do ONE language per session, single-threaded.** A parallel-subagent
 attempt across four languages at once blew through the usage limit and
