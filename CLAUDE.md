@@ -1402,6 +1402,51 @@ hand or leave alone. Note also the real tension: for `li` (listening
 discrimination) same-lesson distractors are CORRECT and deliberate, per the Khmer
 listening pass.
 
+### Progress-safety & cloud sync audit (July 2026) — 31 checks, no defects
+The worst possible bug in this app is losing someone's progress, so the merge
+path was exercised directly against the real functions (only the network layer
+was stubbed, so `cloudPull`/`mergeGlobal`/`mergeLang`/`migrateLegacy` all ran for
+real). **Everything passed.** Verified:
+- `done` UNIONS across devices; the more-advanced SRS card wins (higher `reps`,
+  ties broken by later `due`); words unique to either side are all kept.
+- A null or empty cloud row never wipes local progress — it triggers a push
+  instead.
+- Per-language isolation holds: an inactive language in the payload is written to
+  its own `sajilo_<code>` key and never leaks into the active language's state.
+- Device prefs (theme/rom/voice/sound/autoNext) survive sync — `prefsPick(S)` is
+  re-applied LAST in `cloudPull`, so even a rogue row carrying prefs cannot
+  clobber them — and the pushed payload contains no prefs at all.
+- The active language stays a per-device choice; `unlocks` union both ways.
+- **v1 legacy flat rows** (pre-multi-language clients) still merge correctly as
+  Nepali, keeping both sides' lessons and stats.
+- **`migrateLegacy` is safe and idempotent**: the old `sajilo` blob moves to
+  `sajilo_ne` + `sajilo_global` with SRS schedules (`reps`/`int`/`ef`) and device
+  prefs intact, the original is kept as a backup, and re-running it does NOT
+  clobber newer progress. `resetAll` then clears the legacy blob along with
+  everything else (the `sajilo_ne`/`sajilo_global` keys that remain afterwards are
+  freshly re-seeded EMPTY defaults, not leftovers — don't mistake them for a leak).
+- A DIFFERENT account signing in on the same device does not inherit the previous
+  account's progress or XP, while device prefs survive the switch.
+
+**One deliberate design trade-off, documented so nobody "fixes" it:** XP, totals
+and bestStreak merge by `Math.max`, not by sum. Two devices used offline in
+parallel therefore keep the larger XP, not the combined total. That is the
+correct choice for an idempotent sync — summing would inflate XP every time the
+same data is re-pushed. Note what this protects: real LEARNING progress (`done`
+and the SRS deck) is never lost because those union; only the cosmetic XP counter
+can under-count.
+
+**Two harness traps that cost time here** — both produced convincing false
+failures before being diagnosed:
+1. Supabase `maybeSingle()` returns a ROW, and the payload lives in `row.data`.
+   Stubbing it to return the payload directly makes `cloudPull` skip its merge
+   branch entirely and look like it is silently dropping cloud progress.
+2. **`switchLang` refuses to switch while the exercise view is active**
+   (index.html — deliberate, so a learner never loses a lesson mid-flow). Any
+   test that leaves a lesson open will find every later `switchLang` silently
+   no-opping, and the app will appear to be merging into the wrong language.
+   Call `show('home')` first.
+
 ### Resilience & accessibility pass (July 2026)
 Both were exercised in the browser rather than read off the source.
 
