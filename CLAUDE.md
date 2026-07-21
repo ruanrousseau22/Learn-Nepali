@@ -1025,9 +1025,24 @@ Bible usage: ព្រះជាម្ចាស់ God / ព្រះអង្គ
 ព្រះវិញ្ញាណបរិសុទ្ធ Holy Spirit / សម្ពន្ធមេត្រី covenant / ព្យាការី
 prophet / សិស្ស disciple / យញ្ញបូជា sacrifice / និរទេស exile /
 អាណាចក្រ kingdom, with the royal verbs មានព្រះបន្ទូល said, ប្រទាន gave,
-យាងមក came, គង់នៅ dwells, សុគត died).
-**Remaining, in this order: lo → mn → ps → si** — all four are still
+យាងមក came, គង់នៅ dwells, សុគត died), **lo** (Lao, 181 clips in
+`audio-lof/`, July 2026 — vocabulary checked against Lao Bible / Lao
+church usage: ພຣະເຈົ້າ God / ພຣະອົງ the divine honorific pronoun, used
+for both God and Jesus / ພຣະເຢຊູ Jesus / ບາບ sin / ຂ່າວປະເສີດ gospel /
+ໄມ້ກາງແຂນ cross / ພຣະວິນຍານບໍລິສຸດ Holy Spirit / ພັນທະສັນຍາ covenant /
+ຜູ້ປະກາດພຣະທຳ prophet / ສາວົກ disciple / ເຄື່ອງບູຊາ sacrifice /
+ການເນລະເທດ exile / ອານາຈັກ kingdom, with the light honorific register —
+the ຊົງ- verb prefix (ຊົງສ້າງ created, ຊົງກ່າວ said), ສະເດັດມາ came,
+ສະຖິດ dwells, ສິ້ນພຣະຊົນ died, ຄືນພຣະຊົນ rose).
+**Remaining, in this order: mn → ps → si** — all three are still
 the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
+**Generator gotcha (cost a full regeneration on lo):** when adapting the
+previous language's python generator, the chunk-directory glob is
+`os.path.join(SP,'<code>','*.json')` — a `sed` on the string
+`scratchpad/<code>` does NOT match it, so the script silently rebuilds
+the PREVIOUS language's text under the new filename. Always grep the
+generated file for the new script's Unicode range (and for the previous
+language's range) before trusting it.
 **Do ONE language per session, single-threaded.** A parallel-subagent
 attempt across four languages at once blew through the usage limit and
 produced nothing — the careful one-at-a-time approach is what actually
