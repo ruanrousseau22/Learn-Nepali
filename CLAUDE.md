@@ -31,7 +31,12 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   Read the "Multi-language expansion" section below before touching any of it.
 
 ## Repo layout
-- `index.html` — the whole app + the inline Nepali pack
+- `index.html` — the app shell, all CSS and the whole engine (~220KB). It no
+  longer carries any course data: the Nepali pack was split out to
+  `lang/ne.js` in July 2026 so a Khmer or Pashto learner stops downloading
+  ~1.1MB of Nepali lessons they will never open (Khmer first load 2027K →
+  894K, Pashto 1741K → 608K). **Every language now loads the same way.**
+- `lang/ne.js` — Nepali pack (data + registerPack), the app default
 - `lang/km.js` — Khmer pack (data, art, registerPack call)
 - `faith/ne.js` + `audio-nef/` + `audio_strings_nef.json` — Religious studies
   mode content & clips (see the Religious studies section below)
@@ -91,7 +96,19 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 5. Keep the UI minimal and uncluttered. Faith-forward but never preachy in mechanics.
 
 ## Architecture
-**Language packs (since July 2026).** Nepali data lives inline as `NE_*` consts
+**Boot (since the July 2026 payload split).** No pack is present at parse
+time, so `index.html` cannot call `applyPack('ne')` while parsing any more.
+An async `boot()` at the end of the script reads the saved language straight
+out of localStorage (`savedLang()`, which also understands the pre-split
+`sajilo` blob), fetches ONLY that pack via `loadLangScript`, then calls
+`applyPack` and builds the UI. A missing or unknown pack falls back to `ne`;
+if that also fails the page shows a plain retry message rather than a blank
+screen. This removed the old "render everything in Nepali, then switch"
+flash for non-Nepali users — the `if(S.lang!==LANG.code)switchLang(S.lang)`
+line at the end of boot is gone because the right pack is loaded up front.
+When adding a language, nothing about boot changes.
+
+**Language packs (since July 2026).** Nepali data lives in `lang/ne.js` as `NE_*` consts
 (`NE_LESSONS`, `NE_UNITS`, `NE_UNITS_INTENSIVE`, `NE_SYM`, `NE_VOWELS`, `NE_CONS`,
 `NE_NUMS`, `NE_SRS_SEED`), bundled into `PACKS.ne` via `registerPack({...})` (see
 the LANGUAGE PACKS block after `NE_SYM`). The pack also carries `ttsLocale`,
