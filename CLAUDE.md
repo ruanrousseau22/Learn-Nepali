@@ -1049,7 +1049,23 @@ kingdom / мөнх амь eternal life. Register note: Mongolian church usage is
 PLAIN — there is no royal-verb system like Khmer or Lao; respect rides on
 word choice (Их Эзэн, Ариун) and the polite та, and the Ариун Библи uses
 ordinary past forms for God (хайрласан, өгсөн).
-**Remaining, in this order: ps → si** — both are still
+**ps** (Pashto, 181 clips in `audio-psf/`, July 2026 — the first RTL faith
+pack). Vocabulary taken from the AFGHAN Pashto Bible (afghanbibles.org),
+verified against its Luke 19 + Luke 24 text: خدای God / څښتن Lord /
+عیسی Jesus / زوی Son / ګناه sin / خلاصون salvation / پاچاهي kingdom /
+صلیب cross / راژوندی کېدل to rise / شاګردان disciples / پیغمبران
+prophets / زېری good news / باور believe / روح القدس Holy Spirit /
+تړون covenant / قربانی sacrifice / وری lamb / بپتسما baptism.
+خدای and عیسی are the ordinary words a Muslim reader already knows —
+deliberate, and what the Afghan Pashto Bible itself uses.
+**RTL note:** the course RTL pass only covered lesson elements, so faith
+mode needed its own rule (added next to it in index.html): `.fread-t`,
+`.fback`, `.fne`, `.fnote-tag` get `direction:rtl` under
+`:root[data-lang="ps"]`, `.fh-ne`/`.fread-count` get `unicode-bidi:isolate`
+so the quiet English stays a unit, and **`.from` is forced back to
+`direction:ltr`** — the romanization is pure ASCII and a trailing full stop
+was otherwise bidi-shunted to the left end of the line.
+**Remaining: si** — still
 the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
 **Generator gotcha (cost a full regeneration on lo):** when adapting the
 previous language's python generator, the chunk-directory glob is

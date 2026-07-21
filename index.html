@@ -88,6 +88,16 @@
 :root[data-lang="ps"] .wb-answer,:root[data-lang="ps"] .wb-bank{direction:rtl}
 :root[data-lang="ps"] .fill-sentence,:root[data-lang="ps"] .exbig{direction:rtl}
 :root[data-lang="ps"] .exq,:root[data-lang="ps"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-serif}
+/* Faith mode reads RTL too (July 2026). The story reader mixes a Pashto run
+   with a quiet English one on the same line — without this the bidi algorithm
+   lays the block out LTR and the English jumps in front of the Pashto. Flip the
+   flow containers and isolate each English span so it stays a unit. */
+:root[data-lang="ps"] .fread-t,:root[data-lang="ps"] .fback,
+:root[data-lang="ps"] .fne,:root[data-lang="ps"] .fnote-tag{direction:rtl}
+:root[data-lang="ps"] .fh-ne,:root[data-lang="ps"] .fread-count{unicode-bidi:isolate}
+/* ...but the romanization view is pure ASCII: keep it LTR, or a trailing full
+   stop gets bidi-shunted to the left end of the line. */
+:root[data-lang="ps"] .from{direction:ltr;text-align:left}
 /* Afghanistan: high-desert light — snowy Hindu Kush over arid terraces */
 :root[data-lang="ps"]{--sky1:#DEE9F4;--sky2:#F4F8FB;--mtn-far:#93A9C0;--mtn-mid:#C79B5F;--mtn-near:#3E8B55;--orb:#F0B34A}
 :root[data-theme="dark"][data-lang="ps"]{--sky1:#16202B;--sky2:#0E1319;--mtn-far:#31435A;--mtn-mid:#57452A;--mtn-near:#1E4F33;--orb:#EFE0BF}
