@@ -1467,9 +1467,13 @@ inside an RTL-forced container needs its own `direction:ltr`.** Verified the
 placeholder now reads correctly in Pashto and is unchanged in LTR languages (the
 rule is `[data-lang="ps"]`-scoped).
 
-**Noted, not changed:** the faith back-link arrow still points `←` in Pashto.
-RTL convention would mirror it to `→`. Cosmetic, and it sits inside an authored
-label, so raise it with Ruan before touching.
+**Also fixed (Ruan asked for it right after): the Pashto nav arrows now mirror.**
+All five faith navigation arrows went through two helpers next to `fui`/`fnum` —
+`aBack()` and `aNext()`, driven by `RTL_CODES={ps:1}` / `isRTLLang()`. In Pashto
+"back" and "previous" now point `→` and "next" points `←`, following the reading
+flow; every LTR language is byte-identical to before. **Add future RTL languages
+(Urdu, Farsi, Arabic) to `RTL_CODES` and the arrows follow automatically** — do
+not hardcode `&larr;`/`&rarr;` at new faith nav sites.
 
 **Measurement traps for whoever audits layout next** — three separate false
 alarms came from these:

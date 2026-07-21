@@ -1915,6 +1915,13 @@ function applyFaithBrand(){
 const FUI_NE={start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'यहाँ चाँडै सामग्री आउँदैछ',soonEn:'Content coming soon'};
 function fui(k){const u=FAITH&&FAITH.ui;return (u&&u[k]!=null)?u[k]:FUI_NE[k];}
 function fnum(n){const d=FAITH&&FAITH.digits;if(d)return String(n).split('').map(c=>d[c]||c).join('');return (!FAITH||FAITH.code==='ne')?devNum(n):String(n);}
+/* Right-to-left languages mirror navigation arrows: in Pashto "back" and
+   "previous" point RIGHT and "next" points LEFT, following the reading flow.
+   Add future RTL languages (Urdu, Farsi, Arabic) to RTL_CODES. */
+const RTL_CODES={ps:1};
+function isRTLLang(){return !!RTL_CODES[(LANG&&LANG.code)||''];}
+function aBack(){return isRTLLang()?'&rarr;':'&larr;';}
+function aNext(){return isRTLLang()?'&larr;':'&rarr;';}
 function curMode(){return S.mode==='faith'?'faith':'learn';}
 async function switchMode(m){
   if(m===curMode())return;
@@ -2025,7 +2032,7 @@ function fnodesHTML(st){
     const other=(FAITH.stories||[]).find(x=>x.id!==st.id);
     h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
       +'<div class="fdb-tx"><div class="deva fdb-ne">'+fui('done').replace('{t}',fnum(total))+'</div>'+(fui('doneEn')?'<div class="fdb-en">'+fui('doneEn').replace('{t}',total)+'</div>':'')+'</div>'
-      +(other?'<button type="button" class="fdb-btn" onclick="show(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> &rarr;</button>':'')
+      +(other?'<button type="button" class="fdb-btn" onclick="show(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> '+aNext()+'</button>':'')
       +'</div>';
   }else if(nRead){
     h+='<div class="fprog"><span class="deva">'+fui('prog').replace('{t}',fnum(total)).replace('{n}',fnum(nRead))+'</span>'+(fui('progEn')?'<span class="fprog-en">'+fui('progEn').replace('{n}',nRead).replace('{t}',total)+'</span>':'')+'</div>';
@@ -2053,7 +2060,7 @@ function fnodesHTML(st){
 function freadHTML(st,i){
   if(i==='ov'){
     const ov=st.overview;
-    let g='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
+    let g='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
       +'<div class="fread-art" aria-hidden="true">'+(ov.art||'')+'</div>'
       +'<h3 class="fread-t"><span class="deva">'+(ov.ne||ov.t)+'</span>'+(ov.ne?' <span class="fh-ne">'+ov.t+'</span>':'')+'</h3>'
       +fpickHTML();
@@ -2063,11 +2070,11 @@ function freadHTML(st,i){
     }else{
       g+='<div class="fsoon"><span class="deva">'+fui('soon')+'</span>'+(fui('soonEn')?'<span class="fsoon-en">'+fui('soonEn')+'</span>':'')+'</div>';
     }
-    g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> &rarr;</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
+    g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> '+aNext()+'</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
     return g;
   }
   const s=st.sections[i],last=i>=st.sections.length-1;
-  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">&larr; '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
+  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
     +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
     +'<h3 class="fread-t"><span class="deva">'+(s.ne||s.t)+'</span>'+(s.ne&&s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
     +fpickHTML();
@@ -2084,9 +2091,9 @@ function freadHTML(st,i){
       +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></div>'
       +'<div class="fen">'+s.note[2]+'</div></div>';}
   h+='<div class="fread-nav">'
-    +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">&larr; <span class="deva">'+fui('prev')+'</span></button>':'<span class="fprev-spacer"></span>')
+    +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">'+aBack()+' <span class="deva">'+fui('prev')+'</span></button>':'<span class="fprev-spacer"></span>')
     +'<button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
-    +(last?'<span class="deva">'+fui('finish')+'</span> &#10003;':'<span class="deva">'+fui('next')+'</span> &rarr;')+'</button>'
+    +(last?'<span class="deva">'+fui('finish')+'</span> &#10003;':'<span class="deva">'+fui('next')+'</span> '+aNext())+'</button>'
     +'<div class="fread-count">'+fnum(i+1)+' / '+fnum(st.sections.length)+'</div></div></div>';
   return h;
 }
