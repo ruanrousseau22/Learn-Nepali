@@ -1231,6 +1231,27 @@ Both edits are AUDIO-NEUTRAL — `pool` is never spoken (only `wb a.join(' ')`)
 and glosses are `vocab[2]`, so no clips needed regenerating; `--check` still
 matches for all 8 packs.
 
+**Khmer learn-step listening added (July 2026).** A cross-language comparison
+found Khmer was the only course whose `learn` lessons were 100% multiple-choice
+— 503 exercises, zero listening — while every sibling ran ~20% `li` at that
+step. A Khmer learner never HEARD a word in the lesson that introduced it,
+which matters most in the language whose whole difficulty is the two consonant
+series. 167 `li` exercises were added across all 84 learn lessons (now 75% mc /
+25% li, no single-type lessons left).
+Rules that made this safe, worth reusing for any future pack:
+- **`say` must be an existing vocab word**, so the clip already exists —
+  `--check` still matched afterwards and NO audio needed regenerating.
+- **Distractors come from the SAME lesson's vocab** (all four options are words
+  just introduced), which is a sharper discrimination test than pulling from
+  older vocab. Zero lessons needed a fallback.
+- **Never put two same-sounding options in one listening exercise** — the
+  generator rejects any candidate whose romanisation is already used, so a
+  question is always answerable by ear. (Same principle as the Lao rule about
+  not pitting ຂ/ຄ against each other.)
+- Watch modular arithmetic when rotating through candidates: a first attempt
+  used `(hash + i*5) % len` which can only reach gcd(5,len) distinct indices,
+  so 7 lessons silently got no exercises. Use a seeded shuffle instead.
+
 Known and NOT bugs, so nobody re-flags them:
 - **Nepali `li` exercises use TWO patterns**: pick-the-word (`o[a]===say`) and
   pick-the-MEANING (English options, so `o[a]!==say`). 869 are the latter and
