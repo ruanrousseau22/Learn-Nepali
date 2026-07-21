@@ -1278,6 +1278,36 @@ Known and NOT bugs, so nobody re-flags them:
   and the fact that Khmer and Lao write **no word spaces**, so a naive scan
   reads a whole phrase as one unseen "word".
 
+### Resilience & accessibility pass (July 2026)
+Both were exercised in the browser rather than read off the source.
+
+**Resilience — all handled, no fixes needed.** Corrupt localStorage (malformed
+JSON, `null`, wrong types) recovers to defaults with arrays intact; a
+`setItem` that throws (Safari private mode / quota) is swallowed and lessons
+still play; a missing pack leaves the app on its current language with `S.lang`
+still matching `LANG.code`; a missing audio clip falls back to TTS without
+throwing; a failing manifest fetch does not break the page. Rapid input is
+safe too — triple-tapping a path node opens ONE lesson with queue and segbar
+in agreement, and triple-firing Check scores exactly once (the `phase` guard).
+
+**Accessibility — one real fix.** Every visible interactive element has an
+accessible name (83/83 on home, 7/7 in a lesson). Keyboard focus is properly
+visible: `button:focus-visible` etc. give a 2.5px saffron outline, verified
+with real Tab presses (`:focus-visible` matched, ring drawn), and there is no
+global `outline:none`. The one genuine failure was the **Start/Done chip**
+under a path node — `color-mix(--zacc 78%, --ink)` on its tinted background
+gave **4.31:1** against the 4.5 minimum for 11.5px text. Changed to **70%**,
+which lifts it to **4.85** (and the Done chip 4.66 → 5.24) with no visible
+design change.
+**Caution for whoever measures contrast next:** naive scripted checks here are
+unreliable and produced three separate rounds of false failures. Two traps —
+(1) computed colours come back as `color(srgb 0.81 0.9 0.86)` with 0–1 floats,
+not 0–255, so a regex that grabs the numbers reads them ~255x too dark; (2)
+walking up for a background misses gradients and `color-mix` layers, which
+yields nonsense like a 1.00 ratio (identical fg/bg) on text that is plainly
+legible. Always sanity-check a suspicious number against a screenshot before
+"fixing" anything. Dark mode was verified visually and is fine.
+
 ## Design / content rules
 - **Course content is secular language learning** (Ruan, July 2026): every
   language course — Nepali main, Khmer, future languages — teaches the language
