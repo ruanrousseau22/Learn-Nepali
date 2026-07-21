@@ -1033,8 +1033,23 @@ for both God and Jesus / ພຣະເຢຊູ Jesus / ບາບ sin / ຂ່າ
 ຜູ້ປະກາດພຣະທຳ prophet / ສາວົກ disciple / ເຄື່ອງບູຊາ sacrifice /
 ການເນລະເທດ exile / ອານາຈັກ kingdom, with the light honorific register —
 the ຊົງ- verb prefix (ຊົງສ້າງ created, ຊົງກ່າວ said), ສະເດັດມາ came,
-ສະຖິດ dwells, ສິ້ນພຣະຊົນ died, ຄືນພຣະຊົນ rose).
-**Remaining, in this order: mn → ps → si** — all three are still
+ສະຖິດ dwells, ສິ້ນພຣະຊົນ died, ຄືນພຣະຊົນ rose), **mn** (Mongolian, 181
+clips in `audio-mnf/`, July 2026 — CYRILLIC, and the first faith pack with
+NO `digits[]` array, since Mongolian writes Western numerals).
+**The mn word for God was a real call:** Бурхан also means Buddha, so the
+Bible Society of Mongolia coined Ертөнцийн Эзэн (Lord of the universe) to
+dodge the association, and Тэнгэр carries shamanist weight. The pack uses
+**Бурхан**, because the Ариун Библи — the translation most Mongolian
+churches actually use — uses it, verified against its 2013 text of John
+3:16. Other vocabulary: Эзэн Lord / Есүс Jesus / Хүү Son / нүгэл sin /
+итгэл faith / аврал salvation / Аврагч Rescuer / сайн мэдээ gospel /
+загалмай cross / Ариун Сүнс Holy Spirit / гэрээ covenant / эш үзүүлэгч
+prophet / шавь disciple / тахил sacrifice / цөллөг exile / хаанчлал
+kingdom / мөнх амь eternal life. Register note: Mongolian church usage is
+PLAIN — there is no royal-verb system like Khmer or Lao; respect rides on
+word choice (Их Эзэн, Ариун) and the polite та, and the Ариун Библи uses
+ordinary past forms for God (хайрласан, өгсөн).
+**Remaining, in this order: ps → si** — both are still
 the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
 **Generator gotcha (cost a full regeneration on lo):** when adapting the
 previous language's python generator, the chunk-directory glob is
