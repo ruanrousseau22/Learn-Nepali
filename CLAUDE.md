@@ -1447,6 +1447,44 @@ failures before being diagnosed:
    no-opping, and the app will appear to be merging into the wrong language.
    Call `show('home')` first.
 
+### Mobile & multi-script layout audit (July 2026) — 1 RTL bug fixed
+Checked at 375x812 (iPhone width), since most learners are on phones.
+**All 8 languages x home / alphabet / review / settings: zero horizontal
+overflow.** Lesson screens were exercised for the hard scripts too — the Burmese
+match grid (tall stacked glyphs render fully, no clipping), Mongolian long words
+(Төрсөн өдрийн мэнд wraps gracefully inside its tile), the Sinhala `fill`
+sentence, and the Pashto RTL word bank. Faith mode was checked at mobile as well:
+the Pashto reader keeps its native-first hero and right-aligned RTL paragraphs.
+Confirm, auth and level-up modals all fit.
+
+**Fixed — a real RTL bug.** The word-bank placeholder rendered as
+"…Tap the words below" in Pashto: the string is English but sits inside
+`.wb-answer`, which is forced `direction:rtl`, so its trailing ellipsis was
+bidi-shunted to the left end. Added `:root[data-lang="ps"] .wb-ph{direction:ltr;
+display:inline-block}` — exactly the same fix already applied to `.from` for the
+romanization full stop. **This is a recurring trap: any English UI string placed
+inside an RTL-forced container needs its own `direction:ltr`.** Verified the
+placeholder now reads correctly in Pashto and is unchanged in LTR languages (the
+rule is `[data-lang="ps"]`-scoped).
+
+**Noted, not changed:** the faith back-link arrow still points `←` in Pashto.
+RTL convention would mirror it to `→`. Cosmetic, and it sits inside an authored
+label, so raise it with Ruan before touching.
+
+**Measurement traps for whoever audits layout next** — three separate false
+alarms came from these:
+1. **SVG scenery children** (circle/ellipse/g/path) report bounding boxes outside
+   their clipped parent, so a naive "element extends past the viewport" scan
+   flags ~25 of them per page. Always confirm against
+   `document.documentElement.scrollWidth` — if that equals the viewport width,
+   there is no overflow.
+2. **Card animation transforms**: jumping `curE` and calling `renderEx()` directly
+   bypasses the `advance()`/`animateOut()` flow, leaving `.excard` stuck under a
+   `translateX(34px)` that looks exactly like a layout bug.
+3. **`exitLesson(true)` is not a force flag** — it opens the "Leave this lesson?"
+   confirm, and every measurement taken afterwards is of a view sitting behind a
+   modal.
+
 ### Resilience & accessibility pass (July 2026)
 Both were exercised in the browser rather than read off the source.
 

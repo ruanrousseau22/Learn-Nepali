@@ -86,6 +86,9 @@
    sentences and big displays read RTL. Each tile/option is a single text run,
    so only the flow containers need flipping. */
 :root[data-lang="ps"] .wb-answer,:root[data-lang="ps"] .wb-bank{direction:rtl}
+/* the empty-answer placeholder is English: keep it ltr or its trailing … is
+   bidi-shunted to the left end ("…Tap the words below") — same fix as .from */
+:root[data-lang="ps"] .wb-ph{direction:ltr;display:inline-block}
 :root[data-lang="ps"] .fill-sentence,:root[data-lang="ps"] .exbig{direction:rtl}
 :root[data-lang="ps"] .exq,:root[data-lang="ps"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-serif}
 /* Faith mode reads RTL too (July 2026). The story reader mixes a Pashto run
