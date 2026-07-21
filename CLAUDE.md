@@ -1081,7 +1081,48 @@ disciple / පූජාව sacrifice / පිටුවහල් කිරීම 
 උත්ථානය resurrection.
 
 **THE BACKLOG IS COMPLETE — all 8 faith packs are translated and shipped
-(ne, bn, my, km, lo, mn, ps, si), 181 clips each except bn/my at 178.**
+(ne, bn, my, km, lo, mn, ps, si), 181 clips each.**
+
+### Faith-mode audit (July 2026) — what it found, and the rules it set
+A full health check ran over all 8 packs (content, translation, code, audio,
+rendering). Data integrity, audio and translation quality came back clean:
+zero English/scripture-ref drift, zero forbidden chars, zero script
+contamination, romanization 100% consistent, no concept omissions, and no
+hash collisions between the 1442 faith clips and the 10142 course clips
+(worth re-checking if clips are ever added — `playFile` tries the COURSE
+manifest first, so a collision would play a vocabulary word inside a Bible
+story). Fixes applied:
+- **bn and my were each missing 3 paragraphs** — `spread[8]`, `wait[5]`
+  (the whole Daniel / lions-den paragraph) and `immanuel[5]`. They had been
+  added to `ne` after those two packs shipped and never backfilled, which is
+  why they sat at 178 clips. Backfilled + audio regenerated → 181.
+- **bn and my also had `abraham` in a different ORDER** than ne (the "Why
+  did God choose Abraham?" paragraph sat at index 5 instead of 2); the other
+  five packs matched ne. Reordered to match.
+- `loadFaithManifest()` is now **awaited** in both callers — it was
+  fire-and-forget, so a tap right after switching language raced the fetch
+  and fell back to device TTS.
+- `.fnode` now sets `color:var(--ink)`. It was the one faith button relying
+  on the UA `buttontext` system colour (there is no `color-scheme`
+  declaration anywhere), so its text was not bound to the theme.
+- Escape now closes the story reader (guarded on `.modal-bg.show` — that is
+  the open-modal class in this app, NOT `.open`).
+- `FUI_NE.soon`/`soonEn` were inverted (English in the native slot); fixed,
+  and the two `.fsoon` render sites now put native in `.deva`.
+- The script/roman picker's aria-label said "Show Nepali…" for all 8
+  languages; now language-neutral.
+- **Faith heroes are NATIVE-FIRST** (Ruan, July 2026): h1 = the native story
+  title, `.hero-fsub` = English. This applies to Nepali too — the built-in
+  markup used to be English h1 + Nepali subtitle, contradicting the
+  native-primary rule. `applyFaithBrand` sets h1 from `st.ne`. The h1 needs
+  the multi-script font stack (id-scoped rule beats `.display`/Fraunces,
+  which has no Devanagari/Khmer/Myanmar/Sinhala/Lao/Arabic glyphs).
+  **The PICKERS stay English** — `MODE_CATALOG` ("Religious studies") and
+  `FAITH_CATALOG` ("Khmer — ខ្មែរ") are navigation: a reader has to find
+  their own language before the native-first content can help them.
+- Pashto only: the `N · Title` middle dot is dropped for a plain gap
+  (`.fnode-sep{font-size:0}`), because `·` is near-identical to the
+  Arabic-Indic zero ۰ and "۱ ·" read as "۱۰".
 Future faith work is new CONTENT (Ruan has floated Jesus' followers /
 Acts as a third story), not translation. If a third story is ever added,
 it has to be authored in ne first and then run through this same

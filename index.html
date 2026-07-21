@@ -898,7 +898,16 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnodes{display:flex;flex-direction:column;gap:14px;max-width:620px;margin:0 auto;position:relative}
 .fnodes::before{content:"";position:absolute;left:60px;top:24px;bottom:24px;border-left:2.5px dashed color-mix(in srgb,var(--crimson) 35%,var(--line));z-index:0}
 .fnode{z-index:1}
-.fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
+/* colour must come from --ink, not the UA `buttontext` system colour: every
+   sibling faith button sets its own colour and this one was the outlier */
+.fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
+/* the node number is isolated so bidi cannot reorder it into the title */
+.fnode-n{unicode-bidi:isolate}
+/* …and in Pashto the middle-dot separator is dropped for a plain gap: the
+   dot glyph is near-identical to the Arabic-Indic zero ۰, so "۱ ·" read
+   as "۱۰". A gap carries the same separation without the ambiguity. */
+:root[data-lang="ps"] .fnode-sep{font-size:0}
+:root[data-lang="ps"] .fnode-n{margin-inline-end:10px}
 .fnode:hover{transform:translateY(-1px);border-color:var(--crimson)}
 .fnode.next{border-color:var(--crimson);box-shadow:0 4px 14px color-mix(in srgb,var(--crimson) 14%,transparent)}
 .fnode.done{opacity:.82}
@@ -943,6 +952,11 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 /* Fraunces at 54px auto-opsz turns hairline-thin & wonky — pin the Jesus hero
    title to a calmer optical size so it reads solid, not wrinkled */
 #view-fjesus .hero-text h1{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}
+/* Faith heroes lead with the NATIVE title (July 2026), so the h1 needs the
+   multi-script stack — Fraunces/.display has no Devanagari, Khmer, Myanmar,
+   Sinhala, Lao or Arabic glyphs. Id-scoped so it beats .display. */
+#view-fstory .hero-text h1,#view-fjesus .hero-text h1{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic','Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.01em}
+#view-fstory .hero-fsub,#view-fjesus .hero-fsub{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
 </style>
 </head>
 <body>
@@ -1199,8 +1213,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1 class="display">God&rsquo;s <em>Story</em></h1>
-        <div class="deva hero-fsub">परमेश्वरको कथा</div>
+        <h1 class="display deva">परमेश्वरको कथा</h1>
+        <div class="hero-fsub">God&rsquo;s Story</div>
       </div>
     </div>
   </div>
@@ -1254,8 +1268,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </svg>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1 class="display">Jesus</h1>
-        <div class="deva hero-fsub">येशू</div>
+        <h1 class="display deva">येशू</h1>
+        <div class="hero-fsub">Jesus</div>
       </div>
     </div>
   </div>
@@ -9483,7 +9497,9 @@ const FAITHS={}; /* every loaded faith pack by code; FAITH = the active one */
 function registerFaith(p){FAITHS[p.code]=p;if(!FAITH||FAITH.code===p.code)FAITH=p;}
 function faithBase(){return 'audio-'+((FAITH&&FAITH.code)||'ne')+'f/';}
 function loadFaithScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='faith/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
-function loadFaithManifest(){FAITH_KEYS=new Set();fetch(faithBase()+'manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;FAITH_KEYS=new Set(Array.isArray(d)?d:(d.keys||[]));}).catch(()=>{});}
+/* returns the promise so callers can AWAIT it — otherwise the first tap after
+   switching language races the fetch and falls back to device TTS (July 2026) */
+function loadFaithManifest(){FAITH_KEYS=new Set();return fetch(faithBase()+'manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d)return;FAITH_KEYS=new Set(Array.isArray(d)?d:(d.keys||[]));}).catch(()=>{});}
 /* ----- multi-language faith (July 2026): a skeleton exists for every course
    language (faith/<code>.js — structure, art and UI slots; content translated
    later). switchFaithLang loads the pack, applies the matching COURSE pack
@@ -9499,7 +9515,7 @@ async function switchFaithLang(code){
   if(LANG.code!==code)await switchLang(code,true);
   if(LANG.code!==code)return;
   FAITH=FAITHS[code];FVIEW=null;
-  loadFaithDone();loadFaithManifest();applyFaithBrand();buildFaith();paintHomeLangSwitch();
+  loadFaithDone();await loadFaithManifest();applyFaithBrand();buildFaith();paintHomeLangSwitch();
   const act=document.querySelector('.view.active');
   show(act&&act.id==='view-fjesus'?'fjesus':'fstory');
 }
@@ -9521,12 +9537,15 @@ function applyFaithBrand(){
       if(sub){sub.textContent=FHERO_DEF[k].sub;sub.style.display='';}
     }else{
       if(m)m.innerHTML=(pk&&pk.art&&pk.art.hero)?pk.art.hero:FHERO_DEF[k].art;
-      if(h)h.textContent=(st&&st.title)||FHERO_DEF[k].h1;
-      if(sub){sub.textContent=(st&&st.ne)||'';sub.style.display=(st&&st.ne)?'':'none';}
+      /* native leads, English is the quiet second line (July 2026) — the
+         picker dropdowns stay English so a reader can find their language,
+         but every content surface below them is native-first. */
+      if(h){h.textContent=(st&&st.ne)||(st&&st.title)||'';h.classList.add('deva');}
+      if(sub){sub.textContent=(st&&st.title)||'';sub.style.display=(st&&st.title)?'':'none';}
     }
   });
 }
-const FUI_NE={start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'Content coming soon',soonEn:'यहाँ चाँडै सामग्री आउँदैछ'};
+const FUI_NE={start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'यहाँ चाँडै सामग्री आउँदैछ',soonEn:'Content coming soon'};
 function fui(k){const u=FAITH&&FAITH.ui;return (u&&u[k]!=null)?u[k]:FUI_NE[k];}
 function fnum(n){const d=FAITH&&FAITH.digits;if(d)return String(n).split('').map(c=>d[c]||c).join('');return (!FAITH||FAITH.code==='ne')?devNum(n):String(n);}
 function curMode(){return S.mode==='faith'?'faith':'learn';}
@@ -9543,7 +9562,7 @@ async function switchMode(m){
     FAITH=FAITHS[fcode];
     S.mode='faith';save();
     document.body.classList.add('faith');
-    loadFaithDone();loadFaithManifest();applyFaithBrand();buildFaith();show('fstory');
+    loadFaithDone();await loadFaithManifest();applyFaithBrand();buildFaith();show('fstory');
   }else{
     S.mode='learn';save();
     document.body.classList.remove('faith');
@@ -9620,7 +9639,7 @@ function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){
 const DDIG=['०','१','२','३','४','५','६','७','८','९'];
 function devNum(n){return String(n).split('').map(c=>DDIG[c]||c).join('');}
 function fpickHTML(){const rom=(S.fRom||'script')==='rom';
-  return '<div class="fpick" role="group" aria-label="Show Nepali as script or roman">'
+  return '<div class="fpick" role="group" aria-label="Show the text as script or as roman letters">'
     +'<button type="button" class="'+(rom?'':'on')+'" onclick="setFRom(\'script\')">'+fui('scriptLabel')+'</button>'
     +'<button type="button" class="'+(rom?'on':'')+'" onclick="setFRom(\'rom\')">Roman</button></div>';}
 function fparaHTML(p){const rom=(S.fRom||'script')==='rom';
@@ -9657,7 +9676,7 @@ function fnodesHTML(st){
     const done=FAITH_DONE.has(s.id),isNext=i===next&&!ovNext;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
       +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t deva">'+fnum(i+1)+' · '+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
+      +'<span class="fnode-tx"><span class="fnode-t deva"><span class="fnode-n">'+fnum(i+1)+'</span><span class="fnode-sep"> · </span>'+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
       +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?fui('next'):fui('start'))+'</span>':''))
       +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
       +'</button>';
@@ -9675,7 +9694,7 @@ function freadHTML(st,i){
       g+='<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\',\'ov\')"></button></div>';
       g+=ov.paras.map(fparaHTML).join('');
     }else{
-      g+='<div class="fsoon">'+fui('soon')+(fui('soonEn')?'<span class="deva">'+fui('soonEn')+'</span>':'')+'</div>';
+      g+='<div class="fsoon"><span class="deva">'+fui('soon')+'</span>'+(fui('soonEn')?'<span class="fsoon-en">'+fui('soonEn')+'</span>':'')+'</div>';
     }
     g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> &rarr;</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
     return g;
@@ -9689,7 +9708,7 @@ function freadHTML(st,i){
     h+='<div class="fplay-row"><button type="button" class="fplay-btn" id="fplay-btn" onclick="fplayAll(\''+st.id+'\','+i+')"></button></div>';
     h+=s.paras.map(fparaHTML).join('');
   }else{
-    h+='<div class="fsoon">'+fui('soon')+(fui('soonEn')?'<span class="deva">'+fui('soonEn')+'</span>':'')+'</div>';
+    h+='<div class="fsoon"><span class="deva">'+fui('soon')+'</span>'+(fui('soonEn')?'<span class="fsoon-en">'+fui('soonEn')+'</span>':'')+'</div>';
   }
   if(s.note&&s.note.length){const rom=(S.fRom||'script')==='rom';
     h+='<div class="fnote"><div class="fnote-tag"><span class="deva">'+fui('why')+'</span>'+(fui('whyEn')?' · '+fui('whyEn'):'')+'</div>'
@@ -9711,7 +9730,14 @@ function markFRead(sid,i){fstopAll();const st=(FAITH.stories||[]).find(x=>x.id==
   if(i+1<st.sections.length)openFNode(sid,i+1);else closeFNode();}
 /* finishing the overview marks it read and flows straight into moment 1 */
 function markFOv(sid){fstopAll();FAITH_DONE.add(sid+'-ov');saveFaithDone();openFNode(sid,0);}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLangMenu();});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  closeLangMenu();
+  /* Escape backs out of an open story the way it exits a lesson. Only when a
+     reader is actually open, and never while a modal is up (those close
+     themselves via closeModalById). */
+  if(FVIEW&&!document.querySelector('.modal-bg.show'))closeFNode();
+});
 function loadLangScript(code){return new Promise(res=>{const s=document.createElement('script');s.src='lang/'+code+'.js';s.onload=()=>res(true);s.onerror=()=>res(false);document.head.appendChild(s);});}
 async function switchLang(code,fromFaith){
   if(!LANG||code===LANG.code)return;
