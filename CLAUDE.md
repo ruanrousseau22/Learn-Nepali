@@ -1065,8 +1065,30 @@ mode needed its own rule (added next to it in index.html): `.fread-t`,
 so the quiet English stays a unit, and **`.from` is forced back to
 `direction:ltr`** — the romanization is pure ASCII and a trailing full stop
 was otherwise bidi-shunted to the left end of the line.
-**Remaining: si** — still
-the untouched ~32.9KB skeleton (24 empty `ne:''` fields), no audio dir yet.
+**si** (Sinhala, 181 clips in `audio-sif/`, July 2026 — the LAST one; no
+`digits[]`, Sinhala writes Western numerals like mn).
+**Register decision:** Sinhala is strongly diglossic and the Sinhala Bible
+is LITERARY, with honorific verb endings (John 3:16 ...ප්‍රේම කළ සේක්...
+දෙවා වදාළ සේක්). This pack deliberately uses SPOKEN Sinhala instead, so it
+stays consistent with the course (`lang/si.js` teaches spoken Sinhala) and
+does not put liturgical grammar in front of an un-churched reader. Respect
+rides on the honorific NOUNS දෙවියන් වහන්සේ / යේසුස් වහන්සේ, which Sinhala
+Christians use in ordinary speech, with plain spoken verbs (කළා, දුන්නා).
+Vocabulary: පාපය sin / විශ්වාසය faith / ආදරය love / ගැළවීම salvation /
+ගැළවුම්කරු Rescuer / ශුභාරංචිය gospel / කුරුසිය cross / ශුද්ධාත්මයාණන්
+වහන්සේ Holy Spirit / ගිවිසුම covenant / අනාගතවක්තෘවරයා prophet / ගෝලයා
+disciple / පූජාව sacrifice / පිටුවහල් කිරීම exile / රාජ්‍යය kingdom /
+උත්ථානය resurrection.
+
+**THE BACKLOG IS COMPLETE — all 8 faith packs are translated and shipped
+(ne, bn, my, km, lo, mn, ps, si), 181 clips each except bn/my at 178.**
+Future faith work is new CONTENT (Ruan has floated Jesus' followers /
+Acts as a third story), not translation. If a third story is ever added,
+it has to be authored in ne first and then run through this same
+generator pipeline for the other seven.
+**Guard that earned its keep (si):** the generator's ASCII-rom check
+caught a stray `ā` in one romanization and aborted BEFORE writing the
+file — keep that guard. Same for the script-range check below.
 **Generator gotcha (cost a full regeneration on lo):** when adapting the
 previous language's python generator, the chunk-directory glob is
 `os.path.join(SP,'<code>','*.json')` — a `sed` on the string
