@@ -1901,7 +1901,7 @@ const NE_LESSONS = [
   /* ===================== UNIT 2 · FOUNDATIONS ===================== */
   {id:'greet',title:'Greetings',step:'learn',meta:'Namaste & basics',vocab:[['नमस्ते','Namaste','Hello / Goodbye'],['नमस्कार','Namaskaar','Hello (respectful)'],['धन्यवाद','Dhanyabaad','Thank you'],['धेरै धन्यवाद','Dherai dhanyabaad','Thank you very much'],['माफ गर्नुस्','Maaf garnus','Sorry / Excuse me'],['फेरि भेटौंला','Pheri bhetaunla','See you again'],['शुभ प्रभात','Shubha prabhaat','Good morning'],['के छ?','Ke chha?','What is up?']],ex:[
     {t:'note',tag:'Culture',q:'नमस्ते — more than "hello"',body:'<p><span class="deva">नमस्ते</span> works for both <b>hello and goodbye</b>, any time of day. It is often said with palms pressed together and a slight bow.</p><p>For elders or formal settings, <span class="deva">नमस्कार</span> is even more respectful.</p>'},
-    {t:'mc',q:'How do you say "Hello"?',d:'नमस्ते',r:'Namaste',o:['नमस्ते','धन्यवाद','माफ गर्नुस्','फेरि भेटौंला'],a:0},
+    {t:'mc',q:'How do you say "Hello"?',r:'Namaste',o:['नमस्ते','धन्यवाद','माफ गर्नुस्','फेरि भेटौंला'],a:0},
     {t:'li',q:'Someone greets you. What did they say?',say:'नमस्ते',r:'Namaste',o:['Thank you','Hello','Sorry','See you'],a:1},
     {t:'mc',q:'What does "धन्यवाद" mean?',d:'धन्यवाद',r:'Dhanyabaad',o:['Hello','Sorry','Thank you','Yes'],a:2},
     {t:'tr',q:'Translate: "Good morning"',a:'शुभ प्रभात',r:'Shubha prabhaat',h:'shubha = good, prabhat = morning'},
@@ -4729,7 +4729,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match the feeling',pairs:[['मलाई भोक लाग्यो','I am hungry'],['मलाई मन पर्छ','I like it'],['मलाई थाहा छ','I know'],['मलाई चाहियो','I want']]},
     {t:'li',q:'What did you hear?',say:'मलाई भोक लाग्यो',r:'Malai bhok laagyo',o:['I am cold','I am hungry','I am happy','I know'],a:1},
     {t:'mc',q:'"मलाई थाहा छ" means…',d:'मलाई थाहा छ',r:'Malai thaahaa chha',o:['I want','I know','I am hungry','I like'],a:1},
-    {t:'wb',q:'Build: "I like it"',a:['मलाई','मन','पर्छ'],r:'malai man parchha'},
+    {t:'wb',q:'Build: "I like it"',a:['मलाई','मन','पर्छ'],r:'malai man parchha',pool:['मलाई','मन','पर्छ','छु','म']},
   ]},
   {id:'experiencer_2',title:'Recognize',step:'recognize',meta:'the मलाई frame',vocab:[],ex:[
     {t:'li',q:'What did you hear?',say:'मलाई थाहा छ',r:'Malai thaahaa chha',o:['I know','I am hungry','I like it','I want it'],a:0},
@@ -4911,7 +4911,7 @@ const NE_LESSONS = [
   ]},
   {id:'conditional_2',title:'Recognize',step:'recognize',meta:'verb + ए = "if"',vocab:[],ex:[
     {t:'li',q:'What did you hear?',say:'तिमी आए',r:'Timi aae',o:['if you come','you came','you go','you eat'],a:1},
-    {t:'mc',q:'"If it rains" is…',d:'पानी परे',r:'Paani pare',o:['पानी परे','पानी पर्यो','पानी पर्छ','पानी पानी'],a:0},
+    {t:'mc',q:'"If it rains" is…',r:'Paani pare',o:['पानी परे','पानी पर्यो','पानी पर्छ','पानी पानी'],a:0},
     {t:'mc',q:'To say "if", you add which ending to the stem?',o:['-ए','-यो','-छ','-नु'],a:0},
     {t:'match',q:'Match the "if" phrases',pairs:[['पानी परे','if it rains'],['तिमी आए','if you come'],['सम्भव भए','if possible'],['भने','then / if']]},
     {t:'mc',q:'What does भने mark?',o:['the "if" clause','the question','the past','the place'],a:0},
@@ -5095,7 +5095,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match the respect level',pairs:[['तँ','very informal'],['तिमी','familiar'],['तपाईं','polite'],['जी','respectful suffix']]},
     {t:'mc',q:'Adding जी to a name shows…',o:['respect','anger','a question','the past'],a:0},
     {t:'li',q:'What did you hear?',say:'राम जी',r:'Raam ji',o:['Ram (respectful)','my Ram','Ram goes','where is Ram'],a:0},
-    {t:'mc',q:'"you go" with तिमी is…',d:'जान्छौ',r:'Jaanchau',o:['जान्छौ','जान्छस्','जानुहुन्छ','जान्छु'],a:0},
+    {t:'mc',q:'"you go" with तिमी is…',r:'Jaanchau',o:['जान्छौ','जान्छस्','जानुहुन्छ','जान्छु'],a:0},
     {t:'match',q:'Match "you" → verb ending',pairs:[['तँ','जान्छस्'],['तिमी','जान्छौ'],['तपाईं','जानुहुन्छ'],['म','जान्छु']]},
     {t:'mc',q:'With a stranger, the safest "you" is…',o:['तपाईं','तँ','तिमी','ऊ'],a:0},
     {t:'mc',q:'The verb ending changes with…',o:['the respect level','the weather','the time','the place'],a:0}
@@ -9939,7 +9939,7 @@ function finishLesson(){const l=LESSONS[curL];if(l.step==='test'){finishTest(l);
   [...document.getElementById('segbar').children].forEach(s=>s.classList.add('done'));
   document.getElementById('actionbar').classList.add('hidden');
   const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
-  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
   buildTrack(curTrack);save();}
 /* weekly test: pass at 80% first-try correct; failing keeps the node open for a retry */
 function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const need=Math.ceil(total*0.8);const pass=lessonCorrect>=need;
@@ -9948,9 +9948,9 @@ function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const nee
   const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
   const backBtn='<button class="nextbtn" style="background:transparent;color:var(--ink);border:1px solid var(--line)" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button>';
   if(pass){const first=!S.done.includes(l.id);if(first){S.done.push(l.id);award(100);}
-    c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('cheer')+'</div><h3>Test passed!</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct'+(first?' \u00b7 +100 XP bonus':'')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+    c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('cheer')+'</div><h3>Test passed!</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct'+(first?' \u00b7 +100 XP bonus':'')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
     playSound('levelup');confetti();}
-  else c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+mascotSVG('oops')+'</div><h3>Not this time</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct \u2014 you need '+need+' to pass. Have another look at the week, then try again.</p><button class="nextbtn" onclick="startLesson('+curL+')">Try again</button> '+backBtn+'</div>';
+  else c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('oops')+'</div><h3>Not this time</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct \u2014 you need '+need+' to pass. Have another look at the week, then try again.</p><button class="nextbtn" onclick="startLesson('+curL+')">Try again</button> '+backBtn+'</div>';
   buildTrack(curTrack);save();}
 
 function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('button');e.type='button';e.className='glyph';e.setAttribute('aria-label','Play '+r);e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{document.querySelectorAll('.glyph.sel').forEach(x=>x.classList.remove('sel'));e.classList.add('sel');spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');
@@ -10009,7 +10009,7 @@ function renderSRS(){
     if(srsSession&&srsSession.done>0){
       const s=srsSession, acc=Math.round((s.good+s.easy)/s.done*100);
       st.innerHTML='<div class="srs-summary">'
-        +'<div class="srs-badge" style="margin-bottom:8px">'+mascotSVG('cheer')+'</div>'
+        +'<div class="srs-badge" style="margin-bottom:8px">'+artMascot('cheer')+'</div>'
         +'<h3>Summit reached</h3><p class="srs-sum-sub">'+s.done+' card'+(s.done>1?'s':'')+' reviewed this session</p>'
         +'<div class="srs-sum-grid">'
           +'<div class="srs-sum-cell c1"><div class="n">'+s.done+'</div><div class="l">Reviewed</div></div>'

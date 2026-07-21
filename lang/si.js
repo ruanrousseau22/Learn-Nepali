@@ -495,7 +495,7 @@ const SI_LESSONS=[
 {t:'mc',q:'What does එයා mean?',d:'එයා',r:'eyaa',o:['he / she','I','we','you (formal)'],a:0},
 {t:'li',q:'Listen — which word?',say:'මම',o:['මම','අපි','ඔයා','එයා'],a:0},
 {t:'mc',q:'Which is the FORMAL you?',o:['ඔබ','ඔයා','එයා','අපි'],a:0},
-{t:'mc',q:'"We" in Sinhala is…',d:'අපි',r:'api',o:['අපි','මම','ඔයා','ඔබ'],a:0},
+{t:'mc',q:'"We" in Sinhala is…',r:'api',o:['අපි','මම','ඔයා','ඔබ'],a:0},
 {t:'li',q:'Listen — which word?',say:'අපි',o:['අපි','මම','එයා','ඔයා'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['මම','I'],['අපි','we'],['ඔබ','you (formal)'],['එයා','he / she']]},
 {t:'mc',q:'Talking to your friend Nimal, "you" is…',o:['ඔයා','ඔබ','එයා','මම'],a:0}]},
@@ -511,7 +511,7 @@ const SI_LESSONS=[
 {id:'si_people',title:'Terms of address',step:'learn',meta:'අම්මා තාත්තා අයියා අක්කා නංගී මල්ලී',vocab:[['අම්මා','ammaa','mother'],['තාත්තා','thaaththaa','father'],['අයියා','ayiyaa','older brother'],['අක්කා','akkaa','older sister'],['නංගී','nangii','younger sister'],['මල්ලී','mallii','younger brother']],ex:[
 {t:'note',tag:'The family six',q:'අම්මා තාත්තා & the siblings',body:'<p><span class="deva">අම්මා</span> <b>ammaa</b> mother · <span class="deva">තාත්තා</span> <b>thaaththaa</b> father.</p><p>Siblings split by age, not just gender: <span class="deva">අයියා</span> <b>ayiyaa</b> older brother · <span class="deva">අක්කා</span> <b>akkaa</b> older sister · <span class="deva">මල්ලී</span> <b>mallii</b> younger brother · <span class="deva">නංගී</span> <b>nangii</b> younger sister.</p>',eg:[['අයියා','ayiyaa','older brother'],['අක්කා','akkaa','older sister'],['මල්ලී','mallii','younger brother'],['නංගී','nangii','younger sister']]},
 {t:'mc',q:'What does අම්මා mean?',d:'අම්මා',r:'ammaa',o:['mother','father','older sister','younger brother'],a:0},
-{t:'mc',q:'Which word is "older brother"?',d:'අයියා',r:'ayiyaa',o:['අයියා','මල්ලී','අක්කා','තාත්තා'],a:0},
+{t:'mc',q:'Which word is "older brother"?',r:'ayiyaa',o:['අයියා','මල්ලී','අක්කා','තාත්තා'],a:0},
 {t:'note',tag:'Everyone is family',q:'Address terms',body:'<p>Here is the warm secret of Sinhala: these words are used with <b>strangers</b> too. The waiter is <span class="deva">අයියා</span>, the shop lady is <span class="deva">අක්කා</span>, anyone younger is <span class="deva">මල්ලී</span> or <span class="deva">නංගී</span>.</p><p>It is friendly AND polite — the whole island is one big family.</p>',tip:'When unsure of age, guess older — it flatters no one and offends no one.'},
 {t:'mc',q:'You call the young waiter over. Naturally you say…',o:['අයියා','ඔබ','අම්මා','තාත්තා'],a:0},
 {t:'mc',q:'The lady at the shop, a bit older than you, is…',o:['අක්කා','නංගී','අම්මා','මල්ලී'],a:0}]},
@@ -751,7 +751,7 @@ const SI_LESSONS=[
 {t:'mc',q:'Which verb goes with things?',o:['තියෙනවා','ඉන්නවා','එනවා','බොනවා'],a:0},
 {t:'note',tag:'Home base',q:'ගෙදර',body:'<p><span class="deva">ගෙදර</span> <b>gedhara</b> = house or home — and by itself it already means "at home": <span class="deva">අම්මා ගෙදර ඉන්නවා</span> <b>ammaa gedhara innawaa</b> = mother is at home.</p><p>It also means "homeward": <span class="deva">මම ගෙදර යනවා</span> = I am going home.</p>',eg:[['අම්මා ගෙදර ඉන්නවා','ammaa gedhara innawaa','mother is at home'],['මම ගෙදර යනවා','mama gedhara yanawaa','I am going home']]},
 {t:'wb',q:'Build: mother is at home',a:['අම්මා','ගෙදර','ඉන්නවා'],pool:['අම්මා','ගෙදර','ඉන්නවා','තියෙනවා']},
-{t:'mc',q:'"There is tea" —',d:'තේ තියෙනවා',r:'thee thiyenawaa',o:['තේ තියෙනවා','තේ ඉන්නවා','තේ කනවා','තේ එනවා'],a:0}]},
+{t:'mc',q:'"There is tea" —',r:'thee thiyenawaa',o:['තේ තියෙනවා','තේ ඉන්නවා','තේ කනවා','තේ එනවා'],a:0}]},
 {id:'si_be_2',title:'Hear it',step:'recognize',meta:'Living or thing?',vocab:[],ex:[
 {t:'li',q:'Listen — which verb?',say:'ඉන්නවා',o:['ඉන්නවා','තියෙනවා','එනවා','යනවා'],a:0},
 {t:'li',q:'Listen — which verb?',say:'තියෙනවා',o:['තියෙනවා','ඉන්නවා','බොනවා','කනවා'],a:0},

@@ -2277,7 +2277,7 @@ const LO_Z9=[
 {t:'wb',q:'Build: "I like to read"',a:['ຂ້ອຍ','ມັກ','ອ່ານໜັງສື'],pool:['ຂ້ອຍ','ມັກ','ອ່ານໜັງສື','ມ່ວນ']},
 {t:'match',q:'Match activity and meaning',pairs:[['ອ່ານໜັງສື','read'],['ຟັງເພງ','music'],['ເບິ່ງໜັງ','film'],['ຫຼິ້ນ','play']]},
 {t:'fill',q:'Complete: "in my free time I listen to music"',s:'ຍາມຫວ່າງ ຂ້ອຍ ___',o:['ຟັງເພງ','ວຽກ','ໄປ','ດີ'],a:0},
-{t:'mc',q:'"it was fun!": ___',d:'ມ່ວນ',o:['ມ່ວນ','ວຽກ','ໜາວ','ແພງ'],a:0},
+{t:'mc',q:'"it was fun!": ___',o:['ມ່ວນ','ວຽກ','ໜາວ','ແພງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ເບິ່ງໜັງ',o:['ເບິ່ງໜັງ','ຟັງເພງ','ອ່ານໜັງສື','ຫຼິ້ນ'],a:0},
 {t:'mc',q:'Combine with ມັກ (like) to say your…',o:['hobbies','job','age','address'],a:0}]},
 {id:'lo_hobby_4',title:'Mix it',step:'mix',meta:'Hobbies in play',vocab:[],ex:[
@@ -2681,7 +2681,7 @@ const LO_Z11=[
 {t:'wb',q:'Build: "she wears a sinh"',a:['ລາວ','ນຸ່ງ','ສິ້ນ'],pool:['ລາວ','ນຸ່ງ','ສິ້ນ','ເກີບ']},
 {t:'match',q:'Match word and meaning',pairs:[['ເສື້ອ','shirt'],['ໂສ້ງ','trousers'],['ສິ້ນ','sinh'],['ເກີບ','shoes']]},
 {t:'fill',q:'Complete: "a red shirt"',s:'ເສື້ອ ___',o:['ສີແດງ','ສີ','ນຸ່ງ','ເກີບ'],a:0},
-{t:'mc',q:'"I wear a hat": ຂ້ອຍນຸ່ງ… actually a hat you ໃສ່ (sai). Which line is right for shirts?',d:'ນຸ່ງເສື້ອ',o:['ນຸ່ງເສື້ອ','ກິນເສື້ອ','ນອນເສື້ອ','ໄປເສື້ອ'],a:0},
+{t:'mc',q:'"I wear a shirt" — which line is right?',o:['ນຸ່ງເສື້ອ','ກິນເສື້ອ','ນອນເສື້ອ','ໄປເສື້ອ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ນຸ່ງ',o:['ນຸ່ງ','ນັ່ງ','ນອນ','ຍ່າງ'],a:0},
 {t:'mc',q:'Which garment is uniquely Lao?',o:['ສິ້ນ','ເສື້ອ','ໂສ້ງ','ໝວກ'],a:0}]},
 {id:'lo_clothes_4',title:'Mix it',step:'mix',meta:'Clothes in play',vocab:[],ex:[

@@ -778,7 +778,7 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ប៉ុន្មាន mean?',d:'ប៉ុន្មាន',r:'ponman',o:['how much / how many','how are you','which one','why'],a:0},
 {t:'mc',q:'ខ្ញុំមានឆ្កែមួយ means…',d:'ខ្ញុំមានឆ្កែមួយ',r:'khnhom mean chhkae muoy',o:['I have one dog','I have one cat','my dog is small','I want a dog'],a:0},
 {t:'mc',q:'What does ថ្លៃ mean?',d:'ថ្លៃ',r:'thlai',o:['expensive / price','cheap','money','market'],a:0},
-{t:'mc',q:'The colloquial word for no / not have is…',d:'អត់',r:'ot',o:['អត់','ទេ','មិន','ណាស់'],a:0},
+{t:'mc',q:'The colloquial word for no / not have is…',r:'ot',o:['អត់','ទេ','មិន','ណាស់'],a:0},
 {t:'mc',q:'In Khmer, numbers go…',o:['after the thing (ឆ្កែមួយ)','before the thing','anywhere','only at the end'],a:0}]},
 {id:'km_have_2',title:'Hear it',step:'recognize',meta:'Pick what you hear',vocab:[],ex:[
 {t:'li',q:'Listen — which word?',say:'មាន',o:['មាន','មិន','ម្ភៃ','មក'],a:0},

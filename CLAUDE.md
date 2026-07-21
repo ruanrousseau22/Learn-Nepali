@@ -1168,6 +1168,48 @@ Method that worked (mirror it exactly):
 8. Commit locally; never push without Ruan saying so.
 - Future content candidates (Ruan): Jesus' followers / Acts.
 
+### Language-course audit (July 2026) — findings and standing rules
+A full health check ran over the language-learning side: 8 courses, ~3,100
+lessons, 24,742 exercises, 10,150 course clips, plus the lesson engine.
+Structure, safety, romanization and audio came back CLEAN — 645 well-formed
+topics, no orphan/duplicate lessons, full SYM coverage, zero inline-handler
+breakers, zero native script in rom fields, and every strings file still
+matching its pack (`--check` passes for all 8, so no content has drifted from
+its recorded audio). Fixes applied:
+- **`mascotSVG()` was called directly at 4 render sites** (lesson complete,
+  test passed, test failed, review complete), so every non-Nepali course
+  showed the Nepali YETI on those screens while the in-lesson feedback bar
+  correctly showed the pack mascot. Confirmed in the browser (Khmer: elephant
+  in the feedback bar, yeti on completion) and fixed to `artMascot()`.
+  **The rule stands: never call `mascotSVG()` outside `artMascot()`.**
+- **9 mc questions gave the answer away via the `d` prompt** — `d` renders at
+  52px directly above the choices, so "How do you say Hello?" displayed
+  नमस्ते with नमस्ते among the options. Same class as the 192 `r`-giveaways
+  swept earlier. `d` stripped (ne 3, si 3, lo 2, km 1). **When authoring an
+  mc, neither `d` nor `r` may equal one of that exercise's own options.**
+- One wb (`experiencer#8`) had no `pool` at all; three sibling copies of the
+  same exercise already carried `pool:['मलाई','मन','पर्छ','छु','म']`, so it
+  got that. NOTE: the engine falls back to `ex.a` when `pool` is missing
+  (`ex.pool?ex.pool.slice():ex.a.slice()`), so such an exercise still RENDERS
+  and is solvable — it just has no distractors. A missing pool is a quality
+  bug, not a crash; don't mistake one for the other.
+- One garbled question (`lo_clothes_3#3`) opened about a hat then pivoted
+  mid-sentence to shirts; rewritten.
+Known and NOT bugs, so nobody re-flags them:
+- **Nepali `li` exercises use TWO patterns**: pick-the-word (`o[a]===say`) and
+  pick-the-MEANING (English options, so `o[a]!==say`). 869 are the latter and
+  are correct — the CLAUDE.md `li o[a]===say` rule applies only to the first.
+- **122 word-bank exercises have no distractors** (pool size == answer size),
+  112 of them in the Nepali Intensive track; the other 7 courses have none.
+  Below the documented standard but not broken — a backlog polish item.
+- **~97 Nepali vocab glosses differ only in capitalization** between lessons
+  ('Thank you' vs 'thank you'). Cosmetic; glosses are `vocab[2]` and are never
+  spoken, so changing them is audio-safe if it is ever worth doing.
+- Teach-before-test is effectively clean once each lesson is credited with its
+  own teaching; the residue is compositional forms (हस्पतालमा = hospital+मा)
+  and the fact that Khmer and Lao write **no word spaces**, so a naive scan
+  reads a whole phrase as one unseen "word".
+
 ## Design / content rules
 - **Course content is secular language learning** (Ruan, July 2026): every
   language course — Nepali main, Khmer, future languages — teaches the language
