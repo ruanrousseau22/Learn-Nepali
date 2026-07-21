@@ -1123,6 +1123,20 @@ story). Fixes applied:
 - Pashto only: the `N · Title` middle dot is dropped for a plain gap
   (`.fnode-sep{font-size:0}`), because `·` is near-identical to the
   Arabic-Indic zero ۰ and "۱ ·" read as "۱۰".
+**Scripture references verified (July 2026):** all 159 citations were checked
+against the passages they claim to retell. One error found and fixed — the
+Joshua paragraph narrates the Jordan crossing but cited `Joshua 1 · 6`; the
+crossing is Joshua **3** (Joshua 1 is the commissioning, 6 is Jericho), now
+`Joshua 1 · 3 · 6`. Everything else was accurate, including the tricky ones
+(Malachi 3:1 + Mark 10:45 for the temple-return/ransom pairing, Colossians
+2:15 + 1 Cor 2:8 for the rulers who did not understand, 2 Cor 5:21 for the
+great exchange). Refs are byte-identical across all 8 packs, so a fix must be
+applied to all 8 files. The mixed granularity is deliberate — book-level for
+broad summaries (`Ezra · Nehemiah`, `1–2 Kings`), verse-level for specific
+retellings, and descriptive where honest (`Malachi → Matthew` for the 400
+silent years, `Matthew 7 (the close)`); that is not an inconsistency to fix.
+Only 2 paragraphs carry no reference and both are the closing hand-offs.
+
 Future faith work is new CONTENT (Ruan has floated Jesus' followers /
 Acts as a third story), not translation. If a third story is ever added,
 it has to be authored in ne first and then run through this same
