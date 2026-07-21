@@ -41,8 +41,9 @@ const PS_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'L742 234 L790 170 L826 210 L872 138 L916 192 L956 124 L1004 184 L1042 148 L1086 198 L1126 164 L1166 206 L1200 196 '
 +'L1200 320 L0 320 Z"/>'
 /* generous snow caps on the high peaks */
-+'<path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 158 L858 156 Z"/>'
-+'<path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 146 L940 143 Z"/>'
++'<path class="snow" d="M790 170 L808 190 L801 188 L790 182 L780 191 L775 190 Z"/>'
++'<path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 159 L861 157 Z"/>'
++'<path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 147 L945 145 Z"/>'
 +'<path class="snow" d="M1042 148 L1054 164 L1047 162 L1042 156 L1035 163 L1030 161 Z"/>'
 +'<path class="snow" d="M1126 164 L1136 178 L1130 176 L1126 171 L1120 177 L1115 175 Z"/>'
 /* mid: the ochre valley floor, stepped in terraces */

@@ -75,11 +75,11 @@
    bare Burmese (note titles, note prose) must keep Noto Sans Myanmar in-stack */
 :root[data-lang="my"] .exq,:root[data-lang="my"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Myanmar',sans-serif}
 /* Sri Lanka: tea-country green over a south-coast sea */
-:root[data-lang="si"]{--sky1:#F7E9CF;--sky2:#FBF6EA;--mtn-far:#9BBFD3;--mtn-mid:#D3A566;--mtn-near:#2E8E57;--orb:#F2A93B}
-:root[data-theme="dark"][data-lang="si"]{--sky1:#17202E;--sky2:#0E1218;--mtn-far:#2A3E52;--mtn-mid:#574430;--mtn-near:#1A5C3C;--orb:#EDE0C2}
+:root[data-lang="si"]{--sky1:#F7E9CF;--sky2:#FBF6EA;--mtn-far:#8FB4CC;--mtn-mid:#D3A566;--mtn-near:#2E8E57;--orb:#F2A93B;--water:#BBD6E2}
+:root[data-theme="dark"][data-lang="si"]{--sky1:#17202E;--sky2:#0E1218;--mtn-far:#2A3E52;--mtn-mid:#574430;--mtn-near:#1A5C3C;--orb:#EDE0C2;--water:#1B2C3A}
 /* Laos: Mekong dusk — tan karsts, forested banks */
-:root[data-lang="lo"]{--sky1:#F6DFC0;--sky2:#FBF3E3;--mtn-far:#A3A6C6;--mtn-mid:#CB9C5F;--mtn-near:#2F7E4F;--orb:#EFA13E}
-:root[data-theme="dark"][data-lang="lo"]{--sky1:#251E30;--sky2:#151119;--mtn-far:#3B3757;--mtn-mid:#55452B;--mtn-near:#1C5238;--orb:#E9DFC8}
+:root[data-lang="lo"]{--sky1:#F6DFC0;--sky2:#FBF3E3;--mtn-far:#94A9C4;--mtn-mid:#CB9C5F;--mtn-near:#2F7E4F;--orb:#EFA13E;--water:#C2D3E1}
+:root[data-theme="dark"][data-lang="lo"]{--sky1:#251E30;--sky2:#151119;--mtn-far:#35486A;--mtn-mid:#55452B;--mtn-near:#1C5238;--orb:#E9DFC8;--water:#1F2E3E}
 /* bare Lao in note titles/prose needs Noto Sans Lao, like the Burmese rule above */
 :root[data-lang="lo"] .exq,:root[data-lang="lo"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Lao',sans-serif}
 /* Pashto is RIGHT-TO-LEFT: word-bank sentences assemble right-to-left, fill
@@ -112,8 +112,8 @@
 :root[data-theme="dark"][data-lang="bn"]{--sky1:#211B2E;--sky2:#131016;--mtn-far:#3A3454;--mtn-mid:#5C452B;--mtn-near:#1C5638;--orb:#EBDFC6}
 /* bare Bengali in note titles/prose keeps Noto Sans Bengali in-stack, like the Burmese rule */
 :root[data-lang="bn"] .exq,:root[data-lang="bn"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Bengali',sans-serif}
-/* declutter scenery on phones: hide the fine `art-detail` extras (fisherman,
-   birds, reeds) so the centered mountains read cleanly on the mobile crop */
+/* declutter scenery on phones: hide the fine `art-detail` extras (birds,
+   boats, reeds) so the centered scenery reads cleanly on the mobile crop */
 @media(max-width:560px){.hero-mtns .art-detail,.pb-mtns .art-detail{display:none}}
 *{box-sizing:border-box;margin:0;padding:0}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
@@ -1018,8 +1018,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
       <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
-      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
-      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="666 148 675 132 699 148 691 146 684 154 673 146"/>
+      <polygon class="snow" points="797 122 815 102 835 122 829 124 821 130 811 120 800 126"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
@@ -1194,8 +1194,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
       <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
-      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
-      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="666 148 675 132 699 148 691 146 684 154 673 146"/>
+      <polygon class="snow" points="797 122 815 102 835 122 829 124 821 130 811 120 800 126"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
@@ -1249,8 +1249,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
       <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
       <path class="far" d="M0 252 Q150 246 300 249 Q450 244 580 246 L622 222 L675 132 L745 178 L815 102 L885 170 L955 136 L1020 188 L1080 148 L1145 200 L1200 210 L1200 320 L0 320 Z"/>
-      <polygon class="snow" points="654 151 675 132 695 150 687 148 681 155 670 147"/>
-      <polygon class="snow" points="789 127 815 102 840 126 830 124 822 132 811 123 800 129"/>
+      <polygon class="snow" points="666 148 675 132 699 148 691 146 684 154 673 146"/>
+      <polygon class="snow" points="797 122 815 102 835 122 829 124 821 130 811 120 800 126"/>
       <polygon class="snow" points="934 156 955 136 975 155 967 153 960 161 950 152"/>
       <polygon class="snow" points="1060 167 1080 148 1099 166 1091 164 1084 170 1074 163"/>
       <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>

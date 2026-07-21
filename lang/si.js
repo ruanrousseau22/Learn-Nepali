@@ -61,18 +61,33 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* gulls over the water */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".65" aria-hidden="true"><path d="M190 96 q6 -5 12 0 q6 -5 12 0"/><path d="M262 114 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: the sea to the left, misty tea highlands rising right of the title */
-+'<path class="far" d="M0 254 L600 254 Q660 252 720 250 Q770 226 830 234 Q880 200 950 216 Q1010 184 1080 204 Q1140 192 1200 200 L1200 320 L0 320 Z"/>'
-/* a tiny catamaran sail out at sea (fine detail) */
-+'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--tree)" d="M590 254 Q602 258 616 254 L613 250 L593 250 Z"/></g>'
+/* far: the misty central highlands — a defined ridge, right of the title */
++'<path class="far" d="M0 248 Q150 245 300 247 Q450 244 600 246 Q680 244 722 242 '
++'L754 216 L790 234 L836 198 L884 226 L934 184 L988 216 L1042 178 L1096 208 L1150 192 L1200 202 '
++'L1200 320 L0 320 Z"/>'
+/* the Indian Ocean — its own band, so the highlands stop reading as cloud */
++'<path fill="var(--water)" d="M0 252 Q300 249 600 251 Q900 248 1200 250 L1200 320 L0 320 Z"/>'
+/* an oruwa — the outrigger canoe, out on the water (fine detail) */
++'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--tree)" d="M586 256 Q602 261 620 256 L616 251 L590 251 Z"/></g>'
 /* mid: the warm sandy shore */
 +'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
+/* the tea hill — terraced slopes of the up-country, warm against the blue ridge */
++'<path class="mid" d="M902 320 L902 286 Q968 258 1042 250 Q1116 242 1174 256 Q1190 260 1200 264 L1200 320 Z"/>'
++'<g class="snow" opacity=".22" aria-hidden="true">'
++'<path d="M934 282 Q1000 258 1070 252 L1071 257 Q1002 263 937 287 Z"/>'
++'<path d="M952 296 Q1020 270 1096 262 L1097 267 Q1022 275 955 301 Z"/>'
++'<path d="M972 310 Q1046 282 1126 274 L1127 279 Q1048 287 975 315 Z"/>'
++'</g>'
 /* soft wave lines under the title */
-+'<path class="snow" opacity=".28" d="M70 264 Q220 258 370 262 L368 268 Q220 262 74 270 Z"/>'
-+'<path class="snow" opacity=".28" d="M150 276 Q300 268 430 274 L428 280 Q300 272 154 282 Z"/>'
-/* stilt fishermen — the iconic silhouettes, perched over the shallows */
-+'<g class="art-detail" aria-hidden="true">'
-/* each: slim pole, small side-perch, seated figure with a long rod angled to the sea */
++'<path class="snow" opacity=".3" d="M70 264 Q220 258 370 262 L368 268 Q220 262 74 270 Z"/>'
++'<path class="snow" opacity=".3" d="M150 276 Q300 268 430 274 L428 280 Q300 272 154 282 Z"/>'
+/* a wild elephant on the shore — Sri Lanka's own */
++'<g fill="var(--tree)" aria-hidden="true">'
++'<path d="M652 302 L652 282 L662 282 L662 302 Z M670 302 L670 282 L680 282 L680 302 Z M694 302 L694 282 L704 282 L704 302 Z M708 302 L708 282 L718 282 L718 302 Z"/>'
++'<path d="M646 288 Q642 264 668 260 L700 260 Q722 262 724 280 L724 290 Q700 294 668 293 Q652 292 646 288 Z"/>'
++'<path d="M720 264 Q740 264 744 280 Q747 296 740 304 L734 304 Q740 292 738 282 Q735 270 720 272 Z"/>'
++'<path d="M712 264 Q725 259 727 274 Q720 280 712 274 Z"/>'
++'<path d="M647 268 Q639 274 641 286 L645 286 Q643 276 650 272 Z"/>'
 +'</g>'
 /* coconut palms leaning over the shore */
 +'<g class="near">'
@@ -87,9 +102,13 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 
 /* --- band: calm sea left, palm + headland right --- */
 const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
-+'<path class="far" d="M0 154 L700 154 Q740 152 780 150 Q830 134 890 140 Q950 122 1010 132 Q1080 122 1140 130 Q1170 128 1200 130 L1200 200 L0 200 Z"/>'
+/* far: the highland ridge, right of the heading */
++'<path class="far" d="M0 152 Q200 149 400 151 Q600 148 760 150 '
++'L800 128 L840 142 L886 116 L930 138 L976 108 L1024 132 L1070 106 L1118 128 L1160 116 L1200 124 '
++'L1200 200 L0 200 Z"/>'
+/* the sea, its own band */
++'<path fill="var(--water)" d="M0 154 Q300 151 600 153 Q900 150 1200 152 L1200 200 L0 200 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 170 L1200 200 Z"/>'
-/* stilt fisherman (fine detail) */
 /* palm */
 +'<g class="near"><path d="M1076 186 C1080 158 1076 136 1082 116 L1087 117 C1081 138 1086 160 1082 188 Z"/>'
 +'<path d="M1084 116 C1070 106 1054 104 1041 109 C1055 109 1070 113 1082 120 Z M1084 116 C1097 105 1113 102 1126 107 C1113 109 1098 114 1086 120 Z M1084 116 C1078 103 1069 95 1056 93 C1069 99 1078 107 1082 117 Z M1084 116 C1090 103 1099 95 1112 93 C1100 99 1091 107 1086 117 Z"/></g>'

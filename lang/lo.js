@@ -31,33 +31,39 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* swifts over the river */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M195 92 q6 -5 12 0 q6 -5 12 0"/><path d="M262 110 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: hazy karst towers at dusk, steep-sided, right of the title zone */
-+'<path class="far" d="M0 252 Q150 246 300 249 Q450 244 600 248 Q680 245 730 244 '
-+'L738 244 Q736 200 742 178 Q746 162 758 160 Q770 160 774 176 Q780 204 778 244 '
-+'L788 244 Q786 186 794 158 Q799 138 812 136 Q826 136 831 156 Q840 190 837 244 '
-+'L850 244 Q848 206 854 184 Q858 168 870 166 Q882 166 886 182 Q892 208 890 244 '
-+'L902 244 Q900 172 909 144 Q914 124 928 122 Q943 122 948 144 Q957 176 954 244 '
-+'L968 244 Q966 196 972 172 Q976 154 989 152 Q1002 152 1006 170 Q1012 198 1010 244 '
-+'L1024 244 Q1022 210 1028 190 Q1032 176 1043 174 Q1054 174 1058 188 Q1064 210 1062 244 '
-+'Q1130 240 1200 244 L1200 320 L0 320 Z"/>'
-/* mid: the warm Mekong bank */
-+'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
+/* far: the karst towers of the Mekong — steep limestone, varied heights, right of the title */
++'<path class="far" d="M0 252 Q150 247 300 250 Q450 245 600 249 Q680 246 730 244 '
++'L742 244 L750 210 L758 188 L764 178 L772 194 L780 216 L790 244 '
++'L798 244 L806 196 L814 162 L824 142 L834 164 L842 198 L852 244 '
++'L860 244 L866 218 L872 202 L878 196 L886 214 L892 230 L900 244 '
++'L908 244 L916 190 L924 152 L934 126 L944 150 L952 190 L962 244 '
++'L970 244 L976 216 L982 198 L988 190 L996 208 L1002 228 L1010 244 '
++'L1018 244 L1026 200 L1034 172 L1044 158 L1054 176 L1062 204 L1072 244 '
++'Q1140 241 1200 244 L1200 320 L0 320 Z"/>'
+/* the Mekong itself — its own calm band, so the karsts read as mountains not river */
++'<path fill="var(--water)" d="M0 252 Q300 248 600 251 Q900 247 1200 250 L1200 320 L0 320 Z"/>'
 /* calm current lines under the title */
-+'<path class="snow" opacity=".25" d="M70 262 Q220 256 370 260 L368 266 Q220 260 74 268 Z"/>'
-+'<path class="snow" opacity=".25" d="M150 274 Q300 266 430 272 L428 278 Q300 270 154 280 Z"/>'
-/* Lao stilt house — dark teak silhouette on the bank */
++'<path class="snow" opacity=".3" d="M70 266 Q220 260 370 264 L368 270 Q220 264 74 272 Z"/>'
++'<path class="snow" opacity=".3" d="M150 278 Q300 270 430 276 L428 282 Q300 274 154 284 Z"/>'
+/* a long-tail boat out on the open water */
++'<g fill="var(--tree)" aria-hidden="true"><path d="M840 272 Q874 281 908 272 L902 266 L846 266 Z"/></g>'
+/* mid: the warm Mekong bank */
++'<path class="mid" d="M0 320 L0 288 Q300 280 600 286 Q900 292 1200 282 L1200 320 Z"/>'
+/* Lao stilt house — pale walls, terracotta roof, dark teak posts & ladder */
 +'<g fill="var(--tree)" aria-hidden="true">'
 +'<path d="M1022 296 L1022 264 L1027 264 L1027 296 Z M1049 298 L1049 264 L1054 264 L1054 298 Z M1076 296 L1076 264 L1081 264 L1081 296 Z M1101 298 L1101 264 L1106 264 L1106 298 Z"/>'
 +'<path d="M1014 264 L1114 264 L1114 258 L1014 258 Z"/>'
-+'<path d="M1022 258 L1022 234 L1106 234 L1106 258 Z"/>'
-+'<path d="M1010 238 L1064 200 L1118 238 L1108 238 L1064 208 L1020 238 Z"/>'
-+'<path d="M1016 240 L1064 206 L1112 240 Z"/>'
 +'<path d="M1035 296 L1051 262 L1056 262 L1040 296 Z"/>'
 +'</g>'
-/* crossed gable finials — the Lao rooftop signature */
++'<path class="snow" d="M1022 258 L1022 234 L1106 234 L1106 258 Z"/>'
++'<g fill="var(--crimson)" aria-hidden="true">'
++'<path d="M1010 238 L1064 200 L1118 238 L1108 238 L1064 208 L1020 238 Z"/>'
++'<path d="M1016 240 L1064 206 L1112 240 Z"/>'
++'</g>'
+/* door & shutter */
++'<g fill="var(--tree)" aria-hidden="true"><path d="M1056 258 L1056 240 L1068 240 L1068 258 Z"/><path d="M1032 250 L1032 240 L1042 240 L1042 250 Z"/></g>'
+/* gable finials — the Lao rooftop signature */
 +'<g stroke="var(--tree)" stroke-width="3" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M1058 208 L1050 194"/><path d="M1070 208 L1078 194"/></g>'
-/* longtail boat on the river (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M846 302 Q876 310 910 302 L903 295 L853 295 Z M846 302 Q839 298 837 291 L841 290 Q843 296 849 299 Z"/></g>'
 /* near: green river band with reeds right */
 +'<g class="near"><path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>'
 +'<path d="M1148 306 C1146 284 1147 262 1145 244 L1149 244 C1151 262 1150 284 1152 306 Z M1160 308 C1160 288 1162 268 1161 250 L1165 250 C1166 268 1164 290 1164 308 Z M1174 306 C1172 286 1173 266 1171 250 L1175 250 C1177 266 1176 288 1178 306 Z"/>'
@@ -67,13 +73,15 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* --- band: calm river left, karst + boat right --- */
 const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
 +'<path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 770 146 '
-+'L778 146 Q776 116 782 102 Q786 92 796 91 Q806 91 810 102 Q816 120 814 146 '
-+'L826 146 Q824 106 831 88 Q835 76 846 75 Q857 75 861 88 Q868 108 866 146 '
-+'L878 146 Q876 122 881 108 Q885 98 894 97 Q903 97 907 108 Q912 124 910 146 '
++'L780 146 L786 116 L792 100 L798 92 L806 106 L812 128 L818 146 '
++'L828 146 L834 110 L841 86 L848 74 L856 92 L862 118 L868 146 '
++'L878 146 L884 122 L890 106 L896 100 L903 116 L908 132 L914 146 '
 +'Q1060 142 1200 146 L1200 200 L0 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>'
-/* longtail boat (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M986 176 Q1010 182 1038 176 L1032 170 L992 170 Z M986 176 Q981 173 979 168 L982 167 Q984 172 989 174 Z"/></g>'
+/* the river band */
++'<path fill="var(--water)" d="M0 152 Q300 149 600 151 Q900 148 1200 150 L1200 200 L0 200 Z"/>'
+/* longtail boat on the water (fine detail) */
++'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M986 163 Q1010 170 1038 163 L1032 157 L992 157 Z"/></g>'
++'<path class="mid" d="M0 200 L0 176 Q300 168 600 174 Q900 180 1200 170 L1200 200 Z"/>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/>'
 +'<path d="M1130 190 C1128 172 1129 156 1127 142 L1131 142 C1133 156 1132 174 1134 190 Z M1144 190 C1144 174 1146 158 1145 144 L1149 144 C1150 158 1148 176 1148 190 Z"/>'
 +'<ellipse cx="1129" cy="140" rx="2.4" ry="5"/><ellipse cx="1147" cy="142" rx="2.4" ry="5"/>'

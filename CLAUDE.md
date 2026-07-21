@@ -195,6 +195,48 @@ for Plus Jakarta Sans w700 via the #view-fjesus .hero-text h1 rule;
 God's Story keeps Fraunces. Edit via replace_all: the hero markup exists
 as THREE verbatim copies (home + both faith pages) and the band as FOUR
 verbatim copies.
+**Art pass (July 2026 — Ruan's review).** Per-language fixes, all AUDIO-NEUTRAL
+(art is never spoken, so all 8 `--check` runs still match):
+- **Nepali** — two hero snow caps were drawn OUTSIDE their peaks (cap 1 spilled
+  16.7px into the sky, cap 2 by 3.2px). Snow caps are now anchored to the ridge:
+  for apex `(ax,ay)` with neighbours `(lx,ly)`/`(rx,ry)` and drop `d`, the base
+  corners sit at `ax+(lx-ax)*d/(ly-ay)` and `ax+(rx-ax)*d/(ry-ay)`. **Verify any
+  new cap against the ridge maths — do not eyeball it.** Applied to all 3 hero copies.
+- **Pashto** — the leftmost peak (790,170) had NO cap while the other four did;
+  added. Two existing caps also overflowed and were re-anchored.
+- **Khmer** — the mid-layer sugar palm floated ~14px: trunk ended at y=270 while
+  the mid ground at that x is y≈284. Trunk extended to 300.
+- **Mongolian** — two more (smaller) gers added at x≈796 and x≈738 with doors,
+  reading as a camp receding across the steppe.
+- **Lao** — the "big purple stuff" was the `far` layer doing DOUBLE DUTY as both
+  the karst towers and the river, so it read as one lavender mass. The river is
+  now its own band (`--water`, added to the lo palette light+dark and applied via
+  inline `fill="var(--water)"` — no new CSS rule needed), `--mtn-far` shifted off
+  lavender to blue-grey, and the karsts were redrawn as varied angular towers
+  instead of uniform rounded fingers. The stilt house is no longer a dark-green
+  silhouette: pale `snow` walls, `var(--crimson)` terracotta roof, `var(--tree)`
+  posts/ladder/door. A **leftover fragment from the removed boatman** (a stray
+  hook sub-path on the boat, in BOTH hero and band) was deleted.
+- **Bengali** — Howrah bridge removed; a hazy violet palm grove fills the far
+  bank in its place, plus a **Kolkata auto-rickshaw** (amber body, dark roof and
+  wheels) on the bank. The nouka is now warm teak with a curved bamboo canopy
+  rather than another dark-green silhouette. Ruan's note: **do not make every
+  add-on `var(--tree)` dark green** — vary the palette per object.
+- **Sinhala** — the "blue cloud" was the same double-duty bug as Lao: sea and
+  "tea highlands" were one blue shape with soft rounded bumps. Now a defined
+  highland ridge over its own `--water` sea band, plus a terraced tea hill in the
+  warm mid tone and a **wild elephant** on the shore for something unmistakably
+  Sri Lankan. A dead empty `<g class="art-detail">` and a dangling
+  `/* stilt fisherman */` comment (both leftovers from the removed figures) were
+  deleted, in hero and band.
+- **Burmese** — checked, no bugs found; left alone.
+A static sweep (`scratchpad/artcheck.py` pattern) checked all 8 heroes + bands for
+ground paths not closing at the bottom edge, geometry outside the canvas, empty
+groups and degenerate paths: clean. **Landmarks sitting right of x≈1000 are
+cropped on phones by design** (the hero is `xMidYMax slice`, so a 420px viewport
+shows only viewBox x≈376–824) — that is the documented "calm centered scenery"
+behaviour, not a bug.
+
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in

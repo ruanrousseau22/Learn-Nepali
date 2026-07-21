@@ -31,11 +31,12 @@
    introductions, aj/kal time words (kal = tomorrow AND yesterday!), teens to
    বিশ/কুড়ি. Growing zone by zone from here — next zones append to BN_UNITS/
    BN_LESSONS the way Khmer grew.
-   Art: secular West Bengal — dawn over the Hooghly river, the Howrah bridge
-   silhouette right, a country boat (nouka), coconut palms and the green delta.
+   Art: secular West Bengal — dawn over the Hooghly river, a country boat
+   (nouka) in warm teak, a Kolkata auto-rickshaw on the bank, coconut palms
+   near and a hazy palm grove on the far bank, over the green delta.
    Mascot: Bengal tiger cub. No temples or religious imagery (house rule). */
 
-/* --- hero: the Hooghly at dawn — calm rosy sky over the title, Howrah bridge & palms right --- */
+/* --- hero: the Hooghly at dawn — calm rosy sky over the title, boat, auto-rickshaw & palms right --- */
 const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class="orb" cx="856" cy="112" r="44"/>'
 +'<g class="hero-stars" aria-hidden="true"><circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="240" cy="104" r="1.2"/><circle cx="360" cy="46" r="2"/><circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="600" cy="60" r="1.3"/><circle cx="700" cy="112" r="1.5" class="tw" style="animation-delay:2s"/></g>'
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
@@ -45,25 +46,32 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M210 96 q6 -5 12 0 q6 -5 12 0"/><path d="M292 112 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* far: the hazy far bank of the Hooghly — long, low, violet */
 +'<path class="far" d="M0 254 Q150 249 300 252 Q450 247 600 250 Q700 246 780 244 Q860 240 940 243 Q1040 238 1120 241 Q1170 239 1200 240 L1200 320 L0 320 Z"/>'
-/* the Howrah bridge — steel cantilever silhouette, high right where the phone crop keeps it */
-+'<g fill="none" stroke="var(--tree)" stroke-linecap="round" aria-hidden="true">'
-+'<path d="M868 246 L868 168 M886 246 L886 168 M868 168 L886 168 M868 196 L886 196 M868 222 L886 222" stroke-width="5"/>'
-+'<path d="M1148 246 L1148 168 M1166 246 L1166 168 M1148 168 L1166 168 M1148 196 L1166 196 M1148 222 L1166 222" stroke-width="5"/>'
-+'<path d="M886 172 Q1017 128 1148 172" stroke-width="6"/>'
-+'<path d="M862 246 L1200 246" stroke-width="6"/>'
-+'<path d="M820 226 L868 176 M1200 232 L1166 176" stroke-width="5"/>'
+/* a distant palm grove on the far bank, hazy and violet so it stays back */
++'<g class="far" aria-hidden="true">'
++'<path d="M986 244 Q984 218 990 200 L994 200 Q989 220 992 244 Z"/>'
++'<path d="M992 202 Q976 192 962 196 Q976 182 992 192 Q998 178 1012 174 Q1002 186 996 196 Q1012 188 1026 196 Q1010 197 996 202 Q1006 209 1010 220 Q999 210 992 203 Z"/>'
++'<path d="M1046 244 Q1044 222 1050 206 L1054 206 Q1049 224 1052 244 Z"/>'
++'<path d="M1052 208 Q1038 199 1026 203 Q1038 190 1052 199 Q1057 186 1069 183 Q1060 194 1055 202 Q1069 195 1081 202 Q1067 203 1055 208 Q1064 214 1067 224 Q1058 215 1052 209 Z"/>'
++'<path d="M1112 244 Q1110 226 1115 212 L1119 212 Q1115 228 1117 244 Z"/>'
++'<path d="M1117 214 Q1105 206 1094 209 Q1105 198 1117 206 Q1121 195 1132 192 Q1124 201 1120 208 Q1132 202 1142 208 Q1130 209 1120 214 Q1127 219 1130 228 Q1122 220 1117 215 Z"/>'
 +'</g>'
-/* suspender cables (fine detail) */
-+'<g class="art-detail" stroke="var(--tree)" stroke-width="1.6" opacity=".6" aria-hidden="true"><path d="M920 158 L920 246 M960 149 L960 246 M1000 144 L1000 246 M1040 144 L1040 246 M1080 148 L1080 246 M1120 157 L1120 246"/></g>'
 /* mid: the warm golden riverbank sweeping under the title */
 +'<path class="mid" d="M0 320 L0 284 Q200 276 400 281 Q600 286 800 280 Q1000 275 1200 281 L1200 320 Z"/>'
 /* water glints on the river, under the title */
 +'<path class="snow" opacity=".28" d="M90 258 Q240 252 390 256 L388 262 Q240 256 94 264 Z"/>'
 +'<path class="snow" opacity=".28" d="M180 270 Q330 262 470 268 L468 274 Q330 266 184 276 Z"/>'
-/* the nouka — a Bengali country boat with its swept prow, afloat on the violet water */
-+'<g fill="var(--tree)" aria-hidden="true">'
-+'<path d="M560 261 Q600 272 648 272 Q694 272 726 260 Q718 276 692 280 L600 280 Q572 276 560 261 Z"/>'
-+'<path d="M636 238 Q652 246 656 260 L640 272 Q630 254 636 238 Z"/>'
+/* the nouka — a Bengali country boat, warm teak so it lifts off the violet water */
++'<g aria-hidden="true">'
++'<path fill="var(--mtn-mid)" d="M556 260 Q604 275 656 275 Q708 275 752 258 L747 269 Q706 283 656 283 Q604 283 561 269 Z"/>'
++'<path fill="var(--tree)" d="M620 268 Q654 246 690 268 Z"/>'
++'</g>'
+/* a Kolkata auto-rickshaw pulled up on the bank */
++'<g aria-hidden="true">'
++'<path fill="var(--tree)" d="M862 240 Q862 235 868 235 L916 235 Q922 235 922 240 L922 249 L862 249 Z"/>'
++'<path fill="var(--orb)" d="M866 249 L920 249 Q927 249 927 257 L927 272 Q927 278 921 278 L872 278 Q863 278 861 269 L859 259 Q858 250 866 249 Z"/>'
++'<path fill="var(--tree)" opacity=".35" d="M872 253 L900 253 L900 266 L872 266 Z"/>'
++'<circle fill="var(--tree)" cx="874" cy="279" r="6.5"/><circle fill="var(--tree)" cx="914" cy="279" r="7.5"/>'
++'<circle fill="var(--mtn-mid)" cx="874" cy="279" r="2.4"/><circle fill="var(--mtn-mid)" cx="914" cy="279" r="2.8"/>'
 +'</g>'
 /* coconut palms on the near bank, right of the title zone */
 +'<g fill="var(--tree)" aria-hidden="true">'
@@ -84,7 +92,7 @@ const BN_BAND='<circle class="orb-glow" cx="1046" cy="86" r="34"/><circle class=
 /* water glint */
 +'<path class="snow" opacity=".25" d="M120 163 Q260 157 400 161 L398 166 Q260 161 124 168 Z"/>'
 /* small nouka */
-+'<g fill="var(--tree)" aria-hidden="true"><path d="M840 160 Q866 167 896 167 Q924 167 944 159 Q938 170 920 173 L862 173 Q848 170 840 160 Z"/><path d="M888 146 Q898 151 900 160 L890 167 Q884 156 888 146 Z"/></g>'
++'<g aria-hidden="true"><path fill="var(--mtn-mid)" d="M840 160 Q866 167 896 167 Q924 167 944 159 Q938 170 920 173 L862 173 Q848 170 840 160 Z"/><path fill="var(--tree)" d="M888 146 Q898 151 900 160 L890 167 Q884 156 888 146 Z"/></g>'
 /* palm (fine detail) */
 +'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M1102 186 Q1100 160 1106 142 L1110 142 Q1108 162 1109 186 Z"/><path d="M1107 144 Q1092 136 1078 139 Q1094 128 1108 136 Q1114 124 1128 121 Q1118 132 1111 139 Q1126 134 1138 141 Q1122 141 1111 144 Q1119 151 1123 161 Q1112 152 1106 145 Z"/></g>'
 +'<g class="near"><path d="M0 188 Q300 170 600 180 Q900 190 1200 180 L1200 200 L0 200 Z"/></g>';
