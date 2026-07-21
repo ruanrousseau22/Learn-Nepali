@@ -1356,6 +1356,52 @@ A trap worth remembering: a JS string's `.length` is UTF-16 code units, not
 bytes — a Sinhala file that is 605K on disk reads as 441K characters, which
 looks alarmingly like a truncated fetch. Do not chase that as a bug.
 
+### Vocabulary recycling & difficulty ramp (July 2026) — analysis, no code change
+Asked of all 8 courses: does a word taught in Zone 2 ever come back, and does
+the new-word load ramp sensibly?
+
+**The ramp is healthy and flat.** New words per zone sit at 33–49 for every
+language except Khmer (53–64 — the same deliberate, practice-backed load
+documented above) and Nepali, which dips to 19/15 in Zones 7–8 because those are
+grammar zones (can/must/want) that add patterns rather than nouns. No topic
+spikes.
+
+**Recycling inside the lesson path varies a lot — but read the number carefully.**
+Measuring "taught once, never appears in any later topic" only means something
+once the categories are separated, because alphabet letters, numerals and whole
+sentences all live in `vocab` alongside ordinary words:
+- independent alphabet letters rarely recur in running text (Devanagari ऐ/ओ
+  appear as matras, not as independent letters) — expected, and the Alphabet page
+  plus its flashcards cover them;
+- whole-sentence vocab rows naturally never recur verbatim;
+- for **single content words** the orphan rate runs si 19% · bn 19% · my 30% ·
+  mn 31% · ps 36% · km 37% · ne 43% · **lo 52%**.
+
+**This is mitigated by design, and the mitigation was verified live.**
+`finishLesson` calls `addVocab(l.vocab)` on first completion of every lesson
+(index.html), so **every taught word enters the SM-2 review deck automatically**.
+Confirmed in the browser: finishing a Sinhala lesson moved the deck 20→25 with
+all five words due immediately and carrying their glosses. The lesson path is the
+INTRODUCTION channel; the Review tab is the RETENTION channel. Curriculum-level
+reappearance is therefore a bonus, not the mechanism — which is the Duolingo/Anki
+model and a defensible design.
+
+**Lao is the weakest on both axes** (52% of content words never reappear, and
+73.8% of its native-script distractors come from the same topic, the highest of
+any pack) — so a Lao learner working only through lessons sees the least of their
+older vocabulary. That is a content-authoring opportunity for a future Lao pass,
+NOT a bug.
+
+**Do not "fix" distractors in bulk.** Native-script distractors cost no audio
+(only an mc's CORRECT option is recorded), so redrawing them from older
+vocabulary looks like a free recycling win. It is not safe to automate: "not
+previously taught" here also catches legitimate inflected forms of taught words
+and deliberate minimal-pair foils in the script lessons. This is exactly the
+shape of the gloss-consistency automation that produced false matches — curate by
+hand or leave alone. Note also the real tension: for `li` (listening
+discrimination) same-lesson distractors are CORRECT and deliberate, per the Khmer
+listening pass.
+
 ### Resilience & accessibility pass (July 2026)
 Both were exercised in the browser rather than read off the source.
 
