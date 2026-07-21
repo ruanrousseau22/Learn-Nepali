@@ -220,7 +220,8 @@ const KM_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'ចេក',o:['ចេក','បាយ','កូន','តា'],a:0},
 {t:'mc',q:'Which word says koun (child)?',o:['កូន','គោ','ចេក','បី'],a:0},
 {t:'li',q:'Listen — which word?',say:'បី',o:['បី','បាយ','តា','ទា'],a:0},
-{t:'mc',q:'ា after an o-series letter sounds like…',o:['ea','aa','ou','ai'],a:0}]},
+{t:'mc',q:'ា after an o-series letter sounds like…',o:['ea','aa','ou','ai'],a:0},
+{t:'li',q:'Listen — which vowel?',say:'អេ',o:['អេ','អា','អី','អុ'],a:0}]},
 {id:'km_v1_3',title:'Build words',step:'build',meta:'Match & complete',vocab:[],ex:[
 {t:'match',q:'Match Khmer and meaning',pairs:[['បាយ','rice'],['ចេក','banana'],['តា','grandfather'],['ទា','duck'],['កូន','child']]},
 {t:'mc',q:'Which word is bei (three)?',o:['បី','បាយ','ប','បូ'],a:0},
@@ -263,7 +264,8 @@ const KM_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'ដំរី',o:['ដំរី','មួយ','សេះ','កោះ'],a:0},
 {t:'mc',q:'Which word says kaoh (island)?',o:['កោះ','គោ','សេះ','ខែ'],a:0},
 {t:'li',q:'Listen — which word?',say:'មួយ',o:['មួយ','ដៃ','ចាំ','បី'],a:0},
-{t:'mc',q:'Which word says cham (to wait)?',o:['ចាំ','ចេក','ខែ','ដៃ'],a:0}]},
+{t:'mc',q:'Which word says cham (to wait)?',o:['ចាំ','ចេក','ខែ','ដៃ'],a:0},
+{t:'li',q:'Listen — which vowel?',say:'អែ',o:['អែ','អៃ','អោ','គោ'],a:0}]},
 {id:'km_v2_3',title:'Build words',step:'build',meta:'Match & complete',vocab:[],ex:[
 {t:'match',q:'Match Khmer and meaning',pairs:[['ខែ','month'],['ដៃ','hand'],['គោ','cow'],['សេះ','horse'],['ដំរី','elephant']]},
 {t:'fill',q:'Complete: island = ___',s:'___',o:['កោះ','គោ','ខែ','សេះ'],a:0},
@@ -1945,7 +1947,8 @@ const KM_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'ខុស',o:['ខុស','សុខ','ខ្លាច','គោ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ត្រូវតែ',o:['ត្រូវតែ','ត្រូវទេ','ត្រូវ','តែ'],a:0},
 {t:'mc',q:'Which phrase means no need?',o:['មិនបាច់ទេ','មិនអីទេ','មិនយល់ទេ','មិនល្អទេ'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'មិនបាច់ទេ',o:['មិនបាច់ទេ','មិនអីទេ','មិនយល់ទេ','បានទេ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'មិនបាច់ទេ',o:['មិនបាច់ទេ','មិនអីទេ','មិនយល់ទេ','បានទេ'],a:0},
+{t:'li',q:'Listen — which sentence?',say:'ខ្ញុំត្រូវរៀនភាសាខ្មែរ',o:['ខ្ញុំត្រូវរៀនភាសាខ្មែរ','ខ្ញុំត្រូវទៅធ្វើការ','ត្រូវហើយ','មិនបាច់ទេ'],a:0}]},
 {id:'km_must_3',title:'Build it',step:'build',meta:'Duties & corrections',vocab:[],ex:[
 {t:'match',q:'Match Khmer and meaning',pairs:[['ត្រូវ','must'],['ត្រូវតែ','really must'],['ត្រូវហើយ','that is right'],['ខុស','wrong'],['មិនបាច់ទេ','no need']]},
 {t:'wb',q:'Build: I have to go to work',a:['ខ្ញុំ','ត្រូវ','ទៅ','ធ្វើការ'],pool:['ខ្ញុំ','ត្រូវ','ទៅ','ធ្វើការ','ចង់','រៀន'],r:'khnhom trov tov tveu ka'},

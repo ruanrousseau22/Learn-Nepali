@@ -461,7 +461,8 @@ const LO_Z2=[
 {t:'mc',q:'Which means "they"?',o:['ພວກເຂົາ','ພວກເຮົາ','ລາວ','ເຈົ້າ'],a:0},
 {t:'li',q:'Listen — which pronoun?',say:'ພວກເຮົາ',o:['ພວກເຮົາ','ພວກເຂົາ','ຂ້ອຍ','ລາວ'],a:0},
 {t:'mc',q:'ເພິ່ນ is used for…',o:['a respectful he/she','a group','a question','yourself'],a:0},
-{t:'li',q:'Listen — which pronoun?',say:'ລາວ',o:['ລາວ','ເຈົ້າ','ພວກເຂົາ','ຂ້ອຍ'],a:0}]},
+{t:'li',q:'Listen — which pronoun?',say:'ລາວ',o:['ລາວ','ເຈົ້າ','ພວກເຂົາ','ຂ້ອຍ'],a:0},
+{t:'li',q:'Listen — which pronoun?',say:'ເພິ່ນ',o:['ເພິ່ນ','ລາວ','ເຈົ້າ','ຂ້ອຍ'],a:0}]},
 {id:'lo_pron_3',title:'Build with pronouns',step:'build',meta:'Match & choose',vocab:[],ex:[
 {t:'match',q:'Match pronoun and meaning',pairs:[['ຂ້ອຍ','I'],['ເຈົ້າ','you'],['ລາວ','he/she'],['ພວກເຮົາ','we']]},
 {t:'mc',q:'Point to yourself and say…',o:['ຂ້ອຍ','ເຈົ້າ','ລາວ','ພວກເຂົາ'],a:0},
@@ -1711,7 +1712,9 @@ const LO_Z7=[
 {t:'mc',q:'"I will go" uses…',o:['ຈະ','ແລ້ວ','ຍັງ','ບໍ່'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຊິ',o:['ຊິ','ຈະ','ແລ້ວ','ຍັງ'],a:0},
 {t:'mc',q:'ຈະ sits ___ the verb',o:['before','after','at the end','instead of it'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ຈະໄປ',o:['ຈະໄປ','ໄປແລ້ວ','ຈະບໍ່','ຍັງ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ຈະໄປ',o:['ຈະໄປ','ໄປແລ້ວ','ຈະບໍ່','ຍັງ'],a:0},
+{t:'mc',q:'Which means next / later?',o:['ຕໍ່ໄປ','ມື້ອື່ນ','ແລ້ວ','ຈະ'],a:0},
+{t:'li',q:'Listen — which word?',say:'ຢາກ',o:['ຢາກ','ຈະ','ຊິ','ບໍ່'],a:0}]},
 {id:'lo_future_3',title:'Build the future',step:'build',meta:'Say what will happen',vocab:[],ex:[
 {t:'wb',q:'Build: "I will go tomorrow"',a:['ຂ້ອຍ','ຈະ','ໄປ','ມື້ອື່ນ'],pool:['ຂ້ອຍ','ຈະ','ໄປ','ມື້ອື່ນ','???']},
 {t:'match',q:'Match word and meaning',pairs:[['ຈະ','will'],['ຈະບໍ່','will not'],['ຊິ','will (casual)'],['ມື້ອື່ນ','tomorrow']]},

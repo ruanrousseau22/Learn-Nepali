@@ -1746,7 +1746,8 @@ const PS_Z7=[
 {t:'mc',q:'The little و on وخوړه marks the verb as…',o:['completed (done)','future','negative','a question'],a:0},
 {t:'li',q:'Listen — which word?',say:'تا',o:['تا','ما','ته','دا'],a:0},
 {t:'mc',q:'ما ولیدل means…',o:['I saw (it)','I ate','I went','I want'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ما ولیدل',o:['ما ولیدل','ما چای وڅښه','ما ډوډۍ وخوړه','تا'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ما ولیدل',o:['ما ولیدل','ما چای وڅښه','ما ډوډۍ وخوړه','تا'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'ما اوبه وڅښلې',o:['ما اوبه وڅښلې','ما چای وڅښه','ما ډوډۍ وخوړه','ما ولیدل'],a:0}]},
 {id:'ps_erg_3',title:'Build the flip',step:'build',meta:'ما + thing + verb',vocab:[],ex:[
 {t:'wb',q:'Build: "I ate bread" (past!)',a:['ما','ډوډۍ','وخوړه'],pool:['ما','ډوډۍ','وخوړه','زه']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ما ډوډۍ وخوړه','I ate bread'],['ما چای وڅښه','I drank tea'],['ما ولیدل','I saw'],['تا','you (past-doer)']]},

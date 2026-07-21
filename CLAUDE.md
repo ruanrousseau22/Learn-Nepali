@@ -1305,17 +1305,53 @@ same lesson, no two options share a romanization, and selection uses a seeded
 shuffle rather than modular stepping. Verified live in the browser: the clip
 returns 200, `shufOpts` moves the answer off slot 0, and answering scores.
 
-**Known parity gaps, deliberately NOT auto-fixed** (they need authoring calls +
-new audio, so raise them with Ruan first):
-- **`fill` is entirely absent from Burmese and Sinhala** (0 exercises; every
-  other course has 82–518). Both compensate with more `wb`/`mc`, so this is a
-  variety gap rather than a correctness one — but adding `fill` means new spoken
-  strings (the `s` with `___` filled IS recorded), so it is a real audio job.
-- **SRS seed is 15 in my/si vs 20 elsewhere.** Only some seed words are also
-  vocab, so topping up may add recordings.
-- **Khmer learn lessons carry the heaviest vocab load** (8.6 avg, max 12, vs ~6
-  elsewhere) and the most exercises per learn lesson (10.0 vs 7.0). Intentional
-  or not, it is the one real difficulty-ramp outlier.
+**The three remaining gaps were then closed (July 2026), all AUDIO-NEUTRAL:**
+- **`fill` was entirely absent from Burmese and Sinhala** (0 vs 82–518
+  elsewhere). **283 added** (si 145, my 138), one per `build` and one per `mix`
+  lesson. The trick that kept it free: a fill's spoken string is
+  `s.replace('___', o[a])`, so every sentence was chosen from strings ALREADY
+  recorded for that language (existing `wb` answers, multi-word vocab, match
+  pairs). Result: **zero strings added or removed** from either set. The
+  `audio_strings_*.json` files still changed, because the extractor dedups by
+  FIRST occurrence and some sentences now debut in `build` rather than `mix` —
+  that is an ORDER change only, and order is irrelevant to audio (clips are
+  hashed per string). Always diff the string SET before assuming a `--check`
+  failure means new recordings. Topics with no recorded sentence yet (the script
+  zone, early number topics) correctly got none, matching where siblings start
+  their `fill` coverage (zone 2).
+- **SRS seed was 15 in my/si vs 20 elsewhere** — topped up to 20 with words
+  already in each pack's vocab (so already recorded): si gained sorry/home/
+  money/tomorrow/mother, my gained sorry/home/money/tomorrow/friend, mirroring
+  the shape of the ne and bn decks.
+- **Khmer's heavier load turned out NOT to be a defect — do not "fix" it.**
+  Its zones 2+ average 8.6 new words per learn lesson (max 12) against 5.6–6.5
+  elsewhere, and it is not a script-zone artifact. But it also runs 10 exercises
+  per learn lesson, so exercises-per-new-word is **1.16 — the same as Bengali's
+  1.15**, and a practice-coverage check found Khmer at **0.4% of vocab never
+  practised, better than Nepali's 1.8%**. The load is deliberate and fully
+  supported. Restructuring topics to spread it would change lesson ids and
+  break existing learners' progress for no pedagogical gain.
+
+**That coverage check found a small real gap and 13 fixes shipped.** 19 vocab
+items across ne/km/lo/mn/ps were taught but never practised anywhere in their
+topic. 13 were genuine misses and got one recognition exercise each, hand-written
+to match each lesson's own style (never generated — the gloss-automation lesson
+applies). The other **6 are correct as they are and must not be "fixed"**:
+Nepali citation infinitives whose topics rightly drill the conjugated forms
+(सक्नु→सक्छु/सक्दिनँ, पर्नु→पर्छ/पर्दैन, लाग्नु), the Pashto infinitive
+خرڅول (the topic drills پلوري), and pattern templates containing a literal
+`...` (म ... सक्छु, मलाई ... चाहियो) which cannot be drilled as written.
+
+**Tooling bug found and fixed:** `extract_audio_strings.js` still read Nepali
+from `index.html`, which the July 2026 payload split had emptied — so
+`extract_audio_strings.js ne` had been erroring out ever since, and any script
+looping over all 8 languages silently skipped ne (a "set unchanged" result from
+such a loop is vacuous, not proof). It now loads `lang/ne.js` like every other
+pack and `loadNePack` is gone. Nepali had NOT drifted in the meantime —
+`--check` matches at 2314 strings.
+Clip coverage was re-verified for all 8: zero orphans, every manifest equals its
+directory, and exactly **8 strings have no clip — all documented no-edge-tts
+characters** (si ඞ ඣ ඦ, my ဎ, bn ং ঃ ঁ, mn Щщ), which fall back to device TTS.
 A trap worth remembering: a JS string's `.length` is UTF-16 code units, not
 bytes — a Sinhala file that is 605K on disk reads as 441K characters, which
 looks alarmingly like a truncated fetch. Do not chase that as a bug.

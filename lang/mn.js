@@ -362,7 +362,8 @@ const MN_Z1=[
 {t:'mc',q:'Which word means "horse"?',o:['морь','мал','ном','нар'],a:0},
 {t:'li',q:'Listen — which word?',say:'монгол',o:['монгол','морь','сайн','ном'],a:0},
 {t:'mc',q:'нэр vs нар: name vs…',o:['sun','moon','book','road'],a:0},
-{t:'li',q:'Listen — which word?',say:'сайн',o:['сайн','шинэ','цай','сар'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'сайн',o:['сайн','шинэ','цай','сар'],a:0},
+{t:'mc',q:'Which sign separates sounds (the hard sign)?',o:['Ъъ','Ьь','Ээ','Яя'],a:0}]},
 {id:'mn_c7_3',title:'Read for real',step:'build',meta:'Words you can sound out',vocab:[['морь','mori','horse'],['айраг','airag','airag (mare milk drink)'],['тал','tal','steppe']],ex:[
 {t:'mc',q:'Read it:',d:'нэр',o:['ner','nar','nir','ren'],a:0},
 {t:'mc',q:'Read it:',d:'морь',o:['mori','mor','morya','miro'],a:0},
@@ -1786,7 +1787,8 @@ const MN_Z7=[
 {t:'mc',q:'явсан vs явна:',o:['went vs will go','will go vs went','both future','both past'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'Өчигдөр захад явсан',o:['Өчигдөр захад явсан','Өнөөдөр захад явна','Өчигдөр гэрт байсан','Захад явсан уу'],a:0},
 {t:'mc',q:'The past of идэх is…',o:['идсэн','идэнэ','идлээ биш','идэж'],a:0},
-{t:'li',q:'Listen — which verb?',say:'харсан',o:['харсан','харна','харсан уу','уусан'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'харсан',o:['харсан','харна','харсан уу','уусан'],a:0},
+{t:'li',q:'Listen — which phrase?',say:'Өчигдөр явсан',o:['Өчигдөр явсан','ирсэн','идсэн','уусан'],a:0}]},
 {id:'mn_past_3',title:'Build the past',step:'build',meta:'Tell what happened',vocab:[],ex:[
 {t:'match',q:'Match verb and meaning',pairs:[['явсан','went'],['ирсэн','came'],['идсэн','ate'],['уусан','drank']]},
 {t:'fill',q:'Complete: “yesterday I ate buuz”',s:'Өчигдөр бууз ___',o:['идсэн','иднэ','идэж','уусан'],a:0},

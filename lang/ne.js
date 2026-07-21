@@ -370,7 +370,9 @@ const NE_LESSONS = [
     {t:'li',q:'Which word did you hear?',say:'नमस्ते',r:'namaste',o:['thank you','hello','water','goodbye'],a:1},
     {t:'match',q:'Read these syllables',pairs:[['का','kaa'],['कि','ki'],['कु','ku'],['को','ko']]},
     {t:'mc',q:'Which is the digit "0"?',o:['०','१','६','९'],a:0},
-  ]},
+  ,
+{t:'mc',q:'Which number is this?',d:'१०',o:['10','1','0','100'],a:0},
+{t:'mc',q:'What does this say?',d:'काठमाडौं',o:['Kathmandu','Nepal','Pokhara','Himalaya'],a:0}]},
   {id:'sc_read_3',title:'Build',step:'build',meta:'Spell with matras',vocab:[],ex:[
     {t:'fill',q:'Attach the aa-matra',s:'क + आ → ___',o:['का','कि','कु','को'],a:0,r:'kaa',h:'the sign follows the letter'},
     {t:'fill',q:'Attach the oo-matra',s:'क + ऊ → ___',o:['कू','कु','को','का'],a:0,r:'koo'},
@@ -2267,7 +2269,8 @@ const NE_LESSONS = [
     {t:'mc',q:'Which word means "month"?',o:['महिना','हप्ता','घण्टा','मिनेट'],a:0},
     {t:'match',q:'Match the days',pairs:[['आइतबार','Sunday'],['शनिबार','Saturday'],['घण्टा','Hour'],['महिना','Month']]},
     {t:'mc',q:'कति बज्यो? literally asks…',o:['how much has struck?','where is it?','what is this?','who is it?'],a:0}
-  ]},
+  ,
+{t:'mc',q:'What does एक बज्यो mean?',d:'एक बज्यो',r:'Ek bajyo',o:['it is one o’clock','it is two o’clock','half past one','one hour'],a:0}]},
   {id:'time_3',title:'Build',step:'build',meta:'Tell the time',vocab:[],ex:[
     {t:'fill',q:'Complete: "It is two o’clock"',s:'दुई ___',o:['बज्यो','बजे','साढे','घण्टा'],a:0,r:'Dui bajyo'},
     {t:'tr',q:'Translate: "What time is it?"',a:'कति बज्यो?',r:'Kati bajyo',h:'how much has struck'},
@@ -3008,7 +3011,8 @@ const NE_LESSONS = [
     {t:'mc',q:'What does चाहिन्छ mean?',d:'चाहिन्छ',r:'Chaahinchha',o:['is needed','is liked','is here','is done'],a:0},
     {t:'mc',q:'What does मलाई mean?',d:'मलाई',r:'Malai',o:['to me','I (doer)','my','we'],a:0},
     {t:'mc',q:'मन पर्छ literally means…',o:['it is pleasing to me','I have it','I want it','I can do it'],a:0}
-  ]},
+  ,
+{t:'mc',q:'What does मलाई मन पर्छ mean?',d:'मलाई मन पर्छ',r:'Malai man parchha',o:['I like it','I want it','I have it','I need it'],a:0}]},
   {id:'want_3',title:'Build',step:'build',meta:'say what you want / like',vocab:[],ex:[
     {t:'tr',q:'Translate: "I want tea"',a:'मलाई चिया चाहियो',r:'Malai chiyaa chaahiyo',h:'malai ... chaahiyo'},
     {t:'fill',q:'Complete: "I want this"',s:'मलाई यो ___',o:['चाहियो','छ','हो','पर्छ'],a:0,r:'Malai yo chaahiyo'},

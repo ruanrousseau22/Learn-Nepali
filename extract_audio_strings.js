@@ -1,6 +1,6 @@
 /* extract_audio_strings.js — regenerate a language's audio strings file from its pack.
    JXA (no Node on this Mac):
-     osascript -l JavaScript extract_audio_strings.js ne          # index.html  -> audio_strings.json
+     osascript -l JavaScript extract_audio_strings.js ne          # lang/ne.js  -> audio_strings.json
      osascript -l JavaScript extract_audio_strings.js km          # lang/km.js  -> audio_strings_km.json
      osascript -l JavaScript extract_audio_strings.js ne --check  # compare only, write nothing
    Run from the repo root, then: python3 generate_audio.py --lang <code>
@@ -45,19 +45,9 @@ function loadPackFromSource(src){
   if(!codes.length)throw new Error('registerPack was never called');
   return packs[codes[0]];
 }
-/* The Nepali pack lives inline in index.html: slice the main <script> from its
-   first const through the end of the ne registerPack({...}) call, then eval
-   that slice (data consts + function declarations only — nothing in it touches
-   the DOM at top level). */
-function loadNePack(html){
-  var start=html.indexOf('const SUPABASE_URL');
-  if(start<0)throw new Error('start marker (const SUPABASE_URL) not found in index.html');
-  var reg=html.indexOf("registerPack({\n  code:'ne'",start);
-  if(reg<0)throw new Error('ne registerPack call not found in index.html');
-  var end=html.indexOf('\n});',reg);
-  if(end<0)throw new Error('end of ne registerPack call not found');
-  return loadPackFromSource(html.slice(start,end+4));
-}
+/* Nepali used to live inline in index.html and needed a slice-then-eval loader.
+   The July 2026 payload split moved it to lang/ne.js, so it now loads exactly
+   like every other pack — loadNePack is gone. */
 /* combining-marks-only test: Khmer dependent vowels & signs + Devanagari
    matras/signs + Sinhala signs (ං ඃ, hal kirima ්, dependent vowels ා-ෟ ෲ ෳ)
    + Bengali vowel signs & hasanta (া-ৌ ্ ৗ) */
@@ -98,7 +88,7 @@ function serialize(arr){return '[\n'+arr.map(function(s){return JSON.stringify(s
 
 function run(argv){
   var lang=argv[0],check=argv.indexOf('--check')>=0;
-  var conf={ne:{src:'index.html',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'},lo:{src:'lang/lo.js',out:'audio_strings_lo.json'},ps:{src:'lang/ps.js',out:'audio_strings_ps.json'},mn:{src:'lang/mn.js',out:'audio_strings_mn.json'},bn:{src:'lang/bn.js',out:'audio_strings_bn.json'},nef:{src:'faith/ne.js',out:'audio_strings_nef.json'},kmf:{src:'faith/km.js',out:'audio_strings_kmf.json'},myf:{src:'faith/my.js',out:'audio_strings_myf.json'},sif:{src:'faith/si.js',out:'audio_strings_sif.json'},lof:{src:'faith/lo.js',out:'audio_strings_lof.json'},psf:{src:'faith/ps.js',out:'audio_strings_psf.json'},bnf:{src:'faith/bn.js',out:'audio_strings_bnf.json'},mnf:{src:'faith/mn.js',out:'audio_strings_mnf.json'}}[lang];
+  var conf={ne:{src:'lang/ne.js',out:'audio_strings.json'},km:{src:'lang/km.js',out:'audio_strings_km.json'},my:{src:'lang/my.js',out:'audio_strings_my.json'},si:{src:'lang/si.js',out:'audio_strings_si.json'},lo:{src:'lang/lo.js',out:'audio_strings_lo.json'},ps:{src:'lang/ps.js',out:'audio_strings_ps.json'},mn:{src:'lang/mn.js',out:'audio_strings_mn.json'},bn:{src:'lang/bn.js',out:'audio_strings_bn.json'},nef:{src:'faith/ne.js',out:'audio_strings_nef.json'},kmf:{src:'faith/km.js',out:'audio_strings_kmf.json'},myf:{src:'faith/my.js',out:'audio_strings_myf.json'},sif:{src:'faith/si.js',out:'audio_strings_sif.json'},lof:{src:'faith/lo.js',out:'audio_strings_lof.json'},psf:{src:'faith/ps.js',out:'audio_strings_psf.json'},bnf:{src:'faith/bn.js',out:'audio_strings_bnf.json'},mnf:{src:'faith/mn.js',out:'audio_strings_mnf.json'}}[lang];
   if(!conf)return 'usage: osascript -l JavaScript extract_audio_strings.js ne|km|my|si|lo|ps|mn|bn|nef|kmf|myf|sif|lof|psf|bnf|mnf [--check]';
   var cwd=ObjC.unwrap($.NSFileManager.defaultManager.currentDirectoryPath)+'/';
   var strings;
@@ -118,7 +108,7 @@ function run(argv){
       if(s.note&&s.note.length)addF(s.note[0]);});});
     strings=out;
   }else{
-    var pack=lang==='ne'?loadNePack(readFile(cwd+conf.src)):loadPackFromSource(readFile(cwd+conf.src));
+    var pack=loadPackFromSource(readFile(cwd+conf.src));
     strings=extract(pack);
   }
   var txt=serialize(strings);
