@@ -1299,7 +1299,7 @@ const MN_Z5=[
 {t:'mc',q:'хэд asks…',o:['how much / how many','what','where','whose'],a:0},
 {t:'li',q:'Listen — which word?',say:'мөнгө',o:['мөнгө','мөн','мянга','өнгө'],a:0}]},
 
-{id:'mn_shop',title:'Shopping',step:'learn',meta:'Энийг авъя',vocab:[['авна','avna','will take / buy'],['Энийг авъя','eniig avya','I will take this one'],['Хямд болох уу?','khyamd bolokh uu','can it be cheaper?'],['болно','bolno','OK / it can be'],['дахиад нэг','dakhiad neg','one more'],['Хаанаас авах вэ?','khaanaas avakh ve','where can I buy it?']],ex:[
+{id:'mn_shop',title:'Shopping',step:'learn',meta:'Энийг авъя',vocab:[['авна','avna','will take / buy'],['Энийг авъя','eniig avya','I will take this one'],['Хямд болох уу?','khyamd bolokh uu','can it be cheaper?'],['болно','bolno','it is possible / can do'],['дахиад нэг','dakhiad neg','one more'],['Хаанаас авах вэ?','khaanaas avakh ve','where can I buy it?']],ex:[
 {t:'note',tag:'Take it!',q:'авна · Энийг авъя',body:'<p><span class="deva">авах</span> = take AND buy. Decided? <span class="deva">Энийг авъя</span> — I will take this one! (<span class="deva">-ъя</span> = let-me, the deciding voice.)</p>',eg:[['авна','avna','will buy'],['Энийг авъя','eniig avya','I’ll take this one']]},
 {t:'mc',q:'“I will take this one” =',o:['Энийг авъя','Энэ авна уу','Авъя энийг үү','Энэ хэд вэ'],a:0},
 {t:'mc',q:'авах covers…',o:['take AND buy','only give','only sell','eat'],a:0},

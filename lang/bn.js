@@ -212,7 +212,7 @@ const BN_Z1=[
 {t:'match',q:'Match syllable and sound',pairs:[['কা','ka'],['কি','ki'],['কু','ku'],['কে','ke'],['কো','ko']]},
 {t:'mc',q:'কে asks ___ and কী asks ___',o:['who / what','what / who','where / when','yes / no'],a:0}]},
 
-{id:'bn_c3',title:'Core consonants',step:'learn',meta:'ত দ প ব র ল স হ',vocab:[['ত','to (soft)','consonant: soft t'],['দ','do (soft)','consonant: soft d'],['প','po','consonant: p'],['ব','bo','consonant: b'],['র','ro','consonant: r'],['ল','lo','consonant: l'],['স','so / sho','consonant: s'],['হ','ho','consonant: h']],ex:[
+{id:'bn_c3',title:'Core consonants',step:'learn',meta:'ত দ প ব র ল স হ',vocab:[['ত','to (soft)','consonant: soft t'],['দ','do (soft)','consonant: soft d'],['প','po','consonant: p'],['ব','bo','consonant: b'],['র','ro','consonant: r'],['ল','lo','consonant: l'],['স','so / sho','consonant: s / sh (3rd)'],['হ','ho','consonant: h']],ex:[
 {t:'note',tag:'The workhorses',q:'ত দ প ব র ল স হ',body:'<p>Eight letters that carry half of Bengali: <span class="deva">ত</span> to, <span class="deva">দ</span> do (both soft — tongue touching the teeth), <span class="deva">প</span> po, <span class="deva">ব</span> bo, <span class="deva">র</span> ro, <span class="deva">ল</span> lo, <span class="deva">স</span> so, <span class="deva">হ</span> ho.</p><p><span class="deva">বাবা</span> <b>baba</b> = father. <span class="deva">রাত</span> <b>rat</b> = night. <span class="deva">হাত</span> <b>hat</b> = hand.</p>',eg:[['বাবা','baba','father'],['রাত','rat','night'],['হাত','hat','hand']]},
 {t:'mc',q:'What does this letter say?',d:'ব',o:['bo','po','do','ro'],a:0},
 {t:'mc',q:'And this one?',d:'র',o:['ro','lo','to','ho'],a:0},
@@ -852,7 +852,7 @@ const BN_Z3=[
 {t:'mc',q:'“This is not water” =',o:['এটা জল নয়','এটা জল না','এটা জল নেই','জল এটা'],a:0},
 {t:'li',q:'Listen — which word?',say:'না',o:['না','নয়','নেই','মা'],a:0}]},
 
-{id:'bn_yn',title:'Yes–no questions',step:'learn',meta:'the little word কি',vocab:[['কি','ki','yes–no question marker'],['তুমি কি খাও?','tumi ki khao','are you eating?'],['আপনি কি যাবেন?','apni ki jaben','will you go? (polite)'],['খাই','khai','(yes,) I eat'],['খাই না','khai na','(no,) I do not eat']],ex:[
+{id:'bn_yn',title:'Yes–no questions',step:'learn',meta:'the little word কি',vocab:[['কি','ki','yes–no question marker'],['তুমি কি খাও?','tumi ki khao','are you eating?'],['আপনি কি যাবেন?','apni ki jaben','will you go? (polite)'],['খাই','khai','I eat / drink'],['খাই না','khai na','(no,) I do not eat']],ex:[
 {t:'note',tag:'The question marker',q:'কি',body:'<p>Turn any sentence into a yes–no question with the little word <span class="deva">কি</span>: <span class="deva">তুমি ভাত খাও</span> you eat rice → <span class="deva">তুমি কি ভাত খাও?</span> DO you eat rice? In speech, rising tone alone also works.</p>',tip:'কি usually follows the subject.'},
 {t:'mc',q:'“Do you drink tea?” =',o:['তুমি কি চা খাও?','তুমি চা খাও','কি তুমি চা','চা কি তুমি খাই'],a:0},
 {t:'mc',q:'কি marks…',d:'কি',o:['a yes–no question','what','who','negation'],a:0},

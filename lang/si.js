@@ -3428,7 +3428,7 @@ const SI_LESSONS=[
 {t:'match',q:'Match taste and meaning',pairs:[['සැරයි','spicy'],['පැණි රසයි','sweet'],['ඇඹුල්','sour'],['තිත්තයි','bitter']]}]},
 
 /* --- Topic 83: polite polish --- */
-{id:'si_oba',title:'Polite forms',step:'learn',meta:'බොහොම ස්තූතියි · ඔබ as recognition',vocab:[['බොහොම','bohoma','very much'],['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good'],['කරුණාකර','karunaakara','please (formal)'],['ඔබ','oba','you (formal — recognize it)']],ex:[
+{id:'si_oba',title:'Polite forms',step:'learn',meta:'බොහොම ස්තූතියි · ඔබ as recognition',vocab:[['බොහොම','bohoma','very much'],['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good'],['කරුණාකර','karunaakara','please (formal)'],['ඔබ','oba','you (formal — signs & TV)']],ex:[
 {t:'note',tag:'The golden thanks',q:'බොහොම ස්තූතියි',body:'<p><span class="deva">බොහොම</span> <b>bohoma</b> = very much. The warmest thanks on the island: <span class="deva">බොහොම ස්තූතියි</span> <b>bohoma sthuuthiyi</b> — thank you very much.</p><p>Also: <span class="deva">බොහොම හොඳයි</span> — very good, well done!</p>',eg:[['බොහොම ස්තූතියි','bohoma sthuuthiyi','thank you very much'],['බොහොම හොඳයි','bohoma hondhayi','very good!']]},
 {t:'mc',q:'බොහොම ස්තූතියි means…',d:'බොහොම ස්තූතියි',r:'bohoma sthuuthiyi',o:['thank you very much','thanks a little','you are welcome','goodbye'],a:0},
 {t:'mc',q:'බොහොම vs ගොඩක් vs හරිම:',o:['all crank things up — bohoma is the politest','all mean small','opposites','only one is real'],a:0},

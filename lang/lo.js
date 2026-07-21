@@ -685,7 +685,7 @@ const LO_Z2=[
 ];
 const LO_Z3=[
 /* ===================== ZONE 3 · SAY A SENTENCE ===================== */
-{id:'lo_tobe',title:'This is… / is at…',step:'learn',meta:'ແມ່ນ vs ຢູ່',vocab:[['ນີ້','nii','this'],['ນັ້ນ','nan','that'],['ແມ່ນ','maen','to be (this is…)'],['ບໍ່ແມ່ນ','baw maen','is not'],['ຢູ່','yuu','to be (located at)'],['ຢູ່ໃສ','yuu sai','where is it?']],ex:[
+{id:'lo_tobe',title:'This is… / is at…',step:'learn',meta:'ແມ່ນ vs ຢູ່',vocab:[['ນີ້','nii','this'],['ນັ້ນ','nan','that'],['ແມ່ນ','maen','to be (this is…)'],['ບໍ່ແມ່ນ','baw maen','no (it is not)'],['ຢູ່','yuu','to be (located at)'],['ຢູ່ໃສ','yuu sai','where is it?']],ex:[
 {t:'note',tag:'Two "to be" verbs',q:'ແມ່ນ vs ຢູ່',body:'<p>Lao splits "to be" in two. <span class="deva">ແມ່ນ</span> <b>maen</b> links a thing to <b>what it is</b>: <span class="deva">ນີ້ແມ່ນເຂົ້າ</span> = "this is rice". <span class="deva">ຢູ່</span> <b>yuu</b> says <b>where</b> something is: <span class="deva">ຂ້ອຍຢູ່ເຮືອນ</span> = "I am at home".</p><p>Never use ແມ່ນ for location, or ຢູ່ for identity.</p>',tip:'ນີ້ nii = this, ນັ້ນ nan = that.'},
 {t:'mc',q:'Which "to be" says WHAT something is?',o:['ແມ່ນ','ຢູ່','ບໍ່','ນີ້'],a:0},
 {t:'mc',q:'Which "to be" says WHERE something is?',o:['ຢູ່','ແມ່ນ','ນັ້ນ','ຫຍັງ'],a:0},
@@ -889,7 +889,7 @@ const LO_Z3=[
 {t:'note',tag:'Want to DO',q:'ຢາກ + verb',body:'<p><span class="deva">ຢາກ</span> <b>yak</b> = "want to", placed before a <b>verb</b>: <span class="deva">ຂ້ອຍຢາກກິນ</span> = "I want to eat".</p><p>For wanting a <b>thing</b>, use <span class="deva">ຕ້ອງການ</span> <b>tongkaan</b> = "want / need": <span class="deva">ຂ້ອຍຕ້ອງການນ້ຳ</span> = "I need water".</p>',tip:'ຢາກ + action, ຕ້ອງການ + thing.'},
 {t:'mc',q:'"Want to (do)" =',o:['ຢາກ','ຕ້ອງການ','ມັກ','ບໍ່'],a:0},
 {t:'fill',q:'"I want to go"',s:'ຂ້ອຍ ___ ໄປ',o:['ຢາກ','ມັກ','ບໍ່','ຫຍັງ'],a:0},
-{t:'note',tag:'Like',q:'ມັກ',body:'<p><span class="deva">ມັກ</span> <b>mak</b> = "like". Use it with a thing or an activity: <span class="deva">ຂ້ອຍມັກເຂົ້າ</span> "I like rice", <span class="deva">ຂ້ອຍມັກໄປ</span> "I like to go".</p>',eg:[['ມັກ','mak','like'],['ຢາກ','yak','want to'],['ຕ້ອງການ','tongkaan','need']]},
+{t:'note',tag:'Like',q:'ມັກ',body:'<p><span class="deva">ມັກ</span> <b>mak</b> = "like". Use it with a thing or an activity: <span class="deva">ຂ້ອຍມັກເຂົ້າ</span> "I like rice", <span class="deva">ຂ້ອຍມັກໄປ</span> "I like to go".</p>',eg:[['ມັກ','mak','like'],['ຢາກ','yak','want to (do)'],['ຕ້ອງການ','tongkaan','need']]},
 {t:'mc',q:'"I like rice" uses…',o:['ມັກ','ຢາກ','ຕ້ອງການ','ບໍ່'],a:0},
 {t:'mc',q:'"I do not want to" =',o:['ບໍ່ຢາກ','ບໍ່ມັກ','ຢາກ','ຕ້ອງການ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຢາກ',o:['ຢາກ','ມັກ','ຕ້ອງການ','ບໍ່'],a:0}]},
@@ -1169,7 +1169,7 @@ const LO_Z4=[
 ];
 const LO_Z5=[
 /* ===================== ZONE 5 · HOW MANY ===================== */
-{id:'lo_money',title:'Money & how much',step:'learn',meta:'ກີບ & ເທົ່າໃດ',vocab:[['ເງິນ','ngen','money'],['ກີບ','kip','kip (Lao currency)'],['ເທົ່າໃດ','thao dai','how much?'],['ລາຄາ','laakhaa','price'],['ແພງ','phaeng','expensive'],['ຖືກ','thuuk','cheap']],ex:[
+{id:'lo_money',title:'Money & how much',step:'learn',meta:'ກີບ & ເທົ່າໃດ',vocab:[['ເງິນ','ngen','money'],['ກີບ','kip','kip (Lao currency)'],['ເທົ່າໃດ','thao dai','how much / how many'],['ລາຄາ','laakhaa','price'],['ແພງ','phaeng','expensive'],['ຖືກ','thuuk','cheap']],ex:[
 {t:'note',tag:'The kip',q:'ເງິນ · ກີບ',body:'<p><span class="deva">ເງິນ</span> <b>ngen</b> = money. Laos counts in <span class="deva">ກີບ</span> <b>kip</b>. Prices run large: a coffee might be <span class="deva">ໜຶ່ງໝື່ນກີບ</span> (10,000 kip).</p>',eg:[['ເງິນ','ngen','money'],['ກີບ','kip','kip'],['ລາຄາ','laakhaa','price']]},
 {t:'mc',q:'What is the Lao currency?',o:['ກີບ','ເງິນ','ລາຄາ','ບາດ'],a:0},
 {t:'mc',q:'How do you ask "how much?"',o:['ເທົ່າໃດ','ຫຍັງ','ໃສ','ໃຜ'],a:0},
@@ -1289,7 +1289,7 @@ const LO_Z5=[
 {t:'mc',q:'To ask "how many", put ___ in the number slot',o:['ຈັກ','ບໍ່','ຫຍັງ','ດີ'],a:0},
 {t:'li',q:'Listen — which classifier?',say:'ຄັນ',o:['ຄັນ','ຄົນ','ໂຕ','ອັນ'],a:0}]},
 
-{id:'lo_time',title:'Telling time',step:'learn',meta:'ໂມງ & ຈັກໂມງ',vocab:[['ໂມງ','mong','o’clock / hour'],['ຈັກໂມງ','jak mong','what time?'],['ເຄິ່ງ','kheung','half'],['ນາທີ','naathii','minute'],['ຕອນເຊົ້າ','ton sao','in the morning'],['ຕອນແລງ','ton laeng','in the evening']],ex:[
+{id:'lo_time',title:'Telling time',step:'learn',meta:'ໂມງ & ຈັກໂມງ',vocab:[['ໂມງ','mong','o’clock / hour'],['ຈັກໂມງ','jak mong','what time?'],['ເຄິ່ງ','kheung','half'],['ນາທີ','naathii','minute'],['ຕອນເຊົ້າ','ton sao','morning'],['ຕອນແລງ','ton laeng','evening']],ex:[
 {t:'note',tag:'The hour',q:'number + ໂມງ',body:'<p><span class="deva">ໂມງ</span> <b>mong</b> = o’clock. Put the number first: <span class="deva">ສາມໂມງ</span> <b>saam mong</b> = 3 o’clock. Ask <span class="deva">ຈັກໂມງ</span> <b>jak mong</b> = "what time?" (literally "how many hours?").</p>',eg:[['ໂມງ','mong','o’clock'],['ຈັກໂມງ','jak mong','what time?'],['ສາມໂມງ','saam mong','3 o’clock']]},
 {t:'mc',q:'How do you ask "what time is it?"',o:['ຈັກໂມງ','ເທົ່າໃດ','ໃສ','ຫຍັງ'],a:0},
 {t:'mc',q:'"3 o’clock" =',o:['ສາມໂມງ','ໂມງສາມ','ສາມນາທີ','ໂມງເຄິ່ງ'],a:0},
@@ -1693,7 +1693,7 @@ const LO_Z7=[
 {t:'mc',q:'ແລ້ວ sits where in the sentence?',o:['at the end','before the verb','first','it is dropped'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຍັງບໍ່',o:['ຍັງບໍ່','ໄປແລ້ວ','ກິນແລ້ວ','ຍັງ'],a:0}]},
 
-{id:'lo_future',title:'Going to',step:'learn',meta:'ຈະ & ຊິ',vocab:[['ຈະ','ja','will'],['ຈະໄປ','ja pai','will go'],['ຊິ','si','will (casual)'],['ຈະບໍ່','ja baw','will not'],['ມື້ອື່ນ','meu eun','tomorrow'],['ຕໍ່ໄປ','tor pai','next / later'],['ຢາກ','yak','want to']],ex:[
+{id:'lo_future',title:'Going to',step:'learn',meta:'ຈະ & ຊິ',vocab:[['ຈະ','ja','will'],['ຈະໄປ','ja pai','will go'],['ຊິ','si','will (casual)'],['ຈະບໍ່','ja baw','will not'],['ມື້ອື່ນ','meu eun','tomorrow'],['ຕໍ່ໄປ','tor pai','next / later'],['ຢາກ','yak','want to (do)']],ex:[
 {t:'note',tag:'Before the verb',q:'ຈະ + verb',body:'<p>For the future, put <span class="deva">ຈະ</span> <b>ja</b> before the verb: <span class="deva">ຂ້ອຍຈະໄປ</span> = "I will go". In casual speech you will also hear <span class="deva">ຊິ</span> <b>si</b> for the same job.</p>',eg:[['ຈະ','ja','will'],['ຈະໄປ','ja pai','will go'],['ຊິ','si','will (casual)']]},
 {t:'mc',q:'What goes before the verb for the future?',o:['ຈະ','ແລ້ວ','ບໍ່','ຫຍັງ'],a:0},
 {t:'mc',q:'ຂ້ອຍຈະໄປ means…',d:'ຂ້ອຍຈະໄປ',o:['I will go','I went','I am going','I do not go'],a:0},
@@ -2177,7 +2177,7 @@ const LO_Z9=[
 {t:'mc',q:'A reason clause is introduced by…',o:['ເພາະ','ແຕ່','ຫຼື','ຖ້າ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຫຼື',o:['ຫຼື','ແລະ','ແຕ່','ຖ້າ'],a:0}]},
 
-{id:'lo_think',title:'Think & understand',step:'learn',meta:'ຄິດ · ຮູ້ · ເຂົ້າໃຈ',vocab:[['ຄິດ','khit','think'],['ຄິດວ່າ','khit waa','think that'],['ຮູ້','huu','know (a fact)'],['ເຂົ້າໃຈ','khao jai','understand'],['ບໍ່ເຂົ້າໃຈ','baw khao jai','do not understand'],['ຮູ້ຈັກ','huu jak','know (be familiar)']],ex:[
+{id:'lo_think',title:'Think & understand',step:'learn',meta:'ຄິດ · ຮູ້ · ເຂົ້າໃຈ',vocab:[['ຄິດ','khit','think'],['ຄິດວ່າ','khit waa','think that'],['ຮູ້','huu','know (a fact)'],['ເຂົ້າໃຈ','khao jai','understand'],['ບໍ່ເຂົ້າໃຈ','baw khao jai','do not understand'],['ຮູ້ຈັກ','huu jak','know / be familiar']],ex:[
 {t:'note',tag:'I think that…',q:'ຄິດ · ຄິດວ່າ',body:'<p><span class="deva">ຄິດ</span> <b>khit</b> = think. Add <span class="deva">ວ່າ</span> <b>waa</b> ("that") to introduce your thought: <span class="deva">ຂ້ອຍຄິດວ່າດີ</span> = "I think (that) it’s good".</p>',eg:[['ຄິດ','khit','think'],['ຄິດວ່າ','khit waa','think that']]},
 {t:'mc',q:'Which means "think"?',o:['ຄິດ','ຮູ້','ເຂົ້າໃຈ','ໄປ'],a:0},
 {t:'mc',q:'ວ່າ after ຄິດ means…',o:['that','not','if','or'],a:0},
@@ -2459,7 +2459,7 @@ const LO_Z10=[
 {t:'mc',q:'Answer age with ອາຍຸ + number + …',o:['ປີ (year)','ໂມງ','ຄົນ','ກີບ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ອາຍຸ',o:['ອາຍຸ','ໂສດ','ມີລູກ','ຈັກຄົນ'],a:0}]},
 
-{id:'lo_learner',title:'Learner lifelines',step:'learn',meta:'Keep a conversation going',vocab:[['ເວົ້າຊ້າໆ','vao saa saa','speak slowly'],['ເວົ້າຄືນ','vao kheun','say it again'],['ພາສາລາວ','phaasaa lao','the Lao language'],['ວ່າແນວໃດ','vaa naew dai','how do you say?'],['ບໍ່ເຂົ້າໃຈ','baw khao jai','I don’t understand'],['ຮູ້ໜ້ອຍໜຶ່ງ','huu noi neung','I know a little']],ex:[
+{id:'lo_learner',title:'Learner lifelines',step:'learn',meta:'Keep a conversation going',vocab:[['ເວົ້າຊ້າໆ','vao saa saa','speak slowly'],['ເວົ້າຄືນ','vao kheun','say it again'],['ພາສາລາວ','phaasaa lao','the Lao language'],['ວ່າແນວໃດ','vaa naew dai','how do you say?'],['ບໍ່ເຂົ້າໃຈ','baw khao jai','do not understand'],['ຮູ້ໜ້ອຍໜຶ່ງ','huu noi neung','I know a little']],ex:[
 {t:'note',tag:'Slow down, please',q:'ເວົ້າຊ້າໆ · ເວົ້າຄືນ',body:'<p>Two lifesavers: <span class="deva">ເວົ້າຊ້າໆ</span> <b>vao saa saa</b> = "please speak slowly", and <span class="deva">ເວົ້າຄືນ</span> <b>vao kheun</b> = "say it again". (<span class="deva">ຊ້າໆ</span> repeats ຊ້າ "slow" to soften it.)</p>',eg:[['ເວົ້າຊ້າໆ','vao saa saa','speak slowly'],['ເວົ້າຄືນ','vao kheun','say it again']]},
 {t:'mc',q:'Ask someone to slow down:',o:['ເວົ້າຊ້າໆ','ເວົ້າຄືນ','ບໍ່ເຂົ້າໃຈ','ໄປໃສ'],a:0},
 {t:'mc',q:'"say it again" =',o:['ເວົ້າຄືນ','ເວົ້າຊ້າໆ','ຮູ້ໜ້ອຍໜຶ່ງ','ບໍ່ເຂົ້າໃຈ'],a:0},
@@ -2539,7 +2539,7 @@ const LO_Z10=[
 {t:'mc',q:'Count a dog or cat with…',o:['ໂຕ','ຄົນ','ອັນ','ຄັນ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ໂຕະ',o:['ໂຕະ','ຕຽງ','ຕັ່ງ','ປະຕູ'],a:0}]},
 
-{id:'lo_plans',title:'Plans',step:'learn',meta:'Next week & meeting up',vocab:[['ແຜນ','phaen','plan'],['ອາທິດໜ້າ','aathit naa','next week'],['ນັດ','nat','arrange to meet'],['ວ່າງ','vaang','free (not busy)'],['ຫຍຸ້ງ','nyung','busy'],['ນຳກັນ','nam kan','together']],ex:[
+{id:'lo_plans',title:'Plans',step:'learn',meta:'Next week & meeting up',vocab:[['ແຜນ','phaen','plan'],['ອາທິດໜ້າ','aathit naa','next week'],['ນັດ','nat','arrange to meet'],['ວ່າງ','vaang','free / available'],['ຫຍຸ້ງ','nyung','busy'],['ນຳກັນ','nam kan','together']],ex:[
 {t:'note',tag:'Making plans',q:'ແຜນ · ນັດ',body:'<p><span class="deva">ແຜນ</span> <b>phaen</b> = plan. <span class="deva">ນັດ</span> <b>nat</b> = to arrange to meet: <span class="deva">ນັດກັນ</span> = "let’s arrange to meet". Do things <span class="deva">ນຳກັນ</span> <b>nam kan</b> = "together".</p>',eg:[['ແຜນ','phaen','plan'],['ນັດ','nat','arrange to meet'],['ນຳກັນ','nam kan','together']]},
 {t:'mc',q:'Which means "plan"?',o:['ແຜນ','ນັດ','ວ່າງ','ຫຍຸ້ງ'],a:0},
 {t:'mc',q:'Which means "together"?',o:['ນຳກັນ','ນັດ','ວ່າງ','ແຜນ'],a:0},
@@ -2863,7 +2863,7 @@ const LO_Z11=[
 ];
 const LO_Z12=[
 /* ===================== ZONE 12 · MAKE LAOS HOME ===================== */
-{id:'lo_fruit',title:'Fruits',step:'learn',meta:'ໝາກ… the fruit family',vocab:[['ໝາກມ່ວງ','maak muang','mango'],['ໝາກຫຸ່ງ','maak hung','papaya'],['ໝາກພ້າວ','maak phaao','coconut'],['ໝາກນັດ','maak nat','pineapple'],['ໝາກກ້ວຍ','maak kuay','banana'],['ໜ່ວຍ','nuay','classifier: fruit']],ex:[
+{id:'lo_fruit',title:'Fruits',step:'learn',meta:'ໝາກ… the fruit family',vocab:[['ໝາກມ່ວງ','maak muang','mango'],['ໝາກຫຸ່ງ','maak hung','papaya'],['ໝາກພ້າວ','maak phaao','coconut'],['ໝາກນັດ','maak nat','pineapple'],['ໝາກກ້ວຍ','maak kuay','banana'],['ໜ່ວຍ','nuay','classifier: fruit/round things']],ex:[
 {t:'note',tag:'The ໝາກ family',q:'ໝາກ + fruit',body:'<p>You met <span class="deva">ໝາກໄມ້</span> "fruit". Most fruits start with <span class="deva">ໝາກ</span> <b>maak</b>: <span class="deva">ໝາກມ່ວງ</span> mango, <span class="deva">ໝາກຫຸ່ງ</span> papaya, <span class="deva">ໝາກພ້າວ</span> coconut, <span class="deva">ໝາກນັດ</span> pineapple, <span class="deva">ໝາກກ້ວຍ</span> banana.</p>',tip:'Papaya + the pounding verb ຕຳ = the famous ຕຳໝາກຫຸ່ງ salad — next lesson!'},
 {t:'mc',q:'Which means "mango"?',o:['ໝາກມ່ວງ','ໝາກຫຸ່ງ','ໝາກພ້າວ','ໝາກນັດ'],a:0},
 {t:'mc',q:'Which means "papaya"?',o:['ໝາກຫຸ່ງ','ໝາກມ່ວງ','ໝາກກ້ວຍ','ໝາກນັດ'],a:0},

@@ -242,7 +242,7 @@ const PS_Z1=[
 {t:'note',tag:'The wave shape',q:'س ش',body:'<p><span class="deva">س</span> <b>s</b> — the three-toothed wave. Add three dots: <span class="deva">ش</span> <b>sh</b> as in "shah".</p>',eg:[['س','s','s as in sun'],['ش','sh','sh as in shah']]},
 {t:'mc',q:'What sound does this letter make?',d:'س',o:['s','sh','x','z'],a:0},
 {t:'mc',q:'And this one?',d:'ش',o:['sh','s','x','ch'],a:0},
-{t:'note',tag:'The famous letter',q:'ښ',body:'<p><span class="deva">ښ</span> — the most Pashto letter of all; it is even in the word <span class="deva">پښتو</span> Pashto itself! We write it <b>x</b>. Its sound shifts by region — like <b>kh</b> in the north-east, like <b>sh</b> in the south-west. Copy the audio and you will fit right in: <span class="deva">ښه</span> <b>xa</b> = "good".</p>',eg:[['ښ','x','the Pashto letter'],['ښه','xa','good'],['پښتو','paxto','Pashto']]},
+{t:'note',tag:'The famous letter',q:'ښ',body:'<p><span class="deva">ښ</span> — the most Pashto letter of all; it is even in the word <span class="deva">پښتو</span> Pashto itself! We write it <b>x</b>. Its sound shifts by region — like <b>kh</b> in the north-east, like <b>sh</b> in the south-west. Copy the audio and you will fit right in: <span class="deva">ښه</span> <b>xa</b> = "good".</p>',eg:[['ښ','x','the Pashto letter'],['ښه','xa','good / OK'],['پښتو','paxto','Pashto']]},
 {t:'mc',q:'Which letter is written x, the special Pashto sound?',d:'ښ',o:['x','s','sh','kh'],a:0},
 {t:'mc',q:'ښه xa means…',d:'ښه',o:['good','bad','big','yes'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ش',o:['ش','س','ښ','ز'],a:0}]},
@@ -762,7 +762,7 @@ const PS_Z3=[
 {t:'mc',q:'The -م ending marks the ___ form',o:['I','you','he','they'],a:0},
 {t:'li',q:'Listen — which verb?',say:'کوم',o:['کوم','خورم','وایم','ځم'],a:0}]},
 
-{id:'ps_neg',title:'Saying no',step:'learn',meta:'نه before the verb',vocab:[['نه','na','not'],['نه خورم','na khorram','(I) do not eat'],['نه ځم','na dzam','(I) do not go'],['نه پوهېږم','na pohegam','(I) do not understand'],['پوهېږم','pohegam','(I) understand'],['نه یم','na yam','(I) am not']],ex:[
+{id:'ps_neg',title:'Saying no',step:'learn',meta:'نه before the verb',vocab:[['نه','na','not'],['نه خورم','na khorram','(I) do not eat'],['نه ځم','na dzam','(I) do not go'],['نه پوهېږم','na pohegam','(I) do not understand'],['پوهېږم','pohegam','I understand'],['نه یم','na yam','(I) am not']],ex:[
 {t:'note',tag:'One little word',q:'نه + verb',body:'<p>To make a verb negative, put <span class="deva">نه</span> <b>na</b> right <b>before</b> it: <span class="deva">زه ډوډۍ نه خورم</span> = "I do not eat bread". Same نه you learned as "no"!</p>',tip:'زه نه پوهېږم — "I do not understand" — is a learner’s best friend.'},
 {t:'mc',q:'Where does نه go?',o:['right before the verb','at the very end','before the subject','after the verb'],a:0},
 {t:'fill',q:'Make it negative: "I do not go"',s:'زه ___ ځم',o:['نه','هو','ښه','څه'],a:0},
@@ -1408,11 +1408,11 @@ const PS_Z5=[
 ];
 const PS_Z6=[
 /* ===================== ZONE 6 · DESCRIBE IT ===================== */
-{id:'ps_adj',title:'Describing words',step:'learn',meta:'Good, new, old — agreeing',vocab:[['ښه','xa','good'],['نوی','naway','new (m)'],['نوې','nawe','new (f)'],['زوړ','zorr','old (m)'],['زړه','zarra','old (f)'],['ښکلی','xkulay','beautiful (m)']],ex:[
+{id:'ps_adj',title:'Describing words',step:'learn',meta:'Good, new, old — agreeing',vocab:[['ښه','xa','good / OK'],['نوی','naway','new (m)'],['نوې','nawe','new (f)'],['زوړ','zorr','old (m)'],['زړه','zarra','old (f)'],['ښکلی','xkulay','beautiful (m)']],ex:[
 {t:'note',tag:'Agreement returns',q:'نوی کور · نوې ښځه',body:'<p>Adjectives agree, as you learned: <span class="deva">نوی کور</span> <b>naway kor</b> a new house (m), <span class="deva">نوې ډوډۍ</span> <b>nawe ddoddey</b> fresh bread (f). "Old" changes even more: <span class="deva">زوړ</span> m → <span class="deva">زړه</span> f.</p>',eg:[['نوی','naway','new (m)'],['نوې','nawe','new (f)'],['زوړ','zorr','old (m)']]},
 {t:'mc',q:'"a new house" =',o:['نوی کور','نوې کور','نوی ښځه','کور نوی'],a:0},
 {t:'mc',q:'"old" (masculine) =',o:['زوړ','زړه','نوی','ښکلی'],a:0},
-{t:'note',tag:'Good & beautiful',q:'ښه · ښکلی',body:'<p><span class="deva">ښه</span> <b>xa</b> = good (handily, it barely changes). <span class="deva">ښکلی</span> <b>xkulay</b> = beautiful (m), <span class="deva">ښکلې</span> <b>xkule</b> (f) — a word you will hear in songs and about mountain valleys.</p>',eg:[['ښه','xa','good'],['ښکلی','xkulay','beautiful (m)'],['ښکلې','xkule','beautiful (f)']]},
+{t:'note',tag:'Good & beautiful',q:'ښه · ښکلی',body:'<p><span class="deva">ښه</span> <b>xa</b> = good (handily, it barely changes). <span class="deva">ښکلی</span> <b>xkulay</b> = beautiful (m), <span class="deva">ښکلې</span> <b>xkule</b> (f) — a word you will hear in songs and about mountain valleys.</p>',eg:[['ښه','xa','good / OK'],['ښکلی','xkulay','beautiful (m)'],['ښکلې','xkule','beautiful (f)']]},
 {t:'mc',q:'"beautiful" (masculine) =',o:['ښکلی','ښکلې','ښه','زوړ'],a:0},
 {t:'mc',q:'Adjectives sit ___ the noun and agree with it',o:['before','after','instead of','far from'],a:0},
 {t:'li',q:'Listen — which word?',say:'نوی',o:['نوی','نوې','زوړ','ښکلی'],a:0}]},

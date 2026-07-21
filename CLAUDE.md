@@ -1195,16 +1195,32 @@ its recorded audio). Fixes applied:
   bug, not a crash; don't mistake one for the other.
 - One garbled question (`lo_clothes_3#3`) opened about a hat then pivoted
   mid-sentence to shirts; rewritten.
+All of the above are now FIXED, including the two that were first left as
+backlog items:
+- **Every word-bank exercise now has real distractors.** 120 pools were
+  expanded (112 Nepali Intensive, 8 main); distractors are drawn only from
+  vocabulary the learner has ALREADY met at that point in the course, exclude
+  script-zone letters, and are rotated deterministically so they vary between
+  exercises rather than always being म/छ. House style is +1 or +2 tiles and
+  that was matched. 25 genuine ORDERING exercises ("put these in order",
+  "count down 4 -> 1") keep exact tiles — sequencing is the task there, so
+  distractors would be wrong.
+- **All gloss inconsistencies resolved** (110 occurrences across 7 packs).
+  Curated by hand, never automated: a naive "one gloss contains the other"
+  rule produced false matches like 'no'->'not', 'head'->'counter for animals
+  (lit. head)' and 'hair'->'hair (Zone 5 review)', which would have damaged
+  content. Genuine homographs are deliberately left with two glosses —
+  छ six/is, नှစ် two/year, চিনি know/sugar, ຊື່ name/straight, یو we-are/1,
+  گاडी vehicle/car, को of/who. Convention applied: word glosses lowercase,
+  full utterances capitalised ('Thank you', 'Nice to meet you').
+Both edits are AUDIO-NEUTRAL — `pool` is never spoken (only `wb a.join(' ')`)
+and glosses are `vocab[2]`, so no clips needed regenerating; `--check` still
+matches for all 8 packs.
+
 Known and NOT bugs, so nobody re-flags them:
 - **Nepali `li` exercises use TWO patterns**: pick-the-word (`o[a]===say`) and
   pick-the-MEANING (English options, so `o[a]!==say`). 869 are the latter and
   are correct — the CLAUDE.md `li o[a]===say` rule applies only to the first.
-- **122 word-bank exercises have no distractors** (pool size == answer size),
-  112 of them in the Nepali Intensive track; the other 7 courses have none.
-  Below the documented standard but not broken — a backlog polish item.
-- **~97 Nepali vocab glosses differ only in capitalization** between lessons
-  ('Thank you' vs 'thank you'). Cosmetic; glosses are `vocab[2]` and are never
-  spoken, so changing them is audio-safe if it is ever worth doing.
 - Teach-before-test is effectively clean once each lesson is credited with its
   own teaching; the residue is compositional forms (हस्पतालमा = hospital+मा)
   and the fact that Khmer and Lao write **no word spaces**, so a naive scan
