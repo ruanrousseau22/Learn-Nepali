@@ -1278,6 +1278,48 @@ Known and NOT bugs, so nobody re-flags them:
   and the fact that Khmer and Lao write **no word spaces**, so a naive scan
   reads a whole phrase as one unseen "word".
 
+### Cross-language parity check (July 2026)
+Compared all 8 courses on the same structural metrics (zone/topic/lesson counts,
+exercise-type mix overall AND per step, exercises per lesson, vocab load per
+learn lesson, notes, SRS seed, SYM coverage). Structure came back uniform: every
+course is 12 zones, every topic is exactly 5 lessons in
+learn→recognize→build→mix→checkpoint order, SYM coverage is complete, no answer
+index out of range, no duplicate options, no romanization leaks, and zero risky
+strings in the four fields that get interpolated into inline handlers
+(`vocab[0]`, `ex.d`, `ex.say`, `pairs[i][0]`).
+
+**Fixed — the learn-step listening gap, round 2.** The Khmer fix earlier in July
+searched for lessons that were *100% multiple-choice*, which let a bigger case
+slip through: **Sinhala had zero listening in 81 of its 84 learn lessons** (0.5%
+of learn exercises vs 12–14% everywhere else). It escaped the earlier sweep only
+because its learn lessons carry a `wb`, so they were never "single-type". Three
+smaller pockets sat in the same blind spot — the script-zone letter lessons of
+Burmese (6), Lao (3) and Pashto (1), which is exactly where hearing the letter
+matters most. **105 `li` exercises** were added (si 95, my 6, lo 3, ps 1); all 8
+courses now sit in a 12–20% band with **zero** learn lessons lacking listening
+and **zero** single-type lessons anywhere.
+Same safety rules as the Khmer pass, and they held: `say` is always an existing
+vocab word of that same lesson (so the clip already exists — **all four
+`--check` runs still MATCH, no audio regenerated**), distractors come from the
+same lesson, no two options share a romanization, and selection uses a seeded
+shuffle rather than modular stepping. Verified live in the browser: the clip
+returns 200, `shufOpts` moves the answer off slot 0, and answering scores.
+
+**Known parity gaps, deliberately NOT auto-fixed** (they need authoring calls +
+new audio, so raise them with Ruan first):
+- **`fill` is entirely absent from Burmese and Sinhala** (0 exercises; every
+  other course has 82–518). Both compensate with more `wb`/`mc`, so this is a
+  variety gap rather than a correctness one — but adding `fill` means new spoken
+  strings (the `s` with `___` filled IS recorded), so it is a real audio job.
+- **SRS seed is 15 in my/si vs 20 elsewhere.** Only some seed words are also
+  vocab, so topping up may add recordings.
+- **Khmer learn lessons carry the heaviest vocab load** (8.6 avg, max 12, vs ~6
+  elsewhere) and the most exercises per learn lesson (10.0 vs 7.0). Intentional
+  or not, it is the one real difficulty-ramp outlier.
+A trap worth remembering: a JS string's `.length` is UTF-16 code units, not
+bytes — a Sinhala file that is 605K on disk reads as 441K characters, which
+looks alarmingly like a truncated fetch. Do not chase that as a bug.
+
 ### Resilience & accessibility pass (July 2026)
 Both were exercised in the browser rather than read off the source.
 

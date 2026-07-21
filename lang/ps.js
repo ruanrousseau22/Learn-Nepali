@@ -125,7 +125,8 @@ const PS_Z1=[
 {t:'mc',q:'And this one?',d:'پ',o:['p','b','t','tt'],a:0},
 {t:'note',tag:'The Pashto twist',q:'ټ',body:'<p><span class="deva">ټ</span> = <b>tt</b> — a t said with the tongue curled back (retroflex). The little ring below marks it as one of Pashto’s own letters. We write retroflex sounds <b>doubled</b>: tt.</p>',eg:[['ت','t','plain t'],['ټ','tt','tongue curled back']]},
 {t:'mc',q:'Which letter is the curled-back tt?',d:'ټ',o:['tt','t','b','p'],a:0},
-{t:'mc',q:'Pashto is written…',o:['right to left','left to right','top to bottom','in any direction'],a:0}]},
+{t:'mc',q:'Pashto is written…',o:['right to left','left to right','top to bottom','in any direction'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ټ',o:['ټ','پ','ت','ب'],a:0}]},
 {id:'ps_c1_2',title:'Spot the dots',step:'recognize',meta:'Hear & spot ا ب پ ت ټ',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'ب',o:['ب','ت','پ','ا'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ا',o:['ا','ب','ت','ټ'],a:0},

@@ -127,7 +127,8 @@ const LO_Z1=[
 {t:'mc',q:'And this one? (a puff of air)',d:'ຂ',o:['kh','k','ng','h'],a:0},
 {t:'note',tag:'The ng sound',q:'ງ',body:'<p><span class="deva">ງ</span> = <b>ng</b>, the ng of "sing". Unlike English, in Lao it can even <b>start</b> a word — say the end of "sing" on its own.</p>',eg:[['ງ','ng','ng as in sing']]},
 {t:'mc',q:'Which letter is the ng sound?',d:'ງ',o:['ng','k','kh','s'],a:0},
-{t:'mc',q:'ຂ and ຄ share the kh sound. What differs?',o:['their tone class (high vs low)','their loudness','one is silent','nothing at all'],a:0}]},
+{t:'mc',q:'ຂ and ຄ share the kh sound. What differs?',o:['their tone class (high vs low)','their loudness','one is silent','nothing at all'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ຂ',o:['ຂ','ກ','ງ'],a:0}]},
 {id:'lo_c1_2',title:'Spot the letters',step:'recognize',meta:'Hear & spot ກ ຂ ຄ ງ',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'ກ',o:['ກ','ງ','ຂ','ຍ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ງ',o:['ງ','ກ','ຂ','ດ'],a:0},
@@ -247,7 +248,8 @@ const LO_Z1=[
 {t:'note',tag:'ph is not f!',q:'ຜ ພ vs ຟ',body:'<p><span class="deva">ຜ</span> and <span class="deva">ພ</span> are both <b>ph</b> — a p <b>with</b> a puff of air. <b>ph = a hard p, never an f.</b></p><p>The real f is <span class="deva">ຟ</span> = <b>f</b> (and its partner <span class="deva">ຝ</span>). <span class="deva">ມ</span> = <b>m</b>.</p>',eg:[['ພ','ph','hard p + air'],['ຟ','f','f as in fun'],['ມ','m','m as in mom']]},
 {t:'mc',q:'ph in Lao is really a…',d:'ພ',o:['hard p with air','f sound','v sound','b sound'],a:0},
 {t:'mc',q:'Which letter is the true f?',o:['ຟ','ພ','ຜ','ບ'],a:0},
-{t:'mc',q:'Which letter says m?',d:'ມ',o:['m','b','p','n'],a:0}]},
+{t:'mc',q:'Which letter says m?',d:'ມ',o:['m','b','p','n'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ພ',o:['ພ','ມ','ຟ','ປ'],a:0}]},
 {id:'lo_c4_2',title:'Hear them',step:'recognize',meta:'Hear & spot the labials',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'ບ',o:['ບ','ມ','ປ','ນ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ມ',o:['ມ','ບ','ຟ','ນ'],a:0},
@@ -368,7 +370,8 @@ const LO_Z1=[
 {t:'mc',q:'Which vowel says ai?',o:['ໄອ','ໂອ','ອຳ','ເອ'],a:0},
 {t:'note',tag:'Real words',q:'Read your first words',body:'<p><span class="deva">ໄປ</span> = <b>pai</b> "go". <span class="deva">ບໍ່</span> = <b>baw</b> "no" (the little mark ່ is a tone mark). <span class="deva">ເຮົາ</span> = <b>hao</b> "we". You can read these now!</p>',eg:[['ໄປ','pai','go'],['ບໍ່','baw','no'],['ເຮົາ','hao','we']]},
 {t:'mc',q:'Read it:',d:'ໄປ',o:['pai','paa','pii','po'],a:0},
-{t:'mc',q:'ບໍ່ means…',d:'ບໍ່',o:['no','go','we','good'],a:0}]},
+{t:'mc',q:'ບໍ່ means…',d:'ບໍ່',o:['no','go','we','good'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ໄອ',o:['ໄອ','ເອ','ອຳ','ອໍ'],a:0}]},
 {id:'lo_v2_2',title:'Hear the vowels',step:'recognize',meta:'Hear & spot e ae o ai',vocab:[],ex:[
 {t:'li',q:'Listen — which syllable?',say:'ໂອ',o:['ໂອ','ແອ','ໄອ','ເອ'],a:0},
 {t:'li',q:'Listen — which syllable?',say:'ໄອ',o:['ໄອ','ໂອ','ອຳ','ອໍ'],a:0},

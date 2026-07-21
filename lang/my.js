@@ -46,7 +46,8 @@ const MY_LESSONS=[
 {t:'mc',q:'And this one?',d:'ခ',o:['hka','ka','ga','nga'],a:0},
 {t:'note',tag:'Voice it',q:'ဂ and င',body:'<p><span class="deva">ဂ</span> = <b>ga</b>, like the g in "go".</p><p><span class="deva">င</span> = <b>nga</b> — the ng of "sing". In Burmese it can even <b>start</b> a word.</p>',eg:[['ဂ','ga','g as in go'],['င','nga','ng as in sing']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဂ',o:['ga','ka','hka','nga'],a:0},
-{t:'mc',q:'Which letter is the ng sound?',d:'င',o:['nga','ga','ka','hka'],a:0}]},
+{t:'mc',q:'Which letter is the ng sound?',d:'င',o:['nga','ga','ka','hka'],a:0},
+{t:'li',q:'Listen — which letter?',say:'က',o:['က','င','ခ','ဂ'],a:0}]},
 {id:'my_c1_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot က ခ ဂ င',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'က',o:['က','ခ','ဂ','င'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဂ',o:['ဂ','က','ခ','င'],a:0},
@@ -85,7 +86,8 @@ const MY_LESSONS=[
 {t:'mc',q:'And this one?',d:'ဆ',o:['hsa','sa','za','nya'],a:0},
 {t:'note',tag:'Buzz & nose',q:'ဇ and ည',body:'<p><span class="deva">ဇ</span> = <b>za</b>, the z of "zoo" — it buzzes.</p><p><span class="deva">ည</span> = <b>nya</b>, like the "ni" in "onion".</p>',eg:[['ဇ','za','z as in zoo'],['ည','nya','ny as in onion']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဇ',o:['za','sa','hsa','nya'],a:0},
-{t:'mc',q:'Which letter is the ny sound?',d:'ည',o:['nya','za','sa','hsa'],a:0}]},
+{t:'mc',q:'Which letter is the ny sound?',d:'ည',o:['nya','za','sa','hsa'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','ဆ','စ','ည'],a:0}]},
 {id:'my_c2_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot စ ဆ ဇ ည',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'စ',o:['စ','ဆ','ဇ','ည'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','စ','ဆ','ည'],a:0},
@@ -123,7 +125,8 @@ const MY_LESSONS=[
 {t:'mc',q:'And this one?',d:'ထ',o:['hta','ta','da','na'],a:0},
 {t:'note',tag:'Voice & nose',q:'ဒ and န',body:'<p><span class="deva">ဒ</span> = <b>da</b>. <span class="deva">န</span> = <b>na</b>.</p><p>Heads-up: Burmese has a second, rounder set of these letters (<span class="deva">ဋ ဌ ဍ ဎ ဏ</span>) borrowed from Pali. They are <b>rare and sound the same</b> — learn <span class="deva">တ ထ ဒ န</span> first.</p>',eg:[['ဒ','da','d'],['န','na','n']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဒ',o:['da','ta','hta','na'],a:0},
-{t:'mc',q:'Which letter says na?',d:'န',o:['na','da','ta','hta'],a:0}]},
+{t:'mc',q:'Which letter says na?',d:'န',o:['na','da','ta','hta'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ထ',o:['ထ','တ','ဒ','န'],a:0}]},
 {id:'my_c3_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot တ ထ ဒ န',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'တ',o:['တ','ထ','ဒ','န'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဒ',o:['ဒ','တ','ထ','န'],a:0},
@@ -161,7 +164,8 @@ const MY_LESSONS=[
 {t:'mc',q:'And this one?',d:'ဖ',o:['hpa','pa','ba','ma'],a:0},
 {t:'note',tag:'Voice & hum',q:'ဗ and မ',body:'<p><span class="deva">ဗ</span> = <b>ba</b>. <span class="deva">မ</span> = <b>ma</b>.</p><p>(There is also a rare Pali twin of ba, <span class="deva">ဘ</span> — same sound, seldom needed.)</p>',eg:[['ဗ','ba','b'],['မ','ma','m']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဗ',o:['ba','pa','hpa','ma'],a:0},
-{t:'mc',q:'Which letter says ma?',d:'မ',o:['ma','ba','pa','hpa'],a:0}]},
+{t:'mc',q:'Which letter says ma?',d:'မ',o:['ma','ba','pa','hpa'],a:0},
+{t:'li',q:'Listen — which letter?',say:'မ',o:['မ','ပ','ဖ','ဗ'],a:0}]},
 {id:'my_c4_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot ပ ဖ ဗ မ',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'ပ',o:['ပ','ဖ','ဗ','မ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဗ',o:['ဗ','ပ','ဖ','မ'],a:0},
@@ -199,7 +203,8 @@ const MY_LESSONS=[
 {t:'mc',q:'And this one?',d:'ဝ',o:['wa','la','ya','ha'],a:0},
 {t:'note',tag:'The special three',q:'သ ဟ အ',body:'<p><span class="deva">သ</span> = <b>tha</b> — the <b>th</b> of "thin" (never a hard t!).</p><p><span class="deva">ဟ</span> = <b>ha</b>. <span class="deva">အ</span> = <b>a</b> — a carrier that simply holds a bare vowel.</p>',eg:[['သ','tha','th as in thin'],['ဟ','ha','h'],['အ','a','a (carrier)']]},
 {t:'mc',q:'Which letter is the "th" sound (as in thin)?',d:'သ',o:['tha','ta','sa','ha'],a:0},
-{t:'mc',q:'What sound does this letter make?',d:'ဟ',o:['ha','la','wa','a'],a:0}]},
+{t:'mc',q:'What sound does this letter make?',d:'ဟ',o:['ha','la','wa','a'],a:0},
+{t:'li',q:'Listen — which letter?',say:'သ',o:['သ','ယ','ဟ','ဝ'],a:0}]},
 {id:'my_c5_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot သ ဟ လ ဝ အ',vocab:[],ex:[
 {t:'li',q:'Listen — which letter?',say:'သ',o:['သ','ဟ','ဝ','လ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'လ',o:['လ','ဝ','ဟ','သ'],a:0},
@@ -238,7 +243,8 @@ const MY_LESSONS=[
 {t:'mc',q:'What does this say?',d:'ကာ',o:['kaa','ki','ku','ke'],a:0},
 {t:'mc',q:'What does this say?',d:'ကု',o:['ku','ki','ke','ko'],a:0},
 {t:'mc',q:'What does this say?',d:'ကေ',o:['ke','ku','ki','kaw'],a:0},
-{t:'mc',q:'What does this say?',d:'ကို',o:['ko','ka','ku','ke'],a:0}]},
+{t:'mc',q:'What does this say?',d:'ကို',o:['ko','ka','ku','ke'],a:0},
+{t:'li',q:'Listen — which word?',say:'ကိ',o:['ကိ','ကို','ကေ','ကာ'],a:0}]},
 {id:'my_v1_2',title:'Hear the vowel',step:'recognize',meta:'Spot the vowel on က',vocab:[],ex:[
 {t:'li',q:'Listen — which one?',say:'ကာ',o:['ကာ','ကိ','ကု','ကေ'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကို',o:['ကို','ကာ','ကေ','ကု'],a:0},
