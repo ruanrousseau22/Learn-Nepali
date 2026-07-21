@@ -1436,7 +1436,10 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 
 <footer><div class="wrap">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div></footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- defer: without it the whole app waits on a third-party CDN before boot() can
+     start, which matters on the constrained networks many learners are on.
+     initSupabase re-runs on this script's load event if it lands late. -->
+<script defer id="sb-lib" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const SUPABASE_URL  = "https://mfhawqwqwzgcuvccvcms.supabase.co";
 const SUPABASE_ANON = "sb_publishable__L7o15k_uc7-JaRiATAEOg_HWkQWdwA";
@@ -1464,7 +1467,12 @@ function updateStreak(){const today=new Date().toDateString();if(S.lastDay!==tod
 function checkStreakBreak(){if(!S.lastDay)return;const today=new Date().toDateString();const y=new Date(Date.now()-864e5).toDateString();if(S.lastDay!==today&&S.lastDay!==y)S.streak=0;}
 
 let sb=null,user=null,pushTimer=null;
-function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON||!window.supabase)return;
+function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON)return;
+  /* the library is deferred, so it may not be here yet — retry once it lands.
+     If it never loads (CDN blocked), sync stays off and the app works locally. */
+  if(!window.supabase){const el=document.getElementById('sb-lib');
+    if(el&&!el.dataset.awaiting){el.dataset.awaiting='1';el.addEventListener('load',initSupabase);}
+    return;}
   sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON);
   sb.auth.onAuthStateChange((_e,s)=>{user=s?.user||null;onAuthChange();});
   sb.auth.getSession().then(({data})=>{user=data.session?.user||null;onAuthChange();});}

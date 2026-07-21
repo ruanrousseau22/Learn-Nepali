@@ -1485,6 +1485,40 @@ alarms came from these:
    confirm, and every measurement taken afterwards is of a view sitting behind a
    modal.
 
+### Performance budget & asset/SEO sweep (July 2026) — 1 boot fix
+**Transfer sizes are healthy.** What a learner actually downloads (gzipped, as
+Netlify serves it) is `index.html` 56K + pack + manifest:
+ps 137K · lo 135K · my 159K · bn/mn 163K · si 176K · km 188K · **ne 269K**
+(Nepali is heaviest because it also carries the Intensive track). The July 2026
+payload split is doing its job — a Pashto learner no longer pays for the Nepali
+pack. Faith packs add ~45K gz and only load in faith mode. Boot on a warm local
+server: domInteractive 31ms, 8 resource requests, no failed fetches.
+
+**Asset integrity: zero missing.** Every referenced local asset, all 8 language
+packs, all 8 faith packs, all 16 audio manifests, and the root files
+(`_redirects`, `robots.txt`, `sitemap.xml`, `og-image.png`, favicons) are present.
+Only two third-party runtime hosts: Google Fonts and jsDelivr.
+
+**SEO is complete.** All 8 languages appear in the meta description, keywords,
+the JSON-LD `teaches` array, and there are 8 `Course` entries. The `<title>` names
+only four plus "& More" — that is CORRECT, not a gap: it is already 77 chars, past
+what Google displays, so do not add languages to it. Refreshed `sitemap.xml`
+`lastmod` to 2026-07-21. Fonts use `display=swap` + preconnect, and Google Fonts'
+`unicode-range` means a learner only downloads the script they actually render.
+
+**Fixed — the Supabase library was blocking app start.** The tag sat immediately
+before the inline app script with no `defer`, so `boot()` could not begin until a
+third-party CDN responded. That matters for this app's actual audience, on
+constrained networks in Nepal, Myanmar and Afghanistan. Added `defer` + an
+`id="sb-lib"`, and made `initSupabase` re-run on that script's `load` event if the
+library has not arrived yet. Verified all three paths: normal (client still
+created), library-missing (no throw, `sb` stays null, listener attached exactly
+once even if `initSupabase` is called repeatedly, app fully usable with sync off),
+and late-arrival (client wires up when the load event fires). If the CDN is
+blocked entirely the app now still boots and works locally — only sync is lost.
+**Note for testing this:** `delete window.supabase` does NOT remove the global;
+use `window.supabase=undefined` or the test silently proves nothing.
+
 ### Resilience & accessibility pass (July 2026)
 Both were exercised in the browser rather than read off the source.
 
