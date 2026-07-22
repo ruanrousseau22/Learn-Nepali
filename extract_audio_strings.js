@@ -85,6 +85,10 @@ function extract(pack){
      so existing files stay byte-identical up to this point */
   ((pack.trip&&pack.trip.sections)||[]).forEach(function(sec){
     (sec.lines||[]).forEach(function(l){add(l[0]);});});
+  /* the sentence-frame builder assembles noun + suffix, and each assembled
+     sentence is spoken, so it needs a clip too */
+  ((pack.trip&&pack.trip.frames)||[]).forEach(function(f){
+    (f.items||[]).forEach(function(it){add(it[0]+f.s);});});
   return out;
 }
 /* match python json.dump(..., ensure_ascii=False, indent=0): one string per line */

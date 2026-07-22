@@ -1139,9 +1139,31 @@ defines `trip`, so any language can get one by adding the same field.
   **Reuse that trick when writing a trip pack for another language** — draft the
   lines out of the pack's existing vocabulary wherever the natural phrasing
   allows and the audio is nearly free.
-- Romanization follows the scheme at the top of `lang/bn.js`, and roman is shown
-  ALWAYS on this page (not gated on `S.rom`) — a two-week visitor will not be
-  reading Bengali script.
+- **ROMAN IS THE PRIMARY LINE, script is third** (Ruan, July 2026: "this is for
+  people who are not interested in learning script right now"). Every line and
+  card reads **roman -> English -> script**, roman big and bold, script small and
+  muted; roman is never gated on `S.rom`. Section `note`s follow the same order —
+  they used to lead with script and were rewritten to lead with roman (notes are
+  never spoken, so that was audio-neutral).
+- **Page flow** (Ruan asked for it, July 2026 — a phrasebook is used standing in
+  the street, so it must be scannable, not read top to bottom):
+  `starter` is an array of native strings resolved against the sections and
+  pinned at the top as **Start here** — ten lines that stand alone, so the page
+  has an obvious entry point. Below it a **contents chip row** (`tripJump`)
+  opens and scrolls to any section in one tap, with `trouble` accented in
+  crimson because that is the one you need in a hurry. Sections are then
+  **collapsed** (`tripToggle`); only `patterns` opens by default.
+- **The frame builder** is the teaching centrepiece: `trip.frames[{s,sr,en,t,
+  items}]` where `s` is a NATIVE SUFFIX (every Bengali frame is noun-first —
+  `X kothay?` / `X achhe?` / `X din` / `X koto?`), so one template covers all
+  four. Tapping a noun chip reassembles the sentence and speaks it
+  (`tfPick`/`tfOutHTML`). **Each assembled sentence needs a clip**, so the
+  extractor also walks `trip.frames[].items[][0]+f.s` (appended after the trip
+  lines); 8 of the 24 combinations were already recorded, so this cost 16 clips.
+  A new language's frames must be noun-first or the `s` suffix model needs
+  extending.
+- **Shuffle 10** (`tcStart(-2)`) deals ten random cards from the whole book —
+  a header button and a deck-menu tile.
 
 ## Religious studies (faith mode — July 2026)
 A second app MODE next to language learning, chosen from the **mode dropdown
