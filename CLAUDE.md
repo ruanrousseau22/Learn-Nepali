@@ -346,12 +346,14 @@ face has to look like rock, not a rounded hill, and it has to CARRY DOWN a long
 way before easing, or the flattening starts too high and the peak reads squat.
 The tail is what finally settles the range into the flat.
 **The two ends are deliberately DIFFERENT.** Only the LEFT eases into the flat;
-the RIGHT keeps going. An earlier version eased both, and the range read as
-politely ending mid-canvas. The right now runs peak (1056,138) → valley
-(1108,200) → a second big capped peak (1156,118) → down to (1186,190) → and back
-UP to (1200,166), so the ridge leaves the canvas mid-mountain and the range
-plainly continues past the page. Keep it that way: the point of the left easing
-is to settle the range into the horizon on one side only.
+the RIGHT keeps going. An earlier version eased both and the range read as
+politely ending mid-canvas. The right now runs peak (1056,138) → a HIGH valley at
+(1090,176) → a wide capped peak at (1150,108) → and off the page at (1200,190)
+part-way down its right face. Two details do the work: the valley is shallow and
+set well left, so the last mountain's flank starts high on its neighbour and the
+mountain reads WIDE; and the canvas cuts the descending right face rather than a
+summit or a rise, which is what makes the range feel like it carries on. Keep the
+asymmetry — the left easing exists to settle the range on one side only.
 That progression is the whole point — a lower mountain that lets the range settle
 gradually into the flat. A shallow dip then leads into the main climb to
 (675,132). An earlier two-foothill version was busier, and a single straight
