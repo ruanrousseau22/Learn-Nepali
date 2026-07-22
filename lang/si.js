@@ -61,54 +61,97 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* gulls over the water */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".65" aria-hidden="true"><path d="M190 96 q6 -5 12 0 q6 -5 12 0"/><path d="M262 114 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: one calm hazy ridge — deliberately quiet so the cliff reads as the subject */
-+'<path class="far" d="M0 250 Q200 245 400 249 Q600 243 800 247 Q1000 241 1200 245 L1200 320 L0 320 Z"/>'
-/* the highland cliff — a sunlit rock face filling the right */
-+'<path class="mid" d="M1200 320 L1200 152 Q1146 144 1096 156 Q1042 170 1000 200 Q958 232 932 274 Q916 300 908 320 Z"/>'
-/* striations down the rock */
-+'<g class="snow" opacity=".14" aria-hidden="true">'
-+'<path d="M1108 168 Q1074 214 1046 274 L1056 274 Q1084 216 1118 170 Z"/>'
-+'<path d="M1166 162 Q1140 214 1122 276 L1131 276 Q1149 216 1175 164 Z"/>'
-+'</g>'
-/* the fall itself — a white ribbon over the lip into the pool */
-+'<path class="snow" d="M1044 176 Q1060 170 1082 176 Q1080 180 1060 179 Q1048 179 1044 176 Z"/>'
-+'<path class="snow" d="M1050 178 Q1047 232 1045 286 L1059 286 Q1058 232 1058 178 Z"/>'
-+'<path class="snow" d="M1064 179 Q1063 234 1064 286 L1078 286 Q1075 232 1072 179 Z"/>'
-+'<path class="snow" opacity=".45" d="M1060 182 Q1059 234 1060 284 L1064 284 Q1063 234 1064 182 Z"/>'
-/* spray where it lands */
-+'<g class="snow" opacity=".4" aria-hidden="true">'
-+'<ellipse cx="1062" cy="288" rx="40" ry="10"/><ellipse cx="1036" cy="292" rx="22" ry="7"/>'
-+'</g>'
-/* the plunge pool */
-+'<path fill="var(--water)" d="M994 300 Q1062 290 1132 299 Q1064 310 994 300 Z"/>'
-/* near: deep jungle across the foot of the cliff */
-+'<g class="near"><path d="M0 320 L0 300 Q160 292 340 300 Q520 308 700 300 Q860 292 980 302 Q1090 311 1200 304 L1200 320 Z"/></g>'
-/* coconut palms at the foot of the falls */
+/* far: an unbroken jungle canopy running right across, soft and hazy */
++'<path class="far" d="M0 262 Q30 246 60 256 Q92 242 124 254 Q156 244 188 256 Q220 242 252 254 '
++'Q284 244 316 256 Q348 242 380 254 Q412 244 444 256 Q476 242 508 254 Q540 244 572 256 '
++'Q604 242 636 254 Q668 244 700 256 Q732 242 764 254 Q796 244 828 256 Q860 242 892 254 '
++'Q924 244 956 256 Q988 242 1020 254 Q1052 244 1084 256 Q1116 242 1148 254 Q1176 246 1200 254 '
++'L1200 320 L0 320 Z"/>'
+/* mid: the warm clearing floor */
++'<path class="mid" d="M0 320 L0 288 Q200 282 400 287 Q600 292 800 286 Q1000 280 1200 287 L1200 320 Z"/>'
+/* near: the green foreground */
++'<g class="near"><path d="M0 320 L0 302 Q180 294 380 302 Q580 310 780 300 Q980 291 1200 300 L1200 320 Z"/></g>'
+/* trees scattered through the clearing */
++'<path fill="var(--bark)" d="M114 312 L114 262 L122 262 L122 312 Z"/>'
++'<circle class="near" cx="118" cy="254" r="19"/>'
++'<path fill="var(--bark)" d="M242 312 L242 266 L250 266 L250 312 Z"/>'
++'<circle class="near" cx="246" cy="258" r="17"/>'
++'<path fill="var(--bark)" d="M388 312 L388 260 L396 260 L396 312 Z"/>'
++'<circle class="near" cx="392" cy="252" r="20"/>'
++'<path fill="var(--bark)" d="M532 312 L532 266 L540 266 L540 312 Z"/>'
++'<circle class="near" cx="536" cy="258" r="17"/>'
++'<path fill="var(--bark)" d="M660 312 L660 262 L668 262 L668 312 Z"/>'
++'<circle class="near" cx="664" cy="254" r="19"/>'
++'<path fill="var(--bark)" d="M936 312 L936 258 L944 258 L944 312 Z"/>'
++'<circle class="near" cx="940" cy="250" r="21"/>'
+/* coconut palms on the right */
 +'<g fill="var(--bark)" aria-hidden="true">'
-+'<path d="M812 308 C818 270 812 238 822 210 L829 212 C819 240 826 272 820 310 Z"/>'
-+'<path d="M896 306 C890 278 896 254 888 232 L894 230 C902 254 896 280 902 306 Z"/>'
++'<path d="M1074 304 C1080 266 1074 234 1084 206 L1091 208 C1081 236 1088 268 1082 306 Z"/>'
++'<path d="M1166 304 C1160 276 1166 252 1158 230 L1164 228 C1172 252 1166 278 1172 304 Z"/>'
 +'</g>'
 +'<g class="near">'
-+'<path d="M825 210 C804 196 780 193 761 201 C782 200 804 206 822 215 Z M825 210 C844 194 868 190 888 197 C868 199 846 206 828 215 Z M825 210 C816 190 801 179 781 177 C801 186 814 197 822 212 Z M825 210 C834 190 849 179 869 177 C849 186 836 197 828 212 Z M825 210 C823 188 815 172 801 163 C813 176 820 192 822 210 Z"/>'
-+'<path d="M890 232 C872 222 852 220 836 227 C853 226 872 230 888 237 Z M890 232 C906 218 926 214 943 220 C926 222 907 228 892 236 Z M890 232 C884 215 872 205 855 203 C872 210 883 220 888 234 Z M890 232 C897 215 909 206 926 204 C910 212 899 222 892 234 Z"/>'
++'<path d="M1087 206 C1066 192 1042 189 1023 197 C1044 196 1066 202 1084 211 Z M1087 206 C1106 190 1130 186 1150 193 C1130 195 1108 202 1090 211 Z M1087 206 C1078 186 1063 175 1043 173 C1063 182 1076 193 1084 208 Z M1087 206 C1096 186 1111 175 1131 173 C1111 182 1098 193 1090 208 Z M1087 206 C1085 184 1077 168 1063 159 C1075 172 1082 188 1084 206 Z"/>'
++'<path d="M1160 230 C1142 220 1122 218 1106 225 C1123 224 1142 228 1158 235 Z M1160 230 C1176 216 1196 212 1213 218 C1196 220 1177 226 1162 234 Z M1160 230 C1154 213 1142 203 1125 201 C1142 208 1153 218 1158 232 Z M1160 230 C1167 213 1179 204 1196 202 C1180 210 1169 220 1162 232 Z"/>'
++'</g>'
+/* two elephants out in the clearing */
++'<g transform="translate(742,216)" aria-hidden="true">'
++'<g fill="var(--slate)">'
++'<path d="M26 86 L26 48 Q26 42 37 42 L47 42 Q58 42 58 48 L58 86 Z"/>'
++'<path d="M62 86 L62 48 Q62 42 73 42 L83 42 Q94 42 94 48 L94 86 Z"/>'
++'<path d="M100 86 L100 48 Q100 42 111 42 L121 42 Q132 42 132 48 L132 86 Z"/>'
++'<ellipse cx="62" cy="36" rx="52" ry="27"/>'
++'<ellipse cx="118" cy="42" rx="23" ry="22"/>'
++'<path d="M140 50 Q157 66 155 84 Q154 94 143 93 Q134 92 137 83 Q143 71 132 59 Z"/>'
++'<path d="M12 28 Q1 41 4 58 L10 57 Q7 43 16 33 Z"/>'
++'<ellipse cx="6" cy="60" rx="4.5" ry="6.5"/>'
++'</g>'
++'<ellipse fill="var(--tyre)" opacity=".2" cx="110" cy="34" rx="16" ry="19"/>'
++'<circle fill="var(--tyre)" opacity=".65" cx="132" cy="35" r="2.2"/>'
++'</g>'
++'<g transform="translate(884,238) scale(0.7)" aria-hidden="true">'
++'<g fill="var(--slate)">'
++'<path d="M26 86 L26 48 Q26 42 37 42 L47 42 Q58 42 58 48 L58 86 Z"/>'
++'<path d="M62 86 L62 48 Q62 42 73 42 L83 42 Q94 42 94 48 L94 86 Z"/>'
++'<path d="M100 86 L100 48 Q100 42 111 42 L121 42 Q132 42 132 48 L132 86 Z"/>'
++'<ellipse cx="62" cy="36" rx="52" ry="27"/>'
++'<ellipse cx="118" cy="42" rx="23" ry="22"/>'
++'<path d="M140 50 Q157 66 155 84 Q154 94 143 93 Q134 92 137 83 Q143 71 132 59 Z"/>'
++'<path d="M12 28 Q1 41 4 58 L10 57 Q7 43 16 33 Z"/>'
++'<ellipse cx="6" cy="60" rx="4.5" ry="6.5"/>'
++'</g>'
++'<ellipse fill="var(--tyre)" opacity=".2" cx="110" cy="34" rx="16" ry="19"/>'
++'<circle fill="var(--tyre)" opacity=".65" cx="132" cy="35" r="2.2"/>'
 +'</g>'
 /* near: lush green shore */
 +'<g class="near"><path d="M0 304 Q160 286 320 298 Q480 310 640 298 Q800 286 960 300 Q1080 308 1200 298 L1200 320 L0 320 Z"/></g>';
 
 /* --- band: calm sea left, palm + headland right --- */
 const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
-+'<path class="far" d="M0 152 Q200 147 400 151 Q600 145 800 149 Q1000 143 1200 147 L1200 200 L0 200 Z"/>'
-/* the cliff, slim */
-+'<path class="mid" d="M1200 200 L1200 96 Q1156 90 1116 100 Q1074 111 1042 134 Q1010 158 992 200 Z"/>'
-+'<g class="snow" opacity=".13" aria-hidden="true"><path d="M1126 108 Q1098 142 1078 180 L1086 180 Q1106 144 1134 110 Z"/></g>'
-/* the fall */
-+'<path class="snow" d="M1078 118 Q1075 152 1073 182 L1096 182 Q1094 152 1091 118 Z"/>'
-+'<g class="snow" opacity=".4" aria-hidden="true"><ellipse cx="1084" cy="184" rx="26" ry="6"/></g>'
-+'<path fill="var(--water)" d="M1042 190 Q1086 184 1130 190 Q1086 196 1042 190 Z"/>'
-+'<g class="near"><path d="M0 200 L0 188 Q300 180 600 188 Q900 195 1200 190 L1200 200 Z"/></g>'
-/* a palm at the foot */
-+'<g fill="var(--bark)" aria-hidden="true"><path d="M946 192 C950 168 946 148 952 130 L957 131 C951 150 956 170 952 194 Z"/></g>'
-+'<g class="near"><path d="M954 130 C940 120 924 118 911 123 C925 123 940 127 952 134 Z M954 130 C967 119 983 116 996 121 C983 123 968 128 956 134 Z M954 130 C948 117 939 109 926 107 C939 113 948 121 952 131 Z M954 130 C960 117 969 109 982 107 C970 113 961 121 956 131 Z"/></g>';
++'<path class="far" d="M0 160 Q34 146 68 156 Q104 142 140 154 Q176 144 212 156 Q248 142 284 154 '
++'Q320 144 356 156 Q392 142 428 154 Q464 144 500 156 Q536 142 572 154 Q608 144 644 156 '
++'Q680 142 716 154 Q752 144 788 156 Q824 142 860 154 Q896 144 932 156 Q968 142 1004 154 '
++'Q1040 144 1076 156 Q1112 142 1148 154 Q1176 148 1200 154 L1200 200 L0 200 Z"/>'
++'<path class="mid" d="M0 200 L0 180 Q300 174 600 180 Q900 185 1200 178 L1200 200 Z"/>'
++'<g class="near"><path d="M0 200 L0 190 Q300 183 600 190 Q900 196 1200 190 L1200 200 Z"/></g>'
+/* a tree and a palm */
++'<path fill="var(--bark)" d="M834 192 L834 168 L840 168 L840 192 Z"/><circle class="near" cx="837" cy="162" r="14"/>'
++'<g fill="var(--bark)" aria-hidden="true"><path d="M1122 192 C1126 168 1122 148 1128 130 L1133 131 C1127 150 1132 170 1128 194 Z"/></g>'
++'<g class="near"><path d="M1130 130 C1116 120 1100 118 1087 123 C1101 123 1116 127 1128 134 Z M1130 130 C1143 119 1159 116 1172 121 C1159 123 1144 128 1132 134 Z M1130 130 C1124 117 1115 109 1102 107 C1115 113 1124 121 1128 131 Z M1130 130 C1136 117 1145 109 1158 107 C1146 113 1137 121 1132 131 Z"/></g>'
+/* an elephant */
++'<g transform="translate(928,148) scale(0.6)" aria-hidden="true">'
++'<g fill="var(--slate)">'
++'<path d="M26 86 L26 48 Q26 42 37 42 L47 42 Q58 42 58 48 L58 86 Z"/>'
++'<path d="M62 86 L62 48 Q62 42 73 42 L83 42 Q94 42 94 48 L94 86 Z"/>'
++'<path d="M100 86 L100 48 Q100 42 111 42 L121 42 Q132 42 132 48 L132 86 Z"/>'
++'<ellipse cx="62" cy="36" rx="52" ry="27"/>'
++'<ellipse cx="118" cy="42" rx="23" ry="22"/>'
++'<path d="M140 50 Q157 66 155 84 Q154 94 143 93 Q134 92 137 83 Q143 71 132 59 Z"/>'
++'<path d="M12 28 Q1 41 4 58 L10 57 Q7 43 16 33 Z"/>'
++'<ellipse cx="6" cy="60" rx="4.5" ry="6.5"/>'
++'</g>'
++'<ellipse fill="var(--tyre)" opacity=".2" cx="110" cy="34" rx="16" ry="19"/>'
++'<circle fill="var(--tyre)" opacity=".65" cx="132" cy="35" r="2.2"/>'
++'</g>';
 
 /* --- mascot: leopard cub (moods: happy / cheer / oops) --- */
 function SI_MASCOT(m){
