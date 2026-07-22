@@ -652,6 +652,30 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   .hero-text h1{font-size:26px}
 }
 
+/* ===== SHORT TRIP page ===== */
+.trip-sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:18px 20px 14px;margin-bottom:16px}
+.trip-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.trip-head .tn{flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:12.5px;font-weight:800;color:#fff;background:var(--zacc)}
+.trip-head .tt{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.trip-head .td{font-size:13px;color:var(--ink-soft)}
+.trip-note{font-size:14.5px;line-height:1.55;color:var(--ink-soft);background:color-mix(in srgb,var(--zacc) 7%,transparent);border-left:3px solid color-mix(in srgb,var(--zacc) 55%,transparent);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:12px}
+.trip-note b{color:var(--ink);font-weight:700}
+.trip-lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:8px}
+.trip-line{position:relative;text-align:left;background:var(--paper);border:1px solid var(--line-soft);border-radius:12px;padding:10px 34px 10px 12px;cursor:pointer;display:block;width:100%;color:var(--ink)}
+.trip-line:hover{border-color:var(--zacc);background:color-mix(in srgb,var(--zacc) 6%,var(--paper))}
+.trip-line .bn{display:block;font-size:19px;line-height:1.35;font-weight:600}
+.trip-line .rm{display:block;font-size:12.5px;color:var(--zacc);font-weight:700;margin-top:1px}
+.trip-line .en{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
+.trip-line .spk{position:absolute;right:9px;top:11px;width:16px;height:16px;opacity:.42}
+.trip-line:hover .spk{opacity:.85}
+.tc-card .q{font-size:19px;font-weight:700;color:var(--ink);padding:0 10px}
+.tc-card .d{margin-top:10px;font-size:30px;line-height:1.3}
+@media(max-width:600px){
+  .trip-sec{padding:15px 15px 12px}
+  .trip-lines{grid-template-columns:1fr}
+  .trip-head .tt{font-size:16px}
+  .trip-note{font-size:13.5px;padding:9px 12px}
+}
 /* ===== MOBILE REFINEMENT pt.2 — alphabet / review / exercise ===== */
 @media(max-width:600px){
   /* --- alphabet page --- */
@@ -985,6 +1009,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
+      <button class="tab" data-v="trip" onclick="show('trip')">Short trip</button>
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
       <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
       <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
@@ -1113,6 +1138,33 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <div class="alpha-grid" id="numerals"></div>
     </div>
   </div>
+</section>
+
+<section class="view" id="view-trip">
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
+      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
+      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
+      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
+        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner">
+      <h2>Short trip <span class="deva" id="trip-native">অল্প দিনের সফর</span></h2>
+      <p class="pb-sub" id="trip-intro"></p>
+      <button class="pb-btn" onclick="openTripCards()">Trip flashcards</button>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:6px" id="trip-root"></div>
 </section>
 
 <section class="view" id="view-review">
@@ -1431,6 +1483,12 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <div id="ac-stage"></div>
   </div>
 </div>
+<div class="modal-bg" id="tripcards-modal">
+  <div class="modal ac-modal">
+    <button class="close" onclick="closeTripCards()" aria-label="Close">×</button>
+    <div id="tc-stage"></div>
+  </div>
+</div>
 
 <!-- CONFIRM DIALOG (in-app replacement for native confirm) -->
 <div class="modal-bg" id="confirm-modal">
@@ -1640,8 +1698,9 @@ document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 const SMOOTH=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth';
 function show(v){if(v==='intensive'&&!hasIntensive())v='home';
+  if(v==='trip'&&!(LANG&&LANG.trip))v='home';
   if(S.mode==='faith'&&typeof fstopAll==='function')fstopAll();
-  if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'))v='fstory'; /* faith mode replaces the course pages */
+  if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'||v==='trip'))v='fstory'; /* faith mode replaces the course pages */
   if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'))v='home';
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
@@ -1769,6 +1828,57 @@ function acFlip(){const c=acDeck[0];if(!c)return;
   if(acFlipped){speak(c[0]);return;} /* tap again to re-hear */
   acFlipped=true;document.getElementById('ac-r').textContent=c[1];document.getElementById('ac-card').classList.add('flipped');speak(c[0]);}
 function acGrade(ok){const c=acDeck.shift();if(!ok&&c)acDeck.push(c);acRender();}
+/* ===== SHORT TRIP (per-pack phrasebook; Bengali today) =====
+   A page for someone visiting for a fortnight rather than studying: real
+   situations, the few grammar frames that generate the rest, every line
+   tappable for audio, and its own flashcard deck that prompts in ENGLISH so
+   you practise producing Bengali rather than just recognising it. */
+const TRIP_ACC=['#1F8A5B','#2E6FA8','#C07A14','#8A4FA0','#B5543E','#127C74'];
+function paintTripTab(){const t=document.querySelector('.tab[data-v="trip"]');
+  if(t)t.style.display=(LANG&&LANG.trip)?'':'none';}
+function buildTrip(){
+  const root=document.getElementById('trip-root');if(!root)return;
+  const T=LANG&&LANG.trip;
+  if(!T){root.innerHTML='';return;}
+  const nat=document.getElementById('trip-native');if(nat)nat.textContent=T.native||'';
+  const intro=document.getElementById('trip-intro');if(intro)intro.textContent=T.intro||'';
+  root.innerHTML=T.sections.map(function(s,i){
+    return '<div class="trip-sec" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'">'
+      +'<div class="trip-head"><span class="tn">'+(i+1)+'</span>'
+      +'<span class="tt">'+s.t+'</span><span class="td">'+s.d+'</span></div>'
+      +(s.note?'<div class="trip-note">'+s.note+'</div>':'')
+      +'<div class="trip-lines">'+s.lines.map(function(l){
+        return '<button type="button" class="trip-line" onclick="speak(\''+l[0]+'\')">'
+          +'<span class="bn deva">'+l[0]+'</span>'
+          +'<span class="rm">'+l[1]+'</span>'
+          +'<span class="en">'+l[2]+'</span>'
+          +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></button>';}).join('')
+      +'</div></div>';}).join('');}
+let tcDeck=[],tcFlipped=false;
+function openTripCards(){document.getElementById('tripcards-modal').classList.add('show');document.body.style.overflow='hidden';tcMenu();}
+function closeTripCards(){document.getElementById('tripcards-modal').classList.remove('show');document.body.style.overflow='';stopAudio();}
+function tcMenu(){const st=document.getElementById('tc-stage');const T=LANG&&LANG.trip;if(!T)return;
+  const all=T.sections.reduce(function(a,s){return a+s.lines.length;},0);
+  st.innerHTML='<h3>Trip flashcards</h3><p class="ac-sub">You see the English, say the Bengali out loud, then flip to check — you will hear it too. Anything you miss comes back until the deck is clear.</p>'
+    +'<div class="ac-picks">'
+    +T.sections.map(function(s,i){return '<button class="ac-pick" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'" onclick="tcStart('+i+')"><span class="t">'+s.t+'</span><span class="n">'+s.lines.length+' cards</span></button>';}).join('')
+    +'<button class="ac-pick" style="--zacc:#5B6FA0" onclick="tcStart(-1)"><span class="t">Everything</span><span class="n">'+all+' cards</span></button>'
+    +'</div>';}
+function tcStart(i){const T=LANG.trip;
+  const src=(i<0)?T.sections.reduce(function(a,s){return a.concat(s.lines);},[]):T.sections[i].lines;
+  tcDeck=src.slice().sort(function(){return Math.random()-.5;});tcRender();}
+function tcRender(){const st=document.getElementById('tc-stage');
+  if(!tcDeck.length){st.innerHTML='<div class="ac-done">'+artMascot('cheer')+'</div><h3 style="text-align:center">Deck cleared!</h3><p class="ac-sub" style="text-align:center">Every card marked got-it. Well done.</p><div class="ac-row"><button class="btn btn-ghost" onclick="tcMenu()">Another deck</button><button class="btn btn-primary" onclick="closeTripCards()">Done</button></div>';return;}
+  tcFlipped=false;const c=tcDeck[0];
+  st.innerHTML='<div class="ac-count">'+tcDeck.length+(tcDeck.length===1?' card':' cards')+' left</div>'
+    +'<button class="ac-card tc-card" id="tc-card" onclick="tcFlip()"><div class="q">'+c[2]+'</div><div class="d deva" id="tc-d"></div><div class="r" id="tc-r">tap to flip</div></button>'
+    +'<div class="ac-row"><button class="btn btn-ghost" onclick="tcGrade(false)">&#8635; Again</button><button class="btn btn-primary" onclick="tcGrade(true)">Got it &#10003;</button></div>';}
+function tcFlip(){const c=tcDeck[0];if(!c)return;
+  if(tcFlipped){speak(c[0]);return;}
+  tcFlipped=true;document.getElementById('tc-d').textContent=c[0];
+  document.getElementById('tc-r').textContent=c[1];
+  document.getElementById('tc-card').classList.add('flipped');speak(c[0]);}
+function tcGrade(ok){const c=tcDeck.shift();if(!ok&&c)tcDeck.push(c);tcRender();}
 /* in-app confirm dialog — replaces native confirm() so it matches the app on every device */
 let cfOnOk=null;
 function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').textContent=title;document.getElementById('cf-msg').textContent=msg;
@@ -2146,7 +2256,7 @@ function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
   const set=(id,t)=>{const e=document.getElementById(id);if(e&&t)e.textContent=t;};
   set('alpha-native',al.native);set('pdeva-vowels',al.vowels);set('pdeva-consonants',al.cons);set('pdeva-numerals',al.nums);
   set('review-native',al.review);set('settings-native',al.settings); /* per-language "practice"/"settings" labels */
-  applyArt();paintLangPicker();paintHomeLangSwitch();}
+  applyArt();paintLangPicker();paintHomeLangSwitch();paintTripTab();buildTrip();}
 /* per-language scenery: the built-in SVGs are the Nepali art (captured once as
    the default); a pack overrides them via art:{hero,band,mascot}. The data-lang
    attribute drives the per-language color palette in CSS. */

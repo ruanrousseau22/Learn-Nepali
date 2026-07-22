@@ -1102,6 +1102,43 @@ Decisions made (July 2026):
   `generate_audio.py --lang km` → `audio-km/`. Khmer grows zone by zone from
   here — next zones append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`.
 
+## Short trip (per-pack phrasebook — Bengali, July 2026)
+A FOURTH page next to Learn / Alphabet / Review, for someone visiting for a
+fortnight rather than studying a course. Built because Ruan's friends are going
+to Kolkata for two weeks. **It is a pack feature, not a Bengali special case** —
+the tab, the page and its flashcards all appear only when the active pack
+defines `trip`, so any language can get one by adding the same field.
+- **Data** lives in the pack: `trip:{title, native, intro, sections:[{id, t, d,
+  note?, lines:[[native, rom, english]]}]}` (`BN_TRIP` in `lang/bn.js`, just
+  before `registerPack`). Bengali ships **12 sections / 120 lines**: `first,
+  polite, meet, patterns, numbers, ride, way, eat, shop, stay, trouble,
+  connect`. The `patterns` section is the load-bearing one — four sentence
+  frames (…kothay? / …ache? / amake … dao / … koto?) that generate most of what
+  a visitor needs, so the page teaches production, not just a phrase list.
+  `note` is the only field that may contain HTML (`<b>` only).
+- **Engine** (index.html, next to the alphabet flashcards): `buildTrip()`
+  renders `#trip-root`, `paintTripTab()` hides the tab when `LANG.trip` is
+  absent (same pattern as `paintUnlock`), both called from `applyBranding`;
+  `show()` reroutes `trip`→`home` when the pack has none and `trip`→`fstory` in
+  faith mode. Flashcards are `openTripCards`/`tcMenu`/`tcStart`/`tcRender`/
+  `tcFlip`/`tcGrade` over `#tripcards-modal`, mirroring the alphabet deck
+  (misses requeue; not SRS, so the Review deck stays vocab-only).
+  **The prompt side is ENGLISH** — a traveller needs to PRODUCE Bengali, so the
+  card shows the English, you say it, then flip to reveal script + roman +
+  audio. That is the opposite of the alphabet deck and deliberate.
+- **Audio**: trip lines are spoken, so `extract_audio_strings.js` now walks
+  `pack.trip.sections[].lines[][0]` — **appended AFTER the SRS seed**, so every
+  existing strings file stayed byte-identical (all 7 others still `--check`
+  MATCH). 116 of the 120 lines were already recorded course vocabulary, which is
+  why only **4 new clips** were needed (মিটারে যাবেন?, অটো, বাথরুম কোথায়?,
+  বিল দিন); `audio_strings_bn.json` 1380 → 1384, manifest 1381 keys.
+  **Reuse that trick when writing a trip pack for another language** — draft the
+  lines out of the pack's existing vocabulary wherever the natural phrasing
+  allows and the audio is nearly free.
+- Romanization follows the scheme at the top of `lang/bn.js`, and roman is shown
+  ALWAYS on this page (not gated on `S.rom`) — a two-week visitor will not be
+  reading Bengali script.
+
 ## Religious studies (faith mode — July 2026)
 A second app MODE next to language learning, chosen from the **mode dropdown
 left of the language picker** in the header (`#mode-switch`, styled like the

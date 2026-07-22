@@ -81,6 +81,10 @@ function extract(pack){
   (pack.cons||[]).forEach(function(v){add(v[0]);});
   (pack.nums||[]).forEach(function(v){add(v[0]);});
   (pack.srsSeed||[]).forEach(function(v){add(v[0]);});
+  /* the Short trip phrasebook (bn) — its lines are spoken too, and come last
+     so existing files stay byte-identical up to this point */
+  ((pack.trip&&pack.trip.sections)||[]).forEach(function(sec){
+    (sec.lines||[]).forEach(function(l){add(l[0]);});});
   return out;
 }
 /* match python json.dump(..., ensure_ascii=False, indent=0): one string per line */
