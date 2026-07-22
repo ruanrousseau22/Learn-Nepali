@@ -52,7 +52,7 @@ const MN_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'</g>'
 /* ger doors + felt bands */
 +'<path fill="var(--crimson)" d="M1040 300 L1040 280 L1056 280 L1056 300 Z M1142 300 L1142 286 L1154 286 L1154 300 Z M676 302 L676 286 L692 286 L692 302 Z M592 300 L592 288 L606 288 L606 300 Z"/>'
-+'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.6" opacity=".45" aria-hidden="true"><path d="M1010 262 Q1048 254 1086 262"/><path d="M1008 286 L1088 286"/><path d="M1121 270 Q1148 264 1175 270"/></g>'
++'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.6" opacity=".45" aria-hidden="true"><path d="M1010 262 Q1048 254 1086 262"/><path d="M1008 286 L1088 286"/><path d="M1121 270 Q1148 264 1175 270"/><path d="M654 266 Q688 257 722 266"/><path d="M651 292 L725 292"/><path d="M576 272 Q601 265 626 272"/><path d="M573 293 L629 293"/></g>'
 /* grazing horses (fine detail) */
 +'<g class="art-detail" fill="var(--hide)" aria-hidden="true">'
 +'<g transform="translate(826,268)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g>'

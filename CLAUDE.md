@@ -338,6 +338,14 @@ forward and the rear wheel is clearly LARGER — with two equal wheels it looks
 like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 `--wood` was too dark against the bank.
 
+**Nepali hero extras (July 2026).** The range's left approach used to be one
+long straight diagonal from the horizon into the first peak; it now steps up
+through two foothills (516,218 and 588,192) before the climb to 675,132, which
+reads far better. **Those foothills carry no snow cap on purpose** — they sit
+well below the snow line, so the "every peak needs a cap" check does not apply to
+them. Two yaks in `--hide` graze on the grass at x≈176 and 292. All of this lives
+in index.html, so remember the hero exists as 3 verbatim copies.
+
 **A flat peak makes a spread-out snow cap — lift the peak, don't shrink the cap.**
 Cap width is forced by the slopes: `width = (lx-ax)*d/(ly-ay) + (rx-ax)*d/(ry-ay)`,
 so a peak only ~20px above its neighbours produces a 90px smear of snow. The
