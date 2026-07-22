@@ -53,11 +53,39 @@ function loadPackFromSource(src){
    + Bengali vowel signs & hasanta (া-ৌ ্ ৗ) */
 var COMBINING_ONLY=/^[ា-៓ऀ-ःऺ-ॏ॑-ॗॢ-ॣං-ඃ්ා-ෟෲ-ෳা-্ৗ]+$/;
 
+/* Latin-script packs (uz, jv) cannot be filtered with a script regex — it
+   cannot tell Uzbek "rahmat" from English "thank you". Only `mc` is genuinely
+   ambiguous: its `d` prompt and its options may be English meanings. Every
+   other spoken field is native by construction. So for a `latin:true` pack we
+   first collect the native vocabulary from the unambiguous fields, then accept
+   an mc string only if it also appears there. Non-Latin packs are untouched —
+   they still go through pack.script, so all 8 shipped strings files are
+   byte-identical. */
+function nativeVocab(pack){
+  var set={};
+  function mark(s){if(typeof s==='string'&&s)set[s]=1;}
+  (pack.lessons||[]).forEach(function(l){
+    if(l.step==='test')return;
+    (l.vocab||[]).forEach(function(v){mark(v[0]);});
+    (l.ex||[]).forEach(function(e){
+      if(e.say)mark(e.say);
+      if(e.t==='wb')mark(e.a.join(' '));
+      if(e.t==='match')e.pairs.forEach(function(pr){mark(pr[0]);});
+      if(e.t==='tr')mark(e.a);
+    });
+  });
+  ['vowels','cons','nums','srsSeed'].forEach(function(k){
+    (pack[k]||[]).forEach(function(v){mark(v[0]);});});
+  return set;
+}
 function extract(pack){
   var out=[],seen={};
-  function add(s){
+  var native=pack.latin?nativeVocab(pack):null;
+  /* `ambiguous` marks strings that may legitimately be English (mc only) */
+  function add(s,ambiguous){
     if(typeof s!=='string'||!s)return;
-    if(!pack.script.test(s))return;
+    if(pack.latin){ if(ambiguous&&!native[s])return; }
+    else if(!pack.script.test(s))return;
     if(COMBINING_ONLY.test(s))return;
     if(seen[s])return;
     seen[s]=1;out.push(s);
@@ -70,7 +98,7 @@ function extract(pack){
     (l.vocab||[]).forEach(function(v){add(v[0]);});
     (l.ex||[]).forEach(function(e){
       if(e.say)add(e.say);
-      if(e.t==='mc'){if(e.d)add(e.d);add(e.o[e.a]);}
+      if(e.t==='mc'){if(e.d)add(e.d,1);add(e.o[e.a],1);}
       if(e.t==='fill')add(e.s.replace('___',e.o[e.a]));
       if(e.t==='wb')add(e.a.join(' '));
       if(e.t==='match')e.pairs.forEach(function(p){add(p[0]);});

@@ -45,7 +45,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Khmer:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Sans+Myanmar:wght@400;500;600&family=Noto+Sans+Sinhala:wght@400;500;600&family=Noto+Sans+Lao:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Khmer:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Sans+Myanmar:wght@400;500;600&family=Noto+Sans+Sinhala:wght@400;500;600&family=Noto+Sans+Lao:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#EFF4FB; --paper-2:#E0EAF6; --ink:#1B2430; --ink-soft:#5B6B7D;
@@ -89,22 +89,35 @@
 /* Pashto is RIGHT-TO-LEFT: word-bank sentences assemble right-to-left, fill
    sentences and big displays read RTL. Each tile/option is a single text run,
    so only the flow containers need flipping. */
-:root[data-lang="ps"] .wb-answer,:root[data-lang="ps"] .wb-bank{direction:rtl}
+:root:is([data-lang="ps"],[data-lang="ur"]) .wb-answer,:root:is([data-lang="ps"],[data-lang="ur"]) .wb-bank{direction:rtl}
 /* the empty-answer placeholder is English: keep it ltr or its trailing … is
    bidi-shunted to the left end ("…Tap the words below") — same fix as .from */
-:root[data-lang="ps"] .wb-ph{direction:ltr;display:inline-block}
-:root[data-lang="ps"] .fill-sentence,:root[data-lang="ps"] .exbig{direction:rtl}
+:root:is([data-lang="ps"],[data-lang="ur"]) .wb-ph{direction:ltr;display:inline-block}
+:root:is([data-lang="ps"],[data-lang="ur"]) .fill-sentence,:root:is([data-lang="ps"],[data-lang="ur"]) .exbig{direction:rtl}
 :root[data-lang="ps"] .exq,:root[data-lang="ps"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-serif}
+/* URDU — Nastaliq, not Naskh. The global stacks end in Noto Sans Arabic, which
+   would render Urdu in the wrong style, so override it wherever native text is
+   drawn. Nastaliq's baseline steps DOWN across a word, so every one of these
+   needs extra line-height or the descending tail is clipped. */
+:root[data-lang="ur"] .deva,:root[data-lang="ur"] .exbig,:root[data-lang="ur"] .mc,
+:root[data-lang="ur"] .fill-sentence,:root[data-lang="ur"] .wbtile,:root[data-lang="ur"] .mtile.deva,
+:root[data-lang="ur"] .glyph .d,:root[data-lang="ur"] .alpha-spotlight .big,
+:root[data-lang="ur"] .flip .front,:root[data-lang="ur"] .srs-back-deva,
+:root[data-lang="ur"] .tinput input,:root[data-lang="ur"] .note-body .deva,
+:root[data-lang="ur"] .exq,:root[data-lang="ur"] .note-body{
+  font-family:'Noto Nastaliq Urdu','Noto Sans Arabic',serif;line-height:2.05}
+:root[data-lang="ur"] .glyph .d,:root[data-lang="ur"] .alpha-spotlight .big,
+:root[data-lang="ur"] .flip .front{line-height:1.7}
 /* Faith mode reads RTL too (July 2026). The story reader mixes a Pashto run
    with a quiet English one on the same line — without this the bidi algorithm
    lays the block out LTR and the English jumps in front of the Pashto. Flip the
    flow containers and isolate each English span so it stays a unit. */
-:root[data-lang="ps"] .fread-t,:root[data-lang="ps"] .fback,
-:root[data-lang="ps"] .fne,:root[data-lang="ps"] .fnote-tag{direction:rtl}
-:root[data-lang="ps"] .fh-ne,:root[data-lang="ps"] .fread-count{unicode-bidi:isolate}
+:root:is([data-lang="ps"],[data-lang="ur"]) .fread-t,:root:is([data-lang="ps"],[data-lang="ur"]) .fback,
+:root:is([data-lang="ps"],[data-lang="ur"]) .fne,:root:is([data-lang="ps"],[data-lang="ur"]) .fnote-tag{direction:rtl}
+:root:is([data-lang="ps"],[data-lang="ur"]) .fh-ne,:root:is([data-lang="ps"],[data-lang="ur"]) .fread-count{unicode-bidi:isolate}
 /* ...but the romanization view is pure ASCII: keep it LTR, or a trailing full
    stop gets bidi-shunted to the left end of the line. */
-:root[data-lang="ps"] .from{direction:ltr;text-align:left}
+:root:is([data-lang="ps"],[data-lang="ur"]) .from{direction:ltr;text-align:left}
 /* Afghanistan: high-desert light — snowy Hindu Kush over arid terraces */
 :root[data-lang="ps"]{--sky1:#DEE9F4;--sky2:#F4F8FB;--mtn-far:#93A9C0;--mtn-mid:#C79B5F;--mtn-near:#3E8B55;--orb:#F0B34A}
 :root[data-theme="dark"][data-lang="ps"]{--sky1:#16202B;--sky2:#0E1319;--mtn-far:#31435A;--mtn-mid:#57452A;--mtn-near:#1E4F33;--orb:#EFE0BF}
@@ -1001,8 +1014,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 /* …and in Pashto the middle-dot separator is dropped for a plain gap: the
    dot glyph is near-identical to the Arabic-Indic zero ۰, so "۱ ·" read
    as "۱۰". A gap carries the same separation without the ambiguity. */
-:root[data-lang="ps"] .fnode-sep{font-size:0}
-:root[data-lang="ps"] .fnode-n{margin-inline-end:10px}
+:root:is([data-lang="ps"],[data-lang="ur"]) .fnode-sep{font-size:0}
+:root:is([data-lang="ps"],[data-lang="ur"]) .fnode-n{margin-inline-end:10px}
 .fnode:hover{transform:translateY(-1px);border-color:var(--crimson)}
 .fnode.next{border-color:var(--crimson);box-shadow:0 4px 14px color-mix(in srgb,var(--crimson) 14%,transparent)}
 .fnode.done{opacity:.82}
@@ -2174,8 +2187,8 @@ function fui(k){const u=FAITH&&FAITH.ui;return (u&&u[k]!=null)?u[k]:FUI_NE[k];}
 function fnum(n){const d=FAITH&&FAITH.digits;if(d)return String(n).split('').map(c=>d[c]||c).join('');return (!FAITH||FAITH.code==='ne')?devNum(n):String(n);}
 /* Right-to-left languages mirror navigation arrows: in Pashto "back" and
    "previous" point RIGHT and "next" points LEFT, following the reading flow.
-   Add future RTL languages (Urdu, Farsi, Arabic) to RTL_CODES. */
-const RTL_CODES={ps:1};
+   Add future RTL languages (Farsi, Arabic) to RTL_CODES — ur is already in. */
+const RTL_CODES={ps:1,ur:1};
 function isRTLLang(){return !!RTL_CODES[(LANG&&LANG.code)||''];}
 function aBack(){return isRTLLang()?'&rarr;':'&larr;';}
 function aNext(){return isRTLLang()?'&larr;':'&rarr;';}
@@ -2508,7 +2521,23 @@ function buildTestEx(testId){
   for(const ex of leftovers){if(picked.length>=20)break;if(ex.t==='match'&&matches>=3)continue;picked.push(ex);if(ex.t==='match')matches++;}
   return shuffle(picked).slice(0,20);
 }
-function hasDeva(s){return LANG.script.test(s||'');}
+/* A Latin-script pack (uz, jv) cannot answer "is this the native language?"
+   with a regex — Uzbek and English share the alphabet. Build the pack's own
+   vocabulary once from the fields that are native by construction (the same
+   set the extractor uses) and test membership instead. Without this, answering
+   an mc would read the English option aloud in an Uzbek voice. */
+function packNativeSet(p){
+  if(p._nat)return p._nat;
+  const set=new Set(),mark=v=>{if(typeof v==='string'&&v)set.add(v);};
+  (p.lessons||[]).forEach(l=>{if(l.step==='test')return;
+    (l.vocab||[]).forEach(v=>mark(v[0]));
+    (l.ex||[]).forEach(e=>{if(e.say)mark(e.say);
+      if(e.t==='wb')mark(e.a.join(' '));
+      if(e.t==='match')e.pairs.forEach(pr=>mark(pr[0]));
+      if(e.t==='tr')mark(e.a);});});
+  ['vowels','cons','nums','srsSeed'].forEach(k=>(p[k]||[]).forEach(v=>mark(v[0])));
+  return (p._nat=set);}
+function hasDeva(s){s=s||'';return LANG.latin?packNativeSet(LANG).has(s):LANG.script.test(s);}
 function normDeva(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[\s?।.,_'"!:;-]/g,'');}
 function normRom(s){return normDeva(s).replace(/(.)\1+/g,'$1');}
 function trCorrect(ex,v){return normDeva(v)===normDeva(ex.a)||(ex.r&&normRom(v)===normRom(ex.r));}

@@ -23,7 +23,7 @@ voices, matching the house default.
 
 ---
 
-## Phase 0 — Foundations (one session, no curriculum yet)
+## Phase 0 — Foundations ✅ DONE (July 2026)
 
 Ship nothing user-visible. Solve the things that would otherwise be discovered
 mid-build.
@@ -36,14 +36,25 @@ For a Latin-script pack that test cannot tell Uzbek `rahmat` from English
 that the Cyrillic regex silently filters out. Uzbek and Javanese would generate
 English clips in an Uzbek voice.
 
-**Fix:** add an opt-in `latin:true` to the pack. When set, the extractor keeps a
-string only if it appears in that pack's own native vocabulary set (the union of
-`vocab[0]`, every `say`, `wb a.join(' ')`, `match pairs[i][0]`, `tr a`), instead
-of applying a script regex.
+**Shipped fix:** an opt-in `latin:true` on the pack. Only `mc` is genuinely
+ambiguous — its `d` prompt and options may be English meanings; every other
+spoken field is native by construction. So `nativeVocab(pack)` collects the
+unambiguous fields (`vocab[0]`, `say`, `wb a.join(' ')`, `match pairs[i][0]`,
+`tr a`, alphabet arrays, SRS seed) and an mc string is kept only if it appears
+there. Non-Latin packs still go through `pack.script` and are untouched —
+**proved: all 8 shipped strings files still `--check` MATCH.** A synthetic
+Uzbek-shaped pack confirmed the new path keeps `rahmat`/`salom`/`xayr` and drops
+the English options `thank you`/`goodbye`/`sorry`.
 
-**Hard constraint:** all 8 existing packs must still `--check` MATCH afterwards.
-The new branch is only reachable when `latin` is set, so it cannot touch them —
-but prove it, don't assume it.
+**The plan missed a second half of this, found while implementing:
+the ENGINE reads `LANG.script` too.** Two call sites: `collectLessonStrings`
+(safe — prefetch is guarded by `AUDIO_KEYS.has`, so a stray English string is
+inert) and **`hasDeva`, which decides whether to speak the correct mc option
+aloud**. With a Latin regex that would read the English answer in an Uzbek
+voice. Fixed with `packNativeSet(pack)` — the same construction as the
+extractor, built once and cached on the pack — and `hasDeva` now branches on
+`LANG.latin`. **When authoring a Latin pack, set both `latin:true` and a
+`script` regex** (the latter is still used by the validation sweeps).
 
 ### 0.2 Romanization schemes (document at the top of each pack)
 
@@ -61,35 +72,49 @@ rather than deleting the check.
 
 ### 0.3 Fonts
 
-- **Urdu needs Noto Nastaliq Urdu.** Nastaliq is not Naskh — the Pashto font
-  does not cover it. Its baseline cascades diagonally, so **it needs far more
-  line-height than any other script**; tiles and option buttons will clip
-  otherwise. Budget real time for this; it is the Burmese-stacking gotcha again.
+- **Urdu needs Noto Nastaliq Urdu.** DONE: added to the Google Fonts link and
+  applied through a `:root[data-lang="ur"]` block that overrides the shared
+  stacks wherever native text is drawn. It is **not** added to the 23 global
+  stacks — that would render Pashto in Nastaliq, which is wrong. Because no
+  stack outside that block names it, other languages never download it.
+  `line-height:2.05` (1.7 for the big alphabet/flip glyphs) because the baseline
+  steps down across a word. Verified in the browser: the font loads, the
+  cascade renders, and word-bank tiles and mc options do not clip.
 - Uzbek and Javanese need nothing — Latin, system fonts.
 
 ### 0.4 Engine plumbing
 
-- `RTL_CODES = {ps:1, ur:1}` — arrows and faith nav then mirror automatically.
-- Re-verify the Pashto RTL CSS covers Urdu: `.wb-answer`, `.wb-bank`,
-  `.fill-sentence`, `.exbig`, and the `direction:ltr` escapes on `.from` and
-  `.wb-ph`. Those selectors are `[data-lang="ps"]`-scoped — they must be widened
-  to cover `ur`, not duplicated.
-- `LANG_CATALOG` + `LANG_FLAGS`: Pakistan, Uzbekistan, Indonesia. All three are
-  official state flags, so the flag exemption applies — including Pakistan's
-  crescent and star, exactly as Cambodia keeps Angkor Wat.
+- DONE: `RTL_CODES = {ps:1, ur:1}` — arrows and faith nav mirror automatically.
+- DONE: the nine behavioural Pashto RTL rules were **widened with `:is()`**
+  rather than duplicated — `.wb-answer`, `.wb-bank`, `.wb-ph`, `.fill-sentence`,
+  `.exbig`, the four faith-reader rules, `.from`, and the two `.fnode-*` fixes.
+  The `[data-lang="ps"]` **palette** rules and the **Naskh font** rule were
+  deliberately NOT widened: Urdu gets its own palette and its own Nastaliq rule.
+  Verified Pashto is byte-for-byte unaffected in behaviour (wb-answer rtl,
+  placeholder ltr, rom ltr) and that a simulated `data-lang="ur"` picks up all
+  of it.
+- **MOVED to each language's ship stage: `LANG_CATALOG`, `LANG_FLAGS`, SEO.**
+  A catalog entry whose `lang/<code>.js` does not exist would 404 on switch, and
+  advertising an unbuilt course in the JSON-LD is wrong. These are per-language,
+  not shared infrastructure — they belong in stages 2E / 3E / 4E alongside the
+  early-access label. Flags when built: Pakistan, Uzbekistan, Indonesia; all
+  official state flags, so the exemption applies — including Pakistan's crescent
+  and star, exactly as Cambodia keeps Angkor Wat.
 - `alpha` labels for the Alphabet page. **Uzbek and Javanese have no separate
   script**, so that page teaches sounds and spelling: for Uzbek the letters
   `oʻ gʻ sh ch ng` and the unfamiliar `q`/`x`/`h`; for Javanese the a→ɔ rule and
   the retroflex pairs. Zone 1 is titled accordingly, not "The Script".
 
-### 0.5 SEO
+### 0.5 SEO — deferred to each language's ship stage
 
-Title, meta description, keywords, JSON-LD `teaches` array and one `Course`
-entry per language. Per CLAUDE.md the `<title>` is already at its display limit —
-do not lengthen it.
+Advertising a course that does not exist is worse than advertising it late. Per
+CLAUDE.md the `<title>` is already at its display limit — do not lengthen it;
+add to the meta description, keywords, the JSON-LD `teaches` array and one
+`Course` entry when the course actually ships.
 
-**Exit:** all 8 existing packs byte-identical, `--check` MATCHES ×8, app parses,
-no user-visible change.
+**Exit — met:** all 8 shipped strings files `--check` MATCH, app parses, all 8
+languages render with no overflow and no console errors, Pashto RTL intact,
+**no user-visible change**.
 
 ---
 
