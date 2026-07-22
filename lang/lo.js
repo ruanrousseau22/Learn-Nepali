@@ -64,9 +64,10 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g stroke="var(--wood)" stroke-width="3" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M1058 208 L1050 194"/><path d="M1070 208 L1078 194"/></g>'
 /* near: green river band with reeds right */
 +'<g class="near"><path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>'
-+'<path d="M1148 306 C1146 284 1147 262 1145 244 L1149 244 C1151 262 1150 284 1152 306 Z M1160 308 C1160 288 1162 268 1161 250 L1165 250 C1166 268 1164 290 1164 308 Z M1174 306 C1172 286 1173 266 1171 250 L1175 250 C1177 266 1176 288 1178 306 Z"/>'
-+'<ellipse cx="1147" cy="242" rx="2.6" ry="6"/><ellipse cx="1163" cy="248" rx="2.6" ry="6"/><ellipse cx="1173" cy="248" rx="2.6" ry="6"/>'
-+'</g>';
++'</g>'
++'<g transform="translate(1120,244) scale(0.62)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g>'
++'<g transform="translate(1162,254) scale(0.48)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g>'
++'<g transform="translate(960,258) scale(0.46)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g>';
 
 /* --- band: calm river left, karst + boat right --- */
 const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
@@ -79,9 +80,9 @@ const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'<path fill="var(--water)" d="M0 152 Q300 149 600 151 Q900 148 1200 150 L1200 200 L0 200 Z"/>'
 +'<path class="mid" d="M0 200 L0 176 Q300 168 600 174 Q900 180 1200 170 L1200 200 Z"/>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/>'
-+'<path d="M1130 190 C1128 172 1129 156 1127 142 L1131 142 C1133 156 1132 174 1134 190 Z M1144 190 C1144 174 1146 158 1145 144 L1149 144 C1150 158 1148 176 1148 190 Z"/>'
-+'<ellipse cx="1129" cy="140" rx="2.4" ry="5"/><ellipse cx="1147" cy="142" rx="2.4" ry="5"/>'
-+'</g>';
++'</g>'
++'<g transform="translate(1120,138) scale(0.44)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g>'
++'<g transform="translate(1162,144) scale(0.38)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g>';
 
 /* --- mascot: baby water buffalo (moods: happy / cheer / oops) --- */
 function LO_MASCOT(m){

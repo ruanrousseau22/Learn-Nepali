@@ -230,6 +230,22 @@ verbatim copies.
   `/* stilt fisherman */` comment (both leftovers from the removed figures) were
   deleted, in hero and band.
 - **Burmese** — checked, no bugs found; left alone.
+- **Lao, round 2 (July 2026 sub-page sweep)** — the riverbank "palms" were FIVE
+  BARE POLES (hero 3, band 2): a thin dark-green stroke in the `near` group with
+  a single `rx="2.6" ry="6"` ellipse on top for a crown. At render they read as
+  sticks, not plants — the same leftover-fragment class of bug Ruan had already
+  flagged for Lao. Replaced with the Sinhala palm piece (`--bark` trunk + five
+  `--tree` fronds, drawn around a local origin, placed by transform): hero
+  (1120,244)@0.62, (1162,254)@0.48, (960,258)@0.46; band (1120,138)@0.44,
+  (1162,144)@0.38. **Grounding rule for that piece: base = translate-y +
+  100*scale, which must land on the near crest at that x.**
+**Two art-checker false positives, so nobody chases them twice:** (1)
+`artcheck.py` reads only the LAST 40 chars of a ground path, so Khmer's hero
+`mid` looks like it does not close at y=320 — it does, the stilt house is
+appended as extra subpaths inside the same `d`. (2) `snowaudit.py` filters
+decorative `snow` strips by looking for "opacity" in the path DATA, but Bengali's
+water glint carries it as a separate attribute, so that glint gets measured
+against the far ridge and reports a 37px overhang. Neither is a defect.
 A static sweep (`scratchpad/artcheck.py` pattern) checked all 8 heroes + bands for
 ground paths not closing at the bottom edge, geometry outside the canvas, empty
 groups and degenerate paths: clean. **Landmarks sitting right of x≈1000 are
@@ -309,15 +325,27 @@ outer strokes are exactly the slope segments; the jag must walk monotonically
 right→left or the polygon self-intersects. `scratchpad/gencaps.py` holds the
 generator; worst gap is now 0.07px. **Re-run it whenever a ridge moves.**
 
-**Sinhala art = A HIGHLAND WATERFALL (July 2026, Ruan's third pass).** The tea
-hills below were themselves replaced: Ruan found the blue hills "confusing as it
-flows to the right" and wanted something with more character than a simple
-landscape. It is now a sunlit rock cliff filling the right, a braided white fall
-spilling over a lip into a plunge pool, spray at the base, jungle foreground and
-two palms — with one deliberately calm far ridge so the cliff is unambiguously
-the subject. A fall reads as water only when it is NARROW and braided (two
-ribbons plus a highlight); a single wide wedge looks like a monolith.
-The superseded tea-country note follows for context.
+**Sinhala art = JUNGLE & ELEPHANTS (July 2026, Ruan's FOURTH and final pass —
+"remove the hill, maybe add some more trees all over and put two elephants drawn
+to look like elephants with an elephant colour").** The current art in
+`lang/si.js`: a soft jungle-canopy far layer, SEVEN coconut palms spread across
+the whole canvas at deliberately uneven spacing and scales (x 110/232/506/640/
+1052/1160 at 0.74-1.0 — even spacing read as a plantation), and TWO `--slate`
+elephants, a large one at translate(742,216) and a calf at translate(884,238)
+scale(0.7), with x 700-1000 left clear behind them so they are not lost in
+foliage. An elephant only reads as an elephant with a distinct head mass, a
+tapering trunk, a darker ear, an eye, a tusk and TWO LEG PAIRS WITH A GAP —
+four evenly spaced legs look like a table. The palm is a reusable local-origin
+piece (`--bark` trunk + five `--tree` fronds) placed by transform; **Lao now
+reuses that exact piece**, so fix it in both if it changes. The two superseded
+descriptions follow for context — the waterfall and the tea country were BOTH
+built and BOTH rejected, so do not resurrect either.
+
+**(superseded) Sinhala art = A HIGHLAND WATERFALL (Ruan's third pass).** A sunlit
+rock cliff filling the right, a braided white fall over a lip into a plunge pool,
+spray, jungle foreground and two palms. Lesson worth keeping: a fall reads as
+water only when it is NARROW and braided (two ribbons plus a highlight); a single
+wide wedge looks like a monolith.
 
 **(superseded) Sinhala art = TEA COUNTRY (July 2026, Ruan's second pass).** The elephant and
 the jagged blue ridge are GONE — he disliked both. It is now the up-country: tall
