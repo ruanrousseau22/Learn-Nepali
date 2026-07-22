@@ -62,6 +62,12 @@ LANGS = {
         "outdir": "audio-bn",
         "voices": {"male": "bn-IN-BashkarNeural", "female": "bn-IN-TanishaaNeural"},
     },
+    # Urdu — ur-PK (Pakistani Urdu, as spoken in Lahore/Karachi)
+    "ur": {
+        "strings": "audio_strings_ur.json",
+        "outdir": "audio-ur",
+        "voices": {"male": "ur-PK-AsadNeural", "female": "ur-PK-UzmaNeural"},
+    },
     # religious studies (faith mode) — per-language story reader, same voice
     # as that language's course ("<code>f" pattern; skeletons have no strings
     # yet — generate only after a pack is translated)

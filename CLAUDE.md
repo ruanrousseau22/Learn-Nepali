@@ -585,6 +585,26 @@ carried Amharic, Kinyarwanda and Luganda; those are dropped — the app serves
 Asian languages that are poorly resourced for learners. All eight shipped
 courses are Asian, and the next three are too.
 
+**Urdu (`lang/ur.js`) IN EARLY ACCESS — Zones 1-3 / 21 topics / 105 lessons**
+(July 2026, ROADMAP stage 2A). The app's SECOND right-to-left course. Written
+in **Nastaliq**, not the Naskh Pashto uses, so index.html carries a
+`:root[data-lang="ur"]` font block with `line-height:2.05` — verified in a
+real word-bank at 375px with no clipping. Z1 "The Script" teaches the script
+by SHAPE FAMILY (ب پ ت ٹ ث share one skeleton; dots decide), the retroflexes
+ٹ ڈ ڑ written doubled, the jeem family ج چ ح خ, and aspirates via do-chashmi
+he ھ. Z2 "Foundations" — assalaam alaikum, the aap/tum/tu ladder, hoon/hai/
+hain, numbers 1-10, courtesy with jee, introductions. Z3 "Building sentences"
+— **gender is the spine**: nouns are masculine or feminine and adjectives
+agree (achhaa larrkaa / achhee larrkee), SOV word order, nahin before the
+verb, in-situ question words, the `ke paas` have-pattern and `chaahiye`.
+Romanization documented at the top of `lang/ur.js`: aspirates kh/gh/ch/th/ph,
+retroflexes doubled tt/dd/rr, long vowels aa/ee/oo. **Known collision, and it
+is deliberate:** خ and کھ are both written `kh`, as are غ and گھ — standard
+learner practice, flagged in the Zone 1 note, and the audio carries the truth.
+Audio via `ur-PK-AsadNeural` (146 clips); extractor and generator both know
+`ur`. Content verified against Wikipedia "Urdu alphabet" and the Wikivoyage
+Urdu phrasebook. Zones 4-12 follow in ROADMAP stages 2B-2D.
+
 **Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
 plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the
 caveat that the only voice is IRANIAN Persian, so it must ship as Persian and

@@ -235,7 +235,7 @@ and drives the sequence:
 
 | stage | content |
 |---|---|
-| **2A** | Z1 script (Nastaliq shape families, retroflexes ٹ ڈ ڑ, aspirates with do-chashmi he ھ, the ye family) · Z2 foundations (سلام, the aap/tum/tu ladder, gender in nouns, numbers, introductions) · Z3 the grammar engine (gender agreement, SOV, ہے/ہیں, نہیں, question words) |
+| **2A** ✅ | Z1 script (Nastaliq shape families, retroflexes ٹ ڈ ڑ, aspirates with do-chashmi he ھ, the ye family) · Z2 foundations (سلام, the aap/tum/tu ladder, gender in nouns, numbers, introductions) · Z3 the grammar engine (gender agreement, SOV, ہے/ہیں, نہیں, question words) |
 | **2B** | Z4 postpositions کو/سے/میں/پر + family + city + food · Z5 numbers, money, bargaining, clock · Z6 agreeing adjectives, colours, comparison, weather, body |
 | **2C** | Z7 past + **the ergative نے** + future گا/گی/گے + can سکنا · Z8 transport, directions, hotel, phone, dates · Z9 connectors, opinions, work, help |
 | **2D** | Z10 relationships, small talk, learner lifelines · Z11 extras · Z12 settling in |
