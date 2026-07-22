@@ -1144,6 +1144,15 @@ defines `trip`, so any language can get one by adding the same field.
   frames (…kothay? / …ache? / amake … dao / … koto?) that generate most of what
   a visitor needs, so the page teaches production, not just a phrase list.
   `note` is the only field that may contain HTML (`<b>` only).
+  **Section titles are PLAIN and short** (Ruan, July 2026 — "who you are talking
+  to, I feel like that can be better"): the same professional-register rule the
+  course node titles follow. Descriptive standard names — Being polite, Sentence
+  patterns, Getting around, Directions, At the hotel, Getting help, Conversation
+  — never writerly ones ("Who you are talking to", "Four frames that do
+  everything", "Phrases that open doors" were all retitled). The flavour belongs
+  in the one-line `d` subtitle, which is hidden on phones anyway. Short titles
+  also keep every mobile section header to a single 43px line. Retitles are
+  audio-neutral.
 - **Engine** (index.html, next to the alphabet flashcards): `buildTrip()`
   renders `#trip-root`, `paintTripTab()` hides the tab when `LANG.trip` is
   absent (same pattern as `paintUnlock`), both called from `applyBranding`;

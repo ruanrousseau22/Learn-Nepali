@@ -3492,7 +3492,7 @@ const BN_TRIP={
      ['দাদা','dada','brother — to a man'],
      ['দিদি','didi','sister — to a woman'],
    ]},
-  {id:'polite',t:'Who you are talking to',d:'Bengali has two words for you',
+  {id:'polite',t:'Being polite',d:'Bengali has two words for you',
    note:'With anyone you have just met use <b>apni</b> আপনি — its verbs end in <b>-en</b> (kemon achh<b>en</b>). <b>tumi</b> তুমি is for friends and children. Getting this one choice right is most of sounding polite.',
    lines:[
      ['আপনি','apni','you (polite)'],
@@ -3515,7 +3515,7 @@ const BN_TRIP={
      ['বাংলা বলতে পারি','bangla bolte pari','I can speak Bangla'],
      ['ভালো থেকো','bhalo theko','stay well'],
    ]},
-  {id:'patterns',t:'Four frames that do everything',d:'Swap the noun and you have hundreds of sentences',
+  {id:'patterns',t:'Sentence patterns',d:'Swap the noun and you have hundreds of sentences',
    note:'Nearly everything practical is one of four frames: <b>X kothay?</b> where is X · <b>X achhe?</b> do you have X · <b>X din</b> give me X · <b>X koto?</b> how much. Drop any noun in and it works.',
    lines:[
      ['কোথায়','kothay','where'],
@@ -3548,7 +3548,7 @@ const BN_TRIP={
      ['টাকা','taka','money / rupees'],
      ['কত টাকা?','koto taka','how many taka?'],
    ]},
-  {id:'ride',t:'Taxis, autos & the metro',d:'Getting across the city',
+  {id:'ride',t:'Getting around',d:'Taxis, autos and the metro',
    note:'Ask the fare BEFORE you get in — <b>bhara koto?</b>. Yellow taxis should run the meter: <b>mitare jaben?</b>. Autos run fixed shared routes, so you simply name the destination.',
    lines:[
      ['যাবেন?','jaben','will you go?'],
@@ -3564,7 +3564,7 @@ const BN_TRIP={
      ['থামুন','thamun','please stop'],
      ['কখন ছাড়বে?','kokhon chharbe','when does it leave?'],
    ]},
-  {id:'way',t:'Finding your way',d:'Left, right and how far',
+  {id:'way',t:'Directions',d:'Left, right and how far',
    note:'Point and ask <b>X kothay?</b>. If you catch only one word of the answer, <b>ban</b> is left and <b>dan</b> is right.',
    lines:[
      ['বাঁ দিকে','ban dike','to the left'],
@@ -3608,7 +3608,7 @@ const BN_TRIP={
      ['দোকান','dokan','shop'],
      ['ব্যাস','bas','that is all'],
    ]},
-  {id:'stay',t:'Where you are staying',d:'Rooms, keys and wi-fi',
+  {id:'stay',t:'At the hotel',d:'Rooms, keys and wi-fi',
    note:'<b>achhe?</b> on the end turns any noun into a question: <b>ghor achhe?</b> is a room available, <b>waiphai achhe?</b> is there wi-fi.',
    lines:[
      ['হোটেল','hotel','hotel'],
@@ -3620,7 +3620,7 @@ const BN_TRIP={
      ['গরম','gorom','hot'],
      ['ঠিক আছে','thik achhe','that is fine'],
    ]},
-  {id:'trouble',t:'If something goes wrong',d:'Few words, kept simple',
+  {id:'trouble',t:'Getting help',d:'The words to have ready',
    note:'Keep these ready and hope not to need them. <b>shahajjo korun</b> is the one to say clearly if you need help.',
    lines:[
      ['সাহায্য করুন','shahajjo korun','please help'],
@@ -3632,7 +3632,7 @@ const BN_TRIP={
      ['হারিয়ে গেছি','hariye gechhi','I am lost'],
      ['পুলিশ','pulish','police'],
    ]},
-  {id:'connect',t:'Phrases that open doors',d:'The ones people light up at',
+  {id:'connect',t:'Conversation',d:'Ask people to slow down, and say what you think',
    note:'These change how a trip feels. Bengalis are proud of the language and genuinely delighted when a visitor tries it — however badly.',
    lines:[
      ['আস্তে বলুন','aste bolun','please speak slowly'],
