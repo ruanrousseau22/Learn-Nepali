@@ -668,8 +668,20 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .trip-line .en{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
 .trip-line .spk{position:absolute;right:9px;top:11px;width:16px;height:16px;opacity:.42}
 .trip-line:hover .spk{opacity:.85}
-.tc-card .q{font-size:19px;font-weight:700;color:var(--ink);padding:0 10px}
-.tc-card .d{margin-top:10px;font-size:30px;line-height:1.3}
+/* trip flashcards — the Review flip card, prompting in English */
+.tc-modal{max-width:560px}
+.tc-modal .srs-ascent{margin-top:16px}
+.tc-modal h3{text-align:center}
+.tc-flip .flip-face{padding:26px 24px}
+.tc-en{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-size:30px;font-weight:600;letter-spacing:-.02em;color:var(--ink);line-height:1.18;z-index:2;text-wrap:balance}
+.tc-na{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic';font-size:34px;font-weight:500;line-height:1.35;color:var(--ink);display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;z-index:2}
+.tc-gloss{margin-top:12px;font-size:13.5px;color:var(--ink-soft);opacity:.8;z-index:2}
+.tc-flip+#tc-action .grades{max-width:400px;margin-left:auto;margin-right:auto}
+.ac-pick.tc-all{grid-column:1/-1}
+@media(max-width:600px){
+  .tc-en{font-size:25px}
+  .tc-na{font-size:28px}
+}
 @media(max-width:600px){
   .trip-sec{padding:15px 15px 12px}
   .trip-lines{grid-template-columns:1fr}
@@ -1484,7 +1496,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   </div>
 </div>
 <div class="modal-bg" id="tripcards-modal">
-  <div class="modal ac-modal">
+  <div class="modal tc-modal">
     <button class="close" onclick="closeTripCards()" aria-label="Close">×</button>
     <div id="tc-stage"></div>
   </div>
@@ -1854,31 +1866,64 @@ function buildTrip(){
           +'<span class="en">'+l[2]+'</span>'
           +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></button>';}).join('')
       +'</div></div>';}).join('');}
-let tcDeck=[],tcFlipped=false;
+let tcDeck=[],tcFlipped=false,tcDone=0,tcTotal=0;
 function openTripCards(){document.getElementById('tripcards-modal').classList.add('show');document.body.style.overflow='hidden';tcMenu();}
-function closeTripCards(){document.getElementById('tripcards-modal').classList.remove('show');document.body.style.overflow='';stopAudio();}
+function closeTripCards(){document.getElementById('tripcards-modal').classList.remove('show');document.body.style.overflow='';tcDeck=[];stopAudio();}
 function tcMenu(){const st=document.getElementById('tc-stage');const T=LANG&&LANG.trip;if(!T)return;
+  tcDeck=[];
   const all=T.sections.reduce(function(a,s){return a+s.lines.length;},0);
-  st.innerHTML='<h3>Trip flashcards</h3><p class="ac-sub">You see the English, say the Bengali out loud, then flip to check — you will hear it too. Anything you miss comes back until the deck is clear.</p>'
+  st.innerHTML='<h3>Trip flashcards</h3><p class="ac-sub">You see the English, say the '+LANG.name+' out loud, then flip to check &mdash; you will hear it too. Anything you miss comes back until the deck is clear.</p>'
     +'<div class="ac-picks">'
     +T.sections.map(function(s,i){return '<button class="ac-pick" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'" onclick="tcStart('+i+')"><span class="t">'+s.t+'</span><span class="n">'+s.lines.length+' cards</span></button>';}).join('')
-    +'<button class="ac-pick" style="--zacc:#5B6FA0" onclick="tcStart(-1)"><span class="t">Everything</span><span class="n">'+all+' cards</span></button>'
+    +'<button class="ac-pick tc-all" style="--zacc:var(--crimson)" onclick="tcStart(-1)"><span class="t">Everything</span><span class="n">'+all+' cards</span></button>'
     +'</div>';}
 function tcStart(i){const T=LANG.trip;
   const src=(i<0)?T.sections.reduce(function(a,s){return a.concat(s.lines);},[]):T.sections[i].lines;
-  tcDeck=src.slice().sort(function(){return Math.random()-.5;});tcRender();}
+  tcDeck=src.slice().sort(function(){return Math.random()-.5;});
+  tcTotal=tcDeck.length;tcDone=0;tcRender();}
 function tcRender(){const st=document.getElementById('tc-stage');
-  if(!tcDeck.length){st.innerHTML='<div class="ac-done">'+artMascot('cheer')+'</div><h3 style="text-align:center">Deck cleared!</h3><p class="ac-sub" style="text-align:center">Every card marked got-it. Well done.</p><div class="ac-row"><button class="btn btn-ghost" onclick="tcMenu()">Another deck</button><button class="btn btn-primary" onclick="closeTripCards()">Done</button></div>';return;}
+  if(!tcDeck.length){
+    st.innerHTML='<div class="srs-stage"><div class="srs-badge" style="margin-bottom:8px">'+artMascot('cheer')+'</div>'
+      +'<h3 style="text-align:center">Deck cleared</h3>'
+      +'<p class="srs-sum-sub">'+tcTotal+' card'+(tcTotal===1?'':'s')+' said out loud</p>'
+      +'<div class="ac-row"><button class="reveal-btn ghost" onclick="tcMenu()">Another deck</button>'
+      +'<button class="reveal-btn" onclick="closeTripCards()">Done</button></div></div>';
+    return;}
   tcFlipped=false;const c=tcDeck[0];
-  st.innerHTML='<div class="ac-count">'+tcDeck.length+(tcDeck.length===1?' card':' cards')+' left</div>'
-    +'<button class="ac-card tc-card" id="tc-card" onclick="tcFlip()"><div class="q">'+c[2]+'</div><div class="d deva" id="tc-d"></div><div class="r" id="tc-r">tap to flip</div></button>'
-    +'<div class="ac-row"><button class="btn btn-ghost" onclick="tcGrade(false)">&#8635; Again</button><button class="btn btn-primary" onclick="tcGrade(true)">Got it &#10003;</button></div>';}
+  const prog=tcTotal?Math.round(tcDone/tcTotal*100):0;
+  st.innerHTML='<div class="srs-stage">'
+    +'<div class="srs-ascent"><div class="srs-track"><div class="srs-fill" style="width:'+prog+'%"></div><div class="srs-summit"></div></div>'
+    +'<div class="srs-count">'+tcDone+' / '+tcTotal+' cleared &middot; '+tcDeck.length+' to go</div></div>'
+    +'<div class="flip tc-flip" id="tc-flip" onclick="tcFlip()"><div class="flip-inner">'
+      +'<div class="flip-face flip-front"><div class="ridge-clip">'+RIDGE_SVG+'</div>'
+        +'<div class="srs-eyebrow">Say it in '+LANG.name+'</div>'
+        +'<div class="tc-en">'+c[2]+'</div>'
+        +'<div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
+      +'<div class="flip-face flip-back">'
+        +'<div class="tc-na deva">'+c[0]+'<button class="spk" aria-label="Play audio" onclick="event.stopPropagation();speak(\''+c[0]+'\')">'+spkSVG()+'</button></div>'
+        +'<div class="rom">'+c[1]+'</div><div class="tc-gloss">'+c[2]+'</div></div>'
+    +'</div></div>'
+    +'<div id="tc-action"><button class="reveal-btn ghost" onclick="event.stopPropagation();tcFlip()">Show answer</button></div></div>';}
 function tcFlip(){const c=tcDeck[0];if(!c)return;
   if(tcFlipped){speak(c[0]);return;}
-  tcFlipped=true;document.getElementById('tc-d').textContent=c[0];
-  document.getElementById('tc-r').textContent=c[1];
-  document.getElementById('tc-card').classList.add('flipped');speak(c[0]);}
-function tcGrade(ok){const c=tcDeck.shift();if(!ok&&c)tcDeck.push(c);tcRender();}
+  tcFlipped=true;
+  const f=document.getElementById('tc-flip');if(f)f.classList.add('flipped');
+  speak(c[0]);
+  document.getElementById('tc-action').innerHTML='<div class="grades">'
+    +'<button class="grade hard" onclick="event.stopPropagation();tcGrade(false)">Again<span class="gi">comes back</span></button>'
+    +'<button class="grade easy" onclick="event.stopPropagation();tcGrade(true)">Got it<span class="gi">done</span></button>'
+    +'</div><div class="srs-kbd">1 &middot; 2 &nbsp;or&nbsp; A &middot; G</div>';}
+function tcGrade(ok){const c=tcDeck.shift();if(!c)return;
+  if(ok)tcDone++;else tcDeck.push(c);
+  tcRender();}
+/* keyboard, only while the trip deck is open — Space reveals, then 1/2 or A/G */
+document.addEventListener('keydown',function(e){
+  const m=document.getElementById('tripcards-modal');
+  if(!m||!m.classList.contains('show')||!tcDeck.length)return;
+  if(!tcFlipped){if(e.code==='Space'||e.code==='Enter'){e.preventDefault();tcFlip();}return;}
+  if(e.code==='Digit1'||e.key==='a'||e.key==='A'){e.preventDefault();tcGrade(false);}
+  else if(e.code==='Digit2'||e.key==='g'||e.key==='G'||e.code==='Space'||e.code==='Enter'){e.preventDefault();tcGrade(true);}
+});
 /* in-app confirm dialog — replaces native confirm() so it matches the app on every device */
 let cfOnOk=null;
 function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').textContent=title;document.getElementById('cf-msg').textContent=msg;

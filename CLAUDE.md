@@ -1121,8 +1121,12 @@ defines `trip`, so any language can get one by adding the same field.
   absent (same pattern as `paintUnlock`), both called from `applyBranding`;
   `show()` reroutes `trip`→`home` when the pack has none and `trip`→`fstory` in
   faith mode. Flashcards are `openTripCards`/`tcMenu`/`tcStart`/`tcRender`/
-  `tcFlip`/`tcGrade` over `#tripcards-modal`, mirroring the alphabet deck
-  (misses requeue; not SRS, so the Review deck stays vocab-only).
+  `tcFlip`/`tcGrade` over `#tripcards-modal`. The card is the **REVIEW flip
+  card** (`.flip`/`.flip-inner`/`.flip-front`/`.flip-back` + `RIDGE_SVG`, the
+  `.srs-ascent` progress track, `.grades` buttons, Space-then-1/2 keyboard) —
+  Ruan asked for it to match Review, so reuse those classes rather than styling
+  a new card. Grading is still just requeue-or-drop, not SM-2: the Review deck
+  stays vocab-only.
   **The prompt side is ENGLISH** — a traveller needs to PRODUCE Bengali, so the
   card shows the English, you say it, then flip to reveal script + roman +
   audio. That is the opposite of the alphabet deck and deliberate.

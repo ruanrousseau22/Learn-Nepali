@@ -3466,7 +3466,7 @@ const BN_LESSONS=[].concat(BN_Z1,BN_Z2,BN_Z3,BN_Z4,BN_Z5,BN_Z6,BN_Z7,BN_Z8,BN_Z9
 const BN_TRIP={
   title:'Short trip',
   native:'অল্প দিনের সফর',
-  intro:'Two weeks in Kolkata. Everything here is something you will actually say — ordering tea, stopping a taxi, asking a price, saying thank you properly. Tap any line to hear it.',
+  intro:'Everything here is something you will actually say in Kolkata — ordering tea, stopping a taxi, asking a price, saying thank you properly. Tap any line to hear it.',
   sections:[
   {id:'first',t:'First words',d:'The handful you will use every day',
    note:'In Kolkata you address people by kinship, not by <b>sir</b> or <b>madam</b>. A man roughly your age is <b>দাদা</b> dada, a woman <b>দিদি</b> didi. Add it to almost anything and you sound warm rather than abrupt.',
