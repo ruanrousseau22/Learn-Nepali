@@ -1211,6 +1211,23 @@ defines `trip`, so any language can get one by adding the same field.
   muted; roman is never gated on `S.rom`. Section `note`s follow the same order —
   they used to lead with script and were rewritten to lead with roman (notes are
   never spoken, so that was audio-neutral).
+- **Visual design** (July 2026, Ruan asked for the page to look better — it was
+  14 identical white bars): each section carries an **icon** from `TRIP_ICON`,
+  a map in index.html keyed by SECTION ID (not stored in the pack), so any future
+  trip pack reusing ids like `first`/`eat`/`shop` gets icons for free; unknown
+  ids fall back to a circle. They are single-path stroke glyphs inheriting
+  `currentColor`, sitting in a `.trip-ic` well tinted with the section accent —
+  **the well fills solid with a white glyph when the section is open**, which is
+  what makes the open card read as open. The number chip was REPLACED by the
+  icon (a phrasebook is a directory, not a sequence). The count moved to an
+  accent pill, phrase tiles gained a hover lift plus an accent edge, and the
+  speaker became a circular button that fills on hover.
+  **`trouble` deliberately uses a LIFE RING, never a medical cross** — the
+  no-cross-shapes rule applies to UI glyphs too. Two glyphs had to be redrawn
+  after looking at them at 40px: a signpost read as a music note (now a turn
+  arrow) and the first car was mushy (now roof-over-body plus two clear wheels).
+  **Judge icons blown up to ~40px before shipping; at 19px everything looks
+  plausible.**
 - **Mobile section headers stay ONE compact bar** (Ruan, July 2026: on a phone
   they "get really big and look a little fat"). The culprit was a mobile rule
   that gave the section description its own row (`flex-basis:100%`), taking the

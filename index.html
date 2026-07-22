@@ -653,56 +653,65 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 }
 
 /* ===== SHORT TRIP page ===== */
+/* a phrasebook, not a course: roman leads, script is the quiet third line */
 .pb-btnrow{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start}
 .pb-btnrow .pb-btn{margin-top:11px}
-/* a phrasebook, not a course: roman leads, script is the quiet third line */
-.trip-sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden}
-.trip-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;text-align:left;padding:15px 18px;background:none;border:0;cursor:pointer;color:var(--ink)}
-.trip-head:hover{background:color-mix(in srgb,var(--zacc) 5%,transparent)}
-.trip-head .tn{flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:12.5px;font-weight:800;color:#fff;background:var(--zacc)}
+
+.trip-sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden;transition:border-color .18s,box-shadow .18s}
+.trip-sec:hover{box-shadow:0 6px 18px -8px rgba(0,0,0,.16)}
+.trip-sec.open{border-color:color-mix(in srgb,var(--zacc) 34%,var(--line))}
+.trip-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%;text-align:left;padding:13px 18px;background:none;border:0;cursor:pointer;color:var(--ink);transition:background .18s}
+.trip-head:hover{background:color-mix(in srgb,var(--zacc) 6%,transparent)}
+.trip-sec.open .trip-head{background:color-mix(in srgb,var(--zacc) 7%,transparent)}
+.trip-ic{flex:none;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:color-mix(in srgb,var(--zacc) 14%,transparent);color:var(--zacc);transition:background .18s,color .18s}
+.trip-ic svg{width:19px;height:19px}
+.trip-sec.open .trip-ic{background:var(--zacc);color:#fff}
 .trip-head .tt{font-weight:800;font-size:17px;letter-spacing:-.01em}
 .trip-head .td{font-size:13px;color:var(--ink-soft)}
-.trip-head .tcount{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-soft);opacity:.75}
-.trip-head .tchev{flex:none;width:9px;height:9px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:rotate(45deg);margin:-4px 4px 0 2px;opacity:.6;transition:transform .2s}
+.trip-head .tcount{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--zacc);background:color-mix(in srgb,var(--zacc) 11%,transparent);padding:3px 9px;border-radius:100px}
+.trip-head .tchev{flex:none;width:9px;height:9px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:rotate(45deg);margin:-4px 4px 0 2px;opacity:.55;transition:transform .2s}
 .trip-sec.open .tchev{transform:rotate(-135deg);margin-top:3px}
-.trip-body{display:none;padding:0 18px 16px}
+.trip-body{display:none;padding:2px 18px 16px}
 .trip-sec.open .trip-body{display:block}
-.trip-note{font-size:14.5px;line-height:1.55;color:var(--ink-soft);background:color-mix(in srgb,var(--zacc) 7%,transparent);border-left:3px solid color-mix(in srgb,var(--zacc) 55%,transparent);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:12px}
+.trip-note{font-size:14.5px;line-height:1.55;color:var(--ink-soft);background:color-mix(in srgb,var(--zacc) 7%,transparent);border-left:3px solid color-mix(in srgb,var(--zacc) 55%,transparent);border-radius:0 10px 10px 0;padding:11px 15px;margin-bottom:13px}
 .trip-note b{color:var(--ink);font-weight:700}
 
 .trip-lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:8px}
-.trip-line{position:relative;text-align:left;background:var(--paper);border:1px solid var(--line-soft);border-radius:12px;padding:10px 34px 10px 12px;cursor:pointer;display:block;width:100%;color:var(--ink)}
-.trip-line:hover{border-color:var(--zacc);background:color-mix(in srgb,var(--zacc) 6%,var(--paper))}
+.trip-line{position:relative;text-align:left;background:var(--paper);border:1px solid var(--line-soft);border-radius:13px;padding:11px 40px 11px 13px;cursor:pointer;display:block;width:100%;color:var(--ink);transition:.16s}
+.trip-line:before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:3px;border-radius:0 3px 3px 0;background:var(--zacc);opacity:0;transition:opacity .16s}
+.trip-line:hover{border-color:color-mix(in srgb,var(--zacc) 45%,var(--line));background:var(--card);transform:translateY(-1px);box-shadow:0 5px 14px -8px rgba(0,0,0,.25)}
+.trip-line:hover:before{opacity:1}
 .trip-line .rm{display:block;font-size:17px;line-height:1.3;font-weight:700;letter-spacing:-.01em}
 .trip-line .en{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:1px}
-.trip-line .bn{display:block;font-size:14px;color:var(--ink-soft);opacity:.72;margin-top:3px}
-.trip-line .spk{position:absolute;right:9px;top:11px;width:16px;height:16px;opacity:.42}
-.trip-line:hover .spk{opacity:.85}
+.trip-line .bn{display:block;font-size:14px;color:var(--ink-soft);opacity:.68;margin-top:3px}
+.trip-line .spk,.tf-say .spk{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--zacc) 10%,transparent);color:var(--zacc);opacity:.75;transition:.16s}
+.trip-line .spk svg,.tf-say .spk svg{width:14px;height:14px}
+.trip-line:hover .spk,.tf-say:hover .spk{opacity:1;background:var(--zacc);color:#fff}
 
 /* the four frames: pick a noun, hear the whole sentence */
 .tframes{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:10px;margin-bottom:14px}
-.tframe{border:1px solid var(--line);border-radius:var(--r-md);padding:12px 13px 11px;background:linear-gradient(180deg,color-mix(in srgb,var(--zacc) 7%,var(--card)),var(--card) 70%)}
+.tframe{border:1px solid color-mix(in srgb,var(--zacc) 22%,var(--line));border-radius:var(--r-md);padding:12px 13px 11px;background:linear-gradient(180deg,color-mix(in srgb,var(--zacc) 9%,var(--card)),var(--card) 68%)}
 .tf-cap{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--zacc);margin-bottom:8px}
-.tf-say{position:relative;display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:10px 32px 10px 12px;cursor:pointer;color:var(--ink)}
-.tf-say:hover{border-color:var(--zacc)}
+.tf-say{position:relative;display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 40px 11px 13px;cursor:pointer;color:var(--ink);transition:.16s}
+.tf-say:hover{border-color:color-mix(in srgb,var(--zacc) 50%,var(--line));box-shadow:0 5px 14px -8px rgba(0,0,0,.25)}
 .tf-say .rm{display:block;font-size:18px;font-weight:700;letter-spacing:-.01em}
 .tf-say .en{display:block;font-size:13px;color:var(--ink-soft);margin-top:1px}
-.tf-say .bn{display:block;font-size:14px;color:var(--ink-soft);opacity:.72;margin-top:3px}
-.tf-say .spk{position:absolute;right:9px;top:11px;width:16px;height:16px;opacity:.5}
+.tf-say .bn{display:block;font-size:14px;color:var(--ink-soft);opacity:.68;margin-top:3px}
 .tf-items{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
 .tf-item{font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:100px;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.14s}
 .tf-item:hover{border-color:var(--zacc);color:var(--ink)}
-.tf-item.on{background:var(--zacc);border-color:var(--zacc);color:#fff}
+.tf-item.on{background:var(--zacc);border-color:var(--zacc);color:#fff;box-shadow:0 3px 9px -4px var(--zacc)}
 
 @media(max-width:600px){
-  .trip-head{padding:11px 13px;flex-wrap:nowrap;gap:9px}
-  .trip-body{padding:0 13px 13px}
+  .trip-head{padding:11px 13px;flex-wrap:nowrap;gap:10px}
+  .trip-body{padding:2px 13px 13px}
   .trip-lines{grid-template-columns:1fr}
-  .trip-head .tn{width:21px;height:21px;font-size:11.5px;border-radius:7px}
+  .trip-ic{width:30px;height:30px;border-radius:9px}
+  .trip-ic svg{width:17px;height:17px}
   .trip-head .tt{font-size:15.5px;min-width:0;line-height:1.25}
   .trip-head .td{display:none}
-  .trip-head .tcount{font-size:11.5px}
-  .trip-note{font-size:13.5px;padding:9px 12px}
+  .trip-head .tcount{font-size:11px;padding:2px 8px}
+  .trip-note{font-size:13.5px;padding:10px 13px}
   .tframes{grid-template-columns:1fr}
 }
 /* trip flashcards — the Review flip card, prompting in English */
@@ -1886,6 +1895,26 @@ function acGrade(ok){const c=acDeck.shift();if(!ok&&c)acDeck.push(c);acRender();
    situations, the few grammar frames that generate the rest, every line
    tappable for audio, and its own flashcard deck that prompts in ENGLISH so
    you practise producing Bengali rather than just recognising it. */
+const TRIP_ICON={
+  first:'M20 15a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z',
+  polite:'M9 11.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z|M2.5 20c0-3.4 2.9-5.6 6.5-5.6s6.5 2.2 6.5 5.6|M16.5 11a2.6 2.6 0 1 0 0-5.2|M17.5 14.6c2.4.4 4 2.5 4 5.4',
+  meet:'M12 12.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8z|M4 21c0-4 3.6-6.4 8-6.4s8 2.4 8 6.4',
+  patterns:'M4.5 7.5h15|M4.5 12h4.6|M11.6 12h7.9|M4.5 16.5h11',
+  hear:'M4 9.5v5h3l4.5 3.5v-12L7 9.5H4z|M15.5 9.8a3.4 3.4 0 0 1 0 4.8|M18.2 7.2a7 7 0 0 1 0 10',
+  numbers:'M3 7h18v10H3z|M12 14.4a2.4 2.4 0 1 0 0-4.8 2.4 2.4 0 0 0 0 4.8z|M6 10v0|M18 14v0',
+  ride:'M5 15.4v-2.4l2-4.4h10l2 4.4v2.4|M4.6 13h14.8|M8 18.6a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z|M16 18.6a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z',
+  way:'M6 20.5v-8.8a4.2 4.2 0 0 1 4.2-4.2H18|M14.2 3.6 18.6 7.5l-4.4 3.9',
+  eat:'M4 11.5h16a8 8 0 0 1-16 0z|M12 20h4|M9.2 8.2c0-1.2 1-1.6 1-2.8|M13.4 8.2c0-1.2 1-1.6 1-2.8',
+  guest:'M3.6 11.2 12 4.6l8.4 6.6|M6 10.2V20h12v-9.8|M10 20v-5h4v5',
+  shop:'M6.2 8h11.6L19 20H5L6.2 8z|M9 8V6.2a3 3 0 0 1 6 0V8',
+  stay:'M3 17.5v-4A2.5 2.5 0 0 1 5.5 11h13a2.5 2.5 0 0 1 2.5 2.5v4|M3 17.5V20|M21 17.5V20|M3 11V7.5|M7.5 11V9.6a1.4 1.4 0 0 1 1.4-1.4h2.6',
+  trouble:'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z|M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4z|M5.7 5.7 8.7 8.7|M18.3 5.7l-3 3|M5.7 18.3l3-3|M18.3 18.3l-3-3',
+  connect:'M17.5 11.6a4.6 4.6 0 0 1-4.6 4.6H9.4L5.4 19v-3.4a4.6 4.6 0 0 1-2-3.8V9a4.6 4.6 0 0 1 4.6-4.6h4.8A4.6 4.6 0 0 1 17.5 9z|M20.6 8.4a3.6 3.6 0 0 1 1.4 2.9v2.2a3.6 3.6 0 0 1-1.4 2.9'};
+function tripIcon(id){
+  const d=TRIP_ICON[id]||'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z';
+  return '<span class="trip-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+    +'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
+    +d.split('|').map(function(p){return '<path d="'+p+'"/>';}).join('')+'</svg></span>';}
 const TRIP_ACC=['#1F8A5B','#2E6FA8','#C07A14','#8A4FA0','#B5543E','#127C74'];
 function paintTripTab(){const t=document.querySelector('.tab[data-v="trip"]');
   if(t)t.style.display=(LANG&&LANG.trip)?'':'none';}
@@ -1908,7 +1937,7 @@ function buildTrip(){
     const open=(sec.id==='patterns');
     return '<div class="trip-sec'+(open?' open':'')+'" id="tsec-'+sec.id+'" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'">'
       +'<button class="trip-head" aria-expanded="'+open+'" onclick="tripToggle(\''+sec.id+'\')">'
-        +'<span class="tn">'+(i+1)+'</span>'
+        +tripIcon(sec.id)
         +'<span class="tt">'+sec.t+'</span><span class="td">'+sec.d+'</span>'
         +'<span class="tcount">'+sec.lines.length+'</span><span class="tchev" aria-hidden="true"></span></button>'
       +'<div class="trip-body">'
