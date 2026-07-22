@@ -340,9 +340,11 @@ like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 
 **Nepali hero extras (July 2026).** The left approach is ONE lower capped peak at
 (566,166) whose flank EASES OFF in stages rather than running as a single
-diagonal: a steep, near-angular face of 1.44 straight under the summit, then
-0.34, then 0.15, then the horizon. Both halves matter — the face has to look like
-rock, not a rounded hill, while the tail is what settles the range into the flat.
+diagonal: a steep, near-angular face of 1.38 running the full 66 units from the
+summit down to y=232, then 0.14, 0.06, and the horizon. Both halves matter — the
+face has to look like rock, not a rounded hill, and it has to CARRY DOWN a long
+way before easing, or the flattening starts too high and the peak reads squat.
+The tail is what finally settles the range into the flat.
 That progression is the whole point — a lower mountain that lets the range settle
 gradually into the flat. A shallow dip then leads into the main climb to
 (675,132). An earlier two-foothill version was busier, and a single straight
