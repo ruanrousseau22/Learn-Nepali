@@ -71,28 +71,15 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path class="mid" d="M0 320 L0 288 Q200 282 400 287 Q600 292 800 286 Q1000 280 1200 287 L1200 320 Z"/>'
 /* near: the green foreground */
 +'<g class="near"><path d="M0 320 L0 302 Q180 294 380 302 Q580 310 780 300 Q980 291 1200 300 L1200 320 Z"/></g>'
-/* trees scattered through the clearing */
-+'<path fill="var(--bark)" d="M114 312 L114 262 L122 262 L122 312 Z"/>'
-+'<circle class="near" cx="118" cy="254" r="19"/>'
-+'<path fill="var(--bark)" d="M242 312 L242 266 L250 266 L250 312 Z"/>'
-+'<circle class="near" cx="246" cy="258" r="17"/>'
-+'<path fill="var(--bark)" d="M388 312 L388 260 L396 260 L396 312 Z"/>'
-+'<circle class="near" cx="392" cy="252" r="20"/>'
-+'<path fill="var(--bark)" d="M532 312 L532 266 L540 266 L540 312 Z"/>'
-+'<circle class="near" cx="536" cy="258" r="17"/>'
-+'<path fill="var(--bark)" d="M660 312 L660 262 L668 262 L668 312 Z"/>'
-+'<circle class="near" cx="664" cy="254" r="19"/>'
-+'<path fill="var(--bark)" d="M936 312 L936 258 L944 258 L944 312 Z"/>'
-+'<circle class="near" cx="940" cy="250" r="21"/>'
-/* coconut palms on the right */
-+'<g fill="var(--bark)" aria-hidden="true">'
-+'<path d="M1074 304 C1080 266 1074 234 1084 206 L1091 208 C1081 236 1088 268 1082 306 Z"/>'
-+'<path d="M1166 304 C1160 276 1166 252 1158 230 L1164 228 C1172 252 1166 278 1172 304 Z"/>'
-+'</g>'
-+'<g class="near">'
-+'<path d="M1087 206 C1066 192 1042 189 1023 197 C1044 196 1066 202 1084 211 Z M1087 206 C1106 190 1130 186 1150 193 C1130 195 1108 202 1090 211 Z M1087 206 C1078 186 1063 175 1043 173 C1063 182 1076 193 1084 208 Z M1087 206 C1096 186 1111 175 1131 173 C1111 182 1098 193 1090 208 Z M1087 206 C1085 184 1077 168 1063 159 C1075 172 1082 188 1084 206 Z"/>'
-+'<path d="M1160 230 C1142 220 1122 218 1106 225 C1123 224 1142 228 1158 235 Z M1160 230 C1176 216 1196 212 1213 218 C1196 220 1177 226 1162 234 Z M1160 230 C1154 213 1142 203 1125 201 C1142 208 1153 218 1158 232 Z M1160 230 C1167 213 1179 204 1196 202 C1180 210 1169 220 1162 232 Z"/>'
-+'</g>'
+/* coconut palms scattered through the clearing — uneven spacing and size,
+   and nothing between x 700-1000 so the elephants stand against open sky */
++'<g transform="translate(110,246) scale(0.62)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(232,235) scale(0.7)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(372,250) scale(0.6)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(506,236) scale(0.78)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(640,245) scale(0.68)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(1052,201) scale(1.0)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(1160,222) scale(0.85)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
 /* two elephants out in the clearing */
 +'<g transform="translate(742,216)" aria-hidden="true">'
 +'<g fill="var(--slate)">'
@@ -134,7 +121,8 @@ const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'<path class="mid" d="M0 200 L0 180 Q300 174 600 180 Q900 185 1200 178 L1200 200 Z"/>'
 +'<g class="near"><path d="M0 200 L0 190 Q300 183 600 190 Q900 196 1200 190 L1200 200 Z"/></g>'
 /* a tree and a palm */
-+'<path fill="var(--bark)" d="M834 192 L834 168 L840 168 L840 192 Z"/><circle class="near" cx="837" cy="162" r="14"/>'
++'<g transform="translate(300,142) scale(0.5)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
++'<g transform="translate(660,146) scale(0.44)" aria-hidden="true">'+'<path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/>'+'<g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g>'+'</g>'
 +'<g fill="var(--bark)" aria-hidden="true"><path d="M1122 192 C1126 168 1122 148 1128 130 L1133 131 C1127 150 1132 170 1128 194 Z"/></g>'
 +'<g class="near"><path d="M1130 130 C1116 120 1100 118 1087 123 C1101 123 1116 127 1128 134 Z M1130 130 C1143 119 1159 116 1172 121 C1159 123 1144 128 1132 134 Z M1130 130 C1124 117 1115 109 1102 107 C1115 113 1124 121 1128 131 Z M1130 130 C1136 117 1145 109 1158 107 C1146 113 1137 121 1132 131 Z"/></g>'
 /* an elephant */

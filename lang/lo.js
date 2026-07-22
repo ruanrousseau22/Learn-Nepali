@@ -32,14 +32,14 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* swifts over the river */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M195 92 q6 -5 12 0 q6 -5 12 0"/><path d="M262 110 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* far: the karst towers of the Mekong — steep limestone, varied heights, right of the title */
-+'<path class="far" d="M0 252 Q150 247 300 250 Q450 245 600 249 Q680 246 730 244 '
-+'L742 244 L750 210 L758 188 L764 178 L772 194 L780 216 L790 244 '
-+'L798 244 L806 196 L814 162 L824 142 L834 164 L842 198 L852 244 '
-+'L860 244 L866 218 L872 202 L878 196 L886 214 L892 230 L900 244 '
-+'L908 244 L916 190 L924 152 L934 126 L944 150 L952 190 L962 244 '
-+'L970 244 L976 216 L982 198 L988 190 L996 208 L1002 228 L1010 244 '
-+'L1018 244 L1026 200 L1034 172 L1044 158 L1054 176 L1062 204 L1072 244 '
-+'Q1140 241 1200 244 L1200 320 L0 320 Z"/>'
++'<path class="far" d="M0 252 Q150 247 300 250 Q450 245 600 248 Q634 246 662 244 '
++'L670 244 L678 210 L686 188 L692 178 L700 194 L708 216 L718 244 '
++'L726 244 L734 196 L742 162 L752 142 L762 164 L770 198 L780 244 '
++'L788 244 L794 218 L800 202 L806 196 L814 214 L820 230 L828 244 '
++'L836 244 L844 190 L852 152 L862 126 L872 150 L880 190 L890 244 '
++'L898 244 L904 216 L910 198 L916 190 L924 208 L930 228 L938 244 '
++'L946 244 L954 200 L962 172 L972 158 L982 176 L990 204 L1000 244 '
++'Q1100 241 1200 244 L1200 320 L0 320 Z"/>'
 /* the Mekong itself — its own calm band, so the karsts read as mountains not river */
 +'<path fill="var(--water)" d="M0 252 Q300 248 600 251 Q900 247 1200 250 L1200 320 L0 320 Z"/>'
 /* calm current lines under the title */

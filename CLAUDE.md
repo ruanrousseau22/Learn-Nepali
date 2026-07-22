@@ -338,6 +338,16 @@ forward and the rear wheel is clearly LARGER — with two equal wheels it looks
 like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 `--wood` was too dark against the bank.
 
+**Reusable art pieces: draw once around a local origin, place with `transform`.**
+The Sinhala palms and elephants and the Bengali autos are each defined once with
+coordinates around (0,0) and then dropped in with
+`transform="translate(x,y) scale(s)"`. That keeps repeated objects identical, lets
+them vary in size for depth, and means a fix is a one-place edit. **Caveat:** the
+static art sweep reads raw path numbers, so a local-origin shape reports
+"geometry outside the canvas" (e.g. y −47..5) — that is a false positive, the
+transform puts it on screen. Check placement with a grounding calculation
+instead: `translate y + 100*scale` must land at or below the near-band surface.
+
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in
