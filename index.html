@@ -654,8 +654,6 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 
 /* ===== SHORT TRIP page ===== */
 /* a phrasebook, not a course: roman leads, script is the quiet third line */
-.pb-btnrow{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start}
-.pb-btnrow .pb-btn{margin-top:11px}
 
 .trip-sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden;transition:border-color .18s,box-shadow .18s}
 .trip-sec:hover{box-shadow:0 6px 18px -8px rgba(0,0,0,.16)}
@@ -723,7 +721,6 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .tc-rm{font-size:32px;font-weight:700;letter-spacing:-.02em;line-height:1.3;color:var(--ink);display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;z-index:2}
 .tc-na{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic';margin-top:11px;font-size:19px;font-weight:500;line-height:1.4;color:var(--ink-soft);opacity:.82;z-index:2}
 .tc-flip+#tc-action .grades{max-width:400px;margin-left:auto;margin-right:auto}
-.ac-pick.tc-all{grid-column:1/-1}
 @media(max-width:600px){
   .tc-en{font-size:25px}
   .tc-rm{font-size:27px}
@@ -1068,7 +1065,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab active" data-v="home" onclick="show('home')">Learn</button>
       <button class="tab" data-v="intensive" onclick="show('intensive')">Intensive</button>
       <button class="tab" data-v="alphabet" onclick="show('alphabet')">Alphabet</button>
-      <button class="tab" data-v="trip" onclick="show('trip')">Short trip</button>
+      <button class="tab" data-v="trip" onclick="show('trip')">Short-term</button>
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
       <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
       <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
@@ -1218,12 +1215,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       </g>
     </svg>
     <div class="pb-inner">
-      <h2>Short trip <span class="deva" id="trip-native">অল্প দিনের সফর</span></h2>
-      <p class="pb-sub" id="trip-intro"></p>
-      <div class="pb-btnrow">
-        <button class="pb-btn" onclick="openTripCards()">Trip flashcards</button>
-        <button class="pb-btn" onclick="tripShuffle()">Shuffle 10</button>
-      </div>
+      <h2><span id="trip-title">Short-term</span> <span class="deva" id="trip-native">অল্প দিনের সফর</span></h2>
+      <button class="pb-btn" onclick="openTripCards()">Shuffle 10</button>
     </div>
   </div>
   <div class="wrap section" style="padding-top:6px" id="trip-root"></div>
@@ -1930,8 +1923,8 @@ function buildTrip(){
   const root=document.getElementById('trip-root');if(!root)return;
   const T=LANG&&LANG.trip;
   if(!T){root.innerHTML='';return;}
+  const ttl=document.getElementById('trip-title');if(ttl&&T.title)ttl.textContent=T.title;
   const nat=document.getElementById('trip-native');if(nat)nat.textContent=T.native||'';
-  const intro=document.getElementById('trip-intro');if(intro)intro.textContent=T.intro||'';
   /* the sections, collapsed; the frame builder opens by default */
   let html=T.sections.map(function(sec,i){
     const open=(sec.id==='patterns');
@@ -1971,30 +1964,20 @@ function tfPick(fi,ii){const f=LANG.trip.frames[fi];tfSel[fi]=ii;
 function tripToggle(id){const el=document.getElementById('tsec-'+id);if(!el)return;
   const open=el.classList.toggle('open');
   const h=el.querySelector('.trip-head');if(h)h.setAttribute('aria-expanded',open);}
-function tripShuffle(){openTripCards();tcStart(-2);}
 let tcDeck=[],tcFlipped=false,tcDone=0,tcTotal=0;
-function openTripCards(){document.getElementById('tripcards-modal').classList.add('show');document.body.style.overflow='hidden';tcMenu();}
+function openTripCards(){document.getElementById('tripcards-modal').classList.add('show');document.body.style.overflow='hidden';tcStart();}
 function closeTripCards(){document.getElementById('tripcards-modal').classList.remove('show');document.body.style.overflow='';tcDeck=[];stopAudio();}
-function tcMenu(){const st=document.getElementById('tc-stage');const T=LANG&&LANG.trip;if(!T)return;
-  tcDeck=[];
-  const all=T.sections.reduce(function(a,s){return a+s.lines.length;},0);
-  st.innerHTML='<h3>Trip flashcards</h3><p class="ac-sub">You see the English, say the '+LANG.name+' out loud, then flip to check &mdash; you will hear it too. Anything you miss comes back until the deck is clear.</p>'
-    +'<div class="ac-picks">'
-    +T.sections.map(function(s,i){return '<button class="ac-pick" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'" onclick="tcStart('+i+')"><span class="t">'+s.t+'</span><span class="n">'+s.lines.length+' cards</span></button>';}).join('')
-    +'<button class="ac-pick tc-all" style="--zacc:var(--crimson)" onclick="tcStart(-1)"><span class="t">Everything</span><span class="n">'+all+' cards</span></button><button class="ac-pick tc-all" style="--zacc:var(--teal)" onclick="tcStart(-2)"><span class="t">Shuffle 10</span><span class="n">a quick run</span></button>'
-    +'</div>';}
-function tcStart(i){const T=LANG.trip;
-  const all=function(){return T.sections.reduce(function(a,s){return a.concat(s.lines);},[]);};
-  let src=(i<0)?all():T.sections[i].lines;
-  tcDeck=src.slice().sort(function(){return Math.random()-.5;});
-  if(i===-2)tcDeck=tcDeck.slice(0,10);   /* Shuffle 10 — a quick run on the plane */
+/* one deck: ten at random from the whole book */
+function tcStart(){const T=LANG.trip;
+  tcDeck=T.sections.reduce(function(a,s){return a.concat(s.lines);},[])
+    .sort(function(){return Math.random()-.5;}).slice(0,10);
   tcTotal=tcDeck.length;tcDone=0;tcRender();}
 function tcRender(){const st=document.getElementById('tc-stage');
   if(!tcDeck.length){
     st.innerHTML='<div class="srs-stage"><div class="srs-badge" style="margin-bottom:8px">'+artMascot('cheer')+'</div>'
       +'<h3 style="text-align:center">Deck cleared</h3>'
       +'<p class="srs-sum-sub">'+tcTotal+' card'+(tcTotal===1?'':'s')+' said out loud</p>'
-      +'<div class="ac-row"><button class="reveal-btn ghost" onclick="tcMenu()">Another deck</button>'
+      +'<div class="ac-row"><button class="reveal-btn ghost" onclick="tcStart()">Shuffle again</button>'
       +'<button class="reveal-btn" onclick="closeTripCards()">Done</button></div></div>';
     return;}
   tcFlipped=false;const c=tcDeck[0];

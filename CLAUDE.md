@@ -1130,15 +1130,19 @@ Decisions made (July 2026):
   `generate_audio.py --lang km` → `audio-km/`. Khmer grows zone by zone from
   here — next zones append to `KM_UNITS`/`KM_LESSONS` in `lang/km.js`.
 
-## Short trip (per-pack phrasebook — Bengali, July 2026)
+## Short-term (per-pack phrasebook — Bengali, July 2026)
 A FOURTH page next to Learn / Alphabet / Review, for someone visiting for a
 fortnight rather than studying a course. Built because Ruan's friends are going
 to Kolkata for two weeks. **It is a pack feature, not a Bengali special case** —
 the tab, the page and its flashcards all appear only when the active pack
 defines `trip`, so any language can get one by adding the same field.
-- **Data** lives in the pack: `trip:{title, native, intro, sections:[{id, t, d,
-  note?, lines:[[native, rom, english]]}]}` (`BN_TRIP` in `lang/bn.js`, just
-  before `registerPack`). Bengali ships **14 sections / 164 lines**: `first,
+- The page is called **Short-term** (Ruan, July 2026); the pack field, view id
+  and helpers all stay `trip`.
+- **Data** lives in the pack: `trip:{title, native, sections:[{id, t, d,
+  note?, lines:[[native, rom, english]]}], frames:[...]}` (`BN_TRIP` in
+  `lang/bn.js`, just before `registerPack`). `title` drives the h2 via
+  `#trip-title`. There is **no `intro`** — the sentence card under the heading
+  was removed at Ruan's request, along with the field. Bengali ships **14 sections / 164 lines**: `first,
   polite, meet, patterns, hear, numbers, ride, way, eat, guest, shop, stay,
   trouble, connect`. The `patterns` section is the load-bearing one — four
   sentence frames (X kothay? / X achhe? / X din / X koto?) that generate most of
@@ -1184,7 +1188,13 @@ defines `trip`, so any language can get one by adding the same field.
   absent (same pattern as `paintUnlock`), both called from `applyBranding`;
   `show()` reroutes `trip`→`home` when the pack has none and `trip`→`fstory` in
   faith mode. Flashcards are `openTripCards`/`tcMenu`/`tcStart`/`tcRender`/
-  `tcFlip`/`tcGrade` over `#tripcards-modal`. The card is the **REVIEW flip
+  `tcFlip`/`tcGrade` over `#tripcards-modal`. **There is ONE entry point** — the
+  header's "Shuffle 10" calls `openTripCards()`, which opens the modal and deals
+  ten at random from the whole book immediately. The per-section deck menu was
+  removed with the second button (July 2026), so `tcMenu` and the `tcStart(i)`
+  branches are gone and `tcStart()` takes no arguments. **`.ac-picks`/`.ac-pick`/
+  `.ac-sub` survive because the ALPHABET deck still uses them** — only `.tc-all`
+  was trip-only and deleted. The card is the **REVIEW flip
   card** (`.flip`/`.flip-inner`/`.flip-front`/`.flip-back` + `RIDGE_SVG`, the
   `.srs-ascent` progress track, `.grades` buttons, Space-then-1/2 keyboard) —
   Ruan asked for it to match Review, so reuse those classes rather than styling
@@ -1253,8 +1263,7 @@ defines `trip`, so any language can get one by adding the same field.
   lines); 8 of the 24 combinations were already recorded, so this cost 16 clips.
   A new language's frames must be noun-first or the `s` suffix model needs
   extending.
-- **Shuffle 10** (`tcStart(-2)`) deals ten random cards from the whole book —
-  a header button and a deck-menu tile.
+- **Shuffle 10** is the only deck and the only header button.
 
 ## Religious studies (faith mode — July 2026)
 A second app MODE next to language learning, chosen from the **mode dropdown
