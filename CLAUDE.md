@@ -1138,12 +1138,32 @@ the tab, the page and its flashcards all appear only when the active pack
 defines `trip`, so any language can get one by adding the same field.
 - **Data** lives in the pack: `trip:{title, native, intro, sections:[{id, t, d,
   note?, lines:[[native, rom, english]]}]}` (`BN_TRIP` in `lang/bn.js`, just
-  before `registerPack`). Bengali ships **12 sections / 120 lines**: `first,
-  polite, meet, patterns, numbers, ride, way, eat, shop, stay, trouble,
-  connect`. The `patterns` section is the load-bearing one — four sentence
-  frames (…kothay? / …ache? / amake … dao / … koto?) that generate most of what
-  a visitor needs, so the page teaches production, not just a phrase list.
+  before `registerPack`). Bengali ships **14 sections / 164 lines**: `first,
+  polite, meet, patterns, hear, numbers, ride, way, eat, guest, shop, stay,
+  trouble, connect`. The `patterns` section is the load-bearing one — four
+  sentence frames (X kothay? / X achhe? / X din / X koto?) that generate most of
+  what a visitor needs, so the page teaches production, not just a phrase list.
   `note` is the only field that may contain HTML (`<b>` only).
+- **Content review, July 2026 — findings worth not repeating.** (1) The page
+  taught "use `apni` with anyone you have just met" and then used **tumi** forms
+  with strangers (`tomar desh kothay`, `bhalo theko` x2). Sweep any new trip pack
+  for register consistency against its own politeness note. (2) Numbers stopped
+  at 10/20/100/1000, so a visitor could ASK a price and not decode the answer —
+  the tens 30-90 plus 150/200 were the gap, and Kolkata quotes in exactly that
+  range. (3) Every line was something the visitor SAYS; nothing prepared them for
+  the reply, hence the `hear` section. **Treat one-way production as the default
+  failure mode of a phrasebook.** (4) `bangla bolte pari` was downgraded to
+  `ektu bangla bolte pari` — claiming fluency invites a torrent of Bengali.
+  (5) **স before a vowel is `sh` in this pack** (আসি = ashi), but আসুন/বসুন had
+  been written `asun`/`bosun`; now `ashun`/`boshun`. (6) The rom scheme collapses
+  hard/soft t, producing two REAL homographs — `shat` (সাত 7 / ষাট 60) and `ashi`
+  (আসি goodbye / আশি 80). They cannot be romanized apart, so the **gloss** must
+  carry the disambiguation. (7) The `X koto?` frame had `দাম` price as an item,
+  generating the tautology "How much is the price?"; replaced with `এটা` this.
+- **`guest` exists because of who this was built for** — a short-term team is
+  hosted and fed constantly, and Bengali hospitality expects a refusal to take
+  about three tries. `arektu?` (what they will be asked) and `pet bhore gechhe`
+  (the answer that works) are daily-use, not decoration.
   **Section titles are PLAIN and short** (Ruan, July 2026 — "who you are talking
   to, I feel like that can be better"): the same professional-register rule the
   course node titles follow. Descriptive standard names — Being polite, Sentence
@@ -1171,8 +1191,11 @@ defines `trip`, so any language can get one by adding the same field.
   `pack.trip.sections[].lines[][0]` — **appended AFTER the SRS seed**, so every
   existing strings file stayed byte-identical (all 7 others still `--check`
   MATCH). 116 of the 120 lines were already recorded course vocabulary, which is
-  why only **4 new clips** were needed (মিটারে যাবেন?, অটো, বাথরুম কোথায়?,
-  বিল দিন); `audio_strings_bn.json` 1380 → 1384, manifest 1381 keys.
+  why only 4 new clips were needed at launch; the July 2026 content pass added
+  27 more. `audio_strings_bn.json` is now **1427 strings / manifest 1424 keys**
+  (the 3 bare signs ং ঃ ঁ still fall back to device TTS). **The frame builder's
+  assembled sentences are spoken too** — the extractor walks
+  `trip.frames[].items[][0]+f.s` after the trip lines.
   **Reuse that trick when writing a trip pack for another language** — draft the
   lines out of the pack's existing vocabulary wherever the natural phrasing
   allows and the audio is nearly free.
