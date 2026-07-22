@@ -338,6 +338,16 @@ forward and the rear wheel is clearly LARGER — with two equal wheels it looks
 like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 `--wood` was too dark against the bank.
 
+**A flat peak makes a spread-out snow cap — lift the peak, don't shrink the cap.**
+Cap width is forced by the slopes: `width = (lx-ax)*d/(ly-ay) + (rx-ax)*d/(ry-ay)`,
+so a peak only ~20px above its neighbours produces a 90px smear of snow. The
+Nepali BAND was the worst offender (caps 55, 91 and 92 wide). Peaks were lifted —
+hero 955→118 and 1080→134, band 805→68, 965→66, 1120→84 — which brought every cap
+into a consistent 38–46 and gave the range a sharper skyline. **Check cap widths,
+not just flushness, whenever a ridge changes**; anything over ~52 means the peak
+underneath is too flat. Remember the hero exists as 3 verbatim copies and the band
+as 4.
+
 **Reusable art pieces: draw once around a local origin, place with `transform`.**
 The Sinhala palms and elephants and the Bengali autos are each defined once with
 coordinates around (0,0) and then dropped in with

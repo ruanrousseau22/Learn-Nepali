@@ -32,21 +32,19 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* swifts over the river */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M195 92 q6 -5 12 0 q6 -5 12 0"/><path d="M262 110 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* far: the karst towers of the Mekong — steep limestone, varied heights, right of the title */
-+'<path class="far" d="M0 252 Q150 247 300 250 Q450 245 600 248 Q634 246 662 244 '
-+'L670 244 L678 210 L686 188 L692 178 L700 194 L708 216 L718 244 '
-+'L726 244 L734 196 L742 162 L752 142 L762 164 L770 198 L780 244 '
-+'L788 244 L794 218 L800 202 L806 196 L814 214 L820 230 L828 244 '
-+'L836 244 L844 190 L852 152 L862 126 L872 150 L880 190 L890 244 '
-+'L898 244 L904 216 L910 198 L916 190 L924 208 L930 228 L938 244 '
-+'L946 244 L954 200 L962 172 L972 158 L982 176 L990 204 L1000 244 '
-+'Q1100 241 1200 244 L1200 320 L0 320 Z"/>'
++'<path class="far" d="M0 252 Q150 247 300 250 Q450 245 580 248 Q600 246 622 244 '
++'L630 244 L638 210 L646 188 L652 178 L660 194 L668 216 L678 244 '
++'L686 244 L694 196 L702 162 L712 142 L722 164 L730 198 L740 244 '
++'L748 244 L754 218 L760 202 L766 196 L774 214 L780 230 L788 244 '
++'L796 244 L804 190 L812 152 L822 126 L832 150 L840 190 L850 244 '
++'L858 244 L864 216 L870 198 L876 190 L884 208 L890 228 L898 244 '
++'L906 244 L914 200 L922 172 L932 158 L942 176 L950 204 L960 244 '
++'Q1080 241 1200 244 L1200 320 L0 320 Z"/>'
 /* the Mekong itself — its own calm band, so the karsts read as mountains not river */
 +'<path fill="var(--water)" d="M0 252 Q300 248 600 251 Q900 247 1200 250 L1200 320 L0 320 Z"/>'
 /* calm current lines under the title */
 +'<path class="snow" opacity=".3" d="M70 266 Q220 260 370 264 L368 270 Q220 264 74 272 Z"/>'
 +'<path class="snow" opacity=".3" d="M150 278 Q300 270 430 276 L428 282 Q300 274 154 284 Z"/>'
-/* a long-tail boat out on the open water */
-+'<g fill="var(--wood)" aria-hidden="true"><path d="M840 272 Q874 281 908 272 L902 266 L846 266 Z"/></g>'
 /* mid: the warm Mekong bank */
 +'<path class="mid" d="M0 320 L0 288 Q300 280 600 286 Q900 292 1200 282 L1200 320 Z"/>'
 /* Lao stilt house — pale walls, terracotta roof, teak posts & ladder */
@@ -79,8 +77,6 @@ const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'Q1060 142 1200 146 L1200 200 L0 200 Z"/>'
 /* the river band */
 +'<path fill="var(--water)" d="M0 152 Q300 149 600 151 Q900 148 1200 150 L1200 200 L0 200 Z"/>'
-/* longtail boat on the water (fine detail) */
-+'<g class="art-detail" fill="var(--wood)" aria-hidden="true"><path d="M986 163 Q1010 170 1038 163 L1032 157 L992 157 Z"/></g>'
 +'<path class="mid" d="M0 200 L0 176 Q300 168 600 174 Q900 180 1200 170 L1200 200 Z"/>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/>'
 +'<path d="M1130 190 C1128 172 1129 156 1127 142 L1131 142 C1133 156 1132 174 1134 190 Z M1144 190 C1144 174 1146 158 1145 144 L1149 144 C1150 158 1148 176 1148 190 Z"/>'

@@ -44,14 +44,14 @@ const MN_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path d="M1116 282 Q1116 256 1148 256 Q1180 256 1180 282 Z"/>'
 +'<path d="M1119 282 L1177 282 L1177 300 L1119 300 Z"/>'
 /* two more gers further out on the steppe — smaller for depth */
-+'<path d="M772 276 Q772 256 796 256 Q820 256 820 276 Z"/>'
-+'<path d="M775 276 L817 276 L817 296 L775 296 Z"/>'
-+'<path d="M792 256 L792 250 L800 250 L800 256 Z"/>'
-+'<path d="M718 280 Q718 263 738 263 Q758 263 758 280 Z"/>'
-+'<path d="M721 280 L755 280 L755 294 L721 294 Z"/>'
++'<path d="M648 280 Q648 248 688 248 Q728 248 728 280 Z"/>'
++'<path d="M651 280 L725 280 L725 302 L651 302 Z"/>'
++'<path d="M684 248 L684 240 L692 240 L692 248 Z"/>'
++'<path d="M570 284 Q570 256 601 256 Q632 256 632 284 Z"/>'
++'<path d="M573 284 L629 284 L629 300 L573 300 Z"/>'
 +'</g>'
 /* ger doors + felt bands */
-+'<path fill="var(--crimson)" d="M1040 300 L1040 280 L1056 280 L1056 300 Z M1142 300 L1142 286 L1154 286 L1154 300 Z M790 296 L790 284 L802 284 L802 296 Z M733 294 L733 285 L743 285 L743 294 Z"/>'
++'<path fill="var(--crimson)" d="M1040 300 L1040 280 L1056 280 L1056 300 Z M1142 300 L1142 286 L1154 286 L1154 300 Z M676 302 L676 286 L692 286 L692 302 Z M592 300 L592 288 L606 288 L606 300 Z"/>'
 +'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.6" opacity=".45" aria-hidden="true"><path d="M1010 262 Q1048 254 1086 262"/><path d="M1008 286 L1088 286"/><path d="M1121 270 Q1148 264 1175 270"/></g>'
 /* grazing horses (fine detail) */
 +'<g class="art-detail" fill="var(--hide)" aria-hidden="true">'
