@@ -338,15 +338,21 @@ forward and the rear wheel is clearly LARGER — with two equal wheels it looks
 like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 `--wood` was too dark against the bank.
 
-**Nepali hero extras (July 2026).** The range's left approach is a long gentle
-diagonal from the horizon (400,247) up to ONE lower capped peak at (566,166),
-then a shallow dip before the main climb to (675,132) — an earlier two-foothill
-version was busier and Ruan preferred the single mountain. All five peaks carry a
+**Nepali hero extras (July 2026).** The left approach is ONE lower capped peak at
+(566,166) whose flank EASES OFF in stages rather than running as a single
+diagonal: slopes of 0.73 near the summit, then 0.37, then 0.16, then the horizon.
+That progression is the whole point — a lower mountain that lets the range settle
+gradually into the flat. A shallow dip then leads into the main climb to
+(675,132). An earlier two-foothill version was busier, and a single straight
+diagonal lost the easing. All five peaks carry a
 cap; the lower one takes a smaller drop (11 vs 18–21) so its cap stays ~42 wide
 like the rest.
-Two YAKS graze at x≈176 and 292: **white fur** (`class="snow"`) with `--tyre`
-horns, hooves, muzzle and eye. They need a long low body with a deep shaggy skirt
-— a compact rounded one reads as a sheep.
+Two YAKS graze at x≈176 and 292. They need THREE tones to read, not one:
+**white coat** (`class="snow"`) for the shaggy body, **`--slate` face, legs and
+tail** so the animal separates from its own fur, and `--tyre` horns, hooves,
+muzzle and eye. All-white was flat and the white tail vanished against the sky.
+The body also has to be long and low with a deep shaggy skirt — a compact rounded
+one reads as a sheep.
 **The trees are deliberately NOT the fir/logo shape** (Ruan: they looked exactly
 like the site mark). They are broadleaf — a `--bark` trunk under a cluster of
 four `--tree` circles — and the left group sits at x 46–140, clear of the yaks.
