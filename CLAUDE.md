@@ -585,25 +585,65 @@ carried Amharic, Kinyarwanda and Luganda; those are dropped — the app serves
 Asian languages that are poorly resourced for learners. All eight shipped
 courses are Asian, and the next three are too.
 
-**Urdu (`lang/ur.js`) IN EARLY ACCESS — Zones 1-3 / 21 topics / 105 lessons**
-(July 2026, ROADMAP stage 2A). The app's SECOND right-to-left course. Written
-in **Nastaliq**, not the Naskh Pashto uses, so index.html carries a
-`:root[data-lang="ur"]` font block with `line-height:2.05` — verified in a
-real word-bank at 375px with no clipping. Z1 "The Script" teaches the script
-by SHAPE FAMILY (ب پ ت ٹ ث share one skeleton; dots decide), the retroflexes
-ٹ ڈ ڑ written doubled, the jeem family ج چ ح خ, and aspirates via do-chashmi
-he ھ. Z2 "Foundations" — assalaam alaikum, the aap/tum/tu ladder, hoon/hai/
-hain, numbers 1-10, courtesy with jee, introductions. Z3 "Building sentences"
-— **gender is the spine**: nouns are masculine or feminine and adjectives
-agree (achhaa larrkaa / achhee larrkee), SOV word order, nahin before the
-verb, in-situ question words, the `ke paas` have-pattern and `chaahiye`.
-Romanization documented at the top of `lang/ur.js`: aspirates kh/gh/ch/th/ph,
-retroflexes doubled tt/dd/rr, long vowels aa/ee/oo. **Known collision, and it
-is deliberate:** خ and کھ are both written `kh`, as are غ and گھ — standard
-learner practice, flagged in the Zone 1 note, and the audio carries the truth.
-Audio via `ur-PK-AsadNeural` (146 clips); extractor and generator both know
-`ur`. Content verified against Wikipedia "Urdu alphabet" and the Wikivoyage
-Urdu phrasebook. Zones 4-12 follow in ROADMAP stages 2B-2D.
+**Urdu (`lang/ur.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
+(July 2026, ROADMAP stages 2A-2D). The app's SECOND right-to-left course, and
+the first built with a GENERATOR: topics are authored as vocabulary + notes in
+`scratchpad/ur/content*.py` and `build.py` expands each into the house 5-lesson
+shape, with the validation rules as assertions so a bad exercise cannot be
+written. **Read the verification note below before treating the generator as a
+model for uz/jv.**
+
+Written in **Nastaliq**, not the Naskh Pashto uses, so index.html carries a
+`:root[data-lang="ur"]` font block with `line-height:2.05` — verified in a real
+word-bank at 375px with no clipping. Z1 "The Script" teaches by SHAPE FAMILY
+(ب پ ت ٹ ث share one skeleton; dots decide), the retroflexes ٹ ڈ ڑ written
+doubled, the jeem family, aspirates via do-chashmi he ھ. Z2 foundations
+(the aap/tum/tu ladder, hoon/hai/hain, 1-10, courtesy with jee). Z3 **gender is
+the spine** — nouns are m/f, adjectives agree, SOV, nahin before the verb,
+in-situ question words, `ke paas`, `chaahiye`. Z4 postpositions, family, town,
+food. Z5 numbers to 100, money, bargaining, the clock. Z6 colours, comparison,
+feelings, weather, body, health. Z7 past `thaa`, simple past, **the ergative
+ne** (recognition only), future `-gaa/-gee/-ge`, `saknaa`, `chaahiye` vs
+`parregaa`, `-iye` imperatives. Z8 transport, directions, tickets, hotel, phone,
+dates. Z9 connectors, opinions, work, likes, learner lifelines, help. Z10
+address terms, small talk, home, hospitality, plans, storytelling. Z11
+frequency, clothes, animals, nature, tastes, reading, little words. Z12 big
+numbers, errands, emergencies, wishes, duration, polite register, capstone.
+Romanization at the top of `lang/ur.js`. **Known deliberate collision:** خ and
+کھ are both `kh`, as are غ and گھ — standard learner practice, flagged in the
+Z1 note, audio carries the truth. Audio via `ur-PK-AsadNeural` (558 clips).
+
+### Urdu verification pass (July 2026) — READ THIS BEFORE BUILDING uz/jv
+Ruan challenged the build speed and was right to. The first pass researched only
+TWO sources and then generated 420 lessons; the structure validated but the
+content had not been checked. A proper pass then ran against Wikipedia
+"Urdu alphabet" and "Hindustani grammar", Wiktionary, Omniglot numbers, Rekhta
+and the Wikivoyage phrasebook. **Findings — all fixed:**
+- **ڈ was named `dde`.** Its real name is ڈال `ddaal` (Wiktionary, Wikipedia).
+  I had invented it by analogy with ٹے/ڑے, which really are -e names.
+- **"what time is it" was `kyaa baje hain`.** The standard is **`kitne baje
+  hain`** — literally how many have struck. Cost one clip to fix.
+- **موسیقی was romanized `moseeqi`**, matching neither Rekhta's `muusiiqii` nor
+  the common Roman Urdu `mausiqi`. Now `mausiqi`.
+- `peetaa`/`khaataa` were glossed as if they were dictionary forms; they are
+  habitual participles and are now labelled as such.
+- 11 gloss inconsistencies unified; 5 genuine homographs (چھ میں کیا بس تو) kept
+  with self-explaining glosses, the way the Bengali pack handles shat/ashi.
+- **The generator's uniformity was itself a defect.** Every topic had EXACTLY 5
+  vocabulary items — `{"5":84}` — where every other pack has a natural spread
+  (ne 4-10, km 5-12, si 4-10). At 403 words it was also the thinnest course in
+  the app. 59 items were added where content warranted it, giving 457 words and
+  a real spread `{5:49,6:15,7:16,8:4}`. **Let content decide topic size.**
+- The first generator also produced 20 single-type lessons and no listening in
+  `build`/`checkpoint`. Both fixed; li is now in 420/420 lessons at 18.5%.
+Verified correct and NOT changed: the habitual `-taa hoon`, the future
+`jaaoongaa/jaaoongee/jaayenge`, the ergative rules (perfective transitives only,
+verb agrees with the object, no ne with jaanaa/aanaa), `saknaa` with the bare
+stem, `chaahiye` vs `parregaa`, the `-iye` imperatives including the irregular
+deejiye/keejiye/peejiye/leejiye, `ke paas`, `pasand hai` agreeing with the thing
+liked, the causative `-waanaa`, `-e` for masculine plural AND polite address,
+derh/dhaai/saarhe for 1:30/2:30/3:30+, and all numbers 1-20, the tens, hazaar
+and laakh.
 
 **Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
 plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the

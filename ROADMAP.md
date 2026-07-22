@@ -215,7 +215,15 @@ eyeballed at desktop.
 
 ---
 
-## Phase 2 — Urdu (5 sessions)
+## Phase 2 — Urdu ✅ COMPLETE (July 2026)
+
+**Lesson for Phases 3 and 4 — do not repeat this.** The first pass generated all
+420 lessons off two research sources. The structure validated perfectly and the
+content was still wrong in places. **Research each zone's content BEFORE
+generating it, not after**, and treat a perfectly uniform vocabulary
+distribution as a defect rather than a feature — content should decide topic
+size. See the Urdu verification pass in CLAUDE.md for what that missed.
+
 
 Each language follows the Sinhala/Bengali staging: 12 zones, 84 topics, 420
 lessons, 5 lessons per topic (learn → recognize → build → mix → checkpoint).
@@ -236,10 +244,10 @@ and drives the sequence:
 | stage | content |
 |---|---|
 | **2A** ✅ | Z1 script (Nastaliq shape families, retroflexes ٹ ڈ ڑ, aspirates with do-chashmi he ھ, the ye family) · Z2 foundations (سلام, the aap/tum/tu ladder, gender in nouns, numbers, introductions) · Z3 the grammar engine (gender agreement, SOV, ہے/ہیں, نہیں, question words) |
-| **2B** | Z4 postpositions کو/سے/میں/پر + family + city + food · Z5 numbers, money, bargaining, clock · Z6 agreeing adjectives, colours, comparison, weather, body |
-| **2C** | Z7 past + **the ergative نے** + future گا/گی/گے + can سکنا · Z8 transport, directions, hotel, phone, dates · Z9 connectors, opinions, work, help |
-| **2D** | Z10 relationships, small talk, learner lifelines · Z11 extras · Z12 settling in |
-| **2E** | `extract_audio_strings.js ur` → `generate_audio.py --lang ur` → manifest → `--check`; SEO Course entry; catalog label; full validation |
+| **2B** ✅ | Z4 postpositions کو/سے/میں/پر + family + city + food · Z5 numbers, money, bargaining, clock · Z6 agreeing adjectives, colours, comparison, weather, body |
+| **2C** ✅ | Z7 past + **the ergative نے** + future گا/گی/گے + can سکنا · Z8 transport, directions, hotel, phone, dates · Z9 connectors, opinions, work, help |
+| **2D** ✅ | Z10 relationships, small talk, learner lifelines · Z11 extras · Z12 settling in |
+| **2E** ✅ | `extract_audio_strings.js ur` → `generate_audio.py --lang ur` → manifest → `--check`; SEO Course entry; catalog label; full validation |
 
 ## Phase 3 — Uzbek (5 sessions)
 
