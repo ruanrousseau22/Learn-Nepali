@@ -345,6 +345,11 @@ summit down to y=232, then 0.14, 0.06, and the horizon. Both halves matter — t
 face has to look like rock, not a rounded hill, and it has to CARRY DOWN a long
 way before easing, or the flattening starts too high and the peak reads squat.
 The tail is what finally settles the range into the flat.
+**Both ends of the range are shaped this way.** The right flank mirrors it: the
+last peak was pulled in from 1080 to (1056,138) to make room, then a 1.39 face
+down to y=202, easing through 0.60 and 0.29 to meet the horizon at y=246 on the
+canvas edge — the left horizon sits at 247, so the range settles symmetrically
+instead of running off the right edge high.
 That progression is the whole point — a lower mountain that lets the range settle
 gradually into the flat. A shallow dip then leads into the main climb to
 (675,132). An earlier two-foothill version was busier, and a single straight
