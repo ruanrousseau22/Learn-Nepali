@@ -636,6 +636,28 @@ and the Wikivoyage phrasebook. **Findings — all fixed:**
   a real spread `{5:49,6:15,7:16,8:4}`. **Let content decide topic size.**
 - The first generator also produced 20 single-type lessons and no listening in
   `build`/`checkpoint`. Both fixed; li is now in 420/420 lessons at 18.5%.
+**The curriculum-SEQUENCE pass (Ruan asked the right question: was the order
+researched, or just invented?).** It had been invented. Comparing against
+**Georgetown's Beginning Urdu** (Pien & Farooqui, 8 units / 42 lessons) and
+**Colloquial Urdu** (Bhatia & Koul, 5 script lessons + 10 units) found four real
+problems, all now fixed:
+- **The ergative was 3rd of 7 in Zone 7.** Georgetown puts the perfective and
+  ergative in Unit 8 of 8 — dead last — and Colloquial Urdu teaches future
+  before past. Both treat it as the hardest thing in the language. Zone 7 is now
+  thaa -> simple past -> future -> can -> must -> commands -> **ergative last**.
+  Topic ids are opaque so nobody's progress broke; only the content moved.
+- **The OBLIQUE CASE was never taught.** Georgetown gives it Unit 2. I taught
+  postpositions without ever saying the noun in front of one changes:
+  `kamraa` but `kamre mein`, `larrkaa` but `larrke ko`. Now taught in Z4 p1.
+- **The PRESENT CONTINUOUS was never taught.** Georgetown teaches it beside the
+  habitual in Unit 3. I taught only `-taa hoon`, yet used `ho rahee hai` in a
+  weather note without explaining it. `jaa rahaa hoon` is now taught in Z4 p7.
+- **The SUBJUNCTIVE was never taught.** Georgetown pairs it with the modals in
+  Unit 6. `kyaa main jaaoon?` is now taught in Z7 with must/should.
+**Standing rule this establishes: research how a language is actually TAUGHT
+before designing the zone order — not just what the grammar is.** The Burmese
+entry above already said this; Urdu ignored it and had to be corrected.
+
 Verified correct and NOT changed: the habitual `-taa hoon`, the future
 `jaaoongaa/jaaoongee/jaayenge`, the ergative rules (perfective transitives only,
 verb agrees with the object, no ne with jaanaa/aanaa), `saknaa` with the bare

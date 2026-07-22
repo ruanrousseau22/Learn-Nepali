@@ -217,12 +217,20 @@ eyeballed at desktop.
 
 ## Phase 2 — Urdu ✅ COMPLETE (July 2026)
 
-**Lesson for Phases 3 and 4 — do not repeat this.** The first pass generated all
-420 lessons off two research sources. The structure validated perfectly and the
-content was still wrong in places. **Research each zone's content BEFORE
-generating it, not after**, and treat a perfectly uniform vocabulary
-distribution as a defect rather than a feature — content should decide topic
-size. See the Urdu verification pass in CLAUDE.md for what that missed.
+**Two lessons for Phases 3 and 4 — do not repeat either.**
+
+1. **Research the content before generating it.** The first Urdu pass generated
+   420 lessons off two sources. The structure validated perfectly and the
+   content was still wrong. Treat a perfectly uniform vocabulary distribution
+   as a defect, not a feature — content should decide topic size.
+2. **Research how the language is actually TAUGHT before fixing the zone
+   order.** This is the step that was skipped entirely. For Uzbek and Javanese,
+   find the established beginner courses FIRST and compare their sequence
+   against the planned one. For Urdu that comparison — against Georgetown's
+   Beginning Urdu and Colloquial Urdu — moved the ergative from 3rd of 7 to
+   last, and surfaced three grammar topics that had simply been left out.
+   Candidate sources to look for: a university course (Georgetown, SOAS,
+   Indiana), a Colloquial/Teach Yourself title, and any FSI material.
 
 
 Each language follows the Sinhala/Bengali staging: 12 zones, 84 topics, 420
