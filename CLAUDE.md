@@ -347,9 +347,11 @@ way before easing, or the flattening starts too high and the peak reads squat.
 The tail is what finally settles the range into the flat.
 **Both ends of the range are shaped this way.** The right flank mirrors it: the
 last peak was pulled in from 1080 to (1056,138) to make room, then a 1.39 face
-down to y=202, easing through 0.60 and 0.29 to meet the horizon at y=246 on the
-canvas edge — the left horizon sits at 247, so the range settles symmetrically
-instead of running off the right edge high.
+carrying the full 92 units down to y=230 before easing through 0.24 and 0.17 to
+meet the horizon at y=246 on the canvas edge. The number that matters is where
+the FACE STOPS, not its slope — both flanks now run their face down to y≈230
+before any easing, which is what keeps the range from looking squat at either
+end.
 That progression is the whole point — a lower mountain that lets the range settle
 gradually into the flat. A shallow dip then leads into the main climb to
 (675,132). An earlier two-foothill version was busier, and a single straight
