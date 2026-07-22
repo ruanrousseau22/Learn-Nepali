@@ -257,7 +257,7 @@ and drives the sequence:
 | **2D** ✅ | Z10 relationships, small talk, learner lifelines · Z11 extras · Z12 settling in |
 | **2E** ✅ | `extract_audio_strings.js ur` → `generate_audio.py --lang ur` → manifest → `--check`; SEO Course entry; catalog label; full validation |
 
-## Phase 3 — Uzbek (5 sessions)
+## Phase 3 — Uzbek ✅ COMPLETE (July 2026)
 
 **Freebies to lean on as encouragement:** no gender, no articles, and weak-to-
 absent vowel harmony in standard Uzbek (unlike other Turkic languages).
@@ -269,11 +269,11 @@ and add Cyrillic as recognition only, late.
 
 | stage | content |
 |---|---|
-| **3A** | Z1 sounds & spelling (`oʻ gʻ sh ch ng`, the q/x/h contrasts, the no-gender freebie) · Z2 foundations · Z3 grammar engine (SOV, `-man/-san/-di`, `emas`/`yoʻq`, `-mi` questions) |
-| **3B** | Z4 the four cases + places + family · Z5 numbers, soʻm, bozor · Z6 adjectives, colours, weather |
-| **3C** | Z7 past/future/ability/necessity · Z8 transport, directions, staying · Z9 connectors, work, free time |
-| **3D** | Z10 home and small talk · Z11 extras · Z12 settling in (osh/plov, melons, the chaikhana as a secular teahouse) |
-| **3E** | audio, SEO, catalog, validation |
+| **3A** ✅ | Z1 sounds & spelling (`oʻ gʻ sh ch ng`, the q/x/h contrasts, the no-gender freebie) · Z2 foundations · Z3 grammar engine (SOV, `-man/-san/-di`, `emas`/`yoʻq`, `-mi` questions) |
+| **3B** ✅ | Z4 the four cases + places + family · Z5 numbers, soʻm, bozor · Z6 adjectives, colours, weather |
+| **3C** ✅ | Z7 past/future/ability/necessity · Z8 transport, directions, staying · Z9 connectors, work, free time |
+| **3D** ✅ | Z10 home and small talk · Z11 extras · Z12 settling in (osh/plov, melons, the chaikhana as a secular teahouse) |
+| **3E** ✅ | audio, SEO, catalog, validation |
 
 ## Phase 4 — Javanese (5 sessions)
 

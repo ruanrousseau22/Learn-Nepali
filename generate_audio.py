@@ -68,6 +68,12 @@ LANGS = {
         "outdir": "audio-ur",
         "voices": {"male": "ur-PK-AsadNeural", "female": "ur-PK-UzmaNeural"},
     },
+    # Uzbek — Latin script; see the latin:true note in lang/uz.js
+    "uz": {
+        "strings": "audio_strings_uz.json",
+        "outdir": "audio-uz",
+        "voices": {"male": "uz-UZ-SardorNeural", "female": "uz-UZ-MadinaNeural"},
+    },
     # religious studies (faith mode) — per-language story reader, same voice
     # as that language's course ("<code>f" pattern; skeletons have no strings
     # yet — generate only after a pack is translated)

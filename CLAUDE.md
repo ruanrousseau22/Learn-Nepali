@@ -667,6 +667,47 @@ liked, the causative `-waanaa`, `-e` for masculine plural AND polite address,
 derh/dhaai/saarhe for 1:30/2:30/3:30+, and all numbers 1-20, the tens, hazaar
 and laakh.
 
+**Uzbek (`lang/uz.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
+(July 2026, ROADMAP Phase 3). The app's **first Latin-script course**, so it is
+the first to use `latin:true` — see Phase 0. Verified live: `hasDeva('rahmat')`
+is true and `hasDeva('thank you')` is false, and the extracted string set
+contains no English glosses at all.
+
+**Sequence researched FIRST**, against Azimova's *Uzbek: An Elementary Textbook*
+(Georgetown/CeLCAR) and the Peace Corps Uzbek course — the step Urdu skipped.
+Azimova puts **commands and requests third**, so this course does too: they are
+the bare stem plus -ing, usable from day one.
+
+Uzbek-driven spine: ONE SET OF PERSON ENDINGS does two jobs (`men talabaman`
+I am a student, `men boraman` I go) so it is taught once, early; **possession is
+a suffix, not a word** (`kitobim` my book) and gets a whole zone, because Turkic
+marks it on the noun; the four cases `-ga -da -dan -ni` get another. Freebies
+worth saying aloud: no gender, no articles, and standard Uzbek has **lost vowel
+harmony**, so suffixes never shape-shift. Z1 sounds & spelling &middot; Z2
+foundations &middot; Z3 the sentence engine &middot; Z4 commands & courtesy
+&middot; Z5 possession & family &middot; Z6 cases & places &middot; Z7 numbers,
+money & food &middot; Z8 describing &middot; Z9 past, present & future &middot;
+Z10 out & about &middot; Z11 extras &middot; Z12 making it home (Navroʻz).
+Romanization documented at the top of `lang/uz.js`: it is a PRONUNCIATION
+respelling, not a transliteration (x -> kh, oʻ -> aw, gʻ -> gh). Audio via
+`uz-UZ-SardorNeural` (529 clips).
+
+**Two things this build caught, worth reusing:**
+- **Loanwords whose written form IS the English gloss** (bank, metro, taksi,
+  sport) made the mc prompt display its own answer. The generator now flips
+  those to the "Which one means X?" direction instead. Expect the same in
+  Javanese, which has many Indonesian and Dutch loans.
+- **Bare Cyrillic letters got no audio.** `uz-UZ-SardorNeural` returns nothing
+  for a lone Ў/Ғ/Қ/Ҳ/Ш. That was a content problem too — Cyrillic is
+  recognition-only, so it now lives in the topic NOTE (never spoken) and the
+  topic teaches sign words instead. **Never put a bare foreign-script character
+  in vocab if the voice cannot say it.**
+- **Never run two `generate_audio.py` jobs for the same language at once.** They
+  collide on the `.part` files and produce a manifest that disagrees with disk.
+
+**Next: Javanese** — NOT started. It needs its own sequence research and a real
+decision on ngoko vs krama before any authoring (see ROADMAP Phase 4).
+
 **Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
 plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the
 caveat that the only voice is IRANIAN Persian, so it must ship as Persian and
