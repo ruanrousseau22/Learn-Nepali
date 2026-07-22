@@ -64,6 +64,9 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
 - `generate_audio.py` — per-language edge-tts generator (see Audio)
 - `extract_audio_strings.js` — JXA extractor that regenerates a language's
   audio strings file from its pack (see Audio → Regenerating audio)
+- `ROADMAP.md` — the staged build plan for the next three courses (Urdu,
+  Uzbek, Javanese). **Read it before starting any of that work**; it carries
+  the phase order, the art specs and the Latin-script extractor fix.
 - `_redirects` — Netlify rules 301-ing sajilonepali.com → bhasaly.com
 - `og-image.png` + `og-card.svg` — the 1200×630 social share card (referenced by
   `og:image` / `twitter:card summary_large_image` in the head) and its editable
@@ -577,9 +580,27 @@ small-talk trio អាយុប៉ុន្មាន/រៀបការហើយ
   side gutters on `wrap section` elements — this was a real mobile bug).
 
 ## Multi-language expansion
-Researched roadmap (demand vs competition) — Phase 1: Nepali (done), Khmer
-(live), Amharic · Phase 2: Burmese (started July 2026 — Zone 1 live), Sinhala,
-Lao · Phase 3: Pashto, Mongolian, Kinyarwanda, Luganda.
+**Bhasaly is an ASIA-FOCUSED app** (Ruan, July 2026). The original roadmap
+carried Amharic, Kinyarwanda and Luganda; those are dropped — the app serves
+Asian languages that are poorly resourced for learners. All eight shipped
+courses are Asian, and the next three are too.
+
+**Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
+plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the
+caveat that the only voice is IRANIAN Persian, so it must ship as Persian and
+not be mislabelled Dari.
+
+**AUDIO IS THE GATE — check it before promising any language.** The pipeline is
+edge-tts, and a course with no clips is not shippable: no mainstream OS ships a
+voice for these languages either, so the device-TTS fallback is silent too.
+Verified July 2026 to have NO edge-tts voice, and therefore NOT buildable:
+**Tibetan, Punjabi (125M speakers!), Assamese, Odia, Sindhi, Kashmiri, Kyrgyz,
+Tajik, Turkmen, Dhivehi, Bhojpuri, Maithili, Kinyarwanda, Luganda**. Tibetan
+was researched in depth — the only options are Meta's `facebook/mms-tts-bod`
+(CC-BY-NC, so not licensable for the site), iFlytek's paid Chinese API, or
+Monlam AI in Dharamsala (no public API found). Do not re-investigate without
+new information. Check a candidate with:
+`python3 -m edge_tts --list-voices | grep '^<code>-'`
 
 **Where things stand / next up:**
 - **Sinhala (`lang/si.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
@@ -1949,7 +1970,7 @@ legible. Always sanity-check a suspicious number against a screenshot before
   Christian conviction — depicting temples is idolatry). Secular imagery only:
   landscapes, nature, homes, daily life, animals. No temples/pagodas/stupas/
   shrines/monks/prayer flags, however iconic (no Angkor Wat for Cambodia, no
-  stupas for Nepal, no rock churches for Amharic).
+  stupas for Nepal, no mosques or madrasas for Urdu or Uzbek, no candi for Javanese).
   - **Exception — national flags** (Ruan, July 2026): the `LANG_FLAGS`
     inline-SVG flags in the language switcher are exempt — a country's official
     flag is a factual state symbol, not devotional art. Cambodia's flag keeps
