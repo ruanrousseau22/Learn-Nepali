@@ -294,6 +294,34 @@ The Sinhala elephant was also redrawn at this point — body/head masses, a
 tapering trunk, a darker ear, an eye and a tusk — because once it stopped being
 a flat dark silhouette its shape had to actually read.
 
+**Snow caps: every peak gets one, anchored by maths (July 2026 round 2).** An
+audit comparing each `far` ridge's local minima against the `snow` shapes found
+the HEROES were already correct but both BANDS had an uncapped peak — ne/band
+(1120,106) and ps/band (964,92) — plus two ps/band caps overhanging by ~2px. All
+fixed. **When you touch a ridge, re-run the audit**: a cap is correct only when
+(a) every peak has one and (b) every cap point sits on or below the ridge, with
+base corners at `ax+(lx-ax)*d/(ly-ay)` and `ax+(rx-ax)*d/(ry-ay)`. Do not eyeball
+it, and remember the band is a separate ridge from the hero.
+
+**Sinhala art = TEA COUNTRY (July 2026, Ruan's second pass).** The elephant and
+the jagged blue ridge are GONE — he disliked both. It is now the up-country: tall
+soft overlapping hill shoulders (never jagged), a dawn mist band in the valley,
+a sunlit `mid` tea slope carrying three terrace contour lines, deep green
+foreground, and two coconut palms. `--water` was dropped from the si palette when
+the tank idea was cut, so si has no water colour any more (lo still does).
+Lesson from the iterations: **low flat bands read as nothing** — hill silhouettes
+need real height (up to y≈170) and they must OVERLAP to give depth.
+
+**Bengali art = keep it simple (July 2026, Ruan: "congested and overwhelming").**
+Removed the violet far-bank palm grove and the nouka entirely. What is left is a
+calm river scene: violet water with glints, golden bank, green delta, two
+coconut palms, banana leaves far left, and **two Kolkata autos** drawn once
+around a local origin and placed twice with `transform="translate() scale()"`.
+An auto only reads as a three-wheeler if the front wheel is SMALL and set
+forward and the rear wheel is clearly LARGER — with two equal wheels it looks
+like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
+`--wood` was too dark against the bank.
+
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in

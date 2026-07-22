@@ -46,35 +46,32 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M210 96 q6 -5 12 0 q6 -5 12 0"/><path d="M292 112 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
 /* far: the hazy far bank of the Hooghly — long, low, violet */
 +'<path class="far" d="M0 254 Q150 249 300 252 Q450 247 600 250 Q700 246 780 244 Q860 240 940 243 Q1040 238 1120 241 Q1170 239 1200 240 L1200 320 L0 320 Z"/>'
-/* a distant palm grove on the far bank, hazy and violet so it stays back */
-+'<g class="far" aria-hidden="true">'
-+'<path d="M986 244 Q984 218 990 200 L994 200 Q989 220 992 244 Z"/>'
-+'<path d="M992 202 Q976 192 962 196 Q976 182 992 192 Q998 178 1012 174 Q1002 186 996 196 Q1012 188 1026 196 Q1010 197 996 202 Q1006 209 1010 220 Q999 210 992 203 Z"/>'
-+'<path d="M1046 244 Q1044 222 1050 206 L1054 206 Q1049 224 1052 244 Z"/>'
-+'<path d="M1052 208 Q1038 199 1026 203 Q1038 190 1052 199 Q1057 186 1069 183 Q1060 194 1055 202 Q1069 195 1081 202 Q1067 203 1055 208 Q1064 214 1067 224 Q1058 215 1052 209 Z"/>'
-+'<path d="M1112 244 Q1110 226 1115 212 L1119 212 Q1115 228 1117 244 Z"/>'
-+'<path d="M1117 214 Q1105 206 1094 209 Q1105 198 1117 206 Q1121 195 1132 192 Q1124 201 1120 208 Q1132 202 1142 208 Q1130 209 1120 214 Q1127 219 1130 228 Q1122 220 1117 215 Z"/>'
-+'</g>'
 /* mid: the warm golden riverbank sweeping under the title */
 +'<path class="mid" d="M0 320 L0 284 Q200 276 400 281 Q600 286 800 280 Q1000 275 1200 281 L1200 320 Z"/>'
 /* water glints on the river, under the title */
 +'<path class="snow" opacity=".28" d="M90 258 Q240 252 390 256 L388 262 Q240 256 94 264 Z"/>'
 +'<path class="snow" opacity=".28" d="M180 270 Q330 262 470 268 L468 274 Q330 266 184 276 Z"/>'
-/* the nouka — a Bengali country boat, warm teak so it lifts off the violet water */
-+'<g aria-hidden="true">'
-+'<path fill="var(--wood)" d="M592 256 Q636 271 660 271 Q686 271 728 254 L723 265 Q686 281 660 281 Q632 281 597 266 Z"/>'
-+'<path fill="var(--mtn-mid)" d="M628 264 Q660 244 692 264 Z"/>'
++'<path class="snow" opacity=".22" d="M300 250 Q430 245 560 248 L559 253 Q430 250 303 256 Z"/>'
+/* two Kolkata autos on the bank — green-and-yellow three-wheelers.
+   Drawn once around a local origin so the same shape can be placed twice. */
++'<g transform="translate(842,227)" aria-hidden="true">'
++'<path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/>'
++'<path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/>'
++'<path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/>'
++'<circle fill="var(--snow)" cx="8" cy="36" r="3"/>'
++'<circle fill="var(--tyre)" cx="14" cy="52" r="6"/><circle fill="var(--tyre)" cx="70" cy="51" r="9"/>'
++'<circle fill="var(--mtn-mid)" cx="14" cy="52" r="2.2"/><circle fill="var(--mtn-mid)" cx="70" cy="51" r="3.2"/>'
 +'</g>'
-/* a Kolkata auto-rickshaw pulled up on the bank */
-+'<g aria-hidden="true">'
-+'<path fill="var(--tree)" d="M862 240 Q862 235 868 235 L916 235 Q922 235 922 240 L922 249 L862 249 Z"/>'
-+'<path fill="var(--orb)" d="M866 249 L920 249 Q927 249 927 257 L927 272 Q927 278 921 278 L872 278 Q863 278 861 269 L859 259 Q858 250 866 249 Z"/>'
-+'<path fill="var(--tyre)" opacity=".45" d="M872 253 L900 253 L900 266 L872 266 Z"/>'
-+'<circle fill="var(--tyre)" cx="874" cy="279" r="6.5"/><circle fill="var(--tyre)" cx="914" cy="279" r="7.5"/>'
-+'<circle fill="var(--mtn-mid)" cx="874" cy="279" r="2.4"/><circle fill="var(--mtn-mid)" cx="914" cy="279" r="2.8"/>'
++'<g transform="translate(964,243) scale(0.7)" aria-hidden="true">'
++'<path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/>'
++'<path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/>'
++'<path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/>'
++'<circle fill="var(--snow)" cx="8" cy="36" r="3"/>'
++'<circle fill="var(--tyre)" cx="14" cy="52" r="6"/><circle fill="var(--tyre)" cx="70" cy="51" r="9"/>'
++'<circle fill="var(--mtn-mid)" cx="14" cy="52" r="2.2"/><circle fill="var(--mtn-mid)" cx="70" cy="51" r="3.2"/>'
 +'</g>'
-/* coconut palms on the near bank, right of the title zone */
-+'<g fill="var(--wood)" aria-hidden="true">'
+/* coconut palms on the near bank — pale bark, green fronds */
++'<g fill="var(--bark)" aria-hidden="true">'
 +'<path d="M752 300 Q748 250 758 212 L764 212 Q758 252 762 300 Z"/>'
 +'<path d="M804 300 Q802 264 808 238 L813 238 Q810 266 812 300 Z"/>'
 +'</g>'
@@ -96,7 +93,7 @@ const BN_BAND='<circle class="orb-glow" cx="1046" cy="86" r="34"/><circle class=
 /* small nouka */
 +'<g aria-hidden="true"><path fill="var(--mtn-mid)" d="M840 160 Q866 167 896 167 Q924 167 944 159 Q938 170 920 173 L862 173 Q848 170 840 160 Z"/><path fill="var(--tree)" d="M888 146 Q898 151 900 160 L890 167 Q884 156 888 146 Z"/></g>'
 /* palm (fine detail) */
-+'<g class="art-detail" aria-hidden="true"><path fill="var(--wood)" d="M1102 186 Q1100 160 1106 142 L1110 142 Q1108 162 1109 186 Z"/><path fill="var(--tree)" d="M1107 144 Q1092 136 1078 139 Q1094 128 1108 136 Q1114 124 1128 121 Q1118 132 1111 139 Q1126 134 1138 141 Q1122 141 1111 144 Q1119 151 1123 161 Q1112 152 1106 145 Z"/></g>'
++'<g class="art-detail" aria-hidden="true"><path fill="var(--bark)" d="M1102 186 Q1100 160 1106 142 L1110 142 Q1108 162 1109 186 Z"/><path fill="var(--tree)" d="M1107 144 Q1092 136 1078 139 Q1094 128 1108 136 Q1114 124 1128 121 Q1118 132 1111 139 Q1126 134 1138 141 Q1122 141 1111 144 Q1119 151 1123 161 Q1112 152 1106 145 Z"/></g>'
 +'<g class="near"><path d="M0 188 Q300 170 600 180 Q900 190 1200 180 L1200 200 L0 200 Z"/></g>';
 
 /* --- mascot: Bengal tiger cub (moods: happy / cheer / oops) --- */

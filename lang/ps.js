@@ -70,8 +70,9 @@ const PS_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 const PS_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
 +'<path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 '
 +'L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>'
-+'<path class="snow" d="M898 74 L912 92 L904 90 L898 84 L890 91 L884 89 Z"/>'
-+'<path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>'
++'<path class="snow" d="M898 74 L914 92 L906 90 L898 84 L890 92 L884 92 Z"/>'
++'<path class="snow" d="M830 88 L845 102 L838 100 L831 95 L824 103 L818 102 Z"/>'
++'<path class="snow" d="M964 92 L979 106 L972 104 L965 99 L958 107 L942 106 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>'
 /* poplar + pomegranate tree */
 +'<g aria-hidden="true"><path fill="var(--tree)" d="M1122 192 Q1116 164 1122 134 Q1125 124 1128 134 Q1134 164 1128 192 Z"/><path fill="var(--wood)" d="M1080 192 L1080 178 L1085 178 L1085 192 Z"/><circle fill="var(--tree)" cx="1082" cy="170" r="12"/></g>'

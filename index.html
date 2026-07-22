@@ -56,7 +56,7 @@
   --tree:#2C5F3A;
   /* material colours for scenery objects — foliage stays --tree, everything
      else takes the colour of what it actually is */
-  --wood:#8A5A33; --hide:#8C6239; --slate:#79858E; --tyre:#343A40;
+  --wood:#8A5A33; --bark:#A97C50; --hide:#8C6239; --slate:#79858E; --tyre:#343A40;
   --r-sm:8px; --r-md:14px; --r-lg:20px; --shadow:0 1px 2px rgba(27,36,48,0.05), 0 10px 26px -16px rgba(20,40,80,0.30);
 }
 [data-theme="dark"]{
@@ -66,7 +66,7 @@
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
   --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
   --tree:#4FA06A;
-  --wood:#B57E4A; --hide:#AD8055; --slate:#8E9AA3; --tyre:#4A5058;
+  --wood:#B57E4A; --bark:#C89A6C; --hide:#AD8055; --slate:#8E9AA3; --tyre:#4A5058;
 }
 /* per-language scenery palette (set via data-lang by applyArt) —
    Cambodia: golden dawn sky, jungle haze, Angkor stone, paddy green */
@@ -79,8 +79,8 @@
    bare Burmese (note titles, note prose) must keep Noto Sans Myanmar in-stack */
 :root[data-lang="my"] .exq,:root[data-lang="my"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Myanmar',sans-serif}
 /* Sri Lanka: tea-country green over a south-coast sea */
-:root[data-lang="si"]{--sky1:#F7E9CF;--sky2:#FBF6EA;--mtn-far:#8FB4CC;--mtn-mid:#D3A566;--mtn-near:#2E8E57;--orb:#F2A93B;--water:#BBD6E2}
-:root[data-theme="dark"][data-lang="si"]{--sky1:#17202E;--sky2:#0E1218;--mtn-far:#2A3E52;--mtn-mid:#574430;--mtn-near:#1A5C3C;--orb:#EDE0C2;--water:#1B2C3A}
+:root[data-lang="si"]{--sky1:#F7E9CF;--sky2:#FBF6EA;--mtn-far:#8FB4CC;--mtn-mid:#D3A566;--mtn-near:#2E8E57;--orb:#F2A93B}
+:root[data-theme="dark"][data-lang="si"]{--sky1:#17202E;--sky2:#0E1218;--mtn-far:#2A3E52;--mtn-mid:#574430;--mtn-near:#1A5C3C;--orb:#EDE0C2}
 /* Laos: Mekong dusk — tan karsts, forested banks */
 :root[data-lang="lo"]{--sky1:#F6DFC0;--sky2:#FBF3E3;--mtn-far:#94A9C4;--mtn-mid:#CB9C5F;--mtn-near:#2F7E4F;--orb:#EFA13E;--water:#C2D3E1}
 :root[data-theme="dark"][data-lang="lo"]{--sky1:#251E30;--sky2:#151119;--mtn-far:#35486A;--mtn-mid:#55452B;--mtn-near:#1C5238;--orb:#E9DFC8;--water:#1F2E3E}
@@ -1085,6 +1085,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
       <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <polygon class="snow" points="1090 114 1120 106 1146 114 1139 112 1132 118 1121 111 1108 116"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1124,6 +1125,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
       <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <polygon class="snow" points="1090 114 1120 106 1146 114 1139 112 1132 118 1121 111 1108 116"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1151,6 +1153,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
       <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <polygon class="snow" points="1090 114 1120 106 1146 114 1139 112 1132 118 1121 111 1108 116"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">
@@ -1299,6 +1302,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 78 L875 116 L965 90 L1045 126 L1120 106 L1200 130 L1200 200 L0 200 Z"/>
       <polygon class="snow" points="784 97 805 78 825 96 817 94 811 101 801 93"/>
       <polygon class="snow" points="946 108 965 90 983 107 976 105 970 112 961 104"/>
+      <polygon class="snow" points="1090 114 1120 106 1146 114 1139 112 1132 118 1121 111 1108 116"/>
       <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
       <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
       <g class="near">

@@ -61,62 +61,53 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* gulls over the water */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".65" aria-hidden="true"><path d="M190 96 q6 -5 12 0 q6 -5 12 0"/><path d="M262 114 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: the misty central highlands — a defined ridge, right of the title */
-+'<path class="far" d="M0 248 Q150 245 300 247 Q450 244 600 246 Q680 244 722 242 '
-+'L754 216 L790 234 L836 198 L884 226 L934 184 L988 216 L1042 178 L1096 208 L1150 192 L1200 202 '
+/* far: the hill country — tall soft shoulders, high on the right like the up-country */
++'<path class="far" d="M0 250 Q140 244 280 248 Q420 240 560 246 Q650 250 706 244 '
++'Q756 194 832 172 Q908 151 976 176 Q1036 198 1094 188 Q1150 178 1200 186 '
 +'L1200 320 L0 320 Z"/>'
-/* the Indian Ocean — its own band, so the highlands stop reading as cloud */
-+'<path fill="var(--water)" d="M0 252 Q300 249 600 251 Q900 248 1200 250 L1200 320 L0 320 Z"/>'
-/* an oruwa — the outrigger canoe, out on the water (fine detail) */
-+'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--wood)" d="M586 256 Q602 261 620 256 L616 251 L590 251 Z"/></g>'
-/* mid: the warm sandy shore */
-+'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
-/* the tea hill — terraced slopes of the up-country, warm against the blue ridge */
-+'<path class="mid" d="M902 320 L902 286 Q968 258 1042 250 Q1116 242 1174 256 Q1190 260 1200 264 L1200 320 Z"/>'
-+'<g class="snow" opacity=".22" aria-hidden="true">'
-+'<path d="M934 282 Q1000 258 1070 252 L1071 257 Q1002 263 937 287 Z"/>'
-+'<path d="M952 296 Q1020 270 1096 262 L1097 267 Q1022 275 955 301 Z"/>'
-+'<path d="M972 310 Q1046 282 1126 274 L1127 279 Q1048 287 975 315 Z"/>'
+/* the mist that sits in these valleys at dawn */
++'<g class="snow" opacity=".3" aria-hidden="true">'
++'<ellipse cx="900" cy="232" rx="250" ry="12"/><ellipse cx="1120" cy="222" rx="120" ry="9"/>'
 +'</g>'
-/* soft wave lines under the title */
-+'<path class="snow" opacity=".3" d="M70 264 Q220 258 370 262 L368 268 Q220 262 74 270 Z"/>'
-+'<path class="snow" opacity=".3" d="M150 276 Q300 268 430 274 L428 280 Q300 272 154 282 Z"/>'
-/* a wild elephant on the shore — Sri Lanka's own */
-+'<g fill="var(--slate)" aria-hidden="true">'
-+'<path d="M656 299 L656 276 L667 276 L667 299 Z M675 299 L675 276 L686 276 L686 299 Z M700 299 L700 276 L711 276 L711 299 Z M716 299 L716 276 L727 276 L727 299 Z"/>'
-+'<ellipse cx="688" cy="268" rx="46" ry="22"/>'
-+'<ellipse cx="733" cy="272" rx="19" ry="18"/>'
-+'<path d="M744 280 Q757 288 755 296 Q754 302 748 301 Q744 300 746 295 Q748 289 739 285 Z"/>'
-+'<path d="M643 260 Q634 266 636 280 L640 280 Q638 268 646 264 Z"/>'
+/* a nearer shoulder, overlapping — depth comes from the overlap */
++'<path class="far" opacity=".6" d="M600 320 L600 272 Q690 232 782 226 Q874 220 940 246 Q998 268 1062 262 Q1132 256 1200 268 L1200 320 Z"/>'
+/* mid: the sunlit tea slope */
++'<path class="mid" d="M0 320 L0 298 Q160 294 340 298 Q520 302 664 290 Q806 276 904 248 Q996 222 1088 230 Q1150 236 1200 242 L1200 320 Z"/>'
+/* terrace contours following the slope — the signature of tea country */
++'<g class="snow" opacity=".32" aria-hidden="true">'
++'<path d="M690 304 Q800 284 902 262 Q994 238 1086 246 L1085 252 Q996 244 906 268 Q804 290 692 310 Z"/>'
++'<path d="M708 318 Q818 298 920 276 Q1012 252 1106 260 L1105 266 Q1014 258 924 282 Q822 304 710 324 Z"/>'
++'<path d="M672 292 Q778 272 878 250 Q968 226 1058 234 L1057 240 Q970 232 882 256 Q782 278 674 298 Z"/>'
 +'</g>'
-/* ear, eye and a tusk so it reads as an elephant at a glance */
-+'<ellipse fill="var(--tyre)" opacity=".26" cx="723" cy="268" rx="12" ry="14"/>'
-+'<circle fill="var(--tyre)" opacity=".7" cx="741" cy="266" r="1.7"/>'
-+'<path fill="var(--snow)" d="M741 288 Q751 290 755 295 Q747 292 740 292 Z"/>'
-/* coconut palms leaning over the shore */
+/* near: the deep green foreground ridge */
++'<g class="near"><path d="M0 320 L0 306 Q180 297 380 306 Q580 315 780 304 Q980 293 1200 302 L1200 320 Z"/></g>'
+/* coconut palms on the near slope */
++'<g fill="var(--bark)" aria-hidden="true">'
++'<path d="M1046 306 C1052 266 1046 232 1056 202 L1063 204 C1053 234 1060 268 1054 308 Z"/>'
++'<path d="M1152 306 C1146 274 1152 248 1144 224 L1150 222 C1158 248 1152 276 1158 306 Z"/>'
++'</g>'
 +'<g class="near">'
-+'<path d="M1046 296 C1052 254 1046 220 1056 190 L1063 192 C1053 222 1060 256 1054 298 Z"/>'
-+'<path d="M1059 190 C1038 176 1014 173 995 181 C1016 180 1038 186 1056 195 Z M1059 190 C1078 174 1102 170 1122 177 C1102 179 1080 186 1062 195 Z M1059 190 C1050 170 1035 159 1015 157 C1035 166 1048 177 1056 192 Z M1059 190 C1068 170 1083 159 1103 157 C1083 166 1070 177 1062 192 Z M1059 190 C1057 168 1049 152 1035 143 C1047 156 1054 172 1056 190 Z'
-+' M1054 196 m-3.4 0 a3.4 3.4 0 1 0 6.8 0 a3.4 3.4 0 1 0 -6.8 0 M1064 196 m-3.4 0 a3.4 3.4 0 1 0 6.8 0 a3.4 3.4 0 1 0 -6.8 0"/>'
-+'<path d="M1152 298 C1146 264 1152 238 1144 214 L1150 212 C1158 238 1152 266 1158 298 Z"/>'
-+'<path d="M1146 214 C1128 204 1108 202 1092 209 C1109 208 1128 212 1144 219 Z M1146 214 C1162 200 1182 196 1199 202 C1182 204 1163 210 1148 218 Z M1146 214 C1140 197 1128 187 1111 185 C1128 192 1139 202 1144 216 Z M1146 214 C1153 197 1165 188 1182 186 C1166 194 1155 204 1148 216 Z"/>'
++'<path d="M1059 202 C1038 188 1014 185 995 193 C1016 192 1038 198 1056 207 Z M1059 202 C1078 186 1102 182 1122 189 C1102 191 1080 198 1062 207 Z M1059 202 C1050 182 1035 171 1015 169 C1035 178 1048 189 1056 204 Z M1059 202 C1068 182 1083 171 1103 169 C1083 178 1070 189 1062 204 Z M1059 202 C1057 180 1049 164 1035 155 C1047 168 1054 184 1056 202 Z"/>'
++'<path d="M1146 224 C1128 214 1108 212 1092 219 C1109 218 1128 222 1144 229 Z M1146 224 C1162 210 1182 206 1199 212 C1182 214 1163 220 1148 228 Z M1146 224 C1140 207 1128 197 1111 195 C1128 202 1139 212 1144 226 Z M1146 224 C1153 207 1165 198 1182 196 C1166 204 1155 214 1148 226 Z"/>'
 +'</g>'
 /* near: lush green shore */
 +'<g class="near"><path d="M0 304 Q160 286 320 298 Q480 310 640 298 Q800 286 960 300 Q1080 308 1200 298 L1200 320 L0 320 Z"/></g>';
 
 /* --- band: calm sea left, palm + headland right --- */
 const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
-/* far: the highland ridge, right of the heading */
-+'<path class="far" d="M0 152 Q200 149 400 151 Q600 148 760 150 '
-+'L800 128 L840 142 L886 116 L930 138 L976 108 L1024 132 L1070 106 L1118 128 L1160 116 L1200 124 '
-+'L1200 200 L0 200 Z"/>'
-/* the sea, its own band */
-+'<path fill="var(--water)" d="M0 154 Q300 151 600 153 Q900 150 1200 152 L1200 200 L0 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 170 L1200 200 Z"/>'
-/* palm */
-+'<g class="near"><path d="M1076 186 C1080 158 1076 136 1082 116 L1087 117 C1081 138 1086 160 1082 188 Z"/>'
-+'<path d="M1084 116 C1070 106 1054 104 1041 109 C1055 109 1070 113 1082 120 Z M1084 116 C1097 105 1113 102 1126 107 C1113 109 1098 114 1086 120 Z M1084 116 C1078 103 1069 95 1056 93 C1069 99 1078 107 1082 117 Z M1084 116 C1090 103 1099 95 1112 93 C1100 99 1091 107 1086 117 Z"/></g>'
-+'<g class="near"><path d="M0 188 Q300 168 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/></g>';
+/* hill country, slim */
++'<path class="far" d="M0 152 Q160 146 320 150 Q480 142 620 148 Q700 151 752 146 '
++'Q800 112 866 100 Q932 88 986 106 Q1040 124 1096 118 Q1150 112 1200 118 L1200 200 L0 200 Z"/>'
++'<g class="snow" opacity=".28" aria-hidden="true"><ellipse cx="930" cy="140" rx="190" ry="8"/></g>'
++'<path class="far" opacity=".6" d="M640 200 L640 168 Q730 144 812 140 Q894 136 946 154 Q1000 172 1060 168 Q1130 164 1200 172 L1200 200 Z"/>'
++'<path class="mid" d="M0 200 L0 182 Q220 178 440 182 Q640 186 792 172 Q944 156 1200 148 L1200 200 Z"/>'
++'<g class="snow" opacity=".28" aria-hidden="true">'
++'<path d="M806 182 Q930 166 1076 156 L1075 161 Q932 170 808 187 Z"/>'
++'<path d="M834 194 Q958 178 1112 168 L1111 173 Q960 182 836 199 Z"/>'
++'</g>'
++'<g fill="var(--bark)" aria-hidden="true"><path d="M1076 192 C1080 164 1076 142 1082 122 L1087 123 C1081 144 1086 166 1082 194 Z"/></g>'
++'<g class="near"><path d="M1084 122 C1070 112 1054 110 1041 115 C1055 115 1070 119 1082 126 Z M1084 122 C1097 111 1113 108 1126 113 C1113 115 1098 120 1086 126 Z M1084 122 C1078 109 1069 101 1056 99 C1069 105 1078 113 1082 123 Z M1084 122 C1090 109 1099 101 1112 99 C1100 105 1091 113 1086 123 Z"/></g>'
++'<g class="near"><path d="M0 200 L0 190 Q300 182 600 190 Q900 197 1200 190 L1200 200 Z"/></g>';
 
 /* --- mascot: leopard cub (moods: happy / cheer / oops) --- */
 function SI_MASCOT(m){
