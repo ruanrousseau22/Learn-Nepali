@@ -3466,7 +3466,7 @@ const BN_LESSONS=[].concat(BN_Z1,BN_Z2,BN_Z3,BN_Z4,BN_Z5,BN_Z6,BN_Z7,BN_Z8,BN_Z9
 const BN_TRIP={
   title:'Short trip',
   native:'অল্প দিনের সফর',
-  intro:'Everything here is something you will actually say in Kolkata — ordering tea, stopping a taxi, asking a price, saying thank you properly. Tap any line to hear it.',
+  intro:'Simple Bengali for a short trip to Kolkata. Tap any line to hear it.',
   frames:[
     {s:' কোথায়?',sr:' kothay?',en:'Where is the ___?',t:'Ask where anything is',
      items:[['বাথরুম','bathroom','bathroom'],['বাজার','bajar','market'],['স্টেশন','steshon','station'],['দোকান','dokan','shop'],['হোটেল','hotel','hotel'],['মেট্রো','metro','metro']]},

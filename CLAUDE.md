@@ -1173,6 +1173,14 @@ defines `trip`, so any language can get one by adding the same field.
   muted; roman is never gated on `S.rom`. Section `note`s follow the same order —
   they used to lead with script and were rewritten to lead with roman (notes are
   never spoken, so that was audio-neutral).
+- **Mobile section headers stay ONE compact bar** (Ruan, July 2026: on a phone
+  they "get really big and look a little fat"). The culprit was a mobile rule
+  that gave the section description its own row (`flex-basis:100%`), taking the
+  header from ~50px to 98px. Below 600px the description is now hidden entirely
+  and the row is `flex-wrap:nowrap` with a smaller number chip — 43px, close to
+  desktop. The title WRAPS rather than truncating: an earlier attempt used
+  `text-overflow:ellipsis`, which clipped "Four frames that do every…". A
+  section title must never be cut off; one taller card is the better trade.
 - **Page flow**: the twelve sections are **collapsed** (`tripToggle`) so the page
   is scannable — a phrasebook is used standing in the street, not read top to
   bottom — and only `patterns` opens by default. A **Start here** block (a
