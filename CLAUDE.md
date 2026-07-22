@@ -338,13 +338,22 @@ forward and the rear wheel is clearly LARGER — with two equal wheels it looks
 like a van. Palm trunks use `--bark` (a lighter brown added for trunks) because
 `--wood` was too dark against the bank.
 
-**Nepali hero extras (July 2026).** The range's left approach used to be one
-long straight diagonal from the horizon into the first peak; it now steps up
-through two foothills (516,218 and 588,192) before the climb to 675,132, which
-reads far better. **Those foothills carry no snow cap on purpose** — they sit
-well below the snow line, so the "every peak needs a cap" check does not apply to
-them. Two yaks in `--hide` graze on the grass at x≈176 and 292. All of this lives
-in index.html, so remember the hero exists as 3 verbatim copies.
+**Nepali hero extras (July 2026).** The range's left approach is a long gentle
+diagonal from the horizon (400,247) up to ONE lower capped peak at (566,166),
+then a shallow dip before the main climb to (675,132) — an earlier two-foothill
+version was busier and Ruan preferred the single mountain. All five peaks carry a
+cap; the lower one takes a smaller drop (11 vs 18–21) so its cap stays ~42 wide
+like the rest.
+Two YAKS graze at x≈176 and 292: **white fur** (`class="snow"`) with `--tyre`
+horns, hooves, muzzle and eye. They need a long low body with a deep shaggy skirt
+— a compact rounded one reads as a sheep.
+**The trees are deliberately NOT the fir/logo shape** (Ruan: they looked exactly
+like the site mark). They are broadleaf — a `--bark` trunk under a cluster of
+four `--tree` circles — and the left group sits at x 46–140, clear of the yaks.
+All of this lives in index.html, so the hero exists as 3 verbatim copies.
+**Changing a ridge silently breaks caps**: adding/removing a vertex changes a
+peak's neighbour, so regenerate every cap and re-measure afterwards (this bit
+twice — once at 2.52px drift).
 
 **A flat peak makes a spread-out snow cap — lift the peak, don't shrink the cap.**
 Cap width is forced by the slopes: `width = (lx-ax)*d/(ly-ay) + (rx-ax)*d/(ry-ay)`,
