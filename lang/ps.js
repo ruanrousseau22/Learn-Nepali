@@ -41,11 +41,11 @@ const PS_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'L742 234 L790 170 L826 210 L872 138 L916 192 L956 124 L1004 184 L1042 148 L1086 198 L1126 164 L1166 206 L1200 196 '
 +'L1200 320 L0 320 Z"/>'
 /* generous snow caps on the high peaks */
-+'<path class="snow" d="M790 170 L808 190 L801 188 L790 182 L780 191 L775 190 Z"/>'
-+'<path class="snow" d="M872 138 L886 158 L878 156 L872 150 L864 159 L861 157 Z"/>'
-+'<path class="snow" d="M956 124 L972 146 L963 143 L956 137 L947 147 L945 145 Z"/>'
-+'<path class="snow" d="M1042 148 L1054 164 L1047 162 L1042 156 L1035 163 L1030 161 Z"/>'
-+'<path class="snow" d="M1126 164 L1136 178 L1130 176 L1126 171 L1120 177 L1115 175 Z"/>'
++'<path class="snow" d="M790.0 170.0 L808.0 190.0 L799.4 188.0 L792.2 195.0 L784.9 189.0 L779.6 193.0 L775.0 190.0 Z"/>'
++'<path class="snow" d="M872.0 138.0 L888.3 158.0 L880.7 156.0 L874.3 163.0 L867.9 157.0 L863.3 161.0 L859.2 158.0 Z"/>'
++'<path class="snow" d="M956.0 124.0 L973.6 146.0 L965.7 144.0 L958.9 151.0 L952.2 145.0 L947.3 149.0 L943.1 146.0 Z"/>'
++'<path class="snow" d="M1042.0 148.0 L1056.1 164.0 L1048.0 162.0 L1041.2 169.0 L1034.4 163.0 L1029.4 167.0 L1025.1 164.0 Z"/>'
++'<path class="snow" d="M1126.0 164.0 L1139.3 178.0 L1131.6 176.0 L1125.0 183.0 L1118.5 177.0 L1113.7 181.0 L1109.5 178.0 Z"/>'
 /* mid: the ochre valley floor, stepped in terraces */
 +'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
 /* terrace step lines */
@@ -70,9 +70,9 @@ const PS_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 const PS_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
 +'<path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q700 145 775 144 '
 +'L790 134 L830 88 L862 118 L898 74 L932 112 L964 92 L996 122 Q1100 138 1200 142 L1200 200 L0 200 Z"/>'
-+'<path class="snow" d="M898 74 L914 92 L906 90 L898 84 L890 92 L884 92 Z"/>'
-+'<path class="snow" d="M830 88 L845 102 L838 100 L831 95 L824 103 L818 102 Z"/>'
-+'<path class="snow" d="M964 92 L979 106 L972 104 L965 99 L958 107 L942 106 Z"/>'
++'<path class="snow" d="M898.0 74.0 L914.1 92.0 L906.1 90.0 L899.3 97.0 L892.5 91.0 L887.6 95.0 L883.3 92.0 Z"/>'
++'<path class="snow" d="M830.0 88.0 L844.9 102.0 L837.9 100.0 L831.9 107.0 L826.0 101.0 L821.6 105.0 L817.8 102.0 Z"/>'
++'<path class="snow" d="M964.0 92.0 L978.9 106.0 L969.2 104.0 L961.0 111.0 L952.8 105.0 L946.8 109.0 L941.6 106.0 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>'
 /* poplar + pomegranate tree */
 +'<g aria-hidden="true"><path fill="var(--tree)" d="M1122 192 Q1116 164 1122 134 Q1125 124 1128 134 Q1134 164 1128 192 Z"/><path fill="var(--wood)" d="M1080 192 L1080 178 L1085 178 L1085 192 Z"/><circle fill="var(--tree)" cx="1082" cy="170" r="12"/></g>'

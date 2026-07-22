@@ -61,53 +61,54 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>'
 /* gulls over the water */
 +'<g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".65" aria-hidden="true"><path d="M190 96 q6 -5 12 0 q6 -5 12 0"/><path d="M262 114 q5 -4.5 10 0 q5 -4.5 10 0"/></g>'
-/* far: the hill country — tall soft shoulders, high on the right like the up-country */
-+'<path class="far" d="M0 250 Q140 244 280 248 Q420 240 560 246 Q650 250 706 244 '
-+'Q756 194 832 172 Q908 151 976 176 Q1036 198 1094 188 Q1150 178 1200 186 '
-+'L1200 320 L0 320 Z"/>'
-/* the mist that sits in these valleys at dawn */
-+'<g class="snow" opacity=".3" aria-hidden="true">'
-+'<ellipse cx="900" cy="232" rx="250" ry="12"/><ellipse cx="1120" cy="222" rx="120" ry="9"/>'
+/* far: one calm hazy ridge — deliberately quiet so the cliff reads as the subject */
++'<path class="far" d="M0 250 Q200 245 400 249 Q600 243 800 247 Q1000 241 1200 245 L1200 320 L0 320 Z"/>'
+/* the highland cliff — a sunlit rock face filling the right */
++'<path class="mid" d="M1200 320 L1200 152 Q1146 144 1096 156 Q1042 170 1000 200 Q958 232 932 274 Q916 300 908 320 Z"/>'
+/* striations down the rock */
++'<g class="snow" opacity=".14" aria-hidden="true">'
++'<path d="M1108 168 Q1074 214 1046 274 L1056 274 Q1084 216 1118 170 Z"/>'
++'<path d="M1166 162 Q1140 214 1122 276 L1131 276 Q1149 216 1175 164 Z"/>'
 +'</g>'
-/* a nearer shoulder, overlapping — depth comes from the overlap */
-+'<path class="far" opacity=".6" d="M600 320 L600 272 Q690 232 782 226 Q874 220 940 246 Q998 268 1062 262 Q1132 256 1200 268 L1200 320 Z"/>'
-/* mid: the sunlit tea slope */
-+'<path class="mid" d="M0 320 L0 298 Q160 294 340 298 Q520 302 664 290 Q806 276 904 248 Q996 222 1088 230 Q1150 236 1200 242 L1200 320 Z"/>'
-/* terrace contours following the slope — the signature of tea country */
-+'<g class="snow" opacity=".32" aria-hidden="true">'
-+'<path d="M690 304 Q800 284 902 262 Q994 238 1086 246 L1085 252 Q996 244 906 268 Q804 290 692 310 Z"/>'
-+'<path d="M708 318 Q818 298 920 276 Q1012 252 1106 260 L1105 266 Q1014 258 924 282 Q822 304 710 324 Z"/>'
-+'<path d="M672 292 Q778 272 878 250 Q968 226 1058 234 L1057 240 Q970 232 882 256 Q782 278 674 298 Z"/>'
+/* the fall itself — a white ribbon over the lip into the pool */
++'<path class="snow" d="M1044 176 Q1060 170 1082 176 Q1080 180 1060 179 Q1048 179 1044 176 Z"/>'
++'<path class="snow" d="M1050 178 Q1047 232 1045 286 L1059 286 Q1058 232 1058 178 Z"/>'
++'<path class="snow" d="M1064 179 Q1063 234 1064 286 L1078 286 Q1075 232 1072 179 Z"/>'
++'<path class="snow" opacity=".45" d="M1060 182 Q1059 234 1060 284 L1064 284 Q1063 234 1064 182 Z"/>'
+/* spray where it lands */
++'<g class="snow" opacity=".4" aria-hidden="true">'
++'<ellipse cx="1062" cy="288" rx="40" ry="10"/><ellipse cx="1036" cy="292" rx="22" ry="7"/>'
 +'</g>'
-/* near: the deep green foreground ridge */
-+'<g class="near"><path d="M0 320 L0 306 Q180 297 380 306 Q580 315 780 304 Q980 293 1200 302 L1200 320 Z"/></g>'
-/* coconut palms on the near slope */
+/* the plunge pool */
++'<path fill="var(--water)" d="M994 300 Q1062 290 1132 299 Q1064 310 994 300 Z"/>'
+/* near: deep jungle across the foot of the cliff */
++'<g class="near"><path d="M0 320 L0 300 Q160 292 340 300 Q520 308 700 300 Q860 292 980 302 Q1090 311 1200 304 L1200 320 Z"/></g>'
+/* coconut palms at the foot of the falls */
 +'<g fill="var(--bark)" aria-hidden="true">'
-+'<path d="M1046 306 C1052 266 1046 232 1056 202 L1063 204 C1053 234 1060 268 1054 308 Z"/>'
-+'<path d="M1152 306 C1146 274 1152 248 1144 224 L1150 222 C1158 248 1152 276 1158 306 Z"/>'
++'<path d="M812 308 C818 270 812 238 822 210 L829 212 C819 240 826 272 820 310 Z"/>'
++'<path d="M896 306 C890 278 896 254 888 232 L894 230 C902 254 896 280 902 306 Z"/>'
 +'</g>'
 +'<g class="near">'
-+'<path d="M1059 202 C1038 188 1014 185 995 193 C1016 192 1038 198 1056 207 Z M1059 202 C1078 186 1102 182 1122 189 C1102 191 1080 198 1062 207 Z M1059 202 C1050 182 1035 171 1015 169 C1035 178 1048 189 1056 204 Z M1059 202 C1068 182 1083 171 1103 169 C1083 178 1070 189 1062 204 Z M1059 202 C1057 180 1049 164 1035 155 C1047 168 1054 184 1056 202 Z"/>'
-+'<path d="M1146 224 C1128 214 1108 212 1092 219 C1109 218 1128 222 1144 229 Z M1146 224 C1162 210 1182 206 1199 212 C1182 214 1163 220 1148 228 Z M1146 224 C1140 207 1128 197 1111 195 C1128 202 1139 212 1144 226 Z M1146 224 C1153 207 1165 198 1182 196 C1166 204 1155 214 1148 226 Z"/>'
++'<path d="M825 210 C804 196 780 193 761 201 C782 200 804 206 822 215 Z M825 210 C844 194 868 190 888 197 C868 199 846 206 828 215 Z M825 210 C816 190 801 179 781 177 C801 186 814 197 822 212 Z M825 210 C834 190 849 179 869 177 C849 186 836 197 828 212 Z M825 210 C823 188 815 172 801 163 C813 176 820 192 822 210 Z"/>'
++'<path d="M890 232 C872 222 852 220 836 227 C853 226 872 230 888 237 Z M890 232 C906 218 926 214 943 220 C926 222 907 228 892 236 Z M890 232 C884 215 872 205 855 203 C872 210 883 220 888 234 Z M890 232 C897 215 909 206 926 204 C910 212 899 222 892 234 Z"/>'
 +'</g>'
 /* near: lush green shore */
 +'<g class="near"><path d="M0 304 Q160 286 320 298 Q480 310 640 298 Q800 286 960 300 Q1080 308 1200 298 L1200 320 L0 320 Z"/></g>';
 
 /* --- band: calm sea left, palm + headland right --- */
 const SI_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/>'
-/* hill country, slim */
-+'<path class="far" d="M0 152 Q160 146 320 150 Q480 142 620 148 Q700 151 752 146 '
-+'Q800 112 866 100 Q932 88 986 106 Q1040 124 1096 118 Q1150 112 1200 118 L1200 200 L0 200 Z"/>'
-+'<g class="snow" opacity=".28" aria-hidden="true"><ellipse cx="930" cy="140" rx="190" ry="8"/></g>'
-+'<path class="far" opacity=".6" d="M640 200 L640 168 Q730 144 812 140 Q894 136 946 154 Q1000 172 1060 168 Q1130 164 1200 172 L1200 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 182 Q220 178 440 182 Q640 186 792 172 Q944 156 1200 148 L1200 200 Z"/>'
-+'<g class="snow" opacity=".28" aria-hidden="true">'
-+'<path d="M806 182 Q930 166 1076 156 L1075 161 Q932 170 808 187 Z"/>'
-+'<path d="M834 194 Q958 178 1112 168 L1111 173 Q960 182 836 199 Z"/>'
-+'</g>'
-+'<g fill="var(--bark)" aria-hidden="true"><path d="M1076 192 C1080 164 1076 142 1082 122 L1087 123 C1081 144 1086 166 1082 194 Z"/></g>'
-+'<g class="near"><path d="M1084 122 C1070 112 1054 110 1041 115 C1055 115 1070 119 1082 126 Z M1084 122 C1097 111 1113 108 1126 113 C1113 115 1098 120 1086 126 Z M1084 122 C1078 109 1069 101 1056 99 C1069 105 1078 113 1082 123 Z M1084 122 C1090 109 1099 101 1112 99 C1100 105 1091 113 1086 123 Z"/></g>'
-+'<g class="near"><path d="M0 200 L0 190 Q300 182 600 190 Q900 197 1200 190 L1200 200 Z"/></g>';
++'<path class="far" d="M0 152 Q200 147 400 151 Q600 145 800 149 Q1000 143 1200 147 L1200 200 L0 200 Z"/>'
+/* the cliff, slim */
++'<path class="mid" d="M1200 200 L1200 96 Q1156 90 1116 100 Q1074 111 1042 134 Q1010 158 992 200 Z"/>'
++'<g class="snow" opacity=".13" aria-hidden="true"><path d="M1126 108 Q1098 142 1078 180 L1086 180 Q1106 144 1134 110 Z"/></g>'
+/* the fall */
++'<path class="snow" d="M1078 118 Q1075 152 1073 182 L1096 182 Q1094 152 1091 118 Z"/>'
++'<g class="snow" opacity=".4" aria-hidden="true"><ellipse cx="1084" cy="184" rx="26" ry="6"/></g>'
++'<path fill="var(--water)" d="M1042 190 Q1086 184 1130 190 Q1086 196 1042 190 Z"/>'
++'<g class="near"><path d="M0 200 L0 188 Q300 180 600 188 Q900 195 1200 190 L1200 200 Z"/></g>'
+/* a palm at the foot */
++'<g fill="var(--bark)" aria-hidden="true"><path d="M946 192 C950 168 946 148 952 130 L957 131 C951 150 956 170 952 194 Z"/></g>'
++'<g class="near"><path d="M954 130 C940 120 924 118 911 123 C925 123 940 127 952 134 Z M954 130 C967 119 983 116 996 121 C983 123 968 128 956 134 Z M954 130 C948 117 939 109 926 107 C939 113 948 121 952 131 Z M954 130 C960 117 969 109 982 107 C970 113 961 121 956 131 Z"/></g>';
 
 /* --- mascot: leopard cub (moods: happy / cheer / oops) --- */
 function SI_MASCOT(m){

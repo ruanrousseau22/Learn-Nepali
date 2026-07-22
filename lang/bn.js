@@ -54,7 +54,7 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<path class="snow" opacity=".22" d="M300 250 Q430 245 560 248 L559 253 Q430 250 303 256 Z"/>'
 /* two Kolkata autos on the bank — green-and-yellow three-wheelers.
    Drawn once around a local origin so the same shape can be placed twice. */
-+'<g transform="translate(842,227)" aria-hidden="true">'
++'<g transform="translate(906,225)" aria-hidden="true">'
 +'<path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/>'
 +'<path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/>'
 +'<path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/>'
@@ -62,7 +62,7 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<circle fill="var(--tyre)" cx="14" cy="52" r="6"/><circle fill="var(--tyre)" cx="70" cy="51" r="9"/>'
 +'<circle fill="var(--mtn-mid)" cx="14" cy="52" r="2.2"/><circle fill="var(--mtn-mid)" cx="70" cy="51" r="3.2"/>'
 +'</g>'
-+'<g transform="translate(964,243) scale(0.7)" aria-hidden="true">'
++'<g transform="translate(1044,241) scale(0.7)" aria-hidden="true">'
 +'<path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/>'
 +'<path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/>'
 +'<path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/>'

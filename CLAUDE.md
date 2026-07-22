@@ -294,16 +294,32 @@ The Sinhala elephant was also redrawn at this point — body/head masses, a
 tapering trunk, a darker ear, an eye and a tusk — because once it stopped being
 a flat dark silhouette its shape had to actually read.
 
-**Snow caps: every peak gets one, anchored by maths (July 2026 round 2).** An
-audit comparing each `far` ridge's local minima against the `snow` shapes found
-the HEROES were already correct but both BANDS had an uncapped peak — ne/band
-(1120,106) and ps/band (964,92) — plus two ps/band caps overhanging by ~2px. All
-fixed. **When you touch a ridge, re-run the audit**: a cap is correct only when
-(a) every peak has one and (b) every cap point sits on or below the ridge, with
-base corners at `ax+(lx-ax)*d/(ly-ay)` and `ax+(rx-ax)*d/(ry-ay)`. Do not eyeball
-it, and remember the band is a separate ridge from the hero.
+**Snow caps must be FLUSH, not merely inside (July 2026, rounds 2–3).** Two
+different faults, and the second is the one that actually looked wrong:
+1. *missing* — both BANDS had an uncapped peak (ne/band 1120,106 and ps/band
+   964,92). The bands are separate ridges from the heroes; check both.
+2. *misaligned* — a cap can sit entirely INSIDE the peak yet leave a sliver of
+   mountain showing beside it, because its outer edges are not collinear with the
+   slopes. 12 of 15 caps were like this, the worst 12.5px off.
+The fix is to derive each cap from the ridge instead of hand-tuning it. With
+apex `(ax,ay)`, neighbour `(nx,ny)` and drop `d`, the base corner is
+`(ax+(nx-ax)*d/(ny-ay), ay+d)` kept as a DECIMAL — rounding to whole pixels is
+what pushes the edge inside. Draw the cap apex→rightBase→jag→leftBase so the two
+outer strokes are exactly the slope segments; the jag must walk monotonically
+right→left or the polygon self-intersects. `scratchpad/gencaps.py` holds the
+generator; worst gap is now 0.07px. **Re-run it whenever a ridge moves.**
 
-**Sinhala art = TEA COUNTRY (July 2026, Ruan's second pass).** The elephant and
+**Sinhala art = A HIGHLAND WATERFALL (July 2026, Ruan's third pass).** The tea
+hills below were themselves replaced: Ruan found the blue hills "confusing as it
+flows to the right" and wanted something with more character than a simple
+landscape. It is now a sunlit rock cliff filling the right, a braided white fall
+spilling over a lip into a plunge pool, spray at the base, jungle foreground and
+two palms — with one deliberately calm far ridge so the cliff is unambiguously
+the subject. A fall reads as water only when it is NARROW and braided (two
+ribbons plus a highlight); a single wide wedge looks like a monolith.
+The superseded tea-country note follows for context.
+
+**(superseded) Sinhala art = TEA COUNTRY (July 2026, Ruan's second pass).** The elephant and
 the jagged blue ridge are GONE — he disliked both. It is now the up-country: tall
 soft overlapping hill shoulders (never jagged), a dawn mist band in the valley,
 a sunlit `mid` tea slope carrying three terrace contour lines, deep green
