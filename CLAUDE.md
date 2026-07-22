@@ -1144,6 +1144,12 @@ defines `trip`, so any language can get one by adding the same field.
   sentence frames (X kothay? / X achhe? / X din / X koto?) that generate most of
   what a visitor needs, so the page teaches production, not just a phrase list.
   `note` is the only field that may contain HTML (`<b>` only).
+  **Notes stay SHORT and factual** (Ruan, July 2026): about 20-35 words, one
+  or two facts, then stop. No emotional framing and no build-up — a July 2026
+  pass cut them 535 -> 367 words, removing lines like "said with a smile",
+  "you have made a friend", "Bengalis are genuinely delighted" and "tea is the
+  social glue". State the rule, name the phrase, move on. Notes are never
+  spoken, so rewriting them is audio-neutral.
 - **Content review, July 2026 — findings worth not repeating.** (1) The page
   taught "use `apni` with anyone you have just met" and then used **tumi** forms
   with strangers (`tomar desh kothay`, `bhalo theko` x2). Sweep any new trip pack

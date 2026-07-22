@@ -3479,7 +3479,7 @@ const BN_TRIP={
   ],
   sections:[
   {id:'first',t:'First words',d:'The handful you will use every day',
-   note:'Two things first. The <b>o</b> in these spellings is a short <b>aw</b> — <b>nomoshkar</b> comes out closer to <b>nawmawshkar</b>, and that one habit does more for being understood than any amount of extra vocabulary. Second, in Kolkata you address people by kinship rather than by <b>sir</b> or <b>madam</b>: a man roughly your age is <b>dada</b> দাদা, a woman <b>didi</b> দিদি. Add it to almost anything and you sound warm rather than abrupt.',
+   note:'The <b>o</b> in these spellings is a short <b>aw</b>: <b>nomoshkar</b> sounds closer to <b>nawmawshkar</b>. In Kolkata you address people by kinship, not by sir or madam — <b>dada</b> দাদা to a man, <b>didi</b> দিদি to a woman.',
    lines:[
      ['নমস্কার','nomoshkar','hello'],
      ['ধন্যবাদ','dhonnobad','thank you'],
@@ -3493,7 +3493,7 @@ const BN_TRIP={
      ['দিদি','didi','sister — to a woman'],
    ]},
   {id:'polite',t:'Being polite',d:'Bengali has two words for you',
-   note:'With anyone you have just met use <b>apni</b> আপনি — its verbs end in <b>-en</b> (kemon achh<b>en</b>). <b>tumi</b> তুমি is for friends and children. Getting this one choice right is most of sounding polite.',
+   note:'Use <b>apni</b> আপনি with anyone you have just met. Its verbs end in <b>-en</b>: kemon achh<b>en</b>. <b>tumi</b> তুমি is for friends and children.',
    lines:[
      ['আপনি','apni','you (polite)'],
      ['তুমি','tumi','you (friendly)'],
@@ -3505,7 +3505,7 @@ const BN_TRIP={
      ['বলুন','bolun','go ahead, tell me'],
    ]},
   {id:'meet',t:'Meeting someone',d:'Names, countries, first contact',
-   note:'There is no verb <b>to be</b> in the present. <b>amar nam John</b> is literally <b>my name John</b> — and that is already a complete sentence. Travelling together you will need <b>amra</b> we: <b>amra at jon</b> is there are eight of us, and any number drops into that gap.',
+   note:'There is no verb <b>to be</b> in the present — <b>amar nam John</b> is literally <b>my name John</b>. <b>amra at jon</b> is there are eight of us; any number fits that gap.',
    lines:[
      ['আমার নাম','amar nam','my name is…'],
      ['আপনার নাম কী?','apnar nam ki','what is your name?'],
@@ -3520,7 +3520,7 @@ const BN_TRIP={
      ['ভালো থাকবেন','bhalo thakben','stay well'],
    ]},
   {id:'patterns',t:'Sentence patterns',d:'Swap the noun and you have hundreds of sentences',
-   note:'Nearly everything practical is one of four frames: <b>X kothay?</b> where is X · <b>X achhe?</b> do you have X · <b>X din</b> give me X · <b>X koto?</b> how much. Drop any noun in and it works.',
+   note:'Four frames cover most of what you need: <b>X kothay?</b> where is X · <b>X achhe?</b> do you have X · <b>X din</b> give me X · <b>X koto?</b> how much. Any noun fits.',
    lines:[
      ['কোথায়','kothay','where'],
      ['আছে','achhe','there is / you have'],
@@ -3534,7 +3534,7 @@ const BN_TRIP={
      ['নেব','nebo','I will take it'],
    ]},
   {id:'hear',t:'What you will hear',d:'Half a conversation comes back at you',
-   note:'Everything else on this page is something you SAY. These are the words that come back. You will not catch every one — catch these and you can usually work the rest out. If you are truly lost, <b>abar bolun</b> say it again is never rude.',
+   note:'Everything else on this page is something you say. These are the words that come back. If you miss the answer, <b>abar bolun</b> asks for it again.',
    lines:[
      ['ওই দিকে','oi dike','that way'],
      ['সামনে','shamne','straight ahead'],
@@ -3550,7 +3550,7 @@ const BN_TRIP={
      ['বুঝেছেন?','bujhechhen','do you understand?'],
    ]},
   {id:'numbers',t:'Numbers, money & time',d:'Prices, counting and the clock',
-   note:'Money is <b>taka</b> টাকা, and <b>koto taka?</b> is the question you will ask most. Learn the tens even if you learn nothing else — a price you cannot decode is a price you cannot argue with, and Kolkata runs on <b>ponchash</b>, <b>shottor</b> and <b>dersho</b>. Note that <b>kal</b> is BOTH tomorrow and yesterday; the verb tells you which.',
+   note:'Money is <b>taka</b> টাকা. Learn the tens — prices are usually <b>ponchash</b> 50, <b>shottor</b> 70, <b>dersho</b> 150. <b>kal</b> means both tomorrow and yesterday; the verb tells you which.',
    lines:[
      ['এক','ek','1'],
      ['দুই','dui','2'],
@@ -3582,7 +3582,7 @@ const BN_TRIP={
      ['কাল','kal','tomorrow / yesterday'],
    ]},
   {id:'ride',t:'Getting around',d:'Taxis, autos and the metro',
-   note:'Ask the fare BEFORE you get in — <b>bhara koto?</b>. Yellow taxis should run the meter: <b>mitare jaben?</b>. Autos run fixed shared routes, so you simply name the destination.',
+   note:'Ask the fare before you get in: <b>bhara koto?</b>. Yellow taxis should run the meter — <b>mitare jaben?</b>. Autos run fixed shared routes, so just name the destination.',
    lines:[
      ['যাবেন?','jaben','will you go?'],
      ['আপনি কি যাবেন?','apni ki jaben','will you go? (polite)'],
@@ -3598,7 +3598,7 @@ const BN_TRIP={
      ['কখন ছাড়বে?','kokhon chharbe','when does it leave?'],
    ]},
   {id:'way',t:'Directions',d:'Left, right and how far',
-   note:'Point and ask <b>X kothay?</b>. If you catch only one word of the answer, <b>ban</b> is left and <b>dan</b> is right.',
+   note:'Point and ask <b>X kothay?</b>. If you catch one word of the answer, <b>ban</b> is left and <b>dan</b> is right.',
    lines:[
      ['বাঁ দিকে','ban dike','to the left'],
      ['ডান দিকে','dan dike','to the right'],
@@ -3613,7 +3613,7 @@ const BN_TRIP={
      ['বাথরুম কোথায়?','bathroom kothay','where is the bathroom?'],
    ]},
   {id:'eat',t:'Eating & drinking',d:'Tea, rice, fish and the bill',
-   note:'In West Bengal water is <b>jol</b> জল, not pani, and salt is <b>nun</b> নুন — using those marks you as someone who learned here. Tea is the social glue: accepting a cup is how conversations start.',
+   note:'In West Bengal water is <b>jol</b> জল, not pani, and salt is <b>nun</b> নুন. Tea is offered constantly; <b>ek kap cha din</b> orders one.',
    lines:[
      ['খেতে চাই','khete chai','I want to eat'],
      ['জল','jol','water'],
@@ -3636,7 +3636,7 @@ const BN_TRIP={
      ['বিল দিন','bil din','the bill, please'],
    ]},
   {id:'guest',t:'Being a guest',d:'You will be fed, and then fed again',
-   note:'Bengali hospitality does not take no for an answer, and refusing is expected to take about three tries — so refuse warmly rather than firmly. <b>arektu?</b> a little more is what you will be asked; <b>pet bhore gechhe</b> I am full, said with a smile, is the answer that works. Praise the food and you have made a friend.',
+   note:'You will be offered more food several times. <b>arektu?</b> a little more is the question; <b>pet bhore gechhe</b> I am full is the answer. <b>khub bhalo hoyechhe</b> compliments the cooking.',
    lines:[
      ['আরেকটু?','arektu','a little more? (what you will be asked)'],
      ['আর না, ধন্যবাদ','ar na dhonnobad','no more, thank you'],
@@ -3648,7 +3648,7 @@ const BN_TRIP={
      ['আবার আসবেন','abar ashben','come again (what you hear leaving)'],
    ]},
   {id:'shop',t:'Shopping & bargaining',d:'Asking the price and pushing back',
-   note:'Fixed-price shops exist, but in a market the first number is an opening offer. <b>khub dami</b> too expensive, then <b>kom korun</b> is the entire negotiation — said with a smile.',
+   note:'In a market the first price is an opening offer. <b>khub dami</b> too expensive, then <b>kom korun</b> lower it, is most of the negotiation.',
    lines:[
      ['দাম কত?','dam koto','how much is it?'],
      ['দামি','dami','expensive'],
@@ -3672,7 +3672,7 @@ const BN_TRIP={
      ['ঠিক আছে','thik achhe','OK, that is fine'],
    ]},
   {id:'trouble',t:'Getting help',d:'The words to have ready',
-   note:'Keep these ready and hope not to need them. <b>shahajjo korun</b> is the one to say clearly if you need help.',
+   note:'<b>shahajjo korun</b> is the one to say clearly if you need help. The rest are for a doctor or a pharmacy.',
    lines:[
      ['সাহায্য করুন','shahajjo korun','please help'],
      ['ডাক্তার','daktar','doctor'],
@@ -3684,7 +3684,7 @@ const BN_TRIP={
      ['পুলিশ','pulish','police'],
    ]},
   {id:'connect',t:'Conversation',d:'Ask people to slow down, and say what you think',
-   note:'These change how a trip feels. Bengalis are proud of the language and genuinely delighted when a visitor tries it — however badly.',
+   note:'These are the phrases people respond to most. <b>banglay ki bole?</b> asks what something is called in Bengali.',
    lines:[
      ['আস্তে বলুন','aste bolun','please speak slowly'],
      ['আবার বলুন','abar bolun','please say it again'],
