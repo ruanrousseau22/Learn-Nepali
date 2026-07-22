@@ -118,7 +118,7 @@ languages render with no overflow and no console errors, Pashto RTL intact,
 
 ---
 
-## Phase 1 — Art for all three, up front
+## Phase 1 — Art for all three, up front ✅ DONE (July 2026)
 
 Ruan, July 2026: *"the original artwork, let's just make it really good … I
 don't want it to be created poorly and then have to rework it."* The Sinhala art
@@ -185,9 +185,33 @@ Deep volcanic grey far, warm terraced green mid, lush near.
 
 **Deliberately skipped:** the becak, too close to Bengali's autos.
 
-**Exit:** three heroes + three bands, `artcheck.py` and `snowaudit.py` clean,
-reviewed by Ruan at desktop and mobile, light and dark, **before** any
-curriculum work begins.
+**Exit — met:** three heroes, three bands and three mascots shipped in
+`lang/ur.js`, `lang/uz.js`, `lang/jv.js`, with light and dark palettes in
+index.html. Structural sweep clean (ground paths close, no empty groups, no
+degenerate paths, nothing off-canvas). Urdu's 7 snow caps are flush to 0.000px
+with every width under 52. The 8 shipped languages are untouched.
+
+**What needed a second pass, and why — read this before authoring more art:**
+1. **A flat band reads as nothing.** Urdu's first mid layer was a uniform
+   horizontal slab and looked like a brown stripe; it only became a hillside
+   once it had a real crest and terrace contour lines following the slope.
+   Javanese's sawah had the same fault and the same fix.
+2. **Leave enough near band for pieces to stand on.** Urdu's first valley floor
+   was ~15px tall, so the truck and markhor appeared to sit on bare earth. Lift
+   the crest, then re-ground every placed piece to the new crest.
+3. **Contrast the far layer against the SKY, not just the mid.** Uzbek's pale
+   sand dunes (#C9B8A0) nearly vanished into the warm sky; cooling them to
+   #ADAEB6 restored the three hue steps.
+4. **An animal needs its species' silhouette, not a generic body.** The
+   Javanese buffalo read as a goat until the horns became wide filled crescents
+   sweeping BACK over the shoulders — upright stroked loops are wrong, and
+   filled shapes read far better than strokes at this size.
+5. **A reusable piece placed in both hero and band appears TWICE in the file.**
+   A `str.replace` with an `==1` assertion will fail; use replace-all.
+
+**Still to do when Ruan reviews:** confirm at mobile width and in dark mode.
+The palettes are verified to resolve, but the compositions have only been
+eyeballed at desktop.
 
 ---
 
