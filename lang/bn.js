@@ -62,22 +62,24 @@ const BN_HERO='<circle class="orb-glow" cx="856" cy="112" r="72"/><circle class=
 +'<path class="snow" opacity=".28" d="M180 270 Q330 262 470 268 L468 274 Q330 266 184 276 Z"/>'
 /* the nouka — a Bengali country boat, warm teak so it lifts off the violet water */
 +'<g aria-hidden="true">'
-+'<path fill="var(--mtn-mid)" d="M556 260 Q604 275 656 275 Q708 275 752 258 L747 269 Q706 283 656 283 Q604 283 561 269 Z"/>'
-+'<path fill="var(--tree)" d="M620 268 Q654 246 690 268 Z"/>'
++'<path fill="var(--wood)" d="M592 256 Q636 271 660 271 Q686 271 728 254 L723 265 Q686 281 660 281 Q632 281 597 266 Z"/>'
++'<path fill="var(--mtn-mid)" d="M628 264 Q660 244 692 264 Z"/>'
 +'</g>'
 /* a Kolkata auto-rickshaw pulled up on the bank */
 +'<g aria-hidden="true">'
 +'<path fill="var(--tree)" d="M862 240 Q862 235 868 235 L916 235 Q922 235 922 240 L922 249 L862 249 Z"/>'
 +'<path fill="var(--orb)" d="M866 249 L920 249 Q927 249 927 257 L927 272 Q927 278 921 278 L872 278 Q863 278 861 269 L859 259 Q858 250 866 249 Z"/>'
-+'<path fill="var(--tree)" opacity=".35" d="M872 253 L900 253 L900 266 L872 266 Z"/>'
-+'<circle fill="var(--tree)" cx="874" cy="279" r="6.5"/><circle fill="var(--tree)" cx="914" cy="279" r="7.5"/>'
++'<path fill="var(--tyre)" opacity=".45" d="M872 253 L900 253 L900 266 L872 266 Z"/>'
++'<circle fill="var(--tyre)" cx="874" cy="279" r="6.5"/><circle fill="var(--tyre)" cx="914" cy="279" r="7.5"/>'
 +'<circle fill="var(--mtn-mid)" cx="874" cy="279" r="2.4"/><circle fill="var(--mtn-mid)" cx="914" cy="279" r="2.8"/>'
 +'</g>'
 /* coconut palms on the near bank, right of the title zone */
-+'<g fill="var(--tree)" aria-hidden="true">'
++'<g fill="var(--wood)" aria-hidden="true">'
 +'<path d="M752 300 Q748 250 758 212 L764 212 Q758 252 762 300 Z"/>'
-+'<path d="M760 214 Q738 200 716 204 Q740 188 762 202 Q770 184 790 178 Q776 194 766 206 Q788 196 806 204 Q784 206 766 214 Q780 222 786 238 Q770 226 760 216 Q750 230 736 234 Q746 220 756 212 Z"/>'
 +'<path d="M804 300 Q802 264 808 238 L813 238 Q810 266 812 300 Z"/>'
++'</g>'
++'<g fill="var(--tree)" aria-hidden="true">'
++'<path d="M760 214 Q738 200 716 204 Q740 188 762 202 Q770 184 790 178 Q776 194 766 206 Q788 196 806 204 Q784 206 766 214 Q780 222 786 238 Q770 226 760 216 Q750 230 736 234 Q746 220 756 212 Z"/>'
 +'<path d="M810 240 Q794 230 778 234 Q796 220 812 230 Q820 216 836 212 Q824 226 816 234 Q834 228 848 236 Q830 236 816 240 Q826 248 830 260 Q818 250 810 242 Z"/>'
 +'</g>'
 /* near: the green delta foreground */
@@ -94,7 +96,7 @@ const BN_BAND='<circle class="orb-glow" cx="1046" cy="86" r="34"/><circle class=
 /* small nouka */
 +'<g aria-hidden="true"><path fill="var(--mtn-mid)" d="M840 160 Q866 167 896 167 Q924 167 944 159 Q938 170 920 173 L862 173 Q848 170 840 160 Z"/><path fill="var(--tree)" d="M888 146 Q898 151 900 160 L890 167 Q884 156 888 146 Z"/></g>'
 /* palm (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M1102 186 Q1100 160 1106 142 L1110 142 Q1108 162 1109 186 Z"/><path d="M1107 144 Q1092 136 1078 139 Q1094 128 1108 136 Q1114 124 1128 121 Q1118 132 1111 139 Q1126 134 1138 141 Q1122 141 1111 144 Q1119 151 1123 161 Q1112 152 1106 145 Z"/></g>'
++'<g class="art-detail" aria-hidden="true"><path fill="var(--wood)" d="M1102 186 Q1100 160 1106 142 L1110 142 Q1108 162 1109 186 Z"/><path fill="var(--tree)" d="M1107 144 Q1092 136 1078 139 Q1094 128 1108 136 Q1114 124 1128 121 Q1118 132 1111 139 Q1126 134 1138 141 Q1122 141 1111 144 Q1119 151 1123 161 Q1112 152 1106 145 Z"/></g>'
 +'<g class="near"><path d="M0 188 Q300 170 600 180 Q900 190 1200 180 L1200 200 L0 200 Z"/></g>';
 
 /* --- mascot: Bengal tiger cub (moods: happy / cheer / oops) --- */

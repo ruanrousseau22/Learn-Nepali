@@ -54,6 +54,9 @@
   --good:#0F8C74; --bad:#C2362E; --card:#FFFFFF;
   --sky1:#CFE4F7; --sky2:#EFF4FB; --mtn-far:#A7C4DD; --mtn-mid:#D89A57; --mtn-near:#2E8E78; --snow:#FFFFFF; --orb:#F6D98F;
   --tree:#2C5F3A;
+  /* material colours for scenery objects — foliage stays --tree, everything
+     else takes the colour of what it actually is */
+  --wood:#8A5A33; --hide:#8C6239; --slate:#79858E; --tyre:#343A40;
   --r-sm:8px; --r-md:14px; --r-lg:20px; --shadow:0 1px 2px rgba(27,36,48,0.05), 0 10px 26px -16px rgba(20,40,80,0.30);
 }
 [data-theme="dark"]{
@@ -63,6 +66,7 @@
   --card:#1C2630; --shadow:0 1px 2px rgba(0,0,0,0.25), 0 12px 28px -18px rgba(0,0,0,0.7);
   --sky1:#142539; --sky2:#0F1419; --mtn-far:#21384F; --mtn-mid:#6E5230; --mtn-near:#184A40; --snow:#C7D6E6; --orb:#D9E4F0;
   --tree:#4FA06A;
+  --wood:#B57E4A; --hide:#AD8055; --slate:#8E9AA3; --tyre:#4A5058;
 }
 /* per-language scenery palette (set via data-lang by applyArt) —
    Cambodia: golden dawn sky, jungle haze, Angkor stone, paddy green */
@@ -112,9 +116,9 @@
 :root[data-theme="dark"][data-lang="bn"]{--sky1:#211B2E;--sky2:#131016;--mtn-far:#3A3454;--mtn-mid:#5C452B;--mtn-near:#1C5638;--orb:#EBDFC6}
 /* bare Bengali in note titles/prose keeps Noto Sans Bengali in-stack, like the Burmese rule */
 :root[data-lang="bn"] .exq,:root[data-lang="bn"] .note-body{font-family:'Plus Jakarta Sans','Noto Sans Bengali',sans-serif}
-/* declutter scenery on phones: hide the fine `art-detail` extras (birds,
-   boats, reeds) so the centered scenery reads cleanly on the mobile crop */
-@media(max-width:560px){.hero-mtns .art-detail,.pb-mtns .art-detail{display:none}}
+/* `art-detail` extras (birds, boats, reeds) used to be hidden on phones because
+   the scenery was centre-cropped there. The art now scales whole to any width,
+   so the fine details stay — the picture is the same everywhere, only smaller. */
 *{box-sizing:border-box;margin:0;padding:0}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 html{scroll-behavior:smooth}
@@ -158,7 +162,11 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .btn-ghost:hover{border-color:var(--crimson);color:var(--crimson)}
 
 .hero{position:relative;width:100%;overflow:hidden;border-radius:0 0 30px 30px;margin-bottom:12px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
-.hero-mtns{position:absolute;inset:0;width:100%;height:100%;display:block}
+/* the scenery is never cropped sideways: the SVG keeps its own 1200x320 ratio
+   (width:100% + height:auto) and sits on the bottom edge, so a phone shows the
+   SAME whole scene as a desktop, just smaller. Any surplus container height is
+   plain sky above it, which is what the top of the art is anyway. */
+.hero-mtns{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;display:block}
 .hero-mtns .far{fill:var(--mtn-far)}
 .hero-mtns .mid{fill:var(--mtn-mid)}
 .hero-mtns .near{fill:var(--mtn-near)}
@@ -170,7 +178,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-text{position:relative;z-index:2;max-width:64%;padding-bottom:56px}
 .hero-text h1{font-size:clamp(34px,5.4vw,54px)}
 .hero-sub{margin-top:10px;font-size:15px;font-weight:600;color:var(--ink-soft);background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);display:inline-block;padding:6px 14px;border-radius:100px}
-@media(max-width:640px){.hero-inner{min-height:236px}.hero-text{max-width:70%}}
+@media(max-width:640px){.hero-inner{min-height:196px}.hero-text{max-width:70%;padding-bottom:34px}}
 /* language switcher — a dropdown in the header, right of the logo */
 .lang-switch{position:relative;flex:none}
 .lang-toggle{display:inline-flex;align-items:center;gap:8px;padding:6px 10px 6px 9px;border-radius:100px;border:1px solid var(--line);background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);color:var(--ink);font-family:inherit;font-weight:800;font-size:12.5px;letter-spacing:-.01em;cursor:pointer;box-shadow:var(--shadow);transition:.15s ease}
@@ -191,7 +199,7 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 
 /* slim mountain band for sub-pages — a calmer echo of the home hero */
 .page-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;margin-bottom:24px;background:linear-gradient(180deg,var(--sky1),var(--sky2))}
-.pb-mtns{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pb-mtns{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;display:block}
 .pb-mtns .far{fill:var(--mtn-far)} .pb-mtns .mid{fill:var(--mtn-mid)} .pb-mtns .near{fill:var(--mtn-near)} .pb-mtns .snow{fill:var(--snow)}
 .pb-mtns .orb{fill:var(--orb)} .pb-mtns .orb-glow{fill:var(--orb);opacity:.3}
 .pb-inner{position:relative;z-index:2;max-width:1020px;margin:0 auto;min-height:140px;display:flex;flex-direction:column;justify-content:flex-start;padding:22px 24px}
@@ -617,7 +625,8 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   .section .sub{font-size:14px;margin-bottom:18px}
 
   /* hero: a little shorter and less padding */
-  .hero-inner{min-height:200px;padding:22px 18px}
+  .hero-inner{min-height:152px;padding:20px 18px}
+  .hero-text{padding-bottom:20px}
   .hero-text h1{font-size:clamp(28px,8vw,38px)}
   .hero-sub{font-size:13.5px;padding:5px 12px}
 

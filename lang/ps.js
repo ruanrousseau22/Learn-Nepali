@@ -54,7 +54,7 @@ const PS_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path class="snow" opacity=".22" d="M840 296 Q960 290 1080 294 L1078 300 Q960 294 844 302 Z"/>'
 /* pomegranate orchard — round crowns with ruby fruit */
 +'<g aria-hidden="true">'
-+'<path fill="var(--tree)" d="M968 296 L968 278 L974 278 L974 296 Z M1010 298 L1010 280 L1016 280 L1016 298 Z M1052 296 L1052 278 L1058 278 L1058 296 Z"/>'
++'<path fill="var(--wood)" d="M968 296 L968 278 L974 278 L974 296 Z M1010 298 L1010 280 L1016 280 L1016 298 Z M1052 296 L1052 278 L1058 278 L1058 296 Z"/>'
 +'<circle fill="var(--tree)" cx="971" cy="266" r="17"/><circle fill="var(--tree)" cx="1013" cy="268" r="18"/><circle fill="var(--tree)" cx="1055" cy="266" r="17"/>'
 +'<g class="art-detail" fill="var(--crimson)"><circle cx="965" cy="262" r="2.6"/><circle cx="977" cy="270" r="2.6"/><circle cx="1007" cy="264" r="2.6"/><circle cx="1019" cy="272" r="2.6"/><circle cx="1049" cy="270" r="2.6"/><circle cx="1061" cy="262" r="2.6"/></g>'
 +'</g>'
@@ -74,7 +74,7 @@ const PS_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'<path class="snow" d="M830 88 L841 102 L835 100 L830 95 L824 101 L819 99 Z"/>'
 +'<path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>'
 /* poplar + pomegranate tree */
-+'<g fill="var(--tree)" aria-hidden="true"><path d="M1122 192 Q1116 164 1122 134 Q1125 124 1128 134 Q1134 164 1128 192 Z"/><path d="M1080 192 L1080 178 L1085 178 L1085 192 Z"/><circle cx="1082" cy="170" r="12"/></g>'
++'<g aria-hidden="true"><path fill="var(--tree)" d="M1122 192 Q1116 164 1122 134 Q1125 124 1128 134 Q1134 164 1128 192 Z"/><path fill="var(--wood)" d="M1080 192 L1080 178 L1085 178 L1085 192 Z"/><circle fill="var(--tree)" cx="1082" cy="170" r="12"/></g>'
 +'<g class="art-detail" fill="var(--crimson)" aria-hidden="true"><circle cx="1078" cy="167" r="2"/><circle cx="1087" cy="173" r="2"/></g>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/></g>';
 

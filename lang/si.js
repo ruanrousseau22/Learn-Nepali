@@ -68,7 +68,7 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 /* the Indian Ocean — its own band, so the highlands stop reading as cloud */
 +'<path fill="var(--water)" d="M0 252 Q300 249 600 251 Q900 248 1200 250 L1200 320 L0 320 Z"/>'
 /* an oruwa — the outrigger canoe, out on the water (fine detail) */
-+'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--tree)" d="M586 256 Q602 261 620 256 L616 251 L590 251 Z"/></g>'
++'<g class="art-detail" aria-hidden="true"><path class="snow" d="M596 250 L596 232 L608 250 Z"/><path fill="var(--wood)" d="M586 256 Q602 261 620 256 L616 251 L590 251 Z"/></g>'
 /* mid: the warm sandy shore */
 +'<path class="mid" d="M0 320 L0 284 Q300 276 600 282 Q900 288 1200 278 L1200 320 Z"/>'
 /* the tea hill — terraced slopes of the up-country, warm against the blue ridge */
@@ -82,13 +82,17 @@ const SI_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path class="snow" opacity=".3" d="M70 264 Q220 258 370 262 L368 268 Q220 262 74 270 Z"/>'
 +'<path class="snow" opacity=".3" d="M150 276 Q300 268 430 274 L428 280 Q300 272 154 282 Z"/>'
 /* a wild elephant on the shore — Sri Lanka's own */
-+'<g fill="var(--tree)" aria-hidden="true">'
-+'<path d="M652 302 L652 282 L662 282 L662 302 Z M670 302 L670 282 L680 282 L680 302 Z M694 302 L694 282 L704 282 L704 302 Z M708 302 L708 282 L718 282 L718 302 Z"/>'
-+'<path d="M646 288 Q642 264 668 260 L700 260 Q722 262 724 280 L724 290 Q700 294 668 293 Q652 292 646 288 Z"/>'
-+'<path d="M720 264 Q740 264 744 280 Q747 296 740 304 L734 304 Q740 292 738 282 Q735 270 720 272 Z"/>'
-+'<path d="M712 264 Q725 259 727 274 Q720 280 712 274 Z"/>'
-+'<path d="M647 268 Q639 274 641 286 L645 286 Q643 276 650 272 Z"/>'
++'<g fill="var(--slate)" aria-hidden="true">'
++'<path d="M656 299 L656 276 L667 276 L667 299 Z M675 299 L675 276 L686 276 L686 299 Z M700 299 L700 276 L711 276 L711 299 Z M716 299 L716 276 L727 276 L727 299 Z"/>'
++'<ellipse cx="688" cy="268" rx="46" ry="22"/>'
++'<ellipse cx="733" cy="272" rx="19" ry="18"/>'
++'<path d="M744 280 Q757 288 755 296 Q754 302 748 301 Q744 300 746 295 Q748 289 739 285 Z"/>'
++'<path d="M643 260 Q634 266 636 280 L640 280 Q638 268 646 264 Z"/>'
 +'</g>'
+/* ear, eye and a tusk so it reads as an elephant at a glance */
++'<ellipse fill="var(--tyre)" opacity=".26" cx="723" cy="268" rx="12" ry="14"/>'
++'<circle fill="var(--tyre)" opacity=".7" cx="741" cy="266" r="1.7"/>'
++'<path fill="var(--snow)" d="M741 288 Q751 290 755 295 Q747 292 740 292 Z"/>'
 /* coconut palms leaning over the shore */
 +'<g class="near">'
 +'<path d="M1046 296 C1052 254 1046 220 1056 190 L1063 192 C1053 222 1060 256 1054 298 Z"/>'

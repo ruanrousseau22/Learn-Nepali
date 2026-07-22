@@ -237,6 +237,44 @@ cropped on phones by design** (the hero is `xMidYMax slice`, so a 420px viewport
 shows only viewBox x≈376–824) — that is the documented "calm centered scenery"
 behaviour, not a bug.
 
+**The art is SIZE-INDEPENDENT (July 2026 — Ruan asked for it).** The hero and
+band SVGs used to be `position:absolute;inset:0;height:100%` with
+`preserveAspectRatio="…slice"`, so a narrow screen centre-CROPPED the scene and
+a phone lost everything right of x≈1000 (the Lao house, Sinhala's palms, the
+Mongolian gers). They are now `position:absolute;left:0;right:0;bottom:0;
+width:100%;height:auto`, so the SVG keeps its own 1200×320 (band 1200×200)
+ratio, always spans the full width and is anchored to the bottom edge. **A phone
+now shows exactly the same picture as a desktop, just smaller** — proved by
+measuring the drawn bounds as a fraction of the art box at 375px and 1280px:
+identical element count and identical fractional bounds (x 0→1, y 0.131→1).
+Surplus container height above the art is plain sky, which is what the top of
+the art is anyway; the mobile `min-height`s were trimmed so that band stays
+small. Because nothing is cropped any more, **`art-detail` is no longer hidden on
+phones** — that rule is gone. Consequence for authoring: the old "landmarks
+right of x≈1000 are cropped on phones by design" note NO LONGER APPLIES; use the
+full 0–1200 canvas freely, and only the title safe-zone rule still constrains
+placement.
+
+**Object colours — do NOT default to `var(--tree)`** (Ruan, July 2026: "I don't
+want that dark green rule to be there"). `--tree` is for FOLIAGE ONLY (palm
+fronds, poplars, pomegranate crowns, the Nepali pines). Everything else takes
+the colour of the material it actually is, via vars next to `--tree` in `:root`
+(all have dark-mode variants):
+- `--wood` — boats/hulls, stilt-house posts, beams, ladders, gable finials, palm
+  and fruit-tree TRUNKS
+- `--hide` — horses and other brown animals
+- `--slate` — the Sri Lankan elephant (elephants are grey, not green)
+- `--tyre` — wheels, and dark openings like the Lao doorway/shutter
+Deliberate colour choices worth keeping: Mongolian ger doors are `--crimson`
+(they really are painted orange-red), the Kolkata auto-rickshaw keeps a green
+canopy over an `--orb` amber body (Kolkata autos are green-and-yellow), the Lao
+roof is `--crimson` terracotta over `snow` walls, and the Bengali nouka is a
+`--wood` hull under a `--mtn-mid` straw canopy. When adding art, pick the real
+material colour first; reach for `--tree` only if the thing is leaves.
+The Sinhala elephant was also redrawn at this point — body/head masses, a
+tapering trunk, a darker ear, an eye and a tusk — because once it stopped being
+a flat dark silhouette its shape had to actually read.
+
 **Keep the title zone clear** (Ruan, July 2026 — applies to every language,
 hero AND band): the "Learn X" / "The alphabet …" headings must sit on calm
 sky/water, not in front of hills, houses or peaks. Safe-zone rule of thumb in

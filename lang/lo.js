@@ -46,11 +46,11 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path class="snow" opacity=".3" d="M70 266 Q220 260 370 264 L368 270 Q220 264 74 272 Z"/>'
 +'<path class="snow" opacity=".3" d="M150 278 Q300 270 430 276 L428 282 Q300 274 154 284 Z"/>'
 /* a long-tail boat out on the open water */
-+'<g fill="var(--tree)" aria-hidden="true"><path d="M840 272 Q874 281 908 272 L902 266 L846 266 Z"/></g>'
++'<g fill="var(--wood)" aria-hidden="true"><path d="M840 272 Q874 281 908 272 L902 266 L846 266 Z"/></g>'
 /* mid: the warm Mekong bank */
 +'<path class="mid" d="M0 320 L0 288 Q300 280 600 286 Q900 292 1200 282 L1200 320 Z"/>'
-/* Lao stilt house — pale walls, terracotta roof, dark teak posts & ladder */
-+'<g fill="var(--tree)" aria-hidden="true">'
+/* Lao stilt house — pale walls, terracotta roof, teak posts & ladder */
++'<g fill="var(--wood)" aria-hidden="true">'
 +'<path d="M1022 296 L1022 264 L1027 264 L1027 296 Z M1049 298 L1049 264 L1054 264 L1054 298 Z M1076 296 L1076 264 L1081 264 L1081 296 Z M1101 298 L1101 264 L1106 264 L1106 298 Z"/>'
 +'<path d="M1014 264 L1114 264 L1114 258 L1014 258 Z"/>'
 +'<path d="M1035 296 L1051 262 L1056 262 L1040 296 Z"/>'
@@ -60,10 +60,10 @@ const LO_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path d="M1010 238 L1064 200 L1118 238 L1108 238 L1064 208 L1020 238 Z"/>'
 +'<path d="M1016 240 L1064 206 L1112 240 Z"/>'
 +'</g>'
-/* door & shutter */
-+'<g fill="var(--tree)" aria-hidden="true"><path d="M1056 258 L1056 240 L1068 240 L1068 258 Z"/><path d="M1032 250 L1032 240 L1042 240 L1042 250 Z"/></g>'
+/* door & shutter — dark openings */
++'<g fill="var(--tyre)" aria-hidden="true"><path d="M1056 258 L1056 240 L1068 240 L1068 258 Z"/><path d="M1032 250 L1032 240 L1042 240 L1042 250 Z"/></g>'
 /* gable finials — the Lao rooftop signature */
-+'<g stroke="var(--tree)" stroke-width="3" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M1058 208 L1050 194"/><path d="M1070 208 L1078 194"/></g>'
++'<g stroke="var(--wood)" stroke-width="3" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M1058 208 L1050 194"/><path d="M1070 208 L1078 194"/></g>'
 /* near: green river band with reeds right */
 +'<g class="near"><path d="M0 306 Q160 288 320 300 Q480 312 640 300 Q800 288 960 302 Q1080 310 1200 300 L1200 320 L0 320 Z"/>'
 +'<path d="M1148 306 C1146 284 1147 262 1145 244 L1149 244 C1151 262 1150 284 1152 306 Z M1160 308 C1160 288 1162 268 1161 250 L1165 250 C1166 268 1164 290 1164 308 Z M1174 306 C1172 286 1173 266 1171 250 L1175 250 C1177 266 1176 288 1178 306 Z"/>'
@@ -80,7 +80,7 @@ const LO_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 /* the river band */
 +'<path fill="var(--water)" d="M0 152 Q300 149 600 151 Q900 148 1200 150 L1200 200 L0 200 Z"/>'
 /* longtail boat on the water (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><path d="M986 163 Q1010 170 1038 163 L1032 157 L992 157 Z"/></g>'
++'<g class="art-detail" fill="var(--wood)" aria-hidden="true"><path d="M986 163 Q1010 170 1038 163 L1032 157 L992 157 Z"/></g>'
 +'<path class="mid" d="M0 200 L0 176 Q300 168 600 174 Q900 180 1200 170 L1200 200 Z"/>'
 +'<g class="near"><path d="M0 188 Q300 166 600 178 Q900 190 1200 178 L1200 200 L0 200 Z"/>'
 +'<path d="M1130 190 C1128 172 1129 156 1127 142 L1131 142 C1133 156 1132 174 1134 190 Z M1144 190 C1144 174 1146 158 1145 144 L1149 144 C1150 158 1148 176 1148 190 Z"/>'

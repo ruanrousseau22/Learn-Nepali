@@ -51,10 +51,10 @@ const MN_HERO='<circle class="orb-glow" cx="930" cy="118" r="76"/><circle class=
 +'<path d="M721 280 L755 280 L755 294 L721 294 Z"/>'
 +'</g>'
 /* ger doors + felt bands */
-+'<path fill="var(--tree)" d="M1040 300 L1040 280 L1056 280 L1056 300 Z M1142 300 L1142 286 L1154 286 L1154 300 Z M790 296 L790 284 L802 284 L802 296 Z M733 294 L733 285 L743 285 L743 294 Z"/>'
++'<path fill="var(--crimson)" d="M1040 300 L1040 280 L1056 280 L1056 300 Z M1142 300 L1142 286 L1154 286 L1154 300 Z M790 296 L790 284 L802 284 L802 296 Z M733 294 L733 285 L743 285 L743 294 Z"/>'
 +'<g class="art-detail" fill="none" stroke="var(--mtn-mid)" stroke-width="1.6" opacity=".45" aria-hidden="true"><path d="M1010 262 Q1048 254 1086 262"/><path d="M1008 286 L1088 286"/><path d="M1121 270 Q1148 264 1175 270"/></g>'
 /* grazing horses (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true">'
++'<g class="art-detail" fill="var(--hide)" aria-hidden="true">'
 +'<g transform="translate(826,268)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g>'
 +'<g transform="translate(906,276) scale(0.72)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g>'
 +'</g>'
@@ -67,9 +67,9 @@ const MN_BAND='<circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class=
 +'<path class="mid" d="M0 200 L0 172 Q300 164 600 170 Q900 176 1200 168 L1200 200 Z"/>'
 /* white ger */
 +'<g class="snow"><path d="M880 168 Q880 148 906 148 Q932 148 932 168 Z"/><path d="M883 168 L929 168 L929 184 L883 184 Z"/><path d="M903 148 L903 143 L909 143 L909 148 Z"/></g>'
-+'<path fill="var(--tree)" d="M901 184 L901 172 L911 172 L911 184 Z"/>'
++'<path fill="var(--crimson)" d="M901 184 L901 172 L911 172 L911 184 Z"/>'
 /* grazing horse (fine detail) */
-+'<g class="art-detail" fill="var(--tree)" aria-hidden="true"><g transform="translate(1010,158) scale(0.62)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g></g>'
++'<g class="art-detail" fill="var(--hide)" aria-hidden="true"><g transform="translate(1010,158) scale(0.62)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g></g>'
 +'<g class="near"><path d="M0 186 Q300 168 600 178 Q900 188 1200 178 L1200 200 L0 200 Z"/></g>';
 
 /* --- mascot: chestnut foal (moods: happy / cheer / oops) --- */
