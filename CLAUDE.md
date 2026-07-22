@@ -1173,14 +1173,14 @@ defines `trip`, so any language can get one by adding the same field.
   muted; roman is never gated on `S.rom`. Section `note`s follow the same order —
   they used to lead with script and were rewritten to lead with roman (notes are
   never spoken, so that was audio-neutral).
-- **Page flow** (Ruan asked for it, July 2026 — a phrasebook is used standing in
-  the street, so it must be scannable, not read top to bottom):
-  `starter` is an array of native strings resolved against the sections and
-  pinned at the top as **Start here** — ten lines that stand alone, so the page
-  has an obvious entry point. Below it a **contents chip row** (`tripJump`)
-  opens and scrolls to any section in one tap, with `trouble` accented in
-  crimson because that is the one you need in a hurry. Sections are then
-  **collapsed** (`tripToggle`); only `patterns` opens by default.
+- **Page flow**: the twelve sections are **collapsed** (`tripToggle`) so the page
+  is scannable — a phrasebook is used standing in the street, not read top to
+  bottom — and only `patterns` opens by default. A **Start here** block (a
+  `starter` array of native strings pinned above section 1) and a **contents chip
+  row** (`tripJump`) were both built and then **REMOVED at Ruan's request**, July
+  2026 — do not reintroduce either. The pack field `starter`, the helper
+  `tripJump` and the `.trip-starter`/`.trip-toc`/`.tchip` CSS are all gone with
+  them.
 - **The frame builder** is the teaching centrepiece: `trip.frames[{s,sr,en,t,
   items}]` where `s` is a NATIVE SUFFIX (every Bengali frame is noun-first —
   `X kothay?` / `X achhe?` / `X din` / `X koto?`), so one template covers all

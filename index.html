@@ -656,18 +656,6 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
 .pb-btnrow{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start}
 .pb-btnrow .pb-btn{margin-top:11px}
 /* a phrasebook, not a course: roman leads, script is the quiet third line */
-.trip-starter{background:linear-gradient(180deg,color-mix(in srgb,var(--saffron-soft) 70%,var(--card)),var(--card) 62%);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:18px 20px 16px;margin-bottom:18px}
-.ts-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-.ts-head .ts-t{font-family:'Fraunces','Plus Jakarta Sans',serif;font-optical-sizing:auto;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
-.ts-head .ts-d{font-size:13px;color:var(--ink-soft)}
-.trip-starter .trip-line{background:var(--card)}
-
-.trip-toc{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
-.tchip{font-size:12.5px;font-weight:700;padding:7px 13px;border-radius:100px;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);cursor:pointer;transition:.15s}
-.tchip:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-1px)}
-.tchip.warn{border-color:color-mix(in srgb,var(--crimson) 45%,var(--line));color:var(--crimson)}
-.tchip.warn:hover{border-color:var(--crimson);background:color-mix(in srgb,var(--crimson) 8%,var(--card))}
-
 .trip-sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden}
 .trip-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;text-align:left;padding:15px 18px;background:none;border:0;cursor:pointer;color:var(--ink)}
 .trip-head:hover{background:color-mix(in srgb,var(--zacc) 5%,transparent)}
@@ -713,7 +701,6 @@ footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;co
   .trip-head .tt{font-size:16px}
   .trip-head .td{flex-basis:100%;margin-left:34px;margin-top:-2px}
   .trip-note{font-size:13.5px;padding:9px 12px}
-  .ts-head .ts-t{font-size:20px}
   .tframes{grid-template-columns:1fr}
 }
 /* trip flashcards — the Review flip card, prompting in English */
@@ -1914,19 +1901,8 @@ function buildTrip(){
   if(!T){root.innerHTML='';return;}
   const nat=document.getElementById('trip-native');if(nat)nat.textContent=T.native||'';
   const intro=document.getElementById('trip-intro');if(intro)intro.textContent=T.intro||'';
-  const all=T.sections.reduce(function(a,s){return a.concat(s.lines);},[]);
-  const find=function(n){for(let i=0;i<all.length;i++)if(all[i][0]===n)return all[i];return null;};
-  /* 1 — the ten that stand alone, so the page has an obvious entry point */
-  let html='';
-  const st=(T.starter||[]).map(find).filter(Boolean);
-  if(st.length)html+='<div class="trip-starter"><div class="ts-head"><span class="ts-t">Start here</span>'
-    +'<span class="ts-d">'+st.length+' lines that get you through a day on their own</span></div>'
-    +'<div class="trip-lines">'+st.map(tripLineHTML).join('')+'</div></div>';
-  /* 2 — a contents row, so anything is one tap away when you are standing in the street */
-  html+='<div class="trip-toc" role="list">'+T.sections.map(function(sec){
-    return '<button class="tchip'+(sec.id==='trouble'?' warn':'')+'" onclick="tripJump(\''+sec.id+'\')">'+sec.t+'</button>';}).join('')+'</div>';
-  /* 3 — the sections, collapsed; the frame builder opens by default */
-  html+=T.sections.map(function(sec,i){
+  /* the sections, collapsed; the frame builder opens by default */
+  let html=T.sections.map(function(sec,i){
     const open=(sec.id==='patterns');
     return '<div class="trip-sec'+(open?' open':'')+'" id="tsec-'+sec.id+'" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'">'
       +'<button class="trip-head" aria-expanded="'+open+'" onclick="tripToggle(\''+sec.id+'\')">'
@@ -1964,11 +1940,6 @@ function tfPick(fi,ii){const f=LANG.trip.frames[fi];tfSel[fi]=ii;
 function tripToggle(id){const el=document.getElementById('tsec-'+id);if(!el)return;
   const open=el.classList.toggle('open');
   const h=el.querySelector('.trip-head');if(h)h.setAttribute('aria-expanded',open);}
-function tripJump(id){const el=document.getElementById('tsec-'+id);if(!el)return;
-  el.classList.add('open');
-  const h=el.querySelector('.trip-head');if(h)h.setAttribute('aria-expanded',true);
-  const y=el.getBoundingClientRect().top+window.scrollY-72;
-  window.scrollTo({top:y,behavior:SMOOTH?'smooth':'auto'});}
 function tripShuffle(){openTripCards();tcStart(-2);}
 let tcDeck=[],tcFlipped=false,tcDone=0,tcTotal=0;
 function openTripCards(){document.getElementById('tripcards-modal').classList.add('show');document.body.style.overflow='hidden';tcMenu();}

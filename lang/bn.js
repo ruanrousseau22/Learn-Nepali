@@ -3467,7 +3467,6 @@ const BN_TRIP={
   title:'Short trip',
   native:'অল্প দিনের সফর',
   intro:'Everything here is something you will actually say in Kolkata — ordering tea, stopping a taxi, asking a price, saying thank you properly. Tap any line to hear it.',
-  starter:['নমস্কার','ধন্যবাদ','দাদা','দিদি','ঠিক আছে','না','দাম কত?','বাথরুম কোথায়?','বুঝি না','আসি'],
   frames:[
     {s:' কোথায়?',sr:' kothay?',en:'Where is the ___?',t:'Ask where anything is',
      items:[['বাথরুম','bathroom','bathroom'],['বাজার','bajar','market'],['স্টেশন','steshon','station'],['দোকান','dokan','shop'],['হোটেল','hotel','hotel'],['মেট্রো','metro','metro']]},
