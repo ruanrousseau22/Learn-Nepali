@@ -255,6 +255,25 @@ right of x≈1000 are cropped on phones by design" note NO LONGER APPLIES; use t
 full 0–1200 canvas freely, and only the title safe-zone rule still constrains
 placement.
 
+**Language-switch flash — `applyArt` order is load-bearing.** The old code set
+`hero.innerHTML` FIRST and flipped `data-lang` after, so the incoming scenery was
+inserted while the palette still belonged to the outgoing language. Chromium runs
+both in one task and never paints between them, but **iOS Safari can repaint an
+existing SVG subtree when a `:root` custom property changes**, which showed as
+one language's scenery briefly wearing another's colours (Ruan saw this on his
+phone; it does NOT reproduce in the desktop preview). `applyArt` now clears the
+old art, THEN sets `data-lang`, THEN inserts the new art, so the worst any stray
+frame can show is empty sky already in the new palette. It also adds a 220ms
+`.art-in` fade (disabled under `prefers-reduced-motion`). **Do not "simplify"
+that order back.** This matters more since lo/si art references `var(--water)`,
+which is undefined under any other language's palette.
+
+**The header stays responsive — that is separate from the art.** Breakpoints:
+≤820px tabs collapse to the hamburger, ≤700px the mode name hides (globe only),
+≤600px the bar and logo shrink, ≤560px the language name hides (flag only). The
+size-independent art change did not touch any of these and they were re-verified
+after it.
+
 **Object colours — do NOT default to `var(--tree)`** (Ruan, July 2026: "I don't
 want that dark green rule to be there"). `--tree` is for FOLIAGE ONLY (palm
 fronds, poplars, pomegranate crowns, the Nepali pines). Everything else takes

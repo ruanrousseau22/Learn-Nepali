@@ -167,6 +167,9 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
    SAME whole scene as a desktop, just smaller. Any surplus container height is
    plain sky above it, which is what the top of the art is anyway. */
 .hero-mtns{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;display:block}
+.art-in{animation:artIn .22s ease-out both}
+@keyframes artIn{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.art-in{animation:none}}
 .hero-mtns .far{fill:var(--mtn-far)}
 .hero-mtns .mid{fill:var(--mtn-mid)}
 .hero-mtns .near{fill:var(--mtn-near)}
@@ -2154,9 +2157,20 @@ function applyArt(){
   const hero=document.querySelector('.hero-mtns'),bands=document.querySelectorAll('.pb-mtns');
   if(!ART_DEFAULT)ART_DEFAULT={hero:hero?hero.innerHTML:'',bands:[...bands].map(p=>p.innerHTML)};
   const a=LANG.art||{};
+  /* Order matters. The outgoing scenery is removed BEFORE the palette flips and
+     the incoming scenery is added AFTER, so there is no state — not even one
+     WebKit repaint — where one language's shapes are painted in another
+     language's colours. (Chromium does this in a single task and never shows it;
+     iOS Safari can repaint an existing SVG subtree when a :root custom property
+     changes, which is what made the old order flash.) The worst any stray frame
+     can now show is empty sky, which already matches the new palette. */
+  if(hero)hero.innerHTML='';
+  bands.forEach(p=>{p.innerHTML='';});
+  document.documentElement.setAttribute('data-lang',LANG.code);
   if(hero)hero.innerHTML=a.hero||ART_DEFAULT.hero;
   bands.forEach((p,i)=>{p.innerHTML=a.band||ART_DEFAULT.bands[i];});
-  document.documentElement.setAttribute('data-lang',LANG.code);}
+  /* a short fade so the swap reads as a change of scene, not a pop */
+  [hero,...bands].forEach(el=>{if(!el)return;el.classList.remove('art-in');void el.offsetWidth;el.classList.add('art-in');});}
 function paintLangPicker(){const row=document.getElementById('lang-row');if(!row)return;
   row.style.display=LANG_CATALOG.length>1?'':'none';
   const sel=document.getElementById('lang-select');if(!sel)return;sel.innerHTML='';
