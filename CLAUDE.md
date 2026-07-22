@@ -1142,7 +1142,7 @@ defines `trip`, so any language can get one by adding the same field.
   note?, lines:[[native, rom, english]]}], frames:[...]}` (`BN_TRIP` in
   `lang/bn.js`, just before `registerPack`). `title` drives the h2 via
   `#trip-title`. There is **no `intro`** — the sentence card under the heading
-  was removed at Ruan's request, along with the field. Bengali ships **14 sections / 164 lines**: `first,
+  was removed at Ruan's request, along with the field. Bengali ships **14 sections / 151 lines**: `first,
   polite, meet, patterns, hear, numbers, ride, way, eat, guest, shop, stay,
   trouble, connect`. The `patterns` section is the load-bearing one — four
   sentence frames (X kothay? / X achhe? / X din / X koto?) that generate most of
@@ -1170,6 +1170,21 @@ defines `trip`, so any language can get one by adding the same field.
   (আসি goodbye / আশি 80). They cannot be romanized apart, so the **gloss** must
   carry the disambiguation. (7) The `X koto?` frame had `দাম` price as an item,
   generating the tautology "How much is the price?"; replaced with `এটা` this.
+- **Trim pass, July 2026 (Ruan: make sure it is all relevant, not too many
+  words).** 13 lines cut for not earning their place: bare nouns the page
+  already covers inside a sentence (`desh`, `rasta`), grammar a fortnight
+  visitor never builds (`amader`), English loanwords that teach nothing
+  (`phon`, `nombor`, `tram`), lines duplicated in a better section (`dam koto`
+  and `nebo` in `patterns`, `thik achhe` in `stay`, `bhalo thakben` in `meet`),
+  a near-twin (`apni ki jaben` — bare `jaben` is the real street usage),
+  something the frame builder already generates (`jol chai`), and `kolkata`
+  (they can say their own city's name). Glosses were cut to the fact:
+  parentheticals that merely restated the section note are gone.
+  **Every line must be something a visitor SAYS or HEARS, not a dictionary
+  entry.**
+- **Naturalness fix:** `bujhi` is the habitual "I understand"; what you actually
+  say in the moment is **`bujhechhi`**. It was already recorded for the course,
+  so the change cost no audio.
 - **`guest` exists because of who this was built for** — a short-term team is
   hosted and fed constantly, and Bengali hospitality expects a refusal to take
   about three tries. `arektu?` (what they will be asked) and `pet bhore gechhe`
@@ -1208,7 +1223,8 @@ defines `trip`, so any language can get one by adding the same field.
   existing strings file stayed byte-identical (all 7 others still `--check`
   MATCH). 116 of the 120 lines were already recorded course vocabulary, which is
   why only 4 new clips were needed at launch; the July 2026 content pass added
-  27 more. `audio_strings_bn.json` is now **1427 strings / manifest 1424 keys**
+  27 more, and the trim pass gave one back. `audio_strings_bn.json` is now
+  **1426 strings / manifest 1423 keys**
   (the 3 bare signs ং ঃ ঁ still fall back to device TTS). **The frame builder's
   assembled sentences are spoken too** — the extractor walks
   `trip.frames[].items[][0]+f.s` after the trip lines.
