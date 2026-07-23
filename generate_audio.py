@@ -108,6 +108,16 @@ LANGS = {
         "outdir": "audio-lof",
         "voices": {"male": "lo-LA-ChanthavongNeural", "female": "lo-LA-KeomanyNeural"},
     },
+    "jvf": {
+        "strings": "audio_strings_jvf.json",
+        "outdir": "audio-jvf",
+        "voices": {"male": "jv-ID-DimasNeural", "female": "jv-ID-SitiNeural"},
+    },
+    "uzf": {
+        "strings": "audio_strings_uzf.json",
+        "outdir": "audio-uzf",
+        "voices": {"male": "uz-UZ-SardorNeural", "female": "uz-UZ-MadinaNeural"},
+    },
     "urf": {
         "strings": "audio_strings_urf.json",
         "outdir": "audio-urf",
