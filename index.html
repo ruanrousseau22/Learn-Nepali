@@ -500,6 +500,10 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .modal .msg-line.ok{color:var(--teal)} .modal .msg-line.err{color:var(--bad)}
 
 footer{border-top:1px solid var(--line-soft);padding:26px 0;text-align:center;color:var(--ink-soft);font-size:13px;margin-top:24px}
+.foot-langs{font-size:12.5px;line-height:2;color:var(--ink-soft);max-width:760px;margin:0 auto 12px}
+.foot-langs a{color:var(--ink-soft);text-decoration:none}
+.foot-langs a:hover{color:var(--crimson)}
+.foot-meta{opacity:.9}
 .spk{cursor:pointer;color:var(--crimson);background:color-mix(in srgb,var(--crimson) 9%,transparent);border:none;font-size:.6em;display:inline-grid;place-items:center;width:1.6em;height:1.6em;border-radius:50%;transition:.14s}
 .spk:hover{background:color-mix(in srgb,var(--crimson) 18%,transparent);transform:scale(1.06)}
 .spk svg,.li-bigbtn svg{display:block}
@@ -1603,7 +1607,12 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   <input type="text" name="context">
 </form>
 
-<footer><div class="wrap">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div></footer>
+<footer><div class="wrap">
+  <nav class="foot-langs" aria-label="Language courses">Learn:
+    <a href="/learn-nepali">Nepali</a> · <a href="/learn-khmer">Khmer</a> · <a href="/learn-burmese">Burmese</a> · <a href="/learn-bengali">Bengali</a> · <a href="/learn-sinhala">Sinhala</a> · <a href="/learn-lao">Lao</a> · <a href="/learn-pashto">Pashto</a> · <a href="/learn-mongolian">Mongolian</a> · <a href="/learn-urdu">Urdu</a> · <a href="/learn-uzbek">Uzbek</a> · <a href="/learn-javanese">Javanese</a>
+  </nav>
+  <div class="foot-meta">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div>
+</div></footer>
 
 <!-- defer: without it the whole app waits on a third-party CDN before boot() can
      start, which matters on the constrained networks many learners are on.
@@ -2870,6 +2879,11 @@ function savedLang(){
 }
 (async function boot(){
   let want=savedLang();
+  /* ?lang=<code> deep-link: the SEO landing pages (/learn-sinhala …) send
+     a learner straight into their course. Only honor a known code. */
+  let deepLang=null;
+  try{const q=new URLSearchParams(location.search).get('lang');
+    if(q&&typeof LANG_CATALOG!=='undefined'&&LANG_CATALOG.some(l=>l.code===q)){want=q;deepLang=q;}}catch(e){}
   if(!PACKS[want])await loadLangScript(want);
   if(!PACKS[want]&&want!=='ne'){want='ne';if(!PACKS.ne)await loadLangScript('ne');} /* bad/missing pack: fall back */
   if(!PACKS[want]){
@@ -2878,7 +2892,9 @@ function savedLang(){
     return;
   }
   applyPack(want);
-  load();applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
+  load();
+  if(deepLang)S.mode='learn'; /* a /learn-X deep-link always opens the course, even if last session was faith mode */
+  applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
   S.lang=LANG.code; /* keep state and the loaded pack in agreement */
   applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();paintModeSwitch();initFaithMode();
 })();
