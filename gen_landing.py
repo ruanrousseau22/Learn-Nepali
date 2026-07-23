@@ -76,10 +76,7 @@ def jsonld(d, name, slug, desc):
         "@context": "https://schema.org", "@type": "Course",
         "name": "Learn %s" % name, "description": desc,
         "inLanguage": "en", "teaches": name, "educationalLevel": "Beginner",
-        "isAccessibleForFree": True,
         "provider": {"@type": "Organization", "name": "Bhasaly", "url": ORIGIN + "/"},
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
-                   "availability": "https://schema.org/InStock"},
         "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online",
                               "courseWorkload": "PT30M",
                               "instructor": {"@type": "Organization", "name": "Bhasaly"}},
@@ -111,9 +108,9 @@ def faq_pairs(d):
                     "audio, before building into words and sentences."
                     % SCRIPT_NAME.get(d['code'], name + ' script'))
     return [
-        ("Is the %s course on Bhasaly free?" % name,
-         "Yes. Every lesson across all %d levels is completely free, with no ads and no "
-         "paywall." % d['zones']),
+        ("Do I need an account to learn %s?" % name,
+         "No. You can start straight away in your browser. Logging in with an email is "
+         "optional and simply syncs your progress across your devices."),
         ("Do I need to know the %s alphabet first?" % name, script_q),
         ("Is there audio for %s?" % name,
          "Yes — every word and phrase plays a clear recorded audio clip, so you pick up "
@@ -131,12 +128,12 @@ def page(d, others):
     dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
     ncls = "native"
     url = "%s/learn-%s" % (ORIGIN, slug)
-    title = "Learn %s Free — Lessons, Alphabet & Audio | Bhasaly" % name
-    desc = ("Learn %s free with Bhasaly: %d short lessons across %d levels, the alphabet, "
+    title = "Learn %s — Lessons, Alphabet & Audio | Bhasaly" % name
+    desc = ("Learn %s with Bhasaly: %d short lessons across %d levels, the alphabet, "
             "recorded audio, and the essential words and phrases — greetings, numbers and "
             "more. Works on any phone or computer." % (name, d['lessons'], d['zones']))
     kw = ("learn %s, %s for beginners, %s alphabet, %s phrases, %s words, speak %s, "
-          "free %s course, %s lessons" % ((name,) * 8)).lower()
+          "%s course, %s lessons" % ((name,) * 8)).lower()
 
     # essentials
     essentials = rows_table(d['srsSeed'], ncls, dir_attr, 3)
@@ -173,7 +170,7 @@ def page(d, others):
         rtl=(' dir="rtl"' if code in RTL else ''),
         name=esc(name), native=esc(native), code=code,
         zones=d['zones'], topics=d['topics'], lessons=d['lessons'],
-        desc_intro=("Bhasaly's free %s course takes you from your very first words to "
+        desc_intro=("Bhasaly's %s course takes you from your very first words to "
                     "everyday conversation across %d levels — %d topics and %d short, "
                     "tap-based lessons (no typing required). %s Along the way you will pick "
                     "up essential greetings, numbers, and useful phrases, each with a "
@@ -274,20 +271,20 @@ footer a{{color:var(--soft)}}
 <body>
 <header><div class="wrap">
   <a class="logo" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/></svg>Bhasaly</a>
-  <a class="hlink" href="/?lang={code}">Open the app &rarr;</a>
+  <a class="hlink" href="/?lang={code}">Open Bhasaly &rarr;</a>
 </div></header>
 
 <main>
 <section class="hero"><div class="wrap">
   <h1>Learn {name}</h1>
   <div class="nat native"{rtl}>{native}</div>
-  <p>Free lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
-  <a class="cta" href="/?lang={code}">Start learning &mdash; it&rsquo;s free</a>
+  <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
+  <a class="cta" href="/?lang={code}">Start learning</a>
   <div class="stats">
     <div class="stat"><b>{zones}</b><span>levels</span></div>
     <div class="stat"><b>{topics}</b><span>topics</span></div>
     <div class="stat"><b>{lessons}</b><span>lessons</span></div>
-    <div class="stat"><b>Free</b><span>no ads</span></div>
+    <div class="stat"><b>Audio</b><span>every word</span></div>
   </div>
 </div></section>
 
@@ -315,12 +312,12 @@ footer a{{color:var(--soft)}}
   </section>
 
   <section class="endcta">
-    <a class="cta" href="/?lang={code}">Start the free {name} course</a>
+    <a class="cta" href="/?lang={code}">Start the {name} course</a>
   </section>
 
   <section class="block">
     <h2>Learn another language</h2>
-    <p class="lead">Bhasaly teaches under-served Asian languages, all free.</p>
+    <p class="lead">Bhasaly teaches under-served Asian languages.</p>
     <div class="others">{other_links}</div>
   </section>
 </div>
