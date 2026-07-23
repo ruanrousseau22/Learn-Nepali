@@ -2460,7 +2460,8 @@ const LO_Z10=[
 {t:'fill',q:'Ask "how many children?"',s:'ມີລູກ ___ ຄົນ',o:['ຈັກ','ເທົ່າໃດ','ໃສ','ຫຍັງ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ອາຍຸເທົ່າໃດ','how old?'],['ແຕ່ງງານແລ້ວ','married'],['ໂສດ','single'],['ມີລູກ','have children']]},
 {t:'mc',q:'To count children, use the people-counter…',o:['ຄົນ','ໂຕ','ອັນ','ຄັນ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ໂສດ',o:['ໂສດ','ອາຍຸ','ມີລູກ','ຈັກຄົນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ໂສດ',o:['ໂສດ','ອາຍຸ','ມີລູກ','ຈັກຄົນ'],a:0},
+{t:'match',q:'Review — match the family word',pairs:[['ແມ່','mother'],['ພໍ່','father'],['ອ້າຍ','older brother'],['ເອື້ອຍ','older sister'],['ນ້ອງ','younger sibling']]}]},
 {id:'lo_smalltalk_5',title:'Checkpoint',step:'checkpoint',meta:'Small talk mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask "how old are you?"',o:['ອາຍຸເທົ່າໃດ','ຊື່ຫຍັງ','ໄປໃສ','ຈັກໂມງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ແຕ່ງງານແລ້ວ',o:['ແຕ່ງງານແລ້ວ','ອາຍຸເທົ່າໃດ','ມີລູກ','ໂສດ'],a:0},
@@ -2468,7 +2469,8 @@ const LO_Z10=[
 {t:'wb',q:'Build: "how old are you?"',a:['ເຈົ້າ','ອາຍຸ','ເທົ່າໃດ'],pool:['ເຈົ້າ','ອາຍຸ','ເທົ່າໃດ','ໃສ']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ອາຍຸ','age'],['ໂສດ','single'],['ແຕ່ງງານແລ້ວ','married'],['ມີລູກ','have children'],['ຈັກຄົນ','how many people?']]},
 {t:'mc',q:'Answer age with ອາຍຸ + number + …',o:['ປີ (year)','ໂມງ','ຄົນ','ກີບ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ອາຍຸ',o:['ອາຍຸ','ໂສດ','ມີລູກ','ຈັກຄົນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ອາຍຸ',o:['ອາຍຸ','ໂສດ','ມີລູກ','ຈັກຄົນ'],a:0},
+{t:'mc',q:'Which means "older sister"?',o:['ເອື້ອຍ','ອ້າຍ','ແມ່','ນ້ອງ'],a:0}]},
 
 {id:'lo_learner',title:'Learner lifelines',step:'learn',meta:'Keep a conversation going',vocab:[['ເວົ້າຊ້າໆ','vao saa saa','speak slowly'],['ເວົ້າຄືນ','vao kheun','say it again'],['ພາສາລາວ','phaasaa lao','the Lao language'],['ວ່າແນວໃດ','vaa naew dai','how do you say?'],['ບໍ່ເຂົ້າໃຈ','baw khao jai','do not understand'],['ຮູ້ໜ້ອຍໜຶ່ງ','huu noi neung','I know a little']],ex:[
 {t:'note',tag:'Slow down, please',q:'ເວົ້າຊ້າໆ · ເວົ້າຄືນ',body:'<p>Two lifesavers: <span class="deva">ເວົ້າຊ້າໆ</span> <b>vao saa saa</b> = "please speak slowly", and <span class="deva">ເວົ້າຄືນ</span> <b>vao kheun</b> = "say it again". (<span class="deva">ຊ້າໆ</span> repeats ຊ້າ "slow" to soften it.)</p>',eg:[['ເວົ້າຊ້າໆ','vao saa saa','speak slowly'],['ເວົ້າຄືນ','vao kheun','say it again']]},
