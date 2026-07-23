@@ -16,7 +16,7 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   deploy). **Supabase** handles
   login + progress sync (keys already in the HTML — don't touch).
 - Owner: Ruan (Mac user). Prefers highly specific, actionable help.
-- **Status (July 2026):** ALL EIGHT courses COMPLETE at 12 zones each —
+- **Status (July 2026):** ALL ELEVEN courses COMPLETE at 12 zones each —
   Nepali (main 12 zones / 385 lessons + the Intensive track), Khmer
   (12 zones / 420 lessons), Burmese (12 zones / 420 lessons), Sinhala
   (12 zones / 420 lessons), **Lao** (12 zones / 74 topics / 370 lessons,
@@ -824,10 +824,11 @@ making it home. Culture kept secular per the house rule: batik, warung, pasar,
 sawah, gamelan, slametan, gotong royong — no candi, and wayang is skipped
 because it is tied to Hindu epics. Audio via `jv-ID-DimasNeural`.
 
-**Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
-plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the
-caveat that the only voice is IRANIAN Persian, so it must ship as Persian and
-not be mislabelled Dari.
+**Urdu, Uzbek and Javanese are DONE** (July 2026) — courses at 12 zones each
+AND faith packs, all shipped; `ROADMAP.md` holds the staged plan they were
+built from. Next candidate: Persian/Dari (`fa-IR`), with the caveat that the
+only voice is IRANIAN Persian, so it must ship as Persian and not be
+mislabelled Dari.
 
 **AUDIO IS THE GATE — check it before promising any language.** The pipeline is
 edge-tts, and a course with no clips is not shippable: no mainstream OS ships a
@@ -1644,11 +1645,13 @@ course language now has a skeleton pack and the faith picker lists all 8
   `ne-NP-SagarNeural` voice as the course). `playFile` checks the course
   manifest first, then `FAITH_KEYS` (loaded by `loadFaithManifest`).
 - **Multi-language faith packs (July 2026): every course language has one.**
-  `FAITH_CATALOG` lists all 8. **TRANSLATION STATUS — Nepali (original),
-  Bengali and Burmese are FULLY TRANSLATED and shipped; Khmer, Lao,
-  Mongolian, Pashto and Sinhala are still STRUCTURE-ONLY skeletons.** See
-  the "Faith translation backlog" section below for the remaining work and
-  the exact method. A skeleton = the same two stories / 10+10 sections /
+  `FAITH_CATALOG` lists all 11. **TRANSLATION STATUS — ALL ELEVEN are
+  fully translated and shipped (ne bn my km lo mn ps si ur uz jv), 181
+  clips each. There are no skeletons left.** See the "Faith translation
+  backlog" section below for the per-language vocabulary decisions and the
+  method, which still applies if a THIRD story is ever authored — it would
+  have to be written in ne first and then run through the same generator
+  for the other ten. A skeleton was = the same two stories / 10+10 sections /
   shared scene art as ne (the `FNE_ART` emblems copied as `F<CODE>_ART`),
   English titles in place, `ne:''` native fields + `paras:[]` empty, a
   header documenting exactly how to translate (the `ne` field name always
@@ -1735,8 +1738,75 @@ Vocabulary: පාපය sin / විශ්වාසය faith / ආදරය lov
 disciple / පූජාව sacrifice / පිටුවහල් කිරීම exile / රාජ්‍යය kingdom /
 උත්ථානය resurrection.
 
-**THE BACKLOG IS COMPLETE — all 8 faith packs are translated and shipped
-(ne, bn, my, km, lo, mn, ps, si), 181 clips each.**
+**ur** (Urdu, 181 clips in `audio-urf/`, July 2026). Vocabulary from the
+**Urdu Revised Version**, the translation Pakistani churches use, verified
+against its John 3:16-17 text: خدا Khuda God (**never** اللہ Allah), یسوع
+Yisu Jesus (**never** the Muslim عیسیٰ Isa — note this is the OPPOSITE call
+from Uzbek below), خداوند Khudawand LORD, بیٹا Son, گناہ gunah sin, نجات
+nijat salvation, ایمان imaan faith, صلیب salib cross, روح القدس
+Rooh-ul-Quds Holy Spirit, عہد ahd covenant, نبی nabi prophet, شاگرد
+shagird disciple, قربانی qurbani sacrifice, بادشاہی baadshaahi kingdom,
+خوشخبری khushkhabri gospel, ہیکل haikal temple, برہ barra lamb, plus the
+URD's own **کے وسیلے سے** "by means of" idiom. Register is plain
+respectful Urdu — no royal-verb system as in Khmer or Lao. Nastaliq and
+RTL were already handled by the course build (`RTL_CODES` and the
+`:is([data-lang="ps"],[data-lang="ur"])` faith rules), so no new CSS.
+**uz** (Uzbek, 181 clips in `audio-uzf/`, July 2026). Vocabulary from the
+**Muqaddas Kitob**, verified against its Mark/John text: Xudo God, **Iso**
+Jesus, Rabbiy Lord, Oʻgʻli Son, gunoh sin, najot salvation, Muqaddas Ruh
+Holy Spirit, Xudoning Shohligi kingdom, Xushxabar gospel, xoch cross, ahd
+covenant, paygʻambar prophet, shogird disciple, qurbonlik sacrifice,
+maʼbad temple, Qoʻzi lamb. **The Iso/Yisu contrast with Urdu is the point:
+research each language's own Bible rather than reasoning by analogy.**
+Respect rides on capitalising divine pronouns (U, Oʻz, Oʻzi), as that
+Bible does. No `digits[]` — Uzbek writes Western numerals.
+**jv** (Javanese, 181 clips in `audio-jvf/`, July 2026 — the last one).
+Vocabulary from the **Kitab Sutji**, verified against Yokanan 3: Gusti
+Allah God, Gusti Yesus Jesus, **Panjenengane** the honorific third person
+for both, dosa sin, kaslametan salvation, Juru Slamet Rescuer, salib
+cross, Roh Suci Holy Spirit, prajanjian covenant, nabi prophet, murid
+disciple, kurban sacrifice, Padaleman Suci temple, Cempe lamb, pracaya
+believe, Kratoning Allah kingdom, Kabar Becik good news. **Register: the
+Sinhala call again.** The Kitab Sutji is formal/krama but `lang/jv.js`
+teaches ngoko, so the prose is accessible and respect rides on the
+honorific words for God and Jesus (rawuh, ngandika, seda, wungu, miyos,
+paring). The Lord's Prayer is the one deliberate krama exception.
+
+**THE BACKLOG IS COMPLETE — all 11 faith packs are translated and shipped
+(ne, bn, my, km, lo, mn, ps, si, ur, uz, jv), 181 clips each.**
+
+### Building a faith pack: traps the ur/uz/jv round exposed
+The generator lives in `scratchpad/faith/gen_faith.py` and the method above
+still holds. Four defects it had, all now fixed — check for them if it is
+ever rewritten:
+- **`check_rom` NORMALISES and returns** (em dash → " - "); an earlier
+  `build()` called it for its assertion but wrote the RAW string, so
+  typographic punctuation leaked into ASCII-only romanizations.
+- **`overview.start` is a `[native, English]` pair**, not a string. Emitting
+  only the native made `start[1]` the second CHARACTER.
+- **Section id ≠ art key**: `crossgs` uses `FNE_ART.cross`. Read the mapping
+  out of `faith/ne.js` rather than assuming — and note ne.js quotes with
+  `'`, not `"`, which a first regex missed.
+- **Languages writing Western numerals carry NO `digits[]` at all** (mn, si,
+  uz, jv) — `fnum()` falls through to `String(n)`.
+**Latin-script faith packs need their own guards.** There is no script regex
+to catch a stray lookalike, and a Cyrillic а/с/о/и/г is invisible on review:
+two slipped into Uzbek (`barakа`, `ulovига`) and were caught only by an
+explicit assert. Uzbek also needs **U+02BB** for oʻ/gʻ and **U+02BC** for the
+tutuq belgisi — an ASCII apostrophe would break the inline onclick handlers.
+`check(s, where, latin=True)` asserts against both.
+**Javanese romanization must be checked mechanically, not by eye.** The rule
+is /a/ → o in an open final syllable, spreading leftward through open /a/
+syllables (basa→boso, pracaya→procoyo), and it does NOT apply when the final
+syllable is closed or suffixed (`kapracayan`, `dosane` stay as written).
+`scratchpad/faith/jv_romcheck.py` builds a lexicon from `lang/jv.js` itself
+and checks every word; it caught 15 misses, mostly `ora`→`oro`.
+**But do not let that lexicon drive an automatic FIXER.** `lang/jv.js`
+contains a misaligned row mapping `regane`→`rega`, and the fixer rewrote
+"regane wis lunas dibayar" into a different word. The lexicon now only
+accepts pairs that are the same word modulo a→o. **This is the same
+bulk-automation trap recorded for the gloss-consistency sweep — it applies
+to romanization too: verify with a script, edit by hand.**
 
 ### Faith-mode audit (July 2026) — what it found, and the rules it set
 A full health check ran over all 8 packs (content, translation, code, audio,
