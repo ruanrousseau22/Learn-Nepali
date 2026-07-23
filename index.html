@@ -492,6 +492,8 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .modal p{color:var(--ink-soft);font-size:14px;margin-bottom:18px}
 .modal input{width:100%;font-size:16px;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);color:var(--ink);margin-bottom:12px}
 .modal input:focus{outline:none;border-color:var(--saffron)}
+.modal textarea{width:100%;font-size:15px;line-height:1.5;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);color:var(--ink);margin-bottom:12px;font-family:inherit;resize:vertical;min-height:104px}
+.modal textarea:focus{outline:none;border-color:var(--saffron)}
 .modal .btn{width:100%;justify-content:center}
 .modal .close{float:right;background:none;border:none;color:var(--ink-soft);font-size:22px;cursor:pointer;margin-top:-10px;margin-right:-6px}
 .modal .msg-line{font-size:13px;margin-top:12px;text-align:center}
@@ -1304,6 +1306,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <div class="set-row"><div><div class="label">Daily XP goal</div><div class="desc">Tracked in your profile</div></div><select id="set-goal" onchange="changeGoal()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)"><option value="20">20 · easy</option><option value="50">50 · steady</option><option value="100">100 · serious</option><option value="200">200 · intense</option></select></div>
       <div class="set-row"><div><div class="label">Pronunciation voice</div><div class="desc" id="voice-status">Detecting voices…</div></div><select id="voice-select" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:190px"></select></div>
       <div class="set-row"><div><div class="label">Additional content</div><div class="desc" id="unlock-desc">Have an access code? Enter it to unlock extra content</div></div><span style="display:flex;gap:8px;align-items:center"><input id="unlock-code" type="text" autocomplete="off" autocapitalize="off" placeholder="Code" onkeydown="if(event.key==='Enter')applyCode()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);width:90px;font-family:inherit"><button class="iconbtn" onclick="applyCode()">Unlock</button></span></div>
+      <div class="set-row"><div><div class="label">Report an error or suggestion</div><div class="desc">Spotted a wrong translation, romanization or audio clip? Let us know</div></div><button class="iconbtn" onclick="openFeedback()">Send feedback</button></div>
       <div class="set-row"><div><div class="label">Reset all progress</div><div class="desc">Clears XP, streak, lessons, reviews</div></div><button class="danger-btn" onclick="resetAll()">Reset</button></div>
     </div>
   </div>
@@ -1577,6 +1580,29 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   </div>
 </div>
 
+<!-- FEEDBACK / ERROR REPORT -->
+<div class="modal-bg" id="feedback-modal">
+  <div class="modal">
+    <button class="close" onclick="closeFeedback()" aria-label="Close">×</button>
+    <h3>Report an error</h3>
+    <p>Spotted a wrong translation, romanization or audio clip — or have a suggestion to improve a course? Send it here and it goes straight to the team for review.</p>
+    <textarea id="fb-message" rows="4" placeholder="Describe the issue — which language, and what's wrong. The more detail, the faster it's fixed."></textarea>
+    <input id="fb-email" type="email" autocomplete="email" placeholder="Your email (optional — only if you'd like a reply)">
+    <button class="btn btn-primary" id="fb-send" onclick="sendFeedback()">Send feedback</button>
+    <div class="msg-line" id="fb-msg"></div>
+  </div>
+</div>
+<!-- Netlify Forms detection stub. Netlify's build bots register this static
+     form; the real submission is the fetch POST in sendFeedback(). The
+     notification email address is configured ONLY in the Netlify dashboard
+     (Forms → notifications) and never appears anywhere in this page. -->
+<form name="feedback" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true">
+  <input type="text" name="bot-field">
+  <textarea name="message"></textarea>
+  <input type="email" name="email">
+  <input type="text" name="context">
+</form>
+
 <footer><div class="wrap">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div></footer>
 
 <!-- defer: without it the whole app waits on a third-party CDN before boot() can
@@ -1689,6 +1715,41 @@ async function sendMagicLink(){const email=document.getElementById('auth-email')
   try{const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.href}});if(error)throw error;m.className='msg-line ok';m.textContent='Check your inbox for the sign-in link!';}
   catch(e){m.className='msg-line err';m.textContent=e.message||'Could not send link.';}}
 async function signOut(){if(sb)await sb.auth.signOut();user=null;onAuthChange();closeAuth();}
+
+/* ===== FEEDBACK / ERROR REPORT (Settings) =====
+   Submits to Netlify Forms. The owner's email lives only in the Netlify
+   dashboard's form notifications, so it never appears in the page or the
+   network payload. Context is auto-captured so a report says WHERE it happened
+   without the reporter having to explain. */
+function openFeedback(){const t=document.getElementById('tabs');if(t)t.classList.remove('open');const m=document.getElementById('fb-msg');m.className='msg-line';m.textContent='';document.getElementById('feedback-modal').classList.add('show');setTimeout(()=>{const a=document.getElementById('fb-message');if(a)a.focus();},60);}
+function closeFeedback(){document.getElementById('feedback-modal').classList.remove('show');}
+function feedbackContext(){
+  const view=document.querySelector('.view.active');
+  let c='lang='+((typeof LANG!=='undefined'&&LANG&&LANG.code)||'?')+' mode='+((S&&S.mode)||'learn')+' view='+((view&&view.id)||'?');
+  if(typeof FVIEW!=='undefined'&&FVIEW&&FVIEW.sid)c+=' story='+FVIEW.sid+'#'+FVIEW.i;
+  const ex=document.getElementById('view-exercise');
+  if(ex&&ex.classList.contains('active')&&typeof LESSONS!=='undefined'&&typeof curL!=='undefined'&&LESSONS[curL])c+=' lesson='+LESSONS[curL].id;
+  try{c+=' | '+navigator.language+' '+(window.screen?screen.width+'x'+screen.height:'')+' | '+location.hostname;}catch(e){}
+  return c;
+}
+async function sendFeedback(){
+  const msg=document.getElementById('fb-message').value.trim();
+  const email=document.getElementById('fb-email').value.trim();
+  const line=document.getElementById('fb-msg');
+  if(msg.length<4){line.className='msg-line err';line.textContent='Please describe the issue first.';return;}
+  const btn=document.getElementById('fb-send');btn.disabled=true;
+  line.className='msg-line';line.textContent='Sending…';
+  const body=new URLSearchParams({'form-name':'feedback','bot-field':'',message:msg,email:email,context:feedbackContext()});
+  try{
+    const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body.toString()});
+    if(!r.ok)throw new Error('status '+r.status);
+    line.className='msg-line ok';line.textContent='Thank you — your feedback was sent.';
+    document.getElementById('fb-message').value='';document.getElementById('fb-email').value='';
+    setTimeout(closeFeedback,1500);
+  }catch(e){
+    line.className='msg-line err';line.textContent='Could not send right now. Please check your connection and try again.';
+  }finally{btn.disabled=false;}
+}
 
 /* ===== AUDIO: recorded files first, speech-synthesis as fallback =====
    AUDIO_BASE comes from the active language pack (applyPack) */
@@ -2047,7 +2108,7 @@ function askConfirm(title,msg,okLabel,onOk){document.getElementById('cf-title').
 function closeConfirm(){document.getElementById('confirm-modal').classList.remove('show');cfOnOk=null;}
 document.getElementById('cf-ok').onclick=()=>{const f=cfOnOk;closeConfirm();if(f)f();};
 /* shared modal behavior: click the backdrop or press Escape to close any open modal */
-function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='alphacards-modal')closeAlphaCards();else if(id==='auth-modal')closeAuth();else if(id==='confirm-modal')closeConfirm();}
+function closeModalById(id){if(id==='levelup-modal')closeLevelup();else if(id==='profile-modal')closeProfile();else if(id==='resources-modal')closeResources();else if(id==='alphacards-modal')closeAlphaCards();else if(id==='auth-modal')closeAuth();else if(id==='feedback-modal')closeFeedback();else if(id==='confirm-modal')closeConfirm();}
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModalById(m.id);}));
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const open=document.querySelector('.modal-bg.show');if(open){e.preventDefault();e.stopImmediatePropagation();closeModalById(open.id);}});
 
