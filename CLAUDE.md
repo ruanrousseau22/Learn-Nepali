@@ -1792,6 +1792,22 @@ retellings, and descriptive where honest (`Malachi → Matthew` for the 400
 silent years, `Matthew 7 (the close)`); that is not an inconsistency to fix.
 Only 2 paragraphs carry no reference and both are the closing hand-offs.
 
+**The two OVERVIEW illustrations were replaced (July 2026, Ruan: the other art
+is good but "the first 2 pictures I dont really like").** `ovstory` was an open
+book with a red cross and `ovjesus` a heart with a cross — flat EMBLEMS sitting
+among nineteen landscape SCENES, which is exactly why they stood out. Both are
+now scenes in the house language (gradient sky, layered receding bands, the
+established palette): `ovstory` is a dawn vista with a river running toward the
+rising sun — wide and receding, so it reads as the whole story rather than one
+episode; `ovjesus` is Galilee at golden hour with a small boat, deliberately
+calm and non-specific because the cross and the empty tomb already have their
+own illustrations. Gradient ids gU/gV are kept. **The art is duplicated
+verbatim in ALL EIGHT faith packs, so any scene edit must be applied to all
+eight** — and it is audio-neutral, so all 8 `<code>f` strings files still match.
+Two things worth reusing: warm sandy hills (#B3A183 / #9C8F7B, already used in
+gP and gR) read against blue water where grey ones vanish into it; and ridge
+layers need real value steps or they flatten into one shape.
+
 Future faith work is new CONTENT (Ruan has floated Jesus' followers /
 Acts as a third story), not translation. If a third story is ever added,
 it has to be authored in ne first and then run through this same
