@@ -319,6 +319,12 @@ mulberry, and every pair — including shoulder-layer against ground-layer — m
 clear by >8px. Centre spacings are now 60/72/36/44/74/66/76/74 (ur) and
 82/112/58/126/108 (uz). **Assert clearance rather than eyeballing it; overlaps
 at these scales are invisible in a thumbnail and obvious on a real screen.**
+**Round 4 — even gaps still read as planted.** The first respacing gave Uzbek
+gaps of 37/69/17/87/62, which is varied on paper but still reads as a regular
+band. What actually works is **CLUSTERS separated by real empty ground**: uz is
+now 3 + 2 + 2 with gaps 14/23/79/10/93/21, and ur is 2 + 3 + 3 with 17/22/39/
+13/32/36/16/12. Vary the SCALES across the cluster too (0.68-1.15) so size
+breaks the rhythm as well as position.
 **Two art-checker false positives, so nobody chases them twice:** (1)
 `artcheck.py` reads only the LAST 40 chars of a ground path, so Khmer's hero
 `mid` looks like it does not close at y=320 — it does, the stilt house is
