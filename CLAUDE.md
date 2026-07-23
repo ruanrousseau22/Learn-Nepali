@@ -302,6 +302,16 @@ right to sit between the two blossom groups with four new trees where they
 stood. **The documented y≈235 title safe zone is conservative — the title box
 actually measures y=185 at its lowest, so there is ~50px more headroom than the
 rule of thumb suggests.**
+**Round 3 — tree spacing (Ruan: "different spaces from each other so its not too
+organized, but dont let them overlap").** Two Urdu trees genuinely overlapped by
+**16px** (a mid-shoulder tree at x=196 against a ground tree at x=212), and
+Uzbek's six mulberries sat at 92/88/114/90/80 apart, which reads as a plantation.
+Both respaced by hand with an **explicit clearance assertion in the generator**:
+crown half-width is 20 x scale for the Urdu apricot and 23 x scale for the Uzbek
+mulberry, and every pair — including shoulder-layer against ground-layer — must
+clear by >8px. Centre spacings are now 60/72/36/44/74/66/76/74 (ur) and
+82/112/58/126/108 (uz). **Assert clearance rather than eyeballing it; overlaps
+at these scales are invisible in a thumbnail and obvious on a real screen.**
 **Two art-checker false positives, so nobody chases them twice:** (1)
 `artcheck.py` reads only the LAST 40 chars of a ground path, so Khmer's hero
 `mid` looks like it does not close at y=320 — it does, the stilt house is
