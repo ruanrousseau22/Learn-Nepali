@@ -705,8 +705,41 @@ respelling, not a transliteration (x -> kh, oʻ -> aw, gʻ -> gh). Audio via
 - **Never run two `generate_audio.py` jobs for the same language at once.** They
   collide on the `.part` files and produce a manifest that disagrees with disk.
 
-**Next: Javanese** — NOT started. It needs its own sequence research and a real
-decision on ngoko vs krama before any authoring (see ROADMAP Phase 4).
+**Javanese (`lang/jv.js`) COMPLETE at 12 zones / 84 topics / 420 lessons**
+(July 2026, ROADMAP Phase 4). Latin script, `latin:true` like Uzbek. ~68M
+speakers and the widest speaker-to-resource gap of any language in the app —
+every existing resource points a learner at Indonesian instead.
+
+**THE REGISTER DECISION, made from sources BEFORE authoring.** Javanese ngoko
+and krama are not politeness endings; they are largely different vocabularies,
+down to the pronouns (aku/kula, kowe/sampeyan). Evidence gathered:
+- Wikipedia "Javanese language" — the lexical split is deep and structural.
+- The Conversation, reporting Indonesian sociolinguistic research — speakers
+  **under 25 avoid krama out of anxiety** about getting it wrong and switch to
+  **Indonesian** with elders instead; older speakers explicitly endorse that
+  ("better Indonesian than improper Javanese").
+- Omniglot — numbers **6-9 are identical in both registers**, a real gift.
+- edge-tts `jv-ID-DimasNeural` voices BOTH registers cleanly (tested first).
+**Decision: teach NGOKO as the base**, because it is what is actually spoken and
+heard, and carry KRAMA as a parallel courtesy set for the situations an outsider
+really meets — greeting an elder, thanking, apologising, addressing a stranger.
+Zone 9 is the polite-forms zone. The course states plainly that Indonesian is
+the honest fallback when unsure, because that is what young Javanese themselves
+do. This is the Khmer address-terms shape, and it is defensible from sources
+rather than from preference.
+
+Pronunciation is the whole difficulty and the grammar is kind: **final -a is
+said -o** (Yogyakarta -> Yogyakarto, basa -> boso) and **dh/th are retroflex**
+against dental d/t. No tones, no gender, **no verb conjugation and no tense** —
+aspect is four words before the verb (wis / lagi / arep / durung) and negation
+picks from three (ora for verbs, dudu for nouns, aja for don't). Z1 sounds &
+spelling &middot; Z2 foundations &middot; Z3 the sentence engine &middot; Z4
+politeness & daily life &middot; Z5 numbers & time &middot; Z6 describing
+&middot; Z7 past, future & opinions &middot; Z8 out & about &middot; Z9 krama &
+the home &middot; Z10 Java itself &middot; Z11 community & culture &middot; Z12
+making it home. Culture kept secular per the house rule: batik, warung, pasar,
+sawah, gamelan, slametan, gotong royong — no candi, and wayang is skipped
+because it is tied to Hindu epics. Audio via `jv-ID-DimasNeural`.
 
 **Next three (planned July 2026): Urdu, Uzbek, Javanese** — the full staged
 plan lives in `ROADMAP.md`. Later candidate: Persian/Dari (`fa-IR`), with the

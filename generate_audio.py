@@ -74,6 +74,12 @@ LANGS = {
         "outdir": "audio-uz",
         "voices": {"male": "uz-UZ-SardorNeural", "female": "uz-UZ-MadinaNeural"},
     },
+    # Javanese — Latin script, latin:true (see lang/jv.js)
+    "jv": {
+        "strings": "audio_strings_jv.json",
+        "outdir": "audio-jv",
+        "voices": {"male": "jv-ID-DimasNeural", "female": "jv-ID-SitiNeural"},
+    },
     # religious studies (faith mode) — per-language story reader, same voice
     # as that language's course ("<code>f" pattern; skeletons have no strings
     # yet — generate only after a pack is translated)

@@ -275,10 +275,23 @@ and add Cyrillic as recognition only, late.
 | **3D** ✅ | Z10 home and small talk · Z11 extras · Z12 settling in (osh/plov, melons, the chaikhana as a secular teahouse) |
 | **3E** ✅ | audio, SEO, catalog, validation |
 
-## Phase 4 — Javanese (5 sessions)
+## Phase 4 — Javanese ✅ COMPLETE (July 2026)
 
-**The central curriculum decision, to be researched before Zone 2 is written:
-the speech levels.** Javanese `ngoko` and `krama` are not a politeness suffix —
+**RESOLVED before authoring — the register decision.** Sources: Wikipedia
+"Javanese language" (ngoko and krama differ in core VOCABULARY, not endings —
+even the pronouns are different words), The Conversation's report on Indonesian
+sociolinguistic research (speakers under 25 avoid krama out of anxiety and
+switch to INDONESIAN with elders instead; older speakers endorse that), and
+Omniglot (numbers 6-9 are identical in both registers). edge-tts voices both
+registers cleanly, tested before authoring.
+
+**Decision: ngoko is the base**, because it is what is spoken and heard. Krama
+is carried as a parallel courtesy set for the situations an outsider actually
+meets — greeting an elder, thanking, apologising, addressing a stranger — with
+a whole zone (Z9) for the polite forms. The course says plainly that Indonesian
+is the honest fallback when unsure, because that is what young Javanese do.
+
+**The original open question, for the record:** Javanese `ngoko` and `krama` are not a politeness suffix —
 they are largely different vocabularies. Everyday speech is ngoko; what an
 outsider is addressed in, and should use to elders, is krama. Even `matur nuwun`
 (thank you) is krama.
@@ -297,11 +310,11 @@ performance are tied to Hindu epics — out of scope under the secular rule.
 
 | stage | content |
 |---|---|
-| **4A** | Z1 sounds & spelling (the a→ɔ rule, dh/th vs d/t, no tones) · Z2 foundations **including the ngoko/krama decision** · Z3 grammar engine (SVO, no conjugation, `ora`/`boten`, question words) |
-| **4B** | Z4 places, family, food · Z5 numbers, money, pasar · Z6 adjectives, colours, weather |
-| **4C** | Z7 aspect `wis`/`lagi`/`arep` + ability `iso` · Z8 transport, directions, staying · Z9 connectors, work, free time |
-| **4D** | Z10 home and small talk · Z11 extras · Z12 settling in |
-| **4E** | audio, SEO, catalog, validation |
+| **4A** ✅ | Z1 sounds & spelling (the a→ɔ rule, dh/th vs d/t, no tones) · Z2 foundations **including the ngoko/krama decision** · Z3 grammar engine (SVO, no conjugation, `ora`/`boten`, question words) |
+| **4B** ✅ | Z4 places, family, food · Z5 numbers, money, pasar · Z6 adjectives, colours, weather |
+| **4C** ✅ | Z7 aspect `wis`/`lagi`/`arep` + ability `iso` · Z8 transport, directions, staying · Z9 connectors, work, free time |
+| **4D** ✅ | Z10 home and small talk · Z11 extras · Z12 settling in |
+| **4E** ✅ | audio, SEO, catalog, validation |
 
 ---
 
