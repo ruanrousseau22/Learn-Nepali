@@ -16,7 +16,8 @@ function run(){
       srsSeed:(p.srsSeed||[]).map(function(r){return [r[0],r[1],r[2]];}),
       nums:(p.nums||[]).map(function(r){return [r[0],r[1]];}),
       vowels:(p.vowels||[]).map(function(r){return [r[0],r[1]];}),
-      cons:(p.cons||[]).map(function(r){return [r[0],r[1]];})
+      cons:(p.cons||[]).map(function(r){return [r[0],r[1]];}),
+      hero:(p.art&&p.art.hero)||''   /* '' for ne — its scenery is the built-in default */
     });
   });
   return JSON.stringify(out);

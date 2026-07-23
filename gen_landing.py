@@ -9,7 +9,7 @@ Data comes from landing_data.js (JXA), so the pages always reflect
 the live packs. Writes learn-<slug>.html at the repo root and rewrites
 sitemap.xml.
 """
-import html, json, os, subprocess, datetime
+import html, json, os, re, subprocess, datetime
 
 ROOT = os.getcwd()
 LASTMOD = datetime.date.today().isoformat()
@@ -121,8 +121,42 @@ def faq_pairs(d):
     ]
 
 
-def page(d, others):
+# --- scenery: pull the real per-language art + palette out of index.html so the
+#     landing hero looks like the app (same scene, same colours) -------------
+SCENE_KEYS = ['--sky1', '--sky2', '--mtn-far', '--mtn-mid', '--mtn-near', '--snow',
+              '--orb', '--tree', '--wood', '--bark', '--hide', '--slate', '--tyre', '--water']
+
+
+def _decls(block):
+    return dict(re.findall(r'(--[a-z0-9-]+)\s*:\s*([^;}]+)', block or ''))
+
+
+def scene_assets(index_html):
+    """Return (palettes, ne_hero_inner). palettes[code] = CSS setting the scene
+    vars for light + dark, including the per-language data-lang override."""
+    base_light = _decls(re.search(r':root\{([^}]*)\}', index_html).group(1))
+    base_dark = _decls(re.search(r'\[data-theme="dark"\]\{([^}]*)\}', index_html).group(1))
+    palettes = {}
+    for code in SLUG:
+        m = re.search(r':root\[data-lang="%s"\]\{([^}]*)\}' % code, index_html)
+        md = re.search(r':root\[data-theme="dark"\]\[data-lang="%s"\]\{([^}]*)\}' % code, index_html)
+        light = {k: base_light[k] for k in SCENE_KEYS if k in base_light}
+        light.update(_decls(m.group(1)) if m else {})
+        dark = {k: base_dark[k] for k in SCENE_KEYS if k in base_dark}
+        dark.update(_decls(md.group(1)) if md else {})
+        lp = ';'.join('%s:%s' % (k, v) for k, v in light.items())
+        dp = ';'.join('%s:%s' % (k, v) for k, v in dark.items())
+        palettes[code] = (':root{%s}\n@media(prefers-color-scheme:dark){:root{%s}}' % (lp, dp))
+    # the Nepali default scene is inline in view-home
+    seg = index_html[index_html.find('id="view-home"'):]
+    i = seg.find('<svg class="hero-mtns"'); i = seg.find('>', i) + 1
+    ne_hero = seg[i:seg.find('</svg>', i)]
+    return palettes, ne_hero
+
+
+def page(d, others, palette_css, ne_hero):
     code, name, native = d['code'], d['name'], d['nativeName']
+    hero_inner = d['hero'] or ne_hero
     slug = SLUG[code]
     nat_fam, nat_lh = native_css(code)
     dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
@@ -146,16 +180,15 @@ def page(d, others):
         alpha_block = """
   <section class="block">
     <h2>The {sname}</h2>
-    <p class="lead">Every letter is taught with audio in the course. Vowels first, then consonants.</p>
+    <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
     <div class="agrid">{v}</div>
     <h3>Consonants</h3>
     <div class="agrid">{c}</div>
   </section>""".format(sname=esc(SCRIPT_NAME.get(code, name + ' script')), v=v, c=c)
 
-    intro_script = ("It is written in the Latin alphabet, so it is easy to start reading."
-                    if d['latin'] else
-                    "You will learn the %s one letter at a time." % SCRIPT_NAME.get(code, 'script'))
+    intro_script = ("written in the Latin alphabet you already read"
+                    if d['latin'] else "written in the %s" % SCRIPT_NAME.get(code, 'script'))
 
     faq_html = "\n".join(
         '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (esc(q), esc(a))
@@ -164,19 +197,21 @@ def page(d, others):
     other_links = "\n".join(
         '<a href="/learn-%s">%s</a>' % (SLUG[o['code']], esc(o['name'])) for o in others)
 
+    hero_scene = ('<svg class="hero-scene" viewBox="0 0 1200 320" '
+                  'preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" '
+                  'aria-hidden="true">%s</svg>' % hero_inner)
+
     return TEMPLATE.format(
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url), slug=slug,
         fontlink=esc(font_link(code)), natfam=nat_fam, natlh=nat_lh,
         rtl=(' dir="rtl"' if code in RTL else ''),
+        palette=palette_css, hero_scene=hero_scene,
         name=esc(name), native=esc(native), code=code,
         zones=d['zones'], topics=d['topics'], lessons=d['lessons'],
-        desc_intro=("Bhasaly's %s course takes you from your very first words to "
-                    "everyday conversation across %d levels — %d topics and %d short, "
-                    "tap-based lessons (no typing required). %s Along the way you will pick "
-                    "up essential greetings, numbers, and useful phrases, each with a "
-                    "recorded audio clip. It runs in any browser on phone or computer, and "
-                    "your progress saves automatically."
-                    % (esc(name), d['zones'], d['topics'], d['lessons'], esc(intro_script))),
+        desc_intro=("From your first letters to everyday conversation, Bhasaly teaches %s "
+                    "one short, tap-based lesson at a time — %s. Every word carries recorded "
+                    "audio, and you learn on any phone or computer."
+                    % (esc(name), esc(intro_script))),
         essentials=essentials, numbers=numbers, alpha_block=alpha_block,
         faq_html=faq_html, other_links=other_links,
         jsonld=jsonld(d, name, slug, desc), year=datetime.date.today().year)
@@ -213,6 +248,7 @@ TEMPLATE = """<!doctype html>
 @media(prefers-color-scheme:dark){{:root{{--paper:#0F1419;--paper2:#19222C;--ink:#E9F0F7;--soft:#93A5B7;
 --crimson:#E8836A;--saffron:#E7AD5E;--saffron-soft:#332A1C;--teal:#5FC6B0;--line:rgba(233,240,247,.12);
 --card:#1C2630;--tree:#4FA06A;--shadow:0 1px 2px rgba(0,0,0,.25),0 12px 28px -18px rgba(0,0,0,.7)}}}}
+{palette}
 *{{box-sizing:border-box}}
 body{{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
@@ -226,18 +262,31 @@ header .wrap{{display:flex;align-items:center;justify-content:space-between;heig
 text-decoration:none;letter-spacing:-.02em}}
 .logo svg{{width:26px;height:26px;fill:var(--tree)}}
 .hlink{{font-size:14.5px;font-weight:600;color:var(--crimson);text-decoration:none}}
-.hero{{padding:56px 0 34px;text-align:center;background:
-radial-gradient(1200px 400px at 50% -140px,var(--saffron-soft),transparent 70%)}}
+.hero{{position:relative;overflow:hidden;text-align:center;
+background:linear-gradient(180deg,var(--sky1),var(--sky2));border-radius:0 0 28px 28px}}
+.hero-body{{position:relative;z-index:2;max-width:640px;margin:0 auto;
+min-height:270px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+padding:36px 20px 150px}}
 .hero h1{{font-family:'Fraunces',Georgia,serif;font-size:clamp(34px,7vw,52px);line-height:1.04;
-margin:0 0 6px;letter-spacing:-.02em}}
+margin:0 0 6px;letter-spacing:-.02em;color:var(--ink)}}
+.hero h1 em{{font-style:italic;font-weight:600}}
 .hero .nat{{font-size:clamp(22px,5vw,30px);color:var(--saffron);margin:0 0 14px}}
-.hero p{{font-size:17px;color:var(--soft);max-width:540px;margin:0 auto 26px}}
+.hero p{{font-size:16.5px;color:var(--soft);max-width:500px;margin:0 auto 24px}}
 .cta{{display:inline-block;background:var(--crimson);color:#fff;text-decoration:none;font-weight:700;
 font-size:17px;padding:14px 28px;border-radius:999px;box-shadow:var(--shadow)}}
 .cta:hover{{filter:brightness(1.06)}}
-.stats{{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:26px}}
-.stat b{{display:block;font-size:26px;font-weight:700;color:var(--tree)}}
-.stat span{{font-size:13px;color:var(--soft)}}
+.stats{{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:24px}}
+.stat b{{display:block;font-size:24px;font-weight:700;color:var(--tree)}}
+.stat span{{font-size:12.5px;color:var(--soft)}}
+/* the real per-language scenery fills the foot of the hero, like the app; the
+   tall upper sky is cropped by the hero's overflow so text sits on calm sky */
+.hero-scene{{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1}}
+.hero-scene .far{{fill:var(--mtn-far)}} .hero-scene .mid{{fill:var(--mtn-mid)}}
+.hero-scene .near{{fill:var(--mtn-near)}} .hero-scene .snow{{fill:var(--snow)}}
+.hero-scene .orb{{fill:var(--orb)}} .hero-scene .orb-glow{{fill:var(--orb);opacity:.3}}
+.hero-scene .cloud{{fill:rgba(255,255,255,.6)}} .hero-scene .hero-stars{{display:none}}
+@media(prefers-color-scheme:dark){{.hero-scene .cloud{{fill:rgba(199,214,230,.12)}}
+.hero-scene .hero-stars{{display:block}} .hero-scene .hero-stars circle{{fill:#fff}}}}
 .block{{padding:34px 0;border-top:1px solid var(--line)}}
 .block h2{{font-family:'Fraunces',Georgia,serif;font-size:27px;margin:0 0 4px;letter-spacing:-.01em}}
 .block h3{{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:22px 0 10px}}
@@ -265,7 +314,9 @@ padding:8px 15px;font-size:14px;font-weight:600;color:var(--ink);text-decoration
 .endcta{{text-align:center;padding:44px 0}}
 footer{{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--soft);font-size:13.5px}}
 footer a{{color:var(--soft)}}
-@media(max-width:520px){{td.native{{font-size:20px}}.hero{{padding:40px 0 26px}}}}
+@media(max-width:560px){{td.native{{font-size:20px}}
+.hero-body{{min-height:200px;padding:28px 18px 78px}}
+.hero h1{{font-size:clamp(30px,9vw,40px)}}}}
 </style>
 </head>
 <body>
@@ -275,18 +326,21 @@ footer a{{color:var(--soft)}}
 </div></header>
 
 <main>
-<section class="hero"><div class="wrap">
-  <h1>Learn {name}</h1>
-  <div class="nat native"{rtl}>{native}</div>
-  <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
-  <a class="cta" href="/?lang={code}">Start learning</a>
-  <div class="stats">
-    <div class="stat"><b>{zones}</b><span>levels</span></div>
-    <div class="stat"><b>{topics}</b><span>topics</span></div>
-    <div class="stat"><b>{lessons}</b><span>lessons</span></div>
-    <div class="stat"><b>Audio</b><span>every word</span></div>
+<section class="hero">
+  <div class="hero-body">
+    <h1>Learn <em>{name}</em></h1>
+    <div class="nat native"{rtl}>{native}</div>
+    <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
+    <a class="cta" href="/?lang={code}">Start learning</a>
+    <div class="stats">
+      <div class="stat"><b>{zones}</b><span>levels</span></div>
+      <div class="stat"><b>{topics}</b><span>topics</span></div>
+      <div class="stat"><b>{lessons}</b><span>lessons</span></div>
+      <div class="stat"><b>Audio</b><span>every word</span></div>
+    </div>
   </div>
-</div></section>
+  {hero_scene}
+</section>
 
 <div class="wrap">
   <section class="block" style="border-top:none">
@@ -296,7 +350,6 @@ footer a{{color:var(--soft)}}
 
   <section class="block">
     <h2>Essential {name} words &amp; phrases</h2>
-    <p class="lead">The first words worth knowing &mdash; with pronunciation and meaning.</p>
     <table><tbody>{essentials}</tbody></table>
   </section>
 
@@ -349,9 +402,11 @@ def main():
     raw = subprocess.check_output(
         ['osascript', '-l', 'JavaScript', 'landing_data.js']).decode('utf-8')
     langs = json.loads(raw)
+    index_html = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+    palettes, ne_hero = scene_assets(index_html)
     for d in langs:
         others = [o for o in langs if o['code'] != d['code']]
-        html_out = page(d, others)
+        html_out = page(d, others, palettes[d['code']], ne_hero)
         fn = os.path.join(ROOT, 'learn-%s.html' % SLUG[d['code']])
         with open(fn, 'w', encoding='utf-8') as f:
             f.write(html_out)

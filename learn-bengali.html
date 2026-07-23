@@ -29,6 +29,8 @@
 @media(prefers-color-scheme:dark){:root{--paper:#0F1419;--paper2:#19222C;--ink:#E9F0F7;--soft:#93A5B7;
 --crimson:#E8836A;--saffron:#E7AD5E;--saffron-soft:#332A1C;--teal:#5FC6B0;--line:rgba(233,240,247,.12);
 --card:#1C2630;--tree:#4FA06A;--shadow:0 1px 2px rgba(0,0,0,.25),0 12px 28px -18px rgba(0,0,0,.7)}}
+:root{--sky1:#F7E0CE;--sky2:#FBF2E8;--mtn-far:#A9A3C9;--mtn-mid:#CE9052;--mtn-near:#2F8B52;--snow:#FFFFFF;--orb:#F2A648;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
+@media(prefers-color-scheme:dark){:root{--sky1:#211B2E;--sky2:#131016;--mtn-far:#3A3454;--mtn-mid:#5C452B;--mtn-near:#1C5638;--snow:#C7D6E6;--orb:#EBDFC6;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
@@ -42,18 +44,31 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 text-decoration:none;letter-spacing:-.02em}
 .logo svg{width:26px;height:26px;fill:var(--tree)}
 .hlink{font-size:14.5px;font-weight:600;color:var(--crimson);text-decoration:none}
-.hero{padding:56px 0 34px;text-align:center;background:
-radial-gradient(1200px 400px at 50% -140px,var(--saffron-soft),transparent 70%)}
+.hero{position:relative;overflow:hidden;text-align:center;
+background:linear-gradient(180deg,var(--sky1),var(--sky2));border-radius:0 0 28px 28px}
+.hero-body{position:relative;z-index:2;max-width:640px;margin:0 auto;
+min-height:270px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+padding:36px 20px 150px}
 .hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(34px,7vw,52px);line-height:1.04;
-margin:0 0 6px;letter-spacing:-.02em}
+margin:0 0 6px;letter-spacing:-.02em;color:var(--ink)}
+.hero h1 em{font-style:italic;font-weight:600}
 .hero .nat{font-size:clamp(22px,5vw,30px);color:var(--saffron);margin:0 0 14px}
-.hero p{font-size:17px;color:var(--soft);max-width:540px;margin:0 auto 26px}
+.hero p{font-size:16.5px;color:var(--soft);max-width:500px;margin:0 auto 24px}
 .cta{display:inline-block;background:var(--crimson);color:#fff;text-decoration:none;font-weight:700;
 font-size:17px;padding:14px 28px;border-radius:999px;box-shadow:var(--shadow)}
 .cta:hover{filter:brightness(1.06)}
-.stats{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-.stat b{display:block;font-size:26px;font-weight:700;color:var(--tree)}
-.stat span{font-size:13px;color:var(--soft)}
+.stats{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.stat b{display:block;font-size:24px;font-weight:700;color:var(--tree)}
+.stat span{font-size:12.5px;color:var(--soft)}
+/* the real per-language scenery fills the foot of the hero, like the app; the
+   tall upper sky is cropped by the hero's overflow so text sits on calm sky */
+.hero-scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1}
+.hero-scene .far{fill:var(--mtn-far)} .hero-scene .mid{fill:var(--mtn-mid)}
+.hero-scene .near{fill:var(--mtn-near)} .hero-scene .snow{fill:var(--snow)}
+.hero-scene .orb{fill:var(--orb)} .hero-scene .orb-glow{fill:var(--orb);opacity:.3}
+.hero-scene .cloud{fill:rgba(255,255,255,.6)} .hero-scene .hero-stars{display:none}
+@media(prefers-color-scheme:dark){.hero-scene .cloud{fill:rgba(199,214,230,.12)}
+.hero-scene .hero-stars{display:block} .hero-scene .hero-stars circle{fill:#fff}}
 .block{padding:34px 0;border-top:1px solid var(--line)}
 .block h2{font-family:'Fraunces',Georgia,serif;font-size:27px;margin:0 0 4px;letter-spacing:-.01em}
 .block h3{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:22px 0 10px}
@@ -81,7 +96,9 @@ padding:8px 15px;font-size:14px;font-weight:600;color:var(--ink);text-decoration
 .endcta{text-align:center;padding:44px 0}
 footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--soft);font-size:13.5px}
 footer a{color:var(--soft)}
-@media(max-width:520px){td.native{font-size:20px}.hero{padding:40px 0 26px}}
+@media(max-width:560px){td.native{font-size:20px}
+.hero-body{min-height:200px;padding:28px 18px 78px}
+.hero h1{font-size:clamp(30px,9vw,40px)}}
 </style>
 </head>
 <body>
@@ -91,28 +108,30 @@ footer a{color:var(--soft)}
 </div></header>
 
 <main>
-<section class="hero"><div class="wrap">
-  <h1>Learn Bengali</h1>
-  <div class="nat native">বাংলা</div>
-  <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
-  <a class="cta" href="/?lang=bn">Start learning</a>
-  <div class="stats">
-    <div class="stat"><b>12</b><span>levels</span></div>
-    <div class="stat"><b>84</b><span>topics</span></div>
-    <div class="stat"><b>420</b><span>lessons</span></div>
-    <div class="stat"><b>Audio</b><span>every word</span></div>
+<section class="hero">
+  <div class="hero-body">
+    <h1>Learn <em>Bengali</em></h1>
+    <div class="nat native">বাংলা</div>
+    <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
+    <a class="cta" href="/?lang=bn">Start learning</a>
+    <div class="stats">
+      <div class="stat"><b>12</b><span>levels</span></div>
+      <div class="stat"><b>84</b><span>topics</span></div>
+      <div class="stat"><b>420</b><span>lessons</span></div>
+      <div class="stat"><b>Audio</b><span>every word</span></div>
+    </div>
   </div>
-</div></section>
+  <svg class="hero-scene" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="orb-glow" cx="856" cy="112" r="72"/><circle class="orb" cx="856" cy="112" r="44"/><g class="hero-stars" aria-hidden="true"><circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="240" cy="104" r="1.2"/><circle cx="360" cy="46" r="2"/><circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="600" cy="60" r="1.3"/><circle cx="700" cy="112" r="1.5" class="tw" style="animation-delay:2s"/></g><g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g><g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g><g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g><g class="art-detail" fill="none" stroke="var(--mtn-far)" stroke-width="1.8" stroke-linecap="round" opacity=".6" aria-hidden="true"><path d="M210 96 q6 -5 12 0 q6 -5 12 0"/><path d="M292 112 q5 -4.5 10 0 q5 -4.5 10 0"/></g><path class="far" d="M0 254 Q150 249 300 252 Q450 247 600 250 Q700 246 780 244 Q860 240 940 243 Q1040 238 1120 241 Q1170 239 1200 240 L1200 320 L0 320 Z"/><path class="mid" d="M0 320 L0 284 Q200 276 400 281 Q600 286 800 280 Q1000 275 1200 281 L1200 320 Z"/><path class="snow" opacity=".28" d="M90 258 Q240 252 390 256 L388 262 Q240 256 94 264 Z"/><path class="snow" opacity=".28" d="M180 270 Q330 262 470 268 L468 274 Q330 266 184 276 Z"/><path class="snow" opacity=".22" d="M300 250 Q430 245 560 248 L559 253 Q430 250 303 256 Z"/><g transform="translate(906,225)" aria-hidden="true"><path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/><path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/><path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/><circle fill="var(--snow)" cx="8" cy="36" r="3"/><circle fill="var(--tyre)" cx="14" cy="52" r="6"/><circle fill="var(--tyre)" cx="70" cy="51" r="9"/><circle fill="var(--mtn-mid)" cx="14" cy="52" r="2.2"/><circle fill="var(--mtn-mid)" cx="70" cy="51" r="3.2"/></g><g transform="translate(1044,241) scale(0.7)" aria-hidden="true"><path fill="var(--tree)" d="M17 16 Q19 3 38 1 L69 1 Q82 3 83 16 L83 20 L17 20 Z"/><path fill="var(--orb)" d="M2 43 Q0 33 11 29 L23 27 Q29 20 42 20 L77 20 Q85 20 85 30 L85 46 Q85 51 79 51 L12 51 Q3 51 2 45 Z"/><path fill="var(--tyre)" opacity=".4" d="M41 24 L77 24 L77 42 L41 42 Z"/><circle fill="var(--snow)" cx="8" cy="36" r="3"/><circle fill="var(--tyre)" cx="14" cy="52" r="6"/><circle fill="var(--tyre)" cx="70" cy="51" r="9"/><circle fill="var(--mtn-mid)" cx="14" cy="52" r="2.2"/><circle fill="var(--mtn-mid)" cx="70" cy="51" r="3.2"/></g><g transform="translate(96,227) scale(0.86)" aria-hidden="true"><path fill="var(--bark)" d="M0 88 Q-4 38 6 0 L12 0 Q6 40 10 88 Z"/><g fill="var(--tree)"><path d="M8 2 Q-14 -12 -36 -8 Q-12 -24 10 -10 Q18 -28 38 -34 Q24 -18 14 -6 Q36 -16 54 -8 Q32 -6 14 2 Q28 10 34 26 Q18 14 8 4 Q-2 18 -16 22 Q-6 8 4 0 Z"/></g></g><g transform="translate(226,238) scale(0.72)" aria-hidden="true"><path fill="var(--bark)" d="M0 88 Q-4 38 6 0 L12 0 Q6 40 10 88 Z"/><g fill="var(--tree)"><path d="M8 2 Q-14 -12 -36 -8 Q-12 -24 10 -10 Q18 -28 38 -34 Q24 -18 14 -6 Q36 -16 54 -8 Q32 -6 14 2 Q28 10 34 26 Q18 14 8 4 Q-2 18 -16 22 Q-6 8 4 0 Z"/></g></g><g transform="translate(402,227) scale(0.94)" aria-hidden="true"><path fill="var(--bark)" d="M0 88 Q-4 38 6 0 L12 0 Q6 40 10 88 Z"/><g fill="var(--tree)"><path d="M8 2 Q-14 -12 -36 -8 Q-12 -24 10 -10 Q18 -28 38 -34 Q24 -18 14 -6 Q36 -16 54 -8 Q32 -6 14 2 Q28 10 34 26 Q18 14 8 4 Q-2 18 -16 22 Q-6 8 4 0 Z"/></g></g><g transform="translate(512,241) scale(0.8)" aria-hidden="true"><path fill="var(--bark)" d="M0 88 Q-4 38 6 0 L12 0 Q6 40 10 88 Z"/><g fill="var(--tree)"><path d="M8 2 Q-14 -12 -36 -8 Q-12 -24 10 -10 Q18 -28 38 -34 Q24 -18 14 -6 Q36 -16 54 -8 Q32 -6 14 2 Q28 10 34 26 Q18 14 8 4 Q-2 18 -16 22 Q-6 8 4 0 Z"/></g></g><g fill="var(--bark)" aria-hidden="true"><path d="M752 300 Q748 250 758 212 L764 212 Q758 252 762 300 Z"/><path d="M804 300 Q802 264 808 238 L813 238 Q810 266 812 300 Z"/></g><g fill="var(--tree)" aria-hidden="true"><path d="M760 214 Q738 200 716 204 Q740 188 762 202 Q770 184 790 178 Q776 194 766 206 Q788 196 806 204 Q784 206 766 214 Q780 222 786 238 Q770 226 760 216 Q750 230 736 234 Q746 220 756 212 Z"/><path d="M810 240 Q794 230 778 234 Q796 220 812 230 Q820 216 836 212 Q824 226 816 234 Q834 228 848 236 Q830 236 816 240 Q826 248 830 260 Q818 250 810 242 Z"/></g><g class="near"><path d="M0 306 Q160 290 320 301 Q480 312 640 301 Q800 290 960 303 Q1080 311 1200 302 L1200 320 L0 320 Z"/><path d="M34 306 Q22 280 34 258 Q44 276 42 300 Z M52 306 Q56 278 74 266 Q66 288 58 304 Z M20 308 Q6 292 4 274 Q20 284 26 302 Z"/></g></svg>
+</section>
 
 <div class="wrap">
   <section class="block" style="border-top:none">
     <h2>About the course</h2>
-    <p class="lead">Bhasaly's Bengali course takes you from your very first words to everyday conversation across 12 levels — 84 topics and 420 short, tap-based lessons (no typing required). You will learn the Bengali script one letter at a time. Along the way you will pick up essential greetings, numbers, and useful phrases, each with a recorded audio clip. It runs in any browser on phone or computer, and your progress saves automatically.</p>
+    <p class="lead">From your first letters to everyday conversation, Bhasaly teaches Bengali one short, tap-based lesson at a time — written in the Bengali script. Every word carries recorded audio, and you learn on any phone or computer.</p>
   </section>
 
   <section class="block">
     <h2>Essential Bengali words &amp; phrases</h2>
-    <p class="lead">The first words worth knowing &mdash; with pronunciation and meaning.</p>
     <table><tbody><tr><td class="native" dir="auto">চা</td><td class="rom">cha</td><td>Tea</td></tr>
 <tr><td class="native" dir="auto">জল</td><td class="rom">jol</td><td>Water</td></tr>
 <tr><td class="native" dir="auto">ভাত</td><td class="rom">bhat</td><td>Rice (cooked)</td></tr>
@@ -151,7 +170,7 @@ footer a{color:var(--soft)}
   
   <section class="block">
     <h2>The Bengali script</h2>
-    <p class="lead">Every letter is taught with audio in the course. Vowels first, then consonants.</p>
+    <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
     <div class="agrid"><div class="atile"><span class="native" dir="auto">অ</span><span class="ar">o</span></div>
 <div class="atile"><span class="native" dir="auto">আ</span><span class="ar">a</span></div>
