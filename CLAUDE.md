@@ -242,6 +242,29 @@ verbatim copies.
   (1120,244)@0.62, (1162,254)@0.48, (960,258)@0.46; band (1120,138)@0.44,
   (1162,144)@0.38. **Grounding rule for that piece: base = translate-y +
   100*scale, which must land on the near crest at that x.**
+**Art review pass for ur/uz/jv (July 2026, Ruan's notes).** All AUDIO-NEUTRAL.
+- **The sun was behind the title in all three.** ur/uz/jv all had the orb at
+  cx≈240, sitting under "Learn X". Moved right to 1010 / 1000 / 1090, matching
+  every other language. **Check orb placement when authoring a new hero.**
+- **Urdu read as Nepal-with-different-colours.** The ridge is now KARAKORAM
+  rather than Himalaya: narrow rock spires with steep asymmetric faces, a TWIN
+  SUMMIT at x=800/845, deliberately uneven spacing, and small caps (11-17px
+  wide) because these peaks are more rock than snow. Nepal is rounded-then-
+  jagged and Pashto is evenly spaced triangles; this is neither.
+- **The Urdu far ridge and the rust hill crowded each other** — only **8px**
+  apart at x=320, so they read as one shape. Raising the far ridge would have
+  broken the title safe zone, so the MID hill was dropped ~18px instead; the
+  gap is now 30-42px. **Measure that gap when a hero has a flat far ridge
+  behind a near hill.**
+- The Urdu **jingle truck was removed** (Ruan did not like the red against the
+  palette), a **second markhor** added in its place, and the apricot blossom
+  trees were far too small — scaled 0.72→1.05, 0.58→0.80, 0.64→0.92 etc.
+- **Uzbek**: hills lifted (far ~10px, mid ~18px), camels and trees scaled up
+  ~1.3x, a **fourth camel** added continuing the recession, and the **cotton
+  flecks removed** — seven small white circles on the green read as scattered
+  dots, not a crop.
+- **Javanese**: the crater rim was a 16px needle point; widened to 44px in the
+  hero and the band. Two more banyans and a **second water buffalo** added.
 **Two art-checker false positives, so nobody chases them twice:** (1)
 `artcheck.py` reads only the LAST 40 chars of a ground path, so Khmer's hero
 `mid` looks like it does not close at y=320 — it does, the stilt house is
