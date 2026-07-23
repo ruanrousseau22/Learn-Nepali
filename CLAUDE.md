@@ -1797,11 +1797,16 @@ is good but "the first 2 pictures I dont really like").** `ovstory` was an open
 book with a red cross and `ovjesus` a heart with a cross — flat EMBLEMS sitting
 among nineteen landscape SCENES, which is exactly why they stood out. Both are
 now scenes in the house language (gradient sky, layered receding bands, the
-established palette): `ovstory` is a dawn vista with a river running toward the
-rising sun — wide and receding, so it reads as the whole story rather than one
-episode; `ovjesus` is Galilee at golden hour with a small boat, deliberately
-calm and non-specific because the cross and the empty tomb already have their
-own illustrations. Gradient ids gU/gV are kept. **The art is duplicated
+established palette). `ovjesus` is Galilee at golden hour with a small boat,
+deliberately calm and non-specific because the cross and the empty tomb already
+have their own illustrations. `ovstory` took two goes: the first version was a
+dawn vista with a river, which Ruan correctly said looked too like `creation`
+directly beneath it — **both were sun + rolling green hills + a winding stream
+in the same blues + flower dots, i.e. the same COMPOSITION with a different
+sky**. It is now a different KIND of picture: receding mountain ridges at dawn,
+no water, no vegetation, far ridges warm and near ones in shadow, so it reads
+as depth and span. **When two scenes sit next to each other, vary the
+composition, not just the palette.** Gradient ids gU/gV are kept. **The art is duplicated
 verbatim in ALL EIGHT faith packs, so any scene edit must be applied to all
 eight** — and it is audio-neutral, so all 8 `<code>f` strings files still match.
 Two things worth reusing: warm sandy hills (#B3A183 / #9C8F7B, already used in
