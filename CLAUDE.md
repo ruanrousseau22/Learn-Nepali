@@ -83,8 +83,15 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   **Update all of these when you ship a new language**: add the language to the
   title/description/keywords, the `teaches` array, and add a `Course` entry — so
   the site ranks for "learn &lt;language&gt;". Currently: all eight — Nepali + Khmer + Burmese + Bengali + Sinhala + Lao + Pashto + Mongolian.
-- `.claude/launch.json` (untracked) — preview servers `sajilo` (port 8642) and
-  `sajilo-alt` (8647) for local validation via the Claude Code browser panel
+- `devserver.py` + `.claude/launch.json` — the local preview servers `sajilo`
+  (8642) and `sajilo-alt` (8647). **They deliberately do NOT use
+  `python3 -m http.server`**: that sends no `Cache-Control`, so a browser
+  heuristically caches from `Last-Modified` and serves a STALE `lang/*.js` or
+  `index.html` after an edit — changes look like they never applied. This cost
+  hours during the July 2026 ur/uz/jv build, repeatedly. `devserver.py` sends
+  `no-store` on every response, so a plain refresh always shows current files.
+  If a change ever seems not to have applied, check
+  `fetch(url).then(r=>r.headers.get('cache-control'))` before hunting a bug.
 
 ## Golden rules
 1. **Always work directly on `index.html`.** Edit it in place.
