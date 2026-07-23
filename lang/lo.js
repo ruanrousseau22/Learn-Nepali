@@ -2704,7 +2704,8 @@ const LO_Z11=[
 {t:'fill',q:'Complete: "a new shirt"',s:'ເສື້ອ ___',o:['ໃໝ່','ເກົ່າໆ','ນຸ່ງ','ສີ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໝວກ','hat'],['ເກີບ','shoes'],['ນຸ່ງ','to wear'],['ສິ້ນ','sinh']]},
 {t:'mc',q:'Before entering a home you take off your…',o:['ເກີບ','ເສື້ອ','ໝວກ','ສິ້ນ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເກີບ',o:['ເກີບ','ໝວກ','ໂສ້ງ','ເສື້ອ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເກີບ',o:['ເກີບ','ໝວກ','ໂສ້ງ','ເສື້ອ'],a:0},
+{t:'match',q:'Review — match the colour',pairs:[['ສີແດງ','red'],['ສີຟ້າ','blue'],['ສີຂຽວ','green'],['ສີດຳ','black']]}]},
 {id:'lo_clothes_5',title:'Checkpoint',step:'checkpoint',meta:'Clothes mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "shirt"?',o:['ເສື້ອ','ໂສ້ງ','ເກີບ','ໝວກ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ສິ້ນ',o:['ສິ້ນ','ເສື້ອ','ໂສ້ງ','ໝວກ'],a:0},
