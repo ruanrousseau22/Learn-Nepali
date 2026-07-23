@@ -108,6 +108,11 @@ LANGS = {
         "outdir": "audio-lof",
         "voices": {"male": "lo-LA-ChanthavongNeural", "female": "lo-LA-KeomanyNeural"},
     },
+    "urf": {
+        "strings": "audio_strings_urf.json",
+        "outdir": "audio-urf",
+        "voices": {"male": "ur-PK-AsadNeural", "female": "ur-PK-UzmaNeural"},
+    },
     "psf": {
         "strings": "audio_strings_psf.json",
         "outdir": "audio-psf",
