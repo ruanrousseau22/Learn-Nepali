@@ -242,6 +242,29 @@ verbatim copies.
   (1120,244)@0.62, (1162,254)@0.48, (960,258)@0.46; band (1120,138)@0.44,
   (1162,144)@0.38. **Grounding rule for that piece: base = translate-y +
   100*scale, which must land on the near crest at that x.**
+### Health check, July 2026 (ur/uz/jv build) — two REAL bugs found
+Both were spotted by Ruan and both were **pre-existing, affecting shipped
+languages** — not new-language defects:
+- **Alphabet tiles clipped their content.** `.glyph .d` is sized for a single
+  character (32px), but four shipped packs legitimately put WORDS there —
+  **mn, si** (and now uz, jv) teach number WORDS because those languages write
+  Western digits — plus long roms in **bn** ("nasal (chondrobindu)") and Burmese
+  အော. Six of eleven languages were clipping. Fixed generally in `buildAlpha`:
+  it now tags each tile `d-mid`/`d-long`/`d-xlong` and `r-long`/`r-xlong` by
+  content length, and CSS steps the font down. **Do not fix this per-language.**
+- **"Short-term" appeared in Religious studies** when the faith language was
+  Bengali. TWO compounding faults: the `body.faith` rule listing the tabs to
+  hide never included `trip`, AND `paintTripTab` writes an **inline** display
+  that beats any stylesheet rule anyway. Fixed in `paintTripTab` (it now also
+  checks `S.mode`), the CSS selector widened for defence, and — the part that
+  bit on the first attempt — **`switchMode` must call `paintTripTab()`**, or the
+  tab stays hidden after returning to language mode.
+**A measurement trap worth remembering:** testing tile overflow with
+`getBoundingClientRect` on the glyph vs its tile reports ZERO problems, because
+glyph ink legitimately extends past the line box. `scrollWidth > clientWidth` is
+the signal that matches what a person actually sees. Height comparisons
+false-positive on every complex script; use width.
+
 **Art review pass for ur/uz/jv (July 2026, Ruan's notes).** All AUDIO-NEUTRAL.
 - **The sun was behind the title in all three.** ur/uz/jv all had the orb at
   cx≈240, sitting under "Learn X". Moved right to 1010 / 1000 / 1090, matching
@@ -265,6 +288,20 @@ verbatim copies.
   dots, not a crop.
 - **Javanese**: the crater rim was a 16px needle point; widened to 44px in the
   hero and the band. Two more banyans and a **second water buffalo** added.
+**Round 2 of the same review.** Ruan flagged the far ridge crowding the hill
+crest in Uzbek and Javanese too — measured at **3px** (uz, x=350) and **6px**
+(jv, x=400). Uzbek's purple dunes were lifted; Javanese's brown terrace hill was
+lowered on the LEFT ONLY and blended back to its original line on the right,
+because lowering it throughout made the green rise ABOVE it and the brown band
+vanished. Urdu needed the same rescue: after the round-1 fix its terraced band
+had collapsed to ~1px in places, so all three layers were re-spaced (far ~255,
+mid ~278, near ~302). **When you move one layer, measure the band BELOW it too
+— fixing the gap above can close the gap below.** Also: the Uzbek melon cart
+removed and mulberries taken from 2 to 6 and enlarged; the Urdu markhors moved
+right to sit between the two blossom groups with four new trees where they
+stood. **The documented y≈235 title safe zone is conservative — the title box
+actually measures y=185 at its lowest, so there is ~50px more headroom than the
+rule of thumb suggests.**
 **Two art-checker false positives, so nobody chases them twice:** (1)
 `artcheck.py` reads only the LAST 40 chars of a ground path, so Khmer's hero
 `mid` looks like it does not close at y=320 — it does, the stilt house is

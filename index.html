@@ -350,6 +350,16 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .glyph:active{transform:translateY(-1px)}
 .glyph .d{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic';font-size:32px;font-weight:500;color:var(--ink);line-height:1}
 .glyph .r{font-size:12px;color:var(--ink-soft);margin-top:7px;letter-spacing:.01em}
+/* Tiles are sized for a single glyph. Packs that teach number WORDS (mn, si,
+   uz, jv — those languages write Western digits) and long romanizations need
+   the text to step down instead of being clipped. Set in buildAlpha. */
+.glyph .d{max-width:100%;overflow-wrap:anywhere}
+.glyph.d-mid .d{font-size:27px}
+.glyph.d-long .d{font-size:20px;line-height:1.15}
+.glyph.d-xlong .d{font-size:16px;line-height:1.2}
+.glyph .r{max-width:100%;overflow-wrap:anywhere;line-height:1.25}
+.glyph.r-long .r{font-size:10.5px}
+.glyph.r-xlong .r{font-size:9.5px}
 /* tap spotlight */
 .alpha-spotlight{position:sticky;top:74px;z-index:20;display:none;align-items:center;gap:22px;background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);padding:20px 26px;margin:0 0 26px;box-shadow:0 8px 30px -14px rgba(20,40,80,.3)}
 .alpha-spotlight.show{display:flex;animation:spotIn .3s cubic-bezier(.34,1.4,.5,1)}
@@ -972,7 +982,7 @@ button,.tab,.cnode,.mc,.iconbtn,.glyph,.wbtile,.mtile,.grade,.reveal-btn,.li-res
 /* ===== modes: language learning vs religious studies (July 2026) ===== */
 .tab.faith-tab{display:none}
 body.faith .tab.faith-tab{display:inline-block}
-body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .tab[data-v="alphabet"],body.faith .tab[data-v="review"]{display:none}
+body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .tab[data-v="alphabet"],body.faith .tab[data-v="review"],body.faith .tab[data-v="trip"]{display:none}
 #mode-switch .mode-ico{display:inline-flex;width:18px;height:18px;flex:none;color:var(--crimson)}
 #mode-switch .mode-ico svg{width:100%;height:100%}
 @media(max-width:700px){#mode-switch .lang-tog-name{display:none}}
@@ -1920,7 +1930,11 @@ function tripIcon(id){
     +d.split('|').map(function(p){return '<path d="'+p+'"/>';}).join('')+'</svg></span>';}
 const TRIP_ACC=['#1F8A5B','#2E6FA8','#C07A14','#8A4FA0','#B5543E','#127C74'];
 function paintTripTab(){const t=document.querySelector('.tab[data-v="trip"]');
-  if(t)t.style.display=(LANG&&LANG.trip)?'':'none';}
+  /* Hidden without a trip pack, and ALWAYS hidden in faith mode — the faith
+     language picker applies the matching COURSE pack, so a Bengali faith
+     reader would otherwise see Short-term next to God's Story. The inline
+     style is what the stylesheet cannot override, so decide it here. */
+  if(t)t.style.display=(LANG&&LANG.trip&&S.mode!=='faith')?'':'none';}
 function tripLineHTML(l){
   /* roman first, English second, script last — this page is for someone who is
      NOT here to learn the writing system (Ruan, July 2026) */
@@ -2215,7 +2229,9 @@ async function switchMode(m){
     document.body.classList.remove('faith');
     show('home');
   }
-  paintModeSwitch();paintHomeLangSwitch();
+  /* the trip tab is now mode-aware, so it has to be repainted on every mode
+     change — otherwise it stays hidden after coming back from faith mode */
+  paintModeSwitch();paintHomeLangSwitch();paintTripTab();
 }
 function pickMode(m){switchMode(m);}
 function paintModeSwitch(){
@@ -2627,7 +2643,13 @@ function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const nee
   else c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('oops')+'</div><h3>Not this time</h3><p style="color:var(--ink-soft)">'+lessonCorrect+' / '+total+' correct \u2014 you need '+need+' to pass. Have another look at the week, then try again.</p><button class="nextbtn" onclick="startLesson('+curL+')">Try again</button> '+backBtn+'</div>';
   buildTrack(curTrack);save();}
 
-function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('button');e.type='button';e.className='glyph';e.setAttribute('aria-label','Play '+r);e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{document.querySelectorAll('.glyph.sel').forEach(x=>x.classList.remove('sel'));e.classList.add('sel');spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');
+function buildAlpha(){const mk=(arr,id,noun)=>{const gg=document.getElementById(id);gg.innerHTML='';arr.forEach(([d,r])=>{const e=document.createElement('button');e.type='button';e.className='glyph';e.setAttribute('aria-label','Play '+r);/* a tile sized for one glyph cannot hold a word: mn/si/uz/jv put number
+         WORDS here, and some roms are long. Tag by length so CSS can shrink. */
+      const dn=[...d].length, rn=r.length;
+      if(dn>=6)e.classList.add('d-xlong');else if(dn>=4)e.classList.add('d-long');
+      else if(dn>=2)e.classList.add('d-mid');
+      if(rn>=14)e.classList.add('r-xlong');else if(rn>=9)e.classList.add('r-long');
+      e.innerHTML='<div class="d deva">'+d+'</div><div class="r">'+r+'</div>';e.onclick=()=>{document.querySelectorAll('.glyph.sel').forEach(x=>x.classList.remove('sel'));e.classList.add('sel');spot(d,r);speak(d);};gg.appendChild(e);});const c=document.getElementById('cnt-'+id);if(c)c.textContent=arr.length+' '+noun;};mk(VOWELS,'vowels','letters');mk(CONS,'consonants','letters');mk(NUMS,'numerals','digits');
   /* scaffold pack (no letters yet): swap the grids for the coming-soon card */
   const alEmpty=!(VOWELS.length+CONS.length+NUMS.length);
   document.querySelectorAll('#view-alphabet .alpha-panel').forEach(p=>p.style.display=alEmpty?'none':'');
