@@ -318,13 +318,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 3 — The sentence engine
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_g1` | Word order | ⬜ |  |  |
-| `jv_g2` | Verbs do not change | ⬜ |  |  |
-| `jv_g3` | Aspect markers | ⬜ |  |  |
-| `jv_g4` | Negation | ⬜ |  |  |
-| `jv_g5` | Questions | ⬜ |  |  |
-| `jv_g6` | There is and having | ⬜ |  |  |
-| `jv_g7` | Wanting | ⬜ |  |  |
+| `jv_g1` | Word order | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g2` | Verbs do not change | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g3` | Aspect markers | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g4` | Negation | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g5` | Questions | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g6` | There is and having | ✅ | 2026-07-24 | clean (full read) |
+| `jv_g7` | Wanting | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 4 — Politeness & daily life
 | Topic | Title | Status | Session | Findings |
