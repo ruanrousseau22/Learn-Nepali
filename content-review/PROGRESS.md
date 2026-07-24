@@ -229,13 +229,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 7 — Numbers, money & food
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_n1` | Numbers 11 to 100 | ⬜ |  |  |
-| `uz_n2` | Money | ⬜ |  |  |
-| `uz_n3` | At the market | ⬜ |  |  |
-| `uz_n4` | Food | ⬜ |  |  |
-| `uz_n5` | Drinks and the table | ⬜ |  |  |
-| `uz_n6` | Telling the time | ⬜ |  |  |
-| `uz_n7` | Quantities | ⬜ |  |  |
+| `uz_n1` | Numbers 11 to 100 | ✅ | 2026-07-24 | clean (full read) |
+| `uz_n2` | Money | ✅ | 2026-07-24 | clean — million correctly flipped (English-transparent) |
+| `uz_n3` | At the market | ✅ | 2026-07-24 | clean (full read) |
+| `uz_n4` | Food | ✅ | 2026-07-24 | clean (full read) |
+| `uz_n5` | Drinks and the table | ✅ | 2026-07-24 | clean (full read) |
+| `uz_n6` | Telling the time | ✅ | 2026-07-24 | clean (full read) |
+| `uz_n7` | Quantities | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 8 — Describing things
 | Topic | Title | Status | Session | Findings |
