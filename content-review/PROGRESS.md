@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 14 |
+| 1 | Urdu | 84 | 21 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -52,13 +52,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 3 — Building sentences
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_g1` | Nouns have gender | ⬜ |  |  |
-| `ur_g2` | Adjective agreement | ⬜ |  |  |
-| `ur_g3` | Word order | ⬜ |  |  |
-| `ur_g4` | Negation | ⬜ |  |  |
-| `ur_g5` | Question words | ⬜ |  |  |
-| `ur_g6` | Saying you have | ⬜ |  |  |
-| `ur_g7` | Wanting and needing | ⬜ |  |  |
+| `ur_g1` | Nouns have gender | ✅ | 2026-07-24 | fixed ghar gender example in note |
+| `ur_g2` | Adjective agreement | ✅ | 2026-07-24 | clean |
+| `ur_g3` | Word order | ✅ | 2026-07-24 | clean |
+| `ur_g4` | Negation | ✅ | 2026-07-24 | clean |
+| `ur_g5` | Question words | ✅ | 2026-07-24 | clean |
+| `ur_g6` | Saying you have | ✅ | 2026-07-24 | clean |
+| `ur_g7` | Wanting and needing | ✅ | 2026-07-24 | fixed "I want food" gloss (no مجھے) |
 
 ### Zone 4 — People & places
 | Topic | Title | Status | Session | Findings |
