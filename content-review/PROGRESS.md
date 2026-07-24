@@ -129,13 +129,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 10 — Your Urdu life
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_y1` | Address terms | ⬜ |  |  |
-| `ur_y2` | Small talk | ⬜ |  |  |
-| `ur_y3` | In the house | ⬜ |  |  |
-| `ur_y4` | Being a guest | ⬜ |  |  |
-| `ur_y5` | Plans | ⬜ |  |  |
-| `ur_y6` | Telling a story | ⬜ |  |  |
-| `ur_y7` | Preferences | ⬜ |  |  |
+| `ur_y1` | Address terms | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y2` | Small talk | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y3` | In the house | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y4` | Being a guest | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y5` | Plans | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y6` | Telling a story | ✅ | 2026-07-24 | clean (full read) |
+| `ur_y7` | Preferences | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 11 — Little extras
 | Topic | Title | Status | Session | Findings |
