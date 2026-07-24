@@ -406,13 +406,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 11 — Community & culture
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_e1` | Neighbours and community | ⬜ |  |  |
-| `jv_e2` | Ceremonies | ⬜ |  |  |
-| `jv_e3` | Reading and writing | ⬜ |  |  |
-| `jv_e4` | Feelings, deeper | ⬜ |  |  |
-| `jv_e5` | Days and celebrations | ⬜ |  |  |
-| `jv_e6` | How long | ⬜ |  |  |
-| `jv_e7` | Politeness polish | ⬜ |  |  |
+| `jv_e1` | Neighbours and community | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e2` | Ceremonies | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e3` | Reading and writing | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e4` | Feelings, deeper | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e5` | Days and celebrations | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e6` | How long | ✅ | 2026-07-24 | clean (full read) |
+| `jv_e7` | Politeness polish | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 12 — Making it home
 | Topic | Title | Status | Session | Findings |
