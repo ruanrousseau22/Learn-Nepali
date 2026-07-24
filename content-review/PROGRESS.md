@@ -240,13 +240,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 8 — Describing things
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_d1` | Adjectives | ⬜ |  |  |
-| `uz_d2` | Colours | ⬜ |  |  |
-| `uz_d3` | Comparison | ⬜ |  |  |
-| `uz_d4` | Feelings | ⬜ |  |  |
-| `uz_d5` | Weather | ⬜ |  |  |
-| `uz_d6` | The body | ⬜ |  |  |
-| `uz_d7` | Feeling unwell | ⬜ |  |  |
+| `uz_d1` | Adjectives | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d2` | Colours | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d3` | Comparison | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d4` | Feelings | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d5` | Weather | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d6` | The body | ✅ | 2026-07-24 | clean (full read) |
+| `uz_d7` | Feeling unwell | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 9 — Past, present & future
 | Topic | Title | Status | Session | Findings |
