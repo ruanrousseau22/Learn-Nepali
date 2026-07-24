@@ -118,13 +118,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 9 — Conversation
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_v1` | Connectors | ⬜ |  |  |
-| `ur_v2` | Opinions | ⬜ |  |  |
-| `ur_v3` | Knowing and remembering | ⬜ |  |  |
-| `ur_v4` | Work and study | ⬜ |  |  |
-| `ur_v5` | Likes and free time | ⬜ |  |  |
-| `ur_v6` | Learner lifelines | ⬜ |  |  |
-| `ur_v7` | Getting help | ⬜ |  |  |
+| `ur_v1` | Connectors | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v2` | Opinions | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v3` | Knowing and remembering | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v4` | Work and study | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v5` | Likes and free time | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v6` | Learner lifelines | ✅ | 2026-07-24 | clean (full read) |
+| `ur_v7` | Getting help | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 10 — Your Urdu life
 | Topic | Title | Status | Session | Findings |
