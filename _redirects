@@ -1,3 +1,7 @@
+# Internal review files stay in the repo but are not served publicly
+# (forced 404 — the ! makes it apply even though the files exist)
+/content-review/*  /404.html  404!
+
 # Old domain → Bhasaly (301s preserve old links & bookmarks)
 https://sajilonepali.com/* https://bhasaly.com/:splat 301!
 https://www.sajilonepali.com/* https://bhasaly.com/:splat 301!
