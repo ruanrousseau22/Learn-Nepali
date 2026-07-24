@@ -351,13 +351,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 6 — Describing things
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_d1` | Adjectives | ⬜ |  |  |
-| `jv_d2` | Colours | ⬜ |  |  |
-| `jv_d3` | Comparison | ⬜ |  |  |
-| `jv_d4` | Feelings | ⬜ |  |  |
-| `jv_d5` | Weather | ⬜ |  |  |
-| `jv_d6` | The body | ⬜ |  |  |
-| `jv_d7` | Feeling unwell | ⬜ |  |  |
+| `jv_d1` | Adjectives | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d2` | Colours | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d3` | Comparison | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d4` | Feelings | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d5` | Weather | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d6` | The body | ✅ | 2026-07-24 | clean (full read) |
+| `jv_d7` | Feeling unwell | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 7 — Past, future & opinions
 | Topic | Title | Status | Session | Findings |
