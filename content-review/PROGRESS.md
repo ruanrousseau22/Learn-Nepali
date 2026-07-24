@@ -362,13 +362,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 7 — Past, future & opinions
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_t1` | Talking about the past | ⬜ |  |  |
-| `jv_t2` | Talking about the future | ⬜ |  |  |
-| `jv_t3` | Can and must | ⬜ |  |  |
-| `jv_t4` | Connectors | ⬜ |  |  |
-| `jv_t5` | Opinions | ⬜ |  |  |
-| `jv_t6` | Work | ⬜ |  |  |
-| `jv_t7` | Likes | ⬜ |  |  |
+| `jv_t1` | Talking about the past | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t2` | Talking about the future | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t3` | Can and must | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t4` | Connectors | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t5` | Opinions | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t6` | Work | ✅ | 2026-07-24 | clean (full read) |
+| `jv_t7` | Likes | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 8 — Out & about
 | Topic | Title | Status | Session | Findings |
