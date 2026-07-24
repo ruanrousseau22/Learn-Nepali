@@ -107,13 +107,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 8 — Out & about
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_o1` | Transport | ⬜ |  |  |
-| `ur_o2` | Directions | ⬜ |  |  |
-| `ur_o3` | Travel and tickets | ⬜ |  |  |
-| `ur_o4` | At the hotel | ⬜ |  |  |
-| `ur_o5` | Phone and internet | ⬜ |  |  |
-| `ur_o6` | Months and dates | ⬜ |  |  |
-| `ur_o7` | Asking the way | ⬜ |  |  |
+| `ur_o1` | Transport | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o2` | Directions | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o3` | Travel and tickets | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o4` | At the hotel | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o5` | Phone and internet | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o6` | Months and dates | ✅ | 2026-07-24 | clean (full read) |
+| `ur_o7` | Asking the way | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 9 — Conversation
 | Topic | Title | Status | Session | Findings |
