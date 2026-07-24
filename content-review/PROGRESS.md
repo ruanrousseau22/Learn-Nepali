@@ -12,7 +12,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 |---|---|---:|---:|
 | 1 | Urdu | 84 | 84 ✅ |
 | 1 | Uzbek | 84 | 84 ✅ |
-| 1 | Javanese | 84 | 0 |
+| 1 | Javanese | 84 | 84 ✅ |
 | 3 | Khmer | 84 | 0 |
 | 3 | Burmese | 84 | 0 |
 | 3 | Bengali | 84 | 0 |
@@ -417,13 +417,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 12 — Making it home
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_h1` | Big numbers | ⬜ |  |  |
-| `jv_h2` | Errands | ⬜ |  |  |
-| `jv_h3` | In an emergency | ⬜ |  |  |
-| `jv_h4` | Saying goodbye | ⬜ |  |  |
-| `jv_h5` | Getting by | ⬜ |  |  |
-| `jv_h6` | Yogyakarta and Solo | ⬜ |  |  |
-| `jv_h7` | Making it home | ⬜ |  |  |
+| `jv_h1` | Big numbers | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h2` | Errands | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h3` | In an emergency | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h4` | Saying goodbye | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h5` | Getting by | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h6` | Yogyakarta and Solo | ✅ | 2026-07-24 | clean (full read) |
+| `jv_h7` | Making it home | ✅ | 2026-07-24 | clean (full read) |
 
 # Tier 2 — faith packs + Short-term  *(enumerate when reached)*
 
