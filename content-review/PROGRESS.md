@@ -251,13 +251,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 9 — Past, present & future
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_t1` | The past tense | ⬜ |  |  |
-| `uz_t2` | The present continuous | ⬜ |  |  |
-| `uz_t3` | The future | ⬜ |  |  |
-| `uz_t4` | Saying you can | ⬜ |  |  |
-| `uz_t5` | Need and must | ⬜ |  |  |
-| `uz_t6` | Connectors | ⬜ |  |  |
-| `uz_t7` | Opinions | ⬜ |  |  |
+| `uz_t1` | The past tense | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t2` | The present continuous | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t3` | The future | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t4` | Saying you can | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t5` | Need and must | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t6` | Connectors | ✅ | 2026-07-24 | clean (full read) |
+| `uz_t7` | Opinions | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 10 — Out & about
 | Topic | Title | Status | Session | Findings |
