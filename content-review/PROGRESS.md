@@ -395,13 +395,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 10 — Java itself
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_v1` | Nature | ⬜ |  |  |
-| `jv_v2` | Farming | ⬜ |  |  |
-| `jv_v3` | How often | ⬜ |  |  |
-| `jv_v4` | Plans | ⬜ |  |  |
-| `jv_v5` | Little words | ⬜ |  |  |
-| `jv_v6` | Gamelan and the arts | ⬜ |  |  |
-| `jv_v7` | Javanese sayings | ⬜ |  |  |
+| `jv_v1` | Nature | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v2` | Farming | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v3` | How often | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v4` | Plans | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v5` | Little words | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v6` | Gamelan and the arts | ✅ | 2026-07-24 | clean (full read) |
+| `jv_v7` | Javanese sayings | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 11 — Community & culture
 | Topic | Title | Status | Session | Findings |
