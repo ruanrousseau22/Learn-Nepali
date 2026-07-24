@@ -329,13 +329,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 4 — Politeness & daily life
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_c1` | Being polite | ⬜ |  |  |
-| `jv_c2` | At the warung | ⬜ |  |  |
-| `jv_c3` | At the pasar | ⬜ |  |  |
-| `jv_c4` | Daily routine | ⬜ |  |  |
-| `jv_c5` | Learner lifelines | ⬜ |  |  |
-| `jv_c6` | Being a guest | ⬜ |  |  |
-| `jv_c7` | Small talk | ⬜ |  |  |
+| `jv_c1` | Being polite | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c2` | At the warung | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c3` | At the pasar | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c4` | Daily routine | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c5` | Learner lifelines | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c6` | Being a guest | ✅ | 2026-07-24 | clean (full read) |
+| `jv_c7` | Small talk | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 5 — Numbers & time
 | Topic | Title | Status | Session | Findings |
