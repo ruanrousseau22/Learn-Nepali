@@ -296,13 +296,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 1 — Sounds & spelling
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_s1` | Sounds & spelling | ⬜ |  |  |
-| `jv_s2` | The a that sounds like o | ⬜ |  |  |
-| `jv_s3` | Dental & retroflex | ⬜ |  |  |
-| `jv_s4` | First words | ⬜ |  |  |
-| `jv_s5` | Aksara Jawa on signs | ⬜ |  |  |
-| `jv_s6` | Greetings | ⬜ |  |  |
-| `jv_s7` | Thank you and sorry | ⬜ |  |  |
+| `jv_s1` | Sounds & spelling | ✅ | 2026-07-24 | clean (full read) |
+| `jv_s2` | The a that sounds like o | ✅ | 2026-07-24 | clean; a→o rule verified pack-wide (see FINDINGS) |
+| `jv_s3` | Dental & retroflex | ✅ | 2026-07-24 | clean (full read) |
+| `jv_s4` | First words | ✅ | 2026-07-24 | clean (full read) |
+| `jv_s5` | Aksara Jawa on signs | ✅ | 2026-07-24 | clean — aksara in note only (not spoken) |
+| `jv_s6` | Greetings | ✅ | 2026-07-24 | clean (full read) |
+| `jv_s7` | Thank you and sorry | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 2 — Foundations
 | Topic | Title | Status | Session | Findings |
