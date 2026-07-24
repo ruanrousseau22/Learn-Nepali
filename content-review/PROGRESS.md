@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 21 |
+| 1 | Urdu | 84 | 28 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -63,13 +63,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 4 — People & places
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_p1` | Postpositions | ⬜ |  |  |
-| `ur_p2` | Family | ⬜ |  |  |
-| `ur_p3` | Around town | ⬜ |  |  |
-| `ur_p4` | Food and drink | ⬜ |  |  |
-| `ur_p5` | Ordering food | ⬜ |  |  |
-| `ur_p6` | Time words | ⬜ |  |  |
-| `ur_p7` | Everyday verbs | ⬜ |  |  |
+| `ur_p1` | Postpositions | ✅ | 2026-07-24 | clean |
+| `ur_p2` | Family | ✅ | 2026-07-24 | clean |
+| `ur_p3` | Around town | ✅ | 2026-07-24 | clean |
+| `ur_p4` | Food and drink | ✅ | 2026-07-24 | clean |
+| `ur_p5` | Ordering food | ✅ | 2026-07-24 | clean |
+| `ur_p6` | Time words | ✅ | 2026-07-24 | previewed garmi (used here, taught in Z6) |
+| `ur_p7` | Everyday verbs | ✅ | 2026-07-24 | clean |
 
 ### Zone 5 — Numbers & money
 | Topic | Title | Status | Session | Findings |

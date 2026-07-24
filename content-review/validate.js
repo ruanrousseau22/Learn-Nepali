@@ -8,6 +8,8 @@ function run(argv){
  catch(e){ return JSON.stringify({parseError:e.message}); }
  var scriptRe={ur:/[؀-ۿ]/,uz:null,jv:null}[lang]||/[؀-ۿ]/;
  var probs=[], romLeak=[];
+ // native->rom map from all vocab, to catch same-sound listen options
+ var rom={}; p.lessons.forEach(function(l){(l.vocab||[]).forEach(function(v){if(v[0]&&v[1])rom[v[0]]=v[1];});});
  // romanization must not contain native script
  p.lessons.forEach(function(l){
    (l.vocab||[]).forEach(function(v){ if(v[1]&&scriptRe.test(v[1]))romLeak.push(l.id+' vocab '+v[0]); });
@@ -19,6 +21,7 @@ function run(argv){
        if(e.r&&e.o.indexOf(e.r)>=0)probs.push(w+' r=opt');
        if(e.d&&e.o.indexOf(e.d)>=0)probs.push(w+' d=opt');
        if(e.t==='li'&&e.o[e.a]!==e.say)probs.push(w+' li-a!=say');
+       if(e.t==='li'){var rs={}; e.o.forEach(function(o){var r=rom[o]; if(r){if(rs[r])probs.push(w+' li-same-sound:'+r); rs[r]=1;}});}
      }
      if(e.t==='match'){var ks={},vs={}; (e.pairs||[]).forEach(function(pr){
        if(ks[pr[0]])probs.push(w+' dupkey'); if(vs[pr[1]])probs.push(w+' dupval'); ks[pr[0]]=1;vs[pr[1]]=1;});}

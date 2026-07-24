@@ -1,7 +1,9 @@
 // JXA: dump one zone of a course, fully, for a learner's-eye read.
 // Usage: osascript -l JavaScript content-review/show.js <lang> <zone> [intensive]
 function run(argv){
- var lang=argv[0], zoneN=parseInt(argv[1],10), track=argv[2]==='intensive'?'intensive':'main';
+ var lang=argv[0], zoneN=parseInt(argv[1],10);
+ var track=(argv[2]==='intensive')?'intensive':'main';
+ var lean=(argv[2]==='lean'||argv[3]==='lean');
  var rd=function(pt){return ObjC.unwrap($.NSString.stringWithContentsOfFileEncodingError(
    $(pt).stringByStandardizingPath,$.NSUTF8StringEncoding,null));};
  var p=null; new Function('registerPack', rd('lang/'+lang+'.js'))(function(x){p=x;});
@@ -13,6 +15,7 @@ function run(argv){
    out.push('\n### '+l.id+'  ['+l.step+']  '+(l.title||'')+(l.meta?'  — '+l.meta:''));
    if(l.vocab&&l.vocab.length)l.vocab.forEach(function(v){out.push('  VOCAB  '+v[0]+'  /'+v[1]+'/  = '+v[2]);});
    (l.ex||[]).forEach(function(e,i){
+     if(lean && (e.t==='mc'||e.t==='li'||e.t==='match'))return;
      var s=i+'. ['+e.t+'] ';
      if(e.tag)s+='{'+e.tag+'} ';
      if(e.q)s+='Q: '+e.q+'  ';
