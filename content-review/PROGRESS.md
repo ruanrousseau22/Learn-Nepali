@@ -185,13 +185,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 3 — The sentence engine
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_g1` | Word order | ⬜ |  |  |
-| `uz_g2` | The present tense | ⬜ |  |  |
-| `uz_g3` | Negation | ⬜ |  |  |
-| `uz_g4` | Yes-no questions | ⬜ |  |  |
-| `uz_g5` | Question words | ⬜ |  |  |
-| `uz_g6` | There is and there is not | ⬜ |  |  |
-| `uz_g7` | Plurals | ⬜ |  |  |
+| `uz_g1` | Word order | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g2` | The present tense | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g3` | Negation | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g4` | Yes-no questions | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g5` | Question words | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g6` | There is and there is not | ✅ | 2026-07-24 | clean (full read) |
+| `uz_g7` | Plurals | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 4 — Commands & courtesy
 | Topic | Title | Status | Session | Findings |
