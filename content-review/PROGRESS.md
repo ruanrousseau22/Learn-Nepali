@@ -340,13 +340,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 5 — Numbers & time
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_n1` | Numbers 11 to 20 | ⬜ |  |  |
-| `jv_n2` | The tens | ⬜ |  |  |
-| `jv_n3` | Money | ⬜ |  |  |
-| `jv_n4` | Bargaining | ⬜ |  |  |
-| `jv_n5` | Telling the time | ⬜ |  |  |
-| `jv_n6` | Days and months | ⬜ |  |  |
-| `jv_n7` | Quantities | ⬜ |  |  |
+| `jv_n1` | Numbers 11 to 20 | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n2` | The tens | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n3` | Money | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n4` | Bargaining | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n5` | Telling the time | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n6` | Days and months | ✅ | 2026-07-24 | clean (full read) |
+| `jv_n7` | Quantities | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 6 — Describing things
 | Topic | Title | Status | Session | Findings |
