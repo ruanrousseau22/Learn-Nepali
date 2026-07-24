@@ -262,13 +262,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 10 — Out & about
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_w1` | Getting around | ⬜ |  |  |
-| `uz_w2` | Directions | ⬜ |  |  |
-| `uz_w3` | Staying somewhere | ⬜ |  |  |
-| `uz_w4` | Work and study | ⬜ |  |  |
-| `uz_w5` | Free time | ⬜ |  |  |
-| `uz_w6` | Telling a story | ⬜ |  |  |
-| `uz_w7` | Getting help | ⬜ |  |  |
+| `uz_w1` | Getting around | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w2` | Directions | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w3` | Staying somewhere | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w4` | Work and study | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w5` | Free time | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w6` | Telling a story | ✅ | 2026-07-24 | clean (full read) |
+| `uz_w7` | Getting help | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 11 — Little extras
 | Topic | Title | Status | Session | Findings |
