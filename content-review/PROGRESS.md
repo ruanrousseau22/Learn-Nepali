@@ -384,13 +384,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 9 — Krama & the home
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_k1` | Krama for real situations | ⬜ |  |  |
-| `jv_k2` | Addressing people | ⬜ |  |  |
-| `jv_k3` | In the house | ⬜ |  |  |
-| `jv_k4` | Food and cooking | ⬜ |  |  |
-| `jv_k5` | Tastes | ⬜ |  |  |
-| `jv_k6` | Clothes | ⬜ |  |  |
-| `jv_k7` | Animals | ⬜ |  |  |
+| `jv_k1` | Krama for real situations | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k2` | Addressing people | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k3` | In the house | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k4` | Food and cooking | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k5` | Tastes | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k6` | Clothes | ✅ | 2026-07-24 | clean (full read) |
+| `jv_k7` | Animals | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 10 — Java itself
 | Topic | Title | Status | Session | Findings |
