@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 49 |
+| 1 | Urdu | 84 | 84 ✅ |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -151,13 +151,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 12 — Making it home
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_h1` | Big numbers | ⬜ |  |  |
-| `ur_h2` | Errands | ⬜ |  |  |
-| `ur_h3` | In an emergency | ⬜ |  |  |
-| `ur_h4` | Good wishes | ⬜ |  |  |
-| `ur_h5` | How long | ⬜ |  |  |
-| `ur_h6` | Politeness polish | ⬜ |  |  |
-| `ur_h7` | Making it home | ⬜ |  |  |
+| `ur_h1` | Big numbers | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h2` | Errands | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h3` | In an emergency | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h4` | Good wishes | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h5` | How long | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h6` | Politeness polish | ✅ | 2026-07-24 | clean (full read) |
+| `ur_h7` | Making it home | ✅ | 2026-07-24 | clean (full read) |
 
 ## Uzbek (uz) — course
 ### Zone 1 — Sounds & spelling
