@@ -196,13 +196,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 4 — Commands & courtesy
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_c1` | Commands | ⬜ |  |  |
-| `uz_c2` | Asking for things | ⬜ |  |  |
-| `uz_c3` | Etiquette | ⬜ |  |  |
-| `uz_c4` | Daily routine | ⬜ |  |  |
-| `uz_c5` | Learner lifelines | ⬜ |  |  |
-| `uz_c6` | Polite phrases | ⬜ |  |  |
-| `uz_c7` | In the classroom | ⬜ |  |  |
+| `uz_c1` | Commands | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c2` | Asking for things | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c3` | Etiquette | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c4` | Daily routine | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c5` | Learner lifelines | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c6` | Polite phrases | ✅ | 2026-07-24 | clean (full read) |
+| `uz_c7` | In the classroom | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 5 — Possession & family
 | Topic | Title | Status | Session | Findings |
