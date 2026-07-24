@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 7 |
+| 1 | Urdu | 84 | 14 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -41,13 +41,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 2 — Foundations
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_f1` | Greetings | ⬜ |  |  |
-| `ur_f2` | Personal pronouns | ⬜ |  |  |
-| `ur_f3` | The verb to be | ⬜ |  |  |
-| `ur_f4` | Numbers 1 to 10 | ⬜ |  |  |
-| `ur_f5` | Numbers 6 to 10 | ⬜ |  |  |
-| `ur_f6` | Courtesy expressions | ⬜ |  |  |
-| `ur_f7` | Introductions | ⬜ |  |  |
+| `ur_f1` | Greetings | ✅ | 2026-07-24 | taught "how are you" (was built untaught) |
+| `ur_f2` | Personal pronouns | ✅ | 2026-07-24 | simplified تو gloss |
+| `ur_f3` | The verb to be | ✅ | 2026-07-24 | clean |
+| `ur_f4` | Numbers 1 to 10 | ✅ | 2026-07-24 | clean |
+| `ur_f5` | Numbers 6 to 10 | ✅ | 2026-07-24 | simplified چھ gloss |
+| `ur_f6` | Courtesy expressions | ✅ | 2026-07-24 | clean |
+| `ur_f7` | Introductions | ✅ | 2026-07-24 | clean |
 
 ### Zone 3 — Building sentences
 | Topic | Title | Status | Session | Findings |
