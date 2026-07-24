@@ -373,13 +373,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 8 — Out & about
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_w1` | Getting around | ⬜ |  |  |
-| `jv_w2` | Directions | ⬜ |  |  |
-| `jv_w3` | Asking the way | ⬜ |  |  |
-| `jv_w4` | Places in town | ⬜ |  |  |
-| `jv_w5` | Staying somewhere | ⬜ |  |  |
-| `jv_w6` | Telling a story | ⬜ |  |  |
-| `jv_w7` | Getting help | ⬜ |  |  |
+| `jv_w1` | Getting around | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w2` | Directions | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w3` | Asking the way | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w4` | Places in town | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w5` | Staying somewhere | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w6` | Telling a story | ✅ | 2026-07-24 | clean (full read) |
+| `jv_w7` | Getting help | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 9 — Krama & the home
 | Topic | Title | Status | Session | Findings |
