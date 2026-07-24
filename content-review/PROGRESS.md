@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 42 |
+| 1 | Urdu | 84 | 49 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -96,13 +96,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 7 — Past & future
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_t1` | The past of to be | ⬜ |  |  |
-| `ur_t2` | The simple past | ⬜ |  |  |
-| `ur_t3` | The future | ⬜ |  |  |
-| `ur_t4` | Saying you can | ⬜ |  |  |
-| `ur_t5` | Must and should | ⬜ |  |  |
-| `ur_t6` | Polite requests | ⬜ |  |  |
-| `ur_t7` | The ergative ne | ⬜ |  |  |
+| `ur_t1` | The past of to be | ✅ | 2026-07-24 | clean |
+| `ur_t2` | The simple past | ✅ | 2026-07-24 | clean |
+| `ur_t3` | The future | ✅ | 2026-07-24 | clean |
+| `ur_t4` | Saying you can | ✅ | 2026-07-24 | clean |
+| `ur_t5` | Must and should | ✅ | 2026-07-24 | clean |
+| `ur_t6` | Polite requests | ✅ | 2026-07-24 | clean |
+| `ur_t7` | The ergative ne | ✅ | 2026-07-24 | clean |
 
 ### Zone 8 — Out & about
 | Topic | Title | Status | Session | Findings |
