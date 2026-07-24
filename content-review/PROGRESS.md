@@ -218,13 +218,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 6 — Cases & places
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_k1` | The dative case | ⬜ |  |  |
-| `uz_k2` | The locative case | ⬜ |  |  |
-| `uz_k3` | The ablative case | ⬜ |  |  |
-| `uz_k4` | The accusative | ⬜ |  |  |
-| `uz_k5` | Places in town | ⬜ |  |  |
-| `uz_k6` | Position words | ⬜ |  |  |
-| `uz_k7` | Asking where | ⬜ |  |  |
+| `uz_k1` | The dative case | ✅ | 2026-07-24 | clean (full read) |
+| `uz_k2` | The locative case | ✅ | 2026-07-24 | clean (full read) |
+| `uz_k3` | The ablative case | ✅ | 2026-07-24 | clean (full read) |
+| `uz_k4` | The accusative | ✅ | 2026-07-24 | clean (full read) |
+| `uz_k5` | Places in town | ✅ | 2026-07-24 | clean — bank correctly flipped (English-transparent) |
+| `uz_k6` | Position words | ✅ | 2026-07-24 | clean (full read) |
+| `uz_k7` | Asking where | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 7 — Numbers, money & food
 | Topic | Title | Status | Session | Findings |
