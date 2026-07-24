@@ -140,13 +140,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 11 — Little extras
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_e1` | How often | ⬜ |  |  |
-| `ur_e2` | Clothes | ⬜ |  |  |
-| `ur_e3` | Animals | ⬜ |  |  |
-| `ur_e4` | Nature | ⬜ |  |  |
-| `ur_e5` | Tastes | ⬜ |  |  |
-| `ur_e6` | Reading and writing | ⬜ |  |  |
-| `ur_e7` | Little words | ⬜ |  |  |
+| `ur_e1` | How often | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e2` | Clothes | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e3` | Animals | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e4` | Nature | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e5` | Tastes | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e6` | Reading and writing | ✅ | 2026-07-24 | clean (full read) |
+| `ur_e7` | Little words | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 12 — Making it home
 | Topic | Title | Status | Session | Findings |
