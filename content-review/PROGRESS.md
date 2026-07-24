@@ -207,13 +207,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 5 — Possession & family
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_p1` | Possessive suffixes | ⬜ |  |  |
-| `uz_p2` | Belonging | ⬜ |  |  |
-| `uz_p3` | Family | ⬜ |  |  |
-| `uz_p4` | People | ⬜ |  |  |
-| `uz_p5` | Small talk | ⬜ |  |  |
-| `uz_p6` | In the home | ⬜ |  |  |
-| `uz_p7` | Talking about family | ⬜ |  |  |
+| `uz_p1` | Possessive suffixes | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p2` | Belonging | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p3` | Family | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p4` | People | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p5` | Small talk | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p6` | In the home | ✅ | 2026-07-24 | clean (full read) |
+| `uz_p7` | Talking about family | ✅ | 2026-07-24 | fixed bittá→bitta (bad á, 29×, pack-wide); audio regen |
 
 ### Zone 6 — Cases & places
 | Topic | Title | Status | Session | Findings |
