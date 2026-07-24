@@ -163,13 +163,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 1 — Sounds & spelling
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_s1` | The Uzbek alphabet | ⬜ |  |  |
-| `uz_s2` | The difficult consonants | ⬜ |  |  |
-| `uz_s3` | Vowels and stress | ⬜ |  |  |
-| `uz_s4` | First words | ⬜ |  |  |
-| `uz_s5` | Cyrillic on signs | ⬜ |  |  |
-| `uz_s6` | Greetings | ⬜ |  |  |
-| `uz_s7` | Yes, no and courtesy | ⬜ |  |  |
+| `uz_s1` | The Uzbek alphabet | ✅ | 2026-07-24 | clean (full read) |
+| `uz_s2` | The difficult consonants | ✅ | 2026-07-24 | clean (full read) |
+| `uz_s3` | Vowels and stress | ✅ | 2026-07-24 | clean (full read) |
+| `uz_s4` | First words | ✅ | 2026-07-24 | clean (full read) |
+| `uz_s5` | Cyrillic on signs | ✅ | 2026-07-24 | clean — Cyrillic in note only (not spoken), Latin sign-words drilled |
+| `uz_s6` | Greetings | ✅ | 2026-07-24 | clean (full read) |
+| `uz_s7` | Yes, no and courtesy | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 2 — Foundations
 | Topic | Title | Status | Session | Findings |
