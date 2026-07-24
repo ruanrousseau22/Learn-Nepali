@@ -307,13 +307,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 2 — Foundations
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `jv_r1` | Ngoko and krama | ⬜ |  |  |
-| `jv_r2` | Introductions | ⬜ |  |  |
-| `jv_r3` | Where you are from | ⬜ |  |  |
-| `jv_r4` | Numbers 1 to 10 | ⬜ |  |  |
-| `jv_r5` | Family | ⬜ |  |  |
-| `jv_r6` | Time words | ⬜ |  |  |
-| `jv_r7` | Yes, no and small words | ⬜ |  |  |
+| `jv_r1` | Ngoko and krama | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r2` | Introductions | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r3` | Where you are from | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r4` | Numbers 1 to 10 | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r5` | Family | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r6` | Time words | ✅ | 2026-07-24 | clean (full read) |
+| `jv_r7` | Yes, no and small words | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 3 — The sentence engine
 | Topic | Title | Status | Session | Findings |
