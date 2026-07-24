@@ -174,13 +174,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 2 — Foundations
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `uz_f1` | Personal pronouns | ⬜ |  |  |
-| `uz_f2` | Saying what you are | ⬜ |  |  |
-| `uz_f3` | Introductions | ⬜ |  |  |
-| `uz_f4` | Where you are from | ⬜ |  |  |
-| `uz_f5` | Numbers 1 to 10 | ⬜ |  |  |
-| `uz_f6` | How are you | ⬜ |  |  |
-| `uz_f7` | Time words | ⬜ |  |  |
+| `uz_f1` | Personal pronouns | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f2` | Saying what you are | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f3` | Introductions | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f4` | Where you are from | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f5` | Numbers 1 to 10 | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f6` | How are you | ✅ | 2026-07-24 | clean (full read) |
+| `uz_f7` | Time words | ✅ | 2026-07-24 | clean (full read) |
 
 ### Zone 3 — The sentence engine
 | Topic | Title | Status | Session | Findings |
