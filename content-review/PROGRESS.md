@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 28 |
+| 1 | Urdu | 84 | 35 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -74,13 +74,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 5 — Numbers & money
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_n1` | Numbers 11 to 20 | ⬜ |  |  |
-| `ur_n2` | Numbers 16 to 20 | ⬜ |  |  |
-| `ur_n3` | The tens | ⬜ |  |  |
-| `ur_n4` | Money | ⬜ |  |  |
-| `ur_n5` | Bargaining | ⬜ |  |  |
-| `ur_n6` | Telling the time | ⬜ |  |  |
-| `ur_n7` | Quantities | ⬜ |  |  |
+| `ur_n1` | Numbers 11 to 20 | ✅ | 2026-07-24 | clean |
+| `ur_n2` | Numbers 16 to 20 | ✅ | 2026-07-24 | clean |
+| `ur_n3` | The tens | ✅ | 2026-07-24 | clean |
+| `ur_n4` | Money | ✅ | 2026-07-24 | clean |
+| `ur_n5` | Bargaining | ✅ | 2026-07-24 | clean |
+| `ur_n6` | Telling the time | ✅ | 2026-07-24 | fixed subtitle کیا→کتنے بجے ہیں |
+| `ur_n7` | Quantities | ✅ | 2026-07-24 | clean |
 
 ### Zone 6 — Describing things
 | Topic | Title | Status | Session | Findings |
