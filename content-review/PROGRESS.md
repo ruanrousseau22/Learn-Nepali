@@ -10,7 +10,7 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 
 | Tier | Scope | Topics | Done |
 |---|---|---:|---:|
-| 1 | Urdu | 84 | 35 |
+| 1 | Urdu | 84 | 42 |
 | 1 | Uzbek | 84 | 0 |
 | 1 | Javanese | 84 | 0 |
 | 3 | Khmer | 84 | 0 |
@@ -85,13 +85,13 @@ Faith packs (11 × ~22 units) and the Bengali Short-term page are Tier 2 / later
 ### Zone 6 — Describing things
 | Topic | Title | Status | Session | Findings |
 |---|---|:--:|---|---|
-| `ur_d1` | Adjectives in use | ⬜ |  |  |
-| `ur_d2` | Colours | ⬜ |  |  |
-| `ur_d3` | Comparison | ⬜ |  |  |
-| `ur_d4` | Feelings | ⬜ |  |  |
-| `ur_d5` | Weather | ⬜ |  |  |
-| `ur_d6` | The body | ⬜ |  |  |
-| `ur_d7` | Feeling unwell | ⬜ |  |  |
+| `ur_d1` | Adjectives in use | ✅ | 2026-07-24 | clean |
+| `ur_d2` | Colours | ✅ | 2026-07-24 | clean |
+| `ur_d3` | Comparison | ✅ | 2026-07-24 | clean |
+| `ur_d4` | Feelings | ✅ | 2026-07-24 | clean |
+| `ur_d5` | Weather | ✅ | 2026-07-24 | clean |
+| `ur_d6` | The body | ✅ | 2026-07-24 | clean |
+| `ur_d7` | Feeling unwell | ✅ | 2026-07-24 | clean |
 
 ### Zone 7 — Past & future
 | Topic | Title | Status | Session | Findings |
