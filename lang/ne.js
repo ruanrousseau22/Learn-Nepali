@@ -370,7 +370,6 @@ const NE_LESSONS = [
     {t:'li',q:'Which word did you hear?',say:'नमस्ते',r:'namaste',o:['thank you','hello','water','goodbye'],a:1},
     {t:'match',q:'Read these syllables',pairs:[['का','kaa'],['कि','ki'],['कु','ku'],['को','ko']]},
     {t:'mc',q:'Which is the digit "0"?',o:['०','१','६','९'],a:0},
-  ,
 {t:'mc',q:'Which number is this?',d:'१०',o:['10','1','0','100'],a:0},
 {t:'mc',q:'What does this say?',d:'काठमाडौं',o:['Kathmandu','Nepal','Pokhara','Himalaya'],a:0}]},
   {id:'sc_read_3',title:'Build',step:'build',meta:'Spell with matras',vocab:[],ex:[
