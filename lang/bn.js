@@ -3509,8 +3509,8 @@ const BN_TRIP={
      items:[['জল','jol','water'],['চা','cha','tea'],['ঘর','ghor','a room'],['ওয়াইফাই','waiphai','wi-fi'],['রুটি','ruti','flatbread'],['ডিম','dim','eggs']]},
     {s:' দিন',sr:' din',en:'___, please.',t:'Ask for something politely',
      items:[['জল','jol','Water'],['চা','cha','Tea'],['ভাত','bhat','Rice'],['বিল','bil','The bill'],['চাবি','chabi','The key'],['রুটি','ruti','Flatbread']]},
-    {s:' কত?',sr:' koto?',en:'How much is the ___?',t:'Ask any price',
-     items:[['এটা','eta','this'],['ভাড়া','bhara','fare'],['ঘর','ghor','room'],['চা','cha','tea'],['ট্যাক্সি','taxi','taxi'],['অটো','auto','auto']]}
+    {s:' কত?',sr:' koto?',en:'How much is ___?',t:'Ask any price',
+     items:[['এটা','eta','this'],['ভাড়া','bhara','the fare'],['ঘর','ghor','the room'],['চা','cha','the tea'],['ট্যাক্সি','taxi','the taxi'],['অটো','auto','the auto']]}
   ],
   sections:[
   {id:'first',t:'First words',d:'The handful you will use every day',

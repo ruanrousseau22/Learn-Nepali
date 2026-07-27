@@ -323,7 +323,11 @@ feature, not a Bengali special case** — tab/page/flashcards appear only when
 the pack defines `trip`. Bengali ships it (14 sections / 151 lines).
 - Data: `trip:{title, native, sections:[{id,t,d,note?,lines:[[native,rom,
   english]]}], frames:[{s,sr,en,t,items}]}` — frames are noun-first
-  sentence builders (suffix `s` appended to each item).
+  sentence builders (suffix `s` appended to each item). **Every item's
+  English gloss must read naturally inside the frame's `en` template** —
+  articles live in the gloss, not the template ("How much is ___?" +
+  "the fare"/"this"; a "the ___" template turned the this-item into
+  "How much is the this?", caught July 2026).
 - **Roman is the primary line** (roman → English → script, never gated on
   `S.rom`); notes lead with roman too.
 - **Every line must be something a visitor SAYS or HEARS** — no dictionary
