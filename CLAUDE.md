@@ -229,6 +229,11 @@ learning vs Religious studies (see Faith mode below). `switchMode` must call
 9. **Teach-before-test also applies across topics**: don't test vocabulary a
    later topic never taught (compositional forms and no-word-space scripts
    produce false positives — check before "fixing").
+   The mirror problem — words taught once and never seen again — has a safe,
+   audio-neutral fix: 'Review — which means "X"?' mcs appended to checkpoint
+   lessons ≥2 zones later, every option previously-taught recorded vocab,
+   numeric targets with numeric distractors, one review per orphan. Applied
+   to Lao July 2026 (orphans 201→93); the pattern is reusable per language.
 10. **Shipping a new language checklist**: `lang/<code>.js` pack +
     `LANG_CATALOG` entry + secular art + `LANG_FLAGS` flag + audio dir +
     font in stacks if the script needs one + SEO refresh (title/description/
