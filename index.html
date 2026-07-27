@@ -2900,6 +2900,9 @@ function savedLang(){
   if(deepLang)S.mode='learn'; /* a /learn-X deep-link always opens the course, even if last session was faith mode */
   applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
   S.lang=LANG.code; /* keep state and the loaded pack in agreement */
+  /* a landing-page ?lang choice must survive the return visit without the
+     query string — persist it now (local only; no cloudPush at boot) */
+  if(deepLang)try{localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(S),...prefsPick(S)}));}catch(e){}
   applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();paintModeSwitch();initFaithMode();
 })();
 </script>
