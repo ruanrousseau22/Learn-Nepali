@@ -3514,7 +3514,7 @@ const BN_TRIP={
   ],
   sections:[
   {id:'first',t:'First words',d:'The handful you will use every day',
-   note:'The <b>o</b> in these spellings is a short <b>aw</b>: <b>nomoshkar</b> sounds closer to <b>nawmawshkar</b>. In Kolkata you address people by kinship, not by sir or madam — <b>dada</b> দাদা to a man, <b>didi</b> দিদি to a woman.',
+   note:'The <b>o</b> in these spellings is a short <b>aw</b>: <b>nomoshkar</b> sounds closer to <b>nawmawshkar</b>. In Kolkata you address people by kinship — <b>dada</b> দাদা to a man, <b>didi</b> দিদি to a woman.',
    lines:[
      ['নমস্কার','nomoshkar','hello'],
      ['ধন্যবাদ','dhonnobad','thank you'],
@@ -3551,8 +3551,8 @@ const BN_TRIP={
      ['আমরা আট জন','amra at jon','there are eight of us'],
      ['বেড়াতে এসেছি','berate eshechhi','I have come to visit'],
    ]},
-  {id:'patterns',t:'Sentence patterns',d:'Swap the noun and you have hundreds of sentences',
-   note:'Four frames cover most of what you need: <b>X kothay?</b> where is X · <b>X achhe?</b> do you have X · <b>X din</b> give me X · <b>X koto?</b> how much. Any noun fits.',
+  {id:'patterns',t:'Sentence patterns',d:'Four frames that do the work',
+   note:'Four frames cover most of what you need. Tap a word, hear the whole sentence.',
    lines:[
      ['কোথায়','kothay','where'],
      ['আছে','achhe','there is / you have'],
@@ -3564,7 +3564,7 @@ const BN_TRIP={
      ['লাগবে','lagbe','I need'],
    ]},
   {id:'hear',t:'What you will hear',d:'Half a conversation comes back at you',
-   note:'Everything else on this page is something you say. These are the words that come back. If you miss the answer, <b>abar bolun</b> asks for it again.',
+   note:'These are the words that come back at you. If you miss the answer, <b>abar bolun</b> asks for it again.',
    lines:[
      ['ওই দিকে','oi dike','that way'],
      ['সামনে','shamne','straight ahead'],

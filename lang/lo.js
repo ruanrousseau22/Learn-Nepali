@@ -3218,8 +3218,8 @@ const LO_TRIP={
      items:[['ອັນນີ້','an nii','this one'],['ຫ້ອງ','hong','the room'],['ກາເຟ','kaafe','the coffee'],['ປີ້','pii','the ticket']]}
   ],
   sections:[
-    {id:'first',t:'First words',d:'baw pen nyang is the whole country',
-     note:'<b>sabaidee</b> works from dawn to midnight. <b>baw pen nyang</b> — no problem — answers thanks, apologies and mishaps alike; it is the national temperament in three syllables.',
+    {id:'first',t:'First words',d:'Hello, thanks & no problem',
+     note:'<b>sabaidee</b> works from dawn to midnight. <b>baw pen nyang</b> — no problem — answers thanks, apologies and mishaps alike.',
      lines:[['ສະບາຍດີ','sabaidee','hello'],
       ['ຂອບໃຈ','khop jai','thank you'],
       ['ບໍ່ເປັນຫຍັງ','baw pen nyang','no problem · you are welcome'],
@@ -3270,7 +3270,7 @@ const LO_TRIP={
       ['ແສນ','saen','100,000'],
       ['ກີບ','kip','kip']]},
     {id:'ride',t:'Getting around',d:'Agree the price, enjoy the pace',
-     note:'Tuk-tuks and songthaews run on agreed prices — settle before you sit. <b>jot yuu nii</b> stops the driver; nothing moves fast, and that is the point.',
+     note:'Tuk-tuks and songthaews run on agreed prices — settle before you sit. <b>jot yuu nii</b> stops the driver where you need.',
      lines:[['ລົດຕຸກຕຸກ','lot tuk tuk','tuk-tuk'],
       ['ລົດເມ','lot me','bus'],
       ['ປີ້','pii','ticket'],

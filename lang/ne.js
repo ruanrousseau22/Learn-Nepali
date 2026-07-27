@@ -7794,7 +7794,7 @@ const NE_TRIP={
       ['यहाँ','yahaa','here'],
       ['त्यहाँ','tyahaa','there']]},
     {id:'trek',t:'On the trail',d:'Walking words',
-     note:'<b>ukaalo</b> is uphill, <b>oraalo</b> down — the two words that describe every day in the hills. <b>bistaarai bistaarai</b>, slowly slowly, is trail wisdom and a complete sentence.',
+     note:'<b>ukaalo</b> is uphill, <b>oraalo</b> down — the two words that describe every day in the hills. <b>bistaarai bistaarai</b> — slowly, slowly — works as a complete sentence.',
      lines:[['बाटो','baato','the trail · the way'],
       ['उकालो','ukaalo','uphill'],
       ['ओरालो','oraalo','downhill'],

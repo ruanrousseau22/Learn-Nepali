@@ -3867,7 +3867,7 @@ const KM_TRIP={
       ['រៀល','riel','riel'],
       ['ដូរលុយ','do luy','to change money']]},
     {id:'ride',t:'Tuk-tuks',d:'Agree the price first',
-     note:'Settle the fare before you climb in — <b>tov phsar ponman?</b> starts it. A few thousand riel crosses most towns; moto-taxis are half the price and twice the wind.',
+     note:'Settle the fare before you climb in — <b>tov phsar ponman?</b> starts it. A few thousand riel crosses most towns; moto-taxis are half the price.',
      lines:[['តុកតុក','tuk tuk','tuk-tuk'],
       ['ម៉ូតូ','moto','motorbike (taxi)'],
       ['ទៅផ្សារប៉ុន្មាន','tov phsar ponman','how much to the market?'],
