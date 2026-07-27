@@ -978,7 +978,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does នៅ mark?',d:'នៅ',r:'nov',o:['at / in (a place)','to (a place)','from','with'],a:0},
 {t:'li',q:'Listen — which word?',say:'ធ្វើការ',o:['ធ្វើការ','ធ្វើ','ត្រូវការ','ធ្វើម្ហូប'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ធ្វើ','do'],['អាន','read'],['មើល','look'],['រត់','run'],['នៅ','at / in']]},
-{t:'mc',q:'Khmer word order is…',o:['who — does — what','what — who — does','does — who — what','free'],a:0}]},
+{t:'mc',q:'Khmer word order is…',o:['who — does — what','what — who — does','does — who — what','free'],a:0},
+{t:'mc',q:'Review — which means "hello (formal, with a bow)"?',o:['ជំរាបសួរ','ខ្ញុំមានឆ្កែមួយ','ខ្មៅ','ទៅ'],a:0}]},
 
 {id:'km_now',title:'Now & later',step:'learn',meta:'កំពុង -ing and នឹង will',vocab:[['កំពុង','kampung','-ing (happening now)'],['នឹង','nung','will (future)'],['ខ្ញុំកំពុងញ៉ាំបាយ','khnhom kampung nham bay','I am eating'],['ខ្ញុំកំពុងរៀនភាសាខ្មែរ','khnhom kampung rien pheasa khmer','I am learning Khmer'],['ស្អែកខ្ញុំនឹងទៅផ្សារ','saaek khnhom nung tov phsar','tomorrow I will go to the market'],['ឥឡូវ','eilov','now'],['ក្រោយ','kraoy','later / after']],ex:[
 {t:'note',tag:'Happening right now',q:'កំពុង + verb',body:'<p>Slip <span class="deva">កំពុង</span> <b>kampung</b> before any verb for <b>-ing</b>: <span class="deva">ខ្ញុំកំពុងញ៉ាំបាយ</span> — I am eating. <span class="deva">ខ្ញុំកំពុងរៀនភាសាខ្មែរ</span> — I am learning Khmer (true right now!).</p><p><span class="deva">ឥឡូវ</span> <b>eilov</b> = now.</p>',eg:[['ខ្ញុំកំពុងញ៉ាំបាយ','khnhom kampung nham bay','I am eating'],['ឥឡូវ','eilov','now']]},
@@ -1021,7 +1022,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ខ្ញុំកំពុងរៀនភាសាខ្មែរ — when is the learning?',d:'ខ្ញុំកំពុងរៀនភាសាខ្មែរ',r:'khnhom kampung rien pheasa khmer',o:['right now','tomorrow','finished','someday'],a:0},
 {t:'li',q:'Listen — which word?',say:'នៅទេ',o:['នៅទេ','នឹង','ហើយ','នៅ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['កំពុង','now (-ing)'],['នឹង','will'],['ហើយ','already'],['ក្រោយ','later'],['ឥឡូវ','now (the word)']]},
-{t:'mc',q:'Khmer marks time with…',o:['little helper words','verb endings','tones','word order changes'],a:0}]},
+{t:'mc',q:'Khmer marks time with…',o:['little helper words','verb endings','tones','word order changes'],a:0},
+{t:'mc',q:'Review — which means "zero (0 ០)"?',o:['សូន្យ','ចង់','និយាយម្តងទៀត','តូច'],a:0}]},
 
 {id:'km_food',title:'Food — ម្ហូប',step:'learn',meta:'Fried rice, curry & hungry',vocab:[['ម្ហូប','mhoub','food / a dish'],['បាយឆា','bay chha','fried rice'],['សម្ល','samlor','soup / curry'],['គុយទាវ','kuy teav','noodle soup'],['សាច់','sach','meat'],['សាច់មាន់','sach moan','chicken (meat)'],['បន្លែ','banlae','vegetables'],['ផ្លែឈើ','phlae chheu','fruit'],['ស្វាយ','svay','mango'],['ឃ្លាន','khlean','hungry']],ex:[
 {t:'note',tag:'On every table',q:'ម្ហូបខ្មែរ — Khmer food',body:'<p><span class="deva">ម្ហូប</span> <b>mhoub</b> = food or a dish. Meet the stars: <span class="deva">បាយឆា</span> <b>bay chha</b> fried rice · <span class="deva">សម្ល</span> <b>samlor</b> soup/curry · <span class="deva">គុយទាវ</span> <b>kuy teav</b> the beloved breakfast noodle soup.</p>',eg:[['បាយឆា','bay chha','fried rice'],['សម្ល','samlor','soup / curry'],['គុយទាវ','kuy teav','noodle soup']]},
@@ -1064,7 +1066,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does និង mean?',d:'និង',r:'ning',o:['and','or','with','also'],a:0},
 {t:'li',q:'Listen — which word?',say:'ឃ្លាន',o:['ឃ្លាន','ឆ្ងាញ់','ឆ្នាំ','ខ្លាំង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['បាយឆា','fried rice'],['សាច់','meat'],['បន្លែ','vegetables'],['ស្វាយ','mango'],['ឃ្លាន','hungry']]},
-{t:'mc',q:'Note: និង and (from this lesson) vs នឹង will differ by…',o:['vowel — ning vs nung','nothing','tone','spelling only'],a:0}]},
+{t:'mc',q:'Note: និង and (from this lesson) vs នឹង will differ by…',o:['vowel — ning vs nung','nothing','tone','spelling only'],a:0},
+{t:'mc',q:'Review — which means "six (6 ៦)"?',o:['ប្រាំមួយ','កំពុង','មិត្ត','ធ្វើ'],a:0}]},
 
 {id:'km_drinks',title:'Drinks — ផឹក',step:'learn',meta:'Coffee, tea & coconut water',vocab:[['ផឹក','phoek','to drink'],['កាហ្វេ','kafe','coffee'],['ទឹកដូង','tuk doung','coconut water'],['ទឹកក្រូច','tuk krouch','orange juice'],['ទឹកកក','tuk kak','ice'],['ស្រេកទឹក','srek tuk','thirsty'],['ខ្ញុំស្រេកទឹក','khnhom srek tuk','I am thirsty'],['ដូង','doung','coconut']],ex:[
 {t:'note',tag:'Thirsty work',q:'ផឹក — to drink',body:'<p><span class="deva">ផឹក</span> <b>phoek</b> = to drink. Thirsty is <span class="deva">ស្រេកទឹក</span> <b>srek tuk</b> — literally thirst-for-water.</p><p><span class="deva">កាហ្វេ</span> <b>kafe</b> is coffee — spot the special letter pair <span class="deva">ហ្វ</span>: Khmer builds the <b>f</b> sound from ha + vo!</p>',eg:[['ផឹក','phoek','to drink'],['កាហ្វេ','kafe','coffee'],['ខ្ញុំស្រេកទឹក','khnhom srek tuk','I am thirsty']]},
@@ -1107,7 +1110,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does រាល់ mean?',d:'រាល់',r:'real',o:['every','some','this','only'],a:0},
 {t:'li',q:'Listen — which word?',say:'ផឹក',o:['ផឹក','ផ្ទះ','ភ្នំ','ផង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ផឹក','drink'],['ស្រេកទឹក','thirsty'],['ទឹកដូង','coconut water'],['ទឹកកក','ice'],['កាហ្វេ','coffee']]},
-{t:'mc',q:'ស្រេកទឹក literally reads…',o:['thirst water','drink water','cold water','want water'],a:0}]},
+{t:'mc',q:'ស្រេកទឹក literally reads…',o:['thirst water','drink water','cold water','want water'],a:0},
+{t:'mc',q:'Review — which means "seven (7 ៧)"?',o:['ប្រាំពីរ','ថ្ងៃ','នៅទេ','ប្រាំបួន'],a:0}]},
 
 {id:'km_family',title:'Family — គ្រួសារ',step:'learn',meta:'Mother, father, bong & paoun',vocab:[['គ្រួសារ','kruosa','family'],['ម្តាយ','mday','mother'],['ឪពុក','euvpuk','father'],['ម៉ាក់','mak','mom (informal)'],['ប៉ា','pa','dad (informal)'],['បង','bong','older sibling'],['ប្អូន','paoun','younger sibling'],['បងប្រុស','bong bros','older brother'],['បងស្រី','bong srei','older sister'],['ប្រុស','bros','male / boy'],['ស្រី','srei','female / girl']],ex:[
 {t:'note',tag:'The household',q:'គ្រួសារ — family',body:'<p><span class="deva">គ្រួសារ</span> <b>kruosa</b> = family. <span class="deva">ម្តាយ</span> <b>mday</b> mother and <span class="deva">ឪពុក</span> <b>euvpuk</b> father are the formal words; at home everyone says <span class="deva">ម៉ាក់</span> <b>mak</b> and <span class="deva">ប៉ា</span> <b>pa</b>.</p>',eg:[['ម្តាយ','mday','mother'],['ឪពុក','euvpuk','father'],['ម៉ាក់ និង ប៉ា','mak ning pa','mom and dad']]},
@@ -1150,7 +1154,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Which pair is the informal mom & dad?',o:['ម៉ាក់ / ប៉ា','ម្តាយ / ឪពុក','បង / ប្អូន','តា / នាង'],a:0},
 {t:'li',q:'Listen — which word?',say:'បងស្រី',o:['បងស្រី','បងប្រុស','ប្អូនស្រី','ស្រី'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['គ្រួសារ','family'],['ម្តាយ','mother'],['ឪពុក','father'],['បង','older sibling'],['ស្រី','female']]},
-{t:'mc',q:'តា — from Zone 1 — fits the family as…',o:['grandfather','uncle','father','brother'],a:0}]},
+{t:'mc',q:'តា — from Zone 1 — fits the family as…',o:['grandfather','uncle','father','brother'],a:0},
+{t:'mc',q:'Review — which means "fifteen (10+5)"?',o:['ដប់ប្រាំ','ប៉ុន្មាន','ផ្ទះ','ល្ងាច'],a:0}]},
 
 {id:'km_routine',title:'Your day',step:'learn',meta:'Wake, wash, work, sleep',vocab:[['ក្រោក','kraok','to get up'],['ងូតទឹក','ngout tuk','to bathe / shower'],['ធ្វើម្ហូប','tveu mhoub','to cook'],['គេង','keng','to sleep'],['ទៅគេង','tov keng','to go to bed'],['រាល់ថ្ងៃ','real thngai','every day'],['ពេល','pel','time / when'],['ខ្ញុំក្រោកពេលព្រឹក','khnhom kraok pel pruk','I get up in the morning']],ex:[
 {t:'note',tag:'Morning to night',q:'A Khmer day',body:'<p><span class="deva">ក្រោក</span> <b>kraok</b> get up · <span class="deva">ងូតទឹក</span> <b>ngout tuk</b> bathe (water again!) · <span class="deva">ធ្វើម្ហូប</span> <b>tveu mhoub</b> cook · <span class="deva">គេង</span> <b>keng</b> sleep.</p><p><span class="deva">ពេល</span> <b>pel</b> = time: <span class="deva">ពេលព្រឹក</span> in the morning, <span class="deva">ពេលយប់</span> at night.</p>',eg:[['ក្រោក','kraok','get up'],['ងូតទឹក','ngout tuk','bathe'],['គេង','keng','sleep']]},
@@ -1193,7 +1198,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ខ្ញុំកំពុងធ្វើម្ហូប means…',d:'ខ្ញុំកំពុងធ្វើម្ហូប',r:'khnhom kampung tveu mhoub',o:['I am cooking (now)','I will cook','I cooked','I love cooking'],a:0},
 {t:'li',q:'Listen — which word?',say:'ក្រោក',o:['ក្រោក','គេង','ក្រោយ','កោះ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ក្រោក','get up'],['ធ្វើម្ហូប','cook'],['ទៅគេង','go to bed'],['ពេល','time'],['រាល់ថ្ងៃ','every day']]},
-{t:'mc',q:'Whole sentence, no verb tables: ស្អែកខ្ញុំនឹងក្រោកពេលព្រឹក =',o:['tomorrow I will get up in the morning','yesterday I got up early','I always sleep in','wake me tomorrow'],a:0}]},
+{t:'mc',q:'Whole sentence, no verb tables: ស្អែកខ្ញុំនឹងក្រោកពេលព្រឹក =',o:['tomorrow I will get up in the morning','yesterday I got up early','I always sleep in','wake me tomorrow'],a:0},
+{t:'mc',q:'Review — which means "forty"?',o:['សែសិប','ប្រាំ','ទិញ','ធ្វើម្ហូប'],a:0}]},
 
 {id:'km_where',title:'Here & there',step:'learn',meta:'Places, near & far',vocab:[['ទីនេះ','ti nih','here'],['ទីនោះ','ti nuh','there'],['នៅណា','nov na','where (at)?'],['សាលារៀន','sala rien','school'],['ហាង','hang','shop'],['ទីក្រុង','ti krong','city'],['ស្រុក','srok','village / home area'],['ជិត','chit','near'],['ឆ្ងាយ','chhngay','far'],['ផ្ទះខ្ញុំនៅជិតផ្សារ','phteah khnhom nov chit phsar','my house is near the market']],ex:[
 {t:'note',tag:'Pointing at places',q:'ទីនេះ ទីនោះ នៅណា',body:'<p><span class="deva">ទីនេះ</span> <b>ti nih</b> here · <span class="deva">ទីនោះ</span> <b>ti nuh</b> there. Ask <span class="deva">នៅណា?</span> <b>nov na?</b> — where is it (at)?</p><p><span class="deva">ផ្សារនៅណា?</span> — where is the market?</p>',eg:[['ទីនេះ','ti nih','here'],['ទីនោះ','ti nuh','there'],['នៅណា','nov na','where?']]},
@@ -1236,7 +1242,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ស្រុកណា asks about your…',d:'ស្រុកណា',r:'srok na',o:['home area','age','job','name'],a:0},
 {t:'li',q:'Listen — which word?',say:'ស្រុក',o:['ស្រុក','ស្រី','ស្រែ','ទីក្រុង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ទីនេះ','here'],['ទីនោះ','there'],['ជិត','near'],['ឆ្ងាយ','far'],['ទីក្រុង','city']]},
-{t:'mc',q:'អរគុណ — Zone 4 done! You now handle verbs, time, food, family & places. Next zone…',o:['is on the way','never','is a secret','needs a ticket'],a:0}]},
+{t:'mc',q:'អរគុណ — Zone 4 done! You now handle verbs, time, food, family & places. Next zone…',o:['is on the way','never','is a secret','needs a ticket'],a:0},
+{t:'mc',q:'Review — which means "fifty"?',o:['ហាសិប','ខ្ញុំត្រូវការជំនួយ','ដប់មួយ','ថ្មី'],a:0}]},
 
 /* ===================== ZONE 5 · OUT & ABOUT ===================== */
 {id:'km_money',title:'Money — លុយ',step:'learn',meta:'Riel, dollars & thousands',vocab:[['លុយ','luy','money'],['រៀល','riel','riel (Cambodian money)'],['ដុល្លារ','dolla','dollar'],['ពាន់','poan','thousand'],['មួយពាន់រៀល','muoy poan riel','one thousand riel'],['ប្រាំពាន់រៀល','pram poan riel','five thousand riel'],['អស់ប៉ុន្មាន','os ponman','how much altogether?'],['គិតលុយ','kit luy','the bill, please']],ex:[
@@ -1280,7 +1287,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does គិតលុយ mean?',d:'គិតលុយ',r:'kit luy',o:['the bill, please','a discount','a tip','change'],a:0},
 {t:'li',q:'Listen — which word?',say:'លុយ',o:['លុយ','រៀល','ល្អ','យប់'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ពាន់','thousand'],['លុយ','money'],['អស់ប៉ុន្មាន','how much altogether?'],['ដុល្លារ','dollar']]},
-{t:'mc',q:'ពាន់ turns your numbers into…',d:'ពាន់',r:'poan',o:['thousands','tens','months','dollars'],a:0}]},
+{t:'mc',q:'ពាន់ turns your numbers into…',d:'ពាន់',r:'poan',o:['thousands','tens','months','dollars'],a:0},
+{t:'mc',q:'Review — which means "sixty"?',o:['ហុកសិប','ខែ','បងប្រុស','អស់ប៉ុន្មាន'],a:0}]},
 
 {id:'km_shop',title:'Shop & bargain',step:'learn',meta:'Buy, sell & smile — ចុះថ្លៃ',vocab:[['លក់','lok','to sell'],['យក','yok','to take'],['ខ្ញុំយកមួយនេះ','khnhom yok muoy nih','I will take this one'],['ថ្លៃណាស់','thlai nah','so expensive!'],['ចុះថ្លៃ','choh thlai','to lower the price'],['ចុះថ្លៃបានទេ','choh thlai ban te','can you lower the price?'],['បាន','ban','can / okay / deal'],['មួយទៀត','muoy tiet','one more / another']],ex:[
 {t:'note',tag:'Market words',q:'Buy, sell & take',body:'<p>You know <span class="deva">ទិញ</span> <b>tinh</b> buy — meet <span class="deva">លក់</span> <b>lok</b> sell and <span class="deva">យក</span> <b>yok</b> take. Found the one you want? <span class="deva">ខ្ញុំយកមួយនេះ</span> <b>khnhom yok muoy nih</b> — I will take this one.</p>',eg:[['ទិញ','tinh','buy'],['លក់','lok','sell'],['ខ្ញុំយកមួយនេះ','khnhom yok muoy nih','I will take this one']]},
@@ -1323,7 +1331,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Which word means to sell?',o:['លក់','ទិញ','យក','បាន'],a:0},
 {t:'li',q:'Listen — which word?',say:'មួយទៀត',o:['មួយទៀត','មួយនេះ','មួយរយ','ម្តងទៀត'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['លក់','sell'],['យក','take'],['បាន','deal / can'],['ចុះថ្លៃ','lower the price'],['មួយទៀត','one more']]},
-{t:'mc',q:'You got the price down and you take it. Say…',o:['ខ្ញុំយកមួយនេះ','ខ្ញុំមិនយល់ទេ','ទៅណា','សុំទោស'],a:0}]},
+{t:'mc',q:'You got the price down and you take it. Say…',o:['ខ្ញុំយកមួយនេះ','ខ្ញុំមិនយល់ទេ','ទៅណា','សុំទោស'],a:0},
+{t:'mc',q:'Review — which means "seventy"?',o:['ចិតសិប','សាមសិប','ហើយ','ពេល'],a:0}]},
 
 {id:'km_ride',title:'Getting around',step:'learn',meta:'Moto, tuk-tuk & the magic verb ជិះ',vocab:[['ជិះ','chih','to ride / take (transport)'],['ម៉ូតូ','moto','motorbike'],['តុកតុក','tuk tuk','tuk-tuk'],['ឡាន','laan','car'],['ឡានក្រុង','laan krong','bus'],['កង់','kang','bicycle'],['ទូក','touk','boat'],['ជិះម៉ូតូ','chih moto','to ride a moto'],['ទៅផ្សារប៉ុន្មាន','tov phsar ponman','how much to the market?']],ex:[
 {t:'note',tag:'One verb rides all',q:'ជិះ + vehicle',body:'<p><span class="deva">ជិះ</span> <b>chih</b> = to ride or take any transport: <span class="deva">ជិះម៉ូតូ</span> ride a moto · <span class="deva">ជិះតុកតុក</span> take a tuk-tuk · <span class="deva">ជិះទូក</span> take a boat.</p><p><span class="deva">ឡាន</span> <b>laan</b> car · <span class="deva">កង់</span> <b>kang</b> bicycle · <span class="deva">ឡានក្រុង</span> <b>laan krong</b> the city bus.</p>',eg:[['ម៉ូតូ','moto','motorbike'],['តុកតុក','tuk tuk','tuk-tuk'],['ទូក','touk','boat']]},
@@ -1366,7 +1375,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ទៅផ្សារប៉ុន្មាន — when do you ask it?',d:'ទៅផ្សារប៉ុន្មាន',r:'tov phsar ponman',o:['before the ride','after the ride','never','only on the bus'],a:0},
 {t:'li',q:'Listen — which word?',say:'ឡានក្រុង',o:['ឡានក្រុង','ឡាន','ទីក្រុង','កង់'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ម៉ូតូ','motorbike'],['កង់','bicycle'],['ឡាន','car'],['ទូក','boat'],['ជិះ','ride']]},
-{t:'mc',q:'Khmer for tuk-tuk is…',o:['តុកតុក','ទូក','កង់','ឡាន'],a:0}]},
+{t:'mc',q:'Khmer for tuk-tuk is…',o:['តុកតុក','ទូក','កង់','ឡាន'],a:0},
+{t:'mc',q:'Review — which means "eighty"?',o:['ប៉ែតសិប','នឹង','ពេល','ជួយ'],a:0}]},
 
 {id:'km_dir',title:'Directions',step:'learn',meta:'Left, right, straight — steer any ride',vocab:[['ឆ្វេង','chhveng','left'],['ស្តាំ','sdam','right'],['ត្រង់','trang','straight'],['បត់','bot','to turn'],['បត់ឆ្វេង','bot chhveng','turn left'],['បត់ស្តាំ','bot sdam','turn right'],['ទៅត្រង់','tov trang','go straight'],['ឈប់','chhup','to stop'],['ឈប់ទីនេះ','chhup ti nih','stop here'],['ដល់ហើយ','dol haey','we have arrived']],ex:[
 {t:'note',tag:'Three magic words',q:'ឆ្វេង ស្តាំ ត្រង់',body:'<p>Steer any tuk-tuk with three words: <span class="deva">ឆ្វេង</span> <b>chhveng</b> left · <span class="deva">ស្តាំ</span> <b>sdam</b> right · <span class="deva">ត្រង់</span> <b>trang</b> straight.</p><p><span class="deva">បត់</span> <b>bot</b> = turn: <span class="deva">បត់ឆ្វេង</span> turn left, <span class="deva">បត់ស្តាំ</span> turn right, <span class="deva">ទៅត្រង់</span> go straight.</p>',eg:[['បត់ឆ្វេង','bot chhveng','turn left'],['បត់ស្តាំ','bot sdam','turn right'],['ទៅត្រង់','tov trang','go straight']]},
@@ -1409,7 +1419,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ដល់ហើយ mean?',d:'ដល់ហើយ',r:'dol haey',o:['we have arrived','turn around','hurry up','wait here'],a:0},
 {t:'li',q:'Listen — which word?',say:'ត្រង់',o:['ត្រង់','ត្រជាក់','ស្តាំ','ត្រូវការ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ឆ្វេង','left'],['ស្តាំ','right'],['ត្រង់','straight'],['ដល់ហើយ','arrived'],['ឈប់','stop']]},
-{t:'mc',q:'Which three words steer any ride?',o:['ឆ្វេង ស្តាំ ត្រង់','មួយ ពីរ បី','ថ្លៃ ថោក លុយ','ក្តៅ ត្រជាក់ ភ្លៀង'],a:0}]},
+{t:'mc',q:'Which three words steer any ride?',o:['ឆ្វេង ស្តាំ ត្រង់','មួយ ពីរ បី','ថ្លៃ ថោក លុយ','ក្តៅ ត្រជាក់ ភ្លៀង'],a:0},
+{t:'mc',q:'Review — which means "ninety"?',o:['កៅសិប','ហុកសិប','ខៀវ','ថ្ងៃនេះ'],a:0}]},
 
 {id:'km_weather',title:'Weather — មេឃ',step:'learn',meta:'Rain, wind & two seasons',vocab:[['មេឃ','mek','sky / weather'],['ភ្លៀង','phlieng','rain'],['មេឃភ្លៀង','mek phlieng','it is raining'],['ខ្យល់','khyal','wind'],['ពពក','popok','cloud'],['រដូវ','rodov','season'],['រដូវភ្លៀង','rodov phlieng','rainy season'],['រដូវប្រាំង','rodov prang','dry season'],['ថ្ងៃនេះក្តៅណាស់','thngai nih kdav nah','today is very hot']],ex:[
 {t:'note',tag:'Look up',q:'មេឃ — the sky',body:'<p><span class="deva">មេឃ</span> <b>mek</b> = the sky, and the sky does the weather: <span class="deva">មេឃភ្លៀង</span> <b>mek phlieng</b> — it is raining. <span class="deva">ខ្យល់</span> <b>khyal</b> wind · <span class="deva">ពពក</span> <b>popok</b> cloud.</p><p>You can already talk heat: <span class="deva">ថ្ងៃនេះក្តៅណាស់</span> — today is very hot!</p>',eg:[['មេឃភ្លៀង','mek phlieng','it is raining'],['ខ្យល់','khyal','wind'],['ពពក','popok','cloud']]},
@@ -1452,7 +1463,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Which season runs May to October?',o:['រដូវភ្លៀង','រដូវប្រាំង','both','neither'],a:0},
 {t:'li',q:'Listen — which word?',say:'ខ្យល់',o:['ខ្យល់','យល់','ជួយ','ខែ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['មេឃ','sky'],['ពពក','cloud'],['ភ្លៀង','rain'],['ខ្យល់','wind'],['រដូវ','season']]},
-{t:'mc',q:'ថ្ងៃនេះក្តៅណាស់ — say it when…',d:'ថ្ងៃនេះក្តៅណាស់',r:'thngai nih kdav nah',o:['the day is very hot','it is freezing','it is raining','the food is spicy'],a:0}]},
+{t:'mc',q:'ថ្ងៃនេះក្តៅណាស់ — say it when…',d:'ថ្ងៃនេះក្តៅណាស់',r:'thngai nih kdav nah',o:['the day is very hot','it is freezing','it is raining','the food is spicy'],a:0},
+{t:'mc',q:'Review — which means "my name is Sokha"?',o:['ខ្ញុំឈ្មោះសុខា','ត្រូវការ','មួយ','បន្តិច'],a:0}]},
 
 {id:'km_body',title:'The body',step:'learn',meta:'Head to toe in Khmer',vocab:[['ក្បាល','kbal','head'],['ភ្នែក','phnek','eye'],['ត្រចៀក','trochiek','ear'],['មាត់','moat','mouth'],['ធ្មេញ','thmenh','tooth / teeth'],['ដៃ','dai','hand / arm'],['ជើង','cheung','leg / foot'],['ពោះ','puoh','belly / stomach'],['សក់','sak','hair']],ex:[
 {t:'note',tag:'Top floor',q:'The head',body:'<p><span class="deva">ក្បាល</span> <b>kbal</b> head — wearing <span class="deva">សក់</span> <b>sak</b> hair, <span class="deva">ភ្នែក</span> <b>phnek</b> eyes, <span class="deva">ត្រចៀក</span> <b>trochiek</b> ears, <span class="deva">មាត់</span> <b>moat</b> mouth and <span class="deva">ធ្មេញ</span> <b>thmenh</b> teeth.</p>',eg:[['ក្បាល','kbal','head'],['ភ្នែក','phnek','eye'],['មាត់','moat','mouth']]},
@@ -1495,7 +1507,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ជើង means leg — and in the script it names…',d:'ជើង',r:'cheung',o:['subscript consonants','vowels','numbers','question words'],a:0},
 {t:'li',q:'Listen — which word?',say:'មាត់',o:['មាត់','មាន','ម៉ូតូ','មេឃ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ក្បាល','head'],['ដៃ','hand / arm'],['ជើង','leg / foot'],['ភ្នែក','eye'],['សក់','hair']]},
-{t:'mc',q:'ដៃ is one word for…',d:'ដៃ',r:'dai',o:['both hand and arm','only the thumb','both leg and foot','the elbow'],a:0}]},
+{t:'mc',q:'ដៃ is one word for…',d:'ដៃ',r:'dai',o:['both hand and arm','only the thumb','both leg and foot','the elbow'],a:0},
+{t:'mc',q:'Review — which means "is / that is"?',o:['គឺ','ផ្ទះធំ','កម្ពុជា','ហាង'],a:0}]},
 
 {id:'km_sick',title:'Feeling sick',step:'learn',meta:'ឈឺ + body part = ache',vocab:[['ឈឺ','chheu','to hurt / be sick'],['ឈឺក្បាល','chheu kbal','headache'],['ឈឺពោះ','chheu puoh','stomach ache'],['គ្រុន','krun','fever'],['ហត់','hot','tired'],['ថ្នាំ','thnam','medicine'],['ពេទ្យ','pet','doctor'],['មន្ទីរពេទ្យ','monti pet','hospital'],['ខ្ញុំមិនស្រួលខ្លួនទេ','khnhom min sruol khluon te','I do not feel well']],ex:[
 {t:'note',tag:'A handy pattern',q:'ឈឺ + body part',body:'<p><span class="deva">ឈឺ</span> <b>chheu</b> = to hurt or be sick. Add any body part from last topic: <span class="deva">ឈឺក្បាល</span> headache · <span class="deva">ឈឺពោះ</span> stomach ache · <span class="deva">ឈឺធ្មេញ</span> toothache. One pattern, every ache.</p><p><span class="deva">ហត់</span> <b>hot</b> = tired — yes, it sounds like English hot!</p>',eg:[['ឈឺក្បាល','chheu kbal','headache'],['ឈឺពោះ','chheu puoh','stomach ache'],['ហត់','hot','tired']]},
@@ -1538,7 +1551,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ថ្នាំ mean?',d:'ថ្នាំ',r:'thnam',o:['medicine','tea','food','doctor'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'មន្ទីរពេទ្យ',o:['មន្ទីរពេទ្យ','ពេទ្យ','ថ្នាំ','ផ្សារ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ឈឺ','sick'],['ហត់','tired'],['ថ្នាំ','medicine'],['ពេទ្យ','doctor'],['មន្ទីរពេទ្យ','hospital']]},
-{t:'mc',q:'អរគុណ — Zone 5 done! Money, markets, wheels, weather & your health — all in Khmer. Next…',o:['keep going — Zone 6 is coming','stop here','start over','take a nap'],a:0}]},
+{t:'mc',q:'អរគុណ — Zone 5 done! Money, markets, wheels, weather & your health — all in Khmer. Next…',o:['keep going — Zone 6 is coming','stop here','start over','take a nap'],a:0},
+{t:'mc',q:'Review — which means "he / she is a teacher"?',o:['គាត់ជាគ្រូ','ណា','សុខសប្បាយទេ','មួយរយ'],a:0}]},
 
 /* ===================== ZONE 6 · CONNECT & CONVERSE ===================== */
 {id:'km_past',title:'The past — បាន',step:'learn',meta:'Saying what happened',vocab:[['បាន','ban','did (past marker)'],['ខ្ញុំបានទៅផ្សារ','khnhom ban tov phsar','I went to the market'],['ម្សិលមិញ','msel minh','yesterday'],['ខ្ញុំបានញ៉ាំបាយហើយ','khnhom ban nham bay haey','I already ate'],['ខ្ញុំមិនបានទៅទេ','khnhom min ban tov te','I did not go'],['អ្នកបានទៅណា','neak ban tov na','where did you go?']],ex:[
@@ -1582,7 +1596,8 @@ const KM_LESSONS=[
 {t:'mc',q:'ខ្ញុំមិនបានទៅទេ means…',d:'ខ្ញុំមិនបានទៅទេ',r:'khnhom min ban tov te',o:['I did not go','I cannot go','I am not going','I will not go'],a:0},
 {t:'li',q:'Listen — which word?',say:'ម្សិលមិញ',o:['ម្សិលមិញ','ល្ងាច','ព្រឹក','ស្អែក'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ម្សិលមិញ','yesterday'],['ថ្ងៃនេះ','today'],['ស្អែក','tomorrow'],['បាន','did']]},
-{t:'mc',q:'Khmer marks the past with…',o:['time words and បាន','verb endings','tones','a special alphabet'],a:0}]},
+{t:'mc',q:'Khmer marks the past with…',o:['time words and បាន','verb endings','tones','a special alphabet'],a:0},
+{t:'mc',q:'Review — which means "I am a student"?',o:['ខ្ញុំជាសិស្ស','គាត់','ទឹកក្រូច','ប្រាំពាន់រៀល'],a:0}]},
 
 {id:'km_can',title:'Can — អាច',step:'learn',meta:'The អាច … បាន sandwich',vocab:[['អាច','aach','can / may (possible)'],['ខ្ញុំអាចទៅបាន','khnhom aach tov ban','I can go'],['អាចជួយខ្ញុំបានទេ','aach chuoy khnhom ban te','can you help me?'],['ខ្ញុំមិនអាចទៅទេ','khnhom min aach tov te','I cannot go'],['និយាយ','niyeay','to speak'],['ខ្ញុំចេះនិយាយភាសាខ្មែរ','khnhom cheh niyeay pheasa khmer','I can speak Khmer'],['អាចទេ','aach te','may I? / is it possible?']],ex:[
 {t:'note',tag:'The sandwich',q:'អាច + verb + បាន',body:'<p><span class="deva">អាច</span> <b>aach</b> = can. Khmer wraps it around the verb: <span class="deva">អាច</span> before, <span class="deva">បាន</span> after — <span class="deva">ខ្ញុំអាចទៅបាន</span> — I can go.</p><p>Cannot = <span class="deva">មិនអាច</span> + verb + <span class="deva">ទេ</span>: <span class="deva">ខ្ញុំមិនអាចទៅទេ</span>.</p>',eg:[['ខ្ញុំអាចទៅបាន','khnhom aach tov ban','I can go'],['ខ្ញុំមិនអាចទៅទេ','khnhom min aach tov te','I cannot go']]},
@@ -1625,7 +1640,8 @@ const KM_LESSONS=[
 {t:'mc',q:'អាចជួយខ្ញុំបានទេ means…',d:'អាចជួយខ្ញុំបានទេ',r:'aach chuoy khnhom ban te',o:['can you help me?','I can help you','who can help?','help is coming'],a:0},
 {t:'li',q:'Listen — which word?',say:'អាចទេ',o:['អាចទេ','អាច','ចេះ','បានទេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['អាច','can (possible)'],['ចេះ','can (know how)'],['មិនអាចទេ','cannot'],['និយាយ','speak']]},
-{t:'mc',q:'The can-sandwich is…',o:['អាច + verb + បាន','បាន + verb + អាច','verb + អាចបាន','អាចបាន + verb'],a:0}]},
+{t:'mc',q:'The can-sandwich is…',o:['អាច + verb + បាន','បាន + verb + អាច','verb + អាចបាន','អាចបាន + verb'],a:0},
+{t:'mc',q:'Review — which means "the house is big / a big house"?',o:['ផ្ទះធំ','ទៅត្រង់','គិតលុយ','បៃតង'],a:0}]},
 
 {id:'km_quest',title:'Question words',step:'learn',meta:'Who, when, why & how',vocab:[['នរណា','norna','who'],['អ្វី','avei','what'],['ពេលណា','pel na','when'],['ហេតុអ្វី','haet avei','why'],['ម៉េច','mech','how'],['ម៉េចដែរ','mech dae','how is it going?'],['អ្នកទៅពេលណា','neak tov pel na','when do you go?'],['ហេតុអ្វីរៀនភាសាខ្មែរ','haet avei rien pheasa khmer','why learn Khmer?'],['នរណាធ្វើម្ហូប','norna tveu mhoub','who cooks?']],ex:[
 {t:'note',tag:'Complete the set',q:'Four new question words',body:'<p>You already ask <span class="deva">ណា</span> where and <span class="deva">ប៉ុន្មាន</span> how much. Meet the rest: <span class="deva">នរណា</span> <b>norna</b> who · <span class="deva">ពេលណា</span> <b>pel na</b> when · <span class="deva">ហេតុអ្វី</span> <b>haet avei</b> why · <span class="deva">ម៉េច</span> <b>mech</b> how.</p><p>Question words simply sit where the answer would — no word-order gymnastics: <span class="deva">អ្នកទៅពេលណា</span> — you go when?</p>',eg:[['នរណា','norna','who'],['ពេលណា','pel na','when'],['ហេតុអ្វី','haet avei','why']]},
@@ -1668,7 +1684,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ម៉េច ask?',d:'ម៉េច',r:'mech',o:['how','who','what','when'],a:0},
 {t:'li',q:'Listen — which word?',say:'នរណា',o:['នរណា','ពេលណា','ទៅណា','ណា'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['នរណា','who'],['ពេលណា','when'],['ហេតុអ្វី','why'],['ម៉េច','how'],['ប៉ុន្មាន','how much']]},
-{t:'mc',q:'The friendly check-in ម៉េចដែរ means…',d:'ម៉េចដែរ',r:'mech dae',o:['how is it going?','where were you?','what is your name?','see you later'],a:0}]},
+{t:'mc',q:'The friendly check-in ម៉េចដែរ means…',d:'ម៉េចដែរ',r:'mech dae',o:['how is it going?','where were you?','what is your name?','see you later'],a:0},
+{t:'mc',q:'Review — which means "this house is not big"?',o:['ផ្ទះនេះមិនធំទេ','អត់អីទេ','បួន','ទេ'],a:0}]},
 
 {id:'km_feel',title:'Feelings — ចិត្ត',step:'learn',meta:'Happy hearts & homesick days',vocab:[['ចិត្ត','chet','heart / mind'],['សប្បាយចិត្ត','sabay chet','happy / glad'],['ពិបាកចិត្ត','pibak chet','sad / upset'],['ពិបាក','pibak','difficult / hard'],['ខឹង','khoeng','angry'],['ខ្លាច','khlach','afraid of'],['នឹក','nik','to miss (someone / somewhere)'],['ស្រឡាញ់','srolanh','to love'],['ខ្ញុំនឹកផ្ទះ','khnhom nik phteah','I miss home'],['ខ្ញុំស្រឡាញ់គ្រួសារខ្ញុំ','khnhom srolanh kruosa khnhom','I love my family']],ex:[
 {t:'note',tag:'It lives in the heart',q:'ចិត្ត — heart & mind',body:'<p>Khmer feelings live in <span class="deva">ចិត្ត</span> <b>chet</b> — the heart-mind. Glad = <span class="deva">សប្បាយចិត្ត</span> <b>sabay chet</b> (a happy heart); sad = <span class="deva">ពិបាកចិត្ត</span> <b>pibak chet</b> (a struggling heart).</p><p><span class="deva">ពិបាក</span> alone = difficult: <span class="deva">ភាសាខ្មែរមិនពិបាកទេ</span> — Khmer is not hard!</p>',eg:[['សប្បាយចិត្ត','sabay chet','happy'],['ពិបាកចិត្ត','pibak chet','sad'],['ពិបាក','pibak','difficult']]},
@@ -1711,7 +1728,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ខ្លាច mean?',d:'ខ្លាច',r:'khlach',o:['afraid of','angry','sad','cold'],a:0},
 {t:'li',q:'Listen — which word?',say:'ស្រឡាញ់',o:['ស្រឡាញ់','ស្រួល','នឹក','សប្បាយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['សប្បាយចិត្ត','happy'],['ពិបាកចិត្ត','sad'],['ខឹង','angry'],['នឹក','to miss'],['ស្រឡាញ់','to love']]},
-{t:'mc',q:'Khmer feelings live in the…',o:['heart — ចិត្ត','head','stomach','weather'],a:0}]},
+{t:'mc',q:'Khmer feelings live in the…',o:['heart — ចិត្ត','head','stomach','weather'],a:0},
+{t:'mc',q:'Review — which means "color"?',o:['ពណ៌','អ្នក','ជិត','សាច់'],a:0}]},
 
 {id:'km_conn',title:'Little connectors',step:'learn',meta:'But, because & if',vocab:[['ប៉ុន្តែ','pontae','but'],['ព្រោះ','pruoh','because'],['បើ','baeu','if'],['និង','ning','and'],['ខ្ញុំចង់ទៅ ប៉ុន្តែមេឃភ្លៀង','khnhom chang tov pontae mek phlieng','I want to go but it is raining'],['ខ្ញុំរៀនភាសាខ្មែរ ព្រោះខ្ញុំស្រឡាញ់កម្ពុជា','khnhom rien pheasa khmer pruoh khnhom srolanh kampuchea','I learn Khmer because I love Cambodia'],['បើមេឃភ្លៀង ខ្ញុំនៅផ្ទះ','baeu mek phlieng khnhom nov phteah','if it rains, I stay home']],ex:[
 {t:'note',tag:'Glue words',q:'ប៉ុន្តែ & ព្រោះ',body:'<p>Two sentences become one with a connector. <span class="deva">ប៉ុន្តែ</span> <b>pontae</b> but: <span class="deva">ខ្ញុំចង់ទៅ ប៉ុន្តែមេឃភ្លៀង</span> — I want to go, but it is raining.</p><p><span class="deva">ព្រោះ</span> <b>pruoh</b> because: <span class="deva">ខ្ញុំរៀនភាសាខ្មែរ ព្រោះខ្ញុំស្រឡាញ់កម្ពុជា</span> — I learn Khmer because I love Cambodia.</p>',eg:[['ប៉ុន្តែ','pontae','but'],['ព្រោះ','pruoh','because']]},
@@ -1754,7 +1772,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does បើ mean?',d:'បើ',r:'baeu',o:['if','because','and','already'],a:0},
 {t:'li',q:'Listen — which word?',say:'ព្រោះ',o:['ព្រោះ','ពពក','ពោះ','ប្រាំ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ប៉ុន្តែ','but'],['ព្រោះ','because'],['បើ','if'],['និង','and'],['ហើយ','and then']]},
-{t:'mc',q:'ខ្ញុំហត់ ប៉ុន្តែសប្បាយចិត្ត means…',d:'ខ្ញុំហត់ ប៉ុន្តែសប្បាយចិត្ត',r:'khnhom hot pontae sabay chet',o:['I am tired but happy','I am hot and sad','if I rest, I am happy','I am too tired to be happy'],a:0}]},
+{t:'mc',q:'ខ្ញុំហត់ ប៉ុន្តែសប្បាយចិត្ត means…',d:'ខ្ញុំហត់ ប៉ុន្តែសប្បាយចិត្ត',r:'khnhom hot pontae sabay chet',o:['I am tired but happy','I am hot and sad','if I rest, I am happy','I am too tired to be happy'],a:0},
+{t:'mc',q:'Review — which means "blue"?',o:['ខៀវ','ដូង','ប៉ុន្មាន','ផ្លូវ'],a:0}]},
 
 {id:'km_compare',title:'Comparing — ជាង',step:'learn',meta:'Bigger, best & just the same',vocab:[['ជាង','cheang','more … than'],['ធំជាង','thom cheang','bigger'],['ជាងគេ','cheang ke','the most (of all)'],['ល្អជាងគេ','laor cheang ke','the best'],['ដូច','douch','like / as'],['ដូចគ្នា','douch knea','the same'],['ទីក្រុងធំជាងស្រុក','ti krong thom cheang srok','the city is bigger than the village'],['ស្វាយឆ្ងាញ់ជាងគេ','svay chhnganh cheang ke','mangoes are the most delicious']],ex:[
 {t:'note',tag:'No bigger-biggest tables',q:'Adjective + ជាង',body:'<p>To compare, just add <span class="deva">ជាង</span> <b>cheang</b> after any adjective: <span class="deva">ធំជាង</span> bigger · <span class="deva">ថោកជាង</span> cheaper. Then name the loser: <span class="deva">ទីក្រុងធំជាងស្រុក</span> — the city is bigger than the village.</p>',eg:[['ធំជាង','thom cheang','bigger'],['ទីក្រុងធំជាងស្រុក','ti krong thom cheang srok','the city is bigger than the village']]},
@@ -1797,7 +1816,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ដូច mean?',d:'ដូច',r:'douch',o:['like / as','more than','different','best'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ល្អជាងគេ',o:['ល្អជាងគេ','ល្អជាង','ល្អណាស់','ជាងគេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ជាង','more than'],['ជាងគេ','the most'],['ដូចគ្នា','the same'],['ធំជាង','bigger']]},
-{t:'mc',q:'The best mango of all is ស្វាយ…',o:['ឆ្ងាញ់ជាងគេ','ឆ្ងាញ់ជាង','ឆ្ងាញ់ណាស់','ដូចគ្នា'],a:0}]},
+{t:'mc',q:'The best mango of all is ស្វាយ…',o:['ឆ្ងាញ់ជាងគេ','ឆ្ងាញ់ជាង','ឆ្ងាញ់ណាស់','ដូចគ្នា'],a:0},
+{t:'mc',q:'Review — which means "green"?',o:['បៃតង','ល្អជាងគេ','ញ៉ាំបាយហើយឬនៅ','រៀន'],a:0}]},
 
 {id:'km_opinion',title:'What do you think?',step:'learn',meta:'គិតថា — think, guess & agree',vocab:[['គិត','kit','to think'],['ថា','tha','that (links a thought)'],['ខ្ញុំគិតថាឆ្ងាញ់','khnhom kit tha chhnganh','I think it is delicious'],['អ្នកគិតម៉េច','neak kit mech','what do you think?'],['ប្រហែល','prohael','maybe / probably'],['ពិត','pit','true / real'],['មែន','maen','indeed / right'],['មែនទេ','maen te','really?'],['មែនហើយ','maen haey','that is right!']],ex:[
 {t:'note',tag:'Share a thought',q:'គិតថា — think that',body:'<p><span class="deva">គិត</span> <b>kit</b> = think (you met it in <span class="deva">គិតលុយ</span> — count the money!). Link your thought with <span class="deva">ថា</span> <b>tha</b>: <span class="deva">ខ្ញុំគិតថាឆ្ងាញ់</span> — I think (that) it is delicious.</p><p>Ask back: <span class="deva">អ្នកគិតម៉េច</span> — what do you think?</p>',eg:[['ខ្ញុំគិតថាឆ្ងាញ់','khnhom kit tha chhnganh','I think it is delicious'],['អ្នកគិតម៉េច','neak kit mech','what do you think?']]},
@@ -1840,7 +1860,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ប្រហែល mean?',d:'ប្រហែល',r:'prohael',o:['maybe / probably','exactly','never','again'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'មែនហើយ',o:['មែនហើយ','មែនទេ','មែន','ដល់ហើយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['គិត','think'],['ថា','that (link)'],['ពិត','true'],['ប្រហែល','maybe'],['មែន','indeed']]},
-{t:'mc',q:'អរគុណ — Zone 6 done! You connect ideas, share feelings & speak your mind. The Khmer course…',o:['keeps growing — see you in Zone 7','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'អរគុណ — Zone 6 done! You connect ideas, share feelings & speak your mind. The Khmer course…',o:['keeps growing — see you in Zone 7','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "yellow"?',o:['លឿង','ក្តៅ','ស្រី','ដៃ'],a:0}]},
 
 /* ===================== ZONE 7 · SOUND LIKE A LOCAL ===================== */
 {id:'km_polite',title:'Terms of address',step:'learn',meta:'ពូ មីង តា យាយ & លោក',vocab:[['ពូ','pu','uncle (any older man)'],['មីង','ming','aunt (any older woman)'],['តា','taa','grandfather (elderly man)'],['យាយ','yeay','grandmother (elderly woman)'],['អូន','oun','younger one (someone younger)'],['លោក','laok','Mr / sir (formal)'],['លោកស្រី','laok srei','Mrs / madam (formal)'],['សួស្តីពូ','suosdey pu','hello, uncle'],['អរគុណបង','arkun bong','thank you (to someone a bit older)']],ex:[
@@ -1884,7 +1905,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does លោកស្រី mean?',d:'លោកស្រី',r:'laok srei',o:['Mrs / madam','Mr / sir','older sister','grandmother'],a:0},
 {t:'li',q:'Listen — which word?',say:'អូន',o:['អូន','បង','ប្អូន','មីង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ពូ','uncle'],['យាយ','grandmother'],['លោក','Mr / sir'],['អូន','younger one'],['បង','a bit older']]},
-{t:'mc',q:'Why call a stranger បង or ពូ?',o:['it is warm and polite','it is rude','only family uses it','it means boss'],a:0}]},
+{t:'mc',q:'Why call a stranger បង or ពូ?',o:['it is warm and polite','it is rude','only family uses it','it means boss'],a:0},
+{t:'mc',q:'Review — which means "black cat"?',o:['ឆ្មាខ្មៅ','ក្រោក','ប្រាំបួន','ពិបាកចិត្ត'],a:0}]},
 
 {id:'km_request',title:'Polite requests',step:'learn',meta:'សូម + do · សុំ + thing',vocab:[['សុំ','som','may I have… (asking for a thing)'],['សូមចូល','som choul','please come in'],['ចូល','choul','to enter / come in'],['សូមអង្គុយ','som angkuy','please sit'],['អង្គុយ','angkuy','to sit'],['អញ្ជើញ','anh chaeunh','please, go ahead (gracious invite)'],['សុំទឹកមួយ','som tuk muoy','one water, please'],['ចាំបន្តិច','cham bantech','wait a moment'],['បានទេ','ban te','is it okay? / may I?']],ex:[
 {t:'note',tag:'Two little words',q:'សូម + do · សុំ + thing',body:'<p><span class="deva">សូម</span> <b>som</b> + an action = please do it: <span class="deva">សូមចូល</span> please come in · <span class="deva">សូមអង្គុយ</span> please sit.</p><p><span class="deva">សុំ</span> <b>som</b> + a thing = may I have it: <span class="deva">សុំទឹកមួយ</span> — one water, please. Add <span class="deva">បានទេ</span> to check: is it okay?</p>',eg:[['សូមអង្គុយ','som angkuy','please sit'],['សុំទឹកមួយ','som tuk muoy','one water, please']]},
@@ -1927,7 +1949,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ចូល mean?',d:'ចូល',r:'choul',o:['to enter / come in','to sit','to wait','to leave'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ចាំបន្តិច',o:['ចាំបន្តិច','ចាំ','បន្តិច','ចូល'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['សូមចូល','please come in'],['អញ្ជើញ','please, go ahead'],['ចាំបន្តិច','wait a moment'],['សុំទឹកមួយ','one water, please'],['អង្គុយ','to sit']]},
-{t:'mc',q:'A guest arrives at your door. Welcome them…',o:['អញ្ជើញចូល','ចាំបន្តិច','សុំទោស','លាហើយ'],a:0}]},
+{t:'mc',q:'A guest arrives at your door. Welcome them…',o:['អញ្ជើញចូល','ចាំបន្តិច','សុំទោស','លាហើយ'],a:0},
+{t:'mc',q:'Review — which means "white cow"?',o:['គោស','តុកតុក','ជិះ','ហុកសិប'],a:0}]},
 
 {id:'km_must',title:'Must — ត្រូវ',step:'learn',meta:'ត្រូវ + verb · ត្រូវហើយ',vocab:[['ត្រូវ','trov','must / have to (+ verb)'],['ត្រូវតែ','trov tae','really must'],['ខ្ញុំត្រូវទៅធ្វើការ','khnhom trov tov tveu ka','I have to go to work'],['ខ្ញុំត្រូវរៀនភាសាខ្មែរ','khnhom trov rien pheasa khmer','I have to learn Khmer'],['មិនបាច់ទេ','min bach te','no need'],['ត្រូវហើយ','trov haey','correct / that is right'],['ខុស','khoh','wrong'],['ត្រូវទេ','trov te','right? / is that correct?']],ex:[
 {t:'note',tag:'Have to',q:'ត្រូវ + verb',body:'<p>You know <span class="deva">ត្រូវការ</span> <b>trov ka</b> — to need a thing. Drop the ka and put a verb after: <span class="deva">ត្រូវ</span> + verb = <b>must</b>. <span class="deva">ខ្ញុំត្រូវទៅធ្វើការ</span> — I have to go to work.</p><p>Stronger? <span class="deva">ត្រូវតែ</span> <b>trov tae</b> — really must!</p>',eg:[['ខ្ញុំត្រូវទៅធ្វើការ','khnhom trov tov tveu ka','I have to go to work'],['ត្រូវតែ','trov tae','really must']]},
@@ -1971,7 +1994,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Wrong is…',o:['ខុស','ត្រូវ','ពិត','មែន'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'មិនបាច់ទេ',o:['មិនបាច់ទេ','មិនអីទេ','មិនទេ','បានទេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ត្រូវ','must'],['ត្រូវហើយ','that is right'],['មិនបាច់ទេ','no need'],['ខុស','wrong'],['ត្រូវតែ','really must']]},
-{t:'mc',q:'ត្រូវ can mean must AND…',o:['correct','want','have (own)','finish'],a:0}]},
+{t:'mc',q:'ត្រូវ can mean must AND…',o:['correct','want','have (own)','finish'],a:0},
+{t:'mc',q:'Review — which means "I have one dog"?',o:['ខ្ញុំមានឆ្កែមួយ','ផ្ទះធំ','ហើយ','សុខសប្បាយ'],a:0}]},
 
 {id:'km_ever',title:'Ever — ធ្លាប់',step:'learn',meta:'Have you ever…?',vocab:[['ធ្លាប់','thloap','ever / have done before'],['ខ្ញុំធ្លាប់ទៅភ្នំពេញ','khnhom thloap tov phnom penh','I have been to Phnom Penh'],['អ្នកធ្លាប់ញ៉ាំម្ហូបខ្មែរទេ','neak thloap nham mhoub khmer te','have you ever eaten Khmer food?'],['មិនធ្លាប់ទេ','min thloap te','never (not before)'],['ម្តង','mdong','once'],['ដង','dong','time / times'],['ពីរដង','pi dong','twice'],['ច្រើន','chraen','many / a lot'],['ច្រើនដង','chraen dong','many times'],['ពីមុន','pi mun','before / in the past']],ex:[
 {t:'note',tag:'Been there?',q:'ធ្លាប់ — ever',body:'<p><span class="deva">ធ្លាប់</span> <b>thloap</b> before a verb = have done it before: <span class="deva">ខ្ញុំធ្លាប់ទៅភ្នំពេញ</span> — I have been to Phnom Penh.</p><p>Ask with <span class="deva">ទេ</span>: <span class="deva">អ្នកធ្លាប់ញ៉ាំម្ហូបខ្មែរទេ</span> — have you ever eaten Khmer food? Yes: <span class="deva">ធ្លាប់</span>. Never: <span class="deva">មិនធ្លាប់ទេ</span>.</p>',eg:[['ខ្ញុំធ្លាប់ទៅភ្នំពេញ','khnhom thloap tov phnom penh','I have been to Phnom Penh'],['មិនធ្លាប់ទេ','min thloap te','never']]},
@@ -2014,7 +2038,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Twice is…',o:['ពីរដង','ម្តង','ពីរ','ដង'],a:0},
 {t:'li',q:'Listen — which word?',say:'ពីមុន',o:['ពីមុន','ពីរ','ភ្នំ','ពូ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ធ្លាប់','ever'],['មិនធ្លាប់ទេ','never'],['ម្តង','once'],['ច្រើនដង','many times'],['ពីមុន','before']]},
-{t:'mc',q:'អ្នកធ្លាប់ទៅកោះទេ asks…',d:'អ្នកធ្លាប់ទៅកោះទេ',r:'neak thloap tov kaoh te',o:['have you ever been to an island?','do you live on an island?','which island is it?','is the island far?'],a:0}]},
+{t:'mc',q:'អ្នកធ្លាប់ទៅកោះទេ asks…',d:'អ្នកធ្លាប់ទៅកោះទេ',r:'neak thloap tov kaoh te',o:['have you ever been to an island?','do you live on an island?','which island is it?','is the island far?'],a:0},
+{t:'mc',q:'Review — which means "I need help"?',o:['ខ្ញុំត្រូវការជំនួយ','ត្រជាក់','តុកតុក','គុយទាវ'],a:0}]},
 
 {id:'km_week',title:'Days of the week',step:'learn',meta:'ថ្ងៃច័ន្ទ … ថ្ងៃអាទិត្យ',vocab:[['សប្តាហ៍','sapada','week'],['ថ្ងៃច័ន្ទ','thngai chan','Monday'],['ថ្ងៃអង្គារ','thngai angkea','Tuesday'],['ថ្ងៃពុធ','thngai put','Wednesday'],['ថ្ងៃព្រហស្បតិ៍','thngai prohoah','Thursday'],['ថ្ងៃសុក្រ','thngai sok','Friday'],['ថ្ងៃសៅរ៍','thngai sav','Saturday'],['ថ្ងៃអាទិត្យ','thngai atit','Sunday'],['សប្តាហ៍ក្រោយ','sapada kraoy','next week']],ex:[
 {t:'note',tag:'Day names',q:'ថ្ងៃ + a name',body:'<p>Every day starts with <span class="deva">ថ្ងៃ</span> <b>thngai</b> — day, which you know. <span class="deva">ថ្ងៃច័ន្ទ</span> <b>thngai chan</b> Monday · <span class="deva">ថ្ងៃអង្គារ</span> <b>thngai angkea</b> Tuesday · <span class="deva">ថ្ងៃពុធ</span> <b>thngai put</b> Wednesday · <span class="deva">ថ្ងៃព្រហស្បតិ៍</span> <b>thngai prohoah</b> Thursday · <span class="deva">ថ្ងៃសុក្រ</span> <b>thngai sok</b> Friday.</p>',eg:[['ថ្ងៃច័ន្ទ','thngai chan','Monday'],['ថ្ងៃពុធ','thngai put','Wednesday'],['ថ្ងៃសុក្រ','thngai sok','Friday']]},
@@ -2057,7 +2082,8 @@ const KM_LESSONS=[
 {t:'mc',q:'Wednesday is…',o:['ថ្ងៃពុធ','ថ្ងៃអង្គារ','ថ្ងៃព្រហស្បតិ៍','ថ្ងៃច័ន្ទ'],a:0},
 {t:'li',q:'Listen — which day?',say:'ថ្ងៃច័ន្ទ',o:['ថ្ងៃច័ន្ទ','ថ្ងៃអង្គារ','ថ្ងៃនេះ','សប្តាហ៍'],a:0},
 {t:'match',q:'Match day and meaning',pairs:[['ថ្ងៃអង្គារ','Tuesday'],['ថ្ងៃព្រហស្បតិ៍','Thursday'],['ថ្ងៃសៅរ៍','Saturday'],['សប្តាហ៍','week'],['ថ្ងៃអាទិត្យ','Sunday']]},
-{t:'mc',q:'មួយអាទិត្យ in everyday talk means…',d:'មួយអាទិត្យ',r:'muoy atit',o:['one week','one Sunday','one day','one month'],a:0}]},
+{t:'mc',q:'មួយអាទិត្យ in everyday talk means…',d:'មួយអាទិត្យ',r:'muoy atit',o:['one week','one Sunday','one day','one month'],a:0},
+{t:'mc',q:'Review — which means "tomorrow I will go to the market"?',o:['ស្អែកខ្ញុំនឹងទៅផ្សារ','ផ្ទះធំ','បត់ស្តាំ','ខ្ញុំមានឆ្កែមួយ'],a:0}]},
 
 {id:'km_month',title:'Dates & months',step:'learn',meta:'ខែមួយ … ថ្ងៃទី & birthdays',vocab:[['ខែមួយ','khae muoy','January (month one)'],['ខែដប់ពីរ','khae dop pi','December (month twelve)'],['មួយខែ','muoy khae','one month'],['ថ្ងៃទី','thngai ti','the date (day number)'],['ទីមួយ','ti muoy','first'],['ថ្ងៃទីប៉ុន្មាន','thngai ti ponman','what is the date?'],['ខែក្រោយ','khae kraoy','next month'],['ឆ្នាំក្រោយ','chhnam kraoy','next year'],['ខួបកំណើត','khuob kamnaeut','birthday']],ex:[
 {t:'note',tag:'Months by number',q:'ខែមួយ ខែពីរ ខែបី…',body:'<p>Everyday Khmer simply numbers the months: <span class="deva">ខែមួយ</span> <b>khae muoy</b> January · <span class="deva">ខែប្រាំ</span> May · <span class="deva">ខែដប់ពីរ</span> <b>khae dop pi</b> December. You already know khae and all your numbers!</p><p>Watch the order: <span class="deva">ខែមួយ</span> = month one, January — but <span class="deva">មួយខែ</span> = one month long. (Each month also has a formal name, like <span class="deva">មករា</span> for January — you will meet those on signs.)</p>',eg:[['ខែមួយ','khae muoy','January'],['មួយខែ','muoy khae','one month']]},
@@ -2100,7 +2126,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ខែក្រោយ mean?',d:'ខែក្រោយ',r:'khae kraoy',o:['next month','last month','next year','next week'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ខែដប់ពីរ',o:['ខែដប់ពីរ','ខែដប់','ខែពីរ','ដប់ពីរ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ខែមួយ','January'],['មួយខែ','one month'],['ថ្ងៃទីប៉ុន្មាន','what is the date?'],['ឆ្នាំក្រោយ','next year'],['ទីមួយ','first']]},
-{t:'mc',q:'ខែប្រាំបួន means…',d:'ខែប្រាំបួន',r:'khae pram buon',o:['September','November','the 9th','nine months'],a:0}]},
+{t:'mc',q:'ខែប្រាំបួន means…',d:'ខែប្រាំបួន',r:'khae pram buon',o:['September','November','the 9th','nine months'],a:0},
+{t:'mc',q:'Review — which means "now"?',o:['ឥឡូវ','ពេល','ល្ងាច','ថ្នាំ'],a:0}]},
 
 {id:'km_job',title:'Work — ការងារ',step:'learn',meta:'Jobs & the អ្នក trick',vocab:[['ការងារ','ka ngea','job / work'],['អ្នកធ្វើការអ្វី','neak tveu ka avei','what work do you do?'],['កសិករ','kasekor','farmer'],['ធ្វើស្រែ','tveu srae','to farm rice'],['គ្រូពេទ្យ','kru pet','doctor'],['អ្នកលក់','neak lok','seller / vendor'],['ចុងភៅ','chong phov','cook / chef'],['ប៉ូលិស','polih','police officer'],['បើក','baeuk','to open / to drive'],['អ្នកបើកឡាន','neak baeuk laan','driver']],ex:[
 {t:'note',tag:'What do you do?',q:'អ្នកធ្វើការអ្វី',body:'<p>Ask about work with words you know: <span class="deva">អ្នកធ្វើការអ្វី</span> — what work do you do? Answer with <span class="deva">ជា</span>: <span class="deva">ខ្ញុំជាគ្រូ</span> — I am a teacher.</p><p><span class="deva">ការងារ</span> <b>ka ngea</b> = job. <span class="deva">គ្រូពេទ្យ</span> <b>kru pet</b> = doctor — two old friends together, kru + pet!</p>',eg:[['អ្នកធ្វើការអ្វី','neak tveu ka avei','what work do you do?'],['ការងារ','ka ngea','job'],['គ្រូពេទ្យ','kru pet','doctor']]},
@@ -2143,7 +2170,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does បើក mean?',d:'បើក',r:'baeuk',o:['to open / to drive','to close','to sell','to sit'],a:0},
 {t:'li',q:'Listen — which word?',say:'ការងារ',o:['ការងារ','ធ្វើការ','កសិករ','ត្រូវការ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ការងារ','job'],['អ្នកលក់','seller'],['ចុងភៅ','cook'],['ប៉ូលិស','police officer'],['ធ្វើស្រែ','to farm rice']]},
-{t:'mc',q:'ជំរាបសួរ — Zone 7 done! You greet like family, ask nicely and talk dates and jobs. The Khmer course…',o:['keeps growing — Zone 8 is coming','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'ជំរាបសួរ — Zone 7 done! You greet like family, ask nicely and talk dates and jobs. The Khmer course…',o:['keeps growing — Zone 8 is coming','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "chicken (meat)"?',o:['សាច់មាន់','នោះ','នរណា','ជើង'],a:0}]},
 
 /* ===================== ZONE 8 · THE KHMER WAY ===================== */
 {id:'km_time',title:'Clock time — ម៉ោង',step:'learn',meta:'ម៉ោង + number · កន្លះ',vocab:[['ម៉ោង','maong','hour (+ number = the time)'],['ម៉ោងប៉ុន្មានហើយ','maong ponman haey','what time is it now?'],['ម៉ោងបី','maong bei','3:00'],['នាទី','neati','minute'],['កន្លះ','kanlah','half (past)'],['ម៉ោងបីកន្លះ','maong bei kanlah','3:30'],['រសៀល','rosiel','afternoon'],['ថ្ងៃត្រង់','thngai trang','noon'],['ម៉ោងប្រាំព្រឹក','maong pram pruk','5:00 in the morning']],ex:[
@@ -2187,7 +2215,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does រសៀល mean?',d:'រសៀល',r:'rosiel',o:['afternoon','noon','morning','late'],a:0},
 {t:'li',q:'Listen — which word?',say:'កន្លះ',o:['កន្លះ','នាទី','ក្រោយ','កណ្តាល'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ម៉ោងប៉ុន្មានហើយ','what time is it now?'],['កន្លះ','half'],['នាទី','minute'],['ថ្ងៃត្រង់','noon'],['រសៀល','afternoon']]},
-{t:'mc',q:'The time goes maong-first. 8 PM is…',o:['ម៉ោងប្រាំបីយប់','ប្រាំបីម៉ោង','យប់ម៉ោងប្រាំបី','ម៉ោងប្រាំបីព្រឹក'],a:0}]},
+{t:'mc',q:'The time goes maong-first. 8 PM is…',o:['ម៉ោងប្រាំបីយប់','ប្រាំបីម៉ោង','យប់ម៉ោងប្រាំបី','ម៉ោងប្រាំបីព្រឹក'],a:0},
+{t:'mc',q:'Review — which means "I am thirsty"?',o:['ខ្ញុំស្រេកទឹក','កៅសិប','អូន','ជួយខ្ញុំផង'],a:0},
+{t:'mc',q:'Review — which means "mangoes are the most delicious"?',o:['ស្វាយឆ្ងាញ់ជាងគេ','បងប្រុស','ខ្ញុំជាសិស្ស','សូមអង្គុយ'],a:0}]},
 
 {id:'km_count',title:'Counting — នាក់',step:'learn',meta:'noun + number + counter',vocab:[['នាក់','neak','counter for people'],['មនុស្សពីរនាក់','monuh pi neak','two people'],['កូនបីនាក់','koun bei neak','three children'],['កែវ','kaev','glass / cup (counter for drinks)'],['កាហ្វេមួយកែវ','kafe muoy kaev','one cup of coffee'],['ចាន','chan','plate / bowl (counter for food)'],['បាយមួយចាន','bay muoy chan','one plate of rice'],['ក្បាល','kbal','counter for animals (lit. head)'],['ឆ្កែពីរក្បាល','chhkae pi kbal','two dogs']],ex:[
 {t:'note',tag:'Noun, number, counter',q:'ពីរនាក់ — two people',body:'<p>Khmer counts with a little counter word after the number: <b>noun + number + counter</b>. People take <span class="deva">នាក់</span> <b>neak</b>: <span class="deva">មនុស្សពីរនាក់</span> two people · <span class="deva">កូនបីនាក់</span> three children.</p><p>It sounds like <span class="deva">អ្នក</span> you — but it is a different word with a different spelling!</p>',eg:[['មនុស្សពីរនាក់','monuh pi neak','two people'],['កូនបីនាក់','koun bei neak','three children']]},
@@ -2230,7 +2260,9 @@ const KM_LESSONS=[
 {t:'mc',q:'Plates of food count with…',o:['ចាន','កែវ','នាក់','ក្បាល'],a:0},
 {t:'li',q:'Listen — which word?',say:'ក្បាល',o:['ក្បាល','កែវ','កន្លះ','ចាន'],a:0},
 {t:'match',q:'Match counter and what it counts',pairs:[['នាក់','people'],['កែវ','drinks'],['ចាន','food plates'],['ក្បាល','animals']]},
-{t:'mc',q:'ឆ្មាបីក្បាល means…',d:'ឆ្មាបីក្បាល',r:'chhma bei kbal',o:['three cats','three cat heads','a cat with three heads','third cat'],a:0}]},
+{t:'mc',q:'ឆ្មាបីក្បាល means…',d:'ឆ្មាបីក្បាល',r:'chhma bei kbal',o:['three cats','three cat heads','a cat with three heads','third cat'],a:0},
+{t:'mc',q:'Review — which means "father"?',o:['ឪពុក','អត់អីទេ','យក','សូមចូល'],a:0},
+{t:'mc',q:'Review — which means "I think it is delicious"?',o:['ខ្ញុំគិតថាឆ្ងាញ់','ប៉ុន្តែ','ប៉ា','ខែដប់ពីរ'],a:0}]},
 
 {id:'km_aoy',title:'The verb ឱ្យ',step:'learn',meta:'give · for · let',vocab:[['ឱ្យ','aoy','to give (also written ឲ្យ)'],['ឱ្យលុយ','aoy luy','to give money'],['ទិញឱ្យខ្ញុំ','tinh aoy khnhom','buy (it) for me'],['ធ្វើឱ្យ','tveu aoy','to make (someone feel)'],['ធ្វើឱ្យខ្ញុំសប្បាយចិត្ត','tveu aoy khnhom sabay chet','it makes me happy'],['ឱ្យខ្ញុំមើលបន្តិច','aoy khnhom meul bantech','let me look a moment'],['ឱ្យខ្ញុំជួយ','aoy khnhom chuoy','let me help'],['ឱ្យទឹកមួយកែវ','aoy tuk muoy kaev','give (me) a glass of water']],ex:[
 {t:'note',tag:'One word, three jobs',q:'ឱ្យ — give',body:'<p><span class="deva">ឱ្យ</span> <b>aoy</b> = to give: <span class="deva">ឱ្យលុយ</span> give money · <span class="deva">ឱ្យទឹកមួយកែវ</span> give me a glass of water (there is your new counter!).</p><p>After another verb it means <b>for</b> someone: <span class="deva">ទិញឱ្យខ្ញុំ</span> — buy it for me. (You will also see it written <span class="deva">ឲ្យ</span> — same word.)</p>',eg:[['ឱ្យលុយ','aoy luy','give money'],['ទិញឱ្យខ្ញុំ','tinh aoy khnhom','buy it for me']]},
@@ -2273,7 +2305,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ឱ្យលុយ means…',d:'ឱ្យលុយ',r:'aoy luy',o:['to give money','to count money','to need money','the bill, please'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ទិញឱ្យខ្ញុំ',o:['ទិញឱ្យខ្ញុំ','ទិញមួយនេះ','ឱ្យខ្ញុំទិញ','ទិញហើយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ឱ្យ','give'],['ឱ្យខ្ញុំមើលបន្តិច','let me look a moment'],['ទិញឱ្យខ្ញុំ','buy it for me'],['ធ្វើឱ្យខ្ញុំសប្បាយចិត្ត','it makes me happy']]},
-{t:'mc',q:'ឱ្យ and ឲ្យ are…',o:['two spellings of the same word','two different words','formal vs rude','old vs new Khmer'],a:0}]},
+{t:'mc',q:'ឱ្យ and ឲ្យ are…',o:['two spellings of the same word','two different words','formal vs rude','old vs new Khmer'],a:0},
+{t:'mc',q:'Review — which means "older brother"?',o:['បងប្រុស','ឆ្កែ','ចាន','ខៀវ'],a:0},
+{t:'mc',q:'Review — which means "what do you think?"?',o:['អ្នកគិតម៉េច','ទីក្រុងធំជាងស្រុក','ចង់បាន','ឱ្យទឹកមួយកែវ'],a:0}]},
 
 {id:'km_gocome',title:'Bring it, take it',step:'learn',meta:'verb + មក/ទៅ · វិញ',vocab:[['មក','mok','to come / toward me (after a verb)'],['យកមក','yok mok','to bring (take toward me)'],['យកទៅ','yok tov','to take away'],['យកទឹកមក','yok tuk mok','bring water (here)'],['ចូលមក','choul mok','come on in'],['ចេញ','chenh','to go out / leave'],['វិញ','vinh','back / again (particle)'],['ត្រឡប់មកវិញ','trolop mok vinh','to come back']],ex:[
 {t:'note',tag:'Verbs point',q:'មក here · ទៅ there',body:'<p>Khmer stacks verbs, and the second verb points the direction: <span class="deva">មក</span> <b>mok</b> = toward me · <span class="deva">ទៅ</span> <b>tov</b> = away. So <span class="deva">យកមក</span> take-come = <b>bring</b>, and <span class="deva">យកទៅ</span> take-go = <b>take away</b>.</p><p><span class="deva">យកទឹកមក</span> — bring water! <span class="deva">ចូលមក</span> — come on in!</p>',eg:[['យកមក','yok mok','bring'],['យកទៅ','yok tov','take away'],['ចូលមក','choul mok','come on in']]},
@@ -2316,7 +2350,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does វិញ add?',d:'វិញ',r:'vinh',o:['back / again','forward','never','politeness'],a:0},
 {t:'li',q:'Listen — which word?',say:'ចេញ',o:['ចេញ','ចូល','ចាំ','ចង់'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['យកមក','bring'],['យកទៅ','take away'],['ចេញ','go out'],['ត្រឡប់មកវិញ','come back'],['ចូលមក','come on in']]},
-{t:'mc',q:'Khmer shows direction by…',o:['stacking a second verb','changing the verb ending','a special prefix','tone of voice'],a:0}]},
+{t:'mc',q:'Khmer shows direction by…',o:['stacking a second verb','changing the verb ending','a special prefix','tone of voice'],a:0},
+{t:'mc',q:'Review — which means "to get up"?',o:['ក្រោក','ថ្ងៃទីប៉ុន្មាន','មិនអីទេ','ថ្ងៃព្រហស្បតិ៍'],a:0},
+{t:'mc',q:'Review — which means "maybe / probably"?',o:['ប្រហែល','បងប្រុស','ស្វាយឆ្ងាញ់ជាងគេ','ខ្ញុំមិនអាចទៅទេ'],a:0}]},
 
 {id:'km_eatout',title:'Eating out',step:'learn',meta:'Order, enjoy, pay',vocab:[['ម៉ឺនុយ','meunuy','menu'],['សុំម៉ឺនុយ','som meunuy','the menu, please'],['អាម៉ុក','amok','amok (coconut fish curry)'],['សុំគុយទាវមួយចាន','som kuy teav muoy chan','one bowl of noodle soup, please'],['បន្ថែម','banthaem','extra / more'],['សុំទឹកបន្ថែម','som tuk banthaem','more water, please'],['ញ៉ាំនៅទីនេះ','nham nov ti nih','eat here'],['ខ្ចប់','khchop','takeaway (wrap it up)']],ex:[
 {t:'note',tag:'At the food stall',q:'សុំម៉ឺនុយ',body:'<p>Everything you know comes together: <span class="deva">សុំម៉ឺនុយ</span> — the menu, please. Order with your counters: <span class="deva">សុំគុយទាវមួយចាន</span> — one bowl of kuy teav · <span class="deva">កាហ្វេពីរកែវ</span> — two coffees. Try <span class="deva">អាម៉ុក</span> <b>amok</b>, the coconut fish curry!</p><p><span class="deva">បន្ថែម</span> <b>banthaem</b> = extra, more: <span class="deva">សុំទឹកបន្ថែម</span>.</p>',eg:[['សុំម៉ឺនុយ','som meunuy','the menu, please'],['សុំគុយទាវមួយចាន','som kuy teav muoy chan','one bowl of noodle soup, please']]},
@@ -2359,7 +2395,8 @@ const KM_LESSONS=[
 {t:'mc',q:'To get more water:',o:['សុំទឹកបន្ថែម','សុំទឹកបន្តិច','យកទឹកទៅ','ទឹកអស់ហើយ'],a:0},
 {t:'li',q:'Listen — which word?',say:'អាម៉ុក',o:['អាម៉ុក','បាយឆា','គុយទាវ','ម៉ឺនុយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ខ្ចប់','takeaway'],['ញ៉ាំនៅទីនេះ','eat here'],['បន្ថែម','extra'],['ម៉ឺនុយ','menu'],['អាម៉ុក','amok']]},
-{t:'mc',q:'Eat here — or wrapped to go?',o:['ញ៉ាំនៅទីនេះ ឬ ខ្ចប់','ញ៉ាំ ឬ ផឹក','ទីនេះ ឬ ទីនោះ','ចាន ឬ កែវ'],a:0}]},
+{t:'mc',q:'Eat here — or wrapped to go?',o:['ញ៉ាំនៅទីនេះ ឬ ខ្ចប់','ញ៉ាំ ឬ ផឹក','ទីនេះ ឬ ទីនោះ','ចាន ឬ កែវ'],a:0},
+{t:'mc',q:'Review — which means "to bathe / shower"?',o:['ងូតទឹក','នៅណា','ត្រូវការ','ខែ'],a:0}]},
 
 {id:'km_visit',title:'Visiting',step:'learn',meta:'Visits, guests & hosts',vocab:[['លេង','leng','to play / for fun'],['មកលេង','mok leng','to come visit (come play!)'],['ទៅលេង','tov leng','to go visit'],['មកលេងផ្ទះខ្ញុំ','mok leng phteah khnhom','come visit my house'],['ភ្ញៀវ','phnhiev','guest'],['អញ្ជើញញ៉ាំ','anh chaeunh nham','please eat (host offering)'],['សូមមកលេងម្តងទៀត','som mok leng mdong tiet','come again!'],['ជួបគ្នាថ្ងៃក្រោយ','chuop knea thngai kraoy','see you another day']],ex:[
 {t:'note',tag:'Come play',q:'មកលេង',body:'<p><span class="deva">លេង</span> <b>leng</b> = to play — and <span class="deva">មកលេង</span> come-play is THE Khmer word for dropping by: <span class="deva">មកលេងផ្ទះខ្ញុំ</span> — come visit my house! Your directionals at work: <span class="deva">ទៅលេង</span> = go visit someone.</p>',eg:[['មកលេង','mok leng','come visit'],['មកលេងផ្ទះខ្ញុំ','mok leng phteah khnhom','come visit my house'],['ទៅលេង','tov leng','go visit']]},
@@ -2402,7 +2439,8 @@ const KM_LESSONS=[
 {t:'mc',q:'អញ្ជើញញ៉ាំ means…',d:'អញ្ជើញញ៉ាំ',r:'anh chaeunh nham',o:['please eat','have you eaten?','eat quickly','the food is ready'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'សូមមកលេងម្តងទៀត',o:['សូមមកលេងម្តងទៀត','មកលេងម្តង','សូមមកលេង','ម្តងទៀត'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['មកលេង','come visit'],['ភ្ញៀវ','guest'],['អញ្ជើញញ៉ាំ','please eat'],['ជួបគ្នាថ្ងៃក្រោយ','see you another day'],['ទៅលេង','go visit']]},
-{t:'mc',q:'Why come-play for visiting?',o:['visits are relaxed & fun in Khmer culture','children invented it','it is slang','play means walk'],a:0}]},
+{t:'mc',q:'Why come-play for visiting?',o:['visits are relaxed & fun in Khmer culture','children invented it','it is slang','play means walk'],a:0},
+{t:'mc',q:'Review — which means "to go to bed"?',o:['ទៅគេង','ខែក្រោយ','មន្ទីរពេទ្យ','ថ្មី'],a:0}]},
 
 {id:'km_phone',title:'Phone & messages',step:'learn',meta:'លេខ, សារ & wifi',vocab:[['ទូរស័ព្ទ','turasap','phone / to phone'],['លេខ','lek','number'],['លេខទូរស័ព្ទ','lek turasap','phone number'],['សុំលេខទូរស័ព្ទ','som lek turasap','may I have your number?'],['ទូរស័ព្ទមកខ្ញុំ','turasap mok khnhom','call me'],['សារ','sa','message'],['ផ្ញើសារ','phnhaeu sa','to send a message'],['អ៊ីនធឺណិត','internet','internet'],['វ៉ាយហ្វាយ','wifi','Wi-Fi'],['មានវ៉ាយហ្វាយទេ','mean wifi te','is there Wi-Fi?']],ex:[
 {t:'note',tag:'Swap numbers',q:'លេខទូរស័ព្ទ',body:'<p><span class="deva">ទូរស័ព្ទ</span> <b>turasap</b> = phone — noun AND verb. <span class="deva">លេខ</span> <b>lek</b> = number, so <span class="deva">សុំលេខទូរស័ព្ទ</span> — may I have your number?</p><p><span class="deva">ទូរស័ព្ទមកខ្ញុំ</span> — call me. There is your <span class="deva">មក</span> again, pointing the call at you!</p>',eg:[['លេខទូរស័ព្ទ','lek turasap','phone number'],['ទូរស័ព្ទមកខ្ញុំ','turasap mok khnhom','call me']]},
@@ -2445,7 +2483,8 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ផ្ញើ mean?',d:'ផ្ញើ',r:'phnhaeu',o:['to send','to receive','to call','to write'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'មានវ៉ាយហ្វាយទេ',o:['មានវ៉ាយហ្វាយទេ','មានអ៊ីនធឺណិតទេ','វ៉ាយហ្វាយ','មានលុយទេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ទូរស័ព្ទ','phone'],['សារ','message'],['លេខ','number'],['វ៉ាយហ្វាយ','Wi-Fi'],['ផ្ញើ','send']]},
-{t:'mc',q:'លាហើយ — Zone 8 done! Clock time, counters, ឱ្យ & the verbs that point. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'លាហើយ — Zone 8 done! Clock time, counters, ឱ្យ & the verbs that point. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "I get up in the morning"?',o:['ខ្ញុំក្រោកពេលព្រឹក','និយាយ','រដូវ','រសៀល'],a:0}]},
 
 /* ===================== ZONE 9 · STREET-SMART KHMER ===================== */
 {id:'km_not',title:'Colloquial negation',step:'learn',meta:'អត់ … ទេ & echo answers',vocab:[['អត់','ot','not (the street មិន)'],['អត់ទេ','ot te','no (casual answer)'],['អត់មានទេ','ot mean te','there is none / do not have'],['អត់មានលុយទេ','ot mean luy te','no money (on me)'],['អត់យល់ទេ','ot yol te','do not understand (casual)'],['អត់ឃ្លានទេ','ot khlean te','not hungry'],['អត់ទៅទេ','ot tov te','not going'],['ទៅ','tov','go — echoed back = yes, going!']],ex:[
@@ -2489,7 +2528,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ញ៉ាំទេ? You are NOT eating. Echo…',o:['អត់ញ៉ាំទេ','ញ៉ាំ','បាទ','ទេញ៉ាំ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'អត់ទេ',o:['អត់ទេ','អត់','ទេ','មិនទេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['អត់','not (casual)'],['អត់មានលុយទេ','no money on me'],['អត់ឃ្លានទេ','not hungry'],['ទៅ','going! (echo yes)'],['អត់ទេ','no (casual)']]},
-{t:'mc',q:'អត់ vs មិន:',o:['same meaning, អត់ is more casual','អត់ is stronger','មិន is slang','they negate different verbs'],a:0}]},
+{t:'mc',q:'អត់ vs មិន:',o:['same meaning, អត់ is more casual','អត់ is stronger','មិន is slang','they negate different verbs'],a:0},
+{t:'mc',q:'Review — which means "my house is near the market"?',o:['ផ្ទះខ្ញុំនៅជិតផ្សារ','ខ្ញុំអាចទៅបាន','ឈឺក្បាល','ចេញ'],a:0},
+{t:'mc',q:'Review — which means "aunt (any older woman)"?',o:['មីង','លេង','មកពី','យើង'],a:0}]},
 
 {id:'km_ban',title:'Post-verbal បាន',step:'learn',meta:'verb + បាន = can / manage',vocab:[['ធ្វើបាន','tveu ban','can do it / manage it'],['ខ្ញុំធ្វើបាន','khnhom tveu ban','I can do it!'],['ទៅបានទេ','tov ban te','can (we) go?'],['មិនទៅបានទេ','min tov ban te','cannot go'],['ញ៉ាំបាន','nham ban','can eat it / edible'],['ញ៉ាំបានទេ','nham ban te','can you eat it?'],['អត់បានទេ','ot ban te','no can do (casual)'],['បាន','ban','(after a verb) can / managed to']],ex:[
 {t:'note',tag:'Verb + បាន',q:'ធ្វើបាន — can do',body:'<p>You know <span class="deva">បាន</span> as the past helper and inside <span class="deva">អាច…បាន</span>. Everyday Khmer often skips the អាច: just <b>verb + បាន</b> = can, manage to: <span class="deva">ខ្ញុំធ្វើបាន</span> — I can do it!</p><p><span class="deva">ញ៉ាំបាន</span> — I can eat that · <span class="deva">ទៅបានទេ?</span> — can we go?</p>',eg:[['ខ្ញុំធ្វើបាន','khnhom tveu ban','I can do it!'],['ទៅបានទេ','tov ban te','can we go?']]},
@@ -2532,7 +2573,9 @@ const KM_LESSONS=[
 {t:'mc',q:'The two faces of បាន:',o:['before verb = did · after verb = can','before verb = can · after verb = did','always past','always can'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'អត់បានទេ',o:['អត់បានទេ','មិនទៅបានទេ','បាន','អត់ទេ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ធ្វើបាន','can do'],['បានធ្វើ','did do'],['ទៅបានទេ','can we go?'],['អត់បានទេ','no can do']]},
-{t:'mc',q:'អាចធ្វើបាន and ធ្វើបាន are…',o:['both fine — អាច is optional in speech','different meanings','wrong without អាច','formal vs rude'],a:0}]},
+{t:'mc',q:'អាចធ្វើបាន and ធ្វើបាន are…',o:['both fine — អាច is optional in speech','different meanings','wrong without អាច','formal vs rude'],a:0},
+{t:'mc',q:'Review — which means "five thousand riel"?',o:['ប្រាំពាន់រៀល','នេះជាផ្ទះខ្ញុំ','ពេល','កែវ'],a:0},
+{t:'mc',q:'Review — which means "Mr / sir (formal)"?',o:['លោក','លឿង','ជិះម៉ូតូ','ម្តាយ'],a:0}]},
 
 {id:'km_just',title:'Just now — ទើបតែ',step:'learn',meta:'ទើបតែ · កំពុងតែ · នៅ still',vocab:[['ទើប','teub','just (a moment ago)'],['ទើបតែ','teub tae','just now'],['ខ្ញុំទើបតែមកដល់','khnhom teub tae mok dol','I just arrived'],['ទើបតែញ៉ាំហើយ','teub tae nham haey','just ate'],['កំពុងតែ','kampung tae','right in the middle of (-ing)'],['ខ្ញុំកំពុងតែធ្វើការ','khnhom kampung tae tveu ka','I am right in the middle of work'],['នៅមាន','nov mean','still have / there is still'],['ដល់','dol','to arrive / reach']],ex:[
 {t:'note',tag:'Fresh news',q:'ទើបតែ — just',body:'<p><span class="deva">ទើបតែ</span> <b>teub tae</b> + verb = just did it: <span class="deva">ខ្ញុំទើបតែមកដល់</span> — I just arrived (<span class="deva">ដល់</span> <b>dol</b> = arrive, from <span class="deva">ដល់ហើយ</span>!).</p><p><span class="deva">ទើបតែញ៉ាំហើយ</span> — just ate! The perfect answer to the street greeting.</p>',eg:[['ខ្ញុំទើបតែមកដល់','khnhom teub tae mok dol','I just arrived'],['ទើបតែញ៉ាំហើយ','teub tae nham haey','just ate']]},
@@ -2575,7 +2618,9 @@ const KM_LESSONS=[
 {t:'mc',q:'នៅ before a verb means…',o:['still','at (a place)','stay','near'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'កំពុងតែ',o:['កំពុងតែ','ទើបតែ','ត្រូវតែ','កំពុង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ទើបតែ','just'],['កំពុងតែ','right in the middle'],['នៅមាន','still have'],['ដល់','arrive'],['ទើបតែញ៉ាំហើយ','just ate']]},
-{t:'mc',q:'The three timers in one day: ទើបតែ … កំពុងតែ … នៅ …',o:['just did · doing right now · still ongoing','will do · did · doing','never · always · sometimes','fast · slow · stopped'],a:0}]},
+{t:'mc',q:'The three timers in one day: ទើបតែ … កំពុងតែ … នៅ …',o:['just did · doing right now · still ongoing','will do · did · doing','never · always · sometimes','fast · slow · stopped'],a:0},
+{t:'mc',q:'Review — which means "I will take this one"?',o:['ខ្ញុំយកមួយនេះ','អត់ទេ','ម៉េចដែរ','ថា'],a:0},
+{t:'mc',q:'Review — which means "Mrs / madam (formal)"?',o:['លោកស្រី','ត្រូវទេ','ទៅលេង','ម៉ោងបីកន្លះ'],a:0}]},
 
 {id:'km_hotel',title:'At the hotel',step:'learn',meta:'សណ្ឋាគារ, បន្ទប់ & ជួល',vocab:[['សណ្ឋាគារ','santhakea','hotel'],['បន្ទប់','bantup','room'],['មានបន្ទប់ទេ','mean bantup te','do you have a room?'],['ជួល','chuol','to rent'],['មួយយប់','muoy yup','one night / per night'],['មួយយប់ប៉ុន្មាន','muoy yup ponman','how much per night?'],['កូនសោ','koun sao','key (lit. child of the lock)'],['ដេក','dek','to sleep / lie down'],['បន្ទប់ទឹក','bantup tuk','bathroom (the water room)']],ex:[
 {t:'note',tag:'Checking in',q:'មានបន្ទប់ទេ',body:'<p><span class="deva">សណ្ឋាគារ</span> <b>santhakea</b> = hotel · <span class="deva">បន្ទប់</span> <b>bantup</b> = room. Ask with your មាន…ទេ pattern: <span class="deva">មានបន្ទប់ទេ?</span> Price: <span class="deva">មួយយប់ប៉ុន្មាន</span> — how much per night?</p><p><span class="deva">ជួល</span> <b>chuol</b> = rent — rooms, motos, houses, anything.</p>',eg:[['មានបន្ទប់ទេ','mean bantup te','do you have a room?'],['មួយយប់ប៉ុន្មាន','muoy yup ponman','how much per night?'],['ជួល','chuol','to rent']]},
@@ -2618,7 +2663,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ដេក mean?',d:'ដេក',r:'dek',o:['to sleep / lie down','to dream','to rest sitting','to wake up'],a:0},
 {t:'li',q:'Listen — which word?',say:'ជួល',o:['ជួល','ជួប','ចូល','ជួយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['បន្ទប់','room'],['បន្ទប់ទឹក','bathroom'],['កូនសោ','key'],['ជួល','rent'],['មួយយប់','per night']]},
-{t:'mc',q:'ជួល works for renting…',o:['rooms, motos & houses alike','only rooms','only vehicles','only land'],a:0}]},
+{t:'mc',q:'ជួល works for renting…',o:['rooms, motos & houses alike','only rooms','only vehicles','only land'],a:0},
+{t:'mc',q:'Review — which means "one more / another"?',o:['មួយទៀត','ខ្ញុំធ្វើបាន','ខ្ញុំចង់ទៅផ្សារ','លោក'],a:0},
+{t:'mc',q:'Review — which means "hello, uncle"?',o:['សួស្តីពូ','ហាសិប','ធ្វើឱ្យខ្ញុំសប្បាយចិត្ត','សប្តាហ៍ក្រោយ'],a:0}]},
 
 {id:'km_pharm',title:'At the pharmacy',step:'learn',meta:'ហាងលក់ថ្នាំ & dosage',vocab:[['ហាងលក់ថ្នាំ','hang lok thnam','pharmacy (medicine shop)'],['ផ្តាសាយ','ptasay','a cold / the flu'],['ក្អក','kork','to cough'],['គ្រុនក្តៅ','krun kdav','a fever'],['ថ្នាំគ្រុន','thnam krun','fever medicine'],['សុំថ្នាំផ្តាសាយ','som thnam ptasay','cold medicine, please'],['មួយថ្ងៃពីរដង','muoy thngai pi dong','twice a day (dosage)'],['មុនញ៉ាំបាយ','mun nham bay','before eating'],['ក្រោយញ៉ាំបាយ','kraoy nham bay','after eating']],ex:[
 {t:'note',tag:'The medicine shop',q:'ហាងលក់ថ្នាំ',body:'<p>Three old words, one new place: <span class="deva">ហាង</span> shop + <span class="deva">លក់</span> sell + <span class="deva">ថ្នាំ</span> medicine = <span class="deva">ហាងលក់ថ្នាំ</span>, the pharmacy.</p><p>Tell them what is wrong (Zone 5 style): <span class="deva">ឈឺក្បាល</span>, or new ones — <span class="deva">ផ្តាសាយ</span> <b>ptasay</b> a cold · <span class="deva">ក្អក</span> <b>kork</b> cough · <span class="deva">គ្រុនក្តៅ</span> <b>krun kdav</b> fever.</p>',eg:[['ហាងលក់ថ្នាំ','hang lok thnam','pharmacy'],['ផ្តាសាយ','ptasay','a cold'],['គ្រុនក្តៅ','krun kdav','fever']]},
@@ -2661,7 +2708,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does មុនញ៉ាំបាយ mean?',d:'មុនញ៉ាំបាយ',r:'mun nham bay',o:['before eating','after eating','with food','on an empty week'],a:0},
 {t:'li',q:'Listen — which word?',say:'ក្អក',o:['ក្អក','ក្តៅ','កាក','គក'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ហាងលក់ថ្នាំ','pharmacy'],['ថ្នាំគ្រុន','fever medicine'],['មួយថ្ងៃពីរដង','twice a day'],['ក្រោយញ៉ាំបាយ','after eating'],['ក្អក','cough']]},
-{t:'mc',q:'ហាងលក់ថ្នាំ shows the Khmer superpower of…',o:['building new words from known ones','borrowing from French','long words','silent letters'],a:0}]},
+{t:'mc',q:'ហាងលក់ថ្នាំ shows the Khmer superpower of…',o:['building new words from known ones','borrowing from French','long words','silent letters'],a:0},
+{t:'mc',q:'Review — which means "how much to the market?"?',o:['ទៅផ្សារប៉ុន្មាន','ប៉ែតសិប','ក្រោក','ច្រើន'],a:0},
+{t:'mc',q:'Review — which means "thank you (to someone a bit older)"?',o:['អរគុណបង','ខ្ញុំធ្វើបាន','ធំជាង','សប្តាហ៍'],a:0}]},
 
 {id:'km_barg',title:'Bargaining II',step:'learn',meta:'ពេក too · deals & walking away',vocab:[['ពេក','pek','too (much)'],['ថ្លៃពេក','thlai pek','too expensive!'],['ក្តៅពេក','kdav pek','too hot'],['ចុះបន្តិចទៀតបានទេ','choh bantech tiet ban te','a little lower, please?'],['បើទិញពីរ','baeu tinh pi','if I buy two…'],['ថោកជាងនេះមានទេ','thaok cheang nih mean te','anything cheaper than this?'],['អត់ទិញទេ','ot tinh te','not buying (the walk-away)'],['ថ្លៃណាស់','thlai nah','so expensive!']],ex:[
 {t:'note',tag:'Too much!',q:'ពេក — too',body:'<p><span class="deva">ពេក</span> <b>pek</b> after an adjective = too: <span class="deva">ថ្លៃពេក</span> — too expensive! <span class="deva">ក្តៅពេក</span> — too hot! (Compare <span class="deva">ណាស់</span> very — <span class="deva">ថ្លៃណាស់</span> is a gasp, <span class="deva">ថ្លៃពេក</span> is a complaint.)</p><p>Then the ask, with your can-do បាន: <span class="deva">ចុះបន្តិចទៀតបានទេ</span> — can you come down a little more?</p>',eg:[['ថ្លៃពេក','thlai pek','too expensive'],['ចុះបន្តិចទៀតបានទេ','choh bantech tiet ban te','a little lower, please?']]},
@@ -2704,7 +2753,9 @@ const KM_LESSONS=[
 {t:'mc',q:'The friendly walk-away is…',o:['អត់ទិញទេ','ថ្លៃពេក','ចុះថ្លៃ','លាហើយ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'បើទិញពីរ',o:['បើទិញពីរ','ទិញពីរ','បើទិញបី','បើ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ពេក','too'],['ថ្លៃពេក','too expensive'],['បើទិញពីរ','if I buy two'],['ថោកជាងនេះមានទេ','anything cheaper?'],['អត់ទិញទេ','not buying']]},
-{t:'mc',q:'Bargaining in Cambodia works best…',o:['with a smile and patience','loudly','in dollars only','never'],a:0}]},
+{t:'mc',q:'Bargaining in Cambodia works best…',o:['with a smile and patience','loudly','in dollars only','never'],a:0},
+{t:'mc',q:'Review — which means "rainy season"?',o:['រដូវភ្លៀង','ពេក','សិស្ស','ខៀវ'],a:0},
+{t:'mc',q:'Review — which means "please come in"?',o:['សូមចូល','ល្ងាច','អត់មានលុយទេ','កៅសិប'],a:0}]},
 
 {id:'km_months',title:'The month names',step:'learn',meta:'មករា … ធ្នូ (recognition)',vocab:[['មករា','makara','January'],['កុម្ភៈ','kompheak','February'],['មីនា','mina','March'],['មេសា','mesa','April'],['ឧសភា','usaphea','May'],['មិថុនា','mithona','June'],['កក្កដា','kakkada','July'],['សីហា','seiha','August'],['កញ្ញា','kanha','September'],['តុលា','tola','October'],['វិច្ឆិកា','vichchheka','November'],['ធ្នូ','thnu','December']],ex:[
 {t:'note',tag:'On signs & calendars',q:'ខែមករា = ខែមួយ',body:'<p>You already say months by number — <span class="deva">ខែមួយ</span>, done! But signs, calendars and documents use the formal names. You only need to <b>recognize</b> them.</p><p>First half: <span class="deva">មករា</span> Jan · <span class="deva">កុម្ភៈ</span> Feb · <span class="deva">មីនា</span> Mar · <span class="deva">មេសា</span> Apr · <span class="deva">ឧសភា</span> May · <span class="deva">មិថុនា</span> Jun.</p>',eg:[['មករា','makara','January'],['មេសា','mesa','April']]},
@@ -2747,7 +2798,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ខែវិច្ឆិកា = month number…',d:'វិច្ឆិកា',r:'vichchheka',o:['11','9','10','12'],a:0},
 {t:'li',q:'Listen — which month?',say:'សីហា',o:['សីហា','មេសា','ឧសភា','កញ្ញា'],a:0},
 {t:'match',q:'Formal ↔ by number',pairs:[['មីនា','ខែបី'],['កក្កដា','ខែប្រាំពីរ'],['កញ្ញា','ខែប្រាំបួន'],['ធ្នូ','ខែដប់ពីរ']]},
-{t:'mc',q:'ជួបគ្នា — Zone 9 done! You negate like a local, can-do with បាន & survive any errand. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'ជួបគ្នា — Zone 9 done! You negate like a local, can-do with បាន & survive any errand. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "dry season"?',o:['រដូវប្រាំង','មួយទៀត','អ្នកបានទៅណា','ទៅលេង'],a:0},
+{t:'mc',q:'Review — which means "please sit"?',o:['សូមអង្គុយ','ចុងភៅ','សូន្យ','ពណ៌'],a:0}]},
 
 /* ===================== ZONE 10 · YOUR KHMER LIFE ===================== */
 {id:'km_like',title:'To like — ចូលចិត្ត',step:'learn',meta:'It entered the heart',vocab:[['ចូលចិត្ត','choul chet','to like (lit. enter the heart)'],['ខ្ញុំចូលចិត្តម្ហូបខ្មែរ','khnhom choul chet mhoub khmer','I like Khmer food'],['អ្នកចូលចិត្តទេ','neak choul chet te','do you like it?'],['ចូលចិត្តណាស់','choul chet nah','really like it'],['មិនសូវ','min sov','not really / not so much'],['ខ្ញុំមិនសូវចូលចិត្តទេ','khnhom min sov choul chet te','I do not really like it'],['ចូលចិត្តជាងគេ','choul chet cheang ke','like the most (favorite)']],ex:[
@@ -2791,7 +2844,9 @@ const KM_LESSONS=[
 {t:'mc',q:'មិនសូវ softens a no. It means…',d:'មិនសូវ',r:'min sov',o:['not really','never','too much','a lot'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ចូលចិត្តណាស់',o:['ចូលចិត្តណាស់','ចូលចិត្តជាងគេ','ល្អណាស់','ចូលចិត្ត'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ចូលចិត្ត','like'],['មិនសូវ','not so much'],['ចូលចិត្តជាងគេ','favorite'],['ស្រឡាញ់','love (people)']]},
-{t:'mc',q:'ចូលចិត្ត literally says a thing…',o:['entered your heart','filled your head','won your eyes','fed your soul'],a:0}]},
+{t:'mc',q:'ចូលចិត្ត literally says a thing…',o:['entered your heart','filled your head','won your eyes','fed your soul'],a:0},
+{t:'mc',q:'Review — which means "ear"?',o:['ត្រចៀក','ខ្ញុំត្រូវរៀនភាសាខ្មែរ','បងប្រុស','អរគុណបង'],a:0},
+{t:'mc',q:'Review — which means "I have to go to work"?',o:['ខ្ញុំត្រូវទៅធ្វើការ','ណា','ត្រី','ធ្វើម្ហូប'],a:0}]},
 
 {id:'km_hobby',title:'Free time',step:'learn',meta:'ភ្លេង, កីឡា & fun',vocab:[['ភ្លេង','phleng','music'],['ស្តាប់ភ្លេង','sdap phleng','to listen to music'],['ច្រៀង','chrieng','to sing'],['រាំ','roam','to dance'],['កីឡា','keila','sport'],['បាល់ទាត់','bal toat','football (ball-kick!)'],['លេងបាល់ទាត់','leng bal toat','to play football'],['ហែលទឹក','hael tuk','to swim']],ex:[
 {t:'note',tag:'Music everywhere',q:'ភ្លេង',body:'<p><span class="deva">ភ្លេង</span> <b>phleng</b> = music — and you already know how to listen: <span class="deva">ស្តាប់ភ្លេង</span>. Then it escalates: <span class="deva">ច្រៀង</span> <b>chrieng</b> sing · <span class="deva">រាំ</span> <b>roam</b> dance.</p><p>At any Cambodian party you will be pulled into all three!</p>',eg:[['ស្តាប់ភ្លេង','sdap phleng','listen to music'],['ច្រៀង','chrieng','sing'],['រាំ','roam','dance']]},
@@ -2834,7 +2889,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does រាំ mean?',d:'រាំ',r:'roam',o:['to dance','to run','to sing','to swim'],a:0},
 {t:'li',q:'Listen — which word?',say:'ភ្លេង',o:['ភ្លេង','ភ្លៀង','ផ្លូវ','ភ្នំ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ស្តាប់ភ្លេង','listen to music'],['លេងបាល់ទាត់','play football'],['ហែលទឹក','swim'],['ច្រៀង','sing'],['រាំ','dance']]},
-{t:'mc',q:'បាល់ទាត់ shows how Khmer loves to…',o:['build words from little pieces','borrow from French','use long words','avoid sport'],a:0}]},
+{t:'mc',q:'បាល់ទាត់ shows how Khmer loves to…',o:['build words from little pieces','borrow from French','use long words','avoid sport'],a:0},
+{t:'mc',q:'Review — which means "I do not feel well"?',o:['ខ្ញុំមិនស្រួលខ្លួនទេ','ឱ្យខ្ញុំមើលបន្តិច','អត់យល់ទេ','អាចទេ'],a:0},
+{t:'mc',q:'Review — which means "I have to learn Khmer"?',o:['ខ្ញុំត្រូវរៀនភាសាខ្មែរ','ព្រឹក','ទៅណា','ពោះ'],a:0}]},
 
 {id:'km_house2',title:'Around the house',step:'learn',meta:'Furniture + លើ ក្រោម ក្នុង',vocab:[['គ្រែ','krae','bed'],['តុ','tok','table'],['កៅអី','kav ei','chair'],['ទ្វារ','tvea','door'],['បង្អួច','bang uoch','window'],['លើ','leu','on / above'],['ក្រោម','kraom','under / below'],['ក្នុង','knong','in / inside'],['នៅលើតុ','nov leu tok','on the table']],ex:[
 {t:'note',tag:'The furniture',q:'គ្រែ តុ កៅអី',body:'<p>Inside your <span class="deva">បន្ទប់</span>: <span class="deva">គ្រែ</span> <b>krae</b> bed · <span class="deva">តុ</span> <b>tok</b> table · <span class="deva">កៅអី</span> <b>kav ei</b> chair · <span class="deva">ទ្វារ</span> <b>tvea</b> door · <span class="deva">បង្អួច</span> <b>bang uoch</b> window.</p>',eg:[['គ្រែ','krae','bed'],['តុ','tok','table'],['កៅអី','kav ei','chair']]},
@@ -2877,7 +2934,9 @@ const KM_LESSONS=[
 {t:'mc',q:'The three place words are លើ ក្រោម ក្នុង —',o:['on, under, in','left, right, straight','near, far, here','up, down, out'],a:0},
 {t:'li',q:'Listen — which word?',say:'ក្រោម',o:['ក្រោម','ក្រោយ','ក្នុង','ក្រៅ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['គ្រែ','bed'],['កៅអី','chair'],['ទ្វារ','door'],['លើ','on'],['ក្នុង','in']]},
-{t:'mc',q:'កូនសោនៅលើតុក្នុងបន្ទប់ — the key is…',d:'កូនសោនៅលើតុក្នុងបន្ទប់',r:'koun sao nov leu tok knong bantup',o:['on the table in the room','under the table','in the drawer','on the bed'],a:0}]},
+{t:'mc',q:'កូនសោនៅលើតុក្នុងបន្ទប់ — the key is…',d:'កូនសោនៅលើតុក្នុងបន្ទប់',r:'koun sao nov leu tok knong bantup',o:['on the table in the room','under the table','in the drawer','on the bed'],a:0},
+{t:'mc',q:'Review — which means "I went to the market"?',o:['ខ្ញុំបានទៅផ្សារ','បើក','រៀន','អ្នកចូលចិត្តទេ'],a:0},
+{t:'mc',q:'Review — which means "right? / is that correct?"?',o:['ត្រូវទេ','ខែដប់ពីរ','ស្តាំ','ខ្ញុំមានឆ្កែមួយ'],a:0}]},
 
 {id:'km_travel2',title:'Tickets & journeys',step:'learn',meta:'សំបុត្រ + your time words',vocab:[['សំបុត្រ','sambot','ticket'],['សុំសំបុត្រពីរ','som sambot pi','two tickets, please'],['កន្លែង','kanlaeng','place / seat'],['ចេញម៉ោងប៉ុន្មាន','chenh maong ponman','what time does it leave?'],['ដល់ម៉ោងប៉ុន្មាន','dol maong ponman','what time does it arrive?'],['ប៉ុន្មានម៉ោង','ponman maong','how many hours?'],['ឡានក្រុងទៅភ្នំពេញ','laan krong tov phnom penh','the bus to Phnom Penh']],ex:[
 {t:'note',tag:'Buy the ticket',q:'សំបុត្រ',body:'<p><span class="deva">សំបុត្រ</span> <b>sambot</b> = ticket: <span class="deva">សុំសំបុត្រពីរ</span> — two tickets, please. <span class="deva">កន្លែង</span> <b>kanlaeng</b> = place — also your seat: <span class="deva">កន្លែងនេះមាននរណាទេ?</span></p>',eg:[['សំបុត្រ','sambot','ticket'],['សុំសំបុត្រពីរ','som sambot pi','two tickets, please'],['កន្លែង','kanlaeng','place / seat']]},
@@ -2920,7 +2979,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ម៉ោងប៉ុន្មាន vs ប៉ុន្មានម៉ោង:',o:['what time? vs how many hours?','the same question','hours vs minutes','arrive vs leave'],a:0},
 {t:'li',q:'Listen — which word?',say:'កន្លែង',o:['កន្លែង','កន្លះ','កំពុង','កូនសោ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['សំបុត្រ','ticket'],['កន្លែង','seat'],['ចេញ','leave'],['ដល់','arrive'],['ប៉ុន្មានម៉ោង','how many hours?']]},
-{t:'mc',q:'Everything here was old words + one new one. The new one was…',o:['សំបុត្រ & កន្លែង','ចេញ & ដល់','ម៉ោង & ប៉ុន្មាន','ទូក & ឡានក្រុង'],a:0}]},
+{t:'mc',q:'Everything here was old words + one new one. The new one was…',o:['សំបុត្រ & កន្លែង','ចេញ & ដល់','ម៉ោង & ប៉ុន្មាន','ទូក & ឡានក្រុង'],a:0},
+{t:'mc',q:'Review — which means "I already ate"?',o:['ខ្ញុំបានញ៉ាំបាយហើយ','បាយឆា','កូន','ម៉េច'],a:0},
+{t:'mc',q:'Review — which means "I have been to Phnom Penh"?',o:['ខ្ញុំធ្លាប់ទៅភ្នំពេញ','អាម៉ុក','ខ្ញុំយកមួយនេះ','ថ្ងៃ'],a:0}]},
 
 {id:'km_school',title:'School & study',step:'learn',meta:'សាលារៀន, read & write',vocab:[['សាលារៀន','sala rien','school'],['សរសេរ','sorse','to write'],['ប៊ិច','bich','pen'],['ក្រដាស','kradah','paper'],['មេរៀន','me rien','lesson'],['ពាក្យ','peak','word'],['ពាក្យថ្មី','peak thmei','a new word'],['អានសៀវភៅ','aan sievphov','to read a book']],ex:[
 {t:'note',tag:'The learn hall',q:'សាលារៀន',body:'<p><span class="deva">សាលា</span> hall + <span class="deva">រៀន</span> learn = <span class="deva">សាលារៀន</span> <b>sala rien</b> — school! Inside it: <span class="deva">សៀវភៅ</span> book (you have been reading it since Zone 4), <span class="deva">ប៊ិច</span> <b>bich</b> pen, <span class="deva">ក្រដាស</span> <b>kradah</b> paper.</p>',eg:[['សាលារៀន','sala rien','school'],['ប៊ិច','bich','pen'],['ក្រដាស','kradah','paper']]},
@@ -2963,7 +3024,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ក្រដាស mean?',d:'ក្រដាស',r:'kradah',o:['paper','pen','book','desk'],a:0},
 {t:'li',q:'Listen — which word?',say:'ពាក្យ',o:['ពាក្យ','ពាក់','ភ្នែក','ពេក'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['សរសេរ','write'],['អាន','read'],['ពាក្យថ្មី','new word'],['មេរៀន','lesson'],['ប៊ិច','pen']]},
-{t:'mc',q:'មេរៀន — the mother of learning — shows Khmer uses មេ for…',o:['the chief / main one','mothers only','teachers','books'],a:0}]},
+{t:'mc',q:'មេរៀន — the mother of learning — shows Khmer uses មេ for…',o:['the chief / main one','mothers only','teachers','books'],a:0},
+{t:'mc',q:'Review — which means "I can go"?',o:['ខ្ញុំអាចទៅបាន','ប្រាំ','ក្រហម','ចេក'],a:0},
+{t:'mc',q:'Review — which means "have you ever eaten Khmer food?"?',o:['អ្នកធ្លាប់ញ៉ាំម្ហូបខ្មែរទេ','តុលា','ប្រាំពីរ','មួយ'],a:0}]},
 
 {id:'km_farm',title:'On the farm',step:'learn',meta:'ជ្រូក មាន់ ក្របី & the green',vocab:[['ជ្រូក','chrouk','pig'],['មាន់','moan','chicken (the bird)'],['ទា','tea','duck'],['ក្របី','krabei','water buffalo'],['ស្វា','sva','monkey'],['ដើមឈើ','daeum chheu','tree'],['ផ្កា','phka','flower'],['ស្រុកស្រែ','srok srae','the countryside']],ex:[
 {t:'note',tag:'The farmyard',q:'ជ្រូក មាន់ ទា',body:'<p>Meet the farm: <span class="deva">ជ្រូក</span> <b>chrouk</b> pig · <span class="deva">មាន់</span> <b>moan</b> chicken (you ate <span class="deva">សាច់មាន់</span> — now meet the bird!) · <span class="deva">ទា</span> <b>tea</b> duck · and the king of the rice fields, <span class="deva">ក្របី</span> <b>krabei</b> the water buffalo.</p><p>Count them all with ក្បាល: <span class="deva">ជ្រូកពីរក្បាល</span>!</p>',eg:[['ជ្រូក','chrouk','pig'],['មាន់','moan','chicken'],['ក្របី','krabei','water buffalo']]},
@@ -3006,7 +3069,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ស្រុកស្រែ means…',d:'ស្រុកស្រែ',r:'srok srae',o:['the countryside','the rice harvest','a farm shop','the village chief'],a:0},
 {t:'li',q:'Listen — which word?',say:'មាន់',o:['មាន់','មាន','ម៉ោង','បាន'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ជ្រូក','pig'],['ទា','duck'],['ស្វា','monkey'],['ដើមឈើ','tree'],['ផ្កា','flower']]},
-{t:'mc',q:'Animals count in ក្បាល because it means…',o:['head','tail','body','herd'],a:0}]},
+{t:'mc',q:'Animals count in ក្បាល because it means…',o:['head','tail','body','herd'],a:0},
+{t:'mc',q:'Review — which means "can you help me?"?',o:['អាចជួយខ្ញុំបានទេ','វិច្ឆិកា','គ្រុនក្តៅ','ក្រោម'],a:0},
+{t:'mc',q:'Review — which means "never (not before)"?',o:['មិនធ្លាប់ទេ','សុំទឹកមួយ','កៅអី','សុខសប្បាយទេ'],a:0}]},
 
 {id:'km_wish',title:'Wishes & celebrations',step:'learn',meta:'រីករាយ… everything!',vocab:[['រីករាយ','rik reay','joyful / happy (for wishes)'],['រីករាយថ្ងៃខួបកំណើត','rik reay thngai khuob kamnaeut','happy birthday!'],['រីករាយឆ្នាំថ្មី','rik reay chhnam thmei','happy new year!'],['សំណាងល្អ','samnang laor','good luck!'],['ស្វាគមន៍','svakum','welcome!'],['សុខភាព','sokhapheap','health'],['សូមឱ្យសុខភាពល្អ','som aoy sokhapheap laor','wishing you good health'],['ជួបគ្នាម្តងទៀត','chuop knea mdong tiet','see you again!']],ex:[
 {t:'note',tag:'Party words',q:'រីករាយ — joyful',body:'<p><span class="deva">រីករាយ</span> <b>rik reay</b> = joyful — the wish-starter: <span class="deva">រីករាយថ្ងៃខួបកំណើត</span> — happy birthday (your Zone 7 word, celebrated!) · <span class="deva">រីករាយឆ្នាំថ្មី</span> — happy new year!</p><p>Arriving guests hear <span class="deva">ស្វាគមន៍</span> <b>svakum</b> — welcome!</p>',eg:[['រីករាយថ្ងៃខួបកំណើត','rik reay thngai khuob kamnaeut','happy birthday!'],['រីករាយឆ្នាំថ្មី','rik reay chhnam thmei','happy new year!'],['ស្វាគមន៍','svakum','welcome!']]},
@@ -3049,7 +3114,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does សុខភាព mean?',d:'សុខភាព',r:'sokhapheap',o:['health','luck','joy','life'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'សំណាងល្អ',o:['សំណាងល្អ','សុខភាពល្អ','ល្អ','សំណាង'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['រីករាយ','joyful'],['ស្វាគមន៍','welcome'],['សំណាងល្អ','good luck'],['សុខភាព','health'],['ជួបគ្នាម្តងទៀត','see you again']]},
-{t:'mc',q:'ស្វាគមន៍ — Zone 10 done! Ten zones: you like, live, travel & celebrate in Khmer. The course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'ស្វាគមន៍ — Zone 10 done! Ten zones: you like, live, travel & celebrate in Khmer. The course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "I cannot go"?',o:['ខ្ញុំមិនអាចទៅទេ','ជួបគ្នា','សរសេរ','ស្តាប់'],a:0},
+{t:'mc',q:'Review — which means "many times"?',o:['ច្រើនដង','អ៊ីនធឺណិត','សុំទឹកមួយ','ឈឺពោះ'],a:0}]},
 
 /* ===================== ZONE 11 · TELL YOUR STORY ===================== */
 {id:'km_appt',title:'Appointments',step:'learn',meta:'ណាត់ជួប · រវល់ / ទំនេរ',vocab:[['ណាត់','nat','an appointment / to set a time'],['ណាត់ជួប','nat chuop','to arrange to meet'],['រវល់','rovol','busy'],['ខ្ញុំរវល់ណាស់','khnhom rovol nah','I am very busy'],['ទំនេរ','tumne','free (not busy)'],['អ្នកទំនេរទេ','neak tumne te','are you free?'],['ណាត់ជួបម៉ោងបី','nat chuop maong bei','meet at 3'],['ថ្ងៃណា','thngai na','which day?']],ex:[
@@ -3093,7 +3160,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ទំនេរ mean?',d:'ទំនេរ',r:'tumne',o:['free (not busy)','tired','away','soon'],a:0},
 {t:'li',q:'Listen — which word?',say:'រវល់',o:['រវល់','រាល់','វល់','រដូវ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ណាត់ជួប','arrange to meet'],['រវល់','busy'],['ទំនេរ','free'],['ណាត់ជួបម៉ោងបី','meet at 3'],['ថ្ងៃណា','which day?']]},
-{t:'mc',q:'ណាត់ជួប reuses ជួប from…',o:['ជួបគ្នា — see you!','ជួយ — help','ជាមួយ — with','ជិត — near'],a:0}]},
+{t:'mc',q:'ណាត់ជួប reuses ជួប from…',o:['ជួបគ្នា — see you!','ជួយ — help','ជាមួយ — with','ជិត — near'],a:0},
+{t:'mc',q:'Review — which means "may I? / is it possible?"?',o:['អាចទេ','យាយ','ហេតុអ្វីរៀនភាសាខ្មែរ','រៀល'],a:0},
+{t:'mc',q:'Review — which means "Tuesday"?',o:['ថ្ងៃអង្គារ','អ្នកធ្លាប់ញ៉ាំម្ហូបខ្មែរទេ','ខែ','ធំ'],a:0}]},
 
 {id:'km_person',title:'Describing people',step:'learn',meta:'ខ្ពស់ ទាប · សក់វែង',vocab:[['ខ្ពស់','khpuoh','tall'],['ទាប','teap','short (height)'],['ស្គម','skom','slim'],['សក់','sak','hair'],['វែង','veng','long'],['ខ្លី','khlei','short (length)'],['សក់វែង','sak veng','long hair'],['សក់ខ្លី','sak khlei','short hair'],['ក្មេង','kmeng','young / a kid']],ex:[
 {t:'note',tag:'Tall & small',q:'ខ្ពស់ / ទាប',body:'<p>People words, Zone 3 rules — adjective after the noun, no is: <span class="deva">គាត់ខ្ពស់</span> — he is tall. <span class="deva">ខ្ពស់</span> <b>khpuoh</b> tall · <span class="deva">ទាប</span> <b>teap</b> short · <span class="deva">ស្គម</span> <b>skom</b> slim.</p><p><span class="deva">ក្មេង</span> <b>kmeng</b> = young — or simply a kid.</p>',eg:[['ខ្ពស់','khpuoh','tall'],['ទាប','teap','short'],['ក្មេង','kmeng','young / a kid']]},
@@ -3136,7 +3205,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does វែង mean?',d:'វែង',r:'veng',o:['long','short','tall','thick'],a:0},
 {t:'li',q:'Listen — which word?',say:'ខ្ពស់',o:['ខ្ពស់','ខ្លី','ស្គម','ក្តៅ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ខ្ពស់','tall'],['ស្គម','slim'],['សក់','hair'],['ខ្លី','short (length)'],['ក្មេង','young']]},
-{t:'mc',q:'Height uses ខ្ពស់/ទាប — hair length uses…',o:['វែង/ខ្លី','ធំ/តូច','ថ្មី/ចាស់','ល្អ/អាក្រក់'],a:0}]},
+{t:'mc',q:'Height uses ខ្ពស់/ទាប — hair length uses…',o:['វែង/ខ្លី','ធំ/តូច','ថ្មី/ចាស់','ល្អ/អាក្រក់'],a:0},
+{t:'mc',q:'Review — which means "who"?',o:['នរណា','ហើយ','បាទ','ថ្ងៃអង្គារ'],a:0},
+{t:'mc',q:'Review — which means "Wednesday"?',o:['ថ្ងៃពុធ','មានវ៉ាយហ្វាយទេ','យប់','ដល់ហើយ'],a:0}]},
 
 {id:'km_story',title:'Storytelling',step:'learn',meta:'ជាដំបូង → ជាចុងក្រោយ',vocab:[['រឿង','rueng','a story'],['និយាយរឿង','niyeay rueng','to tell a story'],['ជាដំបូង','chea damboung','at first'],['បន្ទាប់មក','bantoap mok','after that / then'],['ក្រោយមក','kraoy mok','later on'],['ជាចុងក្រោយ','chea chong kraoy','finally / in the end'],['រឿងល្អ','rueng laor','a good story']],ex:[
 {t:'note',tag:'Story glue',q:'ជាដំបូង → បន្ទាប់មក',body:'<p><span class="deva">រឿង</span> <b>rueng</b> = a story. Line the events up: <span class="deva">ជាដំបូង</span> <b>chea damboung</b> at first · <span class="deva">បន្ទាប់មក</span> <b>bantoap mok</b> after that · <span class="deva">ក្រោយមក</span> <b>kraoy mok</b> later on · <span class="deva">ជាចុងក្រោយ</span> <b>chea chong kraoy</b> finally.</p>',eg:[['ជាដំបូង','chea damboung','at first'],['បន្ទាប់មក','bantoap mok','after that'],['ជាចុងក្រោយ','chea chong kraoy','finally']]},
@@ -3179,7 +3250,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does រឿង mean?',d:'រឿង',r:'rueng',o:['a story','a lesson','a movie only','a lie'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'បន្ទាប់មក',o:['បន្ទាប់មក','បន្ទាប់','ក្រោយមក','មកបន្ទាប់'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['រឿង','story'],['ជាដំបូង','at first'],['បន្ទាប់មក','then'],['ជាចុងក្រោយ','finally'],['និយាយរឿង','tell a story']]},
-{t:'mc',q:'With story glue + your tenses, you can now…',o:['narrate your whole day in Khmer','only list words','read novels','write poetry'],a:0}]},
+{t:'mc',q:'With story glue + your tenses, you can now…',o:['narrate your whole day in Khmer','only list words','read novels','write poetry'],a:0},
+{t:'mc',q:'Review — which means "when"?',o:['ពេលណា','អ៊ីនធឺណិត','ទើបតែ','ខ្ញុំស្រេកទឹក'],a:0},
+{t:'mc',q:'Review — which means "Thursday"?',o:['ថ្ងៃព្រហស្បតិ៍','អត់ឃ្លានទេ','ថ្ងៃនេះ','ប្រុស'],a:0}]},
 
 {id:'km_border',title:'Documents & borders',step:'learn',meta:'លិខិតឆ្លងដែន & វីសា',vocab:[['លិខិតឆ្លងដែន','likhet chhlong daen','passport'],['ព្រំដែន','prum daen','border'],['វីសា','visa','visa'],['ឆ្លង','chhlong','to cross'],['បង្ហាញ','bonghanh','to show'],['សញ្ជាតិ','sanhcheat','nationality'],['បង្ហាញលិខិតឆ្លងដែន','bonghanh likhet chhlong daen','show your passport'],['ខ្ញុំមានវីសា','khnhom mean visa','I have a visa']],ex:[
 {t:'note',tag:'The crossing paper',q:'លិខិតឆ្លងដែន',body:'<p>Khmer word-building at its best: <span class="deva">លិខិត</span> paper + <span class="deva">ឆ្លង</span> <b>chhlong</b> cross + <span class="deva">ដែន</span> territory = <span class="deva">លិខិតឆ្លងដែន</span> — the border-crossing paper. A passport!</p><p><span class="deva">ព្រំដែន</span> <b>prum daen</b> = the border itself.</p>',eg:[['លិខិតឆ្លងដែន','likhet chhlong daen','passport'],['ព្រំដែន','prum daen','border'],['ឆ្លង','chhlong','to cross']]},
@@ -3222,7 +3295,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ឆ្លង mean?',d:'ឆ្លង',r:'chhlong',o:['to cross','to show','to stamp','to wait'],a:0},
 {t:'li',q:'Listen — which word?',say:'វីសា',o:['វីសា','វ៉ាយហ្វាយ','សា','វា'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['លិខិតឆ្លងដែន','passport'],['វីសា','visa'],['បង្ហាញ','show'],['ឆ្លង','cross'],['សញ្ជាតិ','nationality']]},
-{t:'mc',q:'លិខិតឆ្លងដែន is a beautiful example of Khmer…',o:['building big words from small ones','borrowing from English','using old spelling','avoiding long words'],a:0}]},
+{t:'mc',q:'លិខិតឆ្លងដែន is a beautiful example of Khmer…',o:['building big words from small ones','borrowing from English','using old spelling','avoiding long words'],a:0},
+{t:'mc',q:'Review — which means "why"?',o:['ហេតុអ្វី','ខ្ញុំធ្វើការនៅភ្នំពេញ','មាន','នៅលើតុ'],a:0},
+{t:'mc',q:'Review — which means "Saturday"?',o:['ថ្ងៃសៅរ៍','ព្រំដែន','ជួយ','រដូវប្រាំង'],a:0}]},
 
 {id:'km_work2',title:'At work',step:'learn',meta:'ការិយាល័យ · ប្រាក់ខែ',vocab:[['ការិយាល័យ','kariyalai','office'],['ប្រជុំ','prochum','a meeting / to meet'],['ចាប់ផ្តើម','chap phdaem','to start'],['បញ្ចប់','banhchop','to finish'],['ប្រាក់ខែ','prak khae','salary (month money)'],['ថ្ងៃឈប់សម្រាក','thngai chhup samrak','day off'],['ប្រជុំចាប់ផ្តើមម៉ោងប្រាំបួន','prochum chap phdaem maong pram buon','the meeting starts at 9']],ex:[
 {t:'note',tag:'Office hours',q:'ការិយាល័យ · ប្រជុំ',body:'<p><span class="deva">ការិយាល័យ</span> <b>kariyalai</b> = office · <span class="deva">ប្រជុំ</span> <b>prochum</b> = meeting. <span class="deva">ចាប់ផ្តើម</span> <b>chap phdaem</b> = start · <span class="deva">បញ្ចប់</span> <b>banhchop</b> = finish.</p><p><span class="deva">ប្រជុំចាប់ផ្តើមម៉ោងប្រាំបួន</span> — the meeting starts at nine.</p>',eg:[['ការិយាល័យ','kariyalai','office'],['ប្រជុំ','prochum','meeting'],['ចាប់ផ្តើម','chap phdaem','to start']]},
@@ -3265,7 +3340,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ចាប់ផ្តើម and បញ្ចប់ are…',o:['start and finish','open and close doors','early and late','fast and slow'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ថ្ងៃឈប់សម្រាក',o:['ថ្ងៃឈប់សម្រាក','ថ្ងៃធ្វើការ','ឈប់','សម្រាក'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ការិយាល័យ','office'],['ប្រាក់ខែ','salary'],['ថ្ងៃឈប់សម្រាក','day off'],['ចាប់ផ្តើម','start'],['បញ្ចប់','finish']]},
-{t:'mc',q:'ប្រាក់ខែ works because ខែ means…',o:['month — paid monthly','money','work','luck'],a:0}]},
+{t:'mc',q:'ប្រាក់ខែ works because ខែ means…',o:['month — paid monthly','money','work','luck'],a:0},
+{t:'mc',q:'Review — which means "when do you go?"?',o:['អ្នកទៅពេលណា','លេងបាល់ទាត់','ស្អែក','សុំថ្នាំផ្តាសាយ'],a:0},
+{t:'mc',q:'Review — which means "what work do you do?"?',o:['អ្នកធ្វើការអ្វី','ស្តាប់','ប៉ូលិស','មិត្ត'],a:0}]},
 
 {id:'km_chat',title:'Conversation fillers',step:'learn',meta:'អញ្ចឹង · ភ្លេច · យល់ព្រម',vocab:[['អញ្ចឹង','anhcheung','so / in that case'],['អញ្ចឹងទៅ','anhcheung tov','alright then!'],['ភ្លេច','phlech','to forget'],['ខ្ញុំភ្លេចហើយ','khnhom phlech haey','I forgot!'],['ចាំបានទេ','cham ban te','can you remember?'],['ខ្ញុំចាំបាន','khnhom cham ban','I remember'],['យល់ព្រម','yol prom','to agree / OK, deal']],ex:[
 {t:'note',tag:'The magic word',q:'អញ្ចឹង',body:'<p><span class="deva">អញ្ចឹង</span> <b>anhcheung</b> = so / in that case — Khmer conversations run on it. Busy Friday? <span class="deva">អញ្ចឹង</span>, Saturday!</p><p>Agreeing to a plan: <span class="deva">អញ្ចឹងទៅ</span> — alright then, let us do that!</p>',eg:[['អញ្ចឹង','anhcheung','so / in that case'],['អញ្ចឹងទៅ','anhcheung tov','alright then!']]},
@@ -3308,7 +3385,9 @@ const KM_LESSONS=[
 {t:'mc',q:'យល់ព្រម is built from understand + consent. It means…',o:['agree / deal','maybe','listen well','promise'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ខ្ញុំភ្លេចហើយ',o:['ខ្ញុំភ្លេចហើយ','ខ្ញុំចាំបាន','ភ្លេច','ខ្ញុំយល់ហើយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['អញ្ចឹង','so'],['ភ្លេច','forget'],['ចាំបាន','remember'],['យល់ព្រម','agree'],['អញ្ចឹងទៅ','alright then']]},
-{t:'mc',q:'ចាំ meant wait AND remember since Zone 2. ចាំបាន pins down…',o:['remember (managed to hold it)','wait a long time','remember to wait','hold this'],a:0}]},
+{t:'mc',q:'ចាំ meant wait AND remember since Zone 2. ចាំបាន pins down…',o:['remember (managed to hold it)','wait a long time','remember to wait','hold this'],a:0},
+{t:'mc',q:'Review — which means "why learn Khmer?"?',o:['ហេតុអ្វីរៀនភាសាខ្មែរ','អស់ប៉ុន្មាន','រាំ','លោកស្រី'],a:0},
+{t:'mc',q:'Review — which means "seller / vendor"?',o:['អ្នកលក់','កៅអី','បាយមួយចាន','នៅ'],a:0}]},
 
 {id:'km_dream',title:'Future & hopes',step:'learn',meta:'អនាគត · សង្ឃឹម · បន្ត',vocab:[['អនាគត','anakot','the future'],['ក្នុងអនាគត','knong anakot','in the future'],['សង្ឃឹម','sangkhum','to hope'],['សង្ឃឹមថា','sangkhum tha','to hope that…'],['ស្រមៃ','sramai','to dream (of something)'],['បន្ត','banto','to continue'],['បន្តរៀនភាសាខ្មែរ','banto rien pheasa khmer','keep learning Khmer'],['ខ្ញុំសង្ឃឹមថាអ្នកសុខសប្បាយ','khnhom sangkhum tha neak sok sabay','I hope you are well']],ex:[
 {t:'note',tag:'Looking forward',q:'អនាគត',body:'<p><span class="deva">អនាគត</span> <b>anakot</b> = the future — and with your Zone 10 <span class="deva">ក្នុង</span>: <span class="deva">ក្នុងអនាគត</span> — in the future.</p><p><span class="deva">ស្រមៃ</span> <b>sramai</b> = to dream of something: <span class="deva">ខ្ញុំស្រមៃចង់មានផ្ទះនៅស្រុកស្រែ</span> — I dream of a house in the countryside.</p>',eg:[['អនាគត','anakot','the future'],['ក្នុងអនាគត','knong anakot','in the future'],['ស្រមៃ','sramai','to dream']]},
@@ -3351,7 +3430,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ស្រមៃ mean?',d:'ស្រមៃ',r:'sramai',o:['to dream (of something)','to sleep deeply','to forget','to plan'],a:0},
 {t:'li',q:'Listen — which word?',say:'សង្ឃឹម',o:['សង្ឃឹម','សំណាង','សុខភាព','ស្រមៃ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['អនាគត','future'],['សង្ឃឹមថា','hope that'],['ស្រមៃ','dream'],['បន្តរៀន','keep learning'],['យល់ព្រម','agreed!']]},
-{t:'mc',q:'អរគុណច្រើន — Zone 11 done! Stories, plans, papers & dreams. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'អរគុណច្រើន — Zone 11 done! Stories, plans, papers & dreams. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "who cooks?"?',o:['នរណាធ្វើម្ហូប','ទៅផ្សារប៉ុន្មាន','លេខ','ខ្ញុំឈ្មោះសុខា'],a:0},
+{t:'mc',q:'Review — which means "driver"?',o:['អ្នកបើកឡាន','ឆ្ងាយ','លោក','ណាស់'],a:0}]},
 
 /* ===================== ZONE 12 · MAKE CAMBODIA HOME ===================== */
 {id:'km_fruit',title:'Fruit & flavors',step:'learn',meta:'ល្ហុង ម្នាស់ ទុរេន · ផ្អែម',vocab:[['ល្ហុង','lhong','papaya'],['ម្នាស់','mnoah','pineapple'],['ទុរេន','turen','durian'],['ក្រូច','krouch','orange'],['ផ្អែម','phaem','sweet'],['ជូរ','chu','sour'],['ស្វាយផ្អែមណាស់','svay phaem nah','the mango is so sweet'],['ផ្លែឈើស្រស់','phlae chheu sroh','fresh fruit']],ex:[
@@ -3395,7 +3476,9 @@ const KM_LESSONS=[
 {t:'mc',q:'ផ្អែម and ជូរ are…',o:['sweet and sour','fresh and old','big and small','ripe and green'],a:0},
 {t:'li',q:'Listen — which word?',say:'ល្ហុង',o:['ល្ហុង','លុយ','ដូង','ល្អ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ល្ហុង','papaya'],['ម្នាស់','pineapple'],['ក្រូច','orange'],['ជូរ','sour'],['ផ្អែម','sweet']]},
-{t:'mc',q:'ទុរេនផ្អែម ប៉ុន្តែថ្លៃណាស់ — durian is sweet but…',d:'ទុរេនផ្អែម ប៉ុន្តែថ្លៃណាស់',r:'turen phaem ponte thlai nah',o:['very expensive','very smelly','very sour','very big'],a:0}]},
+{t:'mc',q:'ទុរេនផ្អែម ប៉ុន្តែថ្លៃណាស់ — durian is sweet but…',d:'ទុរេនផ្អែម ប៉ុន្តែថ្លៃណាស់',r:'turen phaem ponte thlai nah',o:['very expensive','very smelly','very sour','very big'],a:0},
+{t:'mc',q:'Review — which means "angry"?',o:['ខឹង','កែវ','ច្រើន','ជួយខ្ញុំផង'],a:0},
+{t:'mc',q:'Review — which means "3:30"?',o:['ម៉ោងបីកន្លះ','ឡានក្រុងទៅភ្នំពេញ','ចាំបានទេ','ធំជាង'],a:0}]},
 
 {id:'km_cook',title:'In the kitchen',step:'learn',meta:'ដាំ ចៀន អាំង · ហឹរ!',vocab:[['ដាំ','dam','to cook / boil'],['ដាំបាយ','dam bay','to cook rice'],['ចៀន','chien','to fry'],['អាំង','ang','to grill'],['ហឹរ','hel','spicy'],['ម្ទេស','mteh','chili'],['ស្ករ','sko','sugar'],['អំបិល','ambel','salt']],ex:[
 {t:'note',tag:'Three fires',q:'ដាំ ចៀន អាំង',body:'<p>Khmer cooking in three verbs: <span class="deva">ដាំ</span> <b>dam</b> boil (and cook in general — <span class="deva">ដាំបាយ</span>, cook rice!) · <span class="deva">ចៀន</span> <b>chien</b> fry (hello <span class="deva">បាយឆា</span>) · <span class="deva">អាំង</span> <b>ang</b> grill — the street-corner smell of Cambodia.</p>',eg:[['ដាំបាយ','dam bay','cook rice'],['ចៀន','chien','fry'],['អាំង','ang','grill']]},
@@ -3438,7 +3521,9 @@ const KM_LESSONS=[
 {t:'mc',q:'The three cooking fires are ដាំ ចៀន អាំង —',o:['boil, fry, grill','chop, mix, serve','wash, cook, eat','steam, bake, roast'],a:0},
 {t:'li',q:'Listen — which word?',say:'ម្ទេស',o:['ម្ទេស','ស្ករ','អំបិល','ម្នាស់'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ដាំបាយ','cook rice'],['ចៀន','fry'],['ហឹរ','spicy'],['ស្ករ','sugar'],['ម្ទេស','chili']]},
-{t:'mc',q:'Khmer flavor talk is now yours: ផ្អែម ជូរ ហឹរ plus Zone 3 words…',o:['ឆ្ងាញ់ & ក្តៅ','ធំ & តូច','ថ្មី & ចាស់','ល្អ & ស្អាត'],a:0}]},
+{t:'mc',q:'Khmer flavor talk is now yours: ផ្អែម ជូរ ហឹរ plus Zone 3 words…',o:['ឆ្ងាញ់ & ក្តៅ','ធំ & តូច','ថ្មី & ចាស់','ល្អ & ស្អាត'],a:0},
+{t:'mc',q:'Review — which means "I miss home"?',o:['ខ្ញុំនឹកផ្ទះ','តា','សុំម៉ឺនុយ','ក្រហម'],a:0},
+{t:'mc',q:'Review — which means "5:00 in the morning"?',o:['ម៉ោងប្រាំព្រឹក','ទៅណា','ទៅលេង','បន្តរៀនភាសាខ្មែរ'],a:0}]},
 
 {id:'km_money2',title:'Large numbers',step:'learn',meta:'មុឺន · លាន · ដូរលុយ',vocab:[['មុឺន','meun','ten thousand (10,000)'],['មួយមុឺនរៀល','muoy meun riel','10,000 riel'],['លាន','lean','a million'],['ដូរលុយ','do luy','to exchange money'],['ដូរលុយនៅណា','do luy nov na','where can I exchange money?'],['ពីរមុឺនរៀល','pi meun riel','20,000 riel'],['មួយលានរៀល','muoy lean riel','one million riel']],ex:[
 {t:'note',tag:'Big riel numbers',q:'មុឺន — 10,000',body:'<p>Riel prices run big, so Khmer has a word for ten thousand: <span class="deva">មុឺន</span> <b>meun</b>. <span class="deva">មួយមុឺនរៀល</span> — 10,000 riel (about $2.50) · <span class="deva">ពីរមុឺនរៀល</span> — 20,000.</p><p>And <span class="deva">លាន</span> <b>lean</b> = a million. <span class="deva">មួយលានរៀល</span> — one million riel — sounds rich, ≈ $250!</p>',eg:[['មួយមុឺនរៀល','muoy meun riel','10,000 riel'],['មួយលានរៀល','muoy lean riel','a million riel']]},
@@ -3481,7 +3566,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does លាន mean?',d:'លាន',r:'lean',o:['a million','a car','ten thousand','a lane'],a:0},
 {t:'li',q:'Listen — which word?',say:'មុឺន',o:['មុឺន','មួយ','ម៉ឺនុយ','លាន'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['មុឺន','10,000'],['លាន','1,000,000'],['ដូរលុយ','exchange money'],['ពាន់','1,000'],['រយ','100']]},
-{t:'mc',q:'Why does Khmer need មុឺន so much?',o:['riel prices run into the ten-thousands daily','it sounds nice','for taxes','it is borrowed from English'],a:0}]},
+{t:'mc',q:'Why does Khmer need មុឺន so much?',o:['riel prices run into the ten-thousands daily','it sounds nice','for taxes','it is borrowed from English'],a:0},
+{t:'mc',q:'Review — which means "I love my family"?',o:['ខ្ញុំស្រឡាញ់គ្រួសារខ្ញុំ','បើទិញពីរ','កុម្ភៈ','មួយថ្ងៃពីរដង'],a:0},
+{t:'mc',q:'Review — which means "two people"?',o:['មនុស្សពីរនាក់','ខ្ញុំគិតថាឆ្ងាញ់','ទីក្រុង','ទូរស័ព្ទ'],a:0}]},
 
 {id:'km_service',title:'Errands',step:'learn',meta:'កាត់សក់ · បោកខោអាវ',vocab:[['កាត់','kat','to cut'],['កាត់សក់','kat sak','to get a haircut'],['ខោអាវ','khao av','clothes'],['បោកខោអាវ','baok khao av','to do the laundry'],['ជួសជុល','chuoh chul','to repair'],['ជួសជុលម៉ូតូ','chuoh chul moto','to repair the moto'],['ខ្ញុំចង់កាត់សក់','khnhom chang kat sak','I want a haircut'],['កាត់ខ្លីបន្តិច','kat khlei bantech','cut it a little short']],ex:[
 {t:'note',tag:'The barber chair',q:'កាត់សក់',body:'<p><span class="deva">កាត់</span> <b>kat</b> = cut — so <span class="deva">កាត់សក់</span> = cut hair, a haircut! <span class="deva">ខ្ញុំចង់កាត់សក់</span> — I want a haircut.</p><p>Zone 11 pays off in the chair: <span class="deva">កាត់ខ្លីបន្តិច</span> — cut it a little short!</p>',eg:[['កាត់សក់','kat sak','haircut'],['កាត់ខ្លីបន្តិច','kat khlei bantech','cut it a little short']]},
@@ -3524,7 +3611,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does ខោអាវ mean?',d:'ខោអាវ',r:'khao av',o:['clothes','laundry soap','wardrobe','fashion'],a:0},
 {t:'li',q:'Listen — which word?',say:'បោក',o:['បោក','បោះ','កោះ','បើក'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['កាត់','cut'],['បោកខោអាវ','do laundry'],['ជួសជុលម៉ូតូ','fix the moto'],['ខោអាវ','clothes'],['កាត់សក់','haircut']]},
-{t:'mc',q:'កាត់សក់ reuses សក់ from…',o:['describing people — Zone 11','the body — Zone 5','both zones!','nowhere'],a:2}]},
+{t:'mc',q:'កាត់សក់ reuses សក់ from…',o:['describing people — Zone 11','the body — Zone 5','both zones!','nowhere'],a:2},
+{t:'mc',q:'Review — which means "the best"?',o:['ល្អជាងគេ','សញ្ជាតិ','បង្អួច','បី'],a:0},
+{t:'mc',q:'Review — which means "three children"?',o:['កូនបីនាក់','ហែលទឹក','គាត់ជាគ្រូ','ប្រហែល'],a:0}]},
 
 {id:'km_emerg',title:'Emergencies',step:'learn',meta:'ជួយផង! ប្រយ័ត្ន!',vocab:[['ជួយផង','chuoy phang','help!'],['ប្រយ័ត្ន','proyat','careful! / watch out!'],['គ្រោះថ្នាក់','kruoh thnak','an accident / danger'],['បាត់','bat','lost / missing'],['ខ្ញុំបាត់លិខិតឆ្លងដែន','khnhom bat likhet chhlong daen','I lost my passport'],['ហៅ','hav','to call (someone over)'],['ហៅប៉ូលិស','hav polih','call the police'],['ហៅគ្រូពេទ្យ','hav kru pet','call a doctor']],ex:[
 {t:'note',tag:'Shout it',q:'ជួយផង!',body:'<p>The one to know by heart: <span class="deva">ជួយផង</span> <b>chuoy phang</b> — HELP! And the warning you will hear in traffic: <span class="deva">ប្រយ័ត្ន</span> <b>proyat</b> — careful, watch out!</p><p><span class="deva">គ្រោះថ្នាក់</span> <b>kruoh thnak</b> = an accident, danger.</p>',eg:[['ជួយផង','chuoy phang','help!'],['ប្រយ័ត្ន','proyat','careful!'],['គ្រោះថ្នាក់','kruoh thnak','accident / danger']]},
@@ -3567,7 +3656,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does បាត់ mean?',d:'បាត់',r:'bat',o:['lost / missing','found','broken','forgotten'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ជួយផង',o:['ជួយផង','ជួយ','ផង','ជួល'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['ជួយផង','help!'],['ប្រយ័ត្ន','watch out!'],['គ្រោះថ្នាក់','accident'],['ហៅប៉ូលិស','call police'],['បាត់','lost']]},
-{t:'mc',q:'បាត់ lost vs ភ្លេច forgot:',o:['things go missing vs memories slip','same word','both mean broken','lost people vs lost things'],a:0}]},
+{t:'mc',q:'បាត់ lost vs ភ្លេច forgot:',o:['things go missing vs memories slip','same word','both mean broken','lost people vs lost things'],a:0},
+{t:'mc',q:'Review — which means "like / as"?',o:['ដូច','បន្តិច','កម្ពុជា','ណាត់'],a:0},
+{t:'mc',q:'Review — which means "one cup of coffee"?',o:['កាហ្វេមួយកែវ','កុម្ភៈ','ល្អជាងគេ','ឥឡូវ'],a:0}]},
 
 {id:'km_family2',title:'Small talk',step:'learn',meta:'Married? Kids? Age?',vocab:[['អាយុ','ayu','age'],['អាយុប៉ុន្មាន','ayu ponman','how old (are you)?'],['រៀបការ','riep ka','to be married'],['រៀបការហើយឬនៅ','riep ka haey rue nov','married yet, or not yet?'],['នៅលីវ','nov liv','single'],['មានកូនប៉ុន្មាននាក់','mean koun ponman neak','how many children do you have?'],['ខ្ញុំមានកូនពីរនាក់','khnhom mean koun pi neak','I have two children']],ex:[
 {t:'note',tag:'Friendly, not nosy',q:'The Cambodian trio',body:'<p>New friends in Cambodia will warmly ask three things: <span class="deva">អាយុប៉ុន្មាន?</span> how old? · <span class="deva">រៀបការហើយឬនៅ?</span> married yet? · <span class="deva">មានកូនប៉ុន្មាននាក់?</span> how many kids?</p><p>It is friendliness, not nosiness — it helps them pick បង or អូន for you!</p>',eg:[['អាយុប៉ុន្មាន','ayu ponman','how old?'],['រៀបការហើយឬនៅ','riep ka haey rue nov','married yet?']]},
@@ -3610,7 +3701,9 @@ const KM_LESSONS=[
 {t:'mc',q:'What does នៅលីវ mean?',d:'នៅលីវ',r:'nov liv',o:['single','still busy','still young','married'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'រៀបការហើយ',o:['រៀបការហើយ','រៀបការហើយឬនៅ','នៅលីវ','ហើយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['អាយុ','age'],['រៀបការហើយ','married already'],['នៅលីវ','still single'],['មានកូនពីរនាក់','two kids'],['អាយុប៉ុន្មាន','how old?']]},
-{t:'mc',q:'The three questions are asked because…',o:['warmth — and to pick បង or អូន for you','curiosity is rude','they are on a form','tourists expect them'],a:0}]},
+{t:'mc',q:'The three questions are asked because…',o:['warmth — and to pick បង or អូន for you','curiosity is rude','they are on a form','tourists expect them'],a:0},
+{t:'mc',q:'Review — which means "the same"?',o:['ដូចគ្នា','អ្នកបើកឡាន','សូមអង្គុយ','ខ្ញុំទើបតែមកដល់'],a:0},
+{t:'mc',q:'Review — which means "one plate of rice"?',o:['បាយមួយចាន','ទីមួយ','បត់','អត់ទៅទេ'],a:0}]},
 
 {id:'km_howlong',title:'How long? — យូរ',step:'learn',meta:'បាន + time + ហើយ (finale)',vocab:[['យូរ','yu','a long time'],['យូរហើយ','yu haey','a long while now'],['ប៉ុន្មានឆ្នាំ','ponman chhnam','how many years?'],['នៅកម្ពុជាប៉ុន្មានឆ្នាំហើយ','nov kampuchea ponman chhnam haey','how many years in Cambodia now?'],['ខ្ញុំរៀនភាសាខ្មែរបានមួយឆ្នាំហើយ','khnhom rien pheasa khmer ban muoy chhnam haey','I have been learning Khmer for a year now'],['ខ្ញុំនៅទីនេះបានពីរខែហើយ','khnhom nov ti nih ban pi khae haey','I have been here two months now'],['ទើបតែមកដល់','teub tae mok dol','just arrived (review)']],ex:[
 {t:'note',tag:'The expat question',q:'ប៉ុន្មានឆ្នាំហើយ?',body:'<p>The question every foreigner hears: <span class="deva">នៅកម្ពុជាប៉ុន្មានឆ្នាំហើយ?</span> — how long in Cambodia now? (<span class="deva">ហើយ</span> makes it so far.)</p><p><span class="deva">យូរ</span> <b>yu</b> = a long time: <span class="deva">យូរហើយ</span> — a good while now!</p>',eg:[['នៅកម្ពុជាប៉ុន្មានឆ្នាំហើយ','nov kampuchea ponman chhnam haey','how long in Cambodia now?'],['យូរហើយ','yu haey','a long while now']]},
@@ -3653,7 +3746,9 @@ const KM_LESSONS=[
 {t:'mc',q:'The duration pattern is verb + បាន + length + …',o:['ហើយ','ទេ','ណាស់','វិញ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ទើបតែមកដល់',o:['ទើបតែមកដល់','ទើបតែ','មកដល់','ដល់ហើយ'],a:0},
 {t:'match',q:'Match Khmer and meaning',pairs:[['យូរហើយ','a while now'],['ប៉ុន្មានឆ្នាំ','how many years'],['បានមួយឆ្នាំហើយ','a year now'],['ទើបតែមកដល់','just arrived'],['នៅលីវ','still single']]},
-{t:'mc',q:'ស្វាគមន៍ — Zone 12 done! You cook, bargain, cope & belong. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0}]},
+{t:'mc',q:'ស្វាគមន៍ — Zone 12 done! You cook, bargain, cope & belong. The Khmer course…',o:['keeps growing — more zones ahead','ends here','starts over','is a secret'],a:0},
+{t:'mc',q:'Review — which means "the city is bigger than the village"?',o:['ទីក្រុងធំជាងស្រុក','ឱ្យលុយ','ជិះ','ខ្ញុំកំពុងតែធ្វើការ'],a:0},
+{t:'mc',q:'Review — which means "two dogs"?',o:['ឆ្កែពីរក្បាល','នៅកម្ពុជាប៉ុន្មានឆ្នាំហើយ','កាហ្វេ','ឆ្ងាយ'],a:0}]},
 ];
 
 /* ---- Cambodian scenery & mascot ----

@@ -1720,7 +1720,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'පොඩියි',o:['පොඩියි','ලොකුයි','රසයි','පොඩි'],a:0},
 {t:'mc',q:'"A big house" (describing, not declaring):',o:['ලොකු ගෙදර','ගෙදර ලොකුයි','ලොකුයි','ගෙදරයි'],a:0},
 {t:'li',q:'Listen — which word?',say:'නරකයි',o:['නරකයි','රසයි','හොඳයි','ලොකුයි'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['ලොකුයි','is big'],['පොඩියි','is small'],['රසයි','is tasty'],['ලොකු','big (before a noun)']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['ලොකුයි','is big'],['පොඩියි','is small'],['රසයි','is tasty'],['ලොකු','big (before a noun)']]},
+{t:'mc',q:'Review — which means "his / hers"?',o:['එයාගේ','ලංකාවෙන්','අඟහරුවාදා','හැට'],a:0}]},
 
 /* --- Topic 37: more adjectives --- */
 {id:'si_adj2',title:'More describing words',step:'learn',meta:'ලස්සන උස පරණ අලුත්',vocab:[['ලස්සන','lassana','beautiful'],['ලස්සනයි','lassanayi','is beautiful'],['උස','usa','tall'],['පරණ','parana','old (things)'],['අලුත්','aluth','new']],ex:[
@@ -1763,7 +1764,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'උස',o:['උස','උඩ','පරණ','අලුත්'],a:0},
 {t:'mc',q:'"New" =',o:['අලුත්','පරණ','ලොකු','ලස්සන'],a:0},
 {t:'li',q:'Listen — which word?',say:'ලස්සනයි',o:['ලස්සනයි','ලස්සන','උසයි','රසයි'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['ලස්සනයි','is beautiful'],['උසයි','is tall'],['පරණ','old'],['අලුත්','new']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['ලස්සනයි','is beautiful'],['උසයි','is tall'],['පරණ','old'],['අලුත්','new']]},
+{t:'mc',q:'Review — which means "inside"?',o:['ඇතුළේ','ඔව්','අලුත්','සිකුරාදා'],a:0}]},
 
 /* --- Topic 38: colors --- */
 {id:'si_color',title:'Colors',step:'learn',meta:'රතු නිල් කොළ කහ සුදු කළු',vocab:[['රතු','rathu','red'],['නිල්','nil','blue'],['කොළ','kola','green'],['කහ','kaha','yellow'],['සුදු','sudhu','white'],['කළු','kalu','black'],['පාට','paata','color']],ex:[
@@ -1806,7 +1808,8 @@ const SI_LESSONS=[
 {t:'mc',q:'"White" =',o:['සුදු','කළු','කහ','පාට'],a:0},
 {t:'wb',q:'Ask: what color?',a:['මොකක්','පාටද'],pool:['මොකක්','පාටද','මොකක්ද']},
 {t:'li',q:'Listen — which color?',say:'කළු',o:['කළු','කොළ','සුදු','රතු'],a:0},
-{t:'match',q:'Match color and meaning',pairs:[['රතු','red'],['නිල්','blue'],['සුදු','white'],['කළු','black']]}]},
+{t:'match',q:'Match color and meaning',pairs:[['රතු','red'],['නිල්','blue'],['සුදු','white'],['කළු','black']]},
+{t:'mc',q:'Review — which means "table"?',o:['මේසය','ටිකක්','පාන්','ගන්නවා'],a:0}]},
 
 /* --- Topic 39: comparisons --- */
 {id:'si_cmp',title:'More & most',step:'learn',meta:'X-ට වඩා … & -ම',vocab:[['වඩා','wadaa','more (than)'],['මේකට වඩා','meekata wadaa','more than this'],['ලොකුම','lokuma','biggest'],['හොඳම','hondhama','best'],['මේක ඒකට වඩා හොඳයි','meeka eekata wadaa hondhayi','this is better than that']],ex:[
@@ -1849,7 +1852,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'ලොකුම',o:['ලොකුම','ලොකුයි','හොඳම','වඩා'],a:0},
 {t:'mc',q:'"Most beautiful" =',o:['ලස්සනම','ලස්සනයි','වඩා ලස්සන','ලස්සන'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ඒකට වඩා',o:['ඒකට වඩා','මේකට වඩා','වඩා','ඒකට'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['වඩා','more than'],['ලොකුම','biggest'],['හොඳම','best'],['මේකට වඩා','more than this']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['වඩා','more than'],['ලොකුම','biggest'],['හොඳම','best'],['මේකට වඩා','more than this']]},
+{t:'mc',q:'Review — which means "bread"?',o:['පාන්','තේ','තාත්තා','කරුණාකරලා'],a:0}]},
 
 /* --- Topic 40: feelings --- */
 {id:'si_feel',title:'How you feel',step:'learn',meta:'මට බඩගිනියි — belly-fire!',vocab:[['බඩගිනියි','badaginiyi','hungry'],['මහන්සියි','mahansiyi','tired'],['නිදිමතයි','nidhimathayi','sleepy'],['බයයි','bayayi','afraid'],['සතුටුයි','sathutuyi','glad / happy'],['මට බඩගිනියි','mata badaginiyi','I am hungry']],ex:[
@@ -2022,7 +2026,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which verb?',say:'ගියා',o:['ගියා','ආවා','යනවා','කෑවා'],a:0},
 {t:'mc',q:'The past of එනවා is…',o:['ආවා','ගියා','එන්නා','ඊවා'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'මම බත් කෑවා',o:['මම බත් කෑවා','මම බත් කනවා','අපි බත් කෑවා','මම තේ බිව්වා'],a:0},
-{t:'match',q:'Match present and past',pairs:[['කනවා','කෑවා'],['බොනවා','බිව්වා'],['යනවා','ගියා'],['එනවා','ආවා']]}]},
+{t:'match',q:'Match present and past',pairs:[['කනවා','කෑවා'],['බොනවා','බිව්වා'],['යනවා','ගියා'],['එනවා','ආවා']]},
+{t:'mc',q:'Review — which means "13"?',o:['දහතුන','පනහ','හතර','හතළිහ'],a:0}]},
 
 /* --- Topic 44: more pasts --- */
 {id:'si_past2',title:'Irregular pasts',step:'learn',meta:'කළා ගත්තා දුන්නා කිව්වා හිටියා',vocab:[['කළා','kalaa','did'],['ගත්තා','gaththaa','took / bought'],['දුන්නා','dhunnaa','gave'],['කිව්වා','kiwwaa','said'],['හිටියා','hitiyaa','was / stayed (living)'],['තිබුණා','thibunaa','was / there was (thing)']],ex:[
@@ -2065,7 +2070,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which verb?',say:'ගත්තා',o:['ගත්තා','දුන්නා','කළා','හිටියා'],a:0},
 {t:'mc',q:'"Mother was at home" =',o:['අම්මා ගෙදර හිටියා','අම්මා ගෙදර තිබුණා','අම්මා ගෙදර ඉන්නවා','අම්මා ගෙදර ගියා'],a:0},
 {t:'li',q:'Listen — which verb?',say:'හිටියා',o:['හිටියා','තිබුණා','ආවා','ගියා'],a:0},
-{t:'match',q:'Match present and past',pairs:[['කරනවා','කළා'],['ගන්නවා','ගත්තා'],['ඉන්නවා','හිටියා'],['තියෙනවා','තිබුණා']]}]},
+{t:'match',q:'Match present and past',pairs:[['කරනවා','කළා'],['ගන්නවා','ගත්තා'],['ඉන්නවා','හිටියා'],['තියෙනවා','තිබුණා']]},
+{t:'mc',q:'Review — which means "16"?',o:['දහසය','දාහතර','පහළොව','දොළහ'],a:0}]},
 
 /* --- Topic 45: past negative & questions --- */
 {id:'si_pastneg',title:'Past negation & questions',step:'learn',meta:'ගියේ නෑ … ගියාද?',vocab:[['ගියේ නෑ','giyee naee','did not go'],['කෑවේ නෑ','kaeaewee naee','did not eat'],['ගියාද','giyaadha','did (you) go?'],['කෑවද','kaeaewadha','did (you) eat?'],['මම ඊයේ ගියේ නෑ','mama iiyee giyee naee','I did not go yesterday']],ex:[
@@ -2108,7 +2114,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'ගියේ නෑ',o:['ගියේ නෑ','ගියාද','ගියා','ආවේ නෑ'],a:0},
 {t:'mc',q:'"I did not buy this" =',o:['මම මේක ගත්තේ නෑ','මම මේක ගත්තා','මම මේක ගන්නේ නෑ','මට මේක එපා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'කෑවද',o:['කෑවද','ගියාද','කෑවා','කනවද'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['ගියාද','did you go?'],['ගියේ නෑ','did not go'],['කෑවද','did you eat?'],['කෑවේ නෑ','did not eat']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['ගියාද','did you go?'],['ගියේ නෑ','did not go'],['කෑවද','did you eat?'],['කෑවේ නෑ','did not eat']]},
+{t:'mc',q:'Review — which means "17"?',o:['දහහත','පහ','තුන','අට'],a:0}]},
 
 /* --- Topic 46: the -laa perfect --- */
 {id:'si_perf',title:'Already done: -ලා',step:'learn',meta:'බත් කාලද? — the friendliest question',vocab:[['කාලා','kaalaa','eaten (already)'],['ගිහිල්ලා','gihillaa','gone'],['ඇවිල්ලා','aewillaa','come / arrived'],['කරලා','karalaa','done'],['බත් කාලද','bath kaaladha','have you eaten?']],ex:[
@@ -2151,7 +2158,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'ගිහිල්ලා',o:['ගිහිල්ලා','ඇවිල්ලා','කාලා','ගියා'],a:0},
 {t:'mc',q:'"The work is done" =',o:['වැඩ කරලා','වැඩ කළා','වැඩ කරනවා','වැඩ නෑ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'කාලා',o:['කාලා','කරලා','කෑවා','ආවා'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['කාලා','eaten'],['ගිහිල්ලා','gone'],['ඇවිල්ලා','arrived'],['බත් කාලද','have you eaten?']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['කාලා','eaten'],['ගිහිල්ලා','gone'],['ඇවිල්ලා','arrived'],['බත් කාලද','have you eaten?']]},
+{t:'mc',q:'Review — which means "18"?',o:['දහඅට','තුන','දහහත','තිහ'],a:0}]},
 
 /* --- Topic 47: can & cannot --- */
 {id:'si_can',title:'Can: පුළුවන් & බෑ',step:'learn',meta:'මට පුළුවන් — the power pair',vocab:[['පුළුවන්','puluwan','can / able'],['බෑ','baee','cannot'],['මට පුළුවන්','mata puluwan','I can'],['මට බෑ','mata baee','I cannot'],['මට සිංහල පුළුවන්','mata sinhala puluwan','I can (speak) Sinhala'],['යන්න','yanna','to go']],ex:[
@@ -2194,7 +2202,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'මට පුළුවන්',o:['මට පුළුවන්','මට බෑ','පුළුවන්ද','මට ඕනැ'],a:0},
 {t:'mc',q:'"I cannot come" =',o:['මට එන්න බෑ','මම එන්නේ නෑ','මට එන්න පුළුවන්','මට එපා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'මට බෑ',o:['මට බෑ','මට නෑ','මට පුළුවන්','බෑ'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['පුළුවන්','can'],['බෑ','cannot'],['යන්න','to go'],['පුළුවන්ද','can you?']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['පුළුවන්','can'],['බෑ','cannot'],['යන්න','to go'],['පුළුවන්ද','can you?']]},
+{t:'mc',q:'Review — which means "19"?',o:['දහනවය','පහළොව','තුන','දාහතර'],a:0}]},
 
 /* --- Topic 48: -nna commands --- */
 {id:'si_nna',title:'Polite commands: -න්න',step:'learn',meta:'එන්න! යන්න! ඉන්න!',vocab:[['එන්න','enna','come!'],['ඉන්න','inna','wait! / stay!'],['බලන්න','balanna','look!'],['කියන්න','kiyanna','say it! / tell me'],['කන්න','kanna','eat!'],['යන්න එපා','yanna epaa','do not go!']],ex:[
@@ -2237,7 +2246,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which command?',say:'එන්න',o:['එන්න','ඉන්න','කන්න','එන්නම්'],a:0},
 {t:'mc',q:'"Look!" =',o:['බලන්න','කියන්න','බලනවා','බැලුවා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'කන්න කන්න',o:['කන්න කන්න','කන්න','එන්න එන්න','යන්න එපා'],a:0},
-{t:'match',q:'Match command and meaning',pairs:[['එන්න','come!'],['යන්න එපා','do not go!'],['ඉන්න','wait!'],['කන්න','eat!']]}]},
+{t:'match',q:'Match command and meaning',pairs:[['එන්න','come!'],['යන්න එපා','do not go!'],['ඉන්න','wait!'],['කන්න','eat!']]},
+{t:'mc',q:'Review — which means "70"?',o:['හැත්තෑව','පහළොව','හැට','දහතුන'],a:0}]},
 
 /* --- Topic 49: want to DO & let's --- */
 {id:'si_want2',title:'Want to do & let’s',step:'learn',meta:'මට යන්න ඕනැ … අපි යමු!',vocab:[['මට යන්න ඕනැ','mata yanna oonae','I want to go'],['මට කන්න ඕනැ','mata kanna oonae','I want to eat'],['යමු','yamu','let’s go'],['කමු','kamu','let’s eat'],['අපි ගමට යමු','api gamata yamu','let’s go to the village']],ex:[
@@ -2280,7 +2290,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'යමු',o:['යමු','කමු','යන්න','ඕනැ'],a:0},
 {t:'mc',q:'"Let’s go home" =',o:['අපි ගෙදර යමු','මට ගෙදර යන්න ඕනැ','ගෙදර යන්න','අපි ගෙදර ගියා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'මට කන්න ඕනැ',o:['මට කන්න ඕනැ','මට යන්න ඕනැ','කමු','මට ඕනැ'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['මට යන්න ඕනැ','I want to go'],['මට යන්න බෑ','I cannot go'],['යන්න එපා','do not go!'],['යමු','let’s go!']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['මට යන්න ඕනැ','I want to go'],['මට යන්න බෑ','I cannot go'],['යන්න එපා','do not go!'],['යමු','let’s go!']]},
+{t:'mc',q:'Review — which means "80"?',o:['අසූව','විස්ස','එක','එකොළහ'],a:0}]},
 
 /* ===================== ZONE 8 · OUT & ABOUT ===================== */
 /* --- Topic 50: rides --- */
@@ -2324,7 +2335,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'ත්‍රීවීල් එකේ',o:['ත්‍රීවීල් එකේ','ත්‍රීවීල් එක','බස් එකේ','කෝච්චියේ'],a:0},
 {t:'mc',q:'"On foot" =',o:['පයින්','පාරෙන්','පස්සේ','ළඟ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'බස් ස්ටෑන්ඩ් එක කොහෙද',o:['බස් ස්ටෑන්ඩ් එක කොහෙද','කඩේ කොහෙද','බස් එක කොහෙද','ඉස්කෝලේ කොහෙද'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['කෝච්චිය','train'],['පයින්','on foot'],['කොළඹ','Colombo'],['බස් ස්ටෑන්ඩ් එක','bus stand']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['කෝච්චිය','train'],['පයින්','on foot'],['කොළඹ','Colombo'],['බස් ස්ටෑන්ඩ් එක','bus stand']]},
+{t:'mc',q:'Review — which means "90"?',o:['අනූව','පහළොව','දාහතර','හතළිහ'],a:0}]},
 
 /* --- Topic 51: directions --- */
 {id:'si_dir',title:'Directions',step:'learn',meta:'වමට දකුණට කෙළින්ම — the tuk-tuk toolkit',vocab:[['වමට','wamata','to the left'],['දකුණට','dhakunata','to the right'],['කෙළින්ම','kelinma','straight ahead'],['නවත්තන්න','nawaththanna','stop! (please stop)'],['මෙතන','methana','here'],['මෙතන නවත්තන්න','methana nawaththanna','stop here please']],ex:[
@@ -2367,7 +2379,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which direction?',say:'දකුණට',o:['දකුණට','වමට','කෙළින්ම','දෙකට'],a:0},
 {t:'mc',q:'"Straight ahead" =',o:['කෙළින්ම','ළඟ','දුර','පයින්'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'කෙළින්ම යන්න',o:['කෙළින්ම යන්න','වමට යන්න','මෙතන නවත්තන්න','දකුණට යන්න'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['වමට','left'],['දකුණට','right'],['මෙතන','here'],['නවත්තන්න','stop!']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['වමට','left'],['දකුණට','right'],['මෙතන','here'],['නවත්තන්න','stop!']]},
+{t:'mc',q:'Review — which means "time"?',o:['වෙලාව','සඳුදා','කොළ','එළවළු'],a:0}]},
 
 /* --- Topic 52: tickets --- */
 {id:'si_tik',title:'Tickets & the train',step:'learn',meta:'කොළඹට ටිකට් එකක් දෙන්න',vocab:[['ටිකට් එක','tikat eka','the ticket'],['ස්ටේෂන් එක','steshan eka','the station'],['කොළඹ','Kolamba','Colombo'],['මට කොළඹට ටිකට් එකක් දෙන්න','mata Kolambata tikat ekak dhenna','one ticket to Colombo please'],['කෝච්චිය කීයටද','kochchiya kiiyatadha','at what time is the train?']],ex:[
@@ -2410,7 +2423,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'කෝච්චිය කීයටද',o:['කෝච්චිය කීයටද','කෝච්චිය කීයද','බස් එක කීයටද','කීයටද'],a:0},
 {t:'mc',q:'"Where is the station?" =',o:['ස්ටේෂන් එක කොහෙද','ස්ටේෂන් එක කීයටද','ස්ටේෂන් එකක්','ස්ටේෂන් එකේ යනවා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ටිකට් එක',o:['ටිකට් එක','ටිකට් එකක්','ටිකක්','ස්ටේෂන් එක'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['ටිකට් එකක්','a ticket'],['ස්ටේෂන් එක','the station'],['කොළඹට','to Colombo'],['කීයටද','at what time?']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['ටිකට් එකක්','a ticket'],['ස්ටේෂන් එක','the station'],['කොළඹට','to Colombo'],['කීයටද','at what time?']]},
+{t:'mc',q:'Review — which means "Monday"?',o:['සඳුදා','නිල්','දහසය','මහන්සියි'],a:0}]},
 
 /* --- Topic 53: hotel --- */
 {id:'si_hotel',title:'A place to stay',step:'learn',meta:'කාමරයක් තියෙනවද?',vocab:[['හෝටලේ','hootalee','hotel (often: eatery!)'],['කාමරය','kaamaraya','room'],['යතුර','yathura','key'],['කාමරයක් තියෙනවද','kaamarayak thiyenawadha','is there a room?'],['දවසකට කීයද','dhawasakata kiiyadha','how much per day?']],ex:[
@@ -2453,7 +2467,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'යතුර',o:['යතුර','කාමරය','යමු','දවස'],a:0},
 {t:'mc',q:'"How much per day?" =',o:['දවසකට කීයද','දවස කීයද','කීයටද','දවසක් කීයක්'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'කාමරයක් තියෙනවද',o:['කාමරයක් තියෙනවද','කාමරය ලොකුයි','යතුර දෙන්න','දවසකට කීයද'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['කාමරය','room'],['යතුර','key'],['හෝටලේ','hotel / eatery'],['දවසකට කීයද','how much per day?']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['කාමරය','room'],['යතුර','key'],['හෝටලේ','hotel / eatery'],['දවසකට කීයද','how much per day?']]},
+{t:'mc',q:'Review — which means "Tuesday"?',o:['අඟහරුවාදා','පරණ','බඩ','පොඩියි'],a:0}]},
 
 /* --- Topic 54: months & the year --- */
 {id:'si_month',title:'Months & the year',step:'learn',meta:'ජනවාරි … දෙසැම්බර් + අලුත් අවුරුද්ද',vocab:[['මාසය','maasaya','month'],['අවුරුද්ද','awurudhdha','year'],['ජනවාරි','janawaari','January'],['අප්‍රේල්','apreel','April'],['අගෝස්තු','agoosthu','August'],['දෙසැම්බර්','dhesaembar','December'],['අලුත් අවුරුද්ද','aluth awurudhdha','the (April) new year']],ex:[
@@ -2496,7 +2511,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which month?',say:'ජූලි',o:['ජූලි','ජූනි','ජනවාරි','මැයි'],a:0},
 {t:'mc',q:'"Year" =',o:['අවුරුද්ද','මාසය','අලුත්','දවස'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'අලුත් අවුරුද්ද',o:['අලුත් අවුරුද්ද','අලුත් පොත','අවුරුද්ද','පරණ අවුරුද්ද'],a:0},
-{t:'match',q:'Match month and meaning',pairs:[['ජනවාරි','January'],['මැයි','May'],['ඔක්තෝබර්','October'],['දෙසැම්බර්','December']]}]},
+{t:'match',q:'Match month and meaning',pairs:[['ජනවාරි','January'],['මැයි','May'],['ඔක්තෝබර්','October'],['දෙසැම්බර්','December']]},
+{t:'mc',q:'Review — which means "four (of something)"?',o:['හතරක්','බදාදා','තේරෙනවා','කන්න'],a:0}]},
 
 /* --- Topic 55: phone --- */
 {id:'si_phone',title:'Phone & photos',step:'learn',meta:'ෆෝන් එක නම්බර් එක කෝල් එකක්',vocab:[['ෆෝන් එක','foon eka','the phone'],['නම්බර් එක','nambar eka','the number'],['කෝල් එකක් දෙන්න','kool ekak dhenna','give me a call'],['ෆොටෝ එකක්','fotoo ekak','a photo'],['ෆොටෝ එකක් ගන්න පුළුවන්ද','fotoo ekak ganna puluwandha','may I take a photo?']],ex:[
@@ -2539,7 +2555,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'කෝල් එකක් දෙන්න',o:['කෝල් එකක් දෙන්න','ෆොටෝ එකක් ගන්න','යතුර දෙන්න','නම්බර් එක'],a:0},
 {t:'mc',q:'"The phone" =',o:['ෆෝන් එක','ෆොටෝ එක','කෝල් එක','නම්බර් එක'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'නම්බර් එක මොකක්ද',o:['නම්බර් එක මොකක්ද','නම මොකක්ද','නම්බර් එක','මොකක්ද'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['ෆෝන් එක','phone'],['නම්බර් එක','number'],['කෝල් එකක් දෙන්න','give me a call'],['ෆොටෝ එකක්','a photo']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['ෆෝන් එක','phone'],['නම්බර් එක','number'],['කෝල් එකක් දෙන්න','give me a call'],['ෆොටෝ එකක්','a photo']]},
+{t:'mc',q:'Review — which means "tall"?',o:['උස','ඇයි','හැට','කහ'],a:0}]},
 
 /* --- Topic 56: asking the way --- */
 {id:'si_ask',title:'Asking the way',step:'learn',meta:'දුරද? ළඟද? — the four theres',vocab:[['දුර','dhura','far'],['ළඟද දුරද','langadha dhuradha','near or far?'],['ඔතන','othana','there (by you)'],['අතන','athana','over there'],['එතන','ethana','there (we mentioned)'],['පයින් යන්න පුළුවන්ද','payin yanna puluwandha','can I walk there?']],ex:[
@@ -2582,7 +2599,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'අතන',o:['අතන','එතන','ඔතන','මෙතන'],a:0},
 {t:'mc',q:'"Over there (visible)" =',o:['අතන','ඔතන','එතන','මෙතන'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ළඟද දුරද',o:['ළඟද දුරද','ළඟයි','දුරයි','කොහෙද'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['දුර','far'],['ළඟ','near'],['මෙතන','here'],['අතන','over there']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['දුර','far'],['ළඟ','near'],['මෙතන','here'],['අතන','over there']]},
+{t:'mc',q:'Review — which means "yellow"?',o:['කහ','කොළඹ','නිල්','කීයද'],a:0}]},
 
 /* ===================== ZONE 9 · SAY MORE ===================== */
 /* --- Topic 57: but & because --- */
@@ -2626,7 +2644,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'ඒත්',o:['ඒත්','එතන','ඒක','නිසා'],a:0},
 {t:'mc',q:'"So / therefore" =',o:['ඒ නිසා','නිසා','ඒත්','හැබැයි'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'වැඩ නිසා',o:['වැඩ නිසා','වැස්ස නිසා','ඒ නිසා','වැඩ'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['ඒත්','but'],['නිසා','because of'],['ඒ නිසා','therefore'],['හැබැයි','mind you']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['ඒත්','but'],['නිසා','because of'],['ඒ නිසා','therefore'],['හැබැයි','mind you']]},
+{t:'mc',q:'Review — which means "white"?',o:['සුදු','සඳුදා','අත','කළා'],a:0}]},
 
 /* --- Topic 58: if --- */
 {id:'si_if',title:'If: නම්',step:'learn',meta:'වැස්ස නම් … පුළුවන් නම්',vocab:[['නම්','nam','if'],['වැස්ස නම්','waessa nam','if it rains'],['පුළුවන් නම්','puluwan nam','if possible'],['හෙට වැස්ස නම් අපි යන්නේ නෑ','heta waessa nam api yannee naee','if it rains tomorrow we are not going']],ex:[
@@ -2669,7 +2688,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'පුළුවන් නම්',o:['පුළුවන් නම්','ඕනැ නම්','වැස්ස නම්','පුළුවන්'],a:0},
 {t:'mc',q:'"Take it if you want" =',o:['ඕනැ නම් ගන්න','ගන්න ඕනැ නම්? — order!','ඕනැ නිසා ගන්න','ගන්නවා නම්'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'වැස්ස නම්',o:['වැස්ස නම්','වැස්ස නිසා','වැස්ස','නම්'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['නම්','if'],['නිසා','because of'],['පුළුවන් නම්','if possible'],['ඕනැ නම්','if you want']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['නම්','if'],['නිසා','because of'],['පුළුවන් නම්','if possible'],['ඕනැ නම්','if you want']]},
+{t:'mc',q:'Review — which means "best"?',o:['හොඳම','කඩේ','සල්ලි','කඩේට'],a:0}]},
 
 /* --- Topic 59: think & remember --- */
 {id:'si_think',title:'Think & remember',step:'learn',meta:'හිතනවා මතකයි අමතක වුණා',vocab:[['හිතනවා','hithanawaa','thinks'],['මතක','mathaka','memory'],['මට මතකයි','mata mathakayi','I remember'],['අමතක වුණා','amathaka unaa','forgot'],['මට අමතක වුණා','mata amathaka unaa','I forgot']],ex:[
@@ -2712,7 +2732,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'මට මතකයි',o:['මට මතකයි','මට අමතක වුණා','ඔයාට මතකද','මතකයි'],a:0},
 {t:'mc',q:'"Thinks" =',o:['හිතනවා','දන්නවා','මතකයි','තේරෙනවා'],a:0},
 {t:'li',q:'Listen — which word?',say:'අමතක',o:['අමතක','මතක','අම්මා','අතන'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['හිතනවා','thinks'],['මට මතකයි','I remember'],['මට අමතක වුණා','I forgot'],['වුණා','became']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['හිතනවා','thinks'],['මට මතකයි','I remember'],['මට අමතක වුණා','I forgot'],['වුණා','became']]},
+{t:'mc',q:'Review — which means "sleepy"?',o:['නිදිමතයි','තුන','ගත්තා','දොළහ'],a:0}]},
 
 /* --- Topic 60: work --- */
 {id:'si_job',title:'Work',step:'learn',meta:'රස්සාව වැඩ ඔෆිස් එක',vocab:[['වැඩ','waeda','work'],['රස්සාව','rassaawa','job'],['ඔෆිස් එක','ofis eka','the office'],['ගුරුවරයා','guruwarayaa','teacher'],['ගොවියා','goviyaa','farmer'],['මම වැඩ කරනවා','mama waeda karanawaa','I work']],ex:[
@@ -2755,7 +2776,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'රස්සාව',o:['රස්සාව','වැඩ','වැස්ස','රසයි'],a:0},
 {t:'mc',q:'"Teacher" =',o:['ගුරුවරයා','ගොවියා','දොස්තර','අයියා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ඔයා මොනවද කරන්නේ',o:['ඔයා මොනවද කරන්නේ','මොනවද ඕනැ','ඔයා කොහෙන්ද','මොකක්ද'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['වැඩ','work'],['රස්සාව','job'],['ඔෆිස් එක','office'],['ගොවියා','farmer']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['වැඩ','work'],['රස්සාව','job'],['ඔෆිස් එක','office'],['ගොවියා','farmer']]},
+{t:'mc',q:'Review — which means "afraid"?',o:['බයයි','එතන','රෑ','ආවා'],a:0}]},
 
 /* --- Topic 61: free time --- */
 {id:'si_hobby',title:'Free time',step:'learn',meta:'ක්‍රිකට් සින්දු මුහුද',vocab:[['ක්‍රිකට්','kriket','cricket'],['සින්දු','sindhu','songs'],['අහනවා','ahanawaa','listens / asks'],['නටනවා','natanawaa','dances'],['මුහුද','muhudha','the sea'],['මම ක්‍රිකට් වලට කැමතියි','mama kriket walata kaemathiyi','I like cricket']],ex:[
@@ -2798,7 +2820,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'සින්දු',o:['සින්දු','සිංහල','මුහුද','නටනවා'],a:0},
 {t:'mc',q:'"Listens" =',o:['අහනවා','නටනවා','බලනවා','කියනවා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'සින්දු අහනවා',o:['සින්දු අහනවා','සින්දු නටනවා','ක්‍රිකට් බලනවා','අහනවා'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['ක්‍රිකට්','cricket'],['මුහුද','sea'],['අහනවා','listens'],['නටනවා','dances']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['ක්‍රිකට්','cricket'],['මුහුද','sea'],['අහනවා','listens'],['නටනවා','dances']]},
+{t:'mc',q:'Review — which means "sunshine"?',o:['අව්ව','කැමතියි','දොස්තර','බයයි'],a:0}]},
 
 /* --- Topic 62: your day --- */
 {id:'si_day',title:'Your day',step:'learn',meta:'නැගිටිනවා නානවා උයනවා නිදාගන්නවා',vocab:[['නැගිටිනවා','naegitinawaa','gets up'],['නානවා','naanawaa','bathes'],['උයනවා','uyanawaa','cooks'],['නිදාගන්නවා','nidhaagannawaa','sleeps'],['උදේට','udheeta','in the morning'],['මම උදේට නැගිටිනවා','mama udheeta naegitinawaa','I get up in the morning']],ex:[
@@ -2841,7 +2864,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which verb?',say:'නානවා',o:['නානවා','නටනවා','නිදාගන්නවා','උයනවා'],a:0},
 {t:'mc',q:'"Sleeps" =',o:['නිදාගන්නවා','නැගිටිනවා','ඉන්නවා','නානවා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'මම රෑ නිදාගන්නවා',o:['මම රෑ නිදාගන්නවා','මම උදේට නැගිටිනවා','මම නානවා','රෑ නිදාගන්නවා'],a:0},
-{t:'match',q:'Match verb and meaning',pairs:[['නැගිටිනවා','gets up'],['උයනවා','cooks'],['නානවා','bathes'],['නිදාගන්නවා','sleeps']]}]},
+{t:'match',q:'Match verb and meaning',pairs:[['නැගිටිනවා','gets up'],['උයනවා','cooks'],['නානවා','bathes'],['නිදාගන්නවා','sleeps']]},
+{t:'mc',q:'Review — which means "wind"?',o:['හුළඟ','තිහ','නිදාගන්නවා','බෑ'],a:0}]},
 
 /* --- Topic 63: help & safety --- */
 {id:'si_help',title:'Help & safety',step:'learn',meta:'මට උදව් ඕනැ — words that protect',vocab:[['උදව්','udhaw','help'],['මට උදව් ඕනැ','mata udhaw oonae','I need help'],['උදව් කරන්න','udhaw karanna','please help'],['පොලීසිය','poliisiya','the police'],['නැති වුණා','naethi unaa','got lost / went missing'],['ප්‍රවේසමෙන්','praweesamen','carefully! / take care']],ex:[
@@ -2884,7 +2908,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'උදව් කරන්න',o:['උදව් කරන්න','මට උදව් ඕනැ','අඩු කරන්න','කරන්න'],a:0},
 {t:'mc',q:'"Take care!" =',o:['ප්‍රවේසමෙන්','ප්‍රවේසම් නෑ','පොලීසිය','ගිහින් එන්නම්'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'නැති වුණා',o:['නැති වුණා','වුණා','අමතක වුණා','නැති'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['උදව්','help'],['පොලීසිය','police'],['නැති වුණා','got lost'],['ප්‍රවේසමෙන්','carefully!']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['උදව්','help'],['පොලීසිය','police'],['නැති වුණා','got lost'],['ප්‍රවේසමෙන්','carefully!']]},
+{t:'mc',q:'Review — which means "head"?',o:['ඔළුව','ගියා','යාළුවා','ලස්සන'],a:0}]},
 
 /* ===================== ZONE 10 · YOUR SINHALA LIFE ===================== */
 /* --- Topic 64: family round 2 --- */
@@ -2928,7 +2953,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'නෝනා',o:['නෝනා','මහත්තයා','දුව','අක්කා'],a:0},
 {t:'mc',q:'"Son" =',o:['පුතා','දුව','මල්ලී','ළමයි'],a:0},
 {t:'li',q:'Listen — which word?',say:'පවුල',o:['පවුල','පුතා','ළමයි','පූසා'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['පවුල','family'],['පුතා','son'],['දුව','daughter'],['ළමයි','children']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['පවුල','family'],['පුතා','son'],['දුව','daughter'],['ළමයි','children']]},
+{t:'mc',q:'Review — which means "hurts"?',o:['රිදෙනවා','හොඳයි','ගුරුවරයා','කොහොමද'],a:0}]},
 
 /* --- Topic 65: age & small talk --- */
 {id:'si_age',title:'Age & small talk',step:'learn',meta:'වයස කීයද? බැඳලද? — friendly, not nosy!',vocab:[['වයස','wayasa','age'],['ඔයාගේ වයස කීයද','oyaagee wayasa kiiyadha','how old are you?'],['මට අවුරුදු විස්සයි','mata awurudhu wissayi','I am twenty'],['බැඳලද','baendhaladha','are you married?'],['ළමයි ඉන්නවද','lamayi innawadha','do you have children?']],ex:[
@@ -2971,7 +2997,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'බැඳලද',o:['බැඳලද','බැඳලා','කාලද','ඉන්නවද'],a:0},
 {t:'mc',q:'"Do you have children?" =',o:['ළමයි ඉන්නවද','ළමයි තියෙනවද','ළමයි කීයද','ළමයිද'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'මට අවුරුදු විස්සයි',o:['මට අවුරුදු විස්සයි','මට අවුරුදු තිහයි','විස්සයි','මට විස්ස'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['වයස කීයද','how old?'],['බැඳලද','married?'],['ළමයි ඉන්නවද','children?'],['මට අවුරුදු විස්සයි','I am 20']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['වයස කීයද','how old?'],['බැඳලද','married?'],['ළමයි ඉන්නවද','children?'],['මට අවුරුදු විස්සයි','I am 20']]},
+{t:'mc',q:'Review — which means "medicine"?',o:['බෙහෙත්','තුන','ගියා','වතුර'],a:0}]},
 
 /* --- Topic 66: not yet --- */
 {id:'si_yet',title:'Not yet: තාම',step:'learn',meta:'තාම නෑ — the gentlest answer',vocab:[['තාම','thaama','still / yet'],['තාම නෑ','thaama naee','not yet'],['මම තාම ඉගෙනගන්නවා','mama thaama igenagannawaa','I am still learning'],['ඉගෙනගන්නවා','igenagannawaa','learns'],['තාම කාලා නෑ','thaama kaalaa naee','have not eaten yet']],ex:[
@@ -3014,7 +3041,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'තාම නෑ',o:['තාම නෑ','තාම','නෑ','තව එකක්'],a:0},
 {t:'mc',q:'"Learns" =',o:['ඉගෙනගන්නවා','ගන්නවා','දන්නවා','හිතනවා'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'මම තාම ඉගෙනගන්නවා',o:['මම තාම ඉගෙනගන්නවා','මම ඉගෙනගන්නවා','තාම කාලා නෑ','මම තාම'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['තාම','still'],['තාම නෑ','not yet'],['ඉගෙනගන්නවා','learns'],['තාම ආවේ නෑ','not come yet']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['තාම','still'],['තාම නෑ','not yet'],['ඉගෙනගන්නවා','learns'],['තාම ආවේ නෑ','not come yet']]},
+{t:'mc',q:'Review — which means "gave"?',o:['දුන්නා','මම','ජනවාරි','ගියාද'],a:0}]},
 
 /* --- Topic 67: language talk --- */
 {id:'si_lang',title:'Language talk',step:'learn',meta:'හෙමින් කියන්න · ආයෙත් කියන්න',vocab:[['හෙමින්','hemin','slowly'],['හෙමින් කියන්න','hemin kiyanna','say it slowly'],['ආයෙත්','aayeth','again'],['ආයෙත් කියන්න','aayeth kiyanna','say it again'],['සිංහලෙන් මොකක්ද','sinhalen mokakdha','what is it in Sinhala?']],ex:[
@@ -3057,7 +3085,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'ආයෙත් කියන්න',o:['ආයෙත් කියන්න','හෙමින් කියන්න','ආයෙත්','කියන්න එපා'],a:0},
 {t:'mc',q:'"Say it slowly" =',o:['හෙමින් කියන්න','ආයෙත් කියන්න','හෙමින් යන්න','කියන්න'],a:0},
 {t:'li',q:'Listen — which word?',say:'ආයෙත්',o:['ආයෙත්','ඒත්','අද','ආවා'],a:0},
-{t:'match',q:'Match phrase and meaning',pairs:[['හෙමින්','slowly'],['ආයෙත්','again'],['සිංහලෙන්','in Sinhala'],['කියන්න','say it!']]}]},
+{t:'match',q:'Match phrase and meaning',pairs:[['හෙමින්','slowly'],['ආයෙත්','again'],['සිංහලෙන්','in Sinhala'],['කියන්න','say it!']]},
+{t:'mc',q:'Review — which means "said"?',o:['කිව්වා','කෑවද','නිදාගන්නවා','වතුර'],a:0}]},
 
 /* --- Topic 68: at home --- */
 {id:'si_house',title:'At home',step:'learn',meta:'කුස්සිය වත්ත බල්ලා පූසා',vocab:[['කුස්සිය','kussiya','kitchen'],['වත්ත','waththa','garden / compound'],['බල්ලා','ballaa','dog'],['පූසා','puusaa','cat'],['බල්ලා වත්තේ ඉන්නවා','ballaa waththee innawaa','the dog is in the garden']],ex:[
@@ -3100,7 +3129,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'බල්ලා',o:['බල්ලා','පූසා','බත්','ළමයි'],a:0},
 {t:'mc',q:'"Garden / compound" =',o:['වත්ත','කුස්සිය','පාර','ගම'],a:0},
 {t:'li',q:'Listen — which word?',say:'පූසා',o:['පූසා','පුතා','පාර','බල්ලා'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['කුස්සිය','kitchen'],['වත්ත','garden'],['බල්ලා','dog'],['පූසා','cat']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['කුස්සිය','kitchen'],['වත්ත','garden'],['බල්ලා','dog'],['පූසා','cat']]},
+{t:'mc',q:'Review — which means "to the left"?',o:['වමට','ඉන්න','නෙමෙයි','මල්ලී'],a:0}]},
 
 /* --- Topic 69: plans & the week --- */
 {id:'si_weekpl',title:'Plans & the week',step:'learn',meta:'අනිද්දා පෙරේදා සති අන්තය',vocab:[['අනිද්දා','anidhdhaa','day after tomorrow'],['පෙරේදා','pereedhaa','day before yesterday'],['සති අන්තය','sathi anthaya','the weekend'],['මම හෙට ගමට යනවා','mama heta gamata yanawaa','I am going to the village tomorrow']],ex:[
@@ -3143,7 +3173,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'පෙරේදා',o:['පෙරේදා','අනිද්දා','ඉරිදා','ඊයේ'],a:0},
 {t:'mc',q:'"The weekend" =',o:['සති අන්තය','සතිය','ඉරිදා','අන්තිමට'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'සති අන්තයේ අපි මුහුදට යමු',o:['සති අන්තයේ අපි මුහුදට යමු','අපි මුහුදට යමු','සති අන්තයේ','හෙට මුහුදට යනවා'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['පෙරේදා','2 days back'],['ඊයේ','yesterday'],['අනිද්දා','2 days ahead'],['සති අන්තය','weekend']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['පෙරේදා','2 days back'],['ඊයේ','yesterday'],['අනිද්දා','2 days ahead'],['සති අන්තය','weekend']]},
+{t:'mc',q:'Review — which means "to the right"?',o:['දකුණට','හවස','ඇවිල්ලා','යාළුවා'],a:0}]},
 
 /* --- Topic 70: tell your day --- */
 {id:'si_story',title:'Tell your story',step:'learn',meta:'ඉස්සෙල්ලා … ඊට පස්සේ … අන්තිමට',vocab:[['ඉස්සෙල්ලා','issellaa','first (of all)'],['ඊට පස්සේ','iita passee','after that'],['අන්තිමට','anthimata','finally / in the end'],['ඉස්සෙල්ලා මම කනවා','issellaa mama kanawaa','first I eat']],ex:[
@@ -3186,7 +3217,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which phrase?',say:'ඊට පස්සේ',o:['ඊට පස්සේ','ඉස්සෙල්ලා','අන්තිමට','පස්සේ'],a:0},
 {t:'mc',q:'"Finally we came home" =',o:['අන්තිමට අපි ගෙදර ආවා','ඉස්සෙල්ලා ගෙදර ආවා','අපි ගෙදර යමු','අන්තිමට ගෙදර යනවා'],a:0},
 {t:'li',q:'Listen — which word?',say:'අන්තිමට',o:['අන්තිමට','අනිද්දා','ඉස්සෙල්ලා','අද'],a:0},
-{t:'match',q:'Match sign-post and meaning',pairs:[['ඉස්සෙල්ලා','first'],['ඊට පස්සේ','after that'],['අන්තිමට','finally'],['තාම','still']]}]},
+{t:'match',q:'Match sign-post and meaning',pairs:[['ඉස්සෙල්ලා','first'],['ඊට පස්සේ','after that'],['අන්තිමට','finally'],['තාම','still']]},
+{t:'mc',q:'Review — which means "straight ahead"?',o:['කෙළින්ම','බොනවා','කො','අපේ'],a:0}]},
 
 /* ===================== ZONE 11 · LITTLE EXTRAS ===================== */
 /* --- Topic 71: pace --- */
@@ -3230,7 +3262,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'දැන්ම',o:['දැන්ම','දැන්','හෙමින්','තාම'],a:0},
 {t:'mc',q:'"Slowly slowly" =',o:['හෙමින් හෙමින්','ඉක්මනට','දැන්ම දැන්ම','පරක්කු'],a:0},
 {t:'li',q:'Listen — which word?',say:'ඉක්මනට',o:['ඉක්මනට','ඉස්සෙල්ලා','දැන්ම','එකට'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['හෙමින්','slowly'],['ඉක්මනට','quickly'],['පරක්කු','late'],['දැන්ම','right now']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['හෙමින්','slowly'],['ඉක්මනට','quickly'],['පරක්කු','late'],['දැන්ම','right now']]},
+{t:'mc',q:'Review — which means "January"?',o:['ජනවාරි','දෙක','ගෙදර','බෑ'],a:0}]},
 
 /* --- Topic 72: clothes --- */
 {id:'si_wear',title:'Clothes & the sarama',step:'learn',meta:'සරම කමිසය සපත්තු',vocab:[['ඇඳුම්','aendhum','clothes'],['සරම','sarama','sarong'],['කමිසය','kamisaya','shirt'],['සපත්තු','sapaththu','shoes'],['අඳිනවා','andhinawaa','wears / puts on']],ex:[
@@ -3273,7 +3306,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which word?',say:'සරම',o:['සරම','සපත්තු','කමිසය','සතිය'],a:0},
 {t:'mc',q:'"Wears" =',o:['අඳිනවා','අහනවා','ගන්නවා','උයනවා'],a:0},
 {t:'li',q:'Listen — which word?',say:'සපත්තු',o:['සපත්තු','සරම','ඇඳුම්','සල්ලි'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['ඇඳුම්','clothes'],['සරම','sarong'],['සපත්තු','shoes'],['අඳිනවා','wears']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['ඇඳුම්','clothes'],['සරම','sarong'],['සපත්තු','shoes'],['අඳිනවා','wears']]},
+{t:'mc',q:'Review — which means "August"?',o:['අගෝස්තු','කිරි','හිටියා','කළු'],a:0}]},
 
 /* --- Topic 73: animals --- */
 {id:'si_animal',title:'Animals',step:'learn',meta:'අලියා වඳුරා කුරුල්ලා හරකා',vocab:[['අලියා','aliyaa','elephant'],['වඳුරා','wandhuraa','monkey'],['කුරුල්ලා','kurullaa','bird'],['හරකා','harakaa','cow / bull'],['අලියා ඉන්නවා','aliyaa innawaa','there is an elephant']],ex:[
@@ -3316,7 +3350,8 @@ const SI_LESSONS=[
 {t:'li',q:'Listen — which animal?',say:'වඳුරා',o:['වඳුරා','අලියා','කුරුල්ලා','හරකා'],a:0},
 {t:'mc',q:'"Bird" =',o:['කුරුල්ලා','වඳුරා','පූසා','හරකා'],a:0},
 {t:'li',q:'Listen — which animal?',say:'අලියා',o:['අලියා','හරකා','බල්ලා','වඳුරා'],a:0},
-{t:'match',q:'Match animal and meaning',pairs:[['අලියා','elephant'],['වඳුරා','monkey'],['කුරුල්ලා','bird'],['හරකා','cow']]}]},
+{t:'match',q:'Match animal and meaning',pairs:[['අලියා','elephant'],['වඳුරා','monkey'],['කුරුල්ලා','bird'],['හරකා','cow']]},
+{t:'mc',q:'Review — which means "December"?',o:['දෙසැම්බර්','කෑවද','වෙලාව','සල්ලි'],a:0}]},
 
 /* --- Topic 74: nature --- */
 {id:'si_nature',title:'Nature',step:'learn',meta:'කන්ද ගඟ වැව ගස මල',vocab:[['කන්ද','kandha','mountain / hill'],['ගඟ','ganga','river'],['වැව','waewa','tank / lake'],['ගස','gasa','tree'],['මල','mala','flower']],ex:[

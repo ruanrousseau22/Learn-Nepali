@@ -1455,7 +1455,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I am at home"',a:['म','घरमा','छु'],r:'ma gharma chhu',pool:['घरमा','छु','म','छ']},
     {t:'mc',q:'"at the market" =',o:['बजारमा','बजारबाट','बजारको','बजारलाई'],a:0},
     {t:'tr',q:'Type "market"',a:'बजार',r:'bajaar'},
-  ]},
+{t:'mc',q:'Review — which means "Hello (respectful)"?',o:['नमस्कार','पहेँलो','बजार','पचास'],a:0}]},
   {id:'pbata',title:'Postposition बाट',step:'learn',meta:'from',vocab:[['बाट','baata','from'],['कहाँबाट','kahaan-baata','from where'],['घरबाट','ghar-baata','from home'],['नेपालबाट','nepaal-baata','from Nepal'],['अमेरिका','amerikaa','America']],ex:[
     {t:'note',tag:'Postpositions',q:'बाट = "from"',body:'<p>Same idea as मा, but <span class="deva">बाट</span> means <b>from</b> (a starting point or origin).</p>',eg:[['नेपालबाट','nepaal-baata','from Nepal'],['घरबाट','ghar-baata','from home'],['कहाँबाट?','kahaan-baata?','from where?']]},
     {t:'mc',q:'What does "बाट" mean?',o:['in','from','with','of'],a:1},
@@ -1516,7 +1516,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I am from Nepal"',a:['म','नेपालबाट','हुँ'],r:'ma nepaal-baata hun',pool:['नेपालबाट','हुँ','म','हो']},
     {t:'li',q:'What did you hear?',say:'कहाँबाट',r:'Kahaan-baata',o:['from where','to where','where','at where'],a:0},
     {t:'mc',q:'बजार + बाट =',o:['बजारबाट','बजारमा','बजारको','बजारलाई'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "eight"?',o:['आठ','होइन','नेपालबाट','मसँग'],a:0}]},
   {id:'plai',title:'Postposition लाई',step:'learn',meta:'to / for (object)',vocab:[['लाई','laai','to / for (object)'],['मलाई','malai','to me / for me'],['तिमीलाई','timilai','to you'],['उसलाई','uslai','to him/her'],['मन पर्छ','man parchha','to like'],['भोक','bhok','hunger']],ex:[
     {t:'note',tag:'Key grammar',q:'लाई marks the receiver',body:'<p><span class="deva">लाई</span> marks who <b>receives</b> the action ("to/for someone") — and it shows up in many feeling phrases too.</p>',eg:[['मलाई','malai','to/for me'],['मलाई चिया मन पर्छ','malai chiyaa man parchha','I like tea'],['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry']]},
     {t:'mc',q:'"लाई" often marks…',o:['the place','the object or "to" someone','the time','a question'],a:1},
@@ -1576,7 +1576,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I like water"',a:['मलाई','पानी','मन','पर्छ'],r:'malai paani man parchha',pool:['पर्छ','पानी','मलाई','मन','घर','नाम']},
     {t:'fill',q:'Add the postposition',s:'तिमी + ___ = to you',o:['लाई','मा','को','बाट'],a:0},
     {t:'mc',q:'मन पर्छ means…',o:['to like','to have','to go','to be'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "nine"?',o:['नौ','यो','घरबाट','दिन'],a:0}]},
   {id:'pko',title:'Postposition को',step:'learn',meta:'of / possessive',vocab:[['को','ko','of (possessive)'],['मेरो','mero','my / mine'],['तिम्रो','timro','your'],['उसको','usko','his / her'],['हाम्रो','haamro','our'],['तपाईंको','tapaiko','your (polite)']],ex:[
     {t:'note',tag:'Key grammar',q:'को = "of" (belongs to)',body:'<p><span class="deva">को</span> shows possession: <span class="deva">रामको घर</span> = "Ram\u0027s house" (house of Ram).</p><p>The pronouns have their own possessive forms you should memorise:</p>',eg:[['मेरो','mero','my / mine'],['तिम्रो','timro','your'],['उसको','usko','his/her'],['हाम्रो','haamro','our']]},
     {t:'mc',q:'What does "रामको घर" mean?',d:'रामको घर',r:'Raamko ghar',o:['Ram goes home','House of Ram','House to Ram','From Ram'],a:1},
@@ -1636,7 +1636,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "our school"',a:['हाम्रो','विद्यालय'],r:'haamro vidyaalaya',pool:['विद्यालय','हाम्रो','मेरो']},
     {t:'tr',q:'Type "our"',a:'हाम्रो',r:'haamro'},
     {t:'mc',q:'उसको means…',o:['his / her','my','your','our'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "11"?',o:['एघार','१०','बाह्र','पन्ध्र'],a:0}]},
   {id:'places',title:'Places',step:'learn',meta:'Around town',vocab:[['घर','ghar','home'],['पसल','pasal','shop'],['अस्पताल','aspataal','hospital'],['मन्दिर','mandir','temple'],['विद्यालय','vidyaalaya','school'],['बैंक','bank','bank'],['रेस्टुरेन्ट','restaurant','restaurant']],ex:[
     {t:'note',tag:'Culture',q:'मन्दिर everywhere',body:'<p>Temples (<span class="deva">मन्दिर</span>) are central to daily life in Nepal — you will pass many. Kathmandu valley alone has thousands.</p>'},
     {t:'mc',q:'What is "अस्पताल"?',d:'अस्पताल',r:'Aspataal',o:['School','Hospital','Market','Temple'],a:1},
@@ -1696,7 +1696,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I am at the temple"',a:['म','मन्दिरमा','छु'],r:'ma mandirma chhu',pool:['मन्दिरमा','छु','म','छ']},
     {t:'li',q:'What did you hear?',say:'रेस्टुरेन्ट',o:['Restaurant','Hospital','Shop','Temple'],a:0},
     {t:'tr',q:'Type "hospital"',a:'अस्पताल',r:'aspataal'},
-  ]},
+{t:'mc',q:'Review — which means "12"?',o:['बाह्र','एघार','पन्ध्र','१०'],a:0}]},
   {id:'directions',title:'Directions',step:'learn',meta:'Getting around',vocab:[['दायाँ','daayaa','right'],['बायाँ','baayaa','left'],['सीधा','seedhaa','straight'],['पछाडि','pachhaadi','behind / backward'],['नजिक','najik','near'],['टाढा','taadhaa','far']],ex:[
     {t:'note',tag:'Useful',q:'Asking the way',body:'<p>To ask where something is: <span class="deva">___ कहाँ छ?</span> ("Where is ___?"). Then listen for these direction words.</p>',eg:[['दायाँ / बायाँ','daayaa / baayaa','right / left'],['सीधा','seedhaa','straight'],['नजिक / टाढा','najik / taadhaa','near / far']]},
     {t:'mc',q:'What does "दायाँ" mean?',d:'दायाँ',r:'Daayaa',o:['Left','Right','Straight','Back'],a:1},
@@ -1757,7 +1757,7 @@ const NE_LESSONS = [
     {t:'mc',q:'Opposite of दायाँ?',o:['बायाँ','सीधा','नजिक','टाढा'],a:0},
     {t:'wb',q:'Build "the bank is near"',a:['बैंक','नजिक','छ'],r:'bank najik chha',pool:['नजिक','बैंक','छ','टाढा']},
     {t:'tr',q:'Type "near"',a:'नजिक',r:'najik'},
-  ]},
+{t:'mc',q:'Review — which means "15"?',o:['पन्ध्र','१०','बाह्र','एघार'],a:0}]},
   {id:'verbs',title:'Common verbs',step:'learn',meta:'Action words (-नु)',vocab:[['खानु','khaanu','to eat'],['पिउनु','piunu','to drink'],['जानु','jaanu','to go'],['आउनु','aaunu','to come'],['गर्नु','garnu','to do'],['हेर्नु','hernu','to look / watch'],['सुत्नु','sutnu','to sleep'],['बस्नु','basnu','to live / stay / sit'],['पढ्नु','padhnu','to read / study'],['बोल्नु','bolnu','to speak']],ex:[
     {t:'note',tag:'Grammar',q:'Every verb ends in -नु',body:'<p>The dictionary form of a Nepali verb always ends in <span class="deva">-नु</span> (like "to ___" in English).</p><p>You drop -नु and add endings to conjugate. First, just learn the verbs themselves.</p>',eg:[['खानु','khaanu','to eat'],['जानु','jaanu','to go'],['गर्नु','garnu','to do']]},
     {t:'mc',q:'What does "खानु" mean?',d:'खानु',r:'Khaanu',o:['to go','to eat','to sleep','to drink'],a:1},
@@ -1818,7 +1818,7 @@ const NE_LESSONS = [
     {t:'tr',q:'Type "to read / study"',a:'पढ्नु',r:'padhnu'},
     {t:'li',q:'What did you hear?',say:'बस्नु',r:'Basnu',o:['to sit / live','to sleep','to come','to read'],a:0},
     {t:'mc',q:'Which means "to speak"?',o:['बोल्नु','हेर्नु','सुत्नु','आउनु'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "thirty"?',o:['तीस','दिन','हजार','सुत्नु'],a:0}]},
   {id:'presI',title:'Present — I',step:'learn',meta:'म ___छु',vocab:[['खान्छु','khaanchu','I eat'],['जान्छु','jaanchu','I go'],['पिउँछु','piunchu','I drink'],['गर्छु','garchu','I do'],['पढ्छु','padhchu','I study'],['बस्छु','baschu','I sit / stay'],['भात','bhaat','rice']],ex:[
     {t:'note',tag:'Grammar',q:'"I do" = stem + छु',body:'<p>For <b>म (I)</b>, drop -नु and add <span class="deva">-छु</span>.</p><p>Also note Nepali word order: the <b>verb comes last</b>. "I eat rice" = I rice eat = <span class="deva">म भात खान्छु</span>.</p>',eg:[['खानु → खान्छु','khaanu → khaanchu','I eat'],['जानु → जान्छु','jaanu → jaanchu','I go'],['गर्नु → गर्छु','garnu → garchu','I do']]},
     {t:'mc',q:'"I eat"',o:['म खान्छु','म खानु','म खाने','मैले खाएँ'],a:0},
@@ -1879,7 +1879,7 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'पढ्छु',r:'Padhchu',o:['I study','I sleep','I sit','I drink'],a:0},
     {t:'mc',q:'"I drink" =',o:['पिउँछु','पिउँछ','पिउनु','पिउँछन्'],a:0},
     {t:'fill',q:'Make it "I"',s:'बस्नु → म ___ = I stay',o:['बस्छु','बस्छ','बस्छन्','बस्नु'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "forty"?',o:['चालीस','एघार','हेर्नु','सुत्नु'],a:0}]},
   {id:'presOth',title:'Present — others',step:'learn',meta:'he / she / they / we',vocab:[['खान्छ','khaanchha','he eats'],['खान्छिन्','khaanchin','she eats (resp.)'],['खान्छन्','khaanchan','they eat'],['खान्छौं','khaanchaun','we eat'],['खान्छौ','khaanchau','you eat (fam.)']],ex:[
     {t:'note',tag:'Grammar',q:'Endings change by subject',body:'<p>The verb ending shifts with who is doing it:</p>',eg:[['ऊ खान्छ','u khaanchha','he/she eats'],['उनी खान्छिन्','uni khaanchin','she eats (resp.)'],['उनीहरू खान्छन्','uniharu khaanchan','they eat'],['हामी खान्छौं','haami khaanchaun','we eat']],tip:'-छ = he/she, -छन् = they, -छौं = we, -छौ = you (familiar).'},
     {t:'mc',q:'"He eats"',o:['ऊ खान्छ','म खान्छु','ऊ खान्छु','उनीहरू खान्छन्'],a:0},
@@ -1940,7 +1940,7 @@ const NE_LESSONS = [
     {t:'fill',q:'For तिमी (you, fam.)',s:'तिमी ___ = You eat',o:['खान्छौ','खान्छ','खान्छु','खान्छौं'],a:0},
     {t:'li',q:'What did you hear?',say:'खान्छौं',r:'Khaanchaun',o:['we eat','they eat','he eats','you eat'],a:0},
     {t:'mc',q:'Ending for हामी (we)?',o:['-छौं','-छ','-छु','-छन्'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "fifty"?',o:['पचास','नेपालबाट','तीस','हामी'],a:0}]},
   {id:'presNeg',title:'Present negative',step:'learn',meta:'I do not…',vocab:[['खान्न','khaanna','I do not eat'],['जान्न','jaanna','I do not go'],['गर्दिन','gardina','I do not do'],['बुझ्दिन','bujhdina','I do not understand'],['खाँदैन','khaadaina','he does not eat']],ex:[
     {t:'note',tag:'Grammar',q:'Negative present',body:'<p>For <b>म (I)</b>, the negative ending is <span class="deva">-न्न</span> (or -दिन). For <b>he/she</b>, it is <span class="deva">-दैन</span>.</p>',eg:[['म खान्न','ma khaanna','I do not eat'],['म जान्न','ma jaanna','I do not go'],['ऊ खाँदैन','u khaadaina','he does not eat']]},
     {t:'mc',q:'"I do not eat"',o:['म खान्न','म खान्छु','ऊ खाँदैन','म खाएँ'],a:0},
@@ -2000,7 +2000,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I do not eat rice"',a:['म','भात','खान्न'],r:'ma bhaat khaanna',pool:['भात','खान्न','म','खान्छु']},
     {t:'li',q:'What did you hear?',say:'जान्न',r:'Jaanna',o:['I do not go','I go','I do not come','we do not go'],a:0},
     {t:'tr',q:'Type "I do not eat"',a:'खान्न',r:'khaanna'},
-  ]},
+{t:'mc',q:'Review — which means "No / Not allowed"?',o:['हुँदैन','जानु','पढ्नु','खान्छ'],a:0}]},
   {id:'food',title:'Food & eating',step:'learn',meta:'Daal bhaat & more',vocab:[['दालभात','daal bhaat','lentils & rice (staple meal)'],['भात','bhaat','rice'],['दाल','daal','lentil soup'],['तरकारी','tarkaari','vegetable curry'],['रोटी','roti','flatbread'],['मासु','maasu','meat'],['दूध','dudh','milk'],['मीठो','mitho','tasty'],['भोक','bhok','hunger']],ex:[
     {t:'note',tag:'Culture',q:'दालभात — the heart of Nepali food',body:'<p><span class="deva">दालभात</span> (lentils + rice + vegetable curry) is eaten daily, often twice a day. A common saying: <i>"daal bhaat power, 24 hour!"</i></p>'},
     {t:'mc',q:'What is "दालभात"?',d:'दालभात',r:'Daal bhaat',o:['Bread & tea','Lentils & rice','Meat curry','Vegetables'],a:1},
@@ -2061,7 +2061,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I eat rice"',a:['म','भात','खान्छु'],r:'ma bhaat khaanchu',pool:['भात','खान्छु','म','मासु']},
     {t:'li',q:'What did you hear?',say:'रोटी',r:'Roti',o:['Rice','Flatbread','Meat','Milk'],a:1},
     {t:'tr',q:'Type "flatbread"',a:'रोटी',r:'roti'},
-  ]},
+{t:'mc',q:'Review — which means "Please"?',o:['कृपया','नयाँ','पढ्छु','कोठा'],a:0}]},
   {id:'drinks',title:'Drinks',step:'learn',meta:'चिया, पानी & being thirsty',vocab:[['चिया','Chiyaa','tea'],['कफी','Kaphi','coffee'],['पानी','Paani','water'],['तातो','Taato','hot (temperature)'],['चिसो','Chiso','cold'],['तिर्खा लाग्यो','Tirkhaa laagyo','(I am) thirsty'],['पिउनु','Piunu','to drink']],ex:[
     {t:'note',tag:'Chiyaa culture',q:'Tea is everywhere',body:'<p><span class="deva">चिया</span> (milk tea) is offered constantly in Nepal — accepting it is the friendly thing to do.</p><p>You already know <span class="deva">पानी</span> (water) and <span class="deva">दूध</span> (milk); now add <span class="deva">कफी</span> (coffee).</p>',eg:[['चिया','chiyaa','tea'],['कफी','kaphi','coffee'],['पानी','paani','water']]},
     {t:'mc',q:'What does चिया mean?',d:'चिया',r:'Chiyaa',o:['water','tea','coffee','milk'],a:1},
@@ -2122,7 +2122,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I drink tea"',a:['म','चिया','पिउँछु'],r:'ma chiyaa piunchu',pool:['चिया','पिउँछु','म','खान्छु']},
     {t:'li',q:'What did you hear?',say:'कफी',r:'Kaphi',o:['Coffee','Tea','Milk','Water'],a:0},
     {t:'fill',q:'Hot or cold?',s:'___ पानी = cold water',o:['चिसो','तातो','रातो','ठूलो'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "afternoon"?',o:['दिउँसो','मासु','दायाँ','सय'],a:0}]},
   {id:'family',title:'Family',step:'learn',meta:'Relations',vocab:[['आमा','aama','mother'],['बुबा','buba','father'],['दिदी','didi','older sister'],['बहिनी','bahini','younger sister'],['दाइ','dai','older brother'],['भाइ','bhai','younger brother'],['छोरा','chhora','son'],['छोरी','chhori','daughter'],['परिवार','pariwaar','family']],ex:[
     {t:'note',tag:'Culture',q:'Age matters in Nepali family words',body:'<p>Nepali distinguishes <b>older vs younger</b> siblings: <span class="deva">दिदी</span> (older sister) vs <span class="deva">बहिनी</span> (younger sister); <span class="deva">दाइ</span> (older brother) vs <span class="deva">भाइ</span> (younger brother).</p><p>These words are also used warmly for non-relatives — a shopkeeper might call you दाइ or दिदी.</p>'},
     {t:'mc',q:'What does "आमा" mean?',d:'आमा',r:'Aama',o:['Father','Mother','Sister','Brother'],a:1},
@@ -2182,7 +2182,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "my mother"',a:['मेरो','आमा'],r:'mero aama',pool:['आमा','मेरो','बुबा']},
     {t:'li',q:'What did you hear?',say:'छोरी',r:'Chhori',o:['Daughter','Son','Sister','Mother'],a:0},
     {t:'mc',q:'Older sister =',o:['दिदी','बहिनी','आमा','छोरी'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "Evening"?',o:['साँझ','पसलमा','सीधा','सेतो'],a:0}]},
   {id:'routine',title:'Daily routine',step:'learn',meta:'Time + verbs together',vocab:[['हरेक दिन','harek din','every day'],['बिहान','bihaana','morning'],['राति','raati','night'],['काम','kaam','work'],['काम गर्नु','kaam garnu','to work']],ex:[
     {t:'note',tag:'Word order',q:'Time comes early, verb comes last',body:'<p>A typical Nepali sentence: <b>Subject — Time — Object — Verb</b>.</p><p><span class="deva">म बिहान चिया पिउँछु</span> = "I (in the) morning tea drink".</p>'},
     {t:'wb',q:'Build: "I eat in the morning"',a:['म','बिहान','खान्छु'],r:'Ma bihana khanchu',pool:['म','बिहान','खान्छु','राति','सुत्छु']},
@@ -2243,7 +2243,7 @@ const NE_LESSONS = [
     {t:'wb',q:'Build "I work every day"',a:['म','हरेक','दिन','काम','गर्छु'],r:'ma harek din kaam garchu',pool:['काम','पानी','दिन','म','मेरो','गर्छु','हरेक']},
     {t:'tr',q:'Type "every day"',a:'हरेक दिन',r:'harek din'},
     {t:'mc',q:'What does this mean?',d:'म हरेक दिन काम गर्छु',r:'ma harek din kaam garchu',o:['I work every day','I sleep every day','I eat every day','I read every day'],a:0},
-  ]},
+{t:'mc',q:'Review — which means "these"?',o:['यी','पछाडि','यो','तीन'],a:0}]},
   {id:'time',title:'Telling time',step:'learn',meta:'Clock, days & calendar',vocab:[['कति बज्यो?','kati bajyo?','what time is it?'],['एक बज्यो','ek bajyo','it is one o\u0027clock'],['बजे','baje','o\u0027clock (at)'],['साढे','saadhe','half past'],['घण्टा','ghantaa','hour'],['मिनेट','minet','minute'],['हप्ता','haptaa','week'],['महिना','mahinaa','month'],['आइतबार','aaitabaar','Sunday'],['शनिबार','shanibaar','Saturday']],ex:[
     {t:'note',tag:'Grammar',q:'Asking and telling the time',body:'<p>"What time is it?" is <span class="deva">कति बज्यो?</span> (literally "how much has struck?").</p><p>To answer, use the number + <span class="deva">बज्यो</span>. For "at ___ o\u0027clock" use <span class="deva">बजे</span>.</p>',eg:[['कति बज्यो?','kati bajyo?','what time is it?'],['तीन बज्यो','teen bajyo','it is 3 o\u0027clock'],['तीन बजे','teen baje','at 3 o\u0027clock']]},
     {t:'mc',q:'How do you ask "What time is it?"',o:['कति बज्यो?','कहिले आउँछ?','कहाँ छ?','के हो?'],a:0},
@@ -2305,7 +2305,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "It is five o’clock"',a:['पाँच','बज्यो'],r:'Paanch bajyo',pool:['पाँच','बज्यो','बजे','साढे']},
     {t:'mc',q:'Which means "Sunday"?',o:['आइतबार','शनिबार','सोमबार','महिना'],a:0},
     {t:'tr',q:'Translate: "It is three o’clock"',a:'तीन बज्यो',r:'Teen bajyo'}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "tall / high"?',o:['अग्लो','दायाँ','बहिनी','आठ'],a:0}]},
   {id:'week',title:'Days & when',step:'learn',meta:'आज, भोलि & the week',vocab:[['आज','Aaja','today'],['भोलि','Bholi','tomorrow'],['हिजो','Hijo','yesterday'],['अहिले','Ahile','now'],['सोमबार','Sombaar','Monday'],['मङ्गलबार','Mangalbaar','Tuesday'],['बिहीबार','Bihibaar','Thursday'],['शुक्रबार','Shukrabaar','Friday']],ex:[
     {t:'note',tag:'Today, tomorrow, yesterday',q:'The words you will use daily',body:'<p><span class="deva">आज</span> today · <span class="deva">भोलि</span> tomorrow · <span class="deva">हिजो</span> yesterday · <span class="deva">अहिले</span> now.</p>',eg:[['आज','aaja','today'],['भोलि','bholi','tomorrow'],['हिजो','hijo','yesterday'],['अहिले','ahile','now']]},
     {t:'mc',q:'What does आज mean?',d:'आज',r:'Aaja',o:['today','tomorrow','yesterday','now'],a:0},
@@ -2365,7 +2366,8 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "Tomorrow is Saturday"',s:'भोलि ___ हो',o:['शनिबार','हिजो','अहिले','महिना'],a:0},
     {t:'mc',q:'Days of the week end in…',o:['-बार','-मा','-को','-ले'],a:0},
     {t:'mc',q:'Which means "Friday"?',o:['शुक्रबार','बिहीबार','सोमबार','आइतबार'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "blue"?',o:['निलो','किताब','मन्दिर','रातो'],a:0}]},
   {id:'past1',title:'Past — I',step:'learn',meta:'म ___एँ',vocab:[['गएँ','gaen','I went'],['आएँ','aaen','I came'],['खाएँ','khaaen','I ate'],['गरेँ','garen','I did'],['मैले','maile','I (as the doer)']],ex:[
     {t:'note',tag:'Grammar',q:'Past tense for "I"',body:'<p>For <b>म (I)</b> in the past, the ending is <span class="deva">-एँ</span>.</p><p>With action verbs that take an object, म becomes <span class="deva">मैले</span> ("I" + the doer marker -ले): <span class="deva">मैले भात खाएँ</span> = "I ate rice".</p>',eg:[['म गएँ','ma gaen','I went'],['म आएँ','ma aaen','I came'],['मैले खाएँ','maile khaaen','I ate']]},
     {t:'mc',q:'"I ate"',o:['मैले खाएँ','म खान्छु','म खानेछु','म खान्न'],a:0},
@@ -2425,7 +2427,8 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'म घर गएँ',r:'Ma ghar gaen',o:['I went home','I go home','I will go home','He went home'],a:0},
     {t:'tr',q:'Translate: "I did" (with मैले)',a:'मैले गरेँ',r:'Maile garen'},
     {t:'mc',q:'मैले marks me as the…',o:['doer of the action','place','time','owner'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "green"?',o:['हरियो','खानु','खान्छु','बजार'],a:0}]},
   {id:'past2',title:'Past — others',step:'learn',meta:'he / she / they',vocab:[['गयो','gayo','he went'],['गइन्','gain','she went (resp.)'],['गए','gae','they went'],['गयौं','gayaun','we went'],['आयो','aayo','he came']],ex:[
     {t:'note',tag:'Grammar',q:'Past for others',body:'<p>Endings in the past:</p>',eg:[['ऊ गयो','u gayo','he went'],['उनी गइन्','uni gain','she went (resp.)'],['उनीहरू गए','uniharu gae','they went'],['हामी गयौं','haami gayaun','we went']]},
     {t:'mc',q:'"He went"',o:['ऊ गयो','म गएँ','ऊ जान्छ','उनीहरू गए'],a:0},
@@ -2485,7 +2488,8 @@ const NE_LESSONS = [
     {t:'mc',q:'Which means "they went"?',o:['उनीहरू गए','ऊ गयो','हामी गयौं','म गएँ'],a:0},
     {t:'fill',q:'Complete: "We went to the market"',s:'हामी बजार ___',o:['गयौं','गयो','गए','गएँ'],a:0},
     {t:'mc',q:'"he went" ends in…',o:['-यो','-एँ','-ए','-यौं'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "white"?',o:['सेतो','कृपया','मसँग','सँग'],a:0}]},
   {id:'ergative',title:'The doer — ले',step:'learn',meta:'मैले … past-tense subject',vocab:[['मैले','maile','I (as the doer)'],['उसले','usle','he/she (as doer)'],['तिमीले','timile','you (doer, familiar)'],['हामीले','haamile','we (as doer)'],['तपाईंले','tapaile','you (doer, polite)'],['मैले भात खाएँ','maile bhaat khaaen','I ate rice'],['उसले के गर्यो?','usle ke garyo?','what did he do?']],ex:[
     {t:'note',tag:'Key grammar',q:'In the past, the doer takes ले',body:'<p>When you <b>do something to something</b> in the past, the doer gets the ending <span class="deva">ले</span>.</p><p>So <span class="deva">म</span> (I) becomes <span class="deva">मैले</span> when I am the one acting:</p>',eg:[['मैले भात खाएँ','maile bhaat khaaen','I ate rice'],['उसले पानी पियो','usle paani piyo','he drank water'],['तपाईंले के भन्नुभयो?','tapaile ke bhannubhayo?','what did you say?']],tip:'For "went / came" (no object) you usually skip ले: म गएँ — not मैले गएँ.'},
     {t:'mc',q:'"I ate rice" — which is right?',o:['मैले भात खाएँ','म भात खाएँ','मलाई भात खाएँ','मेरो भात खाएँ'],a:0},
@@ -2544,7 +2548,8 @@ const NE_LESSONS = [
     {t:'mc',q:'ले vs लाई:',o:['doer vs to/for','this vs that','here vs there','my vs your'],a:0},
     {t:'li',q:'What did you hear?',say:'मैले',r:'Maile',o:['I (doer)','to me','my','we'],a:0},
     {t:'mc',q:'"you (polite) as doer" =',o:['तपाईंले','तपाईंको','तपाईंलाई','तपाईं'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "yellow"?',o:['पहेँलो','आएँ','सुत्नु','मसँग'],a:0}]},
   {id:'future',title:'Future tense',step:'learn',meta:'म ___नेछु',vocab:[['जानेछु','jaanechu','I will go'],['खानेछु','khaanechu','I will eat'],['गर्नेछु','garnechu','I will do'],['आउनेछु','aaunechu','I will come'],['भोलि','bholi','tomorrow']],ex:[
     {t:'note',tag:'Grammar',q:'Future = stem + नेछु',body:'<p>For a clear future with <b>म</b>, add <span class="deva">-नेछु</span>. In everyday speech, the plain present (खान्छु) is also often used for the future when the time is clear.</p>',eg:[['जानु → जानेछु','jaanu → jaanechu','I will go'],['खानु → खानेछु','khaanu → khaanechu','I will eat'],['गर्नु → गर्नेछु','garnu → garnechu','I will do']]},
     {t:'mc',q:'"I will eat"',o:['म खानेछु','म खाएँ','म खान्छु','मैले खाएँ'],a:0},
@@ -2604,7 +2609,8 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'म भात खानेछु',r:'Ma bhaat khaanechu',o:['I will eat rice','I ate rice','I eat rice','He will eat rice'],a:0},
     {t:'tr',q:'Translate: "I will do"',a:'म गर्नेछु',r:'Ma garnechu'},
     {t:'mc',q:'"I will come" =',o:['म आउनेछु','म आएँ','म आउँछु','ऊ आयो'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "color"?',o:['रङ','दिदी','आमा','साथी'],a:0}]},
   {id:'quest1',title:'Question words',step:'learn',meta:'what, who, why…',vocab:[['के','ke','what'],['को','ko','who'],['कहाँ','kahaan','where'],['कहिले','kahile','when'],['किन','kina','why'],['कति','kati','how much / how many'],['कसरी','kasari','how'],['कुन','kun','which']],ex:[
     {t:'note',tag:'Tip',q:'Most question words start with क',body:'<p>Handy pattern: nearly all Nepali question words begin with <span class="deva">क</span> — के, को, कहाँ, कहिले, किन, कति, कसरी, कुन.</p>'},
     {t:'mc',q:'What does "के" mean?',d:'के',r:'Ke',o:['Who','What','Why','When'],a:1},
@@ -2664,7 +2670,8 @@ const NE_LESSONS = [
     {t:'li',q:'Which question word did you hear?',say:'कहिले',r:'Kahile',o:['when','what','where','why'],a:0},
     {t:'mc',q:'Which means "which"?',o:['कुन','को','के','कति'],a:0},
     {t:'mc',q:'Most question words start with…',o:['क','म','त','छ'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "time"?',o:['समय','दायाँ','कोठा','काठमाडौं'],a:0}]},
   {id:'quest2',title:'Asking questions',step:'learn',meta:'Full questions',vocab:[['तपाईंको नाम के हो?','tapaiko naam ke ho?','what is your name?'],['कहाँ जानुहुन्छ?','kahaan jaanuhunchha?','where are you going?'],['कति भयो?','kati bhayo?','how much was it?'],['के भयो?','ke bhayo?','what happened?']],ex:[
     {t:'note',tag:'Grammar',q:'Two ways to ask',body:'<p>For <b>information</b> questions, drop in a क-word: <span class="deva">तपाईं कहाँ जानुहुन्छ?</span></p><p>For <b>yes/no</b> questions, you often just raise your tone at the end — no extra word needed.</p>'},
     {t:'tr',q:'Translate: "What is your name?" (polite)',a:'तपाईंको नाम के हो?',r:'Tapaiko naam ke ho',h:'reuse नाम + के हो'},
@@ -2725,7 +2732,8 @@ const NE_LESSONS = [
     {t:'tr',q:'Translate: "Where are you from?" (polite)',a:'तपाईं कहाँबाट हुनुहुन्छ?',r:'Tapai kahaan-baata hunuhunchha'},
     {t:'mc',q:'A yes/no question is often made by…',o:['rising tone','adding मा','adding को','putting र first'],a:0},
     {t:'fill',q:'Complete: "What is this?"',s:'यो ___ हो?',o:['के','को','कति','कहाँ'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "in the room"?',o:['कोठामा','बजे','१०','किन'],a:0}]},
   {id:'cansk',title:'Can (ability)',step:'learn',meta:'... सक्नु = to be able',vocab:[['सक्नु','saknu','to be able / can'],['म ... सक्छु','ma ... sakchhu','I can ...'],['सक्दिनँ','sakdinan','(I) cannot'],['बोल्न','bolna','speak (form before सक्नु)'],['पढ्न','padhna','read'],['लेख्न','lekhna','write'],['नेपाली बोल्न सक्छु','Nepali bolna sakchhu','I can speak Nepali']],ex:[
     {t:'note',tag:'Saying "I can"',q:'Ability with सक्नु',body:'<p>To say you <b>can</b> do something, change the verb ending <span class="deva">-नु</span> to <span class="deva">-न</span>, then add <span class="deva">सक्छु</span> (can).</p>',eg:[['गर्नु → गर्न सक्छु','garna sakchhu','I can do'],['जानु → जान सक्छु','jaana sakchhu','I can go'],['खानु → खान सक्छु','khaana sakchhu','I can eat']]},
     {t:'mc',q:'How do you say "I can speak"?',o:['बोल्न सक्छु','बोल्छु','बोल्न पर्छ','बोल्दै छु'],a:0},
@@ -2789,7 +2797,8 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'म जान सक्दिनँ',r:'Ma jaana sakdinan',o:['I cannot go','I can go','I must go','I am going'],a:0},
     {t:'mc',q:'Before सक्छु, the verb ends in…',o:['-न','-नु','-दै','-छु'],a:0},
     {t:'tr',q:'Translate: "I can eat"',a:'म खान सक्छु',r:'Ma khaana sakchhu'}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "from home"?',o:['घरबाट','आमा','महिना','दायाँ'],a:0}]},
   {id:'must',title:'Have to (must)',step:'learn',meta:'... पर्छ = must / have to',vocab:[['पर्नु','parnu','must / have to'],['पर्छ','parchha','must / has to'],['पर्दैन','pardaina','do not have to'],['मलाई जानुपर्छ','malai jaanuparchha','I have to go'],['गर्नुपर्छ','garnuparchha','have to do'],['पढ्नुपर्छ','padhnuparchha','have to study'],['किन्नुपर्छ','kinnuparchha','have to buy']],ex:[
     {t:'note',tag:'Saying "I have to"',q:'Obligation with पर्छ',body:'<p>To say you <b>have to</b> do something, keep the full verb (<span class="deva">-नु</span>) and add <span class="deva">पर्छ</span>. The person takes <span class="deva">लाई</span>.</p>',eg:[['मलाई जानुपर्छ','malai jaanuparchha','I have to go'],['मलाई गर्नुपर्छ','malai garnuparchha','I have to do it'],['मलाई पढ्नुपर्छ','malai padhnuparchha','I have to study']]},
     {t:'mc',q:'How do you say "I have to go"?',o:['मलाई जानुपर्छ','म जान सक्छु','म जाँदै छु','म जान्छु'],a:0},
@@ -2853,7 +2862,8 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "I have to buy rice"',s:'मलाई भात ___',o:['किन्नुपर्छ','किन्न सक्छु','किन्दै छु','किन्छु'],a:0},
     {t:'li',q:'What did you hear?',say:'मलाई किन्नुपर्छ',r:'Malai kinnuparchha',o:['I have to buy','I have to go','I have to study','I have to do'],a:0},
     {t:'mc',q:'Before पर्छ, the verb keeps…',o:['-नु','-न','-दै','-छु'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "America"?',o:['अमेरिका','रङ','दाइ','हो'],a:0}]},
   {id:'cont',title:'Right now (-ing)',step:'learn',meta:'म खाँदै छु = I am eating',vocab:[['खाँदै छु','khaandai chhu','(I) am eating'],['गर्दै छु','gardai chhu','(I) am doing'],['जाँदै छु','jaandai chhu','(I) am going'],['पढ्दै छु','padhdai chhu','(I) am studying'],['के गर्दै?','ke gardai?','what (are you) doing?'],['काम','kaam','work'],['अहिले','ahile','now']],ex:[
     {t:'note',tag:'Happening now',q:'The "-ing" form: -दै छु',body:'<p>To say something is happening <b>right now</b>, add <span class="deva">-दै</span> to the verb and follow with <span class="deva">छु</span> / <span class="deva">छ</span>.</p>',eg:[['खानु → खाँदै छु','khaandai chhu','I am eating'],['गर्नु → गर्दै छु','gardai chhu','I am doing'],['जानु → जाँदै छु','jaandai chhu','I am going']]},
     {t:'mc',q:'How do you say "I am eating"?',o:['खाँदै छु','खान्छु','खान सक्छु','खानुपर्छ'],a:0},
@@ -2918,7 +2928,8 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'म काम गर्दै छु',r:'Ma kaam gardai chhu',o:['I am working','I work','I can work','I have to work'],a:0},
     {t:'mc',q:'The "right now" ending is…',o:['-दै','-न','-नु','-छु'],a:0},
     {t:'tr',q:'Translate: "I am eating"',a:'म खाँदै छु',r:'Ma khaandai chhu'}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "to you"?',o:['तिमीलाई','सय','चार','खान्छौं'],a:0}]},
   {id:'shop',title:'Shopping',step:'learn',meta:'At the bazaar',vocab:[['कति पर्छ?','kati parchha?','how much does it cost?'],['महँगो','mahango','expensive'],['सस्तो','sasto','cheap'],['पैसा','paisa','money'],['पसल','pasal','shop'],['रुपैयाँ','rupaiyaan','rupee']],ex:[
     {t:'note',tag:'Culture',q:'Bargaining at the bazaar',body:'<p>In local markets, polite bargaining is normal. Start by asking <span class="deva">यो कति पर्छ?</span> ("how much is this?"), then you can say <span class="deva">धेरै महँगो भयो</span> ("that became too expensive").</p>'},
     {t:'tr',q:'Translate: "How much does this cost?"',a:'यो कति पर्छ?',r:'Yo kati parchha',h:'kati = how much'},
@@ -2982,7 +2993,9 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "Where is the shop?"',s:'___ कहाँ छ?',o:['पसल','पैसा','बाटो','टिकट'],a:0},
     {t:'mc',q:'What does रुपैयाँ mean?',o:['rupee','road','shop','time'],a:0},
     {t:'mc',q:'Which means "money"?',o:['पैसा','पसल','बाटो','महँगो'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "restaurant"?',o:['रेस्टुरेन्ट','कति','घर','कुन'],a:0},
+{t:'mc',q:'Review — which means "we went"?',o:['गयौं','साथी','आउनु','बाह्र'],a:0}]},
   {id:'want',title:'Want & need',step:'learn',meta:'चाहिनु & मन पर्नु',vocab:[['चाहियो','chaahiyo','want / need (now)'],['चाहिन्छ','chaahinchha','is needed'],['मलाई ... चाहियो','malai ... chaahiyo','I want / need ...'],['मन पर्छ','man parchha','to like'],['मलाई मन पर्छ','malai man parchha','I like it']],ex:[
     {t:'note',tag:'Key pattern',q:'How to say "I want / need"',body:'<p>Use <span class="deva">मलाई</span> + the thing + <span class="deva">चाहियो</span>:</p><p><span class="deva">मलाई पानी चाहियो</span> = "I want/need water". To ask, swap in के: <span class="deva">तपाईंलाई के चाहियो?</span> ("What would you like?").</p>',eg:[['मलाई पानी चाहियो','malai paani chaahiyo','I want water'],['मलाई के चाहियो?','malai ke chaahiyo?','what do I want?']]},
     {t:'mc',q:'How do you say "I want water"?',o:['मलाई पानी चाहियो','म पानी हुँ','मसँग पानी छ','पानी कहाँ छ'],a:0},
@@ -3047,7 +3060,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'मलाई पानी चाहियो',r:'Malai paani chaahiyo',o:['I want water','I have water','Where is water?','I like water'],a:0},
     {t:'fill',q:'Complete: "Sugar is needed"',s:'चिनी ___',o:['चाहिन्छ','चाहियो','छ','हो'],a:0},
     {t:'mc',q:'"I want / need" marks the person with…',o:['लाई','ले','को','मा'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "right"?',o:['दायाँ','कहाँ','कफी','गर्छु'],a:0},
+{t:'mc',q:'Review — which means "he/she (as doer)"?',o:['उसले','पढ्छु','नमस्कार','यी'],a:0}]},
   {id:'travel',title:'Travel',step:'learn',meta:'Transport & places',vocab:[['बस','bas','bus'],['ट्याक्सी','tyaaksi','taxi'],['हवाईजहाज','hawaaijahaaj','airplane'],['गाडी','gaadi','vehicle'],['टिकट','tikat','ticket'],['बाटो','baato','road / way'],['पैदल','paidal','on foot']],ex:[
     {t:'note',tag:'Travel',q:'Getting around Nepal',body:'<p>Buses (<span class="deva">बस</span>) connect most towns; within cities you will use taxis (<span class="deva">ट्याक्सी</span>) or walk (<span class="deva">पैदल</span>). To ask the way: <span class="deva">___ कहाँ छ?</span></p>'},
     {t:'mc',q:'What does "बस" mean?',d:'बस',r:'Bas',o:['Car','Bus','Plane','Bike'],a:1},
@@ -3112,7 +3127,9 @@ const NE_LESSONS = [
     {t:'mc',q:'What does पैदल mean?',o:['on foot','by bus','by taxi','by air'],a:0},
     {t:'fill',q:'Complete: "Where is the road?"',s:'बाटो ___ छ?',o:['कहाँ','के','कति','को'],a:0},
     {t:'mc',q:'Which means "ticket"?',o:['टिकट','बाटो','पैसा','गाडी'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "left"?',o:['बायाँ','एक','१०','कुन'],a:0},
+{t:'mc',q:'Review — which means "we (as doer)"?',o:['हामीले','दिन','बुबा','धन्यवाद'],a:0}]},
   {id:'weather',title:'Weather',step:'learn',meta:'Rain or shine',vocab:[['घाम','ghaam','sun / sunshine'],['पानी पर्यो','paani paryo','it rained'],['चिसो','chiso','cold'],['गर्मी','garmi','heat / hot'],['हावा','haawaa','wind'],['मौसम','mausam','weather']],ex:[
     {t:'note',tag:'Tip',q:'Weather uses पर्नु',body:'<p>"It rained" is <span class="deva">पानी पर्यो</span> (literally "water fell"). For "it is cold/hot today", use <span class="deva">आज चिसो/गर्मी छ</span>.</p>'},
     {t:'mc',q:'What does "घाम" mean?',d:'घाम',r:'Ghaam',o:['Rain','Sun','Wind','Snow'],a:1},
@@ -3172,7 +3189,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'आज चिसो छ',r:'Aaja chiso chha',o:['It is cold today','It is hot today','It rained today','It is windy'],a:0},
     {t:'mc',q:'Which means "wind"?',o:['हावा','घाम','चिसो','मौसम'],a:0},
     {t:'mc',q:'What does मौसम mean?',o:['weather','sun','rain','cold'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "straight"?',o:['सीधा','एघार','बीस','घाम'],a:0},
+{t:'mc',q:'Review — which means "you (doer, polite)"?',o:['तपाईंले','अग्लो','खान्छु','पन्ध्र'],a:0}]},
   {id:'body',title:'Body & health',step:'learn',meta:'At the doctor',vocab:[['टाउको','taauko','head'],['आँखा','aankhaa','eye'],['हात','haat','arm / hand'],['पेट','pet','stomach'],['बिरामी','biraami','sick'],['डाक्टर','daktar','doctor'],['औषधि','aushadhi','medicine']],ex:[
     {t:'note',tag:'Useful',q:'Saying you are unwell',body:'<p>"I am sick" is <span class="deva">म बिरामी छु</span>. To say a body part hurts: <span class="deva">मेरो ___ दुख्यो</span> ("my ___ hurts").</p>',eg:[['मेरो टाउको दुख्यो','mero taauko dukhyo','my head hurts'],['म बिरामी छु','ma biraami chhu','I am sick']]},
     {t:'mc',q:'What does "टाउको" mean?',d:'टाउको',r:'Taauko',o:['Hand','Head','Foot','Eye'],a:1},
@@ -3232,7 +3251,9 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "My stomach hurts"',s:'मेरो ___ दुख्यो',o:['पेट','हात','टाउको','आँखा'],a:0},
     {t:'mc',q:'What does औषधि mean?',o:['medicine','doctor','sick','stomach'],a:0},
     {t:'mc',q:'Which means "eye"?',o:['आँखा','हात','पेट','टाउको'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "behind / backward"?',o:['पछाडि','रातो','तीस','सँग'],a:0},
+{t:'mc',q:'Review — which means "I will do"?',o:['गर्नेछु','दिदी','उसले','निलो'],a:0}]},
   {id:'feelings',title:'Feelings',step:'learn',meta:'लाग्नु & how you feel',vocab:[['खुसी','khusi','happy'],['दुःखी','dukhi','sad'],['थाकेको','thaakeko','tired'],['भोक लाग्यो','bhok laagyo','feel hungry'],['तिर्खा लाग्यो','tirkhaa laagyo','(I am) thirsty'],['जाडो लाग्यो','jaado laagyo','feel cold'],['निद्रा लाग्यो','nidraa laagyo','feel sleepy']],ex:[
     {t:'note',tag:'Key grammar',q:'Feelings use लाग्नु + लाई',body:'<p>Many physical feelings are not "I am X" but "to me X is felt": <span class="deva">मलाई ___ लाग्यो</span>.</p>',eg:[['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry'],['मलाई तिर्खा लाग्यो','malai tirkhaa laagyo','I am thirsty'],['मलाई जाडो लाग्यो','malai jaado laagyo','I feel cold']]},
     {t:'mc',q:'What does "खुसी" mean?',d:'खुसी',r:'Khusi',o:['Sad','Angry','Happy','Tired'],a:2},
@@ -3292,7 +3313,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'मलाई भोक लाग्यो',r:'Malai bhok laagyo',o:['I am hungry','I am thirsty','I am sleepy','I am cold'],a:0},
     {t:'fill',q:'Complete: "I am sad"',s:'म ___ छु',o:['दुःखी','खुसी','भोक','जाडो'],a:0},
     {t:'mc',q:'Feelings like hunger take which person-marker?',o:['मलाई','मैले','मेरो','म'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "near"?',o:['नजिक','पचास','दुःखी','बस्छु'],a:0},
+{t:'mc',q:'Review — which means "I will come"?',o:['आउनेछु','जानु','कफी','गएँ'],a:0}]},
   {id:'experiencer',title:'It happens to me — मलाई',step:'learn',meta:'भोक लाग्यो, मन पर्छ …',vocab:[['मलाई','malai','to me / for me'],['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry'],['मलाई मन पर्छ','malai man parchha','I like it'],['मलाई थाहा छ','malai thaahaa chha','I know'],['मलाई चाहियो','malai chaahiyo','I want / need'],['मलाई जाडो लाग्यो','malai jaado laagyo','I feel cold'],['लाग्नु','laagnu','to be felt / to seem']],ex:[
     {t:'note',tag:'Big idea',q:'Feelings happen TO you',body:'<p>English says "I <b>am</b> hungry." Nepali says hunger <b>happened to me</b>:</p><p><span class="deva">मलाई भोक लाग्यो</span> — literally "to-me hunger felt."</p><p>The person is <span class="deva">मलाई</span> (to me), <b>not</b> <span class="deva">म</span> (I).</p>',eg:[['मलाई भोक लाग्यो','malai bhok laagyo','I am hungry'],['मलाई जाडो लाग्यो','malai jaado laagyo','I feel cold'],['मलाई मन पर्छ','malai man parchha','I like it']],tip:'This one frame covers hunger, thirst, cold, sleepiness, liking, knowing & wanting.'},
     {t:'mc',q:'"I am hungry" in Nepali is…',o:['मलाई भोक लाग्यो','म भोक छु','मेरो भोक छ','मैले भोक खाएँ'],a:0},
@@ -3351,7 +3374,9 @@ const NE_LESSONS = [
     {t:'mc',q:'Which means "I know"?',o:['मलाई थाहा छ','मलाई मन पर्छ','मलाई भोक लाग्यो','मलाई चाहियो'],a:0},
     {t:'tr',q:'Translate: "I am hungry"',a:'मलाई भोक लाग्यो',r:'Malai bhok laagyo'},
     {t:'mc',q:'लाग्नु means…',o:['to be felt / to seem','to do','to go','to have'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "to speak"?',o:['बोल्नु','लाई','घण्टा','गर्छु'],a:0},
+{t:'mc',q:'Review — which means "how"?',o:['कसरी','एक','मासु','साथी'],a:0}]},
   {id:'conn1',title:'And, but, because',step:'learn',meta:'Joining ideas',vocab:[['र','ra','and'],['तर','tara','but'],['किनभने','kinabhane','because'],['या','yaa','or'],['पनि','pani','also / too']],ex:[
     {t:'note',tag:'Tip',q:'Small words, big difference',body:'<p>These connectors let you build longer sentences: <span class="deva">र</span> (and), <span class="deva">तर</span> (but), <span class="deva">किनभने</span> (because), <span class="deva">पनि</span> (also).</p>'},
     {t:'mc',q:'What does "र" mean?',o:['but','and','because','or'],a:1},
@@ -3411,7 +3436,9 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "me too"',s:'म ___',o:['पनि','तर','र','या'],a:0},
     {t:'mc',q:'Which means "but"?',o:['तर','र','किनभने','पनि'],a:0},
     {t:'mc',q:'किनभने gives a…',o:['reason','question','place','time'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "she eats (resp.)"?',o:['खान्छिन्','गरेँ','साथी','सय'],a:0},
+{t:'mc',q:'Review — which means "which"?',o:['कुन','पछाडि','एक','तपाईंले'],a:0}]},
   {id:'conn2',title:'When, if, so',step:'learn',meta:'Complex sentences',vocab:[['जब','jaba','when'],['यदि','yadi','if'],['भने','bhane','then (if-clause)'],['त्यसैले','tyasaile','so / therefore'],['अनि','ani','and then']],ex:[
     {t:'note',tag:'Grammar',q:'"If ... then" = यदि ... भने',body:'<p>Conditionals wrap the if-clause: <span class="deva">यदि पानी पर्यो भने ...</span> ("if it rains, then ..."). <span class="deva">त्यसैले</span> means "so/therefore".</p>'},
     {t:'mc',q:'What does "जब" mean?',o:['if','when','so','but'],a:1},
@@ -3471,7 +3498,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'अनि के भयो?',r:'Ani ke bhayo?',o:['And then what happened?','When did it happen?','Why?','So what?'],a:0},
     {t:'fill',q:'Complete: "... so I went home"',s:'___ म घर गएँ',o:['त्यसैले','यदि','जब','या'],a:0},
     {t:'mc',q:'भने marks the end of the…',o:['if-clause','question','past','place'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "they eat"?',o:['खान्छन्','रङ','चाहिन्छ','साथी'],a:0},
+{t:'mc',q:'Review — which means "to be able / can"?',o:['सक्नु','तपाईंले','महँगो','अमेरिका'],a:0}]},
   {id:'conditional',title:'If… — the -ए ending',step:'learn',meta:'गए, आए … "if"',vocab:[['भने','bhane','if / then (clause marker)'],['यदि','yadi','if'],['पानी परे','paani pare','if it rains'],['तिमी आए','timi aae','if you come'],['सम्भव भए','sambhav bhae','if possible'],['गए','gae','if (one) goes']],ex:[
     {t:'note',tag:'Pattern',q:'"If" = verb + ए',body:'<p>To say "if", add <span class="deva">ए</span> to the verb stem:</p><p><span class="deva">आउनु</span> (to come) → <span class="deva">आए</span> (if come)<br><span class="deva">हुनु</span> (to be) → <span class="deva">भए</span> (if it is)</p><p>You can add <span class="deva">भने</span> after it for emphasis.</p>',eg:[['तिमी आए म जान्छु','timi aae ma jaanchu','if you come, I will go'],['पानी परे','paani pare','if it rains'],['सम्भव भए','sambhav bhae','if possible']],tip:'In speech, भने alone can mean "if": काम सकियो भने… = "if the work is done…".'},
     {t:'mc',q:'"If it rains" is…',o:['पानी परे','पानी पर्यो','पानी पर्छ','पानी पानी'],a:0},
@@ -3529,7 +3558,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'सम्भव भए',r:'Sambhav bhae',o:['if possible','it is possible','it was possible','not possible'],a:0},
     {t:'mc',q:'हुनु (to be) → "if it is" =',o:['भए','भयो','हुन्छ','हो'],a:0},
     {t:'mc',q:'What does भने mark?',o:['the "if" clause','the question','the past','the place'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "we eat"?',o:['खान्छौं','पढ्न','पढ्छु','गर्नुपर्छ'],a:0},
+{t:'mc',q:'Review — which means "speak (form before सक्नु)"?',o:['बोल्न','छोरा','घर','तिमीलाई'],a:0}]},
   {id:'convo',title:'Putting it together',step:'learn',meta:'A real conversation',vocab:[['कस्तो छ?','kasto chha?','How are you? / How is it?'],['सञ्चै छु','sanchai chhu','I am well'],['भेटेर खुसी लाग्यो','bhetera khusi laagyo','Nice to meet you'],['फेरि भेटौंला','pheri bhetaunla','See you again']],ex:[
     {t:'note',tag:'You made it!',q:'Time to put it all together',body:'<p>This final lesson stitches together greetings, names, origin and goodbyes into one real exchange. Read each line aloud — you now know all of it.</p>'},
     {t:'mc',q:'Someone says "नमस्ते"। You reply…',o:['नमस्ते','धन्यवाद','होइन','बिदाई'],a:0},
@@ -3590,7 +3621,9 @@ const NE_LESSONS = [
     {t:'fill',q:'Reply warmly to नमस्ते',s:'___, भेटेर खुसी लाग्यो',o:['नमस्ते','धन्यवाद','होइन','बिदाई'],a:0},
     {t:'tr',q:'End politely: "See you again"',a:'फेरि भेटौंला',r:'Pheri bhetaunla'},
     {t:'mc',q:'भेटेर खुसी लाग्यो means…',o:['nice to meet you','see you again','how are you?','thank you'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "I do not understand"?',o:['बुझ्दिन','भाइ','छोरी','कालो'],a:0},
+{t:'mc',q:'Review — which means "write"?',o:['लेख्न','हुँदैन','गर्छु','खाएँ'],a:0}]},
   {id:'hon',title:'Speaking politely',step:'learn',meta:'तपाईं ... -नुहुन्छ',vocab:[['तपाईं जानुहुन्छ','tapai jaanuhunchha','you go (polite)'],['गर्नुहुन्छ','garnuhunchha','(you) do (polite)'],['खानुहुन्छ','khaanuhunchha','(you) eat (polite)'],['बस्नुहुन्छ','basnuhunchha','(you) sit / stay (polite)'],['तपाईं के गर्नुहुन्छ?','tapai ke garnuhunchha?','what do you do?'],['तपाईं कहाँ जानुहुन्छ?','tapai kahaan jaanuhunchha?','where are you going?'],['हुनुहुन्छ','hunuhunchha','(you) are (polite)']],ex:[
     {t:'note',tag:'Show respect',q:'The polite verb form -नुहुन्छ',body:'<p>Same verb, three levels of respect. For the polite <span class="deva">तपाईं</span>, add <span class="deva">-नुहुन्छ</span> to the verb.</p>',eg:[['तिमी जान्छौ','jaanchhau','you go (familiar)'],['तपाईं जानुहुन्छ','tapai jaanuhunchha','you go (polite)'],['तपाईं गर्नुहुन्छ','garnuhunchha','you do (polite)']]},
     {t:'mc',q:'What is the polite form of "you go"?',o:['जानुहुन्छ','जान्छौ','जान्छु','जाँदै छु'],a:0},
@@ -3650,7 +3683,9 @@ const NE_LESSONS = [
     {t:'mc',q:'For polite तपाईं, the verb ends in…',o:['-नुहुन्छ','-छौ','-छु','-दै'],a:0},
     {t:'fill',q:'Complete politely: "Where do you go?"',s:'तपाईं कहाँ ___?',o:['जानुहुन्छ','जान्छौ','जान्छु','जाँदै'],a:0},
     {t:'mc',q:'Polite "you are" =',o:['हुनुहुन्छ','हौ','हुँ','होस्'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "he does not eat"?',o:['खाँदैन','माया','भाइ','दूध'],a:0},
+{t:'mc',q:'Review — which means "must / have to"?',o:['पर्नु','पढ्न','बोल्नु','अग्लो'],a:0}]},
   {id:'levels',title:'Levels of respect',step:'learn',meta:'तँ · तिमी · तपाईं',vocab:[['तँ','ta','you (very informal)'],['तिमी','timi','you (familiar)'],['तपाईं','tapai','you (polite)'],['जान्छस्','jaanchas','go (with तँ)'],['जान्छौ','jaanchau','go (with तिमी)'],['जानुहुन्छ','jaanuhunchha','go (with तपाईं)'],['जी','ji','respectful suffix (Ram-ji)']],ex:[
     {t:'note',tag:'Culture + grammar',q:'One verb, three respect levels',body:'<p>The verb ending changes with how much respect you show. "You go":</p><p><span class="deva">तँ जान्छस्</span> — very informal<br><span class="deva">तिमी जान्छौ</span> — familiar<br><span class="deva">तपाईं जानुहुन्छ</span> — polite</p>',eg:[['तपाईं कहाँ जानुहुन्छ?','tapai kahaan jaanuhunchha?','where are you going? (polite)'],['राम जी','raam ji','Ram-ji (respectful)']],tip:'With elders or strangers, always use तपाईं. Add जी to a name to show respect.'},
     {t:'mc',q:'Polite "you go" is…',o:['तपाईं जानुहुन्छ','तँ जान्छस्','तिमी जान्छौ','म जान्छु'],a:0},
@@ -3708,7 +3743,9 @@ const NE_LESSONS = [
     {t:'mc',q:'Familiar "you go" =',o:['तिमी जान्छौ','तपाईं जानुहुन्छ','म जान्छु','तँ जान्छस्'],a:0},
     {t:'mc',q:'Adding जी to a name shows…',o:['respect','anger','a question','the past'],a:0},
     {t:'mc',q:'The verb ending changes with…',o:['the respect level','the weather','the time','the place'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "flatbread"?',o:['रोटी','होइन','कृपया','हरियो'],a:0},
+{t:'mc',q:'Review — which means "have to do"?',o:['गर्नुपर्छ','अस्पताल','चार','पुरानो'],a:0}]},
   {id:'requests',title:'Polite requests',step:'learn',meta:'... -नुहोस् = please ...',vocab:[['गर्नुहोस्','garnuhos','please do'],['बस्नुहोस्','basnuhos','please sit'],['दिनुहोस्','dinuhos','please give'],['आउनुहोस्','aaunuhos','please come'],['जानुहोस्','jaanuhos','please go (ahead)'],['पर्खनुहोस्','parkhanuhos','please wait'],['सुन्नुहोस्','sunnuhos','please listen']],ex:[
     {t:'note',tag:'Asking nicely',q:'Requests with -नुहोस्',body:'<p>To politely ask someone to do something, add <span class="deva">-नुहोस्</span> to the verb.</p>',eg:[['गर्नु → गर्नुहोस्','garnuhos','please do'],['बस्नु → बस्नुहोस्','basnuhos','please sit'],['दिनु → दिनुहोस्','dinuhos','please give']]},
     {t:'mc',q:'How do you say "please sit"?',o:['बस्नुहोस्','बस्छु','बस्नुहुन्छ','बस्दै छु'],a:0},
@@ -3768,7 +3805,9 @@ const NE_LESSONS = [
     {t:'mc',q:'Which means "please listen"?',o:['सुन्नुहोस्','दिनुहोस्','बस्नुहोस्','जानुहोस्'],a:0},
     {t:'fill',q:'Complete: "please do"',s:'काम ___',o:['गर्नुहोस्','गर्छु','गर्यो','गर्दै'],a:0},
     {t:'mc',q:'-नुहोस् makes a verb into a…',o:['polite request','past action','question','plural'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "meat"?',o:['मासु','सात','पर्नु','पर्छ'],a:0},
+{t:'mc',q:'Review — which means "have to study"?',o:['पढ्नुपर्छ','बीस','जान्छौ','दस'],a:0}]},
   {id:'compare',title:'Comparing things',step:'learn',meta:'... भन्दा = than',vocab:[['भन्दा','bhandaa','than'],['यो त्यो भन्दा ठूलो छ','yo tyo bhandaa thulo chha','this is bigger than that'],['सबैभन्दा','sabaibhandaa','most / -est'],['सबैभन्दा ठूलो','sabaibhandaa thulo','the biggest'],['धेरै','dherai','very / much'],['ठूलो','thulo','big'],['सानो','saano','small']],ex:[
     {t:'note',tag:'More than',q:'Comparing with भन्दा',body:'<p>Put <span class="deva">भन्दा</span> (than) <b>after</b> the thing you compare against:</p><p><span class="deva">यो त्यो भन्दा ठूलो छ</span> = this is bigger than that.</p>',eg:[['A B भन्दा ठूलो','','A is bigger than B'],['भन्दा','bhandaa','than']]},
     {t:'mc',q:'What does भन्दा mean?',d:'भन्दा',r:'bhandaa',o:['and','than','but','with'],a:1},
@@ -3828,7 +3867,9 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'भन्दा',r:'Bhandaa',o:['than','also','because','then'],a:0},
     {t:'mc',q:'सबैभन्दा means…',o:['most / -est','than','very','also'],a:0},
     {t:'mc',q:'Which means "small"?',o:['सानो','ठूलो','धेरै','भन्दा'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "coffee"?',o:['कफी','रेस्टुरेन्ट','छन्','घर'],a:0},
+{t:'mc',q:'Review — which means "have to buy"?',o:['किन्नुपर्छ','एघार','दिनुहोस्','मसँग'],a:0}]},
   {id:'opinion',title:'Giving opinions',step:'learn',meta:'मलाई लाग्छ = I think',vocab:[['मलाई लाग्छ','malai laagchha','I think / it seems to me'],['जस्तो','jasto','like / as'],['राम्रो जस्तो लाग्छ','raamro jasto laagchha','it seems good'],['सायद','saayad','maybe / perhaps'],['साँच्चै','saanchai','really'],['मलाई मन पर्छ','malai man parchha','I like it'],['कि','ki','that']],ex:[
     {t:'note',tag:'In my opinion',q:'मलाई लाग्छ = I think',body:'<p><span class="deva">मलाई लाग्छ</span> means "it seems to me / I think". Add <span class="deva">जस्तो</span> for "seems like":</p><p><span class="deva">राम्रो जस्तो लाग्छ</span> = it seems good.</p>'},
     {t:'mc',q:'What does मलाई लाग्छ mean?',d:'मलाई लाग्छ',r:'malai laagchha',o:['I think / it seems to me','I like it','I have it','I want it'],a:0},
@@ -3888,7 +3929,9 @@ const NE_LESSONS = [
     {t:'mc',q:'What does जस्तो mean?',o:['like / as','than','because','very'],a:0},
     {t:'fill',q:'Complete: "it really is good"',s:'यो ___ राम्रो छ',o:['साँच्चै','सायद','जस्तो','भन्दा'],a:0},
     {t:'mc',q:'मलाई लाग्छ uses which person-word?',o:['मलाई','म','मेरो','मैले'],a:0}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "mother"?',o:['आमा','टाउको','सय','माया'],a:0},
+{t:'mc',q:'Review — which means "taxi"?',o:['ट्याक्सी','१०','खानु','गर्नेछु'],a:0}]},
 
 
   /* ===================== LANGUAGE INTENSIVE · WEEK 1 · DAY 1 ===================== */
@@ -7055,7 +7098,9 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I sit and eat"',a:['बसेर','खान्छु'],r:'Basera khaanchhu',pool:['बसेर','खान्छु','बस्छु']},
     {t:'mc',q:'In a chain, tense lives on…',o:['the final verb only','every verb','the first verb','none'],a:0},
     {t:'match',q:'Match chain and meaning',pairs:[['गएर','having gone'],['खाएर','having eaten'],['बसेर','having sat'],['आएर','having come']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "older sister"?',o:['दिदी','पन्ध्र','त्यहाँ','दुई'],a:0},
+{t:'mc',q:'Review — which means "airplane"?',o:['हवाईजहाज','नजिक','धेरै','खान्छ'],a:0}]},
 
   /* --- Topic 2: the perfect -एको छ --- */
   {id:'perf',title:'Have you ever?',step:'learn',meta:'गएको छु — the perfect',vocab:[['गएको छु','gaeko chhu','have been / gone'],['खाएको छु','khaaeko chhu','(I) have eaten (before)'],['गएको छैन','gaeko chhaina','(I) have not been'],['कहिल्यै','kahilyai','ever'],['म पोखरा गएको छु','ma pokhara gaeko chhu','I have been to Pokhara']],ex:[
@@ -7099,7 +7144,9 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I have never eaten (it)"',a:['मैले','कहिल्यै','खाएको','छैन'],r:'Maile kahilyai khaaeko chhaina',pool:['मैले','कहिल्यै','खाएको','छैन','छु']},
     {t:'mc',q:'The experience ending is…',o:['-एको छ','-एर','-दै छ','-नेछ'],a:0},
     {t:'match',q:'Match line and meaning',pairs:[['गएको छु','have been'],['गएको छैन','have not been'],['कहिल्यै','ever / never'],['खाएको छु','have eaten']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "younger sister"?',o:['बहिनी','बायाँ','कति','कोठामा'],a:0},
+{t:'mc',q:'Review — which means "vehicle"?',o:['गाडी','घरबाट','पर्नु','बाट'],a:0}]},
 
   /* --- Topic 3: first, then & just now --- */
   {id:'seq2',title:'First & then',step:'learn',meta:'पहिले त्यसपछि अन्त्यमा भर्खर',vocab:[['पहिले','pahile','before / earlier'],['त्यसपछि','tyaspachhi','then / after that'],['अन्त्यमा','antyamaa','finally / at the end'],['भर्खर','bharkhar','just now'],['भर्खर आएँ','bharkhar aaen','(I) just came']],ex:[
@@ -7143,7 +7190,9 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "first tea, then work" — first tea eat, then work do',a:['पहिले','चिया','खाएर','काम','गर्छु'],r:'Pahile chiyaa khaaera kaam garchhu',pool:['पहिले','चिया','खाएर','काम','गर्छु','त्यसपछि']},
     {t:'mc',q:'first · then · finally =',o:['पहिले · त्यसपछि · अन्त्यमा','त्यसपछि · पहिले · अन्त्यमा','अन्त्यमा · त्यसपछि · पहिले','पहिले · अन्त्यमा · त्यसपछि'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['पहिले','first'],['त्यसपछि','then'],['अन्त्यमा','finally'],['भर्खर आएँ','(I) just came']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "older brother"?',o:['दाइ','आइतबार','खानु','चाहियो'],a:0},
+{t:'mc',q:'Review — which means "ticket"?',o:['टिकट','पिउँछु','रेस्टुरेन्ट','तिम्रो'],a:0}]},
 
   /* --- Topic 4: how often --- */
   {id:'freq2',title:'How often?',step:'learn',meta:'सधैं कहिलेकाहीँ प्रायः',vocab:[['सधैं','sadhain','always'],['कहिलेकाहीँ','kahilekaahin','sometimes'],['प्रायः','praayah','usually / mostly'],['हरेक दिन','harek din','every day'],['म कहिल्यै खाँदिन','ma kahilyai khaandina','I never eat (it)']],ex:[
@@ -7187,7 +7236,9 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I drink tea every day"',a:['म','हरेक दिन','चिया','खान्छु'],r:'Ma harek din chiyaa khaanchhu',pool:['म','हरेक दिन','चिया','खान्छु','कहिल्यै']},
     {t:'mc',q:'always · usually · sometimes =',o:['सधैं · प्रायः · कहिलेकाहीँ','प्रायः · सधैं · कहिलेकाहीँ','कहिलेकाहीँ · प्रायः · सधैं','सधैं · कहिलेकाहीँ · प्रायः'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['सधैं','always'],['प्रायः','usually'],['कहिलेकाहीँ','sometimes'],['हरेक दिन','every day']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "younger brother"?',o:['भाइ','दिनुहोस्','नमस्ते','उसलाई'],a:0},
+{t:'mc',q:'Review — which means "on foot"?',o:['पैदल','शुक्रबार','हामी','सोमबार'],a:0}]},
 
   /* --- Topic 5: slowly, please — the pace lifelines --- */
   {id:'slow',title:'Slowly, please!',step:'learn',meta:'बिस्तारै छिटो ढिलो चाँडै',vocab:[['बिस्तारै','bistaarai','slowly'],['बिस्तारै भन्नुहोस्','bistaarai bhannuhos','please speak slowly'],['छिटो','chhito','fast / quickly'],['ढिलो','dhilo','late'],['चाँडै','chaandai','soon / early']],ex:[
@@ -7231,7 +7282,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुहोस्'],r:'Bistaarai bhannuhos',pool:['बिस्तारै','भन्नुहोस्','आउनुहोस्']},
     {t:'mc',q:'slowly · quickly · late · soon =',o:['बिस्तारै · छिटो · ढिलो · चाँडै','छिटो · बिस्तारै · चाँडै · ढिलो','बिस्तारै · ढिलो · छिटो · चाँडै','चाँडै · छिटो · ढिलो · बिस्तारै'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['ढिलो','late'],['चाँडै','soon / early']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "son"?',o:['छोरा','पहेँलो','हो','रेस्टुरेन्ट'],a:0}]},
 
   /* --- Topic 6: above, below, inside, outside --- */
   {id:'pos2',title:'Where exactly?',step:'learn',meta:'माथि तल भित्र बाहिर अगाडि',vocab:[['माथि','maathi','above / up'],['तल','tala','below / down'],['भित्र','bhitra','inside'],['बाहिर','baahira','outside'],['अगाडि','agaadi','front / forward'],['घरभित्र','gharbhitra','inside the house']],ex:[
@@ -7275,7 +7327,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "the cat is inside"',a:['बिरालो','भित्र','छ'],r:'Biraalo bhitra chha',pool:['बिरालो','भित्र','छ','माथि']},
     {t:'mc',q:'above · below · inside · outside =',o:['माथि · तल · भित्र · बाहिर','तल · माथि · बाहिर · भित्र','माथि · भित्र · तल · बाहिर','बाहिर · भित्र · तल · माथि'],a:0},
     {t:'match',q:'Match position and meaning',pairs:[['माथि','above'],['तल','below'],['भित्र','inside'],['बाहिर','outside']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "daughter"?',o:['छोरी','किताब','किनभने','रातो'],a:0}]},
 
   /* --- Topic 7: years & lakhs --- */
   {id:'years',title:'Years & lakhs',step:'learn',meta:'वर्ष + लाख — big time, big money',vocab:[['वर्ष','barsha','year'],['यो वर्ष','yo barsha','this year'],['अर्को वर्ष','arko barsha','next year'],['लाख','laakh','one hundred thousand'],['एक लाख रुपैयाँ','ek laakh rupaiyaan','one lakh rupees']],ex:[
@@ -7319,7 +7372,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I will go next year"',a:['म','अर्को वर्ष','जान्छु'],r:'Ma arko barsha jaanchhu',pool:['म','अर्को वर्ष','जान्छु','गएँ']},
     {t:'mc',q:'100 · 1,000 · 100,000 =',o:['सय · हजार · लाख','हजार · सय · लाख','लाख · हजार · सय','सय · लाख · हजार'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['वर्ष','year'],['यो वर्ष','this year'],['लाख','100,000'],['एक लाख रुपैयाँ','one lakh rupees']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "family"?',o:['परिवार','खान्छिन्','साँझ','पाँच'],a:0}]},
 
 /* ===================== ZONE 12 · LIVING IN NEPAL =====================
    The daily-life vocabulary that fills out the course: hills & villages,
@@ -7367,7 +7421,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "the village is beautiful"',a:['गाउँ','राम्रो','छ'],r:'Gaaun raamro chha',pool:['गाउँ','राम्रो','छ','हो']},
     {t:'mc',q:'himal · hill · river · forest =',o:['हिमाल · पहाड · नदी · जङ्गल','पहाड · हिमाल · जङ्गल · नदी','हिमाल · नदी · पहाड · जङ्गल','जङ्गल · पहाड · नदी · हिमाल'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['हिमाल','snow mountain'],['पहाड','hill'],['नदी','river'],['गाउँ','village']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "hour"?',o:['घण्टा','बहिनी','बाट','दाल'],a:0}]},
 
   /* --- Topic 2: animals --- */
   {id:'animals',title:'Animals',step:'learn',meta:'कुकुर बिरालो गाई बाख्रा',vocab:[['कुकुर','kukur','dog'],['बिरालो','biraalo','cat'],['गाई','gaai','cow'],['बाख्रा','baakhraa','goat'],['चरा','charaa','bird'],['हात्ती','haatti','elephant']],ex:[
@@ -7411,7 +7466,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "the dog is in the village"',a:['कुकुर','गाउँमा','छ'],r:'Kukur gaaunmaa chha',pool:['कुकुर','गाउँमा','छ','हो']},
     {t:'mc',q:'dog · cat · cow · goat =',o:['कुकुर · बिरालो · गाई · बाख्रा','बिरालो · कुकुर · बाख्रा · गाई','कुकुर · गाई · बिरालो · बाख्रा','बाख्रा · बिरालो · गाई · कुकुर'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['कुकुर','dog'],['बिरालो','cat'],['बाख्रा','goat'],['हात्ती','elephant']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "minute"?',o:['मिनेट','रुपैयाँ','सुन्नुहोस्','रेस्टुरेन्ट'],a:0}]},
 
   /* --- Topic 3: clothes & the topi --- */
   {id:'clothes',title:'The topi',step:'learn',meta:'लुगा टोपी जुत्ता + लगाउनु',vocab:[['लुगा','lugaa','clothing / clothes'],['टोपी','topi','hat / the Nepali topi'],['जुत्ता','juttaa','shoes'],['लगाउनु','lagaaunu','to wear / put on'],['जुत्ता खोल्नुहोस्','juttaa kholnuhos','please take off (your) shoes']],ex:[
@@ -7455,7 +7511,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I wear clothes" — clothes wear',a:['लुगा','लगाउँछु'],r:'Lugaa lagaaunchhu',pool:['लुगा','लगाउँछु','खोल्छु']},
     {t:'mc',q:'clothes · hat · shoes =',o:['लुगा · टोपी · जुत्ता','टोपी · लुगा · जुत्ता','जुत्ता · टोपी · लुगा','लुगा · जुत्ता · टोपी'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['जुत्ता खोल्नुहोस्','shoes off, please']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "Monday"?',o:['सोमबार','हजुर','बहिनी','नमस्ते'],a:0}]},
 
   /* --- Topic 4: around the house --- */
   {id:'home2',title:'Around the house',step:'learn',meta:'झ्याल खाट टेबल कुर्सी साँचो',vocab:[['झ्याल','jhyaal','window'],['खाट','khaat','bed'],['टेबल','tebal','table'],['कुर्सी','kursi','chair'],['साँचो','saancho','key'],['सफा','saphaa','clean']],ex:[
@@ -7499,7 +7556,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "my room is clean"',a:['मेरो','कोठा','सफा','छ'],r:'Mero kothaa saphaa chha',pool:['मेरो','कोठा','सफा','छ','हो']},
     {t:'mc',q:'window · bed · table · chair =',o:['झ्याल · खाट · टेबल · कुर्सी','खाट · झ्याल · कुर्सी · टेबल','झ्याल · टेबल · खाट · कुर्सी','कुर्सी · खाट · टेबल · झ्याल'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['झ्याल','window'],['खाट','bed'],['कुर्सी','chair'],['साँचो','key']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "Tuesday"?',o:['मङ्गलबार','बहिनी','बोल्नु','कुन'],a:0}]},
 
   /* --- Topic 5: fruits & tastes --- */
   {id:'fruits',title:'Fruit shop',step:'learn',meta:'आँप केरा स्याउ + गुलियो पिरो',vocab:[['फलफूल','phalphul','fruit'],['आँप','aanp','mango'],['केरा','keraa','banana'],['स्याउ','syaau','apple'],['गुलियो','guliyo','sweet'],['पिरो','piro','spicy hot']],ex:[
@@ -7543,7 +7601,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "the apple is sweet"',a:['स्याउ','गुलियो','छ'],r:'Syaau guliyo chha',pool:['स्याउ','गुलियो','छ','पिरो']},
     {t:'mc',q:'mango · banana · apple =',o:['आँप · केरा · स्याउ','केरा · आँप · स्याउ','स्याउ · केरा · आँप','आँप · स्याउ · केरा'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['फलफूल','fruit'],['आँप','mango'],['गुलियो','sweet'],['पिरो','spicy']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "Thursday"?',o:['बिहीबार','पढ्नु','गाउँ','हिमाल'],a:0}]},
 
   /* --- Topic 6: phone & post --- */
   {id:'phone2',title:'Phone & post',step:'learn',meta:'फोन नम्बर चिठी पठाउनु',vocab:[['फोन','phon','phone'],['नम्बर','nambar','number'],['फोन गर्नु','phon garnu','to phone / call'],['चिठी','chithi','letter'],['पठाउनु','pathaaunu','to send'],['तपाईंको नम्बर के हो?','tapaainko nambar ke ho','what is your number?']],ex:[
@@ -7587,7 +7646,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "I send a letter"',a:['म','चिठी','पठाउँछु'],r:'Ma chithi pathaaunchhu',pool:['म','चिठी','पठाउँछु','गर्छु']},
     {t:'mc',q:'phone · number · letter · send =',o:['फोन · नम्बर · चिठी · पठाउनु','नम्बर · फोन · पठाउनु · चिठी','फोन · चिठी · नम्बर · पठाउनु','चिठी · नम्बर · फोन · पठाउनु'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['फोन','phone'],['नम्बर','number'],['चिठी','letter'],['पठाउनु','to send']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "Friday"?',o:['शुक्रबार','तिमीलाई','रङ','उनी'],a:0}]},
 
   /* --- Topic 7: help & staying safe --- */
   {id:'help2',title:'Help!',step:'learn',meta:'मद्दत प्रहरी होसियार हरायो',vocab:[['मद्दत','maddat','help'],['मद्दत गर्नुहोस्','maddat garnuhos','please help (me)'],['प्रहरी','prahari','police'],['होसियार','hosiyaar','careful!'],['हरायो','haraayo','(it) got lost'],['ज्वरो आयो','jwaro aayo','(I) got a fever']],ex:[
@@ -7631,7 +7691,8 @@ const NE_LESSONS = [
     {t:'wb',q:'Build: "careful!" + "the dog is outside"',a:['होसियार!','कुकुर','बाहिर','छ'],r:'Hosiyaar! Kukur baahira chha',pool:['होसियार!','कुकुर','बाहिर','छ','भित्र']},
     {t:'mc',q:'help · police · careful =',o:['मद्दत · प्रहरी · होसियार','प्रहरी · मद्दत · होसियार','होसियार · प्रहरी · मद्दत','मद्दत · होसियार · प्रहरी'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['मद्दत','help'],['प्रहरी','police'],['होसियार','careful!'],['ज्वरो आयो','got a fever']]}
-  ]},
+  ,
+{t:'mc',q:'Review — which means "she went (resp.)"?',o:['गइन्','दाल','पर्छ','किन्नुपर्छ'],a:0}]},
 ];
 
 const NE_VOWELS=[['अ','a'],['आ','aa'],['इ','i'],['ई','ee'],['उ','u'],['ऊ','oo'],['ए','e'],['ऐ','ai'],['ओ','o'],['औ','au'],['अं','an'],['अः','ah']];

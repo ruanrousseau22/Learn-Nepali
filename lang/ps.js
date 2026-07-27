@@ -965,7 +965,8 @@ const PS_Z4=[
 {t:'wb',q:'Build: "this is my mother"',a:['دا','زما','مور','ده'],pool:['دا','زما','مور','ده','دی']},
 {t:'match',q:'Match word and meaning',pairs:[['پلار','father'],['مور','mother'],['زوی','son'],['لور','daughter'],['ماشوم','child']]},
 {t:'mc',q:'مور takes ده because she-words take…',o:['ده','دی','دي','یو'],a:0},
-{t:'li',q:'Listen — which word?',say:'کورنۍ',o:['کورنۍ','کور','لور','مور'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'کورنۍ',o:['کورنۍ','کور','لور','مور'],a:0},
+{t:'mc',q:'Review — which means "you (polite/plural)"?',o:['تاسو','لري','زه','بخښنه غواړم'],a:0}]},
 
 {id:'ps_place',title:'Places in town',step:'learn',meta:'Market, school, hospital',vocab:[['بازار','baazaar','market / bazaar'],['ښوونځی','xowundzay','school'],['روغتون','roghtun','hospital'],['دوکان','dukaan','shop'],['هوټل','hottal','hotel / eatery'],['ښار','xaar','city']],ex:[
 {t:'note',tag:'Around town',q:'بازار · دوکان',body:'<p><span class="deva">بازار</span> <b>baazaar</b> — yes, English "bazaar" comes from this region! <span class="deva">دوکان</span> <b>dukaan</b> = shop. <span class="deva">ښار</span> <b>xaar</b> = city.</p>',eg:[['بازار','baazaar','market'],['دوکان','dukaan','shop'],['ښار','xaar','city']]},
@@ -1005,7 +1006,8 @@ const PS_Z4=[
 {t:'wb',q:'Build: "I go to the market"',a:['زه','بازار','ته','ځم'],pool:['زه','بازار','ته','ځم','دوکان']},
 {t:'match',q:'Match place and meaning',pairs:[['بازار','market'],['ښوونځی','school'],['روغتون','hospital'],['دوکان','shop'],['ښار','city']]},
 {t:'mc',q:'"to (a place)" uses ___ after the place word',o:['ته','له','په','او'],a:0},
-{t:'li',q:'Listen — which place?',say:'ښار',o:['ښار','بازار','کور','دوکان'],a:0}]},
+{t:'li',q:'Listen — which place?',say:'ښار',o:['ښار','بازار','کور','دوکان'],a:0},
+{t:'mc',q:'Review — which means "6"?',o:['شپږ','پنځه','شل','لس'],a:0}]},
 
 {id:'ps_pos',title:'In, on, under',step:'learn',meta:'The په … کې sandwich',vocab:[['په کور کې','pa kor ke','in the house'],['په بازار کې','pa baazaar ke','at the market'],['لاندې','laande','under'],['مخکې','makhke','in front'],['شاته','shaata','behind'],['نږدې','nagde','near']],ex:[
 {t:'note',tag:'A sandwich, not a word',q:'په … کې',body:'<p>Pashto says "in" with a <b>sandwich</b> around the noun: <span class="deva">په کور کې</span> <b>pa kor ke</b> = "in the house", <span class="deva">په بازار کې</span> = "at the market". The noun sits inside په … کې like filling in naan!</p>',tip:'These two little words do the work of English prepositions.'},
@@ -1045,7 +1047,8 @@ const PS_Z4=[
 {t:'wb',q:'Build: "I am at home"',a:['زه','په','کور','کې','یم'],pool:['زه','په','کور','کې','یم','دی']},
 {t:'match',q:'Match word and meaning',pairs:[['لاندې','under'],['مخکې','in front'],['شاته','behind'],['نږدې','near'],['لرې','far']]},
 {t:'mc',q:'The "in/at" sandwich is…',o:['په … کې','له … نه','ته … کې','په … ته'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'په بازار کې',o:['په بازار کې','په کور کې','بازار ته','نږدې'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'په بازار کې',o:['په بازار کې','په کور کې','بازار ته','نږدې'],a:0},
+{t:'mc',q:'Review — which means "7"?',o:['اووه','دوولس','اته','نهه'],a:0}]},
 
 {id:'ps_food',title:'Food',step:'learn',meta:'ډوډۍ is bread AND food',vocab:[['ډوډۍ','ddoddey','bread / food / a meal'],['وريجې','wrije','rice'],['غوښه','ghwaxa','meat'],['سابه','saaba','vegetables'],['مېوه','mewa','fruit'],['شیدې','shide','milk']],ex:[
 {t:'note',tag:'Bread is life',q:'ډوډۍ',body:'<p><span class="deva">ډوډۍ</span> <b>ddoddey</b> means bread — and by extension food and the meal itself. <span class="deva">ډوډۍ وخوره!</span> "eat!" is pure Pashtun hospitality. Fresh naan from the bazaar is the heart of every table.</p>',eg:[['ډوډۍ','ddoddey','bread / food'],['وريجې','wrije','rice']]},
@@ -1085,7 +1088,8 @@ const PS_Z4=[
 {t:'wb',q:'Build: "I eat bread"',a:['زه','ډوډۍ','خورم'],pool:['زه','ډوډۍ','خورم','غواړم']},
 {t:'match',q:'Match food and meaning',pairs:[['ډوډۍ','bread'],['وريجې','rice'],['غوښه','meat'],['مېوه','fruit'],['شیدې','milk']]},
 {t:'mc',q:'"I do not eat meat" =',o:['زه غوښه نه خورم','زه غوښه خورم','زه نه غوښه خورم','غوښه زه خورم'],a:0},
-{t:'li',q:'Listen — which food?',say:'مېوه',o:['مېوه','سابه','شیدې','غوښه'],a:0}]},
+{t:'li',q:'Listen — which food?',say:'مېوه',o:['مېوه','سابه','شیدې','غوښه'],a:0},
+{t:'mc',q:'Review — which means "9"?',o:['نهه','لس','شپږ','دوه'],a:0}]},
 
 {id:'ps_tea',title:'Tea culture',step:'learn',meta:'چای — the drink of friendship',vocab:[['چای','chaay','tea'],['شین چای','shin chaay','green tea'],['تور چای','tor chaay','black tea'],['بوره','bura','sugar'],['خوندور','khwandawar','tasty'],['چای وڅښه','chaay wutsxa','drink tea! (offer)']],ex:[
 {t:'note',tag:'The drink of friendship',q:'چای',body:'<p>Nothing happens in Afghanistan without <span class="deva">چای</span> <b>chaay</b>. Guests are poured <span class="deva">شین چای</span> <b>shin chaay</b> (green tea) or <span class="deva">تور چای</span> <b>tor chaay</b> (black tea), refilled until you gently signal enough!</p>',tip:'شین means green — the same word will return with colors.'},
@@ -1125,7 +1129,8 @@ const PS_Z4=[
 {t:'wb',q:'Build: "I drink green tea"',a:['زه','شین','چای','څښم'],pool:['زه','شین','چای','څښم','خورم']},
 {t:'match',q:'Match word and meaning',pairs:[['چای','tea'],['شین چای','green tea'],['تور چای','black tea'],['بوره','sugar'],['خوندور','tasty']]},
 {t:'mc',q:'چای وڅښه is your host…',o:['offering tea','refusing tea','selling tea','hiding tea'],a:0},
-{t:'li',q:'Listen — which word?',say:'بوره',o:['بوره','چای','شیدې','مېوه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'بوره',o:['بوره','چای','شیدې','مېوه'],a:0},
+{t:'mc',q:'Review — which means "11"?',o:['یوولس','شپږ','لس','اته'],a:0}]},
 
 {id:'ps_routine',title:'Your day',step:'learn',meta:'Morning to night',vocab:[['سهار','sahaar','morning'],['غرمه','gharma','noon / midday'],['ماښام','maaxaam','evening'],['شپه','shpa','night'],['کار کوم','kaar kawam','(I) work'],['ویده کېږم','wida kegam','(I) sleep']],ex:[
 {t:'note',tag:'Parts of the day',q:'سهار غرمه ماښام شپه',body:'<p><span class="deva">سهار</span> <b>sahaar</b> morning, <span class="deva">غرمه</span> <b>gharma</b> midday, <span class="deva">ماښام</span> <b>maaxaam</b> evening (there is ښ again!), <span class="deva">شپه</span> <b>shpa</b> night.</p>',eg:[['سهار','sahaar','morning'],['ماښام','maaxaam','evening'],['شپه','shpa','night']]},
@@ -1165,7 +1170,8 @@ const PS_Z4=[
 {t:'wb',q:'Order the day: morning, midday, evening, night',a:['سهار','غرمه','ماښام','شپه'],pool:['شپه','سهار','ماښام','غرمه','ورځ']},
 {t:'match',q:'Match word and meaning',pairs:[['سهار','morning'],['غرمه','midday'],['ماښام','evening'],['شپه','night'],['کار کوم','I work']]},
 {t:'mc',q:'Pashto builds many verbs with کوم (do) and…',o:['کېږم (become)','یم (am)','ته (to)','نه (not)'],a:0},
-{t:'li',q:'Listen — which word?',say:'ماښام',o:['ماښام','سهار','شپه','غرمه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ماښام',o:['ماښام','سهار','شپه','غرمه'],a:0},
+{t:'mc',q:'Review — which means "40"?',o:['څلوېښت','لس','شل','پنځه'],a:0}]},
 ];
 const PS_Z5=[
 /* ===================== ZONE 5 · HOW MANY ===================== */
@@ -1207,7 +1213,8 @@ const PS_Z5=[
 {t:'wb',q:'Build: "this how many afghani is?"',a:['دا','څو','افغانۍ','دي'],pool:['دا','څو','افغانۍ','دي','ګران']},
 {t:'match',q:'Match word and meaning',pairs:[['پیسې','money'],['افغانۍ','afghani'],['بیه','price'],['ګران','expensive'],['ارزان','cheap']]},
 {t:'mc',q:'Which means "money"?',o:['پیسې','بیه','څو','ارزان'],a:0},
-{t:'li',q:'Listen — which word?',say:'څومره',o:['څومره','څو','څوک','څه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'څومره',o:['څومره','څو','څوک','څه'],a:0},
+{t:'mc',q:'Review — which means "my name is Ahmad"?',o:['زما نوم احمد دی','وريجې','سهار','پلار'],a:0}]},
 
 {id:'ps_bignum',title:'Hundreds & thousands',step:'learn',meta:'سل زر لک',vocab:[['سل','sal','100'],['دوه سوه','dwa sawa','200'],['زر','zar','1,000'],['پنځه زره','pindza zara','5,000'],['لک','lak','100,000 (lakh)'],['ملیون','milyon','million']],ex:[
 {t:'note',tag:'Beyond سل',q:'سوه · زر',body:'<p>You know <span class="deva">سل</span> = 100. Counting hundreds uses <span class="deva">سوه</span>: <span class="deva">دوه سوه</span> <b>dwa sawa</b> 200, <span class="deva">درې سوه</span> 300. <span class="deva">زر</span> <b>zar</b> = 1,000: <span class="deva">پنځه زره</span> = 5,000.</p>',eg:[['سل','sal','100'],['دوه سوه','dwa sawa','200'],['زر','zar','1,000']]},
@@ -1247,7 +1254,8 @@ const PS_Z5=[
 {t:'wb',q:'Build 5,000',a:['پنځه','زره'],pool:['پنځه','زره','سوه','سل']},
 {t:'match',q:'Match number and value',pairs:[['سل','100'],['دوه سوه','200'],['زر','1,000'],['لک','100,000'],['ملیون','million']]},
 {t:'mc',q:'Hundreds use the word…',o:['سوه','زره','لکه','لس'],a:0},
-{t:'li',q:'Listen — which number?',say:'سل',o:['سل','زر','شل','لک'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'سل',o:['سل','زر','شل','لک'],a:0},
+{t:'mc',q:'Review — which means "nice to meet you"?',o:['خوشحاله شوم','څلوېښت','ځم','نه یم'],a:0}]},
 
 {id:'ps_time',title:'Telling time',step:'learn',meta:'بجې o’clock',vocab:[['بجې','baje','o’clock'],['څو بجې دي','tso baje dee','what time is it?'],['درې بجې دي','dre baje dee','it is 3 o’clock'],['نیمه','nima','half'],['دقیقه','daqiqa','minute'],['ساعت','saa’at','hour / clock']],ex:[
 {t:'note',tag:'The hour',q:'بجې',body:'<p><span class="deva">بجې</span> <b>baje</b> = o’clock. Ask <span class="deva">څو بجې دي</span> <b>tso baje dee</b> = "how many o’clock are?" Answer with the number: <span class="deva">درې بجې دي</span> = "it is 3 o’clock".</p>',eg:[['څو بجې دي','tso baje dee','what time is it?'],['درې بجې دي','dre baje dee','3 o’clock']]},
@@ -1287,7 +1295,8 @@ const PS_Z5=[
 {t:'wb',q:'Build: "it is 5 o’clock"',a:['پنځه','بجې','دي'],pool:['پنځه','بجې','دي','څو']},
 {t:'match',q:'Match word and meaning',pairs:[['بجې','o’clock'],['نیمه','half'],['دقیقه','minute'],['ساعت','hour'],['څو بجې دي','what time is it?']]},
 {t:'mc',q:'"it is 3 o’clock" =',o:['درې بجې دي','درې ساعته','درې دقیقې','بجې درې'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'درې بجې دي',o:['درې بجې دي','څو بجې دي','پنځه بجې دي','نیمه'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'درې بجې دي',o:['درې بجې دي','څو بجې دي','پنځه بجې دي','نیمه'],a:0},
+{t:'mc',q:'Review — which means "no problem"?',o:['پروا نه لري','خور','هو','زما نوم احمد دی'],a:0}]},
 
 {id:'ps_week',title:'Days of the week',step:'learn',meta:'شنبه to جمعه',vocab:[['ورځ','wradz','day'],['اونۍ','wuney','week'],['شنبه','shanba','Saturday'],['یکشنبه','yakshanba','Sunday'],['دوشنبه','dushanba','Monday'],['جمعه','juma','Friday']],ex:[
 {t:'note',tag:'The week',q:'ورځ · اونۍ',body:'<p><span class="deva">ورځ</span> <b>wradz</b> = day, <span class="deva">اونۍ</span> <b>wuney</b> = week. Afghan weekday names count from <span class="deva">شنبه</span> <b>shanba</b> (Saturday): <span class="deva">یکشنبه</span> Sunday (one-after), <span class="deva">دوشنبه</span> Monday (two-after) — recognition vocab you will see everywhere.</p>',eg:[['ورځ','wradz','day'],['اونۍ','wuney','week'],['شنبه','shanba','Saturday']]},
@@ -1327,7 +1336,8 @@ const PS_Z5=[
 {t:'wb',q:'Order: yesterday, today, tomorrow',a:['پرون','نن','سبا'],pool:['سبا','پرون','نن','ورځ']},
 {t:'match',q:'Match word and meaning',pairs:[['ورځ','day'],['اونۍ','week'],['شنبه','Saturday'],['یکشنبه','Sunday'],['جمعه','Friday']]},
 {t:'mc',q:'دوشنبه means Monday because it counts two days after…',o:['شنبه','جمعه','نن','اونۍ'],a:0},
-{t:'li',q:'Listen — which word?',say:'اونۍ',o:['اونۍ','ورځ','جمعه','شنبه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'اونۍ',o:['اونۍ','ورځ','جمعه','شنبه'],a:0},
+{t:'mc',q:'Review — which means "small (masculine)"?',o:['کوچنی','نه پوهېږم','کوم','ښار'],a:0}]},
 
 {id:'ps_shop',title:'At the bazaar',step:'learn',meta:'Buy, sell & bargain',vocab:[['اخلم','akhlam','(I) buy / take'],['پلوري','ploree','(he/she) sells'],['ډېر ګران دی','dder graan day','it is too expensive'],['ارزان یې کړه','arzaan ye krra','make it cheaper'],['دا واخله','daa waakhla','take this'],['خرڅول','khartsawal','to sell']],ex:[
 {t:'note',tag:'Buying',q:'اخلم',body:'<p><span class="deva">اخلم</span> <b>akhlam</b> = I buy / I take: <span class="deva">زه دا اخلم</span> = "I take this one" — the moment of decision in the bazaar! The seller <span class="deva">پلوري</span> <b>ploree</b> = sells.</p>',eg:[['اخلم','akhlam','I buy / take'],['پلوري','ploree','he/she sells']]},
@@ -1449,7 +1459,8 @@ const PS_Z6=[
 {t:'wb',q:'Build: "fresh bread"',a:['نوې','ډوډۍ'],pool:['نوې','ډوډۍ','نوی','زوړ']},
 {t:'match',q:'Match the pairs',pairs:[['نوی','new (m)'],['نوې','new (f)'],['زوړ','old (m)'],['زړه','old (f)'],['ښکلی','beautiful (m)']]},
 {t:'mc',q:'Pashto adjectives agree in…',o:['gender (m/f)','color','price','time'],a:0},
-{t:'li',q:'Listen — which word?',say:'ښه',o:['ښه','نوی','زوړ','ښکلی'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ښه',o:['ښه','نوی','زوړ','ښکلی'],a:0},
+{t:'mc',q:'Review — which means "mother"?',o:['مور','شل','خور','یم'],a:0}]},
 
 {id:'ps_colors',title:'Colors',step:'learn',meta:'رنګ — colors that agree',vocab:[['رنګ','rang','color'],['سور','sur','red (m)'],['شین','shin','green / blue'],['ژېړ','zherr','yellow'],['سپین','spin','white'],['تور','tor','black']],ex:[
 {t:'note',tag:'Colors',q:'سور شین ژېړ',body:'<p><span class="deva">رنګ</span> <b>rang</b> = color. <span class="deva">سور</span> <b>sur</b> red, <span class="deva">ژېړ</span> <b>zherr</b> yellow, <span class="deva">سپین</span> <b>spin</b> white, <span class="deva">تور</span> <b>tor</b> black — you met تور in تور چای black tea!</p>',eg:[['سور','sur','red'],['ژېړ','zherr','yellow'],['سپین','spin','white'],['تور','tor','black']]},
@@ -1489,7 +1500,8 @@ const PS_Z6=[
 {t:'wb',q:'Build: "a white house"',a:['سپین','کور'],pool:['سپین','کور','تور','شین']},
 {t:'match',q:'Match color and meaning',pairs:[['سور','red'],['شین','green / blue'],['ژېړ','yellow'],['سپین','white'],['تور','black']]},
 {t:'mc',q:'"black tea" =',o:['تور چای','شین چای','سور چای','چای تور'],a:0},
-{t:'li',q:'Listen — which color?',say:'ژېړ',o:['ژېړ','سور','شین','تور'],a:0}]},
+{t:'li',q:'Listen — which color?',say:'ژېړ',o:['ژېړ','سور','شین','تور'],a:0},
+{t:'mc',q:'Review — which means "rice"?',o:['وريجې','کوم','څه غواړې','شنبه'],a:0}]},
 
 {id:'ps_compare',title:'More & most',step:'learn',meta:'تر … comparison',vocab:[['تر','tar','than'],['لوی','loy','big / elder'],['تر تا لوی','tar taa loy','bigger than you'],['له ټولو','la ttolo','than all (the most)'],['غوره','ghwara','better / preferable'],['کشر','kashar','younger']],ex:[
 {t:'note',tag:'Compare with تر',q:'زه تر تا لوی یم',body:'<p>No "-er" needed: put <span class="deva">تر</span> <b>tar</b> (than) before what you beat: <span class="deva">زه تر تا لوی یم</span> = "I than you big am" = I am bigger than you! <span class="deva">لوی</span> <b>loy</b> = big/elder, <span class="deva">کشر</span> <b>kashar</b> = younger.</p>',eg:[['تر','tar','than'],['لوی','loy','big / elder'],['تر تا لوی','tar taa loy','bigger than you']]},
@@ -1529,7 +1541,8 @@ const PS_Z6=[
 {t:'wb',q:'Build: "I am bigger than you"',a:['زه','تر','تا','لوی','یم'],pool:['زه','تر','تا','لوی','یم','ښه']},
 {t:'match',q:'Match word and meaning',pairs:[['تر','than'],['لوی','big / elder'],['کشر','younger'],['غوره','better'],['له ټولو','than all']]},
 {t:'mc',q:'لوی and کشر also rank siblings by…',o:['age (elder/younger)','height','name','distance'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'تر تا لوی',o:['تر تا لوی','له ټولو','کشر','غوره'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'تر تا لوی',o:['تر تا لوی','له ټولو','کشر','غوره'],a:0},
+{t:'mc',q:'Review — which means "noon / midday"?',o:['غرمه','نه خورم','کورنۍ','پنځه'],a:0}]},
 
 {id:'ps_feel',title:'Feelings',step:'learn',meta:'Happy, tired, hungry',vocab:[['خوشحاله','khushaala','happy'],['خپه','khapa','sad / upset'],['ستړی','starray','tired (m)'],['وږی','wugay','hungry (m)'],['تږی','tugay','thirsty (m)'],['ناروغ','naarogh','sick / unwell']],ex:[
 {t:'note',tag:'How you feel',q:'خوشحاله · خپه',body:'<p><span class="deva">خوشحاله</span> <b>khushaala</b> = happy (you met it in خوشحاله شوم!). <span class="deva">خپه</span> <b>khapa</b> = sad / upset. <span class="deva">زه خوشحاله یم</span> = I am happy.</p>',eg:[['خوشحاله','khushaala','happy'],['خپه','khapa','sad']]},
@@ -1569,7 +1582,8 @@ const PS_Z6=[
 {t:'wb',q:'Build: "I am tired"',a:['زه','ستړی','یم'],pool:['زه','ستړی','یم','خپه']},
 {t:'match',q:'Match feeling and meaning',pairs:[['خوشحاله','happy'],['خپه','sad'],['ستړی','tired'],['وږی','hungry'],['تږی','thirsty']]},
 {t:'mc',q:'روغ (healthy) hides inside روغتون and…',o:['ناروغ','ستړی','وږی','خپه'],a:0},
-{t:'li',q:'Listen — which feeling?',say:'ستړی',o:['ستړی','ناروغ','خپه','وږی'],a:0}]},
+{t:'li',q:'Listen — which feeling?',say:'ستړی',o:['ستړی','ناروغ','خپه','وږی'],a:0},
+{t:'mc',q:'Review — which means "(I) work"?',o:['کار کوم','ښوونځی','اونۍ','دوه'],a:0}]},
 
 {id:'ps_weather',title:'Weather & seasons',step:'learn',meta:'Heat, rain & Hindu Kush snow',vocab:[['هوا','hawaa','weather / air'],['ګرمي','garmee','heat / hot weather'],['یخني','yakhnee','cold weather'],['باران','baaraan','rain'],['واوره','waawra','snow'],['باد','baad','wind']],ex:[
 {t:'note',tag:'Hot & cold',q:'ګرمي · یخني',body:'<p><span class="deva">هوا</span> <b>hawaa</b> = weather (and air). <span class="deva">ګرمي</span> <b>garmee</b> = heat: <span class="deva">نن ګرمي ده</span> "today it is hot". <span class="deva">یخني</span> <b>yakhnee</b> = cold weather (یخ = ice!).</p>',eg:[['هوا','hawaa','weather'],['ګرمي','garmee','heat'],['یخني','yakhnee','cold']]},
@@ -1609,7 +1623,8 @@ const PS_Z6=[
 {t:'wb',q:'Build: "today it is hot"',a:['نن','ګرمي','ده'],pool:['نن','ګرمي','ده','باران']},
 {t:'match',q:'Match word and meaning',pairs:[['هوا','weather'],['ګرمي','heat'],['یخني','cold'],['باران','rain'],['واوره','snow']]},
 {t:'mc',q:'"it rains" =',o:['باران ورېږي','باران دی','باران کوم','باران یم'],a:0},
-{t:'li',q:'Listen — which word?',say:'باد',o:['باد','باران','واوره','هوا'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'باد',o:['باد','باران','واوره','هوا'],a:0},
+{t:'mc',q:'Review — which means "(I) sleep"?',o:['ویده کېږم','دا واخله','غټه','څو'],a:0}]},
 
 {id:'ps_body',title:'Body & feeling unwell',step:'learn',meta:'Head, hand & درد',vocab:[['سر','sar','head'],['سترګه','starga','eye'],['لاس','laas','hand'],['خېټه','khetta','stomach'],['درد','dard','pain'],['ډاکټر','ddaakttar','doctor']],ex:[
 {t:'note',tag:'Body parts',q:'سر سترګه لاس خېټه',body:'<p><span class="deva">سر</span> <b>sar</b> head, <span class="deva">سترګه</span> <b>starga</b> eye, <span class="deva">لاس</span> <b>laas</b> hand, <span class="deva">خېټه</span> <b>khetta</b> stomach.</p>',eg:[['سر','sar','head'],['سترګه','starga','eye'],['لاس','laas','hand']]},
@@ -1691,7 +1706,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "yesterday I was tired"',a:['پرون','زه','ستړی','وم'],pool:['پرون','زه','ستړی','وم','نن']},
 {t:'match',q:'Match person and past to-be',pairs:[['زه','وم'],['ته','وې'],['هغه (he)','و'],['هغه (she)','وه'],['موږ','وو']]},
 {t:'mc',q:'دی is to و as ده is to…',o:['وه','وم','وو','وې'],a:0},
-{t:'li',q:'Listen — which word?',say:'وو',o:['وو','وم','وه','و'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'وو',o:['وو','وم','وه','و'],a:0},
+{t:'mc',q:'Review — which means "price"?',o:['بیه','خورم','اخلم','څه'],a:0}]},
 
 {id:'ps_went',title:'I went, I came',step:'learn',meta:'The star past verbs',vocab:[['لاړم','laarram','(I) went'],['راغلم','raaghlam','(I) came'],['لاړ','laarr','(he) went'],['لاړه','laarra','(she) went'],['راغی','raaghay','(he) came'],['راغله','raaghla','(she) came']],ex:[
 {t:'note',tag:'Went',q:'لاړم',body:'<p><span class="deva">لاړم</span> <b>laarram</b> = I went: <span class="deva">پرون زه بازار ته لاړم</span> = "yesterday I went to the bazaar". He/she split, as ever: <span class="deva">لاړ</span> he went, <span class="deva">لاړه</span> she went.</p>',eg:[['لاړم','laarram','I went'],['لاړ','laarr','he went'],['لاړه','laarra','she went']]},
@@ -1731,7 +1747,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "yesterday I went to the bazaar"',a:['پرون','زه','بازار','ته','لاړم'],pool:['پرون','زه','بازار','ته','لاړم','راغلم']},
 {t:'match',q:'Match verb and meaning',pairs:[['لاړم','I went'],['راغلم','I came'],['لاړ','he went'],['لاړه','she went'],['راغله','she came']]},
 {t:'mc',q:'Past verbs still sit…',o:['at the end','first','second','anywhere'],a:0},
-{t:'li',q:'Listen — which verb?',say:'راغله',o:['راغله','راغی','لاړه','راغلم'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'راغله',o:['راغله','راغی','لاړه','راغلم'],a:0},
+{t:'mc',q:'Review — which means "200"?',o:['دوه سوه','شپږ','دوولس','نهه'],a:0}]},
 
 {id:'ps_erg',title:'The ergative past',step:'learn',meta:'ما … the famous quirk',vocab:[['ما','maa','I (past-doer form)'],['ما ډوډۍ وخوړه','maa ddoddey wukhorra','I ate bread'],['ما اوبه وڅښلې','maa oba wutsxale','I drank water'],['ما ولیدل','maa wulidal','I saw'],['تا','taa','you (past-doer form)'],['ما چای وڅښه','maa chaay wutsxa','I drank tea']],ex:[
 {t:'note',tag:'Pashto’s famous quirk',q:'زه → ما',body:'<p>Here is Pashto’s party trick. In the past, with verbs that take an object, the doer changes form: <span class="deva">زه</span> becomes <span class="deva">ما</span> <b>maa</b>, <span class="deva">ته</span> becomes <span class="deva">تا</span>. <span class="deva">ما ډوډۍ وخوړه</span> = "I ate bread".</p><p>Stranger still: the verb agrees with the <b>bread</b>, not with you! For now, just <b>recognize the pattern</b> — ما + thing + verb.</p>',tip:'Linguists call this "ergative". You can just call it the past flip.'},
@@ -1772,7 +1789,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "I ate bread"',a:['ما','ډوډۍ','وخوړه'],pool:['ما','ډوډۍ','وخوړه','څښم']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ما ډوډۍ وخوړه','I ate bread'],['ما چای وڅښه','I drank tea'],['ما ولیدل','I saw'],['زه → ما','the past flip']]},
 {t:'mc',q:'For now your job with the flip is to…',o:['recognize the ما + thing + verb pattern','master every rule','avoid the past','translate word by word'],a:0},
-{t:'li',q:'Listen — which word?',say:'تا',o:['تا','ما','ته','دا'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'تا',o:['تا','ما','ته','دا'],a:0},
+{t:'mc',q:'Review — which means "1,000"?',o:['زر','اووه','څلور','درې'],a:0}]},
 
 {id:'ps_future',title:'Will',step:'learn',meta:'The little word به',vocab:[['به','ba','will (future marker)'],['زه به ځم','za ba dzam','I will go'],['سبا به','sabaa ba','tomorrow … will'],['زه به راځم','za ba raadzam','I will come'],['هغه به وي','hagha ba wee','he/she will be'],['به نه','ba na','will not']],ex:[
 {t:'note',tag:'The future in one word',q:'به',body:'<p>The future needs just <span class="deva">به</span> <b>ba</b>, slipped in <b>second position</b>: <span class="deva">زه به ځم</span> = "I will go", <span class="deva">سبا به زه بازار ته ځم</span> = "tomorrow I will go to the bazaar".</p>',tip:'به loves being the second word of the sentence.'},
@@ -1812,7 +1830,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "tomorrow I will go to the bazaar"',a:['سبا','به','زه','بازار','ته','ځم'],pool:['سبا','به','زه','بازار','ته','ځم','نن']},
 {t:'match',q:'Match time and verb',pairs:[['پرون','لاړم'],['نن','ځم'],['سبا','به ځم'],['هوا به','ښه وي']]},
 {t:'mc',q:'به prefers which slot?',o:['second word','first word','last word','no rule'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'زه به نه ځم',o:['زه به نه ځم','زه به ځم','زه نه ځم','سبا به'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'زه به نه ځم',o:['زه به نه ځم','زه به ځم','زه نه ځم','سبا به'],a:0},
+{t:'mc',q:'Review — which means "5,000"?',o:['پنځه زره','اته','شل','دوه سوه'],a:0}]},
 
 {id:'ps_can',title:'I can',step:'learn',meta:'… کولی شم',vocab:[['شم','sham','(I) can (become able)'],['کولی شم','kawalay sham','(I) can do'],['تللی شم','tlalay sham','(I) can go'],['ویلی شم','wayalay sham','(I) can say/speak'],['نه شم','na sham','(I) cannot'],['پښتو ویلی شم','paxto wayalay sham','I can speak Pashto']],ex:[
 {t:'note',tag:'Can = verb + شم',q:'کولی شم',body:'<p>"Can" pairs the verb with <span class="deva">شم</span> <b>sham</b>: <span class="deva">زه کولی شم</span> = "I can do (it)", <span class="deva">زه تللی شم</span> = "I can go". The shining prize: <span class="deva">زه پښتو ویلی شم</span> = "I can speak Pashto!"</p>',eg:[['کولی شم','kawalay sham','I can do'],['تللی شم','tlalay sham','I can go'],['پښتو ویلی شم','paxto wayalay sham','I can speak Pashto']]},
@@ -1852,7 +1871,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "I can speak a little Pashto"',a:['زه','لږ','پښتو','ویلی','شم'],pool:['زه','لږ','پښتو','ویلی','شم','بس']},
 {t:'match',q:'Match phrase and meaning',pairs:[['کولی شم','I can do'],['تللی شم','I can go'],['ویلی شم','I can speak'],['نه شم','I cannot'],['شم','I can']]},
 {t:'mc',q:'"can" = verb + …',o:['شم','یم','به','کوم'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'پښتو ویلی شم',o:['پښتو ویلی شم','کولی شم','نه شم','تللی شم'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'پښتو ویلی شم',o:['پښتو ویلی شم','کولی شم','نه شم','تللی شم'],a:0},
+{t:'mc',q:'Review — which means "million"?',o:['ملیون','رنګ','نیمه','راغی'],a:0}]},
 
 {id:'ps_must',title:'Must & commands',step:'learn',meta:'باید, راشه, کېنه',vocab:[['باید','baayad','must / have to'],['راشه','raasha','come! (command)'],['کېنه','kena','sit down! (command)'],['ورو ورو','wro wro','slowly'],['وخوره','wukhora','eat! (command)'],['مه','ma','do not! (with commands)']],ex:[
 {t:'note',tag:'Must',q:'باید',body:'<p><span class="deva">باید</span> <b>baayad</b> = must: <span class="deva">زه باید ولاړ شم</span> = "I must go". Simply put باید before the action.</p>',eg:[['باید','baayad','must'],['زه باید ولاړ شم','za baayad wlaarr sham','I must go']]},
@@ -1892,7 +1912,8 @@ const PS_Z7=[
 {t:'wb',q:'Build: "come! sit! eat!"',a:['راشه','کېنه','وخوره'],pool:['راشه','کېنه','وخوره','باید']},
 {t:'match',q:'Match the time machine',pairs:[['وم','I was'],['لاړم','I went'],['به ځم','I will go'],['ویلی شم','I can speak'],['باید','must']]},
 {t:'mc',q:'Commands forbid with…',o:['مه','نه','بس','به'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ورو ورو',o:['ورو ورو','راشه','باید','کېنه'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ورو ورو',o:['ورو ورو','راشه','باید','کېنه'],a:0},
+{t:'mc',q:'Review — which means "it is 3 o’clock"?',o:['درې بجې دي','ساعت','ما چای وڅښه','جمعه'],a:0}]},
 ];
 const PS_Z8=[
 /* ===================== ZONE 8 · OUT & ABOUT ===================== */
@@ -1934,7 +1955,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "I go by car"',a:['زه','په','موټر','کې','ځم'],pool:['زه','په','موټر','کې','ځم','ته']},
 {t:'match',q:'Match word and meaning',pairs:[['موټر','car'],['بس','bus'],['ټکسي','taxi'],['الوتکه','airplane'],['سفر','journey']]},
 {t:'mc',q:'Which means "road"?',o:['سړک','سفر','بس','موټر'],a:0},
-{t:'li',q:'Listen — which word?',say:'سفر',o:['سفر','سړک','الوتکه','بس'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'سفر',o:['سفر','سړک','الوتکه','بس'],a:0},
+{t:'mc',q:'Review — which means "half"?',o:['نیمه','بازار','هېڅ','ګرمي'],a:0}]},
 
 {id:'ps_dir',title:'Directions',step:'learn',meta:'Right, left, straight',vocab:[['ښي','xee','right'],['کیڼ','kinn','left'],['مخامخ','makhaamakh','straight ahead'],['ودرېږه','wudrega','stop!'],['دلته','dalta','here'],['هلته','halta','there']],ex:[
 {t:'note',tag:'Which way?',q:'ښي · کیڼ · مخامخ',body:'<p><span class="deva">ښي</span> <b>xee</b> = right, <span class="deva">کیڼ</span> <b>kinn</b> = left (with the retroflex ڼ!), <span class="deva">مخامخ</span> <b>makhaamakh</b> = straight ahead ("face-to-face").</p>',eg:[['ښي','xee','right'],['کیڼ','kinn','left'],['مخامخ','makhaamakh','straight']]},
@@ -1974,7 +1996,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "stop here, please"',a:['دلته','ودرېږه','مهرباني وکړه'],pool:['دلته','ودرېږه','مهرباني وکړه','ښي']},
 {t:'match',q:'Match word and meaning',pairs:[['ښي','right'],['کیڼ','left'],['مخامخ','straight'],['دلته','here'],['هلته','there']]},
 {t:'mc',q:'Tell the taxi to stop:',o:['ودرېږه','راشه','کېنه','وخوره'],a:0},
-{t:'li',q:'Listen — which word?',say:'کیڼ',o:['کیڼ','ښي','مخامخ','دلته'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'کیڼ',o:['کیڼ','ښي','مخامخ','دلته'],a:0},
+{t:'mc',q:'Review — which means "minute"?',o:['دقیقه','لاړم','ښوونځی','په بازار کې'],a:0}]},
 
 {id:'ps_hotel',title:'A room for the night',step:'learn',meta:'Hotel & guesthouse',vocab:[['خونه','khuna','room'],['کیلي','keelee','key'],['بستره','bastara','bed / bedding'],['تشناب','tashnaab','bathroom'],['شپه','shpa','night'],['خالي خونه','khaalee khuna','a free room']],ex:[
 {t:'note',tag:'Checking in',q:'خونه · کیلي',body:'<p><span class="deva">خونه</span> <b>khuna</b> = room. Ask <span class="deva">خالي خونه لرئ؟</span> = "do you have a free room?" (<span class="deva">خالي</span> = empty/free). <span class="deva">کیلي</span> <b>keelee</b> = key.</p>',eg:[['خونه','khuna','room'],['خالي','khaalee','free / empty'],['کیلي','keelee','key']]},
@@ -2014,7 +2037,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "do you have a free room?"',a:['خالي','خونه','لرئ'],pool:['خالي','خونه','لرئ','شپه']},
 {t:'match',q:'Match word and meaning',pairs:[['خونه','room'],['کیلي','key'],['بستره','bed'],['تشناب','bathroom'],['شپه','night']]},
 {t:'mc',q:'"one night" =',o:['یوه شپه','یو ورځ','شپه','یوه ورځ'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'خالي خونه',o:['خالي خونه','یوه شپه','خونه','کیلي'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'خالي خونه',o:['خالي خونه','یوه شپه','خونه','کیلي'],a:0},
+{t:'mc',q:'Review — which means "Saturday"?',o:['شنبه','دېرش','ډېر ګران دی','سهار'],a:0}]},
 
 {id:'ps_phone',title:'Phone & internet',step:'learn',meta:'Calls, numbers & wifi',vocab:[['تلیفون','telefun','telephone'],['شمېره','shmera','number'],['زنګ ووهه','zang wuwaha','call! (ring)'],['انټرنېټ','anttarnett','internet'],['پیغام','payghaam','message'],['واي فای','waai faai','wifi']],ex:[
 {t:'note',tag:'Ring ring',q:'تلیفون · شمېره',body:'<p><span class="deva">تلیفون</span> <b>telefun</b> = telephone, <span class="deva">شمېره</span> <b>shmera</b> = number: <span class="deva">ستا شمېره څو ده</span> = "what is your number?" To call is to "hit a ring": <span class="deva">زنګ ووهه</span> = "give (me) a call!"</p>',eg:[['تلیفون','telefun','phone'],['شمېره','shmera','number'],['زنګ ووهه','zang wuwaha','call!']]},
@@ -2054,7 +2078,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "what is your number?"',a:['ستا','شمېره','څو','ده'],pool:['ستا','شمېره','څو','ده','زنګ']},
 {t:'match',q:'Match word and meaning',pairs:[['تلیفون','phone'],['شمېره','number'],['پیغام','message'],['انټرنېټ','internet'],['واي فای','wifi']]},
 {t:'mc',q:'"call!" is literally "hit a…"',o:['ring (زنګ)','wire','key','drum'],a:0},
-{t:'li',q:'Listen — which word?',say:'پیغام',o:['پیغام','شمېره','تلیفون','زنګ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'پیغام',o:['پیغام','شمېره','تلیفون','زنګ'],a:0},
+{t:'mc',q:'Review — which means "Sunday"?',o:['یکشنبه','په کور کې','خونه','لوی'],a:0}]},
 
 {id:'ps_guest',title:'Guests & melmastia',step:'learn',meta:'The heart of Pashtunwali',vocab:[['مېلمه','melma','guest'],['مېلمستیا','melmastyaa','hospitality'],['کوربه','korba','host'],['راشئ','raashey','come! (polite)'],['کور مو ودان','kor mo wadaan','may your house prosper'],['ډېر ښه','dder xa','very good / wonderful']],ex:[
 {t:'note',tag:'The guest is honored',q:'مېلمه · مېلمستیا',body:'<p><span class="deva">مېلمه</span> <b>melma</b> = guest; <span class="deva">مېلمستیا</span> <b>melmastyaa</b> = hospitality — the most famous pillar of Pashtun culture. A guest is honored with the best food, the best seat, endless چای.</p>',eg:[['مېلمه','melma','guest'],['مېلمستیا','melmastyaa','hospitality'],['کوربه','korba','host']]},
@@ -2094,7 +2119,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "come! sit! drink tea!"',a:['راشئ','کېنه','چای وڅښه'],pool:['راشئ','کېنه','چای وڅښه','بس']},
 {t:'match',q:'Match word and meaning',pairs:[['مېلمه','guest'],['کوربه','host'],['مېلمستیا','hospitality'],['راشئ','come! (polite)'],['کور مو ودان','house-blessing']]},
 {t:'mc',q:'The famous pillar of Pashtun culture you just learned is…',o:['مېلمستیا','بازار','سفر','موټر'],a:0},
-{t:'li',q:'Listen — which word?',say:'مېلمستیا',o:['مېلمستیا','مېلمه','کوربه','راشئ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مېلمستیا',o:['مېلمستیا','مېلمه','کوربه','راشئ'],a:0},
+{t:'mc',q:'Review — which means "Monday"?',o:['دوشنبه','ګرمي','پنځه','یکشنبه'],a:0}]},
 
 {id:'ps_learner',title:'Learner lifelines',step:'learn',meta:'Keep the conversation alive',vocab:[['ورو ورو ووایه','wro wro wuwaaya','say it slowly'],['بیا ووایه','byaa wuwaaya','say it again'],['پوهېږم','pohegam','I understand'],['په پښتو کې','pa paxto ke','in Pashto'],['څنګه وایې','tsanga waaye','how do you say?'],['لږ پښتو زده لرم','lag paxto zda laram','I know a little Pashto']],ex:[
 {t:'note',tag:'Slow down, please',q:'ورو ورو ووایه',body:'<p>Two rescue lines: <span class="deva">ورو ورو ووایه</span> <b>wro wro wuwaaya</b> = "say it slowly", and <span class="deva">بیا ووایه</span> <b>byaa wuwaaya</b> = "say it again" (بیا = again).</p>',eg:[['ورو ورو ووایه','wro wro wuwaaya','say it slowly'],['بیا ووایه','byaa wuwaaya','say it again']]},
@@ -2134,7 +2160,8 @@ const PS_Z8=[
 {t:'wb',q:'Build: "I do not understand — say it again"',a:['نه پوهېږم','بیا','ووایه'],pool:['نه پوهېږم','بیا','ووایه','ورو ورو']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ورو ورو ووایه','say slowly'],['بیا ووایه','say again'],['پوهېږم','I understand'],['په پښتو کې','in Pashto'],['لږ پښتو زده لرم','I know a little Pashto']]},
 {t:'mc',q:'Eight zones done! With full pride you can now say…',o:['زه پښتو ویلی شم — کور مو ودان!','نه پوهېږم','بس','هېڅ'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'لږ پښتو زده لرم',o:['لږ پښتو زده لرم','پوهېږم','نه پوهېږم','څنګه وایې'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'لږ پښتو زده لرم',o:['لږ پښتو زده لرم','پوهېږم','نه پوهېږم','څنګه وایې'],a:0},
+{t:'mc',q:'Review — which means "(he/she) sells"?',o:['پلوري','سپین','واي فای','نه خورم'],a:0}]},
 ];
 const PS_Z9=[
 /* ===================== ZONE 9 · SAY MORE ===================== */
@@ -2176,7 +2203,9 @@ const PS_Z9=[
 {t:'wb',q:'Build: "I want to, but I have no money"',a:['زه','غواړم','خو','پیسې','نه','لرم'],pool:['زه','غواړم','خو','پیسې','نه','لرم','که']},
 {t:'match',q:'Match word and meaning',pairs:[['خو','but'],['ځکه چې','because'],['که','if'],['یا','or'],['نو','so / then']]},
 {t:'mc',q:'A reason clause starts with…',o:['ځکه چې','خو','یا','او'],a:0},
-{t:'li',q:'Listen — which word?',say:'یا',o:['یا','او','خو','که'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'یا',o:['یا','او','خو','که'],a:0},
+{t:'mc',q:'Review — which means "it is too expensive"?',o:['ډېر ګران دی','کورنۍ','نه ځم','غواړم'],a:0},
+{t:'mc',q:'Review — which means "I drank tea"?',o:['ما چای وڅښه','مننه','له کومه یې','هلته'],a:0}]},
 
 {id:'ps_think',title:'Think, see, hear',step:'learn',meta:'Mind & senses',vocab:[['فکر کوم','fikr kawam','(I) think'],['زما په فکر','zmaa pa fikr','in my opinion'],['وینم','winam','(I) see'],['اورم','awram','(I) hear'],['زده کوم','zda kawam','(I) learn'],['هېروم','herawam','(I) forget']],ex:[
 {t:'note',tag:'I think…',q:'فکر کوم',body:'<p><span class="deva">فکر کوم</span> <b>fikr kawam</b> = "I do a thought" = I think — another کوم compound! Open an opinion with <span class="deva">زما په فکر</span> <b>zmaa pa fikr</b> = "in my thought/opinion".</p>',eg:[['فکر کوم','fikr kawam','I think'],['زما په فکر','zmaa pa fikr','in my opinion']]},
@@ -2216,7 +2245,9 @@ const PS_Z9=[
 {t:'wb',q:'Build: "in my opinion the tea is good"',a:['زما په فکر','چای','ښه','دی'],pool:['زما په فکر','چای','ښه','دی','خو']},
 {t:'match',q:'Match verb and meaning',pairs:[['فکر کوم','I think'],['وینم','I see'],['اورم','I hear'],['زده کوم','I learn'],['هېروم','I forget']]},
 {t:'mc',q:'"I am learning Pashto" =',o:['زه پښتو زده کوم','زه پښتو هېروم','زه پښتو اورم','زه پښتو وینم'],a:0},
-{t:'li',q:'Listen — which verb?',say:'فکر کوم',o:['فکر کوم','زده کوم','وینم','اورم'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'فکر کوم',o:['فکر کوم','زده کوم','وینم','اورم'],a:0},
+{t:'mc',q:'Review — which means "make it cheaper"?',o:['ارزان یې کړه','بجې','ناروغ','ځم'],a:0},
+{t:'mc',q:'Review — which means "I will go"?',o:['زه به ځم','ښوونځی','لږ پښتو زده لرم','ده'],a:0}]},
 
 {id:'ps_job',title:'Work & jobs',step:'learn',meta:'What people do',vocab:[['ښوونکی','xowunkay','teacher'],['بزګر','bazgar','farmer'],['دوکاندار','dukaandaar','shopkeeper'],['زده کوونکی','zda kawunkay','student'],['موټروان','mottarwaan','driver'],['وظیفه','wazifa','job / duty']],ex:[
 {t:'note',tag:'Doers from verbs',q:'ښوونکی · زده کوونکی',body:'<p>Pashto builds doers with <b>-وونکی</b>: <span class="deva">ښوونکی</span> <b>xowunkay</b> teacher ("one who teaches" — same root as ښوونځی school!), <span class="deva">زده کوونکی</span> student ("one who learns").</p>',eg:[['ښوونکی','xowunkay','teacher'],['زده کوونکی','zda kawunkay','student']]},
@@ -2256,7 +2287,9 @@ const PS_Z9=[
 {t:'wb',q:'Build: "I am a teacher"',a:['زه','ښوونکی','یم'],pool:['زه','ښوونکی','یم','کوم']},
 {t:'match',q:'Match job and meaning',pairs:[['ښوونکی','teacher'],['بزګر','farmer'],['دوکاندار','shopkeeper'],['زده کوونکی','student'],['موټروان','driver']]},
 {t:'mc',q:'Most of Afghanistan works as…',o:['بزګران (farmers)','موټروانان','ډاکټران','ښوونکي'],a:0},
-{t:'li',q:'Listen — which job?',say:'بزګر',o:['بزګر','دوکاندار','ښوونکی','موټروان'],a:0}]},
+{t:'li',q:'Listen — which job?',say:'بزګر',o:['بزګر','دوکاندار','ښوونکی','موټروان'],a:0},
+{t:'mc',q:'Review — which means "take this"?',o:['دا واخله','راغله','ما','غواړي'],a:0},
+{t:'mc',q:'Review — which means "he/she will be"?',o:['هغه به وي','مخامخ','نوم','زده کوم'],a:0}]},
 
 {id:'ps_erg2',title:'The ergative past II',step:'learn',meta:'Said, heard, learned',vocab:[['ما وویل','maa wuwayal','I said'],['تا څه وویل','taa tsa wuwayal','what did you say?'],['ما واورېدل','maa waawredal','I heard'],['ما زده کړل','maa zda krral','I learned'],['ما وکړل','maa wukrral','I did'],['هغې','haghe','she (past-doer)']],ex:[
 {t:'note',tag:'More flipped pasts',q:'ما وویل',body:'<p>The past flip again: <span class="deva">ما وویل</span> <b>maa wuwayal</b> = I said, <span class="deva">ما واورېدل</span> = I heard, <span class="deva">ما وکړل</span> = I did. Ask back: <span class="deva">تا څه وویل؟</span> = "what did you say?" — a phrase you will use daily!</p>',eg:[['ما وویل','maa wuwayal','I said'],['تا څه وویل','taa tsa wuwayal','what did you say?'],['ما وکړل','maa wukrral','I did']]},
@@ -2296,7 +2329,9 @@ const PS_Z9=[
 {t:'wb',q:'Build: "what did you say?"',a:['تا','څه','وویل'],pool:['تا','څه','وویل','وایم']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ما وویل','I said'],['ما واورېدل','I heard'],['ما زده کړل','I learned'],['ما وکړل','I did'],['هغې','she (past-doer)']]},
 {t:'mc',q:'ما پښتو زده کړل proudly announces…',o:['I learned Pashto','I forgot Pashto','I will learn','I am learning'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ما زده کړل',o:['ما زده کړل','ما وویل','ما واورېدل','ما وکړل'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ما زده کړل',o:['ما زده کړل','ما وویل','ما واورېدل','ما وکړل'],a:0},
+{t:'mc',q:'Review — which means "to sell"?',o:['خرڅول','څنګه یې','کوچنی','چېرې'],a:0},
+{t:'mc',q:'Review — which means "(I) can do"?',o:['کولی شم','زه به راځم','غواړې','لري'],a:0}]},
 
 {id:'ps_season',title:'Seasons & the year',step:'learn',meta:'کال، میاشت & the four seasons',vocab:[['کال','kaal','year'],['میاشت','myaasht','month'],['پسرلی','psarlay','spring'],['دوبی','dobay','summer'],['منی','manay','autumn'],['ژمی','zhamay','winter']],ex:[
 {t:'note',tag:'Year & month',q:'کال · میاشت',body:'<p><span class="deva">کال</span> <b>kaal</b> = year, <span class="deva">میاشت</span> <b>myaasht</b> = month. <span class="deva">سږ کال</span> = this year, <span class="deva">بل کال</span> = next year ("other year").</p>',eg:[['کال','kaal','year'],['میاشت','myaasht','month'],['بل کال','bal kaal','next year']]},
@@ -2336,7 +2371,9 @@ const PS_Z9=[
 {t:'wb',q:'Order the seasons: spring, summer, autumn, winter',a:['پسرلی','دوبی','منی','ژمی'],pool:['منی','پسرلی','ژمی','دوبی','کال']},
 {t:'match',q:'Match word and meaning',pairs:[['کال','year'],['میاشت','month'],['پسرلی','spring'],['دوبی','summer'],['ژمی','winter']]},
 {t:'mc',q:'"next year" =',o:['بل کال','سږ کال','یو کال','هر کال'],a:0},
-{t:'li',q:'Listen — which word?',say:'میاشت',o:['میاشت','کال','ورځ','منی'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'میاشت',o:['میاشت','کال','ورځ','منی'],a:0},
+{t:'mc',q:'Review — which means "more / other"?',o:['نور','سفر','یو','ودرېږه'],a:0},
+{t:'mc',q:'Review — which means "(I) can go"?',o:['تللی شم','ناروغ','وږی','تلیفون'],a:0}]},
 
 {id:'ps_story',title:'Tell your story',step:'learn',meta:'First, then, finally',vocab:[['لومړی','lumrray','first'],['بیا','byaa','then / again'],['وروسته','wrusta','after / later'],['په پای کې','pa paay ke','finally / in the end'],['یوه ورځ','yawa wradz','one day'],['کیسه','keesa','story']],ex:[
 {t:'note',tag:'Order your story',q:'لومړی … په پای کې',body:'<p>String events: <span class="deva">لومړی</span> <b>lumrray</b> first, <span class="deva">بیا</span> <b>byaa</b> then (you know it from بیا ووایه!), <span class="deva">وروسته</span> <b>wrusta</b> later, <span class="deva">په پای کې</span> <b>pa paay ke</b> finally — the sandwich even holds "the end"!</p>',eg:[['لومړی','lumrray','first'],['بیا','byaa','then'],['په پای کې','pa paay ke','finally']]},
@@ -2376,7 +2413,9 @@ const PS_Z9=[
 {t:'wb',q:'Order: first, then, finally',a:['لومړی','بیا','په پای کې'],pool:['په پای کې','لومړی','بیا','وروسته']},
 {t:'match',q:'Match connector and meaning',pairs:[['لومړی','first'],['بیا','then'],['وروسته','later'],['په پای کې','finally'],['یوه ورځ','one day']]},
 {t:'mc',q:'Which means "story"?',o:['کیسه','کتاب','کال','کور'],a:0},
-{t:'li',q:'Listen — which word?',say:'وروسته',o:['وروسته','بیا','لومړی','کیسه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'وروسته',o:['وروسته','بیا','لومړی','کیسه'],a:0},
+{t:'mc',q:'Review — which means "color"?',o:['رنګ','درد','زړه','شیدې'],a:0},
+{t:'mc',q:'Review — which means "(I) cannot"?',o:['نه شم','شین چای','نوم','هېڅ'],a:0}]},
 ];
 const PS_Z10=[
 /* ===================== ZONE 10 · YOUR PASHTO LIFE ===================== */
@@ -2418,7 +2457,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "I like bread"',a:['زما','ډوډۍ','خوښه','ده'],pool:['زما','ډوډۍ','خوښه','ده','خوښ']},
 {t:'match',q:'Match phrase and meaning',pairs:[['خوښ','liked (m)'],['خوښه','liked (f)'],['ډېر خوښ','like a lot'],['نه دی خوښ','do not like'],['ستا څه خوښ دي','what do you like?']]},
 {t:'mc',q:'"I like Pashto a lot" =',o:['زما پښتو ډېره خوښه ده','زه پښتو ډېر یم','پښتو ما خوښ','زما پښتو دی'],a:0},
-{t:'li',q:'Listen — which word?',say:'خوښ',o:['خوښ','خوښه','ښه','خوشحاله'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'خوښ',o:['خوښ','خوښه','ښه','خوشحاله'],a:0},
+{t:'mc',q:'Review — which means "yellow"?',o:['ژېړ','ما ولیدل','نه لرم','ډېر ښه'],a:0},
+{t:'mc',q:'Review — which means "must / have to"?',o:['باید','هغې','مخکې','لومړی'],a:0}]},
 
 {id:'ps_smalltalk',title:'Small talk',step:'learn',meta:'Age, years & children',vocab:[['عمر','umar','age'],['ستا عمر څو دی','staa umar tso day','how old are you?'],['کلن','kalan','years old (m)'],['کلنه','kalana','years old (f)'],['زه شل کلن یم','za shal kalan yam','I am 20 years old'],['ماشومان لرې','maashumaan lare','do you have children?']],ex:[
 {t:'note',tag:'How old?',q:'عمر · کلن',body:'<p><span class="deva">عمر</span> <b>umar</b> = age: <span class="deva">ستا عمر څو دی</span> = "how old are you?" Answer with number + <span class="deva">کلن</span> <b>kalan</b> (years-old): <span class="deva">زه شل کلن یم</span> = "I am 20". A woman says <span class="deva">کلنه</span> — agreement again!</p>',eg:[['عمر','umar','age'],['کلن','kalan','years old (m)'],['کلنه','kalana','years old (f)']]},
@@ -2458,7 +2499,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "how old are you?"',a:['ستا','عمر','څو','دی'],pool:['ستا','عمر','څو','دی','څه']},
 {t:'match',q:'Match phrase and meaning',pairs:[['عمر','age'],['کلن','years old (m)'],['کلنه','years old (f)'],['ماشومان لرې','have children?'],['زه شل کلن یم','I am 20 (m)']]},
 {t:'mc',q:'A man says کلن, a woman says…',o:['کلنه','کلن','کال','کلونه'],a:0},
-{t:'li',q:'Listen — which word?',say:'عمر',o:['عمر','کلن','کال','نوم'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'عمر',o:['عمر','کلن','کال','نوم'],a:0},
+{t:'mc',q:'Review — which means "bigger than you"?',o:['تر تا لوی','نه دی خوښ','خپه','کېنه'],a:0},
+{t:'mc',q:'Review — which means "taxi"?',o:['ټکسي','درد','تر تا لوی','څو'],a:0}]},
 
 {id:'ps_home2',title:'Village & valley',step:'learn',meta:'کلی، غر، سیند',vocab:[['کلی','kalay','village'],['غر','ghar','mountain'],['سیند','seend','river'],['باغ','baagh','garden / orchard'],['ونه','wana','tree'],['ګل','gul','flower']],ex:[
 {t:'note',tag:'The Pashtun heartland',q:'کلی · غر · سیند',body:'<p><span class="deva">کلی</span> <b>kalay</b> = village — the heart of Pashtun life. <span class="deva">غر</span> <b>ghar</b> = mountain, <span class="deva">سیند</span> <b>seend</b> = river. Most Pashto poetry lives in these three words!</p>',eg:[['کلی','kalay','village'],['غر','ghar','mountain'],['سیند','seend','river']]},
@@ -2498,7 +2541,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "my village is beautiful"',a:['زما','کلی','ښکلی','دی'],pool:['زما','کلی','ښکلی','دی','ښکلې']},
 {t:'match',q:'Match word and meaning',pairs:[['کلی','village'],['غر','mountain'],['سیند','river'],['ونه','tree'],['ګل','flower']]},
 {t:'mc',q:'Pashto poetry loves the trio…',o:['کلی، غر، سیند','موټر، بس، سړک','قلم، کتاب، کاغذ','چای، بوره، شیدې'],a:0},
-{t:'li',q:'Listen — which word?',say:'غر',o:['غر','ګل','ونه','سیند'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'غر',o:['غر','ګل','ونه','سیند'],a:0},
+{t:'mc',q:'Review — which means "than all (the most)"?',o:['له ټولو','وظیفه','سابه','رنګ'],a:0},
+{t:'mc',q:'Review — which means "airplane"?',o:['الوتکه','ما ولیدل','ما اوبه وڅښلې','ځکه چې'],a:0}]},
 
 {id:'ps_animals',title:'Animals',step:'learn',meta:'Horse, camel, goat',vocab:[['آس','aas','horse'],['اوښ','ux','camel'],['وزه','waza','goat'],['سپی','spay','dog'],['پیشو','peesho','cat'],['مرغه','murgha','bird / hen']],ex:[
 {t:'note',tag:'Riding & herding',q:'آس · اوښ · وزه',body:'<p><span class="deva">آس</span> <b>aas</b> = horse — buzkashi horses are legendary. <span class="deva">اوښ</span> <b>ux</b> = camel (with ښ!), <span class="deva">وزه</span> <b>waza</b> = goat, herded on every hillside.</p>',eg:[['آس','aas','horse'],['اوښ','ux','camel'],['وزه','waza','goat']]},
@@ -2538,7 +2583,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "the farmer has a horse"',a:['بزګر','آس','لري'],pool:['بزګر','آس','لري','دی']},
 {t:'match',q:'Match animal and meaning',pairs:[['آس','horse'],['اوښ','camel'],['وزه','goat'],['سپی','dog'],['پیشو','cat']]},
 {t:'mc',q:'Which means "goat"?',o:['وزه','مرغه','پیشو','اوښ'],a:0},
-{t:'li',q:'Listen — which animal?',say:'مرغه',o:['مرغه','وزه','پیشو','سپی'],a:0}]},
+{t:'li',q:'Listen — which animal?',say:'مرغه',o:['مرغه','وزه','پیشو','سپی'],a:0},
+{t:'mc',q:'Review — which means "better / preferable"?',o:['غوره','لک','نه لرم','دی'],a:0},
+{t:'mc',q:'Review — which means "left"?',o:['کیڼ','ماشومان لرې','نهه','باغ'],a:0}]},
 
 {id:'ps_clothes',title:'Clothes',step:'learn',meta:'The partug-kamis & more',vocab:[['جامې','jaame','clothes'],['کمیس','kamees','shirt / kamis'],['پرتوګ','partug','trousers'],['پګړۍ','pagrrey','turban'],['خولۍ','khwaley','cap / hat'],['څپلۍ','tsapley','sandals']],ex:[
 {t:'note',tag:'The national outfit',q:'کمیس · پرتوګ',body:'<p><span class="deva">جامې</span> <b>jaame</b> = clothes. The Afghan outfit is the <span class="deva">پرتوګ کمیس</span> — loose trousers (<span class="deva">پرتوګ</span>) and long shirt (<span class="deva">کمیس</span>) — comfortable from bazaar to mountain.</p>',eg:[['جامې','jaame','clothes'],['کمیس','kamees','shirt'],['پرتوګ','partug','trousers']]},
@@ -2578,7 +2625,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "I want new clothes"',a:['زه','نوې','جامې','غواړم'],pool:['زه','نوې','جامې','غواړم','زوړ']},
 {t:'match',q:'Match word and meaning',pairs:[['کمیس','shirt'],['پرتوګ','trousers'],['پګړۍ','turban'],['خولۍ','cap'],['څپلۍ','sandals']]},
 {t:'mc',q:'The national outfit pairs کمیس with…',o:['پرتوګ','پګړۍ','څپلۍ','خولۍ'],a:0},
-{t:'li',q:'Listen — which word?',say:'کمیس',o:['کمیس','پرتوګ','خولۍ','جامې'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'کمیس',o:['کمیس','پرتوګ','خولۍ','جامې'],a:0},
+{t:'mc',q:'Review — which means "younger"?',o:['کشر','کېنه','ورو ورو ووایه','مننه'],a:0},
+{t:'mc',q:'Review — which means "straight ahead"?',o:['مخامخ','تللی شم','ما','ستړی'],a:0}]},
 
 {id:'ps_fruit',title:'Fruits of Afghanistan',step:'learn',meta:'Pomegranates & grapes',vocab:[['انار','anaar','pomegranate'],['انګور','angur','grapes'],['مڼه','manna','apple'],['هندواڼه','hindwaanna','watermelon'],['بادام','baadaam','almond'],['وچه مېوه','wucha mewa','dried fruit']],ex:[
 {t:'note',tag:'Famous sweetness',q:'انار · انګور',body:'<p>Afghanistan’s fruit is legendary: <span class="deva">انار</span> <b>anaar</b> — Kandahar pomegranates are said to be the world’s best — and <span class="deva">انګور</span> <b>angur</b> = grapes, dried into world-class raisins.</p>',eg:[['انار','anaar','pomegranate'],['انګور','angur','grapes']]},
@@ -2618,7 +2667,9 @@ const PS_Z10=[
 {t:'wb',q:'Build: "I like pomegranates"',a:['زما','انار','خوښ','دی'],pool:['زما','انار','خوښ','دی','خوښه']},
 {t:'match',q:'Match fruit and meaning',pairs:[['انار','pomegranate'],['انګور','grapes'],['مڼه','apple'],['هندواڼه','watermelon'],['بادام','almond']]},
 {t:'mc',q:'"dried fruit" =',o:['وچه مېوه','نوې مېوه','خوږه مېوه','مېوه'],a:0},
-{t:'li',q:'Listen — which fruit?',say:'انګور',o:['انګور','انار','مڼه','بادام'],a:0}]},
+{t:'li',q:'Listen — which fruit?',say:'انګور',o:['انګور','انار','مڼه','بادام'],a:0},
+{t:'mc',q:'Review — which means "sad / upset"?',o:['خپه','کوچنی','څلوېښت','اوبه غواړم'],a:0},
+{t:'mc',q:'Review — which means "there"?',o:['هلته','چېرې','څو بجې دي','پلوري'],a:0}]},
 ];
 const PS_Z11=[
 /* ===================== ZONE 11 · LITTLE EXTRAS ===================== */
@@ -2660,7 +2711,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "I drink tea every day"',a:['زه','هره ورځ','چای','څښم'],pool:['زه','هره ورځ','چای','څښم','هېڅکله']},
 {t:'match',q:'Match word and meaning',pairs:[['هره ورځ','every day'],['کله کله','sometimes'],['تل','always'],['هېڅکله','never'],['یو ځل','once']]},
 {t:'mc',q:'هر agrees like an adjective: هره ورځ but هر ___',o:['کال','ورځ','میاشت','اونۍ'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'کله کله',o:['کله کله','هېڅکله','هره ورځ','تل'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'کله کله',o:['کله کله','هېڅکله','هره ورځ','تل'],a:0},
+{t:'mc',q:'Review — which means "hungry (m)"?',o:['وږی','وو','ونه','ستړی مه شې'],a:0},
+{t:'mc',q:'Review — which means "key"?',o:['کیلي','آس','سړک','ځکه چې'],a:0}]},
 
 {id:'ps_school',title:'School & learning',step:'learn',meta:'Book, pen & reading',vocab:[['کتاب','kitaab','book'],['قلم','qalam','pen'],['کاغذ','kaaghaz','paper'],['لولم','lwalam','(I) read'],['لیکم','leekam','(I) write'],['درس','dars','lesson']],ex:[
 {t:'note',tag:'The learner’s kit',q:'کتاب قلم کاغذ',body:'<p><span class="deva">کتاب</span> <b>kitaab</b> book, <span class="deva">قلم</span> <b>qalam</b> pen (with the deep ق!), <span class="deva">کاغذ</span> <b>kaaghaz</b> paper, <span class="deva">درس</span> <b>dars</b> lesson.</p>',eg:[['کتاب','kitaab','book'],['قلم','qalam','pen'],['کاغذ','kaaghaz','paper']]},
@@ -2700,7 +2753,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "I read a book"',a:['زه','کتاب','لولم'],pool:['زه','کتاب','لولم','قلم']},
 {t:'match',q:'Match word and meaning',pairs:[['کتاب','book'],['قلم','pen'],['کاغذ','paper'],['لولم','I read'],['لیکم','I write']]},
 {t:'mc',q:'Which means "lesson"?',o:['درس','کتاب','کاغذ','قلم'],a:0},
-{t:'li',q:'Listen — which word?',say:'قلم',o:['قلم','کتاب','کاغذ','درس'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'قلم',o:['قلم','کتاب','کاغذ','درس'],a:0},
+{t:'mc',q:'Review — which means "thirsty (m)"?',o:['تږی','کشر','نو','مېلمه'],a:0},
+{t:'mc',q:'Review — which means "bed / bedding"?',o:['بستره','دوه','ټکسي','نه لرم'],a:0}]},
 
 {id:'ps_taste',title:'Tastes',step:'learn',meta:'Sweet, sour, salty',vocab:[['خوږ','khog','sweet'],['تروش','trush','sour'],['تریخ','treekh','bitter'],['مالګه','maalga','salt'],['مالګین','maalgeen','salty'],['مرچ','murch','chili / pepper']],ex:[
 {t:'note',tag:'Sweet first',q:'خوږ',body:'<p><span class="deva">خوږ</span> <b>khog</b> = sweet — Afghan tea, fruit and talk are all خوږ! (Feminine: <span class="deva">خوږه</span>.) <span class="deva">تروش</span> <b>trush</b> = sour, <span class="deva">تریخ</span> <b>treekh</b> = bitter.</p>',eg:[['خوږ','khog','sweet'],['تروش','trush','sour'],['تریخ','treekh','bitter']]},
@@ -2740,7 +2795,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "the tea is sweet"',a:['چای','خوږ','دی'],pool:['چای','خوږ','دی','تریخ']},
 {t:'match',q:'Match taste and meaning',pairs:[['خوږ','sweet'],['تروش','sour'],['تریخ','bitter'],['مالګه','salt'],['مرچ','chili']]},
 {t:'mc',q:'"salty" =',o:['مالګین','مالګه','تروش','خوږ'],a:0},
-{t:'li',q:'Listen — which word?',say:'مرچ',o:['مرچ','مالګه','تروش','خوږ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مرچ',o:['مرچ','مالګه','تروش','خوږ'],a:0},
+{t:'mc',q:'Review — which means "eye"?',o:['سترګه','زر','انګور','په کور کې'],a:0},
+{t:'mc',q:'Review — which means "bathroom"?',o:['تشناب','نوی','لاندې','ځم'],a:0}]},
 
 {id:'ps_house',title:'Inside the house',step:'learn',meta:'Door, window, table',vocab:[['دروازه','darwaaza','door'],['کړکۍ','krrkey','window'],['مېز','mez','table'],['چوکۍ','chawkey','chair'],['توشک','toshak','floor mattress'],['بام','baam','roof']],ex:[
 {t:'note',tag:'The room',q:'دروازه · کړکۍ',body:'<p><span class="deva">دروازه</span> <b>darwaaza</b> = door, <span class="deva">کړکۍ</span> <b>krrkey</b> = window (feminine ۍ + retroflex ړ — a very Pashto word!).</p>',eg:[['دروازه','darwaaza','door'],['کړکۍ','krrkey','window']]},
@@ -2780,7 +2837,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "the book is on the table"',a:['کتاب','پر','مېز','دی'],pool:['کتاب','پر','مېز','دی','لاندې']},
 {t:'match',q:'Match word and meaning',pairs:[['دروازه','door'],['کړکۍ','window'],['مېز','table'],['چوکۍ','chair'],['بام','roof']]},
 {t:'mc',q:'The Afghan sitting room seats guests on…',o:['توشکونه','چوکۍ ګانې','مېزونه','بامونه'],a:0},
-{t:'li',q:'Listen — which word?',say:'کړکۍ',o:['کړکۍ','چوکۍ','دروازه','مېز'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'کړکۍ',o:['کړکۍ','چوکۍ','دروازه','مېز'],a:0},
+{t:'mc',q:'Review — which means "hand"?',o:['لاس','خورم','خپه','تل'],a:0},
+{t:'mc',q:'Review — which means "a free room"?',o:['خالي خونه','مه','لاړ','تلیفون'],a:0}]},
 
 {id:'ps_glue',title:'Conversation glue',step:'learn',meta:'OK, really?, of course',vocab:[['سمه ده','sama da','OK / alright'],['رښتیا','rixtyaa','really / truly'],['البته','albatta','of course'],['شاید','shaayad','maybe'],['یعنې','ya’ne','I mean / that is'],['ضرور','zarur','definitely / surely']],ex:[
 {t:'note',tag:'The agreement word',q:'سمه ده',body:'<p><span class="deva">سمه ده</span> <b>sama da</b> = "it is right" = OK / alright — you will say and hear it constantly. <span class="deva">رښتیا؟</span> <b>rixtyaa</b> = "really?" — the perfect listener’s reply.</p>',eg:[['سمه ده','sama da','OK / alright'],['رښتیا','rixtyaa','really?']]},
@@ -2820,7 +2879,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "OK, I will come tomorrow"',a:['سمه ده','سبا','به','راځم'],pool:['سمه ده','سبا','به','راځم','ضرور']},
 {t:'match',q:'Match word and meaning',pairs:[['سمه ده','OK'],['رښتیا','really?'],['البته','of course'],['شاید','maybe'],['ضرور','definitely']]},
 {t:'mc',q:'"I mean / that is" =',o:['یعنې','شاید','البته','رښتیا'],a:0},
-{t:'li',q:'Listen — which word?',say:'شاید',o:['شاید','ضرور','البته','یعنې'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'شاید',o:['شاید','ضرور','البته','یعنې'],a:0},
+{t:'mc',q:'Review — which means "stomach"?',o:['خېټه','زما نوم','دي','رښتیا'],a:0},
+{t:'mc',q:'Review — which means "telephone"?',o:['تلیفون','په مخه دې ښه','لاړم','هغه به وي'],a:0}]},
 
 {id:'ps_pace',title:'Now, soon, late',step:'learn',meta:'Timing words',vocab:[['اوس','os','now'],['ژر','zhar','soon / quickly'],['ناوخته','naawakhta','late'],['وخت','wakht','time'],['په وخت','pa wakht','on time'],['لومړی ځل','lumrray dzal','the first time']],ex:[
 {t:'note',tag:'Now & soon',q:'اوس · ژر',body:'<p><span class="deva">اوس</span> <b>os</b> = now: <span class="deva">اوس زه پوهېږم!</span> "NOW I understand!" <span class="deva">ژر</span> <b>zhar</b> = soon/quickly: <span class="deva">ژر راشه!</span> = "come quickly!"</p>',eg:[['اوس','os','now'],['ژر','zhar','soon / quickly']]},
@@ -2860,7 +2921,9 @@ const PS_Z11=[
 {t:'wb',q:'Build: "I have no time"',a:['زه','وخت','نه','لرم'],pool:['زه','وخت','نه','لرم','ژر']},
 {t:'match',q:'Match word and meaning',pairs:[['اوس','now'],['ژر','soon'],['ناوخته','late'],['په وخت','on time'],['وخت','time']]},
 {t:'mc',q:'"NOW I understand!" =',o:['اوس زه پوهېږم','ژر زه پوهېږم','زه ناوخته پوهېږم','وخت پوهېږم'],a:0},
-{t:'li',q:'Listen — which word?',say:'ژر',o:['ژر','اوس','ورو','وخت'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ژر',o:['ژر','اوس','ورو','وخت'],a:0},
+{t:'mc',q:'Review — which means "pain"?',o:['درد','یعنې','مېز','یوولس'],a:0},
+{t:'mc',q:'Review — which means "number"?',o:['شمېره','نه','درد','خوښه'],a:0}]},
 ];
 const PS_Z12=[
 /* ===================== ZONE 12 · MAKE IT HOME ===================== */
@@ -2902,7 +2965,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "happy new year!"',a:['نوی','کال','مو','مبارک شه'],pool:['نوی','کال','مو','مبارک شه','خیر']},
 {t:'match',q:'Match phrase and meaning',pairs:[['مبارک شه','congratulations'],['ژوندی اوسې','live long'],['ښه سفر','safe travels'],['په خیر راغلې','welcome'],['خیر','well-being']]},
 {t:'mc',q:'Greet an arriving guest with…',o:['په خیر راغلې','ښه سفر','ناوخته','بس'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ژوندی اوسې',o:['ژوندی اوسې','مبارک شه','ښه سفر','په خیر راغلې'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ژوندی اوسې',o:['ژوندی اوسې','مبارک شه','ښه سفر','په خیر راغلې'],a:0},
+{t:'mc',q:'Review — which means "(she) went"?',o:['لاړه','څلور','باران','ماشومان لرې'],a:0},
+{t:'mc',q:'Review — which means "internet"?',o:['انټرنېټ','شپږ','بیا ووایه','ماښام'],a:0}]},
 
 {id:'ps_make',title:'Make, wash, clean',step:'learn',meta:'Getting things done',vocab:[['جوړوم','jorrawam','(I) make / fix'],['مينځم','meendzam','(I) wash'],['پاکوم','paakawam','(I) clean'],['جوړ','jorr','made / well / fine'],['ماشین','maasheen','machine'],['ته جوړ یې','ta jorr ye','are you well?']],ex:[
 {t:'note',tag:'The maker verb',q:'جوړوم',body:'<p><span class="deva">جوړوم</span> <b>jorrawam</b> = I make / I fix — one of Pashto’s hardest-working verbs: fix the mottar, make tea, build a house. Its little root <span class="deva">جوړ</span> <b>jorr</b> = "made/whole/fine" — so <span class="deva">ته جوړ یې؟</span> = "are you well?" is a greeting too!</p>',eg:[['جوړوم','jorrawam','I make / fix'],['جوړ','jorr','made / fine'],['ته جوړ یې','ta jorr ye','are you well?']]},
@@ -2942,7 +3007,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "I wash the clothes"',a:['زه','جامې','مينځم'],pool:['زه','جامې','مينځم','جوړوم']},
 {t:'match',q:'Match verb and meaning',pairs:[['جوړوم','I make / fix'],['مينځم','I wash'],['پاکوم','I clean'],['ماشین','machine'],['جوړ','fine / made']]},
 {t:'mc',q:'ته جوړ یې؟ asks…',o:['are you well?','are you late?','are you hungry?','are you new?'],a:0},
-{t:'li',q:'Listen — which word?',say:'جوړ',o:['جوړ','پاک','ښه','نوی'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'جوړ',o:['جوړ','پاک','ښه','نوی'],a:0},
+{t:'mc',q:'Review — which means "(he) came"?',o:['راغی','نن','لاندې','لیکم'],a:0},
+{t:'mc',q:'Review — which means "message"?',o:['پیغام','درد','زما نوم','افغانۍ'],a:0}]},
 
 {id:'ps_friend',title:'Friends & homeland',step:'learn',meta:'ملګری، وطن، سوله',vocab:[['ملګری','malgaray','friend / companion'],['ګاونډی','gaawandday','neighbor'],['خلک','khalk','people'],['وطن','watan','homeland'],['سوله','sola','peace'],['زړه','zrra','heart']],ex:[
 {t:'note',tag:'Companions',q:'ملګری · ګاونډی',body:'<p><span class="deva">ملګری</span> <b>malgaray</b> = friend/companion — the one who walks the road with you. <span class="deva">ګاونډی</span> <b>gaawandday</b> = neighbor, honored in Pashtun culture almost like family. <span class="deva">خلک</span> <b>khalk</b> = people.</p>',eg:[['ملګری','malgaray','friend'],['ګاونډی','gaawandday','neighbor'],['خلک','khalk','people']]},
@@ -2982,7 +3049,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "the people want peace"',a:['خلک','سوله','غواړي'],pool:['خلک','سوله','غواړي','لري']},
 {t:'match',q:'Match word and meaning',pairs:[['ملګری','friend'],['ګاونډی','neighbor'],['خلک','people'],['وطن','homeland'],['سوله','peace']]},
 {t:'mc',q:'"from the heart" =',o:['له زړه','په زړه','زړه ته','زړه کې'],a:0},
-{t:'li',q:'Listen — which word?',say:'زړه',o:['زړه','سوله','خلک','وطن'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'زړه',o:['زړه','سوله','خلک','وطن'],a:0},
+{t:'mc',q:'Review — which means "(she) came"?',o:['راغله','توشک','منی','خو'],a:0},
+{t:'mc',q:'Review — which means "wifi"?',o:['واي فای','که','ما ډوډۍ وخوړه','کتاب'],a:0}]},
 
 {id:'ps_art',title:'Attan, songs & poems',step:'learn',meta:'The joyful arts',vocab:[['اتڼ','atann','attan (national dance)'],['سندره','sandara','song'],['شعر','sher','poem / poetry'],['موسیقي','museeqee','music'],['رباب','rabaab','rubab (lute)'],['لنډۍ','landdey','landay (folk couplet)']],ex:[
 {t:'note',tag:'The circle dance',q:'اتڼ',body:'<p><span class="deva">اتڼ</span> <b>atann</b> — the attan! Dancers circle faster and faster to drum-beat; it is the national dance, danced at weddings and celebrations. (Spot the retroflex ڼ!)</p>',eg:[['اتڼ','atann','the attan dance'],['موسیقي','museeqee','music']]},
@@ -3022,7 +3091,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "I like Pashto songs"',a:['زما','پښتو','سندرې','خوښې','دي'],pool:['زما','پښتو','سندرې','خوښې','دي','اتڼ']},
 {t:'match',q:'Match word and meaning',pairs:[['اتڼ','attan dance'],['سندره','song'],['شعر','poem'],['رباب','rubab'],['لنډۍ','folk couplet']]},
 {t:'mc',q:'Pashto’s two-line jewel is the…',o:['لنډۍ','سندره','کیسه','شعرونه'],a:0},
-{t:'li',q:'Listen — which word?',say:'رباب',o:['رباب','اتڼ','موسیقي','سندره'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'رباب',o:['رباب','اتڼ','موسیقي','سندره'],a:0},
+{t:'mc',q:'Review — which means "I ate bread"?',o:['ما ډوډۍ وخوړه','باد','نیمه','مه'],a:0},
+{t:'mc',q:'Review — which means "guest"?',o:['مېلمه','ستړی','څو','نه لرم'],a:0}]},
 
 {id:'ps_duration',title:'How long?',step:'learn',meta:'Duration & since',vocab:[['څومره وخت','tsomra wakht','how much time / how long'],['ډېر وخت','dder wakht','a long time'],['لږ وخت','lag wakht','a short time'],['زه دوه کاله دلته یم','za dwa kaala dalta yam','I have been here two years'],['له پرونه','la paruna','since yesterday'],['تر اوسه','tar osa','until now / so far']],ex:[
 {t:'note',tag:'Been here long?',q:'څومره وخت',body:'<p>Ask <span class="deva">څومره وخت</span> <b>tsomra wakht</b> = "how long?" Answer with the time span + یم: <span class="deva">زه دوه کاله دلته یم</span> = "I am here two years" = I have been here two years. Simple present, long meaning!</p>',eg:[['څومره وخت','tsomra wakht','how long?'],['زه دوه کاله دلته یم','za dwa kaala dalta yam','here two years']]},
@@ -3062,7 +3133,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "I have been here two years"',a:['زه','دوه','کاله','دلته','یم'],pool:['زه','دوه','کاله','دلته','یم','ځم']},
 {t:'match',q:'Match phrase and meaning',pairs:[['څومره وخت','how long?'],['ډېر وخت','a long time'],['لږ وخت','a short time'],['له پرونه','since yesterday'],['تر اوسه','until now']]},
 {t:'mc',q:'"since" uses له + time, "until" uses…',o:['تر','په','ته','د'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'له پرونه',o:['له پرونه','تر اوسه','څومره وخت','پرون'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'له پرونه',o:['له پرونه','تر اوسه','څومره وخت','پرون'],a:0},
+{t:'mc',q:'Review — which means "I drank water"?',o:['ما اوبه وڅښلې','مننه','ژر','انار'],a:0},
+{t:'mc',q:'Review — which means "host"?',o:['کوربه','نوی','بیه','نن'],a:0}]},
 
 {id:'ps_capstone',title:'From the heart',step:'learn',meta:'مینه — and your Pashto story',vocab:[['مینه','meena','love'],['مینه لرم','meena laram','(I) love (have love)'],['زه له پښتو سره مینه لرم','za la paxto sara meena laram','I love Pashto'],['له … سره','la … sara','with'],['هره ورځ زده کوم','hara wradz zda kawam','I learn every day'],['دا زما کیسه ده','daa zmaa keesa da','this is my story']],ex:[
 {t:'note',tag:'Love, the Pashto way',q:'مینه لرم',body:'<p><span class="deva">مینه</span> <b>meena</b> = love. To love is to HAVE love — with the sandwich <span class="deva">له … سره</span> ("with"): <span class="deva">زه له پښتو سره مینه لرم</span> = "I hold love with Pashto" = I love Pashto!</p>',eg:[['مینه','meena','love'],['له … سره','la … sara','with'],['زه له پښتو سره مینه لرم','za la paxto sara meena laram','I love Pashto']]},
@@ -3102,7 +3175,9 @@ const PS_Z12=[
 {t:'wb',q:'Build: "I love Pashto"',a:['زه','له','پښتو','سره','مینه','لرم'],pool:['زه','له','پښتو','سره','مینه','لرم','یم']},
 {t:'match',q:'Match phrase and meaning',pairs:[['مینه','love'],['زړه','heart'],['وطن','homeland'],['سوله','peace'],['دا زما کیسه ده','this is my story']]},
 {t:'mc',q:'Twelve zones done! Your parting blessing:',o:['کور مو ودان — ژوندی اوسئ!','بس','هېڅ','ناوخته'],a:0},
-{t:'li',q:'Listen — which word?',say:'مینه',o:['مینه','زړه','سوله','کیسه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مینه',o:['مینه','زړه','سوله','کیسه'],a:0},
+{t:'mc',q:'Review — which means "I saw"?',o:['ما ولیدل','کوربه','پیغام','جمعه'],a:0},
+{t:'mc',q:'Review — which means "very good / wonderful"?',o:['ډېر ښه','څنګه یې','مېوه','هغه به وي'],a:0}]},
 ];
 const PS_LESSONS=[].concat(PS_Z1,PS_Z2,PS_Z3,PS_Z4,PS_Z5,PS_Z6,PS_Z7,PS_Z8,PS_Z9,PS_Z10,PS_Z11,PS_Z12);
 
