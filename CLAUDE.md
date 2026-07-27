@@ -92,6 +92,11 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   language = add its slug/script-font/RTL entries to the maps at the top of
   `gen_landing.py`, rerun. The app's `<footer>` also links to all 11 pages
   (`.foot-langs`) so the highest-authority page seeds the crawl.
+  Audited July 2026: committed pages byte-match a fresh regeneration, JSON-LD
+  parses on all 11, canonicals/cross-links/sitemap correct. One fix: the
+  template styled headings with Fraunces but never loaded it (Georgia
+  fallback) — the font link now carries the same Fraunces axis spec as
+  index.html, so the landing hero matches the app's brand serif.
 - **The `?lang=<code>` deep-link** (boot(), July 2026): a known code in the query
   string overrides `savedLang()` AND forces `S.mode='learn'`, so a `/learn-X`
   landing-page CTA always opens that course even if the last session was faith
@@ -112,6 +117,10 @@ Nepali + Khmer are shipped. Everything — HTML, CSS, and JS — lives in one fi
   `no-store` on every response, so a plain refresh always shows current files.
   If a change ever seems not to have applied, check
   `fetch(url).then(r=>r.headers.get('cache-control'))` before hunting a bug.
+  (July 2026: launch.json was found still pointing at `python3 -m http.server`
+  — the very server devserver.py replaces — and was corrected to run
+  `devserver.py`. launch.json is gitignored, so verify the header check above
+  after any fresh clone or machine move.)
 
 ## Golden rules
 1. **Always work directly on `index.html`.** Edit it in place.
@@ -694,7 +703,9 @@ the first built with a GENERATOR: topics are authored as vocabulary + notes in
 `scratchpad/ur/content*.py` and `build.py` expands each into the house 5-lesson
 shape, with the validation rules as assertions so a bad exercise cannot be
 written. **Read the verification note below before treating the generator as a
-model for uz/jv.**
+model for uz/jv — and the "teach-before-test repair" section further down: the
+generator's one-note-then-quiz lesson shape cold-tested 98.6% of Urdu's vocab
+and had to be repaired across all three of its courses.**
 
 Written in **Nastaliq**, not the Naskh Pashto uses, so index.html carries a
 `:root[data-lang="ur"]` font block with `line-height:2.05` — verified in a real
@@ -849,6 +860,49 @@ AND faith packs, all shipped; `ROADMAP.md` holds the staged plan they were
 built from. Next candidate: Persian/Dari (`fa-IR`), with the caveat that the
 only voice is IRANIAN Persian, so it must ship as Persian and not be
 mislabelled Dari.
+
+### The teach-before-test repair (July 2026) — A STANDING RULE for any generator
+Ruan caught the ur/uz/jv generator's worst defect after shipping: **it emitted
+ONE topical note per learn lesson and then quizzed every word cold.** The
+engine never shows `vocab` to the learner — teaching happens ONLY through
+`note` exercises — so a learn lesson without word-introducing notes is a blind
+quiz. Measured as "new words first seen as a quiz question, never introduced
+in a note first": **ur 98.6% (431/437 words), uz 46.7%, jv 42.2%**, against
+0–4% in the eight older courses (km's script zone is the model: note "ក and គ"
+→ quiz ក → quiz គ). All three were repaired to **0%** (18 commits, July 2026):
+- The fix is the house pattern: interleaved notes introducing 2–3 words each
+  (real prose + `eg` cards `[native, rom, gloss]` — the rom slot may be `''`),
+  placed BEFORE the quizzes of those words, quizzes reordered to follow their
+  intro note. Note tags/titles are content-specific, never generic — and the
+  prose must say something true and useful (letter shapes, etymologies,
+  homographs, culture), not just list the words.
+- Urdu also gained `r` rom-hints on word d-mcs across all steps (the km/si
+  convention; ne carries them too). uz/jv deliberately do NOT — Latin script
+  is readable and my/lo/ps/mn/bn also carry none. Letter-lesson mcs never get
+  `r` (the rom is the letter's name — a giveaway). Guard every added `r`
+  against equaling an option: loanwords (menu, film, internet, uncle, urdu)
+  WILL collide, and the sweep caught ~20.
+- **Everything was audio-neutral**: notes/eg/r are never spoken, so all three
+  `--check` runs still MATCH and zero clips were regenerated.
+- Editing method: the lesson consts are strict JSON — `json.loads` the array,
+  edit, `json.dumps(..., ensure_ascii=False, separators=(',',':'))` re-splices
+  byte-identically (keep the trailing `;` — ASI masks its loss). Assert every
+  original exercise index is used exactly once so nothing is silently dropped.
+- Measurement traps: crediting a lesson's own vocab as "taught" hides the
+  whole problem (the first tool did); the real check is note-introduction
+  BEFORE first quiz, within the lesson, in path order. Case differences and
+  inline tags (`<u>`, hyphenated breakdowns like bor-a-man) make words look
+  untaught when the note visually shows them — verify by eye before "fixing".
+- **The rule: a future course generator must emit interleaved teaching notes
+  with eg cards, and a cold-test measurement must run before any new course
+  ships.** The uniform one-note shape was the same disease as the generator's
+  exactly-5-vocab uniformity documented above.
+Also fixed in the same sweep: a stray comma in Nepali `sc_read_2` (left by the
+July 21 parity commit's hand-appended exercises) created an `undefined`
+exercise — `renderEx` reads `ex.t`, so the lesson froze at that question for
+every learner. **When appending exercises to an existing `ex` array by hand,
+re-parse the pack and scan for non-object entries afterwards** — the integrity
+sweeps now include that check.
 
 **AUDIO IS THE GATE — check it before promising any language.** The pipeline is
 edge-tts, and a course with no clips is not shippable: no mainstream OS ships a
