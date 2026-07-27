@@ -31,24 +31,18 @@ const UZ_HERO='<circle class="orb-glow" cx="1000" cy="86" r="72"/><circle class=
 const UZ_BAND='<circle class="orb-glow" cx="1046" cy="58" r="34"/><circle class="orb" cx="1046" cy="58" r="20"/><path class="far" d="M0 154 Q140 148 280 152 Q420 156 540 144 Q660 132 780 142 Q900 152 1010 134 Q1110 120 1200 130 L1200 200 L0 200 Z"/><path class="mid" d="M0 200 L0 180 Q140 168 300 162 Q460 156 620 166 Q780 176 940 166 Q1080 158 1200 164 L1200 200 Z"/><path class="snow" opacity=".18" d="M30 176 Q150 165 270 160 L272 165 Q152 170 34 181 Z"/><g class="near"><path d="M0 200 L0 186 Q150 178 320 183 Q490 188 660 181 Q830 174 1000 180 Q1110 183 1200 179 L1200 200 Z"/></g><g transform="translate(236,184) scale(0.42)" aria-hidden="true"><circle cx="16" cy="-8" r="8" fill="var(--tyre)"/><circle cx="16" cy="-8" r="3" fill="var(--wood)"/><circle cx="48" cy="-8" r="8" fill="var(--tyre)"/><circle cx="48" cy="-8" r="3" fill="var(--wood)"/><path fill="var(--wood)" d="M2 -16 L64 -16 L64 -22 L2 -22 Z"/><path fill="var(--wood)" d="M2 -22 L6 -22 L6 -34 L2 -34 Z M60 -22 L64 -22 L64 -34 L60 -34 Z"/><ellipse cx="18" cy="-27" rx="10" ry="7" fill="var(--melon)"/><ellipse cx="36" cy="-28" rx="10" ry="7" fill="var(--melon)"/><ellipse cx="52" cy="-27" rx="9" ry="6.5" fill="var(--melon)"/><ellipse cx="27" cy="-35" rx="9" ry="6.5" fill="var(--melon)"/><path stroke="var(--tyre)" stroke-width="1.1" fill="none" opacity=".45" d="M12 -30 Q18 -22 24 -30 M30 -31 Q36 -23 42 -31 M22 -38 Q27 -30 32 -38"/></g><g transform="translate(700,182) scale(0.44)" aria-hidden="true"><path fill="var(--tyre)" d="M10 0 L10 -17 L13.6 -17 L13.6 0 Z M20 0 L20 -17 L23.6 -17 L23.6 0 Z M38 0 L38 -17 L41.6 -17 L41.6 0 Z M46 0 L46 -17 L49.6 -17 L49.6 0 Z"/><path fill="var(--hide)" d="M6 -17 C4 -30 14 -34 30 -34 C46 -34 56 -30 54 -17 Z"/><path fill="var(--hide)" d="M15 -32 C15 -45 30 -45 30 -32 Z"/><path fill="var(--hide)" d="M33 -32 C33 -47 48 -47 48 -32 Z"/><path fill="var(--hide)" d="M8 -30 L1 -47 L10 -50 L17 -32 Z"/><path fill="var(--hide)" d="M-3 -50 C-7 -54 -1 -60 6 -58 L13 -52 L7 -46 Z"/><path fill="var(--hide)" d="M54 -22 L60 -30 L62 -27 L57 -19 Z"/><circle cx="1" cy="-54" r="1.4" fill="var(--tyre)"/></g><g transform="translate(764,180) scale(0.38)" aria-hidden="true"><path fill="var(--tyre)" d="M10 0 L10 -17 L13.6 -17 L13.6 0 Z M20 0 L20 -17 L23.6 -17 L23.6 0 Z M38 0 L38 -17 L41.6 -17 L41.6 0 Z M46 0 L46 -17 L49.6 -17 L49.6 0 Z"/><path fill="var(--hide)" d="M6 -17 C4 -30 14 -34 30 -34 C46 -34 56 -30 54 -17 Z"/><path fill="var(--hide)" d="M15 -32 C15 -45 30 -45 30 -32 Z"/><path fill="var(--hide)" d="M33 -32 C33 -47 48 -47 48 -32 Z"/><path fill="var(--hide)" d="M8 -30 L1 -47 L10 -50 L17 -32 Z"/><path fill="var(--hide)" d="M-3 -50 C-7 -54 -1 -60 6 -58 L13 -52 L7 -46 Z"/><path fill="var(--hide)" d="M54 -22 L60 -30 L62 -27 L57 -19 Z"/><circle cx="1" cy="-54" r="1.4" fill="var(--tyre)"/></g><g transform="translate(430,183) scale(0.38)" aria-hidden="true"><path fill="var(--bark)" d="M-2.6 0 C-2 -12 -3 -22 -2 -30 L3 -30 C4 -22 3 -12 3.6 0 Z"/><circle cx="0" cy="-40" r="15" fill="var(--tree)"/><circle cx="-13" cy="-32" r="10" fill="var(--tree)"/><circle cx="13" cy="-32" r="10" fill="var(--tree)"/></g>';
 
 function UZ_MASCOT(m){
-  var base='<path fill="#8A6A46" d="M18 60 L18 45 L23 45 L23 60 Z M28 60 L28 45 L33 45 L33 60 Z M40 60 L40 45 L45 45 L45 60 Z M50 60 L50 45 L55 45 L55 60 Z"/>'
-    +'<ellipse cx="36" cy="40" rx="20" ry="13" fill="#C08F5C"/>'
-    +'<path fill="#C08F5C" d="M22 30 C22 20 34 20 34 30 Z"/><path fill="#C08F5C" d="M38 30 C38 18 51 18 51 30 Z"/>'
-    +'<path fill="#C08F5C" d="M20 33 L13 17 L22 14 L29 31 Z"/>'
-    +'<path fill="#C08F5C" d="M8 15 C3 10 10 3 17 6 L24 12 L17 19 Z"/>'
-    +'<ellipse cx="10" cy="12" rx="3.4" ry="2.6" fill="#D8AC7C"/>';
+  var base='<ellipse cx="32" cy="45" rx="16" ry="12" fill="#C89B66"/>' /* body */
+  +'<ellipse cx="15" cy="20" rx="4.6" ry="6" fill="#B9895A" transform="rotate(-14 15 20)"/><ellipse cx="49" cy="20" rx="4.6" ry="6" fill="#B9895A" transform="rotate(14 49 20)"/>' /* ears */
+  +'<ellipse cx="32" cy="29.5" rx="14.5" ry="16" fill="#D2A672"/>' /* head */
+  +'<circle cx="27" cy="13.5" r="4" fill="#B9895A"/><circle cx="32" cy="12" r="4.6" fill="#B9895A"/><circle cx="37" cy="13.5" r="4" fill="#B9895A"/>' /* poll tuft */
+  +'<ellipse cx="32" cy="41" rx="9" ry="7" fill="#EAD3AC"/>' /* muzzle */
+  +'<ellipse cx="28" cy="40.5" rx="1.7" ry="1.1" fill="#7a5a33" transform="rotate(-20 28 40.5)"/><ellipse cx="36" cy="40.5" rx="1.7" ry="1.1" fill="#7a5a33" transform="rotate(20 36 40.5)"/>' /* nostrils */
+  +'<path d="M32 42.5 L32 45" stroke="#B08D5C" stroke-width="1.2" stroke-linecap="round"/>'; /* split lip */
   var f;
-  if(m==='cheer')f='<path d="M11 8 Q14 4 17 8" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/>'
-    +'<path d="M19 11 Q22 7 25 11" fill="none" stroke="#2f2a24" stroke-width="2.2" stroke-linecap="round"/>'
-    +'<path d="M12 15 Q16 19 20 15" fill="none" stroke="#2f2a24" stroke-width="2" stroke-linecap="round"/>'
-    +'<circle cx="9" cy="18" r="2.8" fill="var(--crimson)" opacity="0.2"/>';
-  else if(m==='oops')f='<path d="M10 7 Q13.5 5.5 17 7" fill="none" stroke="#2f2a24" stroke-width="1.5" stroke-linecap="round"/>'
-    +'<circle cx="13" cy="11" r="2.3" fill="#2f2a24"/><circle cx="23" cy="13" r="2.3" fill="#2f2a24"/>'
-    +'<ellipse cx="17" cy="18" rx="3" ry="2.4" fill="#2f2a24" opacity=".55"/>';
-  else f='<circle cx="13" cy="10" r="2.4" fill="#2f2a24"/><circle cx="23" cy="12" r="2.4" fill="#2f2a24"/>'
-    +'<path d="M13 17 Q17 20 21 16" fill="none" stroke="#2f2a24" stroke-width="2" stroke-linecap="round"/>';
-  return '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+base+f+'</svg>';
-}
+  if(m==='cheer')f='<path d="M22 28.5 Q25 25 28 28.5" fill="none" stroke="#4a2f18" stroke-width="2.2" stroke-linecap="round"/><path d="M36 28.5 Q39 25 42 28.5" fill="none" stroke="#4a2f18" stroke-width="2.2" stroke-linecap="round"/><path d="M27 46.5 Q32 50.5 37 46.5" fill="none" stroke="#4a2f18" stroke-width="2.2" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M21.5 26.5 Q25 25.3 28.5 26.5" fill="none" stroke="#4a2f18" stroke-width="1.6" stroke-linecap="round"/><path d="M35.5 26.5 Q39 25.3 42.5 26.5" fill="none" stroke="#4a2f18" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="29.5" r="2" fill="#4a2f18"/><circle cx="39" cy="29.5" r="2" fill="#4a2f18"/><ellipse cx="32" cy="47" rx="2.2" ry="2.8" fill="#4a2f18"/>';
+  else f='<circle cx="25" cy="29" r="2.5" fill="#4a2f18"/><circle cx="39" cy="29" r="2.5" fill="#4a2f18"/><circle cx="25.8" cy="28.2" r="0.7" fill="#fff"/><circle cx="39.8" cy="28.2" r="0.7" fill="#fff"/><path d="M28 46.5 Q32 49.3 36 46.5" fill="none" stroke="#4a2f18" stroke-width="2" stroke-linecap="round"/>';
+  return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 
 /* Curriculum — 12 zones / 84 topics / 420 lessons (ROADMAP Phase 3).
    Sequence researched BEFORE authoring, against Azimova's Uzbek: An
