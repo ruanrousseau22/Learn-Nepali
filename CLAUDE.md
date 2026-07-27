@@ -320,8 +320,15 @@ coordinates) is in HISTORY.md — these are the standing rules:
 
 A fourth page next to Learn/Alphabet/Review for short visits; **a pack
 feature, not a Bengali special case** — tab/page/flashcards appear only when
-the pack defines `trip`. Bengali ships it (14 sections / 151 lines) and
-Nepali ships it (15 sections / 96 lines + 23 frame combos, July 2026).
+the pack defines `trip`. **ALL ELEVEN languages ship it (July 2026)** —
+Bengali (14 sections / 151 lines) and Nepali (15/96) hand-built first, then
+uz km my si lo ps mn ur jv in one pass (12-15 sections, 70-96 lines, 15-23
+frame combos each; per-language spines in the header comment of each pack's
+`XX_TRIP` and in the build commits). Prefix-language frames (km mean/som,
+lo kho, jv ana) bake the prefix into the items so the suffix engine stays
+untouched; gendered frames (ps chere day, ur kitne kaa hai) use items of one
+gender to stay grammatical. Lines prefer already-recorded course strings
+(reuse ran 55-85%); new strings went through the normal audio pipeline.
 **Every language's trip pack must be CONTEXTUALIZED, never cloned** (Ruan):
 build it around what a visitor to THAT country actually faces. Nepali's
 spine: hajur + daai/didi carry politeness (no everyday "please" — say so in
