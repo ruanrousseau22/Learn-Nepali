@@ -3746,65 +3746,65 @@ const NE_LESSONS = [
   ,
 {t:'mc',q:'Review — which means "flatbread"?',o:['रोटी','होइन','कृपया','हरियो'],a:0},
 {t:'mc',q:'Review — which means "have to do"?',o:['गर्नुपर्छ','अस्पताल','चार','पुरानो'],a:0}]},
-  {id:'requests',title:'Polite requests',step:'learn',meta:'... -नुहोस् = please ...',vocab:[['गर्नुहोस्','garnuhos','please do'],['बस्नुहोस्','basnuhos','please sit'],['दिनुहोस्','dinuhos','please give'],['आउनुहोस्','aaunuhos','please come'],['जानुहोस्','jaanuhos','please go (ahead)'],['पर्खनुहोस्','parkhanuhos','please wait'],['सुन्नुहोस्','sunnuhos','please listen']],ex:[
-    {t:'note',tag:'Asking nicely',q:'Requests with -नुहोस्',body:'<p>To politely ask someone to do something, add <span class="deva">-नुहोस्</span> to the verb.</p>',eg:[['गर्नु → गर्नुहोस्','garnuhos','please do'],['बस्नु → बस्नुहोस्','basnuhos','please sit'],['दिनु → दिनुहोस्','dinuhos','please give']]},
-    {t:'mc',q:'How do you say "please sit"?',o:['बस्नुहोस्','बस्छु','बस्नुहुन्छ','बस्दै छु'],a:0},
-    {t:'mc',q:'What does गर्नुहोस् mean?',d:'गर्नुहोस्',r:'garnuhos',o:['please do','I do','you do (polite)','I am doing'],a:0},
-    {t:'li',q:'What did you hear?',say:'दिनुहोस्',r:'dinuhos',o:['please give','please sit','please come','please go'],a:0},
-    {t:'note',tag:'Everyday requests',q:'Soften any instruction',body:'<p>These make any request gracious:</p>',eg:[['आउनुहोस्','aaunuhos','please come (in)'],['जानुहोस्','jaanuhos','please go (ahead)'],['पर्खनुहोस्','parkhanuhos','please wait']]},
-    {t:'mc',q:'How do you say "please come"?',o:['आउनुहोस्','आउँछु','आयो','आउनुहुन्छ'],a:0},
-    {t:'fill',q:'Complete the request: "please give water"',s:'पानी ___',o:['दिनुहोस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Paani dinuhos'},
-    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुहोस्'],r:'Chiyaa dinuhos',pool:['चिया','दिनुहोस्','पानी','गर्नुहोस्']},
-    {t:'tr',q:'Translate: "please come"',a:'आउनुहोस्',r:'aaunuhos'},
-    {t:'note',tag:'Truly polite now',q:'-नुहुन्छ + -नुहोस्',body:'<p>Statements take <span class="deva">-नुहुन्छ</span>, requests take <span class="deva">-नुहोस्</span>. Together they make you sound genuinely courteous in Nepali.</p>'},
+  {id:'requests',title:'Polite requests',step:'learn',meta:'... -नुस् = please ...',vocab:[['गर्नुस्','garnus','please do'],['बस्नुस्','basnus','please sit'],['दिनुस्','dinus','please give'],['आउनुस्','aaunus','please come'],['जानुस्','jaanus','please go (ahead)'],['पर्खनुस्','parkhanus','please wait'],['सुन्नुस्','sunnus','please listen']],ex:[
+    {t:'note',tag:'Asking nicely',q:'Requests with -नुस्',body:'<p>To politely ask someone to do something, add <span class="deva">-नुस्</span> to the verb. In writing you will often see the fuller <span class="deva">-नुहोस्</span> — the meaning is the same, but people say -नुस्.</p>',eg:[['गर्नु → गर्नुस्','garnus','please do'],['बस्नु → बस्नुस्','basnus','please sit'],['दिनु → दिनुस्','dinus','please give']]},
+    {t:'mc',q:'How do you say "please sit"?',o:['बस्नुस्','बस्छु','बस्नुहुन्छ','बस्दै छु'],a:0},
+    {t:'mc',q:'What does गर्नुस् mean?',d:'गर्नुस्',r:'garnus',o:['please do','I do','you do (polite)','I am doing'],a:0},
+    {t:'li',q:'What did you hear?',say:'दिनुस्',r:'dinus',o:['please give','please sit','please come','please go'],a:0},
+    {t:'note',tag:'Everyday requests',q:'Soften any instruction',body:'<p>These make any request gracious:</p>',eg:[['आउनुस्','aaunus','please come (in)'],['जानुस्','jaanus','please go (ahead)'],['पर्खनुस्','parkhanus','please wait']]},
+    {t:'mc',q:'How do you say "please come"?',o:['आउनुस्','आउँछु','आयो','आउनुहुन्छ'],a:0},
+    {t:'fill',q:'Complete the request: "please give water"',s:'पानी ___',o:['दिनुस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Paani dinus'},
+    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुस्'],r:'Chiyaa dinus',pool:['चिया','दिनुस्','पानी','गर्नुस्']},
+    {t:'tr',q:'Translate: "please come"',a:'आउनुस्',r:'aaunus'},
+    {t:'note',tag:'Truly polite now',q:'-नुहुन्छ + -नुस्',body:'<p>Statements take <span class="deva">-नुहुन्छ</span>, requests take <span class="deva">-नुस्</span>. Together they make you sound genuinely courteous in Nepali.</p>'},
   ]},
-  {id:'requests_2',title:'Recognize',step:'recognize',meta:'... -नुहोस् = please',vocab:[],ex:[
-    {t:'li',q:'What did you hear?',say:'बस्नुहोस्',r:'Basnuhos',o:['please sit','please give','please come','please go'],a:0},
-    {t:'mc',q:'What does गर्नुहोस् mean?',d:'गर्नुहोस्',r:'Garnuhos',o:['please do','I do','you do (polite)','I am doing'],a:0},
-    {t:'mc',q:'What does दिनुहोस् mean?',d:'दिनुहोस्',r:'Dinuhos',o:['please give','please sit','please come','please wait'],a:0},
-    {t:'match',q:'Match the requests',pairs:[['बस्नुहोस्','please sit'],['दिनुहोस्','please give'],['आउनुहोस्','please come'],['पर्खनुहोस्','please wait']]},
-    {t:'mc',q:'A polite request adds which ending?',o:['-नुहोस्','-नुहुन्छ','-छु','-दै'],a:0},
-    {t:'li',q:'What did you hear?',say:'आउनुहोस्',r:'Aaunuhos',o:['please come','please go','please sit','please wait'],a:0},
-    {t:'mc',q:'Which means "please listen"?',o:['सुन्नुहोस्','दिनुहोस्','बस्नुहोस्','जानुहोस्'],a:0},
-    {t:'match',q:'Match to meaning',pairs:[['जानुहोस्','please go'],['पर्खनुहोस्','please wait'],['सुन्नुहोस्','please listen'],['गर्नुहोस्','please do']]},
-    {t:'mc',q:'-नुहोस् makes a verb into a…',o:['polite request','past action','question','plural'],a:0},
-    {t:'mc',q:'What does पर्खनुहोस् mean?',d:'पर्खनुहोस्',r:'Parkhanuhos',o:['please wait','please come','please give','please sit'],a:0}
+  {id:'requests_2',title:'Recognize',step:'recognize',meta:'... -नुस् = please',vocab:[],ex:[
+    {t:'li',q:'What did you hear?',say:'बस्नुस्',r:'Basnus',o:['please sit','please give','please come','please go'],a:0},
+    {t:'mc',q:'What does गर्नुस् mean?',d:'गर्नुस्',r:'Garnus',o:['please do','I do','you do (polite)','I am doing'],a:0},
+    {t:'mc',q:'What does दिनुस् mean?',d:'दिनुस्',r:'Dinus',o:['please give','please sit','please come','please wait'],a:0},
+    {t:'match',q:'Match the requests',pairs:[['बस्नुस्','please sit'],['दिनुस्','please give'],['आउनुस्','please come'],['पर्खनुस्','please wait']]},
+    {t:'mc',q:'A polite request adds which ending?',o:['-नुस्','-नुहुन्छ','-छु','-दै'],a:0},
+    {t:'li',q:'What did you hear?',say:'आउनुस्',r:'Aaunus',o:['please come','please go','please sit','please wait'],a:0},
+    {t:'mc',q:'Which means "please listen"?',o:['सुन्नुस्','दिनुस्','बस्नुस्','जानुस्'],a:0},
+    {t:'match',q:'Match to meaning',pairs:[['जानुस्','please go'],['पर्खनुस्','please wait'],['सुन्नुस्','please listen'],['गर्नुस्','please do']]},
+    {t:'mc',q:'-नुस् makes a verb into a…',o:['polite request','past action','question','plural'],a:0},
+    {t:'mc',q:'What does पर्खनुस् mean?',d:'पर्खनुस्',r:'Parkhanus',o:['please wait','please come','please give','please sit'],a:0}
   ]},
   {id:'requests_3',title:'Build',step:'build',meta:'ask politely',vocab:[],ex:[
-    {t:'fill',q:'Complete the request: "please give water"',s:'पानी ___',o:['दिनुहोस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Paani dinuhos'},
-    {t:'tr',q:'Translate: "please come"',a:'आउनुहोस्',r:'Aaunuhos',h:'come + नुहोस्'},
-    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुहोस्'],r:'Chiyaa dinuhos',pool:['चिया','दिनुहोस्','पानी','गर्नुहोस्']},
-    {t:'fill',q:'Complete: "please sit"',s:'यहाँ ___',o:['बस्नुहोस्','बस्छु','बस्यो','बस्नुहुन्छ'],a:0,r:'Yahaa basnuhos'},
-    {t:'mc',q:'"please wait" =',o:['पर्खनुहोस्','पर्खन्छु','पर्खियो','पर्खनुहुन्छ'],a:0},
-    {t:'wb',q:'Build: "please give water"',a:['पानी','दिनुहोस्'],r:'Paani dinuhos',pool:['पानी','दिनुहोस्','चिया','गर्नुहोस्']},
-    {t:'fill',q:'Complete: "please listen"',s:'___',o:['सुन्नुहोस्','सुन्छु','सुन्यो','सुन्दै'],a:0,r:'Sunnuhos'},
-    {t:'mc',q:'"please do" =',o:['गर्नुहोस्','गर्छु','गर्यो','गर्दै'],a:0},
-    {t:'mc',q:'"please give" =',o:['दिनुहोस्','दिन्छु','दियो','दिनुहुन्छ'],a:0},
-    {t:'fill',q:'Make it a request: please + go (ahead)',s:'जानु___',o:['होस्','हुन्छ','छु','दै'],a:0,r:'Jaanuhos'}
+    {t:'fill',q:'Complete the request: "please give water"',s:'पानी ___',o:['दिनुस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Paani dinus'},
+    {t:'tr',q:'Translate: "please come"',a:'आउनुस्',r:'Aaunus',h:'come + नुस्'},
+    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुस्'],r:'Chiyaa dinus',pool:['चिया','दिनुस्','पानी','गर्नुस्']},
+    {t:'fill',q:'Complete: "please sit"',s:'यहाँ ___',o:['बस्नुस्','बस्छु','बस्यो','बस्नुहुन्छ'],a:0,r:'Yahaa basnus'},
+    {t:'mc',q:'"please wait" =',o:['पर्खनुस्','पर्खन्छु','पर्खियो','पर्खनुहुन्छ'],a:0},
+    {t:'wb',q:'Build: "please give water"',a:['पानी','दिनुस्'],r:'Paani dinus',pool:['पानी','दिनुस्','चिया','गर्नुस्']},
+    {t:'fill',q:'Complete: "please listen"',s:'___',o:['सुन्नुस्','सुन्छु','सुन्यो','सुन्दै'],a:0,r:'Sunnus'},
+    {t:'mc',q:'"please do" =',o:['गर्नुस्','गर्छु','गर्यो','गर्दै'],a:0},
+    {t:'mc',q:'"please give" =',o:['दिनुस्','दिन्छु','दियो','दिनुहुन्छ'],a:0},
+    {t:'fill',q:'Make it a request: please + go (ahead)',s:'___',o:['जानुस्','जानुहुन्छ','जान्छु','जाँदै'],a:0,r:'Jaanus'}
   ]},
   {id:'requests_4',title:'Mix',step:'mix',meta:'request vs statement',vocab:[],ex:[
-    {t:'mc',q:'Which is a REQUEST "please sit"?',o:['बस्नुहोस्','तपाईं बस्नुहुन्छ','म बस्छु','बसेँ'],a:0},
-    {t:'mc',q:'Which is a STATEMENT "you sit" (polite)?',o:['तपाईं बस्नुहुन्छ','बस्नुहोस्','म बस्छु','बसेँ'],a:0},
-    {t:'tr',q:'Translate: "please come"',a:'आउनुहोस्',r:'Aaunuhos'},
-    {t:'match',q:'Match the requests',pairs:[['बस्नुहोस्','please sit'],['दिनुहोस्','please give'],['आउनुहोस्','please come'],['सुन्नुहोस्','please listen']]},
-    {t:'fill',q:'Complete: "please give tea"',s:'चिया ___',o:['दिनुहोस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Chiyaa dinuhos'},
-    {t:'li',q:'What did you hear?',say:'पर्खनुहोस्',r:'Parkhanuhos',o:['please wait','please come','please give','please sit'],a:0},
-    {t:'mc',q:'Statements take -नुहुन्छ; requests take…',o:['-नुहोस्','-छु','-दै','-यो'],a:0},
-    {t:'wb',q:'Build: "please give water"',a:['पानी','दिनुहोस्'],r:'Paani dinuhos',pool:['पानी','दिनुहोस्','चिया','बस्नुहोस्']},
-    {t:'mc',q:'"please listen" =',o:['सुन्नुहोस्','सुन्छु','सुन्दै','सुन्यो'],a:0},
-    {t:'fill',q:'Complete: "please come"',s:'भित्र ___',o:['आउनुहोस्','आउँछु','आयो','आउनुहुन्छ'],a:0,r:'Bhitra aaunuhos'}
+    {t:'mc',q:'Which is a REQUEST "please sit"?',o:['बस्नुस्','तपाईं बस्नुहुन्छ','म बस्छु','बसेँ'],a:0},
+    {t:'mc',q:'Which is a STATEMENT "you sit" (polite)?',o:['तपाईं बस्नुहुन्छ','बस्नुस्','म बस्छु','बसेँ'],a:0},
+    {t:'tr',q:'Translate: "please come"',a:'आउनुस्',r:'Aaunus'},
+    {t:'match',q:'Match the requests',pairs:[['बस्नुस्','please sit'],['दिनुस्','please give'],['आउनुस्','please come'],['सुन्नुस्','please listen']]},
+    {t:'fill',q:'Complete: "please give tea"',s:'चिया ___',o:['दिनुस्','दिन्छु','दियो','दिनुहुन्छ'],a:0,r:'Chiyaa dinus'},
+    {t:'li',q:'What did you hear?',say:'पर्खनुस्',r:'Parkhanus',o:['please wait','please come','please give','please sit'],a:0},
+    {t:'mc',q:'Statements take -नुहुन्छ; requests take…',o:['-नुस्','-छु','-दै','-यो'],a:0},
+    {t:'wb',q:'Build: "please give water"',a:['पानी','दिनुस्'],r:'Paani dinus',pool:['पानी','दिनुस्','चिया','बस्नुस्']},
+    {t:'mc',q:'"please listen" =',o:['सुन्नुस्','सुन्छु','सुन्दै','सुन्यो'],a:0},
+    {t:'fill',q:'Complete: "please come"',s:'भित्र ___',o:['आउनुस्','आउँछु','आयो','आउनुहुन्छ'],a:0,r:'Bhitra aaunus'}
   ]},
   {id:'requests_5',title:'Checkpoint',step:'checkpoint',meta:'No hints — polite requests',vocab:[],ex:[
-    {t:'mc',q:'How do you say "please sit"?',o:['बस्नुहोस्','बस्छु','बस्नुहुन्छ','बस्दै छु'],a:0},
-    {t:'fill',q:'Complete: "please give water"',s:'पानी ___',o:['दिनुहोस्','दिन्छु','दियो','दिनुहुन्छ'],a:0},
-    {t:'tr',q:'Translate: "please come"',a:'आउनुहोस्',r:'Aaunuhos'},
-    {t:'match',q:'Match the requests',pairs:[['बस्नुहोस्','please sit'],['दिनुहोस्','please give'],['आउनुहोस्','please come'],['पर्खनुहोस्','please wait']]},
-    {t:'mc',q:'A polite request adds which ending?',o:['-नुहोस्','-नुहुन्छ','-छु','-दै'],a:0},
-    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुहोस्'],r:'Chiyaa dinuhos',pool:['चिया','दिनुहोस्','पानी','गर्नुहोस्']},
-    {t:'li',q:'What did you hear?',say:'आउनुहोस्',r:'Aaunuhos',o:['please come','please go','please sit','please wait'],a:0},
-    {t:'mc',q:'Which means "please listen"?',o:['सुन्नुहोस्','दिनुहोस्','बस्नुहोस्','जानुहोस्'],a:0},
-    {t:'fill',q:'Complete: "please do"',s:'काम ___',o:['गर्नुहोस्','गर्छु','गर्यो','गर्दै'],a:0},
-    {t:'mc',q:'-नुहोस् makes a verb into a…',o:['polite request','past action','question','plural'],a:0}
+    {t:'mc',q:'How do you say "please sit"?',o:['बस्नुस्','बस्छु','बस्नुहुन्छ','बस्दै छु'],a:0},
+    {t:'fill',q:'Complete: "please give water"',s:'पानी ___',o:['दिनुस्','दिन्छु','दियो','दिनुहुन्छ'],a:0},
+    {t:'tr',q:'Translate: "please come"',a:'आउनुस्',r:'Aaunus'},
+    {t:'match',q:'Match the requests',pairs:[['बस्नुस्','please sit'],['दिनुस्','please give'],['आउनुस्','please come'],['पर्खनुस्','please wait']]},
+    {t:'mc',q:'A polite request adds which ending?',o:['-नुस्','-नुहुन्छ','-छु','-दै'],a:0},
+    {t:'wb',q:'Build: "please give tea"',a:['चिया','दिनुस्'],r:'Chiyaa dinus',pool:['चिया','दिनुस्','पानी','गर्नुस्']},
+    {t:'li',q:'What did you hear?',say:'आउनुस्',r:'Aaunus',o:['please come','please go','please sit','please wait'],a:0},
+    {t:'mc',q:'Which means "please listen"?',o:['सुन्नुस्','दिनुस्','बस्नुस्','जानुस्'],a:0},
+    {t:'fill',q:'Complete: "please do"',s:'काम ___',o:['गर्नुस्','गर्छु','गर्यो','गर्दै'],a:0},
+    {t:'mc',q:'-नुस् makes a verb into a…',o:['polite request','past action','question','plural'],a:0}
   ,
 {t:'mc',q:'Review — which means "meat"?',o:['मासु','सात','पर्नु','पर्छ'],a:0},
 {t:'mc',q:'Review — which means "have to study"?',o:['पढ्नुपर्छ','बीस','जान्छौ','दस'],a:0}]},
@@ -3869,7 +3869,7 @@ const NE_LESSONS = [
     {t:'mc',q:'Which means "small"?',o:['सानो','ठूलो','धेरै','भन्दा'],a:0}
   ,
 {t:'mc',q:'Review — which means "coffee"?',o:['कफी','रेस्टुरेन्ट','छन्','घर'],a:0},
-{t:'mc',q:'Review — which means "have to buy"?',o:['किन्नुपर्छ','एघार','दिनुहोस्','मसँग'],a:0}]},
+{t:'mc',q:'Review — which means "have to buy"?',o:['किन्नुपर्छ','एघार','दिनुस्','मसँग'],a:0}]},
   {id:'opinion',title:'Giving opinions',step:'learn',meta:'मलाई लाग्छ = I think',vocab:[['मलाई लाग्छ','malai laagchha','I think / it seems to me'],['जस्तो','jasto','like / as'],['राम्रो जस्तो लाग्छ','raamro jasto laagchha','it seems good'],['सायद','saayad','maybe / perhaps'],['साँच्चै','saanchai','really'],['मलाई मन पर्छ','malai man parchha','I like it'],['कि','ki','that']],ex:[
     {t:'note',tag:'In my opinion',q:'मलाई लाग्छ = I think',body:'<p><span class="deva">मलाई लाग्छ</span> means "it seems to me / I think". Add <span class="deva">जस्तो</span> for "seems like":</p><p><span class="deva">राम्रो जस्तो लाग्छ</span> = it seems good.</p>'},
     {t:'mc',q:'What does मलाई लाग्छ mean?',d:'मलाई लाग्छ',r:'malai laagchha',o:['I think / it seems to me','I like it','I have it','I want it'],a:0},
@@ -3977,7 +3977,7 @@ const NE_LESSONS = [
     {t:'li',q:'Listen &mdash; who?',say:'येशू',o:['Jesus','God','help','today'],a:0},
     {t:'wb',q:'Build: &ldquo;I love God&rdquo;',a:['म','परमेश्वरलाई','प्रेम','गर्छु'],pool:['परमेश्वरलाई','प्रेम','यो','हो','गर्छु','म']},
     {t:'mc',q:'Which one says &ldquo;Thank you Jesus for today&rdquo;?',o:['आजको लागि धन्यवाद येशू','मेरो परिवारको लागि धन्यवाद येशू','यो तपाईंको लागि हो','म नेपाली सिक्दै छु'],a:0},
-    {t:'note',tag:'Today & help',q:'आज and सहायता',body:'<p><span class="deva">आज</span> = today &middot; <span class="deva">सहायता</span> = help.</p><p><span class="deva">आज धेरै गर्मी छ</span> &mdash; &ldquo;It\'s so hot today!&rdquo;<br><span class="deva">परमेश्वर मलाई सहायता गर्नुहोस्</span> &mdash; &ldquo;God, please help me.&rdquo;</p>'},
+    {t:'note',tag:'Today & help',q:'आज and सहायता',body:'<p><span class="deva">आज</span> = today &middot; <span class="deva">सहायता</span> = help.</p><p><span class="deva">आज धेरै गर्मी छ</span> &mdash; &ldquo;It\'s so hot today!&rdquo;<br><span class="deva">परमेश्वर मलाई सहायता गर्नुस्</span> &mdash; &ldquo;God, please help me.&rdquo;</p>'},
     {t:'wb',q:'Build: &ldquo;It\'s so hot today!&rdquo;',a:['आज','धेरै','गर्मी','छ'],pool:['घर','धेरै','पर्छ','गर्मी','छ','आज']},
     {t:'tr',q:'Translate: &ldquo;I am learning Nepali&rdquo;',a:'म नेपाली सिक्दै छु',r:'ma nepali sikdai chhu',h:'म = I &middot; नेपाली = Nepali &middot; सिक्दै छु = am learning'},
     {t:'match',q:'Match word to meaning',pairs:[['परमेश्वर','God'],['येशू','Jesus'],['आज','today'],['सहायता','help']]},
@@ -3994,7 +3994,7 @@ const NE_LESSONS = [
     {t:'note',tag:'Daily habit',q:'Number, color & question of the day',body:'<p>Each day picks up a number, a color, and a handy question:</p><p>Number &mdash; <span class="deva">एक</span> (1) &middot; Color &mdash; <span class="deva">सेतो</span> (white)</p><p>Question &mdash; <span class="deva">यसलाई नेपालीमा के भन्छ?</span> &ldquo;How do you say this in Nepali?&rdquo; Point at anything and ask.</p>'},
     {t:'mc',q:'What number is this?',d:'एक',r:'ek',o:['one','two','five','ten'],a:0},
     {t:'mc',q:'How do you ask &ldquo;How do you say this in Nepali?&rdquo;',o:['यसलाई नेपालीमा के भन्छ?','कहाँ जानुहुन्छ?','कस्तो छ?','खाना खानुभयो?'],a:0},
-    {t:'note',tag:'Your assignment',q:'Pray your first prayer',body:'<p>Your first assignment: learn this short prayer and pray it out loud.</p><p style="font-size:17px;line-height:1.7;margin:10px 0"><span class="deva">आजको दिनको लागि धन्यवाद प्रभु, मलाई अझ नेपाली सिक्न सहायता गर्नुहोस् । येशूको नाममा आमेन ।</span></p><p><i>&ldquo;Thank you Lord for today, please help me learn more Nepali. In Jesus\' name, amen.&rdquo;</i></p>',tip:'Put it in Anki and pray it daily &mdash; speaking practice and worship at once.'}
+    {t:'note',tag:'Your assignment',q:'Pray your first prayer',body:'<p>Your first assignment: learn this short prayer and pray it out loud.</p><p style="font-size:17px;line-height:1.7;margin:10px 0"><span class="deva">आजको दिनको लागि धन्यवाद प्रभु, मलाई अझ नेपाली सिक्न सहायता गर्नुस् । येशूको नाममा आमेन ।</span></p><p><i>&ldquo;Thank you Lord for today, please help me learn more Nepali. In Jesus\' name, amen.&rdquo;</i></p>',tip:'Put it in Anki and pray it daily &mdash; speaking practice and worship at once.'}
   ]},
 
 
@@ -4127,12 +4127,12 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['सजिलो','easy'],['गाह्रो','hard'],['छ','is'],['छैन','is not']]}
   ]},
 
-  {id:'li_w1d4_3',title:'Give it a try',step:'build',vocab:[['कोसिस','kosis','try'],['प्रयास','prayas','try / effort'],['म कोसिस गर्छु','ma kosis garchhu','I\'ll try'],['कोसिस गर्नुहोस्!','kosis garnuhos','just try!']],ex:[
-    {t:'note',tag:'Trying',q:'कोसिस / प्रयास',body:'<p>Two words for &ldquo;try&rdquo;: <span class="deva">कोसिस</span> and <span class="deva">प्रयास</span>.</p><p><span class="deva">म कोसिस गर्छु</span> I\'ll try.<br><span class="deva">राम्रो गर्न कोसिस गर्नुहोस्</span> Try your best!</p>'},
+  {id:'li_w1d4_3',title:'Give it a try',step:'build',vocab:[['कोसिस','kosis','try'],['प्रयास','prayas','try / effort'],['म कोसिस गर्छु','ma kosis garchhu','I\'ll try'],['कोसिस गर्नुस्!','kosis garnus','just try!']],ex:[
+    {t:'note',tag:'Trying',q:'कोसिस / प्रयास',body:'<p>Two words for &ldquo;try&rdquo;: <span class="deva">कोसिस</span> and <span class="deva">प्रयास</span>.</p><p><span class="deva">म कोसिस गर्छु</span> I\'ll try.<br><span class="deva">राम्रो गर्न कोसिस गर्नुस्</span> Try your best!</p>'},
     {t:'mc',q:'What does कोसिस mean?',d:'कोसिस',r:'kosis',o:['try','easy','do','meet'],a:0},
     {t:'wb',q:'Build: "I\'ll try"',a:['म','कोसिस','गर्छु'],pool:['कोसिस','तपाईं','पानी','गर्छु','म']},
-    {t:'li',q:'Listen &mdash; what are they saying?',say:'कोसिस गर्नुहोस्!',o:['Just try!','I\'ll try','It\'s easy','Don\'t worry'],a:0},
-    {t:'mc',q:'"Try your best!" is:',o:['राम्रो गर्न कोसिस गर्नुहोस्','म कोसिस गर्छु','यो सजिलो छ','कोसिस गर्नुहोस्!'],a:0},
+    {t:'li',q:'Listen &mdash; what are they saying?',say:'कोसिस गर्नुस्!',o:['Just try!','I\'ll try','It\'s easy','Don\'t worry'],a:0},
+    {t:'mc',q:'"Try your best!" is:',o:['राम्रो गर्न कोसिस गर्नुस्','म कोसिस गर्छु','यो सजिलो छ','कोसिस गर्नुस्!'],a:0},
     {t:'mc',q:'"प्रयास" also means:',d:'प्रयास',r:'prayas',o:['try / effort','where','today','help'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['कोसिस','try'],['प्रयास','try / effort'],['गर्छु','(I) do'],['राम्रो','good']]}
   ]},
@@ -4206,7 +4206,7 @@ const NE_LESSONS = [
     {t:'li',q:'Listen &mdash; which word?',say:'भाषा',o:['language','work','weekend','word'],a:0},
     {t:'wb',q:'Build: "I can speak Nepali"',a:['म','नेपाली','बोल्न','सक्छु'],pool:['भात','म','नेपाली','चिया','बोल्न','सक्छु']},
     {t:'mc',q:'Which word means "not really"?',o:['खासै','बिदा','काम','थाहा'],a:0},
-    {t:'note',tag:'One more verb',q:'सम्झनु = to remember',body:'<p><span class="deva">सम्झनु</span> / <span class="deva">याद गर्नु</span> = to remember.</p><p><span class="deva">यो कुरा याद गर्नुहोस्</span> Please remember this!</p><p>And <span class="deva">कि</span> = &ldquo;that&rdquo;: <span class="deva">मलाई लाग्छ कि तपाईं गर्न सक्नुहुन्छ</span> &mdash; I think that you can do it!</p>'},
+    {t:'note',tag:'One more verb',q:'सम्झनु = to remember',body:'<p><span class="deva">सम्झनु</span> / <span class="deva">याद गर्नु</span> = to remember.</p><p><span class="deva">यो कुरा याद गर्नुस्</span> Please remember this!</p><p>And <span class="deva">कि</span> = &ldquo;that&rdquo;: <span class="deva">मलाई लाग्छ कि तपाईं गर्न सक्नुहुन्छ</span> &mdash; I think that you can do it!</p>'},
     {t:'mc',q:'What does सम्झनु mean?',d:'सम्झनु',r:'samjhanu',o:['to remember','to speak','to work','to try'],a:0},
     {t:'mc',q:'What number is this?',d:'पाँच',r:'panch',o:['five','four','three','two'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['पाँच','five'],['हरियो','green'],['काम','work'],['भाषा','language']]}
@@ -4410,7 +4410,7 @@ const NE_LESSONS = [
     {t:'li',q:'Listen &mdash; which word?',say:'भन्नु',o:['to tell','to want','to need','to think'],a:0},
     {t:'mc',q:'"The Bible story is all about Jesus" &mdash; "about" is:',d:'बाइबलको कथा येशूको बारेमा हो',r:'bible ko katha yeshuko baarema ho',o:['बारेमा','किनभने','भन्दा','यदि'],a:0},
     {t:'wb',q:'Build: "I want to tell you something"',a:['म','तपाईंलाई','केही','भन्न','चाहन्छु'],pool:['चाहन्छु','मलाई','भन्न','म','तपाईंलाई','केही','चिया']},
-    {t:'mc',q:'"Tell me truthfully" is:',o:['साच्ची कुरा भन्नुहोस्','मलाई थाहा छैन','यो के हो?','म जान्छु'],a:0},
+    {t:'mc',q:'"Tell me truthfully" is:',o:['साच्ची कुरा भन्नुस्','मलाई थाहा छैन','यो के हो?','म जान्छु'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['भन्नु','to tell'],['बारेमा','about'],['कथा','story'],['केही','something']]}
   ]},
 
@@ -4517,7 +4517,7 @@ const NE_LESSONS = [
     {t:'note',tag:'Sequencing',q:'त्यसपछि = then / after that',body:'<p>Use <span class="deva">त्यसपछि</span> to chain actions in order:</p><p><span class="deva">मैले बाइबल पढेँ, त्यसपछि प्रार्थना गरेँ</span> &mdash; I read my Bible, then I prayed.</p>'},
     {t:'mc',q:'What does त्यसपछि mean?',d:'त्यसपछि',r:'tyaspachi',o:['then / after that','before','every day','normally'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'सिकाउनु',o:['to teach','to learn','to worship','to read'],a:0},
-    {t:'mc',q:'"Please teach me Nepali" is:',o:['मलाई नेपाली भाषा सिकाउनुहोस्','म नेपाली सिक्दै छु','मलाई नेपाली आउँछ','नेपाली सिक्न सजिलो छ'],a:0},
+    {t:'mc',q:'"Please teach me Nepali" is:',o:['मलाई नेपाली भाषा सिकाउनुस्','म नेपाली सिक्दै छु','मलाई नेपाली आउँछ','नेपाली सिक्न सजिलो छ'],a:0},
     {t:'wb',q:'Build: "I prayed, then I worshipped"',a:['मैले','प्रार्थना','गरेँ','त्यसपछि','आराधना','गरेँ'],pool:['तपाईं','मैले','त्यसपछि','प्रार्थना','गरेँ','आराधना','यो','गरेँ']},
     {t:'mc',q:'सिकाउनु vs सिक्नु &mdash; सिकाउनु means:',o:['to teach','to learn','to read','to know'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['त्यसपछि','then'],['सिकाउनु','to teach'],['सिक्नु','to learn'],['गरेँ','I did']]}
@@ -4556,7 +4556,7 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w3d2_3',title:'Getting ready',step:'build',vocab:[['तयार गर्नु','tayar garnu','to prepare'],['मलाई तयार गर्नुपर्छ','malai tayar garnuparchha','I need to prepare'],['मन तयार गर्नु','man tayar garnu','to prepare the heart']],ex:[
-    {t:'note',tag:'Prepare',q:'तयार गर्नु = to prepare',body:'<p><span class="deva">मैले आजको दिनको लागि तयार गर्नुपर्छ</span> &mdash; I need to prepare for the day.</p><p>And a prayer: <span class="deva">परमेश्वर मेरो मन तयार गरिदिनुहोस्</span> &mdash; God, prepare my heart.</p>'},
+    {t:'note',tag:'Prepare',q:'तयार गर्नु = to prepare',body:'<p><span class="deva">मैले आजको दिनको लागि तयार गर्नुपर्छ</span> &mdash; I need to prepare for the day.</p><p>And a prayer: <span class="deva">परमेश्वर मेरो मन तयार गरिदिनुस्</span> &mdash; God, prepare my heart.</p>'},
     {t:'mc',q:'What does तयार गर्नु mean?',d:'तयार गर्नु',r:'tayar garnu',o:['to prepare','to clean','to wake up','to rest'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'तयार गर्नु',o:['to prepare','to shower','to teach','to spend'],a:0},
     {t:'wb',q:'Build: "I need to prepare for the day"',a:['मैले','आजको','दिनको','लागि','तयार','गर्नुपर्छ'],pool:['हो','तयार','दिनको','पर्छ','गर्नुपर्छ','मैले','आजको','लागि']},
@@ -4598,7 +4598,7 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w3d3_2',title:'Clean & classroom',step:'recognize',vocab:[['सफा गर्नु','safa garnu','to clean'],['कक्षा कोठा','kaksha kotha','classroom'],['मलाई कोठा सफा गर्न मनपर्दैन','malai kotha safa garna manpardaina','I don\u2019t like to clean my room']],ex:[
-    {t:'note',tag:'Chores',q:'सफा गर्नु & कक्षा कोठा',body:'<p><span class="deva">सफा गर्नु</span> to clean &middot; <span class="deva">कक्षा कोठा</span> classroom.</p><p>A prayer: <span class="deva">परमेश्वर मेरो मन सफा गरिदिनुहोस्</span> &mdash; God, clean my heart.</p>'},
+    {t:'note',tag:'Chores',q:'सफा गर्नु & कक्षा कोठा',body:'<p><span class="deva">सफा गर्नु</span> to clean &middot; <span class="deva">कक्षा कोठा</span> classroom.</p><p>A prayer: <span class="deva">परमेश्वर मेरो मन सफा गरिदिनुस्</span> &mdash; God, clean my heart.</p>'},
     {t:'mc',q:'What does सफा गर्नु mean?',d:'सफा गर्नु',r:'safa garnu',o:['to clean','to prepare','to teach','to rest'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'कक्षा कोठा',o:['classroom','toilet','kitchen','market'],a:0},
     {t:'mc',q:'"You need to clean your room" &mdash; "clean" is:',o:['सफा गर्नु','तयार गर्नु','उठ्नु','नुहाउनु'],a:0},
@@ -4755,13 +4755,13 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['बजार','market'],['गाउँ','village'],['गुम्बा','monastery'],['किन्नु','to buy']]}
   ]},
 
-  {id:'li_w4d1_2',title:'Roads & going',step:'recognize',vocab:[['बाटो','baato','road / way'],['जानु','janu','to go'],['सीधा जानुहोस्','sidha janus','go straight'],['यो बाटोमा बायाँ जानुहोस्','yo baatoma baya janus','turn left on this road']],ex:[
-    {t:'note',tag:'Getting there',q:'बाटो & जानु',body:'<p><span class="deva">बाटो</span> street / road &middot; <span class="deva">जानु</span> to go.</p><p><span class="deva">पहिला सीधा ठूलो बाटो जानुहोस्, त्यसपछि बायाँ जानुहोस्</span> &mdash; first go straight on the big road, then turn left.</p>'},
+  {id:'li_w4d1_2',title:'Roads & going',step:'recognize',vocab:[['बाटो','baato','road / way'],['जानु','janu','to go'],['सीधा जानुस्','sidha janus','go straight'],['यो बाटोमा बायाँ जानुस्','yo baatoma baya janus','turn left on this road']],ex:[
+    {t:'note',tag:'Getting there',q:'बाटो & जानु',body:'<p><span class="deva">बाटो</span> street / road &middot; <span class="deva">जानु</span> to go.</p><p><span class="deva">पहिला सीधा ठूलो बाटो जानुस्, त्यसपछि बायाँ जानुस्</span> &mdash; first go straight on the big road, then turn left.</p>'},
     {t:'mc',q:'What does बाटो mean?',d:'बाटो',r:'baato',o:['street / road','market','village','place'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'जानु',o:['to go','to come','to walk','to buy'],a:0},
     {t:'mc',q:'"Which road do I need to take?" is:',o:['म कुन बाटो जानु पर्छ?','बजार कहाँ छ?','तपाईं कहाँ हुनुहुन्छ?','कति बज्यो?'],a:0},
     {t:'mc',q:'"If you go left, you will see the mountain" &mdash; "go" is:',o:['जानु','आउनु','हेर्नु','किन्नु'],a:0},
-    {t:'fill',q:'Complete: "go straight on the big road"',s:'सीधा ठूलो ___ जानुहोस्',o:['बाटो','गाउँ','घर','ठाउँ'],a:0},
+    {t:'fill',q:'Complete: "go straight on the big road"',s:'सीधा ठूलो ___ जानुस्',o:['बाटो','गाउँ','घर','ठाउँ'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['बाटो','road'],['जानु','to go'],['सीधा','straight'],['बायाँ','left']]}
   ]},
 
@@ -4775,13 +4775,13 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['माथि','above'],['तल','below'],['आकाश','sky'],['टेबल','table']]}
   ]},
 
-  {id:'li_w4d1_4',title:'Inside & outside',step:'mix',vocab:[['भित्र','bhitra','inside'],['बाहिर','baahira','outside'],['पवित्र आत्मा हाम्रो हृदयभित्र बस्नुहुन्छ','pawitra aatma haamro hridayabhitra basnuhunchha','the Holy Spirit lives inside our heart'],['बाहिर नजानुहोस्','baahira najaanus','don\u2019t go outside']],ex:[
+  {id:'li_w4d1_4',title:'Inside & outside',step:'mix',vocab:[['भित्र','bhitra','inside'],['बाहिर','baahira','outside'],['पवित्र आत्मा हाम्रो हृदयभित्र बस्नुहुन्छ','pawitra aatma haamro hridayabhitra basnuhunchha','the Holy Spirit lives inside our heart'],['बाहिर नजानुस्','baahira najaanus','don\u2019t go outside']],ex:[
     {t:'note',tag:'In & out',q:'भित्र & बाहिर',body:'<p><span class="deva">भित्र</span> inside &middot; <span class="deva">बाहिर</span> outside.</p><p><span class="deva">टेबल घरभित्र छ</span> the table is inside the house &middot; <span class="deva">पवित्र आत्मा हाम्रो हृदयभित्र बस्नुहुन्छ</span> the Holy Spirit lives inside our heart.</p>'},
     {t:'mc',q:'What does भित्र mean?',d:'भित्र',r:'bhitra',o:['inside','outside','above','below'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'बाहिर',o:['outside','inside','above','here'],a:0},
     {t:'mc',q:'"What do you like to do outside?" &mdash; "outside" is:',o:['बाहिर','भित्र','माथि','तल'],a:0},
     {t:'wb',q:'Build: "what is inside your home?"',a:['तपाईंको','घरभित्र','के','छ?'],pool:['तपाईंको','घरभित्र','के','पानी','छ?','तपाईं']},
-    {t:'mc',q:'"Don\'t go outside" is:',o:['बाहिर नजानुहोस्','भित्र आउनुहोस्','यहाँ आउनुहोस्','सीधा जानुहोस्'],a:0},
+    {t:'mc',q:'"Don\'t go outside" is:',o:['बाहिर नजानुस्','भित्र आउनुस्','यहाँ आउनुस्','सीधा जानुस्'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['भित्र','inside'],['बाहिर','outside'],['माथि','above'],['तल','below']]}
   ]},
 
@@ -4790,7 +4790,7 @@ const NE_LESSONS = [
     {t:'mc',q:'Which word means "road / street"?',o:['बाटो','बजार','गाउँ','ठाउँ'],a:0},
     {t:'li',q:'Listen &mdash; which direction word?',say:'माथि',o:['above','below','inside','outside'],a:0},
     {t:'mc',q:'"भित्र" means:',d:'भित्र',r:'bhitra',o:['inside','outside','above','below'],a:0},
-    {t:'fill',q:'Complete: "go straight on the big road"',s:'सीधा ठूलो ___ जानुहोस्',o:['बाटो','गाउँ','घर','गुम्बा'],a:0},
+    {t:'fill',q:'Complete: "go straight on the big road"',s:'सीधा ठूलो ___ जानुस्',o:['बाटो','गाउँ','घर','गुम्बा'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['बजार','market'],['गाउँ','village'],['माथि','above'],['बाहिर','outside']]},
     {t:'note',tag:'Bigger numbers',q:'Number of the day',body:'<p>The numbers keep climbing: <span class="deva">सत्तरी</span> (70).</p><p>Question &mdash; <span class="deva">तपाईं कुन बजार जान चाहनुहुन्छ?</span> &ldquo;What market do you want to go to?&rdquo;</p>'},
     {t:'mc',q:'What number is this?',d:'सत्तरी',r:'sattari',o:['seventy','sixty','seventeen','eighty'],a:0}
@@ -4807,11 +4807,11 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['ठाउँ','place'],['टाढा','far'],['सुन्दर','beautiful'],['मनपर्ने','favorite']]}
   ]},
 
-  {id:'li_w4d2_2',title:'Here & there',step:'recognize',vocab:[['यहाँ','yaha','here'],['त्यहाँ','tyaha','there'],['यहाँ आउनुहोस्','yaha aaunus','please come here'],['यहाँ राम्रो ठाउँ छ','yaha raamro thaau chha','here is a good place']],ex:[
+  {id:'li_w4d2_2',title:'Here & there',step:'recognize',vocab:[['यहाँ','yaha','here'],['त्यहाँ','tyaha','there'],['यहाँ आउनुस्','yaha aaunus','please come here'],['यहाँ राम्रो ठाउँ छ','yaha raamro thaau chha','here is a good place']],ex:[
     {t:'note',tag:'Here / there',q:'यहाँ & त्यहाँ',body:'<p><span class="deva">यहाँ</span> here &middot; <span class="deva">त्यहाँ</span> there.</p><p><span class="deva">यहाँ परमेश्वरले मलाई भेट्टाउनुभयो</span> &mdash; this is the place where God found me.</p>'},
     {t:'mc',q:'What does यहाँ mean?',d:'यहाँ',r:'yaha',o:['here','there','where','place'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'त्यहाँ',o:['there','here','where','inside'],a:0},
-    {t:'mc',q:'"Please come here" is:',o:['यहाँ आउनुहोस्','त्यहाँ जानुहोस्','बाहिर जानुहोस्','भित्र आउनुहोस्'],a:0},
+    {t:'mc',q:'"Please come here" is:',o:['यहाँ आउनुस्','त्यहाँ जानुस्','बाहिर जानुस्','भित्र आउनुस्'],a:0},
     {t:'fill',q:'Complete: "here is a good place"',s:'___ राम्रो ठाउँ छ',o:['यहाँ','त्यहाँ','कहाँ','भित्र'],a:0},
     {t:'mc',q:'"How far is that house from here?" uses यहाँ to mean:',o:['from here','to there','inside','above'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['यहाँ','here'],['त्यहाँ','there'],['कहाँ','where'],['आउनु','to come']]}
@@ -4860,12 +4860,12 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w4d3_2',title:'Front & behind',step:'recognize',vocab:[['अगाडि','agadi','front / forward'],['पछाडि','pachadi','behind / backward'],['म तपाईंको अगाडि छु','ma tapainko agadi chhu','I am in front of you'],['बाइबल तपाईंको पछाडि छ','bible tapainko pachadi chha','the Bible is behind you']],ex:[
-    {t:'note',tag:'Front / behind',q:'अगाडि & पछाडि',body:'<p><span class="deva">अगाडि</span> front / forward &middot; <span class="deva">पछाडि</span> behind / backward.</p><p><span class="deva">अगाडि आउनुहोस्</span> come to the front &middot; <span class="deva">पछाडि जानुहोस्</span> go back.</p>'},
+    {t:'note',tag:'Front / behind',q:'अगाडि & पछाडि',body:'<p><span class="deva">अगाडि</span> front / forward &middot; <span class="deva">पछाडि</span> behind / backward.</p><p><span class="deva">अगाडि आउनुस्</span> come to the front &middot; <span class="deva">पछाडि जानुस्</span> go back.</p>'},
     {t:'mc',q:'What does अगाडि mean?',d:'अगाडि',r:'agadi',o:['front / forward','behind / backward','above','inside'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'पछाडि',o:['behind','front','above','below'],a:0},
     {t:'mc',q:'"What is behind you?" is:',o:['तपाईंको पछाडि के छ?','तपाईंको अगाडि के छ?','तपाईं कहाँ हुनुहुन्छ?','यो के हो?'],a:0},
     {t:'fill',q:'Complete: "the Bible is behind you"',s:'बाइबल तपाईंको ___ छ',o:['पछाडि','अगाडि','माथि','तल'],a:0},
-    {t:'mc',q:'"Go forward" is:',o:['अगाडि जानुहोस्','पछाडि जानुहोस्','बाहिर जानुहोस्','भित्र आउनुहोस्'],a:0},
+    {t:'mc',q:'"Go forward" is:',o:['अगाडि जानुस्','पछाडि जानुस्','बाहिर जानुस्','भित्र आउनुस्'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['अगाडि','front'],['पछाडि','behind'],['माथि','above'],['तल','below']]}
   ]},
 
@@ -5040,7 +5040,7 @@ const NE_LESSONS = [
     {t:'mc',q:'What does पर्छ add to a verb?',d:'गर्नुपर्छ',r:'garnuparchha',o:['should / have to','want to','can','already did'],a:0},
     {t:'mc',q:'What does निस्कनु mean?',d:'निस्कनु',r:'niskanu',o:['to leave / exit','to enter','to live','to decide'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'निस्कनु',o:['to leave / exit','to enter','to walk','to sit'],a:0},
-    {t:'mc',q:'"You should come with me" is:',o:['तपाईं मसँग आउनुपर्छ','तपाईं मसँग आउनुहुन्छ','म तपाईंसँग जान्छु','तपाईं निस्कनुहोस्'],a:0},
+    {t:'mc',q:'"You should come with me" is:',o:['तपाईं मसँग आउनुपर्छ','तपाईं मसँग आउनुहुन्छ','म तपाईंसँग जान्छु','तपाईं निस्कनुस्'],a:0},
     {t:'wb',q:'Build: "I have to follow Jesus"',a:['मैले','येशूलाई','पछ्याउनुपर्छ'],pool:['मैले','येशूलाई','के','पछ्याउनुपर्छ','छु']},
     {t:'match',q:'Match to meaning',pairs:[['पर्छ','have to'],['निस्कनु','to leave'],['ढोका','door'],['पछ्याउनु','to follow']]}
   ]},
@@ -5067,23 +5067,23 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['मंगलबार','Tuesday'],['बस्नु','to live'],['देश','country'],['कहाँ','where']]}
   ]},
 
-  {id:'li_w5d2_2',title:'Know & put',step:'recognize',vocab:[['चिन्नु','chinnu','to know (people / places)'],['राख्नु','raakhnu','to put / keep'],['म तपाईंलाई चिन्दिन','ma tapainlai chindina','I don\u2019t know you'],['त्यसलाई तल राख्नुहोस्','tyaslai tala raakhnus','please put that down']],ex:[
+  {id:'li_w5d2_2',title:'Know & put',step:'recognize',vocab:[['चिन्नु','chinnu','to know (people / places)'],['राख्नु','raakhnu','to put / keep'],['म तपाईंलाई चिन्दिन','ma tapainlai chindina','I don\u2019t know you'],['त्यसलाई तल राख्नुस्','tyaslai tala raakhnus','please put that down']],ex:[
     {t:'note',tag:'Knowing & placing',q:'चिन्नु & राख्नु',body:'<p><span class="deva">चिन्नु</span> = to know / recognize people or places &middot; <span class="deva">राख्नु</span> = to put / keep.</p><p><span class="deva">म येशूलाई अझ बढी चिन्न चाहन्छु</span> &mdash; I want to know Jesus more.</p>'},
     {t:'mc',q:'What does चिन्नु mean?',d:'चिन्नु',r:'chinnu',o:['to know (people / places)','to put','to live','to take'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'राख्नु',o:['to put / keep','to know','to take','to leave'],a:0},
     {t:'mc',q:'"Do you know my friend?" is:',o:['तपाईं मेरो साथीलाई चिन्नुहुन्छ?','तपाईं मेरो साथीलाई माया गर्नुहुन्छ?','मेरो साथी कहाँ छ?','तपाईं को हुनुहुन्छ?'],a:0},
     {t:'mc',q:'"Where do I put the Bible?" uses राख्नु to mean:',o:['put','know','take','leave'],a:0},
-    {t:'fill',q:'Complete: "please put that down"',s:'त्यसलाई तल ___',o:['राख्नुहोस्','लिनुहोस्','चिन्नुहोस्','हेर्नुहोस्'],a:0},
+    {t:'fill',q:'Complete: "please put that down"',s:'त्यसलाई तल ___',o:['राख्नुस्','लिनुस्','चिन्नुस्','हेर्नुस्'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['चिन्नु','to know'],['राख्नु','to put'],['टेबल','table'],['तल','down / below']]}
   ]},
 
-  {id:'li_w5d2_3',title:'Take & enter',step:'build',vocab:[['लिनु','linu','to take'],['लानु','laanu','to take (with you)'],['भित्र आउनु','bhitra aaunu','to enter / come in'],['मलाई तपाईंसँगै लानुहोस्','malai tapainsangai laanus','take me with you']],ex:[
+  {id:'li_w5d2_3',title:'Take & enter',step:'build',vocab:[['लिनु','linu','to take'],['लानु','laanu','to take (with you)'],['भित्र आउनु','bhitra aaunu','to enter / come in'],['मलाई तपाईंसँगै लानुस्','malai tapainsangai laanus','take me with you']],ex:[
     {t:'note',tag:'Take & enter',q:'लिनु / लानु & भित्र आउनु',body:'<p><span class="deva">लिनु</span> take &middot; <span class="deva">लानु</span> take (along with you) &middot; <span class="deva">भित्र आउनु</span> enter / come in.</p><p><span class="deva">के तपाईं भित्र आउन चाहनुहुन्छ?</span> &mdash; do you want to come inside?</p>'},
     {t:'mc',q:'What does भित्र आउनु mean?',d:'भित्र आउनु',r:'bhitra aaunu',o:['to enter / come in','to leave','to take','to put'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'लिनु',o:['to take','to put','to enter','to know'],a:0},
-    {t:'wb',q:'Build: "take me with you"',a:['मलाई','तपाईंसँगै','लानुहोस्'],pool:['घर','तपाईंसँगै','पर्छ','लानुहोस्','मलाई']},
+    {t:'wb',q:'Build: "take me with you"',a:['मलाई','तपाईंसँगै','लानुस्'],pool:['घर','तपाईंसँगै','पर्छ','लानुस्','मलाई']},
     {t:'mc',q:'"Where is the entrance?" &mdash; "to enter / come in" is:',o:['भित्र आउनु','निस्कनु','राख्नु','चिन्नु'],a:0},
-    {t:'mc',q:'"Join in with us!" is:',o:['हामीसँगै आउनुहोस्!','भित्र नआउनुहोस्','निस्कनुहोस्','तल राख्नुहोस्'],a:0},
+    {t:'mc',q:'"Join in with us!" is:',o:['हामीसँगै आउनुस्!','भित्र नआउनुस्','निस्कनुस्','तल राख्नुस्'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['लिनु','to take'],['लानु','to take along'],['भित्र आउनु','to enter'],['निस्कनु','to leave']]}
   ]},
 
@@ -5190,13 +5190,13 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['खानेछु','will eat'],['हिँड्नेछु','will walk'],['दौडनेछु','will run'],['बस्नेछु','will sit']]}
   ]},
 
-  {id:'li_w5d4_4',title:'All three tenses',step:'mix',vocab:[['दिनु','dinu','to give'],['मलाई त्यो दिनुहोस्','malai tyo dinus','please give me that'],['उहाँले मलाई कफी किनिदिनुभयो','wahaale malai coffee kinidinubhayo','he bought me coffee']],ex:[
-    {t:'note',tag:'Same verb, three times',q:'Past · Now · Future',body:'<p>Watch &ldquo;eat&rdquo; move through time:</p><p><span class="deva">मैले खाएँ</span> I ate &rarr; <span class="deva">म खाँदैछु</span> I am eating &rarr; <span class="deva">म खानेछु</span> I will eat.</p><p>And <span class="deva">दिनु</span> = to give: <span class="deva">मलाई त्यो दिनुहोस्</span> please give me that.</p>'},
+  {id:'li_w5d4_4',title:'All three tenses',step:'mix',vocab:[['दिनु','dinu','to give'],['मलाई त्यो दिनुस्','malai tyo dinus','please give me that'],['उहाँले मलाई कफी किनिदिनुभयो','wahaale malai coffee kinidinubhayo','he bought me coffee']],ex:[
+    {t:'note',tag:'Same verb, three times',q:'Past · Now · Future',body:'<p>Watch &ldquo;eat&rdquo; move through time:</p><p><span class="deva">मैले खाएँ</span> I ate &rarr; <span class="deva">म खाँदैछु</span> I am eating &rarr; <span class="deva">म खानेछु</span> I will eat.</p><p>And <span class="deva">दिनु</span> = to give: <span class="deva">मलाई त्यो दिनुस्</span> please give me that.</p>'},
     {t:'mc',q:'Which one is the FUTURE form of "walk"?',o:['हिँड्नेछु','हिँडेँ','हिँड्दैछु','हिँड्छु'],a:0},
     {t:'mc',q:'Which one is the PAST form of "eat"?',o:['खाएँ','खाँदैछु','खानेछु','खान्छु'],a:0},
     {t:'li',q:'Listen &mdash; which tense?',say:'म खाँदैछु',o:['present (I am eating)','past (I ate)','future (I will eat)','never'],a:0},
     {t:'mc',q:'What does दिनु mean?',d:'दिनु',r:'dinu',o:['to give','to take','to put','to decide'],a:0},
-    {t:'wb',q:'Build: "please give me that"',a:['मलाई','त्यो','दिनुहोस्'],pool:['हो','दिनुहोस्','पर्छ','त्यो','मलाई']},
+    {t:'wb',q:'Build: "please give me that"',a:['मलाई','त्यो','दिनुस्'],pool:['हो','दिनुस्','पर्छ','त्यो','मलाई']},
     {t:'match',q:'Match to tense',pairs:[['खाएँ','past'],['खाँदैछु','present'],['खानेछु','future'],['दिनु','to give']]}
   ]},
 
@@ -5594,7 +5594,7 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w7d2_3',title:'Failing',step:'build',vocab:[['असफलता','asaphalta','failure'],['असफल हुनु','asaphal hunu','to fail'],['असफलताबाट डराउन हुँदैन','asaphaltabata daraauna hudaina','don\u2019t be scared to fail'],['हामी असफलताबाट सिक्न सक्छौं','haami asaphaltabata sikna sakchhau','we can learn from failure']],ex:[
-    {t:'note',tag:'Learning from failure',q:'असफलता = failure',body:'<p><span class="deva">असफलता</span> failure &middot; <span class="deva">असफल हुनु</span> to fail.</p><p><span class="deva">यदि तपाईं असफल हुनुभयो भने, हार नमान्नुहोस्</span> &mdash; if you fail, don\'t give up.</p>'},
+    {t:'note',tag:'Learning from failure',q:'असफलता = failure',body:'<p><span class="deva">असफलता</span> failure &middot; <span class="deva">असफल हुनु</span> to fail.</p><p><span class="deva">यदि तपाईं असफल हुनुभयो भने, हार नमान्नुस्</span> &mdash; if you fail, don\'t give up.</p>'},
     {t:'mc',q:'What does असफलता mean?',d:'असफलता',r:'asaphalta',o:['failure','success','hope','peace'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'असफलता',o:['failure','hope','religion','joy'],a:0},
     {t:'mc',q:'"We can learn from our failures" &mdash; "failure" is:',o:['असफलता','सफलता','आशा','गल्ती'],a:0},
@@ -5933,18 +5933,18 @@ const NE_LESSONS = [
   ]},
 
   /* ===================== WEEK 8 · DAY 4 — Hard times: protect, wait, don\u2019t fear ===================== */
-  {id:'li_w8d4',title:'Hard & afraid',step:'learn',meta:'Courage in hard times',vocab:[['गाह्रो','gahro','hard / difficult'],['डराउनु','daraaunu','to be afraid'],['तपाईं किन डराउनुभएको छ?','tapain kina daraaunubhaeko chha','why are you afraid?'],['जब तपाईं डराउनुहुन्छ, येशूमा ध्यान दिनुहोस्','jaba tapain daraaunuhunchha, yeshuma dhyaan dinus','when you\u2019re afraid, focus on Jesus']],ex:[
+  {id:'li_w8d4',title:'Hard & afraid',step:'learn',meta:'Courage in hard times',vocab:[['गाह्रो','gahro','hard / difficult'],['डराउनु','daraaunu','to be afraid'],['तपाईं किन डराउनुभएको छ?','tapain kina daraaunubhaeko chha','why are you afraid?'],['जब तपाईं डराउनुहुन्छ, येशूमा ध्यान दिनुस्','jaba tapain daraaunuhunchha, yeshuma dhyaan dinus','when you\u2019re afraid, focus on Jesus']],ex:[
     {t:'note',tag:'Hard times & fear',q:'गाह्रो & डराउनु',body:'<p><span class="deva">गाह्रो</span> hard / difficult &middot; <span class="deva">डराउनु</span> to be afraid.</p><p><span class="deva">गाह्रो समयमा पनि, हामी येशूलाई पछ्याइरहनुपर्छ</span> &mdash; even in hard times, we keep following Jesus.</p>'},
     {t:'mc',q:'What does डराउनु mean?',d:'डराउनु',r:'daraaunu',o:['to be afraid','to be sad','to be angry','to be happy'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'गाह्रो',o:['hard','easy','afraid','clear'],a:0},
     {t:'mc',q:'"What makes you afraid?" is:',o:['के कुराले तपाईं डराउनुहुन्छ?','तपाईं किन खुसी हुनुहुन्छ?','यो के हो?','तपाईं कहाँ हुनुहुन्छ?'],a:0},
     {t:'mc',q:'गाह्रो is the opposite of:',o:['सजिलो (easy)','ठूलो (big)','नयाँ (new)','राम्रो (good)'],a:0},
-    {t:'fill',q:'Complete: "when you are afraid, focus on Jesus"',s:'जब तपाईं ___, येशूमा ध्यान दिनुहोस्',o:['डराउनुहुन्छ','खुसी हुनुहुन्छ','हाँस्नुहुन्छ','दौडनुहुन्छ'],a:0},
+    {t:'fill',q:'Complete: "when you are afraid, focus on Jesus"',s:'जब तपाईं ___, येशूमा ध्यान दिनुस्',o:['डराउनुहुन्छ','खुसी हुनुहुन्छ','हाँस्नुहुन्छ','दौडनुहुन्छ'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['गाह्रो','hard'],['डराउनु','to be afraid'],['सजिलो','easy'],['ध्यान','focus']]}
   ]},
 
-  {id:'li_w8d4_2',title:'Protect',step:'recognize',vocab:[['रक्षा गर्नु','raksha garnu','to protect'],['रक्षा','raksha','protection'],['परमेश्वरले सधैं हामीलाई रक्षा गर्नुहुन्छ','parameshwarle sadhai haamilai raksha garnuhunchha','God always protects us'],['येशू, हाम्रो मनलाई रक्षा गर्नुहोस्','yeshu, haamro manlai raksha garnus','Jesus, protect our hearts']],ex:[
-    {t:'note',tag:'Kept safe',q:'रक्षा गर्नु = to protect',body:'<p><span class="deva">रक्षा गर्नु</span> to protect &middot; <span class="deva">रक्षा</span> protection.</p><p><span class="deva">येशू, मेरो परिवारलाई रोगबाट रक्षा गर्नुहोस्</span> &mdash; Jesus, please protect my family from sickness.</p>'},
+  {id:'li_w8d4_2',title:'Protect',step:'recognize',vocab:[['रक्षा गर्नु','raksha garnu','to protect'],['रक्षा','raksha','protection'],['परमेश्वरले सधैं हामीलाई रक्षा गर्नुहुन्छ','parameshwarle sadhai haamilai raksha garnuhunchha','God always protects us'],['येशू, हाम्रो मनलाई रक्षा गर्नुस्','yeshu, haamro manlai raksha garnus','Jesus, protect our hearts']],ex:[
+    {t:'note',tag:'Kept safe',q:'रक्षा गर्नु = to protect',body:'<p><span class="deva">रक्षा गर्नु</span> to protect &middot; <span class="deva">रक्षा</span> protection.</p><p><span class="deva">येशू, मेरो परिवारलाई रोगबाट रक्षा गर्नुस्</span> &mdash; Jesus, please protect my family from sickness.</p>'},
     {t:'mc',q:'What does रक्षा गर्नु mean?',d:'रक्षा गर्नु',r:'raksha garnu',o:['to protect','to compare','to wait','to lead'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'रक्षा गर्नु',o:['to protect','to encourage','to see','to wait'],a:0},
     {t:'mc',q:'"God always protects us" &mdash; "protects" is:',o:['रक्षा गर्नुहुन्छ','हौसला दिनुहुन्छ','देख्नुहुन्छ','डोर्‍याउनुहुन्छ'],a:0},
@@ -5952,14 +5952,14 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['रक्षा गर्नु','to protect'],['रोग','sickness'],['राष्ट्र','nation'],['समुदाय','community']]}
   ]},
 
-  {id:'li_w8d4_3',title:'Don\u2019t (न-)',step:'build',vocab:[['नगर्नुहोस्','nagarnus','don\u2019t do (it)'],['नजानुहोस्','najanus','don\u2019t go'],['नभन्नुहोस्','nabhannus','don\u2019t say / tell'],['हार नमान्नुहोस्','haar namaannus','don\u2019t give up']],ex:[
-    {t:'note',tag:'Saying "don\u2019t"',q:'The न- prefix',body:'<p>To make a command negative, add <span class="deva">न</span> to the front of the verb:</p><p><span class="deva">जानुहोस्</span> go &rarr; <span class="deva">नजानुहोस्</span> don\'t go &middot; <span class="deva">भन्नुहोस्</span> tell &rarr; <span class="deva">नभन्नुहोस्</span> don\'t tell.</p>'},
-    {t:'mc',q:'"नजानुहोस्" means:',d:'नजानुहोस्',r:'najanus',o:['don\u2019t go','please go','I went','will you go?'],a:0},
-    {t:'li',q:'Listen &mdash; what are they saying?',say:'हार नमान्नुहोस्',o:['don\u2019t give up','give up','keep going','well done'],a:0},
-    {t:'mc',q:'To turn जानुहोस् (go) into "don\'t go", you add:',o:['न (na-) at the front','पनि at the end','सम्म at the end','मात्र'],a:0},
-    {t:'mc',q:'"Please don\'t tell my mom" &mdash; "don\'t tell" is:',o:['नभन्नुहोस्','भन्नुहोस्','नजानुहोस्','नगर्नुहोस्'],a:0},
-    {t:'fill',q:'Make it negative: "don\u2019t do it"',s:'यो ___',o:['नगर्नुहोस्','गर्नुहोस्','गर्छु','गरेँ'],a:0},
-    {t:'match',q:'Match to meaning',pairs:[['नजानुहोस्','don\u2019t go'],['नभन्नुहोस्','don\u2019t tell'],['नगर्नुहोस्','don\u2019t do'],['हार नमान्नु','don\u2019t give up']]}
+  {id:'li_w8d4_3',title:'Don\u2019t (न-)',step:'build',vocab:[['नगर्नुस्','nagarnus','don\u2019t do (it)'],['नजानुस्','najanus','don\u2019t go'],['नभन्नुस्','nabhannus','don\u2019t say / tell'],['हार नमान्नुस्','haar namaannus','don\u2019t give up']],ex:[
+    {t:'note',tag:'Saying "don\u2019t"',q:'The न- prefix',body:'<p>To make a command negative, add <span class="deva">न</span> to the front of the verb:</p><p><span class="deva">जानुस्</span> go &rarr; <span class="deva">नजानुस्</span> don\'t go &middot; <span class="deva">भन्नुस्</span> tell &rarr; <span class="deva">नभन्नुस्</span> don\'t tell.</p>'},
+    {t:'mc',q:'"नजानुस्" means:',d:'नजानुस्',r:'najanus',o:['don\u2019t go','please go','I went','will you go?'],a:0},
+    {t:'li',q:'Listen &mdash; what are they saying?',say:'हार नमान्नुस्',o:['don\u2019t give up','give up','keep going','well done'],a:0},
+    {t:'mc',q:'To turn जानुस् (go) into "don\'t go", you add:',o:['न (na-) at the front','पनि at the end','सम्म at the end','मात्र'],a:0},
+    {t:'mc',q:'"Please don\'t tell my mom" &mdash; "don\'t tell" is:',o:['नभन्नुस्','भन्नुस्','नजानुस्','नगर्नुस्'],a:0},
+    {t:'fill',q:'Make it negative: "don\u2019t do it"',s:'यो ___',o:['नगर्नुस्','गर्नुस्','गर्छु','गरेँ'],a:0},
+    {t:'match',q:'Match to meaning',pairs:[['नजानुस्','don\u2019t go'],['नभन्नुस्','don\u2019t tell'],['नगर्नुस्','don\u2019t do'],['हार नमान्नु','don\u2019t give up']]}
   ]},
 
   {id:'li_w8d4_4',title:'Wait & health',step:'mix',vocab:[['पर्खनु','parkhanu','to wait'],['स्वास्थ्य','swasthya','health'],['हामीले सही समयसम्म पर्खनुपर्छ','haamile sahi samayasamma parkhanuparchha','we need to wait until the right time'],['स्वास्थ्य किन महत्त्वपूर्ण छ?','swasthya kina mahattwapurna chha','why is health important?']],ex:[
@@ -5975,21 +5975,21 @@ const NE_LESSONS = [
   {id:'li_w8d4_5',title:'Checkpoint',step:'checkpoint',vocab:[],ex:[
     {t:'mc',q:'What does डराउनु mean?',d:'डराउनु',r:'daraaunu',o:['to be afraid','to be sad','to be happy','to be angry'],a:0},
     {t:'mc',q:'Which phrase means "to protect"?',o:['रक्षा गर्नु','तुलना गर्नु','हौसला दिनु','पर्खनु'],a:0},
-    {t:'li',q:'Listen &mdash; what are they saying?',say:'हार नमान्नुहोस्',o:['don\u2019t give up','give up','well done','keep going'],a:0},
-    {t:'mc',q:'"नजानुहोस्" means:',d:'नजानुहोस्',r:'najanus',o:['don\u2019t go','please go','I went','will you go?'],a:0},
+    {t:'li',q:'Listen &mdash; what are they saying?',say:'हार नमान्नुस्',o:['don\u2019t give up','give up','well done','keep going'],a:0},
+    {t:'mc',q:'"नजानुस्" means:',d:'नजानुस्',r:'najanus',o:['don\u2019t go','please go','I went','will you go?'],a:0},
     {t:'mc',q:'Which word means "to wait"?',o:['पर्खनु','डराउनु','देख्नु','तुलना गर्नु'],a:0},
-    {t:'match',q:'Match to meaning',pairs:[['गाह्रो','hard'],['रक्षा गर्नु','to protect'],['नजानुहोस्','don\u2019t go'],['स्वास्थ्य','health']]},
+    {t:'match',q:'Match to meaning',pairs:[['गाह्रो','hard'],['रक्षा गर्नु','to protect'],['नजानुस्','don\u2019t go'],['स्वास्थ्य','health']]},
     {t:'note',tag:'Tutor\u2019s question',q:'Question of the day',body:'<p><span class="deva">जब तपाईं डराउनुहुन्छ, तपाईं के गर्नुहुन्छ?</span> &mdash; &ldquo;When you are afraid, what do you do?&rdquo;</p>'},
     {t:'mc',q:'"When you are afraid…" &mdash; "afraid" is:',o:['डराउनु','खुसी','गाह्रो','सधैं'],a:0}
   ]},
 
   /* ===================== WEEK 8 · DAY 5 — Compare, middle, similar & important ===================== */
-  {id:'li_w8d5',title:'Comparing',step:'learn',meta:'Comparison steals joy',vocab:[['तुलना','tulana','comparison'],['तुलना गर्नु','tulana garnu','to compare'],['तुलना गर्नाले आनन्द हराउँछ','tulana garnale aananda haraunchha','comparison kills joy'],['अरूसँग तुलना नगर्नुहोस्','arusanga tulana nagarnus','don\u2019t compare with others']],ex:[
-    {t:'note',tag:'A wise warning',q:'तुलना = comparison',body:'<p><span class="deva">तुलना</span> comparison &middot; <span class="deva">तुलना गर्नु</span> to compare.</p><p><span class="deva">नयाँ भाषा सिक्दा अरूसँग तुलना नगर्नुहोस्</span> &mdash; when learning a new language, don\'t compare yourself with others!</p>'},
+  {id:'li_w8d5',title:'Comparing',step:'learn',meta:'Comparison steals joy',vocab:[['तुलना','tulana','comparison'],['तुलना गर्नु','tulana garnu','to compare'],['तुलना गर्नाले आनन्द हराउँछ','tulana garnale aananda haraunchha','comparison kills joy'],['अरूसँग तुलना नगर्नुस्','arusanga tulana nagarnus','don\u2019t compare with others']],ex:[
+    {t:'note',tag:'A wise warning',q:'तुलना = comparison',body:'<p><span class="deva">तुलना</span> comparison &middot; <span class="deva">तुलना गर्नु</span> to compare.</p><p><span class="deva">नयाँ भाषा सिक्दा अरूसँग तुलना नगर्नुस्</span> &mdash; when learning a new language, don\'t compare yourself with others!</p>'},
     {t:'mc',q:'What does तुलना mean?',d:'तुलना',r:'tulana',o:['comparison','protection','interest','faith'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'तुलना गर्नु',o:['to compare','to protect','to wait','to lead'],a:0},
     {t:'mc',q:'"Comparison kills joy" &mdash; "comparison" is:',o:['तुलना','आनन्द','रुचि','विश्वास'],a:0},
-    {t:'mc',q:'"Don\'t compare with others" uses which "don\'t" form?',o:['तुलना नगर्नुहोस्','तुलना गर्नुहोस्','तुलना गर्छु','तुलना गरेँ'],a:0},
+    {t:'mc',q:'"Don\'t compare with others" uses which "don\'t" form?',o:['तुलना नगर्नुस्','तुलना गर्नुस्','तुलना गर्छु','तुलना गरेँ'],a:0},
     {t:'fill',q:'Complete: "why do you compare with others so much?"',s:'तपाईं किन अरूसँग यति धेरै ___ गर्नुहुन्छ?',o:['तुलना','रक्षा','हौसला','पर्ख'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['तुलना','comparison'],['आनन्द','joy'],['अरू','others'],['हराउनु','to lose']]}
   ]},
@@ -6029,7 +6029,7 @@ const NE_LESSONS = [
     {t:'mc',q:'Which word means "important"?',o:['महत्त्वपूर्ण','गाह्रो','उस्तै','स्पष्ट'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'बीच',o:['middle / between','under','above','inside'],a:0},
     {t:'mc',q:'"मुनि" means:',d:'मुनि',r:'muni',o:['under / beneath','above','middle','outside'],a:0},
-    {t:'mc',q:'"Don\'t compare with others" uses:',o:['तुलना नगर्नुहोस्','तुलना गर्नुहोस्','तुलना गरेँ','तुलना गर्छु'],a:0},
+    {t:'mc',q:'"Don\'t compare with others" uses:',o:['तुलना नगर्नुस्','तुलना गर्नुस्','तुलना गरेँ','तुलना गर्छु'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['तुलना','comparison'],['महत्त्वपूर्ण','important'],['बीच','middle'],['मुनि','under']]},
     {t:'note',tag:'A word over you',q:'You are important',body:'<p>You\'ve finished two full weeks of testimony! Remember the heart of this week: <span class="deva">तुलना गर्नाले आनन्द हराउँछ</span> &mdash; comparison steals joy. You are <span class="deva">महत्त्वपूर्ण</span> (important), and you don\'t need to compare your Nepali to anyone else\'s. Keep going!</p><p>Question &mdash; <span class="deva">येशूलाई चिनेपछि तपाईंको जीवनमा सबैभन्दा ठूलो परिवर्तन के हो?</span> &ldquo;What is the biggest change in your life since knowing Jesus?&rdquo;</p>'},
     {t:'mc',q:'The wisdom of this week: comparison (तुलना) steals your:',o:['joy (आनन्द)','health','time','money'],a:0}
@@ -6142,7 +6142,7 @@ const NE_LESSONS = [
     {t:'mc',q:'What does ईर्ष्या mean?',d:'ईर्ष्या',r:'irshya',o:['jealousy','blessing','power','promise'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'ईर्ष्या',o:['jealousy','blessing','peace','joy'],a:0},
     {t:'mc',q:'"Why are you jealous of me?" &mdash; "jealous" is:',o:['ईर्ष्या','आशिष','शक्ति','प्रतिज्ञा'],a:0},
-    {t:'mc',q:'"Don\'t be so jealous" is:',o:['तपाईं ईर्ष्या नगर्नुस्','तपाईं खुसी हुनुहोस्','तपाईं आज्ञा मान्नुहोस्','तपाईं हेर्नुहोस्'],a:0},
+    {t:'mc',q:'"Don\'t be so jealous" is:',o:['तपाईं ईर्ष्या नगर्नुस्','तपाईं खुसी हुनुस्','तपाईं आज्ञा मान्नुस्','तपाईं हेर्नुस्'],a:0},
     {t:'fill',q:'Complete: "I am jealous that you have so many friends"',s:'तपाईंका धेरै साथी देख्दा मलाई ___ लाग्छ',o:['ईर्ष्या','खुसी','आशा','डर'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['ईर्ष्या','jealousy'],['साथी','friend'],['रिस','anger'],['माया','love']]}
   ]},
@@ -6161,7 +6161,7 @@ const NE_LESSONS = [
     {t:'mc',q:'What does अस्वीकार mean?',d:'अस्वीकार',r:'aswikar',o:['rejection','blessing','power','plan'],a:0},
     {t:'mc',q:'What does झूट mean?',d:'झूट',r:'jhuth',o:['lie','truth','blessing','jealousy'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'झूट',o:['lie','blessing','power','voice'],a:0},
-    {t:'mc',q:'"Don\'t lie" is:',o:['झूट नबोल्नुहोस्','झूट बोल्नुहोस्','आशिष दिनुहोस्','हेर्नुहोस्'],a:0},
+    {t:'mc',q:'"Don\'t lie" is:',o:['झूट नबोल्नुस्','झूट बोल्नुस्','आशिष दिनुस्','हेर्नुस्'],a:0},
     {t:'mc',q:'"When we preach the gospel, some people reject us" &mdash; "reject" is:',o:['अस्वीकार गर्नु','आशिष दिनु','हेर्नु','भर्नु'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['अस्वीकार','rejection'],['झूट','lie'],['सत्य','truth'],['सुसमाचार','gospel']]}
   ]},
@@ -6367,11 +6367,11 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['जित्नु','to win'],['हार्नु','to lose'],['विजय','victory'],['प्रतिस्पर्धा','competition']]}
   ]},
 
-  {id:'li_w10d2_4',title:'Yell',step:'mix',vocab:[['कराउनु','karaaunu','to yell'],['कृपया नकराउनुहोस्','kripaya nakaraaunus','please don\u2019t yell'],['जब तपाईं कराउनुहुन्छ, मलाई रिस उठ्छ','jaba tapain karaaunuhunchha, malai ris uthchha','when you yell, it makes me angry']],ex:[
+  {id:'li_w10d2_4',title:'Yell',step:'mix',vocab:[['कराउनु','karaaunu','to yell'],['कृपया नकराउनुस्','kripaya nakaraaunus','please don\u2019t yell'],['जब तपाईं कराउनुहुन्छ, मलाई रिस उठ्छ','jaba tapain karaaunuhunchha, malai ris uthchha','when you yell, it makes me angry']],ex:[
     {t:'note',tag:'Raising your voice',q:'कराउनु = to yell',body:'<p><span class="deva">कराउनु</span> to yell / shout.</p><p>After the seventh time around Jericho, everyone <span class="deva">कराए</span> (yelled) &mdash; and the walls fell down!</p>'},
     {t:'mc',q:'What does कराउनु mean?',d:'कराउनु',r:'karaaunu',o:['to yell','to whisper','to sing','to walk'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'कराउनु',o:['to yell','to win','to lose','to walk'],a:0},
-    {t:'mc',q:'"Please don\'t yell" uses the negative form:',o:['नकराउनुहोस्','कराउनुहोस्','कराएँ','कराउँछु'],a:0},
+    {t:'mc',q:'"Please don\'t yell" uses the negative form:',o:['नकराउनुस्','कराउनुस्','कराएँ','कराउँछु'],a:0},
     {t:'mc',q:'"I have never heard you yell" &mdash; "yell" is:',o:['कराउनु','गाउनु','हाँस्नु','बोल्नु'],a:0},
     {t:'mc',q:'"When you yell, it makes me angry" &mdash; the feeling is:',o:['रिस (anger)','खुसी (happy)','डर (fear)','आनन्द (joy)'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['कराउनु','to yell'],['रिस','anger'],['पर्खाल','wall'],['भत्किनु','to fall down']]}
@@ -6497,7 +6497,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['बचाउनु','to save'],['मुक्तिदाता','savior'],['पाप','sin'],['मुक्ति','salvation']]}
   ]},
 
-  {id:'li_w10d5_2',title:'Fire & ignite',step:'recognize',vocab:[['आगो','aago','fire'],['बाल्नु','baalnu','to ignite / turn on'],['त्यो त एकदम ठूलो आगो हो','tyo ta ekdam thulo aago ho','that is a really big fire'],['परमेश्वर, मेरो हृदयमा आगो बाल्नुहोस्','parameshwar, mero hridayma aago baalnus','God, ignite a fire in my heart']],ex:[
+  {id:'li_w10d5_2',title:'Fire & ignite',step:'recognize',vocab:[['आगो','aago','fire'],['बाल्नु','baalnu','to ignite / turn on'],['त्यो त एकदम ठूलो आगो हो','tyo ta ekdam thulo aago ho','that is a really big fire'],['परमेश्वर, मेरो हृदयमा आगो बाल्नुस्','parameshwar, mero hridayma aago baalnus','God, ignite a fire in my heart']],ex:[
     {t:'note',tag:'Fire',q:'आगो & बाल्नु',body:'<p><span class="deva">आगो</span> fire &middot; <span class="deva">बाल्नु</span> to ignite / turn on (a light or stove).</p><p>God first spoke to Moses through a burning bush &mdash; a bush on <span class="deva">आगो</span> (fire) that didn\'t burn up.</p>'},
     {t:'mc',q:'What does आगो mean?',d:'आगो',r:'aago',o:['fire','water','tree','light'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'बाल्नु',o:['to ignite / turn on','to save','to allow','to realize'],a:0},
@@ -6539,11 +6539,11 @@ const NE_LESSONS = [
 
 
   /* ===================== WEEK 11 · DAY 1 — Evangelism: forgiveness ===================== */
-  {id:'li_w11d1',title:'Forgive',step:'learn',meta:'Talking about evangelism',vocab:[['माफ गर्नु','maaph garnu','to forgive'],['क्षमा गर्नु','kshama garnu','to forgive'],['क्षमा','kshama','forgiveness'],['कृपया मलाई माफ गर्नुहोस्','kripaya malai maaph garnus','please forgive me']],ex:[
+  {id:'li_w11d1',title:'Forgive',step:'learn',meta:'Talking about evangelism',vocab:[['माफ गर्नु','maaph garnu','to forgive'],['क्षमा गर्नु','kshama garnu','to forgive'],['क्षमा','kshama','forgiveness'],['कृपया मलाई माफ गर्नुस्','kripaya malai maaph garnus','please forgive me']],ex:[
     {t:'note',tag:'Forgiveness',q:'माफ गर्नु / क्षमा गर्नु = to forgive',body:'<p><span class="deva">माफ गर्नु</span> / <span class="deva">क्षमा गर्नु</span> to forgive &middot; <span class="deva">क्षमा</span> forgiveness.</p><p><span class="deva">जब हामी हृदयदेखि पश्चात्ताप गर्छौं, येशूले हाम्रा पाप क्षमा गर्नुहुन्छ</span> &mdash; when we truly repent, Jesus forgives our sins.</p>'},
     {t:'mc',q:'What does माफ गर्नु mean?',d:'माफ गर्नु',r:'maaph garnu',o:['to forgive','to find','to feed','to spend'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'क्षमा गर्नु',o:['to forgive','to preach','to repent','to answer'],a:0},
-    {t:'mc',q:'"Please forgive me" is:',o:['कृपया मलाई माफ गर्नुहोस्','कृपया शान्त हुनुहोस्','मलाई थाहा छैन','म जान्छु'],a:0},
+    {t:'mc',q:'"Please forgive me" is:',o:['कृपया मलाई माफ गर्नुस्','कृपया शान्त हुनुस्','मलाई थाहा छैन','म जान्छु'],a:0},
     {t:'mc',q:'"What has been the hardest thing to forgive?" &mdash; "forgive" is:',o:['माफ गर्नु','याद गर्नु','गुनासो गर्नु','प्रचार गर्नु'],a:0},
     {t:'fill',q:'Complete: "Jesus forgives our sins"',s:'येशूले हाम्रा पाप ___ गर्नुहुन्छ',o:['क्षमा','गुनासो','प्रचार','याद'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['माफ गर्नु','to forgive'],['क्षमा','forgiveness'],['पाप','sin'],['पश्चात्ताप','repentance']]}
@@ -6633,7 +6633,7 @@ const NE_LESSONS = [
     {t:'li',q:'Listen &mdash; which word?',say:'संसार',o:['world','again','worthy','humble'],a:0},
     {t:'mc',q:'"फेरि" means:',d:'फेरि',r:'pheri',o:['again','worthy','humble','lost'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['योग्य','worthy'],['नम्र','humble'],['संसार','world'],['फेरि','again']]},
-    {t:'note',tag:'Story time',q:'Jesus heals a servant',body:'<p><span class="deva">एक सैनिकले येशूलाई आफ्नो सेवकलाई निको पार्न अनुरोध गरे, तर भने, \u201cम योग्य छैन; तपाईंले वचन मात्र बोलिदिनुहोस्।\u201d येशू उनको विश्वास र नम्रता देखेर छक्क पर्नुभयो, र सेवक निको भयो।</span></p><p>A soldier asked Jesus to heal his servant but said, \u201cI\u2019m not worthy &mdash; just say the word.\u201d Jesus marveled at his faith and humility, and the servant was healed.</p>'},
+    {t:'note',tag:'Story time',q:'Jesus heals a servant',body:'<p><span class="deva">एक सैनिकले येशूलाई आफ्नो सेवकलाई निको पार्न अनुरोध गरे, तर भने, \u201cम योग्य छैन; तपाईंले वचन मात्र बोलिदिनुस्।\u201d येशू उनको विश्वास र नम्रता देखेर छक्क पर्नुभयो, र सेवक निको भयो।</span></p><p>A soldier asked Jesus to heal his servant but said, \u201cI\u2019m not worthy &mdash; just say the word.\u201d Jesus marveled at his faith and humility, and the servant was healed.</p>'},
     {t:'mc',q:'Tutor\u2019s question: "How can I be more humble?" &mdash; "humble" is:',o:['नम्र','योग्य','धनी','संसार'],a:0}
   ]},
 
@@ -6657,11 +6657,11 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['आँधी','storm'],['डुंगा','boat'],['समुद्र','sea'],['पुकार्नु','to cry out']]}
   ]},
 
-  {id:'li_w11d3_3',title:'Quiet & calm',step:'build',vocab:[['शान्त','shanta','quiet / calm'],['कृपया शान्त हुनुहोस्','kripaya shanta hunus','please be quiet'],['आँधी शान्त भयो','aadhi shanta bhayo','the storm calmed'],['तपाईंसँग हुँदा म शान्त महसुस गर्छु','tapainsanga hudaa ma shanta mahasus garchhu','when I\u2019m with you, I feel calm']],ex:[
+  {id:'li_w11d3_3',title:'Quiet & calm',step:'build',vocab:[['शान्त','shanta','quiet / calm'],['कृपया शान्त हुनुस्','kripaya shanta hunus','please be quiet'],['आँधी शान्त भयो','aadhi shanta bhayo','the storm calmed'],['तपाईंसँग हुँदा म शान्त महसुस गर्छु','tapainsanga hudaa ma shanta mahasus garchhu','when I\u2019m with you, I feel calm']],ex:[
     {t:'note',tag:'Two senses',q:'शान्त = quiet AND calm',body:'<p><span class="deva">शान्त</span> can mean <b>quiet</b> (a quiet person/place) or <b>calm</b> (the storm calmed; feeling peaceful).</p><p><span class="deva">तपाईंलाई शान्त महसुस गराउन केले मद्दत गर्छ?</span> &mdash; what helps you feel calm?</p>'},
     {t:'mc',q:'What does शान्त mean?',d:'शान्त',r:'shanta',o:['quiet / calm','loud','stormy','rich'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'शान्त',o:['quiet / calm','storm','wonder','world'],a:0},
-    {t:'mc',q:'"Please be quiet" is:',o:['कृपया शान्त हुनुहोस्','कृपया माफ गर्नुहोस्','कृपया आउनुहोस्','कृपया जानुहोस्'],a:0},
+    {t:'mc',q:'"Please be quiet" is:',o:['कृपया शान्त हुनुस्','कृपया माफ गर्नुस्','कृपया आउनुस्','कृपया जानुस्'],a:0},
     {t:'mc',q:'"The storm calmed" &mdash; "calmed" is:',o:['शान्त भयो','आयो','गयो','भत्कियो'],a:0},
     {t:'mc',q:'Note the difference: शान्ति (W7) = peace; शान्त = ?',o:['quiet / calm','war','storm','sin'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['शान्त','calm / quiet'],['शान्ति','peace'],['आँधी','storm'],['महसुस','to feel']]}
@@ -6698,7 +6698,7 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w11d4_2',title:'Lost',step:'recognize',vocab:[['हराउनु','haraaunu','to be lost / to lose'],['हराएको','haraeko','lost'],['येशूअघि हामी सबै हराएका थियौं','yeshuagi haami sabai haraeka thiyau','before Jesus we were all lost'],['हामी हराएका मानिसहरूसम्म कसरी पुग्न सक्छौं?','haami haraeka maanisharusamma kasari pugna sakchhau','how can we reach the lost?']],ex:[
-    {t:'note',tag:'The lost',q:'हराउनु / हराएको = lost',body:'<p><span class="deva">हराउनु</span> to be lost / to lose &middot; <span class="deva">हराएको</span> lost.</p><p><span class="deva">परमेश्वर, मलाई हराएका मानिसहरूको निम्ति हृदय दिनुहोस्</span> &mdash; God, give me a heart for lost people.</p>'},
+    {t:'note',tag:'The lost',q:'हराउनु / हराएको = lost',body:'<p><span class="deva">हराउनु</span> to be lost / to lose &middot; <span class="deva">हराएको</span> lost.</p><p><span class="deva">परमेश्वर, मलाई हराएका मानिसहरूको निम्ति हृदय दिनुस्</span> &mdash; God, give me a heart for lost people.</p>'},
     {t:'mc',q:'What does हराएको mean?',d:'हराएको',r:'haraeko',o:['lost','rich','found','humble'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'हराउनु',o:['to be lost','to find','to spend','to feed'],a:0},
     {t:'mc',q:'"Before Jesus we were all lost" &mdash; "lost" is:',o:['हराएका','धनी','योग्य','सुरक्षित'],a:0},
@@ -6717,7 +6717,7 @@ const NE_LESSONS = [
   ]},
 
   {id:'li_w11d4_4',title:'Farm & lost on the road',step:'mix',vocab:[['खेत','khet','farm'],['किसान','kisan','farmer'],['बाटो बिराउनु','baato biraaunu','to get lost (on the way)'],['मलाई लाग्छ हामीले बाटो बिरायौं','malai laagchha haamile baato birayau','I think we got lost']],ex:[
-    {t:'note',tag:'Farm & getting lost',q:'खेत & बाटो बिराउनु',body:'<p><span class="deva">खेत</span> farm &middot; <span class="deva">किसान</span> farmer &middot; <span class="deva">बाटो बिराउनु</span> to get lost (geographically, lose your way).</p><p><span class="deva">यदि तपाईंले बाटो बिराउनुभयो भने, मलाई फोन गर्नुहोस्</span> &mdash; if you get lost, call me.</p>'},
+    {t:'note',tag:'Farm & getting lost',q:'खेत & बाटो बिराउनु',body:'<p><span class="deva">खेत</span> farm &middot; <span class="deva">किसान</span> farmer &middot; <span class="deva">बाटो बिराउनु</span> to get lost (geographically, lose your way).</p><p><span class="deva">यदि तपाईंले बाटो बिराउनुभयो भने, मलाई फोन गर्नुस्</span> &mdash; if you get lost, call me.</p>'},
     {t:'mc',q:'What does खेत mean?',d:'खेत',r:'khet',o:['farm','road','house','market'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'बाटो बिराउनु',o:['to get lost (on the way)','to go back','to spend','to feed'],a:0},
     {t:'mc',q:'"Farmers live on farms" &mdash; "farm" is:',o:['खेत','बाटो','घर','भवन'],a:0},
@@ -6791,7 +6791,7 @@ const NE_LESSONS = [
     {t:'note',tag:'Up on the roof',q:'छत & उठ्नु',body:'<p><span class="deva">छत</span> roof &middot; <span class="deva">उठ्नु</span> to get up / stand up / rise.</p><p>In the story, friends lowered a man through the <span class="deva">छत</span> (roof), and Jesus told him, <span class="deva">उठ र हिँड!</span> &mdash; get up and walk!</p>'},
     {t:'mc',q:'What does छत mean?',d:'छत',r:'chhat',o:['roof','floor','wall','table'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'उठ्नु',o:['to get up / rise','to sit','to sleep','to fall'],a:0},
-    {t:'mc',q:'"Why are you sleeping? Stand up!" &mdash; "stand up" is:',o:['उठ्नुहोस्','सुत्नुहोस्','बस्नुहोस्','जानुहोस्'],a:0},
+    {t:'mc',q:'"Why are you sleeping? Stand up!" &mdash; "stand up" is:',o:['उठ्नुस्','सुत्नुस्','बस्नुस्','जानुस्'],a:0},
     {t:'mc',q:'"It is time to get up" &mdash; "get up" is:',o:['उठ्नु','सुत्नु','बस्नु','हिँड्नु'],a:0},
     {t:'fill',q:'Complete: "I am on the roof, where are you?"',s:'म ___ छु, तपाईं कहाँ हुनुहुन्छ?',o:['छतमा','टेबलमा','घरमा','बजारमा'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['छत','roof'],['उठ्नु','to get up'],['डोरी','rope'],['हिँड्नु','to walk']]}
@@ -7007,12 +7007,12 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['सबै कुरा','everything'],['सबैजना','everyone'],['विकल्प','option'],['पुग्नु','to be enough']]}
   ]},
 
-  {id:'li_w12d5_3',title:'Busy & distractions',step:'build',vocab:[['व्यस्त','byasta','busy'],['बाधा दिनु','baadha dinu','to interrupt / distract'],['बाधा','baadha','distraction / obstacle'],['कृपया बाधा नगर्नुहोस्','kripaya baadha nagarnus','please don\u2019t interrupt']],ex:[
+  {id:'li_w12d5_3',title:'Busy & distractions',step:'build',vocab:[['व्यस्त','byasta','busy'],['बाधा दिनु','baadha dinu','to interrupt / distract'],['बाधा','baadha','distraction / obstacle'],['कृपया बाधा नगर्नुस्','kripaya baadha nagarnus','please don\u2019t interrupt']],ex:[
     {t:'note',tag:'Busy & distracted',q:'व्यस्त & बाधा दिनु',body:'<p><span class="deva">व्यस्त</span> busy &middot; <span class="deva">बाधा दिनु</span> to interrupt / distract &middot; <span class="deva">बाधा</span> distraction.</p><p><span class="deva">केले बाधा रोकेर तपाईंलाई ध्यान दिन मद्दत गर्छ?</span> &mdash; what helps you cut out distractions and focus?</p>'},
     {t:'mc',q:'What does व्यस्त mean?',d:'व्यस्त',r:'byasta',o:['busy','free','calm','quiet'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'बाधा दिनु',o:['to interrupt / distract','to focus','to choose','to gather'],a:0},
     {t:'mc',q:'"There are a lot of distractions in this coffee shop" &mdash; "distractions" is:',o:['बाधा','ध्यान','विकल्प','तरिका'],a:0},
-    {t:'mc',q:'"When we are studying, please don\'t interrupt" &mdash; "interrupt" is:',o:['बाधा नगर्नुहोस्','ध्यान दिनुहोस्','रोज्नुहोस्','सोध्नुहोस्'],a:0},
+    {t:'mc',q:'"When we are studying, please don\'t interrupt" &mdash; "interrupt" is:',o:['बाधा नगर्नुस्','ध्यान दिनुस्','रोज्नुस्','सोध्नुस्'],a:0},
     {t:'mc',q:'Martha was व्यस्त (busy) with chores, but Mary chose the better thing &mdash; to:',o:['be with Jesus','cook more','clean more','gather things'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['व्यस्त','busy'],['बाधा','distraction'],['ध्यान','focus'],['रोज्नु','to choose']]}
   ]},
@@ -7034,7 +7034,7 @@ const NE_LESSONS = [
     {t:'mc',q:'"बाधा दिनु" means:',d:'बाधा दिनु',r:'baadha dinu',o:['to interrupt / distract','to focus','to choose','to finish'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['रोज्नु','to choose'],['सबै कुरा','everything'],['व्यस्त','busy'],['घटना','event']]},
     {t:'note',tag:'The Gospel & the choice',q:'Everything has led here',body:'<p><span class="deva">हामी परमेश्वरसँग सम्बन्ध राख्न सृष्टि भयौं, तर पापले हामीलाई टाढा बनायो। येशू हाम्रो पापको मूल्य चुकाउन क्रूसमा मर्नुभयो र फेरि बौरिउठ्नुभयो। अब हामीले उहाँलाई रोज्ने निर्णय गर्नुपर्छ।</span></p><p>We were made for God; sin separated us; Jesus died and rose for us. Now the choice is ours: <span class="deva">म येशूलाई रोज्छु</span> &mdash; I choose Jesus.</p>'},
-    {t:'note',tag:'You did it!',q:'12 weeks · 60 days complete',body:'<p>You\'ve finished the entire Language Intensive &mdash; from <span class="deva">नमस्ते</span> to sharing the whole gospel in Nepali. You can now introduce yourself, talk about daily life, tell your story, narrate Bible stories, and share the good news. <span class="deva">बधाई छ!</span> &mdash; congratulations! Keep going, keep speaking, and <span class="deva">तुलना नगर्नुहोस्</span> &mdash; don\'t compare. <span class="deva">परमेश्वरसँग तपाईंको लागि असल योजना छ।</span></p>'},
+    {t:'note',tag:'You did it!',q:'12 weeks · 60 days complete',body:'<p>You\'ve finished the entire Language Intensive &mdash; from <span class="deva">नमस्ते</span> to sharing the whole gospel in Nepali. You can now introduce yourself, talk about daily life, tell your story, narrate Bible stories, and share the good news. <span class="deva">बधाई छ!</span> &mdash; congratulations! Keep going, keep speaking, and <span class="deva">तुलना नगर्नुस्</span> &mdash; don\'t compare. <span class="deva">परमेश्वरसँग तपाईंको लागि असल योजना छ।</span></p>'},
     {t:'mc',q:'Tutor\u2019s final question: "How do we grow in our faith?" begins by choosing to:',o:['follow Jesus (रोज्नु)','stay busy (व्यस्त)','compare (तुलना)','hate (घृणा)'],a:0}
   ]},
 /* ===== WEEKLY TESTS · Language Intensive — buildTestEx deals 20 random questions from the week on every attempt ===== */
@@ -7237,17 +7237,17 @@ const NE_LESSONS = [
     {t:'mc',q:'always · usually · sometimes =',o:['सधैं · प्रायः · कहिलेकाहीँ','प्रायः · सधैं · कहिलेकाहीँ','कहिलेकाहीँ · प्रायः · सधैं','सधैं · कहिलेकाहीँ · प्रायः'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['सधैं','always'],['प्रायः','usually'],['कहिलेकाहीँ','sometimes'],['हरेक दिन','every day']]}
   ,
-{t:'mc',q:'Review — which means "younger brother"?',o:['भाइ','दिनुहोस्','नमस्ते','उसलाई'],a:0},
+{t:'mc',q:'Review — which means "younger brother"?',o:['भाइ','दिनुस्','नमस्ते','उसलाई'],a:0},
 {t:'mc',q:'Review — which means "on foot"?',o:['पैदल','शुक्रबार','हामी','सोमबार'],a:0}]},
 
   /* --- Topic 5: slowly, please — the pace lifelines --- */
-  {id:'slow',title:'Slowly, please!',step:'learn',meta:'बिस्तारै छिटो ढिलो चाँडै',vocab:[['बिस्तारै','bistaarai','slowly'],['बिस्तारै भन्नुहोस्','bistaarai bhannuhos','please speak slowly'],['छिटो','chhito','fast / quickly'],['ढिलो','dhilo','late'],['चाँडै','chaandai','soon / early']],ex:[
-    {t:'note',tag:'The learner lifeline',q:'बिस्तारै भन्नुहोस्',body:'<p>The phrase that rescues every conversation: <span class="deva">बिस्तारै भन्नुहोस्</span> — please speak slowly! (<span class="deva">बिस्तारै</span> slowly + your polite -नुहोस्.)</p>'},
+  {id:'slow',title:'Slowly, please!',step:'learn',meta:'बिस्तारै छिटो ढिलो चाँडै',vocab:[['बिस्तारै','bistaarai','slowly'],['बिस्तारै भन्नुस्','bistaarai bhannus','please speak slowly'],['छिटो','chhito','fast / quickly'],['ढिलो','dhilo','late'],['चाँडै','chaandai','soon / early']],ex:[
+    {t:'note',tag:'The learner lifeline',q:'बिस्तारै भन्नुस्',body:'<p>The phrase that rescues every conversation: <span class="deva">बिस्तारै भन्नुस्</span> — please speak slowly! (<span class="deva">बिस्तारै</span> slowly + your polite -नुस्.)</p>'},
     {t:'mc',q:'What does बिस्तारै mean?',d:'बिस्तारै',r:'Bistaarai',o:['slowly','quickly','loudly','again'],a:0},
-    {t:'mc',q:'How do you ask someone to speak slowly?',o:['बिस्तारै भन्नुहोस्','छिटो भन्नुहोस्','फेरि भन्नुहोस्','बस्नुहोस्'],a:0},
-    {t:'note',tag:'Fast, late & soon',q:'छिटो · ढिलो · चाँडै',body:'<p><span class="deva">छिटो</span> = fast/quickly: <span class="deva">छिटो आउनुहोस्!</span> — come quickly!</p><p><span class="deva">ढिलो</span> = late · <span class="deva">चाँडै</span> = soon/early: <span class="deva">चाँडै आउनुहोस् है</span> — come soon, OK?</p>'},
+    {t:'mc',q:'How do you ask someone to speak slowly?',o:['बिस्तारै भन्नुस्','छिटो भन्नुस्','फेरि भन्नुस्','बस्नुस्'],a:0},
+    {t:'note',tag:'Fast, late & soon',q:'छिटो · ढिलो · चाँडै',body:'<p><span class="deva">छिटो</span> = fast/quickly: <span class="deva">छिटो आउनुस्!</span> — come quickly!</p><p><span class="deva">ढिलो</span> = late · <span class="deva">चाँडै</span> = soon/early: <span class="deva">चाँडै आउनुस् है</span> — come soon, OK?</p>'},
     {t:'mc',q:'What does छिटो mean?',d:'छिटो',r:'Chhito',o:['fast / quickly','slowly','late','soon'],a:0},
-    {t:'li',q:'What did you hear?',say:'बिस्तारै भन्नुहोस्',r:'Bistaarai bhannuhos',o:['please speak slowly','please say it again','please come quickly','please sit down'],a:0},
+    {t:'li',q:'What did you hear?',say:'बिस्तारै भन्नुस्',r:'Bistaarai bhannus',o:['please speak slowly','please say it again','please come quickly','please sit down'],a:0},
     {t:'mc',q:'What does ढिलो mean?',d:'ढिलो',r:'Dhilo',o:['late','early','slow','fast'],a:0}
   ]},
   {id:'slow_2',title:'Recognize',step:'recognize',meta:'Pace by ear',vocab:[],ex:[
@@ -7257,29 +7257,29 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'बिस्तारै',r:'Bistaarai',o:['slowly','quickly','late','loudly'],a:0},
     {t:'mc',q:'The bus is ढिलो. It is…',o:['late','early','fast','full'],a:0},
     {t:'li',q:'What did you hear?',say:'चाँडै',r:'Chaandai',o:['soon / early','late','slowly','never'],a:0},
-    {t:'mc',q:'छिटो आउनुहोस् means…',o:['come quickly!','come slowly!','come later!','do not come!'],a:0}
+    {t:'mc',q:'छिटो आउनुस् means…',o:['come quickly!','come slowly!','come later!','do not come!'],a:0}
   ]},
   {id:'slow_3',title:'Build',step:'build',meta:'Set the pace',vocab:[],ex:[
-    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुहोस्'],r:'Bistaarai bhannuhos',pool:['बिस्तारै','भन्नुहोस्','छिटो']},
-    {t:'fill',q:'Complete: "come QUICKLY"',s:'___ आउनुहोस्',o:['छिटो','ढिलो','बिस्तारै','सधैं'],a:0,r:'Chhito aaunuhos'},
+    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुस्'],r:'Bistaarai bhannus',pool:['बिस्तारै','भन्नुस्','छिटो']},
+    {t:'fill',q:'Complete: "come QUICKLY"',s:'___ आउनुस्',o:['छिटो','ढिलो','बिस्तारै','सधैं'],a:0,r:'Chhito aaunus'},
     {t:'mc',q:'"(I) got up early today" =',o:['आज चाँडै उठें','आज ढिलो उठें','आज छिटो सुतें','आज बिस्तारै उठें'],a:0},
     {t:'tr',q:'Translate: "slowly"',a:'बिस्तारै',r:'bistaarai'},
-    {t:'wb',q:'Build: "come soon, OK?"',a:['चाँडै','आउनुहोस्','है'],r:'Chaandai aaunuhos hai',pool:['चाँडै','आउनुहोस्','है','ढिलो']},
-    {t:'match',q:'Match request and situation',pairs:[['बिस्तारै भन्नुहोस्','too fast for me!'],['छिटो आउनुहोस्','hurry!'],['चाँडै आउनुहोस् है','see you soon'],['फेरि भन्नुहोस्','say it again']]}
+    {t:'wb',q:'Build: "come soon, OK?"',a:['चाँडै','आउनुस्','है'],r:'Chaandai aaunus hai',pool:['चाँडै','आउनुस्','है','ढिलो']},
+    {t:'match',q:'Match request and situation',pairs:[['बिस्तारै भन्नुस्','too fast for me!'],['छिटो आउनुस्','hurry!'],['चाँडै आउनुस् है','see you soon'],['फेरि भन्नुस्','say it again']]}
   ]},
   {id:'slow_4',title:'Mix it',step:'mix',meta:'Fast talk, slow talk',vocab:[],ex:[
     {t:'mc',q:'What does चाँडै mean?',o:['soon / early','late','slow','loud'],a:0},
     {t:'li',q:'What did you hear?',say:'ढिलो',r:'Dhilo',o:['late','early','fast','slow'],a:0},
     {t:'wb',q:'Build: "the bus is late"',a:['बस','ढिलो','छ'],r:'Bas dhilo chha',pool:['बस','ढिलो','छ','चाँडै']},
-    {t:'fill',q:'Complete: "please walk SLOWLY"',s:'___ हिँड्नुहोस्',o:['बिस्तारै','छिटो','ढिलो','सधैं'],a:0,r:'Bistaarai hindnuhos'},
-    {t:'mc',q:'A fast talker loses you at the bazaar:',o:['बिस्तारै भन्नुहोस्','छिटो भन्नुहोस्','ढिलो छ','चाँडै जानुहोस्'],a:0},
+    {t:'fill',q:'Complete: "please walk SLOWLY"',s:'___ हिँड्नुस्',o:['बिस्तारै','छिटो','ढिलो','सधैं'],a:0,r:'Bistaarai hindnus'},
+    {t:'mc',q:'A fast talker loses you at the bazaar:',o:['बिस्तारै भन्नुस्','छिटो भन्नुस्','ढिलो छ','चाँडै जानुस्'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['चाँडै','soon'],['ढिलो','late']]}
   ]},
   {id:'slow_5',title:'Checkpoint',step:'checkpoint',meta:'Pace mastered?',vocab:[],ex:[
-    {t:'mc',q:'The magic slow-down phrase is…',o:['बिस्तारै भन्नुहोस्','छिटो आउनुहोस्','ढिलो भयो','चाँडै आउनुहोस्'],a:0},
+    {t:'mc',q:'The magic slow-down phrase is…',o:['बिस्तारै भन्नुस्','छिटो आउनुस्','ढिलो भयो','चाँडै आउनुस्'],a:0},
     {t:'li',q:'What did you hear?',say:'छिटो',r:'Chhito',o:['fast / quickly','slowly','soon','late'],a:0},
     {t:'mc',q:'What does ढिलो mean?',d:'ढिलो',r:'Dhilo',o:['late','soon','early','never'],a:0},
-    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुहोस्'],r:'Bistaarai bhannuhos',pool:['बिस्तारै','भन्नुहोस्','आउनुहोस्']},
+    {t:'wb',q:'Build: "please speak slowly"',a:['बिस्तारै','भन्नुस्'],r:'Bistaarai bhannus',pool:['बिस्तारै','भन्नुस्','आउनुस्']},
     {t:'mc',q:'slowly · quickly · late · soon =',o:['बिस्तारै · छिटो · ढिलो · चाँडै','छिटो · बिस्तारै · चाँडै · ढिलो','बिस्तारै · ढिलो · छिटो · चाँडै','चाँडै · छिटो · ढिलो · बिस्तारै'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['बिस्तारै','slowly'],['छिटो','quickly'],['ढिलो','late'],['चाँडै','soon / early']]}
   ,
@@ -7467,15 +7467,15 @@ const NE_LESSONS = [
     {t:'mc',q:'dog · cat · cow · goat =',o:['कुकुर · बिरालो · गाई · बाख्रा','बिरालो · कुकुर · बाख्रा · गाई','कुकुर · गाई · बिरालो · बाख्रा','बाख्रा · बिरालो · गाई · कुकुर'],a:0},
     {t:'match',q:'Match word and meaning',pairs:[['कुकुर','dog'],['बिरालो','cat'],['बाख्रा','goat'],['हात्ती','elephant']]}
   ,
-{t:'mc',q:'Review — which means "minute"?',o:['मिनेट','रुपैयाँ','सुन्नुहोस्','रेस्टुरेन्ट'],a:0}]},
+{t:'mc',q:'Review — which means "minute"?',o:['मिनेट','रुपैयाँ','सुन्नुस्','रेस्टुरेन्ट'],a:0}]},
 
   /* --- Topic 3: clothes & the topi --- */
-  {id:'clothes',title:'The topi',step:'learn',meta:'लुगा टोपी जुत्ता + लगाउनु',vocab:[['लुगा','lugaa','clothing / clothes'],['टोपी','topi','hat / the Nepali topi'],['जुत्ता','juttaa','shoes'],['लगाउनु','lagaaunu','to wear / put on'],['जुत्ता खोल्नुहोस्','juttaa kholnuhos','please take off (your) shoes']],ex:[
+  {id:'clothes',title:'The topi',step:'learn',meta:'लुगा टोपी जुत्ता + लगाउनु',vocab:[['लुगा','lugaa','clothing / clothes'],['टोपी','topi','hat / the Nepali topi'],['जुत्ता','juttaa','shoes'],['लगाउनु','lagaaunu','to wear / put on'],['जुत्ता खोल्नुस्','juttaa kholnus','please take off (your) shoes']],ex:[
     {t:'note',tag:'Dress like a local',q:'लुगा · टोपी',body:'<p><span class="deva">लुगा</span> = clothes. <span class="deva">टोपी</span> = hat — and THE topi, the brimless cap that crowns Nepali menswear.</p><p><span class="deva">लगाउनु</span> = to wear/put on: <span class="deva">म टोपी लगाउँछु</span>.</p>'},
     {t:'mc',q:'What does लुगा mean?',d:'लुगा',r:'Lugaa',o:['clothes','cloth shop','laundry','blanket'],a:0},
     {t:'mc',q:'What does टोपी mean?',d:'टोपी',r:'Topi',o:['hat / topi','shirt','scarf','shoe'],a:0},
-    {t:'note',tag:'Shoes off!',q:'जुत्ता · खोल्नुहोस्',body:'<p><span class="deva">जुत्ता</span> = shoes. In every Nepali home they come off at the door — <span class="deva">जुत्ता खोल्नुहोस्</span>: please take off your shoes (खोल्नु = open/take off).</p>'},
-    {t:'mc',q:'What does जुत्ता खोल्नुहोस् mean?',d:'जुत्ता खोल्नुहोस्',r:'Juttaa kholnuhos',o:['please take off your shoes','please put on shoes','the shoes are new','shoes for sale'],a:0},
+    {t:'note',tag:'Shoes off!',q:'जुत्ता · खोल्नुस्',body:'<p><span class="deva">जुत्ता</span> = shoes. In every Nepali home they come off at the door — <span class="deva">जुत्ता खोल्नुस्</span>: please take off your shoes (खोल्नु = open/take off).</p>'},
+    {t:'mc',q:'What does जुत्ता खोल्नुस् mean?',d:'जुत्ता खोल्नुस्',r:'Juttaa kholnus',o:['please take off your shoes','please put on shoes','the shoes are new','shoes for sale'],a:0},
     {t:'li',q:'What did you hear?',say:'टोपी',r:'Topi',o:['hat / topi','shoes','clothes','shirt'],a:0},
     {t:'mc',q:'What does लगाउनु mean?',d:'लगाउनु',r:'Lagaaunu',o:['to wear / put on','to take off','to wash','to buy'],a:0}
   ]},
@@ -7483,34 +7483,34 @@ const NE_LESSONS = [
     {t:'li',q:'What did you hear?',say:'लुगा',r:'Lugaa',o:['clothes','shoes','hat','bag'],a:0},
     {t:'mc',q:'What does जुत्ता mean?',d:'जुत्ता',r:'Juttaa',o:['shoes','socks','feet','sandals only'],a:0},
     {t:'match',q:'Match the wardrobe',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['लगाउनु','to wear']]},
-    {t:'li',q:'What did you hear?',say:'जुत्ता खोल्नुहोस्',r:'Juttaa kholnuhos',o:['please take off your shoes','please wear shoes','where are the shoes?','nice shoes!'],a:0},
-    {t:'mc',q:'Entering a Nepali home, you first…',o:['जुत्ता खोल्नुहोस्','टोपी लगाउनुहोस्','लुगा किन्नुहोस्','बस्नुहोस्'],a:0},
+    {t:'li',q:'What did you hear?',say:'जुत्ता खोल्नुस्',r:'Juttaa kholnus',o:['please take off your shoes','please wear shoes','where are the shoes?','nice shoes!'],a:0},
+    {t:'mc',q:'Entering a Nepali home, you first…',o:['जुत्ता खोल्नुस्','टोपी लगाउनुस्','लुगा किन्नुस्','बस्नुस्'],a:0},
     {t:'li',q:'What did you hear?',say:'लगाउनु',r:'Lagaaunu',o:['to wear','to open','to wash','to fold'],a:0},
     {t:'mc',q:'The brimless Nepali cap is the…',o:['टोपी','लुगा','जुत्ता','झोला'],a:0}
   ]},
   {id:'clothes_3',title:'Build',step:'build',meta:'Get dressed',vocab:[],ex:[
     {t:'wb',q:'Build: "I wear a topi"',a:['म','टोपी','लगाउँछु'],r:'Ma topi lagaaunchhu',pool:['म','टोपी','लगाउँछु','खोल्छु']},
-    {t:'fill',q:'Complete: "please take off your SHOES"',s:'___ खोल्नुहोस्',o:['जुत्ता','टोपी','लुगा','झ्याल'],a:0,r:'Juttaa kholnuhos'},
+    {t:'fill',q:'Complete: "please take off your SHOES"',s:'___ खोल्नुस्',o:['जुत्ता','टोपी','लुगा','झ्याल'],a:0,r:'Juttaa kholnus'},
     {t:'mc',q:'"I want to buy clothes" =',o:['म लुगा किन्न चाहन्छु','म लुगा लगाउँछु','मलाई लुगा छ','लुगा राम्रो छ'],a:0},
     {t:'tr',q:'Translate: "shoes"',a:'जुत्ता',r:'juttaa'},
     {t:'wb',q:'Build: "the topi is beautiful"',a:['टोपी','राम्रो','छ'],r:'Topi raamro chha',pool:['टोपी','राम्रो','छ','हो']},
-    {t:'match',q:'Match item and action',pairs:[['टोपी','लगाउनु'],['जुत्ता','खोल्नुहोस्'],['लुगा','किन्नु'],['नयाँ लुगा','new clothes']]}
+    {t:'match',q:'Match item and action',pairs:[['टोपी','लगाउनु'],['जुत्ता','खोल्नुस्'],['लुगा','किन्नु'],['नयाँ लुगा','new clothes']]}
   ]},
   {id:'clothes_4',title:'Mix it',step:'mix',meta:'Dressed for the hills',vocab:[],ex:[
     {t:'mc',q:'What does लगाउनु mean?',o:['to wear / put on','to remove','to wash','to iron'],a:0},
     {t:'li',q:'What did you hear?',say:'जुत्ता',r:'Juttaa',o:['shoes','hat','clothes','socks'],a:0},
     {t:'wb',q:'Build: "I will buy new clothes"',a:['म','नयाँ','लुगा','किन्छु'],r:'Ma nayaan lugaa kinchhu',pool:['म','नयाँ','लुगा','किन्छु','पुरानो']},
     {t:'fill',q:'Complete: "grandfather wears a TOPI"',s:'हजुरबुबा ___ लगाउनुहुन्छ',o:['टोपी','जुत्ता','झोला','घडी'],a:0,r:'Hajurbubaa topi lagaaunuhunchha'},
-    {t:'mc',q:'At the door of a Nepali home you hear…',o:['जुत्ता खोल्नुहोस्','जुत्ता लगाउनुहोस्','जुत्ता किन्नुहोस्','जुत्ता दिनुहोस्'],a:0},
+    {t:'mc',q:'At the door of a Nepali home you hear…',o:['जुत्ता खोल्नुस्','जुत्ता लगाउनुस्','जुत्ता किन्नुस्','जुत्ता दिनुस्'],a:0},
     {t:'match',q:'Match the wardrobe',pairs:[['लुगा','clothes'],['जुत्ता','shoes'],['टोपी','hat / topi'],['लगाउनु','to wear']]}
   ]},
   {id:'clothes_5',title:'Checkpoint',step:'checkpoint',meta:'Wardrobe mastered?',vocab:[],ex:[
     {t:'mc',q:'How do you say "clothes"?',o:['लुगा','जुत्ता','टोपी','कपडा पसल'],a:0},
     {t:'li',q:'What did you hear?',say:'टोपी',r:'Topi',o:['hat / topi','shoes','shirt','clothes'],a:0},
-    {t:'mc',q:'What does जुत्ता खोल्नुहोस् mean?',o:['please take off your shoes','please put on your shoes','the shoes are off','whose shoes are these?'],a:0},
+    {t:'mc',q:'What does जुत्ता खोल्नुस् mean?',o:['please take off your shoes','please put on your shoes','the shoes are off','whose shoes are these?'],a:0},
     {t:'wb',q:'Build: "I wear clothes" — clothes wear',a:['लुगा','लगाउँछु'],r:'Lugaa lagaaunchhu',pool:['लुगा','लगाउँछु','खोल्छु']},
     {t:'mc',q:'clothes · hat · shoes =',o:['लुगा · टोपी · जुत्ता','टोपी · लुगा · जुत्ता','जुत्ता · टोपी · लुगा','लुगा · जुत्ता · टोपी'],a:0},
-    {t:'match',q:'Match word and meaning',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['जुत्ता खोल्नुहोस्','shoes off, please']]}
+    {t:'match',q:'Match word and meaning',pairs:[['लुगा','clothes'],['टोपी','hat'],['जुत्ता','shoes'],['जुत्ता खोल्नुस्','shoes off, please']]}
   ,
 {t:'mc',q:'Review — which means "Monday"?',o:['सोमबार','हजुर','बहिनी','नमस्ते'],a:0}]},
 
@@ -7536,7 +7536,7 @@ const NE_LESSONS = [
   {id:'home2_3',title:'Build',step:'build',meta:'Furnish the room',vocab:[],ex:[
     {t:'wb',q:'Build: "the key is on the table"',a:['साँचो','टेबलमा','छ'],r:'Saancho tebalmaa chha',pool:['साँचो','टेबलमा','छ','खाटमा']},
     {t:'fill',q:'Complete: "the room is CLEAN"',s:'कोठा ___ छ',o:['सफा','ठूलो','नयाँ','राम्रो'],a:0,r:'Kothaa saphaa chha'},
-    {t:'mc',q:'"Please open the window" =',o:['झ्याल खोल्नुहोस्','ढोका खोल्नुहोस्','झ्याल हेर्नुहोस्','साँचो दिनुहोस्'],a:0},
+    {t:'mc',q:'"Please open the window" =',o:['झ्याल खोल्नुस्','ढोका खोल्नुस्','झ्याल हेर्नुस्','साँचो दिनुस्'],a:0},
     {t:'tr',q:'Translate: "key"',a:'साँचो',r:'saancho'},
     {t:'wb',q:'Build: "the cat is on the bed"',a:['बिरालो','खाटमा','छ'],r:'Biraalo khaatmaa chha',pool:['बिरालो','खाटमा','छ','टेबलमा']},
     {t:'match',q:'Match thing and use',pairs:[['खाट','for sleeping'],['कुर्सी','for sitting'],['टेबल','for working'],['साँचो','for locking']]}
@@ -7581,7 +7581,7 @@ const NE_LESSONS = [
   {id:'fruits_3',title:'Build',step:'build',meta:'Shop the stall',vocab:[],ex:[
     {t:'wb',q:'Build: "the mango is sweet"',a:['आँप','गुलियो','छ'],r:'Aanp guliyo chha',pool:['आँप','गुलियो','छ','पिरो']},
     {t:'fill',q:'Complete: "the curry is SPICY"',s:'तरकारी ___ छ',o:['पिरो','गुलियो','सफा','चिसो'],a:0,r:'Tarkaari piro chha'},
-    {t:'mc',q:'"How much are the bananas?" =',o:['केरा कति पर्छ?','केरा कहाँ छ?','केरा मीठो छ?','केरा दिनुहोस्'],a:0},
+    {t:'mc',q:'"How much are the bananas?" =',o:['केरा कति पर्छ?','केरा कहाँ छ?','केरा मीठो छ?','केरा दिनुस्'],a:0},
     {t:'tr',q:'Translate: "mango"',a:'आँप',r:'aanp'},
     {t:'wb',q:'Build: "I like fruit"',a:['मलाई','फलफूल','मन पर्छ'],r:'Malai phalphul man parchha',pool:['मलाई','फलफूल','मन पर्छ','मन पर्दैन']},
     {t:'match',q:'Match taste and food',pairs:[['गुलियो','आँप'],['पिरो','अचार'],['फलफूल','स्याउ, केरा…'],['मीठो','tasty']]}
@@ -7589,7 +7589,7 @@ const NE_LESSONS = [
   {id:'fruits_4',title:'Mix it',step:'mix',meta:'Five a day',vocab:[],ex:[
     {t:'mc',q:'What does केरा mean?',o:['banana','mango','apple','grape'],a:0},
     {t:'li',q:'What did you hear?',say:'फलफूल',r:'Phalphul',o:['fruit','flower','farm','vegetables'],a:0},
-    {t:'wb',q:'Build: "give me two apples, please" — two apple give',a:['दुईवटा','स्याउ','दिनुहोस्'],r:'Duiwataa syaau dinuhos',pool:['दुईवटा','स्याउ','दिनुहोस्','केरा']},
+    {t:'wb',q:'Build: "give me two apples, please" — two apple give',a:['दुईवटा','स्याउ','दिनुस्'],r:'Duiwataa syaau dinus',pool:['दुईवटा','स्याउ','दिनुस्','केरा']},
     {t:'fill',q:'Complete: "the tea is SWEET"',s:'चिया ___ छ',o:['गुलियो','पिरो','चिसो','तातो'],a:0,r:'Chiyaa guliyo chha'},
     {t:'mc',q:'One bite and your eyes water — the achar is…',o:['पिरो','गुलियो','सफा','नयाँ'],a:0},
     {t:'match',q:'Match the fruits',pairs:[['आँप','mango'],['केरा','banana'],['स्याउ','apple'],['गुलियो','sweet']]}
@@ -7608,7 +7608,7 @@ const NE_LESSONS = [
   {id:'phone2',title:'Phone & post',step:'learn',meta:'फोन नम्बर चिठी पठाउनु',vocab:[['फोन','phon','phone'],['नम्बर','nambar','number'],['फोन गर्नु','phon garnu','to phone / call'],['चिठी','chithi','letter'],['पठाउनु','pathaaunu','to send'],['तपाईंको नम्बर के हो?','tapaainko nambar ke ho','what is your number?']],ex:[
     {t:'note',tag:'Stay in touch',q:'फोन · नम्बर',body:'<p><span class="deva">फोन</span> = phone · <span class="deva">नम्बर</span> = number (two English guests in Nepali!). <span class="deva">फोन गर्नु</span> = to call — गर्नु turning a noun into a verb, as always.</p><p>Swap digits: <span class="deva">तपाईंको नम्बर के हो?</span></p>'},
     {t:'mc',q:'What does फोन गर्नु mean?',d:'फोन गर्नु',r:'Phon garnu',o:['to phone / call','to text','to buy a phone','to answer'],a:0},
-    {t:'mc',q:'How do you ask for a number?',o:['तपाईंको नम्बर के हो?','तपाईंको नाम के हो?','फोन कहाँ छ?','फोन गर्नुहोस्'],a:0},
+    {t:'mc',q:'How do you ask for a number?',o:['तपाईंको नम्बर के हो?','तपाईंको नाम के हो?','फोन कहाँ छ?','फोन गर्नुस्'],a:0},
     {t:'note',tag:'Letters still travel',q:'चिठी · पठाउनु',body:'<p><span class="deva">चिठी</span> = letter · <span class="deva">पठाउनु</span> = to send: <span class="deva">म चिठी पठाउँछु</span> — I send a letter. (पठाउनु also sends parcels, messages and people!)</p>'},
     {t:'mc',q:'What does पठाउनु mean?',d:'पठाउनु',r:'Pathaaunu',o:['to send','to receive','to write','to carry'],a:0},
     {t:'li',q:'What did you hear?',say:'तपाईंको नम्बर के हो?',r:'Tapaainko nambar ke ho?',o:['what is your number?','what is your name?','where is your phone?','who is calling?'],a:0},
@@ -7628,14 +7628,14 @@ const NE_LESSONS = [
     {t:'fill',q:'Complete: "I will CALL tomorrow"',s:'म भोलि फोन ___',o:['गर्छु','जान्छु','पठाउँछु','हुन्छु'],a:0,r:'Ma bholi phon garchhu'},
     {t:'mc',q:'"I send a letter" =',o:['म चिठी पठाउँछु','म चिठी लेख्छु','म चिठी पढ्छु','म चिठी किन्छु'],a:0},
     {t:'tr',q:'Translate: "to send"',a:'पठाउनु',r:'pathaaunu'},
-    {t:'wb',q:'Build: "please call me" — to-me phone do',a:['मलाई','फोन','गर्नुहोस्'],r:'Malai phon garnuhos',pool:['मलाई','फोन','गर्नुहोस्','पठाउनुहोस्']},
+    {t:'wb',q:'Build: "please call me" — to-me phone do',a:['मलाई','फोन','गर्नुस्'],r:'Malai phon garnus',pool:['मलाई','फोन','गर्नुस्','पठाउनुस्']},
     {t:'match',q:'Match action and thing',pairs:[['फोन गर्नु','call'],['चिठी पठाउनु','send a letter'],['नम्बर','digits'],['तपाईंको नम्बर के हो?','asking for a number']]}
   ]},
   {id:'phone2_4',title:'Mix it',step:'mix',meta:'Keep in touch',vocab:[],ex:[
     {t:'mc',q:'What does चिठी mean?',o:['letter','note only','book','message app'],a:0},
     {t:'li',q:'What did you hear?',say:'नम्बर',r:'Nambar',o:['number','name','phone','never'],a:0},
     {t:'wb',q:'Build: "I will call you tonight" — tonight phone do',a:['आज राति','फोन','गर्छु'],r:'Aaja raati phon garchhu',pool:['आज राति','फोन','गर्छु','पठाउँछु']},
-    {t:'fill',q:'Complete: "please SEND the letter"',s:'चिठी ___',o:['पठाउनुहोस्','गर्नुहोस्','खोल्नुहोस्','लगाउनुहोस्'],a:0,r:'Chithi pathaaunuhos'},
+    {t:'fill',q:'Complete: "please SEND the letter"',s:'चिठी ___',o:['पठाउनुस्','गर्नुस्','खोल्नुस्','लगाउनुस्'],a:0,r:'Chithi pathaaunus'},
     {t:'mc',q:'New friend at the teashop — before leaving, ask…',o:['तपाईंको नम्बर के हो?','तपाईं को हो?','फोन कति पर्छ?','चिठी कहाँ छ?'],a:0},
     {t:'match',q:'Match the connections',pairs:[['फोन','phone'],['चिठी','letter'],['पठाउनु','to send'],['फोन गर्नु','to call']]}
   ]},
@@ -7650,9 +7650,9 @@ const NE_LESSONS = [
 {t:'mc',q:'Review — which means "Friday"?',o:['शुक्रबार','तिमीलाई','रङ','उनी'],a:0}]},
 
   /* --- Topic 7: help & staying safe --- */
-  {id:'help2',title:'Help!',step:'learn',meta:'मद्दत प्रहरी होसियार हरायो',vocab:[['मद्दत','maddat','help'],['मद्दत गर्नुहोस्','maddat garnuhos','please help (me)'],['प्रहरी','prahari','police'],['होसियार','hosiyaar','careful!'],['हरायो','haraayo','(it) got lost'],['ज्वरो आयो','jwaro aayo','(I) got a fever']],ex:[
-    {t:'note',tag:'When it matters',q:'मद्दत गर्नुहोस्',body:'<p>Memorise this one cold: <span class="deva">मद्दत गर्नुहोस्</span> — please help me! (<span class="deva">मद्दत</span> help + गर्नु + your polite -नुहोस्.)</p><p><span class="deva">प्रहरी</span> = police.</p>'},
-    {t:'mc',q:'How do you say "please help me"?',o:['मद्दत गर्नुहोस्','होसियार','फोन गर्नुहोस्','बस्नुहोस्'],a:0},
+  {id:'help2',title:'Help!',step:'learn',meta:'मद्दत प्रहरी होसियार हरायो',vocab:[['मद्दत','maddat','help'],['मद्दत गर्नुस्','maddat garnus','please help (me)'],['प्रहरी','prahari','police'],['होसियार','hosiyaar','careful!'],['हरायो','haraayo','(it) got lost'],['ज्वरो आयो','jwaro aayo','(I) got a fever']],ex:[
+    {t:'note',tag:'When it matters',q:'मद्दत गर्नुस्',body:'<p>Memorise this one cold: <span class="deva">मद्दत गर्नुस्</span> — please help me! (<span class="deva">मद्दत</span> help + गर्नु + your polite -नुस्.)</p><p><span class="deva">प्रहरी</span> = police.</p>'},
+    {t:'mc',q:'How do you say "please help me"?',o:['मद्दत गर्नुस्','होसियार','फोन गर्नुस्','बस्नुस्'],a:0},
     {t:'mc',q:'What does प्रहरी mean?',d:'प्रहरी',r:'Prahari',o:['police','doctor','guard','army'],a:0},
     {t:'note',tag:'Watch out!',q:'होसियार · हरायो · ज्वरो',body:'<p><span class="deva">होसियार!</span> — careful! (also the send-off friends give travelers).</p><p><span class="deva">हरायो</span> — it got lost: <span class="deva">मेरो झोला हरायो</span>. And for the clinic: <span class="deva">ज्वरो आयो</span> — a fever came (Nepali fevers arrive!).</p>'},
     {t:'mc',q:'What does होसियार mean?',d:'होसियार',r:'Hosiyaar',o:['careful!','hurry!','help!','stop!'],a:0},
@@ -7669,24 +7669,24 @@ const NE_LESSONS = [
     {t:'mc',q:'Nepali fevers "come": ज्वरो…',o:['आयो','गयो','छ','हो'],a:0}
   ]},
   {id:'help2_3',title:'Build',step:'build',meta:'Get help fast',vocab:[],ex:[
-    {t:'wb',q:'Build: "please help me"',a:['मलाई','मद्दत','गर्नुहोस्'],r:'Malai maddat garnuhos',pool:['मलाई','मद्दत','गर्नुहोस्','होसियार']},
+    {t:'wb',q:'Build: "please help me"',a:['मलाई','मद्दत','गर्नुस्'],r:'Malai maddat garnus',pool:['मलाई','मद्दत','गर्नुस्','होसियार']},
     {t:'fill',q:'Complete: "my bag GOT LOST"',s:'मेरो झोला ___',o:['हरायो','आयो','छ','गयो'],a:0,r:'Mero jholaa haraayo'},
     {t:'mc',q:'Someone is hurt — who do you call first?',o:['डाक्टर','प्रहरी','साथी','पसले'],a:0},
     {t:'tr',q:'Translate: "help"',a:'मद्दत',r:'maddat'},
     {t:'wb',q:'Build: "(I) got a fever, (I) will go to the doctor"',a:['ज्वरो आयो','म','डाक्टरकहाँ','जान्छु'],r:'Jwaro aayo, ma daaktarkahaa jaanchhu',pool:['ज्वरो आयो','म','डाक्टरकहाँ','जान्छु','हरायो']},
-    {t:'match',q:'Match problem and helper',pairs:[['झोला हरायो','प्रहरी'],['ज्वरो आयो','डाक्टर'],['बाटो बिराएँ','मद्दत गर्नुहोस्'],['यात्रा जाँदै','होसियार!']]}
+    {t:'match',q:'Match problem and helper',pairs:[['झोला हरायो','प्रहरी'],['ज्वरो आयो','डाक्टर'],['बाटो बिराएँ','मद्दत गर्नुस्'],['यात्रा जाँदै','होसियार!']]}
   ]},
   {id:'help2_4',title:'Mix it',step:'mix',meta:'Cool head, right words',vocab:[],ex:[
-    {t:'mc',q:'What does मद्दत गर्नुहोस् mean?',o:['please help (me)','be careful','call the police','wait here'],a:0},
+    {t:'mc',q:'What does मद्दत गर्नुस् mean?',o:['please help (me)','be careful','call the police','wait here'],a:0},
     {t:'li',q:'What did you hear?',say:'ज्वरो आयो',r:'Jwaro aayo',o:['(I) got a fever','a guest came','it rained','(I) got better'],a:0},
     {t:'wb',q:'Build: "careful! the road is bad"',a:['होसियार!','बाटो','नराम्रो','छ'],r:'Hosiyaar! Baato naraamro chha',pool:['होसियार!','बाटो','नराम्रो','छ','राम्रो']},
     {t:'fill',q:'Complete: "the POLICE are there"',s:'___ त्यहाँ छन्',o:['प्रहरी','डाक्टर','पाहुना','साथी'],a:0,r:'Prahari tyahaan chhan'},
-    {t:'mc',q:'Wallet gone at the bazaar. First words to the प्रहरी:',o:['मेरो पैसा हरायो, मद्दत गर्नुहोस्','कति पर्छ?','नमस्ते, म जान्छु','ढिलो भयो'],a:0},
+    {t:'mc',q:'Wallet gone at the bazaar. First words to the प्रहरी:',o:['मेरो पैसा हरायो, मद्दत गर्नुस्','कति पर्छ?','नमस्ते, म जान्छु','ढिलो भयो'],a:0},
     {t:'match',q:'Match the safety words',pairs:[['होसियार','careful!'],['हरायो','got lost'],['ज्वरो आयो','got a fever'],['मद्दत','help']]}
   ]},
   {id:'help2_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 12 complete!',vocab:[],ex:[
     {t:'mc',q:'How do you say "police"?',o:['प्रहरी','डाक्टर','मद्दत','पहरा'],a:0},
-    {t:'li',q:'What did you hear?',say:'मद्दत गर्नुहोस्',r:'Maddat garnuhos',o:['please help (me)','be careful','please come','call a doctor'],a:0},
+    {t:'li',q:'What did you hear?',say:'मद्दत गर्नुस्',r:'Maddat garnus',o:['please help (me)','be careful','please come','call a doctor'],a:0},
     {t:'mc',q:'What does हरायो mean?',d:'हरायो',r:'Haraayo',o:['(it) got lost','(it) came back','(it) broke','(he) left'],a:0},
     {t:'wb',q:'Build: "careful!" + "the dog is outside"',a:['होसियार!','कुकुर','बाहिर','छ'],r:'Hosiyaar! Kukur baahira chha',pool:['होसियार!','कुकुर','बाहिर','छ','भित्र']},
     {t:'mc',q:'help · police · careful =',o:['मद्दत · प्रहरी · होसियार','प्रहरी · मद्दत · होसियार','होसियार · प्रहरी · मद्दत','मद्दत · होसियार · प्रहरी'],a:0},
@@ -7705,7 +7705,7 @@ const NE_SYM={li_w1d1:'दाइ',li_w1d2:'नाम',li_w1d3:'मन',li_w1d4:'
 /* ── Short-term (per-pack phrasebook) — NEPAL edition, July 2026.
    Contextualized per the house rule: hajur + daai/didi carry politeness (no
    everyday 'please'), the street greetings kataa jaane? / khaanaa khaanubhayo?
-   live in `hear`, dal-bhat refill culture (thapnuhos/pugyo), a trekking
+   live in `hear`, dal-bhat refill culture (thapnus/pugyo), a trekking
    section (ukaalo/oraalo), Kathmandu taxi negotiation, chaahidaina for touts.
    Lines prefer already-recorded course strings; roman is the primary line. */
 
@@ -7717,7 +7717,7 @@ const NE_TRIP={
      items:[['शौचालय','shauchalaya','bathroom'],['बस','bas','bus'],['पसल','pasal','shop'],['अस्पताल','aspataal','hospital'],['बाटो','baato','way'],['होटेल','hotel','hotel']]},
     {s:' छ?',sr:' chha?',en:'Do you have ___?',t:'Ask if something is available',
      items:[['पानी','paani','water'],['चिया','chiyaa','tea'],['कोठा','kothaa','a room'],['तातो पानी','taato paani','hot water'],['वाइफाइ','waiphai','wi-fi'],['खाना','khaanaa','food']]},
-    {s:' दिनुहोस्',sr:' dinuhos',en:'___, please.',t:'Ask for something politely',
+    {s:' दिनुस्',sr:' dinus',en:'___, please.',t:'Ask for something politely',
      items:[['पानी','paani','Water'],['चिया','chiyaa','Tea'],['दालभात','daal bhaat','Dal bhat'],['साँचो','saancho','The key'],['यो','yo','This one'],['मेनु','menu','The menu']]},
     {s:' कति हो?',sr:' kati ho?',en:'How much is ___?',t:'Ask any price',
      items:[['यो','yo','this'],['कोठा','kothaa','the room'],['चिया','chiyaa','the tea'],['टिकट','tikat','the ticket'],['भाडा','bhaadaa','the fare']]}
@@ -7734,13 +7734,13 @@ const NE_TRIP={
       ['होइन','hoina','no (it is not)'],
       ['धन्यवाद','dhanyabaad','thank you (for real favours)']]},
     {id:'polite',t:'Being polite',d:'Respect lives in the verb — and in hajur',
-     note:'There is no everyday word for please — politeness rides on the <b>-nuhos</b> verb ending and on <b>hajur</b>. Called by name? Answer <b>hajur</b>. Strangers are family: <b>daai</b> and <b>didi</b>.',
+     note:'There is no everyday word for please — politeness rides on the <b>-nus</b> verb ending and on <b>hajur</b>. Called by name? Answer <b>hajur</b>. Strangers are family: <b>daai</b> and <b>didi</b>.',
      lines:[['दाइ','daai','older brother — any man a bit older'],
       ['दिदी','didi','older sister — any woman a bit older'],
       ['भाइ','bhaai','younger brother'],
       ['बहिनी','bahini','younger sister'],
-      ['बस्नुहोस्','basnuhos','please sit'],
-      ['पर्खनुहोस्','parkhanuhos','please wait'],
+      ['बस्नुस्','basnus','please sit'],
+      ['पर्खनुस्','parkhanus','please wait'],
       ['हुँदैन','hundaina','no, that will not work']]},
     {id:'meet',t:'Meeting someone',d:'Introductions',
      note:'<b>mero naam … ho</b> — my name is … — needs no verb changes. <b>bhetera khusi laagyo</b> — nice to meet you — is always warmly received.',
@@ -7749,7 +7749,7 @@ const NE_TRIP={
       ['भेटेर खुसी लाग्यो','bhetera khusi laagyo','nice to meet you'],
       ['म अलिकति नेपाली बोल्छु','ma alikati nepaali bolchhu','I speak a little Nepali'],
       ['म बुझ्दिन','ma bujhdina','I do not understand'],
-      ['बिस्तारै भन्नुहोस्','bistaarai bhannuhos','please say it slowly'],
+      ['बिस्तारै भन्नुस्','bistaarai bhannus','please say it slowly'],
       ['फेरि भेटौंला','pheri bhetaunlaa','see you again']]},
     {id:'patterns',t:'Sentence patterns',d:'Four frames that do the work',
      note:'Four frames cover most of what you need. Tap a word, hear the whole sentence.',
@@ -7760,7 +7760,7 @@ const NE_TRIP={
       ['खाना खानुभयो?','khaanaa khaanubhayo?','have you eaten? (a greeting)'],
       ['छ','chha','there is · we have'],
       ['छैन','chhaina','there is not · we do not have'],
-      ['खानुहोस्','khaanuhos','eat! (the invitation)'],
+      ['खानुस्','khaanus','eat! (the invitation)'],
       ['कति बस्ने?','kati basne?','how long are you staying?'],
       ['कुन देशबाट?','kun deshbaata?','from which country?']]},
     {id:'numbers',t:'Numbers',d:'Prices come in these',
@@ -7782,7 +7782,7 @@ const NE_TRIP={
       ['मिटरमा जाने?','mitarma jaane?','will you use the meter?'],
       ['कति पर्छ?','kati parchha?','how much does it cost?'],
       ['यहाँ रोक्नुस्','yahaan roknus','stop here'],
-      ['बिस्तारै जानुहोस्','bistaarai jaanuhos','please go slowly']]},
+      ['बिस्तारै जानुस्','bistaarai jaanus','please go slowly']]},
     {id:'way',t:'Directions',d:'Catch one word of the answer',
      note:'Ask with the <b>kahaan chha?</b> frame above, then listen for these.',
      lines:[['दायाँ','daayaa','right'],
@@ -7803,17 +7803,17 @@ const NE_TRIP={
       ['बिस्तारै','bistaarai','slowly'],
       ['मलाई थकाइ लाग्यो','malaai thakaai laagyo','I am tired']]},
     {id:'eat',t:'Eating',d:'Dal bhat & tea',
-     note:'<b>daal bhaat</b> comes with refills — the server returns until you say <b>pugyo</b>. <b>thapnuhos</b> asks for more, and <b>khaanaa miTho chha</b> makes the kitchen\u2019s day.',
+     note:'<b>daal bhaat</b> comes with refills — the server returns until you say <b>pugyo</b>. <b>thapnus</b> asks for more, and <b>khaanaa miTho chha</b> makes the kitchen\u2019s day.',
      lines:[['दालभात','daal bhaat','dal bhat (the meal)'],
       ['चिया','chiyaa','milk tea'],
       ['खाना मीठो छ','khaanaa mitho chha','the food is delicious'],
-      ['थप्नुहोस्','thapnuhos','more, please (the refill word)'],
+      ['थप्नुस्','thapnus','more, please (the refill word)'],
       ['पुग्यो','pugyo','enough — I am full'],
       ['पिरो','piro','spicy'],
       ['म मासु खान्न','ma maasu khaanna','I do not eat meat']]},
     {id:'guest',t:'Being a guest',d:'In a Nepali home',
      note:'Shoes come off at the door. Refusing food takes three warm tries — <b>alikati maatra</b> takes a small portion; <b>pugyo</b> plus a smile ends it kindly.',
-     lines:[['जुत्ता खोल्नुहोस्','juttaa kholnuhos','shoes off (you will be told)'],
+     lines:[['जुत्ता खोल्नुस्','juttaa kholnus','shoes off (you will be told)'],
       ['अलिकति मात्र','alikati maatra','just a little'],
       ['घर राम्रो छ','ghar raamro chha','your home is lovely'],
       ['खाजा','khaajaa','snacks (you will be offered)'],
@@ -7821,7 +7821,7 @@ const NE_TRIP={
     {id:'shop',t:'Shopping',d:'Fixed in shops, soft in markets',
      note:'Shops have fixed prices; tourist markets bend a little. <b>chaahidaina</b> — I do not need it — turns away touts kindly. Keep walking as you say it.',
      lines:[['महँगो भयो','mahango bhayo','that is too expensive'],
-      ['अलि घटाउनुहोस्','ali ghataaunuhos','a little less, please'],
+      ['अलि घटाउनुस्','ali ghataaunus','a little less, please'],
       ['ठीक छ, लिन्छु','theek chha, linchhu','okay, I will take it'],
       ['चाहिँदैन','chaahidaina','I do not need it'],
       ['हेर्दै मात्र','herdai maatra','just looking']]},
@@ -7833,8 +7833,8 @@ const NE_TRIP={
       ['कम्बल','kambal','blanket'],
       ['भोलि जान्छु','bholi jaanchhu','I leave tomorrow']]},
     {id:'trouble',t:'Getting help',d:'Serious words, hopefully unused',
-     note:'<b>maddat garnuhos</b> — please help — is the sentence to know; say it clearly. Carry your address written down — any hotel will write it in Nepali for you.',
-     lines:[['मद्दत गर्नुहोस्','maddat garnuhos','please help'],
+     note:'<b>maddat garnus</b> — please help — is the sentence to know; say it clearly. Carry your address written down — any hotel will write it in Nepali for you.',
+     lines:[['मद्दत गर्नुस्','maddat garnus','please help'],
       ['प्रहरी','prahari','police'],
       ['अस्पताल','aspataal','hospital'],
       ['डाक्टर','daaktar','doctor'],

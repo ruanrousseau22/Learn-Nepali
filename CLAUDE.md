@@ -333,7 +333,7 @@ gender to stay grammatical. Lines prefer already-recorded course strings
 build it around what a visitor to THAT country actually faces. Nepali's
 spine: hajur + daai/didi carry politeness (no everyday "please" — say so in
 the note), the street greetings kataa jaane? / khaanaa khaanubhayo? live in
-`hear`, dal-bhat refill culture (thapnuhos / pugyo), a trekking section
+`hear`, dal-bhat refill culture (thapnus / pugyo), a trekking section
 (`trek` id + icon: ukaalo/oraalo/kati ghantaa), Kathmandu taxi negotiation
 (mitarma jaane?), chaahidaina for touts, photo permission. Ask per language:
 which rules and sentences matter MORE here than elsewhere?
