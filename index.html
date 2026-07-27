@@ -2014,7 +2014,8 @@ function tripLineHTML(l){
   return '<button type="button" class="trip-line" onclick="speak(\''+l[0]+'\')">'
     +'<span class="rm">'+l[1]+'</span>'
     +'<span class="en">'+l[2]+'</span>'
-    +'<span class="bn deva">'+l[0]+'</span>'
+    /* Latin packs: skip the script line when it would just repeat the roman */
+    +(l[0]===l[1]?'':'<span class="bn deva">'+l[0]+'</span>')
     +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></button>';}
 function buildTrip(){
   const root=document.getElementById('trip-root');if(!root)return;
@@ -2024,7 +2025,7 @@ function buildTrip(){
   const nat=document.getElementById('trip-native');if(nat)nat.textContent=T.native||'';
   /* the sections, collapsed; the frame builder opens by default */
   let html=T.sections.map(function(sec,i){
-    const open=(sec.id==='patterns');
+    const open=false; /* every section starts collapsed — the page opens clean (Ruan, July 2026) */
     return '<div class="trip-sec'+(open?' open':'')+'" id="tsec-'+sec.id+'" style="--zacc:'+TRIP_ACC[i%TRIP_ACC.length]+'">'
       +'<button class="trip-head" aria-expanded="'+open+'" onclick="tripToggle(\''+sec.id+'\')">'
         +tripIcon(sec.id)
@@ -2039,7 +2040,7 @@ function buildTrip(){
 const tfSel={};
 function tripFramesHTML(){const F=(LANG.trip&&LANG.trip.frames)||[];if(!F.length)return '';
   return '<div class="tframes">'+F.map(function(f,fi){
-    if(tfSel[fi]==null)tfSel[fi]=0;
+    if(tfSel[fi]==null||tfSel[fi]>=f.items.length)tfSel[fi]=0; /* selections must not survive into a shorter frame after a language switch */
     return '<div class="tframe"><div class="tf-cap">'+f.t+'</div>'
       +'<div class="tf-out" id="tf-out-'+fi+'">'+tfOutHTML(fi)+'</div>'
       +'<div class="tf-items">'+f.items.map(function(it,ii){
@@ -2050,7 +2051,7 @@ function tfOutHTML(fi){const f=LANG.trip.frames[fi],it=f.items[tfSel[fi]];
   return '<button type="button" class="tf-say" onclick="speak(\''+nat+'\')">'
     +'<span class="rm">'+it[1]+f.sr+'</span>'
     +'<span class="en">'+f.en.replace('___',it[2])+'</span>'
-    +'<span class="bn deva">'+nat+'</span>'
+    +(nat===it[1]+f.sr?'':'<span class="bn deva">'+nat+'</span>')
     +'<span class="spk" aria-hidden="true">'+spkSVG()+'</span></button>';}
 function tfPick(fi,ii){const f=LANG.trip.frames[fi];tfSel[fi]=ii;
   const o=document.getElementById('tf-out-'+fi);if(o)o.innerHTML=tfOutHTML(fi);
@@ -2089,7 +2090,7 @@ function tcRender(){const st=document.getElementById('tc-stage');
         +'<div class="srs-tap-hint">Tap or press Space to reveal</div></div>'
       +'<div class="flip-face flip-back">'
         +'<div class="tc-rm">'+c[1]+'<button class="spk" aria-label="Play audio" onclick="event.stopPropagation();speak(\''+c[0]+'\')">'+spkSVG()+'</button></div>'
-        +'<div class="tc-na deva">'+c[0]+'</div></div>'
+        +(c[0]===c[1]?'':'<div class="tc-na deva">'+c[0]+'</div>')+'</div>'
     +'</div></div>'
     +'<div id="tc-action"><button class="reveal-btn ghost" onclick="event.stopPropagation();tcFlip()">Show answer</button></div></div>';}
 function tcFlip(){const c=tcDeck[0];if(!c)return;
