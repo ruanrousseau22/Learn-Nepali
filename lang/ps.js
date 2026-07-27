@@ -3284,7 +3284,7 @@ const PS_TRIP={
       ['کیلي','keelee','the key'],
       ['تشناب','tashnaab','bathroom']]},
     {id:'trouble',t:'Getting help',d:'Serious words, hopefully unused',
-     note:'<b>mrasta wokrra!</b> — help me — said clearly is the sentence. Keep your address written in Pashto; any shopkeeper will oblige.',
+     note:'<b>mrasta wokrra!</b> — help me — is the sentence to know; say it clearly. Keep your address written in Pashto; any shopkeeper will oblige.',
      lines:[['مرسته وکړه','mrasta wokrra','please help!'],
       ['پولیس','polis','police'],
       ['روغتون','roghtun','hospital'],
