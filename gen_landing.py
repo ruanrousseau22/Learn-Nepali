@@ -34,7 +34,10 @@ def esc(s):
 
 
 def font_link(code):
-    fams = ["Plus+Jakarta+Sans:wght@400;500;600;700"]
+    # Fraunces matches the app's display serif (the hero h1 + section headings
+    # name it); same axis spec as index.html so the italic em renders too.
+    fams = ["Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600",
+            "Plus+Jakarta+Sans:wght@400;500;600;700"]
     sf = SCRIPT_FONT.get(code)
     if sf:
         w = "wght@400;500;600" if code != 'ur' else "wght@400;500;600"
