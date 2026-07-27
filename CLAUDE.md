@@ -320,7 +320,16 @@ coordinates) is in HISTORY.md — these are the standing rules:
 
 A fourth page next to Learn/Alphabet/Review for short visits; **a pack
 feature, not a Bengali special case** — tab/page/flashcards appear only when
-the pack defines `trip`. Bengali ships it (14 sections / 151 lines).
+the pack defines `trip`. Bengali ships it (14 sections / 151 lines) and
+Nepali ships it (15 sections / 96 lines + 23 frame combos, July 2026).
+**Every language's trip pack must be CONTEXTUALIZED, never cloned** (Ruan):
+build it around what a visitor to THAT country actually faces. Nepali's
+spine: hajur + daai/didi carry politeness (no everyday "please" — say so in
+the note), the street greetings kataa jaane? / khaanaa khaanubhayo? live in
+`hear`, dal-bhat refill culture (thapnuhos / pugyo), a trekking section
+(`trek` id + icon: ukaalo/oraalo/kati ghantaa), Kathmandu taxi negotiation
+(mitarma jaane?), chaahidaina for touts, photo permission. Ask per language:
+which rules and sentences matter MORE here than elsewhere?
 - Data: `trip:{title, native, sections:[{id,t,d,note?,lines:[[native,rom,
   english]]}], frames:[{s,sr,en,t,items}]}` — frames are noun-first
   sentence builders (suffix `s` appended to each item). **Every item's
