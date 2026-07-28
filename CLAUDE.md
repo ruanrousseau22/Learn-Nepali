@@ -234,6 +234,15 @@ learning vs Religious studies (see Faith mode below). `switchMode` must call
    lessons ≥2 zones later, every option previously-taught recorded vocab,
    numeric targets with numeric distractors, one review per orphan. Applied
    to Lao July 2026 (orphans 201→93); the pattern is reusable per language.
+   **Register rule (Ruan, July 2026): teach what people actually SAY.**
+   Formal "please"-words (ne कृपया, ur برائے مہربانی, lo ກະລຸນາ) are
+   RECOGNITION-ONLY — glossed "(formal / signs)", explained in a culture
+   note, never production-drilled; politeness is carried by the language's
+   real mechanism (verb endings, हजुर, aap). Same for greetings: if the
+   textbook greeting isn't the street greeting (my mingalaba vs ne kaung
+   la), the note must say so. The July 2026 sweep verified every other
+   pack clean on greetings/please/imperatives — don't re-audit without
+   new information; details in HISTORY.md "Register relevance pass".
 10. **Shipping a new language checklist**: `lang/<code>.js` pack +
     `LANG_CATALOG` entry + secular art + `LANG_FLAGS` flag + audio dir +
     font in stacks if the script needs one + SEO refresh (title/description/

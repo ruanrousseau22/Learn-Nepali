@@ -2013,6 +2013,40 @@ Method that worked (mirror it exactly):
 8. Commit locally; never push without Ruan saying so.
 - Future content candidates (Ruan): Jesus' followers / Acts.
 
+### Register relevance pass (July 2026) — teach what people actually SAY
+Ruan's brief: no textbook-isms (his example: -nuhos vs the spoken -nus, fixed
+earlier), no slang either — relevant spoken language; faith mode understandable
+to the everyday person. A marker-grep sweep of all 11 course + 11 faith packs
+on the greeting / please / imperative axes found most packs already right
+(spoken Sinhala + the kohomada note, Mongolian -aarai imperatives, Lao ຂໍ/ແດ່
+with kaluna correctly framed "kindly", Pashto mehrabaani wokrra, Khmer សូម,
+Bengali teaching no artificial please, Javanese ngoko, Uzbek iltimos, Urdu
+aadaab labeled "respectful"). Three real findings, all FIXED:
+- **ne**: courtesy topic production-drilled कृपया as everyday "please" (mc +
+  3 tr) and five Intensive sentences calqued "कृपया X-नुस्". Now: recognition
+  -only with a "Where is please?" culture note; drills moved to हजुर/हुँदैन/
+  हुन्छ/ठीक छ (already recorded); Intensive sentences dropped कृपया (3 new
+  clips, strings 2357→2355).
+- **ur**: برائے مہربانی was glossed plain "please" (10 vocab+eg rows, matches,
+  meaning-mcs). Reglossed "please (formal)" + notes explaining Pakistanis say
+  the English word "please" or let keejiye carry it. Audio-neutral. (معاف
+  کیجیے is genuine spoken usage — 119 kijiye hits are almost all it; fine.)
+- **my (course)**: the script-zone note claimed mingalaba is "the everyday
+  Burmese greeting" — it's the polite/formal one; both greeting notes now
+  point at ne kaung la / "have you eaten?" as the street register. Notes
+  only — audio-neutral.
+**Still open, deliberately its own session: faith/my.js is 100% literary
+Burmese** (121 သည်။, 422 ၏, zero spoken တယ်။ — even the hero title). The
+storytelling-register rule and Ruan's everyday-person brief call for a spoken
+-style rewrite: all 181 strings + full audio-myf regeneration. The Khmer faith
+royal register (ទ្រង់/ព្រះអង្គ) was reviewed and KEPT — that is how Khmer
+Christians actually refer to God, universally understood. Nepali faith prayers
+keep -नुहोस् (how Nepali Christians actually pray).
+Same pass also shipped: faith mode now follows the current course language on
+entry (was: last faith language or ne), requeued wrong answers reshuffle their
+options (the _sh clone is stripped on requeue), and 71 orphan clips were
+deleted from audio/ (dir now equals manifest at 2355).
+
 ### Language-course audit (July 2026) — findings and standing rules
 A full health check ran over the language-learning side: 8 courses, ~3,100
 lessons, 24,742 exercises, 10,150 course clips, plus the lesson engine.
