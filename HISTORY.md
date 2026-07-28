@@ -2035,10 +2035,18 @@ aadaab labeled "respectful"). Three real findings, all FIXED:
   Burmese greeting" — it's the polite/formal one; both greeting notes now
   point at ne kaung la / "have you eaten?" as the street register. Notes
   only — audio-neutral.
-**Still open, deliberately its own session: faith/my.js is 100% literary
-Burmese** (121 သည်။, 422 ၏, zero spoken တယ်။ — even the hero title). The
-storytelling-register rule and Ruan's everyday-person brief call for a spoken
--style rewrite: all 181 strings + full audio-myf regeneration. The Khmer faith
+**DONE in the same July 2026 push: faith/my.js rewritten into SPOKEN
+Burmese.** It was 100% literary (121 သည်။, 422 ၏, zero spoken တယ်။ — even the
+hero title). All 181 paras/notes were re-registered by hand (သည်→တယ်/ပါတယ်,
+၏→ရဲ့, နှင့်→နဲ့, ၌→မှာ, ၍→ပြီး, ကျွန်ုပ်တို့→ကျွန်တော်တို့), plus the 17
+literary section titles, both story titles and the ui{} labels; honorific
+VOCABULARY kept (ကိုယ်တော်, ကြွလာ, မိန့်တော်မူ); the Lord's Prayer paras keep
+church first-person ကျွန်ုပ်တို့ deliberately (how Burmese Christians pray —
+same call as the Nepali -नुहोस् prayers); the serpent speaks familiar မင်း,
+God says သင်. Proof of fidelity: English [2] + refs byte-identical before/
+after; structure identical; 0 literary markers left in content. All 181
+audio-myf clips regenerated (same voice), 181 old clips deleted, dir ==
+manifest, --check MATCHES. The Khmer faith
 royal register (ទ្រង់/ព្រះអង្គ) was reviewed and KEPT — that is how Khmer
 Christians actually refer to God, universally understood. Nepali faith prayers
 keep -नुहोस् (how Nepali Christians actually pray).
