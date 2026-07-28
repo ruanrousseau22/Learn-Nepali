@@ -718,13 +718,14 @@ const NE_LESSONS = [
     {t:'wb',q:'Order by tens: 20 → 50',a:['बीस','तीस','चालीस','पचास'],r:'bees tees chaalees pachaas',pool:['चालीस','बीस','पचास','तीस']},
     {t:'tr',q:'Type "twenty"',a:'बीस',r:'bees'},
   ]},
-  {id:'courtesy',title:'Politeness',step:'learn',meta:'Yes, no & manners',vocab:[['हो','Ho','Yes (it is)'],['होइन','Hoina','No (it is not)'],['हुन्छ','Hunchha','Okay / Sure'],['हुँदैन','Hudaina','No / Not allowed'],['कृपया','Kripaya','Please'],['हजुर','Hajur','Yes? / Pardon? (polite)'],['ठीक छ','Theek chha','It is okay']],ex:[
+  {id:'courtesy',title:'Politeness',step:'learn',meta:'Yes, no & manners',vocab:[['हो','Ho','Yes (it is)'],['होइन','Hoina','No (it is not)'],['हुन्छ','Hunchha','Okay / Sure'],['हुँदैन','Hudaina','No / Not allowed'],['कृपया','Kripaya','please (formal / signs)'],['हजुर','Hajur','Yes? / Pardon? (polite)'],['ठीक छ','Theek chha','It is okay']],ex:[
     {t:'note',tag:'Culture',q:'हजुर — a magic polite word',body:'<p><span class="deva">हजुर</span> is used to say a respectful "yes", to answer when called, or to politely ask "pardon?" when you did not hear. It signals respect in almost any situation.</p>'},
+    {t:'note',tag:'Culture',q:'Where is "please"?',body:'<p>Nepali has a word for please — <span class="deva">कृपया</span> <b>kripaya</b> — but you will mostly meet it on signs and in announcements. In everyday speech nobody sprinkles it into requests: the politeness lives in the verb ending <span class="deva">-नुस्</span> and in <span class="deva">हजुर</span>, so a plain request already sounds polite.</p>',eg:[['कृपया','Kripaya','please (signs & announcements)'],['माफ गर्नुस्','Maaf garnus','excuse me — the -nus ending does the please']]},
     {t:'mc',q:'How do you say "Yes" (it is)?',o:['हो','होइन','छैन','हुन्छ'],a:0},
     {t:'li',q:'What did you hear?',say:'होइन',r:'Hoina',o:['Yes','No','Please','Okay'],a:1},
     {t:'mc',q:'What does "होइन" mean?',d:'होइन',r:'Hoina',o:['Yes','No','Maybe','Okay'],a:1},
     {t:'tr',q:'Translate: "okay / sure" (agreeing)',a:'हुन्छ',r:'Hunchha',h:'agreeing to do something'},
-    {t:'mc',q:'How do you say "Please"?',o:['कृपया','धन्यवाद','माफ','हजुर'],a:0},
+    {t:'mc',q:'How do you say "It is okay"?',o:['ठीक छ','होइन','हुँदैन','हजुर'],a:0},
     {t:'match',q:'Match the words',pairs:[['हो','Yes'],['होइन','No'],['हुन्छ','Okay / Sure'],['हजुर','Pardon? / Yes']]},
     {t:'fill',q:'Reply "yes, it is okay"',s:'हो, ___ छ',o:['ठीक','हुन्छ','कृपया','माफ'],a:0,r:'Ho, theek chha'},
     {t:'tr',q:'Translate: "Excuse me / sorry"',a:'माफ गर्नुस्',r:'Maaf garnus',h:'polite apology'},
@@ -747,7 +748,7 @@ const NE_LESSONS = [
   {id:'courtesy_3',title:'Build',step:'build',meta:'Reply politely',vocab:[],ex:[
     {t:'tr',q:'Type "yes (it is)"',a:'हो',r:'ho',h:'ho'},
     {t:'tr',q:'Type "no (it is not)"',a:'होइन',r:'hoina',h:'ho-i-na'},
-    {t:'tr',q:'Type "please"',a:'कृपया',r:'kripaya',h:'kri-pa-ya'},
+    {t:'tr',q:'Type "yes? / pardon?" (the polite answer)',a:'हजुर',r:'hajur',h:'ha-jur'},
     {t:'fill',q:'Answer "okay / sure"',s:'— जाने? — ___ (Okay / sure)',o:['हुन्छ','हुँदैन','होइन','हजुर'],a:0,r:'hunchha'},
     {t:'tr',q:'Type "okay / sure"',a:'हुन्छ',r:'hunchha'},
     {t:'mc',q:'A polite way to answer when called (like "yes?")',o:['हजुर','होइन','हुँदैन','कृपया'],a:0},
@@ -758,7 +759,7 @@ const NE_LESSONS = [
   ]},
   {id:'courtesy_4',title:'Mix',step:'mix',meta:'Polite replies in use',vocab:[],ex:[
     {t:'li',q:'What did you hear?',say:'हो',r:'Ho',o:['Yes (it is)','No','Please','Okay'],a:0},
-    {t:'tr',q:'Type "please"',a:'कृपया',r:'kripaya'},
+    {t:'tr',q:'Type "not allowed"',a:'हुँदैन',r:'hudaina',h:'hu-dai-na'},
     {t:'match',q:'Match to meaning',pairs:[['हुन्छ','Okay / Sure'],['हुँदैन','Not allowed'],['हजुर','Pardon? (polite)'],['ठीक छ','It is okay']]},
     {t:'fill',q:'Complete the phrase',s:'धेरै ___ = Thank you very much',o:['धन्यवाद','हो','कृपया','छ'],a:0,r:'dhanyabaad'},
     {t:'li',q:'What did you hear?',say:'होइन',r:'Hoina',o:['Yes','No (it is not)','Okay','Please'],a:1},
@@ -771,7 +772,7 @@ const NE_LESSONS = [
   {id:'courtesy_5',title:'Checkpoint',step:'checkpoint',meta:'Prove it — no hints',vocab:[],ex:[
     {t:'li',q:'What did you hear?',say:'हो',r:'Ho',o:['Yes (it is)','No','Please','Pardon'],a:0},
     {t:'mc',q:'What does this mean?',d:'होइन',r:'Hoina',o:['Yes','No (it is not)','Okay','Please'],a:1},
-    {t:'tr',q:'Type "please"',a:'कृपया',r:'kripaya'},
+    {t:'tr',q:'Type "okay / sure" (agreeing)',a:'हुन्छ',r:'hunchha'},
     {t:'match',q:'Match to meaning',pairs:[['हुन्छ','Okay / Sure'],['हुँदैन','Not allowed'],['हजुर','Pardon? (polite)'],['ठीक छ','It is okay']]},
     {t:'li',q:'What did you hear?',say:'हुन्छ',r:'Hunchha',o:['No','Okay / Sure','Please','Yes?'],a:1},
     {t:'tr',q:'Type "yes (it is)"',a:'हो',r:'ho'},
@@ -6367,7 +6368,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['जित्नु','to win'],['हार्नु','to lose'],['विजय','victory'],['प्रतिस्पर्धा','competition']]}
   ]},
 
-  {id:'li_w10d2_4',title:'Yell',step:'mix',vocab:[['कराउनु','karaaunu','to yell'],['कृपया नकराउनुस्','kripaya nakaraaunus','please don\u2019t yell'],['जब तपाईं कराउनुहुन्छ, मलाई रिस उठ्छ','jaba tapain karaaunuhunchha, malai ris uthchha','when you yell, it makes me angry']],ex:[
+  {id:'li_w10d2_4',title:'Yell',step:'mix',vocab:[['कराउनु','karaaunu','to yell'],['नकराउनुस्','nakaraaunus','please don\u2019t yell'],['जब तपाईं कराउनुहुन्छ, मलाई रिस उठ्छ','jaba tapain karaaunuhunchha, malai ris uthchha','when you yell, it makes me angry']],ex:[
     {t:'note',tag:'Raising your voice',q:'कराउनु = to yell',body:'<p><span class="deva">कराउनु</span> to yell / shout.</p><p>After the seventh time around Jericho, everyone <span class="deva">कराए</span> (yelled) &mdash; and the walls fell down!</p>'},
     {t:'mc',q:'What does कराउनु mean?',d:'कराउनु',r:'karaaunu',o:['to yell','to whisper','to sing','to walk'],a:0},
     {t:'li',q:'Listen &mdash; which verb?',say:'कराउनु',o:['to yell','to win','to lose','to walk'],a:0},
@@ -6539,11 +6540,11 @@ const NE_LESSONS = [
 
 
   /* ===================== WEEK 11 · DAY 1 — Evangelism: forgiveness ===================== */
-  {id:'li_w11d1',title:'Forgive',step:'learn',meta:'Talking about evangelism',vocab:[['माफ गर्नु','maaph garnu','to forgive'],['क्षमा गर्नु','kshama garnu','to forgive'],['क्षमा','kshama','forgiveness'],['कृपया मलाई माफ गर्नुस्','kripaya malai maaph garnus','please forgive me']],ex:[
+  {id:'li_w11d1',title:'Forgive',step:'learn',meta:'Talking about evangelism',vocab:[['माफ गर्नु','maaph garnu','to forgive'],['क्षमा गर्नु','kshama garnu','to forgive'],['क्षमा','kshama','forgiveness'],['मलाई माफ गर्नुस्','malai maaph garnus','please forgive me']],ex:[
     {t:'note',tag:'Forgiveness',q:'माफ गर्नु / क्षमा गर्नु = to forgive',body:'<p><span class="deva">माफ गर्नु</span> / <span class="deva">क्षमा गर्नु</span> to forgive &middot; <span class="deva">क्षमा</span> forgiveness.</p><p><span class="deva">जब हामी हृदयदेखि पश्चात्ताप गर्छौं, येशूले हाम्रा पाप क्षमा गर्नुहुन्छ</span> &mdash; when we truly repent, Jesus forgives our sins.</p>'},
     {t:'mc',q:'What does माफ गर्नु mean?',d:'माफ गर्नु',r:'maaph garnu',o:['to forgive','to find','to feed','to spend'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'क्षमा गर्नु',o:['to forgive','to preach','to repent','to answer'],a:0},
-    {t:'mc',q:'"Please forgive me" is:',o:['कृपया मलाई माफ गर्नुस्','कृपया शान्त हुनुस्','मलाई थाहा छैन','म जान्छु'],a:0},
+    {t:'mc',q:'"Please forgive me" is:',o:['मलाई माफ गर्नुस्','शान्त हुनुस्','मलाई थाहा छैन','म जान्छु'],a:0},
     {t:'mc',q:'"What has been the hardest thing to forgive?" &mdash; "forgive" is:',o:['माफ गर्नु','याद गर्नु','गुनासो गर्नु','प्रचार गर्नु'],a:0},
     {t:'fill',q:'Complete: "Jesus forgives our sins"',s:'येशूले हाम्रा पाप ___ गर्नुहुन्छ',o:['क्षमा','गुनासो','प्रचार','याद'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['माफ गर्नु','to forgive'],['क्षमा','forgiveness'],['पाप','sin'],['पश्चात्ताप','repentance']]}
@@ -6657,11 +6658,11 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['आँधी','storm'],['डुंगा','boat'],['समुद्र','sea'],['पुकार्नु','to cry out']]}
   ]},
 
-  {id:'li_w11d3_3',title:'Quiet & calm',step:'build',vocab:[['शान्त','shanta','quiet / calm'],['कृपया शान्त हुनुस्','kripaya shanta hunus','please be quiet'],['आँधी शान्त भयो','aadhi shanta bhayo','the storm calmed'],['तपाईंसँग हुँदा म शान्त महसुस गर्छु','tapainsanga hudaa ma shanta mahasus garchhu','when I\u2019m with you, I feel calm']],ex:[
+  {id:'li_w11d3_3',title:'Quiet & calm',step:'build',vocab:[['शान्त','shanta','quiet / calm'],['शान्त हुनुस्','shanta hunus','please be quiet'],['आँधी शान्त भयो','aadhi shanta bhayo','the storm calmed'],['तपाईंसँग हुँदा म शान्त महसुस गर्छु','tapainsanga hudaa ma shanta mahasus garchhu','when I\u2019m with you, I feel calm']],ex:[
     {t:'note',tag:'Two senses',q:'शान्त = quiet AND calm',body:'<p><span class="deva">शान्त</span> can mean <b>quiet</b> (a quiet person/place) or <b>calm</b> (the storm calmed; feeling peaceful).</p><p><span class="deva">तपाईंलाई शान्त महसुस गराउन केले मद्दत गर्छ?</span> &mdash; what helps you feel calm?</p>'},
     {t:'mc',q:'What does शान्त mean?',d:'शान्त',r:'shanta',o:['quiet / calm','loud','stormy','rich'],a:0},
     {t:'li',q:'Listen &mdash; which word?',say:'शान्त',o:['quiet / calm','storm','wonder','world'],a:0},
-    {t:'mc',q:'"Please be quiet" is:',o:['कृपया शान्त हुनुस्','कृपया माफ गर्नुस्','कृपया आउनुस्','कृपया जानुस्'],a:0},
+    {t:'mc',q:'"Please be quiet" is:',o:['शान्त हुनुस्','माफ गर्नुस्','आउनुस्','जानुस्'],a:0},
     {t:'mc',q:'"The storm calmed" &mdash; "calmed" is:',o:['शान्त भयो','आयो','गयो','भत्कियो'],a:0},
     {t:'mc',q:'Note the difference: शान्ति (W7) = peace; शान्त = ?',o:['quiet / calm','war','storm','sin'],a:0},
     {t:'match',q:'Match to meaning',pairs:[['शान्त','calm / quiet'],['शान्ति','peace'],['आँधी','storm'],['महसुस','to feel']]}
@@ -6848,7 +6849,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['घृणा','hate'],['माया','love'],['कर','tax'],['क्षमा','forgiveness']]}
   ]},
 
-  {id:'li_w12d2_2',title:'Gather',step:'recognize',vocab:[['भेला गर्नु','bhela garnu','to gather'],['जम्मा गर्नु','jamma garnu','to gather / collect'],['कृपया मानिसहरूलाई भेला गरिदिनुस्','kripaya maanisharulai bhela garidinus','please gather the people'],['मेरा सामानहरू जम्मा गर्नुपर्छ','mera saamanharu jamma garnuparchha','I need to gather my things']],ex:[
+  {id:'li_w12d2_2',title:'Gather',step:'recognize',vocab:[['भेला गर्नु','bhela garnu','to gather'],['जम्मा गर्नु','jamma garnu','to gather / collect'],['मानिसहरूलाई भेला गरिदिनुस्','maanisharulai bhela garidinus','please gather the people'],['मेरा सामानहरू जम्मा गर्नुपर्छ','mera saamanharu jamma garnuparchha','I need to gather my things']],ex:[
     {t:'note',tag:'Bringing together',q:'भेला गर्नु / जम्मा गर्नु = to gather',body:'<p><span class="deva">भेला गर्नु</span> / <span class="deva">जम्मा गर्नु</span> to gather / collect.</p><p><span class="deva">के तपाईं मैले सबै सामग्री जम्मा गरेको चाहनुहुन्छ?</span> &mdash; do you want me to gather all the ingredients?</p>'},
     {t:'mc',q:'What does भेला गर्नु mean?',d:'भेला गर्नु',r:'bhela garnu',o:['to gather','to hate','to grow','to ask'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'जम्मा गर्नु',o:['to gather / collect','to hate','to kick','to choose'],a:0},
@@ -7007,7 +7008,7 @@ const NE_LESSONS = [
     {t:'match',q:'Match to meaning',pairs:[['सबै कुरा','everything'],['सबैजना','everyone'],['विकल्प','option'],['पुग्नु','to be enough']]}
   ]},
 
-  {id:'li_w12d5_3',title:'Busy & distractions',step:'build',vocab:[['व्यस्त','byasta','busy'],['बाधा दिनु','baadha dinu','to interrupt / distract'],['बाधा','baadha','distraction / obstacle'],['कृपया बाधा नगर्नुस्','kripaya baadha nagarnus','please don\u2019t interrupt']],ex:[
+  {id:'li_w12d5_3',title:'Busy & distractions',step:'build',vocab:[['व्यस्त','byasta','busy'],['बाधा दिनु','baadha dinu','to interrupt / distract'],['बाधा','baadha','distraction / obstacle'],['बाधा नगर्नुस्','baadha nagarnus','please don\u2019t interrupt']],ex:[
     {t:'note',tag:'Busy & distracted',q:'व्यस्त & बाधा दिनु',body:'<p><span class="deva">व्यस्त</span> busy &middot; <span class="deva">बाधा दिनु</span> to interrupt / distract &middot; <span class="deva">बाधा</span> distraction.</p><p><span class="deva">केले बाधा रोकेर तपाईंलाई ध्यान दिन मद्दत गर्छ?</span> &mdash; what helps you cut out distractions and focus?</p>'},
     {t:'mc',q:'What does व्यस्त mean?',d:'व्यस्त',r:'byasta',o:['busy','free','calm','quiet'],a:0},
     {t:'li',q:'Listen &mdash; which phrase?',say:'बाधा दिनु',o:['to interrupt / distract','to focus','to choose','to gather'],a:0},
