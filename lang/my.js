@@ -281,7 +281,7 @@ const MY_LESSONS=[
 {t:'note',tag:'Your first words',q:'ရေ · လူ · ကောင်း',body:'<p>Sound these out — you can read them now! <span class="deva">ရေ</span> = <b>ye</b> (water) · <span class="deva">လူ</span> = <b>lu</b> (person) · <span class="deva">ကောင်း</span> = <b>kaung</b> (good).</p>',eg:[['ရေ','ye','water'],['လူ','lu','person'],['ကောင်း','kaung','good']]},
 {t:'mc',q:'What does ရေ mean?',d:'ရေ',o:['water','person','good','hello'],a:0},
 {t:'mc',q:'What does လူ mean?',d:'လူ',o:['person','water','good','tea'],a:0},
-{t:'note',tag:'Say hello',q:'မင်္ဂလာပါ',body:'<p>The everyday Burmese greeting is <span class="deva">မင်္ဂလာပါ</span> — <b>mingalaba</b>. Tap to hear it, then say it back.</p>',eg:[['မင်္ဂလာပါ','mingalaba','hello']]},
+{t:'note',tag:'Say hello',q:'မင်္ဂလာပါ',body:'<p><span class="deva">မင်္ဂလာပါ</span> — <b>mingalaba</b> — is the polite hello every visitor learns, and the one people will greet YOU with. Tap to hear it, then say it back.</p>',eg:[['မင်္ဂလာပါ','mingalaba','hello']]},
 {t:'mc',q:'How do you greet someone?',d:'မင်္ဂလာပါ',o:['mingalaba','ye','lu','kaung'],a:0},
 {t:'li',q:'Listen — which word?',say:'ရေ',o:['ရေ','လူ','ကောင်း','မင်္ဂလာပါ'],a:0}]},
 {id:'my_v2_2',title:'Hear the words',step:'recognize',meta:'ရေ လူ ကောင်း မင်္ဂလာပါ',vocab:[],ex:[
@@ -316,7 +316,7 @@ const MY_LESSONS=[
 /* ===================== ZONE 2 · FOUNDATIONS ===================== */
 /* --- Topic 1: greetings --- */
 {id:'my_greet',title:'Greetings',step:'learn',meta:'Hello, how are you & goodbye',vocab:[['မင်္ဂလာပါ','mingalaba','hello'],['နေကောင်းလား','ne kaung la','how are you'],['နေကောင်းပါတယ်','ne kaung ba de','I am well'],['သွားတော့မယ်','thwa daw meh','goodbye'],['တွေ့မယ်','twei meh','see you']],ex:[
-{t:'note',tag:'Zone 2',q:'Everyday Burmese',body:'<p>You can read now — time to <b>talk</b>. You already know <span class="deva">မင်္ဂလာပါ</span> <b>mingalaba</b> (hello). Let us add a few warm everyday lines.</p>',tip:'Keep tapping the speaker to copy the tones.'},
+{t:'note',tag:'Zone 2',q:'Everyday Burmese',body:'<p>You can read now — time to <b>talk</b>. You already know <span class="deva">မင်္ဂလာပါ</span> <b>mingalaba</b> — the polite, formal hello. Between themselves, Burmese people rarely say it: a warm <span class="deva">နေကောင်းလား</span> <b>ne kaung la</b> (are you well?) — or simply "have you eaten?" — is the real street greeting. This topic gives you both.</p>',tip:'Keep tapping the speaker to copy the tones.'},
 {t:'note',tag:'How are you?',q:'နေကောင်းလား',body:'<p><span class="deva">နေ</span> (ne) = to be / stay, <span class="deva">ကောင်း</span> (kaung) = well — you know it! — and <span class="deva">လား</span> (la) turns it into a yes/no question. So <span class="deva">နေကောင်းလား</span> = "Are you well?"</p><p>Reply: <span class="deva">နေကောင်းပါတယ်</span> <b>ne kaung ba de</b> — I am well.</p>',eg:[['နေကောင်းလား','ne kaung la','how are you'],['နေကောင်းပါတယ်','ne kaung ba de','I am well']]},
 {t:'mc',q:'Which means "How are you?"',o:['နေကောင်းလား','နေကောင်းပါတယ်','မင်္ဂလာပါ','တွေ့မယ်'],a:0},
 {t:'mc',q:'You are asked နေကောင်းလား. A good reply is…',d:'နေကောင်းလား',o:['နေကောင်းပါတယ်','မင်္ဂလာပါ','သွားတော့မယ်','တွေ့မယ်'],a:0},
