@@ -2292,7 +2292,9 @@ async function switchMode(m){
   closeModeMenu();
   if(document.getElementById('view-exercise').classList.contains('active'))return; /* never mid-lesson */
   if(m==='faith'){
-    const fcode=(FAITH&&FAITH.code)||'ne';
+    /* follow the course language the learner is looking at — a Burmese learner
+       tapping Religious studies gets the Burmese stories, not Nepali */
+    const fcode=FAITH_CATALOG.some(l=>l.code===LANG.code)?LANG.code:((FAITH&&FAITH.code)||'ne');
     if(LANG.code!==fcode)await switchLang(fcode); /* runs before S.mode flips, so the faith lock does not block it */
     if(LANG.code!==fcode)return;
     if(!FAITHS[fcode])await loadFaithScript(fcode);
@@ -2691,7 +2693,9 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
   if(ok){S.correct++;if(breakCombo)combo=0;else combo++;const mult=comboMult(combo);const gained=Math.round(base*(combo>0?mult:1));award(gained,ansEl);if(combo>=3){showCombo(combo,mult);playSound('combo');}else playSound('correct');card.classList.remove('pulse');void card.offsetWidth;card.classList.add('pulse');abBurst();}
   else{combo=0;playSound('wrong');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');const bar=document.getElementById('actionbar');bar.classList.remove('shake');void bar.offsetWidth;bar.classList.add('shake');}
   const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');
-  if(!ok&&LESSONS[curL].step!=='test')exQ.push(exQ[curE]); /* missed it? it comes back at the end */
+  /* missed it? it comes back at the end — without _sh, so renderEx deals the
+     options in a fresh order and it cannot be answered from remembered position */
+  if(!ok&&LESSONS[curL].step!=='test'){const rq=Object.assign({},exQ[curE]);delete rq._sh;exQ.push(rq);}
   try{if(S.sound&&navigator.vibrate)navigator.vibrate(ok?12:[45,60,45]);}catch(e){}
   phase='checked';const last=curE+1>=exQ.length;
   document.getElementById('actionbar').classList.add('checked',ok?'correct':'wrong');
