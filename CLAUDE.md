@@ -303,9 +303,10 @@ coordinates) is in HISTORY.md — these are the standing rules:
   — phones see the same picture smaller; use the full 0–1200 canvas; only
   the title safe zone constrains placement. `art-detail` is no longer hidden
   on phones.
-- The hero markup exists as **THREE verbatim copies** (home + both faith
-  pages) and the band as **FOUR** — edit via replace_all, apply art fixes to
-  all copies. Faith scene art is duplicated in ALL 11 faith packs.
+- The hero markup exists as **TWO verbatim copies** (home + the faith story
+  host view, July 2026 library refactor) and the band as **FOUR** — edit via
+  replace_all, apply art fixes to all copies. Faith scene art is duplicated
+  in ALL 11 faith packs.
 - Sun/orb sits right (cx≈1000–1090), never behind the title.
 - Judge icons blown up to ~40px before shipping; at 19px everything looks
   plausible.
@@ -377,10 +378,16 @@ surface** (hero h1 native, English the quiet second line). THREE story pages
 (God's Story: 10 sections + 11-beat overview; Jesus: 10 + overview;
 Jesus' Followers / Acts, id `facts`: 10 + 6-beat overview, July 2026 — all
 11 languages, 70 strings each, ends localized per country), no XP/exercises;
-progress per device in `sajilo_faith`. The Followers tab paints from
-`buildFaith()` and only shows when the loaded faith pack carries the story;
-`scratchpad build_acts.py` (session tooling, see HISTORY) inserted it with
-byte-identity asserts — packs now hold 251 spoken strings each.
+progress per device in `sajilo_faith` (ids unchanged by the library
+refactor). **Stories library (July 2026)**: faith nav is Stories · More ·
+Settings. `view-flib` lists every story in the loaded pack as a card
+(`buildFLib()`); `view-fstory` is the GENERIC HOST — `openStory(sid)` sets
+`FSTORY`, `applyFaithBrand()` paints the hero from the story's `ne`/`title`,
+`buildFaith()` renders only the current story. **Adding a story is now a
+pack-only change** (story object + art keys; no views, no tabs). Legacy ids
+fjesus/facts still route via `show()` → `openStory`. `scratchpad
+build_acts.py` (session tooling, see HISTORY) inserted the Acts story with
+byte-identity asserts — packs hold 251 spoken strings each.
 - Content: `faith/<code>.js`, `registerFaith({code, digits?, ui, stories})`;
   sections `{id,t,ne,art,note,paras:[[native,rom,english,ref?]]}` — the `ne`
   field name always holds the NATIVE string. All 11 languages are fully
