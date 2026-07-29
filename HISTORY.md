@@ -1769,8 +1769,9 @@ show('fjesus'/'facts') routes through openStory. **Adding a story is now a
 pack-only change**, proven the same day: the fourth collection **People God
 Used** (`flives` — overview + Joseph, 13 strings, 2 art keys gY1/gY2) went
 into faith/ne.js with ZERO index.html edits and rendered/played end-to-end.
-Collection plan: Joseph shipped; Moses, Ruth, David, Elijah, Daniel, Jonah,
-Esther to follow section-by-section, then per-language rollout (the EN in
+**The full collection shipped in Nepali the same day**: Joseph, Moses, Ruth,
+David, Elijah, Daniel, Jonah, Esther — 8 lives, 62 spoken strings, art keys
+gY1-gY2 + gZ1-gZ7, nef at 313 strings. Next: per-language rollout (the EN in
 faith/ne.js is the byte-identity master, as with Acts).
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
