@@ -1759,6 +1759,29 @@ course language now has a skeleton pack and the faith picker lists all 8
   Filling in a language = translate its `faith/<code>.js` (ui strings,
   story/section `ne` titles, `note` triples, `paras`), then regen audio.
 
+### Stories library + People God Used pilot (July 2026)
+The per-story faith tabs hit their ceiling at three, so faith nav became
+**Stories · More · Settings**: `view-flib` lists every story in the loaded
+pack as a card, and `view-fstory` became the GENERIC HOST — `openStory(sid)`
+sets `FSTORY` and the hero paints from the story's own `ne`/`title`. The
+fjesus/facts views were deleted (hero copies 4 -> 2: home + host); legacy
+show('fjesus'/'facts') routes through openStory. **Adding a story is now a
+pack-only change**, proven the same day: the fourth collection **People God
+Used** (`flives` — overview + Joseph, 13 strings, 2 art keys gY1/gY2) went
+into faith/ne.js with ZERO index.html edits and rendered/played end-to-end.
+Collection plan: Joseph shipped; Moses, Ruth, David, Elijah, Daniel, Jonah,
+Esther to follow section-by-section, then per-language rollout (the EN in
+faith/ne.js is the byte-identity master, as with Acts).
+**Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
+had been scaffolded with `python3 -m http.server` — the exact server the
+repo forbids — so the browser heuristic-cached faith/ne.js and served a
+stale pack through several force-reloads (the entry, created hours earlier,
+stayed "fresh" and never revalidated). Fixed by rewriting the worktree
+launch.json to run `devserver.py`; in ANY new worktree, check launch.json
+runs devserver.py before trusting the preview, and remember a cached entry
+from a bad server can outlive the server switch — verify with
+`fetch(url,{cache:'no-store'})` when in doubt.
+
 ### Third faith story: Jesus' Followers / Acts (July 2026) — ALL 11 SHIPPED
 The Acts story went from outline to all eleven languages in one session,
 after the Resources ('More') page shipped the same day. What exists now:
