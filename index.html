@@ -1076,12 +1076,12 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fprev-spacer{width:64px}
 /* Fraunces at 54px auto-opsz turns hairline-thin & wonky — pin the Jesus hero
    title to a calmer optical size so it reads solid, not wrinkled */
-#view-fjesus .hero-text h1{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}
+#view-fjesus .hero-text h1,#view-facts .hero-text h1{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}
 /* Faith heroes lead with the NATIVE title (July 2026), so the h1 needs the
    multi-script stack — Fraunces/.display has no Devanagari, Khmer, Myanmar,
    Sinhala, Lao or Arabic glyphs. Id-scoped so it beats .display. */
-#view-fstory .hero-text h1,#view-fjesus .hero-text h1{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic','Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.01em}
-#view-fstory .hero-fsub,#view-fjesus .hero-fsub{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+#view-fstory .hero-text h1,#view-fjesus .hero-text h1,#view-facts .hero-text h1{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic','Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.01em}
+#view-fstory .hero-fsub,#view-fjesus .hero-fsub,#view-facts .hero-fsub{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
 /* Faith · More — the separate external-resources page */
 .fmore-head{max-width:560px;margin:0 auto 16px}
 .fmore-head h2{margin:0 0 6px}
@@ -1114,6 +1114,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
       <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
       <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
+      <button class="tab faith-tab" data-v="facts" onclick="show('facts')">Followers</button>
       <button class="tab faith-tab" data-v="fmore" onclick="show('fmore')">More</button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
@@ -1440,6 +1441,58 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </div>
   </div>
   <div class="wrap section" style="padding-top:4px"><div id="fjesus-root"></div></div>
+</section>
+<section class="view" id="view-facts">
+  <div class="hero">
+    <svg class="hero-mtns" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="930" cy="122" r="76"/>
+      <circle class="orb" cx="930" cy="122" r="46"/>
+      <g class="hero-stars" aria-hidden="true">
+        <circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/>
+        <circle cx="240" cy="104" r="1.2"/>
+        <circle cx="360" cy="46" r="2"/>
+        <circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/>
+        <circle cx="560" cy="70" r="1.6"/>
+        <circle cx="675" cy="40" r="1.3" class="tw" style="animation-delay:.6s"/>
+        <circle cx="785" cy="112" r="1.8"/>
+        <circle cx="870" cy="150" r="1.3"/>
+        <circle cx="1015" cy="62" r="1.6" class="tw" style="animation-delay:1.8s"/>
+        <circle cx="1085" cy="118" r="1.4"/>
+        <circle cx="1130" cy="44" r="1.2"/>
+        <circle cx="175" cy="138" r="1.5"/>
+        <circle cx="320" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/>
+        <circle cx="620" cy="134" r="1.5"/>
+      </g>
+      <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
+      <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
+      <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
+      <path class="far" d="M0 252 Q150 246 300 249 Q220 250 370 247 L448 242 L518 232 L566 166 L624 198 L675 132 L745 178 L815 102 L885 170 L955 118 L1010 190 L1056 138 L1090 176 L1150 108 L1200 190 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="555.8 180.0 566.0 166.0 591.4 180.0 582.1 178.0 574.3 185.0 566.5 179.0 560.8 183.0"/>
+      <polygon class="snow" points="660.3 151.0 675.0 132.0 703.9 151.0 692.6 149.0 683.0 156.0 673.4 150.0 666.4 154.0"/>
+      <polygon class="snow" points="795.7 123.0 815.0 102.0 836.6 123.0 826.0 121.0 817.0 128.0 807.9 122.0 801.4 126.0"/>
+      <polygon class="snow" points="929.4 137.0 955.0 118.0 969.5 137.0 959.1 135.0 950.3 142.0 941.5 136.0 935.0 140.0"/>
+      <polygon class="snow" points="1036.5 160.0 1056.0 138.0 1075.7 160.0 1065.5 158.0 1056.9 165.0 1048.3 159.0 1042.0 163.0"/>
+      <polygon class="snow" points="1127.1 134.0 1150.0 108.0 1165.9 134.0 1155.8 132.0 1147.2 139.0 1138.7 133.0 1132.5 137.0"/>
+      <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
+      <path class="mid" d="M640 320 L640 306 Q710 274 800 258 Q900 242 1010 268 Q1110 290 1200 296 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M700 306 Q880 282 1060 296 L1058 302 Q880 290 704 312 Z"/>
+      <path class="snow" opacity=".26" d="M760 294 Q900 272 1040 284 L1038 290 Q900 280 764 300 Z"/>
+      <path class="snow" opacity=".26" d="M820 278 Q920 262 1020 274 L1018 280 Q920 268 824 284 Z"/>
+            <g class="near">
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
+        </g>
+      <g transform="translate(176,230)" aria-hidden="true"><path fill="var(--slate)" d="M18 52 L18 40 L25 40 L25 52 Z M29 52 L29 40 L36 40 L36 52 Z M54 52 L54 40 L61 40 L61 52 Z M64 52 L64 40 L71 40 L71 52 Z"/><path class="snow" d="M8 36 Q4 16 22 11 Q34 1 52 4 Q70 7 76 20 L78 36 Q72 50 66 38 Q59 51 52 38 Q45 51 38 38 Q31 51 24 38 Q16 49 8 36 Z"/><path fill="var(--slate)" d="M76 20 Q90 19 92 29 Q93 38 84 39 L76 35 Z"/><path fill="var(--slate)" d="M7 20 Q-2 28 0 40 L4 39 Q2 29 10 24 Z"/><path fill="var(--tyre)" d="M78 17 Q83 6 93 6 Q85 11 83 19 Z M87 18 Q95 10 101 13 Q93 16 90 23 Z"/><path fill="var(--tyre)" d="M18 52 L25 52 L25 49 L18 49 Z M29 52 L36 52 L36 49 L29 49 Z M54 52 L61 52 L61 49 L54 49 Z M64 52 L71 52 L71 49 L64 49 Z"/><path fill="var(--tyre)" opacity=".5" d="M87 32 Q93 32 93 36 Q92 39 86 38 Z"/><circle fill="var(--tyre)" cx="85" cy="27" r="1.8"/></g>
+      <g transform="translate(292,237) scale(0.82)" aria-hidden="true"><path fill="var(--slate)" d="M18 52 L18 40 L25 40 L25 52 Z M29 52 L29 40 L36 40 L36 52 Z M54 52 L54 40 L61 40 L61 52 Z M64 52 L64 40 L71 40 L71 52 Z"/><path class="snow" d="M8 36 Q4 16 22 11 Q34 1 52 4 Q70 7 76 20 L78 36 Q72 50 66 38 Q59 51 52 38 Q45 51 38 38 Q31 51 24 38 Q16 49 8 36 Z"/><path fill="var(--slate)" d="M76 20 Q90 19 92 29 Q93 38 84 39 L76 35 Z"/><path fill="var(--slate)" d="M7 20 Q-2 28 0 40 L4 39 Q2 29 10 24 Z"/><path fill="var(--tyre)" d="M78 17 Q83 6 93 6 Q85 11 83 19 Z M87 18 Q95 10 101 13 Q93 16 90 23 Z"/><path fill="var(--tyre)" d="M18 52 L25 52 L25 49 L18 49 Z M29 52 L36 52 L36 49 L29 49 Z M54 52 L61 52 L61 49 L54 49 Z M64 52 L71 52 L71 49 L64 49 Z"/><path fill="var(--tyre)" opacity=".5" d="M87 32 Q93 32 93 36 Q92 39 86 38 Z"/><circle fill="var(--tyre)" cx="85" cy="27" r="1.8"/></g>
+      <g aria-hidden="true"><g transform="translate(46,291) scale(0.9)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(96,287)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(140,284) scale(0.8)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1054,282) scale(0.85)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1100,280) scale(1.05)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1150,281) scale(0.9)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g></g>
+    </svg>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="display deva">येशूका चेलाहरू</h1>
+        <div class="hero-fsub">Jesus’ Followers</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:4px"><div id="facts-root"></div></div>
 </section>
 <!-- Faith · More: external resources page — deliberately SEPARATE from the
      stories (Ruan, July 2026). The reader never links out mid-story; everything
@@ -1879,7 +1932,10 @@ function show(v){if(v==='intensive'&&!hasIntensive())v='home';
   if(v==='trip'&&!(LANG&&LANG.trip))v='home';
   if(S.mode==='faith'&&typeof fstopAll==='function')fstopAll();
   if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'||v==='trip'))v='fstory'; /* faith mode replaces the course pages */
-  if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'||v==='fmore'))v='home';
+  if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'||v==='facts'||v==='fmore'))v='home';
+  /* a faith pack that has not received the Followers story yet (or a cached
+     old pack) must never show an empty page */
+  if(v==='facts'&&!(typeof FAITH!=='undefined'&&FAITH&&(FAITH.stories||[]).some(s=>s.id==='facts')))v=S.mode==='faith'?'fstory':'home';
   if(v==='fmore')buildFMore();
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
@@ -2308,7 +2364,7 @@ async function switchFaithLang(code){
   /* capture which faith page is open BEFORE switchLang runs — it ends in
      show('home'), which lands on fstory and would otherwise erase the answer */
   const act=document.querySelector('.view.active');
-  const stay=act&&act.id==='view-fjesus'?'fjesus':(act&&act.id==='view-fmore'?'fmore':'fstory');
+  const stay=act&&act.id==='view-fjesus'?'fjesus':(act&&act.id==='view-facts'?'facts':(act&&act.id==='view-fmore'?'fmore':'fstory'));
   fstopAll();
   if(!FAITHS[code])await loadFaithScript(code);
   if(!FAITHS[code])return; /* failed load: stay put */
@@ -2320,13 +2376,13 @@ async function switchFaithLang(code){
 }
 let FHERO_DEF=null; /* built-in faith-page hero art + headings (Nepali), captured once */
 function applyFaithBrand(){
-  const vs={fstory:document.getElementById('view-fstory'),fjesus:document.getElementById('view-fjesus')};
-  if(!FHERO_DEF&&vs.fstory){FHERO_DEF={};['fstory','fjesus'].forEach(function(k){const v=vs[k];if(!v)return;
+  const vs={fstory:document.getElementById('view-fstory'),fjesus:document.getElementById('view-fjesus'),facts:document.getElementById('view-facts')};
+  if(!FHERO_DEF&&vs.fstory){FHERO_DEF={};['fstory','fjesus','facts'].forEach(function(k){const v=vs[k];if(!v)return;
     const m=v.querySelector('.hero-mtns'),h=v.querySelector('.hero-text h1'),sub=v.querySelector('.hero-fsub');
     FHERO_DEF[k]={art:m?m.innerHTML:'',h1:h?h.innerHTML:'',sub:sub?sub.textContent:''};});}
   const isNe=!FAITH||FAITH.code==='ne';
   const pk=(typeof PACKS!=='undefined')&&PACKS[FAITH?FAITH.code:'ne'];
-  ['fstory','fjesus'].forEach(function(k){
+  ['fstory','fjesus','facts'].forEach(function(k){
     const v=vs[k];if(!v||!FHERO_DEF||!FHERO_DEF[k])return;
     const m=v.querySelector('.hero-mtns'),h=v.querySelector('.hero-text h1'),sub=v.querySelector('.hero-fsub');
     const st=(FAITH&&FAITH.stories||[]).find(x=>'view-'+x.id==='view-'+k)|| (FAITH&&FAITH.stories||[]).find(x=>x.id===k);
@@ -2444,7 +2500,11 @@ function paintFPlay(){const b=document.getElementById('fplay-btn');if(!b)return;
     ?'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg><span class="deva">'+fui('stop')+'</span>'
     :'<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 5 L19 12 L7 19 Z" fill="currentColor"/></svg><span class="deva">'+fui('play')+'</span>';}
 function setFRom(v){fstopAll();S.fRom=v;save();buildFaith();}
-function buildFaith(){if(!FAITH)return;(FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(!el)return;
+function buildFaith(){if(!FAITH)return;
+  /* Followers tab only when this faith pack carries the story */
+  const ft=document.querySelector('.tab[data-v="facts"]');
+  if(ft)ft.style.display=(FAITH.stories||[]).some(s=>s.id==='facts')?'':'none';
+  (FAITH.stories||[]).forEach(function(st){const el=document.getElementById(st.id+'-root');if(!el)return;
   el.innerHTML=(FVIEW&&FVIEW.sid===st.id)?freadHTML(st,FVIEW.i):fnodesHTML(st);});}
 const DDIG=['०','१','२','३','४','५','६','७','८','९'];
 function devNum(n){return String(n).split('').map(c=>DDIG[c]||c).join('');}
