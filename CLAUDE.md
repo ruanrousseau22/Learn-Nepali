@@ -393,6 +393,12 @@ XP/exercises; progress per device in `sajilo_faith`.
   `faithBase()` = `audio-<code>f/`. Language is locked while in faith mode;
   the faith picker lists `FAITH_CATALOG`. Pickers stay English (navigation);
   content is native-first.
+- **More page (July 2026)**: faith mode's third tab (`view-fmore`,
+  `FAITH_RESOURCES` map + `buildFMore()` in index.html) — per-language links
+  to the real Bible (bible.com language pages; ps → afghanbibles.org) and
+  the JESUS Film, every URL curl-verified. **ALL external links live on this
+  page ONLY (Ruan): the story reader never links out; scripture refs stay
+  plain text.** English/LTR page (navigation register) even for ur/ps.
 - Audio: `extract_audio_strings.js <code>f` → `generate_audio.py --lang
   <code>f` (same voices as the course). `playFile` checks the course
   manifest FIRST, then faith keys — re-check hash collisions if clips are

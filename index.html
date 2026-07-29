@@ -1082,6 +1082,21 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
    Sinhala, Lao or Arabic glyphs. Id-scoped so it beats .display. */
 #view-fstory .hero-text h1,#view-fjesus .hero-text h1{font-family:'Noto Sans Devanagari','Noto Sans Khmer','Noto Sans Bengali','Noto Sans Myanmar','Noto Sans Sinhala','Noto Sans Lao','Noto Sans Arabic','Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:-.01em}
 #view-fstory .hero-fsub,#view-fjesus .hero-fsub{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+/* Faith · More — the separate external-resources page */
+.fmore-head{max-width:560px;margin:0 auto 16px}
+.fmore-head h2{margin:0 0 6px}
+.fmore-sub{margin:0;color:var(--ink-soft);font-size:14.5px}
+.fmore-cards{display:flex;flex-direction:column;gap:12px;max-width:560px;margin:0 auto}
+.fmore-card{display:flex;align-items:center;gap:14px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:14px;padding:15px 18px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.fmore-card:hover{border-color:var(--crimson)}
+.fmore-card .fm-ic{flex:none;width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--crimson) 10%,transparent);color:var(--crimson)}
+.fmore-card .fm-tx{flex:1;min-width:0}
+.fmore-card .fm-t{display:block;font-weight:700;font-size:15.5px}
+.fmore-card .fm-d{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
+.fmore-card .fm-arrow{flex:none;color:var(--ink-soft)}
+.fmore-note{max-width:560px;margin:16px auto 0;font-size:12.5px;color:var(--ink-soft)}
+/* the page is English navigation — keep it LTR even under RTL languages */
+:root[data-lang="ps"] #view-fmore,:root[data-lang="ur"] #view-fmore{direction:ltr}
 </style>
 </head>
 <body>
@@ -1099,6 +1114,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <button class="tab" data-v="review" onclick="show('review')">Review<span class="tab-badge" id="review-badge"></span></button>
       <button class="tab faith-tab" data-v="fstory" onclick="show('fstory')">God&rsquo;s Story</button>
       <button class="tab faith-tab" data-v="fjesus" onclick="show('fjesus')">Jesus</button>
+      <button class="tab faith-tab" data-v="fmore" onclick="show('fmore')">More</button>
       <button class="tab" data-v="settings" onclick="show('settings')">Settings</button>
     </nav>
     <div style="display:flex;gap:8px;align-items:center">
@@ -1424,6 +1440,19 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     </div>
   </div>
   <div class="wrap section" style="padding-top:4px"><div id="fjesus-root"></div></div>
+</section>
+<!-- Faith · More: external resources page — deliberately SEPARATE from the
+     stories (Ruan, July 2026). The reader never links out mid-story; everything
+     external (the real Bible, the JESUS Film) lives here and only here. -->
+<section class="view" id="view-fmore">
+  <div class="wrap section" style="padding-top:30px">
+    <div class="fmore-head">
+      <h2>Go deeper</h2>
+      <p class="fmore-sub" id="fmore-sub"></p>
+    </div>
+    <div class="fmore-cards" id="fmore-root"></div>
+    <p class="fmore-note">These are trusted outside resources — they open in a new tab. The stories in this app are retellings; these links take you to the full Bible itself.</p>
+  </div>
 </section>
 
 <section class="view" id="view-intensive">
@@ -1850,7 +1879,8 @@ function show(v){if(v==='intensive'&&!hasIntensive())v='home';
   if(v==='trip'&&!(LANG&&LANG.trip))v='home';
   if(S.mode==='faith'&&typeof fstopAll==='function')fstopAll();
   if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'||v==='trip'))v='fstory'; /* faith mode replaces the course pages */
-  if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'))v='home';
+  if(S.mode!=='faith'&&(v==='fstory'||v==='fjesus'||v==='fmore'))v='home';
+  if(v==='fmore')buildFMore();
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===v));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
   if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});}
@@ -2226,6 +2256,38 @@ const FAITH_CATALOG=[
   {code:'ur',label:'Urdu — اردو'},
   {code:'uz',label:'Uzbek — Oʻzbekcha'},
 ];
+/* ----- Faith · More: per-language external resources (URLs verified July
+   2026). ALL outside links live on this page and nowhere else — the story
+   reader never links out (Ruan: keep resources separate from the material). */
+const FAITH_RESOURCES={
+  ne:{bible:'https://www.bible.com/languages/npi',film:'https://www.jesusfilm.org/watch/jesus.html/nepali.html'},
+  km:{bible:'https://www.bible.com/languages/khm',film:'https://www.jesusfilm.org/watch/jesus.html/khmer-standard.html'},
+  my:{bible:'https://www.bible.com/languages/mya',film:'https://www.jesusfilm.org/watch/jesus.html/burmese-standard.html'},
+  bn:{bible:'https://www.bible.com/languages/ben',film:'https://www.jesusfilm.org/watch/jesus.html/bengali-indian.html'},
+  si:{bible:'https://www.bible.com/languages/sin',film:'https://www.jesusfilm.org/watch/jesus.html/sinhala.html'},
+  lo:{bible:'https://www.bible.com/languages/lao',film:'https://www.jesusfilm.org/watch/jesus.html/lao.html'},
+  ps:{bible:'https://afghanbibles.org/pus/pashto-bible',film:'https://www.jesusfilm.org/watch/jesus.html/pashto-southern.html'},
+  mn:{bible:'https://www.bible.com/languages/khk',film:'https://www.jesusfilm.org/watch/jesus.html/mongolian-halh.html'},
+  ur:{bible:'https://www.bible.com/languages/urd',film:'https://www.jesusfilm.org/watch/jesus.html/urdu.html'},
+  uz:{bible:'https://www.bible.com/languages/uzb',film:'https://www.jesusfilm.org/watch/jesus.html/uzbek-northern.html'},
+  jv:{bible:'https://www.bible.com/languages/jav',film:'https://www.jesusfilm.org/watch/jesus.html/javanese.html'},
+};
+function buildFMore(){
+  const root=document.getElementById('fmore-root');if(!root)return;
+  const code=(FAITH&&FAITH.code)||'ne';
+  const R=FAITH_RESOURCES[code];
+  const name=(LANG&&LANG.name)||'your language';
+  const sub=document.getElementById('fmore-sub');
+  if(sub)sub.textContent='Real, trusted resources in '+name+' — the next step after these stories.';
+  if(!R){root.innerHTML='';return;}
+  const book='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10 4.9 7.4 4.5 4 4.5v13.7c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V4.5c-3.4 0-6 .4-8 2z"/><path d="M12 6.5v13.7"/></svg>';
+  const play='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5 L16 12 L10 15.5 Z"/></svg>';
+  const arrow='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 L17 7M9 7h8v8"/></svg>';
+  const card=(url,ic,t,d)=>'<a class="fmore-card" href="'+url+'" target="_blank" rel="noopener"><span class="fm-ic">'+ic+'</span><span class="fm-tx"><span class="fm-t">'+t+'</span><span class="fm-d">'+d+'</span></span><span class="fm-arrow">'+arrow+'</span></a>';
+  root.innerHTML=
+    card(R.bible,book,'The Bible in '+name,'Read the full Bible in '+name+' — many translations, most with audio.')
+   +card(R.film,play,'The JESUS Film in '+name,'Watch the life of Jesus, drawn from Luke, spoken in '+name+'.');
+}
 let FAITH=null,FAITH_KEYS=new Set();
 const FAITHS={}; /* every loaded faith pack by code; FAITH = the active one */
 function registerFaith(p){FAITHS[p.code]=p;if(!FAITH||FAITH.code===p.code)FAITH=p;}
@@ -2243,6 +2305,10 @@ function loadFaithManifest(){FAITH_KEYS=new Set();return fetch(faithBase()+'mani
    digits[] where the script has native numerals. ----- */
 async function switchFaithLang(code){
   if(FAITH&&FAITH.code===code)return;
+  /* capture which faith page is open BEFORE switchLang runs — it ends in
+     show('home'), which lands on fstory and would otherwise erase the answer */
+  const act=document.querySelector('.view.active');
+  const stay=act&&act.id==='view-fjesus'?'fjesus':(act&&act.id==='view-fmore'?'fmore':'fstory');
   fstopAll();
   if(!FAITHS[code])await loadFaithScript(code);
   if(!FAITHS[code])return; /* failed load: stay put */
@@ -2250,8 +2316,7 @@ async function switchFaithLang(code){
   if(LANG.code!==code)return;
   FAITH=FAITHS[code];FVIEW=null;
   loadFaithDone();await loadFaithManifest();applyFaithBrand();buildFaith();paintHomeLangSwitch();
-  const act=document.querySelector('.view.active');
-  show(act&&act.id==='view-fjesus'?'fjesus':'fstory');
+  show(stay);
 }
 let FHERO_DEF=null; /* built-in faith-page hero art + headings (Nepali), captured once */
 function applyFaithBrand(){
