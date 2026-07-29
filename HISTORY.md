@@ -1759,6 +1759,54 @@ course language now has a skeleton pack and the faith picker lists all 8
   Filling in a language = translate its `faith/<code>.js` (ui strings,
   story/section `ne` titles, `note` triples, `paras`), then regen audio.
 
+### Third faith story: Jesus' Followers / Acts (July 2026) — ALL 11 SHIPPED
+The Acts story went from outline to all eleven languages in one session,
+after the Resources ('More') page shipped the same day. What exists now:
+- **Story id `facts`**, tab label "Followers": 6-para overview + 10 sections
+  (await, pentecost, together, boldness, scattered, damascus, cornelius,
+  sent, chains, ends), 54 paras + 10 notes = **70 spoken strings per
+  language**, every para carrying its Acts/Revelation reference. The ends
+  section's paras 2-3 are the ONLY localized text (country name, native AND
+  English) — the review asserts exactly two EN diffs vs the ne master.
+- **Engine**: view-facts cloned from view-fjesus (a FOURTH hero copy now
+  exists — replace_all count is 4 for hero edits, 3 for faith-only), tab in
+  the faith nav, show() guards, FHERO_DEF/applyFaithBrand/switchFaithLang
+  extended. **Rollout guard**: buildFaith() shows the Followers tab only when
+  the loaded pack carries the story, and show('facts') falls back to fstory —
+  so a cached old pack can never render an empty page.
+- **Art**: 11 new shared scene emblems appended to every F*_ART (keys ovacts,
+  await..ends; gradient ids gW1-gW11 — gA-gV were taken). Scenes and symbols
+  only, no figures.
+- **Method (reusable for the next story collection)**: English master + ne
+  authored first (scratchpad acts_ne.json), then per-language JSONs of
+  [native, rom, en, ref] applied by a builder script that ASSERTS: para count
+  and section shape vs master, EN/refs byte-identity (minus the 2 localized),
+  no ' " < > \ anywhere, roms ASCII+typographic-punct, and — after it caught
+  real mistakes — a per-language Unicode-block whitelist on native strings.
+  That last check caught Bengali characters inside a Sinhala line and ~60
+  Thai homoglyphs typed into Lao (เ/ค/ม for ເ/ຄ/ມ...), fixed by a Thai→Lao
+  homoglyph map plus word-level fixes (ครู→ຄູ, แผล→ແຜ, เช่า→ເຊົ່າ, ต่อ→ຕໍ່).
+  **Any future multi-script authoring should run this check.** Pack tails
+  differ (ne-style `]});` vs ur-style JSON with trailing comma) — the builder
+  handles three tail shapes.
+- **Vocabulary/register per language**: each translation was anchored by
+  grep-probing the pack's existing 181 strings for its established church
+  terms, then Bible-tradition name forms per language (my: Judson ပေတရု/
+  ပေါလု; km: KSV ពេត្រុស/ប៉ុល with royal ទ្រង់; bn: BSI পিতর/পৌল Kolkata
+  cholito; si: spoken register with un wahanse; lo: Pha Chao/Pha Ong light
+  honorifics; ps: Afghan پطروس/پولوس; mn: Петр/Паул + чуулган; ur: پطرس/
+  پولس + کلیسیا; uz: Butrus/Pavlus + Quddus + jamoat; jv: Petrus/Paulus +
+  pasamuwan, ngoko base with krama inggil for God/Jesus). Church-word choices
+  new to the packs: my အသင်းတော်, bn মণ্ডলী, si සභාව, lo ຄຣິສຕະຈັກ, ps
+  کلیسا, jv pasamuwan.
+- **Audio**: 70 clips generated per language (770 total, 0 failures across
+  all runs); every faith pack now holds 251 strings, all 11 --check MATCH,
+  all 11 manifests equal their directories.
+- Verified in the browser (ne, km, jv sampled): node path renders, reader
+  opens, clips serve. As with the whole faith mode, this is research-anchored
+  translation, not native review — a native speaker spot-check per language
+  remains worthwhile.
+
 ### Faith translation backlog (July 2026 — READ THIS BEFORE TRANSLATING)
 **Done:** ne (original source), **bn** (Kolkata Bengali, 178 clips in
 `audio-bnf/`), **my** (Burmese, 178 clips in `audio-myf/`), **km** (Khmer,

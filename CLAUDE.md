@@ -373,9 +373,14 @@ which rules and sentences matter MORE here than elsewhere?
 
 Christian by design (the secular rule does not apply here). Audience:
 speakers of each language learning about Jesus — **native-first on every
-surface** (hero h1 native, English the quiet second line). Two story pages
-(God's Story: 10 sections + 11-beat overview; Jesus: 10 + overview), no
-XP/exercises; progress per device in `sajilo_faith`.
+surface** (hero h1 native, English the quiet second line). THREE story pages
+(God's Story: 10 sections + 11-beat overview; Jesus: 10 + overview;
+Jesus' Followers / Acts, id `facts`: 10 + 6-beat overview, July 2026 — all
+11 languages, 70 strings each, ends localized per country), no XP/exercises;
+progress per device in `sajilo_faith`. The Followers tab paints from
+`buildFaith()` and only shows when the loaded faith pack carries the story;
+`scratchpad build_acts.py` (session tooling, see HISTORY) inserted it with
+byte-identity asserts — packs now hold 251 spoken strings each.
 - Content: `faith/<code>.js`, `registerFaith({code, digits?, ui, stories})`;
   sections `{id,t,ne,art,note,paras:[[native,rom,english,ref?]]}` — the `ne`
   field name always holds the NATIVE string. All 11 languages are fully
