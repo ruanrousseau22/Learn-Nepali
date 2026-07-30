@@ -1057,12 +1057,31 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 /* mobile overrides MUST come after the base rules above — same specificity, so
    source order decides. Placed earlier they silently lost and the thumbnail
    stayed 96px, squeezing story titles into ~92px and wrapping them 3-4 lines. */
+.fnode-chev{display:none}
 @media(max-width:560px){
   .flib-arc::before{left:24px}
   .flib-seq{width:19px;height:19px;font-size:11px}
   .fnode{gap:11px;padding:11px 12px}
   .fnode-art{width:66px;height:48px}
   .fnode-t{font-size:1rem;line-height:1.55}
+}
+/* narrow phones: library cards only — story-section nodes keep their word */
+@media(max-width:430px){
+  #flib-root .fnode-go{display:none}
+  #flib-root .fnode-chev{flex:none;display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;
+    font-size:19px;line-height:1;padding-bottom:3px}
+  #flib-root .fnode-art{width:58px;height:42px}
+  #flib-root .fnode{gap:9px;padding:10px}
+}
+/* 320px phones: the card is only 288px wide and its chrome (number, thumbnail,
+   chevron, four gaps) eats 153px of it, so long native titles wrap to three
+   lines. Squeeze the chrome — 18px back into the title column takes mn's
+   longest title to two lines; Sinhala's stay at three but sit tighter. */
+@media(max-width:360px){
+  #flib-root .fnode{gap:7px;padding:9px 8px}
+  #flib-root .fnode-art{width:52px;height:38px}
+  #flib-root .fnode-chev{width:24px;height:24px;font-size:17px}
 }
 .fnode-art svg{width:100%;height:100%;display:block}
 /* the faith scene art bakes daylight colours; soften it on a dark page so the
@@ -1073,6 +1092,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnode-en{color:var(--muted);font-size:.85rem}
 .fnode-tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;font-weight:800;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem}
 .fnode-go{flex:none;background:var(--crimson);color:#fff;font-weight:800;font-size:.8rem;border-radius:999px;padding:6px 12px}
+.fback{min-height:40px;display:inline-flex;align-items:center}
 .fnode-mascot{position:absolute;top:-16px;right:10px;width:34px;height:34px;pointer-events:none}
 /* story reader */
 .fread{max-width:640px;margin:0 auto}
@@ -2484,8 +2504,13 @@ function flibCard(st,seq){
   let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
   if(st.overview&&FAITH_DONE.has(st.id+'-ov'))n++;
   const done=n>=total;
+  /* the "start" word is the widest thing on the card and its length swings
+     hugely by language (si පටන් ගන්න is 97px vs ne सुरु at 41px), starving the
+     title on narrow phones. The whole card is already the tap target, so below
+     430px we swap that word for a chevron. Tick/progress badges stay — short. */
   const badge=done?'<span class="fnode-tick" aria-label="Read">\u2713</span>'
-    :(n?'<span class="flib-prog">'+n+' / '+total+'</span>':'<span class="fnode-go deva">'+fui('start')+'</span>');
+    :(n?'<span class="flib-prog">'+n+' / '+total+'</span>'
+       :'<span class="fnode-go deva">'+fui('start')+'</span><span class="fnode-chev" aria-hidden="true">\u203A</span>');
   const parts=secs.length+' '+(st.kind==='collection'?(secs.length===1?'story':'stories'):(secs.length===1?'part':'parts'));
   return '<button type="button" class="fnode'+(done?' done':'')+'" onclick="openStory(\''+st.id+'\')">'
     +(seq?'<span class="flib-seq" aria-hidden="true">'+seq+'</span>':'')
