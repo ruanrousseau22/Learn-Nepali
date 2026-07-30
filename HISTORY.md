@@ -1925,9 +1925,14 @@ single-file stylesheet, later rules win, so overrides must come last.
 **Fourth pass (Ruan): native only.** The English second line came off the
 Stories hero and the remaining native title was centred; the More page's
 `Go deeper` became `fui('moreTitle')` — native in all eleven — and its
-`Real, trusted resources in …` intro sentence was deleted. Centring also
-bought the long scripts enough width that every one of the eleven titles now
-sits on a SINGLE line (Burmese and Sinhala had been wrapping to two).
+`Real, trusted resources in …` intro sentence was deleted. The title is LEFT-aligned and
+vertically centred (not centred in the middle of the hero — a first attempt
+centred it horizontally, which Ruan did not mean). Dropping the English line
+also freed enough width that every one of the eleven titles now sits on a
+SINGLE line (Burmese and Sinhala had been wrapping to two). The base
+`.hero-text` reserves 56px of bottom padding for a second line this hero
+does not have, so `#view-flib .hero-text{padding-bottom:0}` is what actually
+makes `align-items:center` land on true vertical centre.
 `.fmore-head` / `.fmore-sub` CSS was deleted with the markup rather than
 left behind; both pages now title inside their own band/hero.
 

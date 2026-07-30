@@ -1026,11 +1026,11 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .flib-arc::before{left:26px}
 .fnode{z-index:1}
 /* --- Stories home: grouped library (July 2026) --- */
-/* the Stories hero carries ONE line — the pack's own words — so it centres
-   rather than sitting left like the learn home's two-line brand block */
-#view-flib .hero-inner{justify-content:center}
-#view-flib .hero-text{max-width:92%;text-align:center;padding-bottom:44px}
-@media(max-width:560px){#view-flib .hero-text{max-width:100%;padding-bottom:26px}}
+/* the Stories hero carries ONE line, so it sits on the left like the learn
+   home's brand block but VERTICALLY centred — the base .hero-text reserves
+   56px of bottom padding for a second line this hero does not have */
+#view-flib .hero-text{padding-bottom:0;max-width:70%}
+@media(max-width:560px){#view-flib .hero-text{max-width:82%}}
 .flib-group+.flib-group{margin-top:28px}
 .flib-gh{max-width:620px;margin:0 auto 12px}
 .flib-gh h3{margin:0;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
