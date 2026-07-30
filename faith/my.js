@@ -88,7 +88,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({code:'my',
 digits:["၀","၁","၂","၃","၄","၅","၆","၇","၈","၉"],
-ui:{start:"စမယ်",next:"ရှေ့ဆက်",prev:"နောက်ပြန်",finish:"ပြီးပါပြီ",allMoments:"အဖြစ်အပျက်အားလုံး",allMomentsEn:"all moments",why:"ဘာကြောင့် အရေးကြီးလဲ",whyEn:"why it matters",play:"ဇာတ်လမ်းတစ်ခုလုံး နားထောင်ပါ",stop:"ရပ်မယ်",scriptLabel:"မြန်မာ",done:"အဖြစ်အပျက် {t} ခုလုံး ဖတ်ပြီးပါပြီ — ဂုဏ်ယူပါတယ်!",doneEn:"All {t} moments read — well done!",prog:"{t} ခုအနက် {n} ခု ဖတ်ပြီး",progEn:"{n} of {t} read",soon:"အကြောင်းအရာ မကြာခင် ရောက်လာပါမယ်",soonEn:""},
+ui:{libTitle:'ဘုရားသခင်ကို သိရှိခြင်း',start:"စမယ်",next:"ရှေ့ဆက်",prev:"နောက်ပြန်",finish:"ပြီးပါပြီ",allMoments:"အဖြစ်အပျက်အားလုံး",allMomentsEn:"all moments",why:"ဘာကြောင့် အရေးကြီးလဲ",whyEn:"why it matters",play:"ဇာတ်လမ်းတစ်ခုလုံး နားထောင်ပါ",stop:"ရပ်မယ်",scriptLabel:"မြန်မာ",done:"အဖြစ်အပျက် {t} ခုလုံး ဖတ်ပြီးပါပြီ — ဂုဏ်ယူပါတယ်!",doneEn:"All {t} moments read — well done!",prog:"{t} ခုအနက် {n} ခု ဖတ်ပြီး",progEn:"{n} of {t} read",soon:"အကြောင်းအရာ မကြာခင် ရောက်လာပါမယ်",soonEn:""},
 stories:[
 {id:'fstory',kind:'arc',title:'God\u2019s Story',ne:'ဘုရားသခင်ရဲ့ ဇာတ်လမ်း',
 overview:{t:'The whole story in short',ne:'သတင်းကောင်း — အကျဉ်းချုပ်',art:FMY_ART.ovstory,

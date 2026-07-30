@@ -1887,9 +1887,40 @@ The band must stay at the app's standard 140px — first attempt used 112px
 and the mountain peaks were cropped off, because the SVG renders 213px tall
 at desktop width and the band shows only its bottom slice.
 
-Naming note: the collections group is now literally called "More", which is
-also the name of the faith nav tab. Ruan chose the word; flagged as a mild
-collision, kept as asked.
+Naming note: the collections group was briefly called "More", colliding with
+the faith nav tab of the same name — Ruan renamed it **"Other stories"** in
+the next pass.
+
+**Third pass (Ruan): the full home hero, native-titled.** The slim band was
+not what he meant — he wanted the language-learning home page's own hero on
+the Stories page, with the page title in the native language as the primary
+line over the art, and the simpler band kept for the More page.
+
+- `view-flib` now carries a verbatim copy of the home `.hero`. That makes
+  **three** hero copies (home, flib, fstory) and six bands.
+- `applyArt()` had to change: it used `querySelector('.hero-mtns')` —
+  SINGULAR — so a third hero would simply never have been filled. It now
+  uses `querySelectorAll` for heroes exactly as it already did for bands,
+  and `ART_DEFAULT.hero` (a string) became `ART_DEFAULT.heroes` (an array),
+  mirroring `ART_DEFAULT.bands`. Verified all three heroes hold byte-
+  identical art in ne/km/ur/jv, in both modes.
+- Title is native-first like every other faith surface: h1 =
+  `fui('libTitle')`, English `Knowing God` as the quiet second line.
+  `libTitle` was added to all ten non-Nepali packs' `ui` blocks (Nepali uses
+  the `FUI_NE` default) — UI strings are NOT spoken, so all 11 still
+  `--check` MATCH at 388.
+- English wording is deliberately NOT "God's Story": that is already the
+  title of the first story in the arc, and reusing it for the page would
+  read as a duplicate.
+
+**A real CSS bug found while checking mobile.** The `@media(max-width:560px)`
+block for the library sat BEFORE the base `.fnode-art{width:96px}` rule.
+Same specificity, so source order decided and the mobile override silently
+lost — the thumbnail stayed 96px and story titles were squeezed into ~92px,
+wrapping three and four lines on a phone. Moving the media query after the
+base rules (and trimming the art to 66px, gap 11px) took titles to two lines
+and the text column from 92px to 135px. Worth remembering: in this
+single-file stylesheet, later rules win, so overrides must come last.
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a

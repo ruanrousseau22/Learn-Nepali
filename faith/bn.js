@@ -85,7 +85,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({code:'bn',
 digits:["০","১","২","৩","৪","৫","৬","৭","৮","৯"],
-ui:{start:"শুরু",next:"পরবর্তী",prev:"আগের",finish:"সমাপ্ত",allMoments:"সব ঘটনা",allMomentsEn:"all moments",why:"কেন গুরুত্বপূর্ণ",whyEn:"why it matters",play:"পুরো গল্প শুনুন",stop:"থামুন",scriptLabel:"বাংলা",done:"সব {t}টি ঘটনা পড়া হয়েছে — অভিনন্দন!",doneEn:"All {t} moments read — well done!",prog:"{t}টির মধ্যে {n}টি পড়া হয়েছে",progEn:"{n} of {t} read",soon:"শীঘ্রই আসছে",soonEn:""},
+ui:{libTitle:'ঈশ্বরকে জানা',start:"শুরু",next:"পরবর্তী",prev:"আগের",finish:"সমাপ্ত",allMoments:"সব ঘটনা",allMomentsEn:"all moments",why:"কেন গুরুত্বপূর্ণ",whyEn:"why it matters",play:"পুরো গল্প শুনুন",stop:"থামুন",scriptLabel:"বাংলা",done:"সব {t}টি ঘটনা পড়া হয়েছে — অভিনন্দন!",doneEn:"All {t} moments read — well done!",prog:"{t}টির মধ্যে {n}টি পড়া হয়েছে",progEn:"{n} of {t} read",soon:"শীঘ্রই আসছে",soonEn:""},
 stories:[
 {id:'fstory',kind:'arc',title:'God\u2019s Story',ne:'ঈশ্বরের গল্প',
 overview:{t:'The whole story in short',ne:'সুসমাচার — সংক্ষেপে',art:FBN_ART.ovstory,

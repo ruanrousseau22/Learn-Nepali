@@ -1026,11 +1026,6 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .flib-arc::before{left:26px}
 .fnode{z-index:1}
 /* --- Stories home: grouped library (July 2026) --- */
-/* art-only band: no text over the scenery, so it needs its own height */
-.page-band--art{margin-bottom:20px}
-/* same 140px as every other .page-band in the app, so the scenery crops the
-   way it does on the learn pages — shorter than this and the peaks are cut */
-.pb-inner--art{min-height:140px;padding:0}
 .flib-group+.flib-group{margin-top:28px}
 .flib-gh{max-width:620px;margin:0 auto 12px}
 .flib-gh h3{margin:0;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
@@ -1040,11 +1035,6 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   border:1px solid color-mix(in srgb,var(--crimson) 26%,transparent)}
 .flib-meta{display:block;font-size:12px;color:var(--muted);margin-top:1px}
 .fnode.done .flib-meta{opacity:.85}
-@media(max-width:560px){
-  .flib-arc::before{left:26px}
-  .flib-seq{width:19px;height:19px;font-size:11px}
-  .fnode-art{width:74px;height:54px}
-}
 /* colour must come from --ink, not the UA `buttontext` system colour: every
    sibling faith button sets its own colour and this one was the outlier */
 .fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
@@ -1059,6 +1049,16 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnode.next{border-color:var(--crimson);box-shadow:0 4px 14px color-mix(in srgb,var(--crimson) 14%,transparent)}
 .fnode.done{opacity:.82}
 .fnode-art{flex:none;width:96px;height:68px;border-radius:10px;overflow:hidden}
+/* mobile overrides MUST come after the base rules above — same specificity, so
+   source order decides. Placed earlier they silently lost and the thumbnail
+   stayed 96px, squeezing story titles into ~92px and wrapping them 3-4 lines. */
+@media(max-width:560px){
+  .flib-arc::before{left:24px}
+  .flib-seq{width:19px;height:19px;font-size:11px}
+  .fnode{gap:11px;padding:11px 12px}
+  .fnode-art{width:66px;height:48px}
+  .fnode-t{font-size:1rem;line-height:1.55}
+}
 .fnode-art svg{width:100%;height:100%;display:block}
 /* the faith scene art bakes daylight colours; soften it on a dark page so the
    cards read as pictures at night, not light leaks (art itself is shared) */
@@ -1386,27 +1386,56 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
      pack-only change — view-fstory below is the generic host that renders
      whichever story openStory() selects. -->
 <section class="view" id="view-flib">
-  <!-- art-only band: same scenery the learn pages use, filled by applyArt()
-       (which fills EVERY .pb-mtns), with no heading over it — the story cards
-       below carry the page on their own -->
-  <div class="page-band page-band--art">
-    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
-      <circle class="orb" cx="1046" cy="88" r="21"/>
-      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
-      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
-      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
-      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
-      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
-      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
-      <g class="near">
-        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
-        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
-        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
-        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+  <!-- the FULL home hero (Ruan): same scenery the language home uses, with the
+       page title native-first over it. applyArt() fills every .hero-mtns. -->
+  <div class="hero">
+    <svg class="hero-mtns" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="930" cy="122" r="76"/>
+      <circle class="orb" cx="930" cy="122" r="46"/>
+      <g class="hero-stars" aria-hidden="true">
+        <circle cx="120" cy="58" r="1.6" class="tw" style="animation-delay:0s"/>
+        <circle cx="240" cy="104" r="1.2"/>
+        <circle cx="360" cy="46" r="2"/>
+        <circle cx="470" cy="122" r="1.4" class="tw" style="animation-delay:1.1s"/>
+        <circle cx="560" cy="70" r="1.6"/>
+        <circle cx="675" cy="40" r="1.3" class="tw" style="animation-delay:.6s"/>
+        <circle cx="785" cy="112" r="1.8"/>
+        <circle cx="870" cy="150" r="1.3"/>
+        <circle cx="1015" cy="62" r="1.6" class="tw" style="animation-delay:1.8s"/>
+        <circle cx="1085" cy="118" r="1.4"/>
+        <circle cx="1130" cy="44" r="1.2"/>
+        <circle cx="175" cy="138" r="1.5"/>
+        <circle cx="320" cy="152" r="1.3" class="tw" style="animation-delay:2.3s"/>
+        <circle cx="620" cy="134" r="1.5"/>
       </g>
+      <g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>
+      <g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="124" rx="40" ry="15"/><ellipse cx="100" cy="118" rx="28" ry="17"/><ellipse cx="30" cy="121" rx="26" ry="13"/></g>
+      <g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="74" rx="28" ry="11"/><ellipse cx="78" cy="69" rx="22" ry="13"/><ellipse cx="26" cy="72" rx="20" ry="10"/></g>
+      <path class="far" d="M0 252 Q150 246 300 249 Q220 250 370 247 L448 242 L518 232 L566 166 L624 198 L675 132 L745 178 L815 102 L885 170 L955 118 L1010 190 L1056 138 L1090 176 L1150 108 L1200 190 L1200 320 L0 320 Z"/>
+      <polygon class="snow" points="555.8 180.0 566.0 166.0 591.4 180.0 582.1 178.0 574.3 185.0 566.5 179.0 560.8 183.0"/>
+      <polygon class="snow" points="660.3 151.0 675.0 132.0 703.9 151.0 692.6 149.0 683.0 156.0 673.4 150.0 666.4 154.0"/>
+      <polygon class="snow" points="795.7 123.0 815.0 102.0 836.6 123.0 826.0 121.0 817.0 128.0 807.9 122.0 801.4 126.0"/>
+      <polygon class="snow" points="929.4 137.0 955.0 118.0 969.5 137.0 959.1 135.0 950.3 142.0 941.5 136.0 935.0 140.0"/>
+      <polygon class="snow" points="1036.5 160.0 1056.0 138.0 1075.7 160.0 1065.5 158.0 1056.9 165.0 1048.3 159.0 1042.0 163.0"/>
+      <polygon class="snow" points="1127.1 134.0 1150.0 108.0 1165.9 134.0 1155.8 132.0 1147.2 139.0 1138.7 133.0 1132.5 137.0"/>
+      <path class="far" d="M636 92 Q644 84 652 92 Q644 88 636 92 Z M676 104 Q683 97 690 104 Q683 100.5 676 104 Z" opacity=".85"/>
+      <path class="mid" d="M640 320 L640 306 Q710 274 800 258 Q900 242 1010 268 Q1110 290 1200 296 L1200 320 Z"/>
+      <path class="snow" opacity=".26" d="M700 306 Q880 282 1060 296 L1058 302 Q880 290 704 312 Z"/>
+      <path class="snow" opacity=".26" d="M760 294 Q900 272 1040 284 L1038 290 Q900 280 764 300 Z"/>
+      <path class="snow" opacity=".26" d="M820 278 Q920 262 1020 274 L1018 280 Q920 268 824 284 Z"/>
+            <g class="near">
+        <path d="M0 320 L0 294 Q220 262 460 284 Q700 304 920 280 Q1060 266 1200 288 L1200 320 Z"/>
+        </g>
+      <g transform="translate(176,230)" aria-hidden="true"><path fill="var(--slate)" d="M18 52 L18 40 L25 40 L25 52 Z M29 52 L29 40 L36 40 L36 52 Z M54 52 L54 40 L61 40 L61 52 Z M64 52 L64 40 L71 40 L71 52 Z"/><path class="snow" d="M8 36 Q4 16 22 11 Q34 1 52 4 Q70 7 76 20 L78 36 Q72 50 66 38 Q59 51 52 38 Q45 51 38 38 Q31 51 24 38 Q16 49 8 36 Z"/><path fill="var(--slate)" d="M76 20 Q90 19 92 29 Q93 38 84 39 L76 35 Z"/><path fill="var(--slate)" d="M7 20 Q-2 28 0 40 L4 39 Q2 29 10 24 Z"/><path fill="var(--tyre)" d="M78 17 Q83 6 93 6 Q85 11 83 19 Z M87 18 Q95 10 101 13 Q93 16 90 23 Z"/><path fill="var(--tyre)" d="M18 52 L25 52 L25 49 L18 49 Z M29 52 L36 52 L36 49 L29 49 Z M54 52 L61 52 L61 49 L54 49 Z M64 52 L71 52 L71 49 L64 49 Z"/><path fill="var(--tyre)" opacity=".5" d="M87 32 Q93 32 93 36 Q92 39 86 38 Z"/><circle fill="var(--tyre)" cx="85" cy="27" r="1.8"/></g>
+      <g transform="translate(292,237) scale(0.82)" aria-hidden="true"><path fill="var(--slate)" d="M18 52 L18 40 L25 40 L25 52 Z M29 52 L29 40 L36 40 L36 52 Z M54 52 L54 40 L61 40 L61 52 Z M64 52 L64 40 L71 40 L71 52 Z"/><path class="snow" d="M8 36 Q4 16 22 11 Q34 1 52 4 Q70 7 76 20 L78 36 Q72 50 66 38 Q59 51 52 38 Q45 51 38 38 Q31 51 24 38 Q16 49 8 36 Z"/><path fill="var(--slate)" d="M76 20 Q90 19 92 29 Q93 38 84 39 L76 35 Z"/><path fill="var(--slate)" d="M7 20 Q-2 28 0 40 L4 39 Q2 29 10 24 Z"/><path fill="var(--tyre)" d="M78 17 Q83 6 93 6 Q85 11 83 19 Z M87 18 Q95 10 101 13 Q93 16 90 23 Z"/><path fill="var(--tyre)" d="M18 52 L25 52 L25 49 L18 49 Z M29 52 L36 52 L36 49 L29 49 Z M54 52 L61 52 L61 49 L54 49 Z M64 52 L71 52 L71 49 L64 49 Z"/><path fill="var(--tyre)" opacity=".5" d="M87 32 Q93 32 93 36 Q92 39 86 38 Z"/><circle fill="var(--tyre)" cx="85" cy="27" r="1.8"/></g>
+      <g aria-hidden="true"><g transform="translate(46,291) scale(0.9)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(96,287)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(140,284) scale(0.8)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1054,282) scale(0.85)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1100,280) scale(1.05)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g><g transform="translate(1150,281) scale(0.9)" aria-hidden="true"><path fill="var(--bark)" d="M-3 0 L-2.4 -26 L2.4 -26 L3 0 Z"/><g fill="var(--tree)"><circle cx="0" cy="-38" r="16"/><circle cx="-11" cy="-30" r="11"/><circle cx="11" cy="-31" r="12"/><circle cx="2" cy="-49" r="10"/></g></g></g>
     </svg>
-    <div class="pb-inner pb-inner--art"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="display deva" id="flib-title"></h1>
+        <div class="hero-fsub" id="flib-title-en"></div>
+      </div>
+    </div>
   </div>
   <div class="wrap section" style="padding-top:2px">
     <!-- NOT .fnodes: this is a container of groups now, and .fnodes draws the
@@ -2383,7 +2412,7 @@ function applyFaithBrand(){
   if(h){h.textContent=(st&&(st.ne||st.title))||'';h.classList.add('deva');}
   if(sub){sub.textContent=(st&&st.title)||'';sub.style.display=(st&&st.title)?'':'none';}
 }
-const FUI_NE={start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'यहाँ चाँडै सामग्री आउँदैछ',soonEn:'Content coming soon'};
+const FUI_NE={libTitle:'परमेश्वरलाई चिन्ने',start:'सुरु',next:'अगाडि',prev:'अघिल्लो',finish:'समाप्त',allMoments:'सबै घटनाहरू',allMomentsEn:'all moments',why:'किन महत्त्वपूर्ण',whyEn:'why it matters',play:'पूरै कथा सुन्नुहोस्',stop:'रोक्नुहोस्',scriptLabel:'देवनागरी',done:'सबै {t} घटना पढियो — बधाई छ!',doneEn:'All {t} moments read — well done!',prog:'{t} मध्ये {n} पढियो',progEn:'{n} of {t} read',soon:'यहाँ चाँडै सामग्री आउँदैछ',soonEn:'Content coming soon'};
 function fui(k){const u=FAITH&&FAITH.ui;return (u&&u[k]!=null)?u[k]:FUI_NE[k];}
 function fnum(n){const d=FAITH&&FAITH.digits;if(d)return String(n).split('').map(c=>d[c]||c).join('');return (!FAITH||FAITH.code==='ne')?devNum(n):String(n);}
 /* Right-to-left languages mirror navigation arrows: in Pashto "back" and
@@ -2470,6 +2499,11 @@ function flibCard(st,seq){
 }
 function buildFLib(){
   const root=document.getElementById('flib-root');if(!root||!FAITH)return;
+  /* native-first, like every other faith surface: the pack's own words are the
+     h1, English is the quiet second line */
+  const t=document.getElementById('flib-title'),te=document.getElementById('flib-title-en');
+  if(t)t.textContent=fui('libTitle')||'';
+  if(te)te.textContent='Knowing God';
   const all=FAITH.stories||[];
   const arc=all.filter(s=>s.kind==='arc'),coll=all.filter(s=>s.kind!=='arc');
   let h='';
@@ -2481,7 +2515,7 @@ function buildFLib(){
   }
   if(coll.length){
     h+='<div class="flib-group">'
-      +'<div class="flib-gh"><h3>More</h3></div>'
+      +'<div class="flib-gh"><h3>Other stories</h3></div>'
       +'<div class="fnodes flib-loose">'+coll.map(s=>flibCard(s,0)).join('')+'</div></div>';
   }
   root.innerHTML=h;
@@ -2670,8 +2704,10 @@ function applyBranding(){const b=LANG.brand||{},al=LANG.alpha||{};
 let ART_DEFAULT=null;
 function artMascot(m){return (LANG.art&&LANG.art.mascot)?LANG.art.mascot(m):mascotSVG(m);}
 function applyArt(){
-  const hero=document.querySelector('.hero-mtns'),bands=document.querySelectorAll('.pb-mtns');
-  if(!ART_DEFAULT)ART_DEFAULT={hero:hero?hero.innerHTML:'',bands:[...bands].map(p=>p.innerHTML)};
+  /* querySelectorALL for heroes too — there are three now (home, faith stories
+     home, faith story host) and only filling the first left the others empty */
+  const heroes=document.querySelectorAll('.hero-mtns'),bands=document.querySelectorAll('.pb-mtns');
+  if(!ART_DEFAULT)ART_DEFAULT={heroes:[...heroes].map(p=>p.innerHTML),bands:[...bands].map(p=>p.innerHTML)};
   const a=LANG.art||{};
   /* Order matters. The outgoing scenery is removed BEFORE the palette flips and
      the incoming scenery is added AFTER, so there is no state — not even one
@@ -2680,13 +2716,13 @@ function applyArt(){
      iOS Safari can repaint an existing SVG subtree when a :root custom property
      changes, which is what made the old order flash.) The worst any stray frame
      can now show is empty sky, which already matches the new palette. */
-  if(hero)hero.innerHTML='';
+  heroes.forEach(p=>{p.innerHTML='';});
   bands.forEach(p=>{p.innerHTML='';});
   document.documentElement.setAttribute('data-lang',LANG.code);
-  if(hero)hero.innerHTML=a.hero||ART_DEFAULT.hero;
+  heroes.forEach((p,i)=>{p.innerHTML=a.hero||ART_DEFAULT.heroes[i];});
   bands.forEach((p,i)=>{p.innerHTML=a.band||ART_DEFAULT.bands[i];});
   /* a short fade so the swap reads as a change of scene, not a pop */
-  [hero,...bands].forEach(el=>{if(!el)return;el.classList.remove('art-in');void el.offsetWidth;el.classList.add('art-in');});}
+  [...heroes,...bands].forEach(el=>{if(!el)return;el.classList.remove('art-in');void el.offsetWidth;el.classList.add('art-in');});}
 function paintLangPicker(){const row=document.getElementById('lang-row');if(!row)return;
   row.style.display=LANG_CATALOG.length>1?'':'none';
   const sel=document.getElementById('lang-select');if(!sel)return;sel.innerHTML='';

@@ -86,7 +86,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({
   code:"uz",
-  ui:{"start": "Boshlash", "next": "Keyingi", "prev": "Oldingi", "finish": "Tugatish", "allMoments": "Barcha lahzalar", "allMomentsEn": "all moments", "why": "Nega bu muhim", "whyEn": "why it matters", "play": "Butun hikoyani tinglang", "stop": "Toʻxtatish", "scriptLabel": "Oʻzbekcha", "done": "Barcha {t} lahza oʻqildi - barakalla!", "doneEn": "All {t} moments read - well done!", "prog": "{t} dan {n} taasi oʻqildi", "progEn": "{n} of {t} read", "soon": "Matn tez orada qoʻshiladi", "soonEn": "Content coming soon"},
+  ui:{libTitle:'Xudoni bilish',"start": "Boshlash", "next": "Keyingi", "prev": "Oldingi", "finish": "Tugatish", "allMoments": "Barcha lahzalar", "allMomentsEn": "all moments", "why": "Nega bu muhim", "whyEn": "why it matters", "play": "Butun hikoyani tinglang", "stop": "Toʻxtatish", "scriptLabel": "Oʻzbekcha", "done": "Barcha {t} lahza oʻqildi - barakalla!", "doneEn": "All {t} moments read - well done!", "prog": "{t} dan {n} taasi oʻqildi", "progEn": "{n} of {t} read", "soon": "Matn tez orada qoʻshiladi", "soonEn": "Content coming soon"},
   stories:[
   {id:"fstory",kind:'arc',title:"God’s Story",ne:"Xudoning hikoyasi",
    overview:{t:"The whole story in short",ne:"Xushxabar - qisqacha",art:FUZ_ART.ovstory,start:["Boshidan koʻraylik", "From here — the whole story in detail"],paras:[

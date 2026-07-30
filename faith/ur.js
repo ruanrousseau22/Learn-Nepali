@@ -81,7 +81,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 registerFaith({
   code:"ur",
   digits:["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"],
-  ui:{"start": "شروع", "next": "آگے", "prev": "پچھلا", "finish": "ختم", "allMoments": "سارے لمحے", "allMomentsEn": "all moments", "why": "یہ کیوں اہم ہے", "whyEn": "why it matters", "play": "پوری کہانی سنیں", "stop": "روکیں", "scriptLabel": "اردو", "done": "سارے {t} لمحے پڑھ لیے — شاباش!", "doneEn": "All {t} moments read - well done!", "prog": "{t} میں سے {n} پڑھے", "progEn": "{n} of {t} read", "soon": "مواد جلد آ رہا ہے", "soonEn": "Content coming soon"},
+  ui:{libTitle:'خدا کو جاننا',"start": "شروع", "next": "آگے", "prev": "پچھلا", "finish": "ختم", "allMoments": "سارے لمحے", "allMomentsEn": "all moments", "why": "یہ کیوں اہم ہے", "whyEn": "why it matters", "play": "پوری کہانی سنیں", "stop": "روکیں", "scriptLabel": "اردو", "done": "سارے {t} لمحے پڑھ لیے — شاباش!", "doneEn": "All {t} moments read - well done!", "prog": "{t} میں سے {n} پڑھے", "progEn": "{n} of {t} read", "soon": "مواد جلد آ رہا ہے", "soonEn": "Content coming soon"},
   stories:[
   {id:"fstory",kind:'arc',title:"God’s Story",ne:"خدا کی کہانی",
    overview:{t:"The whole story in short",ne:"خوشخبری — مختصر میں",art:FUR_ART.ovstory,start:["شروع سے دیکھیں", "From here — the whole story in detail"],paras:[

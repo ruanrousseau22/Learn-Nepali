@@ -386,18 +386,21 @@ EXCLUDES the lost son, the good Samaritan and the two builders, which
 EN/refs are byte-identical in all 11), no XP/exercises;
 progress per device in `sajilo_faith` (ids unchanged by the library
 refactor). **Stories library (July 2026)**: faith nav is Stories · More ·
-Settings. Both `view-flib` and `view-fmore` open with a `.page-band` — the
-same slim scenery band the learn sub-pages use, filled automatically because
-`applyArt()` fills EVERY `.pb-mtns` (there are now SEVEN identical copies:
-alphabet, trip, review, settings, flib, fmore, intensive — edit via
-replace_all). `view-flib`'s band is art-only (`.pb-inner--art`, no heading);
-`view-fmore` carries its `Go deeper` h2 inside the band like every other
-sub-page. Keep the band at the standard **140px** — shorter crops the peaks.
+Settings. `view-flib` opens with the **FULL home hero** (Ruan) — the hero
+markup now exists as **THREE verbatim copies** (home, view-flib, view-fstory)
+and the band as **SIX** (alphabet, trip, review, settings, fmore, intensive);
+edit any of them via replace_all. `applyArt()` fills EVERY `.hero-mtns` AND
+every `.pb-mtns` — it used `querySelector` (singular) for the hero until
+July 2026, which would have left the new hero empty. The flib hero title is
+**native-first**: h1 = `fui('libTitle')` (per-pack, `FUI_NE` default for ne),
+with the English `Knowing God` as the quiet `.hero-fsub`. `view-fmore` keeps
+the slim `.page-band` with its `Go deeper` h2 inside, like every other
+sub-page; keep that band at the standard **140px** — shorter crops the peaks.
 `view-flib` groups the loaded pack's stories into the arc (numbered, joined
 by the dashed connector, NO heading — the numbers already say "in order")
-and **More** (no order, no connector) — each story declares which via
+and **Other stories** (no order, no connector) — each story declares which via
 `kind:'arc'` or `kind:'collection'` in the pack, so grouping stays a
-pack-only decision and an untagged story falls safely into More. Cards show
+pack-only decision and an untagged story falls safely into Other stories. Cards show
 a part count and progress (`buildFLib()`); NOTE `#flib-root` must NOT carry
 the `.fnodes` class — `.fnodes::before` draws the connector, and leaving it
 there painted one down the entire page.
