@@ -1771,8 +1771,36 @@ Used** (`flives` — overview + Joseph, 13 strings, 2 art keys gY1/gY2) went
 into faith/ne.js with ZERO index.html edits and rendered/played end-to-end.
 **The full collection shipped in Nepali the same day**: Joseph, Moses, Ruth,
 David, Elijah, Daniel, Jonah, Esther — 8 lives, 62 spoken strings, art keys
-gY1-gY2 + gZ1-gZ7, nef at 313 strings. Next: per-language rollout (the EN in
-faith/ne.js is the byte-identity master, as with Acts).
+gY1-gY2 + gZ1-gZ7, nef at 313 strings.
+
+**Rolled out to all eleven languages in one session** (July 2026) with
+`scratchpad/build_lives.py`, the same shape as `build_acts.py`: a per-language
+JSON of natives+roms is merged against `lives_master.json` (English + refs
+lifted from faith/ne.js), so EN `[2]` and refs `[3]` are byte-identical by
+construction — no localized paras at all in this collection, unlike Acts.
+The builder asserts para/section shape, forbidden chars, ASCII roms, and a
+per-language Unicode script whitelist. 682 new clips, 0 failures; every faith
+pack now carries 4 stories / 313 spoken strings and every `audio-<code>f/`
+manifest equals its directory.
+
+Per-language register decisions followed each pack's own header rather than a
+template: km royal (ព្រះជាម្ចាស់/ព្រះអម្ចាស់, and Nathan addresses the king as
+ព្រះករុណា so ទ្រង់ stays reserved for Jesus); my spoken Judson (ထာဝရဘုရား for
+the LORD as in its own Abraham section, အီဂျစ် not အဲဂုတ္တု); si spoken with
+honorific nouns only (දෙවියන් වහන්සේ + කළා, never කළ සේක්); lo light ຊົງ-
+honorific + ພຣະຜູ້ເປັນເຈົ້າ; uz Egamiz per IBT; jv ngoko + krama inggil with
+roms generated from the pack's own a->o respelling map (reproduced 262/263 of
+its existing word pairs).
+
+Two traps re-confirmed: the Lao draft was scanned for Thai homoglyphs
+(0xE00-0xE7F) BEFORE building — zero this time — and the Bengali "no-clip
+character" check fires on ং/ঁ inside ordinary words, which is a FALSE
+POSITIVE (they occur 83/50/47 times in the already-recorded fstory/fjesus/
+facts prose; the no-clip rule is about bare standalone letters in vocab).
+Verified live in the browser: 4 library cards per language, 9 story nodes,
+readers render with native section counts (۶/۸, ၆/၈, ໖/໘, ៦/៨) and clips
+return 200. `index.html` is byte-untouched across the entire collection —
+the pack-only story architecture held exactly as designed.
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a
