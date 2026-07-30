@@ -1865,6 +1865,31 @@ start, READ/WATCH eyebrows, and the trailing caveat promoted from loose
 grey text into a proper bordered note. Verified light + dark, desktop +
 375px, and in Urdu — where the page stays deliberately LTR, so the accent
 bar correctly stays on the left.
+
+**Second pass, same day (Ruan): quieter, with the language's own art.**
+The grouped page still had too many words stacked at the top — a "Stories"
+h2, a sentence under it, then a group heading AND a sub for each of the two
+groups. Ruan asked for the scenery art back at the top instead ("it was
+there before"), and for the wording stripped out.
+
+Result: both faith pages now open with the standard `.page-band`. That was
+the right hook rather than a `.hero` copy, because `applyArt()` fills every
+`.pb-mtns` via querySelectorAll (the hero is `querySelector` — singular —
+and the faith story hero is filled separately by `applyFaithBrand`). So the
+bands follow the language for free; verified ne/km/lo/ur all render byte-
+identical art to the learn pages' band.
+
+- Stories: art-only band (no heading, no sub at all), then the numbered arc
+  with no group heading, then a single **More** heading over the collections.
+- More page: `Go deeper` moved INTO the band, matching every other sub-page.
+
+The band must stay at the app's standard 140px — first attempt used 112px
+and the mountain peaks were cropped off, because the SVG renders 213px tall
+at desktop width and the band shows only its bottom slice.
+
+Naming note: the collections group is now literally called "More", which is
+also the name of the faith nav tab. Ruan chose the word; flagged as a mild
+collision, kept as asked.
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a

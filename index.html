@@ -1026,10 +1026,15 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .flib-arc::before{left:26px}
 .fnode{z-index:1}
 /* --- Stories home: grouped library (July 2026) --- */
-.flib-group+.flib-group{margin-top:30px}
+/* art-only band: no text over the scenery, so it needs its own height */
+.page-band--art{margin-bottom:20px}
+/* same 140px as every other .page-band in the app, so the scenery crops the
+   way it does on the learn pages — shorter than this and the peaks are cut */
+.pb-inner--art{min-height:140px;padding:0}
+.flib-group+.flib-group{margin-top:28px}
 .flib-gh{max-width:620px;margin:0 auto 12px}
-.flib-gh h3{margin:0 0 3px;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
-.flib-gh p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
+.flib-gh h3{margin:0;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
+.flib-gh p{margin:3px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
 .flib-seq{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
   font-size:12px;font-weight:800;background:color-mix(in srgb,var(--crimson) 12%,transparent);color:var(--crimson);
   border:1px solid color-mix(in srgb,var(--crimson) 26%,transparent)}
@@ -1105,7 +1110,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 /* Faith · More — the separate external-resources page */
 .fmore-head{max-width:560px;margin:0 auto 16px}
 .fmore-head h2{margin:0 0 6px}
-.fmore-sub{margin:0;color:var(--ink-soft);font-size:14.5px}
+.fmore-sub{max-width:560px;margin:0 auto 16px;color:var(--ink-soft);font-size:14.5px}
 .fmore-cards{display:flex;flex-direction:column;gap:14px;max-width:560px;margin:0 auto}
 /* each card carries its own accent via --fm-accent, so the icon tile, the
    eyebrow and the hover state all agree without hardcoding a colour twice */
@@ -1381,8 +1386,29 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
      pack-only change — view-fstory below is the generic host that renders
      whichever story openStory() selects. -->
 <section class="view" id="view-flib">
-  <div class="wrap section" style="padding-top:30px">
-    <div class="fmore-head"><h2>Stories</h2><p class="fmore-sub" id="flib-sub"></p></div>
+  <!-- art-only band: same scenery the learn pages use, filled by applyArt()
+       (which fills EVERY .pb-mtns), with no heading over it — the story cards
+       below carry the page on their own -->
+  <div class="page-band page-band--art">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
+      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
+      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
+      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
+        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner pb-inner--art"></div>
+  </div>
+  <div class="wrap section" style="padding-top:2px">
     <!-- NOT .fnodes: this is a container of groups now, and .fnodes draws the
          dashed connector — leaving the class here painted one down the whole page -->
     <div id="flib-root"></div>
@@ -1446,11 +1472,29 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
      stories (Ruan, July 2026). The reader never links out mid-story; everything
      external (the real Bible, the JESUS Film) lives here and only here. -->
 <section class="view" id="view-fmore">
-  <div class="wrap section" style="padding-top:30px">
-    <div class="fmore-head">
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
+      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
+      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
+      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
+        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner">
       <h2>Go deeper</h2>
-      <p class="fmore-sub" id="fmore-sub"></p>
     </div>
+  </div>
+  <div class="wrap section" style="padding-top:2px">
+    <p class="fmore-sub" id="fmore-sub"></p>
     <div class="fmore-cards" id="fmore-root"></div>
     <div class="fmore-note">
       <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg>
@@ -2426,19 +2470,18 @@ function flibCard(st,seq){
 }
 function buildFLib(){
   const root=document.getElementById('flib-root');if(!root||!FAITH)return;
-  const sub=document.getElementById('flib-sub');
-  if(sub)sub.textContent='Read in '+((LANG&&LANG.name)||'')+'. Every story is a retelling in plain words \u2014 tap one to begin.';
   const all=FAITH.stories||[];
   const arc=all.filter(s=>s.kind==='arc'),coll=all.filter(s=>s.kind!=='arc');
   let h='';
+  /* the arc leads the page with no heading at all \u2014 the numbers and the
+     connector already say "in order", and Ruan wants the page quiet */
   if(arc.length){
-    h+='<div class="flib-group">'
-      +'<div class="flib-gh"><h3>The big story</h3><p>One arc, in order \u2014 from the beginning of the world, to Jesus, to the church he left behind.</p></div>'
-      +'<div class="fnodes flib-arc">'+arc.map((s,i)=>flibCard(s,i+1)).join('')+'</div></div>';
+    h+='<div class="flib-group"><div class="fnodes flib-arc">'
+      +arc.map((s,i)=>flibCard(s,i+1)).join('')+'</div></div>';
   }
   if(coll.length){
     h+='<div class="flib-group">'
-      +'<div class="flib-gh"><h3>Collections</h3><p>Each one is complete on its own. Start anywhere \u2014 no order needed.</p></div>'
+      +'<div class="flib-gh"><h3>More</h3></div>'
       +'<div class="fnodes flib-loose">'+coll.map(s=>flibCard(s,0)).join('')+'</div></div>';
   }
   root.innerHTML=h;
