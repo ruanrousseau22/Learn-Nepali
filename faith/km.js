@@ -90,7 +90,7 @@ registerFaith({code:'km',
 digits:["០", "១", "២", "៣", "៤", "៥", "៦", "៧", "៨", "៩"],
 ui:{start:"ចាប់ផ្តើម",next:"បន្ទាប់",prev:"មុន",finish:"ចប់",allMoments:"ព្រឹត្តិការណ៍ទាំងអស់",allMomentsEn:"all moments",why:"ហេតុអ្វីបានជាសំខាន់",whyEn:"why it matters",play:"ស្តាប់រឿងទាំងមូល",stop:"ឈប់",scriptLabel:"ខ្មែរ",done:"អានព្រឹត្តិការណ៍ទាំង {t} ចប់ហើយ — សូមអបអរសាទរ!",doneEn:"All {t} moments read — well done!",prog:"អានបាន {n} ក្នុងចំណោម {t}",progEn:"{n} of {t} read",soon:"មាតិកានឹងមកដល់ឆាប់ៗ",soonEn:""},
 stories:[
-{id:"fstory",title:"God’s Story",ne:"រឿងរបស់ព្រះជាម្ចាស់",
+{id:"fstory",kind:'arc',title:"God’s Story",ne:"រឿងរបស់ព្រះជាម្ចាស់",
 overview:{t:"The whole story in short",ne:"ដំណឹងល្អ — ដោយសង្ខេប",art:FKM_ART.ovstory,
 start:["ចាប់ផ្តើមពីដើម","From here — the whole story in detail"],
 paras:[
@@ -203,7 +203,7 @@ sections:[
 ["នៅទីនោះ ព្រះជាម្ចាស់នឹងគង់នៅជាមួយប្រជារាស្ត្ររបស់ព្រះអង្គ។ លែងមានទឹកភ្នែក លែងមានសេចក្តីស្លាប់ — គឺការប្រកបគ្នាជារៀងរហូត។","Nov ti nuh, Preah Chea Mchas ning kung nov cheamuoy prachareas robos Preah Ang. Leng mean tuk phnek, leng mean sechkdei slab — keu kar brakob knea chea rieng rohot.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["រឿងនេះអាចក្លាយជារឿងរបស់អ្នកដែរ។ សូមជឿលើព្រះយេស៊ូ ហើយត្រឡប់មកផ្ទះវិញ។","Rueang nih ach klay chea rueang robos neak dae. Som cheu leu Preah Yesu, haeuy tralob mok phteah vinh.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:"fjesus",title:"Jesus",ne:"ព្រះយេស៊ូ",
+{id:"fjesus",kind:'arc',title:"Jesus",ne:"ព្រះយេស៊ូ",
 overview:{t:"Who is Jesus?",ne:"ព្រះយេស៊ូជានរណា?",art:FKM_ART.ovjesus,
 start:["ចាប់ផ្តើមពីដើម","From here — his story in detail"],
 paras:[
@@ -284,7 +284,7 @@ sections:[
 ["ព្រះជន្ម ការសុគត និងការរស់ឡើងវិញរបស់ព្រះយេស៊ូបានផ្លាស់ប្តូរពិភពលោក — ម្នាក់ម្តងៗ។ ទ្រង់មានព្រះជន្មរស់សព្វថ្ងៃនេះ — ហើយទ្រង់កំពុងត្រាស់ហៅអ្នក។","Preah chon, kar sokut ning kar roh laeung vinh robos Preah Yesu ban phlah pdo piphop lok — mneak mtong mtong. Trong mean preah chon roh sap thngai nih — haeuy trong kampong trah hav neak.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'សិស្សរបស់ព្រះយេស៊ូ',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'សិស្សរបស់ព្រះយេស៊ូ',
 overview:{t:'The church in short',ne:'ក្រុមជំនុំ — សង្ខេប',art:FKM_ART.ovacts,
 start:['មើលពីដើមដំបូង','From here — the whole story in detail'],
 paras:[
@@ -381,7 +381,7 @@ paras:[
 ['គម្ពីរកិច្ចការ តាមពិតមិនដែលចប់ទេ។ ព្រះវិញ្ញាណដដែលនៅតែបំពេញ ព្រះយេស៊ូដដែលនៅតែហៅ ហើយរឿងដដែលនៅតែកំពុងសរសេរ — ប្រហែលជា បន្ទាប់ គឺនៅក្នុងអ្នក។','Kompi Kechka tam pit min del chab te. Preah Vinhnhean dadael nov tae bampenh, Preah Yesu dadael nov tae hav, haeuy rueng dadael nov tae kampong sarse — prohel chea bantoab keu nov knong neak.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'មនុស្សដែលព្រះជាម្ចាស់បានប្រើ',
+{id:'flives',kind:'collection',title:'People God Used',ne:'មនុស្សដែលព្រះជាម្ចាស់បានប្រើ',
 overview:{t:'Ordinary people, faithful God',ne:'មនុស្សធម្មតា ព្រះជាម្ចាស់ដ៏ស្មោះត្រង់',art:FKM_ART.ovlives,
 start:['ជីវិតប្រាំបី ព្រះជាម្ចាស់ដ៏ស្មោះត្រង់តែមួយ','Eight lives, one faithful God'],
 paras:[
@@ -466,7 +466,7 @@ paras:[
 ['មានរឿងចម្លែកមួយអំពីសៀវភៅអេសធើរ — ព្រះនាមរបស់ព្រះជាម្ចាស់មិនត្រូវបានសរសេរនៅក្នុងនោះឡើយ សូម្បីតែម្តង។ ប៉ុន្តែព្រះហស្តរបស់ព្រះអង្គបង្ហាញច្បាស់នៅក្នុងរាល់ការចៃដន្យ រាល់ពេលវេលាដ៏ត្រឹមត្រូវ និងរាល់ទង្វើដ៏ក្លាហាន។ ពេលខ្លះព្រះជាម្ចាស់ស្ងៀម — ប៉ុន្តែព្រះអង្គមិនដែលអវត្តមានឡើយ។','Mean rueng chamlaek muoy ampi sievphov Esther — preah neam robos Preah Chea Mchas min trov ban sarser nov knong nuh laey, soumbei te mdong. Ponte preah hat robos Preah Ang bangheanh chbas nov knong roal kar chai dan, roal pel vela da trem trov, ning roal tongveu da klahan. Pel khlah Preah Chea Mchas sngiem — ponte Preah Ang min del avottamean laey.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'ការជួបព្រះយេស៊ូ',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'ការជួបព្រះយេស៊ូ',
 overview:{t:'People he met, stories he told',ne:'មនុស្សដែលទ្រង់បានជួប រឿងដែលទ្រង់បានមានព្រះបន្ទូល',art:FKM_ART.ovmeet,
 start:['ចាប់ផ្តើមពីនីកូដេម','Ten meetings, one Jesus'],
 paras:[

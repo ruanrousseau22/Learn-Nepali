@@ -98,7 +98,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 registerFaith({code:'si',
 ui:{start:"පටන් ගන්න",next:"ඊළඟ",prev:"කලින්",finish:"අවසන්",allMoments:"සියලු සිදුවීම්",allMomentsEn:"all moments",why:"ඇයි මේක වැදගත්",whyEn:"why it matters",play:"මුළු කථාවම අහන්න",stop:"නවත්වන්න",scriptLabel:"සිංහල",done:"සිදුවීම් {t}ම කියෙව්වා — සුබ පැතුම්!",doneEn:"All {t} moments read — well done!",prog:"{t}න් {n}ක් කියෙව්වා",progEn:"{n} of {t} read",soon:"අන්තර්ගතය ළඟදීම",soonEn:""},
 stories:[
-{id:"fstory",title:"God’s Story",ne:"දෙවියන් වහන්සේගේ කථාව",
+{id:"fstory",kind:'arc',title:"God’s Story",ne:"දෙවියන් වහන්සේගේ කථාව",
 overview:{t:"The whole story in short",ne:"ශුභාරංචිය — කෙටියෙන්",art:FSI_ART.ovstory,
 start:["මුල ඉඳන් බලමු","From here — the whole story in detail"],
 paras:[
@@ -211,7 +211,7 @@ sections:[
 ["එතන දෙවියන් වහන්සේ උන් වහන්සේගේ ජනතාව එක්ක වාසය කරනවා. කඳුළු නෑ, මරණය නෑ — සදාකාලික මිත්‍රත්වය.","Ethana dhewiyan wahanse un wahansege janathaawa ekka waasaya karanawaa. Kandhulu naee, maranaya naee — sadhaakaalika mithrathwaya.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["මේ කථාව ඔයාගෙත් වෙන්න පුළුවන්. යේසුස් වහන්සේව විශ්වාස කරලා ගෙදර එන්න.","Mee kathaawa oyaageth wenna puluwan. Yesus wahansewa wishwaasa karalaa gedhara enna.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:"fjesus",title:"Jesus",ne:"යේසුස් වහන්සේ",
+{id:"fjesus",kind:'arc',title:"Jesus",ne:"යේසුස් වහන්සේ",
 overview:{t:"Who is Jesus?",ne:"යේසුස් වහන්සේ කවුද?",art:FSI_ART.ovjesus,
 start:["මුල ඉඳන් බලමු","From here — his story in detail"],
 paras:[
@@ -292,7 +292,7 @@ sections:[
 ["යේසුස් වහන්සේගේ ජීවිතය, මරණය, උත්ථානය ලෝකේ වෙනස් කළා — එක එක කෙනා බැගින්. උන් වහන්සේ අද ජීවතුන් අතර — උන් වහන්සේ ඔයාට කතා කරනවා.","Yesus wahansege jeewithaya, maranaya, uththaanaya lookee wenas kalaa — eka eka kenaa baegin. Un wahanse adha jeewathun athara — un wahanse oyaata kathaa karanawaa.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'යේසුස් වහන්සේගේ ගෝලයෝ',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'යේසුස් වහන්සේගේ ගෝලයෝ',
 overview:{t:'The church in short',ne:'සභාව — කෙටියෙන්',art:FSI_ART.ovacts,
 start:['මුල ඉඳන් බලමු','From here — the whole story in detail'],
 paras:[
@@ -389,7 +389,7 @@ paras:[
 ['ක්‍රියා පොත ඇත්තටම කවදාවත් ඉවර වුණේ නැහැ. ඒ ආත්මයාණන්ම තාමත් පුරවනවා, ඒ යේසුස් වහන්සේම තාමත් කැඳවනවා, ඒ කතාවම තාමත් ලියවෙනවා — සමහරවිට, මීළඟට, ඔයා ඇතුළේ.','Kriyaa potha aeththatama kawadhaawath iwara wune naehae. Ee aathmayaananma thaamath purawanawaa, ee Yesus wahansema thaamath kaendawanawaa, ee kathaawama thaamath liyawenawaa — samaharawita, meelangata, oyaa aethule.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'දෙවියන් වහන්සේ පාවිච්චි කරපු මිනිස්සු',
+{id:'flives',kind:'collection',title:'People God Used',ne:'දෙවියන් වහන්සේ පාවිච්චි කරපු මිනිස්සු',
 overview:{t:'Ordinary people, faithful God',ne:'සාමාන්‍ය මිනිස්සු, විශ්වාසවන්ත දෙවියන් වහන්සේ',art:FSI_ART.ovlives,
 start:['ජීවිත අටක්, විශ්වාසවන්ත දෙවි කෙනෙක්','Eight lives, one faithful God'],
 paras:[
@@ -474,7 +474,7 @@ paras:[
 ['එස්තර්ගේ පොතේ පුදුම දෙයක් තියෙනවා — දෙවියන් වහන්සේගේ නම එකපාරක්වත් ලියලා නෑ. ඒත් හැම අහම්බයකම, හැම හරි වෙලාවකම, නිර්භය හැම ක්‍රියාවකම උන් වහන්සේගේ අත පැහැදිලිව පේනවා. සමහර වෙලාවට දෙවියන් වහන්සේ නිශ්ශබ්දයි — ඒත් උන් වහන්සේ කවදාවත් නැති නෑ.','Esthar-ge pothe pudhuma dheyak thiyenawaa — dhewiyan wahansege nama ekapaarakwath liyalaa naee. Eeth haema ahambayakama, haema hari welaawakama, nirbhaya haema kriyaawakama un wahansege atha paehaedhiliwa peenawaa. Samahara welaawata dhewiyan wahanse nishshabdhayi — eeth un wahanse kawadhaawath naethi naee.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'යේසුස් වහන්සේ හමුවීම',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'යේසුස් වහන්සේ හමුවීම',
 overview:{t:'People he met, stories he told',ne:'උන් වහන්සේ හමු වුණු අය, උන් වහන්සේ කියපු කතා',art:FSI_ART.ovmeet,
 start:['නිකදේමස්ගෙන් පටන් ගමු','Ten meetings, one Jesus'],
 paras:[

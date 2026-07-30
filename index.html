@@ -1019,7 +1019,27 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fintro-en{display:block;font-size:.88rem;line-height:1.55}
 .fnodes{display:flex;flex-direction:column;gap:14px;max-width:620px;margin:0 auto;position:relative}
 .fnodes::before{content:"";position:absolute;left:60px;top:24px;bottom:24px;border-left:2.5px dashed color-mix(in srgb,var(--crimson) 35%,var(--line));z-index:0}
+/* the connector means "in this order" — collections have no order, so the
+   library suppresses it there and draws it only down the arc group */
+.flib-loose::before{display:none}
+/* centred on the step numbers: 1.5px border + 14px padding + half of the 22px dot */
+.flib-arc::before{left:26px}
 .fnode{z-index:1}
+/* --- Stories home: grouped library (July 2026) --- */
+.flib-group+.flib-group{margin-top:30px}
+.flib-gh{max-width:620px;margin:0 auto 12px}
+.flib-gh h3{margin:0 0 3px;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
+.flib-gh p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
+.flib-seq{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;background:color-mix(in srgb,var(--crimson) 12%,transparent);color:var(--crimson);
+  border:1px solid color-mix(in srgb,var(--crimson) 26%,transparent)}
+.flib-meta{display:block;font-size:12px;color:var(--muted);margin-top:1px}
+.fnode.done .flib-meta{opacity:.85}
+@media(max-width:560px){
+  .flib-arc::before{left:26px}
+  .flib-seq{width:19px;height:19px;font-size:11px}
+  .fnode-art{width:74px;height:54px}
+}
 /* colour must come from --ink, not the UA `buttontext` system colour: every
    sibling faith button sets its own colour and this one was the outlier */
 .fnode{position:relative;display:flex;align-items:center;gap:14px;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer;transition:transform .12s,border-color .12s}
@@ -1086,15 +1106,36 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fmore-head{max-width:560px;margin:0 auto 16px}
 .fmore-head h2{margin:0 0 6px}
 .fmore-sub{margin:0;color:var(--ink-soft);font-size:14.5px}
-.fmore-cards{display:flex;flex-direction:column;gap:12px;max-width:560px;margin:0 auto}
-.fmore-card{display:flex;align-items:center;gap:14px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:14px;padding:15px 18px;text-decoration:none;color:var(--ink);transition:border-color .15s}
-.fmore-card:hover{border-color:var(--crimson)}
-.fmore-card .fm-ic{flex:none;width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--crimson) 10%,transparent);color:var(--crimson)}
-.fmore-card .fm-tx{flex:1;min-width:0}
-.fmore-card .fm-t{display:block;font-weight:700;font-size:15.5px}
-.fmore-card .fm-d{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
-.fmore-card .fm-arrow{flex:none;color:var(--ink-soft)}
-.fmore-note{max-width:560px;margin:16px auto 0;font-size:12.5px;color:var(--ink-soft)}
+.fmore-cards{display:flex;flex-direction:column;gap:14px;max-width:560px;margin:0 auto}
+/* each card carries its own accent via --fm-accent, so the icon tile, the
+   eyebrow and the hover state all agree without hardcoding a colour twice */
+.fmore-card{--fm-accent:var(--crimson);position:relative;display:flex;align-items:flex-start;gap:15px;
+  background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:17px 18px;
+  text-decoration:none;color:var(--ink);box-shadow:var(--shadow);
+  transition:transform .13s,border-color .13s,box-shadow .13s}
+/* logical inset so the accent bar sits on the leading edge in RTL too (ur/ps) */
+.fmore-card::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:4px;
+  border-start-start-radius:16px;border-end-start-radius:16px;background:var(--fm-accent);opacity:.85}
+.fmore-card:hover{transform:translateY(-2px);border-color:var(--fm-accent);
+  box-shadow:0 2px 4px rgba(27,36,48,.05),0 16px 30px -18px color-mix(in srgb,var(--fm-accent) 55%,transparent)}
+.fmore-card:focus-visible{outline:2px solid var(--fm-accent);outline-offset:3px}
+.fmore-card--film{--fm-accent:var(--teal)}
+.fmore-card .fm-ic{flex:none;width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  background:color-mix(in srgb,var(--fm-accent) 14%,var(--card));color:var(--fm-accent);
+  border:1px solid color-mix(in srgb,var(--fm-accent) 24%,transparent)}
+.fmore-card .fm-tx{flex:1;min-width:0;padding-top:1px}
+.fmore-card .fm-kind{display:block;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--fm-accent);margin-bottom:3px}
+.fmore-card .fm-t{display:block;font-weight:800;font-size:16px;line-height:1.35}
+.fmore-card .fm-d{display:block;font-size:13.2px;line-height:1.5;color:var(--ink-soft);margin-top:4px}
+.fmore-card .fm-arrow{flex:none;color:var(--muted);margin-top:2px;transition:transform .13s,color .13s}
+.fmore-card:hover .fm-arrow{color:var(--fm-accent);transform:translate(2px,-2px)}
+/* the caveat is part of the page, not a footnote — give it a real block */
+.fmore-note{display:flex;gap:11px;align-items:flex-start;max-width:560px;margin:20px auto 0;
+  background:var(--paper-2);border:1px solid var(--line-soft);border-radius:14px;padding:13px 15px;
+  font-size:13px;line-height:1.55;color:var(--ink-soft)}
+.fmore-note svg{flex:none;margin-top:1px;color:var(--muted)}
+.fmore-note p{margin:0}
+.fmore-note strong{color:var(--ink);font-weight:700}
 /* the page is English navigation — keep it LTR even under RTL languages */
 :root[data-lang="ps"] #view-fmore,:root[data-lang="ur"] #view-fmore{direction:ltr}
 </style>
@@ -1342,7 +1383,9 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 <section class="view" id="view-flib">
   <div class="wrap section" style="padding-top:30px">
     <div class="fmore-head"><h2>Stories</h2><p class="fmore-sub" id="flib-sub"></p></div>
-    <div class="fnodes" id="flib-root"></div>
+    <!-- NOT .fnodes: this is a container of groups now, and .fnodes draws the
+         dashed connector — leaving the class here painted one down the whole page -->
+    <div id="flib-root"></div>
   </div>
 </section>
 <section class="view" id="view-fstory">
@@ -1409,7 +1452,10 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <p class="fmore-sub" id="fmore-sub"></p>
     </div>
     <div class="fmore-cards" id="fmore-root"></div>
-    <p class="fmore-note">These are trusted outside resources — they open in a new tab. The stories in this app are retellings; these links take you to the full Bible itself.</p>
+    <div class="fmore-note">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg>
+      <p>The stories in this app are <strong>retellings in plain words</strong>. These two links go to the real thing — the full Bible text and the film — on trusted outside sites, and open in a new tab.</p>
+    </div>
   </div>
 </section>
 
@@ -2243,10 +2289,13 @@ function buildFMore(){
   const book='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10 4.9 7.4 4.5 4 4.5v13.7c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V4.5c-3.4 0-6 .4-8 2z"/><path d="M12 6.5v13.7"/></svg>';
   const play='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5 L16 12 L10 15.5 Z"/></svg>';
   const arrow='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 L17 7M9 7h8v8"/></svg>';
-  const card=(url,ic,t,d)=>'<a class="fmore-card" href="'+url+'" target="_blank" rel="noopener"><span class="fm-ic">'+ic+'</span><span class="fm-tx"><span class="fm-t">'+t+'</span><span class="fm-d">'+d+'</span></span><span class="fm-arrow">'+arrow+'</span></a>';
+  const card=(url,ic,kind,t,d,mod)=>'<a class="fmore-card'+(mod||'')+'" href="'+url+'" target="_blank" rel="noopener">'
+    +'<span class="fm-ic" aria-hidden="true">'+ic+'</span>'
+    +'<span class="fm-tx"><span class="fm-kind">'+kind+'</span><span class="fm-t">'+t+'</span><span class="fm-d">'+d+'</span></span>'
+    +'<span class="fm-arrow" aria-hidden="true">'+arrow+'</span></a>';
   root.innerHTML=
-    card(R.bible,book,'The Bible in '+name,'Read the full Bible in '+name+' — many translations, most with audio.')
-   +card(R.film,play,'The JESUS Film in '+name,'Watch the life of Jesus, drawn from Luke, spoken in '+name+'.');
+    card(R.bible,book,'Read','The Bible in '+name,'The full Bible in '+name+' — several translations, most of them with audio.')
+   +card(R.film,play,'Watch','The JESUS Film in '+name,'The life of Jesus told from Luke, spoken in '+name+'.',' fmore-card--film');
 }
 let FAITH=null,FAITH_KEYS=new Set();
 const FAITHS={}; /* every loaded faith pack by code; FAITH = the active one */
@@ -2349,19 +2398,50 @@ function openStory(sid){
   if(!(FAITH&&(FAITH.stories||[]).some(s=>s.id===sid))){show('flib');return;}
   FSTORY=sid;FVIEW=null;fstopAll();applyFaithBrand();buildFaith();show('fstory');
 }
+/* ----- the Stories home (rebuilt July 2026) -----
+   The five stories are NOT one flat list: three of them run in order
+   (creation -> Jesus -> the church) and two are collections whose pieces
+   stand alone. Each story declares which it is via `kind` in the pack, so
+   this stays a pack-only decision; an untagged story falls into the
+   collection group, which is the safe default (no implied order). The
+   dashed connector is drawn ONLY down the arc group, because there it
+   means something. ----- */
+function flibCard(st,seq){
+  const secs=st.sections||[],total=secs.length+(st.overview?1:0);
+  let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
+  if(st.overview&&FAITH_DONE.has(st.id+'-ov'))n++;
+  const done=n>=total;
+  const badge=done?'<span class="fnode-tick" aria-label="Read">\u2713</span>'
+    :(n?'<span class="flib-prog">'+n+' / '+total+'</span>':'<span class="fnode-go deva">'+fui('start')+'</span>');
+  const parts=secs.length+' '+(st.kind==='collection'?(secs.length===1?'story':'stories'):(secs.length===1?'part':'parts'));
+  return '<button type="button" class="fnode'+(done?' done':'')+'" onclick="openStory(\''+st.id+'\')">'
+    +(seq?'<span class="flib-seq" aria-hidden="true">'+seq+'</span>':'')
+    +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||'')+'</span>'
+    +'<span class="fnode-tx">'
+      +'<span class="fnode-t deva">'+(st.ne||st.title)+'</span>'
+      +'<span class="fnode-en">'+st.title+'</span>'
+      +'<span class="flib-meta">'+parts+'</span>'
+    +'</span>'
+    +badge+'</button>';
+}
 function buildFLib(){
   const root=document.getElementById('flib-root');if(!root||!FAITH)return;
   const sub=document.getElementById('flib-sub');
-  if(sub)sub.textContent='Read in '+((LANG&&LANG.name)||'')+' \u2014 tap a story to begin.';
-  root.innerHTML=(FAITH.stories||[]).map(function(st){
-    const secs=st.sections||[];const total=secs.length+(st.overview?1:0);
-    let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
-    if(st.overview&&FAITH_DONE.has(st.id+'-ov'))n++;
-    const badge=n>=total?'<span class="fnode-tick" aria-label="Read">\u2713</span>':(n?'<span class="flib-prog">'+n+' / '+total+'</span>':'<span class="fnode-go deva">'+fui('start')+'</span>');
-    return '<button type="button" class="fnode" onclick="openStory(\''+st.id+'\')">'
-      +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.ne||st.title)+'</span><span class="fnode-en">'+st.title+'</span></span>'
-      +badge+'</button>';}).join('');
+  if(sub)sub.textContent='Read in '+((LANG&&LANG.name)||'')+'. Every story is a retelling in plain words \u2014 tap one to begin.';
+  const all=FAITH.stories||[];
+  const arc=all.filter(s=>s.kind==='arc'),coll=all.filter(s=>s.kind!=='arc');
+  let h='';
+  if(arc.length){
+    h+='<div class="flib-group">'
+      +'<div class="flib-gh"><h3>The big story</h3><p>One arc, in order \u2014 from the beginning of the world, to Jesus, to the church he left behind.</p></div>'
+      +'<div class="fnodes flib-arc">'+arc.map((s,i)=>flibCard(s,i+1)).join('')+'</div></div>';
+  }
+  if(coll.length){
+    h+='<div class="flib-group">'
+      +'<div class="flib-gh"><h3>Collections</h3><p>Each one is complete on its own. Start anywhere \u2014 no order needed.</p></div>'
+      +'<div class="fnodes flib-loose">'+coll.map(s=>flibCard(s,0)).join('')+'</div></div>';
+  }
+  root.innerHTML=h;
 }
 function loadFaithDone(){try{const o=JSON.parse(localStorage.getItem('sajilo_faith')||'{}');FAITH_DONE=new Set(((o[FAITH?FAITH.code:'ne']||{}).done)||[]);}catch(e){FAITH_DONE=new Set();}}
 function saveFaithDone(){try{const o=JSON.parse(localStorage.getItem('sajilo_faith')||'{}');o[FAITH.code]={done:[...FAITH_DONE]};localStorage.setItem('sajilo_faith',JSON.stringify(o));}catch(e){}}

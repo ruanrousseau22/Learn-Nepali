@@ -95,7 +95,7 @@ registerFaith({code:'ps',
 digits:["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"],
 ui:{start:"پیل",next:"راتلونکی",prev:"پخوانی",finish:"پای",allMoments:"ټولې پېښې",allMomentsEn:"all moments",why:"ولې مهم دي",whyEn:"why it matters",play:"ټوله کیسه واورئ",stop:"ودرېږه",scriptLabel:"پښتو",done:"ټولې {t} پېښې مو ولوستلې — آفرین!",doneEn:"All {t} moments read — well done!",prog:"له {t} څخه {n} لوستل شوي",progEn:"{n} of {t} read",soon:"منځپانګه ژر راځي",soonEn:""},
 stories:[
-{id:"fstory",title:"God’s Story",ne:"د خدای کیسه",
+{id:"fstory",kind:'arc',title:"God’s Story",ne:"د خدای کیسه",
 overview:{t:"The whole story in short",ne:"ښه زېری — په لنډو کې",art:FPS_ART.ovstory,
 start:["له پیله یې وګورو","From here — the whole story in detail"],
 paras:[
@@ -208,7 +208,7 @@ sections:[
 ["هلته به خدای له خپل قوم سره اوسېږي. نور اوښکې نه، نور مرګ نه — تلپاتې ملګرتیا.","Halta ba Khudaay la khpal qawm sara oosegee. Nor ooxke na, nor marg na — talpaate malgartiyaa.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["دا کیسه ستا هم کېدلی شي. پر عیسی باور وکړه او کور ته راشه.","Daa keesa staa ham kedalay shee. Par Isa baawar wakrra aw kor ta raasha.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:"fjesus",title:"Jesus",ne:"عیسی",
+{id:"fjesus",kind:'arc',title:"Jesus",ne:"عیسی",
 overview:{t:"Who is Jesus?",ne:"عیسی څوک دی؟",art:FPS_ART.ovjesus,
 start:["له پیله یې وګورو","From here — his story in detail"],
 paras:[
@@ -289,7 +289,7 @@ sections:[
 ["د عیسی ژوند، مرګ او راژوندي کېدل نړۍ بدله کړه — یو یو کس. هغه نن ژوندی دی — او تا ته غږ کوي.","Da Isa zhwand, marg aw raazhwundee kedal narray badla krra — yaw yaw kas. Hagha nan zhwunday day — aw taa ta ghag kawee.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'د عیسی شاګردان',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'د عیسی شاګردان',
 overview:{t:'The church in short',ne:'کلیسا — په لنډه توګه',art:FPS_ART.ovacts,
 start:['له پیله یې وګورو','From here — the whole story in detail'],
 paras:[
@@ -386,7 +386,7 @@ paras:[
 ['د رسولانو کتاب په رښتیا هېڅکله پای ته ونه رسېد. هماغه روح لا هم ډکوي، هماغه عیسی لا هم بلي، او هماغه کیسه لا هم لیکل کېږي — ښایي، بل ځل، په تا کې.','Da rasoolaano kitaab pa rixtiyaa hetskala paay ta wana rased. Hamaagha Rooh laa ham ddakawee, hamaagha Isa laa ham balee, aw hamaagha keesa laa ham leekal kegee — xaayee, bal dzal, pa taa ke.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'هغه خلک چې خدای وکارول',
+{id:'flives',kind:'collection',title:'People God Used',ne:'هغه خلک چې خدای وکارول',
 overview:{t:'Ordinary people, faithful God',ne:'عادي خلک، وفادار خدای',art:FPS_ART.ovlives,
 start:['اته ژوندونه، یو وفادار خدای','Eight lives, one faithful God'],
 paras:[
@@ -471,7 +471,7 @@ paras:[
 ['د استر په کتاب کې یو عجیب څیز دی — د خدای نوم پکې یو ځل هم نه دی لیکل شوی. بیا هم د هغه لاس په هر اتفاق، په هر سم وخت، په هره زړورتیا کې څرګند دی. کله کله خدای چوپ وي — خو هیڅکله غایب نه وي.','Da Aster pa ketaab ke yaw ajeeb tseez day — da Khudaay noom pake yaw dzal ham na day leekal shaway. Biyaa ham da hagha laas pa har ittifaaq, pa har sam wakht, pa hara zrrawartiyaa ke tsargand day. Kala kala Khudaay chup wee — kho heetskala ghaayab na wee.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'له عیسی سره ملاقات',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'له عیسی سره ملاقات',
 overview:{t:'People he met, stories he told',ne:'هغه خلک چې ورسره وليدل، هغه کیسې چې ويې ويلې',art:FPS_ART.ovmeet,
 start:['له نیکودیموس نه پیل کوو','Ten meetings, one Jesus'],
 paras:[

@@ -90,7 +90,7 @@ registerFaith({code:'lo',
 digits:["໐", "໑", "໒", "໓", "໔", "໕", "໖", "໗", "໘", "໙"],
 ui:{start:"ເລີ່ມ",next:"ຕໍ່ໄປ",prev:"ກ່ອນໜ້າ",finish:"ຈົບ",allMoments:"ທຸກເຫດການ",allMomentsEn:"all moments",why:"ເປັນຫຍັງຈຶ່ງສຳຄັນ",whyEn:"why it matters",play:"ຟັງເລື່ອງທັງໝົດ",stop:"ຢຸດ",scriptLabel:"ລາວ",done:"ອ່ານຄົບທຸກ {t} ເຫດການແລ້ວ — ເກັ່ງຫຼາຍ!",doneEn:"All {t} moments read — well done!",prog:"ອ່ານແລ້ວ {n} ໃນ {t}",progEn:"{n} of {t} read",soon:"ເນື້ອຫາກຳລັງຈະມາ",soonEn:""},
 stories:[
-{id:"fstory",title:"God’s Story",ne:"ເລື່ອງຂອງພຣະເຈົ້າ",
+{id:"fstory",kind:'arc',title:"God’s Story",ne:"ເລື່ອງຂອງພຣະເຈົ້າ",
 overview:{t:"The whole story in short",ne:"ຂ່າວປະເສີດ — ໂດຍຫຍໍ້",art:FLO_ART.ovstory,
 start:["ເລີ່ມແຕ່ຕົ້ນ","From here — the whole story in detail"],
 paras:[
@@ -203,7 +203,7 @@ sections:[
 ["ຢູ່ທີ່ນັ້ນ ພຣະເຈົ້າຈະສະຖິດຢູ່ກັບປະຊາຊົນຂອງພຣະອົງ. ບໍ່ມີນ້ຳຕາອີກ ບໍ່ມີຄວາມຕາຍອີກ — ຄືຄວາມສາມັກຄີຕະຫຼອດໄປ.","Yuu thii nan, Pha Chao ja sathit yuu kap pasaason khong Pha Ong. Bor mii nam taa iik, bor mii khwaam taai iik — kheu khwaam samakkhii talort pai.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["ເລື່ອງນີ້ສາມາດເປັນຂອງເຈົ້າໄດ້ດ້ວຍ. ຈົ່ງເຊື່ອໃນພຣະເຢຊູ ແລ້ວກັບຄືນສູ່ບ້ານ.","Leuang nii saamaat pen khong jao dai duai. Jong seua nai Pha Yesu, laeo kap kheun suu baan.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:"fjesus",title:"Jesus",ne:"ພຣະເຢຊູ",
+{id:"fjesus",kind:'arc',title:"Jesus",ne:"ພຣະເຢຊູ",
 overview:{t:"Who is Jesus?",ne:"ພຣະເຢຊູແມ່ນໃຜ?",art:FLO_ART.ovjesus,
 start:["ເລີ່ມແຕ່ຕົ້ນ","From here — his story in detail"],
 paras:[
@@ -284,7 +284,7 @@ sections:[
 ["ພຣະຊົນ ການສິ້ນພຣະຊົນ ແລະ ການຄືນພຣະຊົນຂອງພຣະເຢຊູໄດ້ປ່ຽນໂລກ — ເທື່ອລະຄົນ. ພຣະອົງຊົງພຣະຊົນຢູ່ໃນມື້ນີ້ — ແລ້ວພຣະອົງກຳລັງເອີ້ນເຈົ້າ.","Pha son, kaan sin pha son lae kaan kheun pha son khong Pha Yesu dai pian lok — theua la khon. Pha Ong song pha son yuu nai meu nii — laeo Pha Ong kamlang eun jao.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'ສາວົກຂອງພຣະເຢຊູ',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'ສາວົກຂອງພຣະເຢຊູ',
 overview:{t:'The church in short',ne:'ຄຣິສຕະຈັກ — ໂດຍຫຍໍ້',art:FLO_ART.ovacts,
 start:['ເບິ່ງແຕ່ຕົ້ນ','From here — the whole story in detail'],
 paras:[
@@ -381,7 +381,7 @@ paras:[
 ['ໜັງສືກິດຈະການ ຄວາມຈິງແລ້ວບໍ່ເຄີຍຈົບ. ພຣະວິນຍານອົງດຽວກັນຍັງເຕີມເຕັມ ພຣະເຢຊູອົງດຽວກັນຍັງເອີ້ນ ແລະ ເລື່ອງດຽວກັນຍັງຂຽນຕໍ່ຢູ່ — ບາງທີ ຕໍ່ໄປ ຢູ່ໃນເຈົ້າ.','Nangseu Kitjakaan khwaam jing laeo bor khoei job. Pha Winyan ong diao kan nyang toem tem, Pha Yesu ong diao kan nyang oen, lae leuang diao kan nyang khian tor yuu — baang thii, tor pai, yuu nai jao.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'ຄົນທີ່ພຣະເຈົ້າຊົງໃຊ້',
+{id:'flives',kind:'collection',title:'People God Used',ne:'ຄົນທີ່ພຣະເຈົ້າຊົງໃຊ້',
 overview:{t:'Ordinary people, faithful God',ne:'ຄົນທຳມະດາ ພຣະເຈົ້າຜູ້ສັດຊື່',art:FLO_ART.ovlives,
 start:['ແປດຊີວິດ ພຣະເຈົ້າຜູ້ສັດຊື່ອົງດຽວ','Eight lives, one faithful God'],
 paras:[
@@ -466,7 +466,7 @@ paras:[
 ['ມີສິ່ງແປກຢູ່ໃນໜັງສືເອສະເທີ — ພຣະນາມຂອງພຣະເຈົ້າບໍ່ໄດ້ຖືກຂຽນໄວ້ໃນນັ້ນເລີຍ ແມ່ນແຕ່ເທື່ອດຽວ. ແຕ່ພຣະຫັດຂອງພຣະອົງເຫັນໄດ້ຊັດເຈນໃນທຸກຄວາມບັງເອີນ ທຸກຈັງຫວະທີ່ພໍດີ ທຸກການກະທຳທີ່ກ້າຫານ. ບາງເທື່ອພຣະເຈົ້າງຽບ — ແຕ່ພຣະອົງບໍ່ເຄີຍບໍ່ຢູ່.','Mii sing paek yuu nai nangseu Esathoe — pha naam khong Pha Chao bor dai theuk khian vai nai nan loei, maen tae theua diao. Tae pha hat khong Pha Ong hen dai sat jen nai thuk khwaam bang oen, thuk jang va thii phor dii, thuk kaan katham thii kaa haan. Baang theua Pha Chao ngiap — tae Pha Ong bor khoei bor yuu.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'ພົບກັບພຣະເຢຊູ',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'ພົບກັບພຣະເຢຊູ',
 overview:{t:'People he met, stories he told',ne:'ຄົນທີ່ພຣະອົງພົບ, ເລື່ອງທີ່ພຣະອົງເລົ່າ',art:FLO_ART.ovmeet,
 start:['ເລີ່ມຈາກນີໂກເດມ','Ten meetings, one Jesus'],
 paras:[

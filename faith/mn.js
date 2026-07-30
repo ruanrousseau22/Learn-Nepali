@@ -101,7 +101,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 registerFaith({code:'mn',
 ui:{start:"Эхлэх",next:"Дараах",prev:"Өмнөх",finish:"Дуусгах",allMoments:"Бүх үйл явдал",allMomentsEn:"all moments",why:"Яагаад чухал вэ",whyEn:"why it matters",play:"Бүх түүхийг сонсох",stop:"Зогсоох",scriptLabel:"Кирилл",done:"Бүх {t} үйл явдлыг уншиж дууслаа — баяр хүргэе!",doneEn:"All {t} moments read — well done!",prog:"{t}-аас {n} нь уншсан",progEn:"{n} of {t} read",soon:"Агуулга удахгүй нэмэгдэнэ",soonEn:""},
 stories:[
-{id:"fstory",title:"God’s Story",ne:"Бурханы түүх",
+{id:"fstory",kind:'arc',title:"God’s Story",ne:"Бурханы түүх",
 overview:{t:"The whole story in short",ne:"Сайн мэдээ — товчхондоо",art:FMN_ART.ovstory,
 start:["Эхнээс нь үзье","From here — the whole story in detail"],
 paras:[
@@ -214,7 +214,7 @@ sections:[
 ["Тэнд Бурхан ард түмэнтэйгээ хамт оршино. Нулимс байхгүй, үхэл байхгүй — үүрдийн нөхөрлөл байх болно.","Tend Burkhan ard tumenteigee khamt orshino. Nulims baikhgui, ukhel baikhgui — uurdiin nokhorlol baikh bolno.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["Энэ түүх чинийх ч байж болно. Есүст итгэ, гэртээ буц.","Ene tuukh chiniikh ch baij bolno. Yesust itge, gertee buts.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:"fjesus",title:"Jesus",ne:"Есүс",
+{id:"fjesus",kind:'arc',title:"Jesus",ne:"Есүс",
 overview:{t:"Who is Jesus?",ne:"Есүс хэн бэ?",art:FMN_ART.ovjesus,
 start:["Эхнээс нь үзье","From here — his story in detail"],
 paras:[
@@ -295,7 +295,7 @@ sections:[
 ["Есүсийн амьдрал, үхэл, амилалт дэлхийг өөрчилсөн — нэг нэг хүнээр. Тэр өнөөдөр амьд байна — Тэр чамайг дуудаж байна.","Yesusiin amidral, ukhel, amilalt delkhiig oorchilson — neg neg khuneer. Ter onoodor amid baina — Ter chamaig duudaj baina.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'Есүсийн дагалдагчид',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'Есүсийн дагалдагчид',
 overview:{t:'The church in short',ne:'Чуулган — товчоор',art:FMN_ART.ovacts,
 start:['Эхнээс нь үзье','From here — the whole story in detail'],
 paras:[
@@ -392,7 +392,7 @@ paras:[
 ['Үйлс ном үнэндээ хэзээ ч дуусаагүй. Мөнөөх Сүнс одоо ч дүүргэсээр, мөнөөх Есүс одоо ч дуудсаар, мөнөөх түүх одоо ч бичигдсээр байна — магадгүй, дараа нь, чиний дотор.','Uils nom unendee khezee ch duusaagui. Monookh Suns odoo ch duurgeseer, monookh Yesus odoo ch duudsaar, monookh tuukh odoo ch bichigdseer baina — magadgui, daraa ni, chinii dotor.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'Бурханы ашигласан хүмүүс',
+{id:'flives',kind:'collection',title:'People God Used',ne:'Бурханы ашигласан хүмүүс',
 overview:{t:'Ordinary people, faithful God',ne:'Энгийн хүмүүс, итгэлтэй Бурхан',art:FMN_ART.ovlives,
 start:['Найман амьдрал, нэг итгэлтэй Бурхан','Eight lives, one faithful God'],
 paras:[
@@ -477,7 +477,7 @@ paras:[
 ['Естерийн номд нэг сонин зүйл бий — түүнд Бурханы нэр нэг ч удаа бичигдээгүй. Гэсэн ч тохиолдол бүрд, яг таарсан цаг бүрд, зоригтой алхам бүрд Түүний мутар тодорхой харагдана. Заримдаа Бурхан чимээгүй байдаг — гэвч Тэр хэзээ ч эзгүй байдаггүй.','Yesteriin nomd neg sonin zuil bii — tuund Burkhanii ner neg ch udaa bichigdeegui. Gesen ch tokhioldol burd, yag taarsan tsag burd, zorigtoi alkham burd Tuunii mutar todorkhoi kharagdana. Zarimdaa Burkhan chimeegui baidag — gevch Ter khezee ch ezgui baidaggui.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'Есүстэй уулзсан нь',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'Есүстэй уулзсан нь',
 overview:{t:'People he met, stories he told',ne:'Түүний уулзсан хүмүүс, түүний ярьсан түүхүүд',art:FMN_ART.ovmeet,
 start:['Никодемээс эхэлье','Ten meetings, one Jesus'],
 paras:[

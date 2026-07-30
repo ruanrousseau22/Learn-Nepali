@@ -90,7 +90,7 @@ registerFaith({code:'my',
 digits:["၀","၁","၂","၃","၄","၅","၆","၇","၈","၉"],
 ui:{start:"စမယ်",next:"ရှေ့ဆက်",prev:"နောက်ပြန်",finish:"ပြီးပါပြီ",allMoments:"အဖြစ်အပျက်အားလုံး",allMomentsEn:"all moments",why:"ဘာကြောင့် အရေးကြီးလဲ",whyEn:"why it matters",play:"ဇာတ်လမ်းတစ်ခုလုံး နားထောင်ပါ",stop:"ရပ်မယ်",scriptLabel:"မြန်မာ",done:"အဖြစ်အပျက် {t} ခုလုံး ဖတ်ပြီးပါပြီ — ဂုဏ်ယူပါတယ်!",doneEn:"All {t} moments read — well done!",prog:"{t} ခုအနက် {n} ခု ဖတ်ပြီး",progEn:"{n} of {t} read",soon:"အကြောင်းအရာ မကြာခင် ရောက်လာပါမယ်",soonEn:""},
 stories:[
-{id:'fstory',title:'God\u2019s Story',ne:'ဘုရားသခင်ရဲ့ ဇာတ်လမ်း',
+{id:'fstory',kind:'arc',title:'God\u2019s Story',ne:'ဘုရားသခင်ရဲ့ ဇာတ်လမ်း',
 overview:{t:'The whole story in short',ne:'သတင်းကောင်း — အကျဉ်းချုပ်',art:FMY_ART.ovstory,
 start:['အစကနေ ကြည့်ကြမယ်','From here — the whole story in detail'],
 paras:[
@@ -203,7 +203,7 @@ sections:[
 ["အဲဒီမှာ ဘုရားသခင်ဟာ ကိုယ်တော့်လူတွေနဲ့အတူ နေမှာပါ။ မျက်ရည်မရှိ၊ သေခြင်းမရှိ — မိတ်သဟာယ ထာဝရပါ။","Edi-hma Hpayathakin ha Kotaw lu-dwe neh a-tu ne-hma-ba. Myet-yi ma-shi, thei-chin ma-shi — meik-thahaya htawara ba.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["ဒီဇာတ်လမ်းဟာ သင့်အတွက်လည်း ဖြစ်နိုင်ပါတယ်။ ယေရှုကို ယုံကြည်ပြီး အိမ်ပြန်လာခဲ့ပါ။","Di zatlan ha thint a-twet-leh hpyit-nain-ba-de. Yeshu ko younkyi-pyi ein pyan-la-kheh-ba.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:'fjesus',title:'Jesus',ne:'ယေရှု',
+{id:'fjesus',kind:'arc',title:'Jesus',ne:'ယေရှု',
 overview:{t:'Who is Jesus?',ne:'ယေရှုဆိုတာ ဘယ်သူလဲ?',art:FMY_ART.ovjesus,
 start:['အစကနေ ကြည့်ကြမယ်','From here — his story in detail'],
 paras:[
@@ -284,7 +284,7 @@ sections:[
 ["ယေရှုရဲ့ ဘဝ၊ အသေခံခြင်းနဲ့ ရှင်ပြန်ထမြောက်ခြင်းဟာ လောကကို ပြောင်းလဲစေခဲ့ပါတယ် — တစ်ယောက်ချင်းစီပါ။ ဒီနေ့အထိ ကိုယ်တော် အသက်ရှင်နေပြီး သင့်ကိုလည်း ခေါ်နေပါတယ်။","Yeshu ye bawa, a-thei-khan-chin neh shin-pyan-htamyauk-chin ha lawka ko pyaung-leh-se-khe-ba-de — ta-yauk-chin-si ba. Di-ne a-hti Kotaw a-thet-shin-ne-pyi thint ko-leh khaw-ne-ba-de.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'ယေရှုရဲ့ တပည့်တော်တွေ',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'ယေရှုရဲ့ တပည့်တော်တွေ',
 overview:{t:'The church in short',ne:'အသင်းတော် — အကျဉ်းချုပ်',art:FMY_ART.ovacts,
 start:['အစကနေ ကြည့်ကြမယ်','From here — the whole story in detail'],
 paras:[
@@ -381,7 +381,7 @@ paras:[
 ['တမန်တော်ဝတ္ထုကျမ်းဟာ တကယ်တော့ ဘယ်တုန်းကမှ မဆုံးခဲ့ပါဘူး။ အဲဒီဝိညာဉ်တော်ပဲ အခုထိ ဖြည့်နေဆဲ၊ အဲဒီယေရှုပဲ အခုထိ ခေါ်နေဆဲ၊ အဲဒီဇာတ်လမ်းပဲ အခုထိ ရေးနေဆဲပါ — နောက်တစ်ခန်းက သင့်အထဲမှာ ဖြစ်ချင် ဖြစ်နေပါလိမ့်မယ်။','Taman-taw-wuttu-kyan ha tageh-daw beh-doun-ga-hma ma-hsoun-khe-ba-bu. Edi Weinyintaw be a-khu-hti hpye-ne-zeh, edi Yeshu be a-khu-hti khaw-ne-zeh, edi zatlan be a-khu-hti ye-ne-zeh ba — nauk ta-khan ga thint a-hte-hma hpyit-chin hpyit-ne-ba-leint-me.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'ဘုရားသခင် သုံးခဲ့တဲ့ လူတွေ',
+{id:'flives',kind:'collection',title:'People God Used',ne:'ဘုရားသခင် သုံးခဲ့တဲ့ လူတွေ',
 overview:{t:'Ordinary people, faithful God',ne:'သာမန်လူတွေ၊ သစ္စာရှိတဲ့ ဘုရားသခင်',art:FMY_ART.ovlives,
 start:['ဘဝရှစ်ခု၊ သစ္စာရှိတဲ့ ဘုရားသခင်တစ်ပါး','Eight lives, one faithful God'],
 paras:[
@@ -466,7 +466,7 @@ paras:[
 ['ဧသတာကျမ်းမှာ ထူးဆန်းတာတစ်ခု ရှိတယ် — ဘုရားသခင့်နာမတော်ကို တစ်ကြိမ်တောင် မရေးထားဘူး။ ဒါပေမဲ့ တိုက်ဆိုင်မှုတိုင်း၊ အချိန်ကိုက်ဖြစ်တာတိုင်း၊ သတ္တိရှိတဲ့လုပ်ရပ်တိုင်းမှာ ကိုယ်တော့်လက်တော်ကို ထင်ထင်ရှားရှား မြင်ရတယ်။ တစ်ခါတလေ ဘုရားသခင် တိတ်ဆိတ်နေတယ် — ဒါပေမဲ့ ဘယ်တော့မှ မရှိမနေတာ မဟုတ်ဘူး။','Ethata-kyan hma htu-hsan-da ta-khu shi-de — Hpayathakin nama-daw ko ta-kyein-daung ma-ye-hta-bu. Dabemeh taik-hsain-hmu-dain, a-chein-kaik-hpyit-ta-dain, thatti-shi-de-lok-yat-tain hma Kotaw let-taw ko htin-htin-sha-sha myin-ya-de. Ta-kha-ta-le Hpayathakin teik-hseik-ne-de — dabemeh beh-daw-hma ma-shi-ma-ne-da mahok-bu.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'ယေရှုနဲ့ တွေ့ဆုံခြင်း',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'ယေရှုနဲ့ တွေ့ဆုံခြင်း',
 overview:{t:'People he met, stories he told',ne:'ကိုယ်တော် တွေ့ခဲ့တဲ့လူတွေ၊ ကိုယ်တော် ပြောခဲ့တဲ့ပုံပြင်တွေ',art:FMY_ART.ovmeet,
 start:['နိကောဒင်ကနေ စကြရအောင်','Ten meetings, one Jesus'],
 paras:[

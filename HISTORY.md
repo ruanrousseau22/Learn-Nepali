@@ -1834,6 +1834,37 @@ spoken register with ထာဝရဘုရား only where the OT sense demande
 the honorific-noun-plus-spoken-verb pattern; jv roms were regenerated from
 the pack's own a->o map; lo was scanned for Thai homoglyphs before building
 (clean) and needed one resume pass after edge-tts dropped 2 clips.
+
+### Stories home + More page restyle (July 2026, Ruan)
+
+**The Stories home read as random** because five very different things were
+rendered as one flat list joined by a dashed connector — and that connector
+says "do these in order", which is true of three of them and false of the
+other two. Fix: the pack now tags each story `kind:'arc'` or
+`kind:'collection'`, and `buildFLib()` renders two labelled groups —
+**The big story** (numbered 1-2-3, connector drawn) and **Collections**
+(no numbers, no connector, "start anywhere"). Cards gained a part count
+("10 parts" / "8 stories"). An untagged story falls into Collections, so
+the pack-only promise survives a future sixth story.
+
+Two traps hit while building it:
+- `#flib-root` still had the `.fnodes` class from the old flat list. Since
+  `.fnodes::before` IS the connector, the root painted a second dashed line
+  down the whole page, straight through both group headings. The root is a
+  container of groups now — the class had to go.
+- The connector needs to line up with the step numbers, not the old art
+  thumbnails: `1.5px border + 14px padding + half the 22px dot = 26px`,
+  verified against the measured badge centre (26.5px) rather than eyeballed.
+
+**The More page** was two flat grey cards with identical washed-out icon
+tiles. Restyled to match the story cards: white card + shadow + hover lift,
+a per-resource accent driven by one `--fm-accent` custom property (crimson
+for the Bible, `--teal` for the film — both already theme-aware, so dark
+mode needed no extra rules), a leading accent bar on the logical inline
+start, READ/WATCH eyebrows, and the trailing caveat promoted from loose
+grey text into a proper bordered note. Verified light + dark, desktop +
+375px, and in Urdu — where the page stays deliberately LTR, so the accent
+bar correctly stays on the left.
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a

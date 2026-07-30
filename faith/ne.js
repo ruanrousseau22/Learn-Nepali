@@ -94,7 +94,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({code:'ne',
 stories:[
-{id:'fstory',title:'God’s Story',ne:'परमेश्वरको कथा',
+{id:'fstory',kind:'arc',title:'God’s Story',ne:'परमेश्वरको कथा',
 overview:{t:'The whole story in short',ne:'सुसमाचार — छोटकरीमा',art:FNE_ART.ovstory,
 start:['सुरुदेखि हेरौं','From here — the whole story in detail'],
 paras:[
@@ -228,7 +228,7 @@ paras:[
 ['यो कथा तपाईंको पनि हुन सक्छ। येशूमा विश्वास गर्नुहोस्, र घर फर्कनुहोस्।','Yo kathaa tapaainko pani huna sakchha. Yeshumaa vishwaas garnuhos, ra ghar pharkanuhos.','This story can be yours too. Believe in Jesus, and come home.','John 3:16']]}
 ]},
 
-{id:'fjesus',title:'Jesus',ne:'येशू',
+{id:'fjesus',kind:'arc',title:'Jesus',ne:'येशू',
 overview:{t:'Who is Jesus?',ne:'येशू को हुनुहुन्छ?',art:FNE_ART.ovjesus,
 start:['सुरुदेखि हेरौं','From here — his story in detail'],
 paras:[
@@ -329,7 +329,7 @@ paras:[
 ['येशूको जीवन, मृत्यु र पुनरुत्थानले संसार बदल्यो — एक-एक व्यक्ति गर्दै। आज पनि उहाँ जीवित हुनुहुन्छ, र उहाँले तपाईंलाई बोलाउनुहुन्छ।','Yeshuko jeewan, mrityu ra punarutthaanle sansaar badalyo — ek-ek vyakti gardai. Aaja pani uhaan jeewit hunuhunchha, ra uhaanle tapaainlaai bolaunuhunchha.','The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.','Revelation 3:20']]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'येशूका चेलाहरू',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'येशूका चेलाहरू',
 overview:{t:'The church in short',ne:'मण्डली — छोटकरीमा',art:FNE_ART.ovacts,
 start:['सुरुदेखि हेरौं','From here — the whole story in detail'],
 paras:[
@@ -426,7 +426,7 @@ paras:[
 ['प्रेरितको पुस्तक साँच्चै कहिल्यै सकिएन। उही आत्माले अझै भर्नुहुन्छ, उही येशूले अझै बोलाउनुहुन्छ, र उही कथा अझै लेखिँदैछ — सायद, अब, तपाईंमा।','Preritko pustak saanchai kahilyai sakiena. Uhi Aatmaale ajhai bharnuhunchha, uhi Yeshule ajhai bolaaunuhunchha, ra uhi kathaa ajhai lekhindaichha — saayad, aba, tapaainmaa.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'परमेश्वरले प्रयोग गर्नुभएका मानिसहरू',
+{id:'flives',kind:'collection',title:'People God Used',ne:'परमेश्वरले प्रयोग गर्नुभएका मानिसहरू',
 overview:{t:'Ordinary people, faithful God',ne:'साधारण मानिस, विश्वासयोग्य परमेश्वर',art:FNE_ART.ovlives,
 start:['यूसुफबाट सुरु गरौं','Eight lives, one faithful God'],
 paras:[
@@ -513,7 +513,7 @@ paras:[
 ['एस्तरको पुस्तकभरि एउटा अनौठो कुरा छ — परमेश्वरको नाम एक पटक पनि लेखिएको छैन। तर हरेक संयोग, हरेक समय-मिलान, हरेक साहसमा उहाँकै हात प्रस्टै देखिन्छ। कहिलेकाहीं परमेश्वर मौन रहनुहुन्छ — तर कहिल्यै अनुपस्थित हुनुहुन्न।','Estarko pustakbhari eutaa anautho kuraa chha — Parameshwarko naam ek patak pani lekhieko chhaina. Tara harek sanyog, harek samaya-milaan, harek saahasmaa uhaankai haat prastai dekhinchha. Kahilekaahin Parameshwar mauna rahanuhunchha — tara kahilyai anupasthit hunuhunna.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'येशूसँगको भेट',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'येशूसँगको भेट',
 overview:{t:'People he met, stories he told',ne:'उहाँले भेट्नुभएका मानिसहरू, उहाँले भन्नुभएका कथाहरू',art:FNE_ART.ovmeet,
 start:['निकोदेमसबाट सुरु गरौं','Ten meetings, one Jesus'],
 paras:[

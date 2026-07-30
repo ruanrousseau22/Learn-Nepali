@@ -87,7 +87,7 @@ registerFaith({code:'bn',
 digits:["০","১","২","৩","৪","৫","৬","৭","৮","৯"],
 ui:{start:"শুরু",next:"পরবর্তী",prev:"আগের",finish:"সমাপ্ত",allMoments:"সব ঘটনা",allMomentsEn:"all moments",why:"কেন গুরুত্বপূর্ণ",whyEn:"why it matters",play:"পুরো গল্প শুনুন",stop:"থামুন",scriptLabel:"বাংলা",done:"সব {t}টি ঘটনা পড়া হয়েছে — অভিনন্দন!",doneEn:"All {t} moments read — well done!",prog:"{t}টির মধ্যে {n}টি পড়া হয়েছে",progEn:"{n} of {t} read",soon:"শীঘ্রই আসছে",soonEn:""},
 stories:[
-{id:'fstory',title:'God\u2019s Story',ne:'ঈশ্বরের গল্প',
+{id:'fstory',kind:'arc',title:'God\u2019s Story',ne:'ঈশ্বরের গল্প',
 overview:{t:'The whole story in short',ne:'সুসমাচার — সংক্ষেপে',art:FBN_ART.ovstory,
 start:['শুরু থেকে দেখি','From here — the whole story in detail'],
 paras:[
@@ -200,7 +200,7 @@ sections:[
 ["সেখানে ঈশ্বর তাঁর মানুষদের সঙ্গে বাস করবেন। আর চোখের জল নেই, মৃত্যু নেই — সহভাগিতা চিরকালের জন্য।","Shekhane Ishwor tar manushder shonge bash korben. Ar chokher jol nei, mrityu nei — shohobhagita chirokaler jonno.","There God will dwell with his people. No more tears, no more death — fellowship forever.","Revelation 21:3–4"],
 ["এই গল্প তোমারও হতে পারে। যীশুকে বিশ্বাস করো, আর ঘরে ফিরে এসো।","Ei golpo tomaro hote pare. Jishuke bishwash koro, ar ghore phire esho.","This story can be yours too. Believe in Jesus, and come home.","John 3:16"]]}
 ]},
-{id:'fjesus',title:'Jesus',ne:'যীশু',
+{id:'fjesus',kind:'arc',title:'Jesus',ne:'যীশু',
 overview:{t:'Who is Jesus?',ne:'যীশু কে?',art:FBN_ART.ovjesus,
 start:['শুরু থেকে দেখি','From here — his story in detail'],
 paras:[
@@ -281,7 +281,7 @@ sections:[
 ["যীশুর জীবন, মৃত্যু আর পুনরুত্থান জগৎ বদলে দিল — একজন একজন করে। আজও তিনি জীবিত, আর তিনি তোমাকে ডাকছেন।","Jishur jibon, mrityu ar punorutthan jogot bodle dilo — ekjon ekjon kore. Ajo tini jibito, ar tini tomake dakchhen.","The life, death and resurrection of Jesus changed the world — one person at a time. He is alive today — and he is calling you.","Revelation 3:20"]]}
 ]},
 
-{id:'facts',title:'Jesus’ Followers',ne:'যীশুর শিষ্যেরা',
+{id:'facts',kind:'arc',title:'Jesus’ Followers',ne:'যীশুর শিষ্যেরা',
 overview:{t:'The church in short',ne:'মণ্ডলী — সংক্ষেপে',art:FBN_ART.ovacts,
 start:['শুরু থেকে দেখি','From here — the whole story in detail'],
 paras:[
@@ -378,7 +378,7 @@ paras:[
 ['প্রেরিত বইটা আসলে কোনোদিন শেষ হয়নি। সেই একই আত্মা আজও পূর্ণ করেন, সেই একই যীশু আজও ডাকেন, আর সেই একই গল্প আজও লেখা হচ্ছে — হয়তো, এবার, তোমার মধ্যে।','Prerit boita ashole konodin shesh hoyni. Shei eki Atma ajo purno koren, shei eki Jishu ajo daken, ar shei eki golpo ajo lekha hochchhe — hoyto, ebar, tomar moddhe.','The book of Acts never really ended. The same Spirit still fills, the same Jesus still calls, and the same story is still being written — perhaps, next, in you.']]}
 ]},
 
-{id:'flives',title:'People God Used',ne:'ঈশ্বর যাঁদের ব্যবহার করেছেন',
+{id:'flives',kind:'collection',title:'People God Used',ne:'ঈশ্বর যাঁদের ব্যবহার করেছেন',
 overview:{t:'Ordinary people, faithful God',ne:'সাধারণ মানুষ, বিশ্বস্ত ঈশ্বর',art:FBN_ART.ovlives,
 start:['আটটি জীবন, এক বিশ্বস্ত ঈশ্বর','Eight lives, one faithful God'],
 paras:[
@@ -463,7 +463,7 @@ paras:[
 ['ইষ্টেরের বইয়ে একটা অদ্ভুত ব্যাপার আছে — তাতে ঈশ্বরের নাম একবারও লেখা নেই। তবু প্রতিটি কাকতালীয় ঘটনায়, প্রতিটি নিখুঁত সময়ে, প্রতিটি সাহসী পদক্ষেপে তাঁর হাত স্পষ্ট। কখনো কখনো ঈশ্বর নীরব — কিন্তু তিনি কখনো অনুপস্থিত নন।','Ishterer boiye ekta odbhut bepar achhe — tate Ishworer nam ekbaro lekha nei. Tobu protiti kaktaliyo ghotonay, protiti nikhut shomoye, protiti shahoshi podokkhepe tar hat shposhto. Kokhono kokhono Ishwor nirob — kintu tini kokhono onuposthit non.','There is something strange about the book of Esther — God’s name is never written in it, not once. Yet his hand is plain in every coincidence, every perfect timing, every act of courage. Sometimes God is silent — but he is never absent.','Esther 9:20–22']]}
 ]},
 
-{id:'fmeet',title:'Meeting Jesus',ne:'যীশুর সঙ্গে দেখা',
+{id:'fmeet',kind:'collection',title:'Meeting Jesus',ne:'যীশুর সঙ্গে দেখা',
 overview:{t:'People he met, stories he told',ne:'যাঁদের সঙ্গে তিনি দেখা করেছিলেন, যে গল্পগুলো তিনি বলেছিলেন',art:FBN_ART.ovmeet,
 start:['নীকদীম দিয়ে শুরু করি','Ten meetings, one Jesus'],
 paras:[

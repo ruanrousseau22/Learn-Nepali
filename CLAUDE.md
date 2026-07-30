@@ -386,8 +386,15 @@ EXCLUDES the lost son, the good Samaritan and the two builders, which
 EN/refs are byte-identical in all 11), no XP/exercises;
 progress per device in `sajilo_faith` (ids unchanged by the library
 refactor). **Stories library (July 2026)**: faith nav is Stories · More ·
-Settings. `view-flib` lists every story in the loaded pack as a card
-(`buildFLib()`); `view-fstory` is the GENERIC HOST — `openStory(sid)` sets
+Settings. `view-flib` groups the loaded pack's stories into **The big story**
+(the arc, numbered, joined by the dashed connector) and **Collections**
+(no order, no connector) — each story declares which via `kind:'arc'` or
+`kind:'collection'` in the pack, so grouping stays a pack-only decision and
+an untagged story falls safely into Collections. Cards show a part count and
+progress (`buildFLib()`); NOTE `#flib-root` must NOT carry the `.fnodes`
+class — `.fnodes::before` draws the connector, and leaving it there painted
+one down the entire page.
+ `view-fstory` is the GENERIC HOST — `openStory(sid)` sets
 `FSTORY`, `applyFaithBrand()` paints the hero from the story's `ne`/`title`,
 `buildFaith()` renders only the current story. **Adding a story is now a
 pack-only change** (story object + art keys; no views, no tabs). Legacy ids
@@ -418,7 +425,7 @@ single-quoted JS, which it caught on the first fmeet build).
   `faithBase()` = `audio-<code>f/`. Language is locked while in faith mode;
   the faith picker lists `FAITH_CATALOG`. Pickers stay English (navigation);
   content is native-first.
-- **More page (July 2026)**: faith mode's third tab (`view-fmore`,
+- **More page (July 2026, restyled)**: faith mode's third tab (`view-fmore`,
   `FAITH_RESOURCES` map + `buildFMore()` in index.html) — per-language links
   to the real Bible (bible.com language pages; ps → afghanbibles.org) and
   the JESUS Film, every URL curl-verified. **ALL external links live on this
