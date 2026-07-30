@@ -233,12 +233,12 @@ TEMPLATE = """<!doctype html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="https://bhasaly.com/og-image.png">
+<meta property="og:image" content="https://bhasaly.com/og-image.png?v=2">
 <meta property="og:site_name" content="Bhasaly">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://bhasaly.com/og-image.png">
+<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=2">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
