@@ -1801,6 +1801,39 @@ Verified live in the browser: 4 library cards per language, 9 story nodes,
 readers render with native section counts (۶/۸, ၆/၈, ໖/໘, ៦/៨) and clips
 return 200. `index.html` is byte-untouched across the entire collection —
 the pack-only story architecture held exactly as designed.
+
+### Meeting Jesus (`fmeet`) — the fifth story, July 2026
+
+The collection Ruan asked for next: **encounters and parables**. Designed
+AGAINST the existing Jesus story rather than beside it — `fjesus` already
+tells the lost son, the good Samaritan and the two builders, so all three
+are deliberately absent here. What went in instead: five people Jesus met
+one-to-one (Nicodemus at night, the woman at the well, the woman they came
+to stone, Zacchaeus, Bartimaeus) and five parables he told that `fjesus`
+never covers (the lost sheep and the lost coin, the Pharisee and the tax
+collector, the sower, the unforgiving servant, the great banquet). Ten
+sections x 6 paras + note + 5-beat overview = 75 spoken strings per
+language; 825 clips across the eleven.
+
+Eleven new emblems on gradient ids **gX1-gX11** (gW/gY/gZ were taken;
+gX was free). Every SVG XML-validated and checked ASCII-only before
+insertion — a stray CJK character had slipped into one colour value.
+
+`scratchpad/build_meet.py` generalises `build_lives.py`: run it on `ne`
+first and it emits `meet_master.json` (English + refs) as a side effect,
+then every other language supplies natives+roms only. **The builder now
+asserts on every emitted string, English included** — the first `ne` build
+produced un-parseable JS because English possessives ("God's word",
+"a hundred days' wages") carried ASCII apostrophes into single-quoted
+JS strings. House style is the typographic ’, as the rest of the pack
+already used.
+
+Per-language work was again pack-led, not templated: km kept ទ្រង់ for
+Jesus throughout (this story is entirely about him); my stayed in the
+spoken register with ထာဝရဘုရား only where the OT sense demanded; si used
+the honorific-noun-plus-spoken-verb pattern; jv roms were regenerated from
+the pack's own a->o map; lo was scanned for Thai homoglyphs before building
+(clean) and needed one resume pass after edge-tts dropped 2 clips.
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a

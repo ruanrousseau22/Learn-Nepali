@@ -374,12 +374,16 @@ which rules and sentences matter MORE here than elsewhere?
 
 Christian by design (the secular rule does not apply here). Audience:
 speakers of each language learning about Jesus — **native-first on every
-surface** (hero h1 native, English the quiet second line). FOUR story pages
+surface** (hero h1 native, English the quiet second line). FIVE story pages
 (God's Story: 10 sections + 11-beat overview; Jesus: 10 + overview;
 Jesus' Followers / Acts, id `facts`: 10 + 6-beat overview, July 2026 — all
 11 languages, 70 strings each, ends localized per country; People God Used,
 id `flives`: 8 Old-Testament lives + 5-beat overview, all 11 languages,
-62 strings each, NO localized paras — EN/refs byte-identical everywhere), no XP/exercises;
+62 strings each; Meeting Jesus, id `fmeet`: 5 people he met + 5 parables
+he told + 5-beat overview, all 11 languages, 75 strings each — deliberately
+EXCLUDES the lost son, the good Samaritan and the two builders, which
+`fjesus` already tells. Neither flives nor fmeet has localized paras —
+EN/refs are byte-identical in all 11), no XP/exercises;
 progress per device in `sajilo_faith` (ids unchanged by the library
 refactor). **Stories library (July 2026)**: faith nav is Stories · More ·
 Settings. `view-flib` lists every story in the loaded pack as a card
@@ -389,7 +393,14 @@ Settings. `view-flib` lists every story in the loaded pack as a card
 pack-only change** (story object + art keys; no views, no tabs). Legacy ids
 fjesus/facts still route via `show()` → `openStory`. `scratchpad
 build_acts.py` (session tooling, see HISTORY) inserted the Acts story with
-byte-identity asserts — packs hold 313 spoken strings each (251 before the flives collection).
+byte-identity asserts; `build_lives.py` and `build_meet.py` followed the same
+shape — packs hold 388 spoken strings each (251 → 313 after flives → 388
+after fmeet). **New-collection recipe**: author `<coll>_ne.json` (EN + refs +
+ne), let the builder emit `<coll>_master.json`, then one JSON of natives+roms
+per language. The builder asserts EVERY emitted string — including the
+English — against `' " < > \`; house style for apostrophes is the
+typographic ’ (an ASCII one in an English possessive breaks the
+single-quoted JS, which it caught on the first fmeet build).
 - Content: `faith/<code>.js`, `registerFaith({code, digits?, ui, stories})`;
   sections `{id,t,ne,art,note,paras:[[native,rom,english,ref?]]}` — the `ne`
   field name always holds the NATIVE string. All 11 languages are fully
