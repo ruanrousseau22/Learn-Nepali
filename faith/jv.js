@@ -91,7 +91,7 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({
   code:"jv",
-  ui:{libTitle:'Nepangi Gusti Allah',"start": "Wiwiti", "next": "Terusake", "prev": "Sadurunge", "finish": "Rampung", "allMoments": "Kabeh crita", "allMomentsEn": "all moments", "why": "Apa sebabe iki wigati", "whyEn": "why it matters", "play": "Rungokna critane kabeh", "stop": "Mandheg", "scriptLabel": "Basa Jawa", "done": "Kabeh {t} crita wis diwaca - apik tenan!", "doneEn": "All {t} moments read - well done!", "prog": "{n} saka {t} wis diwaca", "progEn": "{n} of {t} read", "soon": "Isine bakal diwenehake ora suwe maneh", "soonEn": "Content coming soon"},
+  ui:{moreTitle:'Sumber liyane',libTitle:'Nepangi Gusti Allah',"start": "Wiwiti", "next": "Terusake", "prev": "Sadurunge", "finish": "Rampung", "allMoments": "Kabeh crita", "allMomentsEn": "all moments", "why": "Apa sebabe iki wigati", "whyEn": "why it matters", "play": "Rungokna critane kabeh", "stop": "Mandheg", "scriptLabel": "Basa Jawa", "done": "Kabeh {t} crita wis diwaca - apik tenan!", "doneEn": "All {t} moments read - well done!", "prog": "{n} saka {t} wis diwaca", "progEn": "{n} of {t} read", "soon": "Isine bakal diwenehake ora suwe maneh", "soonEn": "Content coming soon"},
   stories:[
   {id:"fstory",kind:'arc',title:"God’s Story",ne:"Critane Gusti Allah",
    overview:{t:"The whole story in short",ne:"Kabar Becik - cekakane",art:FJV_ART.ovstory,start:["Ayo dideleng saka wiwitan", "From here — the whole story in detail"],paras:[

@@ -391,11 +391,13 @@ markup now exists as **THREE verbatim copies** (home, view-flib, view-fstory)
 and the band as **SIX** (alphabet, trip, review, settings, fmore, intensive);
 edit any of them via replace_all. `applyArt()` fills EVERY `.hero-mtns` AND
 every `.pb-mtns` — it used `querySelector` (singular) for the hero until
-July 2026, which would have left the new hero empty. The flib hero title is
-**native-first**: h1 = `fui('libTitle')` (per-pack, `FUI_NE` default for ne),
-with the English `Knowing God` as the quiet `.hero-fsub`. `view-fmore` keeps
-the slim `.page-band` with its `Go deeper` h2 inside, like every other
-sub-page; keep that band at the standard **140px** — shorter crops the peaks.
+July 2026, which would have left the new hero empty. The flib hero carries ONE
+line, **native only and centred**: h1 = `fui('libTitle')` (per-pack, `FUI_NE`
+default for ne) — no English second line. `view-fmore` keeps the slim
+`.page-band`, its h2 also native via `fui('moreTitle')` and no intro
+sentence; keep that band at the standard **140px** — shorter crops the peaks.
+Both `libTitle` and `moreTitle` are UI strings, so they are NEVER spoken and
+adding them cannot drift the audio.
 `view-flib` groups the loaded pack's stories into the arc (numbered, joined
 by the dashed connector, NO heading — the numbers already say "in order")
 and **Other stories** (no order, no connector) — each story declares which via

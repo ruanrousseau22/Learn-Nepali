@@ -1921,6 +1921,19 @@ wrapping three and four lines on a phone. Moving the media query after the
 base rules (and trimming the art to 66px, gap 11px) took titles to two lines
 and the text column from 92px to 135px. Worth remembering: in this
 single-file stylesheet, later rules win, so overrides must come last.
+
+**Fourth pass (Ruan): native only.** The English second line came off the
+Stories hero and the remaining native title was centred; the More page's
+`Go deeper` became `fui('moreTitle')` — native in all eleven — and its
+`Real, trusted resources in …` intro sentence was deleted. Centring also
+bought the long scripts enough width that every one of the eleven titles now
+sits on a SINGLE line (Burmese and Sinhala had been wrapping to two).
+`.fmore-head` / `.fmore-sub` CSS was deleted with the markup rather than
+left behind; both pages now title inside their own band/hero.
+
+New UI strings, all audio-neutral: `libTitle` + `moreTitle` in the ten
+non-Nepali packs, `FUI_NE` defaults for Nepali (परमेश्वरलाई चिन्ने /
+थप स्रोतहरू).
 **Worktree trap (cost an hour):** a Claude-worktree's `.claude/launch.json`
 had been scaffolded with `python3 -m http.server` — the exact server the
 repo forbids — so the browser heuristic-cached faith/ne.js and served a
