@@ -1,0 +1,25 @@
+{
+  "name": "Bhasaly — learn Asian languages",
+  "short_name": "Bhasaly",
+  "description": "Learn Nepali, Khmer, Burmese, Bengali, Sinhala, Lao, Pashto, Mongolian, Urdu, Uzbek and Javanese — read the script, build real sentences, and practice with recorded audio.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#C2362E",
+  "background_color": "#EFF4FB",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "books"],
+  "icons": [
+    { "src": "/favicon.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Review", "short_name": "Review", "url": "/?v=review" },
+    { "name": "Alphabet", "short_name": "Alphabet", "url": "/?v=alphabet" },
+    { "name": "Short-term phrasebook", "short_name": "Phrasebook", "url": "/?v=trip" }
+  ]
+}

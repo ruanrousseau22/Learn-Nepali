@@ -15,6 +15,13 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="mask-icon" href="/favicon-mask.svg" color="#2C5F3A">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- iOS ignores the manifest for standalone mode and reads these instead;
+     apple-touch-icon above is the icon it uses on the home screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Bhasaly">
 <meta property="og:site_name" content="Bhasaly">
 <meta property="og:title" content="Bhasaly — the Asian language learning app">
 <meta property="og:description" content="Learn Nepali, Khmer, Burmese, Bengali, Sinhala, Lao, Pashto and Mongolian. Read the script, build real sentences, and practice with audio.">
@@ -3309,6 +3316,11 @@ window.addEventListener('popstate',async function(){
   /* seat the initial history entry from whatever actually ended up on screen */
   try{const av=((document.querySelector('.view.active')||{}).id||'view-home').slice(5);
     history.replaceState({v:av},'',routeURL(av));}catch(e){}
+  /* PWA: registered AFTER the UI is up so it never competes with the pack
+     fetch on a slow connection. Failure is silent and harmless — the app is
+     fully functional without it, it only adds install + offline + the clip
+     cache. See sw.js for why the caching strategy is split the way it is. */
+  if('serviceWorker'in navigator)try{navigator.serviceWorker.register('/sw.js');}catch(e){}
   /* one event per visit carrying the dimensions that make the rest readable:
      which course, which mode, how far in they already are, and whether this
      is a first visit or a return (the retention signal) */
