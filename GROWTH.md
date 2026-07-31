@@ -201,6 +201,29 @@ native lines align with the heading.
 > `CLAUDE.md` documents. Only one is ever visible, so this is not a defect;
 > do not "fix" it by restructuring the triple hero.
 
+### IndexNow ✅ (July 2026)
+
+`indexnow.py` pings **Bing, DuckDuckGo, Yandex and Seznam** the moment pages
+change, instead of waiting weeks to be crawled. **Google does not participate
+in IndexNow** — for Google the sitemap and Search Console's Request Indexing
+remain the only levers.
+
+    python3 indexnow.py            # URLs whose sitemap lastmod is today
+    python3 indexnow.py --all      # all 34
+    python3 indexnow.py --dry-run  # print the payload, send nothing
+
+**Run it after a deploy, never before.** IndexNow fetches the key file and
+the submitted URLs from the live site to verify them, so an early ping wastes
+the submission on stale content — the script refuses to run if the key file
+is not live, rather than failing silently.
+
+The default mode reuses the content-addressed `.lastmod.json` work: a URL is
+only submitted if its bytes actually changed, which is precisely what
+IndexNow asks for and what stops the endpoint rate-limiting us.
+
+**`<key>.txt` at the site root is the proof of domain ownership.** Never
+rename, move or regenerate it — every future ping would 403.
+
 ### Still worth doing here
 
 - A printable one-page PDF per phrasebook — a natural link magnet, and the
