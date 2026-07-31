@@ -211,6 +211,12 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
    moment there is any progress, so it never becomes a splash screen. */
 .home-intro{margin:0 0 18px;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);font-size:15px;line-height:1.5;color:var(--ink-soft)}
 .home-intro strong{color:var(--ink);font-weight:700}
+/* quiet report link on the lesson-done screen. No native speaker has ever
+   reviewed these courses, so the learners are the review layer — but only if
+   reporting costs one tap at the moment a mistake is fresh. Deliberately
+   understated so it never competes with the Back-to-path CTA. */
+.fb-link{display:block;margin:14px auto 0;background:none;border:0;padding:4px 8px;font:inherit;font-size:13px;color:var(--ink-soft);cursor:pointer;text-decoration:underline;text-underline-offset:3px;opacity:.75}
+.fb-link:hover{opacity:1;color:var(--crimson)}
 @media(max-width:640px){.home-intro{font-size:14px;padding:11px 14px}}
 @media(max-width:640px){.hero-inner{min-height:196px}.hero-text{max-width:70%;padding-bottom:34px}}
 /* language switcher — a dropdown in the header, right of the logo */
@@ -3062,7 +3068,10 @@ function finishLesson(){const l=LESSONS[curL];if(l.step==='test'){finishTest(l);
   [...document.getElementById('segbar').children].forEach(s=>s.classList.add('done'));
   document.getElementById('actionbar').classList.add('hidden');
   const c=document.getElementById('ex-card');c.classList.remove('q-out');void c.offsetWidth;c.classList.add('q-in');
-  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button></div>';
+  c.innerHTML='<div class="done-screen"><div class="mascot mascot-pop" style="width:96px;height:96px;margin:0 auto 8px">'+artMascot('cheer')+'</div><h3>'+(first?'Lesson complete!':'Practice complete!')+'</h3><p style="color:var(--ink-soft)">'+(first?('+50 XP bonus'+(l.vocab&&l.vocab.length?' \u00b7 '+l.vocab.length+' words added to review':'')):'Nice refresher \u00b7 answers still earn XP')+'</p><button class="nextbtn" onclick="show(\''+(curTrack==='intensive'?'intensive':'home')+'\');buildTrack(\''+curTrack+'\');paintStats()">Back to path</button>'
+    /* the exercise view is still active here, so feedbackContext() picks up
+       lesson=<id> on its own — nothing to interpolate into the handler */
+    +'<button class="fb-link" onclick="openFeedback()">Spotted a mistake in this lesson?</button></div>';
   buildTrack(curTrack);save();}
 /* weekly test: pass at 80% first-try correct; failing keeps the node open for a retry */
 function finishTest(l){const total=l.ex.filter(e=>e.t!=='note').length;const need=Math.ceil(total*0.8);const pass=lessonCorrect>=need;
