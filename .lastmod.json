@@ -1,50 +1,58 @@
 {
  "https://bhasaly.com/": [
-  "a37864eb6ab058d6d20c141120f2f41d0c66b4576b789756591b2b8af317d8d8",
+  "5e0cd43574c67da5ebf6206602ae4adb3ce4ca66df9453c8fd7f4d44da726efc",
   "2026-07-31"
  ],
  "https://bhasaly.com/learn-bengali": [
-  "ca2d1d478da2507b38177cfc5b3aea7edbc535bfbb20ee7306469aa3ec02f52d",
-  "2026-07-30"
+  "eb8b495835e1c72e39fbc660b12828bce2512ceb519c7ec45ade0c9d64bd0d73",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-burmese": [
-  "3766fb563100500d81cc6afd075051d86bfa78dd4a0cdde4a135096c8c9f46d2",
-  "2026-07-30"
+  "d949e634775a8dc57e0a31483844184014026190f7f10602a529533e4273f039",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-javanese": [
-  "1cda9e08266f911834ba16d7766660f87f902be85b0fee68a05465739993cea4",
-  "2026-07-30"
+  "40f0064701fb8c4b619c3a0766a1d582b8c1269ad021fc41f30b4bfbd6731e55",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-khmer": [
-  "f55c53834aaf4cf822683e2ff697f9287dd1e2e3302492136a89f73ba283be69",
-  "2026-07-30"
+  "2be08971bbff3683ebff893d73e990afb390c548cfedb92c21272f8ce91a482f",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-lao": [
-  "3d82f503fe1754fe36a3154c24f528bcc90b4cc11553106bb20c0ca5f95cae41",
-  "2026-07-30"
+  "23a965e9820a9c7b3576077324b44340826fd96a358837cb9c01471990f96bcd",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-mongolian": [
-  "2b8541d85d8487a01446e9424a365001b1e5d2387b5c100d89d45cbc26fc6226",
-  "2026-07-30"
+  "34e3c54f5c6d4e7776e950bd8ff1f68d6f40167667a7c322f1b402ed9a787221",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-nepali": [
-  "40fc5e894e77e7fb4e375d26af3b3a274d07d8ecbd9fbdb27e7462cbfb8df5cf",
-  "2026-07-30"
+  "4099653efb41ae6a0ac83efd9f8cc9861fd6f3c07e635c2393fc7d515d01650a",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-pashto": [
-  "d89ea962b9a5d02634869b67603d5ce675aa587235e7bd51f9a7de8aa1d0faa6",
-  "2026-07-30"
+  "b2ea8a519291508937bd016941d3238b50c7aeba6f8a9298f632d7fbc5ac17b1",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-sinhala": [
-  "3ffeeff5cfc5a4db0b3e29fcdaebaccd0fb74cd865bbe079e4ddec02c9dda55a",
-  "2026-07-30"
+  "df2df735d0e4e0e743995bc65f4c9d676722ac20760ee20a38ced10b0cee6d47",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-urdu": [
-  "340e4936a2489e97e8515922a1a84dcc612ce3a59a0df1469794459543da5639",
-  "2026-07-30"
+  "daff3d0956e3b699489675fe40ecfa03e8866ffa226196315d22fa190d22e17d",
+  "2026-07-31"
  ],
  "https://bhasaly.com/learn-uzbek": [
-  "f7079d0e9d8f88c1074f9c21f709f51e757c72e883e10db9d06f4c4ca0942a6d",
-  "2026-07-30"
+  "4f86283e92b9bbb3881bcaec2c12858504c5fc5730ad75922b7930219a919fd5",
+  "2026-07-31"
+ ],
+ "https://bhasaly.com/privacy": [
+  "5c520dc47b0104992bd33aaa36d422b3e2ed8750df38fc7a6a58e4d64c380d0b",
+  "2026-07-31"
+ ],
+ "https://bhasaly.com/terms": [
+  "db94afc9bdc86cbc05b150092d1ea263ffa13716c2a4f3dcb64e6aad010d1caf",
+  "2026-07-31"
  ]
 }

@@ -181,17 +181,61 @@ The data already exists and `gen_landing.py` already knows how to render it.
     into the right place instead of dumping everyone on the Nepali path —
     and so 1.3 fixes itself.
 
-## Tier 4 — Legal & trust
+## Tier 4 — Legal & trust ✅ DONE (July 2026) — one manual step left
 
-Land before any real traffic push.
+`/privacy` and `/terms` ship as static pages (in the sitemap, linked from the
+app footer, from Settings, and from every landing-page footer), and Settings
+gained a **Delete account** row that appears only when logged in.
 
-11. **No privacy policy, no terms, no account deletion**, while the app
-    collects email addresses and progress data via Supabase from users
-    worldwide. Needed: two static pages plus a delete-my-account row in
-    Settings. "Reset all progress" only clears localStorage — there is
-    currently no way to erase the cloud row or the auth record, which is the
-    GDPR right-to-erasure gap. (Drafts will need Ruan's review; this is not
-    legal advice.)
+**These drafts need Ruan's read — they are not legal advice.** Two things to
+check specifically:
+
+- **`hello@bhasaly.com` is used as the contact address on both pages.** It
+  must actually receive mail, or be changed. Everything else routes through
+  the in-app feedback form, which does work.
+- The Analytics section describes cookieless aggregate counts. That is
+  accurate the moment Tier 0.1 is switched on, and harmlessly
+  over-discloses until then (over-disclosure is safe; the reverse is not).
+
+### The one manual step: `delete_own_account`
+
+Deleting the progress row works from the browser under the user's own RLS
+policy. **Deleting the auth record cannot** — that needs the `service_role`
+key, which must never exist in client code. The client calls an RPC instead;
+until the function exists that call fails, and the UI says so rather than
+claiming a full deletion.
+
+Paste this into the Supabase SQL editor to close the loop:
+
+```sql
+create or replace function public.delete_own_account()
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if auth.uid() is null then
+    raise exception 'not authenticated';
+  end if;
+  delete from public.progress where user_id = auth.uid();
+  delete from auth.users where id = auth.uid();
+end;
+$$;
+
+revoke all on function public.delete_own_account() from public, anon;
+grant execute on function public.delete_own_account() to authenticated;
+```
+
+It is `security definer` so it runs with the owner's rights, but it can only
+ever delete `auth.uid()` — the caller's own row — so it cannot be turned
+against anyone else.
+
+**Not verified end-to-end:** exercising a real deletion needs a real account,
+and creating one was out of scope. Verified instead that the row appears only
+when logged in, that the handler exists and parses, and that both partial
+failure paths report honestly. Worth one manual run-through on a throwaway
+account after deploy.
 
 ## Tier 5 — Content quality
 

@@ -1425,6 +1425,10 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       <div class="set-row"><div><div class="label">Additional content</div><div class="desc" id="unlock-desc">Have an access code? Enter it to unlock extra content</div></div><span style="display:flex;gap:8px;align-items:center"><input id="unlock-code" type="text" autocomplete="off" autocapitalize="off" placeholder="Code" onkeydown="if(event.key==='Enter')applyCode()" style="padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);width:90px;font-family:inherit"><button class="iconbtn" onclick="applyCode()">Unlock</button></span></div>
       <div class="set-row"><div><div class="label">Report an error or suggestion</div><div class="desc">Spotted a wrong translation, romanization or audio clip? Let us know</div></div><button class="iconbtn" onclick="openFeedback()">Send feedback</button></div>
       <div class="set-row"><div><div class="label">Reset all progress</div><div class="desc">Clears XP, streak, lessons, reviews</div></div><button class="danger-btn" onclick="resetAll()">Reset</button></div>
+      <!-- right to erasure: hidden unless logged in, because with no account
+           there is nothing stored off the device for us to delete -->
+      <div class="set-row hidden" id="row-delacct"><div><div class="label">Delete account</div><div class="desc">Removes your synced progress and your login record</div></div><button class="danger-btn" onclick="deleteAccount()">Delete</button></div>
+      <div class="set-row"><div><div class="label">Privacy &amp; terms</div><div class="desc">What is stored, and what you agree to</div></div><span style="display:flex;gap:8px"><a class="iconbtn" href="/privacy">Privacy</a><a class="iconbtn" href="/terms">Terms</a></span></div>
     </div>
   </div>
 </section>
@@ -1767,7 +1771,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   <nav class="foot-langs" aria-label="Language courses">Learn:
     <a href="/learn-nepali">Nepali</a> · <a href="/learn-khmer">Khmer</a> · <a href="/learn-burmese">Burmese</a> · <a href="/learn-bengali">Bengali</a> · <a href="/learn-sinhala">Sinhala</a> · <a href="/learn-lao">Lao</a> · <a href="/learn-pashto">Pashto</a> · <a href="/learn-mongolian">Mongolian</a> · <a href="/learn-urdu">Urdu</a> · <a href="/learn-uzbek">Uzbek</a> · <a href="/learn-javanese">Javanese</a>
   </nav>
-  <div class="foot-meta">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div>
+  <div class="foot-meta">Bhasaly (भाषा bhasa — "language") · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div>
 </div></footer>
 
 <!-- The supabase library is NOT loaded here. It is injected by
@@ -1937,6 +1941,8 @@ function openAuth(){document.getElementById('tabs').classList.remove('open');pai
 function closeAuth(){document.getElementById('auth-modal').classList.remove('show');}
 function paintAccount(){const slot=document.getElementById('account-slot');const dot=document.getElementById('sync-dot');const st=document.getElementById('sync-text');
   const lo=document.getElementById('auth-loggedout');const li=document.getElementById('auth-loggedin');const ad=document.getElementById('acct-desc');const aa=document.getElementById('acct-action');
+  /* nothing is stored off-device without an account, so there is nothing to delete */
+  const da=document.getElementById('row-delacct');if(da)da.classList.toggle('hidden',!user);
   if(user){const initial=(user.email||'?')[0].toUpperCase();slot.innerHTML='<span class="avatar" onclick="openAuth()">'+initial+'</span>';
     dot.classList.add('on');st.textContent='synced';lo.classList.add('hidden');li.classList.remove('hidden');document.getElementById('loggedin-email').textContent=user.email;ad.textContent='Synced as '+user.email;aa.textContent='Account';
   }else{slot.innerHTML='<button class="iconbtn" onclick="openAuth()">Log in</button>';dot.classList.remove('on');st.textContent=sbFailed?'local only':'not signed in'; /* the library is lazy now, so its absence no longer means sync is unavailable — only a failed load does */
@@ -3233,6 +3239,45 @@ function toggleSound(){S.sound=document.getElementById('set-sound').checked;save
 function toggleAutoNext(){S.autoNext=document.getElementById('set-autonext').checked;save();}
 function changeGoal(){S.dailyGoal=+document.getElementById('set-goal').value||50;save();}
 function resetAll(){askConfirm('Reset all progress?','This clears XP, streaks, lessons and reviews on this device'+(user?' and your synced cloud copy':'')+'. This cannot be undone.','Reset everything',()=>{const k=S.theme;try{Object.keys(localStorage).filter(x=>x==='sajilo'||x.indexOf('sajilo_')===0).forEach(x=>localStorage.removeItem(x));}catch(e){}S={...defaultS(),lang:LANG.code,theme:k,srs:freshSRS(),dailyDate:new Date().toDateString()};save();refreshAll();show('home');});}
+
+/* ===== RIGHT TO ERASURE =====
+   "Reset all progress" only ever cleared localStorage, so a logged-in
+   learner had no way to remove the copy held in the cloud or the login
+   record itself — the GDPR erasure gap.
+
+   The progress row goes from the browser under the user's own RLS policy.
+   The auth record CANNOT: deleting a user needs the service_role key, which
+   must never exist in client code. It is done instead by a SECURITY DEFINER
+   function in Postgres — see the delete_own_account SQL in GROWTH.md. Until
+   that function exists the rpc call simply fails, so the code reports
+   honestly which half succeeded rather than claiming a full deletion. */
+async function deleteAccount(){
+  if(!user){paintAccount();return;}
+  askConfirm('Delete your account?',
+    'This permanently removes your synced progress and your login record for '+user.email
+    +'. Progress already on this device is cleared too. This cannot be undone.',
+    'Delete everything', async ()=>{
+    const email=user.email;
+    let rowGone=false,authGone=false;
+    try{ const {error}=await sb.from('progress').delete().eq('user_id',user.id); rowGone=!error; }catch(e){}
+    try{ const {error}=await sb.rpc('delete_own_account'); authGone=!error; }catch(e){}
+    try{ await sb.auth.signOut(); }catch(e){}
+    user=null;
+    /* clear the device last, so a failure above still leaves the local copy intact */
+    const k=S.theme;
+    try{Object.keys(localStorage).filter(x=>x==='sajilo'||x.indexOf('sajilo_')===0).forEach(x=>localStorage.removeItem(x));}catch(e){}
+    S={...defaultS(),lang:LANG.code,theme:k,srs:freshSRS(),dailyDate:new Date().toDateString()};
+    save();refreshAll();paintAccount();show('home');
+    track('account_deleted',{row:rowGone?1:0,auth:authGone?1:0}); /* no address, ever */
+    askConfirm('Account deleted',
+      rowGone
+        ? (authGone
+            ? 'Your synced progress and login record for '+email+' have been removed, and this device has been cleared.'
+            : 'Your synced progress has been removed and this device cleared. The login record for '+email+' is queued for removal — contact us from Privacy if it is still active.')
+        : 'This device has been cleared and you are signed out, but the server could not be reached. Please try again, or contact us from the Privacy page.',
+      'OK', ()=>{});
+  });
+}
 
 function refreshAll(){applyTheme();document.getElementById('set-rom').checked=S.rom;const sn=document.getElementById('set-sound');if(sn)sn.checked=S.sound!==false;const an=document.getElementById('set-autonext');if(an)an.checked=S.autoNext!==false;const gl=document.getElementById('set-goal');if(gl)gl.value=String(S.dailyGoal||50);paintUnlock();buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');paintStats();}
 /* ===== BOOT =====

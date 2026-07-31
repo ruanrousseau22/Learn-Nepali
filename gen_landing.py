@@ -388,7 +388,8 @@ footer a{{color:var(--soft)}}
 
 <footer><div class="wrap">
   &copy; {year} Bhasaly &middot; <a href="/">bhasaly.com</a> &middot;
-  <a href="/?lang={code}">Open the {name} course</a>
+  <a href="/?lang={code}">Open the {name} course</a> &middot;
+  <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
 </body>
 </html>
@@ -446,6 +447,11 @@ def sitemap(langs, dates):
         urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
                     '    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>'
                     % (url, dates[url]))
+    for page_name in ('privacy', 'terms'):
+        url = '%s/%s' % (ORIGIN, page_name)
+        urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
+                    '    <changefreq>yearly</changefreq>\n    <priority>0.2</priority>\n  </url>'
+                    % (url, dates[url]))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "\n".join(urls) + "\n</urlset>\n")
@@ -467,6 +473,15 @@ def main():
         with open(os.path.join(ROOT, fn), 'w', encoding='utf-8') as f:
             f.write(html_out)
         pages.append(('%s/learn-%s' % (ORIGIN, slug), html_out, fn))
+    # hand-written, not generated — listed here only so the lastmod store
+    # dates them from their own bytes like everything else
+    for page_name in ('privacy', 'terms'):
+        fn = page_name + '.html'
+        try:
+            body = open(os.path.join(ROOT, fn), encoding='utf-8').read()
+        except IOError:
+            continue
+        pages.append(('%s/%s' % (ORIGIN, page_name), body, fn))
     dates = lastmod_store(pages)
     with open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8') as f:
         f.write(sitemap(langs, dates))
