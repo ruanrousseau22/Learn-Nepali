@@ -2020,7 +2020,8 @@ function show(v){if(v==='intensive'&&!hasIntensive())v='home';
   if(v!=='exercise')track('view',{view:v,lang:LANG?LANG.code:''});
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
   const tabv=(v==='fstory')?'flib':v;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===tabv));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
-  if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});}
+  if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});
+  pushRoute(v);}
 /* land on the current node instead of the top of a 60+-node path; timeout lets same-tick rebuilds finish first */
 function scrollToCurrent(v){const root=document.getElementById(v==='intensive'?'path-root-intensive':'path-root');
   const row=root?root.querySelector('.topic-row.has-next'):null;
@@ -2506,8 +2507,10 @@ async function switchMode(m){
      change — otherwise it stays hidden after coming back from faith mode */
   paintModeSwitch();paintHomeLangSwitch();paintTripTab();
   /* only once the switch has actually happened: the guards above (mid-lesson,
-     failed pack load) all bail early, and a refused switch is not a switch */
-  track('mode_switch',{to:m,lang:LANG.code});
+     failed pack load) all bail early, and a refused switch is not a switch.
+     navLock means we are restoring saved or linked state at boot / on Back,
+     which is not the user reaching for the mode picker. */
+  if(!navLock)track('mode_switch',{to:m,lang:LANG.code});
 }
 function pickMode(m){switchMode(m);}
 function paintModeSwitch(){
@@ -3156,13 +3159,77 @@ function savedLang(){
   try{const o=JSON.parse(localStorage.getItem('sajilo')||'null');if(o&&o.lang)return o.lang;}catch(e){} /* pre-split blob */
   return 'ne';
 }
+
+/* ===== ROUTING (July 2026) =====
+   The app is one document, so the query string is its URL state:
+     lang  the course        (the contract the SEO landing pages rely on)
+     v     the view          (omitted for home)
+     s     which faith story (only when v=fstory)
+
+   Before this there was no routing at all: Back — and a mobile edge-swipe,
+   which is the common accident — left the site outright, mid-lesson
+   included. Deep links into the alphabet or the phrasebook were impossible.
+
+   Query params rather than pretty paths on purpose: it needs no Netlify
+   rewrite (so it cannot shadow the static /learn-<slug> pages), and these
+   views are JS-rendered and not indexable either way — the static pages
+   carry the SEO. Pretty paths stay available later if wanted.
+
+   A view implies its mode, which is what lets faith mode survive a reload
+   without tripping the landing-page rule that a bare ?lang= means "open
+   the course". This block sits below every `let` it reads, deliberately. */
+const FAITH_VIEWS={flib:1,fstory:1,fmore:1};
+let navLock=false; /* set while popstate applies a view, so show() does not re-push it */
+
+function routeURL(v){
+  const p=new URLSearchParams();
+  if(LANG)p.set('lang',LANG.code);
+  if(v&&v!=='home')p.set('v',v);
+  if(v==='fstory'&&FSTORY)p.set('s',FSTORY);
+  const q=p.toString();
+  return location.pathname+(q?'?'+q:'');
+}
+/* called at the end of show(); no-ops when the URL already says this, so
+   repainting the same view does not stack duplicate history entries */
+function pushRoute(v){
+  if(navLock)return;
+  const url=routeURL(v);
+  if(url===location.pathname+location.search)return;
+  try{history.pushState({v:v},'',url);}catch(e){}
+}
+window.addEventListener('popstate',async function(){
+  const p=new URLSearchParams(location.search);
+  const v=p.get('v')||'home', sid=p.get('s');
+  navLock=true;
+  try{
+    stopAudio();
+    /* Backing out of a lesson: leave the exercise view first. No confirm —
+       Back is an explicit "get me out" gesture (the X button keeps its
+       confirm), and both show() and switchMode refuse to run while the
+       exercise view is active. Nothing completed is lost either way. */
+    if(document.getElementById('view-exercise').classList.contains('active')){
+      document.getElementById('actionbar').classList.add('hidden');
+      show(curTrack==='intensive'?'intensive':'home');
+    }
+    const wantFaith=!!FAITH_VIEWS[v];
+    if(wantFaith!==(S.mode==='faith'))await switchMode(wantFaith?'faith':'learn');
+    if(v==='fstory'&&sid&&FAITH&&(FAITH.stories||[]).some(x=>x.id===sid))openStory(sid);
+    else show(v);
+  }catch(e){}
+  finally{navLock=false;}
+});
 (async function boot(){
   let want=savedLang();
   /* ?lang=<code> deep-link: the SEO landing pages (/learn-sinhala …) send
      a learner straight into their course. Only honor a known code. */
-  let deepLang=null;
-  try{const q=new URLSearchParams(location.search).get('lang');
-    if(q&&typeof LANG_CATALOG!=='undefined'&&LANG_CATALOG.some(l=>l.code===q)){want=q;deepLang=q;}}catch(e){}
+  let deepLang=null,deepView=null,deepStory=null;
+  try{const qs=new URLSearchParams(location.search),q=qs.get('lang');
+    if(q&&typeof LANG_CATALOG!=='undefined'&&LANG_CATALOG.some(l=>l.code===q)){want=q;deepLang=q;}
+    /* ?v=<view> is this app's own routing (see ROUTING above): a reload,
+       a bookmark or a shared link lands on the same page it named. */
+    const vq=qs.get('v');
+    if(vq&&document.getElementById('view-'+vq)&&vq!=='exercise'){deepView=vq;deepStory=qs.get('s');}
+  }catch(e){}
   if(!PACKS[want])await loadLangScript(want);
   if(!PACKS[want]&&want!=='ne'){want='ne';if(!PACKS.ne)await loadLangScript('ne');} /* bad/missing pack: fall back */
   if(!PACKS[want]){
@@ -3172,13 +3239,30 @@ function savedLang(){
   }
   applyPack(want);
   load();
-  if(deepLang)S.mode='learn'; /* a /learn-X deep-link always opens the course, even if last session was faith mode */
+  /* a bare /learn-X deep-link always opens the course, even if the last
+     session was faith mode. A ?v= route overrides that: the view names its
+     own mode, which is what lets faith mode survive a reload. */
+  if(deepView)S.mode=FAITH_VIEWS[deepView]?'faith':'learn';
+  else if(deepLang)S.mode='learn';
   applyTheme();document.getElementById('set-rom').checked=S.rom;document.getElementById('set-sound').checked=S.sound!==false;document.getElementById('set-autonext').checked=S.autoNext!==false;document.getElementById('set-goal').value=String(S.dailyGoal||50);
   S.lang=LANG.code; /* keep state and the loaded pack in agreement */
   /* a landing-page ?lang choice must survive the return visit without the
      query string — persist it now (local only; no cloudPush at boot) */
   if(deepLang)try{localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(S),...prefsPick(S)}));}catch(e){}
-  applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();paintModeSwitch();initFaithMode();
+  applyBranding(); /* also seats the mascot via applyArt */buildPath();buildPath(UNITS_INTENSIVE,'path-root-intensive');buildAlpha();paintStats();loadVoices();loadAudioManifest();initSupabase();paintAccount();paintModeSwitch();
+  /* awaited so the routed view below lands after faith mode has been applied */
+  navLock=true;                     /* restoring saved/linked state is not a user navigation */
+  try{
+    await initFaithMode();
+    if(deepView){
+      if(deepView==='fstory'&&deepStory&&FAITH&&(FAITH.stories||[]).some(x=>x.id===deepStory))openStory(deepStory);
+      else show(deepView);
+    }
+  }catch(e){}
+  navLock=false;
+  /* seat the initial history entry from whatever actually ended up on screen */
+  try{const av=((document.querySelector('.view.active')||{}).id||'view-home').slice(5);
+    history.replaceState({v:av},'',routeURL(av));}catch(e){}
   /* one event per visit carrying the dimensions that make the rest readable:
      which course, which mode, how far in they already are, and whether this
      is a first visit or a return (the retention signal) */
