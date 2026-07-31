@@ -282,27 +282,57 @@ account after deploy.
     and posts to Netlify. Surface it — a one-tap "spotted a mistake?" at the
     end of each lesson, pre-filled with the lesson id. Turn users into the
     review layer, and watch `feedback_sent`.
-13. ~~Apply the orphan-vocabulary fix beyond Lao.~~ **Already done — all 11
-    languages, July 2026.** `CLAUDE.md` said "applied to Lao; reusable per
-    language" and was simply never updated after the rollout; Ruan spotted
-    it. `e40458c2` piloted Lao (78 reviews), `81364e03` did the other ten in
-    one pass — **783 review mcs**, matching the shipped packs exactly on all
-    eleven when re-counted. Nothing to do here.
+13. **Orphan vocabulary — DONE, and now finished.** `CLAUDE.md` said
+    "applied to Lao; reusable per language" and was never updated after the
+    July rollout; Ruan spotted it. The rollout was real (`e40458c2` Lao,
+    `81364e03` the other ten, 783 reviews) — but it used a zones 2-8 rule
+    that was more conservative than the structure requires. A word taught in
+    zone 9 can be reviewed in zone 11, and zone 10 in zone 12; only zones
+    11-12 are impossible.
 
-    **Measuring it is the trap.** A first attempt reported ~0 orphans
-    everywhere — and reported the same for the *pre-fix* Lao pack, which is
-    what exposed it. Three separate errors, each of which alone makes the
-    measurement insensitive:
-    - **substring matching** — in unspaced scripts (km/lo/my) a short word
-      matches inside almost any later string;
-    - **lesson- instead of topic-granularity** — a topic is 5 lessons that
-      share vocab, so every word looks recycled one lesson later;
-    - **counting distractors as recycling** — Lao draws 73.8% of its
-      distractors from the same topic, so this alone hides the effect.
+    `2dbc642c` finished it: **1638 more reviews, orphans 2429 → 788**, of
+    which 732 are zone-11/12 words that structurally cannot host one.
+    **2448 review mcs now ship across the eleven courses.** Audio-neutral,
+    zero new clips. It also fixed 16 pre-existing numeric-answer giveaways.
 
-    Target-only + topic-granularity reproduces the documented direction
-    (Lao 249→167 by this stricter definition). Always validate an orphan
-    measurement against a pre-fix pack from git before trusting it.
+    **Do not re-run this.** If a twelfth language ships, run the pass for
+    that language only.
+
+### Measuring orphans — the trap, in full
+
+The definition:
+
+> An orphan is a vocabulary word that, after the topic which first teaches
+> it, is never again presented as a **target** in any later **topic**.
+
+- **word** — a `vocab[i][0]`, excluding alphabet letters/numerals (they
+  recur as matras and medials, not as independent letters) and sentences
+  over two words (they never recur verbatim);
+- **topic, not lesson** — a topic is 5 lessons sharing one vocab set;
+- **target, not appearance** — correct option `o[a]`, `li.say`, `mc.d`,
+  `fill.s`, wb answer tiles, `match` pairs, `tr.a`, note `eg`. A word seen
+  only as a wrong distractor is NOT recycled;
+- **matching** — exact string or whole whitespace token; substring too for
+  km/lo/my, where genuine reuse is a substring.
+
+Each of the three shortcuts below independently makes the metric blind, and
+all three were hit here for real:
+
+| shortcut | why it hides the fix |
+|---|---|
+| substring matching | in unspaced scripts a short word matches inside almost any later string |
+| lesson granularity | all 5 lessons of a topic share vocab, so everything looks recycled one lesson later |
+| counting distractors | Lao draws 73.8% of its distractors from the same topic |
+
+A first attempt reported ~0 orphans everywhere. It reported the same for a
+**pre-fix pack with zero reviews**, which is what exposed it.
+**Always validate an orphan metric against a pre-fix pack from git.**
+
+One more, found the same way: the numeric-distractor guard must strip
+parentheticals before testing. "six (၆)" is a number gloss; reading it as a
+word pairs a numeric answer with word-only distractors and the answer
+becomes guessable by shape. Diffing the giveaway count against HEAD caught
+10 that a first run introduced, before they were committed.
 
 ---
 

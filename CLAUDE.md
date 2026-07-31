@@ -285,23 +285,34 @@ learning vs Religious studies (see Faith mode below). `switchMode` must call
    audio-neutral fix: 'Review — which means "X"?' mcs appended to checkpoint
    lessons ≥2 zones later, every option previously-taught recorded vocab,
    numeric targets with numeric distractors, one review per orphan.
-   **DONE — all 11 languages, July 2026. Do not re-do it.** Lao piloted it
-   (`e40458c2`, 78 reviews, orphans 201→93); `81364e03` then applied it to
-   the other ten in one pass — **783 review mcs total** (ne 75, km 95, my 55,
-   si 35, ps 75, mn 39, bn 36, ur 112, uz 105, jv 105, lo 78). The three
-   generator-built courses carried the deepest debt (ur 195 / uz 178 / jv 185
-   reviewable orphans) because the generator never reused vocabulary.
-   Guards were verified across all 11 and every `--check` MATCHED.
-   Scope was deliberately **words taught in zones 2-8**: zone 1 and zones
-   9-12 have no checkpoint ≥2 zones later, so orphans still measure high
-   there **by design, not as a defect**. Remaining orphans are also mitigated
-   by architecture — `finishLesson` puts every taught word into the SM-2
+   **DONE — all 11 languages, and then completed. Do not re-do it.** Lao
+   piloted it (`e40458c2`); `81364e03` applied it to the other ten (783 mcs
+   total); **`2dbc642c` finished the job — 1638 more, orphans 2429 → 788.**
+   **2448 review mcs now ship.** The three generator-built courses carried
+   the deepest debt because the generator never reused vocabulary.
+   Hosts are **`checkpoint` first, then `mix`** — ur/uz/jv checkpoints were
+   already ~13 exercises and ~40% review content, which capped them at
+   37-54% coverage on checkpoints alone. **Cap TOTAL lesson length at 15**,
+   never "N new per lesson": checkpoint length varies hugely by course
+   (si 6.4, uz 12.6, max 17).
+   The 788 remaining are **732 zone-11/12 words with no checkpoint ≥2 zones
+   later — structurally unreachable, not unfinished.** Do not invent a new
+   pattern for them without asking: they are already mitigated by
+   architecture, since `finishLesson` puts every taught word into the SM-2
    deck, so the path is the INTRODUCTION channel and Review is RETENTION.
-   Before "fixing" orphan counts again, read HISTORY.md's orphan analysis:
-   the number is only meaningful once alphabet letters, numerals and whole
-   sentences are separated out, and **distractor appearances must not count
-   as recycling** (Lao draws 73.8% of its distractors from the same topic, so
-   counting them makes any measurement insensitive to the fix).
+   **Measuring orphans is the trap** — three errors each make the metric
+   blind, and all three have now been hit for real: substring matching
+   (unspaced km/lo/my), lesson- instead of **topic**-granularity (a topic is
+   5 lessons sharing vocab), and counting **distractor** appearances as
+   recycling (Lao draws 73.8% of its distractors from the same topic).
+   **Always validate an orphan measurement against a pre-fix pack from git
+   before believing it** — a first attempt here read ~0 orphans everywhere
+   AND read the same for a pack with zero reviews, which is what exposed it.
+   Full definition and method in GROWTH.md; see also HISTORY.md's analysis
+   for why alphabet letters and whole sentences must be separated out.
+   **Numeric answers need numeric distractors, and the test must strip
+   parentheticals**: "six (၆)" is a NUMBER gloss, and reading it as a word is
+   how 16 answer-giveaways got authored (fixed in `2dbc642c`).
    **Register rule (Ruan, July 2026): teach what people actually SAY.**
    Formal "please"-words (ne कृपया, ur برائے مہربانی, lo ກະລຸນາ) are
    RECOGNITION-ONLY — glossed "(formal / signs)", explained in a culture
