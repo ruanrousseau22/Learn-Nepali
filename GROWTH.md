@@ -39,21 +39,29 @@ content-to-distribution ratio is already lopsided by an order of magnitude.
 
 Everything else is guesswork without this.
 
-### 0.1 Analytics ✅ shipped, dormant until a provider is configured
+### 0.1 Analytics ✅ LIVE — Umami Cloud connected
 
-`track(name, props)` near the top of the main script in `index.html`. It is a
-**no-op until an analytics script loads** — verified: with no provider,
-every instrumented path runs without throwing.
+`track(name, props)` near the top of the main script in `index.html`.
+The **Umami Cloud** tag is live in `<head>` (website id
+`f4735fb0-330b-4b1d-b54c-edb76d7cc6d3`). Cookieless and aggregate, so no
+consent banner.
 
-Provider-agnostic by design: it speaks both **Umami** (`umami.track`) and
-**Plausible** (`window.plausible`), so switching costs nothing in this file.
-Two commented `<script>` tags sit in `<head>` — uncomment ONE and fill in the
-id.
+Verified end-to-end against the real endpoint: the script loads,
+`window.umami.track` exists, navigating fires POSTs to
+`gateway.umami.is/api/send`, and a replayed event returns **HTTP 200** with a
+token embedding the website id — so events are accepted, not silently
+dropped. Umami's API is `umami.track(name, data)`, exactly what `track()`
+calls; its limits (strings 500 chars, max 50 props) are far above what we
+send.
 
-**Recommended: Umami Cloud free tier** (3 sites, 100k events/month —
-comfortably enough). Cookieless, GDPR-safe **without a consent banner**,
-and supports custom events. Plausible (~$9/mo) is the more polished
-alternative with identical properties.
+Still provider-agnostic: `track()` also speaks Plausible
+(`window.plausible`), so swapping means changing only the tag. **Deleting the
+tag returns every `track()` call to a silent no-op — nothing else breaks.**
+
+> Note: the collector is `gateway.umami.is`, not `cloud.umami.is` (which only
+> serves the script). Both are worth knowing if an ad-blocker ever appears to
+> "break analytics" — it is usually the gateway being blocked, and only in
+> the developer's own browser.
 
 > Why custom events and not a plain pageview counter: the app is a single
 > URL with no routing, so a pageview counter would report exactly one number
