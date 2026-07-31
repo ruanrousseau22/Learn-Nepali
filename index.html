@@ -205,6 +205,13 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .hero-text{position:relative;z-index:2;max-width:64%;padding-bottom:56px}
 .hero-text h1{font-size:clamp(34px,5.4vw,54px)}
 .hero-sub{margin-top:10px;font-size:15px;font-weight:600;color:var(--ink-soft);background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(5px);display:inline-block;padding:6px 14px;border-radius:100px}
+/* first-visit pitch: the root URL is what gets shared and what ranks for the
+   brand, but it dropped straight onto the lesson path with nothing saying
+   what Bhasaly is. Deliberately ONE line — paintHomeIntro() removes it the
+   moment there is any progress, so it never becomes a splash screen. */
+.home-intro{margin:0 0 18px;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.home-intro strong{color:var(--ink);font-weight:700}
+@media(max-width:640px){.home-intro{font-size:14px;padding:11px 14px}}
 @media(max-width:640px){.hero-inner{min-height:196px}.hero-text{max-width:70%;padding-bottom:34px}}
 /* language switcher — a dropdown in the header, right of the logo */
 .lang-switch{position:relative;flex:none}
@@ -1261,7 +1268,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
       </div>
     </div>
   </div>
-  <div class="wrap section" style="padding-top:4px"><div id="path-root"></div></div>
+  <div class="wrap section" style="padding-top:4px"><div class="home-intro" id="home-intro" hidden></div><div id="path-root"></div></div>
 </section>
 
 <section class="view" id="view-exercise">
@@ -2101,6 +2108,24 @@ function paintHomeStats(){
   const due=S.srs.filter(c=>c.due<=Date.now()).length;
   const b=document.getElementById('review-badge');
   if(b){if(due>0){b.textContent=due;b.classList.add('on');}else{b.classList.remove('on');b.textContent='';}}
+  paintHomeIntro();
+}
+/* One line telling a first-time visitor what this is. The /learn-<slug>
+   landing pages already do this well, but the root URL — the one that gets
+   shared and that ranks for the brand — said nothing at all.
+   Shown ONLY while there is no progress of any kind, so it disappears for
+   good the moment someone finishes their first lesson. The language count
+   comes from LANG_CATALOG so it can never drift from what actually ships. */
+function paintHomeIntro(){
+  const el=document.getElementById('home-intro');if(!el)return;
+  const fresh=!S.done.length&&!S.xp;
+  el.hidden=!fresh;
+  if(!fresh){el.innerHTML='';return;}
+  if(el.dataset.painted)return;
+  const n=(typeof LANG_CATALOG!=='undefined'&&LANG_CATALOG.length)||11;
+  el.innerHTML='<strong>'+n+' Asian languages, free.</strong> Read the script, build real '
+    +'sentences, and hear every word from a recorded voice — no account needed.';
+  el.dataset.painted='1';
 }
 function paintLevel(pop){const li=levelInfo(S.xp);const rk=rankFor(li.level);
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
