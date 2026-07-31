@@ -55,11 +55,29 @@ course data lives in per-language packs under `lang/`.
   `manifest.json` each; `audio_strings*.json` are the committed strings
   sources. `generate_audio.py` (edge-tts) regenerates clips;
   `extract_audio_strings.js` (JXA) regenerates strings files.
-- `learn-<slug>.html` (11 files) + `gen_landing.py` + `landing_data.js` —
-  static SEO landing pages, one per language at `/learn-<slug>`.
+- `manifest.webmanifest` + `sw.js` + `icon-maskable.svg` — the PWA (July
+  2026). **The service worker's split strategy is load-bearing**: navigation,
+  `lang/`+`faith/` packs and audio manifests are NETWORK-FIRST (cache is only
+  an offline fallback), audio clips + fonts + icons are CACHE-FIRST (clip
+  names are content hashes, so they can never go stale). Making the app
+  cache-first would recreate the stale-file trap that the
+  "never use `python3 -m http.server`" rule exists to prevent. Only GET is
+  intercepted — the feedback form POSTs to `/`. Bump `CACHE_VERSION` to
+  invalidate.
+- `privacy.html` / `terms.html` — hand-written legal pages at `/privacy` and
+  `/terms` (Netlify serves the pretty path). Linked from the app footer,
+  Settings, and every landing-page footer. Contact address is
+  `hello@bhasaly.com` — **it must actually receive mail.**
+- `learn-<slug>.html` (11) + `<slug>-alphabet.html` (9, non-Latin only) +
+  `<slug>-phrases.html` (11) + `gen_landing.py` + `landing_data.js` —
+  static SEO pages. **34 indexable URLs total.**
   **Generated — edit `gen_landing.py`, never the HTML.** Regenerate after any
-  pack vocab/alphabet change: `python3 gen_landing.py` (deterministic; also
-  rewrites `sitemap.xml`). Each page: pack-driven word tables + numbers +
+  pack vocab/alphabet/trip change: `python3 gen_landing.py` (deterministic;
+  also rewrites `sitemap.xml`). Alphabet pages are **skipped for Latin packs**
+  (uz, jv). All page types share one `CSS` constant — change styling once.
+  **`sitemap.xml` `lastmod` is content-addressed via `.lastmod.json`**: a date
+  moves only when that page's bytes change. Never reintroduce a
+  "stamp today on everything" lastmod — Google de-trusts the field. Each page: pack-driven word tables + numbers +
   (non-Latin) alphabet grid, Course/Breadcrumb/FAQ JSON-LD, per-language hero
   art + palette pulled from the app, CTA deep-linking via `/?lang=<code>`.
   The app footer (`.foot-langs`) links all 11.
@@ -116,6 +134,29 @@ then `applyPack` + UI build. Missing/unknown pack → `ne`; if that fails too,
 a plain retry message. **The `?lang=<code>` deep-link** (from the landing
 pages): a known code overrides `savedLang()` AND forces `S.mode='learn'`;
 unknown codes are ignored. Adding a language changes nothing about boot.
+
+**Routing (July 2026).** The query string is the app's URL state: `lang`
+(the landing-page contract), `v` (the view), `s` (which faith story).
+`show()` ends in `pushRoute()`; a `popstate` listener restores the view.
+**A view implies its mode** — that is what lets faith mode survive a reload
+without the bare-`?lang=` force-to-learn rule firing, so `?v=` overrides it
+in boot. **`navLock` means "navigation restored, not chosen"** (boot,
+popstate): it suppresses both the history push and the `mode_switch` event.
+Back out of a lesson exits without the ✕ confirm — deliberate. Query params
+rather than pretty paths on purpose: no Netlify rewrite, so nothing can
+shadow the static `/learn-<slug>` pages.
+
+**Analytics.** `track(name, props)` speaks both Umami and Plausible and is a
+**no-op until a provider script is uncommented in `<head>`**. Event list and
+the privacy rule live in `GROWTH.md` — **props are language codes, lesson
+ids and counts ONLY; never an email, free text or an answer.** Adding an
+event means updating that table too.
+
+**Supabase loads on demand.** No static `<script>` tag: `loadSupabaseLib()`
+injects it only for a stored session (`sb-<ref>-auth-token`), a magic-link
+callback (`?code=` / `#access_token=`), or the user opening the login modal.
+Anything needing a client must `await ensureSupabase()` — never assume `sb`.
+`sbFailed`, not a null `sb`, is what means "sync unavailable".
 
 **Language packs.** Data consts (`XX_LESSONS`, `XX_UNITS`, `XX_SYM`,
 `XX_VOWELS/CONS/NUMS`, `XX_SRS_SEED`, art) bundle via `registerPack({code,
