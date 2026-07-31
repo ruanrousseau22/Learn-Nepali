@@ -1750,10 +1750,11 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   <div class="foot-meta">Bhasaly (भाषा bhasa — "language") · <span class="sync-pill"><span class="sync-dot" id="sync-dot"></span><span id="sync-text">local only</span></span></div>
 </div></footer>
 
-<!-- defer: without it the whole app waits on a third-party CDN before boot() can
-     start, which matters on the constrained networks many learners are on.
-     initSupabase re-runs on this script's load event if it lands late. -->
-<script defer id="sb-lib" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- The supabase library is NOT loaded here. It is injected by
+     loadSupabaseLib() only when it can do something — a signed-in device, a
+     magic-link callback, or the user opening the login modal — which keeps
+     53KB off every anonymous visit. Constrained networks are the norm for
+     many learners here, so nothing third-party blocks boot(). -->
 <script>
 /* ===== ANALYTICS =====
    Provider-agnostic. track() is a NO-OP until an analytics script is loaded
@@ -1808,16 +1809,53 @@ function save(){try{localStorage.setItem(GLOBAL_KEY,JSON.stringify({...gPick(S),
 function updateStreak(){const today=new Date().toDateString();if(S.lastDay!==today){const y=new Date(Date.now()-864e5).toDateString();S.streak=(S.lastDay===y)?S.streak+1:1;S.lastDay=today;}if(S.streak>(S.bestStreak||0))S.bestStreak=S.streak;}
 function checkStreakBreak(){if(!S.lastDay)return;const today=new Date().toDateString();const y=new Date(Date.now()-864e5).toDateString();if(S.lastDay!==today&&S.lastDay!==y)S.streak=0;}
 
-let sb=null,user=null,pushTimer=null;
-function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON)return;
-  /* the library is deferred, so it may not be here yet — retry once it lands.
-     If it never loads (CDN blocked), sync stays off and the app works locally. */
-  if(!window.supabase){const el=document.getElementById('sb-lib');
-    if(el&&!el.dataset.awaiting){el.dataset.awaiting='1';el.addEventListener('load',initSupabase);}
-    return;}
+let sb=null,user=null,pushTimer=null,sbFailed=false,sbLoading=null;
+/* ===== SUPABASE, LOADED ON DEMAND (July 2026) =====
+   The 53KB library used to load on every anonymous visit — about a fifth of
+   the page weight — for a login most visitors never click. It is now fetched
+   only when it can actually do something. */
+function sbNeeded(){
+  try{
+    /* a magic-link callback: implicit flow puts tokens in the hash, PKCE
+       puts ?code= in the query. Either way we must be ready to consume it. */
+    if(location.hash.indexOf('access_token=')>=0||location.hash.indexOf('error_code=')>=0)return true;
+    const q=new URLSearchParams(location.search);
+    if(q.get('code')||q.get('error_description'))return true;
+    /* an already-signed-in device: supabase keeps its session under
+       sb-<project-ref>-auth-token, which we can spot without the library */
+    for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);
+      if(k&&k.indexOf('sb-')===0&&k.indexOf('-auth-token')>0)return true;}
+  }catch(e){}
+  return false;
+}
+function loadSupabaseLib(){
+  if(window.supabase)return Promise.resolve(true);
+  if(sbLoading)return sbLoading;
+  sbLoading=new Promise(function(res){
+    const s=document.createElement('script');
+    s.id='sb-lib';s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+    s.onload=function(){res(true);};
+    s.onerror=function(){sbFailed=true;res(false);}; /* CDN blocked: sync stays off, the app works locally */
+    document.head.appendChild(s);
+  });
+  return sbLoading;
+}
+/* every entry point that needs a client awaits this instead of assuming `sb` */
+async function ensureSupabase(){
+  if(sb)return sb;
+  if(!SUPABASE_URL||!SUPABASE_ANON)return null;
+  const ok=await loadSupabaseLib();
+  if(!ok||!window.supabase||sb)return sb;
   sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON);
   sb.auth.onAuthStateChange((_e,s)=>{user=s?.user||null;onAuthChange();});
-  sb.auth.getSession().then(({data})=>{user=data.session?.user||null;onAuthChange();});}
+  try{const {data}=await sb.auth.getSession();user=data.session?.user||null;}catch(e){}
+  onAuthChange();
+  return sb;
+}
+function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON)return;
+  if(sbNeeded())ensureSupabase();  /* returning signed-in device, or a magic-link landing */
+  else paintAccount();             /* anonymous: paint the logged-out state and fetch nothing */
+}
 async function onAuthChange(){paintAccount();if(user)await cloudPull();}
 /* merge local + cloud instead of last-write-wins, so progress made on another device (or before logging in) is never lost */
 function mergeGlobal(loc,cld){const m={...loc,...cld};
@@ -1873,19 +1911,27 @@ async function cloudPull(){if(!sb||!user)return;
     else cloudPush(true);}catch(e){console.warn('pull',e);}}
 function cloudPush(now){if(!sb||!user)return;clearTimeout(pushTimer);
   pushTimer=setTimeout(async()=>{try{await sb.from('progress').upsert({user_id:user.id,data:cloudData(),updated_at:new Date().toISOString()});}catch(e){console.warn('push',e);}},now?0:1200);}
-function openAuth(){document.getElementById('tabs').classList.remove('open');paintAccount();document.getElementById('auth-modal').classList.add('show');}
+/* opening the modal is the signal that the library is finally wanted — start
+   fetching now so it is usually ready by the time an email is typed */
+function openAuth(){document.getElementById('tabs').classList.remove('open');paintAccount();document.getElementById('auth-modal').classList.add('show');ensureSupabase().then(paintAccount);}
 function closeAuth(){document.getElementById('auth-modal').classList.remove('show');}
 function paintAccount(){const slot=document.getElementById('account-slot');const dot=document.getElementById('sync-dot');const st=document.getElementById('sync-text');
   const lo=document.getElementById('auth-loggedout');const li=document.getElementById('auth-loggedin');const ad=document.getElementById('acct-desc');const aa=document.getElementById('acct-action');
   if(user){const initial=(user.email||'?')[0].toUpperCase();slot.innerHTML='<span class="avatar" onclick="openAuth()">'+initial+'</span>';
     dot.classList.add('on');st.textContent='synced';lo.classList.add('hidden');li.classList.remove('hidden');document.getElementById('loggedin-email').textContent=user.email;ad.textContent='Synced as '+user.email;aa.textContent='Account';
-  }else{slot.innerHTML='<button class="iconbtn" onclick="openAuth()">Log in</button>';dot.classList.remove('on');st.textContent=sb?'not signed in':'local only';
+  }else{slot.innerHTML='<button class="iconbtn" onclick="openAuth()">Log in</button>';dot.classList.remove('on');st.textContent=sbFailed?'local only':'not signed in'; /* the library is lazy now, so its absence no longer means sync is unavailable — only a failed load does */
     lo.classList.remove('hidden');li.classList.add('hidden');ad.textContent='Not logged in — progress is local only';aa.textContent='Log in';}}
 async function sendMagicLink(){const email=document.getElementById('auth-email').value.trim();const m=document.getElementById('auth-msg');
   if(!email){m.className='msg-line err';m.textContent='Enter your email first.';return;}
-  if(!sb){m.className='msg-line err';m.textContent='Login is unavailable right now — please try again later.';return;}
   m.className='msg-line';m.textContent='Sending…';
-  try{const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.href}});if(error)throw error;track('login_link_sent',{lang:LANG.code}); /* the address itself is never tracked */m.className='msg-line ok';m.textContent='Check your inbox for the sign-in link!';}
+  /* the library is lazy, so wait for it here rather than assuming openAuth's
+     head start finished — on a slow connection it may still be in flight */
+  await ensureSupabase();
+  if(!sb){m.className='msg-line err';m.textContent='Login is unavailable right now — please try again later.';return;}
+  /* redirect to a CLEAN url: location.href now carries routing params
+     (?lang=&v=), and supabase appends its own — no point stacking both */
+  const back=location.origin+location.pathname+(LANG?'?lang='+LANG.code:'');
+  try{const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:back}});if(error)throw error;track('login_link_sent',{lang:LANG.code}); /* the address itself is never tracked */m.className='msg-line ok';m.textContent='Check your inbox for the sign-in link!';}
   catch(e){m.className='msg-line err';m.textContent=e.message||'Could not send link.';}}
 async function signOut(){if(sb)await sb.auth.signOut();user=null;onAuthChange();closeAuth();}
 
