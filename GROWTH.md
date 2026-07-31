@@ -282,10 +282,27 @@ account after deploy.
     and posts to Netlify. Surface it — a one-tap "spotted a mistake?" at the
     end of each lesson, pre-filled with the lesson id. Turn users into the
     review layer, and watch `feedback_sent`.
-13. **Apply the orphan-vocabulary fix beyond Lao.** `CLAUDE.md` records that
-    the checkpoint-review pattern cut Lao orphans 201→93 and is reusable,
-    audio-neutral and per-language. A measurable retention-of-learning win
-    across ten courses.
+13. ~~Apply the orphan-vocabulary fix beyond Lao.~~ **Already done — all 11
+    languages, July 2026.** `CLAUDE.md` said "applied to Lao; reusable per
+    language" and was simply never updated after the rollout; Ruan spotted
+    it. `e40458c2` piloted Lao (78 reviews), `81364e03` did the other ten in
+    one pass — **783 review mcs**, matching the shipped packs exactly on all
+    eleven when re-counted. Nothing to do here.
+
+    **Measuring it is the trap.** A first attempt reported ~0 orphans
+    everywhere — and reported the same for the *pre-fix* Lao pack, which is
+    what exposed it. Three separate errors, each of which alone makes the
+    measurement insensitive:
+    - **substring matching** — in unspaced scripts (km/lo/my) a short word
+      matches inside almost any later string;
+    - **lesson- instead of topic-granularity** — a topic is 5 lessons that
+      share vocab, so every word looks recycled one lesson later;
+    - **counting distractors as recycling** — Lao draws 73.8% of its
+      distractors from the same topic, so this alone hides the effect.
+
+    Target-only + topic-granularity reproduces the documented direction
+    (Lao 249→167 by this stricter definition). Always validate an orphan
+    measurement against a pre-fix pack from git before trusting it.
 
 ---
 
