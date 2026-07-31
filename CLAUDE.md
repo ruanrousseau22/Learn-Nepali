@@ -41,6 +41,9 @@ course data lives in per-language packs under `lang/`.
    mechanics.
 6. **DEPLOY ONLY WHEN RUAN SAYS SO.** Never `git push` on your own judgment —
    commit locally as work completes and wait for an explicit "deploy"/"push".
+   When he does say so, follow the **full sequence in Git / deploy**: pushing
+   the working branch deploys NOTHING (Netlify builds `main`), and any page
+   change needs `indexnow.py` run afterwards.
 
 ## Repo layout
 
@@ -596,13 +599,40 @@ Recorded MP3s first, device TTS fallback.
 
 ## Git / deploy
 
-- Local repo: `~/Desktop/Learn-Nepali`. Push triggers Netlify redeploy
+**The full sequence (July 2026). Follow it in this order.**
+
+```bash
+python3 gen_landing.py          # 1. regenerate pages + sitemap + .lastmod.json
+                                # 2. validate + commit (see Validation)
+                                # 3. push — ONLY when Ruan says so
+python3 indexnow.py             # 4. announce, AFTER the deploy is live
+```
+
+- Local repo: `~/Desktop/Learn-Nepali`. Push triggers a Netlify redeploy
   (~15 credits) — **only when Ruan says so** (Golden rule 6). Commit locally
-  as work completes.
+  as work completes and wait for an explicit "deploy"/"push".
+- **Netlify's production branch is `main`.** Sessions usually work on a
+  `claude/*` branch in a worktree under `.claude/worktrees/`, and **pushing
+  that branch only builds a deploy PREVIEW — bhasaly.com does not change.**
+  To actually deploy, fast-forward `main` in the MAIN worktree and push that:
+  ```bash
+  git -C ~/Desktop/Learn-Nepali merge --ff-only <branch>
+  git -C ~/Desktop/Learn-Nepali push origin main
+  ```
+  `main` is checked out in the main worktree, so it cannot be checked out in
+  a second one — drive it with `git -C` as above. Confirm
+  `git merge-base --is-ancestor main HEAD` first: it should always be a clean
+  fast-forward with no merge commit.
 - `git push` password = GitHub Personal Access Token.
+- **Step 4 is not optional if pages changed.** `indexnow.py` tells Bing /
+  DuckDuckGo / Yandex immediately; without it they wait weeks. It must run
+  AFTER the push (it verifies the key file and the URLs against the LIVE
+  site) and refuses to run before. Google ignores IndexNow — for Google,
+  submit the sitemap in Search Console.
 - Verify after deploy: hard-refresh bhasaly.com; Settings → Pronunciation
   voice reads "Using recorded … audio"; alphabet letters play; the old
-  domain still 301s.
+  domain still 301s; **Umami Realtime shows the visit**; Back mid-lesson
+  returns to the path instead of leaving the site.
 
 ## Measurement traps (each cost real time once — details in HISTORY.md)
 
