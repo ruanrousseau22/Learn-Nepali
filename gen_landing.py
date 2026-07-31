@@ -207,13 +207,31 @@ def page(d, others, palette_css, ne_hero):
     other_links = "\n".join(
         '<a href="/learn-%s">%s</a>' % (SLUG[o['code']], esc(o['name'])) for o in others)
 
+    # hub -> spoke: this page is the one search finds first, so it has to pass
+    # authority on to the reference pages rather than leaving them orphaned
+    refs = []
+    if not d['latin'] and (d['vowels'] or d['cons']):
+        refs.append('<a href="/%s-alphabet">%s alphabet chart</a>' % (slug, esc(name)))
+    if d.get('trip') and d['trip']['sections']:
+        refs.append('<a href="/%s-phrases">%s phrases for travellers</a>' % (slug, esc(name)))
+    ref_block = ""
+    if refs:
+        ref_block = """
+  <section class="block">
+    <h2>%s reference</h2>
+    <p class="lead">Free to read, and every line is recorded.</p>
+    <div class="others">%s</div>
+  </section>
+""" % (esc(name), "\n".join(refs))
+
     hero_scene = ('<svg class="hero-scene" viewBox="0 0 1200 320" '
                   'preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" '
                   'aria-hidden="true">%s</svg>' % hero_inner)
 
     return TEMPLATE.format(
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url), slug=slug,
-        fontlink=esc(font_link(code)), natfam=nat_fam, natlh=nat_lh,
+        fontlink=esc(font_link(code)),
+        css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
         rtl=(' dir="rtl"' if code in RTL else ''),
         palette=palette_css, hero_scene=hero_scene,
         name=esc(name), native=esc(native), code=code,
@@ -223,36 +241,13 @@ def page(d, others, palette_css, ne_hero):
                     "audio, and you learn on any phone or computer."
                     % (esc(name), esc(intro_script))),
         essentials=essentials, numbers=numbers, alpha_block=alpha_block,
-        faq_html=faq_html, other_links=other_links,
+        faq_html=faq_html, other_links=other_links, ref_block=ref_block,
         jsonld=jsonld(d, name, slug, desc), year=datetime.date.today().year)
 
 
-TEMPLATE = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title}</title>
-<meta name="description" content="{desc}">
-<meta name="keywords" content="{kw}">
-<link rel="canonical" href="{url}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{title}">
-<meta property="og:description" content="{desc}">
-<meta property="og:url" content="{url}">
-<meta property="og:image" content="https://bhasaly.com/og-image.png?v=2">
-<meta property="og:site_name" content="Bhasaly">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{title}">
-<meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=2">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{fontlink}" rel="stylesheet">
-<script type="application/ld+json">{jsonld}</script>
-<style>
-:root{{--paper:#EFF4FB;--paper2:#E0EAF6;--ink:#1B2430;--soft:#5B6B7D;--crimson:#C2362E;
+# Shared page CSS. Rendered once via CSS.format(...) and injected as {css};
+# .format() does not rescan substituted values, so the CSS braces are safe.
+CSS = """:root{{--paper:#EFF4FB;--paper2:#E0EAF6;--ink:#1B2430;--soft:#5B6B7D;--crimson:#C2362E;
 --saffron:#C67911;--saffron-soft:#FCEBCC;--teal:#0F8C74;--line:rgba(27,36,48,.10);--card:#fff;--tree:#2C5F3A;
 --r:14px;--shadow:0 1px 2px rgba(27,36,48,.05),0 10px 26px -16px rgba(20,40,80,.30)}}
 @media(prefers-color-scheme:dark){{:root{{--paper:#0F1419;--paper2:#19222C;--ink:#E9F0F7;--soft:#93A5B7;
@@ -327,7 +322,35 @@ footer a{{color:var(--soft)}}
 @media(max-width:560px){{td.native{{font-size:20px}}
 .hero-body{{min-height:200px;padding:28px 18px 78px}}
 .hero h1{{font-size:clamp(30px,9vw,40px)}}}}
-</style>
+"""
+
+
+TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta name="keywords" content="{kw}">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="https://bhasaly.com/og-image.png?v=2">
+<meta property="og:site_name" content="Bhasaly">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=2">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{fontlink}" rel="stylesheet">
+<script type="application/ld+json">{jsonld}</script>
+<style>
+{css}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -378,6 +401,7 @@ footer a{{color:var(--soft)}}
     <a class="cta" href="/?lang={code}">Start the {name} course</a>
   </section>
 
+{ref_block}
   <section class="block">
     <h2>Learn another language</h2>
     <p class="lead">Bhasaly teaches under-served Asian languages.</p>
@@ -394,6 +418,260 @@ footer a{{color:var(--soft)}}
 </body>
 </html>
 """
+
+
+# ---------------------------------------------------------------------------
+# Sub-pages: /<slug>-alphabet and /<slug>-phrases
+#
+# Everything below exists because the app is a single URL. Eleven alphabet
+# charts, eleven phrasebooks and 3,700 lessons were invisible to search — and
+# "khmer alphabet" / "nepali phrases for trekkers" are exactly what people
+# type. The data is already in the packs, so these are pure generation.
+#
+# They share TEMPLATE's CSS via CSS.format(), so a style change lands on every
+# page at once. SUB_TEMPLATE differs from TEMPLATE only in the body.
+# ---------------------------------------------------------------------------
+
+SUB_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta name="keywords" content="{kw}">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="https://bhasaly.com/og-image.png?v=2">
+<meta property="og:site_name" content="Bhasaly">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=2">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{fontlink}" rel="stylesheet">
+<script type="application/ld+json">{jsonld}</script>
+<style>
+{css}
+.sub-hero{{padding:40px 0 26px;border-bottom:1px solid var(--line)}}
+.sub-hero h1{{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0 0 8px;letter-spacing:-.02em}}
+/* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
+   without this the ur/ps native line drifts to the right edge, away from h1 */
+.sub-hero .nat{{font-size:clamp(20px,4.5vw,26px);color:var(--saffron);margin:0 0 12px;text-align:left}}
+.sub-hero p{{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}}
+.crumb{{font-size:13.5px;color:var(--soft);margin:0 0 14px}}
+.crumb a{{color:var(--soft)}}
+.note{{background:var(--saffron-soft);border-radius:12px;padding:12px 15px;margin:0 0 14px;
+font-size:14.5px;color:var(--ink)}}
+.secd{{color:var(--soft);margin:0 0 12px;font-size:15px}}
+.frame h3{{margin-top:26px}}
+.frame .fs{{color:var(--soft);font-size:14.5px;margin:0 0 10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/></svg>Bhasaly</a>
+  <a class="hlink" href="{applink}">Open Bhasaly &rarr;</a>
+</div></header>
+
+<main><div class="wrap">
+<section class="sub-hero">
+  <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-{slug}">Learn {name}</a> &rsaquo; {crumb}</p>
+  <h1>{h1}</h1>
+  <p class="nat {ncls}"{dir_attr}>{native}</p>
+  <p>{intro}</p>
+  <a class="cta" href="{applink}">{cta}</a>
+</section>
+
+{body}
+
+<section class="block">
+  <h2>Learn another language</h2>
+  <p class="lead">Bhasaly teaches under-served Asian languages.</p>
+  <div class="others">{other_links}</div>
+</section>
+
+<div class="endcta"><a class="cta" href="{applink}">{cta}</a></div>
+</div></main>
+
+<footer><div class="wrap">
+  &copy; {year} Bhasaly &middot; <a href="/">bhasaly.com</a> &middot;
+  <a href="/learn-{slug}">Learn {name}</a> &middot;
+  <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
+</div></footer>
+</body>
+</html>
+"""
+
+
+def sub_jsonld(name, url, crumb_name, slug, faq=None):
+    crumbs = {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Bhasaly", "item": ORIGIN + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Learn %s" % name,
+             "item": "%s/learn-%s" % (ORIGIN, slug)},
+            {"@type": "ListItem", "position": 3, "name": crumb_name, "item": url},
+        ],
+    }
+    out = [crumbs]
+    if faq:
+        out.append({"@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [{"@type": "Question", "name": q,
+                                    "acceptedAnswer": {"@type": "Answer", "text": a}}
+                                   for q, a in faq]})
+    return json.dumps(out, ensure_ascii=False, separators=(',', ':'))
+
+
+def sub_shell(d, others, palette_css, **kw):
+    """Common wiring for both sub-page types."""
+    code = d['code']
+    nat_fam, nat_lh = native_css(code)
+    return SUB_TEMPLATE.format(
+        css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
+        fontlink=esc(font_link(code)),
+        slug=SLUG[code], name=esc(d['name']), code=code,
+        ncls="native", dir_attr=(' dir="rtl"' if code in RTL else ' dir="auto"'),
+        other_links="\n".join('<a href="/learn-%s">%s</a>' % (SLUG[o['code']], esc(o['name']))
+                              for o in others),
+        year=datetime.date.today().year, **kw)
+
+
+def alphabet_page(d, others, palette_css):
+    code, name = d['code'], d['name']
+    slug = SLUG[code]
+    sname = SCRIPT_NAME.get(code, name + ' script')
+    url = "%s/%s-alphabet" % (ORIGIN, slug)
+    nv, nc, nn = len(d['vowels']), len(d['cons']), len(d['nums'])
+    title = "%s Alphabet — All %d Letters with Sounds & Audio | Bhasaly" % (name, nv + nc)
+    desc = ("The complete %s alphabet: %d vowels and %d consonants with romanization, "
+            "plus the %s numerals 0-9. Tap any letter in Bhasaly to hear it pronounced."
+            % (name, nv, nc, name))
+    kw = ("%s alphabet, %s letters, %s script, %s alphabet chart, %s vowels, "
+          "%s consonants, %s numbers, read %s, %s pronunciation"
+          % ((name,) * 9)).lower()
+    faq = [
+        ("How many letters are in the %s alphabet?" % name,
+         "This chart lists %d vowels and %d consonants — %d letters in total — plus the "
+         "ten numerals." % (nv, nc, nv + nc)),
+        ("Can I hear how each %s letter sounds?" % name,
+         "Yes. Open the alphabet in Bhasaly and tap any letter to play a recorded clip of "
+         "its sound. No account is needed."),
+        ("What is the best way to learn the %s?" % sname,
+         "One letter at a time, with sound, then straight into real words. Bhasaly's free "
+         "%s course starts with the script and builds from there." % name),
+    ]
+    body = """
+<section class="block">
+  <h2>Vowels</h2>
+  <p class="lead">{nv} letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
+  <div class="agrid">{vg}</div>
+</section>
+
+<section class="block">
+  <h2>Consonants</h2>
+  <p class="lead">{nc} letters, in the order the course teaches them.</p>
+  <div class="agrid">{cg}</div>
+</section>
+
+<section class="block">
+  <h2>Numerals</h2>
+  <p class="lead">Digits 0-9 as they are written in {name}.</p>
+  <div class="agrid">{ng}</div>
+</section>
+
+<section class="block">
+  <h2>Common questions</h2>
+  {faq_html}
+</section>""".format(
+        nv=nv, nc=nc, name=esc(name),
+        vg=alpha_grid(d['vowels'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"'),
+        cg=alpha_grid(d['cons'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"'),
+        ng=alpha_grid(d['nums'], "native", ' dir="auto"'),
+        faq_html="\n  ".join(
+            '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (esc(q), esc(a))
+            for q, a in faq))
+
+    return sub_shell(
+        d, others, palette_css,
+        title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
+        applink="/?lang=%s&amp;v=alphabet" % code,
+        crumb="Alphabet", h1="The %s alphabet" % esc(name), native=esc(d['nativeName']),
+        intro=esc("Every letter of the %s, with its sound written out. In Bhasaly you can "
+                  "tap any letter to hear it — the whole chart is recorded." % sname),
+        cta="Hear every letter &rarr;", body=body,
+        jsonld=sub_jsonld(name, url, "%s alphabet" % name, slug, faq))
+
+
+def phrases_page(d, others, palette_css):
+    code, name = d['code'], d['name']
+    slug, t = SLUG[code], d['trip']
+    url = "%s/%s-phrases" % (ORIGIN, slug)
+    dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
+    total = sum(len(s['lines']) for s in t['sections'])
+    title = "%s Phrases for Travellers — %d Useful Lines with Audio | Bhasaly" % (name, total)
+    desc = ("%d %s phrases a visitor actually needs — greetings, food, prices, directions "
+            "and the replies you will hear back. Romanized, with recorded audio."
+            % (total, name))
+    kw = ("%s phrases, %s for travellers, useful %s phrases, %s greetings, "
+          "%s travel phrases, basic %s, common %s words, %s phrasebook"
+          % ((name,) * 8)).lower()
+
+    parts = []
+    for s in t['sections']:
+        rows = "\n".join(
+            '<tr><td class="rom">%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
+            % (esc(l[1]), esc(l[2]), dir_attr, esc(l[0])) for l in s['lines'])
+        # s['note'] is authored HTML (<b>…</b>) — emitted raw, exactly as the app renders it
+        note = '<div class="note">%s</div>' % s['note'] if s['note'] else ''
+        parts.append(
+            '<section class="block">\n  <h2>%s</h2>\n  <p class="secd">%s</p>\n  %s'
+            '\n  <table>%s</table>\n</section>' % (esc(s['t']), esc(s['d']), note, rows))
+
+    for f in t.get('frames', []):
+        rows = "\n".join(
+            '<tr><td class="rom">%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
+            % (esc((i[1] + f['sr']).strip()),
+               esc(f['en'].replace('___', i[2])),
+               dir_attr, esc(i[0] + f['s'])) for i in f['items'])
+        parts.append(
+            '<section class="block frame">\n  <h2>%s</h2>\n  <p class="fs">%s</p>'
+            '\n  <table>%s</table>\n</section>' % (esc(f['t']), esc(f['en']), rows))
+
+    faq = [
+        ("How do you say hello in %s?" % name,
+         "%s. The greetings section above has the full set, including the reply you are "
+         "likely to hear back." % (t['sections'][0]['lines'][0][1].capitalize()
+                                   if t['sections'] and t['sections'][0]['lines'] else 'See above')),
+        ("Are these %s phrases free?" % name,
+         "Yes. Every phrase here is free to read, and free to hear in Bhasaly — no account "
+         "and no payment."),
+        ("Do I need to read the %s script to use these?" % name,
+         "No. Every line is romanized first, so you can say it straight away. The script is "
+         "there alongside if you want to start reading it."),
+    ]
+    parts.append('<section class="block">\n  <h2>Common questions</h2>\n  %s\n</section>'
+                 % "\n  ".join(
+                     '<details class="faq"><summary>%s</summary><p>%s</p></details>'
+                     % (esc(q), esc(a)) for q, a in faq))
+
+    return sub_shell(
+        d, others, palette_css,
+        title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
+        applink="/?lang=%s&amp;v=trip" % code,
+        crumb="Phrases", h1="%s phrases for a short visit" % esc(name),
+        native=esc(t['native']),
+        intro=esc("The lines a visitor actually uses, and the ones you will hear back. "
+                  "Romanized first so you can say them today. Every phrase is recorded — "
+                  "open it in Bhasaly to hear it."),
+        cta="Hear these phrases &rarr;", body="\n\n".join(parts),
+        jsonld=sub_jsonld(name, url, "%s phrases" % name, slug, faq))
 
 
 def git_date(path):
@@ -447,6 +725,16 @@ def sitemap(langs, dates):
         urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
                     '    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>'
                     % (url, dates[url]))
+    # reference pages: standalone search targets ("khmer alphabet",
+    # "nepali phrases"), so they carry real priority, not an afterthought's
+    for d in langs:
+        for suffix in ('alphabet', 'phrases'):
+            url = '%s/%s-%s' % (ORIGIN, SLUG[d['code']], suffix)
+            if url not in dates:
+                continue          # no alphabet page for a Latin-script pack
+            urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
+                        '    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>'
+                        % (url, dates[url]))
     for page_name in ('privacy', 'terms'):
         url = '%s/%s' % (ORIGIN, page_name)
         urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
@@ -473,6 +761,23 @@ def main():
         with open(os.path.join(ROOT, fn), 'w', encoding='utf-8') as f:
             f.write(html_out)
         pages.append(('%s/learn-%s' % (ORIGIN, slug), html_out, fn))
+
+        # /<slug>-alphabet — skipped for Latin packs (uz, jv): a chart of the
+        # Latin letters teaches nothing and would be a thin page.
+        if not d['latin'] and (d['vowels'] or d['cons']):
+            sub = alphabet_page(d, others, palettes[d['code']])
+            sfn = '%s-alphabet.html' % slug
+            with open(os.path.join(ROOT, sfn), 'w', encoding='utf-8') as f:
+                f.write(sub)
+            pages.append(('%s/%s-alphabet' % (ORIGIN, slug), sub, sfn))
+
+        # /<slug>-phrases — every pack ships a trip phrasebook
+        if d.get('trip') and d['trip']['sections']:
+            sub = phrases_page(d, others, palettes[d['code']])
+            sfn = '%s-phrases.html' % slug
+            with open(os.path.join(ROOT, sfn), 'w', encoding='utf-8') as f:
+                f.write(sub)
+            pages.append(('%s/%s-phrases' % (ORIGIN, slug), sub, sfn))
     # hand-written, not generated — listed here only so the lastmod store
     # dates them from their own bytes like everything else
     for page_name in ('privacy', 'terms'):
@@ -485,9 +790,9 @@ def main():
     dates = lastmod_store(pages)
     with open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8') as f:
         f.write(sitemap(langs, dates))
-    print('wrote %d landing pages + sitemap.xml' % len(langs))
+    print('wrote %d pages + sitemap.xml' % (len(pages) - 1))  # "/" is the app, not written here
     for url, _, _ in pages:
-        print('  %-42s lastmod %s' % (url, dates[url]))
+        print('  %-44s lastmod %s' % (url, dates[url]))
 
 
 if __name__ == '__main__':

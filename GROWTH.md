@@ -164,7 +164,44 @@ and Tier 1 landed first, and ideally Tier 4 before a big push.
    resources for every script and ranks for all of them. The "8 Online Tools
    to Learn Nepali" roundups are one friendly email each.
 
-## Tier 3 — Build the SEO surface
+## Tier 3 — Build the SEO surface ✅ DONE (July 2026)
+
+**12 indexable URLs → 34.** `gen_landing.py` now emits, per language:
+
+- **`/<slug>-alphabet`** — the full chart, vowels + consonants + numerals with
+  romanization, FAQ JSON-LD, CTA into `/?lang=X&v=alphabet`. Nine pages:
+  **skipped for uz and jv**, where a chart of the Latin letters teaches
+  nothing and would be a thin page.
+- **`/<slug>-phrases`** — the whole `trip` phrasebook, every section with its
+  note, plus the sentence-builder frames expanded into real sentences. Eleven
+  pages. Roman is the primary column, matching the in-app rule.
+
+Both share `TEMPLATE`'s CSS through a new `CSS` constant, so styling stays in
+one place. That extraction was verified byte-neutral: the 11 landing pages
+came out identical to the committed versions.
+
+The `learn-<slug>` pages gained a **reference block** linking to their own two
+sub-pages — otherwise the new pages would be orphans with no internal links,
+which is how good pages fail to rank.
+
+Sitemap covers all 34 at priority 0.7 for reference pages. Verified: 504
+internal links across all pages resolve, all JSON-LD parses, every page has
+exactly one `<h1>` and a canonical, no mobile overflow at 375px, RTL (ur/ps)
+native lines align with the heading.
+
+> `index.html` reports three `<h1>`s — the home/flib/fstory hero copies that
+> `CLAUDE.md` documents. Only one is ever visible, so this is not a defect;
+> do not "fix" it by restructuring the triple hero.
+
+### Still worth doing here
+
+- A printable one-page PDF per phrasebook — a natural link magnet, and the
+  data is already assembled.
+- Pretty in-app paths (`/khmer/alphabet`) instead of `?lang=&v=`. Needs a
+  Netlify SPA fallback; deliberately deferred so it cannot shadow the static
+  pages. No SEO value — these sub-pages now carry it.
+
+## Tier 3 (original notes)
 
 The data already exists and `gen_landing.py` already knows how to render it.
 12 → ~35 URLs of genuinely unique content is mostly generation work.
