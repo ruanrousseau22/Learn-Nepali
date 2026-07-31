@@ -8,12 +8,19 @@ Run from the repo root:  python3 scratchpad/gen_landing.py
 Data comes from landing_data.js (JXA), so the pages always reflect
 the live packs. Writes learn-<slug>.html at the repo root and rewrites
 sitemap.xml.
+
+sitemap <lastmod> is CONTENT-ADDRESSED, never "today": each URL's date only
+moves when that page's bytes actually change (see lastmod_store). Stamping
+every URL with the run date on every regeneration teaches Google to ignore
+the field entirely, which is what it did before July 2026.
 """
-import html, json, os, re, subprocess, datetime
+import hashlib, html, json, os, re, subprocess, datetime
 
 ROOT = os.getcwd()
-LASTMOD = datetime.date.today().isoformat()
+TODAY = datetime.date.today().isoformat()
 ORIGIN = "https://bhasaly.com"
+# url -> [sha256 of the content that page is generated from, iso date]
+LASTMOD_DB = '.lastmod.json'
 
 # slug + the Google-Fonts family for each script (None = covered by Plus Jakarta)
 SLUG = {'ne':'nepali','km':'khmer','my':'burmese','bn':'bengali','si':'sinhala',
@@ -388,14 +395,57 @@ footer a{{color:var(--soft)}}
 """
 
 
-def sitemap(langs):
+def git_date(path):
+    """ISO date of the last commit touching path. Used only to seed the
+    lastmod store on its first run, so pages that already exist keep an
+    honest date instead of all claiming to have changed today."""
+    try:
+        out = subprocess.check_output(['git', 'log', '-1', '--format=%cs', '--', path],
+                                      cwd=ROOT, stderr=subprocess.DEVNULL).decode().strip()
+        return out or TODAY
+    except Exception:
+        return TODAY
+
+
+def lastmod_store(pages):
+    """pages: [(url, generated_content, seed_path)] -> {url: iso date}.
+
+    A URL's date moves ONLY when the sha256 of its content changes. Unchanged
+    pages keep their stored date; unseen pages are seeded from git history.
+    The store lives in .lastmod.json and is committed with the pages.
+    """
+    fn = os.path.join(ROOT, LASTMOD_DB)
+    try:
+        with open(fn, encoding='utf-8') as f:
+            db = json.load(f)
+    except Exception:
+        db = {}
+    dates, out = {}, {}
+    for url, content, seed_path in pages:
+        h = hashlib.sha256(content.encode('utf-8')).hexdigest()
+        prev = db.get(url)
+        if prev and prev[0] == h:
+            date = prev[1]              # byte-identical — the page did not change
+        elif prev:
+            date = TODAY                # genuinely new content
+        else:
+            date = git_date(seed_path)  # first run — seed from history
+        dates[url], out[url] = date, [h, date]
+    with open(fn, 'w', encoding='utf-8') as f:
+        json.dump(out, f, indent=1, sort_keys=True)
+        f.write('\n')
+    return dates
+
+
+def sitemap(langs, dates):
     urls = ['  <url>\n    <loc>%s/</loc>\n    <lastmod>%s</lastmod>\n'
             '    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>'
-            % (ORIGIN, LASTMOD)]
+            % (ORIGIN, dates[ORIGIN + '/'])]
     for d in langs:
-        urls.append('  <url>\n    <loc>%s/learn-%s</loc>\n    <lastmod>%s</lastmod>\n'
+        url = '%s/learn-%s' % (ORIGIN, SLUG[d['code']])
+        urls.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
                     '    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>'
-                    % (ORIGIN, SLUG[d['code']], LASTMOD))
+                    % (url, dates[url]))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "\n".join(urls) + "\n</urlset>\n")
@@ -407,17 +457,22 @@ def main():
     langs = json.loads(raw)
     index_html = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
     palettes, ne_hero = scene_assets(index_html)
+    # the app itself is the content behind "/" — its own bytes date that URL
+    pages = [(ORIGIN + '/', index_html, 'index.html')]
     for d in langs:
         others = [o for o in langs if o['code'] != d['code']]
         html_out = page(d, others, palettes[d['code']], ne_hero)
-        fn = os.path.join(ROOT, 'learn-%s.html' % SLUG[d['code']])
-        with open(fn, 'w', encoding='utf-8') as f:
+        slug = SLUG[d['code']]
+        fn = 'learn-%s.html' % slug
+        with open(os.path.join(ROOT, fn), 'w', encoding='utf-8') as f:
             f.write(html_out)
+        pages.append(('%s/learn-%s' % (ORIGIN, slug), html_out, fn))
+    dates = lastmod_store(pages)
     with open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8') as f:
-        f.write(sitemap(langs))
+        f.write(sitemap(langs, dates))
     print('wrote %d landing pages + sitemap.xml' % len(langs))
-    for d in langs:
-        print('  /learn-%s' % SLUG[d['code']])
+    for url, _, _ in pages:
+        print('  %-42s lastmod %s' % (url, dates[url]))
 
 
 if __name__ == '__main__':
