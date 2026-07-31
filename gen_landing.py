@@ -564,7 +564,7 @@ def alphabet_page(d, others, palette_css):
          "Yes. Open the alphabet in Bhasaly and tap any letter to play a recorded clip of "
          "its sound. No account is needed."),
         ("What is the best way to learn the %s?" % sname,
-         "One letter at a time, with sound, then straight into real words. Bhasaly's free "
+         "One letter at a time, with sound, then straight into real words. Bhasaly's "
          "%s course starts with the script and builds from there." % name),
     ]
     body = """
@@ -649,9 +649,9 @@ def phrases_page(d, others, palette_css):
          "%s. The greetings section above has the full set, including the reply you are "
          "likely to hear back." % (t['sections'][0]['lines'][0][1].capitalize()
                                    if t['sections'] and t['sections'][0]['lines'] else 'See above')),
-        ("Are these %s phrases free?" % name,
-         "Yes. Every phrase here is free to read, and free to hear in Bhasaly — no account "
-         "and no payment."),
+        ("Do I need an account to use these %s phrases?" % name,
+         "No. Every phrase on this page is open to read, and you can hear all of them in "
+         "Bhasaly without signing up."),
         ("Do I need to read the %s script to use these?" % name,
          "No. Every line is romanized first, so you can say it straight away. The script is "
          "there alongside if you want to start reading it."),

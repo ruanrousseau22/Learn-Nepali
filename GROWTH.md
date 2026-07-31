@@ -132,7 +132,10 @@ once). Now runs `devserver.py`. Confirmed `no-store`.
 
 All four shipped. Kept below as the record of what each one was for.
 
-1. ✅ **The home page has no pitch.** A first-time visitor lands directly on the
+1. ~~**The home page has no pitch.**~~ **REVERTED at Ruan's request (July
+   2026) — the line was removed and the clean landing restored.** Do not
+   re-add an intro line to the home page.
+   Original rationale, kept for context: A first-time visitor lands directly on the
    Nepali lesson path — nothing says what Bhasaly is, that it is free, that
    there are eleven languages, or that the audio is real recordings. The
    `/learn-nepali` pages do this well; the root URL, which is what gets
@@ -151,6 +154,25 @@ All four shipped. Kept below as the record of what each one was for.
 4. ✅ **Defer Supabase.** `index.html` loads 53KB of supabase-js on every
    anonymous visit for a login most people never click. Load it when the
    auth modal opens: ~20% off page weight and a faster DOMContentLoaded.
+
+## Positioning: never advertise Bhasaly as "free"
+
+**Ruan's call, July 2026.** The site costs nothing and always will, but
+"free" is not to be used as a selling point — not in page copy, not in FAQs,
+not in meta descriptions, and **not in any post, listing or outreach**.
+
+Removed from: the home page line (deleted entirely), the privacy opening,
+the terms meta description, the alphabet-page FAQ, and the whole "Are these
+phrases free?" FAQ (replaced with "Do I need an account…?", which carries the
+same reassurance without the word).
+
+Kept, because they are not marketing: the ordinary English sense — "a free
+room" (vacant), "free refills" — and the terms' liability clause, which now
+reads "a service provided at no charge" so the legal substance survives
+without the sales word.
+
+**When writing outreach copy, say "no account needed" or "no payment, no
+ads" — never "free".**
 
 ## Tier 2 — Go get users
 

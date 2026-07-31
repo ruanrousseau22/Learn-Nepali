@@ -38,7 +38,12 @@ course data lives in per-language packs under `lang/`.
    changes**, then run `generate_audio.py` for that language and commit the
    new clips + manifest (see Audio).
 5. Keep the UI minimal and uncluttered. Faith-forward but never preachy in
-   mechanics.
+   mechanics. **The home page goes straight from hero to lesson path — an
+   intro/pitch line was tried in July 2026 and removed; do not re-add one.**
+   **Never advertise Bhasaly as "free"** (Ruan, July 2026): true, but not a
+   selling point, anywhere — copy, FAQs, meta, or outreach. Say "no account
+   needed" instead. The ordinary English sense ("a free room") is fine; the
+   terms say "provided at no charge" so the liability clause still works.
 6. **DEPLOY ONLY WHEN RUAN SAYS SO.** Never `git push` on your own judgment —
    commit locally as work completes and wait for an explicit "deploy"/"push".
    When he does say so, follow the **full sequence in Git / deploy**: pushing
