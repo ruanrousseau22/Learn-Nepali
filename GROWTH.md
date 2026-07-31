@@ -235,9 +235,14 @@ gained a **Delete account** row that appears only when logged in.
 **These drafts need Ruan's read — they are not legal advice.** Two things to
 check specifically:
 
-- **`hello@bhasaly.com` is used as the contact address on both pages.** It
-  must actually receive mail, or be changed. Everything else routes through
-  the in-app feedback form, which does work.
+- **No email address appears anywhere on the site — deliberately.** Ruan does
+  not want his name affiliated with Bhasaly, and his address contains it. A
+  `mailto:` button would not have solved that: the address sits in the page
+  source and the browser's hover status bar regardless of the link text.
+  Instead both legal pages carry a **Contact us button** to `/?feedback=1`,
+  which opens the existing feedback modal in a privacy-request framing.
+  Netlify Forms delivers to an inbox configured **only in the Netlify
+  dashboard**. **Do not add a mailto anywhere.**
 - The Analytics section describes cookieless aggregate counts. That is
   accurate the moment Tier 0.1 is switched on, and harmlessly
   over-discloses until then (over-disclosure is safe; the reverse is not).

@@ -1749,8 +1749,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 <div class="modal-bg" id="feedback-modal">
   <div class="modal">
     <button class="close" onclick="closeFeedback()" aria-label="Close">×</button>
-    <h3>Report an error</h3>
-    <p>Spotted a wrong translation, romanization or audio clip — or have a suggestion to improve a course? Send it here and it goes straight to the team for review.</p>
+    <h3 id="fb-title">Report an error</h3>
+    <p id="fb-desc">Spotted a wrong translation, romanization or audio clip — or have a suggestion to improve a course? Send it here and it goes straight to the team for review.</p>
     <textarea id="fb-message" rows="4" placeholder="Describe the issue — which language, and what's wrong. The more detail, the faster it's fixed."></textarea>
     <input id="fb-email" type="email" autocomplete="email" placeholder="Your email (optional — only if you'd like a reply)">
     <button class="btn btn-primary" id="fb-send" onclick="sendFeedback()">Send feedback</button>
@@ -1967,7 +1967,22 @@ async function signOut(){if(sb)await sb.auth.signOut();user=null;onAuthChange();
    dashboard's form notifications, so it never appears in the page or the
    network payload. Context is auto-captured so a report says WHERE it happened
    without the reporter having to explain. */
-function openFeedback(){const t=document.getElementById('tabs');if(t)t.classList.remove('open');const m=document.getElementById('fb-msg');m.className='msg-line';m.textContent='';document.getElementById('feedback-modal').classList.add('show');setTimeout(()=>{const a=document.getElementById('fb-message');if(a)a.focus();},60);}
+/* mode 'contact' comes from the Contact button on /privacy and /terms. Those
+   pages promise this is where privacy requests go, so the error-report
+   framing would be wrong for someone arriving that way. */
+function openFeedback(mode){const t=document.getElementById('tabs');if(t)t.classList.remove('open');
+  const m=document.getElementById('fb-msg');m.className='msg-line';m.textContent='';
+  const ti=document.getElementById('fb-title'),de=document.getElementById('fb-desc'),ta=document.getElementById('fb-message');
+  const contact=mode==='contact';
+  if(ti)ti.textContent=contact?'Contact us':'Report an error';
+  if(de)de.textContent=contact
+    ?'Questions, corrections, or a privacy request — including asking for a copy of your data or having it deleted. Messages reach a monitored inbox.'
+    :'Spotted a wrong translation, romanization or audio clip — or have a suggestion to improve a course? Send it here and it goes straight to the team for review.';
+  if(ta)ta.placeholder=contact
+    ?'How can we help?'
+    :"Describe the issue — which language, and what's wrong. The more detail, the faster it's fixed.";
+  document.getElementById('feedback-modal').classList.add('show');
+  setTimeout(()=>{if(ta)ta.focus();},60);}
 function closeFeedback(){document.getElementById('feedback-modal').classList.remove('show');}
 function feedbackContext(){
   const view=document.querySelector('.view.active');
@@ -3355,8 +3370,9 @@ window.addEventListener('popstate',async function(){
   let want=savedLang();
   /* ?lang=<code> deep-link: the SEO landing pages (/learn-sinhala …) send
      a learner straight into their course. Only honor a known code. */
-  let deepLang=null,deepView=null,deepStory=null;
+  let deepLang=null,deepView=null,deepStory=null,deepFeedback=false;
   try{const qs=new URLSearchParams(location.search),q=qs.get('lang');
+    deepFeedback=qs.get('feedback')==='1';   /* read BEFORE routing rewrites the URL */
     if(q&&typeof LANG_CATALOG!=='undefined'&&LANG_CATALOG.some(l=>l.code===q)){want=q;deepLang=q;}
     /* ?v=<view> is this app's own routing (see ROUTING above): a reload,
        a bookmark or a shared link lands on the same page it named. */
@@ -3396,6 +3412,12 @@ window.addEventListener('popstate',async function(){
   /* seat the initial history entry from whatever actually ended up on screen */
   try{const av=((document.querySelector('.view.active')||{}).id||'view-home').slice(5);
     history.replaceState({v:av},'',routeURL(av));}catch(e){}
+  /* ?feedback=1 — the Contact button on /privacy and /terms. Those are static
+     pages with no form of their own, and the whole point is that no email
+     address appears anywhere: Netlify Forms delivers to an inbox configured
+     only in its dashboard. Captured into deepFeedback before the replaceState
+     above, which drops the param — so a reload will not re-open the modal. */
+  if(deepFeedback)try{openFeedback('contact');}catch(e){}
   /* PWA: registered AFTER the UI is up so it never competes with the pack
      fetch on a slow connection. Failure is silent and harmless — the app is
      fully functional without it, it only adds install + offline + the clip

@@ -66,8 +66,13 @@ course data lives in per-language packs under `lang/`.
   invalidate.
 - `privacy.html` / `terms.html` — hand-written legal pages at `/privacy` and
   `/terms` (Netlify serves the pretty path). Linked from the app footer,
-  Settings, and every landing-page footer. Contact address is
-  `hello@bhasaly.com` — **it must actually receive mail.**
+  Settings, and every landing-page footer. **NO email address appears
+  anywhere on the site, on purpose** — Ruan's address carries his name and he
+  does not want it affiliated with Bhasaly. A `mailto:` would expose it in
+  the page source and the hover status bar whatever the link text says, so
+  contact is a **button to `/?feedback=1`**, which opens the feedback modal
+  in `contact` framing; Netlify Forms delivers to an inbox set only in its
+  dashboard. **Never add a mailto.**
 - `learn-<slug>.html` (11) + `<slug>-alphabet.html` (9, non-Latin only) +
   `<slug>-phrases.html` (11) + `gen_landing.py` + `landing_data.js` —
   static SEO pages. **34 indexable URLs total.**
