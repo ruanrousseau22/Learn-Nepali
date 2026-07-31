@@ -707,7 +707,7 @@ const MN_Z3=[
 {t:'fill',q:'Complete: “what is that?”',s:'Тэр ___ вэ?',o:['юу','хэн','ном','за'],a:0},
 {t:'wb',q:'Build: “this (is) a chair”',a:['Энэ','сандал'],pool:['Энэ','сандал','Тэр','ширээ']},
 {t:'match',q:'Match word and meaning',pairs:[['энэ','this'],['ном','book'],['ширээ','table'],['юу','what']]},
-{t:'li',q:'Listen — which sentence?',say:'Энэ ширээ',o:['Энэ ширээ','Тэр ширээ','Энэ сандал','Ширээ юу'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'Энэ ширээ',o:['Энэ ширээ','Тэр ширээ','Энэ сандал','Ширээ юу'],a:0},{t:'mc',q:'Review — which means "sun"?',o:['нар','одоо','шөнө','өчигдөр'],a:0}]},
 {id:'mn_dem_5',title:'Checkpoint',step:'checkpoint',meta:'Simple sentences mastered?',vocab:[],ex:[
 {t:'mc',q:'“This (is) a book” =',o:['Энэ ном','Энэ юу вэ','Тэр ном','Ном'],a:0},
 {t:'li',q:'Listen — which question?',say:'Энэ юу вэ?',o:['Энэ юу вэ?','Тэр юу вэ?','Юу байна?','Энэ ном'],a:0},
@@ -746,7 +746,7 @@ const MN_Z3=[
 {t:'fill',q:'Complete: “you (polite) will come?” — just add уу later; for now: Та ___',s:'Та ___',o:['ирнэ','иднэ','нэр','сайн'],a:0},
 {t:'wb',q:'Build: “he/she will drink tea”',a:['Тэр','цай','ууна'],pool:['Тэр','цай','ууна','иднэ']},
 {t:'match',q:'Match verb and meaning',pairs:[['явна','go'],['ирнэ','come'],['ууна','drink'],['харна','see']]},
-{t:'li',q:'Listen — which verb?',say:'ууна',o:['ууна','ирнэ','иднэ','нуур'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'ууна',o:['ууна','ирнэ','иднэ','нуур'],a:0},{t:'mc',q:'Review — which means "airag (mare milk drink)"?',o:['айраг','сандал','ширээ','энэ'],a:0}]},
 {id:'mn_verb_5',title:'Checkpoint',step:'checkpoint',meta:'Present-future mastered?',vocab:[],ex:[
 {t:'mc',q:'“will eat” =',o:['иднэ','ирнэ','явна','ууна'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'Би цай ууна',o:['Би цай ууна','Би цай иднэ','Тэр сүү ууна','Би ууна'],a:0},
@@ -982,7 +982,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “father will come”',s:'Аав ___',o:['ирнэ','иднэ','байна','биш'],a:0},
 {t:'wb',q:'Build: “older sister is here”',a:['Эгч','энд','байна'],pool:['Эгч','энд','байна','ах']},
 {t:'match',q:'Match word and meaning',pairs:[['аав','father'],['эгч','older sister'],['охин','daughter'],['дүү','younger sibling']]},
-{t:'li',q:'Listen — which sentence?',say:'Надад дүү байна',o:['Надад дүү байна','Надад ах байна','Надад хүү байна','Дүү байна уу?'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'Надад дүү байна',o:['Надад дүү байна','Надад ах байна','Надад хүү байна','Дүү байна уу?'],a:0},{t:'mc',q:'Review — which means "thank you"?',o:['Баярлалаа','аль','ямар','яагаад'],a:0}]},
 {id:'mn_fam_5',title:'Checkpoint',step:'checkpoint',meta:'The family mastered?',vocab:[],ex:[
 {t:'mc',q:'“father” =',o:['аав','ах','ээж','дүү'],a:0},
 {t:'li',q:'Listen — which word?',say:'эгч',o:['эгч','ээж','ах','эм'],a:0},
@@ -1022,7 +1022,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “the hospital is far” — хол comes soon; say “the hospital is here”',s:'Эмнэлэг энд ___',o:['байна','явна','биш','вэ'],a:0},
 {t:'wb',q:'Build: “where is the school?”',a:['Сургууль','хаана','байна','вэ'],pool:['Сургууль','хаана','байна','вэ','банк']},
 {t:'match',q:'Match place and meaning',pairs:[['дэлгүүр','shop'],['эмнэлэг','hospital'],['буудал','station'],['зах','market']]},
-{t:'li',q:'Listen — which word?',say:'сургууль',o:['сургууль','сургаль','эмнэлэг','зургаа'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'сургууль',o:['сургууль','сургаль','эмнэлэг','зургаа'],a:0},{t:'mc',q:'Review — which means "goodbye"?',o:['Баяртай','хүү','охин','дүү'],a:0}]},
 {id:'mn_town_5',title:'Checkpoint',step:'checkpoint',meta:'The town mastered?',vocab:[],ex:[
 {t:'mc',q:'“market” =',o:['зах','дэлгүүр','буудал','зам'],a:0},
 {t:'li',q:'Listen — which word?',say:'эмнэлэг',o:['эмнэлэг','сургууль','банк','эм'],a:0},
@@ -1062,7 +1062,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “I will go to school”',s:'Би ___ явна',o:['сургуульд','сургууль','сургуулиас','ажил'],a:0},
 {t:'wb',q:'Build: “father is at work”',a:['Аав','ажилд','байна'],pool:['Аав','ажилд','байна','гэрт']},
 {t:'match',q:'Match phrase and meaning',pairs:[['гэрт','at home'],['захад','at the market'],['ажилд','at work'],['Улаанбаатарт','in UB']]},
-{t:'li',q:'Listen — which sentence?',say:'Би дэлгүүрт явна',o:['Би дэлгүүрт явна','Би захад явна','Би дэлгүүрт байна','Тэр дэлгүүрт явна'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'Би дэлгүүрт явна',o:['Би дэлгүүрт явна','Би захад явна','Би дэлгүүрт байна','Тэр дэлгүүрт явна'],a:0},{t:'mc',q:'Review — which means "what is up? / how are things?"?',o:['Юу байна?','буудал','банк','эмнэлэг'],a:0}]},
 {id:'mn_loc_5',title:'Checkpoint',step:'checkpoint',meta:'Dative-locative mastered?',vocab:[],ex:[
 {t:'mc',q:'“at home” =',o:['гэрт','гэр','гэрээс','гэрийн'],a:0},
 {t:'li',q:'Listen — which word?',say:'хотод',o:['хотод','хотоос','гэрт','хот'],a:0},
@@ -1102,7 +1102,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “mother’s milk tea”',s:'___ сүүтэй цай',o:['ээжийн','ээж','ээжид','ээжтэй'],a:0},
 {t:'wb',q:'Build: “father’s book is here”',a:['Аавын','ном','энд','байна'],pool:['Аавын','ном','энд','байна','аав']},
 {t:'match',q:'Match phrase and meaning',pairs:[['миний ном','my book'],['хэний','whose'],['найзын гэр','friend’s home'],['аавын дэлгүүр','father’s shop']]},
-{t:'li',q:'Listen — which word?',say:'найзын',o:['найзын','найз','найзтай','аавын'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'найзын',o:['найзын','найз','найзтай','аавын'],a:0},{t:'mc',q:'Review — which means "you (polite)"?',o:['та','ажилд','Улаанбаатарт','дэлгүүрт'],a:0}]},
 {id:'mn_gen_5',title:'Checkpoint',step:'checkpoint',meta:'Genitive mastered?',vocab:[],ex:[
 {t:'mc',q:'“father’s book” =',o:['аавын ном','аав ном','аавд ном','ном аавтай'],a:0},
 {t:'li',q:'Listen — which word?',say:'хэний',o:['хэний','хэн','хэзээ','миний'],a:0},
@@ -1142,7 +1142,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “from where?”',s:'___?',o:['Хаанаас','Хаана','Хэзээ','Хэний'],a:0},
 {t:'wb',q:'Build: “I came from home”',a:['Би','гэрээс','ирсэн'],pool:['Би','гэрээс','ирсэн','гэрт']},
 {t:'match',q:'Match phrase and meaning',pairs:[['хаанаас ирсэн бэ?','where from?'],['гэрээс','from home'],['ажлаас ирнэ','comes from work'],['захаас','from the market']]},
-{t:'li',q:'Listen — which word?',say:'ажлаас',o:['ажлаас','ажилд','заавал','ажил'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ажлаас',o:['ажлаас','ажилд','заавал','ажил'],a:0},{t:'mc',q:'Review — which means "11"?',o:['арван нэг','зуу','дөч','гуч'],a:0}]},
 {id:'mn_abl_5',title:'Checkpoint',step:'checkpoint',meta:'The ablative mastered?',vocab:[],ex:[
 {t:'mc',q:'“from home” =',o:['гэрээс','гэрт','гэрийн','гэр'],a:0},
 {t:'li',q:'Listen — which question?',say:'Та хаанаас ирсэн бэ?',o:['Та хаанаас ирсэн бэ?','Та хаана амьдардаг вэ?','Хаанаас ирэх вэ?','Та ирсэн үү?'],a:0},
@@ -1181,7 +1181,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “father is outside”',s:'Аав ___ байна',o:['гадаа','дотор','дээр','доор'],a:0},
 {t:'wb',q:'Build: “the market is near”',a:['Зах','ойрхон','байна'],pool:['Зах','ойрхон','байна','хол']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ширээн дээр','on the table'],['ширээн доор','under the table'],['гадаа','outside'],['ойрхон','near']]},
-{t:'li',q:'Listen — which word?',say:'гадаа',o:['гадаа','гурав','дотор','хада'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'гадаа',o:['гадаа','гурав','дотор','хада'],a:0},{t:'mc',q:'Review — which means "12"?',o:['арван хоёр','зуу','дөч','гуч'],a:0}]},
 {id:'mn_pos_5',title:'Checkpoint',step:'checkpoint',meta:'Positions mastered?',vocab:[],ex:[
 {t:'mc',q:'“inside” =',o:['дотор','гадаа','дээр','доор'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ширээн доор',o:['ширээн доор','ширээн дээр','гэр дотор','доор'],a:0},
@@ -1220,7 +1220,7 @@ const MN_Z4=[
 {t:'fill',q:'Complete: “I will eat meat”',s:'Би мах ___',o:['иднэ','ууна','байна','өгнө'],a:0},
 {t:'wb',q:'Build: “is there buuz?”',a:['Бууз','байна','уу'],pool:['Бууз','байна','уу','үү']},
 {t:'match',q:'Match phrase and meaning',pairs:[['Би мах иднэ','I will eat meat'],['Цай өгнө үү','tea please'],['Хоол байна уу?','is there food?'],['талх','bread']]},
-{t:'li',q:'Listen — which phrase?',say:'Сүүтэй цай өгнө үү',o:['Сүүтэй цай өгнө үү','Цай өгнө үү','Сүү өгнө үү','Сүүтэй цай байна'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Сүүтэй цай өгнө үү',o:['Сүүтэй цай өгнө үү','Цай өгнө үү','Сүү өгнө үү','Сүүтэй цай байна'],a:0},{t:'mc',q:'Review — which means "20"?',o:['хорь','зуу','дөч','гуч'],a:0}]},
 {id:'mn_food_5',title:'Zone 4 checkpoint',step:'checkpoint',meta:'Cases & places mastered?',vocab:[],ex:[
 {t:'mc',q:'“Buuz, please” =',o:['Бууз өгнө үү','Бууз байна','Бууз уух уу','Бууз иднэ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Цай өгнө үү',o:['Цай өгнө үү','Цай байна уу','Цай уух уу','Сүү өгнө үү'],a:0},
@@ -1261,7 +1261,7 @@ const MN_Z5=[
 {t:'wb',q:'Build: “five hundred”',a:['таван','зуу'],pool:['таван','зуу','мянга','тав']},
 {t:'fill',q:'Complete: a good meal costs about “ten thousand”',s:'___ мянга төгрөг',o:['арван','сая','зуун','нэг'],a:0},
 {t:'match',q:'Match number and value',pairs:[['таван зуу','500'],['таван мянга','5,000'],['арван мянга','10,000'],['сая','1,000,000']]},
-{t:'li',q:'Listen — which number?',say:'сая',o:['сая','зуу','саяхан','яс'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'сая',o:['сая','зуу','саяхан','яс'],a:0},{t:'mc',q:'Review — which means "30"?',o:['гуч','зуу','дөч','хорь'],a:0}]},
 {id:'mn_num3_5',title:'Checkpoint',step:'checkpoint',meta:'Big numbers mastered?',vocab:[],ex:[
 {t:'mc',q:'“1,000” =',o:['мянга','сая','зуу','түм'],a:0},
 {t:'li',q:'Listen — which number?',say:'арван мянга',o:['арван мянга','таван мянга','мянга','арван зуу'],a:0},
@@ -1301,7 +1301,7 @@ const MN_Z5=[
 {t:'fill',q:'React: “too expensive!” — их үнэтэй works; try хямд биш:',s:'Их ___!',o:['үнэтэй','хямд','мөнгө','үнэ'],a:0},
 {t:'wb',q:'Build: “do you have money?”',a:['Танд','мөнгө','байна','уу'],pool:['Танд','мөнгө','байна','уу','вэ']},
 {t:'match',q:'Match phrase and meaning',pairs:[['Энэ хэд вэ?','how much is this?'],['их үнэтэй','very expensive'],['хямд байна','it is cheap'],['төгрөг','tögrög']]},
-{t:'li',q:'Listen — which word?',say:'үнэ',o:['үнэ','үү','нэг','үнэтэй'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'үнэ',o:['үнэ','үү','нэг','үнэтэй'],a:0},{t:'mc',q:'Review — which means "yes"?',o:['тийм','тоо','арван мянга','мянга'],a:0}]},
 {id:'mn_money_5',title:'Checkpoint',step:'checkpoint',meta:'Money talk mastered?',vocab:[],ex:[
 {t:'mc',q:'“How much is this?” =',o:['Энэ хэд вэ?','Энэ хэн бэ?','Хэд вэ энэ юу?','Энэ хэзээ вэ?'],a:0},
 {t:'li',q:'Listen — which word?',say:'хямд',o:['хямд','үнэтэй','хамд','мөнгө'],a:0},
@@ -1341,7 +1341,7 @@ const MN_Z5=[
 {t:'wb',q:'Build: “I will take this one”',a:['Энийг','авъя'],pool:['Энийг','авъя','авна','энэ']},
 {t:'fill',q:'The seller nods and says…',s:'___!',o:['Болно','Байхгүй','Биш','Хол'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Хаанаас авах вэ?','where can I buy?'],['дахиад нэг','one more'],['Энийг авъя','I’ll take this'],['болно','can do']]},
-{t:'li',q:'Listen — which phrase?',say:'Би талх авна',o:['Би талх авна','Би бууз авна','Талх өгнө үү','Би талх иднэ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Би талх авна',o:['Би талх авна','Би бууз авна','Талх өгнө үү','Би талх иднэ'],a:0},{t:'mc',q:'Review — which means "sorry / excuse me"?',o:['уучлаарай','хямд','үнэтэй','үнэ'],a:0}]},
 {id:'mn_shop_5',title:'Checkpoint',step:'checkpoint',meta:'Shopping mastered?',vocab:[],ex:[
 {t:'mc',q:'“I will take this one” =',o:['Энийг авъя','Энэ болно','Авах уу','Энийг өгье'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Хямд болох уу?',o:['Хямд болох уу?','Хямд байна','Үнэтэй үү?','Болох уу?'],a:0},
@@ -1380,7 +1380,7 @@ const MN_Z5=[
 {t:'wb',q:'Build: “it is half past ten”',a:['Арав','хагас','болж','байна'],pool:['Арав','хагас','болж','байна','цаг']},
 {t:'fill',q:'Complete: hurry — “what time is it NOW?”',s:'___ хэдэн цаг болж байна вэ?',o:['Одоо','Маргааш','Өчигдөр','Хагас'],a:0},
 {t:'match',q:'Match time and meaning',pairs:[['таван цаг','5:00'],['арав хагас','10:30'],['таван цагт','at 5'],['минут','minute']]},
-{t:'li',q:'Listen — which word?',say:'минут',o:['минут','мянга','цаг','минь'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'минут',o:['минут','мянга','цаг','минь'],a:0},{t:'mc',q:'Review — which means "OK / alright"?',o:['за','дахиад нэг','Энийг авъя','авна'],a:0}]},
 {id:'mn_clock_5',title:'Checkpoint',step:'checkpoint',meta:'Clock time mastered?',vocab:[],ex:[
 {t:'mc',q:'“What time is it?” =',o:['Хэдэн цаг болж байна вэ?','Хэдэн цаг уу?','Цаг хаана вэ?','Хэд цагтай вэ?'],a:0},
 {t:'li',q:'Listen — which time?',say:'таван цаг',o:['таван цаг','арван цаг','тав хагас','таван минут'],a:0},
@@ -1419,7 +1419,7 @@ const MN_Z5=[
 {t:'wb',q:'Build in order: Friday, Saturday, Sunday',a:['Баасан','Бямба','Ням'],pool:['Ням','Баасан','Бямба','Даваа']},
 {t:'fill',q:'Complete: “today (is) Monday”',s:'Өнөөдөр ___',o:['Даваа','гараг','Даваад','Ням уу'],a:0},
 {t:'match',q:'Match day and meaning',pairs:[['Даваа','Monday'],['Лхагва','Wednesday'],['Баасан','Friday'],['Ням','Sunday']]},
-{t:'li',q:'Listen — which question?',say:'Өнөөдөр ямар гараг вэ?',o:['Өнөөдөр ямар гараг вэ?','Өнөөдөр юу вэ?','Маргааш ямар гараг вэ?','Ямар цай вэ?'],a:0}]},
+{t:'li',q:'Listen — which question?',say:'Өнөөдөр ямар гараг вэ?',o:['Өнөөдөр ямар гараг вэ?','Өнөөдөр юу вэ?','Маргааш ямар гараг вэ?','Ямар цай вэ?'],a:0},{t:'mc',q:'Review — which means "my name"?',o:['Миний нэр','минут','хагас','таван цаг'],a:0}]},
 {id:'mn_week_5',title:'Checkpoint',step:'checkpoint',meta:'The week mastered?',vocab:[],ex:[
 {t:'mc',q:'“Friday” =',o:['Баасан','Бямба','Пүрэв','Ням'],a:0},
 {t:'li',q:'Listen — which day?',say:'Ням',o:['Ням','Бямба','Даваа','наим'],a:0},
@@ -1458,7 +1458,7 @@ const MN_Z5=[
 {t:'wb',q:'Build: “there are many people”',a:['Олон','хүн','байна'],pool:['Олон','хүн','байна','цөөхөн']},
 {t:'fill',q:'Complete: “I will take all (of it)”',s:'Би ___ авна',o:['бүгдийг','бүгд нь уу','олон','бага'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['олон хүн','many people'],['цөөхөн','few'],['Бүгд хэд вэ?','how much for all?'],['дахиад','again']]},
-{t:'li',q:'Listen — which word?',say:'дахиад',o:['дахиад','дахин','бүгд','дараа'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дахиад',o:['дахиад','дахин','бүгд','дараа'],a:0},{t:'mc',q:'Review — which means "sees / looks"?',o:['харна','Ням','Бямба','Баасан'],a:0}]},
 {id:'mn_qty_5',title:'Checkpoint',step:'checkpoint',meta:'Quantities mastered?',vocab:[],ex:[
 {t:'mc',q:'“many” vs “few”:',o:['олон vs цөөхөн','цөөхөн vs олон','both many','both few'],a:0},
 {t:'li',q:'Listen — which word?',say:'бүгд',o:['бүгд','бага','дүү','гурав'],a:0},
@@ -1497,7 +1497,7 @@ const MN_Z5=[
 {t:'wb',q:'Build: “do you have children?”',a:['Хүүхэдтэй','юү'],pool:['Хүүхэдтэй','юү','үү','хүүхэд']},
 {t:'fill',q:'Complete: “how old are you?” (polite)',s:'Та хэдэн ___ вэ?',o:['настай','нас','настайд','хүүхэдтэй'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['настай','years old'],['гэрлэсэн','married'],['хүүхэдтэй','has children'],['гучин','thirty']]},
-{t:'li',q:'Listen — which word?',say:'гэрлэсэн',o:['гэрлэсэн','гэрлээгүй','гэртээ','ирсэн'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'гэрлэсэн',o:['гэрлэсэн','гэрлээгүй','гэртээ','ирсэн'],a:0},{t:'mc',q:'Review — which means "I will go"?',o:['Би явна','дахиад','бүгд','бага'],a:0}]},
 {id:'mn_talk_5',title:'Zone 5 checkpoint',step:'checkpoint',meta:'Daily life mastered?',vocab:[],ex:[
 {t:'mc',q:'“How old are you?” =',o:['Та хэдэн настай вэ?','Та хэд вэ?','Настай юу та?','Хэдэн хүүхэдтэй?'],a:0},
 {t:'li',q:'Listen — which question?',say:'Хүүхэдтэй юү?',o:['Хүүхэдтэй юү?','Гэрлэсэн үү?','Хүүхэд хэд вэ?','Настай юу?'],a:0},
@@ -1538,7 +1538,7 @@ const MN_Z6=[
 {t:'fill',q:'Complete: “the market is very big”',s:'Зах их ___ байна',o:['том','жижиг','томд','олон'],a:0},
 {t:'wb',q:'Build: “this shop is small”',a:['Энэ','дэлгүүр','жижиг','байна'],pool:['Энэ','дэлгүүр','жижиг','байна','том']},
 {t:'match',q:'Match word and meaning',pairs:[['том','big'],['сайхан','lovely'],['муу','bad'],['шинэ','new']]},
-{t:'li',q:'Listen — which word?',say:'том',o:['том','дом','томоо','хом'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'том',o:['том','дом','томоо','хом'],a:0},{t:'mc',q:'Review — which means "there is tea"?',o:['Цай байна','хүүхэдтэй юү?','хүүхэд','гэрлэсэн үү?'],a:0}]},
 {id:'mn_adj_5',title:'Checkpoint',step:'checkpoint',meta:'Adjectives mastered?',vocab:[],ex:[
 {t:'mc',q:'“small” =',o:['жижиг','том','бага','муу'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'том гэр',o:['том гэр','жижиг гэр','шинэ гэр','том зах'],a:0},
@@ -1578,7 +1578,7 @@ const MN_Z6=[
 {t:'fill',q:'Complete: “the steppe is green” — тал!',s:'Тал ___ байна',o:['ногоон','ногоонд','хөх биш','шар уу'],a:0},
 {t:'wb',q:'Build: “what color is this?”',a:['Энэ','ямар','өнгө','вэ'],pool:['Энэ','ямар','өнгө','вэ','юу']},
 {t:'match',q:'Match phrase and meaning',pairs:[['улаан','red'],['цагаан гэр','white ger'],['хар цай','black tea'],['ногоон тал','green steppe']]},
-{t:'li',q:'Listen — which word?',say:'өнгө',o:['өнгө','мөнгө','өдөр','энэ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'өнгө',o:['өнгө','мөнгө','өдөр','энэ'],a:0},{t:'mc',q:'Review — which means "is well"?',o:['сайн байна','том гэр','сайхан','хуучин'],a:0}]},
 {id:'mn_col_5',title:'Checkpoint',step:'checkpoint',meta:'Colors mastered?',vocab:[],ex:[
 {t:'mc',q:'“white” =',o:['цагаан','хар','улаан','шар'],a:0},
 {t:'li',q:'Listen — which color?',say:'хөх',o:['хөх','хол','хар','хөл'],a:0},
@@ -1618,7 +1618,7 @@ const MN_Z6=[
 {t:'wb',q:'Build: “the best buuz!”',a:['хамгийн','сайн','бууз'],pool:['хамгийн','сайн','бууз','илүү']},
 {t:'fill',q:'Complete: “they are the same”',s:'___ байна',o:['Адилхан','Хамгийн','Илүү','Надаас'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['надаас том','bigger than me'],['хамгийн том','the biggest'],['илүү сайн','better'],['адилхан','the same']]},
-{t:'li',q:'Listen — which word?',say:'илүү',o:['илүү','улуу','хол','их'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'илүү',o:['илүү','улуу','хол','их'],a:0},{t:'mc',q:'Review — which means "with tea"?',o:['цайтай','шар','ногоон','хөх'],a:0}]},
 {id:'mn_cmp_5',title:'Checkpoint',step:'checkpoint',meta:'Comparisons mastered?',vocab:[],ex:[
 {t:'mc',q:'“the most” =',o:['хамгийн','илүү','их','адилхан'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'надаас том',o:['надаас том','надаас хол','хамгийн том','том'],a:0},
@@ -1658,7 +1658,7 @@ const MN_Z6=[
 {t:'wb',q:'Build: “I am thirsty”',a:['цангаж','байна'],pool:['цангаж','байна','өлсөж','ууна']},
 {t:'fill',q:'Complete: after buuz — “lovely!”',s:'___ байна!',o:['Сайхан','Муу','Даарч','Хол'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['өлсөж байна','hungry'],['даарч байна','freezing'],['сайхан байна','lovely'],['халуун байна','hot']]},
-{t:'li',q:'Listen — which phrase?',say:'ядарч байна',o:['ядарч байна','даарч байна','явж байна','яарч байна'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ядарч байна',o:['ядарч байна','даарч байна','явж байна','яарч байна'],a:0},{t:'mc',q:'Review — which means "(I) do not understand"?',o:['ойлгохгүй байна','адилхан','хамгийн том','хамгийн сайн'],a:0}]},
 {id:'mn_feel_5',title:'Checkpoint',step:'checkpoint',meta:'Feelings mastered?',vocab:[],ex:[
 {t:'mc',q:'“I am hungry” =',o:['өлсөж байна','цангаж байна','даарч байна','ядарч байна'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'цангаж байна',o:['цангаж байна','өлсөж байна','цангана','даарч байна'],a:0},
@@ -1698,7 +1698,7 @@ const MN_Z6=[
 {t:'wb',q:'Build: “what do you like?”',a:['Юунд','дуртай','вэ'],pool:['Юунд','дуртай','вэ','уу']},
 {t:'fill',q:'Complete: “I LOVE milk tea”',s:'Би сүүтэй цайнд ___ дуртай',o:['их','бага','хамгийн биш','олон'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['дуртай','likes'],['их дуртай','loves'],['дургүй','dislikes'],['Юунд дуртай вэ?','what do you like?']]},
-{t:'li',q:'Listen — which word?',say:'дуртай',o:['дуртай','дургүй','дулаан','дотор'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дуртай',o:['дуртай','дургүй','дулаан','дотор'],a:0},{t:'mc',q:'Review — which means "(yes,) I will go"?',o:['Явна','халуун байна','сайхан байна','даарч байна'],a:0}]},
 {id:'mn_like_5',title:'Checkpoint',step:'checkpoint',meta:'Liking mastered?',vocab:[],ex:[
 {t:'mc',q:'“I like tea” =',o:['Би цайнд дуртай','Би цайтай','Цай дуртай','Би цай их'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'их дуртай',o:['их дуртай','дургүй','дуртай','их дургүй'],a:0},
@@ -1738,7 +1738,7 @@ const MN_Z6=[
 {t:'wb',q:'Build: “it is windy today”',a:['Өнөөдөр','салхитай','байна'],pool:['Өнөөдөр','салхитай','байна','бороо']},
 {t:'fill',q:'Complete: “hot tea for a cold day!”',s:'Хүйтэн өдөрт ___ цай!',o:['халуун','хүйтэн','цас','их биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['тэнгэр сайхан','lovely weather'],['цас орж байна','snowing'],['хүйтэн','cold'],['салхитай','windy']]},
-{t:'li',q:'Listen — which word?',say:'салхитай',o:['салхитай','салхи','цастай','надтай'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'салхитай',o:['салхитай','салхи','цастай','надтай'],a:0},{t:'mc',q:'Review — which means "older brother"?',o:['ах','их дуртай','дургүй','дуртай'],a:0}]},
 {id:'mn_wx_5',title:'Checkpoint',step:'checkpoint',meta:'Weather mastered?',vocab:[],ex:[
 {t:'mc',q:'“snow” =',o:['цас','бороо','мөс','цаг'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Тэнгэр сайхан байна',o:['Тэнгэр сайхан байна','Тэнгэр муу байна','Цас орж байна','Сайхан байна'],a:0},
@@ -1778,7 +1778,7 @@ const MN_Z6=[
 {t:'wb',q:'Build: “where is the doctor?”',a:['Эмч','хаана','байна','вэ'],pool:['Эмч','хаана','байна','вэ','уу']},
 {t:'fill',q:'Complete: “my eye hurts”',s:'___ өвдөж байна',o:['Нүд','Нүдтэй','Нүднээс','Хараа'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['толгой өвдөж байна','headache'],['гэдэс өвдөж байна','stomach-ache'],['эмч хэрэгтэй','need a doctor'],['эм','medicine']]},
-{t:'li',q:'Listen — which word?',say:'гэдэс',o:['гэдэс','гудас','нүд','гэр'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'гэдэс',o:['гэдэс','гудас','нүд','гэр'],a:0},{t:'mc',q:'Review — which means "younger sibling"?',o:['дүү','цас','бороо','салхитай'],a:0}]},
 {id:'mn_body_5',title:'Zone 6 checkpoint',step:'checkpoint',meta:'You can describe your world!',vocab:[],ex:[
 {t:'mc',q:'“My head hurts” =',o:['Толгой өвдөж байна','Толгой даарч байна','Толгойтой байна','Толгой муу'],a:0},
 {t:'li',q:'Listen — which word?',say:'эмч',o:['эмч','эм','ээж','чи'],a:0},
@@ -1820,7 +1820,7 @@ const MN_Z7=[
 {t:'fill',q:'Complete: “did you see it?”',s:'Та ___ уу?',o:['харсан','харна','харж','хараарай'],a:0},
 {t:'wb',q:'Build: “yesterday I went to the market”',a:['Өчигдөр','захад','явсан'],pool:['Өчигдөр','захад','явсан','явна']},
 {t:'match',q:'Match phrase and meaning',pairs:[['явсан','went'],['харсан','saw'],['Юу хийсэн бэ?','what did you do?'],['ажлаас ирсэн','came from work']]},
-{t:'li',q:'Listen — which verb?',say:'идсэн',o:['идсэн','ирсэн','уусан','иднэ'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'идсэн',o:['идсэн','ирсэн','уусан','иднэ'],a:0},{t:'mc',q:'Review — which means "daughter / girl"?',o:['охин','эмч','өвдөж байна','нүд'],a:0}]},
 {id:'mn_past_5',title:'Checkpoint',step:'checkpoint',meta:'The past mastered?',vocab:[],ex:[
 {t:'mc',q:'“went” =',o:['явсан','явна','яваарай','явж'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'Би гэртээ явсан',o:['Би гэртээ явсан','Би гэртээ явна','Тэр гэртээ явсан','Би захад явсан'],a:0},
@@ -1860,7 +1860,7 @@ const MN_Z7=[
 {t:'fill',q:'Complete: “he/she is coming now”',s:'Тэр одоо ___ байна',o:['ирж','ирсэн','ирнэ','ирэх'],a:0},
 {t:'wb',q:'Build: “what are you doing?”',a:['Юу','хийж','байна','вэ'],pool:['Юу','хийж','байна','вэ','уу']},
 {t:'match',q:'Match phrase and meaning',pairs:[['цай ууж байна','drinking tea'],['хоол хийж байна','cooking'],['сурч байна','learning'],['ирж байна','coming']]},
-{t:'li',q:'Listen — which phrase?',say:'ирж байна',o:['ирж байна','яваж байна','ирсэн','ирнэ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ирж байна',o:['ирж байна','яваж байна','ирсэн','ирнэ'],a:0},{t:'mc',q:'Review — which means "in the city"?',o:['хотод','Өчигдөр явсан','харсан','уусан'],a:0}]},
 {id:'mn_prog_5',title:'Checkpoint',step:'checkpoint',meta:'The now mastered?',vocab:[],ex:[
 {t:'mc',q:'“is doing” =',o:['хийж байна','хийсэн','хийнэ','хий'],a:0},
 {t:'li',q:'Listen — which question?',say:'Юу хийж байна вэ?',o:['Юу хийж байна вэ?','Юу хийх вэ?','Юу идэж байна?','Хэн хийж байна?'],a:0},
@@ -1900,7 +1900,7 @@ const MN_Z7=[
 {t:'wb',q:'Build: “got it — thank you!”',a:['Ойлголоо','баярлалаа'],pool:['Ойлголоо','баярлалаа','боллоо','за']},
 {t:'fill',q:'Complete: found the keys —',s:'___!',o:['Олдлоо','Боллоо','Ирлээ','Явлаа'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Цай боллоо','tea is ready'],['За, явлаа','I am off'],['Ойлголоо','understood'],['Ирлээ','here I am']]},
-{t:'li',q:'Listen — which phrase?',say:'Цай боллоо',o:['Цай боллоо','Хоол боллоо','Цай болно','Боллоо'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Цай боллоо',o:['Цай боллоо','Хоол боллоо','Цай болно','Боллоо'],a:0},{t:'mc',q:'Review — which means "at the shop"?',o:['дэлгүүрт','монгол хэл','сурч байна','хийж байна'],a:0}]},
 {id:'mn_rec_5',title:'Checkpoint',step:'checkpoint',meta:'Just-now mastered?',vocab:[],ex:[
 {t:'mc',q:'“Done!” =',o:['Боллоо','Болно','Байна','Тийм'],a:0},
 {t:'li',q:'Listen — which word?',say:'ойлголоо',o:['ойлголоо','олдлоо','ойлгохгүй','боллоо'],a:0},
@@ -1940,7 +1940,7 @@ const MN_Z7=[
 {t:'wb',q:'Build: “I cannot go”',a:['явж','чадахгүй'],pool:['явж','чадахгүй','чадна','явна']},
 {t:'fill',q:'Complete: proud traveller — “I can eat buuz!” (a dozen!)',s:'Би бууз идэж ___',o:['чадна','чадахгүй','байна','иднэ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ярьж чадна','can speak'],['явж чадахгүй','cannot go'],['ирж чадах уу?','can you come?'],['жаахан','a little']]},
-{t:'li',q:'Listen — which word?',say:'ярих',o:['ярих','ярьж','явах','яарах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ярих',o:['ярих','ярьж','явах','яарах'],a:0},{t:'mc',q:'Review — which means "whose"?',o:['хэний','За, явлаа','олдлоо','явлаа'],a:0}]},
 {id:'mn_can_5',title:'Checkpoint',step:'checkpoint',meta:'Can & cannot mastered?',vocab:[],ex:[
 {t:'mc',q:'“can” =',o:['чадна','болно','чадахгүй','мэднэ'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'Би монголоор ярьж чадна',o:['Би монголоор ярьж чадна','Би монголоор ярьж чадахгүй','Монгол хэл сурч байна','Би ярьж чадна'],a:0},
@@ -1980,7 +1980,7 @@ const MN_Z7=[
 {t:'wb',q:'Build: “I need tea!”',a:['Надад','цай','хэрэгтэй'],pool:['Надад','цай','хэрэгтэй','ёстой']},
 {t:'fill',q:'Complete: the host insists — “you must eat!”',s:'Чи ___ ёстой!',o:['идэх','явах','ирэх','уух биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['явах ёстой','must go'],['хэрэгтэй','need'],['хэрэггүй','no need'],['чадахгүй','cannot']]},
-{t:'li',q:'Listen — which sentence?',say:'Би одоо явах ёстой',o:['Би одоо явах ёстой','Би одоо явж байна','Одоо явлаа','Би явах ёстой биш'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'Би одоо явах ёстой',o:['Би одоо явах ёстой','Би одоо явж байна','Одоо явлаа','Би явах ёстой биш'],a:0},{t:'mc',q:'Review — which means "friend"?',o:['найз','монголоор','ярих','явж чадна'],a:0}]},
 {id:'mn_must_5',title:'Checkpoint',step:'checkpoint',meta:'Need & must mastered?',vocab:[],ex:[
 {t:'mc',q:'“I need…” =',o:['Надад … хэрэгтэй','Би … ёстой','Надад … байлаа','… чадна'],a:0},
 {t:'li',q:'Listen — which word?',say:'ёстой',o:['ёстой','настай','ёс','хэрэгтэй'],a:0},
@@ -2020,7 +2020,7 @@ const MN_Z7=[
 {t:'wb',q:'Build: “please wait — the tea is coming!”',a:['Хүлээгээрэй','цай','ирж','байна'],pool:['Хүлээгээрэй','цай','ирж','байна','боллоо']},
 {t:'fill',q:'Complete: send off a friend warmly',s:'Сайн ___!',o:['яваарай','ирээрэй','суугаарай','уугаарай'],a:0},
 {t:'match',q:'Match request and meaning',pairs:[['ирээрэй','come'],['суугаарай','sit'],['хүлээгээрэй','wait'],['аваарай','take']]},
-{t:'li',q:'Listen — which phrase?',say:'Түр хүлээгээрэй',o:['Түр хүлээгээрэй','Хүлээгээрэй','Түр суугаарай','Түр ирээрэй'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Түр хүлээгээрэй',o:['Түр хүлээгээрэй','Хүлээгээрэй','Түр суугаарай','Түр ирээрэй'],a:0},{t:'mc',q:'Review — which means "from Ulaanbaatar"?',o:['Улаанбаатараас','явах ёстой','ёстой','хэрэггүй'],a:0}]},
 {id:'mn_req_5',title:'Checkpoint',step:'checkpoint',meta:'Requests mastered?',vocab:[],ex:[
 {t:'mc',q:'“Please sit” =',o:['суугаарай','суулаа','сууна','суу'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Сайн яваарай',o:['Сайн яваарай','Сайн байна уу','Сайн ирээрэй','Яваарай'],a:0},
@@ -2060,7 +2060,7 @@ const MN_Z7=[
 {t:'wb',q:'Build: “first tea, then buuz, at the end — milk tea!”',a:['эхлээд','цай','тэгээд','бууз','сүүлд нь','сүүтэй цай'],pool:['эхлээд','цай','тэгээд','бууз','сүүлд нь','сүүтэй цай','өмнө']},
 {t:'fill',q:'Complete: “I will eat later”',s:'___ иднэ',o:['Дараа','Өмнө','Эхлээд','Сүүлд биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['эхлээд','first'],['тэгээд','then'],['дараа','later'],['Дараа уулзая','see you later']]},
-{t:'li',q:'Listen — which word?',say:'дараа',o:['дараа','дараа нь','Даваа','өмнө'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дараа',o:['дараа','дараа нь','Даваа','өмнө'],a:0},{t:'mc',q:'Review — which means "inside"?',o:['дотор','аваарай','уугаарай','хүлээгээрэй'],a:0}]},
 {id:'mn_seq_5',title:'Zone 7 checkpoint',step:'checkpoint',meta:'Time travel unlocked!',vocab:[],ex:[
 {t:'mc',q:'“and then” =',o:['тэгээд','эхлээд','өмнө','одоо'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'Өчигдөр захад явсан',o:['Өчигдөр захад явсан','Өнөөдөр захад явна','Захад яваж байна','Маргааш явна'],a:0},
@@ -2102,7 +2102,7 @@ const MN_Z8=[
 {t:'fill',q:'Complete: “I will go by train”',s:'Би галт тэргээр ___',o:['явна','суусан','буух','ирлээ'],a:0},
 {t:'wb',q:'Build: “I will go by taxi”',a:['Би','таксигаар','явна'],pool:['Би','таксигаар','явна','такси']},
 {t:'match',q:'Match phrase and meaning',pairs:[['автобусаар','by bus'],['машинаар','by car'],['галт тэргээр','by train'],['морь унаж','riding a horse']]},
-{t:'li',q:'Listen — which word?',say:'галт тэрэг',o:['галт тэрэг','унадаг дугуй','галт','тэрэгтэй'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'галт тэрэг',o:['галт тэрэг','унадаг дугуй','галт','тэрэгтэй'],a:0},{t:'mc',q:'Review — which means "near"?',o:['ойрхон','дараа','өмнө','сүүлд нь'],a:0}]},
 {id:'mn_veh_5',title:'Checkpoint',step:'checkpoint',meta:'Transport mastered?',vocab:[],ex:[
 {t:'mc',q:'“fire cart” is the lovely name of the…',o:['галт тэрэг — train','онгоц — plane','машин — car','морь — horse'],a:0},
 {t:'li',q:'Listen — which word?',say:'онгоц',o:['онгоц','автобус','такси','замын'],a:0},
@@ -2142,7 +2142,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “I will get off at the station”',a:['Буудалд','бууна'],pool:['Буудалд','бууна','сууна','буудлаас']},
 {t:'fill',q:'Complete: the driver calls your stop — you answer:',s:'___ бууна!',o:['Энд','Тэнд биш','Хаана','Дараа'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['автобусанд суусан','got on the bus'],['энд бууна','off here'],['морь унаж чадна','can ride'],['буудалд буух','get off at the stop']]},
-{t:'li',q:'Listen — which word?',say:'унах',o:['унах','суух','буух','унтах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'унах',o:['унах','суух','буух','унтах'],a:0},{t:'mc',q:'Review — which means "200"?',o:['хоёр зуу','сая','таван зуу','зуу'],a:0}]},
 {id:'mn_ride_5',title:'Checkpoint',step:'checkpoint',meta:'Riding mastered?',vocab:[],ex:[
 {t:'mc',q:'“get off” =',o:['буух','суух','унах','явах'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Энд бууна',o:['Энд бууна','Энд сууна','Буудалд бууна','Энд байна'],a:0},
@@ -2182,7 +2182,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “please stop here — I get off!”',a:['Энд','зогсоорой','бууна'],pool:['Энд','зогсоорой','бууна','сууна']},
 {t:'fill',q:'Complete: “toward the west” — the compass double:',s:'баруун ___',o:['тийш','дээр','аас','зүг биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['баруун','west / right'],['зүүн','east / left'],['баруун талд','on the right'],['энд зогсоорой','stop here']]},
-{t:'li',q:'Listen — which word?',say:'эргээрэй',o:['эргээрэй','ирээрэй','зогсоорой','эргэлт'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'эргээрэй',o:['эргээрэй','ирээрэй','зогсоорой','эргэлт'],a:0},{t:'mc',q:'Review — which means "500"?',o:['таван зуу','сая','хоёр зуу','зуу'],a:0}]},
 {id:'mn_dir_5',title:'Checkpoint',step:'checkpoint',meta:'Directions mastered?',vocab:[],ex:[
 {t:'mc',q:'“left / east” =',o:['зүүн','баруун','чигээрээ','тийш'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'баруун тийш эргээрэй',o:['баруун тийш эргээрэй','зүүн тийш эргээрэй','баруун тийш','эргээрэй'],a:0},
@@ -2222,7 +2222,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “when does it arrive?”',a:['Хэзээ','ирэх','вэ'],pool:['Хэзээ','ирэх','вэ','хөдлөх']},
 {t:'fill',q:'Complete: the answer — “at ten”',s:'Арван ___ хөдөлнө',o:['цагт','цаг','цагаас','цагтай'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Нэг билет','one ticket'],['хэзээ хөдлөх вэ?','when does it leave?'],['таван цагт','at five'],['буудалд','at the station']]},
-{t:'li',q:'Listen — which word?',say:'хөдөлнө',o:['хөдөлнө','хөдлөх','ирнэ','хөдөлсөн'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'хөдөлнө',o:['хөдөлнө','хөдлөх','ирнэ','хөдөлсөн'],a:0},{t:'mc',q:'Review — which means "10,000"?',o:['арван мянга','зогсоорой','эргээрэй','тийш'],a:0}]},
 {id:'mn_tick_5',title:'Checkpoint',step:'checkpoint',meta:'Tickets mastered?',vocab:[],ex:[
 {t:'mc',q:'“One ticket, please” =',o:['Нэг билет өгнө үү','Билет нэг хэд вэ','Нэг тасалбар байна','Билет авъя уу'],a:0},
 {t:'li',q:'Listen — which question?',say:'Хэзээ хөдлөх вэ?',o:['Хэзээ хөдлөх вэ?','Хэзээ ирэх вэ?','Хэзээ явсан бэ?','Хэдэн цаг вэ?'],a:0},
@@ -2262,7 +2262,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “where do you (polite) live?”',a:['Та','хаана','амьдардаг','вэ'],pool:['Та','хаана','амьдардаг','вэ','уу']},
 {t:'fill',q:'Complete: “I will stay two nights” — хонож!',s:'Хоёр хоног ___',o:['хоно','явна биш','сууна','байлаа'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['зочид буудал','hotel'],['өрөө байна уу?','a room?'],['хэдэн хоног?','how many nights?'],['амьдардаг','lives']]},
-{t:'li',q:'Listen — which word?',say:'амьдардаг',o:['амьдардаг','амьдрах','явдаг','амьтан'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'амьдардаг',o:['амьдардаг','амьдрах','явдаг','амьтан'],a:0},{t:'mc',q:'Review — which means "million"?',o:['сая','таван зуу','хоёр зуу','зуу'],a:0}]},
 {id:'mn_stay_5',title:'Checkpoint',step:'checkpoint',meta:'Staying mastered?',vocab:[],ex:[
 {t:'mc',q:'“hotel” =',o:['зочид буудал','буудал','өрөө','гэр'],a:0},
 {t:'li',q:'Listen — which question?',say:'Өрөө байна уу?',o:['Өрөө байна уу?','Өрөө хэд вэ?','Түлхүүр байна уу?','Хоног уу?'],a:0},
@@ -2302,7 +2302,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “is there wi-fi here?”',a:['Энд','вайфай','байна','уу'],pool:['Энд','вайфай','байна','уу','вэ']},
 {t:'fill',q:'Complete: “send me a message” — явуулаарай!',s:'Надад мессеж ___',o:['явуулаарай','залгаарай','өгөөрэй биш','ирээрэй'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Дараа залгана','I will call later'],['Надад залгаарай','call me'],['Вайфай байна уу?','wi-fi?'],['Миний дугаар','my number']]},
-{t:'li',q:'Listen — which word?',say:'залгаарай',o:['залгаарай','залгана','яваарай','заавал'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'залгаарай',o:['залгаарай','залгана','яваарай','заавал'],a:0},{t:'mc',q:'Review — which means "number"?',o:['тоо','хэдэн хоног','түлхүүр','өрөө'],a:0}]},
 {id:'mn_phone_5',title:'Checkpoint',step:'checkpoint',meta:'Contact mastered?',vocab:[],ex:[
 {t:'mc',q:'“What is your number?” =',o:['Таны дугаар хэд вэ?','Таны утас хаана вэ?','Дугаар хэн бэ?','Хэдэн утас вэ?'],a:0},
 {t:'li',q:'Listen — which word?',say:'утас',o:['утас','утаа','дугаар','ус'],a:0},
@@ -2342,7 +2342,7 @@ const MN_Z8=[
 {t:'wb',q:'Build: “this year I am learning Mongolian”',a:['Энэ','жил','монгол','хэл','сурч','байна'],pool:['Энэ','жил','монгол','хэл','сурч','байна','ирэх']},
 {t:'fill',q:'Complete: “Tsagaan Sar is in month one or two”',s:'Цагаан сар нэг, хоёрдугаар ___ байдаг',o:['сард','жилд','сар','өдөрт'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['өнгөрсөн жил','last year'],['энэ жил','this year'],['ирэх жил','next year'],['хэдэн сард','in which month']]},
-{t:'li',q:'Listen — which phrase?',say:'ирэх жил явна',o:['ирэх жил явна','өнгөрсөн жил ирсэн','энэ жил байна','ирэх сард'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ирэх жил явна',o:['ирэх жил явна','өнгөрсөн жил ирсэн','энэ жил байна','ирэх сард'],a:0},{t:'mc',q:'Review — which means "I will take this one"?',o:['Энийг авъя','вайфай','мессеж','залгаарай'],a:0}]},
 {id:'mn_month_5',title:'Zone 8 checkpoint',step:'checkpoint',meta:'You can get around Mongolia!',vocab:[],ex:[
 {t:'mc',q:'“year” =',o:['жил','сар','өдөр','цаг'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Нэг билет өгнө үү',o:['Нэг билет өгнө үү','Хоёр билет өгнө үү','Билет хэд вэ?','Түлхүүр өгнө үү'],a:0},
@@ -2384,7 +2384,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “because it is far, I will go by car”',a:['Хол','учраас','машинаар','явна'],pool:['Хол','учраас','машинаар','явна','гэхдээ']},
 {t:'fill',q:'Complete: “I will also come!”',s:'Би ___ ирнэ!',o:['бас','харин','яг','аль'],a:0},
 {t:'match',q:'Match sentence and meaning',pairs:[['гэхдээ сайхан','but lovely'],['хол учраас','because it is far'],['би бас','me also'],['цай эсвэл кофе','tea or coffee']]},
-{t:'li',q:'Listen — which word?',say:'бас',o:['бас','байс','бус','нас'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'бас',o:['бас','байс','бус','нас'],a:0},{t:'mc',q:'Review — which means "one more"?',o:['дахиад нэг','энэ жил','ирэх жил','өнгөрсөн жил'],a:0}]},
 {id:'mn_conn_5',title:'Checkpoint',step:'checkpoint',meta:'Connectors mastered?',vocab:[],ex:[
 {t:'mc',q:'“because” =',o:['учраас','гэхдээ','эсвэл','тэгвэл'],a:0},
 {t:'li',q:'Listen — which word?',say:'эсвэл',o:['эсвэл','гэхдээ','учраас','бас'],a:0},
@@ -2424,7 +2424,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “I miss my friend”',a:['Би','найзаа','санаж','байна'],pool:['Би','найзаа','санаж','байна','мартаж']},
 {t:'fill',q:'Complete: “sorry — I forgot your name”',s:'Уучлаарай — би таны нэрийг ___',o:['мартсан','санасан','хэлсэн','асуусан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Би мартсан','I forgot'],['санаж байна','I remember'],['асуух','to ask'],['гэж бодож байна','I think that']]},
-{t:'li',q:'Listen — which word?',say:'хариулах',o:['хариулах','асуух','хариу','хайрлах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'хариулах',o:['хариулах','асуух','хариу','хайрлах'],a:0},{t:'mc',q:'Review — which means "five o’clock"?',o:['таван цаг','харин','тэгвэл','бас'],a:0}]},
 {id:'mn_think_5',title:'Checkpoint',step:'checkpoint',meta:'Mind words mastered?',vocab:[],ex:[
 {t:'mc',q:'“I forgot” =',o:['Би мартсан','Би санасан','Би асуусан','Би бодсон'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'гэж бодож байна',o:['гэж бодож байна','гэж санаж байна','бодож байсан','гэж байна'],a:0},
@@ -2464,7 +2464,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “my mother works as a doctor”',a:['Миний','ээж','эмчээр','ажилладаг'],pool:['Миний','ээж','эмчээр','ажилладаг','багшаар']},
 {t:'fill',q:'Complete: “I am a student”',s:'Би ___',o:['оюутан','оюутанаар','оюутанд','оюутнаас'],a:0},
 {t:'match',q:'Match sentence and meaning',pairs:[['Би оюутан','I am a student'],['багшаар ажилладаг','works as a teacher'],['Та ямар ажил хийдэг вэ?','what work do you do?'],['миний аав малчин','my father is a herder']]},
-{t:'li',q:'Listen — which word?',say:'ажилладаг',o:['ажилладаг','ажиллаж','амьдардаг','ажилтай'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ажилладаг',o:['ажилладаг','ажиллаж','амьдардаг','ажилтай'],a:0},{t:'mc',q:'Review — which means "little / small amount"?',o:['бага','хариулах','асуух','хэлэх'],a:0}]},
 {id:'mn_job_5',title:'Checkpoint',step:'checkpoint',meta:'Work talk mastered?',vocab:[],ex:[
 {t:'mc',q:'“teacher” =',o:['багш','эмч','малчин','жолооч'],a:0},
 {t:'li',q:'Listen — which question?',say:'Та ямар ажил хийдэг вэ?',o:['Та ямар ажил хийдэг вэ?','Та хаана ажилладаг вэ?','Та ямар хүн бэ?','Ажил хийдэг үү?'],a:0},
@@ -2504,7 +2504,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “my sister loves drawing”',a:['Миний','эгч','зурах','дуртай'],pool:['Миний','эгч','зурах','дуртай','зурсан']},
 {t:'fill',q:'Complete: “Mongolians sing long songs” — уртын дуу!',s:'Монголчууд уртын ___ дуулдаг',o:['дуу','хөгжим','кино','бүжиг'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['хөгжим сонсож байна','listening to music'],['кино үзье','let us watch a movie'],['дуулах дуртай','loves singing'],['зурах','to draw']]},
-{t:'li',q:'Listen — which word?',say:'тоглох',o:['тоглох','тоглоом','зурах','явах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'тоглох',o:['тоглох','тоглоом','зурах','явах'],a:0},{t:'mc',q:'Review — which means "are you married?"?',o:['гэрлэсэн үү?','ажилладаг','оюутан','жолооч'],a:0}]},
 {id:'mn_hobby_5',title:'Checkpoint',step:'checkpoint',meta:'Hobbies mastered?',vocab:[],ex:[
 {t:'mc',q:'“to dance” =',o:['бүжиглэх','дуулах','тоглох','зурах'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'хөгжим сонсох',o:['хөгжим сонсох','хөгжим сонсож','дуу сонсох','хөгжим үзэх'],a:0},
@@ -2544,7 +2544,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “my horse is faster than yours!” — the -аас flip:',a:['Миний','морь','чинийхээс','хурдан'],pool:['Миний','морь','чинийхээс','хурдан','хүчтэй']},
 {t:'fill',q:'Complete: “I watched wrestling at naadam”',s:'Наадамд бөх ___',o:['үзсэн','үзье','үзэх','сонссон'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['хурдан морь','fast horse'],['хүчтэй бөх','strong wrestler'],['сур харваа','archery'],['наадам үзэх','watch the games']]},
-{t:'li',q:'Listen — which word?',say:'хүчтэй',o:['хүчтэй','хурдан','хүч','хүйтэн'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'хүчтэй',o:['хүчтэй','хурдан','хүч','хүйтэн'],a:0},{t:'mc',q:'Review — which means "child"?',o:['хүүхэд','кино үзэх','тоглох','хөгжим'],a:0}]},
 {id:'mn_naadam_5',title:'Checkpoint',step:'checkpoint',meta:'The games mastered?',vocab:[],ex:[
 {t:'mc',q:'The three naadam sports:',o:['wrestling, racing, archery','football, racing, boxing','wrestling, swimming, chess','archery, skiing, racing'],a:0},
 {t:'li',q:'Listen — which word?',say:'наадам',o:['наадам','уралдаан','бөх','харваа'],a:0},
@@ -2584,7 +2584,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “my brother is washing the car”',a:['Ах','машин','угааж','байна'],pool:['Ах','машин','угааж','байна','цэвэрлэж']},
 {t:'fill',q:'Complete: “mother cooked buuz”',s:'Ээж бууз ___',o:['хийсэн','хийнэ','идсэн','авсан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['завгүй байна','is busy'],['амарч байна','is resting'],['хоол хийж байна','is cooking'],['машин угааж байна','is washing the car']]},
-{t:'li',q:'Listen — which word?',say:'завгүй',o:['завгүй','зав','замгүй','саваагүй'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'завгүй',o:['завгүй','зав','замгүй','саваагүй'],a:0},{t:'mc',q:'Review — which means "do you have children?"?',o:['хүүхэдтэй юү?','хүчтэй','хурдан','сур харваа'],a:0}]},
 {id:'mn_chore_5',title:'Checkpoint',step:'checkpoint',meta:'Chores mastered?',vocab:[],ex:[
 {t:'mc',q:'“to wash” =',o:['угаах','цэвэрлэх','хийх','амрах'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'хоол хийж байна',o:['хоол хийж байна','хоол идэж байна','хоол хийсэн','гэрийн ажил'],a:0},
@@ -2592,7 +2592,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “I am busy today”',a:['Би','өнөөдөр','завгүй','байна'],pool:['Би','өнөөдөр','завгүй','байна','амарч']},
 {t:'match',q:'Match word and meaning',pairs:[['цэвэрлэх','clean'],['угаах','wash'],['хоол хийх','cook'],['завгүй','busy'],['амрах','rest']]},
 {t:'mc',q:'“Rest well!” =',o:['Сайхан амраарай','Сайхан яваарай','Сайн байна','Амарч байна'],a:0},
-{t:'li',q:'Listen — which word?',say:'угаах',o:['угаах','уух','угаасан','цэвэрлэх'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'угаах',o:['угаах','уух','угаасан','цэвэрлэх'],a:0},{t:'mc',q:'Review — which means "the Mongolian language"?',o:['монгол хэл','хүчтэй','хурдан','сур харваа'],a:0}]},
 
 {id:'mn_life',title:'Learner lifelines',step:'learn',meta:'Дахиад хэлээрэй!',vocab:[['Дахиад хэлээрэй','dakhiad kheleerei','please say it again'],['Удаан хэлээрэй','udaan kheleerei','please say it slowly'],['Монголоор юу гэдэг вэ?','mongoloor yuu gedeg ve','what is it called in Mongolian?'],['Энэ юу гэсэн үг вэ?','ene yuu gesen ug ve','what does this word mean?'],['Би жаахан монголоор ярьдаг','bi jaakhan mongoloor yaridag','I speak a little Mongolian'],['үг','ug','word']],ex:[
 {t:'note',tag:'Your rescue phrases',q:'Дахиад хэлээрэй',body:'<p>The phrases that keep every conversation alive: <span class="deva">Дахиад хэлээрэй</span> — say it again, please! <span class="deva">Удаан хэлээрэй</span> — slowly, please! Your -аарай request tail carrying you through.</p>',eg:[['Дахиад хэлээрэй','dakhiad kheleerei','again, please!'],['Удаан хэлээрэй','udaan kheleerei','slowly, please!']]},
@@ -2623,7 +2623,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “I speak a little Mongolian”',a:['Би','жаахан','монголоор','ярьдаг'],pool:['Би','жаахан','монголоор','ярьдаг','сайн']},
 {t:'fill',q:'Complete: you point at a ger — “in Mongolian, what is it called?”',s:'Монголоор юу ___ вэ?',o:['гэдэг','гэсэн','хэлдэг','болдог'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Дахиад хэлээрэй','again please'],['Би жаахан ярьдаг','I speak a little'],['Ойлгохгүй байна','I don’t understand'],['Энэ юу гэсэн үг вэ?','what does it mean?']]},
-{t:'li',q:'Listen — which word?',say:'жаахан',o:['жаахан','жаал','саяхан','хаана'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'жаахан',o:['жаахан','жаал','саяхан','хаана'],a:0},{t:'mc',q:'Review — which means "small"?',o:['жижиг','амрах','завгүй','гэрийн ажил'],a:0}]},
 {id:'mn_life_5',title:'Zone 9 checkpoint',step:'checkpoint',meta:'You can hold a conversation!',vocab:[],ex:[
 {t:'mc',q:'“Please say it again” =',o:['Дахиад хэлээрэй','Удаан хэлээрэй','Дахин сонс','Хэлсэн үү'],a:0},
 {t:'li',q:'Listen — which question?',say:'Монголоор юу гэдэг вэ?',o:['Монголоор юу гэдэг вэ?','Энэ юу гэсэн үг вэ?','Юу гэж бодож байна?','Монголоор ярьдаг уу?'],a:0},
@@ -2631,7 +2631,7 @@ const MN_Z9=[
 {t:'wb',q:'Build: “I think Mongolia is beautiful”',a:['Монгол','сайхан','гэж','бодож','байна'],pool:['Монгол','сайхан','гэж','бодож','байна','хэлж']},
 {t:'match',q:'Match phrase and meaning',pairs:[['малчин','herder'],['Би дуулах дуртай','I love singing'],['бөх','wrestling'],['завгүй','busy'],['Дахиад хэлээрэй','say it again']]},
 {t:'mc',q:'Zone 9 done! You can now…',o:['connect thoughts, share opinions & rescue any chat','only count','only greet','only read'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'Би жаахан монголоор ярьдаг',o:['Би жаахан монголоор ярьдаг','Би монголоор ярьдаг','Би монгол хэл мэднэ','Жаахан монголоор'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Би жаахан монголоор ярьдаг',o:['Би жаахан монголоор ярьдаг','Би монголоор ярьдаг','Би монгол хэл мэднэ','Жаахан монголоор'],a:0},{t:'mc',q:'Review — which means "can go"?',o:['явж чадна','амрах','завгүй','гэрийн ажил'],a:0}]},
 ];
 const MN_Z10=[
 /* ===================== ZONE 10 · THE COUNTRYSIDE ===================== */
@@ -2664,7 +2664,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “I like winter” — the dative liking:',a:['Би','өвөлд','дуртай'],pool:['Би','өвөлд','дуртай','өвөл']},
 {t:'fill',q:'Complete: “it snows in winter”',s:'Өвөл цас ___',o:['ордог','байдаг биш','явдаг','иддэг'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Өвөл маш хүйтэн','winter is very cold'],['Зун сайхан','summer is lovely'],['дөрвөн улирал','four seasons'],['өвөлд дуртай','likes winter']]},
-{t:'li',q:'Listen — which word?',say:'өвөл',o:['өвөл','өвс','зөөлөн','өнөөдөр'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'өвөл',o:['өвөл','өвс','зөөлөн','өнөөдөр'],a:0},{t:'mc',q:'Review — which means "bad"?',o:['муу','үг','Удаан хэлээрэй','Дахиад хэлээрэй'],a:0},{t:'mc',q:'Review — which means "right / west"?',o:['баруун','үг','Удаан хэлээрэй','Дахиад хэлээрэй'],a:0}]},
 {id:'mn_seas_5',title:'Checkpoint',step:'checkpoint',meta:'Seasons mastered?',vocab:[],ex:[
 {t:'mc',q:'The four seasons in order from spring:',o:['хавар, зун, намар, өвөл','зун, өвөл, хавар, намар','өвөл, намар, зун, хавар','хавар, намар, зун, өвөл'],a:0},
 {t:'li',q:'Listen — which word?',say:'улирал',o:['улирал','уралдаан','жил','сар'],a:0},
@@ -2704,7 +2704,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “nomad life is beautiful”',a:['Нүүдэлчний','амьдрал','сайхан'],pool:['Нүүдэлчний','амьдрал','сайхан','нүүх']},
 {t:'fill',q:'Complete: “my homeland is far away” — a feeling every herder knows',s:'Миний нутаг ___ байна',o:['хол','ойрхон','энд','сайн'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['нүүх','migrate'],['нутаг','homeland'],['хөдөө','countryside'],['амьдрал','life']]},
-{t:'li',q:'Listen — which word?',say:'нүүдэг',o:['нүүдэг','нүүх','нүүсэн','үздэг'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'нүүдэг',o:['нүүдэг','нүүх','нүүсэн','үздэг'],a:0},{t:'mc',q:'Review — which means "old (things)"?',o:['хуучин','улирал','өвөл','намар'],a:0},{t:'mc',q:'Review — which means "left / east"?',o:['зүүн','улирал','өвөл','намар'],a:0}]},
 {id:'mn_count_5',title:'Checkpoint',step:'checkpoint',meta:'The steppe mastered?',vocab:[],ex:[
 {t:'mc',q:'“homeland” =',o:['нутаг','хөдөө','гэр','хот'],a:0},
 {t:'li',q:'Listen — which word?',say:'нүүдэлчин',o:['нүүдэлчин','нүүдэл','малчин','нүүдэг'],a:0},
@@ -2744,7 +2744,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “we have five goats”',a:['Манайх','таван','ямаатай'],pool:['Манайх','таван','ямаатай','хоньтой']},
 {t:'fill',q:'Complete: “milk tea needs milk — from the…”',s:'Сүү ___ээс ирдэг',o:['үхр','хонин','тэмээн биш','ямаан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['морь','riding horse'],['адуу','horse herd'],['таван хошуу мал','five livestock'],['олон хоньтой','has many sheep']]},
-{t:'li',q:'Listen — which word?',say:'ямаа',o:['ямаа','ямаан','яъмаа','тэмээ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ямаа',o:['ямаа','ямаан','яъмаа','тэмээ'],a:0},{t:'mc',q:'Review — which means "a big ger"?',o:['том гэр','тал нутаг','амьдрал','нүүх'],a:0},{t:'mc',q:'Review — which means "please stop"?',o:['зогсоорой','тал нутаг','амьдрал','нүүх'],a:0}]},
 {id:'mn_five_5',title:'Checkpoint',step:'checkpoint',meta:'The five mastered?',vocab:[],ex:[
 {t:'mc',q:'“goat” =',o:['ямаа','хонь','үхэр','адуу'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'таван хошуу мал',o:['таван хошуу мал','таван мал','олон мал','мал хошуу'],a:0},
@@ -2784,7 +2784,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “I saw a deer in the forest”',a:['Би','ойд','буга','харсан'],pool:['Би','ойд','буга','харсан','чоно']},
 {t:'fill',q:'Complete: “birds sing in the morning”',s:'Шувууд өглөө ___',o:['дуулдаг','явдаг','унтдаг биш','иддэг'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['чоно харсан','saw a wolf'],['голд загас','fish in the river'],['хүчтэй бүргэд','strong eagle'],['ойд буга','deer in the forest']]},
-{t:'li',q:'Listen — which word?',say:'буга',o:['буга','бух','бугуй','бүргэд'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'буга',o:['буга','бух','бугуй','бүргэд'],a:0},{t:'mc',q:'Review — which means "blue"?',o:['хөх','адуу','тэмээ','үхэр'],a:0},{t:'mc',q:'Review — which means "to depart / move"?',o:['хөдлөх','адуу','тэмээ','үхэр'],a:0}]},
 {id:'mn_wild_5',title:'Checkpoint',step:'checkpoint',meta:'The wild mastered?',vocab:[],ex:[
 {t:'mc',q:'“eagle” =',o:['бүргэд','шувуу','чоно','загас'],a:0},
 {t:'li',q:'Listen — which word?',say:'үнэг',o:['үнэг','чоно','нэг','үг'],a:0},
@@ -2824,7 +2824,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “there are fish in the lake”',a:['Нуурт','загас','байдаг'],pool:['Нуурт','загас','байдаг','байна']},
 {t:'fill',q:'Complete: “the river water is cold”',s:'Голын ус ___',o:['хүйтэн','халуун','гүн биш','цэвэр'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['өндөр уул','high mountain'],['голын ус','river water'],['олон цэцэг','many flowers'],['ойд','in the forest']]},
-{t:'li',q:'Listen — which word?',say:'ой',o:['ой','эй','гол','ойр'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ой',o:['ой','эй','гол','ойр'],a:0},{t:'mc',q:'Review — which means "yellow"?',o:['шар','шувуу','загас','буга'],a:0},{t:'mc',q:'Review — which means "room"?',o:['өрөө','шувуу','загас','буга'],a:0}]},
 {id:'mn_nat_5',title:'Checkpoint',step:'checkpoint',meta:'Nature mastered?',vocab:[],ex:[
 {t:'mc',q:'“tree” =',o:['мод','цэцэг','ой','уул'],a:0},
 {t:'li',q:'Listen — which word?',say:'цэцэг',o:['цэцэг','цас','цаг','мод'],a:0},
@@ -2864,7 +2864,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “light comes through the roof-ring”',a:['Гэрэл','тооногоор','ордог'],pool:['Гэрэл','тооногоор','ордог','хаалгаар']},
 {t:'fill',q:'Complete: “in an hour, the family takes the ger down”',s:'Айл нэг цагт гэрээ ___',o:['буулгадаг','баридаг','явдаг','хардаг'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['зуух','stove'],['тооно','roof-ring'],['хаалга','door'],['эсгий','felt']]},
-{t:'li',q:'Listen — which word?',say:'буулгах',o:['буулгах','барих','буух','булах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'буулгах',o:['буулгах','барих','буух','булах'],a:0},{t:'mc',q:'Review — which means "bigger than me"?',o:['надаас том','цэцэг','мод','ой'],a:0},{t:'mc',q:'Review — which means "key"?',o:['түлхүүр','цэцэг','мод','ой'],a:0}]},
 {id:'mn_ger2_5',title:'Checkpoint',step:'checkpoint',meta:'The ger mastered?',vocab:[],ex:[
 {t:'mc',q:'“roof-ring” =',o:['тооно','зуух','хаалга','эсгий'],a:0},
 {t:'li',q:'Listen — which word?',say:'эсгий',o:['эсгий','эсвэл','сэгий','эх'],a:0},
@@ -2904,7 +2904,7 @@ const MN_Z10=[
 {t:'wb',q:'Build: “mother’s tsuivan is very tasty!”',a:['Ээжийн','цуйван','маш','амттай'],pool:['Ээжийн','цуйван','маш','амттай','амтгүй']},
 {t:'fill',q:'Complete: “I ate aarul as a snack”',s:'Би аарул ___',o:['идсэн','уусан','хийсэн','авлаа биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['цуйван идье','let us eat tsuivan'],['шөл уух','have soup'],['амттай байна','it is tasty'],['наадамд','at naadam']]},
-{t:'li',q:'Listen — which word?',say:'амттай',o:['амттай','амтгүй','амт','амттан'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'амттай',o:['амттай','амтгүй','амт','амттан'],a:0},{t:'mc',q:'Review — which means "more"?',o:['илүү','гэр буулгах','гэр барих','зуух'],a:0},{t:'mc',q:'Review — which means "how many nights"?',o:['хэдэн хоног','гэр буулгах','гэр барих','зуух'],a:0}]},
 {id:'mn_food2_5',title:'Zone 10 checkpoint',step:'checkpoint',meta:'The countryside is yours!',vocab:[],ex:[
 {t:'mc',q:'“winter” =',o:['өвөл','зун','намар','хавар'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'таван хошуу мал',o:['таван хошуу мал','олон мал','таван ямаа','хошуу мал'],a:0},
@@ -2946,7 +2946,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “herders always move with the seasons”',a:['Малчид','үргэлж','улирлаар','нүүдэг'],pool:['Малчид','үргэлж','улирлаар','нүүдэг','заримдаа']},
 {t:'fill',q:'Complete: “I wash the cups every day”',s:'Би өдөр ___ аяга угаадаг',o:['бүр','ч','дахин','л'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['өдөр бүр','every day'],['хэзээ ч мартахгүй','never forget'],['дахин ирнэ','will come again'],['заримдаа','sometimes']]},
-{t:'li',q:'Listen — which word?',say:'дахин',o:['дахин','дахиад','махан','хин'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дахин',o:['дахин','дахиад','махан','хин'],a:0},{t:'mc',q:'Review — which means "the biggest"?',o:['хамгийн том','Сайхан хооллоорой','амттай','аарул'],a:0},{t:'mc',q:'Review — which means "message"?',o:['мессеж','Сайхан хооллоорой','амттай','аарул'],a:0},{t:'mc',q:'Review — which means "housework"?',o:['гэрийн ажил','Сайхан хооллоорой','амттай','аарул'],a:0}]},
 {id:'mn_freq_5',title:'Checkpoint',step:'checkpoint',meta:'Rhythms mastered?',vocab:[],ex:[
 {t:'mc',q:'“usually” =',o:['ихэвчлэн','үргэлж','заримдаа','дахин'],a:0},
 {t:'li',q:'Listen — which word?',say:'үргэлж',o:['үргэлж','ихэвчлэн','заримдаа','дахин'],a:0},
@@ -2955,7 +2955,7 @@ const MN_Z11=[
 {t:'match',q:'Match word and meaning',pairs:[['үргэлж','always'],['ихэвчлэн','usually'],['заримдаа','sometimes'],['өдөр бүр','every day'],['дахин','again']]},
 {t:'mc',q:'бүр means…',o:['every','never','again','always'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'өдөр бүр',o:['өдөр бүр','өдөр ч','бүр өдөр','долоо хоног бүр'],a:0},
-{t:'mc',q:'Review — which means "wi-fi"?',o:['вайфай','айраг','ажилд','цагаан'],a:0}]},
+{t:'mc',q:'Review — which means "wi-fi"?',o:['вайфай','айраг','ажилд','цагаан'],a:0},{t:'mc',q:'Review — which means "to ask"?',o:['асуух','Сайхан хооллоорой','амттай','аарул'],a:0}]},
 
 {id:'mn_tod',title:'Times of day',step:'learn',meta:'өглөө · үд · орой',vocab:[['өглөө','ogloo','morning'],['үд','ud','midday'],['орой','oroi','evening'],['Өглөөний мэнд','oglooni mend','good morning'],['Оройн мэнд','oroin mend','good evening'],['үдээс хойш','udees khoish','afternoon']],ex:[
 {t:'note',tag:'The day’s three faces',q:'өглөө · үд · орой',body:'<p>You know өдөр and шөнө — now the fine cuts: <span class="deva">өглөө</span> morning, <span class="deva">үд</span> midday, <span class="deva">орой</span> evening. And <span class="deva">үдээс хойш</span> — after midday = afternoon, your -ээс tail with хойш (after)!</p>',eg:[['өглөө','ogloo','morning'],['үд','ud','midday'],['орой','oroi','evening'],['үдээс хойш','udees khoish','afternoon']]},
@@ -2986,7 +2986,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “birds sing in the morning”',a:['Шувууд','өглөө','дуулдаг'],pool:['Шувууд','өглөө','дуулдаг','орой']},
 {t:'fill',q:'Complete: “good evening, teacher!”',s:'___ мэнд, багш аа!',o:['Оройн','Өглөөний','Сайхан','Шөнийн'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Өглөөний мэнд','good morning'],['Оройн мэнд','good evening'],['үдээс хойш','afternoon'],['орой уулзая','see you this evening']]},
-{t:'li',q:'Listen — which word?',say:'мэнд',o:['мэнд','мөн','манд','энд'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'мэнд',o:['мэнд','мөн','манд','энд'],a:0},{t:'mc',q:'Review — which means "(I am) hungry"?',o:['өлсөж байна','дахин','өдөр бүр','хэзээ ч'],a:0},{t:'mc',q:'Review — which means "January (month one)"?',o:['нэгдүгээр сар','дахин','өдөр бүр','хэзээ ч'],a:0},{t:'mc',q:'Review — which means "to rest"?',o:['амрах','дахин','өдөр бүр','хэзээ ч'],a:0}]},
 {id:'mn_tod_5',title:'Checkpoint',step:'checkpoint',meta:'The day mastered?',vocab:[],ex:[
 {t:'mc',q:'“midday” =',o:['үд','өглөө','орой','өдөр'],a:0},
 {t:'li',q:'Listen — which greeting?',say:'Өглөөний мэнд',o:['Өглөөний мэнд','Оройн мэнд','Сайн уу','Үдийн мэнд'],a:0},
@@ -2994,7 +2994,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “I work in the afternoon”',a:['Би','үдээс','хойш','ажилладаг'],pool:['Би','үдээс','хойш','ажилладаг','өмнө']},
 {t:'match',q:'Match word and meaning',pairs:[['өглөө','morning'],['үд','midday'],['орой','evening'],['мэнд','greeting'],['үдээс хойш','afternoon']]},
 {t:'mc',q:'мэнд will return in Zone 12 inside…',o:['holiday wishes','numbers','directions','questions'],a:0},
-{t:'li',q:'Listen — which word?',say:'орой',o:['орой','өглөө','үд','оройтсон'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'орой',o:['орой','өглөө','үд','оройтсон'],a:0},{t:'mc',q:'Review — which means "to speak"?',o:['ярих','дахин','өдөр бүр','хэзээ ч'],a:0},{t:'mc',q:'Review — which means "to answer"?',o:['хариулах','дахин','өдөр бүр','хэзээ ч'],a:0}]},
 
 {id:'mn_cloth',title:'Clothes & the deel',step:'learn',meta:'дээл · малгай · гутал',vocab:[['дээл','deel','deel (the robe)'],['малгай','malgai','hat'],['гутал','gutal','boots'],['цамц','tsamts','shirt'],['өмд','omd','trousers'],['өмсөх','omsokh','to wear / put on']],ex:[
 {t:'note',tag:'The deel',q:'дээл',body:'<p><span class="deva">дээл</span> — the long belted robe worn for centuries by herders and grandmothers alike, warm on horseback, beautiful at celebrations. Every family owns at least a holiday deel!</p>',eg:[['дээл','deel','the Mongolian robe'],['малгай','malgai','hat'],['гутал','gutal','boots']]},
@@ -3025,7 +3025,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “I bought new boots”',a:['Би','шинэ','гутал','авсан'],pool:['Би','шинэ','гутал','авсан','өмссөн']},
 {t:'fill',q:'Complete: “take off your boots at the door” — тайлах, off!',s:'Хаалган дээр гутлаа ___',o:['тайлаарай','өмсөөрэй','угаагаарай','аваарай'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['дээлээ өмсөх','put on the deel'],['гутлаа тайлах','take off the boots'],['улаан цамц','red shirt'],['гоё малгай','fine hat']]},
-{t:'li',q:'Listen — which word?',say:'өмд',o:['өмд','өмнө','өмсөх','мөд'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'өмд',o:['өмд','өмнө','өмсөх','мөд'],a:0},{t:'mc',q:'Review — which means "(I am) thirsty"?',o:['цангаж байна','үдээс хойш','Оройн мэнд','Өглөөний мэнд'],a:0},{t:'mc',q:'Review — which means "in which month"?',o:['хэдэн сард','үдээс хойш','Оройн мэнд','Өглөөний мэнд'],a:0},{t:'mc',q:'Review — which means "please say it again"?',o:['Дахиад хэлээрэй','үдээс хойш','Оройн мэнд','Өглөөний мэнд'],a:0}]},
 {id:'mn_cloth_5',title:'Checkpoint',step:'checkpoint',meta:'The wardrobe mastered?',vocab:[],ex:[
 {t:'mc',q:'“boots” =',o:['гутал','малгай','өмд','цамц'],a:0},
 {t:'li',q:'Listen — which word?',say:'дээл',o:['дээл','дээр','ээл','дэл'],a:0},
@@ -3033,7 +3033,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “put on your hat!”',a:['Малгайгаа','өмсөөрэй'],pool:['Малгайгаа','өмсөөрэй','тайлаарай','малгай']},
 {t:'match',q:'Match clothing and meaning',pairs:[['дээл','robe'],['малгай','hat'],['гутал','boots'],['цамц','shirt'],['өмд','trousers']]},
 {t:'mc',q:'өмсөх vs тайлах:',o:['put on vs take off','take off vs put on','both on','both off'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'Дээлээ өмсөөрэй',o:['Дээлээ өмсөөрэй','Дээлээ тайлаарай','Гутлаа өмсөөрэй','Дээл өмсөх'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Дээлээ өмсөөрэй',o:['Дээлээ өмсөөрэй','Дээлээ тайлаарай','Гутлаа өмсөөрэй','Дээл өмсөх'],a:0},{t:'mc',q:'Review — which means "must go"?',o:['явах ёстой','үдээс хойш','Оройн мэнд','Өглөөний мэнд'],a:0},{t:'mc',q:'Review — which means "driver"?',o:['жолооч','үдээс хойш','Оройн мэнд','Өглөөний мэнд'],a:0}]},
 
 {id:'mn_choose',title:'Choosing',step:'learn',meta:'аль · сонгох · хоёулаа',vocab:[['аль','ali','which'],['аль нь','ali ni','which one'],['сонгох','songokh','to choose'],['хоёулаа','khoyoulaa','both (of two)'],['өөр','oor','other / different'],['адилхан','adilkhan','the same']],ex:[
 {t:'note',tag:'Which one?',q:'аль нь',body:'<p>Choosing time: <span class="deva">аль</span> — which: <span class="deva">Аль нь дээр вэ?</span> — which one is better? Answer boldly: <span class="deva">хоёулаа!</span> — both! Or ask for something <span class="deva">өөр</span> — different.</p>',eg:[['Аль нь дээр вэ?','ali ni deer ve','which one is better?'],['хоёулаа','khoyoulaa','both!'],['өөр','oor','other / different']]},
@@ -3064,7 +3064,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “I will choose the red deel”',a:['Би','улаан','дээл','сонгоно'],pool:['Би','улаан','дээл','сонгоно','авна']},
 {t:'fill',q:'Complete: “this one is different”',s:'Энэ нь ___',o:['өөр','адилхан','аль','мөн'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['аль нь дээр вэ?','which is better?'],['хоёулааг авна','will take both'],['өөр өнгө','another color'],['адилхан үнэ','the same price']]},
-{t:'li',q:'Listen — which word?',say:'аль',o:['аль','дал','альфа','ль'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'аль',o:['аль','дал','альфа','ль'],a:0},{t:'mc',q:'Review — which means "(I am) tired"?',o:['ядарч байна','өмсөх','өмд','цамц'],a:0},{t:'mc',q:'Review — which means "last year"?',o:['өнгөрсөн жил','өмсөх','өмд','цамц'],a:0},{t:'mc',q:'Review — which means "please say it slowly"?',o:['Удаан хэлээрэй','өмсөх','өмд','цамц'],a:0}]},
 {id:'mn_choose_5',title:'Checkpoint',step:'checkpoint',meta:'Choosing mastered?',vocab:[],ex:[
 {t:'mc',q:'“which one?” =',o:['аль нь','хэн нь биш','юу нь','хаана'],a:0},
 {t:'li',q:'Listen — which word?',say:'хоёулаа',o:['хоёулаа','хоёр','гурвуулаа','уулзая'],a:0},
@@ -3072,7 +3072,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “is there another color?”',a:['Өөр','өнгө','байна','уу'],pool:['Өөр','өнгө','байна','уу','вэ']},
 {t:'match',q:'Match word and meaning',pairs:[['аль','which'],['сонгох','choose'],['хоёулаа','both'],['өөр','different'],['адилхан','same']]},
 {t:'mc',q:'“I will take both” =',o:['Хоёуланг нь авна','Аль нь авна','Хоёр авах уу','Өөрийг нь авна'],a:0},
-{t:'li',q:'Listen — which word?',say:'адилхан',o:['адилхан','адил','өөр','аль'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'адилхан',o:['адилхан','адил','өөр','аль'],a:0},{t:'mc',q:'Review — which means "please take"?',o:['аваарай','өмсөх','өмд','цамц'],a:0},{t:'mc',q:'Review — which means "university student"?',o:['оюутан','өмсөх','өмд','цамц'],a:0}]},
 
 {id:'mn_pace',title:'Pace & timing',step:'learn',meta:'яг · бараг · аль хэдийн',vocab:[['эрт','ert','early'],['оройтох','oroitokh','to be late'],['яг','yag','exactly'],['бараг','barag','almost'],['аль хэдийн','ali khediin','already'],['аажуухан','aajuukhan','slowly / gently']],ex:[
 {t:'note',tag:'Early & late',q:'эрт · оройтох',body:'<p><span class="deva">эрт</span> — early: <span class="deva">Би эрт босдог</span> — I get up early. And орой (evening) grew a verb: <span class="deva">оройтох</span> — to BE late: <span class="deva">Би оройтлоо!</span> — I am late (your just-now -лаа!).</p>',eg:[['эрт','ert','early'],['Би оройтлоо!','bi oroitloo','I am late!'],['аажуухан','aajuukhan','slowly, gently']]},
@@ -3103,7 +3103,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “the bus already left”',a:['Автобус','аль','хэдийн','явсан'],pool:['Автобус','аль','хэдийн','явсан','бараг']},
 {t:'fill',q:'Complete: “drive slowly, please!” — to the taxi',s:'___ яваарай!',o:['Аажуухан','Хурдан','Яг','Бараг'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Би оройтлоо','I am late'],['эрт ирсэн','came early'],['яг цагтаа','exactly on time'],['аажуухан','slowly']]},
-{t:'li',q:'Listen — which word?',say:'эрт',o:['эрт','эргэ','орой','рт'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'эрт',o:['эрт','эргэ','орой','рт'],a:0},{t:'mc',q:'Review — which means "(it) feels lovely"?',o:['сайхан байна','өөр','хоёулаа','сонгох'],a:0},{t:'mc',q:'Review — which means "next year"?',o:['ирэх жил','өөр','хоёулаа','сонгох'],a:0}]},
 {id:'mn_pace_5',title:'Checkpoint',step:'checkpoint',meta:'Timing mastered?',vocab:[],ex:[
 {t:'mc',q:'“already” =',o:['аль хэдийн','бараг','яг','эрт'],a:0},
 {t:'li',q:'Listen — which word?',say:'яг',o:['яг','яс','ягаан','замаг'],a:0},
@@ -3111,7 +3111,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “sorry, I am late!”',a:['Уучлаарай,','би','оройтлоо'],pool:['Уучлаарай,','би','оройтлоо','эртлээ']},
 {t:'match',q:'Match word and meaning',pairs:[['эрт','early'],['яг','exactly'],['бараг','almost'],['аль хэдийн','already'],['аажуухан','slowly']]},
 {t:'mc',q:'“at exactly five” =',o:['яг таван цагт','таван цагаас','бараг тавд','тав яг'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'аль хэдийн явсан',o:['аль хэдийн явсан','бараг явсан','аль хэдийн ирсэн','явсан хэдийн'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'аль хэдийн явсан',o:['аль хэдийн явсан','бараг явсан','аль хэдийн ирсэн','явсан хэдийн'],a:0},{t:'mc',q:'Review — which means "after that"?',o:['дараа нь','өөр','хоёулаа','сонгох'],a:0},{t:'mc',q:'Review — which means "to dance"?',o:['бүжиглэх','өөр','хоёулаа','сонгох'],a:0}]},
 
 {id:'mn_school',title:'Reading & writing',step:'learn',meta:'бичих · унших · хичээл',vocab:[['бичих','bichikh','to write'],['унших','unshikh','to read'],['хичээл','khicheel','lesson / class'],['дэвтэр','devter','notebook'],['харандаа','kharandaa','pencil'],['ном унших','nom unshikh','to read a book']],ex:[
 {t:'note',tag:'Pen to paper',q:'бичих · унших',body:'<p>The study verbs: <span class="deva">бичих</span> write, <span class="deva">унших</span> read — <span class="deva">ном унших</span>, to read a book (your have-word ном finally has its verb!).</p>',eg:[['бичих','bichikh','write'],['унших','unshikh','read'],['ном унших','nom unshikh','read a book']]},
@@ -3142,7 +3142,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “the lesson starts at nine”',a:['Хичээл','есөн','цагт','эхэлдэг'],pool:['Хичээл','есөн','цагт','эхэлдэг','дуусдаг']},
 {t:'fill',q:'Complete: “I write new words in my notebook”',s:'Би шинэ үгсийг дэвтэртээ ___',o:['бичдэг','уншдаг','сонсдог','хийдэг'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ном уншдаг','reads books'],['нэрээ бичих','write your name'],['шинэ үг','new word'],['хичээл эхэлдэг','the lesson starts']]},
-{t:'li',q:'Listen — which word?',say:'дэвтэр',o:['дэвтэр','дэвтэн','дээвэр','эвтэр'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дэвтэр',o:['дэвтэр','дэвтэн','дээвэр','эвтэр'],a:0},{t:'mc',q:'Review — which means "dislikes"?',o:['дургүй','аажуухан','аль хэдийн','бараг'],a:0},{t:'mc',q:'Review — which means "this year"?',o:['энэ жил','аажуухан','аль хэдийн','бараг'],a:0}]},
 {id:'mn_school_5',title:'Checkpoint',step:'checkpoint',meta:'Study words mastered?',vocab:[],ex:[
 {t:'mc',q:'“to read” =',o:['унших','бичих','сурах','үзэх'],a:0},
 {t:'li',q:'Listen — which word?',say:'хичээл',o:['хичээл','хэл','дэвтэр','сургууль'],a:0},
@@ -3150,7 +3150,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “write your name!”',a:['Нэрээ','бичээрэй'],pool:['Нэрээ','бичээрэй','уншаарай','нэр']},
 {t:'match',q:'Match word and meaning',pairs:[['бичих','write'],['унших','read'],['хичээл','lesson'],['дэвтэр','notebook'],['харандаа','pencil']]},
 {t:'mc',q:'“read a book” =',o:['ном унших','ном бичих','ном сурах','ном хийх'],a:0},
-{t:'li',q:'Listen — which word?',say:'унших',o:['унших','бичих','унтах','унах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'унших',o:['унших','бичих','унтах','унах'],a:0},{t:'mc',q:'Review — which means "at the end"?',o:['сүүлд нь','аажуухан','аль хэдийн','бараг'],a:0},{t:'mc',q:'Review — which means "to draw"?',o:['зурах','аажуухан','аль хэдийн','бараг'],a:0}]},
 
 {id:'mn_guest',title:'Guests & hospitality',step:'learn',meta:'Тавтай морилно уу!',vocab:[['зочин','zochin','guest'],['Тавтай морилно уу','tavtai morilno uu','welcome!'],['Ороорой','orooroi','come in'],['Суугаарай','suugaarai','have a seat'],['Цай уугаарай','tsai uugaarai','have some tea'],['дайлах','dailakh','to treat / host a meal']],ex:[
 {t:'note',tag:'The open door',q:'зочин',body:'<p>On the steppe, hospitality is law: a <span class="deva">зочин</span> (guest — the зочид of your hotel word!) is always fed. The welcome: <span class="deva">Тавтай морилно уу!</span> — literally “arrive in comfort”.</p>',eg:[['зочин','zochin','guest'],['Тавтай морилно уу','tavtai morilno uu','welcome!'],['дайлах','dailakh','to treat someone']]},
@@ -3181,7 +3181,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “welcome! come in!”',a:['Тавтай','морилно','уу!','Ороорой!'],pool:['Тавтай','морилно','уу!','Ороорой!','Суугаарай!']},
 {t:'fill',q:'Complete: “the guest drank milk tea”',s:'Зочин сүүтэй цай ___',o:['уусан','идсэн','хийсэн','авсан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['зочин ирлээ','a guest came'],['цай уугаарай','have tea'],['буузаар дайлах','treat with buuz'],['тавтай морилно уу','welcome']]},
-{t:'li',q:'Listen — which word?',say:'дайлах',o:['дайлах','дайллага','байлах','дуулах'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'дайлах',o:['дайлах','дайллага','байлах','дуулах'],a:0},{t:'mc',q:'Review — which means "hand / arm"?',o:['гар','ном унших','харандаа','дэвтэр'],a:0},{t:'mc',q:'Review — which means "but"?',o:['гэхдээ','ном унших','харандаа','дэвтэр'],a:0}]},
 {id:'mn_guest_5',title:'Zone 11 checkpoint',step:'checkpoint',meta:'The details are yours!',vocab:[],ex:[
 {t:'mc',q:'“Welcome!” =',o:['Тавтай морилно уу','Сайхан амраарай','Баяртай','За за'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Өглөөний мэнд',o:['Өглөөний мэнд','Оройн мэнд','Тавтай морилно уу','Сайн уу'],a:0},
@@ -3189,7 +3189,7 @@ const MN_Z11=[
 {t:'wb',q:'Build: “put on your deel!”',a:['Дээлээ','өмсөөрэй'],pool:['Дээлээ','өмсөөрэй','тайлаарай','угаагаарай']},
 {t:'match',q:'Match phrase and meaning',pairs:[['аль нь','which one'],['яг','exactly'],['ном унших','read a book'],['Цай уугаарай','have tea'],['өдөр бүр','every day']]},
 {t:'mc',q:'Zone 11 done! You now have…',o:['rhythms, clothes, choices, timing & hospitality','only script','only numbers','only greetings'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'Тавтай морилно уу',o:['Тавтай морилно уу','Ороорой','Суугаарай','Мэнд'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Тавтай морилно уу',o:['Тавтай морилно уу','Ороорой','Суугаарай','Мэнд'],a:0},{t:'mc',q:'Review — which means "before"?',o:['өмнө','ном унших','харандаа','дэвтэр'],a:0},{t:'mc',q:'Review — which means "music"?',o:['хөгжим','ном унших','харандаа','дэвтэр'],a:0}]},
 ];
 const MN_Z12=[
 /* ===================== ZONE 12 · MAKE MONGOLIA HOME ===================== */
@@ -3222,7 +3222,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “what is the date today?”',a:['Өнөөдөр','сарын','хэдэн','вэ'],pool:['Өнөөдөр','сарын','хэдэн','вэ','бэ']},
 {t:'fill',q:'Complete: “this year is 2026”',s:'Энэ жил 2026 ___',o:['он','жил','сар','огноо'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['2026 он','the year 2026'],['сарын тав','the 5th'],['хэдэн онд','in what year'],['төрсөн өдөр','birthday']]},
-{t:'li',q:'Listen — which word?',say:'огноо',o:['огноо','оноо','он','өнөөдөр'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'огноо',o:['огноо','оноо','он','өнөөдөр'],a:0},{t:'mc',q:'Review — which means "leg / foot"?',o:['хөл','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "or"?',o:['эсвэл','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "spring"?',o:['хавар','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "bird"?',o:['шувуу','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "tasty"?',o:['амттай','дайлах','Цай уугаарай','Суугаарай'],a:0}]},
 {id:'mn_on_5',title:'Checkpoint',step:'checkpoint',meta:'Dates mastered?',vocab:[],ex:[
 {t:'mc',q:'“calendar year” =',o:['он','жил','сар','өдөр'],a:0},
 {t:'li',q:'Listen — which question?',say:'Өнөөдөр сарын хэдэн вэ?',o:['Өнөөдөр сарын хэдэн вэ?','Хэдэн онд төрсөн бэ?','Өнөөдөр ямар өдөр вэ?','Хэдэн цаг вэ?'],a:0},
@@ -3230,7 +3230,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “today is the tenth”',a:['Өнөөдөр','сарын','арав'],pool:['Өнөөдөр','сарын','арав','аравдугаар']},
 {t:'match',q:'Match word and meaning',pairs:[['он','calendar year'],['жил','year span'],['огноо','date'],['төрсөн','born'],['сарын хэдэн','which date']]},
 {t:'mc',q:'төрсөн өдөр means…',o:['birthday','new year','date','holiday'],a:0},
-{t:'li',q:'Listen — which word?',say:'он',o:['он','нон','жил','сон'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'он',o:['он','нон','жил','сон'],a:0},{t:'mc',q:'Review — which means "later / after"?',o:['дараа','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "to play"?',o:['тоглох','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "sheep"?',o:['хонь','дайлах','Цай уугаарай','Суугаарай'],a:0},{t:'mc',q:'Review — which means "door"?',o:['хаалга','дайлах','Цай уугаарай','Суугаарай'],a:0}]},
 
 {id:'mn_err',title:'Errands',step:'learn',meta:'үс засуулах · мөнгө солих',vocab:[['засах','zasakh','to fix / repair'],['үс засуулах','us zasuulakh','to get a haircut'],['шуудан','shuudan','post office'],['мөнгө солих','mongo solikh','to exchange money'],['илгээх','ilgeekh','to send'],['захиа','zakhia','letter']],ex:[
 {t:'note',tag:'Fix it',q:'засах',body:'<p><span class="deva">засах</span> — to fix, repair, tidy: <span class="deva">машин засах</span> — fix the car. Add -уул (get-someone-to) and you have the barber: <span class="deva">үс засуулах</span> — to get your hair “fixed” = a haircut!</p>',eg:[['засах','zasakh','fix'],['машин засах','mashin zasakh','fix the car'],['үс засуулах','us zasuulakh','get a haircut']]},
@@ -3261,7 +3261,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “I exchanged money at the bank”',a:['Би','банкинд','мөнгө','солисон'],pool:['Би','банкинд','мөнгө','солисон','илгээсэн']},
 {t:'fill',q:'Complete: “I got a haircut yesterday”',s:'Би өчигдөр үс ___',o:['засуулсан','зассан','авсан','угаасан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['үс засуулсан','got a haircut'],['мөнгө солисон','exchanged money'],['захиа илгээсэн','sent a letter'],['машин зассан','fixed the car']]},
-{t:'li',q:'Listen — which word?',say:'илгээх',o:['илгээх','ирэх','илүү','гээх'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'илгээх',o:['илгээх','ирэх','илүү','гээх'],a:0},{t:'mc',q:'Review — which means "eye"?',o:['нүд','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "also"?',o:['бас','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "summer"?',o:['зун','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "mountain"?',o:['уул','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "bon appétit!"?',o:['Сайхан хооллоорой','огноо','сарын хэдэн','төрсөн'],a:0}]},
 {id:'mn_err_5',title:'Checkpoint',step:'checkpoint',meta:'Errands mastered?',vocab:[],ex:[
 {t:'mc',q:'“post office” =',o:['шуудан','банк','зах','дэлгүүр'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'мөнгө солих',o:['мөнгө солих','мөнгө засах','мөнгө илгээх','мөнгө авах'],a:0},
@@ -3269,7 +3269,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “I want to get a haircut”',a:['Би','үс','засуулмаар','байна'],pool:['Би','үс','засуулмаар','байна','солимоор']},
 {t:'match',q:'Match errand and meaning',pairs:[['засах','fix'],['солих','exchange'],['илгээх','send'],['захиа','letter'],['шуудан','post office']]},
 {t:'mc',q:'“send a letter” =',o:['захиа илгээх','захиа солих','захиа засах','захиа авах'],a:0},
-{t:'li',q:'Listen — which word?',say:'захиа',o:['захиа','зах','захиалах','ахиа'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'захиа',o:['захиа','зах','захиалах','ахиа'],a:0},{t:'mc',q:'Review — which means "bus"?',o:['автобус','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "to watch a movie"?',o:['кино үзэх','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "goat"?',o:['ямаа','огноо','сарын хэдэн','төрсөн'],a:0},{t:'mc',q:'Review — which means "stove"?',o:['зуух','огноо','сарын хэдэн','төрсөн'],a:0}]},
 
 {id:'mn_emerg',title:'Help & safety',step:'learn',meta:'Туслаарай! · Болгоомжтой!',vocab:[['Туслаарай!','tuslaarai','help me, please!'],['аюултай','ayuultai','dangerous'],['Болгоомжтой!','bolgoomjtoi','careful!'],['цагдаа','tsagdaa','police'],['гээсэн','geesen','lost (something)'],['Би түлхүүрээ гээсэн','bi tulkhuuree geesen','I lost my key']],ex:[
 {t:'note',tag:'Words you hope to never need',q:'Туслаарай!',body:'<p>Learn these calmly, once, so they are there if ever needed. <span class="deva">Туслаарай!</span> — please help! <span class="deva">Болгоомжтой!</span> — careful! <span class="deva">аюултай</span> — dangerous (аюул danger + -тай).</p>',eg:[['Туслаарай!','tuslaarai','help, please!'],['Болгоомжтой!','bolgoomjtoi','careful!'],['аюултай','ayuultai','dangerous']]},
@@ -3300,7 +3300,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “careful — the ice is dangerous!”',a:['Болгоомжтой','—','мөс','аюултай!'],pool:['Болгоомжтой','—','мөс','аюултай!','сайхан!']},
 {t:'fill',q:'Complete: “where is the police station?”',s:'Цагдаагийн газар ___ байна вэ?',o:['хаана','хэзээ','юу','хэд'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['утсаа гээсэн','lost the phone'],['зам аюултай','the road is dangerous'],['эмч дуудаарай','call a doctor'],['туслаарай','help please']]},
-{t:'li',q:'Listen — which word?',say:'гээсэн',o:['гээсэн','гэсэн','олсон','ирсэн'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'гээсэн',o:['гээсэн','гэсэн','олсон','ирсэн'],a:0},{t:'mc',q:'Review — which means "(it) hurts"?',o:['өвдөж байна','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "in that case"?',o:['тэгвэл','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "autumn"?',o:['намар','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "river"?',o:['гол','захиа','илгээх','мөнгө солих'],a:0}]},
 {id:'mn_emerg_5',title:'Checkpoint',step:'checkpoint',meta:'Safety words ready?',vocab:[],ex:[
 {t:'mc',q:'“Help, please!” =',o:['Туслаарай!','Болгоомжтой!','Дуудаарай!','Засаарай!'],a:0},
 {t:'li',q:'Listen — which word?',say:'цагдаа',o:['цагдаа','цаг','багш','эмч'],a:0},
@@ -3308,7 +3308,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “I lost my key”',a:['Би','түлхүүрээ','гээсэн'],pool:['Би','түлхүүрээ','гээсэн','утсаа']},
 {t:'match',q:'Match word and meaning',pairs:[['Туслаарай','help please'],['аюултай','dangerous'],['Болгоомжтой','careful'],['цагдаа','police'],['гээсэн','lost']]},
 {t:'mc',q:'“call the police” =',o:['цагдаа дуудаарай','цагдаа явуулаарай','цагдаа гээсэн','цагдаатай'],a:0},
-{t:'li',q:'Listen — which word?',say:'аюултай',o:['аюултай','амттай','уултай','аютай'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'аюултай',o:['аюултай','амттай','уултай','аютай'],a:0},{t:'mc',q:'Review — which means "bicycle"?',o:['унадаг дугуй','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "naadam (the games)"?',o:['наадам','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "cattle / cow"?',o:['үхэр','захиа','илгээх','мөнгө солих'],a:0},{t:'mc',q:'Review — which means "to pitch the ger"?',o:['гэр барих','захиа','илгээх','мөнгө солих'],a:0}]},
 
 {id:'mn_wish',title:'Wishes & blessings',step:'learn',meta:'Баяр хүргэе!',vocab:[['Баяр хүргэе','bayar khurgeye','congratulations!'],['Төрсөн өдрийн мэнд','torson odriin mend','happy birthday!'],['Шинэ жилийн мэнд','shine jiliin mend','happy new year!'],['Сайхан амраарай','saikhan amraarai','rest well!'],['Сайн яваарай','sain yavaarai','safe travels!'],['ерөөл','yerool','a blessing / good wish']],ex:[
 {t:'note',tag:'Deliver the joy',q:'Баяр хүргэе',body:'<p><span class="deva">Баяр хүргэе!</span> — congratulations! — literally “let me DELIVER joy” (баяр joy + хүргэх to deliver). Mongolians love a well-spoken <span class="deva">ерөөл</span> — a blessing, wished at weddings, birthdays, every journey.</p>',eg:[['Баяр хүргэе','bayar khurgeye','congratulations!'],['ерөөл','yerool','a blessing'],['баяр','bayar','joy / celebration']]},
@@ -3339,7 +3339,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “happy new year, teacher!”',a:['Шинэ','жилийн','мэнд,','багш','аа!'],pool:['Шинэ','жилийн','мэнд,','багш','аа!','өдрийн']},
 {t:'fill',q:'Complete: guests leave for home — “travel safely!”',s:'Сайн ___!',o:['яваарай','амраарай','сураарай','уугаарай'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['Баяр хүргэе','congratulations'],['ерөөл','blessing'],['Сайхан амраарай','rest well'],['Сайн яваарай','safe travels']]},
-{t:'li',q:'Listen — which word?',say:'баяр',o:['баяр','баярлалаа','мэнд','баатар'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'баяр',o:['баяр','баярлалаа','мэнд','баатар'],a:0},{t:'mc',q:'Review — which means "went yesterday"?',o:['Өчигдөр явсан','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "but / whereas"?',o:['харин','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "season"?',o:['улирал','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "forest"?',o:['ой','гээсэн','цагдаа','Болгоомжтой!'],a:0}]},
 {id:'mn_wish_5',title:'Checkpoint',step:'checkpoint',meta:'Blessings mastered?',vocab:[],ex:[
 {t:'mc',q:'“Congratulations!” =',o:['Баяр хүргэе','Баярлалаа','Мэнд','Сайн уу'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Шинэ жилийн мэнд',o:['Шинэ жилийн мэнд','Төрсөн өдрийн мэнд','Шинэ сарын мэнд','Оройн мэнд'],a:0},
@@ -3347,7 +3347,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “congratulations!”',a:['Баяр','хүргэе'],pool:['Баяр','хүргэе','мэнд','баярлалаа']},
 {t:'match',q:'Match wish and meaning',pairs:[['Баяр хүргэе','congratulations'],['Төрсөн өдрийн мэнд','happy birthday'],['Шинэ жилийн мэнд','happy new year'],['Сайхан амраарай','rest well'],['ерөөл','blessing']]},
 {t:'mc',q:'мэнд-wishes are built with which case tail?',o:['-ийн/-ын — the genitive','-д — the dative','-аас','-аар'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'Баяр хүргэе',o:['Баяр хүргэе','Баярлалаа','Баяртай','Мэнд хүргэе'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Баяр хүргэе',o:['Баяр хүргэе','Баярлалаа','Баяртай','Мэнд хүргэе'],a:0},{t:'mc',q:'Review — which means "to board / sit"?',o:['суух','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "horse racing"?',o:['морин уралдаан','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "camel"?',o:['тэмээ','гээсэн','цагдаа','Болгоомжтой!'],a:0},{t:'mc',q:'Review — which means "to take the ger down"?',o:['гэр буулгах','гээсэн','цагдаа','Болгоомжтой!'],a:0}]},
 
 {id:'mn_dur',title:'How long',step:'learn',meta:'хэр удаан · болж байна',vocab:[['хэр удаан','kher udaan','how long'],['удаан','udaan','long (in time) / slow'],['Хоёр жил болж байна','khoyor jil bolj baina','it has been two years'],['саяхан','sayakhan','recently'],['удахгүй','udakhgui','soon'],['хойш','khoish','since / after']],ex:[
 {t:'note',tag:'How long?',q:'хэр удаан',body:'<p><span class="deva">хэр удаан</span> — how long? The lovely answer pattern: <span class="deva">Хоёр жил болж байна</span> — “it is becoming two years” = it has been two years. <span class="deva">Монголд ирээд хэр удаан болж байна?</span> — how long have you been in Mongolia?</p>',eg:[['хэр удаан','kher udaan','how long?'],['Хоёр жил болж байна','khoyor jil bolj baina','it has been two years']]},
@@ -3378,7 +3378,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “it has been one month” — нэг сар!',a:['Нэг','сар','болж','байна'],pool:['Нэг','сар','болж','байна','жил']},
 {t:'fill',q:'Complete: “soon it will be winter”',s:'___ өвөл болно',o:['Удахгүй','Саяхан','Хойш','Удаан'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['хэр удаан','how long'],['нэг сар болж байна','it has been a month'],['удахгүй өвөл болно','soon it will be winter'],['саяхан','recently']]},
-{t:'li',q:'Listen — which word?',say:'удаан',o:['удаан','удахгүй','уран','дуран'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'удаан',o:['удаан','удахгүй','уран','дуран'],a:0},{t:'mc',q:'Review — which means "is eating (now)"?',o:['идэж байна','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "(I) remember / miss"?',o:['санаж байна','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "to move / migrate"?',o:['нүүх','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "tree"?',o:['мод','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0}]},
 {id:'mn_dur_5',title:'Checkpoint',step:'checkpoint',meta:'Durations mastered?',vocab:[],ex:[
 {t:'mc',q:'“soon” =',o:['удахгүй','саяхан','удаан','хойш'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Хоёр жил болж байна',o:['Хоёр жил болж байна','Нэг сар болж байна','Хоёр жил байна','Хоёр жил өнгөрсөн'],a:0},
@@ -3386,7 +3386,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “since yesterday”',a:['өчигдрөөс','хойш'],pool:['өчигдрөөс','хойш','өмнө','дараа']},
 {t:'match',q:'Match word and meaning',pairs:[['хэр удаан','how long'],['саяхан','recently'],['удахгүй','soon'],['хойш','since'],['болж байна','it has been']]},
 {t:'mc',q:'“How long?” =',o:['Хэр удаан?','Хэдэн удаа?','Хэр хол?','Хэзээ?'],a:0},
-{t:'li',q:'Listen — which word?',say:'саяхан',o:['саяхан','сая','удахгүй','жаахан'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'саяхан',o:['саяхан','сая','удахгүй','жаахан'],a:0},{t:'mc',q:'Review — which means "to ride"?',o:['унах','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "archery"?',o:['сур харваа','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "horses (the herd)"?',o:['адуу','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0},{t:'mc',q:'Review — which means "fried noodles"?',o:['цуйван','ерөөл','Сайн яваарай','Сайхан амраарай'],a:0}]},
 
 {id:'mn_little',title:'Little words',step:'learn',meta:'тухай · шиг · хамт',vocab:[['тухай','tukhai','about'],['шиг','shig','like / as'],['хамт','khamt','together'],['надтай хамт','nadtai khamt','together with me'],['зөвхөн','zovkhon','only'],['ганц','gants','single / only one']],ex:[
 {t:'note',tag:'The quiet helpers',q:'тухай · шиг',body:'<p>Three tiny words with big jobs, each following its noun: <span class="deva">Монголын тухай</span> — about Mongolia. <span class="deva">чоно шиг</span> — like a wolf! <span class="deva">надтай хамт</span> — together with me (your -тай + хамт).</p>',eg:[['Монголын тухай','mongoliin tukhai','about Mongolia'],['чоно шиг','chono shig','like a wolf'],['надтай хамт','nadtai khamt','with me']]},
@@ -3417,7 +3417,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “only one khuushuur is left!”',a:['Зөвхөн','ганц','хуушуур','үлдсэн'],pool:['Зөвхөн','ганц','хуушуур','үлдсэн','олон']},
 {t:'fill',q:'Complete: “work together with friends”',s:'Найзуудтайгаа ___ ажиллаарай',o:['хамт','шиг','тухай','зөвхөн'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['морины тухай','about horses'],['салхи шиг хурдан','fast like the wind'],['хамт ажиллах','work together'],['зөвхөн өнөөдөр','only today']]},
-{t:'li',q:'Listen — which word?',say:'ганц',o:['ганц','гандан','ганса','анц'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ганц',o:['ганц','гандан','ганса','анц'],a:0},{t:'mc',q:'Review — which means "is doing"?',o:['хийж байна','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "forgot"?',o:['мартсан','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "life"?',o:['амьдрал','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "flower"?',o:['цэцэг','хойш','удахгүй','саяхан'],a:0}]},
 {id:'mn_little_5',title:'Checkpoint',step:'checkpoint',meta:'Helpers mastered?',vocab:[],ex:[
 {t:'mc',q:'“together” =',o:['хамт','шиг','тухай','ганц'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'надтай хамт',o:['надтай хамт','чамтай хамт','надтай','ганцаараа'],a:0},
@@ -3425,7 +3425,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “like the wind!”',a:['салхи','шиг'],pool:['салхи','шиг','тухай','хамт']},
 {t:'match',q:'Match word and meaning',pairs:[['тухай','about'],['шиг','like'],['хамт','together'],['зөвхөн','only'],['ганц','a single']]},
 {t:'mc',q:'“about Mongolia” =',o:['Монголын тухай','Монголд тухай','Монгол тухайд','тухай Монгол'],a:0},
-{t:'li',q:'Listen — which word?',say:'хамт',o:['хамт','амт','хамаг','ханд'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'хамт',o:['хамт','амт','хамаг','ханд'],a:0},{t:'mc',q:'Review — which means "get on the bus"?',o:['автобусанд суух','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "to clean"?',o:['цэвэрлэх','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "fox"?',o:['үнэг','хойш','удахгүй','саяхан'],a:0},{t:'mc',q:'Review — which means "soup"?',o:['шөл','хойш','удахгүй','саяхан'],a:0}]},
 
 {id:'mn_cap',title:'The words of the heart',step:'learn',meta:'Би Монголд хайртай!',vocab:[['хайртай','khairtai','loves (with-love)'],['Би чамд хайртай','bi chamd khairtai','I love you'],['зүрх','zurkh','heart'],['мөрөөдөл','moroodol','dream'],['ирээдүй','ireedui','future'],['Би Монголд хайртай','bi mongold khairtai','I love Mongolia']],ex:[
 {t:'note',tag:'With-love',q:'хайртай',body:'<p>The greatest -тай word of all: <span class="deva">хайр</span> love + -тай = <span class="deva">хайртай</span> — “with love” = to love. The loved one takes your dative -д: <span class="deva">Би чамд хайртай</span> — I love you.</p>',eg:[['хайртай','khairtai','loves'],['Би чамд хайртай','bi chamd khairtai','I love you'],['Би ээждээ хайртай','bi eejdee khairtai','I love my mother']]},
@@ -3456,7 +3456,7 @@ const MN_Z12=[
 {t:'wb',q:'Build: “a beautiful future awaits”',a:['Сайхан','ирээдүй','хүлээж','байна'],pool:['Сайхан','ирээдүй','хүлээж','байна','мөрөөдөл']},
 {t:'fill',q:'Complete: “my dream came true!”',s:'Миний мөрөөдөл ___!',o:['биеллээ','ирлээ','явлаа','боллоо биш'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['зүрхнээсээ','from the heart'],['мөрөөдөл биеллээ','the dream came true'],['сайхан ирээдүй','beautiful future'],['Би Монголд хайртай','I love Mongolia']]},
-{t:'li',q:'Listen — which word?',say:'хайртай',o:['хайртай','хайр','дуртай','хайрхан'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'хайртай',o:['хайртай','хайр','дуртай','хайрхан'],a:0},{t:'mc',q:'Review — which means "is learning"?',o:['сурч байна','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "to say"?',o:['хэлэх','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "the steppe lands"?',o:['тал нутаг','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "felt"?',o:['эсгий','ганц','зөвхөн','надтай хамт'],a:0}]},
 {id:'mn_cap_5',title:'The final checkpoint',step:'checkpoint',meta:'Багш нар, баяр хүргэе!',vocab:[],ex:[
 {t:'mc',q:'“I love Mongolia” =',o:['Би Монголд хайртай','Би Монголд дуртай','Монгол сайхан','Би Монголоос'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'Тавтай морилно уу',o:['Тавтай морилно уу','Баяр хүргэе','Сайн байна уу','Сайхан амраарай'],a:0},
@@ -3464,7 +3464,7 @@ const MN_Z12=[
 {t:'wb',q:'Build the whole journey: “I speak Mongolian!”',a:['Би','монголоор','ярьдаг'],pool:['Би','монголоор','ярьдаг','жаахан']},
 {t:'match',q:'Match the course’s treasures',pairs:[['гэр','your first word'],['Сайн байна уу','the greeting'],['таван хошуу мал','the five livestock'],['Баяр хүргэе','congratulations'],['Би Монголд хайртай','I love Mongolia']]},
 {t:'mc',q:'Twelve zones done — Баяр хүргэе! You can now…',o:['read, speak, travel, host & love in Mongolian','only begin','only read signs','only count to ten'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'Би Монголд хайртай',o:['Би Монголд хайртай','Би чамд хайртай','Монгол минь','Би монголоор ярьдаг'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'Би Монголд хайртай',o:['Би Монголд хайртай','Би чамд хайртай','Монгол минь','Би монголоор ярьдаг'],a:0},{t:'mc',q:'Review — which means "ride a horse"?',o:['морь унах','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "to cook"?',o:['хоол хийх','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "deer"?',o:['буга','ганц','зөвхөн','надтай хамт'],a:0},{t:'mc',q:'Review — which means "dried curd"?',o:['аарул','ганц','зөвхөн','надтай хамт'],a:0}]},
 ];
 const MN_LESSONS=[].concat(MN_Z1,MN_Z2,MN_Z3,MN_Z4,MN_Z5,MN_Z6,MN_Z7,MN_Z8,MN_Z9,MN_Z10,MN_Z11,MN_Z12);
 

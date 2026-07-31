@@ -967,7 +967,7 @@ const LO_Z4=[
 {t:'fill',q:'Where do you get money?',s:'___',o:['ທະນາຄານ','ຕະຫຼາດ','ໂຮງໝໍ','ໂຮງຮຽນ'],a:0},
 {t:'match',q:'Match place and meaning',pairs:[['ຮ້ານ','shop'],['ຮ້ານອາຫານ','restaurant'],['ໂຮງໝໍ','hospital'],['ຕະຫຼາດ','market']]},
 {t:'mc',q:'ໂຮງຮຽນ means…',d:'ໂຮງຮຽນ',o:['school','hospital','market','bank'],a:0},
-{t:'li',q:'Listen — which place?',say:'ຕະຫຼາດ',o:['ຕະຫຼາດ','ຮ້ານອາຫານ','ໂຮງໝໍ','ທະນາຄານ'],a:0}]},
+{t:'li',q:'Listen — which place?',say:'ຕະຫຼາດ',o:['ຕະຫຼາດ','ຮ້ານອາຫານ','ໂຮງໝໍ','ທະນາຄານ'],a:0},{t:'mc',q:'Review — which means "Thank you"?',o:['ຂອບໃຈ','ມັກເຂົ້າ','ຢາກໄປ','ບໍ່ຢາກ'],a:0}]},
 {id:'lo_place_5',title:'Checkpoint',step:'checkpoint',meta:'Places mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "market"?',o:['ຕະຫຼາດ','ຮ້ານ','ໂຮງໝໍ','ທະນາຄານ'],a:0},
 {t:'li',q:'Listen — which place?',say:'ທະນາຄານ',o:['ທະນາຄານ','ຕະຫຼາດ','ໂຮງຮຽນ','ຮ້ານ'],a:0},
@@ -1008,7 +1008,7 @@ const LO_Z4=[
 {t:'fill',q:'Complete: "under the table"',s:'ຢູ່ ___ ໂຕະ',o:['ໃຕ້','ເທິງ','ນອກ','ໄກ'],a:0},
 {t:'match',q:'Match position and meaning',pairs:[['ໃກ້','near'],['ໄກ','far'],['ໃນ','in'],['ນອກ','outside']]},
 {t:'mc',q:'Lao proves tones matter with which pair?',o:['ໃກ້ / ໄກ','ໃນ / ນອກ','ເທິງ / ໃຕ້','ຢູ່ / ແມ່ນ'],a:0},
-{t:'li',q:'Listen — which position?',say:'ເທິງ',o:['ເທິງ','ໃຕ້','ໃນ','ນອກ'],a:0}]},
+{t:'li',q:'Listen — which position?',say:'ເທິງ',o:['ເທິງ','ໃຕ້','ໃນ','ນອກ'],a:0},{t:'mc',q:'Review — which means "Goodbye"?',o:['ລາກ່ອນ','ທະນາຄານ','ຮ້ານອາຫານ','ໂຮງໝໍ'],a:0}]},
 {id:'lo_pos_5',title:'Checkpoint',step:'checkpoint',meta:'Positions mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "in"?',o:['ໃນ','ນອກ','ເທິງ','ໃຕ້'],a:0},
 {t:'li',q:'Listen — which position?',say:'ໃຕ້',o:['ໃຕ້','ເທິງ','ໃນ','ນອກ'],a:0},
@@ -1049,7 +1049,7 @@ const LO_Z4=[
 {t:'fill',q:'Call an older man (stranger)…',s:'___',o:['ອ້າຍ','ນ້ອງ','ລູກ','ແມ່'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ເອື້ອຍ','older sister'],['ນ້ອງ','younger sibling'],['ລູກ','child'],['ແມ່','mother']]},
 {t:'mc',q:'ລູກຊາຍ means…',d:'ລູກຊາຍ',o:['son','daughter','mother','uncle'],a:0},
-{t:'li',q:'Listen — which word?',say:'ອ້າຍ',o:['ອ້າຍ','ເອື້ອຍ','ນ້ອງ','ພໍ່'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ອ້າຍ',o:['ອ້າຍ','ເອື້ອຍ','ນ້ອງ','ພໍ່'],a:0},{t:'mc',q:'Review — which means "sorry / excuse me"?',o:['ຂໍໂທດ','ໄກ','ນອກ','ໃນ'],a:0}]},
 {id:'lo_family_5',title:'Checkpoint',step:'checkpoint',meta:'Family mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "mother"?',o:['ແມ່','ພໍ່','ລູກ','ນ້ອງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ອ້າຍ',o:['ອ້າຍ','ເອື້ອຍ','ນ້ອງ','ພໍ່'],a:0},
@@ -1090,7 +1090,7 @@ const LO_Z4=[
 {t:'fill',q:'Complete: "vegetables and fruit"',s:'ຜັກ ___ ໝາກໄມ້',o:['ແລະ','ບໍ່','ຢູ່','ໃສ'],a:0},
 {t:'match',q:'Match food and meaning',pairs:[['ໝູ','pork'],['ຜັກ','vegetables'],['ເຂົ້າໜຽວ','sticky rice'],['ໝາກໄມ້','fruit']]},
 {t:'mc',q:'ເຂົ້າ can mean both rice and…',o:['a meal','water','a shop','a person'],a:0},
-{t:'li',q:'Listen — which food?',say:'ໄກ່',o:['ໄກ່','ໝູ','ຜັກ','ເຂົ້າ'],a:0}]},
+{t:'li',q:'Listen — which food?',say:'ໄກ່',o:['ໄກ່','ໝູ','ຜັກ','ເຂົ້າ'],a:0},{t:'mc',q:'Review — which means "a Lao person"?',o:['ຄົນລາວ','ລູກ','ນ້ອງ','ເອື້ອຍ'],a:0}]},
 {id:'lo_food_5',title:'Checkpoint',step:'checkpoint',meta:'Food mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "rice"?',o:['ເຂົ້າ','ໄກ່','ໝູ','ຜັກ'],a:0},
 {t:'li',q:'Listen — which food?',say:'ຜັກ',o:['ຜັກ','ໄກ່','ໝາກໄມ້','ໝູ'],a:0},
@@ -1131,7 +1131,7 @@ const LO_Z4=[
 {t:'fill',q:'Compliment the food',s:'ອາຫານ ___',o:['ແຊບ','ເຜັດ','ຄິດເງິນ','ໃສ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ເຜັດ','spicy'],['ບໍ່ເຜັດ','not spicy'],['ຄິດເງິນ','the bill'],['ເມນູ','menu']]},
 {t:'mc',q:'ຂໍ … ແດ່ is a…',o:['polite request frame','question word','past marker','pronoun'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ເອົາອັນນີ້',o:['ເອົາອັນນີ້','ຄິດເງິນ','ຂໍເມນູແດ່','ແຊບ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ເອົາອັນນີ້',o:['ເອົາອັນນີ້','ຄິດເງິນ','ຂໍເມນູແດ່','ແຊບ'],a:0},{t:'mc',q:'Review — which means "yesterday"?',o:['ມື້ວານນີ້','ໝາກໄມ້','ຜັກ','ໝູ'],a:0}]},
 {id:'lo_eatout_5',title:'Checkpoint',step:'checkpoint',meta:'Ordering mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask for the menu:',o:['ຂໍເມນູແດ່','ຄິດເງິນ','ແຊບ','ເອົາ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຄິດເງິນ',o:['ຄິດເງິນ','ຂໍເມນູແດ່','ເອົາອັນນີ້','ບໍ່ເຜັດ'],a:0},
@@ -1172,7 +1172,7 @@ const LO_Z4=[
 {t:'fill',q:'Complete: "I go to work"',s:'ຂ້ອຍ ___',o:['ໄປເຮັດວຽກ','ນອນ','ໃສ','ດີ'],a:0},
 {t:'match',q:'Match action and meaning',pairs:[['ອາບນ້ຳ','shower'],['ກິນເຂົ້າ','eat a meal'],['ກັບບ້ານ','go home'],['ນອນ','sleep']]},
 {t:'mc',q:'ອາບນ້ຳ literally is "bathe in…"',o:['water','rice','the market','the morning'],a:0},
-{t:'li',q:'Listen — which action?',say:'ໄປເຮັດວຽກ',o:['ໄປເຮັດວຽກ','ກັບບ້ານ','ອາບນ້ຳ','ນອນ'],a:0}]},
+{t:'li',q:'Listen — which action?',say:'ໄປເຮັດວຽກ',o:['ໄປເຮັດວຽກ','ກັບບ້ານ','ອາບນ້ຳ','ນອນ'],a:0},{t:'mc',q:'Review — which means "Monday"?',o:['ວັນຈັນ','ແຊບ','ຄິດເງິນ','ເຜັດ'],a:0}]},
 {id:'lo_routine_5',title:'Checkpoint',step:'checkpoint',meta:'Your day mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "wake up"?',o:['ຕື່ນນອນ','ນອນ','ອາບນ້ຳ','ກັບບ້ານ'],a:0},
 {t:'li',q:'Listen — which action?',say:'ກັບບ້ານ',o:['ກັບບ້ານ','ໄປເຮັດວຽກ','ນອນ','ກິນເຂົ້າ'],a:0},
@@ -1215,7 +1215,7 @@ const LO_Z5=[
 {t:'fill',q:'Complete: "5,000 kip"',s:'ຫ້າພັນ ___',o:['ກີບ','ເງິນ','ແພງ','ໃສ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ເທົ່າໃດ','how much'],['ລາຄາ','price'],['ແພງ','expensive'],['ຖືກ','cheap']]},
 {t:'mc',q:'Laos counts money in…',o:['ກີບ (kip)','ໂມງ','ໂຕ','ຄົນ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເທົ່າໃດ',o:['ເທົ່າໃດ','ກີບ','ແພງ','ຖືກ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເທົ່າໃດ',o:['ເທົ່າໃດ','ກີບ','ແພງ','ຖືກ'],a:0},{t:'mc',q:'Review — which means "do not eat"?',o:['ບໍ່ກິນ','ກັບບ້ານ','ໄປເຮັດວຽກ','ກິນເຂົ້າ'],a:0}]},
 {id:'lo_money_5',title:'Checkpoint',step:'checkpoint',meta:'Money mastered?',vocab:[],ex:[
 {t:'mc',q:'What is the Lao currency?',o:['ກີບ','ເງິນ','ລາຄາ','ໂມງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຖືກ',o:['ຖືກ','ແພງ','ກີບ','ເງິນ'],a:0},
@@ -1256,7 +1256,7 @@ const LO_Z5=[
 {t:'fill',q:'Complete: "one hundred thousand"',s:'ໜຶ່ງ ___',o:['ແສນ','ໝື່ນ','ພັນ','ຮ້ອຍ'],a:0},
 {t:'match',q:'Match number and value',pairs:[['ພັນ','1,000'],['ໝື່ນ','10,000'],['ແສນ','100,000'],['ລ້ານ','1,000,000']]},
 {t:'mc',q:'Lao gives single words up to…',o:['a million (ລ້ານ)','a hundred','a thousand','ten'],a:0},
-{t:'li',q:'Listen — which number?',say:'ແສນ',o:['ແສນ','ໝື່ນ','ພັນ','ລ້ານ'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'ແສນ',o:['ແສນ','ໝື່ນ','ພັນ','ລ້ານ'],a:0},{t:'mc',q:'Review — which means "do not know"?',o:['ບໍ່ຮູ້','ຖືກ','ແພງ','ລາຄາ'],a:0}]},
 {id:'lo_bignum_5',title:'Checkpoint',step:'checkpoint',meta:'Big numbers mastered?',vocab:[],ex:[
 {t:'mc',q:'Which is 1,000?',o:['ພັນ','ຮ້ອຍ','ໝື່ນ','ແສນ'],a:0},
 {t:'li',q:'Listen — which number?',say:'ໝື່ນ',o:['ໝື່ນ','ພັນ','ແສນ','ຮ້ອຍ'],a:0},
@@ -1297,7 +1297,7 @@ const LO_Z5=[
 {t:'fill',q:'"how many people?" ຄົນ ___ ຄົນ',s:'ຄົນ___ຄົນ',o:['ຈັກ','ເທົ່າໃດ','ຫຍັງ','ໃສ'],a:0},
 {t:'match',q:'Match classifier and what it counts',pairs:[['ໂຕ','animals'],['ຄັນ','vehicles'],['ໜ່ວຍ','fruit'],['ຄົນ','people']]},
 {t:'mc',q:'The classifier comes ___ the number',o:['after','before','before the noun','instead of the noun'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຈັກ',o:['ຈັກ','ໂຕ','ຄົນ','ຄັນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຈັກ',o:['ຈັກ','ໂຕ','ຄົນ','ຄັນ'],a:0},{t:'mc',q:'Review — which means "not good"?',o:['ບໍ່ດີ','ຫ້າພັນ','ລ້ານ','ແສນ'],a:0}]},
 {id:'lo_count_5',title:'Checkpoint',step:'checkpoint',meta:'Classifiers mastered?',vocab:[],ex:[
 {t:'mc',q:'The counting order is…',o:['noun + number + classifier','number first','classifier first','free'],a:0},
 {t:'li',q:'Listen — which classifier?',say:'ໂຕ',o:['ໂຕ','ຄົນ','ຄັນ','ອັນ'],a:0},
@@ -1338,7 +1338,7 @@ const LO_Z5=[
 {t:'fill',q:'Complete: "half past" adds ___',s:'ໂມງ___',o:['ເຄິ່ງ','ນາທີ','ຈັກ','ຕອນ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໂມງ','hour'],['ນາທີ','minute'],['ເຄິ່ງ','half'],['ຕອນເຊົ້າ','morning']]},
 {t:'mc',q:'ຈັກ shows up both in "what time" and in…',o:['"how many" (counting)','negation','the past','a greeting'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເຄິ່ງ',o:['ເຄິ່ງ','ໂມງ','ນາທີ','ຈັກ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເຄິ່ງ',o:['ເຄິ່ງ','ໂມງ','ນາທີ','ຈັກ'],a:0},{t:'mc',q:'Review — which means "who"?',o:['ໃຜ','ໜ່ວຍ','ຈັກ','ຄັນ'],a:0}]},
 {id:'lo_time_5',title:'Checkpoint',step:'checkpoint',meta:'Time mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask "what time is it?"',o:['ຈັກໂມງ','ເທົ່າໃດ','ໃສ','ຫຍັງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ນາທີ',o:['ນາທີ','ໂມງ','ເຄິ່ງ','ຈັກ'],a:0},
@@ -1379,7 +1379,7 @@ const LO_Z5=[
 {t:'fill',q:'Agree to buy',s:'___ (I’ll take it)',o:['ເອົາ','ຂາຍ','ແພງ','ໃສ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ແພງໂພດ','too expensive'],['ຫຼຸດ','discount'],['ເອົາ','I’ll take it'],['ຊື້','buy']]},
 {t:'mc',q:'Bargaining in Laos is done…',o:['gently and with a smile','loudly','not at all','only in writing'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຫຼຸດ',o:['ຫຼຸດ','ຊື້','ຂາຍ','ເອົາ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຫຼຸດ',o:['ຫຼຸດ','ຊື້','ຂາຍ','ເອົາ'],a:0},{t:'mc',q:'Review — which means "when"?',o:['ເມື່ອໃດ','ນາທີ','ເຄິ່ງ','ຈັກໂມງ'],a:0}]},
 {id:'lo_shop_5',title:'Checkpoint',step:'checkpoint',meta:'Market talk mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "sell"?',o:['ຂາຍ','ຊື້','ຫຼຸດ','ເອົາ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຫຼຸດໄດ້ບໍ່',o:['ຫຼຸດໄດ້ບໍ່','ແພງໂພດ','ເອົາ','ຊື້'],a:0},
@@ -1420,7 +1420,7 @@ const LO_Z5=[
 {t:'fill',q:'The seller is out — "___" (all gone)',s:'___',o:['ໝົດ','ອີກ','ພໍ','ຫຼາຍ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ພໍ','enough'],['ອີກ','more'],['ທັງໝົດ','in total'],['ໜ້ອຍ','a little']]},
 {t:'mc',q:'ອີກ is used to ask for…',o:['more / again','less','the price','the time'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຫຼາຍ',o:['ຫຼາຍ','ໜ້ອຍ','ໝົດ','ອີກ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຫຼາຍ',o:['ຫຼາຍ','ໜ້ອຍ','ໝົດ','ອີກ'],a:0},{t:'mc',q:'Review — which means "why"?',o:['ເປັນຫຍັງ','ແພງໂພດ','ຫຼຸດໄດ້ບໍ່','ຫຼຸດ'],a:0}]},
 {id:'lo_more_5',title:'Checkpoint',step:'checkpoint',meta:'Quantities mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "a little / few"?',o:['ໜ້ອຍ','ຫຼາຍ','ໝົດ','ອີກ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ອີກ',o:['ອີກ','ໝົດ','ພໍ','ຫຼາຍ'],a:0},
@@ -1463,7 +1463,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "very small"',s:'ນ້ອຍ ___',o:['ຫຼາຍ','ບໍ່','ຢູ່','ໃສ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໄວ','fast'],['ຊ້າ','slow'],['ໃໝ່','new'],['ເກົ່າ','old']]},
 {t:'mc',q:'Lao adjectives need no ແມ່ນ because they…',o:['already mean "is …"','are nouns','are numbers','are questions'],a:0},
-{t:'li',q:'Listen — which word?',say:'ໄວ',o:['ໄວ','ຊ້າ','ໃຫຍ່','ນ້ອຍ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ໄວ',o:['ໄວ','ຊ້າ','ໃຫຍ່','ນ້ອຍ'],a:0},{t:'mc',q:'Review — which means "school"?',o:['ໂຮງຮຽນ','ທັງໝົດ','ພໍ','ອີກ'],a:0}]},
 {id:'lo_adj_5',title:'Checkpoint',step:'checkpoint',meta:'Adjectives mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "big"?',o:['ໃຫຍ່','ນ້ອຍ','ໃໝ່','ຊ້າ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຊ້າ',o:['ຊ້າ','ໄວ','ໃໝ່','ເກົ່າ'],a:0},
@@ -1504,7 +1504,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "what color?"',s:'ສີ ___',o:['ຫຍັງ','ໃສ','ດີ','ບໍ່'],a:0},
 {t:'match',q:'Match color and meaning',pairs:[['ສີເຫຼືອງ','yellow'],['ສີຂາວ','white'],['ສີຂຽວ','green'],['ສີແດງ','red']]},
 {t:'mc',q:'Every color begins with ສີ, which means…',o:['color','big','sky','good'],a:0},
-{t:'li',q:'Listen — which color?',say:'ສີດຳ',o:['ສີດຳ','ສີຂາວ','ສີຟ້າ','ສີແດງ'],a:0}]},
+{t:'li',q:'Listen — which color?',say:'ສີດຳ',o:['ສີດຳ','ສີຂາວ','ສີຟ້າ','ສີແດງ'],a:0},{t:'mc',q:'Review — which means "restaurant"?',o:['ຮ້ານອາຫານ','ຊ້າ','ໄວ','ເກົ່າ'],a:0}]},
 {id:'lo_colors_5',title:'Checkpoint',step:'checkpoint',meta:'Colors mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "red"?',o:['ສີແດງ','ສີຟ້າ','ສີດຳ','ສີຂາວ'],a:0},
 {t:'li',q:'Listen — which color?',say:'ສີຂຽວ',o:['ສີຂຽວ','ສີຟ້າ','ສີເຫຼືອງ','ສີດຳ'],a:0},
@@ -1545,7 +1545,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "the same"',s:'___',o:['ຄືກັນ','ກວ່າ','ທີ່ສຸດ','ຫຼາຍ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ກວ່າ','more than'],['ທີ່ສຸດ','the most'],['ຄືກັນ','the same'],['ດີກວ່າ','better']]},
 {t:'mc',q:'To say A beats B, use…',o:['A adj ກວ່າ B','A ທີ່ສຸດ B','A ຄືກັນ B','A ບໍ່ B'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ຄືກັນ',o:['ຄືກັນ','ກວ່າ','ທີ່ສຸດ','ດີກວ່າ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ຄືກັນ',o:['ຄືກັນ','ກວ່າ','ທີ່ສຸດ','ດີກວ່າ'],a:0},{t:'mc',q:'Review — which means "bank"?',o:['ທະນາຄານ','ສີດຳ','ສີເຫຼືອງ','ສີຂຽວ'],a:0}]},
 {id:'lo_compare_5',title:'Checkpoint',step:'checkpoint',meta:'Comparisons mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "-er / more than"?',o:['ກວ່າ','ທີ່ສຸດ','ຄືກັນ','ຫຼາຍ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ດີທີ່ສຸດ',o:['ດີທີ່ສຸດ','ດີກວ່າ','ໃຫຍ່ກວ່າ','ຄືກັນ'],a:0},
@@ -1586,7 +1586,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "very happy"',s:'ດີໃຈ ___',o:['ຫຼາຍ','ບໍ່','ຢູ່','ໃສ'],a:0},
 {t:'match',q:'Match feeling and meaning',pairs:[['ຢ້ານ','afraid'],['ຫິວນ້ຳ','thirsty'],['ເສຍໃຈ','sad'],['ເມື່ອຍ','tired']]},
 {t:'mc',q:'The ໃຈ in ດີໃຈ / ເສຍໃຈ means…',o:['heart','food','home','day'],a:0},
-{t:'li',q:'Listen — which feeling?',say:'ເມື່ອຍ',o:['ເມື່ອຍ','ຫິວ','ຢ້ານ','ດີໃຈ'],a:0}]},
+{t:'li',q:'Listen — which feeling?',say:'ເມື່ອຍ',o:['ເມື່ອຍ','ຫິວ','ຢ້ານ','ດີໃຈ'],a:0},{t:'mc',q:'Review — which means "near"?',o:['ໃກ້','ດີທີ່ສຸດ','ດີກວ່າ','ໃຫຍ່ກວ່າ'],a:0}]},
 {id:'lo_feel_5',title:'Checkpoint',step:'checkpoint',meta:'Feelings mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "happy"?',o:['ດີໃຈ','ເສຍໃຈ','ເມື່ອຍ','ຫິວ'],a:0},
 {t:'li',q:'Listen — which feeling?',say:'ຫິວ',o:['ຫິວ','ເມື່ອຍ','ຢ້ານ','ດີໃຈ'],a:0},
@@ -1627,7 +1627,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "the dry season"',s:'ລະດູ ___',o:['ແລ້ງ','ຝົນ','ຮ້ອນ','ໜາວ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ອາກາດ','weather'],['ຝົນຕົກ','it rains'],['ແດດອອກ','sunny'],['ໜາວ','cold']]},
 {t:'mc',q:'The two Lao seasons are rainy and…',o:['dry (ລະດູແລ້ງ)','snowy','windy','autumn'],a:0},
-{t:'li',q:'Listen — which word?',say:'ໜາວ',o:['ໜາວ','ຮ້ອນ','ອາກາດ','ຝົນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ໜາວ',o:['ໜາວ','ຮ້ອນ','ອາກາດ','ຝົນ'],a:0},{t:'mc',q:'Review — which means "pork"?',o:['ໝູ','ຢ້ານ','ຫິວນ້ຳ','ຫິວ'],a:0}]},
 {id:'lo_weather_5',title:'Checkpoint',step:'checkpoint',meta:'Weather mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "hot"?',o:['ຮ້ອນ','ໜາວ','ຝົນຕົກ','ອາກາດ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຝົນຕົກ',o:['ຝົນຕົກ','ແດດອອກ','ຮ້ອນ','ໜາວ'],a:0},
@@ -1668,7 +1668,7 @@ const LO_Z6=[
 {t:'fill',q:'Complete: "I am unwell"',s:'ຂ້ອຍ ___',o:['ບໍ່ສະບາຍ','ດີໃຈ','ໃຫຍ່','ໄວ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ເຈັບຫົວ','headache'],['ເຈັບທ້ອງ','stomach ache'],['ບໍ່ສະບາຍ','unwell'],['ຕາ','eye']]},
 {t:'mc',q:'You would go to ໂຮງໝໍ if you are…',o:['ບໍ່ສະບາຍ','ດີໃຈ','ຫິວ','ໄວ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ມື',o:['ມື','ຕາ','ຫົວ','ທ້ອງ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ມື',o:['ມື','ຕາ','ຫົວ','ທ້ອງ'],a:0},{t:'mc',q:'Review — which means "vegetables"?',o:['ຜັກ','ລະດູຝົນ','ແດດອອກ','ຝົນຕົກ'],a:0}]},
 {id:'lo_body_5',title:'Checkpoint',step:'checkpoint',meta:'Body & health mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "head"?',o:['ຫົວ','ຕາ','ມື','ທ້ອງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ເຈັບຫົວ',o:['ເຈັບຫົວ','ເຈັບທ້ອງ','ບໍ່ສະບາຍ','ຫົວ'],a:0},
@@ -1711,7 +1711,7 @@ const LO_Z7=[
 {t:'fill',q:'Complete: "yesterday I went"',s:'___ ຂ້ອຍໄປ',o:['ເມື່ອວານ','ມື້ອື່ນ','ຈະ','ຍັງ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ແລ້ວ','already'],['ຍັງບໍ່','not yet'],['ເມື່ອວານ','yesterday'],['ໄປແລ້ວ','went already']]},
 {t:'mc',q:'ແລ້ວ and ຈະ are opposites — ແລ້ວ is past, ຈະ is…',o:['future','present','a question','negative'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຍັງ',o:['ຍັງ','ແລ້ວ','ຈະ','ບໍ່'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຍັງ',o:['ຍັງ','ແລ້ວ','ຈະ','ບໍ່'],a:0},{t:'mc',q:'Review — which means "delicious"?',o:['ແຊບ','ບໍ່ສະບາຍ','ເຈັບ','ມື'],a:0}]},
 {id:'lo_past_5',title:'Checkpoint',step:'checkpoint',meta:'Past mastered?',vocab:[],ex:[
 {t:'mc',q:'What marks "already / done"?',o:['ແລ້ວ','ຈະ','ບໍ່','ຫຍັງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ກິນແລ້ວ',o:['ກິນແລ້ວ','ໄປແລ້ວ','ຍັງບໍ່','ຍັງ'],a:0},
@@ -1754,7 +1754,7 @@ const LO_Z7=[
 {t:'fill',q:'Choose: past or future? "went already"',s:'ໄປ ___',o:['ແລ້ວ','ຈະ','ຍັງ','ຫຍັງ'],a:0},
 {t:'match',q:'Match marker and time',pairs:[['ແລ້ວ','past (already)'],['ຈະ','future (will)'],['ກຳລັງ','now (-ing)'],['ຍັງບໍ່','not yet']]},
 {t:'mc',q:'Past is at the end (ແລ້ວ); future is…',o:['before the verb (ຈະ)','also at the end','on the subject','dropped'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຈະ',o:['ຈະ','ແລ້ວ','ຍັງ','ບໍ່'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຈະ',o:['ຈະ','ແລ້ວ','ຍັງ','ບໍ່'],a:0},{t:'mc',q:'Review — which means "classifier: vehicles"?',o:['ຄັນ','ເມື່ອວານ','ຍັງບໍ່','ຍັງ'],a:0}]},
 {id:'lo_future_5',title:'Checkpoint',step:'checkpoint',meta:'Future mastered?',vocab:[],ex:[
 {t:'mc',q:'What marks the future?',o:['ຈະ','ແລ້ວ','ຍັງ','ບໍ່'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຈະບໍ່',o:['ຈະບໍ່','ຈະໄປ','ໄປແລ້ວ','ຍັງ'],a:0},
@@ -1961,7 +1961,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "board the boat"',s:'___ ເຮືອ',o:['ຂຶ້ນ','ຍ່າງ','ກິນ','ໄປ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ຂຶ້ນ','board'],['ຂີ່','ride'],['ຍ່າງ','walk'],['ລົດເມ','bus']]},
 {t:'mc',q:'A ເຮືອ travels on…',o:['water','a road','rails','the sky'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຍ່າງ',o:['ຍ່າງ','ຂຶ້ນ','ລົດ','ເຮືອ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຍ່າງ',o:['ຍ່າງ','ຂຶ້ນ','ລົດ','ເຮືອ'],a:0},{t:'mc',q:'Review — which means "small"?',o:['ນ້ອຍ','ຢ່າໄປ','ຕ້ອງໄປ','ຢ່າ'],a:0}]},
 {id:'lo_ride_5',title:'Checkpoint',step:'checkpoint',meta:'Transport mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "bus"?',o:['ລົດເມ','ລົດຈັກ','ເຮືອ','ລົດ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ເຮືອ',o:['ເຮືອ','ລົດ','ລົດເມ','ຍ່າງ'],a:0},
@@ -2002,7 +2002,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "stop here"',s:'ຢຸດ ___',o:['ຢູ່ນີ້','ຊື່','ຂວາ','ໄກ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ລ້ຽວ','turn'],['ຢຸດ','stop'],['ຊື່','straight'],['ຢູ່ນີ້','here']]},
 {t:'mc',q:'ຊື່ has two jobs — direction "straight" and…',o:['"name"','"buy"','"boat"','"turn"'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຢຸດ',o:['ຢຸດ','ລ້ຽວ','ຊື່','ຂວາ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຢຸດ',o:['ຢຸດ','ລ້ຽວ','ຊື່','ຂວາ'],a:0},{t:'mc',q:'Review — which means "old (things)"?',o:['ເກົ່າ','ຍ່າງ','ຂຶ້ນ','ເຮືອ'],a:0}]},
 {id:'lo_dir_5',title:'Checkpoint',step:'checkpoint',meta:'Directions mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "left"?',o:['ຊ້າຍ','ຂວາ','ຊື່','ຢຸດ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຂວາ',o:['ຂວາ','ຊ້າຍ','ຊື່','ລ້ຽວ'],a:0},
@@ -2043,7 +2043,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "a ticket to Luang Prabang"',s:'ປີ້ ___ ຫຼວງພະບາງ',o:['ໄປ','ອອກ','ຮອດ','ບໍ່'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ອອກ','depart'],['ຮອດ','arrive'],['ປີ້','ticket'],['ສະຖານີ','station']]},
 {t:'mc',q:'ອອກ and ຮອດ are opposites: leave and…',o:['arrive','buy','turn','stop'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຮອດ',o:['ຮອດ','ອອກ','ປີ້','ໄປ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຮອດ',o:['ຮອດ','ອອກ','ປີ້','ໄປ'],a:0},{t:'mc',q:'Review — which means "happy / glad"?',o:['ດີໃຈ','ຢູ່ນີ້','ຢຸດ','ລ້ຽວ'],a:0}]},
 {id:'lo_ticket_5',title:'Checkpoint',step:'checkpoint',meta:'Tickets mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "ticket"?',o:['ປີ້','ສະຖານີ','ອອກ','ຮອດ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ອອກ',o:['ອອກ','ຮອດ','ປີ້','ສະຖານີ'],a:0},
@@ -2084,7 +2084,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "two nights"',s:'ສອງ ___',o:['ຄືນ','ຫ້ອງ','ກະແຈ','ໂມງ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໂຮງແຮມ','hotel'],['ວ່າງ','available'],['ຄືນ','night'],['ຈອງ','book']]},
 {t:'mc',q:'ຄືນ here means…',o:['night','key','room','morning'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຄືນ',o:['ຄືນ','ກະແຈ','ຫ້ອງ','ວ່າງ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຄືນ',o:['ຄືນ','ກະແຈ','ຫ້ອງ','ວ່າງ'],a:0},{t:'mc',q:'Review — which means "hot"?',o:['ຮ້ອນ','ຮອດ','ອອກ','ສະຖານີ'],a:0}]},
 {id:'lo_hotel_5',title:'Checkpoint',step:'checkpoint',meta:'Hotel mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "room"?',o:['ຫ້ອງ','ໂຮງແຮມ','ກະແຈ','ຄືນ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ກະແຈ',o:['ກະແຈ','ຄືນ','ຫ້ອງ','ຈອງ'],a:0},
@@ -2125,7 +2125,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "the 1st"',s:'ວັນທີ ___',o:['ໜຶ່ງ','ນີ້','ໜ້າ','ເດືອນ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ປີນີ້','this year'],['ປີໜ້າ','next year'],['ປີກາຍ','last year'],['ວັນທີ','date']]},
 {t:'mc',q:'ເດືອນ + a number gives you…',o:['the month name','the day','the year','the time'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເດືອນ',o:['ເດືອນ','ປີ','ວັນທີ','ຄືນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເດືອນ',o:['ເດືອນ','ປີ','ວັນທີ','ຄືນ'],a:0},{t:'mc',q:'Review — which means "cold"?',o:['ໜາວ','ຈອງ','ຄືນ','ກະແຈ'],a:0}]},
 {id:'lo_month_5',title:'Checkpoint',step:'checkpoint',meta:'Dates mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "month"?',o:['ເດືອນ','ປີ','ວັນທີ','ຄືນ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ປີນີ້',o:['ປີນີ້','ປີໜ້າ','ວັນທີ','ເດືອນ'],a:0},
@@ -2166,7 +2166,7 @@ const LO_Z8=[
 {t:'fill',q:'Complete: "what is your number?"',s:'ເບີ ___ ຫຍັງ',o:['ເຈົ້າ','ໂທ','ສົ່ງ','ໄວຟາຍ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໂທລະສັບ','telephone'],['ສົ່ງ','send'],['ຂໍ້ຄວາມ','message'],['ໄວຟາຍ','wifi']]},
 {t:'mc',q:'To ask a hotel for internet, you want…',o:['ໄວຟາຍ','ເບີ','ຂໍ້ຄວາມ','ໂທ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເບີ',o:['ເບີ','ໂທ','ສົ່ງ','ໄວຟາຍ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເບີ',o:['ເບີ','ໂທ','ສົ່ງ','ໄວຟາຍ'],a:0},{t:'mc',q:'Review — which means "head"?',o:['ຫົວ','ປີໜ້າ','ປີນີ້','ເດືອນໜຶ່ງ'],a:0}]},
 {id:'lo_phone_5',title:'Checkpoint',step:'checkpoint',meta:'Phone mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "message"?',o:['ຂໍ້ຄວາມ','ເບີ','ໂທ','ສົ່ງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ໂທ',o:['ໂທ','ເບີ','ສົ່ງ','ໄວຟາຍ'],a:0},
@@ -2209,7 +2209,7 @@ const LO_Z9=[
 {t:'fill',q:'Complete: "cheap but good"',s:'ຖືກ ___ ດີ',o:['ແຕ່','ແລະ','ຫຼື','ຖ້າ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ແລະ','and'],['ຫຼື','or'],['ແລ້ວກໍ','and then'],['ຖ້າ','if']]},
 {t:'mc',q:'ແຕ່ signals a…',o:['contrast','reason','choice','condition'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເພາະ',o:['ເພາະ','ແຕ່','ຖ້າ','ຫຼື'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເພາະ',o:['ເພາະ','ແຕ່','ຖ້າ','ຫຼື'],a:0},{t:'mc',q:'Review — which means "ate already"?',o:['ກິນແລ້ວ','ໄວຟາຍ','ສົ່ງ','ຂໍ້ຄວາມ'],a:0}]},
 {id:'lo_conn_5',title:'Checkpoint',step:'checkpoint',meta:'Connectors mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "but"?',o:['ແຕ່','ເພາະ','ຖ້າ','ຫຼື'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຖ້າ',o:['ຖ້າ','ແຕ່','ຫຼື','ແລະ'],a:0},
@@ -2251,7 +2251,7 @@ const LO_Z9=[
 {t:'fill',q:'Complete: "I think that…"',s:'ຂ້ອຍ ___ …',o:['ຄິດວ່າ','ຮູ້ຈັກ','ເຂົ້າໃຈ','ໄປ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ຄິດວ່າ','think that'],['ບໍ່ເຂົ້າໃຈ','don’t understand'],['ຮູ້','know'],['ຮູ້ຈັກ','be familiar']]},
 {t:'mc',q:'ວ່າ ("that") lets you attach…',o:['a whole thought','a number','a color','a place'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຮູ້',o:['ຮູ້','ຄິດ','ເຂົ້າໃຈ','ໄປ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຮູ້',o:['ຮູ້','ຄິດ','ເຂົ້າໃຈ','ໄປ'],a:0},{t:'mc',q:'Review — which means "went already"?',o:['ໄປແລ້ວ','ແລ້ວກໍ','ຫຼື','ແລະ'],a:0}]},
 {id:'lo_think_5',title:'Checkpoint',step:'checkpoint',meta:'Think-words mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "think"?',o:['ຄິດ','ຮູ້','ເຂົ້າໃຈ','ໄປ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ເຂົ້າໃຈ',o:['ເຂົ້າໃຈ','ບໍ່ເຂົ້າໃຈ','ຄິດ','ຮູ້'],a:0},
@@ -2293,7 +2293,7 @@ const LO_Z9=[
 {t:'fill',q:'Complete: "I work"',s:'ຂ້ອຍ ___',o:['ເຮັດວຽກ','ຄູ','ໄປ','ດີ'],a:0},
 {t:'match',q:'Match job and meaning',pairs:[['ຄູ','teacher'],['ໝໍ','doctor'],['ນັກຮຽນ','student'],['ຊາວນາ','farmer']]},
 {t:'mc',q:'ວຽກ means…',o:['work / job','teacher','money','office'],a:0},
-{t:'li',q:'Listen — which word?',say:'ໝໍ',o:['ໝໍ','ຄູ','ຊາວນາ','ນັກຮຽນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ໝໍ',o:['ໝໍ','ຄູ','ຊາວນາ','ນັກຮຽນ'],a:0},{t:'mc',q:'Review — which means "will go"?',o:['ຈະໄປ','ບໍ່ເຂົ້າໃຈ','ເຂົ້າໃຈ','ຮູ້'],a:0}]},
 {id:'lo_job_5',title:'Checkpoint',step:'checkpoint',meta:'Jobs mastered?',vocab:[],ex:[
 {t:'mc',q:'Which word links you to a role ("to be a")?',o:['ເປັນ','ແມ່ນ','ຢູ່','ບໍ່'],a:0},
 {t:'li',q:'Listen — which word?',say:'ນັກຮຽນ',o:['ນັກຮຽນ','ຄູ','ໝໍ','ຊາວນາ'],a:0},
@@ -2335,7 +2335,7 @@ const LO_Z9=[
 {t:'fill',q:'Complete: "free time"',s:'ຍາມ ___',o:['ຫວ່າງ','ວຽກ','ໜັງ','ເພງ'],a:0},
 {t:'match',q:'Match activity and meaning',pairs:[['ຟັງເພງ','music'],['ເບິ່ງໜັງ','film'],['ຫຼິ້ນ','play'],['ມ່ວນ','fun']]},
 {t:'mc',q:'ມ່ວນ is used to say something was…',o:['fun / enjoyable','expensive','far','cold'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຫຼິ້ນ',o:['ຫຼິ້ນ','ອ່ານໜັງສື','ຟັງເພງ','ເບິ່ງໜັງ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຫຼິ້ນ',o:['ຫຼິ້ນ','ອ່ານໜັງສື','ຟັງເພງ','ເບິ່ງໜັງ'],a:0},{t:'mc',q:'Review — which means "will not"?',o:['ຈະບໍ່','ນັກຮຽນ','ຊາວນາ','ໝໍ'],a:0}]},
 {id:'lo_hobby_5',title:'Checkpoint',step:'checkpoint',meta:'Free time mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "free time"?',o:['ຍາມຫວ່າງ','ວຽກ','ມ່ວນ','ໜັງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຟັງເພງ',o:['ຟັງເພງ','ອ່ານໜັງສື','ເບິ່ງໜັງ','ຫຼິ້ນ'],a:0},
@@ -2377,7 +2377,7 @@ const LO_Z9=[
 {t:'fill',q:'Complete: "cook room" (kitchen)',s:'ຫ້ອງ ___',o:['ຄົວ','ນອນ','ນ້ຳ','ໃຫຍ່'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ຫ້ອງນ້ຳ','bathroom'],['ແຕ່ງກິນ','cook'],['ຊັກເຄື່ອງ','wash clothes'],['ອະນາໄມ','clean']]},
 {t:'mc',q:'ຫ້ອງນອນ pairs "room" with the verb…',o:['sleep (ນອນ)','cook','wash','read'],a:0},
-{t:'li',q:'Listen — which room?',say:'ຫ້ອງນອນ',o:['ຫ້ອງນອນ','ຫ້ອງຄົວ','ຫ້ອງນ້ຳ','ບ້ານ'],a:0}]},
+{t:'li',q:'Listen — which room?',say:'ຫ້ອງນອນ',o:['ຫ້ອງນອນ','ຫ້ອງຄົວ','ຫ້ອງນ້ຳ','ບ້ານ'],a:0},{t:'mc',q:'Review — which means "have you ever…?"?',o:['ເຄີຍ…ບໍ່','ຫຼິ້ນ','ເບິ່ງໜັງ','ຟັງເພງ'],a:0}]},
 {id:'lo_home_5',title:'Checkpoint',step:'checkpoint',meta:'Home mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "kitchen"?',o:['ຫ້ອງຄົວ','ຫ້ອງນອນ','ຫ້ອງນ້ຳ','ບ້ານ'],a:0},
 {t:'li',q:'Listen — which chore?',say:'ແຕ່ງກິນ',o:['ແຕ່ງກິນ','ຊັກເຄື່ອງ','ອະນາໄມ','ນອນ'],a:0},
@@ -2419,7 +2419,7 @@ const LO_Z9=[
 {t:'fill',q:'Warn "be careful!"',s:'___',o:['ລະວັງ','ຊ່ວຍ','ຕຳຫຼວດ','ໄປ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ຊ່ວຍແດ່','please help'],['ຊ່ວຍດ້ວຍ','help! (urgent)'],['ຕຳຫຼວດ','police'],['ຫຼົງທາງ','lost']]},
 {t:'mc',q:'If unwell, you would head to a ___ (from Zone 4)',o:['ໂຮງໝໍ','ຕະຫຼາດ','ໂຮງຮຽນ','ທະນາຄານ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ລະວັງ',o:['ລະວັງ','ຊ່ວຍ','ຕຳຫຼວດ','ຫຼົງທາງ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ລະວັງ',o:['ລະວັງ','ຊ່ວຍ','ຕຳຫຼວດ','ຫຼົງທາງ'],a:0},{t:'mc',q:'Review — which means "can go"?',o:['ໄປໄດ້','ອະນາໄມ','ຊັກເຄື່ອງ','ແຕ່ງກິນ'],a:0}]},
 {id:'lo_help_5',title:'Checkpoint',step:'checkpoint',meta:'Help & safety mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "help"?',o:['ຊ່ວຍ','ຕຳຫຼວດ','ລະວັງ','ໄປ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຕຳຫຼວດ',o:['ຕຳຫຼວດ','ຊ່ວຍ','ລະວັງ','ໝໍ'],a:0},
@@ -2463,7 +2463,7 @@ const LO_Z10=[
 {t:'fill',q:'Complete: "I like Laos a lot"',s:'ຂ້ອຍມັກລາວ ___',o:['ຫຼາຍ','ບໍ່','ໃສ','ຈະ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ຮັກ','love'],['ມັກຫຼາຍ','like a lot'],['ບໍ່ຄ່ອຍມັກ','not really keen'],['ບໍ່ມັກ','don’t like']]},
 {t:'mc',q:'ບໍ່ຄ່ອຍ is a gentle way to say…',o:['not very / not really','very much','the best','never'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຮັກ',o:['ຮັກ','ມັກ','ບໍ່','ຫຼາຍ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຮັກ',o:['ຮັກ','ມັກ','ບໍ່','ຫຼາຍ'],a:0},{t:'mc',q:'Review — which means "do not go"?',o:['ຢ່າໄປ','ລະວັງ','ຫຼົງທາງ','ຕຳຫຼວດ'],a:0}]},
 {id:'lo_like2_5',title:'Checkpoint',step:'checkpoint',meta:'Degrees mastered?',vocab:[],ex:[
 {t:'mc',q:'"like a lot" =',o:['ມັກຫຼາຍ','ບໍ່ມັກ','ມັກ','ຮັກ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ບໍ່ຄ່ອຍມັກ',o:['ບໍ່ຄ່ອຍມັກ','ບໍ່ມັກ','ມັກຫຼາຍ','ຮັກ'],a:0},
@@ -2549,7 +2549,7 @@ const LO_Z10=[
 {t:'fill',q:'Complete: "speak slowly"',s:'ເວົ້າ ___',o:['ຊ້າໆ','ຄືນ','ດີ','ໄປ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ເວົ້າຄືນ','say again'],['ວ່າແນວໃດ','how do you say?'],['ບໍ່ເຂົ້າໃຈ','don’t understand'],['ພາສາລາວ','Lao language']]},
 {t:'mc',q:'Saying ຮູ້ໜ້ອຍໜຶ່ງ shows you are…',o:['a humble beginner','fluent','not trying','a teacher'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ເວົ້າຄືນ',o:['ເວົ້າຄືນ','ເວົ້າຊ້າໆ','ບໍ່ເຂົ້າໃຈ','ພາສາລາວ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ເວົ້າຄືນ',o:['ເວົ້າຄືນ','ເວົ້າຊ້າໆ','ບໍ່ເຂົ້າໃຈ','ພາສາລາວ'],a:0},{t:'mc',q:'Review — which means "arrive"?',o:['ຮອດ','ຈັກຄົນ','ມີລູກ','ໂສດ'],a:0}]},
 {id:'lo_learner_5',title:'Checkpoint',step:'checkpoint',meta:'Lifelines mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask someone to slow down:',o:['ເວົ້າຊ້າໆ','ເວົ້າຄືນ','ບໍ່ເຂົ້າໃຈ','ໄປໃສ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ວ່າແນວໃດ',o:['ວ່າແນວໃດ','ເວົ້າຄືນ','ບໍ່ເຂົ້າໃຈ','ພາສາລາວ'],a:0},
@@ -2591,7 +2591,7 @@ const LO_Z10=[
 {t:'fill',q:'Complete: "on the table"',s:'ເທິງ ___',o:['ໂຕະ','ຕຽງ','ໝາ','ປະຕູ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ໂຕະ','table'],['ຕັ່ງ','chair'],['ປະຕູ','door'],['ແມວ','cat']]},
 {t:'mc',q:'ໂຕ works as the classifier for…',o:['animals (dog, cat)','people','vehicles','fruit'],a:0},
-{t:'li',q:'Listen — which word?',say:'ແມວ',o:['ແມວ','ໝາ','ຕຽງ','ໂຕະ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ແມວ',o:['ແມວ','ໝາ','ຕຽງ','ໂຕະ'],a:0},{t:'mc',q:'Review — which means "hotel"?',o:['ໂຮງແຮມ','ຮູ້ໜ້ອຍໜຶ່ງ','ວ່າແນວໃດ','ພາສາລາວ'],a:0}]},
 {id:'lo_house2_5',title:'Checkpoint',step:'checkpoint',meta:'Home things mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "bed"?',o:['ຕຽງ','ໂຕະ','ຕັ່ງ','ປະຕູ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ໝາ',o:['ໝາ','ແມວ','ຕຽງ','ໂຕະ'],a:0},
@@ -2633,7 +2633,7 @@ const LO_Z10=[
 {t:'fill',q:'Ask "are you free?"',s:'ເຈົ້າ ___ ບໍ່',o:['ວ່າງ','ຫຍຸ້ງ','ນັດ','ໄປ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ອາທິດໜ້າ','next week'],['ນຳກັນ','together'],['ວ່າງ','free'],['ນັດ','arrange to meet']]},
 {t:'mc',q:'To suggest doing something jointly, add…',o:['ນຳກັນ','ບໍ່','ຈະ','ໃສ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ຫຍຸ້ງ',o:['ຫຍຸ້ງ','ວ່າງ','ນັດ','ແຜນ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ຫຍຸ້ງ',o:['ຫຍຸ້ງ','ວ່າງ','ນັດ','ແຜນ'],a:0},{t:'mc',q:'Review — which means "key"?',o:['ກະແຈ','ແມວ','ໝາ','ປະຕູ'],a:0}]},
 {id:'lo_plans_5',title:'Checkpoint',step:'checkpoint',meta:'Plans mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "plan"?',o:['ແຜນ','ນັດ','ວ່າງ','ຫຍຸ້ງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ວ່າງ',o:['ວ່າງ','ຫຍຸ້ງ','ນັດ','ແຜນ'],a:0},
@@ -2675,7 +2675,7 @@ const LO_Z10=[
 {t:'fill',q:'Complete: "then I ate"',s:'___ ຂ້ອຍກິນເຂົ້າ',o:['ຕໍ່ມາ','ທຳອິດ','ໃສ','ບໍ່'],a:0},
 {t:'match',q:'Match connector and meaning',pairs:[['ທຳອິດ','first'],['ຕໍ່ມາ','then'],['ສຸດທ້າຍ','finally'],['ມື້ໜຶ່ງ','one day']]},
 {t:'mc',q:'You now have the tools to tell a story in…',o:['order, past, present & future','only the present','only questions','only numbers'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ຮັກລາວ',o:['ຮັກລາວ','ທຳອິດ','ສຸດທ້າຍ','ຕໍ່ມາ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ຮັກລາວ',o:['ຮັກລາວ','ທຳອິດ','ສຸດທ້າຍ','ຕໍ່ມາ'],a:0},{t:'mc',q:'Review — which means "reserve / book"?',o:['ຈອງ','ນຳກັນ','ຫຍຸ້ງ','ນັດ'],a:0}]},
 {id:'lo_story_5',title:'Zone 10 checkpoint',step:'checkpoint',meta:'You can tell your story!',vocab:[],ex:[
 {t:'mc',q:'Which means "first / at first"?',o:['ທຳອິດ','ຕໍ່ມາ','ສຸດທ້າຍ','ມື້ໜຶ່ງ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ຫຼັງຈາກນັ້ນ',o:['ຫຼັງຈາກນັ້ນ','ທຳອິດ','ສຸດທ້າຍ','ຮັກລາວ'],a:0},
@@ -2719,7 +2719,7 @@ const LO_Z11=[
 {t:'fill',q:'Complete: "I go to the market every week"',s:'ຂ້ອຍໄປຕະຫຼາດ ___',o:['ທຸກອາທິດ','ທຸກ','ຄັ້ງ','ບໍ່'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ທຸກອາທິດ','every week'],['ບໍ່ຄ່ອຍ','rarely'],['ບໍ່ເຄີຍ','never'],['ເລື້ອຍໆ','often']]},
 {t:'mc',q:'Rank most → least frequent:',o:['ຕະຫຼອດ, ບາງຄັ້ງ, ບໍ່ເຄີຍ','ບໍ່ເຄີຍ, ຕະຫຼອດ, ບາງຄັ້ງ','ບາງຄັ້ງ, ບໍ່ເຄີຍ, ຕະຫຼອດ','ບໍ່ຄ່ອຍ, ບໍ່ເຄີຍ, ຕະຫຼອດ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ບາງຄັ້ງ',o:['ບາງຄັ້ງ','ຕະຫຼອດ','ທຸກມື້','ເລື້ອຍໆ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ບາງຄັ້ງ',o:['ບາງຄັ້ງ','ຕະຫຼອດ','ທຸກມື້','ເລື້ອຍໆ'],a:0},{t:'mc',q:'Review — which means "month"?',o:['ເດືອນ','ຮັກລາວ','ມື້ໜຶ່ງ','ສຸດທ້າຍ'],a:0},{t:'mc',q:'Review — which means "because"?',o:['ເພາະ','ຮັກລາວ','ມື້ໜຶ່ງ','ສຸດທ້າຍ'],a:0},{t:'mc',q:'Review — which means "police"?',o:['ຕຳຫຼວດ','ຮັກລາວ','ມື້ໜຶ່ງ','ສຸດທ້າຍ'],a:0}]},
 {id:'lo_often_5',title:'Checkpoint',step:'checkpoint',meta:'Frequency mastered?',vocab:[],ex:[
 {t:'mc',q:'ທຸກ + time word means…',o:['every…','some…','never…','once…'],a:0},
 {t:'li',q:'Listen — which word?',say:'ເລື້ອຍໆ',o:['ເລື້ອຍໆ','ບາງຄັ້ງ','ຕະຫຼອດ','ທຸກມື້'],a:0},
@@ -2729,7 +2729,7 @@ const LO_Z11=[
 {t:'mc',q:'Which means "rarely"?',o:['ບໍ່ຄ່ອຍ','ບໍ່ເຄີຍ','ບາງຄັ້ງ','ຕະຫຼອດ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ທຸກມື້',o:['ທຸກມື້','ທຸກອາທິດ','ບາງຄັ້ງ','ຕະຫຼອດ'],a:0},
 {t:'mc',q:'Review — which means "the best"?',o:['ດີທີ່ສຸດ','ທຳອິດ','ສິບ','ກວ່າ'],a:0},
-{t:'mc',q:'Review — which means "no need"?',o:['ບໍ່ຕ້ອງ','ຍິນດີທີ່ໄດ້ຮູ້ຈັກ','ມັກຫຼາຍ','ຫ້າ'],a:0}]},
+{t:'mc',q:'Review — which means "no need"?',o:['ບໍ່ຕ້ອງ','ຍິນດີທີ່ໄດ້ຮູ້ຈັກ','ມັກຫຼາຍ','ຫ້າ'],a:0},{t:'mc',q:'Review — which means "read a book"?',o:['ອ່ານໜັງສື','ຮັກລາວ','ມື້ໜຶ່ງ','ສຸດທ້າຍ'],a:0}]},
 
 {id:'lo_clothes',title:'Clothes & the sinh',step:'learn',meta:'What you wear',vocab:[['ເສື້ອ','seua','shirt / top'],['ໂສ້ງ','song','trousers'],['ສິ້ນ','sin','sinh (Lao skirt)'],['ເກີບ','keup','shoes'],['ໝວກ','muak','hat'],['ນຸ່ງ','nung','to wear']],ex:[
 {t:'note',tag:'Dress the part',q:'ເສື້ອ · ໂສ້ງ · ສິ້ນ',body:'<p><span class="deva">ເສື້ອ</span> <b>seua</b> = shirt/top, <span class="deva">ໂສ້ງ</span> <b>song</b> = trousers. The <span class="deva">ສິ້ນ</span> <b>sin</b> is the traditional Lao tube skirt — woven, often silk, worn everywhere from school to weddings. The verb is <span class="deva">ນຸ່ງ</span> <b>nung</b> = to wear.</p>',eg:[['ເສື້ອ','seua','shirt'],['ສິ້ນ','sin','Lao skirt'],['ນຸ່ງ','nung','to wear']]},
@@ -2762,7 +2762,7 @@ const LO_Z11=[
 {t:'match',q:'Match word and meaning',pairs:[['ໝວກ','hat'],['ເກີບ','shoes'],['ນຸ່ງ','to wear'],['ສິ້ນ','sinh']]},
 {t:'mc',q:'Before entering a home you take off your…',o:['ເກີບ','ເສື້ອ','ໝວກ','ສິ້ນ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ເກີບ',o:['ເກີບ','ໝວກ','ໂສ້ງ','ເສື້ອ'],a:0},
-{t:'match',q:'Review — match the colour',pairs:[['ສີແດງ','red'],['ສີຟ້າ','blue'],['ສີຂຽວ','green'],['ສີດຳ','black']]}]},
+{t:'match',q:'Review — match the colour',pairs:[['ສີແດງ','red'],['ສີຟ້າ','blue'],['ສີຂຽວ','green'],['ສີດຳ','black']]},{t:'mc',q:'Review — which means "if"?',o:['ຖ້າ','ບໍ່ຄ່ອຍ','ຕະຫຼອດ','ເລື້ອຍໆ'],a:0},{t:'mc',q:'Review — which means "lost (the way)"?',o:['ຫຼົງທາງ','ບໍ່ຄ່ອຍ','ຕະຫຼອດ','ເລື້ອຍໆ'],a:0}]},
 {id:'lo_clothes_5',title:'Checkpoint',step:'checkpoint',meta:'Clothes mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "shirt"?',o:['ເສື້ອ','ໂສ້ງ','ເກີບ','ໝວກ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ສິ້ນ',o:['ສິ້ນ','ເສື້ອ','ໂສ້ງ','ໝວກ'],a:0},
@@ -2772,7 +2772,7 @@ const LO_Z11=[
 {t:'mc',q:'The Lao custom with shoes indoors:',o:['off at the door','always on','only at night','no rule'],a:0},
 {t:'li',q:'Listen — which word?',say:'ໝວກ',o:['ໝວກ','ເກີບ','ເສື້ອ','ໂສ້ງ'],a:0},
 {t:'mc',q:'Review — which means "sad"?',o:['ເສຍໃຈ','ຄັ້ງ','ຊາວນາ','ແລະ'],a:0},
-{t:'mc',q:'Review — which means "should"?',o:['ຄວນ','ກຳລັງໄປ','ເລື້ອຍໆ','ບໍ່ມັກ'],a:0}]},
+{t:'mc',q:'Review — which means "should"?',o:['ຄວນ','ກຳລັງໄປ','ເລື້ອຍໆ','ບໍ່ມັກ'],a:0},{t:'mc',q:'Review — which means "listen to music"?',o:['ຟັງເພງ','ບໍ່ຄ່ອຍ','ຕະຫຼອດ','ເລື້ອຍໆ'],a:0}]},
 
 {id:'lo_animals',title:'Animals',step:'learn',meta:'Land of a million elephants',vocab:[['ຊ້າງ','saang','elephant'],['ຄວາຍ','khuaai','water buffalo'],['ງົວ','ngua','cow'],['ນົກ','nok','bird'],['ລີງ','ling','monkey'],['ປາ','paa','fish']],ex:[
 {t:'note',tag:'ລ້ານຊ້າງ',q:'ຊ້າງ — the elephant',body:'<p><span class="deva">ຊ້າງ</span> <b>saang</b> = elephant. The old Lao kingdom was <span class="deva">ລ້ານຊ້າງ</span> <b>Laan Saang</b> — "a million elephants" (you learned ລ້ານ = million!). The elephant is still the national symbol.</p>',eg:[['ຊ້າງ','saang','elephant'],['ລ້ານຊ້າງ','laan saang','a million elephants']]},
@@ -2804,7 +2804,7 @@ const LO_Z11=[
 {t:'fill',q:'Complete: "the old kingdom of a million elephants"',s:'ລ້ານ___',o:['ຊ້າງ','ຄວາຍ','ນົກ','ລີງ'],a:0},
 {t:'match',q:'Match animal and meaning',pairs:[['ລີງ','monkey'],['ນົກ','bird'],['ປາ','fish'],['ຄວາຍ','buffalo']]},
 {t:'mc',q:'Which animal is the Bhasaly Lao mascot?',o:['the baby buffalo','the monkey','the bird','the cow'],a:0},
-{t:'li',q:'Listen — which animal?',say:'ຄວາຍ',o:['ຄວາຍ','ງົວ','ຊ້າງ','ນົກ'],a:0}]},
+{t:'li',q:'Listen — which animal?',say:'ຄວາຍ',o:['ຄວາຍ','ງົວ','ຊ້າງ','ນົກ'],a:0},{t:'mc',q:'Review — which means "date"?',o:['ວັນທີ','ນຸ່ງ','ໝວກ','ເກີບ'],a:0},{t:'mc',q:'Review — which means "and"?',o:['ແລະ','ນຸ່ງ','ໝວກ','ເກີບ'],a:0},{t:'mc',q:'Review — which means "be careful"?',o:['ລະວັງ','ນຸ່ງ','ໝວກ','ເກີບ'],a:0}]},
 {id:'lo_animals_5',title:'Checkpoint',step:'checkpoint',meta:'Animals mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "elephant"?',o:['ຊ້າງ','ຄວາຍ','ງົວ','ລີງ'],a:0},
 {t:'li',q:'Listen — which animal?',say:'ນົກ',o:['ນົກ','ລີງ','ງົວ','ຄວາຍ'],a:0},
@@ -2814,7 +2814,7 @@ const LO_Z11=[
 {t:'mc',q:'ລ້ານຊ້າງ combines ຊ້າງ with which number?',o:['ລ້ານ (a million)','ຮ້ອຍ (a hundred)','ພັນ (a thousand)','ສິບ (ten)'],a:0},
 {t:'li',q:'Listen — which animal?',say:'ລີງ',o:['ລີງ','ນົກ','ຄວາຍ','ງົວ'],a:0},
 {t:'mc',q:'Review — which means "thirsty"?',o:['ຫິວນ້ຳ','ຝົນຕົກ','ແຕ່ງງານແລ້ວ','ເຂົ້າໃຈ'],a:0},
-{t:'mc',q:'Review — which means "do not! (prohibition)"?',o:['ຢ່າ','ເວົ້າຊ້າໆ','ໄກ່','ແຜນ'],a:0}]},
+{t:'mc',q:'Review — which means "do not! (prohibition)"?',o:['ຢ່າ','ເວົ້າຊ້າໆ','ໄກ່','ແຜນ'],a:0},{t:'mc',q:'Review — which means "watch a film"?',o:['ເບິ່ງໜັງ','ນຸ່ງ','ໝວກ','ເກີບ'],a:0}]},
 
 {id:'lo_nature',title:'Nature & the Mekong',step:'learn',meta:'River, mountain, forest',vocab:[['ແມ່ນ້ຳ','mae nam','river'],['ແມ່ນ້ຳຂອງ','mae nam khong','the Mekong'],['ພູ','phuu','mountain'],['ປ່າ','paa','forest'],['ຕົ້ນໄມ້','ton mai','tree'],['ດອກໄມ້','dok mai','flower']],ex:[
 {t:'note',tag:'Mother of waters',q:'ແມ່ນ້ຳຂອງ',body:'<p><span class="deva">ແມ່ນ້ຳ</span> <b>mae nam</b> = river — literally "mother of water". THE river is <span class="deva">ແມ່ນ້ຳຂອງ</span> <b>mae nam khong</b>, the Mekong, running the whole length of Laos.</p>',eg:[['ແມ່ນ້ຳ','mae nam','river'],['ແມ່ນ້ຳຂອງ','mae nam khong','the Mekong']]},
@@ -2846,7 +2846,7 @@ const LO_Z11=[
 {t:'fill',q:'Complete: "a beautiful flower" (ງາມ = beautiful)',s:'ດອກໄມ້ ___',o:['ງາມ','ຕົກ','ປ່າ','ພູ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ດອກໄມ້','flower'],['ນ້ຳຕົກ','waterfall'],['ແມ່ນ້ຳຂອງ','the Mekong'],['ພູ','mountain']]},
 {t:'mc',q:'Laos runs along which great river?',o:['ແມ່ນ້ຳຂອງ (Mekong)','ແມ່ນ້ຳວັງ','ນ້ຳຕົກ','ແມ່ນ້ຳປ່າ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ພູ',o:['ພູ','ປ່າ','ຕົ້ນໄມ້','ແມ່ນ້ຳ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ພູ',o:['ພູ','ປ່າ','ຕົ້ນໄມ້','ແມ່ນ້ຳ'],a:0},{t:'mc',q:'Review — which means "January (month 1)"?',o:['ເດືອນໜຶ່ງ','ປາ','ລີງ','ນົກ'],a:0},{t:'mc',q:'Review — which means "and then"?',o:['ແລ້ວກໍ','ປາ','ລີງ','ນົກ'],a:0}]},
 {id:'lo_nature_5',title:'Checkpoint',step:'checkpoint',meta:'Nature mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "river"?',o:['ແມ່ນ້ຳ','ພູ','ປ່າ','ດອກໄມ້'],a:0},
 {t:'li',q:'Listen — which word?',say:'ປ່າ',o:['ປ່າ','ພູ','ແມ່ນ້ຳ','ຕົ້ນໄມ້'],a:0},
@@ -2856,7 +2856,7 @@ const LO_Z11=[
 {t:'mc',q:'"waterfall" =',o:['ນ້ຳຕົກ','ຝົນຕົກ','ແມ່ນ້ຳ','ນ້ຳດື່ມ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຕົ້ນໄມ້',o:['ຕົ້ນໄມ້','ດອກໄມ້','ປ່າ','ພູ'],a:0},
 {t:'mc',q:'Review — which means "afraid"?',o:['ຢ້ານ','ພົບກັນໃໝ່','ຢູ່','ຊື້'],a:0},
-{t:'mc',q:'Review — which means "must go"?',o:['ຕ້ອງໄປ','ເຜັດ','ເມື່ອໃດ','ນຸ່ງ'],a:0}]},
+{t:'mc',q:'Review — which means "must go"?',o:['ຕ້ອງໄປ','ເຜັດ','ເມື່ອໃດ','ນຸ່ງ'],a:0},{t:'mc',q:'Review — which means "bedroom"?',o:['ຫ້ອງນອນ','ປາ','ລີງ','ນົກ'],a:0}]},
 
 {id:'lo_taste',title:'The four tastes',step:'learn',meta:'Sweet, sour, salty, bitter',vocab:[['ຫວານ','vaan','sweet'],['ສົ້ມ','som','sour'],['ເຄັມ','khem','salty'],['ຂົມ','khom','bitter'],['ຈືດ','jeut','bland'],['ລົດຊາດ','lot saat','taste / flavor']],ex:[
 {t:'note',tag:'A Lao meal balances',q:'ຫວານ ສົ້ມ ເຄັມ ຂົມ',body:'<p>Lao cooking balances tastes: <span class="deva">ຫວານ</span> <b>vaan</b> sweet, <span class="deva">ສົ້ມ</span> <b>som</b> sour, <span class="deva">ເຄັມ</span> <b>khem</b> salty, <span class="deva">ຂົມ</span> <b>khom</b> bitter — plus <span class="deva">ເຜັດ</span> spicy, which you know!</p>',eg:[['ຫວານ','vaan','sweet'],['ສົ້ມ','som','sour'],['ເຄັມ','khem','salty']]},
@@ -2888,7 +2888,7 @@ const LO_Z11=[
 {t:'fill',q:'Complete: "the coffee is bitter"',s:'ກາເຟ ___',o:['ຂົມ','ຫວານ','ເຄັມ','ຈືດ'],a:0},
 {t:'match',q:'Match taste and meaning',pairs:[['ຈືດ','bland'],['ຂົມ','bitter'],['ລົດຊາດ','flavor'],['ສົ້ມ','sour']]},
 {t:'mc',q:'ໂພດ after a taste means…',o:['too (excessively)','a little','not','the most'],a:0},
-{t:'li',q:'Listen — which taste?',say:'ສົ້ມ',o:['ສົ້ມ','ເຄັມ','ຫວານ','ຂົມ'],a:0}]},
+{t:'li',q:'Listen — which taste?',say:'ສົ້ມ',o:['ສົ້ມ','ເຄັມ','ຫວານ','ຂົມ'],a:0},{t:'mc',q:'Review — which means "this year"?',o:['ປີນີ້','ດອກໄມ້','ຕົ້ນໄມ້','ປ່າ'],a:0},{t:'mc',q:'Review — which means "think"?',o:['ຄິດ','ດອກໄມ້','ຕົ້ນໄມ້','ປ່າ'],a:0}]},
 {id:'lo_taste_5',title:'Checkpoint',step:'checkpoint',meta:'Tastes mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "sweet"?',o:['ຫວານ','ສົ້ມ','ເຄັມ','ຂົມ'],a:0},
 {t:'li',q:'Listen — which taste?',say:'ຂົມ',o:['ຂົມ','ເຄັມ','ສົ້ມ','ຈືດ'],a:0},
@@ -2898,7 +2898,7 @@ const LO_Z11=[
 {t:'mc',q:'A good Lao meal ___ the tastes',o:['balances','hides','drops','doubles'],a:0},
 {t:'li',q:'Listen — which taste?',say:'ຈືດ',o:['ຈືດ','ຂົມ','ຫວານ','ສົ້ມ'],a:0},
 {t:'mc',q:'Review — which means "weather"?',o:['ອາກາດ','ໂຮງຮຽນ','ນຳກັນ','ຊາວ'],a:0},
-{t:'mc',q:'Review — which means "get on / board"?',o:['ຂຶ້ນ','ໂຮງຮຽນ','ໃຫຍ່','ລົດເມ'],a:0}]},
+{t:'mc',q:'Review — which means "get on / board"?',o:['ຂຶ້ນ','ໂຮງຮຽນ','ໃຫຍ່','ລົດເມ'],a:0},{t:'mc',q:'Review — which means "kitchen"?',o:['ຫ້ອງຄົວ','ດອກໄມ້','ຕົ້ນໄມ້','ປ່າ'],a:0}]},
 
 {id:'lo_choose',title:'Choosing',step:'learn',meta:'Which one? Both! Different!',vocab:[['ເລືອກ','leuak','choose'],['ອັນໃດ','an dai','which one?'],['ທັງສອງ','thang song','both'],['ຕ່າງກັນ','taang kan','different'],['ຄືກັນ','kheu kan','the same'],['ອັນນັ້ນ','an nan','that one']],ex:[
 {t:'note',tag:'Which one?',q:'ອັນໃດ',body:'<p><span class="deva">ເລືອກ</span> <b>leuak</b> = choose. Ask <span class="deva">ເອົາອັນໃດ</span> <b>ao an dai</b> = "which one will you take?" Answer <span class="deva">ອັນນີ້</span> this one / <span class="deva">ອັນນັ້ນ</span> that one.</p>',eg:[['ເລືອກ','leuak','choose'],['ອັນໃດ','an dai','which one?'],['ອັນນັ້ນ','an nan','that one']]},
@@ -2930,7 +2930,7 @@ const LO_Z11=[
 {t:'fill',q:'Ask: "coffee or tea — which one?"',s:'ກາເຟ ຫຼື ຊາ — ___',o:['ອັນໃດ','ອັນນັ້ນ','ທັງສອງ','ຄືກັນ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ອັນນັ້ນ','that one'],['ຄືກັນ','the same'],['ຕ່າງກັນ','different'],['ເລືອກ','choose']]},
 {t:'mc',q:'ອັນ in ອັນໃດ/ອັນນີ້ is the classifier for…',o:['small things','people','animals','vehicles'],a:0},
-{t:'li',q:'Listen — which word?',say:'ອັນໃດ',o:['ອັນໃດ','ອັນນັ້ນ','ທັງສອງ','ເລືອກ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ອັນໃດ',o:['ອັນໃດ','ອັນນັ້ນ','ທັງສອງ','ເລືອກ'],a:0},{t:'mc',q:'Review — which means "next year"?',o:['ປີໜ້າ','ລົດຊາດ','ຈືດ','ຂົມ'],a:0},{t:'mc',q:'Review — which means "think that"?',o:['ຄິດວ່າ','ລົດຊາດ','ຈືດ','ຂົມ'],a:0}]},
 {id:'lo_choose_5',title:'Zone 11 checkpoint',step:'checkpoint',meta:'Choices mastered?',vocab:[],ex:[
 {t:'mc',q:'"which one?" =',o:['ອັນໃດ','ອັນນີ້','ອັນນັ້ນ','ທັງສອງ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຕ່າງກັນ',o:['ຕ່າງກັນ','ຄືກັນ','ທັງສອງ','ເລືອກ'],a:0},
@@ -2940,7 +2940,7 @@ const LO_Z11=[
 {t:'mc',q:'"I’ll take that one" =',o:['ເອົາອັນນັ້ນ','ເອົາອັນໃດ','ບໍ່ເອົາ','ເລືອກບໍ່'],a:0},
 {t:'li',q:'Listen — which word?',say:'ເລືອກ',o:['ເລືອກ','ເອົາ','ອັນໃດ','ທັງສອງ'],a:0},
 {t:'mc',q:'Review — which means "it is sunny"?',o:['ແດດອອກ','ຍັງບໍ່','ທ້ອງ','ຄິດວ່າ'],a:0},
-{t:'mc',q:'Review — which means "left"?',o:['ຊ້າຍ','ກຳລັງໄປ','ໄປໄດ້','ໃຫຍ່'],a:0}]},
+{t:'mc',q:'Review — which means "left"?',o:['ຊ້າຍ','ກຳລັງໄປ','ໄປໄດ້','ໃຫຍ່'],a:0},{t:'mc',q:'Review — which means "bathroom"?',o:['ຫ້ອງນ້ຳ','ລົດຊາດ','ຈືດ','ຂົມ'],a:0}]},
 ];
 const LO_Z12=[
 /* ===================== ZONE 12 · MAKE LAOS HOME ===================== */
@@ -2974,7 +2974,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: "three coconuts"',s:'ໝາກພ້າວ ສາມ ___',o:['ໜ່ວຍ','ໂຕ','ຄົນ','ຄັນ'],a:0},
 {t:'match',q:'Match fruit and meaning',pairs:[['ໝາກກ້ວຍ','banana'],['ໝາກນັດ','pineapple'],['ໝາກຫຸ່ງ','papaya'],['ໝາກພ້າວ','coconut']]},
 {t:'mc',q:'Which fruit stars in the famous pounded salad?',o:['ໝາກຫຸ່ງ','ໝາກມ່ວງ','ໝາກນັດ','ໝາກກ້ວຍ'],a:0},
-{t:'li',q:'Listen — which fruit?',say:'ໝາກຫຸ່ງ',o:['ໝາກຫຸ່ງ','ໝາກມ່ວງ','ໝາກພ້າວ','ໝາກນັດ'],a:0}]},
+{t:'li',q:'Listen — which fruit?',say:'ໝາກຫຸ່ງ',o:['ໝາກຫຸ່ງ','ໝາກມ່ວງ','ໝາກພ້າວ','ໝາກນັດ'],a:0},{t:'mc',q:'Review — which means "call"?',o:['ໂທ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "work / job"?',o:['ວຽກ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "like a lot"?',o:['ມັກຫຼາຍ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "the Lao language"?',o:['ພາສາລາວ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "then / later"?',o:['ຕໍ່ມາ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0}]},
 {id:'lo_fruit_5',title:'Checkpoint',step:'checkpoint',meta:'Fruits mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "mango"?',o:['ໝາກມ່ວງ','ໝາກຫຸ່ງ','ໝາກພ້າວ','ໝາກນັດ'],a:0},
 {t:'li',q:'Listen — which fruit?',say:'ໝາກນັດ',o:['ໝາກນັດ','ໝາກພ້າວ','ໝາກມ່ວງ','ໝາກກ້ວຍ'],a:0},
@@ -2984,7 +2984,7 @@ const LO_Z12=[
 {t:'mc',q:'Fruit names share the prefix…',o:['ໝາກ','ນ້ຳ','ຕົ້ນ','ດອກ'],a:0},
 {t:'li',q:'Listen — which fruit?',say:'ໝາກກ້ວຍ',o:['ໝາກກ້ວຍ','ໝາກມ່ວງ','ໝາກຫຸ່ງ','ໝາກນັດ'],a:0},
 {t:'mc',q:'Review — which means "rainy season"?',o:['ລະດູຝົນ','ອັນນີ້','ລົດຈັກ','ໄປແລ້ວ'],a:0},
-{t:'mc',q:'Review — which means "right"?',o:['ຂວາ','ນັ້ນ','ຕະຫຼອດ','ສະບາຍດີ'],a:0}]},
+{t:'mc',q:'Review — which means "right"?',o:['ຂວາ','ນັ້ນ','ຕະຫຼອດ','ສະບາຍດີ'],a:0},{t:'mc',q:'Review — which means "cook"?',o:['ແຕ່ງກິນ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "married already"?',o:['ແຕ່ງງານແລ້ວ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0},{t:'mc',q:'Review — which means "door"?',o:['ປະຕູ','ອັນນັ້ນ','ຕ່າງກັນ','ທັງສອງ'],a:0}]},
 
 {id:'lo_kitchen',title:'In the kitchen',step:'learn',meta:'Boil, fry, grill, pound',vocab:[['ຕົ້ມ','tom','boil'],['ຈືນ','jeun','fry'],['ປີ້ງ','ping','grill'],['ໜຶ້ງ','neung','steam'],['ຕຳ','tam','pound'],['ຕຳໝາກຫຸ່ງ','tam maak hung','pounded papaya salad']],ex:[
 {t:'note',tag:'Lao cooking verbs',q:'ຕົ້ມ ຈືນ ປີ້ງ ໜຶ້ງ',body:'<p><span class="deva">ຕົ້ມ</span> <b>tom</b> boil, <span class="deva">ຈືນ</span> <b>jeun</b> fry, <span class="deva">ປີ້ງ</span> <b>ping</b> grill, <span class="deva">ໜຶ້ງ</span> <b>neung</b> steam — sticky rice is <b>steamed</b>, never boiled!</p><p>You will see these on menus: <span class="deva">ປີ້ງໄກ່</span> <b>ping kai</b> = grilled chicken.</p>',eg:[['ຕົ້ມ','tom','boil'],['ປີ້ງ','ping','grill'],['ໜຶ້ງ','neung','steam']]},
@@ -3016,7 +3016,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: "steamed sticky rice"',s:'___ ເຂົ້າໜຽວ',o:['ໜຶ້ງ','ຕົ້ມ','ຈືນ','ຕຳ'],a:0},
 {t:'match',q:'Match dish and meaning',pairs:[['ຕຳໝາກຫຸ່ງ','papaya salad'],['ປີ້ງໄກ່','grilled chicken'],['ຈືນປາ','fried fish'],['ຕົ້ມ','boil']]},
 {t:'mc',q:'ຕຳ is done in a…',o:['mortar (pounding)','oven','pan','pot of water'],a:0},
-{t:'li',q:'Listen — which verb?',say:'ຈືນ',o:['ຈືນ','ຕົ້ມ','ປີ້ງ','ໜຶ້ງ'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'ຈືນ',o:['ຈືນ','ຕົ້ມ','ປີ້ງ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "telephone"?',o:['ໂທລະສັບ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "teacher"?',o:['ຄູ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "like the most"?',o:['ມັກທີ່ສຸດ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "how do you say?"?',o:['ວ່າແນວໃດ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "after that"?',o:['ຫຼັງຈາກນັ້ນ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0}]},
 {id:'lo_kitchen_5',title:'Checkpoint',step:'checkpoint',meta:'Kitchen mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "grill"?',o:['ປີ້ງ','ຕົ້ມ','ຈືນ','ໜຶ້ງ'],a:0},
 {t:'li',q:'Listen — which verb?',say:'ຕຳ',o:['ຕຳ','ຕົ້ມ','ຈືນ','ປີ້ງ'],a:0},
@@ -3026,7 +3026,7 @@ const LO_Z12=[
 {t:'mc',q:'Laos’ most famous dish is…',o:['ຕຳໝາກຫຸ່ງ','ຈືນປາ','ຕົ້ມໄກ່','ໜຶ້ງໝູ'],a:0},
 {t:'li',q:'Listen — which dish?',say:'ຕຳໝາກຫຸ່ງ',o:['ຕຳໝາກຫຸ່ງ','ປີ້ງໄກ່','ເຂົ້າໜຽວ','ຈືນປາ'],a:0},
 {t:'mc',q:'Review — which means "stomach"?',o:['ທ້ອງ','ເສື້ອ','ພູ','ເດືອນ'],a:0},
-{t:'mc',q:'Review — which means "turn"?',o:['ລ້ຽວ','ຟັງເພງ','ແມ່ນ','ເມນູ'],a:0}]},
+{t:'mc',q:'Review — which means "turn"?',o:['ລ້ຽວ','ຟັງເພງ','ແມ່ນ','ເມນູ'],a:0},{t:'mc',q:'Review — which means "wash clothes"?',o:['ຊັກເຄື່ອງ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "single"?',o:['ໂສດ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0},{t:'mc',q:'Review — which means "cat"?',o:['ແມວ','ໝາກກ້ວຍ','ໝາກນັດ','ໝາກພ້າວ'],a:0}]},
 
 {id:'lo_errand',title:'Errands',step:'learn',meta:'Haircut, repairs & the post',vocab:[['ຕັດຜົມ','tat phom','get a haircut'],['ຜົມ','phom','hair'],['ສ້ອມແປງ','som paeng','repair / fix'],['ໄປສະນີ','paisanii','post office'],['ຮ້ານຂາຍຢາ','haan khaai yaa','pharmacy'],['ຢາ','yaa','medicine']],ex:[
 {t:'note',tag:'Around town jobs',q:'ຕັດຜົມ · ສ້ອມແປງ',body:'<p><span class="deva">ຕັດຜົມ</span> <b>tat phom</b> = cut hair / get a haircut (<span class="deva">ຜົມ</span> = hair). <span class="deva">ສ້ອມແປງ</span> <b>som paeng</b> = repair — bikes, phones, shoes; repair shops are everywhere.</p>',eg:[['ຕັດຜົມ','tat phom','haircut'],['ສ້ອມແປງ','som paeng','repair']]},
@@ -3058,7 +3058,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: "buy medicine at the pharmacy"',s:'ຊື້ຢາຢູ່ ___',o:['ຮ້ານຂາຍຢາ','ໄປສະນີ','ຕະຫຼາດ','ໂຮງຮຽນ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ຜົມ','hair'],['ຢາ','medicine'],['ຮ້ານຂາຍຢາ','pharmacy'],['ສ້ອມແປງ','repair']]},
 {t:'mc',q:'Send a letter from the…',o:['ໄປສະນີ','ຮ້ານຂາຍຢາ','ຕະຫຼາດ','ໂຮງໝໍ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ສ້ອມແປງ',o:['ສ້ອມແປງ','ຕັດຜົມ','ຢາ','ໄປສະນີ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ສ້ອມແປງ',o:['ສ້ອມແປງ','ຕັດຜົມ','ຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "number"?',o:['ເບີ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "farmer"?',o:['ຊາວນາ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "not really keen"?',o:['ບໍ່ຄ່ອຍມັກ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "I know a little"?',o:['ຮູ້ໜ້ອຍໜຶ່ງ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "finally"?',o:['ສຸດທ້າຍ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0}]},
 {id:'lo_errand_5',title:'Checkpoint',step:'checkpoint',meta:'Errands mastered?',vocab:[],ex:[
 {t:'mc',q:'"get a haircut" =',o:['ຕັດຜົມ','ສ້ອມແປງ','ຊັກເຄື່ອງ','ຕັດຜັກ'],a:0},
 {t:'li',q:'Listen — which word?',say:'ໄປສະນີ',o:['ໄປສະນີ','ຮ້ານຂາຍຢາ','ຕັດຜົມ','ສ້ອມແປງ'],a:0},
@@ -3068,7 +3068,7 @@ const LO_Z12=[
 {t:'mc',q:'ຮ້ານຂາຍຢາ builds "pharmacy" from shop + sell + …',o:['medicine','food','clothes','hair'],a:0},
 {t:'li',q:'Listen — which word?',say:'ຢາ',o:['ຢາ','ຜົມ','ຮ້ານ','ຕັດ'],a:0},
 {t:'mc',q:'Review — which means "to hurt / be sore"?',o:['ເຈັບ','ພວກເຂົາ','ໝູ','ດຽວນີ້'],a:0},
-{t:'mc',q:'Review — which means "stop"?',o:['ຢຸດ','ກັບບ້ານ','ທຸກມື້','ປ່າ'],a:0}]},
+{t:'mc',q:'Review — which means "stop"?',o:['ຢຸດ','ກັບບ້ານ','ທຸກມື້','ປ່າ'],a:0},{t:'mc',q:'Review — which means "clean / tidy"?',o:['ອະນາໄມ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "have children"?',o:['ມີລູກ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0},{t:'mc',q:'Review — which means "plan"?',o:['ແຜນ','ຕຳໝາກຫຸ່ງ','ຕຳ','ໜຶ້ງ'],a:0}]},
 
 {id:'lo_visit',title:'Guests & visiting',step:'learn',meta:'Come in, sit down!',vocab:[['ແຂກ','khaek','guest'],['ມາຫຼິ້ນ','maa lin','come visit'],['ເຊີນ','sern','please (inviting)'],['ເຊີນເຂົ້າມາ','sern khao maa','please come in'],['ເຊີນນັ່ງ','sern nang','please sit'],['ນັ່ງ','nang','sit']],ex:[
 {t:'note',tag:'Drop by!',q:'ມາຫຼິ້ນ',body:'<p><span class="deva">ແຂກ</span> <b>khaek</b> = guest. Lao visiting is casual: <span class="deva">ມາຫຼິ້ນ</span> <b>maa lin</b> — literally "come play" — means "come visit / drop by". <span class="deva">ມາຫຼິ້ນເຮືອນຂ້ອຍ</span> = "come visit my house!"</p>',eg:[['ແຂກ','khaek','guest'],['ມາຫຼິ້ນ','maa lin','come visit']]},
@@ -3100,7 +3100,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: "please sit"',s:'ເຊີນ ___',o:['ນັ່ງ','ນອນ','ຍ່າງ','ຂາຍ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ເຊີນ','please (inviting)'],['ນັ່ງ','sit'],['ມາຫຼິ້ນ','come visit'],['ແຂກ','guest']]},
 {t:'mc',q:'A guest leaves. You say…',o:['ພົບກັນໃໝ່','ເຊີນເຂົ້າມາ','ເຊີນນັ່ງ','ມາຫຼິ້ນ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ເຊີນ',o:['ເຊີນ','ແຂກ','ນັ່ງ','ມາ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ເຊີນ',o:['ເຊີນ','ແຂກ','ນັ່ງ','ມາ'],a:0},{t:'mc',q:'Review — which means "message"?',o:['ຂໍ້ຄວາມ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "student"?',o:['ນັກຮຽນ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "do not like"?',o:['ບໍ່ມັກ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "bed"?',o:['ຕຽງ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "one day"?',o:['ມື້ໜຶ່ງ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0}]},
 {id:'lo_visit_5',title:'Checkpoint',step:'checkpoint',meta:'Hosting mastered?',vocab:[],ex:[
 {t:'mc',q:'"come visit" (casual) =',o:['ມາຫຼິ້ນ','ເຊີນນັ່ງ','ໄປຫຼິ້ນ','ແຂກມາ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ເຊີນນັ່ງ',o:['ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ','ມາຫຼິ້ນ','ນັ່ງ'],a:0},
@@ -3110,7 +3110,7 @@ const LO_Z12=[
 {t:'mc',q:'ເຊີນ + verb makes a…',o:['warm invitation','question','negation','past tense'],a:0},
 {t:'li',q:'Listen — which word?',say:'ແຂກ',o:['ແຂກ','ເຊີນ','ນັ່ງ','ມາ'],a:0},
 {t:'mc',q:'Review — which means "unwell"?',o:['ບໍ່ສະບາຍ','ເປັນ','ອອກ','ທັງໝົດ'],a:0},
-{t:'mc',q:'Review — which means "here"?',o:['ຢູ່ນີ້','ຫຍັງ','ຕ້ອງໄປ','ຍິນດີ'],a:0}]},
+{t:'mc',q:'Review — which means "here"?',o:['ຢູ່ນີ້','ຫຍັງ','ຕ້ອງໄປ','ຍິນດີ'],a:0},{t:'mc',q:'Review — which means "help"?',o:['ຊ່ວຍ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "how many (people)?"?',o:['ຈັກຄົນ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0},{t:'mc',q:'Review — which means "next week"?',o:['ອາທິດໜ້າ','ຢາ','ຮ້ານຂາຍຢາ','ໄປສະນີ'],a:0}]},
 
 {id:'lo_wish',title:'Wishes & celebrations',step:'learn',meta:'Good luck & Pi Mai',vocab:[['ໂຊກດີ','sok dii','good luck'],['ຂໍໃຫ້','kho hai','may you… (wish)'],['ວັນເກີດ','wan keut','birthday'],['ສຸກສັນວັນເກີດ','suk san wan keut','happy birthday'],['ປີໃໝ່ລາວ','pii mai lao','Lao New Year'],['ຍິນດີນຳ','nyin dii nam','congratulations']],ex:[
 {t:'note',tag:'Wish them well',q:'ຂໍໃຫ້ + wish',body:'<p><span class="deva">ໂຊກດີ</span> <b>sok dii</b> = good luck — also a warm way to say goodbye! Build fuller wishes with <span class="deva">ຂໍໃຫ້</span> <b>kho hai</b> = "may you…": <span class="deva">ຂໍໃຫ້ໂຊກດີ</span> = "may you have good luck".</p>',eg:[['ໂຊກດີ','sok dii','good luck'],['ຂໍໃຫ້','kho hai','may you…']]},
@@ -3142,7 +3142,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: the April festival is ___ ລາວ',s:'___ລາວ',o:['ປີໃໝ່','ວັນເກີດ','ໂຊກດີ','ຕະຫຼອດ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ຂໍໃຫ້','may you…'],['ໂຊກດີ','good luck'],['ຍິນດີນຳ','congratulations'],['ວັນເກີດ','birthday']]},
 {t:'mc',q:'At ປີໃໝ່ລາວ, people celebrate with…',o:['water','snow','kites','lanterns only'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ຍິນດີນຳ',o:['ຍິນດີນຳ','ໂຊກດີ','ຂໍໃຫ້','ສຸກສັນວັນເກີດ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ຍິນດີນຳ',o:['ຍິນດີນຳ','ໂຊກດີ','ຂໍໃຫ້','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "send"?',o:['ສົ່ງ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0},{t:'mc',q:'Review — which means "free time"?',o:['ຍາມຫວ່າງ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0},{t:'mc',q:'Review — which means "age"?',o:['ອາຍຸ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0},{t:'mc',q:'Review — which means "table"?',o:['ໂຕະ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0}]},
 {id:'lo_wish_5',title:'Checkpoint',step:'checkpoint',meta:'Wishes mastered?',vocab:[],ex:[
 {t:'mc',q:'"may you…" (wish opener) =',o:['ຂໍໃຫ້','ຂໍແດ່','ເຊີນ','ຍິນດີ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ສຸກສັນວັນເກີດ',o:['ສຸກສັນວັນເກີດ','ປີໃໝ່ລາວ','ໂຊກດີ','ຍິນດີນຳ'],a:0},
@@ -3152,7 +3152,7 @@ const LO_Z12=[
 {t:'mc',q:'Lao New Year (ປີໃໝ່ລາວ) falls in…',o:['April','January','August','November'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ໂຊກດີ',o:['ໂຊກດີ','ຍິນດີນຳ','ຂໍໃຫ້','ວັນເກີດ'],a:0},
 {t:'mc',q:'Review — which means "will (casual)"?',o:['ຊິ','ມື້ນີ້','ແພງ','ພວກເຂົາ'],a:0},
-{t:'mc',q:'Review — which means "station"?',o:['ສະຖານີ','ອັນນັ້ນ','ໜ້ອຍ','ແມ່'],a:0}]},
+{t:'mc',q:'Review — which means "station"?',o:['ສະຖານີ','ອັນນັ້ນ','ໜ້ອຍ','ແມ່'],a:0},{t:'mc',q:'Review — which means "please help"?',o:['ຊ່ວຍແດ່','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0},{t:'mc',q:'Review — which means "speak slowly"?',o:['ເວົ້າຊ້າໆ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0},{t:'mc',q:'Review — which means "busy"?',o:['ຫຍຸ້ງ','ນັ່ງ','ເຊີນນັ່ງ','ເຊີນເຂົ້າມາ'],a:0}]},
 
 {id:'lo_howlong',title:'How long?',step:'learn',meta:'Duration & your Lao story',vocab:[['ດົນ','don','a long time'],['ດົນປານໃດ','don paan dai','how long?'],['ຕັ້ງແຕ່','tang tae','since'],['ສອງປີແລ້ວ','song pii laew','two years already'],['ຂອງ','khong','of / belonging to'],['ບ້ານຂອງຂ້ອຍ','baan khong khoi','my home']],ex:[
 {t:'note',tag:'Been here long?',q:'…ມາ + time + ແລ້ວ',body:'<p><span class="deva">ດົນ</span> <b>don</b> = a long time; ask <span class="deva">ຢູ່ລາວດົນປານໃດ</span> = "how long have you been in Laos?" Answer with the pattern verb + <span class="deva">ມາ</span> + time + <span class="deva">ແລ້ວ</span>: <span class="deva">ຢູ່ມາສອງປີແລ້ວ</span> = "have been (here) two years already".</p>',eg:[['ດົນ','don','a long time'],['ດົນປານໃດ','don paan dai','how long?'],['ສອງປີແລ້ວ','song pii laew','two years already']]},
@@ -3184,7 +3184,7 @@ const LO_Z12=[
 {t:'fill',q:'Complete: "a long time already"',s:'___ ແລ້ວ',o:['ດົນ','ໄວ','ຂອງ','ຕັ້ງແຕ່'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ສອງປີແລ້ວ','two years already'],['ຕັ້ງແຕ່','since'],['ບ້ານຂອງຂ້ອຍ','my home'],['ດົນ','a long time']]},
 {t:'mc',q:'ແມ່ນ້ຳຂອງ and ບ້ານຂອງຂ້ອຍ share the word…',o:['ຂອງ','ບ້ານ','ນ້ຳ','ຂ້ອຍ'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ຕັ້ງແຕ່',o:['ຕັ້ງແຕ່','ດົນ','ຂອງ','ແລ້ວ'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ຕັ້ງແຕ່',o:['ຕັ້ງແຕ່','ດົນ','ຂອງ','ແລ້ວ'],a:0},{t:'mc',q:'Review — which means "wifi"?',o:['ໄວຟາຍ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "fun / enjoyable"?',o:['ມ່ວນ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "how old?"?',o:['ອາຍຸເທົ່າໃດ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "chair"?',o:['ຕັ່ງ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0}]},
 {id:'lo_howlong_5',title:'Course checkpoint',step:'checkpoint',meta:'ຂໍໃຫ້ໂຊກດີ — you made it!',vocab:[],ex:[
 {t:'mc',q:'"how long have you been in Laos?" uses…',o:['ດົນປານໃດ','ເທົ່າໃດ','ຈັກໂມງ','ຢູ່ໃສ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ສອງປີແລ້ວ',o:['ສອງປີແລ້ວ','ດົນປານໃດ','ຕັ້ງແຕ່','ປີໜ້າ'],a:0},
@@ -3194,7 +3194,7 @@ const LO_Z12=[
 {t:'mc',q:'Twelve zones done! In Lao you would say…',o:['ຂ້ອຍຮັກລາວ — ຂໍໃຫ້ໂຊກດີ!','ບໍ່ຮູ້','ຫຼົງທາງ','ບໍ່ເຂົ້າໃຈ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ດົນປານໃດ',o:['ດົນປານໃດ','ຕັ້ງແຕ່','ສອງປີແລ້ວ','ດົນ'],a:0},
 {t:'mc',q:'Review — which means "next / later"?',o:['ຕໍ່ໄປ','ຮັກລາວ','ຕຳໝາກຫຸ່ງ','ດື່ມ'],a:0},
-{t:'mc',q:'Review — which means "depart / leave"?',o:['ອອກ','ຄວາຍ','ເຮັດ','ສີ'],a:0}]},
+{t:'mc',q:'Review — which means "depart / leave"?',o:['ອອກ','ຄວາຍ','ເຮັດ','ສີ'],a:0},{t:'mc',q:'Review — which means "help! (urgent)"?',o:['ຊ່ວຍດ້ວຍ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "say it again"?',o:['ເວົ້າຄືນ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0},{t:'mc',q:'Review — which means "first / at first"?',o:['ທຳອິດ','ຍິນດີນຳ','ປີໃໝ່ລາວ','ສຸກສັນວັນເກີດ'],a:0}]},
 ];
 const LO_LESSONS=[].concat(LO_Z1,LO_Z2,LO_Z3,LO_Z4,LO_Z5,LO_Z6,LO_Z7,LO_Z8,LO_Z9,LO_Z10,LO_Z11,LO_Z12);
 

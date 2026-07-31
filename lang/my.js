@@ -915,7 +915,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (She) stays at home',a:['အိမ်','မှာ','နေတယ်'],pool:['အိမ်','မှာ','နေတယ်','သွားတယ်']},
 {t:'mc',q:'"At school" is…',o:['ကျောင်းမှာ','ကျောင်းကို','ကျောင်းက','မှာကျောင်း'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['အိမ်','house / home'],['ဈေး','market'],['ဆိုင်','shop'],['ကျောင်း','school']]},
-{t:'mc',q:'Review — which means "you (man speaking)"?',o:['ခင်ဗျား','ဒါရေပါ','တောင်းပန်ပါတယ်','မနက်ဖြန်လာမယ်'],a:0}]},
+{t:'mc',q:'Review — which means "you (man speaking)"?',o:['ခင်ဗျား','ဒါရေပါ','တောင်းပန်ပါတယ်','မနက်ဖြန်လာမယ်'],a:0},{t:'mc',q:'Review — which means "no"?',o:['မဟုတ်ဘူး','မစားချင်ဘူး','မကြိုက်ဘူး','ကြိုက်တယ်'],a:0}]},
 
 /* --- Topic 2: ကို — to & object --- */
 {id:'my_ko',title:'To: ကို',step:'learn',meta:'ရန်ကုန်ကိုသွားမယ်',vocab:[['ကို','ko','to / object marker'],['ရန်ကုန်','yangoun','Yangon'],['မန္တလေး','mandale','Mandalay'],['ရန်ကုန်ကိုသွားမယ်','yangoun go thwa meh','will go to Yangon'],['ဈေးကိုသွားတယ်','zei go thwa de','go to the market']],ex:[
@@ -957,7 +957,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) will go to Mandalay',a:['မန္တလေး','ကို','သွားမယ်'],pool:['မန္တလေး','ကို','သွားမယ်','လာမယ်']},
 {t:'mc',q:'ကို marks…',o:['where you go TO','where you are AT','where you come FROM','who you are WITH'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ကို','to'],['ရန်ကုန်','Yangon'],['မန္တလေး','Mandalay'],['မှာ','at / in']]},
-{t:'mc',q:'Review — which means "you (woman speaking)"?',o:['ရှင်','နိုင်ငံ','ဆယ့်ငါး','ရေ'],a:0}]},
+{t:'mc',q:'Review — which means "you (woman speaking)"?',o:['ရှင်','နိုင်ငံ','ဆယ့်ငါး','ရေ'],a:0},{t:'mc',q:'Review — which means "what is your name"?',o:['နာမည်ဘယ်လိုခေါ်လဲ','အိမ်မှာနေတယ်','ကျောင်း','ဆိုင်'],a:0}]},
 
 /* --- Topic 3: က — from & who does it --- */
 {id:'my_ka',title:'From: က',step:'learn',meta:'ဘယ်က အိမ်ကလာတယ်',vocab:[['က','ga','from / subject marker'],['ဘယ်က','beh ga','from where'],['အိမ်ကလာတယ်','ein ga la de','come from home'],['ကျောင်းကလာတယ်','kyaung ga la de','come from school'],['ကျွန်တော်က','kyanaw ga','as for me, I…']],ex:[
@@ -999,7 +999,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (She) comes from the market',a:['ဈေး','က','လာတယ်'],pool:['ဈေး','က','လာတယ်','မှာ']},
 {t:'mc',q:'at / to / from =',o:['မှာ / ကို / က','ကို / က / မှာ','က / မှာ / ကို','မှာ / က / ကို'],a:0},
 {t:'match',q:'Match particle and job',pairs:[['မှာ','at / in'],['ကို','to'],['က','from'],['လဲ','question-word ending']]},
-{t:'mc',q:'Review — which means "six (၆)"?',o:['ခြောက်','ဘာ','ရှင်','တစ်ဆိတ်လောက်'],a:0}]},
+{t:'mc',q:'Review — which means "six (၆)"?',o:['ခြောက်','ဘာ','ရှင်','တစ်ရာ'],a:0},{t:'mc',q:'Review — which means "where are you from"?',o:['ဘယ်ကလာလဲ','ဈေးကိုသွားတယ်','ရန်ကုန်ကိုသွားမယ်','မန္တလေး'],a:0}]},
 
 /* --- Topic 4: နဲ့ — with & and --- */
 {id:'my_neh',title:'With & and: နဲ့',step:'learn',meta:'သူငယ်ချင်း မိသားစု + နဲ့',vocab:[['နဲ့','neh','with / and'],['သူငယ်ချင်း','thangeh chin','friend'],['မိသားစု','mi tha zu','family'],['ရေနဲ့ထမင်း','ye neh htamin','water and rice'],['သူငယ်ချင်းနဲ့သွားမယ်','thangeh chin neh thwa meh','will go with a friend']],ex:[
@@ -1073,7 +1073,7 @@ const MY_LESSONS=[
 {t:'mc',q:'An older woman selling fruit at the market — address her as…',o:['ဒေါ်','ဦး','အစ်ကို','ဆရာ'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဆရာမ',o:['teacher (woman)','teacher (man)','older sister','Ms'],a:0},
 {t:'li',q:'Listen — which word?',say:'ဦး',o:['ဦး','ဒေါ်','အစ်ကို','ဆရာ'],a:0},
-{t:'match',q:'Match title and person',pairs:[['ဦး','older man / Mr'],['ဒေါ်','older woman / Ms'],['ဆရာ','teacher / sir'],['အစ်ကို','older brother']]}]},
+{t:'match',q:'Match title and person',pairs:[['ဦး','older man / Mr'],['ဒေါ်','older woman / Ms'],['ဆရာ','teacher / sir'],['အစ်ကို','older brother']]},{t:'mc',q:'Review — which means "yes"?',o:['ဟုတ်ကဲ့','သူငယ်ချင်းနဲ့သွားမယ်','ရေနဲ့ထမင်း','မိသားစု'],a:0}]},
 {id:'my_kin_5',title:'Checkpoint',step:'checkpoint',meta:'Titles mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "older woman / Ms"?',o:['ဒေါ်','ဦး','အစ်မ','ဆရာမ'],a:0},
 {t:'li',q:'Listen — which word?',say:'အစ်မ',o:['အစ်မ','အစ်ကို','ဒေါ်','ဆရာ'],a:0},
@@ -1081,7 +1081,7 @@ const MY_LESSONS=[
 {t:'mc',q:'Instead of "you", Burmese speakers prefer…',o:['kin terms & titles','pointing','the persons age','silence'],a:0},
 {t:'li',q:'Listen — which word?',say:'ဆရာ',o:['ဆရာ','ဆရာမ','ဦး','အစ်ကို'],a:0},
 {t:'match',q:'Match title and person',pairs:[['ဦး','older man / Mr'],['ဒေါ်','older woman / Ms'],['အစ်ကို','older brother'],['ဆရာမ','teacher (woman)']]},
-{t:'mc',q:'Review — which means "eleven (၁၁)"?',o:['ဆယ့်တစ်','ဘာ','သိတယ်','နေကောင်းလား'],a:0}]},
+{t:'mc',q:'Review — which means "eleven (၁၁)"?',o:['ဆယ့်တစ်','ဘာ','သိတယ်','တစ်ရာ'],a:0}]},
 
 /* --- Topic 6: food & drink --- */
 {id:'my_food',title:'Food & drink',step:'learn',meta:'ဟင်း ငါး ကြက်သား ကော်ဖီ',vocab:[['ဟင်း','hin','curry / dish'],['ငါး','nga','fish'],['ကြက်သား','kyeq tha','chicken'],['သစ်သီး','thiq thi','fruit'],['ကော်ဖီ','kaw hpi','coffee'],['နို့','no','milk']],ex:[
@@ -1123,7 +1123,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) want to eat chicken',a:['ကြက်သား','စားချင်တယ်'],pool:['ကြက်သား','စားချင်တယ်','သောက်ချင်တယ်']},
 {t:'mc',q:'The word that is both "five" and "fish":',o:['ငါး','ဆယ်','နှစ်','ကိုး'],a:0},
 {t:'match',q:'Match food and meaning',pairs:[['ဟင်း','curry / dish'],['ကြက်သား','chicken'],['ကော်ဖီ','coffee'],['နို့','milk']]},
-{t:'mc',q:'Review — which means "twelve (၁၂)"?',o:['ဆယ့်နှစ်','နာမည်','မစားဘူး','စားချင်တယ်'],a:0}]},
+{t:'mc',q:'Review — which means "twelve (၁၂)"?',o:['ဆယ့်နှစ်','နာမည်','မစားဘူး','တစ်ရာ'],a:0}]},
 
 /* --- Topic 7: at the teashop — order politely --- */
 {id:'my_shop',title:'At the teashop',step:'learn',meta:'…ပေးပါ & ဒါပဲ',vocab:[['လက်ဖက်ရည်ဆိုင်','lahpeq yeh hsaing','teashop'],['ပေးပါ','pei ba','please give…'],['ရေပေးပါ','ye pei ba','water, please'],['လက်ဖက်ရည်ပေးပါ','lahpeq yeh pei ba','tea, please'],['ဒါပဲ','da beh','that is all'],['ကောင်းတယ်','kaung de','it is good']],ex:[
@@ -1166,7 +1166,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Fruit, please',a:['သစ်သီး','ပေးပါ'],pool:['သစ်သီး','ပေးပါ','စားတယ်']},
 {t:'mc',q:'Polite requests end in the same syllable as မင်္ဂလာပါ:',o:['ပါ','တယ်','လား','ဘူး'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ရေပေးပါ','water, please'],['ဒါပဲ','that is all'],['ကောင်းတယ်','it is good'],['လက်ဖက်ရည်ဆိုင်','teashop']]},
-{t:'mc',q:'Review — which means "fifteen (၁၅)"?',o:['ဆယ့်ငါး','နေတယ်','သွားမယ်','အိမ်ကလာတယ်'],a:0}]},
+{t:'mc',q:'Review — which means "fifteen (၁၅)"?',o:['ဆယ့်ငါး','နေတယ်','သွားမယ်','တစ်ရာ'],a:0}]},
 
 /* ===================== ZONE 5 · HOW MANY =====================
    Numbers in action: classifiers (noun + number + classifier), money in
@@ -1212,7 +1212,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: two children',a:['ကလေး','နှစ်','ယောက်'],pool:['ကလေး','နှစ်','ယောက်','ငါး']},
 {t:'mc',q:'The Burmese counting recipe is…',o:['noun + number + counter','number + counter + noun','counter first','number last'],a:0},
 {t:'match',q:'Match counter and use',pairs:[['ယောက်','people'],['ခု','things'],['ကောင်','animals'],['သုံးခု','three (things)']]},
-{t:'mc',q:'Review — which means "twenty (၂၀)"?',o:['နှစ်ဆယ်','ကျောင်းကလာတယ်','နေကောင်းပါတယ်','မိသားစု'],a:0}]},
+{t:'mc',q:'Review — which means "twenty (၂၀)"?',o:['နှစ်ဆယ်','ကျောင်းကလာတယ်','နေကောင်းပါတယ်','သုံးခု'],a:0},{t:'mc',q:'Review — which means "that one over there"?',o:['ဟိုဟာ','ကောင်းတယ်','ဒါပဲ','လက်ဖက်ရည်ပေးပါ'],a:0}]},
 
 /* --- Topic 2: cups & how many — ခွက် + ဘယ်နှ --- */
 {id:'my_hownum',title:'How many?',step:'learn',meta:'ဘယ်နှ + counter · ခွက်',vocab:[['ဘယ်နှ','beh hna','how many'],['ဘယ်နှယောက်လဲ','beh hna yauq leh','how many people?'],['ခွက်','hkweq','cup / glass'],['လက်ဖက်ရည်နှစ်ခွက်','lahpeq yeh hna hkweq','two cups of tea'],['တစ်ခွက်ပေးပါ','ta hkweq pei ba','one cup, please']],ex:[
@@ -1254,7 +1254,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Two coffees, please',a:['ကော်ဖီ','နှစ်','ခွက်','ပေးပါ'],pool:['ကော်ဖီ','နှစ်','ခွက်','ပေးပါ','ယောက်']},
 {t:'mc',q:'ဘယ်နှ means…',o:['how many','how much money','what time','which place'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ဘယ်နှယောက်လဲ','how many people?'],['တစ်ခွက်ပေးပါ','one cup, please'],['ခွက်','cup'],['ဘယ်နှ','how many']]},
-{t:'mc',q:'Review — which means "one hundred (၁၀၀)"?',o:['တစ်ရာ','လေး','မသွားဘူး','မနေ့က'],a:0}]},
+{t:'mc',q:'Review — which means "one hundred (၁၀၀)"?',o:['တစ်ရာ','လေး','မသွားဘူး','မနေ့က'],a:0},{t:'mc',q:'Review — which means "this is water"?',o:['ဒါရေပါ','ကလေးနှစ်ယောက်','ကလေး','ကောင်'],a:0}]},
 
 /* --- Topic 3: money & prices --- */
 {id:'my_money',title:'Money & prices',step:'learn',meta:'ကျပ် ပိုက်ဆံ ဘယ်လောက်လဲ',vocab:[['ပိုက်ဆံ','paiq hsan','money'],['ကျပ်','kyaq','kyat (Myanmar money)'],['ဘယ်လောက်လဲ','beh lauq leh','how much?'],['ဒါဘယ်လောက်လဲ','da beh lauq leh','how much is this?'],['ဈေးကြီးတယ်','zei kyi de','it is expensive'],['ဈေးပေါတယ်','zei paw de','it is cheap']],ex:[
@@ -1296,7 +1296,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: How much is this?',a:['ဒါ','ဘယ်လောက်','လဲ'],pool:['ဒါ','ဘယ်လောက်','လဲ','ပေးပါ']},
 {t:'mc',q:'Amounts (money, water) ask with…',o:['ဘယ်လောက်','ဘယ်နှ','ဘာ','ဘယ်သူ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ကျပ်','kyat'],['ပိုက်ဆံ','money'],['ဈေးကြီးတယ်','expensive'],['ဒါဘယ်လောက်လဲ','how much is this?']]},
-{t:'mc',q:'Review — which means "excuse me"?',o:['တစ်ဆိတ်လောက်','ငါး','အစ်ကို','လက်ဖက်ရည်ဆိုင်'],a:0}]},
+{t:'mc',q:'Review — which means "excuse me"?',o:['တစ်ဆိတ်လောက်','ငါး','အစ်ကို','လက်ဖက်ရည်ဆိုင်'],a:0},{t:'mc',q:'Review — which means "know"?',o:['သိတယ်','တစ်ခွက်ပေးပါ','လက်ဖက်ရည်နှစ်ခွက်','ခွက်'],a:0}]},
 
 /* --- Topic 4: hundreds & thousands --- */
 {id:'my_bignum',title:'Big numbers',step:'learn',meta:'ရာ ထောင် သောင်း — kyat prices',vocab:[['ရာ','ya','hundred'],['ထောင်','htaung','thousand'],['သောင်း','thaung','ten thousand'],['ငါးရာ','nga ya','five hundred (၅၀၀)'],['တစ်ထောင်','ta htaung','one thousand (၁၀၀၀)'],['ငါးထောင်ကျပ်','nga htaung kyaq','five thousand kyat']],ex:[
@@ -1338,7 +1338,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: one thousand kyat',a:['တစ်','ထောင်','ကျပ်'],pool:['တစ်','ထောင်','ကျပ်','ရာ']},
 {t:'mc',q:'1000 is said…',o:['ta htaung','ta thaung','tiq ya','ta hkweq'],a:0},
 {t:'match',q:'Match amount and figure',pairs:[['ရာ','100'],['ထောင်','1000'],['သောင်း','10,000'],['ငါးရာ','500']]},
-{t:'mc',q:'Review — which means "nice to meet you"?',o:['တွေ့ရတာဝမ်းသာပါတယ်','ရေ','ဒီနေ့','ကျောင်း'],a:0}]},
+{t:'mc',q:'Review — which means "nice to meet you"?',o:['တွေ့ရတာဝမ်းသာပါတယ်','ရေ','ဒီနေ့','ကျောင်း'],a:0},{t:'mc',q:'Review — which means "going? / do you go?"?',o:['သွားလား','ဈေးပေါတယ်','ဈေးကြီးတယ်','ဒါဘယ်လောက်လဲ'],a:0}]},
 
 /* --- Topic 5: buying, selling & bargaining --- */
 {id:'my_buy',title:'Buy & bargain',step:'learn',meta:'ဝယ်တယ် ရောင်းတယ် လျှော့ပေးပါ',vocab:[['ဝယ်တယ်','weh de','buy'],['ရောင်းတယ်','yaung de','sell'],['ဝယ်ချင်တယ်','weh chin de','want to buy'],['လျှော့ပေးပါ','shaw pei ba','please lower the price'],['ယူမယ်','yu meh','(I) will take it']],ex:[
@@ -1380,7 +1380,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I will take it — take + future',a:['ယူ','မယ်'],pool:['ယူ','မယ်','တယ်']},
 {t:'mc',q:'The friendly bargaining opener is…',o:['လျှော့ပေးပါ','မဝယ်ဘူး','ရောင်းတယ်','ဒါပဲ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ဝယ်တယ်','buy'],['ရောင်းတယ်','sell'],['ယူမယ်','(I) will take it'],['ဝယ်ချင်တယ်','want to buy']]},
-{t:'mc',q:'Review — which means "that (near you)"?',o:['အဲဒါ','ကျောင်းကလာတယ်','တွေ့မယ်','ဘာစားမလဲ'],a:0}]},
+{t:'mc',q:'Review — which means "that (near you)"?',o:['အဲဒါ','ကျောင်းကလာတယ်','တွေ့မယ်','ဘာစားမလဲ'],a:0},{t:'mc',q:'Review — which means "will you eat?"?',o:['စားမလား','ငါးထောင်ကျပ်','ဈေးပေါတယ်','ဈေးကြီးတယ်'],a:0}]},
 
 /* --- Topic 6: clock time --- */
 {id:'my_time',title:'What time is it?',step:'learn',meta:'နာရီ မိနစ် ခွဲ',vocab:[['နာရီ','nayi','hour / o’clock / clock'],['မိနစ်','miniq','minute'],['ခွဲ','hkweh','half past'],['ဘယ်နှနာရီလဲ','beh hna nayi leh','what time is it?'],['သုံးနာရီ','thoun nayi','three o’clock'],['သုံးနာရီခွဲ','thoun nayi hkweh','half past three']],ex:[
@@ -1422,7 +1422,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: half past five',a:['ငါး','နာရီ','ခွဲ'],pool:['ငါး','နာရီ','ခွဲ','မိနစ်']},
 {t:'mc',q:'Half past = number + နာရီ +…',o:['ခွဲ','မိနစ်','ခု','ရာ'],a:0},
 {t:'match',q:'Match time and clock',pairs:[['ငါးနာရီ','5:00'],['ငါးနာရီခွဲ','5:30'],['သုံးနာရီ','3:00'],['ဆယ်နာရီ','10:00']]},
-{t:'mc',q:'Review — which means "eat a meal"?',o:['ထမင်းစားတယ်','ခွဲ','ဆရာမ','ကောင်းတယ်'],a:0}]},
+{t:'mc',q:'Review — which means "eat a meal"?',o:['ထမင်းစားတယ်','ခွဲ','ဆရာမ','ကောင်းတယ်'],a:0},{t:'mc',q:'Review — which means "really? / is that so?"?',o:['ဟုတ်လား','ယူမယ်','လျှော့ပေးပါ','ဝယ်ချင်တယ်'],a:0}]},
 
 /* --- Topic 7: days of the week --- */
 {id:'my_days',title:'Days of the week',step:'learn',meta:'တနင်္လာ … တနင်္ဂနွေ',vocab:[['တနင်္လာ','ta nin la','Monday'],['အင်္ဂါ','in ga','Tuesday'],['ဗုဒ္ဓဟူး','bouq da hu','Wednesday'],['ကြာသပတေး','kya tha ba dei','Thursday'],['သောကြာ','thauq kya','Friday'],['စနေ','sa nei','Saturday'],['တနင်္ဂနွေ','ta nin ga nwei','Sunday']],ex:[
@@ -1464,7 +1464,7 @@ const MY_LESSONS=[
 {t:'mc',q:'Monday · Tuesday · Wednesday =',o:['တနင်္လာ · အင်္ဂါ · ဗုဒ္ဓဟူး','အင်္ဂါ · တနင်္လာ · ဗုဒ္ဓဟူး','စနေ · သောကြာ · အင်္ဂါ','တနင်္ဂနွေ · စနေ · သောကြာ'],a:0},
 {t:'li',q:'Listen — which day?',say:'စနေ',o:['စနေ','ညနေ','တနင်္ဂနွေ','သောကြာ'],a:0},
 {t:'match',q:'Match day and meaning',pairs:[['တနင်္လာ','Monday'],['ကြာသပတေး','Thursday'],['စနေ','Saturday'],['တနင်္ဂနွေ','Sunday']]},
-{t:'mc',q:'Review — which means "will come tomorrow"?',o:['မနက်ဖြန်လာမယ်','ဒါဘယ်လောက်လဲ','ဘယ်ကလာလဲ','စားတယ်'],a:0}]},
+{t:'mc',q:'Review — which means "will come tomorrow"?',o:['မနက်ဖြန်လာမယ်','ဒါဘယ်လောက်လဲ','ဘယ်ကလာလဲ','စားတယ်'],a:0},{t:'mc',q:'Review — which means "is it OK?"?',o:['ရလား','သုံးနာရီခွဲ','သုံးနာရီ','ဘယ်နှနာရီလဲ'],a:0}]},
 
 /* ===================== ZONE 6 · DESCRIBE IT =====================
    Adjectives ARE verbs in Burmese (stative verbs): ကြီးတယ် "bigs".
@@ -1510,7 +1510,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The teashop is good',a:['လက်ဖက်ရည်ဆိုင်','ကောင်းတယ်'],pool:['လက်ဖက်ရည်ဆိုင်','ကောင်းတယ်','ဆိုးတယ်']},
 {t:'mc',q:'To negate any describing word:',o:['မ + word + ဘူး','word + လား','အ + word','word + မယ်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ကြီးတယ်','is big'],['သေးတယ်','is small'],['အသစ်','new'],['မကောင်းဘူး','is not good']]},
-{t:'mc',q:'Review — which means "does not drink"?',o:['မသောက်ဘူး','ကု','အသစ်','လက်ဖက်ရည်ဆိုင်'],a:0}]},
+{t:'mc',q:'Review — which means "does not drink"?',o:['မသောက်ဘူး','ကု','အသစ်','လက်ဖက်ရည်ဆိုင်'],a:0},{t:'mc',q:'Review — which means "who"?',o:['ဘယ်သူ','တနင်္ဂနွေ','စနေ','သောကြာ'],a:0}]},
 
 /* --- Topic 2: hot, cold & tastes --- */
 {id:'my_taste',title:'Hot, cold & tasty',step:'learn',meta:'ပူ အေး စပ် ချို',vocab:[['ပူတယ်','pu de','is hot'],['အေးတယ်','ei de','is cold'],['စပ်တယ်','saq de','is spicy'],['ချိုတယ်','cho de','is sweet'],['လက်ဖက်ရည်ပူတယ်','lahpeq yeh pu de','the tea is hot'],['ရေအေးတယ်','ye ei de','the water is cold']],ex:[
@@ -1552,7 +1552,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The fish curry is sweet',a:['ငါးဟင်း','ချိုတယ်'],pool:['ငါးဟင်း','ချိုတယ်','စပ်တယ်']},
 {t:'mc',q:'Hot / cold / spicy / sweet =',o:['ပူ · အေး · စပ် · ချို','အေး · ပူ · ချို · စပ်','ပူ · စပ် · အေး · ချို','ချို · စပ် · အေး · ပူ'],a:0},
 {t:'match',q:'Match taste and meaning',pairs:[['ပူတယ်','is hot'],['အေးတယ်','is cold'],['စပ်တယ်','is spicy'],['ချိုတယ်','is sweet']]},
-{t:'mc',q:'Review — which means "want to drink"?',o:['သောက်ချင်တယ်','ရန်ကုန်ကိုသွားမယ်','သွားချင်တယ်','ကိ'],a:0}]},
+{t:'mc',q:'Review — which means "want to drink"?',o:['သောက်ချင်တယ်','ရန်ကုန်ကိုသွားမယ်','သွားချင်တယ်','ကိ'],a:0},{t:'mc',q:'Review — which means "what will you eat?"?',o:['ဘာစားမလဲ','မကောင်းဘူး','အဟောင်း','အသစ်'],a:0}]},
 
 /* --- Topic 3: colors --- */
 {id:'my_color',title:'Colors',step:'learn',meta:'အနီ အပြာ အဝါ အစိမ်း အဖြူ အမည်း',vocab:[['အနီ','a ni','red'],['အပြာ','a pya','blue'],['အဝါ','a wa','yellow'],['အစိမ်း','a sein','green'],['အဖြူ','a hpyu','white'],['အမည်း','a meh','black']],ex:[
@@ -1594,7 +1594,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I like green (woman speaking)',a:['ကျွန်မ','အစိမ်း','ကြိုက်တယ်'],pool:['ကျွန်မ','အစိမ်း','ကြိုက်တယ်','အပြာ']},
 {t:'mc',q:'Color words wear the prefix…',o:['အ','မ','ဘ','တ'],a:0},
 {t:'match',q:'Match color and meaning',pairs:[['အပြာ','blue'],['အဝါ','yellow'],['အဖြူ','white'],['အနီ','red']]},
-{t:'mc',q:'Review — which means "come from school"?',o:['ကျောင်းကလာတယ်','မနေ့က','ဝယ်ချင်တယ်','သုံးနာရီခွဲ'],a:0}]},
+{t:'mc',q:'Review — which means "come from school"?',o:['ကျောင်းကလာတယ်','မနေ့က','ဝယ်ချင်တယ်','သုံးနာရီခွဲ'],a:0},{t:'mc',q:'Review — which means "who is it?"?',o:['ဘယ်သူလဲ','ရေအေးတယ်','လက်ဖက်ရည်ပူတယ်','ချိုတယ်'],a:0}]},
 
 /* --- Topic 4: comparisons ပို / ထက် / အ…ဆုံး --- */
 {id:'my_cmp',title:'Bigger & best',step:'learn',meta:'ပို…တယ် ထက် အ…ဆုံး',vocab:[['ပို','po','more'],['ပိုကြီးတယ်','po kyi de','is bigger'],['ပိုကောင်းတယ်','po kaung de','is better'],['ထက်','htaq','than'],['အကြီးဆုံး','a kyi zoun','the biggest'],['အကောင်းဆုံး','a kaung zoun','the best']],ex:[
@@ -1636,7 +1636,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: This one is bigger',a:['ဒါက','ပိုကြီးတယ်'],pool:['ဒါက','ပိုကြီးတယ်','အကြီးဆုံး']},
 {t:'mc',q:'more · than · most =',o:['ပို · ထက် · အ…ဆုံး','ထက် · ပို · အ…ဆုံး','အ…ဆုံး · ပို · ထက်','ပို · အ…ဆုံး · ထက်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ပိုကြီးတယ်','is bigger'],['ပိုကောင်းတယ်','is better'],['အကြီးဆုံး','the biggest'],['အကောင်းဆုံး','the best']]},
-{t:'mc',q:'Review — which means "as for me, I…"?',o:['ကျွန်တော်က','သူငယ်ချင်းနဲ့သွားမယ်','တစ်ထောင်','ကလေးနှစ်ယောက်'],a:0}]},
+{t:'mc',q:'Review — which means "as for me, I…"?',o:['ကျွန်တော်က','သူငယ်ချင်းနဲ့သွားမယ်','တစ်ထောင်','ကလေးနှစ်ယောက်'],a:0},{t:'mc',q:'Review — which means "do not want to eat"?',o:['မစားချင်ဘူး','အမည်း','အဖြူ','အစိမ်း'],a:0}]},
 
 /* --- Topic 5: feelings --- */
 {id:'my_feel',title:'Feelings',step:'learn',meta:'ပျော် ဝမ်းနည်း ပင်ပန်း ဆာ ကြောက်',vocab:[['ပျော်တယ်','pyaw de','is happy'],['ဝမ်းနည်းတယ်','wun neh de','is sad'],['ပင်ပန်းတယ်','pin ban de','is tired'],['ဗိုက်ဆာတယ်','baiq hsa de','is hungry'],['ရေဆာတယ်','ye hsa de','is thirsty'],['ကြောက်တယ်','kyauq de','is afraid']],ex:[
@@ -1678,7 +1678,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I am happy (man speaking)',a:['ကျွန်တော်','ပျော်တယ်'],pool:['ကျွန်တော်','ပျော်တယ်','ဝမ်းနည်းတယ်']},
 {t:'mc',q:'Thirsty is literally…',o:['water-hungry','belly-empty','mouth-dry','tea-wanting'],a:0},
 {t:'match',q:'Match feeling and meaning',pairs:[['ပျော်တယ်','is happy'],['ပင်ပန်းတယ်','is tired'],['ဗိုက်ဆာတယ်','is hungry'],['ကြောက်တယ်','is afraid']]},
-{t:'mc',q:'Review — which means "water and rice"?',o:['ရေနဲ့ထမင်း','နို့','ကု','အိမ်'],a:0}]},
+{t:'mc',q:'Review — which means "water and rice"?',o:['ရေနဲ့ထမင်း','နို့','ကု','အိမ်'],a:0},{t:'mc',q:'Review — which means "will go to Yangon"?',o:['ရန်ကုန်ကိုသွားမယ်','အကောင်းဆုံး','အကြီးဆုံး','ထက်'],a:0}]},
 
 /* --- Topic 6: weather & the three seasons --- */
 {id:'my_wx',title:'Weather & seasons',step:'learn',meta:'မိုး နေ လေ + ရာသီ',vocab:[['မိုး','mo','rain'],['မိုးရွာတယ်','mo ywa de','it is raining'],['နေပူတယ်','ne pu de','it is sunny & hot'],['လေ','lei','wind'],['နွေရာသီ','nwei yathi','the hot season'],['မိုးရာသီ','mo yathi','the rainy season'],['ဆောင်းရာသီ','hsaung yathi','the cool season']],ex:[
@@ -1720,7 +1720,7 @@ const MY_LESSONS=[
 {t:'mc',q:'Myanmar’s three seasons are…',o:['hot · rainy · cool','spring · summer · autumn','wet · dry · windy','hot · cold · mild'],a:0},
 {t:'li',q:'Listen — which one?',say:'မိုးရွာတယ်',o:['မိုးရွာတယ်','မိုးရာသီ','မိုး','နေပူတယ်'],a:0},
 {t:'match',q:'Match weather and meaning',pairs:[['မိုး','rain'],['လေ','wind'],['မိုးရွာတယ်','it is raining'],['မိုးရာသီ','rainy season']]},
-{t:'mc',q:'Review — which means "will go with a friend"?',o:['သူငယ်ချင်းနဲ့သွားမယ်','ဆယ့်တစ်','မိုးရာသီ','ဟုတ်တယ်'],a:0}]},
+{t:'mc',q:'Review — which means "will go with a friend"?',o:['သူငယ်ချင်းနဲ့သွားမယ်','ဆယ့်တစ်','မိုးရာသီ','ဟုတ်တယ်'],a:0},{t:'mc',q:'Review — which means "come from home"?',o:['အိမ်ကလာတယ်','ကြောက်တယ်','ရေဆာတယ်','ဗိုက်ဆာတယ်'],a:0}]},
 
 /* --- Topic 7: body & health --- */
 {id:'my_body',title:'Body & health',step:'learn',meta:'ခေါင်း ဗိုက် နာ ဆေး ဆရာဝန်',vocab:[['ခေါင်း','gaung','head'],['ဗိုက်','baiq','stomach / belly'],['ခေါင်းကိုက်တယ်','gaung kaiq de','have a headache'],['ဗိုက်နာတယ်','baiq na de','stomach hurts'],['ဆေး','hsei','medicine'],['ဆရာဝန်','hsaya wun','doctor'],['နေမကောင်းဘူး','ne ma kaung bu','not feeling well']],ex:[
@@ -1761,7 +1761,7 @@ const MY_LESSONS=[
 {t:'mc',q:'What does this mean?',d:'ဆေး',o:['medicine','market','shop','pain'],a:0},
 {t:'wb',q:'Build: My head aches — head bites',a:['ခေါင်း','ကိုက်တယ်'],pool:['ခေါင်း','ကိုက်တယ်','နာတယ်']},
 {t:'mc',q:'The flip of နေကောင်းလား when you are ill:',o:['နေမကောင်းဘူး','နေကောင်းပါတယ်','မသိဘူး','ဝမ်းနည်းတယ်'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['ခေါင်း','head'],['ဗိုက်','stomach'],['ဆေး','medicine'],['ဆရာဝန်','doctor']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['ခေါင်း','head'],['ဗိုက်','stomach'],['ဆေး','medicine'],['ဆရာဝန်','doctor']]},{t:'mc',q:'Review — which means "I am well"?',o:['နေကောင်းပါတယ်','ဆောင်းရာသီ','မိုးရာသီ','နွေရာသီ'],a:0},{t:'mc',q:'Review — which means "U — older man (Mr)"?',o:['ဦး','ဆောင်းရာသီ','မိုးရာသီ','နွေရာသီ'],a:0}]},
 
 /* ===================== ZONE 7 · THEN & NOW =====================
    Time-depth & ability: past ခဲ့, happening-now နေ, ever ဖူး, already ပြီ,
@@ -1807,7 +1807,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) came yesterday',a:['မနေ့က','လာခဲ့တယ်'],pool:['မနေ့က','လာခဲ့တယ်','လာမယ်']},
 {t:'mc',q:'The past marker that slots before တယ် is…',o:['ခဲ့','ချင်','နေ','ဖူး'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['စားခဲ့တယ်','ate'],['လာခဲ့တယ်','came'],['ဝယ်ခဲ့တယ်','bought'],['သွားခဲ့တယ်','went']]},
-{t:'mc',q:'Review — which means "two cups of tea"?',o:['လက်ဖက်ရည်နှစ်ခွက်','ရပါတယ်','လေး','အကောင်းဆုံး'],a:0}]},
+{t:'mc',q:'Review — which means "two cups of tea"?',o:['လက်ဖက်ရည်နှစ်ခွက်','ရပါတယ်','လေး','အကောင်းဆုံး'],a:0},{t:'mc',q:'Review — which means "Daw — older woman (Ms)"?',o:['ဒေါ်','နေမကောင်းဘူး','ဆရာဝန်','ဆေး'],a:0}]},
 
 /* --- Topic 2: happening now with နေ --- */
 {id:'my_prog',title:'Right now: နေ',step:'learn',meta:'စားနေတယ် — in the middle of it',vocab:[['စားနေတယ်','sa ne de','is eating'],['လုပ်နေတယ်','louq ne de','is doing / working'],['လာနေတယ်','la ne de','is coming'],['မိုးရွာနေတယ်','mo ywa ne de','it is raining (right now)'],['ဘာလုပ်နေလဲ','ba louq ne leh','what are you doing?']],ex:[
@@ -1849,7 +1849,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: She is coming now',a:['သူ','လာနေတယ်'],pool:['သူ','လာနေတယ်','လာခဲ့တယ်']},
 {t:'mc',q:'"In the middle of doing it" slots which word before တယ်?',o:['နေ','ခဲ့','ဖူး','ရ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['စားနေတယ်','is eating'],['လာနေတယ်','is coming'],['လုပ်နေတယ်','is working'],['ဘာလုပ်နေလဲ','what are you doing?']]},
-{t:'mc',q:'Review — which means "one cup, please"?',o:['တစ်ခွက်ပေးပါ','သောက်ချင်တယ်','ကောင်','ဆယ်'],a:0}]},
+{t:'mc',q:'Review — which means "one cup, please"?',o:['တစ်ခွက်ပေးပါ','သောက်ချင်တယ်','ကောင်','ဆယ်'],a:0},{t:'mc',q:'Review — which means "older brother"?',o:['အစ်ကို','မနေ့ကသွားခဲ့တယ်','ဝယ်ခဲ့တယ်','လာခဲ့တယ်'],a:0}]},
 
 /* --- Topic 3: ever / have-you-ever ဖူး --- */
 {id:'my_ever',title:'Ever: ဖူး',step:'learn',meta:'သွားဖူးတယ် — life experience',vocab:[['သွားဖူးတယ်','thwa hpu de','have been (there)'],['စားဖူးတယ်','sa hpu de','have eaten / tried'],['မစားဖူးဘူး','ma sa hpu bu','have never eaten'],['ရန်ကုန်ကိုသွားဖူးလား','yangoun go thwa hpu la','have you ever been to Yangon?'],['တစ်ခါ','ta hka','once / one time']],ex:[
@@ -1891,7 +1891,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) have been once',a:['တစ်ခါ','သွားဖူးတယ်'],pool:['တစ်ခါ','သွားဖူးတယ်','သွားနေတယ်']},
 {t:'mc',q:'The life-experience marker is…',o:['ဖူး','ဘူး','နေ','ခဲ့'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['စားဖူးတယ်','have tried'],['မစားဖူးဘူး','never eaten'],['တစ်ခါ','once'],['သွားဖူးတယ်','have been']]},
-{t:'mc',q:'Review — which means "five thousand kyat"?',o:['ငါးထောင်ကျပ်','ကျပ်','မဟုတ်ဘူး','ရှစ်'],a:0}]},
+{t:'mc',q:'Review — which means "five thousand kyat"?',o:['ငါးထောင်ကျပ်','ကျပ်','မဟုတ်ဘူး','ရှစ်'],a:0},{t:'mc',q:'Review — which means "older sister"?',o:['အစ်မ','ဘာလုပ်နေလဲ','မိုးရွာနေတယ်','လာနေတယ်'],a:0}]},
 
 /* --- Topic 4: already / change of state ပြီ --- */
 {id:'my_pri',title:'Already: ပြီ',step:'learn',meta:'ရောက်ပြီ စားပြီးပြီ',vocab:[['ပြီးပြီ','pi bi','finished / done'],['စားပြီးပြီ','sa pi bi','already eaten'],['ရောက်ပြီ','yauq pi','arrived / here now'],['ရပြီ','ya bi','got it / OK now'],['ရောက်တယ်','yauq de','arrive / reach']],ex:[
@@ -1933,7 +1933,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I have) already eaten',a:['စားပြီးပြီ'],pool:['စားပြီးပြီ','စားနေတယ်']},
 {t:'mc',q:'"We are here!" =',o:['ရောက်ပြီ','ရပြီ','သွားပြီ','လာပြီလား'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ပြီးပြီ','finished'],['စားပြီးပြီ','already eaten'],['ရပြီ','got it / OK now'],['ရောက်ပြီ','arrived']]},
-{t:'mc',q:'Review — which means "three o’clock"?',o:['သုံးနာရီ','ဆယ့်တစ်','နေကောင်းပါတယ်','ပြီးပြီ'],a:0}]},
+{t:'mc',q:'Review — which means "three o’clock"?',o:['သုံးနာရီ','ဆယ့်တစ်','နေကောင်းပါတယ်','ပြီးပြီ'],a:0},{t:'mc',q:'Review — which means "water, please"?',o:['ရေပေးပါ','တစ်ခါ','ရန်ကုန်ကိုသွားဖူးလား','မစားဖူးဘူး'],a:0}]},
 
 /* --- Topic 5: can နိုင် & know-how တတ် --- */
 {id:'my_can',title:'Can & know how',step:'learn',meta:'နိုင် vs တတ် + မြန်မာလို',vocab:[['ပြောတယ်','pyaw de','speak / say'],['မြန်မာလို','myanma lo','in Burmese'],['ပြောတတ်တယ်','pyaw daq de','know how to speak'],['သွားနိုင်တယ်','thwa naing de','can go (possible)'],['မသွားနိုင်ဘူး','ma thwa naing bu','cannot go'],['နည်းနည်း','neh neh','a little']],ex:[
@@ -1975,7 +1975,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I can speak a little Burmese (woman speaking)',a:['ကျွန်မ','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်'],pool:['ကျွန်မ','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်','ကြိုက်တယ်']},
 {t:'mc',q:'Possible vs learned-skill =',o:['နိုင် vs တတ်','တတ် vs နိုင်','နိုင် vs ချင်','ရ vs နိုင်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['သွားနိုင်တယ်','can go'],['ပြောတတ်တယ်','know how to speak'],['မြန်မာလို','in Burmese'],['နည်းနည်း','a little']]},
-{t:'mc',q:'Review — which means "half past three"?',o:['သုံးနာရီခွဲ','ဆေး','ကို','မန္တလေး'],a:0}]},
+{t:'mc',q:'Review — which means "half past three"?',o:['သုံးနာရီခွဲ','ဆေး','ကို','မန္တလေး'],a:0},{t:'mc',q:'Review — which means "tea, please"?',o:['လက်ဖက်ရည်ပေးပါ','ရောက်တယ်','ရပြီ','ရောက်ပြီ'],a:0}]},
 
 /* --- Topic 6: must / have to ရ --- */
 {id:'my_must',title:'Have to: ရ',step:'learn',meta:'သွားရမယ် — duties & rules',vocab:[['သွားရမယ်','thwa ya meh','must go / have to go'],['လုပ်ရမယ်','louq ya meh','must do'],['အလုပ်','alouq','work (noun)'],['အလုပ်လုပ်တယ်','alouq louq de','to work'],['မလုပ်ရဘူး','ma louq ya bu','not allowed to do']],ex:[
@@ -2017,7 +2017,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I must go home (woman speaking)',a:['ကျွန်မ','အိမ်','ကို','သွားရမယ်'],pool:['ကျွန်မ','အိမ်','ကို','သွားရမယ်','သွားဖူးတယ်']},
 {t:'mc',q:'ရ shows up as "OK" (ရတယ်), "got it" (ရပြီ) and…',o:['must (ရမယ်)','ever (ဖူး)','still (နေ)','want (ချင်)'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['သွားရမယ်','must go'],['အလုပ်','work (noun)'],['မလုပ်ရဘူး','not allowed'],['အလုပ်လုပ်တယ်','to work']]},
-{t:'mc',q:'Review — which means "Monday"?',o:['တနင်္လာ','ရေဆာတယ်','အကြီးဆုံး','ကျပ်'],a:0}]},
+{t:'mc',q:'Review — which means "Monday"?',o:['တနင်္လာ','ရေဆာတယ်','အကြီးဆုံး','ကျပ်'],a:0},{t:'mc',q:'Review — which means "that is all"?',o:['ဒါပဲ','နည်းနည်း','မသွားနိုင်ဘူး','သွားနိုင်တယ်'],a:0}]},
 
 /* --- Topic 7: polite requests & commands verb + ပါ --- */
 {id:'my_req',title:'Please do: verb + ပါ',step:'learn',meta:'လာပါ ထိုင်ပါ ခဏစောင့်ပါ',vocab:[['လာပါ','la ba','please come'],['ထိုင်ပါ','htain ba','please sit'],['စားပါ','sa ba','please eat'],['ခဏ','hkana','a moment'],['ခဏစောင့်ပါ','hkana saun ba','wait a moment, please']],ex:[
@@ -2059,7 +2059,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Please eat a meal — meal eat-please',a:['ထမင်း','စားပါ'],pool:['ထမင်း','စားပါ','စားမယ်']},
 {t:'mc',q:'Gentle commands = bare verb +…',o:['ပါ','တယ်','မယ်','ရ'],a:0},
 {t:'match',q:'Match request and meaning',pairs:[['လာပါ','please come'],['ထိုင်ပါ','please sit'],['စားပါ','please eat'],['ခဏစောင့်ပါ','wait a moment']]},
-{t:'mc',q:'Review — which means "Wednesday"?',o:['ဗုဒ္ဓဟူး','ရောက်တယ်','ဒါပဲ','ကိုး'],a:0}]},
+{t:'mc',q:'Review — which means "Wednesday"?',o:['ဗုဒ္ဓဟူး','ရောက်တယ်','ဒါပဲ','ကိုး'],a:0},{t:'mc',q:'Review — which means "three (things)"?',o:['သုံးခု','တစ်ထောင်','ငါးရာ','သောင်း'],a:0}]},
 
 /* ===================== ZONE 8 · OUT & ABOUT =====================
    Getting around Myanmar: vehicles + စီး ride, directions (ဘယ်/ညာ/
@@ -2106,7 +2106,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) will ride a motorbike tomorrow',a:['မနက်ဖြန်','ဆိုင်ကယ်','စီးမယ်'],pool:['မနက်ဖြန်','ဆိုင်ကယ်','စီးမယ်','စီးခဲ့တယ်']},
 {t:'mc',q:'Vehicles take which verb?',o:['စီး','စား','စောင့်','ဝယ်'],a:0},
 {t:'match',q:'Match vehicle and meaning',pairs:[['တက္ကစီ','taxi'],['ရထား','train'],['ဆိုင်ကယ်','motorbike'],['ကားစီးတယ်','ride a car / bus']]},
-{t:'mc',q:'Review — which means "Thursday"?',o:['ကြာသပတေး','ဟိုဟာ','ပျော်တယ်','နို့'],a:0}]},
+{t:'mc',q:'Review — which means "Thursday"?',o:['ကြာသပတေး','ဟိုဟာ','ပျော်တယ်','နို့'],a:0},{t:'mc',q:'Review — which means "how many people?"?',o:['ဘယ်နှယောက်လဲ','ခဏစောင့်ပါ','ခဏ','စားပါ'],a:0}]},
 
 /* --- Topic 2: directions --- */
 {id:'my_dir',title:'Left, right, straight',step:'learn',meta:'ဘယ် ညာ တည့်တည့် ကွေ့',vocab:[['ဘယ်ဘက်','beh beq','left side'],['ညာဘက်','nya beq','right side'],['တည့်တည့်','teh deh','straight ahead'],['ညာကွေ့','nya kweh','turn right'],['ဘယ်ကွေ့','beh kweh','turn left'],['တည့်တည့်သွားပါ','teh deh thwa ba','go straight, please']],ex:[
@@ -2148,7 +2148,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Turn right, please',a:['ညာကွေ့','ပါ'],pool:['ညာကွေ့','ပါ','တည့်တည့်']},
 {t:'mc',q:'left · right · straight =',o:['ဘယ် · ညာ · တည့်တည့်','ညာ · ဘယ် · တည့်တည့်','ဘယ် · တည့်တည့် · ညာ','ညာ · တည့်တည့် · ဘယ်'],a:0},
 {t:'match',q:'Match direction and meaning',pairs:[['ဘယ်ဘက်','left side'],['ညာကွေ့','turn right'],['တည့်တည့်','straight ahead'],['ညာဘက်','right side']]},
-{t:'mc',q:'Review — which means "Friday"?',o:['သောကြာ','သူငယ်ချင်း','ရာ','နာရီ'],a:0}]},
+{t:'mc',q:'Review — which means "Friday"?',o:['သောကြာ','သူငယ်ချင်း','ရာ','နာရီ'],a:0},{t:'mc',q:'Review — which means "five hundred (၅၀၀)"?',o:['ငါးရာ','တစ်ထောင်','သောင်း','ထောင်'],a:0}]},
 
 /* --- Topic 3: far & near --- */
 {id:'my_farnear',title:'Far & near',step:'learn',meta:'ဝေးတယ် နီးတယ် ဒီနားမှာ',vocab:[['ဝေးတယ်','wei de','is far'],['နီးတယ်','ni de','is near'],['ဝေးလား','wei la','is it far?'],['ဒီနားမှာ','di na hma','near here'],['ဟိုမှာ','ho hma','over there']],ex:[
@@ -2190,7 +2190,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The school is over there',a:['ကျောင်း','ဟိုမှာ','ရှိတယ်'],pool:['ကျောင်း','ဟိုမှာ','ရှိတယ်','ဒီနားမှာ']},
 {t:'mc',q:'far · near =',o:['ဝေး · နီး','နီး · ဝေး','ဝယ် · နီး','ဝေး · နေ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ဝေးတယ်','is far'],['နီးတယ်','is near'],['ဟိုမှာ','over there'],['ဒီနားမှာ','near here']]},
-{t:'mc',q:'Review — which means "Sunday"?',o:['တနင်္ဂနွေ','ခဏ','လာနေတယ်','ဒီနေ့'],a:0}]},
+{t:'mc',q:'Review — which means "Sunday"?',o:['တနင်္ဂနွေ','ခဏ','လာနေတယ်','ဒီနေ့'],a:0},{t:'mc',q:'Review — which means "one thousand (၁၀၀၀)"?',o:['တစ်ထောင်','ငါးရာ','သောင်း','ထောင်'],a:0}]},
 
 /* --- Topic 4: tickets & stations --- */
 {id:'my_tik',title:'Tickets & stations',step:'learn',meta:'လက်မှတ် ဘူတာ လေဆိပ် ထွက်',vocab:[['လက်မှတ်','leq hmaq','ticket'],['ဘူတာ','bu ta','train station'],['လေဆိပ်','lei zeiq','airport'],['ထွက်တယ်','htweq de','leave / depart'],['အချိန်','a chein','time'],['ဘယ်အချိန်ထွက်လဲ','beh a chein htweq leh','what time does it leave?']],ex:[
@@ -2232,7 +2232,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: What time does the train leave?',a:['ရထား','ဘယ်အချိန်','ထွက်လဲ'],pool:['ရထား','ဘယ်အချိန်','ထွက်လဲ','နီးလား']},
 {t:'mc',q:'depart · arrive =',o:['ထွက် · ရောက်','ရောက် · ထွက်','သွား · လာ','စီး · ဆင်း'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['လက်မှတ်','ticket'],['ဘူတာ','train station'],['လေဆိပ်','airport'],['ဘယ်အချိန်ထွက်လဲ','what time does it leave?']]},
-{t:'mc',q:'Review — which means "old (things)"?',o:['အဟောင်း','ရေပေးပါ','ထွက်တယ်','စားမလား'],a:0}]},
+{t:'mc',q:'Review — which means "old (things)"?',o:['အဟောင်း','ရေပေးပါ','ထွက်တယ်','စားမလား'],a:0},{t:'mc',q:'Review — which means "sell"?',o:['ရောင်းတယ်','ဟိုမှာ','ဒီနားမှာ','ဝေးလား'],a:0}]},
 
 /* --- Topic 5: hotel & the have-verb ရှိ --- */
 {id:'my_hotel',title:'At the hotel',step:'learn',meta:'ရှိ — have & there-is + အခန်း',vocab:[['ရှိတယ်','shi de','there is / have'],['မရှိဘူး','ma shi bu','there is not / do not have'],['ဟိုတယ်','ho teh','hotel'],['အခန်း','a hkan','room'],['အခန်းရှိလား','a hkan shi la','do you have a room?'],['သော့','thaw','key']],ex:[
@@ -2274,7 +2274,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I do not have time',a:['အချိန်','မရှိဘူး'],pool:['အချိန်','မရှိဘူး','ရှိတယ်']},
 {t:'mc',q:'The have/there-is verb is…',o:['ရှိ','ရ','နေ','ရောက်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ရှိတယ်','there is / have'],['အခန်း','room'],['သော့','key'],['ဟိုတယ်','hotel']]},
-{t:'mc',q:'Review — which means "the tea is hot"?',o:['လက်ဖက်ရည်ပူတယ်','ဈေးကိုသွားတယ်','ခွက်','လက်ဖက်ရည်ဆိုင်'],a:0}]},
+{t:'mc',q:'Review — which means "the tea is hot"?',o:['လက်ဖက်ရည်ပူတယ်','ဈေးကိုသွားတယ်','ခွက်','လက်ဖက်ရည်ဆိုင်'],a:0},{t:'mc',q:'Review — which means "(I) will take it"?',o:['ယူမယ်','ဘယ်အချိန်ထွက်လဲ','အချိန်','ထွက်တယ်'],a:0}]},
 
 /* --- Topic 6: months, years & dates --- */
 {id:'my_month',title:'Months & dates',step:'learn',meta:'လ နှစ် ရက် — the calendar',vocab:[['လ','la','month (& the moon)'],['ဒီလ','di la','this month'],['နောက်လ','nauq la','next month'],['နှစ်','hniq','year'],['ဒီနှစ်','di hniq','this year'],['ရက်','yeq','day (of the month)'],['ဘယ်နှရက်လဲ','beh hna yeq leh','what date is it?']],ex:[
@@ -2316,7 +2316,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (She) will come next month',a:['နောက်လ','လာမယ်'],pool:['နောက်လ','လာမယ်','လာခဲ့တယ်']},
 {t:'mc',q:'day · month · year =',o:['ရက် · လ · နှစ်','လ · ရက် · နှစ်','နှစ် · လ · ရက်','ရက် · နှစ် · လ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ရက်','date'],['ဒီလ','this month'],['ဒီနှစ်','this year'],['နောက်လ','next month']]},
-{t:'mc',q:'Review — which means "red"?',o:['အနီ','ခင်ဗျား','ကျောင်း','သွားချင်တယ်'],a:0}]},
+{t:'mc',q:'Review — which means "red"?',o:['အနီ','ခင်ဗျား','ကျောင်း','သွားချင်တယ်'],a:0},{t:'mc',q:'Review — which means "minute"?',o:['မိနစ်','သော့','အခန်းရှိလား','အခန်း'],a:0}]},
 
 /* --- Topic 7: phone & keeping in touch --- */
 {id:'my_phone',title:'On the phone',step:'learn',meta:'ဖုန်း နံပါတ် ဆက် ပို့',vocab:[['ဖုန်း','hpoun','phone'],['နံပါတ်','nan baq','number'],['ဖုန်းဆက်တယ်','hpoun hseq de','make a call'],['စာပို့တယ်','sa po de','send a message'],['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','hpoun nan baq beh lauq leh','what is your phone number?']],ex:[
@@ -2358,7 +2358,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: I will make a call tomorrow (man speaking)',a:['ကျွန်တော်','မနက်ဖြန်','ဖုန်းဆက်မယ်'],pool:['ကျွန်တော်','မနက်ဖြန်','ဖုန်းဆက်မယ်','စာပို့တယ်']},
 {t:'mc',q:'call · text =',o:['ဆက် · ပို့','ပို့ · ဆက်','ဝယ် · ရောင်း','ထွက် · ရောက်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ဖုန်း','phone'],['နံပါတ်','number'],['ဖုန်းဆက်တယ်','make a call'],['စာပို့တယ်','send a message']]},
-{t:'mc',q:'Review — which means "blue"?',o:['အပြာ','လုပ်တယ်','နေကောင်းပါတယ်','တနင်္လာ'],a:0}]},
+{t:'mc',q:'Review — which means "blue"?',o:['အပြာ','လုပ်တယ်','နေကောင်းပါတယ်','တနင်္လာ'],a:0},{t:'mc',q:'Review — which means "what time is it?"?',o:['ဘယ်နှနာရီလဲ','ဘယ်နှရက်လဲ','ရက်','ဒီနှစ်'],a:0}]},
 
 /* ===================== ZONE 9 · SAY MORE =====================
    The conversational glue: but ဒါပေမဲ့ (standard colloquial spelling per
@@ -2405,7 +2405,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) eat because (I) am hungry',a:['ဗိုက်ဆာလို့','စားတယ်'],pool:['ဗိုက်ဆာလို့','စားတယ်','ပြီးတော့']},
 {t:'mc',q:'but · because · and then =',o:['ဒါပေမဲ့ · လို့ · ပြီးတော့','လို့ · ဒါပေမဲ့ · ပြီးတော့','ပြီးတော့ · လို့ · ဒါပေမဲ့','ဒါပေမဲ့ · ပြီးတော့ · လို့'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ဒါပေမဲ့','but'],['လို့','because'],['ပြီးတော့','and then'],['ဗိုက်ဆာလို့စားတယ်','eat because hungry']]},
-{t:'mc',q:'Review — which means "yellow"?',o:['အဝါ','မစားဘူး','ထမင်းစားတယ်','သောက်တယ်'],a:0}]},
+{t:'mc',q:'Review — which means "yellow"?',o:['အဝါ','မစားဘူး','ထမင်းစားတယ်','သောက်တယ်'],a:0},{t:'mc',q:'Review — which means "Tuesday"?',o:['အင်္ဂါ','ဖုန်းနံပါတ်ဘယ်လောက်လဲ','စာပို့တယ်','ဖုန်းဆက်တယ်'],a:0}]},
 
 /* --- Topic 2: if/when ရင် --- */
 {id:'my_if',title:'If: ရင်',step:'learn',meta:'မိုးရွာရင် — ifs & whens',vocab:[['ရင်','yin','if / when'],['မိုးရွာရင်','mo ywa yin','if it rains'],['အချိန်ရှိရင်','a chein shi yin','if (you) have time'],['ဗိုက်ဆာရင်','baiq hsa yin','if (you) are hungry'],['မိုးရွာရင်မသွားဘူး','mo ywa yin ma thwa bu','if it rains, (I) will not go']],ex:[
@@ -2447,7 +2447,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: If it rains, (I) will stay at home',a:['မိုးရွာရင်','အိမ်မှာ','နေမယ်'],pool:['မိုးရွာရင်','အိမ်မှာ','နေမယ်','သွားမယ်']},
 {t:'mc',q:'Condition first, result after — which order is right?',o:['မိုးရွာရင် မသွားဘူး','မသွားဘူး မိုးရွာရင်','ရင်မိုးရွာ မသွားဘူး','မသွားရင် မိုးရွာဘူး'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ရင်','if / when'],['မိုးရွာရင်','if it rains'],['ဗိုက်ဆာရင်','if hungry'],['မိုးရွာရင်မသွားဘူး','if it rains, (I) will not go']]},
-{t:'mc',q:'Review — which means "white"?',o:['အဖြူ','ထမင်းစားတယ်','ရေပေးပါ','သူငယ်ချင်းနဲ့သွားမယ်'],a:0}]},
+{t:'mc',q:'Review — which means "white"?',o:['အဖြူ','ထမင်းစားတယ်','ရေပေးပါ','သူငယ်ချင်းနဲ့သွားမယ်'],a:0},{t:'mc',q:'Review — which means "is bad"?',o:['ဆိုးတယ်','ဗိုက်ဆာလို့စားတယ်','ဘာလို့လဲ','ပြီးတော့'],a:0}]},
 
 /* --- Topic 3: think, understand & say again --- */
 {id:'my_think',title:'I think…',step:'learn',meta:'ထင်တယ် နားလည်တယ် ပြန်ပြောပါ',vocab:[['ထင်တယ်','htin de','think'],['ကောင်းတယ်လို့ထင်တယ်','kaung de lo htin de','(I) think it is good'],['နားလည်တယ်','na leh de','understand'],['နားမလည်ဘူး','na ma leh bu','do not understand'],['ပြန်ပြောပါ','pyan pyaw ba','please say it again']],ex:[
@@ -2489,7 +2489,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Please say it again — again speak-please',a:['ပြန်','ပြောပါ'],pool:['ပြန်','ပြောပါ','ထင်တယ်']},
 {t:'mc',q:'The thought you report gets hooked with…',o:['လို့','ရင်','ကို','နဲ့'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['ထင်တယ်','think'],['နားလည်တယ်','understand'],['ပြန်ပြောပါ','say it again'],['နားမလည်ဘူး','do not understand']]},
-{t:'mc',q:'Review — which means "is bigger"?',o:['ပိုကြီးတယ်','တောင်းပန်ပါတယ်','တွေ့မယ်','ကျွန်တော်က'],a:0}]},
+{t:'mc',q:'Review — which means "is bigger"?',o:['ပိုကြီးတယ်','တောင်းပန်ပါတယ်','တွေ့မယ်','ကျွန်တော်က'],a:0},{t:'mc',q:'Review — which means "new"?',o:['အသစ်','မိုးရွာရင်မသွားဘူး','ဗိုက်ဆာရင်','အချိန်ရှိရင်'],a:0}]},
 
 /* --- Topic 4: occupations & the doer suffixes --- */
 {id:'my_job',title:'What do you do?',step:'learn',meta:'ဘာအလုပ်လုပ်လဲ + doers',vocab:[['ဘာအလုပ်လုပ်လဲ','ba alouq louq leh','what work do you do?'],['ကျောင်းသား','kyaung tha','student (male)'],['ကျောင်းသူ','kyaung thu','student (female)'],['လယ်သမား','leh thama','farmer'],['ဈေးသည်','zei theh','market vendor']],ex:[
@@ -2531,7 +2531,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: What work does he do? — he (topic) what work does',a:['သူက','ဘာ','အလုပ်','လုပ်လဲ'],pool:['သူက','ဘာ','အလုပ်','လုပ်လဲ','လုပ်တယ်']},
 {t:'mc',q:'school-son · field-worker · market-seller =',o:['student · farmer · vendor','teacher · student · farmer','vendor · farmer · student','farmer · vendor · student'],a:0},
 {t:'match',q:'Match worker and meaning',pairs:[['ကျောင်းသူ','student (f)'],['လယ်သမား','farmer'],['ဈေးသည်','vendor'],['ဘာအလုပ်လုပ်လဲ','what work do you do?']]},
-{t:'mc',q:'Review — which means "than"?',o:['ထက်','မနက်ဖြန်','ရှိတယ်','အဟောင်း'],a:0}]},
+{t:'mc',q:'Review — which means "than"?',o:['ထက်','မနက်ဖြန်','ရှိတယ်','အဟောင်း'],a:0},{t:'mc',q:'Review — which means "the water is cold"?',o:['ရေအေးတယ်','ပြန်ပြောပါ','နားမလည်ဘူး','နားလည်တယ်'],a:0}]},
 
 /* --- Topic 5: hobbies & free time --- */
 {id:'my_hobby',title:'Free time',step:'learn',meta:'ဘောလုံး သီချင်း စာဖတ် ရေကူး',vocab:[['ဘောလုံးကန်တယ်','baw loun kan de','play football'],['သီချင်းဆိုတယ်','thachin hso de','sing'],['သီချင်းနားထောင်တယ်','thachin na htaung de','listen to music'],['စာဖတ်တယ်','sa hpaq de','read'],['ရေကူးတယ်','ye ku de','swim']],ex:[
@@ -2573,7 +2573,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) play football on Saturday',a:['စနေနေ့','ဘောလုံး','ကန်တယ်'],pool:['စနေနေ့','ဘောလုံး','ကန်တယ်','ဆိုတယ်']},
 {t:'mc',q:'football · song · reading · swimming =',o:['ဘောလုံး · သီချင်း · စာဖတ် · ရေကူး','သီချင်း · ဘောလုံး · ရေကူး · စာဖတ်','ဘောလုံး · စာဖတ် · သီချင်း · ရေကူး','ရေကူး · သီချင်း · စာဖတ် · ဘောလုံး'],a:0},
 {t:'match',q:'Match hobby and meaning',pairs:[['ဘောလုံးကန်တယ်','play football'],['သီချင်းဆိုတယ်','sing'],['ရေကူးတယ်','swim'],['သီချင်းနားထောင်တယ်','listen to music']]},
-{t:'mc',q:'Review — which means "the hot season"?',o:['နွေရာသီ','အဟောင်း','ဘာလို့လဲ','ငါးထောင်ကျပ်'],a:0}]},
+{t:'mc',q:'Review — which means "the hot season"?',o:['နွေရာသီ','အဟောင်း','ဘာလို့လဲ','ငါးထောင်ကျပ်'],a:0},{t:'mc',q:'Review — which means "black"?',o:['အမည်း','ဈေးသည်','လယ်သမား','ကျောင်းသူ'],a:0}]},
 
 /* --- Topic 6: at home — daily routine --- */
 {id:'my_home',title:'At home',step:'learn',meta:'အိပ် ထ ရေချိုး + furniture',vocab:[['အိပ်တယ်','eiq de','sleep'],['ထတယ်','hta de','get up'],['ရေချိုးတယ်','ye cho de','bathe / shower'],['ကုတင်','ga din','bed'],['စားပွဲ','za bweh','table'],['တံခါး','da ga','door']],ex:[
@@ -2615,7 +2615,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) shower in the morning',a:['မနက်','ရေချိုးတယ်'],pool:['မနက်','ရေချိုးတယ်','အိပ်တယ်']},
 {t:'mc',q:'sleep · get up · shower =',o:['အိပ် · ထ · ရေချိုး','ထ · အိပ် · ရေချိုး','ရေချိုး · ထ · အိပ်','အိပ် · ရေချိုး · ထ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ထတယ်','get up'],['အိပ်တယ်','sleep'],['တံခါး','door'],['စားပွဲ','table']]},
-{t:'mc',q:'Review — which means "the cool season"?',o:['ဆောင်းရာသီ','ရလား','ဈေးပေါတယ်','ရန်ကုန်ကိုသွားမယ်'],a:0}]},
+{t:'mc',q:'Review — which means "the cool season"?',o:['ဆောင်းရာသီ','ရလား','ဈေးပေါတယ်','ရန်ကုန်ကိုသွားမယ်'],a:0},{t:'mc',q:'Review — which means "is better"?',o:['ပိုကောင်းတယ်','ရေကူးတယ်','စာဖတ်တယ်','သီချင်းနားထောင်တယ်'],a:0}]},
 
 /* --- Topic 7: help & staying safe --- */
 {id:'my_help',title:'Help & safety',step:'learn',meta:'ကူညီပါ ရဲ ဆေးရုံ သတိထားပါ',vocab:[['ကူညီပါ','ku nyi ba','help (me), please'],['ရဲ','yeh','police'],['ဆေးရုံ','hsei youn','hospital'],['သတိထားပါ','thadi hta ba','be careful!'],['ပျောက်သွားပြီ','pyauq thwa bi','(it) is lost']],ex:[
@@ -2657,7 +2657,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Be careful! It is raining.',a:['သတိထားပါ','မိုးရွာနေတယ်'],pool:['သတိထားပါ','မိုးရွာနေတယ်','နေပူတယ်']},
 {t:'mc',q:'help · police · hospital =',o:['ကူညီပါ · ရဲ · ဆေးရုံ','ရဲ · ကူညီပါ · ဆေးရုံ','ဆေးရုံ · ရဲ · ကူညီပါ','ကူညီပါ · ဆေးရုံ · ရဲ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ကူညီပါ','help, please'],['သတိထားပါ','be careful'],['ဆေးရုံ','hospital'],['ရဲ','police']]},
-{t:'mc',q:'Review — which means "have a headache"?',o:['ခေါင်းကိုက်တယ်','အစိမ်း','စားပြီးပြီ','ဘယ်မှာလဲ'],a:0}]},
+{t:'mc',q:'Review — which means "have a headache"?',o:['ခေါင်းကိုက်တယ်','အစိမ်း','စားပြီးပြီ','ဘယ်မှာလဲ'],a:0},{t:'mc',q:'Review — which means "the biggest"?',o:['အကြီးဆုံး','တံခါး','စားပွဲ','ကုတင်'],a:0}]},
 
 /* ===================== ZONE 10 · YOUR BURMESE LIFE =====================
    The personal layer: degrees (အရမ်း/သိပ်မ), close family, age & married
@@ -2696,7 +2696,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Do you speak Burmese? Just a little!',a:['မြန်မာလို','ပြောတတ်လား','နည်းနည်းပဲ'],pool:['မြန်မာလို','ပြောတတ်လား','နည်းနည်းပဲ','အရမ်း']},
 {t:'li',q:'Listen — which one?',say:'အရမ်း',o:['အရမ်း','အရင်','ရမယ်','နည်းနည်း'],a:0},
 {t:'match',q:'Match strength from most to least',pairs:[['အရမ်းကြိုက်တယ်','❤❤❤'],['ကြိုက်တယ်','❤❤'],['နည်းနည်းပဲ','❤'],['သိပ်မကြိုက်ဘူး','…']]},
-{t:'fill',q:'Complete: (I) do not like coffee much',s:'ကော်ဖီ ___',o:['သိပ်မကြိုက်ဘူး','အရမ်း','ကြိုက်တယ်','မြန်မာ'],a:0}]},
+{t:'fill',q:'Complete: (I) do not like coffee much',s:'ကော်ဖီ ___',o:['သိပ်မကြိုက်ဘူး','အရမ်း','ကြိုက်တယ်','မြန်မာ'],a:0},{t:'mc',q:'Review — which means "go straight, please"?',o:['တည့်တည့်သွားပါ','ပျောက်သွားပြီ','သတိထားပါ','ဆေးရုံ'],a:0}]},
 {id:'my_deg_5',title:'Checkpoint',step:'checkpoint',meta:'Degrees mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "very / really"?',o:['အရမ်း','နည်းနည်း','သိပ်မ','ပို'],a:0},
 {t:'li',q:'Listen — which one?',say:'သိပ်မကြိုက်ဘူး',o:['သိပ်မကြိုက်ဘူး','အရမ်းကြိုက်တယ်','မကြိုက်ဘူး','နည်းနည်းပဲ'],a:0},
@@ -2704,7 +2704,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) really like Myanmar',a:['မြန်မာ','အရမ်း','ကြိုက်တယ်'],pool:['မြန်မာ','အရမ်း','ကြိုက်တယ်','သိပ်']},
 {t:'mc',q:'really-like · like · just-a-little · not-much =',o:['အရမ်းကြိုက်တယ် · ကြိုက်တယ် · နည်းနည်းပဲ · သိပ်မကြိုက်ဘူး','ကြိုက်တယ် · အရမ်းကြိုက်တယ် · သိပ်မကြိုက်ဘူး · နည်းနည်းပဲ','နည်းနည်းပဲ · ကြိုက်တယ် · အရမ်းကြိုက်တယ် · သိပ်မကြိုက်ဘူး','သိပ်မကြိုက်ဘူး · နည်းနည်းပဲ · ကြိုက်တယ် · အရမ်းကြိုက်တယ်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အရမ်း','very'],['သိပ်မကြိုက်ဘူး','not much'],['နည်းနည်းပဲ','just a little'],['အရမ်းကြိုက်တယ်','really like']]},
-{t:'mc',q:'Review — which means "stomach hurts"?',o:['ဗိုက်နာတယ်','ကိ','တည့်တည့်သွားပါ','နှစ်'],a:0}]},
+{t:'mc',q:'Review — which means "stomach hurts"?',o:['ဗိုက်နာတယ်','ကိ','တည့်တည့်သွားပါ','နှစ်'],a:0},{t:'mc',q:'Review — which means "the best"?',o:['အကောင်းဆုံး','ပျောက်သွားပြီ','သတိထားပါ','ဆေးရုံ'],a:0}]},
 
 /* --- Topic 2: close family --- */
 {id:'my_fam2',title:'Family',step:'learn',meta:'အမေ အဖေ သား သမီး',vocab:[['အမေ','a me','mother'],['အဖေ','a hpe','father'],['သား','tha','son'],['သမီး','thami','daughter'],['ကလေးရှိလား','hkalei shi la','do you have children?']],ex:[
@@ -2738,7 +2738,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Mother and father are coming',a:['အမေ','နဲ့','အဖေ','လာနေတယ်'],pool:['အမေ','နဲ့','အဖေ','လာနေတယ်','သွားနေတယ်']},
 {t:'li',q:'Listen — which one?',say:'သမီး',o:['သမီး','သား','မိသားစု','အမေ'],a:0},
 {t:'match',q:'Match person and meaning',pairs:[['အမေ','mother'],['သား','son'],['မိသားစု','family'],['ကလေး','child']]},
-{t:'fill',q:'Complete: (I) have one daughter',s:'သမီး တစ် ယောက် ___',o:['ရှိတယ်','အဖေ','ကလေး','နှစ်'],a:0}]},
+{t:'fill',q:'Complete: (I) have one daughter',s:'သမီး တစ် ယောက် ___',o:['ရှိတယ်','အဖေ','ကလေး','နှစ်'],a:0},{t:'mc',q:'Review — which means "is near"?',o:['နီးတယ်','နည်းနည်းပဲ','သိပ်မကြိုက်ဘူး','အရမ်းကြိုက်တယ်'],a:0}]},
 {id:'my_fam2_5',title:'Checkpoint',step:'checkpoint',meta:'Family mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "father"?',o:['အဖေ','အမေ','ဦး','အစ်ကို'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကလေးရှိလား',o:['ကလေးရှိလား','ကလေးနှစ်ယောက်','အခန်းရှိလား','ကလေး'],a:0},
@@ -2746,7 +2746,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) have two sons',a:['သား','နှစ်','ယောက်','ရှိတယ်'],pool:['သား','နှစ်','ယောက်','ရှိတယ်','သမီး']},
 {t:'mc',q:'mother · father · son · daughter =',o:['အမေ · အဖေ · သား · သမီး','အဖေ · အမေ · သမီး · သား','အမေ · အဖေ · သမီး · သား','အဖေ · အမေ · သား · သမီး'],a:0},
 {t:'match',q:'Match person and meaning',pairs:[['အမေ','mother'],['အဖေ','father'],['သား','son'],['သမီး','daughter']]},
-{t:'mc',q:'Review — which means "have you ever been to Yangon?"?',o:['ရန်ကုန်ကိုသွားဖူးလား','ရထား','ရေအေးတယ်','အိမ်ကလာတယ်'],a:0}]},
+{t:'mc',q:'Review — which means "have you ever been to Yangon?"?',o:['ရန်ကုန်ကိုသွားဖူးလား','ရထား','ရေအေးတယ်','အိမ်ကလာတယ်'],a:0},{t:'mc',q:'Review — which means "is happy"?',o:['ပျော်တယ်','နည်းနည်းပဲ','သိပ်မကြိုက်ဘူး','အရမ်းကြိုက်တယ်'],a:0}]},
 
 /* --- Topic 3: age & married — the small-talk trio --- */
 {id:'my_age',title:'Small talk',step:'learn',meta:'အသက် အိမ်ထောင် — friendly questions',vocab:[['အသက်','a theq','age'],['အသက်ဘယ်လောက်ရှိပြီလဲ','a theq beh lauq shi bi leh','how old are you?'],['အိမ်ထောင်ရှိလား','ein daung shi la','are you married?'],['အိမ်ထောင်ရှိတယ်','ein daung shi de','(I) am married'],['အိမ်ထောင်မရှိဘူး','ein daung ma shi bu','(I) am not married']],ex:[
@@ -2780,7 +2780,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) am not married yet — married not-have (soft no)',a:['အိမ်ထောင်','မရှိဘူး'],pool:['အိမ်ထောင်','မရှိဘူး','ရှိတယ်']},
 {t:'li',q:'Listen — which one?',say:'အသက်ဘယ်လောက်ရှိပြီလဲ',o:['အသက်ဘယ်လောက်ရှိပြီလဲ','အိမ်ထောင်ရှိလား','ဘယ်လောက်လဲ','အသက်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အသက်','age'],['အိမ်ထောင်','marriage'],['ကလေး','child'],['အသက်ဘယ်လောက်ရှိပြီလဲ','how old are you?']]},
-{t:'fill',q:'Complete: Are you married?',s:'___ ရှိလား',o:['အိမ်ထောင်','ရှိတယ်','အသက်','မရှိဘူး'],a:0}]},
+{t:'fill',q:'Complete: Are you married?',s:'___ ရှိလား',o:['အိမ်ထောင်','ရှိတယ်','အသက်','မရှိဘူး'],a:0},{t:'mc',q:'Review — which means "over there"?',o:['ဟိုမှာ','ကလေးရှိလား','သမီး','သား'],a:0}]},
 {id:'my_age_5',title:'Checkpoint',step:'checkpoint',meta:'Small talk mastered?',vocab:[],ex:[
 {t:'mc',q:'Which asks "How old are you?"',o:['အသက်ဘယ်လောက်ရှိပြီလဲ','အသက်ရှိလား','ဘယ်နှယောက်လဲ','ဘယ်နှရက်လဲ'],a:0},
 {t:'li',q:'Listen — which one?',say:'အိမ်ထောင်ရှိတယ်',o:['အိမ်ထောင်ရှိတယ်','အိမ်ထောင်မရှိဘူး','အိမ်ထောင်ရှိလား','ရှိတယ်'],a:0},
@@ -2788,7 +2788,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Do you have children?',a:['ကလေး','ရှိလား'],pool:['ကလေး','ရှိလား','မရှိဘူး']},
 {t:'mc',q:'Being asked your age in Myanmar is…',o:['friendly — it sets the kin term','rude','a job interview','rare'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အသက်ဘယ်လောက်ရှိပြီလဲ','how old are you?'],['အိမ်ထောင်ရှိလား','are you married?'],['ကလေးရှိလား','do you have children?'],['အိမ်ထောင်မရှိဘူး','(I) am not married']]},
-{t:'mc',q:'Review — which means "not allowed to do"?',o:['မလုပ်ရဘူး','လာမယ်','ပြီးတော့','လုပ်ရမယ်'],a:0}]},
+{t:'mc',q:'Review — which means "not allowed to do"?',o:['မလုပ်ရဘူး','လာမယ်','ပြီးတော့','လုပ်ရမယ်'],a:0},{t:'mc',q:'Review — which means "is sad"?',o:['ဝမ်းနည်းတယ်','ကလေးရှိလား','သမီး','သား'],a:0}]},
 
 /* --- Topic 4: not yet & still သေး --- */
 {id:'my_yet',title:'Not yet: သေး',step:'learn',meta:'မ…သေးဘူး — the gentle not-yet',vocab:[['မပြီးသေးဘူး','ma pi thei bu','not finished yet'],['မစားရသေးဘူး','ma sa ya thei bu','have not eaten yet'],['မသိသေးဘူး','ma thi thei bu','do not know yet'],['မရှိသေးဘူး','ma shi thei bu','not yet / do not have yet'],['ရှိသေးတယ်','shi thei de','still have / still there']],ex:[
@@ -2822,7 +2822,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) do not know yet. (I) will know tomorrow.',a:['မသိသေးဘူး','မနက်ဖြန်','သိမယ်'],pool:['မသိသေးဘူး','မနက်ဖြန်','သိမယ်','သိတယ်'],},
 {t:'li',q:'Listen — which one?',say:'ရှိသေးတယ်',o:['ရှိသေးတယ်','ရှိတယ်','မရှိသေးဘူး','သေးတယ်'],a:0},
 {t:'match',q:'Match ending and flavor',pairs:[['ပြီ','already! (news)'],['သေး (မ…သေးဘူး)','not yet'],['ဖူး','ever in life'],['နေ','right now']]},
-{t:'fill',q:'Complete: The work is not finished yet',s:'အလုပ် ___',o:['မပြီးသေးဘူး','ပြီးပြီလား','ခဏစောင့်ပါ','မသိသေးဘူး'],a:0}]},
+{t:'fill',q:'Complete: The work is not finished yet',s:'အလုပ် ___',o:['မပြီးသေးဘူး','ပြီးပြီလား','ခဏစောင့်ပါ','မသိသေးဘူး'],a:0},{t:'mc',q:'Review — which means "ticket"?',o:['လက်မှတ်','အိမ်ထောင်မရှိဘူး','အိမ်ထောင်ရှိတယ်','အိမ်ထောင်ရှိလား'],a:0}]},
 {id:'my_yet_5',title:'Checkpoint',step:'checkpoint',meta:'Not-yet mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "do not know yet"?',o:['မသိသေးဘူး','မသိဘူး','သိသေးတယ်','မသိရဘူး'],a:0},
 {t:'li',q:'Listen — which one?',say:'မစားရသေးဘူး',o:['မစားရသေးဘူး','မပြီးသေးဘူး','စားပြီးပြီ','မစားချင်ဘူး'],a:0},
@@ -2830,7 +2830,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Not finished yet — please wait a moment',a:['မပြီးသေးဘူး','ခဏစောင့်ပါ'],pool:['မပြီးသေးဘူး','ခဏစောင့်ပါ','ပြီးပြီ']},
 {t:'mc',q:'The "yet" that softens every no is…',o:['သေး','ဖူး','နေ','ပြီ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['မပြီးသေးဘူး','not finished yet'],['မစားရသေးဘူး','not eaten yet'],['ရှိသေးတယ်','still have'],['မရှိသေးဘူး','not yet']]},
-{t:'mc',q:'Review — which means "ride a car / bus"?',o:['ကားစီးတယ်','ဘာလို့လဲ','ဘယ်မှာလဲ','သတိထားပါ'],a:0}]},
+{t:'mc',q:'Review — which means "ride a car / bus"?',o:['ကားစီးတယ်','ဘာလို့လဲ','ဘယ်မှာလဲ','သတိထားပါ'],a:0},{t:'mc',q:'Review — which means "is tired"?',o:['ပင်ပန်းတယ်','အိမ်ထောင်မရှိဘူး','အိမ်ထောင်ရှိတယ်','အိမ်ထောင်ရှိလား'],a:0}]},
 
 /* --- Topic 5: language talk --- */
 {id:'my_lang',title:'Language talk',step:'learn',meta:'စကား မြန်မာစကား အင်္ဂလိပ်လို',vocab:[['စကား','za ga','speech / language'],['မြန်မာစကား','myanma za ga','the Burmese language'],['အင်္ဂလိပ်လို','in ga leiq lo','in English'],['နိုင်ငံခြားသား','naingngan cha tha','foreigner'],['အင်္ဂလိပ်လိုပြောတတ်လား','in ga leiq lo pyaw taq la','can you speak English?']],ex:[
@@ -2864,7 +2864,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) speak a little Burmese (woman speaking)',a:['ကျွန်မ','မြန်မာစကား','နည်းနည်း','ပြောတတ်တယ်'],pool:['ကျွန်မ','မြန်မာစကား','နည်းနည်း','ပြောတတ်တယ်','အရမ်း']},
 {t:'li',q:'Listen — which one?',say:'စကား',o:['စကား','စားပွဲ','စာ','ဇယား'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['စကား','language'],['အင်္ဂလိပ်လိုပြောတတ်လား','can you speak English?'],['မြန်မာစကား','Burmese'],['နိုင်ငံခြားသား','foreigner']]},
-{t:'fill',q:'Complete: (I) speak a little Burmese (woman speaking)',s:'ကျွန်မ မြန်မာစကား ___ ပြောတတ်တယ်',o:['နည်းနည်း','ဒါပေမဲ့','မြန်မာလို','အင်္ဂလိပ်လိုပြောတတ်လား'],a:0}]},
+{t:'fill',q:'Complete: (I) speak a little Burmese (woman speaking)',s:'ကျွန်မ မြန်မာစကား ___ ပြောတတ်တယ်',o:['နည်းနည်း','ဒါပေမဲ့','မြန်မာလို','အင်္ဂလိပ်လိုပြောတတ်လား'],a:0},{t:'mc',q:'Review — which means "train station"?',o:['ဘူတာ','ရှိသေးတယ်','မရှိသေးဘူး','မသိသေးဘူး'],a:0}]},
 {id:'my_lang_5',title:'Checkpoint',step:'checkpoint',meta:'Language talk mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "the Burmese language"?',o:['မြန်မာစကား','မြန်မာလို','မြန်မာ','မြန်မာနိုင်ငံ'],a:0},
 {t:'li',q:'Listen — which one?',say:'အင်္ဂလိပ်လိုပြောတတ်လား',o:['အင်္ဂလိပ်လိုပြောတတ်လား','အင်္ဂလိပ်လို','မြန်မာလိုပြောတတ်လား','ပြောတတ်တယ်'],a:0},
@@ -2872,7 +2872,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) am a foreigner, but (I) speak a little Burmese',a:['နိုင်ငံခြားသား','ပါ','ဒါပေမဲ့','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်'],pool:['နိုင်ငံခြားသား','ပါ','ဒါပေမဲ့','မြန်မာလို','နည်းနည်း','ပြောတတ်တယ်','လို့']},
 {t:'mc',q:'The -လို tail turns a language name into…',o:['"in that language"','a person','a country','a school subject'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['မြန်မာစကား','Burmese'],['အင်္ဂလိပ်လို','in English'],['နိုင်ငံခြားသား','foreigner'],['စကား','language']]},
-{t:'mc',q:'Review — which means "left side"?',o:['ဘယ်ဘက်','ဒီလ','နည်းနည်း','ပြန်ပြောပါ'],a:0}]},
+{t:'mc',q:'Review — which means "left side"?',o:['ဘယ်ဘက်','ဒီလ','နည်းနည်း','ပြန်ပြောပါ'],a:0},{t:'mc',q:'Review — which means "is thirsty"?',o:['ရေဆာတယ်','ရှိသေးတယ်','မရှိသေးဘူး','မသိသေးဘူး'],a:0}]},
 
 /* --- Topic 6: now, later & when --- */
 {id:'my_now',title:'Now or later?',step:'learn',meta:'အခု နောက်မှ ဘယ်တော့',vocab:[['အခု','a hku','now'],['နောက်မှ','nauq hma','later'],['ဘယ်တော့လဲ','beh daw leh','when?'],['ဘယ်တော့လာမလဲ','beh daw la ma leh','when will you come?'],['အခုလာနိုင်လား','a hku la naing la','can you come now?']],ex:[
@@ -2906,7 +2906,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) will call later',a:['နောက်မှ','ဖုန်းဆက်မယ်'],pool:['နောက်မှ','ဖုန်းဆက်မယ်','ဖုန်းဆက်တယ်']},
 {t:'li',q:'Listen — which one?',say:'နောက်မှ',o:['နောက်မှ','နောက်လ','နောက်နှစ်','အခု'],a:0},
 {t:'match',q:'Match time and word',pairs:[['အခု','now'],['နောက်မှ','later'],['မနက်ဖြန်','tomorrow'],['မနေ့က','yesterday']]},
-{t:'fill',q:'Complete: (I) will call later',s:'___ ဖုန်းဆက်မယ်',o:['နောက်မှ','ကို','အခုလာနိုင်လား','အခု'],a:0}]},
+{t:'fill',q:'Complete: (I) will call later',s:'___ ဖုန်းဆက်မယ်',o:['နောက်မှ','ကို','အခုလာနိုင်လား','အခု'],a:0},{t:'mc',q:'Review — which means "leave / depart"?',o:['ထွက်တယ်','အင်္ဂလိပ်လိုပြောတတ်လား','နိုင်ငံခြားသား','အင်္ဂလိပ်လို'],a:0}]},
 {id:'my_now_5',title:'Checkpoint',step:'checkpoint',meta:'Timing mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "later"?',o:['နောက်မှ','အခု','ခဏ','ပြီးရင်'],a:0},
 {t:'li',q:'Listen — which one?',say:'ဘယ်တော့လဲ',o:['ဘယ်တော့လဲ','ဘယ်တော့လာမလဲ','ဘာလို့လဲ','ဘယ်မှာလဲ'],a:0},
@@ -2914,7 +2914,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: When will you go to Yangon?',a:['ရန်ကုန်','ကို','ဘယ်တော့','သွားမလဲ'],pool:['ရန်ကုန်','ကို','ဘယ်တော့','သွားမလဲ','သွားမယ်']},
 {t:'mc',q:'now · later · when? =',o:['အခု · နောက်မှ · ဘယ်တော့','နောက်မှ · အခု · ဘယ်တော့','ဘယ်တော့ · နောက်မှ · အခု','အခု · ဘယ်တော့ · နောက်မှ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['အခု','now'],['နောက်မှ','later'],['ဘယ်တော့လာမလဲ','when will you come?'],['အခုလာနိုင်လား','can you come now?']]},
-{t:'mc',q:'Review — which means "right side"?',o:['ညာဘက်','အခု','တည့်တည့်သွားပါ','ရင်'],a:0}]},
+{t:'mc',q:'Review — which means "right side"?',o:['ညာဘက်','အခု','တည့်တည့်သွားပါ','ရင်'],a:0},{t:'mc',q:'Review — which means "is afraid"?',o:['ကြောက်တယ်','အင်္ဂလိပ်လိုပြောတတ်လား','နိုင်ငံခြားသား','အင်္ဂလိပ်လို'],a:0}]},
 
 /* --- Topic 7: tell your day — first, then, finally --- */
 {id:'my_story',title:'Tell your day',step:'learn',meta:'အရင် ပြီးရင် နောက်ဆုံး + အမြဲ',vocab:[['အရင်','a yin','first / before'],['ပြီးရင်','pyi yin','after that / then'],['နောက်ဆုံး','nauq soun','finally / last'],['တစ်ခါတစ်လေ','ta hka ta lei','sometimes'],['အမြဲ','a myeh','always']],ex:[
@@ -2948,7 +2948,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Finally, (I) sleep',a:['နောက်ဆုံး','အိပ်တယ်'],pool:['နောက်ဆုံး','အိပ်တယ်','ထတယ်']},
 {t:'li',q:'Listen — which one?',say:'အမြဲ',o:['အမြဲ','တစ်ခါတစ်လေ','အရမ်း','မြဲမြဲ'],a:0},
 {t:'match',q:'Match story part and word',pairs:[['အရင်','first'],['ပြီးရင်','then'],['နောက်ဆုံး','finally'],['တစ်ခါတစ်လေ','sometimes']]},
-{t:'fill',q:'Complete: (I) sometimes play football',s:'___ ဘောလုံး ကန်တယ်',o:['တစ်ခါတစ်လေ','ရေချိုးတယ်','သောက်တယ်','အရင်'],a:0}]},
+{t:'fill',q:'Complete: (I) sometimes play football',s:'___ ဘောလုံး ကန်တယ်',o:['တစ်ခါတစ်လေ','ရေချိုးတယ်','သောက်တယ်','အရင်'],a:0},{t:'mc',q:'Review — which means "what time does it leave?"?',o:['ဘယ်အချိန်ထွက်လဲ','အခုလာနိုင်လား','ဘယ်တော့လာမလဲ','ဘယ်တော့လဲ'],a:0}]},
 {id:'my_story_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 10 complete!',vocab:[],ex:[
 {t:'mc',q:'Which means "then / after that"?',o:['ပြီးရင်','အရင်','နောက်ဆုံး','အမြဲ'],a:0},
 {t:'li',q:'Listen — which one?',say:'တစ်ခါတစ်လေ',o:['တစ်ခါတစ်လေ','အမြဲ','တစ်ခါ','တစ်ခုတစ်လေ'],a:0},
@@ -2956,7 +2956,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: First tea, then work — first tea drink, then work do',a:['အရင်','လက်ဖက်ရည်','သောက်တယ်','ပြီးရင်','အလုပ်လုပ်တယ်'],pool:['အရင်','လက်ဖက်ရည်','သောက်တယ်','ပြီးရင်','အလုပ်လုပ်တယ်','နောက်ဆုံး']},
 {t:'mc',q:'first · then · finally =',o:['အရင် · ပြီးရင် · နောက်ဆုံး','ပြီးရင် · အရင် · နောက်ဆုံး','နောက်ဆုံး · ပြီးရင် · အရင်','အရင် · နောက်ဆုံး · ပြီးရင်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['အရင်','first'],['ပြီးရင်','then'],['တစ်ခါတစ်လေ','sometimes'],['အမြဲ','always']]},
-{t:'mc',q:'Review — which means "turn right"?',o:['ညာကွေ့','သီချင်းဆိုတယ်','ဘယ်က','လက်ဖက်ရည်ဆိုင်'],a:0}]},
+{t:'mc',q:'Review — which means "turn right"?',o:['ညာကွေ့','သီချင်းဆိုတယ်','ဘယ်က','လက်ဖက်ရည်ဆိုင်'],a:0},{t:'mc',q:'Review — which means "it is sunny & hot"?',o:['နေပူတယ်','အခုလာနိုင်လား','ဘယ်တော့လာမလဲ','ဘယ်တော့လဲ'],a:0}]},
 
 /* ===================== ZONE 11 · LITTLE EXTRAS =====================
    The everyday words that round out real conversations: need လို, slow &
@@ -2994,7 +2994,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) do not need a bag — bag no-need (အိတ် eiq bag)',a:['အိတ်','မလိုဘူး'],pool:['အိတ်','မလိုဘူး','လိုတယ်']},
 {t:'li',q:'Listen — which one?',say:'ဘာလိုလဲ',o:['ဘာလိုလဲ','ဘာလဲ','ဘာလို့လဲ','ဘယ်လို'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ပေးတယ်','give'],['ယူတယ်','take'],['လိုတယ်','need'],['ဘာလိုလဲ','what do you need?']]},
-{t:'fill',q:'Complete: (I) need water',s:'ရေ ___',o:['လိုတယ်','ဘာ','မလိုဘူး','အချိန်'],a:0}]},
+{t:'fill',q:'Complete: (I) need water',s:'ရေ ___',o:['လိုတယ်','ဘာ','မလိုဘူး','အချိန်'],a:0},{t:'mc',q:'Review — which means "room"?',o:['အခန်း','အမြဲ','တစ်ခါတစ်လေ','နောက်ဆုံး'],a:0},{t:'mc',q:'Review — which means "(it) is lost"?',o:['ပျောက်သွားပြီ','အမြဲ','တစ်ခါတစ်လေ','နောက်ဆုံး'],a:0}]},
 {id:'my_need_5',title:'Checkpoint',step:'checkpoint',meta:'Needs mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "do not need"?',o:['မလိုဘူး','မရှိဘူး','မယူဘူး','မပေးဘူး'],a:0},
 {t:'li',q:'Listen — which one?',say:'ပေးတယ်',o:['ပေးတယ်','ယူတယ်','ပေးပါ','ပြောတယ်'],a:0},
@@ -3002,7 +3002,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) need time',a:['အချိန်','လိုတယ်'],pool:['အချိန်','လိုတယ်','ရှိတယ်']},
 {t:'mc',q:'need · give · take =',o:['လို · ပေး · ယူ','ယူ · ပေး · လို','ပေး · လို · ယူ','လို · ယူ · ပေး'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['လိုတယ်','need'],['ပေးတယ်','give'],['ယူတယ်','take'],['မလိုဘူး','no need']]},
-{t:'mc',q:'Review — which means "turn left"?',o:['ဘယ်ကွေ့','ဘယ်တော့လဲ','သွားရမယ်','သွားဖူးတယ်'],a:0}]},
+{t:'mc',q:'Review — which means "turn left"?',o:['ဘယ်ကွေ့','ဘယ်တော့လဲ','သွားရမယ်','သွားဖူးတယ်'],a:0},{t:'mc',q:'Review — which means "the rainy season"?',o:['မိုးရာသီ','အမြဲ','တစ်ခါတစ်လေ','နောက်ဆုံး'],a:0},{t:'mc',q:'Review — which means "student (male)"?',o:['ကျောင်းသား','အမြဲ','တစ်ခါတစ်လေ','နောက်ဆုံး'],a:0}]},
 
 /* --- Topic 2: slowly & quickly --- */
 {id:'my_manner',title:'Learner phrases',step:'learn',meta:'ဖြည်းဖြည်း မြန်မြန်',vocab:[['ဖြည်းဖြည်း','hpyei hpyei','slowly'],['မြန်မြန်','myan myan','quickly'],['ဖြည်းဖြည်းပြောပါ','hpyei hpyei pyaw ba','please speak slowly'],['မြန်တယ်','myan de','is fast'],['နှေးတယ်','hnei de','is slow']],ex:[
@@ -3036,7 +3036,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The train is slow, but the motorbike is fast',a:['ရထား','နှေးတယ်','ဒါပေမဲ့','ဆိုင်ကယ်','မြန်တယ်'],pool:['ရထား','နှေးတယ်','ဒါပေမဲ့','ဆိုင်ကယ်','မြန်တယ်','လို့']},
 {t:'li',q:'Listen — which one?',say:'မြန်မြန်',o:['မြန်မြန်','မြန်တယ်','မြန်မာ','ဖြည်းဖြည်း'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['မြန်မြန်','quickly'],['ဖြည်းဖြည်း','slowly'],['နှေးတယ်','is slow'],['မြန်တယ်','is fast']]},
-{t:'fill',q:'Complete: Please eat slowly',s:'ဖြည်းဖြည်း ___',o:['စားပါ','ဆိုင်ကယ်','ရထား','မြန်မြန်လာပါ'],a:0}]},
+{t:'fill',q:'Complete: Please eat slowly',s:'ဖြည်းဖြည်း ___',o:['စားပါ','ဆိုင်ကယ်','ရထား','မြန်မြန်လာပါ'],a:0},{t:'mc',q:'Review — which means "do you have a room?"?',o:['အခန်းရှိလား','ဘာလိုလဲ','ယူတယ်','ပေးတယ်'],a:0}]},
 {id:'my_manner_5',title:'Checkpoint',step:'checkpoint',meta:'Pace mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "please speak slowly"?',o:['ဖြည်းဖြည်းပြောပါ','ပြန်ပြောပါ','မြန်မြန်ပြောပါ','ဖြည်းဖြည်းသွားပါ'],a:0},
 {t:'li',q:'Listen — which one?',say:'မြန်တယ်',o:['မြန်တယ်','မြန်မြန်','နှေးတယ်','မှားတယ်'],a:0},
@@ -3044,7 +3044,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Please go slowly (to a driver)',a:['ဖြည်းဖြည်း','သွားပါ'],pool:['ဖြည်းဖြည်း','သွားပါ','မြန်မြန်']},
 {t:'mc',q:'slowly · quickly =',o:['ဖြည်းဖြည်း · မြန်မြန်','မြန်မြန် · ဖြည်းဖြည်း','နှေးနှေး · ဖြည်းဖြည်း','မြန်မြန် · နည်းနည်း'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ဖြည်းဖြည်း','slowly'],['မြန်မြန်','quickly'],['မြန်တယ်','is fast'],['ဖြည်းဖြည်းပြောပါ','please speak slowly']]},
-{t:'mc',q:'Review — which means "is it far?"?',o:['ဝေးလား','မသွားနိုင်ဘူး','ကျောင်းကလာတယ်','သူ'],a:0}]},
+{t:'mc',q:'Review — which means "is it far?"?',o:['ဝေးလား','မသွားနိုင်ဘူး','ကျောင်းကလာတယ်','သူ'],a:0},{t:'mc',q:'Review — which means "went yesterday"?',o:['မနေ့ကသွားခဲ့တယ်','ဘာလိုလဲ','ယူတယ်','ပေးတယ်'],a:0},{t:'mc',q:'Review — which means "student (female)"?',o:['ကျောင်းသူ','ဘာလိုလဲ','ယူတယ်','ပေးတယ်'],a:0}]},
 
 /* --- Topic 3: clothes & the longyi --- */
 {id:'my_wear',title:'Clothing & the longyi',step:'learn',meta:'အင်္ကျီ လုံချည် ဖိနပ် + ဝတ်',vocab:[['အင်္ကျီ','in ji','shirt / top'],['လုံချည်','loun ji','longyi (sarong)'],['ဖိနပ်','hpanaq','shoes / sandals'],['ဝတ်တယ်','wuq de','wear'],['ဖိနပ်ချွတ်ပါ','hpanaq chuq ba','please take off (your) shoes']],ex:[
@@ -3078,7 +3078,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) will buy shoes at the market',a:['ဈေးမှာ','ဖိနပ်','ဝယ်မယ်'],pool:['ဈေးမှာ','ဖိနပ်','ဝယ်မယ်','ဝတ်မယ်']},
 {t:'li',q:'Listen — which one?',say:'အင်္ကျီ',o:['အင်္ကျီ','လုံချည်','အကျိုး','ဖိနပ်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ဝတ်တယ်','wear'],['ဖိနပ်ချွတ်ပါ','shoes off, please'],['လုံချည်','longyi'],['အင်္ကျီ','shirt']]},
-{t:'fill',q:'Complete: (I) really like this longyi — this longyi really like',s:'ဒီ လုံချည် ___ ကြိုက်တယ်',o:['အရမ်း','ဖိနပ်ချွတ်ပါ','ဝတ်တယ်','ဖိနပ်'],a:0}]},
+{t:'fill',q:'Complete: (I) really like this longyi — this longyi really like',s:'ဒီ လုံချည် ___ ကြိုက်တယ်',o:['အရမ်း','ဖိနပ်ချွတ်ပါ','ဝတ်တယ်','ဖိနပ်'],a:0},{t:'mc',q:'Review — which means "what date is it?"?',o:['ဘယ်နှရက်လဲ','နှေးတယ်','မြန်တယ်','ဖြည်းဖြည်းပြောပါ'],a:0}]},
 {id:'my_wear_5',title:'Checkpoint',step:'checkpoint',meta:'Wardrobe mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "shirt / top"?',o:['အင်္ကျီ','လုံချည်','ဖိနပ်','အိတ်'],a:0},
 {t:'li',q:'Listen — which one?',say:'ဖိနပ်ချွတ်ပါ',o:['ဖိနပ်ချွတ်ပါ','ဖိနပ်ဝတ်ပါ','ဖိနပ်','ချွတ်ပါ'],a:0},
@@ -3086,7 +3086,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) really like this longyi — this longyi really like',a:['ဒီ','လုံချည်','အရမ်း','ကြိုက်တယ်'],pool:['ဒီ','လုံချည်','အရမ်း','ကြိုက်တယ်','ဝတ်တယ်']},
 {t:'mc',q:'shirt · longyi · shoes =',o:['အင်္ကျီ · လုံချည် · ဖိနပ်','လုံချည် · အင်္ကျီ · ဖိနပ်','ဖိနပ် · လုံချည် · အင်္ကျီ','အင်္ကျီ · ဖိနပ် · လုံချည်'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['အင်္ကျီ','shirt'],['လုံချည်','longyi'],['ဖိနပ်','shoes'],['ဝတ်တယ်','wear']]},
-{t:'mc',q:'Review — which means "airport"?',o:['လေဆိပ်','ဝယ်တယ်','ရင်','သွားမယ်'],a:0}]},
+{t:'mc',q:'Review — which means "airport"?',o:['လေဆိပ်','ဝယ်တယ်','ရင်','သွားမယ်'],a:0},{t:'mc',q:'Review — which means "is eating"?',o:['စားနေတယ်','နှေးတယ်','မြန်တယ်','ဖြည်းဖြည်းပြောပါ'],a:0},{t:'mc',q:'Review — which means "farmer"?',o:['လယ်သမား','နှေးတယ်','မြန်တယ်','ဖြည်းဖြည်းပြောပါ'],a:0}]},
 
 /* --- Topic 4: animals --- */
 {id:'my_animal',title:'Animals',step:'learn',meta:'ခွေး ကြောင် နွား ဆင် ငှက်',vocab:[['ခွေး','hkwei','dog'],['ကြောင်','kyaung','cat'],['နွား','nwa','cow'],['ဆင်','hsin','elephant'],['ငှက်','hngeq','bird']],ex:[
@@ -3120,7 +3120,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The dog is big, but the cat is small',a:['ခွေး','ကြီးတယ်','ဒါပေမဲ့','ကြောင်','သေးတယ်'],pool:['ခွေး','ကြီးတယ်','ဒါပေမဲ့','ကြောင်','သေးတယ်','နွား']},
 {t:'li',q:'Listen — which one?',say:'ဆင်',o:['ဆင်','ဆိုင်','ငှက်','စာ'],a:0},
 {t:'match',q:'Match animal and meaning',pairs:[['ခွေး','dog'],['ကြောင်','cat'],['ငှက်','bird'],['ဆင်','elephant']]},
-{t:'fill',q:'Complete: Have you ever ridden an elephant?',s:'___ စီးဖူးလား',o:['ဆင်','ခွေး','ကြိုက်တယ်','နွား'],a:0}]},
+{t:'fill',q:'Complete: Have you ever ridden an elephant?',s:'___ စီးဖူးလား',o:['ဆင်','ခွေး','ကြိုက်တယ်','နွား'],a:0},{t:'mc',q:'Review — which means "why?"?',o:['ဘာလို့လဲ','ဖိနပ်ချွတ်ပါ','ဝတ်တယ်','ဖိနပ်'],a:0}]},
 {id:'my_animal_5',title:'Checkpoint',step:'checkpoint',meta:'Animals mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "bird"?',o:['ငှက်','ငါး','နွား','ကြောင်'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကြောင်',o:['ကြောင်','ကျောင်း','ခွေး','ကောင်း'],a:0},
@@ -3128,7 +3128,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) like dogs a lot — dog really like',a:['ခွေး','အရမ်း','ကြိုက်တယ်'],pool:['ခွေး','အရမ်း','ကြိုက်တယ်','ကြောက်တယ်']},
 {t:'mc',q:'dog · cat · cow · elephant · bird =',o:['ခွေး · ကြောင် · နွား · ဆင် · ငှက်','ကြောင် · ခွေး · ဆင် · နွား · ငှက်','ခွေး · နွား · ကြောင် · ငှက် · ဆင်','ငှက် · ခွေး · ကြောင် · နွား · ဆင်'],a:0},
 {t:'match',q:'Match animal and meaning',pairs:[['ခွေး','dog'],['နွား','cow'],['ဆင်','elephant'],['ငှက်','bird']]},
-{t:'mc',q:'Review — which means "hotel"?',o:['ဟိုတယ်','ရေနဲ့ထမင်း','ကောင်းတယ်လို့ထင်တယ်','အိပ်တယ်'],a:0}]},
+{t:'mc',q:'Review — which means "hotel"?',o:['ဟိုတယ်','ရေနဲ့ထမင်း','ကောင်းတယ်လို့ထင်တယ်','အိပ်တယ်'],a:0},{t:'mc',q:'Review — which means "is doing / working"?',o:['လုပ်နေတယ်','ဖိနပ်ချွတ်ပါ','ဝတ်တယ်','ဖိနပ်'],a:0},{t:'mc',q:'Review — which means "market vendor"?',o:['ဈေးသည်','ဖိနပ်ချွတ်ပါ','ဝတ်တယ်','ဖိနပ်'],a:0}]},
 
 /* --- Topic 5: nature & trips --- */
 {id:'my_nature',title:'Out in nature',step:'learn',meta:'တောင် မြစ် ပင်လယ် ရွာ',vocab:[['တောင်','taung','mountain'],['မြစ်','myiq','river'],['ပင်လယ်','pin leh','sea'],['သစ်ပင်','thiq pin','tree'],['ရွာ','ywa','village'],['လမ်း','lan','road / street']],ex:[
@@ -3162,7 +3162,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: There are big trees in the village',a:['ရွာမှာ','သစ်ပင်','ကြီးကြီး','ရှိတယ်'],pool:['ရွာမှာ','သစ်ပင်','ကြီးကြီး','ရှိတယ်','သေးသေး']},
 {t:'li',q:'Listen — which one?',say:'ပင်လယ်',o:['ပင်လယ်','ပင်ပန်းတယ်','မြစ်','လယ်'],a:0},
 {t:'match',q:'Match place and meaning',pairs:[['မြစ်','river'],['ရွာ','village'],['လမ်း','road'],['သစ်ပင်','tree']]},
-{t:'fill',q:'Complete: The village is far — village fars',s:'ရွာ ___',o:['ဝေးတယ်','မြစ်','ပင်လယ်','လမ်း'],a:0}]},
+{t:'fill',q:'Complete: The village is far — village fars',s:'ရွာ ___',o:['ဝေးတယ်','မြစ်','ပင်လယ်','လမ်း'],a:0},{t:'mc',q:'Review — which means "(I) eat because (I) am hungry"?',o:['ဗိုက်ဆာလို့စားတယ်','ငှက်','ဆင်','နွား'],a:0}]},
 {id:'my_nature_5',title:'Checkpoint',step:'checkpoint',meta:'Nature mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "sea"?',o:['ပင်လယ်','မြစ်','တောင်','ရေ'],a:0},
 {t:'li',q:'Listen — which one?',say:'မြစ်',o:['မြစ်','မြန်မာ','ပင်လယ်','နှစ်'],a:0},
@@ -3170,7 +3170,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) live in a small village',a:['ရွာ','သေးသေးလေး','မှာ','နေတယ်'],pool:['ရွာ','သေးသေးလေး','မှာ','နေတယ်','ကြီးကြီး']},
 {t:'mc',q:'mountain · river · sea =',o:['တောင် · မြစ် · ပင်လယ်','မြစ် · တောင် · ပင်လယ်','ပင်လယ် · မြစ် · တောင်','တောင် · ပင်လယ် · မြစ်'],a:0},
 {t:'match',q:'Match place and meaning',pairs:[['တောင်','mountain'],['ပင်လယ်','sea'],['ရွာ','village'],['လမ်း','road']]},
-{t:'mc',q:'Review — which means "this month"?',o:['ဒီလ','လုပ်နေတယ်','အင်္ကျီ','အင်္ဂလိပ်လိုပြောတတ်လား'],a:0}]},
+{t:'mc',q:'Review — which means "this month"?',o:['ဒီလ','လုပ်နေတယ်','အင်္ကျီ','အင်္ဂလိပ်လိုပြောတတ်လား'],a:0},{t:'mc',q:'Review — which means "what are you doing?"?',o:['ဘာလုပ်နေလဲ','ငှက်','ဆင်','နွား'],a:0},{t:'mc',q:'Review — which means "play football"?',o:['ဘောလုံးကန်တယ်','ငှက်','ဆင်','နွား'],a:0}]},
 
 /* --- Topic 6: remember & forget --- */
 {id:'my_mem',title:'Remember & forget',step:'learn',meta:'မေ့ မှတ်မိ သတိရ',vocab:[['မေ့သွားပြီ','meh thwa bi','(I) forgot'],['မှတ်မိတယ်','hmaq mi de','remember'],['မမှတ်မိဘူး','ma hmaq mi bu','do not remember'],['သတိရတယ်','thadi ya de','miss (someone) / think of'],['နာမည်မေ့သွားပြီ','nameh meh thwa bi','(I) forgot the name']],ex:[
@@ -3204,7 +3204,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Do you remember me? — me remember-question (ကျွန်တော့်ကို kyanaw go me-object)',a:['ကျွန်တော့်ကို','မှတ်မိလား'],pool:['ကျွန်တော့်ကို','မှတ်မိလား','မှတ်မိတယ်']},
 {t:'li',q:'Listen — which one?',say:'မေ့သွားပြီ',o:['မေ့သွားပြီ','ပျောက်သွားပြီ','ရောက်ပြီ','မှတ်မိတယ်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['မေ့သွားပြီ','forgot'],['မှတ်မိတယ်','remember'],['သတိရတယ်','miss someone'],['သတိထားပါ','be careful']]},
-{t:'fill',q:'Complete: Sorry — (I) forgot',s:'တောင်းပန်ပါတယ် ___',o:['မေ့သွားပြီ','မှတ်မိတယ်','နာမည်မေ့သွားပြီ','နာမည်'],a:0}]},
+{t:'fill',q:'Complete: Sorry — (I) forgot',s:'တောင်းပန်ပါတယ် ___',o:['မေ့သွားပြီ','မှတ်မိတယ်','နာမည်မေ့သွားပြီ','နာမည်'],a:0},{t:'mc',q:'Review — which means "if it rains"?',o:['မိုးရွာရင်','လမ်း','ရွာ','သစ်ပင်'],a:0}]},
 {id:'my_mem_5',title:'Checkpoint',step:'checkpoint',meta:'Memory mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "(I) miss you / think of you"?',o:['သတိရတယ်','မှတ်မိတယ်','သတိထားပါ','မေ့သွားပြီ'],a:0},
 {t:'li',q:'Listen — which one?',say:'မှတ်မိတယ်',o:['မှတ်မိတယ်','မမှတ်မိဘူး','မေ့သွားပြီ','မှတ်မိလား'],a:0},
@@ -3212,7 +3212,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Sorry — (I) forgot',a:['တောင်းပန်ပါတယ်','မေ့သွားပြီ'],pool:['တောင်းပန်ပါတယ်','မေ့သွားပြီ','မှတ်မိတယ်']},
 {t:'mc',q:'forgot · remember · miss =',o:['မေ့သွားပြီ · မှတ်မိတယ် · သတိရတယ်','မှတ်မိတယ် · မေ့သွားပြီ · သတိရတယ်','သတိရတယ် · မှတ်မိတယ် · မေ့သွားပြီ','မေ့သွားပြီ · သတိရတယ် · မှတ်မိတယ်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['မေ့သွားပြီ','forgot'],['မမှတ်မိဘူး','do not remember'],['သတိရတယ်','miss / think of'],['နာမည်မေ့သွားပြီ','forgot the name']]},
-{t:'mc',q:'Review — which means "make a call"?',o:['ဖုန်းဆက်တယ်','ကူညီပါ','မိုးရွာနေတယ်','အခန်းရှိလား'],a:0}]},
+{t:'mc',q:'Review — which means "make a call"?',o:['ဖုန်းဆက်တယ်','ကူညီပါ','မိုးရွာနေတယ်','အခန်းရှိလား'],a:0},{t:'mc',q:'Review — which means "have been (there)"?',o:['သွားဖူးတယ်','လမ်း','ရွာ','သစ်ပင်'],a:0},{t:'mc',q:'Review — which means "sing"?',o:['သီချင်းဆိုတယ်','လမ်း','ရွာ','သစ်ပင်'],a:0}]},
 
 /* --- Topic 7: together, alone & the years --- */
 {id:'my_together',title:'Together',step:'learn',meta:'အတူတူ လိုက်မယ် တစ်ယောက်တည်း',vocab:[['အတူတူ','atu tu','together'],['အတူတူသွားမယ်','atu tu thwa meh','(let us) go together'],['လိုက်မယ်','laiq meh','(I) will come along'],['တစ်ယောက်တည်း','ta yauq hteh','alone'],['နောက်နှစ်','nauq hniq','next year'],['မနှစ်က','ma hniq ga','last year']],ex:[
@@ -3246,7 +3246,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) traveled alone last year — last-year alone went',a:['မနှစ်က','တစ်ယောက်တည်း','သွားခဲ့တယ်'],pool:['မနှစ်က','တစ်ယောက်တည်း','သွားခဲ့တယ်','အတူတူ']},
 {t:'li',q:'Listen — which one?',say:'လိုက်မယ်',o:['လိုက်မယ်','ယူမယ်','လာမယ်','လိုတယ်'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အတူတူ','together'],['တစ်ယောက်တည်း','alone'],['လိုက်မယ်','count me in'],['မနှစ်က','last year']]},
-{t:'fill',q:'Complete: (I) traveled alone last year — last-year alone went',s:'မနှစ်က ___ သွားခဲ့တယ်',o:['တစ်ယောက်တည်း','ဒီနှစ်','နောက်နှစ်','အတူတူသွားမယ်'],a:0}]},
+{t:'fill',q:'Complete: (I) traveled alone last year — last-year alone went',s:'မနှစ်က ___ သွားခဲ့တယ်',o:['တစ်ယောက်တည်း','ဒီနှစ်','နောက်နှစ်','အတူတူသွားမယ်'],a:0},{t:'mc',q:'Review — which means "if (you) have time"?',o:['အချိန်ရှိရင်','နာမည်မေ့သွားပြီ','သတိရတယ်','မမှတ်မိဘူး'],a:0}]},
 {id:'my_together_5',title:'Checkpoint',step:'checkpoint',meta:'Zone 11 complete!',vocab:[],ex:[
 {t:'mc',q:'Which means "(let us) go together"?',o:['အတူတူသွားမယ်','တစ်ယောက်တည်းသွားမယ်','လိုက်မယ်','သွားမယ်'],a:0},
 {t:'li',q:'Listen — which one?',say:'တစ်ယောက်တည်း',o:['တစ်ယောက်တည်း','အတူတူ','တစ်ယောက်','တစ်ခါတည်း'],a:0},
@@ -3254,7 +3254,7 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) will come along too — along-will',a:['လိုက်မယ်'],pool:['လိုက်မယ်','လိုတယ်']},
 {t:'mc',q:'together · alone =',o:['အတူတူ · တစ်ယောက်တည်း','တစ်ယောက်တည်း · အတူတူ','အတူတူ · တစ်ခါတည်း','နဲ့ · အတူတူ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အတူတူ','together'],['လိုက်မယ်','(I) will come along'],['နောက်နှစ်','next year'],['တစ်ယောက်တည်း','alone']]},
-{t:'mc',q:'Review — which means "what is your phone number?"?',o:['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','ရပါတယ်','ပိုကြီးတယ်','လုံချည်'],a:0}]},
+{t:'mc',q:'Review — which means "what is your phone number?"?',o:['ဖုန်းနံပါတ်ဘယ်လောက်လဲ','ရပါတယ်','ပိုကြီးတယ်','လုံချည်'],a:0},{t:'mc',q:'Review — which means "have eaten / tried"?',o:['စားဖူးတယ်','နာမည်မေ့သွားပြီ','သတိရတယ်','မမှတ်မိဘူး'],a:0},{t:'mc',q:'Review — which means "listen to music"?',o:['သီချင်းနားထောင်တယ်','နာမည်မေ့သွားပြီ','သတိရတယ်','မမှတ်မိဘူး'],a:0}]},
 
 /* ===================== ZONE 12 · MAKE MYANMAR HOME =====================
    The settling-in layer: lakh prices သိန်း/သန်း, ordinals (Pali ပထမ…),
@@ -3293,14 +3293,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: How much is one lakh in dollars? — one-lakh how-much (informally)',a:['တစ်သိန်း','ဘယ်လောက်','လဲ'],pool:['တစ်သိန်း','ဘယ်လောက်','လဲ','ရှိလား']},
 {t:'li',q:'Listen — which one?',say:'ငွေ',o:['ငွေ','ရွှေ','ငယ်','ကျပ်'],a:0},
 {t:'match',q:'Match amount and figure',pairs:[['ထောင်','1,000'],['သောင်း','10,000'],['သိန်း','100,000'],['သန်း','1,000,000']]},
-{t:'fill',q:'Complete: five lakh kyat',s:'ငါး ___ ကျပ်',o:['သိန်း','ပိုက်ဆံ','သန်း','ထောင်'],a:0}]},
+{t:'fill',q:'Complete: five lakh kyat',s:'ငါး ___ ကျပ်',o:['သိန်း','ပိုက်ဆံ','သန်း','ထောင်'],a:0},{t:'mc',q:'Review — which means "if (you) are hungry"?',o:['ဗိုက်ဆာရင်','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "really good"?',o:['အရမ်းကောင်းတယ်','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "still have / still there"?',o:['ရှိသေးတယ်','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0}]},
 {id:'my_lakh_5',title:'Checkpoint',step:'checkpoint',meta:'Big money mastered?',vocab:[],ex:[
 {t:'mc',q:'100,000 kyat is…',o:['တစ်သိန်း','တစ်သန်း','တစ်သောင်း','တစ်ထောင်'],a:0},
 {t:'li',q:'Listen — which one?',say:'သန်း',o:['သန်း','သိန်း','ထောင်','သုံး'],a:0},
 {t:'mc',q:'What does this mean?',d:'ပိုက်ဆံလဲတယ်',o:['exchange money','spend money','save money','send money'],a:0},
 {t:'wb',q:'Build: (I) need to exchange money — money exchange must',a:['ပိုက်ဆံ','လဲရမယ်'],pool:['ပိုက်ဆံ','လဲရမယ်','လဲတယ်']},
 {t:'mc',q:'lakh · million =',o:['သိန်း · သန်း','သန်း · သိန်း','သောင်း · သိန်း','သိန်း · သောင်း'],a:0},
-{t:'match',q:'Match word and meaning',pairs:[['သိန်း','100,000'],['သန်း','million'],['ငွေ','money / silver'],['ကျပ်','kyat']]}]},
+{t:'match',q:'Match word and meaning',pairs:[['သိန်း','100,000'],['သန်း','million'],['ငွေ','money / silver'],['ကျပ်','kyat']]},{t:'mc',q:'Review — which means "goodbye"?',o:['သွားတော့မယ်','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "have never eaten"?',o:['မစားဖူးဘူး','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "get up"?',o:['ထတယ်','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "are you married?"?',o:['အိမ်ထောင်ရှိလား','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0},{t:'mc',q:'Review — which means "can you come now?"?',o:['အခုလာနိုင်လား','မနှစ်က','နောက်နှစ်','တစ်ယောက်တည်း'],a:0}]},
 
 /* --- Topic 2: first, second, third --- */
 {id:'my_ord',title:'First & second',step:'learn',meta:'ပထမ ဒုတိယ တတိယ',vocab:[['ပထမ','pahtama','first'],['ဒုတိယ','dutiya','second'],['တတိယ','tatiya','third'],['ပထမဆုံး','pahtama zoun','the very first / first of all'],['အတန်း','atan','class / grade']],ex:[
@@ -3334,14 +3334,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: The second child is a daughter — second child (topic) daughter is',a:['ဒုတိယ','ကလေးက','သမီး','ပါ'],pool:['ဒုတိယ','ကလေးက','သမီး','ပါ','သား']},
 {t:'li',q:'Listen — which one?',say:'အတန်း',o:['အတန်း','အခန်း','တန်း','ပထမ'],a:0},
 {t:'match',q:'Match rank and meaning',pairs:[['ပထမဆုံး','the very first'],['ဒုတိယ','second'],['တတိယ','third'],['အတန်း','class / grade']]},
-{t:'fill',q:'Complete the sentence',s:'___ အကြိမ် ပါ',o:['ပထမ','အတန်း','မှာ','ပထမဆုံး'],a:0}]},
+{t:'fill',q:'Complete the sentence',s:'___ အကြိမ် ပါ',o:['ပထမ','အတန်း','မှာ','ပထမဆုံး'],a:0},{t:'mc',q:'Review — which means "if it rains, (I) will not go"?',o:['မိုးရွာရင်မသွားဘူး','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "really like (it)"?',o:['အရမ်းကြိုက်တယ်','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "in English"?',o:['အင်္ဂလိပ်လို','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0}]},
 {id:'my_ord_5',title:'Checkpoint',step:'checkpoint',meta:'Rankings mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "second"?',o:['ဒုတိယ','ပထမ','တတိယ','နှစ်'],a:0},
 {t:'li',q:'Listen — which one?',say:'တတိယ',o:['တတိယ','ဒုတိယ','ပထမ','သုံး'],a:0},
 {t:'mc',q:'What does this mean?',d:'ပထမ',o:['first','best','early','before'],a:0},
 {t:'wb',q:'Build: First of all, (I) will exchange money',a:['ပထမဆုံး','ပိုက်ဆံ','လဲမယ်'],pool:['ပထမဆုံး','ပိုက်ဆံ','လဲမယ်','နောက်ဆုံး']},
 {t:'mc',q:'first · second · third =',o:['ပထမ · ဒုတိယ · တတိယ','ဒုတိယ · ပထမ · တတိယ','တတိယ · ဒုတိယ · ပထမ','ပထမ · တတိယ · ဒုတိယ'],a:0},
-{t:'match',q:'Match rank and meaning',pairs:[['ပထမ','first'],['ဒုတိယ','second'],['တတိယ','third'],['ပထမဆုံး','the very first']]}]},
+{t:'match',q:'Match rank and meaning',pairs:[['ပထမ','first'],['ဒုတိယ','second'],['တတိယ','third'],['ပထမဆုံး','the very first']]},{t:'mc',q:'Review — which means "we"?',o:['ကျွန်တော်တို့','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "got it / OK now"?',o:['ရပြီ','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "bed"?',o:['ကုတင်','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "(I) am married"?',o:['အိမ်ထောင်ရှိတယ်','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0},{t:'mc',q:'Review — which means "finally / last"?',o:['နောက်ဆုံး','ပိုက်ဆံလဲတယ်','ငွေ','တစ်သိန်း'],a:0}]},
 
 /* --- Topic 3: errands around town --- */
 {id:'my_errand',title:'Errands',step:'learn',meta:'စာတိုက် ဘဏ် ဆေးဆိုင် ဆံပင်',vocab:[['စာတိုက်','sa daiq','post office'],['ဘဏ်','ban','bank'],['ဆေးဆိုင်','hsei zaing','pharmacy'],['ဆံပင်','hsabin','hair'],['ဆံပင်ညှပ်တယ်','hsabin hnyaq de','get a haircut']],ex:[
@@ -3375,14 +3375,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: First the bank, then the post office',a:['အရင်','ဘဏ်','ပြီးရင်','စာတိုက်'],pool:['အရင်','ဘဏ်','ပြီးရင်','စာတိုက်','နောက်ဆုံး']},
 {t:'li',q:'Listen — which one?',say:'ဘဏ်',o:['ဘဏ်','ဘာ','ဘယ်','ပန်း'],a:0},
 {t:'match',q:'Match place and meaning',pairs:[['ဘဏ်','bank'],['စာတိုက်','post office'],['ဆေးဆိုင်','pharmacy'],['ဆံပင်','hair']]},
-{t:'fill',q:'Complete: Where is the post office?',s:'စာတိုက် ___ လဲ',o:['ဘယ်မှာ','ပြီးရင်','မနက်ဖြန်','သွားရမယ်'],a:0}]},
+{t:'fill',q:'Complete: Where is the post office?',s:'စာတိုက် ___ လဲ',o:['ဘယ်မှာ','ပြီးရင်','မနက်ဖြန်','သွားရမယ်'],a:0},{t:'mc',q:'Review — which means "think"?',o:['ထင်တယ်','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "do not like (it) much"?',o:['သိပ်မကြိုက်ဘူး','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "foreigner"?',o:['နိုင်ငံခြားသား','အတန်း','ပထမဆုံး','တတိယ'],a:0}]},
 {id:'my_errand_5',title:'Checkpoint',step:'checkpoint',meta:'Errands mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "bank"?',o:['ဘဏ်','ဘူတာ','စာတိုက်','ဈေး'],a:0},
 {t:'li',q:'Listen — which one?',say:'ဆေးဆိုင်',o:['ဆေးဆိုင်','ဆေးရုံ','ဆိုင်','ဈေး'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဆံပင်',o:['hair','head','comb','beard'],a:0},
 {t:'wb',q:'Build: (I) will get a haircut tomorrow',a:['မနက်ဖြန်','ဆံပင်','ညှပ်မယ်'],pool:['မနက်ဖြန်','ဆံပင်','ညှပ်မယ်','ညှပ်တယ်']},
 {t:'mc',q:'post office · bank · pharmacy =',o:['စာတိုက် · ဘဏ် · ဆေးဆိုင်','ဘဏ် · စာတိုက် · ဆေးရုံ','စာတိုက် · ဆေးဆိုင် · ဘဏ်','ဘဏ် · ဆေးဆိုင် · စာတိုက်'],a:0},
-{t:'match',q:'Match place and meaning',pairs:[['စာတိုက်','post office'],['ဘဏ်','bank'],['ဆေးဆိုင်','pharmacy'],['ဆံပင်ညှပ်တယ်','get a haircut']]}]},
+{t:'match',q:'Match place and meaning',pairs:[['စာတိုက်','post office'],['ဘဏ်','bank'],['ဆေးဆိုင်','pharmacy'],['ဆံပင်ညှပ်တယ်','get a haircut']]},{t:'mc',q:'Review — which means "they"?',o:['သူတို့','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "can go (possible)"?',o:['သွားနိုင်တယ်','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "table"?',o:['စားပွဲ','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "(I) am not married"?',o:['အိမ်ထောင်မရှိဘူး','အတန်း','ပထမဆုံး','တတိယ'],a:0},{t:'mc',q:'Review — which means "sometimes"?',o:['တစ်ခါတစ်လေ','အတန်း','ပထမဆုံး','တတိယ'],a:0}]},
 
 /* --- Topic 4: feelings round 2 — the စိတ် compounds --- */
 {id:'my_feel2',title:'States of mind',step:'learn',meta:'စိတ်ဝင်စား ပျင်း အံ့ဩ + ဂရုစိုက်',vocab:[['စိတ်','seiq','mind / heart'],['စိတ်ဝင်စားတယ်','seiq win za de','interested'],['ပျင်းတယ်','pyin de','bored / lazy'],['အံ့ဩတယ်','an aw de','surprised / amazed'],['ဂရုစိုက်ပါ','gayu saiq ba','take care!']],ex:[
@@ -3416,14 +3416,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: Bored, so (I) read — bored-because read',a:['ပျင်းလို့','စာဖတ်တယ်'],pool:['ပျင်းလို့','စာဖတ်တယ်','ပျင်းရင်']},
 {t:'li',q:'Listen — which one?',say:'ဂရုစိုက်ပါ',o:['ဂရုစိုက်ပါ','ဂရုစိုက်','သတိထားပါ','စိတ်ဝင်စားတယ်'],a:0},
 {t:'match',q:'Match state and meaning',pairs:[['ပျင်းတယ်','bored'],['အံ့ဩတယ်','surprised'],['ဂရုစိုက်ပါ','take care!'],['စိတ်ဝင်စားတယ်','interested']]},
-{t:'fill',q:'Complete: (I) am interested in Burmese — Burmese-language interested',s:'မြန်မာစကား ___',o:['စိတ်ဝင်စားတယ်','စိတ်','တွေ့မယ်','စာဖတ်တယ်'],a:0}]},
+{t:'fill',q:'Complete: (I) am interested in Burmese — Burmese-language interested',s:'မြန်မာစကား ___',o:['စိတ်ဝင်စားတယ်','စိတ်','တွေ့မယ်','စာဖတ်တယ်'],a:0},{t:'mc',q:'Review — which means "(I) think it is good"?',o:['ကောင်းတယ်လို့ထင်တယ်','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0},{t:'mc',q:'Review — which means "just a little"?',o:['နည်းနည်းပဲ','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0},{t:'mc',q:'Review — which means "can you speak English?"?',o:['အင်္ဂလိပ်လိုပြောတတ်လား','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0}]},
 {id:'my_feel2_5',title:'Checkpoint',step:'checkpoint',meta:'Moods mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "take care!"?',o:['ဂရုစိုက်ပါ','ကူညီပါ','သတိရတယ်','ထိုင်ပါ'],a:0},
 {t:'li',q:'Listen — which one?',say:'အံ့ဩတယ်',o:['အံ့ဩတယ်','အံ့ဩ','ပျင်းတယ်','ဝမ်းသာတယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'ပျင်းတယ်',o:['bored / lazy','tired','sleepy','sad'],a:0},
 {t:'wb',q:'Build: (I) am interested in football',a:['ဘောလုံး','စိတ်ဝင်စားတယ်'],pool:['ဘောလုံး','စိတ်ဝင်စားတယ်','အံ့ဩတယ်']},
 {t:'mc',q:'interested · bored · surprised =',o:['စိတ်ဝင်စား · ပျင်း · အံ့ဩ','ပျင်း · စိတ်ဝင်စား · အံ့ဩ','အံ့ဩ · ပျင်း · စိတ်ဝင်စား','စိတ်ဝင်စား · အံ့ဩ · ပျင်း'],a:0},
-{t:'match',q:'Match state and meaning',pairs:[['စိတ်ဝင်စားတယ်','interested'],['ပျင်းတယ်','bored'],['အံ့ဩတယ်','surprised'],['စိတ်','mind / heart']]}]},
+{t:'match',q:'Match state and meaning',pairs:[['စိတ်ဝင်စားတယ်','interested'],['ပျင်းတယ်','bored'],['အံ့ဩတယ်','surprised'],['စိတ်','mind / heart']]},{t:'mc',q:'Review — which means "seven (၇)"?',o:['ခုနစ်','သန်း','သိန်း','တစ်ထောင်'],a:0},{t:'mc',q:'Review — which means "cannot go"?',o:['မသွားနိုင်ဘူး','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0},{t:'mc',q:'Review — which means "door"?',o:['တံခါး','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0},{t:'mc',q:'Review — which means "not finished yet"?',o:['မပြီးသေးဘူး','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0},{t:'mc',q:'Review — which means "always"?',o:['အမြဲ','ဆံပင်ညှပ်တယ်','ဆံပင်','ဆေးဆိုင်'],a:0}]},
 
 /* --- Topic 5: guests & visiting --- */
 {id:'my_visit',title:'Hospitality',step:'learn',meta:'ဧည့်သည် အလည်လာပါ ဝမ်းသာ ပြန်',vocab:[['ဧည့်သည်','eh theh','guest'],['အလည်လာပါ','a leh la ba','come and visit!'],['ဝမ်းသာတယ်','wun tha de','glad / delighted'],['ပြန်မယ်','pyan meh','(I) am heading back'],['ပြန်လာမယ်','pyan la meh','(I) will come back']],ex:[
@@ -3457,14 +3457,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) am heading back, but (I) will come back next year',a:['ပြန်မယ်','ဒါပေမဲ့','နောက်နှစ်','ပြန်လာမယ်'],pool:['ပြန်မယ်','ဒါပေမဲ့','နောက်နှစ်','ပြန်လာမယ်','မနှစ်က']},
 {t:'li',q:'Listen — which one?',say:'ဧည့်သည်',o:['ဧည့်သည်','အသည်း','ဈေးသည်','ညနေ'],a:0},
 {t:'match',q:'Match line and meaning',pairs:[['အလည်လာပါ','come and visit!'],['ဝမ်းသာတယ်','glad'],['ပြန်လာမယ်','will come back'],['ဧည့်သည်','guest']]},
-{t:'fill',q:'Complete: (I) am heading back, but (I) will come back next year',s:'ပြန်မယ် ဒါပေမဲ့ ___ ပြန်လာမယ်',o:['နောက်နှစ်','ဝမ်းသာတယ်','ဧည့်သည်','အိမ်'],a:0}]},
+{t:'fill',q:'Complete: (I) am heading back, but (I) will come back next year',s:'ပြန်မယ် ဒါပေမဲ့ ___ ပြန်လာမယ်',o:['နောက်နှစ်','ဝမ်းသာတယ်','ဧည့်သည်','အိမ်'],a:0},{t:'mc',q:'Review — which means "understand"?',o:['နားလည်တယ်','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0},{t:'mc',q:'Review — which means "father"?',o:['အဖေ','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0},{t:'mc',q:'Review — which means "now"?',o:['အခု','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0}]},
 {id:'my_visit_5',title:'Checkpoint',step:'checkpoint',meta:'Visiting mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "come and visit!"?',o:['အလည်လာပါ','ပြန်လာမယ်','လာပါ','အတူတူသွားမယ်'],a:0},
 {t:'li',q:'Listen — which one?',say:'ပြန်မယ်',o:['ပြန်မယ်','ပြန်လာမယ်','ပြောမယ်','ယူမယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'ဝမ်းသာတယ်',o:['glad / delighted','sad','full (of food)','warm'],a:0},
 {t:'wb',q:'Build: Glad to see the guests — guests see-get glad (တွေ့ရလို့ because-of-seeing)',a:['ဧည့်သည်','တွေ့ရလို့','ဝမ်းသာတယ်'],pool:['ဧည့်သည်','တွေ့ရလို့','ဝမ်းသာတယ်','ဝမ်းနည်းတယ်']},
 {t:'mc',q:'heading back · coming back =',o:['ပြန်မယ် · ပြန်လာမယ်','ပြန်လာမယ် · ပြန်မယ်','သွားမယ် · လာမယ်','ပြန်မယ် · လာမယ်'],a:0},
-{t:'match',q:'Match line and meaning',pairs:[['ဧည့်သည်','guest'],['အလည်လာပါ','come and visit!'],['ပြန်မယ်','heading back'],['ဝမ်းသာတယ်','glad']]}]},
+{t:'match',q:'Match line and meaning',pairs:[['ဧည့်သည်','guest'],['အလည်လာပါ','come and visit!'],['ပြန်မယ်','heading back'],['ဝမ်းသာတယ်','glad']]},{t:'mc',q:'Review — which means "nine (၉)"?',o:['ကိုး','သန်း','သိန်း','တစ်ထောင်'],a:0},{t:'mc',q:'Review — which means "must do"?',o:['လုပ်ရမယ်','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0},{t:'mc',q:'Review — which means "help (me), please"?',o:['ကူညီပါ','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0},{t:'mc',q:'Review — which means "have not eaten yet"?',o:['မစားရသေးဘူး','ဂရုစိုက်ပါ','အံ့ဩတယ်','ပျင်းတယ်'],a:0}]},
 
 /* --- Topic 6: fruits — the သီး family --- */
 {id:'my_fruit',title:'Fruits',step:'learn',meta:'သရက်သီး ငှက်ပျောသီး အုန်းသီး',vocab:[['အသီး','a thi','fruit'],['သရက်သီး','thayeq thi','mango'],['ငှက်ပျောသီး','hngeq pyaw thi','banana'],['အုန်းသီး','oun thi','coconut'],['နာနတ်သီး','na naq thi','pineapple']],ex:[
@@ -3498,14 +3498,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: (I) bought bananas at the market yesterday',a:['မနေ့က','ဈေးမှာ','ငှက်ပျောသီး','ဝယ်ခဲ့တယ်'],pool:['မနေ့က','ဈေးမှာ','ငှက်ပျောသီး','ဝယ်ခဲ့တယ်','ဝယ်မယ်']},
 {t:'li',q:'Listen — which one?',say:'ငှက်ပျောသီး',o:['ငှက်ပျောသီး','ငှက်','ပျော်တယ်','နာနတ်သီး'],a:0},
 {t:'match',q:'Match fruit and meaning',pairs:[['သရက်သီး','mango'],['ငှက်ပျောသီး','banana'],['နာနတ်သီး','pineapple'],['အသီး','fruit']]},
-{t:'fill',q:'Complete: Do you like mango? — mango like-question',s:'___ ကြိုက်လား',o:['သရက်သီး','ချိုတယ်','ငှက်ပျောသီး','နာနတ်သီး'],a:0}]},
+{t:'fill',q:'Complete: Do you like mango? — mango like-question',s:'___ ကြိုက်လား',o:['သရက်သီး','ချိုတယ်','ငှက်ပျောသီး','နာနတ်သီး'],a:0},{t:'mc',q:'Review — which means "please say it again"?',o:['ပြန်ပြောပါ','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0},{t:'mc',q:'Review — which means "age"?',o:['အသက်','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0},{t:'mc',q:'Review — which means "when?"?',o:['ဘယ်တော့လဲ','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0}]},
 {id:'my_fruit_5',title:'Checkpoint',step:'checkpoint',meta:'Fruits mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "coconut"?',o:['အုန်းသီး','နာနတ်သီး','သရက်သီး','ငှက်ပျောသီး'],a:0},
 {t:'li',q:'Listen — which one?',say:'နာနတ်သီး',o:['နာနတ်သီး','အုန်းသီး','သရက်သီး','နာရီ'],a:0},
 {t:'mc',q:'What does this mean?',d:'ငှက်ပျောသီး',o:['banana','bird','mango','papaya'],a:0},
 {t:'wb',q:'Build: Do you like mango? — mango like-question',a:['သရက်သီး','ကြိုက်လား'],pool:['သရက်သီး','ကြိုက်လား','ကြိုက်တယ်']},
 {t:'mc',q:'mango · banana · coconut · pineapple =',o:['သရက်သီး · ငှက်ပျောသီး · အုန်းသီး · နာနတ်သီး','ငှက်ပျောသီး · သရက်သီး · နာနတ်သီး · အုန်းသီး','သရက်သီး · အုန်းသီး · ငှက်ပျောသီး · နာနတ်သီး','နာနတ်သီး · အုန်းသီး · ငှက်ပျောသီး · သရက်သီး'],a:0},
-{t:'match',q:'Match fruit and meaning',pairs:[['သရက်သီး','mango'],['ငှက်ပျောသီး','banana'],['အုန်းသီး','coconut'],['နာနတ်သီး','pineapple']]}]},
+{t:'match',q:'Match fruit and meaning',pairs:[['သရက်သီး','mango'],['ငှက်ပျောသီး','banana'],['အုန်းသီး','coconut'],['နာနတ်သီး','pineapple']]},{t:'mc',q:'Review — which means "thirty (၃၀)"?',o:['သုံးဆယ်','သန်း','သိန်း','တစ်ထောင်'],a:0},{t:'mc',q:'Review — which means "please sit"?',o:['ထိုင်ပါ','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0},{t:'mc',q:'Review — which means "police"?',o:['ရဲ','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0},{t:'mc',q:'Review — which means "do not know yet"?',o:['မသိသေးဘူး','ပြန်လာမယ်','ပြန်မယ်','ဝမ်းသာတယ်'],a:0}]},
 
 /* --- Topic 7: the polite polish — course capstone --- */
 {id:'my_cap',title:'Polite particles',step:'learn',meta:'ပါ everywhere + နော်',vocab:[['ဟုတ်ပါတယ်','houq pa de','yes, that is right (polite)'],['မသိပါဘူး','ma thi ba bu','(I) do not know (polite)'],['ကိစ္စမရှိပါဘူး','keiq sa ma shi ba bu','no problem'],['တော်ပြီ','taw bi','that is enough'],['နောက်တွေ့မယ်နော်','nauq twei meh naw','see you later, OK?']],ex:[
@@ -3539,14 +3539,14 @@ const MY_LESSONS=[
 {t:'wb',q:'Build: No problem. See you later, OK?',a:['ကိစ္စမရှိပါဘူး','နောက်တွေ့မယ်နော်'],pool:['ကိစ္စမရှိပါဘူး','နောက်တွေ့မယ်နော်','တော်ပြီ']},
 {t:'li',q:'Listen — which one?',say:'ဟုတ်ပါတယ်',o:['ဟုတ်ပါတယ်','ဟုတ်ကဲ့','ဟုတ်တယ်','ရပါတယ်'],a:0},
 {t:'match',q:'Match line and moment',pairs:[['ကိစ္စမရှိပါဘူး','accepting an apology'],['တော်ပြီ','declining more'],['နောက်တွေ့မယ်နော်','warm goodbye'],['ဟုတ်ပါတယ်','polite agreement']]},
-{t:'fill',q:'Complete: See you later, OK? — later meet-will OK?',s:'နောက် ___ နော်',o:['တွေ့မယ်','ဟုတ်တယ်','ကိစ္စမရှိပါဘူး','မရှိဘူး'],a:0}]},
+{t:'fill',q:'Complete: See you later, OK? — later meet-will OK?',s:'နောက် ___ နော်',o:['တွေ့မယ်','ဟုတ်တယ်','ကိစ္စမရှိပါဘူး','မရှိဘူး'],a:0},{t:'mc',q:'Review — which means "what work do you do?"?',o:['ဘာအလုပ်လုပ်လဲ','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0},{t:'mc',q:'Review — which means "how old are you?"?',o:['အသက်ဘယ်လောက်ရှိပြီလဲ','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0},{t:'mc',q:'Review — which means "when will you come?"?',o:['ဘယ်တော့လာမလဲ','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0}]},
 {id:'my_cap_5',title:'Checkpoint',step:'checkpoint',meta:'The course, complete!',vocab:[],ex:[
 {t:'mc',q:'Which is the warm "see you later, OK?"',o:['နောက်တွေ့မယ်နော်','သွားတော့မယ်','တော်ပြီ','ဂရုစိုက်ပါ'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကိစ္စမရှိပါဘူး',o:['ကိစ္စမရှိပါဘူး','မသိပါဘူး','မရှိပါဘူး','ဟုတ်ပါတယ်'],a:0},
 {t:'mc',q:'What does this mean?',d:'မသိပါဘူး',o:['(I) do not know (polite)','(I) know it well','nobody told me','(I) forgot'],a:0},
 {t:'wb',q:'Build: That is enough. Thank you!',a:['တော်ပြီ','ကျေးဇူးတင်ပါတယ်'],pool:['တော်ပြီ','ကျေးဇူးတင်ပါတယ်','ကိစ္စမရှိပါဘူး']},
 {t:'mc',q:'The polish that softens ANY statement is…',o:['ပါ slid inside','နော် in front','တယ် doubled','ဘူး removed'],a:0},
-{t:'match',q:'Match line and meaning',pairs:[['ဟုတ်ပါတယ်','yes (polite)'],['ကိစ္စမရှိပါဘူး','no problem'],['တော်ပြီ','that is enough'],['နောက်တွေ့မယ်နော်','see you later, OK?']]}]},
+{t:'match',q:'Match line and meaning',pairs:[['ဟုတ်ပါတယ်','yes (polite)'],['ကိစ္စမရှိပါဘူး','no problem'],['တော်ပြီ','that is enough'],['နောက်တွေ့မယ်နော်','see you later, OK?']]},{t:'mc',q:'Review — which means "you are welcome"?',o:['ရပါတယ်','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0},{t:'mc',q:'Review — which means "straight ahead"?',o:['တည့်တည့်','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0},{t:'mc',q:'Review — which means "hospital"?',o:['ဆေးရုံ','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0},{t:'mc',q:'Review — which means "not yet / do not have yet"?',o:['မရှိသေးဘူး','နာနတ်သီး','အုန်းသီး','ငှက်ပျောသီး'],a:0}]},
 ];
 
 /* ---------- per-language art (secular: dramatic Hpa-an-style karst limestone

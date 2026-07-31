@@ -737,7 +737,7 @@ const BN_Z3=[
 {t:'fill',q:'Complete: “what is that (over there)?”',s:'___ কী?',o:['ওটা','বই','না','ভালো'],a:0},
 {t:'wb',q:'Build: “this (is) a pen”',a:['এটা','কলম'],pool:['এটা','কলম','ওটা','কী']},
 {t:'match',q:'Match word and meaning',pairs:[['এটা','this'],['কলম','pen'],['টেবিল','table'],['কী','what']]},
-{t:'mc',q:'Point at a far-off house and say…',o:['ওটা বাড়ি','এটা বাড়ি','সেটা কী','বাড়ি ওটা'],a:0}]},
+{t:'mc',q:'Point at a far-off house and say…',o:['ওটা বাড়ি','এটা বাড়ি','সেটা কী','বাড়ি ওটা'],a:0},{t:'mc',q:'Review — which means "uncle (mother’s brother)"?',o:['মামা','আগামীকাল','গতকাল','সকাল'],a:0}]},
 {id:'bn_dem_5',title:'Checkpoint',step:'checkpoint',meta:'Simple sentences mastered?',vocab:[],ex:[
 {t:'mc',q:'“This (is) a book” =',o:['এটা বই','এটা কী','ওটা কলম','বই সেটা'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'এটা কী?',o:['এটা কী?','ওটা কী?','এটা বই','কী'],a:0},
@@ -776,7 +776,7 @@ const BN_Z3=[
 {t:'mc',q:'The -এন ending (করেন, খান) marks…',o:['the polite you','I','the friendly you','he only'],a:0},
 {t:'wb',q:'Build: “I eat rice”',a:['আমি','ভাত','খাই'],pool:['আমি','ভাত','খাই','খায়']},
 {t:'match',q:'Match form and meaning',pairs:[['যাই','I go'],['যাও','you go'],['যান','you go (polite)'],['যায়','he/she goes']]},
-{t:'li',q:'Listen — which form?',say:'করে',o:['করে','করি','করো','করেন'],a:0}]},
+{t:'li',q:'Listen — which form?',say:'করে',o:['করে','করি','করো','করেন'],a:0},{t:'mc',q:'Review — which means "ka — the আ sign"?',o:['কা','চেয়ার','টেবিল','কলম'],a:0}]},
 {id:'bn_verb_5',title:'Checkpoint',step:'checkpoint',meta:'Present tense mastered?',vocab:[],ex:[
 {t:'fill',q:'Complete (polite): “you do”',s:'আপনি ___',o:['করেন','করি','করো','করে'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'আমি বাড়ি যাই',o:['আমি বাড়ি যাই','সে বাড়ি যায়','আমি ভাত খাই','তুমি যাও'],a:0},
@@ -815,7 +815,7 @@ const BN_Z3=[
 {t:'fill',q:'Complete: “the pen is there”',s:'কলম ___ আছে',o:['ওখানে','এখানে কী','নেই','না'],a:0},
 {t:'wb',q:'Build: “there is no tea”',a:['চা','নেই'],pool:['চা','নেই','আছে','জল']},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমার বই আছে','I have a book'],['জল নেই','no water'],['এখানে','here'],['ওখানে','there']]},
-{t:'li',q:'Listen — which word?',say:'এখানে',o:['এখানে','ওখানে','আছে','একটা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'এখানে',o:['এখানে','ওখানে','আছে','একটা'],a:0},{t:'mc',q:'Review — which means "ku — the উ sign"?',o:['কু','যাই','খাই','করে'],a:0}]},
 {id:'bn_have_5',title:'Checkpoint',step:'checkpoint',meta:'achhe & nei mastered?',vocab:[],ex:[
 {t:'mc',q:'“I have a book” =',o:['আমার বই আছে','আমি বই','বই আছে আমার','আমার বই নেই'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'জল নেই',o:['জল নেই','জল আছে','চা নেই','মা আছেন'],a:0},
@@ -854,7 +854,7 @@ const BN_Z3=[
 {t:'wb',q:'Build: “I do not know”',a:['আমি','জানি','না'],pool:['আমি','জানি','না','নয়']},
 {t:'fill',q:'Someone speaks too fast. You say:',s:'___ না',o:['বুঝি','জানি','খাই','যাই'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['খাই না','I do not eat'],['যাই না','I do not go'],['জানি না','I do not know'],['এটা বই নয়','this is not a book']]},
-{t:'li',q:'Listen — which word?',say:'বুঝি',o:['বুঝি','জানি','বুঝি না','মাছি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'বুঝি',o:['বুঝি','জানি','বুঝি না','মাছি'],a:0},{t:'mc',q:'Review — which means "ko — the ও sign"?',o:['কো','জল নেই','ওখানে','এখানে'],a:0}]},
 {id:'bn_neg_5',title:'Checkpoint',step:'checkpoint',meta:'Negation mastered?',vocab:[],ex:[
 {t:'mc',q:'“I do not know” =',o:['জানি না','জানি','নয় জানি','জানি নেই'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'বুঝি না',o:['বুঝি না','বুঝি','জানি না','খাই না'],a:0},
@@ -893,7 +893,7 @@ const BN_Z3=[
 {t:'wb',q:'Build: “do you know?”',a:['তুমি','কি','জানো'],pool:['তুমি','কি','জানো','জানি']},
 {t:'fill',q:'Answer yes to “তুমি কি যাও?”',s:'___',o:['যাই','যাই না','জানি না','নয়'],a:0},
 {t:'match',q:'Match the pair',pairs:[['কি','yes–no marker'],['কী','what'],['খাই','yes, I eat'],['খাই না','no, I do not']]},
-{t:'li',q:'Listen — which question?',say:'তুমি কি খাও?',o:['তুমি কি খাও?','তুমি খাও','কী খাও?','খাও না?'],a:0}]},
+{t:'li',q:'Listen — which question?',say:'তুমি কি খাও?',o:['তুমি কি খাও?','তুমি খাও','কী খাও?','খাও না?'],a:0},{t:'mc',q:'Review — which means "salt (the West Bengal word)"?',o:['নুন','বুঝি না','বুঝি','জানি না'],a:0}]},
 {id:'bn_yn_5',title:'Checkpoint',step:'checkpoint',meta:'Yes–no questions mastered?',vocab:[],ex:[
 {t:'mc',q:'The yes–no marker is…',o:['কি (short i)','কী (long i)','কে','না'],a:0},
 {t:'li',q:'Listen — which question?',say:'আপনি কি যাবেন?',o:['আপনি কি যাবেন?','তুমি কি খাও?','আপনি যাবেন','কে যাবেন?'],a:0},
@@ -932,7 +932,7 @@ const BN_Z3=[
 {t:'fill',q:'Complete: “which one do you want?”… ask about a book',s:'___ বই?',o:['কোনটা','কোথায়','কখন','কেন'],a:0},
 {t:'wb',q:'Build: “when do you go home?”',a:['তুমি','কখন','বাড়ি','যাও'],pool:['তুমি','কখন','বাড়ি','যাও','কোথায়']},
 {t:'match',q:'Match question and meaning',pairs:[['তুমি কোথায় যাও?','where do you go?'],['তুমি কখন খাও?','when do you eat?'],['কোনটা ভালো?','which is good?'],['সে কে?','who is that?']]},
-{t:'li',q:'Listen — which word?',say:'কখন',o:['কখন','কেন','কোথায়','এখন'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'কখন',o:['কখন','কেন','কোথায়','এখন'],a:0},{t:'mc',q:'Review — which means "uncle (the Kolkata word)"?',o:['কাকু','খাই না','বুঝি না','বুঝি'],a:0}]},
 {id:'bn_qw_5',title:'Checkpoint',step:'checkpoint',meta:'Question words mastered?',vocab:[],ex:[
 {t:'mc',q:'“where” =',o:['কোথায়','কখন','কেন','কে'],a:0},
 {t:'li',q:'Listen — which question?',say:'তুমি কোথায় যাও?',o:['তুমি কোথায় যাও?','তুমি কেন যাও?','তুমি কি যাও?','তুমি কখন খাও?'],a:0},
@@ -971,7 +971,7 @@ const BN_Z3=[
 {t:'wb',q:'Build: “I like tea”',a:['আমার','চা','ভালো','লাগে'],pool:['আমার','চা','ভালো','লাগে','চাই']},
 {t:'fill',q:'Complete: “I want to eat rice”',s:'আমি ভাত ___ চাই',o:['খেতে','খাই','খাও','যেতে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমি জল চাই','I want water'],['আমার চা ভালো লাগে','I like tea'],['খেতে চাই','I want to eat'],['চাই না','I do not want']]},
-{t:'li',q:'Listen — which word?',say:'লাগে',o:['লাগে','লাল','আছে','খায়'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'লাগে',o:['লাগে','লাল','আছে','খায়'],a:0},{t:'mc',q:'Review — which means "milk"?',o:['দুধ','কোনটা','কেন','কখন'],a:0}]},
 {id:'bn_want_5',title:'Zone 3 checkpoint',step:'checkpoint',meta:'You can build sentences!',vocab:[],ex:[
 {t:'mc',q:'“I want tea” =',o:['আমি চা চাই','আমি চা খাই','আমার চা আছে','চা ভালো'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'আমার চা ভালো লাগে',o:['আমার চা ভালো লাগে','আমি চা চাই','আমি চা খাই না','চা আছে কি?'],a:0},
@@ -1012,7 +1012,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “the shop is not far” (দূরে comes soon!)… say “the shop is here”',s:'দোকান ___ আছে',o:['এখানে','কোথায়','কখন','কি'],a:0},
 {t:'wb',q:'Build: “where is the school?”',a:['স্কুল','কোথায়'],pool:['স্কুল','কোথায়','স্টেশন','কেন']},
 {t:'match',q:'Match place and meaning',pairs:[['দোকান','shop'],['রাস্তা','road'],['হাসপাতাল','hospital'],['স্টেশন','station']]},
-{t:'li',q:'Listen — which word?',say:'রাস্তা',o:['রাস্তা','বাস','বাজার','আস্তে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'রাস্তা',o:['রাস্তা','বাস','বাজার','আস্তে'],a:0},{t:'mc',q:'Review — which means "fruit"?',o:['ফল','জল চাই','ভালো লাগে','খেতে চাই'],a:0}]},
 {id:'bn_town_5',title:'Checkpoint',step:'checkpoint',meta:'Town words mastered?',vocab:[],ex:[
 {t:'mc',q:'“market” =',o:['বাজার','দোকান','রাস্তা','স্কুল'],a:0},
 {t:'li',q:'Listen — which word?',say:'হাসপাতাল',o:['হাসপাতাল','স্টেশন','বাজার','স্কুল'],a:0},
@@ -1052,7 +1052,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “I eat at home”',s:'আমি ___ খাই',o:['বাড়িতে','বাড়ি কি','টেবিল','কলকাতা'],a:0},
 {t:'wb',q:'Build: “mother is at home”',a:['মা','বাড়িতে','আছেন'],pool:['মা','বাড়িতে','আছেন','আছে']},
 {t:'match',q:'Match phrase and meaning',pairs:[['বাজারে','at the market'],['স্কুলে','at school'],['টেবিলে','on the table'],['কলকাতায়','in Kolkata']]},
-{t:'li',q:'Listen — which word?',say:'দোকানে',o:['দোকানে','বাজারে','দোকান','ওখানে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'দোকানে',o:['দোকানে','বাজারে','দোকান','ওখানে'],a:0},{t:'mc',q:'Review — which means "moon"?',o:['চাঁদ','স্টেশন','হাসপাতাল','স্কুল'],a:0}]},
 {id:'bn_loc_5',title:'Checkpoint',step:'checkpoint',meta:'Locative mastered?',vocab:[],ex:[
 {t:'mc',q:'“in the shop” =',o:['দোকানে','দোকান','দোকানকে','দোকানর'],a:0},
 {t:'li',q:'Listen — which word?',say:'কলকাতায়',o:['কলকাতায়','কলকাতা','বাজারে','বাড়িতে'],a:0},
@@ -1092,7 +1092,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “didi’s tea”',s:'___ চা',o:['দিদির','দিদি','দিদিকে','দিদিতে'],a:0},
 {t:'wb',q:'Build: “father’s book is on the table”',a:['বাবার','বই','টেবিলে','আছে'],pool:['বাবার','বই','টেবিলে','আছে','বাবা']},
 {t:'match',q:'Match phrase and meaning',pairs:[['বন্ধুর','friend’s'],['কার','whose'],['বাবার দোকান','father’s shop'],['মায়ের শাড়ি','mother’s sari']]},
-{t:'li',q:'Listen — which word?',say:'বন্ধুর',o:['বন্ধুর','বন্ধু','বাবার','বাইরে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'বন্ধুর',o:['বন্ধুর','বন্ধু','বাবার','বাইরে'],a:0},{t:'mc',q:'Review — which means "hello (the common WB greeting)"?',o:['নমস্কার','টেবিলে','স্কুলে','কলকাতায়'],a:0}]},
 {id:'bn_gen_5',title:'Checkpoint',step:'checkpoint',meta:'Possessive mastered?',vocab:[],ex:[
 {t:'mc',q:'“father’s book” =',o:['বাবার বই','বাবা বই','বাবাকে বই','বইয়ে বাবা'],a:0},
 {t:'li',q:'Listen — which word?',say:'কার',o:['কার','কে','বার','চার'],a:0},
@@ -1132,7 +1132,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “whom do you know?”',s:'তুমি ___ জানো?',o:['কাকে','কার','কে','কী'],a:0},
 {t:'wb',q:'Build: “call mother”',a:['মাকে','ডাকো'],pool:['মাকে','ডাকো','মা','দিন']},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমাকে দিন','give me'],['তাকে ডাকো','call him/her'],['কাকে','whom'],['তোমাকে','to you']]},
-{t:'li',q:'Listen — which word?',say:'ডাকো',o:['ডাকো','ডাকেন','দিন','খাও'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ডাকো',o:['ডাকো','ডাকেন','দিন','খাও'],a:0},{t:'mc',q:'Review — which means "how are you? (polite)"?',o:['কেমন আছেন?','মায়ের','বন্ধুর','বন্ধু'],a:0}]},
 {id:'bn_obj_5',title:'Checkpoint',step:'checkpoint',meta:'Object marker mastered?',vocab:[],ex:[
 {t:'mc',q:'“me / to me” =',o:['আমাকে','আমার','আমি','মাকে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'তাকে ডাকো',o:['তাকে ডাকো','মাকে ডাকো','তোমাকে ডাকো','তাকে দিন'],a:0},
@@ -1172,7 +1172,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “mother is inside the house”',s:'মা বাড়ির ___ আছেন',o:['ভিতরে','বাইরে','উপরে','দূরে'],a:0},
 {t:'wb',q:'Build: “the shop is near”',a:['দোকান','কাছে'],pool:['দোকান','কাছে','দূরে','আছে']},
 {t:'match',q:'Match phrase and meaning',pairs:[['উপরে','above'],['নিচে','below'],['কাছে','near'],['দূরে','far']]},
-{t:'li',q:'Listen — which word?',say:'ভিতরে',o:['ভিতরে','বাইরে','নিচে','ভাত'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ভিতরে',o:['ভিতরে','বাইরে','নিচে','ভাত'],a:0},{t:'mc',q:'Review — which means "I am fine"?',o:['ভালো আছি','ডাকো','কাকে','মাকে'],a:0}]},
 {id:'bn_pos_5',title:'Checkpoint',step:'checkpoint',meta:'Positions mastered?',vocab:[],ex:[
 {t:'mc',q:'“inside” =',o:['ভিতরে','বাইরে','উপরে','নিচে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'টেবিলের নিচে',o:['টেবিলের নিচে','টেবিলের উপরে','বাড়ির ভিতরে','টেবিলে আছে'],a:0},
@@ -1212,7 +1212,7 @@ const BN_Z4=[
 {t:'fill',q:'Answer “কোথায় যাচ্ছ?” — to the shop:',s:'___ যাচ্ছি',o:['দোকানে','দোকান','বাজার','কোথায়'],a:0},
 {t:'wb',q:'Build: “what are you doing?”',a:['কী','করছ'],pool:['কী','করছ','করো','কি']},
 {t:'match',q:'Match sentence and meaning',pairs:[['খাচ্ছি','I am eating'],['যাচ্ছি','I am going'],['করছি','I am doing'],['করছে','he/she is doing']]},
-{t:'li',q:'Listen — which sentence?',say:'আমি ভাত খাচ্ছি',o:['আমি ভাত খাচ্ছি','আমি ভাত খাই','সে ভাত খাচ্ছে','আমি চা খাচ্ছি'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'আমি ভাত খাচ্ছি',o:['আমি ভাত খাচ্ছি','আমি ভাত খাই','সে ভাত খাচ্ছে','আমি চা খাচ্ছি'],a:0},{t:'mc',q:'Review — which means "goodbye — see you (lit. I come)"?',o:['আসি','দূরে','কাছে','বাইরে'],a:0}]},
 {id:'bn_cont_5',title:'Checkpoint',step:'checkpoint',meta:'Continuous mastered?',vocab:[],ex:[
 {t:'mc',q:'“I am doing” =',o:['করছি','করি','করছে','করব'],a:0},
 {t:'li',q:'Listen — which question?',say:'কী করছ?',o:['কী করছ?','কোথায় যাচ্ছ?','কী করো?','কে করছে?'],a:0},
@@ -1251,7 +1251,7 @@ const BN_Z4=[
 {t:'fill',q:'Complete: “I like sweets”',s:'আমার ___ ভালো লাগে',o:['মিষ্টি','মিষ্টির','কাপ','দিন'],a:0},
 {t:'wb',q:'Build: “give me water, please”',a:['আমাকে','জল','দিন'],pool:['আমাকে','জল','দিন','চা']},
 {t:'match',q:'Match food and meaning',pairs:[['ডিম','egg'],['রুটি','roti'],['মিষ্টি','sweets'],['কাপ','cup']]},
-{t:'li',q:'Listen — which phrase?',say:'আমাকে ডিম দিন',o:['আমাকে ডিম দিন','আমাকে রুটি দিন','ডিম খাচ্ছি','মিষ্টি দিন'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'আমাকে ডিম দিন',o:['আমাকে ডিম দিন','আমাকে রুটি দিন','ডিম খাচ্ছি','মিষ্টি দিন'],a:0},{t:'mc',q:'Review — which means "bye (casual)"?',o:['টাটা','খাচ্ছি','যাচ্ছি','করছে'],a:0}]},
 {id:'bn_food_5',title:'Zone 4 checkpoint',step:'checkpoint',meta:'Cases & places mastered?',vocab:[],ex:[
 {t:'mc',q:'“One cup of tea, please” =',o:['এক কাপ চা দিন','চা এক কাপ খাই','কাপ চা আছে','চা দিন না'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'এক কাপ চা দিন',o:['এক কাপ চা দিন','আমাকে জল দিন','মিষ্টি দিন','চা খাচ্ছি'],a:0},
@@ -1292,7 +1292,7 @@ const BN_Z5=[
 {t:'wb',q:'Build in order: 80, 90, 100',a:['আশি','নব্বই','একশো'],pool:['একশো','আশি','নব্বই','সত্তর']},
 {t:'mc',q:'Which is 80?',o:['আশি','নব্বই','আট','আঠারো'],a:0},
 {t:'match',q:'Match number and value',pairs:[['কুড়ি','20'],['তিরিশ','30'],['ষাট','60'],['একশো','100']]},
-{t:'li',q:'Listen — which number?',say:'সত্তর',o:['সত্তর','ষাট','সতেরো','নব্বই'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'সত্তর',o:['সত্তর','ষাট','সতেরো','নব্বই'],a:0},{t:'mc',q:'Review — which means "they"?',o:['তারা','কাপ','মিষ্টি','রুটি'],a:0}]},
 {id:'bn_num3_5',title:'Checkpoint',step:'checkpoint',meta:'Numbers to 100 mastered?',vocab:[],ex:[
 {t:'mc',q:'Which is 50?',o:['পঞ্চাশ','পঁচিশ','পাঁচ','চল্লিশ'],a:0},
 {t:'li',q:'Listen — which number?',say:'একশো',o:['একশো','একুশ','আশি','এক'],a:0},
@@ -1332,7 +1332,7 @@ const BN_Z5=[
 {t:'fill',q:'React: “that is cheap!”',s:'খুব ___',o:['সস্তা','দামি','কত','দাম'],a:0},
 {t:'wb',q:'Build: “how much is it?”',a:['দাম','কত'],pool:['দাম','কত','টাকা','কী']},
 {t:'match',q:'Match phrase and meaning',pairs:[['দাম কত?','how much is it?'],['কত টাকা?','how many taka?'],['খুব সস্তা','very cheap'],['খুব দামি','very expensive']]},
-{t:'li',q:'Listen — which word?',say:'দাম',o:['দাম','দিন','দামি','নাম'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'দাম',o:['দাম','দিন','দামি','নাম'],a:0},{t:'mc',q:'Review — which means "3"?',o:['তিন','একশো','নব্বই','আশি'],a:0}]},
 {id:'bn_money_5',title:'Checkpoint',step:'checkpoint',meta:'Money talk mastered?',vocab:[],ex:[
 {t:'mc',q:'“How much is it?” =',o:['দাম কত?','দাম কই?','কত দামি?','টাকা কী?'],a:0},
 {t:'li',q:'Listen — which word?',say:'সস্তা',o:['সস্তা','দামি','আস্তে','সাত'],a:0},
@@ -1371,7 +1371,7 @@ const BN_Z5=[
 {t:'wb',q:'Build: “where is the pen?”',a:['কলমটা','কোথায়'],pool:['কলমটা','কোথায়','কলম','একটা']},
 {t:'fill',q:'Complete: “three eggs, please”',s:'___ ডিম দিন',o:['তিনটে','তিন','তিরিশ','টা'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['একটা ডিম','an egg'],['দুটো রুটি','two rotis'],['বইটা','the book'],['বইগুলো','the books']]},
-{t:'li',q:'Listen — which word?',say:'একটা',o:['একটা','দুটো','এক','বইটা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'একটা',o:['একটা','দুটো','এক','বইটা'],a:0},{t:'mc',q:'Review — which means "4"?',o:['চার','একশো','নব্বই','আশি'],a:0}]},
 {id:'bn_cls_5',title:'Checkpoint',step:'checkpoint',meta:'Classifier mastered?',vocab:[],ex:[
 {t:'mc',q:'“two books” =',o:['দুটো বই','দুই বই','বই দুটোটা','দুটো বইগুলো'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'বইটা কোথায়?',o:['বইটা কোথায়?','বইগুলো কোথায়?','একটা বই','কলমটা কোথায়?'],a:0},
@@ -1410,7 +1410,7 @@ const BN_Z5=[
 {t:'wb',q:'Build: “I will take the book”',a:['বইটা','নেব'],pool:['বইটা','নেব','লাগবে','বই']},
 {t:'fill',q:'Complete: “I need a pen”',s:'আমার একটা কলম ___',o:['লাগবে','নেব','দেবেন','করুন'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['আর একটা','one more'],['ব্যাস','that’s all'],['এটা নেব','I’ll take this'],['দাম কম করুন','please reduce the price']]},
-{t:'li',q:'Listen — which word?',say:'দেবেন',o:['দেবেন','নেব','দিন','লাগবে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'দেবেন',o:['দেবেন','নেব','দিন','লাগবে'],a:0},{t:'mc',q:'Review — which means "6"?',o:['ছয়','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_shop_5',title:'Checkpoint',step:'checkpoint',meta:'Shopping mastered?',vocab:[],ex:[
 {t:'mc',q:'“I need…” =',o:['লাগবে','নেব','ব্যাস','আর'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'দাম কম করুন',o:['দাম কম করুন','দাম কত?','কম করুন না','ব্যাস'],a:0},
@@ -1449,7 +1449,7 @@ const BN_Z5=[
 {t:'wb',q:'Build: “it is half past five”',a:['সাড়ে','পাঁচটা','বাজে'],pool:['সাড়ে','পাঁচটা','বাজে','দশটা']},
 {t:'fill',q:'Complete: hurry — “there is no time!”',s:'___ নেই!',o:['সময়','সাড়ে','বাজে','কটা'],a:0},
 {t:'match',q:'Match time and meaning',pairs:[['একটা বাজে','one o’clock'],['দশটা বাজে','ten o’clock'],['সাড়ে পাঁচটা','half past five'],['সময় নেই','no time']]},
-{t:'li',q:'Listen — which question?',say:'কটা বাজে?',o:['কটা বাজে?','কখন খাও?','সময় আছে?','কত?'],a:0}]},
+{t:'li',q:'Listen — which question?',say:'কটা বাজে?',o:['কটা বাজে?','কখন খাও?','সময় আছে?','কত?'],a:0},{t:'mc',q:'Review — which means "7"?',o:['সাত','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_clock_5',title:'Checkpoint',step:'checkpoint',meta:'Clock time mastered?',vocab:[],ex:[
 {t:'mc',q:'“What time is it?” =',o:['কটা বাজে?','কখন বাজে?','সময় কত টাকা?','কটা দিন?'],a:0},
 {t:'li',q:'Listen — which time?',say:'পাঁচটা বাজে',o:['পাঁচটা বাজে','সাড়ে পাঁচটা','দশটা বাজে','একটা বাজে'],a:0},
@@ -1488,7 +1488,7 @@ const BN_Z5=[
 {t:'wb',q:'Build in order: Friday, Saturday, Sunday',a:['শুক্রবার','শনিবার','রবিবার'],pool:['রবিবার','শুক্রবার','শনিবার','সোমবার']},
 {t:'fill',q:'Complete: “today (is) Monday”',s:'আজ ___',o:['সোমবার','সোম','বার','কাল'],a:0},
 {t:'match',q:'Match day and meaning',pairs:[['সোমবার','Monday'],['বুধবার','Wednesday'],['শুক্রবার','Friday'],['রবিবার','Sunday']]},
-{t:'li',q:'Listen — which phrase?',say:'আজ কী বার?',o:['আজ কী বার?','আজ কী?','কটা বাজে?','আজ সোমবার'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'আজ কী বার?',o:['আজ কী বার?','আজ কী?','কটা বাজে?','আজ সোমবার'],a:0},{t:'mc',q:'Review — which means "8"?',o:['আট','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_week_5',title:'Checkpoint',step:'checkpoint',meta:'The week mastered?',vocab:[],ex:[
 {t:'mc',q:'“Friday” =',o:['শুক্রবার','শনিবার','বুধবার','রবিবার'],a:0},
 {t:'li',q:'Listen — which day?',say:'রবিবার',o:['রবিবার','শনিবার','সোমবার','মঙ্গলবার'],a:0},
@@ -1527,7 +1527,7 @@ const BN_Z5=[
 {t:'fill',q:'Complete: “my sister is at school”',s:'আমার বোন ___ আছে',o:['স্কুলে','স্কুল','স্কুলের','বাড়ি'],a:0},
 {t:'wb',q:'Build: “I have a family”' ,a:['আমার','পরিবার','আছে'],pool:['আমার','পরিবার','আছে','নেই']},
 {t:'match',q:'Match word and meaning',pairs:[['ভাই','brother'],['মেয়ে','daughter'],['স্বামী','husband'],['পরিবার','family']]},
-{t:'li',q:'Listen — which phrase?',say:'আমার একটা ভাই আছে',o:['আমার একটা ভাই আছে','আমার একটা বোন আছে','আমার পরিবার আছে','ভাই কোথায়?'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'আমার একটা ভাই আছে',o:['আমার একটা ভাই আছে','আমার একটা বোন আছে','আমার পরিবার আছে','ভাই কোথায়?'],a:0},{t:'mc',q:'Review — which means "sorry / excuse me"?',o:['মাফ করবেন','রবিবার','শনিবার','শুক্রবার'],a:0}]},
 {id:'bn_fam_5',title:'Zone 5 checkpoint',step:'checkpoint',meta:'Daily life mastered?',vocab:[],ex:[
 {t:'mc',q:'“family” =',o:['পরিবার','বন্ধু','মানুষ','বাড়ি'],a:0},
 {t:'li',q:'Listen — which word?',say:'মেয়ে',o:['মেয়ে','ছেলে','বোন','মায়ের'],a:0},
@@ -1568,7 +1568,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: “the house is very big”',s:'বাড়িটা খুব ___',o:['বড়','ছোট','বড়টা','উপরে'],a:0},
 {t:'wb',q:'Build: “this shop is small”',a:['এই','দোকানটা','ছোট'],pool:['এই','দোকানটা','ছোট','বড়']},
 {t:'match',q:'Match phrase and meaning',pairs:[['বড় বাড়ি','a big house'],['ছোট দোকান','a small shop'],['নতুন বই','a new book'],['সুন্দর শাড়ি','a beautiful sari']]},
-{t:'li',q:'Listen — which phrase?',say:'খুব সুন্দর',o:['খুব সুন্দর','খুব ভালো','খুব বড়','সুন্দর'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'খুব সুন্দর',o:['খুব সুন্দর','খুব ভালো','খুব বড়','সুন্দর'],a:0},{t:'mc',q:'Review — which means "OK / alright"?',o:['ঠিক আছে','পরিবার','স্ত্রী','স্বামী'],a:0}]},
 {id:'bn_adj_5',title:'Checkpoint',step:'checkpoint',meta:'Adjectives mastered?',vocab:[],ex:[
 {t:'mc',q:'“new” =',o:['নতুন','পুরোনো','সুন্দর','ছোট'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'বড় বাড়ি',o:['বড় বাড়ি','ছোট বাড়ি','নতুন বাড়ি','বড় বাজার'],a:0},
@@ -1608,7 +1608,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: “I like the blue one”',s:'আমার ___ ভালো লাগে',o:['নীলটা','নীল কি','রংটা কই','সবুজে'],a:0},
 {t:'wb',q:'Build: “a green book”',a:['সবুজ','বই'],pool:['সবুজ','বই','নীল','রং']},
 {t:'match',q:'Match phrase and meaning',pairs:[['লাল শাড়ি','red sari'],['সাদা ভাত','white rice'],['কালো চা','black tea'],['সবুজ মাঠ','green field']]},
-{t:'li',q:'Listen — which word?',say:'রং',o:['রং','লাল','বং','মন'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'রং',o:['রং','লাল','বং','মন'],a:0},{t:'mc',q:'Review — which means "I see / OK / well…"?',o:['আচ্ছা','সুন্দর','খারাপ','পুরোনো'],a:0}]},
 {id:'bn_col_5',title:'Checkpoint',step:'checkpoint',meta:'Colors mastered?',vocab:[],ex:[
 {t:'mc',q:'“black” =',o:['কালো','সাদা','নীল','লাল'],a:0},
 {t:'li',q:'Listen — which color?',say:'সবুজ',o:['সবুজ','হলুদ','সাদা','বুঝি'],a:0},
@@ -1647,7 +1647,7 @@ const BN_Z6=[
 {t:'wb',q:'Build: “the best sweets”',a:['সবচেয়ে','ভালো','মিষ্টি'],pool:['সবচেয়ে','ভালো','মিষ্টি','চেয়ে']},
 {t:'fill',q:'Complete: “I want more”',s:'আমি আরো ___ চাই — say it simply: ___ চাই',o:['বেশি','চেয়ে','সবচেয়ে','কম'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমার চেয়ে বড়','bigger than me'],['সবচেয়ে বড়','the biggest'],['বেশি','more'],['সবচেয়ে সস্তা','the cheapest']]},
-{t:'li',q:'Listen — which word?',say:'সবচেয়ে',o:['সবচেয়ে','চেয়ে','বেশি','সবুজ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'সবচেয়ে',o:['সবচেয়ে','চেয়ে','বেশি','সবুজ'],a:0},{t:'mc',q:'Review — which means "my name (is)…"?',o:['আমার নাম','হলুদ','সবুজ','নীল'],a:0}]},
 {id:'bn_cmp_5',title:'Checkpoint',step:'checkpoint',meta:'Comparisons mastered?',vocab:[],ex:[
 {t:'mc',q:'“than” =',o:['চেয়ে','বেশি','সবচেয়ে','মতো'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'সবচেয়ে ভালো',o:['সবচেয়ে ভালো','সবচেয়ে সুন্দর','আমার চেয়ে ভালো','ভালো লাগে'],a:0},
@@ -1686,7 +1686,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: comfort a sad friend — ask why',s:'মন খারাপ ___?',o:['কেন','কত','কটা','কার'],a:0},
 {t:'wb',q:'Build: “I am very happy”',a:['আমি','খুব','খুশি'],pool:['আমি','খুব','খুশি','খারাপ']},
 {t:'match',q:'Match phrase and meaning',pairs:[['খিদে পেয়েছে','hungry'],['তেষ্টা পেয়েছে','thirsty'],['ঘুম পাচ্ছে','sleepy'],['মন খারাপ','sad']]},
-{t:'li',q:'Listen — which word?',say:'ঘুম',o:['ঘুম','খুশি','গরম','ঘর'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ঘুম',o:['ঘুম','খুশি','গরম','ঘর'],a:0},{t:'mc',q:'Review — which means "morning"?',o:['সকাল','সবচেয়ে বড়','সবচেয়ে ভালো','সবচেয়ে'],a:0}]},
 {id:'bn_feel_5',title:'Checkpoint',step:'checkpoint',meta:'Feelings mastered?',vocab:[],ex:[
 {t:'mc',q:'“I am hungry” =',o:['আমার খিদে পেয়েছে','আমার ঘুম পাচ্ছে','আমার মন খারাপ','আমি খুশি'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'মন খারাপ',o:['মন খারাপ','মন ভালো','খুব খারাপ','মাথা ব্যথা'],a:0},
@@ -1725,7 +1725,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: “today is cold”',s:'আজ ___',o:['ঠান্ডা','গরম কি','বৃষ্টিতে','রোদটা'],a:0},
 {t:'wb',q:'Build: “hot tea, please”',a:['গরম','চা','দিন'],pool:['গরম','চা','দিন','ঠান্ডা']},
 {t:'match',q:'Match phrase and meaning',pairs:[['আজ গরম','today is hot'],['বৃষ্টি পড়ছে','it is raining'],['ঠান্ডা হাওয়া','a cool breeze'],['রোদ আছে','it is sunny']]},
-{t:'li',q:'Listen — which word?',say:'ঠান্ডা',o:['ঠান্ডা','গরম','আন্ডা','ঠিক আছে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ঠান্ডা',o:['ঠান্ডা','গরম','আন্ডা','ঠিক আছে'],a:0},{t:'mc',q:'Review — which means "13"?',o:['তেরো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_wx_5',title:'Checkpoint',step:'checkpoint',meta:'Weather mastered?',vocab:[],ex:[
 {t:'mc',q:'“rain” =',o:['বৃষ্টি','বর্ষা','রোদ','হাওয়া'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'আজ খুব গরম',o:['আজ খুব গরম','আজ ঠান্ডা','বৃষ্টি পড়ছে','আজ রোদ'],a:0},
@@ -1764,7 +1764,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: “two eyes” (the classifier!)',s:'দুটো ___',o:['চোখ','চোখে','চোখটা','কানে'],a:0},
 {t:'wb',q:'Build: “my head is hot” (fever hint!)',a:['আমার','মাথা','গরম'],pool:['আমার','মাথা','গরম','ঠান্ডা']},
 {t:'match',q:'Match word and meaning',pairs:[['চোখ','eye'],['কান','ear'],['পেট','stomach'],['পা','foot']]},
-{t:'li',q:'Listen — which word?',say:'পেট',o:['পেট','পা','ভাত','প্যাট'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'পেট',o:['পেট','পা','ভাত','প্যাট'],a:0},{t:'mc',q:'Review — which means "14"?',o:['চোদ্দো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_body_5',title:'Checkpoint',step:'checkpoint',meta:'The body mastered?',vocab:[],ex:[
 {t:'mc',q:'“eye” =',o:['চোখ','কান','মুখ','পেট'],a:0},
 {t:'li',q:'Listen — which word?',say:'মাথা',o:['মাথা','মুখ','হাত','মাঠ'],a:0},
@@ -1803,7 +1803,7 @@ const BN_Z6=[
 {t:'fill',q:'Complete: “my stomach is aching”',s:'আমার পেট ___ করছে',o:['ব্যথা','জ্বর','খিদে','গরম'],a:0},
 {t:'wb',q:'Build: “call the doctor”',a:['ডাক্তার','ডাকো'],pool:['ডাক্তার','ডাকো','দিন','ওষুধ']},
 {t:'match',q:'Match phrase and meaning',pairs:[['মাথা ব্যথা','headache'],['পেট ব্যথা','stomach-ache'],['জ্বর হয়েছে','has a fever'],['ওষুধ খাও','take medicine']]},
-{t:'li',q:'Listen — which word?',say:'ওষুধ',o:['ওষুধ','অসুখ','ওখানে','দই'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ওষুধ',o:['ওষুধ','অসুখ','ওখানে','দই'],a:0},{t:'mc',q:'Review — which means "15"?',o:['পনেরো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_health_5',title:'Zone 6 checkpoint',step:'checkpoint',meta:'You can describe your world!',vocab:[],ex:[
 {t:'mc',q:'“headache” =',o:['মাথা ব্যথা','পেট ব্যথা','মন খারাপ','জ্বর'],a:0},
 {t:'li',q:'Listen — which word?',say:'ডাক্তার',o:['ডাক্তার','ওষুধ','ডাকো','দাদা'],a:0},
@@ -1844,7 +1844,7 @@ const BN_Z7=[
 {t:'fill',q:'Complete (polite): “you went”',s:'আপনি ___',o:['গেলেন','গেলে','গেলাম','যাবেন'],a:0},
 {t:'wb',q:'Build: “yesterday I went to the market”',a:['কাল','আমি','বাজারে','গেলাম'],pool:['কাল','আমি','বাজারে','গেলাম','যাচ্ছি']},
 {t:'match',q:'Match form and meaning',pairs:[['খেলাম','I ate'],['গেলাম','I went'],['করলাম','I did'],['গেল','he/she went']]},
-{t:'li',q:'Listen — which form?',say:'করল',o:['করল','করলে','করলাম','করে'],a:0}]},
+{t:'li',q:'Listen — which form?',say:'করল',o:['করল','করলে','করলাম','করে'],a:0},{t:'mc',q:'Review — which means "16"?',o:['ষোলো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_past_5',title:'Checkpoint',step:'checkpoint',meta:'The past mastered?',vocab:[],ex:[
 {t:'mc',q:'“I did” =',o:['করলাম','করি','করব','করছি'],a:0},
 {t:'li',q:'Listen — which form?',say:'গেলাম',o:['গেলাম','গেলে','খেলাম','যাব'],a:0},
@@ -1884,7 +1884,7 @@ const BN_Z7=[
 {t:'fill',q:'Complete: “he/she has gone home”',s:'সে বাড়ি ___',o:['গেছে','গেছি','গেল কি','যাব'],a:0},
 {t:'wb',q:'Build: “I have eaten rice”',a:['আমি','ভাত','খেয়েছি'],pool:['আমি','ভাত','খেয়েছি','খেলাম']},
 {t:'match',q:'Match form and meaning',pairs:[['খেয়েছি','I have eaten'],['গেছে','he/she has gone'],['করেছেন','polite you have done'],['ভাত খেয়েছ?','have you eaten?']]},
-{t:'li',q:'Listen — which answer?',say:'খেয়েছি',o:['খেয়েছি','খেলাম','খাই','খাব'],a:0}]},
+{t:'li',q:'Listen — which answer?',say:'খেয়েছি',o:['খেয়েছি','খেলাম','খাই','খাব'],a:0},{t:'mc',q:'Review — which means "17"?',o:['সতেরো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_perf_5',title:'Checkpoint',step:'checkpoint',meta:'The perfect mastered?',vocab:[],ex:[
 {t:'mc',q:'“I have done” =',o:['করেছি','করলাম','করছি','করব'],a:0},
 {t:'li',q:'Listen — which question?',say:'ভাত খেয়েছ?',o:['ভাত খেয়েছ?','ভাত খেলে?','কী খেয়েছ?','ভাত খাচ্ছ?'],a:0},
@@ -1893,7 +1893,7 @@ const BN_Z7=[
 {t:'match',q:'Match form and meaning',pairs:[['করেছি','I have done'],['খেয়েছি','I have eaten'],['গেছি','I have gone'],['করেছে','he/she has done'],['করেছেন','polite you have done']]},
 {t:'mc',q:'The perfect marker is…',o:['-েছ-','-ল-','-ব-','-না'],a:0},
 {t:'li',q:'Listen — which form?',say:'গেছে',o:['গেছে','গেছি','গেলাম','যাচ্ছে'],a:0},
-{t:'mc',q:'Review — which means "60 (hard t!)"?',o:['ষাট','আপনি','করি','মাছ'],a:0}]},
+{t:'mc',q:'Review — which means "60 (hard t!)"?',o:['ষাট','আপনি','করি','তিনটে'],a:0}]},
 
 {id:'bn_fut',title:'The future tense',step:'learn',meta:'-ব -বে -বেন',vocab:[['করব','korbo','I will do'],['করবে','korbe','you / he / she will do'],['করবেন','korben','you will do (polite)'],['যাব','jabo','I will go'],['খাব','khabo','I will eat'],['কাল যাব','kal jabo','I will go tomorrow']],ex:[
 {t:'note',tag:'Tomorrow’s endings',q:'করব · যাব · খাব',body:'<p>The future is compact: <span class="deva">করব</span> I will do, <span class="deva">যাব</span> I will go, <span class="deva">খাব</span> I will eat. <span class="deva">-বে</span> covers you AND he/she; <span class="deva">-বেন</span> is polite: <span class="deva">করবেন</span>.</p>',tip:'কাল যাব — tomorrow I will go. There is কাল facing forward!'},
@@ -1924,7 +1924,7 @@ const BN_Z7=[
 {t:'fill',q:'Complete (polite): “will you come?” — আসা = come',s:'আপনি কি ___?',o:['আসবেন','আসবে','এসো','আসেন'],a:0},
 {t:'wb',q:'Build: “I will eat rice tomorrow”',a:['কাল','ভাত','খাব'],pool:['কাল','ভাত','খাব','খেলাম']},
 {t:'match',q:'Match form and meaning',pairs:[['যাব','I will go'],['খাব','I will eat'],['করবে','you will do'],['চা খাবেন?','will you have tea?']]},
-{t:'li',q:'Listen — which form?',say:'যাবে',o:['যাবে','যাব','যাবেন','যায়'],a:0}]},
+{t:'li',q:'Listen — which form?',say:'যাবে',o:['যাবে','যাব','যাবেন','যায়'],a:0},{t:'mc',q:'Review — which means "18"?',o:['আঠারো','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_fut_5',title:'Checkpoint',step:'checkpoint',meta:'The future mastered?',vocab:[],ex:[
 {t:'mc',q:'“I will go” =',o:['যাব','যাই','গেলাম','যাচ্ছি'],a:0},
 {t:'li',q:'Listen — which question?',say:'কাল কী করবে?',o:['কাল কী করবে?','কাল কী করলে?','আজ কী করবে?','কী করছ?'],a:0},
@@ -1964,7 +1964,7 @@ const BN_Z7=[
 {t:'wb',q:'Build: “first tea, then work!”',a:['প্রথমে','চা','তারপর','কাজ'],pool:['প্রথমে','চা','তারপর','কাজ','শেষে']},
 {t:'fill',q:'Complete: “I will eat later”',s:'___ খাব',o:['পরে','আগে','প্রথমে','শেষ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['প্রথমে','first'],['তারপর','then'],['পরে','later'],['শেষে','finally']]},
-{t:'li',q:'Listen — which word?',say:'আগে',o:['আগে','পরে','আজ','রাগে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'আগে',o:['আগে','পরে','আজ','রাগে'],a:0},{t:'mc',q:'Review — which means "20"?',o:['বিশ','তিনটে','দুটো','একশো'],a:0}]},
 {id:'bn_seq_5',title:'Checkpoint',step:'checkpoint',meta:'Sequencing mastered?',vocab:[],ex:[
 {t:'mc',q:'“then / after that” =',o:['তারপর','প্রথমে','আগে','এখন'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'পরে দেখা হবে',o:['পরে দেখা হবে','পরে খাব','আগে দেখা হবে','দেখা হবে'],a:0},
@@ -2004,7 +2004,7 @@ const BN_Z7=[
 {t:'wb',q:'Build: “can you come?” (friendly, future)',a:['আসতে','পারবে'],pool:['আসতে','পারবে','পারি','এসো']},
 {t:'fill',q:'Complete: “a little — I can speak a little”',s:'একটু বলতে ___',o:['পারি','পারো','চাই','হবে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['বাংলা বলতে পারি','I can speak Bangla'],['যেতে পারি','I can go'],['পারি না','I cannot'],['পারবে?','will you be able?']]},
-{t:'li',q:'Listen — which phrase?',say:'আসতে পারবে?',o:['আসতে পারবে?','যেতে পারবে?','আসতে পারি','আসবে?'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'আসতে পারবে?',o:['আসতে পারবে?','যেতে পারবে?','আসতে পারি','আসবে?'],a:0},{t:'mc',q:'Review — which means "chair"?',o:['চেয়ার','তখন','শেষে','আগে'],a:0}]},
 {id:'bn_can_5',title:'Checkpoint',step:'checkpoint',meta:'Can & cannot mastered?',vocab:[],ex:[
 {t:'mc',q:'“I can” =',o:['পারি','পারে','পারব','চাই'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'আমি বাংলা বলতে পারি',o:['আমি বাংলা বলতে পারি','বাংলা বলতে পারি না','আমি বাংলা শিখছি','বলতে পারবে?'],a:0},
@@ -2044,7 +2044,7 @@ const BN_Z7=[
 {t:'wb',q:'Build: “I need tea!”',a:['আমার','চা','দরকার'],pool:['আমার','চা','দরকার','হবে']},
 {t:'fill',q:'Complete: the host insists — “you must eat!”',s:'___ হবে!',o:['খেতে','যেতে','করতে','বলতে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['যেতে হবে','have to go'],['করতে হবে','has to be done'],['দরকার','need'],['পারি','can']]},
-{t:'li',q:'Listen — which phrase?',say:'দরকার নেই',o:['দরকার নেই','দরকার','জানি না','নেই'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'দরকার নেই',o:['দরকার নেই','দরকার','জানি না','নেই'],a:0},{t:'mc',q:'Review — which means "there"?',o:['ওখানে','বলতে পারি','যেতে পারি','করতে পারি'],a:0}]},
 {id:'bn_must_5',title:'Checkpoint',step:'checkpoint',meta:'Need & must mastered?',vocab:[],ex:[
 {t:'mc',q:'“I have to go” =',o:['আমাকে যেতে হবে','আমি যাব','যেতে পারি','যাই'],a:0},
 {t:'li',q:'Listen — which word?',say:'দরকার',o:['দরকার','ডাক্তার','দুপুর','সরকার'],a:0},
@@ -2084,7 +2084,7 @@ const BN_Z7=[
 {t:'wb',q:'Build: “please give (me) a little water”',a:['একটু','জল','দিন'],pool:['একটু','জল','দিন','বলুন']},
 {t:'fill',q:'Complete: invite them to look —',s:'___ দেখুন',o:['একটু','একটা','এটা','ওটা'],a:0},
 {t:'match',q:'Match request and meaning',pairs:[['আসুন','please come'],['একটু দেখুন','please look'],['বলুন','go ahead'],['এসো','come (friendly)']]},
-{t:'li',q:'Listen — which phrase?',say:'আসুন, বসুন',o:['আসুন, বসুন','এসো, বোসো','বলুন, দেখুন','আসি, যাই'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'আসুন, বসুন',o:['আসুন, বসুন','এসো, বোসো','বলুন, দেখুন','আসি, যাই'],a:0},{t:'mc',q:'Review — which means "I do not know"?',o:['জানি না','খেতে হবে','করতে হবে','যেতে হবে'],a:0}]},
 {id:'bn_req_5',title:'Zone 7 checkpoint',step:'checkpoint',meta:'Time travel unlocked!',vocab:[],ex:[
 {t:'mc',q:'“Please sit” =',o:['বসুন','বলুন','আসুন','এসো'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'কাল বাজারে গেলাম',o:['কাল বাজারে গেলাম','কাল বাজারে যাব','বাজারে যাচ্ছি','আজ গেছি'],a:0},
@@ -2126,7 +2126,7 @@ const BN_Z8=[
 {t:'fill',q:'Complete: “is there a rickshaw here?”',s:'এখানে ___ আছে?',o:['রিকশা','রিকশায়','রিকশার','মোড়'],a:0},
 {t:'wb',q:'Build: “I am going by metro”',a:['মেট্রোতে','যাচ্ছি'],pool:['মেট্রোতে','যাচ্ছি','মেট্রো','যাব']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ট্রেনে','by train'],['বাসে','by bus'],['ট্যাক্সিতে','by taxi'],['মেট্রোতে','by metro']]},
-{t:'li',q:'Listen — which phrase?',say:'ট্রেনে যাব',o:['ট্রেনে যাব','ট্রামে যাব','ট্রেনে গেলাম','বাসে যাব'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ট্রেনে যাব',o:['ট্রেনে যাব','ট্রামে যাব','ট্রেনে গেলাম','বাসে যাব'],a:0},{t:'mc',q:'Review — which means "which one"?',o:['কোনটা','একটু','এসো','দেখুন'],a:0}]},
 {id:'bn_veh_5',title:'Checkpoint',step:'checkpoint',meta:'Transport mastered?',vocab:[],ex:[
 {t:'mc',q:'“tram” =',o:['ট্রাম','ট্রেন','মেট্রো','রিকশা'],a:0},
 {t:'li',q:'Listen — which word?',say:'রিকশা',o:['রিকশা','ট্যাক্সি','গাড়ি','রাস্তা'],a:0},
@@ -2166,7 +2166,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “I will get off at the station”',a:['স্টেশনে','নামব'],pool:['স্টেশনে','নামব','উঠব','স্টেশন']},
 {t:'fill',q:'Complete: bargain the fare —',s:'ভাড়া ___ করুন',o:['কম','কত','বেশি টাকা','ভালো'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['উঠি','get on'],['নামি','get off'],['ভাড়া','fare'],['যাবেন?','will you go?']]},
-{t:'li',q:'Listen — which phrase?',say:'বাসে উঠি',o:['বাসে উঠি','বাসে নামি','ট্রেনে উঠি','বাসে যাই'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'বাসে উঠি',o:['বাসে উঠি','বাসে নামি','ট্রেনে উঠি','বাসে যাই'],a:0},{t:'mc',q:'Review — which means "I do not want"?',o:['চাই না','ট্রাম','গাড়ি','ট্যাক্সি'],a:0}]},
 {id:'bn_fare_5',title:'Checkpoint',step:'checkpoint',meta:'Fares & riding mastered?',vocab:[],ex:[
 {t:'mc',q:'“How much is the fare?” =',o:['ভাড়া কত?','দাম কই?','ভাড়া কেন?','টাকা কত ভাড়া?'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'এখানে নামব',o:['এখানে নামব','এখানে উঠি','ওখানে যাব','এখানে থাকি'],a:0},
@@ -2206,7 +2206,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “to the right, then straight”',a:['ডান','দিকে','তারপর','সোজা'],pool:['ডান','দিকে','তারপর','সোজা','বাঁ']},
 {t:'fill',q:'Complete: ask which side —',s:'কোন ___?',o:['দিকে','মোড়','সোজা','ডান না'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ডান দিকে','to the right'],['বাঁ দিকে','to the left'],['সোজা যান','go straight'],['এখানে থামুন','stop here']]},
-{t:'li',q:'Listen — which word?',say:'দিক',o:['দিক','ঠিক','দিন','মোড়'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'দিক',o:['দিক','ঠিক','দিন','মোড়'],a:0},{t:'mc',q:'Review — which means "I want to eat"?',o:['খেতে চাই','যাবেন?','এখানে নামব','নামি'],a:0}]},
 {id:'bn_dir_5',title:'Checkpoint',step:'checkpoint',meta:'Directions mastered?',vocab:[],ex:[
 {t:'mc',q:'“to the left” =',o:['বাঁ দিকে','ডান দিকে','সোজা','মোড়ে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ডান দিকে',o:['ডান দিকে','বাঁ দিকে','সোজা যান','ওই দিকে'],a:0},
@@ -2246,7 +2246,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “when will it arrive?”',a:['কখন','পৌঁছাবে'],pool:['কখন','পৌঁছাবে','ছাড়বে','কোথায়']},
 {t:'fill',q:'Complete: answer — “at ten”',s:'___ ছাড়বে',o:['দশটায়','দশটা','দশে','দশ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['একটা টিকিট','one ticket'],['হাওড়ার টিকিট','ticket to Howrah'],['পাঁচটায়','at five'],['কোন প্ল্যাটফর্ম?','which platform?']]},
-{t:'li',q:'Listen — which word?',say:'ছাড়বে',o:['ছাড়বে','ধরবে','পৌঁছাবে','ছাড়ল'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ছাড়বে',o:['ছাড়বে','ধরবে','পৌঁছাবে','ছাড়ল'],a:0},{t:'mc',q:'Review — which means "I want water"?',o:['জল চাই','দিক','থামুন','মোড়'],a:0}]},
 {id:'bn_tick_5',title:'Checkpoint',step:'checkpoint',meta:'Tickets mastered?',vocab:[],ex:[
 {t:'mc',q:'“One ticket, please” =',o:['একটা টিকিট দিন','টিকিট একটা কত','দিন একটা টিকিটে','টিকিট চাই কি'],a:0},
 {t:'li',q:'Listen — which question?',say:'কখন ছাড়বে?',o:['কখন ছাড়বে?','কখন আসবে?','কখন পৌঁছাবে?','কেন ছাড়বে?'],a:0},
@@ -2286,7 +2286,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “this year I am learning Bangla”',a:['এই','বছর','বাংলা','শিখছি'],pool:['এই','বছর','বাংলা','শিখছি','গত']},
 {t:'fill',q:'Complete: “the monsoon comes in this month”',s:'এই মাসে ___ আসে',o:['বর্ষা','বছর','রোদ কি','মাস'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['মাস','month'],['বছর','year'],['গত বছর','last year'],['আগামী মাসে','next month']]},
-{t:'li',q:'Listen — which word?',say:'মাস',o:['মাস','বাস','মাছ','মামা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'মাস',o:['মাস','বাস','মাছ','মামা'],a:0},{t:'mc',q:'Review — which means "road / street"?',o:['রাস্তা','হাওড়া','প্ল্যাটফর্ম','কখন পৌঁছাবে?'],a:0}]},
 {id:'bn_month_5',title:'Checkpoint',step:'checkpoint',meta:'Months & years mastered?',vocab:[],ex:[
 {t:'mc',q:'“year” =',o:['বছর','মাস','বার','দিন'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'গত বছর',o:['গত বছর','আগামী বছর','এই মাসে','গত মাসে'],a:0},
@@ -2326,7 +2326,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “where do you (polite) live?”',a:['কোথায়','থাকেন'],pool:['কোথায়','থাকেন','থাকো','যান']},
 {t:'fill',q:'Complete: “I lost the key!” — হারিয়ে গেছে!',s:'___ হারিয়ে গেছে',o:['চাবিটা','চাবিতে','হোটেলটা কি','দিনটা'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['থাকি','I live'],['থাকবেন?','will you stay?'],['চাবিটা','the key'],['হোটেলে','at the hotel']]},
-{t:'li',q:'Listen — which sentence?',say:'কত দিন থাকবেন?',o:['কত দিন থাকবেন?','কোথায় থাকবেন?','কত দিন লাগবে?','কবে আসবেন?'],a:0}]},
+{t:'li',q:'Listen — which sentence?',say:'কত দিন থাকবেন?',o:['কত দিন থাকবেন?','কোথায় থাকবেন?','কত দিন লাগবে?','কবে আসবেন?'],a:0},{t:'mc',q:'Review — which means "father’s"?',o:['বাবার','এই মাসে','গত বছর','ডিসেম্বর'],a:0}]},
 {id:'bn_stay_5',title:'Checkpoint',step:'checkpoint',meta:'Staying & living mastered?',vocab:[],ex:[
 {t:'mc',q:'“I live in Kolkata” =',o:['আমি কলকাতায় থাকি','আমি কলকাতা যাই','কলকাতায় গেছি','আমার কলকাতা'],a:0},
 {t:'li',q:'Listen — which question?',say:'কোথায় থাকো?',o:['কোথায় থাকো?','কোথায় যাও?','কী করো?','কেমন আছ?'],a:0},
@@ -2366,7 +2366,7 @@ const BN_Z8=[
 {t:'wb',q:'Build: “is there wi-fi here?”',a:['এখানে','ওয়াইফাই','আছে'],pool:['এখানে','ওয়াইফাই','আছে','নেই']},
 {t:'fill',q:'Complete: “my number (is)…” — just like আমার নাম!',s:'আমার ___ …',o:['নম্বর','ফোনে','মেসেজ কি','নাম্বারে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['পরে ফোন করব','I will call later'],['আমাকে ফোন করো','call me'],['ওয়াইফাই আছে?','is there wi-fi?'],['নম্বর','number']]},
-{t:'li',q:'Listen — which word?',say:'ওয়াইফাই',o:['ওয়াইফাই','ওয়াই','ফাইফাই','হাওয়া'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ওয়াইফাই',o:['ওয়াইফাই','ওয়াই','ফাইফাই','হাওয়া'],a:0},{t:'mc',q:'Review — which means "elder sister’s"?',o:['দিদির','থাকবেন?','চাবি','হোটেল'],a:0}]},
 {id:'bn_phone_5',title:'Zone 8 checkpoint',step:'checkpoint',meta:'You can get around!',vocab:[],ex:[
 {t:'mc',q:'“What is your number?” =',o:['তোমার নম্বর কত?','তোমার নাম কী?','ফোন কোথায়?','নম্বর করো?'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'পরে ফোন করব',o:['পরে ফোন করব','আমাকে ফোন করো','ফোন করি','পরে দেখা হবে'],a:0},
@@ -2408,7 +2408,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “rice and fish and sweets!”',a:['ভাত','আর','মাছ','আর','মিষ্টি'],pool:['ভাত','আর','মাছ','আর','মিষ্টি','বা']},
 {t:'fill',q:'Complete: “bus or train?”',s:'বাস ___ ট্রেন?',o:['বা','আর','ও','তাই'],a:0},
 {t:'match',q:'Match sentence and meaning',pairs:[['কিন্তু পারি না','but I cannot'],['তাই যাব না','so I will not go'],['কারণ খিদে পেয়েছে','because I am hungry'],['চা বা জল','tea or water']]},
-{t:'li',q:'Listen — which word?',say:'তাই',o:['তাই','চাই','ভাই','তা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'তাই',o:['তাই','চাই','ভাই','তা'],a:0},{t:'mc',q:'Review — which means "whose"?',o:['কার','ওয়াইফাই','মেসেজ','ফোন করি'],a:0},{t:'mc',q:'Review — which means "you did (polite)"?',o:['করলেন','ওয়াইফাই','মেসেজ','ফোন করি'],a:0}]},
 {id:'bn_conj_5',title:'Checkpoint',step:'checkpoint',meta:'Connectors mastered?',vocab:[],ex:[
 {t:'mc',q:'“but” =',o:['কিন্তু','কারণ','তাই','বা'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'কিন্তু পারি না',o:['কিন্তু পারি না','তাই পারি না','কিন্তু চাই না','পারি না'],a:0},
@@ -2448,7 +2448,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “if I can, I will come”',a:['যদি','পারি','আসব'],pool:['যদি','পারি','আসব','তাহলে']},
 {t:'fill',q:'Complete: agree — “then it is fine!”',s:'___ ঠিক আছে',o:['তাহলে','যদি','না হলে','কারণ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['যদি সময় থাকে','if there is time'],['তাহলে আসব','then I will come'],['না হলে','otherwise'],['যদি বৃষ্টি পড়ে','if it rains']]},
-{t:'li',q:'Listen — which phrase?',say:'তাহলে ঠিক আছে',o:['তাহলে ঠিক আছে','ঠিক আছে','তাই ঠিক','তাহলে যাব'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'তাহলে ঠিক আছে',o:['তাহলে ঠিক আছে','ঠিক আছে','তাই ঠিক','তাহলে যাব'],a:0},{t:'mc',q:'Review — which means "friend"?',o:['বন্ধু','বা','তাই','কারণ'],a:0},{t:'mc',q:'Review — which means "he / she did"?',o:['করল','বা','তাই','কারণ'],a:0}]},
 {id:'bn_cond_5',title:'Checkpoint',step:'checkpoint',meta:'Conditionals mastered?',vocab:[],ex:[
 {t:'mc',q:'“if” =',o:['যদি','তাহলে','তখন','তাই'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'যদি পারি',o:['যদি পারি','তাহলে পারি','যদি পারো','পারলে'],a:0},
@@ -2488,7 +2488,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “I think that (it) is expensive”',a:['আমার','মনে','হয়','দামি'],pool:['আমার','মনে','হয়','দামি','সস্তা']},
 {t:'fill',q:'Complete: “what are you thinking?”',s:'কী ___?',o:['ভাবছ','বলছ','করছ','খাচ্ছ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ভাবছি','I am thinking'],['বলছি','I am saying'],['মনে হয়','it seems'],['সত্যি','true']]},
-{t:'li',q:'Listen — which word?',say:'বলি',o:['বলি','ভাবি','চলি','বলো'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'বলি',o:['বলি','ভাবি','চলি','বলো'],a:0},{t:'mc',q:'Review — which means "to mother"?',o:['মাকে','না হলে','যদি পারি','তাহলে'],a:0},{t:'mc',q:'Review — which means "I have done"?',o:['করেছি','না হলে','যদি পারি','তাহলে'],a:0}]},
 {id:'bn_think_5',title:'Checkpoint',step:'checkpoint',meta:'Thinking & saying mastered?',vocab:[],ex:[
 {t:'mc',q:'“I think that…” =',o:['আমার মনে হয়','আমি বলি','ভাবি না','মনে আছে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'কথা বলি',o:['কথা বলি','কথা বলছি','বলি','কথা'],a:0},
@@ -2528,7 +2528,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “I do not remember”',a:['মনে','নেই'],pool:['মনে','নেই','আছে','ভুলে']},
 {t:'fill',q:'Complete: the lesson ends — “got it!”',s:'___!',o:['বুঝেছি','বুঝি না','জানি না','ভুলেছি'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['চেনো?','do you know (him)?'],['মনে আছে?','do you remember?'],['ভুলে গেছি','I forgot'],['বুঝেছি','understood']]},
-{t:'li',q:'Listen — which phrase?',say:'মনে আছে?',o:['মনে আছে?','মনে নেই','মনে হয়','আছে?'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'মনে আছে?',o:['মনে আছে?','মনে নেই','মনে হয়','আছে?'],a:0},{t:'mc',q:'Review — which means "80"?',o:['আশি','তিনটে','দুটো','একশো'],a:0},{t:'mc',q:'Review — which means "I have eaten"?',o:['খেয়েছি','সত্যি','কথা','মনে হয়'],a:0}]},
 {id:'bn_know_5',title:'Checkpoint',step:'checkpoint',meta:'Knowing mastered?',vocab:[],ex:[
 {t:'mc',q:'Facts vs people:',o:['জানি vs চিনি','চিনি vs জানি','both জানি','both চিনি'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ভুলে গেছি',o:['ভুলে গেছি','মনে গেছি','চলে গেছি','বুঝেছি'],a:0},
@@ -2568,7 +2568,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “I do business in the market”',a:['বাজারে','ব্যবসা','করি'],pool:['বাজারে','ব্যবসা','করি','কাজ']},
 {t:'fill',q:'Complete: “there is a lot of work today”',s:'আজ অনেক ___',o:['কাজ','কাজে','অফিস','ব্যবসায়'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['কী কাজ করেন?','what do you do?'],['অফিসে কাজ করি','I work in an office'],['ব্যবসা করি','I do business'],['আমি ছাত্র','I am a student']]},
-{t:'li',q:'Listen — which phrase?',say:'ব্যবসা করি',o:['ব্যবসা করি','কাজ করি','ব্যবসা করেন','ভাবি'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ব্যবসা করি',o:['ব্যবসা করি','কাজ করি','ব্যবসা করেন','ভাবি'],a:0},{t:'mc',q:'Review — which means "how many taka?"?',o:['কত টাকা?','বুঝেছি','তাকে চিনি','ভুলে গেছি'],a:0},{t:'mc',q:'Review — which means "you / he / she will do"?',o:['করবে','বুঝেছি','তাকে চিনি','ভুলে গেছি'],a:0}]},
 {id:'bn_job_5',title:'Checkpoint',step:'checkpoint',meta:'Work talk mastered?',vocab:[],ex:[
 {t:'mc',q:'“work / job” =',o:['কাজ','ব্যবসা','অফিস','ছাত্র'],a:0},
 {t:'li',q:'Listen — which question?',say:'কী কাজ করেন?',o:['কী কাজ করেন?','কোথায় কাজ করেন?','কী করছেন?','কে করেন?'],a:0},
@@ -2608,7 +2608,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “say it again, please — I am learning Bangla”',a:['আবার','বলুন','আমি','বাংলা','শিখছি'],pool:['আবার','বলুন','আমি','বাংলা','শিখছি','আস্তে']},
 {t:'fill',q:'Complete: “I understand a little”',s:'___ বুঝি',o:['একটু','আবার','আস্তে','অনেক না'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['একটু বুঝি','I understand a little'],['আস্তে বলুন','speak slowly'],['আবার বলুন','again please'],['বুঝেছি','got it']]},
-{t:'li',q:'Listen — which word?',say:'শিখছি',o:['শিখছি','শিখি','শিখব','শিক্ষক'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'শিখছি',o:['শিখছি','শিখি','শিখব','শিক্ষক'],a:0},{t:'mc',q:'Review — which means "a book"?',o:['একটা বই','অফিস','ব্যবসা','ছাত্র'],a:0},{t:'mc',q:'Review — which means "you will do (polite)"?',o:['করবেন','অফিস','ব্যবসা','ছাত্র'],a:0}]},
 {id:'bn_learn_5',title:'Checkpoint',step:'checkpoint',meta:'Rescue kit mastered?',vocab:[],ex:[
 {t:'mc',q:'“Please speak slowly” =',o:['আস্তে বলুন','আবার বলুন','আস্তে শুনুন','বলুন'],a:0},
 {t:'li',q:'Listen — which question?',say:'বাংলায় কী বলে?',o:['বাংলায় কী বলে?','বাংলা শিখছি','কী বলে?','বাংলায় বলুন'],a:0},
@@ -2648,7 +2648,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “I am lost — please help”',a:['হারিয়ে','গেছি','সাহায্য','করুন'],pool:['হারিয়ে','গেছি','সাহায্য','করুন','সাবধান']},
 {t:'fill',q:'Complete: cross the road — “carefully!”',s:'___ যাও',o:['সাবধানে','সাহায্যে','আস্তে না','বিপদে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['সাহায্য করুন','please help'],['সাবধানে যাও','go carefully'],['হারিয়ে গেছি','I am lost'],['পুলিশ','police']]},
-{t:'li',q:'Listen — which word?',say:'সাহায্য',o:['সাহায্য','সাবধান','সাহস','আশ্চর্য'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'সাহায্য',o:['সাহায্য','সাবধান','সাহস','আশ্চর্য'],a:0},{t:'mc',q:'Review — which means "I will take"?',o:['নেব','বাংলা শিখছি','আবার','আবার বলুন'],a:0},{t:'mc',q:'Review — which means "before / earlier"?',o:['আগে','বাংলা শিখছি','আবার','আবার বলুন'],a:0}]},
 {id:'bn_help_5',title:'Zone 9 checkpoint',step:'checkpoint',meta:'You can hold a conversation!',vocab:[],ex:[
 {t:'mc',q:'“Please help” =',o:['সাহায্য করুন','সাবধান','বিপদ করুন','ডাকুন'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'একটু আস্তে বলুন',o:['একটু আস্তে বলুন','আবার বলুন','সাহায্য করুন','একটু বুঝি'],a:0},
@@ -2656,7 +2656,7 @@ const BN_Z9=[
 {t:'wb',q:'Build: “if I can, I will help”',a:['যদি','পারি','সাহায্য','করব'],pool:['যদি','পারি','সাহায্য','করব','করি']},
 {t:'match',q:'Match phrase and meaning',pairs:[['কিন্তু','but'],['যদি','if'],['আমার মনে হয়','I think'],['তাকে চিনি','I know him'],['সাহায্য করুন','please help']]},
 {t:'mc',q:'Zone 9 done! You can now…',o:['connect, reason, rescue & get help','only point','only count','only sing'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'বাংলায় কী বলে?',o:['বাংলায় কী বলে?','বাংলা শিখছি','আবার বলুন','কী বলছ?'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'বাংলায় কী বলে?',o:['বাংলায় কী বলে?','বাংলা শিখছি','আবার বলুন','কী বলছ?'],a:0},{t:'mc',q:'Review — which means "(I am) hungry"?',o:['খিদে পেয়েছে','বাংলা শিখছি','আবার','আবার বলুন'],a:0}]},
 ];
 const BN_Z10=[
 /* ===================== ZONE 10 · EVERYDAY LIFE ===================== */
@@ -2689,7 +2689,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “I cook every day”',a:['রোজ','রান্না','করি'],pool:['রোজ','রান্না','করি','খাই']},
 {t:'fill',q:'Complete: “I get up early” — ভোরে!',s:'___ উঠি',o:['ভোরে','রাতে','দুপুরে না','ঘুমে'],a:0},
 {t:'match',q:'Match time and act',pairs:[['সকালে','ঘুম থেকে উঠি'],['দুপুরে','ভাত খাই'],['রাতে','ঘুমাই'],['রোজ','বাংলা পড়ি']]},
-{t:'li',q:'Listen — which phrase?',say:'রাতে ঘুমাই',o:['রাতে ঘুমাই','রাতে খাই','ঘুমাই','ভোরে উঠি'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'রাতে ঘুমাই',o:['রাতে ঘুমাই','রাতে খাই','ঘুমাই','ভোরে উঠি'],a:0},{t:'mc',q:'Review — which means "will you give? (polite)"?',o:['দেবেন?','বিপদ','পুলিশ','সাবধান'],a:0},{t:'mc',q:'Review — which means "then / at that time"?',o:['তখন','বিপদ','পুলিশ','সাবধান'],a:0}]},
 {id:'bn_rout_5',title:'Checkpoint',step:'checkpoint',meta:'Routine mastered?',vocab:[],ex:[
 {t:'mc',q:'“every day” =',o:['রোজ','সব','বার','দিনে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'কাজে যাই',o:['কাজে যাই','কাজ করি','বাজারে যাই','কাজে গেলাম'],a:0},
@@ -2698,7 +2698,7 @@ const BN_Z10=[
 {t:'match',q:'Match phrase and meaning',pairs:[['রোজ','every day'],['ঘুম থেকে উঠি','get up'],['স্নান করি','bathe'],['রান্না করি','cook'],['ঘুমাই','sleep']]},
 {t:'mc',q:'Daily actions love the verb…',o:['করা (স্নান করি, রান্না করি)','খাওয়া','থাকা','পারা'],a:0},
 {t:'li',q:'Listen — which word?',say:'রোজ',o:['রোজ','রোদ','রং','বোন'],a:0},
-{t:'mc',q:'Review — which means "taxi"?',o:['ট্যাক্সি','রোজ','বাংলা','তুমি'],a:0}]},
+{t:'mc',q:'Review — which means "taxi"?',o:['ট্যাক্সি','রোজ','বাংলা','তুমি'],a:0},{t:'mc',q:'Review — which means "last year"?',o:['গত বছর','বিপদ','পুলিশ','সাবধান'],a:0}]},
 
 {id:'bn_home',title:'At home',step:'learn',meta:'ঘর · দরজা · জানালা',vocab:[['ঘর','ghor','room / home'],['রান্নাঘর','rannaghor','kitchen'],['দরজা','dorja','door'],['জানালা','janala','window'],['বিছানা','bichhana','bed'],['ছাদ','chhad','roof / rooftop']],ex:[
 {t:'note',tag:'Inside the house',q:'ঘর · দরজা · জানালা',body:'<p><span class="deva">ঘর</span> <b>ghor</b> = room, and home in the warm sense. <span class="deva">দরজা</span> door, <span class="deva">জানালা</span> window. <span class="deva">দরজা খোলো!</span> — open the door!</p>',eg:[['ঘর','ghor','room / home'],['দরজা','dorja','door'],['জানালা','janala','window']]},
@@ -2729,7 +2729,7 @@ const BN_Z10=[
 {t:'fill',q:'Complete: “open the window — it is hot!”',s:'___ খোলো — গরম!',o:['জানালা','দরজায়','ছাদে','বিছানা'],a:0},
 {t:'wb',q:'Build: “the cat is under the bed!”',a:['বিড়াল','বিছানার','নিচে'],pool:['বিড়াল','বিছানার','নিচে','উপরে']},
 {t:'match',q:'Match place and use',pairs:[['রান্নাঘরে','রান্না করি'],['বিছানায়','ঘুমাই'],['ছাদে','হাওয়া খাই'],['দরজায়','কে?']]},
-{t:'li',q:'Listen — which word?',say:'রান্নাঘর',o:['রান্নাঘর','রান্না','ঘর','জানালা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'রান্নাঘর',o:['রান্নাঘর','রান্না','ঘর','জানালা'],a:0},{t:'mc',q:'Review — which means "please lower (the price)"?',o:['কম করুন','ঘুমাই','কাজে যাই','রান্না করি'],a:0},{t:'mc',q:'Review — which means "I cannot"?',o:['পারি না','ঘুমাই','কাজে যাই','রান্না করি'],a:0}]},
 {id:'bn_home_5',title:'Checkpoint',step:'checkpoint',meta:'The house mastered?',vocab:[],ex:[
 {t:'mc',q:'“window” =',o:['জানালা','দরজা','ছাদ','ঘর'],a:0},
 {t:'li',q:'Listen — which word?',say:'ছাদ',o:['ছাদ','ছাতা','চাঁদ','ভাত'],a:0},
@@ -2738,7 +2738,7 @@ const BN_Z10=[
 {t:'match',q:'Match word and meaning',pairs:[['ঘর','room'],['রান্নাঘর','kitchen'],['দরজা','door'],['জানালা','window'],['ছাদ','rooftop']]},
 {t:'mc',q:'ঘর means room — and also…',o:['home, warmly','roof','wall','street'],a:0},
 {t:'li',q:'Listen — which word?',say:'দরজা',o:['দরজা','দরকার','জানালা','সোজা'],a:0},
-{t:'mc',q:'Review — which means "tram"?',o:['ট্রাম','রিকশা','করি','ঘুমাই'],a:0}]},
+{t:'mc',q:'Review — which means "tram"?',o:['ট্রাম','রিকশা','করি','ঘুমাই'],a:0},{t:'mc',q:'Review — which means "this month"?',o:['এই মাসে','ঘুমাই','কাজে যাই','রান্না করি'],a:0}]},
 
 {id:'bn_hob',title:'Free time',step:'learn',meta:'খেলা · গান · বেড়ানো',vocab:[['খেলা','khela','game / playing'],['ফুটবল','phutbol','football'],['ক্রিকেট','kriket','cricket'],['গান','gan','song'],['গান শুনি','gan shuni','I listen to songs'],['বেড়াতে যাই','berate jai','I go out / go visiting']],ex:[
 {t:'note',tag:'Play!',q:'খেলা · ফুটবল · ক্রিকেট',body:'<p><span class="deva">খেলা</span> = game / playing. Kolkata’s twin loves: <span class="deva">ফুটবল</span> and <span class="deva">ক্রিকেট</span>. <span class="deva">ফুটবল খেলি</span> — I play football!</p>',eg:[['খেলা','khela','game'],['ফুটবল খেলি','phutbol kheli','I play football'],['ক্রিকেট','kriket','cricket']]},
@@ -2769,7 +2769,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “let us go out!” — চলো',a:['চলো','বেড়াতে','যাই'],pool:['চলো','বেড়াতে','যাই','খেলি']},
 {t:'fill',q:'Complete: “I listen to songs every day”',s:'রোজ গান ___',o:['শুনি','গাই কি','খেলি','শুনব'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ফুটবল খেলি','I play football'],['গান শুনি','I listen to songs'],['খেলা দেখি','I watch the game'],['বেড়াতে যাই','I go out']]},
-{t:'li',q:'Listen — which word?',say:'ক্রিকেট',o:['ক্রিকেট','টিকিট','ফুটবল','কেক'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ক্রিকেট',o:['ক্রিকেট','টিকিট','ফুটবল','কেক'],a:0},{t:'mc',q:'Review — which means "it is five o’clock"?',o:['পাঁচটা বাজে','ছাদ','বিছানা','জানালা'],a:0},{t:'mc',q:'Review — which means "I can do"?',o:['করতে পারি','ছাদ','বিছানা','জানালা'],a:0}]},
 {id:'bn_hob_5',title:'Checkpoint',step:'checkpoint',meta:'Free time mastered?',vocab:[],ex:[
 {t:'mc',q:'“I play football” =',o:['ফুটবল খেলি','ফুটবল করি','ফুটবল দেখে','খেলি ফুটবলে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'বেড়াতে যাই',o:['বেড়াতে যাই','বেড়াতে যাব','কাজে যাই','খেলতে যাই'],a:0},
@@ -2778,7 +2778,7 @@ const BN_Z10=[
 {t:'match',q:'Match pastime and meaning',pairs:[['খেলা','game'],['ফুটবল','football'],['ক্রিকেট','cricket'],['গান','song'],['বেড়াতে যাই','go out']]},
 {t:'mc',q:'Playing a sport uses the verb…',o:['খেলি (ফুটবল খেলি)','করি','যাই','গাই'],a:0},
 {t:'li',q:'Listen — which word?',say:'খেলা',o:['খেলা','মেলা','খাবার','বেলা'],a:0},
-{t:'mc',q:'Review — which means "I get off / go down"?',o:['নামি','শাড়ি','আমরা','বই'],a:0}]},
+{t:'mc',q:'Review — which means "I get off / go down"?',o:['নামি','শাড়ি','আমরা','বই'],a:0},{t:'mc',q:'Review — which means "key"?',o:['চাবি','ছাদ','বিছানা','জানালা'],a:0}]},
 
 {id:'bn_rw',title:'Reading & writing',step:'learn',meta:'পড়ি · লিখি · শিখি',vocab:[['পড়ি','pori','I read / study'],['লিখি','likhi','I write'],['শিখি','shikhi','I learn'],['বই পড়ি','boi pori','I read a book'],['ছবি','chhobi','picture / movie'],['ছবি দেখি','chhobi dekhi','I watch a movie']],ex:[
 {t:'note',tag:'The study verbs',q:'পড়ি · লিখি · শিখি',body:'<p><span class="deva">পড়ি</span> I read — AND I study: <span class="deva">বাংলা পড়ি</span> — I study Bangla. <span class="deva">লিখি</span> I write, <span class="deva">শিখি</span> I learn. Three little -ই brothers.</p>',eg:[['বই পড়ি','boi pori','I read a book'],['লিখি','likhi','I write'],['শিখি','shikhi','I learn']]},
@@ -2809,7 +2809,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “I am learning to write Bangla”',a:['বাংলা','লিখতে','শিখছি'],pool:['বাংলা','লিখতে','শিখছি','পড়তে']},
 {t:'fill',q:'Complete: “let us watch a movie!”',s:'চলো, ছবি ___',o:['দেখি','তুলি','পড়ি','দেখুন'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['লিখতে শিখছি','learning to write'],['ছবি তুলতে পারি?','may I take a photo?'],['রোজ পড়ি','I read daily'],['নাম লেখো','write your name']]},
-{t:'li',q:'Listen — which word?',say:'লিখি',o:['লিখি','শিখি','লিখছি','দেখি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'লিখি',o:['লিখি','শিখি','লিখছি','দেখি'],a:0},{t:'mc',q:'Review — which means "half past five"?',o:['সাড়ে পাঁচটা','বেড়াতে যাই','গান শুনি','গান'],a:0},{t:'mc',q:'Review — which means "I can go"?',o:['যেতে পারি','বেড়াতে যাই','গান শুনি','গান'],a:0}]},
 {id:'bn_rw_5',title:'Checkpoint',step:'checkpoint',meta:'Reading & writing mastered?',vocab:[],ex:[
 {t:'mc',q:'“I read / study” =',o:['পড়ি','লিখি','শিখি','পরি'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ছবি দেখি',o:['ছবি দেখি','ছবি তুলি','ছবি দেখব','টিভি দেখি'],a:0},
@@ -2818,7 +2818,7 @@ const BN_Z10=[
 {t:'match',q:'Match verb and meaning',pairs:[['পড়ি','read'],['লিখি','write'],['শিখি','learn'],['ছবি তুলি','take photos'],['ছবি দেখি','watch movies']]},
 {t:'mc',q:'ছবি covers picture, photo and…',o:['movie','song','book','game'],a:0},
 {t:'li',q:'Listen — which word?',say:'পড়ি',o:['পড়ি','পরি','পাড়ি','বাড়ি'],a:0},
-{t:'mc',q:'Review — which means "direction / side"?',o:['দিক','খারাপ','করো','করলে'],a:0}]},
+{t:'mc',q:'Review — which means "direction / side"?',o:['দিক','খারাপ','করো','করলে'],a:0},{t:'mc',q:'Review — which means "will you stay? (polite)"?',o:['থাকবেন?','বেড়াতে যাই','গান শুনি','গান'],a:0}]},
 
 {id:'bn_talk',title:'Small talk',step:'learn',meta:'বয়স · বিয়ে · দেশ',vocab:[['বয়স','boyosh','age'],['বয়স কত?','boyosh koto','how old are you?'],['বিয়ে','biye','marriage / wedding'],['বিয়ে হয়েছে?','biye hoyechhe','are you married?'],['তোমার দেশ কোথায়?','tomar desh kothay','where are you from?'],['আমার বয়স তিরিশ','amar boyosh tirish','I am thirty']],ex:[
 {t:'note',tag:'The friendly three questions',q:'বয়স · বিয়ে · দেশ',body:'<p>Bengali small talk is warm and direct — expect these three fast: <span class="deva">বয়স কত?</span> how old are you? <span class="deva">বিয়ে হয়েছে?</span> married? <span class="deva">তোমার দেশ কোথায়?</span> where is your country? It is friendliness, not nosiness!</p>',eg:[['বয়স কত?','boyosh koto','how old?'],['বিয়ে হয়েছে?','biye hoyechhe','married?'],['তোমার দেশ কোথায়?','tomar desh kothay','where are you from?']]},
@@ -2849,7 +2849,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “how old are you?” (polite)',a:['আপনার','বয়স','কত'],pool:['আপনার','বয়স','কত','কী']},
 {t:'fill',q:'Complete: “I am from South Africa” — deshi style!',s:'আমার দেশ ___',o:['সাউথ আফ্রিকা','কলকাতায়','বাংলা','দূরে কি'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['বয়স','age'],['বিয়ে','marriage'],['হয়নি','not yet'],['দেশ','country']]},
-{t:'li',q:'Listen — which word?',say:'হয়নি',o:['হয়নি','হয়েছে','হবে','নিন'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'হয়নি',o:['হয়নি','হয়েছে','হবে','নিন'],a:0},{t:'mc',q:'Review — which means "ten o’clock"?',o:['দশটা','ছবি দেখি','ছবি','বই পড়ি'],a:0},{t:'mc',q:'Review — which means "I can speak"?',o:['বলতে পারি','ছবি দেখি','ছবি','বই পড়ি'],a:0}]},
 {id:'bn_talk_5',title:'Checkpoint',step:'checkpoint',meta:'Small talk mastered?',vocab:[],ex:[
 {t:'mc',q:'“How old are you?” =',o:['বয়স কত?','বয়স কেমন?','কত বিয়ে?','বয়স আছে?'],a:0},
 {t:'li',q:'Listen — which question?',say:'বিয়ে হয়েছে?',o:['বিয়ে হয়েছে?','বিয়ে হবে?','বয়স কত?','ভাত খেয়েছ?'],a:0},
@@ -2858,7 +2858,7 @@ const BN_Z10=[
 {t:'match',q:'Match question and meaning',pairs:[['বয়স কত?','how old?'],['বিয়ে হয়েছে?','married?'],['দেশ কোথায়?','where from?'],['ছেলে-মেয়ে আছে?','children?'],['কী কাজ করেন?','what work?']]},
 {t:'mc',q:'The small-talk spirit in Bengal is…',o:['warmth — answer lightly and ask back','interrogation','silence','business'],a:0},
 {t:'li',q:'Listen — which word?',say:'বয়স',o:['বয়স','বাস','বিয়ে','ব্যস'],a:0},
-{t:'mc',q:'Review — which means "platform"?',o:['প্ল্যাটফর্ম','সোজা','বসুন','করলেন'],a:0}]},
+{t:'mc',q:'Review — which means "platform"?',o:['প্ল্যাটফর্ম','সোজা','বসুন','করলেন'],a:0},{t:'mc',q:'Review — which means "phone"?',o:['ফোন','ছবি দেখি','ছবি','বই পড়ি'],a:0}]},
 
 {id:'bn_host',title:'Hospitality',step:'learn',meta:'অতিথি — the honoured guest',vocab:[['অতিথি','otithi','guest'],['ভিতরে আসুন','bhitore asun','come inside'],['চা খাবেন?','cha khaben','will you have tea?'],['আরেকটু','arektu','a little more'],['আবার আসবেন','abar asben','come again!'],['খেয়ে যান','kheye jan','eat before you go!']],ex:[
 {t:'note',tag:'The guest arrives',q:'ভিতরে আসুন!',body:'<p><span class="deva">অতিথি</span> <b>otithi</b> = guest — treasured in every Bengali home. The door opens: <span class="deva">আসুন, ভিতরে আসুন! বসুন!</span> — come, come inside! Sit! Then, always: <span class="deva">চা খাবেন?</span></p>',eg:[['অতিথি','otithi','guest'],['ভিতরে আসুন','bhitore asun','come inside'],['চা খাবেন?','cha khaben','tea?']]},
@@ -2889,7 +2889,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “will you have a little more rice?”',a:['আরেকটু','ভাত','খাবেন'],pool:['আরেকটু','ভাত','খাবেন','খেয়েছেন']},
 {t:'fill',q:'Complete: “sit — I am bringing tea” — আনছি!',s:'বসুন, চা ___',o:['আনছি','খাচ্ছি','করছি কি','দিচ্ছেন'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['খেয়ে যান','eat before you go'],['পেট ভরে গেছে','I am full'],['আরেকটু ভাত','a little more rice'],['চা আনছি','bringing tea']]},
-{t:'li',q:'Listen — which word?',say:'আরেকটু',o:['আরেকটু','একটু','আরেকটা','অনেক'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'আরেকটু',o:['আরেকটু','একটু','আরেকটা','অনেক'],a:0},{t:'mc',q:'Review — which means "Friday"?',o:['শুক্রবার','বিয়ে হয়েছে?','বিয়ে','বয়স কত?'],a:0},{t:'mc',q:'Review — which means "need / necessary"?',o:['দরকার','বিয়ে হয়েছে?','বিয়ে','বয়স কত?'],a:0}]},
 {id:'bn_host_5',title:'Checkpoint',step:'checkpoint',meta:'Hospitality mastered?',vocab:[],ex:[
 {t:'mc',q:'“guest” =',o:['অতিথি','ছাত্র','বন্ধু','দাদা'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'আবার আসবেন',o:['আবার আসবেন','আবার বলুন','ভালো থাকবেন','আসবেন'],a:0},
@@ -2898,7 +2898,7 @@ const BN_Z10=[
 {t:'match',q:'Match phrase and meaning',pairs:[['অতিথি','guest'],['ভিতরে আসুন','come in'],['চা খাবেন?','tea?'],['আরেকটু','more?'],['আবার আসবেন','come again']]},
 {t:'mc',q:'The Bengali table strategy:',o:['your no means “maybe one more helping”','no means no','guests serve themselves','tea is optional'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'চা খাবেন?',o:['চা খাবেন?','চা খাব','কী খাবেন?','চা দিন'],a:0},
-{t:'mc',q:'Review — which means "hotel"?',o:['হোটেল','চল্লিশ','সবুজ','বাড়ি'],a:0}]},
+{t:'mc',q:'Review — which means "hotel"?',o:['হোটেল','চল্লিশ','সবুজ','বাড়ি'],a:0},{t:'mc',q:'Review — which means "I phone / call"?',o:['ফোন করি','বিয়ে হয়েছে?','বিয়ে','বয়স কত?'],a:0}]},
 
 {id:'bn_plan',title:'Making plans',step:'learn',meta:'চলো! · দেখা হবে',vocab:[['চলো','cholo','let us go!'],['দেখা হবে','dekha hobe','see you / we will meet'],['কাল দেখা হবে','kal dekha hobe','see you tomorrow'],['ব্যস্ত','besto','busy'],['সময় আছে?','shomoy achhe','do you have time?'],['ফাঁকা','phanka','free / empty']],ex:[
 {t:'note',tag:'The rallying cry',q:'চলো!',body:'<p><span class="deva">চলো!</span> <b>cholo!</b> — let us go! <span class="deva">চলো, চা খাই</span> — come, let us have tea. <span class="deva">চলো, বেড়াতে যাই</span> — let us go out! The word that starts every adventure.</p>',eg:[['চলো','cholo','let us go!'],['চলো, চা খাই','cholo cha khai','let us have tea']]},
@@ -2929,7 +2929,7 @@ const BN_Z10=[
 {t:'wb',q:'Build: “do you have time now?”',a:['এখন','সময়','আছে'],pool:['এখন','সময়','আছে','নেই']},
 {t:'fill',q:'Complete: rally the friends —',s:'___, খেলা দেখি!',o:['চলো','যাও','আসি','থামো'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['চলো','let us go'],['সময় আছে?','have time?'],['আজ ব্যস্ত','busy today'],['কাল ফাঁকা','free tomorrow']]},
-{t:'li',q:'Listen — which word?',say:'ফাঁকা',o:['ফাঁকা','ফাঁক','কাঁচা','পাকা'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ফাঁকা',o:['ফাঁকা','ফাঁক','কাঁচা','পাকা'],a:0},{t:'mc',q:'Review — which means "(younger) sister"?',o:['বোন','খেয়ে যান','আবার আসবেন','আরেকটু'],a:0},{t:'mc',q:'Review — which means "no need"?',o:['দরকার নেই','খেয়ে যান','আবার আসবেন','আরেকটু'],a:0}]},
 {id:'bn_plan_5',title:'Zone 10 checkpoint',step:'checkpoint',meta:'Your Bengali life is running!',vocab:[],ex:[
 {t:'mc',q:'“Let us go!” =',o:['চলো!','আসি!','যান!','দেখো!'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'কাল দেখা হবে',o:['কাল দেখা হবে','পরে দেখা হবে','দেখা হয়েছে','কাল যাব'],a:0},
@@ -2971,7 +2971,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “the hills are far”',a:['পাহাড়','দূরে'],pool:['পাহাড়','দূরে','কাছে','সমুদ্র']},
 {t:'fill',q:'Complete: “a red flower”',s:'___ ফুল',o:['লাল','লালটা','ফুলের','সবুজ কি'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['নদীতে','at the river'],['মাঠে','in the field'],['গাছের নিচে','under the tree'],['পাহাড়ে','in the hills']]},
-{t:'li',q:'Listen — which word?',say:'ফুল',o:['ফুল','চুল','ফল','কুল'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ফুল',o:['ফুল','চুল','ফল','কুল'],a:0},{t:'mc',q:'Review — which means "son / boy"?',o:['ছেলে','ফাঁকা','সময় আছে?','ব্যস্ত'],a:0},{t:'mc',q:'Review — which means "(I) have to go"?',o:['যেতে হবে','ফাঁকা','সময় আছে?','ব্যস্ত'],a:0},{t:'mc',q:'Review — which means "office"?',o:['অফিস','ফাঁকা','সময় আছে?','ব্যস্ত'],a:0}]},
 {id:'bn_nat_5',title:'Checkpoint',step:'checkpoint',meta:'Nature mastered?',vocab:[],ex:[
 {t:'mc',q:'“river” =',o:['নদী','সমুদ্র','পাহাড়','মাঠ'],a:0},
 {t:'li',q:'Listen — which word?',say:'গাছ',o:['গাছ','ঘাস','মাছ','ছাদ'],a:0},
@@ -2980,7 +2980,7 @@ const BN_Z11=[
 {t:'match',q:'Match word and meaning',pairs:[['নদী','river'],['গাছ','tree'],['ফুল','flower'],['পাহাড়','hill'],['সমুদ্র','sea']]},
 {t:'mc',q:'Bengal is the land of…',o:['নদী — rivers','পাহাড় — mountains','মরুভূমি — desert','বরফ — snow'],a:0},
 {t:'li',q:'Listen — which word?',say:'নদী',o:['নদী','যদি','দিদি','নাদি'],a:0},
-{t:'mc',q:'Review — which means "message"?',o:['মেসেজ','আপনার','দোকানে','আগে'],a:0}]},
+{t:'mc',q:'Review — which means "message"?',o:['মেসেজ','আপনার','দোকানে','আগে'],a:0},{t:'mc',q:'Review — which means "because"?',o:['কারণ','ফাঁকা','সময় আছে?','ব্যস্ত'],a:0}]},
 
 {id:'bn_ani',title:'Animals',step:'learn',meta:'বাঘ — the Royal Bengal',vocab:[['বাঘ','bagh','tiger'],['গরু','goru','cow'],['ছাগল','chhagol','goat'],['কুকুর','kukur','dog'],['বিড়াল','biral','cat'],['পাখি','pakhi','bird']],ex:[
 {t:'note',tag:'The king of Bengal',q:'বাঘ',body:'<p><span class="deva">বাঘ</span> <b>bagh</b> — the Royal Bengal Tiger, king of the Sundarban mangroves and mascot of everything Bengali (including this course!).</p>',eg:[['বাঘ','bagh','tiger'],['পাখি','pakhi','bird']]},
@@ -3011,7 +3011,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “the bird sings!” — গান গায়!',a:['পাখিটা','গান','গায়'],pool:['পাখিটা','গান','গায়','শুনি']},
 {t:'fill',q:'Complete: “a big tiger!”',s:'একটা বড় ___!',o:['বাঘ','বাঘে','গরুটা','পাখির'],a:0},
 {t:'match',q:'Match animal and place',pairs:[['বাঘ','সুন্দরবনে'],['গরু','মাঠে'],['পাখি','গাছে'],['বিড়াল','বিছানার নিচে']]},
-{t:'li',q:'Listen — which word?',say:'পাখি',o:['পাখি','পাখা','খাকি','মাছি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'পাখি',o:['পাখি','পাখা','খাকি','মাছি'],a:0},{t:'mc',q:'Review — which means "daughter / girl"?',o:['মেয়ে','সমুদ্র','পাহাড়','মাঠ'],a:0},{t:'mc',q:'Review — which means "(it) has to be done"?',o:['করতে হবে','সমুদ্র','পাহাড়','মাঠ'],a:0},{t:'mc',q:'Review — which means "please speak slowly"?',o:['আস্তে বলুন','সমুদ্র','পাহাড়','মাঠ'],a:0}]},
 {id:'bn_ani_5',title:'Checkpoint',step:'checkpoint',meta:'Animals mastered?',vocab:[],ex:[
 {t:'mc',q:'“tiger” =',o:['বাঘ','কুকুর','ছাগল','ভাল্লুক'],a:0},
 {t:'li',q:'Listen — which word?',say:'বিড়াল',o:['বিড়াল','কুকুর','বিকাল','বিছানা'],a:0},
@@ -3020,7 +3020,7 @@ const BN_Z11=[
 {t:'match',q:'Match animal and meaning',pairs:[['বাঘ','tiger'],['গরু','cow'],['ছাগল','goat'],['কুকুর','dog'],['পাখি','bird']]},
 {t:'mc',q:'This course’s mascot is a…',o:['বাঘ — Bengal tiger cub','গরু','পাখি','কুকুর'],a:0},
 {t:'li',q:'Listen — which word?',say:'কুকুর',o:['কুকুর','ঠাকুর','কুড়ি','বিড়াল'],a:0},
-{t:'mc',q:'Review — which means "wi-fi"?',o:['ওয়াইফাই','সোমবার','একশো','সাহায্য'],a:0}]},
+{t:'mc',q:'Review — which means "wi-fi"?',o:['ওয়াইফাই','সোমবার','একশো','সাহায্য'],a:0},{t:'mc',q:'Review — which means "or"?',o:['বা','সমুদ্র','পাহাড়','মাঠ'],a:0}]},
 
 {id:'bn_fruit',title:'Fruits & tastes',step:'learn',meta:'কাঁঠাল · টক · ঝাল',vocab:[['কলা','kola','banana'],['কাঁঠাল','kanthal','jackfruit'],['নারকেল','narkel','coconut'],['লেবু','lebu','lemon / lime'],['টক','tok','sour'],['ঝাল','jhal','spicy / hot']],ex:[
 {t:'note',tag:'Beyond the mango',q:'কলা · কাঁঠাল · নারকেল',body:'<p>You have known <span class="deva">আম</span> since lesson one. Add <span class="deva">কলা</span> banana, <span class="deva">নারকেল</span> coconut, and the giant <span class="deva">কাঁঠাল</span> — jackfruit, the biggest tree-fruit on earth!</p>',eg:[['কলা','kola','banana'],['কাঁঠাল','kanthal','jackfruit'],['নারকেল','narkel','coconut']]},
@@ -3051,7 +3051,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “the jackfruit is very big!”',a:['কাঁঠালটা','খুব','বড়'],pool:['কাঁঠালটা','খুব','বড়','ছোট']},
 {t:'fill',q:'Complete: “less spicy, please!” — the shop-talk কম!',s:'___ ঝাল দিন',o:['কম','খুব','বেশি করে','টক'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['খুব ঝাল','very spicy'],['একটু টক','a little sour'],['মিষ্টি খাব','I will eat sweets'],['কম ঝাল','less spicy']]},
-{t:'li',q:'Listen — which word?',say:'ঝাল',o:['ঝাল','ঝড়','জাল','টক'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ঝাল',o:['ঝাল','ঝড়','জাল','টক'],a:0},{t:'mc',q:'Review — which means "family"?',o:['পরিবার','পাখি','বিড়াল','কুকুর'],a:0},{t:'mc',q:'Review — which means "(you) must eat!"?',o:['খেতে হবে','পাখি','বিড়াল','কুকুর'],a:0},{t:'mc',q:'Review — which means "please say it again"?',o:['আবার বলুন','পাখি','বিড়াল','কুকুর'],a:0}]},
 {id:'bn_fruit_5',title:'Checkpoint',step:'checkpoint',meta:'Fruits & tastes mastered?',vocab:[],ex:[
 {t:'mc',q:'“jackfruit” =',o:['কাঁঠাল','নারকেল','কলা','আম'],a:0},
 {t:'li',q:'Listen — which word?',say:'টক',o:['টক','ঝাল','ঠিক','তিক'],a:0},
@@ -3059,7 +3059,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “less spicy, please”',a:['কম','ঝাল','দিন'],pool:['কম','ঝাল','দিন','বেশি']},
 {t:'match',q:'Match word and meaning',pairs:[['কলা','banana'],['কাঁঠাল','jackfruit'],['লেবু','lemon'],['টক','sour'],['ঝাল','spicy']]},
 {t:'mc',q:'The complete taste trio:',o:['মিষ্টি, টক, ঝাল','লাল, নীল, সবুজ','ভাত, মাছ, ডাল','গরম, ঠান্ডা, বৃষ্টি'],a:0},
-{t:'li',q:'Listen — which word?',say:'কলা',o:['কলা','কথা','খেলা','কালো'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'কলা',o:['কলা','কথা','খেলা','কালো'],a:0},{t:'mc',q:'Review — which means "(I am) thirsty"?',o:['তেষ্টা পেয়েছে','পাখি','বিড়াল','কুকুর'],a:0},{t:'mc',q:'Review — which means "then / in that case"?',o:['তাহলে','পাখি','বিড়াল','কুকুর'],a:0}]},
 
 {id:'bn_cloth',title:'Clothing',step:'learn',meta:'জামা · পাঞ্জাবি · জুতো',vocab:[['জামা','jama','shirt / clothes'],['পাঞ্জাবি','panjabi','panjabi (kurta)'],['জুতো','juto','shoes'],['টুপি','tupi','cap / hat'],['পরি','pori','I wear'],['নতুন জামা','notun jama','new clothes']],ex:[
 {t:'note',tag:'What Bengal wears',q:'জামা · শাড়ি · পাঞ্জাবি',body:'<p><span class="deva">জামা</span> shirt (and clothes in general), the <span class="deva">শাড়ি</span> you can already read, and the elegant <span class="deva">পাঞ্জাবি</span> — the long kurta of Bengali occasions.</p>',eg:[['জামা','jama','shirt'],['পাঞ্জাবি','panjabi','kurta'],['শাড়ি','shari','sari']]},
@@ -3090,7 +3090,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “where are my shoes?”',a:['আমার','জুতো','কোথায়'],pool:['আমার','জুতো','কোথায়','টুপি']},
 {t:'fill',q:'Complete: “I will buy a new panjabi” — কিনব!',s:'নতুন পাঞ্জাবি ___',o:['কিনব','পরলাম','খুলব','ধোব'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['নতুন জামা কিনব','I will buy new clothes'],['জুতো খোলো','take off shoes'],['টুপি পরি','I wear a cap'],['শাড়িটা সুন্দর','the sari is beautiful']]},
-{t:'li',q:'Listen — which word?',say:'জুতো',o:['জুতো','জামা','ছুটো','টুপি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'জুতো',o:['জুতো','জামা','ছুটো','টুপি'],a:0},{t:'mc',q:'Review — which means "old (things)"?',o:['পুরোনো','ঝাল','টক','লেবু'],a:0},{t:'mc',q:'Review — which means "please look"?',o:['দেখুন','ঝাল','টক','লেবু'],a:0},{t:'mc',q:'Review — which means "I am learning Bangla"?',o:['বাংলা শিখছি','ঝাল','টক','লেবু'],a:0}]},
 {id:'bn_cloth_5',title:'Checkpoint',step:'checkpoint',meta:'Clothing mastered?',vocab:[],ex:[
 {t:'mc',q:'“shoes” =',o:['জুতো','টুপি','জামা','পাঞ্জাবি'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'নতুন জামা পরি',o:['নতুন জামা পরি','নতুন জামা কিনব','জামা পরি','পুরোনো জামা'],a:0},
@@ -3098,7 +3098,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “take off your shoes, come inside!”',a:['জুতো','খোলো','ভিতরে','এসো'],pool:['জুতো','খোলো','ভিতরে','এসো','পরো']},
 {t:'match',q:'Match clothing and meaning',pairs:[['জামা','shirt'],['শাড়ি','sari'],['পাঞ্জাবি','kurta'],['জুতো','shoes'],['টুপি','cap']]},
 {t:'mc',q:'“clothes” in general can be…',o:['জামা / কাপড়','জুতো','টুপি','শুধু শাড়ি'],a:0},
-{t:'li',q:'Listen — which word?',say:'টুপি',o:['টুপি','জুতো','তুমি','দুটি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'টুপি',o:['টুপি','জুতো','তুমি','দুটি'],a:0},{t:'mc',q:'Review — which means "(I am) sleepy"?',o:['ঘুম পাচ্ছে','ঝাল','টক','লেবু'],a:0},{t:'mc',q:'Review — which means "if I can"?',o:['যদি পারি','ঝাল','টক','লেবু'],a:0}]},
 
 {id:'bn_kit',title:'In the kitchen',step:'learn',meta:'ডাল · তরকারি · মশলা',vocab:[['রান্না','ranna','cooking'],['ডাল','dal','dal / lentils'],['তরকারি','torkari','curry / vegetables'],['তেল','tel','oil'],['মশলা','moshla','spices'],['চিনি','chini','sugar']],ex:[
 {t:'note',tag:'The Bengali plate',q:'ভাত-ডাল-তরকারি',body:'<p>The everyday meal: <span class="deva">ভাত</span>, <span class="deva">ডাল</span> lentils, <span class="deva">তরকারি</span> curry — with <span class="deva">মাছ</span> when the day is good. <span class="deva">রান্না</span> = cooking itself.</p>',eg:[['ডাল','dal','lentils'],['তরকারি','torkari','curry'],['রান্না','ranna','cooking']]},
@@ -3129,7 +3129,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “give me a little dal, please”',a:['একটু','ডাল','দিন'],pool:['একটু','ডাল','দিন','তেল']},
 {t:'fill',q:'Complete: “what are you cooking?”',s:'কী ___ করছ?',o:['রান্না','খাবার','মশলা','তেল কি'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['কী রান্না করছ?','what are you cooking?'],['তেল নেই','no oil'],['খুব ঝাল','very spicy'],['একটু ডাল','a little dal']]},
-{t:'li',q:'Listen — which word?',say:'রান্না',o:['রান্না','রাস্তা','আন্না','কান্না'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'রান্না',o:['রান্না','রাস্তা','আন্না','কান্না'],a:0},{t:'mc',q:'Review — which means "color"?',o:['রং','নতুন জামা','পরি','টুপি'],a:0},{t:'mc',q:'Review — which means "the metro"?',o:['মেট্রো','নতুন জামা','পরি','টুপি'],a:0},{t:'mc',q:'Review — which means "help"?',o:['সাহায্য','নতুন জামা','পরি','টুপি'],a:0}]},
 {id:'bn_kit_5',title:'Checkpoint',step:'checkpoint',meta:'The kitchen mastered?',vocab:[],ex:[
 {t:'mc',q:'“lentils” =',o:['ডাল','তেল','ভাত','মশলা'],a:0},
 {t:'li',q:'Listen — which word?',say:'মশলা',o:['মশলা','ডাল','রান্না','মিষ্টি'],a:0},
@@ -3137,7 +3137,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “what are you cooking?”',a:['কী','রান্না','করছ'],pool:['কী','রান্না','করছ','করি']},
 {t:'match',q:'Match word and meaning',pairs:[['রান্না','cooking'],['ডাল','lentils'],['তরকারি','curry'],['তেল','oil'],['চিনি','sugar']]},
 {t:'mc',q:'The everyday plate of Bengal:',o:['ভাত, ডাল, তরকারি','রুটি, মাখন, ডিম','চা, মিষ্টি','ভাত, চিনি'],a:0},
-{t:'li',q:'Listen — which word?',say:'ডাল',o:['ডাল','ঝাল','ডান','জাল'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ডাল',o:['ডাল','ঝাল','ডান','জাল'],a:0},{t:'mc',q:'Review — which means "(I am) feeling good"?',o:['ভালো লাগছে','নতুন জামা','পরি','টুপি'],a:0},{t:'mc',q:'Review — which means "otherwise"?',o:['না হলে','নতুন জামা','পরি','টুপি'],a:0}]},
 
 {id:'bn_qty',title:'Quantities',step:'learn',meta:'কেজি · অনেক · কিছু',vocab:[['কেজি','keji','kilo'],['আধ কেজি','adh keji','half a kilo'],['অনেক','onek','a lot / many'],['কিছু','kichhu','some'],['সব','shob','all'],['আরো','aro','more']],ex:[
 {t:'note',tag:'By the kilo',q:'কেজি · আধ কেজি',body:'<p>Market maths: <span class="deva">এক কেজি আম দিন</span> — one kilo of mangoes. Half? <span class="deva">আধ কেজি</span>. <span class="deva">কেজি কত?</span> — how much per kilo?</p>',eg:[['কেজি','keji','kilo'],['আধ কেজি','adh keji','half kilo'],['কেজি কত?','keji koto','how much per kilo?']]},
@@ -3168,7 +3168,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “I have learned a lot”',a:['অনেক','শিখেছি'],pool:['অনেক','শিখেছি','কিছু','সব']},
 {t:'fill',q:'Complete: “all is well!”',s:'___ ঠিক আছে',o:['সব','কিছু','আরো','অনেকে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['এক কেজি','one kilo'],['অনেক কাজ','a lot of work'],['কিছু কিছু','some some — bit by bit!'],['আরো চা','more tea']]},
-{t:'li',q:'Listen — which phrase?',say:'কেজি কত?',o:['কেজি কত?','কত কেজি?','দাম কত?','কেজি আছে?'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'কেজি কত?',o:['কেজি কত?','কত কেজি?','দাম কত?','কেজি আছে?'],a:0},{t:'mc',q:'Review — which means "white"?',o:['সাদা','মশলা','তেল','তরকারি'],a:0},{t:'mc',q:'Review — which means "rickshaw"?',o:['রিকশা','মশলা','তেল','তরকারি'],a:0},{t:'mc',q:'Review — which means "please help"?',o:['সাহায্য করুন','মশলা','তেল','তরকারি'],a:0}]},
 {id:'bn_qty_5',title:'Checkpoint',step:'checkpoint',meta:'Quantities mastered?',vocab:[],ex:[
 {t:'mc',q:'“kilo” =',o:['কেজি','কাজ','টাকা','দাম'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'আধ কেজি',o:['আধ কেজি','এক কেজি','দুই কেজি','কেজি কত?'],a:0},
@@ -3176,7 +3176,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “one kilo of lentils, please”',a:['এক','কেজি','ডাল','দিন'],pool:['এক','কেজি','ডাল','দিন','মাছ']},
 {t:'match',q:'Match word and meaning',pairs:[['কেজি','kilo'],['আধ','half'],['অনেক','a lot'],['কিছু','some'],['আরো','more']]},
 {t:'mc',q:'“Many thanks” =',o:['অনেক ধন্যবাদ','সব ধন্যবাদ','আরো ধন্যবাদ','কিছু ধন্যবাদ'],a:0},
-{t:'li',q:'Listen — which word?',say:'কিছু',o:['কিছু','কিসে','মিছি','সব'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'কিছু',o:['কিছু','কিসে','মিছি','সব'],a:0},{t:'mc',q:'Review — which means "cold"?',o:['ঠান্ডা','মশলা','তেল','তরকারি'],a:0},{t:'mc',q:'Review — which means "I think"?',o:['ভাবি','মশলা','তেল','তরকারি'],a:0}]},
 
 {id:'bn_tod',title:'Times of day',step:'learn',meta:'ভোর · দুপুর · সন্ধ্যা',vocab:[['ভোর','bhor','dawn / early morning'],['দুপুর','dupur','noon / midday'],['বিকেল','bikel','afternoon'],['সন্ধ্যা','shondhya','evening'],['রাতে','rate','at night'],['সকালে','shokale','in the morning']],ex:[
 {t:'note',tag:'The day’s stations',q:'ভোর → রাত',body:'<p>The Bengali day: <span class="deva">ভোর</span> dawn, <span class="deva">সকাল</span> morning, <span class="deva">দুপুর</span> noon, <span class="deva">বিকেল</span> afternoon, <span class="deva">সন্ধ্যা</span> evening, <span class="deva">রাত</span> night. Six words, one sun.</p>',eg:[['ভোর','bhor','dawn'],['দুপুর','dupur','noon'],['সন্ধ্যা','shondhya','evening']]},
@@ -3207,7 +3207,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “in the evening we go to the roof”',a:['সন্ধ্যায়','ছাদে','যাই'],pool:['সন্ধ্যায়','ছাদে','যাই','দুপুরে']},
 {t:'fill',q:'Complete: “the market sits in the morning” — বসে!',s:'সকালে বাজার ___',o:['বসে','ওঠে','যায় কি','করে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ভোরে উঠি','up at dawn'],['দুপুরে খাই','eat at noon'],['বিকেলে খেলি','play in the afternoon'],['রাতে ঘুমাই','sleep at night']]},
-{t:'li',q:'Listen — which word?',say:'দুপুরে',o:['দুপুরে','দুপুর','পুকুরে','সকালে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'দুপুরে',o:['দুপুরে','দুপুর','পুকুরে','সকালে'],a:0},{t:'mc',q:'Review — which means "black"?',o:['কালো','আরো','সব','কিছু'],a:0},{t:'mc',q:'Review — which means "car"?',o:['গাড়ি','আরো','সব','কিছু'],a:0},{t:'mc',q:'Review — which means "I am lost"?',o:['হারিয়ে গেছি','আরো','সব','কিছু'],a:0}]},
 {id:'bn_tod_5',title:'Zone 11 checkpoint',step:'checkpoint',meta:'Nature & living mastered?',vocab:[],ex:[
 {t:'mc',q:'“evening” =',o:['সন্ধ্যা','বিকেল','ভোর','রাত'],a:0},
 {t:'li',q:'Listen — which word?',say:'ভোর',o:['ভোর','ভোরে','ঘোর','বার'],a:0},
@@ -3215,7 +3215,7 @@ const BN_Z11=[
 {t:'wb',q:'Build: “one kilo of bananas, please”',a:['এক','কেজি','কলা','দিন'],pool:['এক','কেজি','কলা','দিন','লেবু']},
 {t:'match',q:'Match phrase and meaning',pairs:[['নদী','river'],['ঝাল','spicy'],['জুতো খোলো','take off shoes'],['ডাল-ভাত','dal and rice'],['সন্ধ্যায়','in the evening']]},
 {t:'mc',q:'Zone 11 done! You now speak of…',o:['land, food, clothes & the whole day','only the city','only school','only tea'],a:0},
-{t:'li',q:'Listen — which word?',say:'সমুদ্র',o:['সমুদ্র','পাহাড়','মুদ্রা','নদী'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'সমুদ্র',o:['সমুদ্র','পাহাড়','মুদ্রা','নদী'],a:0},{t:'mc',q:'Review — which means "sunshine"?',o:['রোদ','আরো','সব','কিছু'],a:0},{t:'mc',q:'Review — which means "it seems (to me)"?',o:['মনে হয়','আরো','সব','কিছু'],a:0}]},
 ];
 const BN_Z12=[
 /* ===================== ZONE 12 · MAKING IT HOME ===================== */
@@ -3248,7 +3248,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “one lakh taka!”',a:['এক','লাখ','টাকা'],pool:['এক','লাখ','টাকা','কোটি']},
 {t:'fill',q:'Complete the ladder: হাজার → দশ হাজার → ___',s:'___',o:['লাখ','কোটি','দুশো','একশো'],a:0},
 {t:'match',q:'Match number and value',pairs:[['পাঁচশো','500'],['পাঁচ হাজার','5,000'],['লাখ','100,000'],['কোটি','10,000,000']]},
-{t:'li',q:'Listen — which number?',say:'পাঁচ হাজার',o:['পাঁচ হাজার','দশ হাজার','পাঁচশো','হাজার'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'পাঁচ হাজার',o:['পাঁচ হাজার','দশ হাজার','পাঁচশো','হাজার'],a:0},{t:'mc',q:'Review — which means "blue"?',o:['নীল','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "will you go? (to a driver)"?',o:['যাবেন?','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "careful!"?',o:['সাবধান','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "I read / study"?',o:['পড়ি','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "free / empty"?',o:['ফাঁকা','সকালে','রাতে','সন্ধ্যা'],a:0}]},
 {id:'bn_num4_5',title:'Checkpoint',step:'checkpoint',meta:'Big numbers mastered?',vocab:[],ex:[
 {t:'mc',q:'“1,000” =',o:['হাজার','লাখ','শো','কোটি'],a:0},
 {t:'li',q:'Listen — which number?',say:'লাখ',o:['লাখ','হাজার','কোটি','লাল'],a:0},
@@ -3256,7 +3256,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “the rent is ten thousand taka”',a:['ভাড়া','দশ','হাজার','টাকা'],pool:['ভাড়া','দশ','হাজার','টাকা','লাখ']},
 {t:'match',q:'Match number and value',pairs:[['দুশো','200'],['পাঁচশো','500'],['হাজার','1,000'],['দশ হাজার','10,000'],['লাখ','a lakh']]},
 {t:'mc',q:'লাখ and কোটি are counting words of…',o:['South Asia','Europe','China','no one'],a:0},
-{t:'li',q:'Listen — which number?',say:'কোটি',o:['কোটি','কুড়ি','কত','ছোট'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'কোটি',o:['কোটি','কুড়ি','কত','ছোট'],a:0},{t:'mc',q:'Review — which means "wind / breeze"?',o:['হাওয়া','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "true / really"?',o:['সত্যি','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "window"?',o:['জানালা','সকালে','রাতে','সন্ধ্যা'],a:0},{t:'mc',q:'Review — which means "come inside"?',o:['ভিতরে আসুন','সকালে','রাতে','সন্ধ্যা'],a:0}]},
 
 {id:'bn_err',title:'Errands',step:'learn',meta:'চুল কাটা · কাপড় ধোয়া',vocab:[['চুল','chul','hair'],['চুল কাটাতে চাই','chul katate chai','I want a haircut'],['কাপড়','kapor','cloth / clothes'],['কাপড় ধুই','kapor dhui','I wash clothes'],['সারাতে হবে','sarate hobe','it needs repairing'],['ব্যাংক','bank','bank']],ex:[
 {t:'note',tag:'The haircut',q:'চুল কাটাতে চাই',body:'<p><span class="deva">চুল</span> = hair. At the salon: <span class="deva">চুল কাটাতে চাই</span> — I want a haircut (literally: want to get hair cut). <span class="deva">ছোট করে দিন!</span> — make it short!</p>',eg:[['চুল','chul','hair'],['চুল কাটাতে চাই','chul katate chai','I want a haircut'],['ছোট করে দিন','chhoto kore din','make it short']]},
@@ -3287,7 +3287,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “make it (the hair) short, please”',a:['ছোট','করে','দিন'],pool:['ছোট','করে','দিন','বড়']},
 {t:'fill',q:'Complete: “where is a good salon?” — সেলুন',s:'ভালো ___ কোথায়?',o:['সেলুন','ব্যাংকে','চুলে','কাপড়ে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['চুল কাটাই','get a haircut'],['টাকা তুলি','withdraw money'],['কাপড় ধুই','wash clothes'],['সারাই','repair']]},
-{t:'li',q:'Listen — which word?',say:'কাপড়',o:['কাপড়','কাপ','পড়','চাদর'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'কাপড়',o:['কাপড়','কাপ','পড়','চাদর'],a:0},{t:'mc',q:'Review — which means "yellow"?',o:['হলুদ','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "to the right"?',o:['ডান দিকে','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "danger / trouble"?',o:['বিপদ','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "I write"?',o:['লিখি','কোটি','লাখ','দশ হাজার'],a:0}]},
 {id:'bn_err_5',title:'Checkpoint',step:'checkpoint',meta:'Errands mastered?',vocab:[],ex:[
 {t:'mc',q:'“I want a haircut” =',o:['চুল কাটাতে চাই','চুল ধুতে চাই','চুল ছোট চাই','কাটতে চুল চাই'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'কাপড় ধুই',o:['কাপড় ধুই','কাপড় পরি','চুল ধুই','কাপড় ধোব'],a:0},
@@ -3295,7 +3295,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “I have to go to the bank”',a:['আমাকে','ব্যাংকে','যেতে','হবে'],pool:['আমাকে','ব্যাংকে','যেতে','হবে','চাই']},
 {t:'match',q:'Match errand and meaning',pairs:[['চুল','hair'],['কাপড়','clothes'],['সারাতে হবে','needs repair'],['ব্যাংক','bank'],['ছোট করে দিন','make it short']]},
 {t:'mc',q:'The get-it-done pattern “kataate/saraate” is the…',o:['causative — have it done','past tense','plural','question'],a:0},
-{t:'li',q:'Listen — which word?',say:'চুল',o:['চুল','ফুল','চাল','ছুটি'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'চুল',o:['চুল','ফুল','চাল','ছুটি'],a:0},{t:'mc',q:'Review — which means "ear"?',o:['কান','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "(I) remember"?',o:['মনে আছে','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "bed"?',o:['বিছানা','কোটি','লাখ','দশ হাজার'],a:0},{t:'mc',q:'Review — which means "will you have tea?"?',o:['চা খাবেন?','কোটি','লাখ','দশ হাজার'],a:0}]},
 
 {id:'bn_emg',title:'Emergencies',step:'learn',meta:'বাঁচাও! · তাড়াতাড়ি!',vocab:[['বাঁচাও','bachao','help! / save (me)!'],['আগুন','agun','fire'],['দুর্ঘটনা','durghotona','accident'],['তাড়াতাড়ি','taratari','quickly / hurry'],['হাসপাতালে নিয়ে যান','hashpatale niye jan','take (him/her) to hospital'],['ভয় নেই','bhoy nei','do not be afraid']],ex:[
 {t:'note',tag:'The cry for help',q:'বাঁচাও!',body:'<p>The word that stops a street: <span class="deva">বাঁচাও!</span> — help! save me! For urgency add <span class="deva">তাড়াতাড়ি!</span> — quickly! <span class="deva">তাড়াতাড়ি আসুন!</span> — come quickly!</p>',eg:[['বাঁচাও','bachao','help! save!'],['তাড়াতাড়ি','taratari','quickly'],['তাড়াতাড়ি আসুন','taratari asun','come quickly!']]},
@@ -3326,7 +3326,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “come quickly — accident!”',a:['তাড়াতাড়ি','আসুন','দুর্ঘটনা'],pool:['তাড়াতাড়ি','আসুন','দুর্ঘটনা','আগুন']},
 {t:'fill',q:'Complete: reassure — “it is all right”',s:'___ নেই, ঠিক আছে',o:['ভয়','সময়','দরকার','কেউ'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['বাঁচাও!','help!'],['তাড়াতাড়ি!','quickly!'],['ভয় নেই','no fear'],['হাসপাতালে নিয়ে যান','to hospital!']]},
-{t:'li',q:'Listen — which word?',say:'আগুন',o:['আগুন','আঙুল','আগে','গান'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'আগুন',o:['আগুন','আঙুল','আগে','গান'],a:0},{t:'mc',q:'Review — which means "more"?',o:['বেশি','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "to the left"?',o:['বাঁ দিকে','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "I bathe"?',o:['স্নান করি','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "I learn"?',o:['শিখি','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0}]},
 {id:'bn_emg_5',title:'Checkpoint',step:'checkpoint',meta:'Ready for the unexpected?',vocab:[],ex:[
 {t:'mc',q:'The cry for help:',o:['বাঁচাও!','চলো!','আসি!','ব্যাস!'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'হাসপাতালে নিয়ে যান',o:['হাসপাতালে নিয়ে যান','হাসপাতালে যেতে হবে','ডাক্তার ডাকুন','বাড়ি নিয়ে যান'],a:0},
@@ -3334,7 +3334,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “call a doctor quickly!”',a:['তাড়াতাড়ি','ডাক্তার','ডাকুন'],pool:['তাড়াতাড়ি','ডাক্তার','ডাকুন','আসুন']},
 {t:'match',q:'Match phrase and meaning',pairs:[['বাঁচাও','help!'],['আগুন','fire'],['দুর্ঘটনা','accident'],['তাড়াতাড়ি','quickly'],['ভয় নেই','do not fear']]},
 {t:'mc',q:'তাড়াতাড়ি vs আস্তে:',o:['quickly vs slowly','slowly vs quickly','both fast','both slow'],a:0},
-{t:'li',q:'Listen — which word?',say:'বাঁচাও',o:['বাঁচাও','বাঁচবে','নাচাও','ডাকাও'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'বাঁচাও',o:['বাঁচাও','বাঁচবে','নাচাও','ডাকাও'],a:0},{t:'mc',q:'Review — which means "leg / foot"?',o:['পা','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "(I) do not remember"?',o:['মনে নেই','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "roof / rooftop"?',o:['ছাদ','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0},{t:'mc',q:'Review — which means "a little more"?',o:['আরেকটু','ব্যাংক','সারাতে হবে','কাপড় ধুই'],a:0}]},
 
 {id:'bn_dur',title:'Duration',step:'learn',meta:'কতদিন · ধরে · থেকে',vocab:[['কতদিন','kotodin','how long (days)'],['কতক্ষণ','kotokkhon','how long (hours)'],['ধরে','dhore','for (a length of time)'],['দুই বছর ধরে','dui bochhor dhore','for two years'],['থেকে','theke','from / since'],['সারা দিন','sara din','all day']],ex:[
 {t:'note',tag:'How long?',q:'কতদিন · কতক্ষণ',body:'<p>Two how-longs: <span class="deva">কতদিন?</span> — how many days? <span class="deva">কতক্ষণ?</span> — how much time (hours)? <span class="deva">কতদিন থাকবেন?</span> — how long will you stay?</p>',eg:[['কতদিন','kotodin','how long (days)'],['কতক্ষণ','kotokkhon','how long (time)']]},
@@ -3365,7 +3365,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “I worked all day”',a:['সারা','দিন','কাজ','করলাম'],pool:['সারা','দিন','কাজ','করলাম','করব']},
 {t:'fill',q:'Complete: “for one month”',s:'এক মাস ___',o:['ধরে','থেকে','পরে','মাসে'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['দুই বছর ধরে','for two years'],['জানুয়ারি থেকে','since January'],['সারা দিন','all day'],['কতক্ষণ?','how long?']]},
-{t:'li',q:'Listen — which word?',say:'কতক্ষণ',o:['কতক্ষণ','কতদিন','কখন','তখন'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'কতক্ষণ',o:['কতক্ষণ','কতদিন','কখন','তখন'],a:0},{t:'mc',q:'Review — which means "the best"?',o:['সবচেয়ে ভালো','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "corner / turn"?',o:['মোড়','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "I go to work"?',o:['কাজে যাই','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "I read a book"?',o:['বই পড়ি','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0}]},
 {id:'bn_dur_5',title:'Checkpoint',step:'checkpoint',meta:'Duration mastered?',vocab:[],ex:[
 {t:'mc',q:'“for (two years)” =',o:['ধরে','থেকে','পরে','মধ্যে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'দুই বছর ধরে বাংলা শিখছি',o:['দুই বছর ধরে বাংলা শিখছি','এক বছর ধরে শিখছি','বাংলা শিখছি','দুই মাস ধরে'],a:0},
@@ -3373,7 +3373,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “how long will you stay?”',a:['কতদিন','থাকবেন'],pool:['কতদিন','থাকবেন','কতক্ষণ','যাবেন']},
 {t:'match',q:'Match phrase and meaning',pairs:[['কতদিন','how many days'],['কতক্ষণ','how much time'],['ধরে','for'],['থেকে','since'],['সারা দিন','all day']]},
 {t:'mc',q:'কতদিন vs কতক্ষণ:',o:['days vs hours','hours vs days','both days','both hours'],a:0},
-{t:'li',q:'Listen — which word?',say:'ধরে',o:['ধরে','থেকে','পরে','ঘরে'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ধরে',o:['ধরে','থেকে','পরে','ঘরে'],a:0},{t:'mc',q:'Review — which means "pain / ache"?',o:['ব্যথা','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "I have forgotten"?',o:['ভুলে গেছি','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "football"?',o:['ফুটবল','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0},{t:'mc',q:'Review — which means "eat before you go!"?',o:['খেয়ে যান','ভয় নেই','তাড়াতাড়ি','দুর্ঘটনা'],a:0}]},
 
 {id:'bn_wish',title:'Wishes & blessings',step:'learn',meta:'শুভ জন্মদিন · ভালো থেকো',vocab:[['শুভ','shubho','good (in wishes)'],['শুভ জন্মদিন','shubho jonmodin','happy birthday'],['অভিনন্দন','obhinondon','congratulations'],['ভালো থেকো','bhalo theko','stay well (warm farewell)'],['সাবধানে যেও','shabdhane jeo','travel safely'],['স্বাগতম','shagotom','welcome']],ex:[
 {t:'note',tag:'Good words for good days',q:'শুভ',body:'<p><span class="deva">শুভ</span> opens every good wish: <span class="deva">শুভ জন্মদিন!</span> — happy birthday! And for achievements: <span class="deva">অভিনন্দন!</span> — congratulations!</p>',eg:[['শুভ জন্মদিন','shubho jonmodin','happy birthday'],['অভিনন্দন','obhinondon','congratulations'],['স্বাগতম','shagotom','welcome']]},
@@ -3404,7 +3404,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “stay well — see you tomorrow!”',a:['ভালো','থেকো','কাল','দেখা','হবে'],pool:['ভালো','থেকো','কাল','দেখা','হবে','যেও']},
 {t:'fill',q:'Complete: “a very happy birthday to you” — the object -কে!',s:'তোমাকে শুভ ___',o:['জন্মদিন','অভিনন্দন','বছর','দিন'],a:0},
 {t:'match',q:'Match moment and wish',pairs:[['জন্মদিনে','শুভ জন্মদিন'],['বিয়েতে','অভিনন্দন'],['দরজায় (আসছে)','স্বাগতম'],['দরজায় (যাচ্ছে)','সাবধানে যেও']]},
-{t:'li',q:'Listen — which word?',say:'শুভ',o:['শুভ','শুধু','সব','খুব'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'শুভ',o:['শুভ','শুধু','সব','খুব'],a:0},{t:'mc',q:'Review — which means "the biggest"?',o:['সবচেয়ে বড়','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "please stop"?',o:['থামুন','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "room / home"?',o:['ঘর','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "marriage / wedding"?',o:['বিয়ে','সারা দিন','থেকে','ধরে'],a:0}]},
 {id:'bn_wish_5',title:'Checkpoint',step:'checkpoint',meta:'Blessings mastered?',vocab:[],ex:[
 {t:'mc',q:'“welcome” =',o:['স্বাগতম','অভিনন্দন','শুভ','নমস্কার'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ভালো থেকো',o:['ভালো থেকো','ভালো আছি','ভালো হবে','থেকো'],a:0},
@@ -3412,7 +3412,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “welcome to Kolkata!”',a:['কলকাতায়','স্বাগতম'],pool:['কলকাতায়','স্বাগতম','অভিনন্দন','আসুন']},
 {t:'match',q:'Match wish and meaning',pairs:[['শুভ জন্মদিন','happy birthday'],['অভিনন্দন','congratulations'],['স্বাগতম','welcome'],['ভালো থেকো','stay well'],['সাবধানে যেও','go safely']]},
 {t:'mc',q:'Bengali partings are…',o:['blessings — you wish them well','silent','formal only','handshakes'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'সাবধানে যেও',o:['সাবধানে যেও','ভালো থেকো','সাবধান','আবার আসবেন'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'সাবধানে যেও',o:['সাবধানে যেও','ভালো থেকো','সাবধান','আবার আসবেন'],a:0},{t:'mc',q:'Review — which means "headache"?',o:['মাথা ব্যথা','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "teacher"?',o:['শিক্ষক','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "cricket"?',o:['ক্রিকেট','সারা দিন','থেকে','ধরে'],a:0},{t:'mc',q:'Review — which means "see you / we will meet"?',o:['দেখা হবে','সারা দিন','থেকে','ধরে'],a:0}]},
 
 {id:'bn_post',title:'Postpositions',step:'learn',meta:'সঙ্গে · জন্য · পর্যন্ত',vocab:[['সঙ্গে','shonge','with'],['আমার সঙ্গে','amar shonge','with me'],['জন্য','jonno','for'],['তোমার জন্য','tomar jonno','for you'],['পর্যন্ত','porjonto','until / up to'],['সবার সঙ্গে','shobar shonge','with everyone']],ex:[
 {t:'note',tag:'After, not before',q:'সঙ্গে · জন্য',body:'<p>English puts with/for BEFORE the word; Bengali puts them AFTER a possessive: <span class="deva">আমার সঙ্গে</span> — with me, <span class="deva">তোমার জন্য</span> — for you. That is why they are POSTpositions!</p>',eg:[['আমার সঙ্গে','amar shonge','with me'],['তোমার জন্য','tomar jonno','for you']]},
@@ -3443,7 +3443,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “I bought sweets for you”',a:['তোমার','জন্য','মিষ্টি','কিনলাম'],pool:['তোমার','জন্য','মিষ্টি','কিনলাম','সঙ্গে']},
 {t:'fill',q:'Complete: “work until evening”',s:'সন্ধ্যা ___ কাজ',o:['পর্যন্ত','সঙ্গে','জন্য','ধরে কি'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমার সঙ্গে চলো','come with me'],['তোমার জন্য','for you'],['হাওড়া পর্যন্ত','up to Howrah'],['সবার সঙ্গে','with everyone']]},
-{t:'li',q:'Listen — which word?',say:'সঙ্গে',o:['সঙ্গে','রঙে','সন্ধ্যা','জঙ্গল'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'সঙ্গে',o:['সঙ্গে','রঙে','সন্ধ্যা','জঙ্গল'],a:0},{t:'mc',q:'Review — which means "happy"?',o:['খুশি','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "when does it arrive?"?',o:['কখন পৌঁছাবে?','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "kitchen"?',o:['রান্নাঘর','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "are you married?"?',o:['বিয়ে হয়েছে?','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0}]},
 {id:'bn_post_5',title:'Checkpoint',step:'checkpoint',meta:'Postpositions mastered?',vocab:[],ex:[
 {t:'mc',q:'“with” =',o:['সঙ্গে','জন্য','পর্যন্ত','থেকে'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'তোমার জন্য',o:['তোমার জন্য','আমার জন্য','তোমার সঙ্গে','জন্য'],a:0},
@@ -3451,7 +3451,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “come with me — tea for everyone!”',a:['আমার','সঙ্গে','চলো','সবার','জন্য','চা'],pool:['আমার','সঙ্গে','চলো','সবার','জন্য','চা','পর্যন্ত']},
 {t:'match',q:'Match phrase and meaning',pairs:[['সঙ্গে','with'],['জন্য','for'],['পর্যন্ত','until'],['থেকে','from'],['ধরে','for (time)']]},
 {t:'mc',q:'They are called POSTpositions because they come…',o:['after the word','before the word','at the start','nowhere'],a:0},
-{t:'li',q:'Listen — which word?',say:'জন্য',o:['জন্য','সঙ্গে','জানালা','ধন্য'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'জন্য',o:['জন্য','সঙ্গে','জানালা','ধন্য'],a:0},{t:'mc',q:'Review — which means "fever"?',o:['জ্বর','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "student"?',o:['ছাত্র','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "I listen to songs"?',o:['গান শুনি','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0},{t:'mc',q:'Review — which means "busy"?',o:['ব্যস্ত','স্বাগতম','সাবধানে যেও','ভালো থেকো'],a:0}]},
 
 {id:'bn_cap',title:'Your Bengali life',step:'learn',meta:'আমি বাংলা ভালোবাসি',vocab:[['ভালোবাসি','bhalobashi','(I) love'],['আমি বাংলা ভালোবাসি','ami bangla bhalobashi','I love Bangla'],['আমি কলকাতা ভালোবাসি','ami kolkata bhalobashi','I love Kolkata'],['অনেক কিছু শিখেছি','onek kichhu shikhechhi','I have learned a lot'],['এখন বাংলায় কথা বলি','ekhon banglay kotha boli','now I speak in Bangla'],['মন থেকে','mon theke','from the heart']],ex:[
 {t:'note',tag:'The love verb',q:'ভালোবাসি',body:'<p>Here is Bengali’s most famous verb: <span class="deva">ভালোবাসি</span> — I love. <span class="deva">আমি বাংলা ভালোবাসি</span> — I love Bangla. <span class="deva">আমি কলকাতা ভালোবাসি</span> — I love Kolkata. Say it <span class="deva">মন থেকে</span> — from the heart!</p>',eg:[['ভালোবাসি','bhalobashi','I love'],['আমি বাংলা ভালোবাসি','ami bangla bhalobashi','I love Bangla'],['মন থেকে','mon theke','from the heart']]},
@@ -3482,7 +3482,7 @@ const BN_Z12=[
 {t:'wb',q:'Build: “I have learned a lot”',a:['অনেক','কিছু','শিখেছি'],pool:['অনেক','কিছু','শিখেছি','শিখব']},
 {t:'fill',q:'Complete: thank your teacher — “many thanks!”',s:'___ ধন্যবাদ!',o:['অনেক','সব','খুব','আরো'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['আমি বাংলা ভালোবাসি','I love Bangla'],['মন থেকে','from the heart'],['অভিনন্দন','congratulations'],['এখন কথা বলি','now I speak']]},
-{t:'li',q:'Listen — which phrase?',say:'অনেক ধন্যবাদ',o:['অনেক ধন্যবাদ','ধন্যবাদ','অনেক কিছু','অভিনন্দন'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'অনেক ধন্যবাদ',o:['অনেক ধন্যবাদ','ধন্যবাদ','অনেক কিছু','অভিনন্দন'],a:0},{t:'mc',q:'Review — which means "sad (heart-bad)"?',o:['মন খারাপ','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "December"?',o:['ডিসেম্বর','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "door"?',o:['দরজা','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "guest"?',o:['অতিথি','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0}]},
 {id:'bn_cap_5',title:'Course capstone',step:'checkpoint',meta:'আপনি পেরেছেন — you did it!',vocab:[],ex:[
 {t:'mc',q:'“(I) love” =',o:['ভালোবাসি','ভালো লাগে','ভালোবাসা','ভালো'],a:0},
 {t:'li',q:'Listen — which sentence?',say:'এখন বাংলায় কথা বলি',o:['এখন বাংলায় কথা বলি','বাংলায় কথা বলতে চাই','বাংলা শিখছি','কথা বলি'],a:0},
@@ -3490,7 +3490,7 @@ const BN_Z12=[
 {t:'wb',q:'Build your graduation sentence: “I have learned a lot — now I speak in Bangla!”',a:['অনেক','কিছু','শিখেছি','এখন','বাংলায়','কথা','বলি'],pool:['অনেক','কিছু','শিখেছি','এখন','বাংলায়','কথা','বলি','শিখব']},
 {t:'match',q:'Match phrase and meaning',pairs:[['ভালোবাসি','I love'],['মন থেকে','from the heart'],['অনেক কিছু শিখেছি','learned a lot'],['স্বাগতম','welcome'],['অভিনন্দন','congratulations']]},
 {t:'mc',q:'Twelve zones complete! You can now…',o:['read, speak, ride, shop, feel, bless and love — in Bangla','read only','count only','wave only'],a:0},
-{t:'li',q:'Listen — which word?',say:'অভিনন্দন',o:['অভিনন্দন','ধন্যবাদ','স্বাগতম','জন্মদিন'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'অভিনন্দন',o:['অভিনন্দন','ধন্যবাদ','স্বাগতম','জন্মদিন'],a:0},{t:'mc',q:'Review — which means "you did (friendly)"?',o:['করলে','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "business"?',o:['ব্যবসা','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "I go out / go visiting"?',o:['বেড়াতে যাই','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0},{t:'mc',q:'Review — which means "do you have time?"?',o:['সময় আছে?','সবার সঙ্গে','পর্যন্ত','তোমার জন্য'],a:0}]},
 ];
 const BN_LESSONS=[].concat(BN_Z1,BN_Z2,BN_Z3,BN_Z4,BN_Z5,BN_Z6,BN_Z7,BN_Z8,BN_Z9,BN_Z10,BN_Z11,BN_Z12);
 

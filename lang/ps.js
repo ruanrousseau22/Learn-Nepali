@@ -957,7 +957,7 @@ const PS_Z4=[
 {t:'fill',q:'Complete: "my family"',s:'زما ___',o:['کورنۍ','کور','ماشوم','نوم'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['زوی','son'],['لور','daughter'],['ماشوم','child'],['کورنۍ','family']]},
 {t:'mc',q:'او means…',o:['and','or','not','with'],a:0},
-{t:'li',q:'Listen — which word?',say:'زوی',o:['زوی','لور','ماشوم','ورور'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'زوی',o:['زوی','لور','ماشوم','ورور'],a:0},{t:'mc',q:'Review — which means "4"?',o:['څلور','سل','څلوېښت','دېرش'],a:0}]},
 {id:'ps_family_5',title:'Checkpoint',step:'checkpoint',meta:'Family mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "father"?',o:['پلار','مور','زوی','ورور'],a:0},
 {t:'li',q:'Listen — which word?',say:'لور',o:['لور','زوی','مور','خور'],a:0},
@@ -998,7 +998,7 @@ const PS_Z4=[
 {t:'fill',q:'Complete: "the school where is?"',s:'ښوونځی ___ دی',o:['چېرې','څه','کله','څوک'],a:0},
 {t:'match',q:'Match place and meaning',pairs:[['دوکان','shop'],['هوټل','hotel / eatery'],['ښار','city'],['بازار','market']]},
 {t:'mc',q:'Sick? You go to the…',o:['روغتون','ښوونځی','بازار','دوکان'],a:0},
-{t:'li',q:'Listen — which place?',say:'بازار',o:['بازار','ښار','دوکان','هوټل'],a:0}]},
+{t:'li',q:'Listen — which place?',say:'بازار',o:['بازار','ښار','دوکان','هوټل'],a:0},{t:'mc',q:'Review — which means "my name"?',o:['زما نوم','ماشوم','کورنۍ','لور'],a:0}]},
 {id:'ps_place_5',title:'Checkpoint',step:'checkpoint',meta:'Places mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "market"?',o:['بازار','دوکان','ښار','روغتون'],a:0},
 {t:'li',q:'Listen — which place?',say:'ښوونځی',o:['ښوونځی','روغتون','هوټل','بازار'],a:0},
@@ -1039,7 +1039,7 @@ const PS_Z4=[
 {t:'fill',q:'Complete: "the school is near"',s:'ښوونځی ___ دی',o:['نږدې','لرې','کې','په'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['نږدې','near'],['لرې','far'],['لاندې','under'],['شاته','behind']]},
 {t:'mc',q:'په … کې is called a sandwich because…',o:['it wraps around the noun','it is edible','it has three parts','it moves'],a:0},
-{t:'li',q:'Listen — which word?',say:'شاته',o:['شاته','مخکې','نږدې','لاندې'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'شاته',o:['شاته','مخکې','نږدې','لاندې'],a:0},{t:'mc',q:'Review — which means "sorry / excuse me"?',o:['بخښنه غواړم','ښار','هوټل','دوکان'],a:0}]},
 {id:'ps_pos_5',title:'Checkpoint',step:'checkpoint',meta:'Positions mastered?',vocab:[],ex:[
 {t:'mc',q:'"in the house" =',o:['په کور کې','کور ته','له کوره','کور دی'],a:0},
 {t:'li',q:'Listen — which word?',say:'لاندې',o:['لاندې','مخکې','شاته','نږدې'],a:0},
@@ -1205,7 +1205,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "100 afghani"',s:'سل ___',o:['افغانۍ','پیسې','بیه','څو'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['څو','how many'],['څومره','how much'],['بیه','price'],['ارزان','cheap']]},
 {t:'mc',q:'Calling a price ګران also calls it…',o:['dear','sweet','far','light'],a:0},
-{t:'li',q:'Listen — which word?',say:'څو',o:['څو','څه','څوک','څومره'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'څو',o:['څو','څه','څوک','څومره'],a:0},{t:'mc',q:'Review — which means "big (masculine)"?',o:['غټ','ویده کېږم','کار کوم','شپه'],a:0}]},
 {id:'ps_money_5',title:'Checkpoint',step:'checkpoint',meta:'Money mastered?',vocab:[],ex:[
 {t:'mc',q:'The Afghan currency is…',o:['افغانۍ','پیسې','بیه','دالر'],a:0},
 {t:'li',q:'Listen — which word?',say:'ارزان',o:['ارزان','ګران','بیه','پیسې'],a:0},
@@ -1246,7 +1246,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "one lakh"',s:'یو ___',o:['لک','زر','سل','ملیون'],a:0},
 {t:'match',q:'Match number and value',pairs:[['دوه سوه','200'],['پنځه زره','5,000'],['لک','100,000'],['سل','100']]},
 {t:'mc',q:'Order small → large:',o:['سل، زر، لک','لک، زر، سل','زر، سل، لک','سل، لک، زر'],a:0},
-{t:'li',q:'Listen — which number?',say:'ملیون',o:['ملیون','لک','زر','سل'],a:0}]},
+{t:'li',q:'Listen — which number?',say:'ملیون',o:['ملیون','لک','زر','سل'],a:0},{t:'mc',q:'Review — which means "big (feminine)"?',o:['غټه','ګران','بیه','څومره'],a:0}]},
 {id:'ps_bignum_5',title:'Checkpoint',step:'checkpoint',meta:'Big numbers mastered?',vocab:[],ex:[
 {t:'mc',q:'Which is 100,000?',o:['لک','زر','سل','ملیون'],a:0},
 {t:'li',q:'Listen — which number?',say:'زر',o:['زر','سل','لک','شل'],a:0},
@@ -1287,7 +1287,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "half past three" = درې ___ بجې',s:'درې ___ بجې',o:['نیمې','دقیقې','ساعته','څو'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ساعت','hour / clock'],['دقیقه','minute'],['نیمه','half'],['بجې','o’clock']]},
 {t:'mc',q:'The number goes ___ بجې',o:['before','after','inside','nowhere'],a:0},
-{t:'li',q:'Listen — which word?',say:'بجې',o:['بجې','نیمه','ساعت','دقیقه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'بجې',o:['بجې','نیمه','ساعت','دقیقه'],a:0},{t:'mc',q:'Review — which means "small (feminine)"?',o:['کوچنۍ','لک','پنځه زره','زر'],a:0}]},
 {id:'ps_time_5',title:'Checkpoint',step:'checkpoint',meta:'Time mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask the time:',o:['څو بجې دي','څومره پیسې','چېرې دی','څه غواړې'],a:0},
 {t:'li',q:'Listen — which word?',say:'ساعت',o:['ساعت','بجې','دقیقه','نیمه'],a:0},
@@ -1328,7 +1328,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "on Friday the bazaar is closed" (بند = closed)',s:'جمعه بازار ___ دی',o:['بند','ښه','غټ','نږدې'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['نن','today'],['سبا','tomorrow'],['پرون','yesterday'],['اونۍ','week']]},
 {t:'mc',q:'Families gather on…',o:['جمعه','دوشنبه','شنبه','یکشنبه'],a:0},
-{t:'li',q:'Listen — which word?',say:'ورځ',o:['ورځ','اونۍ','شپه','نن'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ورځ',o:['ورځ','اونۍ','شپه','نن'],a:0},{t:'mc',q:'Review — which means "woman"?',o:['ښځه','ساعت','دقیقه','نیمه'],a:0}]},
 {id:'ps_week_5',title:'Checkpoint',step:'checkpoint',meta:'The week mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "day"?',o:['ورځ','اونۍ','شپه','ساعت'],a:0},
 {t:'li',q:'Listen — which word?',say:'شنبه',o:['شنبه','یکشنبه','دوشنبه','جمعه'],a:0},
@@ -1369,7 +1369,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "very good!"',s:'ډېر ___',o:['ښه','ګران','ارزان','څو'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['دا واخله','take this'],['زه دا اخلم','I take this'],['پلوري','he sells'],['ډېر','very']]},
 {t:'mc',q:'ډېر turns ښه into…',o:['very good','a question','not good','goodbye'],a:0},
-{t:'li',q:'Listen — which word?',say:'پلوري',o:['پلوري','اخلم','غواړي','لري'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'پلوري',o:['پلوري','اخلم','غواړي','لري'],a:0},{t:'mc',q:'Review — which means "(I) do not eat"?',o:['نه خورم','جمعه','دوشنبه','یکشنبه'],a:0}]},
 {id:'ps_shop_5',title:'Checkpoint',step:'checkpoint',meta:'Bazaar talk mastered?',vocab:[],ex:[
 {t:'mc',q:'"I take this" =',o:['زه دا اخلم','زه دا پلورم','زه دا غواړې','دا زه'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ډېر ګران دی',o:['ډېر ګران دی','ارزان یې کړه','دا واخله','پلوري'],a:0},
@@ -1377,7 +1377,7 @@ const PS_Z5=[
 {t:'wb',q:'Build: "it is too expensive"',a:['ډېر','ګران','دی'],pool:['ډېر','ګران','دی','ارزان']},
 {t:'match',q:'Match phrase and meaning',pairs:[['اخلم','I buy'],['پلوري','he sells'],['ډېر','very'],['ارزان یې کړه','make it cheaper'],['دا واخله','take this']]},
 {t:'mc',q:'ډېر means…',o:['very / much','little','never','cheap'],a:0},
-{t:'li',q:'Listen — which word?',say:'اخلم',o:['اخلم','پلوري','لرم','غواړم'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'اخلم',o:['اخلم','پلوري','لرم','غواړم'],a:0},{t:'mc',q:'Review — which means "hello"?',o:['سلام','جمعه','دوشنبه','یکشنبه'],a:0}]},
 
 {id:'ps_more',title:'Much, little, more',step:'learn',meta:'Quantities',vocab:[['ډېر','dder','much / very'],['لږ','lag','a little / few'],['نور','nor','more / other'],['بس','bas','enough!'],['ټول','ttol','all'],['هېڅ','hets','nothing / none']],ex:[
 {t:'note',tag:'A lot or a little',q:'ډېر · لږ',body:'<p><span class="deva">ډېر</span> <b>dder</b> = much/many/very; <span class="deva">لږ</span> <b>lag</b> = a little: <span class="deva">لږ چای</span> = a little tea, <span class="deva">ډېرې پیسې</span> = a lot of money.</p>',eg:[['ډېر','dder','much / very'],['لږ','lag','a little']]},
@@ -1409,7 +1409,7 @@ const PS_Z5=[
 {t:'fill',q:'Complete: "all the family"',s:'___ کورنۍ',o:['ټوله','لږ','نور','بس'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ټول','all'],['هېڅ','nothing'],['نور','more'],['لږ','a little']]},
 {t:'mc',q:'Your cup keeps being refilled. You say…',o:['بس، مننه','نور، مننه','هېڅ','ټول'],a:0},
-{t:'li',q:'Listen — which word?',say:'ډېر',o:['ډېر','نور','لږ','ټول'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ډېر',o:['ډېر','نور','لږ','ټول'],a:0},{t:'mc',q:'Review — which means "(I) do not go"?',o:['نه ځم','خرڅول','دا واخله','پلوري'],a:0}]},
 {id:'ps_more_5',title:'Zone 5 checkpoint',step:'checkpoint',meta:'Quantities mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "a little"?',o:['لږ','ډېر','نور','ټول'],a:0},
 {t:'li',q:'Listen — which word?',say:'نور',o:['نور','بس','ټول','لږ'],a:0},
@@ -1417,7 +1417,7 @@ const PS_Z5=[
 {t:'wb',q:'Build: "I want a little tea"',a:['زه','لږ','چای','غواړم'],pool:['زه','لږ','چای','غواړم','نور']},
 {t:'match',q:'Match word and meaning',pairs:[['ډېر','much'],['لږ','a little'],['نور','more'],['بس','enough'],['ټول','all']]},
 {t:'mc',q:'Which means "nothing"?',o:['هېڅ','ټول','بس','لږ'],a:0},
-{t:'li',q:'Listen — which word?',say:'ټول',o:['ټول','نور','هېڅ','بس'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ټول',o:['ټول','نور','هېڅ','بس'],a:0},{t:'mc',q:'Review — which means "how are you?"?',o:['څنګه یې','خرڅول','دا واخله','پلوري'],a:0}]},
 ];
 const PS_Z6=[
 /* ===================== ZONE 6 · DESCRIBE IT ===================== */
@@ -1451,7 +1451,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "an old man"',s:'___ سړی',o:['زوړ','زړه','نوې','ښکلې'],a:0},
 {t:'match',q:'Match the pairs',pairs:[['ښه','good'],['ښکلی','beautiful (m)'],['زوړ','old (m)'],['نوې','new (f)']]},
 {t:'mc',q:'ډوډۍ takes نوې (not نوی) because it is…',o:['feminine','masculine','plural','a verb'],a:0},
-{t:'li',q:'Listen — which word?',say:'نوی',o:['نوی','نوې','زوړ','ښکلی'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'نوی',o:['نوی','نوې','زوړ','ښکلی'],a:0},{t:'mc',q:'Review — which means "(I) am not"?',o:['نه یم','هېڅ','ټول','بس'],a:0}]},
 {id:'ps_adj_5',title:'Checkpoint',step:'checkpoint',meta:'Adjectives mastered?',vocab:[],ex:[
 {t:'mc',q:'"a new house" =',o:['نوی کور','نوې کور','کور نوی','زوړ کور'],a:0},
 {t:'li',q:'Listen — which word?',say:'زوړ',o:['زوړ','زړه','نوی','ښه'],a:0},
@@ -1492,7 +1492,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "a red apple" (مڼه = apple, f!)',s:'___ مڼه',o:['سره','سور','شین','تور'],a:0},
 {t:'match',q:'Match color and meaning',pairs:[['سپین','white'],['تور','black'],['ژېړ','yellow'],['رنګ','color']]},
 {t:'mc',q:'مڼه takes سره because apple is…',o:['feminine','masculine','plural','a verb'],a:0},
-{t:'li',q:'Listen — which color?',say:'شین',o:['شین','سپین','ژېړ','سور'],a:0}]},
+{t:'li',q:'Listen — which color?',say:'شین',o:['شین','سپین','ژېړ','سور'],a:0},{t:'mc',q:'Review — which means "who"?',o:['څوک','ښکلی','زړه','زوړ'],a:0}]},
 {id:'ps_colors_5',title:'Checkpoint',step:'checkpoint',meta:'Colors mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "red"?',o:['سور','تور','شین','ژېړ'],a:0},
 {t:'li',q:'Listen — which color?',say:'تور',o:['تور','سور','سپین','شین'],a:0},
@@ -1533,7 +1533,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "my younger sister"',s:'زما ___ خور',o:['کشره','کشر','لوی','تر'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['له ټولو','than all'],['غوره','better'],['لوی','elder'],['کشر','younger']]},
 {t:'mc',q:'کشره (not کشر) for a sister because خور is…',o:['feminine','masculine','plural','young'],a:0},
-{t:'li',q:'Listen — which word?',say:'غوره',o:['غوره','لوی','تر','کشر'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'غوره',o:['غوره','لوی','تر','کشر'],a:0},{t:'mc',q:'Review — which means "why"?',o:['ولې','تور','سپین','ژېړ'],a:0}]},
 {id:'ps_compare_5',title:'Checkpoint',step:'checkpoint',meta:'Comparisons mastered?',vocab:[],ex:[
 {t:'mc',q:'"I am bigger than you" =',o:['زه تر تا لوی یم','زه لوی تر تا یم','تر زه تا لوی','زه تا لوی'],a:0},
 {t:'li',q:'Listen — which word?',say:'تر',o:['تر','له','او','په'],a:0},
@@ -1574,7 +1574,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "he is sick"',s:'هغه ___ دی',o:['ناروغ','ښه','لوی','نوی'],a:0},
 {t:'match',q:'Match feeling and meaning',pairs:[['تږی','thirsty'],['ناروغ','sick'],['خپه','sad'],['ستړی','tired']]},
 {t:'mc',q:'A sick person goes to the ___ (Zone 4!)',o:['روغتون','ښوونځی','بازار','هوټل'],a:0},
-{t:'li',q:'Listen — which feeling?',say:'خپه',o:['خپه','خوشحاله','وږی','ستړی'],a:0}]},
+{t:'li',q:'Listen — which feeling?',say:'خپه',o:['خپه','خوشحاله','وږی','ستړی'],a:0},{t:'mc',q:'Review — which means "(I) do not have"?',o:['نه لرم','کشر','غوره','له ټولو'],a:0}]},
 {id:'ps_feel_5',title:'Checkpoint',step:'checkpoint',meta:'Feelings mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "happy"?',o:['خوشحاله','خپه','ستړی','ناروغ'],a:0},
 {t:'li',q:'Listen — which feeling?',say:'وږی',o:['وږی','تږی','ستړی','خپه'],a:0},
@@ -1615,7 +1615,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "snow falls in winter" — واوره is…',s:'واوره ___',o:['ورېږي','دی','کوم','یم'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['باد','wind'],['یخني','cold'],['ګرمي','heat'],['هوا','weather']]},
 {t:'mc',q:'نن هوا ښه ده means…',o:['today the weather is good','it rains today','it is windy','it snowed'],a:0},
-{t:'li',q:'Listen — which word?',say:'واوره',o:['واوره','باران','هوا','باد'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'واوره',o:['واوره','باران','هوا','باد'],a:0},{t:'mc',q:'Review — which means "(I) want water"?',o:['اوبه غواړم','ناروغ','تږی','وږی'],a:0}]},
 {id:'ps_weather_5',title:'Checkpoint',step:'checkpoint',meta:'Weather mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "weather"?',o:['هوا','باد','باران','ګرمي'],a:0},
 {t:'li',q:'Listen — which word?',say:'ګرمي',o:['ګرمي','یخني','هوا','باران'],a:0},
@@ -1656,7 +1656,7 @@ const PS_Z6=[
 {t:'fill',q:'Complete: "I am sick — where is the doctor?"',s:'زه ناروغ یم — ډاکټر ___ دی',o:['چېرې','څه','څوک','کله'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['درد','pain'],['ډاکټر','doctor'],['خېټه','stomach'],['سترګه','eye']]},
 {t:'mc',q:'زما سر درد کوي — what hurts?',d:'زما سر درد کوي',o:['the head','the hand','the eye','the stomach'],a:0},
-{t:'li',q:'Listen — which word?',say:'لاس',o:['لاس','سر','خېټه','درد'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'لاس',o:['لاس','سر','خېټه','درد'],a:0},{t:'mc',q:'Review — which means "(I) do not want"?',o:['نه غواړم','باد','واوره','باران'],a:0}]},
 {id:'ps_body_5',title:'Zone 6 checkpoint',step:'checkpoint',meta:'Body & health mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "head"?',o:['سر','لاس','سترګه','خېټه'],a:0},
 {t:'li',q:'Listen — which word?',say:'درد',o:['درد','سر','ډاکټر','لاس'],a:0},
@@ -1664,7 +1664,7 @@ const PS_Z6=[
 {t:'wb',q:'Build: "my head hurts"',a:['زما','سر','درد','کوي'],pool:['زما','سر','درد','کوي','خېټه']},
 {t:'match',q:'Match word and meaning',pairs:[['سر','head'],['سترګه','eye'],['لاس','hand'],['خېټه','stomach'],['ډاکټر','doctor']]},
 {t:'mc',q:'The pain pattern is: body part + درد + …',o:['کوي','دی','یم','لري'],a:0},
-{t:'li',q:'Listen — which word?',say:'سترګه',o:['سترګه','سر','لاس','خېټه'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'سترګه',o:['سترګه','سر','لاس','خېټه'],a:0},{t:'mc',q:'Review — which means "I am well"?',o:['ښه یم','باد','واوره','باران'],a:0}]},
 ];
 const PS_Z7=[
 /* ===================== ZONE 7 · THEN & NOW ===================== */
@@ -1698,7 +1698,7 @@ const PS_Z7=[
 {t:'fill',q:'Complete: "we were at the bazaar"',s:'موږ په بازار کې ___',o:['وو','وم','وه','و'],a:0},
 {t:'match',q:'Match tense pairs',pairs:[['یم','وم'],['یې','وې'],['دی','و'],['ده','وه']]},
 {t:'mc',q:'پرون flips a sentence toward…',o:['the past','the future','a question','negation'],a:0},
-{t:'li',q:'Listen — which word?',say:'وه',o:['وه','و','وم','وو'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'وه',o:['وه','و','وم','وو'],a:0},{t:'mc',q:'Review — which means "what do you want?"?',o:['څه غواړې','ډاکټر','درد','خېټه'],a:0}]},
 {id:'ps_past_5',title:'Checkpoint',step:'checkpoint',meta:'Was/were mastered?',vocab:[],ex:[
 {t:'mc',q:'"(I) was" =',o:['وم','وې','و','وه'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'پرون ستړی وم',o:['پرون ستړی وم','نن ښه یم','زه یم','هغه و'],a:0},
@@ -1739,7 +1739,7 @@ const PS_Z7=[
 {t:'fill',q:'Complete: "we went" (لاړو)',s:'موږ ___',o:['لاړو','لاړم','لاړ','لاړه'],a:0},
 {t:'match',q:'Match verb and meaning',pairs:[['لاړ','he went'],['لاړه','she went'],['راغی','he came'],['راغله','she came']]},
 {t:'mc',q:'The را in راغلم / راځم points…',o:['toward the speaker','away','upward','backward'],a:0},
-{t:'li',q:'Listen — which verb?',say:'لاړم',o:['لاړم','لاړ','راغلم','لاړه'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'لاړم',o:['لاړم','لاړ','راغلم','لاړه'],a:0},{t:'mc',q:'Review — which means "daughter"?',o:['لور','پرون','وو','وه'],a:0}]},
 {id:'ps_went_5',title:'Checkpoint',step:'checkpoint',meta:'Went & came mastered?',vocab:[],ex:[
 {t:'mc',q:'"(I) came" =',o:['راغلم','لاړم','راغی','راځم'],a:0},
 {t:'li',q:'Listen — which verb?',say:'راغی',o:['راغی','راغله','راغلم','لاړ'],a:0},
@@ -1781,7 +1781,7 @@ const PS_Z7=[
 {t:'fill',q:'Complete: past-doer "I"',s:'___ ډوډۍ وخوړه',o:['ما','زه','زما','تا'],a:0},
 {t:'match',q:'Match present and past-doer',pairs:[['زه','ما'],['ته','تا']]},
 {t:'mc',q:'The past flip only happens with verbs that…',o:['take an object','have no object','are negative','are questions'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ما ډوډۍ وخوړه',o:['ما ډوډۍ وخوړه','ما چای وڅښه','تا څه وخوړل','ما ولیدل'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ما ډوډۍ وخوړه',o:['ما ډوډۍ وخوړه','ما چای وڅښه','تا څه وخوړل','ما ولیدل'],a:0},{t:'mc',q:'Review — which means "child"?',o:['ماشوم','راغله','راغی','لاړه'],a:0}]},
 {id:'ps_erg_5',title:'Checkpoint',step:'checkpoint',meta:'The flip recognized?',vocab:[],ex:[
 {t:'mc',q:'"I ate bread" (past) =',o:['ما ډوډۍ وخوړه','زه ډوډۍ خورم','زه وخوړه','ما خورم'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ما چای وڅښه',o:['ما چای وڅښه','ما ډوډۍ وخوړه','زه چای څښم','ما ولیدل'],a:0},
@@ -1822,7 +1822,7 @@ const PS_Z7=[
 {t:'fill',q:'Time-match: پرون لاړم، نن ځم، سبا به ___',s:'سبا به ___',o:['ځم','لاړم','وم','یم'],a:0},
 {t:'match',q:'Match time and sentence',pairs:[['پرون','لاړم (went)'],['نن','ځم (go)'],['سبا','به ځم (will go)']]},
 {t:'mc',q:'One tiny word to time-travel forward:',o:['به','نه','او','تر'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'زه به راځم',o:['زه به راځم','زه به ځم','زه راځم','راغلم'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'زه به راځم',o:['زه به راځم','زه به ځم','زه راځم','راغلم'],a:0},{t:'mc',q:'Review — which means "in front"?',o:['مخکې','تا','ما ولیدل','ما'],a:0}]},
 {id:'ps_future_5',title:'Checkpoint',step:'checkpoint',meta:'Future mastered?',vocab:[],ex:[
 {t:'mc',q:'The future marker is…',o:['به','نه','تر','له'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'زه به ځم',o:['زه به ځم','زه ځم','زه به نه ځم','زه راځم'],a:0},
@@ -1863,7 +1863,7 @@ const PS_Z7=[
 {t:'fill',q:'Complete: "can you come?" (راتللی …؟)',s:'ته راتللی ___',o:['شې','شم','یې','ځې'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ویلی شم','I can speak'],['تللی شم','I can go'],['نه شم','I cannot'],['شم','I can']]},
 {t:'mc',q:'For "you can", شم becomes…',o:['شې','شم','شي','شو'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'نه شم',o:['نه شم','شم','نه یم','نه ځم'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'نه شم',o:['نه شم','شم','نه یم','نه ځم'],a:0},{t:'mc',q:'Review — which means "near"?',o:['نږدې','به نه','سبا به','به'],a:0}]},
 {id:'ps_can_5',title:'Checkpoint',step:'checkpoint',meta:'Can mastered?',vocab:[],ex:[
 {t:'mc',q:'"I can speak Pashto" =',o:['زه پښتو ویلی شم','زه پښتو وایم','پښتو زه شم','زه شم پښتو'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'تللی شم',o:['تللی شم','کولی شم','ویلی شم','نه شم'],a:0},
@@ -1872,7 +1872,7 @@ const PS_Z7=[
 {t:'match',q:'Match phrase and meaning',pairs:[['کولی شم','I can do'],['تللی شم','I can go'],['ویلی شم','I can speak'],['نه شم','I cannot'],['شم','I can']]},
 {t:'mc',q:'"can" = verb + …',o:['شم','یم','به','کوم'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'پښتو ویلی شم',o:['پښتو ویلی شم','کولی شم','نه شم','تللی شم'],a:0},
-{t:'mc',q:'Review — which means "million"?',o:['ملیون','رنګ','نیمه','راغی'],a:0}]},
+{t:'mc',q:'Review — which means "million"?',o:['ملیون','رنګ','نیمه','دوه سوه'],a:0}]},
 
 {id:'ps_must',title:'Must & commands',step:'learn',meta:'باید, راشه, کېنه',vocab:[['باید','baayad','must / have to'],['راشه','raasha','come! (command)'],['کېنه','kena','sit down! (command)'],['ورو ورو','wro wro','slowly'],['وخوره','wukhora','eat! (command)'],['مه','ma','do not! (with commands)']],ex:[
 {t:'note',tag:'Must',q:'باید',body:'<p><span class="deva">باید</span> <b>baayad</b> = must: <span class="deva">زه باید ولاړ شم</span> = "I must go". Simply put باید before the action.</p>',eg:[['باید','baayad','must'],['زه باید ولاړ شم','za baayad wlaarr sham','I must go']]},
@@ -1904,7 +1904,7 @@ const PS_Z7=[
 {t:'fill',q:'A guest arrives. You say:',s:'___ ! کېنه!',o:['راشه','مه','باید','بس'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['مه','do not!'],['ورو ورو','slowly'],['وخوره','eat!'],['باید','must']]},
 {t:'mc',q:'مه vs نه: commands take…',o:['مه','نه','both randomly','neither'],a:0},
-{t:'li',q:'Listen — which word?',say:'مه',o:['مه','نه','به','بس'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مه',o:['مه','نه','به','بس'],a:0},{t:'mc',q:'Review — which means "vegetables"?',o:['سابه','نه شم','ویلی شم','تللی شم'],a:0}]},
 {id:'ps_must_5',title:'Zone 7 checkpoint',step:'checkpoint',meta:'Then & now mastered?',vocab:[],ex:[
 {t:'mc',q:'"must" =',o:['باید','به','مه','شم'],a:0},
 {t:'li',q:'Listen — which command?',say:'کېنه',o:['کېنه','راشه','وخوره','مه'],a:0},
@@ -1947,7 +1947,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: "a long journey" (اوږد = long)',s:'اوږد ___',o:['سفر','سړک','موټر','بس'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['سړک','road'],['سفر','journey'],['الوتکه','airplane'],['بس','bus']]},
 {t:'mc',q:'ټکسي starts with which retroflex letter?',o:['ټ','ډ','ړ','ڼ'],a:0},
-{t:'li',q:'Listen — which word?',say:'الوتکه',o:['الوتکه','موټر','سفر','ټکسي'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'الوتکه',o:['الوتکه','موټر','سفر','ټکسي'],a:0},{t:'mc',q:'Review — which means "milk"?',o:['شیدې','مه','وخوره','ورو ورو'],a:0}]},
 {id:'ps_ride_5',title:'Checkpoint',step:'checkpoint',meta:'Transport mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "car"?',o:['موټر','بس','ټکسي','سړک'],a:0},
 {t:'li',q:'Listen — which word?',say:'بس',o:['بس','موټر','ټکسي','سفر'],a:0},
@@ -1988,7 +1988,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: "the hotel is here"',s:'هوټل ___ دی',o:['دلته','هلته','ښي','مخامخ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ودرېږه','stop!'],['هلته','there'],['مخامخ','straight'],['کیڼ','left']]},
 {t:'mc',q:'دلته and هلته differ like…',o:['here and there','left and right','up and down','old and new'],a:0},
-{t:'li',q:'Listen — which word?',say:'مخامخ',o:['مخامخ','ښي','کیڼ','هلته'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مخامخ',o:['مخامخ','ښي','کیڼ','هلته'],a:0},{t:'mc',q:'Review — which means "sugar"?',o:['بوره','سفر','سړک','الوتکه'],a:0}]},
 {id:'ps_dir_5',title:'Checkpoint',step:'checkpoint',meta:'Directions mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "right"?',o:['ښي','کیڼ','مخامخ','دلته'],a:0},
 {t:'li',q:'Listen — which command?',say:'ودرېږه',o:['ودرېږه','راشه','کېنه','ځه'],a:0},
@@ -2029,7 +2029,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: "the room is free (empty)"',s:'خونه ___ ده',o:['خالي','غټه','نوې','توره'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['خالي خونه','free room'],['یوه شپه','one night'],['تشناب','bathroom'],['کیلي','key']]},
 {t:'mc',q:'د خونې کیلي — the little د marks…',o:['of (possession)','to','in','from'],a:0},
-{t:'li',q:'Listen — which word?',say:'تشناب',o:['تشناب','بستره','خونه','کیلي'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'تشناب',o:['تشناب','بستره','خونه','کیلي'],a:0},{t:'mc',q:'Review — which means "tasty"?',o:['خوندور','هلته','دلته','ودرېږه'],a:0}]},
 {id:'ps_hotel_5',title:'Checkpoint',step:'checkpoint',meta:'Hotel mastered?',vocab:[],ex:[
 {t:'mc',q:'"a free room" =',o:['خالي خونه','غټه خونه','خونه','نوې خونه'],a:0},
 {t:'li',q:'Listen — which word?',say:'بستره',o:['بستره','خونه','کیلي','تشناب'],a:0},
@@ -2070,7 +2070,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: "is there internet?" (شته = is there)',s:'انټرنېټ ___؟',o:['شته','دی','ده','دي'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['زنګ ووهه','call!'],['پیغام','message'],['انټرنېټ','internet'],['شمېره','number']]},
 {t:'mc',q:'ما ته زنګ ووهه means…',o:['call me','message him','my number','no calls'],a:0},
-{t:'li',q:'Listen — which word?',say:'انټرنېټ',o:['انټرنېټ','واي فای','تلیفون','شمېره'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'انټرنېټ',o:['انټرنېټ','واي فای','تلیفون','شمېره'],a:0},{t:'mc',q:'Review — which means "100,000 (lakh)"?',o:['لک','خالي خونه','تشناب','بستره'],a:0}]},
 {id:'ps_phone_5',title:'Checkpoint',step:'checkpoint',meta:'Phone mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "number"?',o:['شمېره','تلیفون','پیغام','زنګ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'زنګ ووهه',o:['زنګ ووهه','پیغام','شمېره','تلیفون'],a:0},
@@ -2111,7 +2111,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: leaving, you say "thanks — may your house prosper"',s:'مننه — کور مو ___',o:['ودان','ښه','غټ','نوی'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['کوربه','host'],['راشئ','come!'],['کور مو ودان','house-blessing'],['ډېر ښه','wonderful']]},
 {t:'mc',q:'The tea keeps flowing because of…',o:['مېلمستیا','یخني','باران','پیسې'],a:0},
-{t:'li',q:'Listen — which word?',say:'کوربه',o:['کوربه','مېلمه','راشئ','چای'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'کوربه',o:['کوربه','مېلمه','راشئ','چای'],a:0},{t:'mc',q:'Review — which means "hour / clock"?',o:['ساعت','واي فای','پیغام','انټرنېټ'],a:0}]},
 {id:'ps_guest_5',title:'Checkpoint',step:'checkpoint',meta:'Melmastia mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "guest"?',o:['مېلمه','کوربه','مېلمستیا','راشئ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'کور مو ودان',o:['کور مو ودان','مېلمستیا','راشئ','مننه'],a:0},
@@ -2152,7 +2152,7 @@ const PS_Z8=[
 {t:'fill',q:'Complete: "now I understand!"',s:'اوس ___',o:['پوهېږم','نه پوهېږم','وایم','ووایه'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['بیا ووایه','say again'],['څنګه وایې','how do you say?'],['په پښتو کې','in Pashto'],['لږ پښتو زده لرم','I know a little Pashto']]},
 {t:'mc',q:'These lifelines keep you…',o:['in the conversation','silent','confused','asleep'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'بیا ووایه',o:['بیا ووایه','ورو ورو ووایه','پوهېږم','نه پوهېږم'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'بیا ووایه',o:['بیا ووایه','ورو ورو ووایه','پوهېږم','نه پوهېږم'],a:0},{t:'mc',q:'Review — which means "week"?',o:['اونۍ','ډېر ښه','راشئ','کوربه'],a:0}]},
 {id:'ps_learner_5',title:'Course checkpoint',step:'checkpoint',meta:'کور مو ودان — you made it!',vocab:[],ex:[
 {t:'mc',q:'Ask someone to slow down:',o:['ورو ورو ووایه','بیا ووایه','راشئ','کېنه'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'څنګه وایې',o:['څنګه وایې','بیا ووایه','پوهېږم','په پښتو کې'],a:0},
@@ -2195,7 +2195,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: "cheap but good"',s:'ارزان ___ ښه',o:['خو','او','یا','که'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['او','and'],['یا','or'],['نو','so / then'],['که','if']]},
 {t:'mc',q:'خو signals a…',o:['contrast','reason','choice','time'],a:0},
-{t:'li',q:'Listen — which word?',say:'ځکه چې',o:['ځکه چې','که','خو','نو'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ځکه چې',o:['ځکه چې','که','خو','نو'],a:0},{t:'mc',q:'Review — which means "Friday"?',o:['جمعه','څنګه وایې','بیا ووایه','ډېر ښه'],a:0}]},
 {id:'ps_conn_5',title:'Checkpoint',step:'checkpoint',meta:'Connectors mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "but"?',o:['خو','که','یا','او'],a:0},
 {t:'li',q:'Listen — which word?',say:'که',o:['که','خو','یا','نو'],a:0},
@@ -2237,7 +2237,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: "I hear the rain"',s:'زه باران ___',o:['اورم','وینم','هېروم','خورم'],a:0},
 {t:'match',q:'Match verb and meaning',pairs:[['هېروم','I forget'],['زده کوم','I learn'],['وینم','I see'],['فکر کوم','I think']]},
 {t:'mc',q:'زده کوم vs زده لرم: learning vs…',o:['knowing (having learned)','forgetting','hearing','teaching'],a:0},
-{t:'li',q:'Listen — which verb?',say:'وینم',o:['وینم','اورم','هېروم','زده کوم'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'وینم',o:['وینم','اورم','هېروم','زده کوم'],a:0},{t:'mc',q:'Review — which means "all"?',o:['ټول','نو','او','یا'],a:0}]},
 {id:'ps_think_5',title:'Checkpoint',step:'checkpoint',meta:'Mind-verbs mastered?',vocab:[],ex:[
 {t:'mc',q:'"in my opinion" =',o:['زما په فکر','فکر کوم','زما نوم','په پښتو کې'],a:0},
 {t:'li',q:'Listen — which verb?',say:'زده کوم',o:['زده کوم','فکر کوم','هېروم','اورم'],a:0},
@@ -2279,7 +2279,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: "she is a teacher" (feminine: ښوونکې)',s:'هغه ښوونکې ___',o:['ده','دی','یم','دي'],a:0},
 {t:'match',q:'Match job and meaning',pairs:[['موټروان','driver'],['وظیفه','job'],['زده کوونکی','student'],['بزګر','farmer']]},
 {t:'mc',q:'The -وونکی ending makes…',o:['doer words','places','numbers','colors'],a:0},
-{t:'li',q:'Listen — which word?',say:'وظیفه',o:['وظیفه','دوکان','کار','بزګر'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'وظیفه',o:['وظیفه','دوکان','کار','بزګر'],a:0},{t:'mc',q:'Review — which means "nothing / none"?',o:['هېڅ','هېروم','زده کوم','اورم'],a:0}]},
 {id:'ps_job_5',title:'Checkpoint',step:'checkpoint',meta:'Jobs mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "teacher"?',o:['ښوونکی','بزګر','دوکاندار','موټروان'],a:0},
 {t:'li',q:'Listen — which job?',say:'زده کوونکی',o:['زده کوونکی','ښوونکی','موټروان','بزګر'],a:0},
@@ -2321,7 +2321,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: present اورم ↔ past ما ___',s:'ما ___',o:['واورېدل','وویل','وکړل','زده کړل'],a:0},
 {t:'match',q:'Match present and past',pairs:[['وایم','ما وویل'],['اورم','ما واورېدل'],['کوم','ما وکړل'],['زده کوم','ما زده کړل']]},
 {t:'mc',q:'The و prefix on all these past verbs marks…',o:['completion','future','negation','a question'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ما وویل',o:['ما وویل','تا څه وویل','ما وکړل','ما زده کړل'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ما وویل',o:['ما وویل','تا څه وویل','ما وکړل','ما زده کړل'],a:0},{t:'mc',q:'Review — which means "old (m)"?',o:['زوړ','وظیفه','موټروان','زده کوونکی'],a:0}]},
 {id:'ps_erg2_5',title:'Checkpoint',step:'checkpoint',meta:'The flip, rounded out',vocab:[],ex:[
 {t:'mc',q:'"I said" =',o:['ما وویل','وایم','ما وکړل','ما واورېدل'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'تا څه وویل',o:['تا څه وویل','ما وویل','ما زده کړل','هغې'],a:0},
@@ -2363,7 +2363,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: "twelve months = one year"',s:'دوولس میاشتې = یو ___',o:['کال','ورځ','اونۍ','ژمی'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['کال','year'],['میاشت','month'],['منی','autumn'],['ژمی','winter']]},
 {t:'mc',q:'Snow falls on the peaks in…',o:['ژمي','دوبي','پسرلي','مني'],a:0},
-{t:'li',q:'Listen — which season?',say:'پسرلی',o:['پسرلی','دوبی','ژمی','منی'],a:0}]},
+{t:'li',q:'Listen — which season?',say:'پسرلی',o:['پسرلی','دوبی','ژمی','منی'],a:0},{t:'mc',q:'Review — which means "black"?',o:['تور','هغې','ما وکړل','ما واورېدل'],a:0}]},
 {id:'ps_season_5',title:'Checkpoint',step:'checkpoint',meta:'Seasons mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "year"?',o:['کال','میاشت','ورځ','اونۍ'],a:0},
 {t:'li',q:'Listen — which season?',say:'ژمی',o:['ژمی','منی','دوبی','پسرلی'],a:0},
@@ -2405,7 +2405,7 @@ const PS_Z9=[
 {t:'fill',q:'Complete: "then I drank tea" (the flip!)',s:'بیا ___ چای وڅښه',o:['ما','زه','تا','هغه'],a:0},
 {t:'match',q:'Match connector and meaning',pairs:[['یوه ورځ','one day'],['لومړی','first'],['په پای کې','finally'],['کیسه','story']]},
 {t:'mc',q:'Pashtun evenings traditionally run on…',o:['stories & poems','television','silence','homework'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'په پای کې',o:['په پای کې','یوه ورځ','وروسته','بیا'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'په پای کې',o:['په پای کې','یوه ورځ','وروسته','بیا'],a:0},{t:'mc',q:'Review — which means "snow"?',o:['واوره','ژمی','منی','دوبی'],a:0}]},
 {id:'ps_story_5',title:'Zone 9 checkpoint',step:'checkpoint',meta:'You can tell a story!',vocab:[],ex:[
 {t:'mc',q:'Which means "first"?',o:['لومړی','بیا','وروسته','په پای کې'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'یوه ورځ',o:['یوه ورځ','په پای کې','لومړی','کیسه'],a:0},
@@ -2449,7 +2449,7 @@ const PS_Z10=[
 {t:'fill',q:'Ask a friend what they like',s:'ستا څه ___ دي',o:['خوښ','خوښه','ښه','ډېر'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['زما چای خوښ دی','I like tea'],['نه دی خوښ','do not like'],['ډېر خوښ','like a lot'],['خوښه','liked (f)']]},
 {t:'mc',q:'The خوښ pattern makes the LIKED THING the…',o:['subject','object','verb','question'],a:0},
-{t:'li',q:'Listen — which word?',say:'خوښه',o:['خوښه','خوښ','ښه','ښکلې'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'خوښه',o:['خوښه','خوښ','ښه','ښکلې'],a:0},{t:'mc',q:'Review — which means "wind"?',o:['باد','کیسه','یوه ورځ','وروسته'],a:0}]},
 {id:'ps_like_5',title:'Checkpoint',step:'checkpoint',meta:'Likes mastered?',vocab:[],ex:[
 {t:'mc',q:'"I like tea" =',o:['زما چای خوښ دی','زه چای خوښ یم','چای زما دی','خوښ چای'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ستا څه خوښ دي',o:['ستا څه خوښ دي','زما چای خوښ دی','ډېر خوښ','نه دی خوښ'],a:0},
@@ -2491,7 +2491,7 @@ const PS_Z10=[
 {t:'fill',q:'Complete the chain: name → age → family:',s:'نوم، ___، کورنۍ',o:['عمر','کال','کور','ښار'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['ستا عمر څو دی','how old are you?'],['زه شل کلن یم','I am 20 (m)'],['کلنه','years old (f)'],['ماشومان','children']]},
 {t:'mc',q:'کلن/کلنه agree with…',o:['the speaker’s gender','the listener','the number','the year'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ماشومان لرې',o:['ماشومان لرې','ماشومان لرم','عمر څو دی','زوی لرم'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ماشومان لرې',o:['ماشومان لرې','ماشومان لرم','عمر څو دی','زوی لرم'],a:0},{t:'mc',q:'Review — which means "head"?',o:['سر','ډېر خوښ','خوښه','خوښ'],a:0}]},
 {id:'ps_smalltalk_5',title:'Checkpoint',step:'checkpoint',meta:'Small talk mastered?',vocab:[],ex:[
 {t:'mc',q:'Ask someone’s age:',o:['ستا عمر څو دی','ستا نوم څه دی','څو بجې دي','څه غواړې'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'زه شل کلن یم',o:['زه شل کلن یم','ستا عمر څو دی','شل کاله','کلن'],a:0},
@@ -2533,7 +2533,7 @@ const PS_Z10=[
 {t:'fill',q:'Complete: "a red flower"',s:'___ ګل',o:['سور','سره','شین','توره'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ونه','tree'],['ګل','flower'],['سیند','river'],['غر','mountain']]},
 {t:'mc',q:'کلی vs ښار is…',o:['village vs city','house vs room','field vs orchard','road vs river'],a:0},
-{t:'li',q:'Listen — which word?',say:'ونه',o:['ونه','ګل','باغ','غر'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ونه',o:['ونه','ګل','باغ','غر'],a:0},{t:'mc',q:'Review — which means "doctor"?',o:['ډاکټر','ماشومان لرې','کلنه','کلن'],a:0}]},
 {id:'ps_home2_5',title:'Checkpoint',step:'checkpoint',meta:'The valley mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "mountain"?',o:['غر','سیند','کلی','باغ'],a:0},
 {t:'li',q:'Listen — which word?',say:'کلی',o:['کلی','باغ','غر','سیند'],a:0},
@@ -2575,7 +2575,7 @@ const PS_Z10=[
 {t:'fill',q:'Complete: "the bird is in the tree"',s:'مرغه په ونه کې ___',o:['ده','دی','یم','دي'],a:0},
 {t:'match',q:'Match animal and meaning',pairs:[['پیشو','cat'],['مرغه','bird'],['وزه','goat'],['اوښ','camel']]},
 {t:'mc',q:'سپی (m) becomes سپۍ for…',o:['a female dog','a puppy','a big dog','two dogs'],a:0},
-{t:'li',q:'Listen — which animal?',say:'سپی',o:['سپی','پیشو','وزه','آس'],a:0}]},
+{t:'li',q:'Listen — which animal?',say:'سپی',o:['سپی','پیشو','وزه','آس'],a:0},{t:'mc',q:'Review — which means "(you) were"?',o:['وې','ګل','ونه','باغ'],a:0}]},
 {id:'ps_animals_5',title:'Checkpoint',step:'checkpoint',meta:'Animals mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "horse"?',o:['آس','اوښ','وزه','مرغه'],a:0},
 {t:'li',q:'Listen — which animal?',say:'اوښ',o:['اوښ','آس','سپی','پیشو'],a:0},
@@ -2617,7 +2617,7 @@ const PS_Z10=[
 {t:'fill',q:'Complete: "where are my sandals?"',s:'زما څپلۍ ___ دي',o:['چېرې','څه','کله','څوک'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['جامې','clothes'],['خولۍ','cap'],['پګړۍ','turban'],['پرتوګ','trousers']]},
 {t:'mc',q:'The پرتوګ کمیس is loved for being…',o:['comfortable everywhere','expensive','heavy','formal only'],a:0},
-{t:'li',q:'Listen — which word?',say:'څپلۍ',o:['څپلۍ','خولۍ','پګړۍ','کمیس'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'څپلۍ',o:['څپلۍ','خولۍ','پګړۍ','کمیس'],a:0},{t:'mc',q:'Review — which means "(she) was"?',o:['وه','مرغه','پیشو','سپی'],a:0}]},
 {id:'ps_clothes_5',title:'Checkpoint',step:'checkpoint',meta:'Clothes mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "clothes"?',o:['جامې','کمیس','پرتوګ','خولۍ'],a:0},
 {t:'li',q:'Listen — which word?',say:'پرتوګ',o:['پرتوګ','کمیس','جامې','پګړۍ'],a:0},
@@ -2659,7 +2659,7 @@ const PS_Z10=[
 {t:'fill',q:'Complete: "grapes and almonds"',s:'انګور ___ بادام',o:['او','یا','خو','که'],a:0},
 {t:'match',q:'Match fruit and meaning',pairs:[['هندواڼه','watermelon'],['بادام','almond'],['وچه مېوه','dried fruit'],['انګور','grapes']]},
 {t:'mc',q:'Afghan raisins come from…',o:['انګور','انار','مڼه','بادام'],a:0},
-{t:'li',q:'Listen — which fruit?',say:'مڼه',o:['مڼه','انار','بادام','هندواڼه'],a:0}]},
+{t:'li',q:'Listen — which fruit?',say:'مڼه',o:['مڼه','انار','بادام','هندواڼه'],a:0},{t:'mc',q:'Review — which means "(we) were"?',o:['وو','څپلۍ','خولۍ','پګړۍ'],a:0}]},
 {id:'ps_fruit_5',title:'Zone 10 checkpoint',step:'checkpoint',meta:'Fruits mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "pomegranate"?',o:['انار','انګور','مڼه','هندواڼه'],a:0},
 {t:'li',q:'Listen — which fruit?',say:'هندواڼه',o:['هندواڼه','مڼه','انار','انګور'],a:0},
@@ -2703,7 +2703,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete: "I always drink green tea"',s:'زه ___ شین چای څښم',o:['تل','هېڅکله','یو ځل','کله'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['اکثره','often'],['یو ځل','once'],['هېڅکله','never'],['تل','always']]},
 {t:'mc',q:'Rank most → least: تل، کله کله، ___',o:['هېڅکله','اکثره','هره ورځ','یو ځل'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'هره ورځ',o:['هره ورځ','کله کله','هر کال','تل'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'هره ورځ',o:['هره ورځ','کله کله','هر کال','تل'],a:0},{t:'mc',q:'Review — which means "(I) came"?',o:['راغلم','وچه مېوه','بادام','هندواڼه'],a:0},{t:'mc',q:'Review — which means "because"?',o:['ځکه چې','وچه مېوه','بادام','هندواڼه'],a:0}]},
 {id:'ps_freq_5',title:'Checkpoint',step:'checkpoint',meta:'Frequency mastered?',vocab:[],ex:[
 {t:'mc',q:'"sometimes" =',o:['کله کله','تل','هېڅکله','اکثره'],a:0},
 {t:'li',q:'Listen — which word?',say:'هېڅکله',o:['هېڅکله','کله کله','تل','یو ځل'],a:0},
@@ -2713,7 +2713,7 @@ const PS_Z11=[
 {t:'mc',q:'هر agrees like an adjective: هره ورځ but هر ___',o:['کال','ورځ','میاشت','اونۍ'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'کله کله',o:['کله کله','هېڅکله','هره ورځ','تل'],a:0},
 {t:'mc',q:'Review — which means "hungry (m)"?',o:['وږی','وو','ونه','ستړی مه شې'],a:0},
-{t:'mc',q:'Review — which means "key"?',o:['کیلي','آس','سړک','ځکه چې'],a:0}]},
+{t:'mc',q:'Review — which means "key"?',o:['کیلي','آس','سړک','ځکه چې'],a:0},{t:'mc',q:'Review — which means "I did"?',o:['ما وکړل','وچه مېوه','بادام','هندواڼه'],a:0}]},
 
 {id:'ps_school',title:'School & learning',step:'learn',meta:'Book, pen & reading',vocab:[['کتاب','kitaab','book'],['قلم','qalam','pen'],['کاغذ','kaaghaz','paper'],['لولم','lwalam','(I) read'],['لیکم','leekam','(I) write'],['درس','dars','lesson']],ex:[
 {t:'note',tag:'The learner’s kit',q:'کتاب قلم کاغذ',body:'<p><span class="deva">کتاب</span> <b>kitaab</b> book, <span class="deva">قلم</span> <b>qalam</b> pen (with the deep ق!), <span class="deva">کاغذ</span> <b>kaaghaz</b> paper, <span class="deva">درس</span> <b>dars</b> lesson.</p>',eg:[['کتاب','kitaab','book'],['قلم','qalam','pen'],['کاغذ','kaaghaz','paper']]},
@@ -2745,7 +2745,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete: "with a pen" (په … سره)',s:'په قلم ___',o:['سره','کې','ته','نه'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['لولم','I read'],['لیکم','I write'],['درس','lesson'],['کاغذ','paper']]},
 {t:'mc',q:'قلم starts with which letter?',o:['ق','ک','غ','ف'],a:0},
-{t:'li',q:'Listen — which verb?',say:'لیکم',o:['لیکم','لولم','کوم','زده کوم'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'لیکم',o:['لیکم','لولم','کوم','زده کوم'],a:0},{t:'mc',q:'Review — which means "(he) went"?',o:['لاړ','یو ځل','اکثره','هېڅکله'],a:0},{t:'mc',q:'Review — which means "if"?',o:['که','یو ځل','اکثره','هېڅکله'],a:0}]},
 {id:'ps_school_5',title:'Checkpoint',step:'checkpoint',meta:'School mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "book"?',o:['کتاب','قلم','کاغذ','درس'],a:0},
 {t:'li',q:'Listen — which verb?',say:'لولم',o:['لولم','لیکم','وینم','کوم'],a:0},
@@ -2755,7 +2755,7 @@ const PS_Z11=[
 {t:'mc',q:'Which means "lesson"?',o:['درس','کتاب','کاغذ','قلم'],a:0},
 {t:'li',q:'Listen — which word?',say:'قلم',o:['قلم','کتاب','کاغذ','درس'],a:0},
 {t:'mc',q:'Review — which means "thirsty (m)"?',o:['تږی','کشر','نو','مېلمه'],a:0},
-{t:'mc',q:'Review — which means "bed / bedding"?',o:['بستره','دوه','ټکسي','نه لرم'],a:0}]},
+{t:'mc',q:'Review — which means "bed / bedding"?',o:['بستره','دوه','ټکسي','نه لرم'],a:0},{t:'mc',q:'Review — which means "she (past-doer)"?',o:['هغې','یو ځل','اکثره','هېڅکله'],a:0}]},
 
 {id:'ps_taste',title:'Tastes',step:'learn',meta:'Sweet, sour, salty',vocab:[['خوږ','khog','sweet'],['تروش','trush','sour'],['تریخ','treekh','bitter'],['مالګه','maalga','salt'],['مالګین','maalgeen','salty'],['مرچ','murch','chili / pepper']],ex:[
 {t:'note',tag:'Sweet first',q:'خوږ',body:'<p><span class="deva">خوږ</span> <b>khog</b> = sweet — Afghan tea, fruit and talk are all خوږ! (Feminine: <span class="deva">خوږه</span>.) <span class="deva">تروش</span> <b>trush</b> = sour, <span class="deva">تریخ</span> <b>treekh</b> = bitter.</p>',eg:[['خوږ','khog','sweet'],['تروش','trush','sour'],['تریخ','treekh','bitter']]},
@@ -2787,7 +2787,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete: "green tea without sugar is bitter"',s:'شین چای بې بورې ___ دی',o:['تریخ','خوږ','تروش','مالګین'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['مالګه','salt'],['مرچ','chili'],['تریخ','bitter'],['تروش','sour']]},
 {t:'mc',q:'بې (as in بې مرچو) means…',o:['without','with','more','very'],a:0},
-{t:'li',q:'Listen — which word?',say:'مالګه',o:['مالګه','مالګین','مرچ','بوره'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مالګه',o:['مالګه','مالګین','مرچ','بوره'],a:0},{t:'mc',q:'Review — which means "tomorrow … will"?',o:['سبا به','درس','لیکم','لولم'],a:0},{t:'mc',q:'Review — which means "or"?',o:['یا','درس','لیکم','لولم'],a:0}]},
 {id:'ps_taste_5',title:'Checkpoint',step:'checkpoint',meta:'Tastes mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "sweet"?',o:['خوږ','تروش','تریخ','مالګین'],a:0},
 {t:'li',q:'Listen — which taste?',say:'تریخ',o:['تریخ','تروش','خوږ','مرچ'],a:0},
@@ -2797,7 +2797,7 @@ const PS_Z11=[
 {t:'mc',q:'"salty" =',o:['مالګین','مالګه','تروش','خوږ'],a:0},
 {t:'li',q:'Listen — which word?',say:'مرچ',o:['مرچ','مالګه','تروش','خوږ'],a:0},
 {t:'mc',q:'Review — which means "eye"?',o:['سترګه','زر','انګور','په کور کې'],a:0},
-{t:'mc',q:'Review — which means "bathroom"?',o:['تشناب','نوی','لاندې','ځم'],a:0}]},
+{t:'mc',q:'Review — which means "bathroom"?',o:['تشناب','نوی','لاندې','ځم'],a:0},{t:'mc',q:'Review — which means "month"?',o:['میاشت','درس','لیکم','لولم'],a:0}]},
 
 {id:'ps_house',title:'Inside the house',step:'learn',meta:'Door, window, table',vocab:[['دروازه','darwaaza','door'],['کړکۍ','krrkey','window'],['مېز','mez','table'],['چوکۍ','chawkey','chair'],['توشک','toshak','floor mattress'],['بام','baam','roof']],ex:[
 {t:'note',tag:'The room',q:'دروازه · کړکۍ',body:'<p><span class="deva">دروازه</span> <b>darwaaza</b> = door, <span class="deva">کړکۍ</span> <b>krrkey</b> = window (feminine ۍ + retroflex ړ — a very Pashto word!).</p>',eg:[['دروازه','darwaaza','door'],['کړکۍ','krrkey','window']]},
@@ -2829,7 +2829,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete: "under the table"',s:'د مېز ___',o:['لاندې','شاته','مخکې','نږدې'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['توشک','floor mattress'],['بام','roof'],['مېز','table'],['کړکۍ','window']]},
 {t:'mc',q:'پر (as in پر مېز) means…',o:['on','in','to','from'],a:0},
-{t:'li',q:'Listen — which word?',say:'مېز',o:['مېز','بام','توشک','چوکۍ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'مېز',o:['مېز','بام','توشک','چوکۍ'],a:0},{t:'mc',q:'Review — which means "will not"?',o:['به نه','مرچ','مالګین','مالګه'],a:0},{t:'mc',q:'Review — which means "so / then"?',o:['نو','مرچ','مالګین','مالګه'],a:0}]},
 {id:'ps_house_5',title:'Checkpoint',step:'checkpoint',meta:'The room mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "door"?',o:['دروازه','کړکۍ','مېز','توشک'],a:0},
 {t:'li',q:'Listen — which word?',say:'توشک',o:['توشک','مېز','چوکۍ','بام'],a:0},
@@ -2839,7 +2839,7 @@ const PS_Z11=[
 {t:'mc',q:'The Afghan sitting room seats guests on…',o:['توشکونه','چوکۍ ګانې','مېزونه','بامونه'],a:0},
 {t:'li',q:'Listen — which word?',say:'کړکۍ',o:['کړکۍ','چوکۍ','دروازه','مېز'],a:0},
 {t:'mc',q:'Review — which means "hand"?',o:['لاس','خورم','خپه','تل'],a:0},
-{t:'mc',q:'Review — which means "a free room"?',o:['خالي خونه','مه','لاړ','تلیفون'],a:0}]},
+{t:'mc',q:'Review — which means "a free room"?',o:['خالي خونه','مه','لاړ','تلیفون'],a:0},{t:'mc',q:'Review — which means "spring"?',o:['پسرلی','مرچ','مالګین','مالګه'],a:0}]},
 
 {id:'ps_glue',title:'Conversation glue',step:'learn',meta:'OK, really?, of course',vocab:[['سمه ده','sama da','OK / alright'],['رښتیا','rixtyaa','really / truly'],['البته','albatta','of course'],['شاید','shaayad','maybe'],['یعنې','ya’ne','I mean / that is'],['ضرور','zarur','definitely / surely']],ex:[
 {t:'note',tag:'The agreement word',q:'سمه ده',body:'<p><span class="deva">سمه ده</span> <b>sama da</b> = "it is right" = OK / alright — you will say and hear it constantly. <span class="deva">رښتیا؟</span> <b>rixtyaa</b> = "really?" — the perfect listener’s reply.</p>',eg:[['سمه ده','sama da','OK / alright'],['رښتیا','rixtyaa','really?']]},
@@ -2871,7 +2871,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete a rephrase: "___, tomorrow morning"',s:'___، سبا سهار',o:['یعنې','رښتیا','شاید','بس'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ضرور','definitely'],['یعنې','I mean'],['شاید','maybe'],['رښتیا','really']]},
 {t:'mc',q:'Which word keeps a plan loose?',o:['شاید','ضرور','البته','سمه ده'],a:0},
-{t:'li',q:'Listen — which word?',say:'البته',o:['البته','ضرور','شاید','یعنې'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'البته',o:['البته','ضرور','شاید','یعنې'],a:0},{t:'mc',q:'Review — which means "eat! (command)"?',o:['وخوره','بام','توشک','چوکۍ'],a:0},{t:'mc',q:'Review — which means "(I) think"?',o:['فکر کوم','بام','توشک','چوکۍ'],a:0}]},
 {id:'ps_glue_5',title:'Checkpoint',step:'checkpoint',meta:'Glue mastered?',vocab:[],ex:[
 {t:'mc',q:'"OK / alright" =',o:['سمه ده','رښتیا','شاید','یعنې'],a:0},
 {t:'li',q:'Listen — which word?',say:'رښتیا',o:['رښتیا','البته','شاید','ضرور'],a:0},
@@ -2881,7 +2881,7 @@ const PS_Z11=[
 {t:'mc',q:'"I mean / that is" =',o:['یعنې','شاید','البته','رښتیا'],a:0},
 {t:'li',q:'Listen — which word?',say:'شاید',o:['شاید','ضرور','البته','یعنې'],a:0},
 {t:'mc',q:'Review — which means "stomach"?',o:['خېټه','زما نوم','دي','رښتیا'],a:0},
-{t:'mc',q:'Review — which means "telephone"?',o:['تلیفون','په مخه دې ښه','لاړم','هغه به وي'],a:0}]},
+{t:'mc',q:'Review — which means "telephone"?',o:['تلیفون','په مخه دې ښه','لاړم','هغه به وي'],a:0},{t:'mc',q:'Review — which means "summer"?',o:['دوبی','بام','توشک','چوکۍ'],a:0}]},
 
 {id:'ps_pace',title:'Now, soon, late',step:'learn',meta:'Timing words',vocab:[['اوس','os','now'],['ژر','zhar','soon / quickly'],['ناوخته','naawakhta','late'],['وخت','wakht','time'],['په وخت','pa wakht','on time'],['لومړی ځل','lumrray dzal','the first time']],ex:[
 {t:'note',tag:'Now & soon',q:'اوس · ژر',body:'<p><span class="deva">اوس</span> <b>os</b> = now: <span class="deva">اوس زه پوهېږم!</span> "NOW I understand!" <span class="deva">ژر</span> <b>zhar</b> = soon/quickly: <span class="deva">ژر راشه!</span> = "come quickly!"</p>',eg:[['اوس','os','now'],['ژر','zhar','soon / quickly']]},
@@ -2913,7 +2913,7 @@ const PS_Z11=[
 {t:'fill',q:'Complete: "sorry, I am late"',s:'بخښنه غواړم، زه ___ یم',o:['ناوخته','په وخت','ژر','اوس'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['وخت','time'],['لومړی ځل','first time'],['ژر','quickly'],['اوس','now']]},
 {t:'mc',q:'ژر vs ورو is…',o:['fast vs slow','now vs later','early vs late','big vs small'],a:0},
-{t:'li',q:'Listen — which word?',say:'ناوخته',o:['ناوخته','وخت','په وخت','ژر'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'ناوخته',o:['ناوخته','وخت','په وخت','ژر'],a:0},{t:'mc',q:'Review — which means "road"?',o:['سړک','ضرور','یعنې','شاید'],a:0},{t:'mc',q:'Review — which means "(I) see"?',o:['وینم','ضرور','یعنې','شاید'],a:0}]},
 {id:'ps_pace_5',title:'Zone 11 checkpoint',step:'checkpoint',meta:'Timing mastered?',vocab:[],ex:[
 {t:'mc',q:'"now" =',o:['اوس','ژر','وخت','بیا'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'په وخت',o:['په وخت','ناوخته','وخت','لومړی ځل'],a:0},
@@ -2923,7 +2923,7 @@ const PS_Z11=[
 {t:'mc',q:'"NOW I understand!" =',o:['اوس زه پوهېږم','ژر زه پوهېږم','زه ناوخته پوهېږم','وخت پوهېږم'],a:0},
 {t:'li',q:'Listen — which word?',say:'ژر',o:['ژر','اوس','ورو','وخت'],a:0},
 {t:'mc',q:'Review — which means "pain"?',o:['درد','یعنې','مېز','یوولس'],a:0},
-{t:'mc',q:'Review — which means "number"?',o:['شمېره','نه','درد','خوښه'],a:0}]},
+{t:'mc',q:'Review — which means "number"?',o:['شمېره','نه','درد','خوښه'],a:0},{t:'mc',q:'Review — which means "autumn"?',o:['منی','ضرور','یعنې','شاید'],a:0}]},
 ];
 const PS_Z12=[
 /* ===================== ZONE 12 · MAKE IT HOME ===================== */
@@ -2957,7 +2957,7 @@ const PS_Z12=[
 {t:'fill',q:'Complete: "a new house? congratulations!"',s:'نوی کور؟ ___',o:['مبارک شه','ښه سفر','ناوخته','رښتیا'],a:0},
 {t:'match',q:'Match moment and phrase',pairs:[['arriving guest','په خیر راغلې'],['departing traveler','ښه سفر'],['happy news','مبارک شه'],['warm thanks','ژوندی اوسې']]},
 {t:'mc',q:'These blessings show Pashto culture prizes…',o:['warm words at every threshold','silence','brevity','formality only'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ښه سفر',o:['ښه سفر','مبارک شه','خیر','ژوندی اوسې'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ښه سفر',o:['ښه سفر','مبارک شه','خیر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "right"?',o:['ښي','لومړی ځل','په وخت','وخت'],a:0},{t:'mc',q:'Review — which means "(I) forget"?',o:['هېروم','لومړی ځل','په وخت','وخت'],a:0},{t:'mc',q:'Review — which means "age"?',o:['عمر','لومړی ځل','په وخت','وخت'],a:0},{t:'mc',q:'Review — which means "dog"?',o:['سپی','لومړی ځل','په وخت','وخت'],a:0}]},
 {id:'ps_wish_5',title:'Checkpoint',step:'checkpoint',meta:'Blessings mastered?',vocab:[],ex:[
 {t:'mc',q:'"congratulations!" =',o:['مبارک شه','ژوندی اوسې','ښه سفر','خیر'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'په خیر راغلې',o:['په خیر راغلې','ښه سفر','مبارک شه','ژوندی اوسې'],a:0},
@@ -2967,7 +2967,7 @@ const PS_Z12=[
 {t:'mc',q:'Greet an arriving guest with…',o:['په خیر راغلې','ښه سفر','ناوخته','بس'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'ژوندی اوسې',o:['ژوندی اوسې','مبارک شه','ښه سفر','په خیر راغلې'],a:0},
 {t:'mc',q:'Review — which means "(she) went"?',o:['لاړه','څلور','باران','ماشومان لرې'],a:0},
-{t:'mc',q:'Review — which means "internet"?',o:['انټرنېټ','شپږ','بیا ووایه','ماښام'],a:0}]},
+{t:'mc',q:'Review — which means "internet"?',o:['انټرنېټ','شپږ','بیا ووایه','ماښام'],a:0},{t:'mc',q:'Review — which means "winter"?',o:['ژمی','لومړی ځل','په وخت','وخت'],a:0},{t:'mc',q:'Review — which means "river"?',o:['سیند','لومړی ځل','په وخت','وخت'],a:0},{t:'mc',q:'Review — which means "sandals"?',o:['څپلۍ','لومړی ځل','په وخت','وخت'],a:0}]},
 
 {id:'ps_make',title:'Make, wash, clean',step:'learn',meta:'Getting things done',vocab:[['جوړوم','jorrawam','(I) make / fix'],['مينځم','meendzam','(I) wash'],['پاکوم','paakawam','(I) clean'],['جوړ','jorr','made / well / fine'],['ماشین','maasheen','machine'],['ته جوړ یې','ta jorr ye','are you well?']],ex:[
 {t:'note',tag:'The maker verb',q:'جوړوم',body:'<p><span class="deva">جوړوم</span> <b>jorrawam</b> = I make / I fix — one of Pashto’s hardest-working verbs: fix the mottar, make tea, build a house. Its little root <span class="deva">جوړ</span> <b>jorr</b> = "made/whole/fine" — so <span class="deva">ته جوړ یې؟</span> = "are you well?" is a greeting too!</p>',eg:[['جوړوم','jorrawam','I make / fix'],['جوړ','jorr','made / fine'],['ته جوړ یې','ta jorr ye','are you well?']]},
@@ -2999,7 +2999,7 @@ const PS_Z12=[
 {t:'fill',q:'Complete: greet a friend "are you well?"',s:'ته ___ یې؟',o:['جوړ','پاک','نوی','لوی'],a:0},
 {t:'match',q:'Match verb and meaning',pairs:[['مينځم','I wash'],['پاکوم','I clean'],['ماشین','machine'],['جوړوم','I fix']]},
 {t:'mc',q:'جوړ shows up in fixing AND in greeting because it means…',o:['whole / well / made','dirty','fast','old'],a:0},
-{t:'li',q:'Listen — which verb?',say:'مينځم',o:['مينځم','پاکوم','جوړوم','خورم'],a:0}]},
+{t:'li',q:'Listen — which verb?',say:'مينځم',o:['مينځم','پاکوم','جوړوم','خورم'],a:0},{t:'mc',q:'Review — which means "stop!"?',o:['ودرېږه','خیر','ښه سفر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "teacher"?',o:['ښوونکی','خیر','ښه سفر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "years old (m)"?',o:['کلن','خیر','ښه سفر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "bird / hen"?',o:['مرغه','خیر','ښه سفر','ژوندی اوسې'],a:0}]},
 {id:'ps_make_5',title:'Checkpoint',step:'checkpoint',meta:'Doing verbs mastered?',vocab:[],ex:[
 {t:'mc',q:'"(I) wash" =',o:['مينځم','پاکوم','جوړوم','لولم'],a:0},
 {t:'li',q:'Listen — which verb?',say:'جوړوم',o:['جوړوم','پاکوم','مينځم','کوم'],a:0},
@@ -3009,7 +3009,7 @@ const PS_Z12=[
 {t:'mc',q:'ته جوړ یې؟ asks…',o:['are you well?','are you late?','are you hungry?','are you new?'],a:0},
 {t:'li',q:'Listen — which word?',say:'جوړ',o:['جوړ','پاک','ښه','نوی'],a:0},
 {t:'mc',q:'Review — which means "(he) came"?',o:['راغی','نن','لاندې','لیکم'],a:0},
-{t:'mc',q:'Review — which means "message"?',o:['پیغام','درد','زما نوم','افغانۍ'],a:0}]},
+{t:'mc',q:'Review — which means "message"?',o:['پیغام','درد','زما نوم','افغانۍ'],a:0},{t:'mc',q:'Review — which means "then / again"?',o:['بیا','خیر','ښه سفر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "garden / orchard"?',o:['باغ','خیر','ښه سفر','ژوندی اوسې'],a:0},{t:'mc',q:'Review — which means "grapes"?',o:['انګور','خیر','ښه سفر','ژوندی اوسې'],a:0}]},
 
 {id:'ps_friend',title:'Friends & homeland',step:'learn',meta:'ملګری، وطن، سوله',vocab:[['ملګری','malgaray','friend / companion'],['ګاونډی','gaawandday','neighbor'],['خلک','khalk','people'],['وطن','watan','homeland'],['سوله','sola','peace'],['زړه','zrra','heart']],ex:[
 {t:'note',tag:'Companions',q:'ملګری · ګاونډی',body:'<p><span class="deva">ملګری</span> <b>malgaray</b> = friend/companion — the one who walks the road with you. <span class="deva">ګاونډی</span> <b>gaawandday</b> = neighbor, honored in Pashtun culture almost like family. <span class="deva">خلک</span> <b>khalk</b> = people.</p>',eg:[['ملګری','malgaray','friend'],['ګاونډی','gaawandday','neighbor'],['خلک','khalk','people']]},
@@ -3041,7 +3041,7 @@ const PS_Z12=[
 {t:'fill',q:'Complete: "my homeland is beautiful"',s:'زما وطن ___ دی',o:['ښکلی','ښکلې','سوله','لویه'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['سوله','peace'],['زړه','heart'],['خلک','people'],['ګاونډی','neighbor']]},
 {t:'mc',q:'خلک سوله غواړي says the people want…',o:['peace','war','money','tea'],a:0},
-{t:'li',q:'Listen — which word?',say:'وطن',o:['وطن','کلی','ښار','سوله'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'وطن',o:['وطن','کلی','ښار','سوله'],a:0},{t:'mc',q:'Review — which means "call! (ring)"?',o:['زنګ ووهه','ماشین','جوړ','پاکوم'],a:0},{t:'mc',q:'Review — which means "shopkeeper"?',o:['دوکاندار','ماشین','جوړ','پاکوم'],a:0},{t:'mc',q:'Review — which means "years old (f)"?',o:['کلنه','ماشین','جوړ','پاکوم'],a:0},{t:'mc',q:'Review — which means "shirt / kamis"?',o:['کمیس','ماشین','جوړ','پاکوم'],a:0}]},
 {id:'ps_friend_5',title:'Checkpoint',step:'checkpoint',meta:'Beloved words mastered?',vocab:[],ex:[
 {t:'mc',q:'Which means "friend"?',o:['ملګری','ګاونډی','خلک','زړه'],a:0},
 {t:'li',q:'Listen — which word?',say:'سوله',o:['سوله','وطن','زړه','خلک'],a:0},
@@ -3051,7 +3051,7 @@ const PS_Z12=[
 {t:'mc',q:'"from the heart" =',o:['له زړه','په زړه','زړه ته','زړه کې'],a:0},
 {t:'li',q:'Listen — which word?',say:'زړه',o:['زړه','سوله','خلک','وطن'],a:0},
 {t:'mc',q:'Review — which means "(she) came"?',o:['راغله','توشک','منی','خو'],a:0},
-{t:'mc',q:'Review — which means "wifi"?',o:['واي فای','که','ما ډوډۍ وخوړه','کتاب'],a:0}]},
+{t:'mc',q:'Review — which means "wifi"?',o:['واي فای','که','ما ډوډۍ وخوړه','کتاب'],a:0},{t:'mc',q:'Review — which means "after / later"?',o:['وروسته','ماشین','جوړ','پاکوم'],a:0},{t:'mc',q:'Review — which means "flower"?',o:['ګل','ماشین','جوړ','پاکوم'],a:0},{t:'mc',q:'Review — which means "watermelon"?',o:['هندواڼه','ماشین','جوړ','پاکوم'],a:0}]},
 
 {id:'ps_art',title:'Attan, songs & poems',step:'learn',meta:'The joyful arts',vocab:[['اتڼ','atann','attan (national dance)'],['سندره','sandara','song'],['شعر','sher','poem / poetry'],['موسیقي','museeqee','music'],['رباب','rabaab','rubab (lute)'],['لنډۍ','landdey','landay (folk couplet)']],ex:[
 {t:'note',tag:'The circle dance',q:'اتڼ',body:'<p><span class="deva">اتڼ</span> <b>atann</b> — the attan! Dancers circle faster and faster to drum-beat; it is the national dance, danced at weddings and celebrations. (Spot the retroflex ڼ!)</p>',eg:[['اتڼ','atann','the attan dance'],['موسیقي','museeqee','music']]},
@@ -3083,7 +3083,7 @@ const PS_Z12=[
 {t:'fill',q:'Complete: "the rubab plays" (غږېږي = sounds)',s:'رباب ___',o:['غږېږي','ورېږي','کېږي','ځي'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['لنډۍ','folk couplet'],['موسیقي','music'],['اتڼ','dance'],['شعر','poem']]},
 {t:'mc',q:'Weddings celebrate with the ___ to drum-beat',o:['اتڼ','لنډۍ','کتاب','مېز'],a:0},
-{t:'li',q:'Listen — which word?',say:'سندره',o:['سندره','شعر','رباب','لنډۍ'],a:0}]},
+{t:'li',q:'Listen — which word?',say:'سندره',o:['سندره','شعر','رباب','لنډۍ'],a:0},{t:'mc',q:'Review — which means "say it again"?',o:['بیا ووایه','سوله','وطن','خلک'],a:0},{t:'mc',q:'Review — which means "job / duty"?',o:['وظیفه','سوله','وطن','خلک'],a:0},{t:'mc',q:'Review — which means "do you have children?"?',o:['ماشومان لرې','سوله','وطن','خلک'],a:0},{t:'mc',q:'Review — which means "trousers"?',o:['پرتوګ','سوله','وطن','خلک'],a:0}]},
 {id:'ps_art_5',title:'Checkpoint',step:'checkpoint',meta:'The arts mastered?',vocab:[],ex:[
 {t:'mc',q:'The national dance is the…',o:['اتڼ','رباب','لنډۍ','سندره'],a:0},
 {t:'li',q:'Listen — which word?',say:'لنډۍ',o:['لنډۍ','سندره','شعر','اتڼ'],a:0},
@@ -3093,7 +3093,7 @@ const PS_Z12=[
 {t:'mc',q:'Pashto’s two-line jewel is the…',o:['لنډۍ','سندره','کیسه','شعرونه'],a:0},
 {t:'li',q:'Listen — which word?',say:'رباب',o:['رباب','اتڼ','موسیقي','سندره'],a:0},
 {t:'mc',q:'Review — which means "I ate bread"?',o:['ما ډوډۍ وخوړه','باد','نیمه','مه'],a:0},
-{t:'mc',q:'Review — which means "guest"?',o:['مېلمه','ستړی','څو','نه لرم'],a:0}]},
+{t:'mc',q:'Review — which means "guest"?',o:['مېلمه','ستړی','څو','نه لرم'],a:0},{t:'mc',q:'Review — which means "one day"?',o:['یوه ورځ','سوله','وطن','خلک'],a:0},{t:'mc',q:'Review — which means "horse"?',o:['آس','سوله','وطن','خلک'],a:0},{t:'mc',q:'Review — which means "almond"?',o:['بادام','سوله','وطن','خلک'],a:0}]},
 
 {id:'ps_duration',title:'How long?',step:'learn',meta:'Duration & since',vocab:[['څومره وخت','tsomra wakht','how much time / how long'],['ډېر وخت','dder wakht','a long time'],['لږ وخت','lag wakht','a short time'],['زه دوه کاله دلته یم','za dwa kaala dalta yam','I have been here two years'],['له پرونه','la paruna','since yesterday'],['تر اوسه','tar osa','until now / so far']],ex:[
 {t:'note',tag:'Been here long?',q:'څومره وخت',body:'<p>Ask <span class="deva">څومره وخت</span> <b>tsomra wakht</b> = "how long?" Answer with the time span + یم: <span class="deva">زه دوه کاله دلته یم</span> = "I am here two years" = I have been here two years. Simple present, long meaning!</p>',eg:[['څومره وخت','tsomra wakht','how long?'],['زه دوه کاله دلته یم','za dwa kaala dalta yam','here two years']]},
@@ -3125,7 +3125,7 @@ const PS_Z12=[
 {t:'fill',q:'Complete: "I have been learning for one year"',s:'زه یو کال پښتو ___',o:['زده کوم','زده کړل','لولم','وایم'],a:0},
 {t:'match',q:'Match phrase and meaning',pairs:[['له پرونه','since yesterday'],['تر اوسه','so far'],['دوه کاله','two years'],['لږ وخت','a short time']]},
 {t:'mc',q:'زه دوه کاله دلته یم — how long here?',o:['two years','two months','two weeks','two days'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'ډېر وخت',o:['ډېر وخت','لږ وخت','تر اوسه','څومره وخت'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'ډېر وخت',o:['ډېر وخت','لږ وخت','تر اوسه','څومره وخت'],a:0},{t:'mc',q:'Review — which means "how do you say?"?',o:['څنګه وایې','لنډۍ','رباب','موسیقي'],a:0},{t:'mc',q:'Review — which means "I said"?',o:['ما وویل','لنډۍ','رباب','موسیقي'],a:0},{t:'mc',q:'Review — which means "village"?',o:['کلی','لنډۍ','رباب','موسیقي'],a:0},{t:'mc',q:'Review — which means "turban"?',o:['پګړۍ','لنډۍ','رباب','موسیقي'],a:0}]},
 {id:'ps_duration_5',title:'Checkpoint',step:'checkpoint',meta:'Duration mastered?',vocab:[],ex:[
 {t:'mc',q:'"how long?" =',o:['څومره وخت','کله','چېرې','څو'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'زه دوه کاله دلته یم',o:['زه دوه کاله دلته یم','تر اوسه','ډېر وخت','له پرونه'],a:0},
@@ -3135,7 +3135,7 @@ const PS_Z12=[
 {t:'mc',q:'"since" uses له + time, "until" uses…',o:['تر','په','ته','د'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'له پرونه',o:['له پرونه','تر اوسه','څومره وخت','پرون'],a:0},
 {t:'mc',q:'Review — which means "I drank water"?',o:['ما اوبه وڅښلې','مننه','ژر','انار'],a:0},
-{t:'mc',q:'Review — which means "host"?',o:['کوربه','نوی','بیه','نن'],a:0}]},
+{t:'mc',q:'Review — which means "host"?',o:['کوربه','نوی','بیه','نن'],a:0},{t:'mc',q:'Review — which means "liked / pleasing (f)"?',o:['خوښه','لنډۍ','رباب','موسیقي'],a:0},{t:'mc',q:'Review — which means "camel"?',o:['اوښ','لنډۍ','رباب','موسیقي'],a:0},{t:'mc',q:'Review — which means "dried fruit"?',o:['وچه مېوه','لنډۍ','رباب','موسیقي'],a:0}]},
 
 {id:'ps_capstone',title:'From the heart',step:'learn',meta:'مینه — and your Pashto story',vocab:[['مینه','meena','love'],['مینه لرم','meena laram','(I) love (have love)'],['زه له پښتو سره مینه لرم','za la paxto sara meena laram','I love Pashto'],['له … سره','la … sara','with'],['هره ورځ زده کوم','hara wradz zda kawam','I learn every day'],['دا زما کیسه ده','daa zmaa keesa da','this is my story']],ex:[
 {t:'note',tag:'Love, the Pashto way',q:'مینه لرم',body:'<p><span class="deva">مینه</span> <b>meena</b> = love. To love is to HAVE love — with the sandwich <span class="deva">له … سره</span> ("with"): <span class="deva">زه له پښتو سره مینه لرم</span> = "I hold love with Pashto" = I love Pashto!</p>',eg:[['مینه','meena','love'],['له … سره','la … sara','with'],['زه له پښتو سره مینه لرم','za la paxto sara meena laram','I love Pashto']]},
@@ -3167,7 +3167,7 @@ const PS_Z12=[
 {t:'fill',q:'The flip! "I learned Pashto" = ما پښتو ___',s:'ما پښتو ___',o:['زده کړل','زده کوم','زده لرم','هېروم'],a:0},
 {t:'match',q:'The grand tour — match!',pairs:[['ستړی مه شې','may you not be tired'],['مېلمستیا','hospitality'],['اتڼ','the dance'],['سوله','peace'],['مینه','love']]},
 {t:'mc',q:'"now I understand!" =',o:['اوس پوهېږم','نه پوهېږم','ورو ورو','بیا ووایه'],a:0},
-{t:'li',q:'Listen — which phrase?',say:'دا زما کیسه ده',o:['دا زما کیسه ده','زه له پښتو سره مینه لرم','هره ورځ زده کوم','کور مو ودان'],a:0}]},
+{t:'li',q:'Listen — which phrase?',say:'دا زما کیسه ده',o:['دا زما کیسه ده','زه له پښتو سره مینه لرم','هره ورځ زده کوم','کور مو ودان'],a:0},{t:'mc',q:'Review — which means "but"?',o:['خو','تر اوسه','له پرونه','لږ وخت'],a:0},{t:'mc',q:'Review — which means "I heard"?',o:['ما واورېدل','تر اوسه','له پرونه','لږ وخت'],a:0},{t:'mc',q:'Review — which means "mountain"?',o:['غر','تر اوسه','له پرونه','لږ وخت'],a:0},{t:'mc',q:'Review — which means "cap / hat"?',o:['خولۍ','تر اوسه','له پرونه','لږ وخت'],a:0}]},
 {id:'ps_capstone_5',title:'Course checkpoint',step:'checkpoint',meta:'کور مو ودان — twelve zones!',vocab:[],ex:[
 {t:'mc',q:'"I love Pashto" =',o:['زه له پښتو سره مینه لرم','زما پښتو ده','زه پښتو وایم','پښتو زده'],a:0},
 {t:'li',q:'Listen — which phrase?',say:'زه له پښتو سره مینه لرم',o:['زه له پښتو سره مینه لرم','مینه لرم','دا زما کیسه ده','ژوندی اوسې'],a:0},
@@ -3177,7 +3177,7 @@ const PS_Z12=[
 {t:'mc',q:'Twelve zones done! Your parting blessing:',o:['کور مو ودان — ژوندی اوسئ!','بس','هېڅ','ناوخته'],a:0},
 {t:'li',q:'Listen — which word?',say:'مینه',o:['مینه','زړه','سوله','کیسه'],a:0},
 {t:'mc',q:'Review — which means "I saw"?',o:['ما ولیدل','کوربه','پیغام','جمعه'],a:0},
-{t:'mc',q:'Review — which means "very good / wonderful"?',o:['ډېر ښه','څنګه یې','مېوه','هغه به وي'],a:0}]},
+{t:'mc',q:'Review — which means "very good / wonderful"?',o:['ډېر ښه','څنګه یې','مېوه','هغه به وي'],a:0},{t:'mc',q:'Review — which means "like a lot"?',o:['ډېر خوښ','تر اوسه','له پرونه','لږ وخت'],a:0},{t:'mc',q:'Review — which means "goat"?',o:['وزه','تر اوسه','له پرونه','لږ وخت'],a:0}]},
 ];
 const PS_LESSONS=[].concat(PS_Z1,PS_Z2,PS_Z3,PS_Z4,PS_Z5,PS_Z6,PS_Z7,PS_Z8,PS_Z9,PS_Z10,PS_Z11,PS_Z12);
 
