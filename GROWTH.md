@@ -120,11 +120,11 @@ once). Now runs `devserver.py`. Confirmed `no-store`.
 
 ---
 
-## Tier 1 — Fix the front door
+## Tier 1 — Fix the front door ✅ DONE (July 2026)
 
-Do this before sending anyone. Batches into one Netlify push with Tier 0.
+All four shipped. Kept below as the record of what each one was for.
 
-1. **The home page has no pitch.** A first-time visitor lands directly on the
+1. ✅ **The home page has no pitch.** A first-time visitor lands directly on the
    Nepali lesson path — nothing says what Bhasaly is, that it is free, that
    there are eleven languages, or that the audio is real recordings. The
    `/learn-nepali` pages do this well; the root URL, which is what gets
@@ -132,15 +132,15 @@ Do this before sending anyone. Batches into one Netlify push with Tier 0.
    value-prop line plus the language count, shown only to never-visited
    users (`app_open returning:0`), dismissed on first lesson start. Resist
    turning it into a splash screen — the clean landing is an asset.
-2. **PWA / installability.** No `manifest.webmanifest`, no service worker. A
+2. ✅ **PWA / installability.** No `manifest.webmanifest`, no service worker. A
    daily-habit app that cannot sit on a phone home screen loses most of its
    retention to being forgotten. Gets: home-screen install, offline use of
    the current pack, persistent audio cache, no browser chrome. Biggest
    retention lever available and it is a few hours.
-3. **Browser back is broken.** No routing and no `beforeunload` guard, so a
+3. ✅ **Browser back is broken.** No routing and no `beforeunload` guard, so a
    back-press or mobile edge-swipe mid-lesson leaves the site and drops the
    session queue. Frequent accident on phones. Fixed by the routing in 3.3.
-4. **Defer Supabase.** `index.html` loads 53KB of supabase-js on every
+4. ✅ **Defer Supabase.** `index.html` loads 53KB of supabase-js on every
    anonymous visit for a login most people never click. Load it when the
    auth modal opens: ~20% off page weight and a faster DOMContentLoaded.
 
@@ -274,9 +274,9 @@ when logged in, that the handler exists and parses, and that both partial
 failure paths report honestly. Worth one manual run-through on a throwaway
 account after deploy.
 
-## Tier 5 — Content quality
+## Tier 5 — Content quality ✅ DONE (July 2026)
 
-12. **No native speaker has reviewed any of the eleven courses.** The
+12. ✅ **No native speaker has reviewed any of the eleven courses.** The
     research-based verification in `CLAUDE.md` is rigorous but it is not the
     same thing. Cheapest fix is half-built already: the feedback form works
     and posts to Netlify. Surface it — a one-tap "spotted a mistake?" at the
