@@ -37,7 +37,7 @@
 
   <!-- wordmark: tree mark + Bhasaly, lockup centred on x=600 -->
   <g transform="translate(319.8,155) scale(2.35)">
-    <path fill="#2C5F3A" d="M32 4 L45 22 L39 22 L52 38 L44 38 L56 54 L36 54 L36 60 L28 60 L28 54 L8 54 L20 38 L12 38 L25 22 L19 22 Z"/>
+    <g fill="none" stroke-width="6.4" stroke-linecap="round"><path stroke="#C2362E" d="M12 18H34M43 18H52"/><path stroke="#C67911" d="M12 32H23M32 32H52"/><path stroke="#0F8C74" d="M12 46H29M38 46H52"/></g>
   </g>
   <text x="493.4" y="278" font-family="Fraunces,Georgia,serif" font-weight="600" font-size="120" letter-spacing="-2.4" fill="#1B2430">Bhasaly</text>
   <text x="600" y="352" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-style="italic" font-weight="600" font-size="40" fill="#3D4C5C">Learn Asian languages</text>

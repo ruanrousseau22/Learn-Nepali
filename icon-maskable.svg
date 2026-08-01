@@ -1,10 +1,12 @@
-<!-- Maskable app icon: full-bleed background (Android crops it to whatever
-     shape the launcher uses) with the tree held inside the 80% safe circle,
-     so no launcher mask can clip it. The rounded-corner version is
-     favicon.svg — do not use that one as maskable, its corners get eaten. -->
+<!-- Maskable: full-bleed, mark scaled to sit inside the 80% safe circle so
+     no launcher mask can clip a line end. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#F2EEE3"/>
-  <g transform="translate(32,32) scale(0.62) translate(-32,-32)">
-    <path fill="#2C5F3A" d="M32 8 L44 24 L38.5 24 L50 38 L43 38 L54 52 L35.5 52 L35.5 57 L28.5 57 L28.5 52 L10 52 L21 38 L14 38 L25.5 24 L20 24 Z"/>
+  <rect width="64" height="64" fill="#1B2430"/>
+  <g transform="translate(32,32) scale(0.85) translate(-32,-32)">
+  <g fill="none" stroke-width="6.4" stroke-linecap="round">
+      <path stroke="#E8836A" d="M12 18H34M43 18H52"/>
+      <path stroke="#E7AD5E" d="M12 32H23M32 32H52"/>
+      <path stroke="#5FC6B0" d="M12 46H29M38 46H52"/>
+    </g>
   </g>
 </svg>

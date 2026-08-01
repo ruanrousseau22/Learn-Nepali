@@ -1,3 +1,9 @@
+<!-- Safari pinned tab: flat monochrome silhouette, so rects not strokes. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path d="M32 8 L44 24 L38.5 24 L50 38 L43 38 L54 52 L35.5 52 L35.5 57 L28.5 57 L28.5 52 L10 52 L21 38 L14 38 L25.5 24 L20 24 Z"/>
+  <rect x="8.8" y="14.8" width="28.4" height="6.4" rx="3.2"/>
+  <rect x="39.8" y="14.8" width="15.4" height="6.4" rx="3.2"/>
+  <rect x="8.8" y="28.8" width="17.4" height="6.4" rx="3.2"/>
+  <rect x="28.8" y="28.8" width="26.4" height="6.4" rx="3.2"/>
+  <rect x="8.8" y="42.8" width="23.4" height="6.4" rx="3.2"/>
+  <rect x="34.8" y="42.8" width="20.4" height="6.4" rx="3.2"/>
 </svg>

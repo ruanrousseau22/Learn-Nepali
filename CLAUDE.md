@@ -104,6 +104,19 @@ course data lives in per-language packs under `lang/`.
   proof of domain ownership: never rename, move or regenerate it**, or every
   future ping 403s.
 - `_redirects` — sajilonepali.com → bhasaly.com 301s.
+- **THE LOGO (Aug 2026): three lines of text, in three brand colours.**
+  Replaced the tree. Geometry lives in ONE place —
+  `scratchpad/logo.py`-style generator in the commit; if you change the mark,
+  change every copy together: `favicon.svg`, `favicon-mask.svg` (flat
+  monochrome, rects not strokes), `icon-maskable.svg` (full-bleed, scaled
+  0.85 so no line end leaves the 80% safe circle), `favicon.png` (192),
+  `apple-touch-icon.png` (180), the inline header SVG in `index.html`, the
+  TWO in `gen_landing.py`, `privacy.html`, `terms.html`, and `og-card.svg`.
+  **The header copies use `var(--crimson)/--saffron/--teal` so they follow
+  the theme; the icon tile uses the brighter dark-theme hex on ink.**
+  **Why the gaps and uneven line lengths matter:** the header also holds a
+  mono `☰` menu button, and three even solid bars would read as a second
+  one. Do not "tidy" the segments into full-width bars.
 - `og-image.png` + `og-card.svg` — the 1200×630 social card + editable
   source. Scenery = the app's own default (Nepali) hero art, serialised with
   computed fills; wordmark in real Fraunces; tagline "Learn Asian languages".
@@ -194,7 +207,7 @@ a dropdown in the HEADER right of the logo (`#lang-switch`,
 560px). `switchLang(code)` lazy-loads the pack, saves the outgoing language,
 applies the pack, reloads state/manifest/voices, `applyBranding()` (hero h1
 from `pack.brand`; Intensive tab hidden when `unitsIntensive` is empty) and
-rebuilds views. The header mark is the fixed Bhasaly tree — packs do not
+rebuilds views. The header mark is the fixed Bhasaly mark — packs do not
 brand it. **Storage keys stay `sajilo_*`** (renaming would orphan progress).
 `switchLang` refuses to run while the exercise view is active (deliberate).
 
