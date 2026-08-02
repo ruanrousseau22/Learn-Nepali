@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Monggo</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-eat">The warung</a><a href="#s-shop">At the pasar</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">Courtesy is krama on purpose</p>
   <div class="note">The courtesy set is krama by design — <b>matur nuwun</b> has no casual substitute and everyone says it. <b>ya wis</b> closes anything agreeably; <b>sugeng tindak</b> is the goodbye said to the person leaving.</div>
@@ -195,7 +202,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="de185cdf" aria-label="sugeng tindak — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sugeng tindak</td><td>goodbye (to one leaving)</td><td class="native" lang="jv" dir="auto">sugeng tindak</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Monggo</h2>
   <p class="secd">Java in one word</p>
   <div class="note"><b>monggo</b> is please, go ahead, after you — said with a slight bow as you pass anyone, anywhere. <b>mas</b> and <b>mbak</b> address your own generation kindly.</div>
@@ -207,7 +214,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5536f7fd" aria-label="inggih — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>inggih</td><td>yes (most polite)</td><td class="native" lang="jv" dir="auto">inggih</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>jenengku …</b> — my name is …. When someone asks <b>piye kabare</b> — how are you? — the usual reply is <b>apik</b>, fine. <b>alon-alon</b> asks people to speak more slowly.</div>
@@ -220,14 +227,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="137984e2" aria-label="maneh — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maneh</td><td>again</td><td class="native" lang="jv" dir="auto">maneh</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Welcomes &amp; street calls</p>
   <div class="note"><b>sugeng rawuh</b> greets you at the door; <b>mangga pinarak</b> seats you. Ojek drivers call <i>ojek, mas!</i> from every corner — a smile and a small wave declines them politely.</div>
@@ -237,7 +244,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="b69d86f4" aria-label="sumangga — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sumonggo</td><td>by all means</td><td class="native" lang="jv" dir="auto">sumangga</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Rupiah arrive in thousands</p>
   <div class="note">Everything is <b>ewu</b> — thousands. A warung meal runs limang-to-rong-puluh ewu; keep <b>recehan</b> for the becak. Sellers may switch to Indonesian numbers — they differ!</div>
@@ -253,7 +260,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="982ac083" aria-label="recehan — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>recehan</td><td>small change</td><td class="native" lang="jv" dir="auto">recehan</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Becak, ojek, sepur</p>
   <div class="note">The <b>becak</b> is pedal-powered and slow — agree the price before you climb in. <b>ojek</b> motorbikes run on apps now. The <b>sepur</b> — the train — is the best way across Java, so book ahead.</div>
@@ -264,7 +271,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="b19499c4" aria-label="mandheg kene — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mandheg kene</td><td>stop here</td><td class="native" lang="jv" dir="auto">mandheg kene</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>ana ngendi</b> frame above, then listen for these.</div>
@@ -277,7 +284,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="32d35724" aria-label="kana — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kono</td><td>there</td><td class="native" lang="jv" dir="auto">kana</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>The warung</h2>
   <p class="secd">Where Java eats</p>
   <div class="note">The warung is dinner: <b>sega goreng</b>, Yogya&rsquo;s sweet <b>gudeg</b>, <b>tahu-tempe</b> always. <b>es teh</b> — sweet iced tea — is the default drink; <b>wareg</b> ends the refills.</div>
@@ -293,7 +300,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="cc1b5445" aria-label="wareg — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wareg</td><td>I am full</td><td class="native" lang="jv" dir="auto">wareg</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>At the pasar</h2>
   <p class="secd">The friendly back-and-forth</p>
   <div class="note">Pasar bargaining is a friendly game: <b>larang banget!</b>, then <b>kurangi</b>, then <b>ya wis, tak tuku</b>. Smiling matters more than the number.</div>
@@ -305,7 +312,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="068e398a" aria-label="tak tuku — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tak tuku</td><td>I will take it</td><td class="native" lang="jv" dir="auto">tak tuku</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">The mandi rules</p>
   <div class="note">The mandi is a tub and a scoop — splash yourself, never climb in. <b>kamar</b> plus <b>kunci</b> covers check-in; losmen are the budget guesthouses.</div>
@@ -316,7 +323,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="7bef42e1" aria-label="resik — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>resik</td><td>clean</td><td class="native" lang="jv" dir="auto">resik</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>tulung!</b> — help! — is the word to shout. <b>ati-ati!</b> — careful — is also what everyone calls as you leave; it means go safely, and it is meant.</div>
@@ -330,7 +337,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="cd159f72" aria-label="ati-ati — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ati-ati</td><td>careful · go safely</td><td class="native" lang="jv" dir="auto">ati-ati</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">Warung wifi is common; SIMs need a passport. Before photographing people, catch their eye, lift the camera slightly and say <b>nggih?</b> — the nod decides.</div>
@@ -339,7 +346,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="07286448" aria-label="wifi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>waifai</td><td>wifi</td><td class="native" lang="jv" dir="auto">wifi</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="a0d0cb26" aria-label="pasar ana ngendi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pasar ono ngendi?</td><td>Where is the market?</td><td class="native" lang="jv" dir="auto">pasar ana ngendi?</td></tr>

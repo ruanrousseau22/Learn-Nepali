@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-eat">Sticky rice</a><a href="#s-shop">Shopping</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">Hello, thanks &amp; no problem</p>
   <div class="note"><b>sabaidee</b> works from dawn to midnight. <b>baw pen nyang</b> — no problem — answers thanks, apologies and mishaps alike.</div>
@@ -196,7 +203,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="3bc81692" aria-label="ພົບກັນໃໝ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phop kan mai</td><td>see you again</td><td class="native" lang="lo" dir="auto">ພົບກັນໃໝ່</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">Soft words, soft country</p>
   <div class="note">Requests end in <b>dae</b> and invitations start with <b>sern</b>. Nothing here is urgent — matching the pace is the politest thing a visitor can do.</div>
@@ -208,7 +215,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="18dc4ea1" aria-label="ພໍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pho</td><td>enough</td><td class="native" lang="lo" dir="auto">ພໍ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>khoi seu …</b> — my name is …. <b>huu noi neung</b> — I know a little — is the honest, welcome answer about your Lao.</div>
@@ -221,14 +228,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9345e355" aria-label="ມາຈາກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maa jaak</td><td>(I) come from …</td><td class="native" lang="lo" dir="auto">ມາຈາກ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Greetings &amp; invitations</p>
   <div class="note"><b>pai sai?</b> — where are you off to — and <b>kin khao laew baw?</b> — eaten yet — are greetings, not questions. Answer vaguely, smile, walk on.</div>
@@ -240,7 +247,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="b18c66f4" aria-label="ໂຊກດີ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sok dii</td><td>good luck!</td><td class="native" lang="lo" dir="auto">ໂຊກດີ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Kip come in thousands</p>
   <div class="note">Everything is thousands of kip: water around <b>haa phan</b>, noodle soup <b>meun</b> and up, a guesthouse in <b>saen</b>. The banknotes carry the same numbers, which makes paying easy.</div>
@@ -256,7 +263,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c20e01b1" aria-label="ກີບ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kip</td><td>kip</td><td class="native" lang="lo" dir="auto">ກີບ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Agree the price, enjoy the pace</p>
   <div class="note">Tuk-tuks and songthaews run on agreed prices — settle before you sit. <b>jot yuu nii</b> stops the driver where you need.</div>
@@ -267,7 +274,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="cc5fbee3" aria-label="ຢຸດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yut</td><td>stop!</td><td class="native" lang="lo" dir="auto">ຢຸດ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>yuu sai</b> frame above, then listen for these.</div>
@@ -278,7 +285,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="3f79d3ff" aria-label="ຢູ່ນີ້ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yuu nii</td><td>right here</td><td class="native" lang="lo" dir="auto">ຢູ່ນີ້</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Sticky rice</h2>
   <p class="secd">The national staple</p>
   <div class="note"><b>khao niao</b> comes in a lidded basket: roll a ball with your RIGHT hand, dip, eat — never put rice back. <b>saep!</b> is the compliment every cook wants.</div>
@@ -294,7 +301,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="f13429c4" aria-label="ໝົດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mot</td><td>all gone</td><td class="native" lang="lo" dir="auto">ໝົດ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>Shopping</h2>
   <p class="secd">Gentle bargaining</p>
   <div class="note">Morning markets are the real Laos. <b>phaeng phot</b> opens the negotiation; it stays gentle — a few thousand kip either way, never a battle.</div>
@@ -307,7 +314,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="a23511f0" aria-label="ເງິນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ngen</td><td>money</td><td class="native" lang="lo" dir="auto">ເງິນ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Guesthouse basics</p>
   <div class="note"><b>hong nam</b> is the bathroom — worth locating early. Power cuts happen in the provinces, so keep a torch by the bed.</div>
@@ -317,7 +324,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="83a7ca0a" aria-label="ຫ້ອງນ້ຳ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong nam</td><td>bathroom</td><td class="native" lang="lo" dir="auto">ຫ້ອງນ້ຳ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>suay duay!</b> is the urgent cry for help; <b>suay dae</b> is the calm request. <b>lavang</b> — careful — is what friends will call after you.</div>
@@ -330,7 +337,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="1a40810b" aria-label="ລະວັງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lavang</td><td>be careful!</td><td class="native" lang="lo" dir="auto">ລະວັງ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">Guesthouse wifi is common but slow. SIMs are cheap with a passport. <b>thaai huup dai baw?</b> asks before the camera comes out — always ask in villages.</div>
@@ -339,7 +346,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="50037e72" aria-label="ຖ່າຍຮູບໄດ້ບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thaai huup dai baw</td><td>may I take a photo?</td><td class="native" lang="lo" dir="auto">ຖ່າຍຮູບໄດ້ບໍ່</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="a6f8bf19" aria-label="ຕະຫຼາດຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ta-laat yuu sai?</td><td>Where is the market?</td><td class="native" lang="lo" dir="auto">ຕະຫຼາດຢູ່ໃສ</td></tr>

@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -196,7 +201,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-trek">On the trail</a><a href="#s-eat">Eating</a><a href="#s-guest">Being a guest</a><a href="#s-shop">Shopping</a><a href="#s-stay">At the hotel</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">The ones you use every hour</p>
   <div class="note"><b>namaste</b> with palms together is hello AND goodbye, any time of day. Nepalis rarely say thank you aloud — save <b>dhanyabaad</b> for real favours — for everything else a smile and <b>hunchha</b> is enough.</div>
@@ -210,7 +217,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="87468798" aria-label="धन्यवाद — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dhanyabaad</td><td>thank you (for real favours)</td><td class="native" lang="ne" dir="auto">धन्यवाद</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">Respect lives in the verb — and in hajur</p>
   <div class="note">There is no everyday word for please — politeness rides on the <b>-nus</b> verb ending and on <b>hajur</b>. Called by name? Answer <b>hajur</b>. Strangers are family: <b>daai</b> and <b>didi</b>.</div>
@@ -223,7 +230,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="90151c6a" aria-label="हुँदैन — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hundaina</td><td>no, that will not work</td><td class="native" lang="ne" dir="auto">हुँदैन</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>mero naam … ho</b> — my name is … — needs no verb changes. <b>bhetera khusi laagyo</b> — nice to meet you — is always warmly received.</div>
@@ -236,14 +243,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="19c2cc18" aria-label="फेरि भेटौंला — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pheri bhetaunlaa</td><td>see you again</td><td class="native" lang="ne" dir="auto">फेरि भेटौंला</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Street greetings &amp; replies</p>
   <div class="note">Two greetings double as small talk: <b>kataa jaane?</b> — where are you off to — and <b>khaanaa khaanubhayo?</b> — have you eaten? A vague cheerful answer is the right answer.</div>
@@ -256,7 +263,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="288d761a" aria-label="कुन देशबाट? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kun deshbaata?</td><td>from which country?</td><td class="native" lang="ne" dir="auto">कुन देशबाट?</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Prices come in these</p>
   <div class="note">Bazaar prices run <b>pachaas</b> to <b>paanch saya</b> rupees; hotel nights in <b>hajaar</b>. Tourist-area sellers switch to English numbers — villages will not.</div>
@@ -272,7 +279,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9c66f78e" aria-label="हजार — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hajaar</td><td>1,000</td><td class="native" lang="ne" dir="auto">हजार</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Taxis, buses &amp; mountain roads</p>
   <div class="note">Kathmandu taxis have meters and rarely use them — settle the price first, or try <b>mitarma jaane?</b> Micro-buses go everywhere; call your stop out loud.</div>
@@ -284,7 +291,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="4875be41" aria-label="बिस्तारै जानुस् — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bistaarai jaanus</td><td>please go slowly</td><td class="native" lang="ne" dir="auto">बिस्तारै जानुस्</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>kahaan chha?</b> frame above, then listen for these.</div>
@@ -298,7 +305,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c8b54f92" aria-label="त्यहाँ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tyahaa</td><td>there</td><td class="native" lang="ne" dir="auto">त्यहाँ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trek">
   <h2>On the trail</h2>
   <p class="secd">Walking words</p>
   <div class="note"><b>ukaalo</b> is uphill, <b>oraalo</b> down — the two words that describe every day in the hills. <b>bistaarai bistaarai</b> — slowly, slowly — works as a complete sentence.</div>
@@ -311,7 +318,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="8cc49952" aria-label="मलाई थकाइ लाग्यो — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>malaai thakaai laagyo</td><td>I am tired</td><td class="native" lang="ne" dir="auto">मलाई थकाइ लाग्यो</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating</h2>
   <p class="secd">Dal bhat &amp; tea</p>
   <div class="note"><b>daal bhaat</b> comes with refills — the server returns until you say <b>pugyo</b>. <b>thapnus</b> asks for more, and <b>khaanaa miTho chha</b> makes the kitchen’s day.</div>
@@ -324,7 +331,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="f4c4f877" aria-label="म मासु खान्न — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ma maasu khaanna</td><td>I do not eat meat</td><td class="native" lang="ne" dir="auto">म मासु खान्न</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-guest">
   <h2>Being a guest</h2>
   <p class="secd">In a Nepali home</p>
   <div class="note">Shoes come off at the door. Refusing food takes three warm tries — <b>alikati maatra</b> takes a small portion; <b>pugyo</b> plus a smile ends it kindly.</div>
@@ -335,7 +342,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="641d4982" aria-label="म जान्छु है — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ma jaanchhu hai</td><td>I will be off now (the polite leave-taking)</td><td class="native" lang="ne" dir="auto">म जान्छु है</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>Shopping</h2>
   <p class="secd">Fixed in shops, soft in markets</p>
   <div class="note">Shops have fixed prices; tourist markets bend a little. <b>chaahidaina</b> — I do not need it — turns away touts kindly. Keep walking as you say it.</div>
@@ -346,7 +353,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="31cf05ef" aria-label="हेर्दै मात्र — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>herdai maatra</td><td>just looking</td><td class="native" lang="ne" dir="auto">हेर्दै मात्र</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>At the hotel</h2>
   <p class="secd">Rooms &amp; hot water</p>
   <div class="note"><b>taato paani</b> — hot water — is the question that matters, in city hotels and trail lodges alike. Ask for a <b>kambal</b> — a blanket — before the night turns cold.</div>
@@ -357,7 +364,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="eddcb368" aria-label="भोलि जान्छु — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bholi jaanchhu</td><td>I leave tomorrow</td><td class="native" lang="ne" dir="auto">भोलि जान्छु</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>maddat garnus</b> — please help — is the sentence to know; say it clearly. Carry your address written down — any hotel will write it in Nepali for you.</div>
@@ -372,7 +379,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="81010178" aria-label="होसियार — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hosiyaar</td><td>careful!</td><td class="native" lang="ne" dir="auto">होसियार</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">Wifi is in most lodges and cafes — ask with the <b>chha?</b> frame. Local SIMs need your passport. Ask before photographing people, always.</div>
@@ -383,7 +390,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="78453d9d" aria-label="फोटो खिच्न मिल्छ? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>photo khichna milchha?</td><td>may I take a photo?</td><td class="native" lang="ne" dir="auto">फोटो खिच्न मिल्छ?</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="21c4d3d2" aria-label="शौचालय कहाँ छ? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shauchalaya kahaan chha?</td><td>Where is the bathroom?</td><td class="native" lang="ne" dir="auto">शौचालय कहाँ छ?</td></tr>

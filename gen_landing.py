@@ -544,6 +544,11 @@ background:var(--card);cursor:pointer;padding:0}}
 .pl svg{{width:14px;height:14px;fill:var(--saffron);stroke:none}}
 .pl svg .w{{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}}
 .pl:hover{{border-color:var(--saffron)}}
+.jump{{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}}
+.jump a{{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}}
+.jump a:hover{{border-color:var(--saffron);color:var(--saffron)}}
+.block{{scroll-margin-top:72px}}
 .print-btn{{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}}
@@ -757,10 +762,10 @@ def phrases_page(d, others, palette_css, ne_band):
         # s['note'] is authored HTML (<b>…</b>) — emitted raw, exactly as the app renders it
         note = '<div class="note">%s</div>' % s['note'] if s['note'] else ''
         parts.append(
-            '<section class="block">\n  <h2>%s</h2>\n  <p class="secd">%s</p>\n  %s'
-            '\n  <table>%s</table>\n</section>' % (esc(s['t']), esc(s['d']), note, rows))
+            '<section class="block" id="s-%s">\n  <h2>%s</h2>\n  <p class="secd">%s</p>\n  %s'
+            '\n  <table>%s</table>\n</section>' % (esc(s['id']), esc(s['t']), esc(s['d']), note, rows))
 
-    for f in t.get('frames', []):
+    for fi, f in enumerate(t.get('frames', [])):
         rows = "\n".join(
             '<tr><td class="rom">%s%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
             % (play_btn(i[0] + f['s']),
@@ -768,8 +773,9 @@ def phrases_page(d, others, palette_css, ne_band):
                esc(f['en'].replace('___', i[2])),
                dir_attr, esc(i[0] + f['s'])) for i in f['items'])
         parts.append(
-            '<section class="block frame">\n  <h2>%s</h2>\n  <p class="fs">%s</p>'
-            '\n  <table>%s</table>\n</section>' % (esc(f['t']), esc(f['en']), rows))
+            '<section class="block frame"%s>\n  <h2>%s</h2>\n  <p class="fs">%s</p>'
+            '\n  <table>%s</table>\n</section>'
+            % (' id="s-frames"' if fi == 0 else '', esc(f['t']), esc(f['en']), rows))
 
     faq = [
         ("How do you say hello in %s?" % name,
@@ -788,6 +794,11 @@ def phrases_page(d, others, palette_css, ne_band):
                      '<details class="faq"><summary>%s</summary><p>%s</p></details>'
                      % (esc(q), esc(a)) for q, a in faq))
 
+    jump = ['<a href="#s-%s">%s</a>' % (esc(s['id']), esc(s['t'])) for s in t['sections']]
+    if t.get('frames'):
+        jump.append('<a href="#s-frames">Sentence builders</a>')
+    nav = ('<nav class="jump no-print" aria-label="Sections">%s</nav>' % ''.join(jump))
+
     return sub_shell(
         d, others, palette_css, ne_band,
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
@@ -798,7 +809,7 @@ def phrases_page(d, others, palette_css, ne_band):
                   "Romanized first so you can say them today. Every phrase is recorded — "
                   "tap the speaker to hear it."),
         cta="Hear these phrases &rarr;", printlabel="Print this phrasebook",
-        body="\n\n".join(parts),
+        body=nav + "\n\n" + "\n\n".join(parts),
         jsonld=sub_jsonld(name, url, "%s phrases" % name, slug, faq))
 
 

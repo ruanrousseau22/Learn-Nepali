@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers, money &amp; time</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-eat">Eating &amp; drinking</a><a href="#s-guest">Being a guest</a><a href="#s-shop">Shopping &amp; bargaining</a><a href="#s-stay">At the hotel</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Conversation</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">The handful you will use every day</p>
   <div class="note">The <b>o</b> in these spellings is a short <b>aw</b>: <b>nomoshkar</b> sounds closer to <b>nawmawshkar</b>. In Kolkata you address people by kinship — <b>dada</b> দাদা to a man, <b>didi</b> দিদি to a woman.</div>
@@ -197,7 +204,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="ead2b24d" aria-label="দিদি — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>didi</td><td>sister — to a woman</td><td class="native" lang="bn" dir="auto">দিদি</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">Bengali has two words for you</p>
   <div class="note">Use <b>apni</b> আপনি with anyone you have just met. Its verbs end in <b>-en</b>: kemon achh<b>en</b>. <b>tumi</b> তুমি is for friends and children.</div>
@@ -211,7 +218,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="e752d62d" aria-label="বলুন — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bolun</td><td>go ahead, tell me</td><td class="native" lang="bn" dir="auto">বলুন</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Names, countries, first contact</p>
   <div class="note">There is no verb <b>to be</b> in the present — <b>amar nam John</b> is literally <b>my name John</b>. <b>amra at jon</b> is there are eight of us; any number fits that gap.</div>
@@ -225,7 +232,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5aa4d779" aria-label="বেড়াতে এসেছি — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>berate eshechhi</td><td>I have come to visit</td><td class="native" lang="bn" dir="auto">বেড়াতে এসেছি</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
@@ -239,7 +246,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="7953298c" aria-label="লাগবে — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lagbe</td><td>I need</td><td class="native" lang="bn" dir="auto">লাগবে</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Half a conversation comes back at you</p>
   <div class="note">These are the words that come back at you. If you miss the answer, <b>abar bolun</b> asks for it again.</div>
@@ -257,7 +264,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="2728fd62" aria-label="বুঝেছেন? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bujhechhen</td><td>do you understand?</td><td class="native" lang="bn" dir="auto">বুঝেছেন?</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers, money &amp; time</h2>
   <p class="secd">Prices, counting and the clock</p>
   <div class="note">Money is <b>taka</b> টাকা. Learn the tens — prices are usually <b>ponchash</b> 50, <b>shottor</b> 70, <b>dersho</b> 150. <b>kal</b> means both tomorrow and yesterday; the verb tells you which.</div>
@@ -291,7 +298,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="842f4676" aria-label="কাল — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kal</td><td>tomorrow / yesterday</td><td class="native" lang="bn" dir="auto">কাল</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Taxis, autos and the metro</p>
   <div class="note">Ask the fare before you get in: <b>bhara koto?</b>. Yellow taxis should run the meter — <b>mitare jaben?</b>. Autos run fixed shared routes, so just name the destination.</div>
@@ -307,7 +314,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="77b506bd" aria-label="কখন ছাড়বে? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kokhon chharbe</td><td>when does it leave?</td><td class="native" lang="bn" dir="auto">কখন ছাড়বে?</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Left, right and how far</p>
   <div class="note">Point and ask <b>X kothay?</b>. If you catch one word of the answer, <b>ban</b> is left and <b>dan</b> is right.</div>
@@ -323,7 +330,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="65c2a588" aria-label="বাথরুম কোথায়? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bathroom kothay</td><td>where is the bathroom?</td><td class="native" lang="bn" dir="auto">বাথরুম কোথায়?</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating &amp; drinking</h2>
   <p class="secd">Tea, rice, fish and the bill</p>
   <div class="note">In West Bengal water is <b>jol</b> জল, not pani, and salt is <b>nun</b> নুন. Tea is offered constantly; <b>ek kap cha din</b> orders one.</div>
@@ -347,7 +354,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="fbc9d8bb" aria-label="বিল দিন — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bil din</td><td>the bill, please</td><td class="native" lang="bn" dir="auto">বিল দিন</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-guest">
   <h2>Being a guest</h2>
   <p class="secd">You will be fed, and then fed again</p>
   <div class="note">You will be offered more food several times. <b>arektu?</b> a little more is the question; <b>pet bhore gechhe</b> I am full is the answer. <b>khub bhalo hoyechhe</b> compliments the cooking.</div>
@@ -361,7 +368,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="8c731499" aria-label="আবার আসবেন — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>abar ashben</td><td>come again</td><td class="native" lang="bn" dir="auto">আবার আসবেন</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>Shopping &amp; bargaining</h2>
   <p class="secd">Asking the price and pushing back</p>
   <div class="note">In a market the first price is an opening offer. <b>khub dami</b> too expensive, then <b>kom korun</b> lower it, is most of the negotiation.</div>
@@ -375,7 +382,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="ea780548" aria-label="ব্যাস — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>byas</td><td>that is all</td><td class="native" lang="bn" dir="auto">ব্যাস</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>At the hotel</h2>
   <p class="secd">Rooms, keys and wi-fi</p>
   <div class="note"><b>achhe?</b> on the end turns any noun into a question: <b>ghor achhe?</b> is a room available, <b>waiphai achhe?</b> is there wi-fi.</div>
@@ -386,7 +393,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="a1664af0" aria-label="গরম জল — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>gorom jol</td><td>hot water</td><td class="native" lang="bn" dir="auto">গরম জল</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">The words to have ready</p>
   <div class="note"><b>shahajjo korun</b> is the one to say clearly if you need help. The rest are for a doctor or a pharmacy.</div>
@@ -400,7 +407,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5a03f172" aria-label="পুলিশ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pulish</td><td>police</td><td class="native" lang="bn" dir="auto">পুলিশ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Conversation</h2>
   <p class="secd">Ask people to slow down, and say what you think</p>
   <div class="note">These are the phrases people respond to most. <b>banglay ki bole?</b> asks what something is called in Bengali.</div>
@@ -416,7 +423,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="fed06572" aria-label="ভালো থাকবেন — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bhalo thakben</td><td>stay well</td><td class="native" lang="bn" dir="auto">ভালো থাকবেন</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="65c2a588" aria-label="বাথরুম কোথায়? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bathroom kothay?</td><td>Where is the bathroom?</td><td class="native" lang="bn" dir="auto">বাথরুম কোথায়?</td></tr>

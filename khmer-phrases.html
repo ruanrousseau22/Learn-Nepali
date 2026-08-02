@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Dollars &amp; riel</a><a href="#s-ride">Tuk-tuks</a><a href="#s-way">Directions</a><a href="#s-eat">Eating</a><a href="#s-shop">At the phsar</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">baat for men, chaah for women</p>
   <div class="note">Polite yes depends on YOUR gender: men say <b>baat</b>, women <b>chaah</b>. <b>chumreap suor</b> comes with palms together — the sompeah; <b>suosdey</b> is the everyday hello.</div>
@@ -195,7 +202,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="83448f64" aria-label="លាហើយ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lea haey</td><td>bye</td><td class="native" lang="km" dir="auto">លាហើយ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">Everyone is family</p>
   <div class="note">Address anyone slightly older as <b>bong</b>; your parents&rsquo; generation are <b>pu</b> and <b>ming</b>. <b>arkun bong</b> sounds warmer than arkun alone; <b>min ei te</b> smooths everything over.</div>
@@ -207,7 +214,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="fdbb19ef" aria-label="មិនអីទេ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>min ei te</td><td>no problem · it is okay</td><td class="native" lang="km" dir="auto">មិនអីទេ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>khnhom chhmuoh …</b> — I am named …. <b>niyeay mdong tiet</b> asks for a repeat without drama.</div>
@@ -218,14 +225,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="0b1c47d2" aria-label="ខ្ញុំមកពីអង់គ្លេស — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khnhom mok pi anglei</td><td>I come from England (swap yours)</td><td class="native" lang="km" dir="auto">ខ្ញុំមកពីអង់គ្លេស</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Greetings that sound like questions</p>
   <div class="note"><b>tov na</b> — where are you going — and <b>nham bay haey rue nov</b> — eaten yet? — are greetings, not interrogations. A vague cheerful answer is the right answer: <b>nham haey</b>.</div>
@@ -236,7 +243,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="0905e0fe" aria-label="សូមចូល — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>som choul</td><td>please come in</td><td class="native" lang="km" dir="auto">សូមចូល</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Dollars &amp; riel</h2>
   <p class="secd">Two currencies at once</p>
   <div class="note">Cambodia runs on both at once: prices in <b>dollars</b>, change in <b>riel</b> at 4,000 to the dollar. <b>muoy poan riel</b> — 1,000r — is a quarter; keep small notes for tuk-tuks.</div>
@@ -253,7 +260,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="e7d44dbe" aria-label="ដូរលុយ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>do luy</td><td>to change money</td><td class="native" lang="km" dir="auto">ដូរលុយ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Tuk-tuks</h2>
   <p class="secd">Agree the price first</p>
   <div class="note">Settle the fare before you climb in — <b>tov phsar ponman?</b> starts it. A few thousand riel crosses most towns; moto-taxis are half the price.</div>
@@ -264,7 +271,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="761eaefd" aria-label="យឺតៗ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yut yut</td><td>slowly!</td><td class="native" lang="km" dir="auto">យឺតៗ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>nov na</b> frame above, then listen for these.</div>
@@ -277,7 +284,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="4b927b77" aria-label="ទីនោះ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ti nuh</td><td>there</td><td class="native" lang="km" dir="auto">ទីនោះ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating</h2>
   <p class="secd">Rice early, coffee iced</p>
   <div class="note"><b>bay</b> is rice and the meal itself — lunch runs early, by eleven. <b>kafe tuk kak</b> — iced coffee — is the national drink, and <b>num pang</b> baguettes are the French inheritance.</div>
@@ -292,7 +299,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="50f915a6" aria-label="គិតលុយ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kit luy</td><td>the bill, please</td><td class="native" lang="km" dir="auto">គិតលុយ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>At the phsar</h2>
   <p class="secd">The friendly game</p>
   <div class="note">Bargaining is a smiling sport at the market. <b>thaok cheang nih mean te?</b> asks for cheaper; <b>ot mean luy te</b> — no money on me — waves off persistent sellers kindly.</div>
@@ -304,7 +311,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c33024d2" aria-label="អត់មានលុយទេ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ot mean luy te</td><td>no money on me</td><td class="native" lang="km" dir="auto">អត់មានលុយទេ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; cool air</p>
   <div class="note">In this heat the question is the fan or the aircon, not hot water. <b>saat</b> — clean — is worth confirming with a look at the room first.</div>
@@ -315,7 +322,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="65112d83" aria-label="ស្អាត — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saat</td><td>clean</td><td class="native" lang="km" dir="auto">ស្អាត</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>chuoy khnhom phang!</b> — please help me — is the sentence to know; say it clearly. <b>hav polih</b> calls the police; carry your guesthouse card for the ride home.</div>
@@ -328,7 +335,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="56c0a8dd" aria-label="ប្រយ័ត្ន — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>prayat</td><td>careful!</td><td class="native" lang="km" dir="auto">ប្រយ័ត្ន</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">Cafe wifi is everywhere and fast. A local SIM needs your passport. Ask <b>thot rup ban te?</b> before photographing people.</div>
@@ -338,7 +345,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="6befd4a8" aria-label="ថតរូបបានទេ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thot rup ban te</td><td>may I take a photo?</td><td class="native" lang="km" dir="auto">ថតរូបបានទេ</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="eb130d68" aria-label="ផ្សារនៅណា — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phsar nov na?</td><td>Where is the market?</td><td class="native" lang="km" dir="auto">ផ្សារនៅណា</td></tr>

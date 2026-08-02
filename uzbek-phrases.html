@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-signs">Reading the signs</a><a href="#s-eat">Eating</a><a href="#s-guest">Being a guest</a><a href="#s-shop">At the bozor</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">The ones you use every hour</p>
   <div class="note"><b>assalomu alaykum</b> earns the warmest reply; <b>salom</b> is the friendly short form. <b>mayli</b> — alright — closes any exchange agreeably, and is the most useful small word in Uzbek.</div>
@@ -195,7 +202,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="e446b6ea" aria-label="kechirasiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kechirasiz</td><td>excuse me · sorry</td><td class="native" lang="uz" dir="auto">kechirasiz</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">aka, opa and the two pleases</p>
   <div class="note">Address any man <b>aka</b>, any woman <b>opa</b> — warmth, not familiarity. <b>marhamat</b> offers — help yourself — and <b>iltimos</b> asks. The reply to <b>katta rahmat</b> is <b>arzimaydi</b>, not at all.</div>
@@ -207,7 +214,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="6c05752f" aria-label="arzimaydi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>arzimaydi</td><td>it is nothing (the reply)</td><td class="native" lang="uz" dir="auto">arzimaydi</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>mening ismim …</b> — my name is …. Expect <b>qayerdansiz?</b> — where are you from — inside the first minute; answer with your country plus -dan.</div>
@@ -220,14 +227,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9354979b" aria-label="bilmayman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bilmayman</td><td>I do not know</td><td class="native" lang="uz" dir="auto">bilmayman</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">The volley &amp; the welcomes</p>
   <div class="note">The greeting is a volley — <b>qalaysiz</b>, how is your health, how is the family, all at once. <b>yaxshi, rahmat</b> answers every one of them.</div>
@@ -239,7 +246,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="69e7749e" aria-label="qayerdansiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>qayerdansiz</td><td>where are you from?</td><td class="native" lang="uz" dir="auto">qayerdansiz</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Soʻm come in thousands</p>
   <div class="note">Prices come in <b>ming</b> — thousands of soʻm. A bowl of osh runs oʻttiz-qirq ming; a taxi across town oʻn-yigirma ming. Bozor sellers may switch to English numbers.</div>
@@ -255,7 +262,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="8980eb16" aria-label="oʻn ming — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>awn ming</td><td>10,000</td><td class="native" lang="uz" dir="auto">oʻn ming</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Any car is a taxi</p>
   <div class="note">Hold out a hand — any car can be a taxi. Agree the narx BEFORE getting in. The Tashkent metro is fast, cheap, and its stations are worth the ride on their own.</div>
@@ -267,7 +274,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="3dd6fd32" aria-label="shu yerda — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shu yerda</td><td>right here</td><td class="native" lang="uz" dir="auto">shu yerda</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>qayerda?</b> frame above, then listen for these.</div>
@@ -280,7 +287,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="93e2a63f" aria-label="u yerda — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>u yerda</td><td>there</td><td class="native" lang="uz" dir="auto">u yerda</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-signs">
   <h2>Reading the signs</h2>
   <p class="secd">Doors still speak Cyrillic</p>
   <div class="note">Signage often stays Cyrillic: КИРИШ <b>kirish</b>, ЧИҚИШ <b>chiqish</b>, ОЧИҚ <b>ochiq</b>, ЁПИҚ <b>yopiq</b>, ДИҚҚАТ <b>diqqat</b>. Five words decode most doors in Tashkent.</div>
@@ -291,7 +298,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="d95494a1" aria-label="diqqat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>diqqat</td><td>attention!</td><td class="native" lang="uz" dir="auto">diqqat</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating</h2>
   <p class="secd">Osh, non and the refills</p>
   <div class="note"><b>osh</b> is THE dish — an invitation to osh is an honour — arrive hungry. <b>non</b> is near-sacred: never upside down, never thrown away. <b>bas, rahmat</b> stops the refills kindly.</div>
@@ -303,7 +310,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5ee0d0ca" aria-label="hisob — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hisob</td><td>the bill</td><td class="native" lang="uz" dir="auto">hisob</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-guest">
   <h2>Being a guest</h2>
   <p class="secd">The dasturxon rules</p>
   <div class="note">The <b>dasturxon</b> fills the moment you sit. Choy is poured a third full — that is respect, not thrift: a brimming cup hints the guest should leave. <b>toʻydim</b> ends seconds politely.</div>
@@ -313,7 +320,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="d05a533d" aria-label="juda yaxshi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>juda yakhshi</td><td>very good · lovely</td><td class="native" lang="uz" dir="auto">juda yaxshi</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>At the bozor</h2>
   <p class="secd">The friendly game</p>
   <div class="note">The first narx is an opening move. <b>arzonroq boʻlsinmi?</b> asks it lower with a smile; <b>kerak emas</b> turns a pushy seller away kindly. Fixed-price shops will say so.</div>
@@ -327,7 +334,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c3a65d05" aria-label="yarim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yarim</td><td>half</td><td class="native" lang="uz" dir="auto">yarim</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; hot water</p>
   <div class="note"><b>boʻsh xona bormi?</b> — is there a free room? — is the first question at the desk. Confirm <b>issiq suv</b> before the season turns cold.</div>
@@ -338,7 +345,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="63e29e7e" aria-label="boʻsh — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bawsh</td><td>free · vacant</td><td class="native" lang="uz" dir="auto">boʻsh</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>yordam bering!</b> — help me — is the sentence to know; say it clearly. <b>tez yordam</b> is the ambulance. Carry your hotel card — any driver can read you home.</div>
@@ -351,7 +358,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="a8d0d266" aria-label="adashdim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>adashdim</td><td>I am lost</td><td class="native" lang="uz" dir="auto">adashdim</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, Wi-Fi &amp; photos</p>
   <div class="note">Hotel Wi-Fi is normal, cafe Wi-Fi patchy. A local <b>sim-karta</b> needs your passport. Ask <b>suratga olsam maylimi</b> before photographing people — especially at the bozor.</div>
@@ -362,7 +369,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="4f233f37" aria-label="suratga olsam maylimi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suratga olsam maylimi?</td><td>may I take a photo?</td><td class="native" lang="uz" dir="auto">suratga olsam maylimi?</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="ece22af9" aria-label="bozor qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bozor qayerda?</td><td>Where is the market?</td><td class="native" lang="uz" dir="auto">bozor qayerda?</td></tr>

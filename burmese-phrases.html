@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-eat">The teashop</a><a href="#s-shop">At the zei</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">Add ba and it turns polite</p>
   <div class="note"><b>mingalaba</b> is the visitor&rsquo;s hello — always right. Burmese goodbyes announce the leaving: <b>thwa daw meh</b>, I am off. The little <b>ba</b> on the end of anything makes it polite.</div>
@@ -195,7 +202,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="59f6eac8" aria-label="သွားတော့မယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thwa daw meh</td><td>goodbye — I am off</td><td class="native" lang="my" dir="auto">သွားတော့မယ်</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">The respectful address</p>
   <div class="note"><b>hsaya</b> — teacher — is the respectful address for any man skilled at his work: drivers, guides, waiters. A woman is <b>hsayama</b>. You will be told <b>hpanaq chuq ba</b> — please take off your shoes — at every doorstep.</div>
@@ -207,7 +214,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="43e3a894" aria-label="ဖိနပ်ချွတ်ပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpanaq chuq ba</td><td>shoes off, please (you will be told)</td><td class="native" lang="my" dir="auto">ဖိနပ်ချွတ်ပါ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note">Give your name plus <b>ba</b> and you have introduced yourself — the gendered I (men <b>kyundaw</b>, women <b>kyama</b>) can wait for the course.</div>
@@ -218,14 +225,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="3144b94d" aria-label="ဖြည်းဖြည်းပြောပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpyei hpyei pyaw ba</td><td>please speak slowly</td><td class="native" lang="my" dir="auto">ဖြည်းဖြည်းပြောပါ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">The eaten-yet greeting</p>
   <div class="note"><b>htamin sa pi bi la?</b> — eaten rice yet? — is a greeting, not lunch planning. <b>sa pi bi</b> answers it. In a teashop <b>ba sa ma leh</b> — what will you eat? — means the waiter is ready to take your order.</div>
@@ -236,7 +243,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="94e209ee" aria-label="ရောက်ပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yauq pi</td><td>we have arrived</td><td class="native" lang="my" dir="auto">ရောက်ပြီ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Kyat come in thousands</p>
   <div class="note">Tea is a few hundred kyat, a meal a few thousand, hotels in <b>thaung</b> and <b>thein</b>. Sellers will tap the number into a calculator and turn it round to you.</div>
@@ -252,7 +259,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="644f4733" aria-label="ကျပ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kyaq</td><td>kyat</td><td class="native" lang="my" dir="auto">ကျပ်</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">No meters here</p>
   <div class="note">Yangon taxis have no meters — agree the fare through the window before you get in. <b>hpyei hpyei</b> asks the driver to slow down.</div>
@@ -262,7 +269,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="8a73349f" aria-label="ဖြည်းဖြည်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpyei hpyei</td><td>slowly!</td><td class="native" lang="my" dir="auto">ဖြည်းဖြည်း</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>beh hma leh</b> frame above, then listen for these.</div>
@@ -274,7 +281,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="a8436aa2" aria-label="တည့်တည့်သွားပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>teh deh thwa ba</td><td>go straight, please</td><td class="native" lang="my" dir="auto">တည့်တည့်သွားပါ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>The teashop</h2>
   <p class="secd">Myanmar’s living room</p>
   <div class="note">The teashop is where Myanmar sits: sweet milky <b>lahpeq yeh</b>, free refills of plain tea, mohinga for breakfast. <b>taw bi</b> stops the topping-up kindly.</div>
@@ -288,7 +295,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9e7a8fe4" aria-label="တော်ပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>taw bi</td><td>that is enough</td><td class="native" lang="my" dir="auto">တော်ပြီ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>At the zei</h2>
   <p class="secd">Bargain with a smile</p>
   <div class="note"><b>shaw pei ba</b> — please lower it — with a smile does the bargaining. Money changers want crisp, unfolded dollars; <b>ma lo bu</b> — no need — waves off persistent sellers.</div>
@@ -301,7 +308,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c0eeec50" aria-label="ပိုက်ဆံလဲတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>paiq hsan leh de</td><td>to change money</td><td class="native" lang="my" dir="auto">ပိုက်ဆံလဲတယ်</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; torches</p>
   <div class="note"><b>a hkan shi la</b> — is there a room? — is the first question at the desk. Power cuts are routine everywhere — a phone torch is standard kit, not an emergency.</div>
@@ -310,7 +317,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="2d3d14f9" aria-label="သော့ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thaw</td><td>the key</td><td class="native" lang="my" dir="auto">သော့</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>ku nyi ba!</b> — help, please — is the sentence to know; say it clearly. <b>ne ma kaung bu</b> tells a pharmacist how you feel; most speak some English.</div>
@@ -323,7 +330,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="e12c6b81" aria-label="သတိထားပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thadi hta ba</td><td>be careful!</td><td class="native" lang="my" dir="auto">သတိထားပါ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">SIM cards are cheap with a passport. Wifi fades outside the cities — download your maps first. Ask before photographing people; a smile and a gesture do it.</div>
@@ -332,7 +339,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="6bce90da" aria-label="ဖုန်းနံပါတ်ဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpoun nan baq beh lauq leh</td><td>what is your number?</td><td class="native" lang="my" dir="auto">ဖုန်းနံပါတ်ဘယ်လောက်လဲ</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="c4680ca4" aria-label="ဈေးဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zei beh hma leh?</td><td>Where is the market?</td><td class="native" lang="my" dir="auto">ဈေးဘယ်မှာလဲ</td></tr>

@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-guest">In the ger</a><a href="#s-numbers">Numbers</a><a href="#s-ride">Getting around</a><a href="#s-way">Directions</a><a href="#s-eat">Eating</a><a href="#s-shop">At the zakh</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">sain baina uu both ways</p>
   <div class="note"><b>sain baina uu</b> greets and asks how you are at once — answer <b>sain</b> and hand it straight back. <b>zugeer</b> smooths over everything; <b>za</b> closes any deal.</div>
@@ -196,7 +203,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="58722a37" aria-label="Баяртай — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bayartai</td><td>goodbye</td><td class="native" lang="mn" dir="auto">Баяртай</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">akh, egch and gentle endings</p>
   <div class="note"><b>akh</b> and <b>egch</b> — older brother, older sister — address strangers warmly. The <b>-aarai</b> endings turn any verb into a gentle request.</div>
@@ -208,7 +215,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="3abfffc4" aria-label="ирээрэй — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ireerei</td><td>please come</td><td class="native" lang="mn" dir="auto">ирээрэй</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>minii ner …</b> — my name is …. <b>udaan kheleerei</b> — please say it slowly — and <b>dakhiad kheleerei</b> — please say it again — rescue any conversation.</div>
@@ -221,14 +228,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5df95fea" aria-label="мэдэхгүй — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>medekhgui</td><td>I do not know</td><td class="native" lang="mn" dir="auto">мэдэхгүй</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">At the ger door</p>
   <div class="note">At a ger you will hear <b>orooroi</b> — come in — before you can knock. <b>tsai uugaarai</b> puts milk tea in your hands; <b>yavaarai</b> sends you off well.</div>
@@ -240,7 +247,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="0cdcfc95" aria-label="яваарай — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yavaarai</td><td>safe travels (the send-off)</td><td class="native" lang="mn" dir="auto">яваарай</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-guest">
   <h2>In the ger</h2>
   <p class="secd">Clockwise, right hand, smile</p>
   <div class="note">Ger rules: walk in without knocking, move clockwise, never step on the threshold, receive everything with your RIGHT hand. The <b>suutei tsai</b> is salty — drink it anyway.</div>
@@ -252,7 +259,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="e071767d" aria-label="сайхан — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saikhan</td><td>lovely · beautiful</td><td class="native" lang="mn" dir="auto">сайхан</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Tugrik in thousands</p>
   <div class="note">Prices run in <b>myanga</b> — thousands of tugrik. A bus fare is under myanga, buuz a few myanga each, and taxis charge by the kilometre.</div>
@@ -266,7 +273,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="f12b846e" aria-label="мөнгө солих — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mongo solikh</td><td>to exchange money</td><td class="native" lang="mn" dir="auto">мөнгө солих</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>Getting around</h2>
   <p class="secd">Any car might stop</p>
   <div class="note">Outside the capital, hold a hand out low — any car is a potential taxi; agree the price first. In UB, <b>zogsooroi</b> stops the driver where you need.</div>
@@ -278,7 +285,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="5e7ee4d7" aria-label="эргээрэй — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ergeerei</td><td>please turn</td><td class="native" lang="mn" dir="auto">эргээрэй</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">The compass does the work</p>
   <div class="note"><b>baruun</b> and <b>zuun</b> are right and left — and also west and east. Mongolians orient the world by compass; the ger door always faces south.</div>
@@ -289,7 +296,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="09feb064" aria-label="хол — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khol</td><td>far</td><td class="native" lang="mn" dir="auto">хол</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating</h2>
   <p class="secd">Meat is the menu</p>
   <div class="note">Buuz dumplings, khuushuur pastries, tsuivan noodles — meat carries the table. <b>amttai!</b> compliments the cook; vegetarians should learn <b>makhgui</b>, without meat.</div>
@@ -303,7 +310,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="57b5150e" aria-label="Надад цай хэрэгтэй — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nadad tsai kheregtei</td><td>I need tea</td><td class="native" lang="mn" dir="auto">Надад цай хэрэгтэй</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>At the zakh</h2>
   <p class="secd">Cash and a wince</p>
   <div class="note">The zakh is the everything-market. <b>khyamd bolokh uu?</b> asks nicely; <b>unetei</b> with a wince does half the work. Cash rules outside UB.</div>
@@ -316,7 +323,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="44915f3d" aria-label="дахиад нэг — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dakhiad neg</td><td>one more</td><td class="native" lang="mn" dir="auto">дахиад нэг</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; radiators</p>
   <div class="note">UB apartments are kept very warm in winter — the heating is city-wide and unadjustable. <b>bi tulkhuuree geesen</b> — I lost my key — is the sentence you hope not to need.</div>
@@ -328,7 +335,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="dd72ed39" aria-label="хүйтэн — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khuiten</td><td>cold</td><td class="native" lang="mn" dir="auto">хүйтэн</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>tuslaarai!</b> — help — is the sentence to know; say it clearly. <b>bolgoomjtoi</b> is what everyone shouts on the winter ice.</div>
@@ -341,7 +348,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="b164440b" aria-label="Болгоомжтой! — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bolgoomjtoi</td><td>careful!</td><td class="native" lang="mn" dir="auto">Болгоомжтой!</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone &amp; photos</p>
   <div class="note">SIMs are cheap with a passport; the steppe has more signal than you expect. <b>zurag avch bolokh uu?</b> asks before the camera — always, in a ger.</div>
@@ -351,7 +358,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="69cde24f" aria-label="Зураг авч болох уу? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zurag avch bolokh uu</td><td>may I take a photo?</td><td class="native" lang="mn" dir="auto">Зураг авч болох уу?</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="1fc43283" aria-label="зах хаана байна вэ? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zakh khaana baina ve?</td><td>Where is the market?</td><td class="native" lang="mn" dir="auto">зах хаана байна вэ?</td></tr>

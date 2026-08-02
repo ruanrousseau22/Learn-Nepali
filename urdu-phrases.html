@@ -139,6 +139,11 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.jump{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 2px}
+.jump a{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 13px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.jump a:hover{border-color:var(--saffron);color:var(--saffron)}
+.block{scroll-margin-top:72px}
 .print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
 border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
 border-radius:999px;cursor:pointer;font-family:inherit}
@@ -181,7 +186,9 @@ border-radius:999px;cursor:pointer;font-family:inherit}
   <button type="button" class="print-btn" onclick="window.print()">Print this phrasebook</button>
 </section>
 
-<section class="block">
+<nav class="jump no-print" aria-label="Sections"><a href="#s-first">First words</a><a href="#s-polite">Being polite</a><a href="#s-meet">Meeting someone</a><a href="#s-patterns">Sentence patterns</a><a href="#s-hear">What you will hear</a><a href="#s-guest">Mehmaan-nawaazi</a><a href="#s-numbers">Numbers</a><a href="#s-ride">The rickshaw</a><a href="#s-way">Directions</a><a href="#s-eat">Eating</a><a href="#s-shop">The bazaar</a><a href="#s-stay">Staying somewhere</a><a href="#s-trouble">Getting help</a><a href="#s-connect">Staying in touch</a><a href="#s-frames">Sentence builders</a></nav>
+
+<section class="block" id="s-first">
   <h2>First words</h2>
   <p class="secd">jee keeps it respectful</p>
   <div class="note">The reply to <b>assalaam alaikum</b> is the same greeting turned around: <b>wa alaikum assalaam</b>. <b>jee</b> before haan or nahin keeps every yes and no respectful; <b>koi baat nahin</b> forgives everything.</div>
@@ -196,7 +203,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="c4b33f01" aria-label="کوئی بات نہیں — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>koi baat nahin</td><td>no problem</td><td class="native" lang="ur" dir="rtl">کوئی بات نہیں</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-polite">
   <h2>Being polite</h2>
   <p class="secd">Strangers are family</p>
   <div class="note"><b>bhai</b> and <b>baaji</b> address your own age, <b>uncle</b> and <b>aunty</b> the generation above. <b>saahab</b> after a name — Khan saahab — shows respect; the polite aap does the rest. Everyday please is simply the English word — <b>baraa-e mehrbaani</b> belongs to signs and announcements.</div>
@@ -208,7 +215,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="39cbf08c" aria-label="برائے مہربانی — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baraa-e mehrbaani</td><td>please (formal / signs)</td><td class="native" lang="ur" dir="rtl">برائے مہربانی</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-meet">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>meraa naam … hai</b> — my name is …. <b>kyaa haal hai</b> follows any hello, and <b>aahista boliye</b> — speak slowly — rescues you when the answers come too fast.</div>
@@ -221,14 +228,14 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="bcc7ec58" aria-label="پھر کہیے — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phir kahiye</td><td>please say it again</td><td class="native" lang="ur" dir="rtl">پھر کہیے</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-patterns">
   <h2>Sentence patterns</h2>
   <p class="secd">Four frames that do the work</p>
   <div class="note">Four frames cover most of what you need. Tap a word, hear the whole sentence.</div>
   <table></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-hear">
   <h2>What you will hear</h2>
   <p class="secd">Welcomes &amp; refills</p>
   <div class="note"><b>tashreef laaiye</b> ushers you in; <b>aur leejiye</b> means your plate is being refilled. <b>suniye</b> — listen — is how anyone catches anyone&rsquo;s attention.</div>
@@ -239,7 +246,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="ae01d58d" aria-label="سنیے — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suniye</td><td>listen · excuse me</td><td class="native" lang="ur" dir="rtl">سنیے</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-guest">
   <h2>Mehmaan-nawaazi</h2>
   <p class="secd">Hospitality is the pride</p>
   <div class="note"><b>mehmaan-nawaazi</b> — hospitality — is Pakistan&rsquo;s pride, and visitors get the full treatment. Chai appears unasked; <b>pet bhar gayaa</b> with <b>bahut mazedaar</b> ends seconds with honour intact.</div>
@@ -249,7 +256,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="d1b75444" aria-label="بس — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bas</td><td>enough (said smiling)</td><td class="native" lang="ur" dir="rtl">بس</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-numbers">
   <h2>Numbers</h2>
   <p class="secd">Rupay by the hundred</p>
   <div class="note">Rickshaw rides run tens-to-hundreds of rupay, meals in hundreds, rooms in <b>hazaar</b>. Learn <b>pachaas</b> and <b>sau</b> and you can follow any quote.</div>
@@ -265,7 +272,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="fa40d551" aria-label="روپے — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>rupay</td><td>rupees</td><td class="native" lang="ur" dir="rtl">روپے</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-ride">
   <h2>The rickshaw</h2>
   <p class="secd">Agree the kiraaya first</p>
   <div class="note">Agree the <b>kiraaya</b> before you sit down — the meters are decorative. <b>yahaan rukiye</b> stops the driver where you need.</div>
@@ -275,7 +282,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="aecd7a9d" aria-label="یہاں رکیے — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yahaan rukiye</td><td>stop here, please</td><td class="native" lang="ur" dir="rtl">یہاں رکیے</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-way">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>kahaan hai</b> frame above, then listen for these.</div>
@@ -287,7 +294,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9c547deb" aria-label="موڑ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>morr</td><td>the turn</td><td class="native" lang="ur" dir="rtl">موڑ</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-eat">
   <h2>Eating</h2>
   <p class="secd">Chai, roti and the heat</p>
   <div class="note"><b>ek chaay laaiye</b> orders anything. The food runs HOT — <b>tez nahin</b>, not spicy, is self-defence said early. Ask for the <b>bil</b> when you are done.</div>
@@ -301,7 +308,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="9ab65218" aria-label="بل — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bill</td><td>the bill</td><td class="native" lang="ur" dir="rtl">بل</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-shop">
   <h2>The bazaar</h2>
   <p class="secd">The dance has steps</p>
   <div class="note"><b>bahut mehngaa!</b> then <b>kam keejiye</b> is the dance; <b>aakhri qeemat</b> — final price — is the seller&rsquo;s last word. Fixed-price shops say so and mean it.</div>
@@ -313,7 +320,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="d6a1f2f9" aria-label="آخری — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>aakhri</td><td>final (price)</td><td class="native" lang="ur" dir="rtl">آخری</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-stay">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; the bucket</p>
   <div class="note">A hotel may be an eatery here too — for sleeping say <i>guest house</i>. <b>garam paani</b> is seasonal; ask before the bucket arrives cold.</div>
@@ -324,7 +331,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="209d5fd1" aria-label="صاف — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saaf</td><td>clean</td><td class="native" lang="ur" dir="rtl">صاف</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-trouble">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>madad keejiye</b> — please help — is the sentence to know; say it clearly. <b>tabiyat theek nahin</b> tells a chemist everything — pharmacies dispense advice as freely as pills.</div>
@@ -336,7 +343,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="6444e1d2" aria-label="طبیعت — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tabiyat</td><td>health · how one feels</td><td class="native" lang="ur" dir="rtl">طبیعت</td></tr></table>
 </section>
 
-<section class="block">
+<section class="block" id="s-connect">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">SIMs need biometric registration — buy at official shops only. Ask <b>tasveer loon?</b> before photographing anyone; around women and homes, accept the no.</div>
@@ -347,7 +354,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <tr><td class="rom"><button type="button" class="pl" data-k="4a51dd06" aria-label="تصویر لوں؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tasveer loon</td><td>may I take a photo?</td><td class="native" lang="ur" dir="rtl">تصویر لوں؟</td></tr></table>
 </section>
 
-<section class="block frame">
+<section class="block frame" id="s-frames">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
   <table><tr><td class="rom"><button type="button" class="pl" data-k="4a7bf8ed" aria-label="غسل خانہ کہاں ہے؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ghusl khaana kahaan hai?</td><td>Where is the bathroom?</td><td class="native" lang="ur" dir="rtl">غسل خانہ کہاں ہے؟</td></tr>
