@@ -370,6 +370,8 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#EFF4FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="keywords" content="{kw}">
@@ -500,6 +502,8 @@ SUB_TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#EFF4FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="keywords" content="{kw}">
@@ -805,6 +809,8 @@ NOTFOUND_TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#EFF4FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
 <title>Page not found | Bhasaly</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

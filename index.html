@@ -9,7 +9,21 @@
 <meta name="keywords" content="Asian language learning app, learn Asian languages, Asian languages app, South Asian languages, Southeast Asian languages, learn Nepali, learn Khmer, learn Burmese, learn Bengali, learn Bangla, learn Sinhala, learn Lao, learn Pashto, learn Mongolian, learn Urdu, learn Uzbek, learn Javanese, learn Basa Jawa, Nepali app, Khmer app, Burmese app, Bengali app, Sinhala app, Lao app, Pashto app, Mongolian app, Urdu app, Uzbek app, Javanese app, Laos language, Myanmar language, West Bengal language, Kolkata language, Sri Lanka language, Afghanistan language, Mongolia language, Nepali for beginners, Khmer for beginners, Burmese for beginners, Bengali for beginners, Sinhala for beginners, Lao for beginners, Pashto for beginners, Mongolian for beginners, Nepali alphabet, Khmer script, Burmese script, Bengali alphabet, Sinhala script, Lao script, Pashto alphabet, Mongolian Cyrillic, Devanagari">
 <link rel="canonical" href="https://bhasaly.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#C2362E">
+<meta name="theme-color" content="#C2362E" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
+<script>
+/* Preload the language pack while the rest of this ~300KB document is still
+   arriving/parsing — boot() reuses the cached bytes via loadLangScript's
+   identical <script src>. Mirrors boot's priority (?lang= beats the saved
+   language beats ne); a wrong guess costs one wasted cached fetch. */
+(function(){try{
+var K={ne:1,km:1,my:1,bn:1,si:1,lo:1,ps:1,mn:1,ur:1,uz:1,jv:1},c=null;
+try{c=new URLSearchParams(location.search).get('lang');}catch(e){}
+if(!K[c]){c=null;try{var g=JSON.parse(localStorage.getItem('sajilo_global')||'null');if(g&&K[g.lang])c=g.lang;}catch(e){}}
+if(!c){try{var o=JSON.parse(localStorage.getItem('sajilo')||'null');if(o&&K[o.lang])c=o.lang;}catch(e){}}
+var l=document.createElement('link');l.rel='preload';l.as='script';l.href='lang/'+(c||'ne')+'.js';document.head.appendChild(l);
+}catch(e){}})();
+</script>
 <!-- favicon.png really is 192x192; it used to ALSO be declared as 32x32,
      which was a lie about the file. Google wants a square that is a multiple
      of 48px for the search-results favicon, so a bogus 32 candidate hurts. -->
