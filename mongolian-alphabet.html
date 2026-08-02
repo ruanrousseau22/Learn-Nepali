@@ -34,6 +34,7 @@
 :root{--sky1:#D5E8F6;--sky2:#F1F7FC;--mtn-far:#A7C0D8;--mtn-mid:#D2AE5E;--mtn-near:#4F9A5F;--snow:#FFFFFF;--orb:#F4C24F;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#131E29;--sky2:#0D1216;--mtn-far:#2C3E54;--mtn-mid:#5A4A28;--mtn-near:#20563A;--snow:#C7D6E6;--orb:#EFE2C0;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -168,7 +169,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <section class="sub-band">
   <div class="sub-band-body">
     <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-mongolian">Learn Mongolian</a> &rsaquo; Alphabet</p>
-    <div class="band-title"><h1>The Mongolian alphabet</h1><span class="nat native" dir="auto">Монгол</span></div>
+    <div class="band-title"><h1>The Mongolian alphabet</h1><span class="nat native" lang="mn" dir="auto">Монгол</span></div>
   </div>
   <svg class="band-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/><path class="far" d="M0 154 Q120 148 240 151 Q360 146 480 150 Q600 146 720 149 Q800 142 880 146 Q960 136 1040 142 Q1120 136 1200 140 L1200 200 L0 200 Z"/><path class="mid" d="M0 200 L0 172 Q300 164 600 170 Q900 176 1200 168 L1200 200 Z"/><g class="snow"><path d="M880 168 Q880 148 906 148 Q932 148 932 168 Z"/><path d="M883 168 L929 168 L929 184 L883 184 Z"/><path d="M903 148 L903 143 L909 143 L909 148 Z"/></g><path fill="var(--crimson)" d="M901 184 L901 172 L911 172 L911 184 Z"/><g class="art-detail" fill="var(--hide)" aria-hidden="true"><g transform="translate(1010,158) scale(0.62)"><path d="M16 30 L16 20 L20 20 L20 30 L17 30 Z M26 30 L26 20 L30 20 L30 30 L27 30 Z M40 30 L40 20 L44 20 L44 30 L41 30 Z M50 30 L50 20 L54 20 L54 30 L51 30 Z M14 20 Q12 10 20 9 L44 9 Q54 9 54 16 L54 20 Z M20 9 Q14 10 11 16 Q9 20 5 22 L2 26 Q1 28 4 28 L7 27 Q11 24 13 20 Q15 14 22 12 Z M54 12 Q60 14 61 22 Q58 20 53 17 Z"/></g></g><g class="near"><path d="M0 186 Q300 168 600 178 Q900 188 1200 178 L1200 200 L0 200 Z"/></g></svg>
 </section>
@@ -184,61 +185,61 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">13 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="dfb664b5" aria-label="Аа — play audio"><span class="native" dir="auto">Аа</span><span class="ar">a</span></button>
-<button type="button" class="atile" data-k="6d189375" aria-label="Оо — play audio"><span class="native" dir="auto">Оо</span><span class="ar">o</span></button>
-<button type="button" class="atile" data-k="41f5a564" aria-label="Уу — play audio"><span class="native" dir="auto">Уу</span><span class="ar">u</span></button>
-<button type="button" class="atile" data-k="d6aa4b68" aria-label="Ээ — play audio"><span class="native" dir="auto">Ээ</span><span class="ar">e</span></button>
-<button type="button" class="atile" data-k="fef276c5" aria-label="Ии — play audio"><span class="native" dir="auto">Ии</span><span class="ar">i</span></button>
-<button type="button" class="atile" data-k="c4931c9a" aria-label="Өө — play audio"><span class="native" dir="auto">Өө</span><span class="ar">oe</span></button>
-<button type="button" class="atile" data-k="687783f2" aria-label="Үү — play audio"><span class="native" dir="auto">Үү</span><span class="ar">ue</span></button>
-<button type="button" class="atile" data-k="5677b524" aria-label="Ыы — play audio"><span class="native" dir="auto">Ыы</span><span class="ar">ii (hard)</span></button>
-<button type="button" class="atile" data-k="93d5945d" aria-label="Йй — play audio"><span class="native" dir="auto">Йй</span><span class="ar">i (short)</span></button>
-<button type="button" class="atile" data-k="ca351e7d" aria-label="Ее — play audio"><span class="native" dir="auto">Ее</span><span class="ar">ye</span></button>
-<button type="button" class="atile" data-k="f629f370" aria-label="Ёё — play audio"><span class="native" dir="auto">Ёё</span><span class="ar">yo</span></button>
-<button type="button" class="atile" data-k="89322018" aria-label="Юю — play audio"><span class="native" dir="auto">Юю</span><span class="ar">yu</span></button>
-<button type="button" class="atile" data-k="5b2550c4" aria-label="Яя — play audio"><span class="native" dir="auto">Яя</span><span class="ar">ya</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="dfb664b5" aria-label="Аа — play audio"><span class="native" lang="mn" dir="auto">Аа</span><span class="ar">a</span></button>
+<button type="button" class="atile" data-k="6d189375" aria-label="Оо — play audio"><span class="native" lang="mn" dir="auto">Оо</span><span class="ar">o</span></button>
+<button type="button" class="atile" data-k="41f5a564" aria-label="Уу — play audio"><span class="native" lang="mn" dir="auto">Уу</span><span class="ar">u</span></button>
+<button type="button" class="atile" data-k="d6aa4b68" aria-label="Ээ — play audio"><span class="native" lang="mn" dir="auto">Ээ</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="fef276c5" aria-label="Ии — play audio"><span class="native" lang="mn" dir="auto">Ии</span><span class="ar">i</span></button>
+<button type="button" class="atile" data-k="c4931c9a" aria-label="Өө — play audio"><span class="native" lang="mn" dir="auto">Өө</span><span class="ar">oe</span></button>
+<button type="button" class="atile" data-k="687783f2" aria-label="Үү — play audio"><span class="native" lang="mn" dir="auto">Үү</span><span class="ar">ue</span></button>
+<button type="button" class="atile" data-k="5677b524" aria-label="Ыы — play audio"><span class="native" lang="mn" dir="auto">Ыы</span><span class="ar">ii (hard)</span></button>
+<button type="button" class="atile" data-k="93d5945d" aria-label="Йй — play audio"><span class="native" lang="mn" dir="auto">Йй</span><span class="ar">i (short)</span></button>
+<button type="button" class="atile" data-k="ca351e7d" aria-label="Ее — play audio"><span class="native" lang="mn" dir="auto">Ее</span><span class="ar">ye</span></button>
+<button type="button" class="atile" data-k="f629f370" aria-label="Ёё — play audio"><span class="native" lang="mn" dir="auto">Ёё</span><span class="ar">yo</span></button>
+<button type="button" class="atile" data-k="89322018" aria-label="Юю — play audio"><span class="native" lang="mn" dir="auto">Юю</span><span class="ar">yu</span></button>
+<button type="button" class="atile" data-k="5b2550c4" aria-label="Яя — play audio"><span class="native" lang="mn" dir="auto">Яя</span><span class="ar">ya</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">22 letters, in the order the course teaches them.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="0041d0bd" aria-label="Бб — play audio"><span class="native" dir="auto">Бб</span><span class="ar">b</span></button>
-<button type="button" class="atile" data-k="8524d525" aria-label="Вв — play audio"><span class="native" dir="auto">Вв</span><span class="ar">v</span></button>
-<button type="button" class="atile" data-k="a47632ad" aria-label="Гг — play audio"><span class="native" dir="auto">Гг</span><span class="ar">g</span></button>
-<button type="button" class="atile" data-k="29593715" aria-label="Дд — play audio"><span class="native" dir="auto">Дд</span><span class="ar">d</span></button>
-<button type="button" class="atile" data-k="c984b6a5" aria-label="Жж — play audio"><span class="native" dir="auto">Жж</span><span class="ar">j</span></button>
-<button type="button" class="atile" data-k="6e67ed6d" aria-label="Зз — play audio"><span class="native" dir="auto">Зз</span><span class="ar">z</span></button>
-<button type="button" class="atile" data-k="a374f795" aria-label="Кк — play audio"><span class="native" dir="auto">Кк</span><span class="ar">k (loan)</span></button>
-<button type="button" class="atile" data-k="b403706d" aria-label="Лл — play audio"><span class="native" dir="auto">Лл</span><span class="ar">l</span></button>
-<button type="button" class="atile" data-k="c8e5c485" aria-label="Мм — play audio"><span class="native" dir="auto">Мм</span><span class="ar">m</span></button>
-<button type="button" class="atile" data-k="d83575dd" aria-label="Нн — play audio"><span class="native" dir="auto">Нн</span><span class="ar">n</span></button>
-<button type="button" class="atile" data-k="7da5794d" aria-label="Пп — play audio"><span class="native" dir="auto">Пп</span><span class="ar">p (loan)</span></button>
-<button type="button" class="atile" data-k="f7ce580c" aria-label="Рр — play audio"><span class="native" dir="auto">Рр</span><span class="ar">r</span></button>
-<button type="button" class="atile" data-k="c1c17c20" aria-label="Сс — play audio"><span class="native" dir="auto">Сс</span><span class="ar">s</span></button>
-<button type="button" class="atile" data-k="7800ee50" aria-label="Тт — play audio"><span class="native" dir="auto">Тт</span><span class="ar">t</span></button>
-<button type="button" class="atile" data-k="0170c5ac" aria-label="Фф — play audio"><span class="native" dir="auto">Фф</span><span class="ar">f (loan)</span></button>
-<button type="button" class="atile" data-k="03162308" aria-label="Хх — play audio"><span class="native" dir="auto">Хх</span><span class="ar">kh</span></button>
-<button type="button" class="atile" data-k="39f42f78" aria-label="Цц — play audio"><span class="native" dir="auto">Цц</span><span class="ar">ts</span></button>
-<button type="button" class="atile" data-k="8c85fa64" aria-label="Чч — play audio"><span class="native" dir="auto">Чч</span><span class="ar">ch</span></button>
-<button type="button" class="atile" data-k="b66d953c" aria-label="Шш — play audio"><span class="native" dir="auto">Шш</span><span class="ar">sh</span></button>
-<div class="atile"><span class="native" dir="auto">Щщ</span><span class="ar">shch (loan)</span></div>
-<button type="button" class="atile" data-k="ffc248bc" aria-label="Ьь — play audio"><span class="native" dir="auto">Ьь</span><span class="ar">soft sign</span></button>
-<button type="button" class="atile" data-k="778fa5e0" aria-label="Ъъ — play audio"><span class="native" dir="auto">Ъъ</span><span class="ar">hard sign</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="0041d0bd" aria-label="Бб — play audio"><span class="native" lang="mn" dir="auto">Бб</span><span class="ar">b</span></button>
+<button type="button" class="atile" data-k="8524d525" aria-label="Вв — play audio"><span class="native" lang="mn" dir="auto">Вв</span><span class="ar">v</span></button>
+<button type="button" class="atile" data-k="a47632ad" aria-label="Гг — play audio"><span class="native" lang="mn" dir="auto">Гг</span><span class="ar">g</span></button>
+<button type="button" class="atile" data-k="29593715" aria-label="Дд — play audio"><span class="native" lang="mn" dir="auto">Дд</span><span class="ar">d</span></button>
+<button type="button" class="atile" data-k="c984b6a5" aria-label="Жж — play audio"><span class="native" lang="mn" dir="auto">Жж</span><span class="ar">j</span></button>
+<button type="button" class="atile" data-k="6e67ed6d" aria-label="Зз — play audio"><span class="native" lang="mn" dir="auto">Зз</span><span class="ar">z</span></button>
+<button type="button" class="atile" data-k="a374f795" aria-label="Кк — play audio"><span class="native" lang="mn" dir="auto">Кк</span><span class="ar">k (loan)</span></button>
+<button type="button" class="atile" data-k="b403706d" aria-label="Лл — play audio"><span class="native" lang="mn" dir="auto">Лл</span><span class="ar">l</span></button>
+<button type="button" class="atile" data-k="c8e5c485" aria-label="Мм — play audio"><span class="native" lang="mn" dir="auto">Мм</span><span class="ar">m</span></button>
+<button type="button" class="atile" data-k="d83575dd" aria-label="Нн — play audio"><span class="native" lang="mn" dir="auto">Нн</span><span class="ar">n</span></button>
+<button type="button" class="atile" data-k="7da5794d" aria-label="Пп — play audio"><span class="native" lang="mn" dir="auto">Пп</span><span class="ar">p (loan)</span></button>
+<button type="button" class="atile" data-k="f7ce580c" aria-label="Рр — play audio"><span class="native" lang="mn" dir="auto">Рр</span><span class="ar">r</span></button>
+<button type="button" class="atile" data-k="c1c17c20" aria-label="Сс — play audio"><span class="native" lang="mn" dir="auto">Сс</span><span class="ar">s</span></button>
+<button type="button" class="atile" data-k="7800ee50" aria-label="Тт — play audio"><span class="native" lang="mn" dir="auto">Тт</span><span class="ar">t</span></button>
+<button type="button" class="atile" data-k="0170c5ac" aria-label="Фф — play audio"><span class="native" lang="mn" dir="auto">Фф</span><span class="ar">f (loan)</span></button>
+<button type="button" class="atile" data-k="03162308" aria-label="Хх — play audio"><span class="native" lang="mn" dir="auto">Хх</span><span class="ar">kh</span></button>
+<button type="button" class="atile" data-k="39f42f78" aria-label="Цц — play audio"><span class="native" lang="mn" dir="auto">Цц</span><span class="ar">ts</span></button>
+<button type="button" class="atile" data-k="8c85fa64" aria-label="Чч — play audio"><span class="native" lang="mn" dir="auto">Чч</span><span class="ar">ch</span></button>
+<button type="button" class="atile" data-k="b66d953c" aria-label="Шш — play audio"><span class="native" lang="mn" dir="auto">Шш</span><span class="ar">sh</span></button>
+<div class="atile"><span class="native" lang="mn" dir="auto">Щщ</span><span class="ar">shch (loan)</span></div>
+<button type="button" class="atile" data-k="ffc248bc" aria-label="Ьь — play audio"><span class="native" lang="mn" dir="auto">Ьь</span><span class="ar">soft sign</span></button>
+<button type="button" class="atile" data-k="778fa5e0" aria-label="Ъъ — play audio"><span class="native" lang="mn" dir="auto">Ъъ</span><span class="ar">hard sign</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Mongolian.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="29cd4711" aria-label="нэг — play audio"><span class="native" dir="auto">нэг</span><span class="ar">1</span></button>
-<button type="button" class="atile" data-k="74450c6e" aria-label="хоёр — play audio"><span class="native" dir="auto">хоёр</span><span class="ar">2</span></button>
-<button type="button" class="atile" data-k="3549dd17" aria-label="гурав — play audio"><span class="native" dir="auto">гурав</span><span class="ar">3</span></button>
-<button type="button" class="atile" data-k="78028082" aria-label="дөрөв — play audio"><span class="native" dir="auto">дөрөв</span><span class="ar">4</span></button>
-<button type="button" class="atile" data-k="d66f2694" aria-label="тав — play audio"><span class="native" dir="auto">тав</span><span class="ar">5</span></button>
-<button type="button" class="atile" data-k="09bfad30" aria-label="зургаа — play audio"><span class="native" dir="auto">зургаа</span><span class="ar">6</span></button>
-<button type="button" class="atile" data-k="18dbb2da" aria-label="долоо — play audio"><span class="native" dir="auto">долоо</span><span class="ar">7</span></button>
-<button type="button" class="atile" data-k="898f316d" aria-label="найм — play audio"><span class="native" dir="auto">найм</span><span class="ar">8</span></button>
-<button type="button" class="atile" data-k="b491e3a4" aria-label="ес — play audio"><span class="native" dir="auto">ес</span><span class="ar">9</span></button>
-<button type="button" class="atile" data-k="c9447d82" aria-label="арав — play audio"><span class="native" dir="auto">арав</span><span class="ar">10</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="29cd4711" aria-label="нэг — play audio"><span class="native" lang="mn" dir="auto">нэг</span><span class="ar">1</span></button>
+<button type="button" class="atile" data-k="74450c6e" aria-label="хоёр — play audio"><span class="native" lang="mn" dir="auto">хоёр</span><span class="ar">2</span></button>
+<button type="button" class="atile" data-k="3549dd17" aria-label="гурав — play audio"><span class="native" lang="mn" dir="auto">гурав</span><span class="ar">3</span></button>
+<button type="button" class="atile" data-k="78028082" aria-label="дөрөв — play audio"><span class="native" lang="mn" dir="auto">дөрөв</span><span class="ar">4</span></button>
+<button type="button" class="atile" data-k="d66f2694" aria-label="тав — play audio"><span class="native" lang="mn" dir="auto">тав</span><span class="ar">5</span></button>
+<button type="button" class="atile" data-k="09bfad30" aria-label="зургаа — play audio"><span class="native" lang="mn" dir="auto">зургаа</span><span class="ar">6</span></button>
+<button type="button" class="atile" data-k="18dbb2da" aria-label="долоо — play audio"><span class="native" lang="mn" dir="auto">долоо</span><span class="ar">7</span></button>
+<button type="button" class="atile" data-k="898f316d" aria-label="найм — play audio"><span class="native" lang="mn" dir="auto">найм</span><span class="ar">8</span></button>
+<button type="button" class="atile" data-k="b491e3a4" aria-label="ес — play audio"><span class="native" lang="mn" dir="auto">ес</span><span class="ar">9</span></button>
+<button type="button" class="atile" data-k="c9447d82" aria-label="арав — play audio"><span class="native" lang="mn" dir="auto">арав</span><span class="ar">10</span></button></div>
 </section>
 
 <section class="block no-print">

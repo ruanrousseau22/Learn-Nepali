@@ -34,6 +34,7 @@
 :root{--sky1:#F3DCCB;--sky2:#FBF2EA;--mtn-far:#8C93A8;--mtn-mid:#C58A4E;--mtn-near:#2E8B54;--snow:#FFFFFF;--orb:#F09A46;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#1B1A26;--sky2:#0F0E14;--mtn-far:#3A3E52;--mtn-mid:#6B4A2C;--mtn-near:#1A5836;--snow:#C7D6E6;--orb:#EDE0C2;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Javanese</em></h1>
-    <div class="nat native">Basa Jawa</div>
+    <div class="nat native" lang="jv">Basa Jawa</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=jv">Start learning</a>
     <div class="stats">
@@ -134,40 +135,40 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Javanese words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">sugeng enjing</td><td class="rom">sugeng enjing</td><td>Good morning</td></tr>
-<tr><td class="native" dir="auto">matur nuwun</td><td class="rom">matur nuwun</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">iya</td><td class="rom">iyo</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">ora</td><td class="rom">oro</td><td>No / not</td></tr>
-<tr><td class="native" dir="auto">banyu</td><td class="rom">banyu</td><td>water</td></tr>
-<tr><td class="native" dir="auto">sega</td><td class="rom">sego</td><td>rice</td></tr>
-<tr><td class="native" dir="auto">omah</td><td class="rom">omah</td><td>house</td></tr>
-<tr><td class="native" dir="auto">kanca</td><td class="rom">konco</td><td>friend</td></tr>
-<tr><td class="native" dir="auto">apik</td><td class="rom">apik</td><td>good</td></tr>
-<tr><td class="native" dir="auto">gedhe</td><td class="rom">gedhe</td><td>big</td></tr>
-<tr><td class="native" dir="auto">aku</td><td class="rom">aku</td><td>I</td></tr>
-<tr><td class="native" dir="auto">kowe</td><td class="rom">kowe</td><td>you</td></tr>
-<tr><td class="native" dir="auto">ana</td><td class="rom">ono</td><td>there is</td></tr>
-<tr><td class="native" dir="auto">wis</td><td class="rom">wis</td><td>already</td></tr>
-<tr><td class="native" dir="auto">arep</td><td class="rom">arep</td><td>going to</td></tr>
-<tr><td class="native" dir="auto">ngendi</td><td class="rom">ngendi</td><td>where</td></tr>
-<tr><td class="native" dir="auto">apa</td><td class="rom">opo</td><td>what</td></tr>
-<tr><td class="native" dir="auto">pira</td><td class="rom">piro</td><td>how much</td></tr>
-<tr><td class="native" dir="auto">monggo</td><td class="rom">monggo</td><td>please / after you</td></tr>
-<tr><td class="native" dir="auto">siji</td><td class="rom">siji</td><td>1</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="jv" dir="auto">sugeng enjing</td><td class="rom">sugeng enjing</td><td>Good morning</td></tr>
+<tr><td class="native" lang="jv" dir="auto">matur nuwun</td><td class="rom">matur nuwun</td><td>Thank you</td></tr>
+<tr><td class="native" lang="jv" dir="auto">iya</td><td class="rom">iyo</td><td>Yes</td></tr>
+<tr><td class="native" lang="jv" dir="auto">ora</td><td class="rom">oro</td><td>No / not</td></tr>
+<tr><td class="native" lang="jv" dir="auto">banyu</td><td class="rom">banyu</td><td>water</td></tr>
+<tr><td class="native" lang="jv" dir="auto">sega</td><td class="rom">sego</td><td>rice</td></tr>
+<tr><td class="native" lang="jv" dir="auto">omah</td><td class="rom">omah</td><td>house</td></tr>
+<tr><td class="native" lang="jv" dir="auto">kanca</td><td class="rom">konco</td><td>friend</td></tr>
+<tr><td class="native" lang="jv" dir="auto">apik</td><td class="rom">apik</td><td>good</td></tr>
+<tr><td class="native" lang="jv" dir="auto">gedhe</td><td class="rom">gedhe</td><td>big</td></tr>
+<tr><td class="native" lang="jv" dir="auto">aku</td><td class="rom">aku</td><td>I</td></tr>
+<tr><td class="native" lang="jv" dir="auto">kowe</td><td class="rom">kowe</td><td>you</td></tr>
+<tr><td class="native" lang="jv" dir="auto">ana</td><td class="rom">ono</td><td>there is</td></tr>
+<tr><td class="native" lang="jv" dir="auto">wis</td><td class="rom">wis</td><td>already</td></tr>
+<tr><td class="native" lang="jv" dir="auto">arep</td><td class="rom">arep</td><td>going to</td></tr>
+<tr><td class="native" lang="jv" dir="auto">ngendi</td><td class="rom">ngendi</td><td>where</td></tr>
+<tr><td class="native" lang="jv" dir="auto">apa</td><td class="rom">opo</td><td>what</td></tr>
+<tr><td class="native" lang="jv" dir="auto">pira</td><td class="rom">piro</td><td>how much</td></tr>
+<tr><td class="native" lang="jv" dir="auto">monggo</td><td class="rom">monggo</td><td>please / after you</td></tr>
+<tr><td class="native" lang="jv" dir="auto">siji</td><td class="rom">siji</td><td>1</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Javanese</h2>
-    <table><tbody><tr><td class="native" dir="auto">siji</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">loro</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">telu</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">papat</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">lima</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">enem</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">pitu</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">wolu</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">sanga</td><td class="rom">9</td></tr>
-<tr><td class="native" dir="auto">sepuluh</td><td class="rom">10</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="jv" dir="auto">siji</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="jv" dir="auto">loro</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="jv" dir="auto">telu</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="jv" dir="auto">papat</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="jv" dir="auto">lima</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="jv" dir="auto">enem</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="jv" dir="auto">pitu</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="jv" dir="auto">wolu</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="jv" dir="auto">sanga</td><td class="rom">9</td></tr>
+<tr><td class="native" lang="jv" dir="auto">sepuluh</td><td class="rom">10</td></tr></tbody></table>
   </section>
   
 

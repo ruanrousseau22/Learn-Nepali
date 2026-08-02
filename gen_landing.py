@@ -203,7 +203,7 @@ def page(d, others, palette_css, ne_hero):
     hero_inner = d['hero'] or ne_hero
     slug = SLUG[code]
     nat_fam, nat_lh = native_css(code)
-    dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
+    dir_attr = ' lang="%s"%s' % (code, ' dir="rtl"' if code in RTL else ' dir="auto"')
     ncls = "native"
     url = "%s/learn-%s" % (ORIGIN, slug)
     title = "Learn %s — Lessons, Alphabet & Audio | Bhasaly" % name
@@ -269,7 +269,7 @@ def page(d, others, palette_css, ne_hero):
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url), slug=slug,
         fontlink=esc(font_link(code)),
         css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
-        rtl=(' dir="rtl"' if code in RTL else ''),
+        rtl=(' lang="%s"%s' % (code, ' dir="rtl"' if code in RTL else '')),
         palette=palette_css, hero_scene=hero_scene,
         name=esc(name), native=esc(native), code=code,
         zones=d['zones'], topics=d['topics'], lessons=d['lessons'],
@@ -295,6 +295,7 @@ CSS = """:root{{--paper:#EFF4FB;--paper2:#E0EAF6;--ink:#1B2430;--soft:#5B6B7D;--
 --card:#1C2630;--tree:#4FA06A;--shadow:0 1px 2px rgba(0,0,0,.25),0 12px 28px -18px rgba(0,0,0,.7)}}}}
 {palette}
 *{{box-sizing:border-box}}
+a:focus-visible,button:focus-visible,summary:focus-visible{{outline:2.5px solid var(--saffron);outline-offset:2px}}
 body{{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}}
@@ -649,7 +650,7 @@ def sub_shell(d, others, palette_css, ne_band, **kw):
         band_css=BAND_CSS, band_scene=band_scene, audio_base=audio_dir(code),
         fontlink=esc(font_link(code)),
         slug=SLUG[code], name=esc(d['name']), code=code,
-        ncls="native", dir_attr=(' dir="rtl"' if code in RTL else ' dir="auto"'),
+        ncls="native", dir_attr=(' lang="%s"%s' % (code, ' dir="rtl"' if code in RTL else ' dir="auto"')),
         other_links="\n".join('<a href="/learn-%s">%s</a>' % (SLUG[o['code']], esc(o['name']))
                               for o in others),
         year=datetime.date.today().year, **kw)
@@ -661,6 +662,7 @@ def alphabet_page(d, others, palette_css, ne_band):
     sname = SCRIPT_NAME.get(code, name + ' script')
     url = "%s/%s-alphabet" % (ORIGIN, slug)
     man = load_manifest(code)
+    la = ' lang="%s"' % code
     nv, nc, nn = len(d['vowels']), len(d['cons']), len(d['nums'])
     title = "%s Alphabet — All %d Letters with Audio | Bhasaly" % (name, nv + nc)
     desc = ("The complete %s alphabet: %d vowels and %d consonants with romanization, "
@@ -704,9 +706,9 @@ def alphabet_page(d, others, palette_css, ne_band):
   {faq_html}
 </section>""".format(
         nv=nv, nc=nc, name=esc(name),
-        vg=alpha_grid(d['vowels'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"', man),
-        cg=alpha_grid(d['cons'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"', man),
-        ng=alpha_grid(d['nums'], "native", ' dir="auto"', man),
+        vg=alpha_grid(d['vowels'], "native", la + (' dir="rtl"' if code in RTL else ' dir="auto"'), man),
+        cg=alpha_grid(d['cons'], "native", la + (' dir="rtl"' if code in RTL else ' dir="auto"'), man),
+        ng=alpha_grid(d['nums'], "native", la + ' dir="auto"', man),
         faq_html="\n  ".join(
             '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (esc(q), esc(a))
             for q, a in faq))
@@ -726,7 +728,7 @@ def phrases_page(d, others, palette_css, ne_band):
     code, name = d['code'], d['name']
     slug, t = SLUG[code], d['trip']
     url = "%s/%s-phrases" % (ORIGIN, slug)
-    dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
+    dir_attr = ' lang="%s"%s' % (code, ' dir="rtl"' if code in RTL else ' dir="auto"')
     total = sum(len(s['lines']) for s in t['sections'])
     title = "%s Phrases for Travellers — %d Useful Lines | Bhasaly" % (name, total)
     desc = ("%d %s phrases a visitor actually needs — greetings, food, prices, directions "

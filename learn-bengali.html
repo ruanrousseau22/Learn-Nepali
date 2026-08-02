@@ -34,6 +34,7 @@
 :root{--sky1:#F7E0CE;--sky2:#FBF2E8;--mtn-far:#A9A3C9;--mtn-mid:#CE9052;--mtn-near:#2F8B52;--snow:#FFFFFF;--orb:#F2A648;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#211B2E;--sky2:#131016;--mtn-far:#3A3454;--mtn-mid:#5C452B;--mtn-near:#1C5638;--snow:#C7D6E6;--orb:#EBDFC6;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Bengali</em></h1>
-    <div class="nat native">বাংলা</div>
+    <div class="nat native" lang="bn">বাংলা</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=bn">Start learning</a>
     <div class="stats">
@@ -134,97 +135,97 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Bengali words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">চা</td><td class="rom">cha</td><td>Tea</td></tr>
-<tr><td class="native" dir="auto">জল</td><td class="rom">jol</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">ভাত</td><td class="rom">bhat</td><td>Rice (cooked)</td></tr>
-<tr><td class="native" dir="auto">মাছ</td><td class="rom">machh</td><td>Fish</td></tr>
-<tr><td class="native" dir="auto">দুধ</td><td class="rom">dudh</td><td>Milk</td></tr>
-<tr><td class="native" dir="auto">ফল</td><td class="rom">phol</td><td>Fruit</td></tr>
-<tr><td class="native" dir="auto">মা</td><td class="rom">ma</td><td>Mother</td></tr>
-<tr><td class="native" dir="auto">বাবা</td><td class="rom">baba</td><td>Father</td></tr>
-<tr><td class="native" dir="auto">দাদা</td><td class="rom">dada</td><td>Elder brother</td></tr>
-<tr><td class="native" dir="auto">দিদি</td><td class="rom">didi</td><td>Elder sister</td></tr>
-<tr><td class="native" dir="auto">নাম</td><td class="rom">nam</td><td>Name</td></tr>
-<tr><td class="native" dir="auto">বাড়ি</td><td class="rom">bari</td><td>Home / house</td></tr>
-<tr><td class="native" dir="auto">টাকা</td><td class="rom">taka</td><td>Money</td></tr>
-<tr><td class="native" dir="auto">দিন</td><td class="rom">din</td><td>Day</td></tr>
-<tr><td class="native" dir="auto">রাত</td><td class="rom">rat</td><td>Night</td></tr>
-<tr><td class="native" dir="auto">ভালো</td><td class="rom">bhalo</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">হ্যাঁ</td><td class="rom">hyan</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">না</td><td class="rom">na</td><td>No</td></tr>
-<tr><td class="native" dir="auto">ধন্যবাদ</td><td class="rom">dhonnobad</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">বাংলা</td><td class="rom">bangla</td><td>Bengali / Bangla</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="bn" dir="auto">চা</td><td class="rom">cha</td><td>Tea</td></tr>
+<tr><td class="native" lang="bn" dir="auto">জল</td><td class="rom">jol</td><td>Water</td></tr>
+<tr><td class="native" lang="bn" dir="auto">ভাত</td><td class="rom">bhat</td><td>Rice (cooked)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">মাছ</td><td class="rom">machh</td><td>Fish</td></tr>
+<tr><td class="native" lang="bn" dir="auto">দুধ</td><td class="rom">dudh</td><td>Milk</td></tr>
+<tr><td class="native" lang="bn" dir="auto">ফল</td><td class="rom">phol</td><td>Fruit</td></tr>
+<tr><td class="native" lang="bn" dir="auto">মা</td><td class="rom">ma</td><td>Mother</td></tr>
+<tr><td class="native" lang="bn" dir="auto">বাবা</td><td class="rom">baba</td><td>Father</td></tr>
+<tr><td class="native" lang="bn" dir="auto">দাদা</td><td class="rom">dada</td><td>Elder brother</td></tr>
+<tr><td class="native" lang="bn" dir="auto">দিদি</td><td class="rom">didi</td><td>Elder sister</td></tr>
+<tr><td class="native" lang="bn" dir="auto">নাম</td><td class="rom">nam</td><td>Name</td></tr>
+<tr><td class="native" lang="bn" dir="auto">বাড়ি</td><td class="rom">bari</td><td>Home / house</td></tr>
+<tr><td class="native" lang="bn" dir="auto">টাকা</td><td class="rom">taka</td><td>Money</td></tr>
+<tr><td class="native" lang="bn" dir="auto">দিন</td><td class="rom">din</td><td>Day</td></tr>
+<tr><td class="native" lang="bn" dir="auto">রাত</td><td class="rom">rat</td><td>Night</td></tr>
+<tr><td class="native" lang="bn" dir="auto">ভালো</td><td class="rom">bhalo</td><td>Good</td></tr>
+<tr><td class="native" lang="bn" dir="auto">হ্যাঁ</td><td class="rom">hyan</td><td>Yes</td></tr>
+<tr><td class="native" lang="bn" dir="auto">না</td><td class="rom">na</td><td>No</td></tr>
+<tr><td class="native" lang="bn" dir="auto">ধন্যবাদ</td><td class="rom">dhonnobad</td><td>Thank you</td></tr>
+<tr><td class="native" lang="bn" dir="auto">বাংলা</td><td class="rom">bangla</td><td>Bengali / Bangla</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Bengali</h2>
-    <table><tbody><tr><td class="native" dir="auto">০</td><td class="rom">0 (shunno)</td></tr>
-<tr><td class="native" dir="auto">১</td><td class="rom">1 (ek)</td></tr>
-<tr><td class="native" dir="auto">২</td><td class="rom">2 (dui)</td></tr>
-<tr><td class="native" dir="auto">৩</td><td class="rom">3 (tin)</td></tr>
-<tr><td class="native" dir="auto">৪</td><td class="rom">4 (char)</td></tr>
-<tr><td class="native" dir="auto">৫</td><td class="rom">5 (panch)</td></tr>
-<tr><td class="native" dir="auto">৬</td><td class="rom">6 (chhoy)</td></tr>
-<tr><td class="native" dir="auto">৭</td><td class="rom">7 (shat)</td></tr>
-<tr><td class="native" dir="auto">৮</td><td class="rom">8 (at)</td></tr>
-<tr><td class="native" dir="auto">৯</td><td class="rom">9 (noy)</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="bn" dir="auto">০</td><td class="rom">0 (shunno)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">১</td><td class="rom">1 (ek)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">২</td><td class="rom">2 (dui)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৩</td><td class="rom">3 (tin)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৪</td><td class="rom">4 (char)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৫</td><td class="rom">5 (panch)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৬</td><td class="rom">6 (chhoy)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৭</td><td class="rom">7 (shat)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৮</td><td class="rom">8 (at)</td></tr>
+<tr><td class="native" lang="bn" dir="auto">৯</td><td class="rom">9 (noy)</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Bengali script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">অ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">আ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ই</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ঈ</span><span class="ar">i (long form)</span></div>
-<div class="atile"><span class="native" dir="auto">উ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ঊ</span><span class="ar">u (long form)</span></div>
-<div class="atile"><span class="native" dir="auto">ঋ</span><span class="ar">ri</span></div>
-<div class="atile"><span class="native" dir="auto">এ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ঐ</span><span class="ar">oi</span></div>
-<div class="atile"><span class="native" dir="auto">ও</span><span class="ar">o (close)</span></div>
-<div class="atile"><span class="native" dir="auto">ঔ</span><span class="ar">ou</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="bn" dir="auto">অ</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">আ</span><span class="ar">a</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ই</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঈ</span><span class="ar">i (long form)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">উ</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঊ</span><span class="ar">u (long form)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঋ</span><span class="ar">ri</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">এ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঐ</span><span class="ar">oi</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ও</span><span class="ar">o (close)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঔ</span><span class="ar">ou</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">ক</span><span class="ar">ko</span></div>
-<div class="atile"><span class="native" dir="auto">খ</span><span class="ar">kho</span></div>
-<div class="atile"><span class="native" dir="auto">গ</span><span class="ar">go</span></div>
-<div class="atile"><span class="native" dir="auto">ঘ</span><span class="ar">gho</span></div>
-<div class="atile"><span class="native" dir="auto">ঙ</span><span class="ar">ngo</span></div>
-<div class="atile"><span class="native" dir="auto">চ</span><span class="ar">cho</span></div>
-<div class="atile"><span class="native" dir="auto">ছ</span><span class="ar">chho</span></div>
-<div class="atile"><span class="native" dir="auto">জ</span><span class="ar">jo</span></div>
-<div class="atile"><span class="native" dir="auto">ঝ</span><span class="ar">jho</span></div>
-<div class="atile"><span class="native" dir="auto">ঞ</span><span class="ar">nyo</span></div>
-<div class="atile"><span class="native" dir="auto">ট</span><span class="ar">to (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ঠ</span><span class="ar">tho (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ড</span><span class="ar">do (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ঢ</span><span class="ar">dho (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ণ</span><span class="ar">no (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ত</span><span class="ar">to (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">থ</span><span class="ar">tho (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">দ</span><span class="ar">do (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">ধ</span><span class="ar">dho (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">ন</span><span class="ar">no</span></div>
-<div class="atile"><span class="native" dir="auto">প</span><span class="ar">po</span></div>
-<div class="atile"><span class="native" dir="auto">ফ</span><span class="ar">pho</span></div>
-<div class="atile"><span class="native" dir="auto">ব</span><span class="ar">bo</span></div>
-<div class="atile"><span class="native" dir="auto">ভ</span><span class="ar">bho</span></div>
-<div class="atile"><span class="native" dir="auto">ম</span><span class="ar">mo</span></div>
-<div class="atile"><span class="native" dir="auto">য</span><span class="ar">jo (antostho)</span></div>
-<div class="atile"><span class="native" dir="auto">র</span><span class="ar">ro</span></div>
-<div class="atile"><span class="native" dir="auto">ল</span><span class="ar">lo</span></div>
-<div class="atile"><span class="native" dir="auto">শ</span><span class="ar">sho</span></div>
-<div class="atile"><span class="native" dir="auto">ষ</span><span class="ar">sho (murdhonno)</span></div>
-<div class="atile"><span class="native" dir="auto">স</span><span class="ar">so / sho</span></div>
-<div class="atile"><span class="native" dir="auto">হ</span><span class="ar">ho</span></div>
-<div class="atile"><span class="native" dir="auto">ড়</span><span class="ar">ro (flap)</span></div>
-<div class="atile"><span class="native" dir="auto">ঢ়</span><span class="ar">rho (flap)</span></div>
-<div class="atile"><span class="native" dir="auto">য়</span><span class="ar">yo</span></div>
-<div class="atile"><span class="native" dir="auto">ৎ</span><span class="ar">t (khondo to)</span></div>
-<div class="atile"><span class="native" dir="auto">ং</span><span class="ar">ng (onushshar)</span></div>
-<div class="atile"><span class="native" dir="auto">ঃ</span><span class="ar">h (bishorgo)</span></div>
-<div class="atile"><span class="native" dir="auto">ঁ</span><span class="ar">nasal (chondrobindu)</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="bn" dir="auto">ক</span><span class="ar">ko</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">খ</span><span class="ar">kho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">গ</span><span class="ar">go</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঘ</span><span class="ar">gho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঙ</span><span class="ar">ngo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">চ</span><span class="ar">cho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ছ</span><span class="ar">chho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">জ</span><span class="ar">jo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঝ</span><span class="ar">jho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঞ</span><span class="ar">nyo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ট</span><span class="ar">to (hard)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঠ</span><span class="ar">tho (hard)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ড</span><span class="ar">do (hard)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঢ</span><span class="ar">dho (hard)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ণ</span><span class="ar">no (hard)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ত</span><span class="ar">to (soft)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">থ</span><span class="ar">tho (soft)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">দ</span><span class="ar">do (soft)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ধ</span><span class="ar">dho (soft)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ন</span><span class="ar">no</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">প</span><span class="ar">po</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ফ</span><span class="ar">pho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ব</span><span class="ar">bo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ভ</span><span class="ar">bho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ম</span><span class="ar">mo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">য</span><span class="ar">jo (antostho)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">র</span><span class="ar">ro</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ল</span><span class="ar">lo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">শ</span><span class="ar">sho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ষ</span><span class="ar">sho (murdhonno)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">স</span><span class="ar">so / sho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">হ</span><span class="ar">ho</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ড়</span><span class="ar">ro (flap)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঢ়</span><span class="ar">rho (flap)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">য়</span><span class="ar">yo</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ৎ</span><span class="ar">t (khondo to)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ং</span><span class="ar">ng (onushshar)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঃ</span><span class="ar">h (bishorgo)</span></div>
+<div class="atile"><span class="native" lang="bn" dir="auto">ঁ</span><span class="ar">nasal (chondrobindu)</span></div></div>
   </section>
 
   <section class="block">

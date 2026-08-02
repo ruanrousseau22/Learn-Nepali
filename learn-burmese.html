@@ -34,6 +34,7 @@
 :root{--sky1:#DCEAEE;--sky2:#F1F7F4;--mtn-far:#AEC6C6;--mtn-mid:#5F8072;--mtn-near:#37955C;--snow:#FFFFFF;--orb:#F2B24A;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#141F27;--sky2:#0E1417;--mtn-far:#2C3E44;--mtn-mid:#2C4A3C;--mtn-near:#175038;--snow:#C7D6E6;--orb:#EFE0BF;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Burmese</em></h1>
-    <div class="nat native">မြန်မာ</div>
+    <div class="nat native" lang="my">မြန်မာ</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=my">Start learning</a>
     <div class="stats">
@@ -134,90 +135,90 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Burmese words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">မင်္ဂလာပါ</td><td class="rom">Mingalaba</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">ကျေးဇူးတင်ပါတယ်</td><td class="rom">Kyeizu tin ba de</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">ဟုတ်ကဲ့</td><td class="rom">Houq keh</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">မဟုတ်ဘူး</td><td class="rom">Mahouq bu</td><td>No</td></tr>
-<tr><td class="native" dir="auto">ရေ</td><td class="rom">Ye</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">ထမင်း</td><td class="rom">Htamin</td><td>Rice / meal</td></tr>
-<tr><td class="native" dir="auto">လူ</td><td class="rom">Lu</td><td>Person</td></tr>
-<tr><td class="native" dir="auto">ကောင်း</td><td class="rom">Kaung</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">ကြီး</td><td class="rom">Kyi</td><td>Big</td></tr>
-<tr><td class="native" dir="auto">ငယ်</td><td class="rom">Ngeh</td><td>Small / young</td></tr>
-<tr><td class="native" dir="auto">ဒီနေ့</td><td class="rom">Di neh</td><td>Today</td></tr>
-<tr><td class="native" dir="auto">ပျော်</td><td class="rom">Pyaw</td><td>Happy</td></tr>
-<tr><td class="native" dir="auto">လက်ဖက်ရည်</td><td class="rom">Lahpeq yeh</td><td>Tea</td></tr>
-<tr><td class="native" dir="auto">ကျွန်တော်</td><td class="rom">Kyanaw</td><td>I (man speaking)</td></tr>
-<tr><td class="native" dir="auto">ကျွန်မ</td><td class="rom">Kyama</td><td>I (woman speaking)</td></tr>
-<tr><td class="native" dir="auto">တောင်းပန်ပါတယ်</td><td class="rom">Taun ban ba de</td><td>Sorry</td></tr>
-<tr><td class="native" dir="auto">အိမ်</td><td class="rom">Ein</td><td>Home / house</td></tr>
-<tr><td class="native" dir="auto">ပိုက်ဆံ</td><td class="rom">Paiq hsan</td><td>Money</td></tr>
-<tr><td class="native" dir="auto">မနက်ဖြန်</td><td class="rom">Ma neq hpyan</td><td>Tomorrow</td></tr>
-<tr><td class="native" dir="auto">သူငယ်ချင်း</td><td class="rom">Thangeh chin</td><td>Friend</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="my" dir="auto">မင်္ဂလာပါ</td><td class="rom">Mingalaba</td><td>Hello</td></tr>
+<tr><td class="native" lang="my" dir="auto">ကျေးဇူးတင်ပါတယ်</td><td class="rom">Kyeizu tin ba de</td><td>Thank you</td></tr>
+<tr><td class="native" lang="my" dir="auto">ဟုတ်ကဲ့</td><td class="rom">Houq keh</td><td>Yes</td></tr>
+<tr><td class="native" lang="my" dir="auto">မဟုတ်ဘူး</td><td class="rom">Mahouq bu</td><td>No</td></tr>
+<tr><td class="native" lang="my" dir="auto">ရေ</td><td class="rom">Ye</td><td>Water</td></tr>
+<tr><td class="native" lang="my" dir="auto">ထမင်း</td><td class="rom">Htamin</td><td>Rice / meal</td></tr>
+<tr><td class="native" lang="my" dir="auto">လူ</td><td class="rom">Lu</td><td>Person</td></tr>
+<tr><td class="native" lang="my" dir="auto">ကောင်း</td><td class="rom">Kaung</td><td>Good</td></tr>
+<tr><td class="native" lang="my" dir="auto">ကြီး</td><td class="rom">Kyi</td><td>Big</td></tr>
+<tr><td class="native" lang="my" dir="auto">ငယ်</td><td class="rom">Ngeh</td><td>Small / young</td></tr>
+<tr><td class="native" lang="my" dir="auto">ဒီနေ့</td><td class="rom">Di neh</td><td>Today</td></tr>
+<tr><td class="native" lang="my" dir="auto">ပျော်</td><td class="rom">Pyaw</td><td>Happy</td></tr>
+<tr><td class="native" lang="my" dir="auto">လက်ဖက်ရည်</td><td class="rom">Lahpeq yeh</td><td>Tea</td></tr>
+<tr><td class="native" lang="my" dir="auto">ကျွန်တော်</td><td class="rom">Kyanaw</td><td>I (man speaking)</td></tr>
+<tr><td class="native" lang="my" dir="auto">ကျွန်မ</td><td class="rom">Kyama</td><td>I (woman speaking)</td></tr>
+<tr><td class="native" lang="my" dir="auto">တောင်းပန်ပါတယ်</td><td class="rom">Taun ban ba de</td><td>Sorry</td></tr>
+<tr><td class="native" lang="my" dir="auto">အိမ်</td><td class="rom">Ein</td><td>Home / house</td></tr>
+<tr><td class="native" lang="my" dir="auto">ပိုက်ဆံ</td><td class="rom">Paiq hsan</td><td>Money</td></tr>
+<tr><td class="native" lang="my" dir="auto">မနက်ဖြန်</td><td class="rom">Ma neq hpyan</td><td>Tomorrow</td></tr>
+<tr><td class="native" lang="my" dir="auto">သူငယ်ချင်း</td><td class="rom">Thangeh chin</td><td>Friend</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Burmese</h2>
-    <table><tbody><tr><td class="native" dir="auto">၀</td><td class="rom">0</td></tr>
-<tr><td class="native" dir="auto">၁</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">၂</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">၃</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">၄</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">၅</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">၆</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">၇</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">၈</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">၉</td><td class="rom">9</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="my" dir="auto">၀</td><td class="rom">0</td></tr>
+<tr><td class="native" lang="my" dir="auto">၁</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="my" dir="auto">၂</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="my" dir="auto">၃</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="my" dir="auto">၄</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="my" dir="auto">၅</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="my" dir="auto">၆</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="my" dir="auto">၇</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="my" dir="auto">၈</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="my" dir="auto">၉</td><td class="rom">9</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Burmese script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">အာ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">အိ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">အီ</span><span class="ar">ii</span></div>
-<div class="atile"><span class="native" dir="auto">အု</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">အူ</span><span class="ar">uu</span></div>
-<div class="atile"><span class="native" dir="auto">အေ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">အဲ</span><span class="ar">eh</span></div>
-<div class="atile"><span class="native" dir="auto">အော</span><span class="ar">aw</span></div>
-<div class="atile"><span class="native" dir="auto">အို</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">အံ</span><span class="ar">an</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="my" dir="auto">အာ</span><span class="ar">aa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အိ</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အီ</span><span class="ar">ii</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အု</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အူ</span><span class="ar">uu</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အေ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အဲ</span><span class="ar">eh</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အော</span><span class="ar">aw</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အို</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အံ</span><span class="ar">an</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">က</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ခ</span><span class="ar">hka</span></div>
-<div class="atile"><span class="native" dir="auto">ဂ</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">ဃ</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">င</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">စ</span><span class="ar">sa</span></div>
-<div class="atile"><span class="native" dir="auto">ဆ</span><span class="ar">hsa</span></div>
-<div class="atile"><span class="native" dir="auto">ဇ</span><span class="ar">za</span></div>
-<div class="atile"><span class="native" dir="auto">ဈ</span><span class="ar">za</span></div>
-<div class="atile"><span class="native" dir="auto">ည</span><span class="ar">nya</span></div>
-<div class="atile"><span class="native" dir="auto">ဋ</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ဌ</span><span class="ar">hta</span></div>
-<div class="atile"><span class="native" dir="auto">ဍ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ဎ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ဏ</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">တ</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ထ</span><span class="ar">hta</span></div>
-<div class="atile"><span class="native" dir="auto">ဒ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ဓ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">န</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ပ</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">ဖ</span><span class="ar">hpa</span></div>
-<div class="atile"><span class="native" dir="auto">ဗ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">ဘ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">မ</span><span class="ar">ma</span></div>
-<div class="atile"><span class="native" dir="auto">ယ</span><span class="ar">ya</span></div>
-<div class="atile"><span class="native" dir="auto">ရ</span><span class="ar">ya</span></div>
-<div class="atile"><span class="native" dir="auto">လ</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">ဝ</span><span class="ar">wa</span></div>
-<div class="atile"><span class="native" dir="auto">သ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ဟ</span><span class="ar">ha</span></div>
-<div class="atile"><span class="native" dir="auto">ဠ</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">အ</span><span class="ar">a</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="my" dir="auto">က</span><span class="ar">ka</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ခ</span><span class="ar">hka</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဂ</span><span class="ar">ga</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဃ</span><span class="ar">ga</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">င</span><span class="ar">nga</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">စ</span><span class="ar">sa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဆ</span><span class="ar">hsa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဇ</span><span class="ar">za</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဈ</span><span class="ar">za</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ည</span><span class="ar">nya</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဋ</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဌ</span><span class="ar">hta</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဍ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဎ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဏ</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">တ</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ထ</span><span class="ar">hta</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဒ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဓ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">န</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ပ</span><span class="ar">pa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဖ</span><span class="ar">hpa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဗ</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဘ</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">မ</span><span class="ar">ma</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ယ</span><span class="ar">ya</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ရ</span><span class="ar">ya</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">လ</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဝ</span><span class="ar">wa</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">သ</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဟ</span><span class="ar">ha</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">ဠ</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="my" dir="auto">အ</span><span class="ar">a</span></div></div>
   </section>
 
   <section class="block">

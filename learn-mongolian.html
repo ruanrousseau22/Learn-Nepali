@@ -34,6 +34,7 @@
 :root{--sky1:#D5E8F6;--sky2:#F1F7FC;--mtn-far:#A7C0D8;--mtn-mid:#D2AE5E;--mtn-near:#4F9A5F;--snow:#FFFFFF;--orb:#F4C24F;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#131E29;--sky2:#0D1216;--mtn-far:#2C3E54;--mtn-mid:#5A4A28;--mtn-near:#20563A;--snow:#C7D6E6;--orb:#EFE2C0;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Mongolian</em></h1>
-    <div class="nat native">Монгол</div>
+    <div class="nat native" lang="mn">Монгол</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=mn">Start learning</a>
     <div class="stats">
@@ -134,82 +135,82 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Mongolian words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">сайн</td><td class="rom">sain</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">ус</td><td class="rom">us</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">цай</td><td class="rom">tsai</td><td>Tea</td></tr>
-<tr><td class="native" dir="auto">гэр</td><td class="rom">ger</td><td>Home / ger</td></tr>
-<tr><td class="native" dir="auto">сүү</td><td class="rom">suu</td><td>Milk</td></tr>
-<tr><td class="native" dir="auto">баярлалаа</td><td class="rom">bayarlalaa</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">тийм</td><td class="rom">tiim</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">үгүй</td><td class="rom">ugui</td><td>No</td></tr>
-<tr><td class="native" dir="auto">би</td><td class="rom">bi</td><td>I / me</td></tr>
-<tr><td class="native" dir="auto">та</td><td class="rom">ta</td><td>You (polite)</td></tr>
-<tr><td class="native" dir="auto">нэр</td><td class="rom">ner</td><td>Name</td></tr>
-<tr><td class="native" dir="auto">өнөөдөр</td><td class="rom">onoodor</td><td>Today</td></tr>
-<tr><td class="native" dir="auto">маргааш</td><td class="rom">margaash</td><td>Tomorrow</td></tr>
-<tr><td class="native" dir="auto">морь</td><td class="rom">mori</td><td>Horse</td></tr>
-<tr><td class="native" dir="auto">нар</td><td class="rom">nar</td><td>Sun</td></tr>
-<tr><td class="native" dir="auto">ном</td><td class="rom">nom</td><td>Book</td></tr>
-<tr><td class="native" dir="auto">хот</td><td class="rom">khot</td><td>City</td></tr>
-<tr><td class="native" dir="auto">өдөр</td><td class="rom">odor</td><td>Day</td></tr>
-<tr><td class="native" dir="auto">за</td><td class="rom">za</td><td>OK</td></tr>
-<tr><td class="native" dir="auto">уучлаарай</td><td class="rom">uuchlaarai</td><td>Sorry / excuse me</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="mn" dir="auto">сайн</td><td class="rom">sain</td><td>Good</td></tr>
+<tr><td class="native" lang="mn" dir="auto">ус</td><td class="rom">us</td><td>Water</td></tr>
+<tr><td class="native" lang="mn" dir="auto">цай</td><td class="rom">tsai</td><td>Tea</td></tr>
+<tr><td class="native" lang="mn" dir="auto">гэр</td><td class="rom">ger</td><td>Home / ger</td></tr>
+<tr><td class="native" lang="mn" dir="auto">сүү</td><td class="rom">suu</td><td>Milk</td></tr>
+<tr><td class="native" lang="mn" dir="auto">баярлалаа</td><td class="rom">bayarlalaa</td><td>Thank you</td></tr>
+<tr><td class="native" lang="mn" dir="auto">тийм</td><td class="rom">tiim</td><td>Yes</td></tr>
+<tr><td class="native" lang="mn" dir="auto">үгүй</td><td class="rom">ugui</td><td>No</td></tr>
+<tr><td class="native" lang="mn" dir="auto">би</td><td class="rom">bi</td><td>I / me</td></tr>
+<tr><td class="native" lang="mn" dir="auto">та</td><td class="rom">ta</td><td>You (polite)</td></tr>
+<tr><td class="native" lang="mn" dir="auto">нэр</td><td class="rom">ner</td><td>Name</td></tr>
+<tr><td class="native" lang="mn" dir="auto">өнөөдөр</td><td class="rom">onoodor</td><td>Today</td></tr>
+<tr><td class="native" lang="mn" dir="auto">маргааш</td><td class="rom">margaash</td><td>Tomorrow</td></tr>
+<tr><td class="native" lang="mn" dir="auto">морь</td><td class="rom">mori</td><td>Horse</td></tr>
+<tr><td class="native" lang="mn" dir="auto">нар</td><td class="rom">nar</td><td>Sun</td></tr>
+<tr><td class="native" lang="mn" dir="auto">ном</td><td class="rom">nom</td><td>Book</td></tr>
+<tr><td class="native" lang="mn" dir="auto">хот</td><td class="rom">khot</td><td>City</td></tr>
+<tr><td class="native" lang="mn" dir="auto">өдөр</td><td class="rom">odor</td><td>Day</td></tr>
+<tr><td class="native" lang="mn" dir="auto">за</td><td class="rom">za</td><td>OK</td></tr>
+<tr><td class="native" lang="mn" dir="auto">уучлаарай</td><td class="rom">uuchlaarai</td><td>Sorry / excuse me</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Mongolian</h2>
-    <table><tbody><tr><td class="native" dir="auto">нэг</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">хоёр</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">гурав</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">дөрөв</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">тав</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">зургаа</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">долоо</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">найм</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">ес</td><td class="rom">9</td></tr>
-<tr><td class="native" dir="auto">арав</td><td class="rom">10</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="mn" dir="auto">нэг</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="mn" dir="auto">хоёр</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="mn" dir="auto">гурав</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="mn" dir="auto">дөрөв</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="mn" dir="auto">тав</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="mn" dir="auto">зургаа</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="mn" dir="auto">долоо</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="mn" dir="auto">найм</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="mn" dir="auto">ес</td><td class="rom">9</td></tr>
+<tr><td class="native" lang="mn" dir="auto">арав</td><td class="rom">10</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Mongolian Cyrillic alphabet</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">Аа</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">Оо</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">Уу</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">Ээ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">Ии</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">Өө</span><span class="ar">oe</span></div>
-<div class="atile"><span class="native" dir="auto">Үү</span><span class="ar">ue</span></div>
-<div class="atile"><span class="native" dir="auto">Ыы</span><span class="ar">ii (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">Йй</span><span class="ar">i (short)</span></div>
-<div class="atile"><span class="native" dir="auto">Ее</span><span class="ar">ye</span></div>
-<div class="atile"><span class="native" dir="auto">Ёё</span><span class="ar">yo</span></div>
-<div class="atile"><span class="native" dir="auto">Юю</span><span class="ar">yu</span></div>
-<div class="atile"><span class="native" dir="auto">Яя</span><span class="ar">ya</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="mn" dir="auto">Аа</span><span class="ar">a</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Оо</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Уу</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ээ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ии</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Өө</span><span class="ar">oe</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Үү</span><span class="ar">ue</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ыы</span><span class="ar">ii (hard)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Йй</span><span class="ar">i (short)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ее</span><span class="ar">ye</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ёё</span><span class="ar">yo</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Юю</span><span class="ar">yu</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Яя</span><span class="ar">ya</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">Бб</span><span class="ar">b</span></div>
-<div class="atile"><span class="native" dir="auto">Вв</span><span class="ar">v</span></div>
-<div class="atile"><span class="native" dir="auto">Гг</span><span class="ar">g</span></div>
-<div class="atile"><span class="native" dir="auto">Дд</span><span class="ar">d</span></div>
-<div class="atile"><span class="native" dir="auto">Жж</span><span class="ar">j</span></div>
-<div class="atile"><span class="native" dir="auto">Зз</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="auto">Кк</span><span class="ar">k (loan)</span></div>
-<div class="atile"><span class="native" dir="auto">Лл</span><span class="ar">l</span></div>
-<div class="atile"><span class="native" dir="auto">Мм</span><span class="ar">m</span></div>
-<div class="atile"><span class="native" dir="auto">Нн</span><span class="ar">n</span></div>
-<div class="atile"><span class="native" dir="auto">Пп</span><span class="ar">p (loan)</span></div>
-<div class="atile"><span class="native" dir="auto">Рр</span><span class="ar">r</span></div>
-<div class="atile"><span class="native" dir="auto">Сс</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="auto">Тт</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="auto">Фф</span><span class="ar">f (loan)</span></div>
-<div class="atile"><span class="native" dir="auto">Хх</span><span class="ar">kh</span></div>
-<div class="atile"><span class="native" dir="auto">Цц</span><span class="ar">ts</span></div>
-<div class="atile"><span class="native" dir="auto">Чч</span><span class="ar">ch</span></div>
-<div class="atile"><span class="native" dir="auto">Шш</span><span class="ar">sh</span></div>
-<div class="atile"><span class="native" dir="auto">Щщ</span><span class="ar">shch (loan)</span></div>
-<div class="atile"><span class="native" dir="auto">Ьь</span><span class="ar">soft sign</span></div>
-<div class="atile"><span class="native" dir="auto">Ъъ</span><span class="ar">hard sign</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="mn" dir="auto">Бб</span><span class="ar">b</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Вв</span><span class="ar">v</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Гг</span><span class="ar">g</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Дд</span><span class="ar">d</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Жж</span><span class="ar">j</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Зз</span><span class="ar">z</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Кк</span><span class="ar">k (loan)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Лл</span><span class="ar">l</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Мм</span><span class="ar">m</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Нн</span><span class="ar">n</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Пп</span><span class="ar">p (loan)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Рр</span><span class="ar">r</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Сс</span><span class="ar">s</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Тт</span><span class="ar">t</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Фф</span><span class="ar">f (loan)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Хх</span><span class="ar">kh</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Цц</span><span class="ar">ts</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Чч</span><span class="ar">ch</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Шш</span><span class="ar">sh</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Щщ</span><span class="ar">shch (loan)</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ьь</span><span class="ar">soft sign</span></div>
+<div class="atile"><span class="native" lang="mn" dir="auto">Ъъ</span><span class="ar">hard sign</span></div></div>
   </section>
 
   <section class="block">

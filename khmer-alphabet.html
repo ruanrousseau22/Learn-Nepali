@@ -34,6 +34,7 @@
 :root{--sky1:#F7E3C2;--sky2:#FBF3E4;--mtn-far:#CBAF83;--mtn-mid:#7E6553;--mtn-near:#2F8E5B;--snow:#FFFFFF;--orb:#F2A93B;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#241E33;--sky2:#141119;--mtn-far:#39304E;--mtn-mid:#4A3B31;--mtn-near:#1B5038;--snow:#C7D6E6;--orb:#E9DFC8;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -168,7 +169,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <section class="sub-band">
   <div class="sub-band-body">
     <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-khmer">Learn Khmer</a> &rsaquo; Alphabet</p>
-    <div class="band-title"><h1>The Khmer alphabet</h1><span class="nat native" dir="auto">ខ្មែរ</span></div>
+    <div class="band-title"><h1>The Khmer alphabet</h1><span class="nat native" lang="km" dir="auto">ខ្មែរ</span></div>
   </div>
   <svg class="band-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/><path class="far" d="M0 148 Q60 142 120 146 Q180 138 240 144 Q300 136 360 142 Q420 138 480 144 Q540 136 600 142 Q660 138 720 144 Q780 124 840 138 Q900 124 960 140 Q1020 126 1080 140 Q1140 126 1200 140 L1200 200 L0 200 Z"/><path class="mid" d="M0 200 L0 174 Q300 164 600 172 Q900 180 1200 168 L1200 200 Z"/><g class="mid art-detail"><path d="M806 172 L806 146 L812 146 L812 172 Z M838 174 L838 146 L844 146 L844 174 Z M870 174 L870 146 L876 146 L876 174 Z M902 172 L902 146 L908 146 L908 172 Z M798 148 L798 124 L916 124 L916 148 Z M784 128 L857 92 L930 128 Z M808 172 L822 150 L828 150 L814 172 Z M716 168 C719 146 717 128 720 110 L724 111 C722 128 725 148 723 170 Z M721 108 C708 100 694 98 683 102 C696 102 708 106 719 112 Z M721 108 C732 98 745 95 756 99 C745 100 733 105 723 112 Z M721 108 C715 94 706 87 695 85 C706 92 714 100 719 110 Z M721 108 C727 94 736 87 747 85 C736 92 727 100 722 110 Z M721 108 C721 92 717 81 709 75 C715 84 718 96 719 108 Z"/></g><g class="near"><path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/><path d="M954 186 C958 162 956 142 960 124 L965 126 C962 144 966 166 964 188 Z"/><path d="M962 122 C946 112 930 110 916 116 C932 114 948 118 960 126 Z"/><path d="M962 122 C976 108 992 104 1006 110 C992 110 976 116 964 126 Z"/><path d="M962 122 C954 104 942 96 928 94 C942 102 952 110 960 124 Z"/><path d="M962 122 C970 104 982 96 996 94 C982 102 972 110 964 124 Z"/><path d="M962 122 C962 102 956 88 946 80 C954 92 958 106 960 122 Z"/></g></svg>
 </section>
@@ -184,78 +185,78 @@ border-radius:999px;cursor:pointer;font-family:inherit}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">19 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="80d5e5f7" aria-label="អា — play audio"><span class="native" dir="auto">អា</span><span class="ar">aa</span></button>
-<button type="button" class="atile" data-k="7fd5e464" aria-label="អិ — play audio"><span class="native" dir="auto">អិ</span><span class="ar">e</span></button>
-<button type="button" class="atile" data-k="76d5d639" aria-label="អី — play audio"><span class="native" dir="auto">អី</span><span class="ar">ey</span></button>
-<button type="button" class="atile" data-k="75d5d4a6" aria-label="អឹ — play audio"><span class="native" dir="auto">អឹ</span><span class="ar">oe</span></button>
-<button type="button" class="atile" data-k="74d5d313" aria-label="អឺ — play audio"><span class="native" dir="auto">អឺ</span><span class="ar">eu</span></button>
-<button type="button" class="atile" data-k="73d5d180" aria-label="អុ — play audio"><span class="native" dir="auto">អុ</span><span class="ar">o</span></button>
-<button type="button" class="atile" data-k="7ad5dc85" aria-label="អូ — play audio"><span class="native" dir="auto">អូ</span><span class="ar">ou</span></button>
-<button type="button" class="atile" data-k="79d5daf2" aria-label="អួ — play audio"><span class="native" dir="auto">អួ</span><span class="ar">uo</span></button>
-<button type="button" class="atile" data-k="78d5d95f" aria-label="អើ — play audio"><span class="native" dir="auto">អើ</span><span class="ar">aeu</span></button>
-<button type="button" class="atile" data-k="77d5d7cc" aria-label="អឿ — play audio"><span class="native" dir="auto">អឿ</span><span class="ar">oea</span></button>
-<button type="button" class="atile" data-k="88d220f8" aria-label="អៀ — play audio"><span class="native" dir="auto">អៀ</span><span class="ar">ie</span></button>
-<button type="button" class="atile" data-k="89d2228b" aria-label="អេ — play audio"><span class="native" dir="auto">អេ</span><span class="ar">ei</span></button>
-<button type="button" class="atile" data-k="8ad2241e" aria-label="អែ — play audio"><span class="native" dir="auto">អែ</span><span class="ar">ae</span></button>
-<button type="button" class="atile" data-k="8bd225b1" aria-label="អៃ — play audio"><span class="native" dir="auto">អៃ</span><span class="ar">ai</span></button>
-<button type="button" class="atile" data-k="8cd22744" aria-label="អោ — play audio"><span class="native" dir="auto">អោ</span><span class="ar">ao</span></button>
-<button type="button" class="atile" data-k="8dd228d7" aria-label="អៅ — play audio"><span class="native" dir="auto">អៅ</span><span class="ar">av</span></button>
-<button type="button" class="atile" data-k="7ee36366" aria-label="អុំ — play audio"><span class="native" dir="auto">អុំ</span><span class="ar">om</span></button>
-<button type="button" class="atile" data-k="8ed22a6a" aria-label="អំ — play audio"><span class="native" dir="auto">អំ</span><span class="ar">am</span></button>
-<button type="button" class="atile" data-k="8fd22bfd" aria-label="អះ — play audio"><span class="native" dir="auto">អះ</span><span class="ar">ah</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="80d5e5f7" aria-label="អា — play audio"><span class="native" lang="km" dir="auto">អា</span><span class="ar">aa</span></button>
+<button type="button" class="atile" data-k="7fd5e464" aria-label="អិ — play audio"><span class="native" lang="km" dir="auto">អិ</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="76d5d639" aria-label="អី — play audio"><span class="native" lang="km" dir="auto">អី</span><span class="ar">ey</span></button>
+<button type="button" class="atile" data-k="75d5d4a6" aria-label="អឹ — play audio"><span class="native" lang="km" dir="auto">អឹ</span><span class="ar">oe</span></button>
+<button type="button" class="atile" data-k="74d5d313" aria-label="អឺ — play audio"><span class="native" lang="km" dir="auto">អឺ</span><span class="ar">eu</span></button>
+<button type="button" class="atile" data-k="73d5d180" aria-label="អុ — play audio"><span class="native" lang="km" dir="auto">អុ</span><span class="ar">o</span></button>
+<button type="button" class="atile" data-k="7ad5dc85" aria-label="អូ — play audio"><span class="native" lang="km" dir="auto">អូ</span><span class="ar">ou</span></button>
+<button type="button" class="atile" data-k="79d5daf2" aria-label="អួ — play audio"><span class="native" lang="km" dir="auto">អួ</span><span class="ar">uo</span></button>
+<button type="button" class="atile" data-k="78d5d95f" aria-label="អើ — play audio"><span class="native" lang="km" dir="auto">អើ</span><span class="ar">aeu</span></button>
+<button type="button" class="atile" data-k="77d5d7cc" aria-label="អឿ — play audio"><span class="native" lang="km" dir="auto">អឿ</span><span class="ar">oea</span></button>
+<button type="button" class="atile" data-k="88d220f8" aria-label="អៀ — play audio"><span class="native" lang="km" dir="auto">អៀ</span><span class="ar">ie</span></button>
+<button type="button" class="atile" data-k="89d2228b" aria-label="អេ — play audio"><span class="native" lang="km" dir="auto">អេ</span><span class="ar">ei</span></button>
+<button type="button" class="atile" data-k="8ad2241e" aria-label="អែ — play audio"><span class="native" lang="km" dir="auto">អែ</span><span class="ar">ae</span></button>
+<button type="button" class="atile" data-k="8bd225b1" aria-label="អៃ — play audio"><span class="native" lang="km" dir="auto">អៃ</span><span class="ar">ai</span></button>
+<button type="button" class="atile" data-k="8cd22744" aria-label="អោ — play audio"><span class="native" lang="km" dir="auto">អោ</span><span class="ar">ao</span></button>
+<button type="button" class="atile" data-k="8dd228d7" aria-label="អៅ — play audio"><span class="native" lang="km" dir="auto">អៅ</span><span class="ar">av</span></button>
+<button type="button" class="atile" data-k="7ee36366" aria-label="អុំ — play audio"><span class="native" lang="km" dir="auto">អុំ</span><span class="ar">om</span></button>
+<button type="button" class="atile" data-k="8ed22a6a" aria-label="អំ — play audio"><span class="native" lang="km" dir="auto">អំ</span><span class="ar">am</span></button>
+<button type="button" class="atile" data-k="8fd22bfd" aria-label="អះ — play audio"><span class="native" lang="km" dir="auto">អះ</span><span class="ar">ah</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">33 letters, in the order the course teaches them.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="1e6b1602" aria-label="ក — play audio"><span class="native" dir="auto">ក</span><span class="ar">ka</span></button>
-<button type="button" class="atile" data-k="1f6b1795" aria-label="ខ — play audio"><span class="native" dir="auto">ខ</span><span class="ar">kha</span></button>
-<button type="button" class="atile" data-k="1c6b12dc" aria-label="គ — play audio"><span class="native" dir="auto">គ</span><span class="ar">ko</span></button>
-<button type="button" class="atile" data-k="1d6b146f" aria-label="ឃ — play audio"><span class="native" dir="auto">ឃ</span><span class="ar">kho</span></button>
-<button type="button" class="atile" data-k="1a6b0fb6" aria-label="ង — play audio"><span class="native" dir="auto">ង</span><span class="ar">ngo</span></button>
-<button type="button" class="atile" data-k="1b6b1149" aria-label="ច — play audio"><span class="native" dir="auto">ច</span><span class="ar">cha</span></button>
-<button type="button" class="atile" data-k="186b0c90" aria-label="ឆ — play audio"><span class="native" dir="auto">ឆ</span><span class="ar">chha</span></button>
-<button type="button" class="atile" data-k="196b0e23" aria-label="ជ — play audio"><span class="native" dir="auto">ជ</span><span class="ar">cho</span></button>
-<button type="button" class="atile" data-k="266b229a" aria-label="ឈ — play audio"><span class="native" dir="auto">ឈ</span><span class="ar">chho</span></button>
-<button type="button" class="atile" data-k="276b242d" aria-label="ញ — play audio"><span class="native" dir="auto">ញ</span><span class="ar">nho</span></button>
-<button type="button" class="atile" data-k="246b1f74" aria-label="ដ — play audio"><span class="native" dir="auto">ដ</span><span class="ar">da</span></button>
-<button type="button" class="atile" data-k="256b2107" aria-label="ឋ — play audio"><span class="native" dir="auto">ឋ</span><span class="ar">tha</span></button>
-<button type="button" class="atile" data-k="226b1c4e" aria-label="ឌ — play audio"><span class="native" dir="auto">ឌ</span><span class="ar">do</span></button>
-<button type="button" class="atile" data-k="236b1de1" aria-label="ឍ — play audio"><span class="native" dir="auto">ឍ</span><span class="ar">tho</span></button>
-<button type="button" class="atile" data-k="206b1928" aria-label="ណ — play audio"><span class="native" dir="auto">ណ</span><span class="ar">na</span></button>
-<button type="button" class="atile" data-k="216b1abb" aria-label="ត — play audio"><span class="native" dir="auto">ត</span><span class="ar">ta</span></button>
-<button type="button" class="atile" data-k="0e6afcd2" aria-label="ថ — play audio"><span class="native" dir="auto">ថ</span><span class="ar">tha</span></button>
-<button type="button" class="atile" data-k="0f6afe65" aria-label="ទ — play audio"><span class="native" dir="auto">ទ</span><span class="ar">to</span></button>
-<button type="button" class="atile" data-k="0c6af9ac" aria-label="ធ — play audio"><span class="native" dir="auto">ធ</span><span class="ar">tho</span></button>
-<button type="button" class="atile" data-k="0d6afb3f" aria-label="ន — play audio"><span class="native" dir="auto">ន</span><span class="ar">no</span></button>
-<button type="button" class="atile" data-k="0a6af686" aria-label="ប — play audio"><span class="native" dir="auto">ប</span><span class="ar">ba</span></button>
-<button type="button" class="atile" data-k="0b6af819" aria-label="ផ — play audio"><span class="native" dir="auto">ផ</span><span class="ar">pha</span></button>
-<button type="button" class="atile" data-k="086af360" aria-label="ព — play audio"><span class="native" dir="auto">ព</span><span class="ar">po</span></button>
-<button type="button" class="atile" data-k="096af4f3" aria-label="ភ — play audio"><span class="native" dir="auto">ភ</span><span class="ar">pho</span></button>
-<button type="button" class="atile" data-k="166b096a" aria-label="ម — play audio"><span class="native" dir="auto">ម</span><span class="ar">mo</span></button>
-<button type="button" class="atile" data-k="176b0afd" aria-label="យ — play audio"><span class="native" dir="auto">យ</span><span class="ar">yo</span></button>
-<button type="button" class="atile" data-k="146b0644" aria-label="រ — play audio"><span class="native" dir="auto">រ</span><span class="ar">ro</span></button>
-<button type="button" class="atile" data-k="156b07d7" aria-label="ល — play audio"><span class="native" dir="auto">ល</span><span class="ar">lo</span></button>
-<button type="button" class="atile" data-k="126b031e" aria-label="វ — play audio"><span class="native" dir="auto">វ</span><span class="ar">vo</span></button>
-<button type="button" class="atile" data-k="116b018b" aria-label="ស — play audio"><span class="native" dir="auto">ស</span><span class="ar">sa</span></button>
-<button type="button" class="atile" data-k="fe6ae3a2" aria-label="ហ — play audio"><span class="native" dir="auto">ហ</span><span class="ar">ha</span></button>
-<button type="button" class="atile" data-k="ff6ae535" aria-label="ឡ — play audio"><span class="native" dir="auto">ឡ</span><span class="ar">la</span></button>
-<button type="button" class="atile" data-k="fc6ae07c" aria-label="អ — play audio"><span class="native" dir="auto">អ</span><span class="ar">a</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="1e6b1602" aria-label="ក — play audio"><span class="native" lang="km" dir="auto">ក</span><span class="ar">ka</span></button>
+<button type="button" class="atile" data-k="1f6b1795" aria-label="ខ — play audio"><span class="native" lang="km" dir="auto">ខ</span><span class="ar">kha</span></button>
+<button type="button" class="atile" data-k="1c6b12dc" aria-label="គ — play audio"><span class="native" lang="km" dir="auto">គ</span><span class="ar">ko</span></button>
+<button type="button" class="atile" data-k="1d6b146f" aria-label="ឃ — play audio"><span class="native" lang="km" dir="auto">ឃ</span><span class="ar">kho</span></button>
+<button type="button" class="atile" data-k="1a6b0fb6" aria-label="ង — play audio"><span class="native" lang="km" dir="auto">ង</span><span class="ar">ngo</span></button>
+<button type="button" class="atile" data-k="1b6b1149" aria-label="ច — play audio"><span class="native" lang="km" dir="auto">ច</span><span class="ar">cha</span></button>
+<button type="button" class="atile" data-k="186b0c90" aria-label="ឆ — play audio"><span class="native" lang="km" dir="auto">ឆ</span><span class="ar">chha</span></button>
+<button type="button" class="atile" data-k="196b0e23" aria-label="ជ — play audio"><span class="native" lang="km" dir="auto">ជ</span><span class="ar">cho</span></button>
+<button type="button" class="atile" data-k="266b229a" aria-label="ឈ — play audio"><span class="native" lang="km" dir="auto">ឈ</span><span class="ar">chho</span></button>
+<button type="button" class="atile" data-k="276b242d" aria-label="ញ — play audio"><span class="native" lang="km" dir="auto">ញ</span><span class="ar">nho</span></button>
+<button type="button" class="atile" data-k="246b1f74" aria-label="ដ — play audio"><span class="native" lang="km" dir="auto">ដ</span><span class="ar">da</span></button>
+<button type="button" class="atile" data-k="256b2107" aria-label="ឋ — play audio"><span class="native" lang="km" dir="auto">ឋ</span><span class="ar">tha</span></button>
+<button type="button" class="atile" data-k="226b1c4e" aria-label="ឌ — play audio"><span class="native" lang="km" dir="auto">ឌ</span><span class="ar">do</span></button>
+<button type="button" class="atile" data-k="236b1de1" aria-label="ឍ — play audio"><span class="native" lang="km" dir="auto">ឍ</span><span class="ar">tho</span></button>
+<button type="button" class="atile" data-k="206b1928" aria-label="ណ — play audio"><span class="native" lang="km" dir="auto">ណ</span><span class="ar">na</span></button>
+<button type="button" class="atile" data-k="216b1abb" aria-label="ត — play audio"><span class="native" lang="km" dir="auto">ត</span><span class="ar">ta</span></button>
+<button type="button" class="atile" data-k="0e6afcd2" aria-label="ថ — play audio"><span class="native" lang="km" dir="auto">ថ</span><span class="ar">tha</span></button>
+<button type="button" class="atile" data-k="0f6afe65" aria-label="ទ — play audio"><span class="native" lang="km" dir="auto">ទ</span><span class="ar">to</span></button>
+<button type="button" class="atile" data-k="0c6af9ac" aria-label="ធ — play audio"><span class="native" lang="km" dir="auto">ធ</span><span class="ar">tho</span></button>
+<button type="button" class="atile" data-k="0d6afb3f" aria-label="ន — play audio"><span class="native" lang="km" dir="auto">ន</span><span class="ar">no</span></button>
+<button type="button" class="atile" data-k="0a6af686" aria-label="ប — play audio"><span class="native" lang="km" dir="auto">ប</span><span class="ar">ba</span></button>
+<button type="button" class="atile" data-k="0b6af819" aria-label="ផ — play audio"><span class="native" lang="km" dir="auto">ផ</span><span class="ar">pha</span></button>
+<button type="button" class="atile" data-k="086af360" aria-label="ព — play audio"><span class="native" lang="km" dir="auto">ព</span><span class="ar">po</span></button>
+<button type="button" class="atile" data-k="096af4f3" aria-label="ភ — play audio"><span class="native" lang="km" dir="auto">ភ</span><span class="ar">pho</span></button>
+<button type="button" class="atile" data-k="166b096a" aria-label="ម — play audio"><span class="native" lang="km" dir="auto">ម</span><span class="ar">mo</span></button>
+<button type="button" class="atile" data-k="176b0afd" aria-label="យ — play audio"><span class="native" lang="km" dir="auto">យ</span><span class="ar">yo</span></button>
+<button type="button" class="atile" data-k="146b0644" aria-label="រ — play audio"><span class="native" lang="km" dir="auto">រ</span><span class="ar">ro</span></button>
+<button type="button" class="atile" data-k="156b07d7" aria-label="ល — play audio"><span class="native" lang="km" dir="auto">ល</span><span class="ar">lo</span></button>
+<button type="button" class="atile" data-k="126b031e" aria-label="វ — play audio"><span class="native" lang="km" dir="auto">វ</span><span class="ar">vo</span></button>
+<button type="button" class="atile" data-k="116b018b" aria-label="ស — play audio"><span class="native" lang="km" dir="auto">ស</span><span class="ar">sa</span></button>
+<button type="button" class="atile" data-k="fe6ae3a2" aria-label="ហ — play audio"><span class="native" lang="km" dir="auto">ហ</span><span class="ar">ha</span></button>
+<button type="button" class="atile" data-k="ff6ae535" aria-label="ឡ — play audio"><span class="native" lang="km" dir="auto">ឡ</span><span class="ar">la</span></button>
+<button type="button" class="atile" data-k="fc6ae07c" aria-label="អ — play audio"><span class="native" lang="km" dir="auto">អ</span><span class="ar">a</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Khmer.</p>
-  <div class="agrid"><button type="button" class="atile" data-k="646f55cb" aria-label="០ — play audio"><span class="native" dir="auto">០</span><span class="ar">0</span></button>
-<button type="button" class="atile" data-k="636f5438" aria-label="១ — play audio"><span class="native" dir="auto">១</span><span class="ar">1</span></button>
-<button type="button" class="atile" data-k="666f58f1" aria-label="២ — play audio"><span class="native" dir="auto">២</span><span class="ar">2</span></button>
-<button type="button" class="atile" data-k="656f575e" aria-label="៣ — play audio"><span class="native" dir="auto">៣</span><span class="ar">3</span></button>
-<button type="button" class="atile" data-k="686f5c17" aria-label="៤ — play audio"><span class="native" dir="auto">៤</span><span class="ar">4</span></button>
-<button type="button" class="atile" data-k="676f5a84" aria-label="៥ — play audio"><span class="native" dir="auto">៥</span><span class="ar">5</span></button>
-<button type="button" class="atile" data-k="6a6f5f3d" aria-label="៦ — play audio"><span class="native" dir="auto">៦</span><span class="ar">6</span></button>
-<button type="button" class="atile" data-k="696f5daa" aria-label="៧ — play audio"><span class="native" dir="auto">៧</span><span class="ar">7</span></button>
-<button type="button" class="atile" data-k="5c6f4933" aria-label="៨ — play audio"><span class="native" dir="auto">៨</span><span class="ar">8</span></button>
-<button type="button" class="atile" data-k="5b6f47a0" aria-label="៩ — play audio"><span class="native" dir="auto">៩</span><span class="ar">9</span></button></div>
+  <div class="agrid"><button type="button" class="atile" data-k="646f55cb" aria-label="០ — play audio"><span class="native" lang="km" dir="auto">០</span><span class="ar">0</span></button>
+<button type="button" class="atile" data-k="636f5438" aria-label="១ — play audio"><span class="native" lang="km" dir="auto">១</span><span class="ar">1</span></button>
+<button type="button" class="atile" data-k="666f58f1" aria-label="២ — play audio"><span class="native" lang="km" dir="auto">២</span><span class="ar">2</span></button>
+<button type="button" class="atile" data-k="656f575e" aria-label="៣ — play audio"><span class="native" lang="km" dir="auto">៣</span><span class="ar">3</span></button>
+<button type="button" class="atile" data-k="686f5c17" aria-label="៤ — play audio"><span class="native" lang="km" dir="auto">៤</span><span class="ar">4</span></button>
+<button type="button" class="atile" data-k="676f5a84" aria-label="៥ — play audio"><span class="native" lang="km" dir="auto">៥</span><span class="ar">5</span></button>
+<button type="button" class="atile" data-k="6a6f5f3d" aria-label="៦ — play audio"><span class="native" lang="km" dir="auto">៦</span><span class="ar">6</span></button>
+<button type="button" class="atile" data-k="696f5daa" aria-label="៧ — play audio"><span class="native" lang="km" dir="auto">៧</span><span class="ar">7</span></button>
+<button type="button" class="atile" data-k="5c6f4933" aria-label="៨ — play audio"><span class="native" lang="km" dir="auto">៨</span><span class="ar">8</span></button>
+<button type="button" class="atile" data-k="5b6f47a0" aria-label="៩ — play audio"><span class="native" lang="km" dir="auto">៩</span><span class="ar">9</span></button></div>
 </section>
 
 <section class="block no-print">

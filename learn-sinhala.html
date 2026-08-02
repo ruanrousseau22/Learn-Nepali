@@ -34,6 +34,7 @@
 :root{--sky1:#F7E9CF;--sky2:#FBF6EA;--mtn-far:#9CBED4;--mtn-mid:#C99356;--mtn-near:#2E8E57;--snow:#FFFFFF;--orb:#F2A93B;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#17202E;--sky2:#0E1218;--mtn-far:#2A3E52;--mtn-mid:#5E4830;--mtn-near:#1A5C3C;--snow:#C7D6E6;--orb:#EDE0C2;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Sinhala</em></h1>
-    <div class="nat native">සිංහල</div>
+    <div class="nat native" lang="si">සිංහල</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=si">Start learning</a>
     <div class="stats">
@@ -134,99 +135,99 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Sinhala words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">ආයුබෝවන්</td><td class="rom">Aayuboowan</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">ස්තූතියි</td><td class="rom">Sthuuthiyi</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">ඔව්</td><td class="rom">Ov</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">නෑ</td><td class="rom">Naee</td><td>No</td></tr>
-<tr><td class="native" dir="auto">වතුර</td><td class="rom">Wathura</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">බත්</td><td class="rom">Bath</td><td>Rice / a meal</td></tr>
-<tr><td class="native" dir="auto">තේ</td><td class="rom">Thee</td><td>Tea</td></tr>
-<tr><td class="native" dir="auto">හොඳයි</td><td class="rom">Hondhayi</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">මම</td><td class="rom">Mama</td><td>I</td></tr>
-<tr><td class="native" dir="auto">ඔයා</td><td class="rom">Oyaa</td><td>You</td></tr>
-<tr><td class="native" dir="auto">ලොකු</td><td class="rom">Loku</td><td>Big</td></tr>
-<tr><td class="native" dir="auto">පොඩි</td><td class="rom">Podi</td><td>Small</td></tr>
-<tr><td class="native" dir="auto">අද</td><td class="rom">Adha</td><td>Today</td></tr>
-<tr><td class="native" dir="auto">අඹ</td><td class="rom">Amba</td><td>Mango</td></tr>
-<tr><td class="native" dir="auto">කොහොමද</td><td class="rom">Kohomadha</td><td>How? / How are you?</td></tr>
-<tr><td class="native" dir="auto">සමාවෙන්න</td><td class="rom">Samaawenna</td><td>Sorry / Excuse me</td></tr>
-<tr><td class="native" dir="auto">ගෙදර</td><td class="rom">Gedhara</td><td>Home / house</td></tr>
-<tr><td class="native" dir="auto">සල්ලි</td><td class="rom">Salli</td><td>Money</td></tr>
-<tr><td class="native" dir="auto">හෙට</td><td class="rom">Heta</td><td>Tomorrow</td></tr>
-<tr><td class="native" dir="auto">අම්මා</td><td class="rom">Ammaa</td><td>Mother</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="si" dir="auto">ආයුබෝවන්</td><td class="rom">Aayuboowan</td><td>Hello</td></tr>
+<tr><td class="native" lang="si" dir="auto">ස්තූතියි</td><td class="rom">Sthuuthiyi</td><td>Thank you</td></tr>
+<tr><td class="native" lang="si" dir="auto">ඔව්</td><td class="rom">Ov</td><td>Yes</td></tr>
+<tr><td class="native" lang="si" dir="auto">නෑ</td><td class="rom">Naee</td><td>No</td></tr>
+<tr><td class="native" lang="si" dir="auto">වතුර</td><td class="rom">Wathura</td><td>Water</td></tr>
+<tr><td class="native" lang="si" dir="auto">බත්</td><td class="rom">Bath</td><td>Rice / a meal</td></tr>
+<tr><td class="native" lang="si" dir="auto">තේ</td><td class="rom">Thee</td><td>Tea</td></tr>
+<tr><td class="native" lang="si" dir="auto">හොඳයි</td><td class="rom">Hondhayi</td><td>Good</td></tr>
+<tr><td class="native" lang="si" dir="auto">මම</td><td class="rom">Mama</td><td>I</td></tr>
+<tr><td class="native" lang="si" dir="auto">ඔයා</td><td class="rom">Oyaa</td><td>You</td></tr>
+<tr><td class="native" lang="si" dir="auto">ලොකු</td><td class="rom">Loku</td><td>Big</td></tr>
+<tr><td class="native" lang="si" dir="auto">පොඩි</td><td class="rom">Podi</td><td>Small</td></tr>
+<tr><td class="native" lang="si" dir="auto">අද</td><td class="rom">Adha</td><td>Today</td></tr>
+<tr><td class="native" lang="si" dir="auto">අඹ</td><td class="rom">Amba</td><td>Mango</td></tr>
+<tr><td class="native" lang="si" dir="auto">කොහොමද</td><td class="rom">Kohomadha</td><td>How? / How are you?</td></tr>
+<tr><td class="native" lang="si" dir="auto">සමාවෙන්න</td><td class="rom">Samaawenna</td><td>Sorry / Excuse me</td></tr>
+<tr><td class="native" lang="si" dir="auto">ගෙදර</td><td class="rom">Gedhara</td><td>Home / house</td></tr>
+<tr><td class="native" lang="si" dir="auto">සල්ලි</td><td class="rom">Salli</td><td>Money</td></tr>
+<tr><td class="native" lang="si" dir="auto">හෙට</td><td class="rom">Heta</td><td>Tomorrow</td></tr>
+<tr><td class="native" lang="si" dir="auto">අම්මා</td><td class="rom">Ammaa</td><td>Mother</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Sinhala</h2>
-    <table><tbody><tr><td class="native" dir="auto">බිංදුව</td><td class="rom">bindhuwa (0)</td></tr>
-<tr><td class="native" dir="auto">එක</td><td class="rom">eka (1)</td></tr>
-<tr><td class="native" dir="auto">දෙක</td><td class="rom">dheka (2)</td></tr>
-<tr><td class="native" dir="auto">තුන</td><td class="rom">thuna (3)</td></tr>
-<tr><td class="native" dir="auto">හතර</td><td class="rom">hathara (4)</td></tr>
-<tr><td class="native" dir="auto">පහ</td><td class="rom">paha (5)</td></tr>
-<tr><td class="native" dir="auto">හය</td><td class="rom">haya (6)</td></tr>
-<tr><td class="native" dir="auto">හත</td><td class="rom">hatha (7)</td></tr>
-<tr><td class="native" dir="auto">අට</td><td class="rom">ata (8)</td></tr>
-<tr><td class="native" dir="auto">නවය</td><td class="rom">nawaya (9)</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="si" dir="auto">බිංදුව</td><td class="rom">bindhuwa (0)</td></tr>
+<tr><td class="native" lang="si" dir="auto">එක</td><td class="rom">eka (1)</td></tr>
+<tr><td class="native" lang="si" dir="auto">දෙක</td><td class="rom">dheka (2)</td></tr>
+<tr><td class="native" lang="si" dir="auto">තුන</td><td class="rom">thuna (3)</td></tr>
+<tr><td class="native" lang="si" dir="auto">හතර</td><td class="rom">hathara (4)</td></tr>
+<tr><td class="native" lang="si" dir="auto">පහ</td><td class="rom">paha (5)</td></tr>
+<tr><td class="native" lang="si" dir="auto">හය</td><td class="rom">haya (6)</td></tr>
+<tr><td class="native" lang="si" dir="auto">හත</td><td class="rom">hatha (7)</td></tr>
+<tr><td class="native" lang="si" dir="auto">අට</td><td class="rom">ata (8)</td></tr>
+<tr><td class="native" lang="si" dir="auto">නවය</td><td class="rom">nawaya (9)</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Sinhala script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">අ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ආ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">ඇ</span><span class="ar">ae</span></div>
-<div class="atile"><span class="native" dir="auto">ඈ</span><span class="ar">aee</span></div>
-<div class="atile"><span class="native" dir="auto">ඉ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ඊ</span><span class="ar">ii</span></div>
-<div class="atile"><span class="native" dir="auto">උ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ඌ</span><span class="ar">uu</span></div>
-<div class="atile"><span class="native" dir="auto">එ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ඒ</span><span class="ar">ee</span></div>
-<div class="atile"><span class="native" dir="auto">ඔ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">ඕ</span><span class="ar">oo</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="si" dir="auto">අ</span><span class="ar">a</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ආ</span><span class="ar">aa</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඇ</span><span class="ar">ae</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඈ</span><span class="ar">aee</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඉ</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඊ</span><span class="ar">ii</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">උ</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඌ</span><span class="ar">uu</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">එ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඒ</span><span class="ar">ee</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඔ</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඕ</span><span class="ar">oo</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">ක</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ඛ</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ග</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">ඝ</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">ඞ</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">ඟ</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">ච</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">ඡ</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">ජ</span><span class="ar">ja</span></div>
-<div class="atile"><span class="native" dir="auto">ඣ</span><span class="ar">ja</span></div>
-<div class="atile"><span class="native" dir="auto">ඤ</span><span class="ar">nya</span></div>
-<div class="atile"><span class="native" dir="auto">ඦ</span><span class="ar">nja</span></div>
-<div class="atile"><span class="native" dir="auto">ට</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ඨ</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ඩ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ඪ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ණ</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ඬ</span><span class="ar">nda</span></div>
-<div class="atile"><span class="native" dir="auto">ත</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ථ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ද</span><span class="ar">dha</span></div>
-<div class="atile"><span class="native" dir="auto">ධ</span><span class="ar">dha</span></div>
-<div class="atile"><span class="native" dir="auto">න</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ඳ</span><span class="ar">ndha</span></div>
-<div class="atile"><span class="native" dir="auto">ප</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">ඵ</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">බ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">භ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">ම</span><span class="ar">ma</span></div>
-<div class="atile"><span class="native" dir="auto">ඹ</span><span class="ar">mba</span></div>
-<div class="atile"><span class="native" dir="auto">ය</span><span class="ar">ya</span></div>
-<div class="atile"><span class="native" dir="auto">ර</span><span class="ar">ra</span></div>
-<div class="atile"><span class="native" dir="auto">ල</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">ව</span><span class="ar">wa</span></div>
-<div class="atile"><span class="native" dir="auto">ශ</span><span class="ar">sha</span></div>
-<div class="atile"><span class="native" dir="auto">ෂ</span><span class="ar">sha</span></div>
-<div class="atile"><span class="native" dir="auto">ස</span><span class="ar">sa</span></div>
-<div class="atile"><span class="native" dir="auto">හ</span><span class="ar">ha</span></div>
-<div class="atile"><span class="native" dir="auto">ළ</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">ෆ</span><span class="ar">fa</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="si" dir="auto">ක</span><span class="ar">ka</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඛ</span><span class="ar">ka</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ග</span><span class="ar">ga</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඝ</span><span class="ar">ga</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඞ</span><span class="ar">nga</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඟ</span><span class="ar">nga</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ච</span><span class="ar">cha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඡ</span><span class="ar">cha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ජ</span><span class="ar">ja</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඣ</span><span class="ar">ja</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඤ</span><span class="ar">nya</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඦ</span><span class="ar">nja</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ට</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඨ</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඩ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඪ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ණ</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඬ</span><span class="ar">nda</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ත</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ථ</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ද</span><span class="ar">dha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ධ</span><span class="ar">dha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">න</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඳ</span><span class="ar">ndha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ප</span><span class="ar">pa</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඵ</span><span class="ar">pa</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">බ</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">භ</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ම</span><span class="ar">ma</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ඹ</span><span class="ar">mba</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ය</span><span class="ar">ya</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ර</span><span class="ar">ra</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ල</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ව</span><span class="ar">wa</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ශ</span><span class="ar">sha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ෂ</span><span class="ar">sha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ස</span><span class="ar">sa</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">හ</span><span class="ar">ha</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ළ</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="si" dir="auto">ෆ</span><span class="ar">fa</span></div></div>
   </section>
 
   <section class="block">

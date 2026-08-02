@@ -34,6 +34,7 @@
 :root{--sky1:#CFE4F7;--sky2:#EFF4FB;--mtn-far:#A7C4DD;--mtn-mid:#D89A57;--mtn-near:#2E8E78;--snow:#FFFFFF;--orb:#F6D98F;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#142539;--sky2:#0F1419;--mtn-far:#21384F;--mtn-mid:#6E5230;--mtn-near:#184A40;--snow:#C7D6E6;--orb:#D9E4F0;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Nepali</em></h1>
-    <div class="nat native">नेपाली</div>
+    <div class="nat native" lang="ne">नेपाली</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=ne">Start learning</a>
     <div class="stats">
@@ -174,92 +175,92 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Nepali words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">नमस्ते</td><td class="rom">Namaste</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">धन्यवाद</td><td class="rom">Dhanyabad</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">माफ गर्नुस्</td><td class="rom">Maaf garnoos</td><td>Excuse me / Sorry</td></tr>
-<tr><td class="native" dir="auto">हो</td><td class="rom">Ho</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">होइन</td><td class="rom">Hoina</td><td>No</td></tr>
-<tr><td class="native" dir="auto">ठीक छ</td><td class="rom">Theek chha</td><td>It is okay</td></tr>
-<tr><td class="native" dir="auto">पानी</td><td class="rom">Paani</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">खाना</td><td class="rom">Khaana</td><td>Food</td></tr>
-<tr><td class="native" dir="auto">घर</td><td class="rom">Ghar</td><td>Home</td></tr>
-<tr><td class="native" dir="auto">मान्छे</td><td class="rom">Maanchhe</td><td>Person</td></tr>
-<tr><td class="native" dir="auto">राम्रो</td><td class="rom">Raamro</td><td>Good / Beautiful</td></tr>
-<tr><td class="native" dir="auto">ठूलो</td><td class="rom">Thoolo</td><td>Big</td></tr>
-<tr><td class="native" dir="auto">सानो</td><td class="rom">Saano</td><td>Small</td></tr>
-<tr><td class="native" dir="auto">आज</td><td class="rom">Aaja</td><td>today</td></tr>
-<tr><td class="native" dir="auto">भोलि</td><td class="rom">Bholi</td><td>tomorrow</td></tr>
-<tr><td class="native" dir="auto">पैसा</td><td class="rom">Paisa</td><td>Money</td></tr>
-<tr><td class="native" dir="auto">बाटो</td><td class="rom">Baato</td><td>Road / Way</td></tr>
-<tr><td class="native" dir="auto">पहाड</td><td class="rom">Pahaad</td><td>Mountain</td></tr>
-<tr><td class="native" dir="auto">खुसी</td><td class="rom">Khusi</td><td>Happy</td></tr>
-<tr><td class="native" dir="auto">चिया</td><td class="rom">Chiya</td><td>Tea</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="ne" dir="auto">नमस्ते</td><td class="rom">Namaste</td><td>Hello</td></tr>
+<tr><td class="native" lang="ne" dir="auto">धन्यवाद</td><td class="rom">Dhanyabad</td><td>Thank you</td></tr>
+<tr><td class="native" lang="ne" dir="auto">माफ गर्नुस्</td><td class="rom">Maaf garnoos</td><td>Excuse me / Sorry</td></tr>
+<tr><td class="native" lang="ne" dir="auto">हो</td><td class="rom">Ho</td><td>Yes</td></tr>
+<tr><td class="native" lang="ne" dir="auto">होइन</td><td class="rom">Hoina</td><td>No</td></tr>
+<tr><td class="native" lang="ne" dir="auto">ठीक छ</td><td class="rom">Theek chha</td><td>It is okay</td></tr>
+<tr><td class="native" lang="ne" dir="auto">पानी</td><td class="rom">Paani</td><td>Water</td></tr>
+<tr><td class="native" lang="ne" dir="auto">खाना</td><td class="rom">Khaana</td><td>Food</td></tr>
+<tr><td class="native" lang="ne" dir="auto">घर</td><td class="rom">Ghar</td><td>Home</td></tr>
+<tr><td class="native" lang="ne" dir="auto">मान्छे</td><td class="rom">Maanchhe</td><td>Person</td></tr>
+<tr><td class="native" lang="ne" dir="auto">राम्रो</td><td class="rom">Raamro</td><td>Good / Beautiful</td></tr>
+<tr><td class="native" lang="ne" dir="auto">ठूलो</td><td class="rom">Thoolo</td><td>Big</td></tr>
+<tr><td class="native" lang="ne" dir="auto">सानो</td><td class="rom">Saano</td><td>Small</td></tr>
+<tr><td class="native" lang="ne" dir="auto">आज</td><td class="rom">Aaja</td><td>today</td></tr>
+<tr><td class="native" lang="ne" dir="auto">भोलि</td><td class="rom">Bholi</td><td>tomorrow</td></tr>
+<tr><td class="native" lang="ne" dir="auto">पैसा</td><td class="rom">Paisa</td><td>Money</td></tr>
+<tr><td class="native" lang="ne" dir="auto">बाटो</td><td class="rom">Baato</td><td>Road / Way</td></tr>
+<tr><td class="native" lang="ne" dir="auto">पहाड</td><td class="rom">Pahaad</td><td>Mountain</td></tr>
+<tr><td class="native" lang="ne" dir="auto">खुसी</td><td class="rom">Khusi</td><td>Happy</td></tr>
+<tr><td class="native" lang="ne" dir="auto">चिया</td><td class="rom">Chiya</td><td>Tea</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Nepali</h2>
-    <table><tbody><tr><td class="native" dir="auto">०</td><td class="rom">0</td></tr>
-<tr><td class="native" dir="auto">१</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">२</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">३</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">४</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">५</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">६</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">७</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">८</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">९</td><td class="rom">9</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="ne" dir="auto">०</td><td class="rom">0</td></tr>
+<tr><td class="native" lang="ne" dir="auto">१</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="ne" dir="auto">२</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="ne" dir="auto">३</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="ne" dir="auto">४</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="ne" dir="auto">५</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="ne" dir="auto">६</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="ne" dir="auto">७</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="ne" dir="auto">८</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="ne" dir="auto">९</td><td class="rom">9</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Devanagari script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">अ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">आ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">इ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ई</span><span class="ar">ee</span></div>
-<div class="atile"><span class="native" dir="auto">उ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ऊ</span><span class="ar">oo</span></div>
-<div class="atile"><span class="native" dir="auto">ए</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ऐ</span><span class="ar">ai</span></div>
-<div class="atile"><span class="native" dir="auto">ओ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">औ</span><span class="ar">au</span></div>
-<div class="atile"><span class="native" dir="auto">अं</span><span class="ar">an</span></div>
-<div class="atile"><span class="native" dir="auto">अः</span><span class="ar">ah</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="ne" dir="auto">अ</span><span class="ar">a</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">आ</span><span class="ar">aa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">इ</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ई</span><span class="ar">ee</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">उ</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ऊ</span><span class="ar">oo</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ए</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ऐ</span><span class="ar">ai</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ओ</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">औ</span><span class="ar">au</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">अं</span><span class="ar">an</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">अः</span><span class="ar">ah</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">क</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ख</span><span class="ar">kha</span></div>
-<div class="atile"><span class="native" dir="auto">ग</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">घ</span><span class="ar">gha</span></div>
-<div class="atile"><span class="native" dir="auto">ङ</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">च</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">छ</span><span class="ar">chha</span></div>
-<div class="atile"><span class="native" dir="auto">ज</span><span class="ar">ja</span></div>
-<div class="atile"><span class="native" dir="auto">झ</span><span class="ar">jha</span></div>
-<div class="atile"><span class="native" dir="auto">ञ</span><span class="ar">nya</span></div>
-<div class="atile"><span class="native" dir="auto">ट</span><span class="ar">ṭa</span></div>
-<div class="atile"><span class="native" dir="auto">ठ</span><span class="ar">ṭha</span></div>
-<div class="atile"><span class="native" dir="auto">ड</span><span class="ar">ḍa</span></div>
-<div class="atile"><span class="native" dir="auto">ढ</span><span class="ar">ḍha</span></div>
-<div class="atile"><span class="native" dir="auto">ण</span><span class="ar">ṇa</span></div>
-<div class="atile"><span class="native" dir="auto">त</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">थ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">द</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ध</span><span class="ar">dha</span></div>
-<div class="atile"><span class="native" dir="auto">न</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">प</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">फ</span><span class="ar">pha</span></div>
-<div class="atile"><span class="native" dir="auto">ब</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">भ</span><span class="ar">bha</span></div>
-<div class="atile"><span class="native" dir="auto">म</span><span class="ar">ma</span></div>
-<div class="atile"><span class="native" dir="auto">य</span><span class="ar">ya</span></div>
-<div class="atile"><span class="native" dir="auto">र</span><span class="ar">ra</span></div>
-<div class="atile"><span class="native" dir="auto">ल</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">व</span><span class="ar">wa</span></div>
-<div class="atile"><span class="native" dir="auto">श</span><span class="ar">sha</span></div>
-<div class="atile"><span class="native" dir="auto">ष</span><span class="ar">ṣha</span></div>
-<div class="atile"><span class="native" dir="auto">स</span><span class="ar">sa</span></div>
-<div class="atile"><span class="native" dir="auto">ह</span><span class="ar">ha</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="ne" dir="auto">क</span><span class="ar">ka</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ख</span><span class="ar">kha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ग</span><span class="ar">ga</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">घ</span><span class="ar">gha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ङ</span><span class="ar">nga</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">च</span><span class="ar">cha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">छ</span><span class="ar">chha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ज</span><span class="ar">ja</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">झ</span><span class="ar">jha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ञ</span><span class="ar">nya</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ट</span><span class="ar">ṭa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ठ</span><span class="ar">ṭha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ड</span><span class="ar">ḍa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ढ</span><span class="ar">ḍha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ण</span><span class="ar">ṇa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">त</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">थ</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">द</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ध</span><span class="ar">dha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">न</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">प</span><span class="ar">pa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">फ</span><span class="ar">pha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ब</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">भ</span><span class="ar">bha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">म</span><span class="ar">ma</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">य</span><span class="ar">ya</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">र</span><span class="ar">ra</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ल</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">व</span><span class="ar">wa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">श</span><span class="ar">sha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ष</span><span class="ar">ṣha</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">स</span><span class="ar">sa</span></div>
+<div class="atile"><span class="native" lang="ne" dir="auto">ह</span><span class="ar">ha</span></div></div>
   </section>
 
   <section class="block">

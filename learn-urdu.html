@@ -34,6 +34,7 @@
 :root{--sky1:#F6E3D0;--sky2:#FCF5EC;--mtn-far:#A6B3C7;--mtn-mid:#C4763F;--mtn-near:#4A8C4F;--snow:#FFFFFF;--orb:#F0A93C;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40;--blossom:#F3C9D3}
 @media(prefers-color-scheme:dark){:root{--sky1:#241A21;--sky2:#140F14;--mtn-far:#3A4358;--mtn-mid:#6B3F26;--mtn-near:#1E5232;--snow:#C7D6E6;--orb:#EFE0BF;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058;--blossom:#7E4E5C}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Urdu</em></h1>
-    <div class="nat native" dir="rtl">اردو</div>
+    <div class="nat native" lang="ur" dir="rtl">اردو</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=ur">Start learning</a>
     <div class="stats">
@@ -134,86 +135,86 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Urdu words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="rtl">سلام</td><td class="rom">salaam</td><td>Hello</td></tr>
-<tr><td class="native" dir="rtl">شکریہ</td><td class="rom">shukriya</td><td>Thank you</td></tr>
-<tr><td class="native" dir="rtl">جی ہاں</td><td class="rom">jee haan</td><td>Yes</td></tr>
-<tr><td class="native" dir="rtl">جی نہیں</td><td class="rom">jee nahin</td><td>No</td></tr>
-<tr><td class="native" dir="rtl">پانی</td><td class="rom">paani</td><td>water</td></tr>
-<tr><td class="native" dir="rtl">کھانا</td><td class="rom">khaanaa</td><td>food</td></tr>
-<tr><td class="native" dir="rtl">گھر</td><td class="rom">ghar</td><td>house</td></tr>
-<tr><td class="native" dir="rtl">کتاب</td><td class="rom">kitaab</td><td>book</td></tr>
-<tr><td class="native" dir="rtl">نام</td><td class="rom">naam</td><td>name</td></tr>
-<tr><td class="native" dir="rtl">اچھا</td><td class="rom">achhaa</td><td>good</td></tr>
-<tr><td class="native" dir="rtl">بڑا</td><td class="rom">barraa</td><td>big</td></tr>
-<tr><td class="native" dir="rtl">میں</td><td class="rom">main</td><td>I</td></tr>
-<tr><td class="native" dir="rtl">آپ</td><td class="rom">aap</td><td>you (polite)</td></tr>
-<tr><td class="native" dir="rtl">ہے</td><td class="rom">hai</td><td>is</td></tr>
-<tr><td class="native" dir="rtl">نہیں</td><td class="rom">nahin</td><td>not</td></tr>
-<tr><td class="native" dir="rtl">کہاں</td><td class="rom">kahaan</td><td>where</td></tr>
-<tr><td class="native" dir="rtl">کیا</td><td class="rom">kyaa</td><td>what</td></tr>
-<tr><td class="native" dir="rtl">مجھے</td><td class="rom">mujhe</td><td>to me</td></tr>
-<tr><td class="native" dir="rtl">چاہیے</td><td class="rom">chaahiye</td><td>want / need</td></tr>
-<tr><td class="native" dir="rtl">ایک</td><td class="rom">ek</td><td>1</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="ur" dir="rtl">سلام</td><td class="rom">salaam</td><td>Hello</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">شکریہ</td><td class="rom">shukriya</td><td>Thank you</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">جی ہاں</td><td class="rom">jee haan</td><td>Yes</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">جی نہیں</td><td class="rom">jee nahin</td><td>No</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">پانی</td><td class="rom">paani</td><td>water</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">کھانا</td><td class="rom">khaanaa</td><td>food</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">گھر</td><td class="rom">ghar</td><td>house</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">کتاب</td><td class="rom">kitaab</td><td>book</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">نام</td><td class="rom">naam</td><td>name</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">اچھا</td><td class="rom">achhaa</td><td>good</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">بڑا</td><td class="rom">barraa</td><td>big</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">میں</td><td class="rom">main</td><td>I</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">آپ</td><td class="rom">aap</td><td>you (polite)</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">ہے</td><td class="rom">hai</td><td>is</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">نہیں</td><td class="rom">nahin</td><td>not</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">کہاں</td><td class="rom">kahaan</td><td>where</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">کیا</td><td class="rom">kyaa</td><td>what</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">مجھے</td><td class="rom">mujhe</td><td>to me</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">چاہیے</td><td class="rom">chaahiye</td><td>want / need</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">ایک</td><td class="rom">ek</td><td>1</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Urdu</h2>
-    <table><tbody><tr><td class="native" dir="rtl">۰</td><td class="rom">0</td></tr>
-<tr><td class="native" dir="rtl">۱</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="rtl">۲</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="rtl">۳</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="rtl">۴</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="rtl">۵</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="rtl">۶</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="rtl">۷</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="rtl">۸</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="rtl">۹</td><td class="rom">9</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="ur" dir="rtl">۰</td><td class="rom">0</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۱</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۲</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۳</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۴</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۵</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۶</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۷</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۸</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="ur" dir="rtl">۹</td><td class="rom">9</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Urdu (Nastaliq) script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="rtl">ا</span><span class="ar">aa / alif</span></div>
-<div class="atile"><span class="native" dir="rtl">آ</span><span class="ar">aa (long)</span></div>
-<div class="atile"><span class="native" dir="rtl">و</span><span class="ar">o / oo / w</span></div>
-<div class="atile"><span class="native" dir="rtl">ی</span><span class="ar">ee / y</span></div>
-<div class="atile"><span class="native" dir="rtl">ے</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="rtl">ھ</span><span class="ar">h (the puff)</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="ur" dir="rtl">ا</span><span class="ar">aa / alif</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">آ</span><span class="ar">aa (long)</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">و</span><span class="ar">o / oo / w</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ی</span><span class="ar">ee / y</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ے</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ھ</span><span class="ar">h (the puff)</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="rtl">ب</span><span class="ar">b</span></div>
-<div class="atile"><span class="native" dir="rtl">پ</span><span class="ar">p</span></div>
-<div class="atile"><span class="native" dir="rtl">ت</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="rtl">ٹ</span><span class="ar">tt</span></div>
-<div class="atile"><span class="native" dir="rtl">ث</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ج</span><span class="ar">j</span></div>
-<div class="atile"><span class="native" dir="rtl">چ</span><span class="ar">ch</span></div>
-<div class="atile"><span class="native" dir="rtl">ح</span><span class="ar">h</span></div>
-<div class="atile"><span class="native" dir="rtl">خ</span><span class="ar">kh</span></div>
-<div class="atile"><span class="native" dir="rtl">د</span><span class="ar">d</span></div>
-<div class="atile"><span class="native" dir="rtl">ڈ</span><span class="ar">dd</span></div>
-<div class="atile"><span class="native" dir="rtl">ذ</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ر</span><span class="ar">r</span></div>
-<div class="atile"><span class="native" dir="rtl">ڑ</span><span class="ar">rr</span></div>
-<div class="atile"><span class="native" dir="rtl">ز</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ژ</span><span class="ar">zh</span></div>
-<div class="atile"><span class="native" dir="rtl">س</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ش</span><span class="ar">sh</span></div>
-<div class="atile"><span class="native" dir="rtl">ص</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ض</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ط</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="rtl">ظ</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ع</span><span class="ar">a (carrier)</span></div>
-<div class="atile"><span class="native" dir="rtl">غ</span><span class="ar">gh</span></div>
-<div class="atile"><span class="native" dir="rtl">ف</span><span class="ar">f</span></div>
-<div class="atile"><span class="native" dir="rtl">ق</span><span class="ar">q</span></div>
-<div class="atile"><span class="native" dir="rtl">ک</span><span class="ar">k</span></div>
-<div class="atile"><span class="native" dir="rtl">گ</span><span class="ar">g</span></div>
-<div class="atile"><span class="native" dir="rtl">ل</span><span class="ar">l</span></div>
-<div class="atile"><span class="native" dir="rtl">م</span><span class="ar">m</span></div>
-<div class="atile"><span class="native" dir="rtl">ن</span><span class="ar">n</span></div>
-<div class="atile"><span class="native" dir="rtl">ں</span><span class="ar">n (nasal)</span></div>
-<div class="atile"><span class="native" dir="rtl">ہ</span><span class="ar">h</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="ur" dir="rtl">ب</span><span class="ar">b</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">پ</span><span class="ar">p</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ت</span><span class="ar">t</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ٹ</span><span class="ar">tt</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ث</span><span class="ar">s</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ج</span><span class="ar">j</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">چ</span><span class="ar">ch</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ح</span><span class="ar">h</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">خ</span><span class="ar">kh</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">د</span><span class="ar">d</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ڈ</span><span class="ar">dd</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ذ</span><span class="ar">z</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ر</span><span class="ar">r</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ڑ</span><span class="ar">rr</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ز</span><span class="ar">z</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ژ</span><span class="ar">zh</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">س</span><span class="ar">s</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ش</span><span class="ar">sh</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ص</span><span class="ar">s</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ض</span><span class="ar">z</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ط</span><span class="ar">t</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ظ</span><span class="ar">z</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ع</span><span class="ar">a (carrier)</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">غ</span><span class="ar">gh</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ف</span><span class="ar">f</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ق</span><span class="ar">q</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ک</span><span class="ar">k</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">گ</span><span class="ar">g</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ل</span><span class="ar">l</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">م</span><span class="ar">m</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ن</span><span class="ar">n</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ں</span><span class="ar">n (nasal)</span></div>
+<div class="atile"><span class="native" lang="ur" dir="rtl">ہ</span><span class="ar">h</span></div></div>
   </section>
 
   <section class="block">

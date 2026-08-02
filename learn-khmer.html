@@ -34,6 +34,7 @@
 :root{--sky1:#F7E3C2;--sky2:#FBF3E4;--mtn-far:#CBAF83;--mtn-mid:#7E6553;--mtn-near:#2F8E5B;--snow:#FFFFFF;--orb:#F2A93B;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40}
 @media(prefers-color-scheme:dark){:root{--sky1:#241E33;--sky2:#141119;--mtn-far:#39304E;--mtn-mid:#4A3B31;--mtn-near:#1B5038;--snow:#C7D6E6;--orb:#E9DFC8;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Khmer</em></h1>
-    <div class="nat native">ខ្មែរ</div>
+    <div class="nat native" lang="km">ខ្មែរ</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=km">Start learning</a>
     <div class="stats">
@@ -134,99 +135,99 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Khmer words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">សួស្តី</td><td class="rom">Suosdey</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">អរគុណ</td><td class="rom">Arkun</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">សុំទោស</td><td class="rom">Som toh</td><td>Excuse me / Sorry</td></tr>
-<tr><td class="native" dir="auto">បាទ</td><td class="rom">Baat</td><td>Yes (men say)</td></tr>
-<tr><td class="native" dir="auto">ចាស</td><td class="rom">Chaah</td><td>Yes (women say)</td></tr>
-<tr><td class="native" dir="auto">ទេ</td><td class="rom">Te</td><td>No / Not</td></tr>
-<tr><td class="native" dir="auto">ទឹក</td><td class="rom">Tuk</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">បាយ</td><td class="rom">Bay</td><td>Rice / Food</td></tr>
-<tr><td class="native" dir="auto">ផ្ទះ</td><td class="rom">Phteah</td><td>House / Home</td></tr>
-<tr><td class="native" dir="auto">មនុស្ស</td><td class="rom">Monuh</td><td>Person</td></tr>
-<tr><td class="native" dir="auto">ល្អ</td><td class="rom">Laor</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">ធំ</td><td class="rom">Thom</td><td>Big</td></tr>
-<tr><td class="native" dir="auto">តូច</td><td class="rom">Touch</td><td>Small</td></tr>
-<tr><td class="native" dir="auto">ថ្ងៃនេះ</td><td class="rom">Thngai nih</td><td>Today</td></tr>
-<tr><td class="native" dir="auto">ស្អែក</td><td class="rom">Saaek</td><td>Tomorrow</td></tr>
-<tr><td class="native" dir="auto">លុយ</td><td class="rom">Luy</td><td>Money</td></tr>
-<tr><td class="native" dir="auto">ផ្លូវ</td><td class="rom">Phlov</td><td>Road / Way</td></tr>
-<tr><td class="native" dir="auto">ភ្នំ</td><td class="rom">Phnom</td><td>Mountain</td></tr>
-<tr><td class="native" dir="auto">សប្បាយ</td><td class="rom">Sabay</td><td>Happy</td></tr>
-<tr><td class="native" dir="auto">តែ</td><td class="rom">Tae</td><td>Tea</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="km" dir="auto">សួស្តី</td><td class="rom">Suosdey</td><td>Hello</td></tr>
+<tr><td class="native" lang="km" dir="auto">អរគុណ</td><td class="rom">Arkun</td><td>Thank you</td></tr>
+<tr><td class="native" lang="km" dir="auto">សុំទោស</td><td class="rom">Som toh</td><td>Excuse me / Sorry</td></tr>
+<tr><td class="native" lang="km" dir="auto">បាទ</td><td class="rom">Baat</td><td>Yes (men say)</td></tr>
+<tr><td class="native" lang="km" dir="auto">ចាស</td><td class="rom">Chaah</td><td>Yes (women say)</td></tr>
+<tr><td class="native" lang="km" dir="auto">ទេ</td><td class="rom">Te</td><td>No / Not</td></tr>
+<tr><td class="native" lang="km" dir="auto">ទឹក</td><td class="rom">Tuk</td><td>Water</td></tr>
+<tr><td class="native" lang="km" dir="auto">បាយ</td><td class="rom">Bay</td><td>Rice / Food</td></tr>
+<tr><td class="native" lang="km" dir="auto">ផ្ទះ</td><td class="rom">Phteah</td><td>House / Home</td></tr>
+<tr><td class="native" lang="km" dir="auto">មនុស្ស</td><td class="rom">Monuh</td><td>Person</td></tr>
+<tr><td class="native" lang="km" dir="auto">ល្អ</td><td class="rom">Laor</td><td>Good</td></tr>
+<tr><td class="native" lang="km" dir="auto">ធំ</td><td class="rom">Thom</td><td>Big</td></tr>
+<tr><td class="native" lang="km" dir="auto">តូច</td><td class="rom">Touch</td><td>Small</td></tr>
+<tr><td class="native" lang="km" dir="auto">ថ្ងៃនេះ</td><td class="rom">Thngai nih</td><td>Today</td></tr>
+<tr><td class="native" lang="km" dir="auto">ស្អែក</td><td class="rom">Saaek</td><td>Tomorrow</td></tr>
+<tr><td class="native" lang="km" dir="auto">លុយ</td><td class="rom">Luy</td><td>Money</td></tr>
+<tr><td class="native" lang="km" dir="auto">ផ្លូវ</td><td class="rom">Phlov</td><td>Road / Way</td></tr>
+<tr><td class="native" lang="km" dir="auto">ភ្នំ</td><td class="rom">Phnom</td><td>Mountain</td></tr>
+<tr><td class="native" lang="km" dir="auto">សប្បាយ</td><td class="rom">Sabay</td><td>Happy</td></tr>
+<tr><td class="native" lang="km" dir="auto">តែ</td><td class="rom">Tae</td><td>Tea</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Khmer</h2>
-    <table><tbody><tr><td class="native" dir="auto">០</td><td class="rom">0</td></tr>
-<tr><td class="native" dir="auto">១</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">២</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">៣</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">៤</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">៥</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">៦</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">៧</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">៨</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">៩</td><td class="rom">9</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="km" dir="auto">០</td><td class="rom">0</td></tr>
+<tr><td class="native" lang="km" dir="auto">១</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="km" dir="auto">២</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="km" dir="auto">៣</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="km" dir="auto">៤</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="km" dir="auto">៥</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="km" dir="auto">៦</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="km" dir="auto">៧</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="km" dir="auto">៨</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="km" dir="auto">៩</td><td class="rom">9</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Khmer script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">អា</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">អិ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">អី</span><span class="ar">ey</span></div>
-<div class="atile"><span class="native" dir="auto">អឹ</span><span class="ar">oe</span></div>
-<div class="atile"><span class="native" dir="auto">អឺ</span><span class="ar">eu</span></div>
-<div class="atile"><span class="native" dir="auto">អុ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">អូ</span><span class="ar">ou</span></div>
-<div class="atile"><span class="native" dir="auto">អួ</span><span class="ar">uo</span></div>
-<div class="atile"><span class="native" dir="auto">អើ</span><span class="ar">aeu</span></div>
-<div class="atile"><span class="native" dir="auto">អឿ</span><span class="ar">oea</span></div>
-<div class="atile"><span class="native" dir="auto">អៀ</span><span class="ar">ie</span></div>
-<div class="atile"><span class="native" dir="auto">អេ</span><span class="ar">ei</span></div>
-<div class="atile"><span class="native" dir="auto">អែ</span><span class="ar">ae</span></div>
-<div class="atile"><span class="native" dir="auto">អៃ</span><span class="ar">ai</span></div>
-<div class="atile"><span class="native" dir="auto">អោ</span><span class="ar">ao</span></div>
-<div class="atile"><span class="native" dir="auto">អៅ</span><span class="ar">av</span></div>
-<div class="atile"><span class="native" dir="auto">អុំ</span><span class="ar">om</span></div>
-<div class="atile"><span class="native" dir="auto">អំ</span><span class="ar">am</span></div>
-<div class="atile"><span class="native" dir="auto">អះ</span><span class="ar">ah</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="km" dir="auto">អា</span><span class="ar">aa</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អិ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អី</span><span class="ar">ey</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អឹ</span><span class="ar">oe</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អឺ</span><span class="ar">eu</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អុ</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អូ</span><span class="ar">ou</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អួ</span><span class="ar">uo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អើ</span><span class="ar">aeu</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អឿ</span><span class="ar">oea</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អៀ</span><span class="ar">ie</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អេ</span><span class="ar">ei</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អែ</span><span class="ar">ae</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អៃ</span><span class="ar">ai</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អោ</span><span class="ar">ao</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អៅ</span><span class="ar">av</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អុំ</span><span class="ar">om</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អំ</span><span class="ar">am</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អះ</span><span class="ar">ah</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">ក</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ខ</span><span class="ar">kha</span></div>
-<div class="atile"><span class="native" dir="auto">គ</span><span class="ar">ko</span></div>
-<div class="atile"><span class="native" dir="auto">ឃ</span><span class="ar">kho</span></div>
-<div class="atile"><span class="native" dir="auto">ង</span><span class="ar">ngo</span></div>
-<div class="atile"><span class="native" dir="auto">ច</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">ឆ</span><span class="ar">chha</span></div>
-<div class="atile"><span class="native" dir="auto">ជ</span><span class="ar">cho</span></div>
-<div class="atile"><span class="native" dir="auto">ឈ</span><span class="ar">chho</span></div>
-<div class="atile"><span class="native" dir="auto">ញ</span><span class="ar">nho</span></div>
-<div class="atile"><span class="native" dir="auto">ដ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ឋ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ឌ</span><span class="ar">do</span></div>
-<div class="atile"><span class="native" dir="auto">ឍ</span><span class="ar">tho</span></div>
-<div class="atile"><span class="native" dir="auto">ណ</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ត</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ថ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ទ</span><span class="ar">to</span></div>
-<div class="atile"><span class="native" dir="auto">ធ</span><span class="ar">tho</span></div>
-<div class="atile"><span class="native" dir="auto">ន</span><span class="ar">no</span></div>
-<div class="atile"><span class="native" dir="auto">ប</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">ផ</span><span class="ar">pha</span></div>
-<div class="atile"><span class="native" dir="auto">ព</span><span class="ar">po</span></div>
-<div class="atile"><span class="native" dir="auto">ភ</span><span class="ar">pho</span></div>
-<div class="atile"><span class="native" dir="auto">ម</span><span class="ar">mo</span></div>
-<div class="atile"><span class="native" dir="auto">យ</span><span class="ar">yo</span></div>
-<div class="atile"><span class="native" dir="auto">រ</span><span class="ar">ro</span></div>
-<div class="atile"><span class="native" dir="auto">ល</span><span class="ar">lo</span></div>
-<div class="atile"><span class="native" dir="auto">វ</span><span class="ar">vo</span></div>
-<div class="atile"><span class="native" dir="auto">ស</span><span class="ar">sa</span></div>
-<div class="atile"><span class="native" dir="auto">ហ</span><span class="ar">ha</span></div>
-<div class="atile"><span class="native" dir="auto">ឡ</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">អ</span><span class="ar">a</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="km" dir="auto">ក</span><span class="ar">ka</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ខ</span><span class="ar">kha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">គ</span><span class="ar">ko</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឃ</span><span class="ar">kho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ង</span><span class="ar">ngo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ច</span><span class="ar">cha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឆ</span><span class="ar">chha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ជ</span><span class="ar">cho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឈ</span><span class="ar">chho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ញ</span><span class="ar">nho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ដ</span><span class="ar">da</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឋ</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឌ</span><span class="ar">do</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឍ</span><span class="ar">tho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ណ</span><span class="ar">na</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ត</span><span class="ar">ta</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ថ</span><span class="ar">tha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ទ</span><span class="ar">to</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ធ</span><span class="ar">tho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ន</span><span class="ar">no</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ប</span><span class="ar">ba</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ផ</span><span class="ar">pha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ព</span><span class="ar">po</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ភ</span><span class="ar">pho</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ម</span><span class="ar">mo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">យ</span><span class="ar">yo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">រ</span><span class="ar">ro</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ល</span><span class="ar">lo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">វ</span><span class="ar">vo</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ស</span><span class="ar">sa</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ហ</span><span class="ar">ha</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">ឡ</span><span class="ar">la</span></div>
+<div class="atile"><span class="native" lang="km" dir="auto">អ</span><span class="ar">a</span></div></div>
   </section>
 
   <section class="block">

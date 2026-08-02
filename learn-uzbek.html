@@ -34,6 +34,7 @@
 :root{--sky1:#F5E6C8;--sky2:#FBF5E8;--mtn-far:#ADAEB6;--mtn-mid:#D69A4E;--mtn-near:#3E8E6E;--snow:#FFFFFF;--orb:#F2B33C;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40;--melon:#7FA84B}
 @media(prefers-color-scheme:dark){:root{--sky1:#241E18;--sky2:#141110;--mtn-far:#454654;--mtn-mid:#7A5426;--mtn-near:#1C5245;--snow:#C7D6E6;--orb:#EFE0BF;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058;--melon:#4C6B2E}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Uzbek</em></h1>
-    <div class="nat native">Oʻzbekcha</div>
+    <div class="nat native" lang="uz">Oʻzbekcha</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=uz">Start learning</a>
     <div class="stats">
@@ -134,40 +135,40 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Uzbek words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">salom</td><td class="rom">salom</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">rahmat</td><td class="rom">rahmat</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">ha</td><td class="rom">ha</td><td>Yes</td></tr>
-<tr><td class="native" dir="auto">yoʻq</td><td class="rom">yawq</td><td>No</td></tr>
-<tr><td class="native" dir="auto">suv</td><td class="rom">suv</td><td>water</td></tr>
-<tr><td class="native" dir="auto">non</td><td class="rom">non</td><td>bread</td></tr>
-<tr><td class="native" dir="auto">choy</td><td class="rom">choy</td><td>tea</td></tr>
-<tr><td class="native" dir="auto">uy</td><td class="rom">uy</td><td>house</td></tr>
-<tr><td class="native" dir="auto">kitob</td><td class="rom">kitob</td><td>book</td></tr>
-<tr><td class="native" dir="auto">yaxshi</td><td class="rom">yakhshi</td><td>good</td></tr>
-<tr><td class="native" dir="auto">katta</td><td class="rom">katta</td><td>big</td></tr>
-<tr><td class="native" dir="auto">men</td><td class="rom">men</td><td>I</td></tr>
-<tr><td class="native" dir="auto">siz</td><td class="rom">siz</td><td>you (polite)</td></tr>
-<tr><td class="native" dir="auto">bor</td><td class="rom">bor</td><td>there is</td></tr>
-<tr><td class="native" dir="auto">kerak</td><td class="rom">kerak</td><td>needed</td></tr>
-<tr><td class="native" dir="auto">qayerda</td><td class="rom">qayerda</td><td>where</td></tr>
-<tr><td class="native" dir="auto">nima</td><td class="rom">nima</td><td>what</td></tr>
-<tr><td class="native" dir="auto">pul</td><td class="rom">pul</td><td>money</td></tr>
-<tr><td class="native" dir="auto">mumkin</td><td class="rom">mumkin</td><td>may I</td></tr>
-<tr><td class="native" dir="auto">bir</td><td class="rom">bir</td><td>1</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="uz" dir="auto">salom</td><td class="rom">salom</td><td>Hello</td></tr>
+<tr><td class="native" lang="uz" dir="auto">rahmat</td><td class="rom">rahmat</td><td>Thank you</td></tr>
+<tr><td class="native" lang="uz" dir="auto">ha</td><td class="rom">ha</td><td>Yes</td></tr>
+<tr><td class="native" lang="uz" dir="auto">yoʻq</td><td class="rom">yawq</td><td>No</td></tr>
+<tr><td class="native" lang="uz" dir="auto">suv</td><td class="rom">suv</td><td>water</td></tr>
+<tr><td class="native" lang="uz" dir="auto">non</td><td class="rom">non</td><td>bread</td></tr>
+<tr><td class="native" lang="uz" dir="auto">choy</td><td class="rom">choy</td><td>tea</td></tr>
+<tr><td class="native" lang="uz" dir="auto">uy</td><td class="rom">uy</td><td>house</td></tr>
+<tr><td class="native" lang="uz" dir="auto">kitob</td><td class="rom">kitob</td><td>book</td></tr>
+<tr><td class="native" lang="uz" dir="auto">yaxshi</td><td class="rom">yakhshi</td><td>good</td></tr>
+<tr><td class="native" lang="uz" dir="auto">katta</td><td class="rom">katta</td><td>big</td></tr>
+<tr><td class="native" lang="uz" dir="auto">men</td><td class="rom">men</td><td>I</td></tr>
+<tr><td class="native" lang="uz" dir="auto">siz</td><td class="rom">siz</td><td>you (polite)</td></tr>
+<tr><td class="native" lang="uz" dir="auto">bor</td><td class="rom">bor</td><td>there is</td></tr>
+<tr><td class="native" lang="uz" dir="auto">kerak</td><td class="rom">kerak</td><td>needed</td></tr>
+<tr><td class="native" lang="uz" dir="auto">qayerda</td><td class="rom">qayerda</td><td>where</td></tr>
+<tr><td class="native" lang="uz" dir="auto">nima</td><td class="rom">nima</td><td>what</td></tr>
+<tr><td class="native" lang="uz" dir="auto">pul</td><td class="rom">pul</td><td>money</td></tr>
+<tr><td class="native" lang="uz" dir="auto">mumkin</td><td class="rom">mumkin</td><td>may I</td></tr>
+<tr><td class="native" lang="uz" dir="auto">bir</td><td class="rom">bir</td><td>1</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Uzbek</h2>
-    <table><tbody><tr><td class="native" dir="auto">bir</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">ikki</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">uch</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">toʻrt</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">besh</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">olti</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">yetti</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">sakkiz</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">toʻqqiz</td><td class="rom">9</td></tr>
-<tr><td class="native" dir="auto">oʻn</td><td class="rom">10</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="uz" dir="auto">bir</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="uz" dir="auto">ikki</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="uz" dir="auto">uch</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="uz" dir="auto">toʻrt</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="uz" dir="auto">besh</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="uz" dir="auto">olti</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="uz" dir="auto">yetti</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="uz" dir="auto">sakkiz</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="uz" dir="auto">toʻqqiz</td><td class="rom">9</td></tr>
+<tr><td class="native" lang="uz" dir="auto">oʻn</td><td class="rom">10</td></tr></tbody></table>
   </section>
   
 

@@ -34,6 +34,7 @@
 :root{--sky1:#F6DFC0;--sky2:#FBF3E3;--mtn-far:#94A9C4;--mtn-mid:#CB9C5F;--mtn-near:#2F7E4F;--snow:#FFFFFF;--orb:#EFA13E;--tree:#2C5F3A;--wood:#8A5A33;--bark:#A97C50;--hide:#8C6239;--slate:#79858E;--tyre:#343A40;--water:#C2D3E1}
 @media(prefers-color-scheme:dark){:root{--sky1:#251E30;--sky2:#151119;--mtn-far:#35486A;--mtn-mid:#55452B;--mtn-near:#1C5238;--snow:#C7D6E6;--orb:#E9DFC8;--tree:#4FA06A;--wood:#B57E4A;--bark:#C89A6C;--hide:#AD8055;--slate:#8E9AA3;--tyre:#4A5058;--water:#1F2E3E}}
 *{box-sizing:border-box}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--saffron);outline-offset:2px}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;line-height:1.6;
 -webkit-font-smoothing:antialiased}
@@ -113,7 +114,7 @@ footer a{color:var(--soft)}
 <section class="hero">
   <div class="hero-body">
     <h1>Learn <em>Lao</em></h1>
-    <div class="nat native">ລາວ</div>
+    <div class="nat native" lang="lo">ລາວ</div>
     <p>Step-by-step lessons, the alphabet, and recorded audio &mdash; right in your browser.</p>
     <a class="cta" href="/?lang=lo">Start learning</a>
     <div class="stats">
@@ -134,94 +135,94 @@ footer a{color:var(--soft)}
 
   <section class="block">
     <h2>Essential Lao words &amp; phrases</h2>
-    <table><tbody><tr><td class="native" dir="auto">ສະບາຍດີ</td><td class="rom">sabaidee</td><td>Hello</td></tr>
-<tr><td class="native" dir="auto">ຂອບໃຈ</td><td class="rom">khop jai</td><td>Thank you</td></tr>
-<tr><td class="native" dir="auto">ຂໍໂທດ</td><td class="rom">kho thot</td><td>Sorry / Excuse me</td></tr>
-<tr><td class="native" dir="auto">ແມ່ນ</td><td class="rom">maen</td><td>Yes / it is so</td></tr>
-<tr><td class="native" dir="auto">ບໍ່</td><td class="rom">baw</td><td>No / not</td></tr>
-<tr><td class="native" dir="auto">ນ້ຳ</td><td class="rom">nam</td><td>Water</td></tr>
-<tr><td class="native" dir="auto">ເຂົ້າ</td><td class="rom">khao</td><td>Rice / food</td></tr>
-<tr><td class="native" dir="auto">ເຮືອນ</td><td class="rom">heuan</td><td>House</td></tr>
-<tr><td class="native" dir="auto">ຄົນ</td><td class="rom">khon</td><td>Person</td></tr>
-<tr><td class="native" dir="auto">ດີ</td><td class="rom">dii</td><td>Good</td></tr>
-<tr><td class="native" dir="auto">ໃຫຍ່</td><td class="rom">nyai</td><td>Big</td></tr>
-<tr><td class="native" dir="auto">ນ້ອຍ</td><td class="rom">noi</td><td>Small</td></tr>
-<tr><td class="native" dir="auto">ມື້ນີ້</td><td class="rom">meu nii</td><td>Today</td></tr>
-<tr><td class="native" dir="auto">ມື້ອື່ນ</td><td class="rom">meu eun</td><td>Tomorrow</td></tr>
-<tr><td class="native" dir="auto">ຂ້ອຍ</td><td class="rom">khoi</td><td>I / me</td></tr>
-<tr><td class="native" dir="auto">ເຈົ້າ</td><td class="rom">jao</td><td>You</td></tr>
-<tr><td class="native" dir="auto">ອາຫານ</td><td class="rom">aahaan</td><td>Food</td></tr>
-<tr><td class="native" dir="auto">ໄປ</td><td class="rom">pai</td><td>To go</td></tr>
-<tr><td class="native" dir="auto">ກິນ</td><td class="rom">kin</td><td>To eat</td></tr>
-<tr><td class="native" dir="auto">ມັກ</td><td class="rom">mak</td><td>To like</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="lo" dir="auto">ສະບາຍດີ</td><td class="rom">sabaidee</td><td>Hello</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ຂອບໃຈ</td><td class="rom">khop jai</td><td>Thank you</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ຂໍໂທດ</td><td class="rom">kho thot</td><td>Sorry / Excuse me</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ແມ່ນ</td><td class="rom">maen</td><td>Yes / it is so</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ບໍ່</td><td class="rom">baw</td><td>No / not</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ນ້ຳ</td><td class="rom">nam</td><td>Water</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ເຂົ້າ</td><td class="rom">khao</td><td>Rice / food</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ເຮືອນ</td><td class="rom">heuan</td><td>House</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ຄົນ</td><td class="rom">khon</td><td>Person</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ດີ</td><td class="rom">dii</td><td>Good</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ໃຫຍ່</td><td class="rom">nyai</td><td>Big</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ນ້ອຍ</td><td class="rom">noi</td><td>Small</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ມື້ນີ້</td><td class="rom">meu nii</td><td>Today</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ມື້ອື່ນ</td><td class="rom">meu eun</td><td>Tomorrow</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ຂ້ອຍ</td><td class="rom">khoi</td><td>I / me</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ເຈົ້າ</td><td class="rom">jao</td><td>You</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ອາຫານ</td><td class="rom">aahaan</td><td>Food</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ໄປ</td><td class="rom">pai</td><td>To go</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ກິນ</td><td class="rom">kin</td><td>To eat</td></tr>
+<tr><td class="native" lang="lo" dir="auto">ມັກ</td><td class="rom">mak</td><td>To like</td></tr></tbody></table>
   </section>
 
   <section class="block">
     <h2>Numbers in Lao</h2>
-    <table><tbody><tr><td class="native" dir="auto">໐</td><td class="rom">0</td></tr>
-<tr><td class="native" dir="auto">໑</td><td class="rom">1</td></tr>
-<tr><td class="native" dir="auto">໒</td><td class="rom">2</td></tr>
-<tr><td class="native" dir="auto">໓</td><td class="rom">3</td></tr>
-<tr><td class="native" dir="auto">໔</td><td class="rom">4</td></tr>
-<tr><td class="native" dir="auto">໕</td><td class="rom">5</td></tr>
-<tr><td class="native" dir="auto">໖</td><td class="rom">6</td></tr>
-<tr><td class="native" dir="auto">໗</td><td class="rom">7</td></tr>
-<tr><td class="native" dir="auto">໘</td><td class="rom">8</td></tr>
-<tr><td class="native" dir="auto">໙</td><td class="rom">9</td></tr></tbody></table>
+    <table><tbody><tr><td class="native" lang="lo" dir="auto">໐</td><td class="rom">0</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໑</td><td class="rom">1</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໒</td><td class="rom">2</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໓</td><td class="rom">3</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໔</td><td class="rom">4</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໕</td><td class="rom">5</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໖</td><td class="rom">6</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໗</td><td class="rom">7</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໘</td><td class="rom">8</td></tr>
+<tr><td class="native" lang="lo" dir="auto">໙</td><td class="rom">9</td></tr></tbody></table>
   </section>
   
   <section class="block">
     <h2>The Lao script</h2>
     <p class="lead">Taught one letter at a time, with audio.</p>
     <h3>Vowels</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">ອະ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ອາ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">ອິ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ອີ</span><span class="ar">ii</span></div>
-<div class="atile"><span class="native" dir="auto">ອຶ</span><span class="ar">eu</span></div>
-<div class="atile"><span class="native" dir="auto">ອື</span><span class="ar">euu</span></div>
-<div class="atile"><span class="native" dir="auto">ອຸ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ອູ</span><span class="ar">uu</span></div>
-<div class="atile"><span class="native" dir="auto">ເອະ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ເອ</span><span class="ar">ee</span></div>
-<div class="atile"><span class="native" dir="auto">ແອະ</span><span class="ar">ae</span></div>
-<div class="atile"><span class="native" dir="auto">ແອ</span><span class="ar">aae</span></div>
-<div class="atile"><span class="native" dir="auto">ໂອ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">ອໍ</span><span class="ar">aw</span></div>
-<div class="atile"><span class="native" dir="auto">ໄອ</span><span class="ar">ai</span></div>
-<div class="atile"><span class="native" dir="auto">ເອົາ</span><span class="ar">ao</span></div>
-<div class="atile"><span class="native" dir="auto">ອຳ</span><span class="ar">am</span></div>
-<div class="atile"><span class="native" dir="auto">ອົວ</span><span class="ar">ua</span></div>
-<div class="atile"><span class="native" dir="auto">ເອຍ</span><span class="ar">ia</span></div>
-<div class="atile"><span class="native" dir="auto">ເອືອ</span><span class="ar">eua</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="lo" dir="auto">ອະ</span><span class="ar">a</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອາ</span><span class="ar">aa</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອິ</span><span class="ar">i</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອີ</span><span class="ar">ii</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອຶ</span><span class="ar">eu</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອື</span><span class="ar">euu</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອຸ</span><span class="ar">u</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອູ</span><span class="ar">uu</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ເອະ</span><span class="ar">e</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ເອ</span><span class="ar">ee</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ແອະ</span><span class="ar">ae</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ແອ</span><span class="ar">aae</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ໂອ</span><span class="ar">o</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອໍ</span><span class="ar">aw</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ໄອ</span><span class="ar">ai</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ເອົາ</span><span class="ar">ao</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອຳ</span><span class="ar">am</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອົວ</span><span class="ar">ua</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ເອຍ</span><span class="ar">ia</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ເອືອ</span><span class="ar">eua</span></div></div>
     <h3>Consonants</h3>
-    <div class="agrid"><div class="atile"><span class="native" dir="auto">ກ</span><span class="ar">k</span></div>
-<div class="atile"><span class="native" dir="auto">ຂ</span><span class="ar">kh (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຄ</span><span class="ar">kh (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ງ</span><span class="ar">ng</span></div>
-<div class="atile"><span class="native" dir="auto">ຈ</span><span class="ar">j</span></div>
-<div class="atile"><span class="native" dir="auto">ສ</span><span class="ar">s (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຊ</span><span class="ar">s (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ຍ</span><span class="ar">ny</span></div>
-<div class="atile"><span class="native" dir="auto">ດ</span><span class="ar">d</span></div>
-<div class="atile"><span class="native" dir="auto">ຕ</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="auto">ຖ</span><span class="ar">th (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ທ</span><span class="ar">th (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ນ</span><span class="ar">n</span></div>
-<div class="atile"><span class="native" dir="auto">ບ</span><span class="ar">b</span></div>
-<div class="atile"><span class="native" dir="auto">ປ</span><span class="ar">p</span></div>
-<div class="atile"><span class="native" dir="auto">ຜ</span><span class="ar">ph (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຝ</span><span class="ar">f (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ພ</span><span class="ar">ph (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ຟ</span><span class="ar">f (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ມ</span><span class="ar">m</span></div>
-<div class="atile"><span class="native" dir="auto">ຢ</span><span class="ar">y</span></div>
-<div class="atile"><span class="native" dir="auto">ຣ</span><span class="ar">r</span></div>
-<div class="atile"><span class="native" dir="auto">ລ</span><span class="ar">l</span></div>
-<div class="atile"><span class="native" dir="auto">ວ</span><span class="ar">v</span></div>
-<div class="atile"><span class="native" dir="auto">ຫ</span><span class="ar">h (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ອ</span><span class="ar">o (silent)</span></div>
-<div class="atile"><span class="native" dir="auto">ຮ</span><span class="ar">h (low)</span></div></div>
+    <div class="agrid"><div class="atile"><span class="native" lang="lo" dir="auto">ກ</span><span class="ar">k</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຂ</span><span class="ar">kh (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຄ</span><span class="ar">kh (low)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ງ</span><span class="ar">ng</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຈ</span><span class="ar">j</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ສ</span><span class="ar">s (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຊ</span><span class="ar">s (low)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຍ</span><span class="ar">ny</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ດ</span><span class="ar">d</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຕ</span><span class="ar">t</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຖ</span><span class="ar">th (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ທ</span><span class="ar">th (low)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ນ</span><span class="ar">n</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ບ</span><span class="ar">b</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ປ</span><span class="ar">p</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຜ</span><span class="ar">ph (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຝ</span><span class="ar">f (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ພ</span><span class="ar">ph (low)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຟ</span><span class="ar">f (low)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ມ</span><span class="ar">m</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຢ</span><span class="ar">y</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຣ</span><span class="ar">r</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ລ</span><span class="ar">l</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ວ</span><span class="ar">v</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຫ</span><span class="ar">h (high)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ອ</span><span class="ar">o (silent)</span></div>
+<div class="atile"><span class="native" lang="lo" dir="auto">ຮ</span><span class="ar">h (low)</span></div></div>
   </section>
 
   <section class="block">
