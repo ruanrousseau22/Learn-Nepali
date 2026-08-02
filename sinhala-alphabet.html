@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>Every letter of the Sinhala script, with its sound written out. In Bhasaly you can tap any letter to hear it — the whole chart is recorded.</p>
+  <p>Every letter of the Sinhala script, with its sound written out. Tap any letter to hear it — the whole chart is recorded.</p>
   <a class="cta" href="/?lang=si&amp;v=alphabet">Hear every letter &rarr;</a>
 </section>
 
@@ -154,78 +163,78 @@ font-size:14.5px;color:var(--ink)}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">12 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">අ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ආ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">ඇ</span><span class="ar">ae</span></div>
-<div class="atile"><span class="native" dir="auto">ඈ</span><span class="ar">aee</span></div>
-<div class="atile"><span class="native" dir="auto">ඉ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ඊ</span><span class="ar">ii</span></div>
-<div class="atile"><span class="native" dir="auto">උ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ඌ</span><span class="ar">uu</span></div>
-<div class="atile"><span class="native" dir="auto">එ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ඒ</span><span class="ar">ee</span></div>
-<div class="atile"><span class="native" dir="auto">ඔ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">ඕ</span><span class="ar">oo</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="7a37866a" aria-label="අ — play audio"><span class="native" dir="auto">අ</span><span class="ar">a</span></button>
+<button type="button" class="atile" data-k="793784d7" aria-label="ආ — play audio"><span class="native" dir="auto">ආ</span><span class="ar">aa</span></button>
+<button type="button" class="atile" data-k="78378344" aria-label="ඇ — play audio"><span class="native" dir="auto">ඇ</span><span class="ar">ae</span></button>
+<button type="button" class="atile" data-k="6f377519" aria-label="ඈ — play audio"><span class="native" dir="auto">ඈ</span><span class="ar">aee</span></button>
+<button type="button" class="atile" data-k="6e377386" aria-label="ඉ — play audio"><span class="native" dir="auto">ඉ</span><span class="ar">i</span></button>
+<button type="button" class="atile" data-k="6d3771f3" aria-label="ඊ — play audio"><span class="native" dir="auto">ඊ</span><span class="ar">ii</span></button>
+<button type="button" class="atile" data-k="6c377060" aria-label="උ — play audio"><span class="native" dir="auto">උ</span><span class="ar">u</span></button>
+<button type="button" class="atile" data-k="73377b65" aria-label="ඌ — play audio"><span class="native" dir="auto">ඌ</span><span class="ar">uu</span></button>
+<button type="button" class="atile" data-k="8637994e" aria-label="එ — play audio"><span class="native" dir="auto">එ</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="853797bb" aria-label="ඒ — play audio"><span class="native" dir="auto">ඒ</span><span class="ar">ee</span></button>
+<button type="button" class="atile" data-k="8b37a12d" aria-label="ඔ — play audio"><span class="native" dir="auto">ඔ</span><span class="ar">o</span></button>
+<button type="button" class="atile" data-k="8a379f9a" aria-label="ඕ — play audio"><span class="native" dir="auto">ඕ</span><span class="ar">oo</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">40 letters, in the order the course teaches them.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">ක</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ඛ</span><span class="ar">ka</span></div>
-<div class="atile"><span class="native" dir="auto">ග</span><span class="ar">ga</span></div>
-<div class="atile"><span class="native" dir="auto">ඝ</span><span class="ar">ga</span></div>
+  <div class="agrid"><button type="button" class="atile" data-k="7d378b23" aria-label="ක — play audio"><span class="native" dir="auto">ක</span><span class="ar">ka</span></button>
+<button type="button" class="atile" data-k="7c378990" aria-label="ඛ — play audio"><span class="native" dir="auto">ඛ</span><span class="ar">ka</span></button>
+<button type="button" class="atile" data-k="83379495" aria-label="ග — play audio"><span class="native" dir="auto">ග</span><span class="ar">ga</span></button>
+<button type="button" class="atile" data-k="82379302" aria-label="ඝ — play audio"><span class="native" dir="auto">ඝ</span><span class="ar">ga</span></button>
 <div class="atile"><span class="native" dir="auto">ඞ</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">ඟ</span><span class="ar">nga</span></div>
-<div class="atile"><span class="native" dir="auto">ච</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">ඡ</span><span class="ar">cha</span></div>
-<div class="atile"><span class="native" dir="auto">ජ</span><span class="ar">ja</span></div>
+<button type="button" class="atile" data-k="80378fdc" aria-label="ඟ — play audio"><span class="native" dir="auto">ඟ</span><span class="ar">nga</span></button>
+<button type="button" class="atile" data-k="57374f51" aria-label="ච — play audio"><span class="native" dir="auto">ච</span><span class="ar">cha</span></button>
+<button type="button" class="atile" data-k="56374dbe" aria-label="ඡ — play audio"><span class="native" dir="auto">ඡ</span><span class="ar">cha</span></button>
+<button type="button" class="atile" data-k="55374c2b" aria-label="ජ — play audio"><span class="native" dir="auto">ජ</span><span class="ar">ja</span></button>
 <div class="atile"><span class="native" dir="auto">ඣ</span><span class="ar">ja</span></div>
-<div class="atile"><span class="native" dir="auto">ඤ</span><span class="ar">nya</span></div>
+<button type="button" class="atile" data-k="5b37559d" aria-label="ඤ — play audio"><span class="native" dir="auto">ඤ</span><span class="ar">nya</span></button>
 <div class="atile"><span class="native" dir="auto">ඦ</span><span class="ar">nja</span></div>
-<div class="atile"><span class="native" dir="auto">ට</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ඨ</span><span class="ar">ta</span></div>
-<div class="atile"><span class="native" dir="auto">ඩ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ඪ</span><span class="ar">da</span></div>
-<div class="atile"><span class="native" dir="auto">ණ</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ඬ</span><span class="ar">nda</span></div>
-<div class="atile"><span class="native" dir="auto">ත</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ථ</span><span class="ar">tha</span></div>
-<div class="atile"><span class="native" dir="auto">ද</span><span class="ar">dha</span></div>
-<div class="atile"><span class="native" dir="auto">ධ</span><span class="ar">dha</span></div>
-<div class="atile"><span class="native" dir="auto">න</span><span class="ar">na</span></div>
-<div class="atile"><span class="native" dir="auto">ඳ</span><span class="ar">ndha</span></div>
-<div class="atile"><span class="native" dir="auto">ප</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">ඵ</span><span class="ar">pa</span></div>
-<div class="atile"><span class="native" dir="auto">බ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">භ</span><span class="ar">ba</span></div>
-<div class="atile"><span class="native" dir="auto">ම</span><span class="ar">ma</span></div>
-<div class="atile"><span class="native" dir="auto">ඹ</span><span class="ar">mba</span></div>
-<div class="atile"><span class="native" dir="auto">ය</span><span class="ar">ya</span></div>
-<div class="atile"><span class="native" dir="auto">ර</span><span class="ar">ra</span></div>
-<div class="atile"><span class="native" dir="auto">ල</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">ව</span><span class="ar">wa</span></div>
-<div class="atile"><span class="native" dir="auto">ශ</span><span class="ar">sha</span></div>
-<div class="atile"><span class="native" dir="auto">ෂ</span><span class="ar">sha</span></div>
-<div class="atile"><span class="native" dir="auto">ස</span><span class="ar">sa</span></div>
-<div class="atile"><span class="native" dir="auto">හ</span><span class="ar">ha</span></div>
-<div class="atile"><span class="native" dir="auto">ළ</span><span class="ar">la</span></div>
-<div class="atile"><span class="native" dir="auto">ෆ</span><span class="ar">fa</span></div></div>
+<button type="button" class="atile" data-k="583750e4" aria-label="ට — play audio"><span class="native" dir="auto">ට</span><span class="ar">ta</span></button>
+<button type="button" class="atile" data-k="4f3742b9" aria-label="ඨ — play audio"><span class="native" dir="auto">ඨ</span><span class="ar">ta</span></button>
+<button type="button" class="atile" data-k="4e374126" aria-label="ඩ — play audio"><span class="native" dir="auto">ඩ</span><span class="ar">da</span></button>
+<button type="button" class="atile" data-k="4d373f93" aria-label="ඪ — play audio"><span class="native" dir="auto">ඪ</span><span class="ar">da</span></button>
+<button type="button" class="atile" data-k="4c373e00" aria-label="ණ — play audio"><span class="native" dir="auto">ණ</span><span class="ar">na</span></button>
+<button type="button" class="atile" data-k="53374905" aria-label="ඬ — play audio"><span class="native" dir="auto">ඬ</span><span class="ar">nda</span></button>
+<button type="button" class="atile" data-k="52374772" aria-label="ත — play audio"><span class="native" dir="auto">ත</span><span class="ar">tha</span></button>
+<button type="button" class="atile" data-k="513745df" aria-label="ථ — play audio"><span class="native" dir="auto">ථ</span><span class="ar">tha</span></button>
+<button type="button" class="atile" data-k="5037444c" aria-label="ද — play audio"><span class="native" dir="auto">ද</span><span class="ar">dha</span></button>
+<button type="button" class="atile" data-k="67376881" aria-label="ධ — play audio"><span class="native" dir="auto">ධ</span><span class="ar">dha</span></button>
+<button type="button" class="atile" data-k="663766ee" aria-label="න — play audio"><span class="native" dir="auto">න</span><span class="ar">na</span></button>
+<button type="button" class="atile" data-k="643763c8" aria-label="ඳ — play audio"><span class="native" dir="auto">ඳ</span><span class="ar">ndha</span></button>
+<button type="button" class="atile" data-k="6b376ecd" aria-label="ප — play audio"><span class="native" dir="auto">ප</span><span class="ar">pa</span></button>
+<button type="button" class="atile" data-k="6a376d3a" aria-label="ඵ — play audio"><span class="native" dir="auto">ඵ</span><span class="ar">pa</span></button>
+<button type="button" class="atile" data-k="69376ba7" aria-label="බ — play audio"><span class="native" dir="auto">බ</span><span class="ar">ba</span></button>
+<button type="button" class="atile" data-k="68376a14" aria-label="භ — play audio"><span class="native" dir="auto">භ</span><span class="ar">ba</span></button>
+<button type="button" class="atile" data-k="5f375be9" aria-label="ම — play audio"><span class="native" dir="auto">ම</span><span class="ar">ma</span></button>
+<button type="button" class="atile" data-k="5e375a56" aria-label="ඹ — play audio"><span class="native" dir="auto">ඹ</span><span class="ar">mba</span></button>
+<button type="button" class="atile" data-k="5d3758c3" aria-label="ය — play audio"><span class="native" dir="auto">ය</span><span class="ar">ya</span></button>
+<button type="button" class="atile" data-k="5c375730" aria-label="ර — play audio"><span class="native" dir="auto">ර</span><span class="ar">ra</span></button>
+<button type="button" class="atile" data-k="623760a2" aria-label="ල — play audio"><span class="native" dir="auto">ල</span><span class="ar">la</span></button>
+<button type="button" class="atile" data-k="51369a48" aria-label="ව — play audio"><span class="native" dir="auto">ව</span><span class="ar">wa</span></button>
+<button type="button" class="atile" data-k="52369bdb" aria-label="ශ — play audio"><span class="native" dir="auto">ශ</span><span class="ar">sha</span></button>
+<button type="button" class="atile" data-k="53369d6e" aria-label="ෂ — play audio"><span class="native" dir="auto">ෂ</span><span class="ar">sha</span></button>
+<button type="button" class="atile" data-k="54369f01" aria-label="ස — play audio"><span class="native" dir="auto">ස</span><span class="ar">sa</span></button>
+<button type="button" class="atile" data-k="5536a094" aria-label="හ — play audio"><span class="native" dir="auto">හ</span><span class="ar">ha</span></button>
+<button type="button" class="atile" data-k="5636a227" aria-label="ළ — play audio"><span class="native" dir="auto">ළ</span><span class="ar">la</span></button>
+<button type="button" class="atile" data-k="5736a3ba" aria-label="ෆ — play audio"><span class="native" dir="auto">ෆ</span><span class="ar">fa</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Sinhala.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">බිංදුව</span><span class="ar">bindhuwa (0)</span></div>
-<div class="atile"><span class="native" dir="auto">එක</span><span class="ar">eka (1)</span></div>
-<div class="atile"><span class="native" dir="auto">දෙක</span><span class="ar">dheka (2)</span></div>
-<div class="atile"><span class="native" dir="auto">තුන</span><span class="ar">thuna (3)</span></div>
-<div class="atile"><span class="native" dir="auto">හතර</span><span class="ar">hathara (4)</span></div>
-<div class="atile"><span class="native" dir="auto">පහ</span><span class="ar">paha (5)</span></div>
-<div class="atile"><span class="native" dir="auto">හය</span><span class="ar">haya (6)</span></div>
-<div class="atile"><span class="native" dir="auto">හත</span><span class="ar">hatha (7)</span></div>
-<div class="atile"><span class="native" dir="auto">අට</span><span class="ar">ata (8)</span></div>
-<div class="atile"><span class="native" dir="auto">නවය</span><span class="ar">nawaya (9)</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="3a04b969" aria-label="බිංදුව — play audio"><span class="native" dir="auto">බිංදුව</span><span class="ar">bindhuwa (0)</span></button>
+<button type="button" class="atile" data-k="cdb1f6ca" aria-label="එක — play audio"><span class="native" dir="auto">එක</span><span class="ar">eka (1)</span></button>
+<button type="button" class="atile" data-k="045f8078" aria-label="දෙක — play audio"><span class="native" dir="auto">දෙක</span><span class="ar">dheka (2)</span></button>
+<button type="button" class="atile" data-k="afd2180e" aria-label="තුන — play audio"><span class="native" dir="auto">තුන</span><span class="ar">thuna (3)</span></button>
+<button type="button" class="atile" data-k="10c87ef4" aria-label="හතර — play audio"><span class="native" dir="auto">හතර</span><span class="ar">hathara (4)</span></button>
+<button type="button" class="atile" data-k="e68ea72c" aria-label="පහ — play audio"><span class="native" dir="auto">පහ</span><span class="ar">paha (5)</span></button>
+<button type="button" class="atile" data-k="02506e2c" aria-label="හය — play audio"><span class="native" dir="auto">හය</span><span class="ar">haya (6)</span></button>
+<button type="button" class="atile" data-k="115085c9" aria-label="හත — play audio"><span class="native" dir="auto">හත</span><span class="ar">hatha (7)</span></button>
+<button type="button" class="atile" data-k="910b51ad" aria-label="අට — play audio"><span class="native" dir="auto">අට</span><span class="ar">ata (8)</span></button>
+<button type="button" class="atile" data-k="476c4f03" aria-label="නවය — play audio"><span class="native" dir="auto">නවය</span><span class="ar">nawaya (9)</span></button></div>
 </section>
 
 <section class="block">
@@ -258,5 +267,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-sinhala">Learn Sinhala</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-si/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

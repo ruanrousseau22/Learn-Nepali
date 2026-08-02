@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>Every letter of the Lao script, with its sound written out. In Bhasaly you can tap any letter to hear it — the whole chart is recorded.</p>
+  <p>Every letter of the Lao script, with its sound written out. Tap any letter to hear it — the whole chart is recorded.</p>
   <a class="cta" href="/?lang=lo&amp;v=alphabet">Hear every letter &rarr;</a>
 </section>
 
@@ -154,73 +163,73 @@ font-size:14.5px;color:var(--ink)}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">20 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">ອະ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ອາ</span><span class="ar">aa</span></div>
-<div class="atile"><span class="native" dir="auto">ອິ</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ອີ</span><span class="ar">ii</span></div>
-<div class="atile"><span class="native" dir="auto">ອຶ</span><span class="ar">eu</span></div>
-<div class="atile"><span class="native" dir="auto">ອື</span><span class="ar">euu</span></div>
-<div class="atile"><span class="native" dir="auto">ອຸ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ອູ</span><span class="ar">uu</span></div>
-<div class="atile"><span class="native" dir="auto">ເອະ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ເອ</span><span class="ar">ee</span></div>
-<div class="atile"><span class="native" dir="auto">ແອະ</span><span class="ar">ae</span></div>
-<div class="atile"><span class="native" dir="auto">ແອ</span><span class="ar">aae</span></div>
-<div class="atile"><span class="native" dir="auto">ໂອ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">ອໍ</span><span class="ar">aw</span></div>
-<div class="atile"><span class="native" dir="auto">ໄອ</span><span class="ar">ai</span></div>
-<div class="atile"><span class="native" dir="auto">ເອົາ</span><span class="ar">ao</span></div>
-<div class="atile"><span class="native" dir="auto">ອຳ</span><span class="ar">am</span></div>
-<div class="atile"><span class="native" dir="auto">ອົວ</span><span class="ar">ua</span></div>
-<div class="atile"><span class="native" dir="auto">ເອຍ</span><span class="ar">ia</span></div>
-<div class="atile"><span class="native" dir="auto">ເອືອ</span><span class="ar">eua</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="4daf05e8" aria-label="ອະ — play audio"><span class="native" dir="auto">ອະ</span><span class="ar">a</span></button>
+<button type="button" class="atile" data-k="4faf090e" aria-label="ອາ — play audio"><span class="native" dir="auto">ອາ</span><span class="ar">aa</span></button>
+<button type="button" class="atile" data-k="51af0c34" aria-label="ອິ — play audio"><span class="native" dir="auto">ອິ</span><span class="ar">i</span></button>
+<button type="button" class="atile" data-k="52af0dc7" aria-label="ອີ — play audio"><span class="native" dir="auto">ອີ</span><span class="ar">ii</span></button>
+<button type="button" class="atile" data-k="53af0f5a" aria-label="ອຶ — play audio"><span class="native" dir="auto">ອຶ</span><span class="ar">eu</span></button>
+<button type="button" class="atile" data-k="54af10ed" aria-label="ອື — play audio"><span class="native" dir="auto">ອື</span><span class="ar">euu</span></button>
+<button type="button" class="atile" data-k="45aef950" aria-label="ອຸ — play audio"><span class="native" dir="auto">ອຸ</span><span class="ar">u</span></button>
+<button type="button" class="atile" data-k="46aefae3" aria-label="ອູ — play audio"><span class="native" dir="auto">ອູ</span><span class="ar">uu</span></button>
+<button type="button" class="atile" data-k="31498735" aria-label="ເອະ — play audio"><span class="native" dir="auto">ເອະ</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="12d4e5fd" aria-label="ເອ — play audio"><span class="native" dir="auto">ເອ</span><span class="ar">ee</span></button>
+<button type="button" class="atile" data-k="9e05f86a" aria-label="ແອະ — play audio"><span class="native" dir="auto">ແອະ</span><span class="ar">ae</span></button>
+<button type="button" class="atile" data-k="4eee0650" aria-label="ແອ — play audio"><span class="native" dir="auto">ແອ</span><span class="ar">aae</span></button>
+<button type="button" class="atile" data-k="49286313" aria-label="ໂອ — play audio"><span class="native" dir="auto">ໂອ</span><span class="ar">o</span></button>
+<button type="button" class="atile" data-k="3eb2bfe2" aria-label="ອໍ — play audio"><span class="native" dir="auto">ອໍ</span><span class="ar">aw</span></button>
+<button type="button" class="atile" data-k="7412e521" aria-label="ໄອ — play audio"><span class="native" dir="auto">ໄອ</span><span class="ar">ai</span></button>
+<button type="button" class="atile" data-k="cfc3a4a0" aria-label="ເອົາ — play audio"><span class="native" dir="auto">ເອົາ</span><span class="ar">ao</span></button>
+<button type="button" class="atile" data-k="50af0aa1" aria-label="ອຳ — play audio"><span class="native" dir="auto">ອຳ</span><span class="ar">am</span></button>
+<button type="button" class="atile" data-k="1ef7960c" aria-label="ອົວ — play audio"><span class="native" dir="auto">ອົວ</span><span class="ar">ua</span></button>
+<button type="button" class="atile" data-k="4449a51e" aria-label="ເອຍ — play audio"><span class="native" dir="auto">ເອຍ</span><span class="ar">ia</span></button>
+<button type="button" class="atile" data-k="fa8afca9" aria-label="ເອືອ — play audio"><span class="native" dir="auto">ເອືອ</span><span class="ar">eua</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">27 letters, in the order the course teaches them.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">ກ</span><span class="ar">k</span></div>
-<div class="atile"><span class="native" dir="auto">ຂ</span><span class="ar">kh (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຄ</span><span class="ar">kh (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ງ</span><span class="ar">ng</span></div>
-<div class="atile"><span class="native" dir="auto">ຈ</span><span class="ar">j</span></div>
-<div class="atile"><span class="native" dir="auto">ສ</span><span class="ar">s (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຊ</span><span class="ar">s (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ຍ</span><span class="ar">ny</span></div>
-<div class="atile"><span class="native" dir="auto">ດ</span><span class="ar">d</span></div>
-<div class="atile"><span class="native" dir="auto">ຕ</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="auto">ຖ</span><span class="ar">th (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ທ</span><span class="ar">th (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ນ</span><span class="ar">n</span></div>
-<div class="atile"><span class="native" dir="auto">ບ</span><span class="ar">b</span></div>
-<div class="atile"><span class="native" dir="auto">ປ</span><span class="ar">p</span></div>
-<div class="atile"><span class="native" dir="auto">ຜ</span><span class="ar">ph (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ຝ</span><span class="ar">f (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ພ</span><span class="ar">ph (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ຟ</span><span class="ar">f (low)</span></div>
-<div class="atile"><span class="native" dir="auto">ມ</span><span class="ar">m</span></div>
-<div class="atile"><span class="native" dir="auto">ຢ</span><span class="ar">y</span></div>
-<div class="atile"><span class="native" dir="auto">ຣ</span><span class="ar">r</span></div>
-<div class="atile"><span class="native" dir="auto">ລ</span><span class="ar">l</span></div>
-<div class="atile"><span class="native" dir="auto">ວ</span><span class="ar">v</span></div>
-<div class="atile"><span class="native" dir="auto">ຫ</span><span class="ar">h (high)</span></div>
-<div class="atile"><span class="native" dir="auto">ອ</span><span class="ar">o (silent)</span></div>
-<div class="atile"><span class="native" dir="auto">ຮ</span><span class="ar">h (low)</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="de2f297a" aria-label="ກ — play audio"><span class="native" dir="auto">ກ</span><span class="ar">k</span></button>
+<button type="button" class="atile" data-k="dd2f27e7" aria-label="ຂ — play audio"><span class="native" dir="auto">ຂ</span><span class="ar">kh (high)</span></button>
+<button type="button" class="atile" data-k="db2f24c1" aria-label="ຄ — play audio"><span class="native" dir="auto">ຄ</span><span class="ar">kh (low)</span></button>
+<button type="button" class="atile" data-k="d82f2008" aria-label="ງ — play audio"><span class="native" dir="auto">ງ</span><span class="ar">ng</span></button>
+<button type="button" class="atile" data-k="d72f1e75" aria-label="ຈ — play audio"><span class="native" dir="auto">ຈ</span><span class="ar">j</span></button>
+<button type="button" class="atile" data-k="f52f4daf" aria-label="ສ — play audio"><span class="native" dir="auto">ສ</span><span class="ar">s (high)</span></button>
+<button type="button" class="atile" data-k="d52f1b4f" aria-label="ຊ — play audio"><span class="native" dir="auto">ຊ</span><span class="ar">s (low)</span></button>
+<button type="button" class="atile" data-k="d22f1696" aria-label="ຍ — play audio"><span class="native" dir="auto">ຍ</span><span class="ar">ny</span></button>
+<button type="button" class="atile" data-k="cb2f0b91" aria-label="ດ — play audio"><span class="native" dir="auto">ດ</span><span class="ar">d</span></button>
+<button type="button" class="atile" data-k="ca2f09fe" aria-label="ຕ — play audio"><span class="native" dir="auto">ຕ</span><span class="ar">t</span></button>
+<button type="button" class="atile" data-k="c92f086b" aria-label="ຖ — play audio"><span class="native" dir="auto">ຖ</span><span class="ar">th (high)</span></button>
+<button type="button" class="atile" data-k="c82f06d8" aria-label="ທ — play audio"><span class="native" dir="auto">ທ</span><span class="ar">th (low)</span></button>
+<button type="button" class="atile" data-k="c62f03b2" aria-label="ນ — play audio"><span class="native" dir="auto">ນ</span><span class="ar">n</span></button>
+<button type="button" class="atile" data-k="c52f021f" aria-label="ບ — play audio"><span class="native" dir="auto">ບ</span><span class="ar">b</span></button>
+<button type="button" class="atile" data-k="c42f008c" aria-label="ປ — play audio"><span class="native" dir="auto">ປ</span><span class="ar">p</span></button>
+<button type="button" class="atile" data-k="c32efef9" aria-label="ຜ — play audio"><span class="native" dir="auto">ຜ</span><span class="ar">ph (high)</span></button>
+<button type="button" class="atile" data-k="c22efd66" aria-label="ຝ — play audio"><span class="native" dir="auto">ຝ</span><span class="ar">f (high)</span></button>
+<button type="button" class="atile" data-k="c12efbd3" aria-label="ພ — play audio"><span class="native" dir="auto">ພ</span><span class="ar">ph (low)</span></button>
+<button type="button" class="atile" data-k="c02efa40" aria-label="ຟ — play audio"><span class="native" dir="auto">ຟ</span><span class="ar">f (low)</span></button>
+<button type="button" class="atile" data-k="fe2f5bda" aria-label="ມ — play audio"><span class="native" dir="auto">ມ</span><span class="ar">m</span></button>
+<button type="button" class="atile" data-k="fd2f5a47" aria-label="ຢ — play audio"><span class="native" dir="auto">ຢ</span><span class="ar">y</span></button>
+<button type="button" class="atile" data-k="fc2f58b4" aria-label="ຣ — play audio"><span class="native" dir="auto">ຣ</span><span class="ar">r</span></button>
+<button type="button" class="atile" data-k="fa2f558e" aria-label="ລ — play audio"><span class="native" dir="auto">ລ</span><span class="ar">l</span></button>
+<button type="button" class="atile" data-k="f82f5268" aria-label="ວ — play audio"><span class="native" dir="auto">ວ</span><span class="ar">v</span></button>
+<button type="button" class="atile" data-k="f42f4c1c" aria-label="ຫ — play audio"><span class="native" dir="auto">ຫ</span><span class="ar">h (high)</span></button>
+<button type="button" class="atile" data-k="f22f48f6" aria-label="ອ — play audio"><span class="native" dir="auto">ອ</span><span class="ar">o (silent)</span></button>
+<button type="button" class="atile" data-k="f12f4763" aria-label="ຮ — play audio"><span class="native" dir="auto">ຮ</span><span class="ar">h (low)</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Lao.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">໐</span><span class="ar">0</span></div>
-<div class="atile"><span class="native" dir="auto">໑</span><span class="ar">1</span></div>
-<div class="atile"><span class="native" dir="auto">໒</span><span class="ar">2</span></div>
-<div class="atile"><span class="native" dir="auto">໓</span><span class="ar">3</span></div>
-<div class="atile"><span class="native" dir="auto">໔</span><span class="ar">4</span></div>
-<div class="atile"><span class="native" dir="auto">໕</span><span class="ar">5</span></div>
-<div class="atile"><span class="native" dir="auto">໖</span><span class="ar">6</span></div>
-<div class="atile"><span class="native" dir="auto">໗</span><span class="ar">7</span></div>
-<div class="atile"><span class="native" dir="auto">໘</span><span class="ar">8</span></div>
-<div class="atile"><span class="native" dir="auto">໙</span><span class="ar">9</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="c92b36d4" aria-label="໐ — play audio"><span class="native" dir="auto">໐</span><span class="ar">0</span></button>
+<button type="button" class="atile" data-k="ca2b3867" aria-label="໑ — play audio"><span class="native" dir="auto">໑</span><span class="ar">1</span></button>
+<button type="button" class="atile" data-k="cb2b39fa" aria-label="໒ — play audio"><span class="native" dir="auto">໒</span><span class="ar">2</span></button>
+<button type="button" class="atile" data-k="cc2b3b8d" aria-label="໓ — play audio"><span class="native" dir="auto">໓</span><span class="ar">3</span></button>
+<button type="button" class="atile" data-k="c52b3088" aria-label="໔ — play audio"><span class="native" dir="auto">໔</span><span class="ar">4</span></button>
+<button type="button" class="atile" data-k="c62b321b" aria-label="໕ — play audio"><span class="native" dir="auto">໕</span><span class="ar">5</span></button>
+<button type="button" class="atile" data-k="c72b33ae" aria-label="໖ — play audio"><span class="native" dir="auto">໖</span><span class="ar">6</span></button>
+<button type="button" class="atile" data-k="c82b3541" aria-label="໗ — play audio"><span class="native" dir="auto">໗</span><span class="ar">7</span></button>
+<button type="button" class="atile" data-k="c12b2a3c" aria-label="໘ — play audio"><span class="native" dir="auto">໘</span><span class="ar">8</span></button>
+<button type="button" class="atile" data-k="c22b2bcf" aria-label="໙ — play audio"><span class="native" dir="auto">໙</span><span class="ar">9</span></button></div>
 </section>
 
 <section class="block">
@@ -253,5 +262,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-lao">Learn Lao</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-lo/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

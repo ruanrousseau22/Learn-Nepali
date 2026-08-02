@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
+  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — tap the speaker to hear it.</p>
   <a class="cta" href="/?lang=uz&amp;v=trip">Hear these phrases &rarr;</a>
 </section>
 
@@ -154,39 +163,39 @@ font-size:14.5px;color:var(--ink)}
   <h2>First words</h2>
   <p class="secd">The ones you use every hour</p>
   <div class="note"><b>assalomu alaykum</b> earns the warmest reply; <b>salom</b> is the friendly short form. <b>mayli</b> — alright — closes any exchange agreeably, and is the most useful small word in Uzbek.</div>
-  <table><tr><td class="rom">assalomu alaykum</td><td>hello (the full greeting)</td><td class="native" dir="auto">assalomu alaykum</td></tr>
-<tr><td class="rom">salom</td><td>hi</td><td class="native" dir="auto">salom</td></tr>
-<tr><td class="rom">rahmat</td><td>thank you</td><td class="native" dir="auto">rahmat</td></tr>
-<tr><td class="rom">khayr</td><td>goodbye</td><td class="native" dir="auto">xayr</td></tr>
-<tr><td class="rom">ha</td><td>yes</td><td class="native" dir="auto">ha</td></tr>
-<tr><td class="rom">yawq</td><td>no · there is none</td><td class="native" dir="auto">yoʻq</td></tr>
-<tr><td class="rom">mayli</td><td>alright · fine</td><td class="native" dir="auto">mayli</td></tr>
-<tr><td class="rom">kechirasiz</td><td>excuse me · sorry</td><td class="native" dir="auto">kechirasiz</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="f42e45b4" aria-label="assalomu alaykum — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>assalomu alaykum</td><td>hello (the full greeting)</td><td class="native" dir="auto">assalomu alaykum</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6883e297" aria-label="salom — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>salom</td><td>hi</td><td class="native" dir="auto">salom</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="21b6b296" aria-label="rahmat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>rahmat</td><td>thank you</td><td class="native" dir="auto">rahmat</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="eaac66b9" aria-label="xayr — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khayr</td><td>goodbye</td><td class="native" dir="auto">xayr</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="603aea02" aria-label="ha — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ha</td><td>yes</td><td class="native" dir="auto">ha</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5ed815bd" aria-label="yoʻq — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yawq</td><td>no · there is none</td><td class="native" dir="auto">yoʻq</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="014bef95" aria-label="mayli — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mayli</td><td>alright · fine</td><td class="native" dir="auto">mayli</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e446b6ea" aria-label="kechirasiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kechirasiz</td><td>excuse me · sorry</td><td class="native" dir="auto">kechirasiz</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Being polite</h2>
   <p class="secd">aka, opa and the two pleases</p>
   <div class="note">Address any man <b>aka</b>, any woman <b>opa</b> — warmth, not familiarity. <b>marhamat</b> offers — help yourself — and <b>iltimos</b> asks. The reply to <b>katta rahmat</b> is <b>arzimaydi</b>, not at all.</div>
-  <table><tr><td class="rom">aka</td><td>brother — any man your age or older</td><td class="native" dir="auto">aka</td></tr>
-<tr><td class="rom">opa</td><td>sister — any woman your age or older</td><td class="native" dir="auto">opa</td></tr>
-<tr><td class="rom">iltimos</td><td>please (asking)</td><td class="native" dir="auto">iltimos</td></tr>
-<tr><td class="rom">marhamat</td><td>please · help yourself (offering)</td><td class="native" dir="auto">marhamat</td></tr>
-<tr><td class="rom">katta rahmat</td><td>thank you very much</td><td class="native" dir="auto">katta rahmat</td></tr>
-<tr><td class="rom">arzimaydi</td><td>it is nothing (the reply)</td><td class="native" dir="auto">arzimaydi</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="1036902c" aria-label="aka — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>aka</td><td>brother — any man your age or older</td><td class="native" dir="auto">aka</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="aa228391" aria-label="opa — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>opa</td><td>sister — any woman your age or older</td><td class="native" dir="auto">opa</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c6f4cba0" aria-label="iltimos — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>iltimos</td><td>please (asking)</td><td class="native" dir="auto">iltimos</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="563bbbea" aria-label="marhamat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>marhamat</td><td>please · help yourself (offering)</td><td class="native" dir="auto">marhamat</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0f8c4e0b" aria-label="katta rahmat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>katta rahmat</td><td>thank you very much</td><td class="native" dir="auto">katta rahmat</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6c05752f" aria-label="arzimaydi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>arzimaydi</td><td>it is nothing (the reply)</td><td class="native" dir="auto">arzimaydi</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>mening ismim …</b> — my name is …. Expect <b>qayerdansiz?</b> — where are you from — inside the first minute; answer with your country plus -dan.</div>
-  <table><tr><td class="rom">mening ismim</td><td>my name is …</td><td class="native" dir="auto">mening ismim</td></tr>
-<tr><td class="rom">ismingiz nima</td><td>what is your name?</td><td class="native" dir="auto">ismingiz nima</td></tr>
-<tr><td class="rom">tanishganimizdan khursandman</td><td>pleased to meet you</td><td class="native" dir="auto">tanishganimizdan xursandman</td></tr>
-<tr><td class="rom">tushunmadim</td><td>I did not understand</td><td class="native" dir="auto">tushunmadim</td></tr>
-<tr><td class="rom">sekin gapiring</td><td>please speak slowly</td><td class="native" dir="auto">sekin gapiring</td></tr>
-<tr><td class="rom">men awzbekcha bilmayman</td><td>I do not know Uzbek (yet)</td><td class="native" dir="auto">men oʻzbekcha bilmayman</td></tr>
-<tr><td class="rom">bilmayman</td><td>I do not know</td><td class="native" dir="auto">bilmayman</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="970b9004" aria-label="mening ismim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mening ismim</td><td>my name is …</td><td class="native" dir="auto">mening ismim</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0983a74e" aria-label="ismingiz nima — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ismingiz nima</td><td>what is your name?</td><td class="native" dir="auto">ismingiz nima</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="94148b21" aria-label="tanishganimizdan xursandman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tanishganimizdan khursandman</td><td>pleased to meet you</td><td class="native" dir="auto">tanishganimizdan xursandman</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4e2d0cc6" aria-label="tushunmadim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tushunmadim</td><td>I did not understand</td><td class="native" dir="auto">tushunmadim</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b199b822" aria-label="sekin gapiring — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sekin gapiring</td><td>please speak slowly</td><td class="native" dir="auto">sekin gapiring</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b4ef4e69" aria-label="men oʻzbekcha bilmayman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>men awzbekcha bilmayman</td><td>I do not know Uzbek (yet)</td><td class="native" dir="auto">men oʻzbekcha bilmayman</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9354979b" aria-label="bilmayman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bilmayman</td><td>I do not know</td><td class="native" dir="auto">bilmayman</td></tr></table>
 </section>
 
 <section class="block">
@@ -200,178 +209,178 @@ font-size:14.5px;color:var(--ink)}
   <h2>What you will hear</h2>
   <p class="secd">The volley &amp; the welcomes</p>
   <div class="note">The greeting is a volley — <b>qalaysiz</b>, how is your health, how is the family, all at once. <b>yaxshi, rahmat</b> answers every one of them.</div>
-  <table><tr><td class="rom">qalaysiz</td><td>how are you?</td><td class="native" dir="auto">qalaysiz</td></tr>
-<tr><td class="rom">khush kelibsiz</td><td>welcome!</td><td class="native" dir="auto">xush kelibsiz</td></tr>
-<tr><td class="rom">keling</td><td>come! · come in!</td><td class="native" dir="auto">keling</td></tr>
-<tr><td class="rom">oling</td><td>take it · help yourself</td><td class="native" dir="auto">oling</td></tr>
-<tr><td class="rom">kuting</td><td>wait a moment</td><td class="native" dir="auto">kuting</td></tr>
-<tr><td class="rom">qayerdansiz</td><td>where are you from?</td><td class="native" dir="auto">qayerdansiz</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="196b44ab" aria-label="qalaysiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>qalaysiz</td><td>how are you?</td><td class="native" dir="auto">qalaysiz</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d50e625c" aria-label="xush kelibsiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khush kelibsiz</td><td>welcome!</td><td class="native" dir="auto">xush kelibsiz</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="79c429b5" aria-label="keling — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>keling</td><td>come! · come in!</td><td class="native" dir="auto">keling</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b5228b5a" aria-label="oling — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>oling</td><td>take it · help yourself</td><td class="native" dir="auto">oling</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b7f3b89d" aria-label="kuting — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kuting</td><td>wait a moment</td><td class="native" dir="auto">kuting</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="69e7749e" aria-label="qayerdansiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>qayerdansiz</td><td>where are you from?</td><td class="native" dir="auto">qayerdansiz</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Numbers</h2>
   <p class="secd">Soʻm come in thousands</p>
   <div class="note">Prices come in <b>ming</b> — thousands of soʻm. A bowl of osh runs oʻttiz-qirq ming; a taxi across town oʻn-yigirma ming. Bozor sellers may switch to English numbers.</div>
-  <table><tr><td class="rom">bir</td><td>1</td><td class="native" dir="auto">bir</td></tr>
-<tr><td class="rom">besh</td><td>5</td><td class="native" dir="auto">besh</td></tr>
-<tr><td class="rom">awn</td><td>10</td><td class="native" dir="auto">oʻn</td></tr>
-<tr><td class="rom">yigirma</td><td>20</td><td class="native" dir="auto">yigirma</td></tr>
-<tr><td class="rom">awttiz</td><td>30</td><td class="native" dir="auto">oʻttiz</td></tr>
-<tr><td class="rom">ellik</td><td>50</td><td class="native" dir="auto">ellik</td></tr>
-<tr><td class="rom">yuz</td><td>100</td><td class="native" dir="auto">yuz</td></tr>
-<tr><td class="rom">ming</td><td>1,000</td><td class="native" dir="auto">ming</td></tr>
-<tr><td class="rom">besh ming</td><td>5,000</td><td class="native" dir="auto">besh ming</td></tr>
-<tr><td class="rom">awn ming</td><td>10,000</td><td class="native" dir="auto">oʻn ming</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="66caeba2" aria-label="bir — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bir</td><td>1</td><td class="native" dir="auto">bir</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="807f5c33" aria-label="besh — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>besh</td><td>5</td><td class="native" dir="auto">besh</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="30f5f7f1" aria-label="oʻn — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>awn</td><td>10</td><td class="native" dir="auto">oʻn</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="89763bf9" aria-label="yigirma — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yigirma</td><td>20</td><td class="native" dir="auto">yigirma</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4ddfd0ea" aria-label="oʻttiz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>awttiz</td><td>30</td><td class="native" dir="auto">oʻttiz</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ce524f98" aria-label="ellik — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ellik</td><td>50</td><td class="native" dir="auto">ellik</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5778344b" aria-label="yuz — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yuz</td><td>100</td><td class="native" dir="auto">yuz</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7c89ea90" aria-label="ming — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ming</td><td>1,000</td><td class="native" dir="auto">ming</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4c84696c" aria-label="besh ming — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>besh ming</td><td>5,000</td><td class="native" dir="auto">besh ming</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8980eb16" aria-label="oʻn ming — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>awn ming</td><td>10,000</td><td class="native" dir="auto">oʻn ming</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting around</h2>
   <p class="secd">Any car is a taxi</p>
   <div class="note">Hold out a hand — any car can be a taxi. Agree the narx BEFORE getting in. The Tashkent metro is fast, cheap, and its stations are worth the ride on their own.</div>
-  <table><tr><td class="rom">taksi</td><td>taxi</td><td class="native" dir="auto">taksi</td></tr>
-<tr><td class="rom">avtobus</td><td>bus</td><td class="native" dir="auto">avtobus</td></tr>
-<tr><td class="rom">metro</td><td>the metro</td><td class="native" dir="auto">metro</td></tr>
-<tr><td class="rom">bekat</td><td>stop · station</td><td class="native" dir="auto">bekat</td></tr>
-<tr><td class="rom">tawkhtang</td><td>please stop</td><td class="native" dir="auto">toʻxtang</td></tr>
-<tr><td class="rom">shu yerda</td><td>right here</td><td class="native" dir="auto">shu yerda</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="2a09483f" aria-label="taksi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>taksi</td><td>taxi</td><td class="native" dir="auto">taksi</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dd7f25c3" aria-label="avtobus — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>avtobus</td><td>bus</td><td class="native" dir="auto">avtobus</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ba85df6a" aria-label="metro — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>metro</td><td>the metro</td><td class="native" dir="auto">metro</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="207e338c" aria-label="bekat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bekat</td><td>stop · station</td><td class="native" dir="auto">bekat</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="30496b71" aria-label="toʻxtang — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tawkhtang</td><td>please stop</td><td class="native" dir="auto">toʻxtang</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3dd6fd32" aria-label="shu yerda — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shu yerda</td><td>right here</td><td class="native" dir="auto">shu yerda</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>qayerda?</b> frame above, then listen for these.</div>
-  <table><tr><td class="rom">chapga</td><td>to the left</td><td class="native" dir="auto">chapga</td></tr>
-<tr><td class="rom">awngga</td><td>to the right</td><td class="native" dir="auto">oʻngga</td></tr>
-<tr><td class="rom">tawghri</td><td>straight on</td><td class="native" dir="auto">toʻgʻri</td></tr>
-<tr><td class="rom">yaqin</td><td>near</td><td class="native" dir="auto">yaqin</td></tr>
-<tr><td class="rom">uzoq</td><td>far</td><td class="native" dir="auto">uzoq</td></tr>
-<tr><td class="rom">bu yerda</td><td>here</td><td class="native" dir="auto">bu yerda</td></tr>
-<tr><td class="rom">u yerda</td><td>there</td><td class="native" dir="auto">u yerda</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ed16a603" aria-label="chapga — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chapga</td><td>to the left</td><td class="native" dir="auto">chapga</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="aa48bcda" aria-label="oʻngga — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>awngga</td><td>to the right</td><td class="native" dir="auto">oʻngga</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="57d0ac56" aria-label="toʻgʻri — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tawghri</td><td>straight on</td><td class="native" dir="auto">toʻgʻri</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2f6ac4e5" aria-label="yaqin — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yaqin</td><td>near</td><td class="native" dir="auto">yaqin</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="55a09696" aria-label="uzoq — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>uzoq</td><td>far</td><td class="native" dir="auto">uzoq</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="84e0fcdf" aria-label="bu yerda — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bu yerda</td><td>here</td><td class="native" dir="auto">bu yerda</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="93e2a63f" aria-label="u yerda — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>u yerda</td><td>there</td><td class="native" dir="auto">u yerda</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Reading the signs</h2>
   <p class="secd">Doors still speak Cyrillic</p>
   <div class="note">Signage often stays Cyrillic: КИРИШ <b>kirish</b>, ЧИҚИШ <b>chiqish</b>, ОЧИҚ <b>ochiq</b>, ЁПИҚ <b>yopiq</b>, ДИҚҚАТ <b>diqqat</b>. Five words decode most doors in Tashkent.</div>
-  <table><tr><td class="rom">kirish</td><td>entrance</td><td class="native" dir="auto">kirish</td></tr>
-<tr><td class="rom">chiqish</td><td>exit</td><td class="native" dir="auto">chiqish</td></tr>
-<tr><td class="rom">ochiq</td><td>open</td><td class="native" dir="auto">ochiq</td></tr>
-<tr><td class="rom">yopiq</td><td>closed</td><td class="native" dir="auto">yopiq</td></tr>
-<tr><td class="rom">diqqat</td><td>attention!</td><td class="native" dir="auto">diqqat</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="51a0c54b" aria-label="kirish — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kirish</td><td>entrance</td><td class="native" dir="auto">kirish</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2e8551d4" aria-label="chiqish — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chiqish</td><td>exit</td><td class="native" dir="auto">chiqish</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7331f2f7" aria-label="ochiq — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ochiq</td><td>open</td><td class="native" dir="auto">ochiq</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="15df5a5d" aria-label="yopiq — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yopiq</td><td>closed</td><td class="native" dir="auto">yopiq</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d95494a1" aria-label="diqqat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>diqqat</td><td>attention!</td><td class="native" dir="auto">diqqat</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Eating</h2>
   <p class="secd">Osh, non and the refills</p>
   <div class="note"><b>osh</b> is THE dish — an invitation to osh is an honour — arrive hungry. <b>non</b> is near-sacred: never upside down, never thrown away. <b>bas, rahmat</b> stops the refills kindly.</div>
-  <table><tr><td class="rom">osh</td><td>plov — the national dish</td><td class="native" dir="auto">osh</td></tr>
-<tr><td class="rom">non</td><td>bread</td><td class="native" dir="auto">non</td></tr>
-<tr><td class="rom">choy</td><td>tea</td><td class="native" dir="auto">choy</td></tr>
-<tr><td class="rom">juda mazali</td><td>very tasty</td><td class="native" dir="auto">juda mazali</td></tr>
-<tr><td class="rom">bas</td><td>enough</td><td class="native" dir="auto">bas</td></tr>
-<tr><td class="rom">hisob</td><td>the bill</td><td class="native" dir="auto">hisob</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="cb2078ed" aria-label="osh — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>osh</td><td>plov — the national dish</td><td class="native" dir="auto">osh</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2fb1a5fc" aria-label="non — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>non</td><td>bread</td><td class="native" dir="auto">non</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9929593e" aria-label="choy — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>choy</td><td>tea</td><td class="native" dir="auto">choy</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8f2d4c9d" aria-label="juda mazali — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>juda mazali</td><td>very tasty</td><td class="native" dir="auto">juda mazali</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="77b77ead" aria-label="bas — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bas</td><td>enough</td><td class="native" dir="auto">bas</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5ee0d0ca" aria-label="hisob — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hisob</td><td>the bill</td><td class="native" dir="auto">hisob</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Being a guest</h2>
   <p class="secd">The dasturxon rules</p>
   <div class="note">The <b>dasturxon</b> fills the moment you sit. Choy is poured a third full — that is respect, not thrift: a brimming cup hints the guest should leave. <b>toʻydim</b> ends seconds politely.</div>
-  <table><tr><td class="rom">dasturkhon</td><td>the spread laid for guests</td><td class="native" dir="auto">dasturxon</td></tr>
-<tr><td class="rom">mehmon</td><td>guest</td><td class="native" dir="auto">mehmon</td></tr>
-<tr><td class="rom">tawydim</td><td>I am full</td><td class="native" dir="auto">toʻydim</td></tr>
-<tr><td class="rom">juda yakhshi</td><td>very good · lovely</td><td class="native" dir="auto">juda yaxshi</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="4586801f" aria-label="dasturxon — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dasturkhon</td><td>the spread laid for guests</td><td class="native" dir="auto">dasturxon</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="55b2b139" aria-label="mehmon — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mehmon</td><td>guest</td><td class="native" dir="auto">mehmon</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="03aaa0a8" aria-label="toʻydim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tawydim</td><td>I am full</td><td class="native" dir="auto">toʻydim</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d05a533d" aria-label="juda yaxshi — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>juda yakhshi</td><td>very good · lovely</td><td class="native" dir="auto">juda yaxshi</td></tr></table>
 </section>
 
 <section class="block">
   <h2>At the bozor</h2>
   <p class="secd">The friendly game</p>
   <div class="note">The first narx is an opening move. <b>arzonroq boʻlsinmi?</b> asks it lower with a smile; <b>kerak emas</b> turns a pushy seller away kindly. Fixed-price shops will say so.</div>
-  <table><tr><td class="rom">bozor</td><td>the market</td><td class="native" dir="auto">bozor</td></tr>
-<tr><td class="rom">qimmat</td><td>expensive</td><td class="native" dir="auto">qimmat</td></tr>
-<tr><td class="rom">arzon</td><td>cheap</td><td class="native" dir="auto">arzon</td></tr>
-<tr><td class="rom">arzonroq bawlsinmi?</td><td>can it be cheaper?</td><td class="native" dir="auto">arzonroq boʻlsinmi?</td></tr>
-<tr><td class="rom">olaman</td><td>I will take it</td><td class="native" dir="auto">olaman</td></tr>
-<tr><td class="rom">kerak emas</td><td>I do not need it</td><td class="native" dir="auto">kerak emas</td></tr>
-<tr><td class="rom">bir kilo</td><td>one kilo</td><td class="native" dir="auto">bir kilo</td></tr>
-<tr><td class="rom">yarim</td><td>half</td><td class="native" dir="auto">yarim</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="80fb8131" aria-label="bozor — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bozor</td><td>the market</td><td class="native" dir="auto">bozor</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ddb258ac" aria-label="qimmat — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>qimmat</td><td>expensive</td><td class="native" dir="auto">qimmat</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3646a5a9" aria-label="arzon — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>arzon</td><td>cheap</td><td class="native" dir="auto">arzon</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4d42c1a4" aria-label="arzonroq boʻlsinmi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>arzonroq bawlsinmi?</td><td>can it be cheaper?</td><td class="native" dir="auto">arzonroq boʻlsinmi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2b592e3f" aria-label="olaman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>olaman</td><td>I will take it</td><td class="native" dir="auto">olaman</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f713e389" aria-label="kerak emas — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kerak emas</td><td>I do not need it</td><td class="native" dir="auto">kerak emas</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="df9bd0b7" aria-label="bir kilo — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bir kilo</td><td>one kilo</td><td class="native" dir="auto">bir kilo</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c3a65d05" aria-label="yarim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yarim</td><td>half</td><td class="native" dir="auto">yarim</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; hot water</p>
   <div class="note"><b>boʻsh xona bormi?</b> — is there a free room? — is the first question at the desk. Confirm <b>issiq suv</b> before the season turns cold.</div>
-  <table><tr><td class="rom">mehmonkhona</td><td>hotel</td><td class="native" dir="auto">mehmonxona</td></tr>
-<tr><td class="rom">kalit</td><td>the key</td><td class="native" dir="auto">kalit</td></tr>
-<tr><td class="rom">issiq suv</td><td>hot water</td><td class="native" dir="auto">issiq suv</td></tr>
-<tr><td class="rom">toza</td><td>clean</td><td class="native" dir="auto">toza</td></tr>
-<tr><td class="rom">bawsh</td><td>free · vacant</td><td class="native" dir="auto">boʻsh</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="0f0f0a1d" aria-label="mehmonxona — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mehmonkhona</td><td>hotel</td><td class="native" dir="auto">mehmonxona</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8d97867a" aria-label="kalit — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kalit</td><td>the key</td><td class="native" dir="auto">kalit</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="04414816" aria-label="issiq suv — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>issiq suv</td><td>hot water</td><td class="native" dir="auto">issiq suv</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="58a2e501" aria-label="toza — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>toza</td><td>clean</td><td class="native" dir="auto">toza</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="63e29e7e" aria-label="boʻsh — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bawsh</td><td>free · vacant</td><td class="native" dir="auto">boʻsh</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>yordam bering!</b> — help me — is the sentence to know; say it clearly. <b>tez yordam</b> is the ambulance. Carry your hotel card — any driver can read you home.</div>
-  <table><tr><td class="rom">yordam bering</td><td>please help!</td><td class="native" dir="auto">yordam bering</td></tr>
-<tr><td class="rom">politsiya</td><td>police</td><td class="native" dir="auto">politsiya</td></tr>
-<tr><td class="rom">kasalkhona</td><td>hospital</td><td class="native" dir="auto">kasalxona</td></tr>
-<tr><td class="rom">dorikhona</td><td>pharmacy</td><td class="native" dir="auto">dorixona</td></tr>
-<tr><td class="rom">tez yordam</td><td>ambulance</td><td class="native" dir="auto">tez yordam</td></tr>
-<tr><td class="rom">men kasalman</td><td>I am ill</td><td class="native" dir="auto">men kasalman</td></tr>
-<tr><td class="rom">adashdim</td><td>I am lost</td><td class="native" dir="auto">adashdim</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6a28d4e4" aria-label="yordam bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yordam bering</td><td>please help!</td><td class="native" dir="auto">yordam bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b4bf65bf" aria-label="politsiya — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>politsiya</td><td>police</td><td class="native" dir="auto">politsiya</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ce654f2f" aria-label="kasalxona — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kasalkhona</td><td>hospital</td><td class="native" dir="auto">kasalxona</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4d09feb5" aria-label="dorixona — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dorikhona</td><td>pharmacy</td><td class="native" dir="auto">dorixona</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4b11be6c" aria-label="tez yordam — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tez yordam</td><td>ambulance</td><td class="native" dir="auto">tez yordam</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0236ff59" aria-label="men kasalman — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>men kasalman</td><td>I am ill</td><td class="native" dir="auto">men kasalman</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a8d0d266" aria-label="adashdim — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>adashdim</td><td>I am lost</td><td class="native" dir="auto">adashdim</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, Wi-Fi &amp; photos</p>
   <div class="note">Hotel Wi-Fi is normal, cafe Wi-Fi patchy. A local <b>sim-karta</b> needs your passport. Ask <b>suratga olsam maylimi</b> before photographing people — especially at the bozor.</div>
-  <table><tr><td class="rom">telefon</td><td>phone</td><td class="native" dir="auto">telefon</td></tr>
-<tr><td class="rom">raqam</td><td>number</td><td class="native" dir="auto">raqam</td></tr>
-<tr><td class="rom">vay-fay bormi?</td><td>is there Wi-Fi?</td><td class="native" dir="auto">Wi-Fi bormi?</td></tr>
-<tr><td class="rom">sim-karta</td><td>SIM card</td><td class="native" dir="auto">sim-karta</td></tr>
-<tr><td class="rom">suratga olsam maylimi?</td><td>may I take a photo?</td><td class="native" dir="auto">suratga olsam maylimi?</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="42111dfc" aria-label="telefon — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>telefon</td><td>phone</td><td class="native" dir="auto">telefon</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e440547d" aria-label="raqam — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>raqam</td><td>number</td><td class="native" dir="auto">raqam</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d1e828f9" aria-label="Wi-Fi bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>vay-fay bormi?</td><td>is there Wi-Fi?</td><td class="native" dir="auto">Wi-Fi bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="313c54fc" aria-label="sim-karta — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sim-karta</td><td>SIM card</td><td class="native" dir="auto">sim-karta</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4f233f37" aria-label="suratga olsam maylimi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suratga olsam maylimi?</td><td>may I take a photo?</td><td class="native" dir="auto">suratga olsam maylimi?</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
-  <table><tr><td class="rom">bozor qayerda?</td><td>Where is the market?</td><td class="native" dir="auto">bozor qayerda?</td></tr>
-<tr><td class="rom">bekat qayerda?</td><td>Where is the bus stop?</td><td class="native" dir="auto">bekat qayerda?</td></tr>
-<tr><td class="rom">metro qayerda?</td><td>Where is the metro?</td><td class="native" dir="auto">metro qayerda?</td></tr>
-<tr><td class="rom">mehmonkhona qayerda?</td><td>Where is the hotel?</td><td class="native" dir="auto">mehmonxona qayerda?</td></tr>
-<tr><td class="rom">kasalkhona qayerda?</td><td>Where is the hospital?</td><td class="native" dir="auto">kasalxona qayerda?</td></tr>
-<tr><td class="rom">hojatkhona qayerda?</td><td>Where is the toilet?</td><td class="native" dir="auto">hojatxona qayerda?</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ece22af9" aria-label="bozor qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bozor qayerda?</td><td>Where is the market?</td><td class="native" dir="auto">bozor qayerda?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1cfea142" aria-label="bekat qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bekat qayerda?</td><td>Where is the bus stop?</td><td class="native" dir="auto">bekat qayerda?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dd26b70c" aria-label="metro qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>metro qayerda?</td><td>Where is the metro?</td><td class="native" dir="auto">metro qayerda?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9c526005" aria-label="mehmonxona qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mehmonkhona qayerda?</td><td>Where is the hotel?</td><td class="native" dir="auto">mehmonxona qayerda?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cab41f4b" aria-label="kasalxona qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kasalkhona qayerda?</td><td>Where is the hospital?</td><td class="native" dir="auto">kasalxona qayerda?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0dd6d4c3" aria-label="hojatxona qayerda? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hojatkhona qayerda?</td><td>Where is the toilet?</td><td class="native" dir="auto">hojatxona qayerda?</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask if something is there</h2>
   <p class="fs">Do you have ___?</p>
-  <table><tr><td class="rom">choy bormi?</td><td>Do you have tea?</td><td class="native" dir="auto">choy bormi?</td></tr>
-<tr><td class="rom">non bormi?</td><td>Do you have bread?</td><td class="native" dir="auto">non bormi?</td></tr>
-<tr><td class="rom">suv bormi?</td><td>Do you have water?</td><td class="native" dir="auto">suv bormi?</td></tr>
-<tr><td class="rom">osh bormi?</td><td>Do you have plov?</td><td class="native" dir="auto">osh bormi?</td></tr>
-<tr><td class="rom">bawsh khona bormi?</td><td>Do you have a free room?</td><td class="native" dir="auto">boʻsh xona bormi?</td></tr>
-<tr><td class="rom">issiq suv bormi?</td><td>Do you have hot water?</td><td class="native" dir="auto">issiq suv bormi?</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="5e2224a4" aria-label="choy bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>choy bormi?</td><td>Do you have tea?</td><td class="native" dir="auto">choy bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="72b45456" aria-label="non bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>non bormi?</td><td>Do you have bread?</td><td class="native" dir="auto">non bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="058a9ba1" aria-label="suv bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suv bormi?</td><td>Do you have water?</td><td class="native" dir="auto">suv bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f6016865" aria-label="osh bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>osh bormi?</td><td>Do you have plov?</td><td class="native" dir="auto">osh bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cd286510" aria-label="boʻsh xona bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bawsh khona bormi?</td><td>Do you have a free room?</td><td class="native" dir="auto">boʻsh xona bormi?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="23626c2c" aria-label="issiq suv bormi? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>issiq suv bormi?</td><td>Do you have hot water?</td><td class="native" dir="auto">issiq suv bormi?</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask for something politely</h2>
   <p class="fs">___, please.</p>
-  <table><tr><td class="rom">non bering</td><td>Bread, please.</td><td class="native" dir="auto">non bering</td></tr>
-<tr><td class="rom">choy bering</td><td>Tea, please.</td><td class="native" dir="auto">choy bering</td></tr>
-<tr><td class="rom">suv bering</td><td>Water, please.</td><td class="native" dir="auto">suv bering</td></tr>
-<tr><td class="rom">osh bering</td><td>Plov, please.</td><td class="native" dir="auto">osh bering</td></tr>
-<tr><td class="rom">buni bering</td><td>This one, please.</td><td class="native" dir="auto">buni bering</td></tr>
-<tr><td class="rom">kalit bering</td><td>The key, please.</td><td class="native" dir="auto">kalit bering</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="f52e40cb" aria-label="non bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>non bering</td><td>Bread, please.</td><td class="native" dir="auto">non bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="24dd7af9" aria-label="choy bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>choy bering</td><td>Tea, please.</td><td class="native" dir="auto">choy bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="16554d10" aria-label="suv bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suv bering</td><td>Water, please.</td><td class="native" dir="auto">suv bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5843d494" aria-label="osh bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>osh bering</td><td>Plov, please.</td><td class="native" dir="auto">osh bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="baaa04a0" aria-label="buni bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>buni bering</td><td>This one, please.</td><td class="native" dir="auto">buni bering</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="49d8a525" aria-label="kalit bering — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kalit bering</td><td>The key, please.</td><td class="native" dir="auto">kalit bering</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask any price</h2>
   <p class="fs">How much is ___?</p>
-  <table><tr><td class="rom">bu qancha?</td><td>How much is this?</td><td class="native" dir="auto">bu qancha?</td></tr>
-<tr><td class="rom">osh qancha?</td><td>How much is the plov?</td><td class="native" dir="auto">osh qancha?</td></tr>
-<tr><td class="rom">choy qancha?</td><td>How much is the tea?</td><td class="native" dir="auto">choy qancha?</td></tr>
-<tr><td class="rom">taksi qancha?</td><td>How much is the taxi?</td><td class="native" dir="auto">taksi qancha?</td></tr>
-<tr><td class="rom">bir kecha qancha?</td><td>How much is one night?</td><td class="native" dir="auto">bir kecha qancha?</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="1a5a4a63" aria-label="bu qancha? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bu qancha?</td><td>How much is this?</td><td class="native" dir="auto">bu qancha?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ea16d666" aria-label="osh qancha? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>osh qancha?</td><td>How much is the plov?</td><td class="native" dir="auto">osh qancha?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c1560be5" aria-label="choy qancha? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>choy qancha?</td><td>How much is the tea?</td><td class="native" dir="auto">choy qancha?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="fc20885c" aria-label="taksi qancha? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>taksi qancha?</td><td>How much is the taxi?</td><td class="native" dir="auto">taksi qancha?</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="437330cf" aria-label="bir kecha qancha? — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bir kecha qancha?</td><td>How much is one night?</td><td class="native" dir="auto">bir kecha qancha?</td></tr></table>
 </section>
 
 <section class="block">
@@ -404,5 +413,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-uzbek">Learn Uzbek</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-uz/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

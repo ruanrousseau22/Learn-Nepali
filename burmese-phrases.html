@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
+  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — tap the speaker to hear it.</p>
   <a class="cta" href="/?lang=my&amp;v=trip">Hear these phrases &rarr;</a>
 </section>
 
@@ -154,37 +163,37 @@ font-size:14.5px;color:var(--ink)}
   <h2>First words</h2>
   <p class="secd">Add ba and it turns polite</p>
   <div class="note"><b>mingalaba</b> is the visitor&rsquo;s hello — always right. Burmese goodbyes announce the leaving: <b>thwa daw meh</b>, I am off. The little <b>ba</b> on the end of anything makes it polite.</div>
-  <table><tr><td class="rom">mingalaba</td><td>hello</td><td class="native" dir="auto">မင်္ဂလာပါ</td></tr>
-<tr><td class="rom">kyeizu tin ba de</td><td>thank you</td><td class="native" dir="auto">ကျေးဇူးတင်ပါတယ်</td></tr>
-<tr><td class="rom">taun ban ba de</td><td>sorry</td><td class="native" dir="auto">တောင်းပန်ပါတယ်</td></tr>
-<tr><td class="rom">houq keh</td><td>yes</td><td class="native" dir="auto">ဟုတ်ကဲ့</td></tr>
-<tr><td class="rom">ma houq bu</td><td>no</td><td class="native" dir="auto">မဟုတ်ဘူး</td></tr>
-<tr><td class="rom">ya bi</td><td>got it · OK now</td><td class="native" dir="auto">ရပြီ</td></tr>
-<tr><td class="rom">keiq sa ma shi ba bu</td><td>no problem</td><td class="native" dir="auto">ကိစ္စမရှိပါဘူး</td></tr>
-<tr><td class="rom">thwa daw meh</td><td>goodbye — I am off</td><td class="native" dir="auto">သွားတော့မယ်</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="2555285a" aria-label="မင်္ဂလာပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mingalaba</td><td>hello</td><td class="native" dir="auto">မင်္ဂလာပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b22ec535" aria-label="ကျေးဇူးတင်ပါတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kyeizu tin ba de</td><td>thank you</td><td class="native" dir="auto">ကျေးဇူးတင်ပါတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="be3a8525" aria-label="တောင်းပန်ပါတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>taun ban ba de</td><td>sorry</td><td class="native" dir="auto">တောင်းပန်ပါတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="95eaaf79" aria-label="ဟုတ်ကဲ့ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>houq keh</td><td>yes</td><td class="native" dir="auto">ဟုတ်ကဲ့</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="de75747c" aria-label="မဟုတ်ဘူး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ma houq bu</td><td>no</td><td class="native" dir="auto">မဟုတ်ဘူး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9b60766f" aria-label="ရပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ya bi</td><td>got it · OK now</td><td class="native" dir="auto">ရပြီ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c412c59c" aria-label="ကိစ္စမရှိပါဘူး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>keiq sa ma shi ba bu</td><td>no problem</td><td class="native" dir="auto">ကိစ္စမရှိပါဘူး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="59f6eac8" aria-label="သွားတော့မယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thwa daw meh</td><td>goodbye — I am off</td><td class="native" dir="auto">သွားတော့မယ်</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Being polite</h2>
   <p class="secd">The respectful address</p>
   <div class="note"><b>hsaya</b> — teacher — is the respectful address for any man skilled at his work: drivers, guides, waiters. A woman is <b>hsayama</b>. You will be told <b>hpanaq chuq ba</b> — please take off your shoes — at every doorstep.</div>
-  <table><tr><td class="rom">hsaya</td><td>sir (any skilled man)</td><td class="native" dir="auto">ဆရာ</td></tr>
-<tr><td class="rom">hsayama</td><td>madam · teacher (woman)</td><td class="native" dir="auto">ဆရာမ</td></tr>
-<tr><td class="rom">hkana saun ba</td><td>wait a moment, please</td><td class="native" dir="auto">ခဏစောင့်ပါ</td></tr>
-<tr><td class="rom">htain ba</td><td>please sit</td><td class="native" dir="auto">ထိုင်ပါ</td></tr>
-<tr><td class="rom">la ba</td><td>please come</td><td class="native" dir="auto">လာပါ</td></tr>
-<tr><td class="rom">hpanaq chuq ba</td><td>shoes off, please (you will be told)</td><td class="native" dir="auto">ဖိနပ်ချွတ်ပါ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="421f165b" aria-label="ဆရာ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsaya</td><td>sir (any skilled man)</td><td class="native" dir="auto">ဆရာ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1addc6a9" aria-label="ဆရာမ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsayama</td><td>madam · teacher (woman)</td><td class="native" dir="auto">ဆရာမ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5d7d4460" aria-label="ခဏစောင့်ပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hkana saun ba</td><td>wait a moment, please</td><td class="native" dir="auto">ခဏစောင့်ပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="00653347" aria-label="ထိုင်ပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>htain ba</td><td>please sit</td><td class="native" dir="auto">ထိုင်ပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ffa5cf89" aria-label="လာပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>la ba</td><td>please come</td><td class="native" dir="auto">လာပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="43e3a894" aria-label="ဖိနပ်ချွတ်ပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpanaq chuq ba</td><td>shoes off, please (you will be told)</td><td class="native" dir="auto">ဖိနပ်ချွတ်ပါ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note">Give your name plus <b>ba</b> and you have introduced yourself — the gendered I (men <b>kyundaw</b>, women <b>kyama</b>) can wait for the course.</div>
-  <table><tr><td class="rom">nameh beh lo hkaw leh</td><td>what is your name?</td><td class="native" dir="auto">နာမည်ဘယ်လိုခေါ်လဲ</td></tr>
-<tr><td class="rom">beh ga la leh</td><td>where are you from?</td><td class="native" dir="auto">ဘယ်ကလာလဲ</td></tr>
-<tr><td class="rom">na ma leh bu</td><td>I do not understand</td><td class="native" dir="auto">နားမလည်ဘူး</td></tr>
-<tr><td class="rom">pyan pyaw ba</td><td>please say it again</td><td class="native" dir="auto">ပြန်ပြောပါ</td></tr>
-<tr><td class="rom">hpyei hpyei pyaw ba</td><td>please speak slowly</td><td class="native" dir="auto">ဖြည်းဖြည်းပြောပါ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="cab5e1be" aria-label="နာမည်ဘယ်လိုခေါ်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nameh beh lo hkaw leh</td><td>what is your name?</td><td class="native" dir="auto">နာမည်ဘယ်လိုခေါ်လဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4348527b" aria-label="ဘယ်ကလာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>beh ga la leh</td><td>where are you from?</td><td class="native" dir="auto">ဘယ်ကလာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cf30a338" aria-label="နားမလည်ဘူး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>na ma leh bu</td><td>I do not understand</td><td class="native" dir="auto">နားမလည်ဘူး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7e2862e4" aria-label="ပြန်ပြောပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pyan pyaw ba</td><td>please say it again</td><td class="native" dir="auto">ပြန်ပြောပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3144b94d" aria-label="ဖြည်းဖြည်းပြောပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpyei hpyei pyaw ba</td><td>please speak slowly</td><td class="native" dir="auto">ဖြည်းဖြည်းပြောပါ</td></tr></table>
 </section>
 
 <section class="block">
@@ -198,147 +207,147 @@ font-size:14.5px;color:var(--ink)}
   <h2>What you will hear</h2>
   <p class="secd">The eaten-yet greeting</p>
   <div class="note"><b>htamin sa pi bi la?</b> — eaten rice yet? — is a greeting, not lunch planning. <b>sa pi bi</b> answers it. In a teashop <b>ba sa ma leh</b> — what will you eat? — means the waiter is ready to take your order.</div>
-  <table><tr><td class="rom">htamin sa pi bi la</td><td>eaten yet? (a greeting)</td><td class="native" dir="auto">ထမင်းစားပြီးပြီလား</td></tr>
-<tr><td class="rom">sa pi bi</td><td>already eaten (the answer)</td><td class="native" dir="auto">စားပြီးပြီ</td></tr>
-<tr><td class="rom">sa ba</td><td>eat! (the host insists)</td><td class="native" dir="auto">စားပါ</td></tr>
-<tr><td class="rom">ba sa ma leh</td><td>what will you eat?</td><td class="native" dir="auto">ဘာစားမလဲ</td></tr>
-<tr><td class="rom">yauq pi</td><td>we have arrived</td><td class="native" dir="auto">ရောက်ပြီ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ea92ec34" aria-label="ထမင်းစားပြီးပြီလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>htamin sa pi bi la</td><td>eaten yet? (a greeting)</td><td class="native" dir="auto">ထမင်းစားပြီးပြီလား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="29d5b682" aria-label="စားပြီးပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sa pi bi</td><td>already eaten (the answer)</td><td class="native" dir="auto">စားပြီးပြီ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7ffb6b6f" aria-label="စားပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sa ba</td><td>eat! (the host insists)</td><td class="native" dir="auto">စားပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ffa05605" aria-label="ဘာစားမလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ba sa ma leh</td><td>what will you eat?</td><td class="native" dir="auto">ဘာစားမလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="94e209ee" aria-label="ရောက်ပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yauq pi</td><td>we have arrived</td><td class="native" dir="auto">ရောက်ပြီ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Numbers</h2>
   <p class="secd">Kyat come in thousands</p>
   <div class="note">Tea is a few hundred kyat, a meal a few thousand, hotels in <b>thaung</b> and <b>thein</b>. Sellers will tap the number into a calculator and turn it round to you.</div>
-  <table><tr><td class="rom">tiq</td><td>1</td><td class="native" dir="auto">တစ်</td></tr>
-<tr><td class="rom">nga</td><td>5</td><td class="native" dir="auto">ငါး</td></tr>
-<tr><td class="rom">hse</td><td>10</td><td class="native" dir="auto">ဆယ်</td></tr>
-<tr><td class="rom">tiq ya</td><td>100</td><td class="native" dir="auto">တစ်ရာ</td></tr>
-<tr><td class="rom">nga ya</td><td>500</td><td class="native" dir="auto">ငါးရာ</td></tr>
-<tr><td class="rom">ta htaung</td><td>1,000</td><td class="native" dir="auto">တစ်ထောင်</td></tr>
-<tr><td class="rom">nga htaung kyaq</td><td>5,000 kyat</td><td class="native" dir="auto">ငါးထောင်ကျပ်</td></tr>
-<tr><td class="rom">thaung</td><td>10,000</td><td class="native" dir="auto">သောင်း</td></tr>
-<tr><td class="rom">thein</td><td>100,000</td><td class="native" dir="auto">သိန်း</td></tr>
-<tr><td class="rom">kyaq</td><td>kyat</td><td class="native" dir="auto">ကျပ်</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="2933f629" aria-label="တစ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tiq</td><td>1</td><td class="native" dir="auto">တစ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dc837605" aria-label="ငါး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nga</td><td>5</td><td class="native" dir="auto">ငါး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2fcc39fc" aria-label="ဆယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hse</td><td>10</td><td class="native" dir="auto">ဆယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="612fe56c" aria-label="တစ်ရာ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tiq ya</td><td>100</td><td class="native" dir="auto">တစ်ရာ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5ecf2ae0" aria-label="ငါးရာ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nga ya</td><td>500</td><td class="native" dir="auto">ငါးရာ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cb95d100" aria-label="တစ်ထောင် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ta htaung</td><td>1,000</td><td class="native" dir="auto">တစ်ထောင်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="403baaa6" aria-label="ငါးထောင်ကျပ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nga htaung kyaq</td><td>5,000 kyat</td><td class="native" dir="auto">ငါးထောင်ကျပ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ef619d80" aria-label="သောင်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thaung</td><td>10,000</td><td class="native" dir="auto">သောင်း</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ab59a1e5" aria-label="သိန်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thein</td><td>100,000</td><td class="native" dir="auto">သိန်း</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="644f4733" aria-label="ကျပ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kyaq</td><td>kyat</td><td class="native" dir="auto">ကျပ်</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting around</h2>
   <p class="secd">No meters here</p>
   <div class="note">Yangon taxis have no meters — agree the fare through the window before you get in. <b>hpyei hpyei</b> asks the driver to slow down.</div>
-  <table><tr><td class="rom">teq ka si</td><td>taxi</td><td class="native" dir="auto">တက္ကစီ</td></tr>
-<tr><td class="rom">baq sa ka</td><td>bus</td><td class="native" dir="auto">ဘတ်စ်ကား</td></tr>
-<tr><td class="rom">ka</td><td>car</td><td class="native" dir="auto">ကား</td></tr>
-<tr><td class="rom">hpyei hpyei</td><td>slowly!</td><td class="native" dir="auto">ဖြည်းဖြည်း</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="a7a3c485" aria-label="တက္ကစီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>teq ka si</td><td>taxi</td><td class="native" dir="auto">တက္ကစီ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3cf0d1b2" aria-label="ဘတ်စ်ကား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baq sa ka</td><td>bus</td><td class="native" dir="auto">ဘတ်စ်ကား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dd864af6" aria-label="ကား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ka</td><td>car</td><td class="native" dir="auto">ကား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8a73349f" aria-label="ဖြည်းဖြည်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpyei hpyei</td><td>slowly!</td><td class="native" dir="auto">ဖြည်းဖြည်း</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>beh hma leh</b> frame above, then listen for these.</div>
-  <table><tr><td class="rom">beh beq</td><td>left side</td><td class="native" dir="auto">ဘယ်ဘက်</td></tr>
-<tr><td class="rom">nya beq</td><td>right side</td><td class="native" dir="auto">ညာဘက်</td></tr>
-<tr><td class="rom">beh kweh</td><td>turn left</td><td class="native" dir="auto">ဘယ်ကွေ့</td></tr>
-<tr><td class="rom">nya kweh</td><td>turn right</td><td class="native" dir="auto">ညာကွေ့</td></tr>
-<tr><td class="rom">teh deh</td><td>straight ahead</td><td class="native" dir="auto">တည့်တည့်</td></tr>
-<tr><td class="rom">teh deh thwa ba</td><td>go straight, please</td><td class="native" dir="auto">တည့်တည့်သွားပါ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="e1dbbb19" aria-label="ဘယ်ဘက် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>beh beq</td><td>left side</td><td class="native" dir="auto">ဘယ်ဘက်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b1ad7dcc" aria-label="ညာဘက် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nya beq</td><td>right side</td><td class="native" dir="auto">ညာဘက်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="67e967f1" aria-label="ဘယ်ကွေ့ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>beh kweh</td><td>turn left</td><td class="native" dir="auto">ဘယ်ကွေ့</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="bdc3eef2" aria-label="ညာကွေ့ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nya kweh</td><td>turn right</td><td class="native" dir="auto">ညာကွေ့</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9e5eb12d" aria-label="တည့်တည့် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>teh deh</td><td>straight ahead</td><td class="native" dir="auto">တည့်တည့်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a8436aa2" aria-label="တည့်တည့်သွားပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>teh deh thwa ba</td><td>go straight, please</td><td class="native" dir="auto">တည့်တည့်သွားပါ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>The teashop</h2>
   <p class="secd">Myanmar’s living room</p>
   <div class="note">The teashop is where Myanmar sits: sweet milky <b>lahpeq yeh</b>, free refills of plain tea, mohinga for breakfast. <b>taw bi</b> stops the topping-up kindly.</div>
-  <table><tr><td class="rom">lahpeq yeh hsaing</td><td>the teashop</td><td class="native" dir="auto">လက်ဖက်ရည်ဆိုင်</td></tr>
-<tr><td class="rom">lahpeq yeh</td><td>sweet milk tea</td><td class="native" dir="auto">လက်ဖက်ရည်</td></tr>
-<tr><td class="rom">kaw hpi</td><td>coffee</td><td class="native" dir="auto">ကော်ဖီ</td></tr>
-<tr><td class="rom">htamin</td><td>rice · a meal</td><td class="native" dir="auto">ထမင်း</td></tr>
-<tr><td class="rom">ta hkweq pei ba</td><td>one cup, please</td><td class="native" dir="auto">တစ်ခွက်ပေးပါ</td></tr>
-<tr><td class="rom">saq de</td><td>it is spicy</td><td class="native" dir="auto">စပ်တယ်</td></tr>
-<tr><td class="rom">a yan kaung de</td><td>really good!</td><td class="native" dir="auto">အရမ်းကောင်းတယ်</td></tr>
-<tr><td class="rom">taw bi</td><td>that is enough</td><td class="native" dir="auto">တော်ပြီ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="40bfe8e2" aria-label="လက်ဖက်ရည်ဆိုင် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lahpeq yeh hsaing</td><td>the teashop</td><td class="native" dir="auto">လက်ဖက်ရည်ဆိုင်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9f38e9ab" aria-label="လက်ဖက်ရည် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lahpeq yeh</td><td>sweet milk tea</td><td class="native" dir="auto">လက်ဖက်ရည်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8454e536" aria-label="ကော်ဖီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaw hpi</td><td>coffee</td><td class="native" dir="auto">ကော်ဖီ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="722f0670" aria-label="ထမင်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>htamin</td><td>rice · a meal</td><td class="native" dir="auto">ထမင်း</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="46ff332a" aria-label="တစ်ခွက်ပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ta hkweq pei ba</td><td>one cup, please</td><td class="native" dir="auto">တစ်ခွက်ပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b783414f" aria-label="စပ်တယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saq de</td><td>it is spicy</td><td class="native" dir="auto">စပ်တယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dac289f7" aria-label="အရမ်းကောင်းတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>a yan kaung de</td><td>really good!</td><td class="native" dir="auto">အရမ်းကောင်းတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9e7a8fe4" aria-label="တော်ပြီ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>taw bi</td><td>that is enough</td><td class="native" dir="auto">တော်ပြီ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>At the zei</h2>
   <p class="secd">Bargain with a smile</p>
   <div class="note"><b>shaw pei ba</b> — please lower it — with a smile does the bargaining. Money changers want crisp, unfolded dollars; <b>ma lo bu</b> — no need — waves off persistent sellers.</div>
-  <table><tr><td class="rom">zei</td><td>the market</td><td class="native" dir="auto">ဈေး</td></tr>
-<tr><td class="rom">zei kyi de</td><td>it is expensive</td><td class="native" dir="auto">ဈေးကြီးတယ်</td></tr>
-<tr><td class="rom">zei paw de</td><td>it is cheap</td><td class="native" dir="auto">ဈေးပေါတယ်</td></tr>
-<tr><td class="rom">shaw pei ba</td><td>please lower the price</td><td class="native" dir="auto">လျှော့ပေးပါ</td></tr>
-<tr><td class="rom">ma lo bu</td><td>I do not need it</td><td class="native" dir="auto">မလိုဘူး</td></tr>
-<tr><td class="rom">paiq hsan</td><td>money</td><td class="native" dir="auto">ပိုက်ဆံ</td></tr>
-<tr><td class="rom">paiq hsan leh de</td><td>to change money</td><td class="native" dir="auto">ပိုက်ဆံလဲတယ်</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="f9e9087f" aria-label="ဈေး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zei</td><td>the market</td><td class="native" dir="auto">ဈေး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="27681a62" aria-label="ဈေးကြီးတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zei kyi de</td><td>it is expensive</td><td class="native" dir="auto">ဈေးကြီးတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e3078804" aria-label="ဈေးပေါတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zei paw de</td><td>it is cheap</td><td class="native" dir="auto">ဈေးပေါတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e45b3c4f" aria-label="လျှော့ပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shaw pei ba</td><td>please lower the price</td><td class="native" dir="auto">လျှော့ပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="da95386d" aria-label="မလိုဘူး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ma lo bu</td><td>I do not need it</td><td class="native" dir="auto">မလိုဘူး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a3407497" aria-label="ပိုက်ဆံ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>paiq hsan</td><td>money</td><td class="native" dir="auto">ပိုက်ဆံ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c0eeec50" aria-label="ပိုက်ဆံလဲတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>paiq hsan leh de</td><td>to change money</td><td class="native" dir="auto">ပိုက်ဆံလဲတယ်</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying somewhere</h2>
   <p class="secd">Rooms &amp; torches</p>
   <div class="note"><b>a hkan shi la</b> — is there a room? — is the first question at the desk. Power cuts are routine everywhere — a phone torch is standard kit, not an emergency.</div>
-  <table><tr><td class="rom">ho teh</td><td>hotel</td><td class="native" dir="auto">ဟိုတယ်</td></tr>
-<tr><td class="rom">a hkan</td><td>room</td><td class="native" dir="auto">အခန်း</td></tr>
-<tr><td class="rom">thaw</td><td>the key</td><td class="native" dir="auto">သော့</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="2b01ffb4" aria-label="ဟိုတယ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ho teh</td><td>hotel</td><td class="native" dir="auto">ဟိုတယ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="08ebca88" aria-label="အခန်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>a hkan</td><td>room</td><td class="native" dir="auto">အခန်း</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2d3d14f9" aria-label="သော့ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thaw</td><td>the key</td><td class="native" dir="auto">သော့</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>ku nyi ba!</b> — help, please — is the sentence to know; say it clearly. <b>ne ma kaung bu</b> tells a pharmacist how you feel; most speak some English.</div>
-  <table><tr><td class="rom">ku nyi ba</td><td>help me, please!</td><td class="native" dir="auto">ကူညီပါ</td></tr>
-<tr><td class="rom">yeh</td><td>police</td><td class="native" dir="auto">ရဲ</td></tr>
-<tr><td class="rom">hsei youn</td><td>hospital</td><td class="native" dir="auto">ဆေးရုံ</td></tr>
-<tr><td class="rom">hsaya wun</td><td>doctor</td><td class="native" dir="auto">ဆရာဝန်</td></tr>
-<tr><td class="rom">hsei</td><td>medicine</td><td class="native" dir="auto">ဆေး</td></tr>
-<tr><td class="rom">ne ma kaung bu</td><td>I am not feeling well</td><td class="native" dir="auto">နေမကောင်းဘူး</td></tr>
-<tr><td class="rom">thadi hta ba</td><td>be careful!</td><td class="native" dir="auto">သတိထားပါ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="a0f154af" aria-label="ကူညီပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ku nyi ba</td><td>help me, please!</td><td class="native" dir="auto">ကူညီပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8046f3da" aria-label="ရဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yeh</td><td>police</td><td class="native" dir="auto">ရဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="12f974de" aria-label="ဆေးရုံ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsei youn</td><td>hospital</td><td class="native" dir="auto">ဆေးရုံ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f9512f29" aria-label="ဆရာဝန် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsaya wun</td><td>doctor</td><td class="native" dir="auto">ဆရာဝန်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="013ab7a1" aria-label="ဆေး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsei</td><td>medicine</td><td class="native" dir="auto">ဆေး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="598f686c" aria-label="နေမကောင်းဘူး — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ne ma kaung bu</td><td>I am not feeling well</td><td class="native" dir="auto">နေမကောင်းဘူး</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e12c6b81" aria-label="သတိထားပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thadi hta ba</td><td>be careful!</td><td class="native" dir="auto">သတိထားပါ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">SIM cards are cheap with a passport. Wifi fades outside the cities — download your maps first. Ask before photographing people; a smile and a gesture do it.</div>
-  <table><tr><td class="rom">hpoun</td><td>phone</td><td class="native" dir="auto">ဖုန်း</td></tr>
-<tr><td class="rom">nan baq</td><td>number</td><td class="native" dir="auto">နံပါတ်</td></tr>
-<tr><td class="rom">hpoun nan baq beh lauq leh</td><td>what is your number?</td><td class="native" dir="auto">ဖုန်းနံပါတ်ဘယ်လောက်လဲ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="bfabc0cf" aria-label="ဖုန်း — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpoun</td><td>phone</td><td class="native" dir="auto">ဖုန်း</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e58f2e7f" aria-label="နံပါတ် — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nan baq</td><td>number</td><td class="native" dir="auto">နံပါတ်</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6bce90da" aria-label="ဖုန်းနံပါတ်ဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hpoun nan baq beh lauq leh</td><td>what is your number?</td><td class="native" dir="auto">ဖုန်းနံပါတ်ဘယ်လောက်လဲ</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
-  <table><tr><td class="rom">zei beh hma leh?</td><td>Where is the market?</td><td class="native" dir="auto">ဈေးဘယ်မှာလဲ</td></tr>
-<tr><td class="rom">ho teh beh hma leh?</td><td>Where is the hotel?</td><td class="native" dir="auto">ဟိုတယ်ဘယ်မှာလဲ</td></tr>
-<tr><td class="rom">hsei youn beh hma leh?</td><td>Where is the hospital?</td><td class="native" dir="auto">ဆေးရုံဘယ်မှာလဲ</td></tr>
-<tr><td class="rom">ein tha beh hma leh?</td><td>Where is the toilet?</td><td class="native" dir="auto">အိမ်သာဘယ်မှာလဲ</td></tr>
-<tr><td class="rom">baq sa ka beh hma leh?</td><td>Where is the bus?</td><td class="native" dir="auto">ဘတ်စ်ကားဘယ်မှာလဲ</td></tr>
-<tr><td class="rom">a hkan beh hma leh?</td><td>Where is the room?</td><td class="native" dir="auto">အခန်းဘယ်မှာလဲ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="c4680ca4" aria-label="ဈေးဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zei beh hma leh?</td><td>Where is the market?</td><td class="native" dir="auto">ဈေးဘယ်မှာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3e17f847" aria-label="ဟိုတယ်ဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ho teh beh hma leh?</td><td>Where is the hotel?</td><td class="native" dir="auto">ဟိုတယ်ဘယ်မှာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6bdd6e61" aria-label="ဆေးရုံဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hsei youn beh hma leh?</td><td>Where is the hospital?</td><td class="native" dir="auto">ဆေးရုံဘယ်မှာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b1824e0b" aria-label="အိမ်သာဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ein tha beh hma leh?</td><td>Where is the toilet?</td><td class="native" dir="auto">အိမ်သာဘယ်မှာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="359e800d" aria-label="ဘတ်စ်ကားဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baq sa ka beh hma leh?</td><td>Where is the bus?</td><td class="native" dir="auto">ဘတ်စ်ကားဘယ်မှာလဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e02efbb3" aria-label="အခန်းဘယ်မှာလဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>a hkan beh hma leh?</td><td>Where is the room?</td><td class="native" dir="auto">အခန်းဘယ်မှာလဲ</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask if something is there</h2>
   <p class="fs">Do you have ___?</p>
-  <table><tr><td class="rom">a hkan shi la?</td><td>Do you have a room?</td><td class="native" dir="auto">အခန်းရှိလား</td></tr>
-<tr><td class="rom">ye shi la?</td><td>Do you have water?</td><td class="native" dir="auto">ရေရှိလား</td></tr>
-<tr><td class="rom">lahpeq yeh shi la?</td><td>Do you have tea?</td><td class="native" dir="auto">လက်ဖက်ရည်ရှိလား</td></tr>
-<tr><td class="rom">kaw hpi shi la?</td><td>Do you have coffee?</td><td class="native" dir="auto">ကော်ဖီရှိလား</td></tr>
-<tr><td class="rom">htamin shi la?</td><td>Do you have food?</td><td class="native" dir="auto">ထမင်းရှိလား</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="8d93219a" aria-label="အခန်းရှိလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>a hkan shi la?</td><td>Do you have a room?</td><td class="native" dir="auto">အခန်းရှိလား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1368d601" aria-label="ရေရှိလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ye shi la?</td><td>Do you have water?</td><td class="native" dir="auto">ရေရှိလား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4cce3765" aria-label="လက်ဖက်ရည်ရှိလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lahpeq yeh shi la?</td><td>Do you have tea?</td><td class="native" dir="auto">လက်ဖက်ရည်ရှိလား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="db272078" aria-label="ကော်ဖီရှိလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaw hpi shi la?</td><td>Do you have coffee?</td><td class="native" dir="auto">ကော်ဖီရှိလား</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="02bd3062" aria-label="ထမင်းရှိလား — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>htamin shi la?</td><td>Do you have food?</td><td class="native" dir="auto">ထမင်းရှိလား</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask for something politely</h2>
   <p class="fs">___, please.</p>
-  <table><tr><td class="rom">ye pei ba</td><td>water, please.</td><td class="native" dir="auto">ရေပေးပါ</td></tr>
-<tr><td class="rom">lahpeq yeh pei ba</td><td>tea, please.</td><td class="native" dir="auto">လက်ဖက်ရည်ပေးပါ</td></tr>
-<tr><td class="rom">kaw hpi pei ba</td><td>coffee, please.</td><td class="native" dir="auto">ကော်ဖီပေးပါ</td></tr>
-<tr><td class="rom">htamin pei ba</td><td>food, please.</td><td class="native" dir="auto">ထမင်းပေးပါ</td></tr>
-<tr><td class="rom">da pei ba</td><td>this one, please.</td><td class="native" dir="auto">ဒါပေးပါ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="b43cb694" aria-label="ရေပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ye pei ba</td><td>water, please.</td><td class="native" dir="auto">ရေပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="87fe3460" aria-label="လက်ဖက်ရည်ပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lahpeq yeh pei ba</td><td>tea, please.</td><td class="native" dir="auto">လက်ဖက်ရည်ပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="88e3d237" aria-label="ကော်ဖီပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaw hpi pei ba</td><td>coffee, please.</td><td class="native" dir="auto">ကော်ဖီပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="89de7871" aria-label="ထမင်းပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>htamin pei ba</td><td>food, please.</td><td class="native" dir="auto">ထမင်းပေးပါ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="917b1e31" aria-label="ဒါပေးပါ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>da pei ba</td><td>this one, please.</td><td class="native" dir="auto">ဒါပေးပါ</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask any price</h2>
   <p class="fs">How much is ___?</p>
-  <table><tr><td class="rom">da beh lauq leh?</td><td>How much is this?</td><td class="native" dir="auto">ဒါဘယ်လောက်လဲ</td></tr>
-<tr><td class="rom">a hkan beh lauq leh?</td><td>How much is the room?</td><td class="native" dir="auto">အခန်းဘယ်လောက်လဲ</td></tr>
-<tr><td class="rom">lahpeq yeh beh lauq leh?</td><td>How much is the tea?</td><td class="native" dir="auto">လက်ဖက်ရည်ဘယ်လောက်လဲ</td></tr>
-<tr><td class="rom">kaw hpi beh lauq leh?</td><td>How much is the coffee?</td><td class="native" dir="auto">ကော်ဖီဘယ်လောက်လဲ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="0774a0d7" aria-label="ဒါဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>da beh lauq leh?</td><td>How much is this?</td><td class="native" dir="auto">ဒါဘယ်လောက်လဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f8bc2f1f" aria-label="အခန်းဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>a hkan beh lauq leh?</td><td>How much is the room?</td><td class="native" dir="auto">အခန်းဘယ်လောက်လဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6f5e5f10" aria-label="လက်ဖက်ရည်ဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lahpeq yeh beh lauq leh?</td><td>How much is the tea?</td><td class="native" dir="auto">လက်ဖက်ရည်ဘယ်လောက်လဲ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ae5f92b5" aria-label="ကော်ဖီဘယ်လောက်လဲ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaw hpi beh lauq leh?</td><td>How much is the coffee?</td><td class="native" dir="auto">ကော်ဖီဘယ်လောက်လဲ</td></tr></table>
 </section>
 
 <section class="block">
@@ -371,5 +380,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-burmese">Learn Burmese</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-my/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
+  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — tap the speaker to hear it.</p>
   <a class="cta" href="/?lang=ps&amp;v=trip">Hear these phrases &rarr;</a>
 </section>
 
@@ -154,43 +163,43 @@ font-size:14.5px;color:var(--ink)}
   <h2>First words</h2>
   <p class="secd">May you not be tired</p>
   <div class="note"><b>starray ma she</b> — may you not be tired — is the greeting that matters, answered in kind. <b>pa makha de xa</b> sends you off with a blessed road.</div>
-  <table><tr><td class="rom">salaam</td><td>hello</td><td class="native" dir="rtl">سلام</td></tr>
-<tr><td class="rom">starray ma she</td><td>hello — may you not be tired</td><td class="native" dir="rtl">ستړی مه شې</td></tr>
-<tr><td class="rom">manana</td><td>thank you</td><td class="native" dir="rtl">مننه</td></tr>
-<tr><td class="rom">bakhxana ghwaarram</td><td>sorry · excuse me</td><td class="native" dir="rtl">بخښنه غواړم</td></tr>
-<tr><td class="rom">ho</td><td>yes</td><td class="native" dir="rtl">هو</td></tr>
-<tr><td class="rom">na</td><td>no</td><td class="native" dir="rtl">نه</td></tr>
-<tr><td class="rom">xa</td><td>good · OK</td><td class="native" dir="rtl">ښه</td></tr>
-<tr><td class="rom">sama da</td><td>alright</td><td class="native" dir="rtl">سمه ده</td></tr>
-<tr><td class="rom">parwaa na laree</td><td>no problem</td><td class="native" dir="rtl">پروا نه لري</td></tr>
-<tr><td class="rom">pa makha de xa</td><td>goodbye — may your road be good</td><td class="native" dir="rtl">په مخه دې ښه</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="86f13bb6" aria-label="سلام — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>salaam</td><td>hello</td><td class="native" dir="rtl">سلام</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="172eefdf" aria-label="ستړی مه شې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>starray ma she</td><td>hello — may you not be tired</td><td class="native" dir="rtl">ستړی مه شې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="daca8a5f" aria-label="مننه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>manana</td><td>thank you</td><td class="native" dir="rtl">مننه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a5777bf7" aria-label="بخښنه غواړم — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bakhxana ghwaarram</td><td>sorry · excuse me</td><td class="native" dir="rtl">بخښنه غواړم</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a5840e48" aria-label="هو — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ho</td><td>yes</td><td class="native" dir="rtl">هو</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="44fe9bee" aria-label="نه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>na</td><td>no</td><td class="native" dir="rtl">نه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f79d16f9" aria-label="ښه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>xa</td><td>good · OK</td><td class="native" dir="rtl">ښه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b2ad7cdb" aria-label="سمه ده — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sama da</td><td>alright</td><td class="native" dir="rtl">سمه ده</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e0929ac1" aria-label="پروا نه لري — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>parwaa na laree</td><td>no problem</td><td class="native" dir="rtl">پروا نه لري</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="29be6948" aria-label="په مخه دې ښه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pa makha de xa</td><td>goodbye — may your road be good</td><td class="native" dir="rtl">په مخه دې ښه</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Melmastia</h2>
   <p class="secd">The guest is sacred</p>
   <div class="note"><b>melmastyaa</b> — hospitality — is the Pashtun code, and you will be welcomed everywhere. The third cup of chaay is where refusing counts: <b>bas, manana</b> lands it kindly.</div>
-  <table><tr><td class="rom">melma</td><td>guest</td><td class="native" dir="rtl">مېلمه</td></tr>
-<tr><td class="rom">melmastyaa</td><td>hospitality — the code</td><td class="native" dir="rtl">مېلمستیا</td></tr>
-<tr><td class="rom">pa khayr raaghle</td><td>welcome — you came well</td><td class="native" dir="rtl">په خیر راغلې</td></tr>
-<tr><td class="rom">chaay wutsxa</td><td>drink tea! (the offer)</td><td class="native" dir="rtl">چای وڅښه</td></tr>
-<tr><td class="rom">raashey</td><td>come! (polite)</td><td class="native" dir="rtl">راشئ</td></tr>
-<tr><td class="rom">kena</td><td>sit down!</td><td class="native" dir="rtl">کېنه</td></tr>
-<tr><td class="rom">dder xa</td><td>very good · wonderful</td><td class="native" dir="rtl">ډېر ښه</td></tr>
-<tr><td class="rom">bas</td><td>enough!</td><td class="native" dir="rtl">بس</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6bc4638b" aria-label="مېلمه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>melma</td><td>guest</td><td class="native" dir="rtl">مېلمه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="15f31cae" aria-label="مېلمستیا — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>melmastyaa</td><td>hospitality — the code</td><td class="native" dir="rtl">مېلمستیا</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="bda45ace" aria-label="په خیر راغلې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pa khayr raaghle</td><td>welcome — you came well</td><td class="native" dir="rtl">په خیر راغلې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="68a0ce35" aria-label="چای وڅښه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chaay wutsxa</td><td>drink tea! (the offer)</td><td class="native" dir="rtl">چای وڅښه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9cad6d91" aria-label="راشئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>raashey</td><td>come! (polite)</td><td class="native" dir="rtl">راشئ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3d7298c8" aria-label="کېنه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kena</td><td>sit down!</td><td class="native" dir="rtl">کېنه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7c2e9d64" aria-label="ډېر ښه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dder xa</td><td>very good · wonderful</td><td class="native" dir="rtl">ډېر ښه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d1b75444" aria-label="بس — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>bas</td><td>enough!</td><td class="native" dir="rtl">بس</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>zmaa num …</b> — my name is …. <b>lag paxto zda laram</b> — I know a little Pashto — opens every door in the country.</div>
-  <table><tr><td class="rom">zmaa num</td><td>my name (is…)</td><td class="native" dir="rtl">زما نوم</td></tr>
-<tr><td class="rom">staa num tsa day</td><td>what is your name?</td><td class="native" dir="rtl">ستا نوم څه دی</td></tr>
-<tr><td class="rom">la koma ye</td><td>where are you from?</td><td class="native" dir="rtl">له کومه یې</td></tr>
-<tr><td class="rom">na pohegam</td><td>I do not understand</td><td class="native" dir="rtl">نه پوهېږم</td></tr>
-<tr><td class="rom">wro wro wuwaaya</td><td>say it slowly</td><td class="native" dir="rtl">ورو ورو ووایه</td></tr>
-<tr><td class="rom">byaa wuwaaya</td><td>say it again</td><td class="native" dir="rtl">بیا ووایه</td></tr>
-<tr><td class="rom">lag paxto zda laram</td><td>I know a little Pashto</td><td class="native" dir="rtl">لږ پښتو زده لرم</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="7fe9a688" aria-label="زما نوم — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zmaa num</td><td>my name (is…)</td><td class="native" dir="rtl">زما نوم</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6c8a43c8" aria-label="ستا نوم څه دی — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>staa num tsa day</td><td>what is your name?</td><td class="native" dir="rtl">ستا نوم څه دی</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="568ce372" aria-label="له کومه یې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>la koma ye</td><td>where are you from?</td><td class="native" dir="rtl">له کومه یې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f4cc167d" aria-label="نه پوهېږم — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>na pohegam</td><td>I do not understand</td><td class="native" dir="rtl">نه پوهېږم</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b0075539" aria-label="ورو ورو ووایه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wro wro wuwaaya</td><td>say it slowly</td><td class="native" dir="rtl">ورو ورو ووایه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8b704c7b" aria-label="بیا ووایه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>byaa wuwaaya</td><td>say it again</td><td class="native" dir="rtl">بیا ووایه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="405ec69d" aria-label="لږ پښتو زده لرم — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lag paxto zda laram</td><td>I know a little Pashto</td><td class="native" dir="rtl">لږ پښتو زده لرم</td></tr></table>
 </section>
 
 <section class="block">
@@ -204,123 +213,123 @@ font-size:14.5px;color:var(--ink)}
   <h2>What you will hear</h2>
   <p class="secd">Warmth, fast and personal</p>
   <div class="note">Small talk arrives quickly and personally — children, family, origins. It is warmth, not interrogation; short answers and a smile are perfect.</div>
-  <table><tr><td class="rom">raasha</td><td>come!</td><td class="native" dir="rtl">راشه</td></tr>
-<tr><td class="rom">wukhora</td><td>eat! (the host insists)</td><td class="native" dir="rtl">وخوره</td></tr>
-<tr><td class="rom">wudrega</td><td>stop!</td><td class="native" dir="rtl">ودرېږه</td></tr>
-<tr><td class="rom">maashumaan lare</td><td>do you have children?</td><td class="native" dir="rtl">ماشومان لرې</td></tr>
-<tr><td class="rom">khayr</td><td>well-being (the all-purpose blessing)</td><td class="native" dir="rtl">خیر</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="9ba99a67" aria-label="راشه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>raasha</td><td>come!</td><td class="native" dir="rtl">راشه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e02cca60" aria-label="وخوره — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wukhora</td><td>eat! (the host insists)</td><td class="native" dir="rtl">وخوره</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b1517e65" aria-label="ودرېږه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wudrega</td><td>stop!</td><td class="native" dir="rtl">ودرېږه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="840a00f8" aria-label="ماشومان لرې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maashumaan lare</td><td>do you have children?</td><td class="native" dir="rtl">ماشومان لرې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3c6148cf" aria-label="خیر — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khayr</td><td>well-being (the all-purpose blessing)</td><td class="native" dir="rtl">خیر</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Numbers</h2>
   <p class="secd">Afghani in the hundreds</p>
   <div class="note">Bazaar prices sit in tens and hundreds of afghani, hotels in <b>zer</b>. Fingers and a phone calculator bridge every gap.</div>
-  <table><tr><td class="rom">yaw</td><td>1</td><td class="native" dir="rtl">یو</td></tr>
-<tr><td class="rom">dwa</td><td>2</td><td class="native" dir="rtl">دوه</td></tr>
-<tr><td class="rom">dre</td><td>3</td><td class="native" dir="rtl">درې</td></tr>
-<tr><td class="rom">pindza</td><td>5</td><td class="native" dir="rtl">پنځه</td></tr>
-<tr><td class="rom">las</td><td>10</td><td class="native" dir="rtl">لس</td></tr>
-<tr><td class="rom">shel</td><td>20</td><td class="native" dir="rtl">شل</td></tr>
-<tr><td class="rom">sel</td><td>100</td><td class="native" dir="rtl">سل</td></tr>
-<tr><td class="rom">zer</td><td>1,000</td><td class="native" dir="rtl">زر</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="3417d96b" aria-label="یو — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yaw</td><td>1</td><td class="native" dir="rtl">یو</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a0097d5d" aria-label="دوه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dwa</td><td>2</td><td class="native" dir="rtl">دوه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="391956a8" aria-label="درې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dre</td><td>3</td><td class="native" dir="rtl">درې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c8b0200c" aria-label="پنځه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pindza</td><td>5</td><td class="native" dir="rtl">پنځه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="786bad51" aria-label="لس — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>las</td><td>10</td><td class="native" dir="rtl">لس</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5d61b17c" aria-label="شل — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shel</td><td>20</td><td class="native" dir="rtl">شل</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="227868e1" aria-label="سل — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sel</td><td>100</td><td class="native" dir="rtl">سل</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cfea6f8c" aria-label="زر — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>zer</td><td>1,000</td><td class="native" dir="rtl">زر</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>chere day</b> frame above, then listen for these.</div>
-  <table><tr><td class="rom">xee</td><td>right</td><td class="native" dir="rtl">ښي</td></tr>
-<tr><td class="rom">kinn</td><td>left</td><td class="native" dir="rtl">کیڼ</td></tr>
-<tr><td class="rom">makhaamakh</td><td>straight ahead</td><td class="native" dir="rtl">مخامخ</td></tr>
-<tr><td class="rom">nagde</td><td>near</td><td class="native" dir="rtl">نږدې</td></tr>
-<tr><td class="rom">mottar</td><td>car</td><td class="native" dir="rtl">موټر</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="029d284a" aria-label="ښي — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>xee</td><td>right</td><td class="native" dir="rtl">ښي</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0eea5efd" aria-label="کیڼ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kinn</td><td>left</td><td class="native" dir="rtl">کیڼ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ee8427d0" aria-label="مخامخ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>makhaamakh</td><td>straight ahead</td><td class="native" dir="rtl">مخامخ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="32656494" aria-label="نږدې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nagde</td><td>near</td><td class="native" dir="rtl">نږدې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9ed42a44" aria-label="موټر — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mottar</td><td>car</td><td class="native" dir="rtl">موټر</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Eating</h2>
   <p class="secd">Ddoddey under everything</p>
   <div class="note"><b>ddoddey</b> is bread, food and the meal itself — warm naan under every dish. <b>chaay</b> means green unless you ask for <b>tor</b>; <b>khwandawar</b> praises the cook.</div>
-  <table><tr><td class="rom">ddoddey</td><td>bread · food · the meal</td><td class="native" dir="rtl">ډوډۍ</td></tr>
-<tr><td class="rom">wrije</td><td>rice</td><td class="native" dir="rtl">وريجې</td></tr>
-<tr><td class="rom">ghwaxa</td><td>meat</td><td class="native" dir="rtl">غوښه</td></tr>
-<tr><td class="rom">chaay</td><td>tea</td><td class="native" dir="rtl">چای</td></tr>
-<tr><td class="rom">shin chaay</td><td>green tea (the default)</td><td class="native" dir="rtl">شین چای</td></tr>
-<tr><td class="rom">tor chaay</td><td>black tea</td><td class="native" dir="rtl">تور چای</td></tr>
-<tr><td class="rom">khwandawar</td><td>tasty</td><td class="native" dir="rtl">خوندور</td></tr>
-<tr><td class="rom">oba</td><td>water</td><td class="native" dir="rtl">اوبه</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="5c3fbce8" aria-label="ډوډۍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ddoddey</td><td>bread · food · the meal</td><td class="native" dir="rtl">ډوډۍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="865e0407" aria-label="وريجې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wrije</td><td>rice</td><td class="native" dir="rtl">وريجې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="300f5dda" aria-label="غوښه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ghwaxa</td><td>meat</td><td class="native" dir="rtl">غوښه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="6c1cfd33" aria-label="چای — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chaay</td><td>tea</td><td class="native" dir="rtl">چای</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b768b6b1" aria-label="شین چای — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shin chaay</td><td>green tea (the default)</td><td class="native" dir="rtl">شین چای</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3e9927e9" aria-label="تور چای — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tor chaay</td><td>black tea</td><td class="native" dir="rtl">تور چای</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cac69c56" aria-label="خوندور — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khwandawar</td><td>tasty</td><td class="native" dir="rtl">خوندور</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="294515cd" aria-label="اوبه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>oba</td><td>water</td><td class="native" dir="rtl">اوبه</td></tr></table>
 </section>
 
 <section class="block">
   <h2>The bazaar</h2>
   <p class="secd">The expected dance</p>
   <div class="note">The bazaar expects the dance: <b>dder graan day!</b> then <b>arzaan ye krra</b>, both smiling. Settle the total before goods change hands.</div>
-  <table><tr><td class="rom">baazaar</td><td>the bazaar</td><td class="native" dir="rtl">بازار</td></tr>
-<tr><td class="rom">payse</td><td>money</td><td class="native" dir="rtl">پیسې</td></tr>
-<tr><td class="rom">biya</td><td>price</td><td class="native" dir="rtl">بیه</td></tr>
-<tr><td class="rom">dder graan day</td><td>it is too expensive!</td><td class="native" dir="rtl">ډېر ګران دی</td></tr>
-<tr><td class="rom">arzaan ye krra</td><td>make it cheaper</td><td class="native" dir="rtl">ارزان یې کړه</td></tr>
-<tr><td class="rom">hets</td><td>nothing · none</td><td class="native" dir="rtl">هېڅ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="7dd186d4" aria-label="بازار — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baazaar</td><td>the bazaar</td><td class="native" dir="rtl">بازار</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9d026033" aria-label="پیسې — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>payse</td><td>money</td><td class="native" dir="rtl">پیسې</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b77cdc5a" aria-label="بیه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>biya</td><td>price</td><td class="native" dir="rtl">بیه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f08c5ed4" aria-label="ډېر ګران دی — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dder graan day</td><td>it is too expensive!</td><td class="native" dir="rtl">ډېر ګران دی</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cffc3a55" aria-label="ارزان یې کړه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>arzaan ye krra</td><td>make it cheaper</td><td class="native" dir="rtl">ارزان یې کړه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e2c67e27" aria-label="هېڅ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hets</td><td>nothing · none</td><td class="native" dir="rtl">هېڅ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying somewhere</h2>
   <p class="secd">Mind the false friend</p>
   <div class="note">A <b>hottal</b> is often an eatery — for sleeping, ask for a <b>khaalee khuna</b>. Power and water take evenings off, so pack a torch.</div>
-  <table><tr><td class="rom">hottal</td><td>hotel — often an eatery</td><td class="native" dir="rtl">هوټل</td></tr>
-<tr><td class="rom">khuna</td><td>room</td><td class="native" dir="rtl">خونه</td></tr>
-<tr><td class="rom">khaalee khuna</td><td>a free room</td><td class="native" dir="rtl">خالي خونه</td></tr>
-<tr><td class="rom">keelee</td><td>the key</td><td class="native" dir="rtl">کیلي</td></tr>
-<tr><td class="rom">tashnaab</td><td>bathroom</td><td class="native" dir="rtl">تشناب</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="86630808" aria-label="هوټل — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hottal</td><td>hotel — often an eatery</td><td class="native" dir="rtl">هوټل</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dbffa681" aria-label="خونه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khuna</td><td>room</td><td class="native" dir="rtl">خونه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="06d59674" aria-label="خالي خونه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khaalee khuna</td><td>a free room</td><td class="native" dir="rtl">خالي خونه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="27832b85" aria-label="کیلي — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>keelee</td><td>the key</td><td class="native" dir="rtl">کیلي</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="87787945" aria-label="تشناب — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tashnaab</td><td>bathroom</td><td class="native" dir="rtl">تشناب</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>mrasta wokrra!</b> — help me — is the sentence to know; say it clearly. Keep your address written in Pashto; any shopkeeper will oblige.</div>
-  <table><tr><td class="rom">mrasta wokrra</td><td>please help!</td><td class="native" dir="rtl">مرسته وکړه</td></tr>
-<tr><td class="rom">polis</td><td>police</td><td class="native" dir="rtl">پولیس</td></tr>
-<tr><td class="rom">roghtun</td><td>hospital</td><td class="native" dir="rtl">روغتون</td></tr>
-<tr><td class="rom">ddaakttar</td><td>doctor</td><td class="native" dir="rtl">ډاکټر</td></tr>
-<tr><td class="rom">dawaa</td><td>medicine</td><td class="native" dir="rtl">دوا</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ce6d98da" aria-label="مرسته وکړه — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mrasta wokrra</td><td>please help!</td><td class="native" dir="rtl">مرسته وکړه</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2a47f164" aria-label="پولیس — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>polis</td><td>police</td><td class="native" dir="rtl">پولیس</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="293c212d" aria-label="روغتون — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>roghtun</td><td>hospital</td><td class="native" dir="rtl">روغتون</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="bdd5f5ea" aria-label="ډاکټر — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ddaakttar</td><td>doctor</td><td class="native" dir="rtl">ډاکټر</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e00db3b4" aria-label="دوا — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dawaa</td><td>medicine</td><td class="native" dir="rtl">دوا</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying in touch</h2>
   <p class="secd">Phone &amp; photos</p>
   <div class="note">SIMs are cheap with a passport. Cameras are a serious matter — <b>anzur wakhlam?</b> asks first, and with women and families the answer is usually no. Respect it.</div>
-  <table><tr><td class="rom">telefun</td><td>telephone</td><td class="native" dir="rtl">تلیفون</td></tr>
-<tr><td class="rom">shmera</td><td>number</td><td class="native" dir="rtl">شمېره</td></tr>
-<tr><td class="rom">anzur waakhlam</td><td>may I take a photo?</td><td class="native" dir="rtl">انځور واخلم؟</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="5d3b8131" aria-label="تلیفون — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>telefun</td><td>telephone</td><td class="native" dir="rtl">تلیفون</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="50a1b08f" aria-label="شمېره — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shmera</td><td>number</td><td class="native" dir="rtl">شمېره</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="36469e3c" aria-label="انځور واخلم؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>anzur waakhlam</td><td>may I take a photo?</td><td class="native" dir="rtl">انځور واخلم؟</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
-  <table><tr><td class="rom">baazaar chere day?</td><td>Where is the bazaar?</td><td class="native" dir="rtl">بازار چېرې دی؟</td></tr>
-<tr><td class="rom">hottal chere day?</td><td>Where is the hotel?</td><td class="native" dir="rtl">هوټل چېرې دی؟</td></tr>
-<tr><td class="rom">roghtun chere day?</td><td>Where is the hospital?</td><td class="native" dir="rtl">روغتون چېرې دی؟</td></tr>
-<tr><td class="rom">tashnaab chere day?</td><td>Where is the bathroom?</td><td class="native" dir="rtl">تشناب چېرې دی؟</td></tr>
-<tr><td class="rom">mottar chere day?</td><td>Where is the car?</td><td class="native" dir="rtl">موټر چېرې دی؟</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ec27cfa6" aria-label="بازار چېرې دی؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baazaar chere day?</td><td>Where is the bazaar?</td><td class="native" dir="rtl">بازار چېرې دی؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2411004a" aria-label="هوټل چېرې دی؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hottal chere day?</td><td>Where is the hotel?</td><td class="native" dir="rtl">هوټل چېرې دی؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5194e36b" aria-label="روغتون چېرې دی؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>roghtun chere day?</td><td>Where is the hospital?</td><td class="native" dir="rtl">روغتون چېرې دی؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4ae44603" aria-label="تشناب چېرې دی؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tashnaab chere day?</td><td>Where is the bathroom?</td><td class="native" dir="rtl">تشناب چېرې دی؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8a0e70f6" aria-label="موټر چېرې دی؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mottar chere day?</td><td>Where is the car?</td><td class="native" dir="rtl">موټر چېرې دی؟</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask if something is there</h2>
   <p class="fs">Is there ___?</p>
-  <table><tr><td class="rom">chaay shta?</td><td>Is there tea?</td><td class="native" dir="rtl">چای شته؟</td></tr>
-<tr><td class="rom">oba shta?</td><td>Is there water?</td><td class="native" dir="rtl">اوبه شته؟</td></tr>
-<tr><td class="rom">ddoddey shta?</td><td>Is there food?</td><td class="native" dir="rtl">ډوډۍ شته؟</td></tr>
-<tr><td class="rom">khaalee khuna shta?</td><td>Is there a free room?</td><td class="native" dir="rtl">خالي خونه شته؟</td></tr>
-<tr><td class="rom">wrije shta?</td><td>Is there rice?</td><td class="native" dir="rtl">وريجې شته؟</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="e270de96" aria-label="چای شته؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chaay shta?</td><td>Is there tea?</td><td class="native" dir="rtl">چای شته؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c1bc0e88" aria-label="اوبه شته؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>oba shta?</td><td>Is there water?</td><td class="native" dir="rtl">اوبه شته؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8da7a1c3" aria-label="ډوډۍ شته؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ddoddey shta?</td><td>Is there food?</td><td class="native" dir="rtl">ډوډۍ شته؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="8e47eccf" aria-label="خالي خونه شته؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khaalee khuna shta?</td><td>Is there a free room?</td><td class="native" dir="rtl">خالي خونه شته؟</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ee64e6fa" aria-label="وريجې شته؟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>wrije shta?</td><td>Is there rice?</td><td class="native" dir="rtl">وريجې شته؟</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask for something politely</h2>
   <p class="fs">___, please.</p>
-  <table><tr><td class="rom">oba raakrrey</td><td>water, please.</td><td class="native" dir="rtl">اوبه راکړئ</td></tr>
-<tr><td class="rom">chaay raakrrey</td><td>tea, please.</td><td class="native" dir="rtl">چای راکړئ</td></tr>
-<tr><td class="rom">ddoddey raakrrey</td><td>food, please.</td><td class="native" dir="rtl">ډوډۍ راکړئ</td></tr>
-<tr><td class="rom">keelee raakrrey</td><td>the key, please.</td><td class="native" dir="rtl">کیلي راکړئ</td></tr>
-<tr><td class="rom">shin chaay raakrrey</td><td>green tea, please.</td><td class="native" dir="rtl">شین چای راکړئ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="0ef1ffb1" aria-label="اوبه راکړئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>oba raakrrey</td><td>water, please.</td><td class="native" dir="rtl">اوبه راکړئ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e656d73f" aria-label="چای راکړئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>chaay raakrrey</td><td>tea, please.</td><td class="native" dir="rtl">چای راکړئ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="689d4092" aria-label="ډوډۍ راکړئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ddoddey raakrrey</td><td>food, please.</td><td class="native" dir="rtl">ډوډۍ راکړئ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b70016b9" aria-label="کیلي راکړئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>keelee raakrrey</td><td>the key, please.</td><td class="native" dir="rtl">کیلي راکړئ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0382602d" aria-label="شین چای راکړئ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>shin chaay raakrrey</td><td>green tea, please.</td><td class="native" dir="rtl">شین چای راکړئ</td></tr></table>
 </section>
 
 <section class="block">
@@ -353,5 +362,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-pashto">Learn Pashto</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-ps/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

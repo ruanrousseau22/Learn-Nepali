@@ -60,6 +60,27 @@ def native_css(code):
     return fam + "'Plus Jakarta Sans', system-ui, sans-serif", lh
 
 
+def audio_dir(code):
+    return 'audio' if code == 'ne' else 'audio-' + code
+
+
+def fnv1a_py(s):
+    """Same hash as the app's audioKey() — keys the recorded clips."""
+    h = 0x811C9DC5
+    for b in s.encode('utf-8'):
+        h ^= b
+        h = (h * 0x01000193) & 0xFFFFFFFF
+    return format(h, '08x')
+
+
+def load_manifest(code):
+    try:
+        with open(os.path.join(ROOT, audio_dir(code), 'manifest.json'), encoding='utf-8') as f:
+            return set(json.load(f))
+    except Exception:
+        return set()
+
+
 def rows_table(pairs, native_cls, dir_attr, cols):
     """pairs = list of (native, extra, english?) ; cols is 2 or 3."""
     out = []
@@ -73,11 +94,20 @@ def rows_table(pairs, native_cls, dir_attr, cols):
     return "\n".join(out)
 
 
-def alpha_grid(pairs, native_cls, dir_attr):
+def alpha_grid(pairs, native_cls, dir_attr, manifest=None):
+    """manifest=None keeps plain tiles (learn pages); with a manifest, tiles
+    whose clip exists become play buttons (the si/mn letters with no possible
+    clip stay plain divs — no dead buttons)."""
     tiles = []
     for r in pairs:
-        tiles.append('<div class="atile"><span class="%s"%s>%s</span><span class="ar">%s</span></div>'
-                     % (native_cls, dir_attr, esc(r[0]), esc(r[1])))
+        inner = ('<span class="%s"%s>%s</span><span class="ar">%s</span>'
+                 % (native_cls, dir_attr, esc(r[0]), esc(r[1])))
+        k = fnv1a_py(r[0]) if manifest is not None else None
+        if k and k in manifest:
+            tiles.append('<button type="button" class="atile" data-k="%s" '
+                         'aria-label="%s — play audio">%s</button>' % (k, esc(r[0]), inner))
+        else:
+            tiles.append('<div class="atile">%s</div>' % inner)
     return "\n".join(tiles)
 
 
@@ -440,6 +470,29 @@ TEMPLATE = """<!doctype html>
 # page at once. SUB_TEMPLATE differs from TEMPLATE only in the body.
 # ---------------------------------------------------------------------------
 
+
+
+# the slim scenery band -- shared by the sub-pages and the 404 page
+BAND_CSS = """/* slim scenery band, echoing the app's own sub-page band (.page-band) */
+.sub-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
+background:linear-gradient(180deg,var(--sky1),var(--sky2))}
+.sub-band-body{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}
+/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
+   title box is capped so a long h1 wraps instead of running into the art */
+.band-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}
+.band-title h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0;letter-spacing:-.02em}
+/* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
+   without this the ur/ps native line drifts to the right edge, away from h1 */
+.band-title .nat{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}
+.band-scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}
+.band-scene .far{fill:var(--mtn-far)} .band-scene .mid{fill:var(--mtn-mid)}
+.band-scene .near{fill:var(--mtn-near)} .band-scene .snow{fill:var(--snow)}
+.band-scene .orb{fill:var(--orb)} .band-scene .orb-glow{fill:var(--orb);opacity:.3}
+.band-scene .cloud{fill:rgba(255,255,255,.6)}
+@media(prefers-color-scheme:dark){.band-scene .cloud{fill:rgba(199,214,230,.12)}}
+"""
+
 SUB_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
@@ -466,25 +519,7 @@ SUB_TEMPLATE = """<!doctype html>
 <script type="application/ld+json">{jsonld}</script>
 <style>
 {css}
-/* slim scenery band, echoing the app's own sub-page band (.page-band) */
-.sub-band{{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
-background:linear-gradient(180deg,var(--sky1),var(--sky2))}}
-.sub-band-body{{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}}
-/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
-   title box is capped so a long h1 wraps instead of running into the art */
-.band-title{{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}}
-.band-title h1{{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
-line-height:1.06;margin:0;letter-spacing:-.02em}}
-/* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
-   without this the ur/ps native line drifts to the right edge, away from h1 */
-.band-title .nat{{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}}
-.band-scene{{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}}
-.band-scene .far{{fill:var(--mtn-far)}} .band-scene .mid{{fill:var(--mtn-mid)}}
-.band-scene .near{{fill:var(--mtn-near)}} .band-scene .snow{{fill:var(--snow)}}
-.band-scene .orb{{fill:var(--orb)}} .band-scene .orb-glow{{fill:var(--orb);opacity:.3}}
-.band-scene .cloud{{fill:rgba(255,255,255,.6)}}
-@media(prefers-color-scheme:dark){{.band-scene .cloud{{fill:rgba(199,214,230,.12)}}}}
-.sub-hero{{padding:26px 0 6px}}
+{band_css}.sub-hero{{padding:26px 0 6px}}
 .sub-hero p{{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}}
 .crumb{{font-size:13.5px;color:var(--soft);margin:0 0 14px}}
 .crumb a{{color:var(--soft)}}
@@ -493,6 +528,15 @@ font-size:14.5px;color:var(--ink)}}
 .secd{{color:var(--soft);margin:0 0 12px;font-size:15px}}
 .frame h3{{margin-top:26px}}
 .frame .fs{{color:var(--soft);font-size:14.5px;margin:0 0 10px}}
+button.atile{{font-family:inherit;cursor:pointer;transition:border-color .15s}}
+button.atile:hover{{border-color:var(--saffron)}}
+button.atile:active .native{{color:var(--saffron)}}
+.pl{{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}}
+.pl svg{{width:14px;height:14px;fill:var(--saffron);stroke:none}}
+.pl svg .w{{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}}
+.pl:hover{{border-color:var(--saffron)}}
 </style>
 </head>
 <body>
@@ -532,6 +576,17 @@ font-size:14.5px;color:var(--ink)}}
   <a href="/learn-{slug}">Learn {name}</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){{var B='/{audio_base}/',C={{}};
+document.addEventListener('click',function(e){{
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();}});
+}})();
+</script>
 </body>
 </html>
 """
@@ -565,7 +620,7 @@ def sub_shell(d, others, palette_css, ne_band, **kw):
                   'aria-hidden="true">%s</svg>' % (d.get('band') or ne_band))
     return SUB_TEMPLATE.format(
         css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
-        band_scene=band_scene,
+        band_css=BAND_CSS, band_scene=band_scene, audio_base=audio_dir(code),
         fontlink=esc(font_link(code)),
         slug=SLUG[code], name=esc(d['name']), code=code,
         ncls="native", dir_attr=(' dir="rtl"' if code in RTL else ' dir="auto"'),
@@ -579,6 +634,7 @@ def alphabet_page(d, others, palette_css, ne_band):
     slug = SLUG[code]
     sname = SCRIPT_NAME.get(code, name + ' script')
     url = "%s/%s-alphabet" % (ORIGIN, slug)
+    man = load_manifest(code)
     nv, nc, nn = len(d['vowels']), len(d['cons']), len(d['nums'])
     title = "%s Alphabet — All %d Letters with Audio | Bhasaly" % (name, nv + nc)
     desc = ("The complete %s alphabet: %d vowels and %d consonants with romanization, "
@@ -622,9 +678,9 @@ def alphabet_page(d, others, palette_css, ne_band):
   {faq_html}
 </section>""".format(
         nv=nv, nc=nc, name=esc(name),
-        vg=alpha_grid(d['vowels'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"'),
-        cg=alpha_grid(d['cons'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"'),
-        ng=alpha_grid(d['nums'], "native", ' dir="auto"'),
+        vg=alpha_grid(d['vowels'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"', man),
+        cg=alpha_grid(d['cons'], "native", ' dir="rtl"' if code in RTL else ' dir="auto"', man),
+        ng=alpha_grid(d['nums'], "native", ' dir="auto"', man),
         faq_html="\n  ".join(
             '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (esc(q), esc(a))
             for q, a in faq))
@@ -634,8 +690,8 @@ def alphabet_page(d, others, palette_css, ne_band):
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
         applink="/?lang=%s&amp;v=alphabet" % code,
         crumb="Alphabet", h1="The %s alphabet" % esc(name), native=esc(d['nativeName']),
-        intro=esc("Every letter of the %s, with its sound written out. In Bhasaly you can "
-                  "tap any letter to hear it — the whole chart is recorded." % sname),
+        intro=esc("Every letter of the %s, with its sound written out. Tap any letter "
+                  "to hear it — the whole chart is recorded." % sname),
         cta="Hear every letter &rarr;", body=body,
         jsonld=sub_jsonld(name, url, "%s alphabet" % name, slug, faq))
 
@@ -654,11 +710,22 @@ def phrases_page(d, others, palette_css, ne_band):
           "%s travel phrases, basic %s, common %s words, %s phrasebook"
           % ((name,) * 8)).lower()
 
+    man = load_manifest(code)
+
+    def play_btn(native):
+        k = fnv1a_py(native)
+        if k not in man:
+            return ''
+        return ('<button type="button" class="pl" data-k="%s" aria-label="%s — play audio">'
+                '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/>'
+                '<path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>'
+                % (k, esc(native)))
+
     parts = []
     for s in t['sections']:
         rows = "\n".join(
-            '<tr><td class="rom">%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
-            % (esc(l[1]), esc(l[2]), dir_attr, esc(l[0])) for l in s['lines'])
+            '<tr><td class="rom">%s%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
+            % (play_btn(l[0]), esc(l[1]), esc(l[2]), dir_attr, esc(l[0])) for l in s['lines'])
         # s['note'] is authored HTML (<b>…</b>) — emitted raw, exactly as the app renders it
         note = '<div class="note">%s</div>' % s['note'] if s['note'] else ''
         parts.append(
@@ -667,8 +734,9 @@ def phrases_page(d, others, palette_css, ne_band):
 
     for f in t.get('frames', []):
         rows = "\n".join(
-            '<tr><td class="rom">%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
-            % (esc((i[1] + f['sr']).strip()),
+            '<tr><td class="rom">%s%s</td><td>%s</td><td class="native"%s>%s</td></tr>'
+            % (play_btn(i[0] + f['s']),
+               esc((i[1] + f['sr']).strip()),
                esc(f['en'].replace('___', i[2])),
                dir_attr, esc(i[0] + f['s'])) for i in f['items'])
         parts.append(
@@ -700,9 +768,82 @@ def phrases_page(d, others, palette_css, ne_band):
         native=esc(t['native']),
         intro=esc("The lines a visitor actually uses, and the ones you will hear back. "
                   "Romanized first so you can say them today. Every phrase is recorded — "
-                  "open it in Bhasaly to hear it."),
+                  "tap the speaker to hear it."),
         cta="Hear these phrases &rarr;", body="\n\n".join(parts),
         jsonld=sub_jsonld(name, url, "%s phrases" % name, slug, faq))
+
+
+# --- 404 -----------------------------------------------------------------
+# Netlify serves 404.html automatically for any missing path. Same look as
+# every other page (band + palette), noindex, and NOT in the sitemap or the
+# lastmod store — it is not an indexable URL.
+NOTFOUND_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Bhasaly</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{fontlink}" rel="stylesheet">
+<style>
+{css}
+{band_css}
+.sub-hero{{padding:26px 0 6px}}
+.sub-hero p{{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-width="6.4" stroke-linecap="round"><path stroke="var(--crimson)" d="M12 18H34M43 18H52"/><path stroke="var(--saffron)" d="M12 32H23M32 32H52"/><path stroke="var(--teal)" d="M12 46H29M38 46H52"/></g></svg>Bhasaly</a>
+  <a class="hlink" href="/">Open Bhasaly &rarr;</a>
+</div></header>
+
+<main>
+<section class="sub-band">
+  <div class="sub-band-body">
+    <div class="band-title"><h1>Page not found</h1></div>
+  </div>
+  {band_scene}
+</section>
+
+<div class="wrap">
+<section class="sub-hero">
+  <p>That address doesn&rsquo;t exist on Bhasaly &mdash; it may have been mistyped,
+  or the page has moved. Everything on the site is one click away:</p>
+  <a class="cta" href="/">Open Bhasaly</a>
+</section>
+
+<section class="block">
+  <h2>The courses</h2>
+  <div class="others">{course_links}</div>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap">
+  &copy; {year} Bhasaly &middot; <a href="/">bhasaly.com</a> &middot;
+  <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
+</div></footer>
+</body>
+</html>
+"""
+
+
+def notfound_page(langs, palette_css, ne_band):
+    band_scene = ('<svg class="band-scene" viewBox="0 0 1200 200" '
+                  'preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" '
+                  'aria-hidden="true">%s</svg>' % ne_band)
+    return NOTFOUND_TEMPLATE.format(
+        css=CSS.format(palette=palette_css,
+                       natfam="'Plus Jakarta Sans', system-ui, sans-serif", natlh="1.5"),
+        band_css=BAND_CSS, band_scene=band_scene,
+        fontlink=esc(font_link('uz')),
+        course_links="\n".join('<a href="/learn-%s">%s</a>' % (SLUG[d['code']], esc(d['name']))
+                                for d in langs),
+        year=datetime.date.today().year)
 
 
 def git_date(path):
@@ -809,6 +950,8 @@ def main():
             with open(os.path.join(ROOT, sfn), 'w', encoding='utf-8') as f:
                 f.write(sub)
             pages.append(('%s/%s-phrases' % (ORIGIN, slug), sub, sfn))
+    with open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8') as f:
+        f.write(notfound_page(langs, palettes['ne'], ne_band))
     # hand-written, not generated — listed here only so the lastmod store
     # dates them from their own bytes like everything else
     for page_name in ('privacy', 'terms'):

@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>Every letter of the Urdu (Nastaliq) script, with its sound written out. In Bhasaly you can tap any letter to hear it — the whole chart is recorded.</p>
+  <p>Every letter of the Urdu (Nastaliq) script, with its sound written out. Tap any letter to hear it — the whole chart is recorded.</p>
   <a class="cta" href="/?lang=ur&amp;v=alphabet">Hear every letter &rarr;</a>
 </section>
 
@@ -154,65 +163,65 @@ font-size:14.5px;color:var(--ink)}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">6 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="rtl">ا</span><span class="ar">aa / alif</span></div>
-<div class="atile"><span class="native" dir="rtl">آ</span><span class="ar">aa (long)</span></div>
-<div class="atile"><span class="native" dir="rtl">و</span><span class="ar">o / oo / w</span></div>
-<div class="atile"><span class="native" dir="rtl">ی</span><span class="ar">ee / y</span></div>
-<div class="atile"><span class="native" dir="rtl">ے</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="rtl">ھ</span><span class="ar">h (the puff)</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="78d53c00" aria-label="ا — play audio"><span class="native" dir="rtl">ا</span><span class="ar">aa / alif</span></button>
+<button type="button" class="atile" data-k="7dd543df" aria-label="آ — play audio"><span class="native" dir="rtl">آ</span><span class="ar">aa (long)</span></button>
+<button type="button" class="atile" data-k="81d49e94" aria-label="و — play audio"><span class="native" dir="rtl">و</span><span class="ar">o / oo / w</span></button>
+<button type="button" class="atile" data-k="c1d98082" aria-label="ی — play audio"><span class="native" dir="rtl">ی</span><span class="ar">ee / y</span></button>
+<button type="button" class="atile" data-k="b3d96a78" aria-label="ے — play audio"><span class="native" dir="rtl">ے</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="11daaa09" aria-label="ھ — play audio"><span class="native" dir="rtl">ھ</span><span class="ar">h (the puff)</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">33 letters, in the order the course teaches them.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="rtl">ب</span><span class="ar">b</span></div>
-<div class="atile"><span class="native" dir="rtl">پ</span><span class="ar">p</span></div>
-<div class="atile"><span class="native" dir="rtl">ت</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="rtl">ٹ</span><span class="ar">tt</span></div>
-<div class="atile"><span class="native" dir="rtl">ث</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ج</span><span class="ar">j</span></div>
-<div class="atile"><span class="native" dir="rtl">چ</span><span class="ar">ch</span></div>
-<div class="atile"><span class="native" dir="rtl">ح</span><span class="ar">h</span></div>
-<div class="atile"><span class="native" dir="rtl">خ</span><span class="ar">kh</span></div>
-<div class="atile"><span class="native" dir="rtl">د</span><span class="ar">d</span></div>
-<div class="atile"><span class="native" dir="rtl">ڈ</span><span class="ar">dd</span></div>
-<div class="atile"><span class="native" dir="rtl">ذ</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ر</span><span class="ar">r</span></div>
-<div class="atile"><span class="native" dir="rtl">ڑ</span><span class="ar">rr</span></div>
-<div class="atile"><span class="native" dir="rtl">ز</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ژ</span><span class="ar">zh</span></div>
-<div class="atile"><span class="native" dir="rtl">س</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ش</span><span class="ar">sh</span></div>
-<div class="atile"><span class="native" dir="rtl">ص</span><span class="ar">s</span></div>
-<div class="atile"><span class="native" dir="rtl">ض</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ط</span><span class="ar">t</span></div>
-<div class="atile"><span class="native" dir="rtl">ظ</span><span class="ar">z</span></div>
-<div class="atile"><span class="native" dir="rtl">ع</span><span class="ar">a (carrier)</span></div>
-<div class="atile"><span class="native" dir="rtl">غ</span><span class="ar">gh</span></div>
-<div class="atile"><span class="native" dir="rtl">ف</span><span class="ar">f</span></div>
-<div class="atile"><span class="native" dir="rtl">ق</span><span class="ar">q</span></div>
-<div class="atile"><span class="native" dir="rtl">ک</span><span class="ar">k</span></div>
-<div class="atile"><span class="native" dir="rtl">گ</span><span class="ar">g</span></div>
-<div class="atile"><span class="native" dir="rtl">ل</span><span class="ar">l</span></div>
-<div class="atile"><span class="native" dir="rtl">م</span><span class="ar">m</span></div>
-<div class="atile"><span class="native" dir="rtl">ن</span><span class="ar">n</span></div>
-<div class="atile"><span class="native" dir="rtl">ں</span><span class="ar">n (nasal)</span></div>
-<div class="atile"><span class="native" dir="rtl">ہ</span><span class="ar">h</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="87d5539d" aria-label="ب — play audio"><span class="native" dir="rtl">ب</span><span class="ar">b</span></button>
+<button type="button" class="atile" data-k="8fd4b49e" aria-label="پ — play audio"><span class="native" dir="rtl">پ</span><span class="ar">p</span></button>
+<button type="button" class="atile" data-k="85d55077" aria-label="ت — play audio"><span class="native" dir="rtl">ت</span><span class="ar">t</span></button>
+<button type="button" class="atile" data-k="92d4b957" aria-label="ٹ — play audio"><span class="native" dir="rtl">ٹ</span><span class="ar">tt</span></button>
+<button type="button" class="atile" data-k="84d54ee4" aria-label="ث — play audio"><span class="native" dir="rtl">ث</span><span class="ar">s</span></button>
+<button type="button" class="atile" data-k="83d54d51" aria-label="ج — play audio"><span class="native" dir="rtl">ج</span><span class="ar">j</span></button>
+<button type="button" class="atile" data-k="e9da6b11" aria-label="چ — play audio"><span class="native" dir="rtl">چ</span><span class="ar">ch</span></button>
+<button type="button" class="atile" data-k="82d54bbe" aria-label="ح — play audio"><span class="native" dir="rtl">ح</span><span class="ar">h</span></button>
+<button type="button" class="atile" data-k="81d54a2b" aria-label="خ — play audio"><span class="native" dir="rtl">خ</span><span class="ar">kh</span></button>
+<button type="button" class="atile" data-k="80d54898" aria-label="د — play audio"><span class="native" dir="rtl">د</span><span class="ar">d</span></button>
+<button type="button" class="atile" data-k="e3da619f" aria-label="ڈ — play audio"><span class="native" dir="rtl">ڈ</span><span class="ar">dd</span></button>
+<button type="button" class="atile" data-k="8fd56035" aria-label="ذ — play audio"><span class="native" dir="rtl">ذ</span><span class="ar">z</span></button>
+<button type="button" class="atile" data-k="8ed55ea2" aria-label="ر — play audio"><span class="native" dir="rtl">ر</span><span class="ar">r</span></button>
+<button type="button" class="atile" data-k="fada85d4" aria-label="ڑ — play audio"><span class="native" dir="rtl">ڑ</span><span class="ar">rr</span></button>
+<button type="button" class="atile" data-k="8dd55d0f" aria-label="ز — play audio"><span class="native" dir="rtl">ز</span><span class="ar">z</span></button>
+<button type="button" class="atile" data-k="f3da7acf" aria-label="ژ — play audio"><span class="native" dir="rtl">ژ</span><span class="ar">zh</span></button>
+<button type="button" class="atile" data-k="8cd55b7c" aria-label="س — play audio"><span class="native" dir="rtl">س</span><span class="ar">s</span></button>
+<button type="button" class="atile" data-k="8bd559e9" aria-label="ش — play audio"><span class="native" dir="rtl">ش</span><span class="ar">sh</span></button>
+<button type="button" class="atile" data-k="8ad55856" aria-label="ص — play audio"><span class="native" dir="rtl">ص</span><span class="ar">s</span></button>
+<button type="button" class="atile" data-k="89d556c3" aria-label="ض — play audio"><span class="native" dir="rtl">ض</span><span class="ar">z</span></button>
+<button type="button" class="atile" data-k="88d55530" aria-label="ط — play audio"><span class="native" dir="rtl">ط</span><span class="ar">t</span></button>
+<button type="button" class="atile" data-k="97d56ccd" aria-label="ظ — play audio"><span class="native" dir="rtl">ظ</span><span class="ar">z</span></button>
+<button type="button" class="atile" data-k="96d56b3a" aria-label="ع — play audio"><span class="native" dir="rtl">ع</span><span class="ar">a (carrier)</span></button>
+<button type="button" class="atile" data-k="95d569a7" aria-label="غ — play audio"><span class="native" dir="rtl">غ</span><span class="ar">gh</span></button>
+<button type="button" class="atile" data-k="7ad4938f" aria-label="ف — play audio"><span class="native" dir="rtl">ف</span><span class="ar">f</span></button>
+<button type="button" class="atile" data-k="7bd49522" aria-label="ق — play audio"><span class="native" dir="rtl">ق</span><span class="ar">q</span></button>
+<button type="button" class="atile" data-k="02da926c" aria-label="ک — play audio"><span class="native" dir="rtl">ک</span><span class="ar">k</span></button>
+<button type="button" class="atile" data-k="00da8f46" aria-label="گ — play audio"><span class="native" dir="rtl">گ</span><span class="ar">g</span></button>
+<button type="button" class="atile" data-k="75d48bb0" aria-label="ل — play audio"><span class="native" dir="rtl">ل</span><span class="ar">l</span></button>
+<button type="button" class="atile" data-k="76d48d43" aria-label="م — play audio"><span class="native" dir="rtl">م</span><span class="ar">m</span></button>
+<button type="button" class="atile" data-k="77d48ed6" aria-label="ن — play audio"><span class="native" dir="rtl">ن</span><span class="ar">n</span></button>
+<button type="button" class="atile" data-k="15dab055" aria-label="ں — play audio"><span class="native" dir="rtl">ں</span><span class="ar">n (nasal)</span></button>
+<button type="button" class="atile" data-k="c6d98861" aria-label="ہ — play audio"><span class="native" dir="rtl">ہ</span><span class="ar">h</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Urdu.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">۰</span><span class="ar">0</span></div>
-<div class="atile"><span class="native" dir="auto">۱</span><span class="ar">1</span></div>
-<div class="atile"><span class="native" dir="auto">۲</span><span class="ar">2</span></div>
-<div class="atile"><span class="native" dir="auto">۳</span><span class="ar">3</span></div>
-<div class="atile"><span class="native" dir="auto">۴</span><span class="ar">4</span></div>
-<div class="atile"><span class="native" dir="auto">۵</span><span class="ar">5</span></div>
-<div class="atile"><span class="native" dir="auto">۶</span><span class="ar">6</span></div>
-<div class="atile"><span class="native" dir="auto">۷</span><span class="ar">7</span></div>
-<div class="atile"><span class="native" dir="auto">۸</span><span class="ar">8</span></div>
-<div class="atile"><span class="native" dir="auto">۹</span><span class="ar">9</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="95d93b3e" aria-label="۰ — play audio"><span class="native" dir="auto">۰</span><span class="ar">0</span></button>
+<button type="button" class="atile" data-k="96d93cd1" aria-label="۱ — play audio"><span class="native" dir="auto">۱</span><span class="ar">1</span></button>
+<button type="button" class="atile" data-k="93d93818" aria-label="۲ — play audio"><span class="native" dir="auto">۲</span><span class="ar">2</span></button>
+<button type="button" class="atile" data-k="94d939ab" aria-label="۳ — play audio"><span class="native" dir="auto">۳</span><span class="ar">3</span></button>
+<button type="button" class="atile" data-k="99d9418a" aria-label="۴ — play audio"><span class="native" dir="auto">۴</span><span class="ar">4</span></button>
+<button type="button" class="atile" data-k="9ad9431d" aria-label="۵ — play audio"><span class="native" dir="auto">۵</span><span class="ar">5</span></button>
+<button type="button" class="atile" data-k="97d93e64" aria-label="۶ — play audio"><span class="native" dir="auto">۶</span><span class="ar">6</span></button>
+<button type="button" class="atile" data-k="98d93ff7" aria-label="۷ — play audio"><span class="native" dir="auto">۷</span><span class="ar">7</span></button>
+<button type="button" class="atile" data-k="8dd92ea6" aria-label="۸ — play audio"><span class="native" dir="auto">۸</span><span class="ar">8</span></button>
+<button type="button" class="atile" data-k="8ed93039" aria-label="۹ — play audio"><span class="native" dir="auto">۹</span><span class="ar">9</span></button></div>
 </section>
 
 <section class="block">
@@ -245,5 +254,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-urdu">Learn Urdu</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-ur/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>Every letter of the Bengali script, with its sound written out. In Bhasaly you can tap any letter to hear it — the whole chart is recorded.</p>
+  <p>Every letter of the Bengali script, with its sound written out. Tap any letter to hear it — the whole chart is recorded.</p>
   <a class="cta" href="/?lang=bn&amp;v=alphabet">Hear every letter &rarr;</a>
 </section>
 
@@ -154,76 +163,76 @@ font-size:14.5px;color:var(--ink)}
 <section class="block">
   <h2>Vowels</h2>
   <p class="lead">11 letters. The romanization under each letter is how it sounds, not a spelling rule.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">অ</span><span class="ar">o</span></div>
-<div class="atile"><span class="native" dir="auto">আ</span><span class="ar">a</span></div>
-<div class="atile"><span class="native" dir="auto">ই</span><span class="ar">i</span></div>
-<div class="atile"><span class="native" dir="auto">ঈ</span><span class="ar">i (long form)</span></div>
-<div class="atile"><span class="native" dir="auto">উ</span><span class="ar">u</span></div>
-<div class="atile"><span class="native" dir="auto">ঊ</span><span class="ar">u (long form)</span></div>
-<div class="atile"><span class="native" dir="auto">ঋ</span><span class="ar">ri</span></div>
-<div class="atile"><span class="native" dir="auto">এ</span><span class="ar">e</span></div>
-<div class="atile"><span class="native" dir="auto">ঐ</span><span class="ar">oi</span></div>
-<div class="atile"><span class="native" dir="auto">ও</span><span class="ar">o (close)</span></div>
-<div class="atile"><span class="native" dir="auto">ঔ</span><span class="ar">ou</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="da5f2cfa" aria-label="অ — play audio"><span class="native" dir="auto">অ</span><span class="ar">o</span></button>
+<button type="button" class="atile" data-k="d95f2b67" aria-label="আ — play audio"><span class="native" dir="auto">আ</span><span class="ar">a</span></button>
+<button type="button" class="atile" data-k="d85f29d4" aria-label="ই — play audio"><span class="native" dir="auto">ই</span><span class="ar">i</span></button>
+<button type="button" class="atile" data-k="cf5f1ba9" aria-label="ঈ — play audio"><span class="native" dir="auto">ঈ</span><span class="ar">i (long form)</span></button>
+<button type="button" class="atile" data-k="ce5f1a16" aria-label="উ — play audio"><span class="native" dir="auto">উ</span><span class="ar">u</span></button>
+<button type="button" class="atile" data-k="cd5f1883" aria-label="ঊ — play audio"><span class="native" dir="auto">ঊ</span><span class="ar">u (long form)</span></button>
+<button type="button" class="atile" data-k="cc5f16f0" aria-label="ঋ — play audio"><span class="native" dir="auto">ঋ</span><span class="ar">ri</span></button>
+<button type="button" class="atile" data-k="d05f1d3c" aria-label="এ — play audio"><span class="native" dir="auto">এ</span><span class="ar">e</span></button>
+<button type="button" class="atile" data-k="c75f0f11" aria-label="ঐ — play audio"><span class="native" dir="auto">ঐ</span><span class="ar">oi</span></button>
+<button type="button" class="atile" data-k="c45f0a58" aria-label="ও — play audio"><span class="native" dir="auto">ও</span><span class="ar">o (close)</span></button>
+<button type="button" class="atile" data-k="cb5f155d" aria-label="ঔ — play audio"><span class="native" dir="auto">ঔ</span><span class="ar">ou</span></button></div>
 </section>
 
 <section class="block">
   <h2>Consonants</h2>
   <p class="lead">39 letters, in the order the course teaches them.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">ক</span><span class="ar">ko</span></div>
-<div class="atile"><span class="native" dir="auto">খ</span><span class="ar">kho</span></div>
-<div class="atile"><span class="native" dir="auto">গ</span><span class="ar">go</span></div>
-<div class="atile"><span class="native" dir="auto">ঘ</span><span class="ar">gho</span></div>
-<div class="atile"><span class="native" dir="auto">ঙ</span><span class="ar">ngo</span></div>
-<div class="atile"><span class="native" dir="auto">চ</span><span class="ar">cho</span></div>
-<div class="atile"><span class="native" dir="auto">ছ</span><span class="ar">chho</span></div>
-<div class="atile"><span class="native" dir="auto">জ</span><span class="ar">jo</span></div>
-<div class="atile"><span class="native" dir="auto">ঝ</span><span class="ar">jho</span></div>
-<div class="atile"><span class="native" dir="auto">ঞ</span><span class="ar">nyo</span></div>
-<div class="atile"><span class="native" dir="auto">ট</span><span class="ar">to (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ঠ</span><span class="ar">tho (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ড</span><span class="ar">do (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ঢ</span><span class="ar">dho (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ণ</span><span class="ar">no (hard)</span></div>
-<div class="atile"><span class="native" dir="auto">ত</span><span class="ar">to (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">থ</span><span class="ar">tho (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">দ</span><span class="ar">do (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">ধ</span><span class="ar">dho (soft)</span></div>
-<div class="atile"><span class="native" dir="auto">ন</span><span class="ar">no</span></div>
-<div class="atile"><span class="native" dir="auto">প</span><span class="ar">po</span></div>
-<div class="atile"><span class="native" dir="auto">ফ</span><span class="ar">pho</span></div>
-<div class="atile"><span class="native" dir="auto">ব</span><span class="ar">bo</span></div>
-<div class="atile"><span class="native" dir="auto">ভ</span><span class="ar">bho</span></div>
-<div class="atile"><span class="native" dir="auto">ম</span><span class="ar">mo</span></div>
-<div class="atile"><span class="native" dir="auto">য</span><span class="ar">jo (antostho)</span></div>
-<div class="atile"><span class="native" dir="auto">র</span><span class="ar">ro</span></div>
-<div class="atile"><span class="native" dir="auto">ল</span><span class="ar">lo</span></div>
-<div class="atile"><span class="native" dir="auto">শ</span><span class="ar">sho</span></div>
-<div class="atile"><span class="native" dir="auto">ষ</span><span class="ar">sho (murdhonno)</span></div>
-<div class="atile"><span class="native" dir="auto">স</span><span class="ar">so / sho</span></div>
-<div class="atile"><span class="native" dir="auto">হ</span><span class="ar">ho</span></div>
-<div class="atile"><span class="native" dir="auto">ড়</span><span class="ar">ro (flap)</span></div>
-<div class="atile"><span class="native" dir="auto">ঢ়</span><span class="ar">rho (flap)</span></div>
-<div class="atile"><span class="native" dir="auto">য়</span><span class="ar">yo</span></div>
-<div class="atile"><span class="native" dir="auto">ৎ</span><span class="ar">t (khondo to)</span></div>
-<div class="atile"><span class="native" dir="auto">ং</span><span class="ar">ng (onushshar)</span></div>
-<div class="atile"><span class="native" dir="auto">ঃ</span><span class="ar">h (bishorgo)</span></div>
-<div class="atile"><span class="native" dir="auto">ঁ</span><span class="ar">nasal (chondrobindu)</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="ca5f13ca" aria-label="ক — play audio"><span class="native" dir="auto">ক</span><span class="ar">ko</span></button>
+<button type="button" class="atile" data-k="c95f1237" aria-label="খ — play audio"><span class="native" dir="auto">খ</span><span class="ar">kho</span></button>
+<button type="button" class="atile" data-k="c85f10a4" aria-label="গ — play audio"><span class="native" dir="auto">গ</span><span class="ar">go</span></button>
+<button type="button" class="atile" data-k="bf5f0279" aria-label="ঘ — play audio"><span class="native" dir="auto">ঘ</span><span class="ar">gho</span></button>
+<button type="button" class="atile" data-k="be5f00e6" aria-label="ঙ — play audio"><span class="native" dir="auto">ঙ</span><span class="ar">ngo</span></button>
+<button type="button" class="atile" data-k="bd5eff53" aria-label="চ — play audio"><span class="native" dir="auto">চ</span><span class="ar">cho</span></button>
+<button type="button" class="atile" data-k="bc5efdc0" aria-label="ছ — play audio"><span class="native" dir="auto">ছ</span><span class="ar">chho</span></button>
+<button type="button" class="atile" data-k="c35f08c5" aria-label="জ — play audio"><span class="native" dir="auto">জ</span><span class="ar">jo</span></button>
+<button type="button" class="atile" data-k="c25f0732" aria-label="ঝ — play audio"><span class="native" dir="auto">ঝ</span><span class="ar">jho</span></button>
+<button type="button" class="atile" data-k="c15f059f" aria-label="ঞ — play audio"><span class="native" dir="auto">ঞ</span><span class="ar">nyo</span></button>
+<button type="button" class="atile" data-k="c05f040c" aria-label="ট — play audio"><span class="native" dir="auto">ট</span><span class="ar">to (hard)</span></button>
+<button type="button" class="atile" data-k="f75f5aa1" aria-label="ঠ — play audio"><span class="native" dir="auto">ঠ</span><span class="ar">tho (hard)</span></button>
+<button type="button" class="atile" data-k="f65f590e" aria-label="ড — play audio"><span class="native" dir="auto">ড</span><span class="ar">do (hard)</span></button>
+<button type="button" class="atile" data-k="f55f577b" aria-label="ঢ — play audio"><span class="native" dir="auto">ঢ</span><span class="ar">dho (hard)</span></button>
+<button type="button" class="atile" data-k="f45f55e8" aria-label="ণ — play audio"><span class="native" dir="auto">ণ</span><span class="ar">no (hard)</span></button>
+<button type="button" class="atile" data-k="fb5f60ed" aria-label="ত — play audio"><span class="native" dir="auto">ত</span><span class="ar">to (soft)</span></button>
+<button type="button" class="atile" data-k="fa5f5f5a" aria-label="থ — play audio"><span class="native" dir="auto">থ</span><span class="ar">tho (soft)</span></button>
+<button type="button" class="atile" data-k="f95f5dc7" aria-label="দ — play audio"><span class="native" dir="auto">দ</span><span class="ar">do (soft)</span></button>
+<button type="button" class="atile" data-k="f85f5c34" aria-label="ধ — play audio"><span class="native" dir="auto">ধ</span><span class="ar">dho (soft)</span></button>
+<button type="button" class="atile" data-k="ef5f4e09" aria-label="ন — play audio"><span class="native" dir="auto">ন</span><span class="ar">no</span></button>
+<button type="button" class="atile" data-k="ed5f4ae3" aria-label="প — play audio"><span class="native" dir="auto">প</span><span class="ar">po</span></button>
+<button type="button" class="atile" data-k="ec5f4950" aria-label="ফ — play audio"><span class="native" dir="auto">ফ</span><span class="ar">pho</span></button>
+<button type="button" class="atile" data-k="f35f5455" aria-label="ব — play audio"><span class="native" dir="auto">ব</span><span class="ar">bo</span></button>
+<button type="button" class="atile" data-k="f25f52c2" aria-label="ভ — play audio"><span class="native" dir="auto">ভ</span><span class="ar">bho</span></button>
+<button type="button" class="atile" data-k="f15f512f" aria-label="ম — play audio"><span class="native" dir="auto">ম</span><span class="ar">mo</span></button>
+<button type="button" class="atile" data-k="f05f4f9c" aria-label="য — play audio"><span class="native" dir="auto">য</span><span class="ar">jo (antostho)</span></button>
+<button type="button" class="atile" data-k="e75f4171" aria-label="র — play audio"><span class="native" dir="auto">র</span><span class="ar">ro</span></button>
+<button type="button" class="atile" data-k="e55f3e4b" aria-label="ল — play audio"><span class="native" dir="auto">ল</span><span class="ar">lo</span></button>
+<button type="button" class="atile" data-k="e95f4497" aria-label="শ — play audio"><span class="native" dir="auto">শ</span><span class="ar">sho</span></button>
+<button type="button" class="atile" data-k="e85f4304" aria-label="ষ — play audio"><span class="native" dir="auto">ষ</span><span class="ar">sho (murdhonno)</span></button>
+<button type="button" class="atile" data-k="df5f34d9" aria-label="স — play audio"><span class="native" dir="auto">স</span><span class="ar">so / sho</span></button>
+<button type="button" class="atile" data-k="de5f3346" aria-label="হ — play audio"><span class="native" dir="auto">হ</span><span class="ar">ho</span></button>
+<button type="button" class="atile" data-k="481c5988" aria-label="ড় — play audio"><span class="native" dir="auto">ড়</span><span class="ar">ro (flap)</span></button>
+<button type="button" class="atile" data-k="e60c8f1b" aria-label="ঢ় — play audio"><span class="native" dir="auto">ঢ়</span><span class="ar">rho (flap)</span></button>
+<button type="button" class="atile" data-k="0ad045de" aria-label="য় — play audio"><span class="native" dir="auto">য়</span><span class="ar">yo</span></button>
+<button type="button" class="atile" data-k="af5e3db2" aria-label="ৎ — play audio"><span class="native" dir="auto">ৎ</span><span class="ar">t (khondo to)</span></button>
+<button type="button" class="atile" data-k="d55f251b" aria-label="ং — play audio"><span class="native" dir="auto">ং</span><span class="ar">ng (onushshar)</span></button>
+<button type="button" class="atile" data-k="d45f2388" aria-label="ঃ — play audio"><span class="native" dir="auto">ঃ</span><span class="ar">h (bishorgo)</span></button>
+<button type="button" class="atile" data-k="d65f26ae" aria-label="ঁ — play audio"><span class="native" dir="auto">ঁ</span><span class="ar">nasal (chondrobindu)</span></button></div>
 </section>
 
 <section class="block">
   <h2>Numerals</h2>
   <p class="lead">Digits 0-9 as they are written in Bengali.</p>
-  <div class="agrid"><div class="atile"><span class="native" dir="auto">০</span><span class="ar">0 (shunno)</span></div>
-<div class="atile"><span class="native" dir="auto">১</span><span class="ar">1 (ek)</span></div>
-<div class="atile"><span class="native" dir="auto">২</span><span class="ar">2 (dui)</span></div>
-<div class="atile"><span class="native" dir="auto">৩</span><span class="ar">3 (tin)</span></div>
-<div class="atile"><span class="native" dir="auto">৪</span><span class="ar">4 (char)</span></div>
-<div class="atile"><span class="native" dir="auto">৫</span><span class="ar">5 (panch)</span></div>
-<div class="atile"><span class="native" dir="auto">৬</span><span class="ar">6 (chhoy)</span></div>
-<div class="atile"><span class="native" dir="auto">৭</span><span class="ar">7 (shat)</span></div>
-<div class="atile"><span class="native" dir="auto">৮</span><span class="ar">8 (at)</span></div>
-<div class="atile"><span class="native" dir="auto">৯</span><span class="ar">9 (noy)</span></div></div>
+  <div class="agrid"><button type="button" class="atile" data-k="d75e7caa" aria-label="০ — play audio"><span class="native" dir="auto">০</span><span class="ar">0 (shunno)</span></button>
+<button type="button" class="atile" data-k="d85e7e3d" aria-label="১ — play audio"><span class="native" dir="auto">১</span><span class="ar">1 (ek)</span></button>
+<button type="button" class="atile" data-k="c95e66a0" aria-label="২ — play audio"><span class="native" dir="auto">২</span><span class="ar">2 (dui)</span></button>
+<button type="button" class="atile" data-k="ca5e6833" aria-label="৩ — play audio"><span class="native" dir="auto">৩</span><span class="ar">3 (tin)</span></button>
+<button type="button" class="atile" data-k="cb5e69c6" aria-label="৪ — play audio"><span class="native" dir="auto">৪</span><span class="ar">4 (char)</span></button>
+<button type="button" class="atile" data-k="cc5e6b59" aria-label="৫ — play audio"><span class="native" dir="auto">৫</span><span class="ar">5 (panch)</span></button>
+<button type="button" class="atile" data-k="cd5e6cec" aria-label="৬ — play audio"><span class="native" dir="auto">৬</span><span class="ar">6 (chhoy)</span></button>
+<button type="button" class="atile" data-k="ce5e6e7f" aria-label="৭ — play audio"><span class="native" dir="auto">৭</span><span class="ar">7 (shat)</span></button>
+<button type="button" class="atile" data-k="cf5e7012" aria-label="৮ — play audio"><span class="native" dir="auto">৮</span><span class="ar">8 (at)</span></button>
+<button type="button" class="atile" data-k="d05e71a5" aria-label="৯ — play audio"><span class="native" dir="auto">৯</span><span class="ar">9 (noy)</span></button></div>
 </section>
 
 <section class="block">
@@ -256,5 +265,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-bengali">Learn Bengali</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-bn/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>

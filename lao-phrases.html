@@ -127,6 +127,15 @@ font-size:14.5px;color:var(--ink)}
 .secd{color:var(--soft);margin:0 0 12px;font-size:15px}
 .frame h3{margin-top:26px}
 .frame .fs{color:var(--soft);font-size:14.5px;margin:0 0 10px}
+button.atile{font-family:inherit;cursor:pointer;transition:border-color .15s}
+button.atile:hover{border-color:var(--saffron)}
+button.atile:active .native{color:var(--saffron)}
+.pl{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+margin-right:8px;vertical-align:-7px;border:1px solid var(--line);border-radius:50%;
+background:var(--card);cursor:pointer;padding:0}
+.pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
+.pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
+.pl:hover{border-color:var(--saffron)}
 </style>
 </head>
 <body>
@@ -146,7 +155,7 @@ font-size:14.5px;color:var(--ink)}
 
 <div class="wrap">
 <section class="sub-hero">
-  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
+  <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — tap the speaker to hear it.</p>
   <a class="cta" href="/?lang=lo&amp;v=trip">Hear these phrases &rarr;</a>
 </section>
 
@@ -154,40 +163,40 @@ font-size:14.5px;color:var(--ink)}
   <h2>First words</h2>
   <p class="secd">Hello, thanks &amp; no problem</p>
   <div class="note"><b>sabaidee</b> works from dawn to midnight. <b>baw pen nyang</b> — no problem — answers thanks, apologies and mishaps alike.</div>
-  <table><tr><td class="rom">sabaidee</td><td>hello</td><td class="native" dir="auto">ສະບາຍດີ</td></tr>
-<tr><td class="rom">khop jai</td><td>thank you</td><td class="native" dir="auto">ຂອບໃຈ</td></tr>
-<tr><td class="rom">baw pen nyang</td><td>no problem · you are welcome</td><td class="native" dir="auto">ບໍ່ເປັນຫຍັງ</td></tr>
-<tr><td class="rom">kho thot</td><td>sorry · excuse me</td><td class="native" dir="auto">ຂໍໂທດ</td></tr>
-<tr><td class="rom">maen</td><td>yes (it is)</td><td class="native" dir="auto">ແມ່ນ</td></tr>
-<tr><td class="rom">baw maen</td><td>no (it is not)</td><td class="native" dir="auto">ບໍ່ແມ່ນ</td></tr>
-<tr><td class="rom">jao</td><td>yes (polite) — also: you</td><td class="native" dir="auto">ເຈົ້າ</td></tr>
-<tr><td class="rom">laa kawn</td><td>goodbye</td><td class="native" dir="auto">ລາກ່ອນ</td></tr>
-<tr><td class="rom">phop kan mai</td><td>see you again</td><td class="native" dir="auto">ພົບກັນໃໝ່</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="769ddec7" aria-label="ສະບາຍດີ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sabaidee</td><td>hello</td><td class="native" dir="auto">ສະບາຍດີ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="27c73e1c" aria-label="ຂອບໃຈ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khop jai</td><td>thank you</td><td class="native" dir="auto">ຂອບໃຈ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2c8ba514" aria-label="ບໍ່ເປັນຫຍັງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baw pen nyang</td><td>no problem · you are welcome</td><td class="native" dir="auto">ບໍ່ເປັນຫຍັງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5f15b4bd" aria-label="ຂໍໂທດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho thot</td><td>sorry · excuse me</td><td class="native" dir="auto">ຂໍໂທດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cd2538cc" aria-label="ແມ່ນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maen</td><td>yes (it is)</td><td class="native" dir="auto">ແມ່ນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1d57dba5" aria-label="ບໍ່ແມ່ນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baw maen</td><td>no (it is not)</td><td class="native" dir="auto">ບໍ່ແມ່ນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ba50a711" aria-label="ເຈົ້າ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>jao</td><td>yes (polite) — also: you</td><td class="native" dir="auto">ເຈົ້າ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9d3f9a38" aria-label="ລາກ່ອນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>laa kawn</td><td>goodbye</td><td class="native" dir="auto">ລາກ່ອນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3bc81692" aria-label="ພົບກັນໃໝ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phop kan mai</td><td>see you again</td><td class="native" dir="auto">ພົບກັນໃໝ່</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Being polite</h2>
   <p class="secd">Soft words, soft country</p>
   <div class="note">Requests end in <b>dae</b> and invitations start with <b>sern</b>. Nothing here is urgent — matching the pace is the politest thing a visitor can do.</div>
-  <table><tr><td class="rom">kho</td><td>may I have … (starts a request)</td><td class="native" dir="auto">ຂໍ</td></tr>
-<tr><td class="rom">dae</td><td>…please (ends a request)</td><td class="native" dir="auto">ແດ່</td></tr>
-<tr><td class="rom">kalunaa</td><td>please (formal)</td><td class="native" dir="auto">ກະລຸນາ</td></tr>
-<tr><td class="rom">sern</td><td>please (inviting)</td><td class="native" dir="auto">ເຊີນ</td></tr>
-<tr><td class="rom">nyin dii</td><td>glad · with pleasure</td><td class="native" dir="auto">ຍິນດີ</td></tr>
-<tr><td class="rom">pho</td><td>enough</td><td class="native" dir="auto">ພໍ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="7c2f8eb5" aria-label="ຂໍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho</td><td>may I have … (starts a request)</td><td class="native" dir="auto">ຂໍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="88e731e2" aria-label="ແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>dae</td><td>…please (ends a request)</td><td class="native" dir="auto">ແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="97e2ac82" aria-label="ກະລຸນາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kalunaa</td><td>please (formal)</td><td class="native" dir="auto">ກະລຸນາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="616c8c7e" aria-label="ເຊີນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sern</td><td>please (inviting)</td><td class="native" dir="auto">ເຊີນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="134db8b6" aria-label="ຍິນດີ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nyin dii</td><td>glad · with pleasure</td><td class="native" dir="auto">ຍິນດີ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="18dc4ea1" aria-label="ພໍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pho</td><td>enough</td><td class="native" dir="auto">ພໍ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Meeting someone</h2>
   <p class="secd">Introductions</p>
   <div class="note"><b>khoi seu …</b> — my name is …. <b>huu noi neung</b> — I know a little — is the honest, welcome answer about your Lao.</div>
-  <table><tr><td class="rom">khoi seu</td><td>my name is …</td><td class="native" dir="auto">ຂ້ອຍຊື່</td></tr>
-<tr><td class="rom">jao seu nyang</td><td>what is your name?</td><td class="native" dir="auto">ເຈົ້າຊື່ຫຍັງ</td></tr>
-<tr><td class="rom">baw khao jai</td><td>I do not understand</td><td class="native" dir="auto">ບໍ່ເຂົ້າໃຈ</td></tr>
-<tr><td class="rom">vao saa saa</td><td>speak slowly</td><td class="native" dir="auto">ເວົ້າຊ້າໆ</td></tr>
-<tr><td class="rom">vao kheun</td><td>say it again</td><td class="native" dir="auto">ເວົ້າຄືນ</td></tr>
-<tr><td class="rom">huu noi neung</td><td>I know a little</td><td class="native" dir="auto">ຮູ້ໜ້ອຍໜຶ່ງ</td></tr>
-<tr><td class="rom">maa jaak</td><td>(I) come from …</td><td class="native" dir="auto">ມາຈາກ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="d91dd97f" aria-label="ຂ້ອຍຊື່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khoi seu</td><td>my name is …</td><td class="native" dir="auto">ຂ້ອຍຊື່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7b471d21" aria-label="ເຈົ້າຊື່ຫຍັງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>jao seu nyang</td><td>what is your name?</td><td class="native" dir="auto">ເຈົ້າຊື່ຫຍັງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="082f6688" aria-label="ບໍ່ເຂົ້າໃຈ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>baw khao jai</td><td>I do not understand</td><td class="native" dir="auto">ບໍ່ເຂົ້າໃຈ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e0a5b0a3" aria-label="ເວົ້າຊ້າໆ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>vao saa saa</td><td>speak slowly</td><td class="native" dir="auto">ເວົ້າຊ້າໆ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a585ac28" aria-label="ເວົ້າຄືນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>vao kheun</td><td>say it again</td><td class="native" dir="auto">ເວົ້າຄືນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dd4f1878" aria-label="ຮູ້ໜ້ອຍໜຶ່ງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>huu noi neung</td><td>I know a little</td><td class="native" dir="auto">ຮູ້ໜ້ອຍໜຶ່ງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9345e355" aria-label="ມາຈາກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maa jaak</td><td>(I) come from …</td><td class="native" dir="auto">ມາຈາກ</td></tr></table>
 </section>
 
 <section class="block">
@@ -201,150 +210,150 @@ font-size:14.5px;color:var(--ink)}
   <h2>What you will hear</h2>
   <p class="secd">Greetings &amp; invitations</p>
   <div class="note"><b>pai sai?</b> — where are you off to — and <b>kin khao laew baw?</b> — eaten yet — are greetings, not questions. Answer vaguely, smile, walk on.</div>
-  <table><tr><td class="rom">pai sai</td><td>where are you off to? (a greeting)</td><td class="native" dir="auto">ໄປໃສ</td></tr>
-<tr><td class="rom">kin khao laew baw</td><td>eaten yet? (a greeting)</td><td class="native" dir="auto">ກິນເຂົ້າແລ້ວບໍ່</td></tr>
-<tr><td class="rom">sern khao maa</td><td>please come in</td><td class="native" dir="auto">ເຊີນເຂົ້າມາ</td></tr>
-<tr><td class="rom">sern nang</td><td>please sit</td><td class="native" dir="auto">ເຊີນນັ່ງ</td></tr>
-<tr><td class="rom">maa lin</td><td>come visit!</td><td class="native" dir="auto">ມາຫຼິ້ນ</td></tr>
-<tr><td class="rom">sok dii</td><td>good luck!</td><td class="native" dir="auto">ໂຊກດີ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6a093f41" aria-label="ໄປໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pai sai</td><td>where are you off to? (a greeting)</td><td class="native" dir="auto">ໄປໃສ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9b76db44" aria-label="ກິນເຂົ້າແລ້ວບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kin khao laew baw</td><td>eaten yet? (a greeting)</td><td class="native" dir="auto">ກິນເຂົ້າແລ້ວບໍ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0ff2a091" aria-label="ເຊີນເຂົ້າມາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sern khao maa</td><td>please come in</td><td class="native" dir="auto">ເຊີນເຂົ້າມາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0a022a52" aria-label="ເຊີນນັ່ງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sern nang</td><td>please sit</td><td class="native" dir="auto">ເຊີນນັ່ງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a6297a04" aria-label="ມາຫຼິ້ນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maa lin</td><td>come visit!</td><td class="native" dir="auto">ມາຫຼິ້ນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b18c66f4" aria-label="ໂຊກດີ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sok dii</td><td>good luck!</td><td class="native" dir="auto">ໂຊກດີ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Numbers</h2>
   <p class="secd">Kip come in thousands</p>
   <div class="note">Everything is thousands of kip: water around <b>haa phan</b>, noodle soup <b>meun</b> and up, a guesthouse in <b>saen</b>. The banknotes carry the same numbers, which makes paying easy.</div>
-  <table><tr><td class="rom">neung</td><td>1</td><td class="native" dir="auto">ໜຶ່ງ</td></tr>
-<tr><td class="rom">song</td><td>2</td><td class="native" dir="auto">ສອງ</td></tr>
-<tr><td class="rom">haa</td><td>5</td><td class="native" dir="auto">ຫ້າ</td></tr>
-<tr><td class="rom">sip</td><td>10</td><td class="native" dir="auto">ສິບ</td></tr>
-<tr><td class="rom">hoi</td><td>100</td><td class="native" dir="auto">ຮ້ອຍ</td></tr>
-<tr><td class="rom">phan</td><td>1,000</td><td class="native" dir="auto">ພັນ</td></tr>
-<tr><td class="rom">haa phan</td><td>5,000</td><td class="native" dir="auto">ຫ້າພັນ</td></tr>
-<tr><td class="rom">meun</td><td>10,000</td><td class="native" dir="auto">ໝື່ນ</td></tr>
-<tr><td class="rom">saen</td><td>100,000</td><td class="native" dir="auto">ແສນ</td></tr>
-<tr><td class="rom">kip</td><td>kip</td><td class="native" dir="auto">ກີບ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="d2660cea" aria-label="ໜຶ່ງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>neung</td><td>1</td><td class="native" dir="auto">ໜຶ່ງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d1950b43" aria-label="ສອງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>song</td><td>2</td><td class="native" dir="auto">ສອງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="79505508" aria-label="ຫ້າ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>haa</td><td>5</td><td class="native" dir="auto">ຫ້າ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e191a5b9" aria-label="ສິບ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>sip</td><td>10</td><td class="native" dir="auto">ສິບ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="fe97d137" aria-label="ຮ້ອຍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hoi</td><td>100</td><td class="native" dir="auto">ຮ້ອຍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c821d00d" aria-label="ພັນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phan</td><td>1,000</td><td class="native" dir="auto">ພັນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e96c24e2" aria-label="ຫ້າພັນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>haa phan</td><td>5,000</td><td class="native" dir="auto">ຫ້າພັນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c7685602" aria-label="ໝື່ນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>meun</td><td>10,000</td><td class="native" dir="auto">ໝື່ນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0b405d62" aria-label="ແສນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saen</td><td>100,000</td><td class="native" dir="auto">ແສນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c20e01b1" aria-label="ກີບ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kip</td><td>kip</td><td class="native" dir="auto">ກີບ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting around</h2>
   <p class="secd">Agree the price, enjoy the pace</p>
   <div class="note">Tuk-tuks and songthaews run on agreed prices — settle before you sit. <b>jot yuu nii</b> stops the driver where you need.</div>
-  <table><tr><td class="rom">lot tuk tuk</td><td>tuk-tuk</td><td class="native" dir="auto">ລົດຕຸກຕຸກ</td></tr>
-<tr><td class="rom">lot me</td><td>bus</td><td class="native" dir="auto">ລົດເມ</td></tr>
-<tr><td class="rom">pii</td><td>ticket</td><td class="native" dir="auto">ປີ້</td></tr>
-<tr><td class="rom">jot yuu nii</td><td>stop here</td><td class="native" dir="auto">ຈອດຢູ່ນີ້</td></tr>
-<tr><td class="rom">yut</td><td>stop!</td><td class="native" dir="auto">ຢຸດ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="ad31cefd" aria-label="ລົດຕຸກຕຸກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lot tuk tuk</td><td>tuk-tuk</td><td class="native" dir="auto">ລົດຕຸກຕຸກ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="fa866db1" aria-label="ລົດເມ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lot me</td><td>bus</td><td class="native" dir="auto">ລົດເມ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="633e15a7" aria-label="ປີ້ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pii</td><td>ticket</td><td class="native" dir="auto">ປີ້</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1e0b4eca" aria-label="ຈອດຢູ່ນີ້ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>jot yuu nii</td><td>stop here</td><td class="native" dir="auto">ຈອດຢູ່ນີ້</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cc5fbee3" aria-label="ຢຸດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yut</td><td>stop!</td><td class="native" dir="auto">ຢຸດ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Directions</h2>
   <p class="secd">Catch one word of the answer</p>
   <div class="note">Ask with the <b>yuu sai</b> frame above, then listen for these.</div>
-  <table><tr><td class="rom">saai</td><td>left</td><td class="native" dir="auto">ຊ້າຍ</td></tr>
-<tr><td class="rom">khwaa</td><td>right</td><td class="native" dir="auto">ຂວາ</td></tr>
-<tr><td class="rom">kai</td><td>far</td><td class="native" dir="auto">ໄກ</td></tr>
-<tr><td class="rom">kai (short)</td><td>near</td><td class="native" dir="auto">ໃກ້</td></tr>
-<tr><td class="rom">yuu nii</td><td>right here</td><td class="native" dir="auto">ຢູ່ນີ້</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="2d6a19c4" aria-label="ຊ້າຍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saai</td><td>left</td><td class="native" dir="auto">ຊ້າຍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="41e50b76" aria-label="ຂວາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khwaa</td><td>right</td><td class="native" dir="auto">ຂວາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5012ac75" aria-label="ໄກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kai</td><td>far</td><td class="native" dir="auto">ໄກ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7b6cd6ba" aria-label="ໃກ້ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kai (short)</td><td>near</td><td class="native" dir="auto">ໃກ້</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3f79d3ff" aria-label="ຢູ່ນີ້ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yuu nii</td><td>right here</td><td class="native" dir="auto">ຢູ່ນີ້</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Sticky rice</h2>
   <p class="secd">The national staple</p>
   <div class="note"><b>khao niao</b> comes in a lidded basket: roll a ball with your RIGHT hand, dip, eat — never put rice back. <b>saep!</b> is the compliment every cook wants.</div>
-  <table><tr><td class="rom">khao niao</td><td>sticky rice</td><td class="native" dir="auto">ເຂົ້າໜຽວ</td></tr>
-<tr><td class="rom">khao</td><td>rice · a meal</td><td class="native" dir="auto">ເຂົ້າ</td></tr>
-<tr><td class="rom">nam</td><td>water</td><td class="native" dir="auto">ນ້ຳ</td></tr>
-<tr><td class="rom">kaafe</td><td>coffee</td><td class="native" dir="auto">ກາເຟ</td></tr>
-<tr><td class="rom">saep</td><td>delicious!</td><td class="native" dir="auto">ແຊບ</td></tr>
-<tr><td class="rom">phet</td><td>spicy</td><td class="native" dir="auto">ເຜັດ</td></tr>
-<tr><td class="rom">kho menu dae</td><td>menu, please</td><td class="native" dir="auto">ຂໍເມນູແດ່</td></tr>
-<tr><td class="rom">khit ngen</td><td>the bill, please</td><td class="native" dir="auto">ຄິດເງິນ</td></tr>
-<tr><td class="rom">iik</td><td>more</td><td class="native" dir="auto">ອີກ</td></tr>
-<tr><td class="rom">mot</td><td>all gone</td><td class="native" dir="auto">ໝົດ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6ce44186" aria-label="ເຂົ້າໜຽວ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khao niao</td><td>sticky rice</td><td class="native" dir="auto">ເຂົ້າໜຽວ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1026383b" aria-label="ເຂົ້າ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khao</td><td>rice · a meal</td><td class="native" dir="auto">ເຂົ້າ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="3afb0d9d" aria-label="ນ້ຳ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nam</td><td>water</td><td class="native" dir="auto">ນ້ຳ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a9cfdd78" aria-label="ກາເຟ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaafe</td><td>coffee</td><td class="native" dir="auto">ກາເຟ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="e7715f2f" aria-label="ແຊບ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>saep</td><td>delicious!</td><td class="native" dir="auto">ແຊບ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d18146eb" aria-label="ເຜັດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phet</td><td>spicy</td><td class="native" dir="auto">ເຜັດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="434a6c38" aria-label="ຂໍເມນູແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho menu dae</td><td>menu, please</td><td class="native" dir="auto">ຂໍເມນູແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="0d169b04" aria-label="ຄິດເງິນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khit ngen</td><td>the bill, please</td><td class="native" dir="auto">ຄິດເງິນ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="7eb43d64" aria-label="ອີກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>iik</td><td>more</td><td class="native" dir="auto">ອີກ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f13429c4" aria-label="ໝົດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>mot</td><td>all gone</td><td class="native" dir="auto">ໝົດ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Shopping</h2>
   <p class="secd">Gentle bargaining</p>
   <div class="note">Morning markets are the real Laos. <b>phaeng phot</b> opens the negotiation; it stays gentle — a few thousand kip either way, never a battle.</div>
-  <table><tr><td class="rom">ta-laat</td><td>the market</td><td class="native" dir="auto">ຕະຫຼາດ</td></tr>
-<tr><td class="rom">laakhaa</td><td>price</td><td class="native" dir="auto">ລາຄາ</td></tr>
-<tr><td class="rom">phaeng</td><td>expensive</td><td class="native" dir="auto">ແພງ</td></tr>
-<tr><td class="rom">phaeng phot</td><td>too expensive</td><td class="native" dir="auto">ແພງໂພດ</td></tr>
-<tr><td class="rom">thuuk</td><td>cheap</td><td class="native" dir="auto">ຖືກ</td></tr>
-<tr><td class="rom">ao</td><td>I will take it</td><td class="native" dir="auto">ເອົາ</td></tr>
-<tr><td class="rom">ngen</td><td>money</td><td class="native" dir="auto">ເງິນ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="7c57b455" aria-label="ຕະຫຼາດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ta-laat</td><td>the market</td><td class="native" dir="auto">ຕະຫຼາດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="dd21d1a0" aria-label="ລາຄາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>laakhaa</td><td>price</td><td class="native" dir="auto">ລາຄາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="c2e5fedc" aria-label="ແພງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phaeng</td><td>expensive</td><td class="native" dir="auto">ແພງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2e8893ff" aria-label="ແພງໂພດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>phaeng phot</td><td>too expensive</td><td class="native" dir="auto">ແພງໂພດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="621e7a9f" aria-label="ຖືກ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thuuk</td><td>cheap</td><td class="native" dir="auto">ຖືກ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="cfc3a4a0" aria-label="ເອົາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ao</td><td>I will take it</td><td class="native" dir="auto">ເອົາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="a23511f0" aria-label="ເງິນ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ngen</td><td>money</td><td class="native" dir="auto">ເງິນ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying somewhere</h2>
   <p class="secd">Guesthouse basics</p>
   <div class="note"><b>hong nam</b> is the bathroom — worth locating early. Power cuts happen in the provinces, so keep a torch by the bed.</div>
-  <table><tr><td class="rom">hong haem</td><td>hotel</td><td class="native" dir="auto">ໂຮງແຮມ</td></tr>
-<tr><td class="rom">hong</td><td>room</td><td class="native" dir="auto">ຫ້ອງ</td></tr>
-<tr><td class="rom">kajae</td><td>the key</td><td class="native" dir="auto">ກະແຈ</td></tr>
-<tr><td class="rom">hong nam</td><td>bathroom</td><td class="native" dir="auto">ຫ້ອງນ້ຳ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="08f3c13e" aria-label="ໂຮງແຮມ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong haem</td><td>hotel</td><td class="native" dir="auto">ໂຮງແຮມ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="29f2c888" aria-label="ຫ້ອງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong</td><td>room</td><td class="native" dir="auto">ຫ້ອງ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b3490186" aria-label="ກະແຈ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kajae</td><td>the key</td><td class="native" dir="auto">ກະແຈ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="83a7ca0a" aria-label="ຫ້ອງນ້ຳ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong nam</td><td>bathroom</td><td class="native" dir="auto">ຫ້ອງນ້ຳ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Getting help</h2>
   <p class="secd">Serious words, hopefully unused</p>
   <div class="note"><b>suay duay!</b> is the urgent cry for help; <b>suay dae</b> is the calm request. <b>lavang</b> — careful — is what friends will call after you.</div>
-  <table><tr><td class="rom">suay duay</td><td>help! (urgent)</td><td class="native" dir="auto">ຊ່ວຍດ້ວຍ</td></tr>
-<tr><td class="rom">suay dae</td><td>please help</td><td class="native" dir="auto">ຊ່ວຍແດ່</td></tr>
-<tr><td class="rom">tamluat</td><td>police</td><td class="native" dir="auto">ຕຳຫຼວດ</td></tr>
-<tr><td class="rom">hong maw</td><td>hospital</td><td class="native" dir="auto">ໂຮງໝໍ</td></tr>
-<tr><td class="rom">maw</td><td>doctor</td><td class="native" dir="auto">ໝໍ</td></tr>
-<tr><td class="rom">yaa</td><td>medicine</td><td class="native" dir="auto">ຢາ</td></tr>
-<tr><td class="rom">lavang</td><td>be careful!</td><td class="native" dir="auto">ລະວັງ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6e64bb98" aria-label="ຊ່ວຍດ້ວຍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suay duay</td><td>help! (urgent)</td><td class="native" dir="auto">ຊ່ວຍດ້ວຍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f67bf2af" aria-label="ຊ່ວຍແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>suay dae</td><td>please help</td><td class="native" dir="auto">ຊ່ວຍແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4bf7c6d1" aria-label="ຕຳຫຼວດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tamluat</td><td>police</td><td class="native" dir="auto">ຕຳຫຼວດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="20c0e199" aria-label="ໂຮງໝໍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong maw</td><td>hospital</td><td class="native" dir="auto">ໂຮງໝໍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="4c941791" aria-label="ໝໍ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>maw</td><td>doctor</td><td class="native" dir="auto">ໝໍ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="f9ffc62d" aria-label="ຢາ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>yaa</td><td>medicine</td><td class="native" dir="auto">ຢາ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1a40810b" aria-label="ລະວັງ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lavang</td><td>be careful!</td><td class="native" dir="auto">ລະວັງ</td></tr></table>
 </section>
 
 <section class="block">
   <h2>Staying in touch</h2>
   <p class="secd">Phone, wifi &amp; photos</p>
   <div class="note">Guesthouse wifi is common but slow. SIMs are cheap with a passport. <b>thaai huup dai baw?</b> asks before the camera comes out — always ask in villages.</div>
-  <table><tr><td class="rom">tholasap</td><td>telephone</td><td class="native" dir="auto">ໂທລະສັບ</td></tr>
-<tr><td class="rom">ber</td><td>number</td><td class="native" dir="auto">ເບີ</td></tr>
-<tr><td class="rom">thaai huup dai baw</td><td>may I take a photo?</td><td class="native" dir="auto">ຖ່າຍຮູບໄດ້ບໍ່</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="cebf5bef" aria-label="ໂທລະສັບ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>tholasap</td><td>telephone</td><td class="native" dir="auto">ໂທລະສັບ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="2b8fa0a9" aria-label="ເບີ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ber</td><td>number</td><td class="native" dir="auto">ເບີ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="50037e72" aria-label="ຖ່າຍຮູບໄດ້ບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>thaai huup dai baw</td><td>may I take a photo?</td><td class="native" dir="auto">ຖ່າຍຮູບໄດ້ບໍ່</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask where anything is</h2>
   <p class="fs">Where is the ___?</p>
-  <table><tr><td class="rom">ta-laat yuu sai?</td><td>Where is the market?</td><td class="native" dir="auto">ຕະຫຼາດຢູ່ໃສ</td></tr>
-<tr><td class="rom">hong haem yuu sai?</td><td>Where is the hotel?</td><td class="native" dir="auto">ໂຮງແຮມຢູ່ໃສ</td></tr>
-<tr><td class="rom">hong nam yuu sai?</td><td>Where is the bathroom?</td><td class="native" dir="auto">ຫ້ອງນ້ຳຢູ່ໃສ</td></tr>
-<tr><td class="rom">hong maw yuu sai?</td><td>Where is the hospital?</td><td class="native" dir="auto">ໂຮງໝໍຢູ່ໃສ</td></tr>
-<tr><td class="rom">lot me yuu sai?</td><td>Where is the bus?</td><td class="native" dir="auto">ລົດເມຢູ່ໃສ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="a6f8bf19" aria-label="ຕະຫຼາດຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>ta-laat yuu sai?</td><td>Where is the market?</td><td class="native" dir="auto">ຕະຫຼາດຢູ່ໃສ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="08b18958" aria-label="ໂຮງແຮມຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong haem yuu sai?</td><td>Where is the hotel?</td><td class="native" dir="auto">ໂຮງແຮມຢູ່ໃສ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="9485274c" aria-label="ຫ້ອງນ້ຳຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong nam yuu sai?</td><td>Where is the bathroom?</td><td class="native" dir="auto">ຫ້ອງນ້ຳຢູ່ໃສ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="5c236c45" aria-label="ໂຮງໝໍຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong maw yuu sai?</td><td>Where is the hospital?</td><td class="native" dir="auto">ໂຮງໝໍຢູ່ໃສ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="b04f67cd" aria-label="ລົດເມຢູ່ໃສ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>lot me yuu sai?</td><td>Where is the bus?</td><td class="native" dir="auto">ລົດເມຢູ່ໃສ</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask if something is there</h2>
   <p class="fs">Do you have ___?</p>
-  <table><tr><td class="rom">nam mii baw?</td><td>Do you have water?</td><td class="native" dir="auto">ນ້ຳມີບໍ່</td></tr>
-<tr><td class="rom">kaafe mii baw?</td><td>Do you have coffee?</td><td class="native" dir="auto">ກາເຟມີບໍ່</td></tr>
-<tr><td class="rom">khao niao mii baw?</td><td>Do you have sticky rice?</td><td class="native" dir="auto">ເຂົ້າໜຽວມີບໍ່</td></tr>
-<tr><td class="rom">hong mii baw?</td><td>Do you have a room?</td><td class="native" dir="auto">ຫ້ອງມີບໍ່</td></tr>
-<tr><td class="rom">pii mii baw?</td><td>Do you have a ticket?</td><td class="native" dir="auto">ປີ້ມີບໍ່</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="a5821206" aria-label="ນ້ຳມີບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>nam mii baw?</td><td>Do you have water?</td><td class="native" dir="auto">ນ້ຳມີບໍ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="bab2eb85" aria-label="ກາເຟມີບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaafe mii baw?</td><td>Do you have coffee?</td><td class="native" dir="auto">ກາເຟມີບໍ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="21d64d57" aria-label="ເຂົ້າໜຽວມີບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>khao niao mii baw?</td><td>Do you have sticky rice?</td><td class="native" dir="auto">ເຂົ້າໜຽວມີບໍ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="83bf0d55" aria-label="ຫ້ອງມີບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong mii baw?</td><td>Do you have a room?</td><td class="native" dir="auto">ຫ້ອງມີບໍ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="ecf1eec4" aria-label="ປີ້ມີບໍ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pii mii baw?</td><td>Do you have a ticket?</td><td class="native" dir="auto">ປີ້ມີບໍ່</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask for something politely</h2>
   <p class="fs">___, please.</p>
-  <table><tr><td class="rom">kho nam dae</td><td>water, please.</td><td class="native" dir="auto">ຂໍນ້ຳແດ່</td></tr>
-<tr><td class="rom">kho kaafe dae</td><td>coffee, please.</td><td class="native" dir="auto">ຂໍກາເຟແດ່</td></tr>
-<tr><td class="rom">kho khao niao dae</td><td>sticky rice, please.</td><td class="native" dir="auto">ຂໍເຂົ້າໜຽວແດ່</td></tr>
-<tr><td class="rom">kho an nii dae</td><td>this one, please.</td><td class="native" dir="auto">ຂໍອັນນີ້ແດ່</td></tr>
-<tr><td class="rom">kho kajae dae</td><td>the key, please.</td><td class="native" dir="auto">ຂໍກະແຈແດ່</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="b9e9083a" aria-label="ຂໍນ້ຳແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho nam dae</td><td>water, please.</td><td class="native" dir="auto">ຂໍນ້ຳແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="94c76f69" aria-label="ຂໍກາເຟແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho kaafe dae</td><td>coffee, please.</td><td class="native" dir="auto">ຂໍກາເຟແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="db54dbff" aria-label="ຂໍເຂົ້າໜຽວແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho khao niao dae</td><td>sticky rice, please.</td><td class="native" dir="auto">ຂໍເຂົ້າໜຽວແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="67bfa31f" aria-label="ຂໍອັນນີ້ແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho an nii dae</td><td>this one, please.</td><td class="native" dir="auto">ຂໍອັນນີ້ແດ່</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="39e3fb9f" aria-label="ຂໍກະແຈແດ່ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kho kajae dae</td><td>the key, please.</td><td class="native" dir="auto">ຂໍກະແຈແດ່</td></tr></table>
 </section>
 
 <section class="block frame">
   <h2>Ask any price</h2>
   <p class="fs">How much is ___?</p>
-  <table><tr><td class="rom">an nii thao dai?</td><td>How much is this one?</td><td class="native" dir="auto">ອັນນີ້ເທົ່າໃດ</td></tr>
-<tr><td class="rom">hong thao dai?</td><td>How much is the room?</td><td class="native" dir="auto">ຫ້ອງເທົ່າໃດ</td></tr>
-<tr><td class="rom">kaafe thao dai?</td><td>How much is the coffee?</td><td class="native" dir="auto">ກາເຟເທົ່າໃດ</td></tr>
-<tr><td class="rom">pii thao dai?</td><td>How much is the ticket?</td><td class="native" dir="auto">ປີ້ເທົ່າໃດ</td></tr></table>
+  <table><tr><td class="rom"><button type="button" class="pl" data-k="6cc976ea" aria-label="ອັນນີ້ເທົ່າໃດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>an nii thao dai?</td><td>How much is this one?</td><td class="native" dir="auto">ອັນນີ້ເທົ່າໃດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="31d447e4" aria-label="ຫ້ອງເທົ່າໃດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>hong thao dai?</td><td>How much is the room?</td><td class="native" dir="auto">ຫ້ອງເທົ່າໃດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="1ae519d4" aria-label="ກາເຟເທົ່າໃດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>kaafe thao dai?</td><td>How much is the coffee?</td><td class="native" dir="auto">ກາເຟເທົ່າໃດ</td></tr>
+<tr><td class="rom"><button type="button" class="pl" data-k="d1aae4a9" aria-label="ປີ້ເທົ່າໃດ — play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5Z"/><path class="w" d="M16 9a4.2 4.2 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>pii thao dai?</td><td>How much is the ticket?</td><td class="native" dir="auto">ປີ້ເທົ່າໃດ</td></tr></table>
 </section>
 
 <section class="block">
@@ -377,5 +386,16 @@ font-size:14.5px;color:var(--ink)}
   <a href="/learn-lao">Learn Lao</a> &middot;
   <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a>
 </div></footer>
+
+<script>
+/* recorded clips, straight from this site's own audio dir — same content-hashed
+   files the app plays; no clip for an element means it renders without data-k */
+(function(){var B='/audio-lo/',C={};
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-k]');if(!t)return;
+  var k=t.getAttribute('data-k'),a=C[k]||(C[k]=new Audio(B+k+'.mp3'));
+  a.currentTime=0;a.play();});
+})();
+</script>
 </body>
 </html>
