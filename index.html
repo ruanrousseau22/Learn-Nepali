@@ -1057,9 +1057,6 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .flib-gh{max-width:620px;margin:0 auto 12px}
 .flib-gh h3{margin:0;font-size:1.02rem;font-weight:800;letter-spacing:.01em}
 .flib-gh p{margin:3px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
-.flib-seq{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
-  font-size:12px;font-weight:800;background:color-mix(in srgb,var(--crimson) 12%,transparent);color:var(--crimson);
-  border:1px solid color-mix(in srgb,var(--crimson) 26%,transparent)}
 .flib-meta{display:block;font-size:12px;color:var(--muted);margin-top:1px}
 .fnode.done .flib-meta{opacity:.85}
 /* colour must come from --ink, not the UA `buttontext` system colour: every
@@ -1082,7 +1079,6 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fnode-chev{display:none}
 @media(max-width:560px){
   .flib-arc::before{left:24px}
-  .flib-seq{width:19px;height:19px;font-size:11px}
   .fnode{gap:11px;padding:11px 12px}
   .fnode-art{width:66px;height:48px}
   .fnode-t{font-size:1rem;line-height:1.55}
@@ -2627,7 +2623,7 @@ function openStory(sid){
    collection group, which is the safe default (no implied order). The
    dashed connector is drawn ONLY down the arc group, because there it
    means something. ----- */
-function flibCard(st,seq){
+function flibCard(st){
   const secs=st.sections||[],total=secs.length+(st.overview?1:0);
   let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
   if(st.overview&&FAITH_DONE.has(st.id+'-ov'))n++;
@@ -2641,7 +2637,6 @@ function flibCard(st,seq){
        :'<span class="fnode-go deva">'+fui('start')+'</span><span class="fnode-chev" aria-hidden="true">\u203A</span>');
   const parts=secs.length+' '+(st.kind==='collection'?(secs.length===1?'story':'stories'):(secs.length===1?'part':'parts'));
   return '<button type="button" class="fnode'+(done?' done':'')+'" onclick="openStory(\''+st.id+'\')">'
-    +(seq?'<span class="flib-seq" aria-hidden="true">'+seq+'</span>':'')
     +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||'')+'</span>'
     +'<span class="fnode-tx">'
       +'<span class="fnode-t deva">'+(st.ne||st.title)+'</span>'
@@ -2659,16 +2654,16 @@ function buildFLib(){
   const all=FAITH.stories||[];
   const arc=all.filter(s=>s.kind==='arc'),coll=all.filter(s=>s.kind!=='arc');
   let h='';
-  /* the arc leads the page with no heading at all \u2014 the numbers and the
-     connector already say "in order", and Ruan wants the page quiet */
+  /* the arc leads the page with no heading at all \u2014 the connector already
+     says "in order", and Ruan wants the page quiet (numbers removed Aug 2026) */
   if(arc.length){
     h+='<div class="flib-group"><div class="fnodes flib-arc">'
-      +arc.map((s,i)=>flibCard(s,i+1)).join('')+'</div></div>';
+      +arc.map(s=>flibCard(s)).join('')+'</div></div>';
   }
   if(coll.length){
     h+='<div class="flib-group">'
       +'<div class="flib-gh"><h3>Other stories</h3></div>'
-      +'<div class="fnodes flib-loose">'+coll.map(s=>flibCard(s,0)).join('')+'</div></div>';
+      +'<div class="fnodes flib-loose">'+coll.map(s=>flibCard(s)).join('')+'</div></div>';
   }
   root.innerHTML=h;
 }
