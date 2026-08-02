@@ -207,6 +207,7 @@ def page(d, others, palette_css, ne_hero):
     ncls = "native"
     url = "%s/learn-%s" % (ORIGIN, slug)
     title = "Learn %s — Lessons, Alphabet & Audio | Bhasaly" % name
+    ogimg = "%s/og-%s.png?v=1" % (ORIGIN, slug)
     # SERPs cut descriptions at ~160 chars — every variant below stays under
     alpha_bit = "" if d['latin'] else "the alphabet, "
     desc = ("Learn %s with Bhasaly: %d short lessons across %d levels, %srecorded "
@@ -276,6 +277,7 @@ def page(d, others, palette_css, ne_hero):
                     "one short, tap-based lesson at a time — %s. Every word carries recorded "
                     "audio, and you learn on any phone or computer."
                     % (esc(name), esc(intro_script))),
+        ogimg=esc(ogimg),
         essentials=essentials, numbers=numbers, alpha_block=alpha_block,
         faq_html=faq_html, other_links=other_links, ref_block=ref_block,
         jsonld=jsonld(d, name, slug, desc), year=datetime.date.today().year)
@@ -376,12 +378,12 @@ TEMPLATE = """<!doctype html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="https://bhasaly.com/og-image.png?v=3">
+<meta property="og:image" content="{ogimg}">
 <meta property="og:site_name" content="Bhasaly">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=3">
+<meta name="twitter:image" content="{ogimg}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -506,12 +508,12 @@ SUB_TEMPLATE = """<!doctype html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="https://bhasaly.com/og-image.png?v=3">
+<meta property="og:image" content="{ogimg}">
 <meta property="og:site_name" content="Bhasaly">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://bhasaly.com/og-image.png?v=3">
+<meta name="twitter:image" content="{ogimg}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -639,6 +641,7 @@ def sub_shell(d, others, palette_css, ne_band, **kw):
                   'aria-hidden="true">%s</svg>' % (d.get('band') or ne_band))
     return SUB_TEMPLATE.format(
         css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
+        ogimg=esc('%s/og-%s.png?v=1' % (ORIGIN, SLUG[code])),
         band_css=BAND_CSS, band_scene=band_scene, audio_base=audio_dir(code),
         fontlink=esc(font_link(code)),
         slug=SLUG[code], name=esc(d['name']), code=code,

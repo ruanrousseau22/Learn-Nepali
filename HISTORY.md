@@ -2822,3 +2822,22 @@ Mechanism: `SPEAK_AS` map in `generate_audio.py` — synth speaks the mapped
 string but stores the clip under the DISPLAY string's key, so the app and
 the extractor are untouched and a from-scratch regeneration self-heals.
 Manifests now carry every string for bn (1426) and my (952).
+
+## Per-language og cards + site polish batch (Aug 2026)
+
+Ruan asked for a polish pass on everything shipped. Landed in one batch:
+Netlify `_headers` (OWASP security headers + immutable mp3 caching — clip
+names are content hashes), a generated 404.html in the site style, playable
+audio on every alphabet/phrases page (tiles/rows carry the FNV key only
+when the clip exists — no dead buttons on the si/mn no-voice letters),
+print stylesheet + button, og tags on the legal pages, a Settings
+"Install Bhasaly" row (beforeinstallprompt / iOS hint / hidden when
+standalone; new pwa_install event), and eleven `og-<slug>.png` cards.
+
+The cards reuse the July og-image recipe exactly (serialize `.hero-mtns`
+computed fills in the browser, inline Fraunces as data URIs, canvas
+1200×630) — but looped over `switchLang` for all 11 packs, with the bytes
+POSTed to a throwaway localhost receiver instead of chunked through tool
+results. Tagline is "Learn <Name>" per card; the root URL keeps the generic
+card. Verify per-card `?v=` bumps in gen_landing.py only — index.html still
+references og-image.png.

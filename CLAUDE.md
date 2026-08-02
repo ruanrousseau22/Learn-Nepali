@@ -118,7 +118,11 @@ course data lives in per-language packs under `lang/`.
   mono `☰` menu button, and three even solid bars would read as a second
   one. Do not "tidy" the segments into full-width bars.
 - `og-image.png` + `og-card.svg` — the 1200×630 social card + editable
-  source. Scenery = the app's own default (Nepali) hero art, serialised with
+  source — PLUS `og-<slug>.png` (11, Aug 2026): per-language cards with that
+  pack's own hero art/palette and a "Learn X" tagline, generated in the
+  browser by the same recipe. The app root keeps `og-image.png`; every
+  learn/alphabet/phrases page references its language's card (`?v=1` — bump
+  per card when it changes). Scenery = the app's own default (Nepali) hero art, serialised with
   computed fills; wordmark in real Fraunces; tagline "Learn Asian languages".
   Referenced from `index.html` AND `gen_landing.py` with a `?v=N` cache-buster
   — **bump N in both and rerun `gen_landing.py`** whenever the image changes,
