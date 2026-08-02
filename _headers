@@ -1,0 +1,79 @@
+# Netlify headers (see docs.netlify.com/routing/headers).
+# Security headers on everything; clip files are content-hashed (FNV-1a of
+# the spoken string) so they can NEVER go stale -> immutable, 1 year.
+# manifest.json files and pages deliberately keep Netlify's default
+# max-age=0,must-revalidate. Wildcards are SEGMENT-scoped, and duplicate
+# header names across matching rules get concatenated (RFC 7230) -- keep
+# Cache-Control out of the /* block.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+/audio/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-bn/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-bnf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-jv/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-jvf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-km/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-kmf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-lo/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-lof/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-mn/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-mnf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-my/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-myf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-nef/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-ps/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-psf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-si/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-sif/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-ur/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-urf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-uz/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio-uzf/*.mp3
+  Cache-Control: public, max-age=31536000, immutable
