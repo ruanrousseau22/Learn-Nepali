@@ -136,6 +136,24 @@ background:var(--card);cursor:pointer;padding:0}
 .pl svg{width:14px;height:14px;fill:var(--saffron);stroke:none}
 .pl svg .w{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}
 .pl:hover{border-color:var(--saffron)}
+.print-btn{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
+border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
+border-radius:999px;cursor:pointer;font-family:inherit}
+.print-btn:hover{border-color:var(--crimson)}
+/* a printed page is the reference sheet people take travelling: content only,
+   no chrome, no scenery, rows kept whole */
+@media print{
+  header,footer,.crumb,.band-scene,.cta,.pl,.print-btn,.no-print{display:none!important}
+  body{background:#fff}
+  .sub-band{background:none;border-radius:0}
+  .sub-band-body{padding:0 0 6px;max-width:none}
+  .band-title h1{font-size:24pt}
+  .sub-hero{padding:0 0 4px}
+  .block{padding:12px 0}
+  tr{page-break-inside:avoid}
+  td{padding:6px 8px}
+  .note{background:none;border:1px solid #bbb}
+}
 </style>
 </head>
 <body>
@@ -157,6 +175,7 @@ background:var(--card);cursor:pointer;padding:0}
 <section class="sub-hero">
   <p>Every letter of the Sinhala script, with its sound written out. Tap any letter to hear it — the whole chart is recorded.</p>
   <a class="cta" href="/?lang=si&amp;v=alphabet">Hear every letter &rarr;</a>
+  <button type="button" class="print-btn" onclick="window.print()">Print this chart</button>
 </section>
 
 
@@ -237,14 +256,14 @@ background:var(--card);cursor:pointer;padding:0}
 <button type="button" class="atile" data-k="476c4f03" aria-label="නවය — play audio"><span class="native" dir="auto">නවය</span><span class="ar">nawaya (9)</span></button></div>
 </section>
 
-<section class="block">
+<section class="block no-print">
   <h2>Common questions</h2>
   <details class="faq"><summary>How many letters are in the Sinhala alphabet?</summary><p>This chart lists 12 vowels and 40 consonants — 52 letters in total — plus the ten numerals.</p></details>
   <details class="faq"><summary>Can I hear how each Sinhala letter sounds?</summary><p>Yes. Open the alphabet in Bhasaly and tap any letter to play a recorded clip of its sound. No account is needed.</p></details>
   <details class="faq"><summary>What is the best way to learn the Sinhala script?</summary><p>One letter at a time, with sound, then straight into real words. Bhasaly&#x27;s Sinhala course starts with the script and builds from there.</p></details>
 </section>
 
-<section class="block">
+<section class="block no-print">
   <h2>Learn another language</h2>
   <p class="lead">Bhasaly teaches under-served Asian languages.</p>
   <div class="others"><a href="/learn-nepali">Nepali</a>
@@ -259,7 +278,7 @@ background:var(--card);cursor:pointer;padding:0}
 <a href="/learn-javanese">Javanese</a></div>
 </section>
 
-<div class="endcta"><a class="cta" href="/?lang=si&amp;v=alphabet">Hear every letter &rarr;</a></div>
+<div class="endcta no-print"><a class="cta" href="/?lang=si&amp;v=alphabet">Hear every letter &rarr;</a></div>
 </div></main>
 
 <footer><div class="wrap">

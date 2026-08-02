@@ -87,6 +87,7 @@ Events instrumented (all verified firing with correct props):
 | `trip_cards` | lang | is the phrasebook used |
 | `login_link_sent` | lang | does anyone want sync |
 | `feedback_sent` | lang | is the feedback channel alive |
+| `pwa_install` | lang | does the Settings install row convert |
 
 `deep:1` on `app_open` marks arrivals from a `/learn-X` landing page, which
 is what connects SEO work to actual course starts.

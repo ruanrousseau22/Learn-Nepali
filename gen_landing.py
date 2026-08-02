@@ -537,6 +537,24 @@ background:var(--card);cursor:pointer;padding:0}}
 .pl svg{{width:14px;height:14px;fill:var(--saffron);stroke:none}}
 .pl svg .w{{fill:none;stroke:var(--saffron);stroke-width:1.8;stroke-linecap:round}}
 .pl:hover{{border-color:var(--saffron)}}
+.print-btn{{display:inline-block;margin-left:10px;background:var(--card);color:var(--ink);
+border:1px solid var(--line);font-weight:700;font-size:15px;padding:13px 24px;
+border-radius:999px;cursor:pointer;font-family:inherit}}
+.print-btn:hover{{border-color:var(--crimson)}}
+/* a printed page is the reference sheet people take travelling: content only,
+   no chrome, no scenery, rows kept whole */
+@media print{{
+  header,footer,.crumb,.band-scene,.cta,.pl,.print-btn,.no-print{{display:none!important}}
+  body{{background:#fff}}
+  .sub-band{{background:none;border-radius:0}}
+  .sub-band-body{{padding:0 0 6px;max-width:none}}
+  .band-title h1{{font-size:24pt}}
+  .sub-hero{{padding:0 0 4px}}
+  .block{{padding:12px 0}}
+  tr{{page-break-inside:avoid}}
+  td{{padding:6px 8px}}
+  .note{{background:none;border:1px solid #bbb}}
+}}
 </style>
 </head>
 <body>
@@ -558,17 +576,18 @@ background:var(--card);cursor:pointer;padding:0}}
 <section class="sub-hero">
   <p>{intro}</p>
   <a class="cta" href="{applink}">{cta}</a>
+  <button type="button" class="print-btn" onclick="window.print()">{printlabel}</button>
 </section>
 
 {body}
 
-<section class="block">
+<section class="block no-print">
   <h2>Learn another language</h2>
   <p class="lead">Bhasaly teaches under-served Asian languages.</p>
   <div class="others">{other_links}</div>
 </section>
 
-<div class="endcta"><a class="cta" href="{applink}">{cta}</a></div>
+<div class="endcta no-print"><a class="cta" href="{applink}">{cta}</a></div>
 </div></main>
 
 <footer><div class="wrap">
@@ -673,7 +692,7 @@ def alphabet_page(d, others, palette_css, ne_band):
   <div class="agrid">{ng}</div>
 </section>
 
-<section class="block">
+<section class="block no-print">
   <h2>Common questions</h2>
   {faq_html}
 </section>""".format(
@@ -692,7 +711,7 @@ def alphabet_page(d, others, palette_css, ne_band):
         crumb="Alphabet", h1="The %s alphabet" % esc(name), native=esc(d['nativeName']),
         intro=esc("Every letter of the %s, with its sound written out. Tap any letter "
                   "to hear it — the whole chart is recorded." % sname),
-        cta="Hear every letter &rarr;", body=body,
+        cta="Hear every letter &rarr;", printlabel="Print this chart", body=body,
         jsonld=sub_jsonld(name, url, "%s alphabet" % name, slug, faq))
 
 
@@ -755,7 +774,7 @@ def phrases_page(d, others, palette_css, ne_band):
          "No. Every line is romanized first, so you can say it straight away. The script is "
          "there alongside if you want to start reading it."),
     ]
-    parts.append('<section class="block">\n  <h2>Common questions</h2>\n  %s\n</section>'
+    parts.append('<section class="block no-print">\n  <h2>Common questions</h2>\n  %s\n</section>'
                  % "\n  ".join(
                      '<details class="faq"><summary>%s</summary><p>%s</p></details>'
                      % (esc(q), esc(a)) for q, a in faq))
@@ -769,7 +788,8 @@ def phrases_page(d, others, palette_css, ne_band):
         intro=esc("The lines a visitor actually uses, and the ones you will hear back. "
                   "Romanized first so you can say them today. Every phrase is recorded — "
                   "tap the speaker to hear it."),
-        cta="Hear these phrases &rarr;", body="\n\n".join(parts),
+        cta="Hear these phrases &rarr;", printlabel="Print this phrasebook",
+        body="\n\n".join(parts),
         jsonld=sub_jsonld(name, url, "%s phrases" % name, slug, faq))
 
 
