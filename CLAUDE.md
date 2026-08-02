@@ -145,8 +145,8 @@ course data lives in per-language packs under `lang/`.
 |---|---|---|---|---|
 | ne | Nepali | 12 zones / 77 topics / 385 lessons + Intensive (12 wks / 312) | ne-NP-SagarNeural | Devanagari; app default |
 | km | Khmer | 12 / 84 / 420 | km-KH-PisethNeural | two consonant series, subscripts, no word spaces |
-| my | Burmese | 12 / 84 / 420 | (my voice; 934 clips) | needs Noto Sans Myanmar in font stacks; ဎ has no clip |
-| bn | Bengali | 12 / 84 / 420 | bn-IN-BashkarNeural | Kolkata standard; ং ঃ ঁ no clips |
+| my | Burmese | 12 / 84 / 420 | (my voice; 934 clips) | needs Noto Sans Myanmar in font stacks; ဎ plays its name clip (Aug 2026) |
+| bn | Bengali | 12 / 84 / 420 | bn-IN-BashkarNeural | Kolkata standard; ং ঃ ঁ play name clips (Aug 2026) |
 | si | Sinhala | 12 / 84 / 420 | si-LK-SameeraNeural | spoken register; ඞ ඣ ඦ no clips |
 | lo | Lao | 12 / 74 / 370 | lo-LA-ChanthavongNeural | three tone classes; no word spaces |
 | ps | Pashto | 12 / 74 / 370 | ps-AF-GulNawazNeural | FIRST RTL course |
@@ -587,9 +587,14 @@ Recorded MP3s first, device TTS fallback.
   needs internet). **Never run two generate_audio jobs for one language at
   once** (they collide on `.part` files).
 - Known no-clip characters (edge-tts returns nothing; device-TTS fallback,
-  NOT bugs): my ဎ, si ඞ ඣ ඦ, bn ং ঃ ঁ, mn Щщ. Never put a bare
-  foreign-script character in vocab if the voice cannot say it (Uzbek
-  Cyrillic letters live in notes instead).
+  NOT bugs): si ඞ ඣ ඦ, mn Щщ — those voices SKIP the glyph inside any
+  string (proven by trimmed speech-length measurement, Aug 2026; do not
+  re-investigate without a new voice). bn ং ঃ ঁ and my ဎ were fixed then
+  via `SPEAK_AS` in `generate_audio.py`: the clip stored under the letter's
+  key speaks the letter's NAME (অনুস্বার / বিসর্গ / চন্দ্রবিন্দু; ဎ =
+  "da ye-hmoke" spelled with the homophone ဒ, because the ဎ spelling gets
+  skipped). Never put a bare foreign-script character in vocab if the voice
+  cannot say it (Uzbek Cyrillic letters live in notes instead).
 - Audio dirs sit at the repo top level, next to the HTML.
 
 ## Validation (run before every commit)

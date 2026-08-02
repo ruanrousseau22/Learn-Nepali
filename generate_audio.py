@@ -141,6 +141,21 @@ LANGS = {
 }
 
 
+# Characters whose bare glyph the voice silently SKIPS (no audio at all).
+# Where the letter has a standard spoken name the voice can say, speak that
+# instead; the clip is still stored under the DISPLAY string's key, so the
+# app's manifest lookup is untouched. Proven by trimmed speech-length
+# measurement (Aug 2026): the bn sign names are fully spoken, and my ဎ's
+# traditional name "da ye-hmoke" works when spelled with the homophone ဒ
+# (the ဎ spelling gets skipped). si ඞ ඣ ඦ and mn Щщ remain IMPOSSIBLE —
+# those voices skip the glyph inside any string, so they keep device-TTS
+# fallback; do not re-investigate without a new voice.
+SPEAK_AS = {
+    "bn": {"ং": "অনুস্বার", "ঃ": "বিসর্গ", "ঁ": "চন্দ্রবিন্দু"},
+    "my": {"ဎ": "ဒရေမှုတ်"},
+}
+
+
 def fnv1a(s: str) -> str:
     h = 0x811C9DC5
     for b in s.encode("utf-8"):
@@ -194,7 +209,8 @@ async def main() -> int:
             skipped += 1
             keys.append(key)
             continue
-        ok = await synth(text, voice, args.rate, path)
+        spoken = SPEAK_AS.get(args.lang, {}).get(text, text)
+        ok = await synth(spoken, voice, args.rate, path)
         if ok:
             done += 1
             keys.append(key)

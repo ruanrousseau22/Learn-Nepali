@@ -2792,3 +2792,33 @@ script hashes them itself. **Defaults to the MALE voice** (`ne-NP-SagarNeural` /
   should read "Using recorded Nepali audio" (or "… Khmer audio" after switching
   language); tapping an alphabet letter plays the voice; sajilonepali.com still
   301s to bhasaly.com.
+
+## Alphabet audio audit (Aug 2026)
+
+A user report said "the alphabet audio sometimes isn't great". A sweep of
+all 505 letters across the 9 non-Latin packs (manifest membership + file
+presence + afinfo duration, flagging <0.35s / >5s / <800B) found exactly
+the 8 documented no-clip characters and nothing else — every other letter's
+clip was present and sane.
+
+Root-causing the 8 with **trimmed speech-length measurement** (decode to
+WAV, RMS envelope, span above 6% of peak — mp3 sizes/durations quantize to
+~0.19s frames and CANNOT distinguish "glyph spoken" from "glyph skipped";
+equal-size files with different md5s proved the size ties were codec
+artifacts, and a 4-syllable vs 2-syllable Bengali pair returning identical
+container durations proved the header duration lies too):
+
+- bn ং ঃ ঁ — the sign NAMES (অনুস্বার 490ms, বিসর্গ 640ms,
+  চন্দ্রবিন্দু 690ms) are fully spoken. FIXED with name clips.
+- my ဎ — the voice skips the glyph even inside its own name (ဎရေမှုတ် ==
+  ရေမှုတ် == 350ms), but the homophone spelling ဒရေမှုတ် adds real speech
+  (460ms) and says the letter's traditional name "da ye-hmoke". FIXED.
+- si ඞ ඣ ඦ — ඞයන්න == ඣයන්න == ඦයන්න == යන්න == 450ms: the voice skips
+  all three glyphs in any string. NOT fixable with si-LK-SameeraNeural.
+- mn Щщ — ща == а == 280ms: щ skipped everywhere. NOT fixable with
+  mn-MN-BataaNeural.
+
+Mechanism: `SPEAK_AS` map in `generate_audio.py` — synth speaks the mapped
+string but stores the clip under the DISPLAY string's key, so the app and
+the extractor are untouched and a from-scratch regeneration self-heals.
+Manifests now carry every string for bn (1426) and my (952).
