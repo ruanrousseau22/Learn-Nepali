@@ -100,12 +100,25 @@ footer a{color:var(--soft)}
 .hero-body{min-height:200px;padding:28px 18px 78px}
 .hero h1{font-size:clamp(30px,9vw,40px)}}
 
-.sub-hero{padding:40px 0 26px;border-bottom:1px solid var(--line)}
-.sub-hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
-line-height:1.06;margin:0 0 8px;letter-spacing:-.02em}
+/* slim scenery band, echoing the app's own sub-page band (.page-band) */
+.sub-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
+background:linear-gradient(180deg,var(--sky1),var(--sky2))}
+.sub-band-body{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}
+/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
+   title box is capped so a long h1 wraps instead of running into the art */
+.band-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}
+.band-title h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0;letter-spacing:-.02em}
 /* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
    without this the ur/ps native line drifts to the right edge, away from h1 */
-.sub-hero .nat{font-size:clamp(20px,4.5vw,26px);color:var(--saffron);margin:0 0 12px;text-align:left}
+.band-title .nat{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}
+.band-scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}
+.band-scene .far{fill:var(--mtn-far)} .band-scene .mid{fill:var(--mtn-mid)}
+.band-scene .near{fill:var(--mtn-near)} .band-scene .snow{fill:var(--snow)}
+.band-scene .orb{fill:var(--orb)} .band-scene .orb-glow{fill:var(--orb);opacity:.3}
+.band-scene .cloud{fill:rgba(255,255,255,.6)}
+@media(prefers-color-scheme:dark){.band-scene .cloud{fill:rgba(199,214,230,.12)}}
+.sub-hero{padding:26px 0 6px}
 .sub-hero p{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}
 .crumb{font-size:13.5px;color:var(--soft);margin:0 0 14px}
 .crumb a{color:var(--soft)}
@@ -122,11 +135,32 @@ font-size:14.5px;color:var(--ink)}
   <a class="hlink" href="/?lang=ne&amp;v=trip">Open Bhasaly &rarr;</a>
 </div></header>
 
-<main><div class="wrap">
+<main>
+<section class="sub-band">
+  <div class="sub-band-body">
+    <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-nepali">Learn Nepali</a> &rsaquo; Phrases</p>
+    <div class="band-title"><h1>Nepali phrases for a short visit</h1><span class="nat native" dir="auto">छोटो बसाइ</span></div>
+  </div>
+  <svg class="band-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
+      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
+      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
+      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
+        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+      </g>
+    </svg>
+</section>
+
+<div class="wrap">
 <section class="sub-hero">
-  <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-nepali">Learn Nepali</a> &rsaquo; Phrases</p>
-  <h1>Nepali phrases for a short visit</h1>
-  <p class="nat native" dir="auto">छोटो बसाइ</p>
   <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
   <a class="cta" href="/?lang=ne&amp;v=trip">Hear these phrases &rarr;</a>
 </section>

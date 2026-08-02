@@ -34,7 +34,8 @@ function run(){
           })
         };
       })(),
-      hero:(p.art&&p.art.hero)||''   /* '' for ne — its scenery is the built-in default */
+      hero:(p.art&&p.art.hero)||'',  /* '' for ne — its scenery is the built-in default */
+      band:(p.art&&p.art.band)||''   /* slim sub-page band, same convention */
     });
   });
   return JSON.stringify(out);

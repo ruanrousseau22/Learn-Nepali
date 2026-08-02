@@ -100,12 +100,25 @@ footer a{color:var(--soft)}
 .hero-body{min-height:200px;padding:28px 18px 78px}
 .hero h1{font-size:clamp(30px,9vw,40px)}}
 
-.sub-hero{padding:40px 0 26px;border-bottom:1px solid var(--line)}
-.sub-hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
-line-height:1.06;margin:0 0 8px;letter-spacing:-.02em}
+/* slim scenery band, echoing the app's own sub-page band (.page-band) */
+.sub-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
+background:linear-gradient(180deg,var(--sky1),var(--sky2))}
+.sub-band-body{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}
+/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
+   title box is capped so a long h1 wraps instead of running into the art */
+.band-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}
+.band-title h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0;letter-spacing:-.02em}
 /* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
    without this the ur/ps native line drifts to the right edge, away from h1 */
-.sub-hero .nat{font-size:clamp(20px,4.5vw,26px);color:var(--saffron);margin:0 0 12px;text-align:left}
+.band-title .nat{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}
+.band-scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}
+.band-scene .far{fill:var(--mtn-far)} .band-scene .mid{fill:var(--mtn-mid)}
+.band-scene .near{fill:var(--mtn-near)} .band-scene .snow{fill:var(--snow)}
+.band-scene .orb{fill:var(--orb)} .band-scene .orb-glow{fill:var(--orb);opacity:.3}
+.band-scene .cloud{fill:rgba(255,255,255,.6)}
+@media(prefers-color-scheme:dark){.band-scene .cloud{fill:rgba(199,214,230,.12)}}
+.sub-hero{padding:26px 0 6px}
 .sub-hero p{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}
 .crumb{font-size:13.5px;color:var(--soft);margin:0 0 14px}
 .crumb a{color:var(--soft)}
@@ -122,11 +135,17 @@ font-size:14.5px;color:var(--ink)}
   <a class="hlink" href="/?lang=si&amp;v=trip">Open Bhasaly &rarr;</a>
 </div></header>
 
-<main><div class="wrap">
+<main>
+<section class="sub-band">
+  <div class="sub-band-body">
+    <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-sinhala">Learn Sinhala</a> &rsaquo; Phrases</p>
+    <div class="band-title"><h1>Sinhala phrases for a short visit</h1><span class="nat native" dir="auto">කෙටි නවාතැන</span></div>
+  </div>
+  <svg class="band-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="orb-glow" cx="1046" cy="88" r="36"/><circle class="orb" cx="1046" cy="88" r="21"/><path class="far" d="M0 160 Q34 146 68 156 Q104 142 140 154 Q176 144 212 156 Q248 142 284 154 Q320 144 356 156 Q392 142 428 154 Q464 144 500 156 Q536 142 572 154 Q608 144 644 156 Q680 142 716 154 Q752 144 788 156 Q824 142 860 154 Q896 144 932 156 Q968 142 1004 154 Q1040 144 1076 156 Q1112 142 1148 154 Q1176 148 1200 154 L1200 200 L0 200 Z"/><path class="mid" d="M0 200 L0 180 Q300 174 600 180 Q900 185 1200 178 L1200 200 Z"/><g class="near"><path d="M0 200 L0 190 Q300 183 600 190 Q900 196 1200 190 L1200 200 Z"/></g><g transform="translate(300,142) scale(0.5)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g><g transform="translate(660,146) scale(0.44)" aria-hidden="true"><path fill="var(--bark)" d="M0 98 C6 60 0 28 10 0 L17 2 C7 30 14 62 8 100 Z"/><g class="near"><path d="M13 0 C-8 -14 -32 -17 -51 -9 C-30 -10 -8 -4 10 5 Z M13 0 C32 -16 56 -20 76 -13 C56 -11 34 -4 16 5 Z M13 0 C4 -20 -11 -31 -31 -33 C-11 -24 2 -13 10 2 Z M13 0 C22 -20 37 -31 57 -33 C37 -24 24 -13 16 2 Z M13 0 C11 -22 3 -38 -11 -47 C1 -34 8 -18 10 0 Z"/></g></g><g fill="var(--bark)" aria-hidden="true"><path d="M1122 192 C1126 168 1122 148 1128 130 L1133 131 C1127 150 1132 170 1128 194 Z"/></g><g class="near"><path d="M1130 130 C1116 120 1100 118 1087 123 C1101 123 1116 127 1128 134 Z M1130 130 C1143 119 1159 116 1172 121 C1159 123 1144 128 1132 134 Z M1130 130 C1124 117 1115 109 1102 107 C1115 113 1124 121 1128 131 Z M1130 130 C1136 117 1145 109 1158 107 C1146 113 1137 121 1132 131 Z"/></g><g transform="translate(928,148) scale(0.6)" aria-hidden="true"><g fill="var(--slate)"><path d="M26 86 L26 48 Q26 42 37 42 L47 42 Q58 42 58 48 L58 86 Z"/><path d="M62 86 L62 48 Q62 42 73 42 L83 42 Q94 42 94 48 L94 86 Z"/><path d="M100 86 L100 48 Q100 42 111 42 L121 42 Q132 42 132 48 L132 86 Z"/><ellipse cx="62" cy="36" rx="52" ry="27"/><ellipse cx="118" cy="42" rx="23" ry="22"/><path d="M140 50 Q157 66 155 84 Q154 94 143 93 Q134 92 137 83 Q143 71 132 59 Z"/><path d="M12 28 Q1 41 4 58 L10 57 Q7 43 16 33 Z"/><ellipse cx="6" cy="60" rx="4.5" ry="6.5"/></g><ellipse fill="var(--tyre)" opacity=".2" cx="110" cy="34" rx="16" ry="19"/><circle fill="var(--tyre)" opacity=".65" cx="132" cy="35" r="2.2"/></g></svg>
+</section>
+
+<div class="wrap">
 <section class="sub-hero">
-  <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-sinhala">Learn Sinhala</a> &rsaquo; Phrases</p>
-  <h1>Sinhala phrases for a short visit</h1>
-  <p class="nat native" dir="auto">කෙටි නවාතැන</p>
   <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
   <a class="cta" href="/?lang=si&amp;v=trip">Hear these phrases &rarr;</a>
 </section>

@@ -100,12 +100,25 @@ footer a{color:var(--soft)}
 .hero-body{min-height:200px;padding:28px 18px 78px}
 .hero h1{font-size:clamp(30px,9vw,40px)}}
 
-.sub-hero{padding:40px 0 26px;border-bottom:1px solid var(--line)}
-.sub-hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
-line-height:1.06;margin:0 0 8px;letter-spacing:-.02em}
+/* slim scenery band, echoing the app's own sub-page band (.page-band) */
+.sub-band{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
+background:linear-gradient(180deg,var(--sky1),var(--sky2))}
+.sub-band-body{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}
+/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
+   title box is capped so a long h1 wraps instead of running into the art */
+.band-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}
+.band-title h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0;letter-spacing:-.02em}
 /* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
    without this the ur/ps native line drifts to the right edge, away from h1 */
-.sub-hero .nat{font-size:clamp(20px,4.5vw,26px);color:var(--saffron);margin:0 0 12px;text-align:left}
+.band-title .nat{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}
+.band-scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}
+.band-scene .far{fill:var(--mtn-far)} .band-scene .mid{fill:var(--mtn-mid)}
+.band-scene .near{fill:var(--mtn-near)} .band-scene .snow{fill:var(--snow)}
+.band-scene .orb{fill:var(--orb)} .band-scene .orb-glow{fill:var(--orb);opacity:.3}
+.band-scene .cloud{fill:rgba(255,255,255,.6)}
+@media(prefers-color-scheme:dark){.band-scene .cloud{fill:rgba(199,214,230,.12)}}
+.sub-hero{padding:26px 0 6px}
 .sub-hero p{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}
 .crumb{font-size:13.5px;color:var(--soft);margin:0 0 14px}
 .crumb a{color:var(--soft)}
@@ -122,11 +135,17 @@ font-size:14.5px;color:var(--ink)}
   <a class="hlink" href="/?lang=uz&amp;v=trip">Open Bhasaly &rarr;</a>
 </div></header>
 
-<main><div class="wrap">
+<main>
+<section class="sub-band">
+  <div class="sub-band-body">
+    <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-uzbek">Learn Uzbek</a> &rsaquo; Phrases</p>
+    <div class="band-title"><h1>Uzbek phrases for a short visit</h1><span class="nat native" dir="auto">Qisqa safar</span></div>
+  </div>
+  <svg class="band-scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="orb-glow" cx="1046" cy="58" r="34"/><circle class="orb" cx="1046" cy="58" r="20"/><path class="far" d="M0 154 Q140 148 280 152 Q420 156 540 144 Q660 132 780 142 Q900 152 1010 134 Q1110 120 1200 130 L1200 200 L0 200 Z"/><path class="mid" d="M0 200 L0 180 Q140 168 300 162 Q460 156 620 166 Q780 176 940 166 Q1080 158 1200 164 L1200 200 Z"/><path class="snow" opacity=".18" d="M30 176 Q150 165 270 160 L272 165 Q152 170 34 181 Z"/><g class="near"><path d="M0 200 L0 186 Q150 178 320 183 Q490 188 660 181 Q830 174 1000 180 Q1110 183 1200 179 L1200 200 Z"/></g><g transform="translate(236,184) scale(0.42)" aria-hidden="true"><circle cx="16" cy="-8" r="8" fill="var(--tyre)"/><circle cx="16" cy="-8" r="3" fill="var(--wood)"/><circle cx="48" cy="-8" r="8" fill="var(--tyre)"/><circle cx="48" cy="-8" r="3" fill="var(--wood)"/><path fill="var(--wood)" d="M2 -16 L64 -16 L64 -22 L2 -22 Z"/><path fill="var(--wood)" d="M2 -22 L6 -22 L6 -34 L2 -34 Z M60 -22 L64 -22 L64 -34 L60 -34 Z"/><ellipse cx="18" cy="-27" rx="10" ry="7" fill="var(--melon)"/><ellipse cx="36" cy="-28" rx="10" ry="7" fill="var(--melon)"/><ellipse cx="52" cy="-27" rx="9" ry="6.5" fill="var(--melon)"/><ellipse cx="27" cy="-35" rx="9" ry="6.5" fill="var(--melon)"/><path stroke="var(--tyre)" stroke-width="1.1" fill="none" opacity=".45" d="M12 -30 Q18 -22 24 -30 M30 -31 Q36 -23 42 -31 M22 -38 Q27 -30 32 -38"/></g><g transform="translate(700,182) scale(0.44)" aria-hidden="true"><path fill="var(--tyre)" d="M10 0 L10 -17 L13.6 -17 L13.6 0 Z M20 0 L20 -17 L23.6 -17 L23.6 0 Z M38 0 L38 -17 L41.6 -17 L41.6 0 Z M46 0 L46 -17 L49.6 -17 L49.6 0 Z"/><path fill="var(--hide)" d="M6 -17 C4 -30 14 -34 30 -34 C46 -34 56 -30 54 -17 Z"/><path fill="var(--hide)" d="M15 -32 C15 -45 30 -45 30 -32 Z"/><path fill="var(--hide)" d="M33 -32 C33 -47 48 -47 48 -32 Z"/><path fill="var(--hide)" d="M8 -30 L1 -47 L10 -50 L17 -32 Z"/><path fill="var(--hide)" d="M-3 -50 C-7 -54 -1 -60 6 -58 L13 -52 L7 -46 Z"/><path fill="var(--hide)" d="M54 -22 L60 -30 L62 -27 L57 -19 Z"/><circle cx="1" cy="-54" r="1.4" fill="var(--tyre)"/></g><g transform="translate(764,180) scale(0.38)" aria-hidden="true"><path fill="var(--tyre)" d="M10 0 L10 -17 L13.6 -17 L13.6 0 Z M20 0 L20 -17 L23.6 -17 L23.6 0 Z M38 0 L38 -17 L41.6 -17 L41.6 0 Z M46 0 L46 -17 L49.6 -17 L49.6 0 Z"/><path fill="var(--hide)" d="M6 -17 C4 -30 14 -34 30 -34 C46 -34 56 -30 54 -17 Z"/><path fill="var(--hide)" d="M15 -32 C15 -45 30 -45 30 -32 Z"/><path fill="var(--hide)" d="M33 -32 C33 -47 48 -47 48 -32 Z"/><path fill="var(--hide)" d="M8 -30 L1 -47 L10 -50 L17 -32 Z"/><path fill="var(--hide)" d="M-3 -50 C-7 -54 -1 -60 6 -58 L13 -52 L7 -46 Z"/><path fill="var(--hide)" d="M54 -22 L60 -30 L62 -27 L57 -19 Z"/><circle cx="1" cy="-54" r="1.4" fill="var(--tyre)"/></g><g transform="translate(430,183) scale(0.38)" aria-hidden="true"><path fill="var(--bark)" d="M-2.6 0 C-2 -12 -3 -22 -2 -30 L3 -30 C4 -22 3 -12 3.6 0 Z"/><circle cx="0" cy="-40" r="15" fill="var(--tree)"/><circle cx="-13" cy="-32" r="10" fill="var(--tree)"/><circle cx="13" cy="-32" r="10" fill="var(--tree)"/></g></svg>
+</section>
+
+<div class="wrap">
 <section class="sub-hero">
-  <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-uzbek">Learn Uzbek</a> &rsaquo; Phrases</p>
-  <h1>Uzbek phrases for a short visit</h1>
-  <p class="nat native" dir="auto">Qisqa safar</p>
   <p>The lines a visitor actually uses, and the ones you will hear back. Romanized first so you can say them today. Every phrase is recorded — open it in Bhasaly to hear it.</p>
   <a class="cta" href="/?lang=uz&amp;v=trip">Hear these phrases &rarr;</a>
 </section>

@@ -142,8 +142,9 @@ def _decls(block):
 
 
 def scene_assets(index_html):
-    """Return (palettes, ne_hero_inner). palettes[code] = CSS setting the scene
-    vars for light + dark, including the per-language data-lang override."""
+    """Return (palettes, ne_hero_inner, ne_band_inner). palettes[code] = CSS
+    setting the scene vars for light + dark, including the per-language
+    data-lang override."""
     base_light = _decls(re.search(r':root\{([^}]*)\}', index_html).group(1))
     base_dark = _decls(re.search(r'\[data-theme="dark"\]\{([^}]*)\}', index_html).group(1))
     palettes = {}
@@ -161,7 +162,10 @@ def scene_assets(index_html):
     seg = index_html[index_html.find('id="view-home"'):]
     i = seg.find('<svg class="hero-mtns"'); i = seg.find('>', i) + 1
     ne_hero = seg[i:seg.find('</svg>', i)]
-    return palettes, ne_hero
+    # the Nepali default sub-page band (all six copies are verbatim — take the first)
+    j = index_html.find('<svg class="pb-mtns"'); j = index_html.find('>', j) + 1
+    ne_band = index_html[j:index_html.find('</svg>', j)]
+    return palettes, ne_hero, ne_band
 
 
 def page(d, others, palette_css, ne_hero):
@@ -458,12 +462,25 @@ SUB_TEMPLATE = """<!doctype html>
 <script type="application/ld+json">{jsonld}</script>
 <style>
 {css}
-.sub-hero{{padding:40px 0 26px;border-bottom:1px solid var(--line)}}
-.sub-hero h1{{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
-line-height:1.06;margin:0 0 8px;letter-spacing:-.02em}}
+/* slim scenery band, echoing the app's own sub-page band (.page-band) */
+.sub-band{{position:relative;overflow:hidden;border-radius:0 0 26px 26px;
+background:linear-gradient(180deg,var(--sky1),var(--sky2))}}
+.sub-band-body{{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:24px 20px 84px}}
+/* the band art keeps its tall pieces right of x≈770/1200, like the app; the
+   title box is capped so a long h1 wraps instead of running into the art */
+.band-title{{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;max-width:620px}}
+.band-title h1{{font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,6vw,44px);
+line-height:1.06;margin:0;letter-spacing:-.02em}}
 /* dir="rtl" is kept for correct shaping, but this is a left-aligned layout —
    without this the ur/ps native line drifts to the right edge, away from h1 */
-.sub-hero .nat{{font-size:clamp(20px,4.5vw,26px);color:var(--saffron);margin:0 0 12px;text-align:left}}
+.band-title .nat{{font-size:clamp(20px,4.5vw,28px);color:var(--crimson);font-weight:500;text-align:left}}
+.band-scene{{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;z-index:1;display:block}}
+.band-scene .far{{fill:var(--mtn-far)}} .band-scene .mid{{fill:var(--mtn-mid)}}
+.band-scene .near{{fill:var(--mtn-near)}} .band-scene .snow{{fill:var(--snow)}}
+.band-scene .orb{{fill:var(--orb)}} .band-scene .orb-glow{{fill:var(--orb);opacity:.3}}
+.band-scene .cloud{{fill:rgba(255,255,255,.6)}}
+@media(prefers-color-scheme:dark){{.band-scene .cloud{{fill:rgba(199,214,230,.12)}}}}
+.sub-hero{{padding:26px 0 6px}}
 .sub-hero p{{font-size:16.5px;color:var(--soft);margin:0 0 20px;max-width:620px}}
 .crumb{{font-size:13.5px;color:var(--soft);margin:0 0 14px}}
 .crumb a{{color:var(--soft)}}
@@ -480,11 +497,17 @@ font-size:14.5px;color:var(--ink)}}
   <a class="hlink" href="{applink}">Open Bhasaly &rarr;</a>
 </div></header>
 
-<main><div class="wrap">
+<main>
+<section class="sub-band">
+  <div class="sub-band-body">
+    <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-{slug}">Learn {name}</a> &rsaquo; {crumb}</p>
+    <div class="band-title"><h1>{h1}</h1><span class="nat {ncls}"{dir_attr}>{native}</span></div>
+  </div>
+  {band_scene}
+</section>
+
+<div class="wrap">
 <section class="sub-hero">
-  <p class="crumb"><a href="/">Bhasaly</a> &rsaquo; <a href="/learn-{slug}">Learn {name}</a> &rsaquo; {crumb}</p>
-  <h1>{h1}</h1>
-  <p class="nat {ncls}"{dir_attr}>{native}</p>
   <p>{intro}</p>
   <a class="cta" href="{applink}">{cta}</a>
 </section>
@@ -529,12 +552,16 @@ def sub_jsonld(name, url, crumb_name, slug, faq=None):
     return json.dumps(out, ensure_ascii=False, separators=(',', ':'))
 
 
-def sub_shell(d, others, palette_css, **kw):
+def sub_shell(d, others, palette_css, ne_band, **kw):
     """Common wiring for both sub-page types."""
     code = d['code']
     nat_fam, nat_lh = native_css(code)
+    band_scene = ('<svg class="band-scene" viewBox="0 0 1200 200" '
+                  'preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" '
+                  'aria-hidden="true">%s</svg>' % (d.get('band') or ne_band))
     return SUB_TEMPLATE.format(
         css=CSS.format(palette=palette_css, natfam=nat_fam, natlh=nat_lh),
+        band_scene=band_scene,
         fontlink=esc(font_link(code)),
         slug=SLUG[code], name=esc(d['name']), code=code,
         ncls="native", dir_attr=(' dir="rtl"' if code in RTL else ' dir="auto"'),
@@ -543,7 +570,7 @@ def sub_shell(d, others, palette_css, **kw):
         year=datetime.date.today().year, **kw)
 
 
-def alphabet_page(d, others, palette_css):
+def alphabet_page(d, others, palette_css, ne_band):
     code, name = d['code'], d['name']
     slug = SLUG[code]
     sname = SCRIPT_NAME.get(code, name + ' script')
@@ -599,7 +626,7 @@ def alphabet_page(d, others, palette_css):
             for q, a in faq))
 
     return sub_shell(
-        d, others, palette_css,
+        d, others, palette_css, ne_band,
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
         applink="/?lang=%s&amp;v=alphabet" % code,
         crumb="Alphabet", h1="The %s alphabet" % esc(name), native=esc(d['nativeName']),
@@ -609,7 +636,7 @@ def alphabet_page(d, others, palette_css):
         jsonld=sub_jsonld(name, url, "%s alphabet" % name, slug, faq))
 
 
-def phrases_page(d, others, palette_css):
+def phrases_page(d, others, palette_css, ne_band):
     code, name = d['code'], d['name']
     slug, t = SLUG[code], d['trip']
     url = "%s/%s-phrases" % (ORIGIN, slug)
@@ -662,7 +689,7 @@ def phrases_page(d, others, palette_css):
                      % (esc(q), esc(a)) for q, a in faq))
 
     return sub_shell(
-        d, others, palette_css,
+        d, others, palette_css, ne_band,
         title=esc(title), desc=esc(desc), kw=esc(kw), url=esc(url),
         applink="/?lang=%s&amp;v=trip" % code,
         crumb="Phrases", h1="%s phrases for a short visit" % esc(name),
@@ -750,7 +777,7 @@ def main():
         ['osascript', '-l', 'JavaScript', 'landing_data.js']).decode('utf-8')
     langs = json.loads(raw)
     index_html = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
-    palettes, ne_hero = scene_assets(index_html)
+    palettes, ne_hero, ne_band = scene_assets(index_html)
     # the app itself is the content behind "/" — its own bytes date that URL
     pages = [(ORIGIN + '/', index_html, 'index.html')]
     for d in langs:
@@ -765,7 +792,7 @@ def main():
         # /<slug>-alphabet — skipped for Latin packs (uz, jv): a chart of the
         # Latin letters teaches nothing and would be a thin page.
         if not d['latin'] and (d['vowels'] or d['cons']):
-            sub = alphabet_page(d, others, palettes[d['code']])
+            sub = alphabet_page(d, others, palettes[d['code']], ne_band)
             sfn = '%s-alphabet.html' % slug
             with open(os.path.join(ROOT, sfn), 'w', encoding='utf-8') as f:
                 f.write(sub)
@@ -773,7 +800,7 @@ def main():
 
         # /<slug>-phrases — every pack ships a trip phrasebook
         if d.get('trip') and d['trip']['sections']:
-            sub = phrases_page(d, others, palettes[d['code']])
+            sub = phrases_page(d, others, palettes[d['code']], ne_band)
             sfn = '%s-phrases.html' % slug
             with open(os.path.join(ROOT, sfn), 'w', encoding='utf-8') as f:
                 f.write(sub)
