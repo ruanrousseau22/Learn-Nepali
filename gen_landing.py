@@ -177,9 +177,11 @@ def page(d, others, palette_css, ne_hero):
     ncls = "native"
     url = "%s/learn-%s" % (ORIGIN, slug)
     title = "Learn %s — Lessons, Alphabet & Audio | Bhasaly" % name
-    desc = ("Learn %s with Bhasaly: %d short lessons across %d levels, the alphabet, "
-            "recorded audio, and the essential words and phrases — greetings, numbers and "
-            "more. Works on any phone or computer." % (name, d['lessons'], d['zones']))
+    # SERPs cut descriptions at ~160 chars — every variant below stays under
+    alpha_bit = "" if d['latin'] else "the alphabet, "
+    desc = ("Learn %s with Bhasaly: %d short lessons across %d levels, %srecorded "
+            "audio and real phrases. No account needed — works on any phone."
+            % (name, d['lessons'], d['zones'], alpha_bit))
     kw = ("learn %s, %s for beginners, %s alphabet, %s phrases, %s words, speak %s, "
           "%s course, %s lessons" % ((name,) * 8)).lower()
 
@@ -251,8 +253,10 @@ def page(d, others, palette_css, ne_hero):
 
 # Shared page CSS. Rendered once via CSS.format(...) and injected as {css};
 # .format() does not rescan substituted values, so the CSS braces are safe.
+# Light --saffron is darker than the app's (#C67911): the rom column is body
+# text here and #9C5E0D is the lightest shade giving 4.5:1 on --paper.
 CSS = """:root{{--paper:#EFF4FB;--paper2:#E0EAF6;--ink:#1B2430;--soft:#5B6B7D;--crimson:#C2362E;
---saffron:#C67911;--saffron-soft:#FCEBCC;--teal:#0F8C74;--line:rgba(27,36,48,.10);--card:#fff;--tree:#2C5F3A;
+--saffron:#9C5E0D;--saffron-soft:#FCEBCC;--teal:#0F8C74;--line:rgba(27,36,48,.10);--card:#fff;--tree:#2C5F3A;
 --r:14px;--shadow:0 1px 2px rgba(27,36,48,.05),0 10px 26px -16px rgba(20,40,80,.30)}}
 @media(prefers-color-scheme:dark){{:root{{--paper:#0F1419;--paper2:#19222C;--ink:#E9F0F7;--soft:#93A5B7;
 --crimson:#E8836A;--saffron:#E7AD5E;--saffron-soft:#332A1C;--teal:#5FC6B0;--line:rgba(233,240,247,.12);
@@ -576,7 +580,7 @@ def alphabet_page(d, others, palette_css, ne_band):
     sname = SCRIPT_NAME.get(code, name + ' script')
     url = "%s/%s-alphabet" % (ORIGIN, slug)
     nv, nc, nn = len(d['vowels']), len(d['cons']), len(d['nums'])
-    title = "%s Alphabet — All %d Letters with Sounds & Audio | Bhasaly" % (name, nv + nc)
+    title = "%s Alphabet — All %d Letters with Audio | Bhasaly" % (name, nv + nc)
     desc = ("The complete %s alphabet: %d vowels and %d consonants with romanization, "
             "plus the %s numerals 0-9. Tap any letter in Bhasaly to hear it pronounced."
             % (name, nv, nc, name))
@@ -642,7 +646,7 @@ def phrases_page(d, others, palette_css, ne_band):
     url = "%s/%s-phrases" % (ORIGIN, slug)
     dir_attr = ' dir="rtl"' if code in RTL else ' dir="auto"'
     total = sum(len(s['lines']) for s in t['sections'])
-    title = "%s Phrases for Travellers — %d Useful Lines with Audio | Bhasaly" % (name, total)
+    title = "%s Phrases for Travellers — %d Useful Lines | Bhasaly" % (name, total)
     desc = ("%d %s phrases a visitor actually needs — greetings, food, prices, directions "
             "and the replies you will hear back. Romanized, with recorded audio."
             % (total, name))
