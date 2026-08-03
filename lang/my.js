@@ -11,7 +11,7 @@
      has few word-spaces — the app never asks you to type it (tap-only). */
 
 const MY_UNITS=[
-  {n:1,t:'The Script',d:'မြန်မာအက္ခရာ — read & sound out Burmese',lessons:['my_c1','my_c1_2','my_c1_3','my_c1_4','my_c1_5','my_c2','my_c2_2','my_c2_3','my_c2_4','my_c2_5','my_c3','my_c3_2','my_c3_3','my_c3_4','my_c3_5','my_c4','my_c4_2','my_c4_3','my_c4_4','my_c4_5','my_c5','my_c5_2','my_c5_3','my_c5_4','my_c5_5','my_v1','my_v1_2','my_v1_3','my_v1_4','my_v1_5','my_v2','my_v2_2','my_v2_3','my_v2_4','my_v2_5']},
+  {n:1,t:'The Script',d:'Speak on day one, then read & sound out မြန်မာအက္ခရာ',lessons:['my_hello','my_hello_2','my_hello_3','my_hello_4','my_hello_5','my_c1','my_c1_2','my_c1_3','my_c1_4','my_c1_5','my_c2','my_c2_2','my_c2_3','my_c2_4','my_c2_5','my_c3','my_c3_2','my_c3_3','my_c3_4','my_c3_5','my_c4','my_c4_2','my_c4_3','my_c4_4','my_c4_5','my_c5','my_c5_2','my_c5_3','my_c5_4','my_c5_5','my_v1','my_v1_2','my_v1_3','my_v1_4','my_v1_5','my_v2','my_v2_2','my_v2_3','my_v2_4','my_v2_5']},
   {n:2,t:'Foundations',d:'Greetings, people, numbers & your day',lessons:['my_greet','my_greet_2','my_greet_3','my_greet_4','my_greet_5','my_pron','my_pron_2','my_pron_3','my_pron_4','my_pron_5','my_num1','my_num1_2','my_num1_3','my_num1_4','my_num1_5','my_num2','my_num2_2','my_num2_3','my_num2_4','my_num2_5','my_court','my_court_2','my_court_3','my_court_4','my_court_5','my_intro','my_intro_2','my_intro_3','my_intro_4','my_intro_5','my_day','my_day_2','my_day_3','my_day_4','my_day_5']},
   {n:3,t:'Say a sentence',d:'The sentence engine — verbs, no & questions',lessons:['my_this','my_this_2','my_this_3','my_this_4','my_this_5','my_verb','my_verb_2','my_verb_3','my_verb_4','my_verb_5','my_fut','my_fut_2','my_fut_3','my_fut_4','my_fut_5','my_neg','my_neg_2','my_neg_3','my_neg_4','my_neg_5','my_yn','my_yn_2','my_yn_3','my_yn_4','my_yn_5','my_wh','my_wh_2','my_wh_3','my_wh_4','my_wh_5','my_want','my_want_2','my_want_3','my_want_4','my_want_5']},
   {n:4,t:'Where & with',d:'The little particles မှာ ကို က နဲ့ & real life',lessons:['my_hma','my_hma_2','my_hma_3','my_hma_4','my_hma_5','my_ko','my_ko_2','my_ko_3','my_ko_4','my_ko_5','my_ka','my_ka_2','my_ka_3','my_ka_4','my_ka_5','my_neh','my_neh_2','my_neh_3','my_neh_4','my_neh_5','my_kin','my_kin_2','my_kin_3','my_kin_4','my_kin_5','my_food','my_food_2','my_food_3','my_food_4','my_food_5','my_shop','my_shop_2','my_shop_3','my_shop_4','my_shop_5']},
@@ -25,7 +25,7 @@ const MY_UNITS=[
   {n:12,t:'Make Myanmar home',d:'Lakhs, errands, guests, fruit & the polite polish',lessons:['my_lakh','my_lakh_2','my_lakh_3','my_lakh_4','my_lakh_5','my_ord','my_ord_2','my_ord_3','my_ord_4','my_ord_5','my_errand','my_errand_2','my_errand_3','my_errand_4','my_errand_5','my_feel2','my_feel2_2','my_feel2_3','my_feel2_4','my_feel2_5','my_visit','my_visit_2','my_visit_3','my_visit_4','my_visit_5','my_fruit','my_fruit_2','my_fruit_3','my_fruit_4','my_fruit_5','my_cap','my_cap_2','my_cap_3','my_cap_4','my_cap_5']},
 ];
 
-const MY_SYM={my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်',my_clf:'ယောက်',my_hownum:'ဘယ်နှ',my_money:'ကျပ်',my_bignum:'ထောင်',my_buy:'ဝယ်',my_time:'နာရီ',my_days:'စနေ',my_adj:'ကြီး',my_taste:'ပူ',my_color:'အနီ',my_cmp:'ပို',my_feel:'ပျော်',my_wx:'မိုး',my_body:'ဆေး',my_past:'ခဲ့',my_prog:'နေတယ်',my_ever:'ဖူး',my_pri:'ပြီ',my_can:'နိုင်',my_must:'ရမယ်',my_req:'ပါ',my_go:'ကား',my_dir:'ညာ',my_farnear:'ဝေး',my_tik:'ဘူတာ',my_hotel:'အခန်း',my_month:'လ',my_phone:'ဖုန်း',my_conj:'လို့',my_if:'ရင်',my_think:'ထင်',my_job:'အလုပ်',my_hobby:'ဘောလုံး',my_home:'အိမ်',my_help:'ကူညီ',my_deg:'အရမ်း',my_fam2:'အမေ',my_age:'အသက်',my_yet:'သေး',my_lang:'စကား',my_now:'အခု',my_story:'အရင်',my_need:'လို',my_manner:'မြန်',my_wear:'ဝတ်',my_animal:'ခွေး',my_nature:'တောင်',my_mem:'မေ့',my_together:'အတူ',my_lakh:'သိန်း',my_ord:'ပထမ',my_errand:'ဘဏ်',my_feel2:'စိတ်',my_visit:'ဧည့်',my_fruit:'သီး',my_cap:'နော်'};
+const MY_SYM={my_hello:'မင်္ဂလာ',my_c1:'က',my_c2:'စ',my_c3:'တ',my_c4:'ပ',my_c5:'သ',my_v1:'ကာ',my_v2:'ရေ',my_greet:'နေ',my_pron:'သူ',my_num1:'၅',my_num2:'၂၀',my_court:'ဟုတ်',my_intro:'နာမည်',my_day:'မနက်',my_this:'ဒါ',my_verb:'တယ်',my_fut:'မယ်',my_neg:'ဘူး',my_yn:'လား',my_wh:'လဲ',my_want:'ချင်',my_hma:'မှာ',my_ko:'ကို',my_ka:'ဘယ်က',my_neh:'နဲ့',my_kin:'ဦး',my_food:'ဟင်း',my_shop:'ဆိုင်',my_clf:'ယောက်',my_hownum:'ဘယ်နှ',my_money:'ကျပ်',my_bignum:'ထောင်',my_buy:'ဝယ်',my_time:'နာရီ',my_days:'စနေ',my_adj:'ကြီး',my_taste:'ပူ',my_color:'အနီ',my_cmp:'ပို',my_feel:'ပျော်',my_wx:'မိုး',my_body:'ဆေး',my_past:'ခဲ့',my_prog:'နေတယ်',my_ever:'ဖူး',my_pri:'ပြီ',my_can:'နိုင်',my_must:'ရမယ်',my_req:'ပါ',my_go:'ကား',my_dir:'ညာ',my_farnear:'ဝေး',my_tik:'ဘူတာ',my_hotel:'အခန်း',my_month:'လ',my_phone:'ဖုန်း',my_conj:'လို့',my_if:'ရင်',my_think:'ထင်',my_job:'အလုပ်',my_hobby:'ဘောလုံး',my_home:'အိမ်',my_help:'ကူညီ',my_deg:'အရမ်း',my_fam2:'အမေ',my_age:'အသက်',my_yet:'သေး',my_lang:'စကား',my_now:'အခု',my_story:'အရင်',my_need:'လို',my_manner:'မြန်',my_wear:'ဝတ်',my_animal:'ခွေး',my_nature:'တောင်',my_mem:'မေ့',my_together:'အတူ',my_lakh:'သိန်း',my_ord:'ပထမ',my_errand:'ဘဏ်',my_feel2:'စိတ်',my_visit:'ဧည့်',my_fruit:'သီး',my_cap:'နော်'};
 
 const MY_VOWELS=[['အာ','aa'],['အိ','i'],['အီ','ii'],['အု','u'],['အူ','uu'],['အေ','e'],['အဲ','eh'],['အော','aw'],['အို','o'],['အံ','an']];
 /* full traditional 33 for the Alphabet reference. Several are rare Pali-only
@@ -38,6 +38,48 @@ const MY_SRS_SEED=[['မင်္ဂလာပါ','Mingalaba','Hello'],['ကျ�
 
 const MY_LESSONS=[
 /* ===================== ZONE 1 · THE SCRIPT ===================== */
+/* --- Topic 0: speak on day one (ears only — no reading required; every
+       spoken string here is already recorded for the greetings/courtesy
+       topics, so this topic is audio-neutral by construction) --- */
+{id:'my_hello',title:'Say hello first',step:'learn',meta:'မင်္ဂလာပါ — speak before you read',vocab:[['မင်္ဂလာပါ','Mingalaba','Hello'],['ကျေးဇူးတင်ပါတယ်','Kyeizu tin ba de','Thank you']],ex:[
+{t:'note',tag:'Start here',q:'Speak on day one',body:'<p>You will start reading Burmese in the very next topic — but you should not have to wait to <b>say</b> something. This topic works entirely <b>by ear</b>: tap the speaker, listen, copy out loud.</p><p>The Roman letters underneath are a <b>pronunciation guide</b>, not spelling. Don’t study the Burmese script yet — just let it wash over you.</p>',tip:'Say every phrase out loud. Nobody is listening, and your mouth learns faster than your eyes.'},
+{t:'note',tag:'The famous hello',q:'မင်္ဂလာပါ — mingalaba',body:'<p><span class="deva">မင်္ဂလာပါ</span> — <b>mingalaba</b> — is the polite hello every visitor to Myanmar learns, good at any time of day.</p><p>Between friends the street greeting is often just <i>have you eaten?</i> — you will learn that later. Mingalaba is never wrong for a visitor.</p>',eg:[['မင်္ဂလာပါ','mingalaba','hello']]},
+{t:'mc',q:'Listen — what did they say?',d:'မင်္ဂလာပါ',o:['Hello','Thank you','Yes','No'],a:0},
+{t:'note',tag:'Gratitude',q:'ကျေးဇူးတင်ပါတယ် — kyeizu tin ba de',body:'<p><span class="deva">ကျေးဇူးတင်ပါတယ်</span> — <b>kyeizu tin ba de</b> — is <b>thank you</b>. It is a long word with a sing-song rhythm: <b>KYEI-zu tin-ba-DE</b>.</p><p>Play it a few times and copy the melody. The letters can wait.</p>',eg:[['ကျေးဇူးတင်ပါတယ်','kyeizu tin ba de','thank you']]},
+{t:'mc',q:'Listen — what did they say?',d:'ကျေးဇူးတင်ပါတယ်',o:['Thank you','Hello','No','Yes'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'မင်္ဂလာပါ',o:['Hello','Thank you','Yes','No'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ကျေးဇူးတင်ပါတယ်',o:['Thank you','Hello','Yes','No'],a:0}]},
+{id:'my_hello_2',title:'Yes & no',step:'recognize',meta:'ဟုတ်ကဲ့ · မဟုတ်ဘူး',vocab:[['ဟုတ်ကဲ့','Houq keh','Yes'],['မဟုတ်ဘူး','Mahouq bu','No']],ex:[
+{t:'note',tag:'Yes',q:'ဟုတ်ကဲ့ — houq keh',body:'<p><span class="deva">ဟုတ်ကဲ့</span> — <b>houq keh</b> — is the polite <b>yes</b>, literally “that’s right”.</p><p>The little catch in <b>houq</b> is a real Burmese sound: a short stop, like the break in “uh-oh”. Listen for it.</p>',eg:[['ဟုတ်ကဲ့','houq keh','yes']]},
+{t:'mc',q:'Listen — what did they say?',d:'ဟုတ်ကဲ့',o:['Yes','No','Hello','Thank you'],a:0},
+{t:'note',tag:'No',q:'မဟုတ်ဘူး — mahouq bu',body:'<p><span class="deva">မဟုတ်ဘူး</span> — <b>mahouq bu</b> — is <b>no / that’s not right</b>.</p><p>Hear the pattern: <b>ma…bu</b> wraps around <b>houq</b> (“be right”) — <i>not-right</i>. That ma…bu wrapper is how Burmese says no to almost anything, and you will meet it again with whole sentences.</p>',eg:[['မဟုတ်ဘူး','mahouq bu','no']]},
+{t:'mc',q:'Listen — what did they say?',d:'မဟုတ်ဘူး',o:['No','Yes','Hello','Thank you'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ဟုတ်ကဲ့',o:['Yes','No','Thank you','Hello'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'မဟုတ်ဘူး',o:['No','Yes','Hello','Thank you'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'မင်္ဂလာပါ',o:['Hello','Yes','No','Thank you'],a:0}]},
+{id:'my_hello_3',title:'When to say it',step:'build',meta:'The right phrase at the right moment',vocab:[],ex:[
+{t:'mc',q:'A shopkeeper smiles and greets you. You say…',o:['Mingalaba','Kyeizu tin ba de','Houq keh','Mahouq bu'],a:0},
+{t:'mc',q:'Someone refills your tea. You say…',o:['Kyeizu tin ba de','Mingalaba','Mahouq bu','Houq keh'],a:0},
+{t:'mc',q:'“Is this your bag?” — it is. You say…',o:['Houq keh','Mahouq bu','Mingalaba','Kyeizu tin ba de'],a:0},
+{t:'mc',q:'“Is this your bag?” — it is not. You say…',o:['Mahouq bu','Houq keh','Kyeizu tin ba de','Mingalaba'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ကျေးဇူးတင်ပါတယ်',o:['Thank you','Hello','Yes','No'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ဟုတ်ကဲ့',o:['Yes','No','Hello','Thank you'],a:0}]},
+{id:'my_hello_4',title:'Sorry & all together',step:'mix',meta:'တောင်းပန်ပါတယ် joins in',vocab:[['တောင်းပန်ပါတယ်','Taun ban ba de','Sorry']],ex:[
+{t:'note',tag:'One more',q:'တောင်းပန်ပါတယ် — taun ban ba de',body:'<p><span class="deva">တောင်းပန်ပါတယ်</span> — <b>taun ban ba de</b> — is <b>sorry</b>: for bumping someone, stepping on a foot, being late.</p><p>Notice it ends with the same polite melody as <i>kyeizu tin ba de</i>: <b>…ba de</b>. Your ear is already spotting Burmese patterns.</p>',eg:[['တောင်းပန်ပါတယ်','taun ban ba de','sorry']]},
+{t:'mc',q:'Listen — what did they say?',d:'တောင်းပန်ပါတယ်',o:['Sorry','Thank you','Hello','No'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'တောင်းပန်ပါတယ်',o:['Sorry','Thank you','Yes','Hello'],a:0},
+{t:'mc',q:'You bump into someone on the bus. You say…',o:['Taun ban ba de','Mingalaba','Houq keh','Kyeizu tin ba de'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'မဟုတ်ဘူး',o:['No','Yes','Sorry','Thank you'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'မင်္ဂလာပါ',o:['Hello','Sorry','Thank you','Yes'],a:0},
+{t:'mc',q:'Which two phrases share the polite “…ba de” ending?',o:['thank you & sorry','hello & yes','yes & no','hello & no'],a:0}]},
+{id:'my_hello_5',title:'Checkpoint',step:'checkpoint',meta:'Your first five phrases',vocab:[],ex:[
+{t:'li',q:'Listen — what does it mean?',say:'မင်္ဂလာပါ',o:['Hello','Thank you','Sorry','No'],a:0},
+{t:'mc',q:'Someone hands you your change. You say…',o:['Kyeizu tin ba de','Taun ban ba de','Houq keh','Mingalaba'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ဟုတ်ကဲ့',o:['Yes','No','Sorry','Hello'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'တောင်းပန်ပါတယ်',o:['Sorry','Thank you','No','Yes'],a:0},
+{t:'mc',q:'“Are you a tourist?” — you are. You say…',o:['Houq keh','Mahouq bu','Taun ban ba de','Mingalaba'],a:0},
+{t:'li',q:'Listen — what does it mean?',say:'ကျေးဇူးတင်ပါတယ်',o:['Thank you','Sorry','Hello','Yes'],a:0}]},
+
 /* --- Topic 1: velars က ခ ဂ င --- */
 {id:'my_c1',title:'First letters',step:'learn',meta:'က ခ ဂ င & how Burmese works',vocab:[['က','ka','consonant: k'],['ခ','hka','consonant: k with a puff'],['ဂ','ga','consonant: g'],['င','nga','consonant: ng']],ex:[
 {t:'note',tag:'Start here',q:'Meet Burmese script',body:'<p>Burmese is written in round, bubbly letters called <b>မြန်မာအက္ခရာ</b>, left to right. Spaces separate <b>phrases</b>, not every word. You will never type — you just <b>listen and tap</b>.</p><p>Every consonant carries a built-in <b>"a"</b> sound, so the very first letter <span class="deva">က</span> is already read <b>ka</b>.</p>',tip:'Tap the speaker on any letter to hear it.'},
@@ -47,13 +89,13 @@ const MY_LESSONS=[
 {t:'note',tag:'Voice it',q:'ဂ and င',body:'<p><span class="deva">ဂ</span> = <b>ga</b>, like the g in "go".</p><p><span class="deva">င</span> = <b>nga</b> — the ng of "sing". In Burmese it can even <b>start</b> a word.</p>',eg:[['ဂ','ga','g as in go'],['င','nga','ng as in sing']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဂ',o:['ga','ka','hka','nga'],a:0},
 {t:'mc',q:'Which letter is the ng sound?',d:'င',o:['nga','ga','ka','hka'],a:0},
-{t:'li',q:'Listen — which letter?',say:'က',o:['က','င','ခ','ဂ'],a:0}]},
+{t:'li',q:'Listen — which letter?',say:'က',o:['က','င','ဂ'],a:0}]},
 {id:'my_c1_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot က ခ ဂ င',vocab:[],ex:[
-{t:'li',q:'Listen — which letter?',say:'က',o:['က','ခ','ဂ','င'],a:0},
+{t:'li',q:'Listen — which letter?',say:'က',o:['က','ဂ','င'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဂ',o:['ဂ','က','ခ','င'],a:0},
 {t:'mc',q:'Which letter says ka?',o:['က','ခ','ဂ','င'],a:0},
 {t:'mc',q:'Which letter says nga?',o:['င','ဂ','ခ','က'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ခ',o:['ခ','က','ဂ','င'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ခ',o:['ခ','က'],a:0},
 {t:'mc',q:'ခ sounds like ka but with…',d:'ခ',r:'hka',o:['a puff of air','a hum','two beats','a whisper'],a:0},
 {t:'li',q:'Listen — which letter?',say:'င',o:['င','ဂ','က','ခ'],a:0}]},
 {id:'my_c1_3',title:'Pair them up',step:'build',meta:'Match sounds to letters',vocab:[],ex:[
@@ -62,14 +104,14 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says hka?',o:['ခ','ဂ','က','င'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဂ',o:['ဂ','ခ','င','က'],a:0},
 {t:'mc',q:'The h in hka tells you to…',o:['add a puff of air','make it silent','say it twice','lower your voice'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['င','nga'],['ဂ','ga'],['ခ','hka'],['က','ka']]}]},
+{t:'li',q:'Close pair — which did you hear?',say:'က',o:['က','ခ'],a:0}]},
 {id:'my_c1_4',title:'Mix it',step:'mix',meta:'All four letters together',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'င',o:['nga','ga','ka','hka'],a:0},
-{t:'li',q:'Listen — which letter?',say:'က',o:['က','ခ','ဂ','င'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ဂ',o:['ဂ','က'],a:0},
 {t:'mc',q:'Which is the puffed (aspirated) k?',o:['ခ','က','ဂ','င'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဂ',o:['ga','ka','nga','hka'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ခ',o:['ခ','က','ဂ','င'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['က','ka'],['ဂ','ga'],['င','nga'],['ခ','hka']]},
+{t:'li',q:'Close pair — which did you hear?',say:'င',o:['င','ဂ'],a:0},
 {t:'mc',q:'Every Burmese consonant has a built-in…',o:['"a" sound','tone mark','space after it','capital form'],a:0}]},
 {id:'my_c1_5',title:'Checkpoint',step:'checkpoint',meta:'က ခ ဂ င mastered?',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'က',o:['ka','ga','hka','nga'],a:0},
@@ -87,13 +129,13 @@ const MY_LESSONS=[
 {t:'note',tag:'Buzz & nose',q:'ဇ and ည',body:'<p><span class="deva">ဇ</span> = <b>za</b>, the z of "zoo" — it buzzes.</p><p><span class="deva">ည</span> = <b>nya</b>, like the "ni" in "onion".</p>',eg:[['ဇ','za','z as in zoo'],['ည','nya','ny as in onion']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဇ',o:['za','sa','hsa','nya'],a:0},
 {t:'mc',q:'Which letter is the ny sound?',d:'ည',o:['nya','za','sa','hsa'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','ဆ','စ','ည'],a:0}]},
+{t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','ည','စ'],a:0}]},
 {id:'my_c2_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot စ ဆ ဇ ည',vocab:[],ex:[
-{t:'li',q:'Listen — which letter?',say:'စ',o:['စ','ဆ','ဇ','ည'],a:0},
+{t:'li',q:'Listen — which letter?',say:'စ',o:['စ','ဇ','ည'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','စ','ဆ','ည'],a:0},
 {t:'mc',q:'Which letter says sa?',o:['စ','ဆ','ဇ','ည'],a:0},
 {t:'mc',q:'Which letter says nya?',o:['ည','ဇ','ဆ','စ'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဆ',o:['ဆ','စ','ဇ','ည'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ဆ',o:['ဆ','စ'],a:0},
 {t:'mc',q:'ဆ is…',d:'ဆ',r:'hsa',o:['s with a puff','z with a hum','ng','plain s'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ည',o:['ည','ဇ','ဆ','စ'],a:0}]},
 {id:'my_c2_3',title:'Pair them up',step:'build',meta:'Match sounds to letters',vocab:[],ex:[
@@ -102,17 +144,17 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says hsa?',o:['ဆ','စ','ဇ','ည'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','ဆ','ည','စ'],a:0},
 {t:'mc',q:'ဇ is voiced — it buzzes like…',o:['z in zoo','s in see','h in hat','k in kite'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['ည','nya'],['ဇ','za'],['ဆ','hsa'],['စ','sa']]}]},
-{id:'my_c2_4',title:'Mix it',step:'mix',meta:'All four together',vocab:[],ex:[
+{t:'li',q:'Close pair — which did you hear?',say:'စ',o:['စ','ဆ'],a:0}]},
+{id:'my_c2_4',title:'Mix it',step:'mix',meta:'New letters + the ones you know',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'ည',o:['nya','za','sa','hsa'],a:0},
-{t:'li',q:'Listen — which letter?',say:'စ',o:['စ','ဆ','ဇ','ည'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ည',o:['ည','င'],a:0},
 {t:'mc',q:'Which is the puffed (aspirated) s?',o:['ဆ','စ','ဇ','ည'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဇ',o:['za','sa','nya','hsa'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဆ',o:['ဆ','စ','ဇ','ည'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['စ','sa'],['ဇ','za'],['ည','nya'],['ဆ','hsa']]}]},
+{t:'match',q:'The puff pairs — match letter and sound',pairs:[['က','ka'],['ခ','hka'],['စ','sa'],['ဆ','hsa']]}]},
 {id:'my_c2_5',title:'Checkpoint',step:'checkpoint',meta:'စ ဆ ဇ ည mastered?',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'စ',o:['sa','za','hsa','nya'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','ဆ','ည','စ'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ဇ',o:['ဇ','စ','ည','င'],a:0},
 {t:'mc',q:'Which letter says nya?',o:['ည','ဇ','စ','ဆ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဆ',o:['hsa','sa','za','nya'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ည',o:['ည','စ','ဇ','ဆ'],a:0},
@@ -126,13 +168,13 @@ const MY_LESSONS=[
 {t:'note',tag:'Voice & nose',q:'ဒ and န',body:'<p><span class="deva">ဒ</span> = <b>da</b>. <span class="deva">န</span> = <b>na</b>.</p><p>Heads-up: Burmese has a second, rounder set of these letters (<span class="deva">ဋ ဌ ဍ ဎ ဏ</span>) borrowed from Pali. They are <b>rare and sound the same</b> — learn <span class="deva">တ ထ ဒ န</span> first.</p>',eg:[['ဒ','da','d'],['န','na','n']]},
 {t:'mc',q:'What sound does this letter make?',d:'ဒ',o:['da','ta','hta','na'],a:0},
 {t:'mc',q:'Which letter says na?',d:'န',o:['na','da','ta','hta'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ထ',o:['ထ','တ','ဒ','န'],a:0}]},
+{t:'li',q:'Listen — which letter?',say:'ထ',o:['ထ','ဒ','န'],a:0}]},
 {id:'my_c3_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot တ ထ ဒ န',vocab:[],ex:[
-{t:'li',q:'Listen — which letter?',say:'တ',o:['တ','ထ','ဒ','န'],a:0},
+{t:'li',q:'Listen — which letter?',say:'တ',o:['တ','ဒ','န'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဒ',o:['ဒ','တ','ထ','န'],a:0},
 {t:'mc',q:'Which letter says ta?',o:['တ','ထ','ဒ','န'],a:0},
 {t:'mc',q:'Which letter says na?',o:['န','ဒ','ထ','တ'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ထ',o:['ထ','တ','ဒ','န'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ထ',o:['ထ','တ'],a:0},
 {t:'mc',q:'ထ is…',d:'ထ',r:'hta',o:['t with a puff','d with a hum','n','plain t'],a:0},
 {t:'li',q:'Listen — which letter?',say:'န',o:['န','ဒ','တ','ထ'],a:0}]},
 {id:'my_c3_3',title:'Pair them up',step:'build',meta:'Match sounds to letters',vocab:[],ex:[
@@ -141,17 +183,17 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says hta?',o:['ထ','တ','ဒ','န'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဒ',o:['ဒ','ထ','န','တ'],a:0},
 {t:'mc',q:'The rare Pali twins ဋ ဌ ဍ ဎ ဏ are…',o:['said the same as တ ထ ဒ န','completely new sounds','vowels','numbers'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['န','na'],['ဒ','da'],['ထ','hta'],['တ','ta']]}]},
-{id:'my_c3_4',title:'Mix it',step:'mix',meta:'All four together',vocab:[],ex:[
+{t:'li',q:'Close pair — which did you hear?',say:'တ',o:['တ','ထ'],a:0}]},
+{id:'my_c3_4',title:'Mix it',step:'mix',meta:'New letters + the ones you know',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'န',o:['na','da','ta','hta'],a:0},
-{t:'li',q:'Listen — which letter?',say:'တ',o:['တ','ထ','ဒ','န'],a:0},
+{t:'li',q:'Three nasals — which did you hear?',say:'န',o:['န','င','ည'],a:0},
 {t:'mc',q:'Which is the puffed (aspirated) t?',o:['ထ','တ','ဒ','န'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဒ',o:['da','ta','na','hta'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ထ',o:['ထ','တ','ဒ','န'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['တ','ta'],['ဒ','da'],['န','na'],['ထ','hta']]}]},
+{t:'match',q:'The puff family — match letter and sound',pairs:[['တ','ta'],['ထ','hta'],['ဆ','hsa'],['ခ','hka']]}]},
 {id:'my_c3_5',title:'Checkpoint',step:'checkpoint',meta:'တ ထ ဒ န mastered?',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'တ',o:['ta','da','hta','na'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဒ',o:['ဒ','ထ','န','တ'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ဒ',o:['ဒ','ဇ','န','တ'],a:0},
 {t:'mc',q:'Which letter says na?',o:['န','ဒ','တ','ထ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ထ',o:['hta','ta','da','na'],a:0},
 {t:'li',q:'Listen — which letter?',say:'န',o:['န','တ','ဒ','ထ'],a:0},
@@ -167,11 +209,11 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says ma?',d:'မ',o:['ma','ba','pa','hpa'],a:0},
 {t:'li',q:'Listen — which letter?',say:'မ',o:['မ','ပ','ဖ','ဗ'],a:0}]},
 {id:'my_c4_2',title:'Spot the letter',step:'recognize',meta:'Hear & spot ပ ဖ ဗ မ',vocab:[],ex:[
-{t:'li',q:'Listen — which letter?',say:'ပ',o:['ပ','ဖ','ဗ','မ'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ပ',o:['ပ','ဗ','မ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဗ',o:['ဗ','ပ','ဖ','မ'],a:0},
 {t:'mc',q:'Which letter says pa?',o:['ပ','ဖ','ဗ','မ'],a:0},
 {t:'mc',q:'Which letter says ma?',o:['မ','ဗ','ဖ','ပ'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဖ',o:['ဖ','ပ','ဗ','မ'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'ဖ',o:['ဖ','ပ'],a:0},
 {t:'mc',q:'ဖ is p with a puff — it is NOT…',d:'ဖ',r:'hpa',o:['an f sound','a b sound','an m sound','a p sound'],a:0},
 {t:'li',q:'Listen — which letter?',say:'မ',o:['မ','ဗ','ပ','ဖ'],a:0}]},
 {id:'my_c4_3',title:'Pair them up',step:'build',meta:'Match sounds to letters',vocab:[],ex:[
@@ -180,17 +222,17 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says hpa?',o:['ဖ','ပ','ဗ','မ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဗ',o:['ဗ','ဖ','မ','ပ'],a:0},
 {t:'mc',q:'ဗ and မ are both made with the…',o:['lips','throat','tongue tip','nose only'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['မ','ma'],['ဗ','ba'],['ဖ','hpa'],['ပ','pa']]}]},
-{id:'my_c4_4',title:'Mix it',step:'mix',meta:'All four together',vocab:[],ex:[
+{t:'li',q:'Close pair — which did you hear?',say:'ပ',o:['ပ','ဖ'],a:0}]},
+{id:'my_c4_4',title:'Mix it',step:'mix',meta:'New letters + the ones you know',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'မ',o:['ma','ba','pa','hpa'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ပ',o:['ပ','ဖ','ဗ','မ'],a:0},
+{t:'li',q:'Close pair — which did you hear?',say:'မ',o:['မ','န'],a:0},
 {t:'mc',q:'Which is the puffed (aspirated) p?',o:['ဖ','ပ','ဗ','မ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဗ',o:['ba','pa','ma','hpa'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဖ',o:['ဖ','ပ','ဗ','မ'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['ပ','pa'],['ဗ','ba'],['မ','ma'],['ဖ','hpa']]}]},
+{t:'match',q:'The plain (no-puff) letters — match',pairs:[['က','ka'],['စ','sa'],['တ','ta'],['ပ','pa']]}]},
 {id:'my_c4_5',title:'Checkpoint',step:'checkpoint',meta:'ပ ဖ ဗ မ mastered?',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'ပ',o:['pa','ba','hpa','ma'],a:0},
-{t:'li',q:'Listen — which letter?',say:'ဗ',o:['ဗ','ဖ','မ','ပ'],a:0},
+{t:'li',q:'Listen — which letter?',say:'ဗ',o:['ဗ','ဒ','ပ','မ'],a:0},
 {t:'mc',q:'Which letter says ma?',o:['မ','ဗ','ပ','ဖ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဖ',o:['hpa','pa','ba','ma'],a:0},
 {t:'li',q:'Listen — which letter?',say:'မ',o:['မ','ပ','ဗ','ဖ'],a:0},
@@ -218,22 +260,22 @@ const MY_LESSONS=[
 {t:'mc',q:'Which letter says wa?',o:['ဝ','လ','ဟ','သ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'သ',o:['သ','လ','ဝ','ဟ'],a:0},
 {t:'mc',q:'Which is "th" as in thin, NOT a hard t?',o:['သ','တ','ထ','ဒ'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['ယ','ya'],['လ','la'],['ဝ','wa'],['ဟ','ha']]},
+{t:'li',q:'Close trio — s, puffed s or th?',say:'သ',o:['သ','စ','ဆ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'အ',o:['a','ha','wa','la'],a:0}]},
-{id:'my_c5_4',title:'Mix it',step:'mix',meta:'All seven together',vocab:[],ex:[
+{id:'my_c5_4',title:'Mix it',step:'mix',meta:'New letters + the ones you know',vocab:[],ex:[
 {t:'mc',q:'What sound does this letter make?',d:'သ',o:['tha','ta','sa','ha'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဟ',o:['ဟ','ဝ','လ','သ'],a:0},
 {t:'mc',q:'Which letter is the old "ra", now said ya?',o:['ရ','ယ','လ','ဝ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဝ',o:['wa','ya','la','ha'],a:0},
 {t:'li',q:'Listen — which letter?',say:'လ',o:['လ','ဟ','သ','ဝ'],a:0},
-{t:'match',q:'Match letter and sound',pairs:[['သ','tha'],['ဟ','ha'],['အ','a'],['ဝ','wa']]},
+{t:'li',q:'Close pair — which did you hear?',say:'အ',o:['အ','ဟ'],a:0},
 {t:'mc',q:'The letter သ is easy to read as a "t", but it is really…',o:['th as in thin','a hard t','an s','silent'],a:0}]},
 {id:'my_c5_5',title:'Checkpoint',step:'checkpoint',meta:'ယ ရ လ ဝ သ ဟ အ mastered?',vocab:[],ex:[
 {t:'mc',q:'Which letter says tha?',o:['သ','ဟ','ဝ','လ'],a:0},
 {t:'li',q:'Listen — which letter?',say:'ဝ',o:['ဝ','ဟ','လ','သ'],a:0},
 {t:'mc',q:'What sound does this letter make?',d:'ဟ',o:['ha','la','wa','tha'],a:0},
 {t:'mc',q:'Which letter says la?',o:['လ','ဝ','ဟ','အ'],a:0},
-{t:'li',q:'Listen — which letter?',say:'သ',o:['သ','ဟ','ဝ','လ'],a:0},
+{t:'li',q:'Listen — which letter?',say:'သ',o:['သ','စ','ထ','ဟ'],a:0},
 {t:'match',q:'Match letter and sound',pairs:[['ယ','ya'],['လ','la'],['ဝ','wa'],['သ','tha'],['ဟ','ha']]}]},
 
 /* --- Topic 6: vowels on consonants --- */
@@ -258,7 +300,7 @@ const MY_LESSONS=[
 {t:'mc',q:'Which is kaw?',o:['ကော','ကာ','ကို','ကေ'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကု',o:['ကု','ကာ','ကေ','ကို'],a:0},
 {t:'mc',q:'Which is ko?',o:['ကို','ကာ','ကု','ကေ'],a:0},
-{t:'match',q:'Match syllable and sound',pairs:[['ကေ','ke'],['ကို','ko'],['ကော','kaw'],['ကာ','kaa']]},
+{t:'li',q:'Close pair — ku or ko?',say:'ကု',o:['ကု','ကို'],a:0},
 {t:'mc',q:'A vowel sign changes the letter’s built-in…',o:['a','k','tone only','nothing'],a:0}]},
 {id:'my_v1_4',title:'Mix it',step:'mix',meta:'All the vowels together',vocab:[],ex:[
 {t:'mc',q:'What does this say?',d:'ကော',o:['kaw','ko','kaa','ke'],a:0},
@@ -266,7 +308,7 @@ const MY_LESSONS=[
 {t:'mc',q:'Which is kaa (long a)?',o:['ကာ','ကု','ကေ','ကို'],a:0},
 {t:'mc',q:'What does this say?',d:'ကေ',o:['ke','ki','ko','ku'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကို',o:['ကို','ကာ','ကေ','ကု'],a:0},
-{t:'match',q:'Match syllable and sound',pairs:[['ကာ','kaa'],['ကု','ku'],['ကို','ko'],['ကော','kaw']]}]},
+{t:'li',q:'Close pair — kaw or kaa?',say:'ကော',o:['ကော','ကာ'],a:0}]},
 {id:'my_v1_5',title:'Checkpoint',step:'checkpoint',meta:'Vowels mastered?',vocab:[],ex:[
 {t:'mc',q:'What does this say?',d:'ကာ',o:['kaa','ku','ke','ko'],a:0},
 {t:'li',q:'Listen — which one?',say:'ကေ',o:['ကေ','ကာ','ကို','ကု'],a:0},
@@ -281,7 +323,7 @@ const MY_LESSONS=[
 {t:'note',tag:'Your first words',q:'ရေ · လူ · ကောင်း',body:'<p>Sound these out — you can read them now! <span class="deva">ရေ</span> = <b>ye</b> (water) · <span class="deva">လူ</span> = <b>lu</b> (person) · <span class="deva">ကောင်း</span> = <b>kaung</b> (good).</p>',eg:[['ရေ','ye','water'],['လူ','lu','person'],['ကောင်း','kaung','good']]},
 {t:'mc',q:'What does ရေ mean?',d:'ရေ',o:['water','person','good','hello'],a:0},
 {t:'mc',q:'What does လူ mean?',d:'လူ',o:['person','water','good','tea'],a:0},
-{t:'note',tag:'Say hello',q:'မင်္ဂလာပါ',body:'<p><span class="deva">မင်္ဂလာပါ</span> — <b>mingalaba</b> — is the polite hello every visitor learns, and the one people will greet YOU with. Tap to hear it, then say it back.</p>',eg:[['မင်္ဂလာပါ','mingalaba','hello']]},
+{t:'note',tag:'Full circle',q:'မင်္ဂလာပါ',body:'<p>You have been <b>saying</b> <span class="deva">မင်္ဂလာပါ</span> — <b>mingalaba</b> — since your very first lesson. Look again: there are letters you know in there now — <span class="deva">မ</span> (ma), <span class="deva">ဂ</span> (ga), <span class="deva">လ</span> (la), <span class="deva">ပ</span> (pa).</p><p>You are no longer memorising a sound — you are <b>reading</b> it.</p>',eg:[['မင်္ဂလာပါ','mingalaba','hello']]},
 {t:'mc',q:'How do you greet someone?',d:'မင်္ဂလာပါ',o:['mingalaba','ye','lu','kaung'],a:0},
 {t:'li',q:'Listen — which word?',say:'ရေ',o:['ရေ','လူ','ကောင်း','မင်္ဂလာပါ'],a:0}]},
 {id:'my_v2_2',title:'Hear the words',step:'recognize',meta:'ရေ လူ ကောင်း မင်္ဂလာပါ',vocab:[],ex:[
@@ -295,15 +337,15 @@ const MY_LESSONS=[
 {id:'my_v2_3',title:'Pair them up',step:'build',meta:'Match word and meaning',vocab:[],ex:[
 {t:'match',q:'Match word and meaning',pairs:[['ရေ','water'],['လူ','person'],['ကောင်း','good'],['မင်္ဂလာပါ','hello']]},
 {t:'mc',q:'What does လူ mean?',d:'လူ',o:['person','water','good','hello'],a:0},
-{t:'li',q:'Listen — which word?',say:'ရေ',o:['ရေ','လူ','ကောင်း','မင်္ဂလာပါ'],a:0},
+{t:'li',q:'Close pair — ye or ke?',say:'ရေ',o:['ရေ','ကေ'],a:0},
 {t:'mc',q:'The greeting mingalaba is written…',o:['မင်္ဂလာပါ','ရေ','ကောင်း','လူ'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['မင်္ဂလာပါ','hello'],['ကောင်း','good'],['လူ','person'],['ရေ','water']]}]},
 {id:'my_v2_4',title:'Mix it',step:'mix',meta:'Words & tones together',vocab:[],ex:[
 {t:'mc',q:'What does ကောင်း mean?',d:'ကောင်း',o:['good','water','person','hello'],a:0},
-{t:'li',q:'Listen — which word?',say:'လူ',o:['လူ','ရေ','ကောင်း','မင်္ဂလာပါ'],a:0},
+{t:'li',q:'Close pair — lu or ku?',say:'လူ',o:['လူ','ကု'],a:0},
 {t:'mc',q:'Which word means water?',o:['ရေ','လူ','ကောင်း','မင်္ဂလာပါ'],a:0},
 {t:'mc',q:'Three tones means the same sound can be…',o:['different words','always one word','a question','silent'],a:0},
-{t:'li',q:'Listen — which word?',say:'ကောင်း',o:['ကောင်း','ရေ','လူ','မင်္ဂလာပါ'],a:0},
+{t:'li',q:'Close pair — kaung or kaw?',say:'ကောင်း',o:['ကောင်း','ကော'],a:0},
 {t:'match',q:'Match word and meaning',pairs:[['ရေ','water'],['လူ','person'],['မင်္ဂလာပါ','hello'],['ကောင်း','good']]}]},
 {id:'my_v2_5',title:'Checkpoint',step:'checkpoint',meta:'You can read Burmese!',vocab:[],ex:[
 {t:'mc',q:'How do you say hello?',d:'မင်္ဂလာပါ',o:['mingalaba','ye','lu','kaung'],a:0},

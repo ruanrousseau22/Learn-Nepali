@@ -312,6 +312,30 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .note-eg .egcard .nm{font-size:13px;color:var(--ink-soft);margin-left:2px}
 .note-tip{margin-top:16px;font-size:14px;color:var(--ink-soft);background:var(--saffron-soft);border-radius:var(--r-sm);padding:11px 14px;border:1px solid color-mix(in srgb,var(--saffron) 30%,transparent)}
 [data-theme="dark"] .note-tip{color:var(--ink)}
+/* ----- Grammar guide (Aug 2026): the course's notes, readable outside lessons ----- */
+.gram-entry{display:flex;align-items:center;gap:14px;width:100%;margin-top:18px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:15px 19px;box-shadow:var(--shadow);cursor:pointer;color:var(--ink);font-family:inherit}
+.gram-entry .ge-icon{flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:flex;align-items:center;justify-content:center}
+.gram-entry .ge-icon svg{width:22px;height:22px}
+.gram-entry .ge-text{display:flex;flex-direction:column;gap:2px}
+.gram-entry .label{font-weight:700;letter-spacing:-.01em}
+.gram-entry .desc{font-size:13px;color:var(--ink-soft)}
+.gram-entry .ge-arrow{margin-left:auto;color:var(--ink-soft);font-weight:700}
+.gram-intro{font-size:14.5px;color:var(--ink-soft);margin:2px 0 18px}
+.gram-zone{border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
+.gram-zone>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:13px;padding:14px 16px}
+.gram-zone>summary::-webkit-details-marker{display:none}
+.gram-zone>summary .gz-num{flex:0 0 auto;width:30px;height:30px;border-radius:9px;background:var(--zacc,var(--teal));color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.gram-zone>summary .gz-t{font-weight:700;letter-spacing:-.01em}
+.gram-zone>summary .gz-d{font-size:12.5px;color:var(--ink-soft)}
+.gram-zone>summary .gz-count{margin-left:auto;flex:0 0 auto;font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--paper-2);padding:5px 11px;border-radius:100px}
+.gram-zone>summary .gz-chev{flex:0 0 auto;color:var(--ink-soft);transition:transform .18s}
+.gram-zone[open]>summary .gz-chev{transform:rotate(90deg)}
+.gram-zone .gz-body{padding:2px 16px 16px;border-top:1px solid var(--line-soft)}
+.gram-note{padding:16px 0 18px;border-bottom:1px solid var(--line-soft)}
+.gram-note:last-child{border-bottom:none;padding-bottom:4px}
+.gram-note .gn-from{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);opacity:.75;margin-bottom:5px}
+.gram-note .exq{font-size:18px;margin-top:2px}
+@media (max-width:560px){.gram-zone>summary .gz-d{display:none}.gram-zone .gz-body{padding:2px 13px 14px}}
 /* ---- listening exercise ---- */
 .li-play{display:flex;flex-direction:column;align-items:center;gap:10px;margin:22px 0 6px}
 .li-bigbtn{width:84px;height:84px;border-radius:50%;border:none;background:var(--crimson);color:#fff;font-size:34px;cursor:pointer;display:grid;place-items:center;box-shadow:0 6px 18px -6px rgba(178,58,51,.7);transition:transform .12s}
@@ -1391,6 +1415,39 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   </div>
   <div class="wrap section" style="padding-top:6px">
     <div class="srs-stage" id="srs-stage"></div>
+    <button class="gram-entry" onclick="show('gram')">
+      <span class="ge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.5A1.5 1.5 0 0 1 5.5 4H20v15.5"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20v-1.5H5.5A1.5 1.5 0 0 1 4 19.5Z"/><path d="M8 8h8M8 11.5h5"/></svg></span>
+      <span class="ge-text"><span class="label">Grammar guide</span><span class="desc">Every grammar &amp; culture note from your lessons, in one place</span></span>
+      <span class="ge-arrow" aria-hidden="true">→</span>
+    </button>
+  </div>
+</section>
+
+<section class="view" id="view-gram">
+  <div class="page-band">
+    <svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="orb-glow" cx="1046" cy="88" r="36"/>
+      <circle class="orb" cx="1046" cy="88" r="21"/>
+      <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
+      <polygon class="snow" points="786.3 84.0 805.0 68.0 828.3 84.0 817.4 82.0 808.2 89.0 798.9 83.0 792.2 87.0"/>
+      <polygon class="snow" points="939.8 80.0 965.0 66.0 983.7 80.0 972.3 78.0 962.6 85.0 953.0 79.0 945.9 83.0"/>
+      <polygon class="snow" points="1096.8 97.0 1120.0 84.0 1142.6 97.0 1130.7 95.0 1120.6 102.0 1110.5 96.0 1103.2 100.0"/>
+      <path class="mid" d="M0 200 L0 174 Q300 166 600 172 Q900 178 1200 168 L1200 200 Z"/>
+      <path class="snow" opacity=".26" d="M50 188 Q200 172 350 180 L348 185 Q200 178 53 193 Z"/>
+      <g class="near">
+        <path d="M0 184 Q300 158 600 176 Q900 194 1200 172 L1200 200 L0 200 Z"/>
+        <path fill="var(--tree)" d="M1120 108 L1138 134 L1130 134 L1144 158 L1134 158 L1148 180 L1124 180 L1124 192 L1116 192 L1116 180 L1092 180 L1106 158 L1096 158 L1110 134 L1102 134 Z"/>
+        <path fill="var(--tree)" d="M1058 148 L1068.3 162.9 L1063.7 162.9 L1071.7 176.6 L1066 176.6 L1074 189.1 L1060.3 189.1 L1060.3 196 L1055.7 196 L1055.7 189.1 L1042 189.1 L1050 176.6 L1044.3 176.6 L1052.3 162.9 L1047.7 162.9 Z"/>
+        <path fill="var(--tree)" d="M1170 162 L1176.9 171.9 L1173.8 171.9 L1179.1 181 L1175.3 181 L1180.7 189.4 L1171.5 189.4 L1171.5 194 L1168.5 194 L1168.5 189.4 L1159.3 189.4 L1164.7 181 L1160.9 181 L1166.2 171.9 L1163.1 171.9 Z"/>
+      </g>
+    </svg>
+    <div class="pb-inner">
+      <h2>Grammar guide</h2>
+    </div>
+  </div>
+  <div class="wrap section" style="padding-top:6px">
+    <p class="gram-intro">All the grammar and culture notes from the course, zone by zone — read them any time, no need to replay a lesson.</p>
+    <div id="gram-root"></div>
   </div>
 </section>
 
@@ -2104,19 +2161,45 @@ function unlockAudio(){if(_audioUnlocked)return;_audioUnlocked=true;if('speechSy
 document.addEventListener('pointerdown',unlockAudio,{once:true});
 
 const SMOOTH=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth';
+/* ----- Grammar guide: every note exercise from the main course, grouped by
+   zone. Notes are never spoken (audio-neutral) and are otherwise unreachable
+   once a lesson is done — this page makes them a readable reference
+   (Aug 2026, learner feedback: "grammar is scattered"). Main track only —
+   Intensive notes stay inside the Intensive. Rebuilt on every open, so it
+   always reflects the active pack and the rom preference. */
+function buildGram(){const root=document.getElementById('gram-root');if(!root)return;root.innerHTML='';
+  if(!UNITS.length){root.innerHTML=comingSoonHTML();return;}
+  const accent=['#1F8A5B','#C07A14','#2E6FA8','#5B6FA0'];
+  UNITS.forEach((u,ui)=>{
+    const notes=[];
+    u.lessons.forEach(id=>{const l=lessonById(id);if(!l)return;(l.ex||[]).forEach(ex=>{if(ex.t==='note')notes.push({ex,l});});});
+    if(!notes.length)return;
+    const d=document.createElement('details');d.className='gram-zone';d.style.setProperty('--zacc',accent[ui%4]);if(ui===0)d.open=true;
+    d.innerHTML='<summary><span class="gz-num">'+u.n+'</span><span><span class="gz-t">'+u.t+'</span><br><span class="gz-d">'+u.d+'</span></span><span class="gz-count">'+notes.length+'</span><svg class="gz-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></summary>';
+    let prevLesson=null;
+    const body=document.createElement('div');body.className='gz-body';
+    body.innerHTML=notes.map(({ex,l})=>{
+      const eg=ex.eg?('<div class="note-eg">'+ex.eg.map(e=>'<div class="egcard"><span class="nd">'+e[0]+'</span>'+(e[1]&&S.rom?'<span class="nr">'+e[1]+'</span>':'')+(e[2]?'<span class="nm">'+e[2]+'</span>':'')+'</div>').join('')+'</div>'):'';
+      const from=l.id!==prevLesson?'<div class="gn-from">'+l.title+'</div>':'';prevLesson=l.id;
+      return '<div class="gram-note">'+from+'<div class="exq">'+ex.q+'</div><div class="note-body">'+ex.body+'</div>'+eg+(ex.tip?'<div class="note-tip">'+ex.tip+'</div>':'')+'</div>';
+    }).join('');
+    d.appendChild(body);root.appendChild(d);
+  });
+}
 function show(v){if(v==='intensive'&&!hasIntensive())v='home';
   if(v==='trip'&&!(LANG&&LANG.trip))v='home';
   if(S.mode==='faith'&&typeof fstopAll==='function')fstopAll();
-  if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'||v==='trip'))v='flib'; /* faith mode replaces the course pages */
+  if(S.mode==='faith'&&(v==='home'||v==='intensive'||v==='alphabet'||v==='review'||v==='trip'||v==='gram'))v='flib'; /* faith mode replaces the course pages */
   if(v==='fjesus'||v==='facts'){openStory(v);return;} /* legacy per-story ids */
   if(S.mode!=='faith'&&(v==='fstory'||v==='flib'||v==='fmore'))v='home';
   if(v==='flib')buildFLib();
   if(v==='fmore')buildFMore();
+  if(v==='gram')buildGram();
   /* no URL routing, so a view change IS this app's pageview. 'exercise' is
      omitted — lesson_start already reports it with far better props. */
   if(v!=='exercise')track('view',{view:v,lang:LANG?LANG.code:''});
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+v).classList.add('active');
-  const tabv=(v==='fstory')?'flib':v;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===tabv));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
+  const tabv=(v==='fstory')?'flib':(v==='gram')?'review':v;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.v===tabv));document.getElementById('tabs').classList.remove('open');if(v==='review'){srsSession=null;renderSRS();}if(v==='home')paintHomeStats();if(v==='intensive')buildPath(UNITS_INTENSIVE,'path-root-intensive');
   if(v==='home'||v==='intensive')setTimeout(()=>scrollToCurrent(v),60);else window.scrollTo({top:0,behavior:SMOOTH});
   pushRoute(v);}
 /* land on the current node instead of the top of a 60+-node path; timeout lets same-tick rebuilds finish first */
@@ -3059,8 +3142,10 @@ function finishQuestion(ok,ansEl,fbHtml,base,breakCombo){const card=document.get
   else{combo=0;playSound('wrong');card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');const bar=document.getElementById('actionbar');bar.classList.remove('shake');void bar.offsetWidth;bar.classList.add('shake');}
   const seg=document.getElementById('segbar').children[curE];if(seg)seg.classList.add('done');
   /* missed it? it comes back at the end — without _sh, so renderEx deals the
-     options in a fresh order and it cannot be answered from remembered position */
-  if(!ok&&LESSONS[curL].step!=='test'){const rq=Object.assign({},exQ[curE]);delete rq._sh;exQ.push(rq);}
+     options in a fresh order and it cannot be answered from remembered position.
+     Capped at 2 re-asks: after the third miss the answer was shown three times —
+     move on, SRS review picks the word up from here (Aug 2026, learner feedback) */
+  if(!ok&&LESSONS[curL].step!=='test'&&(exQ[curE]._rq||0)<2){const rq=Object.assign({},exQ[curE]);delete rq._sh;rq._rq=(exQ[curE]._rq||0)+1;exQ.push(rq);}
   try{if(S.sound&&navigator.vibrate)navigator.vibrate(ok?12:[45,60,45]);}catch(e){}
   phase='checked';const last=curE+1>=exQ.length;
   document.getElementById('actionbar').classList.add('checked',ok?'correct':'wrong');

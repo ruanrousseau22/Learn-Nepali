@@ -420,9 +420,9 @@ coordinates) is in HISTORY.md — these are the standing rules:
   — phones see the same picture smaller; use the full 0–1200 canvas; only
   the title safe zone constrains placement. `art-detail` is no longer hidden
   on phones.
-- The hero markup exists as **TWO verbatim copies** (home + the faith story
-  host view, July 2026 library refactor) and the band as **FOUR** — edit via
-  replace_all, apply art fixes to all copies. Faith scene art is duplicated
+- The hero markup exists as **THREE verbatim copies** (home, view-flib, the
+  faith story host view) and the band as **SEVEN** (Aug 2026: + the Grammar
+  guide) — edit via replace_all, apply art fixes to all copies. Faith scene art is duplicated
   in ALL 11 faith packs.
 - Sun/orb sits right (cx≈1000–1090), never behind the title.
 - Judge icons blown up to ~40px before shipping; at 19px everything looks
@@ -505,8 +505,8 @@ progress per device in `sajilo_faith` (ids unchanged by the library
 refactor). **Stories library (July 2026)**: faith nav is Stories · More ·
 Settings. `view-flib` opens with the **FULL home hero** (Ruan) — the hero
 markup now exists as **THREE verbatim copies** (home, view-flib, view-fstory)
-and the band as **SIX** (alphabet, trip, review, settings, fmore, intensive);
-edit any of them via replace_all. `applyArt()` fills EVERY `.hero-mtns` AND
+and the band as **SEVEN** (alphabet, trip, review, settings, fmore, intensive,
+gram — the Grammar guide, Aug 2026); edit any of them via replace_all. `applyArt()` fills EVERY `.hero-mtns` AND
 every `.pb-mtns` — it used `querySelector` (singular) for the hero until
 July 2026, which would have left the new hero empty. The flib hero carries ONE
 line, **native only and centred**: h1 = `fui('libTitle')` (per-pack, `FUI_NE`
