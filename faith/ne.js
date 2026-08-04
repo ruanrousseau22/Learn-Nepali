@@ -4,7 +4,9 @@
    the quiet second line. A bilingual story PATH — big-moment nodes (none
    locked, one story each), each opening a short illustrated story + a
    Nepali "किन महत्त्वपूर्ण" explanation.
-   Two stories:
+   The stories:
+   - fgospel "सुसमाचार / The Gospel" — the whole-story-in-short overview,
+     split out (Aug 2026) as a standalone solo story that fronts the library.
    - fstory  "परमेश्वरको कथा / God's Story" — the whole biblical narrative in
      ten movements: creation & fellowship, the fall (fellowship broken), sin
      spreads, the covenant promises (Abraham, Exodus, David, the prophets),
@@ -94,9 +96,9 @@ banquet:'<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidde
 
 registerFaith({code:'ne',
 stories:[
-{id:'fstory',kind:'arc',title:'God’s Story',ne:'परमेश्वरको कथा',
-overview:{t:'The whole story in short',ne:'सुसमाचार — छोटकरीमा',art:FNE_ART.ovstory,
-start:['सुरुदेखि हेरौं','From here — the whole story in detail'],
+{id:'fgospel',kind:'solo',title:'The Gospel',ne:'सुसमाचार',
+sections:[
+{id:'gospel',t:'The whole story in short',ne:'सुसमाचार — छोटकरीमा',art:FNE_ART.ovstory,
 paras:[
 ['सुरुमा परमेश्वरले पृथ्वी र त्यसमा भएका सबै थोक बनाउनुभयो। अनि उहाँले मानिसलाई आफ्नै स्वरूपमा बनाउनुभयो — सम्बन्धको लागि, प्रेमको लागि।','Surumaa Parameshwarle prithvi ra tyasmaa bhaekaa sabai thok banaunubhayo. Ani uhaanle maanislaai aaphnai swaroopmaa banaunubhayo — sambandhako laagi, premko laagi.','In the beginning God created the earth and everything in it. And he made human beings in his own image — for relationship, for love.','Genesis 1:26–27'],
 ['मानिस र परमेश्वरको बीचमा मित्रता थियो। तर मानिसले परमेश्वरको विरुद्धमा विद्रोह गर्ने बाटो रोज्यो — र त्यही विद्रोहले हामीलाई परमेश्वरबाट अलग गर्यो।','Maanis ra Parameshwarko beechmaa mitrataa thiyo. Tara maanisle Parameshwarko biruddhamaa vidroha garne baato rojyo — ra tyahi vidrohale haamilaai Parameshwarbaata alag garyo.','Humanity and God shared friendship. But human beings chose the road of rebellion against God — and that rebellion separated us from him.','Genesis 3'],
@@ -108,7 +110,8 @@ paras:[
 ['विश्वास गर्नेहरूलाई परमेश्वरले आफ्नो पवित्र आत्मा दिनुहुन्छ — परमेश्वर आफैँ हामीभित्र बास गर्नुहुन्छ, सान्त्वना दिनुहुन्छ र दिनदिनै बाटो देखाउनुहुन्छ।','Vishwaas garneharulaai Parameshwarle aaphno Pawitra Aatmaa dinuhunchha — Parameshwar aaphain haamibhitra baas garnuhunchha, saantwanaa dinuhunchha ra dindinai baato dekhaunuhunchha.','To those who believe, God gives his Holy Spirit — God himself making his home within us, comforting us and guiding us day by day.','John 14:16–17'],
 ['र एक दिन येशू फेरि आउनुहुनेछ। उहाँले सबै थोक नयाँ बनाउनुहुनेछ — न आँसु, न मृत्यु — र परमेश्वर आफ्ना मानिसहरूसँग सधैँको लागि बास गर्नुहुनेछ।','Ra ek din Yeshu pheri aaunuhunechha. Uhaanle sabai thok nayaan banaunuhunechha — na aansu, na mrityu — ra Parameshwar aaphnaa maanisharusanga sadhainko laagi baas garnuhunechha.','And one day Jesus will come again. He will make all things new — no more tears, no more death — and God will dwell with his people forever.','Revelation 21:1–4'],
 ['यही सन्देशले विश्वास गर्ने हरेकलाई निको पार्छ र फेरि जोड्छ — हाम्रो र परमेश्वरको बीचको सङ्गति फर्काइदिन्छ। यही नै सुसमाचार हो — हामीले कमाएको होइन, परमेश्वरले दिनुभएको उपहार।','Yahi sandeshle vishwaas garne hareklaai niko paarchha ra pheri jodchha — haamro ra Parameshwarko beechko sangati pharkaaidinchha. Yahi nai susamaachaar ho — haamile kamaaeko hoina, Parameshwarle dinubhaeko upahaar.','This message brings healing and restoration to everyone who believes it — it gives back the fellowship between us and God. This is the gospel: not something we earn, but a gift God gives.','Romans 1:16 · Ephesians 2:8–9'],
-['यो मानिसजातिको लागि परमेश्वरको योजना र उहाँले सारा संसारमा कसरी मुक्ति ल्याउनुभयो भन्ने कुराको सार हो। अब यहाँबाट हामी यही कथा सुरुदेखि, एक-एक घटना गरेर, विस्तारमा हेर्नेछौं।','Yo maanisjaatiko laagi Parameshwarko yojanaa ra uhaanle saaraa sansaarmaa kasari mukti lyaaunubhayo bhanne kuraako saar ho. Aba yahaanbaata haami yahi kathaa surudekhi, ek-ek ghatanaa garera, vistaarmaa hernechhaun.','This is an overview of God’s plan for humanity, and how he brought salvation to the whole world. From here, we will walk through the same story from the beginning — one moment at a time, in detail.']]},
+['यो मानिसजातिको लागि परमेश्वरको योजना र उहाँले सारा संसारमा कसरी मुक्ति ल्याउनुभयो भन्ने कुराको सार हो। अब यहाँबाट हामी यही कथा सुरुदेखि, एक-एक घटना गरेर, विस्तारमा हेर्नेछौं।','Yo maanisjaatiko laagi Parameshwarko yojanaa ra uhaanle saaraa sansaarmaa kasari mukti lyaaunubhayo bhanne kuraako saar ho. Aba yahaanbaata haami yahi kathaa surudekhi, ek-ek ghatanaa garera, vistaarmaa hernechhaun.','This is an overview of God’s plan for humanity, and how he brought salvation to the whole world. From here, we will walk through the same story from the beginning — one moment at a time, in detail.']]}]},
+{id:'fstory',kind:'arc',title:'God’s Story',ne:'परमेश्वरको कथा',
 sections:[
 {id:'creation',t:'In the beginning',ne:'सुरुमा',art:FNE_ART.creation,
 note:['परमेश्वरलाई हाम्रो खाँचो थिएन — उहाँले हामीलाई चाहनुभयो। मानिस उहाँसँगको मित्रताको लागि बनाइएको हो, र कथा त्यो मित्रता पूर्ण भएको असल संसारबाट सुरु हुन्छ।','Parameshwarlaai haamro khaancho thiena — uhaanle haamilaai chaahanubhayo. Maanis uhaansangako mitrataako laagi banaieko ho, ra kathaa tyo mitrataa purna bhaeko asal sansaarbaata suru hunchha.','God did not need us — he wanted us. Human beings were made for friendship with their Maker, and the story opens in a good world where that friendship is whole.'],

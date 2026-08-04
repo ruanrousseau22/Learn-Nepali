@@ -1114,30 +1114,25 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 /* mobile overrides MUST come after the base rules above — same specificity, so
    source order decides. Placed earlier they silently lost and the thumbnail
    stayed 96px, squeezing story titles into ~92px and wrapping them 3-4 lines. */
-.fnode-chev{display:none}
 @media(max-width:560px){
   .flib-arc::before{left:24px}
   .fnode{gap:11px;padding:11px 12px}
   .fnode-art{width:66px;height:48px}
   .fnode-t{font-size:1rem;line-height:1.55}
 }
-/* narrow phones: library cards only — story-section nodes keep their word */
+/* narrow phones: library cards only — squeeze the chrome so titles keep room
+   (cards show only the small grey progress badge since Aug 2026) */
 @media(max-width:430px){
-  #flib-root .fnode-go{display:none}
-  #flib-root .fnode-chev{flex:none;display:inline-flex;align-items:center;justify-content:center;
-    width:26px;height:26px;border-radius:50%;background:var(--crimson);color:#fff;
-    font-size:19px;line-height:1;padding-bottom:3px}
   #flib-root .fnode-art{width:58px;height:42px}
   #flib-root .fnode{gap:9px;padding:10px}
 }
-/* 320px phones: the card is only 288px wide and its chrome (number, thumbnail,
-   chevron, four gaps) eats 153px of it, so long native titles wrap to three
-   lines. Squeeze the chrome — 18px back into the title column takes mn's
-   longest title to two lines; Sinhala's stay at three but sit tighter. */
+/* 320px phones: the card is only 288px wide and its chrome (thumbnail, badge,
+   gaps) eats most of it, so long native titles wrap to three lines. Squeeze
+   the chrome — the extra title width takes mn's longest title to two lines;
+   Sinhala's stay at three but sit tighter. */
 @media(max-width:360px){
   #flib-root .fnode{gap:7px;padding:9px 8px}
   #flib-root .fnode-art{width:52px;height:38px}
-  #flib-root .fnode-chev{width:24px;height:24px;font-size:17px}
 }
 .fnode-art svg{width:100%;height:100%;display:block}
 /* the faith scene art bakes daylight colours; soften it on a dark page so the
@@ -2729,16 +2724,16 @@ function flibCard(st){
   let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
   if(st.overview&&FAITH_DONE.has(st.id+'-ov'))n++;
   const done=n>=total;
-  /* the "start" word is the widest thing on the card and its length swings
-     hugely by language (si පටන් ගන්න is 97px vs ne सुरु at 41px), starving the
-     title on narrow phones. The whole card is already the tap target, so below
-     430px we swap that word for a chevron. Tick/progress badges stay — short. */
+  /* library cards carry the quiet grey progress badge from the very start —
+     "0 / 11" — never a crimson start word (Ruan, Aug 2026): the whole card is
+     the tap target, and the badge stays short in every language. */
   const badge=done?'<span class="fnode-tick" aria-label="Read">\u2713</span>'
-    :(n?'<span class="flib-prog">'+n+' / '+total+'</span>'
-       :'<span class="fnode-go deva">'+fui('start')+'</span><span class="fnode-chev" aria-hidden="true">\u203A</span>');
+    :'<span class="flib-prog">'+n+' / '+total+'</span>';
   const parts=secs.length+' '+(st.kind==='collection'?(secs.length===1?'story':'stories'):(secs.length===1?'part':'parts'));
+  /* a story without an overview fronts its first section's art (God's Story
+     shows "In the beginning" now that the overview lives in The Gospel) */
   return '<button type="button" class="fnode'+(done?' done':'')+'" onclick="openStory(\''+st.id+'\')">'
-    +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||'')+'</span>'
+    +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||(secs[0]&&secs[0].art)||'')+'</span>'
     +'<span class="fnode-tx">'
       +'<span class="fnode-t deva">'+(st.ne||st.title)+'</span>'
       +'<span class="fnode-en">'+st.title+'</span>'
@@ -2753,8 +2748,15 @@ function buildFLib(){
   const t=document.getElementById('flib-title');
   if(t)t.textContent=fui('libTitle')||'';
   const all=FAITH.stories||[];
-  const arc=all.filter(s=>s.kind==='arc'),coll=all.filter(s=>s.kind!=='arc');
+  const solo=all.filter(s=>s.kind==='solo'),arc=all.filter(s=>s.kind==='arc'),
+        coll=all.filter(s=>s.kind!=='arc'&&s.kind!=='solo');
   let h='';
+  /* solo stories (The Gospel) sit alone at the very top: same card design,
+     no heading, no connector \u2014 by themselves, above the arc (Ruan, Aug 2026) */
+  if(solo.length){
+    h+='<div class="flib-group"><div class="fnodes flib-loose">'
+      +solo.map(s=>flibCard(s)).join('')+'</div></div>';
+  }
   /* the arc leads the page with no heading at all \u2014 the connector already
      says "in order", and Ruan wants the page quiet (numbers removed Aug 2026) */
   if(arc.length){
@@ -2839,7 +2841,10 @@ function fnodesHTML(st){
   const ovDone=FAITH_DONE.has(st.id+'-ov'),ovNext=!!st.overview&&!ovDone&&nRead===0;
   const total=secs.length;
   if(nRead>=total){
-    const other=(FAITH.stories||[]).find(x=>x.id!==st.id);
+    /* the banner offers the NEXT story in pack order (The Gospel flows into
+       God's Story, the arc keeps rolling), wrapping at the end */
+    const all=FAITH.stories||[],i0=all.findIndex(x=>x.id===st.id);
+    const other=all[i0+1]||all.find(x=>x.id!==st.id);
     h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
       +'<div class="fdb-tx"><div class="deva fdb-ne">'+fui('done').replace('{t}',fnum(total))+'</div>'+(fui('doneEn')?'<div class="fdb-en">'+fui('doneEn').replace('{t}',total)+'</div>':'')+'</div>'
       +(other?'<button type="button" class="fdb-btn" onclick="openStory(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> '+aNext()+'</button>':'')
@@ -2860,7 +2865,7 @@ function fnodesHTML(st){
     const done=FAITH_DONE.has(s.id),isNext=i===next&&!ovNext;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
       +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
-      +'<span class="fnode-tx"><span class="fnode-t deva"><span class="fnode-n">'+fnum(i+1)+'</span><span class="fnode-sep"> · </span>'+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
+      +'<span class="fnode-tx"><span class="fnode-t deva">'+(secs.length>1?'<span class="fnode-n">'+fnum(i+1)+'</span><span class="fnode-sep"> · </span>':'')+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
       +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?fui('next'):fui('start'))+'</span>':''))
       +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
       +'</button>';
