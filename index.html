@@ -2706,9 +2706,13 @@ async function initFaithMode(){if(curMode()!=='faith')return;S.mode='learn';awai
 /* ----- the story path: big-moment nodes (none locked, one story each) ----- */
 let FVIEW=null,FAITH_DONE=new Set(); /* FVIEW={sid,i} while a story is open; done ids persist in sajilo_faith */
 let FSTORY='fstory'; /* which story the generic host view is showing */
+/* a one-part solo story (The Gospel) has no node list worth showing: opening
+   it goes straight into the reader, and backing out returns to the library */
+function soloDirect(st){return !!st&&st.kind==='solo'&&!st.overview&&(st.sections||[]).length===1;}
 function openStory(sid){
   if(!(FAITH&&(FAITH.stories||[]).some(s=>s.id===sid))){show('flib');return;}
-  FSTORY=sid;FVIEW=null;fstopAll();applyFaithBrand();buildFaith();show('fstory');
+  const st=(FAITH.stories||[]).find(s=>s.id===sid);
+  FSTORY=sid;FVIEW=soloDirect(st)?{sid:sid,i:0}:null;fstopAll();applyFaithBrand();buildFaith();if(FVIEW)paintFPlay();show('fstory');
   track('faith_story_open',{lang:(FAITH&&FAITH.code)||'',story:sid});
 }
 /* ----- the Stories home (rebuilt July 2026) -----
@@ -2888,8 +2892,11 @@ function freadHTML(st,i){
     g+='<div class="fread-nav"><span class="fprev-spacer"></span><button type="button" class="fdone-btn" onclick="markFOv(\''+st.id+'\')"><span class="deva">'+(ov.start?ov.start[0]:'')+'</span> '+aNext()+'</button><div class="fread-count">'+(ov.start?ov.start[1]:'')+'</div></div></div>';
     return g;
   }
-  const s=st.sections[i],last=i>=st.sections.length-1;
-  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
+  const s=st.sections[i],last=i>=st.sections.length-1,solo1=soloDirect(st);
+  /* a straight-in solo story backs out to the library, so its back button
+     says Stories (there is no moments list behind it) */
+  let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()">'
+    +(solo1?aBack()+' Stories':'<span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):''))+'</button>'
     +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
     +'<h3 class="fread-t"><span class="deva">'+(s.ne||s.t)+'</span>'+(s.ne&&s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
     +fpickHTML();
@@ -2909,11 +2916,11 @@ function freadHTML(st,i){
     +(i>0?'<button type="button" class="fprev" onclick="openFNode(\''+st.id+'\','+(i-1)+')">'+aBack()+' <span class="deva">'+fui('prev')+'</span></button>':'<span class="fprev-spacer"></span>')
     +'<button type="button" class="fdone-btn" onclick="markFRead(\''+st.id+'\','+i+')">'
     +(last?'<span class="deva">'+fui('finish')+'</span> &#10003;':'<span class="deva">'+fui('next')+'</span> '+aNext())+'</button>'
-    +'<div class="fread-count">'+fnum(i+1)+' / '+fnum(st.sections.length)+'</div></div></div>';
+    +(st.sections.length>1?'<div class="fread-count">'+fnum(i+1)+' / '+fnum(st.sections.length)+'</div>':'<span class="fprev-spacer"></span>')+'</div></div>';
   return h;
 }
 function openFNode(sid,i){fstopAll();FVIEW={sid,i};buildFaith();paintFPlay();window.scrollTo({top:0,behavior:SMOOTH});}
-function closeFNode(){fstopAll();FVIEW=null;buildFaith();window.scrollTo({top:0,behavior:SMOOTH});}
+function closeFNode(){fstopAll();const st=FAITH&&(FAITH.stories||[]).find(x=>x.id===FSTORY);if(soloDirect(st)){FVIEW=null;show('flib');return;}FVIEW=null;buildFaith();window.scrollTo({top:0,behavior:SMOOTH});}
 function markFRead(sid,i){fstopAll();const st=(FAITH.stories||[]).find(x=>x.id===sid);if(!st)return;
   FAITH_DONE.add(st.sections[i].id);saveFaithDone();
   if(i+1<st.sections.length)openFNode(sid,i+1);else closeFNode();}
