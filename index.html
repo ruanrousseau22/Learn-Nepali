@@ -2723,6 +2723,16 @@ function openStory(sid){
    collection group, which is the safe default (no implied order). The
    dashed connector is drawn ONLY down the arc group, because there it
    means something. ----- */
+/* Every inline copy of a scene emblem must carry UNIQUE gradient ids. The
+   library and the story host both hold copies of the same emblem (a story's
+   card fronts its first section's art), and url(#id) resolves to the FIRST
+   id in the document — which can sit inside the OTHER, display:none view,
+   where Chrome refuses to paint from it. That left every story's first
+   emblem with a blank white sky (Ruan, Aug 2026). Suffixing ids per
+   insertion makes each copy self-contained. */
+let ART_UID=0;
+function artU(svg){if(!svg)return '';ART_UID++;const u='-u'+ART_UID;
+  return svg.replace(/id="([^"]+)"/g,'id="$1'+u+'"').replace(/url\(#([^)]+)\)/g,'url(#$1'+u+')');}
 function flibCard(st){
   const secs=st.sections||[],total=secs.length+(st.overview?1:0);
   let n=secs.filter(function(s){return FAITH_DONE.has(s.id);}).length;
@@ -2737,7 +2747,7 @@ function flibCard(st){
   /* a story without an overview fronts its first section's art (God's Story
      shows "In the beginning" now that the overview lives in The Gospel) */
   return '<button type="button" class="fnode'+(done?' done':'')+'" onclick="openStory(\''+st.id+'\')">'
-    +'<span class="fnode-art" aria-hidden="true">'+((st.overview&&st.overview.art)||(secs[0]&&secs[0].art)||'')+'</span>'
+    +'<span class="fnode-art" aria-hidden="true">'+artU((st.overview&&st.overview.art)||(secs[0]&&secs[0].art)||'')+'</span>'
     +'<span class="fnode-tx">'
       +'<span class="fnode-t deva">'+(st.ne||st.title)+'</span>'
       +'<span class="fnode-en">'+st.title+'</span>'
@@ -2859,7 +2869,7 @@ function fnodesHTML(st){
   h+='<div class="fnodes">';
   if(st.overview){
     h+='<button type="button" class="fnode'+(ovDone?' done':'')+(ovNext?' next':'')+'" onclick="openFNode(\''+st.id+'\',\'ov\')">'
-      +'<span class="fnode-art" aria-hidden="true">'+(st.overview.art||'')+'</span>'
+      +'<span class="fnode-art" aria-hidden="true">'+artU(st.overview.art)+'</span>'
       +'<span class="fnode-tx"><span class="fnode-t deva">'+(st.overview.ne||st.overview.t)+'</span>'+(st.overview.ne?'<span class="fnode-en">'+st.overview.t+'</span>':'')+'</span>'
       +(ovDone?'<span class="fnode-tick" aria-label="Read">✓</span>':(ovNext?'<span class="fnode-go deva">'+fui('start')+'</span>':''))
       +(ovNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
@@ -2868,7 +2878,7 @@ function fnodesHTML(st){
   secs.forEach(function(s,i){
     const done=FAITH_DONE.has(s.id),isNext=i===next&&!ovNext;
     h+='<button type="button" class="fnode'+(done?' done':'')+(isNext?' next':'')+'" onclick="openFNode(\''+st.id+'\','+i+')">'
-      +'<span class="fnode-art" aria-hidden="true">'+(s.art||'')+'</span>'
+      +'<span class="fnode-art" aria-hidden="true">'+artU(s.art)+'</span>'
       +'<span class="fnode-tx"><span class="fnode-t deva">'+(secs.length>1?'<span class="fnode-n">'+fnum(i+1)+'</span><span class="fnode-sep"> · </span>':'')+(s.ne||s.t)+'</span>'+(s.ne?'<span class="fnode-en">'+s.t+'</span>':'')+'</span>'
       +(done?'<span class="fnode-tick" aria-label="Read">✓</span>':(isNext?'<span class="fnode-go deva">'+(nRead?fui('next'):fui('start'))+'</span>':''))
       +(isNext?'<span class="fnode-mascot" aria-hidden="true">'+artMascot('happy')+'</span>':'')
@@ -2880,7 +2890,7 @@ function freadHTML(st,i){
   if(i==='ov'){
     const ov=st.overview;
     let g='<div class="fread"><button type="button" class="fback" onclick="closeFNode()"><span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):'')+'</button>'
-      +'<div class="fread-art" aria-hidden="true">'+(ov.art||'')+'</div>'
+      +'<div class="fread-art" aria-hidden="true">'+artU(ov.art)+'</div>'
       +'<h3 class="fread-t"><span class="deva">'+(ov.ne||ov.t)+'</span>'+(ov.ne?' <span class="fh-ne">'+ov.t+'</span>':'')+'</h3>'
       +fpickHTML();
     if(ov.paras&&ov.paras.length){
@@ -2897,7 +2907,7 @@ function freadHTML(st,i){
      says Stories (there is no moments list behind it) */
   let h='<div class="fread"><button type="button" class="fback" onclick="closeFNode()">'
     +(solo1?aBack()+' Stories':'<span class="deva">'+aBack()+' '+fui('allMoments')+'</span>'+(fui('allMomentsEn')?' · '+fui('allMomentsEn'):''))+'</button>'
-    +'<div class="fread-art" aria-hidden="true">'+(s.art||'')+'</div>'
+    +'<div class="fread-art" aria-hidden="true">'+artU(s.art)+'</div>'
     +'<h3 class="fread-t"><span class="deva">'+(s.ne||s.t)+'</span>'+(s.ne&&s.t?' <span class="fh-ne">'+s.t+'</span>':'')+'</h3>'
     +fpickHTML();
   if(s.paras&&s.paras.length){
