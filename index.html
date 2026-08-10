@@ -1166,13 +1166,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
 .fplay-btn:hover{background:color-mix(in srgb,var(--crimson) 8%,transparent)}
 .fplay-btn.playing{background:var(--crimson);color:#fff}
 .fpara.fplaying,.fnote.fplaying{border-color:var(--crimson);box-shadow:0 0 0 2.5px color-mix(in srgb,var(--crimson) 25%,transparent)}
-.fdone-banner{display:flex;align-items:center;gap:14px;max-width:620px;margin:4px auto 18px;background:color-mix(in srgb,var(--crimson) 8%,var(--card));border:1.5px solid color-mix(in srgb,var(--crimson) 35%,var(--line));border-radius:16px;padding:14px 16px}
-.fdb-mascot{flex:none;width:52px;height:52px}
-.fdb-tx{flex:1;min-width:0}
-.fdb-ne{font-weight:800;font-size:1.02rem;line-height:1.7}
-.fdb-en{color:var(--muted);font-size:.82rem}
 .flib-prog{flex:none;font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--line-soft);border-radius:999px;padding:4px 10px}
-.fdb-btn{flex:none;background:var(--crimson);color:#fff;border:0;border-radius:999px;padding:9px 16px;font-weight:800;font-size:.88rem;cursor:pointer}
 .fprev{background:transparent;border:0;color:var(--muted);font-weight:700;cursor:pointer;font-size:.9rem;padding:6px 0}
 .fprev:hover{color:var(--crimson)}
 .fprev-spacer{width:64px}
@@ -2854,16 +2848,9 @@ function fnodesHTML(st){
      other node); it is the suggested start while nothing has been read yet */
   const ovDone=FAITH_DONE.has(st.id+'-ov'),ovNext=!!st.overview&&!ovDone&&nRead===0;
   const total=secs.length;
-  if(nRead>=total){
-    /* the banner offers the NEXT story in pack order (The Gospel flows into
-       God's Story, the arc keeps rolling), wrapping at the end */
-    const all=FAITH.stories||[],i0=all.findIndex(x=>x.id===st.id);
-    const other=all[i0+1]||all.find(x=>x.id!==st.id);
-    h+='<div class="fdone-banner"><span class="fdb-mascot" aria-hidden="true">'+artMascot('cheer')+'</span>'
-      +'<div class="fdb-tx"><div class="deva fdb-ne">'+fui('done').replace('{t}',fnum(total))+'</div>'+(fui('doneEn')?'<div class="fdb-en">'+fui('doneEn').replace('{t}',total)+'</div>':'')+'</div>'
-      +(other?'<button type="button" class="fdb-btn" onclick="openStory(\''+other.id+'\')"><span class="deva">'+(other.ne||other.title)+'</span> '+aNext()+'</button>':'')
-      +'</div>';
-  }else if(nRead){
+  /* no completion banner — a finished story just shows its quiet progress
+     line and the ticked nodes (Ruan, Aug 2026; congratulation removed) */
+  if(nRead){
     h+='<div class="fprog"><span class="deva">'+fui('prog').replace('{t}',fnum(total)).replace('{n}',fnum(nRead))+'</span>'+(fui('progEn')?'<span class="fprog-en">'+fui('progEn').replace('{n}',nRead).replace('{t}',total)+'</span>':'')+'</div>';
   }
   h+='<div class="fnodes">';
