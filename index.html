@@ -313,13 +313,6 @@ nav.tabs{display:flex;gap:2px;margin-left:auto}
 .note-tip{margin-top:16px;font-size:14px;color:var(--ink-soft);background:var(--saffron-soft);border-radius:var(--r-sm);padding:11px 14px;border:1px solid color-mix(in srgb,var(--saffron) 30%,transparent)}
 [data-theme="dark"] .note-tip{color:var(--ink)}
 /* ----- Grammar guide (Aug 2026): the course's notes, readable outside lessons ----- */
-.gram-entry{display:flex;align-items:center;gap:14px;width:100%;margin-top:18px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:15px 19px;box-shadow:var(--shadow);cursor:pointer;color:var(--ink);font-family:inherit}
-.gram-entry .ge-icon{flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:flex;align-items:center;justify-content:center}
-.gram-entry .ge-icon svg{width:22px;height:22px}
-.gram-entry .ge-text{display:flex;flex-direction:column;gap:2px}
-.gram-entry .label{font-weight:700;letter-spacing:-.01em}
-.gram-entry .desc{font-size:13px;color:var(--ink-soft)}
-.gram-entry .ge-arrow{margin-left:auto;color:var(--ink-soft);font-weight:700}
 .gram-intro{font-size:14.5px;color:var(--ink-soft);margin:2px 0 18px}
 .gram-zone{border:1px solid var(--line);border-radius:var(--r-md);background:var(--card);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
 .gram-zone>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:13px;padding:14px 16px}
@@ -1404,11 +1397,8 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
   </div>
   <div class="wrap section" style="padding-top:6px">
     <div class="srs-stage" id="srs-stage"></div>
-    <button class="gram-entry" onclick="show('gram')">
-      <span class="ge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.5A1.5 1.5 0 0 1 5.5 4H20v15.5"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20v-1.5H5.5A1.5 1.5 0 0 1 4 19.5Z"/><path d="M8 8h8M8 11.5h5"/></svg></span>
-      <span class="ge-text"><span class="label">Grammar guide</span><span class="desc">Every grammar &amp; culture note from your lessons, in one place</span></span>
-      <span class="ge-arrow" aria-hidden="true">→</span>
-    </button>
+    <!-- the Grammar guide card lived here until Aug 2026 (Ruan: keep Review
+         clean); view-gram still exists and answers ?v=gram deep links -->
   </div>
 </section>
 
@@ -2685,7 +2675,9 @@ async function switchMode(m){
      which is not the user reaching for the mode picker. */
   if(!navLock)track('mode_switch',{to:m,lang:LANG.code});
 }
-function pickMode(m){switchMode(m);}
+/* close first, like pickLang: switchMode bails early on a same-mode pick,
+   which used to leave the menu stuck open */
+function pickMode(m){closeModeMenu();switchMode(m);}
 function paintModeSwitch(){
   const w=document.getElementById('mode-switch');if(!w)return;
   w.style.display='';w.classList.remove('open');
