@@ -1633,7 +1633,7 @@ body.faith .tab[data-v="home"],body.faith .tab[data-v="intensive"],body.faith .t
     <div class="fmore-cards" id="fmore-root"></div>
     <div class="fmore-note">
       <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg>
-      <p>The stories in this app are <strong>retellings in plain words</strong>. These two links go to the real thing — the full Bible text and the film — on trusted outside sites, and open in a new tab.</p>
+      <p>The stories in this app are <strong>retellings in plain words</strong>. These links go to the real thing — the full Bible text, guided reading plans and the film — on trusted outside sites, and open in a new tab.</p>
     </div>
   </div>
 </section>
@@ -2594,8 +2594,12 @@ function buildFMore(){
     +'<span class="fm-ic" aria-hidden="true">'+ic+'</span>'
     +'<span class="fm-tx"><span class="fm-kind">'+kind+'</span><span class="fm-t">'+t+'</span><span class="fm-d">'+d+'</span></span>'
     +'<span class="fm-arrow" aria-hidden="true">'+arrow+'</span></a>';
+  /* the Following Jesus Yourself story points readers here for the Bible app
+     and its guided reading plans — keep this card in sync with that text */
+  const plan='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2.5"/><path d="M8 2.5v3M16 2.5v3M8 11h5M8 15.5h8"/></svg>';
   root.innerHTML=
     card(R.bible,book,'Read','The Bible in '+name,'The full Bible in '+name+' — several translations, most of them with audio.')
+   +card('https://www.bible.com/reading-plans',plan,'Follow','Bible reading plans','Free guided plans inside the Bible app that walk you through the Bible step by step.')
    +card(R.film,play,'Watch','The JESUS Film in '+name,'The life of Jesus told from Luke, spoken in '+name+'.',' fmore-card--film');
 }
 let FAITH=null,FAITH_KEYS=new Set();
