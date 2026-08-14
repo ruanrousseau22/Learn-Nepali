@@ -27,6 +27,19 @@ so.** Status legend: [ ] planned · [~] in progress · [x] done.
   course (landing pages, JSON-LD, keywords), since the title already says
   African.
 
+## Audience & register (Ruan, Aug 2026)
+
+- Built for **Xhosa speakers and learners in Cape Town** — urban, young,
+  code-switching reality ("slang Xhosa" exists; the course teaches standard
+  spoken Xhosa, kept conversational, never literary).
+- **Faith content register**: NO archaic traditional Xhosa — young Capetonians
+  do not understand it. The reference for church vocabulary is the
+  **Bible Society of South Africa 2023 isiXhosa translation** (contemporary
+  language; the 1859/1975 Bible is famously archaic — avoid its forms).
+  Faith paras are paraphrase (house rule) in everyday conversational Xhosa.
+  The More page should link the 2023 version on bible.com when the faith
+  pack ships (curl-verify the language page then).
+
 ## Research base (per Golden-rule 2: how Xhosa is actually TAUGHT)
 
 - *Teach Yourself Complete Xhosa* (Kirsch & Magona) — the standard self-study
@@ -111,13 +124,25 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
 ## Build stages
 
 - [x] Voice decision (Simba-TTS-xho listening test, Ruan approved)
-- [~] `generate_audio_xh.py` — local Simba pipeline: reads
+- [x] `generate_audio_xh.py` — local Simba pipeline: reads
       `audio_strings_xh.json`, writes FNV-1a-named MP3s + `manifest.json`
       into `audio-xh/`; resumable; MP3 via lameenc (no ffmpeg on this Mac).
-- [~] Pack skeleton `lang/xh.js` (latin:true) + `LANG_CATALOG` + `LANG_FLAGS`
-      (South African flag) + extractor taught `xh`.
-- [ ] Zone 1 (Sounds) + Zone 2 (Greetings & people), teach-before-test shape,
-      audio generated, smoke-tested.
+      Venv: ~/.bhasaly-xhosa-tts (durable, survives sessions).
+- [x] Pack skeleton `lang/xh.js` (latin:true) + extractor taught `xh`.
+      LANG_CATALOG + LANG_FLAGS deliberately DEFERRED to ship (a stray
+      deploy must not expose a half course); test via console injection:
+      LANG_CATALOG.push({code:'xh',label:'Xhosa — isiXhosa'}).
+- [x] Zone 1 (Sounds) COMPLETE — s1 vowels, s2 c click, s3 x click, s4 q
+      click, s5 variants (isiXhosa/nceda/umngqusho), s6 hl/dl/ty/nj/tsh,
+      s7 first greetings (molo/molweni/enkosi/goodbye pair). 35 lessons,
+      216 exercises, 75 clips. Integrity checker: scratchpad check_xh.py
+      pattern (teach-before-test + all engine invariants) — recreate it
+      each session and run after EVERY authoring pass; it caught 2 real
+      violations on first run.
+- [ ] Zone 2 (Greetings & people): g1 how-are-you (unjani/ndiyaphila/
+      ndikhona/wena), g2 names (igama/ngubani), g3 please-thanks-sorry
+      consolidation, g4 goodbyes + sobonana, g5 where-from (ndisuka e-),
+      g6 where-do-you-live (uhlala phi), g7 yes/no questions.
 - [ ] Zones 3–6.
 - [ ] Zones 7–9.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
