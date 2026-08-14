@@ -231,11 +231,17 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       ndiyaphangela (street word for work, per teach-what-people-SAY
       rule) + Ufunda ntoni? (funda/funa minimal-pair li). Checker
       caught 1 (ikhompyutha distractor), fixed.
-- [ ] Zone 10 (Body & health): body parts (intloko head, isandla hand,
-      unyawo foot, iliso eye/amehlo, indlebe ear), ndiyagula I am
-      sick, ubuhlungu pain / kubuhlungu it hurts, ikliniki clinic +
-      usisi wasekliniki, imperatives (yiza come, hlala sit, sela
-      amayeza take medicine), Ndiziva ngcono I feel better.
+- [x] Zone 10 (Body and health) COMPLETE (350 lessons, 2158 ex, 446
+      clips): b1 intloko/isandla-izandla (isi-/izi- payoff)/unyawo,
+      b2 iliso→amehlo IRREGULAR + indlebe (indlela minimal pair li) +
+      umlomo, b3 ndiyagula vs recycled ndiyaphila + ubuhlungu/
+      kubuhlungu (ubu- states note), b4 isisu + Intloko ibuhlungu
+      (subject-echo) + Kubuhlungu apha, b5 ikliniki/ugqirha (gq)/
+      unesi/amayeza, b6 IMPERATIVES bare-stem (Yiza apha/Hlala
+      phantsi/Sela amayeza — drink-the-medicine idiom), b7 Uziva
+      njani?/Ndiziva ngcono (ngc click; zi- reflexive note). Sober
+      register kept. Checker passed after 1 self-caught fix
+      (kulungile untaught in a match pair → iyadura/itshiphu).
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,

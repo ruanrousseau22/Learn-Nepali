@@ -2736,6 +2736,307 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
 {"t":"mc","q":"Review — which one means computer?","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
 {"t":"mc","q":"Review — which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0}
+]},
+
+/* ---------- b1 · Head, hand, foot ---------- */
+{"id":"xh_b1","title":"Head, hand, foot","step":"learn","meta":"The body begins","vocab":[["intloko","een-TLAW-kaw","head"],["isandla","ee-SAHN-dlah","hand"],["izandla","ee-ZAHN-dlah","hands"],["unyawo","oo-NYAH-waw","foot"]],"ex":[
+{"t":"note","tag":"From the top","q":"Intloko","body":"<p><b>Intloko</b> — <i>head</i>. Also the head of anything: the head of the family, the heading of a letter. Bodies and metaphors share it, in Xhosa as in English.</p>","eg":[["intloko","een-TLAW-kaw","head"]]},
+{"t":"li","q":"Which one do you hear?","say":"intloko","o":["intloko","indlela"],"a":0},
+{"t":"mc","q":"What does intloko mean?","o":["head","hand","foot"],"a":0},
+{"t":"note","tag":"A familiar pair","q":"Isandla, izandla","body":"<p><b>Isandla</b> — <i>hand</i> — an isi- word, so you already know its plural before you hear it: <b>izandla</b> — <i>hands</i>. The grammar is starting to pay you back.</p>","eg":[["isandla","ee-SAHN-dlah","hand"],["izandla","ee-ZAHN-dlah","hands"]]},
+{"t":"li","q":"One or two — which do you hear?","say":"izandla","o":["izandla","isandla"],"a":0},
+{"t":"mc","q":"izandla means…","o":["hands","hand","feet"],"a":0},
+{"t":"note","tag":"On the ground","q":"Unyawo","body":"<p><b>Unyawo</b> — <i>foot</i>. What ndihamba runs on. Say the ny like the middle of canyon.</p>","eg":[["unyawo","oo-NYAH-waw","foot"]]},
+{"t":"li","q":"Which one do you hear?","say":"unyawo","o":["unyawo","intloko"],"a":0},
+{"t":"mc","q":"Which one means foot?","o":["unyawo","isandla","intloko"],"a":0}
+]},
+{"id":"xh_b1_2","title":"Hearing the body","step":"recognize","meta":"Body parts by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","izandla","unyawo"],"a":0},
+{"t":"mc","q":"What does unyawo mean?","o":["foot","hand","head"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"intloko","o":["intloko","unyawo","isandla"],"a":0},
+{"t":"mc","q":"Which one means hands?","o":["izandla","isandla","unyawo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izandla","o":["izandla","isandla","intloko"],"a":0},
+{"t":"mc","q":"isandla goes to izandla because it is…","o":["an isi- word","an um- word","a u- word"],"a":0}
+]},
+{"id":"xh_b1_3","title":"Building the body","step":"build","meta":"Piece by piece","vocab":[],"ex":[
+{"t":"fill","q":"Complete: head","s":"intlo___","o":["ko","ka","kho"],"a":0},
+{"t":"wb","q":"Build the word: hands","a":["izandla"],"pool":["izandla","isandla","unyawo"]},
+{"t":"fill","q":"Complete: foot","s":"unya___","o":["wo","wa","we"],"a":0},
+{"t":"wb","q":"Build the word: head","a":["intloko"],"pool":["intloko","unyawo","isandla"]},
+{"t":"li","q":"Which one do you hear?","say":"unyawo","o":["unyawo","izandla","intloko"],"a":0}
+]},
+{"id":"xh_b1_4","title":"The body in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intloko","head"],["isandla","hand"],["unyawo","foot"]]},
+{"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","unyawo","izandla"],"a":0},
+{"t":"match","q":"Match singular to plural","pairs":[["isandla","izandla"],["isitya","izitya"]]},
+{"t":"mc","q":"You wash izandla before…","o":["ukutya","ukulala","ukuhamba"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"intloko","o":["intloko","isandla","unyawo"],"a":0}
+]},
+{"id":"xh_b1_5","title":"Checkpoint: the body","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does isandla mean?","o":["hand","foot","arm"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izandla","o":["izandla","intloko","unyawo"],"a":0},
+{"t":"mc","q":"Which one means head?","o":["intloko","unyawo","isandla"],"a":0},
+{"t":"mc","q":"The plural of isandla is…","o":["izandla","amandla","oosandla"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","izandla","unyawo"],"a":0},
+{"t":"mc","q":"Review — which one means money?","o":["imali","ixabiso","irandi"],"a":0}
+]},
+
+/* ---------- b2 · The face ---------- */
+{"id":"xh_b2","title":"The face","step":"learn","meta":"Eye, eyes, ear, mouth — and one famous irregular","vocab":[["iliso","ee-LEE-saw","eye"],["amehlo","ah-MEH-hlaw","eyes"],["indlebe","een-DLEH-beh","ear"],["umlomo","oom-LAW-maw","mouth"]],"ex":[
+{"t":"note","tag":"The exception that proves it","q":"Iliso — amehlo","body":"<p><b>Iliso</b> — <i>eye</i> — is an iqanda-type word, so you expect ama-. You get it, with a twist: <b>amehlo</b> — <i>eyes</i>. The oldest words wear their plurals a little bent; this is Xhosa&rsquo;s most famous example.</p>","eg":[["iliso","ee-LEE-saw","eye"],["amehlo","ah-MEH-hlaw","eyes"]]},
+{"t":"li","q":"One or two — which do you hear?","say":"amehlo","o":["amehlo","iliso"],"a":0},
+{"t":"mc","q":"The plural of iliso is…","o":["amehlo","amaliso","iziliso"],"a":0},
+{"t":"note","tag":"Listening gear","q":"Indlebe","body":"<p><b>Indlebe</b> — <i>ear</i>. One letter from indlela, the road — your ear and the road to it. Listening drills are literally indlebe work.</p>","eg":[["indlebe","een-DLEH-beh","ear"]]},
+{"t":"li","q":"Ear or road — which do you hear?","say":"indlebe","o":["indlebe","indlela"],"a":0},
+{"t":"mc","q":"What does indlebe mean?","o":["ear","eye","road"],"a":0},
+{"t":"note","tag":"Where the words come out","q":"Umlomo","body":"<p><b>Umlomo</b> — <i>mouth</i> — where all this isiXhosa finally leaves you and reaches somebody else.</p>","eg":[["umlomo","oom-LAW-maw","mouth"]]},
+{"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","indlebe"],"a":0},
+{"t":"mc","q":"Which one means mouth?","o":["umlomo","iliso","indlebe"],"a":0}
+]},
+{"id":"xh_b2_2","title":"Hearing the face","step":"recognize","meta":"Face parts by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"iliso","o":["iliso","amehlo","umlomo"],"a":0},
+{"t":"mc","q":"What does amehlo mean?","o":["eyes","eye","ears"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","iliso","indlebe"],"a":0},
+{"t":"mc","q":"Which one means ear?","o":["indlebe","umlomo","iliso"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amehlo","o":["amehlo","iliso","indlebe"],"a":0},
+{"t":"mc","q":"Listening exercises train your…","o":["indlebe","umlomo","amehlo"],"a":0}
+]},
+{"id":"xh_b2_3","title":"Building the face","step":"build","meta":"Feature by feature","vocab":[],"ex":[
+{"t":"fill","q":"Complete: eyes","s":"ame___o","o":["hl","dl","l"],"a":0},
+{"t":"wb","q":"Build the word: mouth","a":["umlomo"],"pool":["umlomo","indlebe","iliso"]},
+{"t":"fill","q":"Complete: ear","s":"indle___","o":["be","ba","bo"],"a":0},
+{"t":"wb","q":"Build the word: eye (just one)","a":["iliso"],"pool":["iliso","amehlo","umlomo"]},
+{"t":"li","q":"Which one do you hear?","say":"indlebe","o":["indlebe","umlomo","amehlo"],"a":0}
+]},
+{"id":"xh_b2_4","title":"The face in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iliso","eye"],["amehlo","eyes"],["indlebe","ear"]]},
+{"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","amehlo","iliso"],"a":0},
+{"t":"match","q":"Match the part to its work","pairs":[["indlebe","listening"],["umlomo","speaking"],["amehlo","reading"]]},
+{"t":"mc","q":"iqanda goes neatly to amaqanda, but iliso bends to…","o":["amehlo","amaliso","amaso"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iliso","o":["iliso","indlebe","umlomo"],"a":0}
+]},
+{"id":"xh_b2_5","title":"Checkpoint: the face","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does indlebe mean?","o":["ear","eye","mouth"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amehlo","o":["amehlo","umlomo","iliso"],"a":0},
+{"t":"mc","q":"Which one means eyes?","o":["amehlo","iliso","izandla"],"a":0},
+{"t":"mc","q":"umlomo means…","o":["mouth","nose","face"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","indlebe","amehlo"],"a":0},
+{"t":"mc","q":"Review — which one means sugar?","o":["iswekile","ityuwa","umgubo"],"a":0}
+]},
+
+/* ---------- b3 · Sick and well ---------- */
+{"id":"xh_b3","title":"Sick and well","step":"learn","meta":"Ndiyagula — and the word for pain","vocab":[["ndiyagula","ndee-yah-GOO-lah","I am sick"],["ubuhlungu","oo-boo-HLOON-goo","pain"],["kubuhlungu","koo-boo-HLOON-goo","it hurts"]],"ex":[
+{"t":"note","tag":"The honest answer","q":"Ndiyagula","body":"<p>Unjani? does not always get ndiyaphila. Some days the honest answer is <b>ndiyagula</b> — <i>I am sick</i>. There is the -ya- again, holding up a verb with nothing after it.</p>","eg":[["ndiyagula","ndee-yah-GOO-lah","I am sick"]]},
+{"t":"li","q":"Well or sick — which do you hear?","say":"ndiyagula","o":["ndiyagula","ndiyaphila"],"a":0},
+{"t":"mc","q":"What does ndiyagula mean?","o":["I am sick","I am well","I am tired"],"a":0},
+{"t":"note","tag":"Naming it","q":"Ubuhlungu","body":"<p><b>Ubuhlungu</b> — <i>pain</i>. An ubu- word — the prefix Xhosa uses for states and qualities, the same ubu- you will meet in ubuntu.</p>","eg":[["ubuhlungu","oo-boo-HLOON-goo","pain"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","ndiyagula"],"a":0},
+{"t":"mc","q":"ubuhlungu means…","o":["pain","sickness","medicine"],"a":0},
+{"t":"note","tag":"Saying it","q":"Kubuhlungu","body":"<p>Put ku- in front and pain becomes a sentence: <b>kubuhlungu</b> — <i>it hurts</i>. Short, complete, and understood in any clinic in the country.</p>","eg":[["kubuhlungu","koo-boo-HLOON-goo","it hurts"]]},
+{"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ubuhlungu"],"a":0},
+{"t":"mc","q":"kubuhlungu means…","o":["it hurts","the pain","I am sick"],"a":0}
+]},
+{"id":"xh_b3_2","title":"Hearing the hurt","step":"recognize","meta":"Sick talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","kubuhlungu","ndiyagula"],"a":0},
+{"t":"mc","q":"What does kubuhlungu mean?","o":["it hurts","pain","I am sick"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","ubuhlungu","kubuhlungu"],"a":0},
+{"t":"mc","q":"Which one means pain?","o":["ubuhlungu","kubuhlungu","ndiyagula"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ndiyagula","ubuhlungu"],"a":0},
+{"t":"mc","q":"The ubu- prefix marks…","o":["states and qualities","plurals","places"],"a":0}
+]},
+{"id":"xh_b3_3","title":"Building the hurt","step":"build","meta":"From pain to sentence","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am sick","s":"Ndiyagu___","o":["la","le","li"],"a":0},
+{"t":"wb","q":"Build the word: it hurts","a":["kubuhlungu"],"pool":["kubuhlungu","ubuhlungu","ndiyagula"]},
+{"t":"fill","q":"Complete: pain","s":"___hlungu","o":["ubu","uku","aba"],"a":0},
+{"t":"wb","q":"Build the word: I am sick","a":["ndiyagula"],"pool":["ndiyagula","ndiyaphila","kubuhlungu"]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","kubuhlungu","ubuhlungu"],"a":0}
+]},
+{"id":"xh_b3_4","title":"The hurt in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyagula","I am sick"],["ubuhlungu","pain"],["kubuhlungu","it hurts"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","ndiyagula","kubuhlungu"],"a":0},
+{"t":"match","q":"Match the state to its opposite","pairs":[["ndiyagula","ndiyaphila"],["iyadura","itshiphu"]]},
+{"t":"mc","q":"Unjani? — on a bad day the honest answer is…","o":["ndiyagula","ndiyaphila","molo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ubuhlungu","ndiyagula"],"a":0}
+]},
+{"id":"xh_b3_5","title":"Checkpoint: the hurt","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ubuhlungu mean?","o":["pain","sick","hurt (the verb)"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","ubuhlungu","kubuhlungu"],"a":0},
+{"t":"mc","q":"Which one means it hurts?","o":["kubuhlungu","ubuhlungu","ndiyagula"],"a":0},
+{"t":"mc","q":"ndiyagula keeps its -ya- because…","o":["nothing follows the verb","it is negative","gula demands it"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","kubuhlungu","ndiyagula"],"a":0},
+{"t":"mc","q":"Review — which one means it is expensive?","o":["iyadura","itshiphu","ayiduri"],"a":0}
+]},
+
+/* ---------- b4 · Where it hurts ---------- */
+{"id":"xh_b4","title":"Where it hurts","step":"learn","meta":"Pointing at the pain","vocab":[["isisu","ee-SEE-soo","stomach"],["Intloko ibuhlungu","een-TLAW-kaw ee-boo-HLOON-goo","my head hurts"],["Kubuhlungu apha","koo-boo-HLOON-goo AH-pah","it hurts here"]],"ex":[
+{"t":"note","tag":"One more part","q":"Isisu","body":"<p><b>Isisu</b> — <i>stomach</i> — the part most likely to complain, after a wedding or a dodgy braai.</p>","eg":[["isisu","ee-SEE-soo","stomach"]]},
+{"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","isandla"],"a":0},
+{"t":"mc","q":"What does isisu mean?","o":["stomach","chest","back"],"a":0},
+{"t":"note","tag":"Naming the ache","q":"Intloko ibuhlungu","body":"<p>Name the part, let its little prefix echo, add buhlungu: <b>Intloko ibuhlungu</b> — <i>my head hurts</i>, literally the-head it-is-painful. Isisu sibuhlungu, unyawo lubuhlungu — the echo changes, the pattern holds.</p>","eg":[["Intloko ibuhlungu","een-TLAW-kaw ee-boo-HLOON-goo","my head hurts"]]},
+{"t":"li","q":"Which one do you hear?","say":"Intloko ibuhlungu","o":["Intloko ibuhlungu","kubuhlungu"],"a":0},
+{"t":"mc","q":"Intloko ibuhlungu means…","o":["my head hurts","my stomach hurts","I feel dizzy"],"a":0},
+{"t":"note","tag":"Or just point","q":"Kubuhlungu apha","body":"<p>No anatomy needed: touch the place and say <b>Kubuhlungu apha</b> — <i>it hurts here</i>. Your apha from the home zone, doing medical work.</p>","eg":[["Kubuhlungu apha","koo-boo-HLOON-goo AH-pah","it hurts here"]]},
+{"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu"],"a":0},
+{"t":"mc","q":"Kubuhlungu apha means…","o":["it hurts here","it hurts everywhere","my head hurts"],"a":0}
+]},
+{"id":"xh_b4_2","title":"Hearing the ache","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Intloko ibuhlungu","o":["Intloko ibuhlungu","Kubuhlungu apha","isisu"],"a":0},
+{"t":"mc","q":"What does Kubuhlungu apha mean?","o":["it hurts here","my head hurts","I am sick"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","intloko","Kubuhlungu apha"],"a":0},
+{"t":"mc","q":"Which one means stomach?","o":["isisu","intloko","indlebe"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu","isisu"],"a":0},
+{"t":"mc","q":"Isisu sibuhlungu would mean…","o":["my stomach hurts","my head hurts","my hand hurts"],"a":0}
+]},
+{"id":"xh_b4_3","title":"Building the ache","step":"build","meta":"Say where","vocab":[],"ex":[
+{"t":"fill","q":"Complete: stomach","s":"isi___","o":["su","sa","so"],"a":0},
+{"t":"wb","q":"Build: my head hurts","a":["intloko","ibuhlungu"],"pool":["intloko","ibuhlungu","apha"]},
+{"t":"fill","q":"Complete: it hurts HERE","s":"Kubuhlungu a___a","o":["ph","p","f"],"a":0},
+{"t":"wb","q":"Build: it hurts here","a":["kubuhlungu","apha"],"pool":["kubuhlungu","apha","intloko"]},
+{"t":"li","q":"Which one do you hear?","say":"Intloko ibuhlungu","o":["Intloko ibuhlungu","Kubuhlungu apha","isisu"],"a":0}
+]},
+{"id":"xh_b4_4","title":"The ache in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isisu","stomach"],["Intloko ibuhlungu","my head hurts"],["Kubuhlungu apha","it hurts here"]]},
+{"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","Intloko ibuhlungu","Kubuhlungu apha"],"a":0},
+{"t":"mc","q":"After a dodgy braai, the complaint is about…","o":["isisu","intloko","unyawo"],"a":0},
+{"t":"mc","q":"When you cannot name the part, you point and say…","o":["Kubuhlungu apha","Intloko ibuhlungu","ndiyaphila"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","isisu","Intloko ibuhlungu"],"a":0}
+]},
+{"id":"xh_b4_5","title":"Checkpoint: the ache","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does isisu mean?","o":["stomach","head","foot"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu","ndiyagula"],"a":0},
+{"t":"mc","q":"Which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
+{"t":"mc","q":"In Intloko ibuhlungu, the i- before buhlungu…","o":["echoes intloko","means here","marks a question"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","intloko","unyawo"],"a":0},
+{"t":"mc","q":"Review — which one means over there?","o":["phaya","apha","phantsi"],"a":0}
+]},
+
+/* ---------- b5 · The clinic ---------- */
+{"id":"xh_b5","title":"The clinic","step":"learn","meta":"Doctor, nurse, medicine","vocab":[["ikliniki","ee-klee-NEE-kee","clinic"],["ugqirha","oo-GQEE-rah","doctor"],["unesi","oo-NEH-see","nurse"],["amayeza","ah-mah-YEH-zah","medicine"]],"ex":[
+{"t":"note","tag":"Where you go","q":"Ikliniki","body":"<p><b>Ikliniki</b> — <i>the clinic</i> — the front door of healthcare in every township and village. When kubuhlungu, this is where the road leads.</p>","eg":[["ikliniki","ee-klee-NEE-kee","clinic"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikliniki","o":["ikliniki","isikolo"],"a":0},
+{"t":"mc","q":"What does ikliniki mean?","o":["clinic","hospital","pharmacy"],"a":0},
+{"t":"note","tag":"Who you meet","q":"Ugqirha and unesi","body":"<p><b>Ugqirha</b> — <i>the doctor</i> — with the big gq click in the middle, one of the hardest and proudest sounds in the language. <b>Unesi</b> — <i>the nurse</i>, who in most clinics is the one who actually sees you.</p>","eg":[["ugqirha","oo-GQEE-rah","doctor"],["unesi","oo-NEH-see","nurse"]]},
+{"t":"li","q":"Which one do you hear?","say":"ugqirha","o":["ugqirha","unesi"],"a":0},
+{"t":"mc","q":"What does unesi mean?","o":["nurse","doctor","patient"],"a":0},
+{"t":"note","tag":"What you leave with","q":"Amayeza","body":"<p><b>Amayeza</b> — <i>medicine</i> — an ama- word, like most things that come in doses. Take them as unesi says, not as the taste suggests.</p>","eg":[["amayeza","ah-mah-YEH-zah","medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","ikliniki"],"a":0},
+{"t":"mc","q":"Which one means medicine?","o":["amayeza","amanzi","amasi"],"a":0}
+]},
+{"id":"xh_b5_2","title":"Hearing the clinic","step":"recognize","meta":"Clinic words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"unesi","o":["unesi","ugqirha","amayeza"],"a":0},
+{"t":"mc","q":"What does ugqirha mean?","o":["doctor","nurse","clinic"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","ikliniki","unesi"],"a":0},
+{"t":"mc","q":"Which one means clinic?","o":["ikliniki","ugqirha","amayeza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
+{"t":"mc","q":"The click in ugqirha is…","o":["q","c","x"],"a":0}
+]},
+{"id":"xh_b5_3","title":"Building the clinic","step":"build","meta":"Staff the ward","vocab":[],"ex":[
+{"t":"fill","q":"Complete: doctor","s":"ug___rha","o":["qi","ci","xi"],"a":0},
+{"t":"wb","q":"Build the word: medicine","a":["amayeza"],"pool":["amayeza","ikliniki","unesi"]},
+{"t":"fill","q":"Complete: clinic","s":"iklini___","o":["ki","ke","ka"],"a":0},
+{"t":"wb","q":"Build the word: nurse","a":["unesi"],"pool":["unesi","ugqirha","amayeza"]},
+{"t":"li","q":"Which one do you hear?","say":"ikliniki","o":["ikliniki","amayeza","ugqirha"],"a":0}
+]},
+{"id":"xh_b5_4","title":"The clinic in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikliniki","clinic"],["ugqirha","doctor"],["unesi","nurse"]]},
+{"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","unesi","ikliniki"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amayeza","medicine"],["ubuhlungu","pain"]]},
+{"t":"mc","q":"In most clinics, the person who actually sees you is…","o":["unesi","ugqirha","utitshala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"unesi","o":["unesi","ugqirha","amayeza"],"a":0}
+]},
+{"id":"xh_b5_5","title":"Checkpoint: the clinic","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does amayeza mean?","o":["medicine","clinic","pain"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
+{"t":"mc","q":"Which one means nurse?","o":["unesi","ugqirha","umfundi"],"a":0},
+{"t":"mc","q":"When kubuhlungu, the road leads to…","o":["ikliniki","ivenkile","irenki"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ikliniki","o":["ikliniki","amayeza","unesi"],"a":0},
+{"t":"mc","q":"Review — which one means change (from the till)?","o":["itshintshi","imali","ixabiso"],"a":0}
+]},
+
+/* ---------- b6 · What the nurse says ---------- */
+{"id":"xh_b6","title":"What the nurse says","step":"learn","meta":"Commands — the bare verb speaks","vocab":[["Yiza apha","YEE-zah AH-pah","come here"],["Hlala phantsi","HLAH-lah PAHN-tsee","sit down"],["Sela amayeza","SEH-lah ah-mah-YEH-zah","take the medicine"]],"ex":[
+{"t":"note","tag":"Commands are bare","q":"Yiza apha","body":"<p>To command, Xhosa strips the verb bare — no ndi-, no u-: <b>Yiza apha</b> — <i>come here</i>. (Za wears a yi- when it stands at the front; most verbs need nothing at all.)</p>","eg":[["Yiza apha","YEE-zah AH-pah","come here"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yiza apha","o":["Yiza apha","ndiza"],"a":0},
+{"t":"mc","q":"Yiza apha means…","o":["come here","go there","stand up"],"a":0},
+{"t":"note","tag":"At the bench","q":"Hlala phantsi","body":"<p><b>Hlala phantsi</b> — <i>sit down</i> — the hlala of ndihlala (I live/stay) plus your phantsi. What the bench outside every clinic door is for.</p>","eg":[["Hlala phantsi","HLAH-lah PAHN-tsee","sit down"]]},
+{"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Yiza apha"],"a":0},
+{"t":"mc","q":"Hlala phantsi means…","o":["sit down","stand up","lie down"],"a":0},
+{"t":"note","tag":"The instruction that matters","q":"Sela amayeza","body":"<p><b>Sela amayeza</b> — <i>take the medicine</i>, literally drink it — Xhosa medicine is drunk even when it is swallowed dry. The sela of ndisela, giving orders now.</p>","eg":[["Sela amayeza","SEH-lah ah-mah-YEH-zah","take the medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Hlala phantsi"],"a":0},
+{"t":"mc","q":"Sela amayeza literally says…","o":["drink the medicine","eat the medicine","buy the medicine"],"a":0}
+]},
+{"id":"xh_b6_2","title":"Hearing the orders","step":"recognize","meta":"Commands by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Sela amayeza","Yiza apha"],"a":0},
+{"t":"mc","q":"What does Sela amayeza mean?","o":["take the medicine","fetch the medicine","the medicine is finished"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yiza apha","o":["Yiza apha","Hlala phantsi","Sela amayeza"],"a":0},
+{"t":"mc","q":"Which one means sit down?","o":["Hlala phantsi","Yiza apha","Sela amayeza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Yiza apha","Hlala phantsi"],"a":0},
+{"t":"mc","q":"Commands drop…","o":["the person prefix","the verb stem","the last vowel"],"a":0}
+]},
+{"id":"xh_b6_3","title":"Building the orders","step":"build","meta":"Give the instruction","vocab":[],"ex":[
+{"t":"fill","q":"Complete: come here","s":"___za apha","o":["Yi","Ndi","U"],"a":0},
+{"t":"wb","q":"Build: sit down","a":["hlala","phantsi"],"pool":["hlala","phantsi","apha"]},
+{"t":"fill","q":"Complete: take the medicine","s":"___la amayeza","o":["Se","Ce","Ze"],"a":0},
+{"t":"wb","q":"Build: come here","a":["yiza","apha"],"pool":["yiza","apha","phantsi"]},
+{"t":"li","q":"Which one do you hear?","say":"Yiza apha","o":["Yiza apha","Sela amayeza","Hlala phantsi"],"a":0}
+]},
+{"id":"xh_b6_4","title":"The orders in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yiza apha","come here"],["Hlala phantsi","sit down"],["Sela amayeza","take the medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Hlala phantsi","Yiza apha"],"a":0},
+{"t":"mc","q":"Put the clinic visit in order: Yiza apha → Hlala phantsi → …","o":["Sela amayeza","Yima!","Ndiyaphila"],"a":0},
+{"t":"mc","q":"The command form of ndisela (I drink) is…","o":["sela","yisela","usela"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Yiza apha","Sela amayeza"],"a":0}
+]},
+{"id":"xh_b6_5","title":"Checkpoint: the orders","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Yiza apha mean?","o":["come here","go away","hurry up"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Yiza apha","Hlala phantsi"],"a":0},
+{"t":"mc","q":"Which one means sit down?","o":["Hlala phantsi","Hlala phezulu","Yiza phantsi"],"a":0},
+{"t":"mc","q":"A command uses the verb…","o":["bare, with no person prefix","with ndi-","with uku-"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Sela amayeza","Yiza apha"],"a":0},
+{"t":"mc","q":"Review — ukuthenga means…","o":["to buy","I buy","I sell"],"a":0}
+]},
+
+/* ---------- b7 · Feeling better ---------- */
+{"id":"xh_b7","title":"Feeling better","step":"learn","meta":"Uziva njani? — and the good answer","vocab":[["Uziva njani?","oo-ZEE-vah NJAH-nee","how do you feel?"],["Ndiziva ngcono","ndee-ZEE-vah NGCAW-naw","I feel better"]],"ex":[
+{"t":"note","tag":"The caring question","q":"Uziva njani?","body":"<p><b>Uziva njani?</b> — <i>how do you feel?</i> — the njani of Unjani, pointed at feelings: u-zi-va, you-yourself-feel. What unesi asks at the follow-up, and what you ask a friend who was ill.</p>","eg":[["Uziva njani?","oo-ZEE-vah NJAH-nee","how do you feel?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","ndiyagula"],"a":0},
+{"t":"mc","q":"Uziva njani? asks…","o":["how do you feel?","how are you?","where does it hurt?"],"a":0},
+{"t":"note","tag":"The answer everyone hopes for","q":"Ndiziva ngcono","body":"<p><b>Ndiziva ngcono</b> — <i>I feel better</i> — with the soft nasal ngc click, the gentlest of the click family. The sentence that ends the clinic story well.</p>","eg":[["Ndiziva ngcono","ndee-ZEE-vah NGCAW-naw","I feel better"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?"],"a":0},
+{"t":"mc","q":"Ndiziva ngcono means…","o":["I feel better","I feel worse","I feel nothing"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono"],"a":0},
+{"t":"mc","q":"The zi in uziva and ndiziva means…","o":["yourself / myself","very","again"],"a":0}
+]},
+{"id":"xh_b7_2","title":"Hearing the recovery","step":"recognize","meta":"Feelings by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","ndiyaphila"],"a":0},
+{"t":"mc","q":"What does Ndiziva ngcono mean?","o":["I feel better","how do you feel?","I am well"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","Unjani?"],"a":0},
+{"t":"mc","q":"Which one means how do you feel?","o":["Uziva njani?","Unjani?","Uya phi?"],"a":0},
+{"t":"li","q":"Listen closely — feel or well — which do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","ndiyaphila"],"a":0},
+{"t":"mc","q":"The ngc in ngcono sounds…","o":["soft and nasal","sharp like q","like plain g"],"a":0}
+]},
+{"id":"xh_b7_3","title":"Building the recovery","step":"build","meta":"Ask and answer","vocab":[],"ex":[
+{"t":"fill","q":"Complete: how do you feel?","s":"Uziva nja___?","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build: I feel better","a":["ndiziva","ngcono"],"pool":["ndiziva","ngcono","njani?"]},
+{"t":"fill","q":"Complete: I feel BETTER","s":"Ndiziva ng___no","o":["co","qo","xo"],"a":0},
+{"t":"wb","q":"Build: how do you feel?","a":["uziva","njani?"],"pool":["uziva","njani?","ngcono"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","kubuhlungu"],"a":0}
+]},
+{"id":"xh_b7_4","title":"The recovery in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uziva njani?","how do you feel?"],["Ndiziva ngcono","I feel better"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","ndiyagula"],"a":0},
+{"t":"match","q":"Match the question to its answer","pairs":[["Uziva njani?","Ndiziva ngcono"],["Unjani?","Ndiyaphila"]]},
+{"t":"mc","q":"The full clinic arc: ndiyagula → Sela amayeza → …","o":["Ndiziva ngcono","Kubuhlungu apha","Yiza apha"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","ubuhlungu"],"a":0}
+]},
+{"id":"xh_b7_5","title":"Checkpoint: Zone 10 complete","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Uziva njani? — the happy answer is…","o":["Ndiziva ngcono","ndiyagula","kubuhlungu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","Unjani?"],"a":0},
+{"t":"mc","q":"Review — the plural of iliso is…","o":["amehlo","amaliso","iziliso"],"a":0},
+{"t":"mc","q":"Review — which one means take the medicine?","o":["Sela amayeza","Hlala phantsi","Yiza apha"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
+{"t":"mc","q":"Review — which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
+{"t":"mc","q":"Review — which one means learners?","o":["abafundi","ootitshala","umfundi"],"a":0}
 ]}
 ];
 
@@ -2757,9 +3058,11 @@ const XH_UNITS=[
 {"n":8,"t":"Shopping and money","d":"Prices, buying, pointing words — and the spaza counter","lessons":["xh_m1","xh_m1_2","xh_m1_3","xh_m1_4","xh_m1_5","xh_m2","xh_m2_2","xh_m2_3","xh_m2_4","xh_m2_5","xh_m3","xh_m3_2","xh_m3_3","xh_m3_4","xh_m3_5","xh_m4","xh_m4_2","xh_m4_3","xh_m4_4","xh_m4_5","xh_m5","xh_m5_2","xh_m5_3","xh_m5_4","xh_m5_5","xh_m6","xh_m6_2","xh_m6_3","xh_m6_4","xh_m6_5","xh_m7","xh_m7_2","xh_m7_3","xh_m7_4","xh_m7_5"]}
 ,
 {"n":9,"t":"Work and school","d":"Jobs, the classroom, the fourth plural pair — and how the street says work","lessons":["xh_w1","xh_w1_2","xh_w1_3","xh_w1_4","xh_w1_5","xh_w2","xh_w2_2","xh_w2_3","xh_w2_4","xh_w2_5","xh_w3","xh_w3_2","xh_w3_3","xh_w3_4","xh_w3_5","xh_w4","xh_w4_2","xh_w4_3","xh_w4_4","xh_w4_5","xh_w5","xh_w5_2","xh_w5_3","xh_w5_4","xh_w5_5","xh_w6","xh_w6_2","xh_w6_3","xh_w6_4","xh_w6_5","xh_w7","xh_w7_2","xh_w7_3","xh_w7_4","xh_w7_5"]}
+,
+{"n":10,"t":"Body and health","d":"The body, the clinic, commands — and feeling better","lessons":["xh_b1","xh_b1_2","xh_b1_3","xh_b1_4","xh_b1_5","xh_b2","xh_b2_2","xh_b2_3","xh_b2_4","xh_b2_5","xh_b3","xh_b3_2","xh_b3_3","xh_b3_4","xh_b3_5","xh_b4","xh_b4_2","xh_b4_3","xh_b4_4","xh_b4_5","xh_b5","xh_b5_2","xh_b5_3","xh_b5_4","xh_b5_5","xh_b6","xh_b6_2","xh_b6_3","xh_b6_4","xh_b6_5","xh_b7","xh_b7_2","xh_b7_3","xh_b7_4","xh_b7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela","xh_b1":"intloko","xh_b2":"amehlo","xh_b3":"kubuhlungu","xh_b4":"apha!","xh_b5":"ikliniki","xh_b6":"yiza","xh_b7":"ngcono"};
 
 const XH_SRS_SEED=[];
 
