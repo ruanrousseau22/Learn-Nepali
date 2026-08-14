@@ -680,7 +680,12 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means father?","o":["utata","utatomkhulu","umama"],"a":0},
 {"t":"mc","q":"An elder woman drops her bag. After helping, she thanks you and you say…","o":["Akunani mama","Hamba kakuhle","Ungubani?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utatomkhulu","o":["utatomkhulu","utata","umakhulu"],"a":0},
-{"t":"mc","q":"Review — the friendly address for a young woman is…","o":["sisi","mama","wena"],"a":0}
+{"t":"mc","q":"Review — the friendly address for a young woman is…","o":["sisi","mama","wena"],"a":0},
+{"t":"mc","q":"Review — which means “yes”?","o":["ewe","andiqondi","icici"],"a":0},
+{"t":"mc","q":"Review — which means “ask for”?","o":["cela","nceda","qonda"],"a":0},
+{"t":"mc","q":"Review — which means “time”?","o":["ixesha","imoto","incwadi"],"a":0},
+{"t":"mc","q":"Review — which means “book”?","o":["incwadi","iqhude","into"],"a":0},
+{"t":"mc","q":"Review — which means “hello (to one person)”?","o":["molo","ixesha","umngqusho"],"a":0}
 ]},
 
 /* ---------- f2 · Brothers & sisters ---------- */
@@ -723,7 +728,12 @@ const XH_LESSONS=[
 {"t":"mc","q":"The plural of usisi is…","o":["oosisi","abasisi","izisisi"],"a":0},
 {"t":"mc","q":"Which one means brother?","o":["ubhuti","umzala","utata"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","oosisi","umzala"],"a":0},
-{"t":"mc","q":"Review — which one means grandmother?","o":["umakhulu","utatomkhulu","umama"],"a":0}
+{"t":"mc","q":"Review — which one means grandmother?","o":["umakhulu","utatomkhulu","umama"],"a":0},
+{"t":"mc","q":"Review — which means “no”?","o":["hayi","molweni","kakhulu"],"a":0},
+{"t":"mc","q":"Review — which means “sing”?","o":["cula","xoxa","cima"],"a":0},
+{"t":"mc","q":"Review — which means “chat”?","o":["xoxa","andiqondi","tshintsha"],"a":0},
+{"t":"mc","q":"Review — which means “rooster”?","o":["iqhude","indlu","icici"],"a":0},
+{"t":"mc","q":"Review — which means “hello (to several people)”?","o":["molweni","incwadi","imoto"],"a":0}
 ]},
 
 /* ---------- f3 · My family ---------- */
@@ -766,7 +776,12 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means your brother?","o":["ubhuti wakho","ubhuti wam","oobhuti"],"a":0},
 {"t":"mc","q":"umama wam means…","o":["my mother","your mother","my grandmother"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utata wakho","o":["utata wakho","utata","umama wam"],"a":0},
-{"t":"mc","q":"Review — which one means people?","o":["abantu","abazali","abantwana"],"a":0}
+{"t":"mc","q":"Review — which one means people?","o":["abantu","abazali","abantwana"],"a":0},
+{"t":"mc","q":"Review — which means “go!”","o":["hamba","iqanda","hlala"],"a":0},
+{"t":"mc","q":"Review — which means “switch off”?","o":["cima","incwadi","ingca"],"a":0},
+{"t":"mc","q":"Review — which means “frog”?","o":["ixoxo","qala","xela"],"a":0},
+{"t":"mc","q":"Review — which means “samp and beans”?","o":["umngqusho","molo","iqela"],"a":0},
+{"t":"mc","q":"Review — which means “very much”?","o":["kakhulu","molo","ukutya"],"a":0}
 ]},
 
 /* ---------- f4 · Who is this? ---------- */
@@ -809,7 +824,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means he or she?","o":["yena","lo","wena"],"a":0},
 {"t":"mc","q":"A friend points at your photo and asks Ngubani lo? about your mom. You say…","o":["Lo ngumama wam","Umama wakho","Ngubani"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"nguye","o":["nguye","yena","lam"],"a":0},
-{"t":"mc","q":"Review — which one means your father?","o":["utata wakho","utata wam","utatomkhulu"],"a":0}
+{"t":"mc","q":"Review — which one means your father?","o":["utata wakho","utata wam","utatomkhulu"],"a":0},
+{"t":"mc","q":"Review — which means “come!”","o":["iza","molweni","iqhude"],"a":0},
+{"t":"mc","q":"Review — which means “earring”?","o":["icici","ingca","umngqusho"],"a":0},
+{"t":"mc","q":"Review — which means “begin”?","o":["qala","ixesha","hayi"],"a":0},
+{"t":"mc","q":"Review — which means “grass”?","o":["ingca","molo","iqanda"],"a":0}
 ]},
 
 /* ---------- f5 · Respect & clan names ---------- */
@@ -852,7 +871,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"A clan name older than the surname is the…","o":["isiduko","igama","intsapho"],"a":0},
 {"t":"mc","q":"You need to pass an elder man in a full taxi. You say…","o":["Uxolo tata","Hamba","Uxolo bhuti"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"amaXhosa","o":["amaXhosa","isiduko","intlonipho"],"a":0},
-{"t":"mc","q":"Review — intsapho means…","o":["family","parents","respect"],"a":0}
+{"t":"mc","q":"Review — intsapho means…","o":["family","parents","respect"],"a":0},
+{"t":"mc","q":"Review — which means “car”?","o":["imoto","inyama","ingca"],"a":0},
+{"t":"mc","q":"Review — which means “think”?","o":["cinga","molweni","uxolo"],"a":0},
+{"t":"mc","q":"Review — which means “I do not understand”?","o":["andiqondi","into","isiXhosa"],"a":0},
+{"t":"mc","q":"Review — which means “sit down”?","o":["hlala","incwadi","kakhulu"],"a":0}
 ]},
 
 /* ---------- f6 · Is anyone home? ---------- */
@@ -895,7 +918,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"You knock; the child says Akekho. Father is…","o":["not here","at home","on his way"],"a":0},
 {"t":"mc","q":"Which one means home?","o":["ikhaya","indlu","idolophu"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uphi umama?","o":["Uphi umama?","Ukhona utata?","akekho"],"a":0},
-{"t":"mc","q":"Review — Khayelitsha means…","o":["new home","our pride","big town"],"a":0}
+{"t":"mc","q":"Review — Khayelitsha means…","o":["new home","our pride","big town"],"a":0},
+{"t":"mc","q":"Review — which means “thing”?","o":["into","xela","inja"],"a":0},
+{"t":"mc","q":"Review — which means “tell”?","o":["xela","hayi","umngqusho"],"a":0},
+{"t":"mc","q":"Review — which means “team”?","o":["iqela","molweni","ixesha"],"a":0},
+{"t":"mc","q":"Review — which means “house”?","o":["indlu","kakhulu","cula"],"a":0}
 ]},
 
 /* ---------- f7 · Family conversation ---------- */
@@ -939,7 +966,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — Lo ngumama wam means…","o":["this is my mother","where is my mother?","your mother is here"],"a":0},
 {"t":"mc","q":"Review — the clan name older than a surname is the…","o":["isiduko","igama","intlonipho"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"akekho","o":["akekho","ukhona","usekhaya"],"a":0},
-{"t":"mc","q":"Review — the plural of ubhuti is…","o":["oobhuti","ababhuti","abahuti"],"a":0}
+{"t":"mc","q":"Review — the plural of ubhuti is…","o":["oobhuti","ababhuti","abahuti"],"a":0},
+{"t":"mc","q":"Review — which means “sorry”?","o":["uxolo","ewe","qala"],"a":0},
+{"t":"mc","q":"Review — which means “please”?","o":["nceda","iqela","kakhulu"],"a":0},
+{"t":"mc","q":"Review — which means “dog”?","o":["inja","into","cima"],"a":0}
 ]},
 
 /* ---------- n1 · Numbers 1–5 ---------- */
@@ -981,7 +1011,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one is 5?","o":["zintlanu","zintathu","zine"],"a":0},
 {"t":"mc","q":"Count up: zintathu, zine, … what comes next?","o":["zintlanu","zimbini","inye"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"zintlanu","o":["zintlanu","zine","zintathu"],"a":0},
-{"t":"mc","q":"Review — which one means all of us?","o":["sonke","kunye","sihlala"],"a":0}
+{"t":"mc","q":"Review — which one means all of us?","o":["sonke","kunye","sihlala"],"a":0},
+{"t":"mc","q":"Review — which means “how is it going?”","o":["kunjani","abantwana","ilokishi"],"a":0},
+{"t":"mc","q":"Review — which means “my”?","o":["lam","eGoli","eKhayelitsha"],"a":0},
+{"t":"mc","q":"Review — which means “children”?","o":["abantwana","eGoli","ndikhona"],"a":0},
+{"t":"mc","q":"Review — which means “where are you from?”","o":["Uvela phi?","Uyaqonda?","Igama lakho ngubani?"],"a":0}
 ]},
 
 /* ---------- n2 · Numbers 6–10 ---------- */
@@ -1023,7 +1057,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one is 9?","o":["lithoba","lishumi","sibhozo"],"a":0},
 {"t":"mc","q":"What is lishumi?","o":["10","9","6"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"sixhenxe","o":["sixhenxe","sibhozo","lithoba"],"a":0},
-{"t":"mc","q":"Review — what is zintlanu?","o":["5","4","6"],"a":0}
+{"t":"mc","q":"Review — what is zintlanu?","o":["5","4","6"],"a":0},
+{"t":"mc","q":"Review — which means “I am fine”?","o":["ndiyaphila","ndithetha","eKhayelitsha"],"a":0},
+{"t":"mc","q":"Review — which means “your”?","o":["lakho","kancinci","eKapa"],"a":0},
+{"t":"mc","q":"Review — which means “friend”?","o":["umhlobo","kunjani","eGugulethu"],"a":0},
+{"t":"mc","q":"Review — which means “I come from”?","o":["ndivela","ndikhona","idolophu"],"a":0}
 ]},
 
 /* ---------- n3 · The working week ---------- */
@@ -1066,7 +1104,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which day carries the number three?","o":["uLwesithathu","uLwesibini","uLwesine"],"a":0},
 {"t":"mc","q":"uMvulo comes from vula, to…","o":["open","close","rest"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uMvulo","o":["uMvulo","uLwesine","uLwesithathu"],"a":0},
-{"t":"mc","q":"Review — what is sixhenxe?","o":["7","6","8"],"a":0}
+{"t":"mc","q":"Review — what is sixhenxe?","o":["7","6","8"],"a":0},
+{"t":"mc","q":"Review — which means “I am okay”?","o":["ndikhona","abantwana","wena"],"a":0},
+{"t":"mc","q":"Review — which means “what is your name?”","o":["Igama lakho ngubani?","Uvela phi?","phi?"],"a":0},
+{"t":"mc","q":"Review — which means “bro (young man)”?","o":["bhuti","sisi","eGugulethu"],"a":0},
+{"t":"mc","q":"Review — which means “in Cape Town”?","o":["eKapa","igama","ndithetha"],"a":0}
 ]},
 
 /* ---------- n4 · Weekend & today ---------- */
@@ -1109,12 +1151,16 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one is Saturday?","o":["uMgqibelo","iCawa","uLwesihlanu"],"a":0},
 {"t":"mc","q":"iCawa shares its name with…","o":["church","school","market"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"namhlanje","o":["namhlanje","impelaveki","iCawa"],"a":0},
-{"t":"mc","q":"Review — uLwesine is…","o":["Thursday","Tuesday","Friday"],"a":0}
+{"t":"mc","q":"Review — uLwesine is…","o":["Thursday","Tuesday","Friday"],"a":0},
+{"t":"mc","q":"Review — which means “you”?","o":["wena","bhuti","ndikhona"],"a":0},
+{"t":"mc","q":"Review — which means “I am Sipho”?","o":["NdinguSipho","ilokishi","lakho"],"a":0},
+{"t":"mc","q":"Review — which means “sis (young woman)”?","o":["sisi","umntwana","eMonti"],"a":0},
+{"t":"mc","q":"Review — which means “in Johannesburg”?","o":["eGoli","eMonti","ndithetha"],"a":0}
 ]},
 
 /* ---------- n5 · Yesterday, tomorrow, now ---------- */
 {"id":"xh_n5","title":"Yesterday and tomorrow","step":"learn","meta":"Placing yourself in time","vocab":[["izolo","ee-ZAW-law","yesterday"],["ngomso","NGAWM-saw","tomorrow"],["ngoku","NGAW-koo","now"],["kusasa","koo-SAH-sah","in the morning"],["ebusuku","eh-boo-SOO-koo","at night"]],"ex":[
-{"t":"note","tag":"Three days","q":"Izolo, namhlanje, ngomso","body":"<p>The time line of every conversation: <b>izolo</b> — yesterday, namhlanje — today (you know it), <b>ngomso</b> — tomorrow. Sobonana ngomso — see you tomorrow — you will hear it at every parting.</p>","eg":[["izolo","ee-ZAW-law","yesterday"],["ngomso","NGAWM-saw","tomorrow"]]},
+{"t":"note","tag":"Three days","q":"Izolo, namhlanje, ngomso","body":"<p>The time line of every conversation: <b>izolo</b> — yesterday, namhlanje — today (you know it), <b>ngomso</b> — tomorrow. Sobonana ngomso — see you tomorrow — you will hear it at every parting.</p>","eg":[["izolo","ee-ZAW-law","yesterday"],["ngomso","NGAWM-saw","tomorrow"],["Sobonana ngomso","saw-baw-NAH-nah NGAWM-saw","see you tomorrow"]]},
 {"t":"li","q":"Which one do you hear?","say":"ngomso","o":["ngomso","izolo"],"a":0},
 {"t":"mc","q":"What does izolo mean?","o":["yesterday","tomorrow","today"],"a":0},
 {"t":"note","tag":"Right now","q":"Ngoku","body":"<p><b>Ngoku</b> is <i>now</i> — and in Cape Town speech you will hear <i>ngoku ngoku</i>, now-now, which somehow means <i>very soon but not quite now</i>. South African time has its own grammar.</p>","eg":[["ngoku","NGAW-koo","now"]]},
@@ -1152,7 +1198,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means in the morning?","o":["kusasa","ebusuku","izolo"],"a":0},
 {"t":"mc","q":"A friend says Sobonana kusasa. You will meet…","o":["in the morning","at night","yesterday"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ngoku","o":["ngoku","kusasa","izolo"],"a":0},
-{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","Sunday"],"a":0}
+{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","Sunday"],"a":0},
+{"t":"mc","q":"Review — which means “you too”?","o":["nawe","umntu","eMonti"],"a":0},
+{"t":"mc","q":"Review — which means “who are you?”","o":["Ungubani?","Uhlala phi?","phi?"],"a":0},
+{"t":"mc","q":"Review — which means “no problem”?","o":["akunani","idolophu","ndihlala"],"a":0},
+{"t":"mc","q":"Review — which means “in East London”?","o":["eMonti","kancinci","unjani"],"a":0}
 ]},
 
 /* ---------- n6 · When? ---------- */
@@ -1160,7 +1210,7 @@ const XH_LESSONS=[
 {"t":"note","tag":"The question","q":"Nini — when?","body":"<p><b>Nini?</b> is <i>when?</i> — and with iza (come) from your first lessons: <b>Uza nini?</b> — <i>when are you coming?</i> — the question every Xhosa household asks visitors.</p>","eg":[["nini?","NEE-nee","when?"],["Uza nini?","OO-zah NEE-nee","when are you coming?"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","nini?"],"a":0},
 {"t":"mc","q":"Uza nini? asks…","o":["when are you coming?","where are you going?","who is coming?"],"a":0},
-{"t":"note","tag":"On a day","q":"Ngo- and nge- dress the days","body":"<p>To say ON a day, days take <b>ngo-</b> or <b>nge-</b>: <b>ngoMvulo</b> — <i>on Monday</i>, <b>ngeCawa</b> — <i>on Sunday</i>. So: Ndiza ngoMvulo — I am coming on Monday.</p>","eg":[["ngoMvulo","ngawm-VOO-law","on Monday"],["ngeCawa","ngeh-CAH-wah","on Sunday"]]},
+{"t":"note","tag":"On a day","q":"Ngo- and nge- dress the days","body":"<p>To say ON a day, days take <b>ngo-</b> or <b>nge-</b>: <b>ngoMvulo</b> — <i>on Monday</i>, <b>ngeCawa</b> — <i>on Sunday</i>. So: Ndiza ngoMvulo — I am coming on Monday.</p>","eg":[["ngoMvulo","ngawm-VOO-law","on Monday"],["ngeCawa","ngeh-CAH-wah","on Sunday"],["Ndiza ngoMvulo","NDEE-zah ngawm-VOO-law","I am coming on Monday"]]},
 {"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","ngeCawa"],"a":0},
 {"t":"mc","q":"ngeCawa means…","o":["on Sunday","on Monday","next week"],"a":0},
 {"t":"note","tag":"Often","q":"Kaninzi — many times","body":"<p><b>Kaninzi</b> — <i>often, many times</i>. Ndiza kaninzi — I come often. The ka- makes a how-many-times word; ninzi is <i>many</i>.</p>","eg":[["kaninzi","kah-NEEN-zee","often"]]},
@@ -1195,7 +1245,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means often?","o":["kaninzi","nini?","ngoku"],"a":0},
 {"t":"mc","q":"A friend asks Uza nini? You will come on Sunday, so…","o":["Ndiza ngeCawa","Ndiza izolo","Uza ngoMvulo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","nini?","ngoMvulo"],"a":0},
-{"t":"mc","q":"Review — what does ngomso mean?","o":["tomorrow","yesterday","today"],"a":0}
+{"t":"mc","q":"Review — what does ngomso mean?","o":["tomorrow","yesterday","today"],"a":0},
+{"t":"mc","q":"Review — which means “name”?","o":["igama","ndivela","NdinguSipho"],"a":0},
+{"t":"mc","q":"Review — which means “man”?","o":["indoda","ndihlala","eKhayelitsha"],"a":0},
+{"t":"mc","q":"Review — which means “excuse me, bro”?","o":["Uxolo bhuti","Enkosi sisi","Ndifunda isiXhosa"],"a":0},
+{"t":"mc","q":"Review — which means “where do you live?”","o":["Uhlala phi?","Igama lakho ngubani?","Uthetha isiXhosa?"],"a":0}
 ]},
 
 /* ---------- n7 · Day, month, year ---------- */
@@ -1238,7 +1292,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — uLwesibini carries the number two — it is…","o":["Tuesday","Wednesday","Monday"],"a":0},
 {"t":"li","q":"Review — which day do you hear?","say":"iCawa","o":["iCawa","uMgqibelo","uMvulo"],"a":0},
 {"t":"mc","q":"Review — Sobonana ngomso means see you…","o":["tomorrow","in the morning","on Sunday"],"a":0},
-{"t":"mc","q":"The sentence that gets you fluent…","o":["Ndifunda isiXhosa yonke imihla","Andiqondi","Hamba kakuhle"],"a":0}
+{"t":"mc","q":"The sentence that gets you fluent…","o":["Ndifunda isiXhosa yonke imihla","Andiqondi","Hamba kakuhle"],"a":0},
+{"t":"mc","q":"Review — which means “child”?","o":["umntwana","igama","wena"],"a":0},
+{"t":"mc","q":"Review — which means “thank you, sis”?","o":["Enkosi sisi","Ndifunda isiXhosa","Uxolo bhuti"],"a":0},
+{"t":"mc","q":"Review — which means “I live”?","o":["ndihlala","kancinci","sisi"],"a":0}
 ]},
 
 /* ---------- d1 · Hungry & thirsty ---------- */
@@ -1280,7 +1337,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"The polite request for water is…","o":["Ndicela amanzi","Ndifuna amanzi","Amanzi ngoku"],"a":0},
 {"t":"mc","q":"Which one means I want?","o":["ndifuna","ndilambile","ndicela"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndinxaniwe","o":["ndinxaniwe","amanzi","Ndicela amanzi"],"a":0},
-{"t":"mc","q":"Review — what does ukutya mean?","o":["food","water","meat"],"a":0}
+{"t":"mc","q":"Review — what does ukutya mean?","o":["food","water","meat"],"a":0},
+{"t":"mc","q":"Review — which means “mother”?","o":["umama","ubhuti","abazali"],"a":0},
+{"t":"mc","q":"Review — which means “brother”?","o":["ubhuti","utatomkhulu","umakhulu"],"a":0},
+{"t":"mc","q":"Review — which means “my mother”?","o":["umama wam","Enkosi mama","Molo mama"],"a":0},
+{"t":"mc","q":"Review — which means “this is my mother”?","o":["Lo ngumama wam","ubhuti wakho","Uxolo tata"],"a":0}
 ]},
 
 /* ---------- d2 · The staples ---------- */
@@ -1323,7 +1384,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means bread?","o":["isonka","irayisi","ikofu"],"a":0},
 {"t":"mc","q":"Ndicela ikofu means…","o":["may I have coffee","I am drinking coffee","the coffee is hot"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ikofu","o":["ikofu","isonka","irayisi"],"a":0},
-{"t":"mc","q":"Review — which one means I am hungry?","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0}
+{"t":"mc","q":"Review — which one means I am hungry?","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0},
+{"t":"mc","q":"Review — which means “father”?","o":["utata","oobhuti","abazali"],"a":0},
+{"t":"mc","q":"Review — which means “sister”?","o":["usisi","amaXhosa","utatomkhulu"],"a":0},
+{"t":"mc","q":"Review — which means “your father”?","o":["utata wakho","Lo ngumama wam","umama wam"],"a":0},
+{"t":"mc","q":"Review — which means “this is my father”?","o":["Lo ngutata wam","ubhuti wakho","Enkosi mama"],"a":0}
 ]},
 
 /* ---------- d3 · Eating & drinking ---------- */
@@ -1365,7 +1430,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Someone asks Utya ntoni? You are eating bread…","o":["Nditya isonka","Ndisela isonka","Ndicela iti"],"a":0},
 {"t":"mc","q":"Which pair is one click apart?","o":["cela and sela","tya and sela","funa and cela"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","ntoni?","ndisela"],"a":0},
-{"t":"mc","q":"Review — which one means sour milk?","o":["amasi","amanzi","iti"],"a":0}
+{"t":"mc","q":"Review — which one means sour milk?","o":["amasi","amanzi","iti"],"a":0},
+{"t":"mc","q":"Review — which means “grandmother”?","o":["umakhulu","umzala","umama"],"a":0},
+{"t":"mc","q":"Review — which means “brothers”?","o":["oobhuti","kunye","nguye"],"a":0},
+{"t":"mc","q":"Review — which means “my sister”?","o":["usisi wam","utata wakho","Uxolo tata"],"a":0},
+{"t":"mc","q":"Review — which means “it is him”?","o":["nguye","oobhuti","bahlala"],"a":0}
 ]},
 
 /* ---------- d4 · Meat & the braai ---------- */
@@ -1407,7 +1476,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means fish?","o":["intlanzi","inkukhu","inyama"],"a":0},
 {"t":"mc","q":"Many eggs are…","o":["amaqanda","iqanda","amaqhude"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ishisanyama","o":["ishisanyama","amaqanda","Nditya inyama"],"a":0},
-{"t":"mc","q":"Review — Utya ntoni? asks…","o":["what are you eating?","what do you want?","are you hungry?"],"a":0}
+{"t":"mc","q":"Review — Utya ntoni? asks…","o":["what are you eating?","what do you want?","are you hungry?"],"a":0},
+{"t":"mc","q":"Review — which means “grandfather”?","o":["utatomkhulu","kunye","umXhosa"],"a":0},
+{"t":"mc","q":"Review — which means “sisters”?","o":["oosisi","utatomkhulu","usekhaya"],"a":0},
+{"t":"mc","q":"Review — which means “your brother”?","o":["ubhuti wakho","usisi wam","Lo ngumama wam"],"a":0},
+{"t":"mc","q":"Review — which means “respect”?","o":["intlonipho","bahlala","usisi"],"a":0}
 ]},
 
 /* ---------- d5 · From the garden ---------- */
@@ -1450,7 +1523,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means onion?","o":["itswele","itumato","isiqhamo"],"a":0},
 {"t":"mc","q":"The maize behind umngqusho is…","o":["umbona","irayisi","isonka"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","umbona","itumato"],"a":0},
-{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","inyama"],"a":0}
+{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","inyama"],"a":0},
+{"t":"mc","q":"Review — which means “hello sir”?","o":["Molo tata","Lo ngumama wam","umama wam"],"a":0},
+{"t":"mc","q":"Review — which means “cousin”?","o":["umzala","isiduko","yena"],"a":0},
+{"t":"mc","q":"Review — which means “this person”?","o":["lo","akekho","umakhulu"],"a":0},
+{"t":"mc","q":"Review — which means “clan name”?","o":["isiduko","yena","intsapho"],"a":0}
 ]},
 
 /* ---------- d6 · I like it — and I do not ---------- */
@@ -1492,7 +1569,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I do not like?","o":["andithandi","ndithanda","andiqondi"],"a":0},
 {"t":"mc","q":"Someone offers amasi and you love it…","o":["Ndithanda amasi kakhulu","Andithandi amasi","Uthanda ntoni?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","ntoni?"],"a":0},
-{"t":"mc","q":"Review — which one means fruit?","o":["isiqhamo","itswele","umbona"],"a":0}
+{"t":"mc","q":"Review — which one means fruit?","o":["isiqhamo","itswele","umbona"],"a":0},
+{"t":"mc","q":"Review — which means “hello madam”?","o":["Molo mama","Uxolo tata","Lo ngutata wam"],"a":0},
+{"t":"mc","q":"Review — which means “family”?","o":["intsapho","oobhuti","ubhuti"],"a":0},
+{"t":"mc","q":"Review — which means “who is this?”","o":["Ngubani lo?","Uphi umama?","Ukhona utata?"],"a":0},
+{"t":"mc","q":"Review — which means “a Xhosa person”?","o":["umXhosa","abazali","umama"],"a":0}
 ]},
 
 /* ---------- d7 · At the table ---------- */
@@ -1535,7 +1616,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means I do not like?","o":["andithandi","ndithanda","andiqondi"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"amasi","o":["amasi","amanzi","iti"],"a":0},
 {"t":"mc","q":"Review — an ishisanyama serves…","o":["meat from the fire","fruit and veg","tea and bread"],"a":0},
-{"t":"mc","q":"Review — the plural of iqanda is…","o":["amaqanda","iziqanda","ooqanda"],"a":0}
+{"t":"mc","q":"Review — the plural of iqanda is…","o":["amaqanda","iziqanda","ooqanda"],"a":0},
+{"t":"mc","q":"Review — which means “parents”?","o":["abazali","ikhaya","utata"],"a":0},
+{"t":"mc","q":"Review — which means “he or she”?","o":["yena","ubhuti","ukhona"],"a":0},
+{"t":"mc","q":"Review — which means “excuse me, sir”?","o":["Uxolo tata","ubhuti wakho","Lo ngutata wam"],"a":0}
 ]},
 
 /* ---------- h1 · Rooms of the house ---------- */
@@ -1578,7 +1662,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one is the bedroom?","o":["igumbi lokulala","ikhitshi","iyadi"],"a":0},
 {"t":"mc","q":"ifestile came long ago from…","o":["Afrikaans","English","Zulu"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","ifestile","igumbi lokulala"],"a":0},
-{"t":"mc","q":"Review — which one means door?","o":["ucango","ifestile","igumbi"],"a":0}
+{"t":"mc","q":"Review — which one means door?","o":["ucango","ifestile","igumbi"],"a":0},
+{"t":"mc","q":"Review — which means “1”?","o":["inye","zimbini","zintathu"],"a":0},
+{"t":"mc","q":"Review — which means “7”?","o":["sixhenxe","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Thursday”?","o":["uLwesine","uMvulo","uLwesibini"],"a":0},
+{"t":"mc","q":"Review — which means “in the morning”?","o":["kusasa","ngomso","ngoMvulo"],"a":0}
 ]},
 
 /* ---------- h2 · Things at home ---------- */
@@ -1621,7 +1709,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means bed?","o":["ibhedi","itafile","igumbi"],"a":0},
 {"t":"mc","q":"umbane means…","o":["electricity","water","gas"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","ibhedi","isitya"],"a":0},
-{"t":"mc","q":"Review — which one means kitchen?","o":["ikhitshi","igumbi","iyadi"],"a":0}
+{"t":"mc","q":"Review — which one means kitchen?","o":["ikhitshi","igumbi","iyadi"],"a":0},
+{"t":"mc","q":"Review — which means “2”?","o":["zimbini","inye","zintathu"],"a":0},
+{"t":"mc","q":"Review — which means “8”?","o":["sibhozo","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Friday”?","o":["uLwesihlanu","uMvulo","uLwesibini"],"a":0},
+{"t":"mc","q":"Review — which means “when?”","o":["nini?","Utya ntoni?","Uza kuya phi?"],"a":0}
 ]},
 
 /* ---------- h3 · One thing, many things ---------- */
@@ -1663,7 +1755,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"What does izipili mean?","o":["mirrors","dishes","chairs"],"a":0},
 {"t":"mc","q":"isi- words go plural with…","o":["izi-","aba-","ama-"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","izitya","isitulo"],"a":0},
-{"t":"mc","q":"Review — which one means electricity?","o":["umbane","isipili","ifestile"],"a":0}
+{"t":"mc","q":"Review — which one means electricity?","o":["umbane","isipili","ifestile"],"a":0},
+{"t":"mc","q":"Review — which means “3”?","o":["zintathu","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “9”?","o":["lithoba","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Saturday”?","o":["uMgqibelo","uMvulo","uLwesibini"],"a":0},
+{"t":"mc","q":"Review — which means “when are you coming?”","o":["Uza nini?","Uthanda ntoni?","Uthetha ukuthini?"],"a":0}
 ]},
 
 /* ---------- h4 · Where is it? ---------- */
@@ -1706,7 +1802,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means here?","o":["apha","phaya","phezulu"],"a":0},
 {"t":"mc","q":"Iphi imoto? — Iphaya! The car is…","o":["over there","here","gone"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Iphi imoto?","o":["Iphi imoto?","apha","phaya"],"a":0},
-{"t":"mc","q":"Review — the plural of isipili is…","o":["izipili","amapili","oopili"],"a":0}
+{"t":"mc","q":"Review — the plural of isipili is…","o":["izipili","amapili","oopili"],"a":0},
+{"t":"mc","q":"Review — which means “4”?","o":["zine","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “10”?","o":["lishumi","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Sunday”?","o":["iCawa","uMvulo","uLwesibini"],"a":0},
+{"t":"mc","q":"Review — which means “on Monday”?","o":["ngoMvulo","kusasa","uLwesithathu"],"a":0}
 ]},
 
 /* ---------- h5 · In the kitchen ---------- */
@@ -1749,7 +1849,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means spoon?","o":["icephe","imela","ikomityi"],"a":0},
 {"t":"mc","q":"Ndicela ikomityi yeti would get you…","o":["a cup of tea","a bottle of water","a pot of food"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"icephe","o":["icephe","ikomityi","imbiza"],"a":0},
-{"t":"mc","q":"Review — which one means dishes?","o":["izitya","izitulo","izipili"],"a":0}
+{"t":"mc","q":"Review — which one means dishes?","o":["izitya","izitulo","izipili"],"a":0},
+{"t":"mc","q":"Review — which means “5”?","o":["zintlanu","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Monday”?","o":["uMvulo","uLwesibini","uLwesithathu"],"a":0},
+{"t":"mc","q":"Review — which means “weekend”?","o":["impelaveki","usuku","kaninzi"],"a":0},
+{"t":"mc","q":"Review — which means “on Sunday”?","o":["ngeCawa","uLwesine","iCawa"],"a":0}
 ]},
 
 /* ---------- h6 · What you do at home ---------- */
@@ -1792,7 +1896,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
 {"t":"mc","q":"Ndilala … (at night). Complete it.","o":["ebusuku","kusasa","namhlanje"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndipheka","ndihlamba"],"a":0},
-{"t":"mc","q":"Review — which one means pot?","o":["imbiza","ikomityi","isitya"],"a":0}
+{"t":"mc","q":"Review — which one means pot?","o":["imbiza","ikomityi","isitya"],"a":0},
+{"t":"mc","q":"Review — which means “6”?","o":["zintandathu","inye","zimbini"],"a":0},
+{"t":"mc","q":"Review — which means “Tuesday”?","o":["uLwesibini","uMvulo","uLwesithathu"],"a":0},
+{"t":"mc","q":"Review — which means “week”?","o":["iveki","kusasa","uMgqibelo"],"a":0},
+{"t":"mc","q":"Review — which means “often”?","o":["kaninzi","uMvulo","inyanga"],"a":0}
 ]},
 
 /* ---------- h7 · In the kitchen, in the house ---------- */
@@ -1835,7 +1943,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means over there?","o":["phaya","apha","phantsi"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"imbiza","o":["imbiza","ikomityi","umbane"],"a":0},
 {"t":"mc","q":"Review — which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
-{"t":"mc","q":"Review — when umbane goes off it is…","o":["load-shedding","impelaveki","ishisanyama"],"a":0}
+{"t":"mc","q":"Review — when umbane goes off it is…","o":["load-shedding","impelaveki","ishisanyama"],"a":0},
+{"t":"mc","q":"Review — which means “Wednesday”?","o":["uLwesithathu","uMvulo","uLwesibini"],"a":0},
+{"t":"mc","q":"Review — which means “today”?","o":["namhlanje","uLwesibini","impelaveki"],"a":0},
+{"t":"mc","q":"Review — which means “day”?","o":["usuku","uLwesithathu","kusasa"],"a":0}
 ]},
 
 /* ---------- t1 · Places in town ---------- */
@@ -1878,7 +1989,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means road?","o":["indlela","iteksi","idolophu"],"a":0},
 {"t":"mc","q":"ivenkile and idolophu both came from…","o":["Afrikaans","English","Zulu"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","isikolo","indlela"],"a":0},
-{"t":"mc","q":"Review — which one means bread?","o":["isonka","amasi","irayisi"],"a":0}
+{"t":"mc","q":"Review — which one means bread?","o":["isonka","amasi","irayisi"],"a":0},
+{"t":"mc","q":"Review — which means “I am hungry”?","o":["ndilambile","amanzi","iitapile"],"a":0},
+{"t":"mc","q":"Review — which means “tea”?","o":["iti","itumato","Kumnandi!"],"a":0},
+{"t":"mc","q":"Review — which means “I am drinking tea”?","o":["Ndisela iti","hayi enkosi","Nditya inyama"],"a":0},
+{"t":"mc","q":"Review — which means “tomato”?","o":["itumato","amanzi","ndifuna"],"a":0}
 ]},
 
 /* ---------- t2 · Going and coming ---------- */
@@ -1921,7 +2036,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means where are you going?","o":["Uya phi?","Uphi utata?","Unjani?"],"a":0},
 {"t":"mc","q":"ndiya and ndiza differ by…","o":["one consonant","their prefix","their tone only"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndiya","Uya phi?"],"a":0},
-{"t":"mc","q":"Review — which one means yesterday?","o":["izolo","ngomso","kusasa"],"a":0}
+{"t":"mc","q":"Review — which one means yesterday?","o":["izolo","ngomso","kusasa"],"a":0},
+{"t":"mc","q":"Review — which means “I am thirsty”?","o":["ndinxaniwe","amanzi","ndisela"],"a":0},
+{"t":"mc","q":"Review — which means “coffee”?","o":["ikofu","irayisi","ndisela"],"a":0},
+{"t":"mc","q":"Review — which means “braai place”?","o":["ishisanyama","iti","mnandi"],"a":0},
+{"t":"mc","q":"Review — which means “onion”?","o":["itswele","inkukhu","ndilambile"],"a":0}
 ]},
 
 /* ---------- t3 · At the shop, at school ---------- */
@@ -1963,7 +2082,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"The wrapped form of isikolo is…","o":["esikolweni","esikoloni","isikolweni"],"a":0},
 {"t":"mc","q":"Which one means in town?","o":["edolophini","idolophu","endlwini"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","esikolweni","edolophini"],"a":0},
-{"t":"mc","q":"Review — andithandi means…","o":["I do not like it","I like it","I do not know"],"a":0}
+{"t":"mc","q":"Review — andithandi means…","o":["I do not like it","I like it","I do not know"],"a":0},
+{"t":"mc","q":"Review — which means “I want”?","o":["ndifuna","ndinxaniwe","ishisanyama"],"a":0},
+{"t":"mc","q":"Review — which means “rice”?","o":["irayisi","intlanzi","nditya"],"a":0},
+{"t":"mc","q":"Review — which means “fish”?","o":["intlanzi","ndinxaniwe","nditya"],"a":0},
+{"t":"mc","q":"Review — which means “fruit”?","o":["isiqhamo","ndinxaniwe","isonka"],"a":0}
 ]},
 
 /* ---------- t4 · Riding the taxi ---------- */
@@ -2006,7 +2129,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means taxi rank?","o":["irenki","iteksi","indlela"],"a":0},
 {"t":"mc","q":"Ndihamba ngeteksi — the nge- carries the meaning…","o":["by taxi","to the taxi","in the taxi rank"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","ndiya","irenki"],"a":0},
-{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","holiday"],"a":0}
+{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","holiday"],"a":0},
+{"t":"mc","q":"Review — which means “water”?","o":["amanzi","itumato","ishisanyama"],"a":0},
+{"t":"mc","q":"Review — which means “I eat”?","o":["nditya","irayisi","isonka"],"a":0},
+{"t":"mc","q":"Review — which means “eggs”?","o":["amaqanda","Kumnandi!","ishisanyama"],"a":0},
+{"t":"mc","q":"Review — which means “I like”?","o":["ndithanda","amaqanda","irayisi"],"a":0}
 ]},
 
 /* ---------- t5 · Near and far ---------- */
@@ -2049,7 +2176,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means far?","o":["kude","kufuphi","apha"],"a":0},
 {"t":"mc","q":"Ivenkile ikufuphi — the i- before kufuphi points back at…","o":["ivenkile","the speaker","the road"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ikufuphi?","o":["Ikufuphi?","Ivenkile ikufuphi","kude"],"a":0},
-{"t":"mc","q":"Review — nditya means…","o":["I eat","I drink","I cook"],"a":0}
+{"t":"mc","q":"Review — nditya means…","o":["I eat","I drink","I cook"],"a":0},
+{"t":"mc","q":"Review — which means “may I have water”?","o":["Ndicela amanzi","hayi enkosi","Ndisela iti"],"a":0},
+{"t":"mc","q":"Review — which means “I drink”?","o":["ndisela","Kumnandi!","irayisi"],"a":0},
+{"t":"mc","q":"Review — which means “I am eating meat”?","o":["Nditya inyama","Ndifuna ukutya","hayi enkosi"],"a":0},
+{"t":"mc","q":"Review — which means “what do you like?”","o":["Uthanda ntoni?","Iphi imoto?","Uziva njani?"],"a":0}
 ]},
 
 /* ---------- t6 · Asking the way ---------- */
@@ -2092,7 +2223,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means help?","o":["uncedo","indlela","uxolo"],"a":0},
 {"t":"mc","q":"Uyayazi indlela? — the -yazi part means…","o":["know","go","see"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"uncedo","o":["uncedo","Ndicela uncedo","indlela"],"a":0},
-{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","iqanda"],"a":0}
+{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","iqanda"],"a":0},
+{"t":"mc","q":"Review — which means “sour milk”?","o":["amasi","inkukhu","iti"],"a":0},
+{"t":"mc","q":"Review — which means “what?”","o":["ntoni?","Uphi umama?","Uyaqonda?"],"a":0},
+{"t":"mc","q":"Review — which means “maize”?","o":["umbona","ndisela","irayisi"],"a":0},
+{"t":"mc","q":"Review — which means “I like tea very much”?","o":["Ndithanda iti kakhulu","hayi enkosi","Nditya inyama"],"a":0}
 ]},
 
 /* ---------- t7 · On the way ---------- */
@@ -2135,7 +2270,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means far?","o":["kude","kufuphi","phaya"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Ndilahlekile","Uyayazi indlela?"],"a":0},
 {"t":"mc","q":"Review — evenkileni means…","o":["at the shop","the shop","at school"],"a":0},
-{"t":"mc","q":"Review — which one means I rest?","o":["ndiphumla","ndilala","ndivuka"],"a":0}
+{"t":"mc","q":"Review — which one means I rest?","o":["ndiphumla","ndilala","ndivuka"],"a":0},
+{"t":"mc","q":"Review — which means “what are you eating?”","o":["Utya ntoni?","Unayo iswekile?","Yimalini?"],"a":0},
+{"t":"mc","q":"Review — which means “potatoes”?","o":["iitapile","intlanzi","ndifuna"],"a":0},
+{"t":"mc","q":"Review — which means “delicious”?","o":["mnandi","amanzi","iti"],"a":0}
 ]},
 
 /* ---------- m1 · Money and the spaza ---------- */
@@ -2178,7 +2316,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means rand?","o":["irandi","imali","ixabiso"],"a":0},
 {"t":"mc","q":"ixabiso means…","o":["price","change","money"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","imali","ispaza"],"a":0},
-{"t":"mc","q":"Review — which one means in the house?","o":["endlwini","ekhitshini","evenkileni"],"a":0}
+{"t":"mc","q":"Review — which one means in the house?","o":["endlwini","ekhitshini","evenkileni"],"a":0},
+{"t":"mc","q":"Review — which means “room”?","o":["igumbi","isitulo","ibhotile"],"a":0},
+{"t":"mc","q":"Review — which means “table”?","o":["itafile","icephe","ekhitshini"],"a":0},
+{"t":"mc","q":"Review — which means “here”?","o":["apha","isipili","icephe"],"a":0},
+{"t":"mc","q":"Review — which means “in the kitchen”?","o":["ekhitshini","isipili","ndilala"],"a":0}
 ]},
 
 /* ---------- m2 · How much is it? ---------- */
@@ -2221,7 +2363,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means here is the money?","o":["Nantsi imali","Yimalini?","itshintshi"],"a":0},
 {"t":"mc","q":"What comes back after you pay…","o":["itshintshi","ixabiso","irandi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","Yimalini?","lishumi leerandi"],"a":0},
-{"t":"mc","q":"Review — which one means I cook?","o":["ndipheka","ndihlamba","ndithanda"],"a":0}
+{"t":"mc","q":"Review — which one means I cook?","o":["ndipheka","ndihlamba","ndithanda"],"a":0},
+{"t":"mc","q":"Review — which means “kitchen”?","o":["ikhitshi","ndivuka","izitya"],"a":0},
+{"t":"mc","q":"Review — which means “bed”?","o":["ibhedi","isitulo","phantsi"],"a":0},
+{"t":"mc","q":"Review — which means “down”?","o":["phantsi","itafile","ikhitshi"],"a":0},
+{"t":"mc","q":"Review — which means “I cook in the kitchen”?","o":["Ndipheka ekhitshini","Ndilala ebusuku","igumbi lokulala"],"a":0}
 ]},
 
 /* ---------- m3 · Buying and selling ---------- */
@@ -2264,7 +2410,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
 {"t":"mc","q":"Ndifuna … isonka (I want TO BUY bread). Complete it.","o":["ukuthenga","ndithenga","ithenga"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ukuthenga","o":["ukuthenga","ndithenga","ndithengisa"],"a":0},
-{"t":"mc","q":"Review — umbane means…","o":["electricity","water","money"],"a":0}
+{"t":"mc","q":"Review — umbane means…","o":["electricity","water","money"],"a":0},
+{"t":"mc","q":"Review — which means “bedroom”?","o":["igumbi lokulala","Ndilala ebusuku","Ndipheka ekhitshini"],"a":0},
+{"t":"mc","q":"Review — which means “electricity”?","o":["umbane","ibhotile","izitya"],"a":0},
+{"t":"mc","q":"Review — which means “up”?","o":["phezulu","ndihlamba","ibhotile"],"a":0},
+{"t":"mc","q":"Review — which means “I sleep at night”?","o":["Ndilala ebusuku","igumbi lokulala","Ndipheka ekhitshini"],"a":0}
 ]},
 
 /* ---------- m4 · This one here ---------- */
@@ -2307,7 +2457,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means how much is this?","o":["Yimalini le?","Yimalini?","Iphi le?"],"a":0},
 {"t":"mc","q":"le, esi and eli all mean this — the noun decides…","o":["which shape to use","how loud to say it","the word order"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","eli qanda","esi sitya"],"a":0},
-{"t":"mc","q":"Review — which one means mirror?","o":["isipili","izipili","isitya"],"a":0}
+{"t":"mc","q":"Review — which one means mirror?","o":["isipili","izipili","isitya"],"a":0},
+{"t":"mc","q":"Review — which means “window”?","o":["ifestile","ibhotile","phaya"],"a":0},
+{"t":"mc","q":"Review — which means “chairs”?","o":["izitulo","izitya","ndipheka"],"a":0},
+{"t":"mc","q":"Review — which means “cup”?","o":["ikomityi","imbiza","endlwini"],"a":0},
+{"t":"mc","q":"Review — which means “it is delicious!”","o":["Kumnandi!","umbona","ndilambile"],"a":0}
 ]},
 
 /* ---------- m5 · The spaza list ---------- */
@@ -2350,7 +2504,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means salt?","o":["ityuwa","iswekile","amafutha"],"a":0},
 {"t":"mc","q":"iswekile came from the Afrikaans word for…","o":["sugar","sweets","syrup"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iswekile","o":["iswekile","amafutha","ityuwa"],"a":0},
-{"t":"mc","q":"Review — which one means spoon?","o":["icephe","imela","ikomityi"],"a":0}
+{"t":"mc","q":"Review — which one means spoon?","o":["icephe","imela","ikomityi"],"a":0},
+{"t":"mc","q":"Review — which means “yard”?","o":["iyadi","phezulu","ikhitshi"],"a":0},
+{"t":"mc","q":"Review — which means “dishes”?","o":["izitya","isitya","ikomityi"],"a":0},
+{"t":"mc","q":"Review — which means “bottle”?","o":["ibhotile","ikhitshi","ndihlamba"],"a":0},
+{"t":"mc","q":"Review — which means “no thank you”?","o":["hayi enkosi","Ndifuna ukutya","Ndisela iti"],"a":0}
 ]},
 
 /* ---------- m6 · Too expensive! ---------- */
@@ -2393,7 +2551,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0},
 {"t":"mc","q":"Where are prices NOT negotiable?","o":["the spaza and shop tills","market stalls","street vendors"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","itshiphu","Yehlisa ixabiso"],"a":0},
-{"t":"mc","q":"Review — phezulu means…","o":["up","down","near"],"a":0}
+{"t":"mc","q":"Review — phezulu means…","o":["up","down","near"],"a":0},
+{"t":"mc","q":"Review — which means “chair”?","o":["isitulo","ifestile","isipili"],"a":0},
+{"t":"mc","q":"Review — which means “mirrors”?","o":["izipili","umbane","phezulu"],"a":0},
+{"t":"mc","q":"Review — which means “knife”?","o":["imela","phezulu","endlwini"],"a":0},
+{"t":"mc","q":"Review — which means “what do you want?”","o":["Ufuna ntoni?","Uphi umama?","Uhlala phi?"],"a":0}
 ]},
 
 /* ---------- m7 · Have you got it? ---------- */
@@ -2436,7 +2598,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","Nantsi imali","lishumi leerandi"],"a":0},
 {"t":"mc","q":"Review — which one means maize meal?","o":["umgubo","iswekile","amafutha"],"a":0},
-{"t":"mc","q":"Review — eli is the this-word for…","o":["iqanda","imali","isitya"],"a":0}
+{"t":"mc","q":"Review — eli is the this-word for…","o":["iqanda","imali","isitya"],"a":0},
+{"t":"mc","q":"Review — which means “where is the car?”","o":["Iphi imoto?","Uvela phi?","Ikufuphi?"],"a":0},
+{"t":"mc","q":"Review — which means “pot”?","o":["imbiza","ndipheka","phezulu"],"a":0},
+{"t":"mc","q":"Review — which means “I want food”?","o":["Ndifuna ukutya","Ndicela amanzi","Ndisela iti"],"a":0}
 ]},
 
 /* ---------- w1 · Work ---------- */
@@ -2479,7 +2644,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means where do you work?","o":["Usebenza phi?","Uya phi?","Uphi umsebenzi?"],"a":0},
 {"t":"mc","q":"I work at the shop would be Ndisebenza…","o":["evenkileni","ivenkile","ekhitshini"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","umsebenzi","Ndisebenza edolophini"],"a":0},
-{"t":"mc","q":"Review — which one means taxi?","o":["iteksi","irenki","indlela"],"a":0}
+{"t":"mc","q":"Review — which one means taxi?","o":["iteksi","irenki","indlela"],"a":0},
+{"t":"mc","q":"Review — which means “shop”?","o":["ivenkile","evenkileni","indlela"],"a":0},
+{"t":"mc","q":"Review — which means “in town”?","o":["edolophini","ndiya","uncedo"],"a":0},
+{"t":"mc","q":"Review — which means “is it near?”","o":["Ikufuphi?","Uya phi?","Uyayazi indlela?"],"a":0},
+{"t":"mc","q":"Review — which means “month”?","o":["inyanga","iCawa","unyaka"],"a":0}
 ]},
 
 /* ---------- w2 · At school ---------- */
@@ -2521,7 +2690,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means teachers?","o":["ootitshala","utitshala","abafundi"],"a":0},
 {"t":"mc","q":"Umfundi ufunda esikolweni — the learner learns…","o":["at school","at home","in town"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utitshala","o":["utitshala","ootitshala","abafundi"],"a":0},
-{"t":"mc","q":"Review — kufuphi means…","o":["near","far","here"],"a":0}
+{"t":"mc","q":"Review — kufuphi means…","o":["near","far","here"],"a":0},
+{"t":"mc","q":"Review — which means “school”?","o":["isikolo","kufuphi","edolophini"],"a":0},
+{"t":"mc","q":"Review — which means “I am going to town”?","o":["Ndiya edolophini","Ivenkile ikufuphi","Ndiza kusasa"],"a":0},
+{"t":"mc","q":"Review — which means “the shop is near”?","o":["Ivenkile ikufuphi","Ndiza kusasa","Ndihamba ngeteksi"],"a":0},
+{"t":"mc","q":"Review — which means “year”?","o":["unyaka","uLwesine","kusasa"],"a":0}
 ]},
 
 /* ---------- w3 · The fourth pair ---------- */
@@ -2563,7 +2736,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"The plural of umzi is…","o":["imizi","abazi","oomzi"],"a":0},
 {"t":"mc","q":"Which one means homestead?","o":["umzi","indlu","iyadi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","imizi","umzi"],"a":0},
-{"t":"mc","q":"Review — which one means at the shop?","o":["evenkileni","edolophini","esikolweni"],"a":0}
+{"t":"mc","q":"Review — which one means at the shop?","o":["evenkileni","edolophini","esikolweni"],"a":0},
+{"t":"mc","q":"Review — which means “road”?","o":["indlela","esikolweni","evenkileni"],"a":0},
+{"t":"mc","q":"Review — which means “I go by taxi”?","o":["Ndihamba ngeteksi","Ndiza kusasa","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Review — which means “I am lost”?","o":["Ndilahlekile","ivenkile","esikolweni"],"a":0},
+{"t":"mc","q":"Review — which means “every day”?","o":["yonke imihla","Ndiya edolophini","eli qanda"],"a":0}
 ]},
 
 /* ---------- w4 · Doing words ---------- */
@@ -2606,7 +2783,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I teach?","o":["ndifundisa","ndifunda","ndibhala"],"a":0},
 {"t":"mc","q":"The -isa in ndifundisa is the same -isa as in…","o":["ndithengisa","ndilambile","ndiyasebenza"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
-{"t":"mc","q":"Review — Uya phi? asks…","o":["where are you going?","where do you work?","how are you?"],"a":0}
+{"t":"mc","q":"Review — Uya phi? asks…","o":["where are you going?","where do you work?","how are you?"],"a":0},
+{"t":"mc","q":"Review — which means “I go”?","o":["ndiya","kude","isikolo"],"a":0},
+{"t":"mc","q":"Review — which means “stop!”","o":["Yima!","ndiza","isikolo"],"a":0},
+{"t":"mc","q":"Review — which means “please help me”?","o":["Ndicela uncedo","Ndiya edolophini","Ndihamba ngeteksi"],"a":0},
+{"t":"mc","q":"Review — which means “I learn Xhosa every day”?","o":["Ndifunda isiXhosa yonke imihla","le mali","sala kakuhle"],"a":0}
 ]},
 
 /* ---------- w5 · The tools ---------- */
@@ -2649,7 +2830,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means pen?","o":["ipeni","ikhompyutha","ifowuni"],"a":0},
 {"t":"mc","q":"Loanwords like ipeni join Xhosa by taking…","o":["the i- prefix","the um- prefix","no prefix"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
-{"t":"mc","q":"Review — which one means help?","o":["uncedo","indlela","imali"],"a":0}
+{"t":"mc","q":"Review — which one means help?","o":["uncedo","indlela","imali"],"a":0},
+{"t":"mc","q":"Review — which means “I come”?","o":["ndiza","edolophini","esikolweni"],"a":0},
+{"t":"mc","q":"Review — which means “taxi rank”?","o":["irenki","kufuphi","uncedo"],"a":0},
+{"t":"mc","q":"Review — which means “do you know the way?”","o":["Uyayazi indlela?","Uya phi?","Ikufuphi?"],"a":0},
+{"t":"mc","q":"Review — which means “thank you, madam”?","o":["Enkosi mama","Uxolo tata","Lo ngumama wam"],"a":0}
 ]},
 
 /* ---------- w6 · The working week ---------- */
@@ -2692,7 +2877,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0},
 {"t":"mc","q":"The ngo- in ngoMvulo means…","o":["on","at","by"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Ndisebenza ngoMvulo","Andisebenzi ngeCawa"],"a":0},
-{"t":"mc","q":"Review — which one means I walk?","o":["ndihamba","ndiya","ndiza"],"a":0}
+{"t":"mc","q":"Review — which one means I walk?","o":["ndihamba","ndiya","ndiza"],"a":0},
+{"t":"mc","q":"Review — which means “at school”?","o":["esikolweni","uncedo","Yima!"],"a":0},
+{"t":"mc","q":"Review — which means “near”?","o":["kufuphi","uncedo","irenki"],"a":0},
+{"t":"mc","q":"Review — which means “we are leaving now”?","o":["Sihamba ngoku","Ndiza kusasa","Ndiya edolophini"],"a":0},
+{"t":"mc","q":"Review — which means “home”?","o":["ikhaya","sonke","abazali"],"a":0}
 ]},
 
 /* ---------- w7 · The everyday word ---------- */
@@ -2735,7 +2924,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means teachers?","o":["ootitshala","abafundi","utitshala"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
 {"t":"mc","q":"Review — which one means computer?","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
-{"t":"mc","q":"Review — which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0}
+{"t":"mc","q":"Review — which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0},
+{"t":"mc","q":"Review — which means “far”?","o":["kude","Yima!","edolophini"],"a":0},
+{"t":"mc","q":"Review — which means “I am going to school”?","o":["Ndiya esikolweni","Sihamba ngoku","Ndihamba ngeteksi"],"a":0},
+{"t":"mc","q":"Review — which means “is father there?”","o":["Ukhona utata?","Unjani umama?","Uphi umama?"],"a":0}
 ]},
 
 /* ---------- b1 · Head, hand, foot ---------- */
@@ -2778,7 +2970,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means head?","o":["intloko","unyawo","isandla"],"a":0},
 {"t":"mc","q":"The plural of isandla is…","o":["izandla","amandla","oosandla"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","izandla","unyawo"],"a":0},
-{"t":"mc","q":"Review — which one means money?","o":["imali","ixabiso","irandi"],"a":0}
+{"t":"mc","q":"Review — which one means money?","o":["imali","ixabiso","irandi"],"a":0},
+{"t":"mc","q":"Review — which means “rand”?","o":["irandi","iswekile","ispaza"],"a":0},
+{"t":"mc","q":"Review — which means “I sell”?","o":["ndithengisa","ixabiso","ispaza"],"a":0},
+{"t":"mc","q":"Review — which means “cooking oil”?","o":["amafutha","iyadura","ityuwa"],"a":0},
+{"t":"mc","q":"Review — which means “he is here”?","o":["ukhona","kunye","usisi"],"a":0}
 ]},
 
 /* ---------- b2 · The face ---------- */
@@ -2821,7 +3017,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means eyes?","o":["amehlo","iliso","izandla"],"a":0},
 {"t":"mc","q":"umlomo means…","o":["mouth","nose","face"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","indlebe","amehlo"],"a":0},
-{"t":"mc","q":"Review — which one means sugar?","o":["iswekile","ityuwa","umgubo"],"a":0}
+{"t":"mc","q":"Review — which one means sugar?","o":["iswekile","ityuwa","umgubo"],"a":0},
+{"t":"mc","q":"Review — which means “price”?","o":["ixabiso","imali","ndithenga"],"a":0},
+{"t":"mc","q":"Review — which means “I want to buy bread”?","o":["Ndifuna ukuthenga isonka","Nantsi imali","eli qanda"],"a":0},
+{"t":"mc","q":"Review — which means “maize meal”?","o":["umgubo","ispaza","iswekile"],"a":0},
+{"t":"mc","q":"Review — which means “he is not here”?","o":["akekho","usisi","oobhuti"],"a":0}
 ]},
 
 /* ---------- b3 · Sick and well ---------- */
@@ -2864,7 +3064,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means it hurts?","o":["kubuhlungu","ubuhlungu","ndiyagula"],"a":0},
 {"t":"mc","q":"ndiyagula keeps its -ya- because…","o":["nothing follows the verb","it is negative","gula demands it"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","kubuhlungu","ndiyagula"],"a":0},
-{"t":"mc","q":"Review — which one means it is expensive?","o":["iyadura","itshiphu","ayiduri"],"a":0}
+{"t":"mc","q":"Review — which one means it is expensive?","o":["iyadura","itshiphu","ayiduri"],"a":0},
+{"t":"mc","q":"Review — which means “spaza shop”?","o":["ispaza","Andinayo","imali"],"a":0},
+{"t":"mc","q":"Review — which means “this money”?","o":["le mali","lishumi leerandi","Nantsi imali"],"a":0},
+{"t":"mc","q":"Review — which means “it is not expensive”?","o":["ayiduri","irandi","itshiphu"],"a":0},
+{"t":"mc","q":"Review — which means “where is mother?”","o":["Uphi umama?","Ukhona utata?","Ngubani lo?"],"a":0}
 ]},
 
 /* ---------- b4 · Where it hurts ---------- */
@@ -2907,7 +3111,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
 {"t":"mc","q":"In Intloko ibuhlungu, the i- before buhlungu…","o":["echoes intloko","means here","marks a question"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","intloko","unyawo"],"a":0},
-{"t":"mc","q":"Review — which one means over there?","o":["phaya","apha","phantsi"],"a":0}
+{"t":"mc","q":"Review — which one means over there?","o":["phaya","apha","phantsi"],"a":0},
+{"t":"mc","q":"Review — which means “how much is it?”","o":["Yimalini?","Unayo iswekile?","Uza nini?"],"a":0},
+{"t":"mc","q":"Review — which means “this dish”?","o":["esi sitya","eli qanda","Ndifuna ukuthenga isonka"],"a":0},
+{"t":"mc","q":"Review — which means “it is cheap”?","o":["itshiphu","ityuwa","ukuthenga"],"a":0},
+{"t":"mc","q":"Review — which means “she is at home”?","o":["usekhaya","isiduko","intsapho"],"a":0}
 ]},
 
 /* ---------- b5 · The clinic ---------- */
@@ -2950,7 +3158,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means nurse?","o":["unesi","ugqirha","umfundi"],"a":0},
 {"t":"mc","q":"When kubuhlungu, the road leads to…","o":["ikliniki","ivenkile","irenki"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ikliniki","o":["ikliniki","amayeza","unesi"],"a":0},
-{"t":"mc","q":"Review — which one means change (from the till)?","o":["itshintshi","imali","ixabiso"],"a":0}
+{"t":"mc","q":"Review — which one means change (from the till)?","o":["itshintshi","imali","ixabiso"],"a":0},
+{"t":"mc","q":"Review — which means “ten rand”?","o":["lishumi leerandi","esi sitya","eli qanda"],"a":0},
+{"t":"mc","q":"Review — which means “this egg”?","o":["eli qanda","le mali","lishumi leerandi"],"a":0},
+{"t":"mc","q":"Review — which means “lower the price”?","o":["Yehlisa ixabiso","eli qanda","esi sitya"],"a":0},
+{"t":"mc","q":"Review — which means “how is your mother?”","o":["Unjani umama?","Ngubani lo?","Ukhona utata?"],"a":0}
 ]},
 
 /* ---------- b6 · What the nurse says ---------- */
@@ -2993,7 +3205,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means sit down?","o":["Hlala phantsi","Hlala phezulu","Yiza phantsi"],"a":0},
 {"t":"mc","q":"A command uses the verb…","o":["bare, with no person prefix","with ndi-","with uku-"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Sela amayeza","Yiza apha"],"a":0},
-{"t":"mc","q":"Review — ukuthenga means…","o":["to buy","I buy","I sell"],"a":0}
+{"t":"mc","q":"Review — ukuthenga means…","o":["to buy","I buy","I sell"],"a":0},
+{"t":"mc","q":"Review — which means “here is the money”?","o":["Nantsi imali","esi sitya","eli qanda"],"a":0},
+{"t":"mc","q":"Review — which means “how much is this?”","o":["Yimalini le?","Unayo iswekile?","nini?"],"a":0},
+{"t":"mc","q":"Review — which means “do you have sugar?”","o":["Unayo iswekile?","Yimalini?","Yimalini le?"],"a":0},
+{"t":"mc","q":"Review — which means “she is well”?","o":["uphilile","yena","umama"],"a":0}
 ]},
 
 /* ---------- b7 · Feeling better ---------- */
@@ -3036,7 +3252,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means take the medicine?","o":["Sela amayeza","Hlala phantsi","Yiza apha"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
 {"t":"mc","q":"Review — which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
-{"t":"mc","q":"Review — which one means learners?","o":["abafundi","ootitshala","umfundi"],"a":0}
+{"t":"mc","q":"Review — which one means learners?","o":["abafundi","ootitshala","umfundi"],"a":0},
+{"t":"mc","q":"Review — which means “salt”?","o":["ityuwa","ispaza","imali"],"a":0},
+{"t":"mc","q":"Review — which means “I have it”?","o":["Ndinayo","amafutha","itshiphu"],"a":0},
+{"t":"mc","q":"Review — which means “all of us”?","o":["sonke","usekhaya","ubhuti"],"a":0}
 ]},
 
 /* ---------- p1 · What I did ---------- */
@@ -3079,7 +3298,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"The past is made by swapping final -a for…","o":["-ile","-eni","-isa"],"a":0},
 {"t":"mc","q":"ndilambile literally means…","o":["I have gotten hungry","I am eating","I was fed"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndihamba","ndiphekile"],"a":0},
-{"t":"mc","q":"Review — which one means teacher?","o":["utitshala","umfundi","ugqirha"],"a":0}
+{"t":"mc","q":"Review — which one means teacher?","o":["utitshala","umfundi","ugqirha"],"a":0},
+{"t":"mc","q":"Review — which means “where do you work?”","o":["Usebenza phi?","Ufunda ntoni?","Ungubani?"],"a":0},
+{"t":"mc","q":"Review — which means “homesteads”?","o":["imizi","ootitshala","ndiyasebenza"],"a":0},
+{"t":"mc","q":"Review — which means “I do not work on Sunday”?","o":["Andisebenzi ngeCawa","Ndisebenza edolophini","Utitshala uyafundisa"],"a":0},
+{"t":"mc","q":"Review — which means “we live”?","o":["sihlala","kunye","oosisi"],"a":0}
 ]},
 
 /* ---------- p2 · What I bought ---------- */
@@ -3121,7 +3344,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I learned?","o":["ndifundile","ndifunda","ndifundisa"],"a":0},
 {"t":"mc","q":"I cooked rice yesterday would be Ndipheke irayisi izolo — because…","o":["-ile shortens before the object","pheka is irregular","izolo comes last"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","ndifunda"],"a":0},
-{"t":"mc","q":"Review — which one means I buy?","o":["ndithenga","ndithengisa","ukuthenga"],"a":0}
+{"t":"mc","q":"Review — which one means I buy?","o":["ndithenga","ndithengisa","ukuthenga"],"a":0},
+{"t":"mc","q":"Review — which means “I work in town”?","o":["Ndisebenza edolophini","Andisebenzi ngeCawa","Utitshala uyafundisa"],"a":0},
+{"t":"mc","q":"Review — which means “I write”?","o":["ndibhala","imizi","umzi"],"a":0},
+{"t":"mc","q":"Review — which means “I go to work”?","o":["ndiyaphangela","ikhompyutha","utitshala"],"a":0},
+{"t":"mc","q":"Review — which means “they live”?","o":["bahlala","uphilile","umzala"],"a":0}
 ]},
 
 /* ---------- p3 · Where were you? ---------- */
@@ -3163,7 +3390,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I was at home?","o":["Bendisekhaya","Bendigula","ekhaya"],"a":0},
 {"t":"mc","q":"bendi- is to I was as ndi- is to…","o":["I am","you are","I will"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula","Ubuphi izolo?"],"a":0},
-{"t":"mc","q":"Review — which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0}
+{"t":"mc","q":"Review — which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0},
+{"t":"mc","q":"Review — which means “learner”?","o":["umfundi","ndifundisa","iholide"],"a":0},
+{"t":"mc","q":"Review — which means “I teach”?","o":["ndifundisa","ipeni","umfundi"],"a":0},
+{"t":"mc","q":"Review — which means “what do you study?”","o":["Ufunda ntoni?","Usebenza phi?","Uza nini?"],"a":0},
+{"t":"mc","q":"Review — which means “together”?","o":["kunye","umXhosa","sonke"],"a":0}
 ]},
 
 /* ---------- p4 · Tomorrow I will ---------- */
@@ -3205,7 +3436,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"The future is built from ndiza plus…","o":["the ku- to-form","the -ile ending","the -ya- marker"],"a":0},
 {"t":"mc","q":"I will buy would be…","o":["ndiza kuthenga","ndithengile","ndithenga"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kusebenza","ndiza kuhamba"],"a":0},
-{"t":"mc","q":"Review — which one means phone?","o":["ifowuni","ipeni","ikhompyutha"],"a":0}
+{"t":"mc","q":"Review — which one means phone?","o":["ifowuni","ipeni","ikhompyutha"],"a":0},
+{"t":"mc","q":"Review — which means “teachers”?","o":["ootitshala","ndiyasebenza","umzi"],"a":0},
+{"t":"mc","q":"Review — which means “the teacher teaches”?","o":["Utitshala uyafundisa","Andisebenzi ngeCawa","Ndisebenza edolophini"],"a":0},
+{"t":"mc","q":"Review — which means “I do not have it”?","o":["Andinayo","itshiphu","amafutha"],"a":0},
+{"t":"mc","q":"Review — which means “in Khayelitsha”?","o":["eKhayelitsha","ndithetha","NdinguSipho"],"a":0}
 ]},
 
 /* ---------- p5 · The weather ---------- */
@@ -3248,7 +3483,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means it is cold?","o":["kuyabanda","kushushu","liyanetha"],"a":0},
 {"t":"mc","q":"imozulu is literally the state of…","o":["izulu, the sky","umhlaba, the earth","umoya, the wind"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","kushushu","liyanetha"],"a":0},
-{"t":"mc","q":"Review — which one means work (the noun)?","o":["umsebenzi","imisebenzi","umfundi"],"a":0}
+{"t":"mc","q":"Review — which one means work (the noun)?","o":["umsebenzi","imisebenzi","umfundi"],"a":0},
+{"t":"mc","q":"Review — which means “learners”?","o":["abafundi","ndibhala","utitshala"],"a":0},
+{"t":"mc","q":"Review — which means “pen”?","o":["ipeni","imisebenzi","ndibhala"],"a":0},
+{"t":"mc","q":"Review — which means “I am coming in the morning”?","o":["Ndiza kusasa","Ivenkile ikufuphi","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Review — which means “in Gugulethu”?","o":["eGugulethu","bhuti","ndiyaphila"],"a":0}
 ]},
 
 /* ---------- p6 · Sun and wind ---------- */
@@ -3291,7 +3530,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means it is hot today?","o":["Kushushu namhlanje","Kuyabanda namhlanje","Kushushu izolo"],"a":0},
 {"t":"mc","q":"Beyond wind, umoya also means…","o":["breath and spirit","thunder","the sea"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","Kushushu namhlanje"],"a":0},
-{"t":"mc","q":"Review — which one means homestead?","o":["umzi","imizi","indlu"],"a":0}
+{"t":"mc","q":"Review — which one means homestead?","o":["umzi","imizi","indlu"],"a":0},
+{"t":"mc","q":"Review — which means “jobs”?","o":["imisebenzi","umfundi","ootitshala"],"a":0},
+{"t":"mc","q":"Review — which means “computer”?","o":["ikhompyutha","ndibhala","ootitshala"],"a":0},
+{"t":"mc","q":"Review — which means “I wash”?","o":["ndihlamba","ikhitshi","ibhedi"],"a":0},
+{"t":"mc","q":"Review — which means “township”?","o":["ilokishi","akunani","ndikhona"],"a":0}
 ]},
 
 /* ---------- p7 · Plans ---------- */
@@ -3334,7 +3577,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means it is raining?","o":["liyanetha","kuyabanda","kushushu"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula","Ubuphi izolo?"],"a":0},
 {"t":"mc","q":"Review — which one means sun?","o":["ilanga","umoya","imozulu"],"a":0},
-{"t":"mc","q":"Review — I bought bread yesterday…","o":["Ndithenge isonka izolo","Ndiza kuthenga isonka","Ndithenga isonka"],"a":0}
+{"t":"mc","q":"Review — I bought bread yesterday…","o":["Ndithenge isonka izolo","Ndiza kuthenga isonka","Ndithenga isonka"],"a":0},
+{"t":"mc","q":"Review — which means “I work on Monday”?","o":["Ndisebenza ngoMvulo","Andisebenzi ngeCawa","Utitshala uyafundisa"],"a":0},
+{"t":"mc","q":"Review — which means “I sleep”?","o":["ndilala","phaya","ibhedi"],"a":0},
+{"t":"mc","q":"Review — which means “do you speak Xhosa?”","o":["Uthetha isiXhosa?","Igama lakho ngubani?","Ungubani?"],"a":0}
 ]},
 
 /* ---------- c1 · How I feel ---------- */
@@ -3377,7 +3623,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I am afraid?","o":["ndiyoyika","ndiyagula","ndidiniwe"],"a":0},
 {"t":"mc","q":"Uziva njani? — on a good day…","o":["ndonwabile","ndidiniwe","ndiyoyika"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndonwabile","ndiyagula"],"a":0},
-{"t":"mc","q":"Review — which one means medicine?","o":["amayeza","amanzi","amafutha"],"a":0}
+{"t":"mc","q":"Review — which one means medicine?","o":["amayeza","amanzi","amafutha"],"a":0},
+{"t":"mc","q":"Review — which means “head”?","o":["intloko","izandla","unyawo"],"a":0},
+{"t":"mc","q":"Review — which means “mouth”?","o":["umlomo","iliso","amayeza"],"a":0},
+{"t":"mc","q":"Review — which means “doctor”?","o":["ugqirha","izandla","unyawo"],"a":0},
+{"t":"mc","q":"Review — which means “I speak”?","o":["ndithetha","wena","eGugulethu"],"a":0}
 ]},
 
 /* ---------- c2 · Let us! ---------- */
@@ -3420,7 +3670,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means let us eat?","o":["Masitye","Masihambe!","Nditya"],"a":0},
 {"t":"mc","q":"The let-us shape is…","o":["ma- + si- + verb ending in -e","uku- + verb","bare verb + -ni"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masihambe!","Masithethe isiXhosa"],"a":0},
-{"t":"mc","q":"Review — which one means it hurts?","o":["kubuhlungu","ubuhlungu","kuyabanda"],"a":0}
+{"t":"mc","q":"Review — which one means it hurts?","o":["kubuhlungu","ubuhlungu","kuyabanda"],"a":0},
+{"t":"mc","q":"Review — which means “hand”?","o":["isandla","izandla","ikliniki"],"a":0},
+{"t":"mc","q":"Review — which means “I am sick”?","o":["ndiyagula","kubuhlungu","unesi"],"a":0},
+{"t":"mc","q":"Review — which means “sit down”?","o":["Hlala phantsi","Sela amayeza","Yiza apha"],"a":0},
+{"t":"mc","q":"Review — which means “a little”?","o":["kancinci","umntu","unjani"],"a":0}
 ]},
 
 /* ---------- c3 · Ubuntu ---------- */
@@ -3463,7 +3717,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means community?","o":["uluntu","ubuntu","umzi"],"a":0},
 {"t":"mc","q":"ubuntu is built from ubu- plus the root of…","o":["umntu","indlu","ukutya"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu","ubuntu"],"a":0},
-{"t":"mc","q":"Review — which one means nurse?","o":["unesi","ugqirha","utitshala"],"a":0}
+{"t":"mc","q":"Review — which one means nurse?","o":["unesi","ugqirha","utitshala"],"a":0},
+{"t":"mc","q":"Review — which means “foot”?","o":["unyawo","umlomo","isisu"],"a":0},
+{"t":"mc","q":"Review — which means “pain”?","o":["ubuhlungu","indlebe","ikliniki"],"a":0},
+{"t":"mc","q":"Review — which means “take the medicine”?","o":["Sela amayeza","Yiza apha","Ndiziva ngcono"],"a":0},
+{"t":"mc","q":"Review — which means “do you understand?”","o":["Uyaqonda?","Uvela phi?","Uhlala phi?"],"a":0}
 ]},
 
 /* ---------- c4 · What I think ---------- */
@@ -3505,7 +3763,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I think?","o":["ndicinga","ndiyavuma","ndiyazi"],"a":0},
 {"t":"mc","q":"andivumi wears the same wrap as…","o":["andithandi and andisebenzi","ndiyavuma and ndiyasebenza","masihambe and masitye"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndiyavuma","andinayo"],"a":0},
-{"t":"mc","q":"Review — the plural of isandla is…","o":["izandla","amandla","iisandla"],"a":0}
+{"t":"mc","q":"Review — the plural of isandla is…","o":["izandla","amandla","iisandla"],"a":0},
+{"t":"mc","q":"Review — which means “eye”?","o":["iliso","ndiyagula","izandla"],"a":0},
+{"t":"mc","q":"Review — which means “stomach”?","o":["isisu","umlomo","intloko"],"a":0},
+{"t":"mc","q":"Review — which means “how do you feel?”","o":["Uziva njani?","Ufunda ntoni?","Uthetha ukuthini?"],"a":0},
+{"t":"mc","q":"Review — which means “I understand”?","o":["ndiyaqonda","indoda","abantwana"],"a":0}
 ]},
 
 /* ---------- c5 · Telling it in order ---------- */
@@ -3548,7 +3810,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means finally?","o":["ekugqibeleni","emva koko","kuqala"],"a":0},
 {"t":"mc","q":"A story in order: kuqala → emva koko → …","o":["ekugqibeleni","kusasa","kuqala"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","kuqala","emva koko"],"a":0},
-{"t":"mc","q":"Review — which one means come here?","o":["Yiza apha","Hlala phantsi","Yima!"],"a":0}
+{"t":"mc","q":"Review — which one means come here?","o":["Yiza apha","Hlala phantsi","Yima!"],"a":0},
+{"t":"mc","q":"Review — which means “eyes”?","o":["amehlo","ubuhlungu","ikliniki"],"a":0},
+{"t":"mc","q":"Review — which means “my head hurts”?","o":["Intloko ibuhlungu","Ndiziva ngcono","Hlala phantsi"],"a":0},
+{"t":"mc","q":"Review — which means “I feel better”?","o":["Ndiziva ngcono","Yiza apha","Sela amayeza"],"a":0},
+{"t":"mc","q":"Review — which means “I am learning Xhosa”?","o":["Ndifunda isiXhosa","Uxolo bhuti","Enkosi sisi"],"a":0}
 ]},
 
 /* ---------- c6 · The learner's toolkit ---------- */
@@ -3591,7 +3857,11 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means I am still learning?","o":["Ndisafunda","ndifundile","ndifundisa"],"a":0},
 {"t":"mc","q":"Thetha kancinci, sisi — the sisi is there to…","o":["keep it warm","slow it down","make it formal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndifunda","Thetha kancinci"],"a":0},
-{"t":"mc","q":"Review — Uziva njani? asks…","o":["how do you feel?","how are you?","what do you mean?"],"a":0}
+{"t":"mc","q":"Review — Uziva njani? asks…","o":["how do you feel?","how are you?","what do you mean?"],"a":0},
+{"t":"mc","q":"Review — which means “ear”?","o":["indlebe","isisu","umlomo"],"a":0},
+{"t":"mc","q":"Review — which means “it hurts here”?","o":["Kubuhlungu apha","Intloko ibuhlungu","Hlala phantsi"],"a":0},
+{"t":"mc","q":"Review — which means “I wake up”?","o":["ndivuka","ndiphumla","itafile"],"a":0},
+{"t":"mc","q":"Review — which means “meat”?","o":["inyama","uxolo","ucango"],"a":0}
 ]},
 
 /* ---------- c7 · Going well ---------- */
@@ -3634,7 +3904,10 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — a person is a person through other people…","o":["umntu ngumntu ngabantu","ubuntu ngumntu","abantu ngabantu"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndicinga","ndiyavuma"],"a":0},
 {"t":"mc","q":"Review — first, after that, finally…","o":["kuqala, emva koko, ekugqibeleni","kusasa, izolo, ngomso","ngoku, kancinci, kakhulu"],"a":0},
-{"t":"mc","q":"Review — I am still learning, but ndonwabile: the course ends with you…","o":["happy and still learning","finished with Xhosa","back at Molo"],"a":0}
+{"t":"mc","q":"Review — I am still learning, but ndonwabile: the course ends with you…","o":["happy and still learning","finished with Xhosa","back at Molo"],"a":0},
+{"t":"mc","q":"Review — which means “clinic”?","o":["ikliniki","indlebe","ugqirha"],"a":0},
+{"t":"mc","q":"Review — which means “I rest”?","o":["ndiphumla","phaya","ikomityi"],"a":0},
+{"t":"mc","q":"Review — which means “change”?","o":["tshintsha","incwadi","ixoxo"],"a":0}
 ]}
 ];
 
