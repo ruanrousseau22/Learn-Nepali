@@ -26,6 +26,10 @@
    articles, five pure vowels that never change, and dead-regular
    penultimate stress.
 
+   ALPHABET AUDIO: bare letters are VITS noise — generate_audio_xh.py
+   SPEAK_AS stores syllable demos under the letter keys (a→aa, c→ca, hl→hla
+   …; Aug 2026, spectral-flatness verified). Letter tiles therefore SPEAK
+   the sound with a vowel, like bn/my letter-name clips. Not a bug.
    ART: Table Mountain + tablecloth cloud (far), ochre veld (mid), fynbos
    green (near) with rondavels, aloe ferox, Nguni cattle, one acacia.
    Mascot: blue crane (indwe). Palette vars incl. --thatch/--wall/--aloe

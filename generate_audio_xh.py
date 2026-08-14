@@ -35,6 +35,21 @@ OUTDIR = ROOT / ("audio-xhf" if FAITH else "audio-xh")
 MODEL = "UBC-NLP/Simba-TTS-xho"
 
 
+# Bare alphabet letters synthesize as NOISE on this VITS model (out-of-
+# distribution inputs — confirmed by spectral-flatness measurement, Aug 2026).
+# SPEAK_AS stores a clip under the LETTER's key that SPEAKS a clean
+# demonstration instead (the bn/my letter-name precedent): vowels as the
+# long vowel, consonants as the letter+a syllable. All 22 spoken forms
+# verified speech-like (duration >0.4s, flatness <0.05, voiced ratio >0.7).
+SPEAK_AS = {
+    "a": "aa", "e": "ee", "i": "ii", "o": "oo", "u": "uu",
+    "c": "ca", "x": "xa", "q": "qa", "ch": "cha", "xh": "xha", "qh": "qha",
+    "gc": "gca", "gx": "gxa", "gq": "gqa", "nc": "nca", "nx": "nxa",
+    "nq": "nqa", "hl": "hla", "dl": "dla", "tsh": "tsha", "ny": "nya",
+    "ng": "nga",
+}
+
+
 def fnv1a(s: str) -> str:
     h = 0x811C9DC5
     for b in s.encode("utf-8"):
@@ -70,7 +85,8 @@ def main():
             skipped += 1
             continue
         try:
-            inputs = tok(text, return_tensors="pt")
+            spoken = SPEAK_AS.get(text, text)
+            inputs = tok(spoken, return_tensors="pt")
             with torch.no_grad():
                 wav = model(**inputs).waveform[0].numpy()
             tmp = path.with_suffix(".part")

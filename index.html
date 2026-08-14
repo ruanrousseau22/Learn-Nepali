@@ -2103,6 +2103,7 @@ function prefetchLesson(l){if(!AUDIO_KEYS.size||!l)return;collectLessonStrings(l
 let voices=[],chosenVoice=null;
 function loadVoices(){
   if(!('speechSynthesis'in window))return;
+  if(!LANG)return; /* onvoiceschanged can fire before boot() seats the pack */
   voices=speechSynthesis.getVoices()||[];
   const ne=voices.filter(LANG.voiceTest);
   const hi=voices.filter(LANG.fbVoiceTest);
