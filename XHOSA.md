@@ -139,10 +139,26 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       pattern (teach-before-test + all engine invariants) — recreate it
       each session and run after EVERY authoring pass; it caught 2 real
       violations on first run.
-- [ ] Zone 2 (Greetings & people): g1 how-are-you (unjani/ndiyaphila/
-      ndikhona/wena), g2 names (igama/ngubani), g3 please-thanks-sorry
-      consolidation, g4 goodbyes + sobonana, g5 where-from (ndisuka e-),
-      g6 where-do-you-live (uhlala phi), g7 yes/no questions.
+- [x] Zone 2 (Greetings & people) COMPLETE — g1 how-are-you (unjani/
+      kunjani/ndiyaphila/ndikhona/wena/nawe), g2 names (igama lam/lakho,
+      Ungubani?, NdinguSipho), g3 people + um-/aba- pair (umntu/abantu,
+      umntwana/abantwana, indoda, umhlobo, ubuntu note), g4 street
+      politeness (bhuti/sisi address culture, ndiyabulela, akunani),
+      g5 where-from (Uvela phi?, ndivela, eKapa/eGoli/eMonti, locative
+      e- note), g6 where-you-live (Uhlala phi?, ndihlala, eKhayelitsha/
+      eGugulethu with their meanings, ilokishi/idolophu), g7 learner
+      survival kit (Uthetha isiXhosa?, ndithetha kancinci, Uyaqonda?/
+      ndiyaqonda, Ndifunda isiXhosa). 35 lessons, 215 exercises, 60 new
+      clips (135 total). Checker passed first run.
+- [ ] Zone 3 (Family & respect): f1 umama/utata (+makhulu grandparents,
+      Molo tata/mama address), f2 ubhuti/usisi + oo- plurals + umzala,
+      f3 my-family possessives (intsapho, abazali, umama wam / utata
+      wakho — wam/wakho with kin vs lam/lakho with igama), f4 who-is-
+      this (Ngubani lo?, Lo ngumama wam, yena), f5 respect & clan names
+      (intlonipho, isiduko, amaXhosa/umXhosa), f6 is-anyone-home
+      (ikhaya, Ukhona utata?, ukhona/akekho, usekhaya), f7 family
+      conversation + si-/ba- concords (sonke, sihlala/bahlala, kunye,
+      Unjani umama?, uphilile) — completes the ndi/u/si/ba person set.
 - [ ] Zones 3–6.
 - [ ] Zones 7–9.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test

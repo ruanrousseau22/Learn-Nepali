@@ -339,14 +339,315 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — which one means please?","o":["nceda","enkosi","uxolo"],"a":0},
 {"t":"li","q":"Review — which word do you hear?","say":"isiXhosa","o":["isiXhosa","umngqusho","incwadi"],"a":0},
 {"t":"mc","q":"Review — which one means house?","o":["indlu","inja","imoto"],"a":0}
+]},
+
+/* ---------- g1 · How are you? ---------- */
+{"id":"xh_g1","title":"How are you?","step":"learn","meta":"The exchange that opens every conversation","vocab":[["unjani","oon-JAH-nee","how are you?"],["kunjani","koon-JAH-nee","how is it going?"],["ndiyaphila","ndee-yah-PEE-lah","I am fine"],["ndikhona","ndee-KHAW-nah","I am okay"],["wena","WEH-nah","you"],["nawe","NAH-weh","you too"]],"ex":[
+{"t":"note","tag":"After Molo","q":"The question that always follows","body":"<p>After the greeting comes the question: <b>Unjani?</b> — <i>how are you?</i> The classic answer is <b>Ndiyaphila</b> — <i>I am fine</i>, literally <i>I am living</i>.</p><p>Look inside the words: <b>u-</b> means <i>you</i> and <b>ndi-</b> means <i>I</i>. Those two little pieces will start almost every sentence you ever say.</p>","eg":[["unjani","oon-JAH-nee","how are you?"],["ndiyaphila","ndee-yah-PEE-lah","I am fine"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphila","o":["ndiyaphila","unjani"],"a":0},
+{"t":"mc","q":"What does unjani mean?","o":["how are you?","I am fine","thank you"],"a":0},
+{"t":"note","tag":"Street answers","q":"Kunjani and the everyday reply","body":"<p>Friends often ask <b>Kunjani?</b> — <i>how is it going?</i> And the most common everyday answer in Cape Town is not a textbook word at all: <b>Ndikhona</b> — literally <i>I am here</i>, meaning <i>I am okay, hanging in there</i>.</p>","eg":[["kunjani","koon-JAH-nee","how is it going?"],["ndikhona","ndee-KHAW-nah","I am okay"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndikhona","o":["ndikhona","kunjani"],"a":0},
+{"t":"mc","q":"ndikhona literally means I am here — people use it to say…","o":["I am okay","I am lost","I am leaving"],"a":0},
+{"t":"note","tag":"Bounce it back","q":"Wena — and you?","body":"<p>Never let the question die with you. <b>Wena</b> is <i>you</i>, so <b>Wena unjani?</b> bounces it back — <i>and you, how are you?</i> If someone wishes you well, <b>nawe</b> — <i>you too</i> — returns the kindness.</p>","eg":[["wena","WEH-nah","you"],["nawe","NAH-weh","you too"]]},
+{"t":"li","q":"Which one do you hear?","say":"wena","o":["wena","nawe"],"a":0},
+{"t":"mc","q":"To bounce the question back — and you? — you say…","o":["Wena unjani?","Ndikhona","Molweni"],"a":0}
+]},
+{"id":"xh_g1_2","title":"Hearing the exchange","step":"recognize","meta":"Question or answer?","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"unjani","o":["unjani","kunjani","ndiyaphila"],"a":0},
+{"t":"mc","q":"What does ndiyaphila mean?","o":["I am fine","how are you?","you too"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kunjani","o":["kunjani","unjani","ndikhona"],"a":0},
+{"t":"mc","q":"Which one means you?","o":["wena","nawe","unjani"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nawe","o":["nawe","wena","ndiyaphila"],"a":0},
+{"t":"mc","q":"A friend asks Kunjani? A natural reply is…","o":["Ndikhona","Molweni","Uxolo"],"a":0}
+]},
+{"id":"xh_g1_3","title":"Building the exchange","step":"build","meta":"Say it yourself","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am fine","s":"Ndiyaphi___, enkosi.","o":["la","lo","le"],"a":0},
+{"t":"wb","q":"Build: and you, how are you?","a":["wena","unjani"],"pool":["wena","unjani","nawe"]},
+{"t":"fill","q":"Complete the casual question","s":"Ku___ani?","o":["nj","ny","ng"],"a":0},
+{"t":"wb","q":"Build: I am okay","a":["ndikhona"],"pool":["ndikhona","ndiyaphila","wena"]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphila","o":["ndiyaphila","ndikhona","nawe"],"a":0}
+]},
+{"id":"xh_g1_4","title":"The exchange in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["unjani","how are you?"],["ndiyaphila","I am fine"],["ndikhona","I am okay"]]},
+{"t":"li","q":"Which one do you hear?","say":"unjani","o":["unjani","wena","kunjani"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kunjani","how is it going?"],["wena","you"],["nawe","you too"]]},
+{"t":"mc","q":"The ndi- at the start of ndiyaphila means…","o":["I","you","we"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kunjani","o":["kunjani","ndikhona","unjani"],"a":0}
+]},
+{"id":"xh_g1_5","title":"Checkpoint: how are you?","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Someone greets you: Molo! Unjani? — you reply…","o":["Ndiyaphila, enkosi","Hamba kakuhle","Andiqondi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndikhona","o":["ndikhona","ndiyaphila","kunjani"],"a":0},
+{"t":"mc","q":"What does wena mean?","o":["you","I","you too"],"a":0},
+{"t":"mc","q":"The u- at the start of unjani means…","o":["you","I","they"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nawe","o":["nawe","wena","enkosi"],"a":0},
+{"t":"mc","q":"Review — hello to several people is…","o":["Molweni","Molo","Enkosi"],"a":0}
+]},
+
+/* ---------- g2 · Names ---------- */
+{"id":"xh_g2","title":"What is your name?","step":"learn","meta":"Introduce yourself like a local","vocab":[["igama","ee-GAH-mah","name"],["lam","LAHM","my"],["lakho","LAH-kaw","your"],["Igama lakho ngubani?","ee-GAH-mah LAH-kaw ngoo-BAH-nee","what is your name?"],["NdinguSipho","ndeen-goo-SEE-paw","I am Sipho"],["Ungubani?","oon-goo-BAH-nee","who are you?"]],"ex":[
+{"t":"note","tag":"Names","q":"Igama — the name","body":"<p><b>Igama</b> is <i>name</i>. <b>Igama lam</b> — <i>my name</i>; <b>igama lakho</b> — <i>your name</i>. The question literally asks <i>your name is who?</i>: <b>Igama lakho ngubani?</b></p>","eg":[["igama","ee-GAH-mah","name"],["lam","LAHM","my"],["lakho","LAH-kaw","your"]]},
+{"t":"li","q":"Which one do you hear?","say":"igama","o":["igama","lakho"],"a":0},
+{"t":"mc","q":"What does lam mean?","o":["my","your","name"],"a":0},
+{"t":"note","tag":"Answering","q":"Ndingu- plus your name","body":"<p>To say who you are, glue <b>ndingu-</b> (<i>I am</i>) straight onto your name: <b>NdinguSipho</b> — <i>I am Sipho</i>. And <b>Ungubani?</b> asks <i>who are you?</i> directly.</p><p>Full introduction: <b>Molo! Igama lam nguSipho. Wena, igama lakho ngubani?</b></p>","eg":[["Igama lakho ngubani?","ee-GAH-mah LAH-kaw ngoo-BAH-nee","what is your name?"],["NdinguSipho","ndeen-goo-SEE-paw","I am Sipho"],["Ungubani?","oon-goo-BAH-nee","who are you?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ungubani?","o":["Ungubani?","NdinguSipho"],"a":0},
+{"t":"mc","q":"NdinguSipho means…","o":["I am Sipho","who is Sipho?","your name is Sipho"],"a":0},
+{"t":"li","q":"Which question do you hear?","say":"Igama lakho ngubani?","o":["Igama lakho ngubani?","Ungubani?"],"a":0},
+{"t":"mc","q":"What does lakho mean?","o":["your","my","who"],"a":0}
+]},
+{"id":"xh_g2_2","title":"Hearing names","step":"recognize","meta":"Who is asking what?","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"lam","o":["lam","lakho","igama"],"a":0},
+{"t":"mc","q":"Igama lakho ngubani? asks about…","o":["your name","my name","your home"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"NdinguSipho","o":["NdinguSipho","Ungubani?","igama"],"a":0},
+{"t":"mc","q":"Which one means who are you?","o":["Ungubani?","Unjani?","Uvela phi?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"lakho","o":["lakho","lam","wena"],"a":0},
+{"t":"mc","q":"igama lam means…","o":["my name","your name","a person"],"a":0}
+]},
+{"id":"xh_g2_3","title":"Building introductions","step":"build","meta":"Put your name into Xhosa","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am Sipho","s":"Ndingu___ipho","o":["S","Th","B"],"a":0},
+{"t":"wb","q":"Build: my name","a":["igama","lam"],"pool":["igama","lam","lakho"]},
+{"t":"fill","q":"Complete the question: your name is who?","s":"Igama lakho ngu___ani?","o":["b","ph","nj"],"a":0},
+{"t":"wb","q":"Build: what is your name? (literally: name your who?)","a":["igama","lakho","ngubani"],"pool":["igama","lakho","ngubani","lam"]},
+{"t":"li","q":"Which one do you hear?","say":"igama","o":["igama","lam","Ungubani?"],"a":0}
+]},
+{"id":"xh_g2_4","title":"Names in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igama","name"],["lam","my"],["lakho","your"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ungubani?","o":["Ungubani?","Igama lakho ngubani?","NdinguSipho"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["NdinguSipho","I am Sipho"],["Ungubani?","who are you?"]]},
+{"t":"mc","q":"To answer Ungubani?, you start with…","o":["Ndingu-","Lakho","Unjani"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"lam","o":["lam","igama","lakho"],"a":0}
+]},
+{"id":"xh_g2_5","title":"Checkpoint: names","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does igama mean?","o":["name","person","greeting"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Igama lakho ngubani?","o":["Igama lakho ngubani?","Ungubani?","NdinguSipho"],"a":0},
+{"t":"mc","q":"Which one means your?","o":["lakho","lam","wena"],"a":0},
+{"t":"mc","q":"Someone asks Ungubani? — a good answer is…","o":["NdinguSipho","Ndiyaphila","Enkosi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"lakho","o":["lakho","lam","nawe"],"a":0},
+{"t":"mc","q":"Review — which one means I am fine?","o":["ndiyaphila","ndikhona","unjani"],"a":0}
+]},
+
+/* ---------- g3 · People around you ---------- */
+{"id":"xh_g3","title":"People around you","step":"learn","meta":"Person, people — your first noun-class pair","vocab":[["umntu","OOM-ntoo","person"],["abantu","ah-BAHN-too","people"],["indoda","een-DAW-dah","man"],["umntwana","oom-NTWAH-nah","child"],["abantwana","ah-bahn-TWAH-nah","children"],["umhlobo","oom-HLAW-baw","friend"]],"ex":[
+{"t":"note","tag":"One and many","q":"um- becomes aba-","body":"<p>Here is the famous Xhosa pattern in its friendliest form. <b>umntu</b> is <i>a person</i>; swap <b>um-</b> for <b>aba-</b> and you get <b>abantu</b> — <i>people</i>. The same word gave the world the idea of <b>ubuntu</b>: a person is a person through other people.</p>","eg":[["umntu","OOM-ntoo","person"],["abantu","ah-BAHN-too","people"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"abantu","o":["abantu","umntu"],"a":0},
+{"t":"mc","q":"What does umntu mean?","o":["person","people","man"],"a":0},
+{"t":"note","tag":"The same trick again","q":"Child and children","body":"<p>The pattern repeats: <b>umntwana</b> — <i>child</i>; <b>abantwana</b> — <i>children</i>. Once your ear catches um-/aba-, you can guess hundreds of plurals for free.</p>","eg":[["umntwana","oom-NTWAH-nah","child"],["abantwana","ah-bahn-TWAH-nah","children"]]},
+{"t":"li","q":"One child or many — which do you hear?","say":"abantwana","o":["abantwana","umntwana"],"a":0},
+{"t":"mc","q":"abantwana means…","o":["children","child","friends"],"a":0},
+{"t":"note","tag":"Two more people","q":"A man and a friend","body":"<p><b>indoda</b> is <i>a man</i> and <b>umhlobo</b> is <i>a friend</i> — the word you will use most once people start feeding you umngqusho.</p>","eg":[["indoda","een-DAW-dah","man"],["umhlobo","oom-HLAW-baw","friend"]]},
+{"t":"li","q":"Which one do you hear?","say":"umhlobo","o":["umhlobo","indoda"],"a":0},
+{"t":"mc","q":"Which one means friend?","o":["umhlobo","umntu","indoda"],"a":0}
+]},
+{"id":"xh_g3_2","title":"Hearing people words","step":"recognize","meta":"Singular or plural, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"umntu","o":["umntu","abantu","umntwana"],"a":0},
+{"t":"mc","q":"What does indoda mean?","o":["man","friend","child"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umntwana","o":["umntwana","abantwana","umhlobo"],"a":0},
+{"t":"mc","q":"Which one means people?","o":["abantu","umntu","abantwana"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"indoda","o":["indoda","umhlobo","umntu"],"a":0},
+{"t":"mc","q":"To make umntwana plural, um- becomes…","o":["aba-","imi-","izi-"],"a":0}
+]},
+{"id":"xh_g3_3","title":"Building people words","step":"build","meta":"Swap the prefixes yourself","vocab":[],"ex":[
+{"t":"fill","q":"Complete: people","s":"___ntu","o":["aba","um","imi"],"a":0},
+{"t":"wb","q":"Build the word: children","a":["abantwana"],"pool":["abantwana","umntwana","abantu"]},
+{"t":"fill","q":"Complete: friend","s":"um___obo","o":["hl","dl","tsh"],"a":0},
+{"t":"wb","q":"Build the word: man","a":["indoda"],"pool":["indoda","umntu","umhlobo"]},
+{"t":"li","q":"Which one do you hear?","say":"abantu","o":["abantu","abantwana","indoda"],"a":0}
+]},
+{"id":"xh_g3_4","title":"People in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umntu","person"],["abantu","people"],["indoda","man"]]},
+{"t":"li","q":"Which one do you hear?","say":"umhlobo","o":["umhlobo","umntwana","abantu"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umntwana","child"],["abantwana","children"],["umhlobo","friend"]]},
+{"t":"mc","q":"The idea that a person is a person through other people is called…","o":["ubuntu","umntu","indoda"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"abantwana","o":["abantwana","umntwana","umhlobo"],"a":0}
+]},
+{"id":"xh_g3_5","title":"Checkpoint: people","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does abantu mean?","o":["people","person","children"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umntwana","o":["umntwana","abantwana","umntu"],"a":0},
+{"t":"mc","q":"Which one means man?","o":["indoda","umhlobo","umntu"],"a":0},
+{"t":"mc","q":"The plural of umntu is…","o":["abantu","abantwana","imintu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umhlobo","o":["umhlobo","indoda","abantu"],"a":0},
+{"t":"mc","q":"Review — what does ndikhona mean?","o":["I am okay","I am Sipho","how are you?"],"a":0}
+]},
+
+/* ---------- g4 · Polite words on the street ---------- */
+{"id":"xh_g4","title":"Bhuti, sisi and thank you","step":"learn","meta":"How Cape Town actually addresses people","vocab":[["bhuti","BHOO-tee","bro (young man)"],["sisi","SEE-see","sis (young woman)"],["ndiyabulela","ndee-yah-boo-LEH-lah","I thank you"],["akunani","ah-koo-NAH-nee","no problem"],["Uxolo bhuti","oo-XAW-law BHOO-tee","excuse me, bro"],["Enkosi sisi","ehn-KAW-see SEE-see","thank you, sis"]],"ex":[
+{"t":"note","tag":"Street address","q":"Everyone is bhuti or sisi","body":"<p>In Cape Town you address a young man as <b>bhuti</b> (<i>bro</i>) and a young woman as <b>sisi</b> (<i>sis</i>) — warm, normal and expected, even with strangers. Elders are <b>tata</b> and <b>mama</b>; those come with the family words.</p><p>So: <b>Uxolo bhuti</b> — <i>excuse me, bro</i> — opens a question to a stranger politely.</p>","eg":[["bhuti","BHOO-tee","bro (young man)"],["sisi","SEE-see","sis (young woman)"],["Uxolo bhuti","oo-XAW-law BHOO-tee","excuse me, bro"]]},
+{"t":"li","q":"Which one do you hear?","say":"bhuti","o":["bhuti","sisi"],"a":0},
+{"t":"mc","q":"You stop a young woman to ask directions. You open with…","o":["Uxolo sisi","Uxolo bhuti","Hamba"],"a":0},
+{"t":"note","tag":"Fuller thanks","q":"Ndiyabulela and akunani","body":"<p><b>Ndiyabulela</b> is a fuller, warmer <i>I thank you</i> — lovely after real help. The gracious reply is <b>akunani</b> — <i>no problem, it is nothing</i>.</p>","eg":[["ndiyabulela","ndee-yah-boo-LEH-lah","I thank you"],["akunani","ah-koo-NAH-nee","no problem"],["Enkosi sisi","ehn-KAW-see SEE-see","thank you, sis"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyabulela","o":["ndiyabulela","akunani"],"a":0},
+{"t":"mc","q":"Someone thanks you warmly. You wave it off with…","o":["Akunani","Ndiyabulela","Molweni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Enkosi sisi","o":["Enkosi sisi","Uxolo bhuti"],"a":0},
+{"t":"mc","q":"ndiyabulela means…","o":["I thank you","no problem","excuse me"],"a":0}
+]},
+{"id":"xh_g4_2","title":"Hearing polite words","step":"recognize","meta":"Bro, sis and gratitude by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"sisi","o":["sisi","bhuti","akunani"],"a":0},
+{"t":"mc","q":"What does akunani mean?","o":["no problem","thank you","excuse me"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uxolo bhuti","o":["Uxolo bhuti","Enkosi sisi","ndiyabulela"],"a":0},
+{"t":"mc","q":"bhuti is the friendly address for…","o":["a young man","a young woman","an elder"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"akunani","o":["akunani","ndiyabulela","sisi"],"a":0},
+{"t":"mc","q":"Which one is the warmer, fuller thank you?","o":["ndiyabulela","enkosi","akunani"],"a":0}
+]},
+{"id":"xh_g4_3","title":"Building polite phrases","step":"build","meta":"Politeness, assembled","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I thank you","s":"Ndiyabu___la","o":["le","la","lo"],"a":0},
+{"t":"wb","q":"Build: excuse me, bro","a":["uxolo","bhuti"],"pool":["uxolo","bhuti","sisi"]},
+{"t":"fill","q":"Complete: no problem","s":"Akuna___","o":["ni","na","ne"],"a":0},
+{"t":"wb","q":"Build: thank you, sis","a":["enkosi","sisi"],"pool":["enkosi","sisi","bhuti"]},
+{"t":"li","q":"Which one do you hear?","say":"bhuti","o":["bhuti","akunani","sisi"],"a":0}
+]},
+{"id":"xh_g4_4","title":"Polite words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["bhuti","bro (young man)"],["sisi","sis (young woman)"],["akunani","no problem"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyabulela","o":["ndiyabulela","Enkosi sisi","akunani"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyabulela","I thank you"],["Uxolo bhuti","excuse me, bro"],["Enkosi sisi","thank you, sis"]]},
+{"t":"mc","q":"A stranger your age helped you. Warmest thanks…","o":["Ndiyabulela bhuti","Akunani","Ungubani?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"sisi","o":["sisi","bhuti","enkosi"],"a":0}
+]},
+{"id":"xh_g4_5","title":"Checkpoint: polite words","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndiyabulela mean?","o":["I thank you","no problem","who are you?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uxolo bhuti","o":["Uxolo bhuti","Enkosi sisi","akunani"],"a":0},
+{"t":"mc","q":"The reply that waves off thanks is…","o":["akunani","ndiyabulela","molo"],"a":0},
+{"t":"mc","q":"sisi is the friendly address for…","o":["a young woman","a young man","a child"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"akunani","o":["akunani","bhuti","ndiyabulela"],"a":0},
+{"t":"mc","q":"Review — which one means people?","o":["abantu","umntu","abantwana"],"a":0}
+]},
+
+/* ---------- g5 · Where are you from? ---------- */
+{"id":"xh_g5","title":"Where are you from?","step":"learn","meta":"Uvela phi? — and the little e- of places","vocab":[["phi?","PEE","where?"],["Uvela phi?","oo-VEH-lah PEE","where are you from?"],["ndivela","ndee-VEH-lah","I come from"],["eKapa","eh-KAH-pah","in Cape Town"],["eGoli","eh-GAW-lee","in Johannesburg"],["eMonti","eh-MAWN-tee","in East London"]],"ex":[
+{"t":"note","tag":"The question","q":"Uvela phi?","body":"<p><b>Phi?</b> is <i>where?</i> — and <b>Uvela phi?</b> asks <i>where do you come from?</i> You answer with <b>ndivela</b> — <i>I come from</i>.</p><p>The ph in phi is a p with a puff of air — never an f.</p>","eg":[["phi?","PEE","where?"],["Uvela phi?","oo-VEH-lah PEE","where are you from?"],["ndivela","ndee-VEH-lah","I come from"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uvela phi?","o":["Uvela phi?","ndivela"],"a":0},
+{"t":"mc","q":"What does phi mean?","o":["where?","who?","how?"],"a":0},
+{"t":"note","tag":"Places wear e-","q":"eKapa, eGoli, eMonti","body":"<p>Place names put on a little <b>e-</b> to mean <i>in / at / from</i> that place: <b>eKapa</b> — Cape Town, <b>eGoli</b> — Johannesburg (<i>the place of gold</i>), <b>eMonti</b> — East London. So: <b>Ndivela eKapa</b> — <i>I am from Cape Town</i>.</p>","eg":[["eKapa","eh-KAH-pah","in Cape Town"],["eGoli","eh-GAW-lee","in Johannesburg"],["eMonti","eh-MAWN-tee","in East London"]]},
+{"t":"li","q":"Which place do you hear?","say":"eKapa","o":["eKapa","eGoli","eMonti"],"a":0},
+{"t":"mc","q":"eGoli — the place of gold — is…","o":["Johannesburg","Cape Town","East London"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndivela","o":["ndivela","eMonti"],"a":0},
+{"t":"mc","q":"Ndivela eKapa means…","o":["I come from Cape Town","I live in Cape Town","where is Cape Town?"],"a":0}
+]},
+{"id":"xh_g5_2","title":"Hearing places","step":"recognize","meta":"Cities and the question word","vocab":[],"ex":[
+{"t":"li","q":"Which place do you hear?","say":"eGoli","o":["eGoli","eKapa","eMonti"],"a":0},
+{"t":"mc","q":"What does ndivela mean?","o":["I come from","where?","I live"],"a":0},
+{"t":"li","q":"Which place do you hear?","say":"eMonti","o":["eMonti","eGoli","eKapa"],"a":0},
+{"t":"mc","q":"Which one means where?","o":["phi?","ngubani?","unjani?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"phi?","o":["phi?","ndivela","eKapa"],"a":0},
+{"t":"mc","q":"eMonti is…","o":["East London","Johannesburg","Cape Town"],"a":0}
+]},
+{"id":"xh_g5_3","title":"Building origins","step":"build","meta":"Say where you are from","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I come from Cape Town","s":"Ndivela e___apa.","o":["K","G","M"],"a":0},
+{"t":"wb","q":"Build: where are you from?","a":["uvela","phi"],"pool":["uvela","phi","ndivela"]},
+{"t":"fill","q":"Complete: Johannesburg","s":"eGo___","o":["li","lo","la"],"a":0},
+{"t":"wb","q":"Build: I come from Johannesburg","a":["ndivela","eGoli"],"pool":["ndivela","eGoli","eKapa"]},
+{"t":"li","q":"Which one do you hear?","say":"eKapa","o":["eKapa","eMonti","phi?"],"a":0}
+]},
+{"id":"xh_g5_4","title":"Origins in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["phi?","where?"],["ndivela","I come from"],["eKapa","in Cape Town"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uvela phi?","o":["Uvela phi?","eGoli","ndivela"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["eGoli","in Johannesburg"],["eMonti","in East London"]]},
+{"t":"mc","q":"The little e- on a place name means…","o":["in or at that place","the big one","far away"],"a":0},
+{"t":"li","q":"Which place do you hear?","say":"eMonti","o":["eMonti","eKapa","eGoli"],"a":0}
+]},
+{"id":"xh_g5_5","title":"Checkpoint: where from","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Uvela phi? asks…","o":["where are you from?","where do you live?","who are you?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndivela","o":["ndivela","phi?","eGoli"],"a":0},
+{"t":"mc","q":"Which one is Cape Town?","o":["eKapa","eGoli","eMonti"],"a":0},
+{"t":"mc","q":"A full answer to Uvela phi? is…","o":["Ndivela eMonti","NdinguSipho","Ndiyaphila"],"a":0},
+{"t":"li","q":"Which place do you hear?","say":"eGoli","o":["eGoli","eMonti","eKapa"],"a":0},
+{"t":"mc","q":"Review — which one means friend?","o":["umhlobo","indoda","bhuti"],"a":0}
+]},
+
+/* ---------- g6 · Where do you live? ---------- */
+{"id":"xh_g6","title":"Where do you live?","step":"learn","meta":"Uhlala phi? — Khayelitsha, Gugulethu and home ground","vocab":[["Uhlala phi?","oo-HLAH-lah PEE","where do you live?"],["ndihlala","ndee-HLAH-lah","I live"],["eKhayelitsha","eh-kah-yeh-LEE-tshah","in Khayelitsha"],["eGugulethu","eh-goo-goo-LEH-too","in Gugulethu"],["ilokishi","ee-law-KEE-shee","township"],["idolophu","ee-daw-LAW-poo","town"]],"ex":[
+{"t":"note","tag":"Living somewhere","q":"hlala again — sit, stay, live","body":"<p>You met <b>hlala</b> as <i>sit down</i>. The same verb means <i>to live somewhere</i>: <b>Uhlala phi?</b> — <i>where do you live?</i> — and <b>ndihlala</b> — <i>I live…</i></p>","eg":[["Uhlala phi?","oo-HLAH-lah PEE","where do you live?"],["ndihlala","ndee-HLAH-lah","I live"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uhlala phi?","o":["Uhlala phi?","ndihlala"],"a":0},
+{"t":"mc","q":"Uhlala phi? asks…","o":["where do you live?","where are you from?","how are you?"],"a":0},
+{"t":"note","tag":"Cape Town ground","q":"Khayelitsha and Gugulethu","body":"<p>The two great Xhosa-speaking homes of Cape Town: <b>eKhayelitsha</b> — <i>new home</i> — and <b>eGugulethu</b> — <i>our pride</i>. Say them with their meanings and they stop being long words.</p>","eg":[["eKhayelitsha","eh-kah-yeh-LEE-tshah","in Khayelitsha"],["eGugulethu","eh-goo-goo-LEH-too","in Gugulethu"]]},
+{"t":"li","q":"Which place do you hear?","say":"eKhayelitsha","o":["eKhayelitsha","eGugulethu"],"a":0},
+{"t":"mc","q":"eGugulethu means…","o":["our pride","new home","gold place"],"a":0},
+{"t":"note","tag":"Township and town","q":"ilokishi and idolophu","body":"<p><b>ilokishi</b> is <i>a township</i> and <b>idolophu</b> is <i>a town</i> — both everyday words borrowed long ago (location, dorp) and fully Xhosa now.</p>","eg":[["ilokishi","ee-law-KEE-shee","township"],["idolophu","ee-daw-LAW-poo","town"]]},
+{"t":"li","q":"Which one do you hear?","say":"ilokishi","o":["ilokishi","idolophu"],"a":0},
+{"t":"mc","q":"idolophu means…","o":["town","township","home"],"a":0}
+]},
+{"id":"xh_g6_2","title":"Hearing home ground","step":"recognize","meta":"Places to live, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndihlala","o":["ndihlala","Uhlala phi?","ilokishi"],"a":0},
+{"t":"mc","q":"What does ilokishi mean?","o":["township","town","house"],"a":0},
+{"t":"li","q":"Which place do you hear?","say":"eGugulethu","o":["eGugulethu","eKhayelitsha","eKapa"],"a":0},
+{"t":"mc","q":"Ndihlala eKhayelitsha means…","o":["I live in Khayelitsha","I come from Gugulethu","where is Khayelitsha?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"idolophu","o":["idolophu","ilokishi","ndihlala"],"a":0},
+{"t":"mc","q":"eKhayelitsha means…","o":["new home","our pride","big town"],"a":0}
+]},
+{"id":"xh_g6_3","title":"Building home phrases","step":"build","meta":"Say where you live","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I live in Gugulethu","s":"Ndihlala eGugule___u.","o":["th","t","tsh"],"a":0},
+{"t":"wb","q":"Build: where do you live?","a":["uhlala","phi"],"pool":["uhlala","phi","ndihlala"]},
+{"t":"fill","q":"Complete: township","s":"iloki___i","o":["sh","tsh","s"],"a":0},
+{"t":"wb","q":"Build: I live in Khayelitsha","a":["ndihlala","eKhayelitsha"],"pool":["ndihlala","eKhayelitsha","idolophu"]},
+{"t":"li","q":"Which one do you hear?","say":"eGugulethu","o":["eGugulethu","idolophu","ilokishi"],"a":0}
+]},
+{"id":"xh_g6_4","title":"Home ground in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uhlala phi?","where do you live?"],["ndihlala","I live"],["ilokishi","township"]]},
+{"t":"li","q":"Which place do you hear?","say":"eKhayelitsha","o":["eKhayelitsha","eGugulethu","eMonti"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["eKhayelitsha","in Khayelitsha"],["eGugulethu","in Gugulethu"],["idolophu","town"]]},
+{"t":"mc","q":"hlala means sit down AND…","o":["live somewhere","come from","walk"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ilokishi","o":["ilokishi","idolophu","eGugulethu"],"a":0}
+]},
+{"id":"xh_g6_5","title":"Checkpoint: where you live","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Uhlala phi? asks…","o":["where do you live?","where are you from?","what is your name?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndihlala","o":["ndihlala","ilokishi","eKhayelitsha"],"a":0},
+{"t":"mc","q":"Which one means township?","o":["ilokishi","idolophu","indlu"],"a":0},
+{"t":"mc","q":"A full answer to Uhlala phi? is…","o":["Ndihlala eGugulethu","Ndivela phi","Ndiyabulela"],"a":0},
+{"t":"li","q":"Which place do you hear?","say":"eGugulethu","o":["eGugulethu","eKhayelitsha","eKapa"],"a":0},
+{"t":"mc","q":"Review — Uvela phi? asks…","o":["where are you from?","where do you live?","who is this?"],"a":0}
+]},
+
+/* ---------- g7 · Do you speak Xhosa? ---------- */
+{"id":"xh_g7","title":"Do you speak Xhosa?","step":"learn","meta":"The learner survival kit","vocab":[["Uthetha isiXhosa?","oo-TEH-tah ee-see-XHAW-sah","do you speak Xhosa?"],["ndithetha","ndee-TEH-tah","I speak"],["kancinci","kahn-CEEN-cee","a little"],["Uyaqonda?","oo-yah-QAWN-dah","do you understand?"],["ndiyaqonda","ndee-yah-QAWN-dah","I understand"],["Ndifunda isiXhosa","ndee-FOON-dah ee-see-XHAW-sah","I am learning Xhosa"]],"ex":[
+{"t":"note","tag":"The magic sentence","q":"Ndifunda isiXhosa","body":"<p>Say <b>Ndifunda isiXhosa</b> — <i>I am learning Xhosa</i> — anywhere in Cape Town and watch faces light up. It is the sentence that turns strangers into teachers.</p><p><b>Uthetha isiXhosa?</b> asks <i>do you speak Xhosa?</i>; answer honestly with <b>ndithetha kancinci</b> — <i>I speak a little</i>.</p>","eg":[["Ndifunda isiXhosa","ndee-FOON-dah ee-see-XHAW-sah","I am learning Xhosa"],["Uthetha isiXhosa?","oo-TEH-tah ee-see-XHAW-sah","do you speak Xhosa?"],["ndithetha","ndee-TEH-tah","I speak"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa","o":["Ndifunda isiXhosa","Uthetha isiXhosa?"],"a":0},
+{"t":"mc","q":"What does ndithetha mean?","o":["I speak","I learn","I understand"],"a":0},
+{"t":"note","tag":"A little","q":"kancinci — the honest word","body":"<p><b>Kancinci</b> is <i>a little</i> — the learner word you will say a hundred times: <b>Ndithetha isiXhosa kancinci</b>. Its opposite from the greetings, <b>kakhulu</b>, means <i>a lot</i>.</p>","eg":[["kancinci","kahn-CEEN-cee","a little"]]},
+{"t":"li","q":"Which one do you hear?","say":"kancinci","o":["kancinci","ndithetha"],"a":0},
+{"t":"mc","q":"Ndithetha isiXhosa kancinci means…","o":["I speak a little Xhosa","I speak Xhosa well","I do not speak Xhosa"],"a":0},
+{"t":"note","tag":"Checking in","q":"Uyaqonda?","body":"<p>You met <b>qonda</b> with the q click. Now the pair that keeps every conversation alive: <b>Uyaqonda?</b> — <i>do you understand?</i> — and <b>ndiyaqonda</b> — <i>I understand</i>. When you do not: <b>andiqondi</b>, from the sounds zone, is still your friend.</p>","eg":[["Uyaqonda?","oo-yah-QAWN-dah","do you understand?"],["ndiyaqonda","ndee-yah-QAWN-dah","I understand"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaqonda","o":["ndiyaqonda","Uyaqonda?"],"a":0},
+{"t":"mc","q":"Uyaqonda? asks…","o":["do you understand?","do you speak?","are you learning?"],"a":0}
+]},
+{"id":"xh_g7_2","title":"Hearing the survival kit","step":"recognize","meta":"Speaking, learning, understanding","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Uthetha isiXhosa?","o":["Uthetha isiXhosa?","Ndifunda isiXhosa","ndithetha"],"a":0},
+{"t":"mc","q":"What does kancinci mean?","o":["a little","a lot","again"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uyaqonda?","o":["Uyaqonda?","ndiyaqonda","kancinci"],"a":0},
+{"t":"mc","q":"Which one means I understand?","o":["ndiyaqonda","andiqondi","ndithetha"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndithetha","o":["ndithetha","ndiyaqonda","Ndifunda isiXhosa"],"a":0},
+{"t":"mc","q":"The sentence that makes strangers into teachers is…","o":["Ndifunda isiXhosa","Uyaqonda?","Akunani"],"a":0}
+]},
+{"id":"xh_g7_3","title":"Building learner phrases","step":"build","meta":"Your survival kit, assembled","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I speak a little","s":"Ndithetha kancin___.","o":["ci","ce","ca"],"a":0},
+{"t":"wb","q":"Build: I am learning Xhosa","a":["ndifunda","isiXhosa"],"pool":["ndifunda","isiXhosa","ndithetha"]},
+{"t":"fill","q":"Complete: do you understand?","s":"Uya___onda?","o":["q","c","x"],"a":0},
+{"t":"wb","q":"Build: do you speak Xhosa?","a":["uthetha","isiXhosa"],"pool":["uthetha","isiXhosa","kancinci"]},
+{"t":"li","q":"Which one do you hear?","say":"kancinci","o":["kancinci","ndiyaqonda","ndithetha"],"a":0}
+]},
+{"id":"xh_g7_4","title":"The kit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithetha","I speak"],["kancinci","a little"],["ndiyaqonda","I understand"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa","o":["Ndifunda isiXhosa","Uthetha isiXhosa?","Uyaqonda?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uthetha isiXhosa?","do you speak Xhosa?"],["Uyaqonda?","do you understand?"]]},
+{"t":"mc","q":"You lost the thread. From the sounds zone, you say…","o":["Andiqondi","Ndiyaqonda","Kancinci"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uyaqonda?","o":["Uyaqonda?","ndiyaqonda","kancinci"],"a":0}
+]},
+{"id":"xh_g7_5","title":"Checkpoint: Zone 2 complete","step":"checkpoint","meta":"Greetings and people — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Uthetha isiXhosa? — your honest answer…","o":["Ndithetha kancinci","Ndiyaphila","Akunani"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaqonda","o":["ndiyaqonda","ndithetha","kancinci"],"a":0},
+{"t":"mc","q":"What does Ndifunda isiXhosa mean?","o":["I am learning Xhosa","I speak Xhosa well","do you speak Xhosa?"],"a":0},
+{"t":"mc","q":"Review — Igama lakho ngubani? asks…","o":["your name","your home","your health"],"a":0},
+{"t":"mc","q":"Review — the friendly address for a young man is…","o":["bhuti","sisi","tata"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Uhlala phi?","o":["Uhlala phi?","Uvela phi?","Unjani"],"a":0},
+{"t":"mc","q":"Review — the plural of umntwana is…","o":["abantwana","abantu","imintwana"],"a":0}
 ]}
 ];
 
 const XH_UNITS=[
 {"n":1,"t":"The sounds of Xhosa","d":"Vowels, clicks and the rhythm of the language","lessons":["xh_s1","xh_s1_2","xh_s1_3","xh_s1_4","xh_s1_5","xh_s2","xh_s2_2","xh_s2_3","xh_s2_4","xh_s2_5","xh_s3","xh_s3_2","xh_s3_3","xh_s3_4","xh_s3_5","xh_s4","xh_s4_2","xh_s4_3","xh_s4_4","xh_s4_5","xh_s5","xh_s5_2","xh_s5_3","xh_s5_4","xh_s5_5","xh_s6","xh_s6_2","xh_s6_3","xh_s6_4","xh_s6_5","xh_s7","xh_s7_2","xh_s7_3","xh_s7_4","xh_s7_5"]}
+,
+{"n":2,"t":"Greetings & people","d":"Unjani, names, bhuti nosisi — meeting Cape Town","lessons":["xh_g1","xh_g1_2","xh_g1_3","xh_g1_4","xh_g1_5","xh_g2","xh_g2_2","xh_g2_3","xh_g2_4","xh_g2_5","xh_g3","xh_g3_2","xh_g3_3","xh_g3_4","xh_g3_5","xh_g4","xh_g4_2","xh_g4_3","xh_g4_4","xh_g4_5","xh_g5","xh_g5_2","xh_g5_3","xh_g5_4","xh_g5_5","xh_g6","xh_g6_2","xh_g6_3","xh_g6_4","xh_g6_5","xh_g7","xh_g7_2","xh_g7_3","xh_g7_4","xh_g7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci"};
 
 const XH_SRS_SEED=[];
 
