@@ -31,9 +31,12 @@
    Mascot: blue crane (indwe). Palette vars incl. --thatch/--wall/--aloe
    live in index.html under data-lang="xh" (light + dark).
 
-   STATUS: Zone 1 complete (s1–s7, 35 lessons). NOT in LANG_CATALOG yet — the course
-   must not become reachable in production until complete. Local testing:
-   loadLangScript('xh') + push a catalog entry in the console.
+   STATUS: COMPLETE (Aug 2026) — 12 zones / 84 topics / 420 lessons / 2861
+   exercises (incl. 273 checkpoint-review mcs), trip pack (12 sections /
+   90 lines / 4 frames), art, faith pack (faith/xh.js, 255 strings), 541
+   course clips + 255 faith clips. Wired into LANG_CATALOG, FAITH_CATALOG,
+   LANG_FLAGS, landing pages (learn-xhosa / xhosa-phrases; Latin, so no
+   alphabet page), og-xhosa.png, JSON-LD. Build story: XHOSA.md.
    ============================================================================ */
 
 const XH_VOWELS=[["a","ah"],["e","eh"],["i","ee"],["o","aw"],["u","oo"]];

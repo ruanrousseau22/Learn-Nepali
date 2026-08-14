@@ -283,10 +283,24 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       ocean blue/Karoo ochre — three distinct hue steps). Mascot TBD.
 - [ ] Short-term trip pack (contextualized: taxi phrases, braai, spaza,
       load-shedding vocabulary?, greetings-first etiquette).
-- [ ] Ship checklist: SEO refresh (keywords "learn Xhosa, isiXhosa app…",
-      JSON-LD teaches + Course), gen_landing maps (NO alphabet page),
-      og-xh card, landing pages regen, attribution lines (terms + Settings),
-      faith pack LATER (isiXhosa Bible 1996 exists — same 255-string recipe).
+- [x] Faith pack COMPLETE (faith/xh.js): all 5 stories, 255 strings,
+      CONTEMPORARY register (Ruan: no archaic Xhosa), EN+refs
+      byte-identical to master except 4 localized SA strings (the
+      newcreation beat honestly says MANY follow Jesus in SA), rom =
+      native (transparent orthography), 255 clips in audio-xhf/
+      (0 failed, 0 hash collisions), extractor learned xhf,
+      generate_audio_xh.py --faith.
+- [x] Ship wiring COMPLETE (committed, NOT deployed): LANG_CATALOG +
+      FAITH_CATALOG + LANG_FLAGS (SA flag) + FAITH_RESOURCES
+      (bible.com/languages/xho + jesusfilm xhosa.html, both curl-200)
+      + descriptions/keywords/JSON-LD (title untouched per rule 12) +
+      footer link + Settings voice line "(Simba TTS, UBC-NLP)" +
+      terms.html CC-BY attribution + gen_landing (learn-xhosa /
+      xhosa-phrases, no alphabet page) + og-xhosa.png (browser recipe,
+      CRC-validated) + sitemap/.lastmod regen. Validation battery
+      passed: script parse, checker, --check xh + xhf, browser smoke
+      (course + faith + trip + flag), untouched packs proven by git.
+      DEPLOY = Ruan only; after deploy run python3 indexnow.py.
 
 ## Measurement traps specific to xh
 

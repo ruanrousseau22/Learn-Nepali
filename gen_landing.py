@@ -24,7 +24,8 @@ LASTMOD_DB = '.lastmod.json'
 
 # slug + the Google-Fonts family for each script (None = covered by Plus Jakarta)
 SLUG = {'ne':'nepali','km':'khmer','my':'burmese','bn':'bengali','si':'sinhala',
-        'lo':'lao','ps':'pashto','mn':'mongolian','ur':'urdu','uz':'uzbek','jv':'javanese'}
+        'lo':'lao','ps':'pashto','mn':'mongolian','ur':'urdu','uz':'uzbek','jv':'javanese',
+        'xh':'xhosa'}
 SCRIPT_FONT = {'ne':'Noto Sans Devanagari','km':'Noto Sans Khmer','my':'Noto Sans Myanmar',
                'bn':'Noto Sans Bengali','si':'Noto Sans Sinhala','lo':'Noto Sans Lao',
                'ps':'Noto Sans Arabic','ur':'Noto Nastaliq Urdu'}
