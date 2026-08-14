@@ -3,7 +3,8 @@
 no edge-tts voice. Reads audio_strings_xh.json, synthesizes each string with
 the LOCAL UBC-NLP/Simba-TTS-xho model (VITS, CC-BY-4.0 — attribution lives in
 terms.html + the Settings voice line), and writes audio-xh/<fnv1a-8hex>.mp3
-plus audio-xh/manifest.json (a JSON array of the 8-hex keys), exactly like
+(or, with --faith, reads audio_strings_xhf.json and writes audio-xhf/)
+plus a manifest.json (a JSON array of the 8-hex keys), exactly like
 generate_audio.py so the app cannot tell the difference.
 
 Runtime: needs torch/transformers/lameenc — they live in the dedicated venv
@@ -28,8 +29,9 @@ from transformers import VitsModel, AutoTokenizer
 import lameenc
 
 ROOT = pathlib.Path(__file__).parent
-STRINGS = ROOT / "audio_strings_xh.json"
-OUTDIR = ROOT / "audio-xh"
+FAITH = "--faith" in sys.argv   # faith pack: audio_strings_xhf.json -> audio-xhf/
+STRINGS = ROOT / ("audio_strings_xhf.json" if FAITH else "audio_strings_xh.json")
+OUTDIR = ROOT / ("audio-xhf" if FAITH else "audio-xh")
 MODEL = "UBC-NLP/Simba-TTS-xho"
 
 
