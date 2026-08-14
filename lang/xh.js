@@ -3037,6 +3037,304 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
 {"t":"mc","q":"Review — which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
 {"t":"mc","q":"Review — which one means learners?","o":["abafundi","ootitshala","umfundi"],"a":0}
+]},
+
+/* ---------- p1 · What I did ---------- */
+{"id":"xh_p1","title":"What I did","step":"learn","meta":"The -ile past — you have been using it all along","vocab":[["ndihambile","ndee-hahm-BEE-leh","I went"],["ndisebenzile","ndee-seh-behn-ZEE-leh","I worked"],["ndiphekile","ndee-peh-KEE-leh","I cooked"]],"ex":[
+{"t":"note","tag":"The past in one ending","q":"-a becomes -ile","body":"<p>To put a verb in the past, swap its final -a for <b>-ile</b>: hamba, <b>ndihambile</b> — <i>I went</i>. That is the whole rule.</p>","eg":[["ndihambile","ndee-hahm-BEE-leh","I went"]]},
+{"t":"li","q":"Now or then — which do you hear?","say":"ndihambile","o":["ndihambile","ndihamba"],"a":0},
+{"t":"mc","q":"What does ndihambile mean?","o":["I went","I go","I will go"],"a":0},
+{"t":"note","tag":"You knew this already","q":"The ndilambile secret","body":"<p>Here is the trick you have carried since the food zone: <b>ndilambile</b> — I am hungry — IS this ending. Lamba means get hungry; ndilambile is literally I-have-gotten-hungry. Xhosa was teaching you the past tense before you knew it existed.</p>","eg":[["ndisebenzile","ndee-seh-behn-ZEE-leh","I worked"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndiyasebenza"],"a":0},
+{"t":"mc","q":"ndilambile is secretly…","o":["a past form of lamba","a plural","a borrowed word"],"a":0},
+{"t":"note","tag":"One more","q":"Ndiphekile","body":"<p><b>Ndiphekile</b> — <i>I cooked</i>. Pheka, phekile. Try it on any verb you own: funda, thenga, lala — the ending fits them all.</p>","eg":[["ndiphekile","ndee-peh-KEE-leh","I cooked"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndipheka"],"a":0},
+{"t":"mc","q":"Which one means I worked?","o":["ndisebenzile","ndiyasebenza","ndihambile"],"a":0}
+]},
+{"id":"xh_p1_2","title":"Hearing the past","step":"recognize","meta":"Then and now by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndisebenzile","ndiphekile"],"a":0},
+{"t":"mc","q":"What does ndiphekile mean?","o":["I cooked","I cook","I ate"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndihambile","ndiphekile"],"a":0},
+{"t":"mc","q":"The past ending is…","o":["-ile","-isa","-ini"],"a":0},
+{"t":"li","q":"Past or present — which do you hear?","say":"ndiphekile","o":["ndiphekile","ndipheka"],"a":0},
+{"t":"mc","q":"The past of ndifunda would be…","o":["ndifundile","ndifundisa","ndiyafunda"],"a":0}
+]},
+{"id":"xh_p1_3","title":"Building the past","step":"build","meta":"Swap the ending","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I went","s":"Ndihamb___","o":["ile","a","isa"],"a":0},
+{"t":"wb","q":"Build the word: I worked","a":["ndisebenzile"],"pool":["ndisebenzile","ndiyasebenza","ndihambile"]},
+{"t":"fill","q":"Complete: I cooked","s":"Ndiphek___","o":["ile","a","ela"],"a":0},
+{"t":"wb","q":"Build the word: I went","a":["ndihambile"],"pool":["ndihambile","ndihamba","ndiphekile"]},
+{"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndiphekile","ndisebenzile"],"a":0}
+]},
+{"id":"xh_p1_4","title":"The past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match present to past","pairs":[["ndihamba","ndihambile"],["ndipheka","ndiphekile"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndiphekile","ndihambile"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndihambile","I went"],["ndisebenzile","I worked"],["ndiphekile","I cooked"]]},
+{"t":"mc","q":"Izolo ndisebenzile means…","o":["yesterday I worked","today I work","tomorrow I will work"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndisebenzile","ndihambile"],"a":0}
+]},
+{"id":"xh_p1_5","title":"Checkpoint: the past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndisebenzile mean?","o":["I worked","I work","I will work"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndihambile","ndisebenzile"],"a":0},
+{"t":"mc","q":"The past is made by swapping final -a for…","o":["-ile","-eni","-isa"],"a":0},
+{"t":"mc","q":"ndilambile literally means…","o":["I have gotten hungry","I am eating","I was fed"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndihamba","ndiphekile"],"a":0},
+{"t":"mc","q":"Review — which one means teacher?","o":["utitshala","umfundi","ugqirha"],"a":0}
+]},
+
+/* ---------- p2 · What I bought ---------- */
+{"id":"xh_p2","title":"What I bought","step":"learn","meta":"The -ile that shortens","vocab":[["ndithengile","ndee-tehn-GEE-leh","I bought"],["ndifundile","ndee-foon-DEE-leh","I learned"],["Ndithenge isonka izolo","ndee-TEHN-geh ee-SAWN-kah ee-ZAW-law","I bought bread yesterday"]],"ex":[
+{"t":"note","tag":"Two more pasts","q":"Ndithengile, ndifundile","body":"<p><b>Ndithengile</b> — <i>I bought</i>. <b>Ndifundile</b> — <i>I learned</i>. The ending you met in p1, spending freely.</p>","eg":[["ndithengile","ndee-tehn-GEE-leh","I bought"],["ndifundile","ndee-foon-DEE-leh","I learned"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","ndifundile"],"a":0},
+{"t":"mc","q":"What does ndifundile mean?","o":["I learned","I taught","I bought"],"a":0},
+{"t":"note","tag":"Like -ya-, in reverse","q":"-ile shortens before an object","body":"<p>Remember how -ya- drops when something follows the verb? The past does the same trick: alone it is -ile, but before an object it shortens to -e: <b>Ndithenge isonka izolo</b> — <i>I bought bread yesterday</i>. Long when alone, short when busy — Xhosa&rsquo;s favourite rhythm.</p>","eg":[["Ndithenge isonka izolo","ndee-TEHN-geh ee-SAWN-kah ee-ZAW-law","I bought bread yesterday"]]},
+{"t":"li","q":"Long or short — which do you hear?","say":"Ndithenge isonka izolo","o":["Ndithenge isonka izolo","ndithengile"],"a":0},
+{"t":"mc","q":"Before an object, -ile shortens to…","o":["-e","-a","-i"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile"],"a":0},
+{"t":"mc","q":"Ndithenge isonka izolo means…","o":["I bought bread yesterday","I will buy bread tomorrow","I am buying bread"],"a":0}
+]},
+{"id":"xh_p2_2","title":"Hearing the shopping past","step":"recognize","meta":"Bought and learned by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","Ndithenge isonka izolo"],"a":0},
+{"t":"mc","q":"What does ndithengile mean?","o":["I bought","I sold","I learned"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndithenge isonka izolo","o":["Ndithenge isonka izolo","ndithengile","ndifundile"],"a":0},
+{"t":"mc","q":"Which one means I learned?","o":["ndifundile","ndithengile","ndifundisa"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","ndifundile","Ndithenge isonka izolo"],"a":0},
+{"t":"mc","q":"Why ndithenge and not ndithengile in the sentence?","o":["an object follows","it is negative","izolo demands it"],"a":0}
+]},
+{"id":"xh_p2_3","title":"Building the shopping past","step":"build","meta":"Long form, short form — again","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I bought (verb standing alone)","s":"Ndithengi___","o":["le","la","sa"],"a":0},
+{"t":"wb","q":"Build: I bought bread yesterday","a":["ndithenge","isonka","izolo"],"pool":["ndithenge","isonka","izolo","ndithengile"]},
+{"t":"fill","q":"Complete: I learned","s":"Ndifund___","o":["ile","isa","a"],"a":0},
+{"t":"wb","q":"Build the word: I bought","a":["ndithengile"],"pool":["ndithengile","ndithenge","ndifundile"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndithenge isonka izolo","o":["Ndithenge isonka izolo","ndifundile","ndithengile"],"a":0}
+]},
+{"id":"xh_p2_4","title":"The shopping past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithengile","I bought"],["ndifundile","I learned"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","Ndithenge isonka izolo","ndifundile"],"a":0},
+{"t":"match","q":"Match the pattern pair","pairs":[["ndiyasebenza","ndisebenza edolophini"],["ndithengile","ndithenge isonka"]]},
+{"t":"mc","q":"Both -ya- and -ile shorten when…","o":["something follows the verb","the verb is borrowed","you speak fast"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","Ndithenge isonka izolo"],"a":0}
+]},
+{"id":"xh_p2_5","title":"Checkpoint: the shopping past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Ndithenge isonka izolo mean?","o":["I bought bread yesterday","I sold bread yesterday","I want bread today"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","ndifundile","ndithenga"],"a":0},
+{"t":"mc","q":"Which one means I learned?","o":["ndifundile","ndifunda","ndifundisa"],"a":0},
+{"t":"mc","q":"I cooked rice yesterday would be Ndipheke irayisi izolo — because…","o":["-ile shortens before the object","pheka is irregular","izolo comes last"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","ndifunda"],"a":0},
+{"t":"mc","q":"Review — which one means I buy?","o":["ndithenga","ndithengisa","ukuthenga"],"a":0}
+]},
+
+/* ---------- p3 · Where were you? ---------- */
+{"id":"xh_p3","title":"Where were you?","step":"learn","meta":"Ubuphi? — and the bendi- that answers it","vocab":[["Ubuphi izolo?","oo-BOO-pee ee-ZAW-law","where were you yesterday?"],["Bendisekhaya","behn-dee-seh-KHAH-yah","I was at home"],["Bendigula","behn-dee-GOO-lah","I was sick"]],"ex":[
+{"t":"note","tag":"The question","q":"Ubuphi izolo?","body":"<p><b>Ubuphi izolo?</b> — <i>where were you yesterday?</i> Your old friend phi, with a bu- that pushes the being into the past.</p>","eg":[["Ubuphi izolo?","oo-BOO-pee ee-ZAW-law","where were you yesterday?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Uya phi?"],"a":0},
+{"t":"mc","q":"Ubuphi izolo? asks…","o":["where were you yesterday?","where are you going?","where do you work?"],"a":0},
+{"t":"note","tag":"The answer","q":"Bendi- — I was","body":"<p>The answer starts with <b>bendi-</b> — <i>I was</i>: <b>Bendisekhaya</b> — <i>I was at home</i> (ikhaya wearing its at-form, sekhaya). Honest excuses welcome too: <b>Bendigula</b> — <i>I was sick</i>.</p>","eg":[["Bendisekhaya","behn-dee-seh-KHAH-yah","I was at home"],["Bendigula","behn-dee-GOO-lah","I was sick"]]},
+{"t":"li","q":"Which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula"],"a":0},
+{"t":"mc","q":"Bendigula means…","o":["I was sick","I am sick","I was away"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Ubuphi izolo?"],"a":0},
+{"t":"mc","q":"The bendi- at the front means…","o":["I was","I will","I am"],"a":0}
+]},
+{"id":"xh_p3_2","title":"Hearing the was","step":"recognize","meta":"Past places by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Bendisekhaya","Ubuphi izolo?"],"a":0},
+{"t":"mc","q":"What does Bendisekhaya mean?","o":["I was at home","I am at home","I went home"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendisekhaya","Bendigula"],"a":0},
+{"t":"mc","q":"Which one means I was sick?","o":["Bendigula","ndiyagula","Bendisekhaya"],"a":0},
+{"t":"li","q":"Was or am — which do you hear?","say":"Bendigula","o":["Bendigula","ndiyagula"],"a":0},
+{"t":"mc","q":"Ubuphi izolo? — Bendisemsebenzini would mean I was…","o":["at work","at home","in town"],"a":0}
+]},
+{"id":"xh_p3_3","title":"Building the was","step":"build","meta":"Yesterday, located","vocab":[],"ex":[
+{"t":"fill","q":"Complete: where were you yesterday?","s":"Ubu___i izolo?","o":["ph","p","f"],"a":0},
+{"t":"wb","q":"Build: I was at home","a":["bendisekhaya"],"pool":["bendisekhaya","bendigula","izolo"]},
+{"t":"fill","q":"Complete: I was sick","s":"___digula","o":["Ben","Ndi","Uya"],"a":0},
+{"t":"wb","q":"Build: where were you yesterday?","a":["ubuphi","izolo?"],"pool":["ubuphi","izolo?","bendisekhaya"]},
+{"t":"li","q":"Which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Ubuphi izolo?","Bendigula"],"a":0}
+]},
+{"id":"xh_p3_4","title":"The was in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ubuphi izolo?","where were you yesterday?"],["Bendisekhaya","I was at home"],["Bendigula","I was sick"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendigula","Bendisekhaya"],"a":0},
+{"t":"match","q":"Match now to then","pairs":[["ndiyagula","Bendigula"],["ndihamba","ndihambile"]]},
+{"t":"mc","q":"Ubuphi izolo? — the excuse that mentions the clinic zone…","o":["Bendigula","Bendisekhaya","Ndiziva ngcono"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Bendisekhaya","Ubuphi izolo?"],"a":0}
+]},
+{"id":"xh_p3_5","title":"Checkpoint: the was","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Bendigula mean?","o":["I was sick","I am sick","I was tired"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendisekhaya","Bendigula"],"a":0},
+{"t":"mc","q":"Which one means I was at home?","o":["Bendisekhaya","Bendigula","ekhaya"],"a":0},
+{"t":"mc","q":"bendi- is to I was as ndi- is to…","o":["I am","you are","I will"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula","Ubuphi izolo?"],"a":0},
+{"t":"mc","q":"Review — which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0}
+]},
+
+/* ---------- p4 · Tomorrow I will ---------- */
+{"id":"xh_p4","title":"Tomorrow I will","step":"learn","meta":"Ndiza ku- — the future from a verb you know","vocab":[["ndiza kuhamba","ndee-zah koo-HAHM-bah","I will go"],["ndiza kusebenza","ndee-zah koo-seh-BEHN-zah","I will work"],["Ndiza kuhamba ngomso","ndee-zah koo-HAHM-bah NGAWM-saw","I will go tomorrow"]],"ex":[
+{"t":"note","tag":"Coming to do it","q":"Ndiza ku-","body":"<p>The future is built from ndiza — <i>I come</i>: <b>ndiza kuhamba</b> — <i>I will go</i>, literally I-come-to-go. What you are coming to do is what you will do. <b>Ndiza kusebenza</b> — <i>I will work</i>.</p>","eg":[["ndiza kuhamba","ndee-zah koo-HAHM-bah","I will go"],["ndiza kusebenza","ndee-zah koo-seh-BEHN-zah","I will work"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiza kuhamba","o":["ndiza kuhamba","ndiza kusebenza"],"a":0},
+{"t":"mc","q":"ndiza kuhamba literally says…","o":["I come to go","I go to come","I went already"],"a":0},
+{"t":"note","tag":"Stamped with a day","q":"Ndiza kuhamba ngomso","body":"<p>Add a time word and the plan is made: <b>Ndiza kuhamba ngomso</b> — <i>I will go tomorrow</i>. Past, present, future — you now hold all three.</p>","eg":[["Ndiza kuhamba ngomso","ndee-zah koo-HAHM-bah NGAWM-saw","I will go tomorrow"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kuhamba"],"a":0},
+{"t":"mc","q":"Ndiza kuhamba ngomso means…","o":["I will go tomorrow","I went yesterday","I am going now"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba"],"a":0},
+{"t":"mc","q":"The ku- after ndiza is the same ku- as in…","o":["ukuthenga","kubuhlungu","kusasa"],"a":0}
+]},
+{"id":"xh_p4_2","title":"Hearing the future","step":"recognize","meta":"Plans by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba","Ndiza kuhamba ngomso"],"a":0},
+{"t":"mc","q":"What does ndiza kusebenza mean?","o":["I will work","I worked","I am working"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kusebenza","ndiza kuhamba"],"a":0},
+{"t":"mc","q":"Which one means I will go?","o":["ndiza kuhamba","ndihambile","ndihamba"],"a":0},
+{"t":"li","q":"Past or future — which do you hear?","say":"ndiza kuhamba","o":["ndiza kuhamba","ndihambile"],"a":0},
+{"t":"mc","q":"I will cook would be…","o":["ndiza kupheka","ndiphekile","ndipheka"],"a":0}
+]},
+{"id":"xh_p4_3","title":"Building the future","step":"build","meta":"Make plans","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I will go","s":"ndiza ___hamba","o":["ku","uku","kuya"],"a":0},
+{"t":"wb","q":"Build: I will go tomorrow","a":["ndiza","kuhamba","ngomso"],"pool":["ndiza","kuhamba","ngomso","izolo"]},
+{"t":"fill","q":"Complete: I will work","s":"ndiza kusebe___a","o":["nz","ns","z"],"a":0},
+{"t":"wb","q":"Build: I will work","a":["ndiza","kusebenza"],"pool":["ndiza","kusebenza","kuhamba"]},
+{"t":"li","q":"Which one do you hear?","say":"ndiza kuhamba","o":["ndiza kuhamba","Ndiza kuhamba ngomso","ndiza kusebenza"],"a":0}
+]},
+{"id":"xh_p4_4","title":"The future in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiza kuhamba","I will go"],["ndiza kusebenza","I will work"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kuhamba","ndiza kusebenza"],"a":0},
+{"t":"match","q":"Match the time to the form","pairs":[["izolo","ndihambile"],["ngoku","ndihamba"],["ngomso","ndiza kuhamba"]]},
+{"t":"mc","q":"All three tenses of hamba, in order past-present-future…","o":["ndihambile, ndihamba, ndiza kuhamba","ndihamba, ndihambile, ndiza kuhamba","ndiza kuhamba, ndihamba, ndihambile"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba","ndisebenzile"],"a":0}
+]},
+{"id":"xh_p4_5","title":"Checkpoint: the future","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Ndiza kuhamba ngomso mean?","o":["I will go tomorrow","I went yesterday","I go every day"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndisebenzile","ndiyasebenza"],"a":0},
+{"t":"mc","q":"The future is built from ndiza plus…","o":["the ku- to-form","the -ile ending","the -ya- marker"],"a":0},
+{"t":"mc","q":"I will buy would be…","o":["ndiza kuthenga","ndithengile","ndithenga"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kusebenza","ndiza kuhamba"],"a":0},
+{"t":"mc","q":"Review — which one means phone?","o":["ifowuni","ipeni","ikhompyutha"],"a":0}
+]},
+
+/* ---------- p5 · The weather ---------- */
+{"id":"xh_p5","title":"The weather","step":"learn","meta":"Rain, cold, heat — the daily report","vocab":[["imozulu","ee-maw-ZOO-loo","weather"],["liyanetha","lee-yah-NEH-tah","it is raining"],["kuyabanda","koo-yah-BAHN-dah","it is cold"],["kushushu","koo-SHOO-shoo","it is hot"]],"ex":[
+{"t":"note","tag":"The daily subject","q":"Imozulu","body":"<p><b>Imozulu</b> — <i>the weather</i> — literally the state of izulu, the sky. South Africans discuss it the way the British do, with more sunshine to report.</p>","eg":[["imozulu","ee-maw-ZOO-loo","weather"]]},
+{"t":"li","q":"Which one do you hear?","say":"imozulu","o":["imozulu","izolo"],"a":0},
+{"t":"mc","q":"What does imozulu mean?","o":["weather","sky","rain"],"a":0},
+{"t":"note","tag":"When it falls","q":"Liyanetha","body":"<p><b>Liyanetha</b> — <i>it is raining</i> — the sky (izulu, a li- word) doing the raining, with the -ya- of a verb standing alone. In Cape Town this is a winter sentence; inland it belongs to summer thunderstorms.</p>","eg":[["liyanetha","lee-yah-NEH-tah","it is raining"]]},
+{"t":"li","q":"Which one do you hear?","say":"liyanetha","o":["liyanetha","imozulu"],"a":0},
+{"t":"mc","q":"liyanetha means…","o":["it is raining","it is windy","it is cloudy"],"a":0},
+{"t":"note","tag":"The two complaints","q":"Kuyabanda, kushushu","body":"<p><b>Kuyabanda</b> — <i>it is cold</i>. <b>Kushushu</b> — <i>it is hot</i>. The ku- of kubuhlungu, reporting on the day instead of the body.</p>","eg":[["kuyabanda","koo-yah-BAHN-dah","it is cold"],["kushushu","koo-SHOO-shoo","it is hot"]]},
+{"t":"li","q":"Hot or cold — which do you hear?","say":"kushushu","o":["kushushu","kuyabanda"],"a":0},
+{"t":"mc","q":"kuyabanda means…","o":["it is cold","it is hot","it is raining"],"a":0}
+]},
+{"id":"xh_p5_2","title":"Hearing the weather","step":"recognize","meta":"The report by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","kushushu","liyanetha"],"a":0},
+{"t":"mc","q":"What does kushushu mean?","o":["it is hot","it is cold","it is sunny"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"liyanetha","o":["liyanetha","kuyabanda","imozulu"],"a":0},
+{"t":"mc","q":"Which one means it is raining?","o":["liyanetha","kuyabanda","kushushu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kushushu","o":["kushushu","kuyabanda","liyanetha"],"a":0},
+{"t":"mc","q":"In Cape Town, liyanetha is mostly a … sentence","o":["winter","summer","spring"],"a":0}
+]},
+{"id":"xh_p5_3","title":"Building the weather","step":"build","meta":"Write the forecast","vocab":[],"ex":[
+{"t":"fill","q":"Complete: it is raining","s":"liyane___a","o":["th","t","nt"],"a":0},
+{"t":"wb","q":"Build the word: it is cold","a":["kuyabanda"],"pool":["kuyabanda","kushushu","liyanetha"]},
+{"t":"fill","q":"Complete: it is hot","s":"kushu___u","o":["sh","s","tsh"],"a":0},
+{"t":"wb","q":"Build the word: weather","a":["imozulu"],"pool":["imozulu","liyanetha","kushushu"]},
+{"t":"li","q":"Which one do you hear?","say":"imozulu","o":["imozulu","kushushu","kuyabanda"],"a":0}
+]},
+{"id":"xh_p5_4","title":"The weather in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["liyanetha","it is raining"],["kuyabanda","it is cold"],["kushushu","it is hot"]]},
+{"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","liyanetha","kushushu"],"a":0},
+{"t":"match","q":"Match the ku- report to its zone","pairs":[["kubuhlungu","the body"],["kushushu","the weather"]]},
+{"t":"mc","q":"Liyanetha, kuyabanda — the day calls for…","o":["staying endlwini","a braai in iyadi","a walk edolophini"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"liyanetha","o":["liyanetha","imozulu","kuyabanda"],"a":0}
+]},
+{"id":"xh_p5_5","title":"Checkpoint: the weather","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does liyanetha mean?","o":["it is raining","it is cold","it is hot"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kushushu","o":["kushushu","kuyabanda","imozulu"],"a":0},
+{"t":"mc","q":"Which one means it is cold?","o":["kuyabanda","kushushu","liyanetha"],"a":0},
+{"t":"mc","q":"imozulu is literally the state of…","o":["izulu, the sky","umhlaba, the earth","umoya, the wind"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","kushushu","liyanetha"],"a":0},
+{"t":"mc","q":"Review — which one means work (the noun)?","o":["umsebenzi","imisebenzi","umfundi"],"a":0}
+]},
+
+/* ---------- p6 · Sun and wind ---------- */
+{"id":"xh_p6","title":"Sun and wind","step":"learn","meta":"Ilanga, umoya — and today stamped hot","vocab":[["ilanga","ee-LAHN-gah","sun"],["umoya","oo-MAW-yah","wind"],["Kushushu namhlanje","koo-SHOO-shoo nah-MHLAHN-jeh","it is hot today"]],"ex":[
+{"t":"note","tag":"The bright one","q":"Ilanga","body":"<p><b>Ilanga</b> — <i>the sun</i> — also a day, in the counting sense: sun-up to sun-up. South Africa&rsquo;s most reliable citizen.</p>","eg":[["ilanga","ee-LAHN-gah","sun"]]},
+{"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","imozulu"],"a":0},
+{"t":"mc","q":"What does ilanga mean?","o":["sun","moon","sky"],"a":0},
+{"t":"note","tag":"The invisible one","q":"Umoya","body":"<p><b>Umoya</b> — <i>the wind</i> — and much more: air, breath, spirit. One of the deepest words in the language; for now, it is what the Cape Doctor blows through Cape Town every summer.</p>","eg":[["umoya","oo-MAW-yah","wind"]]},
+{"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga"],"a":0},
+{"t":"mc","q":"umoya means wind and also…","o":["air, breath, spirit","rain and hail","dust"],"a":0},
+{"t":"note","tag":"Stamping the day","q":"Kushushu namhlanje","body":"<p>Weather plus your time words: <b>Kushushu namhlanje</b> — <i>it is hot today</i>. Bendisekhaya izolo, kuyabanda ngomso — the reports write themselves now.</p>","eg":[["Kushushu namhlanje","koo-SHOO-shoo nah-MHLAHN-jeh","it is hot today"]]},
+{"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","kushushu"],"a":0},
+{"t":"mc","q":"Kushushu namhlanje means…","o":["it is hot today","it was hot yesterday","it will be hot tomorrow"],"a":0}
+]},
+{"id":"xh_p6_2","title":"Hearing the elements","step":"recognize","meta":"Sun and wind by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","imozulu"],"a":0},
+{"t":"mc","q":"What does ilanga mean?","o":["sun","wind","weather"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","umoya","ilanga"],"a":0},
+{"t":"mc","q":"Which one means wind?","o":["umoya","ilanga","imozulu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","umoya","Kushushu namhlanje"],"a":0},
+{"t":"mc","q":"The summer wind that scours Cape Town is nicknamed…","o":["the Cape Doctor","the Berg wind","the Karoo breath"],"a":0}
+]},
+{"id":"xh_p6_3","title":"Building the elements","step":"build","meta":"Sky words in place","vocab":[],"ex":[
+{"t":"fill","q":"Complete: sun","s":"ilan___","o":["ga","ge","gu"],"a":0},
+{"t":"wb","q":"Build: it is hot today","a":["kushushu","namhlanje"],"pool":["kushushu","namhlanje","izolo"]},
+{"t":"fill","q":"Complete: wind","s":"umo___","o":["ya","yo","wa"],"a":0},
+{"t":"wb","q":"Build the word: sun","a":["ilanga"],"pool":["ilanga","umoya","imozulu"]},
+{"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","Kushushu namhlanje"],"a":0}
+]},
+{"id":"xh_p6_4","title":"The elements in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ilanga","sun"],["umoya","wind"],["imozulu","weather"]]},
+{"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","ilanga","umoya"],"a":0},
+{"t":"match","q":"Match the report to the day","pairs":[["Kushushu namhlanje","today"],["Bendisekhaya izolo","yesterday"]]},
+{"t":"mc","q":"Ilanga liphumile — the sun is out. Time for…","o":["ishisanyama in iyadi","ukulala","amayeza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","Kushushu namhlanje","umoya"],"a":0}
+]},
+{"id":"xh_p6_5","title":"Checkpoint: the elements","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does umoya mean?","o":["wind","sun","cloud"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","umoya","imozulu"],"a":0},
+{"t":"mc","q":"Which one means it is hot today?","o":["Kushushu namhlanje","Kuyabanda namhlanje","Kushushu izolo"],"a":0},
+{"t":"mc","q":"Beyond wind, umoya also means…","o":["breath and spirit","thunder","the sea"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","Kushushu namhlanje"],"a":0},
+{"t":"mc","q":"Review — which one means homestead?","o":["umzi","imizi","indlu"],"a":0}
+]},
+
+/* ---------- p7 · Plans ---------- */
+{"id":"xh_p7","title":"Plans","step":"learn","meta":"Uza kuya phi? — the zone comes together","vocab":[["Uza kuya phi?","oo-zah koo-YAH PEE","where will you go?"],["Ndiza kuya edolophini","ndee-zah koo-YAH eh-daw-law-PEE-nee","I will go to town"]],"ex":[
+{"t":"note","tag":"The future question","q":"Uza kuya phi?","body":"<p>Uya phi? asked about now. The future version swaps in uza ku-: <b>Uza kuya phi?</b> — <i>where will you go?</i> Same phi, new day.</p>","eg":[["Uza kuya phi?","oo-zah koo-YAH PEE","where will you go?"]]},
+{"t":"li","q":"Now or later — which do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Uya phi?"],"a":0},
+{"t":"mc","q":"Uza kuya phi? asks…","o":["where will you go?","where are you going now?","where were you?"],"a":0},
+{"t":"note","tag":"The future answer","q":"Ndiza kuya edolophini","body":"<p>And the answer wears the same clothes: <b>Ndiza kuya edolophini</b> — <i>I will go to town</i>. Ndiza kuya esikolweni, evenkileni, ekhaya — every place you own fits the frame.</p>","eg":[["Ndiza kuya edolophini","ndee-zah koo-YAH eh-daw-law-PEE-nee","I will go to town"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","Uza kuya phi?"],"a":0},
+{"t":"mc","q":"Ndiza kuya edolophini means…","o":["I will go to town","I went to town","I am in town"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini"],"a":0},
+{"t":"mc","q":"I will go home would be Ndiza kuya…","o":["ekhaya","ikhaya","ekhayeni"],"a":0}
+]},
+{"id":"xh_p7_2","title":"Hearing the plans","step":"recognize","meta":"Future questions by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","Uza kuya phi?","ndiza kuhamba"],"a":0},
+{"t":"mc","q":"What does Uza kuya phi? ask?","o":["where will you go?","where do you work?","where were you?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Uya phi?"],"a":0},
+{"t":"mc","q":"Which one means I will go to town?","o":["Ndiza kuya edolophini","Ndiya edolophini","Ndihambile edolophini"],"a":0},
+{"t":"li","q":"Which question do you hear — now or future?","say":"Uya phi?","o":["Uya phi?","Uza kuya phi?"],"a":0},
+{"t":"mc","q":"Uza kuya phi ngomso? — the fullest answer…","o":["Ndiza kuya esikolweni ngomso","Bendisekhaya izolo","Ndiya esikolweni"],"a":0}
+]},
+{"id":"xh_p7_3","title":"Building the plans","step":"build","meta":"Say what will happen","vocab":[],"ex":[
+{"t":"fill","q":"Complete: where will you go?","s":"U___ kuya phi?","o":["za","ya","zi"],"a":0},
+{"t":"wb","q":"Build: I will go to town","a":["ndiza","kuya","edolophini"],"pool":["ndiza","kuya","edolophini","izolo"]},
+{"t":"wb","q":"Build: where will you go?","a":["uza","kuya","phi?"],"pool":["uza","kuya","phi?","ngomso"]},
+{"t":"wb","q":"Build: I will go to school","a":["ndiza","kuya","esikolweni"],"pool":["ndiza","kuya","esikolweni","edolophini"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","Uza kuya phi?","ndiza kusebenza"],"a":0}
+]},
+{"id":"xh_p7_4","title":"The plans in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uza kuya phi?","where will you go?"],["Ndiza kuya edolophini","I will go to town"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Uya phi?"],"a":0},
+{"t":"match","q":"Match the question to its time","pairs":[["Uya phi?","now"],["Uza kuya phi?","the future"],["Ubuphi izolo?","the past"]]},
+{"t":"mc","q":"Three zones of questions: Uphi, Uya phi, Uza kuya phi — the constant piece is…","o":["phi","uza","ndi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","ndiza kuhamba","Uza kuya phi?"],"a":0}
+]},
+{"id":"xh_p7_5","title":"Checkpoint: Zone 11 complete","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Uza kuya phi? — Ndiza kuya edolophini. The plan is…","o":["town, later","town, yesterday","home, now"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Ubuphi izolo?"],"a":0},
+{"t":"mc","q":"Review — the past of ndihamba is…","o":["ndihambile","ndiza kuhamba","ndiyahamba"],"a":0},
+{"t":"mc","q":"Review — which one means it is raining?","o":["liyanetha","kuyabanda","kushushu"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula","Ubuphi izolo?"],"a":0},
+{"t":"mc","q":"Review — which one means sun?","o":["ilanga","umoya","imozulu"],"a":0},
+{"t":"mc","q":"Review — I bought bread yesterday…","o":["Ndithenge isonka izolo","Ndiza kuthenga isonka","Ndithenga isonka"],"a":0}
 ]}
 ];
 
@@ -3060,9 +3358,11 @@ const XH_UNITS=[
 {"n":9,"t":"Work and school","d":"Jobs, the classroom, the fourth plural pair — and how the street says work","lessons":["xh_w1","xh_w1_2","xh_w1_3","xh_w1_4","xh_w1_5","xh_w2","xh_w2_2","xh_w2_3","xh_w2_4","xh_w2_5","xh_w3","xh_w3_2","xh_w3_3","xh_w3_4","xh_w3_5","xh_w4","xh_w4_2","xh_w4_3","xh_w4_4","xh_w4_5","xh_w5","xh_w5_2","xh_w5_3","xh_w5_4","xh_w5_5","xh_w6","xh_w6_2","xh_w6_3","xh_w6_4","xh_w6_5","xh_w7","xh_w7_2","xh_w7_3","xh_w7_4","xh_w7_5"]}
 ,
 {"n":10,"t":"Body and health","d":"The body, the clinic, commands — and feeling better","lessons":["xh_b1","xh_b1_2","xh_b1_3","xh_b1_4","xh_b1_5","xh_b2","xh_b2_2","xh_b2_3","xh_b2_4","xh_b2_5","xh_b3","xh_b3_2","xh_b3_3","xh_b3_4","xh_b3_5","xh_b4","xh_b4_2","xh_b4_3","xh_b4_4","xh_b4_5","xh_b5","xh_b5_2","xh_b5_3","xh_b5_4","xh_b5_5","xh_b6","xh_b6_2","xh_b6_3","xh_b6_4","xh_b6_5","xh_b7","xh_b7_2","xh_b7_3","xh_b7_4","xh_b7_5"]}
+,
+{"n":11,"t":"Past and future","d":"The -ile past, bendi- was, ndiza ku- future — and the weather","lessons":["xh_p1","xh_p1_2","xh_p1_3","xh_p1_4","xh_p1_5","xh_p2","xh_p2_2","xh_p2_3","xh_p2_4","xh_p2_5","xh_p3","xh_p3_2","xh_p3_3","xh_p3_4","xh_p3_5","xh_p4","xh_p4_2","xh_p4_3","xh_p4_4","xh_p4_5","xh_p5","xh_p5_2","xh_p5_3","xh_p5_4","xh_p5_5","xh_p6","xh_p6_2","xh_p6_3","xh_p6_4","xh_p6_5","xh_p7","xh_p7_2","xh_p7_3","xh_p7_4","xh_p7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela","xh_b1":"intloko","xh_b2":"amehlo","xh_b3":"kubuhlungu","xh_b4":"apha!","xh_b5":"ikliniki","xh_b6":"yiza","xh_b7":"ngcono"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela","xh_b1":"intloko","xh_b2":"amehlo","xh_b3":"kubuhlungu","xh_b4":"apha!","xh_b5":"ikliniki","xh_b6":"yiza","xh_b7":"ngcono","xh_p1":"-ile","xh_p2":"-e","xh_p3":"bendi-","xh_p4":"ndiza ku-","xh_p5":"liyanetha","xh_p6":"ilanga","xh_p7":"uza kuya"};
 
 const XH_SRS_SEED=[];
 

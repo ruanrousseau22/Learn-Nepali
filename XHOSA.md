@@ -242,7 +242,31 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       njani?/Ndiziva ngcono (ngc click; zi- reflexive note). Sober
       register kept. Checker passed after 1 self-caught fix
       (kulungile untaught in a match pair → iyadura/itshiphu).
-- [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
+- [x] Zone 11 (Past and future) COMPLETE (385 lessons, 2372 ex, 480
+      clips): p1 -ile past (ndihambile/ndisebenzile/ndiphekile + THE
+      NDILAMBILE SECRET retroactive note), p2 -ile→-e before objects
+      (Ndithenge isonka izolo — mirrored to the -ya- rule), p3 Ubuphi
+      izolo?/Bendisekhaya/Bendigula (bendi- = I was), p4 ndiza ku-
+      future (I-come-to-go note; tense triple izolo/ngoku/ngomso
+      match), p5 imozulu/liyanetha/kuyabanda/kushushu (+Cape winter
+      rain note), p6 ilanga/umoya (breath-spirit note)/Kushushu
+      namhlanje, p7 Uza kuya phi?/Ndiza kuya edolophini (Uphi→Uya
+      phi→Uza kuya phi arc). Checker caught 1 (kushushu distractor),
+      fixed.
+- [ ] Zone 12 (Conversation & community): c1 feelings (ndonwabile I am
+      happy, ndidiniwe I am tired, ndiyoyika I am afraid), c2
+      invitations (Masihambe! let us go — ma- hortative, Yiza sidle?
+      keep simple: Masitye let us eat, Masihambe), c3 ubuntu &
+      community (ubuntu, uluntu community, ukunceda to help —
+      umntu ngumntu ngabantu proverb), c4 opinions (ndicinga I
+      think, ndiyavuma I agree, andivumi I disagree), c5 storytelling
+      connectors (kuqala first, emva koko after that, ekugqibeleni
+      finally), c6 the learner's toolkit (Ndisafunda I am still
+      learning, Thetha kancinci speak slowly recycle, Utsho ukuthini?
+      what do you mean?), c7 farewell + course wrap (Ndiyabulela I
+      give thanks, Sobonana we will see each other, Hambani kakuhle
+      plural goodbye).
+- [ ] Post-course: checkpoint-review orphan pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,
       aloe/protea/acacia, rondavel homesteads, ocean; palette: fynbos greens/
