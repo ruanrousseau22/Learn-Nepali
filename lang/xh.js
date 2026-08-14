@@ -26,9 +26,10 @@
    articles, five pure vowels that never change, and dead-regular
    penultimate stress.
 
-   ART: not drawn yet (see XHOSA.md) — Eastern Cape scenery planned: rolling
-   green hills to the ocean, aloes and proteas, rondavel homesteads, cattle.
-   Until then the engine's default art shows; DO NOT ship without art.
+   ART: Table Mountain + tablecloth cloud (far), ochre veld (mid), fynbos
+   green (near) with rondavels, aloe ferox, Nguni cattle, one acacia.
+   Mascot: blue crane (indwe). Palette vars incl. --thatch/--wall/--aloe
+   live in index.html under data-lang="xh" (light + dark).
 
    STATUS: Zone 1 complete (s1–s7, 35 lessons). NOT in LANG_CATALOG yet — the course
    must not become reachable in production until complete. Local testing:
@@ -3941,6 +3942,68 @@ const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","
 
 const XH_SRS_SEED=[];
 
+/* ---------- Art — Cape Town / Eastern Cape, secular only.
+   FAR: Table Mountain with its tablecloth cloud, Lion's Head to its left
+   (all right of the title safe zone; the left far ridge stays low).
+   MID: warm ochre grassland hills. NEAR: green veld with whitewashed
+   rondavels (thatch cones), aloe ferox with flame-orange flower spikes,
+   Nguni cattle, one flat-top acacia. No religious imagery, no humans.
+   Palette vars --thatch/--wall/--aloe live in index.html next to the
+   other data-lang="xh" vars (light + dark). Mascot: the blue crane —
+   indwe, South Africa's national bird, a mark of honour in Xhosa
+   tradition (secular). Grounding: translate-y + 100·scale = near surface. */
+const XH_ALOE='<g fill="var(--tree)"><path d="M50 100 C30 92 16 76 10 58 C26 70 40 82 50 93 Z"/><path d="M50 100 C70 92 84 76 90 58 C74 70 60 82 50 93 Z"/><path d="M50 99 C39 82 34 63 37 45 C45 62 51 80 53 95 Z"/><path d="M50 99 C61 82 66 63 63 45 C55 62 49 80 47 95 Z"/><path d="M49 97 C49 78 49 60 50 44 L54 62 L54 82 L52 97 Z"/></g><path d="M44 72 L35 32" stroke="var(--bark)" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="34" cy="25" rx="5" ry="11" fill="var(--aloe)"/><path d="M57 72 L64 38" stroke="var(--bark)" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="65" cy="31" rx="4.4" ry="9.5" fill="var(--aloe)"/>';
+const XH_HUT='<path fill="var(--thatch)" d="M8 64 Q50 55 92 64 L57 15 Q50 10 43 15 Z"/><path fill="var(--thatch)" d="M46 12 Q50 6 54 12 L52 16 L48 16 Z" opacity=".9"/><path fill="var(--wall)" d="M16 100 L16 61 Q50 54 84 61 L84 100 Z"/><path fill="var(--tyre)" d="M42 100 L42 76 Q50 69 58 76 L58 100 Z"/>';
+const XH_COW='<ellipse cx="50" cy="66" rx="27" ry="15" fill="var(--hide)"/><path d="M29 76 L27 100 M41 79 L41 100 M59 79 L59 100 M71 76 L73 100" stroke="var(--hide)" stroke-width="6" stroke-linecap="round" fill="none"/><ellipse cx="43" cy="62" rx="10" ry="6.5" fill="#E7DCC6" opacity=".85"/><path d="M24 60 Q17 68 20 79" stroke="var(--hide)" stroke-width="2.5" fill="none" stroke-linecap="round"/>';
+const XH_COW_UP=XH_COW+'<ellipse cx="81" cy="50" rx="9.5" ry="7.5" fill="var(--hide)"/><path d="M75 43 Q70 33 75 27 M87 43 Q92 33 87 27" stroke="#D8CDB8" stroke-width="3" fill="none" stroke-linecap="round"/>';
+const XH_COW_DN=XH_COW+'<ellipse cx="82" cy="80" rx="9.5" ry="7.5" fill="var(--hide)"/><path d="M76 73 Q71 63 76 57 M88 73 Q93 63 88 57" stroke="#D8CDB8" stroke-width="3" fill="none" stroke-linecap="round"/>';
+const XH_ACACIA='<path fill="var(--bark)" d="M48 100 L45 62 L31 36 L35 33 L49 56 L51 30 L57 30 L55 58 L71 38 L74 41 L57 62 L54 100 Z"/><path fill="var(--tree)" d="M8 36 Q22 18 50 14 Q78 18 92 36 Q78 43 50 43 Q22 43 8 36 Z"/>';
+const XH_HERO='<circle class="orb-glow" cx="1060" cy="78" r="70"/><circle class="orb" cx="1060" cy="78" r="41"/>'
++'<g class="hero-stars" aria-hidden="true"><circle cx="140" cy="56" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="300" cy="98" r="1.2"/><circle cx="460" cy="44" r="2"/><circle cx="620" cy="72" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="1140" cy="120" r="1.3"/><circle cx="930" cy="60" r="1.5" class="tw" style="animation-delay:2s"/></g>'
++'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
++'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="128" rx="40" ry="15"/><ellipse cx="100" cy="122" rx="28" ry="17"/><ellipse cx="30" cy="125" rx="26" ry="13"/></g>'
++'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="70" rx="28" ry="11"/><ellipse cx="78" cy="65" rx="22" ry="13"/><ellipse cx="26" cy="68" rx="20" ry="10"/></g>'
++'<path class="far" opacity=".45" d="M700 266 Q740 258 770 242 L778 238 L790 242 Q810 254 836 262 L836 270 L700 270 Z"/>'
++'<path class="far" d="M0 320 L0 268 Q120 262 260 265 Q420 268 560 264 L640 262 Q692 258 722 240 Q740 224 750 212 L756 206 L764 212 Q772 221 780 228 Q792 208 802 178 L808 156 L832 150 L1008 150 L1030 156 Q1044 192 1062 222 Q1084 250 1114 258 Q1152 262 1200 260 L1200 320 Z"/>'
++'<g class="snow" opacity=".5" aria-hidden="true"><ellipse cx="852" cy="148" rx="26" ry="8"/><ellipse cx="898" cy="145" rx="30" ry="9"/><ellipse cx="946" cy="147" rx="28" ry="8"/><ellipse cx="990" cy="146" rx="23" ry="8"/><ellipse cx="1016" cy="153" rx="13" ry="10" opacity=".7"/><ellipse cx="1024" cy="166" rx="8" ry="9" opacity=".45"/></g>'
++'<path class="mid" d="M0 320 L0 292 Q150 284 320 287 Q480 290 640 283 Q800 277 960 282 Q1100 286 1200 283 L1200 320 Z"/>'
++'<path class="snow" opacity=".18" d="M180 289 Q300 285.5 430 288 L430 291 Q300 288.5 182 292 Z"/>'
++'<path class="snow" opacity=".16" d="M700 281 Q820 277.5 940 280 L940 283 Q820 280.5 702 284 Z"/>'
++'<g class="near"><path d="M0 320 L0 305 Q150 297 320 299 Q480 302 640 296 Q800 291 960 295 Q1100 298 1200 293 L1200 320 Z"/><path fill="var(--snow)" opacity=".1" d="M240 301 Q400 296 560 299 L560 302 Q400 299 242 304 Z"/><path fill="var(--snow)" opacity=".1" d="M760 293 Q900 288 1040 294 L1040 297 Q900 291 762 296 Z"/></g>'
++'<g transform="translate(38,264) scale(0.4)" aria-hidden="true">'+XH_ALOE+'</g>'
++'<g transform="translate(95,250) scale(0.5)" aria-hidden="true">'+XH_HUT+'</g>'
++'<g transform="translate(185,260) scale(0.38)" aria-hidden="true">'+XH_HUT+'</g>'
++'<g transform="translate(250,267) scale(0.32)" aria-hidden="true">'+XH_ALOE+'</g>'
++'<g transform="translate(655,266) scale(0.3)" aria-hidden="true">'+XH_HUT+'</g>'
++'<g transform="translate(860,250.5) scale(0.42)" aria-hidden="true">'+XH_COW_UP+'</g>'
++'<g transform="translate(955,261) scale(0.34)" aria-hidden="true">'+XH_COW_DN+'</g>'
++'<g transform="translate(1040,261) scale(0.36)" aria-hidden="true">'+XH_ALOE+'</g>'
++'<g transform="translate(1105,245.5) scale(0.52)" aria-hidden="true">'+XH_ACACIA+'</g>';
+const XH_BAND='<circle class="orb-glow" cx="1050" cy="54" r="32"/><circle class="orb" cx="1050" cy="54" r="19"/>'
++'<path class="far" opacity=".45" d="M690 164 Q720 158 742 148 L748 144 L756 148 Q770 156 788 161 L788 168 L690 168 Z"/>'
++'<path class="far" d="M0 200 L0 168 Q160 163 330 165 Q470 164 600 162 L700 161 Q744 157 772 148 Q784 136 792 124 L797 118 L803 124 Q808 131 814 128 Q822 100 828 68 L832 62 L1018 62 L1026 68 Q1034 102 1048 130 Q1064 154 1092 159 Q1140 162 1200 160 L1200 200 Z"/>'
++'<g class="snow" opacity=".48" aria-hidden="true"><ellipse cx="854" cy="60" rx="20" ry="6"/><ellipse cx="890" cy="58" rx="23" ry="7"/><ellipse cx="928" cy="60" rx="21" ry="6"/><ellipse cx="962" cy="58" rx="18" ry="6"/><ellipse cx="985" cy="64" rx="10" ry="7" opacity=".7"/></g>'
++'<path class="mid" d="M0 200 L0 182 Q150 176 320 178 Q500 180 680 175 Q860 171 1040 175 Q1140 177 1200 175 L1200 200 Z"/>'
++'<path class="snow" opacity=".18" d="M420 178 Q520 176 620 177.5 L620 180 Q520 178.5 422 181 Z"/>'
++'<g class="near"><path d="M0 200 L0 190 Q150 184 320 186 Q500 188 680 183 Q860 179 1040 183 Q1140 185 1200 182 L1200 200 Z"/></g>'
++'<g transform="translate(30,167.7) scale(0.22)" aria-hidden="true">'+XH_ALOE+'</g>'
++'<g transform="translate(1085,157.7) scale(0.26)" aria-hidden="true">'+XH_ALOE+'</g>'
++'<g transform="translate(1128,154) scale(0.3)" aria-hidden="true">'+XH_HUT+'</g>';
+function XH_MASCOT(m){
+  var base='<path d="M41 48 Q56 50 62 60 Q49 58 39 52 Z" fill="#7C93AB"/>' /* wing plume */
+  +'<ellipse cx="32" cy="48" rx="15" ry="10" fill="#8FA6BC"/>' /* body */
+  +'<path d="M26 57 L25 63 M38 57 L39 63" stroke="#B08D5C" stroke-width="2" stroke-linecap="round"/>' /* legs */
+  +'<path d="M27 42 Q23 34 26 27" stroke="#8FA6BC" stroke-width="7" fill="none" stroke-linecap="round"/>' /* neck */
+  +'<path d="M35 55 Q42 51 44 45" stroke="#7C93AB" stroke-width="2.4" fill="none" stroke-linecap="round"/>' /* wing line */
+  +'<circle cx="32" cy="22" r="12.5" fill="#A9BDD1"/>' /* head */
+  +'<path d="M21.5 14.5 Q32 6.5 42.5 14.5 Q32 10.5 21.5 14.5 Z" fill="#EDEFF2"/>' /* pale crown */
+  +'<path d="M28.8 32 L32 40.5 L35.2 32 Q32 30.2 28.8 32 Z" fill="#C2A15A"/>'; /* bill */
+  var f;
+  if(m==='cheer')f='<path d="M22.5 21 Q26 17.8 29.5 21" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M34.5 21 Q38 17.8 41.5 21" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M28 28.5 Q32 31.5 36 28.5" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M22.5 18.5 Q26 17.4 29.5 18.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><path d="M34.5 18.5 Q38 17.4 41.5 18.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><circle cx="26" cy="21.5" r="2" fill="#3E4750"/><circle cx="38" cy="21.5" r="2" fill="#3E4750"/><ellipse cx="32" cy="35" rx="1.5" ry="2" fill="#3E4750"/>';
+  else f='<circle cx="26" cy="21" r="2.4" fill="#3E4750"/><circle cx="38" cy="21" r="2.4" fill="#3E4750"/><circle cx="26.7" cy="20.2" r="0.7" fill="#fff"/><circle cx="38.7" cy="20.2" r="0.7" fill="#fff"/><path d="M28.5 28 Q32 30.6 35.5 28" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
+  return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
+
 /* ---------- Short-term (trip) pack — a visitor to Cape Town / the Eastern
    Cape meeting Xhosa speakers. Spine: greeting-FIRST etiquette (a request
    without Molo lands rudely), mama/tata/bhuti/sisi address as the politeness
@@ -4090,6 +4153,7 @@ registerPack({
   storageKey:'sajilo_xh',
   brand:{h1:'Learn <em>Xhosa</em>'},
   alpha:{native:'Iimpawu zesiXhosa',vowels:'Izikhamiso',cons:'Oonobumba',nums:'Amanani',review:'Uphononongo',settings:'Iisetingi'},
+  art:{hero:XH_HERO,band:XH_BAND,mascot:XH_MASCOT},
   voiceTest:v=>/^xh(\b|[-_])/i.test(v.lang)||/xhosa/i.test(v.name),
   fbVoiceTest:v=>false,
   fbVoiceName:'',
