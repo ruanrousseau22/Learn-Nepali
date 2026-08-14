@@ -447,7 +447,7 @@ TEMPLATE = """<!doctype html>
 {ref_block}
   <section class="block">
     <h2>Learn another language</h2>
-    <p class="lead">Bhasaly teaches under-served Asian languages.</p>
+    <p class="lead">Bhasaly teaches under-served Asian and African languages.</p>
     <div class="others">{other_links}</div>
   </section>
 </div>
@@ -595,7 +595,7 @@ border-radius:999px;cursor:pointer;font-family:inherit}}
 
 <section class="block no-print">
   <h2>Learn another language</h2>
-  <p class="lead">Bhasaly teaches under-served Asian languages.</p>
+  <p class="lead">Bhasaly teaches under-served Asian and African languages.</p>
   <div class="others">{other_links}</div>
 </section>
 

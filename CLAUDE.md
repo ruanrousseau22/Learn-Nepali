@@ -370,9 +370,10 @@ learning vs Religious studies (see Faith mode below). `switchMode` must call
     inside an RTL-forced container needs its own `direction:ltr`).
 11. **Do ONE language per session, single-threaded.** A parallel-subagent
     attempt burned the usage limit and produced nothing.
-12. Keep `<title>` at four languages + "& More" — it's already at Google's
-    display limit; do NOT add languages to it. Add everything else to
-    description/keywords/JSON-LD.
+12. Keep `<title>` at THREE languages + "& More" — since the Asia & Africa
+    rebrand (Aug 2026) the region phrase "Asian & African" eats the fourth
+    slot, and the title is at Google's display limit; do NOT add languages
+    to it. Add everything else to description/keywords/JSON-LD.
 
 ## Art rules
 
