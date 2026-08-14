@@ -1239,6 +1239,303 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which day do you hear?","say":"iCawa","o":["iCawa","uMgqibelo","uMvulo"],"a":0},
 {"t":"mc","q":"Review — Sobonana ngomso means see you…","o":["tomorrow","in the morning","on Sunday"],"a":0},
 {"t":"mc","q":"The sentence that gets you fluent…","o":["Ndifunda isiXhosa yonke imihla","Andiqondi","Hamba kakuhle"],"a":0}
+]},
+
+/* ---------- d1 · Hungry & thirsty ---------- */
+{"id":"xh_d1","title":"Hungry and thirsty","step":"learn","meta":"The two feelings that start every meal","vocab":[["ndilambile","ndee-lahm-BEE-leh","I am hungry"],["ndinxaniwe","ndee-nxah-NEE-weh","I am thirsty"],["ndifuna","ndee-FOO-nah","I want"],["amanzi","ah-MAHN-zee","water"],["Ndicela amanzi","ndee-CEH-lah ah-MAHN-zee","may I have water"]],"ex":[
+{"t":"note","tag":"Two feelings","q":"Ndilambile, ndinxaniwe","body":"<p><b>Ndilambile</b> — <i>I am hungry</i>. <b>Ndinxaniwe</b> — <i>I am thirsty</i> — with the nasal nx click humming in the middle. Say them and any Xhosa household will move to feed you.</p>","eg":[["ndilambile","ndee-lahm-BEE-leh","I am hungry"],["ndinxaniwe","ndee-nxah-NEE-weh","I am thirsty"]]},
+{"t":"li","q":"Hungry or thirsty — which do you hear?","say":"ndinxaniwe","o":["ndinxaniwe","ndilambile"],"a":0},
+{"t":"mc","q":"What does ndilambile mean?","o":["I am hungry","I am thirsty","I am tired"],"a":0},
+{"t":"note","tag":"Wanting and asking","q":"Ndifuna — and the polite ndicela","body":"<p><b>Ndifuna</b> is <i>I want</i> — direct and fine among friends. But the polite request uses cela, your first click verb: <b>Ndicela amanzi</b> — <i>may I have water, please</i>. Ndicela is the magic key of Xhosa politeness — it will carry you through shops, taxis and kitchens.</p>","eg":[["ndifuna","ndee-FOO-nah","I want"],["amanzi","ah-MAHN-zee","water"],["Ndicela amanzi","ndee-CEH-lah ah-MAHN-zee","may I have water"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndicela amanzi","o":["Ndicela amanzi","ndifuna"],"a":0},
+{"t":"mc","q":"The POLITE way to ask for something starts with…","o":["Ndicela","Ndifuna","Hayi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amanzi","o":["amanzi","ndifuna"],"a":0},
+{"t":"mc","q":"amanzi means…","o":["water","food","tea"],"a":0}
+]},
+{"id":"xh_d1_2","title":"Hearing hunger","step":"recognize","meta":"Feelings and requests by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndilambile","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0},
+{"t":"mc","q":"What does ndinxaniwe mean?","o":["I am thirsty","I am hungry","I want"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndifuna","o":["ndifuna","amanzi","ndilambile"],"a":0},
+{"t":"mc","q":"Ndicela amanzi means…","o":["may I have water","I am drinking water","the water is cold"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndicela amanzi","o":["Ndicela amanzi","amanzi","ndinxaniwe"],"a":0},
+{"t":"mc","q":"Which one means I want?","o":["ndifuna","ndicela","ndilambile"],"a":0}
+]},
+{"id":"xh_d1_3","title":"Building requests","step":"build","meta":"Ask politely","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am hungry","s":"Ndilambi___","o":["le","la","lo"],"a":0},
+{"t":"wb","q":"Build: may I have water","a":["ndicela","amanzi"],"pool":["ndicela","amanzi","ndifuna"]},
+{"t":"fill","q":"Complete: I am thirsty","s":"Ndin___aniwe","o":["x","c","q"],"a":0},
+{"t":"wb","q":"Build: I want water","a":["ndifuna","amanzi"],"pool":["ndifuna","amanzi","ndicela"]},
+{"t":"li","q":"Which one do you hear?","say":"ndinxaniwe","o":["ndinxaniwe","ndilambile","Ndicela amanzi"],"a":0}
+]},
+{"id":"xh_d1_4","title":"Hunger in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndilambile","I am hungry"],["ndinxaniwe","I am thirsty"],["amanzi","water"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndifuna","o":["ndifuna","ndilambile","amanzi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndifuna","I want"],["Ndicela amanzi","may I have water"]]},
+{"t":"mc","q":"At a stranger you would rather use…","o":["Ndicela","Ndifuna","Iza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndilambile","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0}
+]},
+{"id":"xh_d1_5","title":"Checkpoint: hungry & thirsty","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndinxaniwe mean?","o":["I am thirsty","I am hungry","I am full"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amanzi","o":["amanzi","ndifuna","ndilambile"],"a":0},
+{"t":"mc","q":"The polite request for water is…","o":["Ndicela amanzi","Ndifuna amanzi","Amanzi ngoku"],"a":0},
+{"t":"mc","q":"Which one means I want?","o":["ndifuna","ndilambile","ndicela"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndinxaniwe","o":["ndinxaniwe","amanzi","Ndicela amanzi"],"a":0},
+{"t":"mc","q":"Review — what does ukutya mean?","o":["food","water","meat"],"a":0}
+]},
+
+/* ---------- d2 · The staples ---------- */
+{"id":"xh_d2","title":"The staples","step":"learn","meta":"Bread, amasi and the drinks","vocab":[["isonka","ee-SAWN-kah","bread"],["amasi","ah-MAH-see","sour milk"],["iti","EE-tee","tea"],["ikofu","ee-KAW-foo","coffee"],["irayisi","ee-rah-YEE-see","rice"]],"ex":[
+{"t":"note","tag":"Daily bread","q":"Isonka and irayisi","body":"<p><b>Isonka</b> — <i>bread</i> — anchors every Xhosa breakfast; <b>irayisi</b> — <i>rice</i> — anchors the Sunday plate. Both are everyday words you will hear in any kitchen and any shop.</p>","eg":[["isonka","ee-SAWN-kah","bread"],["irayisi","ee-rah-YEE-see","rice"]]},
+{"t":"li","q":"Which one do you hear?","say":"isonka","o":["isonka","irayisi"],"a":0},
+{"t":"mc","q":"What does isonka mean?","o":["bread","rice","milk"],"a":0},
+{"t":"note","tag":"The beloved one","q":"Amasi — sour milk","body":"<p><b>Amasi</b> — thick sour milk — is comfort food itself, poured over umphokoqo (crumbly maize porridge) on a hot day. If a family offers you amasi, you are being treated as one of their own.</p>","eg":[["amasi","ah-MAH-see","sour milk"]]},
+{"t":"li","q":"Which one do you hear?","say":"amasi","o":["amasi","isonka"],"a":0},
+{"t":"mc","q":"amasi is…","o":["sour milk","fresh water","sweet tea"],"a":0},
+{"t":"note","tag":"Hot drinks","q":"Iti and ikofu","body":"<p><b>Iti</b> — <i>tea</i> — and <b>ikofu</b> — <i>coffee</i>. Tea is the drink of visiting: sit down anywhere and iti appears before the second sentence.</p>","eg":[["iti","EE-tee","tea"],["ikofu","ee-KAW-foo","coffee"]]},
+{"t":"li","q":"Which drink do you hear?","say":"ikofu","o":["ikofu","iti"],"a":0},
+{"t":"mc","q":"Which one means tea?","o":["iti","ikofu","amasi"],"a":0}
+]},
+{"id":"xh_d2_2","title":"Hearing the staples","step":"recognize","meta":"Kitchen words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"irayisi","o":["irayisi","isonka","amasi"],"a":0},
+{"t":"mc","q":"What does ikofu mean?","o":["coffee","tea","bread"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iti","o":["iti","ikofu","irayisi"],"a":0},
+{"t":"mc","q":"Which one means rice?","o":["irayisi","isonka","amasi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amasi","o":["amasi","iti","isonka"],"a":0},
+{"t":"mc","q":"Poured over umphokoqo on a hot day…","o":["amasi","ikofu","amanzi"],"a":0}
+]},
+{"id":"xh_d2_3","title":"Building the staples","step":"build","meta":"Spell the kitchen","vocab":[],"ex":[
+{"t":"fill","q":"Complete: bread","s":"ison___a","o":["k","kh","q"],"a":0},
+{"t":"wb","q":"Build: may I have tea","a":["ndicela","iti"],"pool":["ndicela","iti","ikofu"]},
+{"t":"fill","q":"Complete: coffee","s":"iko___u","o":["f","v","ph"],"a":0},
+{"t":"wb","q":"Build: may I have bread","a":["ndicela","isonka"],"pool":["ndicela","isonka","irayisi"]},
+{"t":"li","q":"Which one do you hear?","say":"isonka","o":["isonka","amasi","ikofu"],"a":0}
+]},
+{"id":"xh_d2_4","title":"Staples in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isonka","bread"],["amasi","sour milk"],["iti","tea"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikofu","o":["ikofu","iti","irayisi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikofu","coffee"],["irayisi","rice"]]},
+{"t":"mc","q":"You sit down to visit. Before the second sentence appears…","o":["iti","irayisi","amasi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"irayisi","o":["irayisi","amasi","isonka"],"a":0}
+]},
+{"id":"xh_d2_5","title":"Checkpoint: the staples","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does amasi mean?","o":["sour milk","coffee","porridge"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iti","o":["iti","ikofu","amasi"],"a":0},
+{"t":"mc","q":"Which one means bread?","o":["isonka","irayisi","ikofu"],"a":0},
+{"t":"mc","q":"Ndicela ikofu means…","o":["may I have coffee","I am drinking coffee","the coffee is hot"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ikofu","o":["ikofu","isonka","irayisi"],"a":0},
+{"t":"mc","q":"Review — which one means I am hungry?","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0}
+]},
+
+/* ---------- d3 · Eating & drinking ---------- */
+{"id":"xh_d3","title":"Eating and drinking","step":"learn","meta":"Nditya, ndisela — and asking what","vocab":[["nditya","ndee-TYAH","I eat"],["ndisela","ndee-SEH-lah","I drink"],["ntoni?","NTAW-nee","what?"],["Utya ntoni?","oo-TYAH NTAW-nee","what are you eating?"],["Ndisela iti","ndee-SEH-lah EE-tee","I am drinking tea"]],"ex":[
+{"t":"note","tag":"The verbs","q":"Nditya and ndisela","body":"<p><b>Nditya</b> — <i>I eat</i> — the soft ty from ukutya. <b>Ndisela</b> — <i>I drink</i>. Careful with a beautiful trap: <b>sela</b> (drink) has a plain s, but <b>cela</b> (ask for) begins with the click. One click apart: Ndisela iti — I drink tea; Ndicela iti — may I have tea.</p>","eg":[["nditya","ndee-TYAH","I eat"],["ndisela","ndee-SEH-lah","I drink"],["Ndisela iti","ndee-SEH-lah EE-tee","I am drinking tea"]]},
+{"t":"li","q":"Eat or drink — which do you hear?","say":"ndisela","o":["ndisela","nditya"],"a":0},
+{"t":"mc","q":"What does nditya mean?","o":["I eat","I drink","I want"],"a":0},
+{"t":"li","q":"Click or no click — which do you hear?","say":"Ndisela iti","o":["Ndisela iti","Ndicela amanzi"],"a":0},
+{"t":"note","tag":"What?","q":"Ntoni — the last question word","body":"<p><b>Ntoni?</b> is <i>what?</i> — completing your question set with phi (where), nini (when) and ngubani (who). <b>Utya ntoni?</b> — <i>what are you eating?</i> — the friendliest question at any shared table.</p>","eg":[["ntoni?","NTAW-nee","what?"],["Utya ntoni?","oo-TYAH NTAW-nee","what are you eating?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Utya ntoni?","o":["Utya ntoni?","ntoni?"],"a":0},
+{"t":"mc","q":"Utya ntoni? asks…","o":["what are you eating?","what are you drinking?","are you hungry?"],"a":0},
+{"t":"mc","q":"ntoni completes your question words. It means…","o":["what?","when?","where?"],"a":0}
+]},
+{"id":"xh_d3_2","title":"Hearing the verbs","step":"recognize","meta":"Eat, drink, what","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","ndisela","ntoni?"],"a":0},
+{"t":"mc","q":"What does ndisela mean?","o":["I drink","I eat","I ask for"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ntoni?","o":["ntoni?","nditya","Utya ntoni?"],"a":0},
+{"t":"mc","q":"Ndisela iti means…","o":["I am drinking tea","may I have tea","I like tea"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisela iti","o":["Ndisela iti","Utya ntoni?","ndisela"],"a":0},
+{"t":"mc","q":"One click apart: cela and sela. Cela means…","o":["ask for","drink","eat"],"a":0}
+]},
+{"id":"xh_d3_3","title":"Building meals","step":"build","meta":"Say what you eat and drink","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I eat","s":"Ndi___a","o":["ty","tsh","t"],"a":0},
+{"t":"wb","q":"Build: I am drinking coffee","a":["ndisela","ikofu"],"pool":["ndisela","ikofu","nditya"]},
+{"t":"fill","q":"Complete: what are you eating?","s":"Utya nto___?","o":["ni","na","ne"],"a":0},
+{"t":"wb","q":"Build: I eat bread","a":["nditya","isonka"],"pool":["nditya","isonka","ndisela"]},
+{"t":"li","q":"Which one do you hear?","say":"Utya ntoni?","o":["Utya ntoni?","Ndisela iti","ntoni?"],"a":0}
+]},
+{"id":"xh_d3_4","title":"Meals in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["nditya","I eat"],["ndisela","I drink"],["ntoni?","what?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndisela","o":["ndisela","nditya","ntoni?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Utya ntoni?","what are you eating?"],["Ndisela iti","I am drinking tea"]]},
+{"t":"mc","q":"Your question words: phi, nini, ngubani, …","o":["ntoni","yena","lam"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","Ndisela iti","Utya ntoni?"],"a":0}
+]},
+{"id":"xh_d3_5","title":"Checkpoint: eating & drinking","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ntoni mean?","o":["what?","who?","when?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndisela","o":["ndisela","nditya","ndifuna"],"a":0},
+{"t":"mc","q":"Someone asks Utya ntoni? You are eating bread…","o":["Nditya isonka","Ndisela isonka","Ndicela iti"],"a":0},
+{"t":"mc","q":"Which pair is one click apart?","o":["cela and sela","tya and sela","funa and cela"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","ntoni?","ndisela"],"a":0},
+{"t":"mc","q":"Review — which one means sour milk?","o":["amasi","amanzi","iti"],"a":0}
+]},
+
+/* ---------- d4 · Meat & the braai ---------- */
+{"id":"xh_d4","title":"Meat and the braai","step":"learn","meta":"Ishisanyama — where Saturday happens","vocab":[["ishisanyama","ee-shee-sah-NYAH-mah","braai place"],["inkukhu","een-KOO-khoo","chicken"],["intlanzi","een-TLAHN-zee","fish"],["amaqanda","ah-mah-QAHN-dah","eggs"],["Nditya inyama","ndee-TYAH ee-NYAH-mah","I am eating meat"]],"ex":[
+{"t":"note","tag":"Fire and meat","q":"Ishisanyama — burn the meat","body":"<p><b>Ishisanyama</b> — literally <i>burn-the-meat</i> — is the braai spot: the butcher-grill where Saturday afternoon happens, meat straight from the fire, music loud, everyone welcome. Inyama — <i>meat</i> — you learned with the sounds; now say <b>Nditya inyama</b> at the source.</p>","eg":[["ishisanyama","ee-shee-sah-NYAH-mah","braai place"],["Nditya inyama","ndee-TYAH ee-NYAH-mah","I am eating meat"]]},
+{"t":"li","q":"Which one do you hear?","say":"ishisanyama","o":["ishisanyama","Nditya inyama"],"a":0},
+{"t":"mc","q":"An ishisanyama is…","o":["a braai place","a fish market","a tea room"],"a":0},
+{"t":"note","tag":"From the yard","q":"Chicken, fish — and the egg plural","body":"<p><b>Inkukhu</b> — <i>chicken</i>; <b>intlanzi</b> — <i>fish</i> (Cape Town is a fish city). And a plural payoff: one iqanda, many <b>amaqanda</b> — the i- of the egg swaps to ama-, just like amaXhosa.</p>","eg":[["inkukhu","een-KOO-khoo","chicken"],["intlanzi","een-TLAHN-zee","fish"],["amaqanda","ah-mah-QAHN-dah","eggs"]]},
+{"t":"li","q":"Which one do you hear?","say":"intlanzi","o":["intlanzi","inkukhu"],"a":0},
+{"t":"mc","q":"What does inkukhu mean?","o":["chicken","fish","eggs"],"a":0},
+{"t":"li","q":"One egg or many — which do you hear?","say":"amaqanda","o":["amaqanda","iqanda"],"a":0},
+{"t":"mc","q":"The plural of iqanda is…","o":["amaqanda","ooqanda","iziqanda"],"a":0}
+]},
+{"id":"xh_d4_2","title":"Hearing the braai","step":"recognize","meta":"Meat words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"inkukhu","o":["inkukhu","intlanzi","amaqanda"],"a":0},
+{"t":"mc","q":"What does intlanzi mean?","o":["fish","chicken","meat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Nditya inyama","o":["Nditya inyama","ishisanyama","inkukhu"],"a":0},
+{"t":"mc","q":"Which one means eggs?","o":["amaqanda","inkukhu","intlanzi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ishisanyama","o":["ishisanyama","intlanzi","Nditya inyama"],"a":0},
+{"t":"mc","q":"Ishisanyama literally means…","o":["burn the meat","cold meat","meat house"],"a":0}
+]},
+{"id":"xh_d4_3","title":"Building braai words","step":"build","meta":"Order at the fire","vocab":[],"ex":[
+{"t":"fill","q":"Complete: chicken","s":"inku___u","o":["kh","k","q"],"a":0},
+{"t":"wb","q":"Build: may I have meat","a":["ndicela","inyama"],"pool":["ndicela","inyama","intlanzi"]},
+{"t":"fill","q":"Complete: fish","s":"in___anzi","o":["tl","hl","dl"],"a":0},
+{"t":"wb","q":"Build: I am eating chicken","a":["nditya","inkukhu"],"pool":["nditya","inkukhu","amaqanda"]},
+{"t":"li","q":"Which one do you hear?","say":"amaqanda","o":["amaqanda","inkukhu","ishisanyama"],"a":0}
+]},
+{"id":"xh_d4_4","title":"The braai in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ishisanyama","braai place"],["inkukhu","chicken"],["intlanzi","fish"]]},
+{"t":"li","q":"Which one do you hear?","say":"intlanzi","o":["intlanzi","amaqanda","inkukhu"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amaqanda","eggs"],["Nditya inyama","I am eating meat"]]},
+{"t":"mc","q":"iqanda is to amaqanda as umXhosa is to…","o":["amaXhosa","isiXhosa","ooXhosa"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"inkukhu","o":["inkukhu","intlanzi","ishisanyama"],"a":0}
+]},
+{"id":"xh_d4_5","title":"Checkpoint: the braai","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ishisanyama mean?","o":["braai place","kitchen","fire"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Nditya inyama","o":["Nditya inyama","inkukhu","intlanzi"],"a":0},
+{"t":"mc","q":"Which one means fish?","o":["intlanzi","inkukhu","inyama"],"a":0},
+{"t":"mc","q":"Many eggs are…","o":["amaqanda","iqanda","amaqhude"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ishisanyama","o":["ishisanyama","amaqanda","Nditya inyama"],"a":0},
+{"t":"mc","q":"Review — Utya ntoni? asks…","o":["what are you eating?","what do you want?","are you hungry?"],"a":0}
+]},
+
+/* ---------- d5 · From the garden ---------- */
+{"id":"xh_d5","title":"From the garden","step":"learn","meta":"Maize, potatoes and the qh fruit","vocab":[["umbona","oom-BAW-nah","maize"],["iitapile","ee-tah-PEE-leh","potatoes"],["itumato","ee-too-MAH-taw","tomato"],["itswele","ee-TSWEH-leh","onion"],["isiqhamo","ee-see-QHAH-maw","fruit"]],"ex":[
+{"t":"note","tag":"The grain of home","q":"Umbona — maize","body":"<p><b>Umbona</b> — <i>maize</i> — is the grain behind half the Xhosa table: umngqusho is made of it, umphokoqo is made of it, and roasted cobs are sold at every taxi rank.</p>","eg":[["umbona","oom-BAW-nah","maize"]]},
+{"t":"li","q":"Which one do you hear?","say":"umbona","o":["umbona","isonka"],"a":0},
+{"t":"mc","q":"What does umbona mean?","o":["maize","potato","onion"],"a":0},
+{"t":"note","tag":"The pot friends","q":"Potatoes, tomato, onion","body":"<p>The three that start every pot: <b>iitapile</b> — <i>potatoes</i>, <b>itumato</b> — <i>tomato</i>, <b>itswele</b> — <i>onion</i>. Old borrowings, fully at home in Xhosa now.</p>","eg":[["iitapile","ee-tah-PEE-leh","potatoes"],["itumato","ee-too-MAH-taw","tomato"],["itswele","ee-TSWEH-leh","onion"]]},
+{"t":"li","q":"Which one do you hear?","say":"itswele","o":["itswele","itumato","iitapile"],"a":0},
+{"t":"mc","q":"itumato means…","o":["tomato","potato","fruit"],"a":0},
+{"t":"note","tag":"Sweetness","q":"Isiqhamo — fruit","body":"<p><b>Isiqhamo</b> — <i>fruit</i> — carries the aspirated qh you met in iqhude. An isi- word, like isiXhosa and isiduko: the class of things and qualities.</p>","eg":[["isiqhamo","ee-see-QHAH-maw","fruit"]]},
+{"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","umbona"],"a":0},
+{"t":"mc","q":"Which one means fruit?","o":["isiqhamo","itswele","umbona"],"a":0}
+]},
+{"id":"xh_d5_2","title":"Hearing the garden","step":"recognize","meta":"Veg by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"iitapile","o":["iitapile","itumato","itswele"],"a":0},
+{"t":"mc","q":"What does itswele mean?","o":["onion","tomato","maize"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"itumato","o":["itumato","iitapile","isiqhamo"],"a":0},
+{"t":"mc","q":"Which one means potatoes?","o":["iitapile","itumato","umbona"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","itswele","umbona"],"a":0},
+{"t":"mc","q":"Umngqusho and umphokoqo are both made from…","o":["umbona","iitapile","irayisi"],"a":0}
+]},
+{"id":"xh_d5_3","title":"Building garden words","step":"build","meta":"Fill the pot","vocab":[],"ex":[
+{"t":"fill","q":"Complete: maize","s":"umbo___","o":["na","no","ne"],"a":0},
+{"t":"wb","q":"Build: may I have fruit","a":["ndicela","isiqhamo"],"pool":["ndicela","isiqhamo","itswele"]},
+{"t":"fill","q":"Complete: fruit","s":"isi___amo","o":["qh","q","xh"],"a":0},
+{"t":"wb","q":"Build: I am eating potatoes","a":["nditya","iitapile"],"pool":["nditya","iitapile","itumato"]},
+{"t":"li","q":"Which one do you hear?","say":"itswele","o":["itswele","isiqhamo","iitapile"],"a":0}
+]},
+{"id":"xh_d5_4","title":"The garden in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umbona","maize"],["iitapile","potatoes"],["itumato","tomato"]]},
+{"t":"li","q":"Which one do you hear?","say":"umbona","o":["umbona","itumato","itswele"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["itswele","onion"],["isiqhamo","fruit"]]},
+{"t":"mc","q":"isiqhamo, isiXhosa, isiduko share the class prefix…","o":["isi-","i-","um-"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iitapile","o":["iitapile","itswele","umbona"],"a":0}
+]},
+{"id":"xh_d5_5","title":"Checkpoint: the garden","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does iitapile mean?","o":["potatoes","tomatoes","onions"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"itumato","o":["itumato","itswele","iitapile"],"a":0},
+{"t":"mc","q":"Which one means onion?","o":["itswele","itumato","isiqhamo"],"a":0},
+{"t":"mc","q":"The maize behind umngqusho is…","o":["umbona","irayisi","isonka"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","umbona","itumato"],"a":0},
+{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","inyama"],"a":0}
+]},
+
+/* ---------- d6 · I like it — and I do not ---------- */
+{"id":"xh_d6","title":"Likes and dislikes","step":"learn","meta":"Ndithanda — and your first negative","vocab":[["ndithanda","ndee-TAHN-dah","I like"],["andithandi","ahn-dee-TAHN-dee","I do not like"],["Uthanda ntoni?","oo-TAHN-dah NTAW-nee","what do you like?"],["Ndithanda iti kakhulu","ndee-TAHN-dah EE-tee kah-KHOO-loo","I like tea very much"]],"ex":[
+{"t":"note","tag":"Liking","q":"Ndithanda","body":"<p><b>Ndithanda</b> — <i>I like</i>, also <i>I love</i>. Add kakhulu from your greetings for feeling: <b>Ndithanda iti kakhulu</b> — <i>I like tea very much</i>. And ask back: <b>Uthanda ntoni?</b> — <i>what do you like?</i></p>","eg":[["ndithanda","ndee-TAHN-dah","I like"],["Ndithanda iti kakhulu","ndee-TAHN-dah EE-tee kah-KHOO-loo","I like tea very much"],["Uthanda ntoni?","oo-TAHN-dah NTAW-nee","what do you like?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndithanda","o":["ndithanda","Uthanda ntoni?"],"a":0},
+{"t":"mc","q":"What does ndithanda mean?","o":["I like","I eat","I want"],"a":0},
+{"t":"note","tag":"The negative","q":"A…i wraps the verb","body":"<p>Now the secret you have been carrying since the sounds zone: <b>andithandi</b> — <i>I do NOT like</i>. The negative wraps the verb in <b>a-…-i</b>: ndithanda becomes a-ndithand-i. And andiqondi — your old friend — is exactly the same wrap around qonda. You have been speaking negatives all along.</p>","eg":[["andithandi","ahn-dee-TAHN-dee","I do not like"]]},
+{"t":"li","q":"Like or dislike — which do you hear?","say":"andithandi","o":["andithandi","ndithanda"],"a":0},
+{"t":"mc","q":"The negative wraps the verb in…","o":["a- and -i","ndi- and -a","u- and -e"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndithanda iti kakhulu","o":["Ndithanda iti kakhulu","Uthanda ntoni?"],"a":0},
+{"t":"mc","q":"andiqondi is the a…i wrap around…","o":["qonda","thanda","funda"],"a":0}
+]},
+{"id":"xh_d6_2","title":"Hearing likes","step":"recognize","meta":"Yes-feelings and no-feelings","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Uthanda ntoni?","o":["Uthanda ntoni?","ndithanda","andithandi"],"a":0},
+{"t":"mc","q":"What does andithandi mean?","o":["I do not like","I like a lot","I do not eat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndithanda","o":["ndithanda","andithandi","Ndithanda iti kakhulu"],"a":0},
+{"t":"mc","q":"Uthanda ntoni? asks…","o":["what do you like?","what are you eating?","do you like tea?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","Uthanda ntoni?"],"a":0},
+{"t":"mc","q":"Ndithanda iti kakhulu means…","o":["I like tea very much","I drink tea daily","tea is delicious"],"a":0}
+]},
+{"id":"xh_d6_3","title":"Building feelings","step":"build","meta":"Say what you love","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I do not like","s":"___ndithandi","o":["a","e","u"],"a":0},
+{"t":"wb","q":"Build: I like tea very much","a":["ndithanda","iti","kakhulu"],"pool":["ndithanda","iti","kakhulu","andithandi"]},
+{"t":"fill","q":"Complete: what do you like?","s":"Uthanda nto___?","o":["ni","na","ne"],"a":0},
+{"t":"wb","q":"Build: I like amasi","a":["ndithanda","amasi"],"pool":["ndithanda","amasi","andithandi"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndithanda iti kakhulu","o":["Ndithanda iti kakhulu","andithandi","ndithanda"],"a":0}
+]},
+{"id":"xh_d6_4","title":"Feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithanda","I like"],["andithandi","I do not like"]]},
+{"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","Uthanda ntoni?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uthanda ntoni?","what do you like?"],["Ndithanda iti kakhulu","I like tea very much"]]},
+{"t":"mc","q":"By the same wrap, I do not eat would be…","o":["anditvi","anditye","andityi"],"a":2},
+{"t":"li","q":"Which one do you hear?","say":"ndithanda","o":["ndithanda","Ndithanda iti kakhulu","andithandi"],"a":0}
+]},
+{"id":"xh_d6_5","title":"Checkpoint: likes","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndithanda mean?","o":["I like","I do not like","I am hungry"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uthanda ntoni?","o":["Uthanda ntoni?","Ndithanda iti kakhulu","andithandi"],"a":0},
+{"t":"mc","q":"Which one means I do not like?","o":["andithandi","ndithanda","andiqondi"],"a":0},
+{"t":"mc","q":"Someone offers amasi and you love it…","o":["Ndithanda amasi kakhulu","Andithandi amasi","Uthanda ntoni?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","ntoni?"],"a":0},
+{"t":"mc","q":"Review — which one means fruit?","o":["isiqhamo","itswele","umbona"],"a":0}
+]},
+
+/* ---------- d7 · At the table ---------- */
+{"id":"xh_d7","title":"At the table","step":"learn","meta":"Delicious, no thank you — and being fed","vocab":[["mnandi","MNAHN-dee","delicious"],["Kumnandi!","koom-NAHN-dee","it is delicious!"],["hayi enkosi","HAH-yee ehn-KAW-see","no thank you"],["Ufuna ntoni?","oo-FOO-nah NTAW-nee","what do you want?"],["Ndifuna ukutya","ndee-FOO-nah oo-KOO-tyah","I want food"]],"ex":[
+{"t":"note","tag":"The compliment","q":"Kumnandi — say it and mean it","body":"<p><b>Mnandi</b> is <i>delicious, sweet, nice</i> — and <b>Kumnandi!</b> is the whole review: <i>it is delicious!</i> In a Xhosa home, guests are ALWAYS fed — visiting and eating are the same event — and Kumnandi is how you honour the cook.</p>","eg":[["mnandi","MNAHN-dee","delicious"],["Kumnandi!","koom-NAHN-dee","it is delicious!"]]},
+{"t":"li","q":"Which one do you hear?","say":"Kumnandi!","o":["Kumnandi!","mnandi"],"a":0},
+{"t":"mc","q":"Kumnandi! means…","o":["it is delicious!","it is hot!","more please!"],"a":0},
+{"t":"note","tag":"Offering","q":"Ufuna ntoni? — and saying no kindly","body":"<p>The host asks <b>Ufuna ntoni?</b> — <i>what do you want?</i> Answer with ndifuna or ndicela: <b>Ndifuna ukutya</b> — <i>I want food</i>. And when you truly cannot eat more, decline gently: <b>hayi enkosi</b> — <i>no thank you</i> — best delivered with Kumnandi kakhulu attached.</p>","eg":[["Ufuna ntoni?","oo-FOO-nah NTAW-nee","what do you want?"],["Ndifuna ukutya","ndee-FOO-nah oo-KOO-tyah","I want food"],["hayi enkosi","HAH-yee ehn-KAW-see","no thank you"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ufuna ntoni?","o":["Ufuna ntoni?","Ndifuna ukutya"],"a":0},
+{"t":"mc","q":"To decline more food kindly…","o":["Hayi enkosi","Hayi hamba","Andiqondi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndifuna ukutya","o":["Ndifuna ukutya","hayi enkosi"],"a":0},
+{"t":"mc","q":"In a Xhosa home, guests are…","o":["always fed","asked to cook","left alone"],"a":0}
+]},
+{"id":"xh_d7_2","title":"Hearing the table","step":"recognize","meta":"Compliments and offers","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"mnandi","o":["mnandi","Kumnandi!","hayi enkosi"],"a":0},
+{"t":"mc","q":"What does Ufuna ntoni? ask?","o":["what do you want?","what do you like?","what are you eating?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"hayi enkosi","o":["hayi enkosi","Ufuna ntoni?","mnandi"],"a":0},
+{"t":"mc","q":"Ndifuna ukutya means…","o":["I want food","I like food","the food is nice"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Kumnandi!","o":["Kumnandi!","Ndifuna ukutya","mnandi"],"a":0},
+{"t":"mc","q":"mnandi means…","o":["delicious","hungry","full"],"a":0}
+]},
+{"id":"xh_d7_3","title":"Building table talk","step":"build","meta":"Honour the cook","vocab":[],"ex":[
+{"t":"fill","q":"Complete: it is delicious!","s":"Kumnan___!","o":["di","de","da"],"a":0},
+{"t":"wb","q":"Build: no thank you","a":["hayi","enkosi"],"pool":["hayi","enkosi","mnandi"]},
+{"t":"fill","q":"Complete: what do you want?","s":"U___na ntoni?","o":["fu","fa","fo"],"a":0},
+{"t":"wb","q":"Build: I want food","a":["ndifuna","ukutya"],"pool":["ndifuna","ukutya","mnandi"]},
+{"t":"li","q":"Which one do you hear?","say":"mnandi","o":["mnandi","hayi enkosi","Kumnandi!"],"a":0}
+]},
+{"id":"xh_d7_4","title":"The table in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["mnandi","delicious"],["Kumnandi!","it is delicious!"],["hayi enkosi","no thank you"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ufuna ntoni?","o":["Ufuna ntoni?","Ndifuna ukutya","Kumnandi!"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ufuna ntoni?","what do you want?"],["Ndifuna ukutya","I want food"]]},
+{"t":"mc","q":"The kindest way to stop a generous host…","o":["Hayi enkosi, kumnandi kakhulu","Hayi hayi hayi","Andithandi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"hayi enkosi","o":["hayi enkosi","mnandi","Ufuna ntoni?"],"a":0}
+]},
+{"id":"xh_d7_5","title":"Checkpoint: Zone 5 complete","step":"checkpoint","meta":"Food & drink — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Kumnandi! tells the cook…","o":["it is delicious","you are slow","I am full"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndifuna ukutya","o":["Ndifuna ukutya","Ufuna ntoni?","hayi enkosi"],"a":0},
+{"t":"mc","q":"Review — the polite request formula begins…","o":["Ndicela","Ndifuna","Nditya"],"a":0},
+{"t":"mc","q":"Review — which one means I do not like?","o":["andithandi","ndithanda","andiqondi"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"amasi","o":["amasi","amanzi","iti"],"a":0},
+{"t":"mc","q":"Review — an ishisanyama serves…","o":["meat from the fire","fruit and veg","tea and bread"],"a":0},
+{"t":"mc","q":"Review — the plural of iqanda is…","o":["amaqanda","iziqanda","ooqanda"],"a":0}
 ]}
 ];
 
@@ -1250,9 +1547,11 @@ const XH_UNITS=[
 {"n":3,"t":"Family & respect","d":"Intsapho, intlonipho — the people closest to you","lessons":["xh_f1","xh_f1_2","xh_f1_3","xh_f1_4","xh_f1_5","xh_f2","xh_f2_2","xh_f2_3","xh_f2_4","xh_f2_5","xh_f3","xh_f3_2","xh_f3_3","xh_f3_4","xh_f3_5","xh_f4","xh_f4_2","xh_f4_3","xh_f4_4","xh_f4_5","xh_f5","xh_f5_2","xh_f5_3","xh_f5_4","xh_f5_5","xh_f6","xh_f6_2","xh_f6_3","xh_f6_4","xh_f6_5","xh_f7","xh_f7_2","xh_f7_3","xh_f7_4","xh_f7_5"]}
 ,
 {"n":4,"t":"Numbers, days & time","d":"Amanani neentsuku — counting and the calendar","lessons":["xh_n1","xh_n1_2","xh_n1_3","xh_n1_4","xh_n1_5","xh_n2","xh_n2_2","xh_n2_3","xh_n2_4","xh_n2_5","xh_n3","xh_n3_2","xh_n3_3","xh_n3_4","xh_n3_5","xh_n4","xh_n4_2","xh_n4_3","xh_n4_4","xh_n4_5","xh_n5","xh_n5_2","xh_n5_3","xh_n5_4","xh_n5_5","xh_n6","xh_n6_2","xh_n6_3","xh_n6_4","xh_n6_5","xh_n7","xh_n7_2","xh_n7_3","xh_n7_4","xh_n7_5"]}
+,
+{"n":5,"t":"Food & drink","d":"Ukutya nokusela — the table and the braai","lessons":["xh_d1","xh_d1_2","xh_d1_3","xh_d1_4","xh_d1_5","xh_d2","xh_d2_2","xh_d2_3","xh_d2_4","xh_d2_5","xh_d3","xh_d3_2","xh_d3_3","xh_d3_4","xh_d3_5","xh_d4","xh_d4_2","xh_d4_3","xh_d4_4","xh_d4_5","xh_d5","xh_d5_2","xh_d5_3","xh_d5_4","xh_d5_5","xh_d6","xh_d6_2","xh_d6_3","xh_d6_4","xh_d6_5","xh_d7","xh_d7_2","xh_d7_3","xh_d7_4","xh_d7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi"};
 
 const XH_SRS_SEED=[];
 

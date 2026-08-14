@@ -4,6 +4,17 @@ Staged plan for the `xh` course, in the spirit of ROADMAP.md. Written Aug 2026,
 alongside the Asia & Africa rebrand. **Do not deploy any stage until Ruan says
 so.** Status legend: [ ] planned · [~] in progress · [x] done.
 
+## STANDING ORDER (Ruan, Aug 2026 — autonomous run)
+
+Work WITHOUT further prompting through: Zones 5-12 -> checkpoint-review
+orphan pass -> Short-term trip pack -> art (hero/band/mascot, Eastern
+Cape secular scenery) -> faith pack (all six stories, CONTEMPORARY
+Xhosa, BSSA 2023 register) -> ship wiring (LANG_CATALOG, flag,
+landing pages, og-xh, JSON-LD, keywords, attribution in terms +
+Settings). Check everything continually (checker after every zone,
+extractor parse, audio 0-failures, periodic browser smoke). Commit
+per stage. DO NOT push/deploy — Ruan says when.
+
 ## Why Xhosa, and what is different about this build
 
 - ~8M first-language speakers (Eastern & Western Cape, South Africa), second-
@@ -168,7 +179,23 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       ngo-/nge- day forms + kaninzi, n7 usuku/inyanga(moon)/unyaka +
       yonke imihla habit sentence. English-numbers reality note in n1.
       Checker caught 1 distractor-before-note (uLwesibini), fixed.
-- [ ] Zones 5-6 next (Food & drink, Around the home).
+- [x] Zone 5 (Food & drink) COMPLETE (175 lessons, 1077 ex, 267 clips):
+      d1 ndilambile/ndinxaniwe/ndifuna + the Ndicela politeness formula,
+      d2 staples (isonka/amasi/iti/ikofu/irayisi), d3 nditya/ndisela +
+      ntoni? (+ cela/sela one-click-apart trap), d4 braai (ishisanyama,
+      inkukhu, intlanzi, amaqanda i->ama- plural), d5 garden (umbona
+      behind umngqusho, iitapile/itumato/itswele, isiqhamo), d6
+      ndithanda + FIRST NEGATIVE a-...-i (andithandi, explains
+      andiqondi), d7 table culture (Kumnandi!, hayi enkosi, guests
+      always fed). Checker caught 1 (itswele), fixed.
+- [ ] Zone 6 (Around the home): h1 rooms (igumbi/ikhitshi/igumbi
+      lokulala/ifestile/iyadi), h2 objects (isitulo/itafile/ibhedi/
+      isitya/umbane + load-shedding note), h3 isi-/izi- pair drills
+      (izitulo/izitya/isipili), h4 where-is-it (iphi?/apha/phaya/
+      phantsi/phezulu), h5 kitchen tools (ikomityi/ibhotile/imela/
+      icephe/imbiza), h6 home verbs (ndipheka/ndihlamba/ndilala/
+      ndivuka/ndiphumla), h7 locative -ini (ekhitshini/endlwini +
+      phrases).
 - [ ] Zones 7–9.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
