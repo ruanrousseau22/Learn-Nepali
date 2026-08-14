@@ -266,8 +266,18 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       (-ni plural imperative) + whole-journey checkpoint. Checker
       caught 1 (ndiyavuma distractor), fixed. Browser-verified:
       12 units render, final checkpoint plays.
-- [ ] Post-course: checkpoint-review orphan pass + cold-test
-      measurement (MANDATORY before ship — the ur/uz/jv lesson).
+- [x] Post-course passes COMPLETE (2861 ex): cold-test run — clean
+      (flags were English-side answers + explicit rule-application;
+      two prose-only intros closed with eg cards). Orphan pass: 273
+      reachable orphans → 0 via one review mc each on checkpoints ≥2
+      zones later (shape-matched distractors, numeric/day sets, max
+      load 11 of cap 15); 40 z11-12 words structurally unreachable
+      (SM-2 covers). Both audio-neutral (--check MATCHES).
+- [x] Trip pack COMPLETE: 12 sections / 90 lines / 4 frames / 19
+      combos, Cape Town-contextualized (greeting-first, family
+      address, minibus-taxi ritual, spaza+rands, shisanyama, guest
+      culture, load-shedding, Sobonana). 23 new clips (541 total),
+      ~79% reuse. Browser-verified.
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,
       aloe/protea/acacia, rondavel homesteads, ocean; palette: fynbos greens/
       ocean blue/Karoo ochre — three distinct hue steps). Mascot TBD.
