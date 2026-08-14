@@ -2136,6 +2136,307 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Ndilahlekile","Uyayazi indlela?"],"a":0},
 {"t":"mc","q":"Review — evenkileni means…","o":["at the shop","the shop","at school"],"a":0},
 {"t":"mc","q":"Review — which one means I rest?","o":["ndiphumla","ndilala","ndivuka"],"a":0}
+]},
+
+/* ---------- m1 · Money and the spaza ---------- */
+{"id":"xh_m1","title":"Money and the spaza","step":"learn","meta":"Imali, irandi — and the shop next door","vocab":[["imali","ee-MAH-lee","money"],["irandi","ee-RAHN-dee","rand"],["ixabiso","ee-xah-BEE-saw","price"],["ispaza","ee-SPAH-zah","spaza shop"]],"ex":[
+{"t":"note","tag":"What everything costs","q":"Imali and irandi","body":"<p><b>Imali</b> — <i>money</i>. <b>Irandi</b> — <i>the rand</i>, South Africa&rsquo;s currency. Imali is the stuff; irandi is the unit it comes in.</p>","eg":[["imali","ee-MAH-lee","money"],["irandi","ee-RAHN-dee","rand"]]},
+{"t":"li","q":"Which one do you hear?","say":"imali","o":["imali","irandi"],"a":0},
+{"t":"mc","q":"What does irandi mean?","o":["rand","money","price"],"a":0},
+{"t":"note","tag":"The number on the shelf","q":"Ixabiso — the price","body":"<p><b>Ixabiso</b> — <i>the price</i> — with your lateral x click in the middle. Ask for it, argue with it, sigh at it: all of shopping lives in this word.</p>","eg":[["ixabiso","ee-xah-BEE-saw","price"]]},
+{"t":"li","q":"Which one do you hear?","say":"ixabiso","o":["ixabiso","imali"],"a":0},
+{"t":"mc","q":"The click inside ixabiso is…","o":["x","c","q"],"a":0},
+{"t":"note","tag":"The shop next door","q":"Ispaza","body":"<p><b>Ispaza</b> — the <i>spaza shop</i>: a small shop run from a home, selling bread, airtime, sugar and everything urgent. Every township street has one, and it is open when the big shops are not.</p>","eg":[["ispaza","ee-SPAH-zah","spaza shop"]]},
+{"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","ixabiso"],"a":0},
+{"t":"mc","q":"Ispaza is…","o":["a small shop run from a home","a supermarket","a market stall"],"a":0}
+]},
+{"id":"xh_m1_2","title":"Hearing the money","step":"recognize","meta":"Money words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","imali","ispaza"],"a":0},
+{"t":"mc","q":"What does imali mean?","o":["money","price","shop"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ixabiso","o":["ixabiso","ispaza","irandi"],"a":0},
+{"t":"mc","q":"Which one means price?","o":["ixabiso","imali","irandi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","irandi","ixabiso"],"a":0},
+{"t":"mc","q":"Bread, airtime and sugar at any hour come from…","o":["ispaza","ivenkile","irenki"],"a":0}
+]},
+{"id":"xh_m1_3","title":"Building the money","step":"build","meta":"Coin by coin","vocab":[],"ex":[
+{"t":"fill","q":"Complete: money","s":"ima___","o":["li","le","la"],"a":0},
+{"t":"wb","q":"Build the word: price","a":["ixabiso"],"pool":["ixabiso","imali","ispaza"]},
+{"t":"fill","q":"Complete: spaza shop","s":"ispa___","o":["za","sa","tsa"],"a":0},
+{"t":"wb","q":"Build the word: rand","a":["irandi"],"pool":["irandi","imali","ixabiso"]},
+{"t":"li","q":"Which one do you hear?","say":"imali","o":["imali","ixabiso","ispaza"],"a":0}
+]},
+{"id":"xh_m1_4","title":"The money in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["imali","money"],["irandi","rand"],["ixabiso","price"]]},
+{"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","ispaza","imali"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ispaza","spaza shop"],["ivenkile","shop"]]},
+{"t":"mc","q":"When the big shops are closed, the street still has…","o":["ispaza","irenki","isikolo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ixabiso","o":["ixabiso","imali","irandi"],"a":0}
+]},
+{"id":"xh_m1_5","title":"Checkpoint: the money","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ispaza mean?","o":["spaza shop","supermarket","price"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","ixabiso","irandi"],"a":0},
+{"t":"mc","q":"Which one means rand?","o":["irandi","imali","ixabiso"],"a":0},
+{"t":"mc","q":"ixabiso means…","o":["price","change","money"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","imali","ispaza"],"a":0},
+{"t":"mc","q":"Review — which one means in the house?","o":["endlwini","ekhitshini","evenkileni"],"a":0}
+]},
+
+/* ---------- m2 · How much is it? ---------- */
+{"id":"xh_m2","title":"How much is it?","step":"learn","meta":"Yimalini? — and paying up","vocab":[["Yimalini?","yee-mah-LEE-nee","how much is it?"],["lishumi leerandi","lee-SHOO-mee leh-eh-RAHN-dee","ten rand"],["itshintshi","ee-TSHEEN-tshee","change"],["Nantsi imali","NAHN-tsee ee-MAH-lee","here is the money"]],"ex":[
+{"t":"note","tag":"The question","q":"Yimalini?","body":"<p><b>Yimalini?</b> — <i>how much is it?</i> — literally it-is-money-how-much. The single most useful shopping word in this course. Point and ask.</p>","eg":[["Yimalini?","yee-mah-LEE-nee","how much is it?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini?","o":["Yimalini?","imali"],"a":0},
+{"t":"mc","q":"Yimalini? asks…","o":["how much is it?","where is the money?","do you have change?"],"a":0},
+{"t":"note","tag":"The answer","q":"Lishumi leerandi","body":"<p><b>Lishumi leerandi</b> — <i>it is ten rand</i>: your ishumi from the numbers zone, wearing rands. In town you will hear prices in English just as often — but the till speaks both.</p>","eg":[["lishumi leerandi","lee-SHOO-mee leh-eh-RAHN-dee","ten rand"]]},
+{"t":"li","q":"Which one do you hear?","say":"lishumi leerandi","o":["lishumi leerandi","Yimalini?"],"a":0},
+{"t":"mc","q":"Lishumi leerandi means…","o":["ten rand","five rand","a hundred rand"],"a":0},
+{"t":"note","tag":"Handing it over","q":"Nantsi imali — and itshintshi","body":"<p><b>Nantsi imali</b> — <i>here is the money</i> — what you say as you hand it over. What comes back is <b>itshintshi</b> — <i>the change</i>.</p>","eg":[["Nantsi imali","NAHN-tsee ee-MAH-lee","here is the money"],["itshintshi","ee-TSHEEN-tshee","change"]]},
+{"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","itshintshi"],"a":0},
+{"t":"mc","q":"What does itshintshi mean?","o":["change","price","coins"],"a":0}
+]},
+{"id":"xh_m2_2","title":"Hearing the till","step":"recognize","meta":"Price talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"itshintshi","o":["itshintshi","Nantsi imali","Yimalini?"],"a":0},
+{"t":"mc","q":"What does Nantsi imali mean?","o":["here is the money","where is the money?","I have no money"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini?","o":["Yimalini?","lishumi leerandi","itshintshi"],"a":0},
+{"t":"mc","q":"Which one means change?","o":["itshintshi","ixabiso","irandi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"lishumi leerandi","o":["lishumi leerandi","Nantsi imali","Yimalini?"],"a":0},
+{"t":"mc","q":"The ishumi inside lishumi leerandi is the number…","o":["ten","two","seven"],"a":0}
+]},
+{"id":"xh_m2_3","title":"Building the till","step":"build","meta":"Ask, pay, count","vocab":[],"ex":[
+{"t":"fill","q":"Complete: how much is it?","s":"Yimali___?","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build: here is the money","a":["nantsi","imali"],"pool":["nantsi","imali","itshintshi"]},
+{"t":"fill","q":"Complete: change","s":"itshin___i","o":["tsh","ts","sh"],"a":0},
+{"t":"wb","q":"Build: ten rand","a":["lishumi","leerandi"],"pool":["lishumi","leerandi","imali"]},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini?","o":["Yimalini?","Nantsi imali","lishumi leerandi"],"a":0}
+]},
+{"id":"xh_m2_4","title":"The till in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yimalini?","how much is it?"],["itshintshi","change"]]},
+{"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","Yimalini?","itshintshi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["lishumi leerandi","ten rand"],["Nantsi imali","here is the money"]]},
+{"t":"mc","q":"Put the exchange in order: Yimalini? → lishumi leerandi → …","o":["Nantsi imali","Molo","Yima!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"itshintshi","o":["itshintshi","lishumi leerandi","Nantsi imali"],"a":0}
+]},
+{"id":"xh_m2_5","title":"Checkpoint: the till","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Yimalini? mean?","o":["how much is it?","here is the money","ten rand"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"lishumi leerandi","o":["lishumi leerandi","itshintshi","Nantsi imali"],"a":0},
+{"t":"mc","q":"Which one means here is the money?","o":["Nantsi imali","Yimalini?","itshintshi"],"a":0},
+{"t":"mc","q":"What comes back after you pay…","o":["itshintshi","ixabiso","irandi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","Yimalini?","lishumi leerandi"],"a":0},
+{"t":"mc","q":"Review — which one means I cook?","o":["ndipheka","ndihlamba","ndithanda"],"a":0}
+]},
+
+/* ---------- m3 · Buying and selling ---------- */
+{"id":"xh_m3","title":"Buying and selling","step":"learn","meta":"Ndithenga — and the uku- that makes a verb a name","vocab":[["ndithenga","ndee-TEHN-gah","I buy"],["ndithengisa","ndee-tehn-GEE-sah","I sell"],["ukuthenga","oo-koo-TEHN-gah","to buy"],["Ndifuna ukuthenga isonka","ndee-FOO-nah oo-koo-TEHN-gah ee-SAWN-kah","I want to buy bread"]],"ex":[
+{"t":"note","tag":"Both sides of the counter","q":"Ndithenga, ndithengisa","body":"<p><b>Ndithenga</b> — <i>I buy</i>. Add -isa — the make-it-happen ending — and you cross the counter: <b>ndithengisa</b> — <i>I sell</i>, literally I-make-buy.</p>","eg":[["ndithenga","ndee-TEHN-gah","I buy"],["ndithengisa","ndee-tehn-GEE-sah","I sell"]]},
+{"t":"li","q":"Buying or selling — which do you hear?","say":"ndithenga","o":["ndithenga","ndithengisa"],"a":0},
+{"t":"mc","q":"What does ndithengisa mean?","o":["I sell","I buy","I pay"],"a":0},
+{"t":"note","tag":"To buy","q":"Uku- makes the to-form","body":"<p>Put <b>uku-</b> in front of a verb stem and you get its <i>to</i>-form: <b>ukuthenga</b> — <i>to buy</i>. You have been saying one all along — ukutya, the food, is literally <i>to eat</i>.</p>","eg":[["ukuthenga","oo-koo-TEHN-gah","to buy"]]},
+{"t":"li","q":"Which one do you hear?","say":"ukuthenga","o":["ukuthenga","ndithenga"],"a":0},
+{"t":"mc","q":"ukuthenga means…","o":["to buy","I buy","the shop"],"a":0},
+{"t":"note","tag":"Wanting to","q":"Ndifuna ukuthenga…","body":"<p>Ndifuna — I want — plus a to-form gives you plans: <b>Ndifuna ukuthenga isonka</b> — <i>I want to buy bread</i>. Swap the last word and you can want to buy anything you have ever learned.</p>","eg":[["Ndifuna ukuthenga isonka","ndee-FOO-nah oo-koo-TEHN-gah ee-SAWN-kah","I want to buy bread"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ukuthenga"],"a":0},
+{"t":"mc","q":"Ndifuna ukuthenga isonka means…","o":["I want to buy bread","I am selling bread","I bought bread"],"a":0}
+]},
+{"id":"xh_m3_2","title":"Hearing the trade","step":"recognize","meta":"Buy and sell by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndithengisa","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
+{"t":"mc","q":"What does ndithenga mean?","o":["I buy","I sell","to buy"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ukuthenga","o":["ukuthenga","ndithengisa","ndithenga"],"a":0},
+{"t":"mc","q":"Which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ukuthenga","ndithenga"],"a":0},
+{"t":"mc","q":"The -isa ending turns buy into sell by meaning…","o":["make it happen","do it again","do it well"],"a":0}
+]},
+{"id":"xh_m3_3","title":"Building the trade","step":"build","meta":"Deals in parts","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I buy","s":"Ndithen___","o":["ga","gisa","go"],"a":0},
+{"t":"wb","q":"Build: I want to buy bread","a":["ndifuna","ukuthenga","isonka"],"pool":["ndifuna","ukuthenga","isonka","ndithengisa"]},
+{"t":"fill","q":"Complete: to buy","s":"___thenga","o":["uku","ndi","u"],"a":0},
+{"t":"wb","q":"Build the word: I sell","a":["ndithengisa"],"pool":["ndithengisa","ndithenga","ukuthenga"]},
+{"t":"li","q":"Which one do you hear?","say":"ndithenga","o":["ndithenga","ndithengisa","ukuthenga"],"a":0}
+]},
+{"id":"xh_m3_4","title":"The trade in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithenga","I buy"],["ndithengisa","I sell"],["ukuthenga","to buy"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndithengisa","o":["ndithengisa","Ndifuna ukuthenga isonka","ndithenga"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndifuna ukuthenga isonka","I want to buy bread"],["ukutya","food"]]},
+{"t":"mc","q":"Ukutya, the food, is literally…","o":["to eat","the pot","a meal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ndithengisa","ukuthenga"],"a":0}
+]},
+{"id":"xh_m3_5","title":"Checkpoint: the trade","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ukuthenga mean?","o":["to buy","I buy","I sell"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndithenga","o":["ndithenga","ndithengisa","ukuthenga"],"a":0},
+{"t":"mc","q":"Which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
+{"t":"mc","q":"Ndifuna … isonka (I want TO BUY bread). Complete it.","o":["ukuthenga","ndithenga","ithenga"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ukuthenga","o":["ukuthenga","ndithenga","ndithengisa"],"a":0},
+{"t":"mc","q":"Review — umbane means…","o":["electricity","water","money"],"a":0}
+]},
+
+/* ---------- m4 · This one here ---------- */
+{"id":"xh_m4","title":"This one here","step":"learn","meta":"Le, esi, eli — pointing in Xhosa","vocab":[["le mali","leh MAH-lee","this money"],["esi sitya","EH-see SEE-tyah","this dish"],["eli qanda","EH-lee QAHN-dah","this egg"],["Yimalini le?","yee-mah-LEE-nee LEH","how much is this?"]],"ex":[
+{"t":"note","tag":"Pointing words","q":"This matches its noun","body":"<p>Xhosa <i>this</i> changes shape to match its noun, like everything else: <b>le mali</b> — <i>this money</i> — for i- words, <b>esi sitya</b> — <i>this dish</i> — for isi- words.</p>","eg":[["le mali","leh MAH-lee","this money"],["esi sitya","EH-see SEE-tyah","this dish"]]},
+{"t":"li","q":"Which one do you hear?","say":"le mali","o":["le mali","esi sitya"],"a":0},
+{"t":"mc","q":"esi sitya means…","o":["this dish","this money","that dish"],"a":0},
+{"t":"note","tag":"One more shape","q":"Eli qanda","body":"<p>For iqanda-type words — the ones whose plural is ama- — <i>this</i> is <b>eli</b>: <b>eli qanda</b> — <i>this egg</i>. Three shapes, one habit: listen to the noun, and the pointing word follows.</p>","eg":[["eli qanda","EH-lee QAHN-dah","this egg"]]},
+{"t":"li","q":"Which one do you hear?","say":"eli qanda","o":["eli qanda","le mali"],"a":0},
+{"t":"mc","q":"eli goes with words whose plural is…","o":["ama-","izi-","oo-"],"a":0},
+{"t":"note","tag":"Point and ask","q":"Yimalini le?","body":"<p>Now point at anything on the shelf: <b>Yimalini le?</b> — <i>how much is this one?</i> No noun needed — the pointing word carries the question alone.</p>","eg":[["Yimalini le?","yee-mah-LEE-nee LEH","how much is this?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","eli qanda"],"a":0},
+{"t":"mc","q":"Yimalini le? asks…","o":["how much is this one?","how much are they all?","is this money?"],"a":0}
+]},
+{"id":"xh_m4_2","title":"Hearing the pointing","step":"recognize","meta":"This-words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"esi sitya","o":["esi sitya","eli qanda","le mali"],"a":0},
+{"t":"mc","q":"What does le mali mean?","o":["this money","the money","my money"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"eli qanda","o":["eli qanda","esi sitya","Yimalini le?"],"a":0},
+{"t":"mc","q":"Which one means this egg?","o":["eli qanda","esi sitya","le mali"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","le mali","esi sitya"],"a":0},
+{"t":"mc","q":"The this-word for isitulo (an isi- word) would be…","o":["esi","le","eli"],"a":0}
+]},
+{"id":"xh_m4_3","title":"Building the pointing","step":"build","meta":"Match this to its noun","vocab":[],"ex":[
+{"t":"fill","q":"Complete: this money","s":"___ mali","o":["le","esi","eli"],"a":0},
+{"t":"wb","q":"Build: how much is this?","a":["yimalini","le?"],"pool":["yimalini","le?","esi"]},
+{"t":"fill","q":"Complete: this egg","s":"___ qanda","o":["eli","le","esi"],"a":0},
+{"t":"wb","q":"Build: this dish","a":["esi","sitya"],"pool":["esi","sitya","eli"]},
+{"t":"li","q":"Which one do you hear?","say":"le mali","o":["le mali","eli qanda","esi sitya"],"a":0}
+]},
+{"id":"xh_m4_4","title":"The pointing in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the this-word to its noun","pairs":[["le","imali"],["esi","isitya"],["eli","iqanda"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","esi sitya","le mali"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["le mali","this money"],["esi sitya","this dish"],["eli qanda","this egg"]]},
+{"t":"mc","q":"Pointing at a loaf on the spaza shelf, you ask…","o":["Yimalini le?","Uya phi?","Ikufuphi?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"esi sitya","o":["esi sitya","le mali","eli qanda"],"a":0}
+]},
+{"id":"xh_m4_5","title":"Checkpoint: the pointing","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does eli qanda mean?","o":["this egg","this dish","that egg"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"eli qanda","o":["eli qanda","le mali","esi sitya"],"a":0},
+{"t":"mc","q":"Which one means how much is this?","o":["Yimalini le?","Yimalini?","Iphi le?"],"a":0},
+{"t":"mc","q":"le, esi and eli all mean this — the noun decides…","o":["which shape to use","how loud to say it","the word order"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","eli qanda","esi sitya"],"a":0},
+{"t":"mc","q":"Review — which one means mirror?","o":["isipili","izipili","isitya"],"a":0}
+]},
+
+/* ---------- m5 · The spaza list ---------- */
+{"id":"xh_m5","title":"The spaza list","step":"learn","meta":"Sugar, salt, oil, maize meal","vocab":[["iswekile","ee-sweh-KEE-leh","sugar"],["ityuwa","ee-TYOO-wah","salt"],["amafutha","ah-mah-FOO-tah","cooking oil"],["umgubo","oom-GOO-baw","maize meal"]],"ex":[
+{"t":"note","tag":"Sweet and salty","q":"Iswekile and ityuwa","body":"<p>The two flavours every kitchen keeps: <b>iswekile</b> — <i>sugar</i> (suiker, gone Xhosa) — and <b>ityuwa</b> — <i>salt</i>.</p>","eg":[["iswekile","ee-sweh-KEE-leh","sugar"],["ityuwa","ee-TYOO-wah","salt"]]},
+{"t":"li","q":"Which one do you hear?","say":"iswekile","o":["iswekile","ityuwa"],"a":0},
+{"t":"mc","q":"What does ityuwa mean?","o":["salt","sugar","oil"],"a":0},
+{"t":"note","tag":"The frying and the fetching","q":"Amafutha","body":"<p><b>Amafutha</b> — <i>cooking oil</i> (also fat in general). An ama- word through and through — there is no single drop of it.</p>","eg":[["amafutha","ah-mah-FOO-tah","cooking oil"]]},
+{"t":"li","q":"Which one do you hear?","say":"amafutha","o":["amafutha","iswekile"],"a":0},
+{"t":"mc","q":"amafutha means…","o":["cooking oil","flour","water"],"a":0},
+{"t":"note","tag":"The staple of staples","q":"Umgubo","body":"<p><b>Umgubo</b> — <i>maize meal</i>, the ground white gold that becomes pap and umphokoqo. No spaza list is complete without it.</p>","eg":[["umgubo","oom-GOO-baw","maize meal"]]},
+{"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","amafutha"],"a":0},
+{"t":"mc","q":"Which one means maize meal?","o":["umgubo","iswekile","ityuwa"],"a":0}
+]},
+{"id":"xh_m5_2","title":"Hearing the list","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ityuwa","o":["ityuwa","iswekile","umgubo"],"a":0},
+{"t":"mc","q":"What does iswekile mean?","o":["sugar","salt","maize meal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","amafutha","ityuwa"],"a":0},
+{"t":"mc","q":"Which one means cooking oil?","o":["amafutha","umgubo","iswekile"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amafutha","o":["amafutha","umgubo","iswekile"],"a":0},
+{"t":"mc","q":"Pap and umphokoqo begin as…","o":["umgubo","iswekile","amafutha"],"a":0}
+]},
+{"id":"xh_m5_3","title":"Building the list","step":"build","meta":"Stock the shelf","vocab":[],"ex":[
+{"t":"fill","q":"Complete: sugar","s":"isweki___","o":["le","la","li"],"a":0},
+{"t":"wb","q":"Build: I want to buy sugar","a":["ndifuna","ukuthenga","iswekile"],"pool":["ndifuna","ukuthenga","iswekile","ityuwa"]},
+{"t":"fill","q":"Complete: salt","s":"ityu___","o":["wa","va","ba"],"a":0},
+{"t":"wb","q":"Build the word: maize meal","a":["umgubo"],"pool":["umgubo","amafutha","iswekile"]},
+{"t":"li","q":"Which one do you hear?","say":"iswekile","o":["iswekile","ityuwa","amafutha"],"a":0}
+]},
+{"id":"xh_m5_4","title":"The list in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iswekile","sugar"],["ityuwa","salt"]]},
+{"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","iswekile","amafutha"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amafutha","cooking oil"],["umgubo","maize meal"]]},
+{"t":"mc","q":"Ndicela iswekile at the spaza gets you…","o":["sugar","salt","oil"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ityuwa","o":["ityuwa","umgubo","iswekile"],"a":0}
+]},
+{"id":"xh_m5_5","title":"Checkpoint: the list","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does umgubo mean?","o":["maize meal","sugar","cooking oil"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amafutha","o":["amafutha","ityuwa","umgubo"],"a":0},
+{"t":"mc","q":"Which one means salt?","o":["ityuwa","iswekile","amafutha"],"a":0},
+{"t":"mc","q":"iswekile came from the Afrikaans word for…","o":["sugar","sweets","syrup"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iswekile","o":["iswekile","amafutha","ityuwa"],"a":0},
+{"t":"mc","q":"Review — which one means spoon?","o":["icephe","imela","ikomityi"],"a":0}
+]},
+
+/* ---------- m6 · Too expensive! ---------- */
+{"id":"xh_m6","title":"Too expensive!","step":"learn","meta":"Iyadura — and talking the price down","vocab":[["iyadura","ee-yah-DOO-rah","it is expensive"],["ayiduri","ah-yee-DOO-ree","it is not expensive"],["itshiphu","ee-TSHEE-poo","it is cheap"],["Yehlisa ixabiso","yeh-HLEE-sah ee-xah-BEE-saw","lower the price"]],"ex":[
+{"t":"note","tag":"The sigh","q":"Iyadura","body":"<p><b>Iyadura</b> — <i>it is expensive</i> (duur, via Afrikaans). Said with feeling at every till in the country.</p>","eg":[["iyadura","ee-yah-DOO-rah","it is expensive"]]},
+{"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","Yimalini?"],"a":0},
+{"t":"mc","q":"What does iyadura mean?","o":["it is expensive","it is cheap","it is broken"],"a":0},
+{"t":"note","tag":"The wrap returns","q":"Ayiduri — not expensive","body":"<p>The a-…-i negative wrap you met on andithandi works on things too: <b>ayiduri</b> — <i>it is not expensive</i>. And for good news there is <b>itshiphu</b> — <i>it is cheap</i>.</p>","eg":[["ayiduri","ah-yee-DOO-ree","it is not expensive"],["itshiphu","ee-TSHEE-poo","it is cheap"]]},
+{"t":"li","q":"Which one do you hear?","say":"ayiduri","o":["ayiduri","iyadura"],"a":0},
+{"t":"mc","q":"ayiduri means…","o":["it is not expensive","it is very expensive","it is not cheap"],"a":0},
+{"t":"note","tag":"Talking it down","q":"Yehlisa ixabiso","body":"<p>At a market stall — never at the spaza or a shop till, where prices are fixed — you may try: <b>Yehlisa ixabiso</b> — <i>lower the price</i>. Smile when you say it.</p>","eg":[["Yehlisa ixabiso","yeh-HLEE-sah ee-xah-BEE-saw","lower the price"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","itshiphu"],"a":0},
+{"t":"mc","q":"Yehlisa ixabiso belongs…","o":["at a market stall","at the spaza","at the bank"],"a":0}
+]},
+{"id":"xh_m6_2","title":"Hearing the bargain","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"itshiphu","o":["itshiphu","iyadura","ayiduri"],"a":0},
+{"t":"mc","q":"What does itshiphu mean?","o":["it is cheap","it is expensive","it is small"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","ayiduri","itshiphu"],"a":0},
+{"t":"mc","q":"Which one means lower the price?","o":["Yehlisa ixabiso","Yimalini le?","Nantsi imali"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","iyadura","itshiphu"],"a":0},
+{"t":"mc","q":"The a-…-i wrap in ayiduri does what andithandi did — it makes the verb…","o":["negative","past","polite"],"a":0}
+]},
+{"id":"xh_m6_3","title":"Building the bargain","step":"build","meta":"Argue the number","vocab":[],"ex":[
+{"t":"fill","q":"Complete: it is expensive","s":"iyadu___","o":["ra","ri","re"],"a":0},
+{"t":"wb","q":"Build: lower the price","a":["yehlisa","ixabiso"],"pool":["yehlisa","ixabiso","iyadura"]},
+{"t":"fill","q":"Complete: it is NOT expensive","s":"ayidu___","o":["ri","ra","ru"],"a":0},
+{"t":"wb","q":"Build the word: it is cheap","a":["itshiphu"],"pool":["itshiphu","iyadura","ayiduri"]},
+{"t":"li","q":"Which one do you hear?","say":"ayiduri","o":["ayiduri","iyadura","Yehlisa ixabiso"],"a":0}
+]},
+{"id":"xh_m6_4","title":"The bargain in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iyadura","it is expensive"],["itshiphu","it is cheap"]]},
+{"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","itshiphu","ayiduri"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ayiduri","it is not expensive"],["Yehlisa ixabiso","lower the price"]]},
+{"t":"mc","q":"Hayi, iyadura! Yehlisa ixabiso! — the shopper is…","o":["bargaining","paying","leaving"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"itshiphu","o":["itshiphu","ayiduri","iyadura"],"a":0}
+]},
+{"id":"xh_m6_5","title":"Checkpoint: the bargain","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ayiduri mean?","o":["it is not expensive","it is expensive","it is not cheap"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","iyadura","ayiduri"],"a":0},
+{"t":"mc","q":"Which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0},
+{"t":"mc","q":"Where are prices NOT negotiable?","o":["the spaza and shop tills","market stalls","street vendors"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","itshiphu","Yehlisa ixabiso"],"a":0},
+{"t":"mc","q":"Review — phezulu means…","o":["up","down","near"],"a":0}
+]},
+
+/* ---------- m7 · Have you got it? ---------- */
+{"id":"xh_m7","title":"Have you got it?","step":"learn","meta":"Unayo? — the whole shop in three words","vocab":[["Unayo iswekile?","oo-NAH-yaw ee-sweh-KEE-leh","do you have sugar?"],["Ndinayo","ndee-NAH-yaw","I have it"],["Andinayo","ahn-dee-NAH-yaw","I do not have it"]],"ex":[
+{"t":"note","tag":"The counter question","q":"Unayo …?","body":"<p><b>Unayo iswekile?</b> — <i>do you have sugar?</i> U- you, -na- with, -yo it: do-you-with-it. Swap the last word for anything on your list.</p>","eg":[["Unayo iswekile?","oo-NAH-yaw ee-sweh-KEE-leh","do you have sugar?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","iswekile"],"a":0},
+{"t":"mc","q":"Unayo iswekile? asks…","o":["do you have sugar?","how much is sugar?","is the sugar fresh?"],"a":0},
+{"t":"note","tag":"Yes and no","q":"Ndinayo, andinayo","body":"<p>The answers mirror the question: <b>Ndinayo</b> — <i>I have it</i> — or, with the negative a- in front, <b>Andinayo</b> — <i>I do not have it</i>. Ewe, ndinayo. Hayi, andinayo.</p>","eg":[["Ndinayo","ndee-NAH-yaw","I have it"],["Andinayo","ahn-dee-NAH-yaw","I do not have it"]]},
+{"t":"li","q":"Have or have not — which do you hear?","say":"Ndinayo","o":["Ndinayo","Andinayo"],"a":0},
+{"t":"mc","q":"Andinayo means…","o":["I do not have it","I have it","I want it"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Unayo iswekile?"],"a":0},
+{"t":"mc","q":"Hayi, andinayo — the spaza is out of it. Your next stop…","o":["ivenkile","irenki","isikolo"],"a":0}
+]},
+{"id":"xh_m7_2","title":"Hearing the counter","step":"recognize","meta":"Have and have-not by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ndinayo","o":["Ndinayo","Andinayo","Unayo iswekile?"],"a":0},
+{"t":"mc","q":"What does Ndinayo mean?","o":["I have it","I do not have it","do you have it?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Ndinayo","Andinayo"],"a":0},
+{"t":"mc","q":"Which one means I do not have it?","o":["Andinayo","Ndinayo","Unayo iswekile?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Ndinayo","Unayo iswekile?"],"a":0},
+{"t":"mc","q":"The a- at the front of Andinayo is the same a- that made…","o":["andithandi","amanzi","apha"],"a":0}
+]},
+{"id":"xh_m7_3","title":"Building the counter","step":"build","meta":"Ask and answer","vocab":[],"ex":[
+{"t":"fill","q":"Complete: do you have sugar?","s":"U___yo iswekile?","o":["na","ya","nga"],"a":0},
+{"t":"wb","q":"Build: do you have sugar?","a":["unayo","iswekile?"],"pool":["unayo","iswekile?","ndinayo"]},
+{"t":"fill","q":"Complete: I do NOT have it","s":"___dinayo","o":["An","Ndi","U"],"a":0},
+{"t":"wb","q":"Build the word: I have it","a":["ndinayo"],"pool":["ndinayo","andinayo","unayo"]},
+{"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Andinayo","Ndinayo"],"a":0}
+]},
+{"id":"xh_m7_4","title":"The counter in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Unayo iswekile?","do you have sugar?"],["Ndinayo","I have it"],["Andinayo","I do not have it"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndinayo","o":["Ndinayo","Unayo iswekile?","Andinayo"],"a":0},
+{"t":"mc","q":"Unayo umgubo? — Ewe, … Complete the happy answer.","o":["ndinayo","andinayo","yimalini"],"a":0},
+{"t":"mc","q":"To ask about salt instead of sugar, swap iswekile for…","o":["ityuwa","umgubo","amafutha"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Ndinayo","Unayo iswekile?"],"a":0}
+]},
+{"id":"xh_m7_5","title":"Checkpoint: Zone 8 complete","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Unayo iswekile? — Hayi, … The sad answer is…","o":["andinayo","ndinayo","nantsi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Ndinayo","Andinayo"],"a":0},
+{"t":"mc","q":"Review — Yimalini? asks…","o":["how much is it?","do you have it?","where is it?"],"a":0},
+{"t":"mc","q":"Review — which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","Nantsi imali","lishumi leerandi"],"a":0},
+{"t":"mc","q":"Review — which one means maize meal?","o":["umgubo","iswekile","amafutha"],"a":0},
+{"t":"mc","q":"Review — eli is the this-word for…","o":["iqanda","imali","isitya"],"a":0}
 ]}
 ];
 
@@ -2153,9 +2454,11 @@ const XH_UNITS=[
 {"n":6,"t":"Around the home","d":"Rooms, furniture, kitchen tools — and your first full sentences","lessons":["xh_h1","xh_h1_2","xh_h1_3","xh_h1_4","xh_h1_5","xh_h2","xh_h2_2","xh_h2_3","xh_h2_4","xh_h2_5","xh_h3","xh_h3_2","xh_h3_3","xh_h3_4","xh_h3_5","xh_h4","xh_h4_2","xh_h4_3","xh_h4_4","xh_h4_5","xh_h5","xh_h5_2","xh_h5_3","xh_h5_4","xh_h5_5","xh_h6","xh_h6_2","xh_h6_3","xh_h6_4","xh_h6_5","xh_h7","xh_h7_2","xh_h7_3","xh_h7_4","xh_h7_5"]}
 ,
 {"n":7,"t":"Getting around","d":"Places, going and coming, the taxi — and asking the way","lessons":["xh_t1","xh_t1_2","xh_t1_3","xh_t1_4","xh_t1_5","xh_t2","xh_t2_2","xh_t2_3","xh_t2_4","xh_t2_5","xh_t3","xh_t3_2","xh_t3_3","xh_t3_4","xh_t3_5","xh_t4","xh_t4_2","xh_t4_3","xh_t4_4","xh_t4_5","xh_t5","xh_t5_2","xh_t5_3","xh_t5_4","xh_t5_5","xh_t6","xh_t6_2","xh_t6_3","xh_t6_4","xh_t6_5","xh_t7","xh_t7_2","xh_t7_3","xh_t7_4","xh_t7_5"]}
+,
+{"n":8,"t":"Shopping and money","d":"Prices, buying, pointing words — and the spaza counter","lessons":["xh_m1","xh_m1_2","xh_m1_3","xh_m1_4","xh_m1_5","xh_m2","xh_m2_2","xh_m2_3","xh_m2_4","xh_m2_5","xh_m3","xh_m3_2","xh_m3_3","xh_m3_4","xh_m3_5","xh_m4","xh_m4_2","xh_m4_3","xh_m4_4","xh_m4_5","xh_m5","xh_m5_2","xh_m5_3","xh_m5_4","xh_m5_5","xh_m6","xh_m6_2","xh_m6_3","xh_m6_4","xh_m6_5","xh_m7","xh_m7_2","xh_m7_3","xh_m7_4","xh_m7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?"};
 
 const XH_SRS_SEED=[];
 

@@ -209,10 +209,23 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       Ndilahlekile/uncedo/Ndicela uncedo/Uyayazi indlela?, t7 si- =
       we (Sihamba ngoku) + verb-place-time sentences. Checker passed
       FIRST RUN (0 violations).
-- [ ] Zones 8–9: Z8 Shopping & money (imali, Yimalini?, ukuthenga,
-      irandi, demonstratives le/eli/esi basics, spaza note); Z9 Work
-      & school (umsebenzi, ndisebenza/ndifunda, umfundi/utitshala,
-      um-/imi- FOURTH plural pair — umsebenzi/imisebenzi).
+- [x] Zone 8 (Shopping and money) COMPLETE (280 lessons, 1726 ex, 380
+      clips): m1 imali/irandi/ixabiso/ispaza (+spaza culture note),
+      m2 Yimalini?/lishumi leerandi/itshintshi/Nantsi imali, m3
+      ndithenga/ndithengisa (-isa causative) + uku- infinitive
+      (Ndifuna ukuthenga isonka; ukutya = to eat payoff), m4
+      demonstratives le/esi/eli by class + Yimalini le?, m5 spaza
+      staples (iswekile/ityuwa/amafutha/umgubo), m6 iyadura/ayiduri
+      (a-...-i on things)/itshiphu/Yehlisa ixabiso (+where bargaining
+      is OK note), m7 Unayo …?/Ndinayo/Andinayo. Checker passed FIRST
+      RUN. Typo isweki caught by eye before checking.
+- [ ] Zone 9 (Work & school): umsebenzi work/job, ndiyasebenza I work,
+      ndifunda I study/learn (tie to ndiyafunda isiXhosa if taught,
+      else fresh), umfundi pupil/utitshala teacher (oo- plural
+      recycle), um-/imi- FOURTH plural pair (umsebenzi/imisebenzi,
+      umlambo/imilambo), Usebenza phi? where do you work, phandle
+      no-work reality softly? (skip — keep it upbeat), ndisebenza
+      edolophini locative recycle.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,
