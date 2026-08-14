@@ -188,15 +188,29 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       ndithanda + FIRST NEGATIVE a-...-i (andithandi, explains
       andiqondi), d7 table culture (Kumnandi!, hayi enkosi, guests
       always fed). Checker caught 1 (itswele), fixed.
-- [ ] Zone 6 (Around the home): h1 rooms (igumbi/ikhitshi/igumbi
-      lokulala/ifestile/iyadi), h2 objects (isitulo/itafile/ibhedi/
-      isitya/umbane + load-shedding note), h3 isi-/izi- pair drills
-      (izitulo/izitya/isipili), h4 where-is-it (iphi?/apha/phaya/
-      phantsi/phezulu), h5 kitchen tools (ikomityi/ibhotile/imela/
-      icephe/imbiza), h6 home verbs (ndipheka/ndihlamba/ndilala/
-      ndivuka/ndiphumla), h7 locative -ini (ekhitshini/endlwini +
-      phrases).
-- [ ] Zones 7–9.
+- [x] Zone 6 (Around the home) COMPLETE (210 lessons, 1293 ex, 306
+      clips): h1 rooms (igumbi/ikhitshi/igumbi lokulala/ifestile/iyadi),
+      h2 objects (isitulo/itafile/ibhedi/isitya/umbane + load-shedding
+      note), h3 isi-/izi- THIRD plural pair (izitulo/izitya/isipili),
+      h4 where-is-it (Iphi imoto?/apha/phaya/phantsi/phezulu), h5
+      kitchen tools (ikomityi/ibhotile/imela/icephe/imbiza), h6 home
+      verbs (ndipheka/ndihlamba/ndilala/ndivuka/ndiphumla — reuses
+      ebusuku/kusasa), h7 locative e-…-ini (ekhitshini/endlwini +
+      Ndipheka ekhitshini / Ndilala ebusuku full sentences). Checker
+      caught 2 distractor-before-note (apha, imbiza), fixed.
+- [ ] Zone 7 (Getting around): t1 places (ivenkile shop, isikolo school,
+      idolophu town, indlela road/way, iteksi taxi — SA taxi culture
+      note), t2 go/come/walk (ndiya ndiza ndihamba + Uya phi?), t3
+      locative e- on places (evenkileni/esikolweni/edolophini —
+      extends h7), t4 taxi rides (Ndiya edolophini, ukuhlala get on,
+      yima stop! — the rank note), t5 near/far (kufuphi/kude +
+      Ikufuphi?), t6 asking the way (Ndilahlekile I am lost,
+      Uyayazi indlela?), t7 checkpoint sentences (ndiya + place set,
+      Uya phi? answers).
+- [ ] Zones 8–9: Z8 Shopping & money (imali, Yimalini?, ukuthenga,
+      irandi, demonstratives le/eli/esi basics, spaza note); Z9 Work
+      & school (umsebenzi, ndisebenza/ndifunda, umfundi/utitshala,
+      um-/imi- FOURTH plural pair — umsebenzi/imisebenzi).
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,

@@ -1536,6 +1536,306 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"amasi","o":["amasi","amanzi","iti"],"a":0},
 {"t":"mc","q":"Review — an ishisanyama serves…","o":["meat from the fire","fruit and veg","tea and bread"],"a":0},
 {"t":"mc","q":"Review — the plural of iqanda is…","o":["amaqanda","iziqanda","ooqanda"],"a":0}
+]},
+
+/* ---------- h1 · Rooms of the house ---------- */
+{"id":"xh_h1","title":"Rooms of the house","step":"learn","meta":"Indlu inside — rooms and the yard","vocab":[["igumbi","ee-GOOM-bee","room"],["ikhitshi","ee-KHEE-tshee","kitchen"],["igumbi lokulala","ee-GOOM-bee law-koo-LAH-lah","bedroom"],["ifestile","ee-feh-STEE-leh","window"],["iyadi","ee-YAH-dee","yard"]],"ex":[
+{"t":"note","tag":"Inside indlu","q":"Igumbi — the room","body":"<p>You know indlu, the house. Inside it: <b>igumbi</b> — <i>a room</i> — and the heart of every home, <b>ikhitshi</b> — <i>the kitchen</i>, where the pot lives and the talking happens.</p>","eg":[["igumbi","ee-GOOM-bee","room"],["ikhitshi","ee-KHEE-tshee","kitchen"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikhitshi","o":["ikhitshi","igumbi"],"a":0},
+{"t":"mc","q":"What does igumbi mean?","o":["room","kitchen","house"],"a":0},
+{"t":"note","tag":"Sleep and light","q":"The bedroom and the window","body":"<p><b>Igumbi lokulala</b> — literally <i>the room of sleeping</i> — is the bedroom. <b>Ifestile</b> — <i>window</i> — is an old Afrikaans borrowing (venster) gone fully Xhosa.</p>","eg":[["igumbi lokulala","ee-GOOM-bee law-koo-LAH-lah","bedroom"],["ifestile","ee-feh-STEE-leh","window"]]},
+{"t":"li","q":"Which one do you hear?","say":"igumbi lokulala","o":["igumbi lokulala","igumbi"],"a":0},
+{"t":"mc","q":"igumbi lokulala — the room of sleeping — is the…","o":["bedroom","kitchen","bathroom"],"a":0},
+{"t":"note","tag":"Outside","q":"Iyadi — where life happens","body":"<p><b>Iyadi</b> — <i>the yard</i>. In the townships and the Eastern Cape alike, the yard is a living room under the sky: washing lines, children, neighbours leaning on the fence.</p>","eg":[["iyadi","ee-YAH-dee","yard"]]},
+{"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","ifestile"],"a":0},
+{"t":"mc","q":"Which one means window?","o":["ifestile","iyadi","igumbi"],"a":0}
+]},
+{"id":"xh_h1_2","title":"Hearing the rooms","step":"recognize","meta":"Around the house by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"igumbi","o":["igumbi","ikhitshi","iyadi"],"a":0},
+{"t":"mc","q":"What does ikhitshi mean?","o":["kitchen","bedroom","yard"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ifestile","o":["ifestile","iyadi","igumbi lokulala"],"a":0},
+{"t":"mc","q":"Which one means yard?","o":["iyadi","igumbi","ifestile"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"igumbi lokulala","o":["igumbi lokulala","ikhitshi","igumbi"],"a":0},
+{"t":"mc","q":"Where the pot lives and the talking happens…","o":["ikhitshi","igumbi lokulala","iyadi"],"a":0}
+]},
+{"id":"xh_h1_3","title":"Building the house","step":"build","meta":"Room by room","vocab":[],"ex":[
+{"t":"fill","q":"Complete: kitchen","s":"ikhi___i","o":["tsh","ts","sh"],"a":0},
+{"t":"wb","q":"Build: the room of sleeping","a":["igumbi","lokulala"],"pool":["igumbi","lokulala","ikhitshi"]},
+{"t":"fill","q":"Complete: window","s":"ifesti___","o":["le","la","li"],"a":0},
+{"t":"wb","q":"Build the word: yard","a":["iyadi"],"pool":["iyadi","igumbi","ifestile"]},
+{"t":"li","q":"Which one do you hear?","say":"ikhitshi","o":["ikhitshi","ifestile","iyadi"],"a":0}
+]},
+{"id":"xh_h1_4","title":"Rooms in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igumbi","room"],["ikhitshi","kitchen"],["iyadi","yard"]]},
+{"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","igumbi","ikhitshi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igumbi lokulala","bedroom"],["ifestile","window"]]},
+{"t":"mc","q":"indlu is the house; igumbi is…","o":["a room inside it","the roof","the door"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ifestile","o":["ifestile","igumbi lokulala","iyadi"],"a":0}
+]},
+{"id":"xh_h1_5","title":"Checkpoint: the rooms","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does iyadi mean?","o":["yard","room","window"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"igumbi","o":["igumbi","ikhitshi","ifestile"],"a":0},
+{"t":"mc","q":"Which one is the bedroom?","o":["igumbi lokulala","ikhitshi","iyadi"],"a":0},
+{"t":"mc","q":"ifestile came long ago from…","o":["Afrikaans","English","Zulu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","ifestile","igumbi lokulala"],"a":0},
+{"t":"mc","q":"Review — which one means door?","o":["ucango","ifestile","igumbi"],"a":0}
+]},
+
+/* ---------- h2 · Things at home ---------- */
+{"id":"xh_h2","title":"Things at home","step":"learn","meta":"Chair, table, bed — and umbane","vocab":[["isitulo","ee-see-TOO-law","chair"],["itafile","ee-tah-FEE-leh","table"],["ibhedi","ee-BHEH-dee","bed"],["isitya","ee-SEE-tyah","dish"],["umbane","oom-BAH-neh","electricity"]],"ex":[
+{"t":"note","tag":"Sit and eat","q":"Isitulo, itafile, isitya","body":"<p><b>Isitulo</b> — <i>chair</i> (from hlala thinking: the sitting thing). <b>Itafile</b> — <i>table</i>. <b>Isitya</b> — <i>a dish</i>, the thing you eat from — hear ukutya inside it.</p>","eg":[["isitulo","ee-see-TOO-law","chair"],["itafile","ee-tah-FEE-leh","table"],["isitya","ee-SEE-tyah","dish"]]},
+{"t":"li","q":"Which one do you hear?","say":"isitulo","o":["isitulo","isitya","itafile"],"a":0},
+{"t":"mc","q":"What does isitya mean?","o":["dish","chair","food"],"a":0},
+{"t":"note","tag":"Sleep","q":"Ibhedi","body":"<p><b>Ibhedi</b> — <i>bed</i> — with the breathy bh you know from bhuti. What lives in igumbi lokulala.</p>","eg":[["ibhedi","ee-BHEH-dee","bed"]]},
+{"t":"li","q":"Which one do you hear?","say":"ibhedi","o":["ibhedi","itafile"],"a":0},
+{"t":"mc","q":"ibhedi belongs in…","o":["igumbi lokulala","ikhitshi","iyadi"],"a":0},
+{"t":"note","tag":"The lights","q":"Umbane — electricity","body":"<p><b>Umbane</b> — <i>electricity</i>, originally <i>lightning</i>. In South Africa this word carries feeling: when umbane goes during load-shedding, the whole street sighs together.</p>","eg":[["umbane","oom-BAH-neh","electricity"]]},
+{"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","ibhedi"],"a":0},
+{"t":"mc","q":"umbane means electricity and originally…","o":["lightning","fire","the sun"],"a":0}
+]},
+{"id":"xh_h2_2","title":"Hearing home things","step":"recognize","meta":"Furniture by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"itafile","o":["itafile","isitulo","ibhedi"],"a":0},
+{"t":"mc","q":"What does isitulo mean?","o":["chair","table","bed"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isitya","o":["isitya","isitulo","umbane"],"a":0},
+{"t":"mc","q":"Which one means electricity?","o":["umbane","ibhedi","ifestile"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ibhedi","o":["ibhedi","umbane","itafile"],"a":0},
+{"t":"mc","q":"The word hiding inside isitya is…","o":["ukutya","ukusela","ukulala"],"a":0}
+]},
+{"id":"xh_h2_3","title":"Building home things","step":"build","meta":"Furnish the house","vocab":[],"ex":[
+{"t":"fill","q":"Complete: chair","s":"isitu___","o":["lo","la","le"],"a":0},
+{"t":"wb","q":"Build the word: table","a":["itafile"],"pool":["itafile","isitulo","ibhedi"]},
+{"t":"fill","q":"Complete: electricity","s":"umba___","o":["ne","na","no"],"a":0},
+{"t":"wb","q":"Build the word: dish","a":["isitya"],"pool":["isitya","itafile","umbane"]},
+{"t":"li","q":"Which one do you hear?","say":"isitulo","o":["isitulo","ibhedi","isitya"],"a":0}
+]},
+{"id":"xh_h2_4","title":"Home things in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isitulo","chair"],["itafile","table"],["ibhedi","bed"]]},
+{"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","isitya","itafile"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isitya","dish"],["umbane","electricity"]]},
+{"t":"mc","q":"When umbane goes off, South Africans call it…","o":["load-shedding","a braai","impelaveki"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"itafile","o":["itafile","ibhedi","isitulo"],"a":0}
+]},
+{"id":"xh_h2_5","title":"Checkpoint: home things","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does itafile mean?","o":["table","chair","dish"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isitya","o":["isitya","isitulo","umbane"],"a":0},
+{"t":"mc","q":"Which one means bed?","o":["ibhedi","itafile","igumbi"],"a":0},
+{"t":"mc","q":"umbane means…","o":["electricity","water","gas"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","ibhedi","isitya"],"a":0},
+{"t":"mc","q":"Review — which one means kitchen?","o":["ikhitshi","igumbi","iyadi"],"a":0}
+]},
+
+/* ---------- h3 · One thing, many things ---------- */
+{"id":"xh_h3","title":"One thing, many things","step":"learn","meta":"The isi- to izi- pattern","vocab":[["izitulo","ee-zee-TOO-law","chairs"],["izitya","ee-ZEE-tyah","dishes"],["isipili","ee-see-PEE-lee","mirror"],["izipili","ee-zee-PEE-lee","mirrors"]],"ex":[
+{"t":"note","tag":"The third pair","q":"isi- becomes izi-","body":"<p>Your third plural pattern, and the most regular of all: <b>isi-</b> things go plural as <b>izi-</b>. One isitulo, many <b>izitulo</b>. One isitya, many <b>izitya</b> — the washing-up word.</p>","eg":[["izitulo","ee-zee-TOO-law","chairs"],["izitya","ee-ZEE-tyah","dishes"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"izitulo","o":["izitulo","isitulo"],"a":0},
+{"t":"mc","q":"izitya means…","o":["dishes","dish","chairs"],"a":0},
+{"t":"note","tag":"Prove it","q":"Isipili, izipili","body":"<p>Test the rule on a new word: <b>isipili</b> — <i>mirror</i>. Its plural has to be… <b>izipili</b>. It is. Every isi- word you ever meet now comes with its plural for free.</p>","eg":[["isipili","ee-see-PEE-lee","mirror"],["izipili","ee-zee-PEE-lee","mirrors"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"izipili","o":["izipili","isipili"],"a":0},
+{"t":"mc","q":"What does isipili mean?","o":["mirror","dish","chair"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","izitulo"],"a":0},
+{"t":"mc","q":"Your three plural pairs so far…","o":["um-/aba-, oo-, isi-/izi-","only um-/aba-","e- and ngo-"],"a":0}
+]},
+{"id":"xh_h3_2","title":"Hearing plurals","step":"recognize","meta":"Singular or plural, instantly","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"isipili","o":["isipili","izipili","isitya"],"a":0},
+{"t":"mc","q":"The plural of isitulo is…","o":["izitulo","ositulo","amatulo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","izitya","izipili"],"a":0},
+{"t":"mc","q":"Which one means mirrors?","o":["izipili","isipili","izitya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","isitya","izitulo"],"a":0},
+{"t":"mc","q":"After dinner you wash…","o":["izitya","izitulo","izipili"],"a":0}
+]},
+{"id":"xh_h3_3","title":"Building plurals","step":"build","meta":"Swap isi- for izi-","vocab":[],"ex":[
+{"t":"fill","q":"Complete: chairs","s":"___tulo","o":["izi","isi","ama"],"a":0},
+{"t":"wb","q":"Build the word: dishes","a":["izitya"],"pool":["izitya","isitya","izitulo"]},
+{"t":"fill","q":"Complete: mirror (just one)","s":"___pili","o":["isi","izi","oo"],"a":0},
+{"t":"wb","q":"Build the word: mirrors","a":["izipili"],"pool":["izipili","isipili","izitya"]},
+{"t":"li","q":"Which one do you hear?","say":"izipili","o":["izipili","izitulo","isipili"],"a":0}
+]},
+{"id":"xh_h3_4","title":"Plurals in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match singular to plural","pairs":[["isitulo","izitulo"],["isitya","izitya"],["isipili","izipili"]]},
+{"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","isitulo","izipili"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["izitulo","chairs"],["izitya","dishes"],["izipili","mirrors"]]},
+{"t":"mc","q":"isiXhosa has no plural need, but isiqhamo (fruit) pluralises to…","o":["iziqhamo","amaqhamo","ooqhamo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isipili","o":["isipili","izipili","izitya"],"a":0}
+]},
+{"id":"xh_h3_5","title":"Checkpoint: plurals","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"The plural of isitya is…","o":["izitya","amatya","ootya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","izipili","izitulo"],"a":0},
+{"t":"mc","q":"What does izipili mean?","o":["mirrors","dishes","chairs"],"a":0},
+{"t":"mc","q":"isi- words go plural with…","o":["izi-","aba-","ama-"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","izitya","isitulo"],"a":0},
+{"t":"mc","q":"Review — which one means electricity?","o":["umbane","isipili","ifestile"],"a":0}
+]},
+
+/* ---------- h4 · Where is it? ---------- */
+{"id":"xh_h4","title":"Where is it?","step":"learn","meta":"Iphi — here, there, up, down","vocab":[["Iphi imoto?","EE-pee ee-MAW-taw","where is the car?"],["apha","AH-pah","here"],["phaya","PAH-yah","over there"],["phantsi","PAHN-tsee","down"],["phezulu","peh-ZOO-loo","up"]],"ex":[
+{"t":"note","tag":"Asking where","q":"Iphi — where is the thing?","body":"<p>You know Uphi? for people. For i- things the question wears i-: <b>Iphi imoto?</b> — <i>where is the car?</i> Same phi, dressed to match its noun.</p>","eg":[["Iphi imoto?","EE-pee ee-MAW-taw","where is the car?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Iphi imoto?","o":["Iphi imoto?","ikhitshi"],"a":0},
+{"t":"mc","q":"Iphi imoto? asks…","o":["where is the car?","whose car is this?","is the car here?"],"a":0},
+{"t":"note","tag":"Here and there","q":"Apha and phaya","body":"<p>The answers: <b>apha</b> — <i>here</i> — and <b>phaya</b> — <i>over there</i>, usually with a pointed chin rather than a finger. Iphi imoto? Iphaya! — it is over there.</p>","eg":[["apha","AH-pah","here"],["phaya","PAH-yah","over there"]]},
+{"t":"li","q":"Here or there — which do you hear?","say":"phaya","o":["phaya","apha"],"a":0},
+{"t":"mc","q":"apha means…","o":["here","over there","up"],"a":0},
+{"t":"note","tag":"Up and down","q":"Phezulu and phantsi","body":"<p><b>Phezulu</b> — <i>up, on top</i>. <b>Phantsi</b> — <i>down, underneath</i>. Also the great protest word: Phantsi nge…! — down with…!</p>","eg":[["phezulu","peh-ZOO-loo","up"],["phantsi","PAHN-tsee","down"]]},
+{"t":"li","q":"Up or down — which do you hear?","say":"phantsi","o":["phantsi","phezulu"],"a":0},
+{"t":"mc","q":"phezulu means…","o":["up","down","here"],"a":0}
+]},
+{"id":"xh_h4_2","title":"Hearing directions","step":"recognize","meta":"Place words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"apha","o":["apha","phaya","phantsi"],"a":0},
+{"t":"mc","q":"What does phaya mean?","o":["over there","here","up"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"phezulu","o":["phezulu","phantsi","phaya"],"a":0},
+{"t":"mc","q":"Which one means down?","o":["phantsi","phezulu","apha"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Iphi imoto?","o":["Iphi imoto?","phaya","apha"],"a":0},
+{"t":"mc","q":"Someone answers your question with a pointed chin: Iphaya. The thing is…","o":["over there","right here","upstairs"],"a":0}
+]},
+{"id":"xh_h4_3","title":"Building directions","step":"build","meta":"Point with words","vocab":[],"ex":[
+{"t":"fill","q":"Complete: where is the car?","s":"I___i imoto?","o":["ph","p","f"],"a":0},
+{"t":"wb","q":"Build: it is over there","a":["phaya"],"pool":["phaya","apha","phantsi"]},
+{"t":"fill","q":"Complete: down","s":"phan___i","o":["ts","tsh","th"],"a":0},
+{"t":"wb","q":"Build: here","a":["apha"],"pool":["apha","phaya","phezulu"]},
+{"t":"li","q":"Which one do you hear?","say":"phaya","o":["phaya","phezulu","apha"],"a":0}
+]},
+{"id":"xh_h4_4","title":"Directions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["apha","here"],["phaya","over there"],["phantsi","down"]]},
+{"t":"li","q":"Which one do you hear?","say":"phantsi","o":["phantsi","phaya","phezulu"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["phezulu","up"],["Iphi imoto?","where is the car?"]]},
+{"t":"mc","q":"Uphi is for people; Iphi is for…","o":["i- things","places only","questions only"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"apha","o":["apha","phantsi","Iphi imoto?"],"a":0}
+]},
+{"id":"xh_h4_5","title":"Checkpoint: where","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does phantsi mean?","o":["down","up","there"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"phezulu","o":["phezulu","phaya","phantsi"],"a":0},
+{"t":"mc","q":"Which one means here?","o":["apha","phaya","phezulu"],"a":0},
+{"t":"mc","q":"Iphi imoto? — Iphaya! The car is…","o":["over there","here","gone"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Iphi imoto?","o":["Iphi imoto?","apha","phaya"],"a":0},
+{"t":"mc","q":"Review — the plural of isipili is…","o":["izipili","amapili","oopili"],"a":0}
+]},
+
+/* ---------- h5 · In the kitchen ---------- */
+{"id":"xh_h5","title":"In the kitchen","step":"learn","meta":"Cup, pot, knife — the tools of iti","vocab":[["ikomityi","ee-kaw-MEE-tyee","cup"],["ibhotile","ee-bhaw-TEE-leh","bottle"],["imela","ee-MEH-lah","knife"],["icephe","ee-CEH-peh","spoon"],["imbiza","eem-BEE-zah","pot"]],"ex":[
+{"t":"note","tag":"Tea things","q":"Ikomityi and ibhotile","body":"<p><b>Ikomityi</b> — <i>cup</i> — the vessel of every visit (iti arrives in it). <b>Ibhotile</b> — <i>bottle</i>. Both old borrowings living comfortably in the isiXhosa kitchen.</p>","eg":[["ikomityi","ee-kaw-MEE-tyee","cup"],["ibhotile","ee-bhaw-TEE-leh","bottle"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikomityi","o":["ikomityi","ibhotile"],"a":0},
+{"t":"mc","q":"Iti arrives in…","o":["ikomityi","ibhotile","isitya"],"a":0},
+{"t":"note","tag":"Cutting and stirring","q":"Imela and icephe","body":"<p><b>Imela</b> — <i>knife</i> (from Afrikaans mes). <b>Icephe</b> — <i>spoon</i> — with your dental click in the middle: ee-CLICK-peh.</p>","eg":[["imela","ee-MEH-lah","knife"],["icephe","ee-CEH-peh","spoon"]]},
+{"t":"li","q":"Which one do you hear?","say":"icephe","o":["icephe","imela"],"a":0},
+{"t":"mc","q":"What does imela mean?","o":["knife","spoon","cup"],"a":0},
+{"t":"note","tag":"The big one","q":"Imbiza — the pot","body":"<p><b>Imbiza</b> — <i>the pot</i> — where umngqusho simmers all afternoon. A three-legged imbiza over a fire is the truest South African kitchen there is.</p>","eg":[["imbiza","eem-BEE-zah","pot"]]},
+{"t":"li","q":"Which one do you hear?","say":"imbiza","o":["imbiza","icephe"],"a":0},
+{"t":"mc","q":"Which one means pot?","o":["imbiza","ikomityi","ibhotile"],"a":0}
+]},
+{"id":"xh_h5_2","title":"Hearing the tools","step":"recognize","meta":"Kitchen tools by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ibhotile","o":["ibhotile","ikomityi","imbiza"],"a":0},
+{"t":"mc","q":"What does icephe mean?","o":["spoon","knife","pot"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imela","o":["imela","imbiza","icephe"],"a":0},
+{"t":"mc","q":"Which one means cup?","o":["ikomityi","ibhotile","isitya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imbiza","o":["imbiza","imela","ibhotile"],"a":0},
+{"t":"mc","q":"Umngqusho simmers all afternoon in…","o":["imbiza","ikomityi","isitya"],"a":0}
+]},
+{"id":"xh_h5_3","title":"Building the tools","step":"build","meta":"Set the kitchen","vocab":[],"ex":[
+{"t":"fill","q":"Complete: cup","s":"ikomi___i","o":["ty","tsh","t"],"a":0},
+{"t":"wb","q":"Build: may I have a spoon","a":["ndicela","icephe"],"pool":["ndicela","icephe","imela"]},
+{"t":"fill","q":"Complete: pot","s":"imbi___a","o":["z","s","dl"],"a":0},
+{"t":"wb","q":"Build the word: bottle","a":["ibhotile"],"pool":["ibhotile","ikomityi","imbiza"]},
+{"t":"li","q":"Which one do you hear?","say":"ikomityi","o":["ikomityi","imbiza","imela"],"a":0}
+]},
+{"id":"xh_h5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikomityi","cup"],["ibhotile","bottle"],["imela","knife"]]},
+{"t":"li","q":"Which one do you hear?","say":"icephe","o":["icephe","imela","ikomityi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["icephe","spoon"],["imbiza","pot"]]},
+{"t":"mc","q":"The click hiding in icephe is…","o":["c","x","q"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ibhotile","o":["ibhotile","imbiza","icephe"],"a":0}
+]},
+{"id":"xh_h5_5","title":"Checkpoint: the kitchen","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does imbiza mean?","o":["pot","pan","cup"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imela","o":["imela","icephe","ibhotile"],"a":0},
+{"t":"mc","q":"Which one means spoon?","o":["icephe","imela","ikomityi"],"a":0},
+{"t":"mc","q":"Ndicela ikomityi yeti would get you…","o":["a cup of tea","a bottle of water","a pot of food"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"icephe","o":["icephe","ikomityi","imbiza"],"a":0},
+{"t":"mc","q":"Review — which one means dishes?","o":["izitya","izitulo","izipili"],"a":0}
+]},
+
+/* ---------- h6 · What you do at home ---------- */
+{"id":"xh_h6","title":"What you do at home","step":"learn","meta":"Cook, wash, sleep, wake — the home verbs","vocab":[["ndipheka","ndee-PEH-kah","I cook"],["ndihlamba","ndee-HLAHM-bah","I wash"],["ndilala","ndee-LAH-lah","I sleep"],["ndivuka","ndee-VOO-kah","I wake up"],["ndiphumla","ndee-POOM-lah","I rest"]],"ex":[
+{"t":"note","tag":"The kitchen verbs","q":"Ndipheka, ndihlamba","body":"<p><b>Ndipheka</b> — <i>I cook</i>. <b>Ndihlamba</b> — <i>I wash</i> — dishes, clothes, hands; one verb covers them, with your blown hl inside.</p>","eg":[["ndipheka","ndee-PEH-kah","I cook"],["ndihlamba","ndee-HLAHM-bah","I wash"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndipheka","o":["ndipheka","ndihlamba"],"a":0},
+{"t":"mc","q":"What does ndihlamba mean?","o":["I wash","I cook","I rest"],"a":0},
+{"t":"note","tag":"Night and morning","q":"Ndilala, ndivuka","body":"<p><b>Ndilala</b> — <i>I sleep</i> — the lala of igumbi lokulala. <b>Ndivuka</b> — <i>I wake up</i>. Ndilala ebusuku, ndivuka kusasa: I sleep at night, I wake in the morning — your time words earning their keep.</p>","eg":[["ndilala","ndee-LAH-lah","I sleep"],["ndivuka","ndee-VOO-kah","I wake up"]]},
+{"t":"li","q":"Sleep or wake — which do you hear?","say":"ndivuka","o":["ndivuka","ndilala"],"a":0},
+{"t":"mc","q":"ndilala means…","o":["I sleep","I wake up","I wash"],"a":0},
+{"t":"note","tag":"Sunday afternoon","q":"Ndiphumla — I rest","body":"<p><b>Ndiphumla</b> — <i>I rest</i> — the Sunday-afternoon verb, after church and before the evening pot.</p>","eg":[["ndiphumla","ndee-POOM-lah","I rest"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndipheka"],"a":0},
+{"t":"mc","q":"Which one means I rest?","o":["ndiphumla","ndivuka","ndihlamba"],"a":0}
+]},
+{"id":"xh_h6_2","title":"Hearing the home verbs","step":"recognize","meta":"Daily actions by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndihlamba","o":["ndihlamba","ndipheka","ndiphumla"],"a":0},
+{"t":"mc","q":"What does ndivuka mean?","o":["I wake up","I sleep","I cook"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndilala","o":["ndilala","ndivuka","ndihlamba"],"a":0},
+{"t":"mc","q":"Which one means I cook?","o":["ndipheka","ndihlamba","ndiphumla"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndilala","ndipheka"],"a":0},
+{"t":"mc","q":"After washing izitya, on Sunday afternoon you…","o":["ndiphumla","ndivuka","ndipheka"],"a":0}
+]},
+{"id":"xh_h6_3","title":"Building the day","step":"build","meta":"Your routine in Xhosa","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I cook","s":"Ndiphe___","o":["ka","kha","qa"],"a":0},
+{"t":"wb","q":"Build: I sleep at night","a":["ndilala","ebusuku"],"pool":["ndilala","ebusuku","kusasa"]},
+{"t":"fill","q":"Complete: I wash","s":"Ndi___amba","o":["hl","dl","l"],"a":0},
+{"t":"wb","q":"Build: I wake up in the morning","a":["ndivuka","kusasa"],"pool":["ndivuka","kusasa","ebusuku"]},
+{"t":"li","q":"Which one do you hear?","say":"ndivuka","o":["ndivuka","ndiphumla","ndilala"],"a":0}
+]},
+{"id":"xh_h6_4","title":"The routine in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndipheka","I cook"],["ndihlamba","I wash"],["ndiphumla","I rest"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndipheka","o":["ndipheka","ndihlamba","ndivuka"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndilala","I sleep"],["ndivuka","I wake up"]]},
+{"t":"mc","q":"Order the day: ndivuka, ndipheka, then at night…","o":["ndilala","ndiphumla","ndihlamba"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndihlamba","o":["ndihlamba","ndilala","ndiphumla"],"a":0}
+]},
+{"id":"xh_h6_5","title":"Checkpoint: the home verbs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndipheka mean?","o":["I cook","I wash","I eat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndilala","o":["ndilala","ndilambile","ndivuka"],"a":0},
+{"t":"mc","q":"Which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
+{"t":"mc","q":"Ndilala … (at night). Complete it.","o":["ebusuku","kusasa","namhlanje"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndipheka","ndihlamba"],"a":0},
+{"t":"mc","q":"Review — which one means pot?","o":["imbiza","ikomityi","isitya"],"a":0}
+]},
+
+/* ---------- h7 · In the kitchen, in the house ---------- */
+{"id":"xh_h7","title":"In the kitchen, in the house","step":"learn","meta":"The -ini ending — places you are IN","vocab":[["ekhitshini","eh-khee-TSHEE-nee","in the kitchen"],["endlwini","ehn-DLWEE-nee","in the house"],["Ndipheka ekhitshini","ndee-PEH-kah eh-khee-TSHEE-nee","I cook in the kitchen"],["Ndilala ebusuku","ndee-LAH-lah eh-boo-SOO-koo","I sleep at night"]],"ex":[
+{"t":"note","tag":"Being inside","q":"e-…-ini wraps the place","body":"<p>Remember eKapa — the e- that means <i>in</i>? Ordinary nouns take the full wrap, <b>e-…-ini</b>: ikhitshi becomes <b>ekhitshini</b> — <i>in the kitchen</i>; indlu becomes <b>endlwini</b> — <i>in the house</i>.</p>","eg":[["ekhitshini","eh-khee-TSHEE-nee","in the kitchen"],["endlwini","ehn-DLWEE-nee","in the house"]]},
+{"t":"li","q":"Which one do you hear?","say":"ekhitshini","o":["ekhitshini","endlwini"],"a":0},
+{"t":"mc","q":"ekhitshini means…","o":["in the kitchen","the kitchen","a big kitchen"],"a":0},
+{"t":"note","tag":"Real sentences","q":"Put it all together","body":"<p>Now your verbs and places meet: <b>Ndipheka ekhitshini</b> — <i>I cook in the kitchen</i>. <b>Ndilala ebusuku</b> — <i>I sleep at night</i>. You are building real Xhosa sentences from parts you own.</p>","eg":[["Ndipheka ekhitshini","ndee-PEH-kah eh-khee-TSHEE-nee","I cook in the kitchen"],["Ndilala ebusuku","ndee-LAH-lah eh-boo-SOO-koo","I sleep at night"]]},
+{"t":"li","q":"Which sentence do you hear?","say":"Ndipheka ekhitshini","o":["Ndipheka ekhitshini","Ndilala ebusuku"],"a":0},
+{"t":"mc","q":"Ndipheka ekhitshini means…","o":["I cook in the kitchen","I eat in the kitchen","the kitchen is mine"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"endlwini","o":["endlwini","ekhitshini"],"a":0},
+{"t":"mc","q":"To say IN an ordinary noun, wrap it in…","o":["e-…-ini","ngo-…-o","a-…-i"],"a":0}
+]},
+{"id":"xh_h7_2","title":"Hearing the -ini","step":"recognize","meta":"Places you are in, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"endlwini","o":["endlwini","ekhitshini","indlu"],"a":0},
+{"t":"mc","q":"What does endlwini mean?","o":["in the house","the house","at home"],"a":0},
+{"t":"li","q":"Which sentence do you hear?","say":"Ndilala ebusuku","o":["Ndilala ebusuku","Ndipheka ekhitshini","ndilala"],"a":0},
+{"t":"mc","q":"Which one means in the kitchen?","o":["ekhitshini","ikhitshi","ekhaya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ekhitshini","o":["ekhitshini","endlwini","Ndipheka ekhitshini"],"a":0},
+{"t":"mc","q":"The a-…-i wrap makes negatives; the e-…-ini wrap makes…","o":["places you are in","plurals","questions"],"a":0}
+]},
+{"id":"xh_h7_3","title":"Building sentences","step":"build","meta":"Verbs meet places","vocab":[],"ex":[
+{"t":"fill","q":"Complete: in the kitchen","s":"ekhitshi___","o":["ni","na","ne"],"a":0},
+{"t":"wb","q":"Build: I cook in the kitchen","a":["ndipheka","ekhitshini"],"pool":["ndipheka","ekhitshini","endlwini"]},
+{"t":"fill","q":"Complete: in the house","s":"endlwi___","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build: I sleep at night","a":["ndilala","ebusuku"],"pool":["ndilala","ebusuku","ekhitshini"]},
+{"t":"li","q":"Which sentence do you hear?","say":"Ndilala ebusuku","o":["Ndilala ebusuku","Ndipheka ekhitshini","endlwini"],"a":0}
+]},
+{"id":"xh_h7_4","title":"Sentences in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ekhitshini","in the kitchen"],["endlwini","in the house"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndipheka ekhitshini","o":["Ndipheka ekhitshini","Ndilala ebusuku","ekhitshini"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndipheka ekhitshini","I cook in the kitchen"],["Ndilala ebusuku","I sleep at night"]]},
+{"t":"mc","q":"ikhitshi is to ekhitshini as indlu is to…","o":["endlwini","indlwana","endlini kakhulu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ekhitshini","o":["ekhitshini","endlwini","ndipheka"],"a":0}
+]},
+{"id":"xh_h7_5","title":"Checkpoint: Zone 6 complete","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
+{"t":"mc","q":"endlwini means…","o":["in the house","the house","at the door"],"a":0},
+{"t":"li","q":"Which sentence do you hear?","say":"Ndipheka ekhitshini","o":["Ndipheka ekhitshini","Ndilala ebusuku","ekhitshini"],"a":0},
+{"t":"mc","q":"Review — the plural of isitulo is…","o":["izitulo","ositulo","abatulo"],"a":0},
+{"t":"mc","q":"Review — which one means over there?","o":["phaya","apha","phantsi"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"imbiza","o":["imbiza","ikomityi","umbane"],"a":0},
+{"t":"mc","q":"Review — which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
+{"t":"mc","q":"Review — when umbane goes off it is…","o":["load-shedding","impelaveki","ishisanyama"],"a":0}
 ]}
 ];
 
@@ -1549,9 +1849,11 @@ const XH_UNITS=[
 {"n":4,"t":"Numbers, days & time","d":"Amanani neentsuku — counting and the calendar","lessons":["xh_n1","xh_n1_2","xh_n1_3","xh_n1_4","xh_n1_5","xh_n2","xh_n2_2","xh_n2_3","xh_n2_4","xh_n2_5","xh_n3","xh_n3_2","xh_n3_3","xh_n3_4","xh_n3_5","xh_n4","xh_n4_2","xh_n4_3","xh_n4_4","xh_n4_5","xh_n5","xh_n5_2","xh_n5_3","xh_n5_4","xh_n5_5","xh_n6","xh_n6_2","xh_n6_3","xh_n6_4","xh_n6_5","xh_n7","xh_n7_2","xh_n7_3","xh_n7_4","xh_n7_5"]}
 ,
 {"n":5,"t":"Food & drink","d":"Ukutya nokusela — the table and the braai","lessons":["xh_d1","xh_d1_2","xh_d1_3","xh_d1_4","xh_d1_5","xh_d2","xh_d2_2","xh_d2_3","xh_d2_4","xh_d2_5","xh_d3","xh_d3_2","xh_d3_3","xh_d3_4","xh_d3_5","xh_d4","xh_d4_2","xh_d4_3","xh_d4_4","xh_d4_5","xh_d5","xh_d5_2","xh_d5_3","xh_d5_4","xh_d5_5","xh_d6","xh_d6_2","xh_d6_3","xh_d6_4","xh_d6_5","xh_d7","xh_d7_2","xh_d7_3","xh_d7_4","xh_d7_5"]}
+,
+{"n":6,"t":"Around the home","d":"Rooms, furniture, kitchen tools — and your first full sentences","lessons":["xh_h1","xh_h1_2","xh_h1_3","xh_h1_4","xh_h1_5","xh_h2","xh_h2_2","xh_h2_3","xh_h2_4","xh_h2_5","xh_h3","xh_h3_2","xh_h3_3","xh_h3_4","xh_h3_5","xh_h4","xh_h4_2","xh_h4_3","xh_h4_4","xh_h4_5","xh_h5","xh_h5_2","xh_h5_3","xh_h5_4","xh_h5_5","xh_h6","xh_h6_2","xh_h6_3","xh_h6_4","xh_h6_5","xh_h7","xh_h7_2","xh_h7_3","xh_h7_4","xh_h7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini"};
 
 const XH_SRS_SEED=[];
 
