@@ -198,15 +198,17 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       ebusuku/kusasa), h7 locative e-…-ini (ekhitshini/endlwini +
       Ndipheka ekhitshini / Ndilala ebusuku full sentences). Checker
       caught 2 distractor-before-note (apha, imbiza), fixed.
-- [ ] Zone 7 (Getting around): t1 places (ivenkile shop, isikolo school,
-      idolophu town, indlela road/way, iteksi taxi — SA taxi culture
-      note), t2 go/come/walk (ndiya ndiza ndihamba + Uya phi?), t3
-      locative e- on places (evenkileni/esikolweni/edolophini —
-      extends h7), t4 taxi rides (Ndiya edolophini, ukuhlala get on,
-      yima stop! — the rank note), t5 near/far (kufuphi/kude +
-      Ikufuphi?), t6 asking the way (Ndilahlekile I am lost,
-      Uyayazi indlela?), t7 checkpoint sentences (ndiya + place set,
-      Uya phi? answers).
+- [x] Zone 7 (Getting around) COMPLETE (245 lessons, 1509 ex, 342
+      clips): t1 places (ivenkile/isikolo/idolophu/indlela/iteksi +
+      minibus-taxi culture note), t2 ndiya/ndiza minimal pair +
+      ndihamba (tied to hamba kakuhle) + Uya phi? as street greeting,
+      t3 locatives evenkileni/esikolweni/edolophini (extends h7), t4
+      Ndiya edolophini + Ndihamba ngeteksi (nge- = by) + Yima! +
+      irenki, t5 kufuphi/kude + intonation yes-no questions
+      (Ikufuphi?) + Ivenkile ikufuphi subject-agreement taste, t6
+      Ndilahlekile/uncedo/Ndicela uncedo/Uyayazi indlela?, t7 si- =
+      we (Sihamba ngoku) + verb-place-time sentences. Checker passed
+      FIRST RUN (0 violations).
 - [ ] Zones 8–9: Z8 Shopping & money (imali, Yimalini?, ukuthenga,
       irandi, demonstratives le/eli/esi basics, spaza note); Z9 Work
       & school (umsebenzi, ndisebenza/ndifunda, umfundi/utitshala,

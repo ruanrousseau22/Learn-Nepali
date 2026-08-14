@@ -1836,6 +1836,306 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"imbiza","o":["imbiza","ikomityi","umbane"],"a":0},
 {"t":"mc","q":"Review — which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
 {"t":"mc","q":"Review — when umbane goes off it is…","o":["load-shedding","impelaveki","ishisanyama"],"a":0}
+]},
+
+/* ---------- t1 · Places in town ---------- */
+{"id":"xh_t1","title":"Places in town","step":"learn","meta":"Shop, school, town — and iteksi","vocab":[["ivenkile","ee-vehn-KEE-leh","shop"],["isikolo","ee-see-KAW-law","school"],["idolophu","ee-daw-LAW-poo","town"],["indlela","een-DLEH-lah","road"],["iteksi","ee-TEHK-see","taxi"]],"ex":[
+{"t":"note","tag":"Where you go","q":"Ivenkile and isikolo","body":"<p>The two places every day passes through: <b>ivenkile</b> — <i>the shop</i> (an old winkel borrowing) — and <b>isikolo</b> — <i>the school</i>.</p>","eg":[["ivenkile","ee-vehn-KEE-leh","shop"],["isikolo","ee-see-KAW-law","school"]]},
+{"t":"li","q":"Which one do you hear?","say":"ivenkile","o":["ivenkile","isikolo"],"a":0},
+{"t":"mc","q":"What does isikolo mean?","o":["school","shop","town"],"a":0},
+{"t":"note","tag":"The bigger world","q":"Idolophu and indlela","body":"<p><b>Idolophu</b> — <i>town</i> (from dorp). <b>Indlela</b> — <i>the road, the way</i> — a word Xhosa also uses the way English does: the way to do things, the way home.</p>","eg":[["idolophu","ee-daw-LAW-poo","town"],["indlela","een-DLEH-lah","road"]]},
+{"t":"li","q":"Which one do you hear?","say":"idolophu","o":["idolophu","indlela"],"a":0},
+{"t":"mc","q":"indlela means the road and also…","o":["the way","the town","the trip"],"a":0},
+{"t":"note","tag":"How South Africa moves","q":"Iteksi","body":"<p><b>Iteksi</b> — <i>the minibus taxi</i>, how most of South Africa gets anywhere. You hail one with a hand sign for your route, pay by passing coins forward, and trust the gaartjie to know where everyone is going.</p>","eg":[["iteksi","ee-TEHK-see","taxi"]]},
+{"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","ivenkile"],"a":0},
+{"t":"mc","q":"Which one means taxi?","o":["iteksi","idolophu","imoto"],"a":0}
+]},
+{"id":"xh_t1_2","title":"Hearing the places","step":"recognize","meta":"Town words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"isikolo","o":["isikolo","ivenkile","idolophu"],"a":0},
+{"t":"mc","q":"What does ivenkile mean?","o":["shop","school","road"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"indlela","o":["indlela","iteksi","idolophu"],"a":0},
+{"t":"mc","q":"Which one means town?","o":["idolophu","indlela","isikolo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","indlela","isikolo"],"a":0},
+{"t":"mc","q":"You pay by passing coins forward in…","o":["iteksi","ivenkile","isikolo"],"a":0}
+]},
+{"id":"xh_t1_3","title":"Building the town","step":"build","meta":"Place by place","vocab":[],"ex":[
+{"t":"fill","q":"Complete: shop","s":"ivenki___","o":["le","la","li"],"a":0},
+{"t":"wb","q":"Build the word: school","a":["isikolo"],"pool":["isikolo","ivenkile","iteksi"]},
+{"t":"fill","q":"Complete: town","s":"idolo___u","o":["ph","p","f"],"a":0},
+{"t":"wb","q":"Build the word: road","a":["indlela"],"pool":["indlela","idolophu","iteksi"]},
+{"t":"li","q":"Which one do you hear?","say":"ivenkile","o":["ivenkile","iteksi","indlela"],"a":0}
+]},
+{"id":"xh_t1_4","title":"The town in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ivenkile","shop"],["isikolo","school"],["idolophu","town"]]},
+{"t":"li","q":"Which one do you hear?","say":"idolophu","o":["idolophu","isikolo","iteksi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["indlela","road"],["iteksi","taxi"]]},
+{"t":"mc","q":"iteksi in South Africa usually means…","o":["a minibus on a set route","a metered cab","a bus"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"indlela","o":["indlela","ivenkile","idolophu"],"a":0}
+]},
+{"id":"xh_t1_5","title":"Checkpoint: the places","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does idolophu mean?","o":["town","shop","school"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"isikolo","o":["isikolo","idolophu","ivenkile"],"a":0},
+{"t":"mc","q":"Which one means road?","o":["indlela","iteksi","idolophu"],"a":0},
+{"t":"mc","q":"ivenkile and idolophu both came from…","o":["Afrikaans","English","Zulu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","isikolo","indlela"],"a":0},
+{"t":"mc","q":"Review — which one means bread?","o":["isonka","amasi","irayisi"],"a":0}
+]},
+
+/* ---------- t2 · Going and coming ---------- */
+{"id":"xh_t2","title":"Going and coming","step":"learn","meta":"Ndiya, ndiza — and Uya phi?","vocab":[["ndiya","NDEE-yah","I go"],["ndiza","NDEE-zah","I come"],["ndihamba","ndee-HAHM-bah","I walk"],["Uya phi?","OO-yah PEE","where are you going?"]],"ex":[
+{"t":"note","tag":"One letter apart","q":"Ndiya and ndiza","body":"<p><b>Ndiya</b> — <i>I go</i>. <b>Ndiza</b> — <i>I come</i>. One consonant apart, opposite directions — listen for the y against the z.</p>","eg":[["ndiya","NDEE-yah","I go"],["ndiza","NDEE-zah","I come"]]},
+{"t":"li","q":"Going or coming — which do you hear?","say":"ndiya","o":["ndiya","ndiza"],"a":0},
+{"t":"mc","q":"What does ndiza mean?","o":["I come","I go","I walk"],"a":0},
+{"t":"note","tag":"On foot","q":"Ndihamba","body":"<p><b>Ndihamba</b> — <i>I walk, I travel, I am off</i>. You already own its heart: hamba kakuhle — go well. Hamba is the going itself; ndi- makes it yours.</p>","eg":[["ndihamba","ndee-HAHM-bah","I walk"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndihamba","o":["ndihamba","ndiya"],"a":0},
+{"t":"mc","q":"The goodbye hamba kakuhle literally wishes someone to…","o":["go well","sleep well","eat well"],"a":0},
+{"t":"note","tag":"The daily question","q":"Uya phi?","body":"<p><b>Uya phi?</b> — <i>where are you going?</i> U- is <i>you</i>, -ya is <i>go</i>, phi is the where of Uphi and Iphi. On any road in the Eastern Cape this is not nosiness — it is a greeting.</p>","eg":[["Uya phi?","OO-yah PEE","where are you going?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uya phi?","o":["Uya phi?","ndihamba"],"a":0},
+{"t":"mc","q":"Uya phi? asks…","o":["where are you going?","where are you from?","are you leaving?"],"a":0}
+]},
+{"id":"xh_t2_2","title":"Hearing the going","step":"recognize","meta":"Motion verbs by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndiya","ndihamba"],"a":0},
+{"t":"mc","q":"What does ndiya mean?","o":["I go","I come","I walk"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndihamba","o":["ndihamba","ndiza","Uya phi?"],"a":0},
+{"t":"mc","q":"Which one means I come?","o":["ndiza","ndiya","ndihamba"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uya phi?","o":["Uya phi?","ndiya","ndiza"],"a":0},
+{"t":"mc","q":"In Uya phi?, the u- means…","o":["you","I","where"],"a":0}
+]},
+{"id":"xh_t2_3","title":"Building the going","step":"build","meta":"Set the verbs moving","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I go","s":"Ndi___","o":["ya","za","wa"],"a":0},
+{"t":"wb","q":"Build: where are you going?","a":["Uya","phi?"],"pool":["Uya","phi?","ndiza"]},
+{"t":"fill","q":"Complete: I walk","s":"Ndiha___a","o":["mb","m","nb"],"a":0},
+{"t":"wb","q":"Build the word: I come","a":["ndiza"],"pool":["ndiza","ndiya","ndihamba"]},
+{"t":"li","q":"Which one do you hear?","say":"ndiya","o":["ndiya","ndihamba","ndiza"],"a":0}
+]},
+{"id":"xh_t2_4","title":"The going in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiya","I go"],["ndiza","I come"],["ndihamba","I walk"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndihamba","ndiya"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uya phi?","where are you going?"],["hamba kakuhle","go well"]]},
+{"t":"mc","q":"Someone calls Uya phi? across the road. It works as…","o":["a friendly greeting","an accusation","a warning"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndihamba","o":["ndihamba","Uya phi?","ndiya"],"a":0}
+]},
+{"id":"xh_t2_5","title":"Checkpoint: the going","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndihamba mean?","o":["I walk","I go","I come"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiya","o":["ndiya","ndiza","ndihamba"],"a":0},
+{"t":"mc","q":"Which one means where are you going?","o":["Uya phi?","Uphi utata?","Unjani?"],"a":0},
+{"t":"mc","q":"ndiya and ndiza differ by…","o":["one consonant","their prefix","their tone only"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndiya","Uya phi?"],"a":0},
+{"t":"mc","q":"Review — which one means yesterday?","o":["izolo","ngomso","kusasa"],"a":0}
+]},
+
+/* ---------- t3 · At the shop, at school ---------- */
+{"id":"xh_t3","title":"At the shop, at school","step":"learn","meta":"The e- wrap goes to town","vocab":[["evenkileni","eh-vehn-kee-LEH-nee","at the shop"],["esikolweni","eh-see-kaw-LWEH-nee","at school"],["edolophini","eh-daw-law-PEE-nee","in town"]],"ex":[
+{"t":"note","tag":"The wrap you know","q":"Evenkileni — at the shop","body":"<p>Zone 6 gave you ekhitshini, endlwini. The same e-…-ini wrap covers the town: ivenkile becomes <b>evenkileni</b> — <i>at the shop</i>. The ending bends a little to fit each word — your ear will learn the shapes faster than any rule.</p>","eg":[["evenkileni","eh-vehn-kee-LEH-nee","at the shop"]]},
+{"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","ivenkile"],"a":0},
+{"t":"mc","q":"evenkileni means…","o":["at the shop","the shop","a big shop"],"a":0},
+{"t":"note","tag":"Two more","q":"Esikolweni, edolophini","body":"<p>Isikolo becomes <b>esikolweni</b> — <i>at school</i> — and idolophu becomes <b>edolophini</b> — <i>in town</i>. Say them until they feel like places, not puzzles.</p>","eg":[["esikolweni","eh-see-kaw-LWEH-nee","at school"],["edolophini","eh-daw-law-PEE-nee","in town"]]},
+{"t":"li","q":"Which one do you hear?","say":"esikolweni","o":["esikolweni","edolophini"],"a":0},
+{"t":"mc","q":"What does edolophini mean?","o":["in town","the town","to the taxi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni"],"a":0},
+{"t":"mc","q":"The e-…-ini wrap turns a place noun into…","o":["at or in that place","its plural","a question"],"a":0}
+]},
+{"id":"xh_t3_2","title":"Hearing the locatives","step":"recognize","meta":"At and in, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","esikolweni","edolophini"],"a":0},
+{"t":"mc","q":"What does esikolweni mean?","o":["at school","the school","in town"],"a":0},
+{"t":"li","q":"Plain or wrapped — which do you hear?","say":"esikolweni","o":["esikolweni","isikolo"],"a":0},
+{"t":"mc","q":"Which one means in town?","o":["edolophini","idolophu","evenkileni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni","esikolweni"],"a":0},
+{"t":"mc","q":"ivenkile is to evenkileni as ikhitshi is to…","o":["ekhitshini","ikhitshini","ekhitshi"],"a":0}
+]},
+{"id":"xh_t3_3","title":"Building the locatives","step":"build","meta":"Wrap the places","vocab":[],"ex":[
+{"t":"fill","q":"Complete: at the shop","s":"evenkile___","o":["ni","ne","na"],"a":0},
+{"t":"wb","q":"Build the word: at school","a":["esikolweni"],"pool":["esikolweni","isikolo","edolophini"]},
+{"t":"fill","q":"Complete: in town","s":"edolophi___","o":["ni","nu","na"],"a":0},
+{"t":"wb","q":"Build the word: at the shop","a":["evenkileni"],"pool":["evenkileni","ivenkile","esikolweni"]},
+{"t":"li","q":"Which one do you hear?","say":"esikolweni","o":["esikolweni","edolophini","evenkileni"],"a":0}
+]},
+{"id":"xh_t3_4","title":"Locatives in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the place to the wrapped form","pairs":[["ivenkile","evenkileni"],["isikolo","esikolweni"],["idolophu","edolophini"]]},
+{"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","esikolweni","evenkileni"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["evenkileni","at the shop"],["esikolweni","at school"],["edolophini","in town"]]},
+{"t":"mc","q":"Which set all means being AT a place?","o":["evenkileni, esikolweni, ekhitshini","ivenkile, isikolo, ikhitshi","ndiya, ndiza, ndihamba"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","edolophini","esikolweni"],"a":0}
+]},
+{"id":"xh_t3_5","title":"Checkpoint: the locatives","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does evenkileni mean?","o":["at the shop","the shop","at school"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni","esikolweni"],"a":0},
+{"t":"mc","q":"The wrapped form of isikolo is…","o":["esikolweni","esikoloni","isikolweni"],"a":0},
+{"t":"mc","q":"Which one means in town?","o":["edolophini","idolophu","endlwini"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","esikolweni","edolophini"],"a":0},
+{"t":"mc","q":"Review — andithandi means…","o":["I do not like it","I like it","I do not know"],"a":0}
+]},
+
+/* ---------- t4 · Riding the taxi ---------- */
+{"id":"xh_t4","title":"Riding the taxi","step":"learn","meta":"Ndiya edolophini — and how to stop","vocab":[["Ndiya edolophini","NDEE-yah eh-daw-law-PEE-nee","I am going to town"],["Ndihamba ngeteksi","ndee-HAHM-bah ngeh-TEHK-see","I go by taxi"],["Yima!","YEE-mah","stop!"],["irenki","ee-REHN-kee","taxi rank"]],"ex":[
+{"t":"note","tag":"Verb meets place","q":"Ndiya edolophini","body":"<p>Your going-verb and your wrapped places snap together: <b>Ndiya edolophini</b> — <i>I am going to town</i>. Answering Uya phi? is now easy: Ndiya esikolweni, ndiya evenkileni…</p>","eg":[["Ndiya edolophini","NDEE-yah eh-daw-law-PEE-nee","I am going to town"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya edolophini","o":["Ndiya edolophini","edolophini"],"a":0},
+{"t":"mc","q":"Ndiya edolophini means…","o":["I am going to town","I live in town","I come from town"],"a":0},
+{"t":"note","tag":"By taxi","q":"Nge- means by","body":"<p><b>Ndihamba ngeteksi</b> — <i>I go by taxi</i>. The little nge- is <i>by, with</i> — you met it on ngoMvulo, on Monday. Stick it on iteksi and you have transport.</p>","eg":[["Ndihamba ngeteksi","ndee-HAHM-bah ngeh-TEHK-see","I go by taxi"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndihamba ngeteksi","o":["Ndihamba ngeteksi","Ndiya edolophini"],"a":0},
+{"t":"mc","q":"The nge- in ngeteksi means…","o":["by","to","from"],"a":0},
+{"t":"note","tag":"Getting off","q":"Yima! and irenki","body":"<p><b>Yima!</b> — <i>stop!</i> — what you call when your corner comes (in Cape Town you will also hear an English Short left!). <b>Irenki</b> — <i>the taxi rank</i>, where every route begins.</p>","eg":[["Yima!","YEE-mah","stop!"],["irenki","ee-REHN-kee","taxi rank"]]},
+{"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","irenki"],"a":0},
+{"t":"mc","q":"When your corner comes, you call…","o":["Yima!","Molo!","Enkosi!"],"a":0}
+]},
+{"id":"xh_t4_2","title":"Hearing the ride","step":"recognize","meta":"Taxi talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"irenki","o":["irenki","iteksi","Yima!"],"a":0},
+{"t":"mc","q":"What does irenki mean?","o":["taxi rank","taxi","town"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya edolophini","o":["Ndiya edolophini","Ndihamba ngeteksi","edolophini"],"a":0},
+{"t":"mc","q":"Which one means I go by taxi?","o":["Ndihamba ngeteksi","Ndiya edolophini","Yima!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","irenki","ndiya"],"a":0},
+{"t":"mc","q":"Every route begins at…","o":["irenki","ivenkile","isikolo"],"a":0}
+]},
+{"id":"xh_t4_3","title":"Building the ride","step":"build","meta":"Taxi sentences","vocab":[],"ex":[
+{"t":"fill","q":"Complete: stop!","s":"Yi___!","o":["ma","mba","na"],"a":0},
+{"t":"wb","q":"Build: I am going to town","a":["ndiya","edolophini"],"pool":["ndiya","edolophini","ngeteksi"]},
+{"t":"fill","q":"Complete: taxi rank","s":"iren___","o":["ki","ke","ka"],"a":0},
+{"t":"wb","q":"Build: I go by taxi","a":["ndihamba","ngeteksi"],"pool":["ndihamba","ngeteksi","edolophini"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndihamba ngeteksi","o":["Ndihamba ngeteksi","Ndiya edolophini","Yima!"],"a":0}
+]},
+{"id":"xh_t4_4","title":"The ride in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndiya edolophini","I am going to town"],["Ndihamba ngeteksi","I go by taxi"]]},
+{"t":"li","q":"Which one do you hear?","say":"irenki","o":["irenki","Yima!","iteksi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yima!","stop!"],["irenki","taxi rank"]]},
+{"t":"mc","q":"Uya phi? — the natural answer shape is…","o":["Ndiya edolophini","Ndihamba ngeteksi","Yima!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya edolophini","o":["Ndiya edolophini","Ndihamba ngeteksi","irenki"],"a":0}
+]},
+{"id":"xh_t4_5","title":"Checkpoint: the ride","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Yima! mean?","o":["stop!","go!","wait here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndihamba ngeteksi","o":["Ndihamba ngeteksi","Ndiya edolophini","irenki"],"a":0},
+{"t":"mc","q":"Which one means taxi rank?","o":["irenki","iteksi","indlela"],"a":0},
+{"t":"mc","q":"Ndihamba ngeteksi — the nge- carries the meaning…","o":["by taxi","to the taxi","in the taxi rank"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","ndiya","irenki"],"a":0},
+{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","holiday"],"a":0}
+]},
+
+/* ---------- t5 · Near and far ---------- */
+{"id":"xh_t5","title":"Near and far","step":"learn","meta":"Kufuphi, kude — is it walkable?","vocab":[["kufuphi","koo-FOO-pee","near"],["kude","KOO-deh","far"],["Ikufuphi?","ee-koo-FOO-pee","is it near?"],["Ivenkile ikufuphi","ee-vehn-KEE-leh ee-koo-FOO-pee","the shop is near"]],"ex":[
+{"t":"note","tag":"The walkable question","q":"Kufuphi and kude","body":"<p><b>Kufuphi</b> — <i>near</i>. <b>Kude</b> — <i>far</i>. The pair that decides whether you walk or wait at irenki.</p>","eg":[["kufuphi","koo-FOO-pee","near"],["kude","KOO-deh","far"]]},
+{"t":"li","q":"Near or far — which do you hear?","say":"kufuphi","o":["kufuphi","kude"],"a":0},
+{"t":"mc","q":"What does kude mean?","o":["far","near","here"],"a":0},
+{"t":"note","tag":"Asking it","q":"Ikufuphi?","body":"<p>Xhosa asks yes-no questions with the voice alone — no extra word. <b>Ikufuphi?</b> — <i>is it near?</i> — is just it-is-near said with a rising tune. Say it flat and you have the answer instead.</p>","eg":[["Ikufuphi?","ee-koo-FOO-pee","is it near?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ikufuphi?","o":["Ikufuphi?","kude"],"a":0},
+{"t":"mc","q":"Xhosa turns a statement into a yes-no question with…","o":["the voice alone","a question word","word order"],"a":0},
+{"t":"note","tag":"Saying it of something","q":"Ivenkile ikufuphi","body":"<p>Name the thing, then say how it sits: <b>Ivenkile ikufuphi</b> — <i>the shop is near</i>. The little i- in front of kufuphi points back at ivenkile, the way i- did in Iphi imoto?</p>","eg":[["Ivenkile ikufuphi","ee-vehn-KEE-leh ee-koo-FOO-pee","the shop is near"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?"],"a":0},
+{"t":"mc","q":"Ivenkile ikufuphi means…","o":["the shop is near","the shop is far","where is the shop?"],"a":0}
+]},
+{"id":"xh_t5_2","title":"Hearing the distance","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"kude","o":["kude","kufuphi","Ikufuphi?"],"a":0},
+{"t":"mc","q":"What does kufuphi mean?","o":["near","far","fast"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ikufuphi?","o":["Ikufuphi?","kufuphi","kude"],"a":0},
+{"t":"mc","q":"Which one means far?","o":["kude","kufuphi","phaya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?","kufuphi"],"a":0},
+{"t":"mc","q":"Idolophu ikude means the town is…","o":["far","near","closed"],"a":0}
+]},
+{"id":"xh_t5_3","title":"Building the distance","step":"build","meta":"Near-and-far sentences","vocab":[],"ex":[
+{"t":"fill","q":"Complete: near","s":"kufu___i","o":["ph","p","f"],"a":0},
+{"t":"wb","q":"Build: the shop is near","a":["ivenkile","ikufuphi"],"pool":["ivenkile","ikufuphi","kude"]},
+{"t":"fill","q":"Complete: far","s":"ku___","o":["de","da","du"],"a":0},
+{"t":"wb","q":"Build: is it near?","a":["Ikufuphi?"],"pool":["Ikufuphi?","kude","kufuphi"]},
+{"t":"li","q":"Which one do you hear?","say":"kufuphi","o":["kufuphi","kude","Ikufuphi?"],"a":0}
+]},
+{"id":"xh_t5_4","title":"The distance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kufuphi","near"],["kude","far"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?","kude"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ikufuphi?","is it near?"],["Ivenkile ikufuphi","the shop is near"]]},
+{"t":"mc","q":"If idolophu ikude, you probably need…","o":["iteksi","icephe","isitulo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kude","o":["kude","kufuphi","Ivenkile ikufuphi"],"a":0}
+]},
+{"id":"xh_t5_5","title":"Checkpoint: the distance","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Ikufuphi? ask?","o":["is it near?","is it far?","is it open?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kufuphi","o":["kufuphi","kude","Ikufuphi?"],"a":0},
+{"t":"mc","q":"Which one means far?","o":["kude","kufuphi","apha"],"a":0},
+{"t":"mc","q":"Ivenkile ikufuphi — the i- before kufuphi points back at…","o":["ivenkile","the speaker","the road"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ikufuphi?","o":["Ikufuphi?","Ivenkile ikufuphi","kude"],"a":0},
+{"t":"mc","q":"Review — nditya means…","o":["I eat","I drink","I cook"],"a":0}
+]},
+
+/* ---------- t6 · Asking the way ---------- */
+{"id":"xh_t6","title":"Asking the way","step":"learn","meta":"Lost — and getting found","vocab":[["Ndilahlekile","ndee-lah-hleh-KEE-leh","I am lost"],["uncedo","oon-CEH-daw","help"],["Ndicela uncedo","ndee-CEH-lah oon-CEH-daw","please help me"],["Uyayazi indlela?","oo-yah-YAH-zee een-DLEH-lah","do you know the way?"]],"ex":[
+{"t":"note","tag":"Say it early","q":"Ndilahlekile — I am lost","body":"<p><b>Ndilahlekile</b> — <i>I am lost</i> — the sentence to say sooner rather than later. Nobody in the Eastern Cape lets a lost stranger stay lost.</p>","eg":[["Ndilahlekile","ndee-lah-hleh-KEE-leh","I am lost"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","ndihamba"],"a":0},
+{"t":"mc","q":"Ndilahlekile means…","o":["I am lost","I am late","I am tired"],"a":0},
+{"t":"note","tag":"The magic pair","q":"Ndicela uncedo","body":"<p><b>Uncedo</b> — <i>help</i>. With your old friend ndicela: <b>Ndicela uncedo</b> — <i>please help me</i>, literally I-request help. Two clicks, and doors open.</p>","eg":[["uncedo","oon-CEH-daw","help"],["Ndicela uncedo","ndee-CEH-lah oon-CEH-daw","please help me"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","uncedo"],"a":0},
+{"t":"mc","q":"What does uncedo mean?","o":["help","way","time"],"a":0},
+{"t":"note","tag":"The full question","q":"Uyayazi indlela?","body":"<p><b>Uyayazi indlela?</b> — <i>do you know the way?</i> U- you, -yazi know it. Point at where you are trying to go, and the answer usually comes with a walked escort.</p>","eg":[["Uyayazi indlela?","oo-yah-YAH-zee een-DLEH-lah","do you know the way?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndilahlekile"],"a":0},
+{"t":"mc","q":"Uyayazi indlela? asks…","o":["do you know the way?","is the road far?","where is the road?"],"a":0}
+]},
+{"id":"xh_t6_2","title":"Hearing the rescue","step":"recognize","meta":"Lost-and-found by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"uncedo","o":["uncedo","Ndicela uncedo","indlela"],"a":0},
+{"t":"mc","q":"What does Ndicela uncedo mean?","o":["please help me","I am lost","excuse me"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","Uyayazi indlela?","uncedo"],"a":0},
+{"t":"mc","q":"Which one means do you know the way?","o":["Uyayazi indlela?","Ndilahlekile","Uya phi?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndicela uncedo","Ndilahlekile"],"a":0},
+{"t":"mc","q":"The clicks in Ndicela uncedo are both…","o":["c","x","q"],"a":0}
+]},
+{"id":"xh_t6_3","title":"Building the rescue","step":"build","meta":"The lost-person toolkit","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am lost","s":"Ndilahleki___","o":["le","la","li"],"a":0},
+{"t":"wb","q":"Build: please help me","a":["ndicela","uncedo"],"pool":["ndicela","uncedo","indlela"]},
+{"t":"fill","q":"Complete: help","s":"un___do","o":["ce","qe","xe"],"a":0},
+{"t":"wb","q":"Build: do you know the way?","a":["uyayazi","indlela?"],"pool":["uyayazi","indlela?","uncedo"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Ndilahlekile","Uyayazi indlela?"],"a":0}
+]},
+{"id":"xh_t6_4","title":"The rescue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndilahlekile","I am lost"],["uncedo","help"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndilahlekile","Ndicela uncedo"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndicela uncedo","please help me"],["Uyayazi indlela?","do you know the way?"]]},
+{"t":"mc","q":"Lost in town, your best opening line is…","o":["Uxolo, ndilahlekile","Yima!","Uya phi?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","uncedo","Uyayazi indlela?"],"a":0}
+]},
+{"id":"xh_t6_5","title":"Checkpoint: the rescue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Ndilahlekile mean?","o":["I am lost","I am here","help me"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Uyayazi indlela?","Ndilahlekile"],"a":0},
+{"t":"mc","q":"Which one means help?","o":["uncedo","indlela","uxolo"],"a":0},
+{"t":"mc","q":"Uyayazi indlela? — the -yazi part means…","o":["know","go","see"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"uncedo","o":["uncedo","Ndicela uncedo","indlela"],"a":0},
+{"t":"mc","q":"Review — which one means chicken?","o":["inkukhu","intlanzi","iqanda"],"a":0}
+]},
+
+/* ---------- t7 · On the way ---------- */
+{"id":"xh_t7","title":"On the way","step":"learn","meta":"Si- means we — and the zone comes together","vocab":[["Sihamba ngoku","see-HAHM-bah NGAW-koo","we are leaving now"],["Ndiya esikolweni","NDEE-yah eh-see-kaw-LWEH-nee","I am going to school"],["Ndiza kusasa","NDEE-zah koo-SAH-sah","I am coming in the morning"]],"ex":[
+{"t":"note","tag":"A new person","q":"Si- means we","body":"<p>Ndi- is <i>I</i>, u- is <i>you</i> — meet <b>si-</b>, <i>we</i>. <b>Sihamba ngoku</b> — <i>we are leaving now</i> — the sentence that ends every visit, said twice and meant the second time.</p>","eg":[["Sihamba ngoku","see-HAHM-bah NGAW-koo","we are leaving now"]]},
+{"t":"li","q":"Which one do you hear?","say":"Sihamba ngoku","o":["Sihamba ngoku","ndihamba"],"a":0},
+{"t":"mc","q":"The si- in Sihamba ngoku means…","o":["we","I","you"],"a":0},
+{"t":"note","tag":"Your day in sentences","q":"Going and coming, placed and timed","body":"<p>Everything this zone taught, in two sentences you will actually say: <b>Ndiya esikolweni</b> — <i>I am going to school</i> — and <b>Ndiza kusasa</b> — <i>I am coming in the morning</i>. Verb, place, time: that is most of daily Xhosa.</p>","eg":[["Ndiya esikolweni","NDEE-yah eh-see-kaw-LWEH-nee","I am going to school"],["Ndiza kusasa","NDEE-zah koo-SAH-sah","I am coming in the morning"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Ndiza kusasa"],"a":0},
+{"t":"mc","q":"Ndiza kusasa means…","o":["I am coming in the morning","I am going tonight","we are leaving now"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Your three subject prefixes so far…","o":["ndi-, u-, si-","ndi-, i-, e-","a-, i-, u-"],"a":0}
+]},
+{"id":"xh_t7_2","title":"Hearing the sentences","step":"recognize","meta":"Full sentences by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Sihamba ngoku","Ndiza kusasa"],"a":0},
+{"t":"mc","q":"What does Sihamba ngoku mean?","o":["we are leaving now","I am walking home","they left already"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Ndiya esikolweni","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Which one means I am going to school?","o":["Ndiya esikolweni","Ndiza kusasa","Ndiya edolophini"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Sihamba ngoku","o":["Sihamba ngoku","Ndiza kusasa","Ndiya esikolweni"],"a":0},
+{"t":"mc","q":"Verb, place, time — Ndiya esikolweni kusasa means…","o":["I go to school in the morning","I went to school yesterday","we go to town at night"],"a":0}
+]},
+{"id":"xh_t7_3","title":"Building the sentences","step":"build","meta":"Assemble real Xhosa","vocab":[],"ex":[
+{"t":"fill","q":"Complete: WE are leaving now","s":"___hamba ngoku","o":["Si","Ndi","U"],"a":0},
+{"t":"wb","q":"Build: I am going to school","a":["ndiya","esikolweni"],"pool":["ndiya","esikolweni","kusasa"]},
+{"t":"wb","q":"Build: I am coming in the morning","a":["ndiza","kusasa"],"pool":["ndiza","kusasa","ngoku"]},
+{"t":"wb","q":"Build: we are leaving now","a":["sihamba","ngoku"],"pool":["sihamba","ngoku","ndiya"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Ndiza kusasa","Sihamba ngoku"],"a":0}
+]},
+{"id":"xh_t7_4","title":"The zone in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Sihamba ngoku","we are leaving now"],["Ndiya esikolweni","I am going to school"],["Ndiza kusasa","I am coming in the morning"]]},
+{"t":"li","q":"Which one do you hear?","say":"Sihamba ngoku","o":["Sihamba ngoku","Ndiya esikolweni","Ndiza kusasa"],"a":0},
+{"t":"mc","q":"Uya phi? — Ndiya evenkileni. The person is heading…","o":["to the shop","to school","to the rank"],"a":0},
+{"t":"mc","q":"To say WE go, si- replaces…","o":["ndi-","-ya","nge-"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Sihamba ngoku","Ndiya esikolweni"],"a":0}
+]},
+{"id":"xh_t7_5","title":"Checkpoint: Zone 7 complete","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Sihamba ngoku means…","o":["we are leaving now","I am leaving now","they are gone"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Ndiza kusasa","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Review — which one means taxi rank?","o":["irenki","iteksi","indlela"],"a":0},
+{"t":"mc","q":"Review — which one means far?","o":["kude","kufuphi","phaya"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Ndilahlekile","Uyayazi indlela?"],"a":0},
+{"t":"mc","q":"Review — evenkileni means…","o":["at the shop","the shop","at school"],"a":0},
+{"t":"mc","q":"Review — which one means I rest?","o":["ndiphumla","ndilala","ndivuka"],"a":0}
 ]}
 ];
 
@@ -1851,9 +2151,11 @@ const XH_UNITS=[
 {"n":5,"t":"Food & drink","d":"Ukutya nokusela — the table and the braai","lessons":["xh_d1","xh_d1_2","xh_d1_3","xh_d1_4","xh_d1_5","xh_d2","xh_d2_2","xh_d2_3","xh_d2_4","xh_d2_5","xh_d3","xh_d3_2","xh_d3_3","xh_d3_4","xh_d3_5","xh_d4","xh_d4_2","xh_d4_3","xh_d4_4","xh_d4_5","xh_d5","xh_d5_2","xh_d5_3","xh_d5_4","xh_d5_5","xh_d6","xh_d6_2","xh_d6_3","xh_d6_4","xh_d6_5","xh_d7","xh_d7_2","xh_d7_3","xh_d7_4","xh_d7_5"]}
 ,
 {"n":6,"t":"Around the home","d":"Rooms, furniture, kitchen tools — and your first full sentences","lessons":["xh_h1","xh_h1_2","xh_h1_3","xh_h1_4","xh_h1_5","xh_h2","xh_h2_2","xh_h2_3","xh_h2_4","xh_h2_5","xh_h3","xh_h3_2","xh_h3_3","xh_h3_4","xh_h3_5","xh_h4","xh_h4_2","xh_h4_3","xh_h4_4","xh_h4_5","xh_h5","xh_h5_2","xh_h5_3","xh_h5_4","xh_h5_5","xh_h6","xh_h6_2","xh_h6_3","xh_h6_4","xh_h6_5","xh_h7","xh_h7_2","xh_h7_3","xh_h7_4","xh_h7_5"]}
+,
+{"n":7,"t":"Getting around","d":"Places, going and coming, the taxi — and asking the way","lessons":["xh_t1","xh_t1_2","xh_t1_3","xh_t1_4","xh_t1_5","xh_t2","xh_t2_2","xh_t2_3","xh_t2_4","xh_t2_5","xh_t3","xh_t3_2","xh_t3_3","xh_t3_4","xh_t3_5","xh_t4","xh_t4_2","xh_t4_3","xh_t4_4","xh_t4_5","xh_t5","xh_t5_2","xh_t5_3","xh_t5_4","xh_t5_5","xh_t6","xh_t6_2","xh_t6_3","xh_t6_4","xh_t6_5","xh_t7","xh_t7_2","xh_t7_3","xh_t7_4","xh_t7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-"};
 
 const XH_SRS_SEED=[];
 
