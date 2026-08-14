@@ -253,19 +253,19 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       namhlanje, p7 Uza kuya phi?/Ndiza kuya edolophini (Uphi→Uya
       phi→Uza kuya phi arc). Checker caught 1 (kushushu distractor),
       fixed.
-- [ ] Zone 12 (Conversation & community): c1 feelings (ndonwabile I am
-      happy, ndidiniwe I am tired, ndiyoyika I am afraid), c2
-      invitations (Masihambe! let us go — ma- hortative, Yiza sidle?
-      keep simple: Masitye let us eat, Masihambe), c3 ubuntu &
-      community (ubuntu, uluntu community, ukunceda to help —
-      umntu ngumntu ngabantu proverb), c4 opinions (ndicinga I
-      think, ndiyavuma I agree, andivumi I disagree), c5 storytelling
-      connectors (kuqala first, emva koko after that, ekugqibeleni
-      finally), c6 the learner's toolkit (Ndisafunda I am still
-      learning, Thetha kancinci speak slowly recycle, Utsho ukuthini?
-      what do you mean?), c7 farewell + course wrap (Ndiyabulela I
-      give thanks, Sobonana we will see each other, Hambani kakuhle
-      plural goodbye).
+- [x] Zone 12 (Conversation and community) COMPLETE — **COURSE
+      COMPLETE: 420 lessons / 2588 exercises / 518 clips, 12 zones ×
+      7 topics × 5 lessons.** c1 ndonwabile/ndidiniwe/ndiyoyika
+      (-ile/-iwe stative ties), c2 ma-…-e hortative (Masihambe!/
+      Masitye/Masithethe isiXhosa), c3 ubuntu/uluntu/ukunceda +
+      umntu ngumntu ngabantu proverb wb, c4 ndicinga/ndiyavuma/
+      andivumi (final a-…-i appearance; ndicinga/ndicela click-pair
+      li), c5 kuqala/emva koko/ekugqibeleni, c6 learner toolkit
+      (Ndisafunda -sa- still, Thetha kancinci, Uthetha ukuthini?),
+      c7 Ndiyabulela (deeper-than-enkosi note) + Hambani kakuhle
+      (-ni plural imperative) + whole-journey checkpoint. Checker
+      caught 1 (ndiyavuma distractor), fixed. Browser-verified:
+      12 units render, final checkpoint plays.
 - [ ] Post-course: checkpoint-review orphan pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,

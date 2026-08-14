@@ -3335,6 +3335,306 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Bendigula","Ubuphi izolo?"],"a":0},
 {"t":"mc","q":"Review — which one means sun?","o":["ilanga","umoya","imozulu"],"a":0},
 {"t":"mc","q":"Review — I bought bread yesterday…","o":["Ndithenge isonka izolo","Ndiza kuthenga isonka","Ndithenga isonka"],"a":0}
+]},
+
+/* ---------- c1 · How I feel ---------- */
+{"id":"xh_c1","title":"How I feel","step":"learn","meta":"Happy, tired, afraid — the honest three","vocab":[["ndonwabile","ndaw-nwah-BEE-leh","I am happy"],["ndidiniwe","ndee-dee-NEE-weh","I am tired"],["ndiyoyika","ndee-yaw-YEE-kah","I am afraid"]],"ex":[
+{"t":"note","tag":"The good one","q":"Ndonwabile","body":"<p><b>Ndonwabile</b> — <i>I am happy</i>. Hear the -ile? Like ndilambile, it is a state you have arrived in: I-have-become-glad, and still am.</p>","eg":[["ndonwabile","ndaw-nwah-BEE-leh","I am happy"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndilambile"],"a":0},
+{"t":"mc","q":"What does ndonwabile mean?","o":["I am happy","I am tired","I am hungry"],"a":0},
+{"t":"note","tag":"The end of the day","q":"Ndidiniwe","body":"<p><b>Ndidiniwe</b> — <i>I am tired</i> — the -iwe ending is -ile&rsquo;s cousin, same arrived-state idea. The word for the taxi home after a long day of ukuphangela.</p>","eg":[["ndidiniwe","ndee-dee-NEE-weh","I am tired"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndidiniwe","o":["ndidiniwe","ndonwabile"],"a":0},
+{"t":"mc","q":"ndidiniwe means…","o":["I am tired","I am happy","I am sick"],"a":0},
+{"t":"note","tag":"The honest one","q":"Ndiyoyika","body":"<p><b>Ndiyoyika</b> — <i>I am afraid</i>. Saying it out loud is half the cure; the answer that usually comes back is Ungoyiki — do not be afraid.</p>","eg":[["ndiyoyika","ndee-yaw-YEE-kah","I am afraid"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndidiniwe"],"a":0},
+{"t":"mc","q":"Which one means I am afraid?","o":["ndiyoyika","ndonwabile","ndidiniwe"],"a":0}
+]},
+{"id":"xh_c1_2","title":"Hearing the feelings","step":"recognize","meta":"States of heart by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndidiniwe","ndiyoyika"],"a":0},
+{"t":"mc","q":"What does ndiyoyika mean?","o":["I am afraid","I am angry","I am tired"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndidiniwe","o":["ndidiniwe","ndiyoyika","ndonwabile"],"a":0},
+{"t":"mc","q":"Which one means I am happy?","o":["ndonwabile","ndidiniwe","ndiyaphila"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndonwabile","ndidiniwe"],"a":0},
+{"t":"mc","q":"The -iwe of ndidiniwe works like…","o":["the -ile of ndilambile","the -isa of thengisa","the ku- of kushushu"],"a":0}
+]},
+{"id":"xh_c1_3","title":"Building the feelings","step":"build","meta":"Say the state","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am happy","s":"Ndonwabi___","o":["le","we","la"],"a":0},
+{"t":"wb","q":"Build the word: I am tired","a":["ndidiniwe"],"pool":["ndidiniwe","ndonwabile","ndiyoyika"]},
+{"t":"fill","q":"Complete: I am afraid","s":"Ndiyoyi___","o":["ka","kha","qa"],"a":0},
+{"t":"wb","q":"Build the word: I am happy","a":["ndonwabile"],"pool":["ndonwabile","ndidiniwe","ndilambile"]},
+{"t":"li","q":"Which one do you hear?","say":"ndidiniwe","o":["ndidiniwe","ndonwabile","ndiyoyika"],"a":0}
+]},
+{"id":"xh_c1_4","title":"The feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndonwabile","I am happy"],["ndidiniwe","I am tired"],["ndiyoyika","I am afraid"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndidiniwe","ndonwabile"],"a":0},
+{"t":"match","q":"Match the day to the feeling","pairs":[["iholide","ndonwabile"],["umsebenzi omninzi","ndidiniwe"]]},
+{"t":"mc","q":"After a long day of ukuphangela…","o":["ndidiniwe","ndonwabile","ndiyoyika"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndiyoyika","ndidiniwe"],"a":0}
+]},
+{"id":"xh_c1_5","title":"Checkpoint: the feelings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndidiniwe mean?","o":["I am tired","I am happy","I am afraid"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndidiniwe","ndilambile"],"a":0},
+{"t":"mc","q":"Which one means I am afraid?","o":["ndiyoyika","ndiyagula","ndidiniwe"],"a":0},
+{"t":"mc","q":"Uziva njani? — on a good day…","o":["ndonwabile","ndidiniwe","ndiyoyika"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndonwabile","ndiyagula"],"a":0},
+{"t":"mc","q":"Review — which one means medicine?","o":["amayeza","amanzi","amafutha"],"a":0}
+]},
+
+/* ---------- c2 · Let us! ---------- */
+{"id":"xh_c2","title":"Let us!","step":"learn","meta":"Masihambe — the inviting ma-","vocab":[["Masihambe!","mah-see-HAHM-beh","let us go!"],["Masitye","mah-SEE-tyeh","let us eat"],["Masithethe isiXhosa","mah-see-TEH-teh ee-see-XAW-sah","let us speak Xhosa"]],"ex":[
+{"t":"note","tag":"The friendliest grammar","q":"Ma- + si- + -e","body":"<p>Wrap ma- around si- (we) and end the verb in -e, and a command becomes an invitation: <b>Masihambe!</b> — <i>let us go!</i> Nobody is ordered; everybody is included.</p>","eg":[["Masihambe!","mah-see-HAHM-beh","let us go!"]]},
+{"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"Masihambe! means…","o":["let us go!","go away!","we went"],"a":0},
+{"t":"note","tag":"The best invitation","q":"Masitye","body":"<p><b>Masitye</b> — <i>let us eat</i> — the sentence that follows Kulungile, ukutya kulungile: the food is ready. You will never say it alone; eating alone is un-Xhosa.</p>","eg":[["Masitye","mah-SEE-tyeh","let us eat"]]},
+{"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masihambe!"],"a":0},
+{"t":"mc","q":"Masitye means…","o":["let us eat","let us go","let us cook"],"a":0},
+{"t":"note","tag":"This course&rsquo;s motto","q":"Masithethe isiXhosa","body":"<p><b>Masithethe isiXhosa</b> — <i>let us speak Xhosa</i>. Say it to a Xhosa friend and watch their face. It is the single best sentence this course can give you.</p>","eg":[["Masithethe isiXhosa","mah-see-TEH-teh ee-see-XAW-sah","let us speak Xhosa"]]},
+{"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masitye"],"a":0},
+{"t":"mc","q":"Masithethe isiXhosa means…","o":["let us speak Xhosa","I speak Xhosa","speak Xhosa!"],"a":0}
+]},
+{"id":"xh_c2_2","title":"Hearing the invitations","step":"recognize","meta":"Ma- by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masihambe!","Masithethe isiXhosa"],"a":0},
+{"t":"mc","q":"What does Masihambe! mean?","o":["let us go!","come here!","we are leaving"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masitye","Masihambe!"],"a":0},
+{"t":"mc","q":"Which one means let us eat?","o":["Masitye","Masihambe!","Sela amayeza"],"a":0},
+{"t":"li","q":"Invitation or statement — which do you hear?","say":"Masihambe!","o":["Masihambe!","Sihamba ngoku"],"a":0},
+{"t":"mc","q":"The ma- at the front turns a command into…","o":["an invitation","a question","a refusal"],"a":0}
+]},
+{"id":"xh_c2_3","title":"Building the invitations","step":"build","meta":"Include everybody","vocab":[],"ex":[
+{"t":"fill","q":"Complete: let us go!","s":"___sihambe!","o":["Ma","Si","Ndi"],"a":0},
+{"t":"wb","q":"Build: let us speak Xhosa","a":["masithethe","isiXhosa"],"pool":["masithethe","isiXhosa","masitye"]},
+{"t":"fill","q":"Complete: let us eat","s":"Masit___","o":["ye","ya","yo"],"a":0},
+{"t":"wb","q":"Build the word: let us go","a":["masihambe!"],"pool":["masihambe!","masitye","sihamba"]},
+{"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masithethe isiXhosa","Masihambe!"],"a":0}
+]},
+{"id":"xh_c2_4","title":"The invitations in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Masihambe!","let us go!"],["Masitye","let us eat"],["Masithethe isiXhosa","let us speak Xhosa"]]},
+{"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Masitye","Masithethe isiXhosa"],"a":0},
+{"t":"match","q":"Match the order to the invitation","pairs":[["Yiza apha","Masihambe!"],["Sela","Masitye"]]},
+{"t":"mc","q":"Ukutya kulungile! The next word is…","o":["Masitye","Masihambe!","Yima!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masihambe!","Masitye"],"a":0}
+]},
+{"id":"xh_c2_5","title":"Checkpoint: the invitations","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Masithethe isiXhosa mean?","o":["let us speak Xhosa","I am learning Xhosa","speak Xhosa slowly"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Masithethe isiXhosa","Masitye"],"a":0},
+{"t":"mc","q":"Which one means let us eat?","o":["Masitye","Masihambe!","Nditya"],"a":0},
+{"t":"mc","q":"The let-us shape is…","o":["ma- + si- + verb ending in -e","uku- + verb","bare verb + -ni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masihambe!","Masithethe isiXhosa"],"a":0},
+{"t":"mc","q":"Review — which one means it hurts?","o":["kubuhlungu","ubuhlungu","kuyabanda"],"a":0}
+]},
+
+/* ---------- c3 · Ubuntu ---------- */
+{"id":"xh_c3","title":"Ubuntu","step":"learn","meta":"The word the world borrowed","vocab":[["ubuntu","oo-BOON-too","humanity"],["uluntu","oo-LOON-too","community"],["ukunceda","oo-koon-CEH-dah","to help"]],"ex":[
+{"t":"note","tag":"The famous one","q":"Ubuntu","body":"<p><b>Ubuntu</b> — <i>humanity, human-ness</i> — the ubu- of states wrapped around -ntu, the human root of umntu and abantu. The proverb that carries it: umntu ngumntu ngabantu — <i>a person is a person through other people</i>.</p>","eg":[["ubuntu","oo-BOON-too","humanity"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","abantu"],"a":0},
+{"t":"mc","q":"umntu ngumntu ngabantu says a person is a person…","o":["through other people","through hard work","through language"],"a":0},
+{"t":"note","tag":"The people around you","q":"Uluntu","body":"<p><b>Uluntu</b> — <i>the community</i> — the same -ntu root wearing ulu-. Ubuntu is the spirit; uluntu is the people it lives among.</p>","eg":[["uluntu","oo-LOON-too","community"]]},
+{"t":"li","q":"Which one do you hear?","say":"uluntu","o":["uluntu","ubuntu"],"a":0},
+{"t":"mc","q":"What does uluntu mean?","o":["community","humanity","family"],"a":0},
+{"t":"note","tag":"Ubuntu, conjugated","q":"Ukunceda","body":"<p><b>Ukunceda</b> — <i>to help</i> — the verb inside your Ndicela uncedo. Ndiyakunceda: I will help you. It is ubuntu with its sleeves rolled up.</p>","eg":[["ukunceda","oo-koon-CEH-dah","to help"]]},
+{"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu"],"a":0},
+{"t":"mc","q":"ukunceda means…","o":["to help","help (the thing)","please"],"a":0}
+]},
+{"id":"xh_c3_2","title":"Hearing the -ntu words","step":"recognize","meta":"The human root by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"uluntu","o":["uluntu","ubuntu","ukunceda"],"a":0},
+{"t":"mc","q":"What does ubuntu mean?","o":["humanity","community","kindness only"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu","ubuntu"],"a":0},
+{"t":"mc","q":"Which one means community?","o":["uluntu","ubuntu","abantu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","uluntu","umntu"],"a":0},
+{"t":"mc","q":"The -ntu root also lives in…","o":["umntu and abantu","imali and ixabiso","ilanga and umoya"],"a":0}
+]},
+{"id":"xh_c3_3","title":"Building the -ntu words","step":"build","meta":"One root, many words","vocab":[],"ex":[
+{"t":"fill","q":"Complete: humanity","s":"ubu___u","o":["nt","nd","th"],"a":0},
+{"t":"wb","q":"Build the word: to help","a":["ukunceda"],"pool":["ukunceda","uncedo","uluntu"]},
+{"t":"fill","q":"Complete: community","s":"___ntu","o":["ulu","ubu","aba"],"a":0},
+{"t":"wb","q":"Build the proverb: a person is a person through people","a":["umntu","ngumntu","ngabantu"],"pool":["umntu","ngumntu","ngabantu","ubuntu"]},
+{"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","ukunceda","uluntu"],"a":0}
+]},
+{"id":"xh_c3_4","title":"The -ntu words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ubuntu","humanity"],["uluntu","community"],["ukunceda","to help"]]},
+{"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","ubuntu","uluntu"],"a":0},
+{"t":"match","q":"Match the -ntu family","pairs":[["umntu","person"],["abantu","people"],["ubuntu","humanity"]]},
+{"t":"mc","q":"Ndicela uncedo asks for help; ukunceda is…","o":["the verb to help","the helper","a thank-you"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"uluntu","o":["uluntu","ukunceda","ubuntu"],"a":0}
+]},
+{"id":"xh_c3_5","title":"Checkpoint: ubuntu","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ukunceda mean?","o":["to help","to share","to greet"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","uluntu","abantu"],"a":0},
+{"t":"mc","q":"Which one means community?","o":["uluntu","ubuntu","umzi"],"a":0},
+{"t":"mc","q":"ubuntu is built from ubu- plus the root of…","o":["umntu","indlu","ukutya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu","ubuntu"],"a":0},
+{"t":"mc","q":"Review — which one means nurse?","o":["unesi","ugqirha","utitshala"],"a":0}
+]},
+
+/* ---------- c4 · What I think ---------- */
+{"id":"xh_c4","title":"What I think","step":"learn","meta":"Think, agree, disagree — politely","vocab":[["ndicinga","ndee-CEEN-gah","I think"],["ndiyavuma","ndee-yah-VOO-mah","I agree"],["andivumi","ahn-dee-VOO-mee","I disagree"]],"ex":[
+{"t":"note","tag":"Opening an opinion","q":"Ndicinga","body":"<p><b>Ndicinga</b> — <i>I think</i> — with the dental c click. Ndicinga ukuba… — I think that… — is how careful opinions begin.</p>","eg":[["ndicinga","ndee-CEEN-gah","I think"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndicinga","o":["ndicinga","ndicela"],"a":0},
+{"t":"mc","q":"What does ndicinga mean?","o":["I think","I agree","I know"],"a":0},
+{"t":"note","tag":"Yes and no, grown up","q":"Ndiyavuma, andivumi","body":"<p><b>Ndiyavuma</b> — <i>I agree</i> — vuma with its lonely-verb -ya-. Wrap the negative around it and you disagree without a fight: <b>andivumi</b>. The a-…-i wrap&rsquo;s final appearance, and its most useful.</p>","eg":[["ndiyavuma","ndee-yah-VOO-mah","I agree"],["andivumi","ahn-dee-VOO-mee","I disagree"]]},
+{"t":"li","q":"Agree or disagree — which do you hear?","say":"ndiyavuma","o":["ndiyavuma","andivumi"],"a":0},
+{"t":"mc","q":"andivumi means…","o":["I disagree","I agree","I do not know"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndicinga"],"a":0},
+{"t":"mc","q":"Vuma also means to sing along — so ndiyavuma is literally…","o":["I am singing the same song","I surrender","I am loud"],"a":0}
+]},
+{"id":"xh_c4_2","title":"Hearing the opinions","step":"recognize","meta":"Debate by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","ndicinga","andivumi"],"a":0},
+{"t":"mc","q":"What does ndiyavuma mean?","o":["I agree","I think","I disagree"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndicinga","o":["ndicinga","andivumi","ndiyavuma"],"a":0},
+{"t":"mc","q":"Which one means I disagree?","o":["andivumi","ndiyavuma","andiqondi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndiyavuma","ndicinga"],"a":0},
+{"t":"mc","q":"The click in ndicinga is…","o":["c","q","x"],"a":0}
+]},
+{"id":"xh_c4_3","title":"Building the opinions","step":"build","meta":"Take a side","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I think","s":"Ndi___nga","o":["ci","qi","xi"],"a":0},
+{"t":"wb","q":"Build the word: I agree","a":["ndiyavuma"],"pool":["ndiyavuma","andivumi","ndicinga"]},
+{"t":"fill","q":"Complete: I disagree","s":"___divumi","o":["an","ndi","uya"],"a":0},
+{"t":"wb","q":"Build the word: I think","a":["ndicinga"],"pool":["ndicinga","ndiyavuma","andivumi"]},
+{"t":"li","q":"Which one do you hear?","say":"ndicinga","o":["ndicinga","ndiyavuma","andivumi"],"a":0}
+]},
+{"id":"xh_c4_4","title":"The opinions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndicinga","I think"],["ndiyavuma","I agree"],["andivumi","I disagree"]]},
+{"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndicinga","ndiyavuma"],"a":0},
+{"t":"match","q":"Match the wrap to its word","pairs":[["a-…-i","andivumi"],["-ya-","ndiyavuma"]]},
+{"t":"mc","q":"Iyadura! — if you think it is fair, you answer…","o":["andivumi","ndiyavuma","yima"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","andivumi","ndicinga"],"a":0}
+]},
+{"id":"xh_c4_5","title":"Checkpoint: the opinions","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does andivumi mean?","o":["I disagree","I agree","I forget"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","ndicinga","andivumi"],"a":0},
+{"t":"mc","q":"Which one means I think?","o":["ndicinga","ndiyavuma","ndiyazi"],"a":0},
+{"t":"mc","q":"andivumi wears the same wrap as…","o":["andithandi and andisebenzi","ndiyavuma and ndiyasebenza","masihambe and masitye"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndiyavuma","andinayo"],"a":0},
+{"t":"mc","q":"Review — the plural of isandla is…","o":["izandla","amandla","iisandla"],"a":0}
+]},
+
+/* ---------- c5 · Telling it in order ---------- */
+{"id":"xh_c5","title":"Telling it in order","step":"learn","meta":"First, then, finally — a story's bones","vocab":[["kuqala","koo-QAH-lah","first"],["emva koko","EHM-vah KAW-kaw","after that"],["ekugqibeleni","eh-koo-gqee-beh-LEH-nee","finally"]],"ex":[
+{"t":"note","tag":"The opener","q":"Kuqala","body":"<p><b>Kuqala</b> — <i>first, to begin with</i> — the q click starting the story the way it starts the word. Kuqala, ndivukile… — first, I got up…</p>","eg":[["kuqala","koo-QAH-lah","first"]]},
+{"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","kusasa"],"a":0},
+{"t":"mc","q":"What does kuqala mean?","o":["first","early","quickly"],"a":0},
+{"t":"note","tag":"The middle","q":"Emva koko","body":"<p><b>Emva koko</b> — <i>after that</i> — the hinge every story turns on. Emva koko, ndiye edolophini… — after that, I went to town…</p>","eg":[["emva koko","EHM-vah KAW-kaw","after that"]]},
+{"t":"li","q":"Which one do you hear?","say":"emva koko","o":["emva koko","kuqala"],"a":0},
+{"t":"mc","q":"emva koko means…","o":["after that","before that","meanwhile"],"a":0},
+{"t":"note","tag":"The landing","q":"Ekugqibeleni","body":"<p><b>Ekugqibeleni</b> — <i>finally, in the end</i> — a long word for the short breath before a story&rsquo;s last line. Say it slowly; the gq click sits right in the middle.</p>","eg":[["ekugqibeleni","eh-koo-gqee-beh-LEH-nee","finally"]]},
+{"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","emva koko"],"a":0},
+{"t":"mc","q":"Which one means finally?","o":["ekugqibeleni","kuqala","emva koko"],"a":0}
+]},
+{"id":"xh_c5_2","title":"Hearing the order","step":"recognize","meta":"Story words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"emva koko","o":["emva koko","ekugqibeleni","kuqala"],"a":0},
+{"t":"mc","q":"What does ekugqibeleni mean?","o":["finally","after that","first"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","emva koko","ekugqibeleni"],"a":0},
+{"t":"mc","q":"Which one means after that?","o":["emva koko","kuqala","ekugqibeleni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","kuqala","emva koko"],"a":0},
+{"t":"mc","q":"The clicks in kuqala and ekugqibeleni are both…","o":["q","c","x"],"a":0}
+]},
+{"id":"xh_c5_3","title":"Building the order","step":"build","meta":"Skeleton of a story","vocab":[],"ex":[
+{"t":"fill","q":"Complete: first","s":"ku___ala","o":["q","c","x"],"a":0},
+{"t":"wb","q":"Build: after that","a":["emva","koko"],"pool":["emva","koko","kuqala"]},
+{"t":"fill","q":"Complete: finally","s":"ekugqibele___","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build the word: first","a":["kuqala"],"pool":["kuqala","ekugqibeleni","emva"]},
+{"t":"li","q":"Which one do you hear?","say":"emva koko","o":["emva koko","kuqala","ekugqibeleni"],"a":0}
+]},
+{"id":"xh_c5_4","title":"The order in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kuqala","first"],["emva koko","after that"],["ekugqibeleni","finally"]]},
+{"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","ekugqibeleni","emva koko"],"a":0},
+{"t":"match","q":"Match the story part to its word","pairs":[["the opening line","kuqala"],["the middle turn","emva koko"],["the last line","ekugqibeleni"]]},
+{"t":"mc","q":"Kuqala ndivukile, … ndiye emsebenzini. The gap wants…","o":["emva koko","ekugqibeleni","kuqala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","emva koko","kuqala"],"a":0}
+]},
+{"id":"xh_c5_5","title":"Checkpoint: the order","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does emva koko mean?","o":["after that","first","finally"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","emva koko","ekugqibeleni"],"a":0},
+{"t":"mc","q":"Which one means finally?","o":["ekugqibeleni","emva koko","kuqala"],"a":0},
+{"t":"mc","q":"A story in order: kuqala → emva koko → …","o":["ekugqibeleni","kusasa","kuqala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","kuqala","emva koko"],"a":0},
+{"t":"mc","q":"Review — which one means come here?","o":["Yiza apha","Hlala phantsi","Yima!"],"a":0}
+]},
+
+/* ---------- c6 · The learner's toolkit ---------- */
+{"id":"xh_c6","title":"The learner's toolkit","step":"learn","meta":"Still learning — and proud of it","vocab":[["Ndisafunda","ndee-sah-FOON-dah","I am still learning"],["Thetha kancinci","TEH-tah kahn-CEEN-cee","speak slowly"],["Uthetha ukuthini?","oo-TEH-tah oo-koo-TEE-nee","what do you mean?"]],"ex":[
+{"t":"note","tag":"The magic -sa-","q":"Ndisafunda","body":"<p>Slip <b>-sa-</b> after ndi- and the action is still going: <b>Ndisafunda</b> — <i>I am still learning</i>. Say it early in any conversation and every mistake after it is forgiven in advance.</p>","eg":[["Ndisafunda","ndee-sah-FOON-dah","I am still learning"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndifunda"],"a":0},
+{"t":"mc","q":"Ndisafunda means…","o":["I am still learning","I learned","I will learn"],"a":0},
+{"t":"note","tag":"Slowing the flood","q":"Thetha kancinci","body":"<p>When the answer comes back at full speed: <b>Thetha kancinci</b> — <i>speak slowly</i> — the bare-verb command you learned at the clinic, plus your old kancinci. Add sisi or bhuti to keep it warm.</p>","eg":[["Thetha kancinci","TEH-tah kahn-CEEN-cee","speak slowly"]]},
+{"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Ndisafunda"],"a":0},
+{"t":"mc","q":"Thetha kancinci asks someone to…","o":["speak slowly","speak up","stop talking"],"a":0},
+{"t":"note","tag":"The honest question","q":"Uthetha ukuthini?","body":"<p><b>Uthetha ukuthini?</b> — <i>what do you mean?</i> — literally you-say to-say-what. Braver than nodding along, and the fastest way to actually learn.</p>","eg":[["Uthetha ukuthini?","oo-TEH-tah oo-koo-TEE-nee","what do you mean?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Thetha kancinci"],"a":0},
+{"t":"mc","q":"Uthetha ukuthini? asks…","o":["what do you mean?","why are you talking?","can you repeat it?"],"a":0}
+]},
+{"id":"xh_c6_2","title":"Hearing the toolkit","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Uthetha ukuthini?","Ndisafunda"],"a":0},
+{"t":"mc","q":"What does Ndisafunda mean?","o":["I am still learning","I stopped learning","I teach"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Thetha kancinci","Ndisafunda"],"a":0},
+{"t":"mc","q":"Which one means speak slowly?","o":["Thetha kancinci","Uthetha ukuthini?","Andiqondi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","Uthetha ukuthini?","Thetha kancinci"],"a":0},
+{"t":"mc","q":"The -sa- in Ndisafunda means…","o":["still","already","again"],"a":0}
+]},
+{"id":"xh_c6_3","title":"Building the toolkit","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I am STILL learning","s":"Ndi___funda","o":["sa","ya","za"],"a":0},
+{"t":"wb","q":"Build: speak slowly","a":["thetha","kancinci"],"pool":["thetha","kancinci","ukuthini?"]},
+{"t":"fill","q":"Complete: what do you mean?","s":"Uthetha ukuthi___?","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build: what do you mean?","a":["uthetha","ukuthini?"],"pool":["uthetha","ukuthini?","kancinci"]},
+{"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Ndisafunda","Thetha kancinci"],"a":0}
+]},
+{"id":"xh_c6_4","title":"The toolkit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndisafunda","I am still learning"],["Thetha kancinci","speak slowly"],["Uthetha ukuthini?","what do you mean?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","Thetha kancinci","Uthetha ukuthini?"],"a":0},
+{"t":"match","q":"Match the problem to the rescue","pairs":[["too fast","Thetha kancinci"],["lost the meaning","Uthetha ukuthini?"],["mistakes coming","Ndisafunda"]]},
+{"t":"mc","q":"The full rescue kit, oldest member first…","o":["Andiqondi, then these three","Molo, then Enkosi","Yima, then Yiza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Uthetha ukuthini?","Ndisafunda"],"a":0}
+]},
+{"id":"xh_c6_5","title":"Checkpoint: the toolkit","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Uthetha ukuthini? mean?","o":["what do you mean?","what did you say?","who are you?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Ndisafunda","Uthetha ukuthini?"],"a":0},
+{"t":"mc","q":"Which one means I am still learning?","o":["Ndisafunda","ndifundile","ndifundisa"],"a":0},
+{"t":"mc","q":"Thetha kancinci, sisi — the sisi is there to…","o":["keep it warm","slow it down","make it formal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndifunda","Thetha kancinci"],"a":0},
+{"t":"mc","q":"Review — Uziva njani? asks…","o":["how do you feel?","how are you?","what do you mean?"],"a":0}
+]},
+
+/* ---------- c7 · Going well ---------- */
+{"id":"xh_c7","title":"Going well","step":"learn","meta":"Deep thanks — and the plural goodbye","vocab":[["Ndiyabulela","ndee-yah-boo-LEH-lah","I give thanks"],["Hambani kakuhle","hahm-BAH-nee kah-KOO-hleh","go well, all of you"]],"ex":[
+{"t":"note","tag":"Deeper than enkosi","q":"Ndiyabulela","body":"<p>Enkosi thanks someone for a thing. <b>Ndiyabulela</b> — <i>I give thanks</i> — thanks them for themselves. It is what you say at the end of a visit, a kindness, or a course.</p>","eg":[["Ndiyabulela","ndee-yah-boo-LEH-lah","I give thanks"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","enkosi"],"a":0},
+{"t":"mc","q":"Ndiyabulela runs deeper than…","o":["enkosi","molo","uxolo"],"a":0},
+{"t":"note","tag":"Goodbye, everyone","q":"Hambani kakuhle","body":"<p>You know hamba kakuhle for one person. For many, the command wears -ni: <b>Hambani kakuhle</b> — <i>go well, all of you</i>. Salani kakuhle if you are the one leaving them behind.</p>","eg":[["Hambani kakuhle","hahm-BAH-nee kah-KOO-hleh","go well, all of you"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","hamba kakuhle"],"a":0},
+{"t":"mc","q":"The -ni on hambani makes the command…","o":["plural","polite","past"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle"],"a":0},
+{"t":"mc","q":"Hambani kakuhle means…","o":["go well, all of you","go well, my friend","come back soon"],"a":0}
+]},
+{"id":"xh_c7_2","title":"Hearing the farewell","step":"recognize","meta":"Last words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","sala kakuhle"],"a":0},
+{"t":"mc","q":"What does Ndiyabulela mean?","o":["I give thanks","goodbye","I am grateful for the food"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle","enkosi"],"a":0},
+{"t":"mc","q":"Which one means go well, all of you?","o":["Hambani kakuhle","hamba kakuhle","sala kakuhle"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","hamba kakuhle","Ndiyabulela"],"a":0},
+{"t":"mc","q":"Left behind while others leave, you hear…","o":["Salani kakuhle","Hambani kakuhle","Yiza apha"],"a":0}
+]},
+{"id":"xh_c7_3","title":"Building the farewell","step":"build","meta":"Say it properly","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I give thanks","s":"Ndiyabule___","o":["la","le","li"],"a":0},
+{"t":"wb","q":"Build: go well, all of you","a":["hambani","kakuhle"],"pool":["hambani","kakuhle","hamba"]},
+{"t":"fill","q":"Complete: go well, ALL of you","s":"Hamba___ kakuhle","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build the word: I give thanks","a":["ndiyabulela"],"pool":["ndiyabulela","enkosi","hambani"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle","sobonana"],"a":0}
+]},
+{"id":"xh_c7_4","title":"The farewell in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndiyabulela","I give thanks"],["Hambani kakuhle","go well, all of you"]]},
+{"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","hamba kakuhle"],"a":0},
+{"t":"match","q":"Match the farewell to the moment","pairs":[["hamba kakuhle","one friend leaves"],["Hambani kakuhle","the whole family leaves"],["sala kakuhle","you leave them"]]},
+{"t":"mc","q":"The end of a good visit, in order: Ndiyabulela → … → sobonana","o":["Hambani kakuhle","Molo","Yimalini?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","sobonana","Hambani kakuhle"],"a":0}
+]},
+{"id":"xh_c7_5","title":"Checkpoint: the whole journey","step":"checkpoint","meta":"Twelve zones of isiXhosa — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Ndiyabulela means…","o":["I give thanks","goodbye","well done"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","Masihambe!"],"a":0},
+{"t":"mc","q":"Review — Masithethe isiXhosa means…","o":["let us speak Xhosa","I speak Xhosa","do you speak Xhosa?"],"a":0},
+{"t":"mc","q":"Review — a person is a person through other people…","o":["umntu ngumntu ngabantu","ubuntu ngumntu","abantu ngabantu"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndicinga","ndiyavuma"],"a":0},
+{"t":"mc","q":"Review — first, after that, finally…","o":["kuqala, emva koko, ekugqibeleni","kusasa, izolo, ngomso","ngoku, kancinci, kakhulu"],"a":0},
+{"t":"mc","q":"Review — I am still learning, but ndonwabile: the course ends with you…","o":["happy and still learning","finished with Xhosa","back at Molo"],"a":0}
 ]}
 ];
 
@@ -3360,9 +3660,11 @@ const XH_UNITS=[
 {"n":10,"t":"Body and health","d":"The body, the clinic, commands — and feeling better","lessons":["xh_b1","xh_b1_2","xh_b1_3","xh_b1_4","xh_b1_5","xh_b2","xh_b2_2","xh_b2_3","xh_b2_4","xh_b2_5","xh_b3","xh_b3_2","xh_b3_3","xh_b3_4","xh_b3_5","xh_b4","xh_b4_2","xh_b4_3","xh_b4_4","xh_b4_5","xh_b5","xh_b5_2","xh_b5_3","xh_b5_4","xh_b5_5","xh_b6","xh_b6_2","xh_b6_3","xh_b6_4","xh_b6_5","xh_b7","xh_b7_2","xh_b7_3","xh_b7_4","xh_b7_5"]}
 ,
 {"n":11,"t":"Past and future","d":"The -ile past, bendi- was, ndiza ku- future — and the weather","lessons":["xh_p1","xh_p1_2","xh_p1_3","xh_p1_4","xh_p1_5","xh_p2","xh_p2_2","xh_p2_3","xh_p2_4","xh_p2_5","xh_p3","xh_p3_2","xh_p3_3","xh_p3_4","xh_p3_5","xh_p4","xh_p4_2","xh_p4_3","xh_p4_4","xh_p4_5","xh_p5","xh_p5_2","xh_p5_3","xh_p5_4","xh_p5_5","xh_p6","xh_p6_2","xh_p6_3","xh_p6_4","xh_p6_5","xh_p7","xh_p7_2","xh_p7_3","xh_p7_4","xh_p7_5"]}
+,
+{"n":12,"t":"Conversation and community","d":"Feelings, invitations, ubuntu — and going well","lessons":["xh_c1","xh_c1_2","xh_c1_3","xh_c1_4","xh_c1_5","xh_c2","xh_c2_2","xh_c2_3","xh_c2_4","xh_c2_5","xh_c3","xh_c3_2","xh_c3_3","xh_c3_4","xh_c3_5","xh_c4","xh_c4_2","xh_c4_3","xh_c4_4","xh_c4_5","xh_c5","xh_c5_2","xh_c5_3","xh_c5_4","xh_c5_5","xh_c6","xh_c6_2","xh_c6_3","xh_c6_4","xh_c6_5","xh_c7","xh_c7_2","xh_c7_3","xh_c7_4","xh_c7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela","xh_b1":"intloko","xh_b2":"amehlo","xh_b3":"kubuhlungu","xh_b4":"apha!","xh_b5":"ikliniki","xh_b6":"yiza","xh_b7":"ngcono","xh_p1":"-ile","xh_p2":"-e","xh_p3":"bendi-","xh_p4":"ndiza ku-","xh_p5":"liyanetha","xh_p6":"ilanga","xh_p7":"uza kuya"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela","xh_b1":"intloko","xh_b2":"amehlo","xh_b3":"kubuhlungu","xh_b4":"apha!","xh_b5":"ikliniki","xh_b6":"yiza","xh_b7":"ngcono","xh_p1":"-ile","xh_p2":"-e","xh_p3":"bendi-","xh_p4":"ndiza ku-","xh_p5":"liyanetha","xh_p6":"ilanga","xh_p7":"uza kuya","xh_c1":"ndonwabile","xh_c2":"ma- -e","xh_c3":"ubuntu","xh_c4":"ndicinga","xh_c5":"kuqala","xh_c6":"ndisafunda","xh_c7":"-ni"};
 
 const XH_SRS_SEED=[];
 
