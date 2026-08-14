@@ -219,13 +219,23 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       (a-...-i on things)/itshiphu/Yehlisa ixabiso (+where bargaining
       is OK note), m7 Unayo …?/Ndinayo/Andinayo. Checker passed FIRST
       RUN. Typo isweki caught by eye before checking.
-- [ ] Zone 9 (Work & school): umsebenzi work/job, ndiyasebenza I work,
-      ndifunda I study/learn (tie to ndiyafunda isiXhosa if taught,
-      else fresh), umfundi pupil/utitshala teacher (oo- plural
-      recycle), um-/imi- FOURTH plural pair (umsebenzi/imisebenzi,
-      umlambo/imilambo), Usebenza phi? where do you work, phandle
-      no-work reality softly? (skip — keep it upbeat), ndisebenza
-      edolophini locative recycle.
+- [x] Zone 9 (Work and school) COMPLETE (315 lessons, 1941 ex, 415
+      clips): w1 umsebenzi + THE -ya- LONG-FORM RULE (ndiyasebenza vs
+      Ndisebenza edolophini — explains ndiyavuya/ndifunda isiXhosa
+      retroactively) + Usebenza phi?, w2 utitshala/umfundi + BOTH
+      people-plurals side by side (ootitshala/abafundi), w3 um-/imi-
+      FOURTH pair (imisebenzi, umzi/imizi + Umzimkhulu note), w4
+      ndibhala/ndifundisa (-isa recycle) + third-person Utitshala
+      uyafundisa, w5 ipeni/ifowuni/ikhompyutha loanword note, w6
+      Ndisebenza ngoMvulo/Andisebenzi ngeCawa/iholide, w7 REGISTER:
+      ndiyaphangela (street word for work, per teach-what-people-SAY
+      rule) + Ufunda ntoni? (funda/funa minimal-pair li). Checker
+      caught 1 (ikhompyutha distractor), fixed.
+- [ ] Zone 10 (Body & health): body parts (intloko head, isandla hand,
+      unyawo foot, iliso eye/amehlo, indlebe ear), ndiyagula I am
+      sick, ubuhlungu pain / kubuhlungu it hurts, ikliniki clinic +
+      usisi wasekliniki, imperatives (yiza come, hlala sit, sela
+      amayeza take medicine), Ndiziva ngcono I feel better.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
 - [ ] Art: South African secular scenery (Table Mountain silhouette hero,

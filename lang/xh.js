@@ -2437,6 +2437,305 @@ const XH_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","Nantsi imali","lishumi leerandi"],"a":0},
 {"t":"mc","q":"Review — which one means maize meal?","o":["umgubo","iswekile","amafutha"],"a":0},
 {"t":"mc","q":"Review — eli is the this-word for…","o":["iqanda","imali","isitya"],"a":0}
+]},
+
+/* ---------- w1 · Work ---------- */
+{"id":"xh_w1","title":"Work","step":"learn","meta":"Umsebenzi — and the little -ya- that comes and goes","vocab":[["umsebenzi","oom-seh-BEHN-zee","work"],["ndiyasebenza","ndee-yah-seh-BEHN-zah","I work"],["Usebenza phi?","oo-seh-BEHN-zah PEE","where do you work?"],["Ndisebenza edolophini","ndee-seh-BEHN-zah eh-daw-law-PEE-nee","I work in town"]],"ex":[
+{"t":"note","tag":"The word for it","q":"Umsebenzi","body":"<p><b>Umsebenzi</b> — <i>work, a job</i>. Also what you call the work itself: good work, hard work, no work — one word carries them all.</p>","eg":[["umsebenzi","oom-seh-BEHN-zee","work"]]},
+{"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","imali"],"a":0},
+{"t":"mc","q":"What does umsebenzi mean?","o":["work","money","school"],"a":0},
+{"t":"note","tag":"A grammar secret","q":"Ndiyasebenza — the -ya- long form","body":"<p><b>Ndiyasebenza</b> — <i>I work</i>. Hear the extra -ya-? Xhosa slips it in when the verb stands alone at the end. Add a place and it drops out: <b>Ndisebenza edolophini</b> — <i>I work in town</i>. You have heard this all along — ndiyavuya, but ndifunda isiXhosa.</p>","eg":[["ndiyasebenza","ndee-yah-seh-BEHN-zah","I work"],["Ndisebenza edolophini","ndee-seh-BEHN-zah eh-daw-law-PEE-nee","I work in town"]]},
+{"t":"li","q":"Long or short — which do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","Ndisebenza edolophini"],"a":0},
+{"t":"mc","q":"The -ya- appears when the verb…","o":["stands alone at the end","has an object after it","is negative"],"a":0},
+{"t":"note","tag":"The question","q":"Usebenza phi?","body":"<p><b>Usebenza phi?</b> — <i>where do you work?</i> — the phi of Uphi and Uya phi?, doing its where-work on a new verb. Answer with your locatives: Ndisebenza edolophini, esikolweni, evenkileni…</p>","eg":[["Usebenza phi?","oo-seh-BEHN-zah PEE","where do you work?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","ndiyasebenza"],"a":0},
+{"t":"mc","q":"Usebenza phi? asks…","o":["where do you work?","do you work?","when do you work?"],"a":0}
+]},
+{"id":"xh_w1_2","title":"Hearing the work","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza edolophini","o":["Ndisebenza edolophini","ndiyasebenza","Usebenza phi?"],"a":0},
+{"t":"mc","q":"What does ndiyasebenza mean?","o":["I work","I study","I rest"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","ndiyasebenza","Usebenza phi?"],"a":0},
+{"t":"mc","q":"Which one means I work in town?","o":["Ndisebenza edolophini","Ndiya edolophini","ndiyasebenza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","umsebenzi","Ndisebenza edolophini"],"a":0},
+{"t":"mc","q":"Usebenza phi? — the natural answer starts…","o":["Ndisebenza…","Ndiya…","Yimalini…"],"a":0}
+]},
+{"id":"xh_w1_3","title":"Building the work","step":"build","meta":"Long form, short form","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I work (verb standing alone)","s":"Ndi___sebenza","o":["ya","yo","wa"],"a":0},
+{"t":"wb","q":"Build: I work in town","a":["ndisebenza","edolophini"],"pool":["ndisebenza","edolophini","ndiyasebenza"]},
+{"t":"fill","q":"Complete: work","s":"umsebe___i","o":["nz","ns","z"],"a":0},
+{"t":"wb","q":"Build: where do you work?","a":["usebenza","phi?"],"pool":["usebenza","phi?","ndisebenza"]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","umsebenzi","Usebenza phi?"],"a":0}
+]},
+{"id":"xh_w1_4","title":"The work in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umsebenzi","work"],["ndiyasebenza","I work"]]},
+{"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","Ndisebenza edolophini","umsebenzi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Usebenza phi?","where do you work?"],["Ndisebenza edolophini","I work in town"]]},
+{"t":"mc","q":"Why ndiyavuya but ndifunda isiXhosa?","o":["-ya- drops when something follows the verb","-ya- marks happiness","they are different tenses"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","ndiyasebenza","Ndisebenza edolophini"],"a":0}
+]},
+{"id":"xh_w1_5","title":"Checkpoint: the work","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does umsebenzi mean?","o":["work","worker","school"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza edolophini","o":["Ndisebenza edolophini","Usebenza phi?","ndiyasebenza"],"a":0},
+{"t":"mc","q":"Which one means where do you work?","o":["Usebenza phi?","Uya phi?","Uphi umsebenzi?"],"a":0},
+{"t":"mc","q":"I work at the shop would be Ndisebenza…","o":["evenkileni","ivenkile","ekhitshini"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","umsebenzi","Ndisebenza edolophini"],"a":0},
+{"t":"mc","q":"Review — which one means taxi?","o":["iteksi","irenki","indlela"],"a":0}
+]},
+
+/* ---------- w2 · At school ---------- */
+{"id":"xh_w2","title":"At school","step":"learn","meta":"Teacher and learner — and both plurals you own","vocab":[["utitshala","oo-tee-TSHAH-lah","teacher"],["umfundi","oom-FOON-dee","learner"],["ootitshala","aw-tee-TSHAH-lah","teachers"],["abafundi","ah-bah-FOON-dee","learners"]],"ex":[
+{"t":"note","tag":"The two of the classroom","q":"Utitshala and umfundi","body":"<p><b>Utitshala</b> — <i>the teacher</i>. <b>Umfundi</b> — <i>the learner</i> (South African schools say learner, not pupil) — funda, to learn, wearing a person-prefix.</p>","eg":[["utitshala","oo-tee-TSHAH-lah","teacher"],["umfundi","oom-FOON-dee","learner"]]},
+{"t":"li","q":"Which one do you hear?","say":"utitshala","o":["utitshala","umfundi"],"a":0},
+{"t":"mc","q":"What does umfundi mean?","o":["learner","teacher","school"],"a":0},
+{"t":"note","tag":"Old friends","q":"Both plurals at once","body":"<p>Watch your two people-plurals work side by side: utitshala is a u- name-like word, so its plural is <b>ootitshala</b> — <i>teachers</i>. Umfundi is an um- word, so its plural is <b>abafundi</b> — <i>learners</i>. Nothing new — just the rules you own, earning rent.</p>","eg":[["ootitshala","aw-tee-TSHAH-lah","teachers"],["abafundi","ah-bah-FOON-dee","learners"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"abafundi","o":["abafundi","umfundi"],"a":0},
+{"t":"mc","q":"The plural of utitshala is…","o":["ootitshala","abatitshala","iititshala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","utitshala"],"a":0},
+{"t":"mc","q":"umfundi goes to abafundi because umfundi is…","o":["an um- person word","a u- name word","an isi- thing word"],"a":0}
+]},
+{"id":"xh_w2_2","title":"Hearing the classroom","step":"recognize","meta":"School people by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"umfundi","o":["umfundi","utitshala","abafundi"],"a":0},
+{"t":"mc","q":"What does utitshala mean?","o":["teacher","learner","principal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","abafundi","utitshala"],"a":0},
+{"t":"mc","q":"Which one means learners?","o":["abafundi","ootitshala","umfundi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"abafundi","o":["abafundi","ootitshala","umfundi"],"a":0},
+{"t":"mc","q":"South African schools call a pupil a…","o":["learner","student","scholar"],"a":0}
+]},
+{"id":"xh_w2_3","title":"Building the classroom","step":"build","meta":"People and their plurals","vocab":[],"ex":[
+{"t":"fill","q":"Complete: teacher","s":"utitsha___","o":["la","lo","li"],"a":0},
+{"t":"wb","q":"Build the word: learners","a":["abafundi"],"pool":["abafundi","umfundi","ootitshala"]},
+{"t":"fill","q":"Complete: teachers","s":"___titshala","o":["oo","aba","ama"],"a":0},
+{"t":"wb","q":"Build the word: learner","a":["umfundi"],"pool":["umfundi","abafundi","utitshala"]},
+{"t":"li","q":"Which one do you hear?","say":"utitshala","o":["utitshala","umfundi","ootitshala"],"a":0}
+]},
+{"id":"xh_w2_4","title":"The classroom in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match singular to plural","pairs":[["utitshala","ootitshala"],["umfundi","abafundi"]]},
+{"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","abafundi","utitshala"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utitshala","teacher"],["umfundi","learner"],["abafundi","learners"]]},
+{"t":"mc","q":"The funda inside umfundi means…","o":["learn","teach","read aloud only"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umfundi","o":["umfundi","utitshala","abafundi"],"a":0}
+]},
+{"id":"xh_w2_5","title":"Checkpoint: the classroom","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does abafundi mean?","o":["learners","teachers","schools"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"abafundi","o":["abafundi","ootitshala","umfundi"],"a":0},
+{"t":"mc","q":"Which one means teachers?","o":["ootitshala","utitshala","abafundi"],"a":0},
+{"t":"mc","q":"Umfundi ufunda esikolweni — the learner learns…","o":["at school","at home","in town"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utitshala","o":["utitshala","ootitshala","abafundi"],"a":0},
+{"t":"mc","q":"Review — kufuphi means…","o":["near","far","here"],"a":0}
+]},
+
+/* ---------- w3 · The fourth pair ---------- */
+{"id":"xh_w3","title":"The fourth pair","step":"learn","meta":"Um- things go to imi-","vocab":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"],["umzi","oom-ZEE","homestead"],["imizi","ee-MEE-zee","homesteads"]],"ex":[
+{"t":"note","tag":"Not people this time","q":"Um- THINGS go to imi-","body":"<p>Um- PEOPLE go to aba- — you know that. Um- THINGS take a different road: <b>imi-</b>. One umsebenzi, many <b>imisebenzi</b> — <i>jobs</i>. Your fourth and last big plural pair.</p>","eg":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"imisebenzi","o":["imisebenzi","umsebenzi"],"a":0},
+{"t":"mc","q":"imisebenzi means…","o":["jobs","workers","job"],"a":0},
+{"t":"note","tag":"The Eastern Cape word","q":"Umzi","body":"<p><b>Umzi</b> — <i>a homestead</i>: the family place, houses and kraal and yard together, the word behind so many town names (Umzimkhulu, the great homestead). Many of them: <b>imizi</b>.</p>","eg":[["umzi","oom-ZEE","homestead"],["imizi","ee-MEE-zee","homesteads"]]},
+{"t":"li","q":"Which one do you hear?","say":"umzi","o":["umzi","imizi"],"a":0},
+{"t":"mc","q":"What does umzi mean?","o":["homestead","house","village shop"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","imisebenzi"],"a":0},
+{"t":"mc","q":"Your four plural pairs, complete…","o":["um-/aba-, oo-, isi-/izi-, um-/imi-","only um-/aba-","i-/ama- alone"],"a":0}
+]},
+{"id":"xh_w3_2","title":"Hearing the pair","step":"recognize","meta":"Um- and imi- by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","imizi","umzi"],"a":0},
+{"t":"mc","q":"The plural of umsebenzi is…","o":["imisebenzi","abasebenzi","oosebenzi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","umzi","imisebenzi"],"a":0},
+{"t":"mc","q":"Which one means homesteads?","o":["imizi","umzi","imisebenzi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umzi","o":["umzi","imizi","umsebenzi"],"a":0},
+{"t":"mc","q":"Umzimkhulu, the town name, means…","o":["the great homestead","the long river","the old road"],"a":0}
+]},
+{"id":"xh_w3_3","title":"Building the pair","step":"build","meta":"Swap um- for imi-","vocab":[],"ex":[
+{"t":"fill","q":"Complete: jobs","s":"___sebenzi","o":["imi","aba","izi"],"a":0},
+{"t":"wb","q":"Build the word: homesteads","a":["imizi"],"pool":["imizi","umzi","imisebenzi"]},
+{"t":"fill","q":"Complete: homestead (just one)","s":"um___","o":["zi","zo","za"],"a":0},
+{"t":"wb","q":"Build the word: jobs","a":["imisebenzi"],"pool":["imisebenzi","umsebenzi","imizi"]},
+{"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","umzi","imizi"],"a":0}
+]},
+{"id":"xh_w3_4","title":"The pair in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match singular to plural","pairs":[["umsebenzi","imisebenzi"],["umzi","imizi"]]},
+{"t":"li","q":"Which one do you hear?","say":"umzi","o":["umzi","imisebenzi","imizi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["imisebenzi","jobs"],["umzi","homestead"],["imizi","homesteads"]]},
+{"t":"mc","q":"umntu goes to abantu but umzi goes to imizi because…","o":["people take aba-, things take imi-","umzi is borrowed","there is no rule"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","umzi","imisebenzi"],"a":0}
+]},
+{"id":"xh_w3_5","title":"Checkpoint: the pair","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does imisebenzi mean?","o":["jobs","workers","homesteads"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","imisebenzi","umzi"],"a":0},
+{"t":"mc","q":"The plural of umzi is…","o":["imizi","abazi","oomzi"],"a":0},
+{"t":"mc","q":"Which one means homestead?","o":["umzi","indlu","iyadi"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","imizi","umzi"],"a":0},
+{"t":"mc","q":"Review — which one means at the shop?","o":["evenkileni","edolophini","esikolweni"],"a":0}
+]},
+
+/* ---------- w4 · Doing words ---------- */
+{"id":"xh_w4","title":"Doing words","step":"learn","meta":"Write, teach — and the teacher who teaches","vocab":[["ndibhala","ndee-BHAH-lah","I write"],["ndifundisa","ndee-foon-DEE-sah","I teach"],["Utitshala uyafundisa","oo-tee-TSHAH-lah oo-yah-foon-DEE-sah","the teacher teaches"]],"ex":[
+{"t":"note","tag":"Pen to paper","q":"Ndibhala","body":"<p><b>Ndibhala</b> — <i>I write</i> — with the breathy bh of ibhedi and bhuti. Ndibhala incwadi: I write a letter (incwadi is letter as well as book).</p>","eg":[["ndibhala","ndee-BHAH-lah","I write"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifunda"],"a":0},
+{"t":"mc","q":"What does ndibhala mean?","o":["I write","I read","I teach"],"a":0},
+{"t":"note","tag":"The -isa trick again","q":"Funda becomes fundisa","body":"<p>Zone 8 taught you -isa, the make-it-happen ending: thenga buy, thengisa sell. It works everywhere: funda <i>learn</i>, <b>ndifundisa</b> — <i>I teach</i>, literally I-make-learn.</p>","eg":[["ndifundisa","ndee-foon-DEE-sah","I teach"]]},
+{"t":"li","q":"Learn or teach — which do you hear?","say":"ndifundisa","o":["ndifundisa","ndifunda"],"a":0},
+{"t":"mc","q":"ndifundisa literally means…","o":["I make learn","I learn hard","I learn again"],"a":0},
+{"t":"note","tag":"Someone else does it","q":"Utitshala uyafundisa","body":"<p>Third person: a person&rsquo;s doing-prefix is u-, and the lonely verb takes -ya-: <b>Utitshala uyafundisa</b> — <i>the teacher teaches</i>. Umfundi uyafunda, umama uyapheka — the pattern is everywhere now.</p>","eg":[["Utitshala uyafundisa","oo-tee-TSHAH-lah oo-yah-foon-DEE-sah","the teacher teaches"]]},
+{"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa"],"a":0},
+{"t":"mc","q":"Utitshala uyafundisa means…","o":["the teacher teaches","the teacher learns","I teach the teacher"],"a":0}
+]},
+{"id":"xh_w4_2","title":"Hearing the doing","step":"recognize","meta":"Classroom verbs by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","ndibhala","Utitshala uyafundisa"],"a":0},
+{"t":"mc","q":"What does ndifundisa mean?","o":["I teach","I learn","I write"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifundisa","ndithetha"],"a":0},
+{"t":"mc","q":"Which one means the teacher teaches?","o":["Utitshala uyafundisa","Umfundi uyafunda","ndifundisa"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
+{"t":"mc","q":"thenga:thengisa as funda:…","o":["fundisa","funde","fundile"],"a":0}
+]},
+{"id":"xh_w4_3","title":"Building the doing","step":"build","meta":"Verbs at the chalkboard","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I write","s":"Ndi___ala","o":["bh","b","p"],"a":0},
+{"t":"wb","q":"Build: the teacher teaches","a":["utitshala","uyafundisa"],"pool":["utitshala","uyafundisa","ndifundisa"]},
+{"t":"fill","q":"Complete: I teach (I make learn)","s":"Ndifundi___","o":["sa","za","la"],"a":0},
+{"t":"wb","q":"Build the word: I write","a":["ndibhala"],"pool":["ndibhala","ndifundisa","ndifunda"]},
+{"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","Utitshala uyafundisa","ndibhala"],"a":0}
+]},
+{"id":"xh_w4_4","title":"The doing in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndibhala","I write"],["ndifundisa","I teach"],["ndifunda","I learn"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifundisa","Utitshala uyafundisa"],"a":0},
+{"t":"match","q":"Match the doer to the deed","pairs":[["utitshala","uyafundisa"],["umfundi","uyafunda"]]},
+{"t":"mc","q":"Umama uyapheka uses the same pattern as…","o":["Utitshala uyafundisa","Ndicela uncedo","Yimalini le?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndibhala","ndifundisa"],"a":0}
+]},
+{"id":"xh_w4_5","title":"Checkpoint: the doing","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ndibhala mean?","o":["I write","I teach","I read"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","ndibhala","ndifunda"],"a":0},
+{"t":"mc","q":"Which one means I teach?","o":["ndifundisa","ndifunda","ndibhala"],"a":0},
+{"t":"mc","q":"The -isa in ndifundisa is the same -isa as in…","o":["ndithengisa","ndilambile","ndiyasebenza"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
+{"t":"mc","q":"Review — Uya phi? asks…","o":["where are you going?","where do you work?","how are you?"],"a":0}
+]},
+
+/* ---------- w5 · The tools ---------- */
+{"id":"xh_w5","title":"The tools","step":"learn","meta":"Pen, phone, computer","vocab":[["ipeni","ee-PEH-nee","pen"],["ifowuni","ee-faw-WOO-nee","phone"],["ikhompyutha","ee-kawm-PYOO-tah","computer"]],"ex":[
+{"t":"note","tag":"On the desk","q":"Ipeni","body":"<p><b>Ipeni</b> — <i>pen</i>. What ndibhala happens with. English loans like this wear the i- prefix and behave like any other i- word.</p>","eg":[["ipeni","ee-PEH-nee","pen"]]},
+{"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","incwadi"],"a":0},
+{"t":"mc","q":"What does ipeni mean?","o":["pen","paper","book"],"a":0},
+{"t":"note","tag":"In every pocket","q":"Ifowuni","body":"<p><b>Ifowuni</b> — <i>phone</i>. Airtime from the spaza, WhatsApp voice notes in isiXhosa — the phone is where the language lives loudest today.</p>","eg":[["ifowuni","ee-faw-WOO-nee","phone"]]},
+{"t":"li","q":"Which one do you hear?","say":"ifowuni","o":["ifowuni","ipeni"],"a":0},
+{"t":"mc","q":"Which one means phone?","o":["ifowuni","ipeni","incwadi"],"a":0},
+{"t":"note","tag":"At the office","q":"Ikhompyutha","body":"<p><b>Ikhompyutha</b> — <i>computer</i>. Say it out loud and hear how Xhosa reshapes borrowed words to fit its own mouth: every syllable open, every vowel full.</p>","eg":[["ikhompyutha","ee-kawm-PYOO-tah","computer"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ifowuni"],"a":0},
+{"t":"mc","q":"What does ikhompyutha mean?","o":["computer","calculator","keyboard"],"a":0}
+]},
+{"id":"xh_w5_2","title":"Hearing the tools","step":"recognize","meta":"Desk things by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ifowuni","o":["ifowuni","ikhompyutha","ipeni"],"a":0},
+{"t":"mc","q":"What does ipeni mean?","o":["pen","phone","computer"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ipeni","ifowuni"],"a":0},
+{"t":"mc","q":"Which one means computer?","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ifowuni","ikhompyutha"],"a":0},
+{"t":"mc","q":"Airtime for ifowuni comes from…","o":["ispaza","isikolo","irenki"],"a":0}
+]},
+{"id":"xh_w5_3","title":"Building the tools","step":"build","meta":"Kit the desk out","vocab":[],"ex":[
+{"t":"fill","q":"Complete: phone","s":"ifowu___","o":["ni","ne","na"],"a":0},
+{"t":"wb","q":"Build the word: computer","a":["ikhompyutha"],"pool":["ikhompyutha","ifowuni","ipeni"]},
+{"t":"fill","q":"Complete: pen","s":"ipe___","o":["ni","na","no"],"a":0},
+{"t":"wb","q":"Build: I write with a pen — ndibhala nge…","a":["ngepeni"],"pool":["ngepeni","ipeni","ngefowuni"]},
+{"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ipeni","ifowuni"],"a":0}
+]},
+{"id":"xh_w5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ipeni","pen"],["ifowuni","phone"],["ikhompyutha","computer"]]},
+{"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ikhompyutha","ifowuni"],"a":0},
+{"t":"match","q":"Match the tool to its job","pairs":[["ipeni","ndibhala"],["ikhompyutha","ndiyasebenza"]]},
+{"t":"mc","q":"ngeteksi is by taxi, so by phone is…","o":["ngefowuni","efowunini","ifowuni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ifowuni","o":["ifowuni","ipeni","ikhompyutha"],"a":0}
+]},
+{"id":"xh_w5_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ifowuni mean?","o":["phone","pen","computer"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ifowuni","ikhompyutha"],"a":0},
+{"t":"mc","q":"Which one means pen?","o":["ipeni","ikhompyutha","ifowuni"],"a":0},
+{"t":"mc","q":"Loanwords like ipeni join Xhosa by taking…","o":["the i- prefix","the um- prefix","no prefix"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
+{"t":"mc","q":"Review — which one means help?","o":["uncedo","indlela","imali"],"a":0}
+]},
+
+/* ---------- w6 · The working week ---------- */
+{"id":"xh_w6","title":"The working week","step":"learn","meta":"Workdays, rest days — and iholide","vocab":[["Ndisebenza ngoMvulo","ndee-seh-BEHN-zah ngaw-MVOO-law","I work on Monday"],["Andisebenzi ngeCawa","ahn-dee-seh-BEHN-zee ngeh-CAH-wah","I do not work on Sunday"],["iholide","ee-haw-LEE-deh","holiday"]],"ex":[
+{"t":"note","tag":"Days on duty","q":"Ndisebenza ngoMvulo","body":"<p>Your day-words and your work-verb, together: <b>Ndisebenza ngoMvulo</b> — <i>I work on Monday</i>. The nge-/ngo- day forms from the numbers zone carry the on-.</p>","eg":[["Ndisebenza ngoMvulo","ndee-seh-BEHN-zah ngaw-MVOO-law","I work on Monday"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","ndiyasebenza"],"a":0},
+{"t":"mc","q":"Ndisebenza ngoMvulo means…","o":["I work on Monday","I work every day","I worked yesterday"],"a":0},
+{"t":"note","tag":"Days off","q":"Andisebenzi ngeCawa","body":"<p>And the day you guard: <b>Andisebenzi ngeCawa</b> — <i>I do not work on Sunday</i>. The a-…-i wrap closes around sebenza exactly as it did around thanda and dura.</p>","eg":[["Andisebenzi ngeCawa","ahn-dee-seh-BEHN-zee ngeh-CAH-wah","I do not work on Sunday"]]},
+{"t":"li","q":"Working or not — which do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","Ndisebenza ngoMvulo"],"a":0},
+{"t":"mc","q":"Andisebenzi ngeCawa means…","o":["I do not work on Sunday","I work on Sunday","I rest every day"],"a":0},
+{"t":"note","tag":"The best word","q":"Iholide","body":"<p><b>Iholide</b> — <i>holiday</i>. South Africa keeps its public holidays generously, and everyone — abafundi and ootitshala most of all — counts the days to the next one.</p>","eg":[["iholide","ee-haw-LEE-deh","holiday"]]},
+{"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","impelaveki"],"a":0},
+{"t":"mc","q":"What does iholide mean?","o":["holiday","weekend","Sunday"],"a":0}
+]},
+{"id":"xh_w6_2","title":"Hearing the week","step":"recognize","meta":"Workdays by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","Ndisebenza ngoMvulo","iholide"],"a":0},
+{"t":"mc","q":"What does iholide mean?","o":["holiday","workday","weekend"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","Andisebenzi ngeCawa","ndiyasebenza"],"a":0},
+{"t":"mc","q":"Which one means I do not work on Sunday?","o":["Andisebenzi ngeCawa","Ndisebenza ngoMvulo","Andinayo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Ndisebenza ngoMvulo","Andisebenzi ngeCawa"],"a":0},
+{"t":"mc","q":"The negative wrap in Andisebenzi is…","o":["a-…-i","uku-…-a","nge-…-o"],"a":0}
+]},
+{"id":"xh_w6_3","title":"Building the week","step":"build","meta":"Duty roster in Xhosa","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I do NOT work on Sunday","s":"___sebenzi ngeCawa","o":["Andi","Ndi","Uya"],"a":0},
+{"t":"wb","q":"Build: I work on Monday","a":["ndisebenza","ngoMvulo"],"pool":["ndisebenza","ngoMvulo","ngeCawa"]},
+{"t":"fill","q":"Complete: holiday","s":"iholi___","o":["de","da","di"],"a":0},
+{"t":"wb","q":"Build: I do not work on Sunday","a":["andisebenzi","ngeCawa"],"pool":["andisebenzi","ngeCawa","ngoMvulo"]},
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","iholide","Andisebenzi ngeCawa"],"a":0}
+]},
+{"id":"xh_w6_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndisebenza ngoMvulo","I work on Monday"],["Andisebenzi ngeCawa","I do not work on Sunday"],["iholide","holiday"]]},
+{"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Andisebenzi ngeCawa","Ndisebenza ngoMvulo"],"a":0},
+{"t":"mc","q":"To say I work on Tuesday, swap ngoMvulo for…","o":["ngoLwesibini","ngeCawa","ngoMgqibelo"],"a":0},
+{"t":"mc","q":"Andisebenzi follows the same wrap as…","o":["andithandi and ayiduri","ndiyasebenza","ukuthenga"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","iholide","Ndisebenza ngoMvulo"],"a":0}
+]},
+{"id":"xh_w6_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does Andisebenzi ngeCawa mean?","o":["I do not work on Sunday","I work on Sunday","Sunday is a holiday"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","Andisebenzi ngeCawa","iholide"],"a":0},
+{"t":"mc","q":"Which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0},
+{"t":"mc","q":"The ngo- in ngoMvulo means…","o":["on","at","by"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Ndisebenza ngoMvulo","Andisebenzi ngeCawa"],"a":0},
+{"t":"mc","q":"Review — which one means I walk?","o":["ndihamba","ndiya","ndiza"],"a":0}
+]},
+
+/* ---------- w7 · The everyday word ---------- */
+{"id":"xh_w7","title":"The everyday word","step":"learn","meta":"Ndiyaphangela — how the street says it","vocab":[["ndiyaphangela","ndee-yah-pah-NGEH-lah","I go to work"],["Ufunda ntoni?","oo-FOON-dah NTAW-nee","what do you study?"]],"ex":[
+{"t":"note","tag":"Street register","q":"Ukuphangela","body":"<p>Textbooks say sebenza. On the street, at the rank, on the phone, everyday Xhosa says <b>ndiyaphangela</b> — <i>I go to work, I am working</i>. Both are correct; phangela is what you will actually hear in Cape Town on a Monday morning.</p>","eg":[["ndiyaphangela","ndee-yah-pah-NGEH-lah","I go to work"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza"],"a":0},
+{"t":"mc","q":"ndiyaphangela is…","o":["the everyday word for working","slang to avoid","a different job"],"a":0},
+{"t":"note","tag":"The student question","q":"Ufunda ntoni?","body":"<p><b>Ufunda ntoni?</b> — <i>what do you study?</i> — the ntoni of Ufuna ntoni?, now asking about learning. Answer with anything: Ndifunda isiXhosa!</p>","eg":[["Ufunda ntoni?","oo-FOON-dah NTAW-nee","what do you study?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela"],"a":0},
+{"t":"mc","q":"Ufunda ntoni? asks…","o":["what do you study?","what do you want?","where do you study?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","Ufunda ntoni?"],"a":0},
+{"t":"mc","q":"Ufunda ntoni? — Ndifunda … The proudest answer in this app:","o":["isiXhosa","imali","iteksi"],"a":0}
+]},
+{"id":"xh_w7_2","title":"Hearing the everyday","step":"recognize","meta":"Street register by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndiyasebenza"],"a":0},
+{"t":"mc","q":"What does ndiyaphangela mean?","o":["I go to work","I go to school","I am on holiday"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza","ndifundisa"],"a":0},
+{"t":"mc","q":"Which one means what do you study?","o":["Ufunda ntoni?","Ufuna ntoni?","Usebenza phi?"],"a":0},
+{"t":"li","q":"Listen closely — funda or funa?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","Ufuna ntoni?"],"a":0},
+{"t":"mc","q":"On a Cape Town Monday morning you will mostly hear…","o":["ndiyaphangela","ndiyasebenza","ndiphumla"],"a":0}
+]},
+{"id":"xh_w7_3","title":"Building the everyday","step":"build","meta":"Say it like the street","vocab":[],"ex":[
+{"t":"fill","q":"Complete: I go to work (everyday word)","s":"Ndiyaphange___","o":["la","le","li"],"a":0},
+{"t":"wb","q":"Build: what do you study?","a":["ufunda","ntoni?"],"pool":["ufunda","ntoni?","ufuna"]},
+{"t":"fill","q":"Complete: the street word for work","s":"ukupha___ela","o":["ng","nk","mb"],"a":0},
+{"t":"wb","q":"Build the word: I go to work","a":["ndiyaphangela"],"pool":["ndiyaphangela","ndiyasebenza","ufunda"]},
+{"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndibhala"],"a":0}
+]},
+{"id":"xh_w7_4","title":"The everyday in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyaphangela","I go to work"],["Ufunda ntoni?","what do you study?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","Ufunda ntoni?","ndiyasebenza"],"a":0},
+{"t":"match","q":"Match the register","pairs":[["ndiyaphangela","the street says it"],["ndiyasebenza","the textbook says it"]]},
+{"t":"mc","q":"Ufunda ntoni? and Ufuna ntoni? differ by…","o":["one nd","their tone","nothing"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndifundisa"],"a":0}
+]},
+{"id":"xh_w7_5","title":"Checkpoint: Zone 9 complete","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ndiyaphangela means…","o":["I go to work","I go home","I study"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza","Ufunda ntoni?"],"a":0},
+{"t":"mc","q":"Review — the plural of umsebenzi is…","o":["imisebenzi","abasebenzi","oosebenzi"],"a":0},
+{"t":"mc","q":"Review — which one means teachers?","o":["ootitshala","abafundi","utitshala"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
+{"t":"mc","q":"Review — which one means computer?","o":["ikhompyutha","ifowuni","ipeni"],"a":0},
+{"t":"mc","q":"Review — which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0}
 ]}
 ];
 
@@ -2456,9 +2755,11 @@ const XH_UNITS=[
 {"n":7,"t":"Getting around","d":"Places, going and coming, the taxi — and asking the way","lessons":["xh_t1","xh_t1_2","xh_t1_3","xh_t1_4","xh_t1_5","xh_t2","xh_t2_2","xh_t2_3","xh_t2_4","xh_t2_5","xh_t3","xh_t3_2","xh_t3_3","xh_t3_4","xh_t3_5","xh_t4","xh_t4_2","xh_t4_3","xh_t4_4","xh_t4_5","xh_t5","xh_t5_2","xh_t5_3","xh_t5_4","xh_t5_5","xh_t6","xh_t6_2","xh_t6_3","xh_t6_4","xh_t6_5","xh_t7","xh_t7_2","xh_t7_3","xh_t7_4","xh_t7_5"]}
 ,
 {"n":8,"t":"Shopping and money","d":"Prices, buying, pointing words — and the spaza counter","lessons":["xh_m1","xh_m1_2","xh_m1_3","xh_m1_4","xh_m1_5","xh_m2","xh_m2_2","xh_m2_3","xh_m2_4","xh_m2_5","xh_m3","xh_m3_2","xh_m3_3","xh_m3_4","xh_m3_5","xh_m4","xh_m4_2","xh_m4_3","xh_m4_4","xh_m4_5","xh_m5","xh_m5_2","xh_m5_3","xh_m5_4","xh_m5_5","xh_m6","xh_m6_2","xh_m6_3","xh_m6_4","xh_m6_5","xh_m7","xh_m7_2","xh_m7_3","xh_m7_4","xh_m7_5"]}
+,
+{"n":9,"t":"Work and school","d":"Jobs, the classroom, the fourth plural pair — and how the street says work","lessons":["xh_w1","xh_w1_2","xh_w1_3","xh_w1_4","xh_w1_5","xh_w2","xh_w2_2","xh_w2_3","xh_w2_4","xh_w2_5","xh_w3","xh_w3_2","xh_w3_3","xh_w3_4","xh_w3_5","xh_w4","xh_w4_2","xh_w4_3","xh_w4_4","xh_w4_5","xh_w5","xh_w5_2","xh_w5_3","xh_w5_4","xh_w5_5","xh_w6","xh_w6_2","xh_w6_3","xh_w6_4","xh_w6_5","xh_w7","xh_w7_2","xh_w7_3","xh_w7_4","xh_w7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka","xh_d1":"amanzi","xh_d2":"isonka","xh_d3":"nditya","xh_d4":"inyama","xh_d5":"umbona","xh_d6":"thanda","xh_d7":"mnandi","xh_h1":"igumbi","xh_h2":"isitulo","xh_h3":"isi- izi-","xh_h4":"iphi?","xh_h5":"imbiza","xh_h6":"ndipheka","xh_h7":"-ini","xh_t1":"iteksi","xh_t2":"ndiya","xh_t3":"e- -eni","xh_t4":"yima!","xh_t5":"kude","xh_t6":"indlela?","xh_t7":"si-","xh_m1":"imali","xh_m2":"yimalini?","xh_m3":"uku-","xh_m4":"le esi eli","xh_m5":"iswekile","xh_m6":"iyadura","xh_m7":"unayo?","xh_w1":"umsebenzi","xh_w2":"utitshala","xh_w3":"um- imi-","xh_w4":"-isa","xh_w5":"ifowuni","xh_w6":"iholide","xh_w7":"phangela"};
 
 const XH_SRS_SEED=[];
 
