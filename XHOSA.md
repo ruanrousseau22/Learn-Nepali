@@ -160,7 +160,15 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       (ikhaya, Ukhona utata?, ukhona/akekho, usekhaya), f7 family
       conversation + si-/ba- concords (sonke, sihlala/bahlala, kunye,
       Unjani umama?, uphilile) — completes the ndi/u/si/ba person set.
-- [ ] Zones 4–6 next (Numbers & time, Food & drink, Around the home).
+- [x] Zone 4 (Numbers, days & time) COMPLETE (140 lessons total, 864 ex,
+      217 clips): n1 1-5, n2 6-10 (sixhenxe double-click), n3 Mon-Fri
+      built from the numbers (uLwesibini=2nd day...), n4 weekend
+      (uMgqibelo/iCawa also-church note, impelaveki, namhlanje),
+      n5 izolo/ngomso/ngoku (now-now note)/kusasa/ebusuku, n6 nini? +
+      ngo-/nge- day forms + kaninzi, n7 usuku/inyanga(moon)/unyaka +
+      yonke imihla habit sentence. English-numbers reality note in n1.
+      Checker caught 1 distractor-before-note (uLwesibini), fixed.
+- [ ] Zones 5-6 next (Food & drink, Around the home).
 - [ ] Zones 7–9.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).

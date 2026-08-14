@@ -940,6 +940,305 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — the clan name older than a surname is the…","o":["isiduko","igama","intlonipho"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"akekho","o":["akekho","ukhona","usekhaya"],"a":0},
 {"t":"mc","q":"Review — the plural of ubhuti is…","o":["oobhuti","ababhuti","abahuti"],"a":0}
+]},
+
+/* ---------- n1 · Numbers 1–5 ---------- */
+{"id":"xh_n1","title":"Numbers one to five","step":"learn","meta":"Counting begins — inye to zintlanu","vocab":[["inye","EE-nyeh","1"],["zimbini","zeem-BEE-nee","2"],["zintathu","zeen-TAH-too","3"],["zine","ZEE-neh","4"],["zintlanu","zeen-TLAH-noo","5"]],"ex":[
+{"t":"note","tag":"Counting","q":"One, two, three","body":"<p>Counting in Xhosa: <b>inye</b> — one, <b>zimbini</b> — two, <b>zintathu</b> — three. Say them in rhythm; the zi- at the front is the counting voice.</p>","eg":[["inye","EE-nyeh","1"],["zimbini","zeem-BEE-nee","2"],["zintathu","zeen-TAH-too","3"]]},
+{"t":"li","q":"Which number do you hear?","say":"zimbini","o":["zimbini","inye","zintathu"],"a":0},
+{"t":"mc","q":"What is zintathu?","o":["3","2","5"],"a":0},
+{"t":"note","tag":"Four and five","q":"Zine and zintlanu","body":"<p><b>Zine</b> — four, <b>zintlanu</b> — five, with the blown tl you learned in hl words. That is one hand counted.</p><p>Real-life honesty: in South Africa, prices, phone numbers and ages are usually said in <b>English</b>, even mid-Xhosa sentence. The native numbers still matter — for counting things, for the days of the week you are about to meet, and for understanding elders.</p>","eg":[["zine","ZEE-neh","4"],["zintlanu","zeen-TLAH-noo","5"]]},
+{"t":"li","q":"Which number do you hear?","say":"zintlanu","o":["zintlanu","zine"],"a":0},
+{"t":"mc","q":"What is zine?","o":["4","5","1"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"inye","o":["inye","zine","zimbini"],"a":0},
+{"t":"mc","q":"Prices and phone numbers in daily SA speech are usually said…","o":["in English","in old Xhosa","never aloud"],"a":0}
+]},
+{"id":"xh_n1_2","title":"Hearing 1–5","step":"recognize","meta":"Numbers by ear","vocab":[],"ex":[
+{"t":"li","q":"Which number do you hear?","say":"zintathu","o":["zintathu","zintlanu","zimbini"],"a":0},
+{"t":"mc","q":"Which one is 2?","o":["zimbini","zine","inye"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zine","o":["zine","inye","zintlanu"],"a":0},
+{"t":"mc","q":"What is zintlanu?","o":["5","4","3"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zimbini","o":["zimbini","zintathu","zine"],"a":0},
+{"t":"mc","q":"Which one is 1?","o":["inye","zine","zimbini"],"a":0}
+]},
+{"id":"xh_n1_3","title":"Building 1–5","step":"build","meta":"Spell the numbers","vocab":[],"ex":[
+{"t":"fill","q":"Complete: 2","s":"zimbi___","o":["ni","ne","na"],"a":0},
+{"t":"wb","q":"Build the number: 3","a":["zintathu"],"pool":["zintathu","zintlanu","zine"]},
+{"t":"fill","q":"Complete: 5","s":"zin___anu","o":["tl","hl","dl"],"a":0},
+{"t":"wb","q":"Build the number: 1","a":["inye"],"pool":["inye","zine","zimbini"]},
+{"t":"li","q":"Which number do you hear?","say":"zintlanu","o":["zintlanu","zintathu","inye"],"a":0}
+]},
+{"id":"xh_n1_4","title":"1–5 in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the number","pairs":[["inye","1"],["zimbini","2"],["zintathu","3"]]},
+{"t":"li","q":"Which number do you hear?","say":"zine","o":["zine","zimbini","zintlanu"],"a":0},
+{"t":"match","q":"Match the number","pairs":[["zine","4"],["zintlanu","5"]]},
+{"t":"mc","q":"Count up: inye, zimbini, … what comes next?","o":["zintathu","zine","zintlanu"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zintathu","o":["zintathu","zine","inye"],"a":0}
+]},
+{"id":"xh_n1_5","title":"Checkpoint: 1–5","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What is zimbini?","o":["2","3","4"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"inye","o":["inye","zimbini","zine"],"a":0},
+{"t":"mc","q":"Which one is 5?","o":["zintlanu","zintathu","zine"],"a":0},
+{"t":"mc","q":"Count up: zintathu, zine, … what comes next?","o":["zintlanu","zimbini","inye"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zintlanu","o":["zintlanu","zine","zintathu"],"a":0},
+{"t":"mc","q":"Review — which one means all of us?","o":["sonke","kunye","sihlala"],"a":0}
+]},
+
+/* ---------- n2 · Numbers 6–10 ---------- */
+{"id":"xh_n2","title":"Numbers six to ten","step":"learn","meta":"The second hand — with a double-click surprise","vocab":[["zintandathu","zeen-tahn-DAH-too","6"],["sixhenxe","see-XHEN-xeh","7"],["sibhozo","see-BAW-zaw","8"],["lithoba","lee-TAW-bah","9"],["lishumi","lee-SHOO-mee","10"]],"ex":[
+{"t":"note","tag":"Six to eight","q":"Zintandathu, sixhenxe, sibhozo","body":"<p><b>Zintandathu</b> — six. Then the famous one: <b>sixhenxe</b> — seven — TWO clicks in one number (xh… x…). Every learner trips on it; every Xhosa speaker smiles when you land it. <b>Sibhozo</b> — eight — is your reward: no clicks at all.</p>","eg":[["zintandathu","zeen-tahn-DAH-too","6"],["sixhenxe","see-XHEN-xeh","7"],["sibhozo","see-BAW-zaw","8"]]},
+{"t":"li","q":"Which number do you hear?","say":"sixhenxe","o":["sixhenxe","sibhozo","zintandathu"],"a":0},
+{"t":"mc","q":"What is sixhenxe?","o":["7","6","8"],"a":0},
+{"t":"note","tag":"Nine and ten","q":"Lithoba and lishumi","body":"<p><b>Lithoba</b> — nine, <b>lishumi</b> — ten. Both hands counted: you can now count everything from amaqanda in a tray to taxis in a rank.</p>","eg":[["lithoba","lee-TAW-bah","9"],["lishumi","lee-SHOO-mee","10"]]},
+{"t":"li","q":"Which number do you hear?","say":"lishumi","o":["lishumi","lithoba"],"a":0},
+{"t":"mc","q":"What is lithoba?","o":["9","10","8"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zintandathu","o":["zintandathu","sibhozo","sixhenxe"],"a":0},
+{"t":"mc","q":"The number with two clicks in it is…","o":["sixhenxe","sibhozo","lishumi"],"a":0}
+]},
+{"id":"xh_n2_2","title":"Hearing 6–10","step":"recognize","meta":"The upper hand by ear","vocab":[],"ex":[
+{"t":"li","q":"Which number do you hear?","say":"sibhozo","o":["sibhozo","sixhenxe","lithoba"],"a":0},
+{"t":"mc","q":"Which one is 10?","o":["lishumi","lithoba","zintandathu"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"lithoba","o":["lithoba","lishumi","sibhozo"],"a":0},
+{"t":"mc","q":"What is zintandathu?","o":["6","7","9"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"sixhenxe","o":["sixhenxe","zintandathu","lishumi"],"a":0},
+{"t":"mc","q":"Which one is 8?","o":["sibhozo","sixhenxe","lithoba"],"a":0}
+]},
+{"id":"xh_n2_3","title":"Building 6–10","step":"build","meta":"Spell the upper hand","vocab":[],"ex":[
+{"t":"fill","q":"Complete: 7","s":"si___enxe","o":["xh","x","qh"],"a":0},
+{"t":"wb","q":"Build the number: 10","a":["lishumi"],"pool":["lishumi","lithoba","sibhozo"]},
+{"t":"fill","q":"Complete: 8","s":"sibho___o","o":["z","s","dl"],"a":0},
+{"t":"wb","q":"Build the number: 6","a":["zintandathu"],"pool":["zintandathu","zintathu","sixhenxe"]},
+{"t":"li","q":"Which number do you hear?","say":"lithoba","o":["lithoba","zintandathu","sixhenxe"],"a":0}
+]},
+{"id":"xh_n2_4","title":"6–10 in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the number","pairs":[["zintandathu","6"],["sixhenxe","7"],["sibhozo","8"]]},
+{"t":"li","q":"Which number do you hear?","say":"lishumi","o":["lishumi","sibhozo","lithoba"],"a":0},
+{"t":"match","q":"Match the number","pairs":[["lithoba","9"],["lishumi","10"]]},
+{"t":"mc","q":"Count up: sixhenxe, sibhozo, … what comes next?","o":["lithoba","lishumi","zintandathu"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"sibhozo","o":["sibhozo","lithoba","zintandathu"],"a":0}
+]},
+{"id":"xh_n2_5","title":"Checkpoint: 6–10","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What is sibhozo?","o":["8","7","9"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"zintandathu","o":["zintandathu","sixhenxe","lishumi"],"a":0},
+{"t":"mc","q":"Which one is 9?","o":["lithoba","lishumi","sibhozo"],"a":0},
+{"t":"mc","q":"What is lishumi?","o":["10","9","6"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"sixhenxe","o":["sixhenxe","sibhozo","lithoba"],"a":0},
+{"t":"mc","q":"Review — what is zintlanu?","o":["5","4","6"],"a":0}
+]},
+
+/* ---------- n3 · The working week ---------- */
+{"id":"xh_n3","title":"Monday to Friday","step":"learn","meta":"The days are built from your numbers","vocab":[["uMvulo","oom-VOO-law","Monday"],["uLwesibini","oo-lweh-see-BEE-nee","Tuesday"],["uLwesithathu","oo-lweh-see-TAH-too","Wednesday"],["uLwesine","oo-lweh-SEE-neh","Thursday"],["uLwesihlanu","oo-lweh-see-HLAH-noo","Friday"]],"ex":[
+{"t":"note","tag":"The opener","q":"Monday opens the week","body":"<p><b>UMvulo</b> — Monday — comes from <i>vula</i>, to open: the day that opens the week.</p>","eg":[["uMvulo","oom-VOO-law","Monday"]]},
+{"t":"li","q":"Which one do you hear?","say":"uMvulo","o":["uMvulo","umzala"],"a":0},
+{"t":"mc","q":"uMvulo — the day that opens the week — is…","o":["Monday","Sunday","Friday"],"a":0},
+{"t":"note","tag":"Numbered days","q":"Your numbers pay off","body":"<p>Now the payoff for learning numbers: Tuesday to Friday are literally <i>the second</i>, <i>the third</i>, <i>the fourth</i>, <i>the fifth</i>. <b>uLwesibini</b> (bini — two), <b>uLwesithathu</b> (thathu — three), <b>uLwesine</b> (ne — four), <b>uLwesihlanu</b> (hlanu — five). Hear the number inside each day and you never mix them up.</p>","eg":[["uLwesibini","oo-lweh-see-BEE-nee","Tuesday"],["uLwesithathu","oo-lweh-see-TAH-too","Wednesday"],["uLwesine","oo-lweh-SEE-neh","Thursday"]]},
+{"t":"li","q":"Which day do you hear?","say":"uLwesithathu","o":["uLwesithathu","uLwesibini","uLwesine"],"a":0},
+{"t":"mc","q":"uLwesine carries the number four — it is…","o":["Thursday","Tuesday","Wednesday"],"a":0},
+{"t":"note","tag":"Friday","q":"The fifth day","body":"<p><b>uLwesihlanu</b> — the fifth day — Friday. The best-loved day of the working week, in any language.</p>","eg":[["uLwesihlanu","oo-lweh-see-HLAH-noo","Friday"]]},
+{"t":"li","q":"Which day do you hear?","say":"uLwesihlanu","o":["uLwesihlanu","uLwesine","uMvulo"],"a":0},
+{"t":"mc","q":"Which day is Tuesday?","o":["uLwesibini","uLwesithathu","uMvulo"],"a":0}
+]},
+{"id":"xh_n3_2","title":"Hearing the week","step":"recognize","meta":"Which day is it?","vocab":[],"ex":[
+{"t":"li","q":"Which day do you hear?","say":"uLwesibini","o":["uLwesibini","uLwesine","uLwesithathu"],"a":0},
+{"t":"mc","q":"uLwesithathu is…","o":["Wednesday","Tuesday","Thursday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uLwesine","o":["uLwesine","uLwesihlanu","uMvulo"],"a":0},
+{"t":"mc","q":"Which day is Friday?","o":["uLwesihlanu","uLwesine","uLwesibini"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uMvulo","o":["uMvulo","uLwesibini","uLwesihlanu"],"a":0},
+{"t":"mc","q":"The number hiding inside uLwesibini is…","o":["two","three","five"],"a":0}
+]},
+{"id":"xh_n3_3","title":"Building the week","step":"build","meta":"Assemble the days","vocab":[],"ex":[
+{"t":"fill","q":"Complete: Wednesday (the third day)","s":"uLwesi___athu","o":["th","t","tl"],"a":0},
+{"t":"wb","q":"Build the day: Friday","a":["uLwesihlanu"],"pool":["uLwesihlanu","uLwesine","uMvulo"]},
+{"t":"fill","q":"Complete: Monday","s":"uMvu___","o":["lo","la","le"],"a":0},
+{"t":"wb","q":"Build the day: Tuesday","a":["uLwesibini"],"pool":["uLwesibini","uLwesithathu","uLwesihlanu"]},
+{"t":"li","q":"Which day do you hear?","say":"uLwesine","o":["uLwesine","uLwesithathu","uLwesibini"],"a":0}
+]},
+{"id":"xh_n3_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the day","pairs":[["uMvulo","Monday"],["uLwesibini","Tuesday"],["uLwesithathu","Wednesday"]]},
+{"t":"li","q":"Which day do you hear?","say":"uLwesihlanu","o":["uLwesihlanu","uLwesine","uLwesithathu"],"a":0},
+{"t":"match","q":"Match the day","pairs":[["uLwesine","Thursday"],["uLwesihlanu","Friday"]]},
+{"t":"mc","q":"The days run uMvulo, uLwesibini, … what comes next?","o":["uLwesithathu","uLwesine","uLwesihlanu"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uLwesithathu","o":["uLwesithathu","uMvulo","uLwesine"],"a":0}
+]},
+{"id":"xh_n3_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"uLwesihlanu is…","o":["Friday","Thursday","Monday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uLwesibini","o":["uLwesibini","uLwesihlanu","uMvulo"],"a":0},
+{"t":"mc","q":"Which day carries the number three?","o":["uLwesithathu","uLwesibini","uLwesine"],"a":0},
+{"t":"mc","q":"uMvulo comes from vula, to…","o":["open","close","rest"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uMvulo","o":["uMvulo","uLwesine","uLwesithathu"],"a":0},
+{"t":"mc","q":"Review — what is sixhenxe?","o":["7","6","8"],"a":0}
+]},
+
+/* ---------- n4 · Weekend & today ---------- */
+{"id":"xh_n4","title":"The weekend","step":"learn","meta":"uMgqibelo, iCawa — and namhlanje","vocab":[["uMgqibelo","oom-gqee-BEH-law","Saturday"],["iCawa","ee-CAH-wah","Sunday"],["impelaveki","eem-peh-lah-VEH-kee","weekend"],["iveki","ee-VEH-kee","week"],["namhlanje","nahm-HLAHN-jeh","today"]],"ex":[
+{"t":"note","tag":"Saturday","q":"The day that finishes","body":"<p><b>uMgqibelo</b> — Saturday — hides the deep gq click and comes from <i>gqibela</i>, to finish: the day the working week is done.</p>","eg":[["uMgqibelo","oom-gqee-BEH-law","Saturday"]]},
+{"t":"li","q":"Which day do you hear?","say":"uMgqibelo","o":["uMgqibelo","uLwesihlanu"],"a":0},
+{"t":"mc","q":"uMgqibelo — from gqibela, to finish — is…","o":["Saturday","Sunday","Monday"],"a":0},
+{"t":"note","tag":"Sunday","q":"iCawa — with your first click","body":"<p><b>iCawa</b> — Sunday — starts with the dental c click you mastered first. The word also means <i>church</i>: in Xhosa life, Sunday and church share a name.</p>","eg":[["iCawa","ee-CAH-wah","Sunday"]]},
+{"t":"li","q":"Which day do you hear?","say":"iCawa","o":["iCawa","uMgqibelo"],"a":0},
+{"t":"mc","q":"iCawa means Sunday and also…","o":["church","market","rest"],"a":0},
+{"t":"note","tag":"Week and today","q":"Iveki, impelaveki, namhlanje","body":"<p><b>Iveki</b> is <i>the week</i> and <b>impelaveki</b> — <i>the end of the week</i> — is the weekend. <b>Namhlanje</b> is <i>today</i>: Yiveki entsha namhlanje — but one word at a time.</p>","eg":[["iveki","ee-VEH-kee","week"],["impelaveki","eem-peh-lah-VEH-kee","weekend"],["namhlanje","nahm-HLAHN-jeh","today"]]},
+{"t":"li","q":"Which one do you hear?","say":"impelaveki","o":["impelaveki","iveki","namhlanje"],"a":0},
+{"t":"mc","q":"namhlanje means…","o":["today","week","weekend"],"a":0}
+]},
+{"id":"xh_n4_2","title":"Hearing the weekend","step":"recognize","meta":"Weekend words by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"iveki","o":["iveki","impelaveki","iCawa"],"a":0},
+{"t":"mc","q":"What does impelaveki mean?","o":["weekend","week","Sunday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uMgqibelo","o":["uMgqibelo","iCawa","namhlanje"],"a":0},
+{"t":"mc","q":"Which one is Sunday?","o":["iCawa","uMgqibelo","uMvulo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"namhlanje","o":["namhlanje","iveki","uMgqibelo"],"a":0},
+{"t":"mc","q":"The deep gq click hides inside…","o":["uMgqibelo","iCawa","iveki"],"a":0}
+]},
+{"id":"xh_n4_3","title":"Building weekend words","step":"build","meta":"Assemble the days off","vocab":[],"ex":[
+{"t":"fill","q":"Complete: Saturday","s":"uM___ibelo","o":["gq","q","gc"],"a":0},
+{"t":"wb","q":"Build: weekend","a":["impelaveki"],"pool":["impelaveki","iveki","namhlanje"]},
+{"t":"fill","q":"Complete: Sunday","s":"i___awa","o":["C","X","Q"],"a":0},
+{"t":"wb","q":"Build: today","a":["namhlanje"],"pool":["namhlanje","iveki","iCawa"]},
+{"t":"li","q":"Which one do you hear?","say":"iCawa","o":["iCawa","uMgqibelo","impelaveki"],"a":0}
+]},
+{"id":"xh_n4_4","title":"The weekend in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["uMgqibelo","Saturday"],["iCawa","Sunday"],["impelaveki","weekend"]]},
+{"t":"li","q":"Which one do you hear?","say":"iveki","o":["iveki","namhlanje","iCawa"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iveki","week"],["namhlanje","today"]]},
+{"t":"mc","q":"Namhlanje yiCawa means today is…","o":["Sunday","Saturday","Monday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"uMgqibelo","o":["uMgqibelo","uLwesihlanu","iCawa"],"a":0}
+]},
+{"id":"xh_n4_5","title":"Checkpoint: the weekend","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does iveki mean?","o":["week","weekend","today"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"impelaveki","o":["impelaveki","iveki","uMgqibelo"],"a":0},
+{"t":"mc","q":"Which one is Saturday?","o":["uMgqibelo","iCawa","uLwesihlanu"],"a":0},
+{"t":"mc","q":"iCawa shares its name with…","o":["church","school","market"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"namhlanje","o":["namhlanje","impelaveki","iCawa"],"a":0},
+{"t":"mc","q":"Review — uLwesine is…","o":["Thursday","Tuesday","Friday"],"a":0}
+]},
+
+/* ---------- n5 · Yesterday, tomorrow, now ---------- */
+{"id":"xh_n5","title":"Yesterday and tomorrow","step":"learn","meta":"Placing yourself in time","vocab":[["izolo","ee-ZAW-law","yesterday"],["ngomso","NGAWM-saw","tomorrow"],["ngoku","NGAW-koo","now"],["kusasa","koo-SAH-sah","in the morning"],["ebusuku","eh-boo-SOO-koo","at night"]],"ex":[
+{"t":"note","tag":"Three days","q":"Izolo, namhlanje, ngomso","body":"<p>The time line of every conversation: <b>izolo</b> — yesterday, namhlanje — today (you know it), <b>ngomso</b> — tomorrow. Sobonana ngomso — see you tomorrow — you will hear it at every parting.</p>","eg":[["izolo","ee-ZAW-law","yesterday"],["ngomso","NGAWM-saw","tomorrow"]]},
+{"t":"li","q":"Which one do you hear?","say":"ngomso","o":["ngomso","izolo"],"a":0},
+{"t":"mc","q":"What does izolo mean?","o":["yesterday","tomorrow","today"],"a":0},
+{"t":"note","tag":"Right now","q":"Ngoku","body":"<p><b>Ngoku</b> is <i>now</i> — and in Cape Town speech you will hear <i>ngoku ngoku</i>, now-now, which somehow means <i>very soon but not quite now</i>. South African time has its own grammar.</p>","eg":[["ngoku","NGAW-koo","now"]]},
+{"t":"li","q":"Which one do you hear?","say":"ngoku","o":["ngoku","ngomso"],"a":0},
+{"t":"mc","q":"ngoku ngoku — now-now — really means…","o":["very soon","immediately","yesterday"],"a":0},
+{"t":"note","tag":"Morning and night","q":"Kusasa and ebusuku","body":"<p><b>Kusasa</b> — <i>in the morning</i> (also <i>tomorrow morning</i>) — and <b>ebusuku</b> — <i>at night</i>. Sobonana kusasa: see you in the morning.</p>","eg":[["kusasa","koo-SAH-sah","in the morning"],["ebusuku","eh-boo-SOO-koo","at night"]]},
+{"t":"li","q":"Which one do you hear?","say":"ebusuku","o":["ebusuku","kusasa"],"a":0},
+{"t":"mc","q":"kusasa means…","o":["in the morning","at night","yesterday"],"a":0}
+]},
+{"id":"xh_n5_2","title":"Hearing time words","step":"recognize","meta":"When exactly?","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"izolo","o":["izolo","ngomso","ngoku"],"a":0},
+{"t":"mc","q":"What does ngomso mean?","o":["tomorrow","yesterday","now"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kusasa","o":["kusasa","ebusuku","izolo"],"a":0},
+{"t":"mc","q":"Which one means at night?","o":["ebusuku","kusasa","ngoku"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ngoku","o":["ngoku","ngomso","kusasa"],"a":0},
+{"t":"mc","q":"Sobonana ngomso means see you…","o":["tomorrow","tonight","now"],"a":0}
+]},
+{"id":"xh_n5_3","title":"Building time words","step":"build","meta":"Place events in time","vocab":[],"ex":[
+{"t":"fill","q":"Complete: tomorrow","s":"ngo___o","o":["ms","mz","nts"],"a":0},
+{"t":"wb","q":"Build: see you tomorrow","a":["sobonana","ngomso"],"pool":["sobonana","ngomso","izolo"]},
+{"t":"fill","q":"Complete: at night","s":"ebusu___","o":["ku","ko","kho"],"a":0},
+{"t":"wb","q":"Build: yesterday","a":["izolo"],"pool":["izolo","ngoku","kusasa"]},
+{"t":"li","q":"Which one do you hear?","say":"ngomso","o":["ngomso","ngoku","ebusuku"],"a":0}
+]},
+{"id":"xh_n5_4","title":"Time in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["izolo","yesterday"],["ngomso","tomorrow"],["ngoku","now"]]},
+{"t":"li","q":"Which one do you hear?","say":"kusasa","o":["kusasa","ngomso","ngoku"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kusasa","in the morning"],["ebusuku","at night"]]},
+{"t":"mc","q":"The natural order is izolo, namhlanje, …","o":["ngomso","ngoku","kusasa"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ebusuku","o":["ebusuku","izolo","kusasa"],"a":0}
+]},
+{"id":"xh_n5_5","title":"Checkpoint: time words","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ngoku mean?","o":["now","tomorrow","in the morning"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"izolo","o":["izolo","ebusuku","ngomso"],"a":0},
+{"t":"mc","q":"Which one means in the morning?","o":["kusasa","ebusuku","izolo"],"a":0},
+{"t":"mc","q":"A friend says Sobonana kusasa. You will meet…","o":["in the morning","at night","yesterday"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ngoku","o":["ngoku","kusasa","izolo"],"a":0},
+{"t":"mc","q":"Review — impelaveki means…","o":["weekend","week","Sunday"],"a":0}
+]},
+
+/* ---------- n6 · When? ---------- */
+{"id":"xh_n6","title":"When?","step":"learn","meta":"Nini — and putting on a day","vocab":[["nini?","NEE-nee","when?"],["Uza nini?","OO-zah NEE-nee","when are you coming?"],["ngoMvulo","ngawm-VOO-law","on Monday"],["ngeCawa","ngeh-CAH-wah","on Sunday"],["kaninzi","kah-NEEN-zee","often"]],"ex":[
+{"t":"note","tag":"The question","q":"Nini — when?","body":"<p><b>Nini?</b> is <i>when?</i> — and with iza (come) from your first lessons: <b>Uza nini?</b> — <i>when are you coming?</i> — the question every Xhosa household asks visitors.</p>","eg":[["nini?","NEE-nee","when?"],["Uza nini?","OO-zah NEE-nee","when are you coming?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","nini?"],"a":0},
+{"t":"mc","q":"Uza nini? asks…","o":["when are you coming?","where are you going?","who is coming?"],"a":0},
+{"t":"note","tag":"On a day","q":"Ngo- and nge- dress the days","body":"<p>To say ON a day, days take <b>ngo-</b> or <b>nge-</b>: <b>ngoMvulo</b> — <i>on Monday</i>, <b>ngeCawa</b> — <i>on Sunday</i>. So: Ndiza ngoMvulo — I am coming on Monday.</p>","eg":[["ngoMvulo","ngawm-VOO-law","on Monday"],["ngeCawa","ngeh-CAH-wah","on Sunday"]]},
+{"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","ngeCawa"],"a":0},
+{"t":"mc","q":"ngeCawa means…","o":["on Sunday","on Monday","next week"],"a":0},
+{"t":"note","tag":"Often","q":"Kaninzi — many times","body":"<p><b>Kaninzi</b> — <i>often, many times</i>. Ndiza kaninzi — I come often. The ka- makes a how-many-times word; ninzi is <i>many</i>.</p>","eg":[["kaninzi","kah-NEEN-zee","often"]]},
+{"t":"li","q":"Which one do you hear?","say":"kaninzi","o":["kaninzi","nini?"],"a":0},
+{"t":"mc","q":"kaninzi means…","o":["often","never","once"],"a":0}
+]},
+{"id":"xh_n6_2","title":"Hearing when","step":"recognize","meta":"Questions and days by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"nini?","o":["nini?","kaninzi","Uza nini?"],"a":0},
+{"t":"mc","q":"What does ngoMvulo mean?","o":["on Monday","on Sunday","every day"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ngeCawa","o":["ngeCawa","ngoMvulo","nini?"],"a":0},
+{"t":"mc","q":"Which one means when?","o":["nini?","phi?","ngubani?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","ngeCawa","kaninzi"],"a":0},
+{"t":"mc","q":"Ndiza ngoMvulo means…","o":["I am coming on Monday","I came yesterday","come on Monday"],"a":0}
+]},
+{"id":"xh_n6_3","title":"Building when-phrases","step":"build","meta":"Ask and answer about time","vocab":[],"ex":[
+{"t":"fill","q":"Complete: when are you coming?","s":"Uza ni___?","o":["ni","na","ne"],"a":0},
+{"t":"wb","q":"Build: I am coming on Monday","a":["ndiza","ngoMvulo"],"pool":["ndiza","ngoMvulo","ngeCawa"]},
+{"t":"fill","q":"Complete: on Sunday","s":"nge___awa","o":["C","X","Q"],"a":0},
+{"t":"wb","q":"Build: when? often!","a":["nini","kaninzi"],"pool":["nini","kaninzi","ngomso"]},
+{"t":"li","q":"Which one do you hear?","say":"ngeCawa","o":["ngeCawa","Uza nini?","ngoMvulo"],"a":0}
+]},
+{"id":"xh_n6_4","title":"When in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["nini?","when?"],["Uza nini?","when are you coming?"],["kaninzi","often"]]},
+{"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","ngeCawa","nini?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ngoMvulo","on Monday"],["ngeCawa","on Sunday"]]},
+{"t":"mc","q":"Uza nini? — Ndiza … (tomorrow). Complete the answer.","o":["ngomso","izolo","ngoku"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kaninzi","o":["kaninzi","ngeCawa","Uza nini?"],"a":0}
+]},
+{"id":"xh_n6_5","title":"Checkpoint: when","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Nini? asks…","o":["when?","where?","who?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","kaninzi","ngeCawa"],"a":0},
+{"t":"mc","q":"Which one means often?","o":["kaninzi","nini?","ngoku"],"a":0},
+{"t":"mc","q":"A friend asks Uza nini? You will come on Sunday, so…","o":["Ndiza ngeCawa","Ndiza izolo","Uza ngoMvulo"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","nini?","ngoMvulo"],"a":0},
+{"t":"mc","q":"Review — what does ngomso mean?","o":["tomorrow","yesterday","today"],"a":0}
+]},
+
+/* ---------- n7 · Day, month, year ---------- */
+{"id":"xh_n7","title":"Day, month, year","step":"learn","meta":"The big units — and your daily habit","vocab":[["usuku","oo-SOO-koo","day"],["inyanga","ee-NYAH-ngah","month"],["unyaka","oo-NYAH-kah","year"],["yonke imihla","YAWN-keh ee-MEE-hlah","every day"],["Ndifunda isiXhosa yonke imihla","ndee-FOON-dah ee-see-XHAW-sah YAWN-keh ee-MEE-hlah","I learn Xhosa every day"]],"ex":[
+{"t":"note","tag":"The units","q":"Usuku, inyanga, unyaka","body":"<p><b>Usuku</b> — a day. <b>Inyanga</b> — a month, and also <i>the moon</i>: months follow the moon. <b>Unyaka</b> — a year.</p>","eg":[["usuku","oo-SOO-koo","day"],["inyanga","ee-NYAH-ngah","month"],["unyaka","oo-NYAH-kah","year"]]},
+{"t":"li","q":"Which one do you hear?","say":"inyanga","o":["inyanga","unyaka","usuku"],"a":0},
+{"t":"mc","q":"inyanga means month and also…","o":["the moon","the sun","the week"],"a":0},
+{"t":"note","tag":"The habit","q":"Yonke imihla — every day","body":"<p><b>Yonke imihla</b> — <i>every day</i>. And the sentence that will actually get you fluent: <b>Ndifunda isiXhosa yonke imihla</b> — <i>I learn Xhosa every day</i>. Say it, then make it true.</p>","eg":[["yonke imihla","YAWN-keh ee-MEE-hlah","every day"],["Ndifunda isiXhosa yonke imihla","ndee-FOON-dah ee-see-XHAW-sah YAWN-keh ee-MEE-hlah","I learn Xhosa every day"]]},
+{"t":"li","q":"Which one do you hear?","say":"yonke imihla","o":["yonke imihla","usuku"],"a":0},
+{"t":"mc","q":"Yonke imihla means…","o":["every day","every year","all night"],"a":0},
+{"t":"li","q":"Which sentence do you hear?","say":"Ndifunda isiXhosa yonke imihla","o":["Ndifunda isiXhosa yonke imihla","Ndifunda isiXhosa"],"a":0},
+{"t":"mc","q":"What does unyaka mean?","o":["year","month","day"],"a":0}
+]},
+{"id":"xh_n7_2","title":"Hearing the units","step":"recognize","meta":"Day, month, year by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"usuku","o":["usuku","unyaka","inyanga"],"a":0},
+{"t":"mc","q":"Which one means month?","o":["inyanga","unyaka","iveki"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"unyaka","o":["unyaka","usuku","yonke imihla"],"a":0},
+{"t":"mc","q":"From short to long: usuku, iveki, inyanga, …","o":["unyaka","izolo","impelaveki"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"yonke imihla","o":["yonke imihla","inyanga","usuku"],"a":0},
+{"t":"mc","q":"Ndifunda isiXhosa yonke imihla means…","o":["I learn Xhosa every day","I speak Xhosa a little","I learned Xhosa last year"],"a":0}
+]},
+{"id":"xh_n7_3","title":"Building the units","step":"build","meta":"Assemble your habit","vocab":[],"ex":[
+{"t":"fill","q":"Complete: month","s":"inya___a","o":["ng","ny","nk"],"a":0},
+{"t":"wb","q":"Build: every day","a":["yonke","imihla"],"pool":["yonke","imihla","usuku"]},
+{"t":"fill","q":"Complete: year","s":"unya___","o":["ka","ko","kha"],"a":0},
+{"t":"wb","q":"Build: I learn Xhosa every day","a":["ndifunda","isiXhosa","yonke","imihla"],"pool":["ndifunda","isiXhosa","yonke","imihla","kancinci"]},
+{"t":"li","q":"Which one do you hear?","say":"inyanga","o":["inyanga","yonke imihla","unyaka"],"a":0}
+]},
+{"id":"xh_n7_4","title":"The units in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["usuku","day"],["inyanga","month"],["unyaka","year"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa yonke imihla","o":["Ndifunda isiXhosa yonke imihla","yonke imihla","Ndifunda isiXhosa"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["yonke imihla","every day"],["Ndifunda isiXhosa yonke imihla","I learn Xhosa every day"]]},
+{"t":"mc","q":"Months follow the moon — which word carries both meanings?","o":["inyanga","unyaka","usuku"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"usuku","o":["usuku","inyanga","unyaka"],"a":0}
+]},
+{"id":"xh_n7_5","title":"Checkpoint: Zone 4 complete","step":"checkpoint","meta":"Numbers, days & time — show it all","vocab":[],"ex":[
+{"t":"mc","q":"What does usuku mean?","o":["day","week","month"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"unyaka","o":["unyaka","inyanga","usuku"],"a":0},
+{"t":"mc","q":"Review — count up: zintlanu, zintandathu, … what comes next?","o":["sixhenxe","sibhozo","lithoba"],"a":0},
+{"t":"mc","q":"Review — uLwesibini carries the number two — it is…","o":["Tuesday","Wednesday","Monday"],"a":0},
+{"t":"li","q":"Review — which day do you hear?","say":"iCawa","o":["iCawa","uMgqibelo","uMvulo"],"a":0},
+{"t":"mc","q":"Review — Sobonana ngomso means see you…","o":["tomorrow","in the morning","on Sunday"],"a":0},
+{"t":"mc","q":"The sentence that gets you fluent…","o":["Ndifunda isiXhosa yonke imihla","Andiqondi","Hamba kakuhle"],"a":0}
 ]}
 ];
 
@@ -949,9 +1248,11 @@ const XH_UNITS=[
 {"n":2,"t":"Greetings & people","d":"Unjani, names, bhuti nosisi — meeting Cape Town","lessons":["xh_g1","xh_g1_2","xh_g1_3","xh_g1_4","xh_g1_5","xh_g2","xh_g2_2","xh_g2_3","xh_g2_4","xh_g2_5","xh_g3","xh_g3_2","xh_g3_3","xh_g3_4","xh_g3_5","xh_g4","xh_g4_2","xh_g4_3","xh_g4_4","xh_g4_5","xh_g5","xh_g5_2","xh_g5_3","xh_g5_4","xh_g5_5","xh_g6","xh_g6_2","xh_g6_3","xh_g6_4","xh_g6_5","xh_g7","xh_g7_2","xh_g7_3","xh_g7_4","xh_g7_5"]}
 ,
 {"n":3,"t":"Family & respect","d":"Intsapho, intlonipho — the people closest to you","lessons":["xh_f1","xh_f1_2","xh_f1_3","xh_f1_4","xh_f1_5","xh_f2","xh_f2_2","xh_f2_3","xh_f2_4","xh_f2_5","xh_f3","xh_f3_2","xh_f3_3","xh_f3_4","xh_f3_5","xh_f4","xh_f4_2","xh_f4_3","xh_f4_4","xh_f4_5","xh_f5","xh_f5_2","xh_f5_3","xh_f5_4","xh_f5_5","xh_f6","xh_f6_2","xh_f6_3","xh_f6_4","xh_f6_5","xh_f7","xh_f7_2","xh_f7_3","xh_f7_4","xh_f7_5"]}
+,
+{"n":4,"t":"Numbers, days & time","d":"Amanani neentsuku — counting and the calendar","lessons":["xh_n1","xh_n1_2","xh_n1_3","xh_n1_4","xh_n1_5","xh_n2","xh_n2_2","xh_n2_3","xh_n2_4","xh_n2_5","xh_n3","xh_n3_2","xh_n3_3","xh_n3_4","xh_n3_5","xh_n4","xh_n4_2","xh_n4_3","xh_n4_4","xh_n4_5","xh_n5","xh_n5_2","xh_n5_3","xh_n5_4","xh_n5_5","xh_n6","xh_n6_2","xh_n6_3","xh_n6_4","xh_n6_5","xh_n7","xh_n7_2","xh_n7_3","xh_n7_4","xh_n7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke","xh_n1":"1-5","xh_n2":"6-10","xh_n3":"uMvulo","xh_n4":"iCawa","xh_n5":"izolo","xh_n6":"nini?","xh_n7":"unyaka"};
 
 const XH_SRS_SEED=[];
 
