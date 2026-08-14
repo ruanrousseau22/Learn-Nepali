@@ -638,6 +638,308 @@ const XH_LESSONS=[
 {"t":"mc","q":"Review — the friendly address for a young man is…","o":["bhuti","sisi","tata"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"Uhlala phi?","o":["Uhlala phi?","Uvela phi?","Unjani"],"a":0},
 {"t":"mc","q":"Review — the plural of umntwana is…","o":["abantwana","abantu","imintwana"],"a":0}
+]},
+
+/* ---------- f1 · Mother & father ---------- */
+{"id":"xh_f1","title":"Mother and father","step":"learn","meta":"The words that also address every elder","vocab":[["umama","oo-MAH-mah","mother"],["utata","oo-TAH-tah","father"],["umakhulu","oo-mah-KHOO-loo","grandmother"],["utatomkhulu","oo-tah-tawm-KHOO-loo","grandfather"],["Molo tata","MAW-law TAH-tah","hello sir"],["Molo mama","MAW-law MAH-mah","hello madam"]],"ex":[
+{"t":"note","tag":"Family first","q":"Umama and utata","body":"<p><b>Umama</b> is <i>mother</i> and <b>utata</b> is <i>father</i>. Kin words wear a bare <b>u-</b> in front — a small noun class reserved for people you call by name and family.</p>","eg":[["umama","oo-MAH-mah","mother"],["utata","oo-TAH-tah","father"]]},
+{"t":"li","q":"Which one do you hear?","say":"umama","o":["umama","utata"],"a":0},
+{"t":"mc","q":"What does utata mean?","o":["father","mother","grandfather"],"a":0},
+{"t":"note","tag":"Grandparents","q":"The great ones","body":"<p><b>Umakhulu</b> — <i>grandmother</i>, literally <i>the great mother</i> — and <b>utatomkhulu</b> — <i>grandfather</i>, <i>the great father</i>. Grandmothers hold Xhosa families together; you will hear <i>makhulu</i> spoken with real warmth.</p>","eg":[["umakhulu","oo-mah-KHOO-loo","grandmother"],["utatomkhulu","oo-tah-tawm-KHOO-loo","grandfather"]]},
+{"t":"li","q":"Which one do you hear?","say":"umakhulu","o":["umakhulu","utatomkhulu"],"a":0},
+{"t":"mc","q":"umakhulu means…","o":["grandmother","grandfather","mother"],"a":0},
+{"t":"note","tag":"Respect address","q":"Every elder is tata or mama","body":"<p>Here is the respect rule that opens doors: any man your parents age is addressed as <b>tata</b>, any woman as <b>mama</b> — related or not. <b>Molo tata</b>, <b>Molo mama</b>: the polite greeting to any elder in the street, the shop, the taxi.</p>","eg":[["Molo tata","MAW-law TAH-tah","hello sir"],["Molo mama","MAW-law MAH-mah","hello madam"]]},
+{"t":"li","q":"Which greeting do you hear?","say":"Molo mama","o":["Molo mama","Molo tata"],"a":0},
+{"t":"mc","q":"An older man you do not know helps you. You greet him…","o":["Molo tata","Molo bhuti","Molweni"],"a":0}
+]},
+{"id":"xh_f1_2","title":"Hearing the elders","step":"recognize","meta":"Mother, father, the great ones","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"utata","o":["utata","umama","umakhulu"],"a":0},
+{"t":"mc","q":"What does umama mean?","o":["mother","madam only","sister"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utatomkhulu","o":["utatomkhulu","umakhulu","utata"],"a":0},
+{"t":"mc","q":"Which one means grandfather?","o":["utatomkhulu","umakhulu","utata"],"a":0},
+{"t":"li","q":"Which greeting do you hear?","say":"Molo tata","o":["Molo tata","Molo mama","Molweni"],"a":0},
+{"t":"mc","q":"The address words for elders you do not know are…","o":["tata and mama","bhuti and sisi","wena and nawe"],"a":0}
+]},
+{"id":"xh_f1_3","title":"Building family words","step":"build","meta":"Assemble mother, father and the greetings","vocab":[],"ex":[
+{"t":"fill","q":"Complete: grandmother","s":"umakhu___","o":["lu","la","lo"],"a":0},
+{"t":"wb","q":"Build: hello madam","a":["molo","mama"],"pool":["molo","mama","tata"]},
+{"t":"fill","q":"Complete: father","s":"u___ta","o":["ta","da","tha"],"a":0},
+{"t":"wb","q":"Build: hello sir","a":["molo","tata"],"pool":["molo","tata","mama"]},
+{"t":"li","q":"Which one do you hear?","say":"umama","o":["umama","umakhulu","utata"],"a":0}
+]},
+{"id":"xh_f1_4","title":"Elders in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umama","mother"],["utata","father"],["umakhulu","grandmother"]]},
+{"t":"li","q":"Which one do you hear?","say":"Molo tata","o":["Molo tata","Molo mama","utatomkhulu"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utatomkhulu","grandfather"],["Molo tata","hello sir"],["Molo mama","hello madam"]]},
+{"t":"mc","q":"Kin words wear which little prefix?","o":["u-","i-","um-"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utata","o":["utata","umama","Molo mama"],"a":0}
+]},
+{"id":"xh_f1_5","title":"Checkpoint: mother & father","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does umakhulu mean?","o":["grandmother","grandfather","mother"],"a":0},
+{"t":"li","q":"Which greeting do you hear?","say":"Molo mama","o":["Molo mama","Molo tata","umama"],"a":0},
+{"t":"mc","q":"Which one means father?","o":["utata","utatomkhulu","umama"],"a":0},
+{"t":"mc","q":"An elder woman drops her bag. After helping, she thanks you and you say…","o":["Akunani mama","Hamba kakuhle","Ungubani?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utatomkhulu","o":["utatomkhulu","utata","umakhulu"],"a":0},
+{"t":"mc","q":"Review — the friendly address for a young woman is…","o":["sisi","mama","wena"],"a":0}
+]},
+
+/* ---------- f2 · Brothers & sisters ---------- */
+{"id":"xh_f2","title":"Brothers and sisters","step":"learn","meta":"ubhuti, usisi — and the oo- plural","vocab":[["ubhuti","oo-BHOO-tee","brother"],["usisi","oo-SEE-see","sister"],["oobhuti","aw-BHOO-tee","brothers"],["oosisi","aw-SEE-see","sisters"],["umzala","oom-ZAH-lah","cousin"]],"ex":[
+{"t":"note","tag":"Siblings","q":"From street address to family","body":"<p>You already use <b>bhuti</b> and <b>sisi</b> on the street. With the kin prefix <b>u-</b> they become the family words: <b>ubhuti</b> — <i>brother</i>, <b>usisi</b> — <i>sister</i>.</p>","eg":[["ubhuti","oo-BHOO-tee","brother"],["usisi","oo-SEE-see","sister"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubhuti","o":["ubhuti","usisi"],"a":0},
+{"t":"mc","q":"What does usisi mean?","o":["sister","brother","cousin"],"a":0},
+{"t":"note","tag":"The oo- plural","q":"One usisi, many oosisi","body":"<p>Kin words make their plural with <b>oo-</b>: <b>oobhuti</b> — <i>brothers</i>, <b>oosisi</b> — <i>sisters</i>. That is the second plural pattern you own, after um- to aba-.</p>","eg":[["oobhuti","aw-BHOO-tee","brothers"],["oosisi","aw-SEE-see","sisters"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"oosisi","o":["oosisi","usisi"],"a":0},
+{"t":"mc","q":"oobhuti means…","o":["brothers","brother","sisters"],"a":0},
+{"t":"note","tag":"Cousins","q":"Umzala — halfway a sibling","body":"<p><b>Umzala</b> is <i>cousin</i> — and in Xhosa families cousins are close enough that the line between cousin and sibling barely exists.</p>","eg":[["umzala","oom-ZAH-lah","cousin"]]},
+{"t":"li","q":"Which one do you hear?","say":"umzala","o":["umzala","ubhuti"],"a":0},
+{"t":"mc","q":"Which one means cousin?","o":["umzala","usisi","oobhuti"],"a":0}
+]},
+{"id":"xh_f2_2","title":"Hearing siblings","step":"recognize","meta":"One sibling or several","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","oosisi","ubhuti"],"a":0},
+{"t":"mc","q":"What does oosisi mean?","o":["sisters","sister","brothers"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"oobhuti","o":["oobhuti","ubhuti","umzala"],"a":0},
+{"t":"mc","q":"Which one means brother?","o":["ubhuti","oobhuti","umzala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umzala","o":["umzala","usisi","oobhuti"],"a":0},
+{"t":"mc","q":"The kin plural prefix is…","o":["oo-","aba-","izi-"],"a":0}
+]},
+{"id":"xh_f2_3","title":"Building sibling words","step":"build","meta":"Singulars and plurals by hand","vocab":[],"ex":[
+{"t":"fill","q":"Complete: brothers","s":"___bhuti","o":["oo","u","aba"],"a":0},
+{"t":"wb","q":"Build the word: sister","a":["usisi"],"pool":["usisi","oosisi","umzala"]},
+{"t":"fill","q":"Complete: cousin","s":"um___ala","o":["z","dl","ts"],"a":0},
+{"t":"wb","q":"Build the word: sisters","a":["oosisi"],"pool":["oosisi","usisi","ubhuti"]},
+{"t":"li","q":"Which one do you hear?","say":"ubhuti","o":["ubhuti","oobhuti","usisi"],"a":0}
+]},
+{"id":"xh_f2_4","title":"Siblings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ubhuti","brother"],["usisi","sister"],["umzala","cousin"]]},
+{"t":"li","q":"Which one do you hear?","say":"oosisi","o":["oosisi","oobhuti","usisi"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["oobhuti","brothers"],["oosisi","sisters"]]},
+{"t":"mc","q":"usisi with the street sense of sis drops its prefix to become…","o":["sisi","oosisi","umzala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","umzala","ubhuti"],"a":0}
+]},
+{"id":"xh_f2_5","title":"Checkpoint: siblings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does umzala mean?","o":["cousin","brother","uncle"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"oobhuti","o":["oobhuti","ubhuti","oosisi"],"a":0},
+{"t":"mc","q":"The plural of usisi is…","o":["oosisi","abasisi","izisisi"],"a":0},
+{"t":"mc","q":"Which one means brother?","o":["ubhuti","umzala","utata"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","oosisi","umzala"],"a":0},
+{"t":"mc","q":"Review — which one means grandmother?","o":["umakhulu","utatomkhulu","umama"],"a":0}
+]},
+
+/* ---------- f3 · My family ---------- */
+{"id":"xh_f3","title":"My family","step":"learn","meta":"Wam and wakho — my and your, for people","vocab":[["intsapho","een-TSAH-paw","family"],["abazali","ah-bah-ZAH-lee","parents"],["umama wam","oo-MAH-mah WAHM","my mother"],["utata wakho","oo-TAH-tah WAH-kaw","your father"],["usisi wam","oo-SEE-see WAHM","my sister"],["ubhuti wakho","oo-BHOO-tee WAH-kaw","your brother"]],"ex":[
+{"t":"note","tag":"The family","q":"Intsapho and abazali","body":"<p><b>Intsapho</b> is <i>the family</i> and <b>abazali</b> are <i>the parents</i> — an aba- plural you can now read at sight.</p>","eg":[["intsapho","een-TSAH-paw","family"],["abazali","ah-bah-ZAH-lee","parents"]]},
+{"t":"li","q":"Which one do you hear?","say":"abazali","o":["abazali","intsapho"],"a":0},
+{"t":"mc","q":"What does intsapho mean?","o":["family","parents","children"],"a":0},
+{"t":"note","tag":"My and your","q":"Wam and wakho follow the person","body":"<p>With people, <i>my</i> is <b>wam</b> and <i>your</i> is <b>wakho</b>, placed AFTER the noun: <b>umama wam</b> — <i>my mother</i>; <b>utata wakho</b> — <i>your father</i>.</p><p>You met <b>lam/lakho</b> with igama — the little word changes shape to match its noun. Do not memorise the system; your ear will collect the pairs.</p>","eg":[["umama wam","oo-MAH-mah WAHM","my mother"],["utata wakho","oo-TAH-tah WAH-kaw","your father"]]},
+{"t":"li","q":"Which one do you hear?","say":"umama wam","o":["umama wam","utata wakho"],"a":0},
+{"t":"mc","q":"utata wakho means…","o":["your father","my father","your brother"],"a":0},
+{"t":"note","tag":"Practice pairs","q":"My sister, your brother","body":"<p>The same pattern rolls on: <b>usisi wam</b> — <i>my sister</i>, <b>ubhuti wakho</b> — <i>your brother</i>. Wam for mine, wakho for yours — after the person.</p>","eg":[["usisi wam","oo-SEE-see WAHM","my sister"],["ubhuti wakho","oo-BHOO-tee WAH-kaw","your brother"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubhuti wakho","o":["ubhuti wakho","usisi wam"],"a":0},
+{"t":"mc","q":"Which one means my sister?","o":["usisi wam","usisi wakho","ubhuti wam"],"a":0}
+]},
+{"id":"xh_f3_2","title":"Hearing mine and yours","step":"recognize","meta":"Wam or wakho?","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"intsapho","o":["intsapho","abazali","umama wam"],"a":0},
+{"t":"mc","q":"What does abazali mean?","o":["parents","family","grandparents"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utata wakho","o":["utata wakho","umama wam","ubhuti wakho"],"a":0},
+{"t":"mc","q":"Which one means my mother?","o":["umama wam","umama wakho","utata wam"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"usisi wam","o":["usisi wam","ubhuti wakho","abazali"],"a":0},
+{"t":"mc","q":"The word for my that follows a person is…","o":["wam","lam","nam"],"a":0}
+]},
+{"id":"xh_f3_3","title":"Building family phrases","step":"build","meta":"Mine and yours, assembled","vocab":[],"ex":[
+{"t":"fill","q":"Complete: my mother","s":"umama ___","o":["wam","wakho","lam"],"a":0},
+{"t":"wb","q":"Build: your father","a":["utata","wakho"],"pool":["utata","wakho","wam"]},
+{"t":"fill","q":"Complete: parents","s":"aba___ali","o":["z","s","dl"],"a":0},
+{"t":"wb","q":"Build: my sister","a":["usisi","wam"],"pool":["usisi","wam","wakho"]},
+{"t":"li","q":"Which one do you hear?","say":"abazali","o":["abazali","intsapho","utata wakho"],"a":0}
+]},
+{"id":"xh_f3_4","title":"Family phrases in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intsapho","family"],["abazali","parents"],["umama wam","my mother"]]},
+{"t":"li","q":"Which one do you hear?","say":"ubhuti wakho","o":["ubhuti wakho","usisi wam","utata wakho"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utata wakho","your father"],["usisi wam","my sister"],["ubhuti wakho","your brother"]]},
+{"t":"mc","q":"With igama the pair was lam/lakho; with people it is…","o":["wam and wakho","nam and nakho","yam and yakho"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umama wam","o":["umama wam","abazali","usisi wam"],"a":0}
+]},
+{"id":"xh_f3_5","title":"Checkpoint: my family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does abazali mean?","o":["parents","family","cousins"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"intsapho","o":["intsapho","abazali","umzala"],"a":0},
+{"t":"mc","q":"Which one means your brother?","o":["ubhuti wakho","ubhuti wam","oobhuti"],"a":0},
+{"t":"mc","q":"umama wam means…","o":["my mother","your mother","my grandmother"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"utata wakho","o":["utata wakho","utata","umama wam"],"a":0},
+{"t":"mc","q":"Review — which one means people?","o":["abantu","abazali","abantwana"],"a":0}
+]},
+
+/* ---------- f4 · Who is this? ---------- */
+{"id":"xh_f4","title":"Who is this?","step":"learn","meta":"Introduce your people","vocab":[["lo","LAW","this person"],["Ngubani lo?","ngoo-BAH-nee LAW","who is this?"],["yena","YEH-nah","he or she"],["Lo ngumama wam","LAW ngoo-MAH-mah WAHM","this is my mother"],["Lo ngutata wam","LAW ngoo-TAH-tah WAHM","this is my father"],["nguye","NGOO-yeh","it is him"]],"ex":[
+{"t":"note","tag":"Pointing politely","q":"Lo — this person","body":"<p><b>Lo</b> is <i>this person</i>, and <b>Ngubani lo?</b> asks <i>who is this?</i> You met ngubani with names — here it points at people.</p>","eg":[["lo","LAW","this person"],["Ngubani lo?","ngoo-BAH-nee LAW","who is this?"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ngubani lo?","o":["Ngubani lo?","lo"],"a":0},
+{"t":"mc","q":"Ngubani lo? asks…","o":["who is this?","where is this?","what is this?"],"a":0},
+{"t":"note","tag":"Introducing","q":"Lo ngu- — this is…","body":"<p>To introduce someone, point with lo and glue <b>ngu-</b> to the person: <b>Lo ngumama wam</b> — <i>this is my mother</i>. <b>Lo ngutata wam</b> — <i>this is my father</i>. The same ngu- you used in NdinguSipho.</p>","eg":[["Lo ngumama wam","LAW ngoo-MAH-mah WAHM","this is my mother"],["Lo ngutata wam","LAW ngoo-TAH-tah WAHM","this is my father"]]},
+{"t":"li","q":"Which introduction do you hear?","say":"Lo ngumama wam","o":["Lo ngumama wam","Lo ngutata wam"],"a":0},
+{"t":"mc","q":"Lo ngutata wam means…","o":["this is my father","this is your father","who is my father?"],"a":0},
+{"t":"note","tag":"He and she","q":"Yena — one word for both","body":"<p>Xhosa has no he/she split: <b>yena</b> covers both, and <b>nguye</b> answers <i>it is him</i> or <i>it is her</i>. One pronoun, zero gender headaches — a freebie.</p>","eg":[["yena","YEH-nah","he or she"],["nguye","NGOO-yeh","it is him"]]},
+{"t":"li","q":"Which one do you hear?","say":"yena","o":["yena","nguye"],"a":0},
+{"t":"mc","q":"yena means…","o":["he or she","only he","only she"],"a":0}
+]},
+{"id":"xh_f4_2","title":"Hearing introductions","step":"recognize","meta":"Who is who","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"lo","o":["lo","yena","nguye"],"a":0},
+{"t":"mc","q":"What does nguye mean?","o":["it is him","who is this?","this person"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Lo ngutata wam","o":["Lo ngutata wam","Lo ngumama wam","Ngubani lo?"],"a":0},
+{"t":"mc","q":"To introduce your mother you say…","o":["Lo ngumama wam","Ngubani lo?","Umama wakho"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nguye","o":["nguye","yena","lo"],"a":0},
+{"t":"mc","q":"Xhosa pronouns and gender…","o":["yena covers he and she","yena is only she","every noun has a gender"],"a":0}
+]},
+{"id":"xh_f4_3","title":"Building introductions","step":"build","meta":"Present your family","vocab":[],"ex":[
+{"t":"fill","q":"Complete: this is my mother","s":"Lo ngumama ___.","o":["wam","wakho","lam"],"a":0},
+{"t":"wb","q":"Build: who is this?","a":["ngubani","lo"],"pool":["ngubani","lo","yena"]},
+{"t":"fill","q":"Complete: it is him","s":"ngu___","o":["ye","ya","yo"],"a":0},
+{"t":"wb","q":"Build: this is my father","a":["lo","ngutata","wam"],"pool":["lo","ngutata","wam","wakho"]},
+{"t":"li","q":"Which one do you hear?","say":"Ngubani lo?","o":["Ngubani lo?","Lo ngumama wam","yena"],"a":0}
+]},
+{"id":"xh_f4_4","title":"Introductions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["lo","this person"],["yena","he or she"],["nguye","it is him"]]},
+{"t":"li","q":"Which one do you hear?","say":"Lo ngumama wam","o":["Lo ngumama wam","Lo ngutata wam","Ngubani lo?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ngubani lo?","who is this?"],["Lo ngutata wam","this is my father"]]},
+{"t":"mc","q":"The ngu- of introductions also appeared in…","o":["NdinguSipho","Ndiyaphila","Molweni"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"yena","o":["yena","lo","nguye"],"a":0}
+]},
+{"id":"xh_f4_5","title":"Checkpoint: who is this","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Ngubani lo? asks…","o":["who is this?","who are you?","where is he?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Lo ngutata wam","o":["Lo ngutata wam","Lo ngumama wam","nguye"],"a":0},
+{"t":"mc","q":"Which one means he or she?","o":["yena","lo","wena"],"a":0},
+{"t":"mc","q":"A friend points at your photo and asks Ngubani lo? about your mom. You say…","o":["Lo ngumama wam","Umama wakho","Ngubani"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"nguye","o":["nguye","yena","lam"],"a":0},
+{"t":"mc","q":"Review — which one means your father?","o":["utata wakho","utata wam","utatomkhulu"],"a":0}
+]},
+
+/* ---------- f5 · Respect & clan names ---------- */
+{"id":"xh_f5","title":"Respect and clan names","step":"learn","meta":"Intlonipho — how Xhosa honour works","vocab":[["intlonipho","een-tlaw-NEE-paw","respect"],["isiduko","ee-see-DOO-kaw","clan name"],["amaXhosa","ah-mah-XHAW-sah","the Xhosa people"],["umXhosa","oom-XHAW-sah","a Xhosa person"],["Uxolo tata","oo-XAW-law TAH-tah","excuse me, sir"],["Enkosi mama","ehn-KAW-see MAH-mah","thank you, madam"]],"ex":[
+{"t":"note","tag":"Respect","q":"Intlonipho carries the culture","body":"<p><b>Intlonipho</b> — <i>respect</i> — is the quiet engine of Xhosa life: elders greeted first, both hands to give and receive, tata and mama for every elder. Get intlonipho right and grammar mistakes are instantly forgiven.</p>","eg":[["intlonipho","een-tlaw-NEE-paw","respect"],["Uxolo tata","oo-XAW-law TAH-tah","excuse me, sir"],["Enkosi mama","ehn-KAW-see MAH-mah","thank you, madam"]]},
+{"t":"li","q":"Which one do you hear?","say":"intlonipho","o":["intlonipho","Uxolo tata"],"a":0},
+{"t":"mc","q":"What does intlonipho mean?","o":["respect","clan name","greeting"],"a":0},
+{"t":"note","tag":"The people","q":"AmaXhosa and umXhosa","body":"<p>The people are <b>amaXhosa</b>; one person is <b>umXhosa</b>. Same pattern you know — um- for one, a plural prefix for many (this class uses ama-).</p>","eg":[["amaXhosa","ah-mah-XHAW-sah","the Xhosa people"],["umXhosa","oom-XHAW-sah","a Xhosa person"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"amaXhosa","o":["amaXhosa","umXhosa"],"a":0},
+{"t":"mc","q":"umXhosa means…","o":["a Xhosa person","the Xhosa people","the Xhosa language"],"a":0},
+{"t":"note","tag":"Clan names","q":"Isiduko — the deeper name","body":"<p>Every Xhosa person carries an <b>isiduko</b> — a clan name older than their surname. Nelson Mandela was <i>Madiba</i>: that famous name is his isiduko. Calling someone by their clan name is the deepest everyday honour — if a friend tells you theirs, treasure it.</p>","eg":[["isiduko","ee-see-DOO-kaw","clan name"]]},
+{"t":"li","q":"Which one do you hear?","say":"isiduko","o":["isiduko","amaXhosa"],"a":0},
+{"t":"mc","q":"Madiba — the name the world used for Mandela — is his…","o":["isiduko","igama","idolophu"],"a":0}
+]},
+{"id":"xh_f5_2","title":"Hearing respect words","step":"recognize","meta":"People, clans, honour","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"umXhosa","o":["umXhosa","amaXhosa","isiduko"],"a":0},
+{"t":"mc","q":"What does isiduko mean?","o":["clan name","respect","surname"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Enkosi mama","o":["Enkosi mama","Uxolo tata","intlonipho"],"a":0},
+{"t":"mc","q":"Which one means the Xhosa people?","o":["amaXhosa","umXhosa","isiXhosa"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uxolo tata","o":["Uxolo tata","Enkosi mama","umXhosa"],"a":0},
+{"t":"mc","q":"Giving and receiving with both hands shows…","o":["intlonipho","isiduko","igama"],"a":0}
+]},
+{"id":"xh_f5_3","title":"Building respect words","step":"build","meta":"Honour, assembled","vocab":[],"ex":[
+{"t":"fill","q":"Complete: respect","s":"intloni___o","o":["ph","p","b"],"a":0},
+{"t":"wb","q":"Build: excuse me, sir","a":["uxolo","tata"],"pool":["uxolo","tata","mama"]},
+{"t":"fill","q":"Complete: the Xhosa people","s":"___Xhosa","o":["ama","um","isi"],"a":0},
+{"t":"wb","q":"Build: thank you, madam","a":["enkosi","mama"],"pool":["enkosi","mama","tata"]},
+{"t":"li","q":"Which one do you hear?","say":"amaXhosa","o":["amaXhosa","umXhosa","intlonipho"],"a":0}
+]},
+{"id":"xh_f5_4","title":"Respect in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intlonipho","respect"],["isiduko","clan name"],["umXhosa","a Xhosa person"]]},
+{"t":"li","q":"Which one do you hear?","say":"isiduko","o":["isiduko","intlonipho","amaXhosa"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amaXhosa","the Xhosa people"],["Uxolo tata","excuse me, sir"],["Enkosi mama","thank you, madam"]]},
+{"t":"mc","q":"isiXhosa, umXhosa, amaXhosa — the prefixes mean…","o":["language, person, people","people, language, person","person, people, language"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"intlonipho","o":["intlonipho","isiduko","Enkosi mama"],"a":0}
+]},
+{"id":"xh_f5_5","title":"Checkpoint: respect","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does intlonipho mean?","o":["respect","clan name","family"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"umXhosa","o":["umXhosa","amaXhosa","umzala"],"a":0},
+{"t":"mc","q":"A clan name older than the surname is the…","o":["isiduko","igama","intsapho"],"a":0},
+{"t":"mc","q":"You need to pass an elder man in a full taxi. You say…","o":["Uxolo tata","Hamba","Uxolo bhuti"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"amaXhosa","o":["amaXhosa","isiduko","intlonipho"],"a":0},
+{"t":"mc","q":"Review — intsapho means…","o":["family","parents","respect"],"a":0}
+]},
+
+/* ---------- f6 · Is anyone home? ---------- */
+{"id":"xh_f6","title":"Is anyone home?","step":"learn","meta":"Ukhona, akekho — asking after people","vocab":[["ikhaya","ee-KHAH-yah","home"],["Ukhona utata?","oo-KHAW-nah oo-TAH-tah","is father there?"],["ukhona","oo-KHAW-nah","he is here"],["akekho","ah-KEH-kaw","he is not here"],["Uphi umama?","OO-pee oo-MAH-mah","where is mother?"],["usekhaya","oo-seh-KHAH-yah","she is at home"]],"ex":[
+{"t":"note","tag":"Home","q":"Ikhaya — more than a house","body":"<p><b>Ikhaya</b> is <i>home</i> — indlu is the building, ikhaya is where your people are. Khayelitsha carries it: <i>ikhaya elitsha</i>, new home.</p>","eg":[["ikhaya","ee-KHAH-yah","home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ikhaya","o":["ikhaya","indlu"],"a":0},
+{"t":"mc","q":"What does ikhaya mean?","o":["home","house","family"],"a":0},
+{"t":"note","tag":"Present or absent","q":"Ukhona and akekho","body":"<p>Knock on a door: <b>Ukhona utata?</b> — <i>is father there?</i> The answers: <b>ukhona</b> — <i>he is here</i> — or <b>akekho</b> — <i>he is not here</i>. You know ndikhona (I am here) from greetings; ukhona is the same word wearing the u- of he/she.</p>","eg":[["Ukhona utata?","oo-KHAW-nah oo-TAH-tah","is father there?"],["ukhona","oo-KHAW-nah","he is here"],["akekho","ah-KEH-kaw","he is not here"]]},
+{"t":"li","q":"Present or absent — which do you hear?","say":"akekho","o":["akekho","ukhona"],"a":0},
+{"t":"mc","q":"akekho means…","o":["he is not here","he is here","he is at home"],"a":0},
+{"t":"note","tag":"Where is she?","q":"Uphi and usekhaya","body":"<p><b>Uphi umama?</b> — <i>where is mother?</i> — the phi you know, pointed at a person. A common answer: <b>usekhaya</b> — <i>she is at home</i>.</p>","eg":[["Uphi umama?","OO-pee oo-MAH-mah","where is mother?"],["usekhaya","oo-seh-KHAH-yah","she is at home"]]},
+{"t":"li","q":"Which one do you hear?","say":"usekhaya","o":["usekhaya","Uphi umama?"],"a":0},
+{"t":"mc","q":"Uphi umama? asks…","o":["where is mother?","is mother there?","how is mother?"],"a":0}
+]},
+{"id":"xh_f6_2","title":"Hearing home words","step":"recognize","meta":"Here, not here, at home","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ukhona","o":["ukhona","akekho","ikhaya"],"a":0},
+{"t":"mc","q":"What does usekhaya mean?","o":["she is at home","she is not here","where is she?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Ukhona utata?","o":["Ukhona utata?","Uphi umama?","usekhaya"],"a":0},
+{"t":"mc","q":"Which one means he is not here?","o":["akekho","ukhona","usekhaya"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uphi umama?","o":["Uphi umama?","Ukhona utata?","ikhaya"],"a":0},
+{"t":"mc","q":"indlu is the building; the word for home-where-your-people-are is…","o":["ikhaya","ilokishi","intsapho"],"a":0}
+]},
+{"id":"xh_f6_3","title":"Building home phrases","step":"build","meta":"Ask after people","vocab":[],"ex":[
+{"t":"fill","q":"Complete: he is not here","s":"ake___o","o":["kh","k","q"],"a":0},
+{"t":"wb","q":"Build: is father there?","a":["ukhona","utata"],"pool":["ukhona","utata","akekho"]},
+{"t":"fill","q":"Complete: she is at home","s":"use___aya","o":["kh","k","q"],"a":0},
+{"t":"wb","q":"Build: where is mother?","a":["uphi","umama"],"pool":["uphi","umama","ukhona"]},
+{"t":"li","q":"Which one do you hear?","say":"ikhaya","o":["ikhaya","usekhaya","akekho"],"a":0}
+]},
+{"id":"xh_f6_4","title":"Home words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikhaya","home"],["ukhona","he is here"],["akekho","he is not here"]]},
+{"t":"li","q":"Which one do you hear?","say":"Ukhona utata?","o":["Ukhona utata?","usekhaya","Uphi umama?"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ukhona utata?","is father there?"],["Uphi umama?","where is mother?"],["usekhaya","she is at home"]]},
+{"t":"mc","q":"ndikhona is I am here; ukhona is…","o":["he or she is here","you are here","we are here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"akekho","o":["akekho","ikhaya","ukhona"],"a":0}
+]},
+{"id":"xh_f6_5","title":"Checkpoint: anyone home","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"Ukhona utata? asks…","o":["is father there?","where is father?","how is father?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"usekhaya","o":["usekhaya","ukhona","ikhaya"],"a":0},
+{"t":"mc","q":"You knock; the child says Akekho. Father is…","o":["not here","at home","on his way"],"a":0},
+{"t":"mc","q":"Which one means home?","o":["ikhaya","indlu","idolophu"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Uphi umama?","o":["Uphi umama?","Ukhona utata?","akekho"],"a":0},
+{"t":"mc","q":"Review — Khayelitsha means…","o":["new home","our pride","big town"],"a":0}
+]},
+
+/* ---------- f7 · Family conversation ---------- */
+{"id":"xh_f7","title":"Family conversation","step":"learn","meta":"We and they — the concord set completes","vocab":[["Unjani umama?","oon-JAH-nee oo-MAH-mah","how is your mother?"],["uphilile","oo-pee-LEE-leh","she is well"],["sonke","SAWN-keh","all of us"],["sihlala","see-HLAH-lah","we live"],["bahlala","bah-HLAH-lah","they live"],["kunye","KOO-nyeh","together"]],"ex":[
+{"t":"note","tag":"Asking after family","q":"Unjani umama?","body":"<p>Real Xhosa small talk asks after the family: <b>Unjani umama?</b> — <i>how is your mother?</i> The warm answer: <b>uphilile</b> — <i>she is well</i>.</p>","eg":[["Unjani umama?","oon-JAH-nee oo-MAH-mah","how is your mother?"],["uphilile","oo-pee-LEE-leh","she is well"]]},
+{"t":"li","q":"Which one do you hear?","say":"uphilile","o":["uphilile","Unjani umama?"],"a":0},
+{"t":"mc","q":"uphilile means…","o":["she is well","she is here","she is at home"],"a":0},
+{"t":"note","tag":"We and they","q":"Si- and ba- complete the set","body":"<p>You own ndi- (<i>I</i>) and u- (<i>you / he / she</i>). Now the last two: <b>si-</b> is <i>we</i> and <b>ba-</b> is <i>they</i>. <b>Sihlala eKapa</b> — <i>we live in Cape Town</i>; <b>bahlala eGugulethu</b> — <i>they live in Gugulethu</i>. That is the whole everyday person set.</p>","eg":[["sihlala","see-HLAH-lah","we live"],["bahlala","bah-HLAH-lah","they live"]]},
+{"t":"li","q":"We or they — which do you hear?","say":"bahlala","o":["bahlala","sihlala"],"a":0},
+{"t":"mc","q":"sihlala means…","o":["we live","they live","I live"],"a":0},
+{"t":"note","tag":"Together","q":"Sonke and kunye","body":"<p><b>Sonke</b> is <i>all of us</i> and <b>kunye</b> is <i>together</i>: <b>Sihlala kunye sonke</b> — <i>we all live together</i> — the sentence that describes half the homes in Khayelitsha, three generations under one roof.</p>","eg":[["sonke","SAWN-keh","all of us"],["kunye","KOO-nyeh","together"]]},
+{"t":"li","q":"Which one do you hear?","say":"sonke","o":["sonke","kunye"],"a":0},
+{"t":"mc","q":"kunye means…","o":["together","all of us","at home"],"a":0}
+]},
+{"id":"xh_f7_2","title":"Hearing the conversation","step":"recognize","meta":"We, they, well and together","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"sihlala","o":["sihlala","bahlala","sonke"],"a":0},
+{"t":"mc","q":"What does sonke mean?","o":["all of us","together","we live"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"Unjani umama?","o":["Unjani umama?","uphilile","kunye"],"a":0},
+{"t":"mc","q":"Which one means they live?","o":["bahlala","sihlala","ndihlala"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"kunye","o":["kunye","sonke","uphilile"],"a":0},
+{"t":"mc","q":"Someone asks Unjani umama? Mom is fine, so…","o":["Uphilile, enkosi","Akekho","Ndiyaphila"],"a":0}
+]},
+{"id":"xh_f7_3","title":"Building we and they","step":"build","meta":"The concord set, assembled","vocab":[],"ex":[
+{"t":"fill","q":"Complete: we live in Cape Town","s":"___hlala eKapa.","o":["si","ba","ndi"],"a":0},
+{"t":"wb","q":"Build: they live in Gugulethu","a":["bahlala","eGugulethu"],"pool":["bahlala","eGugulethu","sihlala"]},
+{"t":"fill","q":"Complete: she is well","s":"uphili___","o":["le","la","lo"],"a":0},
+{"t":"wb","q":"Build: we all live together","a":["sihlala","kunye","sonke"],"pool":["sihlala","kunye","sonke","bahlala"]},
+{"t":"li","q":"Which one do you hear?","say":"bahlala","o":["bahlala","sihlala","kunye"],"a":0}
+]},
+{"id":"xh_f7_4","title":"The conversation in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Unjani umama?","how is your mother?"],["uphilile","she is well"],["kunye","together"]]},
+{"t":"li","q":"Which one do you hear?","say":"sonke","o":["sonke","kunye","bahlala"],"a":0},
+{"t":"match","q":"Match the Xhosa to the meaning","pairs":[["sihlala","we live"],["bahlala","they live"],["sonke","all of us"]]},
+{"t":"mc","q":"The full everyday person set is…","o":["ndi-, u-, si-, ba-","um-, aba-, oo-, ama-","lo, yena, wena, nguye"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"uphilile","o":["uphilile","sonke","sihlala"],"a":0}
+]},
+{"id":"xh_f7_5","title":"Checkpoint: Zone 3 complete","step":"checkpoint","meta":"Family & respect — show it all","vocab":[],"ex":[
+{"t":"mc","q":"Unjani umama? — mom is well, so you answer…","o":["Uphilile, enkosi","Ukhona","Sonke"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"sihlala","o":["sihlala","bahlala","uphilile"],"a":0},
+{"t":"mc","q":"Which one means they live?","o":["bahlala","sihlala","ndihlala"],"a":0},
+{"t":"mc","q":"Review — Lo ngumama wam means…","o":["this is my mother","where is my mother?","your mother is here"],"a":0},
+{"t":"mc","q":"Review — the clan name older than a surname is the…","o":["isiduko","igama","intlonipho"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"akekho","o":["akekho","ukhona","usekhaya"],"a":0},
+{"t":"mc","q":"Review — the plural of ubhuti is…","o":["oobhuti","ababhuti","abahuti"],"a":0}
 ]}
 ];
 
@@ -645,9 +947,11 @@ const XH_UNITS=[
 {"n":1,"t":"The sounds of Xhosa","d":"Vowels, clicks and the rhythm of the language","lessons":["xh_s1","xh_s1_2","xh_s1_3","xh_s1_4","xh_s1_5","xh_s2","xh_s2_2","xh_s2_3","xh_s2_4","xh_s2_5","xh_s3","xh_s3_2","xh_s3_3","xh_s3_4","xh_s3_5","xh_s4","xh_s4_2","xh_s4_3","xh_s4_4","xh_s4_5","xh_s5","xh_s5_2","xh_s5_3","xh_s5_4","xh_s5_5","xh_s6","xh_s6_2","xh_s6_3","xh_s6_4","xh_s6_5","xh_s7","xh_s7_2","xh_s7_3","xh_s7_4","xh_s7_5"]}
 ,
 {"n":2,"t":"Greetings & people","d":"Unjani, names, bhuti nosisi — meeting Cape Town","lessons":["xh_g1","xh_g1_2","xh_g1_3","xh_g1_4","xh_g1_5","xh_g2","xh_g2_2","xh_g2_3","xh_g2_4","xh_g2_5","xh_g3","xh_g3_2","xh_g3_3","xh_g3_4","xh_g3_5","xh_g4","xh_g4_2","xh_g4_3","xh_g4_4","xh_g4_5","xh_g5","xh_g5_2","xh_g5_3","xh_g5_4","xh_g5_5","xh_g6","xh_g6_2","xh_g6_3","xh_g6_4","xh_g6_5","xh_g7","xh_g7_2","xh_g7_3","xh_g7_4","xh_g7_5"]}
+,
+{"n":3,"t":"Family & respect","d":"Intsapho, intlonipho — the people closest to you","lessons":["xh_f1","xh_f1_2","xh_f1_3","xh_f1_4","xh_f1_5","xh_f2","xh_f2_2","xh_f2_3","xh_f2_4","xh_f2_5","xh_f3","xh_f3_2","xh_f3_3","xh_f3_4","xh_f3_5","xh_f4","xh_f4_2","xh_f4_3","xh_f4_4","xh_f4_5","xh_f5","xh_f5_2","xh_f5_3","xh_f5_4","xh_f5_5","xh_f6","xh_f6_2","xh_f6_3","xh_f6_4","xh_f6_5","xh_f7","xh_f7_2","xh_f7_3","xh_f7_4","xh_f7_5"]}
 ];
 
-const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci"};
+const XH_SYM={"xh_s1":"a e i","xh_s2":"c","xh_s3":"x","xh_s4":"q","xh_s5":"xh","xh_s6":"hl","xh_s7":"Molo","xh_g1":"Unjani","xh_g2":"igama","xh_g3":"abantu","xh_g4":"bhuti","xh_g5":"eKapa","xh_g6":"phi?","xh_g7":"kancinci","xh_f1":"utata","xh_f2":"usisi","xh_f3":"wam","xh_f4":"lo","xh_f5":"isiduko","xh_f6":"ikhaya","xh_f7":"sonke"};
 
 const XH_SRS_SEED=[];
 

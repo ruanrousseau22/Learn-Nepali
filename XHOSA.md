@@ -150,7 +150,8 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       survival kit (Uthetha isiXhosa?, ndithetha kancinci, Uyaqonda?/
       ndiyaqonda, Ndifunda isiXhosa). 35 lessons, 215 exercises, 60 new
       clips (135 total). Checker passed first run.
-- [ ] Zone 3 (Family & respect): f1 umama/utata (+makhulu grandparents,
+- [x] Zone 3 (Family & respect) COMPLETE (105 lessons total, 649 ex,
+      188 clips — checker caught 1 distractor-before-note, fixed): f1 umama/utata (+makhulu grandparents,
       Molo tata/mama address), f2 ubhuti/usisi + oo- plurals + umzala,
       f3 my-family possessives (intsapho, abazali, umama wam / utata
       wakho — wam/wakho with kin vs lam/lakho with igama), f4 who-is-
@@ -159,7 +160,7 @@ arrives; checkpoint review-mcs recycle earlier zones per the orphan rule
       (ikhaya, Ukhona utata?, ukhona/akekho, usekhaya), f7 family
       conversation + si-/ba- concords (sonke, sihlala/bahlala, kunye,
       Unjani umama?, uphilile) — completes the ndi/u/si/ba person set.
-- [ ] Zones 3–6.
+- [ ] Zones 4–6 next (Numbers & time, Food & drink, Around the home).
 - [ ] Zones 7–9.
 - [ ] Zones 10–12 + weekly-style checkpoint review pass + cold-test
       measurement (MANDATORY before ship — the ur/uz/jv lesson).
