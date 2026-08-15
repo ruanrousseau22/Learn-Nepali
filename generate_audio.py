@@ -80,6 +80,11 @@ LANGS = {
         "outdir": "audio-jv",
         "voices": {"male": "jv-ID-DimasNeural", "female": "jv-ID-SitiNeural"},
     },
+    "am": {
+        "strings": "audio_strings_am.json",
+        "outdir": "audio-am",
+        "voices": {"male": "am-ET-AmehaNeural", "female": "am-ET-MekdesNeural"},
+    },
     # religious studies (faith mode) — per-language story reader, same voice
     # as that language's course ("<code>f" pattern; skeletons have no strings
     # yet — generate only after a pack is translated)
@@ -112,6 +117,11 @@ LANGS = {
         "strings": "audio_strings_jvf.json",
         "outdir": "audio-jvf",
         "voices": {"male": "jv-ID-DimasNeural", "female": "jv-ID-SitiNeural"},
+    "amf": {
+        "strings": "audio_strings_amf.json",
+        "outdir": "audio-amf",
+        "voices": {"male": "am-ET-AmehaNeural", "female": "am-ET-MekdesNeural"},
+    },
     },
     "uzf": {
         "strings": "audio_strings_uzf.json",
@@ -153,6 +163,9 @@ LANGS = {
 SPEAK_AS = {
     "bn": {"ং": "অনুস্বার", "ঃ": "বিসর্গ", "ঁ": "চন্দ্রবিন্দু"},
     "my": {"ဎ": "ဒရေမှုတ်"},
+    # am: the bare 6th-order vowel alone is nearly inaudible (peak 0.06) —
+    # speak it as እህ ("ih", peak 0.35) so the alphabet tile is hearable
+    "am": {"እ": "እህ"},
 }
 
 
