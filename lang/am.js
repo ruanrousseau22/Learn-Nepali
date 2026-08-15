@@ -2665,6 +2665,301 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","ተማሪ ነኝ","እማራለሁ"],"a":0},
 {"t":"mc","q":"Review — which one means office?","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
 {"t":"mc","q":"Review — ዕረፍት means…","o":["rest · break","salary","meeting"],"a":0}
+]},
+
+/* ---------- b1 · The body ---------- */
+{"id":"am_b1","title":"The body","step":"learn","meta":"Ras, ij, igir — head to toe","vocab":[["ራስ","ras","head"],["እጅ","ij","hand"],["እግር","igir","foot · leg"],["ሆድ","hod","stomach"]],"ex":[
+{"t":"note","tag":"From the top","q":"ራስ","body":"<p><b>ራስ</b> <i>ras</i> — <i>head</i> — also <i>self</i> (rase = myself) and the old royal title Ras, head-of-armies. One small word, a lot of history.</p>","eg":[["ራስ","ras","head"]]},
+{"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","ስራ"],"a":0},
+{"t":"mc","q":"ራስ means head and also…","o":["self","hair","chief only"],"a":0},
+{"t":"note","tag":"The workers","q":"እጅ and እግር","body":"<p><b>እጅ</b> <i>ij</i> — <i>hand</i> — the right one being the injera hand. <b>እግር</b> <i>igir</i> — <i>foot, leg</i> — what carries you when it is kirb, and complains when it is ruk.</p>","eg":[["እጅ","ij","hand"],["እግር","igir","foot · leg"]]},
+{"t":"li","q":"Hand or foot — which do you hear?","say":"እጅ","o":["እጅ","እግር"],"a":0},
+{"t":"mc","q":"እግር means…","o":["foot · leg","arm","knee"],"a":0},
+{"t":"note","tag":"The middle","q":"ሆድ","body":"<p><b>ሆድ</b> <i>hod</i> — <i>stomach, belly</i> — the part rabegn speaks for, and the first to review your injera decisions.</p>","eg":[["ሆድ","hod","stomach"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ"],"a":0},
+{"t":"mc","q":"ሆድ means…","o":["stomach","chest","back"],"a":0}
+]},
+{"id":"am_b1_2","title":"Hearing the body","step":"recognize","meta":"Parts by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እግር","o":["እግር","እጅ","ሆድ"],"a":0},
+{"t":"mc","q":"What does ራስ mean?","o":["head","hand","hair"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ","እግር"],"a":0},
+{"t":"mc","q":"Which one means hand?","o":["እጅ","እግር","ሆድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","ሆድ","እጅ"],"a":0},
+{"t":"mc","q":"The injera hand is…","o":["the right","the left","either"],"a":0}
+]},
+{"id":"am_b1_3","title":"Building the body","step":"build","meta":"Assemble yourself","vocab":[],"ex":[
+{"t":"wb","q":"Build: head and stomach","a":["ራስ","ሆድ"],"pool":["ራስ","ሆድ","እጅ"]},
+{"t":"mc","q":"Pick the word for foot","o":["እግር","እጅ","ራስ"],"a":0},
+{"t":"wb","q":"Build: hand and foot","a":["እጅ","እግር"],"pool":["እጅ","እግር","ሆድ"]},
+{"t":"mc","q":"Pick the word for stomach","o":["ሆድ","ራስ","እግር"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እጅ","o":["እጅ","እግር","ራስ"],"a":0}
+]},
+{"id":"am_b1_4","title":"The body in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ራስ","head"],["እጅ","hand"],["እግር","foot"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","እግር","ራስ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሆድ","stomach"],["ራስ","self"]]},
+{"t":"mc","q":"ራበኝ speaks for which part?","o":["ሆድ","ራስ","እጅ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እግር","o":["እግር","ሆድ","እጅ"],"a":0}
+]},
+{"id":"am_b1_5","title":"Checkpoint: the body","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እጅ means…","o":["hand","foot","arm"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","እጅ","ሆድ"],"a":0},
+{"t":"mc","q":"Which one means stomach?","o":["ሆድ","እግር","ራስ"],"a":0},
+{"t":"mc","q":"Review — ምን means…","o":["what","who","where"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ","እግር"],"a":0}
+]},
+
+/* ---------- b2 · The face ---------- */
+{"id":"am_b2","title":"The face","step":"learn","meta":"Eye, ear, mouth, nose","vocab":[["ዓይን","ayn","eye"],["ጆሮ","joro","ear"],["አፍ","af","mouth"],["አፍንጫ","afincha","nose"]],"ex":[
+{"t":"note","tag":"The watchers","q":"ዓይን and ጆሮ","body":"<p><b>ዓይን</b> <i>ayn</i> — <i>eye</i> — and <b>ጆሮ</b> <i>joro</i> — <i>ear</i>. Between them they have carried your whole course: eyes on the fidel, ears on the clips.</p>","eg":[["ዓይን","ayn","eye"],["ጆሮ","joro","ear"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","ጆሮ"],"a":0},
+{"t":"mc","q":"ጆሮ means…","o":["ear","eye","cheek"],"a":0},
+{"t":"note","tag":"The talkers","q":"አፍ and አፍንጫ","body":"<p><b>አፍ</b> <i>af</i> — <i>mouth</i> — and its taller neighbor <b>አፍንጫ</b> <i>afincha</i> — <i>nose</i>. Notice af hiding inside afincha; Amharic likes its anatomy related.</p>","eg":[["አፍ","af","mouth"],["አፍንጫ","afincha","nose"]]},
+{"t":"li","q":"Mouth or nose — which do you hear?","say":"አፍንጫ","o":["አፍንጫ","አፍ"],"a":0},
+{"t":"mc","q":"The word hiding inside አፍንጫ is…","o":["አፍ","ዓይን","እጅ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","ዓይን"],"a":0},
+{"t":"mc","q":"አፍ means…","o":["mouth","nose","lip"],"a":0}
+]},
+{"id":"am_b2_2","title":"Hearing the face","step":"recognize","meta":"Features by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አፍ","o":["አፍ","አፍንጫ","ዓይን"],"a":0},
+{"t":"mc","q":"What does ዓይን mean?","o":["eye","ear","face"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አፍንጫ","o":["አፍንጫ","አፍ","ጆሮ"],"a":0},
+{"t":"mc","q":"Which one means ear?","o":["ጆሮ","ዓይን","አፍ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","ጆሮ","አፍ"],"a":0},
+{"t":"mc","q":"Listening exercises train your…","o":["ጆሮ","ዓይን","አፍ"],"a":0}
+]},
+{"id":"am_b2_3","title":"Building the face","step":"build","meta":"Feature by feature","vocab":[],"ex":[
+{"t":"wb","q":"Build: eye and ear","a":["ዓይን","ጆሮ"],"pool":["ዓይን","ጆሮ","አፍ"]},
+{"t":"mc","q":"Pick the word for nose","o":["አፍንጫ","አፍ","ጆሮ"],"a":0},
+{"t":"wb","q":"Build: mouth, then nose","a":["አፍ","አፍንጫ"],"pool":["አፍ","አፍንጫ","ዓይን"]},
+{"t":"mc","q":"Pick the word for eye","o":["ዓይን","ጆሮ","አፍንጫ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አፍ","o":["አፍ","ዓይን","አፍንጫ"],"a":0}
+]},
+{"id":"am_b2_4","title":"The face in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዓይን","eye"],["ጆሮ","ear"],["አፍ","mouth"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","አፍንጫ","ዓይን"],"a":0},
+{"t":"match","q":"Match the part to its work","pairs":[["ዓይን","reading fidel"],["ጆሮ","hearing clips"],["አፍ","speaking"]]},
+{"t":"mc","q":"አፍንጫ contains af because the nose sits…","o":["above the mouth","below the eyes","beside the ear"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አፍንጫ","o":["አፍንጫ","ጆሮ","አፍ"],"a":0}
+]},
+{"id":"am_b2_5","title":"Checkpoint: the face","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ጆሮ means…","o":["ear","eye","nose"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","አፍ","ጆሮ"],"a":0},
+{"t":"mc","q":"Which one means nose?","o":["አፍንጫ","አፍ","ዓይን"],"a":0},
+{"t":"mc","q":"Review — ራስ means…","o":["head · self","hair","hat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","ዓይን","አፍንጫ"],"a":0}
+]},
+
+/* ---------- b3 · It hurts ---------- */
+{"id":"am_b3","title":"It hurts","step":"learn","meta":"Amemegn — pain happens to you, like hunger","vocab":[["አመመኝ","amemegn","I am sick · it pains me"],["ህመም","himem","pain · illness"],["ራሴን አመመኝ","rasen amemegn","my head hurts"]],"ex":[
+{"t":"note","tag":"The rabegn pattern returns","q":"አመመኝ","body":"<p>Like hunger, sickness happens TO you: <b>አመመኝ</b> <i>amemegn</i> — <i>it pained me</i> — <i>I am sick</i>. Same -egn ending as rabegn and temagn: Amharic&rsquo;s way of saying the body acted first.</p>","eg":[["አመመኝ","amemegn","I am sick · it pains me"]]},
+{"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ራበኝ"],"a":0},
+{"t":"mc","q":"አመመኝ follows the it-got-me pattern of…","o":["ራበኝ","ነኝ","አለ"],"a":0},
+{"t":"note","tag":"Naming it","q":"ህመም","body":"<p><b>ህመም</b> <i>himem</i> — <i>pain, illness</i> — the noun behind the verb. የራስ ህመም — a headache, literally head-pain.</p>","eg":[["ህመም","himem","pain · illness"]]},
+{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","አመመኝ"],"a":0},
+{"t":"mc","q":"ህመም means…","o":["pain · illness","medicine","fever"],"a":0},
+{"t":"note","tag":"Saying where","q":"ራሴን አመመኝ","body":"<p>Name the part with its my-ending, then the verb: <b>ራሴን አመመኝ</b> <i>rasen amemegn</i> — <i>my head hurts</i>. ሆዴን አመመኝ — my stomach hurts. The clinic sentence, ready to go.</p>","eg":[["ራሴን አመመኝ","rasen amemegn","my head hurts"]]},
+{"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","አመመኝ"],"a":0},
+{"t":"mc","q":"ራሴን አመመኝ means…","o":["my head hurts","I hurt my head","heads hurt"],"a":0}
+]},
+{"id":"am_b3_2","title":"Hearing the hurt","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","ራሴን አመመኝ","አመመኝ"],"a":0},
+{"t":"mc","q":"What does አመመኝ mean?","o":["I am sick","I am tired","I am sad"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","ህመም","አመመኝ"],"a":0},
+{"t":"mc","q":"Which one means pain?","o":["ህመም","አመመኝ","ራስ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ህመም","ራሴን አመመኝ"],"a":0},
+{"t":"mc","q":"ሆዴን አመመኝ would mean…","o":["my stomach hurts","my head hurts","my foot hurts"],"a":0}
+]},
+{"id":"am_b3_3","title":"Building the hurt","step":"build","meta":"Say where it hurts","vocab":[],"ex":[
+{"t":"wb","q":"Build: my head hurts","a":["ራሴን","አመመኝ"],"pool":["ራሴን","አመመኝ","ህመም"]},
+{"t":"mc","q":"Pick the word for pain","o":["ህመም","አመመኝ","ራሴን"],"a":0},
+{"t":"wb","q":"Build the word: it pained me","a":["አመመ","ኝ"],"pool":["አመመ","ኝ","ህመም"]},
+{"t":"mc","q":"Pick: I am sick","o":["አመመኝ","ራበኝ","ጠማኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","አመመኝ","ህመም"],"a":0}
+]},
+{"id":"am_b3_4","title":"The hurt in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አመመኝ","I am sick"],["ህመም","pain"],["ራሴን አመመኝ","my head hurts"]]},
+{"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ራሴን አመመኝ","ህመም"],"a":0},
+{"t":"match","q":"Match the -egn family","pairs":[["ራበኝ","hunger got me"],["ጠማኝ","thirst got me"],["አመመኝ","sickness got me"]]},
+{"t":"mc","q":"የራስ ህመም is literally…","o":["head-pain (a headache)","brain fever","hair trouble"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","አመመኝ","ራሴን አመመኝ"],"a":0}
+]},
+{"id":"am_b3_5","title":"Checkpoint: the hurt","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ራሴን አመመኝ means…","o":["my head hurts","I am dizzy","my hand hurts"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ህመም","ራበኝ"],"a":0},
+{"t":"mc","q":"Which one means pain · illness?","o":["ህመም","ሆድ","መድሃኒት"],"a":0},
+{"t":"mc","q":"Review — ጆሮ means…","o":["ear","eye","nose"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","ራሴን አመመኝ","አመመኝ"],"a":0}
+]},
+
+/* ---------- b4 · The clinic ---------- */
+{"id":"am_b4","title":"The clinic","step":"learn","meta":"Hakim bet — the house of the doctor","vocab":[["ሐኪም","hakim","doctor"],["ሐኪም ቤት","hakim bet","clinic · hospital"],["ነርስ","ners","nurse"],["መድሃኒት","medhanit","medicine"]],"ex":[
+{"t":"note","tag":"The doctor and the house","q":"ሐኪም and ሐኪም ቤት","body":"<p><b>ሐኪም</b> <i>hakim</i> — <i>doctor</i> — and, with the bet machine, <b>ሐኪም ቤት</b> <i>hakim bet</i> — <i>doctor-house</i>: the clinic. Amharic built its whole medical system out of words you own.</p>","eg":[["ሐኪም","hakim","doctor"],["ሐኪም ቤት","hakim bet","clinic · hospital"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም ቤት","o":["ሐኪም ቤት","ሐኪም"],"a":0},
+{"t":"mc","q":"ሐኪም ቤት literally means…","o":["doctor-house","sick-house","medicine-house"],"a":0},
+{"t":"note","tag":"The one who sees you","q":"ነርስ","body":"<p><b>ነርስ</b> <i>ners</i> — <i>nurse</i> — often the first and kindest face at any hakim bet.</p>","eg":[["ነርስ","ners","nurse"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","ሐኪም"],"a":0},
+{"t":"mc","q":"ነርስ means…","o":["nurse","doctor","patient"],"a":0},
+{"t":"note","tag":"What you leave with","q":"መድሃኒት","body":"<p><b>መድሃኒት</b> <i>medhanit</i> — <i>medicine</i> — from an ancient root meaning rescue. Take it as the hakim says.</p>","eg":[["መድሃኒት","medhanit","medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ነርስ"],"a":0},
+{"t":"mc","q":"መድሃኒት means…","o":["medicine","bandage","checkup"],"a":0}
+]},
+{"id":"am_b4_2","title":"Hearing the clinic","step":"recognize","meta":"Care by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ሐኪም ቤት","ነርስ"],"a":0},
+{"t":"mc","q":"What does መድሃኒት mean?","o":["medicine","doctor","clinic"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ሐኪም","ነርስ"],"a":0},
+{"t":"mc","q":"Which one is the clinic?","o":["ሐኪም ቤት","ሐኪም","መድሃኒት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም ቤት","o":["ሐኪም ቤት","መድሃኒት","ሐኪም"],"a":0},
+{"t":"mc","q":"The root behind መድሃኒት means…","o":["rescue","bitter","plant"],"a":0}
+]},
+{"id":"am_b4_3","title":"Building the clinic","step":"build","meta":"The care compound","vocab":[],"ex":[
+{"t":"wb","q":"Build: clinic (doctor + house)","a":["ሐኪም","ቤት"],"pool":["ሐኪም","ቤት","ነርስ"]},
+{"t":"mc","q":"Pick the nurse","o":["ነርስ","ሐኪም","መድሃኒት"],"a":0},
+{"t":"wb","q":"Build: where is the clinic?","a":["ሐኪም","ቤት","የት","ነው?"],"pool":["ሐኪም","ቤት","የት","ነው?","ነርስ"]},
+{"t":"mc","q":"Pick the medicine","o":["መድሃኒት","ነርስ","ሐኪም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ነርስ","ሐኪም ቤት"],"a":0}
+]},
+{"id":"am_b4_4","title":"The clinic in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሐኪም","doctor"],["ነርስ","nurse"],["መድሃኒት","medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","ሐኪም","መድሃኒት"],"a":0},
+{"t":"match","q":"Match the bet compound","pairs":[["ሐኪም ቤት","clinic"],["ትምህርት ቤት","school"]]},
+{"t":"mc","q":"አመመኝ! Your next stop is…","o":["ሐኪም ቤት","ትምህርት ቤት","ሆቴል"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ሐኪም ቤት","ነርስ"],"a":0}
+]},
+{"id":"am_b4_5","title":"Checkpoint: the clinic","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ሐኪም ቤት means…","o":["clinic · hospital","pharmacy","doctor&rsquo;s home"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","መድሃኒት","ሐኪም"],"a":0},
+{"t":"mc","q":"Which one means medicine?","o":["መድሃኒት","ህመም","ሐኪም"],"a":0},
+{"t":"mc","q":"Review — አመመኝ means…","o":["I am sick","I am hungry","I am cold"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ሐኪም ቤት","ነርስ"],"a":0}
+]},
+
+/* ---------- b5 · What the nurse says ---------- */
+{"id":"am_b5","title":"What the nurse says","step":"learn","meta":"Sit, lie down, take it — the care commands","vocab":[["ተቀመጥ","tekemet","sit down! (to a man)"],["ተኛ","tegna","lie down! (to a man)"],["መድሃኒት ውሰድ","medhanit wised","take the medicine (to a man)"]],"ex":[
+{"t":"note","tag":"The waiting bench","q":"ተቀመጥ","body":"<p><b>ተቀመጥ</b> <i>tekemet</i> — <i>sit down!</i> — to a man (ተቀመጪ <i>tekemechi</i> to a woman). The first thing any clinic bench asks of you.</p>","eg":[["ተቀመጥ","tekemet","sit down! (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","ተማሪ"],"a":0},
+{"t":"mc","q":"ተቀመጥ commands…","o":["sit down","stand up","come in"],"a":0},
+{"t":"note","tag":"The examination","q":"ተኛ","body":"<p><b>ተኛ</b> <i>tegna</i> — <i>lie down!</i> — the same root as your እተኛለሁ, I sleep. The examination table speaks in commands you already half-know.</p>","eg":[["ተኛ","tegna","lie down! (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ"],"a":0},
+{"t":"mc","q":"ተኛ shares its sleep-root with…","o":["እተኛለሁ","እነሳለሁ","እበላለሁ"],"a":0},
+{"t":"note","tag":"The instruction that matters","q":"መድሃኒት ውሰድ","body":"<p><b>መድሃኒት ውሰድ</b> <i>medhanit wised</i> — <i>take the medicine</i> — wised being <i>take!</i> The sentence to obey exactly as prescribed, ferenj time or habesha time confirmed.</p>","eg":[["መድሃኒት ውሰድ","medhanit wised","take the medicine (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ"],"a":0},
+{"t":"mc","q":"መድሃኒት ውሰድ means…","o":["take the medicine","buy the medicine","the medicine is here"],"a":0}
+]},
+{"id":"am_b5_2","title":"Hearing the commands","step":"recognize","meta":"Care orders by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ","መድሃኒት ውሰድ"],"a":0},
+{"t":"mc","q":"What does ተቀመጥ mean?","o":["sit down!","lie down!","stand!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Which one means lie down?","o":["ተኛ","ተቀመጥ","ውሰድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","መድሃኒት ውሰድ","ተኛ"],"a":0},
+{"t":"mc","q":"The clinic visit order…","o":["ተቀመጥ → ተኛ → መድሃኒት ውሰድ","ተኛ → ተቀመጥ → ና","ውሰድ → ተኛ → በላ"],"a":0}
+]},
+{"id":"am_b5_3","title":"Building the commands","step":"build","meta":"Follow the nurse","vocab":[],"ex":[
+{"t":"wb","q":"Build: take the medicine","a":["መድሃኒት","ውሰድ"],"pool":["መድሃኒት","ውሰድ","ተኛ"]},
+{"t":"mc","q":"Pick: sit down!","o":["ተቀመጥ","ተኛ","ና"],"a":0},
+{"t":"wb","q":"Build the word: lie down (te + gna)","a":["ተ","ኛ"],"pool":["ተ","ኛ","ቀ"]},
+{"t":"mc","q":"Pick: lie down!","o":["ተኛ","ተቀመጥ","ውሰድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","ተኛ","መድሃኒት ውሰድ"],"a":0}
+]},
+{"id":"am_b5_4","title":"The commands in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ተቀመጥ","sit down!"],["ተኛ","lie down!"],["መድሃኒት ውሰድ","take the medicine"]]},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተቀመጥ","ተኛ"],"a":0},
+{"t":"match","q":"Match the command family","pairs":[["ብላ","eat!"],["ና","come!"],["ተቀመጥ","sit!"]]},
+{"t":"mc","q":"When taking medicine on a schedule, confirm…","o":["habesha or ferenj time","the pharmacy name","the color"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","መድሃኒት ውሰድ","ተቀመጥ"],"a":0}
+]},
+{"id":"am_b5_5","title":"Checkpoint: the commands","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"መድሃኒት ውሰድ means…","o":["take the medicine","bring the medicine","the medicine works"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ","ና"],"a":0},
+{"t":"mc","q":"Which one means sit down?","o":["ተቀመጥ","ተኛ","ውሰድ"],"a":0},
+{"t":"mc","q":"Review — ሐኪም ቤት means…","o":["clinic","school","office"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0}
+]},
+
+/* ---------- b6 · Feeling better ---------- */
+{"id":"am_b6","title":"Feeling better","step":"learn","meta":"Yishalegnal — the recovery report","vocab":[["ይሻለኛል","yishalegnal","I feel better"],["ደክሞኛል","dekmognal","I am tired"],["ውሃ ጠጣ","wiha tetta","drink water! (to a man)"]],"ex":[
+{"t":"note","tag":"The good report","q":"ይሻለኛል","body":"<p><b>ይሻለኛል</b> <i>yishalegnal</i> — <i>it is better for me</i> — <i>I feel better</i>. The -egn family again, this time delivering good news.</p>","eg":[["ይሻለኛል","yishalegnal","I feel better"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","አመመኝ"],"a":0},
+{"t":"mc","q":"ይሻለኛል means…","o":["I feel better","I feel worse","I am cured"],"a":0},
+{"t":"note","tag":"The honest report","q":"ደክሞኛል","body":"<p><b>ደክሞኛል</b> <i>dekmognal</i> — <i>I am tired</i> — tiredness, like hunger and pain, arriving on its own feet. The end-of-day word for workers, travelers and language learners.</p>","eg":[["ደክሞኛል","dekmognal","I am tired"]]},
+{"t":"li","q":"Which one do you hear?","say":"ደክሞኛል","o":["ደክሞኛል","ይሻለኛል"],"a":0},
+{"t":"mc","q":"ደክሞኛል means…","o":["I am tired","I am sick","I am lazy"],"a":0},
+{"t":"note","tag":"The universal advice","q":"ውሃ ጠጣ","body":"<p><b>ውሃ ጠጣ</b> <i>wiha tetta</i> — <i>drink water!</i> — tetta being the command twin of your እጠጣለሁ. Ethiopia&rsquo;s grandmothers and doctors agree on this one.</p>","eg":[["ውሃ ጠጣ","wiha tetta","drink water! (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል"],"a":0},
+{"t":"mc","q":"ውሃ ጠጣ commands…","o":["drink water","fetch water","boil water"],"a":0}
+]},
+{"id":"am_b6_2","title":"Hearing the recovery","step":"recognize","meta":"Reports by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ደክሞኛል","o":["ደክሞኛል","ይሻለኛል","ውሃ ጠጣ"],"a":0},
+{"t":"mc","q":"What does ይሻለኛል mean?","o":["I feel better","I am tired","it is over"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል","ይሻለኛል"],"a":0},
+{"t":"mc","q":"Which one means I am tired?","o":["ደክሞኛል","ይሻለኛል","አመመኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ውሃ ጠጣ","ደክሞኛል"],"a":0},
+{"t":"mc","q":"ጠጣ is the command twin of…","o":["እጠጣለሁ","እበላለሁ","እሄዳለሁ"],"a":0}
+]},
+{"id":"am_b6_3","title":"Building the recovery","step":"build","meta":"Report and prescribe","vocab":[],"ex":[
+{"t":"wb","q":"Build: drink water! (to a man)","a":["ውሃ","ጠጣ"],"pool":["ውሃ","ጠጣ","ብላ"]},
+{"t":"mc","q":"Pick: I feel better","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
+{"t":"wb","q":"Build the word: I am tired (dekmo + gnal)","a":["ደክሞ","ኛል"],"pool":["ደክሞ","ኛል","ይሻለ"]},
+{"t":"mc","q":"Pick: I am tired","o":["ደክሞኛል","ይሻለኛል","ራበኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","ውሃ ጠጣ"],"a":0}
+]},
+{"id":"am_b6_4","title":"The recovery in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይሻለኛል","I feel better"],["ደክሞኛል","I am tired"],["ውሃ ጠጣ","drink water!"]]},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ይሻለኛል","ደክሞኛል"],"a":0},
+{"t":"match","q":"Match the arc","pairs":[["አመመኝ","the bad day"],["መድሃኒት ውሰድ","the treatment"],["ይሻለኛል","the good news"]]},
+{"t":"mc","q":"ደክሞኛል after a long hike — the one-word prescription is…","o":["ዕረፍት","ቀንስ","ገበያ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ደክሞኛል","o":["ደክሞኛል","ውሃ ጠጣ","ይሻለኛል"],"a":0}
+]},
+{"id":"am_b6_5","title":"Checkpoint: the recovery","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ደክሞኛል means…","o":["I am tired","I feel better","I slept"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
+{"t":"mc","q":"Which one means drink water!?","o":["ውሃ ጠጣ","ውሃ አለ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"Review — መድሃኒት ውሰድ means…","o":["take the medicine","the medicine is gone","medicine helps"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል","ይሻለኛል"],"a":0}
+]},
+
+/* ---------- b7 · Health — and no problem ---------- */
+{"id":"am_b7","title":"Health — and no problem","step":"learn","meta":"Tena, chigir yellem — the zone comes full circle","vocab":[["ጤና","tena","health"],["ችግር","chigir","problem"],["ችግር የለም","chigir yellem","no problem"]],"ex":[
+{"t":"note","tag":"Full circle","q":"ጤና","body":"<p><b>ጤና</b> <i>tena</i> — <i>health</i> — the very word inside ጤና ይስጥልኝ, the formal greeting you learned in Zone 2: <i>may health be given for me</i>. Ethiopia has been wishing you tena since your first hello.</p>","eg":[["ጤና","tena","health"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጤና","o":["ጤና","ጠዋት"],"a":0},
+{"t":"mc","q":"ጤና hides inside which greeting?","o":["ጤና ይስጥልኝ","ሰላም ነው?","እንደምን አደርክ?"],"a":0},
+{"t":"note","tag":"The trouble word","q":"ችግር","body":"<p><b>ችግር</b> <i>chigir</i> — <i>problem, trouble</i> — with the tight ጭ inside. Now for the phrase that dissolves it…</p>","eg":[["ችግር","chigir","problem"]]},
+{"t":"li","q":"Which one do you hear?","say":"ችግር","o":["ችግር","ጤና"],"a":0},
+{"t":"mc","q":"ችግር means…","o":["problem","danger","pain"],"a":0},
+{"t":"note","tag":"The national reassurance","q":"ችግር የለም","body":"<p><b>ችግር የለም</b> <i>chigir yellem</i> — <i>no problem</i> — your yellem doing its finest work. Late taxi, changed plan, spilled buna: chigir yellem. Half philosophy, half national motto.</p>","eg":[["ችግር የለም","chigir yellem","no problem"]]},
+{"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ችግር"],"a":0},
+{"t":"mc","q":"ችግር የለም means…","o":["no problem","big problem","whose problem?"],"a":0}
+]},
+{"id":"am_b7_2","title":"Hearing the reassurance","step":"recognize","meta":"Calm by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ችግር","o":["ችግር","ችግር የለም","ጤና"],"a":0},
+{"t":"mc","q":"What does ጤና mean?","o":["health","peace","strength"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ጤና","ችግር"],"a":0},
+{"t":"mc","q":"Which one means no problem?","o":["ችግር የለም","ችግር አለ","የለም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጤና","o":["ጤና","ችግር","ችግር የለም"],"a":0},
+{"t":"mc","q":"ችግር የለም is best described as…","o":["half philosophy, half motto","an apology","a complaint"],"a":0}
+]},
+{"id":"am_b7_3","title":"Building the reassurance","step":"build","meta":"Trouble, dissolved","vocab":[],"ex":[
+{"t":"wb","q":"Build: no problem","a":["ችግር","የለም"],"pool":["ችግር","የለም","አለ"]},
+{"t":"mc","q":"Pick the word for health","o":["ጤና","ችግር","ህመም"],"a":0},
+{"t":"wb","q":"Build: the formal greeting (health + be-given)","a":["ጤና","ይስጥልኝ"],"pool":["ጤና","ይስጥልኝ","የለም"]},
+{"t":"mc","q":"Pick the word for problem","o":["ችግር","ጤና","ህመም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ችግር","ጤና"],"a":0}
+]},
+{"id":"am_b7_4","title":"The reassurance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጤና","health"],["ችግር","problem"],["ችግር የለም","no problem"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጤና","o":["ጤና","ችግር የለም","ችግር"],"a":0},
+{"t":"match","q":"Match the yellem family","pairs":[["ችግር የለም","no problem"],["ስኳር የለም","no sugar"]]},
+{"t":"mc","q":"The taxi is late; your Ethiopian friend shrugs:…","o":["ችግር የለም","ችግር አለ","ጤና ይስጥልኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ችግር","o":["ችግር","ጤና","ችግር የለም"],"a":0}
+]},
+{"id":"am_b7_5","title":"Checkpoint: Zone 10 complete","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ችግር የለም means…","o":["no problem","get well","no pain"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ጤና","ችግር"],"a":0},
+{"t":"mc","q":"Review — ራሴን አመመኝ means…","o":["my head hurts","my hand hurts","I am dizzy"],"a":0},
+{"t":"mc","q":"Review — the clinic is the…","o":["ሐኪም ቤት","ሆቴል","ቢሮ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
+{"t":"mc","q":"Review — take the medicine is…","o":["መድሃኒት ውሰድ","ውሃ ጠጣ","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Review — ጤና hides inside…","o":["ጤና ይስጥልኝ","ችግር የለም","ደህና ነህ?"],"a":0}
 ]}
 ];
 
@@ -2686,9 +2981,11 @@ const AM_UNITS=[
 {"n":8,"t":"Shopping and money","d":"Birr, sint new, the bargaining dance — and the counter script","lessons":["am_m1","am_m1_2","am_m1_3","am_m1_4","am_m1_5","am_m2","am_m2_2","am_m2_3","am_m2_4","am_m2_5","am_m3","am_m3_2","am_m3_3","am_m3_4","am_m3_5","am_m4","am_m4_2","am_m4_3","am_m4_4","am_m4_5","am_m5","am_m5_2","am_m5_3","am_m5_4","am_m5_5","am_m6","am_m6_2","am_m6_3","am_m6_4","am_m6_5","am_m7","am_m7_2","am_m7_3","am_m7_4","am_m7_5"]}
 ,
 {"n":9,"t":"Work and school","d":"Sira, the temari root — and the last great question word","lessons":["am_w1","am_w1_2","am_w1_3","am_w1_4","am_w1_5","am_w2","am_w2_2","am_w2_3","am_w2_4","am_w2_5","am_w3","am_w3_2","am_w3_3","am_w3_4","am_w3_5","am_w4","am_w4_2","am_w4_3","am_w4_4","am_w4_5","am_w5","am_w5_2","am_w5_3","am_w5_4","am_w5_5","am_w6","am_w6_2","am_w6_3","am_w6_4","am_w6_5","am_w7","am_w7_2","am_w7_3","am_w7_4","am_w7_5"]}
+,
+{"n":10,"t":"Body and health","d":"The body, the hakim bet — and chigir yellem","lessons":["am_b1","am_b1_2","am_b1_3","am_b1_4","am_b1_5","am_b2","am_b2_2","am_b2_3","am_b2_4","am_b2_5","am_b3","am_b3_2","am_b3_3","am_b3_4","am_b3_5","am_b4","am_b4_2","am_b4_3","am_b4_4","am_b4_5","am_b5","am_b5_2","am_b5_3","am_b5_4","am_b5_5","am_b6","am_b6_2","am_b6_3","am_b6_4","am_b6_5","am_b7","am_b7_2","am_b7_3","am_b7_4","am_b7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?","am_b1":"ራስ","am_b2":"ዓይን","am_b3":"አመመኝ","am_b4":"ሐኪም ቤት","am_b5":"ተቀመጥ","am_b6":"ይሻለኛል","am_b7":"ችግር የለም"};
 
 const AM_SRS_SEED=[];
 
