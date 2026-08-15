@@ -1492,6 +1492,300 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","እባክሽ"],"a":0},
 {"t":"mc","q":"Review — እበላለሁ means…","o":["I eat","I drink","eat!"],"a":0},
 {"t":"mc","q":"Review — the graceful I-am-full is…","o":["በቃኝ","እንብላ","በጣም"],"a":0}
+]},
+
+/* ---------- h1 · The house ---------- */
+{"id":"am_h1","title":"The house","step":"learn","meta":"Bet — a word that builds half the language","vocab":[["ቤት","bet","house · home"],["በር","ber","door"],["መስኮት","meskot","window"],["ግቢ","gibi","compound · yard"]],"ex":[
+{"t":"note","tag":"The keystone word","q":"ቤት","body":"<p><b>ቤት</b> <i>bet</i> — <i>house, home</i> — is about to become the busiest building block you own: Amharic names whole places by gluing words onto bet, as you will see all zone. First, the house itself.</p>","eg":[["ቤት","bet","house · home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","ወጥ"],"a":0},
+{"t":"mc","q":"ቤት means…","o":["house and home","room","roof"],"a":0},
+{"t":"note","tag":"In and out","q":"በር and መስኮት","body":"<p><b>በር</b> <i>ber</i> — <i>door</i> — and <b>መስኮት</b> <i>meskot</i> — <i>window</i>. The knock at the ber is where your ማን ነው? finally gets used.</p>","eg":[["በር","ber","door"],["መስኮት","meskot","window"]]},
+{"t":"li","q":"Which one do you hear?","say":"መስኮት","o":["መስኮት","በር"],"a":0},
+{"t":"mc","q":"በር means…","o":["door","window","wall"],"a":0},
+{"t":"note","tag":"The space around","q":"ግቢ","body":"<p><b>ግቢ</b> <i>gibi</i> — the <i>compound</i>: the walled yard most Ethiopian homes live inside, where coffee is roasted, clothes dry and neighbors visit. Much of home life happens in the gibi, not the house.</p>","eg":[["ግቢ","gibi","compound · yard"]]},
+{"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","ቤት"],"a":0},
+{"t":"mc","q":"The ግቢ is…","o":["the walled yard around the home","the roof","the front room"],"a":0}
+]},
+{"id":"am_h1_2","title":"Hearing the house","step":"recognize","meta":"The building by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","ቤት","ግቢ"],"a":0},
+{"t":"mc","q":"What does መስኮት mean?","o":["window","door","yard"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","በር","መስኮት"],"a":0},
+{"t":"mc","q":"Which one means compound?","o":["ግቢ","ቤት","በር"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","መስኮት","ቤት"],"a":0},
+{"t":"mc","q":"Coffee roasting and drying laundry happen in…","o":["the gibi","the bedroom","the street"],"a":0}
+]},
+{"id":"am_h1_3","title":"Building the house","step":"build","meta":"Walls, doors, windows","vocab":[],"ex":[
+{"t":"wb","q":"Build: house and door","a":["ቤት","በር"],"pool":["ቤት","በር","ግቢ"]},
+{"t":"mc","q":"Pick the word for window","o":["መስኮት","በር","ግቢ"],"a":0},
+{"t":"wb","q":"Build: window and compound","a":["መስኮት","ግቢ"],"pool":["መስኮት","ግቢ","ቤት"]},
+{"t":"mc","q":"Pick the word for house","o":["ቤት","ግቢ","በር"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መስኮት","o":["መስኮት","ግቢ","በር"],"a":0}
+]},
+{"id":"am_h1_4","title":"The house in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቤት","house"],["በር","door"],["መስኮት","window"]]},
+{"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","ቤት","በር"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ግቢ","compound"],["ማን ነው?","who is it?"]]},
+{"t":"mc","q":"A knock at the በር gets the question…","o":["ማን ነው?","ስንት ነው?","የት ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","መስኮት","ግቢ"],"a":0}
+]},
+{"id":"am_h1_5","title":"Checkpoint: the house","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ግቢ means…","o":["compound · yard","garden flowers","gate"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","ግቢ","መስኮት"],"a":0},
+{"t":"mc","q":"Which one means door?","o":["በር","መስኮት","ቤት"],"a":0},
+{"t":"mc","q":"Review — እንብላ means…","o":["let us eat","eat!","I eat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","ቤት","ግቢ"],"a":0}
+]},
+
+/* ---------- h2 · The rooms ---------- */
+{"id":"am_h2","title":"The rooms","step":"learn","meta":"Bet builds every room in the house","vocab":[["ክፍል","kifil","room"],["ማድቤት","madbet","kitchen"],["መኝታ ቤት","megnita bet","bedroom"],["ሽንት ቤት","shint bet","toilet"]],"ex":[
+{"t":"note","tag":"The generic room","q":"ክፍል","body":"<p><b>ክፍል</b> <i>kifil</i> — <i>room</i> (also a classroom, also a section of anything). The all-purpose divider word.</p>","eg":[["ክፍል","kifil","room"]]},
+{"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ቤት"],"a":0},
+{"t":"mc","q":"ክፍል means…","o":["room","kitchen","hall"],"a":0},
+{"t":"note","tag":"Bet keeps its promise","q":"ማድቤት and መኝታ ቤት","body":"<p>Watch bet build rooms: <b>ማድቤት</b> <i>madbet</i> — <i>kitchen</i> — and <b>መኝታ ቤት</b> <i>megnita bet</i> — literally <i>sleeping house</i> — the bedroom. Amharic names places by what happens in them plus bet.</p>","eg":[["ማድቤት","madbet","kitchen"],["መኝታ ቤት","megnita bet","bedroom"]]},
+{"t":"li","q":"Which one do you hear?","say":"ማድቤት","o":["ማድቤት","መኝታ ቤት"],"a":0},
+{"t":"mc","q":"መኝታ ቤት literally means…","o":["sleeping house","quiet room","night place"],"a":0},
+{"t":"note","tag":"The essential one","q":"ሽንት ቤት","body":"<p><b>ሽንት ቤት</b> <i>shint bet</i> — <i>the toilet</i> — the single most useful compound in any traveler&rsquo;s Amharic. Ask for it with the yet-question coming next topic and you are equipped for anything.</p>","eg":[["ሽንት ቤት","shint bet","toilet"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","ማድቤት"],"a":0},
+{"t":"mc","q":"ሽንት ቤት means…","o":["toilet","shower","kitchen"],"a":0}
+]},
+{"id":"am_h2_2","title":"Hearing the rooms","step":"recognize","meta":"Doors off the hallway","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ማድቤት","ሽንት ቤት"],"a":0},
+{"t":"mc","q":"What does ማድቤት mean?","o":["kitchen","bedroom","toilet"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ቤት","ማድቤት"],"a":0},
+{"t":"mc","q":"Which one is the toilet?","o":["ሽንት ቤት","መኝታ ቤት","ማድቤት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","መኝታ ቤት","ክፍል"],"a":0},
+{"t":"mc","q":"Amharic names rooms by…","o":["what happens there + bet","their size","their color"],"a":0}
+]},
+{"id":"am_h2_3","title":"Building the rooms","step":"build","meta":"Compound by compound","vocab":[],"ex":[
+{"t":"wb","q":"Build: bedroom (sleeping + house)","a":["መኝታ","ቤት"],"pool":["መኝታ","ቤት","ሽንት"]},
+{"t":"mc","q":"Pick the kitchen","o":["ማድቤት","መኝታ ቤት","ክፍል"],"a":0},
+{"t":"wb","q":"Build: toilet (shint + bet)","a":["ሽንት","ቤት"],"pool":["ሽንት","ቤት","መኝታ"]},
+{"t":"mc","q":"Pick the word for room","o":["ክፍል","ቤት","ግቢ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማድቤት","o":["ማድቤት","ሽንት ቤት","ክፍል"],"a":0}
+]},
+{"id":"am_h2_4","title":"The rooms in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ክፍል","room"],["ማድቤት","kitchen"],["ሽንት ቤት","toilet"]]},
+{"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ሽንት ቤት","ማድቤት"],"a":0},
+{"t":"match","q":"Match the room to what happens there","pairs":[["ማድቤት","cooking"],["መኝታ ቤት","sleeping"]]},
+{"t":"mc","q":"The most useful compound for any traveler…","o":["ሽንት ቤት","መኝታ ቤት","ማድቤት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ማድቤት","መኝታ ቤት"],"a":0}
+]},
+{"id":"am_h2_5","title":"Checkpoint: the rooms","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ማድቤት means…","o":["kitchen","bedroom","bathroom"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","ማድቤት","መኝታ ቤት"],"a":0},
+{"t":"mc","q":"Which one means room?","o":["ክፍል","ቤት","ግቢ"],"a":0},
+{"t":"mc","q":"Review — ግቢ means…","o":["compound · yard","kitchen","hall"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ክፍል","ሽንት ቤት"],"a":0}
+]},
+
+/* ---------- h3 · The furniture ---------- */
+{"id":"am_h3","title":"The furniture","step":"learn","meta":"Chair, table, bed — and the light","vocab":[["ወንበር","wenber","chair"],["ጠረጴዛ","terepeza","table"],["አልጋ","alga","bed"],["መብራት","mebrat","light · electricity"]],"ex":[
+{"t":"note","tag":"Sitting and serving","q":"ወንበር and ጠረጴዛ","body":"<p><b>ወንበር</b> <i>wenber</i> — <i>chair</i>. <b>ጠረጴዛ</b> <i>terepeza</i> — <i>table</i> — with two tight consonants, a mouthful worth practicing.</p>","eg":[["ወንበር","wenber","chair"],["ጠረጴዛ","terepeza","table"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወንበር","o":["ወንበር","ጠረጴዛ"],"a":0},
+{"t":"mc","q":"ጠረጴዛ means…","o":["table","chair","bench"],"a":0},
+{"t":"note","tag":"Rest","q":"አልጋ","body":"<p><b>አልጋ</b> <i>alga</i> — <i>bed</i>. What the መኝታ ቤት is for.</p>","eg":[["አልጋ","alga","bed"]]},
+{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ወንበር"],"a":0},
+{"t":"mc","q":"አልጋ belongs in…","o":["መኝታ ቤት","ማድቤት","ግቢ"],"a":0},
+{"t":"note","tag":"On and off","q":"መብራት","body":"<p><b>መብራት</b> <i>mebrat</i> — <i>light</i>, and by extension <i>electricity</i>. When the power blinks — mebrat tefa, the light vanished — the whole neighborhood says it together.</p>","eg":[["መብራት","mebrat","light · electricity"]]},
+{"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","አልጋ"],"a":0},
+{"t":"mc","q":"መብራት means…","o":["light · electricity","candle","stove"],"a":0}
+]},
+{"id":"am_h3_2","title":"Hearing the furniture","step":"recognize","meta":"The room by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
+{"t":"mc","q":"What does ወንበር mean?","o":["chair","table","bed"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","ጠረጴዛ","አልጋ"],"a":0},
+{"t":"mc","q":"Which one means bed?","o":["አልጋ","ወንበር","መብራት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","መብራት","ወንበር"],"a":0},
+{"t":"mc","q":"Mebrat tefa means the light…","o":["vanished","turned on","is bright"],"a":0}
+]},
+{"id":"am_h3_3","title":"Building the furniture","step":"build","meta":"Furnish the kifil","vocab":[],"ex":[
+{"t":"wb","q":"Build: chair and table","a":["ወንበር","ጠረጴዛ"],"pool":["ወንበር","ጠረጴዛ","አልጋ"]},
+{"t":"mc","q":"Pick the word for light","o":["መብራት","አልጋ","ወንበር"],"a":0},
+{"t":"wb","q":"Build: bed and light","a":["አልጋ","መብራት"],"pool":["አልጋ","መብራት","ጠረጴዛ"]},
+{"t":"mc","q":"Pick the word for table","o":["ጠረጴዛ","ወንበር","መብራት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወንበር","o":["ወንበር","አልጋ","ጠረጴዛ"],"a":0}
+]},
+{"id":"am_h3_4","title":"The furniture in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወንበር","chair"],["ጠረጴዛ","table"],["አልጋ","bed"]]},
+{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ወንበር","መብራት"],"a":0},
+{"t":"match","q":"Match the thing to its room","pairs":[["አልጋ","መኝታ ቤት"],["ወንበር","ክፍል"]]},
+{"t":"mc","q":"Two tight consonants live inside…","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","መብራት","ወንበር"],"a":0}
+]},
+{"id":"am_h3_5","title":"Checkpoint: the furniture","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ወንበር means…","o":["chair","table","cupboard"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","አልጋ","ጠረጴዛ"],"a":0},
+{"t":"mc","q":"Which one means table?","o":["ጠረጴዛ","አልጋ","ወንበር"],"a":0},
+{"t":"mc","q":"Review — ሽንት ቤት means…","o":["toilet","bathroom sink","kitchen"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ጠረጴዛ","መብራት"],"a":0}
+]},
+
+/* ---------- h4 · Where is it? ---------- */
+{"id":"am_h4","title":"Where is it?","step":"learn","meta":"Yet new — and the mighty alle/yellem pair","vocab":[["የት ነው?","yet new?","where is it?"],["እዚህ","izih","here"],["እዚያ","iziya","there"],["አለ","alle","there is · it is present"],["የለም","yellem","there is not"]],"ex":[
+{"t":"note","tag":"The question","q":"የት ነው?","body":"<p><b>የት ነው?</b> <i>yet new?</i> — <i>where is it?</i> You met yet inside ከየት (from-where); alone it asks position. ሽንት ቤት የት ነው? — where is the toilet? — may be the most valuable sentence in this course.</p>","eg":[["የት ነው?","yet new?","where is it?"]]},
+{"t":"li","q":"Which one do you hear?","say":"የት ነው?","o":["የት ነው?","ማን ነው?"],"a":0},
+{"t":"mc","q":"የት ነው? asks…","o":["where is it?","what is it?","whose is it?"],"a":0},
+{"t":"note","tag":"Here and there","q":"እዚህ and እዚያ","body":"<p>The answers: <b>እዚህ</b> <i>izih</i> — <i>here</i> — and <b>እዚያ</b> <i>iziya</i> — <i>there</i>. One vowel apart; listen for the ya.</p>","eg":[["እዚህ","izih","here"],["እዚያ","iziya","there"]]},
+{"t":"li","q":"Here or there — which do you hear?","say":"እዚያ","o":["እዚያ","እዚህ"],"a":0},
+{"t":"mc","q":"እዚህ means…","o":["here","there","inside"],"a":0},
+{"t":"note","tag":"The existence pair","q":"አለ and የለም","body":"<p>Two tiny giants: <b>አለ</b> <i>alle</i> — <i>there is, it exists, it is present</i> — and <b>የለም</b> <i>yellem</i> — <i>there is not</i>. Shops, menus, bus stops: half of Ethiopian commerce is one word answering the other. ውሃ አለ? — የለም.</p>","eg":[["አለ","alle","there is · it is present"],["የለም","yellem","there is not"]]},
+{"t":"li","q":"Is or is not — which do you hear?","say":"የለም","o":["የለም","አለ"],"a":0},
+{"t":"mc","q":"ውሃ አለ? asks…","o":["is there water?","where is water?","whose water is this?"],"a":0}
+]},
+{"id":"am_h4_2","title":"Hearing where","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እዚህ","o":["እዚህ","እዚያ","የት ነው?"],"a":0},
+{"t":"mc","q":"What does የለም mean?","o":["there is not","there is","maybe"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","የለም","እዚህ"],"a":0},
+{"t":"mc","q":"Which one means there?","o":["እዚያ","እዚህ","የት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የት ነው?","o":["የት ነው?","እዚያ","አለ"],"a":0},
+{"t":"mc","q":"ሻይ አለ? — the sad answer is…","o":["የለም","አለ","እዚህ"],"a":0}
+]},
+{"id":"am_h4_3","title":"Building where","step":"build","meta":"Ask, point, confirm","vocab":[],"ex":[
+{"t":"wb","q":"Build: where is the toilet?","a":["ሽንት","ቤት","የት","ነው?"],"pool":["ሽንት","ቤት","የት","ነው?","እዚህ"]},
+{"t":"mc","q":"Pick the word for here","o":["እዚህ","እዚያ","አለ"],"a":0},
+{"t":"wb","q":"Build: is there coffee? (buna alle?)","a":["ቡና","አለ?"],"pool":["ቡና","አለ?","የለም"]},
+{"t":"mc","q":"Pick: there is not","o":["የለም","አለ","እዚያ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እዚያ","o":["እዚያ","እዚህ","የለም"],"a":0}
+]},
+{"id":"am_h4_4","title":"Where in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["የት ነው?","where is it?"],["እዚህ","here"],["እዚያ","there"]]},
+{"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","እዚያ","የለም"],"a":0},
+{"t":"match","q":"Match the pair","pairs":[["አለ","there is"],["የለም","there is not"]]},
+{"t":"mc","q":"ሽንት ቤት የት ነው? — እዚያ. The toilet is…","o":["over there","right here","not present"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የለም","o":["የለም","አለ","እዚህ"],"a":0}
+]},
+{"id":"am_h4_5","title":"Checkpoint: where","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"የት ነው? means…","o":["where is it?","who is it?","how is it?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እዚህ","o":["እዚህ","እዚያ","አለ"],"a":0},
+{"t":"mc","q":"Which one means there is?","o":["አለ","የለም","እዚህ"],"a":0},
+{"t":"mc","q":"Review — መብራት means…","o":["light · electricity","water","fire"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","የለም","እዚያ"],"a":0}
+]},
+
+/* ---------- h5 · Cups and the jebena ---------- */
+{"id":"am_h5","title":"Cups and the jebena","step":"learn","meta":"The kitchen tools — one of them famous","vocab":[["ኩባያ","kubaya","cup"],["ሳህን","sahin","plate"],["ማንኪያ","mankiya","spoon"],["ጀበና","jebena","coffee pot"]],"ex":[
+{"t":"note","tag":"Cup and plate","q":"ኩባያ and ሳህን","body":"<p><b>ኩባያ</b> <i>kubaya</i> — <i>cup</i> — and <b>ሳህን</b> <i>sahin</i> — <i>plate</i> (though injera nights need none).</p>","eg":[["ኩባያ","kubaya","cup"],["ሳህን","sahin","plate"]]},
+{"t":"li","q":"Which one do you hear?","say":"ኩባያ","o":["ኩባያ","ሳህን"],"a":0},
+{"t":"mc","q":"ሳህን means…","o":["plate","cup","bowl"],"a":0},
+{"t":"note","tag":"The spoon","q":"ማንኪያ","body":"<p><b>ማንኪያ</b> <i>mankiya</i> — <i>spoon</i> — for the breakfasts and soups that injera does not cover.</p>","eg":[["ማንኪያ","mankiya","spoon"]]},
+{"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ኩባያ"],"a":0},
+{"t":"mc","q":"ማንኪያ means…","o":["spoon","fork","knife"],"a":0},
+{"t":"note","tag":"The famous one","q":"ጀበና","body":"<p><b>ጀበና</b> <i>jebena</i> — the round-bellied clay <i>coffee pot</i> from the buna ceremony, black with years of fire. Every home owns one; many are heirlooms. The shape alone means welcome.</p>","eg":[["ጀበና","jebena","coffee pot"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ማንኪያ"],"a":0},
+{"t":"mc","q":"The ጀበና is used for…","o":["the coffee ceremony","serving stew","carrying water"],"a":0}
+]},
+{"id":"am_h5_2","title":"Hearing the tools","step":"recognize","meta":"Kitchen kit by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሳህን","o":["ሳህን","ኩባያ","ጀበና"],"a":0},
+{"t":"mc","q":"What does ኩባያ mean?","o":["cup","plate","pot"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ሳህን","ማንኪያ"],"a":0},
+{"t":"mc","q":"Which one means spoon?","o":["ማንኪያ","ኩባያ","ሳህን"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ጀበና","ኩባያ"],"a":0},
+{"t":"mc","q":"Many jebenas are…","o":["family heirlooms","disposable","imported"],"a":0}
+]},
+{"id":"am_h5_3","title":"Building the tools","step":"build","meta":"Lay the tray","vocab":[],"ex":[
+{"t":"wb","q":"Build: cup and plate","a":["ኩባያ","ሳህን"],"pool":["ኩባያ","ሳህን","ማንኪያ"]},
+{"t":"mc","q":"Pick the coffee pot","o":["ጀበና","ኩባያ","ሳህን"],"a":0},
+{"t":"wb","q":"Build: spoon and coffee pot","a":["ማንኪያ","ጀበና"],"pool":["ማንኪያ","ጀበና","ኩባያ"]},
+{"t":"mc","q":"Pick the word for plate","o":["ሳህን","ማንኪያ","ጀበና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ኩባያ","o":["ኩባያ","ማንኪያ","ሳህን"],"a":0}
+]},
+{"id":"am_h5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ኩባያ","cup"],["ሳህን","plate"],["ማንኪያ","spoon"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ኩባያ","ሳህን"],"a":0},
+{"t":"match","q":"Match the tool to its drink","pairs":[["ጀበና","ቡና"],["ኩባያ","ሻይ"]]},
+{"t":"mc","q":"On injera nights, the ሳህን is…","o":["not needed — injera is the plate","doubled","tiny"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሳህን","o":["ሳህን","ጀበና","ማንኪያ"],"a":0}
+]},
+{"id":"am_h5_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ጀበና means…","o":["coffee pot","tea kettle","water jar"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ኩባያ","ጀበና"],"a":0},
+{"t":"mc","q":"Which one means cup?","o":["ኩባያ","ሳህን","ማንኪያ"],"a":0},
+{"t":"mc","q":"Review — የለም means…","o":["there is not","there is","not yet"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ሳህን","ኩባያ"],"a":0}
+]},
+
+/* ---------- h6 · What you do at home ---------- */
+{"id":"am_h6","title":"What you do at home","step":"learn","meta":"Cook, wash, sleep, rise — the home verbs","vocab":[["አበስላለሁ","abeslalehu","I cook"],["አጥባለሁ","atbalehu","I wash"],["እተኛለሁ","itegnalehu","I sleep"],["እነሳለሁ","inesalehu","I get up"]],"ex":[
+{"t":"note","tag":"The kitchen verbs","q":"አበስላለሁ and አጥባለሁ","body":"<p>The -alehu ending you met on ibelalehu keeps working: <b>አበስላለሁ</b> <i>abeslalehu</i> — <i>I cook</i> — and <b>አጥባለሁ</b> <i>atbalehu</i> — <i>I wash</i> (clothes, dishes, anything).</p>","eg":[["አበስላለሁ","abeslalehu","I cook"],["አጥባለሁ","atbalehu","I wash"]]},
+{"t":"li","q":"Cook or wash — which do you hear?","say":"አበስላለሁ","o":["አበስላለሁ","አጥባለሁ"],"a":0},
+{"t":"mc","q":"አጥባለሁ means…","o":["I wash","I cook","I clean the yard"],"a":0},
+{"t":"note","tag":"Night and morning","q":"እተኛለሁ and እነሳለሁ","body":"<p><b>እተኛለሁ</b> <i>itegnalehu</i> — <i>I sleep</i> — and <b>እነሳለሁ</b> <i>inesalehu</i> — <i>I get up</i>. Remember the Ethiopian clock: getting up at one o&rsquo;clock is perfectly respectable — that is 7 AM.</p>","eg":[["እተኛለሁ","itegnalehu","I sleep"],["እነሳለሁ","inesalehu","I get up"]]},
+{"t":"li","q":"Sleep or rise — which do you hear?","say":"እነሳለሁ","o":["እነሳለሁ","እተኛለሁ"],"a":0},
+{"t":"mc","q":"እተኛለሁ means…","o":["I sleep","I get up","I rest"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","እነሳለሁ"],"a":0},
+{"t":"mc","q":"All four verbs share the ending…","o":["-alehu, the I marker","-och, the plural","-new, the is"],"a":0}
+]},
+{"id":"am_h6_2","title":"Hearing the routine","step":"recognize","meta":"The day at home by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","እነሳለሁ","አበስላለሁ"],"a":0},
+{"t":"mc","q":"What does አበስላለሁ mean?","o":["I cook","I wash","I eat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
+{"t":"mc","q":"Which one means I get up?","o":["እነሳለሁ","እተኛለሁ","አጥባለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እነሳለሁ","o":["እነሳለሁ","እተኛለሁ","አጥባለሁ"],"a":0},
+{"t":"mc","q":"The routine in order: እነሳለሁ, አበስላለሁ, then at night…","o":["እተኛለሁ","አጥባለሁ","እበላለሁ"],"a":0}
+]},
+{"id":"am_h6_3","title":"Building the routine","step":"build","meta":"Your day in verbs","vocab":[],"ex":[
+{"t":"wb","q":"Build: I cook wet (wet abeslalehu)","a":["ወጥ","አበስላለሁ"],"pool":["ወጥ","አበስላለሁ","አጥባለሁ"]},
+{"t":"mc","q":"Pick: I sleep","o":["እተኛለሁ","እነሳለሁ","አጥባለሁ"],"a":0},
+{"t":"wb","q":"Build: in the morning I get up (tewat inesalehu)","a":["ጠዋት","እነሳለሁ"],"pool":["ጠዋት","እነሳለሁ","እተኛለሁ"]},
+{"t":"mc","q":"Pick: I wash","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አበስላለሁ","o":["አበስላለሁ","አጥባለሁ","እነሳለሁ"],"a":0}
+]},
+{"id":"am_h6_4","title":"The routine in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አበስላለሁ","I cook"],["አጥባለሁ","I wash"],["እተኛለሁ","I sleep"]]},
+{"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","አበስላለሁ","እነሳለሁ"],"a":0},
+{"t":"match","q":"Match the verb to its place","pairs":[["አበስላለሁ","ማድቤት"],["እተኛለሁ","መኝታ ቤት"]]},
+{"t":"mc","q":"Getting up at one o&rsquo;clock habesha time means rising at…","o":["7 AM","1 AM","noon"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እነሳለሁ","o":["እነሳለሁ","አጥባለሁ","እተኛለሁ"],"a":0}
+]},
+{"id":"am_h6_5","title":"Checkpoint: the routine","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እነሳለሁ means…","o":["I get up","I sleep","I wash"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
+{"t":"mc","q":"Which one means I cook?","o":["አበስላለሁ","አጥባለሁ","እነሳለሁ"],"a":0},
+{"t":"mc","q":"Review — ጀበና means…","o":["coffee pot","kettle","cup"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","እነሳለሁ","አበስላለሁ"],"a":0}
+]},
+
+/* ---------- h7 · Inside the house ---------- */
+{"id":"am_h7","title":"Inside the house","step":"learn","meta":"Wist — the little word that means in","vocab":[["ውስጥ","wist","inside · in"],["ቤት ውስጥ","bet wist","in the house"],["ቤት ነኝ","bet negn","I am at home"]],"ex":[
+{"t":"note","tag":"After, not before","q":"ውስጥ","body":"<p>English says IN the house; Amharic says the-house IN: <b>ውስጥ</b> <i>wist</i> — <i>inside</i> — follows its noun. <b>ቤት ውስጥ</b> <i>bet wist</i> — <i>in the house</i>. Little words come AFTER in this language — remember it once and it pays forever.</p>","eg":[["ውስጥ","wist","inside · in"],["ቤት ውስጥ","bet wist","in the house"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ውስጥ","o":["ቤት ውስጥ","ውስጥ"],"a":0},
+{"t":"mc","q":"Amharic position words come…","o":["after the noun","before the noun","anywhere"],"a":0},
+{"t":"note","tag":"The homebody sentence","q":"ቤት ነኝ","body":"<p><b>ቤት ነኝ</b> <i>bet negn</i> — <i>I am at home</i> — the ነኝ of ደህና ነኝ doing location duty. The answer to every where-are-you phone call.</p>","eg":[["ቤት ነኝ","bet negn","I am at home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ"],"a":0},
+{"t":"mc","q":"ቤት ነኝ means…","o":["I am at home","this is a house","the house exists"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ነኝ"],"a":0},
+{"t":"mc","q":"ማድቤት ውስጥ would mean…","o":["in the kitchen","the kitchen door","a big kitchen"],"a":0}
+]},
+{"id":"am_h7_2","title":"Hearing inside","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ውስጥ","ቤት ነኝ"],"a":0},
+{"t":"mc","q":"What does ቤት ውስጥ mean?","o":["in the house","at home (I am)","the inner room"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ውስጥ","ቤት ውስጥ"],"a":0},
+{"t":"mc","q":"Which one means I am at home?","o":["ቤት ነኝ","ቤት ውስጥ","የት ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ውስጥ","o":["ቤት ውስጥ","ቤት ነኝ","ውስጥ"],"a":0},
+{"t":"mc","q":"ግቢ ውስጥ means…","o":["in the compound","the compound gate","a small compound"],"a":0}
+]},
+{"id":"am_h7_3","title":"Building inside","step":"build","meta":"Noun first, wist after","vocab":[],"ex":[
+{"t":"wb","q":"Build: in the house","a":["ቤት","ውስጥ"],"pool":["ቤት","ውስጥ","ነኝ"]},
+{"t":"mc","q":"Pick: I am at home","o":["ቤት ነኝ","ቤት ውስጥ","ውስጥ"],"a":0},
+{"t":"wb","q":"Build: in the kitchen","a":["ማድቤት","ውስጥ"],"pool":["ማድቤት","ውስጥ","ቤት"]},
+{"t":"wb","q":"Build: I am at home","a":["ቤት","ነኝ"],"pool":["ቤት","ነኝ","ውስጥ"]},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ","ውስጥ"],"a":0}
+]},
+{"id":"am_h7_4","title":"Inside in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውስጥ","inside"],["ቤት ውስጥ","in the house"],["ቤት ነኝ","I am at home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ነኝ","ቤት ውስጥ"],"a":0},
+{"t":"match","q":"Match the frame","pairs":[["ማድቤት ውስጥ","in the kitchen"],["ግቢ ውስጥ","in the compound"]]},
+{"t":"mc","q":"Where-are-you phone call, answered from the sofa…","o":["ቤት ነኝ","የት ነው?","ቤት ውስጥ ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ውስጥ","o":["ቤት ውስጥ","ውስጥ","ቤት ነኝ"],"a":0}
+]},
+{"id":"am_h7_5","title":"Checkpoint: Zone 6 complete","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ቤት ውስጥ means…","o":["in the house","at my house","the house is here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ","የት ነው?"],"a":0},
+{"t":"mc","q":"Review — the existence pair is…","o":["አለ and የለም","እዚህ and እዚያ","ቤት and ግቢ"],"a":0},
+{"t":"mc","q":"Review — which one means bedroom?","o":["መኝታ ቤት","ማድቤት","ሽንት ቤት"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
+{"t":"mc","q":"Review — I get up is…","o":["እነሳለሁ","እተኛለሁ","አበስላለሁ"],"a":0},
+{"t":"mc","q":"Review — the famous clay coffee pot is the…","o":["ጀበና","ኩባያ","ሳህን"],"a":0}
 ]}
 ];
 
@@ -1505,9 +1799,11 @@ const AM_UNITS=[
 {"n":4,"t":"Numbers, days and the Ethiopian clock","d":"Counting, the week — and the day that starts at sunrise","lessons":["am_n1","am_n1_2","am_n1_3","am_n1_4","am_n1_5","am_n2","am_n2_2","am_n2_3","am_n2_4","am_n2_5","am_n3","am_n3_2","am_n3_3","am_n3_4","am_n3_5","am_n4","am_n4_2","am_n4_3","am_n4_4","am_n4_5","am_n5","am_n5_2","am_n5_3","am_n5_4","am_n5_5","am_n6","am_n6_2","am_n6_3","am_n6_4","am_n6_5","am_n7","am_n7_2","am_n7_3","am_n7_4","am_n7_5"]}
 ,
 {"n":5,"t":"Food and drink","d":"Injera, the buna ceremony, the wet family — and the gursha","lessons":["am_d1","am_d1_2","am_d1_3","am_d1_4","am_d1_5","am_d2","am_d2_2","am_d2_3","am_d2_4","am_d2_5","am_d3","am_d3_2","am_d3_3","am_d3_4","am_d3_5","am_d4","am_d4_2","am_d4_3","am_d4_4","am_d4_5","am_d5","am_d5_2","am_d5_3","am_d5_4","am_d5_5","am_d6","am_d6_2","am_d6_3","am_d6_4","am_d6_5","am_d7","am_d7_2","am_d7_3","am_d7_4","am_d7_5"]}
+,
+{"n":6,"t":"Around the home","d":"Bet builds every room — plus where-is-it and the home verbs","lessons":["am_h1","am_h1_2","am_h1_3","am_h1_4","am_h1_5","am_h2","am_h2_2","am_h2_3","am_h2_4","am_h2_5","am_h3","am_h3_2","am_h3_3","am_h3_4","am_h3_5","am_h4","am_h4_2","am_h4_3","am_h4_4","am_h4_5","am_h5","am_h5_2","am_h5_3","am_h5_4","am_h5_5","am_h6","am_h6_2","am_h6_3","am_h6_4","am_h6_5","am_h7","am_h7_2","am_h7_3","am_h7_4","am_h7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ"};
 
 const AM_SRS_SEED=[];
 
