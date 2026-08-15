@@ -480,7 +480,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሮ","o":["ወይዘሮ","አቶ","እርስዎ"],"a":0}
 ]},
 {"id":"am_g4_5","title":"Checkpoint: the polite you","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
-{"t":"mc","q":"ደህና ነዎት? uses the ending for…","o":["እርስዎ, the polite you","አንተ, a male friend","እኔ, myself"],"a":0},
+{"t":"mc","q":"ደህና ነዎት? uses the ending for…","o":["the polite you, erswo","the plain you, ante","the speaker, ine"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጤና ይስጥልኝ","o":["ጤና ይስጥልኝ","ደህና ነዎት?","ወይዘሮ"],"a":0},
 {"t":"mc","q":"Which one means Mr.?","o":["አቶ","ወይዘሮ","ስም"],"a":0},
 {"t":"mc","q":"Review — good morning to a man is…","o":["እንደምን አደርክ?","እንደምን አደርሽ?","ደህና እደር"],"a":0},
@@ -624,7 +624,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወንድም","o":["ወንድም","እህት"],"a":0},
 {"t":"mc","q":"እህት means…","o":["sister","brother","aunt"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","እናት"],"a":0},
-{"t":"mc","q":"The word hiding inside ወንድም is…","o":["ወንድ, man","ወይዘሮ, Mrs.","ሰው, person"],"a":0}
+{"t":"mc","q":"The word for man hiding inside ወንድም is…","o":["ወንድ","ወይዘሮ","ሰው"],"a":0}
 ]},
 {"id":"am_f1_2","title":"Hearing the family","step":"recognize","meta":"The four by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","አባት","እህት"],"a":0},
@@ -748,7 +748,7 @@ const AM_LESSONS=[
 {"t":"li","q":"He or she — which do you hear?","say":"እሷ","o":["እሷ","እሱ"],"a":0},
 {"t":"mc","q":"እሱ means…","o":["he","she","they"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሱ"],"a":0},
-{"t":"mc","q":"To introduce your mother, you would say ይህች or simply…","o":["ይህ እናቴ ነው pattern with her word","ስምሽ ማን ነው?","ከየት ነሽ?"],"a":0}
+{"t":"mc","q":"ይህ እናቴ ነው would mean…","o":["this is my mother","my mother is home","who is my mother?"],"a":0}
 ]},
 {"id":"am_f4_2","title":"Hearing the introductions","step":"recognize","meta":"This-is by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እሱ","o":["እሱ","እሷ","ይህ"],"a":0},
@@ -789,7 +789,7 @@ const AM_LESSONS=[
 {"t":"li","q":"His or her — which do you hear?","say":"አባቷ","o":["አባቷ","አባቱ"],"a":0},
 {"t":"mc","q":"እናቷ means…","o":["her mother","his mother","my mother"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ"],"a":0},
-{"t":"mc","q":"The -wa in አባቷ echoes which pronoun?","o":["እሷ, she","እሱ, he","እኔ, I"],"a":0}
+{"t":"mc","q":"The -wa in አባቷ echoes which she-pronoun?","o":["እሷ","እሱ","እኔ"],"a":0}
 ]},
 {"id":"am_f5_2","title":"Hearing his and her","step":"recognize","meta":"Third-person owners by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አባቷ","o":["አባቷ","አባቱ","እናቷ"],"a":0},
@@ -852,7 +852,7 @@ const AM_LESSONS=[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባትዎ","your father (polite)"],["ጋሽ","older-man address"],["ወይዘሪት","Miss"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","አባትዎ","ወይዘሪት"],"a":0},
 {"t":"match","q":"Match the title to the person","pairs":[["አቶ","Mr."],["ወይዘሮ","Mrs."],["ወይዘሪት","Miss"]]},
-{"t":"mc","q":"Greeting your friend&rsquo;s grandfather warmly, you call him…","o":["ጋሽ + his name","እሱ","ወይዘሪት + his name"],"a":0},
+{"t":"mc","q":"Greeting your friend&rsquo;s grandfather warmly, you call him…","o":["gash plus his first name","just plain issu","weyzerit plus his name"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","ጋሽ","አባትዎ"],"a":0}
 ]},
 {"id":"am_f6_5","title":"Checkpoint: the honor","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
@@ -1781,7 +1781,7 @@ const AM_LESSONS=[
 {"id":"am_h7_5","title":"Checkpoint: Zone 6 complete","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ቤት ውስጥ means…","o":["in the house","at my house","the house is here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ","የት ነው?"],"a":0},
-{"t":"mc","q":"Review — the existence pair is…","o":["አለ and የለም","እዚህ and እዚያ","ቤት and ግቢ"],"a":0},
+{"t":"mc","q":"Review — the opposite of አለ is…","o":["የለም","እዚህ","ውስጥ"],"a":0},
 {"t":"mc","q":"Review — which one means bedroom?","o":["መኝታ ቤት","ማድቤት","ሽንት ቤት"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
 {"t":"mc","q":"Review — I get up is…","o":["እነሳለሁ","እተኛለሁ","አበስላለሁ"],"a":0},
