@@ -188,10 +188,37 @@ gelada monkey or walia ibex (national animal).
       in the Peace Corps manual (units 2-4; scratchpad/
       pc_amharic_ref.txt holds the extracted source pages). Checker
       caught 1 (non-ASCII ellipsis in a rom), fixed.
-- [ ] Zones 3-12, checker after each, commit per zone. NEXT: Zone 3
-      (Family & respect — abbat/ennat/wendim/ehit + possessive endings
-      -e/-ih/-ish per the manual's Unit 3-4 tables; copula table from
-      pc_amharic_ref.txt lines 136-161).
+- [x] Zone 3 (Family and respect) COMPLETE: abbat/ennat/wendim/ihit,
+      betesab/lij/lijoch/ayat, owner endings -e/-ih/-ish/-u/-wa/-wo
+      (tied to sime), yih + issu/isswa, gash/weyzerit, man new? +
+      gwadegnaye (-ye after vowels).
+- [x] Zone 4 (Numbers, days, Ethiopian clock) COMPLETE: 1-10, weekdays
+      (maksanyo etymology), weekend + zare/nege/tinant, sint se-at
+      new? + yikirta, THE SUNRISE CLOCK (habesha/ferenj, tewat/mata,
+      conversions), samint/wer/amet + 13-month note.
+- [x] Zone 5 (Food and drink) COMPLETE: injera/wet/dabo/wiha, buna
+      ceremony (abol/tona/bereka), rabegn/temagn + ibakih/ibakish,
+      ibelalehu/itettalehu + bila/biyi, doro/misir wet + siga/atkilt,
+      tafach new + betam + bekagn, inibla/gursha/tsom.
+- [x] Zone 6 (Around the home) COMPLETE: bet compounds (madbet,
+      megnita bet, shint bet), gibi, furniture + mebrat, yet new? +
+      izih/iziya + ALLE/YELLEM, kitchen tools + jebena, -alehu home
+      verbs, wist postposition + bet negn. ALSO: purged 6 mixed-script
+      mc options that were getting recorded as clips; check_am.py now
+      guards against mixed-script correct options.
+- [x] Zone 7 (Getting around) COMPLETE (245 lessons, 1467 ex, 320
+      clips): town places, ihedalehu/imetalehu + na/ney, wedet + wede
+      (before-noun vs wist after-noun), taksi/weyala/weraj alle!/
+      bajaj, kirb/ruk, tefahu/irdagn/mengedu (-u = the), inihid/qes
+      bel/qoy.
+- [ ] Zone 8 (Shopping & money) NEXT: birr; sint new? (how much is
+      it — sint recycle); wedd new (expensive)/rekash (cheap); qenes
+      (reduce it! — bargaining verb); demonstrative yih recycled for
+      point-and-ask (yih sint new?); alle/yellem shopping dialogs;
+      suk vs gebeya pricing note (suk fixed, gebeya negotiable);
+      santim? (cents rare — note birr notes/coins).
+- [ ] Zones 9-12 per the zone plan above, then orphan/cold-test
+      passes (validate the orphan metric against a pre-fix pack).
 - [ ] Orphan review pass + cold-test.
 - [ ] Trip pack.
 - [ ] Art.
