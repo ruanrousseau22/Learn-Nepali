@@ -1,5 +1,17 @@
 # Amharic (am) — build plan & continuity notes
 
+## STANDING ORDER (Ruan, Aug 15 2026 — autonomous build)
+
+"Keep working until zone 12 for amharic, and then build out all the
+sections, the religeos section, everything. And then check all your work
+continually to make sure everything is really good. … Please do thorough
+research on how to teach amharic. Dont deploy anything to netlify until I
+give yiou the go ahead."
+→ Zones 2–12, orphan/cold-test passes, trip pack, art, faith pack, ship
+wiring — all autonomous, checker after every zone, research-grounded.
+**NO PUSH / NO DEPLOY until Ruan's explicit go-ahead.** Commit locally
+per stage.
+
 Ruan's 13th language (named Aug 15 2026, right after Xhosa shipped).
 Working rules identical to the Xhosa build (XHOSA.md): build in stages,
 checker after every zone, commit per stage, browser smoke every few zones,
@@ -163,9 +175,23 @@ gelada monkey or walia ibex (national animal).
 ## Build stages
 
 - [x] Gate check + voice smoke test (Aug 15).
-- [ ] Skeleton pack (consts, registerPack, alphabet arrays) + extractor/
-      generator wiring + Zone 1.
-- [ ] Zones 2-12, checker after each, commit per zone.
+- [x] Skeleton pack + wiring + Zone 1 (s1-s7, 35 lessons, 87 clips; every
+      letter clip speech-verified; እ speaks እህ via am SPEAK_AS).
+- [x] Zone 2 (Greetings and people, g1-g7) COMPLETE (70 lessons, 420 ex,
+      127 clips): dehna neh/nesh/negn + igziabher yimesgen formula
+      (taught as fixed phrase, factual note), simih/simish man new +
+      sime ... new, time-of-day system (endemin aderk/adersh/walk +
+      dehna ider/ideri), erswo + dehna newot + tena yistilign + ato/
+      weyzero (+two-hand handshake note), keyet neh/nesh + ke-X negn
+      + ityoppya/addis abeba, sew/sewoch FIRST -och plural + gwadegna/
+      wend/set, ameseginalehu + dehna hun/hugni + chaw. All grounded
+      in the Peace Corps manual (units 2-4; scratchpad/
+      pc_amharic_ref.txt holds the extracted source pages). Checker
+      caught 1 (non-ASCII ellipsis in a rom), fixed.
+- [ ] Zones 3-12, checker after each, commit per zone. NEXT: Zone 3
+      (Family & respect — abbat/ennat/wendim/ehit + possessive endings
+      -e/-ih/-ish per the manual's Unit 3-4 tables; copula table from
+      pc_amharic_ref.txt lines 136-161).
 - [ ] Orphan review pass + cold-test.
 - [ ] Trip pack.
 - [ ] Art.
