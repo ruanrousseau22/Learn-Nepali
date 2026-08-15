@@ -1199,6 +1199,299 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
 {"t":"mc","q":"Review — the market day is…","o":["ቅዳሜ","ሰኞ","ረቡዕ"],"a":0},
 {"t":"mc","q":"Review — ነገ means…","o":["tomorrow","yesterday","today"],"a":0}
+]},
+
+/* ---------- d1 · The staples ---------- */
+{"id":"am_d1","title":"The staples","step":"learn","meta":"Injera — the plate you can eat","vocab":[["እንጀራ","injera","injera (the sourdough flatbread)"],["ወጥ","wet","stew"],["ዳቦ","dabo","bread"],["ውሃ","wiha","water"]],"ex":[
+{"t":"note","tag":"The foundation","q":"እንጀራ and ወጥ","body":"<p><b>እንጀራ</b> <i>injera</i> — the great sourdough flatbread — is plate, fork and food in one: <b>ወጥ</b> <i>wet</i>, <i>stew</i>, is ladled on top and everyone tears from the same injera with the RIGHT hand. Sharing one plate is the point.</p>","eg":[["እንጀራ","injera","injera (the sourdough flatbread)"],["ወጥ","wet","stew"]]},
+{"t":"li","q":"Which one do you hear?","say":"እንጀራ","o":["እንጀራ","ወጥ"],"a":0},
+{"t":"mc","q":"Injera is eaten with…","o":["the right hand","a fork","the left hand"],"a":0},
+{"t":"note","tag":"The loaf and the glass","q":"ዳቦ and ውሃ","body":"<p><b>ዳቦ</b> <i>dabo</i> — <i>bread</i>, the wheat loaf of breakfast. <b>ውሃ</b> <i>wiha</i> — <i>water</i>. Ambo, Ethiopia&rsquo;s beloved sparkling water, comes from a town of the same name.</p>","eg":[["ዳቦ","dabo","bread"],["ውሃ","wiha","water"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዳቦ","o":["ዳቦ","ውሃ"],"a":0},
+{"t":"mc","q":"ውሃ means…","o":["water","bread","milk"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","እንጀራ"],"a":0},
+{"t":"mc","q":"ወጥ is served…","o":["on top of injera","in a cup","beside bread only"],"a":0}
+]},
+{"id":"am_d1_2","title":"Hearing the staples","step":"recognize","meta":"The table by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","ዳቦ","ወጥ"],"a":0},
+{"t":"mc","q":"What does እንጀራ mean?","o":["the sourdough flatbread","the stew","the loaf"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","ውሃ","እንጀራ"],"a":0},
+{"t":"mc","q":"Which one means bread?","o":["ዳቦ","እንጀራ","ወጥ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንጀራ","o":["እንጀራ","ዳቦ","ውሃ"],"a":0},
+{"t":"mc","q":"Everyone eats from…","o":["one shared injera","separate plates","small bowls"],"a":0}
+]},
+{"id":"am_d1_3","title":"Building the staples","step":"build","meta":"Set the table","vocab":[],"ex":[
+{"t":"wb","q":"Build: injera and stew","a":["እንጀራ","ወጥ"],"pool":["እንጀራ","ወጥ","ዳቦ"]},
+{"t":"mc","q":"Pick the word for water","o":["ውሃ","ዳቦ","ወጥ"],"a":0},
+{"t":"wb","q":"Build: bread and water","a":["ዳቦ","ውሃ"],"pool":["ዳቦ","ውሃ","እንጀራ"]},
+{"t":"mc","q":"Pick the word for stew","o":["ወጥ","ውሃ","ዳቦ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዳቦ","o":["ዳቦ","ወጥ","እንጀራ"],"a":0}
+]},
+{"id":"am_d1_4","title":"The staples in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንጀራ","injera"],["ወጥ","stew"],["ዳቦ","bread"]]},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","እንጀራ","ዳቦ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውሃ","water"],["ወጥ","stew"]]},
+{"t":"mc","q":"Ethiopia&rsquo;s famous sparkling water is named after the town of…","o":["Ambo","Addis","Arba"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንጀራ","o":["እንጀራ","ውሃ","ወጥ"],"a":0}
+]},
+{"id":"am_d1_5","title":"Checkpoint: the staples","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ወጥ means…","o":["stew","bread","plate"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","ዳቦ","ውሃ"],"a":0},
+{"t":"mc","q":"Which one means water?","o":["ውሃ","ወጥ","ዳቦ"],"a":0},
+{"t":"mc","q":"Review — ስንት means…","o":["how many","what time","which"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","ዳቦ","እንጀራ"],"a":0}
+]},
+
+/* ---------- d2 · Buna — the ceremony ---------- */
+{"id":"am_d2","title":"Buna — the ceremony","step":"learn","meta":"Coffee was born here, and it shows","vocab":[["ቡና","buna","coffee"],["ሻይ","shay","tea"],["ወተት","wetet","milk"]],"ex":[
+{"t":"note","tag":"The birthplace","q":"ቡና","body":"<p><b>ቡና</b> <i>buna</i> — <i>coffee</i> — was discovered in Ethiopia, and drinking it is a ceremony: beans roasted over coals in front of you, ground, brewed in the black jebena pot, poured in a thin high arc. Being invited to buna is being invited to friendship.</p>","eg":[["ቡና","buna","coffee"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ውሃ"],"a":0},
+{"t":"mc","q":"Coffee was discovered in…","o":["Ethiopia","Italy","Yemen"],"a":0},
+{"t":"note","tag":"Three rounds","q":"Abol, tona, bereka","body":"<p>The ceremony pours THREE rounds — <i>abol</i>, <i>tona</i>, <i>bereka</i> — each brew a little gentler. Leaving before the third, the bereka (blessing) round, is leaving early. Budget an hour and stay for all three.</p>","eg":[["ሻይ","shay","tea"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ቡና"],"a":0},
+{"t":"mc","q":"The three rounds are called…","o":["abol, tona, bereka","first, second, third","roast, grind, pour"],"a":0},
+{"t":"note","tag":"The alternatives","q":"ሻይ and ወተት","body":"<p><b>ሻይ</b> <i>shay</i> — <i>tea</i>, often spiced, always sweet. <b>ወተት</b> <i>wetet</i> — <i>milk</i>. In a country of coffee, asking for shay is perfectly respectable — half of Ethiopia runs on it.</p>","eg":[["ወተት","wetet","milk"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ሻይ"],"a":0},
+{"t":"mc","q":"ወተት means…","o":["milk","tea","sugar"],"a":0}
+]},
+{"id":"am_d2_2","title":"Hearing the drinks","step":"recognize","meta":"The jebena by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ወተት","ቡና"],"a":0},
+{"t":"mc","q":"What does ቡና mean?","o":["coffee","tea","milk"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ሻይ","ውሃ"],"a":0},
+{"t":"mc","q":"Which one means milk?","o":["ወተት","ሻይ","ቡና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ቡና","ሻይ"],"a":0},
+{"t":"mc","q":"Leaving a buna ceremony before the third round is…","o":["leaving early","expected","polite"],"a":0}
+]},
+{"id":"am_d2_3","title":"Building the drinks","step":"build","meta":"Order at the counter","vocab":[],"ex":[
+{"t":"wb","q":"Build: coffee and tea","a":["ቡና","ሻይ"],"pool":["ቡና","ሻይ","ወተት"]},
+{"t":"mc","q":"Pick the word for milk","o":["ወተት","ውሃ","ሻይ"],"a":0},
+{"t":"wb","q":"Build: two coffees (hulett buna)","a":["ሁለት","ቡና"],"pool":["ሁለት","ቡና","ሻይ"]},
+{"t":"mc","q":"Pick the word for tea","o":["ሻይ","ቡና","ወተት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ወተት","ሻይ"],"a":0}
+]},
+{"id":"am_d2_4","title":"The drinks in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቡና","coffee"],["ሻይ","tea"],["ወተት","milk"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ቡና","ወተት"],"a":0},
+{"t":"match","q":"Match the round to its place","pairs":[["abol","first"],["tona","second"],["bereka","third"]]},
+{"t":"mc","q":"The black clay coffee pot is called the…","o":["jebena","berbere","injera"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ሻይ","ቡና"],"a":0}
+]},
+{"id":"am_d2_5","title":"Checkpoint: the drinks","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቡና means…","o":["coffee","tea","ceremony"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ሻይ","ወተት"],"a":0},
+{"t":"mc","q":"Which one means tea?","o":["ሻይ","ወተት","ቡና"],"a":0},
+{"t":"mc","q":"Review — which one means water?","o":["ውሃ","ወተት","ወጥ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ወተት","ቡና"],"a":0}
+]},
+
+/* ---------- d3 · Hungry, thirsty, please ---------- */
+{"id":"am_d3","title":"Hungry, thirsty, please","step":"learn","meta":"Rabegn, temagn — and the gendered please","vocab":[["ራበኝ","rabegn","I am hungry"],["ጠማኝ","temagn","I am thirsty"],["እባክህ","ibakih","please (to a man)"],["እባክሽ","ibakish","please (to a woman)"]],"ex":[
+{"t":"note","tag":"The body speaks","q":"ራበኝ and ጠማኝ","body":"<p>Hunger happens TO you in Amharic: <b>ራበኝ</b> <i>rabegn</i> — <i>it hungered me</i> — <i>I am hungry</i>. <b>ጠማኝ</b> <i>temagn</i> — <i>I am thirsty</i> — with the tight ጠ you can now hear.</p>","eg":[["ራበኝ","rabegn","I am hungry"],["ጠማኝ","temagn","I am thirsty"]]},
+{"t":"li","q":"Hungry or thirsty — which do you hear?","say":"ራበኝ","o":["ራበኝ","ጠማኝ"],"a":0},
+{"t":"mc","q":"ራበኝ literally says hunger…","o":["happened to me","belongs to me","left me"],"a":0},
+{"t":"note","tag":"Please, by gender","q":"እባክህ and እባክሽ","body":"<p>Please follows the -h/-sh rule you know: <b>እባክህ</b> <i>ibakih</i> to a man, <b>እባክሽ</b> <i>ibakish</i> to a woman. Unlike some languages, Amharic uses its please freely in everyday requests — waiters, taxis, homes.</p>","eg":[["እባክህ","ibakih","please (to a man)"],["እባክሽ","ibakish","please (to a woman)"]]},
+{"t":"li","q":"To a man or a woman — which do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ"],"a":0},
+{"t":"mc","q":"እባክህ is said to…","o":["a man","a woman","a group"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ"],"a":0},
+{"t":"mc","q":"ውሃ እባክሽ said to a waitress means…","o":["water, please","more water","cold water"],"a":0}
+]},
+{"id":"am_d3_2","title":"Hearing the needs","step":"recognize","meta":"Hunger and please by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እባክህ","o":["እባክህ","እባክሽ","ራበኝ"],"a":0},
+{"t":"mc","q":"What does ጠማኝ mean?","o":["I am thirsty","I am hungry","I am full"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራበኝ","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
+{"t":"mc","q":"Which one is please, to a woman?","o":["እባክሽ","እባክህ","ይቅርታ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ","ጠማኝ"],"a":0},
+{"t":"mc","q":"The tight consonant in ጠማኝ is…","o":["ጠ","ተ","ቀ"],"a":0}
+]},
+{"id":"am_d3_3","title":"Building the needs","step":"build","meta":"Ask nicely","vocab":[],"ex":[
+{"t":"wb","q":"Build: water, please (to a woman)","a":["ውሃ","እባክሽ"],"pool":["ውሃ","እባክሽ","እባክህ"]},
+{"t":"mc","q":"Pick: I am hungry","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
+{"t":"wb","q":"Build: coffee, please (to a man)","a":["ቡና","እባክህ"],"pool":["ቡና","እባክህ","እባክሽ"]},
+{"t":"mc","q":"Pick: I am thirsty","o":["ጠማኝ","ራበኝ","ውሃ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ራበኝ","o":["ራበኝ","እባክሽ","ጠማኝ"],"a":0}
+]},
+{"id":"am_d3_4","title":"The needs in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ራበኝ","I am hungry"],["ጠማኝ","I am thirsty"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ","እባክህ"],"a":0},
+{"t":"match","q":"Match the please to the person","pairs":[["እባክህ","a man"],["እባክሽ","a woman"]]},
+{"t":"mc","q":"ራበኝ! Your friend&rsquo;s natural next move is…","o":["ordering food","ordering water","leaving"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እባክህ","o":["እባክህ","ጠማኝ","እባክሽ"],"a":0}
+]},
+{"id":"am_d3_5","title":"Checkpoint: the needs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ጠማኝ means…","o":["I am thirsty","I am hungry","I am tired"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ","ራበኝ"],"a":0},
+{"t":"mc","q":"Which one means I am hungry?","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
+{"t":"mc","q":"Review — ቡና means…","o":["coffee","tea","milk"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ","እባክሽ"],"a":0}
+]},
+
+/* ---------- d4 · I eat, I drink ---------- */
+{"id":"am_d4","title":"I eat, I drink","step":"learn","meta":"Ibelalehu — your first full verbs","vocab":[["እበላለሁ","ibelalehu","I eat"],["እጠጣለሁ","itettalehu","I drink"],["ብላ","bila","eat! (to a man)"],["ብዪ","biyi","eat! (to a woman)"]],"ex":[
+{"t":"note","tag":"The I-verbs","q":"እበላለሁ and እጠጣለሁ","body":"<p>Meet the Amharic verb, wrapped both ends: <b>እበላለሁ</b> <i>ibelalehu</i> — <i>I eat</i> — and <b>እጠጣለሁ</b> <i>itettalehu</i> — <i>I drink</i>. The i- at the front and the -alehu at the back both mean I: Amharic likes to be sure.</p>","eg":[["እበላለሁ","ibelalehu","I eat"],["እጠጣለሁ","itettalehu","I drink"]]},
+{"t":"li","q":"Eat or drink — which do you hear?","say":"እበላለሁ","o":["እበላለሁ","እጠጣለሁ"],"a":0},
+{"t":"mc","q":"The I in ibelalehu is marked…","o":["at both ends of the verb","only at the front","only at the back"],"a":0},
+{"t":"note","tag":"The host insists","q":"ብላ! ብዪ!","body":"<p>At any Ethiopian table you will hear the command: <b>ብላ</b> <i>bila</i> — <i>eat!</i> — to a man, <b>ብዪ</b> <i>biyi</i> to a woman. It is not bossiness; it is love. The correct response is to eat.</p>","eg":[["ብላ","bila","eat! (to a man)"],["ብዪ","biyi","eat! (to a woman)"]]},
+{"t":"li","q":"To a man or a woman — which do you hear?","say":"ብላ","o":["ብላ","ብዪ"],"a":0},
+{"t":"mc","q":"ብላ! at the table means…","o":["eat! — an act of love","hurry up","be quiet"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","እበላለሁ"],"a":0},
+{"t":"mc","q":"እንጀራ እበላለሁ means…","o":["I eat injera","eat the injera!","injera is eaten"],"a":0}
+]},
+{"id":"am_d4_2","title":"Hearing the verbs","step":"recognize","meta":"Eating and drinking by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","እበላለሁ","ብላ"],"a":0},
+{"t":"mc","q":"What does እበላለሁ mean?","o":["I eat","I drink","eat!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብዪ","o":["ብዪ","ብላ","እበላለሁ"],"a":0},
+{"t":"mc","q":"Which one means I drink?","o":["እጠጣለሁ","እበላለሁ","ብላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብላ","o":["ብላ","ብዪ","እጠጣለሁ"],"a":0},
+{"t":"mc","q":"The -alehu ending marks…","o":["I (present)","you","they"],"a":0}
+]},
+{"id":"am_d4_3","title":"Building the verbs","step":"build","meta":"Sentence-making begins","vocab":[],"ex":[
+{"t":"wb","q":"Build: I eat injera","a":["እንጀራ","እበላለሁ"],"pool":["እንጀራ","እበላለሁ","እጠጣለሁ"]},
+{"t":"mc","q":"Pick: eat! (to a woman)","o":["ብዪ","ብላ","እበላለሁ"],"a":0},
+{"t":"wb","q":"Build: I drink coffee","a":["ቡና","እጠጣለሁ"],"pool":["ቡና","እጠጣለሁ","እበላለሁ"]},
+{"t":"mc","q":"Pick: eat! (to a man)","o":["ብላ","ብዪ","እጠጣለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እበላለሁ","o":["እበላለሁ","ብላ","እጠጣለሁ"],"a":0}
+]},
+{"id":"am_d4_4","title":"The verbs in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እበላለሁ","I eat"],["እጠጣለሁ","I drink"]]},
+{"t":"li","q":"Which one do you hear?","say":"ብላ","o":["ብላ","እበላለሁ","ብዪ"],"a":0},
+{"t":"match","q":"Match the command to the person","pairs":[["ብላ","a man"],["ብዪ","a woman"]]},
+{"t":"mc","q":"Verb order: Amharic says injera I-eat because the verb goes…","o":["last","first","anywhere"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብዪ","o":["ብዪ","ብላ","እበላለሁ"],"a":0}
+]},
+{"id":"am_d4_5","title":"Checkpoint: the verbs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እጠጣለሁ means…","o":["I drink","I eat","drink!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እበላለሁ","o":["እበላለሁ","እጠጣለሁ","ብላ"],"a":0},
+{"t":"mc","q":"Which one is eat!, to a man?","o":["ብላ","ብዪ","እበላለሁ"],"a":0},
+{"t":"mc","q":"Review — ራበኝ means…","o":["I am hungry","I am thirsty","eat!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","ብዪ","እበላለሁ"],"a":0}
+]},
+
+/* ---------- d5 · The wet family ---------- */
+{"id":"am_d5","title":"The wet family","step":"learn","meta":"Doro wet — the queen of the table","vocab":[["ዶሮ ወጥ","doro wet","chicken stew"],["ምስር ወጥ","misir wet","lentil stew"],["ሥጋ","siga","meat"],["አትክልት","atkilt","vegetables"]],"ex":[
+{"t":"note","tag":"The festival dish","q":"ዶሮ ወጥ","body":"<p><b>ዶሮ ወጥ</b> <i>doro wet</i> — <i>chicken stew</i>, slow-cooked with berbere spice and whole eggs — is Ethiopia&rsquo;s festival dish, the one holidays are measured by. If you are served doro wet, you are honored.</p>","eg":[["ዶሮ ወጥ","doro wet","chicken stew"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዶሮ ወጥ","o":["ዶሮ ወጥ","ወጥ"],"a":0},
+{"t":"mc","q":"Being served ዶሮ ወጥ means you are…","o":["honored","early","hungry"],"a":0},
+{"t":"note","tag":"The everyday hero","q":"ምስር ወጥ","body":"<p><b>ምስር ወጥ</b> <i>misir wet</i> — <i>lentil stew</i>, rich with berbere — is the everyday and fasting-day hero: meatless, cheap, magnificent.</p>","eg":[["ምስር ወጥ","misir wet","lentil stew"]]},
+{"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ"],"a":0},
+{"t":"mc","q":"ምስር ወጥ is made of…","o":["lentils","chicken","beef"],"a":0},
+{"t":"note","tag":"The building blocks","q":"ሥጋ and አትክልት","body":"<p><b>ሥጋ</b> <i>siga</i> — <i>meat</i> — and <b>አትክልት</b> <i>atkilt</i> — <i>vegetables</i>. Between them they sort every menu in the country, including the fasting menus you will meet soon.</p>","eg":[["ሥጋ","siga","meat"],["አትክልት","atkilt","vegetables"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","አትክልት"],"a":0},
+{"t":"mc","q":"አትክልት means…","o":["vegetables","meat","spices"],"a":0}
+]},
+{"id":"am_d5_2","title":"Hearing the wet family","step":"recognize","meta":"Stews by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አትክልት","o":["አትክልት","ሥጋ","ምስር ወጥ"],"a":0},
+{"t":"mc","q":"What does ሥጋ mean?","o":["meat","stew","chicken"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዶሮ ወጥ","o":["ዶሮ ወጥ","ምስር ወጥ","ሥጋ"],"a":0},
+{"t":"mc","q":"Which one is the lentil stew?","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
+{"t":"mc","q":"The red spice that colors most wet is…","o":["berbere","salt","ginger"],"a":0}
+]},
+{"id":"am_d5_3","title":"Building the wet family","step":"build","meta":"Order like you mean it","vocab":[],"ex":[
+{"t":"wb","q":"Build: chicken stew","a":["ዶሮ","ወጥ"],"pool":["ዶሮ","ወጥ","ምስር"]},
+{"t":"mc","q":"Pick the word for vegetables","o":["አትክልት","ሥጋ","ወጥ"],"a":0},
+{"t":"wb","q":"Build: lentil stew","a":["ምስር","ወጥ"],"pool":["ምስር","ወጥ","ዶሮ"]},
+{"t":"mc","q":"Pick the word for meat","o":["ሥጋ","አትክልት","ዶሮ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አትክልት","o":["አትክልት","ምስር ወጥ","ሥጋ"],"a":0}
+]},
+{"id":"am_d5_4","title":"The wet family in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዶሮ ወጥ","chicken stew"],["ምስር ወጥ","lentil stew"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","አትክልት","ዶሮ ወጥ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሥጋ","meat"],["አትክልት","vegetables"]]},
+{"t":"mc","q":"The holiday table is measured by its…","o":["ዶሮ ወጥ","ምስር ወጥ","ዳቦ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዶሮ ወጥ","o":["ዶሮ ወጥ","ሥጋ","ምስር ወጥ"],"a":0}
+]},
+{"id":"am_d5_5","title":"Checkpoint: the wet family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ምስር ወጥ means…","o":["lentil stew","chicken stew","meat stew"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
+{"t":"mc","q":"Which one means meat?","o":["ሥጋ","አትክልት","ወጥ"],"a":0},
+{"t":"mc","q":"Review — ብላ means…","o":["eat! (to a man)","drink!","I eat"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","ምስር ወጥ","አትክልት"],"a":0}
+]},
+
+/* ---------- d6 · Delicious — and enough ---------- */
+{"id":"am_d6","title":"Delicious — and enough","step":"learn","meta":"Tafach new, betam — praise the cook","vocab":[["ጣፋጭ ነው","tafach new","it is delicious"],["በጣም","betam","very"],["በጣም ጣፋጭ ነው","betam tafach new","it is very delicious"],["በቃኝ","bekagn","I have had enough"]],"ex":[
+{"t":"note","tag":"The compliment","q":"ጣፋጭ ነው","body":"<p><b>ጣፋጭ ነው</b> <i>tafach new</i> — <i>it is delicious</i> — the words every cook is waiting for, with the tight ጣ leading. Say it early and mean it.</p>","eg":[["ጣፋጭ ነው","tafach new","it is delicious"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","ጠማኝ"],"a":0},
+{"t":"mc","q":"ጣፋጭ ነው means…","o":["it is delicious","it is hot","it is ready"],"a":0},
+{"t":"note","tag":"Turning it up","q":"በጣም","body":"<p><b>በጣም</b> <i>betam</i> — <i>very</i> — Amharic&rsquo;s favorite amplifier: <b>በጣም ጣፋጭ ነው</b> <i>betam tafach new</i> — <i>VERY delicious</i>. Betam works on everything, and Ethiopians use it generously.</p>","eg":[["በጣም","betam","very"],["በጣም ጣፋጭ ነው","betam tafach new","it is very delicious"]]},
+{"t":"li","q":"Plain or amplified — which do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው"],"a":0},
+{"t":"mc","q":"በጣም means…","o":["very","quite","almost"],"a":0},
+{"t":"note","tag":"The graceful stop","q":"በቃኝ","body":"<p>Hosts refill relentlessly — the graceful brake is <b>በቃኝ</b> <i>bekagn</i> — <i>it sufficed me, I have had enough</i> — said with a hand over the plate and a smile. Expect to say it three times before it works.</p>","eg":[["በቃኝ","bekagn","I have had enough"]]},
+{"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","በጣም"],"a":0},
+{"t":"mc","q":"በቃኝ politely says…","o":["I have had enough","more please","not yet"],"a":0}
+]},
+{"id":"am_d6_2","title":"Hearing the praise","step":"recognize","meta":"Compliments by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"በጣም","o":["በጣም","በቃኝ","ጣፋጭ ነው"],"a":0},
+{"t":"mc","q":"What does በቃኝ mean?","o":["I have had enough","it is delicious","more food"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በጣም ጣፋጭ ነው","በቃኝ"],"a":0},
+{"t":"mc","q":"Which one means very delicious?","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","በቃኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","ጣፋጭ ነው","በጣም"],"a":0},
+{"t":"mc","q":"Expect to say በቃኝ how many times before it works?","o":["three","one","never"],"a":0}
+]},
+{"id":"am_d6_3","title":"Building the praise","step":"build","meta":"Compliment, amplify, stop","vocab":[],"ex":[
+{"t":"wb","q":"Build: it is delicious","a":["ጣፋጭ","ነው"],"pool":["ጣፋጭ","ነው","በጣም"]},
+{"t":"mc","q":"Pick the word for very","o":["በጣም","በቃኝ","ነው"],"a":0},
+{"t":"wb","q":"Build: it is VERY delicious","a":["በጣም","ጣፋጭ","ነው"],"pool":["በጣም","ጣፋጭ","ነው","በቃኝ"]},
+{"t":"mc","q":"Pick the graceful stop","o":["በቃኝ","በጣም","ብላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","በቃኝ"],"a":0}
+]},
+{"id":"am_d6_4","title":"The praise in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጣፋጭ ነው","it is delicious"],["በጣም","very"],["በቃኝ","enough for me"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በቃኝ","በጣም"],"a":0},
+{"t":"match","q":"Match the moment to the phrase","pairs":[["first bite","በጣም ጣፋጭ ነው"],["third refill","በቃኝ"]]},
+{"t":"mc","q":"The hand-over-the-plate gesture goes with…","o":["በቃኝ","ብላ","ራበኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም","o":["በጣም","ጣፋጭ ነው","በቃኝ"],"a":0}
+]},
+{"id":"am_d6_5","title":"Checkpoint: the praise","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"በጣም ጣፋጭ ነው means…","o":["it is very delicious","it is a little sweet","I am very full"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","በጣም","ጣፋጭ ነው"],"a":0},
+{"t":"mc","q":"Which one means very?","o":["በጣም","በቃኝ","ነው"],"a":0},
+{"t":"mc","q":"Review — ዶሮ ወጥ is…","o":["the festival chicken stew","the lentil stew","the bread"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በጣም ጣፋጭ ነው","በቃኝ"],"a":0}
+]},
+
+/* ---------- d7 · At the table ---------- */
+{"id":"am_d7","title":"At the table","step":"learn","meta":"Inibla, gursha — eating as friendship","vocab":[["እንብላ","inibla","let us eat"],["ጉርሻ","gursha","the honor bite (fed by hand)"],["ጾም","tsom","fasting"]],"ex":[
+{"t":"note","tag":"The invitation","q":"እንብላ","body":"<p><b>እንብላ</b> <i>inibla</i> — <i>let us eat!</i> Nobody eats alone if an Ethiopian can help it: anyone nearby when food appears is waved in with this word. Accepting, even a little, honors the inviter.</p>","eg":[["እንብላ","inibla","let us eat"]]},
+{"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ብላ"],"a":0},
+{"t":"mc","q":"እንብላ means…","o":["let us eat","eat alone","the food is ready"],"a":0},
+{"t":"note","tag":"The honor bite","q":"ጉርሻ","body":"<p><b>ጉርሻ</b> <i>gursha</i>: someone rolls the best morsel in injera and feeds it to you BY HAND. It is a gesture of pure affection — the bigger the gursha, the deeper the friendship. Open up and accept; refusing is refusing the love.</p>","eg":[["ጉርሻ","gursha","the honor bite (fed by hand)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጉርሻ","o":["ጉርሻ","እንብላ"],"a":0},
+{"t":"mc","q":"A gursha is…","o":["being fed by hand, as affection","a spice","a second helping"],"a":0},
+{"t":"note","tag":"The rhythm of the menu","q":"ጾም","body":"<p><b>ጾም</b> <i>tsom</i> — <i>fasting</i>. On Wednesdays, Fridays and in fasting seasons, much of Ethiopia eats no animal products — so menus run in two lanes, and the vegan lane (yetsom) is everywhere, ancient and delicious. Worth knowing whichever lane you order from.</p>","eg":[["ጾም","tsom","fasting"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","ጉርሻ"],"a":0},
+{"t":"mc","q":"The traditional fasting days are…","o":["Wednesday and Friday","Monday and Tuesday","Saturday and Sunday"],"a":0}
+]},
+{"id":"am_d7_2","title":"Hearing the table","step":"recognize","meta":"Table culture by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ጉርሻ","o":["ጉርሻ","ጾም","እንብላ"],"a":0},
+{"t":"mc","q":"What does ጾም mean?","o":["fasting","feast","supper"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ጉርሻ","ብላ"],"a":0},
+{"t":"mc","q":"Which one is the honor bite?","o":["ጉርሻ","ጾም","እንብላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","እንብላ","ጉርሻ"],"a":0},
+{"t":"mc","q":"Refusing a gursha reads as…","o":["refusing the affection","good manners","a diet"],"a":0}
+]},
+{"id":"am_d7_3","title":"Building the table","step":"build","meta":"The social meal","vocab":[],"ex":[
+{"t":"wb","q":"Build: let us eat — it is delicious","a":["እንብላ","ጣፋጭ","ነው"],"pool":["እንብላ","ጣፋጭ","ነው","ጾም"]},
+{"t":"mc","q":"Pick the honor bite","o":["ጉርሻ","ጾም","ወጥ"],"a":0},
+{"t":"wb","q":"Build the word: fasting","a":["ጾ","ም"],"pool":["ጾ","ም","ጉ"]},
+{"t":"mc","q":"Pick: let us eat","o":["እንብላ","ብላ","እበላለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ጾም","ጉርሻ"],"a":0}
+]},
+{"id":"am_d7_4","title":"The table in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንብላ","let us eat"],["ጉርሻ","the honor bite"],["ጾም","fasting"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","ጉርሻ","እንብላ"],"a":0},
+{"t":"match","q":"Match the gesture to its meaning","pairs":[["a rolled morsel offered by hand","ጉርሻ"],["a wave toward the table","እንብላ"]]},
+{"t":"mc","q":"The bigger the gursha…","o":["the deeper the friendship","the better the cook","the longer the meal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጉርሻ","o":["ጉርሻ","እንብላ","ጾም"],"a":0}
+]},
+{"id":"am_d7_5","title":"Checkpoint: Zone 5 complete","step":"checkpoint","meta":"Food and drink — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ጉርሻ means…","o":["the honor bite","the last round","the recipe"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ብላ","ጉርሻ"],"a":0},
+{"t":"mc","q":"Review — the coffee ceremony pours…","o":["three rounds","two rounds","one round"],"a":0},
+{"t":"mc","q":"Review — I am hungry is…","o":["ራበኝ","ጠማኝ","በቃኝ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","እባክሽ"],"a":0},
+{"t":"mc","q":"Review — እበላለሁ means…","o":["I eat","I drink","eat!"],"a":0},
+{"t":"mc","q":"Review — the graceful I-am-full is…","o":["በቃኝ","እንብላ","በጣም"],"a":0}
 ]}
 ];
 
@@ -1210,9 +1503,11 @@ const AM_UNITS=[
 {"n":3,"t":"Family and respect","d":"The household, the owner endings — and honor woven into address","lessons":["am_f1","am_f1_2","am_f1_3","am_f1_4","am_f1_5","am_f2","am_f2_2","am_f2_3","am_f2_4","am_f2_5","am_f3","am_f3_2","am_f3_3","am_f3_4","am_f3_5","am_f4","am_f4_2","am_f4_3","am_f4_4","am_f4_5","am_f5","am_f5_2","am_f5_3","am_f5_4","am_f5_5","am_f6","am_f6_2","am_f6_3","am_f6_4","am_f6_5","am_f7","am_f7_2","am_f7_3","am_f7_4","am_f7_5"]}
 ,
 {"n":4,"t":"Numbers, days and the Ethiopian clock","d":"Counting, the week — and the day that starts at sunrise","lessons":["am_n1","am_n1_2","am_n1_3","am_n1_4","am_n1_5","am_n2","am_n2_2","am_n2_3","am_n2_4","am_n2_5","am_n3","am_n3_2","am_n3_3","am_n3_4","am_n3_5","am_n4","am_n4_2","am_n4_3","am_n4_4","am_n4_5","am_n5","am_n5_2","am_n5_3","am_n5_4","am_n5_5","am_n6","am_n6_2","am_n6_3","am_n6_4","am_n6_5","am_n7","am_n7_2","am_n7_3","am_n7_4","am_n7_5"]}
+,
+{"n":5,"t":"Food and drink","d":"Injera, the buna ceremony, the wet family — and the gursha","lessons":["am_d1","am_d1_2","am_d1_3","am_d1_4","am_d1_5","am_d2","am_d2_2","am_d2_3","am_d2_4","am_d2_5","am_d3","am_d3_2","am_d3_3","am_d3_4","am_d3_5","am_d4","am_d4_2","am_d4_3","am_d4_4","am_d4_5","am_d5","am_d5_2","am_d5_3","am_d5_4","am_d5_5","am_d6","am_d6_2","am_d6_3","am_d6_4","am_d6_5","am_d7","am_d7_2","am_d7_3","am_d7_4","am_d7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ"};
 
 const AM_SRS_SEED=[];
 
