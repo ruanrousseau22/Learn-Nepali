@@ -3761,7 +3761,7 @@ const XH_LESSONS=[
 {"id":"xh_c4_4","title":"The opinions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndicinga","I think"],["ndiyavuma","I agree"],["andivumi","I disagree"]]},
 {"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndicinga","ndiyavuma"],"a":0},
-{"t":"match","q":"Match the wrap to its word","pairs":[["a-…-i","andivumi"],["-ya-","ndiyavuma"]]},
+{"t":"match","q":"Match the word to its wrap","pairs":[["andivumi","a-…-i"],["ndiyavuma","-ya-"]]},
 {"t":"mc","q":"Iyadura! — if you think it is fair, you answer…","o":["andivumi","ndiyavuma","yima"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","andivumi","ndicinga"],"a":0}
 ]},
