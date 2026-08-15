@@ -33,9 +33,9 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:'Plus Jakarta
 header{padding:26px 0;border-bottom:1px solid var(--line)}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:700;font-size:22px}
 main{padding:44px 0 72px}
-h1{font-family:Fraunces,serif;font-size:clamp(30px,5vw,42px);margin:0 0 6px;line-height:1.15}
+h1{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;font-size:clamp(30px,5vw,42px);margin:0 0 6px;line-height:1.15}
 .updated{color:var(--ink-soft);font-size:14px;margin:0 0 30px}
-h2{font-family:Fraunces,serif;font-size:22px;margin:34px 0 10px}
+h2{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;letter-spacing:-.01em;font-size:22px;margin:34px 0 10px}
 p,li{color:var(--ink-soft);font-size:16px}
 li{margin-bottom:7px}
 strong{color:var(--ink)}
@@ -52,7 +52,10 @@ footer a{margin-right:14px}
 /* decorative scenery band — the app's own default art, palette-matched */
 :root{--sky1:#CFE4F7;--sky2:#EFF4FB;--mtn-far:#A7C4DD;--mtn-mid:#D89A57;--mtn-near:#2E8E78;--snow:#FFFFFF;--orb:#F6D98F;--tree:#2C5F3A}
 @media(prefers-color-scheme:dark){:root{--sky1:#142539;--sky2:#0F1419;--mtn-far:#21384F;--mtn-mid:#6E5230;--mtn-near:#184A40;--snow:#C7D6E6;--orb:#D9E4F0;--tree:#4FA06A}}
-.page-band{position:relative;height:140px;overflow:hidden;background:linear-gradient(180deg,var(--sky1),var(--sky2));border-radius:0 0 26px 26px}
+.page-band{position:relative;height:196px;overflow:hidden;background:linear-gradient(180deg,var(--sky1),var(--sky2));border-radius:0 0 26px 26px}
+.band-title{position:relative;z-index:2;padding-top:34px}
+.band-title h1{margin:0 0 4px}
+.band-title .updated{margin:0}
 .pb-mtns{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;display:block}
 .pb-mtns .far{fill:var(--mtn-far)}.pb-mtns .mid{fill:var(--mtn-mid)}.pb-mtns .near{fill:var(--mtn-near)}.pb-mtns .snow{fill:var(--snow)}
 .pb-mtns .orb{fill:var(--orb)}.pb-mtns .orb-glow{fill:var(--orb);opacity:.3}
@@ -62,7 +65,8 @@ footer a{margin-right:14px}
 <header><div class="wrap"><a class="brand" href="/">
   <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-width="6.4" stroke-linecap="round"><path stroke="var(--crimson)" d="M12 18H34M43 18H52"/><path stroke="var(--saffron)" d="M12 32H23M32 32H52"/><path stroke="var(--teal)" d="M12 46H29M38 46H52"/></g></svg>
   Bhasaly</a></div></header>
-<div class="page-band" aria-hidden="true"><svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<div class="page-band">
+<div class="wrap band-title"><h1>Terms of Use</h1><p class="updated">Last updated 31 July 2026</p></div><svg class="pb-mtns" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle class="orb-glow" cx="1046" cy="88" r="36"/>
       <circle class="orb" cx="1046" cy="88" r="21"/>
       <path class="far" d="M0 152 Q150 146 300 149 Q450 144 600 148 Q660 146 700 142 L735 128 L805 68 L875 116 L965 66 L1045 126 L1120 84 L1200 130 L1200 200 L0 200 Z"/>
@@ -80,8 +84,6 @@ footer a{margin-right:14px}
     </svg></div>
 
 <main><div class="wrap">
-<h1>Terms of Use</h1>
-<p class="updated">Last updated 31 July 2026</p>
 
 <p>Bhasaly is provided at no charge. By using it you agree to what follows. It is short
 on purpose.</p>
