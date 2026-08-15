@@ -3250,6 +3250,302 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
 {"t":"mc","q":"Review — ነበርኩ means…","o":["I was","I am","I went"],"a":0},
 {"t":"mc","q":"Review — the July-August rains are the…","o":["kiremt","bereka","meskel"],"a":0}
+]},
+
+/* ---------- c1 · How I feel ---------- */
+{"id":"am_c1","title":"How I feel","step":"learn","meta":"Des bilognal — joy arrives like hunger does","vocab":[["ደስ ብሎኛል","des bilognal","I am happy"],["ደስታ","desta","joy"],["አዝኛለሁ","azignalehu","I am sad"]],"ex":[
+{"t":"note","tag":"Joy happens to you","q":"ደስ ብሎኛል","body":"<p><b>ደስ ብሎኛል</b> <i>des bilognal</i> — <i>it has pleased me</i> — <i>I am happy</i>. Like hunger and pain, happiness in Amharic arrives on its own feet and announces itself.</p>","eg":[["ደስ ብሎኛል","des bilognal","I am happy"]]},
+{"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደክሞኛል"],"a":0},
+{"t":"mc","q":"ደስ ብሎኛል literally says joy…","o":["has pleased me","belongs to me","found me late"],"a":0},
+{"t":"note","tag":"The noun and the name","q":"ደስታ","body":"<p><b>ደስታ</b> <i>desta</i> — <i>joy</i> itself — and one of Ethiopia&rsquo;s best-loved personal names. Meet a Desta and you have met Joy.</p>","eg":[["ደስታ","desta","joy"]]},
+{"t":"li","q":"Which one do you hear?","say":"ደስታ","o":["ደስታ","ደስ ብሎኛል"],"a":0},
+{"t":"mc","q":"ደስታ is both joy and…","o":["a beloved name","a holiday","a dance"],"a":0},
+{"t":"note","tag":"The honest one","q":"አዝኛለሁ","body":"<p><b>አዝኛለሁ</b> <i>azignalehu</i> — <i>I am sad</i> — also the everyday <i>I am sorry</i> of sympathy. A friend&rsquo;s bad news deserves it.</p>","eg":[["አዝኛለሁ","azignalehu","I am sad"]]},
+{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስታ"],"a":0},
+{"t":"mc","q":"አዝኛለሁ doubles as…","o":["sympathy — I am sorry","an apology for lateness","a goodbye"],"a":0}
+]},
+{"id":"am_c1_2","title":"Hearing the feelings","step":"recognize","meta":"Heart-states by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ደስታ","o":["ደስታ","አዝኛለሁ","ደስ ብሎኛል"],"a":0},
+{"t":"mc","q":"What does ደስ ብሎኛል mean?","o":["I am happy","I am sad","I am full"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስ ብሎኛል","ደስታ"],"a":0},
+{"t":"mc","q":"Which one means joy?","o":["ደስታ","ህመም","ጤና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደስታ","አዝኛለሁ"],"a":0},
+{"t":"mc","q":"ደስ ብሎኛል joins the it-got-me family alongside…","o":["ራበኝ","ነኝ","አለ"],"a":0}
+]},
+{"id":"am_c1_3","title":"Building the feelings","step":"build","meta":"Say the heart","vocab":[],"ex":[
+{"t":"wb","q":"Build: I am happy (des + bilognal)","a":["ደስ","ብሎኛል"],"pool":["ደስ","ብሎኛል","ደስታ"]},
+{"t":"mc","q":"Pick: I am sad","o":["አዝኛለሁ","ደስ ብሎኛል","ደክሞኛል"],"a":0},
+{"t":"wb","q":"Build the word: joy","a":["ደስ","ታ"],"pool":["ደስ","ታ","አዝ"]},
+{"t":"mc","q":"Pick: I am happy","o":["ደስ ብሎኛል","አዝኛለሁ","ይሻለኛል"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","አዝኛለሁ","ደስታ"],"a":0}
+]},
+{"id":"am_c1_4","title":"The feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ደስ ብሎኛል","I am happy"],["ደስታ","joy"],["አዝኛለሁ","I am sad"]]},
+{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስታ","ደስ ብሎኛል"],"a":0},
+{"t":"match","q":"Match the moment to the feeling","pairs":[["ጓደኛ መጣ","ደስ ብሎኛል"],["a friend&rsquo;s bad news","አዝኛለሁ"]]},
+{"t":"mc","q":"Meeting someone named Desta, you have met…","o":["Joy","Peace","Hope"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ደስታ","o":["ደስታ","ደስ ብሎኛል","አዝኛለሁ"],"a":0}
+]},
+{"id":"am_c1_5","title":"Checkpoint: the feelings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አዝኛለሁ means…","o":["I am sad","I am angry","I am tired"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደስታ","ደክሞኛል"],"a":0},
+{"t":"mc","q":"Which one means joy?","o":["ደስታ","ጤና","ሰላም"],"a":0},
+{"t":"mc","q":"Review — መቼ means…","o":["when","where","how"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስ ብሎኛል","ይሻለኛል"],"a":0}
+]},
+
+/* ---------- c2 · Come in, drink coffee ---------- */
+{"id":"am_c2","title":"Come in, drink coffee","step":"learn","meta":"The Ethiopian welcome, in three moves","vocab":[["ግባ","giba","come in! (to a man)"],["ቡና ጠጡ","buna tetu","drink coffee (the invitation)"],["እንኳን ደህና መጣህ","inkwan dehna metah","welcome! (to a man)"]],"ex":[
+{"t":"note","tag":"The door opens","q":"ግባ","body":"<p><b>ግባ</b> <i>giba</i> — <i>come in!</i> — to a man (ግቢ <i>gibi</i> to a woman — yes, it sounds like the compound; context carries it). No Ethiopian door leaves you standing.</p>","eg":[["ግባ","giba","come in! (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ና"],"a":0},
+{"t":"mc","q":"ግባ commands…","o":["come in","go out","sit down"],"a":0},
+{"t":"note","tag":"The real invitation","q":"ቡና ጠጡ","body":"<p><b>ቡና ጠጡ</b> <i>buna tetu</i> — <i>drink coffee</i> — in the polite plural: THE Ethiopian invitation, meaning friendship, time, and at least three rounds. Accepting is accepting the friendship.</p>","eg":[["ቡና ጠጡ","buna tetu","drink coffee (the invitation)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","ግባ"],"a":0},
+{"t":"mc","q":"Accepting ቡና ጠጡ means accepting…","o":["the friendship","just a drink","a debt"],"a":0},
+{"t":"note","tag":"The formula","q":"እንኳን ደህና መጣህ","body":"<p><b>እንኳን ደህና መጣህ</b> <i>inkwan dehna metah</i> — <i>welcome!</i> — literally <i>how good that you arrived safely</i> — to a man (መጣሽ to a woman). Ethiopia&rsquo;s official hug of a sentence, on banners and in doorways alike.</p>","eg":[["እንኳን ደህና መጣህ","inkwan dehna metah","welcome! (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ቡና ጠጡ"],"a":0},
+{"t":"mc","q":"እንኳን ደህና መጣህ literally celebrates that you…","o":["arrived safely","came early","stayed long"],"a":0}
+]},
+{"id":"am_c2_2","title":"Hearing the welcome","step":"recognize","meta":"Hospitality by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ግባ","ቡና ጠጡ"],"a":0},
+{"t":"mc","q":"What does ቡና ጠጡ invite you to?","o":["coffee and friendship","a quick espresso","tea"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
+{"t":"mc","q":"Which one is the welcome formula?","o":["እንኳን ደህና መጣህ","ሰላም ነው?","ጤና ይስጥልኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0},
+{"t":"mc","q":"The welcome arc in order…","o":["እንኳን ደህና መጣህ → ግባ → ቡና ጠጡ","ቡና ጠጡ → ቻው → ግባ","ግባ → ቻው → ና"],"a":0}
+]},
+{"id":"am_c2_3","title":"Building the welcome","step":"build","meta":"Open your own door","vocab":[],"ex":[
+{"t":"wb","q":"Build: welcome! (to a man)","a":["እንኳን","ደህና","መጣህ"],"pool":["እንኳን","ደህና","መጣህ","ግባ"]},
+{"t":"mc","q":"Pick: come in!","o":["ግባ","ና","ተቀመጥ"],"a":0},
+{"t":"wb","q":"Build: drink coffee (the invitation)","a":["ቡና","ጠጡ"],"pool":["ቡና","ጠጡ","ጠጣ"]},
+{"t":"mc","q":"Pick the invitation that means friendship","o":["ቡና ጠጡ","ውሃ ጠጣ","እንብላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ቡና ጠጡ","ግባ"],"a":0}
+]},
+{"id":"am_c2_4","title":"The welcome in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ግባ","come in!"],["ቡና ጠጡ","drink coffee"],["እንኳን ደህና መጣህ","welcome!"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","ግባ","እንኳን ደህና መጣህ"],"a":0},
+{"t":"match","q":"Match the invitation family","pairs":[["እንብላ","let us eat"],["ቡና ጠጡ","drink coffee"],["ግባ","come in"]]},
+{"t":"mc","q":"You knock; the door opens; the first words are…","o":["እንኳን ደህና መጣህ, ግባ!","ችግር የለም","ወራጅ አለ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","እንኳን ደህና መጣህ","ቡና ጠጡ"],"a":0}
+]},
+{"id":"am_c2_5","title":"Checkpoint: the welcome","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቡና ጠጡ is…","o":["THE Ethiopian invitation","a quick request","a toast"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
+{"t":"mc","q":"Which one means welcome?","o":["እንኳን ደህና መጣህ","ደህና ሁን","ሰላም ነው?"],"a":0},
+{"t":"mc","q":"Review — ደስ ብሎኛል means…","o":["I am happy","I am welcome","I am home"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0}
+]},
+
+/* ---------- c3 · The learner's toolkit ---------- */
+{"id":"am_c3","title":"The learner's toolkit","step":"learn","meta":"Algebagnem, gebagn, digem — the rescue kit","vocab":[["አልገባኝም","algebagnem","I do not understand"],["ገባኝ","gebagn","I understand · got it"],["ድገም","digem","say it again (to a man)"]],"ex":[
+{"t":"note","tag":"The honest flag","q":"አልገባኝም","body":"<p><b>አልገባኝም</b> <i>algebagnem</i> — <i>it did not enter me</i> — <i>I do not understand</i>. Understanding, in Amharic, is something that enters you — and admitting it did not is how it eventually does.</p>","eg":[["አልገባኝም","algebagnem","I do not understand"]]},
+{"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ግባ"],"a":0},
+{"t":"mc","q":"አልገባኝም literally says understanding…","o":["did not enter me","escaped me","confused me"],"a":0},
+{"t":"note","tag":"The click of it landing","q":"ገባኝ","body":"<p><b>ገባኝ</b> <i>gebagn</i> — <i>it entered me</i> — <i>got it!</i> The happiest little word in any lesson, and the exact opposite of algebagnem.</p>","eg":[["ገባኝ","gebagn","I understand · got it"]]},
+{"t":"li","q":"Got it or lost — which do you hear?","say":"ገባኝ","o":["ገባኝ","አልገባኝም"],"a":0},
+{"t":"mc","q":"ገባኝ means…","o":["got it!","tell me","almost"],"a":0},
+{"t":"note","tag":"The replay button","q":"ድገም","body":"<p><b>ድገም</b> <i>digem</i> — <i>repeat it, say it again</i> — to a man (ድገሚ <i>digemi</i> to a woman). Paired with ibakih, it politely rewinds any sentence that flew past you.</p>","eg":[["ድገም","digem","say it again (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ገባኝ"],"a":0},
+{"t":"mc","q":"እባክህ ድገም politely asks…","o":["please say it again","please slow down","please stop"],"a":0}
+]},
+{"id":"am_c3_2","title":"Hearing the toolkit","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ገባኝ","o":["ገባኝ","ድገም","አልገባኝም"],"a":0},
+{"t":"mc","q":"What does ድገም mean?","o":["say it again","speak up","slow down"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
+{"t":"mc","q":"Which one means got it?","o":["ገባኝ","አልገባኝም","ድገም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","አልገባኝም","ገባኝ"],"a":0},
+{"t":"mc","q":"The al-…-m wrap in አልገባኝም makes the verb…","o":["negative","past","polite"],"a":0}
+]},
+{"id":"am_c3_3","title":"Building the toolkit","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
+{"t":"wb","q":"Build: please say it again (to a man)","a":["እባክህ","ድገም"],"pool":["እባክህ","ድገም","ገባኝ"]},
+{"t":"mc","q":"Pick: I do not understand","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
+{"t":"wb","q":"Build: got it — thank you","a":["ገባኝ","አመሰግናለሁ"],"pool":["ገባኝ","አመሰግናለሁ","አልገባኝም"]},
+{"t":"mc","q":"Pick: got it!","o":["ገባኝ","ድገም","እሺ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ድገም","ገባኝ"],"a":0}
+]},
+{"id":"am_c3_4","title":"The toolkit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አልገባኝም","I do not understand"],["ገባኝ","got it!"],["ድገም","say it again"]]},
+{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ገባኝ","አልገባኝም"],"a":0},
+{"t":"match","q":"Match the line to the moment","pairs":[["እባክህ ድገም","the sentence flew past"],["ገባኝ","it landed"]]},
+{"t":"mc","q":"The full rescue arc…","o":["አልገባኝም → ድገም → ገባኝ","ገባኝ → ድገም → ቻው","ድገም → ችግር → የለም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ገባኝ","o":["ገባኝ","አልገባኝም","ድገም"],"a":0}
+]},
+{"id":"am_c3_5","title":"Checkpoint: the toolkit","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ገባኝ means…","o":["got it!","say it again","not yet"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
+{"t":"mc","q":"Which one asks for a repeat?","o":["ድገም","ገባኝ","ግባ"],"a":0},
+{"t":"mc","q":"Review — ቡና ጠጡ means…","o":["drink coffee (the invitation)","the coffee is ready","buy coffee"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ግባ","ገባኝ"],"a":0}
+]},
+
+/* ---------- c4 · I love it ---------- */
+{"id":"am_c4","title":"I love it","step":"learn","meta":"Iwedalehu — and its first negative","vocab":[["እወዳለሁ","iwedalehu","I like · I love"],["አልወድም","alwedim","I do not like"],["ኢትዮጵያን እወዳለሁ","ityoppyan iwedalehu","I love Ethiopia"]],"ex":[
+{"t":"note","tag":"The loving verb","q":"እወዳለሁ","body":"<p><b>እወዳለሁ</b> <i>iwedalehu</i> — <i>I like, I love</i> — from the same root as ውድ: what is dear is what is loved. ቡና እወዳለሁ — I love coffee.</p>","eg":[["እወዳለሁ","iwedalehu","I like · I love"]]},
+{"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","እማራለሁ"],"a":0},
+{"t":"mc","q":"እወዳለሁ shares its dear-root with…","o":["ውድ","ወደ","ውሃ"],"a":0},
+{"t":"note","tag":"The first negative verb","q":"አልወድም","body":"<p>The negative wraps the verb in <b>al-…-m</b>: <b>አልወድም</b> <i>alwedim</i> — <i>I do not like</i>. The same wrap you met in algebagnem: al in front, m behind, and the -alehu machinery drops away.</p>","eg":[["አልወድም","alwedim","I do not like"]]},
+{"t":"li","q":"Like or dislike — which do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ"],"a":0},
+{"t":"mc","q":"The negative wrap is…","o":["al-…-m","-alehu","-egn"],"a":0},
+{"t":"note","tag":"Say the big one","q":"ኢትዮጵያን እወዳለሁ","body":"<p><b>ኢትዮጵያን እወዳለሁ</b> <i>ityoppyan iwedalehu</i> — <i>I love Ethiopia</i>. The little -n on Ityoppya marks it as the thing loved. Twelve zones in, you have earned the right to mean it.</p>","eg":[["ኢትዮጵያን እወዳለሁ","ityoppyan iwedalehu","I love Ethiopia"]]},
+{"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","እወዳለሁ"],"a":0},
+{"t":"mc","q":"The -n on ኢትዮጵያን marks…","o":["the thing being loved","a plural","a question"],"a":0}
+]},
+{"id":"am_c4_2","title":"Hearing the love","step":"recognize","meta":"Likes by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ","ኢትዮጵያን እወዳለሁ"],"a":0},
+{"t":"mc","q":"What does እወዳለሁ mean?","o":["I like · I love","I want","I have"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","አልወድም","እወዳለሁ"],"a":0},
+{"t":"mc","q":"Which one means I do not like?","o":["አልወድም","እወዳለሁ","አልገባኝም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","አልወድም","ኢትዮጵያን እወዳለሁ"],"a":0},
+{"t":"mc","q":"ቡና እወዳለሁ means…","o":["I love coffee","coffee is dear","I drink coffee"],"a":0}
+]},
+{"id":"am_c4_3","title":"Building the love","step":"build","meta":"Declare your tastes","vocab":[],"ex":[
+{"t":"wb","q":"Build: I love Ethiopia","a":["ኢትዮጵያን","እወዳለሁ"],"pool":["ኢትዮጵያን","እወዳለሁ","አልወድም"]},
+{"t":"mc","q":"Pick: I do not like","o":["አልወድም","እወዳለሁ","የለም"],"a":0},
+{"t":"wb","q":"Build: I love coffee","a":["ቡና","እወዳለሁ"],"pool":["ቡና","እወዳለሁ","አልወድም"]},
+{"t":"wb","q":"Build the negative: al + wed + m","a":["አል","ወድ","ም"],"pool":["አል","ወድ","ም","እወዳ"]},
+{"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","እወዳለሁ","አልወድም"],"a":0}
+]},
+{"id":"am_c4_4","title":"The love in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እወዳለሁ","I love"],["አልወድም","I do not like"],["ኢትዮጵያን እወዳለሁ","I love Ethiopia"]]},
+{"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","ኢትዮጵያን እወዳለሁ","አልወድም"],"a":0},
+{"t":"match","q":"Match the wrap to the meaning","pairs":[["-አለሁ","I do"],["አል-…-ም","I do not"]]},
+{"t":"mc","q":"ብርድ አልወድም means…","o":["I do not like the cold","the cold is gone","I am not cold"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ","አልገባኝም"],"a":0}
+]},
+{"id":"am_c4_5","title":"Checkpoint: the love","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ኢትዮጵያን እወዳለሁ means…","o":["I love Ethiopia","Ethiopia is dear","welcome to Ethiopia"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","አልወድም","እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"Which one means I do not like?","o":["አልወድም","እወዳለሁ","የለም"],"a":0},
+{"t":"mc","q":"Review — ገባኝ means…","o":["got it!","say again","enter!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","ኢትዮጵያን እወዳለሁ","እወዳለሁ"],"a":0}
+]},
+
+/* ---------- c5 · And, but, or ---------- */
+{"id":"am_c5","title":"And, but, or","step":"learn","meta":"Ina, gin, weyim — the glue of real talk","vocab":[["እና","ina","and"],["ግን","gin","but"],["ወይም","weyim","or"]],"ex":[
+{"t":"note","tag":"The joiner","q":"እና","body":"<p><b>እና</b> <i>ina</i> — <i>and</i> — the little rope that ties your course together: ቡና እና ዳቦ — coffee and bread. እንጀራ እና ወጥ — the eternal pair.</p>","eg":[["እና","ina","and"]]},
+{"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ነገ"],"a":0},
+{"t":"mc","q":"እና means…","o":["and","but","also"],"a":0},
+{"t":"note","tag":"The turn","q":"ግን","body":"<p><b>ግን</b> <i>gin</i> — <i>but</i> — the pivot of every honest sentence: ውድ ነው, ግን እወዳለሁ — it is expensive, BUT I love it.</p>","eg":[["ግን","gin","but"]]},
+{"t":"li","q":"Which one do you hear?","say":"ግን","o":["ግን","እና"],"a":0},
+{"t":"mc","q":"ግን means…","o":["but","and","so"],"a":0},
+{"t":"note","tag":"The fork","q":"ወይም","body":"<p><b>ወይም</b> <i>weyim</i> — <i>or</i>: ቡና ወይም ሻይ? — coffee or tea? — the question that opens every Ethiopian visit anyway.</p>","eg":[["ወይም","weyim","or"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","ግን"],"a":0},
+{"t":"mc","q":"ቡና ወይም ሻይ? asks…","o":["coffee or tea?","coffee and tea?","coffee, then tea"],"a":0}
+]},
+{"id":"am_c5_2","title":"Hearing the glue","step":"recognize","meta":"Connectors by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ግን","o":["ግን","ወይም","እና"],"a":0},
+{"t":"mc","q":"What does ወይም mean?","o":["or","and","but"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ግን","ወይም"],"a":0},
+{"t":"mc","q":"Which one means but?","o":["ግን","እና","ወይም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","እና","ግን"],"a":0},
+{"t":"mc","q":"እንጀራ እና ወጥ means injera … wet","o":["and","or","but"],"a":0}
+]},
+{"id":"am_c5_3","title":"Building the glue","step":"build","meta":"Join, pivot, fork","vocab":[],"ex":[
+{"t":"wb","q":"Build: coffee and bread","a":["ቡና","እና","ዳቦ"],"pool":["ቡና","እና","ዳቦ","ወይም"]},
+{"t":"mc","q":"Pick the word for but","o":["ግን","እና","ወይም"],"a":0},
+{"t":"wb","q":"Build: coffee or tea?","a":["ቡና","ወይም","ሻይ?"],"pool":["ቡና","ወይም","ሻይ?","እና"]},
+{"t":"wb","q":"Build: it is expensive, but I love it","a":["ውድ","ነው","ግን","እወዳለሁ"],"pool":["ውድ","ነው","ግን","እወዳለሁ","ወይም"]},
+{"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ወይም","ግን"],"a":0}
+]},
+{"id":"am_c5_4","title":"The glue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እና","and"],["ግን","but"],["ወይም","or"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","ግን","እና"],"a":0},
+{"t":"match","q":"Match the sentence to its glue","pairs":[["ቡና እና ዳቦ","joining"],["ቡና ወይም ሻይ","choosing"]]},
+{"t":"mc","q":"ሩቅ ነው, ግን እሄዳለሁ means it is far…","o":["but I am going","and I am going","or I go"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ግን","o":["ግን","እና","ወይም"],"a":0}
+]},
+{"id":"am_c5_5","title":"Checkpoint: the glue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ግን means…","o":["but","and","or"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ግን","ወይም"],"a":0},
+{"t":"mc","q":"Which one asks a choice?","o":["ወይም","እና","ግን"],"a":0},
+{"t":"mc","q":"Review — አልወድም means…","o":["I do not like","I do not know","I do not want"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","እና","ግን"],"a":0}
+]},
+
+/* ---------- c6 · The neighborhood ---------- */
+{"id":"am_c6","title":"The neighborhood","step":"learn","meta":"Sefer, gorebet, abren — life is communal","vocab":[["ሰፈር","sefer","neighborhood"],["ጎረቤት","gorebet","neighbor"],["አብረን","abren","together"]],"ex":[
+{"t":"note","tag":"Your patch of the city","q":"ሰፈር","body":"<p><b>ሰፈር</b> <i>sefer</i> — <i>neighborhood</i> — the true unit of Ethiopian city life: the streets that know your name, your buna schedule and your business.</p>","eg":[["ሰፈር","sefer","neighborhood"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ገበያ"],"a":0},
+{"t":"mc","q":"ሰፈር means…","o":["neighborhood","street","fence"],"a":0},
+{"t":"note","tag":"The people next door","q":"ጎረቤት","body":"<p><b>ጎረቤት</b> <i>gorebet</i> — <i>neighbor</i> — hear the bet inside? In Ethiopia a gorebet is nearly family: first to help, first to know, first at the buna.</p>","eg":[["ጎረቤት","gorebet","neighbor"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጎረቤት","o":["ጎረቤት","ሰፈር"],"a":0},
+{"t":"mc","q":"The word hiding inside ጎረቤት is…","o":["ቤት","በር","ገበያ"],"a":0},
+{"t":"note","tag":"The way things are done","q":"አብረን","body":"<p><b>አብረን</b> <i>abren</i> — <i>together</i>. Meals, coffee, weddings, mourning, moving house: the Ethiopian default is abren. እንብላ አብረን — let us eat together — is almost redundant, and said anyway.</p>","eg":[["አብረን","abren","together"]]},
+{"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ጎረቤት"],"a":0},
+{"t":"mc","q":"አብረን means…","o":["together","beside","again"],"a":0}
+]},
+{"id":"am_c6_2","title":"Hearing the neighborhood","step":"recognize","meta":"Community by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ጎረቤት","o":["ጎረቤት","አብረን","ሰፈር"],"a":0},
+{"t":"mc","q":"What does ሰፈር mean?","o":["neighborhood","market","district office"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ሰፈር","ጎረቤት"],"a":0},
+{"t":"mc","q":"Which one means neighbor?","o":["ጎረቤት","ሰፈር","ጓደኛ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ጎረቤት","አብረን"],"a":0},
+{"t":"mc","q":"An Ethiopian gorebet is…","o":["nearly family","a stranger","a formality"],"a":0}
+]},
+{"id":"am_c6_3","title":"Building the neighborhood","step":"build","meta":"Put yourself on the street","vocab":[],"ex":[
+{"t":"wb","q":"Build: let us eat together","a":["እንብላ","አብረን"],"pool":["እንብላ","አብረን","ጎረቤት"]},
+{"t":"mc","q":"Pick the neighbor","o":["ጎረቤት","ሰፈር","ጓደኛ"],"a":0},
+{"t":"wb","q":"Build: my neighborhood (sefer + e)","a":["ሰፈር","ኤ"],"pool":["ሰፈር","ኤ","ኡ"]},
+{"t":"mc","q":"Pick: together","o":["አብረን","አብሮ","እና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጎረቤት","o":["ጎረቤት","ሰፈር","አብረን"],"a":0}
+]},
+{"id":"am_c6_4","title":"The neighborhood in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰፈር","neighborhood"],["ጎረቤት","neighbor"],["አብረን","together"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","አብረን","ጎረቤት"],"a":0},
+{"t":"match","q":"Match the bet family","pairs":[["ጎረቤት","neighbor"],["ሐኪም ቤት","clinic"],["ትምህርት ቤት","school"]]},
+{"t":"mc","q":"The Ethiopian default for meals, coffee and moving house is…","o":["አብረን","ብቻ","በኋላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ጎረቤት","ሰፈር"],"a":0}
+]},
+{"id":"am_c6_5","title":"Checkpoint: the neighborhood","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ጎረቤት means…","o":["neighbor","neighborhood","household"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ሰፈር","ጎረቤት"],"a":0},
+{"t":"mc","q":"Which one means neighborhood?","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0},
+{"t":"mc","q":"Review — ወይም means…","o":["or","and","but"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0}
+]},
+
+/* ---------- c7 · Melkam guzo ---------- */
+{"id":"am_c7","title":"Melkam guzo","step":"learn","meta":"Good journey — the course sends you off","vocab":[["መልካም","melkam","good"],["መልካም ጉዞ","melkam guzo","good journey!"],["በርታ","berta","keep it up · be strong (to a man)"]],"ex":[
+{"t":"note","tag":"The blessing word","q":"መልካም","body":"<p><b>መልካም</b> <i>melkam</i> — <i>good</i> — the word Ethiopia blesses with: melkam idil (good luck), melkam qen (good day), melkam beal (happy holiday). Learn it once, bless forever.</p>","eg":[["መልካም","melkam","good"]]},
+{"t":"li","q":"Which one do you hear?","say":"መልካም","o":["መልካም","ብርድ"],"a":0},
+{"t":"mc","q":"መልካም means…","o":["good","great","new"],"a":0},
+{"t":"note","tag":"The traveler&rsquo;s blessing","q":"መልካም ጉዞ","body":"<p><b>መልካም ጉዞ</b> <i>melkam guzo</i> — <i>good journey!</i> — what Ethiopia says to every departing traveler, and what this course says to you now. Twelve zones: the journey is yours.</p>","eg":[["መልካም ጉዞ","melkam guzo","good journey!"]]},
+{"t":"li","q":"Which one do you hear?","say":"መልካም ጉዞ","o":["መልካም ጉዞ","መልካም"],"a":0},
+{"t":"mc","q":"መልካም ጉዞ wishes…","o":["a good journey","a good meal","good health"],"a":0},
+{"t":"note","tag":"The encouragement","q":"በርታ","body":"<p><b>በርታ</b> <i>berta</i> — <i>be strong, keep it up!</i> — to a man (በርቺ <i>berchi</i> to a woman). Shouted at runners, said to students, meant for you: your Amharic has begun. በርታ!</p>","eg":[["በርታ","berta","keep it up · be strong (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም ጉዞ"],"a":0},
+{"t":"mc","q":"በርታ tells someone to…","o":["keep it up","slow down","turn back"],"a":0}
+]},
+{"id":"am_c7_2","title":"Hearing the send-off","step":"recognize","meta":"Blessings by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"መልካም ጉዞ","o":["መልካም ጉዞ","በርታ","መልካም"],"a":0},
+{"t":"mc","q":"What does በርታ mean?","o":["keep it up","goodbye","well done"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መልካም","o":["መልካም","መልካም ጉዞ","በርታ"],"a":0},
+{"t":"mc","q":"መልካም ቀን would wish a good…","o":["day","year","road"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም","መልካም ጉዞ"],"a":0},
+{"t":"mc","q":"Ethiopia shouts በርታ at…","o":["runners and strivers","latecomers","tourists only"],"a":0}
+]},
+{"id":"am_c7_3","title":"Building the send-off","step":"build","meta":"Bless like a local","vocab":[],"ex":[
+{"t":"wb","q":"Build: good journey!","a":["መልካም","ጉዞ"],"pool":["መልካም","ጉዞ","በርታ"]},
+{"t":"mc","q":"Pick the encouragement","o":["በርታ","መልካም","ቻው"],"a":0},
+{"t":"wb","q":"Build: good journey — goodbye (to a man)","a":["መልካም","ጉዞ","ደህና","ሁን"],"pool":["መልካም","ጉዞ","ደህና","ሁን","በርታ"]},
+{"t":"mc","q":"Pick the blessing word","o":["መልካም","በርታ","እሺ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መልካም ጉዞ","o":["መልካም ጉዞ","መልካም","በርታ"],"a":0}
+]},
+{"id":"am_c7_4","title":"The send-off in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["መልካም","good"],["መልካም ጉዞ","good journey"],["በርታ","keep it up"]]},
+{"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም ጉዞ","መልካም"],"a":0},
+{"t":"match","q":"Match the farewell family","pairs":[["ደህና ሁን","be well"],["መልካም ጉዞ","good journey"],["ቻው","bye"]]},
+{"t":"mc","q":"A friend boards the bus to Bahir Dar; you call…","o":["መልካም ጉዞ!","እንኳን ደህና መጣህ!","ግባ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መልካም","o":["መልካም","በርታ","መልካም ጉዞ"],"a":0}
+]},
+{"id":"am_c7_5","title":"Checkpoint: the whole journey","step":"checkpoint","meta":"Twelve zones of Amharic — show it all","vocab":[],"ex":[
+{"t":"mc","q":"መልካም ጉዞ means…","o":["good journey!","farewell forever","safe roads"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም","ቻው"],"a":0},
+{"t":"mc","q":"Review — the welcome formula is…","o":["እንኳን ደህና መጣህ","መልካም ጉዞ","ጤና ይስጥልኝ"],"a":0},
+{"t":"mc","q":"Review — I love Ethiopia…","o":["ኢትዮጵያን እወዳለሁ","ኢትዮጵያ ነኝ","ኢትዮጵያ አለ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","ገባኝ","ደስ ብሎኛል"],"a":0},
+{"t":"mc","q":"Review — got it! is…","o":["ገባኝ","አልገባኝም","ድገም"],"a":0},
+{"t":"mc","q":"Review — the course leaves you ደስ ብሎኛል, telling yourself…","o":["በርታ","ቻው","የለም"],"a":0}
 ]}
 ];
 
@@ -3275,9 +3571,11 @@ const AM_UNITS=[
 {"n":10,"t":"Body and health","d":"The body, the hakim bet — and chigir yellem","lessons":["am_b1","am_b1_2","am_b1_3","am_b1_4","am_b1_5","am_b2","am_b2_2","am_b2_3","am_b2_4","am_b2_5","am_b3","am_b3_2","am_b3_3","am_b3_4","am_b3_5","am_b4","am_b4_2","am_b4_3","am_b4_4","am_b4_5","am_b5","am_b5_2","am_b5_3","am_b5_4","am_b5_5","am_b6","am_b6_2","am_b6_3","am_b6_4","am_b6_5","am_b7","am_b7_2","am_b7_3","am_b7_4","am_b7_5"]}
 ,
 {"n":11,"t":"Past and future","d":"The -ku past, neber, one-form future — and the highland sky","lessons":["am_p1","am_p1_2","am_p1_3","am_p1_4","am_p1_5","am_p2","am_p2_2","am_p2_3","am_p2_4","am_p2_5","am_p3","am_p3_2","am_p3_3","am_p3_4","am_p3_5","am_p4","am_p4_2","am_p4_3","am_p4_4","am_p4_5","am_p5","am_p5_2","am_p5_3","am_p5_4","am_p5_5","am_p6","am_p6_2","am_p6_3","am_p6_4","am_p6_5","am_p7","am_p7_2","am_p7_3","am_p7_4","am_p7_5"]}
+,
+{"n":12,"t":"Conversation and community","d":"Feelings, the welcome, the rescue kit — and melkam guzo","lessons":["am_c1","am_c1_2","am_c1_3","am_c1_4","am_c1_5","am_c2","am_c2_2","am_c2_3","am_c2_4","am_c2_5","am_c3","am_c3_2","am_c3_3","am_c3_4","am_c3_5","am_c4","am_c4_2","am_c4_3","am_c4_4","am_c4_5","am_c5","am_c5_2","am_c5_3","am_c5_4","am_c5_5","am_c6","am_c6_2","am_c6_3","am_c6_4","am_c6_5","am_c7","am_c7_2","am_c7_3","am_c7_4","am_c7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?","am_b1":"ራስ","am_b2":"ዓይን","am_b3":"አመመኝ","am_b4":"ሐኪም ቤት","am_b5":"ተቀመጥ","am_b6":"ይሻለኛል","am_b7":"ችግር የለም","am_p1":"ሄድኩ","am_p2":"ትናንት","am_p3":"ነበርኩ","am_p4":"ነገ","am_p5":"ዝናብ","am_p6":"ብርድ ነው","am_p7":"መቼ?"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?","am_b1":"ራስ","am_b2":"ዓይን","am_b3":"አመመኝ","am_b4":"ሐኪም ቤት","am_b5":"ተቀመጥ","am_b6":"ይሻለኛል","am_b7":"ችግር የለም","am_p1":"ሄድኩ","am_p2":"ትናንት","am_p3":"ነበርኩ","am_p4":"ነገ","am_p5":"ዝናብ","am_p6":"ብርድ ነው","am_p7":"መቼ?","am_c1":"ደስታ","am_c2":"ግባ","am_c3":"ገባኝ","am_c4":"እወዳለሁ","am_c5":"እና ግን","am_c6":"ሰፈር","am_c7":"መልካም ጉዞ"};
 
 const AM_SRS_SEED=[];
 
