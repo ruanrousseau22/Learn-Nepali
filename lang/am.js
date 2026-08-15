@@ -2373,6 +2373,298 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ቀንስ","o":["ቀንስ","መልስ","ዋጋ"],"a":0},
 {"t":"mc","q":"Review — bargaining belongs at…","o":["the gebeya","the suk","the bank"],"a":0},
 {"t":"mc","q":"Review — እገዛለሁ means…","o":["I buy","I want","I pay"],"a":0}
+]},
+
+/* ---------- w1 · Work ---------- */
+{"id":"am_w1","title":"Work","step":"learn","meta":"Sira — and the you-wrap asking where","vocab":[["ስራ","sira","work · job"],["እሰራለሁ","iseralehu","I work"],["የት ትሰራለህ?","yet tiseraleh?","where do you work? (to a man)"]],"ex":[
+{"t":"note","tag":"The noun and the verb","q":"ስራ and እሰራለሁ","body":"<p><b>ስራ</b> <i>sira</i> — <i>work, a job</i> — and its verb <b>እሰራለሁ</b> <i>iseralehu</i> — <i>I work</i> (also <i>I make, I do</i> — sira covers all three). The -alehu machine, employed.</p>","eg":[["ስራ","sira","work · job"],["እሰራለሁ","iseralehu","I work"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","እሰራለሁ"],"a":0},
+{"t":"mc","q":"እሰራለሁ means…","o":["I work","work","worker"],"a":0},
+{"t":"note","tag":"Asking where","q":"የት ትሰራለህ?","body":"<p>The you-wrap from ትሄዳለህ returns: <b>የት ትሰራለህ?</b> <i>yet tiseraleh?</i> — <i>where do you work?</i> (to a man; to a woman it ends -yalesh). Small talk&rsquo;s second question, right after the greetings.</p>","eg":[["የት ትሰራለህ?","yet tiseraleh?","where do you work? (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"የት ትሰራለህ?","o":["የት ትሰራለህ?","እሰራለሁ"],"a":0},
+{"t":"mc","q":"የት ትሰራለህ? asks…","o":["where do you work?","where are you going?","what do you do?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ"],"a":0},
+{"t":"mc","q":"Beyond work, ስራ also covers…","o":["making and doing","resting","selling"],"a":0}
+]},
+{"id":"am_w1_2","title":"Hearing the work","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ","የት ትሰራለህ?"],"a":0},
+{"t":"mc","q":"What does ስራ mean?","o":["work · job","office","worker"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የት ትሰራለህ?","o":["የት ትሰራለህ?","እሰራለሁ","ስራ"],"a":0},
+{"t":"mc","q":"Which one means I work?","o":["እሰራለሁ","ስራ","ትሰራለህ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","የት ትሰራለህ?","እሰራለሁ"],"a":0},
+{"t":"mc","q":"The ti-…-eh wrap marks…","o":["you (a man)","I","we"],"a":0}
+]},
+{"id":"am_w1_3","title":"Building the work","step":"build","meta":"Employment in parts","vocab":[],"ex":[
+{"t":"wb","q":"Build: where do you work? (to a man)","a":["የት","ትሰራለህ?"],"pool":["የት","ትሰራለህ?","እሰራለሁ"]},
+{"t":"mc","q":"Pick: I work","o":["እሰራለሁ","ስራ","ትሰራለህ?"],"a":0},
+{"t":"wb","q":"Build: I work in the city","a":["ከተማ","ውስጥ","እሰራለሁ"],"pool":["ከተማ","ውስጥ","እሰራለሁ","ስራ"]},
+{"t":"mc","q":"Pick the word for work","o":["ስራ","ሱቅ","ገንዘብ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የት ትሰራለህ?","o":["የት ትሰራለህ?","ስራ","እሰራለሁ"],"a":0}
+]},
+{"id":"am_w1_4","title":"The work in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስራ","work"],["እሰራለሁ","I work"],["የት ትሰራለህ?","where do you work?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","እሰራለሁ","የት ትሰራለህ?"],"a":0},
+{"t":"match","q":"Match the wrap to the person","pairs":[["እሰራለሁ","I"],["ትሰራለህ","you (man)"]]},
+{"t":"mc","q":"Small talk order in Ethiopia: greetings, then usually…","o":["የት ትሰራለህ?","ስንት ነው?","ወራጅ አለ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","የት ትሰራለህ?","ስራ"],"a":0}
+]},
+{"id":"am_w1_5","title":"Checkpoint: the work","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ስራ means…","o":["work · job","salary","office"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ","የት ትሰራለህ?"],"a":0},
+{"t":"mc","q":"Which one asks where do you work?","o":["የት ትሰራለህ?","ወዴት ትሄዳለህ?","ምን ነው?"],"a":0},
+{"t":"mc","q":"Review — መቶ means…","o":["hundred","fifty","twenty"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","ገንዘብ","ሱቅ"],"a":0}
+]},
+
+/* ---------- w2 · Student and teacher ---------- */
+{"id":"am_w2","title":"Student and teacher","step":"learn","meta":"Temari, astemari — one root, both sides of the desk","vocab":[["ተማሪ","temari","student"],["አስተማሪ","astemari","teacher"],["ተማሪዎች","temariwoch","students"]],"ex":[
+{"t":"note","tag":"One root, two jobs","q":"ተማሪ and አስተማሪ","body":"<p><b>ተማሪ</b> <i>temari</i> — <i>student, learner</i>. Add the little <b>as-</b> — the make-it-happen prefix — and you cross the desk: <b>አስተማሪ</b> <i>astemari</i> — <i>teacher</i>, one-who-makes-learn.</p>","eg":[["ተማሪ","temari","student"],["አስተማሪ","astemari","teacher"]]},
+{"t":"li","q":"Student or teacher — which do you hear?","say":"ተማሪ","o":["ተማሪ","አስተማሪ"],"a":0},
+{"t":"mc","q":"አስተማሪ literally means…","o":["one who makes learn","head learner","school elder"],"a":0},
+{"t":"note","tag":"The plural after vowels","q":"ተማሪዎች","body":"<p>Your -och plural wears a w after vowels: <b>ተማሪዎች</b> <i>temariwoch</i> — <i>students</i>. Same rule you saw in ሰዎች; now you own both shapes.</p>","eg":[["ተማሪዎች","temariwoch","students"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","ተማሪ"],"a":0},
+{"t":"mc","q":"ተማሪዎች means…","o":["students","teachers","classes"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪዎች"],"a":0},
+{"t":"mc","q":"After a vowel, -och becomes…","o":["-woch","-yoch","-koch"],"a":0}
+]},
+{"id":"am_w2_2","title":"Hearing the classroom","step":"recognize","meta":"Desk sides by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪ","ተማሪዎች"],"a":0},
+{"t":"mc","q":"What does ተማሪ mean?","o":["student","teacher","school"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","አስተማሪ","ተማሪ"],"a":0},
+{"t":"mc","q":"Which one means teacher?","o":["አስተማሪ","ተማሪ","ተማሪዎች"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","ተማሪዎች","አስተማሪ"],"a":0},
+{"t":"mc","q":"The as- prefix turns learn into…","o":["make-learn (teach)","learn again","learn badly"],"a":0}
+]},
+{"id":"am_w2_3","title":"Building the classroom","step":"build","meta":"Both sides of the desk","vocab":[],"ex":[
+{"t":"wb","q":"Build: teacher (as + temari)","a":["አስ","ተማሪ"],"pool":["አስ","ተማሪ","ዎች"]},
+{"t":"mc","q":"Pick: students","o":["ተማሪዎች","ተማሪ","አስተማሪ"],"a":0},
+{"t":"wb","q":"Build: students (temari + woch)","a":["ተማሪ","ዎች"],"pool":["ተማሪ","ዎች","አስ"]},
+{"t":"mc","q":"Pick: student","o":["ተማሪ","አስተማሪ","ተማሪዎች"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","ተማሪ","አስተማሪ"],"a":0}
+]},
+{"id":"am_w2_4","title":"The classroom in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ተማሪ","student"],["አስተማሪ","teacher"],["ተማሪዎች","students"]]},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","አስተማሪ","ተማሪዎች"],"a":0},
+{"t":"match","q":"Match singular to plural","pairs":[["ተማሪ","ተማሪዎች"],["ሰው","ሰዎች"]]},
+{"t":"mc","q":"They all meet at the…","o":["ትምህርት ቤት","ማድቤት","ሽንት ቤት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪዎች","ተማሪ"],"a":0}
+]},
+{"id":"am_w2_5","title":"Checkpoint: the classroom","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አስተማሪ means…","o":["teacher","student","principal"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","አስተማሪ","ተማሪ"],"a":0},
+{"t":"mc","q":"Which one means students?","o":["ተማሪዎች","ተማሪ","አስተማሪዎች"],"a":0},
+{"t":"mc","q":"Review — የት ትሰራለህ? asks…","o":["where do you work?","what do you study?","where do you live?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","ተማሪዎች","አስተማሪ"],"a":0}
+]},
+
+/* ---------- w3 · I am learning Amharic ---------- */
+{"id":"am_w3","title":"I am learning Amharic","step":"learn","meta":"Imaralehu — say the proudest sentence","vocab":[["እማራለሁ","imaralehu","I learn"],["አማርኛ እማራለሁ","amarigna imaralehu","I am learning Amharic"],["መጽሐፍ","metsihaf","book"]],"ex":[
+{"t":"note","tag":"The learning verb","q":"እማራለሁ","body":"<p><b>እማራለሁ</b> <i>imaralehu</i> — <i>I learn</i> — the very root that named both temari and the language you are inside right now.</p>","eg":[["እማራለሁ","imaralehu","I learn"]]},
+{"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","እሰራለሁ"],"a":0},
+{"t":"mc","q":"እማራለሁ means…","o":["I learn","I teach","I read"],"a":0},
+{"t":"note","tag":"Say it proudly","q":"አማርኛ እማራለሁ","body":"<p><b>አማርኛ እማራለሁ</b> <i>amarigna imaralehu</i> — <i>I am learning Amharic</i>. Deploy it anywhere in Ethiopia and watch the smiles: it is the sentence that opens every door this course can open.</p>","eg":[["አማርኛ እማራለሁ","amarigna imaralehu","I am learning Amharic"]]},
+{"t":"li","q":"Which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","እማራለሁ"],"a":0},
+{"t":"mc","q":"አማርኛ እማራለሁ means…","o":["I am learning Amharic","I speak Amharic","teach me Amharic"],"a":0},
+{"t":"note","tag":"The companion","q":"መጽሐፍ","body":"<p><b>መጽሐፍ</b> <i>metsihaf</i> — <i>book</i> — with the tight ጽ in its heart. Ethiopia has written books in this script for the better part of two thousand years.</p>","eg":[["መጽሐፍ","metsihaf","book"]]},
+{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ"],"a":0},
+{"t":"mc","q":"መጽሐፍ means…","o":["book","paper","pen"],"a":0}
+]},
+{"id":"am_w3_2","title":"Hearing the learning","step":"recognize","meta":"Study by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","እማራለሁ","መጽሐፍ"],"a":0},
+{"t":"mc","q":"What does መጽሐፍ mean?","o":["book","school","letter"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","አማርኛ እማራለሁ","መጽሐፍ"],"a":0},
+{"t":"mc","q":"Which one is the proudest sentence in this app?","o":["አማርኛ እማራለሁ","ውድ ነው","ራበኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ","አማርኛ እማራለሁ"],"a":0},
+{"t":"mc","q":"temari, astemari and imaralehu all share the root of…","o":["learning","working","reading"],"a":0}
+]},
+{"id":"am_w3_3","title":"Building the learning","step":"build","meta":"The sentence that smiles back","vocab":[],"ex":[
+{"t":"wb","q":"Build: I am learning Amharic","a":["አማርኛ","እማራለሁ"],"pool":["አማርኛ","እማራለሁ","መጽሐፍ"]},
+{"t":"mc","q":"Pick the word for book","o":["መጽሐፍ","ተማሪ","ወንበር"],"a":0},
+{"t":"wb","q":"Build: I want a book","a":["መጽሐፍ","እፈልጋለሁ"],"pool":["መጽሐፍ","እፈልጋለሁ","እማራለሁ"]},
+{"t":"mc","q":"Pick: I learn","o":["እማራለሁ","እሰራለሁ","እገዛለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","መጽሐፍ","እማራለሁ"],"a":0}
+]},
+{"id":"am_w3_4","title":"The learning in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እማራለሁ","I learn"],["አማርኛ እማራለሁ","I am learning Amharic"],["መጽሐፍ","book"]]},
+{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","አማርኛ እማራለሁ","እማራለሁ"],"a":0},
+{"t":"match","q":"Match the root family","pairs":[["ተማሪ","the learner"],["አስተማሪ","the make-learner"],["እማራለሁ","I learn"]]},
+{"t":"mc","q":"The taxi driver asks why you speak Amharic; you say…","o":["አማርኛ እማራለሁ","ተማሪዎች","መጽሐፍ አለ?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","መጽሐፍ","አማርኛ እማራለሁ"],"a":0}
+]},
+{"id":"am_w3_5","title":"Checkpoint: the learning","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አማርኛ እማራለሁ means…","o":["I am learning Amharic","Amharic is easy","I know Amharic"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","አማርኛ እማራለሁ","እሰራለሁ"],"a":0},
+{"t":"mc","q":"Which one means book?","o":["መጽሐፍ","ተማሪ","ወረቀት"],"a":0},
+{"t":"mc","q":"Review — the as- of አስተማሪ means…","o":["make-it-happen","again","not"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ","ተማሪ"],"a":0}
+]},
+
+/* ---------- w4 · The desk tools ---------- */
+{"id":"am_w4","title":"The desk tools","step":"learn","meta":"Pen, paper, phone — two of them Italian","vocab":[["እስክሪብቶ","iskribto","pen"],["ወረቀት","wereket","paper"],["ስልክ","silk","phone"],["ኮምፒውተር","kompiwter","computer"]],"ex":[
+{"t":"note","tag":"The Italian pen","q":"እስክሪብቶ","body":"<p><b>እስክሪብቶ</b> <i>iskribto</i> — <i>pen</i> — Italian scritto gone Amharic, a souvenir of the 1930s that stayed in every pocket. Loanwords in Amharic dress in fidel and behave like everyone else.</p>","eg":[["እስክሪብቶ","iskribto","pen"]]},
+{"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","መጽሐፍ"],"a":0},
+{"t":"mc","q":"እስክሪብቶ arrived from…","o":["Italian","English","French"],"a":0},
+{"t":"note","tag":"The paper and the phone","q":"ወረቀት and ስልክ","body":"<p><b>ወረቀት</b> <i>wereket</i> — <i>paper</i> (cousin of Arabic waraqa). <b>ስልክ</b> <i>silk</i> — <i>phone</i> — originally the telegraph wire; now the device that holds this app.</p>","eg":[["ወረቀት","wereket","paper"],["ስልክ","silk","phone"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስልክ","o":["ስልክ","ወረቀት"],"a":0},
+{"t":"mc","q":"ስልክ originally named…","o":["the telegraph wire","the bell","the letter"],"a":0},
+{"t":"note","tag":"The newcomer","q":"ኮምፒውተር","body":"<p><b>ኮምፒውተር</b> <i>kompiwter</i> — <i>computer</i> — English, refitted with full fidel vowels. Say it and hear how Amharic digests a borrowed word whole.</p>","eg":[["ኮምፒውተር","kompiwter","computer"]]},
+{"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ስልክ"],"a":0},
+{"t":"mc","q":"ኮምፒውተር means…","o":["computer","calculator","printer"],"a":0}
+]},
+{"id":"am_w4_2","title":"Hearing the tools","step":"recognize","meta":"Desk kit by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","እስክሪብቶ","ስልክ"],"a":0},
+{"t":"mc","q":"What does ስልክ mean?","o":["phone","pen","wire"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ወረቀት","ስልክ"],"a":0},
+{"t":"mc","q":"Which one means paper?","o":["ወረቀት","እስክሪብቶ","መጽሐፍ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","ኮምፒውተር","ወረቀት"],"a":0},
+{"t":"mc","q":"Loanwords in Amharic…","o":["dress in fidel and behave normally","stay in Latin letters","are avoided"],"a":0}
+]},
+{"id":"am_w4_3","title":"Building the tools","step":"build","meta":"Kit the desk","vocab":[],"ex":[
+{"t":"wb","q":"Build: pen and paper","a":["እስክሪብቶ","ወረቀት"],"pool":["እስክሪብቶ","ወረቀት","ስልክ"]},
+{"t":"mc","q":"Pick the phone","o":["ስልክ","ኮምፒውተር","እስክሪብቶ"],"a":0},
+{"t":"wb","q":"Build: I want a pen","a":["እስክሪብቶ","እፈልጋለሁ"],"pool":["እስክሪብቶ","እፈልጋለሁ","ወረቀት"]},
+{"t":"mc","q":"Pick the computer","o":["ኮምፒውተር","ስልክ","ወረቀት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስልክ","o":["ስልክ","እስክሪብቶ","ኮምፒውተር"],"a":0}
+]},
+{"id":"am_w4_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እስክሪብቶ","pen"],["ወረቀት","paper"],["ስልክ","phone"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","ስልክ","ኮምፒውተር"],"a":0},
+{"t":"match","q":"Match the tool to the era","pairs":[["እስክሪብቶ","the 1930s"],["ኮምፒውተር","today"]]},
+{"t":"mc","q":"This very app lives inside your…","o":["ስልክ","ወረቀት","መጽሐፍ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ወረቀት","እስክሪብቶ"],"a":0}
+]},
+{"id":"am_w4_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ወረቀት means…","o":["paper","pen","page"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","ስልክ","ወረቀት"],"a":0},
+{"t":"mc","q":"Which one means phone?","o":["ስልክ","ኮምፒውተር","እስክሪብቶ"],"a":0},
+{"t":"mc","q":"Review — መጽሐፍ means…","o":["book","paper","school"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","ኮምፒውተር","ስልክ"],"a":0}
+]},
+
+/* ---------- w5 · The workplaces ---------- */
+{"id":"am_w5","title":"The workplaces","step":"learn","meta":"Biro, bank, hospital, hotel — the loanword district","vocab":[["ቢሮ","biro","office"],["ባንክ","bank","bank"],["ሆስፒታል","hospital","hospital"],["ሆቴል","hotel","hotel"]],"ex":[
+{"t":"note","tag":"The office","q":"ቢሮ","body":"<p><b>ቢሮ</b> <i>biro</i> — <i>office</i> — another Italian guest (ufficio&rsquo;s cousin bureau) that never left. ቢሮ ውስጥ እሰራለሁ — I work in an office.</p>","eg":[["ቢሮ","biro","office"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ቤት"],"a":0},
+{"t":"mc","q":"ቢሮ means…","o":["office","shop","desk"],"a":0},
+{"t":"note","tag":"The institutions","q":"ባንክ and ሆስፒታል","body":"<p><b>ባንክ</b> <i>bank</i> and <b>ሆስፒታል</b> <i>hospital</i> — English guests, fidel passports. You already know how to find them: ባንክ የት ነው?</p>","eg":[["ባንክ","bank","bank"],["ሆስፒታል","hospital","hospital"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሆስፒታል","o":["ሆስፒታል","ባንክ"],"a":0},
+{"t":"mc","q":"ባንክ የት ነው? asks…","o":["where is the bank?","is there a bank?","how far is the bank?"],"a":0},
+{"t":"note","tag":"The traveler&rsquo;s base","q":"ሆቴል","body":"<p><b>ሆቴል</b> <i>hotel</i> — your bed, your locked door, and in Ethiopia often your restaurant too: many hotels are known more for lunch than lodging.</p>","eg":[["ሆቴል","hotel","hotel"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል"],"a":0},
+{"t":"mc","q":"Ethiopian hotels are often known for…","o":["their food","their pools","their gardens"],"a":0}
+]},
+{"id":"am_w5_2","title":"Hearing the workplaces","step":"recognize","meta":"Institutions by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ባንክ","o":["ባንክ","ቢሮ","ሆቴል"],"a":0},
+{"t":"mc","q":"What does ቢሮ mean?","o":["office","bureau drawer","bank"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል","ባንክ"],"a":0},
+{"t":"mc","q":"Which one is the hospital?","o":["ሆስፒታል","ሆቴል","ቢሮ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
+{"t":"mc","q":"ሆስፒታል and ሆቴል differ by…","o":["their endings","their first letter","nothing"],"a":0}
+]},
+{"id":"am_w5_3","title":"Building the workplaces","step":"build","meta":"The town&rsquo;s pillars","vocab":[],"ex":[
+{"t":"wb","q":"Build: where is the bank?","a":["ባንክ","የት","ነው?"],"pool":["ባንክ","የት","ነው?","ቢሮ"]},
+{"t":"mc","q":"Pick the office","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
+{"t":"wb","q":"Build: I work in an office","a":["ቢሮ","ውስጥ","እሰራለሁ"],"pool":["ቢሮ","ውስጥ","እሰራለሁ","ባንክ"]},
+{"t":"mc","q":"Pick the hotel","o":["ሆቴል","ሆስፒታል","ቢሮ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሆስፒታል","o":["ሆስፒታል","ሆቴል","ባንክ"],"a":0}
+]},
+{"id":"am_w5_4","title":"The workplaces in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቢሮ","office"],["ባንክ","bank"],["ሆቴል","hotel"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ባንክ","ሆስፒታል"],"a":0},
+{"t":"match","q":"Match the need to the place","pairs":[["money","ባንክ"],["a bed","ሆቴል"],["a doctor","ሆስፒታል"]]},
+{"t":"mc","q":"ቢሮ ውስጥ እሰራለሁ uses which Zone-6 word?","o":["ውስጥ","አለ","ወደ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ባንክ","o":["ባንክ","ቢሮ","ሆቴል"],"a":0}
+]},
+{"id":"am_w5_5","title":"Checkpoint: the workplaces","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቢሮ means…","o":["office","bank","office chair"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል","ቢሮ"],"a":0},
+{"t":"mc","q":"Which one is the hospital?","o":["ሆስፒታል","ሆቴል","ባንክ"],"a":0},
+{"t":"mc","q":"Review — እስክሪብቶ means…","o":["pen","paper","pencil"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ሆቴል","ባንክ"],"a":0}
+]},
+
+/* ---------- w6 · The working week ---------- */
+{"id":"am_w6","title":"The working week","step":"learn","meta":"Iske — from Monday until Friday","vocab":[["እስከ","iske","until"],["ከሰኞ እስከ ዓርብ","ke-sanyo iske arb","from Monday to Friday"],["ዕረፍት","ereft","rest · break · holiday"]],"ex":[
+{"t":"note","tag":"The until word","q":"እስከ","body":"<p><b>እስከ</b> <i>iske</i> — <i>until</i>. Pair it with the ke- of ከየት: <b>ከሰኞ እስከ ዓርብ</b> <i>ke-sanyo iske arb</i> — <i>from Monday to Friday</i> — the shape of every schedule in the country.</p>","eg":[["እስከ","iske","until"],["ከሰኞ እስከ ዓርብ","ke-sanyo iske arb","from Monday to Friday"]]},
+{"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ"],"a":0},
+{"t":"mc","q":"ከ … እስከ … builds…","o":["from … to …","either … or …","not … but …"],"a":0},
+{"t":"note","tag":"What the week earns","q":"ዕረፍት","body":"<p><b>ዕረፍት</b> <i>ereft</i> — <i>rest, a break, holiday</i>. The word for lunch breaks, school holidays and the deep Sunday exhale after a week of sira.</p>","eg":[["ዕረፍት","ereft","rest · break · holiday"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","እስከ"],"a":0},
+{"t":"mc","q":"ዕረፍት covers…","o":["rest, breaks and holidays","only sleep","only weekends"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት"],"a":0},
+{"t":"mc","q":"ከሰኞ እስከ ዓርብ እሰራለሁ means…","o":["I work Monday to Friday","I rest Monday to Friday","Monday is far from Friday"],"a":0}
+]},
+{"id":"am_w6_2","title":"Hearing the week","step":"recognize","meta":"Schedules by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት","ከሰኞ እስከ ዓርብ"],"a":0},
+{"t":"mc","q":"What does ዕረፍት mean?","o":["rest · break","work","weekend only"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ","ዕረፍት"],"a":0},
+{"t":"mc","q":"Which one means until?","o":["እስከ","ከ","ወደ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","ከሰኞ እስከ ዓርብ","እስከ"],"a":0},
+{"t":"mc","q":"The ke- in ከሰኞ is the same ke- as in…","o":["ከየት","ቀንስ","ኪሎ"],"a":0}
+]},
+{"id":"am_w6_3","title":"Building the week","step":"build","meta":"Schedule yourself","vocab":[],"ex":[
+{"t":"wb","q":"Build: from Monday to Friday","a":["ከሰኞ","እስከ","ዓርብ"],"pool":["ከሰኞ","እስከ","ዓርብ","ዕረፍት"]},
+{"t":"mc","q":"Pick the word for rest","o":["ዕረፍት","እስከ","ስራ"],"a":0},
+{"t":"wb","q":"Build: from Monday to Friday I work","a":["ከሰኞ","እስከ","ዓርብ","እሰራለሁ"],"pool":["ከሰኞ","እስከ","ዓርብ","እሰራለሁ","ዕረፍት"]},
+{"t":"mc","q":"Pick the word for until","o":["እስከ","ከ","ውስጥ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","ዕረፍት","እስከ"],"a":0}
+]},
+{"id":"am_w6_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እስከ","until"],["ከሰኞ እስከ ዓርብ","Monday to Friday"],["ዕረፍት","rest"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","እስከ","ከሰኞ እስከ ዓርብ"],"a":0},
+{"t":"match","q":"Match the day to its role","pairs":[["ከሰኞ እስከ ዓርብ","ስራ"],["እሁድ","ዕረፍት"]]},
+{"t":"mc","q":"ከጠዋት እስከ ማታ would mean…","o":["from morning until evening","every morning","tomorrow evening"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት","ከሰኞ እስከ ዓርብ"],"a":0}
+]},
+{"id":"am_w6_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ዕረፍት means…","o":["rest · break","overtime","meeting"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ","ዕረፍት"],"a":0},
+{"t":"mc","q":"እስከ means…","o":["until","from","since"],"a":0},
+{"t":"mc","q":"Review — ቢሮ means…","o":["office","bank","break room"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","ከሰኞ እስከ ዓርብ","እስከ"],"a":0}
+]},
+
+/* ---------- w7 · What do you do? ---------- */
+{"id":"am_w7","title":"What do you do?","step":"learn","meta":"Min — the last great question word","vocab":[["ምን","min","what"],["ምን ትሰራለህ?","min tiseraleh?","what do you do? (to a man)"],["ተማሪ ነኝ","temari negn","I am a student"]],"ex":[
+{"t":"note","tag":"The missing piece","q":"ምን","body":"<p><b>ምን</b> <i>min</i> — <i>what</i> — completes your question-word set: man (who), yet (where), sint (how much), and now min. You met its shadow inside እንደምን — how — long ago.</p>","eg":[["ምን","min","what"]]},
+{"t":"li","q":"Which one do you hear?","say":"ምን","o":["ምን","ማን"],"a":0},
+{"t":"mc","q":"ምን means…","o":["what","who","which"],"a":0},
+{"t":"note","tag":"The career question","q":"ምን ትሰራለህ?","body":"<p><b>ምን ትሰራለህ?</b> <i>min tiseraleh?</i> — <i>what do you do?</i> — literally what do-you-work. The answer wears your oldest friend ነኝ: <b>ተማሪ ነኝ</b> <i>temari negn</i> — <i>I am a student</i>.</p>","eg":[["ምን ትሰራለህ?","min tiseraleh?","what do you do? (to a man)"],["ተማሪ ነኝ","temari negn","I am a student"]]},
+{"t":"li","q":"Which one do you hear?","say":"ምን ትሰራለህ?","o":["ምን ትሰራለህ?","የት ትሰራለህ?"],"a":0},
+{"t":"mc","q":"ምን ትሰራለህ? asks…","o":["what do you do?","where do you work?","when do you work?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?"],"a":0},
+{"t":"mc","q":"ተማሪ ነኝ means…","o":["I am a student","I was a student","students exist"],"a":0}
+]},
+{"id":"am_w7_2","title":"Hearing the what","step":"recognize","meta":"Careers by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?","ምን"],"a":0},
+{"t":"mc","q":"What does ምን mean?","o":["what","who","where"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ምን","o":["ምን","ማን","ምን ትሰራለህ?"],"a":0},
+{"t":"mc","q":"Which one answers ምን ትሰራለህ??","o":["ተማሪ ነኝ","ደህና ነኝ","ቤት ነኝ"],"a":0},
+{"t":"li","q":"Listen closely — min or man?","say":"ምን ትሰራለህ?","o":["ምን ትሰራለህ?","ማን ነው?"],"a":0},
+{"t":"mc","q":"Your four question words are man, yet, sint and…","o":["ምን","ነው","እስከ"],"a":0}
+]},
+{"id":"am_w7_3","title":"Building the what","step":"build","meta":"Ask and answer the career question","vocab":[],"ex":[
+{"t":"wb","q":"Build: what do you do? (to a man)","a":["ምን","ትሰራለህ?"],"pool":["ምን","ትሰራለህ?","ነኝ"]},
+{"t":"mc","q":"Pick: I am a student","o":["ተማሪ ነኝ","ተማሪ ነው","አስተማሪ ነኝ"],"a":0},
+{"t":"wb","q":"Build: I am a student","a":["ተማሪ","ነኝ"],"pool":["ተማሪ","ነኝ","ምን"]},
+{"t":"wb","q":"Build: I am a teacher","a":["አስተማሪ","ነኝ"],"pool":["አስተማሪ","ነኝ","ተማሪ"]},
+{"t":"li","q":"Which one do you hear?","say":"ምን ትሰራለህ?","o":["ምን ትሰራለህ?","ተማሪ ነኝ","ምን"],"a":0}
+]},
+{"id":"am_w7_4","title":"The what in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ምን","what"],["ምን ትሰራለህ?","what do you do?"],["ተማሪ ነኝ","I am a student"]]},
+{"t":"li","q":"Which one do you hear?","say":"ምን","o":["ምን","ተማሪ ነኝ","ምን ትሰራለህ?"],"a":0},
+{"t":"match","q":"Match the question word to its ask","pairs":[["ማን","who"],["ምን","what"],["የት","where"]]},
+{"t":"mc","q":"ምን ትሰራለህ? — አስተማሪ ነኝ. The man is…","o":["a teacher","a student","an office worker"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን","ምን ትሰራለህ?"],"a":0}
+]},
+{"id":"am_w7_5","title":"Checkpoint: Zone 9 complete","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ምን ትሰራለህ? asks…","o":["what do you do?","where do you go?","who are you?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?","አስተማሪ"],"a":0},
+{"t":"mc","q":"Review — the make-learn teacher is…","o":["አስተማሪ","ተማሪ","ተማሪዎች"],"a":0},
+{"t":"mc","q":"Review — from Monday to Friday…","o":["ከሰኞ እስከ ዓርብ","ከዓርብ እስከ ሰኞ","ከጠዋት እስከ ማታ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","ተማሪ ነኝ","እማራለሁ"],"a":0},
+{"t":"mc","q":"Review — which one means office?","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
+{"t":"mc","q":"Review — ዕረፍት means…","o":["rest · break","salary","meeting"],"a":0}
 ]}
 ];
 
@@ -2392,9 +2684,11 @@ const AM_UNITS=[
 {"n":7,"t":"Getting around","d":"The minibus and its weyala, where-to, near and far — and weraj alle!","lessons":["am_t1","am_t1_2","am_t1_3","am_t1_4","am_t1_5","am_t2","am_t2_2","am_t2_3","am_t2_4","am_t2_5","am_t3","am_t3_2","am_t3_3","am_t3_4","am_t3_5","am_t4","am_t4_2","am_t4_3","am_t4_4","am_t4_5","am_t5","am_t5_2","am_t5_3","am_t5_4","am_t5_5","am_t6","am_t6_2","am_t6_3","am_t6_4","am_t6_5","am_t7","am_t7_2","am_t7_3","am_t7_4","am_t7_5"]}
 ,
 {"n":8,"t":"Shopping and money","d":"Birr, sint new, the bargaining dance — and the counter script","lessons":["am_m1","am_m1_2","am_m1_3","am_m1_4","am_m1_5","am_m2","am_m2_2","am_m2_3","am_m2_4","am_m2_5","am_m3","am_m3_2","am_m3_3","am_m3_4","am_m3_5","am_m4","am_m4_2","am_m4_3","am_m4_4","am_m4_5","am_m5","am_m5_2","am_m5_3","am_m5_4","am_m5_5","am_m6","am_m6_2","am_m6_3","am_m6_4","am_m6_5","am_m7","am_m7_2","am_m7_3","am_m7_4","am_m7_5"]}
+,
+{"n":9,"t":"Work and school","d":"Sira, the temari root — and the last great question word","lessons":["am_w1","am_w1_2","am_w1_3","am_w1_4","am_w1_5","am_w2","am_w2_2","am_w2_3","am_w2_4","am_w2_5","am_w3","am_w3_2","am_w3_3","am_w3_4","am_w3_5","am_w4","am_w4_2","am_w4_3","am_w4_4","am_w4_5","am_w5","am_w5_2","am_w5_3","am_w5_4","am_w5_5","am_w6","am_w6_2","am_w6_3","am_w6_4","am_w6_5","am_w7","am_w7_2","am_w7_3","am_w7_4","am_w7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?"};
 
 const AM_SRS_SEED=[];
 
