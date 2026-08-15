@@ -2901,3 +2901,57 @@ Shipped Aug 14 (deploy explicitly authorized), audio audit deployed Aug 15.
 og-xhosa.png was rebuilt by the localhost-receiver recipe above. A
 pre-existing loadVoices race (onvoiceschanged before boot seats LANG) was
 found and guarded during the sweep.
+
+
+## Amharic — the thirteenth language (Aug 2026)
+
+Built autonomously on Ruan's standing order ("keep working until zone 12
+... build out all the sections, the religeos section, everything ...
+Dont deploy anything to netlify until I give yiou the go ahead") — the
+full working narrative and per-zone decisions live in AMHARIC.md.
+
+**Research base:** the Peace Corps Ethiopia Amharic manual (2015, 207pp,
+extracted to text) drove the curriculum: the ïndämïn addäru greeting
+system, gendered -h/-sh address from the first lesson, the copula/
+possessive tables, and telling time. Distinctives that shaped zones:
+fidel taught as SYSTEM (one consonant x seven orders on the ለ/መ/ሰ rows,
+alphabet grid carrying the rest) instead of 231 rote glyphs; the
+Ethiopian sunrise clock as a *curriculum spine* (zone 4) and again as the
+trip pack's numbers section — habesha vs ferenj se-at is the #1 practical
+trap for a visitor; the -egn verb family (rabegn/temagn/amemegn/des
+bilognal) as one pattern, not vocabulary; bet-compounds as a word
+machine (madbet, shint bet, hakim bet, timihirt bet, gorebet).
+
+**Audio:** edge-tts am-ET-AmehaNeural, 509 course clips + 255 faith clips,
+zero failures. One SPEAK_AS entry: bare እ was inaudible (peak 0.063) —
+the clip under its key speaks እህ (0.346). The peak-amplitude cross-check
+matters: a naive trimmed-duration threshold flagged ALL single-syllable
+letters; only እ was actually broken.
+
+**Recurring authoring trap — mixed-script mc options.** Options like
+"አለ and የለም" get RECORDED (the correct native option is a spoken string),
+so English glue inside a correct option ships as a clip. ~14 were caught
+across zones; check_am.py now has a permanent mixed-script guard. Same
+family: match pairs[0] is SPOKEN — am_c4_4 put grammar notation there
+(xh made the identical mistake in ITS c4_4).
+
+**Faith pack:** 255 strings from the uz skeleton, NASV-style contemporary
+Amharic (never Ge'ez register). The EN drift-diff proof came out exactly
+4 rows — the Ethiopia localizations. Ends beats carry the Acts 8
+Ethiopian court official (scripture, not Ethiopian legend), and
+newcreation uses the honest majority-Christian framing (like xh, unlike
+the Central-Asia packs). Roms are MECHANICAL fidel->ASCII transliteration
+(scratchpad am_translit.py; 6th-order vowel dropped word-finally so
+ሰላም -> selam not selami) — gemination is not recoverable from fidel, so
+faith roms are reading aids while course roms stay hand-authored.
+
+**Art:** Simien-style flat-topped ambas (far), teff-gold fields (mid),
+highland green with gojo huts, coffee bushes with red --cherry dots, one
+acacia (near); gelada mascot. Lalibela was explicitly ruled out —
+religious architecture. og-amharic.png reused the localhost-receiver
+recipe; the serializer needed one fix (skip stroke-width/linecap source
+attributes or the computed copy makes the XML invalid — "attribute
+redefined").
+
+Deploy is PENDING Ruan's explicit go-ahead; everything is committed
+locally on the worktree branch.

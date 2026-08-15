@@ -231,12 +231,29 @@ gelada monkey or walia ibex (national animal).
       NOTE: check_am.py (scratchpad) now also guards MIXED-SCRIPT
       correct options — that guard caught 8 real recording bugs
       across zones 7-12.
-- [ ] Orphan review pass + cold-test.
-- [ ] Trip pack.
-- [ ] Art.
-- [ ] Faith pack (faith/am.js + audio-amf/).
-- [ ] Ship wiring (fonts! alphabet landing page!) — commit only.
-- [ ] Deploy ONLY on Ruan's word.
+- [x] Orphan review pass + cold-test (see Post-course passes above).
+- [x] Trip pack COMPLETE (39ac81c8): 12 sections / 90 lines / 4 frames,
+  98% clip reuse (10 new; 509 total). Spines shipped: two-clocks section,
+  gendered address, welcome-command culture (giba/bila), buna three
+  rounds + gursha, weyala + weraj alle!, gebeya-vs-suk, right-hand
+  injera + fasting menus, amarigna imaralehu.
+- [x] Art COMPLETE (d6bb3ce7): Simien amba far layer, teff-gold mid,
+  highland-green near with gojo huts (--thatch/--wall) + coffee bushes
+  (--cherry) + one acacia; gelada mascot (golden mane). Light + dark
+  palettes verified in-browser. NO churches by design.
+- [x] Faith pack COMPLETE (cf820a17): 255 strings, NASV plainness,
+  EN drift vs uz = exactly the 4 Ethiopia strings (Acts 8 eunuch in the
+  ends beats; MANY follow Jesus). roms = am_translit.py mechanical
+  fidel->ASCII (6th-order vowel dropped word-finally). audio-amf/ via
+  generate_audio.py --lang amf (entry added; 0 hash collisions vs
+  course manifest). Browser-verified: flib arc, fjesus reader.
+- [x] Ship wiring COMPLETE (71d01eb4): catalogs (am FIRST, alphabetical),
+  Ethiopian flag, Noto Sans Ethiopic (fonts URL + 22 stacks + bare-fidel
+  note rule), FAITH_RESOURCES (both URLs curl-200), JSON-LD Course,
+  keywords, footer, gen_landing maps (Ethiopic fidel script — alphabet
+  page ships), 37 indexable URLs, og-amharic.png. COMMIT ONLY.
+- [ ] Deploy ONLY on Ruan's word — NOT YET GIVEN. Full sequence:
+  gen_landing (done) -> validate -> ff-merge main -> push -> indexnow.
 
 ## Measurement traps specific to am
 

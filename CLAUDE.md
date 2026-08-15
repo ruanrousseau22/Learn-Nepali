@@ -20,9 +20,9 @@ course data lives in per-language packs under `lang/`.
   don't touch).
 - Owner: Ruan (Mac user, no Node — see Validation). Prefers highly specific,
   actionable help.
-- **Status (Aug 2026): TWELVE courses COMPLETE at 12 zones each** — see the
+- **Status (Aug 2026): THIRTEEN courses COMPLETE at 12 zones each** — see the
   course table below — plus the Nepali Language Intensive track, the
-  Religious studies mode (all 12 languages translated), and a Short-term
+  Religious studies mode (all 13 languages translated), and a Short-term
   phrasebook in every language. No course carries an early-access label.
   Xhosa (Aug 2026) is the first African language and the first without an
   edge-tts voice — its audio pipeline is different (see Audio).
@@ -59,7 +59,7 @@ course data lives in per-language packs under `lang/`.
 - `lang/<code>.js` — one pack per language (`ne km my bn si lo ps mn ur uz
   jv`): data consts + `registerPack({...})`. Each pack's **romanization
   scheme is documented at the top of its file** — follow it exactly.
-- `faith/<code>.js` — Religious studies packs, one per language (all 12
+- `faith/<code>.js` — Religious studies packs, one per language (all 13
   translated, 255 clips each in `audio-<code>f/`).
 - `audio/` (Nepali) and `audio-<code>/` — recorded MP3 clips + a
   `manifest.json` each; `audio_strings*.json` are the committed strings
@@ -161,6 +161,7 @@ course data lives in per-language packs under `lang/`.
 | uz | Uzbek | 12 / 84 / 420 | uz-UZ-SardorNeural | first Latin-script pack (`latin:true`) |
 | jv | Javanese | 12 / 84 / 420 | jv-ID-DimasNeural | Latin; ngoko base + krama courtesy |
 | xh | Xhosa | 12 / 84 / 420 | Simba-TTS (local, no edge-tts) | Latin; clicks; FIRST AFRICAN course — audio via `generate_audio_xh.py`, letters need its SPEAK_AS, quality via ASR loop (see XHOSA.md + HISTORY.md) |
+| am | Amharic | 12 / 84 / 420 | am-ET-AmehaNeural | Ethiopic fidel; taught as consonant x 7 orders; እ needs SPEAK_AS (እህ); Ethiopian sunrise clock is a curriculum spine (see AMHARIC.md) |
 
 Per-language curriculum details, zone lists and the research sources behind
 them: HISTORY.md. Next candidate: Persian (`fa-IR`) — the only voice is
@@ -451,7 +452,7 @@ coordinates) is in HISTORY.md — these are the standing rules:
 
 A fourth page next to Learn/Alphabet/Review for short visits; **a pack
 feature, not a Bengali special case** — tab/page/flashcards appear only when
-the pack defines `trip`. **ALL TWELVE languages ship it (Aug 2026)** —
+the pack defines `trip`. **ALL THIRTEEN languages ship it (Aug 2026)** —
 Bengali (14 sections / 151 lines) and Nepali (15/96) hand-built first, then
 uz km my si lo ps mn ur jv in one pass (12-15 sections, 70-96 lines, 15-23
 frame combos each; per-language spines in the header comment of each pack's
