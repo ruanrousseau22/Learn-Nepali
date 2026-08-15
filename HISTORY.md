@@ -2953,5 +2953,21 @@ recipe; the serializer needed one fix (skip stroke-width/linecap source
 attributes or the computed copy makes the XML invalid — "attribute
 redefined").
 
-Deploy is PENDING Ruan's explicit go-ahead; everything is committed
-locally on the worktree branch.
+**Round 2 (same day, on Ruan's feedback):** (1) The first art shipped
+too close to the Xhosa look (flat mesa + cream sky) — rebuilt as jagged
+Simien pinnacles with a thin escarpment waterfall, terraced gold
+mid-band, giant-lobelia pieces and a highland-dawn rose/violet palette.
+(2) Both African mascots redrawn to the house BUST form (the yeti
+pattern: head fills the frame, chest at the bottom edge) — the first
+xh crane bust read as a worm until the head was enlarged and the bill
+drawn in profile. (3) Title register pass: both packs carried wordy
+formulaic step titles ("Hearing the m-row", "The m-row in the wild")
+that no other course has — 336 step lessons per pack standardized to
+Recognize/Build/Mix/Checkpoint (the ne flagship pattern), 7 learn
+titles and 23 cutesy note titles professionalized ("One letter, seven
+dresses" -> "One shape, seven vowels"). (4) Full-course audit: letter
+peak-amplitude sweep caught ሀ and ፀ in the same near-silent class as
+እ — SPEAK_AS carriers ሀህ/ፀህ fixed both; 60 within-topic duplicate
+exercises measured and accepted (checkpoint re-drills, 2.2% — vs the
+26% cross-course duplication that hurt ur/uz/jv); faith + trip + review
++ full lesson loop browser-verified. Deployed with Ruan's go-ahead.
