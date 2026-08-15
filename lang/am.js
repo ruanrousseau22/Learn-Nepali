@@ -905,6 +905,300 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ልጆች","o":["ልጆች","ልጅ","ቤተሰቤ"],"a":0},
 {"t":"mc","q":"Review — ጋሽ warmly addresses…","o":["an older man","a young girl","a crowd"],"a":0},
 {"t":"mc","q":"Review — the -och ending makes…","o":["plurals","questions","possessives"],"a":0}
+]},
+
+/* ---------- n1 · One to five ---------- */
+{"id":"am_n1","title":"One to five","step":"learn","meta":"And, hulett, sost — counting begins","vocab":[["አንድ","and","one"],["ሁለት","hulett","two"],["ሶስት","sost","three"],["አራት","arat","four"],["አምስት","amest","five"]],"ex":[
+{"t":"note","tag":"The first three","q":"አንድ, ሁለት, ሶስት","body":"<p><b>አንድ</b> <i>and</i> — <i>one</i>. <b>ሁለት</b> <i>hulett</i> — <i>two</i> — with that held double t you learned to hear. <b>ሶስት</b> <i>sost</i> — <i>three</i>.</p>","eg":[["አንድ","and","one"],["ሁለት","hulett","two"],["ሶስት","sost","three"]]},
+{"t":"li","q":"Which number do you hear?","say":"ሁለት","o":["ሁለት","አንድ"],"a":0},
+{"t":"mc","q":"ሶስት means…","o":["three","two","five"],"a":0},
+{"t":"note","tag":"Four and five","q":"አራት, አምስት","body":"<p><b>አራት</b> <i>arat</i> — <i>four</i>; <b>አምስት</b> <i>amest</i> — <i>five</i>. One hand counted. In Addis you will hear prices in these words and in English both — but the market respects a counter.</p>","eg":[["አራት","arat","four"],["አምስት","amest","five"]]},
+{"t":"li","q":"Which number do you hear?","say":"አራት","o":["አራት","አምስት"],"a":0},
+{"t":"mc","q":"አምስት means…","o":["five","four","three"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","ሶስት"],"a":0},
+{"t":"mc","q":"The double t in ሁለት is…","o":["held and heard, not written","written twice","silent"],"a":0}
+]},
+{"id":"am_n1_2","title":"Hearing one to five","step":"recognize","meta":"Small numbers by ear","vocab":[],"ex":[
+{"t":"li","q":"Which number do you hear?","say":"ሶስት","o":["ሶስት","አራት","አምስት"],"a":0},
+{"t":"mc","q":"What does አንድ mean?","o":["one","first","and"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አምስት","o":["አምስት","አራት","ሁለት"],"a":0},
+{"t":"mc","q":"Which one is four?","o":["አራት","አምስት","ሶስት"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሁለት","o":["ሁለት","አንድ","አራት"],"a":0},
+{"t":"mc","q":"Count up: አንድ, ሁለት, then…","o":["ሶስት","አራት","አምስት"],"a":0}
+]},
+{"id":"am_n1_3","title":"Building one to five","step":"build","meta":"Count on one hand","vocab":[],"ex":[
+{"t":"wb","q":"Build the count: one, two, three","a":["አንድ","ሁለት","ሶስት"],"pool":["አንድ","ሁለት","ሶስት","አራት"]},
+{"t":"mc","q":"Pick the number five","o":["አምስት","አራት","ሶስት"],"a":0},
+{"t":"wb","q":"Build the count: four, five","a":["አራት","አምስት"],"pool":["አራት","አምስት","ሁለት"]},
+{"t":"mc","q":"Pick the number one","o":["አንድ","ሁለት","አምስት"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሶስት","o":["ሶስት","ሁለት","አምስት"],"a":0}
+]},
+{"id":"am_n1_4","title":"One to five in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the number to its value","pairs":[["አንድ","1"],["ሁለት","2"],["ሶስት","3"]]},
+{"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","አራት","ሁለት"],"a":0},
+{"t":"match","q":"Match the number to its value","pairs":[["አራት","4"],["አምስት","5"]]},
+{"t":"mc","q":"ሁለት ቡና means…","o":["two coffees","one coffee","five coffees"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አራት","o":["አራት","አምስት","ሶስት"],"a":0}
+]},
+{"id":"am_n1_5","title":"Checkpoint: one to five","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አራት means…","o":["four","five","two"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አምስት","o":["አምስት","ሶስት","አንድ"],"a":0},
+{"t":"mc","q":"Which one is two?","o":["ሁለት","አንድ","ሶስት"],"a":0},
+{"t":"mc","q":"Review — ማን ነው? means…","o":["who is it?","how many?","what time?"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","ሁለት","አራት"],"a":0}
+]},
+
+/* ---------- n2 · Six to ten ---------- */
+{"id":"am_n2","title":"Six to ten","step":"learn","meta":"Siddist to asser — both hands full","vocab":[["ስድስት","siddist","six"],["ሰባት","sebat","seven"],["ስምንት","simmint","eight"],["ዘጠኝ","zetegn","nine"],["አስር","asser","ten"]],"ex":[
+{"t":"note","tag":"Six and seven","q":"ስድስት, ሰባት","body":"<p><b>ስድስት</b> <i>siddist</i> — <i>six</i> — a workout of bare sixth-order letters. <b>ሰባት</b> <i>sebat</i> — <i>seven</i>.</p>","eg":[["ስድስት","siddist","six"],["ሰባት","sebat","seven"]]},
+{"t":"li","q":"Which number do you hear?","say":"ስድስት","o":["ስድስት","ሰባት"],"a":0},
+{"t":"mc","q":"ሰባት means…","o":["seven","six","eight"],"a":0},
+{"t":"note","tag":"Eight and nine","q":"ስምንት, ዘጠኝ","body":"<p><b>ስምንት</b> <i>simmint</i> — <i>eight</i> — hold the double m. <b>ዘጠኝ</b> <i>zetegn</i> — <i>nine</i> — with the tight ጠ in the middle: ze-TTE-gn.</p>","eg":[["ስምንት","simmint","eight"],["ዘጠኝ","zetegn","nine"]]},
+{"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","ስምንት"],"a":0},
+{"t":"mc","q":"The tight consonant inside ዘጠኝ is…","o":["ጠ","ተ","ቀ"],"a":0},
+{"t":"note","tag":"Ten","q":"አስር","body":"<p><b>አስር</b> <i>asser</i> — <i>ten</i>. Both hands counted: the whole market toolkit from and to asser is yours.</p>","eg":[["አስር","asser","ten"]]},
+{"t":"li","q":"Which number do you hear?","say":"አስር","o":["አስር","ዘጠኝ"],"a":0},
+{"t":"mc","q":"አስር means…","o":["ten","nine","eight"],"a":0}
+]},
+{"id":"am_n2_2","title":"Hearing six to ten","step":"recognize","meta":"Big fingers by ear","vocab":[],"ex":[
+{"t":"li","q":"Which number do you hear?","say":"ሰባት","o":["ሰባት","ስድስት","ስምንት"],"a":0},
+{"t":"mc","q":"What does ስምንት mean?","o":["eight","seven","nine"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ስምንት","o":["ስምንት","ዘጠኝ","ሰባት"],"a":0},
+{"t":"mc","q":"Which one is six?","o":["ስድስት","ሰባት","አስር"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"አስር","o":["አስር","ስድስት","ዘጠኝ"],"a":0},
+{"t":"mc","q":"Count up: ሰባት, ስምንት, then…","o":["ዘጠኝ","አስር","ስድስት"],"a":0}
+]},
+{"id":"am_n2_3","title":"Building six to ten","step":"build","meta":"The second hand","vocab":[],"ex":[
+{"t":"wb","q":"Build the count: six, seven, eight","a":["ስድስት","ሰባት","ስምንት"],"pool":["ስድስት","ሰባት","ስምንት","ዘጠኝ"]},
+{"t":"mc","q":"Pick the number ten","o":["አስር","ዘጠኝ","ስምንት"],"a":0},
+{"t":"wb","q":"Build the count: nine, ten","a":["ዘጠኝ","አስር"],"pool":["ዘጠኝ","አስር","ሰባት"]},
+{"t":"mc","q":"Pick the number seven","o":["ሰባት","ስድስት","ስምንት"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ስድስት","o":["ስድስት","ስምንት","አስር"],"a":0}
+]},
+{"id":"am_n2_4","title":"Six to ten in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the number to its value","pairs":[["ስድስት","6"],["ሰባት","7"],["ስምንት","8"]]},
+{"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","አስር","ስምንት"],"a":0},
+{"t":"match","q":"Match the number to its value","pairs":[["ዘጠኝ","9"],["አስር","10"]]},
+{"t":"mc","q":"አስር ብር would be…","o":["ten birr","six birr","nine birr"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሰባት","o":["ሰባት","ስድስት","ዘጠኝ"],"a":0}
+]},
+{"id":"am_n2_5","title":"Checkpoint: six to ten","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ዘጠኝ means…","o":["nine","eight","ten"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ስምንት","o":["ስምንት","ሰባት","ስድስት"],"a":0},
+{"t":"mc","q":"Which one is ten?","o":["አስር","ዘጠኝ","አራት"],"a":0},
+{"t":"mc","q":"Review — which one is five?","o":["አምስት","አራት","ሶስት"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","ስምንት","አስር"],"a":0}
+]},
+
+/* ---------- n3 · The weekdays ---------- */
+{"id":"am_n3","title":"The weekdays","step":"learn","meta":"Sanyo to arb — the working five","vocab":[["ሰኞ","sanyo","Monday"],["ማክሰኞ","maksanyo","Tuesday"],["ረቡዕ","rebu","Wednesday"],["ሐሙስ","hamus","Thursday"],["ዓርብ","arb","Friday"]],"ex":[
+{"t":"note","tag":"The week opens","q":"ሰኞ and ማክሰኞ","body":"<p><b>ሰኞ</b> <i>sanyo</i> — <i>Monday</i>. Tuesday tells you its own story: <b>ማክሰኞ</b> <i>maksanyo</i> — <i>the one after sanyo</i>. Amharic names Tuesday by leaning on Monday.</p>","eg":[["ሰኞ","sanyo","Monday"],["ማክሰኞ","maksanyo","Tuesday"]]},
+{"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ማክሰኞ"],"a":0},
+{"t":"mc","q":"ማክሰኞ literally means…","o":["the one after sanyo","market day","second sun"],"a":0},
+{"t":"note","tag":"Midweek","q":"ረቡዕ and ሐሙስ","body":"<p><b>ረቡዕ</b> <i>rebu</i> — <i>Wednesday</i> — and <b>ሐሙስ</b> <i>hamus</i> — <i>Thursday</i>. Old Semitic number-names: the fourth and the fifth day, cousins of words used across the Red Sea.</p>","eg":[["ረቡዕ","rebu","Wednesday"],["ሐሙስ","hamus","Thursday"]]},
+{"t":"li","q":"Which day do you hear?","say":"ሐሙስ","o":["ሐሙስ","ረቡዕ"],"a":0},
+{"t":"mc","q":"ረቡዕ means…","o":["Wednesday","Thursday","Tuesday"],"a":0},
+{"t":"note","tag":"The week exhales","q":"ዓርብ","body":"<p><b>ዓርብ</b> <i>arb</i> — <i>Friday</i> — the door to the weekend, and in much of Ethiopia a fasting day with its own quiet rhythm.</p>","eg":[["ዓርብ","arb","Friday"]]},
+{"t":"li","q":"Which day do you hear?","say":"ዓርብ","o":["ዓርብ","ሐሙስ"],"a":0},
+{"t":"mc","q":"ዓርብ means…","o":["Friday","Saturday","Thursday"],"a":0}
+]},
+{"id":"am_n3_2","title":"Hearing the weekdays","step":"recognize","meta":"The working five by ear","vocab":[],"ex":[
+{"t":"li","q":"Which day do you hear?","say":"ማክሰኞ","o":["ማክሰኞ","ሰኞ","ረቡዕ"],"a":0},
+{"t":"mc","q":"What does ሐሙስ mean?","o":["Thursday","Wednesday","Friday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ረቡዕ","o":["ረቡዕ","ዓርብ","ማክሰኞ"],"a":0},
+{"t":"mc","q":"Which one is Monday?","o":["ሰኞ","ማክሰኞ","ዓርብ"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ዓርብ","o":["ዓርብ","ረቡዕ","ሰኞ"],"a":0},
+{"t":"mc","q":"The days in order: ሰኞ, ማክሰኞ, then…","o":["ረቡዕ","ሐሙስ","ዓርብ"],"a":0}
+]},
+{"id":"am_n3_3","title":"Building the weekdays","step":"build","meta":"Line up the week","vocab":[],"ex":[
+{"t":"wb","q":"Build the week: Monday, Tuesday, Wednesday","a":["ሰኞ","ማክሰኞ","ረቡዕ"],"pool":["ሰኞ","ማክሰኞ","ረቡዕ","ሐሙስ"]},
+{"t":"mc","q":"Pick Friday","o":["ዓርብ","ሐሙስ","ሰኞ"],"a":0},
+{"t":"wb","q":"Build: Thursday, Friday","a":["ሐሙስ","ዓርብ"],"pool":["ሐሙስ","ዓርብ","ረቡዕ"]},
+{"t":"mc","q":"Pick Tuesday","o":["ማክሰኞ","ሰኞ","ረቡዕ"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ማክሰኞ","ዓርብ"],"a":0}
+]},
+{"id":"am_n3_4","title":"The weekdays in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the day to its place","pairs":[["ሰኞ","Monday"],["ረቡዕ","Wednesday"],["ዓርብ","Friday"]]},
+{"t":"li","q":"Which day do you hear?","say":"ሐሙስ","o":["ሐሙስ","ዓርብ","ረቡዕ"],"a":0},
+{"t":"match","q":"Match the day to its place","pairs":[["ማክሰኞ","Tuesday"],["ሐሙስ","Thursday"]]},
+{"t":"mc","q":"Tuesday leans on Monday the way maksanyo leans on…","o":["ሰኞ","ረቡዕ","ዓርብ"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ማክሰኞ","o":["ማክሰኞ","ሰኞ","ሐሙስ"],"a":0}
+]},
+{"id":"am_n3_5","title":"Checkpoint: the weekdays","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ሐሙስ means…","o":["Thursday","Tuesday","Friday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ረቡዕ","o":["ረቡዕ","ማክሰኞ","ዓርብ"],"a":0},
+{"t":"mc","q":"Which one is Friday?","o":["ዓርብ","ሐሙስ","ሰኞ"],"a":0},
+{"t":"mc","q":"Review — which one is nine?","o":["ዘጠኝ","ስምንት","አስር"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ዓርብ","ረቡዕ"],"a":0}
+]},
+
+/* ---------- n4 · Weekend, today, tomorrow ---------- */
+{"id":"am_n4","title":"Weekend, today, tomorrow","step":"learn","meta":"Kidame, ihud — and the moving days","vocab":[["ቅዳሜ","kidame","Saturday"],["እሁድ","ihud","Sunday"],["ዛሬ","zare","today"],["ነገ","nege","tomorrow"],["ትናንት","tinant","yesterday"]],"ex":[
+{"t":"note","tag":"The weekend pair","q":"ቅዳሜ and እሁድ","body":"<p><b>ቅዳሜ</b> <i>kidame</i> — <i>Saturday</i>, the great market day across Ethiopia — and <b>እሁድ</b> <i>ihud</i> — <i>Sunday</i>, when the coffee ceremony stretches long and most of the country rests.</p>","eg":[["ቅዳሜ","kidame","Saturday"],["እሁድ","ihud","Sunday"]]},
+{"t":"li","q":"Which day do you hear?","say":"ቅዳሜ","o":["ቅዳሜ","እሁድ"],"a":0},
+{"t":"mc","q":"The great market day is…","o":["ቅዳሜ","እሁድ","ሰኞ"],"a":0},
+{"t":"note","tag":"The moving days","q":"ዛሬ, ነገ, ትናንት","body":"<p><b>ዛሬ</b> <i>zare</i> — <i>today</i>; <b>ነገ</b> <i>nege</i> — <i>tomorrow</i>; <b>ትናንት</b> <i>tinant</i> — <i>yesterday</i>. Three small words that anchor every plan and every story you will ever tell.</p>","eg":[["ዛሬ","zare","today"],["ነገ","nege","tomorrow"],["ትናንት","tinant","yesterday"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነገ","o":["ነገ","ዛሬ"],"a":0},
+{"t":"mc","q":"ትናንት means…","o":["yesterday","today","tomorrow"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ","o":["ዛሬ","ትናንት"],"a":0},
+{"t":"mc","q":"ነገ means…","o":["tomorrow","today","yesterday"],"a":0}
+]},
+{"id":"am_n4_2","title":"Hearing the weekend","step":"recognize","meta":"Rest days and moving days","vocab":[],"ex":[
+{"t":"li","q":"Which day do you hear?","say":"እሁድ","o":["እሁድ","ቅዳሜ","ዓርብ"],"a":0},
+{"t":"mc","q":"What does ዛሬ mean?","o":["today","tomorrow","yesterday"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት","o":["ትናንት","ነገ","ዛሬ"],"a":0},
+{"t":"mc","q":"Which one is Sunday?","o":["እሁድ","ቅዳሜ","ሐሙስ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ነገ","o":["ነገ","ትናንት","ዛሬ"],"a":0},
+{"t":"mc","q":"The long-coffee resting day is…","o":["እሁድ","ማክሰኞ","ረቡዕ"],"a":0}
+]},
+{"id":"am_n4_3","title":"Building the weekend","step":"build","meta":"Weekend plus time words","vocab":[],"ex":[
+{"t":"wb","q":"Build: Saturday and Sunday","a":["ቅዳሜ","እሁድ"],"pool":["ቅዳሜ","እሁድ","ዓርብ"]},
+{"t":"mc","q":"Pick the word for today","o":["ዛሬ","ነገ","ትናንት"],"a":0},
+{"t":"wb","q":"Build the timeline: yesterday, today, tomorrow","a":["ትናንት","ዛሬ","ነገ"],"pool":["ትናንት","ዛሬ","ነገ","እሁድ"]},
+{"t":"mc","q":"Pick Saturday","o":["ቅዳሜ","እሁድ","ሰኞ"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ቅዳሜ","o":["ቅዳሜ","እሁድ","ነገ"],"a":0}
+]},
+{"id":"am_n4_4","title":"The weekend in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቅዳሜ","Saturday"],["እሁድ","Sunday"],["ዛሬ","today"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ","o":["ዛሬ","ነገ","ትናንት"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነገ","tomorrow"],["ትናንት","yesterday"]]},
+{"t":"mc","q":"ዛሬ እሁድ ነው means…","o":["today is Sunday","tomorrow is Sunday","Sunday was yesterday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"እሁድ","o":["እሁድ","ቅዳሜ","ዛሬ"],"a":0}
+]},
+{"id":"am_n4_5","title":"Checkpoint: the weekend","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እሁድ means…","o":["Sunday","Saturday","Friday"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት","o":["ትናንት","ዛሬ","ነገ"],"a":0},
+{"t":"mc","q":"Which one means tomorrow?","o":["ነገ","ዛሬ","ትናንት"],"a":0},
+{"t":"mc","q":"Review — ማክሰኞ means…","o":["Tuesday","Monday","Thursday"],"a":0},
+{"t":"li","q":"Which day do you hear?","say":"ነገ","o":["ነገ","እሁድ","ትናንት"],"a":0}
+]},
+
+/* ---------- n5 · What time is it? ---------- */
+{"id":"am_n5","title":"What time is it?","step":"learn","meta":"Sint se-at new — and the polite opener","vocab":[["ሰዓት","se-at","hour · time · watch"],["ስንት","sint","how many · how much"],["ስንት ሰዓት ነው?","sint se-at new?","what time is it?"],["ይቅርታ","yikirta","excuse me · sorry"]],"ex":[
+{"t":"note","tag":"The time words","q":"ሰዓት and ስንት","body":"<p><b>ሰዓት</b> <i>se-at</i> is <i>hour</i>, <i>time</i> and <i>watch</i> in one word. <b>ስንት</b> <i>sint</i> — <i>how many?</i> — is about to become one of your most used words: it asks times today and prices next week.</p>","eg":[["ሰዓት","se-at","hour · time · watch"],["ስንት","sint","how many · how much"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ስንት"],"a":0},
+{"t":"mc","q":"ስንት asks…","o":["how many","what kind","which one"],"a":0},
+{"t":"note","tag":"The question","q":"ስንት ሰዓት ነው?","body":"<p>Put them together: <b>ስንት ሰዓት ነው?</b> <i>sint se-at new?</i> — <i>what time is it?</i> — literally how-many hour is-it. The ነው engine keeps running everything.</p>","eg":[["ስንት ሰዓት ነው?","sint se-at new?","what time is it?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ሰዓት ነው?","o":["ስንት ሰዓት ነው?","ሰዓት"],"a":0},
+{"t":"mc","q":"ስንት ሰዓት ነው? literally asks…","o":["how many hour is it","which hour comes","is there time"],"a":0},
+{"t":"note","tag":"Approaching a stranger","q":"ይቅርታ","body":"<p><b>ይቅርታ</b> <i>yikirta</i> — <i>excuse me</i>, also <i>sorry</i>. The polite key that opens a stranger: ይቅርታ, ስንት ሰዓት ነው? — excuse me, what time is it?</p>","eg":[["ይቅርታ","yikirta","excuse me · sorry"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት"],"a":0},
+{"t":"mc","q":"ይቅርታ opens…","o":["a polite request to a stranger","a meal","an argument"],"a":0}
+]},
+{"id":"am_n5_2","title":"Hearing the time question","step":"recognize","meta":"Clock talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ስንት","o":["ስንት","ሰዓት","ይቅርታ"],"a":0},
+{"t":"mc","q":"What does ሰዓት mean?","o":["hour · time · watch","minute","day"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ሰዓት ነው?","o":["ስንት ሰዓት ነው?","ይቅርታ","ሰዓት"],"a":0},
+{"t":"mc","q":"Which one means excuse me?","o":["ይቅርታ","ስንት","ነው"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት ሰዓት ነው?","ሰዓት"],"a":0},
+{"t":"mc","q":"ስንት will return next zone to ask about…","o":["prices","names","weather"],"a":0}
+]},
+{"id":"am_n5_3","title":"Building the time question","step":"build","meta":"Polite, then precise","vocab":[],"ex":[
+{"t":"wb","q":"Build: what time is it?","a":["ስንት","ሰዓት","ነው?"],"pool":["ስንት","ሰዓት","ነው?","ይቅርታ"]},
+{"t":"mc","q":"Pick the polite opener","o":["ይቅርታ","ስንት","ዛሬ"],"a":0},
+{"t":"wb","q":"Build: excuse me, what time is it?","a":["ይቅርታ","ስንት","ሰዓት","ነው?"],"pool":["ይቅርታ","ስንት","ሰዓት","ነው?","ዛሬ"]},
+{"t":"mc","q":"Pick the word for hour","o":["ሰዓት","ስንት","ነው"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ሰዓት ነው?","o":["ስንት ሰዓት ነው?","ሰዓት","ይቅርታ"],"a":0}
+]},
+{"id":"am_n5_4","title":"The time question in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰዓት","hour · time"],["ስንት","how many"],["ይቅርታ","excuse me"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ስንት","ይቅርታ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስንት ሰዓት ነው?","what time is it?"],["ማን ነው?","who is it?"]]},
+{"t":"mc","q":"Stopping a stranger on Churchill Avenue, you begin…","o":["ይቅርታ","እሺ","ቻው"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስንት","o":["ስንት","ሰዓት","ነገ"],"a":0}
+]},
+{"id":"am_n5_5","title":"Checkpoint: the time question","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ስንት ሰዓት ነው? means…","o":["what time is it?","how many days?","what day is it?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
+{"t":"mc","q":"ሰዓት covers hour, time and…","o":["watch","minute","calendar"],"a":0},
+{"t":"mc","q":"Review — ዛሬ means…","o":["today","tomorrow","now"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ይቅርታ","ስንት"],"a":0}
+]},
+
+/* ---------- n6 · The Ethiopian clock ---------- */
+{"id":"am_n6","title":"The Ethiopian clock","step":"learn","meta":"The day starts at sunrise — recount everything","vocab":[["ሀበሻ ሰዓት","habesha se-at","Ethiopian time"],["ፈረንጅ ሰዓት","ferenj se-at","European time"],["ጠዋት","tewat","morning"],["ማታ","mata","evening"]],"ex":[
+{"t":"note","tag":"The big secret","q":"The clock starts at sunrise","body":"<p>Ethiopia counts hours from SUNRISE, not midnight. One o&rsquo;clock — <i>and se-at</i> — is 7:00 in the morning; two is 8:00; noon is SIX. It is beautifully logical near the equator, where the sun rises at the same hour year-round — and it catches every visitor once.</p>","eg":[["ጠዋት","tewat","morning"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ዛሬ"],"a":0},
+{"t":"mc","q":"One o&rsquo;clock Ethiopian time is…","o":["7:00 in the morning","1:00 after midnight","noon"],"a":0},
+{"t":"note","tag":"Naming the two clocks","q":"ሀበሻ ሰዓት vs ፈረንጅ ሰዓት","body":"<p>When arranging anything, Ethiopians ask which clock: <b>ሀበሻ ሰዓት</b> <i>habesha se-at</i> — <i>Ethiopian time</i> — or <b>ፈረንጅ ሰዓት</b> <i>ferenj se-at</i> — <i>foreigner time</i>. Always confirm. A meeting at two can be 8 AM or 2 PM depending on the answer.</p>","eg":[["ሀበሻ ሰዓት","habesha se-at","Ethiopian time"],["ፈረንጅ ሰዓት","ferenj se-at","European time"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ፈረንጅ ሰዓት"],"a":0},
+{"t":"mc","q":"Before any appointment, you confirm…","o":["habesha or ferenj time","the weather","the address twice"],"a":0},
+{"t":"note","tag":"Morning and evening","q":"ጠዋት and ማታ","body":"<p><b>ጠዋት</b> <i>tewat</i> — <i>morning</i> — and <b>ማታ</b> <i>mata</i> — <i>evening</i>. Ethiopians attach them to hours to remove doubt: tewat two o&rsquo;clock (8 AM), mata two o&rsquo;clock (8 PM).</p>","eg":[["ማታ","mata","evening"]]},
+{"t":"li","q":"Morning or evening — which do you hear?","say":"ማታ","o":["ማታ","ጠዋት"],"a":0},
+{"t":"mc","q":"ማታ means…","o":["evening","morning","midnight"],"a":0}
+]},
+{"id":"am_n6_2","title":"Hearing the two clocks","step":"recognize","meta":"Sunrise counting by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ፈረንጅ ሰዓት","o":["ፈረንጅ ሰዓት","ሀበሻ ሰዓት","ሰዓት"],"a":0},
+{"t":"mc","q":"What does ሀበሻ ሰዓት mean?","o":["Ethiopian time","holy time","old time"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ማታ","ዛሬ"],"a":0},
+{"t":"mc","q":"Noon in Ethiopian counting is…","o":["six o&rsquo;clock","twelve o&rsquo;clock","one o&rsquo;clock"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማታ","o":["ማታ","ጠዋት","ሀበሻ ሰዓት"],"a":0},
+{"t":"mc","q":"The system is logical near the equator because…","o":["sunrise barely moves all year","days are longer","clocks are rare"],"a":0}
+]},
+{"id":"am_n6_3","title":"Building the two clocks","step":"build","meta":"Convert without fear","vocab":[],"ex":[
+{"t":"wb","q":"Build: Ethiopian time","a":["ሀበሻ","ሰዓት"],"pool":["ሀበሻ","ሰዓት","ፈረንጅ"]},
+{"t":"mc","q":"8:00 in the morning, Ethiopian style, is hour…","o":["ሁለት","ስምንት","አራት"],"a":0},
+{"t":"wb","q":"Build: European time","a":["ፈረንጅ","ሰዓት"],"pool":["ፈረንጅ","ሰዓት","ሀበሻ"]},
+{"t":"mc","q":"10:00 in the morning, Ethiopian style, is hour…","o":["አራት","አስር","ሁለት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ፈረንጅ ሰዓት","ጠዋት"],"a":0}
+]},
+{"id":"am_n6_4","title":"The two clocks in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሀበሻ ሰዓት","Ethiopian time"],["ፈረንጅ ሰዓት","European time"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ማታ","ሰዓት"],"a":0},
+{"t":"match","q":"Match the hour (Ethiopian → Western)","pairs":[["አንድ ሰዓት","7:00"],["ስድስት ሰዓት","noon"],["ሁለት ሰዓት","8:00"]]},
+{"t":"mc","q":"Meet at two, mata — in Western terms that is…","o":["8 PM","2 PM","2 AM"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማታ","o":["ማታ","ጠዋት","ፈረንጅ ሰዓት"],"a":0}
+]},
+{"id":"am_n6_5","title":"Checkpoint: the two clocks","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"The Ethiopian day is counted from…","o":["sunrise","midnight","noon"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ፈረንጅ ሰዓት","o":["ፈረንጅ ሰዓት","ሀበሻ ሰዓት","ማታ"],"a":0},
+{"t":"mc","q":"ጠዋት means…","o":["morning","evening","sunrise"],"a":0},
+{"t":"mc","q":"Review — ስንት ሰዓት ነው? asks…","o":["what time is it?","which day is it?","how far is it?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ጠዋት","ፈረንጅ ሰዓት"],"a":0}
+]},
+
+/* ---------- n7 · Week, month, year ---------- */
+{"id":"am_n7","title":"Week, month, year","step":"learn","meta":"Samint, wer, amet — and thirteen months of sunshine","vocab":[["ሳምንት","samint","week"],["ወር","wer","month"],["ዓመት","amet","year"],["ዛሬ ሰኞ ነው","zare sanyo new","today is Monday"]],"ex":[
+{"t":"note","tag":"The bigger circles","q":"ሳምንት, ወር, ዓመት","body":"<p><b>ሳምንት</b> <i>samint</i> — <i>week</i>; <b>ወር</b> <i>wer</i> — <i>month</i>; <b>ዓመት</b> <i>amet</i> — <i>year</i>. Time&rsquo;s three biggest everyday circles.</p>","eg":[["ሳምንት","samint","week"],["ወር","wer","month"],["ዓመት","amet","year"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሳምንት","o":["ሳምንት","ወር"],"a":0},
+{"t":"mc","q":"ዓመት means…","o":["year","month","week"],"a":0},
+{"t":"note","tag":"Thirteen months of sunshine","q":"The Ethiopian calendar","body":"<p>Ethiopia keeps its own calendar: twelve months of thirty days plus a five-day thirteenth month, Pagume — the tourist slogan calls it thirteen months of sunshine. The year runs seven to eight years behind the Western count, and New Year falls in September. Recognize it; no arithmetic required.</p>","eg":[["ወር","wer","month"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወር","o":["ወር","ዓመት"],"a":0},
+{"t":"mc","q":"The thirteenth month is called…","o":["Pagume","Meskerem","Ferenj"],"a":0},
+{"t":"note","tag":"Saying the date out loud","q":"ዛሬ ሰኞ ነው","body":"<p>Day words meet the ነው engine: <b>ዛሬ ሰኞ ነው</b> <i>zare sanyo new</i> — <i>today is Monday</i>. Swap in any day; the frame holds.</p>","eg":[["ዛሬ ሰኞ ነው","zare sanyo new","today is Monday"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ሳምንት"],"a":0},
+{"t":"mc","q":"ዛሬ ሰኞ ነው means…","o":["today is Monday","Monday is tomorrow","last Monday"],"a":0}
+]},
+{"id":"am_n7_2","title":"Hearing the circles","step":"recognize","meta":"Week to year by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ዓመት","o":["ዓመት","ወር","ሳምንት"],"a":0},
+{"t":"mc","q":"What does ሳምንት mean?","o":["week","month","year"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወር","o":["ወር","ዓመት","ሰዓት"],"a":0},
+{"t":"mc","q":"Which one means year?","o":["ዓመት","ወር","ሳምንት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ዓመት","ወር"],"a":0},
+{"t":"mc","q":"Ethiopian New Year falls in…","o":["September","January","June"],"a":0}
+]},
+{"id":"am_n7_3","title":"Building the circles","step":"build","meta":"Time, assembled","vocab":[],"ex":[
+{"t":"wb","q":"Build the circles small to big: week, month, year","a":["ሳምንት","ወር","ዓመት"],"pool":["ሳምንት","ወር","ዓመት","ሰዓት"]},
+{"t":"mc","q":"Pick the word for month","o":["ወር","ዓመት","ሳምንት"],"a":0},
+{"t":"wb","q":"Build: today is Monday","a":["ዛሬ","ሰኞ","ነው"],"pool":["ዛሬ","ሰኞ","ነው","ነገ"]},
+{"t":"mc","q":"Pick the word for week","o":["ሳምንት","ወር","ሰዓት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሳምንት","o":["ሳምንት","ዓመት","ወር"],"a":0}
+]},
+{"id":"am_n7_4","title":"The circles in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሳምንት","week"],["ወር","month"],["ዓመት","year"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ሳምንት","ዓመት"],"a":0},
+{"t":"match","q":"Match the frame","pairs":[["ዛሬ ሰኞ ነው","today is Monday"],["ዛሬ እሁድ ነው","today is Sunday"]]},
+{"t":"mc","q":"Thirteen months of sunshine refers to…","o":["the Ethiopian calendar","the rainy season","daylight saving"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዓመት","o":["ዓመት","ሳምንት","ወር"],"a":0}
+]},
+{"id":"am_n7_5","title":"Checkpoint: Zone 4 complete","step":"checkpoint","meta":"Numbers, days and the clock — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ወር means…","o":["month","week","year"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ወር","ሳምንት"],"a":0},
+{"t":"mc","q":"Review — one o&rsquo;clock habesha se-at is…","o":["7:00 AM","1:00 AM","11:00 AM"],"a":0},
+{"t":"mc","q":"Review — which one is eight?","o":["ስምንት","ሰባት","ዘጠኝ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
+{"t":"mc","q":"Review — the market day is…","o":["ቅዳሜ","ሰኞ","ረቡዕ"],"a":0},
+{"t":"mc","q":"Review — ነገ means…","o":["tomorrow","yesterday","today"],"a":0}
 ]}
 ];
 
@@ -914,9 +1208,11 @@ const AM_UNITS=[
 {"n":2,"t":"Greetings and people","d":"Dehna neh and dehna nesh, names, the polite you — and thank you","lessons":["am_g1","am_g1_2","am_g1_3","am_g1_4","am_g1_5","am_g2","am_g2_2","am_g2_3","am_g2_4","am_g2_5","am_g3","am_g3_2","am_g3_3","am_g3_4","am_g3_5","am_g4","am_g4_2","am_g4_3","am_g4_4","am_g4_5","am_g5","am_g5_2","am_g5_3","am_g5_4","am_g5_5","am_g6","am_g6_2","am_g6_3","am_g6_4","am_g6_5","am_g7","am_g7_2","am_g7_3","am_g7_4","am_g7_5"]}
 ,
 {"n":3,"t":"Family and respect","d":"The household, the owner endings — and honor woven into address","lessons":["am_f1","am_f1_2","am_f1_3","am_f1_4","am_f1_5","am_f2","am_f2_2","am_f2_3","am_f2_4","am_f2_5","am_f3","am_f3_2","am_f3_3","am_f3_4","am_f3_5","am_f4","am_f4_2","am_f4_3","am_f4_4","am_f4_5","am_f5","am_f5_2","am_f5_3","am_f5_4","am_f5_5","am_f6","am_f6_2","am_f6_3","am_f6_4","am_f6_5","am_f7","am_f7_2","am_f7_3","am_f7_4","am_f7_5"]}
+,
+{"n":4,"t":"Numbers, days and the Ethiopian clock","d":"Counting, the week — and the day that starts at sunrise","lessons":["am_n1","am_n1_2","am_n1_3","am_n1_4","am_n1_5","am_n2","am_n2_2","am_n2_3","am_n2_4","am_n2_5","am_n3","am_n3_2","am_n3_3","am_n3_4","am_n3_5","am_n4","am_n4_2","am_n4_3","am_n4_4","am_n4_5","am_n5","am_n5_2","am_n5_3","am_n5_4","am_n5_5","am_n6","am_n6_2","am_n6_3","am_n6_4","am_n6_5","am_n7","am_n7_2","am_n7_3","am_n7_4","am_n7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት"};
 
 const AM_SRS_SEED=[];
 
