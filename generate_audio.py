@@ -170,7 +170,7 @@ SPEAK_AS = {
     "my": {"ဎ": "ဒရေမှုတ်"},
     # am: the bare 6th-order vowel alone is nearly inaudible (peak 0.06) —
     # speak it as እህ ("ih", peak 0.35) so the alphabet tile is hearable
-    "am": {"እ": "እህ"},
+    "am": {"እ": "እህ", "ሀ": "ሀህ", "ፀ": "ፀህ"},
 }
 
 
