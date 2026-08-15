@@ -25,16 +25,16 @@ LASTMOD_DB = '.lastmod.json'
 # slug + the Google-Fonts family for each script (None = covered by Plus Jakarta)
 SLUG = {'ne':'nepali','km':'khmer','my':'burmese','bn':'bengali','si':'sinhala',
         'lo':'lao','ps':'pashto','mn':'mongolian','ur':'urdu','uz':'uzbek','jv':'javanese',
-        'xh':'xhosa'}
+        'xh':'xhosa','am':'amharic'}
 SCRIPT_FONT = {'ne':'Noto Sans Devanagari','km':'Noto Sans Khmer','my':'Noto Sans Myanmar',
                'bn':'Noto Sans Bengali','si':'Noto Sans Sinhala','lo':'Noto Sans Lao',
-               'ps':'Noto Sans Arabic','ur':'Noto Nastaliq Urdu'}
+               'ps':'Noto Sans Arabic','ur':'Noto Nastaliq Urdu','am':'Noto Sans Ethiopic'}
 RTL = {'ps','ur'}
 # what each course calls its writing system, for the alphabet heading + copy
 SCRIPT_NAME = {'ne':'Devanagari script','km':'Khmer script','my':'Burmese script',
                'bn':'Bengali script','si':'Sinhala script','lo':'Lao script',
                'ps':'Pashto (Perso-Arabic) script','mn':'Mongolian Cyrillic alphabet',
-               'ur':'Urdu (Nastaliq) script'}
+               'ur':'Urdu (Nastaliq) script','am':'Ethiopic (fidel) script'}
 
 
 def esc(s):

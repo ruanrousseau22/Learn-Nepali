@@ -1,146 +1,158 @@
 {
  "https://bhasaly.com/": [
-  "fc579ec2662525aea7d59d2120c538401be2315566dd2ac2b6ad9948614f906f",
-  "2026-08-14"
+  "4eb261df232eecc377be6526066eefc37a2222b972496a4bf4569d4655e4264b",
+  "2026-08-15"
+ ],
+ "https://bhasaly.com/amharic-alphabet": [
+  "37c0e903c04e8705c62d27ed7de70611386b34273588bd8b4baadc7c9d73cc90",
+  "2026-08-15"
+ ],
+ "https://bhasaly.com/amharic-phrases": [
+  "50a5eb33ee33717cbe7f9bbe3cb65a831fdf40b471956b6cc67460b01053fa7c",
+  "2026-08-15"
  ],
  "https://bhasaly.com/bengali-alphabet": [
-  "39d82c4f3f7e67c1259b6d158d42658f9a022d6ad660e2dbf2c3e262ef8b07f5",
-  "2026-08-14"
+  "f680ce14a21ce63599474cc3a9b6930c7f1ce3da8898f82497956c9ca9bfccf5",
+  "2026-08-15"
  ],
  "https://bhasaly.com/bengali-phrases": [
-  "28e2f613c6a539cc538f2c5668211402f15bb48136537701fd00cf211d377c66",
-  "2026-08-14"
+  "4afd100f1b13fc0211e779e55c81a3717b6bed3afe8eb432cba26a946b631d43",
+  "2026-08-15"
  ],
  "https://bhasaly.com/burmese-alphabet": [
-  "bf103dc26cb7f2c688b69aef0d61f5da7ad2c098207fdf7af4560aa0c764617f",
-  "2026-08-14"
+  "0cc042d0f159bfbdef33c206ae7e7b8258502fe3ac45223d658ee30cd08bb697",
+  "2026-08-15"
  ],
  "https://bhasaly.com/burmese-phrases": [
-  "15445c0248efc8ce8fd43e537d06b5ff432a93000b2981bdc2df465ca6f6053e",
-  "2026-08-14"
+  "863a182ca5cdd35898faeb0346658c2bff95cfe34d5f036b63f61e98a4fc2b08",
+  "2026-08-15"
  ],
  "https://bhasaly.com/javanese-phrases": [
-  "58b3b7a9909e33a83553a728f651da13f3e8edfb5dc350787780d46c30247671",
-  "2026-08-14"
+  "eaea521fb0b4a732380ae8d511a123de5d1d67e78c7d78258c3bfc3660cc9bac",
+  "2026-08-15"
  ],
  "https://bhasaly.com/khmer-alphabet": [
-  "8b20dbd38c1ac716941e4a6dc202a044d017e9121cad1ea578b35aebe49729cf",
-  "2026-08-14"
+  "2c3bd990de68a10a33c147d72c1642759c275959eacd77d05f06e01cb5658294",
+  "2026-08-15"
  ],
  "https://bhasaly.com/khmer-phrases": [
-  "5585da97cb9fc7a0e6d95aa09fa64b5492661329f097aea8026a96119ece9664",
-  "2026-08-14"
+  "16bba8ddd33a0072d63b6fac4dcfbfa832b15697c156dc7dc9d93cc4539e371d",
+  "2026-08-15"
  ],
  "https://bhasaly.com/lao-alphabet": [
-  "633b07dee91a1c96bfd391ff8078ee1ae51b64495735a31be713f8375f74d146",
-  "2026-08-14"
+  "f6327a2b760c3d780b4822e395753b74fd9971bd9f7d2796a739b7e7d1e0f3db",
+  "2026-08-15"
  ],
  "https://bhasaly.com/lao-phrases": [
-  "28b627d72ab7d70b40be9d311dc29778aee8120a8364e87382531dd9eae565da",
-  "2026-08-14"
+  "45acae7e42b1e3a4bced2ecd756704974647833eb660f1fc98cc39d98993ac72",
+  "2026-08-15"
+ ],
+ "https://bhasaly.com/learn-amharic": [
+  "a24e2eb61b0437f60a7d79f90abf6ba86f0df2f2489f5ed4daaf542774cc0531",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-bengali": [
-  "59564cb656844830e8c8a55d2c80d56131dfb704ffe81b915f539dc63d04e94a",
-  "2026-08-14"
+  "40a2a9af5561f3e65b2cbe3b0734f973f2f9967e1a79a7615922bd4129e8c76e",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-burmese": [
-  "1611d5606ec8a6ebce1785f274d54302e2df33f8d1fdc2e22bbbf29430a543d0",
-  "2026-08-14"
+  "519dbb39dc45de4d93f96f996269c92f6501cf5a1618dab62c0c1a44ebef1f6a",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-javanese": [
-  "16fa12befadfb3a6ee3680435f48e80345d030da29386868072de7e36e615dcc",
-  "2026-08-14"
+  "5e3a6ac7baedc50dee70faa33ec5d886914b2337b8328093b0b618600e12b326",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-khmer": [
-  "1588b4fb3aa8c59308b3c6387b936e159d1a19fb93cd95d73c23492b26058024",
-  "2026-08-14"
+  "878acc7642e82f031ef96889c66504da63f4333c8747d3720b60ea9ea19db304",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-lao": [
-  "740c3b3eac90370d1ea78e8c0104467f628b9d6aafe1e6d2ec222e9c3493a94e",
-  "2026-08-14"
+  "b2795381fe5fc6e1004c1e7daa2a44a2720fcf575e77b1815fde7d29dd84b6ee",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-mongolian": [
-  "01a364d2727e8837ca8dc9795dfadfec243a57f8086e23f4f996f928ad540965",
-  "2026-08-14"
+  "fc763aea30a43a7063f1bd13a6c56aa7245e5e7178c141a23cb86cd3f666078f",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-nepali": [
-  "bdef67ebf5aeaccd85ca7e8893cf7d2117065a7a0f23f86d83eceda261f9cc3a",
-  "2026-08-14"
+  "1d3318816189f1cfaceec7af7bd9338818308c87adcbba1ada02153c150fb66a",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-pashto": [
-  "d5de15ed56638b6b5b9cb51f09202318839094ab155e1a369bfdb1654bdf91d9",
-  "2026-08-14"
+  "226af490067c1f81225090296c8025d24e94247eb875f8a778daa726d22bd7d6",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-sinhala": [
-  "0eae4ac2d497c14ab239db5c7108db459c9b3919141383438d5f92ee5ec209e2",
-  "2026-08-14"
+  "282f9919ad115151e6107bb5d5f34435c73037e1cc78bd0d23b2180465273043",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-urdu": [
-  "bfcde9d80c2ab02d3a090d1d52743396b75538950afd2959957caeea3a7ce894",
-  "2026-08-14"
+  "4c64d31992f014485dc63b136c4f9ca1987e79dfedb973564599883f48968857",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-uzbek": [
-  "aaeffa11d3a49e2bfddf84ce1853b61fcf6a20fad1203d4b87d0f9dbb298174a",
-  "2026-08-14"
+  "c391a4978e95aa3931bdf6fe0332ea3a13f28da012ea79ed82dd04b0bfa64569",
+  "2026-08-15"
  ],
  "https://bhasaly.com/learn-xhosa": [
-  "060a3157f5e288cba21f8876ee2f349db6960b4b31747e9ad8841062ff3bb15b",
-  "2026-08-14"
+  "3a08e002717b553d7b192a2c37d38005939959baa75900b4a6f0236f44c3c942",
+  "2026-08-15"
  ],
  "https://bhasaly.com/mongolian-alphabet": [
-  "f54b2f3e30db454ff70c5410bcecb79912aa8feff29d376ad1d4d08117f4b29b",
-  "2026-08-14"
+  "e8b2f5c909bf0169291c34c205986ae0abb0258e1fa17536fda1001a96025bd9",
+  "2026-08-15"
  ],
  "https://bhasaly.com/mongolian-phrases": [
-  "f9469e7c5dc6496e8be974dae7d36025c92fb1520e4193dc1f1a5f9d23d78f5c",
-  "2026-08-14"
+  "32225a178c71748cf2d5e60f2d529b52101886f4e27e7d84932f3642ae4d5c72",
+  "2026-08-15"
  ],
  "https://bhasaly.com/nepali-alphabet": [
-  "9b95b3dc00b21ce5fdef7e67308e2d139c7fe39c8ca94f7a4440c44fa32005bf",
-  "2026-08-14"
+  "662bbe22c906c875518594de9b9e5cf2fd44fc10a2cc49f0009f8705975e0e88",
+  "2026-08-15"
  ],
  "https://bhasaly.com/nepali-phrases": [
-  "e3e13c9f22206795d6cea7720ca3ba82297cb7f223d6df6f5a3c4a5ca68d9e51",
-  "2026-08-14"
+  "4d9d9250d5b6824779ea6bbc6f99ce5ca0d27c8f316a0b4551607d532a384c8d",
+  "2026-08-15"
  ],
  "https://bhasaly.com/pashto-alphabet": [
-  "392d7b43934ecd371430ba14cae6bb0ab4366e0fad170898ed1d91b23f612d7f",
-  "2026-08-14"
+  "d2345b969b995cedf44110929500dcfa45f8ba3e7d58022cc1490602d57357e1",
+  "2026-08-15"
  ],
  "https://bhasaly.com/pashto-phrases": [
-  "0186128d7dabb0645d488746d20abd93f9448d972727ad791ea7621738571f18",
-  "2026-08-14"
+  "3f7c03368d8cf9c5a25f76ce513ced033b5706d6a73c5c631df7f5bea98080f0",
+  "2026-08-15"
  ],
  "https://bhasaly.com/privacy": [
   "3cb1d35735f854c8d8b259bccb3b4f2e7054ae5236012f5f3cee812793ff09d6",
   "2026-08-02"
  ],
  "https://bhasaly.com/sinhala-alphabet": [
-  "82f96f33522d896c6bbca59386712701b0c74f670c5b328243e2e1cfab3cd39d",
-  "2026-08-14"
+  "fd160393d0a6bf12427b000ca51d77dd672de74b372c3c370990feed5a4ff941",
+  "2026-08-15"
  ],
  "https://bhasaly.com/sinhala-phrases": [
-  "a516fcdbf7518688ad028f983216d51e0aefb59521f4672caf7d0cb6888f71e6",
-  "2026-08-14"
+  "a8f2d39c72fabb020a2f2f88b74099ad8dbd8212d0b5e2781785be17af7f0802",
+  "2026-08-15"
  ],
  "https://bhasaly.com/terms": [
   "c8c691445ebf54dc422f5240d8738eb522c946cf18c02e51f144bd29b49fac81",
   "2026-08-14"
  ],
  "https://bhasaly.com/urdu-alphabet": [
-  "8d4995fe27f15f76ec7fbb9a9caaaabfdf2256ad8a2f1d6e17cb53ff571eba28",
-  "2026-08-14"
+  "9c9a1fe25ec8a9a5d36bdd30fa81053b9b089be6f96672462d89481ea9d770bd",
+  "2026-08-15"
  ],
  "https://bhasaly.com/urdu-phrases": [
-  "9f759a0c20e2d48c0db56c32b8ccb1e0f8085152ac2c618eb7122c0f5d7700cb",
-  "2026-08-14"
+  "343e03b4c929e9dcf06112b34accdc9f59ff66a9b5225d0e2ae2c3b0d7da2584",
+  "2026-08-15"
  ],
  "https://bhasaly.com/uzbek-phrases": [
-  "410b396ed5b858418202f6a63c190db3a1f808b7084ba5f9c205b443616d3e27",
-  "2026-08-14"
+  "53ef657c6a181d69522ef8df13ccfb206569a8bfc6a73f03b0ab8bf489fb06ed",
+  "2026-08-15"
  ],
  "https://bhasaly.com/xhosa-phrases": [
-  "168593f465aaa34eebffb7d2c23e5ab536b4113fd57c71e44ab5b93938af0ade",
-  "2026-08-14"
+  "6520b08b8349b099fec2d4eb3db55a61895cd2aa4aa6c35a579a24aee2667fa4",
+  "2026-08-15"
  ]
 }

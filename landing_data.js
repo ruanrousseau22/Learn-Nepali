@@ -3,7 +3,7 @@
 function run(){
   var rd=function(p){return ObjC.unwrap($.NSString.stringWithContentsOfFileEncodingError(
     $(p).stringByStandardizingPath,$.NSUTF8StringEncoding,null));};
-  var codes=['ne','km','my','bn','si','lo','ps','mn','ur','uz','jv','xh'];
+  var codes=['ne','km','my','bn','si','lo','ps','mn','ur','uz','jv','xh','am'];
   var out=[];
   codes.forEach(function(c){
     var p=null; new Function('registerPack', rd('lang/'+c+'.js'))(function(x){p=x;});
