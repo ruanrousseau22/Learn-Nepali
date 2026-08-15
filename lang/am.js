@@ -1786,6 +1786,300 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
 {"t":"mc","q":"Review — I get up is…","o":["እነሳለሁ","እተኛለሁ","አበስላለሁ"],"a":0},
 {"t":"mc","q":"Review — the famous clay coffee pot is the…","o":["ጀበና","ኩባያ","ሳህን"],"a":0}
+]},
+
+/* ---------- t1 · Places in town ---------- */
+{"id":"am_t1","title":"Places in town","step":"learn","meta":"Menged, suk, gebeya — the map fills in","vocab":[["መንገድ","menged","road · street"],["ሱቅ","suk","shop"],["ገበያ","gebeya","market"],["ትምህርት ቤት","timihirt bet","school"],["ከተማ","ketema","city · town"]],"ex":[
+{"t":"note","tag":"The road and the shop","q":"መንገድ and ሱቅ","body":"<p><b>መንገድ</b> <i>menged</i> — <i>road, street, way</i>. <b>ሱቅ</b> <i>suk</i> — the <i>shop</i>: the kiosk on every corner selling everything from soap to sim cards.</p>","eg":[["መንገድ","menged","road · street"],["ሱቅ","suk","shop"]]},
+{"t":"li","q":"Which one do you hear?","say":"መንገድ","o":["መንገድ","ሱቅ"],"a":0},
+{"t":"mc","q":"ሱቅ means…","o":["shop","road","stall"],"a":0},
+{"t":"note","tag":"The big two","q":"ገበያ and ከተማ","body":"<p><b>ገበያ</b> <i>gebeya</i> — the <i>market</i>, the open-air kind that takes over whole districts. <b>ከተማ</b> <i>ketema</i> — <i>city, town</i>. Addis holds Merkato — often called Africa&rsquo;s largest open-air market.</p>","eg":[["ገበያ","gebeya","market"],["ከተማ","ketema","city · town"]]},
+{"t":"li","q":"Which one do you hear?","say":"ገበያ","o":["ገበያ","ከተማ"],"a":0},
+{"t":"mc","q":"ገበያ means…","o":["market","garage","square"],"a":0},
+{"t":"note","tag":"Bet strikes again","q":"ትምህርት ቤት","body":"<p><b>ትምህርት ቤት</b> <i>timihirt bet</i> — literally <i>learning house</i> — <i>school</i>. The bet-compound machine from Zone 6, still building the town for you.</p>","eg":[["ትምህርት ቤት","timihirt bet","school"]]},
+{"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","መንገድ"],"a":0},
+{"t":"mc","q":"ትምህርት ቤት literally means…","o":["learning house","book place","child house"],"a":0}
+]},
+{"id":"am_t1_2","title":"Hearing the town","step":"recognize","meta":"The map by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሱቅ","o":["ሱቅ","ገበያ","መንገድ"],"a":0},
+{"t":"mc","q":"What does ከተማ mean?","o":["city · town","market","village"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ከተማ","o":["ከተማ","ገበያ","ትምህርት ቤት"],"a":0},
+{"t":"mc","q":"Which one is the market?","o":["ገበያ","ሱቅ","ከተማ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መንገድ","o":["መንገድ","ከተማ","ሱቅ"],"a":0},
+{"t":"mc","q":"Africa&rsquo;s largest open-air market is Addis&rsquo;s…","o":["Merkato","Bole","Piassa"],"a":0}
+]},
+{"id":"am_t1_3","title":"Building the town","step":"build","meta":"Lay out the streets","vocab":[],"ex":[
+{"t":"wb","q":"Build: school (learning + house)","a":["ትምህርት","ቤት"],"pool":["ትምህርት","ቤት","ሱቅ"]},
+{"t":"mc","q":"Pick the word for road","o":["መንገድ","ገበያ","ከተማ"],"a":0},
+{"t":"wb","q":"Build: shop and market","a":["ሱቅ","ገበያ"],"pool":["ሱቅ","ገበያ","ከተማ"]},
+{"t":"mc","q":"Pick the word for city","o":["ከተማ","መንገድ","ሱቅ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ገበያ","o":["ገበያ","ሱቅ","ከተማ"],"a":0}
+]},
+{"id":"am_t1_4","title":"The town in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["መንገድ","road"],["ሱቅ","shop"],["ገበያ","market"]]},
+{"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","ገበያ","ከተማ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ትምህርት ቤት","school"],["ከተማ","city"]]},
+{"t":"mc","q":"Soap and sim cards at midnight come from…","o":["ሱቅ","ገበያ","ትምህርት ቤት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ከተማ","o":["ከተማ","መንገድ","ገበያ"],"a":0}
+]},
+{"id":"am_t1_5","title":"Checkpoint: the town","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"መንገድ means…","o":["road · street","market","corner"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሱቅ","o":["ሱቅ","ከተማ","ገበያ"],"a":0},
+{"t":"mc","q":"Which one means school?","o":["ትምህርት ቤት","መኝታ ቤት","ሽንት ቤት"],"a":0},
+{"t":"mc","q":"Review — ውስጥ comes…","o":["after its noun","before its noun","alone"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","ሱቅ","መንገድ"],"a":0}
+]},
+
+/* ---------- t2 · Going and coming ---------- */
+{"id":"am_t2","title":"Going and coming","step":"learn","meta":"Ihedalehu, imetalehu — and the calls of na","vocab":[["እሄዳለሁ","ihedalehu","I go"],["እመጣለሁ","imetalehu","I come"],["ና","na","come! (to a man)"],["ነይ","ney","come! (to a woman)"]],"ex":[
+{"t":"note","tag":"The motion pair","q":"እሄዳለሁ and እመጣለሁ","body":"<p><b>እሄዳለሁ</b> <i>ihedalehu</i> — <i>I go</i> — and <b>እመጣለሁ</b> <i>imetalehu</i> — <i>I come</i>. The trusty -alehu frame, now in motion.</p>","eg":[["እሄዳለሁ","ihedalehu","I go"],["እመጣለሁ","imetalehu","I come"]]},
+{"t":"li","q":"Going or coming — which do you hear?","say":"እሄዳለሁ","o":["እሄዳለሁ","እመጣለሁ"],"a":0},
+{"t":"mc","q":"እመጣለሁ means…","o":["I come","I go","I stay"],"a":0},
+{"t":"note","tag":"The shortest command","q":"ና and ነይ","body":"<p>Come here in one syllable: <b>ና</b> <i>na</i> to a man, <b>ነይ</b> <i>ney</i> to a woman. You will hear it called across streets, markets and compounds all day.</p>","eg":[["ና","na","come! (to a man)"],["ነይ","ney","come! (to a woman)"]]},
+{"t":"li","q":"To a man or a woman — which do you hear?","say":"ና","o":["ና","ነይ"],"a":0},
+{"t":"mc","q":"ነይ is come! said to…","o":["a woman","a man","a group"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"ነገ እመጣለሁ means…","o":["I will come tomorrow","I came yesterday","come tomorrow!"],"a":0}
+]},
+{"id":"am_t2_2","title":"Hearing the motion","step":"recognize","meta":"Come and go by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እመጣለሁ"],"a":0},
+{"t":"mc","q":"What does እሄዳለሁ mean?","o":["I go","I come","go!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","እሄዳለሁ","ነይ"],"a":0},
+{"t":"mc","q":"Which one means come!, to a man?","o":["ና","ነይ","ሂድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ና","o":["ና","ነይ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"The -alehu on both verbs marks…","o":["I","you","now"],"a":0}
+]},
+{"id":"am_t2_3","title":"Building the motion","step":"build","meta":"Set yourself moving","vocab":[],"ex":[
+{"t":"wb","q":"Build: I will come tomorrow","a":["ነገ","እመጣለሁ"],"pool":["ነገ","እመጣለሁ","እሄዳለሁ"]},
+{"t":"mc","q":"Pick: come! (to a woman)","o":["ነይ","ና","እመጣለሁ"],"a":0},
+{"t":"wb","q":"Build: today I go","a":["ዛሬ","እሄዳለሁ"],"pool":["ዛሬ","እሄዳለሁ","እመጣለሁ"]},
+{"t":"mc","q":"Pick: I go","o":["እሄዳለሁ","እመጣለሁ","ና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሄዳለሁ","o":["እሄዳለሁ","ና","እመጣለሁ"],"a":0}
+]},
+{"id":"am_t2_4","title":"The motion in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እሄዳለሁ","I go"],["እመጣለሁ","I come"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እሄዳለሁ"],"a":0},
+{"t":"match","q":"Match the call to the person","pairs":[["ና","a man"],["ነይ","a woman"]]},
+{"t":"mc","q":"Called across the compound to a boy: …","o":["ና!","ነይ!","እመጣለሁ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","ነይ","እሄዳለሁ"],"a":0}
+]},
+{"id":"am_t2_5","title":"Checkpoint: the motion","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እመጣለሁ means…","o":["I come","I go","come!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ና","o":["ና","ነይ","እመጣለሁ"],"a":0},
+{"t":"mc","q":"Which one means I go?","o":["እሄዳለሁ","እመጣለሁ","ነይ"],"a":0},
+{"t":"mc","q":"Review — ገበያ means…","o":["market","shop","street"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እሄዳለሁ"],"a":0}
+]},
+
+/* ---------- t3 · Where to? ---------- */
+{"id":"am_t3","title":"Where to?","step":"learn","meta":"Wedet — and wede, the little toward","vocab":[["ወዴት","wedet","where to?"],["ወዴት ትሄዳለህ?","wedet tihedaleh?","where are you going? (to a man)"],["ወደ","wede","to · toward"],["ወደ ቤት እሄዳለሁ","wede bet ihedalehu","I am going home"]],"ex":[
+{"t":"note","tag":"The direction question","q":"ወዴት","body":"<p><b>ወዴት</b> <i>wedet</i> — <i>where to?</i> — the yet of location wearing a direction. To a man: <b>ወዴት ትሄዳለህ?</b> <i>wedet tihedaleh?</i> — <i>where are you going?</i> The ti-...-eh wrap is the you-form of the verb you know as ihedalehu.</p>","eg":[["ወዴት","wedet","where to?"],["ወዴት ትሄዳለህ?","wedet tihedaleh?","where are you going? (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወዴት"],"a":0},
+{"t":"mc","q":"ወዴት ትሄዳለህ? asks…","o":["where are you going?","where are you from?","where is it?"],"a":0},
+{"t":"note","tag":"The toward word","q":"ወደ","body":"<p><b>ወደ</b> <i>wede</i> — <i>to, toward</i> — and unlike wist, it goes BEFORE its noun: <b>ወደ ቤት እሄዳለሁ</b> <i>wede bet ihedalehu</i> — <i>I am going (toward) home</i>. Swap the destination, keep the frame.</p>","eg":[["ወደ","wede","to · toward"],["ወደ ቤት እሄዳለሁ","wede bet ihedalehu","I am going home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወደ"],"a":0},
+{"t":"mc","q":"ወደ ገበያ እሄዳለሁ means…","o":["I am going to the market","I came from the market","the market is far"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወደ","o":["ወደ","ወዴት"],"a":0},
+{"t":"mc","q":"ወደ sits…","o":["before its noun","after its noun","at the sentence end"],"a":0}
+]},
+{"id":"am_t3_2","title":"Hearing where-to","step":"recognize","meta":"Directions by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ወዴት","o":["ወዴት","ወደ","የት ነው?"],"a":0},
+{"t":"mc","q":"What does ወደ mean?","o":["to · toward","from","inside"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወዴት ትሄዳለህ?","ወደ"],"a":0},
+{"t":"mc","q":"Which one asks where are you going?","o":["ወዴት ትሄዳለህ?","የት ነው?","ማን ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወደ ቤት እሄዳለሁ","ወዴት"],"a":0},
+{"t":"mc","q":"The ti-…-eh wrap in ትሄዳለህ marks…","o":["you (a man)","I","she"],"a":0}
+]},
+{"id":"am_t3_3","title":"Building where-to","step":"build","meta":"Frame and destination","vocab":[],"ex":[
+{"t":"wb","q":"Build: I am going home","a":["ወደ","ቤት","እሄዳለሁ"],"pool":["ወደ","ቤት","እሄዳለሁ","ወዴት"]},
+{"t":"mc","q":"Pick the toward word","o":["ወደ","ወዴት","ውስጥ"],"a":0},
+{"t":"wb","q":"Build: I am going to the market","a":["ወደ","ገበያ","እሄዳለሁ"],"pool":["ወደ","ገበያ","እሄዳለሁ","ቤት"]},
+{"t":"wb","q":"Build: where are you going? (to a man)","a":["ወዴት","ትሄዳለህ?"],"pool":["ወዴት","ትሄዳለህ?","እሄዳለሁ"]},
+{"t":"li","q":"Which one do you hear?","say":"ወደ","o":["ወደ","ወዴት","ቤት"],"a":0}
+]},
+{"id":"am_t3_4","title":"Where-to in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወዴት","where to?"],["ወደ","to · toward"],["ወደ ቤት እሄዳለሁ","I am going home"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወደ","ወዴት ትሄዳለህ?"],"a":0},
+{"t":"match","q":"Match the little word to its position","pairs":[["ወደ","before the noun"],["ውስጥ","after the noun"]]},
+{"t":"mc","q":"ወዴት ትሄዳለህ? — ወደ ትምህርት ቤት. The man is heading…","o":["to school","to the shop","home"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወዴት","o":["ወዴት","ወደ ቤት እሄዳለሁ","ወደ"],"a":0}
+]},
+{"id":"am_t3_5","title":"Checkpoint: where-to","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ወደ ቤት እሄዳለሁ means…","o":["I am going home","I am at home","come home!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወዴት","ወደ"],"a":0},
+{"t":"mc","q":"ወዴት asks…","o":["where to?","from where?","where is it?"],"a":0},
+{"t":"mc","q":"Review — ና means…","o":["come! (to a man)","go!","wait!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወዴት ትሄዳለህ?","እመጣለሁ"],"a":0}
+]},
+
+/* ---------- t4 · The minibus ---------- */
+{"id":"am_t4","title":"The minibus","step":"learn","meta":"Taksi, weyala — and the shout that stops it","vocab":[["ታክሲ","taksi","minibus taxi"],["ወያላ","weyala","conductor"],["ወራጅ አለ!","weraj alle!","getting off! (someone is descending)"],["ባጃጅ","bajaj","three-wheeler"]],"ex":[
+{"t":"note","tag":"How Addis moves","q":"ታክሲ and ወያላ","body":"<p>In Addis, <b>ታክሲ</b> <i>taksi</i> means the blue-white MINIBUS running fixed routes. Hanging from its door is the <b>ወያላ</b> <i>weyala</i> — the conductor — chanting destinations at speed and collecting fares. Listen for your stop in the chant.</p>","eg":[["ታክሲ","taksi","minibus taxi"],["ወያላ","weyala","conductor"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወያላ","o":["ወያላ","ታክሲ"],"a":0},
+{"t":"mc","q":"The ወያላ&rsquo;s job is…","o":["chanting routes and taking fares","driving","selling tickets at a booth"],"a":0},
+{"t":"note","tag":"The magic shout","q":"ወራጅ አለ!","body":"<p>To get off, shout <b>ወራጅ አለ!</b> <i>weraj alle!</i> — literally <i>there is a descender!</i> — your አለ from Zone 6 stopping traffic. The driver pulls over; you hop out; the chant resumes.</p>","eg":[["ወራጅ አለ!","weraj alle!","getting off! (someone is descending)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ወያላ"],"a":0},
+{"t":"mc","q":"ወራጅ አለ! literally announces…","o":["there is a descender","stop the car","open the door"],"a":0},
+{"t":"note","tag":"The little blue one","q":"ባጃጅ","body":"<p><b>ባጃጅ</b> <i>bajaj</i> — the three-wheeled tuk-tuk (named for its Indian maker) that rules the smaller towns where minibuses thin out. Cheap, loud, everywhere.</p>","eg":[["ባጃጅ","bajaj","three-wheeler"]]},
+{"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ታክሲ"],"a":0},
+{"t":"mc","q":"ባጃጅ means…","o":["the three-wheeler","the big bus","the bicycle"],"a":0}
+]},
+{"id":"am_t4_2","title":"Hearing the ride","step":"recognize","meta":"Street transport by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ታክሲ","o":["ታክሲ","ባጃጅ","ወያላ"],"a":0},
+{"t":"mc","q":"What does ወያላ mean?","o":["conductor","driver","passenger"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ታክሲ","ባጃጅ"],"a":0},
+{"t":"mc","q":"Which one is the three-wheeler?","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ወራጅ አለ!","ታክሲ"],"a":0},
+{"t":"mc","q":"In Addis, ታክሲ usually means…","o":["a fixed-route minibus","a metered cab","a bus"],"a":0}
+]},
+{"id":"am_t4_3","title":"Building the ride","step":"build","meta":"Board, ride, escape","vocab":[],"ex":[
+{"t":"wb","q":"Build the shout: getting off!","a":["ወራጅ","አለ!"],"pool":["ወራጅ","አለ!","ወያላ"]},
+{"t":"mc","q":"Pick the conductor","o":["ወያላ","ታክሲ","ባጃጅ"],"a":0},
+{"t":"wb","q":"Build: I am going to the city by ride words","a":["ወደ","ከተማ","እሄዳለሁ"],"pool":["ወደ","ከተማ","እሄዳለሁ","ታክሲ"]},
+{"t":"mc","q":"Pick the minibus","o":["ታክሲ","ባጃጅ","ወያላ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወያላ","o":["ወያላ","ባጃጅ","ወራጅ አለ!"],"a":0}
+]},
+{"id":"am_t4_4","title":"The ride in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ታክሲ","minibus"],["ወያላ","conductor"],["ባጃጅ","three-wheeler"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ወያላ","ባጃጅ"],"a":0},
+{"t":"match","q":"Match the moment to the phrase","pairs":[["your stop approaches","ወራጅ አለ!"],["the fare is due","ወያላ"]]},
+{"t":"mc","q":"The አለ in ወራጅ አለ is the same አለ as in…","o":["ቡና አለ?","አለ ማን?","ወዴት አለ?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ታክሲ","o":["ታክሲ","ወራጅ አለ!","ወያላ"],"a":0}
+]},
+{"id":"am_t4_5","title":"Checkpoint: the ride","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ወራጅ አለ! means…","o":["getting off!","all aboard!","hurry up!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
+{"t":"mc","q":"Which one chants the destinations?","o":["ወያላ","ታክሲ","ባጃጅ"],"a":0},
+{"t":"mc","q":"Review — ወደ means…","o":["to · toward","from","inside"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ባጃጅ","ታክሲ"],"a":0}
+]},
+
+/* ---------- t5 · Near and far ---------- */
+{"id":"am_t5","title":"Near and far","step":"learn","meta":"Kirb, ruk — walk it or ride it","vocab":[["ቅርብ","kirb","near"],["ሩቅ","ruk","far"],["ቅርብ ነው?","kirb new?","is it near?"],["በጣም ሩቅ ነው","betam ruk new","it is very far"]],"ex":[
+{"t":"note","tag":"The deciding pair","q":"ቅርብ and ሩቅ","body":"<p><b>ቅርብ</b> <i>kirb</i> — <i>near</i> — and <b>ሩቅ</b> <i>ruk</i> — <i>far</i>. Between them they decide every journey: walk it, or wave down a taksi.</p>","eg":[["ቅርብ","kirb","near"],["ሩቅ","ruk","far"]]},
+{"t":"li","q":"Near or far — which do you hear?","say":"ቅርብ","o":["ቅርብ","ሩቅ"],"a":0},
+{"t":"mc","q":"ሩቅ means…","o":["far","near","next"],"a":0},
+{"t":"note","tag":"Asking it","q":"ቅርብ ነው?","body":"<p><b>ቅርብ ነው?</b> <i>kirb new?</i> — <i>is it near?</i> — the ነው question you have built five times already, now saving your legs.</p>","eg":[["ቅርብ ነው?","kirb new?","is it near?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","ቅርብ"],"a":0},
+{"t":"mc","q":"ቅርብ ነው? asks…","o":["is it near?","is it far?","is it open?"],"a":0},
+{"t":"note","tag":"The honest answer","q":"በጣም ሩቅ ነው","body":"<p>And the answer that changes plans: <b>በጣም ሩቅ ነው</b> <i>betam ruk new</i> — <i>it is VERY far</i> — your betam amplifier back on duty. Time to shout for a taksi.</p>","eg":[["በጣም ሩቅ ነው","betam ruk new","it is very far"]]},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?"],"a":0},
+{"t":"mc","q":"በጣም ሩቅ ነው means…","o":["it is very far","it is a little far","it is near enough"],"a":0}
+]},
+{"id":"am_t5_2","title":"Hearing the distance","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሩቅ","o":["ሩቅ","ቅርብ","ቅርብ ነው?"],"a":0},
+{"t":"mc","q":"What does ቅርብ mean?","o":["near","far","here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0},
+{"t":"mc","q":"Which one asks is it near?","o":["ቅርብ ነው?","የት ነው?","ቅርብ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","በጣም ሩቅ ነው","ቅርብ"],"a":0},
+{"t":"mc","q":"ገበያው ሩቅ ነው means the market is…","o":["far","near","closed"],"a":0}
+]},
+{"id":"am_t5_3","title":"Building the distance","step":"build","meta":"Measure before you march","vocab":[],"ex":[
+{"t":"wb","q":"Build: is it near?","a":["ቅርብ","ነው?"],"pool":["ቅርብ","ነው?","ሩቅ"]},
+{"t":"mc","q":"Pick the word for far","o":["ሩቅ","ቅርብ","ወደ"],"a":0},
+{"t":"wb","q":"Build: it is very far","a":["በጣም","ሩቅ","ነው"],"pool":["በጣም","ሩቅ","ነው","ቅርብ"]},
+{"t":"mc","q":"Pick the word for near","o":["ቅርብ","ሩቅ","እዚህ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቅርብ","o":["ቅርብ","ሩቅ","ቅርብ ነው?"],"a":0}
+]},
+{"id":"am_t5_4","title":"The distance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቅርብ","near"],["ሩቅ","far"]]},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0},
+{"t":"match","q":"Match the answer to the action","pairs":[["ቅርብ ነው","walk"],["በጣም ሩቅ ነው","taksi"]]},
+{"t":"mc","q":"ሽንት ቤት ቅርብ ነው? combines which two zones?","o":["home and distance","food and family","time and names"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሩቅ","o":["ሩቅ","ቅርብ","በጣም ሩቅ ነው"],"a":0}
+]},
+{"id":"am_t5_5","title":"Checkpoint: the distance","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቅርብ ነው? asks…","o":["is it near?","is it far?","is it here?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","ሩቅ","በጣም ሩቅ ነው"],"a":0},
+{"t":"mc","q":"Which one means far?","o":["ሩቅ","ቅርብ","እዚያ"],"a":0},
+{"t":"mc","q":"Review — ወራጅ አለ! shouts…","o":["getting off!","speeding up!","full taxi!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0}
+]},
+
+/* ---------- t6 · Lost — and found ---------- */
+{"id":"am_t6","title":"Lost — and found","step":"learn","meta":"Tefahu — the same tefa as the vanishing light","vocab":[["ጠፋሁ","tefahu","I am lost"],["እርዳኝ","irdagn","help me"],["መንገዱ የት ነው?","mengedu yet new?","where is the road?"]],"ex":[
+{"t":"note","tag":"Vanished","q":"ጠፋሁ","body":"<p><b>ጠፋሁ</b> <i>tefahu</i> — <i>I am lost</i> — literally <i>I vanished</i>, the same tefa as mebrat tefa, the vanished light. Say it with a smile and someone WILL walk you home; Ethiopian hospitality does not leave people lost.</p>","eg":[["ጠፋሁ","tefahu","I am lost"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","ወዴት"],"a":0},
+{"t":"mc","q":"ጠፋሁ literally says…","o":["I vanished","I stopped","I arrived"],"a":0},
+{"t":"note","tag":"The direct ask","q":"እርዳኝ","body":"<p><b>እርዳኝ</b> <i>irdagn</i> — <i>help me</i>. With your please attached — እባክህ እርዳኝ — it opens every door in the country.</p>","eg":[["እርዳኝ","irdagn","help me"]]},
+{"t":"li","q":"Which one do you hear?","say":"እርዳኝ","o":["እርዳኝ","ጠፋሁ"],"a":0},
+{"t":"mc","q":"እባክህ እርዳኝ means…","o":["please help me","excuse me sir","I am fine"],"a":0},
+{"t":"note","tag":"The -u that points","q":"መንገዱ የት ነው?","body":"<p><b>መንገዱ የት ነው?</b> <i>mengedu yet new?</i> — <i>where is THE road?</i> That little <b>-u</b> on መንገድ is Amharic&rsquo;s <i>the</i> — glued on the end, like everything else in this language.</p>","eg":[["መንገዱ የት ነው?","mengedu yet new?","where is the road?"]]},
+{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","ጠፋሁ"],"a":0},
+{"t":"mc","q":"The -u on መንገዱ works as…","o":["the","my","a"],"a":0}
+]},
+{"id":"am_t6_2","title":"Hearing the rescue","step":"recognize","meta":"Lost-talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እርዳኝ","o":["እርዳኝ","ጠፋሁ","መንገዱ የት ነው?"],"a":0},
+{"t":"mc","q":"What does ጠፋሁ mean?","o":["I am lost","help me","I am late"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","እርዳኝ","ጠፋሁ"],"a":0},
+{"t":"mc","q":"Which one means help me?","o":["እርዳኝ","ጠፋሁ","ይቅርታ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","መንገዱ የት ነው?","እርዳኝ"],"a":0},
+{"t":"mc","q":"The lost-person opener, politely…","o":["ይቅርታ, ጠፋሁ","ቻው, ጠፋሁ","እሺ, እርዳኝ"],"a":0}
+]},
+{"id":"am_t6_3","title":"Building the rescue","step":"build","meta":"The three-line lifeline","vocab":[],"ex":[
+{"t":"wb","q":"Build: please help me (to a man)","a":["እባክህ","እርዳኝ"],"pool":["እባክህ","እርዳኝ","ጠፋሁ"]},
+{"t":"mc","q":"Pick: I am lost","o":["ጠፋሁ","እርዳኝ","ቅርብ"],"a":0},
+{"t":"wb","q":"Build: where is the road?","a":["መንገዱ","የት","ነው?"],"pool":["መንገዱ","የት","ነው?","ወዴት"]},
+{"t":"mc","q":"Pick: help me","o":["እርዳኝ","ጠፋሁ","ና"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እርዳኝ","o":["እርዳኝ","መንገዱ የት ነው?","ጠፋሁ"],"a":0}
+]},
+{"id":"am_t6_4","title":"The rescue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጠፋሁ","I am lost"],["እርዳኝ","help me"],["መንገዱ የት ነው?","where is the road?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","እርዳኝ","መንገዱ የት ነው?"],"a":0},
+{"t":"match","q":"Match the tefa","pairs":[["ጠፋሁ","I vanished (lost)"],["መብራት ጠፋ","the light vanished"]]},
+{"t":"mc","q":"Lost in Merkato, your full script is…","o":["ይቅርታ, ጠፋሁ — እባክህ እርዳኝ","ቻው — ወራጅ አለ!","እሺ — በቃኝ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","ጠፋሁ","እርዳኝ"],"a":0}
+]},
+{"id":"am_t6_5","title":"Checkpoint: the rescue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እርዳኝ means…","o":["help me","save us","follow me"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","መንገዱ የት ነው?","እርዳኝ"],"a":0},
+{"t":"mc","q":"The -u ending on mengedu means…","o":["the","my","this"],"a":0},
+{"t":"mc","q":"Review — በጣም ሩቅ ነው means…","o":["it is very far","it is very near","it is too late"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","እርዳኝ","ጠፋሁ"],"a":0}
+]},
+
+/* ---------- t7 · Let us go ---------- */
+{"id":"am_t7","title":"Let us go","step":"learn","meta":"Inihid — and the word that slows the world down","vocab":[["እንሂድ","inihid","let us go"],["ቀስ በል","qes bel","slow down (to a man)"],["ቆይ","qoy","wait"]],"ex":[
+{"t":"note","tag":"The rallying cry","q":"እንሂድ","body":"<p><b>እንሂድ</b> <i>inihid</i> — <i>let us go!</i> — cousin of እንብላ, let us eat. The inclusive in- makes plans out of company: come on, all of us, now.</p>","eg":[["እንሂድ","inihid","let us go"]]},
+{"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","እንብላ"],"a":0},
+{"t":"mc","q":"እንሂድ means…","o":["let us go","go away","I am going"],"a":0},
+{"t":"note","tag":"The brake","q":"ቀስ በል","body":"<p><b>ቀስ በል</b> <i>qes bel</i> — <i>slow down, take it easy</i> — said to a man (ቀስ በይ <i>qes bey</i> to a woman). To drivers, to fast talkers, to life. One of Amharic&rsquo;s most useful little levers.</p>","eg":[["ቀስ በል","qes bel","slow down (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","እንሂድ"],"a":0},
+{"t":"mc","q":"ቀስ በል tells someone to…","o":["slow down","speed up","turn around"],"a":0},
+{"t":"note","tag":"The pause button","q":"ቆይ","body":"<p><b>ቆይ</b> <i>qoy</i> — <i>wait</i> — one tight syllable that holds taxis, friends and arguments. ቆይ, ወያላ! — wait, conductor!</p>","eg":[["ቆይ","qoy","wait"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","ቀስ በል"],"a":0},
+{"t":"mc","q":"ቆይ means…","o":["wait","hurry","stop forever"],"a":0}
+]},
+{"id":"am_t7_2","title":"Hearing the go-words","step":"recognize","meta":"Momentum by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","ቆይ","እንሂድ"],"a":0},
+{"t":"mc","q":"What does ቆይ mean?","o":["wait","go","slow"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","ቀስ በል","ቆይ"],"a":0},
+{"t":"mc","q":"Which one means slow down?","o":["ቀስ በል","ቆይ","እንሂድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","እንሂድ","ቀስ በል"],"a":0},
+{"t":"mc","q":"እንሂድ and እንብላ share the in- of…","o":["let us","I will","you all"],"a":0}
+]},
+{"id":"am_t7_3","title":"Building the go-words","step":"build","meta":"Momentum, managed","vocab":[],"ex":[
+{"t":"wb","q":"Build: let us go to the market","a":["ወደ","ገበያ","እንሂድ"],"pool":["ወደ","ገበያ","እንሂድ","ቆይ"]},
+{"t":"mc","q":"Pick: wait","o":["ቆይ","ቀስ በል","ና"],"a":0},
+{"t":"wb","q":"Build: slow down (to a man)","a":["ቀስ","በል"],"pool":["ቀስ","በል","ቆይ"]},
+{"t":"mc","q":"Pick: let us go","o":["እንሂድ","እንብላ","እሄዳለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","ቆይ","ቀስ በል"],"a":0}
+]},
+{"id":"am_t7_4","title":"The go-words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንሂድ","let us go"],["ቀስ በል","slow down"],["ቆይ","wait"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","ቀስ በል","እንሂድ"],"a":0},
+{"t":"match","q":"Match the moment to the word","pairs":[["the bajaj takes a corner too fast","ቀስ በል"],["the taksi starts to leave","ቆይ"]]},
+{"t":"mc","q":"Friends, coffee done, market waiting: …","o":["እንሂድ!","ቆይ!","ጠፋሁ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","እንሂድ","ቆይ"],"a":0}
+]},
+{"id":"am_t7_5","title":"Checkpoint: Zone 7 complete","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
+{"t":"mc","q":"እንሂድ means…","o":["let us go","I am going","go!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","ቆይ","እንሂድ"],"a":0},
+{"t":"mc","q":"Review — the shout that stops the minibus…","o":["ወራጅ አለ!","ቀስ በል!","እንሂድ!"],"a":0},
+{"t":"mc","q":"Review — ወዴት ትሄዳለህ? asks a man…","o":["where he is going","where he is from","when he leaves"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","እርዳኝ","ቆይ"],"a":0},
+{"t":"mc","q":"Review — the three-wheeler is the…","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
+{"t":"mc","q":"Review — ቅርብ means…","o":["near","far","fast"],"a":0}
 ]}
 ];
 
@@ -1801,9 +2095,11 @@ const AM_UNITS=[
 {"n":5,"t":"Food and drink","d":"Injera, the buna ceremony, the wet family — and the gursha","lessons":["am_d1","am_d1_2","am_d1_3","am_d1_4","am_d1_5","am_d2","am_d2_2","am_d2_3","am_d2_4","am_d2_5","am_d3","am_d3_2","am_d3_3","am_d3_4","am_d3_5","am_d4","am_d4_2","am_d4_3","am_d4_4","am_d4_5","am_d5","am_d5_2","am_d5_3","am_d5_4","am_d5_5","am_d6","am_d6_2","am_d6_3","am_d6_4","am_d6_5","am_d7","am_d7_2","am_d7_3","am_d7_4","am_d7_5"]}
 ,
 {"n":6,"t":"Around the home","d":"Bet builds every room — plus where-is-it and the home verbs","lessons":["am_h1","am_h1_2","am_h1_3","am_h1_4","am_h1_5","am_h2","am_h2_2","am_h2_3","am_h2_4","am_h2_5","am_h3","am_h3_2","am_h3_3","am_h3_4","am_h3_5","am_h4","am_h4_2","am_h4_3","am_h4_4","am_h4_5","am_h5","am_h5_2","am_h5_3","am_h5_4","am_h5_5","am_h6","am_h6_2","am_h6_3","am_h6_4","am_h6_5","am_h7","am_h7_2","am_h7_3","am_h7_4","am_h7_5"]}
+,
+{"n":7,"t":"Getting around","d":"The minibus and its weyala, where-to, near and far — and weraj alle!","lessons":["am_t1","am_t1_2","am_t1_3","am_t1_4","am_t1_5","am_t2","am_t2_2","am_t2_3","am_t2_4","am_t2_5","am_t3","am_t3_2","am_t3_3","am_t3_4","am_t3_5","am_t4","am_t4_2","am_t4_3","am_t4_4","am_t4_5","am_t5","am_t5_2","am_t5_3","am_t5_4","am_t5_5","am_t6","am_t6_2","am_t6_3","am_t6_4","am_t6_5","am_t7","am_t7_2","am_t7_3","am_t7_4","am_t7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ"};
 
 const AM_SRS_SEED=[];
 
