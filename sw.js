@@ -17,7 +17,7 @@
  *
  * Bump CACHE_VERSION to invalidate everything.
  */
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const SHELL  = 'bhasaly-shell-' + CACHE_VERSION;
 const STATIC = 'bhasaly-static-' + CACHE_VERSION;
 const AUDIO  = 'bhasaly-audio-' + CACHE_VERSION;
