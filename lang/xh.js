@@ -3997,18 +3997,20 @@ const XH_BAND='<circle class="orb-glow" cx="1050" cy="54" r="32"/><circle class=
 +'<g transform="translate(1085,157.7) scale(0.26)" aria-hidden="true">'+XH_ALOE+'</g>'
 +'<g transform="translate(1128,154) scale(0.3)" aria-hidden="true">'+XH_HUT+'</g>';
 function XH_MASCOT(m){
-  /* blue crane in the house BUST form — a big head fills the frame, chest
-     rises from the bottom edge (matches the yeti/buffalo/elephant form). */
-  var base='<path d="M13 64 Q13 46 22 39 Q32 33 42 39 Q51 46 51 64 Z" fill="#8FA6BC"/>' /* chest */
-  +'<path d="M44 58 Q54 53 57 46 Q50 48 44 52 Z" fill="#7C93AB"/>' /* wing plume */
-  +'<circle cx="32" cy="24" r="15" fill="#A9BDD1"/>' /* head */
-  +'<path d="M19 14.5 Q32 4.5 45 14.5 Q32 9.5 19 14.5 Z" fill="#EDEFF2"/>' /* pale crown */
-  +'<path d="M30 34.5 L48.5 41.5 L31.5 40.5 Q28.8 37.5 30 34.5 Z" fill="#C2A15A"/>' /* bill, in profile */
-  +'<path d="M30 34.5 L48.5 41.5 L40 40.9" fill="none" stroke="#A8874A" stroke-width="0.8"/>'; /* bill line */
+  /* blue crane, house BUST form: pale crown, the species' bulbous cheeks,
+     a clear front-on beak, chest with the trailing wing plumes. Expressions
+     live in the eyes (birds don't smile) — cheer closes them, oops tears. */
+  var base='<path d="M16 61 Q7 52 10 41 Q14 50 20 56 Z" fill="#7C93AB"/><path d="M48 61 Q57 52 54 41 Q50 50 44 56 Z" fill="#7C93AB"/>' /* trailing plumes */
+  +'<path d="M13 64 Q13 47 22 40 Q32 34 42 40 Q51 47 51 64 Z" fill="#8FA6BC"/>' /* chest */
+  +'<ellipse cx="19.5" cy="26" rx="5.2" ry="6.8" fill="#B9C9DA"/><ellipse cx="44.5" cy="26" rx="5.2" ry="6.8" fill="#B9C9DA"/>' /* cheek bulges */
+  +'<circle cx="32" cy="23" r="14.5" fill="#A9BDD1"/>' /* head */
+  +'<path d="M18.5 17 Q32 5 45.5 17 Q32 11 18.5 17 Z" fill="#EDEFF2"/>' /* pale crown */
+  +'<path d="M27.5 33.5 L36.5 33.5 L32 45.5 Z" fill="#C9A64F"/><path d="M32 34.5 L32 43.5" stroke="#A8874A" stroke-width="1" stroke-linecap="round"/>' /* beak */
+  +'<circle cx="21" cy="31" r="2.6" fill="var(--crimson)" opacity="0.15"/><circle cx="43" cy="31" r="2.6" fill="var(--crimson)" opacity="0.15"/>'; /* blush */
   var f;
-  if(m==='cheer')f='<path d="M21.5 22.5 Q25 19.3 28.5 22.5" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M35.5 22.5 Q39 19.3 42.5 22.5" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M27.5 31 Q32 34.2 36.5 31" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
-  else if(m==='oops')f='<path d="M21.5 19.5 Q25 18.3 28.5 19.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><path d="M35.5 19.5 Q39 18.3 42.5 19.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="23" r="2.3" fill="#3E4750"/><circle cx="39" cy="23" r="2.3" fill="#3E4750"/><path d="M28.5 32.5 Q32 30.2 35.5 32.5" fill="none" stroke="#3E4750" stroke-width="1.8" stroke-linecap="round"/><path d="M49 15 Q51.5 20 49 22 Q46.5 20 49 15 Z" fill="#7EC8E3" opacity=".85"/>';
-  else f='<circle cx="25" cy="23" r="2.6" fill="#3E4750"/><circle cx="39" cy="23" r="2.6" fill="#3E4750"/><circle cx="25.9" cy="22.1" r="0.7" fill="#fff"/><circle cx="39.9" cy="22.1" r="0.7" fill="#fff"/><path d="M28 31 Q32 33.8 36 31" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
+  if(m==='cheer')f='<path d="M21.5 25 Q25.5 21 29.5 25" fill="none" stroke="#3E4750" stroke-width="2.4" stroke-linecap="round"/><path d="M34.5 25 Q38.5 21 42.5 25" fill="none" stroke="#3E4750" stroke-width="2.4" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M21.5 21 Q25 19.8 28.5 21" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><path d="M35.5 21 Q39 19.8 42.5 21" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="25" r="2.3" fill="#3E4750"/><circle cx="39" cy="25" r="2.3" fill="#3E4750"/><path d="M46 30 Q48.5 35 46 37 Q43.5 35 46 30 Z" fill="#7EC8E3" opacity=".85"/>';
+  else f='<circle cx="25" cy="25" r="2.8" fill="#3E4750"/><circle cx="39" cy="25" r="2.8" fill="#3E4750"/><circle cx="26" cy="24" r="0.9" fill="#fff"/><circle cx="40" cy="24" r="0.9" fill="#fff"/>';
   return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 
 /* ---------- Short-term (trip) pack — a visitor to Cape Town / the Eastern
