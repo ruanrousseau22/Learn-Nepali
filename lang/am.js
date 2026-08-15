@@ -2960,6 +2960,296 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
 {"t":"mc","q":"Review — take the medicine is…","o":["መድሃኒት ውሰድ","ውሃ ጠጣ","ተቀመጥ"],"a":0},
 {"t":"mc","q":"Review — ጤና hides inside…","o":["ጤና ይስጥልኝ","ችግር የለም","ደህና ነህ?"],"a":0}
+]},
+
+/* ---------- p1 · What I did ---------- */
+{"id":"am_p1","title":"What I did","step":"learn","meta":"Hedku, belahu — the past in one ending","vocab":[["ሄድኩ","hedku","I went"],["በላሁ","belahu","I ate"],["ሰራሁ","serahu","I worked"]],"ex":[
+{"t":"note","tag":"The past ending","q":"-ku and -hu","body":"<p>The past strips the verb down and ends it in <b>-ku/-hu</b> — <i>I did</i>: <b>ሄድኩ</b> <i>hedku</i> — <i>I went</i>. Compare እሄዳለሁ, I go: the long -alehu machinery falls away and the bare past remains.</p>","eg":[["ሄድኩ","hedku","I went"]]},
+{"t":"li","q":"Now or then — which do you hear?","say":"ሄድኩ","o":["ሄድኩ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"ሄድኩ means…","o":["I went","I go","I will go"],"a":0},
+{"t":"note","tag":"Two more pasts","q":"በላሁ and ሰራሁ","body":"<p><b>በላሁ</b> <i>belahu</i> — <i>I ate</i> — and <b>ሰራሁ</b> <i>serahu</i> — <i>I worked</i>. Short, punchy, done: the past tense sounds finished because it is.</p>","eg":[["በላሁ","belahu","I ate"],["ሰራሁ","serahu","I worked"]]},
+{"t":"li","q":"Ate or worked — which do you hear?","say":"በላሁ","o":["በላሁ","ሰራሁ"],"a":0},
+{"t":"mc","q":"በላሁ means…","o":["I ate","I eat","eat!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","በላሁ"],"a":0},
+{"t":"mc","q":"Compared with እሰራለሁ, the past ሰራሁ is…","o":["shorter and finished","longer","the same"],"a":0}
+]},
+{"id":"am_p1_2","title":"Hearing the past","step":"recognize","meta":"Then by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","ሄድኩ","በላሁ"],"a":0},
+{"t":"mc","q":"What does ሄድኩ mean?","o":["I went","I came","I go"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","በላሁ","ሰራሁ"],"a":0},
+{"t":"mc","q":"Which one means I worked?","o":["ሰራሁ","በላሁ","ሄድኩ"],"a":0},
+{"t":"li","q":"Past or present — which do you hear?","say":"በላሁ","o":["በላሁ","እበላለሁ"],"a":0},
+{"t":"mc","q":"The past I-ending is…","o":["-ku/-hu","-alehu","-egn"],"a":0}
+]},
+{"id":"am_p1_3","title":"Building the past","step":"build","meta":"Yesterday&rsquo;s verbs","vocab":[],"ex":[
+{"t":"wb","q":"Build: I went to the market","a":["ወደ","ገበያ","ሄድኩ"],"pool":["ወደ","ገበያ","ሄድኩ","እሄዳለሁ"]},
+{"t":"mc","q":"Pick: I ate","o":["በላሁ","እበላለሁ","ብላ"],"a":0},
+{"t":"wb","q":"Build: I ate injera","a":["እንጀራ","በላሁ"],"pool":["እንጀራ","በላሁ","ሰራሁ"]},
+{"t":"mc","q":"Pick: I worked","o":["ሰራሁ","እሰራለሁ","ስራ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","ሰራሁ","በላሁ"],"a":0}
+]},
+{"id":"am_p1_4","title":"The past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match present to past","pairs":[["እሄዳለሁ","ሄድኩ"],["እበላለሁ","በላሁ"],["እሰራለሁ","ሰራሁ"]]},
+{"t":"li","q":"Which one do you hear?","say":"በላሁ","o":["በላሁ","ሄድኩ","ሰራሁ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሄድኩ","I went"],["በላሁ","I ate"]]},
+{"t":"mc","q":"እንጀራ በላሁ means…","o":["I ate injera","I eat injera","eat the injera"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","በላሁ","ሄድኩ"],"a":0}
+]},
+{"id":"am_p1_5","title":"Checkpoint: the past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ሰራሁ means…","o":["I worked","I work","work!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በላሁ","o":["በላሁ","ሰራሁ","ሄድኩ"],"a":0},
+{"t":"mc","q":"Which one means I went?","o":["ሄድኩ","እሄዳለሁ","ሂድ"],"a":0},
+{"t":"mc","q":"Review — ችግር የለም means…","o":["no problem","no work","nothing left"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","በላሁ","ሰራሁ"],"a":0}
+]},
+
+/* ---------- p2 · Yesterday I… ---------- */
+{"id":"am_p2","title":"Yesterday I…","step":"learn","meta":"Tinant + past verbs — telling your day","vocab":[["መጣሁ","metahu","I came"],["ገዛሁ","gezahu","I bought"],["ትናንት ሄድኩ","tinant hedku","yesterday I went"]],"ex":[
+{"t":"note","tag":"Two more arrivals","q":"መጣሁ and ገዛሁ","body":"<p><b>መጣሁ</b> <i>metahu</i> — <i>I came</i> — and <b>ገዛሁ</b> <i>gezahu</i> — <i>I bought</i>. The -hu ending is doing all the past-tense work now; the verbs just change their front halves.</p>","eg":[["መጣሁ","metahu","I came"],["ገዛሁ","gezahu","I bought"]]},
+{"t":"li","q":"Came or bought — which do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ"],"a":0},
+{"t":"mc","q":"ገዛሁ means…","o":["I bought","I buy","buy!"],"a":0},
+{"t":"note","tag":"Anchor it in time","q":"ትናንት ሄድኩ","body":"<p>Add your Zone 4 anchor: <b>ትናንት ሄድኩ</b> <i>tinant hedku</i> — <i>yesterday I went</i>. ትናንት ገበያ ሄድኩ, ዳቦ ገዛሁ — yesterday I went to the market, I bought bread. You are narrating now.</p>","eg":[["ትናንት ሄድኩ","tinant hedku","yesterday I went"]]},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","ሄድኩ"],"a":0},
+{"t":"mc","q":"ትናንት ሄድኩ means…","o":["yesterday I went","tomorrow I go","today I went"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ"],"a":0},
+{"t":"mc","q":"ዳቦ ገዛሁ means…","o":["I bought bread","I want bread","I ate bread"],"a":0}
+]},
+{"id":"am_p2_2","title":"Hearing yesterday","step":"recognize","meta":"Narration by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ","ትናንት ሄድኩ"],"a":0},
+{"t":"mc","q":"What does መጣሁ mean?","o":["I came","I come","come!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","መጣሁ","ገዛሁ"],"a":0},
+{"t":"mc","q":"Which one means I bought?","o":["ገዛሁ","እገዛለሁ","መጣሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ","ሄድኩ"],"a":0},
+{"t":"mc","q":"Present እመጣለሁ becomes past…","o":["መጣሁ","ገዛሁ","መጣ"],"a":0}
+]},
+{"id":"am_p2_3","title":"Building yesterday","step":"build","meta":"Narrate the trip","vocab":[],"ex":[
+{"t":"wb","q":"Build: yesterday I went","a":["ትናንት","ሄድኩ"],"pool":["ትናንት","ሄድኩ","መጣሁ"]},
+{"t":"mc","q":"Pick: I came","o":["መጣሁ","ገዛሁ","እመጣለሁ"],"a":0},
+{"t":"wb","q":"Build: I bought bread","a":["ዳቦ","ገዛሁ"],"pool":["ዳቦ","ገዛሁ","በላሁ"]},
+{"t":"wb","q":"Build: yesterday I went to the market","a":["ትናንት","ገበያ","ሄድኩ"],"pool":["ትናንት","ገበያ","ሄድኩ","ገዛሁ"]},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","ገዛሁ","መጣሁ"],"a":0}
+]},
+{"id":"am_p2_4","title":"Yesterday in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["መጣሁ","I came"],["ገዛሁ","I bought"],["ትናንት ሄድኩ","yesterday I went"]]},
+{"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ትናንት ሄድኩ","ገዛሁ"],"a":0},
+{"t":"match","q":"Match present to past","pairs":[["እመጣለሁ","መጣሁ"],["እገዛለሁ","ገዛሁ"]]},
+{"t":"mc","q":"The full story: ትናንት ገበያ ሄድኩ, ዳቦ…","o":["ገዛሁ","እገዛለሁ","ግዛ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ","ትናንት ሄድኩ"],"a":0}
+]},
+{"id":"am_p2_5","title":"Checkpoint: yesterday","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ገዛሁ means…","o":["I bought","I came","I sold"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ","በላሁ"],"a":0},
+{"t":"mc","q":"ትናንት ሄድኩ means…","o":["yesterday I went","today I go","I went far"],"a":0},
+{"t":"mc","q":"Review — በላሁ means…","o":["I ate","I eat","eat!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","መጣሁ","ገዛሁ"],"a":0}
+]},
+
+/* ---------- p3 · Where were you? ---------- */
+{"id":"am_p3","title":"Where were you?","step":"learn","meta":"Neber — the was of every story","vocab":[["ነበርኩ","neberku","I was"],["የት ነበርክ?","yet neberk?","where were you? (to a man)"],["ቤት ነበርኩ","bet neberku","I was at home"]],"ex":[
+{"t":"note","tag":"The was verb","q":"ነበርኩ","body":"<p><b>ነበርኩ</b> <i>neberku</i> — <i>I was</i> — the past of being itself, wearing the same -ku as hedku. Every memory you will ever tell in Amharic leans on neber.</p>","eg":[["ነበርኩ","neberku","I was"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","ነኝ"],"a":0},
+{"t":"mc","q":"ነበርኩ means…","o":["I was","I am","I will be"],"a":0},
+{"t":"note","tag":"The question","q":"የት ነበርክ?","body":"<p><b>የት ነበርክ?</b> <i>yet neberk?</i> — <i>where were you?</i> — to a man (-sh to a woman). And the homebody answer: <b>ቤት ነበርኩ</b> <i>bet neberku</i> — <i>I was at home</i>.</p>","eg":[["የት ነበርክ?","yet neberk?","where were you? (to a man)"],["ቤት ነበርኩ","bet neberku","I was at home"]]},
+{"t":"li","q":"Question or answer — which do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ"],"a":0},
+{"t":"mc","q":"የት ነበርክ? asks…","o":["where were you?","where are you?","where will you be?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","የት ነበርክ?"],"a":0},
+{"t":"mc","q":"ቤት ነበርኩ means…","o":["I was at home","I am at home","my house was there"],"a":0}
+]},
+{"id":"am_p3_2","title":"Hearing the was","step":"recognize","meta":"Memories by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","ነበርኩ","የት ነበርክ?"],"a":0},
+{"t":"mc","q":"What does ነበርኩ mean?","o":["I was","I am","I stayed"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ","ነበርኩ"],"a":0},
+{"t":"mc","q":"Which one answers የት ነበርክ??","o":["ቤት ነበርኩ","ቤት ነኝ","የት ነው?"],"a":0},
+{"t":"li","q":"Was or am — which do you hear?","say":"ነበርኩ","o":["ነበርኩ","ነኝ"],"a":0},
+{"t":"mc","q":"ሆስፒታል ነበርኩ would mean…","o":["I was at the hospital","I am a doctor","the hospital was here"],"a":0}
+]},
+{"id":"am_p3_3","title":"Building the was","step":"build","meta":"Place yourself in the past","vocab":[],"ex":[
+{"t":"wb","q":"Build: where were you? (to a man)","a":["የት","ነበርክ?"],"pool":["የት","ነበርክ?","ነበርኩ"]},
+{"t":"mc","q":"Pick: I was","o":["ነበርኩ","ነኝ","ነው"],"a":0},
+{"t":"wb","q":"Build: I was at home","a":["ቤት","ነበርኩ"],"pool":["ቤት","ነበርኩ","ነበርክ?"]},
+{"t":"wb","q":"Build: I was at the market","a":["ገበያ","ነበርኩ"],"pool":["ገበያ","ነበርኩ","ቤት"]},
+{"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","የት ነበርክ?","ቤት ነበርኩ"],"a":0}
+]},
+{"id":"am_p3_4","title":"The was in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነበርኩ","I was"],["የት ነበርክ?","where were you?"],["ቤት ነበርኩ","I was at home"]]},
+{"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ነበርኩ","ቤት ነበርኩ"],"a":0},
+{"t":"match","q":"Match now to then","pairs":[["ነኝ","ነበርኩ"],["እሄዳለሁ","ሄድኩ"]]},
+{"t":"mc","q":"የት ነበርክ? — ሐኪም ቤት ነበርኩ. The man was…","o":["at the clinic","at school","at the bank"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","የት ነበርክ?","ነበርኩ"],"a":0}
+]},
+{"id":"am_p3_5","title":"Checkpoint: the was","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቤት ነበርኩ means…","o":["I was at home","I am home","home was small"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","ቤት ነበርኩ","የት ነበርክ?"],"a":0},
+{"t":"mc","q":"Which one asks where were you?","o":["የት ነበርክ?","የት ነው?","ወዴት ትሄዳለህ?"],"a":0},
+{"t":"mc","q":"Review — ትናንት ሄድኩ means…","o":["yesterday I went","yesterday I came","today I went"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ","ነበርኩ"],"a":0}
+]},
+
+/* ---------- p4 · Tomorrow and now ---------- */
+{"id":"am_p4","title":"Tomorrow and now","step":"learn","meta":"One form, two tenses — the -alehu secret","vocab":[["ነገ እሄዳለሁ","nege ihedalehu","tomorrow I will go"],["አሁን","ahun","now"],["በኋላ","behuala","later"]],"ex":[
+{"t":"note","tag":"The secret you already own","q":"ነገ እሄዳለሁ","body":"<p>Good news: Amharic&rsquo;s future IS the -alehu form you have used all course. Add a time word and it points forward: <b>ነገ እሄዳለሁ</b> <i>nege ihedalehu</i> — <i>tomorrow I will go</i>. One form, present and future both; the time word steers.</p>","eg":[["ነገ እሄዳለሁ","nege ihedalehu","tomorrow I will go"]]},
+{"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"Amharic&rsquo;s future tense is…","o":["the -alehu form plus a time word","a new ending","borrowed from English"],"a":0},
+{"t":"note","tag":"The steering words","q":"አሁን and በኋላ","body":"<p><b>አሁን</b> <i>ahun</i> — <i>now</i> — and <b>በኋላ</b> <i>behuala</i> — <i>later, afterwards</i>. አሁን እሄዳለሁ — I am going now; በኋላ እመጣለሁ — I will come later. The steering wheel of every plan.</p>","eg":[["አሁን","ahun","now"],["በኋላ","behuala","later"]]},
+{"t":"li","q":"Now or later — which do you hear?","say":"አሁን","o":["አሁን","በኋላ"],"a":0},
+{"t":"mc","q":"በኋላ means…","o":["later","now","before"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን"],"a":0},
+{"t":"mc","q":"በኋላ እመጣለሁ means…","o":["I will come later","I came late","come later!"],"a":0}
+]},
+{"id":"am_p4_2","title":"Hearing the plans","step":"recognize","meta":"Time-steering by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ እሄዳለሁ"],"a":0},
+{"t":"mc","q":"What does አሁን mean?","o":["now","later","soon"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","በኋላ","አሁን"],"a":0},
+{"t":"mc","q":"Which one means tomorrow I will go?","o":["ነገ እሄዳለሁ","ትናንት ሄድኩ","አሁን እሄዳለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","በኋላ","ነገ"],"a":0},
+{"t":"mc","q":"The tense-steering is done by…","o":["time words","new endings","tone"],"a":0}
+]},
+{"id":"am_p4_3","title":"Building the plans","step":"build","meta":"Steer the verb","vocab":[],"ex":[
+{"t":"wb","q":"Build: tomorrow I will go","a":["ነገ","እሄዳለሁ"],"pool":["ነገ","እሄዳለሁ","ሄድኩ"]},
+{"t":"mc","q":"Pick the word for now","o":["አሁን","በኋላ","ነገ"],"a":0},
+{"t":"wb","q":"Build: I will come later","a":["በኋላ","እመጣለሁ"],"pool":["በኋላ","እመጣለሁ","መጣሁ"]},
+{"t":"wb","q":"Build: I am going now","a":["አሁን","እሄዳለሁ"],"pool":["አሁን","እሄዳለሁ","በኋላ"]},
+{"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","አሁን","በኋላ"],"a":0}
+]},
+{"id":"am_p4_4","title":"The plans in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነገ እሄዳለሁ","tomorrow I will go"],["አሁን","now"],["በኋላ","later"]]},
+{"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","ነገ እሄዳለሁ","በኋላ"],"a":0},
+{"t":"match","q":"Match the time to the tense","pairs":[["ትናንት","ሄድኩ"],["ነገ","እሄዳለሁ"]]},
+{"t":"mc","q":"All three tenses of go: ሄድኩ, እሄዳለሁ — and the future is the same -alehu form plus…","o":["a time word","a fourth ending","nothing works"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ እሄዳለሁ"],"a":0}
+]},
+{"id":"am_p4_5","title":"Checkpoint: the plans","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ነገ እሄዳለሁ means…","o":["tomorrow I will go","yesterday I went","I go daily"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ"],"a":0},
+{"t":"mc","q":"Which one means now?","o":["አሁን","በኋላ","ዛሬ"],"a":0},
+{"t":"mc","q":"Review — ነበርኩ means…","o":["I was","I am","I stayed"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","በኋላ","ትናንት"],"a":0}
+]},
+
+/* ---------- p5 · The weather ---------- */
+{"id":"am_p5","title":"The weather","step":"learn","meta":"Rain, cold, heat, sun — the highland sky","vocab":[["ዝናብ","zinab","rain"],["ብርድ","bird","cold"],["ሙቀት","muket","heat"],["ፀሐይ","tsehay","sun"]],"ex":[
+{"t":"note","tag":"The two seasons","q":"ዝናብ","body":"<p><b>ዝናብ</b> <i>zinab</i> — <i>rain</i>. Highland Ethiopia lives by it: the long kiremt rains of July and August feed the whole year. When zinab comes, umbrellas bloom across Addis.</p>","eg":[["ዝናብ","zinab","rain"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ገንዘብ"],"a":0},
+{"t":"mc","q":"The great rains of July-August are called…","o":["kiremt","bereka","meskel"],"a":0},
+{"t":"note","tag":"The highland surprise","q":"ብርድ and ሙቀት","body":"<p><b>ብርድ</b> <i>bird</i> — <i>cold</i> — and <b>ሙቀት</b> <i>muket</i> — <i>heat</i>. Addis sits at 2,355 meters: visitors pack for Africa and meet mountain evenings. Bird is real; bring a jacket.</p>","eg":[["ብርድ","bird","cold"],["ሙቀት","muket","heat"]]},
+{"t":"li","q":"Cold or heat — which do you hear?","say":"ብርድ","o":["ብርድ","ሙቀት"],"a":0},
+{"t":"mc","q":"Addis evenings surprise visitors with…","o":["ብርድ","ሙቀት","ዝናብ"],"a":0},
+{"t":"note","tag":"The reliable one","q":"ፀሐይ","body":"<p><b>ፀሐይ</b> <i>tsehay</i> — <i>sun</i> — thirteen months of it, as the tourism slogan says. Also a beloved name.</p>","eg":[["ፀሐይ","tsehay","sun"]]},
+{"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ዝናብ"],"a":0},
+{"t":"mc","q":"ፀሐይ means…","o":["sun","sky","moon"],"a":0}
+]},
+{"id":"am_p5_2","title":"Hearing the sky","step":"recognize","meta":"Weather by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሙቀት","o":["ሙቀት","ብርድ","ዝናብ"],"a":0},
+{"t":"mc","q":"What does ዝናብ mean?","o":["rain","cloud","storm"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብርድ","o":["ብርድ","ሙቀት","ፀሐይ"],"a":0},
+{"t":"mc","q":"Which one means sun?","o":["ፀሐይ","ዝናብ","ሙቀት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ፀሐይ","ብርድ"],"a":0},
+{"t":"mc","q":"Addis sits at about…","o":["2,355 meters","500 meters","4,000 meters"],"a":0}
+]},
+{"id":"am_p5_3","title":"Building the sky","step":"build","meta":"Forecast in fidel","vocab":[],"ex":[
+{"t":"wb","q":"Build: rain and cold","a":["ዝናብ","ብርድ"],"pool":["ዝናብ","ብርድ","ፀሐይ"]},
+{"t":"mc","q":"Pick the word for heat","o":["ሙቀት","ብርድ","ፀሐይ"],"a":0},
+{"t":"wb","q":"Build: sun and heat","a":["ፀሐይ","ሙቀት"],"pool":["ፀሐይ","ሙቀት","ዝናብ"]},
+{"t":"mc","q":"Pick the word for rain","o":["ዝናብ","ብርድ","ሙቀት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ሙቀት","ዝናብ"],"a":0}
+]},
+{"id":"am_p5_4","title":"The sky in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዝናብ","rain"],["ብርድ","cold"],["ፀሐይ","sun"]]},
+{"t":"li","q":"Which one do you hear?","say":"ብርድ","o":["ብርድ","ዝናብ","ሙቀት"],"a":0},
+{"t":"match","q":"Match the season to its sky","pairs":[["kiremt","ዝናብ"],["the dry season","ፀሐይ"]]},
+{"t":"mc","q":"The jacket you packed is for…","o":["ብርድ","ሙቀት","ዝናብ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሙቀት","o":["ሙቀት","ፀሐይ","ብርድ"],"a":0}
+]},
+{"id":"am_p5_5","title":"Checkpoint: the sky","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ብርድ means…","o":["cold","rain","wind"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ብርድ","ፀሐይ"],"a":0},
+{"t":"mc","q":"Which one means sun?","o":["ፀሐይ","ሙቀት","ዝናብ"],"a":0},
+{"t":"mc","q":"Review — አሁን means…","o":["now","later","today"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ዝናብ","ሙቀት"],"a":0}
+]},
+
+/* ---------- p6 · Talking about the sky ---------- */
+{"id":"am_p6","title":"Talking about the sky","step":"learn","meta":"Bird new — the weather meets the new engine","vocab":[["ብርድ ነው","bird new","it is cold"],["ሙቀት ነው","muket new","it is hot"],["ዛሬ ብርድ ነው","zare bird new","today it is cold"]],"ex":[
+{"t":"note","tag":"The report frame","q":"ብርድ ነው","body":"<p>Weather reports run on your oldest engine: <b>ብርድ ነው</b> <i>bird new</i> — <i>it is cold</i> — and <b>ሙቀት ነው</b> <i>muket new</i> — <i>it is hot</i>. Say them while reaching for a jacket or a fan respectively.</p>","eg":[["ብርድ ነው","bird new","it is cold"],["ሙቀት ነው","muket new","it is hot"]]},
+{"t":"li","q":"Cold or hot — which do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው"],"a":0},
+{"t":"mc","q":"ሙቀት ነው means…","o":["it is hot","it is warm water","the heat left"],"a":0},
+{"t":"note","tag":"Stamp the day","q":"ዛሬ ብርድ ነው","body":"<p>Anchor it: <b>ዛሬ ብርድ ነው</b> <i>zare bird new</i> — <i>today it is cold</i>. Swap in ዝናብ for rain reports; the frame never changes. Weather small talk unlocked.</p>","eg":[["ዛሬ ብርድ ነው","zare bird new","today it is cold"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ብርድ ነው"],"a":0},
+{"t":"mc","q":"ዛሬ ብርድ ነው means…","o":["today it is cold","yesterday was cold","the cold season"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ብርድ ነው"],"a":0},
+{"t":"mc","q":"ዛሬ ዝናብ ነው would report…","o":["rain today","sun today","cold tomorrow"],"a":0}
+]},
+{"id":"am_p6_2","title":"Hearing the reports","step":"recognize","meta":"Sky talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ዛሬ ብርድ ነው","ብርድ ነው"],"a":0},
+{"t":"mc","q":"What does ብርድ ነው mean?","o":["it is cold","it is hot","it is windy"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ብርድ ነው"],"a":0},
+{"t":"mc","q":"Which one means it is hot?","o":["ሙቀት ነው","ብርድ ነው","ፀሐይ ነው"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው","ዛሬ ብርድ ነው"],"a":0},
+{"t":"mc","q":"The weather frame is powered by…","o":["ነው","አለ","ነኝ"],"a":0}
+]},
+{"id":"am_p6_3","title":"Building the reports","step":"build","meta":"Say the sky","vocab":[],"ex":[
+{"t":"wb","q":"Build: it is cold","a":["ብርድ","ነው"],"pool":["ብርድ","ነው","ሙቀት"]},
+{"t":"mc","q":"Pick: it is hot","o":["ሙቀት ነው","ብርድ ነው","ዝናብ"],"a":0},
+{"t":"wb","q":"Build: today it is cold","a":["ዛሬ","ብርድ","ነው"],"pool":["ዛሬ","ብርድ","ነው","ሙቀት"]},
+{"t":"wb","q":"Build: it is hot","a":["ሙቀት","ነው"],"pool":["ሙቀት","ነው","ብርድ"]},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ብርድ ነው","ሙቀት ነው"],"a":0}
+]},
+{"id":"am_p6_4","title":"The reports in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ብርድ ነው","it is cold"],["ሙቀት ነው","it is hot"],["ዛሬ ብርድ ነው","today it is cold"]]},
+{"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ዛሬ ብርድ ነው","ሙቀት ነው"],"a":0},
+{"t":"match","q":"Match the report to the response","pairs":[["ብርድ ነው","a jacket"],["ሙቀት ነው","a fan"]]},
+{"t":"mc","q":"Addis evening, jacket time — the report is…","o":["ብርድ ነው","ሙቀት ነው","ፀሐይ ነው"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ብርድ ነው","ዛሬ ብርድ ነው"],"a":0}
+]},
+{"id":"am_p6_5","title":"Checkpoint: the reports","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ዛሬ ብርድ ነው means…","o":["today it is cold","it will be cold","the cold is here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
+{"t":"mc","q":"Which one means it is hot?","o":["ሙቀት ነው","ብርድ ነው","ፀሐይ"],"a":0},
+{"t":"mc","q":"Review — ዝናብ means…","o":["rain","cold","cloud"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ብርድ ነው"],"a":0}
+]},
+
+/* ---------- p7 · When? ---------- */
+{"id":"am_p7","title":"When?","step":"learn","meta":"Meche — the question set completes","vocab":[["መቼ","meche","when"],["መቼ ትመጣለህ?","meche timetaleh?","when are you coming? (to a man)"]],"ex":[
+{"t":"note","tag":"The final question word","q":"መቼ","body":"<p><b>መቼ</b> <i>meche</i> — <i>when?</i> — completes the set: man, min, yet, sint, wedet and now meche. Six keys; every door in the language.</p>","eg":[["መቼ","meche","when"]]},
+{"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","ምን"],"a":0},
+{"t":"mc","q":"መቼ asks…","o":["when","where","what"],"a":0},
+{"t":"note","tag":"The visit question","q":"መቼ ትመጣለህ?","body":"<p><b>መቼ ትመጣለህ?</b> <i>meche timetaleh?</i> — <i>when are you coming?</i> — the question every Ethiopian household asks a friend. The answer uses everything you own: ነገ እመጣለሁ, በኋላ እመጣለሁ, ከሰዓት…</p>","eg":[["መቼ ትመጣለህ?","meche timetaleh?","when are you coming? (to a man)"]]},
+{"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","መቼ"],"a":0},
+{"t":"mc","q":"መቼ ትመጣለህ? asks…","o":["when are you coming?","when did you come?","are you coming?"],"a":0},
+{"t":"li","q":"Listen closely — meche or min?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?"],"a":0},
+{"t":"mc","q":"A good answer to መቼ ትመጣለህ? is…","o":["ነገ እመጣለሁ","ትናንት ሄድኩ","ቤት ነበርኩ"],"a":0}
+]},
+{"id":"am_p7_2","title":"Hearing the when","step":"recognize","meta":"Appointments by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","መቼ ትመጣለህ?","ምን"],"a":0},
+{"t":"mc","q":"What does መቼ mean?","o":["when","how","why"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?","መቼ"],"a":0},
+{"t":"mc","q":"The six question keys are man, min, yet, sint, wedet and…","o":["መቼ","ነው","እስከ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","ማን","ምን"],"a":0},
+{"t":"mc","q":"መቼ ገዛህ? would ask…","o":["when did you buy it?","what did you buy?","where did you buy it?"],"a":0}
+]},
+{"id":"am_p7_3","title":"Building the when","step":"build","meta":"Set the appointment","vocab":[],"ex":[
+{"t":"wb","q":"Build: when are you coming? (to a man)","a":["መቼ","ትመጣለህ?"],"pool":["መቼ","ትመጣለህ?","እመጣለሁ"]},
+{"t":"mc","q":"Pick the word for when","o":["መቼ","ምን","የት"],"a":0},
+{"t":"wb","q":"Build the answer: I will come tomorrow","a":["ነገ","እመጣለሁ"],"pool":["ነገ","እመጣለሁ","መቼ"]},
+{"t":"wb","q":"Build the answer: I will come later","a":["በኋላ","እመጣለሁ"],"pool":["በኋላ","እመጣለሁ","አሁን"]},
+{"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","መቼ","ነገ እሄዳለሁ"],"a":0}
+]},
+{"id":"am_p7_4","title":"The when in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["መቼ","when"],["መቼ ትመጣለህ?","when are you coming?"]]},
+{"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","መቼ ትመጣለህ?","ማን"],"a":0},
+{"t":"match","q":"Match the question to the answer","pairs":[["መቼ ትመጣለህ?","ነገ እመጣለሁ"],["የት ነበርክ?","ቤት ነበርኩ"]]},
+{"t":"mc","q":"Remember the two clocks: when the answer is a time, confirm…","o":["habesha or ferenj","the day twice","the address"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?","መቼ"],"a":0}
+]},
+{"id":"am_p7_5","title":"Checkpoint: Zone 11 complete","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
+{"t":"mc","q":"መቼ ትመጣለህ? — ነገ እመጣለሁ. The visit is…","o":["tomorrow","today","later tonight"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","ምን","ማን"],"a":0},
+{"t":"mc","q":"Review — the past of እሄዳለሁ is…","o":["ሄድኩ","ሂድ","እሄዳለሁ ነበር"],"a":0},
+{"t":"mc","q":"Review — the future is the -alehu form plus…","o":["a time word","a new ending","nothing"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
+{"t":"mc","q":"Review — ነበርኩ means…","o":["I was","I am","I went"],"a":0},
+{"t":"mc","q":"Review — the July-August rains are the…","o":["kiremt","bereka","meskel"],"a":0}
 ]}
 ];
 
@@ -2983,9 +3273,11 @@ const AM_UNITS=[
 {"n":9,"t":"Work and school","d":"Sira, the temari root — and the last great question word","lessons":["am_w1","am_w1_2","am_w1_3","am_w1_4","am_w1_5","am_w2","am_w2_2","am_w2_3","am_w2_4","am_w2_5","am_w3","am_w3_2","am_w3_3","am_w3_4","am_w3_5","am_w4","am_w4_2","am_w4_3","am_w4_4","am_w4_5","am_w5","am_w5_2","am_w5_3","am_w5_4","am_w5_5","am_w6","am_w6_2","am_w6_3","am_w6_4","am_w6_5","am_w7","am_w7_2","am_w7_3","am_w7_4","am_w7_5"]}
 ,
 {"n":10,"t":"Body and health","d":"The body, the hakim bet — and chigir yellem","lessons":["am_b1","am_b1_2","am_b1_3","am_b1_4","am_b1_5","am_b2","am_b2_2","am_b2_3","am_b2_4","am_b2_5","am_b3","am_b3_2","am_b3_3","am_b3_4","am_b3_5","am_b4","am_b4_2","am_b4_3","am_b4_4","am_b4_5","am_b5","am_b5_2","am_b5_3","am_b5_4","am_b5_5","am_b6","am_b6_2","am_b6_3","am_b6_4","am_b6_5","am_b7","am_b7_2","am_b7_3","am_b7_4","am_b7_5"]}
+,
+{"n":11,"t":"Past and future","d":"The -ku past, neber, one-form future — and the highland sky","lessons":["am_p1","am_p1_2","am_p1_3","am_p1_4","am_p1_5","am_p2","am_p2_2","am_p2_3","am_p2_4","am_p2_5","am_p3","am_p3_2","am_p3_3","am_p3_4","am_p3_5","am_p4","am_p4_2","am_p4_3","am_p4_4","am_p4_5","am_p5","am_p5_2","am_p5_3","am_p5_4","am_p5_5","am_p6","am_p6_2","am_p6_3","am_p6_4","am_p6_5","am_p7","am_p7_2","am_p7_3","am_p7_4","am_p7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?","am_b1":"ራስ","am_b2":"ዓይን","am_b3":"አመመኝ","am_b4":"ሐኪም ቤት","am_b5":"ተቀመጥ","am_b6":"ይሻለኛል","am_b7":"ችግር የለም"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ","am_w1":"ስራ","am_w2":"ተማሪ","am_w3":"እማራለሁ","am_w4":"ስልክ","am_w5":"ቢሮ","am_w6":"እስከ","am_w7":"ምን?","am_b1":"ራስ","am_b2":"ዓይን","am_b3":"አመመኝ","am_b4":"ሐኪም ቤት","am_b5":"ተቀመጥ","am_b6":"ይሻለኛል","am_b7":"ችግር የለም","am_p1":"ሄድኩ","am_p2":"ትናንት","am_p3":"ነበርኩ","am_p4":"ነገ","am_p5":"ዝናብ","am_p6":"ብርድ ነው","am_p7":"መቼ?"};
 
 const AM_SRS_SEED=[];
 
