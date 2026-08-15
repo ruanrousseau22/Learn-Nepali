@@ -2080,6 +2080,299 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","እርዳኝ","ቆይ"],"a":0},
 {"t":"mc","q":"Review — the three-wheeler is the…","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
 {"t":"mc","q":"Review — ቅርብ means…","o":["near","far","fast"],"a":0}
+]},
+
+/* ---------- m1 · Money ---------- */
+{"id":"am_m1","title":"Money","step":"learn","meta":"Birr, genzeb — what the market runs on","vocab":[["ብር","birr","birr (the currency)"],["ገንዘብ","genzeb","money"],["ዋጋ","waga","price"],["ሳንቲም","santim","coin · cent"]],"ex":[
+{"t":"note","tag":"The currency","q":"ብር and ገንዘብ","body":"<p><b>ብር</b> <i>birr</i> — Ethiopia&rsquo;s currency, literally <i>silver</i>. <b>ገንዘብ</b> <i>genzeb</i> — <i>money</i> in general. Ten birr, a pocket of genzeb.</p>","eg":[["ብር","birr","birr (the currency)"],["ገንዘብ","genzeb","money"]]},
+{"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ገንዘብ"],"a":0},
+{"t":"mc","q":"ብር literally means…","o":["silver","gold","paper"],"a":0},
+{"t":"note","tag":"The number on the tag","q":"ዋጋ","body":"<p><b>ዋጋ</b> <i>waga</i> — <i>price</i>, also <i>worth</i>. The word every negotiation orbits.</p>","eg":[["ዋጋ","waga","price"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዋጋ","o":["ዋጋ","ብር"],"a":0},
+{"t":"mc","q":"ዋጋ means…","o":["price","tax","weight"],"a":0},
+{"t":"note","tag":"The small stuff","q":"ሳንቲም","body":"<p><b>ሳንቲም</b> <i>santim</i> — <i>coin, cent</i> (from centime). Mostly historical now — prices live in whole birr — but the word survives in change-counting and old sayings.</p>","eg":[["ሳንቲም","santim","coin · cent"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ዋጋ"],"a":0},
+{"t":"mc","q":"ሳንቲም came from the French word…","o":["centime","sentiment","centre"],"a":0}
+]},
+{"id":"am_m1_2","title":"Hearing the money","step":"recognize","meta":"Currency by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ገንዘብ","o":["ገንዘብ","ብር","ዋጋ"],"a":0},
+{"t":"mc","q":"What does ገንዘብ mean?","o":["money","price","bank"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዋጋ","o":["ዋጋ","ሳንቲም","ገንዘብ"],"a":0},
+{"t":"mc","q":"Which one is the currency of Ethiopia?","o":["ብር","ሳንቲም","ዋጋ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ዋጋ","ሳንቲም"],"a":0},
+{"t":"mc","q":"አስር ብር means…","o":["ten birr","one coin","big money"],"a":0}
+]},
+{"id":"am_m1_3","title":"Building the money","step":"build","meta":"Count the notes","vocab":[],"ex":[
+{"t":"wb","q":"Build: ten birr","a":["አስር","ብር"],"pool":["አስር","ብር","ዋጋ"]},
+{"t":"mc","q":"Pick the word for price","o":["ዋጋ","ብር","ገንዘብ"],"a":0},
+{"t":"wb","q":"Build: five birr","a":["አምስት","ብር"],"pool":["አምስት","ብር","ሳንቲም"]},
+{"t":"mc","q":"Pick the word for money","o":["ገንዘብ","ብር","ዋጋ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ገንዘብ","o":["ገንዘብ","ዋጋ","ብር"],"a":0}
+]},
+{"id":"am_m1_4","title":"The money in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ብር","birr"],["ገንዘብ","money"],["ዋጋ","price"]]},
+{"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ብር","ገንዘብ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሳንቲም","coin"],["ገበያ","market"]]},
+{"t":"mc","q":"Modern Ethiopian prices live mostly in…","o":["whole birr","santim","dollars"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዋጋ","o":["ዋጋ","ገንዘብ","ሳንቲም"],"a":0}
+]},
+{"id":"am_m1_5","title":"Checkpoint: the money","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ገንዘብ means…","o":["money","silver","change"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ሳንቲም","ዋጋ"],"a":0},
+{"t":"mc","q":"Which one means price?","o":["ዋጋ","ብር","ገንዘብ"],"a":0},
+{"t":"mc","q":"Review — እንሂድ means…","o":["let us go","let us eat","let us buy"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ገንዘብ","ብር"],"a":0}
+]},
+
+/* ---------- m2 · How much is it? ---------- */
+{"id":"am_m2","title":"How much is it?","step":"learn","meta":"Sint new — the question you trained for","vocab":[["ስንት ነው?","sint new?","how much is it?"],["ይህ ስንት ነው?","yih sint new?","how much is this?"],["መልስ","mels","change (money back)"]],"ex":[
+{"t":"note","tag":"Sint returns","q":"ስንት ነው?","body":"<p>The sint that asked the time now asks the price: <b>ስንት ነው?</b> <i>sint new?</i> — <i>how much is it?</i> One question word, two of life&rsquo;s great mysteries.</p>","eg":[["ስንት ነው?","sint new?","how much is it?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ስንት ሰዓት ነው?"],"a":0},
+{"t":"mc","q":"ስንት ነው? asks…","o":["how much is it?","what time is it?","how far is it?"],"a":0},
+{"t":"note","tag":"Point first","q":"ይህ ስንት ነው?","body":"<p>Add your pointing word: <b>ይህ ስንት ነው?</b> <i>yih sint new?</i> — <i>how much is THIS?</i> No vocabulary required on the far side of the pointing finger.</p>","eg":[["ይህ ስንት ነው?","yih sint new?","how much is this?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?"],"a":0},
+{"t":"mc","q":"ይህ ስንት ነው? means…","o":["how much is this?","what is this?","is this mine?"],"a":0},
+{"t":"note","tag":"What comes back","q":"መልስ","body":"<p><b>መልስ</b> <i>mels</i> — <i>change</i>, literally <i>a return</i> (the same word answers questions and returns money — both come back to you).</p>","eg":[["መልስ","mels","change (money back)"]]},
+{"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ዋጋ"],"a":0},
+{"t":"mc","q":"መልስ at the till means…","o":["change","receipt","discount"],"a":0}
+]},
+{"id":"am_m2_2","title":"Hearing the price question","step":"recognize","meta":"Till talk by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?","መልስ"],"a":0},
+{"t":"mc","q":"What does መልስ mean?","o":["change","price","coin"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ይህ ስንት ነው?","ዋጋ"],"a":0},
+{"t":"mc","q":"Which one points AND asks?","o":["ይህ ስንት ነው?","ስንት ነው?","የት ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ስንት ነው?","ብር"],"a":0},
+{"t":"mc","q":"Sint asks prices here and asked … in Zone 4","o":["the time","the way","names"],"a":0}
+]},
+{"id":"am_m2_3","title":"Building the price question","step":"build","meta":"Ask like a shopper","vocab":[],"ex":[
+{"t":"wb","q":"Build: how much is it?","a":["ስንት","ነው?"],"pool":["ስንት","ነው?","ይህ"]},
+{"t":"mc","q":"Pick the word for change","o":["መልስ","ዋጋ","ብር"],"a":0},
+{"t":"wb","q":"Build: how much is this?","a":["ይህ","ስንት","ነው?"],"pool":["ይህ","ስንት","ነው?","መልስ"]},
+{"t":"wb","q":"Build: how much is the bread? (dabo sint new?)","a":["ዳቦ","ስንት","ነው?"],"pool":["ዳቦ","ስንት","ነው?","ብር"]},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","መልስ","ይህ ስንት ነው?"],"a":0}
+]},
+{"id":"am_m2_4","title":"The price question in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስንት ነው?","how much is it?"],["ይህ ስንት ነው?","how much is this?"],["መልስ","change"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","መልስ","ስንት ነው?"],"a":0},
+{"t":"match","q":"Match the question to its zone","pairs":[["ስንት ሰዓት ነው?","time"],["ስንት ነው?","price"]]},
+{"t":"mc","q":"Holding up a scarf at Merkato, you ask…","o":["ይህ ስንት ነው?","ማን ነው?","የት ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ይህ ስንት ነው?","ስንት ነው?"],"a":0}
+]},
+{"id":"am_m2_5","title":"Checkpoint: the price question","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ይህ ስንት ነው? means…","o":["how much is this?","what is that?","how many are there?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ይህ ስንት ነው?","ዋጋ"],"a":0},
+{"t":"mc","q":"Which one means change?","o":["መልስ","ዋጋ","ሳንቲም"],"a":0},
+{"t":"mc","q":"Review — ብር literally means…","o":["silver","money","coin"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?","መልስ"],"a":0}
+]},
+
+/* ---------- m3 · I want, I buy ---------- */
+{"id":"am_m3","title":"I want, I buy","step":"learn","meta":"Ifeligalehu — the engine of every purchase","vocab":[["እፈልጋለሁ","ifeligalehu","I want"],["እገዛለሁ","igezalehu","I buy"],["ውሃ እፈልጋለሁ","wiha ifeligalehu","I want water"]],"ex":[
+{"t":"note","tag":"The wanting verb","q":"እፈልጋለሁ","body":"<p><b>እፈልጋለሁ</b> <i>ifeligalehu</i> — <i>I want</i> — may be the hardest-working verb in your Amharic. Name the thing, then want it: <b>ውሃ እፈልጋለሁ</b> <i>wiha ifeligalehu</i> — <i>I want water</i>. Thing first, verb last — the Amharic way.</p>","eg":[["እፈልጋለሁ","ifeligalehu","I want"],["ውሃ እፈልጋለሁ","wiha ifeligalehu","I want water"]]},
+{"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"ውሃ እፈልጋለሁ means…","o":["I want water","water is wanted","give me water"],"a":0},
+{"t":"note","tag":"The buying verb","q":"እገዛለሁ","body":"<p><b>እገዛለሁ</b> <i>igezalehu</i> — <i>I buy</i>. ዳቦ እገዛለሁ — I am buying bread. Wanting and buying: the whole shopper&rsquo;s toolkit in two -alehu verbs.</p>","eg":[["እገዛለሁ","igezalehu","I buy"]]},
+{"t":"li","q":"Want or buy — which do you hear?","say":"እገዛለሁ","o":["እገዛለሁ","እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"እገዛለሁ means…","o":["I buy","I sell","I want"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እገዛለሁ"],"a":0},
+{"t":"mc","q":"ዳቦ እገዛለሁ means…","o":["I am buying bread","the bread is cheap","I baked bread"],"a":0}
+]},
+{"id":"am_m3_2","title":"Hearing the wanting","step":"recognize","meta":"Wants and buys by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እገዛለሁ","o":["እገዛለሁ","እፈልጋለሁ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"What does እፈልጋለሁ mean?","o":["I want","I buy","I need money"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እፈልጋለሁ","እገዛለሁ"],"a":0},
+{"t":"mc","q":"Which one means I buy?","o":["እገዛለሁ","እፈልጋለሁ","እበላለሁ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","እገዛለሁ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"The thing you want goes…","o":["before the verb","after the verb","anywhere"],"a":0}
+]},
+{"id":"am_m3_3","title":"Building the wanting","step":"build","meta":"Name it, want it","vocab":[],"ex":[
+{"t":"wb","q":"Build: I want water","a":["ውሃ","እፈልጋለሁ"],"pool":["ውሃ","እፈልጋለሁ","እገዛለሁ"]},
+{"t":"mc","q":"Pick: I buy","o":["እገዛለሁ","እፈልጋለሁ","እሄዳለሁ"],"a":0},
+{"t":"wb","q":"Build: I want coffee","a":["ቡና","እፈልጋለሁ"],"pool":["ቡና","እፈልጋለሁ","ውሃ"]},
+{"t":"wb","q":"Build: I am buying bread","a":["ዳቦ","እገዛለሁ"],"pool":["ዳቦ","እገዛለሁ","እፈልጋለሁ"]},
+{"t":"li","q":"Which one do you hear?","say":"እገዛለሁ","o":["እገዛለሁ","ውሃ እፈልጋለሁ","እፈልጋለሁ"],"a":0}
+]},
+{"id":"am_m3_4","title":"The wanting in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["እፈልጋለሁ","I want"],["እገዛለሁ","I buy"],["ውሃ እፈልጋለሁ","I want water"]]},
+{"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","እገዛለሁ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"match","q":"Match the frame","pairs":[["ቡና እፈልጋለሁ","I want coffee"],["ዳቦ እገዛለሁ","I am buying bread"]]},
+{"t":"mc","q":"At the suk, your all-purpose opener is a noun plus…","o":["እፈልጋለሁ","ነው","አለ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እፈልጋለሁ","እገዛለሁ"],"a":0}
+]},
+{"id":"am_m3_5","title":"Checkpoint: the wanting","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"እገዛለሁ means…","o":["I buy","I want","I take"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","ውሃ እፈልጋለሁ","እገዛለሁ"],"a":0},
+{"t":"mc","q":"ውሃ እፈልጋለሁ means…","o":["I want water","I bought water","water, please"],"a":0},
+{"t":"mc","q":"Review — መልስ means…","o":["change","price","market"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እገዛለሁ","እፈልጋለሁ"],"a":0}
+]},
+
+/* ---------- m4 · Expensive, cheap — and the magic word ---------- */
+{"id":"am_m4","title":"Expensive, cheap — and the magic word","step":"learn","meta":"Wid new — then qenes and smile","vocab":[["ውድ ነው","wid new","it is expensive"],["ርካሽ ነው","rikash new","it is cheap"],["ቀንስ","qenes","reduce it! (bargaining)"],["በጣም ውድ ነው","betam wid new","it is very expensive"]],"ex":[
+{"t":"note","tag":"The shopper&rsquo;s verdicts","q":"ውድ ነው and ርካሽ ነው","body":"<p><b>ውድ ነው</b> <i>wid new</i> — <i>it is expensive</i> (wid also means <i>dear, beloved</i> — expensive things and dear people share a word). <b>ርካሽ ነው</b> <i>rikash new</i> — <i>it is cheap</i>.</p>","eg":[["ውድ ነው","wid new","it is expensive"],["ርካሽ ነው","rikash new","it is cheap"]]},
+{"t":"li","q":"Expensive or cheap — which do you hear?","say":"ውድ ነው","o":["ውድ ነው","ርካሽ ነው"],"a":0},
+{"t":"mc","q":"ውድ also means…","o":["dear · beloved","broken","rare"],"a":0},
+{"t":"note","tag":"Turning the dial","q":"በጣም ውድ ነው","body":"<p>Amplify with your betam: <b>በጣም ውድ ነው</b> <i>betam wid new</i> — <i>it is VERY expensive</i> — best delivered with theatrical disbelief. Bargaining at the gebeya is expected theater; at the suk, prices are mostly fixed.</p>","eg":[["በጣም ውድ ነው","betam wid new","it is very expensive"]]},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ውድ ነው"],"a":0},
+{"t":"mc","q":"Bargaining is expected at…","o":["the gebeya, not the suk","the suk, not the gebeya","banks"],"a":0},
+{"t":"note","tag":"The magic word","q":"ቀንስ","body":"<p><b>ቀንስ</b> <i>qenes</i> — <i>reduce it!</i> — the one-word engine of every negotiation, delivered warmly. ውድ ነው, ቀንስ! — it is expensive, come down! The seller expects it; the dance is the point.</p>","eg":[["ቀንስ","qenes","reduce it! (bargaining)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ርካሽ ነው"],"a":0},
+{"t":"mc","q":"ቀንስ asks the seller to…","o":["lower the price","wrap it up","weigh it"],"a":0}
+]},
+{"id":"am_m4_2","title":"Hearing the verdicts","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ርካሽ ነው","o":["ርካሽ ነው","ውድ ነው","ቀንስ"],"a":0},
+{"t":"mc","q":"What does ቀንስ mean?","o":["reduce it!","wrap it!","keep it!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውድ ነው","o":["ውድ ነው","በጣም ውድ ነው","ርካሽ ነው"],"a":0},
+{"t":"mc","q":"Which one means it is cheap?","o":["ርካሽ ነው","ውድ ነው","ቀንስ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ውድ ነው","ቀንስ"],"a":0},
+{"t":"mc","q":"The bargaining dance is…","o":["expected theater","rude","rare"],"a":0}
+]},
+{"id":"am_m4_3","title":"Building the verdicts","step":"build","meta":"Judge, then negotiate","vocab":[],"ex":[
+{"t":"wb","q":"Build: it is very expensive","a":["በጣም","ውድ","ነው"],"pool":["በጣም","ውድ","ነው","ቀንስ"]},
+{"t":"mc","q":"Pick the magic bargaining word","o":["ቀንስ","መልስ","ዋጋ"],"a":0},
+{"t":"wb","q":"Build: it is cheap","a":["ርካሽ","ነው"],"pool":["ርካሽ","ነው","ውድ"]},
+{"t":"wb","q":"Build: it is expensive — reduce it!","a":["ውድ","ነው","ቀንስ"],"pool":["ውድ","ነው","ቀንስ","ርካሽ"]},
+{"t":"li","q":"Which one do you hear?","say":"ርካሽ ነው","o":["ርካሽ ነው","ቀንስ","ውድ ነው"],"a":0}
+]},
+{"id":"am_m4_4","title":"The verdicts in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውድ ነው","expensive"],["ርካሽ ነው","cheap"],["ቀንስ","reduce it!"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ውድ ነው","ርካሽ ነው"],"a":0},
+{"t":"match","q":"Match the place to the pricing","pairs":[["ገበያ","negotiable"],["ሱቅ","mostly fixed"]]},
+{"t":"mc","q":"The full Merkato script: ይህ ስንት ነው? … በጣም ውድ ነው! …","o":["ቀንስ!","መልስ!","አለ!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ውድ ነው","o":["ውድ ነው","ርካሽ ነው","በጣም ውድ ነው"],"a":0}
+]},
+{"id":"am_m4_5","title":"Checkpoint: the verdicts","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ቀንስ means…","o":["reduce it!","take it!","count it!"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ውድ ነው","ርካሽ ነው"],"a":0},
+{"t":"mc","q":"Which one means it is expensive?","o":["ውድ ነው","ርካሽ ነው","ዋጋ ነው"],"a":0},
+{"t":"mc","q":"Review — እፈልጋለሁ means…","o":["I want","I buy","I have"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ርካሽ ነው","ቀንስ"],"a":0}
+]},
+
+/* ---------- m5 · The shopping list ---------- */
+{"id":"am_m5","title":"The shopping list","step":"learn","meta":"Sugar, salt, oil, flour — the suk basics","vocab":[["ስኳር","sikwar","sugar"],["ጨው","chew","salt"],["ዘይት","zeyit","oil"],["ዱቄት","duket","flour"]],"ex":[
+{"t":"note","tag":"Sweet and salty","q":"ስኳር and ጨው","body":"<p><b>ስኳር</b> <i>sikwar</i> — <i>sugar</i> — and <b>ጨው</b> <i>chew</i> — <i>salt</i> — with the tight ጨ leading. The buna needs one; the wet needs the other.</p>","eg":[["ስኳር","sikwar","sugar"],["ጨው","chew","salt"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ጨው"],"a":0},
+{"t":"mc","q":"ጨው means…","o":["salt","sugar","spice"],"a":0},
+{"t":"note","tag":"The kitchen pair","q":"ዘይት and ዱቄት","body":"<p><b>ዘይት</b> <i>zeyit</i> — <i>cooking oil</i> — and <b>ዱቄት</b> <i>duket</i> — <i>flour</i>, the sack that becomes dabo and, as teff flour, injera itself.</p>","eg":[["ዘይት","zeyit","oil"],["ዱቄት","duket","flour"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዘይት","o":["ዘይት","ዱቄት"],"a":0},
+{"t":"mc","q":"ዱቄት means…","o":["flour","oil","rice"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ስኳር"],"a":0},
+{"t":"mc","q":"Injera begins as a flour of…","o":["teff","wheat","corn"],"a":0}
+]},
+{"id":"am_m5_2","title":"Hearing the list","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
+{"t":"mc","q":"What does ስኳር mean?","o":["sugar","salt","flour"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ዱቄት","ዘይት"],"a":0},
+{"t":"mc","q":"Which one means oil?","o":["ዘይት","ጨው","ዱቄት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ጨው","ዱቄት"],"a":0},
+{"t":"mc","q":"The tight consonant opens…","o":["ጨው","ስኳር","ዘይት"],"a":0}
+]},
+{"id":"am_m5_3","title":"Building the list","step":"build","meta":"Fill the basket","vocab":[],"ex":[
+{"t":"wb","q":"Build: I want sugar","a":["ስኳር","እፈልጋለሁ"],"pool":["ስኳር","እፈልጋለሁ","ጨው"]},
+{"t":"mc","q":"Pick the word for salt","o":["ጨው","ስኳር","ዘይት"],"a":0},
+{"t":"wb","q":"Build: is there oil? (zeyit alle?)","a":["ዘይት","አለ?"],"pool":["ዘይት","አለ?","የለም"]},
+{"t":"mc","q":"Pick the word for flour","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዘይት","o":["ዘይት","ስኳር","ጨው"],"a":0}
+]},
+{"id":"am_m5_4","title":"The list in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስኳር","sugar"],["ጨው","salt"],["ዘይት","oil"]]},
+{"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ጨው","ስኳር"],"a":0},
+{"t":"match","q":"Match the staple to the dish","pairs":[["ዱቄት","ዳቦ"],["ስኳር","ቡና"]]},
+{"t":"mc","q":"ጨው አለ? — የለም. The shop is out of…","o":["salt","sugar","oil"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ዘይት","ዱቄት"],"a":0}
+]},
+{"id":"am_m5_5","title":"Checkpoint: the list","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ዘይት means…","o":["oil","salt","butter"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ዱቄት","ጨው"],"a":0},
+{"t":"mc","q":"Which one means flour?","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
+{"t":"mc","q":"Review — ቀንስ means…","o":["reduce it!","it is cheap","wrap it"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ስኳር","ዘይት"],"a":0}
+]},
+
+/* ---------- m6 · At the counter ---------- */
+{"id":"am_m6","title":"At the counter","step":"learn","meta":"Yistugn — the polite give-me that opens shops","vocab":[["ይስጡኝ","yistugn","please give me (polite)"],["ስኳር አለ?","sikwar alle?","is there sugar?"],["አንድ ኪሎ","and kilo","one kilo"]],"ex":[
+{"t":"note","tag":"The counter verb","q":"ይስጡኝ","body":"<p><b>ይስጡኝ</b> <i>yistugn</i> — <i>please give me</i> — the polite request that runs every counter in Ethiopia. ስኳር ይስጡኝ — please give me sugar. Politeness built into the verb itself, erswo-style.</p>","eg":[["ይስጡኝ","yistugn","please give me (polite)"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","እርዳኝ"],"a":0},
+{"t":"mc","q":"ይስጡኝ politely asks someone to…","o":["give you something","help you","wait"],"a":0},
+{"t":"note","tag":"Check first","q":"ስኳር አለ?","body":"<p>Your alle pair earns money now: <b>ስኳር አለ?</b> <i>sikwar alle?</i> — <i>is there sugar?</i> The answer is አለ or የለም, and the whole economy runs on the exchange.</p>","eg":[["ስኳር አለ?","sikwar alle?","is there sugar?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ስኳር አለ?","o":["ስኳር አለ?","ይስጡኝ"],"a":0},
+{"t":"mc","q":"ስኳር አለ? asks…","o":["is there sugar?","how much is sugar?","give me sugar"],"a":0},
+{"t":"note","tag":"How much of it","q":"አንድ ኪሎ","body":"<p><b>አንድ ኪሎ</b> <i>and kilo</i> — <i>one kilo</i> — your Zone 4 numbers meeting the scale. አንድ ኪሎ ስኳር ይስጡኝ — one kilo of sugar, please.</p>","eg":[["አንድ ኪሎ","and kilo","one kilo"]]},
+{"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ስኳር አለ?"],"a":0},
+{"t":"mc","q":"አንድ ኪሎ means…","o":["one kilo","one bag","one birr"],"a":0}
+]},
+{"id":"am_m6_2","title":"Hearing the counter","step":"recognize","meta":"Requests by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ስኳር አለ?","o":["ስኳር አለ?","አንድ ኪሎ","ይስጡኝ"],"a":0},
+{"t":"mc","q":"What does ይስጡኝ mean?","o":["please give me","please help me","please wait"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ይስጡኝ","ስኳር አለ?"],"a":0},
+{"t":"mc","q":"The yes-answer to ስኳር አለ? is…","o":["አለ","የለም","ቀንስ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","ስኳር አለ?","አንድ ኪሎ"],"a":0},
+{"t":"mc","q":"The politeness in ይስጡኝ comes from…","o":["the erswo-style verb form","saying it twice","a bow"],"a":0}
+]},
+{"id":"am_m6_3","title":"Building the counter","step":"build","meta":"The whole purchase","vocab":[],"ex":[
+{"t":"wb","q":"Build: is there sugar?","a":["ስኳር","አለ?"],"pool":["ስኳር","አለ?","ይስጡኝ"]},
+{"t":"mc","q":"Pick: please give me","o":["ይስጡኝ","እርዳኝ","ቀንስ"],"a":0},
+{"t":"wb","q":"Build: one kilo of sugar, please","a":["አንድ","ኪሎ","ስኳር","ይስጡኝ"],"pool":["አንድ","ኪሎ","ስኳር","ይስጡኝ","አለ?"]},
+{"t":"wb","q":"Build: please give me salt","a":["ጨው","ይስጡኝ"],"pool":["ጨው","ይስጡኝ","ስኳር"]},
+{"t":"li","q":"Which one do you hear?","say":"ስኳር አለ?","o":["ስኳር አለ?","ይስጡኝ","አንድ ኪሎ"],"a":0}
+]},
+{"id":"am_m6_4","title":"The counter in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይስጡኝ","please give me"],["ስኳር አለ?","is there sugar?"],["አንድ ኪሎ","one kilo"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","አንድ ኪሎ","ስኳር አለ?"],"a":0},
+{"t":"match","q":"Match the step to the phrase","pairs":[["check availability","ስኳር አለ?"],["make the request","ይስጡኝ"]]},
+{"t":"mc","q":"The complete counter visit, in order…","o":["ስኳር አለ? → አንድ ኪሎ ይስጡኝ → አመሰግናለሁ","ቀንስ → የለም → ቻው","ውድ ነው → አለ → እንሂድ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ስኳር አለ?","ይስጡኝ"],"a":0}
+]},
+{"id":"am_m6_5","title":"Checkpoint: the counter","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ይስጡኝ means…","o":["please give me","I will take it","hand it over"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ይስጡኝ","ስኳር አለ?"],"a":0},
+{"t":"mc","q":"ስኳር አለ? uses which little giant from Zone 6?","o":["አለ","ነው","ውስጥ"],"a":0},
+{"t":"mc","q":"Review — which one means salt?","o":["ጨው","ስኳር","ዘይት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","ስኳር አለ?","አንድ ኪሎ"],"a":0}
+]},
+
+/* ---------- m7 · The price numbers ---------- */
+{"id":"am_m7","title":"The price numbers","step":"learn","meta":"Haya, hamsa, meto — where prices actually live","vocab":[["ሃያ","haya","twenty"],["ሃምሳ","hamsa","fifty"],["መቶ","meto","hundred"]],"ex":[
+{"t":"note","tag":"Beyond ten","q":"ሃያ and ሃምሳ","body":"<p>Real prices need bigger numbers: <b>ሃያ</b> <i>haya</i> — <i>twenty</i> — and <b>ሃምሳ</b> <i>hamsa</i> — <i>fifty</i>. ሃምሳ ብር — fifty birr — is the shape of most everyday price answers.</p>","eg":[["ሃያ","haya","twenty"],["ሃምሳ","hamsa","fifty"]]},
+{"t":"li","q":"Twenty or fifty — which do you hear?","say":"ሃያ","o":["ሃያ","ሃምሳ"],"a":0},
+{"t":"mc","q":"ሃምሳ means…","o":["fifty","twenty","forty"],"a":0},
+{"t":"note","tag":"The round one","q":"መቶ","body":"<p><b>መቶ</b> <i>meto</i> — <i>one hundred</i>. መቶ ብር, the green note that anchors the wallet. From and to meto, you can now follow any price in the country.</p>","eg":[["መቶ","meto","hundred"]]},
+{"t":"li","q":"Which one do you hear?","say":"መቶ","o":["መቶ","ሃምሳ"],"a":0},
+{"t":"mc","q":"መቶ ብር means…","o":["one hundred birr","fifty birr","big money"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ሃምሳ","o":["ሃምሳ","ሃያ"],"a":0},
+{"t":"mc","q":"ሃያ ብር means…","o":["twenty birr","two birr","ten birr"],"a":0}
+]},
+{"id":"am_m7_2","title":"Hearing the price numbers","step":"recognize","meta":"Big numbers by ear","vocab":[],"ex":[
+{"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","መቶ","ሃያ"],"a":0},
+{"t":"mc","q":"What does ሃያ mean?","o":["twenty","fifty","hundred"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"መቶ","o":["መቶ","ሃያ","ሃምሳ"],"a":0},
+{"t":"mc","q":"Which one is one hundred?","o":["መቶ","ሃምሳ","አስር"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሃያ","o":["ሃያ","ሃምሳ","መቶ"],"a":0},
+{"t":"mc","q":"Most everyday price answers arrive shaped like…","o":["ሃምሳ ብር","አንድ ሳንቲም","መቶ ኪሎ"],"a":0}
+]},
+{"id":"am_m7_3","title":"Building the price numbers","step":"build","meta":"Prices out loud","vocab":[],"ex":[
+{"t":"wb","q":"Build: fifty birr","a":["ሃምሳ","ብር"],"pool":["ሃምሳ","ብር","መቶ"]},
+{"t":"mc","q":"Pick: one hundred","o":["መቶ","ሃያ","ሃምሳ"],"a":0},
+{"t":"wb","q":"Build: twenty birr","a":["ሃያ","ብር"],"pool":["ሃያ","ብር","ሃምሳ"]},
+{"t":"wb","q":"Build: one hundred birr","a":["መቶ","ብር"],"pool":["መቶ","ብር","ሃያ"]},
+{"t":"li","q":"Which number do you hear?","say":"መቶ","o":["መቶ","ሃምሳ","ሃያ"],"a":0}
+]},
+{"id":"am_m7_4","title":"The price numbers in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the number to its value","pairs":[["ሃያ","20"],["ሃምሳ","50"],["መቶ","100"]]},
+{"t":"li","q":"Which number do you hear?","say":"ሃያ","o":["ሃያ","መቶ","ሃምሳ"],"a":0},
+{"t":"match","q":"Match the exchange","pairs":[["ይህ ስንት ነው?","ሃምሳ ብር"],["ውድ ነው!","ቀንስ!"]]},
+{"t":"mc","q":"The scarf costs ሃምሳ ብር; you offer ሃያ; you might settle at…","o":["a number between","መቶ","ሳንቲም"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","ሃያ","መቶ"],"a":0}
+]},
+{"id":"am_m7_5","title":"Checkpoint: Zone 8 complete","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
+{"t":"mc","q":"መቶ means…","o":["hundred","fifty","thousand"],"a":0},
+{"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","መቶ","ሃያ"],"a":0},
+{"t":"mc","q":"Review — ይህ ስንት ነው? asks…","o":["how much is this?","what is this?","is this cheap?"],"a":0},
+{"t":"mc","q":"Review — the polite give-me is…","o":["ይስጡኝ","እርዳኝ","ቀንስ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ቀንስ","o":["ቀንስ","መልስ","ዋጋ"],"a":0},
+{"t":"mc","q":"Review — bargaining belongs at…","o":["the gebeya","the suk","the bank"],"a":0},
+{"t":"mc","q":"Review — እገዛለሁ means…","o":["I buy","I want","I pay"],"a":0}
 ]}
 ];
 
@@ -2097,9 +2390,11 @@ const AM_UNITS=[
 {"n":6,"t":"Around the home","d":"Bet builds every room — plus where-is-it and the home verbs","lessons":["am_h1","am_h1_2","am_h1_3","am_h1_4","am_h1_5","am_h2","am_h2_2","am_h2_3","am_h2_4","am_h2_5","am_h3","am_h3_2","am_h3_3","am_h3_4","am_h3_5","am_h4","am_h4_2","am_h4_3","am_h4_4","am_h4_5","am_h5","am_h5_2","am_h5_3","am_h5_4","am_h5_5","am_h6","am_h6_2","am_h6_3","am_h6_4","am_h6_5","am_h7","am_h7_2","am_h7_3","am_h7_4","am_h7_5"]}
 ,
 {"n":7,"t":"Getting around","d":"The minibus and its weyala, where-to, near and far — and weraj alle!","lessons":["am_t1","am_t1_2","am_t1_3","am_t1_4","am_t1_5","am_t2","am_t2_2","am_t2_3","am_t2_4","am_t2_5","am_t3","am_t3_2","am_t3_3","am_t3_4","am_t3_5","am_t4","am_t4_2","am_t4_3","am_t4_4","am_t4_5","am_t5","am_t5_2","am_t5_3","am_t5_4","am_t5_5","am_t6","am_t6_2","am_t6_3","am_t6_4","am_t6_5","am_t7","am_t7_2","am_t7_3","am_t7_4","am_t7_5"]}
+,
+{"n":8,"t":"Shopping and money","d":"Birr, sint new, the bargaining dance — and the counter script","lessons":["am_m1","am_m1_2","am_m1_3","am_m1_4","am_m1_5","am_m2","am_m2_2","am_m2_3","am_m2_4","am_m2_5","am_m3","am_m3_2","am_m3_3","am_m3_4","am_m3_5","am_m4","am_m4_2","am_m4_3","am_m4_4","am_m4_5","am_m5","am_m5_2","am_m5_3","am_m5_4","am_m5_5","am_m6","am_m6_2","am_m6_3","am_m6_4","am_m6_5","am_m7","am_m7_2","am_m7_3","am_m7_4","am_m7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?","am_n1":"1 2 3","am_n2":"6 7 8","am_n3":"ሰኞ","am_n4":"እሁድ","am_n5":"ስንት?","am_n6":"ሀበሻ ሰዓት","am_n7":"ዓመት","am_d1":"እንጀራ","am_d2":"ቡና","am_d3":"እባክህ","am_d4":"ብላ!","am_d5":"ዶሮ ወጥ","am_d6":"በጣም","am_d7":"ጉርሻ","am_h1":"ቤት","am_h2":"ማድቤት","am_h3":"ወንበር","am_h4":"የት ነው?","am_h5":"ጀበና","am_h6":"አበስላለሁ","am_h7":"ውስጥ","am_t1":"ገበያ","am_t2":"ና","am_t3":"ወደ","am_t4":"ታክሲ","am_t5":"ሩቅ","am_t6":"ጠፋሁ","am_t7":"እንሂድ","am_m1":"ብር","am_m2":"ስንት ነው?","am_m3":"እፈልጋለሁ","am_m4":"ቀንስ","am_m5":"ስኳር","am_m6":"ይስጡኝ","am_m7":"መቶ"};
 
 const AM_SRS_SEED=[];
 
