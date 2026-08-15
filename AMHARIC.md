@@ -211,14 +211,26 @@ gelada monkey or walia ibex (national animal).
       (before-noun vs wist after-noun), taksi/weyala/weraj alle!/
       bajaj, kirb/ruk, tefahu/irdagn/mengedu (-u = the), inihid/qes
       bel/qoy.
-- [ ] Zone 8 (Shopping & money) NEXT: birr; sint new? (how much is
-      it — sint recycle); wedd new (expensive)/rekash (cheap); qenes
-      (reduce it! — bargaining verb); demonstrative yih recycled for
-      point-and-ask (yih sint new?); alle/yellem shopping dialogs;
-      suk vs gebeya pricing note (suk fixed, gebeya negotiable);
-      santim? (cents rare — note birr notes/coins).
-- [ ] Zones 9-12 per the zone plan above, then orphan/cold-test
-      passes (validate the orphan metric against a pre-fix pack).
+- [x] Zones 8-12 COMPLETE — **COURSE COMPLETE: 420 lessons / 2688
+      exercises (incl. 175 review mcs) / 499 clips.** Z8 shopping
+      (birr, sint recycle, qenes bargaining, yistugn, haya/hamsa/
+      meto), Z9 work/school (temari root, amarigna imaralehu,
+      loanword district, ke...iske, min), Z10 body/health (amemegn
+      -egn family, hakim bet, chigir yellem), Z11 past/future (-ku
+      past, neber, ONE-FORM future + time words, kiremt weather),
+      Z12 conversation (des bilognal, welcome arc, algebagnem/gebagn/
+      digem, iwedalehu + al-...-m negative, ina/gin/weyim, sefer,
+      melkam guzo + berta).
+- [x] Post-course passes COMPLETE: cold-test found 3 real issues (the
+      match-LHS-notation bug class in c4_4, two arrow-chain options
+      that would be spoken) — all fixed, 4 orphan clips pruned, 503→
+      499 strings. Orphan pass: 175 reachable orphans → 0 via review
+      mcs on checkpoints ≥2 zones later (max load 9 of cap 15;
+      letters excluded per the alphabet-separation rule; 38 z11-12
+      words left to SM-2 by design). Audio-neutral, --check MATCHES.
+      NOTE: check_am.py (scratchpad) now also guards MIXED-SCRIPT
+      correct options — that guard caught 8 real recording bugs
+      across zones 7-12.
 - [ ] Orphan review pass + cold-test.
 - [ ] Trip pack.
 - [ ] Art.

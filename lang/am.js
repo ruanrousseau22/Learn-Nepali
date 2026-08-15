@@ -653,7 +653,8 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እናት","ወንድም"],"a":0},
 {"t":"mc","q":"Which one means mother?","o":["እናት","አባት","እህት"],"a":0},
 {"t":"mc","q":"Review — ሰዎች means…","o":["people","person","family"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","እህት","አባት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","እህት","አባት"],"a":0},
+{"t":"mc","q":"Review — which means “hello · peace”?","o":["ሰላም","አማርኛ","ቤተሰቤ"],"a":0}
 ]},
 
 /* ---------- f2 · Household and children ---------- */
@@ -695,7 +696,8 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","ልጆች","አያት"],"a":0},
 {"t":"mc","q":"Which one means grandparent?","o":["አያት","ቤተሰብ","ልጅ"],"a":0},
 {"t":"mc","q":"Review — ጓደኛ means…","o":["friend","family","child"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","ቤተሰብ","ልጅ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","ቤተሰብ","ልጅ"],"a":0},
+{"t":"mc","q":"Review — which means “is everything peaceful? (a greeting)”?","o":["ሰላም ነው?","እንደምን አደርክ?","ደህና ነሽ?"],"a":0}
 ]},
 
 /* ---------- f3 · My and your ---------- */
@@ -736,7 +738,8 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አባትሽ","o":["አባትሽ","አባትህ","አባቴ"],"a":0},
 {"t":"mc","q":"Which one means my mother?","o":["እናቴ","እናት","አባቴ"],"a":0},
 {"t":"mc","q":"Review — ቤተሰብ means…","o":["family","household chores","children"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","አባቴ","አባትሽ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","አባቴ","አባትሽ"],"a":0},
+{"t":"mc","q":"Review — which means “Amharic”?","o":["አማርኛ","ሰላም","ሳንቲም"],"a":0}
 ]},
 
 /* ---------- f4 · This is my… ---------- */
@@ -945,7 +948,11 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"አምስት","o":["አምስት","ሶስት","አንድ"],"a":0},
 {"t":"mc","q":"Which one is two?","o":["ሁለት","አንድ","ሶስት"],"a":0},
 {"t":"mc","q":"Review — ማን ነው? means…","o":["who is it?","how many?","what time?"],"a":0},
-{"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","ሁለት","አራት"],"a":0}
+{"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","ሁለት","አራት"],"a":0},
+{"t":"mc","q":"Review — which means “are you well? (to a man)”?","o":["ደህና ነህ?","እንደምን ዋልክ?","ከየት ነሽ?"],"a":0},
+{"t":"mc","q":"Review — which means “my name is …”?","o":["ስሜ … ነው","ጤና ይስጥልኝ","ደህና እደር"],"a":0},
+{"t":"mc","q":"Review — which means “you (polite)”?","o":["እርስዎ","ኢትዮጵያ","ወንድ"],"a":0},
+{"t":"mc","q":"Review — which means “goodbye (to a woman)”?","o":["ደህና ሁኚ","ስሜ … ነው","ከአሜሪካ ነኝ"],"a":0}
 ]},
 
 /* ---------- n2 · Six to ten ---------- */
@@ -987,7 +994,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"ስምንት","o":["ስምንት","ሰባት","ስድስት"],"a":0},
 {"t":"mc","q":"Which one is ten?","o":["አስር","ዘጠኝ","አራት"],"a":0},
 {"t":"mc","q":"Review — which one is five?","o":["አምስት","አራት","ሶስት"],"a":0},
-{"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","ስምንት","አስር"],"a":0}
+{"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","ስምንት","አስር"],"a":0},
+{"t":"mc","q":"Review — which means “are you well? (to a woman)”?","o":["ደህና ነሽ?","ስምሽ ማን ነው?","እንደምን ዋልክ?"],"a":0},
+{"t":"mc","q":"Review — which means “good morning (to a man)”?","o":["እንደምን አደርክ?","ስምህ ማን ነው?","ደህና ነዎት?"],"a":0},
+{"t":"mc","q":"Review — which means “are you well? (polite)”?","o":["ደህና ነዎት?","እንደምን አደርክ?","ስምሽ ማን ነው?"],"a":0}
 ]},
 
 /* ---------- n3 · The weekdays ---------- */
@@ -1029,7 +1039,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which day do you hear?","say":"ረቡዕ","o":["ረቡዕ","ማክሰኞ","ዓርብ"],"a":0},
 {"t":"mc","q":"Which one is Friday?","o":["ዓርብ","ሐሙስ","ሰኞ"],"a":0},
 {"t":"mc","q":"Review — which one is nine?","o":["ዘጠኝ","ስምንት","አስር"],"a":0},
-{"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ዓርብ","ረቡዕ"],"a":0}
+{"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ዓርብ","ረቡዕ"],"a":0},
+{"t":"mc","q":"Review — which means “I am well”?","o":["ደህና ነኝ","ስሜ … ነው","እግዚአብሔር ይመስገን"],"a":0},
+{"t":"mc","q":"Review — which means “good morning (to a woman)”?","o":["እንደምን አደርሽ?","ስምህ ማን ነው?","ደህና ነህ?"],"a":0},
+{"t":"mc","q":"Review — which means “Mrs.”?","o":["ወይዘሮ","እርስዎ","ወንድ"],"a":0}
 ]},
 
 /* ---------- n4 · Weekend, today, tomorrow ---------- */
@@ -1070,7 +1083,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ትናንት","o":["ትናንት","ዛሬ","ነገ"],"a":0},
 {"t":"mc","q":"Which one means tomorrow?","o":["ነገ","ዛሬ","ትናንት"],"a":0},
 {"t":"mc","q":"Review — ማክሰኞ means…","o":["Tuesday","Monday","Thursday"],"a":0},
-{"t":"li","q":"Which day do you hear?","say":"ነገ","o":["ነገ","እሁድ","ትናንት"],"a":0}
+{"t":"li","q":"Which day do you hear?","say":"ነገ","o":["ነገ","እሁድ","ትናንት"],"a":0},
+{"t":"mc","q":"Review — which means “God be thanked (the set reply)”?","o":["እግዚአብሔር ይመስገን","አዲስ አበባ","ደህና እደሪ"],"a":0},
+{"t":"mc","q":"Review — which means “good afternoon (to a man)”?","o":["እንደምን ዋልክ?","ደህና ነሽ?","ደህና ነህ?"],"a":0},
+{"t":"mc","q":"Review — which means “where are you from? (to a man)”?","o":["ከየት ነህ?","ደህና ነዎት?","እንደምን ዋልክ?"],"a":0}
 ]},
 
 /* ---------- n5 · What time is it? ---------- */
@@ -1112,7 +1128,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
 {"t":"mc","q":"ሰዓት covers hour, time and…","o":["watch","minute","calendar"],"a":0},
 {"t":"mc","q":"Review — ዛሬ means…","o":["today","tomorrow","now"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ይቅርታ","ስንት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ይቅርታ","ስንት"],"a":0},
+{"t":"mc","q":"Review — which means “what is your name? (to a man)”?","o":["ስምህ ማን ነው?","ደህና ነሽ?","ደህና ነዎት?"],"a":0},
+{"t":"mc","q":"Review — which means “good night (to a man)”?","o":["ደህና እደር","ከአሜሪካ ነኝ","ስሜ … ነው"],"a":0},
+{"t":"mc","q":"Review — which means “where are you from? (to a woman)”?","o":["ከየት ነሽ?","እንደምን ዋልክ?","ስምህ ማን ነው?"],"a":0}
 ]},
 
 /* ---------- n6 · The Ethiopian clock ---------- */
@@ -1154,7 +1173,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ፈረንጅ ሰዓት","o":["ፈረንጅ ሰዓት","ሀበሻ ሰዓት","ማታ"],"a":0},
 {"t":"mc","q":"ጠዋት means…","o":["morning","evening","sunrise"],"a":0},
 {"t":"mc","q":"Review — ስንት ሰዓት ነው? asks…","o":["what time is it?","which day is it?","how far is it?"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ጠዋት","ፈረንጅ ሰዓት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ጠዋት","ፈረንጅ ሰዓት"],"a":0},
+{"t":"mc","q":"Review — which means “what is your name? (to a woman)”?","o":["ስምሽ ማን ነው?","እንደምን ዋልክ?","እንደምን አደርክ?"],"a":0},
+{"t":"mc","q":"Review — which means “good night (to a woman)”?","o":["ደህና እደሪ","ጤና ይስጥልኝ","እግዚአብሔር ይመስገን"],"a":0},
+{"t":"mc","q":"Review — which means “Ethiopia”?","o":["ኢትዮጵያ","ጓደኛ","ወይዘሮ"],"a":0}
 ]},
 
 /* ---------- n7 · Week, month, year ---------- */
@@ -1198,7 +1220,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — which one is eight?","o":["ስምንት","ሰባት","ዘጠኝ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
 {"t":"mc","q":"Review — the market day is…","o":["ቅዳሜ","ሰኞ","ረቡዕ"],"a":0},
-{"t":"mc","q":"Review — ነገ means…","o":["tomorrow","yesterday","today"],"a":0}
+{"t":"mc","q":"Review — ነገ means…","o":["tomorrow","yesterday","today"],"a":0},
+{"t":"mc","q":"Review — which means “I am from America”?","o":["ከአሜሪካ ነኝ","ስሜ … ነው","እግዚአብሔር ይመስገን"],"a":0}
 ]},
 
 /* ---------- d1 · The staples ---------- */
@@ -1239,7 +1262,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","ዳቦ","ውሃ"],"a":0},
 {"t":"mc","q":"Which one means water?","o":["ውሃ","ወጥ","ዳቦ"],"a":0},
 {"t":"mc","q":"Review — ስንት means…","o":["how many","what time","which"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","ዳቦ","እንጀራ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","ዳቦ","እንጀራ"],"a":0},
+{"t":"mc","q":"Review — which means “father”?","o":["አባት","አባቷ","ቤተሰብ"],"a":0},
+{"t":"mc","q":"Review — which means “grandparent”?","o":["አያት","አባቷ","እናቴ"],"a":0},
+{"t":"mc","q":"Review — which means “his father”?","o":["አባቱ","እናቴ","አያት"],"a":0}
 ]},
 
 /* ---------- d2 · Buna — the ceremony ---------- */
@@ -1281,7 +1307,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ሻይ","ወተት"],"a":0},
 {"t":"mc","q":"Which one means tea?","o":["ሻይ","ወተት","ቡና"],"a":0},
 {"t":"mc","q":"Review — which one means water?","o":["ውሃ","ወተት","ወጥ"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ወተት","ቡና"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ወተት","ቡና"],"a":0},
+{"t":"mc","q":"Review — which means “mother”?","o":["እናት","እናቷ","አባቱ"],"a":0},
+{"t":"mc","q":"Review — which means “my father”?","o":["አባቴ","እናቷ","አያት"],"a":0},
+{"t":"mc","q":"Review — which means “her father”?","o":["አባቷ","ልጆች","አባትሽ"],"a":0}
 ]},
 
 /* ---------- d3 · Hungry, thirsty, please ---------- */
@@ -1322,7 +1351,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ","ራበኝ"],"a":0},
 {"t":"mc","q":"Which one means I am hungry?","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
 {"t":"mc","q":"Review — ቡና means…","o":["coffee","tea","milk"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ","እባክሽ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ","እባክሽ"],"a":0},
+{"t":"mc","q":"Review — which means “brother”?","o":["ወንድም","ልጆች","አባትሽ"],"a":0},
+{"t":"mc","q":"Review — which means “my mother”?","o":["እናቴ","ወንድም","አባቱ"],"a":0},
+{"t":"mc","q":"Review — which means “her mother”?","o":["እናቷ","አባቴ","አባትህ"],"a":0}
 ]},
 
 /* ---------- d4 · I eat, I drink ---------- */
@@ -1363,7 +1395,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እበላለሁ","o":["እበላለሁ","እጠጣለሁ","ብላ"],"a":0},
 {"t":"mc","q":"Which one is eat!, to a man?","o":["ብላ","ብዪ","እበላለሁ"],"a":0},
 {"t":"mc","q":"Review — ራበኝ means…","o":["I am hungry","I am thirsty","eat!"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","ብዪ","እበላለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","ብዪ","እበላለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “sister”?","o":["እህት","አባቴ","ወንድም"],"a":0},
+{"t":"mc","q":"Review — which means “your father (to a man)”?","o":["አባትህ","ልጆች","አባቷ"],"a":0},
+{"t":"mc","q":"Review — which means “your father (polite)”?","o":["አባትዎ","ቤተሰብ","እናት"],"a":0}
 ]},
 
 /* ---------- d5 · The wet family ---------- */
@@ -1405,7 +1440,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
 {"t":"mc","q":"Which one means meat?","o":["ሥጋ","አትክልት","ወጥ"],"a":0},
 {"t":"mc","q":"Review — ብላ means…","o":["eat! (to a man)","drink!","I eat"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","ምስር ወጥ","አትክልት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","ምስር ወጥ","አትክልት"],"a":0},
+{"t":"mc","q":"Review — which means “family”?","o":["ቤተሰብ","አባትህ","አባት"],"a":0},
+{"t":"mc","q":"Review — which means “your father (to a woman)”?","o":["አባትሽ","ቤተሰብ","እህት"],"a":0},
+{"t":"mc","q":"Review — which means “Miss”?","o":["ወይዘሪት","አባት","አባቱ"],"a":0}
 ]},
 
 /* ---------- d6 · Delicious — and enough ---------- */
@@ -1447,7 +1485,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","በጣም","ጣፋጭ ነው"],"a":0},
 {"t":"mc","q":"Which one means very?","o":["በጣም","በቃኝ","ነው"],"a":0},
 {"t":"mc","q":"Review — ዶሮ ወጥ is…","o":["the festival chicken stew","the lentil stew","the bread"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በጣም ጣፋጭ ነው","በቃኝ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በጣም ጣፋጭ ነው","በቃኝ"],"a":0},
+{"t":"mc","q":"Review — which means “children”?","o":["ልጆች","አባትሽ","አባቱ"],"a":0},
+{"t":"mc","q":"Review — which means “this is my father”?","o":["ይህ አባቴ ነው","ቤት ነኝ","ኢትዮጵያን እወዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “this is my friend”?","o":["ይህ ጓደኛዬ ነው","ሽንት ቤት","ቀስ በል"],"a":0}
 ]},
 
 /* ---------- d7 · At the table ---------- */
@@ -1491,7 +1532,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — I am hungry is…","o":["ራበኝ","ጠማኝ","በቃኝ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","እባክሽ"],"a":0},
 {"t":"mc","q":"Review — እበላለሁ means…","o":["I eat","I drink","eat!"],"a":0},
-{"t":"mc","q":"Review — the graceful I-am-full is…","o":["በቃኝ","እንብላ","በጣም"],"a":0}
+{"t":"mc","q":"Review — the graceful I-am-full is…","o":["በቃኝ","እንብላ","በጣም"],"a":0},
+{"t":"mc","q":"Review — which means “my family”?","o":["ቤተሰቤ","ቤተሰብ","አያት"],"a":0}
 ]},
 
 /* ---------- h1 · The house ---------- */
@@ -1533,7 +1575,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","ግቢ","መስኮት"],"a":0},
 {"t":"mc","q":"Which one means door?","o":["በር","መስኮት","ቤት"],"a":0},
 {"t":"mc","q":"Review — እንብላ means…","o":["let us eat","eat!","I eat"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","ቤት","ግቢ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","ቤት","ግቢ"],"a":0},
+{"t":"mc","q":"Review — which means “one”?","o":["አንድ","ሁለት","ሶስት"],"a":0},
+{"t":"mc","q":"Review — which means “seven”?","o":["ሰባት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “Thursday”?","o":["ሐሙስ","ማክሰኞ","ረቡዕ"],"a":0}
 ]},
 
 /* ---------- h2 · The rooms ---------- */
@@ -1575,7 +1620,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","ማድቤት","መኝታ ቤት"],"a":0},
 {"t":"mc","q":"Which one means room?","o":["ክፍል","ቤት","ግቢ"],"a":0},
 {"t":"mc","q":"Review — ግቢ means…","o":["compound · yard","kitchen","hall"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ክፍል","ሽንት ቤት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ክፍል","ሽንት ቤት"],"a":0},
+{"t":"mc","q":"Review — which means “two”?","o":["ሁለት","አንድ","ሶስት"],"a":0},
+{"t":"mc","q":"Review — which means “eight”?","o":["ስምንት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “Friday”?","o":["ዓርብ","ማክሰኞ","ረቡዕ"],"a":0}
 ]},
 
 /* ---------- h3 · The furniture ---------- */
@@ -1617,7 +1665,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","አልጋ","ጠረጴዛ"],"a":0},
 {"t":"mc","q":"Which one means table?","o":["ጠረጴዛ","አልጋ","ወንበር"],"a":0},
 {"t":"mc","q":"Review — ሽንት ቤት means…","o":["toilet","bathroom sink","kitchen"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ጠረጴዛ","መብራት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ጠረጴዛ","መብራት"],"a":0},
+{"t":"mc","q":"Review — which means “three”?","o":["ሶስት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “nine”?","o":["ዘጠኝ","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “Saturday”?","o":["ቅዳሜ","ማክሰኞ","ረቡዕ"],"a":0}
 ]},
 
 /* ---------- h4 · Where is it? ---------- */
@@ -1659,7 +1710,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እዚህ","o":["እዚህ","እዚያ","አለ"],"a":0},
 {"t":"mc","q":"Which one means there is?","o":["አለ","የለም","እዚህ"],"a":0},
 {"t":"mc","q":"Review — መብራት means…","o":["light · electricity","water","fire"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","የለም","እዚያ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","የለም","እዚያ"],"a":0},
+{"t":"mc","q":"Review — which means “four”?","o":["አራት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “ten”?","o":["አስር","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “hour · time · watch”?","o":["ሰዓት","ስንት","ጠዋት"],"a":0}
 ]},
 
 /* ---------- h5 · Cups and the jebena ---------- */
@@ -1701,7 +1755,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ኩባያ","ጀበና"],"a":0},
 {"t":"mc","q":"Which one means cup?","o":["ኩባያ","ሳህን","ማንኪያ"],"a":0},
 {"t":"mc","q":"Review — የለም means…","o":["there is not","there is","not yet"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ሳህን","ኩባያ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ሳህን","ኩባያ"],"a":0},
+{"t":"mc","q":"Review — which means “five”?","o":["አምስት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “Tuesday”?","o":["ማክሰኞ","ረቡዕ","ሐሙስ"],"a":0},
+{"t":"mc","q":"Review — which means “how many · how much”?","o":["ስንት","ሐሙስ","ትናንት"],"a":0}
 ]},
 
 /* ---------- h6 · What you do at home ---------- */
@@ -1742,7 +1799,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
 {"t":"mc","q":"Which one means I cook?","o":["አበስላለሁ","አጥባለሁ","እነሳለሁ"],"a":0},
 {"t":"mc","q":"Review — ጀበና means…","o":["coffee pot","kettle","cup"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","እነሳለሁ","አበስላለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","እነሳለሁ","አበስላለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “six”?","o":["ስድስት","አንድ","ሁለት"],"a":0},
+{"t":"mc","q":"Review — which means “Wednesday”?","o":["ረቡዕ","ማክሰኞ","ሐሙስ"],"a":0},
+{"t":"mc","q":"Review — which means “excuse me · sorry”?","o":["ይቅርታ","ትናንት","እሁድ"],"a":0}
 ]},
 
 /* ---------- h7 · Inside the house ---------- */
@@ -1785,7 +1845,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — which one means bedroom?","o":["መኝታ ቤት","ማድቤት","ሽንት ቤት"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
 {"t":"mc","q":"Review — I get up is…","o":["እነሳለሁ","እተኛለሁ","አበስላለሁ"],"a":0},
-{"t":"mc","q":"Review — the famous clay coffee pot is the…","o":["ጀበና","ኩባያ","ሳህን"],"a":0}
+{"t":"mc","q":"Review — the famous clay coffee pot is the…","o":["ጀበና","ኩባያ","ሳህን"],"a":0},
+{"t":"mc","q":"Review — which means “Ethiopian time”?","o":["ሀበሻ ሰዓት","ዛሬ ሰኞ ነው","ወራጅ አለ!"],"a":0}
 ]},
 
 /* ---------- t1 · Places in town ---------- */
@@ -1827,7 +1888,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሱቅ","o":["ሱቅ","ከተማ","ገበያ"],"a":0},
 {"t":"mc","q":"Which one means school?","o":["ትምህርት ቤት","መኝታ ቤት","ሽንት ቤት"],"a":0},
 {"t":"mc","q":"Review — ውስጥ comes…","o":["after its noun","before its noun","alone"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","ሱቅ","መንገድ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","ሱቅ","መንገድ"],"a":0},
+{"t":"mc","q":"Review — which means “injera (the sourdough flatbread)”?","o":["እንጀራ","በቃኝ","ራበኝ"],"a":0},
+{"t":"mc","q":"Review — which means “vegetables”?","o":["አትክልት","እባክህ","እንጀራ"],"a":0},
+{"t":"mc","q":"Review — which means “European time”?","o":["ፈረንጅ ሰዓት","ዛሬ ሰኞ ነው","ሙቀት ነው"],"a":0}
 ]},
 
 /* ---------- t2 · Going and coming ---------- */
@@ -1868,7 +1932,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ና","o":["ና","ነይ","እመጣለሁ"],"a":0},
 {"t":"mc","q":"Which one means I go?","o":["እሄዳለሁ","እመጣለሁ","ነይ"],"a":0},
 {"t":"mc","q":"Review — ገበያ means…","o":["market","shop","street"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እሄዳለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “milk”?","o":["ወተት","እበላለሁ","አትክልት"],"a":0},
+{"t":"mc","q":"Review — which means “it is delicious”?","o":["ጣፋጭ ነው","ዶሮ ወጥ","ምስር ወጥ"],"a":0},
+{"t":"mc","q":"Review — which means “morning”?","o":["ጠዋት","ዓመት","ሐሙስ"],"a":0}
 ]},
 
 /* ---------- t3 · Where to? ---------- */
@@ -1909,7 +1976,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወዴት","ወደ"],"a":0},
 {"t":"mc","q":"ወዴት asks…","o":["where to?","from where?","where is it?"],"a":0},
 {"t":"mc","q":"Review — ና means…","o":["come! (to a man)","go!","wait!"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወዴት ትሄዳለህ?","እመጣለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወዴት ትሄዳለህ?","እመጣለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “please (to a man)”?","o":["እባክህ","አትክልት","ወተት"],"a":0},
+{"t":"mc","q":"Review — which means “very”?","o":["በጣም","ወተት","ጉርሻ"],"a":0},
+{"t":"mc","q":"Review — which means “week”?","o":["ሳምንት","ትናንት","እሁድ"],"a":0}
 ]},
 
 /* ---------- t4 · The minibus ---------- */
@@ -1951,7 +2021,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
 {"t":"mc","q":"Which one chants the destinations?","o":["ወያላ","ታክሲ","ባጃጅ"],"a":0},
 {"t":"mc","q":"Review — ወደ means…","o":["to · toward","from","inside"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ባጃጅ","ታክሲ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ባጃጅ","ታክሲ"],"a":0},
+{"t":"mc","q":"Review — which means “please (to a woman)”?","o":["እባክሽ","እበላለሁ","ራበኝ"],"a":0},
+{"t":"mc","q":"Review — which means “it is very delicious”?","o":["በጣም ጣፋጭ ነው","ምስር ወጥ","ዶሮ ወጥ"],"a":0},
+{"t":"mc","q":"Review — which means “year”?","o":["ዓመት","ስንት","ሳምንት"],"a":0}
 ]},
 
 /* ---------- t5 · Near and far ---------- */
@@ -1993,7 +2066,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","ሩቅ","በጣም ሩቅ ነው"],"a":0},
 {"t":"mc","q":"Which one means far?","o":["ሩቅ","ቅርብ","እዚያ"],"a":0},
 {"t":"mc","q":"Review — ወራጅ አለ! shouts…","o":["getting off!","speeding up!","full taxi!"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0},
+{"t":"mc","q":"Review — which means “chicken stew”?","o":["ዶሮ ወጥ","ጣፋጭ ነው","በጣም ጣፋጭ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “I have had enough”?","o":["በቃኝ","እንብላ","ወተት"],"a":0},
+{"t":"mc","q":"Review — which means “today is Monday”?","o":["ዛሬ ሰኞ ነው","ፈረንጅ ሰዓት","ሀበሻ ሰዓት"],"a":0}
 ]},
 
 /* ---------- t6 · Lost — and found ---------- */
@@ -2035,7 +2111,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","መንገዱ የት ነው?","እርዳኝ"],"a":0},
 {"t":"mc","q":"The -u ending on mengedu means…","o":["the","my","this"],"a":0},
 {"t":"mc","q":"Review — በጣም ሩቅ ነው means…","o":["it is very far","it is very near","it is too late"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","እርዳኝ","ጠፋሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","እርዳኝ","ጠፋሁ"],"a":0},
+{"t":"mc","q":"Review — which means “lentil stew”?","o":["ምስር ወጥ","ጣፋጭ ነው","በጣም ጣፋጭ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “the honor bite (fed by hand)”?","o":["ጉርሻ","በቃኝ","እጠጣለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “Addis Ababa”?","o":["አዲስ አበባ","ስሜ … ነው","ደህና እደር"],"a":0}
 ]},
 
 /* ---------- t7 · Let us go ---------- */
@@ -2079,7 +2158,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — ወዴት ትሄዳለህ? asks a man…","o":["where he is going","where he is from","when he leaves"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","እርዳኝ","ቆይ"],"a":0},
 {"t":"mc","q":"Review — the three-wheeler is the…","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
-{"t":"mc","q":"Review — ቅርብ means…","o":["near","far","fast"],"a":0}
+{"t":"mc","q":"Review — ቅርብ means…","o":["near","far","fast"],"a":0},
+{"t":"mc","q":"Review — which means “people”?","o":["ሰዎች","እርስዎ","ኢትዮጵያ"],"a":0}
 ]},
 
 /* ---------- m1 · Money ---------- */
@@ -2121,7 +2201,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ሳንቲም","ዋጋ"],"a":0},
 {"t":"mc","q":"Which one means price?","o":["ዋጋ","ብር","ገንዘብ"],"a":0},
 {"t":"mc","q":"Review — እንሂድ means…","o":["let us go","let us eat","let us buy"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ገንዘብ","ብር"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ገንዘብ","ብር"],"a":0},
+{"t":"mc","q":"Review — which means “window”?","o":["መስኮት","ማንኪያ","ማድቤት"],"a":0},
+{"t":"mc","q":"Review — which means “table”?","o":["ጠረጴዛ","እነሳለሁ","እዚህ"],"a":0},
+{"t":"mc","q":"Review — which means “there is not”?","o":["የለም","አጥባለሁ","ክፍል"],"a":0}
 ]},
 
 /* ---------- m2 · How much is it? ---------- */
@@ -2163,7 +2246,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ይህ ስንት ነው?","ዋጋ"],"a":0},
 {"t":"mc","q":"Which one means change?","o":["መልስ","ዋጋ","ሳንቲም"],"a":0},
 {"t":"mc","q":"Review — ብር literally means…","o":["silver","money","coin"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?","መልስ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?","መልስ"],"a":0},
+{"t":"mc","q":"Review — which means “room”?","o":["ክፍል","እዚያ","እዚህ"],"a":0},
+{"t":"mc","q":"Review — which means “bed”?","o":["አልጋ","ማንኪያ","ጠረጴዛ"],"a":0},
+{"t":"mc","q":"Review — which means “cup”?","o":["ኩባያ","መብራት","ጀበና"],"a":0}
 ]},
 
 /* ---------- m3 · I want, I buy ---------- */
@@ -2204,7 +2290,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","ውሃ እፈልጋለሁ","እገዛለሁ"],"a":0},
 {"t":"mc","q":"ውሃ እፈልጋለሁ means…","o":["I want water","I bought water","water, please"],"a":0},
 {"t":"mc","q":"Review — መልስ means…","o":["change","price","market"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እገዛለሁ","እፈልጋለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እገዛለሁ","እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “kitchen”?","o":["ማድቤት","ጠረጴዛ","እነሳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “light · electricity”?","o":["መብራት","እተኛለሁ","ክፍል"],"a":0},
+{"t":"mc","q":"Review — which means “plate”?","o":["ሳህን","እተኛለሁ","ጀበና"],"a":0}
 ]},
 
 /* ---------- m4 · Expensive, cheap — and the magic word ---------- */
@@ -2246,7 +2335,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ውድ ነው","ርካሽ ነው"],"a":0},
 {"t":"mc","q":"Which one means it is expensive?","o":["ውድ ነው","ርካሽ ነው","ዋጋ ነው"],"a":0},
 {"t":"mc","q":"Review — እፈልጋለሁ means…","o":["I want","I buy","I have"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ርካሽ ነው","ቀንስ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ርካሽ ነው","ቀንስ"],"a":0},
+{"t":"mc","q":"Review — which means “bedroom”?","o":["መኝታ ቤት","ነገ እሄዳለሁ","አማርኛ እማራለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “where is it?”","o":["የት ነው?","ምን ትሰራለህ?","እንደምን ዋልክ?"],"a":0},
+{"t":"mc","q":"Review — which means “spoon”?","o":["ማንኪያ","ወንበር","ኩባያ"],"a":0}
 ]},
 
 /* ---------- m5 · The shopping list ---------- */
@@ -2287,7 +2379,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ዱቄት","ጨው"],"a":0},
 {"t":"mc","q":"Which one means flour?","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
 {"t":"mc","q":"Review — ቀንስ means…","o":["reduce it!","it is cheap","wrap it"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ስኳር","ዘይት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ስኳር","ዘይት"],"a":0},
+{"t":"mc","q":"Review — which means “toilet”?","o":["ሽንት ቤት","ውሃ ጠጣ","በጣም ውድ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “here”?","o":["እዚህ","አልጋ","እዚያ"],"a":0},
+{"t":"mc","q":"Review — which means “coffee pot”?","o":["ጀበና","ሳህን","ክፍል"],"a":0}
 ]},
 
 /* ---------- m6 · At the counter ---------- */
@@ -2329,7 +2424,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ይስጡኝ","ስኳር አለ?"],"a":0},
 {"t":"mc","q":"ስኳር አለ? uses which little giant from Zone 6?","o":["አለ","ነው","ውስጥ"],"a":0},
 {"t":"mc","q":"Review — which one means salt?","o":["ጨው","ስኳር","ዘይት"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","ስኳር አለ?","አንድ ኪሎ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","ስኳር አለ?","አንድ ኪሎ"],"a":0},
+{"t":"mc","q":"Review — which means “chair”?","o":["ወንበር","አበስላለሁ","ውስጥ"],"a":0},
+{"t":"mc","q":"Review — which means “there”?","o":["እዚያ","ማንኪያ","አጥባለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “I cook”?","o":["አበስላለሁ","እዚህ","ኩባያ"],"a":0}
 ]},
 
 /* ---------- m7 · The price numbers ---------- */
@@ -2372,7 +2470,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — the polite give-me is…","o":["ይስጡኝ","እርዳኝ","ቀንስ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ቀንስ","o":["ቀንስ","መልስ","ዋጋ"],"a":0},
 {"t":"mc","q":"Review — bargaining belongs at…","o":["the gebeya","the suk","the bank"],"a":0},
-{"t":"mc","q":"Review — እገዛለሁ means…","o":["I buy","I want","I pay"],"a":0}
+{"t":"mc","q":"Review — እገዛለሁ means…","o":["I buy","I want","I pay"],"a":0},
+{"t":"mc","q":"Review — which means “I wash”?","o":["አጥባለሁ","እዚያ","አልጋ"],"a":0}
 ]},
 
 /* ---------- w1 · Work ---------- */
@@ -2413,7 +2512,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ","የት ትሰራለህ?"],"a":0},
 {"t":"mc","q":"Which one asks where do you work?","o":["የት ትሰራለህ?","ወዴት ትሄዳለህ?","ምን ነው?"],"a":0},
 {"t":"mc","q":"Review — መቶ means…","o":["hundred","fifty","twenty"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","ገንዘብ","ሱቅ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","ገንዘብ","ሱቅ"],"a":0},
+{"t":"mc","q":"Review — which means “road · street”?","o":["መንገድ","እንሂድ","እመጣለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “minibus taxi”?","o":["ታክሲ","ከተማ","እርዳኝ"],"a":0},
+{"t":"mc","q":"Review — which means “it is very far”?","o":["በጣም ሩቅ ነው","ትምህርት ቤት","ወደ ቤት እሄዳለሁ"],"a":0}
 ]},
 
 /* ---------- w2 · Student and teacher ---------- */
@@ -2454,7 +2556,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","አስተማሪ","ተማሪ"],"a":0},
 {"t":"mc","q":"Which one means students?","o":["ተማሪዎች","ተማሪ","አስተማሪዎች"],"a":0},
 {"t":"mc","q":"Review — የት ትሰራለህ? asks…","o":["where do you work?","what do you study?","where do you live?"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","ተማሪዎች","አስተማሪ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","ተማሪዎች","አስተማሪ"],"a":0},
+{"t":"mc","q":"Review — which means “market”?","o":["ገበያ","እርዳኝ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “conductor”?","o":["ወያላ","ወዴት","መንገድ"],"a":0},
+{"t":"mc","q":"Review — which means “I am lost”?","o":["ጠፋሁ","እመጣለሁ","ገበያ"],"a":0}
 ]},
 
 /* ---------- w3 · I am learning Amharic ---------- */
@@ -2496,7 +2601,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","አማርኛ እማራለሁ","እሰራለሁ"],"a":0},
 {"t":"mc","q":"Which one means book?","o":["መጽሐፍ","ተማሪ","ወረቀት"],"a":0},
 {"t":"mc","q":"Review — the as- of አስተማሪ means…","o":["make-it-happen","again","not"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ","ተማሪ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ","ተማሪ"],"a":0},
+{"t":"mc","q":"Review — which means “city · town”?","o":["ከተማ","ጠፋሁ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “getting off! (someone is descending)”?","o":["ወራጅ አለ!","በጣም ሩቅ ነው","ቀስ በል"],"a":0},
+{"t":"mc","q":"Review — which means “help me”?","o":["እርዳኝ","ጠፋሁ","መንገድ"],"a":0}
 ]},
 
 /* ---------- w4 · The desk tools ---------- */
@@ -2538,7 +2646,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","ስልክ","ወረቀት"],"a":0},
 {"t":"mc","q":"Which one means phone?","o":["ስልክ","ኮምፒውተር","እስክሪብቶ"],"a":0},
 {"t":"mc","q":"Review — መጽሐፍ means…","o":["book","paper","school"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","ኮምፒውተር","ስልክ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","ኮምፒውተር","ስልክ"],"a":0},
+{"t":"mc","q":"Review — which means “where to?”","o":["ወዴት","መንገድ","እሄዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “three-wheeler”?","o":["ባጃጅ","ታክሲ","እንሂድ"],"a":0},
+{"t":"mc","q":"Review — which means “where is the road?”","o":["መንገዱ የት ነው?","ወዴት ትሄዳለህ?","እንደምን አደርክ?"],"a":0}
 ]},
 
 /* ---------- w5 · The workplaces ---------- */
@@ -2580,7 +2691,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል","ቢሮ"],"a":0},
 {"t":"mc","q":"Which one is the hospital?","o":["ሆስፒታል","ሆቴል","ባንክ"],"a":0},
 {"t":"mc","q":"Review — እስክሪብቶ means…","o":["pen","paper","pencil"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ሆቴል","ባንክ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ሆቴል","ባንክ"],"a":0},
+{"t":"mc","q":"Review — which means “where are you going? (to a man)”?","o":["ወዴት ትሄዳለህ?","ቅርብ ነው?","መንገዱ የት ነው?"],"a":0},
+{"t":"mc","q":"Review — which means “near”?","o":["ቅርብ","ታክሲ","እመጣለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “let us go”?","o":["እንሂድ","ወዴት","ገበያ"],"a":0}
 ]},
 
 /* ---------- w6 · The working week ---------- */
@@ -2621,7 +2735,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ","ዕረፍት"],"a":0},
 {"t":"mc","q":"እስከ means…","o":["until","from","since"],"a":0},
 {"t":"mc","q":"Review — ቢሮ means…","o":["office","bank","break room"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","ከሰኞ እስከ ዓርብ","እስከ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","ከሰኞ እስከ ዓርብ","እስከ"],"a":0},
+{"t":"mc","q":"Review — which means “I am going home”?","o":["ወደ ቤት እሄዳለሁ","ወራጅ አለ!","በጣም ሩቅ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “is it near?”","o":["ቅርብ ነው?","ወዴት ትሄዳለህ?","መቼ ትመጣለህ?"],"a":0},
+{"t":"mc","q":"Review — which means “slow down (to a man)”?","o":["ቀስ በል","ትምህርት ቤት","ወራጅ አለ!"],"a":0}
 ]},
 
 /* ---------- w7 · What do you do? ---------- */
@@ -2664,7 +2781,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — from Monday to Friday…","o":["ከሰኞ እስከ ዓርብ","ከዓርብ እስከ ሰኞ","ከጠዋት እስከ ማታ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","ተማሪ ነኝ","እማራለሁ"],"a":0},
 {"t":"mc","q":"Review — which one means office?","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
-{"t":"mc","q":"Review — ዕረፍት means…","o":["rest · break","salary","meeting"],"a":0}
+{"t":"mc","q":"Review — ዕረፍት means…","o":["rest · break","salary","meeting"],"a":0},
+{"t":"mc","q":"Review — which means “I get up”?","o":["እነሳለሁ","ማንኪያ","ወንበር"],"a":0}
 ]},
 
 /* ---------- b1 · The body ---------- */
@@ -2706,7 +2824,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","እጅ","ሆድ"],"a":0},
 {"t":"mc","q":"Which one means stomach?","o":["ሆድ","እግር","ራስ"],"a":0},
 {"t":"mc","q":"Review — ምን means…","o":["what","who","where"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ","እግር"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ","እግር"],"a":0},
+{"t":"mc","q":"Review — which means “money”?","o":["ገንዘብ","እገዛለሁ","ቀንስ"],"a":0},
+{"t":"mc","q":"Review — which means “I want water”?","o":["ውሃ እፈልጋለሁ","ርካሽ ነው","በጣም ውድ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “oil”?","o":["ዘይት","ቀንስ","መልስ"],"a":0}
 ]},
 
 /* ---------- b2 · The face ---------- */
@@ -2747,7 +2868,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","አፍ","ጆሮ"],"a":0},
 {"t":"mc","q":"Which one means nose?","o":["አፍንጫ","አፍ","ዓይን"],"a":0},
 {"t":"mc","q":"Review — ራስ means…","o":["head · self","hair","hat"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","ዓይን","አፍንጫ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","ዓይን","አፍንጫ"],"a":0},
+{"t":"mc","q":"Review — which means “coin · cent”?","o":["ሳንቲም","ይስጡኝ","ዱቄት"],"a":0},
+{"t":"mc","q":"Review — which means “it is expensive”?","o":["ውድ ነው","ውሃ እፈልጋለሁ","አንድ ኪሎ"],"a":0},
+{"t":"mc","q":"Review — which means “flour”?","o":["ዱቄት","ገንዘብ","ሳንቲም"],"a":0}
 ]},
 
 /* ---------- b3 · It hurts ---------- */
@@ -2789,7 +2913,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ህመም","ራበኝ"],"a":0},
 {"t":"mc","q":"Which one means pain · illness?","o":["ህመም","ሆድ","መድሃኒት"],"a":0},
 {"t":"mc","q":"Review — ጆሮ means…","o":["ear","eye","nose"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","ራሴን አመመኝ","አመመኝ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","ራሴን አመመኝ","አመመኝ"],"a":0},
+{"t":"mc","q":"Review — which means “how much is it?”","o":["ስንት ነው?","ስኳር አለ?","ምን ትሰራለህ?"],"a":0},
+{"t":"mc","q":"Review — which means “it is cheap”?","o":["ርካሽ ነው","አንድ ኪሎ","ውሃ እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “please give me (polite)”?","o":["ይስጡኝ","ዘይት","መልስ"],"a":0}
 ]},
 
 /* ---------- b4 · The clinic ---------- */
@@ -2831,7 +2958,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","መድሃኒት","ሐኪም"],"a":0},
 {"t":"mc","q":"Which one means medicine?","o":["መድሃኒት","ህመም","ሐኪም"],"a":0},
 {"t":"mc","q":"Review — አመመኝ means…","o":["I am sick","I am hungry","I am cold"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ሐኪም ቤት","ነርስ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ሐኪም ቤት","ነርስ"],"a":0},
+{"t":"mc","q":"Review — which means “how much is this?”","o":["ይህ ስንት ነው?","ስኳር አለ?","እንደምን ዋልክ?"],"a":0},
+{"t":"mc","q":"Review — which means “reduce it! (bargaining)”?","o":["ቀንስ","ገንዘብ","ሳንቲም"],"a":0},
+{"t":"mc","q":"Review — which means “is there sugar?”","o":["ስኳር አለ?","ስንት ነው?","ይህ ስንት ነው?"],"a":0}
 ]},
 
 /* ---------- b5 · What the nurse says ---------- */
@@ -2852,7 +2982,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0},
 {"t":"mc","q":"Which one means lie down?","o":["ተኛ","ተቀመጥ","ውሰድ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","መድሃኒት ውሰድ","ተኛ"],"a":0},
-{"t":"mc","q":"The clinic visit order…","o":["ተቀመጥ → ተኛ → መድሃኒት ውሰድ","ተኛ → ተቀመጥ → ና","ውሰድ → ተኛ → በላ"],"a":0}
+{"t":"mc","q":"After ተቀመጥ and ተኛ, the visit ends with…","o":["መድሃኒት ውሰድ","ና","ብላ"],"a":0}
 ]},
 {"id":"am_b5_3","title":"Building the commands","step":"build","meta":"Follow the nurse","vocab":[],"ex":[
 {"t":"wb","q":"Build: take the medicine","a":["መድሃኒት","ውሰድ"],"pool":["መድሃኒት","ውሰድ","ተኛ"]},
@@ -2873,7 +3003,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ","ና"],"a":0},
 {"t":"mc","q":"Which one means sit down?","o":["ተቀመጥ","ተኛ","ውሰድ"],"a":0},
 {"t":"mc","q":"Review — ሐኪም ቤት means…","o":["clinic","school","office"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Review — which means “change (money back)”?","o":["መልስ","ስኳር","ይስጡኝ"],"a":0},
+{"t":"mc","q":"Review — which means “it is very expensive”?","o":["በጣም ውድ ነው","ውሃ እፈልጋለሁ","አንድ ኪሎ"],"a":0},
+{"t":"mc","q":"Review — which means “one kilo”?","o":["አንድ ኪሎ","ርካሽ ነው","ውሃ እፈልጋለሁ"],"a":0}
 ]},
 
 /* ---------- b6 · Feeling better ---------- */
@@ -2915,7 +3048,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
 {"t":"mc","q":"Which one means drink water!?","o":["ውሃ ጠጣ","ውሃ አለ","ውሃ እፈልጋለሁ"],"a":0},
 {"t":"mc","q":"Review — መድሃኒት ውሰድ means…","o":["take the medicine","the medicine is gone","medicine helps"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል","ይሻለኛል"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል","ይሻለኛል"],"a":0},
+{"t":"mc","q":"Review — which means “I want”?","o":["እፈልጋለሁ","ዘይት","እገዛለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “sugar”?","o":["ስኳር","ሳንቲም","እፈልጋለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “fifty”?","o":["ሃምሳ","አንድ","ሁለት"],"a":0}
 ]},
 
 /* ---------- b7 · Health — and no problem ---------- */
@@ -2959,7 +3095,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — the clinic is the…","o":["ሐኪም ቤት","ሆቴል","ቢሮ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
 {"t":"mc","q":"Review — take the medicine is…","o":["መድሃኒት ውሰድ","ውሃ ጠጣ","ተቀመጥ"],"a":0},
-{"t":"mc","q":"Review — ጤና hides inside…","o":["ጤና ይስጥልኝ","ችግር የለም","ደህና ነህ?"],"a":0}
+{"t":"mc","q":"Review — ጤና hides inside…","o":["ጤና ይስጥልኝ","ችግር የለም","ደህና ነህ?"],"a":0},
+{"t":"mc","q":"Review — which means “in the house”?","o":["ቤት ውስጥ","ይህ ጓደኛዬ ነው","ትናንት ሄድኩ"],"a":0}
 ]},
 
 /* ---------- p1 · What I did ---------- */
@@ -3000,7 +3137,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በላሁ","o":["በላሁ","ሰራሁ","ሄድኩ"],"a":0},
 {"t":"mc","q":"Which one means I went?","o":["ሄድኩ","እሄዳለሁ","ሂድ"],"a":0},
 {"t":"mc","q":"Review — ችግር የለም means…","o":["no problem","no work","nothing left"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","በላሁ","ሰራሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","በላሁ","ሰራሁ"],"a":0},
+{"t":"mc","q":"Review — which means “where do you work? (to a man)”?","o":["የት ትሰራለህ?","ደህና ነህ?","ቅርብ ነው?"],"a":0},
+{"t":"mc","q":"Review — which means “pen”?","o":["እስክሪብቶ","ሆስፒታል","አስተማሪ"],"a":0},
+{"t":"mc","q":"Review — which means “hotel”?","o":["ሆቴል","ወረቀት","እሰራለሁ"],"a":0}
 ]},
 
 /* ---------- p2 · Yesterday I… ---------- */
@@ -3041,7 +3181,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ","በላሁ"],"a":0},
 {"t":"mc","q":"ትናንት ሄድኩ means…","o":["yesterday I went","today I go","I went far"],"a":0},
 {"t":"mc","q":"Review — በላሁ means…","o":["I ate","I eat","eat!"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","መጣሁ","ገዛሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","መጣሁ","ገዛሁ"],"a":0},
+{"t":"mc","q":"Review — which means “student”?","o":["ተማሪ","እማራለሁ","ሆቴል"],"a":0},
+{"t":"mc","q":"Review — which means “paper”?","o":["ወረቀት","ስልክ","እስክሪብቶ"],"a":0},
+{"t":"mc","q":"Review — which means “until”?","o":["እስከ","ዕረፍት","ባንክ"],"a":0}
 ]},
 
 /* ---------- p3 · Where were you? ---------- */
@@ -3082,7 +3225,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","ቤት ነበርኩ","የት ነበርክ?"],"a":0},
 {"t":"mc","q":"Which one asks where were you?","o":["የት ነበርክ?","የት ነው?","ወዴት ትሄዳለህ?"],"a":0},
 {"t":"mc","q":"Review — ትናንት ሄድኩ means…","o":["yesterday I went","yesterday I came","today I went"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ","ነበርኩ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ","ነበርኩ"],"a":0},
+{"t":"mc","q":"Review — which means “teacher”?","o":["አስተማሪ","እማራለሁ","ስልክ"],"a":0},
+{"t":"mc","q":"Review — which means “phone”?","o":["ስልክ","ሆቴል","ተማሪ"],"a":0},
+{"t":"mc","q":"Review — which means “from Monday to Friday”?","o":["ከሰኞ እስከ ዓርብ","ተማሪ ነኝ","አማርኛ እማራለሁ"],"a":0}
 ]},
 
 /* ---------- p4 · Tomorrow and now ---------- */
@@ -3123,7 +3269,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ"],"a":0},
 {"t":"mc","q":"Which one means now?","o":["አሁን","በኋላ","ዛሬ"],"a":0},
 {"t":"mc","q":"Review — ነበርኩ means…","o":["I was","I am","I stayed"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","በኋላ","ትናንት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","በኋላ","ትናንት"],"a":0},
+{"t":"mc","q":"Review — which means “students”?","o":["ተማሪዎች","ዕረፍት","ኮምፒውተር"],"a":0},
+{"t":"mc","q":"Review — which means “computer”?","o":["ኮምፒውተር","ተማሪ","መጽሐፍ"],"a":0},
+{"t":"mc","q":"Review — which means “rest · break · holiday”?","o":["ዕረፍት","እሰራለሁ","መጽሐፍ"],"a":0}
 ]},
 
 /* ---------- p5 · The weather ---------- */
@@ -3165,7 +3314,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ብርድ","ፀሐይ"],"a":0},
 {"t":"mc","q":"Which one means sun?","o":["ፀሐይ","ሙቀት","ዝናብ"],"a":0},
 {"t":"mc","q":"Review — አሁን means…","o":["now","later","today"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ዝናብ","ሙቀት"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ዝናብ","ሙቀት"],"a":0},
+{"t":"mc","q":"Review — which means “I learn”?","o":["እማራለሁ","ሆስፒታል","ሆቴል"],"a":0},
+{"t":"mc","q":"Review — which means “bank”?","o":["ባንክ","ዕረፍት","ሆቴል"],"a":0},
+{"t":"mc","q":"Review — which means “what do you do? (to a man)”?","o":["ምን ትሰራለህ?","ከየት ነህ?","መንገዱ የት ነው?"],"a":0}
 ]},
 
 /* ---------- p6 · Talking about the sky ---------- */
@@ -3206,7 +3358,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
 {"t":"mc","q":"Which one means it is hot?","o":["ሙቀት ነው","ብርድ ነው","ፀሐይ"],"a":0},
 {"t":"mc","q":"Review — ዝናብ means…","o":["rain","cold","cloud"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ብርድ ነው"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ብርድ ነው"],"a":0},
+{"t":"mc","q":"Review — which means “book”?","o":["መጽሐፍ","ተማሪዎች","አስተማሪ"],"a":0},
+{"t":"mc","q":"Review — which means “hospital”?","o":["ሆስፒታል","ሆቴል","ስልክ"],"a":0},
+{"t":"mc","q":"Review — which means “I am a student”?","o":["ተማሪ ነኝ","ከሰኞ እስከ ዓርብ","አማርኛ እማራለሁ"],"a":0}
 ]},
 
 /* ---------- p7 · When? ---------- */
@@ -3249,7 +3404,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — the future is the -alehu form plus…","o":["a time word","a new ending","nothing"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
 {"t":"mc","q":"Review — ነበርኩ means…","o":["I was","I am","I went"],"a":0},
-{"t":"mc","q":"Review — the July-August rains are the…","o":["kiremt","bereka","meskel"],"a":0}
+{"t":"mc","q":"Review — the July-August rains are the…","o":["kiremt","bereka","meskel"],"a":0},
+{"t":"mc","q":"Review — which means “I am at home”?","o":["ቤት ነኝ","ፈረንጅ ሰዓት","ደህና እደሪ"],"a":0}
 ]},
 
 /* ---------- c1 · How I feel ---------- */
@@ -3291,7 +3447,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደስታ","ደክሞኛል"],"a":0},
 {"t":"mc","q":"Which one means joy?","o":["ደስታ","ጤና","ሰላም"],"a":0},
 {"t":"mc","q":"Review — መቼ means…","o":["when","where","how"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስ ብሎኛል","ይሻለኛል"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስ ብሎኛል","ይሻለኛል"],"a":0},
+{"t":"mc","q":"Review — which means “foot · leg”?","o":["እግር","ችግር","ነርስ"],"a":0},
+{"t":"mc","q":"Review — which means “doctor”?","o":["ሐኪም","ደክሞኛል","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Review — which means “I am tired”?","o":["ደክሞኛል","ተቀመጥ","አመመኝ"],"a":0}
 ]},
 
 /* ---------- c2 · Come in, drink coffee ---------- */
@@ -3312,7 +3471,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
 {"t":"mc","q":"Which one is the welcome formula?","o":["እንኳን ደህና መጣህ","ሰላም ነው?","ጤና ይስጥልኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0},
-{"t":"mc","q":"The welcome arc in order…","o":["እንኳን ደህና መጣህ → ግባ → ቡና ጠጡ","ቡና ጠጡ → ቻው → ግባ","ግባ → ቻው → ና"],"a":0}
+{"t":"mc","q":"After እንኳን ደህና መጣህ and ግባ, the welcome ends with…","o":["ቡና ጠጡ","ቻው","ና"],"a":0}
 ]},
 {"id":"am_c2_3","title":"Building the welcome","step":"build","meta":"Open your own door","vocab":[],"ex":[
 {"t":"wb","q":"Build: welcome! (to a man)","a":["እንኳን","ደህና","መጣህ"],"pool":["እንኳን","ደህና","መጣህ","ግባ"]},
@@ -3333,7 +3492,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
 {"t":"mc","q":"Which one means welcome?","o":["እንኳን ደህና መጣህ","ደህና ሁን","ሰላም ነው?"],"a":0},
 {"t":"mc","q":"Review — ደስ ብሎኛል means…","o":["I am happy","I am welcome","I am home"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0},
+{"t":"mc","q":"Review — which means “eye”?","o":["ዓይን","አፍንጫ","ሐኪም"],"a":0},
+{"t":"mc","q":"Review — which means “nurse”?","o":["ነርስ","ህመም","አፍንጫ"],"a":0},
+{"t":"mc","q":"Review — which means “drink water! (to a man)”?","o":["ውሃ ጠጣ","ራሴን አመመኝ","ችግር የለም"],"a":0}
 ]},
 
 /* ---------- c3 · The learner's toolkit ---------- */
@@ -3375,7 +3537,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
 {"t":"mc","q":"Which one asks for a repeat?","o":["ድገም","ገባኝ","ግባ"],"a":0},
 {"t":"mc","q":"Review — ቡና ጠጡ means…","o":["drink coffee (the invitation)","the coffee is ready","buy coffee"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ግባ","ገባኝ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ግባ","ገባኝ"],"a":0},
+{"t":"mc","q":"Review — which means “nose”?","o":["አፍንጫ","አመመኝ","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Review — which means “medicine”?","o":["መድሃኒት","ህመም","አመመኝ"],"a":0},
+{"t":"mc","q":"Review — which means “problem”?","o":["ችግር","ነርስ","ዓይን"],"a":0}
 ]},
 
 /* ---------- c4 · I love it ---------- */
@@ -3408,7 +3573,7 @@ const AM_LESSONS=[
 {"id":"am_c4_4","title":"The love in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እወዳለሁ","I love"],["አልወድም","I do not like"],["ኢትዮጵያን እወዳለሁ","I love Ethiopia"]]},
 {"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","ኢትዮጵያን እወዳለሁ","አልወድም"],"a":0},
-{"t":"match","q":"Match the wrap to the meaning","pairs":[["-አለሁ","I do"],["አል-…-ም","I do not"]]},
+{"t":"match","q":"Match the verb to its meaning","pairs":[["እወዳለሁ","I do like"],["አልወድም","I do not like"]]},
 {"t":"mc","q":"ብርድ አልወድም means…","o":["I do not like the cold","the cold is gone","I am not cold"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ","አልገባኝም"],"a":0}
 ]},
@@ -3417,7 +3582,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","አልወድም","እፈልጋለሁ"],"a":0},
 {"t":"mc","q":"Which one means I do not like?","o":["አልወድም","እወዳለሁ","የለም"],"a":0},
 {"t":"mc","q":"Review — ገባኝ means…","o":["got it!","say again","enter!"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","ኢትዮጵያን እወዳለሁ","እወዳለሁ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","ኢትዮጵያን እወዳለሁ","እወዳለሁ"],"a":0},
+{"t":"mc","q":"Review — which means “I am sick · it pains me”?","o":["አመመኝ","ደክሞኛል","ተቀመጥ"],"a":0},
+{"t":"mc","q":"Review — which means “sit down! (to a man)”?","o":["ተቀመጥ","አመመኝ","ነርስ"],"a":0},
+{"t":"mc","q":"Review — which means “no problem”?","o":["ችግር የለም","ውሃ ጠጣ","ሐኪም ቤት"],"a":0}
 ]},
 
 /* ---------- c5 · And, but, or ---------- */
@@ -3459,7 +3627,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ግን","ወይም"],"a":0},
 {"t":"mc","q":"Which one asks a choice?","o":["ወይም","እና","ግን"],"a":0},
 {"t":"mc","q":"Review — አልወድም means…","o":["I do not like","I do not know","I do not want"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","እና","ግን"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","እና","ግን"],"a":0},
+{"t":"mc","q":"Review — which means “pain · illness”?","o":["ህመም","ይሻለኛል","ዓይን"],"a":0},
+{"t":"mc","q":"Review — which means “take the medicine (to a man)”?","o":["መድሃኒት ውሰድ","ውሃ ጠጣ","ራሴን አመመኝ"],"a":0},
+{"t":"mc","q":"Review — which means “friend”?","o":["ጓደኛ","ወይዘሮ","እርስዎ"],"a":0}
 ]},
 
 /* ---------- c6 · The neighborhood ---------- */
@@ -3501,7 +3672,10 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ሰፈር","ጎረቤት"],"a":0},
 {"t":"mc","q":"Which one means neighborhood?","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0},
 {"t":"mc","q":"Review — ወይም means…","o":["or","and","but"],"a":0},
-{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0}
+{"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0},
+{"t":"mc","q":"Review — which means “my head hurts”?","o":["ራሴን አመመኝ","ችግር የለም","ሐኪም ቤት"],"a":0},
+{"t":"mc","q":"Review — which means “I feel better”?","o":["ይሻለኛል","ህመም","መድሃኒት"],"a":0},
+{"t":"mc","q":"Review — which means “man”?","o":["ወንድ","አመሰግናለሁ","ወይዘሮ"],"a":0}
 ]},
 
 /* ---------- c7 · Melkam guzo ---------- */
@@ -3545,7 +3719,8 @@ const AM_LESSONS=[
 {"t":"mc","q":"Review — I love Ethiopia…","o":["ኢትዮጵያን እወዳለሁ","ኢትዮጵያ ነኝ","ኢትዮጵያ አለ"],"a":0},
 {"t":"li","q":"Review — which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","ገባኝ","ደስ ብሎኛል"],"a":0},
 {"t":"mc","q":"Review — got it! is…","o":["ገባኝ","አልገባኝም","ድገም"],"a":0},
-{"t":"mc","q":"Review — the course leaves you ደስ ብሎኛል, telling yourself…","o":["በርታ","ቻው","የለም"],"a":0}
+{"t":"mc","q":"Review — the course leaves you ደስ ብሎኛል, telling yourself…","o":["በርታ","ቻው","የለም"],"a":0},
+{"t":"mc","q":"Review — which means “thank you”?","o":["አመሰግናለሁ","ሰዎች","ወይዘሮ"],"a":0}
 ]}
 ];
 
