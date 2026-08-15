@@ -3754,6 +3754,61 @@ const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4
 
 const AM_SRS_SEED=[];
 
+/* ---------- Art — Ethiopian highlands, secular only.
+   FAR: Simien-style flat-topped ambas (mesas) with steep cliff faces,
+   right of the title safe zone; low escarpment left. MID: teff-gold
+   terraced fields. NEAR: green with gojo huts (steep thatch cones with
+   the pot finial), coffee bushes carrying red cherries (--cherry), one
+   flat-top acacia. NO churches — Lalibela is religious architecture and
+   off-limits per the art rules. Palette vars --thatch/--wall/--cherry in
+   index.html under data-lang="am" (light + dark). Mascot: gelada — the
+   golden-maned highland monkey found only in Ethiopia (secular).
+   Grounding: translate-y + 100·scale = near surface. ---------- */
+const AM_GOJO='<path fill="var(--thatch)" d="M10 62 Q50 54 90 62 L56 10 Q50 4 44 10 Z"/><path fill="var(--thatch)" d="M47 8 Q50 0 53 8 L52 14 L48 14 Z" opacity=".9"/><path fill="var(--wall)" d="M18 100 L18 60 Q50 53 82 60 L82 100 Z"/><path fill="var(--tyre)" d="M43 100 L43 74 Q50 68 57 74 L57 100 Z"/>';
+const AM_COFFEE='<g fill="var(--tree)"><ellipse cx="50" cy="62" rx="30" ry="26"/><ellipse cx="30" cy="76" rx="16" ry="14"/><ellipse cx="70" cy="76" rx="16" ry="14"/></g><path d="M50 100 L50 84" stroke="var(--bark)" stroke-width="4" stroke-linecap="round"/><g fill="var(--cherry)"><circle cx="38" cy="58" r="3.2"/><circle cx="52" cy="48" r="3.2"/><circle cx="63" cy="62" r="3.2"/><circle cx="45" cy="70" r="3"/><circle cx="58" cy="74" r="3"/><circle cx="30" cy="68" r="2.8"/></g>';
+const AM_ACACIA='<path fill="var(--bark)" d="M48 100 L45 62 L31 36 L35 33 L49 56 L51 30 L57 30 L55 58 L71 38 L74 41 L57 62 L54 100 Z"/><path fill="var(--tree)" d="M8 36 Q22 18 50 14 Q78 18 92 36 Q78 43 50 43 Q22 43 8 36 Z"/>';
+const AM_HERO='<circle class="orb-glow" cx="1070" cy="76" r="70"/><circle class="orb" cx="1070" cy="76" r="41"/>'
++'<g class="hero-stars" aria-hidden="true"><circle cx="150" cy="52" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="310" cy="94" r="1.2"/><circle cx="470" cy="46" r="2"/><circle cx="630" cy="70" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="1140" cy="130" r="1.3"/><circle cx="940" cy="58" r="1.5" class="tw" style="animation-delay:2s"/></g>'
++'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
++'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="128" rx="40" ry="15"/><ellipse cx="100" cy="122" rx="28" ry="17"/><ellipse cx="30" cy="125" rx="26" ry="13"/></g>'
++'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="70" rx="28" ry="11"/><ellipse cx="78" cy="65" rx="22" ry="13"/><ellipse cx="26" cy="68" rx="20" ry="10"/></g>'
++'<path class="far" opacity=".45" d="M690 268 Q720 262 742 250 L750 246 L760 250 Q776 258 796 264 L796 272 L690 272 Z"/>'
++'<path class="far" d="M0 320 L0 270 Q130 264 270 267 Q430 270 560 266 L640 264 Q700 260 730 248 Q744 236 750 226 L754 220 L830 220 L838 226 Q844 240 852 248 Q858 216 862 186 L866 170 L890 164 L1044 164 L1064 170 Q1072 200 1084 228 Q1100 252 1128 260 Q1160 264 1200 262 L1200 320 Z"/>'
++'<path class="snow" opacity=".16" d="M880 172 Q960 168 1040 171 L1040 175 Q960 172 882 176 Z"/>'
++'<path class="mid" d="M0 320 L0 293 Q150 285 320 288 Q480 291 640 284 Q800 278 960 283 Q1100 287 1200 284 L1200 320 Z"/>'
++'<path class="snow" opacity=".18" d="M170 290 Q290 286.5 420 289 L420 292 Q290 289.5 172 293 Z"/>'
++'<path class="snow" opacity=".16" d="M690 282 Q810 278.5 930 281 L930 284 Q810 281.5 692 285 Z"/>'
++'<g class="near"><path d="M0 320 L0 306 Q150 298 320 300 Q480 303 640 297 Q800 292 960 296 Q1100 299 1200 294 L1200 320 Z"/><path fill="var(--snow)" opacity=".1" d="M250 302 Q410 297 570 300 L570 303 Q410 300 252 305 Z"/><path fill="var(--snow)" opacity=".1" d="M770 294 Q910 289 1050 295 L1050 298 Q910 292 772 297 Z"/></g>'
++'<g transform="translate(40,265) scale(0.38)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(100,250) scale(0.5)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(190,261) scale(0.38)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(255,268) scale(0.32)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(650,267) scale(0.3)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(860,251) scale(0.42)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(950,262) scale(0.34)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1030,261) scale(0.36)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1100,246) scale(0.52)" aria-hidden="true">'+AM_ACACIA+'</g>';
+const AM_BAND='<circle class="orb-glow" cx="1050" cy="54" r="32"/><circle class="orb" cx="1050" cy="54" r="19"/>'
++'<path class="far" opacity=".45" d="M680 166 Q706 160 726 152 L732 148 L740 152 Q752 158 768 163 L768 170 L680 170 Z"/>'
++'<path class="far" d="M0 200 L0 170 Q150 165 320 167 Q470 166 600 164 L690 162 Q740 158 766 150 Q776 140 782 132 L786 126 L836 126 L842 132 Q846 142 852 148 Q856 122 860 98 L864 88 L880 84 L1010 84 L1024 88 Q1030 112 1040 132 Q1054 152 1080 158 Q1140 162 1200 160 L1200 200 Z"/>'
++'<path class="mid" d="M0 200 L0 182 Q150 176 320 178 Q500 180 680 175 Q860 171 1040 175 Q1140 177 1200 175 L1200 200 Z"/>'
++'<g class="near"><path d="M0 200 L0 190 Q150 184 320 186 Q500 188 680 183 Q860 179 1040 183 Q1140 185 1200 182 L1200 200 Z"/></g>'
++'<g transform="translate(30,168) scale(0.22)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1080,158) scale(0.26)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1125,154) scale(0.3)" aria-hidden="true">'+AM_GOJO+'</g>';
+function AM_MASCOT(m){
+  var base='<circle cx="32" cy="32" r="21" fill="#8A6B3F"/>' /* golden mane */
+  +'<path d="M12 30 Q10 18 20 12 M52 30 Q54 18 44 12 M22 10 Q32 4 42 10" stroke="#8A6B3F" stroke-width="5" fill="none" stroke-linecap="round"/>' /* mane fluff */
+  +'<ellipse cx="32" cy="33" rx="12.5" ry="14" fill="#C7A97C"/>' /* face */
+  +'<ellipse cx="32" cy="41" rx="7" ry="5.5" fill="#A9855A"/>' /* muzzle */
+  +'<ellipse cx="29.6" cy="40.5" rx="1.2" ry="1.7" fill="#4a3520"/><ellipse cx="34.4" cy="40.5" rx="1.2" ry="1.7" fill="#4a3520"/>' /* nostrils */
+  +'<path d="M20 52 Q32 58 44 52" stroke="#8A6B3F" stroke-width="5" fill="none" stroke-linecap="round"/>'; /* chest fur */
+  var f;
+  if(m==='cheer')f='<path d="M23 27 Q26.5 23.8 30 27" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M34 27 Q37.5 23.8 41 27" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M27 45.5 Q32 49 37 45.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M23 24.5 Q26.5 23.4 30 24.5" fill="none" stroke="#3a2b18" stroke-width="1.6" stroke-linecap="round"/><path d="M34 24.5 Q37.5 23.4 41 24.5" fill="none" stroke="#3a2b18" stroke-width="1.6" stroke-linecap="round"/><circle cx="26.5" cy="27.5" r="2" fill="#3a2b18"/><circle cx="37.5" cy="27.5" r="2" fill="#3a2b18"/><ellipse cx="32" cy="46.5" rx="1.8" ry="2.4" fill="#3a2b18"/>';
+  else f='<circle cx="26.5" cy="27" r="2.4" fill="#3a2b18"/><circle cx="37.5" cy="27" r="2.4" fill="#3a2b18"/><circle cx="27.2" cy="26.2" r="0.7" fill="#fff"/><circle cx="38.2" cy="26.2" r="0.7" fill="#fff"/><path d="M28.5 45.5 Q32 48.2 35.5 45.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
+  return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
+
 /* ---------- Short-term (trip) pack — a visitor to Ethiopia meeting Amharic
    speakers. Spine: the ETHIOPIAN CLOCK disambiguation (habesha vs ferenj
    se-at — the #1 practical trap), gendered address (-h/-sh) as unavoidable
@@ -3911,6 +3966,7 @@ registerPack({
   storageKey:'sajilo_am',
   brand:{h1:'Learn <em>Amharic</em>'},
   alpha:{native:'ፊደል',vowels:'አናባቢዎች',cons:'ተነባቢዎች',nums:'ቁጥሮች',review:'ክለሳ',settings:'ማስተካከያ'},
+  art:{hero:AM_HERO,band:AM_BAND,mascot:AM_MASCOT},
   voiceTest:v=>/^am(\b|[-_])/i.test(v.lang)||/amharic/i.test(v.name),
   fbVoiceTest:v=>false,
   fbVoiceName:'',
