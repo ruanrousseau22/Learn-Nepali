@@ -88,6 +88,11 @@ LANGS = {
     # religious studies (faith mode) — per-language story reader, same voice
     # as that language's course ("<code>f" pattern; skeletons have no strings
     # yet — generate only after a pack is translated)
+    "amf": {
+        "strings": "audio_strings_amf.json",
+        "outdir": "audio-amf",
+        "voices": {"male": "am-ET-AmehaNeural", "female": "am-ET-MekdesNeural"},
+    },
     "nef": {
         "strings": "audio_strings_nef.json",
         "outdir": "audio-nef",
