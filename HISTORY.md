@@ -2841,3 +2841,63 @@ POSTed to a throwaway localhost receiver instead of chunked through tool
 results. Tagline is "Learn <Name>" per card; the root URL keeps the generic
 card. Verify per-card `?v=` bumps in gen_landing.py only — index.html still
 references og-image.png.
+
+## Xhosa — the twelfth language and the first African one (Aug 2026)
+
+Ruan asked for Xhosa as a big add-on ("not really my focus") alongside the
+Asia & Africa rebrand, audience: Xhosa people in Cape Town — standard
+conversational isiXhosa for the course, and for the faith pack explicitly
+NO archaic Bible register ("young people won't understand it"; BSSA-2023
+plainness was the reference). Built autonomously over one long session on
+his standing order; full working narrative in XHOSA.md (repo root).
+
+**Audio was the gate and the story.** No edge-tts voice exists, so xh runs
+on the local UBC-NLP Simba-TTS-xho model (VITS, CC-BY-4.0, EMNLP 2025) via
+`generate_audio_xh.py` — re-execs into `~/.bhasaly-xhosa-tts`, lameenc MP3s,
+same FNV keys/manifest so the app can't tell. Attribution ships in
+terms.html + the Settings voice line. Three audio lessons, each learned the
+hard way:
+1. **Bare letters are VITS noise** (out-of-distribution input) — Ruan heard
+   it live. `SPEAK_AS` stores syllable demos under the letter keys (a→aa,
+   c→ca, hl→hla…), the bn/my letter-name precedent.
+2. **Short isolated words are the model's weak spot.** Ruan reported trip
+   audio quality issues; an ASR round-trip audit (MMS-1b xho adapter, MPS =
+   8x CPU) transcribed all 796 clips and flagged 446. Best-of-N regeneration
+   with ASR selection replaced 350 (median flagged CER 0.57→0.33), including
+   genuinely garbled trip lines (iteksi→"idwapfa se", ubuntu→"webwonga").
+3. **The calibration trap:** words CUT FROM a provably-perfect sentence clip
+   score 0.0–0.67 in isolation — short-segment CER in that band is ASR
+   artifact, not audio quality. Only trust CER on strings ≥12 chars. The
+   doubled-carrier + silence-trim idea and noise_scale/speaking_rate tuning
+   were both tried and did NOT beat best-of-N selection.
+
+The audit also exposed a content bug class: **match `pairs[i][0]` is
+spoken**, and one Zone-12 match had grammar notation ("-ya-", "a-…-i") on
+the left — clips of nonsense. Pairs swapped so real words are spoken.
+
+**Course** (12 zones / 84 topics / 420 lessons / 2861 ex): sounds-first
+Zone 1 (clicks as the hook), greetings/family with the mama/tata/bhuti/sisi
+address system as THE politeness mechanism (no everyday please-word),
+numbers with the English-numbers reality note, food (Ndicela formula,
+braai), home (isi-/izi-), getting around (minibus-taxi culture, Yima!),
+shopping (spaza, Yimalini?), work (ndiyaphangela street register), health,
+past/future (-ile with the ndilambile retroactive reveal; -ya- and -ile
+both shorten before objects — taught as one rhythm), conversation (ubuntu,
+Masithethe isiXhosa). A purpose-built checker ran after every zone
+(teach-before-test, li invariants, banned chars, 15-ex cap) and caught
+~1 real violation per zone. Cold-test clean; orphan pass added 273
+checkpoint review mcs (reachable orphans → 0; 40 z11-12 words left to SM-2
+by design). Trip pack: 12 sections / 90 lines / 4 frames, Cape Town spine.
+
+**Art**: Table Mountain + tablecloth cloud far (right of the title safe
+zone), ochre veld mid, fynbos green near with rondavels (--wall/--thatch),
+aloe ferox (--aloe), Nguni cattle, one acacia; mascot is the blue crane
+(indwe). **Faith pack**: five stories, 255 strings, contemporary register,
+EN/refs byte-identical except the country strings — and the newcreation
+beat honestly says MANY follow Jesus in South Africa (~80% Christian),
+where the Asian packs say some.
+
+Shipped Aug 14 (deploy explicitly authorized), audio audit deployed Aug 15.
+og-xhosa.png was rebuilt by the localhost-receiver recipe above. A
+pre-existing loadVoices race (onvoiceschanged before boot seats LANG) was
+found and guarded during the sweep.
