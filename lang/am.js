@@ -29,16 +29,16 @@ const AM_LESSONS=[
 
 /* ---------- s1 · One row, seven vowels ---------- */
 {"id":"am_s1","title":"One row, seven vowels","step":"learn","meta":"The fidel — a writing system that sings","vocab":[["ለ","le","the letter le"],["ሉ","lu","the letter lu"],["ላ","la","the letter la"],["ሊ","li","the letter li"],["ሎ","lo","the letter lo"]],"ex":[
-{"t":"note","tag":"How the fidel works","q":"One letter, seven dresses","body":"<p>Amharic is written in the <b>fidel</b> — and here is its secret: each consonant is ONE shape that changes slightly for each of seven vowels. Meet the l-row: <b>ለ</b> is <i>le</i>, <b>ሉ</b> is <i>lu</i>, <b>ላ</b> is <i>la</i>. Learn the shape once, and seven letters come free.</p>","eg":[["ለ","le","the letter le"],["ሉ","lu","the letter lu"],["ላ","la","the letter la"]]},
+{"t":"note","tag":"How the fidel works","q":"One shape, seven vowels","body":"<p>Amharic is written in the <b>fidel</b> — and here is its secret: each consonant is ONE shape that changes slightly for each of seven vowels. Meet the l-row: <b>ለ</b> is <i>le</i>, <b>ሉ</b> is <i>lu</i>, <b>ላ</b> is <i>la</i>. Learn the shape once, and seven letters come free.</p>","eg":[["ለ","le","the letter le"],["ሉ","lu","the letter lu"],["ላ","la","the letter la"]]},
 {"t":"li","q":"Which letter do you hear?","say":"ለ","o":["ለ","ላ"],"a":0},
 {"t":"mc","q":"ሉ is the l-shape wearing which vowel?","o":["u","a","o"],"a":0},
-{"t":"note","tag":"Two more dresses","q":"ሊ and ሎ","body":"<p><b>ሊ</b> is <i>li</i> — the little leg gets a bend. <b>ሎ</b> is <i>lo</i> — a ring on top. Seven orders in all; you have five already, and the pattern repeats for every consonant in the language.</p>","eg":[["ሊ","li","the letter li"],["ሎ","lo","the letter lo"]]},
+{"t":"note","tag":"Two more forms","q":"ሊ and ሎ","body":"<p><b>ሊ</b> is <i>li</i> — the little leg gets a bend. <b>ሎ</b> is <i>lo</i> — a ring on top. Seven orders in all; you have five already, and the pattern repeats for every consonant in the language.</p>","eg":[["ሊ","li","the letter li"],["ሎ","lo","the letter lo"]]},
 {"t":"li","q":"Which letter do you hear?","say":"ሎ","o":["ሎ","ሊ"],"a":0},
 {"t":"mc","q":"What does learning one fidel shape give you?","o":["seven letters at once","one letter","a whole word"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ላ","o":["ላ","ሉ"],"a":0},
 {"t":"mc","q":"Which one is li?","o":["ሊ","ለ","ሎ"],"a":0}
 ]},
-{"id":"am_s1_2","title":"Hearing the l-row","step":"recognize","meta":"Five orders by ear","vocab":[],"ex":[
+{"id":"am_s1_2","title":"Recognize","step":"recognize","meta":"Five orders by ear","vocab":[],"ex":[
 {"t":"li","q":"Which letter do you hear?","say":"ሉ","o":["ሉ","ለ","ላ"],"a":0},
 {"t":"mc","q":"ለ sounds like…","o":["le","lu","lo"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ሊ","o":["ሊ","ሎ","ሉ"],"a":0},
@@ -46,21 +46,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ለ","o":["ለ","ሉ","ሎ"],"a":0},
 {"t":"mc","q":"The seven variants of one consonant are called its…","o":["orders","cases","tones"],"a":0}
 ]},
-{"id":"am_s1_3","title":"Building the l-row","step":"build","meta":"Shape by shape","vocab":[],"ex":[
+{"id":"am_s1_3","title":"Build","step":"build","meta":"Shape by shape","vocab":[],"ex":[
 {"t":"mc","q":"Pick the letter le","o":["ለ","ላ","ሎ"],"a":0},
 {"t":"wb","q":"Build the row in order: le, lu, la","a":["ለ","ሉ","ላ"],"pool":["ለ","ሉ","ላ","ሎ"]},
 {"t":"mc","q":"Pick the letter lu","o":["ሉ","ሊ","ለ"],"a":0},
 {"t":"wb","q":"Build: li, lo","a":["ሊ","ሎ"],"pool":["ሊ","ሎ","ላ"]},
 {"t":"li","q":"Which letter do you hear?","say":"ሊ","o":["ሊ","ለ","ላ"],"a":0}
 ]},
-{"id":"am_s1_4","title":"The l-row in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the letter to its sound","pairs":[["ለ","le"],["ሉ","lu"],["ላ","la"]]},
 {"t":"li","q":"Which letter do you hear?","say":"ሎ","o":["ሎ","ሉ","ለ"],"a":0},
 {"t":"match","q":"Match the letter to its sound","pairs":[["ሊ","li"],["ሎ","lo"]]},
 {"t":"mc","q":"One shape, seven vowels — so 33 base shapes give you roughly…","o":["230 letters","33 letters","7 letters"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ላ","o":["ላ","ሊ","ሎ"],"a":0}
 ]},
-{"id":"am_s1_5","title":"Checkpoint: the l-row","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Which one is lo?","o":["ሎ","ለ","ሉ"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ለ","o":["ለ","ላ","ሎ"],"a":0},
 {"t":"mc","q":"ላ sounds like…","o":["la","le","li"],"a":0},
@@ -69,7 +69,7 @@ const AM_LESSONS=[
 ]},
 
 /* ---------- s2 · The m-row and the bare consonant ---------- */
-{"id":"am_s2","title":"The m-row and the bare consonant","step":"learn","meta":"መ — and the order with no vowel at all","vocab":[["መ","me","the letter me"],["ሙ","mu","the letter mu"],["ማ","ma","the letter ma"],["ም","m","the letter m (bare)"],["ሚ","mi","the letter mi"]],"ex":[
+{"id":"am_s2","title":"The m-row and the sixth order","step":"learn","meta":"መ — and the order with no vowel at all","vocab":[["መ","me","the letter me"],["ሙ","mu","the letter mu"],["ማ","ma","the letter ma"],["ም","m","the letter m (bare)"],["ሚ","mi","the letter mi"]],"ex":[
 {"t":"note","tag":"A new row","q":"መ, ሙ, ማ","body":"<p>The m-row wears the same seven dresses you already know: <b>መ</b> <i>me</i>, <b>ሙ</b> <i>mu</i>, <b>ማ</b> <i>ma</i>. Notice you can already GUESS the shapes — that is the fidel keeping its promise.</p>","eg":[["መ","me","the letter me"],["ሙ","mu","the letter mu"],["ማ","ma","the letter ma"]]},
 {"t":"li","q":"Which letter do you hear?","say":"መ","o":["መ","ማ"],"a":0},
 {"t":"mc","q":"ማ sounds like…","o":["ma","me","mu"],"a":0},
@@ -79,7 +79,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ሚ","o":["ሚ","ሙ"],"a":0},
 {"t":"mc","q":"Which one is the bare m?","o":["ም","መ","ማ"],"a":0}
 ]},
-{"id":"am_s2_2","title":"Hearing the m-row","step":"recognize","meta":"The new row by ear","vocab":[],"ex":[
+{"id":"am_s2_2","title":"Recognize","step":"recognize","meta":"The new row by ear","vocab":[],"ex":[
 {"t":"li","q":"Which letter do you hear?","say":"ሙ","o":["ሙ","መ","ም"],"a":0},
 {"t":"mc","q":"What does መ sound like?","o":["me","ma","mi"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ማ","o":["ማ","ሚ","ሙ"],"a":0},
@@ -87,21 +87,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ም","o":["ም","መ","ሙ"],"a":0},
 {"t":"mc","q":"Words END in Amharic most often with which order?","o":["the bare sixth","the first","the o-order"],"a":0}
 ]},
-{"id":"am_s2_3","title":"Building the m-row","step":"build","meta":"Same dance, new partner","vocab":[],"ex":[
+{"id":"am_s2_3","title":"Build","step":"build","meta":"Same dance, new partner","vocab":[],"ex":[
 {"t":"mc","q":"Pick the letter mu","o":["ሙ","ም","መ"],"a":0},
 {"t":"wb","q":"Build the row in order: me, mu, ma","a":["መ","ሙ","ማ"],"pool":["መ","ሙ","ማ","ም"]},
 {"t":"mc","q":"Pick the bare m","o":["ም","ማ","ሚ"],"a":0},
 {"t":"wb","q":"Build: mi, then bare m","a":["ሚ","ም"],"pool":["ሚ","ም","ማ"]},
 {"t":"li","q":"Which letter do you hear?","say":"መ","o":["መ","ማ","ም"],"a":0}
 ]},
-{"id":"am_s2_4","title":"The m-row in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the letter to its sound","pairs":[["መ","me"],["ሙ","mu"],["ም","m"]]},
 {"t":"li","q":"Which letter do you hear?","say":"ማ","o":["ማ","መ","ሚ"],"a":0},
 {"t":"match","q":"Match the letter to its sound","pairs":[["ማ","ma"],["ሚ","mi"]]},
 {"t":"mc","q":"ለ is to ል as መ is to…","o":["ም","ማ","ሙ"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ሚ","o":["ሚ","ም","ማ"],"a":0}
 ]},
-{"id":"am_s2_5","title":"Checkpoint: the m-row","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Which one is ma?","o":["ማ","መ","ም"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ም","o":["ም","ማ","መ"],"a":0},
 {"t":"mc","q":"ም is…","o":["m with no vowel","me","mo"],"a":0},
@@ -120,7 +120,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ሱ","o":["ሱ","ሰ"],"a":0},
 {"t":"mc","q":"ሰላም is built from…","o":["se + la + m","sa + le + mu","s + le + ma"],"a":0}
 ]},
-{"id":"am_s3_2","title":"Hearing the s-row","step":"recognize","meta":"From letters to a word","vocab":[],"ex":[
+{"id":"am_s3_2","title":"Recognize","step":"recognize","meta":"From letters to a word","vocab":[],"ex":[
 {"t":"li","q":"Which letter do you hear?","say":"ሳ","o":["ሳ","ሰ","ስ"],"a":0},
 {"t":"mc","q":"What does ሱ sound like?","o":["su","se","sa"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም","o":["ሰላም","ሳ","ላ"],"a":0},
@@ -128,21 +128,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ስ","o":["ስ","ሰ","ሱ"],"a":0},
 {"t":"mc","q":"The last letter of ሰላም is…","o":["ም","ማ","ስ"],"a":0}
 ]},
-{"id":"am_s3_3","title":"Building selam","step":"build","meta":"Letters into greeting","vocab":[],"ex":[
+{"id":"am_s3_3","title":"Build","step":"build","meta":"Letters into greeting","vocab":[],"ex":[
 {"t":"wb","q":"Build the word: selam (hello)","a":["ሰ","ላ","ም"],"pool":["ሰ","ላ","ም","ሱ"]},
 {"t":"mc","q":"Pick the letter sa","o":["ሳ","ስ","ሰ"],"a":0},
 {"t":"wb","q":"Build the row in order: se, su, sa","a":["ሰ","ሱ","ሳ"],"pool":["ሰ","ሱ","ሳ","ስ"]},
 {"t":"mc","q":"Pick the bare s","o":["ስ","ሳ","ሱ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም","o":["ሰላም","ሰ","ም"],"a":0}
 ]},
-{"id":"am_s3_4","title":"The s-row in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the letter to its sound","pairs":[["ሰ","se"],["ሱ","su"],["ስ","s"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም","o":["ሰላም","ሳ","ሱ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰላም","hello · peace"],["ሳ","the letter sa"]]},
 {"t":"mc","q":"Reading ሰላም from three taught letters proves…","o":["the fidel unlocks whole words fast","Amharic has no vowels","words must be memorized as pictures"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ሰ","o":["ሰ","ስ","ሳ"],"a":0}
 ]},
-{"id":"am_s3_5","title":"Checkpoint: the s-row","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሰላም means…","o":["hello · peace","good night","welcome"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም","o":["ሰላም","ሰ","ላ"],"a":0},
 {"t":"mc","q":"Which one is su?","o":["ሱ","ሰ","ሳ"],"a":0},
@@ -151,7 +151,7 @@ const AM_LESSONS=[
 ]},
 
 /* ---------- s4 · The tight sounds ---------- */
-{"id":"am_s4","title":"The tight sounds","step":"learn","meta":"Ejectives — Amharic pops its consonants","vocab":[["ተ","te","the letter te"],["ጠ","tte","the letter tte (tight t)"],["ከ","ke","the letter ke"],["ቀ","qe","the letter qe (tight k)"],["ቸ","che","the letter che"],["ጨ","cche","the letter cche (tight ch)"]],"ex":[
+{"id":"am_s4","title":"Ejectives — the tight sounds","step":"learn","meta":"Ejectives — Amharic pops its consonants","vocab":[["ተ","te","the letter te"],["ጠ","tte","the letter tte (tight t)"],["ከ","ke","the letter ke"],["ቀ","qe","the letter qe (tight k)"],["ቸ","che","the letter che"],["ጨ","cche","the letter cche (tight ch)"]],"ex":[
 {"t":"note","tag":"A new kind of sound","q":"Tight consonants","body":"<p>Amharic has pairs of consonants English merges: a plain one and a TIGHT one — made by holding breath behind the tongue and popping it. Plain <b>ተ</b> <i>te</i> against tight <b>ጠ</b> (we write it <i>tte</i>). The pop is the whole difference.</p>","eg":[["ተ","te","the letter te"],["ጠ","tte","the letter tte (tight t)"]]},
 {"t":"li","q":"Plain or tight — which do you hear?","say":"ጠ","o":["ጠ","ተ"],"a":0},
 {"t":"mc","q":"The tight consonants are made by…","o":["popping held breath","whispering","nasal air"],"a":0},
@@ -162,7 +162,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Plain or tight — which do you hear?","say":"ጨ","o":["ጨ","ቸ"],"a":0},
 {"t":"mc","q":"Which one is the tight ch?","o":["ጨ","ቸ","ከ"],"a":0}
 ]},
-{"id":"am_s4_2","title":"Hearing the pop","step":"recognize","meta":"Plain vs tight by ear","vocab":[],"ex":[
+{"id":"am_s4_2","title":"Recognize","step":"recognize","meta":"Plain vs tight by ear","vocab":[],"ex":[
 {"t":"li","q":"Which letter do you hear?","say":"ተ","o":["ተ","ጠ","ከ"],"a":0},
 {"t":"mc","q":"ቀ is the tight partner of…","o":["ከ","ተ","ቸ"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ከ","o":["ከ","ቀ","ተ"],"a":0},
@@ -170,21 +170,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which letter do you hear?","say":"ጠ","o":["ጠ","ተ","ቀ"],"a":0},
 {"t":"mc","q":"If you cannot pop the sound yet…","o":["hearing the difference already counts","skip these letters","use English t"],"a":0}
 ]},
-{"id":"am_s4_3","title":"Building the pairs","step":"build","meta":"Plain beside tight","vocab":[],"ex":[
+{"id":"am_s4_3","title":"Build","step":"build","meta":"Plain beside tight","vocab":[],"ex":[
 {"t":"mc","q":"Pick the tight t","o":["ጠ","ተ","ቸ"],"a":0},
 {"t":"wb","q":"Build the pair: plain te, tight tte","a":["ተ","ጠ"],"pool":["ተ","ጠ","ቀ"]},
 {"t":"mc","q":"Pick the plain k","o":["ከ","ቀ","ጨ"],"a":0},
 {"t":"wb","q":"Build the pair: plain che, tight cche","a":["ቸ","ጨ"],"pool":["ቸ","ጨ","ተ"]},
 {"t":"li","q":"Which letter do you hear?","say":"ቸ","o":["ቸ","ጨ","ከ"],"a":0}
 ]},
-{"id":"am_s4_4","title":"The pairs in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match plain to tight","pairs":[["ተ","ጠ"],["ከ","ቀ"],["ቸ","ጨ"]]},
 {"t":"li","q":"Which letter do you hear?","say":"ቀ","o":["ቀ","ከ","ጠ"],"a":0},
 {"t":"match","q":"Match the letter to its sound","pairs":[["ጠ","tte"],["ቀ","qe"],["ጨ","cche"]]},
 {"t":"mc","q":"qey (red) and qen (day) start with…","o":["ቀ","ከ","ጀ"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ተ","o":["ተ","ቸ","ጠ"],"a":0}
 ]},
-{"id":"am_s4_5","title":"Checkpoint: the tight sounds","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"The difference between ተ and ጠ is…","o":["a pop of held breath","the vowel","the length"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"ጨ","o":["ጨ","ቸ","ቀ"],"a":0},
 {"t":"mc","q":"Which one is qe?","o":["ቀ","ከ","ጠ"],"a":0},
@@ -204,7 +204,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እኔ","o":["እኔ","ማን"],"a":0},
 {"t":"mc","q":"እኔ means…","o":["I · me","you","we"],"a":0}
 ]},
-{"id":"am_s5_2","title":"Hearing the breath letters","step":"recognize","meta":"Soft sounds by ear","vocab":[],"ex":[
+{"id":"am_s5_2","title":"Recognize","step":"recognize","meta":"Soft sounds by ear","vocab":[],"ex":[
 {"t":"li","q":"Which letter do you hear?","say":"ነ","o":["ነ","ን","ሀ"],"a":0},
 {"t":"mc","q":"What does ሀ sound like?","o":["ha","a","na"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማን","o":["ማን","እኔ","ማ"],"a":0},
@@ -212,21 +212,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እኔ","o":["እኔ","ነ","ሰላም"],"a":0},
 {"t":"mc","q":"ማን is built from…","o":["ma + bare n","man + a","m + an"],"a":0}
 ]},
-{"id":"am_s5_3","title":"Building with breath","step":"build","meta":"Words from quiet letters","vocab":[],"ex":[
+{"id":"am_s5_3","title":"Build","step":"build","meta":"Words from quiet letters","vocab":[],"ex":[
 {"t":"wb","q":"Build the word: man (who?)","a":["ማ","ን"],"pool":["ማ","ን","ነ"]},
 {"t":"mc","q":"Pick the vowel carrier","o":["አ","ሀ","ነ"],"a":0},
 {"t":"wb","q":"Build the pair: ne, then bare n","a":["ነ","ን"],"pool":["ነ","ን","ና"]},
 {"t":"mc","q":"Pick the letter ha","o":["ሀ","አ","ን"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማን","o":["ማን","እኔ","ን"],"a":0}
 ]},
-{"id":"am_s5_4","title":"Breath letters in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the letter to its sound","pairs":[["ሀ","ha"],["አ","a"],["ን","n"]]},
 {"t":"li","q":"Which one do you hear?","say":"እኔ","o":["እኔ","ማን","ሀ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ማን","who?"],["እኔ","I · me"]]},
 {"t":"mc","q":"ሰላም! ማን…? — the stranger at the door is asking…","o":["who is it?","what time is it?","is it far?"],"a":0},
 {"t":"li","q":"Which letter do you hear?","say":"አ","o":["አ","ሀ","ነ"],"a":0}
 ]},
-{"id":"am_s5_5","title":"Checkpoint: breath letters","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ማን means…","o":["who?","me","hello"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማን","o":["ማን","እኔ","ነ"],"a":0},
 {"t":"mc","q":"Which one means I?","o":["እኔ","ማን","አ"],"a":0},
@@ -236,7 +236,7 @@ const AM_LESSONS=[
 
 /* ---------- s6 · Doubling — and words you can already read ---------- */
 {"id":"am_s6","title":"Doubling — and words you can already read","step":"learn","meta":"Gemination, plus the fidel pays rent","vocab":[["ላም","lam","cow"],["ሌላ","layla","another · other"],["ሙሉ","mulu","full · whole"],["ሱስ","sus","addiction · habit"]],"ex":[
-{"t":"note","tag":"The invisible double","q":"Letters that lean in","body":"<p>Amharic loves DOUBLED consonants — <i>hulett</i> (two) really holds its l — but the fidel does not write the doubling. Your ear carries it. Our roms write it out (hulett, simmint) so you never lose it.</p>","eg":[["ላም","lam","cow"]]},
+{"t":"note","tag":"The invisible double","q":"The doubling is not written","body":"<p>Amharic loves DOUBLED consonants — <i>hulett</i> (two) really holds its l — but the fidel does not write the doubling. Your ear carries it. Our roms write it out (hulett, simmint) so you never lose it.</p>","eg":[["ላም","lam","cow"]]},
 {"t":"li","q":"Which one do you hear?","say":"ላም","o":["ላም","ላ"],"a":0},
 {"t":"mc","q":"ላም — read it: la + bare m…","o":["lam, a cow","lum, a boy","lom, a lime"],"a":0},
 {"t":"note","tag":"Free words","q":"ሌላ and ሙሉ","body":"<p>Read with letters you own: <b>ሌ</b> lay + <b>ላ</b> la — <b>ሌላ</b> <i>layla</i>, <i>another</i>. <b>ሙ</b> mu + <b>ሉ</b> lu — <b>ሙሉ</b> <i>mulu</i>, <i>full</i>. Every new row will keep paying like this.</p>","eg":[["ሌላ","layla","another · other"],["ሙሉ","mulu","full · whole"]]},
@@ -246,7 +246,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሱስ","o":["ሱስ","ሌላ"],"a":0},
 {"t":"mc","q":"Which one means another?","o":["ሌላ","ሙሉ","ላም"],"a":0}
 ]},
-{"id":"am_s6_2","title":"Hearing the free words","step":"recognize","meta":"Read words by ear","vocab":[],"ex":[
+{"id":"am_s6_2","title":"Recognize","step":"recognize","meta":"Read words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሙሉ","o":["ሙሉ","ሌላ","ሱስ"],"a":0},
 {"t":"mc","q":"What does ላም mean?","o":["cow","milk","farm"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ላም","o":["ላም","ሙሉ","ማን"],"a":0},
@@ -254,21 +254,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሱስ","o":["ሱስ","ላም","ሌላ"],"a":0},
 {"t":"mc","q":"The doubling in hulett is…","o":["heard but not written in fidel","written twice in fidel","optional"],"a":0}
 ]},
-{"id":"am_s6_3","title":"Building the free words","step":"build","meta":"Read, then assemble","vocab":[],"ex":[
+{"id":"am_s6_3","title":"Build","step":"build","meta":"Read, then assemble","vocab":[],"ex":[
 {"t":"wb","q":"Build the word: lam (cow)","a":["ላ","ም"],"pool":["ላ","ም","ማ"]},
 {"t":"wb","q":"Build the word: mulu (full)","a":["ሙ","ሉ"],"pool":["ሙ","ሉ","ሱ"]},
 {"t":"mc","q":"Pick the word for another","o":["ሌላ","ሙሉ","ሱስ"],"a":0},
 {"t":"wb","q":"Build the word: sus (habit)","a":["ሱ","ስ"],"pool":["ሱ","ስ","ሰ"]},
 {"t":"li","q":"Which one do you hear?","say":"ሌላ","o":["ሌላ","ሱስ","ሙሉ"],"a":0}
 ]},
-{"id":"am_s6_4","title":"Free words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ላም","cow"],["ሌላ","another · other"],["ሙሉ","full · whole"]]},
 {"t":"li","q":"Which one do you hear?","say":"ላም","o":["ላም","ሌላ","ሱስ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሱስ","addiction · habit"],["ማን","who?"]]},
 {"t":"mc","q":"Ethiopians fondly call coffee a…","o":["ሱስ","ላም","ሙሉ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሙሉ","o":["ሙሉ","ሱስ","ላም"],"a":0}
 ]},
-{"id":"am_s6_5","title":"Checkpoint: the free words","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_s6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሌላ means…","o":["another · other","full","cow"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሱስ","o":["ሱስ","ሙሉ","ላም"],"a":0},
 {"t":"mc","q":"Which one means cow?","o":["ላም","ሌላ","ማን"],"a":0},
@@ -288,7 +288,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እሺ","o":["እሺ","አዎ"],"a":0},
 {"t":"mc","q":"እሺ means…","o":["okay · sure","hello","thank you"],"a":0}
 ]},
-{"id":"am_s7_2","title":"Hearing the openers","step":"recognize","meta":"First conversation by ear","vocab":[],"ex":[
+{"id":"am_s7_2","title":"Recognize","step":"recognize","meta":"First conversation by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አዎ","o":["አዎ","እሺ","አማርኛ"],"a":0},
 {"t":"mc","q":"What does አማርኛ mean?","o":["Amharic","Ethiopia","language"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም ነው?","o":["ሰላም ነው?","አማርኛ","ሰላም"],"a":0},
@@ -296,21 +296,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እሺ","o":["እሺ","ሰላም ነው?","አዎ"],"a":0},
 {"t":"mc","q":"The answer to ሰላም ነው? is…","o":["ሰላም ነው","አዎ ማን","ሌላ"],"a":0}
 ]},
-{"id":"am_s7_3","title":"Building the openers","step":"build","meta":"Say your first exchange","vocab":[],"ex":[
+{"id":"am_s7_3","title":"Build","step":"build","meta":"Say your first exchange","vocab":[],"ex":[
 {"t":"wb","q":"Build: is everything peaceful?","a":["ሰላም","ነው?"],"pool":["ሰላም","ነው?","እሺ"]},
 {"t":"mc","q":"Pick the word for yes","o":["አዎ","እሺ","ማን"],"a":0},
 {"t":"wb","q":"Build the word: ishi (okay)","a":["እ","ሺ"],"pool":["እ","ሺ","ሽ"]},
 {"t":"mc","q":"Pick the name of the language","o":["አማርኛ","ሰላም","አዎ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አማርኛ","o":["አማርኛ","እሺ","ሰላም ነው?"],"a":0}
 ]},
-{"id":"am_s7_4","title":"The openers in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_s7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰላም ነው?","is everything peaceful?"],["አዎ","yes"],["እሺ","okay · sure"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም ነው?","o":["ሰላም ነው?","እሺ","አዎ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አማርኛ","Amharic"],["ሰላም","hello · peace"]]},
 {"t":"mc","q":"The soft agreeable word you will hear fifty times a day…","o":["እሺ","አዎ","ላም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አዎ","o":["አዎ","አማርኛ","እሺ"],"a":0}
 ]},
-{"id":"am_s7_5","title":"Checkpoint: Zone 1 complete","step":"checkpoint","meta":"The sounds of Amharic — show it all","vocab":[],"ex":[
+{"id":"am_s7_5","title":"Checkpoint","step":"checkpoint","meta":"The sounds of Amharic — show it all","vocab":[],"ex":[
 {"t":"mc","q":"እሺ means…","o":["okay · sure","yes","who?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰላም ነው?","o":["ሰላም ነው?","ሰላም","አማርኛ"],"a":0},
 {"t":"mc","q":"Review — one fidel shape gives you…","o":["seven letters","one letter","a sentence"],"a":0},
@@ -332,7 +332,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እግዚአብሔር ይመስገን","o":["እግዚአብሔር ይመስገን","ደህና ነኝ"],"a":0},
 {"t":"mc","q":"እግዚአብሔር ይመስገን works like the English…","o":["fine, thanks","see you later","excuse me"],"a":0}
 ]},
-{"id":"am_g1_2","title":"Hearing the greetings","step":"recognize","meta":"He, she and the reply — by ear","vocab":[],"ex":[
+{"id":"am_g1_2","title":"Recognize","step":"recognize","meta":"He, she and the reply — by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነሽ?","o":["ደህና ነሽ?","ደህና ነህ?","ደህና ነኝ"],"a":0},
 {"t":"mc","q":"What does ደህና ነህ? mean?","o":["are you well? (to a man)","are you well? (to a woman)","I am well"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነኝ","o":["ደህና ነኝ","ደህና ነሽ?","እግዚአብሔር ይመስገን"],"a":0},
@@ -340,21 +340,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነህ?","o":["ደህና ነህ?","ደህና ነኝ","ደህና ነሽ?"],"a":0},
 {"t":"mc","q":"The -h / -sh endings mark…","o":["him and her","past and present","one and many"],"a":0}
 ]},
-{"id":"am_g1_3","title":"Building the exchange","step":"build","meta":"Question, answer, formula","vocab":[],"ex":[
+{"id":"am_g1_3","title":"Build","step":"build","meta":"Question, answer, formula","vocab":[],"ex":[
 {"t":"wb","q":"Build: are you well? (to a man)","a":["ደህና","ነህ?"],"pool":["ደህና","ነህ?","ነሽ?"]},
 {"t":"wb","q":"Build: I am well","a":["ደህና","ነኝ"],"pool":["ደህና","ነኝ","ነህ?"]},
 {"t":"mc","q":"Pick the version for a woman","o":["ደህና ነሽ?","ደህና ነህ?","ደህና ነኝ"],"a":0},
 {"t":"wb","q":"Build: are you well? (to a woman)","a":["ደህና","ነሽ?"],"pool":["ደህና","ነሽ?","ነኝ"]},
 {"t":"li","q":"Which one do you hear?","say":"እግዚአብሔር ይመስገን","o":["እግዚአብሔር ይመስገን","ደህና ነህ?","ደህና ነኝ"],"a":0}
 ]},
-{"id":"am_g1_4","title":"The greetings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ደህና ነህ?","are you well? (man)"],["ደህና ነሽ?","are you well? (woman)"],["ደህና ነኝ","I am well"]]},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነሽ?","o":["ደህና ነሽ?","ደህና ነኝ","ደህና ነህ?"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እግዚአብሔር ይመስገን","God be thanked"],["ሰላም ነው?","is everything peaceful?"]]},
 {"t":"mc","q":"Greeting your host father in the morning, you say ደህና ነህ? He answers…","o":["ደህና, እግዚአብሔር ይመስገን","ደህና ነሽ?","ማን ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነኝ","o":["ደህና ነኝ","እግዚአብሔር ይመስገን","ደህና ነሽ?"],"a":0}
 ]},
-{"id":"am_g1_5","title":"Checkpoint: are you well?","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"To a woman you ask…","o":["ደህና ነሽ?","ደህና ነህ?","ደህና ነኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነህ?","o":["ደህና ነህ?","ደህና ነሽ?","ደህና ነኝ"],"a":0},
 {"t":"mc","q":"ደህና ነኝ means…","o":["I am well","are you well?","she is well"],"a":0},
@@ -373,7 +373,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስም","o":["ስም","ስሜ … ነው"],"a":0},
 {"t":"mc","q":"The -e ending on ስሜ means…","o":["my","your","his"],"a":0}
 ]},
-{"id":"am_g2_2","title":"Hearing the names","step":"recognize","meta":"The name exchange by ear","vocab":[],"ex":[
+{"id":"am_g2_2","title":"Recognize","step":"recognize","meta":"The name exchange by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ስምሽ ማን ነው?","o":["ስምሽ ማን ነው?","ስምህ ማን ነው?","ስሜ … ነው"],"a":0},
 {"t":"mc","q":"What does ስም mean?","o":["name","who","word"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስሜ … ነው","o":["ስሜ … ነው","ስም","ስምሽ ማን ነው?"],"a":0},
@@ -381,21 +381,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስምህ ማን ነው?","o":["ስምህ ማን ነው?","ስምሽ ማን ነው?","ስም"],"a":0},
 {"t":"mc","q":"The ማን in the question is the same ማን you learned as…","o":["who?","what?","where?"],"a":0}
 ]},
-{"id":"am_g2_3","title":"Building the names","step":"build","meta":"Ask and introduce","vocab":[],"ex":[
+{"id":"am_g2_3","title":"Build","step":"build","meta":"Ask and introduce","vocab":[],"ex":[
 {"t":"wb","q":"Build: what is your name? (to a man)","a":["ስምህ","ማን","ነው?"],"pool":["ስምህ","ማን","ነው?","ስምሽ"]},
 {"t":"wb","q":"Build: my name is …","a":["ስሜ","…","ነው"],"pool":["ስሜ","…","ነው","ማን"]},
 {"t":"mc","q":"Pick the word for name","o":["ስም","ማን","ነው"],"a":0},
 {"t":"wb","q":"Build: what is your name? (to a woman)","a":["ስምሽ","ማን","ነው?"],"pool":["ስምሽ","ማን","ነው?","ስሜ"]},
 {"t":"li","q":"Which one do you hear?","say":"ስምሽ ማን ነው?","o":["ስምሽ ማን ነው?","ስሜ … ነው","ስምህ ማን ነው?"],"a":0}
 ]},
-{"id":"am_g2_4","title":"The names in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስምህ ማን ነው?","your name? (man)"],["ስምሽ ማን ነው?","your name? (woman)"],["ስሜ … ነው","my name is …"]]},
 {"t":"li","q":"Which one do you hear?","say":"ስም","o":["ስም","ስሜ … ነው","ማን"],"a":0},
 {"t":"match","q":"Match the ending to its meaning","pairs":[["ስምህ","your name (man)"],["ስምሽ","your name (woman)"],["ስሜ","my name"]]},
 {"t":"mc","q":"ሰላም! ስምሽ ማን ነው? — you are talking to…","o":["a woman","a man","a crowd"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስሜ … ነው","o":["ስሜ … ነው","ስምህ ማን ነው?","ስም"],"a":0}
 ]},
-{"id":"am_g2_5","title":"Checkpoint: the names","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ስምህ ማን ነው? asks…","o":["a man his name","a woman her name","where you are from"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስሜ … ነው","o":["ስሜ … ነው","ስምሽ ማን ነው?","ስም"],"a":0},
 {"t":"mc","q":"Which one means name?","o":["ስም","ማን","ነው"],"a":0},
@@ -415,7 +415,7 @@ const AM_LESSONS=[
 {"t":"li","q":"To a man or a woman — which do you hear?","say":"ደህና እደሪ","o":["ደህና እደሪ","ደህና እደር"],"a":0},
 {"t":"mc","q":"ደህና እደር literally wishes someone to…","o":["spend the night well","sleep late","dream sweetly"],"a":0}
 ]},
-{"id":"am_g3_2","title":"Hearing the sun greetings","step":"recognize","meta":"Time-of-day forms by ear","vocab":[],"ex":[
+{"id":"am_g3_2","title":"Recognize","step":"recognize","meta":"Time-of-day forms by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እንደምን አደርሽ?","o":["እንደምን አደርሽ?","እንደምን አደርክ?","እንደምን ዋልክ?"],"a":0},
 {"t":"mc","q":"What does እንደምን ዋልክ? mean?","o":["good afternoon (man)","good morning (man)","good night (man)"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና እደር","o":["ደህና እደር","ደህና እደሪ","እንደምን አደርክ?"],"a":0},
@@ -423,21 +423,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እንደምን አደርክ?","o":["እንደምን አደርክ?","እንደምን አደርሽ?","ደህና እደር"],"a":0},
 {"t":"mc","q":"The greeting system runs on verbs for spending…","o":["the night, the day, the evening","food and drink","work and rest"],"a":0}
 ]},
-{"id":"am_g3_3","title":"Building the sun greetings","step":"build","meta":"The right verb for the hour","vocab":[],"ex":[
+{"id":"am_g3_3","title":"Build","step":"build","meta":"The right verb for the hour","vocab":[],"ex":[
 {"t":"wb","q":"Build: good morning (to a man)","a":["እንደምን","አደርክ?"],"pool":["እንደምን","አደርክ?","ዋልክ?"]},
 {"t":"wb","q":"Build: good night (to a man)","a":["ደህና","እደር"],"pool":["ደህና","እደር","እደሪ"]},
 {"t":"mc","q":"Pick the afternoon greeting","o":["እንደምን ዋልክ?","እንደምን አደርክ?","ደህና እደር"],"a":0},
 {"t":"wb","q":"Build: good morning (to a woman)","a":["እንደምን","አደርሽ?"],"pool":["እንደምን","አደርሽ?","አደርክ?"]},
 {"t":"li","q":"Which one do you hear?","say":"ደህና እደሪ","o":["ደህና እደሪ","ደህና እደር","እንደምን አደርሽ?"],"a":0}
 ]},
-{"id":"am_g3_4","title":"Sun greetings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the greeting to its hour","pairs":[["እንደምን አደርክ?","morning"],["እንደምን ዋልክ?","afternoon"],["ደህና እደር","night (parting)"]]},
 {"t":"li","q":"Which one do you hear?","say":"እንደምን ዋልክ?","o":["እንደምን ዋልክ?","እንደምን አደርክ?","ደህና እደሪ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንደምን አደርሽ?","good morning (woman)"],["ደህና እደሪ","good night (woman)"]]},
 {"t":"mc","q":"Your host mother, at breakfast, gets…","o":["እንደምን አደርሽ?","እንደምን አደርክ?","ደህና እደር"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንደምን አደርሽ?","o":["እንደምን አደርሽ?","ደህና እደሪ","እንደምን ዋልክ?"],"a":0}
 ]},
-{"id":"am_g3_5","title":"Checkpoint: the sun greetings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እንደምን አደርክ? is said…","o":["in the morning, to a man","at night, to a woman","at noon, to anyone"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንደምን ዋልክ?","o":["እንደምን ዋልክ?","እንደምን አደርክ?","ደህና እደር"],"a":0},
 {"t":"mc","q":"Good night to a woman is…","o":["ደህና እደሪ","ደህና እደር","እንደምን አደርሽ?"],"a":0},
@@ -457,7 +457,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሮ","o":["ወይዘሮ","አቶ"],"a":0},
 {"t":"mc","q":"Titles in Ethiopia go with…","o":["first names","family names","no names"],"a":0}
 ]},
-{"id":"am_g4_2","title":"Hearing the polite forms","step":"recognize","meta":"Respect by ear","vocab":[],"ex":[
+{"id":"am_g4_2","title":"Recognize","step":"recognize","meta":"Respect by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እርስዎ","o":["እርስዎ","አቶ","ወይዘሮ"],"a":0},
 {"t":"mc","q":"What does ደህና ነዎት? mean?","o":["are you well? (polite)","are you well? (to a man)","I am well"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጤና ይስጥልኝ","o":["ጤና ይስጥልኝ","እርስዎ","ደህና ነዎት?"],"a":0},
@@ -465,21 +465,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አቶ","o":["አቶ","ወይዘሮ","እርስዎ"],"a":0},
 {"t":"mc","q":"The two-handed handshake shows…","o":["respect","impatience","confusion"],"a":0}
 ]},
-{"id":"am_g4_3","title":"Building the polite forms","step":"build","meta":"Grammar that bows","vocab":[],"ex":[
+{"id":"am_g4_3","title":"Build","step":"build","meta":"Grammar that bows","vocab":[],"ex":[
 {"t":"wb","q":"Build: are you well? (polite)","a":["ደህና","ነዎት?"],"pool":["ደህና","ነዎት?","ነህ?"]},
 {"t":"mc","q":"Pick the polite you","o":["እርስዎ","አቶ","እኔ"],"a":0},
 {"t":"wb","q":"Build: the formal greeting","a":["ጤና","ይስጥልኝ"],"pool":["ጤና","ይስጥልኝ","ነዎት?"]},
 {"t":"mc","q":"Pick the title for a man","o":["አቶ","ወይዘሮ","ስም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነዎት?","o":["ደህና ነዎት?","ጤና ይስጥልኝ","እርስዎ"],"a":0}
 ]},
-{"id":"am_g4_4","title":"Polite forms in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እርስዎ","you (polite)"],["አቶ","Mr."],["ወይዘሮ","Mrs."]]},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ነዎት?","o":["ደህና ነዎት?","ደህና ነሽ?","ጤና ይስጥልኝ"],"a":0},
 {"t":"match","q":"Match the register","pairs":[["ደህና ነህ?","a friend"],["ደህና ነዎት?","an elder"]]},
 {"t":"mc","q":"Meeting the school director, you open with…","o":["ጤና ይስጥልኝ","ሰላም ነው?","እሺ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሮ","o":["ወይዘሮ","አቶ","እርስዎ"],"a":0}
 ]},
-{"id":"am_g4_5","title":"Checkpoint: the polite you","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ደህና ነዎት? uses the ending for…","o":["the polite you, erswo","the plain you, ante","the speaker, ine"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጤና ይስጥልኝ","o":["ጤና ይስጥልኝ","ደህና ነዎት?","ወይዘሮ"],"a":0},
 {"t":"mc","q":"Which one means Mr.?","o":["አቶ","ወይዘሮ","ስም"],"a":0},
@@ -499,7 +499,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያ","o":["ኢትዮጵያ","አዲስ አበባ"],"a":0},
 {"t":"mc","q":"አዲስ አበባ literally means…","o":["new flower","high city","great mountain"],"a":0}
 ]},
-{"id":"am_g5_2","title":"Hearing where-from","step":"recognize","meta":"Places by ear","vocab":[],"ex":[
+{"id":"am_g5_2","title":"Recognize","step":"recognize","meta":"Places by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ከየት ነህ?","o":["ከየት ነህ?","ከየት ነሽ?","ከአሜሪካ ነኝ"],"a":0},
 {"t":"mc","q":"What does ኢትዮጵያ mean?","o":["Ethiopia","Africa","Addis Ababa"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አዲስ አበባ","o":["አዲስ አበባ","ኢትዮጵያ","ከአሜሪካ ነኝ"],"a":0},
@@ -507,21 +507,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ከየት ነሽ?","o":["ከየት ነሽ?","ከየት ነህ?","ኢትዮጵያ"],"a":0},
 {"t":"mc","q":"Ethiopians call their capital simply…","o":["Addis","Abeba","Yet"],"a":0}
 ]},
-{"id":"am_g5_3","title":"Building where-from","step":"build","meta":"Question and answer","vocab":[],"ex":[
+{"id":"am_g5_3","title":"Build","step":"build","meta":"Question and answer","vocab":[],"ex":[
 {"t":"wb","q":"Build: where are you from? (to a man)","a":["ከየት","ነህ?"],"pool":["ከየት","ነህ?","ነሽ?"]},
 {"t":"wb","q":"Build: I am from America","a":["ከአሜሪካ","ነኝ"],"pool":["ከአሜሪካ","ነኝ","ነህ?"]},
 {"t":"mc","q":"Pick the capital of Ethiopia","o":["አዲስ አበባ","ኢትዮጵያ","አሜሪካ"],"a":0},
 {"t":"wb","q":"Build: where are you from? (to a woman)","a":["ከየት","ነሽ?"],"pool":["ከየት","ነሽ?","ነኝ"]},
 {"t":"li","q":"Which one do you hear?","say":"ከአሜሪካ ነኝ","o":["ከአሜሪካ ነኝ","ከየት ነሽ?","አዲስ አበባ"],"a":0}
 ]},
-{"id":"am_g5_4","title":"Where-from in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ከየት ነህ?","where are you from? (man)"],["ከአሜሪካ ነኝ","I am from America"],["ኢትዮጵያ","Ethiopia"]]},
 {"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያ","o":["ኢትዮጵያ","አዲስ አበባ","ከአሜሪካ ነኝ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አዲስ አበባ","new flower (the capital)"],["ከየት ነሽ?","where are you from? (woman)"]]},
 {"t":"mc","q":"ከየት ነህ? — ከአሜሪካ ነኝ. እርስዎስ? The polite follow-up asks…","o":["and you?","really?","since when?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከየት ነህ?","o":["ከየት ነህ?","ከየት ነሽ?","ከአሜሪካ ነኝ"],"a":0}
 ]},
-{"id":"am_g5_5","title":"Checkpoint: where-from","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ከየት ነሽ? asks…","o":["a woman where she is from","a man where he is from","anyone their name"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አዲስ አበባ","o":["አዲስ አበባ","ኢትዮጵያ","ከየት ነህ?"],"a":0},
 {"t":"mc","q":"Which one means Ethiopia?","o":["ኢትዮጵያ","አዲስ አበባ","አሜሪካ"],"a":0},
@@ -541,7 +541,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሴት","o":["ሴት","ወንድ"],"a":0},
 {"t":"mc","q":"Which one means man?","o":["ወንድ","ሴት","ሰው"],"a":0}
 ]},
-{"id":"am_g6_2","title":"Hearing the people","step":"recognize","meta":"People words by ear","vocab":[],"ex":[
+{"id":"am_g6_2","title":"Recognize","step":"recognize","meta":"People words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሰው","o":["ሰው","ሰዎች","ሴት"],"a":0},
 {"t":"mc","q":"What does ሰዎች mean?","o":["people","person","friends"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወንድ","o":["ወንድ","ሴት","ጓደኛ"],"a":0},
@@ -549,21 +549,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጓደኛ","o":["ጓደኛ","ወንድ","ሰዎች"],"a":0},
 {"t":"mc","q":"ሰው is to ሰዎች as person is to…","o":["people","persons name","friends"],"a":0}
 ]},
-{"id":"am_g6_3","title":"Building the people","step":"build","meta":"Singular, plural, both","vocab":[],"ex":[
+{"id":"am_g6_3","title":"Build","step":"build","meta":"Singular, plural, both","vocab":[],"ex":[
 {"t":"wb","q":"Build the word: people","a":["ሰ","ዎች"],"pool":["ሰ","ዎች","ው"]},
 {"t":"mc","q":"Pick the word for friend","o":["ጓደኛ","ሰው","ሴት"],"a":0},
 {"t":"wb","q":"Build: a man and a woman (wend, set)","a":["ወንድ","ሴት"],"pool":["ወንድ","ሴት","ሰው"]},
 {"t":"mc","q":"Pick the word for person","o":["ሰው","ሰዎች","ወንድ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰዎች","o":["ሰዎች","ሰው","ጓደኛ"],"a":0}
 ]},
-{"id":"am_g6_4","title":"The people in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰው","person"],["ሰዎች","people"],["ጓደኛ","friend"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሴት","o":["ሴት","ሰው","ወንድ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወንድ","man"],["ሴት","woman"]]},
 {"t":"mc","q":"ጓደኛዬ (gwadegna + ye) would mean…","o":["my friend","your friend","old friend"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወንድ","o":["ወንድ","ጓደኛ","ሴት"],"a":0}
 ]},
-{"id":"am_g6_5","title":"Checkpoint: the people","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_g6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሰዎች means…","o":["people","person","women"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጓደኛ","o":["ጓደኛ","ሰዎች","ሴት"],"a":0},
 {"t":"mc","q":"Which one means woman?","o":["ሴት","ወንድ","ሰው"],"a":0},
@@ -583,7 +583,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቻው","o":["ቻው","ደህና ሁን"],"a":0},
 {"t":"mc","q":"ቻው came to Amharic from…","o":["Italian","English","Arabic"],"a":0}
 ]},
-{"id":"am_g7_2","title":"Hearing the farewells","step":"recognize","meta":"Thanks and goodbyes by ear","vocab":[],"ex":[
+{"id":"am_g7_2","title":"Recognize","step":"recognize","meta":"Thanks and goodbyes by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ደህና ሁኚ","o":["ደህና ሁኚ","ደህና ሁን","ቻው"],"a":0},
 {"t":"mc","q":"What does አመሰግናለሁ mean?","o":["thank you","goodbye","good night"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቻው","o":["ቻው","ደህና ሁን","አመሰግናለሁ"],"a":0},
@@ -591,21 +591,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አመሰግናለሁ","o":["አመሰግናለሁ","ቻው","ደህና ሁኚ"],"a":0},
 {"t":"mc","q":"Count the syllables: a-me-se-gi-na-le-hu…","o":["seven","five","three"],"a":0}
 ]},
-{"id":"am_g7_3","title":"Building the farewells","step":"build","meta":"Leave like a local","vocab":[],"ex":[
+{"id":"am_g7_3","title":"Build","step":"build","meta":"Leave like a local","vocab":[],"ex":[
 {"t":"wb","q":"Build: goodbye (to a man)","a":["ደህና","ሁን"],"pool":["ደህና","ሁን","ሁኚ"]},
 {"t":"mc","q":"Pick the word for thank you","o":["አመሰግናለሁ","ቻው","ደህና ሁን"],"a":0},
 {"t":"wb","q":"Build: goodbye (to a woman)","a":["ደህና","ሁኚ"],"pool":["ደህና","ሁኚ","ሁን"]},
 {"t":"mc","q":"Pick the informal bye","o":["ቻው","ደህና ሁን","አመሰግናለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ሁን","o":["ደህና ሁን","ደህና ሁኚ","ቻው"],"a":0}
 ]},
-{"id":"am_g7_4","title":"The farewells in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_g7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አመሰግናለሁ","thank you"],["ደህና ሁን","goodbye (man)"],["ቻው","bye (informal)"]]},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ሁን","o":["ደህና ሁን","ቻው","ደህና ሁኚ"],"a":0},
 {"t":"match","q":"Match the farewell to the person","pairs":[["ደህና ሁን","a man"],["ደህና ሁኚ","a woman"]]},
 {"t":"mc","q":"Tea finished, host thanked — your parting line to her is…","o":["አመሰግናለሁ, ደህና ሁኚ","ደህና ነሽ?","ስምሽ ማን ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደህና ሁኚ","o":["ደህና ሁኚ","አመሰግናለሁ","ደህና ሁን"],"a":0}
 ]},
-{"id":"am_g7_5","title":"Checkpoint: Zone 2 complete","step":"checkpoint","meta":"Greetings and people — show it all","vocab":[],"ex":[
+{"id":"am_g7_5","title":"Checkpoint","step":"checkpoint","meta":"Greetings and people — show it all","vocab":[],"ex":[
 {"t":"mc","q":"አመሰግናለሁ means…","o":["thank you","you are welcome","hello"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አመሰግናለሁ","o":["አመሰግናለሁ","እግዚአብሔር ይመስገን","ደህና ሁን"],"a":0},
 {"t":"mc","q":"Review — to a woman, are-you-well is…","o":["ደህና ነሽ?","ደህና ነህ?","ደህና ነዎት?"],"a":0},
@@ -626,7 +626,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","እናት"],"a":0},
 {"t":"mc","q":"The word for man hiding inside ወንድም is…","o":["ወንድ","ወይዘሮ","ሰው"],"a":0}
 ]},
-{"id":"am_f1_2","title":"Hearing the family","step":"recognize","meta":"The four by ear","vocab":[],"ex":[
+{"id":"am_f1_2","title":"Recognize","step":"recognize","meta":"The four by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","አባት","እህት"],"a":0},
 {"t":"mc","q":"What does አባት mean?","o":["father","mother","brother"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","ወንድም","እናት"],"a":0},
@@ -634,21 +634,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እህት","ወንድም"],"a":0},
 {"t":"mc","q":"A stranger your own age may warmly be called…","o":["wendim or ihit","ato only","erswo only"],"a":0}
 ]},
-{"id":"am_f1_3","title":"Building the family","step":"build","meta":"Four seats at the table","vocab":[],"ex":[
+{"id":"am_f1_3","title":"Build","step":"build","meta":"Four seats at the table","vocab":[],"ex":[
 {"t":"wb","q":"Build: father and mother","a":["አባት","እናት"],"pool":["አባት","እናት","እህት"]},
 {"t":"mc","q":"Pick the word for sister","o":["እህት","ወንድም","እናት"],"a":0},
 {"t":"wb","q":"Build: brother and sister","a":["ወንድም","እህት"],"pool":["ወንድም","እህት","አባት"]},
 {"t":"mc","q":"Pick the word for father","o":["አባት","እናት","ወንድም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወንድም","o":["ወንድም","አባት","እህት"],"a":0}
 ]},
-{"id":"am_f1_4","title":"The family in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባት","father"],["እናት","mother"]]},
 {"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","እህት","አባት"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወንድም","brother"],["እህት","sister"]]},
 {"t":"mc","q":"The doubled consonant in abbat and ennat is…","o":["spoken but not written","written twice in fidel","optional"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","እናት","ወንድም"],"a":0}
 ]},
-{"id":"am_f1_5","title":"Checkpoint: the family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ወንድም mean?","o":["brother","sister","father"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እናት","ወንድም"],"a":0},
 {"t":"mc","q":"Which one means mother?","o":["እናት","አባት","እህት"],"a":0},
@@ -669,7 +669,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አያት","o":["አያት","ልጅ"],"a":0},
 {"t":"mc","q":"አያት covers…","o":["grandmother and grandfather alike","grandmother only","great-uncles only"],"a":0}
 ]},
-{"id":"am_f2_2","title":"Hearing the household","step":"recognize","meta":"The wider family by ear","vocab":[],"ex":[
+{"id":"am_f2_2","title":"Recognize","step":"recognize","meta":"The wider family by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ልጅ","o":["ልጅ","ልጆች","አያት"],"a":0},
 {"t":"mc","q":"What does ቤተሰብ mean?","o":["family","house","village"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","ልጅ","ቤተሰብ"],"a":0},
@@ -677,21 +677,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","አያት","ልጆች"],"a":0},
 {"t":"mc","q":"ልጅ became ልጆች the same way ሰው became…","o":["ሰዎች","ሴት","ስም"],"a":0}
 ]},
-{"id":"am_f2_3","title":"Building the household","step":"build","meta":"The wide net of betesab","vocab":[],"ex":[
+{"id":"am_f2_3","title":"Build","step":"build","meta":"The wide net of betesab","vocab":[],"ex":[
 {"t":"wb","q":"Build the word: children","a":["ልጅ","ኦች"],"pool":["ልጅ","ኦች","ልጆች"]},
 {"t":"mc","q":"Pick the word for family","o":["ቤተሰብ","አያት","ልጆች"],"a":0},
 {"t":"wb","q":"Build: a child and a grandparent","a":["ልጅ","አያት"],"pool":["ልጅ","አያት","ልጆች"]},
 {"t":"mc","q":"Pick the word for children","o":["ልጆች","ልጅ","ቤተሰብ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አያት","o":["አያት","ቤተሰብ","ልጅ"],"a":0}
 ]},
-{"id":"am_f2_4","title":"The household in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቤተሰብ","family"],["ልጅ","child"],["አያት","grandparent"]]},
 {"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","አያት","ቤተሰብ"],"a":0},
 {"t":"match","q":"Match singular to plural","pairs":[["ልጅ","ልጆች"],["ሰው","ሰዎች"]]},
 {"t":"mc","q":"Asking after someone&rsquo;s betesab is…","o":["standard caring small talk","too personal","only for relatives"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ልጅ","o":["ልጅ","ልጆች","አያት"],"a":0}
 ]},
-{"id":"am_f2_5","title":"Checkpoint: the household","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ልጆች mean?","o":["children","child","grandparents"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","ልጆች","አያት"],"a":0},
 {"t":"mc","q":"Which one means grandparent?","o":["አያት","ቤተሰብ","ልጅ"],"a":0},
@@ -711,7 +711,7 @@ const AM_LESSONS=[
 {"t":"li","q":"My or your — which do you hear?","say":"እናቴ","o":["እናቴ","አባትህ"],"a":0},
 {"t":"mc","q":"ስሜ and አባቴ share…","o":["the -e my ending","the same meaning","nothing"],"a":0}
 ]},
-{"id":"am_f3_2","title":"Hearing the owners","step":"recognize","meta":"Whose family, by ear","vocab":[],"ex":[
+{"id":"am_f3_2","title":"Recognize","step":"recognize","meta":"Whose family, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","አባትሽ","አባቴ"],"a":0},
 {"t":"mc","q":"What does እናቴ mean?","o":["my mother","your mother","his mother"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባቴ","o":["አባቴ","አባትህ","እናቴ"],"a":0},
@@ -719,21 +719,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አባትሽ","o":["አባትሽ","አባቴ","አባትህ"],"a":0},
 {"t":"mc","q":"Amharic attaches my and your…","o":["to the end of the word","before the word","as separate words only"],"a":0}
 ]},
-{"id":"am_f3_3","title":"Building the owners","step":"build","meta":"Endings on, endings off","vocab":[],"ex":[
+{"id":"am_f3_3","title":"Build","step":"build","meta":"Endings on, endings off","vocab":[],"ex":[
 {"t":"wb","q":"Build: my father (abbat + e)","a":["አባት","ኤ"],"pool":["አባት","ኤ","ህ"]},
 {"t":"mc","q":"Pick: my mother","o":["እናቴ","እናት","አባቴ"],"a":0},
 {"t":"wb","q":"Build: your father, to a man (abbat + ih)","a":["አባት","ህ"],"pool":["አባት","ህ","ሽ"]},
 {"t":"mc","q":"Pick: your father, to a woman","o":["አባትሽ","አባትህ","እናቴ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እናቴ","o":["እናቴ","አባቴ","አባትሽ"],"a":0}
 ]},
-{"id":"am_f3_4","title":"The owners in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባቴ","my father"],["አባትህ","your father (man)"],["አባትሽ","your father (woman)"]]},
 {"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","እናቴ","አባትሽ"],"a":0},
 {"t":"match","q":"Match the ending to its meaning","pairs":[["-ኤ","my"],["-ህ","your (man)"],["-ሽ","your (woman)"]]},
 {"t":"mc","q":"እናትሽ would mean…","o":["your mother (to a woman)","my mother","her mother"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባቴ","o":["አባቴ","አባትሽ","እናቴ"],"a":0}
 ]},
-{"id":"am_f3_5","title":"Checkpoint: the owners","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አባቴ means…","o":["my father","your father","the father"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባትሽ","o":["አባትሽ","አባትህ","አባቴ"],"a":0},
 {"t":"mc","q":"Which one means my mother?","o":["እናቴ","እናት","አባቴ"],"a":0},
@@ -753,7 +753,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሱ"],"a":0},
 {"t":"mc","q":"ይህ እናቴ ነው would mean…","o":["this is my mother","my mother is home","who is my mother?"],"a":0}
 ]},
-{"id":"am_f4_2","title":"Hearing the introductions","step":"recognize","meta":"This-is by ear","vocab":[],"ex":[
+{"id":"am_f4_2","title":"Recognize","step":"recognize","meta":"This-is by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እሱ","o":["እሱ","እሷ","ይህ"],"a":0},
 {"t":"mc","q":"What does ይህ mean?","o":["this","that","here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይህ አባቴ ነው","o":["ይህ አባቴ ነው","ይህ","አባቴ"],"a":0},
@@ -761,21 +761,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እሷ","o":["እሷ","እሱ","እኔ"],"a":0},
 {"t":"mc","q":"The ነው at the end of introductions means…","o":["is","this","my"],"a":0}
 ]},
-{"id":"am_f4_3","title":"Building the introductions","step":"build","meta":"Point and present","vocab":[],"ex":[
+{"id":"am_f4_3","title":"Build","step":"build","meta":"Point and present","vocab":[],"ex":[
 {"t":"wb","q":"Build: this is my father","a":["ይህ","አባቴ","ነው"],"pool":["ይህ","አባቴ","ነው","እሱ"]},
 {"t":"mc","q":"Pick the word for he","o":["እሱ","እሷ","ይህ"],"a":0},
 {"t":"wb","q":"Build: this is my friend (gwadegnaye)","a":["ይህ","ጓደኛዬ","ነው"],"pool":["ይህ","ጓደኛዬ","ነው","አባቴ"]},
 {"t":"mc","q":"Pick the word for she","o":["እሷ","እሱ","እናት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እሱ","o":["እሱ","ይህ","እሷ"],"a":0}
 ]},
-{"id":"am_f4_4","title":"The introductions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይህ","this"],["እሱ","he"],["እሷ","she"]]},
 {"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሷ","እሱ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይህ አባቴ ነው","this is my father"],["ደህና ነው","he is well"]]},
 {"t":"mc","q":"Introducing your host father to a visitor…","o":["ይህ አባቴ ነው","አባትህ ማን ነው?","እሱ ከየት ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይህ አባቴ ነው","o":["ይህ አባቴ ነው","እሷ","ይህ"],"a":0}
 ]},
-{"id":"am_f4_5","title":"Checkpoint: the introductions","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ይህ means…","o":["this","he","is"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እሷ","o":["እሷ","እሱ","ይህ"],"a":0},
 {"t":"mc","q":"Which one means he?","o":["እሱ","እሷ","ይህ"],"a":0},
@@ -794,7 +794,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ"],"a":0},
 {"t":"mc","q":"The -wa in አባቷ echoes which she-pronoun?","o":["እሷ","እሱ","እኔ"],"a":0}
 ]},
-{"id":"am_f5_2","title":"Hearing his and her","step":"recognize","meta":"Third-person owners by ear","vocab":[],"ex":[
+{"id":"am_f5_2","title":"Recognize","step":"recognize","meta":"Third-person owners by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አባቷ","o":["አባቷ","አባቱ","እናቷ"],"a":0},
 {"t":"mc","q":"What does አባቱ mean?","o":["his father","her father","my father"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ","አባቱ"],"a":0},
@@ -802,21 +802,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","እናቷ","አባቷ"],"a":0},
 {"t":"mc","q":"እናቱ would mean…","o":["his mother","her mother","our mother"],"a":0}
 ]},
-{"id":"am_f5_3","title":"Building his and her","step":"build","meta":"Finish the ending set","vocab":[],"ex":[
+{"id":"am_f5_3","title":"Build","step":"build","meta":"Finish the ending set","vocab":[],"ex":[
 {"t":"wb","q":"Build: his father (abbat + u)","a":["አባት","ኡ"],"pool":["አባት","ኡ","ዋ"]},
 {"t":"mc","q":"Pick: her mother","o":["እናቷ","እናቴ","አባቷ"],"a":0},
 {"t":"wb","q":"Build: her father (abbat + wa)","a":["አባት","ዋ"],"pool":["አባት","ዋ","ኡ"]},
 {"t":"mc","q":"Pick: his father","o":["አባቱ","አባቷ","አባትህ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባቷ","o":["አባቷ","አባቱ","እናቷ"],"a":0}
 ]},
-{"id":"am_f5_4","title":"His and her in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባቱ","his father"],["አባቷ","her father"],["እናቷ","her mother"]]},
 {"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","አባቷ","እናቷ"],"a":0},
 {"t":"match","q":"Match the ending to the owner","pairs":[["-ኤ","me"],["-ኡ","him"],["-ዋ","her"]]},
 {"t":"mc","q":"Six owner-endings on one noun — Amharic possessives are…","o":["endings glued to the word","separate little words","optional"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቱ","አባቷ"],"a":0}
 ]},
-{"id":"am_f5_5","title":"Checkpoint: his and her","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አባቷ means…","o":["her father","his father","your father"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ","አባቱ"],"a":0},
 {"t":"mc","q":"Which one means his father?","o":["አባቱ","አባቷ","አባቴ"],"a":0},
@@ -836,7 +836,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","ወይዘሮ"],"a":0},
 {"t":"mc","q":"ወይዘሪት means…","o":["Miss","Mrs.","Madam elder"],"a":0}
 ]},
-{"id":"am_f6_2","title":"Hearing the honor","step":"recognize","meta":"Respect forms by ear","vocab":[],"ex":[
+{"id":"am_f6_2","title":"Recognize","step":"recognize","meta":"Respect forms by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አባትዎ","o":["አባትዎ","ጋሽ","ወይዘሪት"],"a":0},
 {"t":"mc","q":"What does ጋሽ mean?","o":["respectful address for an older man","Mr.","grandfather"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","አባትዎ","ጋሽ"],"a":0},
@@ -844,21 +844,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","ወይዘሪት","አባትዎ"],"a":0},
 {"t":"mc","q":"When an elder enters the room, you…","o":["stand up","stay seated","look away"],"a":0}
 ]},
-{"id":"am_f6_3","title":"Building the honor","step":"build","meta":"Respect, assembled","vocab":[],"ex":[
+{"id":"am_f6_3","title":"Build","step":"build","meta":"Respect, assembled","vocab":[],"ex":[
 {"t":"wb","q":"Build: your father, politely (abbat + wo)","a":["አባት","ዎ"],"pool":["አባት","ዎ","ህ"]},
 {"t":"mc","q":"Pick the warm address for an older man","o":["ጋሽ","አቶ","እሱ"],"a":0},
 {"t":"wb","q":"Build: Gash Kebede style — gash + a name slot","a":["ጋሽ","…"],"pool":["ጋሽ","…","ወይዘሪት"]},
 {"t":"mc","q":"Pick the title meaning Miss","o":["ወይዘሪት","ወይዘሮ","አቶ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አባትዎ","o":["አባትዎ","ወይዘሪት","ጋሽ"],"a":0}
 ]},
-{"id":"am_f6_4","title":"The honor in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባትዎ","your father (polite)"],["ጋሽ","older-man address"],["ወይዘሪት","Miss"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","አባትዎ","ወይዘሪት"],"a":0},
 {"t":"match","q":"Match the title to the person","pairs":[["አቶ","Mr."],["ወይዘሮ","Mrs."],["ወይዘሪት","Miss"]]},
 {"t":"mc","q":"Greeting your friend&rsquo;s grandfather warmly, you call him…","o":["gash plus his first name","just plain issu","weyzerit plus his name"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","ጋሽ","አባትዎ"],"a":0}
 ]},
-{"id":"am_f6_5","title":"Checkpoint: the honor","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_f6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አባትዎ is the polite form of…","o":["your father","my father","his father"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","ወይዘሪት","አባትዎ"],"a":0},
 {"t":"mc","q":"Which one means Miss?","o":["ወይዘሪት","ወይዘሮ","ጋሽ"],"a":0},
@@ -878,7 +878,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ቤተሰብ"],"a":0},
 {"t":"mc","q":"ቤተሰቤ means…","o":["my family","the family","our families"],"a":0}
 ]},
-{"id":"am_f7_2","title":"Hearing the answers","step":"recognize","meta":"Who and mine, by ear","vocab":[],"ex":[
+{"id":"am_f7_2","title":"Recognize","step":"recognize","meta":"Who and mine, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ማን ነው?","ይህ ጓደኛዬ ነው"],"a":0},
 {"t":"mc","q":"What does ማን ነው? mean?","o":["who is it?","whose is it?","is anyone home?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይህ ጓደኛዬ ነው","o":["ይህ ጓደኛዬ ነው","ቤተሰቤ","ማን ነው?"],"a":0},
@@ -886,21 +886,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Bare or mine — which do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ቤተሰብ"],"a":0},
 {"t":"mc","q":"Gwadegna takes -ye instead of -e because it…","o":["ends in a vowel","is borrowed","is plural"],"a":0}
 ]},
-{"id":"am_f7_3","title":"Building the answers","step":"build","meta":"Door, friend, family","vocab":[],"ex":[
+{"id":"am_f7_3","title":"Build","step":"build","meta":"Door, friend, family","vocab":[],"ex":[
 {"t":"wb","q":"Build: who is it?","a":["ማን","ነው?"],"pool":["ማን","ነው?","ይህ"]},
 {"t":"wb","q":"Build: this is my friend","a":["ይህ","ጓደኛዬ","ነው"],"pool":["ይህ","ጓደኛዬ","ነው","ቤተሰቤ"]},
 {"t":"mc","q":"Pick: my family","o":["ቤተሰቤ","ቤተሰብ","ጓደኛ"],"a":0},
 {"t":"wb","q":"Build: this is my family","a":["ይህ","ቤተሰቤ","ነው"],"pool":["ይህ","ቤተሰቤ","ነው","ማን"]},
 {"t":"li","q":"Which one do you hear?","say":"ማን ነው?","o":["ማን ነው?","ይህ ጓደኛዬ ነው","ቤተሰቤ"],"a":0}
 ]},
-{"id":"am_f7_4","title":"The answers in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_f7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ማን ነው?","who is it?"],["ይህ ጓደኛዬ ነው","this is my friend"],["ቤተሰቤ","my family"]]},
 {"t":"li","q":"Which one do you hear?","say":"ይህ ጓደኛዬ ነው","o":["ይህ ጓደኛዬ ነው","ማን ነው?","ቤተሰቤ"],"a":0},
 {"t":"match","q":"Match the question to its answer","pairs":[["ማን ነው?","ይህ ጓደኛዬ ነው"],["ደህና ነህ?","ደህና ነኝ"]]},
 {"t":"mc","q":"A knock at the door — the question through the wood is…","o":["ማን ነው?","ስምህ ማን ነው?","ከየት ነህ?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማን ነው?","o":["ማን ነው?","ቤተሰቤ","ይህ ጓደኛዬ ነው"],"a":0}
 ]},
-{"id":"am_f7_5","title":"Checkpoint: Zone 3 complete","step":"checkpoint","meta":"Family and respect — show it all","vocab":[],"ex":[
+{"id":"am_f7_5","title":"Checkpoint","step":"checkpoint","meta":"Family and respect — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ማን ነው? means…","o":["who is it?","what is this?","are you well?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ይህ ጓደኛዬ ነው","ማን ነው?"],"a":0},
 {"t":"mc","q":"Review — his father is…","o":["አባቱ","አባቷ","አባቴ"],"a":0},
@@ -921,7 +921,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","ሶስት"],"a":0},
 {"t":"mc","q":"The double t in ሁለት is…","o":["held and heard, not written","written twice","silent"],"a":0}
 ]},
-{"id":"am_n1_2","title":"Hearing one to five","step":"recognize","meta":"Small numbers by ear","vocab":[],"ex":[
+{"id":"am_n1_2","title":"Recognize","step":"recognize","meta":"Small numbers by ear","vocab":[],"ex":[
 {"t":"li","q":"Which number do you hear?","say":"ሶስት","o":["ሶስት","አራት","አምስት"],"a":0},
 {"t":"mc","q":"What does አንድ mean?","o":["one","first","and"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"አምስት","o":["አምስት","አራት","ሁለት"],"a":0},
@@ -929,21 +929,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"ሁለት","o":["ሁለት","አንድ","አራት"],"a":0},
 {"t":"mc","q":"Count up: አንድ, ሁለት, then…","o":["ሶስት","አራት","አምስት"],"a":0}
 ]},
-{"id":"am_n1_3","title":"Building one to five","step":"build","meta":"Count on one hand","vocab":[],"ex":[
+{"id":"am_n1_3","title":"Build","step":"build","meta":"Count on one hand","vocab":[],"ex":[
 {"t":"wb","q":"Build the count: one, two, three","a":["አንድ","ሁለት","ሶስት"],"pool":["አንድ","ሁለት","ሶስት","አራት"]},
 {"t":"mc","q":"Pick the number five","o":["አምስት","አራት","ሶስት"],"a":0},
 {"t":"wb","q":"Build the count: four, five","a":["አራት","አምስት"],"pool":["አራት","አምስት","ሁለት"]},
 {"t":"mc","q":"Pick the number one","o":["አንድ","ሁለት","አምስት"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ሶስት","o":["ሶስት","ሁለት","አምስት"],"a":0}
 ]},
-{"id":"am_n1_4","title":"One to five in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the number to its value","pairs":[["አንድ","1"],["ሁለት","2"],["ሶስት","3"]]},
 {"t":"li","q":"Which number do you hear?","say":"አንድ","o":["አንድ","አራት","ሁለት"],"a":0},
 {"t":"match","q":"Match the number to its value","pairs":[["አራት","4"],["አምስት","5"]]},
 {"t":"mc","q":"ሁለት ቡና means…","o":["two coffees","one coffee","five coffees"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"አራት","o":["አራት","አምስት","ሶስት"],"a":0}
 ]},
-{"id":"am_n1_5","title":"Checkpoint: one to five","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አራት means…","o":["four","five","two"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"አምስት","o":["አምስት","ሶስት","አንድ"],"a":0},
 {"t":"mc","q":"Which one is two?","o":["ሁለት","አንድ","ሶስት"],"a":0},
@@ -967,7 +967,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"አስር","o":["አስር","ዘጠኝ"],"a":0},
 {"t":"mc","q":"አስር means…","o":["ten","nine","eight"],"a":0}
 ]},
-{"id":"am_n2_2","title":"Hearing six to ten","step":"recognize","meta":"Big fingers by ear","vocab":[],"ex":[
+{"id":"am_n2_2","title":"Recognize","step":"recognize","meta":"Big fingers by ear","vocab":[],"ex":[
 {"t":"li","q":"Which number do you hear?","say":"ሰባት","o":["ሰባት","ስድስት","ስምንት"],"a":0},
 {"t":"mc","q":"What does ስምንት mean?","o":["eight","seven","nine"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ስምንት","o":["ስምንት","ዘጠኝ","ሰባት"],"a":0},
@@ -975,21 +975,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"አስር","o":["አስር","ስድስት","ዘጠኝ"],"a":0},
 {"t":"mc","q":"Count up: ሰባት, ስምንት, then…","o":["ዘጠኝ","አስር","ስድስት"],"a":0}
 ]},
-{"id":"am_n2_3","title":"Building six to ten","step":"build","meta":"The second hand","vocab":[],"ex":[
+{"id":"am_n2_3","title":"Build","step":"build","meta":"The second hand","vocab":[],"ex":[
 {"t":"wb","q":"Build the count: six, seven, eight","a":["ስድስት","ሰባት","ስምንት"],"pool":["ስድስት","ሰባት","ስምንት","ዘጠኝ"]},
 {"t":"mc","q":"Pick the number ten","o":["አስር","ዘጠኝ","ስምንት"],"a":0},
 {"t":"wb","q":"Build the count: nine, ten","a":["ዘጠኝ","አስር"],"pool":["ዘጠኝ","አስር","ሰባት"]},
 {"t":"mc","q":"Pick the number seven","o":["ሰባት","ስድስት","ስምንት"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ስድስት","o":["ስድስት","ስምንት","አስር"],"a":0}
 ]},
-{"id":"am_n2_4","title":"Six to ten in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the number to its value","pairs":[["ስድስት","6"],["ሰባት","7"],["ስምንት","8"]]},
 {"t":"li","q":"Which number do you hear?","say":"ዘጠኝ","o":["ዘጠኝ","አስር","ስምንት"],"a":0},
 {"t":"match","q":"Match the number to its value","pairs":[["ዘጠኝ","9"],["አስር","10"]]},
 {"t":"mc","q":"አስር ብር would be…","o":["ten birr","six birr","nine birr"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ሰባት","o":["ሰባት","ስድስት","ዘጠኝ"],"a":0}
 ]},
-{"id":"am_n2_5","title":"Checkpoint: six to ten","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ዘጠኝ means…","o":["nine","eight","ten"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ስምንት","o":["ስምንት","ሰባት","ስድስት"],"a":0},
 {"t":"mc","q":"Which one is ten?","o":["አስር","ዘጠኝ","አራት"],"a":0},
@@ -1012,7 +1012,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which day do you hear?","say":"ዓርብ","o":["ዓርብ","ሐሙስ"],"a":0},
 {"t":"mc","q":"ዓርብ means…","o":["Friday","Saturday","Thursday"],"a":0}
 ]},
-{"id":"am_n3_2","title":"Hearing the weekdays","step":"recognize","meta":"The working five by ear","vocab":[],"ex":[
+{"id":"am_n3_2","title":"Recognize","step":"recognize","meta":"The working five by ear","vocab":[],"ex":[
 {"t":"li","q":"Which day do you hear?","say":"ማክሰኞ","o":["ማክሰኞ","ሰኞ","ረቡዕ"],"a":0},
 {"t":"mc","q":"What does ሐሙስ mean?","o":["Thursday","Wednesday","Friday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"ረቡዕ","o":["ረቡዕ","ዓርብ","ማክሰኞ"],"a":0},
@@ -1020,21 +1020,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which day do you hear?","say":"ዓርብ","o":["ዓርብ","ረቡዕ","ሰኞ"],"a":0},
 {"t":"mc","q":"The days in order: ሰኞ, ማክሰኞ, then…","o":["ረቡዕ","ሐሙስ","ዓርብ"],"a":0}
 ]},
-{"id":"am_n3_3","title":"Building the weekdays","step":"build","meta":"Line up the week","vocab":[],"ex":[
+{"id":"am_n3_3","title":"Build","step":"build","meta":"Line up the week","vocab":[],"ex":[
 {"t":"wb","q":"Build the week: Monday, Tuesday, Wednesday","a":["ሰኞ","ማክሰኞ","ረቡዕ"],"pool":["ሰኞ","ማክሰኞ","ረቡዕ","ሐሙስ"]},
 {"t":"mc","q":"Pick Friday","o":["ዓርብ","ሐሙስ","ሰኞ"],"a":0},
 {"t":"wb","q":"Build: Thursday, Friday","a":["ሐሙስ","ዓርብ"],"pool":["ሐሙስ","ዓርብ","ረቡዕ"]},
 {"t":"mc","q":"Pick Tuesday","o":["ማክሰኞ","ሰኞ","ረቡዕ"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"ሰኞ","o":["ሰኞ","ማክሰኞ","ዓርብ"],"a":0}
 ]},
-{"id":"am_n3_4","title":"The weekdays in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the day to its place","pairs":[["ሰኞ","Monday"],["ረቡዕ","Wednesday"],["ዓርብ","Friday"]]},
 {"t":"li","q":"Which day do you hear?","say":"ሐሙስ","o":["ሐሙስ","ዓርብ","ረቡዕ"],"a":0},
 {"t":"match","q":"Match the day to its place","pairs":[["ማክሰኞ","Tuesday"],["ሐሙስ","Thursday"]]},
 {"t":"mc","q":"Tuesday leans on Monday the way maksanyo leans on…","o":["ሰኞ","ረቡዕ","ዓርብ"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"ማክሰኞ","o":["ማክሰኞ","ሰኞ","ሐሙስ"],"a":0}
 ]},
-{"id":"am_n3_5","title":"Checkpoint: the weekdays","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሐሙስ means…","o":["Thursday","Tuesday","Friday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"ረቡዕ","o":["ረቡዕ","ማክሰኞ","ዓርብ"],"a":0},
 {"t":"mc","q":"Which one is Friday?","o":["ዓርብ","ሐሙስ","ሰኞ"],"a":0},
@@ -1056,7 +1056,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ","o":["ዛሬ","ትናንት"],"a":0},
 {"t":"mc","q":"ነገ means…","o":["tomorrow","today","yesterday"],"a":0}
 ]},
-{"id":"am_n4_2","title":"Hearing the weekend","step":"recognize","meta":"Rest days and moving days","vocab":[],"ex":[
+{"id":"am_n4_2","title":"Recognize","step":"recognize","meta":"Rest days and moving days","vocab":[],"ex":[
 {"t":"li","q":"Which day do you hear?","say":"እሁድ","o":["እሁድ","ቅዳሜ","ዓርብ"],"a":0},
 {"t":"mc","q":"What does ዛሬ mean?","o":["today","tomorrow","yesterday"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ትናንት","o":["ትናንት","ነገ","ዛሬ"],"a":0},
@@ -1064,21 +1064,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ነገ","o":["ነገ","ትናንት","ዛሬ"],"a":0},
 {"t":"mc","q":"The long-coffee resting day is…","o":["እሁድ","ማክሰኞ","ረቡዕ"],"a":0}
 ]},
-{"id":"am_n4_3","title":"Building the weekend","step":"build","meta":"Weekend plus time words","vocab":[],"ex":[
+{"id":"am_n4_3","title":"Build","step":"build","meta":"Weekend plus time words","vocab":[],"ex":[
 {"t":"wb","q":"Build: Saturday and Sunday","a":["ቅዳሜ","እሁድ"],"pool":["ቅዳሜ","እሁድ","ዓርብ"]},
 {"t":"mc","q":"Pick the word for today","o":["ዛሬ","ነገ","ትናንት"],"a":0},
 {"t":"wb","q":"Build the timeline: yesterday, today, tomorrow","a":["ትናንት","ዛሬ","ነገ"],"pool":["ትናንት","ዛሬ","ነገ","እሁድ"]},
 {"t":"mc","q":"Pick Saturday","o":["ቅዳሜ","እሁድ","ሰኞ"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"ቅዳሜ","o":["ቅዳሜ","እሁድ","ነገ"],"a":0}
 ]},
-{"id":"am_n4_4","title":"The weekend in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቅዳሜ","Saturday"],["እሁድ","Sunday"],["ዛሬ","today"]]},
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ","o":["ዛሬ","ነገ","ትናንት"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነገ","tomorrow"],["ትናንት","yesterday"]]},
 {"t":"mc","q":"ዛሬ እሁድ ነው means…","o":["today is Sunday","tomorrow is Sunday","Sunday was yesterday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"እሁድ","o":["እሁድ","ቅዳሜ","ዛሬ"],"a":0}
 ]},
-{"id":"am_n4_5","title":"Checkpoint: the weekend","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እሁድ means…","o":["Sunday","Saturday","Friday"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ትናንት","o":["ትናንት","ዛሬ","ነገ"],"a":0},
 {"t":"mc","q":"Which one means tomorrow?","o":["ነገ","ዛሬ","ትናንት"],"a":0},
@@ -1101,7 +1101,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት"],"a":0},
 {"t":"mc","q":"ይቅርታ opens…","o":["a polite request to a stranger","a meal","an argument"],"a":0}
 ]},
-{"id":"am_n5_2","title":"Hearing the time question","step":"recognize","meta":"Clock talk by ear","vocab":[],"ex":[
+{"id":"am_n5_2","title":"Recognize","step":"recognize","meta":"Clock talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ስንት","o":["ስንት","ሰዓት","ይቅርታ"],"a":0},
 {"t":"mc","q":"What does ሰዓት mean?","o":["hour · time · watch","minute","day"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስንት ሰዓት ነው?","o":["ስንት ሰዓት ነው?","ይቅርታ","ሰዓት"],"a":0},
@@ -1109,21 +1109,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት ሰዓት ነው?","ሰዓት"],"a":0},
 {"t":"mc","q":"ስንት will return next zone to ask about…","o":["prices","names","weather"],"a":0}
 ]},
-{"id":"am_n5_3","title":"Building the time question","step":"build","meta":"Polite, then precise","vocab":[],"ex":[
+{"id":"am_n5_3","title":"Build","step":"build","meta":"Polite, then precise","vocab":[],"ex":[
 {"t":"wb","q":"Build: what time is it?","a":["ስንት","ሰዓት","ነው?"],"pool":["ስንት","ሰዓት","ነው?","ይቅርታ"]},
 {"t":"mc","q":"Pick the polite opener","o":["ይቅርታ","ስንት","ዛሬ"],"a":0},
 {"t":"wb","q":"Build: excuse me, what time is it?","a":["ይቅርታ","ስንት","ሰዓት","ነው?"],"pool":["ይቅርታ","ስንት","ሰዓት","ነው?","ዛሬ"]},
 {"t":"mc","q":"Pick the word for hour","o":["ሰዓት","ስንት","ነው"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስንት ሰዓት ነው?","o":["ስንት ሰዓት ነው?","ሰዓት","ይቅርታ"],"a":0}
 ]},
-{"id":"am_n5_4","title":"The time question in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰዓት","hour · time"],["ስንት","how many"],["ይቅርታ","excuse me"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሰዓት","o":["ሰዓት","ስንት","ይቅርታ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስንት ሰዓት ነው?","what time is it?"],["ማን ነው?","who is it?"]]},
 {"t":"mc","q":"Stopping a stranger on Churchill Avenue, you begin…","o":["ይቅርታ","እሺ","ቻው"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስንት","o":["ስንት","ሰዓት","ነገ"],"a":0}
 ]},
-{"id":"am_n5_5","title":"Checkpoint: the time question","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ስንት ሰዓት ነው? means…","o":["what time is it?","how many days?","what day is it?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይቅርታ","o":["ይቅርታ","ስንት","ሰዓት"],"a":0},
 {"t":"mc","q":"ሰዓት covers hour, time and…","o":["watch","minute","calendar"],"a":0},
@@ -1136,7 +1136,7 @@ const AM_LESSONS=[
 
 /* ---------- n6 · The Ethiopian clock ---------- */
 {"id":"am_n6","title":"The Ethiopian clock","step":"learn","meta":"The day starts at sunrise — recount everything","vocab":[["ሀበሻ ሰዓት","habesha se-at","Ethiopian time"],["ፈረንጅ ሰዓት","ferenj se-at","European time"],["ጠዋት","tewat","morning"],["ማታ","mata","evening"]],"ex":[
-{"t":"note","tag":"The big secret","q":"The clock starts at sunrise","body":"<p>Ethiopia counts hours from SUNRISE, not midnight. One o&rsquo;clock — <i>and se-at</i> — is 7:00 in the morning; two is 8:00; noon is SIX. It is beautifully logical near the equator, where the sun rises at the same hour year-round — and it catches every visitor once.</p>","eg":[["ጠዋት","tewat","morning"]]},
+{"t":"note","tag":"The sunrise clock","q":"The clock starts at sunrise","body":"<p>Ethiopia counts hours from SUNRISE, not midnight. One o&rsquo;clock — <i>and se-at</i> — is 7:00 in the morning; two is 8:00; noon is SIX. It is beautifully logical near the equator, where the sun rises at the same hour year-round — and it catches every visitor once.</p>","eg":[["ጠዋት","tewat","morning"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ዛሬ"],"a":0},
 {"t":"mc","q":"One o&rsquo;clock Ethiopian time is…","o":["7:00 in the morning","1:00 after midnight","noon"],"a":0},
 {"t":"note","tag":"Naming the two clocks","q":"ሀበሻ ሰዓት vs ፈረንጅ ሰዓት","body":"<p>When arranging anything, Ethiopians ask which clock: <b>ሀበሻ ሰዓት</b> <i>habesha se-at</i> — <i>Ethiopian time</i> — or <b>ፈረንጅ ሰዓት</b> <i>ferenj se-at</i> — <i>foreigner time</i>. Always confirm. A meeting at two can be 8 AM or 2 PM depending on the answer.</p>","eg":[["ሀበሻ ሰዓት","habesha se-at","Ethiopian time"],["ፈረንጅ ሰዓት","ferenj se-at","European time"]]},
@@ -1146,7 +1146,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Morning or evening — which do you hear?","say":"ማታ","o":["ማታ","ጠዋት"],"a":0},
 {"t":"mc","q":"ማታ means…","o":["evening","morning","midnight"],"a":0}
 ]},
-{"id":"am_n6_2","title":"Hearing the two clocks","step":"recognize","meta":"Sunrise counting by ear","vocab":[],"ex":[
+{"id":"am_n6_2","title":"Recognize","step":"recognize","meta":"Sunrise counting by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ፈረንጅ ሰዓት","o":["ፈረንጅ ሰዓት","ሀበሻ ሰዓት","ሰዓት"],"a":0},
 {"t":"mc","q":"What does ሀበሻ ሰዓት mean?","o":["Ethiopian time","holy time","old time"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ማታ","ዛሬ"],"a":0},
@@ -1154,21 +1154,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ማታ","o":["ማታ","ጠዋት","ሀበሻ ሰዓት"],"a":0},
 {"t":"mc","q":"The system is logical near the equator because…","o":["sunrise barely moves all year","days are longer","clocks are rare"],"a":0}
 ]},
-{"id":"am_n6_3","title":"Building the two clocks","step":"build","meta":"Convert without fear","vocab":[],"ex":[
+{"id":"am_n6_3","title":"Build","step":"build","meta":"Convert without fear","vocab":[],"ex":[
 {"t":"wb","q":"Build: Ethiopian time","a":["ሀበሻ","ሰዓት"],"pool":["ሀበሻ","ሰዓት","ፈረንጅ"]},
 {"t":"mc","q":"8:00 in the morning, Ethiopian style, is hour…","o":["ሁለት","ስምንት","አራት"],"a":0},
 {"t":"wb","q":"Build: European time","a":["ፈረንጅ","ሰዓት"],"pool":["ፈረንጅ","ሰዓት","ሀበሻ"]},
 {"t":"mc","q":"10:00 in the morning, Ethiopian style, is hour…","o":["አራት","አስር","ሁለት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሀበሻ ሰዓት","o":["ሀበሻ ሰዓት","ፈረንጅ ሰዓት","ጠዋት"],"a":0}
 ]},
-{"id":"am_n6_4","title":"The two clocks in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሀበሻ ሰዓት","Ethiopian time"],["ፈረንጅ ሰዓት","European time"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጠዋት","o":["ጠዋት","ማታ","ሰዓት"],"a":0},
 {"t":"match","q":"Match the hour (Ethiopian → Western)","pairs":[["አንድ ሰዓት","7:00"],["ስድስት ሰዓት","noon"],["ሁለት ሰዓት","8:00"]]},
 {"t":"mc","q":"Meet at two, mata — in Western terms that is…","o":["8 PM","2 PM","2 AM"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማታ","o":["ማታ","ጠዋት","ፈረንጅ ሰዓት"],"a":0}
 ]},
-{"id":"am_n6_5","title":"Checkpoint: the two clocks","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_n6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"The Ethiopian day is counted from…","o":["sunrise","midnight","noon"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ፈረንጅ ሰዓት","o":["ፈረንጅ ሰዓት","ሀበሻ ሰዓት","ማታ"],"a":0},
 {"t":"mc","q":"ጠዋት means…","o":["morning","evening","sunrise"],"a":0},
@@ -1191,7 +1191,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ሳምንት"],"a":0},
 {"t":"mc","q":"ዛሬ ሰኞ ነው means…","o":["today is Monday","Monday is tomorrow","last Monday"],"a":0}
 ]},
-{"id":"am_n7_2","title":"Hearing the circles","step":"recognize","meta":"Week to year by ear","vocab":[],"ex":[
+{"id":"am_n7_2","title":"Recognize","step":"recognize","meta":"Week to year by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ዓመት","o":["ዓመት","ወር","ሳምንት"],"a":0},
 {"t":"mc","q":"What does ሳምንት mean?","o":["week","month","year"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወር","o":["ወር","ዓመት","ሰዓት"],"a":0},
@@ -1199,21 +1199,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ዓመት","ወር"],"a":0},
 {"t":"mc","q":"Ethiopian New Year falls in…","o":["September","January","June"],"a":0}
 ]},
-{"id":"am_n7_3","title":"Building the circles","step":"build","meta":"Time, assembled","vocab":[],"ex":[
+{"id":"am_n7_3","title":"Build","step":"build","meta":"Time, assembled","vocab":[],"ex":[
 {"t":"wb","q":"Build the circles small to big: week, month, year","a":["ሳምንት","ወር","ዓመት"],"pool":["ሳምንት","ወር","ዓመት","ሰዓት"]},
 {"t":"mc","q":"Pick the word for month","o":["ወር","ዓመት","ሳምንት"],"a":0},
 {"t":"wb","q":"Build: today is Monday","a":["ዛሬ","ሰኞ","ነው"],"pool":["ዛሬ","ሰኞ","ነው","ነገ"]},
 {"t":"mc","q":"Pick the word for week","o":["ሳምንት","ወር","ሰዓት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሳምንት","o":["ሳምንት","ዓመት","ወር"],"a":0}
 ]},
-{"id":"am_n7_4","title":"The circles in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_n7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሳምንት","week"],["ወር","month"],["ዓመት","year"]]},
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ሳምንት","ዓመት"],"a":0},
 {"t":"match","q":"Match the frame","pairs":[["ዛሬ ሰኞ ነው","today is Monday"],["ዛሬ እሁድ ነው","today is Sunday"]]},
 {"t":"mc","q":"Thirteen months of sunshine refers to…","o":["the Ethiopian calendar","the rainy season","daylight saving"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዓመት","o":["ዓመት","ሳምንት","ወር"],"a":0}
 ]},
-{"id":"am_n7_5","title":"Checkpoint: Zone 4 complete","step":"checkpoint","meta":"Numbers, days and the clock — show it all","vocab":[],"ex":[
+{"id":"am_n7_5","title":"Checkpoint","step":"checkpoint","meta":"Numbers, days and the clock — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ወር means…","o":["month","week","year"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ሰኞ ነው","o":["ዛሬ ሰኞ ነው","ወር","ሳምንት"],"a":0},
 {"t":"mc","q":"Review — one o&rsquo;clock habesha se-at is…","o":["7:00 AM","1:00 AM","11:00 AM"],"a":0},
@@ -1235,7 +1235,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","እንጀራ"],"a":0},
 {"t":"mc","q":"ወጥ is served…","o":["on top of injera","in a cup","beside bread only"],"a":0}
 ]},
-{"id":"am_d1_2","title":"Hearing the staples","step":"recognize","meta":"The table by ear","vocab":[],"ex":[
+{"id":"am_d1_2","title":"Recognize","step":"recognize","meta":"The table by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","ዳቦ","ወጥ"],"a":0},
 {"t":"mc","q":"What does እንጀራ mean?","o":["the sourdough flatbread","the stew","the loaf"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","ውሃ","እንጀራ"],"a":0},
@@ -1243,21 +1243,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እንጀራ","o":["እንጀራ","ዳቦ","ውሃ"],"a":0},
 {"t":"mc","q":"Everyone eats from…","o":["one shared injera","separate plates","small bowls"],"a":0}
 ]},
-{"id":"am_d1_3","title":"Building the staples","step":"build","meta":"Set the table","vocab":[],"ex":[
+{"id":"am_d1_3","title":"Build","step":"build","meta":"Set the table","vocab":[],"ex":[
 {"t":"wb","q":"Build: injera and stew","a":["እንጀራ","ወጥ"],"pool":["እንጀራ","ወጥ","ዳቦ"]},
 {"t":"mc","q":"Pick the word for water","o":["ውሃ","ዳቦ","ወጥ"],"a":0},
 {"t":"wb","q":"Build: bread and water","a":["ዳቦ","ውሃ"],"pool":["ዳቦ","ውሃ","እንጀራ"]},
 {"t":"mc","q":"Pick the word for stew","o":["ወጥ","ውሃ","ዳቦ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዳቦ","o":["ዳቦ","ወጥ","እንጀራ"],"a":0}
 ]},
-{"id":"am_d1_4","title":"The staples in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንጀራ","injera"],["ወጥ","stew"],["ዳቦ","bread"]]},
 {"t":"li","q":"Which one do you hear?","say":"ውሃ","o":["ውሃ","እንጀራ","ዳቦ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውሃ","water"],["ወጥ","stew"]]},
 {"t":"mc","q":"Ethiopia&rsquo;s famous sparkling water is named after the town of…","o":["Ambo","Addis","Arba"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንጀራ","o":["እንጀራ","ውሃ","ወጥ"],"a":0}
 ]},
-{"id":"am_d1_5","title":"Checkpoint: the staples","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ወጥ means…","o":["stew","bread","plate"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወጥ","o":["ወጥ","ዳቦ","ውሃ"],"a":0},
 {"t":"mc","q":"Which one means water?","o":["ውሃ","ወጥ","ዳቦ"],"a":0},
@@ -1280,7 +1280,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ሻይ"],"a":0},
 {"t":"mc","q":"ወተት means…","o":["milk","tea","sugar"],"a":0}
 ]},
-{"id":"am_d2_2","title":"Hearing the drinks","step":"recognize","meta":"The jebena by ear","vocab":[],"ex":[
+{"id":"am_d2_2","title":"Recognize","step":"recognize","meta":"The jebena by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ወተት","ቡና"],"a":0},
 {"t":"mc","q":"What does ቡና mean?","o":["coffee","tea","milk"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ሻይ","ውሃ"],"a":0},
@@ -1288,21 +1288,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ቡና","ሻይ"],"a":0},
 {"t":"mc","q":"Leaving a buna ceremony before the third round is…","o":["leaving early","expected","polite"],"a":0}
 ]},
-{"id":"am_d2_3","title":"Building the drinks","step":"build","meta":"Order at the counter","vocab":[],"ex":[
+{"id":"am_d2_3","title":"Build","step":"build","meta":"Order at the counter","vocab":[],"ex":[
 {"t":"wb","q":"Build: coffee and tea","a":["ቡና","ሻይ"],"pool":["ቡና","ሻይ","ወተት"]},
 {"t":"mc","q":"Pick the word for milk","o":["ወተት","ውሃ","ሻይ"],"a":0},
 {"t":"wb","q":"Build: two coffees (hulett buna)","a":["ሁለት","ቡና"],"pool":["ሁለት","ቡና","ሻይ"]},
 {"t":"mc","q":"Pick the word for tea","o":["ሻይ","ቡና","ወተት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ወተት","ሻይ"],"a":0}
 ]},
-{"id":"am_d2_4","title":"The drinks in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቡና","coffee"],["ሻይ","tea"],["ወተት","milk"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሻይ","o":["ሻይ","ቡና","ወተት"],"a":0},
 {"t":"match","q":"Match the round to its place","pairs":[["abol","first"],["tona","second"],["bereka","third"]]},
 {"t":"mc","q":"The black clay coffee pot is called the…","o":["jebena","berbere","injera"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወተት","o":["ወተት","ሻይ","ቡና"],"a":0}
 ]},
-{"id":"am_d2_5","title":"Checkpoint: the drinks","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቡና means…","o":["coffee","tea","ceremony"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቡና","o":["ቡና","ሻይ","ወተት"],"a":0},
 {"t":"mc","q":"Which one means tea?","o":["ሻይ","ወተት","ቡና"],"a":0},
@@ -1324,7 +1324,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ"],"a":0},
 {"t":"mc","q":"ውሃ እባክሽ said to a waitress means…","o":["water, please","more water","cold water"],"a":0}
 ]},
-{"id":"am_d3_2","title":"Hearing the needs","step":"recognize","meta":"Hunger and please by ear","vocab":[],"ex":[
+{"id":"am_d3_2","title":"Recognize","step":"recognize","meta":"Hunger and please by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እባክህ","o":["እባክህ","እባክሽ","ራበኝ"],"a":0},
 {"t":"mc","q":"What does ጠማኝ mean?","o":["I am thirsty","I am hungry","I am full"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ራበኝ","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
@@ -1332,21 +1332,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ","ጠማኝ"],"a":0},
 {"t":"mc","q":"The tight consonant in ጠማኝ is…","o":["ጠ","ተ","ቀ"],"a":0}
 ]},
-{"id":"am_d3_3","title":"Building the needs","step":"build","meta":"Ask nicely","vocab":[],"ex":[
+{"id":"am_d3_3","title":"Build","step":"build","meta":"Ask nicely","vocab":[],"ex":[
 {"t":"wb","q":"Build: water, please (to a woman)","a":["ውሃ","እባክሽ"],"pool":["ውሃ","እባክሽ","እባክህ"]},
 {"t":"mc","q":"Pick: I am hungry","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
 {"t":"wb","q":"Build: coffee, please (to a man)","a":["ቡና","እባክህ"],"pool":["ቡና","እባክህ","እባክሽ"]},
 {"t":"mc","q":"Pick: I am thirsty","o":["ጠማኝ","ራበኝ","ውሃ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ራበኝ","o":["ራበኝ","እባክሽ","ጠማኝ"],"a":0}
 ]},
-{"id":"am_d3_4","title":"The needs in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ራበኝ","I am hungry"],["ጠማኝ","I am thirsty"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጠማኝ","o":["ጠማኝ","ራበኝ","እባክህ"],"a":0},
 {"t":"match","q":"Match the please to the person","pairs":[["እባክህ","a man"],["እባክሽ","a woman"]]},
 {"t":"mc","q":"ራበኝ! Your friend&rsquo;s natural next move is…","o":["ordering food","ordering water","leaving"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እባክህ","o":["እባክህ","ጠማኝ","እባክሽ"],"a":0}
 ]},
-{"id":"am_d3_5","title":"Checkpoint: the needs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ጠማኝ means…","o":["I am thirsty","I am hungry","I am tired"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እባክሽ","o":["እባክሽ","እባክህ","ራበኝ"],"a":0},
 {"t":"mc","q":"Which one means I am hungry?","o":["ራበኝ","ጠማኝ","እባክህ"],"a":0},
@@ -1368,7 +1368,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","እበላለሁ"],"a":0},
 {"t":"mc","q":"እንጀራ እበላለሁ means…","o":["I eat injera","eat the injera!","injera is eaten"],"a":0}
 ]},
-{"id":"am_d4_2","title":"Hearing the verbs","step":"recognize","meta":"Eating and drinking by ear","vocab":[],"ex":[
+{"id":"am_d4_2","title":"Recognize","step":"recognize","meta":"Eating and drinking by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እጠጣለሁ","o":["እጠጣለሁ","እበላለሁ","ብላ"],"a":0},
 {"t":"mc","q":"What does እበላለሁ mean?","o":["I eat","I drink","eat!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ብዪ","o":["ብዪ","ብላ","እበላለሁ"],"a":0},
@@ -1376,21 +1376,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ብላ","o":["ብላ","ብዪ","እጠጣለሁ"],"a":0},
 {"t":"mc","q":"The -alehu ending marks…","o":["I (present)","you","they"],"a":0}
 ]},
-{"id":"am_d4_3","title":"Building the verbs","step":"build","meta":"Sentence-making begins","vocab":[],"ex":[
+{"id":"am_d4_3","title":"Build","step":"build","meta":"Sentence-making begins","vocab":[],"ex":[
 {"t":"wb","q":"Build: I eat injera","a":["እንጀራ","እበላለሁ"],"pool":["እንጀራ","እበላለሁ","እጠጣለሁ"]},
 {"t":"mc","q":"Pick: eat! (to a woman)","o":["ብዪ","ብላ","እበላለሁ"],"a":0},
 {"t":"wb","q":"Build: I drink coffee","a":["ቡና","እጠጣለሁ"],"pool":["ቡና","እጠጣለሁ","እበላለሁ"]},
 {"t":"mc","q":"Pick: eat! (to a man)","o":["ብላ","ብዪ","እጠጣለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እበላለሁ","o":["እበላለሁ","ብላ","እጠጣለሁ"],"a":0}
 ]},
-{"id":"am_d4_4","title":"The verbs in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እበላለሁ","I eat"],["እጠጣለሁ","I drink"]]},
 {"t":"li","q":"Which one do you hear?","say":"ብላ","o":["ብላ","እበላለሁ","ብዪ"],"a":0},
 {"t":"match","q":"Match the command to the person","pairs":[["ብላ","a man"],["ብዪ","a woman"]]},
 {"t":"mc","q":"Verb order: Amharic says injera I-eat because the verb goes…","o":["last","first","anywhere"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ብዪ","o":["ብዪ","ብላ","እበላለሁ"],"a":0}
 ]},
-{"id":"am_d4_5","title":"Checkpoint: the verbs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እጠጣለሁ means…","o":["I drink","I eat","drink!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እበላለሁ","o":["እበላለሁ","እጠጣለሁ","ብላ"],"a":0},
 {"t":"mc","q":"Which one is eat!, to a man?","o":["ብላ","ብዪ","እበላለሁ"],"a":0},
@@ -1413,7 +1413,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","አትክልት"],"a":0},
 {"t":"mc","q":"አትክልት means…","o":["vegetables","meat","spices"],"a":0}
 ]},
-{"id":"am_d5_2","title":"Hearing the wet family","step":"recognize","meta":"Stews by ear","vocab":[],"ex":[
+{"id":"am_d5_2","title":"Recognize","step":"recognize","meta":"Stews by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አትክልት","o":["አትክልት","ሥጋ","ምስር ወጥ"],"a":0},
 {"t":"mc","q":"What does ሥጋ mean?","o":["meat","stew","chicken"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዶሮ ወጥ","o":["ዶሮ ወጥ","ምስር ወጥ","ሥጋ"],"a":0},
@@ -1421,21 +1421,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
 {"t":"mc","q":"The red spice that colors most wet is…","o":["berbere","salt","ginger"],"a":0}
 ]},
-{"id":"am_d5_3","title":"Building the wet family","step":"build","meta":"Order like you mean it","vocab":[],"ex":[
+{"id":"am_d5_3","title":"Build","step":"build","meta":"Order like you mean it","vocab":[],"ex":[
 {"t":"wb","q":"Build: chicken stew","a":["ዶሮ","ወጥ"],"pool":["ዶሮ","ወጥ","ምስር"]},
 {"t":"mc","q":"Pick the word for vegetables","o":["አትክልት","ሥጋ","ወጥ"],"a":0},
 {"t":"wb","q":"Build: lentil stew","a":["ምስር","ወጥ"],"pool":["ምስር","ወጥ","ዶሮ"]},
 {"t":"mc","q":"Pick the word for meat","o":["ሥጋ","አትክልት","ዶሮ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አትክልት","o":["አትክልት","ምስር ወጥ","ሥጋ"],"a":0}
 ]},
-{"id":"am_d5_4","title":"The wet family in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዶሮ ወጥ","chicken stew"],["ምስር ወጥ","lentil stew"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሥጋ","o":["ሥጋ","አትክልት","ዶሮ ወጥ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሥጋ","meat"],["አትክልት","vegetables"]]},
 {"t":"mc","q":"The holiday table is measured by its…","o":["ዶሮ ወጥ","ምስር ወጥ","ዳቦ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዶሮ ወጥ","o":["ዶሮ ወጥ","ሥጋ","ምስር ወጥ"],"a":0}
 ]},
-{"id":"am_d5_5","title":"Checkpoint: the wet family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ምስር ወጥ means…","o":["lentil stew","chicken stew","meat stew"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ምስር ወጥ","o":["ምስር ወጥ","ዶሮ ወጥ","አትክልት"],"a":0},
 {"t":"mc","q":"Which one means meat?","o":["ሥጋ","አትክልት","ወጥ"],"a":0},
@@ -1458,7 +1458,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","በጣም"],"a":0},
 {"t":"mc","q":"በቃኝ politely says…","o":["I have had enough","more please","not yet"],"a":0}
 ]},
-{"id":"am_d6_2","title":"Hearing the praise","step":"recognize","meta":"Compliments by ear","vocab":[],"ex":[
+{"id":"am_d6_2","title":"Recognize","step":"recognize","meta":"Compliments by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"በጣም","o":["በጣም","በቃኝ","ጣፋጭ ነው"],"a":0},
 {"t":"mc","q":"What does በቃኝ mean?","o":["I have had enough","it is delicious","more food"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በጣም ጣፋጭ ነው","በቃኝ"],"a":0},
@@ -1466,21 +1466,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","ጣፋጭ ነው","በጣም"],"a":0},
 {"t":"mc","q":"Expect to say በቃኝ how many times before it works?","o":["three","one","never"],"a":0}
 ]},
-{"id":"am_d6_3","title":"Building the praise","step":"build","meta":"Compliment, amplify, stop","vocab":[],"ex":[
+{"id":"am_d6_3","title":"Build","step":"build","meta":"Compliment, amplify, stop","vocab":[],"ex":[
 {"t":"wb","q":"Build: it is delicious","a":["ጣፋጭ","ነው"],"pool":["ጣፋጭ","ነው","በጣም"]},
 {"t":"mc","q":"Pick the word for very","o":["በጣም","በቃኝ","ነው"],"a":0},
 {"t":"wb","q":"Build: it is VERY delicious","a":["በጣም","ጣፋጭ","ነው"],"pool":["በጣም","ጣፋጭ","ነው","በቃኝ"]},
 {"t":"mc","q":"Pick the graceful stop","o":["በቃኝ","በጣም","ብላ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በጣም ጣፋጭ ነው","o":["በጣም ጣፋጭ ነው","ጣፋጭ ነው","በቃኝ"],"a":0}
 ]},
-{"id":"am_d6_4","title":"The praise in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጣፋጭ ነው","it is delicious"],["በጣም","very"],["በቃኝ","enough for me"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጣፋጭ ነው","o":["ጣፋጭ ነው","በቃኝ","በጣም"],"a":0},
 {"t":"match","q":"Match the moment to the phrase","pairs":[["first bite","በጣም ጣፋጭ ነው"],["third refill","በቃኝ"]]},
 {"t":"mc","q":"The hand-over-the-plate gesture goes with…","o":["በቃኝ","ብላ","ራበኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በጣም","o":["በጣም","ጣፋጭ ነው","በቃኝ"],"a":0}
 ]},
-{"id":"am_d6_5","title":"Checkpoint: the praise","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_d6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"በጣም ጣፋጭ ነው means…","o":["it is very delicious","it is a little sweet","I am very full"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በቃኝ","o":["በቃኝ","በጣም","ጣፋጭ ነው"],"a":0},
 {"t":"mc","q":"Which one means very?","o":["በጣም","በቃኝ","ነው"],"a":0},
@@ -1503,7 +1503,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","ጉርሻ"],"a":0},
 {"t":"mc","q":"The traditional fasting days are…","o":["Wednesday and Friday","Monday and Tuesday","Saturday and Sunday"],"a":0}
 ]},
-{"id":"am_d7_2","title":"Hearing the table","step":"recognize","meta":"Table culture by ear","vocab":[],"ex":[
+{"id":"am_d7_2","title":"Recognize","step":"recognize","meta":"Table culture by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ጉርሻ","o":["ጉርሻ","ጾም","እንብላ"],"a":0},
 {"t":"mc","q":"What does ጾም mean?","o":["fasting","feast","supper"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ጉርሻ","ብላ"],"a":0},
@@ -1511,21 +1511,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","እንብላ","ጉርሻ"],"a":0},
 {"t":"mc","q":"Refusing a gursha reads as…","o":["refusing the affection","good manners","a diet"],"a":0}
 ]},
-{"id":"am_d7_3","title":"Building the table","step":"build","meta":"The social meal","vocab":[],"ex":[
+{"id":"am_d7_3","title":"Build","step":"build","meta":"The social meal","vocab":[],"ex":[
 {"t":"wb","q":"Build: let us eat — it is delicious","a":["እንብላ","ጣፋጭ","ነው"],"pool":["እንብላ","ጣፋጭ","ነው","ጾም"]},
 {"t":"mc","q":"Pick the honor bite","o":["ጉርሻ","ጾም","ወጥ"],"a":0},
 {"t":"wb","q":"Build the word: fasting","a":["ጾ","ም"],"pool":["ጾ","ም","ጉ"]},
 {"t":"mc","q":"Pick: let us eat","o":["እንብላ","ብላ","እበላለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ጾም","ጉርሻ"],"a":0}
 ]},
-{"id":"am_d7_4","title":"The table in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_d7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንብላ","let us eat"],["ጉርሻ","the honor bite"],["ጾም","fasting"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጾም","o":["ጾም","ጉርሻ","እንብላ"],"a":0},
 {"t":"match","q":"Match the gesture to its meaning","pairs":[["a rolled morsel offered by hand","ጉርሻ"],["a wave toward the table","እንብላ"]]},
 {"t":"mc","q":"The bigger the gursha…","o":["the deeper the friendship","the better the cook","the longer the meal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጉርሻ","o":["ጉርሻ","እንብላ","ጾም"],"a":0}
 ]},
-{"id":"am_d7_5","title":"Checkpoint: Zone 5 complete","step":"checkpoint","meta":"Food and drink — show it all","vocab":[],"ex":[
+{"id":"am_d7_5","title":"Checkpoint","step":"checkpoint","meta":"Food and drink — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ጉርሻ means…","o":["the honor bite","the last round","the recipe"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንብላ","o":["እንብላ","ብላ","ጉርሻ"],"a":0},
 {"t":"mc","q":"Review — the coffee ceremony pours…","o":["three rounds","two rounds","one round"],"a":0},
@@ -1548,7 +1548,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","ቤት"],"a":0},
 {"t":"mc","q":"The ግቢ is…","o":["the walled yard around the home","the roof","the front room"],"a":0}
 ]},
-{"id":"am_h1_2","title":"Hearing the house","step":"recognize","meta":"The building by ear","vocab":[],"ex":[
+{"id":"am_h1_2","title":"Recognize","step":"recognize","meta":"The building by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","ቤት","ግቢ"],"a":0},
 {"t":"mc","q":"What does መስኮት mean?","o":["window","door","yard"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","በር","መስኮት"],"a":0},
@@ -1556,21 +1556,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","መስኮት","ቤት"],"a":0},
 {"t":"mc","q":"Coffee roasting and drying laundry happen in…","o":["the gibi","the bedroom","the street"],"a":0}
 ]},
-{"id":"am_h1_3","title":"Building the house","step":"build","meta":"Walls, doors, windows","vocab":[],"ex":[
+{"id":"am_h1_3","title":"Build","step":"build","meta":"Walls, doors, windows","vocab":[],"ex":[
 {"t":"wb","q":"Build: house and door","a":["ቤት","በር"],"pool":["ቤት","በር","ግቢ"]},
 {"t":"mc","q":"Pick the word for window","o":["መስኮት","በር","ግቢ"],"a":0},
 {"t":"wb","q":"Build: window and compound","a":["መስኮት","ግቢ"],"pool":["መስኮት","ግቢ","ቤት"]},
 {"t":"mc","q":"Pick the word for house","o":["ቤት","ግቢ","በር"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መስኮት","o":["መስኮት","ግቢ","በር"],"a":0}
 ]},
-{"id":"am_h1_4","title":"The house in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቤት","house"],["በር","door"],["መስኮት","window"]]},
 {"t":"li","q":"Which one do you hear?","say":"ግቢ","o":["ግቢ","ቤት","በር"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ግቢ","compound"],["ማን ነው?","who is it?"]]},
 {"t":"mc","q":"A knock at the በር gets the question…","o":["ማን ነው?","ስንት ነው?","የት ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በር","o":["በር","መስኮት","ግቢ"],"a":0}
 ]},
-{"id":"am_h1_5","title":"Checkpoint: the house","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ግቢ means…","o":["compound · yard","garden flowers","gate"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት","o":["ቤት","ግቢ","መስኮት"],"a":0},
 {"t":"mc","q":"Which one means door?","o":["በር","መስኮት","ቤት"],"a":0},
@@ -1586,14 +1586,14 @@ const AM_LESSONS=[
 {"t":"note","tag":"The generic room","q":"ክፍል","body":"<p><b>ክፍል</b> <i>kifil</i> — <i>room</i> (also a classroom, also a section of anything). The all-purpose divider word.</p>","eg":[["ክፍል","kifil","room"]]},
 {"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ቤት"],"a":0},
 {"t":"mc","q":"ክፍል means…","o":["room","kitchen","hall"],"a":0},
-{"t":"note","tag":"Bet keeps its promise","q":"ማድቤት and መኝታ ቤት","body":"<p>Watch bet build rooms: <b>ማድቤት</b> <i>madbet</i> — <i>kitchen</i> — and <b>መኝታ ቤት</b> <i>megnita bet</i> — literally <i>sleeping house</i> — the bedroom. Amharic names places by what happens in them plus bet.</p>","eg":[["ማድቤት","madbet","kitchen"],["መኝታ ቤት","megnita bet","bedroom"]]},
+{"t":"note","tag":"Bet compounds","q":"ማድቤት and መኝታ ቤት","body":"<p>Watch bet build rooms: <b>ማድቤት</b> <i>madbet</i> — <i>kitchen</i> — and <b>መኝታ ቤት</b> <i>megnita bet</i> — literally <i>sleeping house</i> — the bedroom. Amharic names places by what happens in them plus bet.</p>","eg":[["ማድቤት","madbet","kitchen"],["መኝታ ቤት","megnita bet","bedroom"]]},
 {"t":"li","q":"Which one do you hear?","say":"ማድቤት","o":["ማድቤት","መኝታ ቤት"],"a":0},
 {"t":"mc","q":"መኝታ ቤት literally means…","o":["sleeping house","quiet room","night place"],"a":0},
 {"t":"note","tag":"The essential one","q":"ሽንት ቤት","body":"<p><b>ሽንት ቤት</b> <i>shint bet</i> — <i>the toilet</i> — the single most useful compound in any traveler&rsquo;s Amharic. Ask for it with the yet-question coming next topic and you are equipped for anything.</p>","eg":[["ሽንት ቤት","shint bet","toilet"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","ማድቤት"],"a":0},
 {"t":"mc","q":"ሽንት ቤት means…","o":["toilet","shower","kitchen"],"a":0}
 ]},
-{"id":"am_h2_2","title":"Hearing the rooms","step":"recognize","meta":"Doors off the hallway","vocab":[],"ex":[
+{"id":"am_h2_2","title":"Recognize","step":"recognize","meta":"Doors off the hallway","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ማድቤት","ሽንት ቤት"],"a":0},
 {"t":"mc","q":"What does ማድቤት mean?","o":["kitchen","bedroom","toilet"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ቤት","ማድቤት"],"a":0},
@@ -1601,21 +1601,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","መኝታ ቤት","ክፍል"],"a":0},
 {"t":"mc","q":"Amharic names rooms by…","o":["what happens there + bet","their size","their color"],"a":0}
 ]},
-{"id":"am_h2_3","title":"Building the rooms","step":"build","meta":"Compound by compound","vocab":[],"ex":[
+{"id":"am_h2_3","title":"Build","step":"build","meta":"Compound by compound","vocab":[],"ex":[
 {"t":"wb","q":"Build: bedroom (sleeping + house)","a":["መኝታ","ቤት"],"pool":["መኝታ","ቤት","ሽንት"]},
 {"t":"mc","q":"Pick the kitchen","o":["ማድቤት","መኝታ ቤት","ክፍል"],"a":0},
 {"t":"wb","q":"Build: toilet (shint + bet)","a":["ሽንት","ቤት"],"pool":["ሽንት","ቤት","መኝታ"]},
 {"t":"mc","q":"Pick the word for room","o":["ክፍል","ቤት","ግቢ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማድቤት","o":["ማድቤት","ሽንት ቤት","ክፍል"],"a":0}
 ]},
-{"id":"am_h2_4","title":"The rooms in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ክፍል","room"],["ማድቤት","kitchen"],["ሽንት ቤት","toilet"]]},
 {"t":"li","q":"Which one do you hear?","say":"መኝታ ቤት","o":["መኝታ ቤት","ሽንት ቤት","ማድቤት"],"a":0},
 {"t":"match","q":"Match the room to what happens there","pairs":[["ማድቤት","cooking"],["መኝታ ቤት","sleeping"]]},
 {"t":"mc","q":"The most useful compound for any traveler…","o":["ሽንት ቤት","መኝታ ቤት","ማድቤት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ክፍል","o":["ክፍል","ማድቤት","መኝታ ቤት"],"a":0}
 ]},
-{"id":"am_h2_5","title":"Checkpoint: the rooms","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ማድቤት means…","o":["kitchen","bedroom","bathroom"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሽንት ቤት","o":["ሽንት ቤት","ማድቤት","መኝታ ቤት"],"a":0},
 {"t":"mc","q":"Which one means room?","o":["ክፍል","ቤት","ግቢ"],"a":0},
@@ -1638,7 +1638,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","አልጋ"],"a":0},
 {"t":"mc","q":"መብራት means…","o":["light · electricity","candle","stove"],"a":0}
 ]},
-{"id":"am_h3_2","title":"Hearing the furniture","step":"recognize","meta":"The room by ear","vocab":[],"ex":[
+{"id":"am_h3_2","title":"Recognize","step":"recognize","meta":"The room by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
 {"t":"mc","q":"What does ወንበር mean?","o":["chair","table","bed"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","ጠረጴዛ","አልጋ"],"a":0},
@@ -1646,21 +1646,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","መብራት","ወንበር"],"a":0},
 {"t":"mc","q":"Mebrat tefa means the light…","o":["vanished","turned on","is bright"],"a":0}
 ]},
-{"id":"am_h3_3","title":"Building the furniture","step":"build","meta":"Furnish the kifil","vocab":[],"ex":[
+{"id":"am_h3_3","title":"Build","step":"build","meta":"Furnish the kifil","vocab":[],"ex":[
 {"t":"wb","q":"Build: chair and table","a":["ወንበር","ጠረጴዛ"],"pool":["ወንበር","ጠረጴዛ","አልጋ"]},
 {"t":"mc","q":"Pick the word for light","o":["መብራት","አልጋ","ወንበር"],"a":0},
 {"t":"wb","q":"Build: bed and light","a":["አልጋ","መብራት"],"pool":["አልጋ","መብራት","ጠረጴዛ"]},
 {"t":"mc","q":"Pick the word for table","o":["ጠረጴዛ","ወንበር","መብራት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወንበር","o":["ወንበር","አልጋ","ጠረጴዛ"],"a":0}
 ]},
-{"id":"am_h3_4","title":"The furniture in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወንበር","chair"],["ጠረጴዛ","table"],["አልጋ","bed"]]},
 {"t":"li","q":"Which one do you hear?","say":"አልጋ","o":["አልጋ","ወንበር","መብራት"],"a":0},
 {"t":"match","q":"Match the thing to its room","pairs":[["አልጋ","መኝታ ቤት"],["ወንበር","ክፍል"]]},
 {"t":"mc","q":"Two tight consonants live inside…","o":["ጠረጴዛ","ወንበር","አልጋ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጠረጴዛ","o":["ጠረጴዛ","መብራት","ወንበር"],"a":0}
 ]},
-{"id":"am_h3_5","title":"Checkpoint: the furniture","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ወንበር means…","o":["chair","table","cupboard"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መብራት","o":["መብራት","አልጋ","ጠረጴዛ"],"a":0},
 {"t":"mc","q":"Which one means table?","o":["ጠረጴዛ","አልጋ","ወንበር"],"a":0},
@@ -1683,7 +1683,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Is or is not — which do you hear?","say":"የለም","o":["የለም","አለ"],"a":0},
 {"t":"mc","q":"ውሃ አለ? asks…","o":["is there water?","where is water?","whose water is this?"],"a":0}
 ]},
-{"id":"am_h4_2","title":"Hearing where","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
+{"id":"am_h4_2","title":"Recognize","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እዚህ","o":["እዚህ","እዚያ","የት ነው?"],"a":0},
 {"t":"mc","q":"What does የለም mean?","o":["there is not","there is","maybe"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","የለም","እዚህ"],"a":0},
@@ -1691,21 +1691,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"የት ነው?","o":["የት ነው?","እዚያ","አለ"],"a":0},
 {"t":"mc","q":"ሻይ አለ? — the sad answer is…","o":["የለም","አለ","እዚህ"],"a":0}
 ]},
-{"id":"am_h4_3","title":"Building where","step":"build","meta":"Ask, point, confirm","vocab":[],"ex":[
+{"id":"am_h4_3","title":"Build","step":"build","meta":"Ask, point, confirm","vocab":[],"ex":[
 {"t":"wb","q":"Build: where is the toilet?","a":["ሽንት","ቤት","የት","ነው?"],"pool":["ሽንት","ቤት","የት","ነው?","እዚህ"]},
 {"t":"mc","q":"Pick the word for here","o":["እዚህ","እዚያ","አለ"],"a":0},
 {"t":"wb","q":"Build: is there coffee? (buna alle?)","a":["ቡና","አለ?"],"pool":["ቡና","አለ?","የለም"]},
 {"t":"mc","q":"Pick: there is not","o":["የለም","አለ","እዚያ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እዚያ","o":["እዚያ","እዚህ","የለም"],"a":0}
 ]},
-{"id":"am_h4_4","title":"Where in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["የት ነው?","where is it?"],["እዚህ","here"],["እዚያ","there"]]},
 {"t":"li","q":"Which one do you hear?","say":"አለ","o":["አለ","እዚያ","የለም"],"a":0},
 {"t":"match","q":"Match the pair","pairs":[["አለ","there is"],["የለም","there is not"]]},
 {"t":"mc","q":"ሽንት ቤት የት ነው? — እዚያ. The toilet is…","o":["over there","right here","not present"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"የለም","o":["የለም","አለ","እዚህ"],"a":0}
 ]},
-{"id":"am_h4_5","title":"Checkpoint: where","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"የት ነው? means…","o":["where is it?","who is it?","how is it?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እዚህ","o":["እዚህ","እዚያ","አለ"],"a":0},
 {"t":"mc","q":"Which one means there is?","o":["አለ","የለም","እዚህ"],"a":0},
@@ -1728,7 +1728,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ማንኪያ"],"a":0},
 {"t":"mc","q":"The ጀበና is used for…","o":["the coffee ceremony","serving stew","carrying water"],"a":0}
 ]},
-{"id":"am_h5_2","title":"Hearing the tools","step":"recognize","meta":"Kitchen kit by ear","vocab":[],"ex":[
+{"id":"am_h5_2","title":"Recognize","step":"recognize","meta":"Kitchen kit by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሳህን","o":["ሳህን","ኩባያ","ጀበና"],"a":0},
 {"t":"mc","q":"What does ኩባያ mean?","o":["cup","plate","pot"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ሳህን","ማንኪያ"],"a":0},
@@ -1736,21 +1736,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ጀበና","ኩባያ"],"a":0},
 {"t":"mc","q":"Many jebenas are…","o":["family heirlooms","disposable","imported"],"a":0}
 ]},
-{"id":"am_h5_3","title":"Building the tools","step":"build","meta":"Lay the tray","vocab":[],"ex":[
+{"id":"am_h5_3","title":"Build","step":"build","meta":"Lay the tray","vocab":[],"ex":[
 {"t":"wb","q":"Build: cup and plate","a":["ኩባያ","ሳህን"],"pool":["ኩባያ","ሳህን","ማንኪያ"]},
 {"t":"mc","q":"Pick the coffee pot","o":["ጀበና","ኩባያ","ሳህን"],"a":0},
 {"t":"wb","q":"Build: spoon and coffee pot","a":["ማንኪያ","ጀበና"],"pool":["ማንኪያ","ጀበና","ኩባያ"]},
 {"t":"mc","q":"Pick the word for plate","o":["ሳህን","ማንኪያ","ጀበና"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ኩባያ","o":["ኩባያ","ማንኪያ","ሳህን"],"a":0}
 ]},
-{"id":"am_h5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ኩባያ","cup"],["ሳህን","plate"],["ማንኪያ","spoon"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጀበና","o":["ጀበና","ኩባያ","ሳህን"],"a":0},
 {"t":"match","q":"Match the tool to its drink","pairs":[["ጀበና","ቡና"],["ኩባያ","ሻይ"]]},
 {"t":"mc","q":"On injera nights, the ሳህን is…","o":["not needed — injera is the plate","doubled","tiny"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሳህን","o":["ሳህን","ጀበና","ማንኪያ"],"a":0}
 ]},
-{"id":"am_h5_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ጀበና means…","o":["coffee pot","tea kettle","water jar"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ማንኪያ","o":["ማንኪያ","ኩባያ","ጀበና"],"a":0},
 {"t":"mc","q":"Which one means cup?","o":["ኩባያ","ሳህን","ማንኪያ"],"a":0},
@@ -1772,7 +1772,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","እነሳለሁ"],"a":0},
 {"t":"mc","q":"All four verbs share the ending…","o":["-alehu, the I marker","-och, the plural","-new, the is"],"a":0}
 ]},
-{"id":"am_h6_2","title":"Hearing the routine","step":"recognize","meta":"The day at home by ear","vocab":[],"ex":[
+{"id":"am_h6_2","title":"Recognize","step":"recognize","meta":"The day at home by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","እነሳለሁ","አበስላለሁ"],"a":0},
 {"t":"mc","q":"What does አበስላለሁ mean?","o":["I cook","I wash","I eat"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
@@ -1780,21 +1780,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እነሳለሁ","o":["እነሳለሁ","እተኛለሁ","አጥባለሁ"],"a":0},
 {"t":"mc","q":"The routine in order: እነሳለሁ, አበስላለሁ, then at night…","o":["እተኛለሁ","አጥባለሁ","እበላለሁ"],"a":0}
 ]},
-{"id":"am_h6_3","title":"Building the routine","step":"build","meta":"Your day in verbs","vocab":[],"ex":[
+{"id":"am_h6_3","title":"Build","step":"build","meta":"Your day in verbs","vocab":[],"ex":[
 {"t":"wb","q":"Build: I cook wet (wet abeslalehu)","a":["ወጥ","አበስላለሁ"],"pool":["ወጥ","አበስላለሁ","አጥባለሁ"]},
 {"t":"mc","q":"Pick: I sleep","o":["እተኛለሁ","እነሳለሁ","አጥባለሁ"],"a":0},
 {"t":"wb","q":"Build: in the morning I get up (tewat inesalehu)","a":["ጠዋት","እነሳለሁ"],"pool":["ጠዋት","እነሳለሁ","እተኛለሁ"]},
 {"t":"mc","q":"Pick: I wash","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አበስላለሁ","o":["አበስላለሁ","አጥባለሁ","እነሳለሁ"],"a":0}
 ]},
-{"id":"am_h6_4","title":"The routine in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አበስላለሁ","I cook"],["አጥባለሁ","I wash"],["እተኛለሁ","I sleep"]]},
 {"t":"li","q":"Which one do you hear?","say":"እተኛለሁ","o":["እተኛለሁ","አበስላለሁ","እነሳለሁ"],"a":0},
 {"t":"match","q":"Match the verb to its place","pairs":[["አበስላለሁ","ማድቤት"],["እተኛለሁ","መኝታ ቤት"]]},
 {"t":"mc","q":"Getting up at one o&rsquo;clock habesha time means rising at…","o":["7 AM","1 AM","noon"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እነሳለሁ","o":["እነሳለሁ","አጥባለሁ","እተኛለሁ"],"a":0}
 ]},
-{"id":"am_h6_5","title":"Checkpoint: the routine","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_h6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እነሳለሁ means…","o":["I get up","I sleep","I wash"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አጥባለሁ","o":["አጥባለሁ","አበስላለሁ","እተኛለሁ"],"a":0},
 {"t":"mc","q":"Which one means I cook?","o":["አበስላለሁ","አጥባለሁ","እነሳለሁ"],"a":0},
@@ -1816,7 +1816,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ነኝ"],"a":0},
 {"t":"mc","q":"ማድቤት ውስጥ would mean…","o":["in the kitchen","the kitchen door","a big kitchen"],"a":0}
 ]},
-{"id":"am_h7_2","title":"Hearing inside","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
+{"id":"am_h7_2","title":"Recognize","step":"recognize","meta":"Position by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ውስጥ","ቤት ነኝ"],"a":0},
 {"t":"mc","q":"What does ቤት ውስጥ mean?","o":["in the house","at home (I am)","the inner room"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ውስጥ","ቤት ውስጥ"],"a":0},
@@ -1824,21 +1824,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤት ውስጥ","o":["ቤት ውስጥ","ቤት ነኝ","ውስጥ"],"a":0},
 {"t":"mc","q":"ግቢ ውስጥ means…","o":["in the compound","the compound gate","a small compound"],"a":0}
 ]},
-{"id":"am_h7_3","title":"Building inside","step":"build","meta":"Noun first, wist after","vocab":[],"ex":[
+{"id":"am_h7_3","title":"Build","step":"build","meta":"Noun first, wist after","vocab":[],"ex":[
 {"t":"wb","q":"Build: in the house","a":["ቤት","ውስጥ"],"pool":["ቤት","ውስጥ","ነኝ"]},
 {"t":"mc","q":"Pick: I am at home","o":["ቤት ነኝ","ቤት ውስጥ","ውስጥ"],"a":0},
 {"t":"wb","q":"Build: in the kitchen","a":["ማድቤት","ውስጥ"],"pool":["ማድቤት","ውስጥ","ቤት"]},
 {"t":"wb","q":"Build: I am at home","a":["ቤት","ነኝ"],"pool":["ቤት","ነኝ","ውስጥ"]},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ","ውስጥ"],"a":0}
 ]},
-{"id":"am_h7_4","title":"Inside in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_h7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውስጥ","inside"],["ቤት ውስጥ","in the house"],["ቤት ነኝ","I am at home"]]},
 {"t":"li","q":"Which one do you hear?","say":"ውስጥ","o":["ውስጥ","ቤት ነኝ","ቤት ውስጥ"],"a":0},
 {"t":"match","q":"Match the frame","pairs":[["ማድቤት ውስጥ","in the kitchen"],["ግቢ ውስጥ","in the compound"]]},
 {"t":"mc","q":"Where-are-you phone call, answered from the sofa…","o":["ቤት ነኝ","የት ነው?","ቤት ውስጥ ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ውስጥ","o":["ቤት ውስጥ","ውስጥ","ቤት ነኝ"],"a":0}
 ]},
-{"id":"am_h7_5","title":"Checkpoint: Zone 6 complete","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
+{"id":"am_h7_5","title":"Checkpoint","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ቤት ውስጥ means…","o":["in the house","at my house","the house is here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነኝ","o":["ቤት ነኝ","ቤት ውስጥ","የት ነው?"],"a":0},
 {"t":"mc","q":"Review — the opposite of አለ is…","o":["የለም","እዚህ","ውስጥ"],"a":0},
@@ -1857,11 +1857,11 @@ const AM_LESSONS=[
 {"t":"note","tag":"The big two","q":"ገበያ and ከተማ","body":"<p><b>ገበያ</b> <i>gebeya</i> — the <i>market</i>, the open-air kind that takes over whole districts. <b>ከተማ</b> <i>ketema</i> — <i>city, town</i>. Addis holds Merkato — often called Africa&rsquo;s largest open-air market.</p>","eg":[["ገበያ","gebeya","market"],["ከተማ","ketema","city · town"]]},
 {"t":"li","q":"Which one do you hear?","say":"ገበያ","o":["ገበያ","ከተማ"],"a":0},
 {"t":"mc","q":"ገበያ means…","o":["market","garage","square"],"a":0},
-{"t":"note","tag":"Bet strikes again","q":"ትምህርት ቤት","body":"<p><b>ትምህርት ቤት</b> <i>timihirt bet</i> — literally <i>learning house</i> — <i>school</i>. The bet-compound machine from Zone 6, still building the town for you.</p>","eg":[["ትምህርት ቤት","timihirt bet","school"]]},
+{"t":"note","tag":"Bet compounds again","q":"ትምህርት ቤት","body":"<p><b>ትምህርት ቤት</b> <i>timihirt bet</i> — literally <i>learning house</i> — <i>school</i>. The bet-compound machine from Zone 6, still building the town for you.</p>","eg":[["ትምህርት ቤት","timihirt bet","school"]]},
 {"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","መንገድ"],"a":0},
 {"t":"mc","q":"ትምህርት ቤት literally means…","o":["learning house","book place","child house"],"a":0}
 ]},
-{"id":"am_t1_2","title":"Hearing the town","step":"recognize","meta":"The map by ear","vocab":[],"ex":[
+{"id":"am_t1_2","title":"Recognize","step":"recognize","meta":"The map by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሱቅ","o":["ሱቅ","ገበያ","መንገድ"],"a":0},
 {"t":"mc","q":"What does ከተማ mean?","o":["city · town","market","village"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከተማ","o":["ከተማ","ገበያ","ትምህርት ቤት"],"a":0},
@@ -1869,21 +1869,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መንገድ","o":["መንገድ","ከተማ","ሱቅ"],"a":0},
 {"t":"mc","q":"Africa&rsquo;s largest open-air market is Addis&rsquo;s…","o":["Merkato","Bole","Piassa"],"a":0}
 ]},
-{"id":"am_t1_3","title":"Building the town","step":"build","meta":"Lay out the streets","vocab":[],"ex":[
+{"id":"am_t1_3","title":"Build","step":"build","meta":"Lay out the streets","vocab":[],"ex":[
 {"t":"wb","q":"Build: school (learning + house)","a":["ትምህርት","ቤት"],"pool":["ትምህርት","ቤት","ሱቅ"]},
 {"t":"mc","q":"Pick the word for road","o":["መንገድ","ገበያ","ከተማ"],"a":0},
 {"t":"wb","q":"Build: shop and market","a":["ሱቅ","ገበያ"],"pool":["ሱቅ","ገበያ","ከተማ"]},
 {"t":"mc","q":"Pick the word for city","o":["ከተማ","መንገድ","ሱቅ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ገበያ","o":["ገበያ","ሱቅ","ከተማ"],"a":0}
 ]},
-{"id":"am_t1_4","title":"The town in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["መንገድ","road"],["ሱቅ","shop"],["ገበያ","market"]]},
 {"t":"li","q":"Which one do you hear?","say":"ትምህርት ቤት","o":["ትምህርት ቤት","ገበያ","ከተማ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ትምህርት ቤት","school"],["ከተማ","city"]]},
 {"t":"mc","q":"Soap and sim cards at midnight come from…","o":["ሱቅ","ገበያ","ትምህርት ቤት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከተማ","o":["ከተማ","መንገድ","ገበያ"],"a":0}
 ]},
-{"id":"am_t1_5","title":"Checkpoint: the town","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"መንገድ means…","o":["road · street","market","corner"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሱቅ","o":["ሱቅ","ከተማ","ገበያ"],"a":0},
 {"t":"mc","q":"Which one means school?","o":["ትምህርት ቤት","መኝታ ቤት","ሽንት ቤት"],"a":0},
@@ -1905,7 +1905,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","እሄዳለሁ"],"a":0},
 {"t":"mc","q":"ነገ እመጣለሁ means…","o":["I will come tomorrow","I came yesterday","come tomorrow!"],"a":0}
 ]},
-{"id":"am_t2_2","title":"Hearing the motion","step":"recognize","meta":"Come and go by ear","vocab":[],"ex":[
+{"id":"am_t2_2","title":"Recognize","step":"recognize","meta":"Come and go by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እመጣለሁ"],"a":0},
 {"t":"mc","q":"What does እሄዳለሁ mean?","o":["I go","I come","go!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","እሄዳለሁ","ነይ"],"a":0},
@@ -1913,21 +1913,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ና","o":["ና","ነይ","እሄዳለሁ"],"a":0},
 {"t":"mc","q":"The -alehu on both verbs marks…","o":["I","you","now"],"a":0}
 ]},
-{"id":"am_t2_3","title":"Building the motion","step":"build","meta":"Set yourself moving","vocab":[],"ex":[
+{"id":"am_t2_3","title":"Build","step":"build","meta":"Set yourself moving","vocab":[],"ex":[
 {"t":"wb","q":"Build: I will come tomorrow","a":["ነገ","እመጣለሁ"],"pool":["ነገ","እመጣለሁ","እሄዳለሁ"]},
 {"t":"mc","q":"Pick: come! (to a woman)","o":["ነይ","ና","እመጣለሁ"],"a":0},
 {"t":"wb","q":"Build: today I go","a":["ዛሬ","እሄዳለሁ"],"pool":["ዛሬ","እሄዳለሁ","እመጣለሁ"]},
 {"t":"mc","q":"Pick: I go","o":["እሄዳለሁ","እመጣለሁ","ና"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እሄዳለሁ","o":["እሄዳለሁ","ና","እመጣለሁ"],"a":0}
 ]},
-{"id":"am_t2_4","title":"The motion in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እሄዳለሁ","I go"],["እመጣለሁ","I come"]]},
 {"t":"li","q":"Which one do you hear?","say":"ነይ","o":["ነይ","ና","እሄዳለሁ"],"a":0},
 {"t":"match","q":"Match the call to the person","pairs":[["ና","a man"],["ነይ","a woman"]]},
 {"t":"mc","q":"Called across the compound to a boy: …","o":["ና!","ነይ!","እመጣለሁ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እመጣለሁ","o":["እመጣለሁ","ነይ","እሄዳለሁ"],"a":0}
 ]},
-{"id":"am_t2_5","title":"Checkpoint: the motion","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እመጣለሁ means…","o":["I come","I go","come!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ና","o":["ና","ነይ","እመጣለሁ"],"a":0},
 {"t":"mc","q":"Which one means I go?","o":["እሄዳለሁ","እመጣለሁ","ነይ"],"a":0},
@@ -1949,7 +1949,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወደ","o":["ወደ","ወዴት"],"a":0},
 {"t":"mc","q":"ወደ sits…","o":["before its noun","after its noun","at the sentence end"],"a":0}
 ]},
-{"id":"am_t3_2","title":"Hearing where-to","step":"recognize","meta":"Directions by ear","vocab":[],"ex":[
+{"id":"am_t3_2","title":"Recognize","step":"recognize","meta":"Directions by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ወዴት","o":["ወዴት","ወደ","የት ነው?"],"a":0},
 {"t":"mc","q":"What does ወደ mean?","o":["to · toward","from","inside"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወዴት ትሄዳለህ?","ወደ"],"a":0},
@@ -1957,21 +1957,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወደ ቤት እሄዳለሁ","ወዴት"],"a":0},
 {"t":"mc","q":"The ti-…-eh wrap in ትሄዳለህ marks…","o":["you (a man)","I","she"],"a":0}
 ]},
-{"id":"am_t3_3","title":"Building where-to","step":"build","meta":"Frame and destination","vocab":[],"ex":[
+{"id":"am_t3_3","title":"Build","step":"build","meta":"Frame and destination","vocab":[],"ex":[
 {"t":"wb","q":"Build: I am going home","a":["ወደ","ቤት","እሄዳለሁ"],"pool":["ወደ","ቤት","እሄዳለሁ","ወዴት"]},
 {"t":"mc","q":"Pick the toward word","o":["ወደ","ወዴት","ውስጥ"],"a":0},
 {"t":"wb","q":"Build: I am going to the market","a":["ወደ","ገበያ","እሄዳለሁ"],"pool":["ወደ","ገበያ","እሄዳለሁ","ቤት"]},
 {"t":"wb","q":"Build: where are you going? (to a man)","a":["ወዴት","ትሄዳለህ?"],"pool":["ወዴት","ትሄዳለህ?","እሄዳለሁ"]},
 {"t":"li","q":"Which one do you hear?","say":"ወደ","o":["ወደ","ወዴት","ቤት"],"a":0}
 ]},
-{"id":"am_t3_4","title":"Where-to in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወዴት","where to?"],["ወደ","to · toward"],["ወደ ቤት እሄዳለሁ","I am going home"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወደ ቤት እሄዳለሁ","o":["ወደ ቤት እሄዳለሁ","ወደ","ወዴት ትሄዳለህ?"],"a":0},
 {"t":"match","q":"Match the little word to its position","pairs":[["ወደ","before the noun"],["ውስጥ","after the noun"]]},
 {"t":"mc","q":"ወዴት ትሄዳለህ? — ወደ ትምህርት ቤት. The man is heading…","o":["to school","to the shop","home"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወዴት","o":["ወዴት","ወደ ቤት እሄዳለሁ","ወደ"],"a":0}
 ]},
-{"id":"am_t3_5","title":"Checkpoint: where-to","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ወደ ቤት እሄዳለሁ means…","o":["I am going home","I am at home","come home!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወዴት ትሄዳለህ?","o":["ወዴት ትሄዳለህ?","ወዴት","ወደ"],"a":0},
 {"t":"mc","q":"ወዴት asks…","o":["where to?","from where?","where is it?"],"a":0},
@@ -1987,14 +1987,14 @@ const AM_LESSONS=[
 {"t":"note","tag":"How Addis moves","q":"ታክሲ and ወያላ","body":"<p>In Addis, <b>ታክሲ</b> <i>taksi</i> means the blue-white MINIBUS running fixed routes. Hanging from its door is the <b>ወያላ</b> <i>weyala</i> — the conductor — chanting destinations at speed and collecting fares. Listen for your stop in the chant.</p>","eg":[["ታክሲ","taksi","minibus taxi"],["ወያላ","weyala","conductor"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወያላ","o":["ወያላ","ታክሲ"],"a":0},
 {"t":"mc","q":"The ወያላ&rsquo;s job is…","o":["chanting routes and taking fares","driving","selling tickets at a booth"],"a":0},
-{"t":"note","tag":"The magic shout","q":"ወራጅ አለ!","body":"<p>To get off, shout <b>ወራጅ አለ!</b> <i>weraj alle!</i> — literally <i>there is a descender!</i> — your አለ from Zone 6 stopping traffic. The driver pulls over; you hop out; the chant resumes.</p>","eg":[["ወራጅ አለ!","weraj alle!","getting off! (someone is descending)"]]},
+{"t":"note","tag":"The getting-off shout","q":"ወራጅ አለ!","body":"<p>To get off, shout <b>ወራጅ አለ!</b> <i>weraj alle!</i> — literally <i>there is a descender!</i> — your አለ from Zone 6 stopping traffic. The driver pulls over; you hop out; the chant resumes.</p>","eg":[["ወራጅ አለ!","weraj alle!","getting off! (someone is descending)"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ወያላ"],"a":0},
 {"t":"mc","q":"ወራጅ አለ! literally announces…","o":["there is a descender","stop the car","open the door"],"a":0},
-{"t":"note","tag":"The little blue one","q":"ባጃጅ","body":"<p><b>ባጃጅ</b> <i>bajaj</i> — the three-wheeled tuk-tuk (named for its Indian maker) that rules the smaller towns where minibuses thin out. Cheap, loud, everywhere.</p>","eg":[["ባጃጅ","bajaj","three-wheeler"]]},
+{"t":"note","tag":"The three-wheeler","q":"ባጃጅ","body":"<p><b>ባጃጅ</b> <i>bajaj</i> — the three-wheeled tuk-tuk (named for its Indian maker) that rules the smaller towns where minibuses thin out. Cheap, loud, everywhere.</p>","eg":[["ባጃጅ","bajaj","three-wheeler"]]},
 {"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ታክሲ"],"a":0},
 {"t":"mc","q":"ባጃጅ means…","o":["the three-wheeler","the big bus","the bicycle"],"a":0}
 ]},
-{"id":"am_t4_2","title":"Hearing the ride","step":"recognize","meta":"Street transport by ear","vocab":[],"ex":[
+{"id":"am_t4_2","title":"Recognize","step":"recognize","meta":"Street transport by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ታክሲ","o":["ታክሲ","ባጃጅ","ወያላ"],"a":0},
 {"t":"mc","q":"What does ወያላ mean?","o":["conductor","driver","passenger"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ታክሲ","ባጃጅ"],"a":0},
@@ -2002,21 +2002,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ወራጅ አለ!","ታክሲ"],"a":0},
 {"t":"mc","q":"In Addis, ታክሲ usually means…","o":["a fixed-route minibus","a metered cab","a bus"],"a":0}
 ]},
-{"id":"am_t4_3","title":"Building the ride","step":"build","meta":"Board, ride, escape","vocab":[],"ex":[
+{"id":"am_t4_3","title":"Build","step":"build","meta":"Board, ride, escape","vocab":[],"ex":[
 {"t":"wb","q":"Build the shout: getting off!","a":["ወራጅ","አለ!"],"pool":["ወራጅ","አለ!","ወያላ"]},
 {"t":"mc","q":"Pick the conductor","o":["ወያላ","ታክሲ","ባጃጅ"],"a":0},
 {"t":"wb","q":"Build: I am going to the city by ride words","a":["ወደ","ከተማ","እሄዳለሁ"],"pool":["ወደ","ከተማ","እሄዳለሁ","ታክሲ"]},
 {"t":"mc","q":"Pick the minibus","o":["ታክሲ","ባጃጅ","ወያላ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ወያላ","o":["ወያላ","ባጃጅ","ወራጅ አለ!"],"a":0}
 ]},
-{"id":"am_t4_4","title":"The ride in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ታክሲ","minibus"],["ወያላ","conductor"],["ባጃጅ","three-wheeler"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወራጅ አለ!","o":["ወራጅ አለ!","ወያላ","ባጃጅ"],"a":0},
 {"t":"match","q":"Match the moment to the phrase","pairs":[["your stop approaches","ወራጅ አለ!"],["the fare is due","ወያላ"]]},
 {"t":"mc","q":"The አለ in ወራጅ አለ is the same አለ as in…","o":["ቡና አለ?","አለ ማን?","ወዴት አለ?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ታክሲ","o":["ታክሲ","ወራጅ አለ!","ወያላ"],"a":0}
 ]},
-{"id":"am_t4_5","title":"Checkpoint: the ride","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ወራጅ አለ! means…","o":["getting off!","all aboard!","hurry up!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ባጃጅ","o":["ባጃጅ","ታክሲ","ወያላ"],"a":0},
 {"t":"mc","q":"Which one chants the destinations?","o":["ወያላ","ታክሲ","ባጃጅ"],"a":0},
@@ -2039,7 +2039,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?"],"a":0},
 {"t":"mc","q":"በጣም ሩቅ ነው means…","o":["it is very far","it is a little far","it is near enough"],"a":0}
 ]},
-{"id":"am_t5_2","title":"Hearing the distance","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
+{"id":"am_t5_2","title":"Recognize","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሩቅ","o":["ሩቅ","ቅርብ","ቅርብ ነው?"],"a":0},
 {"t":"mc","q":"What does ቅርብ mean?","o":["near","far","here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0},
@@ -2047,21 +2047,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","በጣም ሩቅ ነው","ቅርብ"],"a":0},
 {"t":"mc","q":"ገበያው ሩቅ ነው means the market is…","o":["far","near","closed"],"a":0}
 ]},
-{"id":"am_t5_3","title":"Building the distance","step":"build","meta":"Measure before you march","vocab":[],"ex":[
+{"id":"am_t5_3","title":"Build","step":"build","meta":"Measure before you march","vocab":[],"ex":[
 {"t":"wb","q":"Build: is it near?","a":["ቅርብ","ነው?"],"pool":["ቅርብ","ነው?","ሩቅ"]},
 {"t":"mc","q":"Pick the word for far","o":["ሩቅ","ቅርብ","ወደ"],"a":0},
 {"t":"wb","q":"Build: it is very far","a":["በጣም","ሩቅ","ነው"],"pool":["በጣም","ሩቅ","ነው","ቅርብ"]},
 {"t":"mc","q":"Pick the word for near","o":["ቅርብ","ሩቅ","እዚህ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቅርብ","o":["ቅርብ","ሩቅ","ቅርብ ነው?"],"a":0}
 ]},
-{"id":"am_t5_4","title":"The distance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቅርብ","near"],["ሩቅ","far"]]},
 {"t":"li","q":"Which one do you hear?","say":"በጣም ሩቅ ነው","o":["በጣም ሩቅ ነው","ቅርብ ነው?","ሩቅ"],"a":0},
 {"t":"match","q":"Match the answer to the action","pairs":[["ቅርብ ነው","walk"],["በጣም ሩቅ ነው","taksi"]]},
 {"t":"mc","q":"ሽንት ቤት ቅርብ ነው? combines which two zones?","o":["home and distance","food and family","time and names"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሩቅ","o":["ሩቅ","ቅርብ","በጣም ሩቅ ነው"],"a":0}
 ]},
-{"id":"am_t5_5","title":"Checkpoint: the distance","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቅርብ ነው? asks…","o":["is it near?","is it far?","is it here?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቅርብ ነው?","o":["ቅርብ ነው?","ሩቅ","በጣም ሩቅ ነው"],"a":0},
 {"t":"mc","q":"Which one means far?","o":["ሩቅ","ቅርብ","እዚያ"],"a":0},
@@ -2084,7 +2084,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","ጠፋሁ"],"a":0},
 {"t":"mc","q":"The -u on መንገዱ works as…","o":["the","my","a"],"a":0}
 ]},
-{"id":"am_t6_2","title":"Hearing the rescue","step":"recognize","meta":"Lost-talk by ear","vocab":[],"ex":[
+{"id":"am_t6_2","title":"Recognize","step":"recognize","meta":"Lost-talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እርዳኝ","o":["እርዳኝ","ጠፋሁ","መንገዱ የት ነው?"],"a":0},
 {"t":"mc","q":"What does ጠፋሁ mean?","o":["I am lost","help me","I am late"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","እርዳኝ","ጠፋሁ"],"a":0},
@@ -2092,21 +2092,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","መንገዱ የት ነው?","እርዳኝ"],"a":0},
 {"t":"mc","q":"The lost-person opener, politely…","o":["ይቅርታ, ጠፋሁ","ቻው, ጠፋሁ","እሺ, እርዳኝ"],"a":0}
 ]},
-{"id":"am_t6_3","title":"Building the rescue","step":"build","meta":"The three-line lifeline","vocab":[],"ex":[
+{"id":"am_t6_3","title":"Build","step":"build","meta":"The three-line lifeline","vocab":[],"ex":[
 {"t":"wb","q":"Build: please help me (to a man)","a":["እባክህ","እርዳኝ"],"pool":["እባክህ","እርዳኝ","ጠፋሁ"]},
 {"t":"mc","q":"Pick: I am lost","o":["ጠፋሁ","እርዳኝ","ቅርብ"],"a":0},
 {"t":"wb","q":"Build: where is the road?","a":["መንገዱ","የት","ነው?"],"pool":["መንገዱ","የት","ነው?","ወዴት"]},
 {"t":"mc","q":"Pick: help me","o":["እርዳኝ","ጠፋሁ","ና"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እርዳኝ","o":["እርዳኝ","መንገዱ የት ነው?","ጠፋሁ"],"a":0}
 ]},
-{"id":"am_t6_4","title":"The rescue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጠፋሁ","I am lost"],["እርዳኝ","help me"],["መንገዱ የት ነው?","where is the road?"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","እርዳኝ","መንገዱ የት ነው?"],"a":0},
 {"t":"match","q":"Match the tefa","pairs":[["ጠፋሁ","I vanished (lost)"],["መብራት ጠፋ","the light vanished"]]},
 {"t":"mc","q":"Lost in Merkato, your full script is…","o":["ይቅርታ, ጠፋሁ — እባክህ እርዳኝ","ቻው — ወራጅ አለ!","እሺ — በቃኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መንገዱ የት ነው?","o":["መንገዱ የት ነው?","ጠፋሁ","እርዳኝ"],"a":0}
 ]},
-{"id":"am_t6_5","title":"Checkpoint: the rescue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_t6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እርዳኝ means…","o":["help me","save us","follow me"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጠፋሁ","o":["ጠፋሁ","መንገዱ የት ነው?","እርዳኝ"],"a":0},
 {"t":"mc","q":"The -u ending on mengedu means…","o":["the","my","this"],"a":0},
@@ -2122,14 +2122,14 @@ const AM_LESSONS=[
 {"t":"note","tag":"The rallying cry","q":"እንሂድ","body":"<p><b>እንሂድ</b> <i>inihid</i> — <i>let us go!</i> — cousin of እንብላ, let us eat. The inclusive in- makes plans out of company: come on, all of us, now.</p>","eg":[["እንሂድ","inihid","let us go"]]},
 {"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","እንብላ"],"a":0},
 {"t":"mc","q":"እንሂድ means…","o":["let us go","go away","I am going"],"a":0},
-{"t":"note","tag":"The brake","q":"ቀስ በል","body":"<p><b>ቀስ በል</b> <i>qes bel</i> — <i>slow down, take it easy</i> — said to a man (ቀስ በይ <i>qes bey</i> to a woman). To drivers, to fast talkers, to life. One of Amharic&rsquo;s most useful little levers.</p>","eg":[["ቀስ በል","qes bel","slow down (to a man)"]]},
+{"t":"note","tag":"Slowing down","q":"ቀስ በል","body":"<p><b>ቀስ በል</b> <i>qes bel</i> — <i>slow down, take it easy</i> — said to a man (ቀስ በይ <i>qes bey</i> to a woman). To drivers, to fast talkers, to life. One of Amharic&rsquo;s most useful little levers.</p>","eg":[["ቀስ በል","qes bel","slow down (to a man)"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","እንሂድ"],"a":0},
 {"t":"mc","q":"ቀስ በል tells someone to…","o":["slow down","speed up","turn around"],"a":0},
-{"t":"note","tag":"The pause button","q":"ቆይ","body":"<p><b>ቆይ</b> <i>qoy</i> — <i>wait</i> — one tight syllable that holds taxis, friends and arguments. ቆይ, ወያላ! — wait, conductor!</p>","eg":[["ቆይ","qoy","wait"]]},
+{"t":"note","tag":"The wait word","q":"ቆይ","body":"<p><b>ቆይ</b> <i>qoy</i> — <i>wait</i> — one tight syllable that holds taxis, friends and arguments. ቆይ, ወያላ! — wait, conductor!</p>","eg":[["ቆይ","qoy","wait"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","ቀስ በል"],"a":0},
 {"t":"mc","q":"ቆይ means…","o":["wait","hurry","stop forever"],"a":0}
 ]},
-{"id":"am_t7_2","title":"Hearing the go-words","step":"recognize","meta":"Momentum by ear","vocab":[],"ex":[
+{"id":"am_t7_2","title":"Recognize","step":"recognize","meta":"Momentum by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","ቆይ","እንሂድ"],"a":0},
 {"t":"mc","q":"What does ቆይ mean?","o":["wait","go","slow"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","ቀስ በል","ቆይ"],"a":0},
@@ -2137,21 +2137,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","እንሂድ","ቀስ በል"],"a":0},
 {"t":"mc","q":"እንሂድ and እንብላ share the in- of…","o":["let us","I will","you all"],"a":0}
 ]},
-{"id":"am_t7_3","title":"Building the go-words","step":"build","meta":"Momentum, managed","vocab":[],"ex":[
+{"id":"am_t7_3","title":"Build","step":"build","meta":"Momentum, managed","vocab":[],"ex":[
 {"t":"wb","q":"Build: let us go to the market","a":["ወደ","ገበያ","እንሂድ"],"pool":["ወደ","ገበያ","እንሂድ","ቆይ"]},
 {"t":"mc","q":"Pick: wait","o":["ቆይ","ቀስ በል","ና"],"a":0},
 {"t":"wb","q":"Build: slow down (to a man)","a":["ቀስ","በል"],"pool":["ቀስ","በል","ቆይ"]},
 {"t":"mc","q":"Pick: let us go","o":["እንሂድ","እንብላ","እሄዳለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንሂድ","o":["እንሂድ","ቆይ","ቀስ በል"],"a":0}
 ]},
-{"id":"am_t7_4","title":"The go-words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_t7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እንሂድ","let us go"],["ቀስ በል","slow down"],["ቆይ","wait"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቆይ","o":["ቆይ","ቀስ በል","እንሂድ"],"a":0},
 {"t":"match","q":"Match the moment to the word","pairs":[["the bajaj takes a corner too fast","ቀስ በል"],["the taksi starts to leave","ቆይ"]]},
 {"t":"mc","q":"Friends, coffee done, market waiting: …","o":["እንሂድ!","ቆይ!","ጠፋሁ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","እንሂድ","ቆይ"],"a":0}
 ]},
-{"id":"am_t7_5","title":"Checkpoint: Zone 7 complete","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
+{"id":"am_t7_5","title":"Checkpoint","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
 {"t":"mc","q":"እንሂድ means…","o":["let us go","I am going","go!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቀስ በል","o":["ቀስ በል","ቆይ","እንሂድ"],"a":0},
 {"t":"mc","q":"Review — the shout that stops the minibus…","o":["ወራጅ አለ!","ቀስ በል!","እንሂድ!"],"a":0},
@@ -2174,7 +2174,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ዋጋ"],"a":0},
 {"t":"mc","q":"ሳንቲም came from the French word…","o":["centime","sentiment","centre"],"a":0}
 ]},
-{"id":"am_m1_2","title":"Hearing the money","step":"recognize","meta":"Currency by ear","vocab":[],"ex":[
+{"id":"am_m1_2","title":"Recognize","step":"recognize","meta":"Currency by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ገንዘብ","o":["ገንዘብ","ብር","ዋጋ"],"a":0},
 {"t":"mc","q":"What does ገንዘብ mean?","o":["money","price","bank"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዋጋ","o":["ዋጋ","ሳንቲም","ገንዘብ"],"a":0},
@@ -2182,21 +2182,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ዋጋ","ሳንቲም"],"a":0},
 {"t":"mc","q":"አስር ብር means…","o":["ten birr","one coin","big money"],"a":0}
 ]},
-{"id":"am_m1_3","title":"Building the money","step":"build","meta":"Count the notes","vocab":[],"ex":[
+{"id":"am_m1_3","title":"Build","step":"build","meta":"Count the notes","vocab":[],"ex":[
 {"t":"wb","q":"Build: ten birr","a":["አስር","ብር"],"pool":["አስር","ብር","ዋጋ"]},
 {"t":"mc","q":"Pick the word for price","o":["ዋጋ","ብር","ገንዘብ"],"a":0},
 {"t":"wb","q":"Build: five birr","a":["አምስት","ብር"],"pool":["አምስት","ብር","ሳንቲም"]},
 {"t":"mc","q":"Pick the word for money","o":["ገንዘብ","ብር","ዋጋ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ገንዘብ","o":["ገንዘብ","ዋጋ","ብር"],"a":0}
 ]},
-{"id":"am_m1_4","title":"The money in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ብር","birr"],["ገንዘብ","money"],["ዋጋ","price"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሳንቲም","o":["ሳንቲም","ብር","ገንዘብ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሳንቲም","coin"],["ገበያ","market"]]},
 {"t":"mc","q":"Modern Ethiopian prices live mostly in…","o":["whole birr","santim","dollars"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዋጋ","o":["ዋጋ","ገንዘብ","ሳንቲም"],"a":0}
 ]},
-{"id":"am_m1_5","title":"Checkpoint: the money","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ገንዘብ means…","o":["money","silver","change"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ብር","o":["ብር","ሳንቲም","ዋጋ"],"a":0},
 {"t":"mc","q":"Which one means price?","o":["ዋጋ","ብር","ገንዘብ"],"a":0},
@@ -2219,7 +2219,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ዋጋ"],"a":0},
 {"t":"mc","q":"መልስ at the till means…","o":["change","receipt","discount"],"a":0}
 ]},
-{"id":"am_m2_2","title":"Hearing the price question","step":"recognize","meta":"Till talk by ear","vocab":[],"ex":[
+{"id":"am_m2_2","title":"Recognize","step":"recognize","meta":"Till talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","ስንት ነው?","መልስ"],"a":0},
 {"t":"mc","q":"What does መልስ mean?","o":["change","price","coin"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ይህ ስንት ነው?","ዋጋ"],"a":0},
@@ -2227,21 +2227,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ስንት ነው?","ብር"],"a":0},
 {"t":"mc","q":"Sint asks prices here and asked … in Zone 4","o":["the time","the way","names"],"a":0}
 ]},
-{"id":"am_m2_3","title":"Building the price question","step":"build","meta":"Ask like a shopper","vocab":[],"ex":[
+{"id":"am_m2_3","title":"Build","step":"build","meta":"Ask like a shopper","vocab":[],"ex":[
 {"t":"wb","q":"Build: how much is it?","a":["ስንት","ነው?"],"pool":["ስንት","ነው?","ይህ"]},
 {"t":"mc","q":"Pick the word for change","o":["መልስ","ዋጋ","ብር"],"a":0},
 {"t":"wb","q":"Build: how much is this?","a":["ይህ","ስንት","ነው?"],"pool":["ይህ","ስንት","ነው?","መልስ"]},
 {"t":"wb","q":"Build: how much is the bread? (dabo sint new?)","a":["ዳቦ","ስንት","ነው?"],"pool":["ዳቦ","ስንት","ነው?","ብር"]},
 {"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","መልስ","ይህ ስንት ነው?"],"a":0}
 ]},
-{"id":"am_m2_4","title":"The price question in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስንት ነው?","how much is it?"],["ይህ ስንት ነው?","how much is this?"],["መልስ","change"]]},
 {"t":"li","q":"Which one do you hear?","say":"ይህ ስንት ነው?","o":["ይህ ስንት ነው?","መልስ","ስንት ነው?"],"a":0},
 {"t":"match","q":"Match the question to its zone","pairs":[["ስንት ሰዓት ነው?","time"],["ስንት ነው?","price"]]},
 {"t":"mc","q":"Holding up a scarf at Merkato, you ask…","o":["ይህ ስንት ነው?","ማን ነው?","የት ነው?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መልስ","o":["መልስ","ይህ ስንት ነው?","ስንት ነው?"],"a":0}
 ]},
-{"id":"am_m2_5","title":"Checkpoint: the price question","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ይህ ስንት ነው? means…","o":["how much is this?","what is that?","how many are there?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስንት ነው?","o":["ስንት ነው?","ይህ ስንት ነው?","ዋጋ"],"a":0},
 {"t":"mc","q":"Which one means change?","o":["መልስ","ዋጋ","ሳንቲም"],"a":0},
@@ -2263,7 +2263,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እገዛለሁ"],"a":0},
 {"t":"mc","q":"ዳቦ እገዛለሁ means…","o":["I am buying bread","the bread is cheap","I baked bread"],"a":0}
 ]},
-{"id":"am_m3_2","title":"Hearing the wanting","step":"recognize","meta":"Wants and buys by ear","vocab":[],"ex":[
+{"id":"am_m3_2","title":"Recognize","step":"recognize","meta":"Wants and buys by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እገዛለሁ","o":["እገዛለሁ","እፈልጋለሁ","ውሃ እፈልጋለሁ"],"a":0},
 {"t":"mc","q":"What does እፈልጋለሁ mean?","o":["I want","I buy","I need money"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እፈልጋለሁ","እገዛለሁ"],"a":0},
@@ -2271,21 +2271,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","እገዛለሁ","ውሃ እፈልጋለሁ"],"a":0},
 {"t":"mc","q":"The thing you want goes…","o":["before the verb","after the verb","anywhere"],"a":0}
 ]},
-{"id":"am_m3_3","title":"Building the wanting","step":"build","meta":"Name it, want it","vocab":[],"ex":[
+{"id":"am_m3_3","title":"Build","step":"build","meta":"Name it, want it","vocab":[],"ex":[
 {"t":"wb","q":"Build: I want water","a":["ውሃ","እፈልጋለሁ"],"pool":["ውሃ","እፈልጋለሁ","እገዛለሁ"]},
 {"t":"mc","q":"Pick: I buy","o":["እገዛለሁ","እፈልጋለሁ","እሄዳለሁ"],"a":0},
 {"t":"wb","q":"Build: I want coffee","a":["ቡና","እፈልጋለሁ"],"pool":["ቡና","እፈልጋለሁ","ውሃ"]},
 {"t":"wb","q":"Build: I am buying bread","a":["ዳቦ","እገዛለሁ"],"pool":["ዳቦ","እገዛለሁ","እፈልጋለሁ"]},
 {"t":"li","q":"Which one do you hear?","say":"እገዛለሁ","o":["እገዛለሁ","ውሃ እፈልጋለሁ","እፈልጋለሁ"],"a":0}
 ]},
-{"id":"am_m3_4","title":"The wanting in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እፈልጋለሁ","I want"],["እገዛለሁ","I buy"],["ውሃ እፈልጋለሁ","I want water"]]},
 {"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","እገዛለሁ","ውሃ እፈልጋለሁ"],"a":0},
 {"t":"match","q":"Match the frame","pairs":[["ቡና እፈልጋለሁ","I want coffee"],["ዳቦ እገዛለሁ","I am buying bread"]]},
 {"t":"mc","q":"At the suk, your all-purpose opener is a noun plus…","o":["እፈልጋለሁ","ነው","አለ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ውሃ እፈልጋለሁ","o":["ውሃ እፈልጋለሁ","እፈልጋለሁ","እገዛለሁ"],"a":0}
 ]},
-{"id":"am_m3_5","title":"Checkpoint: the wanting","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እገዛለሁ means…","o":["I buy","I want","I take"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እፈልጋለሁ","o":["እፈልጋለሁ","ውሃ እፈልጋለሁ","እገዛለሁ"],"a":0},
 {"t":"mc","q":"ውሃ እፈልጋለሁ means…","o":["I want water","I bought water","water, please"],"a":0},
@@ -2297,18 +2297,18 @@ const AM_LESSONS=[
 ]},
 
 /* ---------- m4 · Expensive, cheap — and the magic word ---------- */
-{"id":"am_m4","title":"Expensive, cheap — and the magic word","step":"learn","meta":"Wid new — then qenes and smile","vocab":[["ውድ ነው","wid new","it is expensive"],["ርካሽ ነው","rikash new","it is cheap"],["ቀንስ","qenes","reduce it! (bargaining)"],["በጣም ውድ ነው","betam wid new","it is very expensive"]],"ex":[
+{"id":"am_m4","title":"Expensive, cheap — and bargaining","step":"learn","meta":"Wid new — then qenes and smile","vocab":[["ውድ ነው","wid new","it is expensive"],["ርካሽ ነው","rikash new","it is cheap"],["ቀንስ","qenes","reduce it! (bargaining)"],["በጣም ውድ ነው","betam wid new","it is very expensive"]],"ex":[
 {"t":"note","tag":"The shopper&rsquo;s verdicts","q":"ውድ ነው and ርካሽ ነው","body":"<p><b>ውድ ነው</b> <i>wid new</i> — <i>it is expensive</i> (wid also means <i>dear, beloved</i> — expensive things and dear people share a word). <b>ርካሽ ነው</b> <i>rikash new</i> — <i>it is cheap</i>.</p>","eg":[["ውድ ነው","wid new","it is expensive"],["ርካሽ ነው","rikash new","it is cheap"]]},
 {"t":"li","q":"Expensive or cheap — which do you hear?","say":"ውድ ነው","o":["ውድ ነው","ርካሽ ነው"],"a":0},
 {"t":"mc","q":"ውድ also means…","o":["dear · beloved","broken","rare"],"a":0},
 {"t":"note","tag":"Turning the dial","q":"በጣም ውድ ነው","body":"<p>Amplify with your betam: <b>በጣም ውድ ነው</b> <i>betam wid new</i> — <i>it is VERY expensive</i> — best delivered with theatrical disbelief. Bargaining at the gebeya is expected theater; at the suk, prices are mostly fixed.</p>","eg":[["በጣም ውድ ነው","betam wid new","it is very expensive"]]},
 {"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ውድ ነው"],"a":0},
 {"t":"mc","q":"Bargaining is expected at…","o":["the gebeya, not the suk","the suk, not the gebeya","banks"],"a":0},
-{"t":"note","tag":"The magic word","q":"ቀንስ","body":"<p><b>ቀንስ</b> <i>qenes</i> — <i>reduce it!</i> — the one-word engine of every negotiation, delivered warmly. ውድ ነው, ቀንስ! — it is expensive, come down! The seller expects it; the dance is the point.</p>","eg":[["ቀንስ","qenes","reduce it! (bargaining)"]]},
+{"t":"note","tag":"The bargaining word","q":"ቀንስ","body":"<p><b>ቀንስ</b> <i>qenes</i> — <i>reduce it!</i> — the one-word engine of every negotiation, delivered warmly. ውድ ነው, ቀንስ! — it is expensive, come down! The seller expects it; the dance is the point.</p>","eg":[["ቀንስ","qenes","reduce it! (bargaining)"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ርካሽ ነው"],"a":0},
 {"t":"mc","q":"ቀንስ asks the seller to…","o":["lower the price","wrap it up","weigh it"],"a":0}
 ]},
-{"id":"am_m4_2","title":"Hearing the verdicts","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
+{"id":"am_m4_2","title":"Recognize","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ርካሽ ነው","o":["ርካሽ ነው","ውድ ነው","ቀንስ"],"a":0},
 {"t":"mc","q":"What does ቀንስ mean?","o":["reduce it!","wrap it!","keep it!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ውድ ነው","o":["ውድ ነው","በጣም ውድ ነው","ርካሽ ነው"],"a":0},
@@ -2316,21 +2316,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በጣም ውድ ነው","o":["በጣም ውድ ነው","ውድ ነው","ቀንስ"],"a":0},
 {"t":"mc","q":"The bargaining dance is…","o":["expected theater","rude","rare"],"a":0}
 ]},
-{"id":"am_m4_3","title":"Building the verdicts","step":"build","meta":"Judge, then negotiate","vocab":[],"ex":[
+{"id":"am_m4_3","title":"Build","step":"build","meta":"Judge, then negotiate","vocab":[],"ex":[
 {"t":"wb","q":"Build: it is very expensive","a":["በጣም","ውድ","ነው"],"pool":["በጣም","ውድ","ነው","ቀንስ"]},
 {"t":"mc","q":"Pick the magic bargaining word","o":["ቀንስ","መልስ","ዋጋ"],"a":0},
 {"t":"wb","q":"Build: it is cheap","a":["ርካሽ","ነው"],"pool":["ርካሽ","ነው","ውድ"]},
 {"t":"wb","q":"Build: it is expensive — reduce it!","a":["ውድ","ነው","ቀንስ"],"pool":["ውድ","ነው","ቀንስ","ርካሽ"]},
 {"t":"li","q":"Which one do you hear?","say":"ርካሽ ነው","o":["ርካሽ ነው","ቀንስ","ውድ ነው"],"a":0}
 ]},
-{"id":"am_m4_4","title":"The verdicts in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ውድ ነው","expensive"],["ርካሽ ነው","cheap"],["ቀንስ","reduce it!"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ውድ ነው","ርካሽ ነው"],"a":0},
 {"t":"match","q":"Match the place to the pricing","pairs":[["ገበያ","negotiable"],["ሱቅ","mostly fixed"]]},
 {"t":"mc","q":"The full Merkato script: ይህ ስንት ነው? … በጣም ውድ ነው! …","o":["ቀንስ!","መልስ!","አለ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ውድ ነው","o":["ውድ ነው","ርካሽ ነው","በጣም ውድ ነው"],"a":0}
 ]},
-{"id":"am_m4_5","title":"Checkpoint: the verdicts","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቀንስ means…","o":["reduce it!","take it!","count it!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቀንስ","o":["ቀንስ","ውድ ነው","ርካሽ ነው"],"a":0},
 {"t":"mc","q":"Which one means it is expensive?","o":["ውድ ነው","ርካሽ ነው","ዋጋ ነው"],"a":0},
@@ -2352,7 +2352,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ስኳር"],"a":0},
 {"t":"mc","q":"Injera begins as a flour of…","o":["teff","wheat","corn"],"a":0}
 ]},
-{"id":"am_m5_2","title":"Hearing the list","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
+{"id":"am_m5_2","title":"Recognize","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
 {"t":"mc","q":"What does ስኳር mean?","o":["sugar","salt","flour"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ዱቄት","ዘይት"],"a":0},
@@ -2360,21 +2360,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ጨው","ዱቄት"],"a":0},
 {"t":"mc","q":"The tight consonant opens…","o":["ጨው","ስኳር","ዘይት"],"a":0}
 ]},
-{"id":"am_m5_3","title":"Building the list","step":"build","meta":"Fill the basket","vocab":[],"ex":[
+{"id":"am_m5_3","title":"Build","step":"build","meta":"Fill the basket","vocab":[],"ex":[
 {"t":"wb","q":"Build: I want sugar","a":["ስኳር","እፈልጋለሁ"],"pool":["ስኳር","እፈልጋለሁ","ጨው"]},
 {"t":"mc","q":"Pick the word for salt","o":["ጨው","ስኳር","ዘይት"],"a":0},
 {"t":"wb","q":"Build: is there oil? (zeyit alle?)","a":["ዘይት","አለ?"],"pool":["ዘይት","አለ?","የለም"]},
 {"t":"mc","q":"Pick the word for flour","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዘይት","o":["ዘይት","ስኳር","ጨው"],"a":0}
 ]},
-{"id":"am_m5_4","title":"The list in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስኳር","sugar"],["ጨው","salt"],["ዘይት","oil"]]},
 {"t":"li","q":"Which one do you hear?","say":"ዱቄት","o":["ዱቄት","ጨው","ስኳር"],"a":0},
 {"t":"match","q":"Match the staple to the dish","pairs":[["ዱቄት","ዳቦ"],["ስኳር","ቡና"]]},
 {"t":"mc","q":"ጨው አለ? — የለም. The shop is out of…","o":["salt","sugar","oil"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጨው","o":["ጨው","ዘይት","ዱቄት"],"a":0}
 ]},
-{"id":"am_m5_5","title":"Checkpoint: the list","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ዘይት means…","o":["oil","salt","butter"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስኳር","o":["ስኳር","ዱቄት","ጨው"],"a":0},
 {"t":"mc","q":"Which one means flour?","o":["ዱቄት","ዘይት","ስኳር"],"a":0},
@@ -2397,7 +2397,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ስኳር አለ?"],"a":0},
 {"t":"mc","q":"አንድ ኪሎ means…","o":["one kilo","one bag","one birr"],"a":0}
 ]},
-{"id":"am_m6_2","title":"Hearing the counter","step":"recognize","meta":"Requests by ear","vocab":[],"ex":[
+{"id":"am_m6_2","title":"Recognize","step":"recognize","meta":"Requests by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ስኳር አለ?","o":["ስኳር አለ?","አንድ ኪሎ","ይስጡኝ"],"a":0},
 {"t":"mc","q":"What does ይስጡኝ mean?","o":["please give me","please help me","please wait"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ይስጡኝ","ስኳር አለ?"],"a":0},
@@ -2405,21 +2405,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","ስኳር አለ?","አንድ ኪሎ"],"a":0},
 {"t":"mc","q":"The politeness in ይስጡኝ comes from…","o":["the erswo-style verb form","saying it twice","a bow"],"a":0}
 ]},
-{"id":"am_m6_3","title":"Building the counter","step":"build","meta":"The whole purchase","vocab":[],"ex":[
+{"id":"am_m6_3","title":"Build","step":"build","meta":"The whole purchase","vocab":[],"ex":[
 {"t":"wb","q":"Build: is there sugar?","a":["ስኳር","አለ?"],"pool":["ስኳር","አለ?","ይስጡኝ"]},
 {"t":"mc","q":"Pick: please give me","o":["ይስጡኝ","እርዳኝ","ቀንስ"],"a":0},
 {"t":"wb","q":"Build: one kilo of sugar, please","a":["አንድ","ኪሎ","ስኳር","ይስጡኝ"],"pool":["አንድ","ኪሎ","ስኳር","ይስጡኝ","አለ?"]},
 {"t":"wb","q":"Build: please give me salt","a":["ጨው","ይስጡኝ"],"pool":["ጨው","ይስጡኝ","ስኳር"]},
 {"t":"li","q":"Which one do you hear?","say":"ስኳር አለ?","o":["ስኳር አለ?","ይስጡኝ","አንድ ኪሎ"],"a":0}
 ]},
-{"id":"am_m6_4","title":"The counter in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይስጡኝ","please give me"],["ስኳር አለ?","is there sugar?"],["አንድ ኪሎ","one kilo"]]},
 {"t":"li","q":"Which one do you hear?","say":"ይስጡኝ","o":["ይስጡኝ","አንድ ኪሎ","ስኳር አለ?"],"a":0},
 {"t":"match","q":"Match the step to the phrase","pairs":[["check availability","ስኳር አለ?"],["make the request","ይስጡኝ"]]},
 {"t":"mc","q":"The complete counter visit, in order…","o":["ስኳር አለ? → አንድ ኪሎ ይስጡኝ → አመሰግናለሁ","ቀንስ → የለም → ቻው","ውድ ነው → አለ → እንሂድ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ስኳር አለ?","ይስጡኝ"],"a":0}
 ]},
-{"id":"am_m6_5","title":"Checkpoint: the counter","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_m6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ይስጡኝ means…","o":["please give me","I will take it","hand it over"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አንድ ኪሎ","o":["አንድ ኪሎ","ይስጡኝ","ስኳር አለ?"],"a":0},
 {"t":"mc","q":"ስኳር አለ? uses which little giant from Zone 6?","o":["አለ","ነው","ውስጥ"],"a":0},
@@ -2441,7 +2441,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሃምሳ","o":["ሃምሳ","ሃያ"],"a":0},
 {"t":"mc","q":"ሃያ ብር means…","o":["twenty birr","two birr","ten birr"],"a":0}
 ]},
-{"id":"am_m7_2","title":"Hearing the price numbers","step":"recognize","meta":"Big numbers by ear","vocab":[],"ex":[
+{"id":"am_m7_2","title":"Recognize","step":"recognize","meta":"Big numbers by ear","vocab":[],"ex":[
 {"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","መቶ","ሃያ"],"a":0},
 {"t":"mc","q":"What does ሃያ mean?","o":["twenty","fifty","hundred"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"መቶ","o":["መቶ","ሃያ","ሃምሳ"],"a":0},
@@ -2449,21 +2449,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"ሃያ","o":["ሃያ","ሃምሳ","መቶ"],"a":0},
 {"t":"mc","q":"Most everyday price answers arrive shaped like…","o":["ሃምሳ ብር","አንድ ሳንቲም","መቶ ኪሎ"],"a":0}
 ]},
-{"id":"am_m7_3","title":"Building the price numbers","step":"build","meta":"Prices out loud","vocab":[],"ex":[
+{"id":"am_m7_3","title":"Build","step":"build","meta":"Prices out loud","vocab":[],"ex":[
 {"t":"wb","q":"Build: fifty birr","a":["ሃምሳ","ብር"],"pool":["ሃምሳ","ብር","መቶ"]},
 {"t":"mc","q":"Pick: one hundred","o":["መቶ","ሃያ","ሃምሳ"],"a":0},
 {"t":"wb","q":"Build: twenty birr","a":["ሃያ","ብር"],"pool":["ሃያ","ብር","ሃምሳ"]},
 {"t":"wb","q":"Build: one hundred birr","a":["መቶ","ብር"],"pool":["መቶ","ብር","ሃያ"]},
 {"t":"li","q":"Which number do you hear?","say":"መቶ","o":["መቶ","ሃምሳ","ሃያ"],"a":0}
 ]},
-{"id":"am_m7_4","title":"The price numbers in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_m7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the number to its value","pairs":[["ሃያ","20"],["ሃምሳ","50"],["መቶ","100"]]},
 {"t":"li","q":"Which number do you hear?","say":"ሃያ","o":["ሃያ","መቶ","ሃምሳ"],"a":0},
 {"t":"match","q":"Match the exchange","pairs":[["ይህ ስንት ነው?","ሃምሳ ብር"],["ውድ ነው!","ቀንስ!"]]},
 {"t":"mc","q":"The scarf costs ሃምሳ ብር; you offer ሃያ; you might settle at…","o":["a number between","መቶ","ሳንቲም"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","ሃያ","መቶ"],"a":0}
 ]},
-{"id":"am_m7_5","title":"Checkpoint: Zone 8 complete","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
+{"id":"am_m7_5","title":"Checkpoint","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
 {"t":"mc","q":"መቶ means…","o":["hundred","fifty","thousand"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"ሃምሳ","o":["ሃምሳ","መቶ","ሃያ"],"a":0},
 {"t":"mc","q":"Review — ይህ ስንት ነው? asks…","o":["how much is this?","what is this?","is this cheap?"],"a":0},
@@ -2485,7 +2485,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ"],"a":0},
 {"t":"mc","q":"Beyond work, ስራ also covers…","o":["making and doing","resting","selling"],"a":0}
 ]},
-{"id":"am_w1_2","title":"Hearing the work","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
+{"id":"am_w1_2","title":"Recognize","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ","የት ትሰራለህ?"],"a":0},
 {"t":"mc","q":"What does ስራ mean?","o":["work · job","office","worker"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"የት ትሰራለህ?","o":["የት ትሰራለህ?","እሰራለሁ","ስራ"],"a":0},
@@ -2493,21 +2493,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","የት ትሰራለህ?","እሰራለሁ"],"a":0},
 {"t":"mc","q":"The ti-…-eh wrap marks…","o":["you (a man)","I","we"],"a":0}
 ]},
-{"id":"am_w1_3","title":"Building the work","step":"build","meta":"Employment in parts","vocab":[],"ex":[
+{"id":"am_w1_3","title":"Build","step":"build","meta":"Employment in parts","vocab":[],"ex":[
 {"t":"wb","q":"Build: where do you work? (to a man)","a":["የት","ትሰራለህ?"],"pool":["የት","ትሰራለህ?","እሰራለሁ"]},
 {"t":"mc","q":"Pick: I work","o":["እሰራለሁ","ስራ","ትሰራለህ?"],"a":0},
 {"t":"wb","q":"Build: I work in the city","a":["ከተማ","ውስጥ","እሰራለሁ"],"pool":["ከተማ","ውስጥ","እሰራለሁ","ስራ"]},
 {"t":"mc","q":"Pick the word for work","o":["ስራ","ሱቅ","ገንዘብ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"የት ትሰራለህ?","o":["የት ትሰራለህ?","ስራ","እሰራለሁ"],"a":0}
 ]},
-{"id":"am_w1_4","title":"The work in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ስራ","work"],["እሰራለሁ","I work"],["የት ትሰራለህ?","where do you work?"]]},
 {"t":"li","q":"Which one do you hear?","say":"ስራ","o":["ስራ","እሰራለሁ","የት ትሰራለህ?"],"a":0},
 {"t":"match","q":"Match the wrap to the person","pairs":[["እሰራለሁ","I"],["ትሰራለህ","you (man)"]]},
 {"t":"mc","q":"Small talk order in Ethiopia: greetings, then usually…","o":["የት ትሰራለህ?","ስንት ነው?","ወራጅ አለ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","የት ትሰራለህ?","ስራ"],"a":0}
 ]},
-{"id":"am_w1_5","title":"Checkpoint: the work","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ስራ means…","o":["work · job","salary","office"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እሰራለሁ","o":["እሰራለሁ","ስራ","የት ትሰራለህ?"],"a":0},
 {"t":"mc","q":"Which one asks where do you work?","o":["የት ትሰራለህ?","ወዴት ትሄዳለህ?","ምን ነው?"],"a":0},
@@ -2529,7 +2529,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪዎች"],"a":0},
 {"t":"mc","q":"After a vowel, -och becomes…","o":["-woch","-yoch","-koch"],"a":0}
 ]},
-{"id":"am_w2_2","title":"Hearing the classroom","step":"recognize","meta":"Desk sides by ear","vocab":[],"ex":[
+{"id":"am_w2_2","title":"Recognize","step":"recognize","meta":"Desk sides by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪ","ተማሪዎች"],"a":0},
 {"t":"mc","q":"What does ተማሪ mean?","o":["student","teacher","school"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","አስተማሪ","ተማሪ"],"a":0},
@@ -2537,21 +2537,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","ተማሪዎች","አስተማሪ"],"a":0},
 {"t":"mc","q":"The as- prefix turns learn into…","o":["make-learn (teach)","learn again","learn badly"],"a":0}
 ]},
-{"id":"am_w2_3","title":"Building the classroom","step":"build","meta":"Both sides of the desk","vocab":[],"ex":[
+{"id":"am_w2_3","title":"Build","step":"build","meta":"Both sides of the desk","vocab":[],"ex":[
 {"t":"wb","q":"Build: teacher (as + temari)","a":["አስ","ተማሪ"],"pool":["አስ","ተማሪ","ዎች"]},
 {"t":"mc","q":"Pick: students","o":["ተማሪዎች","ተማሪ","አስተማሪ"],"a":0},
 {"t":"wb","q":"Build: students (temari + woch)","a":["ተማሪ","ዎች"],"pool":["ተማሪ","ዎች","አስ"]},
 {"t":"mc","q":"Pick: student","o":["ተማሪ","አስተማሪ","ተማሪዎች"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","ተማሪ","አስተማሪ"],"a":0}
 ]},
-{"id":"am_w2_4","title":"The classroom in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ተማሪ","student"],["አስተማሪ","teacher"],["ተማሪዎች","students"]]},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ","o":["ተማሪ","አስተማሪ","ተማሪዎች"],"a":0},
 {"t":"match","q":"Match singular to plural","pairs":[["ተማሪ","ተማሪዎች"],["ሰው","ሰዎች"]]},
 {"t":"mc","q":"They all meet at the…","o":["ትምህርት ቤት","ማድቤት","ሽንት ቤት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አስተማሪ","o":["አስተማሪ","ተማሪዎች","ተማሪ"],"a":0}
 ]},
-{"id":"am_w2_5","title":"Checkpoint: the classroom","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አስተማሪ means…","o":["teacher","student","principal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪዎች","o":["ተማሪዎች","አስተማሪ","ተማሪ"],"a":0},
 {"t":"mc","q":"Which one means students?","o":["ተማሪዎች","ተማሪ","አስተማሪዎች"],"a":0},
@@ -2574,7 +2574,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ"],"a":0},
 {"t":"mc","q":"መጽሐፍ means…","o":["book","paper","pen"],"a":0}
 ]},
-{"id":"am_w3_2","title":"Hearing the learning","step":"recognize","meta":"Study by ear","vocab":[],"ex":[
+{"id":"am_w3_2","title":"Recognize","step":"recognize","meta":"Study by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","እማራለሁ","መጽሐፍ"],"a":0},
 {"t":"mc","q":"What does መጽሐፍ mean?","o":["book","school","letter"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","አማርኛ እማራለሁ","መጽሐፍ"],"a":0},
@@ -2582,21 +2582,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","እማራለሁ","አማርኛ እማራለሁ"],"a":0},
 {"t":"mc","q":"temari, astemari and imaralehu all share the root of…","o":["learning","working","reading"],"a":0}
 ]},
-{"id":"am_w3_3","title":"Building the learning","step":"build","meta":"The sentence that smiles back","vocab":[],"ex":[
+{"id":"am_w3_3","title":"Build","step":"build","meta":"The sentence that smiles back","vocab":[],"ex":[
 {"t":"wb","q":"Build: I am learning Amharic","a":["አማርኛ","እማራለሁ"],"pool":["አማርኛ","እማራለሁ","መጽሐፍ"]},
 {"t":"mc","q":"Pick the word for book","o":["መጽሐፍ","ተማሪ","ወንበር"],"a":0},
 {"t":"wb","q":"Build: I want a book","a":["መጽሐፍ","እፈልጋለሁ"],"pool":["መጽሐፍ","እፈልጋለሁ","እማራለሁ"]},
 {"t":"mc","q":"Pick: I learn","o":["እማራለሁ","እሰራለሁ","እገዛለሁ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አማርኛ እማራለሁ","o":["አማርኛ እማራለሁ","መጽሐፍ","እማራለሁ"],"a":0}
 ]},
-{"id":"am_w3_4","title":"The learning in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እማራለሁ","I learn"],["አማርኛ እማራለሁ","I am learning Amharic"],["መጽሐፍ","book"]]},
 {"t":"li","q":"Which one do you hear?","say":"መጽሐፍ","o":["መጽሐፍ","አማርኛ እማራለሁ","እማራለሁ"],"a":0},
 {"t":"match","q":"Match the root family","pairs":[["ተማሪ","the learner"],["አስተማሪ","the make-learner"],["እማራለሁ","I learn"]]},
 {"t":"mc","q":"The taxi driver asks why you speak Amharic; you say…","o":["አማርኛ እማራለሁ","ተማሪዎች","መጽሐፍ አለ?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","መጽሐፍ","አማርኛ እማራለሁ"],"a":0}
 ]},
-{"id":"am_w3_5","title":"Checkpoint: the learning","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አማርኛ እማራለሁ means…","o":["I am learning Amharic","Amharic is easy","I know Amharic"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እማራለሁ","o":["እማራለሁ","አማርኛ እማራለሁ","እሰራለሁ"],"a":0},
 {"t":"mc","q":"Which one means book?","o":["መጽሐፍ","ተማሪ","ወረቀት"],"a":0},
@@ -2619,7 +2619,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ስልክ"],"a":0},
 {"t":"mc","q":"ኮምፒውተር means…","o":["computer","calculator","printer"],"a":0}
 ]},
-{"id":"am_w4_2","title":"Hearing the tools","step":"recognize","meta":"Desk kit by ear","vocab":[],"ex":[
+{"id":"am_w4_2","title":"Recognize","step":"recognize","meta":"Desk kit by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","እስክሪብቶ","ስልክ"],"a":0},
 {"t":"mc","q":"What does ስልክ mean?","o":["phone","pen","wire"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ወረቀት","ስልክ"],"a":0},
@@ -2627,21 +2627,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","ኮምፒውተር","ወረቀት"],"a":0},
 {"t":"mc","q":"Loanwords in Amharic…","o":["dress in fidel and behave normally","stay in Latin letters","are avoided"],"a":0}
 ]},
-{"id":"am_w4_3","title":"Building the tools","step":"build","meta":"Kit the desk","vocab":[],"ex":[
+{"id":"am_w4_3","title":"Build","step":"build","meta":"Kit the desk","vocab":[],"ex":[
 {"t":"wb","q":"Build: pen and paper","a":["እስክሪብቶ","ወረቀት"],"pool":["እስክሪብቶ","ወረቀት","ስልክ"]},
 {"t":"mc","q":"Pick the phone","o":["ስልክ","ኮምፒውተር","እስክሪብቶ"],"a":0},
 {"t":"wb","q":"Build: I want a pen","a":["እስክሪብቶ","እፈልጋለሁ"],"pool":["እስክሪብቶ","እፈልጋለሁ","ወረቀት"]},
 {"t":"mc","q":"Pick the computer","o":["ኮምፒውተር","ስልክ","ወረቀት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ስልክ","o":["ስልክ","እስክሪብቶ","ኮምፒውተር"],"a":0}
 ]},
-{"id":"am_w4_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እስክሪብቶ","pen"],["ወረቀት","paper"],["ስልክ","phone"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወረቀት","o":["ወረቀት","ስልክ","ኮምፒውተር"],"a":0},
 {"t":"match","q":"Match the tool to the era","pairs":[["እስክሪብቶ","the 1930s"],["ኮምፒውተር","today"]]},
 {"t":"mc","q":"This very app lives inside your…","o":["ስልክ","ወረቀት","መጽሐፍ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ኮምፒውተር","o":["ኮምፒውተር","ወረቀት","እስክሪብቶ"],"a":0}
 ]},
-{"id":"am_w4_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ወረቀት means…","o":["paper","pen","page"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እስክሪብቶ","o":["እስክሪብቶ","ስልክ","ወረቀት"],"a":0},
 {"t":"mc","q":"Which one means phone?","o":["ስልክ","ኮምፒውተር","እስክሪብቶ"],"a":0},
@@ -2664,7 +2664,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል"],"a":0},
 {"t":"mc","q":"Ethiopian hotels are often known for…","o":["their food","their pools","their gardens"],"a":0}
 ]},
-{"id":"am_w5_2","title":"Hearing the workplaces","step":"recognize","meta":"Institutions by ear","vocab":[],"ex":[
+{"id":"am_w5_2","title":"Recognize","step":"recognize","meta":"Institutions by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ባንክ","o":["ባንክ","ቢሮ","ሆቴል"],"a":0},
 {"t":"mc","q":"What does ቢሮ mean?","o":["office","bureau drawer","bank"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል","ባንክ"],"a":0},
@@ -2672,21 +2672,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቢሮ","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
 {"t":"mc","q":"ሆስፒታል and ሆቴል differ by…","o":["their endings","their first letter","nothing"],"a":0}
 ]},
-{"id":"am_w5_3","title":"Building the workplaces","step":"build","meta":"The town&rsquo;s pillars","vocab":[],"ex":[
+{"id":"am_w5_3","title":"Build","step":"build","meta":"The town&rsquo;s pillars","vocab":[],"ex":[
 {"t":"wb","q":"Build: where is the bank?","a":["ባንክ","የት","ነው?"],"pool":["ባንክ","የት","ነው?","ቢሮ"]},
 {"t":"mc","q":"Pick the office","o":["ቢሮ","ባንክ","ሆቴል"],"a":0},
 {"t":"wb","q":"Build: I work in an office","a":["ቢሮ","ውስጥ","እሰራለሁ"],"pool":["ቢሮ","ውስጥ","እሰራለሁ","ባንክ"]},
 {"t":"mc","q":"Pick the hotel","o":["ሆቴል","ሆስፒታል","ቢሮ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሆስፒታል","o":["ሆስፒታል","ሆቴል","ባንክ"],"a":0}
 ]},
-{"id":"am_w5_4","title":"The workplaces in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቢሮ","office"],["ባንክ","bank"],["ሆቴል","hotel"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ባንክ","ሆስፒታል"],"a":0},
 {"t":"match","q":"Match the need to the place","pairs":[["money","ባንክ"],["a bed","ሆቴል"],["a doctor","ሆስፒታል"]]},
 {"t":"mc","q":"ቢሮ ውስጥ እሰራለሁ uses which Zone-6 word?","o":["ውስጥ","አለ","ወደ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ባንክ","o":["ባንክ","ቢሮ","ሆቴል"],"a":0}
 ]},
-{"id":"am_w5_5","title":"Checkpoint: the workplaces","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቢሮ means…","o":["office","bank","office chair"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሆቴል","o":["ሆቴል","ሆስፒታል","ቢሮ"],"a":0},
 {"t":"mc","q":"Which one is the hospital?","o":["ሆስፒታል","ሆቴል","ባንክ"],"a":0},
@@ -2708,7 +2708,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት"],"a":0},
 {"t":"mc","q":"ከሰኞ እስከ ዓርብ እሰራለሁ means…","o":["I work Monday to Friday","I rest Monday to Friday","Monday is far from Friday"],"a":0}
 ]},
-{"id":"am_w6_2","title":"Hearing the week","step":"recognize","meta":"Schedules by ear","vocab":[],"ex":[
+{"id":"am_w6_2","title":"Recognize","step":"recognize","meta":"Schedules by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት","ከሰኞ እስከ ዓርብ"],"a":0},
 {"t":"mc","q":"What does ዕረፍት mean?","o":["rest · break","work","weekend only"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ","ዕረፍት"],"a":0},
@@ -2716,21 +2716,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","ከሰኞ እስከ ዓርብ","እስከ"],"a":0},
 {"t":"mc","q":"The ke- in ከሰኞ is the same ke- as in…","o":["ከየት","ቀንስ","ኪሎ"],"a":0}
 ]},
-{"id":"am_w6_3","title":"Building the week","step":"build","meta":"Schedule yourself","vocab":[],"ex":[
+{"id":"am_w6_3","title":"Build","step":"build","meta":"Schedule yourself","vocab":[],"ex":[
 {"t":"wb","q":"Build: from Monday to Friday","a":["ከሰኞ","እስከ","ዓርብ"],"pool":["ከሰኞ","እስከ","ዓርብ","ዕረፍት"]},
 {"t":"mc","q":"Pick the word for rest","o":["ዕረፍት","እስከ","ስራ"],"a":0},
 {"t":"wb","q":"Build: from Monday to Friday I work","a":["ከሰኞ","እስከ","ዓርብ","እሰራለሁ"],"pool":["ከሰኞ","እስከ","ዓርብ","እሰራለሁ","ዕረፍት"]},
 {"t":"mc","q":"Pick the word for until","o":["እስከ","ከ","ውስጥ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","ዕረፍት","እስከ"],"a":0}
 ]},
-{"id":"am_w6_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እስከ","until"],["ከሰኞ እስከ ዓርብ","Monday to Friday"],["ዕረፍት","rest"]]},
 {"t":"li","q":"Which one do you hear?","say":"ዕረፍት","o":["ዕረፍት","እስከ","ከሰኞ እስከ ዓርብ"],"a":0},
 {"t":"match","q":"Match the day to its role","pairs":[["ከሰኞ እስከ ዓርብ","ስራ"],["እሁድ","ዕረፍት"]]},
 {"t":"mc","q":"ከጠዋት እስከ ማታ would mean…","o":["from morning until evening","every morning","tomorrow evening"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እስከ","o":["እስከ","ዕረፍት","ከሰኞ እስከ ዓርብ"],"a":0}
 ]},
-{"id":"am_w6_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_w6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ዕረፍት means…","o":["rest · break","overtime","meeting"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ከሰኞ እስከ ዓርብ","o":["ከሰኞ እስከ ዓርብ","እስከ","ዕረፍት"],"a":0},
 {"t":"mc","q":"እስከ means…","o":["until","from","since"],"a":0},
@@ -2752,7 +2752,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?"],"a":0},
 {"t":"mc","q":"ተማሪ ነኝ means…","o":["I am a student","I was a student","students exist"],"a":0}
 ]},
-{"id":"am_w7_2","title":"Hearing the what","step":"recognize","meta":"Careers by ear","vocab":[],"ex":[
+{"id":"am_w7_2","title":"Recognize","step":"recognize","meta":"Careers by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?","ምን"],"a":0},
 {"t":"mc","q":"What does ምን mean?","o":["what","who","where"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ምን","o":["ምን","ማን","ምን ትሰራለህ?"],"a":0},
@@ -2760,21 +2760,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Listen closely — min or man?","say":"ምን ትሰራለህ?","o":["ምን ትሰራለህ?","ማን ነው?"],"a":0},
 {"t":"mc","q":"Your four question words are man, yet, sint and…","o":["ምን","ነው","እስከ"],"a":0}
 ]},
-{"id":"am_w7_3","title":"Building the what","step":"build","meta":"Ask and answer the career question","vocab":[],"ex":[
+{"id":"am_w7_3","title":"Build","step":"build","meta":"Ask and answer the career question","vocab":[],"ex":[
 {"t":"wb","q":"Build: what do you do? (to a man)","a":["ምን","ትሰራለህ?"],"pool":["ምን","ትሰራለህ?","ነኝ"]},
 {"t":"mc","q":"Pick: I am a student","o":["ተማሪ ነኝ","ተማሪ ነው","አስተማሪ ነኝ"],"a":0},
 {"t":"wb","q":"Build: I am a student","a":["ተማሪ","ነኝ"],"pool":["ተማሪ","ነኝ","ምን"]},
 {"t":"wb","q":"Build: I am a teacher","a":["አስተማሪ","ነኝ"],"pool":["አስተማሪ","ነኝ","ተማሪ"]},
 {"t":"li","q":"Which one do you hear?","say":"ምን ትሰራለህ?","o":["ምን ትሰራለህ?","ተማሪ ነኝ","ምን"],"a":0}
 ]},
-{"id":"am_w7_4","title":"The what in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_w7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ምን","what"],["ምን ትሰራለህ?","what do you do?"],["ተማሪ ነኝ","I am a student"]]},
 {"t":"li","q":"Which one do you hear?","say":"ምን","o":["ምን","ተማሪ ነኝ","ምን ትሰራለህ?"],"a":0},
 {"t":"match","q":"Match the question word to its ask","pairs":[["ማን","who"],["ምን","what"],["የት","where"]]},
 {"t":"mc","q":"ምን ትሰራለህ? — አስተማሪ ነኝ. The man is…","o":["a teacher","a student","an office worker"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን","ምን ትሰራለህ?"],"a":0}
 ]},
-{"id":"am_w7_5","title":"Checkpoint: Zone 9 complete","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
+{"id":"am_w7_5","title":"Checkpoint","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ምን ትሰራለህ? asks…","o":["what do you do?","where do you go?","who are you?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተማሪ ነኝ","o":["ተማሪ ነኝ","ምን ትሰራለህ?","አስተማሪ"],"a":0},
 {"t":"mc","q":"Review — the make-learn teacher is…","o":["አስተማሪ","ተማሪ","ተማሪዎች"],"a":0},
@@ -2797,7 +2797,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ"],"a":0},
 {"t":"mc","q":"ሆድ means…","o":["stomach","chest","back"],"a":0}
 ]},
-{"id":"am_b1_2","title":"Hearing the body","step":"recognize","meta":"Parts by ear","vocab":[],"ex":[
+{"id":"am_b1_2","title":"Recognize","step":"recognize","meta":"Parts by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እግር","o":["እግር","እጅ","ሆድ"],"a":0},
 {"t":"mc","q":"What does ራስ mean?","o":["head","hand","hair"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","ራስ","እግር"],"a":0},
@@ -2805,21 +2805,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","ሆድ","እጅ"],"a":0},
 {"t":"mc","q":"The injera hand is…","o":["the right","the left","either"],"a":0}
 ]},
-{"id":"am_b1_3","title":"Building the body","step":"build","meta":"Assemble yourself","vocab":[],"ex":[
+{"id":"am_b1_3","title":"Build","step":"build","meta":"Assemble yourself","vocab":[],"ex":[
 {"t":"wb","q":"Build: head and stomach","a":["ራስ","ሆድ"],"pool":["ራስ","ሆድ","እጅ"]},
 {"t":"mc","q":"Pick the word for foot","o":["እግር","እጅ","ራስ"],"a":0},
 {"t":"wb","q":"Build: hand and foot","a":["እጅ","እግር"],"pool":["እጅ","እግር","ሆድ"]},
 {"t":"mc","q":"Pick the word for stomach","o":["ሆድ","ራስ","እግር"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እጅ","o":["እጅ","እግር","ራስ"],"a":0}
 ]},
-{"id":"am_b1_4","title":"The body in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ራስ","head"],["እጅ","hand"],["እግር","foot"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሆድ","o":["ሆድ","እግር","ራስ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሆድ","stomach"],["ራስ","self"]]},
 {"t":"mc","q":"ራበኝ speaks for which part?","o":["ሆድ","ራስ","እጅ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እግር","o":["እግር","ሆድ","እጅ"],"a":0}
 ]},
-{"id":"am_b1_5","title":"Checkpoint: the body","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"እጅ means…","o":["hand","foot","arm"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ራስ","o":["ራስ","እጅ","ሆድ"],"a":0},
 {"t":"mc","q":"Which one means stomach?","o":["ሆድ","እግር","ራስ"],"a":0},
@@ -2841,7 +2841,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","ዓይን"],"a":0},
 {"t":"mc","q":"አፍ means…","o":["mouth","nose","lip"],"a":0}
 ]},
-{"id":"am_b2_2","title":"Hearing the face","step":"recognize","meta":"Features by ear","vocab":[],"ex":[
+{"id":"am_b2_2","title":"Recognize","step":"recognize","meta":"Features by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አፍ","o":["አፍ","አፍንጫ","ዓይን"],"a":0},
 {"t":"mc","q":"What does ዓይን mean?","o":["eye","ear","face"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አፍንጫ","o":["አፍንጫ","አፍ","ጆሮ"],"a":0},
@@ -2849,21 +2849,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","ጆሮ","አፍ"],"a":0},
 {"t":"mc","q":"Listening exercises train your…","o":["ጆሮ","ዓይን","አፍ"],"a":0}
 ]},
-{"id":"am_b2_3","title":"Building the face","step":"build","meta":"Feature by feature","vocab":[],"ex":[
+{"id":"am_b2_3","title":"Build","step":"build","meta":"Feature by feature","vocab":[],"ex":[
 {"t":"wb","q":"Build: eye and ear","a":["ዓይን","ጆሮ"],"pool":["ዓይን","ጆሮ","አፍ"]},
 {"t":"mc","q":"Pick the word for nose","o":["አፍንጫ","አፍ","ጆሮ"],"a":0},
 {"t":"wb","q":"Build: mouth, then nose","a":["አፍ","አፍንጫ"],"pool":["አፍ","አፍንጫ","ዓይን"]},
 {"t":"mc","q":"Pick the word for eye","o":["ዓይን","ጆሮ","አፍንጫ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አፍ","o":["አፍ","ዓይን","አፍንጫ"],"a":0}
 ]},
-{"id":"am_b2_4","title":"The face in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዓይን","eye"],["ጆሮ","ear"],["አፍ","mouth"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጆሮ","o":["ጆሮ","አፍንጫ","ዓይን"],"a":0},
 {"t":"match","q":"Match the part to its work","pairs":[["ዓይን","reading fidel"],["ጆሮ","hearing clips"],["አፍ","speaking"]]},
 {"t":"mc","q":"አፍንጫ contains af because the nose sits…","o":["above the mouth","below the eyes","beside the ear"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አፍንጫ","o":["አፍንጫ","ጆሮ","አፍ"],"a":0}
 ]},
-{"id":"am_b2_5","title":"Checkpoint: the face","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ጆሮ means…","o":["ear","eye","nose"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዓይን","o":["ዓይን","አፍ","ጆሮ"],"a":0},
 {"t":"mc","q":"Which one means nose?","o":["አፍንጫ","አፍ","ዓይን"],"a":0},
@@ -2886,7 +2886,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","አመመኝ"],"a":0},
 {"t":"mc","q":"ራሴን አመመኝ means…","o":["my head hurts","I hurt my head","heads hurt"],"a":0}
 ]},
-{"id":"am_b3_2","title":"Hearing the hurt","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
+{"id":"am_b3_2","title":"Recognize","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","ራሴን አመመኝ","አመመኝ"],"a":0},
 {"t":"mc","q":"What does አመመኝ mean?","o":["I am sick","I am tired","I am sad"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","ህመም","አመመኝ"],"a":0},
@@ -2894,21 +2894,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ህመም","ራሴን አመመኝ"],"a":0},
 {"t":"mc","q":"ሆዴን አመመኝ would mean…","o":["my stomach hurts","my head hurts","my foot hurts"],"a":0}
 ]},
-{"id":"am_b3_3","title":"Building the hurt","step":"build","meta":"Say where it hurts","vocab":[],"ex":[
+{"id":"am_b3_3","title":"Build","step":"build","meta":"Say where it hurts","vocab":[],"ex":[
 {"t":"wb","q":"Build: my head hurts","a":["ራሴን","አመመኝ"],"pool":["ራሴን","አመመኝ","ህመም"]},
 {"t":"mc","q":"Pick the word for pain","o":["ህመም","አመመኝ","ራሴን"],"a":0},
 {"t":"wb","q":"Build the word: it pained me","a":["አመመ","ኝ"],"pool":["አመመ","ኝ","ህመም"]},
 {"t":"mc","q":"Pick: I am sick","o":["አመመኝ","ራበኝ","ጠማኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ራሴን አመመኝ","o":["ራሴን አመመኝ","አመመኝ","ህመም"],"a":0}
 ]},
-{"id":"am_b3_4","title":"The hurt in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አመመኝ","I am sick"],["ህመም","pain"],["ራሴን አመመኝ","my head hurts"]]},
 {"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ራሴን አመመኝ","ህመም"],"a":0},
 {"t":"match","q":"Match the -egn family","pairs":[["ራበኝ","hunger got me"],["ጠማኝ","thirst got me"],["አመመኝ","sickness got me"]]},
 {"t":"mc","q":"የራስ ህመም is literally…","o":["head-pain (a headache)","brain fever","hair trouble"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ህመም","o":["ህመም","አመመኝ","ራሴን አመመኝ"],"a":0}
 ]},
-{"id":"am_b3_5","title":"Checkpoint: the hurt","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ራሴን አመመኝ means…","o":["my head hurts","I am dizzy","my hand hurts"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አመመኝ","o":["አመመኝ","ህመም","ራበኝ"],"a":0},
 {"t":"mc","q":"Which one means pain · illness?","o":["ህመም","ሆድ","መድሃኒት"],"a":0},
@@ -2931,7 +2931,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ነርስ"],"a":0},
 {"t":"mc","q":"መድሃኒት means…","o":["medicine","bandage","checkup"],"a":0}
 ]},
-{"id":"am_b4_2","title":"Hearing the clinic","step":"recognize","meta":"Care by ear","vocab":[],"ex":[
+{"id":"am_b4_2","title":"Recognize","step":"recognize","meta":"Care by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ሐኪም ቤት","ነርስ"],"a":0},
 {"t":"mc","q":"What does መድሃኒት mean?","o":["medicine","doctor","clinic"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ሐኪም","ነርስ"],"a":0},
@@ -2939,21 +2939,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሐኪም ቤት","o":["ሐኪም ቤት","መድሃኒት","ሐኪም"],"a":0},
 {"t":"mc","q":"The root behind መድሃኒት means…","o":["rescue","bitter","plant"],"a":0}
 ]},
-{"id":"am_b4_3","title":"Building the clinic","step":"build","meta":"The care compound","vocab":[],"ex":[
+{"id":"am_b4_3","title":"Build","step":"build","meta":"The care compound","vocab":[],"ex":[
 {"t":"wb","q":"Build: clinic (doctor + house)","a":["ሐኪም","ቤት"],"pool":["ሐኪም","ቤት","ነርስ"]},
 {"t":"mc","q":"Pick the nurse","o":["ነርስ","ሐኪም","መድሃኒት"],"a":0},
 {"t":"wb","q":"Build: where is the clinic?","a":["ሐኪም","ቤት","የት","ነው?"],"pool":["ሐኪም","ቤት","የት","ነው?","ነርስ"]},
 {"t":"mc","q":"Pick the medicine","o":["መድሃኒት","ነርስ","ሐኪም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሐኪም","o":["ሐኪም","ነርስ","ሐኪም ቤት"],"a":0}
 ]},
-{"id":"am_b4_4","title":"The clinic in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሐኪም","doctor"],["ነርስ","nurse"],["መድሃኒት","medicine"]]},
 {"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","ሐኪም","መድሃኒት"],"a":0},
 {"t":"match","q":"Match the bet compound","pairs":[["ሐኪም ቤት","clinic"],["ትምህርት ቤት","school"]]},
 {"t":"mc","q":"አመመኝ! Your next stop is…","o":["ሐኪም ቤት","ትምህርት ቤት","ሆቴል"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት","o":["መድሃኒት","ሐኪም ቤት","ነርስ"],"a":0}
 ]},
-{"id":"am_b4_5","title":"Checkpoint: the clinic","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሐኪም ቤት means…","o":["clinic · hospital","pharmacy","doctor&rsquo;s home"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ነርስ","o":["ነርስ","መድሃኒት","ሐኪም"],"a":0},
 {"t":"mc","q":"Which one means medicine?","o":["መድሃኒት","ህመም","ሐኪም"],"a":0},
@@ -2976,7 +2976,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ"],"a":0},
 {"t":"mc","q":"መድሃኒት ውሰድ means…","o":["take the medicine","buy the medicine","the medicine is here"],"a":0}
 ]},
-{"id":"am_b5_2","title":"Hearing the commands","step":"recognize","meta":"Care orders by ear","vocab":[],"ex":[
+{"id":"am_b5_2","title":"Recognize","step":"recognize","meta":"Care orders by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ","መድሃኒት ውሰድ"],"a":0},
 {"t":"mc","q":"What does ተቀመጥ mean?","o":["sit down!","lie down!","stand!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተኛ","ተቀመጥ"],"a":0},
@@ -2984,21 +2984,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","መድሃኒት ውሰድ","ተኛ"],"a":0},
 {"t":"mc","q":"After ተቀመጥ and ተኛ, the visit ends with…","o":["መድሃኒት ውሰድ","ና","ብላ"],"a":0}
 ]},
-{"id":"am_b5_3","title":"Building the commands","step":"build","meta":"Follow the nurse","vocab":[],"ex":[
+{"id":"am_b5_3","title":"Build","step":"build","meta":"Follow the nurse","vocab":[],"ex":[
 {"t":"wb","q":"Build: take the medicine","a":["መድሃኒት","ውሰድ"],"pool":["መድሃኒት","ውሰድ","ተኛ"]},
 {"t":"mc","q":"Pick: sit down!","o":["ተቀመጥ","ተኛ","ና"],"a":0},
 {"t":"wb","q":"Build the word: lie down (te + gna)","a":["ተ","ኛ"],"pool":["ተ","ኛ","ቀ"]},
 {"t":"mc","q":"Pick: lie down!","o":["ተኛ","ተቀመጥ","ውሰድ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተቀመጥ","o":["ተቀመጥ","ተኛ","መድሃኒት ውሰድ"],"a":0}
 ]},
-{"id":"am_b5_4","title":"The commands in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ተቀመጥ","sit down!"],["ተኛ","lie down!"],["መድሃኒት ውሰድ","take the medicine"]]},
 {"t":"li","q":"Which one do you hear?","say":"መድሃኒት ውሰድ","o":["መድሃኒት ውሰድ","ተቀመጥ","ተኛ"],"a":0},
 {"t":"match","q":"Match the command family","pairs":[["ብላ","eat!"],["ና","come!"],["ተቀመጥ","sit!"]]},
 {"t":"mc","q":"When taking medicine on a schedule, confirm…","o":["habesha or ferenj time","the pharmacy name","the color"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","መድሃኒት ውሰድ","ተቀመጥ"],"a":0}
 ]},
-{"id":"am_b5_5","title":"Checkpoint: the commands","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"መድሃኒት ውሰድ means…","o":["take the medicine","bring the medicine","the medicine works"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ተኛ","o":["ተኛ","ተቀመጥ","ና"],"a":0},
 {"t":"mc","q":"Which one means sit down?","o":["ተቀመጥ","ተኛ","ውሰድ"],"a":0},
@@ -3021,7 +3021,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል"],"a":0},
 {"t":"mc","q":"ውሃ ጠጣ commands…","o":["drink water","fetch water","boil water"],"a":0}
 ]},
-{"id":"am_b6_2","title":"Hearing the recovery","step":"recognize","meta":"Reports by ear","vocab":[],"ex":[
+{"id":"am_b6_2","title":"Recognize","step":"recognize","meta":"Reports by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ደክሞኛል","o":["ደክሞኛል","ይሻለኛል","ውሃ ጠጣ"],"a":0},
 {"t":"mc","q":"What does ይሻለኛል mean?","o":["I feel better","I am tired","it is over"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ደክሞኛል","ይሻለኛል"],"a":0},
@@ -3029,21 +3029,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ውሃ ጠጣ","ደክሞኛል"],"a":0},
 {"t":"mc","q":"ጠጣ is the command twin of…","o":["እጠጣለሁ","እበላለሁ","እሄዳለሁ"],"a":0}
 ]},
-{"id":"am_b6_3","title":"Building the recovery","step":"build","meta":"Report and prescribe","vocab":[],"ex":[
+{"id":"am_b6_3","title":"Build","step":"build","meta":"Report and prescribe","vocab":[],"ex":[
 {"t":"wb","q":"Build: drink water! (to a man)","a":["ውሃ","ጠጣ"],"pool":["ውሃ","ጠጣ","ብላ"]},
 {"t":"mc","q":"Pick: I feel better","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
 {"t":"wb","q":"Build the word: I am tired (dekmo + gnal)","a":["ደክሞ","ኛል"],"pool":["ደክሞ","ኛል","ይሻለ"]},
 {"t":"mc","q":"Pick: I am tired","o":["ደክሞኛል","ይሻለኛል","ራበኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","ውሃ ጠጣ"],"a":0}
 ]},
-{"id":"am_b6_4","title":"The recovery in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይሻለኛል","I feel better"],["ደክሞኛል","I am tired"],["ውሃ ጠጣ","drink water!"]]},
 {"t":"li","q":"Which one do you hear?","say":"ውሃ ጠጣ","o":["ውሃ ጠጣ","ይሻለኛል","ደክሞኛል"],"a":0},
 {"t":"match","q":"Match the arc","pairs":[["አመመኝ","the bad day"],["መድሃኒት ውሰድ","the treatment"],["ይሻለኛል","the good news"]]},
 {"t":"mc","q":"ደክሞኛል after a long hike — the one-word prescription is…","o":["ዕረፍት","ቀንስ","ገበያ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደክሞኛል","o":["ደክሞኛል","ውሃ ጠጣ","ይሻለኛል"],"a":0}
 ]},
-{"id":"am_b6_5","title":"Checkpoint: the recovery","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_b6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ደክሞኛል means…","o":["I am tired","I feel better","I slept"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ይሻለኛል","o":["ይሻለኛል","ደክሞኛል","አመመኝ"],"a":0},
 {"t":"mc","q":"Which one means drink water!?","o":["ውሃ ጠጣ","ውሃ አለ","ውሃ እፈልጋለሁ"],"a":0},
@@ -3066,7 +3066,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ችግር"],"a":0},
 {"t":"mc","q":"ችግር የለም means…","o":["no problem","big problem","whose problem?"],"a":0}
 ]},
-{"id":"am_b7_2","title":"Hearing the reassurance","step":"recognize","meta":"Calm by ear","vocab":[],"ex":[
+{"id":"am_b7_2","title":"Recognize","step":"recognize","meta":"Calm by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ችግር","o":["ችግር","ችግር የለም","ጤና"],"a":0},
 {"t":"mc","q":"What does ጤና mean?","o":["health","peace","strength"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ጤና","ችግር"],"a":0},
@@ -3074,21 +3074,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ጤና","o":["ጤና","ችግር","ችግር የለም"],"a":0},
 {"t":"mc","q":"ችግር የለም is best described as…","o":["half philosophy, half motto","an apology","a complaint"],"a":0}
 ]},
-{"id":"am_b7_3","title":"Building the reassurance","step":"build","meta":"Trouble, dissolved","vocab":[],"ex":[
+{"id":"am_b7_3","title":"Build","step":"build","meta":"Trouble, dissolved","vocab":[],"ex":[
 {"t":"wb","q":"Build: no problem","a":["ችግር","የለም"],"pool":["ችግር","የለም","አለ"]},
 {"t":"mc","q":"Pick the word for health","o":["ጤና","ችግር","ህመም"],"a":0},
 {"t":"wb","q":"Build: the formal greeting (health + be-given)","a":["ጤና","ይስጥልኝ"],"pool":["ጤና","ይስጥልኝ","የለም"]},
 {"t":"mc","q":"Pick the word for problem","o":["ችግር","ጤና","ህመም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ችግር","ጤና"],"a":0}
 ]},
-{"id":"am_b7_4","title":"The reassurance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_b7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ጤና","health"],["ችግር","problem"],["ችግር የለም","no problem"]]},
 {"t":"li","q":"Which one do you hear?","say":"ጤና","o":["ጤና","ችግር የለም","ችግር"],"a":0},
 {"t":"match","q":"Match the yellem family","pairs":[["ችግር የለም","no problem"],["ስኳር የለም","no sugar"]]},
 {"t":"mc","q":"The taxi is late; your Ethiopian friend shrugs:…","o":["ችግር የለም","ችግር አለ","ጤና ይስጥልኝ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ችግር","o":["ችግር","ጤና","ችግር የለም"],"a":0}
 ]},
-{"id":"am_b7_5","title":"Checkpoint: Zone 10 complete","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
+{"id":"am_b7_5","title":"Checkpoint","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ችግር የለም means…","o":["no problem","get well","no pain"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ችግር የለም","o":["ችግር የለም","ጤና","ችግር"],"a":0},
 {"t":"mc","q":"Review — ራሴን አመመኝ means…","o":["my head hurts","my hand hurts","I am dizzy"],"a":0},
@@ -3110,7 +3110,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","በላሁ"],"a":0},
 {"t":"mc","q":"Compared with እሰራለሁ, the past ሰራሁ is…","o":["shorter and finished","longer","the same"],"a":0}
 ]},
-{"id":"am_p1_2","title":"Hearing the past","step":"recognize","meta":"Then by ear","vocab":[],"ex":[
+{"id":"am_p1_2","title":"Recognize","step":"recognize","meta":"Then by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","ሄድኩ","በላሁ"],"a":0},
 {"t":"mc","q":"What does ሄድኩ mean?","o":["I went","I came","I go"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","በላሁ","ሰራሁ"],"a":0},
@@ -3118,21 +3118,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Past or present — which do you hear?","say":"በላሁ","o":["በላሁ","እበላለሁ"],"a":0},
 {"t":"mc","q":"The past I-ending is…","o":["-ku/-hu","-alehu","-egn"],"a":0}
 ]},
-{"id":"am_p1_3","title":"Building the past","step":"build","meta":"Yesterday&rsquo;s verbs","vocab":[],"ex":[
+{"id":"am_p1_3","title":"Build","step":"build","meta":"Yesterday&rsquo;s verbs","vocab":[],"ex":[
 {"t":"wb","q":"Build: I went to the market","a":["ወደ","ገበያ","ሄድኩ"],"pool":["ወደ","ገበያ","ሄድኩ","እሄዳለሁ"]},
 {"t":"mc","q":"Pick: I ate","o":["በላሁ","እበላለሁ","ብላ"],"a":0},
 {"t":"wb","q":"Build: I ate injera","a":["እንጀራ","በላሁ"],"pool":["እንጀራ","በላሁ","ሰራሁ"]},
 {"t":"mc","q":"Pick: I worked","o":["ሰራሁ","እሰራለሁ","ስራ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሄድኩ","o":["ሄድኩ","ሰራሁ","በላሁ"],"a":0}
 ]},
-{"id":"am_p1_4","title":"The past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match present to past","pairs":[["እሄዳለሁ","ሄድኩ"],["እበላለሁ","በላሁ"],["እሰራለሁ","ሰራሁ"]]},
 {"t":"li","q":"Which one do you hear?","say":"በላሁ","o":["በላሁ","ሄድኩ","ሰራሁ"],"a":0},
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሄድኩ","I went"],["በላሁ","I ate"]]},
 {"t":"mc","q":"እንጀራ በላሁ means…","o":["I ate injera","I eat injera","eat the injera"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሰራሁ","o":["ሰራሁ","በላሁ","ሄድኩ"],"a":0}
 ]},
-{"id":"am_p1_5","title":"Checkpoint: the past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ሰራሁ means…","o":["I worked","I work","work!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በላሁ","o":["በላሁ","ሰራሁ","ሄድኩ"],"a":0},
 {"t":"mc","q":"Which one means I went?","o":["ሄድኩ","እሄዳለሁ","ሂድ"],"a":0},
@@ -3154,7 +3154,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ"],"a":0},
 {"t":"mc","q":"ዳቦ ገዛሁ means…","o":["I bought bread","I want bread","I ate bread"],"a":0}
 ]},
-{"id":"am_p2_2","title":"Hearing yesterday","step":"recognize","meta":"Narration by ear","vocab":[],"ex":[
+{"id":"am_p2_2","title":"Recognize","step":"recognize","meta":"Narration by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ","ትናንት ሄድኩ"],"a":0},
 {"t":"mc","q":"What does መጣሁ mean?","o":["I came","I come","come!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","መጣሁ","ገዛሁ"],"a":0},
@@ -3162,21 +3162,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ","ሄድኩ"],"a":0},
 {"t":"mc","q":"Present እመጣለሁ becomes past…","o":["መጣሁ","ገዛሁ","መጣ"],"a":0}
 ]},
-{"id":"am_p2_3","title":"Building yesterday","step":"build","meta":"Narrate the trip","vocab":[],"ex":[
+{"id":"am_p2_3","title":"Build","step":"build","meta":"Narrate the trip","vocab":[],"ex":[
 {"t":"wb","q":"Build: yesterday I went","a":["ትናንት","ሄድኩ"],"pool":["ትናንት","ሄድኩ","መጣሁ"]},
 {"t":"mc","q":"Pick: I came","o":["መጣሁ","ገዛሁ","እመጣለሁ"],"a":0},
 {"t":"wb","q":"Build: I bought bread","a":["ዳቦ","ገዛሁ"],"pool":["ዳቦ","ገዛሁ","በላሁ"]},
 {"t":"wb","q":"Build: yesterday I went to the market","a":["ትናንት","ገበያ","ሄድኩ"],"pool":["ትናንት","ገበያ","ሄድኩ","ገዛሁ"]},
 {"t":"li","q":"Which one do you hear?","say":"ትናንት ሄድኩ","o":["ትናንት ሄድኩ","ገዛሁ","መጣሁ"],"a":0}
 ]},
-{"id":"am_p2_4","title":"Yesterday in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["መጣሁ","I came"],["ገዛሁ","I bought"],["ትናንት ሄድኩ","yesterday I went"]]},
 {"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ትናንት ሄድኩ","ገዛሁ"],"a":0},
 {"t":"match","q":"Match present to past","pairs":[["እመጣለሁ","መጣሁ"],["እገዛለሁ","ገዛሁ"]]},
 {"t":"mc","q":"The full story: ትናንት ገበያ ሄድኩ, ዳቦ…","o":["ገዛሁ","እገዛለሁ","ግዛ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ገዛሁ","o":["ገዛሁ","መጣሁ","ትናንት ሄድኩ"],"a":0}
 ]},
-{"id":"am_p2_5","title":"Checkpoint: yesterday","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ገዛሁ means…","o":["I bought","I came","I sold"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መጣሁ","o":["መጣሁ","ገዛሁ","በላሁ"],"a":0},
 {"t":"mc","q":"ትናንት ሄድኩ means…","o":["yesterday I went","today I go","I went far"],"a":0},
@@ -3198,7 +3198,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","የት ነበርክ?"],"a":0},
 {"t":"mc","q":"ቤት ነበርኩ means…","o":["I was at home","I am at home","my house was there"],"a":0}
 ]},
-{"id":"am_p3_2","title":"Hearing the was","step":"recognize","meta":"Memories by ear","vocab":[],"ex":[
+{"id":"am_p3_2","title":"Recognize","step":"recognize","meta":"Memories by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","ነበርኩ","የት ነበርክ?"],"a":0},
 {"t":"mc","q":"What does ነበርኩ mean?","o":["I was","I am","I stayed"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ቤት ነበርኩ","ነበርኩ"],"a":0},
@@ -3206,21 +3206,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Was or am — which do you hear?","say":"ነበርኩ","o":["ነበርኩ","ነኝ"],"a":0},
 {"t":"mc","q":"ሆስፒታል ነበርኩ would mean…","o":["I was at the hospital","I am a doctor","the hospital was here"],"a":0}
 ]},
-{"id":"am_p3_3","title":"Building the was","step":"build","meta":"Place yourself in the past","vocab":[],"ex":[
+{"id":"am_p3_3","title":"Build","step":"build","meta":"Place yourself in the past","vocab":[],"ex":[
 {"t":"wb","q":"Build: where were you? (to a man)","a":["የት","ነበርክ?"],"pool":["የት","ነበርክ?","ነበርኩ"]},
 {"t":"mc","q":"Pick: I was","o":["ነበርኩ","ነኝ","ነው"],"a":0},
 {"t":"wb","q":"Build: I was at home","a":["ቤት","ነበርኩ"],"pool":["ቤት","ነበርኩ","ነበርክ?"]},
 {"t":"wb","q":"Build: I was at the market","a":["ገበያ","ነበርኩ"],"pool":["ገበያ","ነበርኩ","ቤት"]},
 {"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","የት ነበርክ?","ቤት ነበርኩ"],"a":0}
 ]},
-{"id":"am_p3_4","title":"The was in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነበርኩ","I was"],["የት ነበርክ?","where were you?"],["ቤት ነበርኩ","I was at home"]]},
 {"t":"li","q":"Which one do you hear?","say":"የት ነበርክ?","o":["የት ነበርክ?","ነበርኩ","ቤት ነበርኩ"],"a":0},
 {"t":"match","q":"Match now to then","pairs":[["ነኝ","ነበርኩ"],["እሄዳለሁ","ሄድኩ"]]},
 {"t":"mc","q":"የት ነበርክ? — ሐኪም ቤት ነበርኩ. The man was…","o":["at the clinic","at school","at the bank"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ቤት ነበርኩ","o":["ቤት ነበርኩ","የት ነበርክ?","ነበርኩ"],"a":0}
 ]},
-{"id":"am_p3_5","title":"Checkpoint: the was","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቤት ነበርኩ means…","o":["I was at home","I am home","home was small"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ነበርኩ","o":["ነበርኩ","ቤት ነበርኩ","የት ነበርክ?"],"a":0},
 {"t":"mc","q":"Which one asks where were you?","o":["የት ነበርክ?","የት ነው?","ወዴት ትሄዳለህ?"],"a":0},
@@ -3233,7 +3233,7 @@ const AM_LESSONS=[
 
 /* ---------- p4 · Tomorrow and now ---------- */
 {"id":"am_p4","title":"Tomorrow and now","step":"learn","meta":"One form, two tenses — the -alehu secret","vocab":[["ነገ እሄዳለሁ","nege ihedalehu","tomorrow I will go"],["አሁን","ahun","now"],["በኋላ","behuala","later"]],"ex":[
-{"t":"note","tag":"The secret you already own","q":"ነገ እሄዳለሁ","body":"<p>Good news: Amharic&rsquo;s future IS the -alehu form you have used all course. Add a time word and it points forward: <b>ነገ እሄዳለሁ</b> <i>nege ihedalehu</i> — <i>tomorrow I will go</i>. One form, present and future both; the time word steers.</p>","eg":[["ነገ እሄዳለሁ","nege ihedalehu","tomorrow I will go"]]},
+{"t":"note","tag":"One form, two tenses","q":"ነገ እሄዳለሁ","body":"<p>Good news: Amharic&rsquo;s future IS the -alehu form you have used all course. Add a time word and it points forward: <b>ነገ እሄዳለሁ</b> <i>nege ihedalehu</i> — <i>tomorrow I will go</i>. One form, present and future both; the time word steers.</p>","eg":[["ነገ እሄዳለሁ","nege ihedalehu","tomorrow I will go"]]},
 {"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","እሄዳለሁ"],"a":0},
 {"t":"mc","q":"Amharic&rsquo;s future tense is…","o":["the -alehu form plus a time word","a new ending","borrowed from English"],"a":0},
 {"t":"note","tag":"The steering words","q":"አሁን and በኋላ","body":"<p><b>አሁን</b> <i>ahun</i> — <i>now</i> — and <b>በኋላ</b> <i>behuala</i> — <i>later, afterwards</i>. አሁን እሄዳለሁ — I am going now; በኋላ እመጣለሁ — I will come later. The steering wheel of every plan.</p>","eg":[["አሁን","ahun","now"],["በኋላ","behuala","later"]]},
@@ -3242,7 +3242,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን"],"a":0},
 {"t":"mc","q":"በኋላ እመጣለሁ means…","o":["I will come later","I came late","come later!"],"a":0}
 ]},
-{"id":"am_p4_2","title":"Hearing the plans","step":"recognize","meta":"Time-steering by ear","vocab":[],"ex":[
+{"id":"am_p4_2","title":"Recognize","step":"recognize","meta":"Time-steering by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ እሄዳለሁ"],"a":0},
 {"t":"mc","q":"What does አሁን mean?","o":["now","later","soon"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","በኋላ","አሁን"],"a":0},
@@ -3250,21 +3250,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","በኋላ","ነገ"],"a":0},
 {"t":"mc","q":"The tense-steering is done by…","o":["time words","new endings","tone"],"a":0}
 ]},
-{"id":"am_p4_3","title":"Building the plans","step":"build","meta":"Steer the verb","vocab":[],"ex":[
+{"id":"am_p4_3","title":"Build","step":"build","meta":"Steer the verb","vocab":[],"ex":[
 {"t":"wb","q":"Build: tomorrow I will go","a":["ነገ","እሄዳለሁ"],"pool":["ነገ","እሄዳለሁ","ሄድኩ"]},
 {"t":"mc","q":"Pick the word for now","o":["አሁን","በኋላ","ነገ"],"a":0},
 {"t":"wb","q":"Build: I will come later","a":["በኋላ","እመጣለሁ"],"pool":["በኋላ","እመጣለሁ","መጣሁ"]},
 {"t":"wb","q":"Build: I am going now","a":["አሁን","እሄዳለሁ"],"pool":["አሁን","እሄዳለሁ","በኋላ"]},
 {"t":"li","q":"Which one do you hear?","say":"ነገ እሄዳለሁ","o":["ነገ እሄዳለሁ","አሁን","በኋላ"],"a":0}
 ]},
-{"id":"am_p4_4","title":"The plans in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ነገ እሄዳለሁ","tomorrow I will go"],["አሁን","now"],["በኋላ","later"]]},
 {"t":"li","q":"Which one do you hear?","say":"አሁን","o":["አሁን","ነገ እሄዳለሁ","በኋላ"],"a":0},
 {"t":"match","q":"Match the time to the tense","pairs":[["ትናንት","ሄድኩ"],["ነገ","እሄዳለሁ"]]},
 {"t":"mc","q":"All three tenses of go: ሄድኩ, እሄዳለሁ — and the future is the same -alehu form plus…","o":["a time word","a fourth ending","nothing works"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ እሄዳለሁ"],"a":0}
 ]},
-{"id":"am_p4_5","title":"Checkpoint: the plans","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ነገ እሄዳለሁ means…","o":["tomorrow I will go","yesterday I went","I go daily"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በኋላ","o":["በኋላ","አሁን","ነገ"],"a":0},
 {"t":"mc","q":"Which one means now?","o":["አሁን","በኋላ","ዛሬ"],"a":0},
@@ -3287,7 +3287,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ዝናብ"],"a":0},
 {"t":"mc","q":"ፀሐይ means…","o":["sun","sky","moon"],"a":0}
 ]},
-{"id":"am_p5_2","title":"Hearing the sky","step":"recognize","meta":"Weather by ear","vocab":[],"ex":[
+{"id":"am_p5_2","title":"Recognize","step":"recognize","meta":"Weather by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሙቀት","o":["ሙቀት","ብርድ","ዝናብ"],"a":0},
 {"t":"mc","q":"What does ዝናብ mean?","o":["rain","cloud","storm"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ብርድ","o":["ብርድ","ሙቀት","ፀሐይ"],"a":0},
@@ -3295,21 +3295,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ፀሐይ","ብርድ"],"a":0},
 {"t":"mc","q":"Addis sits at about…","o":["2,355 meters","500 meters","4,000 meters"],"a":0}
 ]},
-{"id":"am_p5_3","title":"Building the sky","step":"build","meta":"Forecast in fidel","vocab":[],"ex":[
+{"id":"am_p5_3","title":"Build","step":"build","meta":"Forecast in fidel","vocab":[],"ex":[
 {"t":"wb","q":"Build: rain and cold","a":["ዝናብ","ብርድ"],"pool":["ዝናብ","ብርድ","ፀሐይ"]},
 {"t":"mc","q":"Pick the word for heat","o":["ሙቀት","ብርድ","ፀሐይ"],"a":0},
 {"t":"wb","q":"Build: sun and heat","a":["ፀሐይ","ሙቀት"],"pool":["ፀሐይ","ሙቀት","ዝናብ"]},
 {"t":"mc","q":"Pick the word for rain","o":["ዝናብ","ብርድ","ሙቀት"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ፀሐይ","o":["ፀሐይ","ሙቀት","ዝናብ"],"a":0}
 ]},
-{"id":"am_p5_4","title":"The sky in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ዝናብ","rain"],["ብርድ","cold"],["ፀሐይ","sun"]]},
 {"t":"li","q":"Which one do you hear?","say":"ብርድ","o":["ብርድ","ዝናብ","ሙቀት"],"a":0},
 {"t":"match","q":"Match the season to its sky","pairs":[["kiremt","ዝናብ"],["the dry season","ፀሐይ"]]},
 {"t":"mc","q":"The jacket you packed is for…","o":["ብርድ","ሙቀት","ዝናብ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሙቀት","o":["ሙቀት","ፀሐይ","ብርድ"],"a":0}
 ]},
-{"id":"am_p5_5","title":"Checkpoint: the sky","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ብርድ means…","o":["cold","rain","wind"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዝናብ","o":["ዝናብ","ብርድ","ፀሐይ"],"a":0},
 {"t":"mc","q":"Which one means sun?","o":["ፀሐይ","ሙቀት","ዝናብ"],"a":0},
@@ -3331,7 +3331,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ብርድ ነው"],"a":0},
 {"t":"mc","q":"ዛሬ ዝናብ ነው would report…","o":["rain today","sun today","cold tomorrow"],"a":0}
 ]},
-{"id":"am_p6_2","title":"Hearing the reports","step":"recognize","meta":"Sky talk by ear","vocab":[],"ex":[
+{"id":"am_p6_2","title":"Recognize","step":"recognize","meta":"Sky talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ዛሬ ብርድ ነው","ብርድ ነው"],"a":0},
 {"t":"mc","q":"What does ብርድ ነው mean?","o":["it is cold","it is hot","it is windy"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ሙቀት ነው","ብርድ ነው"],"a":0},
@@ -3339,21 +3339,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው","ዛሬ ብርድ ነው"],"a":0},
 {"t":"mc","q":"The weather frame is powered by…","o":["ነው","አለ","ነኝ"],"a":0}
 ]},
-{"id":"am_p6_3","title":"Building the reports","step":"build","meta":"Say the sky","vocab":[],"ex":[
+{"id":"am_p6_3","title":"Build","step":"build","meta":"Say the sky","vocab":[],"ex":[
 {"t":"wb","q":"Build: it is cold","a":["ብርድ","ነው"],"pool":["ብርድ","ነው","ሙቀት"]},
 {"t":"mc","q":"Pick: it is hot","o":["ሙቀት ነው","ብርድ ነው","ዝናብ"],"a":0},
 {"t":"wb","q":"Build: today it is cold","a":["ዛሬ","ብርድ","ነው"],"pool":["ዛሬ","ብርድ","ነው","ሙቀት"]},
 {"t":"wb","q":"Build: it is hot","a":["ሙቀት","ነው"],"pool":["ሙቀት","ነው","ብርድ"]},
 {"t":"li","q":"Which one do you hear?","say":"ዛሬ ብርድ ነው","o":["ዛሬ ብርድ ነው","ብርድ ነው","ሙቀት ነው"],"a":0}
 ]},
-{"id":"am_p6_4","title":"The reports in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ብርድ ነው","it is cold"],["ሙቀት ነው","it is hot"],["ዛሬ ብርድ ነው","today it is cold"]]},
 {"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ዛሬ ብርድ ነው","ሙቀት ነው"],"a":0},
 {"t":"match","q":"Match the report to the response","pairs":[["ብርድ ነው","a jacket"],["ሙቀት ነው","a fan"]]},
 {"t":"mc","q":"Addis evening, jacket time — the report is…","o":["ብርድ ነው","ሙቀት ነው","ፀሐይ ነው"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ሙቀት ነው","o":["ሙቀት ነው","ብርድ ነው","ዛሬ ብርድ ነው"],"a":0}
 ]},
-{"id":"am_p6_5","title":"Checkpoint: the reports","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_p6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ዛሬ ብርድ ነው means…","o":["today it is cold","it will be cold","the cold is here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ብርድ ነው","o":["ብርድ ነው","ሙቀት ነው","ዝናብ"],"a":0},
 {"t":"mc","q":"Which one means it is hot?","o":["ሙቀት ነው","ብርድ ነው","ፀሐይ"],"a":0},
@@ -3375,7 +3375,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Listen closely — meche or min?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?"],"a":0},
 {"t":"mc","q":"A good answer to መቼ ትመጣለህ? is…","o":["ነገ እመጣለሁ","ትናንት ሄድኩ","ቤት ነበርኩ"],"a":0}
 ]},
-{"id":"am_p7_2","title":"Hearing the when","step":"recognize","meta":"Appointments by ear","vocab":[],"ex":[
+{"id":"am_p7_2","title":"Recognize","step":"recognize","meta":"Appointments by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","መቼ ትመጣለህ?","ምን"],"a":0},
 {"t":"mc","q":"What does መቼ mean?","o":["when","how","why"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?","መቼ"],"a":0},
@@ -3383,21 +3383,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","ማን","ምን"],"a":0},
 {"t":"mc","q":"መቼ ገዛህ? would ask…","o":["when did you buy it?","what did you buy?","where did you buy it?"],"a":0}
 ]},
-{"id":"am_p7_3","title":"Building the when","step":"build","meta":"Set the appointment","vocab":[],"ex":[
+{"id":"am_p7_3","title":"Build","step":"build","meta":"Set the appointment","vocab":[],"ex":[
 {"t":"wb","q":"Build: when are you coming? (to a man)","a":["መቼ","ትመጣለህ?"],"pool":["መቼ","ትመጣለህ?","እመጣለሁ"]},
 {"t":"mc","q":"Pick the word for when","o":["መቼ","ምን","የት"],"a":0},
 {"t":"wb","q":"Build the answer: I will come tomorrow","a":["ነገ","እመጣለሁ"],"pool":["ነገ","እመጣለሁ","መቼ"]},
 {"t":"wb","q":"Build the answer: I will come later","a":["በኋላ","እመጣለሁ"],"pool":["በኋላ","እመጣለሁ","አሁን"]},
 {"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","መቼ","ነገ እሄዳለሁ"],"a":0}
 ]},
-{"id":"am_p7_4","title":"The when in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_p7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["መቼ","when"],["መቼ ትመጣለህ?","when are you coming?"]]},
 {"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","መቼ ትመጣለህ?","ማን"],"a":0},
 {"t":"match","q":"Match the question to the answer","pairs":[["መቼ ትመጣለህ?","ነገ እመጣለሁ"],["የት ነበርክ?","ቤት ነበርኩ"]]},
 {"t":"mc","q":"Remember the two clocks: when the answer is a time, confirm…","o":["habesha or ferenj","the day twice","the address"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መቼ ትመጣለህ?","o":["መቼ ትመጣለህ?","ምን ትሰራለህ?","መቼ"],"a":0}
 ]},
-{"id":"am_p7_5","title":"Checkpoint: Zone 11 complete","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
+{"id":"am_p7_5","title":"Checkpoint","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
 {"t":"mc","q":"መቼ ትመጣለህ? — ነገ እመጣለሁ. The visit is…","o":["tomorrow","today","later tonight"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መቼ","o":["መቼ","ምን","ማን"],"a":0},
 {"t":"mc","q":"Review — the past of እሄዳለሁ is…","o":["ሄድኩ","ሂድ","እሄዳለሁ ነበር"],"a":0},
@@ -3420,7 +3420,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስታ"],"a":0},
 {"t":"mc","q":"አዝኛለሁ doubles as…","o":["sympathy — I am sorry","an apology for lateness","a goodbye"],"a":0}
 ]},
-{"id":"am_c1_2","title":"Hearing the feelings","step":"recognize","meta":"Heart-states by ear","vocab":[],"ex":[
+{"id":"am_c1_2","title":"Recognize","step":"recognize","meta":"Heart-states by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ደስታ","o":["ደስታ","አዝኛለሁ","ደስ ብሎኛል"],"a":0},
 {"t":"mc","q":"What does ደስ ብሎኛል mean?","o":["I am happy","I am sad","I am full"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስ ብሎኛል","ደስታ"],"a":0},
@@ -3428,21 +3428,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደስታ","አዝኛለሁ"],"a":0},
 {"t":"mc","q":"ደስ ብሎኛል joins the it-got-me family alongside…","o":["ራበኝ","ነኝ","አለ"],"a":0}
 ]},
-{"id":"am_c1_3","title":"Building the feelings","step":"build","meta":"Say the heart","vocab":[],"ex":[
+{"id":"am_c1_3","title":"Build","step":"build","meta":"Say the heart","vocab":[],"ex":[
 {"t":"wb","q":"Build: I am happy (des + bilognal)","a":["ደስ","ብሎኛል"],"pool":["ደስ","ብሎኛል","ደስታ"]},
 {"t":"mc","q":"Pick: I am sad","o":["አዝኛለሁ","ደስ ብሎኛል","ደክሞኛል"],"a":0},
 {"t":"wb","q":"Build the word: joy","a":["ደስ","ታ"],"pool":["ደስ","ታ","አዝ"]},
 {"t":"mc","q":"Pick: I am happy","o":["ደስ ብሎኛል","አዝኛለሁ","ይሻለኛል"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","አዝኛለሁ","ደስታ"],"a":0}
 ]},
-{"id":"am_c1_4","title":"The feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ደስ ብሎኛል","I am happy"],["ደስታ","joy"],["አዝኛለሁ","I am sad"]]},
 {"t":"li","q":"Which one do you hear?","say":"አዝኛለሁ","o":["አዝኛለሁ","ደስታ","ደስ ብሎኛል"],"a":0},
 {"t":"match","q":"Match the moment to the feeling","pairs":[["ጓደኛ መጣ","ደስ ብሎኛል"],["a friend&rsquo;s bad news","አዝኛለሁ"]]},
 {"t":"mc","q":"Meeting someone named Desta, you have met…","o":["Joy","Peace","Hope"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደስታ","o":["ደስታ","ደስ ብሎኛል","አዝኛለሁ"],"a":0}
 ]},
-{"id":"am_c1_5","title":"Checkpoint: the feelings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"አዝኛለሁ means…","o":["I am sad","I am angry","I am tired"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ደስ ብሎኛል","o":["ደስ ብሎኛል","ደስታ","ደክሞኛል"],"a":0},
 {"t":"mc","q":"Which one means joy?","o":["ደስታ","ጤና","ሰላም"],"a":0},
@@ -3465,7 +3465,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ቡና ጠጡ"],"a":0},
 {"t":"mc","q":"እንኳን ደህና መጣህ literally celebrates that you…","o":["arrived safely","came early","stayed long"],"a":0}
 ]},
-{"id":"am_c2_2","title":"Hearing the welcome","step":"recognize","meta":"Hospitality by ear","vocab":[],"ex":[
+{"id":"am_c2_2","title":"Recognize","step":"recognize","meta":"Hospitality by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ግባ","ቡና ጠጡ"],"a":0},
 {"t":"mc","q":"What does ቡና ጠጡ invite you to?","o":["coffee and friendship","a quick espresso","tea"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
@@ -3473,21 +3473,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","እንኳን ደህና መጣህ","ግባ"],"a":0},
 {"t":"mc","q":"After እንኳን ደህና መጣህ and ግባ, the welcome ends with…","o":["ቡና ጠጡ","ቻው","ና"],"a":0}
 ]},
-{"id":"am_c2_3","title":"Building the welcome","step":"build","meta":"Open your own door","vocab":[],"ex":[
+{"id":"am_c2_3","title":"Build","step":"build","meta":"Open your own door","vocab":[],"ex":[
 {"t":"wb","q":"Build: welcome! (to a man)","a":["እንኳን","ደህና","መጣህ"],"pool":["እንኳን","ደህና","መጣህ","ግባ"]},
 {"t":"mc","q":"Pick: come in!","o":["ግባ","ና","ተቀመጥ"],"a":0},
 {"t":"wb","q":"Build: drink coffee (the invitation)","a":["ቡና","ጠጡ"],"pool":["ቡና","ጠጡ","ጠጣ"]},
 {"t":"mc","q":"Pick the invitation that means friendship","o":["ቡና ጠጡ","ውሃ ጠጣ","እንብላ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እንኳን ደህና መጣህ","o":["እንኳን ደህና መጣህ","ቡና ጠጡ","ግባ"],"a":0}
 ]},
-{"id":"am_c2_4","title":"The welcome in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ግባ","come in!"],["ቡና ጠጡ","drink coffee"],["እንኳን ደህና መጣህ","welcome!"]]},
 {"t":"li","q":"Which one do you hear?","say":"ቡና ጠጡ","o":["ቡና ጠጡ","ግባ","እንኳን ደህና መጣህ"],"a":0},
 {"t":"match","q":"Match the invitation family","pairs":[["እንብላ","let us eat"],["ቡና ጠጡ","drink coffee"],["ግባ","come in"]]},
 {"t":"mc","q":"You knock; the door opens; the first words are…","o":["እንኳን ደህና መጣህ, ግባ!","ችግር የለም","ወራጅ አለ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","እንኳን ደህና መጣህ","ቡና ጠጡ"],"a":0}
 ]},
-{"id":"am_c2_5","title":"Checkpoint: the welcome","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ቡና ጠጡ is…","o":["THE Ethiopian invitation","a quick request","a toast"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ግባ","o":["ግባ","ቡና ጠጡ","ና"],"a":0},
 {"t":"mc","q":"Which one means welcome?","o":["እንኳን ደህና መጣህ","ደህና ሁን","ሰላም ነው?"],"a":0},
@@ -3503,14 +3503,14 @@ const AM_LESSONS=[
 {"t":"note","tag":"The honest flag","q":"አልገባኝም","body":"<p><b>አልገባኝም</b> <i>algebagnem</i> — <i>it did not enter me</i> — <i>I do not understand</i>. Understanding, in Amharic, is something that enters you — and admitting it did not is how it eventually does.</p>","eg":[["አልገባኝም","algebagnem","I do not understand"]]},
 {"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ግባ"],"a":0},
 {"t":"mc","q":"አልገባኝም literally says understanding…","o":["did not enter me","escaped me","confused me"],"a":0},
-{"t":"note","tag":"The click of it landing","q":"ገባኝ","body":"<p><b>ገባኝ</b> <i>gebagn</i> — <i>it entered me</i> — <i>got it!</i> The happiest little word in any lesson, and the exact opposite of algebagnem.</p>","eg":[["ገባኝ","gebagn","I understand · got it"]]},
+{"t":"note","tag":"The got-it word","q":"ገባኝ","body":"<p><b>ገባኝ</b> <i>gebagn</i> — <i>it entered me</i> — <i>got it!</i> The happiest little word in any lesson, and the exact opposite of algebagnem.</p>","eg":[["ገባኝ","gebagn","I understand · got it"]]},
 {"t":"li","q":"Got it or lost — which do you hear?","say":"ገባኝ","o":["ገባኝ","አልገባኝም"],"a":0},
 {"t":"mc","q":"ገባኝ means…","o":["got it!","tell me","almost"],"a":0},
 {"t":"note","tag":"The replay button","q":"ድገም","body":"<p><b>ድገም</b> <i>digem</i> — <i>repeat it, say it again</i> — to a man (ድገሚ <i>digemi</i> to a woman). Paired with ibakih, it politely rewinds any sentence that flew past you.</p>","eg":[["ድገም","digem","say it again (to a man)"]]},
 {"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ገባኝ"],"a":0},
 {"t":"mc","q":"እባክህ ድገም politely asks…","o":["please say it again","please slow down","please stop"],"a":0}
 ]},
-{"id":"am_c3_2","title":"Hearing the toolkit","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
+{"id":"am_c3_2","title":"Recognize","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ገባኝ","o":["ገባኝ","ድገም","አልገባኝም"],"a":0},
 {"t":"mc","q":"What does ድገም mean?","o":["say it again","speak up","slow down"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
@@ -3518,21 +3518,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","አልገባኝም","ገባኝ"],"a":0},
 {"t":"mc","q":"The al-…-m wrap in አልገባኝም makes the verb…","o":["negative","past","polite"],"a":0}
 ]},
-{"id":"am_c3_3","title":"Building the toolkit","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
+{"id":"am_c3_3","title":"Build","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
 {"t":"wb","q":"Build: please say it again (to a man)","a":["እባክህ","ድገም"],"pool":["እባክህ","ድገም","ገባኝ"]},
 {"t":"mc","q":"Pick: I do not understand","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
 {"t":"wb","q":"Build: got it — thank you","a":["ገባኝ","አመሰግናለሁ"],"pool":["ገባኝ","አመሰግናለሁ","አልገባኝም"]},
 {"t":"mc","q":"Pick: got it!","o":["ገባኝ","ድገም","እሺ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ድገም","ገባኝ"],"a":0}
 ]},
-{"id":"am_c3_4","title":"The toolkit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["አልገባኝም","I do not understand"],["ገባኝ","got it!"],["ድገም","say it again"]]},
 {"t":"li","q":"Which one do you hear?","say":"ድገም","o":["ድገም","ገባኝ","አልገባኝም"],"a":0},
 {"t":"match","q":"Match the line to the moment","pairs":[["እባክህ ድገም","the sentence flew past"],["ገባኝ","it landed"]]},
 {"t":"mc","q":"The full rescue arc…","o":["አልገባኝም → ድገም → ገባኝ","ገባኝ → ድገም → ቻው","ድገም → ችግር → የለም"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ገባኝ","o":["ገባኝ","አልገባኝም","ድገም"],"a":0}
 ]},
-{"id":"am_c3_5","title":"Checkpoint: the toolkit","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ገባኝ means…","o":["got it!","say it again","not yet"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አልገባኝም","o":["አልገባኝም","ገባኝ","ድገም"],"a":0},
 {"t":"mc","q":"Which one asks for a repeat?","o":["ድገም","ገባኝ","ግባ"],"a":0},
@@ -3555,7 +3555,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","እወዳለሁ"],"a":0},
 {"t":"mc","q":"The -n on ኢትዮጵያን marks…","o":["the thing being loved","a plural","a question"],"a":0}
 ]},
-{"id":"am_c4_2","title":"Hearing the love","step":"recognize","meta":"Likes by ear","vocab":[],"ex":[
+{"id":"am_c4_2","title":"Recognize","step":"recognize","meta":"Likes by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ","ኢትዮጵያን እወዳለሁ"],"a":0},
 {"t":"mc","q":"What does እወዳለሁ mean?","o":["I like · I love","I want","I have"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","አልወድም","እወዳለሁ"],"a":0},
@@ -3563,21 +3563,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","አልወድም","ኢትዮጵያን እወዳለሁ"],"a":0},
 {"t":"mc","q":"ቡና እወዳለሁ means…","o":["I love coffee","coffee is dear","I drink coffee"],"a":0}
 ]},
-{"id":"am_c4_3","title":"Building the love","step":"build","meta":"Declare your tastes","vocab":[],"ex":[
+{"id":"am_c4_3","title":"Build","step":"build","meta":"Declare your tastes","vocab":[],"ex":[
 {"t":"wb","q":"Build: I love Ethiopia","a":["ኢትዮጵያን","እወዳለሁ"],"pool":["ኢትዮጵያን","እወዳለሁ","አልወድም"]},
 {"t":"mc","q":"Pick: I do not like","o":["አልወድም","እወዳለሁ","የለም"],"a":0},
 {"t":"wb","q":"Build: I love coffee","a":["ቡና","እወዳለሁ"],"pool":["ቡና","እወዳለሁ","አልወድም"]},
 {"t":"wb","q":"Build the negative: al + wed + m","a":["አል","ወድ","ም"],"pool":["አል","ወድ","ም","እወዳ"]},
 {"t":"li","q":"Which one do you hear?","say":"ኢትዮጵያን እወዳለሁ","o":["ኢትዮጵያን እወዳለሁ","እወዳለሁ","አልወድም"],"a":0}
 ]},
-{"id":"am_c4_4","title":"The love in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እወዳለሁ","I love"],["አልወድም","I do not like"],["ኢትዮጵያን እወዳለሁ","I love Ethiopia"]]},
 {"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","ኢትዮጵያን እወዳለሁ","አልወድም"],"a":0},
 {"t":"match","q":"Match the verb to its meaning","pairs":[["እወዳለሁ","I do like"],["አልወድም","I do not like"]]},
 {"t":"mc","q":"ብርድ አልወድም means…","o":["I do not like the cold","the cold is gone","I am not cold"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አልወድም","o":["አልወድም","እወዳለሁ","አልገባኝም"],"a":0}
 ]},
-{"id":"am_c4_5","title":"Checkpoint: the love","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ኢትዮጵያን እወዳለሁ means…","o":["I love Ethiopia","Ethiopia is dear","welcome to Ethiopia"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እወዳለሁ","o":["እወዳለሁ","አልወድም","እፈልጋለሁ"],"a":0},
 {"t":"mc","q":"Which one means I do not like?","o":["አልወድም","እወዳለሁ","የለም"],"a":0},
@@ -3600,7 +3600,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","ግን"],"a":0},
 {"t":"mc","q":"ቡና ወይም ሻይ? asks…","o":["coffee or tea?","coffee and tea?","coffee, then tea"],"a":0}
 ]},
-{"id":"am_c5_2","title":"Hearing the glue","step":"recognize","meta":"Connectors by ear","vocab":[],"ex":[
+{"id":"am_c5_2","title":"Recognize","step":"recognize","meta":"Connectors by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ግን","o":["ግን","ወይም","እና"],"a":0},
 {"t":"mc","q":"What does ወይም mean?","o":["or","and","but"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ግን","ወይም"],"a":0},
@@ -3608,21 +3608,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","እና","ግን"],"a":0},
 {"t":"mc","q":"እንጀራ እና ወጥ means injera … wet","o":["and","or","but"],"a":0}
 ]},
-{"id":"am_c5_3","title":"Building the glue","step":"build","meta":"Join, pivot, fork","vocab":[],"ex":[
+{"id":"am_c5_3","title":"Build","step":"build","meta":"Join, pivot, fork","vocab":[],"ex":[
 {"t":"wb","q":"Build: coffee and bread","a":["ቡና","እና","ዳቦ"],"pool":["ቡና","እና","ዳቦ","ወይም"]},
 {"t":"mc","q":"Pick the word for but","o":["ግን","እና","ወይም"],"a":0},
 {"t":"wb","q":"Build: coffee or tea?","a":["ቡና","ወይም","ሻይ?"],"pool":["ቡና","ወይም","ሻይ?","እና"]},
 {"t":"wb","q":"Build: it is expensive, but I love it","a":["ውድ","ነው","ግን","እወዳለሁ"],"pool":["ውድ","ነው","ግን","እወዳለሁ","ወይም"]},
 {"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ወይም","ግን"],"a":0}
 ]},
-{"id":"am_c5_4","title":"The glue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["እና","and"],["ግን","but"],["ወይም","or"]]},
 {"t":"li","q":"Which one do you hear?","say":"ወይም","o":["ወይም","ግን","እና"],"a":0},
 {"t":"match","q":"Match the sentence to its glue","pairs":[["ቡና እና ዳቦ","joining"],["ቡና ወይም ሻይ","choosing"]]},
 {"t":"mc","q":"ሩቅ ነው, ግን እሄዳለሁ means it is far…","o":["but I am going","and I am going","or I go"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ግን","o":["ግን","እና","ወይም"],"a":0}
 ]},
-{"id":"am_c5_5","title":"Checkpoint: the glue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ግን means…","o":["but","and","or"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"እና","o":["እና","ግን","ወይም"],"a":0},
 {"t":"mc","q":"Which one asks a choice?","o":["ወይም","እና","ግን"],"a":0},
@@ -3645,7 +3645,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ጎረቤት"],"a":0},
 {"t":"mc","q":"አብረን means…","o":["together","beside","again"],"a":0}
 ]},
-{"id":"am_c6_2","title":"Hearing the neighborhood","step":"recognize","meta":"Community by ear","vocab":[],"ex":[
+{"id":"am_c6_2","title":"Recognize","step":"recognize","meta":"Community by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ጎረቤት","o":["ጎረቤት","አብረን","ሰፈር"],"a":0},
 {"t":"mc","q":"What does ሰፈር mean?","o":["neighborhood","market","district office"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ሰፈር","ጎረቤት"],"a":0},
@@ -3653,21 +3653,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","ጎረቤት","አብረን"],"a":0},
 {"t":"mc","q":"An Ethiopian gorebet is…","o":["nearly family","a stranger","a formality"],"a":0}
 ]},
-{"id":"am_c6_3","title":"Building the neighborhood","step":"build","meta":"Put yourself on the street","vocab":[],"ex":[
+{"id":"am_c6_3","title":"Build","step":"build","meta":"Put yourself on the street","vocab":[],"ex":[
 {"t":"wb","q":"Build: let us eat together","a":["እንብላ","አብረን"],"pool":["እንብላ","አብረን","ጎረቤት"]},
 {"t":"mc","q":"Pick the neighbor","o":["ጎረቤት","ሰፈር","ጓደኛ"],"a":0},
 {"t":"wb","q":"Build: my neighborhood (sefer + e)","a":["ሰፈር","ኤ"],"pool":["ሰፈር","ኤ","ኡ"]},
 {"t":"mc","q":"Pick: together","o":["አብረን","አብሮ","እና"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ጎረቤት","o":["ጎረቤት","ሰፈር","አብረን"],"a":0}
 ]},
-{"id":"am_c6_4","title":"The neighborhood in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["ሰፈር","neighborhood"],["ጎረቤት","neighbor"],["አብረን","together"]]},
 {"t":"li","q":"Which one do you hear?","say":"ሰፈር","o":["ሰፈር","አብረን","ጎረቤት"],"a":0},
 {"t":"match","q":"Match the bet family","pairs":[["ጎረቤት","neighbor"],["ሐኪም ቤት","clinic"],["ትምህርት ቤት","school"]]},
 {"t":"mc","q":"The Ethiopian default for meals, coffee and moving house is…","o":["አብረን","ብቻ","በኋላ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ጎረቤት","ሰፈር"],"a":0}
 ]},
-{"id":"am_c6_5","title":"Checkpoint: the neighborhood","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"am_c6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"ጎረቤት means…","o":["neighbor","neighborhood","household"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"አብረን","o":["አብረን","ሰፈር","ጎረቤት"],"a":0},
 {"t":"mc","q":"Which one means neighborhood?","o":["ሰፈር","ጎረቤት","ከተማ"],"a":0},
@@ -3690,7 +3690,7 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም ጉዞ"],"a":0},
 {"t":"mc","q":"በርታ tells someone to…","o":["keep it up","slow down","turn back"],"a":0}
 ]},
-{"id":"am_c7_2","title":"Hearing the send-off","step":"recognize","meta":"Blessings by ear","vocab":[],"ex":[
+{"id":"am_c7_2","title":"Recognize","step":"recognize","meta":"Blessings by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"መልካም ጉዞ","o":["መልካም ጉዞ","በርታ","መልካም"],"a":0},
 {"t":"mc","q":"What does በርታ mean?","o":["keep it up","goodbye","well done"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መልካም","o":["መልካም","መልካም ጉዞ","በርታ"],"a":0},
@@ -3698,21 +3698,21 @@ const AM_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም","መልካም ጉዞ"],"a":0},
 {"t":"mc","q":"Ethiopia shouts በርታ at…","o":["runners and strivers","latecomers","tourists only"],"a":0}
 ]},
-{"id":"am_c7_3","title":"Building the send-off","step":"build","meta":"Bless like a local","vocab":[],"ex":[
+{"id":"am_c7_3","title":"Build","step":"build","meta":"Bless like a local","vocab":[],"ex":[
 {"t":"wb","q":"Build: good journey!","a":["መልካም","ጉዞ"],"pool":["መልካም","ጉዞ","በርታ"]},
 {"t":"mc","q":"Pick the encouragement","o":["በርታ","መልካም","ቻው"],"a":0},
 {"t":"wb","q":"Build: good journey — goodbye (to a man)","a":["መልካም","ጉዞ","ደህና","ሁን"],"pool":["መልካም","ጉዞ","ደህና","ሁን","በርታ"]},
 {"t":"mc","q":"Pick the blessing word","o":["መልካም","በርታ","እሺ"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መልካም ጉዞ","o":["መልካም ጉዞ","መልካም","በርታ"],"a":0}
 ]},
-{"id":"am_c7_4","title":"The send-off in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"am_c7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Amharic to the meaning","pairs":[["መልካም","good"],["መልካም ጉዞ","good journey"],["በርታ","keep it up"]]},
 {"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም ጉዞ","መልካም"],"a":0},
 {"t":"match","q":"Match the farewell family","pairs":[["ደህና ሁን","be well"],["መልካም ጉዞ","good journey"],["ቻው","bye"]]},
 {"t":"mc","q":"A friend boards the bus to Bahir Dar; you call…","o":["መልካም ጉዞ!","እንኳን ደህና መጣህ!","ግባ!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"መልካም","o":["መልካም","በርታ","መልካም ጉዞ"],"a":0}
 ]},
-{"id":"am_c7_5","title":"Checkpoint: the whole journey","step":"checkpoint","meta":"Twelve zones of Amharic — show it all","vocab":[],"ex":[
+{"id":"am_c7_5","title":"Checkpoint","step":"checkpoint","meta":"Twelve zones of Amharic — show it all","vocab":[],"ex":[
 {"t":"mc","q":"መልካም ጉዞ means…","o":["good journey!","farewell forever","safe roads"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"በርታ","o":["በርታ","መልካም","ቻው"],"a":0},
 {"t":"mc","q":"Review — the welcome formula is…","o":["እንኳን ደህና መጣህ","መልካም ጉዞ","ጤና ይስጥልኝ"],"a":0},

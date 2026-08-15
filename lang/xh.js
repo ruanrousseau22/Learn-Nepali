@@ -61,7 +61,7 @@ const XH_LESSONS=[
 {"t":"mc","q":"imoto means…","o":["car","thing","go!"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"imoto","o":["imoto","into"],"a":0}
 ]},
-{"id":"xh_s1_2","title":"Hearing the vowels","step":"recognize","meta":"Pick the right word by ear and by eye","vocab":[],"ex":[
+{"id":"xh_s1_2","title":"Recognize","step":"recognize","meta":"Pick the right word by ear and by eye","vocab":[],"ex":[
 {"t":"mc","q":"Which one means no?","o":["hayi","ewe","iza"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ewe","o":["ewe","hayi","iza"],"a":0},
 {"t":"mc","q":"What does into mean?","o":["thing","car","come!"],"a":0},
@@ -69,7 +69,7 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which one means come!?","o":["iza","hamba","ewe"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"into","o":["into","imoto","ewe"],"a":0}
 ]},
-{"id":"xh_s1_3","title":"Building with sounds","step":"build","meta":"Spell what you hear","vocab":[],"ex":[
+{"id":"xh_s1_3","title":"Build","step":"build","meta":"Spell what you hear","vocab":[],"ex":[
 {"t":"fill","q":"Complete the word for car","s":"i___to","o":["mo","ma","mu"],"a":0},
 {"t":"wb","q":"Build the word: yes","a":["ewe"],"pool":["ewe","hayi","iza"]},
 {"t":"fill","q":"Complete the command: go!","s":"ha___a","o":["mb","nd","ng"],"a":0},
@@ -77,14 +77,14 @@ const XH_LESSONS=[
 {"t":"mc","q":"Which word is stressed EH-weh?","o":["ewe","hayi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iza","o":["iza","into"],"a":0}
 ]},
-{"id":"xh_s1_4","title":"Vowels in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ewe","yes"],["hayi","no"],["hamba","go!"],["iza","come!"]]},
 {"t":"mc","q":"Someone calls Iza! — they want you to…","o":["come","go","stop"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"hayi","o":["hayi","hamba","ewe"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["imoto","car"],["into","thing"]]},
 {"t":"mc","q":"What does hamba mean?","o":["go!","come!","thing"],"a":0}
 ]},
-{"id":"xh_s1_5","title":"Checkpoint: first sounds","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Which one means yes?","o":["ewe","hayi","iza"],"a":0},
 {"t":"mc","q":"What does imoto mean?","o":["car","thing","door"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"hamba","o":["hamba","iza","hayi"],"a":0},
@@ -105,7 +105,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"ucango","o":["ucango","cinga"],"a":0},
 {"t":"mc","q":"Which one means think?","o":["cinga","cela","icici"],"a":0}
 ]},
-{"id":"xh_s2_2","title":"Hearing the c click","step":"recognize","meta":"Tell click words apart by ear","vocab":[],"ex":[
+{"id":"xh_s2_2","title":"Recognize","step":"recognize","meta":"Tell click words apart by ear","vocab":[],"ex":[
 {"t":"li","q":"Which word do you hear?","say":"cula","o":["cula","cela","cima"],"a":0},
 {"t":"mc","q":"What does icici mean?","o":["earring","door","car"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"cinga","o":["cinga","cima","ucango"],"a":0},
@@ -113,7 +113,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"cima","o":["cima","icici","cula"],"a":0},
 {"t":"mc","q":"ucango means…","o":["door","earring","switch off"],"a":0}
 ]},
-{"id":"xh_s2_3","title":"Building click words","step":"build","meta":"Assemble the clicks yourself","vocab":[],"ex":[
+{"id":"xh_s2_3","title":"Build","step":"build","meta":"Assemble the clicks yourself","vocab":[],"ex":[
 {"t":"fill","q":"Complete: sing","s":"___ula","o":["c","k","s"],"a":0},
 {"t":"wb","q":"Build the word: earring","a":["icici"],"pool":["icici","ucango","cela"]},
 {"t":"fill","q":"Complete: door","s":"uca___o","o":["ng","mb","nd"],"a":0},
@@ -121,14 +121,14 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"cela","o":["cela","cinga"],"a":0},
 {"t":"mc","q":"Which word means switch off?","o":["cima","cela","icici"],"a":0}
 ]},
-{"id":"xh_s2_4","title":"Clicks in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["cela","ask for"],["cula","sing"],["cima","switch off"]]},
 {"t":"li","q":"Which word do you hear?","say":"ucango","o":["ucango","icici","cula"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["icici","earring"],["ucango","door"],["cinga","think"]]},
 {"t":"mc","q":"The tsk-tsk sound behind the top teeth is written…","o":["c","x","q"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"cula","o":["cula","cima","cinga"],"a":0}
 ]},
-{"id":"xh_s2_5","title":"Checkpoint: the c click","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does cela mean?","o":["ask for","sing","think"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"cinga","o":["cinga","cela","cula"],"a":0},
 {"t":"mc","q":"Which one means earring?","o":["icici","ucango","cima"],"a":0},
@@ -148,7 +148,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"xela","o":["xela","xoxa"],"a":0},
 {"t":"mc","q":"Which one means chat?","o":["xoxa","xela","uxolo"],"a":0}
 ]},
-{"id":"xh_s3_2","title":"Hearing the x click","step":"recognize","meta":"c and x side by side","vocab":[],"ex":[
+{"id":"xh_s3_2","title":"Recognize","step":"recognize","meta":"c and x side by side","vocab":[],"ex":[
 {"t":"li","q":"Which word do you hear?","say":"ixesha","o":["ixesha","ixoxo","uxolo"],"a":0},
 {"t":"mc","q":"What does xela mean?","o":["tell","chat","sorry"],"a":0},
 {"t":"li","q":"c or x — which word do you hear?","say":"cela","o":["cela","xela"],"a":0},
@@ -156,21 +156,21 @@ const XH_LESSONS=[
 {"t":"li","q":"c or x — which word do you hear?","say":"xela","o":["xela","cela"],"a":0},
 {"t":"mc","q":"Someone bumps you and says Uxolo! — they mean…","o":["sorry","hello","goodbye"],"a":0}
 ]},
-{"id":"xh_s3_3","title":"Building x words","step":"build","meta":"Assemble the lateral click","vocab":[],"ex":[
+{"id":"xh_s3_3","title":"Build","step":"build","meta":"Assemble the lateral click","vocab":[],"ex":[
 {"t":"fill","q":"Complete: sorry","s":"u___olo","o":["x","c","q"],"a":0},
 {"t":"wb","q":"Build the word: time","a":["ixesha"],"pool":["ixesha","ixoxo","xela"]},
 {"t":"fill","q":"Complete: chat","s":"xo___a","o":["x","c","k"],"a":0},
 {"t":"wb","q":"Build the word: frog","a":["ixoxo"],"pool":["ixoxo","ixesha","uxolo"]},
 {"t":"li","q":"Which word do you hear?","say":"xoxa","o":["xoxa","xela","ixoxo"],"a":0}
 ]},
-{"id":"xh_s3_4","title":"x in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["xela","tell"],["uxolo","sorry"],["ixesha","time"]]},
 {"t":"li","q":"Which word do you hear?","say":"uxolo","o":["uxolo","ixoxo","xoxa"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["xoxa","chat"],["ixoxo","frog"]]},
 {"t":"mc","q":"The gee-up click made at the side teeth is written…","o":["x","c","q"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"ixesha","o":["ixesha","xela","icici"],"a":0}
 ]},
-{"id":"xh_s3_5","title":"Checkpoint: the x click","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ixesha mean?","o":["time","frog","door"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"xela","o":["xela","xoxa","uxolo"],"a":0},
 {"t":"mc","q":"Which one means sorry?","o":["uxolo","xoxa","enkosi"],"a":0},
@@ -189,7 +189,7 @@ const XH_LESSONS=[
 {"t":"mc","q":"iqela means…","o":["team","egg","begin"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"qala","o":["qala","qonda"],"a":0}
 ]},
-{"id":"xh_s4_2","title":"Hearing the q click","step":"recognize","meta":"All three clicks side by side","vocab":[],"ex":[
+{"id":"xh_s4_2","title":"Recognize","step":"recognize","meta":"All three clicks side by side","vocab":[],"ex":[
 {"t":"li","q":"Which word do you hear?","say":"qonda","o":["qonda","qala","iqanda"],"a":0},
 {"t":"mc","q":"What does iqanda mean?","o":["egg","team","frog"],"a":0},
 {"t":"li","q":"c, x or q — which word do you hear?","say":"qala","o":["qala","cula","xela"],"a":0},
@@ -197,21 +197,21 @@ const XH_LESSONS=[
 {"t":"li","q":"c, x or q — which word do you hear?","say":"cima","o":["cima","xela","qala"],"a":0},
 {"t":"mc","q":"You are lost in a conversation. You say…","o":["Andiqondi","Iqanda","Qala"],"a":0}
 ]},
-{"id":"xh_s4_3","title":"Building q words","step":"build","meta":"Assemble the cork-pop","vocab":[],"ex":[
+{"id":"xh_s4_3","title":"Build","step":"build","meta":"Assemble the cork-pop","vocab":[],"ex":[
 {"t":"fill","q":"Complete: egg","s":"i___anda","o":["q","c","x"],"a":0},
 {"t":"wb","q":"Build the phrase: I do not understand","a":["andiqondi"],"pool":["andiqondi","qonda","qala"]},
 {"t":"fill","q":"Complete: team","s":"iqe___a","o":["l","nd","ng"],"a":0},
 {"t":"wb","q":"Build the word: begin","a":["qala"],"pool":["qala","iqela","iqanda"]},
 {"t":"li","q":"Which word do you hear?","say":"iqela","o":["iqela","iqanda","qonda"],"a":0}
 ]},
-{"id":"xh_s4_4","title":"q in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["qala","begin"],["qonda","understand"],["iqanda","egg"]]},
 {"t":"li","q":"Which word do you hear?","say":"andiqondi","o":["andiqondi","iqela","qala"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["andiqondi","I do not understand"],["iqela","team"]]},
 {"t":"mc","q":"The loud cork-pop click from the roof of the mouth is written…","o":["q","c","x"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"qonda","o":["qonda","qala","ucango"],"a":0}
 ]},
-{"id":"xh_s4_5","title":"Checkpoint: the q click","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does qonda mean?","o":["understand","begin","tell"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"iqanda","o":["iqanda","iqela","ixoxo"],"a":0},
 {"t":"mc","q":"Which one means team?","o":["iqela","iqanda","imoto"],"a":0},
@@ -221,8 +221,8 @@ const XH_LESSONS=[
 ]},
 
 /* ---------- s5 · Click variants ---------- */
-{"id":"xh_s5","title":"Clicks with company","step":"learn","meta":"Aspirated, voiced and nasal clicks — and the name isiXhosa","vocab":[["isiXhosa","ee-see-XHAW-sah","the Xhosa language"],["nceda","NCEH-dah","please"],["incwadi","een-CWAH-dee","book"],["iqhude","ee-QHOO-deh","rooster"],["umngqusho","oom-NGQOO-shaw","samp and beans"],["ingca","een-GCAH","grass"]],"ex":[
-{"t":"note","tag":"Clicks change clothes","q":"The h, the g and the n","body":"<p>Each click has three companions. Add <b>h</b> and it comes with a puff of air: the <b>xh</b> in <b>isiXhosa</b> — the name of the language itself! Add <b>n</b> and it hums through the nose: <b>nceda</b>, <i>please</i>. Add <b>g</b> and it turns deep and voiced: <b>ingca</b>, <i>grass</i>.</p><p>Do not memorise the system — just listen and copy, word by word.</p>","eg":[["isiXhosa","ee-see-XHAW-sah","the Xhosa language"],["nceda","NCEH-dah","please"],["ingca","een-GCAH","grass"]]},
+{"id":"xh_s5","title":"The click variants","step":"learn","meta":"Aspirated, voiced and nasal clicks — and the name isiXhosa","vocab":[["isiXhosa","ee-see-XHAW-sah","the Xhosa language"],["nceda","NCEH-dah","please"],["incwadi","een-CWAH-dee","book"],["iqhude","ee-QHOO-deh","rooster"],["umngqusho","oom-NGQOO-shaw","samp and beans"],["ingca","een-GCAH","grass"]],"ex":[
+{"t":"note","tag":"Aspirated and nasal clicks","q":"The h, the g and the n","body":"<p>Each click has three companions. Add <b>h</b> and it comes with a puff of air: the <b>xh</b> in <b>isiXhosa</b> — the name of the language itself! Add <b>n</b> and it hums through the nose: <b>nceda</b>, <i>please</i>. Add <b>g</b> and it turns deep and voiced: <b>ingca</b>, <i>grass</i>.</p><p>Do not memorise the system — just listen and copy, word by word.</p>","eg":[["isiXhosa","ee-see-XHAW-sah","the Xhosa language"],["nceda","NCEH-dah","please"],["ingca","een-GCAH","grass"]]},
 {"t":"li","q":"Which one do you hear?","say":"isiXhosa","o":["isiXhosa","nceda"],"a":0},
 {"t":"mc","q":"What does nceda mean?","o":["please","book","grass"],"a":0},
 {"t":"note","tag":"Real words, real food","q":"A book, a rooster and lunch","body":"<p><b>incwadi</b> is <i>a book</i>, <b>iqhude</b> is <i>a rooster</i> (hear the puff on qh), and <b>umngqusho</b> — samp and beans — is the beloved Xhosa dish you will be offered in any Eastern Cape home. Say it slowly: oom-NGQOO-shaw. If you can order umngqusho, your clicks have arrived.</p>","eg":[["incwadi","een-CWAH-dee","book"],["iqhude","ee-QHOO-deh","rooster"],["umngqusho","oom-NGQOO-shaw","samp and beans"]]},
@@ -231,7 +231,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"ingca","o":["ingca","nceda"],"a":0},
 {"t":"mc","q":"Which one means the Xhosa language?","o":["isiXhosa","umngqusho","incwadi"],"a":0}
 ]},
-{"id":"xh_s5_2","title":"Hearing the variants","step":"recognize","meta":"Plain click or dressed-up click?","vocab":[],"ex":[
+{"id":"xh_s5_2","title":"Recognize","step":"recognize","meta":"Plain click or dressed-up click?","vocab":[],"ex":[
 {"t":"li","q":"Which word do you hear?","say":"iqhude","o":["iqhude","iqanda","iqela"],"a":0},
 {"t":"mc","q":"What does umngqusho mean?","o":["samp and beans","grass","egg"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"nceda","o":["nceda","cela","ingca"],"a":0},
@@ -239,21 +239,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"incwadi","o":["incwadi","ingca","nceda"],"a":0},
 {"t":"mc","q":"To say please when asking for something, use…","o":["nceda","uxolo","ewe"],"a":0}
 ]},
-{"id":"xh_s5_3","title":"Building variant words","step":"build","meta":"Spell the dressed-up clicks","vocab":[],"ex":[
+{"id":"xh_s5_3","title":"Build","step":"build","meta":"Spell the dressed-up clicks","vocab":[],"ex":[
 {"t":"fill","q":"Complete the language name","s":"isi___osa","o":["Xh","X","Q"],"a":0},
 {"t":"wb","q":"Build the word: please","a":["nceda"],"pool":["nceda","ingca","cela"]},
 {"t":"fill","q":"Complete: book","s":"i___wadi","o":["nc","ng","nq"],"a":0},
 {"t":"wb","q":"Build the word: samp and beans","a":["umngqusho"],"pool":["umngqusho","incwadi","iqhude"]},
 {"t":"li","q":"Which word do you hear?","say":"isiXhosa","o":["isiXhosa","incwadi","umngqusho"],"a":0}
 ]},
-{"id":"xh_s5_4","title":"Variants in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isiXhosa","the Xhosa language"],["nceda","please"],["incwadi","book"]]},
 {"t":"li","q":"Which word do you hear?","say":"iqhude","o":["iqhude","umngqusho","ingca"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iqhude","rooster"],["umngqusho","samp and beans"],["ingca","grass"]]},
 {"t":"mc","q":"The xh in isiXhosa is the x click plus…","o":["a puff of air","a hum through the nose","a deep voiced sound"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"nceda","o":["nceda","incwadi","isiXhosa"],"a":0}
 ]},
-{"id":"xh_s5_5","title":"Checkpoint: click variants","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does iqhude mean?","o":["rooster","egg","book"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"umngqusho","o":["umngqusho","ingca","iqhude"],"a":0},
 {"t":"mc","q":"Which one means please?","o":["nceda","uxolo","enkosi"],"a":0},
@@ -274,7 +274,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"tshintsha","o":["tshintsha","hlala"],"a":0},
 {"t":"mc","q":"Which one means change?","o":["tshintsha","hlala","ukutya"],"a":0}
 ]},
-{"id":"xh_s6_2","title":"Hearing the special sounds","step":"recognize","meta":"Fine ears for fine sounds","vocab":[],"ex":[
+{"id":"xh_s6_2","title":"Recognize","step":"recognize","meta":"Fine ears for fine sounds","vocab":[],"ex":[
 {"t":"li","q":"Which word do you hear?","say":"indlu","o":["indlu","inja","inyama"],"a":0},
 {"t":"mc","q":"What does hlala mean?","o":["sit down","change","house"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"inja","o":["inja","inyama","indlu"],"a":0},
@@ -282,21 +282,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"inyama","o":["inyama","inja","ukutya"],"a":0},
 {"t":"mc","q":"What does inja mean?","o":["dog","meat","frog"],"a":0}
 ]},
-{"id":"xh_s6_3","title":"Building special sounds","step":"build","meta":"Spell hl, dl and friends","vocab":[],"ex":[
+{"id":"xh_s6_3","title":"Build","step":"build","meta":"Spell hl, dl and friends","vocab":[],"ex":[
 {"t":"fill","q":"Complete: sit down","s":"___ala","o":["hl","dl","tsh"],"a":0},
 {"t":"wb","q":"Build the word: house","a":["indlu"],"pool":["indlu","inja","hlala"]},
 {"t":"fill","q":"Complete: food","s":"uku___a","o":["ty","tsh","ny"],"a":0},
 {"t":"wb","q":"Build the word: meat","a":["inyama"],"pool":["inyama","ukutya","inja"]},
 {"t":"li","q":"Which word do you hear?","say":"hlala","o":["hlala","tshintsha","indlu"],"a":0}
 ]},
-{"id":"xh_s6_4","title":"Special sounds in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["hlala","sit down"],["indlu","house"],["ukutya","food"]]},
 {"t":"li","q":"Which word do you hear?","say":"inja","o":["inja","indlu","hlala"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["inja","dog"],["inyama","meat"],["tshintsha","change"]]},
 {"t":"mc","q":"The blown l with no humming is written…","o":["hl","dl","ny"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"ukutya","o":["ukutya","tshintsha","inyama"],"a":0}
 ]},
-{"id":"xh_s6_5","title":"Checkpoint: special sounds","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_s6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ukutya mean?","o":["food","meat","house"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"indlu","o":["indlu","inyama","iqanda"],"a":0},
 {"t":"mc","q":"Which one means dog?","o":["inja","inyama","iqhude"],"a":0},
@@ -317,7 +317,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which goodbye do you hear?","say":"hamba kakuhle","o":["hamba kakuhle","sala kakuhle"],"a":0},
 {"t":"mc","q":"You are LEAVING. To the friend staying behind you say…","o":["Sala kakuhle","Hamba kakuhle","Molweni"],"a":0}
 ]},
-{"id":"xh_s7_2","title":"Hearing the greetings","step":"recognize","meta":"One person or many? Coming or going?","vocab":[],"ex":[
+{"id":"xh_s7_2","title":"Recognize","step":"recognize","meta":"One person or many? Coming or going?","vocab":[],"ex":[
 {"t":"li","q":"Which greeting do you hear?","say":"molo","o":["molo","molweni","enkosi"],"a":0},
 {"t":"mc","q":"What does enkosi mean?","o":["thank you","hello","goodbye"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"sala kakuhle","o":["sala kakuhle","hamba kakuhle"],"a":0},
@@ -325,21 +325,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which word do you hear?","say":"kakhulu","o":["kakhulu","enkosi","molo"],"a":0},
 {"t":"mc","q":"Your friend is walking away. You call…","o":["Hamba kakuhle","Sala kakuhle","Andiqondi"],"a":0}
 ]},
-{"id":"xh_s7_3","title":"Building greetings","step":"build","meta":"Assemble hello, thanks and goodbye","vocab":[],"ex":[
+{"id":"xh_s7_3","title":"Build","step":"build","meta":"Assemble hello, thanks and goodbye","vocab":[],"ex":[
 {"t":"fill","q":"Complete the greeting to a group","s":"Mol___ni","o":["we","o","a"],"a":0},
 {"t":"wb","q":"Build: thank you very much","a":["enkosi","kakhulu"],"pool":["enkosi","kakhulu","molo"]},
 {"t":"fill","q":"Complete: go well","s":"Hamba kaku___e","o":["hl","dl","tsh"],"a":0},
 {"t":"wb","q":"Build: stay well","a":["sala","kakuhle"],"pool":["sala","kakuhle","hamba"]},
 {"t":"li","q":"Which one do you hear?","say":"molweni","o":["molweni","molo","kakhulu"],"a":0}
 ]},
-{"id":"xh_s7_4","title":"Greetings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_s7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["molo","hello (to one person)"],["molweni","hello (to several people)"],["enkosi","thank you"]]},
 {"t":"li","q":"Which one do you hear?","say":"hamba kakuhle","o":["hamba kakuhle","sala kakuhle","molweni"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kakhulu","very much"],["hamba kakuhle","go well"],["sala kakuhle","stay well"]]},
 {"t":"mc","q":"Before asking a stranger for directions, you first…","o":["greet them","apologise","say your name"],"a":0},
 {"t":"li","q":"Which word do you hear?","say":"enkosi","o":["enkosi","molweni","sala kakuhle"],"a":0}
 ]},
-{"id":"xh_s7_5","title":"Checkpoint: the sounds of Xhosa","step":"checkpoint","meta":"Zone 1 complete — show it all","vocab":[],"ex":[
+{"id":"xh_s7_5","title":"Checkpoint","step":"checkpoint","meta":"Zone 1 complete — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Which greeting is for several people?","o":["Molweni","Molo","Enkosi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"molo","o":["molo","molweni","enkosi"],"a":0},
 {"t":"mc","q":"The person staying behind says…","o":["Hamba kakuhle","Sala kakuhle","Nceda"],"a":0},
@@ -361,7 +361,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"wena","o":["wena","nawe"],"a":0},
 {"t":"mc","q":"To bounce the question back — and you? — you say…","o":["Wena unjani?","Ndikhona","Molweni"],"a":0}
 ]},
-{"id":"xh_g1_2","title":"Hearing the exchange","step":"recognize","meta":"Question or answer?","vocab":[],"ex":[
+{"id":"xh_g1_2","title":"Recognize","step":"recognize","meta":"Question or answer?","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"unjani","o":["unjani","kunjani","ndiyaphila"],"a":0},
 {"t":"mc","q":"What does ndiyaphila mean?","o":["I am fine","how are you?","you too"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kunjani","o":["kunjani","unjani","ndikhona"],"a":0},
@@ -369,21 +369,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"nawe","o":["nawe","wena","ndiyaphila"],"a":0},
 {"t":"mc","q":"A friend asks Kunjani? A natural reply is…","o":["Ndikhona","Molweni","Uxolo"],"a":0}
 ]},
-{"id":"xh_g1_3","title":"Building the exchange","step":"build","meta":"Say it yourself","vocab":[],"ex":[
+{"id":"xh_g1_3","title":"Build","step":"build","meta":"Say it yourself","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am fine","s":"Ndiyaphi___, enkosi.","o":["la","lo","le"],"a":0},
 {"t":"wb","q":"Build: and you, how are you?","a":["wena","unjani"],"pool":["wena","unjani","nawe"]},
 {"t":"fill","q":"Complete the casual question","s":"Ku___ani?","o":["nj","ny","ng"],"a":0},
 {"t":"wb","q":"Build: I am okay","a":["ndikhona"],"pool":["ndikhona","ndiyaphila","wena"]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphila","o":["ndiyaphila","ndikhona","nawe"],"a":0}
 ]},
-{"id":"xh_g1_4","title":"The exchange in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["unjani","how are you?"],["ndiyaphila","I am fine"],["ndikhona","I am okay"]]},
 {"t":"li","q":"Which one do you hear?","say":"unjani","o":["unjani","wena","kunjani"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kunjani","how is it going?"],["wena","you"],["nawe","you too"]]},
 {"t":"mc","q":"The ndi- at the start of ndiyaphila means…","o":["I","you","we"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kunjani","o":["kunjani","ndikhona","unjani"],"a":0}
 ]},
-{"id":"xh_g1_5","title":"Checkpoint: how are you?","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Someone greets you: Molo! Unjani? — you reply…","o":["Ndiyaphila, enkosi","Hamba kakuhle","Andiqondi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndikhona","o":["ndikhona","ndiyaphila","kunjani"],"a":0},
 {"t":"mc","q":"What does wena mean?","o":["you","I","you too"],"a":0},
@@ -403,7 +403,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which question do you hear?","say":"Igama lakho ngubani?","o":["Igama lakho ngubani?","Ungubani?"],"a":0},
 {"t":"mc","q":"What does lakho mean?","o":["your","my","who"],"a":0}
 ]},
-{"id":"xh_g2_2","title":"Hearing names","step":"recognize","meta":"Who is asking what?","vocab":[],"ex":[
+{"id":"xh_g2_2","title":"Recognize","step":"recognize","meta":"Who is asking what?","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"lam","o":["lam","lakho","igama"],"a":0},
 {"t":"mc","q":"Igama lakho ngubani? asks about…","o":["your name","my name","your home"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"NdinguSipho","o":["NdinguSipho","Ungubani?","igama"],"a":0},
@@ -411,21 +411,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"lakho","o":["lakho","lam","wena"],"a":0},
 {"t":"mc","q":"igama lam means…","o":["my name","your name","a person"],"a":0}
 ]},
-{"id":"xh_g2_3","title":"Building introductions","step":"build","meta":"Put your name into Xhosa","vocab":[],"ex":[
+{"id":"xh_g2_3","title":"Build","step":"build","meta":"Put your name into Xhosa","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am Sipho","s":"Ndingu___ipho","o":["S","Th","B"],"a":0},
 {"t":"wb","q":"Build: my name","a":["igama","lam"],"pool":["igama","lam","lakho"]},
 {"t":"fill","q":"Complete the question: your name is who?","s":"Igama lakho ngu___ani?","o":["b","ph","nj"],"a":0},
 {"t":"wb","q":"Build: what is your name? (literally: name your who?)","a":["igama","lakho","ngubani"],"pool":["igama","lakho","ngubani","lam"]},
 {"t":"li","q":"Which one do you hear?","say":"igama","o":["igama","lam","Ungubani?"],"a":0}
 ]},
-{"id":"xh_g2_4","title":"Names in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igama","name"],["lam","my"],["lakho","your"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ungubani?","o":["Ungubani?","Igama lakho ngubani?","NdinguSipho"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["NdinguSipho","I am Sipho"],["Ungubani?","who are you?"]]},
 {"t":"mc","q":"To answer Ungubani?, you start with…","o":["Ndingu-","Lakho","Unjani"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"lam","o":["lam","igama","lakho"],"a":0}
 ]},
-{"id":"xh_g2_5","title":"Checkpoint: names","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does igama mean?","o":["name","person","greeting"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Igama lakho ngubani?","o":["Igama lakho ngubani?","Ungubani?","NdinguSipho"],"a":0},
 {"t":"mc","q":"Which one means your?","o":["lakho","lam","wena"],"a":0},
@@ -446,7 +446,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umhlobo","o":["umhlobo","indoda"],"a":0},
 {"t":"mc","q":"Which one means friend?","o":["umhlobo","umntu","indoda"],"a":0}
 ]},
-{"id":"xh_g3_2","title":"Hearing people words","step":"recognize","meta":"Singular or plural, by ear","vocab":[],"ex":[
+{"id":"xh_g3_2","title":"Recognize","step":"recognize","meta":"Singular or plural, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"umntu","o":["umntu","abantu","umntwana"],"a":0},
 {"t":"mc","q":"What does indoda mean?","o":["man","friend","child"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umntwana","o":["umntwana","abantwana","umhlobo"],"a":0},
@@ -454,21 +454,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"indoda","o":["indoda","umhlobo","umntu"],"a":0},
 {"t":"mc","q":"To make umntwana plural, um- becomes…","o":["aba-","imi-","izi-"],"a":0}
 ]},
-{"id":"xh_g3_3","title":"Building people words","step":"build","meta":"Swap the prefixes yourself","vocab":[],"ex":[
+{"id":"xh_g3_3","title":"Build","step":"build","meta":"Swap the prefixes yourself","vocab":[],"ex":[
 {"t":"fill","q":"Complete: people","s":"___ntu","o":["aba","um","imi"],"a":0},
 {"t":"wb","q":"Build the word: children","a":["abantwana"],"pool":["abantwana","umntwana","abantu"]},
 {"t":"fill","q":"Complete: friend","s":"um___obo","o":["hl","dl","tsh"],"a":0},
 {"t":"wb","q":"Build the word: man","a":["indoda"],"pool":["indoda","umntu","umhlobo"]},
 {"t":"li","q":"Which one do you hear?","say":"abantu","o":["abantu","abantwana","indoda"],"a":0}
 ]},
-{"id":"xh_g3_4","title":"People in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umntu","person"],["abantu","people"],["indoda","man"]]},
 {"t":"li","q":"Which one do you hear?","say":"umhlobo","o":["umhlobo","umntwana","abantu"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umntwana","child"],["abantwana","children"],["umhlobo","friend"]]},
 {"t":"mc","q":"The idea that a person is a person through other people is called…","o":["ubuntu","umntu","indoda"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"abantwana","o":["abantwana","umntwana","umhlobo"],"a":0}
 ]},
-{"id":"xh_g3_5","title":"Checkpoint: people","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does abantu mean?","o":["people","person","children"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umntwana","o":["umntwana","abantwana","umntu"],"a":0},
 {"t":"mc","q":"Which one means man?","o":["indoda","umhlobo","umntu"],"a":0},
@@ -488,7 +488,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Enkosi sisi","o":["Enkosi sisi","Uxolo bhuti"],"a":0},
 {"t":"mc","q":"ndiyabulela means…","o":["I thank you","no problem","excuse me"],"a":0}
 ]},
-{"id":"xh_g4_2","title":"Hearing polite words","step":"recognize","meta":"Bro, sis and gratitude by ear","vocab":[],"ex":[
+{"id":"xh_g4_2","title":"Recognize","step":"recognize","meta":"Bro, sis and gratitude by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"sisi","o":["sisi","bhuti","akunani"],"a":0},
 {"t":"mc","q":"What does akunani mean?","o":["no problem","thank you","excuse me"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uxolo bhuti","o":["Uxolo bhuti","Enkosi sisi","ndiyabulela"],"a":0},
@@ -496,21 +496,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"akunani","o":["akunani","ndiyabulela","sisi"],"a":0},
 {"t":"mc","q":"Which one is the warmer, fuller thank you?","o":["ndiyabulela","enkosi","akunani"],"a":0}
 ]},
-{"id":"xh_g4_3","title":"Building polite phrases","step":"build","meta":"Politeness, assembled","vocab":[],"ex":[
+{"id":"xh_g4_3","title":"Build","step":"build","meta":"Politeness, assembled","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I thank you","s":"Ndiyabu___la","o":["le","la","lo"],"a":0},
 {"t":"wb","q":"Build: excuse me, bro","a":["uxolo","bhuti"],"pool":["uxolo","bhuti","sisi"]},
 {"t":"fill","q":"Complete: no problem","s":"Akuna___","o":["ni","na","ne"],"a":0},
 {"t":"wb","q":"Build: thank you, sis","a":["enkosi","sisi"],"pool":["enkosi","sisi","bhuti"]},
 {"t":"li","q":"Which one do you hear?","say":"bhuti","o":["bhuti","akunani","sisi"],"a":0}
 ]},
-{"id":"xh_g4_4","title":"Polite words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["bhuti","bro (young man)"],["sisi","sis (young woman)"],["akunani","no problem"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyabulela","o":["ndiyabulela","Enkosi sisi","akunani"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyabulela","I thank you"],["Uxolo bhuti","excuse me, bro"],["Enkosi sisi","thank you, sis"]]},
 {"t":"mc","q":"A stranger your age helped you. Warmest thanks…","o":["Ndiyabulela bhuti","Akunani","Ungubani?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"sisi","o":["sisi","bhuti","enkosi"],"a":0}
 ]},
-{"id":"xh_g4_5","title":"Checkpoint: polite words","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndiyabulela mean?","o":["I thank you","no problem","who are you?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uxolo bhuti","o":["Uxolo bhuti","Enkosi sisi","akunani"],"a":0},
 {"t":"mc","q":"The reply that waves off thanks is…","o":["akunani","ndiyabulela","molo"],"a":0},
@@ -530,7 +530,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndivela","o":["ndivela","eMonti"],"a":0},
 {"t":"mc","q":"Ndivela eKapa means…","o":["I come from Cape Town","I live in Cape Town","where is Cape Town?"],"a":0}
 ]},
-{"id":"xh_g5_2","title":"Hearing places","step":"recognize","meta":"Cities and the question word","vocab":[],"ex":[
+{"id":"xh_g5_2","title":"Recognize","step":"recognize","meta":"Cities and the question word","vocab":[],"ex":[
 {"t":"li","q":"Which place do you hear?","say":"eGoli","o":["eGoli","eKapa","eMonti"],"a":0},
 {"t":"mc","q":"What does ndivela mean?","o":["I come from","where?","I live"],"a":0},
 {"t":"li","q":"Which place do you hear?","say":"eMonti","o":["eMonti","eGoli","eKapa"],"a":0},
@@ -538,21 +538,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"phi?","o":["phi?","ndivela","eKapa"],"a":0},
 {"t":"mc","q":"eMonti is…","o":["East London","Johannesburg","Cape Town"],"a":0}
 ]},
-{"id":"xh_g5_3","title":"Building origins","step":"build","meta":"Say where you are from","vocab":[],"ex":[
+{"id":"xh_g5_3","title":"Build","step":"build","meta":"Say where you are from","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I come from Cape Town","s":"Ndivela e___apa.","o":["K","G","M"],"a":0},
 {"t":"wb","q":"Build: where are you from?","a":["uvela","phi"],"pool":["uvela","phi","ndivela"]},
 {"t":"fill","q":"Complete: Johannesburg","s":"eGo___","o":["li","lo","la"],"a":0},
 {"t":"wb","q":"Build: I come from Johannesburg","a":["ndivela","eGoli"],"pool":["ndivela","eGoli","eKapa"]},
 {"t":"li","q":"Which one do you hear?","say":"eKapa","o":["eKapa","eMonti","phi?"],"a":0}
 ]},
-{"id":"xh_g5_4","title":"Origins in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["phi?","where?"],["ndivela","I come from"],["eKapa","in Cape Town"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uvela phi?","o":["Uvela phi?","eGoli","ndivela"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["eGoli","in Johannesburg"],["eMonti","in East London"]]},
 {"t":"mc","q":"The little e- on a place name means…","o":["in or at that place","the big one","far away"],"a":0},
 {"t":"li","q":"Which place do you hear?","say":"eMonti","o":["eMonti","eKapa","eGoli"],"a":0}
 ]},
-{"id":"xh_g5_5","title":"Checkpoint: where from","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Uvela phi? asks…","o":["where are you from?","where do you live?","who are you?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndivela","o":["ndivela","phi?","eGoli"],"a":0},
 {"t":"mc","q":"Which one is Cape Town?","o":["eKapa","eGoli","eMonti"],"a":0},
@@ -573,7 +573,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ilokishi","o":["ilokishi","idolophu"],"a":0},
 {"t":"mc","q":"idolophu means…","o":["town","township","home"],"a":0}
 ]},
-{"id":"xh_g6_2","title":"Hearing home ground","step":"recognize","meta":"Places to live, by ear","vocab":[],"ex":[
+{"id":"xh_g6_2","title":"Recognize","step":"recognize","meta":"Places to live, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndihlala","o":["ndihlala","Uhlala phi?","ilokishi"],"a":0},
 {"t":"mc","q":"What does ilokishi mean?","o":["township","town","house"],"a":0},
 {"t":"li","q":"Which place do you hear?","say":"eGugulethu","o":["eGugulethu","eKhayelitsha","eKapa"],"a":0},
@@ -581,21 +581,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"idolophu","o":["idolophu","ilokishi","ndihlala"],"a":0},
 {"t":"mc","q":"eKhayelitsha means…","o":["new home","our pride","big town"],"a":0}
 ]},
-{"id":"xh_g6_3","title":"Building home phrases","step":"build","meta":"Say where you live","vocab":[],"ex":[
+{"id":"xh_g6_3","title":"Build","step":"build","meta":"Say where you live","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I live in Gugulethu","s":"Ndihlala eGugule___u.","o":["th","t","tsh"],"a":0},
 {"t":"wb","q":"Build: where do you live?","a":["uhlala","phi"],"pool":["uhlala","phi","ndihlala"]},
 {"t":"fill","q":"Complete: township","s":"iloki___i","o":["sh","tsh","s"],"a":0},
 {"t":"wb","q":"Build: I live in Khayelitsha","a":["ndihlala","eKhayelitsha"],"pool":["ndihlala","eKhayelitsha","idolophu"]},
 {"t":"li","q":"Which one do you hear?","say":"eGugulethu","o":["eGugulethu","idolophu","ilokishi"],"a":0}
 ]},
-{"id":"xh_g6_4","title":"Home ground in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uhlala phi?","where do you live?"],["ndihlala","I live"],["ilokishi","township"]]},
 {"t":"li","q":"Which place do you hear?","say":"eKhayelitsha","o":["eKhayelitsha","eGugulethu","eMonti"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["eKhayelitsha","in Khayelitsha"],["eGugulethu","in Gugulethu"],["idolophu","town"]]},
 {"t":"mc","q":"hlala means sit down AND…","o":["live somewhere","come from","walk"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ilokishi","o":["ilokishi","idolophu","eGugulethu"],"a":0}
 ]},
-{"id":"xh_g6_5","title":"Checkpoint: where you live","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_g6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Uhlala phi? asks…","o":["where do you live?","where are you from?","what is your name?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndihlala","o":["ndihlala","ilokishi","eKhayelitsha"],"a":0},
 {"t":"mc","q":"Which one means township?","o":["ilokishi","idolophu","indlu"],"a":0},
@@ -606,7 +606,7 @@ const XH_LESSONS=[
 
 /* ---------- g7 · Do you speak Xhosa? ---------- */
 {"id":"xh_g7","title":"Do you speak Xhosa?","step":"learn","meta":"The learner survival kit","vocab":[["Uthetha isiXhosa?","oo-TEH-tah ee-see-XHAW-sah","do you speak Xhosa?"],["ndithetha","ndee-TEH-tah","I speak"],["kancinci","kahn-CEEN-cee","a little"],["Uyaqonda?","oo-yah-QAWN-dah","do you understand?"],["ndiyaqonda","ndee-yah-QAWN-dah","I understand"],["Ndifunda isiXhosa","ndee-FOON-dah ee-see-XHAW-sah","I am learning Xhosa"]],"ex":[
-{"t":"note","tag":"The magic sentence","q":"Ndifunda isiXhosa","body":"<p>Say <b>Ndifunda isiXhosa</b> — <i>I am learning Xhosa</i> — anywhere in Cape Town and watch faces light up. It is the sentence that turns strangers into teachers.</p><p><b>Uthetha isiXhosa?</b> asks <i>do you speak Xhosa?</i>; answer honestly with <b>ndithetha kancinci</b> — <i>I speak a little</i>.</p>","eg":[["Ndifunda isiXhosa","ndee-FOON-dah ee-see-XHAW-sah","I am learning Xhosa"],["Uthetha isiXhosa?","oo-TEH-tah ee-see-XHAW-sah","do you speak Xhosa?"],["ndithetha","ndee-TEH-tah","I speak"]]},
+{"t":"note","tag":"The learner&rsquo;s sentence","q":"Ndifunda isiXhosa","body":"<p>Say <b>Ndifunda isiXhosa</b> — <i>I am learning Xhosa</i> — anywhere in Cape Town and watch faces light up. It is the sentence that turns strangers into teachers.</p><p><b>Uthetha isiXhosa?</b> asks <i>do you speak Xhosa?</i>; answer honestly with <b>ndithetha kancinci</b> — <i>I speak a little</i>.</p>","eg":[["Ndifunda isiXhosa","ndee-FOON-dah ee-see-XHAW-sah","I am learning Xhosa"],["Uthetha isiXhosa?","oo-TEH-tah ee-see-XHAW-sah","do you speak Xhosa?"],["ndithetha","ndee-TEH-tah","I speak"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa","o":["Ndifunda isiXhosa","Uthetha isiXhosa?"],"a":0},
 {"t":"mc","q":"What does ndithetha mean?","o":["I speak","I learn","I understand"],"a":0},
 {"t":"note","tag":"A little","q":"kancinci — the honest word","body":"<p><b>Kancinci</b> is <i>a little</i> — the learner word you will say a hundred times: <b>Ndithetha isiXhosa kancinci</b>. Its opposite from the greetings, <b>kakhulu</b>, means <i>a lot</i>.</p>","eg":[["kancinci","kahn-CEEN-cee","a little"]]},
@@ -616,7 +616,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiyaqonda","o":["ndiyaqonda","Uyaqonda?"],"a":0},
 {"t":"mc","q":"Uyaqonda? asks…","o":["do you understand?","do you speak?","are you learning?"],"a":0}
 ]},
-{"id":"xh_g7_2","title":"Hearing the survival kit","step":"recognize","meta":"Speaking, learning, understanding","vocab":[],"ex":[
+{"id":"xh_g7_2","title":"Recognize","step":"recognize","meta":"Speaking, learning, understanding","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Uthetha isiXhosa?","o":["Uthetha isiXhosa?","Ndifunda isiXhosa","ndithetha"],"a":0},
 {"t":"mc","q":"What does kancinci mean?","o":["a little","a lot","again"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uyaqonda?","o":["Uyaqonda?","ndiyaqonda","kancinci"],"a":0},
@@ -624,21 +624,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndithetha","o":["ndithetha","ndiyaqonda","Ndifunda isiXhosa"],"a":0},
 {"t":"mc","q":"The sentence that makes strangers into teachers is…","o":["Ndifunda isiXhosa","Uyaqonda?","Akunani"],"a":0}
 ]},
-{"id":"xh_g7_3","title":"Building learner phrases","step":"build","meta":"Your survival kit, assembled","vocab":[],"ex":[
+{"id":"xh_g7_3","title":"Build","step":"build","meta":"Your survival kit, assembled","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I speak a little","s":"Ndithetha kancin___.","o":["ci","ce","ca"],"a":0},
 {"t":"wb","q":"Build: I am learning Xhosa","a":["ndifunda","isiXhosa"],"pool":["ndifunda","isiXhosa","ndithetha"]},
 {"t":"fill","q":"Complete: do you understand?","s":"Uya___onda?","o":["q","c","x"],"a":0},
 {"t":"wb","q":"Build: do you speak Xhosa?","a":["uthetha","isiXhosa"],"pool":["uthetha","isiXhosa","kancinci"]},
 {"t":"li","q":"Which one do you hear?","say":"kancinci","o":["kancinci","ndiyaqonda","ndithetha"],"a":0}
 ]},
-{"id":"xh_g7_4","title":"The kit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_g7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithetha","I speak"],["kancinci","a little"],["ndiyaqonda","I understand"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa","o":["Ndifunda isiXhosa","Uthetha isiXhosa?","Uyaqonda?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uthetha isiXhosa?","do you speak Xhosa?"],["Uyaqonda?","do you understand?"]]},
 {"t":"mc","q":"You lost the thread. From the sounds zone, you say…","o":["Andiqondi","Ndiyaqonda","Kancinci"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uyaqonda?","o":["Uyaqonda?","ndiyaqonda","kancinci"],"a":0}
 ]},
-{"id":"xh_g7_5","title":"Checkpoint: Zone 2 complete","step":"checkpoint","meta":"Greetings and people — show it all","vocab":[],"ex":[
+{"id":"xh_g7_5","title":"Checkpoint","step":"checkpoint","meta":"Greetings and people — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Uthetha isiXhosa? — your honest answer…","o":["Ndithetha kancinci","Ndiyaphila","Akunani"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaqonda","o":["ndiyaqonda","ndithetha","kancinci"],"a":0},
 {"t":"mc","q":"What does Ndifunda isiXhosa mean?","o":["I am learning Xhosa","I speak Xhosa well","do you speak Xhosa?"],"a":0},
@@ -660,7 +660,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which greeting do you hear?","say":"Molo mama","o":["Molo mama","Molo tata"],"a":0},
 {"t":"mc","q":"An older man you do not know helps you. You greet him…","o":["Molo tata","Molo bhuti","Molweni"],"a":0}
 ]},
-{"id":"xh_f1_2","title":"Hearing the elders","step":"recognize","meta":"Mother, father, the great ones","vocab":[],"ex":[
+{"id":"xh_f1_2","title":"Recognize","step":"recognize","meta":"Mother, father, the great ones","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"utata","o":["utata","umama","umakhulu"],"a":0},
 {"t":"mc","q":"What does umama mean?","o":["mother","madam only","sister"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utatomkhulu","o":["utatomkhulu","umakhulu","utata"],"a":0},
@@ -668,21 +668,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which greeting do you hear?","say":"Molo tata","o":["Molo tata","Molo mama","Molweni"],"a":0},
 {"t":"mc","q":"The address words for elders you do not know are…","o":["tata and mama","bhuti and sisi","wena and nawe"],"a":0}
 ]},
-{"id":"xh_f1_3","title":"Building family words","step":"build","meta":"Assemble mother, father and the greetings","vocab":[],"ex":[
+{"id":"xh_f1_3","title":"Build","step":"build","meta":"Assemble mother, father and the greetings","vocab":[],"ex":[
 {"t":"fill","q":"Complete: grandmother","s":"umakhu___","o":["lu","la","lo"],"a":0},
 {"t":"wb","q":"Build: hello madam","a":["molo","mama"],"pool":["molo","mama","tata"]},
 {"t":"fill","q":"Complete: father","s":"u___ta","o":["ta","da","tha"],"a":0},
 {"t":"wb","q":"Build: hello sir","a":["molo","tata"],"pool":["molo","tata","mama"]},
 {"t":"li","q":"Which one do you hear?","say":"umama","o":["umama","umakhulu","utata"],"a":0}
 ]},
-{"id":"xh_f1_4","title":"Elders in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umama","mother"],["utata","father"],["umakhulu","grandmother"]]},
 {"t":"li","q":"Which one do you hear?","say":"Molo tata","o":["Molo tata","Molo mama","utatomkhulu"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utatomkhulu","grandfather"],["Molo tata","hello sir"],["Molo mama","hello madam"]]},
 {"t":"mc","q":"Kin words wear which little prefix?","o":["u-","i-","um-"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utata","o":["utata","umama","Molo mama"],"a":0}
 ]},
-{"id":"xh_f1_5","title":"Checkpoint: mother & father","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does umakhulu mean?","o":["grandmother","grandfather","mother"],"a":0},
 {"t":"li","q":"Which greeting do you hear?","say":"Molo mama","o":["Molo mama","Molo tata","umama"],"a":0},
 {"t":"mc","q":"Which one means father?","o":["utata","utatomkhulu","umama"],"a":0},
@@ -708,7 +708,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umzala","o":["umzala","ubhuti"],"a":0},
 {"t":"mc","q":"Which one means cousin?","o":["umzala","usisi","oobhuti"],"a":0}
 ]},
-{"id":"xh_f2_2","title":"Hearing siblings","step":"recognize","meta":"One sibling or several","vocab":[],"ex":[
+{"id":"xh_f2_2","title":"Recognize","step":"recognize","meta":"One sibling or several","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","oosisi","ubhuti"],"a":0},
 {"t":"mc","q":"What does oosisi mean?","o":["sisters","sister","brothers"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"oobhuti","o":["oobhuti","ubhuti","umzala"],"a":0},
@@ -716,21 +716,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umzala","o":["umzala","usisi","oobhuti"],"a":0},
 {"t":"mc","q":"The kin plural prefix is…","o":["oo-","aba-","izi-"],"a":0}
 ]},
-{"id":"xh_f2_3","title":"Building sibling words","step":"build","meta":"Singulars and plurals by hand","vocab":[],"ex":[
+{"id":"xh_f2_3","title":"Build","step":"build","meta":"Singulars and plurals by hand","vocab":[],"ex":[
 {"t":"fill","q":"Complete: brothers","s":"___bhuti","o":["oo","u","aba"],"a":0},
 {"t":"wb","q":"Build the word: sister","a":["usisi"],"pool":["usisi","oosisi","umzala"]},
 {"t":"fill","q":"Complete: cousin","s":"um___ala","o":["z","dl","ts"],"a":0},
 {"t":"wb","q":"Build the word: sisters","a":["oosisi"],"pool":["oosisi","usisi","ubhuti"]},
 {"t":"li","q":"Which one do you hear?","say":"ubhuti","o":["ubhuti","oobhuti","usisi"],"a":0}
 ]},
-{"id":"xh_f2_4","title":"Siblings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ubhuti","brother"],["usisi","sister"],["umzala","cousin"]]},
 {"t":"li","q":"Which one do you hear?","say":"oosisi","o":["oosisi","oobhuti","usisi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["oobhuti","brothers"],["oosisi","sisters"]]},
 {"t":"mc","q":"usisi with the street sense of sis drops its prefix to become…","o":["sisi","oosisi","umzala"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"usisi","o":["usisi","umzala","ubhuti"],"a":0}
 ]},
-{"id":"xh_f2_5","title":"Checkpoint: siblings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does umzala mean?","o":["cousin","brother","uncle"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"oobhuti","o":["oobhuti","ubhuti","oosisi"],"a":0},
 {"t":"mc","q":"The plural of usisi is…","o":["oosisi","abasisi","izisisi"],"a":0},
@@ -756,7 +756,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ubhuti wakho","o":["ubhuti wakho","usisi wam"],"a":0},
 {"t":"mc","q":"Which one means my sister?","o":["usisi wam","usisi wakho","ubhuti wam"],"a":0}
 ]},
-{"id":"xh_f3_2","title":"Hearing mine and yours","step":"recognize","meta":"Wam or wakho?","vocab":[],"ex":[
+{"id":"xh_f3_2","title":"Recognize","step":"recognize","meta":"Wam or wakho?","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"intsapho","o":["intsapho","abazali","umama wam"],"a":0},
 {"t":"mc","q":"What does abazali mean?","o":["parents","family","grandparents"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"utata wakho","o":["utata wakho","umama wam","ubhuti wakho"],"a":0},
@@ -764,21 +764,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"usisi wam","o":["usisi wam","ubhuti wakho","abazali"],"a":0},
 {"t":"mc","q":"The word for my that follows a person is…","o":["wam","lam","nam"],"a":0}
 ]},
-{"id":"xh_f3_3","title":"Building family phrases","step":"build","meta":"Mine and yours, assembled","vocab":[],"ex":[
+{"id":"xh_f3_3","title":"Build","step":"build","meta":"Mine and yours, assembled","vocab":[],"ex":[
 {"t":"fill","q":"Complete: my mother","s":"umama ___","o":["wam","wakho","lam"],"a":0},
 {"t":"wb","q":"Build: your father","a":["utata","wakho"],"pool":["utata","wakho","wam"]},
 {"t":"fill","q":"Complete: parents","s":"aba___ali","o":["z","s","dl"],"a":0},
 {"t":"wb","q":"Build: my sister","a":["usisi","wam"],"pool":["usisi","wam","wakho"]},
 {"t":"li","q":"Which one do you hear?","say":"abazali","o":["abazali","intsapho","utata wakho"],"a":0}
 ]},
-{"id":"xh_f3_4","title":"Family phrases in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intsapho","family"],["abazali","parents"],["umama wam","my mother"]]},
 {"t":"li","q":"Which one do you hear?","say":"ubhuti wakho","o":["ubhuti wakho","usisi wam","utata wakho"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utata wakho","your father"],["usisi wam","my sister"],["ubhuti wakho","your brother"]]},
 {"t":"mc","q":"With igama the pair was lam/lakho; with people it is…","o":["wam and wakho","nam and nakho","yam and yakho"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umama wam","o":["umama wam","abazali","usisi wam"],"a":0}
 ]},
-{"id":"xh_f3_5","title":"Checkpoint: my family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does abazali mean?","o":["parents","family","cousins"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"intsapho","o":["intsapho","abazali","umzala"],"a":0},
 {"t":"mc","q":"Which one means your brother?","o":["ubhuti wakho","ubhuti wam","oobhuti"],"a":0},
@@ -804,7 +804,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"yena","o":["yena","nguye"],"a":0},
 {"t":"mc","q":"yena means…","o":["he or she","only he","only she"],"a":0}
 ]},
-{"id":"xh_f4_2","title":"Hearing introductions","step":"recognize","meta":"Who is who","vocab":[],"ex":[
+{"id":"xh_f4_2","title":"Recognize","step":"recognize","meta":"Who is who","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"lo","o":["lo","yena","nguye"],"a":0},
 {"t":"mc","q":"What does nguye mean?","o":["it is him","who is this?","this person"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Lo ngutata wam","o":["Lo ngutata wam","Lo ngumama wam","Ngubani lo?"],"a":0},
@@ -812,21 +812,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"nguye","o":["nguye","yena","lo"],"a":0},
 {"t":"mc","q":"Xhosa pronouns and gender…","o":["yena covers he and she","yena is only she","every noun has a gender"],"a":0}
 ]},
-{"id":"xh_f4_3","title":"Building introductions","step":"build","meta":"Present your family","vocab":[],"ex":[
+{"id":"xh_f4_3","title":"Build","step":"build","meta":"Present your family","vocab":[],"ex":[
 {"t":"fill","q":"Complete: this is my mother","s":"Lo ngumama ___.","o":["wam","wakho","lam"],"a":0},
 {"t":"wb","q":"Build: who is this?","a":["ngubani","lo"],"pool":["ngubani","lo","yena"]},
 {"t":"fill","q":"Complete: it is him","s":"ngu___","o":["ye","ya","yo"],"a":0},
 {"t":"wb","q":"Build: this is my father","a":["lo","ngutata","wam"],"pool":["lo","ngutata","wam","wakho"]},
 {"t":"li","q":"Which one do you hear?","say":"Ngubani lo?","o":["Ngubani lo?","Lo ngumama wam","yena"],"a":0}
 ]},
-{"id":"xh_f4_4","title":"Introductions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["lo","this person"],["yena","he or she"],["nguye","it is him"]]},
 {"t":"li","q":"Which one do you hear?","say":"Lo ngumama wam","o":["Lo ngumama wam","Lo ngutata wam","Ngubani lo?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ngubani lo?","who is this?"],["Lo ngutata wam","this is my father"]]},
 {"t":"mc","q":"The ngu- of introductions also appeared in…","o":["NdinguSipho","Ndiyaphila","Molweni"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"yena","o":["yena","lo","nguye"],"a":0}
 ]},
-{"id":"xh_f4_5","title":"Checkpoint: who is this","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Ngubani lo? asks…","o":["who is this?","who are you?","where is he?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Lo ngutata wam","o":["Lo ngutata wam","Lo ngumama wam","nguye"],"a":0},
 {"t":"mc","q":"Which one means he or she?","o":["yena","lo","wena"],"a":0},
@@ -851,7 +851,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"isiduko","o":["isiduko","amaXhosa"],"a":0},
 {"t":"mc","q":"Madiba — the name the world used for Mandela — is his…","o":["isiduko","igama","idolophu"],"a":0}
 ]},
-{"id":"xh_f5_2","title":"Hearing respect words","step":"recognize","meta":"People, clans, honour","vocab":[],"ex":[
+{"id":"xh_f5_2","title":"Recognize","step":"recognize","meta":"People, clans, honour","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"umXhosa","o":["umXhosa","amaXhosa","isiduko"],"a":0},
 {"t":"mc","q":"What does isiduko mean?","o":["clan name","respect","surname"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Enkosi mama","o":["Enkosi mama","Uxolo tata","intlonipho"],"a":0},
@@ -859,21 +859,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uxolo tata","o":["Uxolo tata","Enkosi mama","umXhosa"],"a":0},
 {"t":"mc","q":"Giving and receiving with both hands shows…","o":["intlonipho","isiduko","igama"],"a":0}
 ]},
-{"id":"xh_f5_3","title":"Building respect words","step":"build","meta":"Honour, assembled","vocab":[],"ex":[
+{"id":"xh_f5_3","title":"Build","step":"build","meta":"Honour, assembled","vocab":[],"ex":[
 {"t":"fill","q":"Complete: respect","s":"intloni___o","o":["ph","p","b"],"a":0},
 {"t":"wb","q":"Build: excuse me, sir","a":["uxolo","tata"],"pool":["uxolo","tata","mama"]},
 {"t":"fill","q":"Complete: the Xhosa people","s":"___Xhosa","o":["ama","um","isi"],"a":0},
 {"t":"wb","q":"Build: thank you, madam","a":["enkosi","mama"],"pool":["enkosi","mama","tata"]},
 {"t":"li","q":"Which one do you hear?","say":"amaXhosa","o":["amaXhosa","umXhosa","intlonipho"],"a":0}
 ]},
-{"id":"xh_f5_4","title":"Respect in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intlonipho","respect"],["isiduko","clan name"],["umXhosa","a Xhosa person"]]},
 {"t":"li","q":"Which one do you hear?","say":"isiduko","o":["isiduko","intlonipho","amaXhosa"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amaXhosa","the Xhosa people"],["Uxolo tata","excuse me, sir"],["Enkosi mama","thank you, madam"]]},
 {"t":"mc","q":"isiXhosa, umXhosa, amaXhosa — the prefixes mean…","o":["language, person, people","people, language, person","person, people, language"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"intlonipho","o":["intlonipho","isiduko","Enkosi mama"],"a":0}
 ]},
-{"id":"xh_f5_5","title":"Checkpoint: respect","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does intlonipho mean?","o":["respect","clan name","family"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umXhosa","o":["umXhosa","amaXhosa","umzala"],"a":0},
 {"t":"mc","q":"A clan name older than the surname is the…","o":["isiduko","igama","intsapho"],"a":0},
@@ -898,7 +898,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"usekhaya","o":["usekhaya","Uphi umama?"],"a":0},
 {"t":"mc","q":"Uphi umama? asks…","o":["where is mother?","is mother there?","how is mother?"],"a":0}
 ]},
-{"id":"xh_f6_2","title":"Hearing home words","step":"recognize","meta":"Here, not here, at home","vocab":[],"ex":[
+{"id":"xh_f6_2","title":"Recognize","step":"recognize","meta":"Here, not here, at home","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ukhona","o":["ukhona","akekho","ikhaya"],"a":0},
 {"t":"mc","q":"What does usekhaya mean?","o":["she is at home","she is not here","where is she?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ukhona utata?","o":["Ukhona utata?","Uphi umama?","usekhaya"],"a":0},
@@ -906,21 +906,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uphi umama?","o":["Uphi umama?","Ukhona utata?","ikhaya"],"a":0},
 {"t":"mc","q":"indlu is the building; the word for home-where-your-people-are is…","o":["ikhaya","ilokishi","intsapho"],"a":0}
 ]},
-{"id":"xh_f6_3","title":"Building home phrases","step":"build","meta":"Ask after people","vocab":[],"ex":[
+{"id":"xh_f6_3","title":"Build","step":"build","meta":"Ask after people","vocab":[],"ex":[
 {"t":"fill","q":"Complete: he is not here","s":"ake___o","o":["kh","k","q"],"a":0},
 {"t":"wb","q":"Build: is father there?","a":["ukhona","utata"],"pool":["ukhona","utata","akekho"]},
 {"t":"fill","q":"Complete: she is at home","s":"use___aya","o":["kh","k","q"],"a":0},
 {"t":"wb","q":"Build: where is mother?","a":["uphi","umama"],"pool":["uphi","umama","ukhona"]},
 {"t":"li","q":"Which one do you hear?","say":"ikhaya","o":["ikhaya","usekhaya","akekho"],"a":0}
 ]},
-{"id":"xh_f6_4","title":"Home words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikhaya","home"],["ukhona","he is here"],["akekho","he is not here"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ukhona utata?","o":["Ukhona utata?","usekhaya","Uphi umama?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ukhona utata?","is father there?"],["Uphi umama?","where is mother?"],["usekhaya","she is at home"]]},
 {"t":"mc","q":"ndikhona is I am here; ukhona is…","o":["he or she is here","you are here","we are here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"akekho","o":["akekho","ikhaya","ukhona"],"a":0}
 ]},
-{"id":"xh_f6_5","title":"Checkpoint: anyone home","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_f6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Ukhona utata? asks…","o":["is father there?","where is father?","how is father?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"usekhaya","o":["usekhaya","ukhona","ikhaya"],"a":0},
 {"t":"mc","q":"You knock; the child says Akekho. Father is…","o":["not here","at home","on his way"],"a":0},
@@ -945,7 +945,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"sonke","o":["sonke","kunye"],"a":0},
 {"t":"mc","q":"kunye means…","o":["together","all of us","at home"],"a":0}
 ]},
-{"id":"xh_f7_2","title":"Hearing the conversation","step":"recognize","meta":"We, they, well and together","vocab":[],"ex":[
+{"id":"xh_f7_2","title":"Recognize","step":"recognize","meta":"We, they, well and together","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"sihlala","o":["sihlala","bahlala","sonke"],"a":0},
 {"t":"mc","q":"What does sonke mean?","o":["all of us","together","we live"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Unjani umama?","o":["Unjani umama?","uphilile","kunye"],"a":0},
@@ -953,21 +953,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"kunye","o":["kunye","sonke","uphilile"],"a":0},
 {"t":"mc","q":"Someone asks Unjani umama? Mom is fine, so…","o":["Uphilile, enkosi","Akekho","Ndiyaphila"],"a":0}
 ]},
-{"id":"xh_f7_3","title":"Building we and they","step":"build","meta":"The concord set, assembled","vocab":[],"ex":[
+{"id":"xh_f7_3","title":"Build","step":"build","meta":"The concord set, assembled","vocab":[],"ex":[
 {"t":"fill","q":"Complete: we live in Cape Town","s":"___hlala eKapa.","o":["si","ba","ndi"],"a":0},
 {"t":"wb","q":"Build: they live in Gugulethu","a":["bahlala","eGugulethu"],"pool":["bahlala","eGugulethu","sihlala"]},
 {"t":"fill","q":"Complete: she is well","s":"uphili___","o":["le","la","lo"],"a":0},
 {"t":"wb","q":"Build: we all live together","a":["sihlala","kunye","sonke"],"pool":["sihlala","kunye","sonke","bahlala"]},
 {"t":"li","q":"Which one do you hear?","say":"bahlala","o":["bahlala","sihlala","kunye"],"a":0}
 ]},
-{"id":"xh_f7_4","title":"The conversation in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_f7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Unjani umama?","how is your mother?"],["uphilile","she is well"],["kunye","together"]]},
 {"t":"li","q":"Which one do you hear?","say":"sonke","o":["sonke","kunye","bahlala"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["sihlala","we live"],["bahlala","they live"],["sonke","all of us"]]},
 {"t":"mc","q":"The full everyday person set is…","o":["ndi-, u-, si-, ba-","um-, aba-, oo-, ama-","lo, yena, wena, nguye"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"uphilile","o":["uphilile","sonke","sihlala"],"a":0}
 ]},
-{"id":"xh_f7_5","title":"Checkpoint: Zone 3 complete","step":"checkpoint","meta":"Family & respect — show it all","vocab":[],"ex":[
+{"id":"xh_f7_5","title":"Checkpoint","step":"checkpoint","meta":"Family & respect — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Unjani umama? — mom is well, so you answer…","o":["Uphilile, enkosi","Ukhona","Sonke"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"sihlala","o":["sihlala","bahlala","uphilile"],"a":0},
 {"t":"mc","q":"Which one means they live?","o":["bahlala","sihlala","ndihlala"],"a":0},
@@ -991,7 +991,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"inye","o":["inye","zine","zimbini"],"a":0},
 {"t":"mc","q":"Prices and phone numbers in daily SA speech are usually said…","o":["in English","in old Xhosa","never aloud"],"a":0}
 ]},
-{"id":"xh_n1_2","title":"Hearing 1–5","step":"recognize","meta":"Numbers by ear","vocab":[],"ex":[
+{"id":"xh_n1_2","title":"Recognize","step":"recognize","meta":"Numbers by ear","vocab":[],"ex":[
 {"t":"li","q":"Which number do you hear?","say":"zintathu","o":["zintathu","zintlanu","zimbini"],"a":0},
 {"t":"mc","q":"Which one is 2?","o":["zimbini","zine","inye"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"zine","o":["zine","inye","zintlanu"],"a":0},
@@ -999,21 +999,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"zimbini","o":["zimbini","zintathu","zine"],"a":0},
 {"t":"mc","q":"Which one is 1?","o":["inye","zine","zimbini"],"a":0}
 ]},
-{"id":"xh_n1_3","title":"Building 1–5","step":"build","meta":"Spell the numbers","vocab":[],"ex":[
+{"id":"xh_n1_3","title":"Build","step":"build","meta":"Spell the numbers","vocab":[],"ex":[
 {"t":"fill","q":"Complete: 2","s":"zimbi___","o":["ni","ne","na"],"a":0},
 {"t":"wb","q":"Build the number: 3","a":["zintathu"],"pool":["zintathu","zintlanu","zine"]},
 {"t":"fill","q":"Complete: 5","s":"zin___anu","o":["tl","hl","dl"],"a":0},
 {"t":"wb","q":"Build the number: 1","a":["inye"],"pool":["inye","zine","zimbini"]},
 {"t":"li","q":"Which number do you hear?","say":"zintlanu","o":["zintlanu","zintathu","inye"],"a":0}
 ]},
-{"id":"xh_n1_4","title":"1–5 in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the number","pairs":[["inye","1"],["zimbini","2"],["zintathu","3"]]},
 {"t":"li","q":"Which number do you hear?","say":"zine","o":["zine","zimbini","zintlanu"],"a":0},
 {"t":"match","q":"Match the number","pairs":[["zine","4"],["zintlanu","5"]]},
 {"t":"mc","q":"Count up: inye, zimbini, … what comes next?","o":["zintathu","zine","zintlanu"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"zintathu","o":["zintathu","zine","inye"],"a":0}
 ]},
-{"id":"xh_n1_5","title":"Checkpoint: 1–5","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What is zimbini?","o":["2","3","4"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"inye","o":["inye","zimbini","zine"],"a":0},
 {"t":"mc","q":"Which one is 5?","o":["zintlanu","zintathu","zine"],"a":0},
@@ -1037,7 +1037,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"zintandathu","o":["zintandathu","sibhozo","sixhenxe"],"a":0},
 {"t":"mc","q":"The number with two clicks in it is…","o":["sixhenxe","sibhozo","lishumi"],"a":0}
 ]},
-{"id":"xh_n2_2","title":"Hearing 6–10","step":"recognize","meta":"The upper hand by ear","vocab":[],"ex":[
+{"id":"xh_n2_2","title":"Recognize","step":"recognize","meta":"The upper hand by ear","vocab":[],"ex":[
 {"t":"li","q":"Which number do you hear?","say":"sibhozo","o":["sibhozo","sixhenxe","lithoba"],"a":0},
 {"t":"mc","q":"Which one is 10?","o":["lishumi","lithoba","zintandathu"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"lithoba","o":["lithoba","lishumi","sibhozo"],"a":0},
@@ -1045,21 +1045,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which number do you hear?","say":"sixhenxe","o":["sixhenxe","zintandathu","lishumi"],"a":0},
 {"t":"mc","q":"Which one is 8?","o":["sibhozo","sixhenxe","lithoba"],"a":0}
 ]},
-{"id":"xh_n2_3","title":"Building 6–10","step":"build","meta":"Spell the upper hand","vocab":[],"ex":[
+{"id":"xh_n2_3","title":"Build","step":"build","meta":"Spell the upper hand","vocab":[],"ex":[
 {"t":"fill","q":"Complete: 7","s":"si___enxe","o":["xh","x","qh"],"a":0},
 {"t":"wb","q":"Build the number: 10","a":["lishumi"],"pool":["lishumi","lithoba","sibhozo"]},
 {"t":"fill","q":"Complete: 8","s":"sibho___o","o":["z","s","dl"],"a":0},
 {"t":"wb","q":"Build the number: 6","a":["zintandathu"],"pool":["zintandathu","zintathu","sixhenxe"]},
 {"t":"li","q":"Which number do you hear?","say":"lithoba","o":["lithoba","zintandathu","sixhenxe"],"a":0}
 ]},
-{"id":"xh_n2_4","title":"6–10 in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the number","pairs":[["zintandathu","6"],["sixhenxe","7"],["sibhozo","8"]]},
 {"t":"li","q":"Which number do you hear?","say":"lishumi","o":["lishumi","sibhozo","lithoba"],"a":0},
 {"t":"match","q":"Match the number","pairs":[["lithoba","9"],["lishumi","10"]]},
 {"t":"mc","q":"Count up: sixhenxe, sibhozo, … what comes next?","o":["lithoba","lishumi","zintandathu"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"sibhozo","o":["sibhozo","lithoba","zintandathu"],"a":0}
 ]},
-{"id":"xh_n2_5","title":"Checkpoint: 6–10","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What is sibhozo?","o":["8","7","9"],"a":0},
 {"t":"li","q":"Which number do you hear?","say":"zintandathu","o":["zintandathu","sixhenxe","lishumi"],"a":0},
 {"t":"mc","q":"Which one is 9?","o":["lithoba","lishumi","sibhozo"],"a":0},
@@ -1084,7 +1084,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which day do you hear?","say":"uLwesihlanu","o":["uLwesihlanu","uLwesine","uMvulo"],"a":0},
 {"t":"mc","q":"Which day is Tuesday?","o":["uLwesibini","uLwesithathu","uMvulo"],"a":0}
 ]},
-{"id":"xh_n3_2","title":"Hearing the week","step":"recognize","meta":"Which day is it?","vocab":[],"ex":[
+{"id":"xh_n3_2","title":"Recognize","step":"recognize","meta":"Which day is it?","vocab":[],"ex":[
 {"t":"li","q":"Which day do you hear?","say":"uLwesibini","o":["uLwesibini","uLwesine","uLwesithathu"],"a":0},
 {"t":"mc","q":"uLwesithathu is…","o":["Wednesday","Tuesday","Thursday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uLwesine","o":["uLwesine","uLwesihlanu","uMvulo"],"a":0},
@@ -1092,21 +1092,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which day do you hear?","say":"uMvulo","o":["uMvulo","uLwesibini","uLwesihlanu"],"a":0},
 {"t":"mc","q":"The number hiding inside uLwesibini is…","o":["two","three","five"],"a":0}
 ]},
-{"id":"xh_n3_3","title":"Building the week","step":"build","meta":"Assemble the days","vocab":[],"ex":[
+{"id":"xh_n3_3","title":"Build","step":"build","meta":"Assemble the days","vocab":[],"ex":[
 {"t":"fill","q":"Complete: Wednesday (the third day)","s":"uLwesi___athu","o":["th","t","tl"],"a":0},
 {"t":"wb","q":"Build the day: Friday","a":["uLwesihlanu"],"pool":["uLwesihlanu","uLwesine","uMvulo"]},
 {"t":"fill","q":"Complete: Monday","s":"uMvu___","o":["lo","la","le"],"a":0},
 {"t":"wb","q":"Build the day: Tuesday","a":["uLwesibini"],"pool":["uLwesibini","uLwesithathu","uLwesihlanu"]},
 {"t":"li","q":"Which day do you hear?","say":"uLwesine","o":["uLwesine","uLwesithathu","uLwesibini"],"a":0}
 ]},
-{"id":"xh_n3_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the day","pairs":[["uMvulo","Monday"],["uLwesibini","Tuesday"],["uLwesithathu","Wednesday"]]},
 {"t":"li","q":"Which day do you hear?","say":"uLwesihlanu","o":["uLwesihlanu","uLwesine","uLwesithathu"],"a":0},
 {"t":"match","q":"Match the day","pairs":[["uLwesine","Thursday"],["uLwesihlanu","Friday"]]},
 {"t":"mc","q":"The days run uMvulo, uLwesibini, … what comes next?","o":["uLwesithathu","uLwesine","uLwesihlanu"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uLwesithathu","o":["uLwesithathu","uMvulo","uLwesine"],"a":0}
 ]},
-{"id":"xh_n3_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"uLwesihlanu is…","o":["Friday","Thursday","Monday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uLwesibini","o":["uLwesibini","uLwesihlanu","uMvulo"],"a":0},
 {"t":"mc","q":"Which day carries the number three?","o":["uLwesithathu","uLwesibini","uLwesine"],"a":0},
@@ -1131,7 +1131,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"impelaveki","o":["impelaveki","iveki","namhlanje"],"a":0},
 {"t":"mc","q":"namhlanje means…","o":["today","week","weekend"],"a":0}
 ]},
-{"id":"xh_n4_2","title":"Hearing the weekend","step":"recognize","meta":"Weekend words by ear","vocab":[],"ex":[
+{"id":"xh_n4_2","title":"Recognize","step":"recognize","meta":"Weekend words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"iveki","o":["iveki","impelaveki","iCawa"],"a":0},
 {"t":"mc","q":"What does impelaveki mean?","o":["weekend","week","Sunday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uMgqibelo","o":["uMgqibelo","iCawa","namhlanje"],"a":0},
@@ -1139,21 +1139,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"namhlanje","o":["namhlanje","iveki","uMgqibelo"],"a":0},
 {"t":"mc","q":"The deep gq click hides inside…","o":["uMgqibelo","iCawa","iveki"],"a":0}
 ]},
-{"id":"xh_n4_3","title":"Building weekend words","step":"build","meta":"Assemble the days off","vocab":[],"ex":[
+{"id":"xh_n4_3","title":"Build","step":"build","meta":"Assemble the days off","vocab":[],"ex":[
 {"t":"fill","q":"Complete: Saturday","s":"uM___ibelo","o":["gq","q","gc"],"a":0},
 {"t":"wb","q":"Build: weekend","a":["impelaveki"],"pool":["impelaveki","iveki","namhlanje"]},
 {"t":"fill","q":"Complete: Sunday","s":"i___awa","o":["C","X","Q"],"a":0},
 {"t":"wb","q":"Build: today","a":["namhlanje"],"pool":["namhlanje","iveki","iCawa"]},
 {"t":"li","q":"Which one do you hear?","say":"iCawa","o":["iCawa","uMgqibelo","impelaveki"],"a":0}
 ]},
-{"id":"xh_n4_4","title":"The weekend in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["uMgqibelo","Saturday"],["iCawa","Sunday"],["impelaveki","weekend"]]},
 {"t":"li","q":"Which one do you hear?","say":"iveki","o":["iveki","namhlanje","iCawa"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iveki","week"],["namhlanje","today"]]},
 {"t":"mc","q":"Namhlanje yiCawa means today is…","o":["Sunday","Saturday","Monday"],"a":0},
 {"t":"li","q":"Which day do you hear?","say":"uMgqibelo","o":["uMgqibelo","uLwesihlanu","iCawa"],"a":0}
 ]},
-{"id":"xh_n4_5","title":"Checkpoint: the weekend","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does iveki mean?","o":["week","weekend","today"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"impelaveki","o":["impelaveki","iveki","uMgqibelo"],"a":0},
 {"t":"mc","q":"Which one is Saturday?","o":["uMgqibelo","iCawa","uLwesihlanu"],"a":0},
@@ -1178,7 +1178,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ebusuku","o":["ebusuku","kusasa"],"a":0},
 {"t":"mc","q":"kusasa means…","o":["in the morning","at night","yesterday"],"a":0}
 ]},
-{"id":"xh_n5_2","title":"Hearing time words","step":"recognize","meta":"When exactly?","vocab":[],"ex":[
+{"id":"xh_n5_2","title":"Recognize","step":"recognize","meta":"When exactly?","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"izolo","o":["izolo","ngomso","ngoku"],"a":0},
 {"t":"mc","q":"What does ngomso mean?","o":["tomorrow","yesterday","now"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kusasa","o":["kusasa","ebusuku","izolo"],"a":0},
@@ -1186,21 +1186,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ngoku","o":["ngoku","ngomso","kusasa"],"a":0},
 {"t":"mc","q":"Sobonana ngomso means see you…","o":["tomorrow","tonight","now"],"a":0}
 ]},
-{"id":"xh_n5_3","title":"Building time words","step":"build","meta":"Place events in time","vocab":[],"ex":[
+{"id":"xh_n5_3","title":"Build","step":"build","meta":"Place events in time","vocab":[],"ex":[
 {"t":"fill","q":"Complete: tomorrow","s":"ngo___o","o":["ms","mz","nts"],"a":0},
 {"t":"wb","q":"Build: see you tomorrow","a":["sobonana","ngomso"],"pool":["sobonana","ngomso","izolo"]},
 {"t":"fill","q":"Complete: at night","s":"ebusu___","o":["ku","ko","kho"],"a":0},
 {"t":"wb","q":"Build: yesterday","a":["izolo"],"pool":["izolo","ngoku","kusasa"]},
 {"t":"li","q":"Which one do you hear?","say":"ngomso","o":["ngomso","ngoku","ebusuku"],"a":0}
 ]},
-{"id":"xh_n5_4","title":"Time in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["izolo","yesterday"],["ngomso","tomorrow"],["ngoku","now"]]},
 {"t":"li","q":"Which one do you hear?","say":"kusasa","o":["kusasa","ngomso","ngoku"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kusasa","in the morning"],["ebusuku","at night"]]},
 {"t":"mc","q":"The natural order is izolo, namhlanje, …","o":["ngomso","ngoku","kusasa"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ebusuku","o":["ebusuku","izolo","kusasa"],"a":0}
 ]},
-{"id":"xh_n5_5","title":"Checkpoint: time words","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ngoku mean?","o":["now","tomorrow","in the morning"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"izolo","o":["izolo","ebusuku","ngomso"],"a":0},
 {"t":"mc","q":"Which one means in the morning?","o":["kusasa","ebusuku","izolo"],"a":0},
@@ -1225,7 +1225,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"kaninzi","o":["kaninzi","nini?"],"a":0},
 {"t":"mc","q":"kaninzi means…","o":["often","never","once"],"a":0}
 ]},
-{"id":"xh_n6_2","title":"Hearing when","step":"recognize","meta":"Questions and days by ear","vocab":[],"ex":[
+{"id":"xh_n6_2","title":"Recognize","step":"recognize","meta":"Questions and days by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"nini?","o":["nini?","kaninzi","Uza nini?"],"a":0},
 {"t":"mc","q":"What does ngoMvulo mean?","o":["on Monday","on Sunday","every day"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ngeCawa","o":["ngeCawa","ngoMvulo","nini?"],"a":0},
@@ -1233,21 +1233,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uza nini?","o":["Uza nini?","ngeCawa","kaninzi"],"a":0},
 {"t":"mc","q":"Ndiza ngoMvulo means…","o":["I am coming on Monday","I came yesterday","come on Monday"],"a":0}
 ]},
-{"id":"xh_n6_3","title":"Building when-phrases","step":"build","meta":"Ask and answer about time","vocab":[],"ex":[
+{"id":"xh_n6_3","title":"Build","step":"build","meta":"Ask and answer about time","vocab":[],"ex":[
 {"t":"fill","q":"Complete: when are you coming?","s":"Uza ni___?","o":["ni","na","ne"],"a":0},
 {"t":"wb","q":"Build: I am coming on Monday","a":["ndiza","ngoMvulo"],"pool":["ndiza","ngoMvulo","ngeCawa"]},
 {"t":"fill","q":"Complete: on Sunday","s":"nge___awa","o":["C","X","Q"],"a":0},
 {"t":"wb","q":"Build: when? often!","a":["nini","kaninzi"],"pool":["nini","kaninzi","ngomso"]},
 {"t":"li","q":"Which one do you hear?","say":"ngeCawa","o":["ngeCawa","Uza nini?","ngoMvulo"],"a":0}
 ]},
-{"id":"xh_n6_4","title":"When in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["nini?","when?"],["Uza nini?","when are you coming?"],["kaninzi","often"]]},
 {"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","ngeCawa","nini?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ngoMvulo","on Monday"],["ngeCawa","on Sunday"]]},
 {"t":"mc","q":"Uza nini? — Ndiza … (tomorrow). Complete the answer.","o":["ngomso","izolo","ngoku"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kaninzi","o":["kaninzi","ngeCawa","Uza nini?"],"a":0}
 ]},
-{"id":"xh_n6_5","title":"Checkpoint: when","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_n6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"Nini? asks…","o":["when?","where?","who?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ngoMvulo","o":["ngoMvulo","kaninzi","ngeCawa"],"a":0},
 {"t":"mc","q":"Which one means often?","o":["kaninzi","nini?","ngoku"],"a":0},
@@ -1271,7 +1271,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which sentence do you hear?","say":"Ndifunda isiXhosa yonke imihla","o":["Ndifunda isiXhosa yonke imihla","Ndifunda isiXhosa"],"a":0},
 {"t":"mc","q":"What does unyaka mean?","o":["year","month","day"],"a":0}
 ]},
-{"id":"xh_n7_2","title":"Hearing the units","step":"recognize","meta":"Day, month, year by ear","vocab":[],"ex":[
+{"id":"xh_n7_2","title":"Recognize","step":"recognize","meta":"Day, month, year by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"usuku","o":["usuku","unyaka","inyanga"],"a":0},
 {"t":"mc","q":"Which one means month?","o":["inyanga","unyaka","iveki"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"unyaka","o":["unyaka","usuku","yonke imihla"],"a":0},
@@ -1279,21 +1279,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"yonke imihla","o":["yonke imihla","inyanga","usuku"],"a":0},
 {"t":"mc","q":"Ndifunda isiXhosa yonke imihla means…","o":["I learn Xhosa every day","I speak Xhosa a little","I learned Xhosa last year"],"a":0}
 ]},
-{"id":"xh_n7_3","title":"Building the units","step":"build","meta":"Assemble your habit","vocab":[],"ex":[
+{"id":"xh_n7_3","title":"Build","step":"build","meta":"Assemble your habit","vocab":[],"ex":[
 {"t":"fill","q":"Complete: month","s":"inya___a","o":["ng","ny","nk"],"a":0},
 {"t":"wb","q":"Build: every day","a":["yonke","imihla"],"pool":["yonke","imihla","usuku"]},
 {"t":"fill","q":"Complete: year","s":"unya___","o":["ka","ko","kha"],"a":0},
 {"t":"wb","q":"Build: I learn Xhosa every day","a":["ndifunda","isiXhosa","yonke","imihla"],"pool":["ndifunda","isiXhosa","yonke","imihla","kancinci"]},
 {"t":"li","q":"Which one do you hear?","say":"inyanga","o":["inyanga","yonke imihla","unyaka"],"a":0}
 ]},
-{"id":"xh_n7_4","title":"The units in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_n7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["usuku","day"],["inyanga","month"],["unyaka","year"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndifunda isiXhosa yonke imihla","o":["Ndifunda isiXhosa yonke imihla","yonke imihla","Ndifunda isiXhosa"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["yonke imihla","every day"],["Ndifunda isiXhosa yonke imihla","I learn Xhosa every day"]]},
 {"t":"mc","q":"Months follow the moon — which word carries both meanings?","o":["inyanga","unyaka","usuku"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"usuku","o":["usuku","inyanga","unyaka"],"a":0}
 ]},
-{"id":"xh_n7_5","title":"Checkpoint: Zone 4 complete","step":"checkpoint","meta":"Numbers, days & time — show it all","vocab":[],"ex":[
+{"id":"xh_n7_5","title":"Checkpoint","step":"checkpoint","meta":"Numbers, days & time — show it all","vocab":[],"ex":[
 {"t":"mc","q":"What does usuku mean?","o":["day","week","month"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"unyaka","o":["unyaka","inyanga","usuku"],"a":0},
 {"t":"mc","q":"Review — count up: zintlanu, zintandathu, … what comes next?","o":["sixhenxe","sibhozo","lithoba"],"a":0},
@@ -1317,7 +1317,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"amanzi","o":["amanzi","ndifuna"],"a":0},
 {"t":"mc","q":"amanzi means…","o":["water","food","tea"],"a":0}
 ]},
-{"id":"xh_d1_2","title":"Hearing hunger","step":"recognize","meta":"Feelings and requests by ear","vocab":[],"ex":[
+{"id":"xh_d1_2","title":"Recognize","step":"recognize","meta":"Feelings and requests by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndilambile","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0},
 {"t":"mc","q":"What does ndinxaniwe mean?","o":["I am thirsty","I am hungry","I want"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndifuna","o":["ndifuna","amanzi","ndilambile"],"a":0},
@@ -1325,21 +1325,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndicela amanzi","o":["Ndicela amanzi","amanzi","ndinxaniwe"],"a":0},
 {"t":"mc","q":"Which one means I want?","o":["ndifuna","ndicela","ndilambile"],"a":0}
 ]},
-{"id":"xh_d1_3","title":"Building requests","step":"build","meta":"Ask politely","vocab":[],"ex":[
+{"id":"xh_d1_3","title":"Build","step":"build","meta":"Ask politely","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am hungry","s":"Ndilambi___","o":["le","la","lo"],"a":0},
 {"t":"wb","q":"Build: may I have water","a":["ndicela","amanzi"],"pool":["ndicela","amanzi","ndifuna"]},
 {"t":"fill","q":"Complete: I am thirsty","s":"Ndin___aniwe","o":["x","c","q"],"a":0},
 {"t":"wb","q":"Build: I want water","a":["ndifuna","amanzi"],"pool":["ndifuna","amanzi","ndicela"]},
 {"t":"li","q":"Which one do you hear?","say":"ndinxaniwe","o":["ndinxaniwe","ndilambile","Ndicela amanzi"],"a":0}
 ]},
-{"id":"xh_d1_4","title":"Hunger in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndilambile","I am hungry"],["ndinxaniwe","I am thirsty"],["amanzi","water"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndifuna","o":["ndifuna","ndilambile","amanzi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndifuna","I want"],["Ndicela amanzi","may I have water"]]},
 {"t":"mc","q":"At a stranger you would rather use…","o":["Ndicela","Ndifuna","Iza"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndilambile","o":["ndilambile","ndinxaniwe","ndifuna"],"a":0}
 ]},
-{"id":"xh_d1_5","title":"Checkpoint: hungry & thirsty","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndinxaniwe mean?","o":["I am thirsty","I am hungry","I am full"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"amanzi","o":["amanzi","ndifuna","ndilambile"],"a":0},
 {"t":"mc","q":"The polite request for water is…","o":["Ndicela amanzi","Ndifuna amanzi","Amanzi ngoku"],"a":0},
@@ -1364,7 +1364,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which drink do you hear?","say":"ikofu","o":["ikofu","iti"],"a":0},
 {"t":"mc","q":"Which one means tea?","o":["iti","ikofu","amasi"],"a":0}
 ]},
-{"id":"xh_d2_2","title":"Hearing the staples","step":"recognize","meta":"Kitchen words by ear","vocab":[],"ex":[
+{"id":"xh_d2_2","title":"Recognize","step":"recognize","meta":"Kitchen words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"irayisi","o":["irayisi","isonka","amasi"],"a":0},
 {"t":"mc","q":"What does ikofu mean?","o":["coffee","tea","bread"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iti","o":["iti","ikofu","irayisi"],"a":0},
@@ -1372,21 +1372,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"amasi","o":["amasi","iti","isonka"],"a":0},
 {"t":"mc","q":"Poured over umphokoqo on a hot day…","o":["amasi","ikofu","amanzi"],"a":0}
 ]},
-{"id":"xh_d2_3","title":"Building the staples","step":"build","meta":"Spell the kitchen","vocab":[],"ex":[
+{"id":"xh_d2_3","title":"Build","step":"build","meta":"Spell the kitchen","vocab":[],"ex":[
 {"t":"fill","q":"Complete: bread","s":"ison___a","o":["k","kh","q"],"a":0},
 {"t":"wb","q":"Build: may I have tea","a":["ndicela","iti"],"pool":["ndicela","iti","ikofu"]},
 {"t":"fill","q":"Complete: coffee","s":"iko___u","o":["f","v","ph"],"a":0},
 {"t":"wb","q":"Build: may I have bread","a":["ndicela","isonka"],"pool":["ndicela","isonka","irayisi"]},
 {"t":"li","q":"Which one do you hear?","say":"isonka","o":["isonka","amasi","ikofu"],"a":0}
 ]},
-{"id":"xh_d2_4","title":"Staples in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isonka","bread"],["amasi","sour milk"],["iti","tea"]]},
 {"t":"li","q":"Which one do you hear?","say":"ikofu","o":["ikofu","iti","irayisi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikofu","coffee"],["irayisi","rice"]]},
 {"t":"mc","q":"You sit down to visit. Before the second sentence appears…","o":["iti","irayisi","amasi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"irayisi","o":["irayisi","amasi","isonka"],"a":0}
 ]},
-{"id":"xh_d2_5","title":"Checkpoint: the staples","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does amasi mean?","o":["sour milk","coffee","porridge"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iti","o":["iti","ikofu","amasi"],"a":0},
 {"t":"mc","q":"Which one means bread?","o":["isonka","irayisi","ikofu"],"a":0},
@@ -1410,7 +1410,7 @@ const XH_LESSONS=[
 {"t":"mc","q":"Utya ntoni? asks…","o":["what are you eating?","what are you drinking?","are you hungry?"],"a":0},
 {"t":"mc","q":"ntoni completes your question words. It means…","o":["what?","when?","where?"],"a":0}
 ]},
-{"id":"xh_d3_2","title":"Hearing the verbs","step":"recognize","meta":"Eat, drink, what","vocab":[],"ex":[
+{"id":"xh_d3_2","title":"Recognize","step":"recognize","meta":"Eat, drink, what","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","ndisela","ntoni?"],"a":0},
 {"t":"mc","q":"What does ndisela mean?","o":["I drink","I eat","I ask for"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ntoni?","o":["ntoni?","nditya","Utya ntoni?"],"a":0},
@@ -1418,21 +1418,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndisela iti","o":["Ndisela iti","Utya ntoni?","ndisela"],"a":0},
 {"t":"mc","q":"One click apart: cela and sela. Cela means…","o":["ask for","drink","eat"],"a":0}
 ]},
-{"id":"xh_d3_3","title":"Building meals","step":"build","meta":"Say what you eat and drink","vocab":[],"ex":[
+{"id":"xh_d3_3","title":"Build","step":"build","meta":"Say what you eat and drink","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I eat","s":"Ndi___a","o":["ty","tsh","t"],"a":0},
 {"t":"wb","q":"Build: I am drinking coffee","a":["ndisela","ikofu"],"pool":["ndisela","ikofu","nditya"]},
 {"t":"fill","q":"Complete: what are you eating?","s":"Utya nto___?","o":["ni","na","ne"],"a":0},
 {"t":"wb","q":"Build: I eat bread","a":["nditya","isonka"],"pool":["nditya","isonka","ndisela"]},
 {"t":"li","q":"Which one do you hear?","say":"Utya ntoni?","o":["Utya ntoni?","Ndisela iti","ntoni?"],"a":0}
 ]},
-{"id":"xh_d3_4","title":"Meals in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["nditya","I eat"],["ndisela","I drink"],["ntoni?","what?"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndisela","o":["ndisela","nditya","ntoni?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Utya ntoni?","what are you eating?"],["Ndisela iti","I am drinking tea"]]},
 {"t":"mc","q":"Your question words: phi, nini, ngubani, …","o":["ntoni","yena","lam"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"nditya","o":["nditya","Ndisela iti","Utya ntoni?"],"a":0}
 ]},
-{"id":"xh_d3_5","title":"Checkpoint: eating & drinking","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ntoni mean?","o":["what?","who?","when?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndisela","o":["ndisela","nditya","ndifuna"],"a":0},
 {"t":"mc","q":"Someone asks Utya ntoni? You are eating bread…","o":["Nditya isonka","Ndisela isonka","Ndicela iti"],"a":0},
@@ -1456,7 +1456,7 @@ const XH_LESSONS=[
 {"t":"li","q":"One egg or many — which do you hear?","say":"amaqanda","o":["amaqanda","iqanda"],"a":0},
 {"t":"mc","q":"The plural of iqanda is…","o":["amaqanda","ooqanda","iziqanda"],"a":0}
 ]},
-{"id":"xh_d4_2","title":"Hearing the braai","step":"recognize","meta":"Meat words by ear","vocab":[],"ex":[
+{"id":"xh_d4_2","title":"Recognize","step":"recognize","meta":"Meat words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"inkukhu","o":["inkukhu","intlanzi","amaqanda"],"a":0},
 {"t":"mc","q":"What does intlanzi mean?","o":["fish","chicken","meat"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Nditya inyama","o":["Nditya inyama","ishisanyama","inkukhu"],"a":0},
@@ -1464,21 +1464,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ishisanyama","o":["ishisanyama","intlanzi","Nditya inyama"],"a":0},
 {"t":"mc","q":"Ishisanyama literally means…","o":["burn the meat","cold meat","meat house"],"a":0}
 ]},
-{"id":"xh_d4_3","title":"Building braai words","step":"build","meta":"Order at the fire","vocab":[],"ex":[
+{"id":"xh_d4_3","title":"Build","step":"build","meta":"Order at the fire","vocab":[],"ex":[
 {"t":"fill","q":"Complete: chicken","s":"inku___u","o":["kh","k","q"],"a":0},
 {"t":"wb","q":"Build: may I have meat","a":["ndicela","inyama"],"pool":["ndicela","inyama","intlanzi"]},
 {"t":"fill","q":"Complete: fish","s":"in___anzi","o":["tl","hl","dl"],"a":0},
 {"t":"wb","q":"Build: I am eating chicken","a":["nditya","inkukhu"],"pool":["nditya","inkukhu","amaqanda"]},
 {"t":"li","q":"Which one do you hear?","say":"amaqanda","o":["amaqanda","inkukhu","ishisanyama"],"a":0}
 ]},
-{"id":"xh_d4_4","title":"The braai in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ishisanyama","braai place"],["inkukhu","chicken"],["intlanzi","fish"]]},
 {"t":"li","q":"Which one do you hear?","say":"intlanzi","o":["intlanzi","amaqanda","inkukhu"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amaqanda","eggs"],["Nditya inyama","I am eating meat"]]},
 {"t":"mc","q":"iqanda is to amaqanda as umXhosa is to…","o":["amaXhosa","isiXhosa","ooXhosa"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"inkukhu","o":["inkukhu","intlanzi","ishisanyama"],"a":0}
 ]},
-{"id":"xh_d4_5","title":"Checkpoint: the braai","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ishisanyama mean?","o":["braai place","kitchen","fire"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Nditya inyama","o":["Nditya inyama","inkukhu","intlanzi"],"a":0},
 {"t":"mc","q":"Which one means fish?","o":["intlanzi","inkukhu","inyama"],"a":0},
@@ -1503,7 +1503,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","umbona"],"a":0},
 {"t":"mc","q":"Which one means fruit?","o":["isiqhamo","itswele","umbona"],"a":0}
 ]},
-{"id":"xh_d5_2","title":"Hearing the garden","step":"recognize","meta":"Veg by ear","vocab":[],"ex":[
+{"id":"xh_d5_2","title":"Recognize","step":"recognize","meta":"Veg by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"iitapile","o":["iitapile","itumato","itswele"],"a":0},
 {"t":"mc","q":"What does itswele mean?","o":["onion","tomato","maize"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"itumato","o":["itumato","iitapile","isiqhamo"],"a":0},
@@ -1511,21 +1511,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"isiqhamo","o":["isiqhamo","itswele","umbona"],"a":0},
 {"t":"mc","q":"Umngqusho and umphokoqo are both made from…","o":["umbona","iitapile","irayisi"],"a":0}
 ]},
-{"id":"xh_d5_3","title":"Building garden words","step":"build","meta":"Fill the pot","vocab":[],"ex":[
+{"id":"xh_d5_3","title":"Build","step":"build","meta":"Fill the pot","vocab":[],"ex":[
 {"t":"fill","q":"Complete: maize","s":"umbo___","o":["na","no","ne"],"a":0},
 {"t":"wb","q":"Build: may I have fruit","a":["ndicela","isiqhamo"],"pool":["ndicela","isiqhamo","itswele"]},
 {"t":"fill","q":"Complete: fruit","s":"isi___amo","o":["qh","q","xh"],"a":0},
 {"t":"wb","q":"Build: I am eating potatoes","a":["nditya","iitapile"],"pool":["nditya","iitapile","itumato"]},
 {"t":"li","q":"Which one do you hear?","say":"itswele","o":["itswele","isiqhamo","iitapile"],"a":0}
 ]},
-{"id":"xh_d5_4","title":"The garden in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umbona","maize"],["iitapile","potatoes"],["itumato","tomato"]]},
 {"t":"li","q":"Which one do you hear?","say":"umbona","o":["umbona","itumato","itswele"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["itswele","onion"],["isiqhamo","fruit"]]},
 {"t":"mc","q":"isiqhamo, isiXhosa, isiduko share the class prefix…","o":["isi-","i-","um-"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iitapile","o":["iitapile","itswele","umbona"],"a":0}
 ]},
-{"id":"xh_d5_5","title":"Checkpoint: the garden","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does iitapile mean?","o":["potatoes","tomatoes","onions"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"itumato","o":["itumato","itswele","iitapile"],"a":0},
 {"t":"mc","q":"Which one means onion?","o":["itswele","itumato","isiqhamo"],"a":0},
@@ -1549,7 +1549,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndithanda iti kakhulu","o":["Ndithanda iti kakhulu","Uthanda ntoni?"],"a":0},
 {"t":"mc","q":"andiqondi is the a…i wrap around…","o":["qonda","thanda","funda"],"a":0}
 ]},
-{"id":"xh_d6_2","title":"Hearing likes","step":"recognize","meta":"Yes-feelings and no-feelings","vocab":[],"ex":[
+{"id":"xh_d6_2","title":"Recognize","step":"recognize","meta":"Yes-feelings and no-feelings","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Uthanda ntoni?","o":["Uthanda ntoni?","ndithanda","andithandi"],"a":0},
 {"t":"mc","q":"What does andithandi mean?","o":["I do not like","I like a lot","I do not eat"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndithanda","o":["ndithanda","andithandi","Ndithanda iti kakhulu"],"a":0},
@@ -1557,21 +1557,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","Uthanda ntoni?"],"a":0},
 {"t":"mc","q":"Ndithanda iti kakhulu means…","o":["I like tea very much","I drink tea daily","tea is delicious"],"a":0}
 ]},
-{"id":"xh_d6_3","title":"Building feelings","step":"build","meta":"Say what you love","vocab":[],"ex":[
+{"id":"xh_d6_3","title":"Build","step":"build","meta":"Say what you love","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I do not like","s":"___ndithandi","o":["a","e","u"],"a":0},
 {"t":"wb","q":"Build: I like tea very much","a":["ndithanda","iti","kakhulu"],"pool":["ndithanda","iti","kakhulu","andithandi"]},
 {"t":"fill","q":"Complete: what do you like?","s":"Uthanda nto___?","o":["ni","na","ne"],"a":0},
 {"t":"wb","q":"Build: I like amasi","a":["ndithanda","amasi"],"pool":["ndithanda","amasi","andithandi"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndithanda iti kakhulu","o":["Ndithanda iti kakhulu","andithandi","ndithanda"],"a":0}
 ]},
-{"id":"xh_d6_4","title":"Feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithanda","I like"],["andithandi","I do not like"]]},
 {"t":"li","q":"Which one do you hear?","say":"andithandi","o":["andithandi","ndithanda","Uthanda ntoni?"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uthanda ntoni?","what do you like?"],["Ndithanda iti kakhulu","I like tea very much"]]},
 {"t":"mc","q":"By the same wrap, I do not eat would be…","o":["anditvi","anditye","andityi"],"a":2},
 {"t":"li","q":"Which one do you hear?","say":"ndithanda","o":["ndithanda","Ndithanda iti kakhulu","andithandi"],"a":0}
 ]},
-{"id":"xh_d6_5","title":"Checkpoint: likes","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_d6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndithanda mean?","o":["I like","I do not like","I am hungry"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uthanda ntoni?","o":["Uthanda ntoni?","Ndithanda iti kakhulu","andithandi"],"a":0},
 {"t":"mc","q":"Which one means I do not like?","o":["andithandi","ndithanda","andiqondi"],"a":0},
@@ -1595,7 +1595,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndifuna ukutya","o":["Ndifuna ukutya","hayi enkosi"],"a":0},
 {"t":"mc","q":"In a Xhosa home, guests are…","o":["always fed","asked to cook","left alone"],"a":0}
 ]},
-{"id":"xh_d7_2","title":"Hearing the table","step":"recognize","meta":"Compliments and offers","vocab":[],"ex":[
+{"id":"xh_d7_2","title":"Recognize","step":"recognize","meta":"Compliments and offers","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"mnandi","o":["mnandi","Kumnandi!","hayi enkosi"],"a":0},
 {"t":"mc","q":"What does Ufuna ntoni? ask?","o":["what do you want?","what do you like?","what are you eating?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"hayi enkosi","o":["hayi enkosi","Ufuna ntoni?","mnandi"],"a":0},
@@ -1603,21 +1603,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Kumnandi!","o":["Kumnandi!","Ndifuna ukutya","mnandi"],"a":0},
 {"t":"mc","q":"mnandi means…","o":["delicious","hungry","full"],"a":0}
 ]},
-{"id":"xh_d7_3","title":"Building table talk","step":"build","meta":"Honour the cook","vocab":[],"ex":[
+{"id":"xh_d7_3","title":"Build","step":"build","meta":"Honour the cook","vocab":[],"ex":[
 {"t":"fill","q":"Complete: it is delicious!","s":"Kumnan___!","o":["di","de","da"],"a":0},
 {"t":"wb","q":"Build: no thank you","a":["hayi","enkosi"],"pool":["hayi","enkosi","mnandi"]},
 {"t":"fill","q":"Complete: what do you want?","s":"U___na ntoni?","o":["fu","fa","fo"],"a":0},
 {"t":"wb","q":"Build: I want food","a":["ndifuna","ukutya"],"pool":["ndifuna","ukutya","mnandi"]},
 {"t":"li","q":"Which one do you hear?","say":"mnandi","o":["mnandi","hayi enkosi","Kumnandi!"],"a":0}
 ]},
-{"id":"xh_d7_4","title":"The table in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_d7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["mnandi","delicious"],["Kumnandi!","it is delicious!"],["hayi enkosi","no thank you"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ufuna ntoni?","o":["Ufuna ntoni?","Ndifuna ukutya","Kumnandi!"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ufuna ntoni?","what do you want?"],["Ndifuna ukutya","I want food"]]},
 {"t":"mc","q":"The kindest way to stop a generous host…","o":["Hayi enkosi, kumnandi kakhulu","Hayi hayi hayi","Andithandi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"hayi enkosi","o":["hayi enkosi","mnandi","Ufuna ntoni?"],"a":0}
 ]},
-{"id":"xh_d7_5","title":"Checkpoint: Zone 5 complete","step":"checkpoint","meta":"Food & drink — show it all","vocab":[],"ex":[
+{"id":"xh_d7_5","title":"Checkpoint","step":"checkpoint","meta":"Food & drink — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Kumnandi! tells the cook…","o":["it is delicious","you are slow","I am full"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndifuna ukutya","o":["Ndifuna ukutya","Ufuna ntoni?","hayi enkosi"],"a":0},
 {"t":"mc","q":"Review — the polite request formula begins…","o":["Ndicela","Ndifuna","Nditya"],"a":0},
@@ -1642,7 +1642,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","ifestile"],"a":0},
 {"t":"mc","q":"Which one means window?","o":["ifestile","iyadi","igumbi"],"a":0}
 ]},
-{"id":"xh_h1_2","title":"Hearing the rooms","step":"recognize","meta":"Around the house by ear","vocab":[],"ex":[
+{"id":"xh_h1_2","title":"Recognize","step":"recognize","meta":"Around the house by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"igumbi","o":["igumbi","ikhitshi","iyadi"],"a":0},
 {"t":"mc","q":"What does ikhitshi mean?","o":["kitchen","bedroom","yard"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ifestile","o":["ifestile","iyadi","igumbi lokulala"],"a":0},
@@ -1650,21 +1650,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"igumbi lokulala","o":["igumbi lokulala","ikhitshi","igumbi"],"a":0},
 {"t":"mc","q":"Where the pot lives and the talking happens…","o":["ikhitshi","igumbi lokulala","iyadi"],"a":0}
 ]},
-{"id":"xh_h1_3","title":"Building the house","step":"build","meta":"Room by room","vocab":[],"ex":[
+{"id":"xh_h1_3","title":"Build","step":"build","meta":"Room by room","vocab":[],"ex":[
 {"t":"fill","q":"Complete: kitchen","s":"ikhi___i","o":["tsh","ts","sh"],"a":0},
 {"t":"wb","q":"Build: the room of sleeping","a":["igumbi","lokulala"],"pool":["igumbi","lokulala","ikhitshi"]},
 {"t":"fill","q":"Complete: window","s":"ifesti___","o":["le","la","li"],"a":0},
 {"t":"wb","q":"Build the word: yard","a":["iyadi"],"pool":["iyadi","igumbi","ifestile"]},
 {"t":"li","q":"Which one do you hear?","say":"ikhitshi","o":["ikhitshi","ifestile","iyadi"],"a":0}
 ]},
-{"id":"xh_h1_4","title":"Rooms in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igumbi","room"],["ikhitshi","kitchen"],["iyadi","yard"]]},
 {"t":"li","q":"Which one do you hear?","say":"iyadi","o":["iyadi","igumbi","ikhitshi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["igumbi lokulala","bedroom"],["ifestile","window"]]},
 {"t":"mc","q":"indlu is the house; igumbi is…","o":["a room inside it","the roof","the door"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ifestile","o":["ifestile","igumbi lokulala","iyadi"],"a":0}
 ]},
-{"id":"xh_h1_5","title":"Checkpoint: the rooms","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does iyadi mean?","o":["yard","room","window"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"igumbi","o":["igumbi","ikhitshi","ifestile"],"a":0},
 {"t":"mc","q":"Which one is the bedroom?","o":["igumbi lokulala","ikhitshi","iyadi"],"a":0},
@@ -1689,7 +1689,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","ibhedi"],"a":0},
 {"t":"mc","q":"umbane means electricity and originally…","o":["lightning","fire","the sun"],"a":0}
 ]},
-{"id":"xh_h2_2","title":"Hearing home things","step":"recognize","meta":"Furniture by ear","vocab":[],"ex":[
+{"id":"xh_h2_2","title":"Recognize","step":"recognize","meta":"Furniture by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"itafile","o":["itafile","isitulo","ibhedi"],"a":0},
 {"t":"mc","q":"What does isitulo mean?","o":["chair","table","bed"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isitya","o":["isitya","isitulo","umbane"],"a":0},
@@ -1697,21 +1697,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ibhedi","o":["ibhedi","umbane","itafile"],"a":0},
 {"t":"mc","q":"The word hiding inside isitya is…","o":["ukutya","ukusela","ukulala"],"a":0}
 ]},
-{"id":"xh_h2_3","title":"Building home things","step":"build","meta":"Furnish the house","vocab":[],"ex":[
+{"id":"xh_h2_3","title":"Build","step":"build","meta":"Furnish the house","vocab":[],"ex":[
 {"t":"fill","q":"Complete: chair","s":"isitu___","o":["lo","la","le"],"a":0},
 {"t":"wb","q":"Build the word: table","a":["itafile"],"pool":["itafile","isitulo","ibhedi"]},
 {"t":"fill","q":"Complete: electricity","s":"umba___","o":["ne","na","no"],"a":0},
 {"t":"wb","q":"Build the word: dish","a":["isitya"],"pool":["isitya","itafile","umbane"]},
 {"t":"li","q":"Which one do you hear?","say":"isitulo","o":["isitulo","ibhedi","isitya"],"a":0}
 ]},
-{"id":"xh_h2_4","title":"Home things in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isitulo","chair"],["itafile","table"],["ibhedi","bed"]]},
 {"t":"li","q":"Which one do you hear?","say":"umbane","o":["umbane","isitya","itafile"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isitya","dish"],["umbane","electricity"]]},
 {"t":"mc","q":"When umbane goes off, South Africans call it…","o":["load-shedding","a braai","impelaveki"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"itafile","o":["itafile","ibhedi","isitulo"],"a":0}
 ]},
-{"id":"xh_h2_5","title":"Checkpoint: home things","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does itafile mean?","o":["table","chair","dish"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isitya","o":["isitya","isitulo","umbane"],"a":0},
 {"t":"mc","q":"Which one means bed?","o":["ibhedi","itafile","igumbi"],"a":0},
@@ -1735,7 +1735,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","izitulo"],"a":0},
 {"t":"mc","q":"Your three plural pairs so far…","o":["um-/aba-, oo-, isi-/izi-","only um-/aba-","e- and ngo-"],"a":0}
 ]},
-{"id":"xh_h3_2","title":"Hearing plurals","step":"recognize","meta":"Singular or plural, instantly","vocab":[],"ex":[
+{"id":"xh_h3_2","title":"Recognize","step":"recognize","meta":"Singular or plural, instantly","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"isipili","o":["isipili","izipili","isitya"],"a":0},
 {"t":"mc","q":"The plural of isitulo is…","o":["izitulo","ositulo","amatulo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","izitya","izipili"],"a":0},
@@ -1743,21 +1743,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","isitya","izitulo"],"a":0},
 {"t":"mc","q":"After dinner you wash…","o":["izitya","izitulo","izipili"],"a":0}
 ]},
-{"id":"xh_h3_3","title":"Building plurals","step":"build","meta":"Swap isi- for izi-","vocab":[],"ex":[
+{"id":"xh_h3_3","title":"Build","step":"build","meta":"Swap isi- for izi-","vocab":[],"ex":[
 {"t":"fill","q":"Complete: chairs","s":"___tulo","o":["izi","isi","ama"],"a":0},
 {"t":"wb","q":"Build the word: dishes","a":["izitya"],"pool":["izitya","isitya","izitulo"]},
 {"t":"fill","q":"Complete: mirror (just one)","s":"___pili","o":["isi","izi","oo"],"a":0},
 {"t":"wb","q":"Build the word: mirrors","a":["izipili"],"pool":["izipili","isipili","izitya"]},
 {"t":"li","q":"Which one do you hear?","say":"izipili","o":["izipili","izitulo","isipili"],"a":0}
 ]},
-{"id":"xh_h3_4","title":"Plurals in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match singular to plural","pairs":[["isitulo","izitulo"],["isitya","izitya"],["isipili","izipili"]]},
 {"t":"li","q":"Which one do you hear?","say":"izitulo","o":["izitulo","isitulo","izipili"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["izitulo","chairs"],["izitya","dishes"],["izipili","mirrors"]]},
 {"t":"mc","q":"isiXhosa has no plural need, but isiqhamo (fruit) pluralises to…","o":["iziqhamo","amaqhamo","ooqhamo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isipili","o":["isipili","izipili","izitya"],"a":0}
 ]},
-{"id":"xh_h3_5","title":"Checkpoint: plurals","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"The plural of isitya is…","o":["izitya","amatya","ootya"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"izitya","o":["izitya","izipili","izitulo"],"a":0},
 {"t":"mc","q":"What does izipili mean?","o":["mirrors","dishes","chairs"],"a":0},
@@ -1782,7 +1782,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Up or down — which do you hear?","say":"phantsi","o":["phantsi","phezulu"],"a":0},
 {"t":"mc","q":"phezulu means…","o":["up","down","here"],"a":0}
 ]},
-{"id":"xh_h4_2","title":"Hearing directions","step":"recognize","meta":"Place words by ear","vocab":[],"ex":[
+{"id":"xh_h4_2","title":"Recognize","step":"recognize","meta":"Place words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"apha","o":["apha","phaya","phantsi"],"a":0},
 {"t":"mc","q":"What does phaya mean?","o":["over there","here","up"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"phezulu","o":["phezulu","phantsi","phaya"],"a":0},
@@ -1790,21 +1790,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Iphi imoto?","o":["Iphi imoto?","phaya","apha"],"a":0},
 {"t":"mc","q":"Someone answers your question with a pointed chin: Iphaya. The thing is…","o":["over there","right here","upstairs"],"a":0}
 ]},
-{"id":"xh_h4_3","title":"Building directions","step":"build","meta":"Point with words","vocab":[],"ex":[
+{"id":"xh_h4_3","title":"Build","step":"build","meta":"Point with words","vocab":[],"ex":[
 {"t":"fill","q":"Complete: where is the car?","s":"I___i imoto?","o":["ph","p","f"],"a":0},
 {"t":"wb","q":"Build: it is over there","a":["phaya"],"pool":["phaya","apha","phantsi"]},
 {"t":"fill","q":"Complete: down","s":"phan___i","o":["ts","tsh","th"],"a":0},
 {"t":"wb","q":"Build: here","a":["apha"],"pool":["apha","phaya","phezulu"]},
 {"t":"li","q":"Which one do you hear?","say":"phaya","o":["phaya","phezulu","apha"],"a":0}
 ]},
-{"id":"xh_h4_4","title":"Directions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["apha","here"],["phaya","over there"],["phantsi","down"]]},
 {"t":"li","q":"Which one do you hear?","say":"phantsi","o":["phantsi","phaya","phezulu"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["phezulu","up"],["Iphi imoto?","where is the car?"]]},
 {"t":"mc","q":"Uphi is for people; Iphi is for…","o":["i- things","places only","questions only"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"apha","o":["apha","phantsi","Iphi imoto?"],"a":0}
 ]},
-{"id":"xh_h4_5","title":"Checkpoint: where","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does phantsi mean?","o":["down","up","there"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"phezulu","o":["phezulu","phaya","phantsi"],"a":0},
 {"t":"mc","q":"Which one means here?","o":["apha","phaya","phezulu"],"a":0},
@@ -1829,7 +1829,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"imbiza","o":["imbiza","icephe"],"a":0},
 {"t":"mc","q":"Which one means pot?","o":["imbiza","ikomityi","ibhotile"],"a":0}
 ]},
-{"id":"xh_h5_2","title":"Hearing the tools","step":"recognize","meta":"Kitchen tools by ear","vocab":[],"ex":[
+{"id":"xh_h5_2","title":"Recognize","step":"recognize","meta":"Kitchen tools by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ibhotile","o":["ibhotile","ikomityi","imbiza"],"a":0},
 {"t":"mc","q":"What does icephe mean?","o":["spoon","knife","pot"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imela","o":["imela","imbiza","icephe"],"a":0},
@@ -1837,21 +1837,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"imbiza","o":["imbiza","imela","ibhotile"],"a":0},
 {"t":"mc","q":"Umngqusho simmers all afternoon in…","o":["imbiza","ikomityi","isitya"],"a":0}
 ]},
-{"id":"xh_h5_3","title":"Building the tools","step":"build","meta":"Set the kitchen","vocab":[],"ex":[
+{"id":"xh_h5_3","title":"Build","step":"build","meta":"Set the kitchen","vocab":[],"ex":[
 {"t":"fill","q":"Complete: cup","s":"ikomi___i","o":["ty","tsh","t"],"a":0},
 {"t":"wb","q":"Build: may I have a spoon","a":["ndicela","icephe"],"pool":["ndicela","icephe","imela"]},
 {"t":"fill","q":"Complete: pot","s":"imbi___a","o":["z","s","dl"],"a":0},
 {"t":"wb","q":"Build the word: bottle","a":["ibhotile"],"pool":["ibhotile","ikomityi","imbiza"]},
 {"t":"li","q":"Which one do you hear?","say":"ikomityi","o":["ikomityi","imbiza","imela"],"a":0}
 ]},
-{"id":"xh_h5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikomityi","cup"],["ibhotile","bottle"],["imela","knife"]]},
 {"t":"li","q":"Which one do you hear?","say":"icephe","o":["icephe","imela","ikomityi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["icephe","spoon"],["imbiza","pot"]]},
 {"t":"mc","q":"The click hiding in icephe is…","o":["c","x","q"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ibhotile","o":["ibhotile","imbiza","icephe"],"a":0}
 ]},
-{"id":"xh_h5_5","title":"Checkpoint: the kitchen","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does imbiza mean?","o":["pot","pan","cup"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imela","o":["imela","icephe","ibhotile"],"a":0},
 {"t":"mc","q":"Which one means spoon?","o":["icephe","imela","ikomityi"],"a":0},
@@ -1876,7 +1876,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndipheka"],"a":0},
 {"t":"mc","q":"Which one means I rest?","o":["ndiphumla","ndivuka","ndihlamba"],"a":0}
 ]},
-{"id":"xh_h6_2","title":"Hearing the home verbs","step":"recognize","meta":"Daily actions by ear","vocab":[],"ex":[
+{"id":"xh_h6_2","title":"Recognize","step":"recognize","meta":"Daily actions by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndihlamba","o":["ndihlamba","ndipheka","ndiphumla"],"a":0},
 {"t":"mc","q":"What does ndivuka mean?","o":["I wake up","I sleep","I cook"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndilala","o":["ndilala","ndivuka","ndihlamba"],"a":0},
@@ -1884,21 +1884,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiphumla","o":["ndiphumla","ndilala","ndipheka"],"a":0},
 {"t":"mc","q":"After washing izitya, on Sunday afternoon you…","o":["ndiphumla","ndivuka","ndipheka"],"a":0}
 ]},
-{"id":"xh_h6_3","title":"Building the day","step":"build","meta":"Your routine in Xhosa","vocab":[],"ex":[
+{"id":"xh_h6_3","title":"Build","step":"build","meta":"Your routine in Xhosa","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I cook","s":"Ndiphe___","o":["ka","kha","qa"],"a":0},
 {"t":"wb","q":"Build: I sleep at night","a":["ndilala","ebusuku"],"pool":["ndilala","ebusuku","kusasa"]},
 {"t":"fill","q":"Complete: I wash","s":"Ndi___amba","o":["hl","dl","l"],"a":0},
 {"t":"wb","q":"Build: I wake up in the morning","a":["ndivuka","kusasa"],"pool":["ndivuka","kusasa","ebusuku"]},
 {"t":"li","q":"Which one do you hear?","say":"ndivuka","o":["ndivuka","ndiphumla","ndilala"],"a":0}
 ]},
-{"id":"xh_h6_4","title":"The routine in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndipheka","I cook"],["ndihlamba","I wash"],["ndiphumla","I rest"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndipheka","o":["ndipheka","ndihlamba","ndivuka"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndilala","I sleep"],["ndivuka","I wake up"]]},
 {"t":"mc","q":"Order the day: ndivuka, ndipheka, then at night…","o":["ndilala","ndiphumla","ndihlamba"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndihlamba","o":["ndihlamba","ndilala","ndiphumla"],"a":0}
 ]},
-{"id":"xh_h6_5","title":"Checkpoint: the home verbs","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_h6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndipheka mean?","o":["I cook","I wash","I eat"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndilala","o":["ndilala","ndilambile","ndivuka"],"a":0},
 {"t":"mc","q":"Which one means I wake up?","o":["ndivuka","ndilala","ndiphumla"],"a":0},
@@ -1922,7 +1922,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"endlwini","o":["endlwini","ekhitshini"],"a":0},
 {"t":"mc","q":"To say IN an ordinary noun, wrap it in…","o":["e-…-ini","ngo-…-o","a-…-i"],"a":0}
 ]},
-{"id":"xh_h7_2","title":"Hearing the -ini","step":"recognize","meta":"Places you are in, by ear","vocab":[],"ex":[
+{"id":"xh_h7_2","title":"Recognize","step":"recognize","meta":"Places you are in, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"endlwini","o":["endlwini","ekhitshini","indlu"],"a":0},
 {"t":"mc","q":"What does endlwini mean?","o":["in the house","the house","at home"],"a":0},
 {"t":"li","q":"Which sentence do you hear?","say":"Ndilala ebusuku","o":["Ndilala ebusuku","Ndipheka ekhitshini","ndilala"],"a":0},
@@ -1930,21 +1930,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ekhitshini","o":["ekhitshini","endlwini","Ndipheka ekhitshini"],"a":0},
 {"t":"mc","q":"The a-…-i wrap makes negatives; the e-…-ini wrap makes…","o":["places you are in","plurals","questions"],"a":0}
 ]},
-{"id":"xh_h7_3","title":"Building sentences","step":"build","meta":"Verbs meet places","vocab":[],"ex":[
+{"id":"xh_h7_3","title":"Build","step":"build","meta":"Verbs meet places","vocab":[],"ex":[
 {"t":"fill","q":"Complete: in the kitchen","s":"ekhitshi___","o":["ni","na","ne"],"a":0},
 {"t":"wb","q":"Build: I cook in the kitchen","a":["ndipheka","ekhitshini"],"pool":["ndipheka","ekhitshini","endlwini"]},
 {"t":"fill","q":"Complete: in the house","s":"endlwi___","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build: I sleep at night","a":["ndilala","ebusuku"],"pool":["ndilala","ebusuku","ekhitshini"]},
 {"t":"li","q":"Which sentence do you hear?","say":"Ndilala ebusuku","o":["Ndilala ebusuku","Ndipheka ekhitshini","endlwini"],"a":0}
 ]},
-{"id":"xh_h7_4","title":"Sentences in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_h7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ekhitshini","in the kitchen"],["endlwini","in the house"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndipheka ekhitshini","o":["Ndipheka ekhitshini","Ndilala ebusuku","ekhitshini"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndipheka ekhitshini","I cook in the kitchen"],["Ndilala ebusuku","I sleep at night"]]},
 {"t":"mc","q":"ikhitshi is to ekhitshini as indlu is to…","o":["endlwini","indlwana","endlini kakhulu"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ekhitshini","o":["ekhitshini","endlwini","ndipheka"],"a":0}
 ]},
-{"id":"xh_h7_5","title":"Checkpoint: Zone 6 complete","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
+{"id":"xh_h7_5","title":"Checkpoint","step":"checkpoint","meta":"Around the home — show it all","vocab":[],"ex":[
 {"t":"mc","q":"endlwini means…","o":["in the house","the house","at the door"],"a":0},
 {"t":"li","q":"Which sentence do you hear?","say":"Ndipheka ekhitshini","o":["Ndipheka ekhitshini","Ndilala ebusuku","ekhitshini"],"a":0},
 {"t":"mc","q":"Review — the plural of isitulo is…","o":["izitulo","ositulo","abatulo"],"a":0},
@@ -1969,7 +1969,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","ivenkile"],"a":0},
 {"t":"mc","q":"Which one means taxi?","o":["iteksi","idolophu","imoto"],"a":0}
 ]},
-{"id":"xh_t1_2","title":"Hearing the places","step":"recognize","meta":"Town words by ear","vocab":[],"ex":[
+{"id":"xh_t1_2","title":"Recognize","step":"recognize","meta":"Town words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"isikolo","o":["isikolo","ivenkile","idolophu"],"a":0},
 {"t":"mc","q":"What does ivenkile mean?","o":["shop","school","road"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"indlela","o":["indlela","iteksi","idolophu"],"a":0},
@@ -1977,21 +1977,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"iteksi","o":["iteksi","indlela","isikolo"],"a":0},
 {"t":"mc","q":"You pay by passing coins forward in…","o":["iteksi","ivenkile","isikolo"],"a":0}
 ]},
-{"id":"xh_t1_3","title":"Building the town","step":"build","meta":"Place by place","vocab":[],"ex":[
+{"id":"xh_t1_3","title":"Build","step":"build","meta":"Place by place","vocab":[],"ex":[
 {"t":"fill","q":"Complete: shop","s":"ivenki___","o":["le","la","li"],"a":0},
 {"t":"wb","q":"Build the word: school","a":["isikolo"],"pool":["isikolo","ivenkile","iteksi"]},
 {"t":"fill","q":"Complete: town","s":"idolo___u","o":["ph","p","f"],"a":0},
 {"t":"wb","q":"Build the word: road","a":["indlela"],"pool":["indlela","idolophu","iteksi"]},
 {"t":"li","q":"Which one do you hear?","say":"ivenkile","o":["ivenkile","iteksi","indlela"],"a":0}
 ]},
-{"id":"xh_t1_4","title":"The town in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ivenkile","shop"],["isikolo","school"],["idolophu","town"]]},
 {"t":"li","q":"Which one do you hear?","say":"idolophu","o":["idolophu","isikolo","iteksi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["indlela","road"],["iteksi","taxi"]]},
 {"t":"mc","q":"iteksi in South Africa usually means…","o":["a minibus on a set route","a metered cab","a bus"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"indlela","o":["indlela","ivenkile","idolophu"],"a":0}
 ]},
-{"id":"xh_t1_5","title":"Checkpoint: the places","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does idolophu mean?","o":["town","shop","school"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isikolo","o":["isikolo","idolophu","ivenkile"],"a":0},
 {"t":"mc","q":"Which one means road?","o":["indlela","iteksi","idolophu"],"a":0},
@@ -2016,7 +2016,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uya phi?","o":["Uya phi?","ndihamba"],"a":0},
 {"t":"mc","q":"Uya phi? asks…","o":["where are you going?","where are you from?","are you leaving?"],"a":0}
 ]},
-{"id":"xh_t2_2","title":"Hearing the going","step":"recognize","meta":"Motion verbs by ear","vocab":[],"ex":[
+{"id":"xh_t2_2","title":"Recognize","step":"recognize","meta":"Motion verbs by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndiya","ndihamba"],"a":0},
 {"t":"mc","q":"What does ndiya mean?","o":["I go","I come","I walk"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndihamba","o":["ndihamba","ndiza","Uya phi?"],"a":0},
@@ -2024,21 +2024,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uya phi?","o":["Uya phi?","ndiya","ndiza"],"a":0},
 {"t":"mc","q":"In Uya phi?, the u- means…","o":["you","I","where"],"a":0}
 ]},
-{"id":"xh_t2_3","title":"Building the going","step":"build","meta":"Set the verbs moving","vocab":[],"ex":[
+{"id":"xh_t2_3","title":"Build","step":"build","meta":"Set the verbs moving","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I go","s":"Ndi___","o":["ya","za","wa"],"a":0},
 {"t":"wb","q":"Build: where are you going?","a":["Uya","phi?"],"pool":["Uya","phi?","ndiza"]},
 {"t":"fill","q":"Complete: I walk","s":"Ndiha___a","o":["mb","m","nb"],"a":0},
 {"t":"wb","q":"Build the word: I come","a":["ndiza"],"pool":["ndiza","ndiya","ndihamba"]},
 {"t":"li","q":"Which one do you hear?","say":"ndiya","o":["ndiya","ndihamba","ndiza"],"a":0}
 ]},
-{"id":"xh_t2_4","title":"The going in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiya","I go"],["ndiza","I come"],["ndihamba","I walk"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiza","o":["ndiza","ndihamba","ndiya"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uya phi?","where are you going?"],["hamba kakuhle","go well"]]},
 {"t":"mc","q":"Someone calls Uya phi? across the road. It works as…","o":["a friendly greeting","an accusation","a warning"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndihamba","o":["ndihamba","Uya phi?","ndiya"],"a":0}
 ]},
-{"id":"xh_t2_5","title":"Checkpoint: the going","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndihamba mean?","o":["I walk","I go","I come"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiya","o":["ndiya","ndiza","ndihamba"],"a":0},
 {"t":"mc","q":"Which one means where are you going?","o":["Uya phi?","Uphi utata?","Unjani?"],"a":0},
@@ -2062,7 +2062,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni"],"a":0},
 {"t":"mc","q":"The e-…-ini wrap turns a place noun into…","o":["at or in that place","its plural","a question"],"a":0}
 ]},
-{"id":"xh_t3_2","title":"Hearing the locatives","step":"recognize","meta":"At and in, by ear","vocab":[],"ex":[
+{"id":"xh_t3_2","title":"Recognize","step":"recognize","meta":"At and in, by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","esikolweni","edolophini"],"a":0},
 {"t":"mc","q":"What does esikolweni mean?","o":["at school","the school","in town"],"a":0},
 {"t":"li","q":"Plain or wrapped — which do you hear?","say":"esikolweni","o":["esikolweni","isikolo"],"a":0},
@@ -2070,21 +2070,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni","esikolweni"],"a":0},
 {"t":"mc","q":"ivenkile is to evenkileni as ikhitshi is to…","o":["ekhitshini","ikhitshini","ekhitshi"],"a":0}
 ]},
-{"id":"xh_t3_3","title":"Building the locatives","step":"build","meta":"Wrap the places","vocab":[],"ex":[
+{"id":"xh_t3_3","title":"Build","step":"build","meta":"Wrap the places","vocab":[],"ex":[
 {"t":"fill","q":"Complete: at the shop","s":"evenkile___","o":["ni","ne","na"],"a":0},
 {"t":"wb","q":"Build the word: at school","a":["esikolweni"],"pool":["esikolweni","isikolo","edolophini"]},
 {"t":"fill","q":"Complete: in town","s":"edolophi___","o":["ni","nu","na"],"a":0},
 {"t":"wb","q":"Build the word: at the shop","a":["evenkileni"],"pool":["evenkileni","ivenkile","esikolweni"]},
 {"t":"li","q":"Which one do you hear?","say":"esikolweni","o":["esikolweni","edolophini","evenkileni"],"a":0}
 ]},
-{"id":"xh_t3_4","title":"Locatives in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the place to the wrapped form","pairs":[["ivenkile","evenkileni"],["isikolo","esikolweni"],["idolophu","edolophini"]]},
 {"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","esikolweni","evenkileni"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["evenkileni","at the shop"],["esikolweni","at school"],["edolophini","in town"]]},
 {"t":"mc","q":"Which set all means being AT a place?","o":["evenkileni, esikolweni, ekhitshini","ivenkile, isikolo, ikhitshi","ndiya, ndiza, ndihamba"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"evenkileni","o":["evenkileni","edolophini","esikolweni"],"a":0}
 ]},
-{"id":"xh_t3_5","title":"Checkpoint: the locatives","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does evenkileni mean?","o":["at the shop","the shop","at school"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"edolophini","o":["edolophini","evenkileni","esikolweni"],"a":0},
 {"t":"mc","q":"The wrapped form of isikolo is…","o":["esikolweni","esikoloni","isikolweni"],"a":0},
@@ -2109,7 +2109,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","irenki"],"a":0},
 {"t":"mc","q":"When your corner comes, you call…","o":["Yima!","Molo!","Enkosi!"],"a":0}
 ]},
-{"id":"xh_t4_2","title":"Hearing the ride","step":"recognize","meta":"Taxi talk by ear","vocab":[],"ex":[
+{"id":"xh_t4_2","title":"Recognize","step":"recognize","meta":"Taxi talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"irenki","o":["irenki","iteksi","Yima!"],"a":0},
 {"t":"mc","q":"What does irenki mean?","o":["taxi rank","taxi","town"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiya edolophini","o":["Ndiya edolophini","Ndihamba ngeteksi","edolophini"],"a":0},
@@ -2117,21 +2117,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yima!","o":["Yima!","irenki","ndiya"],"a":0},
 {"t":"mc","q":"Every route begins at…","o":["irenki","ivenkile","isikolo"],"a":0}
 ]},
-{"id":"xh_t4_3","title":"Building the ride","step":"build","meta":"Taxi sentences","vocab":[],"ex":[
+{"id":"xh_t4_3","title":"Build","step":"build","meta":"Taxi sentences","vocab":[],"ex":[
 {"t":"fill","q":"Complete: stop!","s":"Yi___!","o":["ma","mba","na"],"a":0},
 {"t":"wb","q":"Build: I am going to town","a":["ndiya","edolophini"],"pool":["ndiya","edolophini","ngeteksi"]},
 {"t":"fill","q":"Complete: taxi rank","s":"iren___","o":["ki","ke","ka"],"a":0},
 {"t":"wb","q":"Build: I go by taxi","a":["ndihamba","ngeteksi"],"pool":["ndihamba","ngeteksi","edolophini"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndihamba ngeteksi","o":["Ndihamba ngeteksi","Ndiya edolophini","Yima!"],"a":0}
 ]},
-{"id":"xh_t4_4","title":"The ride in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndiya edolophini","I am going to town"],["Ndihamba ngeteksi","I go by taxi"]]},
 {"t":"li","q":"Which one do you hear?","say":"irenki","o":["irenki","Yima!","iteksi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yima!","stop!"],["irenki","taxi rank"]]},
 {"t":"mc","q":"Uya phi? — the natural answer shape is…","o":["Ndiya edolophini","Ndihamba ngeteksi","Yima!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiya edolophini","o":["Ndiya edolophini","Ndihamba ngeteksi","irenki"],"a":0}
 ]},
-{"id":"xh_t4_5","title":"Checkpoint: the ride","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Yima! mean?","o":["stop!","go!","wait here"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndihamba ngeteksi","o":["Ndihamba ngeteksi","Ndiya edolophini","irenki"],"a":0},
 {"t":"mc","q":"Which one means taxi rank?","o":["irenki","iteksi","indlela"],"a":0},
@@ -2156,7 +2156,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?"],"a":0},
 {"t":"mc","q":"Ivenkile ikufuphi means…","o":["the shop is near","the shop is far","where is the shop?"],"a":0}
 ]},
-{"id":"xh_t5_2","title":"Hearing the distance","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
+{"id":"xh_t5_2","title":"Recognize","step":"recognize","meta":"Near and far by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"kude","o":["kude","kufuphi","Ikufuphi?"],"a":0},
 {"t":"mc","q":"What does kufuphi mean?","o":["near","far","fast"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ikufuphi?","o":["Ikufuphi?","kufuphi","kude"],"a":0},
@@ -2164,21 +2164,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?","kufuphi"],"a":0},
 {"t":"mc","q":"Idolophu ikude means the town is…","o":["far","near","closed"],"a":0}
 ]},
-{"id":"xh_t5_3","title":"Building the distance","step":"build","meta":"Near-and-far sentences","vocab":[],"ex":[
+{"id":"xh_t5_3","title":"Build","step":"build","meta":"Near-and-far sentences","vocab":[],"ex":[
 {"t":"fill","q":"Complete: near","s":"kufu___i","o":["ph","p","f"],"a":0},
 {"t":"wb","q":"Build: the shop is near","a":["ivenkile","ikufuphi"],"pool":["ivenkile","ikufuphi","kude"]},
 {"t":"fill","q":"Complete: far","s":"ku___","o":["de","da","du"],"a":0},
 {"t":"wb","q":"Build: is it near?","a":["Ikufuphi?"],"pool":["Ikufuphi?","kude","kufuphi"]},
 {"t":"li","q":"Which one do you hear?","say":"kufuphi","o":["kufuphi","kude","Ikufuphi?"],"a":0}
 ]},
-{"id":"xh_t5_4","title":"The distance in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kufuphi","near"],["kude","far"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ivenkile ikufuphi","o":["Ivenkile ikufuphi","Ikufuphi?","kude"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ikufuphi?","is it near?"],["Ivenkile ikufuphi","the shop is near"]]},
 {"t":"mc","q":"If idolophu ikude, you probably need…","o":["iteksi","icephe","isitulo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kude","o":["kude","kufuphi","Ivenkile ikufuphi"],"a":0}
 ]},
-{"id":"xh_t5_5","title":"Checkpoint: the distance","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Ikufuphi? ask?","o":["is it near?","is it far?","is it open?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kufuphi","o":["kufuphi","kude","Ikufuphi?"],"a":0},
 {"t":"mc","q":"Which one means far?","o":["kude","kufuphi","apha"],"a":0},
@@ -2196,14 +2196,14 @@ const XH_LESSONS=[
 {"t":"note","tag":"Say it early","q":"Ndilahlekile — I am lost","body":"<p><b>Ndilahlekile</b> — <i>I am lost</i> — the sentence to say sooner rather than later. Nobody in the Eastern Cape lets a lost stranger stay lost.</p>","eg":[["Ndilahlekile","ndee-lah-hleh-KEE-leh","I am lost"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","ndihamba"],"a":0},
 {"t":"mc","q":"Ndilahlekile means…","o":["I am lost","I am late","I am tired"],"a":0},
-{"t":"note","tag":"The magic pair","q":"Ndicela uncedo","body":"<p><b>Uncedo</b> — <i>help</i>. With your old friend ndicela: <b>Ndicela uncedo</b> — <i>please help me</i>, literally I-request help. Two clicks, and doors open.</p>","eg":[["uncedo","oon-CEH-daw","help"],["Ndicela uncedo","ndee-CEH-lah oon-CEH-daw","please help me"]]},
+{"t":"note","tag":"Asking for help","q":"Ndicela uncedo","body":"<p><b>Uncedo</b> — <i>help</i>. With your old friend ndicela: <b>Ndicela uncedo</b> — <i>please help me</i>, literally I-request help. Two clicks, and doors open.</p>","eg":[["uncedo","oon-CEH-daw","help"],["Ndicela uncedo","ndee-CEH-lah oon-CEH-daw","please help me"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","uncedo"],"a":0},
 {"t":"mc","q":"What does uncedo mean?","o":["help","way","time"],"a":0},
 {"t":"note","tag":"The full question","q":"Uyayazi indlela?","body":"<p><b>Uyayazi indlela?</b> — <i>do you know the way?</i> U- you, -yazi know it. Point at where you are trying to go, and the answer usually comes with a walked escort.</p>","eg":[["Uyayazi indlela?","oo-yah-YAH-zee een-DLEH-lah","do you know the way?"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndilahlekile"],"a":0},
 {"t":"mc","q":"Uyayazi indlela? asks…","o":["do you know the way?","is the road far?","where is the road?"],"a":0}
 ]},
-{"id":"xh_t6_2","title":"Hearing the rescue","step":"recognize","meta":"Lost-and-found by ear","vocab":[],"ex":[
+{"id":"xh_t6_2","title":"Recognize","step":"recognize","meta":"Lost-and-found by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"uncedo","o":["uncedo","Ndicela uncedo","indlela"],"a":0},
 {"t":"mc","q":"What does Ndicela uncedo mean?","o":["please help me","I am lost","excuse me"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","Uyayazi indlela?","uncedo"],"a":0},
@@ -2211,21 +2211,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndicela uncedo","Ndilahlekile"],"a":0},
 {"t":"mc","q":"The clicks in Ndicela uncedo are both…","o":["c","x","q"],"a":0}
 ]},
-{"id":"xh_t6_3","title":"Building the rescue","step":"build","meta":"The lost-person toolkit","vocab":[],"ex":[
+{"id":"xh_t6_3","title":"Build","step":"build","meta":"The lost-person toolkit","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am lost","s":"Ndilahleki___","o":["le","la","li"],"a":0},
 {"t":"wb","q":"Build: please help me","a":["ndicela","uncedo"],"pool":["ndicela","uncedo","indlela"]},
 {"t":"fill","q":"Complete: help","s":"un___do","o":["ce","qe","xe"],"a":0},
 {"t":"wb","q":"Build: do you know the way?","a":["uyayazi","indlela?"],"pool":["uyayazi","indlela?","uncedo"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Ndilahlekile","Uyayazi indlela?"],"a":0}
 ]},
-{"id":"xh_t6_4","title":"The rescue in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndilahlekile","I am lost"],["uncedo","help"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uyayazi indlela?","o":["Uyayazi indlela?","Ndilahlekile","Ndicela uncedo"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndicela uncedo","please help me"],["Uyayazi indlela?","do you know the way?"]]},
 {"t":"mc","q":"Lost in town, your best opening line is…","o":["Uxolo, ndilahlekile","Yima!","Uya phi?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndilahlekile","o":["Ndilahlekile","uncedo","Uyayazi indlela?"],"a":0}
 ]},
-{"id":"xh_t6_5","title":"Checkpoint: the rescue","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_t6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Ndilahlekile mean?","o":["I am lost","I am here","help me"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndicela uncedo","o":["Ndicela uncedo","Uyayazi indlela?","Ndilahlekile"],"a":0},
 {"t":"mc","q":"Which one means help?","o":["uncedo","indlela","uxolo"],"a":0},
@@ -2249,7 +2249,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Sihamba ngoku"],"a":0},
 {"t":"mc","q":"Your three subject prefixes so far…","o":["ndi-, u-, si-","ndi-, i-, e-","a-, i-, u-"],"a":0}
 ]},
-{"id":"xh_t7_2","title":"Hearing the sentences","step":"recognize","meta":"Full sentences by ear","vocab":[],"ex":[
+{"id":"xh_t7_2","title":"Recognize","step":"recognize","meta":"Full sentences by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Sihamba ngoku","Ndiza kusasa"],"a":0},
 {"t":"mc","q":"What does Sihamba ngoku mean?","o":["we are leaving now","I am walking home","they left already"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Ndiya esikolweni","Sihamba ngoku"],"a":0},
@@ -2257,21 +2257,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Sihamba ngoku","o":["Sihamba ngoku","Ndiza kusasa","Ndiya esikolweni"],"a":0},
 {"t":"mc","q":"Verb, place, time — Ndiya esikolweni kusasa means…","o":["I go to school in the morning","I went to school yesterday","we go to town at night"],"a":0}
 ]},
-{"id":"xh_t7_3","title":"Building the sentences","step":"build","meta":"Assemble real Xhosa","vocab":[],"ex":[
+{"id":"xh_t7_3","title":"Build","step":"build","meta":"Assemble real Xhosa","vocab":[],"ex":[
 {"t":"fill","q":"Complete: WE are leaving now","s":"___hamba ngoku","o":["Si","Ndi","U"],"a":0},
 {"t":"wb","q":"Build: I am going to school","a":["ndiya","esikolweni"],"pool":["ndiya","esikolweni","kusasa"]},
 {"t":"wb","q":"Build: I am coming in the morning","a":["ndiza","kusasa"],"pool":["ndiza","kusasa","ngoku"]},
 {"t":"wb","q":"Build: we are leaving now","a":["sihamba","ngoku"],"pool":["sihamba","ngoku","ndiya"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Ndiza kusasa","Sihamba ngoku"],"a":0}
 ]},
-{"id":"xh_t7_4","title":"The zone in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_t7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Sihamba ngoku","we are leaving now"],["Ndiya esikolweni","I am going to school"],["Ndiza kusasa","I am coming in the morning"]]},
 {"t":"li","q":"Which one do you hear?","say":"Sihamba ngoku","o":["Sihamba ngoku","Ndiya esikolweni","Ndiza kusasa"],"a":0},
 {"t":"mc","q":"Uya phi? — Ndiya evenkileni. The person is heading…","o":["to the shop","to school","to the rank"],"a":0},
 {"t":"mc","q":"To say WE go, si- replaces…","o":["ndi-","-ya","nge-"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kusasa","o":["Ndiza kusasa","Sihamba ngoku","Ndiya esikolweni"],"a":0}
 ]},
-{"id":"xh_t7_5","title":"Checkpoint: Zone 7 complete","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
+{"id":"xh_t7_5","title":"Checkpoint","step":"checkpoint","meta":"Getting around — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Sihamba ngoku means…","o":["we are leaving now","I am leaving now","they are gone"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiya esikolweni","o":["Ndiya esikolweni","Ndiza kusasa","Sihamba ngoku"],"a":0},
 {"t":"mc","q":"Review — which one means taxi rank?","o":["irenki","iteksi","indlela"],"a":0},
@@ -2296,7 +2296,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","ixabiso"],"a":0},
 {"t":"mc","q":"Ispaza is…","o":["a small shop run from a home","a supermarket","a market stall"],"a":0}
 ]},
-{"id":"xh_m1_2","title":"Hearing the money","step":"recognize","meta":"Money words by ear","vocab":[],"ex":[
+{"id":"xh_m1_2","title":"Recognize","step":"recognize","meta":"Money words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","imali","ispaza"],"a":0},
 {"t":"mc","q":"What does imali mean?","o":["money","price","shop"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ixabiso","o":["ixabiso","ispaza","irandi"],"a":0},
@@ -2304,21 +2304,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","irandi","ixabiso"],"a":0},
 {"t":"mc","q":"Bread, airtime and sugar at any hour come from…","o":["ispaza","ivenkile","irenki"],"a":0}
 ]},
-{"id":"xh_m1_3","title":"Building the money","step":"build","meta":"Coin by coin","vocab":[],"ex":[
+{"id":"xh_m1_3","title":"Build","step":"build","meta":"Coin by coin","vocab":[],"ex":[
 {"t":"fill","q":"Complete: money","s":"ima___","o":["li","le","la"],"a":0},
 {"t":"wb","q":"Build the word: price","a":["ixabiso"],"pool":["ixabiso","imali","ispaza"]},
 {"t":"fill","q":"Complete: spaza shop","s":"ispa___","o":["za","sa","tsa"],"a":0},
 {"t":"wb","q":"Build the word: rand","a":["irandi"],"pool":["irandi","imali","ixabiso"]},
 {"t":"li","q":"Which one do you hear?","say":"imali","o":["imali","ixabiso","ispaza"],"a":0}
 ]},
-{"id":"xh_m1_4","title":"The money in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["imali","money"],["irandi","rand"],["ixabiso","price"]]},
 {"t":"li","q":"Which one do you hear?","say":"irandi","o":["irandi","ispaza","imali"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ispaza","spaza shop"],["ivenkile","shop"]]},
 {"t":"mc","q":"When the big shops are closed, the street still has…","o":["ispaza","irenki","isikolo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ixabiso","o":["ixabiso","imali","irandi"],"a":0}
 ]},
-{"id":"xh_m1_5","title":"Checkpoint: the money","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ispaza mean?","o":["spaza shop","supermarket","price"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ispaza","o":["ispaza","ixabiso","irandi"],"a":0},
 {"t":"mc","q":"Which one means rand?","o":["irandi","imali","ixabiso"],"a":0},
@@ -2343,7 +2343,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","itshintshi"],"a":0},
 {"t":"mc","q":"What does itshintshi mean?","o":["change","price","coins"],"a":0}
 ]},
-{"id":"xh_m2_2","title":"Hearing the till","step":"recognize","meta":"Price talk by ear","vocab":[],"ex":[
+{"id":"xh_m2_2","title":"Recognize","step":"recognize","meta":"Price talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"itshintshi","o":["itshintshi","Nantsi imali","Yimalini?"],"a":0},
 {"t":"mc","q":"What does Nantsi imali mean?","o":["here is the money","where is the money?","I have no money"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Yimalini?","o":["Yimalini?","lishumi leerandi","itshintshi"],"a":0},
@@ -2351,21 +2351,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"lishumi leerandi","o":["lishumi leerandi","Nantsi imali","Yimalini?"],"a":0},
 {"t":"mc","q":"The ishumi inside lishumi leerandi is the number…","o":["ten","two","seven"],"a":0}
 ]},
-{"id":"xh_m2_3","title":"Building the till","step":"build","meta":"Ask, pay, count","vocab":[],"ex":[
+{"id":"xh_m2_3","title":"Build","step":"build","meta":"Ask, pay, count","vocab":[],"ex":[
 {"t":"fill","q":"Complete: how much is it?","s":"Yimali___?","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build: here is the money","a":["nantsi","imali"],"pool":["nantsi","imali","itshintshi"]},
 {"t":"fill","q":"Complete: change","s":"itshin___i","o":["tsh","ts","sh"],"a":0},
 {"t":"wb","q":"Build: ten rand","a":["lishumi","leerandi"],"pool":["lishumi","leerandi","imali"]},
 {"t":"li","q":"Which one do you hear?","say":"Yimalini?","o":["Yimalini?","Nantsi imali","lishumi leerandi"],"a":0}
 ]},
-{"id":"xh_m2_4","title":"The till in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yimalini?","how much is it?"],["itshintshi","change"]]},
 {"t":"li","q":"Which one do you hear?","say":"Nantsi imali","o":["Nantsi imali","Yimalini?","itshintshi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["lishumi leerandi","ten rand"],["Nantsi imali","here is the money"]]},
 {"t":"mc","q":"Put the exchange in order: Yimalini? → lishumi leerandi → …","o":["Nantsi imali","Molo","Yima!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"itshintshi","o":["itshintshi","lishumi leerandi","Nantsi imali"],"a":0}
 ]},
-{"id":"xh_m2_5","title":"Checkpoint: the till","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Yimalini? mean?","o":["how much is it?","here is the money","ten rand"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"lishumi leerandi","o":["lishumi leerandi","itshintshi","Nantsi imali"],"a":0},
 {"t":"mc","q":"Which one means here is the money?","o":["Nantsi imali","Yimalini?","itshintshi"],"a":0},
@@ -2390,7 +2390,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ukuthenga"],"a":0},
 {"t":"mc","q":"Ndifuna ukuthenga isonka means…","o":["I want to buy bread","I am selling bread","I bought bread"],"a":0}
 ]},
-{"id":"xh_m3_2","title":"Hearing the trade","step":"recognize","meta":"Buy and sell by ear","vocab":[],"ex":[
+{"id":"xh_m3_2","title":"Recognize","step":"recognize","meta":"Buy and sell by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndithengisa","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
 {"t":"mc","q":"What does ndithenga mean?","o":["I buy","I sell","to buy"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ukuthenga","o":["ukuthenga","ndithengisa","ndithenga"],"a":0},
@@ -2398,21 +2398,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ukuthenga","ndithenga"],"a":0},
 {"t":"mc","q":"The -isa ending turns buy into sell by meaning…","o":["make it happen","do it again","do it well"],"a":0}
 ]},
-{"id":"xh_m3_3","title":"Building the trade","step":"build","meta":"Deals in parts","vocab":[],"ex":[
+{"id":"xh_m3_3","title":"Build","step":"build","meta":"Deals in parts","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I buy","s":"Ndithen___","o":["ga","gisa","go"],"a":0},
 {"t":"wb","q":"Build: I want to buy bread","a":["ndifuna","ukuthenga","isonka"],"pool":["ndifuna","ukuthenga","isonka","ndithengisa"]},
 {"t":"fill","q":"Complete: to buy","s":"___thenga","o":["uku","ndi","u"],"a":0},
 {"t":"wb","q":"Build the word: I sell","a":["ndithengisa"],"pool":["ndithengisa","ndithenga","ukuthenga"]},
 {"t":"li","q":"Which one do you hear?","say":"ndithenga","o":["ndithenga","ndithengisa","ukuthenga"],"a":0}
 ]},
-{"id":"xh_m3_4","title":"The trade in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithenga","I buy"],["ndithengisa","I sell"],["ukuthenga","to buy"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndithengisa","o":["ndithengisa","Ndifuna ukuthenga isonka","ndithenga"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndifuna ukuthenga isonka","I want to buy bread"],["ukutya","food"]]},
 {"t":"mc","q":"Ukutya, the food, is literally…","o":["to eat","the pot","a meal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndifuna ukuthenga isonka","o":["Ndifuna ukuthenga isonka","ndithengisa","ukuthenga"],"a":0}
 ]},
-{"id":"xh_m3_5","title":"Checkpoint: the trade","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ukuthenga mean?","o":["to buy","I buy","I sell"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndithenga","o":["ndithenga","ndithengisa","ukuthenga"],"a":0},
 {"t":"mc","q":"Which one means I sell?","o":["ndithengisa","ndithenga","ukuthenga"],"a":0},
@@ -2437,7 +2437,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","eli qanda"],"a":0},
 {"t":"mc","q":"Yimalini le? asks…","o":["how much is this one?","how much are they all?","is this money?"],"a":0}
 ]},
-{"id":"xh_m4_2","title":"Hearing the pointing","step":"recognize","meta":"This-words by ear","vocab":[],"ex":[
+{"id":"xh_m4_2","title":"Recognize","step":"recognize","meta":"This-words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"esi sitya","o":["esi sitya","eli qanda","le mali"],"a":0},
 {"t":"mc","q":"What does le mali mean?","o":["this money","the money","my money"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"eli qanda","o":["eli qanda","esi sitya","Yimalini le?"],"a":0},
@@ -2445,21 +2445,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","le mali","esi sitya"],"a":0},
 {"t":"mc","q":"The this-word for isitulo (an isi- word) would be…","o":["esi","le","eli"],"a":0}
 ]},
-{"id":"xh_m4_3","title":"Building the pointing","step":"build","meta":"Match this to its noun","vocab":[],"ex":[
+{"id":"xh_m4_3","title":"Build","step":"build","meta":"Match this to its noun","vocab":[],"ex":[
 {"t":"fill","q":"Complete: this money","s":"___ mali","o":["le","esi","eli"],"a":0},
 {"t":"wb","q":"Build: how much is this?","a":["yimalini","le?"],"pool":["yimalini","le?","esi"]},
 {"t":"fill","q":"Complete: this egg","s":"___ qanda","o":["eli","le","esi"],"a":0},
 {"t":"wb","q":"Build: this dish","a":["esi","sitya"],"pool":["esi","sitya","eli"]},
 {"t":"li","q":"Which one do you hear?","say":"le mali","o":["le mali","eli qanda","esi sitya"],"a":0}
 ]},
-{"id":"xh_m4_4","title":"The pointing in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the this-word to its noun","pairs":[["le","imali"],["esi","isitya"],["eli","iqanda"]]},
 {"t":"li","q":"Which one do you hear?","say":"Yimalini le?","o":["Yimalini le?","esi sitya","le mali"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["le mali","this money"],["esi sitya","this dish"],["eli qanda","this egg"]]},
 {"t":"mc","q":"Pointing at a loaf on the spaza shelf, you ask…","o":["Yimalini le?","Uya phi?","Ikufuphi?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"esi sitya","o":["esi sitya","le mali","eli qanda"],"a":0}
 ]},
-{"id":"xh_m4_5","title":"Checkpoint: the pointing","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does eli qanda mean?","o":["this egg","this dish","that egg"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"eli qanda","o":["eli qanda","le mali","esi sitya"],"a":0},
 {"t":"mc","q":"Which one means how much is this?","o":["Yimalini le?","Yimalini?","Iphi le?"],"a":0},
@@ -2484,7 +2484,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","amafutha"],"a":0},
 {"t":"mc","q":"Which one means maize meal?","o":["umgubo","iswekile","ityuwa"],"a":0}
 ]},
-{"id":"xh_m5_2","title":"Hearing the list","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
+{"id":"xh_m5_2","title":"Recognize","step":"recognize","meta":"Staples by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ityuwa","o":["ityuwa","iswekile","umgubo"],"a":0},
 {"t":"mc","q":"What does iswekile mean?","o":["sugar","salt","maize meal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","amafutha","ityuwa"],"a":0},
@@ -2492,21 +2492,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"amafutha","o":["amafutha","umgubo","iswekile"],"a":0},
 {"t":"mc","q":"Pap and umphokoqo begin as…","o":["umgubo","iswekile","amafutha"],"a":0}
 ]},
-{"id":"xh_m5_3","title":"Building the list","step":"build","meta":"Stock the shelf","vocab":[],"ex":[
+{"id":"xh_m5_3","title":"Build","step":"build","meta":"Stock the shelf","vocab":[],"ex":[
 {"t":"fill","q":"Complete: sugar","s":"isweki___","o":["le","la","li"],"a":0},
 {"t":"wb","q":"Build: I want to buy sugar","a":["ndifuna","ukuthenga","iswekile"],"pool":["ndifuna","ukuthenga","iswekile","ityuwa"]},
 {"t":"fill","q":"Complete: salt","s":"ityu___","o":["wa","va","ba"],"a":0},
 {"t":"wb","q":"Build the word: maize meal","a":["umgubo"],"pool":["umgubo","amafutha","iswekile"]},
 {"t":"li","q":"Which one do you hear?","say":"iswekile","o":["iswekile","ityuwa","amafutha"],"a":0}
 ]},
-{"id":"xh_m5_4","title":"The list in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iswekile","sugar"],["ityuwa","salt"]]},
 {"t":"li","q":"Which one do you hear?","say":"umgubo","o":["umgubo","iswekile","amafutha"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amafutha","cooking oil"],["umgubo","maize meal"]]},
 {"t":"mc","q":"Ndicela iswekile at the spaza gets you…","o":["sugar","salt","oil"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ityuwa","o":["ityuwa","umgubo","iswekile"],"a":0}
 ]},
-{"id":"xh_m5_5","title":"Checkpoint: the list","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does umgubo mean?","o":["maize meal","sugar","cooking oil"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"amafutha","o":["amafutha","ityuwa","umgubo"],"a":0},
 {"t":"mc","q":"Which one means salt?","o":["ityuwa","iswekile","amafutha"],"a":0},
@@ -2521,7 +2521,7 @@ const XH_LESSONS=[
 
 /* ---------- m6 · Too expensive! ---------- */
 {"id":"xh_m6","title":"Too expensive!","step":"learn","meta":"Iyadura — and talking the price down","vocab":[["iyadura","ee-yah-DOO-rah","it is expensive"],["ayiduri","ah-yee-DOO-ree","it is not expensive"],["itshiphu","ee-TSHEE-poo","it is cheap"],["Yehlisa ixabiso","yeh-HLEE-sah ee-xah-BEE-saw","lower the price"]],"ex":[
-{"t":"note","tag":"The sigh","q":"Iyadura","body":"<p><b>Iyadura</b> — <i>it is expensive</i> (duur, via Afrikaans). Said with feeling at every till in the country.</p>","eg":[["iyadura","ee-yah-DOO-rah","it is expensive"]]},
+{"t":"note","tag":"Too expensive","q":"Iyadura","body":"<p><b>Iyadura</b> — <i>it is expensive</i> (duur, via Afrikaans). Said with feeling at every till in the country.</p>","eg":[["iyadura","ee-yah-DOO-rah","it is expensive"]]},
 {"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","Yimalini?"],"a":0},
 {"t":"mc","q":"What does iyadura mean?","o":["it is expensive","it is cheap","it is broken"],"a":0},
 {"t":"note","tag":"The wrap returns","q":"Ayiduri — not expensive","body":"<p>The a-…-i negative wrap you met on andithandi works on things too: <b>ayiduri</b> — <i>it is not expensive</i>. And for good news there is <b>itshiphu</b> — <i>it is cheap</i>.</p>","eg":[["ayiduri","ah-yee-DOO-ree","it is not expensive"],["itshiphu","ee-TSHEE-poo","it is cheap"]]},
@@ -2531,7 +2531,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","itshiphu"],"a":0},
 {"t":"mc","q":"Yehlisa ixabiso belongs…","o":["at a market stall","at the spaza","at the bank"],"a":0}
 ]},
-{"id":"xh_m6_2","title":"Hearing the bargain","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
+{"id":"xh_m6_2","title":"Recognize","step":"recognize","meta":"Price feelings by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"itshiphu","o":["itshiphu","iyadura","ayiduri"],"a":0},
 {"t":"mc","q":"What does itshiphu mean?","o":["it is cheap","it is expensive","it is small"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","ayiduri","itshiphu"],"a":0},
@@ -2539,21 +2539,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","iyadura","itshiphu"],"a":0},
 {"t":"mc","q":"The a-…-i wrap in ayiduri does what andithandi did — it makes the verb…","o":["negative","past","polite"],"a":0}
 ]},
-{"id":"xh_m6_3","title":"Building the bargain","step":"build","meta":"Argue the number","vocab":[],"ex":[
+{"id":"xh_m6_3","title":"Build","step":"build","meta":"Argue the number","vocab":[],"ex":[
 {"t":"fill","q":"Complete: it is expensive","s":"iyadu___","o":["ra","ri","re"],"a":0},
 {"t":"wb","q":"Build: lower the price","a":["yehlisa","ixabiso"],"pool":["yehlisa","ixabiso","iyadura"]},
 {"t":"fill","q":"Complete: it is NOT expensive","s":"ayidu___","o":["ri","ra","ru"],"a":0},
 {"t":"wb","q":"Build the word: it is cheap","a":["itshiphu"],"pool":["itshiphu","iyadura","ayiduri"]},
 {"t":"li","q":"Which one do you hear?","say":"ayiduri","o":["ayiduri","iyadura","Yehlisa ixabiso"],"a":0}
 ]},
-{"id":"xh_m6_4","title":"The bargain in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iyadura","it is expensive"],["itshiphu","it is cheap"]]},
 {"t":"li","q":"Which one do you hear?","say":"iyadura","o":["iyadura","itshiphu","ayiduri"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ayiduri","it is not expensive"],["Yehlisa ixabiso","lower the price"]]},
 {"t":"mc","q":"Hayi, iyadura! Yehlisa ixabiso! — the shopper is…","o":["bargaining","paying","leaving"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"itshiphu","o":["itshiphu","ayiduri","iyadura"],"a":0}
 ]},
-{"id":"xh_m6_5","title":"Checkpoint: the bargain","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_m6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ayiduri mean?","o":["it is not expensive","it is expensive","it is not cheap"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Yehlisa ixabiso","o":["Yehlisa ixabiso","iyadura","ayiduri"],"a":0},
 {"t":"mc","q":"Which one means it is cheap?","o":["itshiphu","iyadura","ayiduri"],"a":0},
@@ -2577,7 +2577,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Unayo iswekile?"],"a":0},
 {"t":"mc","q":"Hayi, andinayo — the spaza is out of it. Your next stop…","o":["ivenkile","irenki","isikolo"],"a":0}
 ]},
-{"id":"xh_m7_2","title":"Hearing the counter","step":"recognize","meta":"Have and have-not by ear","vocab":[],"ex":[
+{"id":"xh_m7_2","title":"Recognize","step":"recognize","meta":"Have and have-not by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ndinayo","o":["Ndinayo","Andinayo","Unayo iswekile?"],"a":0},
 {"t":"mc","q":"What does Ndinayo mean?","o":["I have it","I do not have it","do you have it?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Ndinayo","Andinayo"],"a":0},
@@ -2585,21 +2585,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Ndinayo","Unayo iswekile?"],"a":0},
 {"t":"mc","q":"The a- at the front of Andinayo is the same a- that made…","o":["andithandi","amanzi","apha"],"a":0}
 ]},
-{"id":"xh_m7_3","title":"Building the counter","step":"build","meta":"Ask and answer","vocab":[],"ex":[
+{"id":"xh_m7_3","title":"Build","step":"build","meta":"Ask and answer","vocab":[],"ex":[
 {"t":"fill","q":"Complete: do you have sugar?","s":"U___yo iswekile?","o":["na","ya","nga"],"a":0},
 {"t":"wb","q":"Build: do you have sugar?","a":["unayo","iswekile?"],"pool":["unayo","iswekile?","ndinayo"]},
 {"t":"fill","q":"Complete: I do NOT have it","s":"___dinayo","o":["An","Ndi","U"],"a":0},
 {"t":"wb","q":"Build the word: I have it","a":["ndinayo"],"pool":["ndinayo","andinayo","unayo"]},
 {"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Andinayo","Ndinayo"],"a":0}
 ]},
-{"id":"xh_m7_4","title":"The counter in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_m7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Unayo iswekile?","do you have sugar?"],["Ndinayo","I have it"],["Andinayo","I do not have it"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndinayo","o":["Ndinayo","Unayo iswekile?","Andinayo"],"a":0},
 {"t":"mc","q":"Unayo umgubo? — Ewe, … Complete the happy answer.","o":["ndinayo","andinayo","yimalini"],"a":0},
 {"t":"mc","q":"To ask about salt instead of sugar, swap iswekile for…","o":["ityuwa","umgubo","amafutha"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Andinayo","o":["Andinayo","Ndinayo","Unayo iswekile?"],"a":0}
 ]},
-{"id":"xh_m7_5","title":"Checkpoint: Zone 8 complete","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
+{"id":"xh_m7_5","title":"Checkpoint","step":"checkpoint","meta":"Shopping and money — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Unayo iswekile? — Hayi, … The sad answer is…","o":["andinayo","ndinayo","nantsi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Unayo iswekile?","o":["Unayo iswekile?","Ndinayo","Andinayo"],"a":0},
 {"t":"mc","q":"Review — Yimalini? asks…","o":["how much is it?","do you have it?","where is it?"],"a":0},
@@ -2617,14 +2617,14 @@ const XH_LESSONS=[
 {"t":"note","tag":"The word for it","q":"Umsebenzi","body":"<p><b>Umsebenzi</b> — <i>work, a job</i>. Also what you call the work itself: good work, hard work, no work — one word carries them all.</p>","eg":[["umsebenzi","oom-seh-BEHN-zee","work"]]},
 {"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","imali"],"a":0},
 {"t":"mc","q":"What does umsebenzi mean?","o":["work","money","school"],"a":0},
-{"t":"note","tag":"A grammar secret","q":"Ndiyasebenza — the -ya- long form","body":"<p><b>Ndiyasebenza</b> — <i>I work</i>. Hear the extra -ya-? Xhosa slips it in when the verb stands alone at the end. Add a place and it drops out: <b>Ndisebenza edolophini</b> — <i>I work in town</i>. You have heard this all along — ndiyavuya, but ndifunda isiXhosa.</p>","eg":[["ndiyasebenza","ndee-yah-seh-BEHN-zah","I work"],["Ndisebenza edolophini","ndee-seh-BEHN-zah eh-daw-law-PEE-nee","I work in town"]]},
+{"t":"note","tag":"The long form","q":"Ndiyasebenza — the -ya- long form","body":"<p><b>Ndiyasebenza</b> — <i>I work</i>. Hear the extra -ya-? Xhosa slips it in when the verb stands alone at the end. Add a place and it drops out: <b>Ndisebenza edolophini</b> — <i>I work in town</i>. You have heard this all along — ndiyavuya, but ndifunda isiXhosa.</p>","eg":[["ndiyasebenza","ndee-yah-seh-BEHN-zah","I work"],["Ndisebenza edolophini","ndee-seh-BEHN-zah eh-daw-law-PEE-nee","I work in town"]]},
 {"t":"li","q":"Long or short — which do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","Ndisebenza edolophini"],"a":0},
 {"t":"mc","q":"The -ya- appears when the verb…","o":["stands alone at the end","has an object after it","is negative"],"a":0},
 {"t":"note","tag":"The question","q":"Usebenza phi?","body":"<p><b>Usebenza phi?</b> — <i>where do you work?</i> — the phi of Uphi and Uya phi?, doing its where-work on a new verb. Answer with your locatives: Ndisebenza edolophini, esikolweni, evenkileni…</p>","eg":[["Usebenza phi?","oo-seh-BEHN-zah PEE","where do you work?"]]},
 {"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","ndiyasebenza"],"a":0},
 {"t":"mc","q":"Usebenza phi? asks…","o":["where do you work?","do you work?","when do you work?"],"a":0}
 ]},
-{"id":"xh_w1_2","title":"Hearing the work","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
+{"id":"xh_w1_2","title":"Recognize","step":"recognize","meta":"Work talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ndisebenza edolophini","o":["Ndisebenza edolophini","ndiyasebenza","Usebenza phi?"],"a":0},
 {"t":"mc","q":"What does ndiyasebenza mean?","o":["I work","I study","I rest"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","ndiyasebenza","Usebenza phi?"],"a":0},
@@ -2632,21 +2632,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","umsebenzi","Ndisebenza edolophini"],"a":0},
 {"t":"mc","q":"Usebenza phi? — the natural answer starts…","o":["Ndisebenza…","Ndiya…","Yimalini…"],"a":0}
 ]},
-{"id":"xh_w1_3","title":"Building the work","step":"build","meta":"Long form, short form","vocab":[],"ex":[
+{"id":"xh_w1_3","title":"Build","step":"build","meta":"Long form, short form","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I work (verb standing alone)","s":"Ndi___sebenza","o":["ya","yo","wa"],"a":0},
 {"t":"wb","q":"Build: I work in town","a":["ndisebenza","edolophini"],"pool":["ndisebenza","edolophini","ndiyasebenza"]},
 {"t":"fill","q":"Complete: work","s":"umsebe___i","o":["nz","ns","z"],"a":0},
 {"t":"wb","q":"Build: where do you work?","a":["usebenza","phi?"],"pool":["usebenza","phi?","ndisebenza"]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyasebenza","o":["ndiyasebenza","umsebenzi","Usebenza phi?"],"a":0}
 ]},
-{"id":"xh_w1_4","title":"The work in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["umsebenzi","work"],["ndiyasebenza","I work"]]},
 {"t":"li","q":"Which one do you hear?","say":"Usebenza phi?","o":["Usebenza phi?","Ndisebenza edolophini","umsebenzi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Usebenza phi?","where do you work?"],["Ndisebenza edolophini","I work in town"]]},
 {"t":"mc","q":"Why ndiyavuya but ndifunda isiXhosa?","o":["-ya- drops when something follows the verb","-ya- marks happiness","they are different tenses"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umsebenzi","o":["umsebenzi","ndiyasebenza","Ndisebenza edolophini"],"a":0}
 ]},
-{"id":"xh_w1_5","title":"Checkpoint: the work","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does umsebenzi mean?","o":["work","worker","school"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndisebenza edolophini","o":["Ndisebenza edolophini","Usebenza phi?","ndiyasebenza"],"a":0},
 {"t":"mc","q":"Which one means where do you work?","o":["Usebenza phi?","Uya phi?","Uphi umsebenzi?"],"a":0},
@@ -2670,7 +2670,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","utitshala"],"a":0},
 {"t":"mc","q":"umfundi goes to abafundi because umfundi is…","o":["an um- person word","a u- name word","an isi- thing word"],"a":0}
 ]},
-{"id":"xh_w2_2","title":"Hearing the classroom","step":"recognize","meta":"School people by ear","vocab":[],"ex":[
+{"id":"xh_w2_2","title":"Recognize","step":"recognize","meta":"School people by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"umfundi","o":["umfundi","utitshala","abafundi"],"a":0},
 {"t":"mc","q":"What does utitshala mean?","o":["teacher","learner","principal"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","abafundi","utitshala"],"a":0},
@@ -2678,21 +2678,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"abafundi","o":["abafundi","ootitshala","umfundi"],"a":0},
 {"t":"mc","q":"South African schools call a pupil a…","o":["learner","student","scholar"],"a":0}
 ]},
-{"id":"xh_w2_3","title":"Building the classroom","step":"build","meta":"People and their plurals","vocab":[],"ex":[
+{"id":"xh_w2_3","title":"Build","step":"build","meta":"People and their plurals","vocab":[],"ex":[
 {"t":"fill","q":"Complete: teacher","s":"utitsha___","o":["la","lo","li"],"a":0},
 {"t":"wb","q":"Build the word: learners","a":["abafundi"],"pool":["abafundi","umfundi","ootitshala"]},
 {"t":"fill","q":"Complete: teachers","s":"___titshala","o":["oo","aba","ama"],"a":0},
 {"t":"wb","q":"Build the word: learner","a":["umfundi"],"pool":["umfundi","abafundi","utitshala"]},
 {"t":"li","q":"Which one do you hear?","say":"utitshala","o":["utitshala","umfundi","ootitshala"],"a":0}
 ]},
-{"id":"xh_w2_4","title":"The classroom in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match singular to plural","pairs":[["utitshala","ootitshala"],["umfundi","abafundi"]]},
 {"t":"li","q":"Which one do you hear?","say":"ootitshala","o":["ootitshala","abafundi","utitshala"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["utitshala","teacher"],["umfundi","learner"],["abafundi","learners"]]},
 {"t":"mc","q":"The funda inside umfundi means…","o":["learn","teach","read aloud only"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umfundi","o":["umfundi","utitshala","abafundi"],"a":0}
 ]},
-{"id":"xh_w2_5","title":"Checkpoint: the classroom","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does abafundi mean?","o":["learners","teachers","schools"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"abafundi","o":["abafundi","ootitshala","umfundi"],"a":0},
 {"t":"mc","q":"Which one means teachers?","o":["ootitshala","utitshala","abafundi"],"a":0},
@@ -2706,8 +2706,8 @@ const XH_LESSONS=[
 ]},
 
 /* ---------- w3 · The fourth pair ---------- */
-{"id":"xh_w3","title":"The fourth pair","step":"learn","meta":"Um- things go to imi-","vocab":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"],["umzi","oom-ZEE","homestead"],["imizi","ee-MEE-zee","homesteads"]],"ex":[
-{"t":"note","tag":"Not people this time","q":"Um- THINGS go to imi-","body":"<p>Um- PEOPLE go to aba- — you know that. Um- THINGS take a different road: <b>imi-</b>. One umsebenzi, many <b>imisebenzi</b> — <i>jobs</i>. Your fourth and last big plural pair.</p>","eg":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"]]},
+{"id":"xh_w3","title":"The fourth noun pair","step":"learn","meta":"Um- things go to imi-","vocab":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"],["umzi","oom-ZEE","homestead"],["imizi","ee-MEE-zee","homesteads"]],"ex":[
+{"t":"note","tag":"Not people this time","q":"Um- things go to imi-","body":"<p>Um- PEOPLE go to aba- — you know that. Um- THINGS take a different road: <b>imi-</b>. One umsebenzi, many <b>imisebenzi</b> — <i>jobs</i>. Your fourth and last big plural pair.</p>","eg":[["imisebenzi","ee-mee-seh-BEHN-zee","jobs"]]},
 {"t":"li","q":"One or many — which do you hear?","say":"imisebenzi","o":["imisebenzi","umsebenzi"],"a":0},
 {"t":"mc","q":"imisebenzi means…","o":["jobs","workers","job"],"a":0},
 {"t":"note","tag":"The Eastern Cape word","q":"Umzi","body":"<p><b>Umzi</b> — <i>a homestead</i>: the family place, houses and kraal and yard together, the word behind so many town names (Umzimkhulu, the great homestead). Many of them: <b>imizi</b>.</p>","eg":[["umzi","oom-ZEE","homestead"],["imizi","ee-MEE-zee","homesteads"]]},
@@ -2716,7 +2716,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","imisebenzi"],"a":0},
 {"t":"mc","q":"Your four plural pairs, complete…","o":["um-/aba-, oo-, isi-/izi-, um-/imi-","only um-/aba-","i-/ama- alone"],"a":0}
 ]},
-{"id":"xh_w3_2","title":"Hearing the pair","step":"recognize","meta":"Um- and imi- by ear","vocab":[],"ex":[
+{"id":"xh_w3_2","title":"Recognize","step":"recognize","meta":"Um- and imi- by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","imizi","umzi"],"a":0},
 {"t":"mc","q":"The plural of umsebenzi is…","o":["imisebenzi","abasebenzi","oosebenzi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","umzi","imisebenzi"],"a":0},
@@ -2724,21 +2724,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umzi","o":["umzi","imizi","umsebenzi"],"a":0},
 {"t":"mc","q":"Umzimkhulu, the town name, means…","o":["the great homestead","the long river","the old road"],"a":0}
 ]},
-{"id":"xh_w3_3","title":"Building the pair","step":"build","meta":"Swap um- for imi-","vocab":[],"ex":[
+{"id":"xh_w3_3","title":"Build","step":"build","meta":"Swap um- for imi-","vocab":[],"ex":[
 {"t":"fill","q":"Complete: jobs","s":"___sebenzi","o":["imi","aba","izi"],"a":0},
 {"t":"wb","q":"Build the word: homesteads","a":["imizi"],"pool":["imizi","umzi","imisebenzi"]},
 {"t":"fill","q":"Complete: homestead (just one)","s":"um___","o":["zi","zo","za"],"a":0},
 {"t":"wb","q":"Build the word: jobs","a":["imisebenzi"],"pool":["imisebenzi","umsebenzi","imizi"]},
 {"t":"li","q":"Which one do you hear?","say":"imisebenzi","o":["imisebenzi","umzi","imizi"],"a":0}
 ]},
-{"id":"xh_w3_4","title":"The pair in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match singular to plural","pairs":[["umsebenzi","imisebenzi"],["umzi","imizi"]]},
 {"t":"li","q":"Which one do you hear?","say":"umzi","o":["umzi","imisebenzi","imizi"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["imisebenzi","jobs"],["umzi","homestead"],["imizi","homesteads"]]},
 {"t":"mc","q":"umntu goes to abantu but umzi goes to imizi because…","o":["people take aba-, things take imi-","umzi is borrowed","there is no rule"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","umzi","imisebenzi"],"a":0}
 ]},
-{"id":"xh_w3_5","title":"Checkpoint: the pair","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does imisebenzi mean?","o":["jobs","workers","homesteads"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"imizi","o":["imizi","imisebenzi","umzi"],"a":0},
 {"t":"mc","q":"The plural of umzi is…","o":["imizi","abazi","oomzi"],"a":0},
@@ -2752,7 +2752,7 @@ const XH_LESSONS=[
 ]},
 
 /* ---------- w4 · Doing words ---------- */
-{"id":"xh_w4","title":"Doing words","step":"learn","meta":"Write, teach — and the teacher who teaches","vocab":[["ndibhala","ndee-BHAH-lah","I write"],["ndifundisa","ndee-foon-DEE-sah","I teach"],["Utitshala uyafundisa","oo-tee-TSHAH-lah oo-yah-foon-DEE-sah","the teacher teaches"]],"ex":[
+{"id":"xh_w4","title":"Everyday verbs","step":"learn","meta":"Write, teach — and the teacher who teaches","vocab":[["ndibhala","ndee-BHAH-lah","I write"],["ndifundisa","ndee-foon-DEE-sah","I teach"],["Utitshala uyafundisa","oo-tee-TSHAH-lah oo-yah-foon-DEE-sah","the teacher teaches"]],"ex":[
 {"t":"note","tag":"Pen to paper","q":"Ndibhala","body":"<p><b>Ndibhala</b> — <i>I write</i> — with the breathy bh of ibhedi and bhuti. Ndibhala incwadi: I write a letter (incwadi is letter as well as book).</p>","eg":[["ndibhala","ndee-BHAH-lah","I write"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifunda"],"a":0},
 {"t":"mc","q":"What does ndibhala mean?","o":["I write","I read","I teach"],"a":0},
@@ -2763,7 +2763,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa"],"a":0},
 {"t":"mc","q":"Utitshala uyafundisa means…","o":["the teacher teaches","the teacher learns","I teach the teacher"],"a":0}
 ]},
-{"id":"xh_w4_2","title":"Hearing the doing","step":"recognize","meta":"Classroom verbs by ear","vocab":[],"ex":[
+{"id":"xh_w4_2","title":"Recognize","step":"recognize","meta":"Classroom verbs by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","ndibhala","Utitshala uyafundisa"],"a":0},
 {"t":"mc","q":"What does ndifundisa mean?","o":["I teach","I learn","I write"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifundisa","ndithetha"],"a":0},
@@ -2771,21 +2771,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndifundisa","ndibhala"],"a":0},
 {"t":"mc","q":"thenga:thengisa as funda:…","o":["fundisa","funde","fundile"],"a":0}
 ]},
-{"id":"xh_w4_3","title":"Building the doing","step":"build","meta":"Verbs at the chalkboard","vocab":[],"ex":[
+{"id":"xh_w4_3","title":"Build","step":"build","meta":"Verbs at the chalkboard","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I write","s":"Ndi___ala","o":["bh","b","p"],"a":0},
 {"t":"wb","q":"Build: the teacher teaches","a":["utitshala","uyafundisa"],"pool":["utitshala","uyafundisa","ndifundisa"]},
 {"t":"fill","q":"Complete: I teach (I make learn)","s":"Ndifundi___","o":["sa","za","la"],"a":0},
 {"t":"wb","q":"Build the word: I write","a":["ndibhala"],"pool":["ndibhala","ndifundisa","ndifunda"]},
 {"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","Utitshala uyafundisa","ndibhala"],"a":0}
 ]},
-{"id":"xh_w4_4","title":"The doing in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndibhala","I write"],["ndifundisa","I teach"],["ndifunda","I learn"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndibhala","o":["ndibhala","ndifundisa","Utitshala uyafundisa"],"a":0},
 {"t":"match","q":"Match the doer to the deed","pairs":[["utitshala","uyafundisa"],["umfundi","uyafunda"]]},
 {"t":"mc","q":"Umama uyapheka uses the same pattern as…","o":["Utitshala uyafundisa","Ndicela uncedo","Yimalini le?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Utitshala uyafundisa","o":["Utitshala uyafundisa","ndibhala","ndifundisa"],"a":0}
 ]},
-{"id":"xh_w4_5","title":"Checkpoint: the doing","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndibhala mean?","o":["I write","I teach","I read"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndifundisa","o":["ndifundisa","ndibhala","ndifunda"],"a":0},
 {"t":"mc","q":"Which one means I teach?","o":["ndifundisa","ndifunda","ndibhala"],"a":0},
@@ -2810,7 +2810,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ifowuni"],"a":0},
 {"t":"mc","q":"What does ikhompyutha mean?","o":["computer","calculator","keyboard"],"a":0}
 ]},
-{"id":"xh_w5_2","title":"Hearing the tools","step":"recognize","meta":"Desk things by ear","vocab":[],"ex":[
+{"id":"xh_w5_2","title":"Recognize","step":"recognize","meta":"Desk things by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ifowuni","o":["ifowuni","ikhompyutha","ipeni"],"a":0},
 {"t":"mc","q":"What does ipeni mean?","o":["pen","phone","computer"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ipeni","ifowuni"],"a":0},
@@ -2818,21 +2818,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ifowuni","ikhompyutha"],"a":0},
 {"t":"mc","q":"Airtime for ifowuni comes from…","o":["ispaza","isikolo","irenki"],"a":0}
 ]},
-{"id":"xh_w5_3","title":"Building the tools","step":"build","meta":"Kit the desk out","vocab":[],"ex":[
+{"id":"xh_w5_3","title":"Build","step":"build","meta":"Kit the desk out","vocab":[],"ex":[
 {"t":"fill","q":"Complete: phone","s":"ifowu___","o":["ni","ne","na"],"a":0},
 {"t":"wb","q":"Build the word: computer","a":["ikhompyutha"],"pool":["ikhompyutha","ifowuni","ipeni"]},
 {"t":"fill","q":"Complete: pen","s":"ipe___","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build: I write with a pen — ndibhala nge…","a":["ngepeni"],"pool":["ngepeni","ipeni","ngefowuni"]},
 {"t":"li","q":"Which one do you hear?","say":"ikhompyutha","o":["ikhompyutha","ipeni","ifowuni"],"a":0}
 ]},
-{"id":"xh_w5_4","title":"The tools in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ipeni","pen"],["ifowuni","phone"],["ikhompyutha","computer"]]},
 {"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ikhompyutha","ifowuni"],"a":0},
 {"t":"match","q":"Match the tool to its job","pairs":[["ipeni","ndibhala"],["ikhompyutha","ndiyasebenza"]]},
 {"t":"mc","q":"ngeteksi is by taxi, so by phone is…","o":["ngefowuni","efowunini","ifowuni"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ifowuni","o":["ifowuni","ipeni","ikhompyutha"],"a":0}
 ]},
-{"id":"xh_w5_5","title":"Checkpoint: the tools","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ifowuni mean?","o":["phone","pen","computer"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ipeni","o":["ipeni","ifowuni","ikhompyutha"],"a":0},
 {"t":"mc","q":"Which one means pen?","o":["ipeni","ikhompyutha","ifowuni"],"a":0},
@@ -2853,11 +2853,11 @@ const XH_LESSONS=[
 {"t":"note","tag":"Days off","q":"Andisebenzi ngeCawa","body":"<p>And the day you guard: <b>Andisebenzi ngeCawa</b> — <i>I do not work on Sunday</i>. The a-…-i wrap closes around sebenza exactly as it did around thanda and dura.</p>","eg":[["Andisebenzi ngeCawa","ahn-dee-seh-BEHN-zee ngeh-CAH-wah","I do not work on Sunday"]]},
 {"t":"li","q":"Working or not — which do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","Ndisebenza ngoMvulo"],"a":0},
 {"t":"mc","q":"Andisebenzi ngeCawa means…","o":["I do not work on Sunday","I work on Sunday","I rest every day"],"a":0},
-{"t":"note","tag":"The best word","q":"Iholide","body":"<p><b>Iholide</b> — <i>holiday</i>. South Africa keeps its public holidays generously, and everyone — abafundi and ootitshala most of all — counts the days to the next one.</p>","eg":[["iholide","ee-haw-LEE-deh","holiday"]]},
+{"t":"note","tag":"The holiday word","q":"Iholide","body":"<p><b>Iholide</b> — <i>holiday</i>. South Africa keeps its public holidays generously, and everyone — abafundi and ootitshala most of all — counts the days to the next one.</p>","eg":[["iholide","ee-haw-LEE-deh","holiday"]]},
 {"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","impelaveki"],"a":0},
 {"t":"mc","q":"What does iholide mean?","o":["holiday","weekend","Sunday"],"a":0}
 ]},
-{"id":"xh_w6_2","title":"Hearing the week","step":"recognize","meta":"Workdays by ear","vocab":[],"ex":[
+{"id":"xh_w6_2","title":"Recognize","step":"recognize","meta":"Workdays by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","Ndisebenza ngoMvulo","iholide"],"a":0},
 {"t":"mc","q":"What does iholide mean?","o":["holiday","workday","weekend"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","Andisebenzi ngeCawa","ndiyasebenza"],"a":0},
@@ -2865,21 +2865,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Ndisebenza ngoMvulo","Andisebenzi ngeCawa"],"a":0},
 {"t":"mc","q":"The negative wrap in Andisebenzi is…","o":["a-…-i","uku-…-a","nge-…-o"],"a":0}
 ]},
-{"id":"xh_w6_3","title":"Building the week","step":"build","meta":"Duty roster in Xhosa","vocab":[],"ex":[
+{"id":"xh_w6_3","title":"Build","step":"build","meta":"Duty roster in Xhosa","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I do NOT work on Sunday","s":"___sebenzi ngeCawa","o":["Andi","Ndi","Uya"],"a":0},
 {"t":"wb","q":"Build: I work on Monday","a":["ndisebenza","ngoMvulo"],"pool":["ndisebenza","ngoMvulo","ngeCawa"]},
 {"t":"fill","q":"Complete: holiday","s":"iholi___","o":["de","da","di"],"a":0},
 {"t":"wb","q":"Build: I do not work on Sunday","a":["andisebenzi","ngeCawa"],"pool":["andisebenzi","ngeCawa","ngoMvulo"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","iholide","Andisebenzi ngeCawa"],"a":0}
 ]},
-{"id":"xh_w6_4","title":"The week in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndisebenza ngoMvulo","I work on Monday"],["Andisebenzi ngeCawa","I do not work on Sunday"],["iholide","holiday"]]},
 {"t":"li","q":"Which one do you hear?","say":"iholide","o":["iholide","Andisebenzi ngeCawa","Ndisebenza ngoMvulo"],"a":0},
 {"t":"mc","q":"To say I work on Tuesday, swap ngoMvulo for…","o":["ngoLwesibini","ngeCawa","ngoMgqibelo"],"a":0},
 {"t":"mc","q":"Andisebenzi follows the same wrap as…","o":["andithandi and ayiduri","ndiyasebenza","ukuthenga"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Andisebenzi ngeCawa","o":["Andisebenzi ngeCawa","iholide","Ndisebenza ngoMvulo"],"a":0}
 ]},
-{"id":"xh_w6_5","title":"Checkpoint: the week","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_w6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Andisebenzi ngeCawa mean?","o":["I do not work on Sunday","I work on Sunday","Sunday is a holiday"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndisebenza ngoMvulo","o":["Ndisebenza ngoMvulo","Andisebenzi ngeCawa","iholide"],"a":0},
 {"t":"mc","q":"Which one means holiday?","o":["iholide","impelaveki","iCawa"],"a":0},
@@ -2893,7 +2893,7 @@ const XH_LESSONS=[
 ]},
 
 /* ---------- w7 · The everyday word ---------- */
-{"id":"xh_w7","title":"The everyday word","step":"learn","meta":"Ndiyaphangela — how the street says it","vocab":[["ndiyaphangela","ndee-yah-pah-NGEH-lah","I go to work"],["Ufunda ntoni?","oo-FOON-dah NTAW-nee","what do you study?"]],"ex":[
+{"id":"xh_w7","title":"The everyday word for work","step":"learn","meta":"Ndiyaphangela — how the street says it","vocab":[["ndiyaphangela","ndee-yah-pah-NGEH-lah","I go to work"],["Ufunda ntoni?","oo-FOON-dah NTAW-nee","what do you study?"]],"ex":[
 {"t":"note","tag":"Street register","q":"Ukuphangela","body":"<p>Textbooks say sebenza. On the street, at the rank, on the phone, everyday Xhosa says <b>ndiyaphangela</b> — <i>I go to work, I am working</i>. Both are correct; phangela is what you will actually hear in Cape Town on a Monday morning.</p>","eg":[["ndiyaphangela","ndee-yah-pah-NGEH-lah","I go to work"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza"],"a":0},
 {"t":"mc","q":"ndiyaphangela is…","o":["the everyday word for working","slang to avoid","a different job"],"a":0},
@@ -2903,7 +2903,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","Ufunda ntoni?"],"a":0},
 {"t":"mc","q":"Ufunda ntoni? — Ndifunda … The proudest answer in this app:","o":["isiXhosa","imali","iteksi"],"a":0}
 ]},
-{"id":"xh_w7_2","title":"Hearing the everyday","step":"recognize","meta":"Street register by ear","vocab":[],"ex":[
+{"id":"xh_w7_2","title":"Recognize","step":"recognize","meta":"Street register by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndiyasebenza"],"a":0},
 {"t":"mc","q":"What does ndiyaphangela mean?","o":["I go to work","I go to school","I am on holiday"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza","ndifundisa"],"a":0},
@@ -2911,21 +2911,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Listen closely — funda or funa?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","Ufuna ntoni?"],"a":0},
 {"t":"mc","q":"On a Cape Town Monday morning you will mostly hear…","o":["ndiyaphangela","ndiyasebenza","ndiphumla"],"a":0}
 ]},
-{"id":"xh_w7_3","title":"Building the everyday","step":"build","meta":"Say it like the street","vocab":[],"ex":[
+{"id":"xh_w7_3","title":"Build","step":"build","meta":"Say it like the street","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I go to work (everyday word)","s":"Ndiyaphange___","o":["la","le","li"],"a":0},
 {"t":"wb","q":"Build: what do you study?","a":["ufunda","ntoni?"],"pool":["ufunda","ntoni?","ufuna"]},
 {"t":"fill","q":"Complete: the street word for work","s":"ukupha___ela","o":["ng","nk","mb"],"a":0},
 {"t":"wb","q":"Build the word: I go to work","a":["ndiyaphangela"],"pool":["ndiyaphangela","ndiyasebenza","ufunda"]},
 {"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndibhala"],"a":0}
 ]},
-{"id":"xh_w7_4","title":"The everyday in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_w7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyaphangela","I go to work"],["Ufunda ntoni?","what do you study?"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","Ufunda ntoni?","ndiyasebenza"],"a":0},
 {"t":"match","q":"Match the register","pairs":[["ndiyaphangela","the street says it"],["ndiyasebenza","the textbook says it"]]},
 {"t":"mc","q":"Ufunda ntoni? and Ufuna ntoni? differ by…","o":["one nd","their tone","nothing"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ufunda ntoni?","o":["Ufunda ntoni?","ndiyaphangela","ndifundisa"],"a":0}
 ]},
-{"id":"xh_w7_5","title":"Checkpoint: Zone 9 complete","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
+{"id":"xh_w7_5","title":"Checkpoint","step":"checkpoint","meta":"Work and school — show it all","vocab":[],"ex":[
 {"t":"mc","q":"ndiyaphangela means…","o":["I go to work","I go home","I study"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyaphangela","o":["ndiyaphangela","ndiyasebenza","Ufunda ntoni?"],"a":0},
 {"t":"mc","q":"Review — the plural of umsebenzi is…","o":["imisebenzi","abasebenzi","oosebenzi"],"a":0},
@@ -2950,7 +2950,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"unyawo","o":["unyawo","intloko"],"a":0},
 {"t":"mc","q":"Which one means foot?","o":["unyawo","isandla","intloko"],"a":0}
 ]},
-{"id":"xh_b1_2","title":"Hearing the body","step":"recognize","meta":"Body parts by ear","vocab":[],"ex":[
+{"id":"xh_b1_2","title":"Recognize","step":"recognize","meta":"Body parts by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","izandla","unyawo"],"a":0},
 {"t":"mc","q":"What does unyawo mean?","o":["foot","hand","head"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"intloko","o":["intloko","unyawo","isandla"],"a":0},
@@ -2958,21 +2958,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"izandla","o":["izandla","isandla","intloko"],"a":0},
 {"t":"mc","q":"isandla goes to izandla because it is…","o":["an isi- word","an um- word","a u- word"],"a":0}
 ]},
-{"id":"xh_b1_3","title":"Building the body","step":"build","meta":"Piece by piece","vocab":[],"ex":[
+{"id":"xh_b1_3","title":"Build","step":"build","meta":"Piece by piece","vocab":[],"ex":[
 {"t":"fill","q":"Complete: head","s":"intlo___","o":["ko","ka","kho"],"a":0},
 {"t":"wb","q":"Build the word: hands","a":["izandla"],"pool":["izandla","isandla","unyawo"]},
 {"t":"fill","q":"Complete: foot","s":"unya___","o":["wo","wa","we"],"a":0},
 {"t":"wb","q":"Build the word: head","a":["intloko"],"pool":["intloko","unyawo","isandla"]},
 {"t":"li","q":"Which one do you hear?","say":"unyawo","o":["unyawo","izandla","intloko"],"a":0}
 ]},
-{"id":"xh_b1_4","title":"The body in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["intloko","head"],["isandla","hand"],["unyawo","foot"]]},
 {"t":"li","q":"Which one do you hear?","say":"isandla","o":["isandla","unyawo","izandla"],"a":0},
 {"t":"match","q":"Match singular to plural","pairs":[["isandla","izandla"],["isitya","izitya"]]},
 {"t":"mc","q":"You wash izandla before…","o":["ukutya","ukulala","ukuhamba"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"intloko","o":["intloko","isandla","unyawo"],"a":0}
 ]},
-{"id":"xh_b1_5","title":"Checkpoint: the body","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does isandla mean?","o":["hand","foot","arm"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"izandla","o":["izandla","intloko","unyawo"],"a":0},
 {"t":"mc","q":"Which one means head?","o":["intloko","unyawo","isandla"],"a":0},
@@ -2997,7 +2997,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","indlebe"],"a":0},
 {"t":"mc","q":"Which one means mouth?","o":["umlomo","iliso","indlebe"],"a":0}
 ]},
-{"id":"xh_b2_2","title":"Hearing the face","step":"recognize","meta":"Face parts by ear","vocab":[],"ex":[
+{"id":"xh_b2_2","title":"Recognize","step":"recognize","meta":"Face parts by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"iliso","o":["iliso","amehlo","umlomo"],"a":0},
 {"t":"mc","q":"What does amehlo mean?","o":["eyes","eye","ears"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","iliso","indlebe"],"a":0},
@@ -3005,21 +3005,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"amehlo","o":["amehlo","iliso","indlebe"],"a":0},
 {"t":"mc","q":"Listening exercises train your…","o":["indlebe","umlomo","amehlo"],"a":0}
 ]},
-{"id":"xh_b2_3","title":"Building the face","step":"build","meta":"Feature by feature","vocab":[],"ex":[
+{"id":"xh_b2_3","title":"Build","step":"build","meta":"Feature by feature","vocab":[],"ex":[
 {"t":"fill","q":"Complete: eyes","s":"ame___o","o":["hl","dl","l"],"a":0},
 {"t":"wb","q":"Build the word: mouth","a":["umlomo"],"pool":["umlomo","indlebe","iliso"]},
 {"t":"fill","q":"Complete: ear","s":"indle___","o":["be","ba","bo"],"a":0},
 {"t":"wb","q":"Build the word: eye (just one)","a":["iliso"],"pool":["iliso","amehlo","umlomo"]},
 {"t":"li","q":"Which one do you hear?","say":"indlebe","o":["indlebe","umlomo","amehlo"],"a":0}
 ]},
-{"id":"xh_b2_4","title":"The face in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["iliso","eye"],["amehlo","eyes"],["indlebe","ear"]]},
 {"t":"li","q":"Which one do you hear?","say":"umlomo","o":["umlomo","amehlo","iliso"],"a":0},
 {"t":"match","q":"Match the part to its work","pairs":[["indlebe","listening"],["umlomo","speaking"],["amehlo","reading"]]},
 {"t":"mc","q":"iqanda goes neatly to amaqanda, but iliso bends to…","o":["amehlo","amaliso","amaso"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"iliso","o":["iliso","indlebe","umlomo"],"a":0}
 ]},
-{"id":"xh_b2_5","title":"Checkpoint: the face","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does indlebe mean?","o":["ear","eye","mouth"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"amehlo","o":["amehlo","umlomo","iliso"],"a":0},
 {"t":"mc","q":"Which one means eyes?","o":["amehlo","iliso","izandla"],"a":0},
@@ -3044,7 +3044,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ubuhlungu"],"a":0},
 {"t":"mc","q":"kubuhlungu means…","o":["it hurts","the pain","I am sick"],"a":0}
 ]},
-{"id":"xh_b3_2","title":"Hearing the hurt","step":"recognize","meta":"Sick talk by ear","vocab":[],"ex":[
+{"id":"xh_b3_2","title":"Recognize","step":"recognize","meta":"Sick talk by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","kubuhlungu","ndiyagula"],"a":0},
 {"t":"mc","q":"What does kubuhlungu mean?","o":["it hurts","pain","I am sick"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","ubuhlungu","kubuhlungu"],"a":0},
@@ -3052,21 +3052,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ndiyagula","ubuhlungu"],"a":0},
 {"t":"mc","q":"The ubu- prefix marks…","o":["states and qualities","plurals","places"],"a":0}
 ]},
-{"id":"xh_b3_3","title":"Building the hurt","step":"build","meta":"From pain to sentence","vocab":[],"ex":[
+{"id":"xh_b3_3","title":"Build","step":"build","meta":"From pain to sentence","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am sick","s":"Ndiyagu___","o":["la","le","li"],"a":0},
 {"t":"wb","q":"Build the word: it hurts","a":["kubuhlungu"],"pool":["kubuhlungu","ubuhlungu","ndiyagula"]},
 {"t":"fill","q":"Complete: pain","s":"___hlungu","o":["ubu","uku","aba"],"a":0},
 {"t":"wb","q":"Build the word: I am sick","a":["ndiyagula"],"pool":["ndiyagula","ndiyaphila","kubuhlungu"]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","kubuhlungu","ubuhlungu"],"a":0}
 ]},
-{"id":"xh_b3_4","title":"The hurt in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiyagula","I am sick"],["ubuhlungu","pain"],["kubuhlungu","it hurts"]]},
 {"t":"li","q":"Which one do you hear?","say":"ubuhlungu","o":["ubuhlungu","ndiyagula","kubuhlungu"],"a":0},
 {"t":"match","q":"Match the state to its opposite","pairs":[["ndiyagula","ndiyaphila"],["iyadura","itshiphu"]]},
 {"t":"mc","q":"Unjani? — on a bad day the honest answer is…","o":["ndiyagula","ndiyaphila","molo"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kubuhlungu","o":["kubuhlungu","ubuhlungu","ndiyagula"],"a":0}
 ]},
-{"id":"xh_b3_5","title":"Checkpoint: the hurt","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ubuhlungu mean?","o":["pain","sick","hurt (the verb)"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyagula","o":["ndiyagula","ubuhlungu","kubuhlungu"],"a":0},
 {"t":"mc","q":"Which one means it hurts?","o":["kubuhlungu","ubuhlungu","ndiyagula"],"a":0},
@@ -3091,7 +3091,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu"],"a":0},
 {"t":"mc","q":"Kubuhlungu apha means…","o":["it hurts here","it hurts everywhere","my head hurts"],"a":0}
 ]},
-{"id":"xh_b4_2","title":"Hearing the ache","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
+{"id":"xh_b4_2","title":"Recognize","step":"recognize","meta":"Complaints by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Intloko ibuhlungu","o":["Intloko ibuhlungu","Kubuhlungu apha","isisu"],"a":0},
 {"t":"mc","q":"What does Kubuhlungu apha mean?","o":["it hurts here","my head hurts","I am sick"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","intloko","Kubuhlungu apha"],"a":0},
@@ -3099,21 +3099,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu","isisu"],"a":0},
 {"t":"mc","q":"Isisu sibuhlungu would mean…","o":["my stomach hurts","my head hurts","my hand hurts"],"a":0}
 ]},
-{"id":"xh_b4_3","title":"Building the ache","step":"build","meta":"Say where","vocab":[],"ex":[
+{"id":"xh_b4_3","title":"Build","step":"build","meta":"Say where","vocab":[],"ex":[
 {"t":"fill","q":"Complete: stomach","s":"isi___","o":["su","sa","so"],"a":0},
 {"t":"wb","q":"Build: my head hurts","a":["intloko","ibuhlungu"],"pool":["intloko","ibuhlungu","apha"]},
 {"t":"fill","q":"Complete: it hurts HERE","s":"Kubuhlungu a___a","o":["ph","p","f"],"a":0},
 {"t":"wb","q":"Build: it hurts here","a":["kubuhlungu","apha"],"pool":["kubuhlungu","apha","intloko"]},
 {"t":"li","q":"Which one do you hear?","say":"Intloko ibuhlungu","o":["Intloko ibuhlungu","Kubuhlungu apha","isisu"],"a":0}
 ]},
-{"id":"xh_b4_4","title":"The ache in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["isisu","stomach"],["Intloko ibuhlungu","my head hurts"],["Kubuhlungu apha","it hurts here"]]},
 {"t":"li","q":"Which one do you hear?","say":"isisu","o":["isisu","Intloko ibuhlungu","Kubuhlungu apha"],"a":0},
 {"t":"mc","q":"After a dodgy braai, the complaint is about…","o":["isisu","intloko","unyawo"],"a":0},
 {"t":"mc","q":"When you cannot name the part, you point and say…","o":["Kubuhlungu apha","Intloko ibuhlungu","ndiyaphila"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","isisu","Intloko ibuhlungu"],"a":0}
 ]},
-{"id":"xh_b4_5","title":"Checkpoint: the ache","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does isisu mean?","o":["stomach","head","foot"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Kubuhlungu apha","o":["Kubuhlungu apha","Intloko ibuhlungu","ndiyagula"],"a":0},
 {"t":"mc","q":"Which one means my head hurts?","o":["Intloko ibuhlungu","Kubuhlungu apha","ndiyagula"],"a":0},
@@ -3138,7 +3138,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","ikliniki"],"a":0},
 {"t":"mc","q":"Which one means medicine?","o":["amayeza","amanzi","amasi"],"a":0}
 ]},
-{"id":"xh_b5_2","title":"Hearing the clinic","step":"recognize","meta":"Clinic words by ear","vocab":[],"ex":[
+{"id":"xh_b5_2","title":"Recognize","step":"recognize","meta":"Clinic words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"unesi","o":["unesi","ugqirha","amayeza"],"a":0},
 {"t":"mc","q":"What does ugqirha mean?","o":["doctor","nurse","clinic"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","ikliniki","unesi"],"a":0},
@@ -3146,21 +3146,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
 {"t":"mc","q":"The click in ugqirha is…","o":["q","c","x"],"a":0}
 ]},
-{"id":"xh_b5_3","title":"Building the clinic","step":"build","meta":"Staff the ward","vocab":[],"ex":[
+{"id":"xh_b5_3","title":"Build","step":"build","meta":"Staff the ward","vocab":[],"ex":[
 {"t":"fill","q":"Complete: doctor","s":"ug___rha","o":["qi","ci","xi"],"a":0},
 {"t":"wb","q":"Build the word: medicine","a":["amayeza"],"pool":["amayeza","ikliniki","unesi"]},
 {"t":"fill","q":"Complete: clinic","s":"iklini___","o":["ki","ke","ka"],"a":0},
 {"t":"wb","q":"Build the word: nurse","a":["unesi"],"pool":["unesi","ugqirha","amayeza"]},
 {"t":"li","q":"Which one do you hear?","say":"ikliniki","o":["ikliniki","amayeza","ugqirha"],"a":0}
 ]},
-{"id":"xh_b5_4","title":"The clinic in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ikliniki","clinic"],["ugqirha","doctor"],["unesi","nurse"]]},
 {"t":"li","q":"Which one do you hear?","say":"amayeza","o":["amayeza","unesi","ikliniki"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["amayeza","medicine"],["ubuhlungu","pain"]]},
 {"t":"mc","q":"In most clinics, the person who actually sees you is…","o":["unesi","ugqirha","utitshala"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"unesi","o":["unesi","ugqirha","amayeza"],"a":0}
 ]},
-{"id":"xh_b5_5","title":"Checkpoint: the clinic","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does amayeza mean?","o":["medicine","clinic","pain"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ugqirha","o":["ugqirha","unesi","ikliniki"],"a":0},
 {"t":"mc","q":"Which one means nurse?","o":["unesi","ugqirha","umfundi"],"a":0},
@@ -3185,7 +3185,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Hlala phantsi"],"a":0},
 {"t":"mc","q":"Sela amayeza literally says…","o":["drink the medicine","eat the medicine","buy the medicine"],"a":0}
 ]},
-{"id":"xh_b6_2","title":"Hearing the orders","step":"recognize","meta":"Commands by ear","vocab":[],"ex":[
+{"id":"xh_b6_2","title":"Recognize","step":"recognize","meta":"Commands by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Sela amayeza","Yiza apha"],"a":0},
 {"t":"mc","q":"What does Sela amayeza mean?","o":["take the medicine","fetch the medicine","the medicine is finished"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Yiza apha","o":["Yiza apha","Hlala phantsi","Sela amayeza"],"a":0},
@@ -3193,21 +3193,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Yiza apha","Hlala phantsi"],"a":0},
 {"t":"mc","q":"Commands drop…","o":["the person prefix","the verb stem","the last vowel"],"a":0}
 ]},
-{"id":"xh_b6_3","title":"Building the orders","step":"build","meta":"Give the instruction","vocab":[],"ex":[
+{"id":"xh_b6_3","title":"Build","step":"build","meta":"Give the instruction","vocab":[],"ex":[
 {"t":"fill","q":"Complete: come here","s":"___za apha","o":["Yi","Ndi","U"],"a":0},
 {"t":"wb","q":"Build: sit down","a":["hlala","phantsi"],"pool":["hlala","phantsi","apha"]},
 {"t":"fill","q":"Complete: take the medicine","s":"___la amayeza","o":["Se","Ce","Ze"],"a":0},
 {"t":"wb","q":"Build: come here","a":["yiza","apha"],"pool":["yiza","apha","phantsi"]},
 {"t":"li","q":"Which one do you hear?","say":"Yiza apha","o":["Yiza apha","Sela amayeza","Hlala phantsi"],"a":0}
 ]},
-{"id":"xh_b6_4","title":"The orders in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Yiza apha","come here"],["Hlala phantsi","sit down"],["Sela amayeza","take the medicine"]]},
 {"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Hlala phantsi","Yiza apha"],"a":0},
 {"t":"mc","q":"Put the clinic visit in order: Yiza apha → Hlala phantsi → …","o":["Sela amayeza","Yima!","Ndiyaphila"],"a":0},
 {"t":"mc","q":"The command form of ndisela (I drink) is…","o":["sela","yisela","usela"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Hlala phantsi","o":["Hlala phantsi","Yiza apha","Sela amayeza"],"a":0}
 ]},
-{"id":"xh_b6_5","title":"Checkpoint: the orders","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_b6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Yiza apha mean?","o":["come here","go away","hurry up"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Sela amayeza","o":["Sela amayeza","Yiza apha","Hlala phantsi"],"a":0},
 {"t":"mc","q":"Which one means sit down?","o":["Hlala phantsi","Hlala phezulu","Yiza phantsi"],"a":0},
@@ -3231,7 +3231,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono"],"a":0},
 {"t":"mc","q":"The zi in uziva and ndiziva means…","o":["yourself / myself","very","again"],"a":0}
 ]},
-{"id":"xh_b7_2","title":"Hearing the recovery","step":"recognize","meta":"Feelings by ear","vocab":[],"ex":[
+{"id":"xh_b7_2","title":"Recognize","step":"recognize","meta":"Feelings by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","ndiyaphila"],"a":0},
 {"t":"mc","q":"What does Ndiziva ngcono mean?","o":["I feel better","how do you feel?","I am well"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","Unjani?"],"a":0},
@@ -3239,21 +3239,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Listen closely — feel or well — which do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","ndiyaphila"],"a":0},
 {"t":"mc","q":"The ngc in ngcono sounds…","o":["soft and nasal","sharp like q","like plain g"],"a":0}
 ]},
-{"id":"xh_b7_3","title":"Building the recovery","step":"build","meta":"Ask and answer","vocab":[],"ex":[
+{"id":"xh_b7_3","title":"Build","step":"build","meta":"Ask and answer","vocab":[],"ex":[
 {"t":"fill","q":"Complete: how do you feel?","s":"Uziva nja___?","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build: I feel better","a":["ndiziva","ngcono"],"pool":["ndiziva","ngcono","njani?"]},
 {"t":"fill","q":"Complete: I feel BETTER","s":"Ndiziva ng___no","o":["co","qo","xo"],"a":0},
 {"t":"wb","q":"Build: how do you feel?","a":["uziva","njani?"],"pool":["uziva","njani?","ngcono"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","kubuhlungu"],"a":0}
 ]},
-{"id":"xh_b7_4","title":"The recovery in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_b7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uziva njani?","how do you feel?"],["Ndiziva ngcono","I feel better"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","ndiyagula"],"a":0},
 {"t":"match","q":"Match the question to its answer","pairs":[["Uziva njani?","Ndiziva ngcono"],["Unjani?","Ndiyaphila"]]},
 {"t":"mc","q":"The full clinic arc: ndiyagula → Sela amayeza → …","o":["Ndiziva ngcono","Kubuhlungu apha","Yiza apha"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiziva ngcono","o":["Ndiziva ngcono","Uziva njani?","ubuhlungu"],"a":0}
 ]},
-{"id":"xh_b7_5","title":"Checkpoint: Zone 10 complete","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
+{"id":"xh_b7_5","title":"Checkpoint","step":"checkpoint","meta":"Body and health — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Uziva njani? — the happy answer is…","o":["Ndiziva ngcono","ndiyagula","kubuhlungu"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uziva njani?","o":["Uziva njani?","Ndiziva ngcono","Unjani?"],"a":0},
 {"t":"mc","q":"Review — the plural of iliso is…","o":["amehlo","amaliso","iziliso"],"a":0},
@@ -3271,14 +3271,14 @@ const XH_LESSONS=[
 {"t":"note","tag":"The past in one ending","q":"-a becomes -ile","body":"<p>To put a verb in the past, swap its final -a for <b>-ile</b>: hamba, <b>ndihambile</b> — <i>I went</i>. That is the whole rule.</p>","eg":[["ndihambile","ndee-hahm-BEE-leh","I went"]]},
 {"t":"li","q":"Now or then — which do you hear?","say":"ndihambile","o":["ndihambile","ndihamba"],"a":0},
 {"t":"mc","q":"What does ndihambile mean?","o":["I went","I go","I will go"],"a":0},
-{"t":"note","tag":"You knew this already","q":"The ndilambile secret","body":"<p>Here is the trick you have carried since the food zone: <b>ndilambile</b> — I am hungry — IS this ending. Lamba means get hungry; ndilambile is literally I-have-gotten-hungry. Xhosa was teaching you the past tense before you knew it existed.</p>","eg":[["ndisebenzile","ndee-seh-behn-ZEE-leh","I worked"]]},
+{"t":"note","tag":"A familiar ending","q":"The -ile inside ndilambile","body":"<p>Here is the trick you have carried since the food zone: <b>ndilambile</b> — I am hungry — IS this ending. Lamba means get hungry; ndilambile is literally I-have-gotten-hungry. Xhosa was teaching you the past tense before you knew it existed.</p>","eg":[["ndisebenzile","ndee-seh-behn-ZEE-leh","I worked"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndiyasebenza"],"a":0},
 {"t":"mc","q":"ndilambile is secretly…","o":["a past form of lamba","a plural","a borrowed word"],"a":0},
 {"t":"note","tag":"One more","q":"Ndiphekile","body":"<p><b>Ndiphekile</b> — <i>I cooked</i>. Pheka, phekile. Try it on any verb you own: funda, thenga, lala — the ending fits them all.</p>","eg":[["ndiphekile","ndee-peh-KEE-leh","I cooked"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndipheka"],"a":0},
 {"t":"mc","q":"Which one means I worked?","o":["ndisebenzile","ndiyasebenza","ndihambile"],"a":0}
 ]},
-{"id":"xh_p1_2","title":"Hearing the past","step":"recognize","meta":"Then and now by ear","vocab":[],"ex":[
+{"id":"xh_p1_2","title":"Recognize","step":"recognize","meta":"Then and now by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndisebenzile","ndiphekile"],"a":0},
 {"t":"mc","q":"What does ndiphekile mean?","o":["I cooked","I cook","I ate"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndihambile","ndiphekile"],"a":0},
@@ -3286,21 +3286,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Past or present — which do you hear?","say":"ndiphekile","o":["ndiphekile","ndipheka"],"a":0},
 {"t":"mc","q":"The past of ndifunda would be…","o":["ndifundile","ndifundisa","ndiyafunda"],"a":0}
 ]},
-{"id":"xh_p1_3","title":"Building the past","step":"build","meta":"Swap the ending","vocab":[],"ex":[
+{"id":"xh_p1_3","title":"Build","step":"build","meta":"Swap the ending","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I went","s":"Ndihamb___","o":["ile","a","isa"],"a":0},
 {"t":"wb","q":"Build the word: I worked","a":["ndisebenzile"],"pool":["ndisebenzile","ndiyasebenza","ndihambile"]},
 {"t":"fill","q":"Complete: I cooked","s":"Ndiphek___","o":["ile","a","ela"],"a":0},
 {"t":"wb","q":"Build the word: I went","a":["ndihambile"],"pool":["ndihambile","ndihamba","ndiphekile"]},
 {"t":"li","q":"Which one do you hear?","say":"ndihambile","o":["ndihambile","ndiphekile","ndisebenzile"],"a":0}
 ]},
-{"id":"xh_p1_4","title":"The past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match present to past","pairs":[["ndihamba","ndihambile"],["ndipheka","ndiphekile"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndisebenzile","o":["ndisebenzile","ndiphekile","ndihambile"],"a":0},
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndihambile","I went"],["ndisebenzile","I worked"],["ndiphekile","I cooked"]]},
 {"t":"mc","q":"Izolo ndisebenzile means…","o":["yesterday I worked","today I work","tomorrow I will work"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndisebenzile","ndihambile"],"a":0}
 ]},
-{"id":"xh_p1_5","title":"Checkpoint: the past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndisebenzile mean?","o":["I worked","I work","I will work"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiphekile","o":["ndiphekile","ndihambile","ndisebenzile"],"a":0},
 {"t":"mc","q":"The past is made by swapping final -a for…","o":["-ile","-eni","-isa"],"a":0},
@@ -3324,7 +3324,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile"],"a":0},
 {"t":"mc","q":"Ndithenge isonka izolo means…","o":["I bought bread yesterday","I will buy bread tomorrow","I am buying bread"],"a":0}
 ]},
-{"id":"xh_p2_2","title":"Hearing the shopping past","step":"recognize","meta":"Bought and learned by ear","vocab":[],"ex":[
+{"id":"xh_p2_2","title":"Recognize","step":"recognize","meta":"Bought and learned by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","Ndithenge isonka izolo"],"a":0},
 {"t":"mc","q":"What does ndithengile mean?","o":["I bought","I sold","I learned"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndithenge isonka izolo","o":["Ndithenge isonka izolo","ndithengile","ndifundile"],"a":0},
@@ -3332,21 +3332,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","ndifundile","Ndithenge isonka izolo"],"a":0},
 {"t":"mc","q":"Why ndithenge and not ndithengile in the sentence?","o":["an object follows","it is negative","izolo demands it"],"a":0}
 ]},
-{"id":"xh_p2_3","title":"Building the shopping past","step":"build","meta":"Long form, short form — again","vocab":[],"ex":[
+{"id":"xh_p2_3","title":"Build","step":"build","meta":"Long form, short form — again","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I bought (verb standing alone)","s":"Ndithengi___","o":["le","la","sa"],"a":0},
 {"t":"wb","q":"Build: I bought bread yesterday","a":["ndithenge","isonka","izolo"],"pool":["ndithenge","isonka","izolo","ndithengile"]},
 {"t":"fill","q":"Complete: I learned","s":"Ndifund___","o":["ile","isa","a"],"a":0},
 {"t":"wb","q":"Build the word: I bought","a":["ndithengile"],"pool":["ndithengile","ndithenge","ndifundile"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndithenge isonka izolo","o":["Ndithenge isonka izolo","ndifundile","ndithengile"],"a":0}
 ]},
-{"id":"xh_p2_4","title":"The shopping past in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndithengile","I bought"],["ndifundile","I learned"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","Ndithenge isonka izolo","ndifundile"],"a":0},
 {"t":"match","q":"Match the pattern pair","pairs":[["ndiyasebenza","ndisebenza edolophini"],["ndithengile","ndithenge isonka"]]},
 {"t":"mc","q":"Both -ya- and -ile shorten when…","o":["something follows the verb","the verb is borrowed","you speak fast"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndifundile","o":["ndifundile","ndithengile","Ndithenge isonka izolo"],"a":0}
 ]},
-{"id":"xh_p2_5","title":"Checkpoint: the shopping past","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Ndithenge isonka izolo mean?","o":["I bought bread yesterday","I sold bread yesterday","I want bread today"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndithengile","o":["ndithengile","ndifundile","ndithenga"],"a":0},
 {"t":"mc","q":"Which one means I learned?","o":["ndifundile","ndifunda","ndifundisa"],"a":0},
@@ -3370,7 +3370,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Ubuphi izolo?"],"a":0},
 {"t":"mc","q":"The bendi- at the front means…","o":["I was","I will","I am"],"a":0}
 ]},
-{"id":"xh_p3_2","title":"Hearing the was","step":"recognize","meta":"Past places by ear","vocab":[],"ex":[
+{"id":"xh_p3_2","title":"Recognize","step":"recognize","meta":"Past places by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Bendisekhaya","Ubuphi izolo?"],"a":0},
 {"t":"mc","q":"What does Bendisekhaya mean?","o":["I was at home","I am at home","I went home"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendisekhaya","Bendigula"],"a":0},
@@ -3378,21 +3378,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Was or am — which do you hear?","say":"Bendigula","o":["Bendigula","ndiyagula"],"a":0},
 {"t":"mc","q":"Ubuphi izolo? — Bendisemsebenzini would mean I was…","o":["at work","at home","in town"],"a":0}
 ]},
-{"id":"xh_p3_3","title":"Building the was","step":"build","meta":"Yesterday, located","vocab":[],"ex":[
+{"id":"xh_p3_3","title":"Build","step":"build","meta":"Yesterday, located","vocab":[],"ex":[
 {"t":"fill","q":"Complete: where were you yesterday?","s":"Ubu___i izolo?","o":["ph","p","f"],"a":0},
 {"t":"wb","q":"Build: I was at home","a":["bendisekhaya"],"pool":["bendisekhaya","bendigula","izolo"]},
 {"t":"fill","q":"Complete: I was sick","s":"___digula","o":["Ben","Ndi","Uya"],"a":0},
 {"t":"wb","q":"Build: where were you yesterday?","a":["ubuphi","izolo?"],"pool":["ubuphi","izolo?","bendisekhaya"]},
 {"t":"li","q":"Which one do you hear?","say":"Bendisekhaya","o":["Bendisekhaya","Ubuphi izolo?","Bendigula"],"a":0}
 ]},
-{"id":"xh_p3_4","title":"The was in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ubuphi izolo?","where were you yesterday?"],["Bendisekhaya","I was at home"],["Bendigula","I was sick"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendigula","Bendisekhaya"],"a":0},
 {"t":"match","q":"Match now to then","pairs":[["ndiyagula","Bendigula"],["ndihamba","ndihambile"]]},
 {"t":"mc","q":"Ubuphi izolo? — the excuse that mentions the clinic zone…","o":["Bendigula","Bendisekhaya","Ndiziva ngcono"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Bendigula","o":["Bendigula","Bendisekhaya","Ubuphi izolo?"],"a":0}
 ]},
-{"id":"xh_p3_5","title":"Checkpoint: the was","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Bendigula mean?","o":["I was sick","I am sick","I was tired"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ubuphi izolo?","o":["Ubuphi izolo?","Bendisekhaya","Bendigula"],"a":0},
 {"t":"mc","q":"Which one means I was at home?","o":["Bendisekhaya","Bendigula","ekhaya"],"a":0},
@@ -3416,7 +3416,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba"],"a":0},
 {"t":"mc","q":"The ku- after ndiza is the same ku- as in…","o":["ukuthenga","kubuhlungu","kusasa"],"a":0}
 ]},
-{"id":"xh_p4_2","title":"Hearing the future","step":"recognize","meta":"Plans by ear","vocab":[],"ex":[
+{"id":"xh_p4_2","title":"Recognize","step":"recognize","meta":"Plans by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba","Ndiza kuhamba ngomso"],"a":0},
 {"t":"mc","q":"What does ndiza kusebenza mean?","o":["I will work","I worked","I am working"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kusebenza","ndiza kuhamba"],"a":0},
@@ -3424,21 +3424,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Past or future — which do you hear?","say":"ndiza kuhamba","o":["ndiza kuhamba","ndihambile"],"a":0},
 {"t":"mc","q":"I will cook would be…","o":["ndiza kupheka","ndiphekile","ndipheka"],"a":0}
 ]},
-{"id":"xh_p4_3","title":"Building the future","step":"build","meta":"Make plans","vocab":[],"ex":[
+{"id":"xh_p4_3","title":"Build","step":"build","meta":"Make plans","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I will go","s":"ndiza ___hamba","o":["ku","uku","kuya"],"a":0},
 {"t":"wb","q":"Build: I will go tomorrow","a":["ndiza","kuhamba","ngomso"],"pool":["ndiza","kuhamba","ngomso","izolo"]},
 {"t":"fill","q":"Complete: I will work","s":"ndiza kusebe___a","o":["nz","ns","z"],"a":0},
 {"t":"wb","q":"Build: I will work","a":["ndiza","kusebenza"],"pool":["ndiza","kusebenza","kuhamba"]},
 {"t":"li","q":"Which one do you hear?","say":"ndiza kuhamba","o":["ndiza kuhamba","Ndiza kuhamba ngomso","ndiza kusebenza"],"a":0}
 ]},
-{"id":"xh_p4_4","title":"The future in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndiza kuhamba","I will go"],["ndiza kusebenza","I will work"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuhamba ngomso","o":["Ndiza kuhamba ngomso","ndiza kuhamba","ndiza kusebenza"],"a":0},
 {"t":"match","q":"Match the time to the form","pairs":[["izolo","ndihambile"],["ngoku","ndihamba"],["ngomso","ndiza kuhamba"]]},
 {"t":"mc","q":"All three tenses of hamba, in order past-present-future…","o":["ndihambile, ndihamba, ndiza kuhamba","ndihamba, ndihambile, ndiza kuhamba","ndiza kuhamba, ndihamba, ndihambile"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndiza kuhamba","ndisebenzile"],"a":0}
 ]},
-{"id":"xh_p4_5","title":"Checkpoint: the future","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Ndiza kuhamba ngomso mean?","o":["I will go tomorrow","I went yesterday","I go every day"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiza kusebenza","o":["ndiza kusebenza","ndisebenzile","ndiyasebenza"],"a":0},
 {"t":"mc","q":"The future is built from ndiza plus…","o":["the ku- to-form","the -ile ending","the -ya- marker"],"a":0},
@@ -3463,7 +3463,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Hot or cold — which do you hear?","say":"kushushu","o":["kushushu","kuyabanda"],"a":0},
 {"t":"mc","q":"kuyabanda means…","o":["it is cold","it is hot","it is raining"],"a":0}
 ]},
-{"id":"xh_p5_2","title":"Hearing the weather","step":"recognize","meta":"The report by ear","vocab":[],"ex":[
+{"id":"xh_p5_2","title":"Recognize","step":"recognize","meta":"The report by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","kushushu","liyanetha"],"a":0},
 {"t":"mc","q":"What does kushushu mean?","o":["it is hot","it is cold","it is sunny"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"liyanetha","o":["liyanetha","kuyabanda","imozulu"],"a":0},
@@ -3471,21 +3471,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"kushushu","o":["kushushu","kuyabanda","liyanetha"],"a":0},
 {"t":"mc","q":"In Cape Town, liyanetha is mostly a … sentence","o":["winter","summer","spring"],"a":0}
 ]},
-{"id":"xh_p5_3","title":"Building the weather","step":"build","meta":"Write the forecast","vocab":[],"ex":[
+{"id":"xh_p5_3","title":"Build","step":"build","meta":"Write the forecast","vocab":[],"ex":[
 {"t":"fill","q":"Complete: it is raining","s":"liyane___a","o":["th","t","nt"],"a":0},
 {"t":"wb","q":"Build the word: it is cold","a":["kuyabanda"],"pool":["kuyabanda","kushushu","liyanetha"]},
 {"t":"fill","q":"Complete: it is hot","s":"kushu___u","o":["sh","s","tsh"],"a":0},
 {"t":"wb","q":"Build the word: weather","a":["imozulu"],"pool":["imozulu","liyanetha","kushushu"]},
 {"t":"li","q":"Which one do you hear?","say":"imozulu","o":["imozulu","kushushu","kuyabanda"],"a":0}
 ]},
-{"id":"xh_p5_4","title":"The weather in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["liyanetha","it is raining"],["kuyabanda","it is cold"],["kushushu","it is hot"]]},
 {"t":"li","q":"Which one do you hear?","say":"kuyabanda","o":["kuyabanda","liyanetha","kushushu"],"a":0},
 {"t":"match","q":"Match the ku- report to its zone","pairs":[["kubuhlungu","the body"],["kushushu","the weather"]]},
 {"t":"mc","q":"Liyanetha, kuyabanda — the day calls for…","o":["staying endlwini","a braai in iyadi","a walk edolophini"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"liyanetha","o":["liyanetha","imozulu","kuyabanda"],"a":0}
 ]},
-{"id":"xh_p5_5","title":"Checkpoint: the weather","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does liyanetha mean?","o":["it is raining","it is cold","it is hot"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kushushu","o":["kushushu","kuyabanda","imozulu"],"a":0},
 {"t":"mc","q":"Which one means it is cold?","o":["kuyabanda","kushushu","liyanetha"],"a":0},
@@ -3510,7 +3510,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","kushushu"],"a":0},
 {"t":"mc","q":"Kushushu namhlanje means…","o":["it is hot today","it was hot yesterday","it will be hot tomorrow"],"a":0}
 ]},
-{"id":"xh_p6_2","title":"Hearing the elements","step":"recognize","meta":"Sun and wind by ear","vocab":[],"ex":[
+{"id":"xh_p6_2","title":"Recognize","step":"recognize","meta":"Sun and wind by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","imozulu"],"a":0},
 {"t":"mc","q":"What does ilanga mean?","o":["sun","wind","weather"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","umoya","ilanga"],"a":0},
@@ -3518,21 +3518,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","umoya","Kushushu namhlanje"],"a":0},
 {"t":"mc","q":"The summer wind that scours Cape Town is nicknamed…","o":["the Cape Doctor","the Berg wind","the Karoo breath"],"a":0}
 ]},
-{"id":"xh_p6_3","title":"Building the elements","step":"build","meta":"Sky words in place","vocab":[],"ex":[
+{"id":"xh_p6_3","title":"Build","step":"build","meta":"Sky words in place","vocab":[],"ex":[
 {"t":"fill","q":"Complete: sun","s":"ilan___","o":["ga","ge","gu"],"a":0},
 {"t":"wb","q":"Build: it is hot today","a":["kushushu","namhlanje"],"pool":["kushushu","namhlanje","izolo"]},
 {"t":"fill","q":"Complete: wind","s":"umo___","o":["ya","yo","wa"],"a":0},
 {"t":"wb","q":"Build the word: sun","a":["ilanga"],"pool":["ilanga","umoya","imozulu"]},
 {"t":"li","q":"Which one do you hear?","say":"umoya","o":["umoya","ilanga","Kushushu namhlanje"],"a":0}
 ]},
-{"id":"xh_p6_4","title":"The elements in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ilanga","sun"],["umoya","wind"],["imozulu","weather"]]},
 {"t":"li","q":"Which one do you hear?","say":"Kushushu namhlanje","o":["Kushushu namhlanje","ilanga","umoya"],"a":0},
 {"t":"match","q":"Match the report to the day","pairs":[["Kushushu namhlanje","today"],["Bendisekhaya izolo","yesterday"]]},
 {"t":"mc","q":"Ilanga liphumile — the sun is out. Time for…","o":["ishisanyama in iyadi","ukulala","amayeza"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","Kushushu namhlanje","umoya"],"a":0}
 ]},
-{"id":"xh_p6_5","title":"Checkpoint: the elements","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_p6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does umoya mean?","o":["wind","sun","cloud"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ilanga","o":["ilanga","umoya","imozulu"],"a":0},
 {"t":"mc","q":"Which one means it is hot today?","o":["Kushushu namhlanje","Kuyabanda namhlanje","Kushushu izolo"],"a":0},
@@ -3556,7 +3556,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini"],"a":0},
 {"t":"mc","q":"I will go home would be Ndiza kuya…","o":["ekhaya","ikhaya","ekhayeni"],"a":0}
 ]},
-{"id":"xh_p7_2","title":"Hearing the plans","step":"recognize","meta":"Future questions by ear","vocab":[],"ex":[
+{"id":"xh_p7_2","title":"Recognize","step":"recognize","meta":"Future questions by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","Uza kuya phi?","ndiza kuhamba"],"a":0},
 {"t":"mc","q":"What does Uza kuya phi? ask?","o":["where will you go?","where do you work?","where were you?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Uya phi?"],"a":0},
@@ -3564,21 +3564,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which question do you hear — now or future?","say":"Uya phi?","o":["Uya phi?","Uza kuya phi?"],"a":0},
 {"t":"mc","q":"Uza kuya phi ngomso? — the fullest answer…","o":["Ndiza kuya esikolweni ngomso","Bendisekhaya izolo","Ndiya esikolweni"],"a":0}
 ]},
-{"id":"xh_p7_3","title":"Building the plans","step":"build","meta":"Say what will happen","vocab":[],"ex":[
+{"id":"xh_p7_3","title":"Build","step":"build","meta":"Say what will happen","vocab":[],"ex":[
 {"t":"fill","q":"Complete: where will you go?","s":"U___ kuya phi?","o":["za","ya","zi"],"a":0},
 {"t":"wb","q":"Build: I will go to town","a":["ndiza","kuya","edolophini"],"pool":["ndiza","kuya","edolophini","izolo"]},
 {"t":"wb","q":"Build: where will you go?","a":["uza","kuya","phi?"],"pool":["uza","kuya","phi?","ngomso"]},
 {"t":"wb","q":"Build: I will go to school","a":["ndiza","kuya","esikolweni"],"pool":["ndiza","kuya","esikolweni","edolophini"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","Uza kuya phi?","ndiza kusebenza"],"a":0}
 ]},
-{"id":"xh_p7_4","title":"The plans in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_p7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Uza kuya phi?","where will you go?"],["Ndiza kuya edolophini","I will go to town"]]},
 {"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Uya phi?"],"a":0},
 {"t":"match","q":"Match the question to its time","pairs":[["Uya phi?","now"],["Uza kuya phi?","the future"],["Ubuphi izolo?","the past"]]},
 {"t":"mc","q":"Three zones of questions: Uphi, Uya phi, Uza kuya phi — the constant piece is…","o":["phi","uza","ndi"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiza kuya edolophini","o":["Ndiza kuya edolophini","ndiza kuhamba","Uza kuya phi?"],"a":0}
 ]},
-{"id":"xh_p7_5","title":"Checkpoint: Zone 11 complete","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
+{"id":"xh_p7_5","title":"Checkpoint","step":"checkpoint","meta":"Past and future — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Uza kuya phi? — Ndiza kuya edolophini. The plan is…","o":["town, later","town, yesterday","home, now"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uza kuya phi?","o":["Uza kuya phi?","Ndiza kuya edolophini","Ubuphi izolo?"],"a":0},
 {"t":"mc","q":"Review — the past of ndihamba is…","o":["ndihambile","ndiza kuhamba","ndiyahamba"],"a":0},
@@ -3603,7 +3603,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndidiniwe"],"a":0},
 {"t":"mc","q":"Which one means I am afraid?","o":["ndiyoyika","ndonwabile","ndidiniwe"],"a":0}
 ]},
-{"id":"xh_c1_2","title":"Hearing the feelings","step":"recognize","meta":"States of heart by ear","vocab":[],"ex":[
+{"id":"xh_c1_2","title":"Recognize","step":"recognize","meta":"States of heart by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndidiniwe","ndiyoyika"],"a":0},
 {"t":"mc","q":"What does ndiyoyika mean?","o":["I am afraid","I am angry","I am tired"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndidiniwe","o":["ndidiniwe","ndiyoyika","ndonwabile"],"a":0},
@@ -3611,21 +3611,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndonwabile","ndidiniwe"],"a":0},
 {"t":"mc","q":"The -iwe of ndidiniwe works like…","o":["the -ile of ndilambile","the -isa of thengisa","the ku- of kushushu"],"a":0}
 ]},
-{"id":"xh_c1_3","title":"Building the feelings","step":"build","meta":"Say the state","vocab":[],"ex":[
+{"id":"xh_c1_3","title":"Build","step":"build","meta":"Say the state","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am happy","s":"Ndonwabi___","o":["le","we","la"],"a":0},
 {"t":"wb","q":"Build the word: I am tired","a":["ndidiniwe"],"pool":["ndidiniwe","ndonwabile","ndiyoyika"]},
 {"t":"fill","q":"Complete: I am afraid","s":"Ndiyoyi___","o":["ka","kha","qa"],"a":0},
 {"t":"wb","q":"Build the word: I am happy","a":["ndonwabile"],"pool":["ndonwabile","ndidiniwe","ndilambile"]},
 {"t":"li","q":"Which one do you hear?","say":"ndidiniwe","o":["ndidiniwe","ndonwabile","ndiyoyika"],"a":0}
 ]},
-{"id":"xh_c1_4","title":"The feelings in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c1_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndonwabile","I am happy"],["ndidiniwe","I am tired"],["ndiyoyika","I am afraid"]]},
 {"t":"li","q":"Which one do you hear?","say":"ndiyoyika","o":["ndiyoyika","ndidiniwe","ndonwabile"],"a":0},
 {"t":"match","q":"Match the day to the feeling","pairs":[["iholide","ndonwabile"],["umsebenzi omninzi","ndidiniwe"]]},
 {"t":"mc","q":"After a long day of ukuphangela…","o":["ndidiniwe","ndonwabile","ndiyoyika"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndiyoyika","ndidiniwe"],"a":0}
 ]},
-{"id":"xh_c1_5","title":"Checkpoint: the feelings","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c1_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ndidiniwe mean?","o":["I am tired","I am happy","I am afraid"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndonwabile","o":["ndonwabile","ndidiniwe","ndilambile"],"a":0},
 {"t":"mc","q":"Which one means I am afraid?","o":["ndiyoyika","ndiyagula","ndidiniwe"],"a":0},
@@ -3640,7 +3640,7 @@ const XH_LESSONS=[
 
 /* ---------- c2 · Let us! ---------- */
 {"id":"xh_c2","title":"Let us!","step":"learn","meta":"Masihambe — the inviting ma-","vocab":[["Masihambe!","mah-see-HAHM-beh","let us go!"],["Masitye","mah-SEE-tyeh","let us eat"],["Masithethe isiXhosa","mah-see-TEH-teh ee-see-XAW-sah","let us speak Xhosa"]],"ex":[
-{"t":"note","tag":"The friendliest grammar","q":"Ma- + si- + -e","body":"<p>Wrap ma- around si- (we) and end the verb in -e, and a command becomes an invitation: <b>Masihambe!</b> — <i>let us go!</i> Nobody is ordered; everybody is included.</p>","eg":[["Masihambe!","mah-see-HAHM-beh","let us go!"]]},
+{"t":"note","tag":"The let-us form","q":"Ma- + si- + -e","body":"<p>Wrap ma- around si- (we) and end the verb in -e, and a command becomes an invitation: <b>Masihambe!</b> — <i>let us go!</i> Nobody is ordered; everybody is included.</p>","eg":[["Masihambe!","mah-see-HAHM-beh","let us go!"]]},
 {"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Sihamba ngoku"],"a":0},
 {"t":"mc","q":"Masihambe! means…","o":["let us go!","go away!","we went"],"a":0},
 {"t":"note","tag":"The best invitation","q":"Masitye","body":"<p><b>Masitye</b> — <i>let us eat</i> — the sentence that follows Kulungile, ukutya kulungile: the food is ready. You will never say it alone; eating alone is un-Xhosa.</p>","eg":[["Masitye","mah-SEE-tyeh","let us eat"]]},
@@ -3650,7 +3650,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masitye"],"a":0},
 {"t":"mc","q":"Masithethe isiXhosa means…","o":["let us speak Xhosa","I speak Xhosa","speak Xhosa!"],"a":0}
 ]},
-{"id":"xh_c2_2","title":"Hearing the invitations","step":"recognize","meta":"Ma- by ear","vocab":[],"ex":[
+{"id":"xh_c2_2","title":"Recognize","step":"recognize","meta":"Ma- by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masihambe!","Masithethe isiXhosa"],"a":0},
 {"t":"mc","q":"What does Masihambe! mean?","o":["let us go!","come here!","we are leaving"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masitye","Masihambe!"],"a":0},
@@ -3658,21 +3658,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Invitation or statement — which do you hear?","say":"Masihambe!","o":["Masihambe!","Sihamba ngoku"],"a":0},
 {"t":"mc","q":"The ma- at the front turns a command into…","o":["an invitation","a question","a refusal"],"a":0}
 ]},
-{"id":"xh_c2_3","title":"Building the invitations","step":"build","meta":"Include everybody","vocab":[],"ex":[
+{"id":"xh_c2_3","title":"Build","step":"build","meta":"Include everybody","vocab":[],"ex":[
 {"t":"fill","q":"Complete: let us go!","s":"___sihambe!","o":["Ma","Si","Ndi"],"a":0},
 {"t":"wb","q":"Build: let us speak Xhosa","a":["masithethe","isiXhosa"],"pool":["masithethe","isiXhosa","masitye"]},
 {"t":"fill","q":"Complete: let us eat","s":"Masit___","o":["ye","ya","yo"],"a":0},
 {"t":"wb","q":"Build the word: let us go","a":["masihambe!"],"pool":["masihambe!","masitye","sihamba"]},
 {"t":"li","q":"Which one do you hear?","say":"Masitye","o":["Masitye","Masithethe isiXhosa","Masihambe!"],"a":0}
 ]},
-{"id":"xh_c2_4","title":"The invitations in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c2_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Masihambe!","let us go!"],["Masitye","let us eat"],["Masithethe isiXhosa","let us speak Xhosa"]]},
 {"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Masitye","Masithethe isiXhosa"],"a":0},
 {"t":"match","q":"Match the order to the invitation","pairs":[["Yiza apha","Masihambe!"],["Sela","Masitye"]]},
 {"t":"mc","q":"Ukutya kulungile! The next word is…","o":["Masitye","Masihambe!","Yima!"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Masithethe isiXhosa","o":["Masithethe isiXhosa","Masihambe!","Masitye"],"a":0}
 ]},
-{"id":"xh_c2_5","title":"Checkpoint: the invitations","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c2_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Masithethe isiXhosa mean?","o":["let us speak Xhosa","I am learning Xhosa","speak Xhosa slowly"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Masihambe!","o":["Masihambe!","Masithethe isiXhosa","Masitye"],"a":0},
 {"t":"mc","q":"Which one means let us eat?","o":["Masitye","Masihambe!","Nditya"],"a":0},
@@ -3697,7 +3697,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu"],"a":0},
 {"t":"mc","q":"ukunceda means…","o":["to help","help (the thing)","please"],"a":0}
 ]},
-{"id":"xh_c3_2","title":"Hearing the -ntu words","step":"recognize","meta":"The human root by ear","vocab":[],"ex":[
+{"id":"xh_c3_2","title":"Recognize","step":"recognize","meta":"The human root by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"uluntu","o":["uluntu","ubuntu","ukunceda"],"a":0},
 {"t":"mc","q":"What does ubuntu mean?","o":["humanity","community","kindness only"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","uluntu","ubuntu"],"a":0},
@@ -3705,21 +3705,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","uluntu","umntu"],"a":0},
 {"t":"mc","q":"The -ntu root also lives in…","o":["umntu and abantu","imali and ixabiso","ilanga and umoya"],"a":0}
 ]},
-{"id":"xh_c3_3","title":"Building the -ntu words","step":"build","meta":"One root, many words","vocab":[],"ex":[
+{"id":"xh_c3_3","title":"Build","step":"build","meta":"One root, many words","vocab":[],"ex":[
 {"t":"fill","q":"Complete: humanity","s":"ubu___u","o":["nt","nd","th"],"a":0},
 {"t":"wb","q":"Build the word: to help","a":["ukunceda"],"pool":["ukunceda","uncedo","uluntu"]},
 {"t":"fill","q":"Complete: community","s":"___ntu","o":["ulu","ubu","aba"],"a":0},
 {"t":"wb","q":"Build the proverb: a person is a person through people","a":["umntu","ngumntu","ngabantu"],"pool":["umntu","ngumntu","ngabantu","ubuntu"]},
 {"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","ukunceda","uluntu"],"a":0}
 ]},
-{"id":"xh_c3_4","title":"The -ntu words in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c3_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ubuntu","humanity"],["uluntu","community"],["ukunceda","to help"]]},
 {"t":"li","q":"Which one do you hear?","say":"ukunceda","o":["ukunceda","ubuntu","uluntu"],"a":0},
 {"t":"match","q":"Match the -ntu family","pairs":[["umntu","person"],["abantu","people"],["ubuntu","humanity"]]},
 {"t":"mc","q":"Ndicela uncedo asks for help; ukunceda is…","o":["the verb to help","the helper","a thank-you"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"uluntu","o":["uluntu","ukunceda","ubuntu"],"a":0}
 ]},
-{"id":"xh_c3_5","title":"Checkpoint: ubuntu","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c3_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does ukunceda mean?","o":["to help","to share","to greet"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ubuntu","o":["ubuntu","uluntu","abantu"],"a":0},
 {"t":"mc","q":"Which one means community?","o":["uluntu","ubuntu","umzi"],"a":0},
@@ -3743,7 +3743,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndicinga"],"a":0},
 {"t":"mc","q":"Vuma also means to sing along — so ndiyavuma is literally…","o":["I am singing the same song","I surrender","I am loud"],"a":0}
 ]},
-{"id":"xh_c4_2","title":"Hearing the opinions","step":"recognize","meta":"Debate by ear","vocab":[],"ex":[
+{"id":"xh_c4_2","title":"Recognize","step":"recognize","meta":"Debate by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","ndicinga","andivumi"],"a":0},
 {"t":"mc","q":"What does ndiyavuma mean?","o":["I agree","I think","I disagree"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndicinga","o":["ndicinga","andivumi","ndiyavuma"],"a":0},
@@ -3751,21 +3751,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndiyavuma","ndicinga"],"a":0},
 {"t":"mc","q":"The click in ndicinga is…","o":["c","q","x"],"a":0}
 ]},
-{"id":"xh_c4_3","title":"Building the opinions","step":"build","meta":"Take a side","vocab":[],"ex":[
+{"id":"xh_c4_3","title":"Build","step":"build","meta":"Take a side","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I think","s":"Ndi___nga","o":["ci","qi","xi"],"a":0},
 {"t":"wb","q":"Build the word: I agree","a":["ndiyavuma"],"pool":["ndiyavuma","andivumi","ndicinga"]},
 {"t":"fill","q":"Complete: I disagree","s":"___divumi","o":["an","ndi","uya"],"a":0},
 {"t":"wb","q":"Build the word: I think","a":["ndicinga"],"pool":["ndicinga","ndiyavuma","andivumi"]},
 {"t":"li","q":"Which one do you hear?","say":"ndicinga","o":["ndicinga","ndiyavuma","andivumi"],"a":0}
 ]},
-{"id":"xh_c4_4","title":"The opinions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c4_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["ndicinga","I think"],["ndiyavuma","I agree"],["andivumi","I disagree"]]},
 {"t":"li","q":"Which one do you hear?","say":"andivumi","o":["andivumi","ndicinga","ndiyavuma"],"a":0},
 {"t":"match","q":"Match the word to its wrap","pairs":[["andivumi","a-…-i"],["ndiyavuma","-ya-"]]},
 {"t":"mc","q":"Iyadura! — if you think it is fair, you answer…","o":["andivumi","ndiyavuma","yima"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","andivumi","ndicinga"],"a":0}
 ]},
-{"id":"xh_c4_5","title":"Checkpoint: the opinions","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c4_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does andivumi mean?","o":["I disagree","I agree","I forget"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ndiyavuma","o":["ndiyavuma","ndicinga","andivumi"],"a":0},
 {"t":"mc","q":"Which one means I think?","o":["ndicinga","ndiyavuma","ndiyazi"],"a":0},
@@ -3790,7 +3790,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","emva koko"],"a":0},
 {"t":"mc","q":"Which one means finally?","o":["ekugqibeleni","kuqala","emva koko"],"a":0}
 ]},
-{"id":"xh_c5_2","title":"Hearing the order","step":"recognize","meta":"Story words by ear","vocab":[],"ex":[
+{"id":"xh_c5_2","title":"Recognize","step":"recognize","meta":"Story words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"emva koko","o":["emva koko","ekugqibeleni","kuqala"],"a":0},
 {"t":"mc","q":"What does ekugqibeleni mean?","o":["finally","after that","first"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","emva koko","ekugqibeleni"],"a":0},
@@ -3798,21 +3798,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","kuqala","emva koko"],"a":0},
 {"t":"mc","q":"The clicks in kuqala and ekugqibeleni are both…","o":["q","c","x"],"a":0}
 ]},
-{"id":"xh_c5_3","title":"Building the order","step":"build","meta":"Skeleton of a story","vocab":[],"ex":[
+{"id":"xh_c5_3","title":"Build","step":"build","meta":"Skeleton of a story","vocab":[],"ex":[
 {"t":"fill","q":"Complete: first","s":"ku___ala","o":["q","c","x"],"a":0},
 {"t":"wb","q":"Build: after that","a":["emva","koko"],"pool":["emva","koko","kuqala"]},
 {"t":"fill","q":"Complete: finally","s":"ekugqibele___","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build the word: first","a":["kuqala"],"pool":["kuqala","ekugqibeleni","emva"]},
 {"t":"li","q":"Which one do you hear?","say":"emva koko","o":["emva koko","kuqala","ekugqibeleni"],"a":0}
 ]},
-{"id":"xh_c5_4","title":"The order in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c5_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["kuqala","first"],["emva koko","after that"],["ekugqibeleni","finally"]]},
 {"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","ekugqibeleni","emva koko"],"a":0},
 {"t":"match","q":"Match the story part to its word","pairs":[["the opening line","kuqala"],["the middle turn","emva koko"],["the last line","ekugqibeleni"]]},
 {"t":"mc","q":"Kuqala ndivukile, … ndiye emsebenzini. The gap wants…","o":["emva koko","ekugqibeleni","kuqala"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"ekugqibeleni","o":["ekugqibeleni","emva koko","kuqala"],"a":0}
 ]},
-{"id":"xh_c5_5","title":"Checkpoint: the order","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c5_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does emva koko mean?","o":["after that","first","finally"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"kuqala","o":["kuqala","emva koko","ekugqibeleni"],"a":0},
 {"t":"mc","q":"Which one means finally?","o":["ekugqibeleni","emva koko","kuqala"],"a":0},
@@ -3827,7 +3827,7 @@ const XH_LESSONS=[
 
 /* ---------- c6 · The learner's toolkit ---------- */
 {"id":"xh_c6","title":"The learner's toolkit","step":"learn","meta":"Still learning — and proud of it","vocab":[["Ndisafunda","ndee-sah-FOON-dah","I am still learning"],["Thetha kancinci","TEH-tah kahn-CEEN-cee","speak slowly"],["Uthetha ukuthini?","oo-TEH-tah oo-koo-TEE-nee","what do you mean?"]],"ex":[
-{"t":"note","tag":"The magic -sa-","q":"Ndisafunda","body":"<p>Slip <b>-sa-</b> after ndi- and the action is still going: <b>Ndisafunda</b> — <i>I am still learning</i>. Say it early in any conversation and every mistake after it is forgiven in advance.</p>","eg":[["Ndisafunda","ndee-sah-FOON-dah","I am still learning"]]},
+{"t":"note","tag":"The -sa- form","q":"Ndisafunda","body":"<p>Slip <b>-sa-</b> after ndi- and the action is still going: <b>Ndisafunda</b> — <i>I am still learning</i>. Say it early in any conversation and every mistake after it is forgiven in advance.</p>","eg":[["Ndisafunda","ndee-sah-FOON-dah","I am still learning"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","ndifunda"],"a":0},
 {"t":"mc","q":"Ndisafunda means…","o":["I am still learning","I learned","I will learn"],"a":0},
 {"t":"note","tag":"Slowing the flood","q":"Thetha kancinci","body":"<p>When the answer comes back at full speed: <b>Thetha kancinci</b> — <i>speak slowly</i> — the bare-verb command you learned at the clinic, plus your old kancinci. Add sisi or bhuti to keep it warm.</p>","eg":[["Thetha kancinci","TEH-tah kahn-CEEN-cee","speak slowly"]]},
@@ -3837,7 +3837,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Thetha kancinci"],"a":0},
 {"t":"mc","q":"Uthetha ukuthini? asks…","o":["what do you mean?","why are you talking?","can you repeat it?"],"a":0}
 ]},
-{"id":"xh_c6_2","title":"Hearing the toolkit","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
+{"id":"xh_c6_2","title":"Recognize","step":"recognize","meta":"Rescue lines by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Uthetha ukuthini?","Ndisafunda"],"a":0},
 {"t":"mc","q":"What does Ndisafunda mean?","o":["I am still learning","I stopped learning","I teach"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Thetha kancinci","Ndisafunda"],"a":0},
@@ -3845,21 +3845,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","Uthetha ukuthini?","Thetha kancinci"],"a":0},
 {"t":"mc","q":"The -sa- in Ndisafunda means…","o":["still","already","again"],"a":0}
 ]},
-{"id":"xh_c6_3","title":"Building the toolkit","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
+{"id":"xh_c6_3","title":"Build","step":"build","meta":"Assemble the rescue kit","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I am STILL learning","s":"Ndi___funda","o":["sa","ya","za"],"a":0},
 {"t":"wb","q":"Build: speak slowly","a":["thetha","kancinci"],"pool":["thetha","kancinci","ukuthini?"]},
 {"t":"fill","q":"Complete: what do you mean?","s":"Uthetha ukuthi___?","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build: what do you mean?","a":["uthetha","ukuthini?"],"pool":["uthetha","ukuthini?","kancinci"]},
 {"t":"li","q":"Which one do you hear?","say":"Uthetha ukuthini?","o":["Uthetha ukuthini?","Ndisafunda","Thetha kancinci"],"a":0}
 ]},
-{"id":"xh_c6_4","title":"The toolkit in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c6_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndisafunda","I am still learning"],["Thetha kancinci","speak slowly"],["Uthetha ukuthini?","what do you mean?"]]},
 {"t":"li","q":"Which one do you hear?","say":"Ndisafunda","o":["Ndisafunda","Thetha kancinci","Uthetha ukuthini?"],"a":0},
 {"t":"match","q":"Match the problem to the rescue","pairs":[["too fast","Thetha kancinci"],["lost the meaning","Uthetha ukuthini?"],["mistakes coming","Ndisafunda"]]},
 {"t":"mc","q":"The full rescue kit, oldest member first…","o":["Andiqondi, then these three","Molo, then Enkosi","Yima, then Yiza"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Uthetha ukuthini?","Ndisafunda"],"a":0}
 ]},
-{"id":"xh_c6_5","title":"Checkpoint: the toolkit","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"id":"xh_c6_5","title":"Checkpoint","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
 {"t":"mc","q":"What does Uthetha ukuthini? mean?","o":["what do you mean?","what did you say?","who are you?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Thetha kancinci","o":["Thetha kancinci","Ndisafunda","Uthetha ukuthini?"],"a":0},
 {"t":"mc","q":"Which one means I am still learning?","o":["Ndisafunda","ndifundile","ndifundisa"],"a":0},
@@ -3883,7 +3883,7 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle"],"a":0},
 {"t":"mc","q":"Hambani kakuhle means…","o":["go well, all of you","go well, my friend","come back soon"],"a":0}
 ]},
-{"id":"xh_c7_2","title":"Hearing the farewell","step":"recognize","meta":"Last words by ear","vocab":[],"ex":[
+{"id":"xh_c7_2","title":"Recognize","step":"recognize","meta":"Last words by ear","vocab":[],"ex":[
 {"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","sala kakuhle"],"a":0},
 {"t":"mc","q":"What does Ndiyabulela mean?","o":["I give thanks","goodbye","I am grateful for the food"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle","enkosi"],"a":0},
@@ -3891,21 +3891,21 @@ const XH_LESSONS=[
 {"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","hamba kakuhle","Ndiyabulela"],"a":0},
 {"t":"mc","q":"Left behind while others leave, you hear…","o":["Salani kakuhle","Hambani kakuhle","Yiza apha"],"a":0}
 ]},
-{"id":"xh_c7_3","title":"Building the farewell","step":"build","meta":"Say it properly","vocab":[],"ex":[
+{"id":"xh_c7_3","title":"Build","step":"build","meta":"Say it properly","vocab":[],"ex":[
 {"t":"fill","q":"Complete: I give thanks","s":"Ndiyabule___","o":["la","le","li"],"a":0},
 {"t":"wb","q":"Build: go well, all of you","a":["hambani","kakuhle"],"pool":["hambani","kakuhle","hamba"]},
 {"t":"fill","q":"Complete: go well, ALL of you","s":"Hamba___ kakuhle","o":["ni","na","no"],"a":0},
 {"t":"wb","q":"Build the word: I give thanks","a":["ndiyabulela"],"pool":["ndiyabulela","enkosi","hambani"]},
 {"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","Hambani kakuhle","sobonana"],"a":0}
 ]},
-{"id":"xh_c7_4","title":"The farewell in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"id":"xh_c7_4","title":"Mix","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
 {"t":"match","q":"Match the Xhosa to the meaning","pairs":[["Ndiyabulela","I give thanks"],["Hambani kakuhle","go well, all of you"]]},
 {"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","hamba kakuhle"],"a":0},
 {"t":"match","q":"Match the farewell to the moment","pairs":[["hamba kakuhle","one friend leaves"],["Hambani kakuhle","the whole family leaves"],["sala kakuhle","you leave them"]]},
 {"t":"mc","q":"The end of a good visit, in order: Ndiyabulela → … → sobonana","o":["Hambani kakuhle","Molo","Yimalini?"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Ndiyabulela","o":["Ndiyabulela","sobonana","Hambani kakuhle"],"a":0}
 ]},
-{"id":"xh_c7_5","title":"Checkpoint: the whole journey","step":"checkpoint","meta":"Twelve zones of isiXhosa — show it all","vocab":[],"ex":[
+{"id":"xh_c7_5","title":"Checkpoint","step":"checkpoint","meta":"Twelve zones of isiXhosa — show it all","vocab":[],"ex":[
 {"t":"mc","q":"Ndiyabulela means…","o":["I give thanks","goodbye","well done"],"a":0},
 {"t":"li","q":"Which one do you hear?","say":"Hambani kakuhle","o":["Hambani kakuhle","Ndiyabulela","Masihambe!"],"a":0},
 {"t":"mc","q":"Review — Masithethe isiXhosa means…","o":["let us speak Xhosa","I speak Xhosa","do you speak Xhosa?"],"a":0},
