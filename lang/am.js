@@ -3764,49 +3764,61 @@ const AM_SRS_SEED=[];
    index.html under data-lang="am" (light + dark). Mascot: gelada — the
    golden-maned highland monkey found only in Ethiopia (secular).
    Grounding: translate-y + 100·scale = near surface. ---------- */
-const AM_GOJO='<path fill="var(--thatch)" d="M10 62 Q50 54 90 62 L56 10 Q50 4 44 10 Z"/><path fill="var(--thatch)" d="M47 8 Q50 0 53 8 L52 14 L48 14 Z" opacity=".9"/><path fill="var(--wall)" d="M18 100 L18 60 Q50 53 82 60 L82 100 Z"/><path fill="var(--tyre)" d="M43 100 L43 74 Q50 68 57 74 L57 100 Z"/>';
+const AM_GOJO='<path fill="var(--thatch)" d="M12 66 Q50 58 88 66 L55 8 Q50 2 45 8 Z"/><path fill="var(--bark)" d="M47.5 7 Q50 -2 52.5 7 L51.5 12 L48.5 12 Z"/><path fill="var(--thatch)" opacity=".55" d="M22 52 Q50 46 78 52 L76 56 Q50 50 24 56 Z"/><path fill="var(--wall)" d="M20 100 L20 64 Q50 57 80 64 L80 100 Z"/><path fill="var(--bark)" opacity=".28" d="M20 78 L80 78 L80 82 L20 82 Z"/><path fill="var(--tyre)" d="M44 100 L44 76 Q50 70 56 76 L56 100 Z"/>';
 const AM_COFFEE='<g fill="var(--tree)"><ellipse cx="50" cy="62" rx="30" ry="26"/><ellipse cx="30" cy="76" rx="16" ry="14"/><ellipse cx="70" cy="76" rx="16" ry="14"/></g><path d="M50 100 L50 84" stroke="var(--bark)" stroke-width="4" stroke-linecap="round"/><g fill="var(--cherry)"><circle cx="38" cy="58" r="3.2"/><circle cx="52" cy="48" r="3.2"/><circle cx="63" cy="62" r="3.2"/><circle cx="45" cy="70" r="3"/><circle cx="58" cy="74" r="3"/><circle cx="30" cy="68" r="2.8"/></g>';
-const AM_ACACIA='<path fill="var(--bark)" d="M48 100 L45 62 L31 36 L35 33 L49 56 L51 30 L57 30 L55 58 L71 38 L74 41 L57 62 L54 100 Z"/><path fill="var(--tree)" d="M8 36 Q22 18 50 14 Q78 18 92 36 Q78 43 50 43 Q22 43 8 36 Z"/>';
+/* giant lobelia — the Simien endemic: thick trunk, spiky rosette, tall
+   dry flower spike. Nothing like it grows in the Xhosa scenery. */
+const AM_LOBELIA='<path d="M50 100 L50 44" stroke="var(--bark)" stroke-width="7" stroke-linecap="round"/><path fill="var(--thatch)" d="M46.5 22 L50 0 L53.5 22 Q50 26 46.5 22 Z"/><g fill="var(--tree)"><path d="M50 46 L18 42 L21 36 Z"/><path d="M50 46 L82 42 L79 36 Z"/><path d="M50 46 L24 28 L29 24 Z"/><path d="M50 46 L76 28 L71 24 Z"/><path d="M50 46 L34 16 L40 14 Z"/><path d="M50 46 L66 16 L60 14 Z"/><path d="M50 46 L46 12 L52 11 Z"/><path d="M50 46 L54 12 L48 11 Z"/></g>';
 const AM_HERO='<circle class="orb-glow" cx="1070" cy="76" r="70"/><circle class="orb" cx="1070" cy="76" r="41"/>'
 +'<g class="hero-stars" aria-hidden="true"><circle cx="150" cy="52" r="1.6" class="tw" style="animation-delay:0s"/><circle cx="310" cy="94" r="1.2"/><circle cx="470" cy="46" r="2"/><circle cx="630" cy="70" r="1.4" class="tw" style="animation-delay:1.1s"/><circle cx="1140" cy="130" r="1.3"/><circle cx="940" cy="58" r="1.5" class="tw" style="animation-delay:2s"/></g>'
 +'<g class="cloud c1" aria-hidden="true"><ellipse cx="58" cy="96" rx="34" ry="14"/><ellipse cx="90" cy="90" rx="26" ry="16"/><ellipse cx="28" cy="93" rx="24" ry="12"/></g>'
 +'<g class="cloud c2" aria-hidden="true"><ellipse cx="64" cy="128" rx="40" ry="15"/><ellipse cx="100" cy="122" rx="28" ry="17"/><ellipse cx="30" cy="125" rx="26" ry="13"/></g>'
 +'<g class="cloud c3" aria-hidden="true"><ellipse cx="52" cy="70" rx="28" ry="11"/><ellipse cx="78" cy="65" rx="22" ry="13"/><ellipse cx="26" cy="68" rx="20" ry="10"/></g>'
-+'<path class="far" opacity=".45" d="M690 268 Q720 262 742 250 L750 246 L760 250 Q776 258 796 264 L796 272 L690 272 Z"/>'
-+'<path class="far" d="M0 320 L0 270 Q130 264 270 267 Q430 270 560 266 L640 264 Q700 260 730 248 Q744 236 750 226 L754 220 L830 220 L838 226 Q844 240 852 248 Q858 216 862 186 L866 170 L890 164 L1044 164 L1064 170 Q1072 200 1084 228 Q1100 252 1128 260 Q1160 264 1200 262 L1200 320 Z"/>'
-+'<path class="snow" opacity=".16" d="M880 172 Q960 168 1040 171 L1040 175 Q960 172 882 176 Z"/>'
-+'<path class="mid" d="M0 320 L0 293 Q150 285 320 288 Q480 291 640 284 Q800 278 960 283 Q1100 287 1200 284 L1200 320 Z"/>'
-+'<path class="snow" opacity=".18" d="M170 290 Q290 286.5 420 289 L420 292 Q290 289.5 172 293 Z"/>'
-+'<path class="snow" opacity=".16" d="M690 282 Q810 278.5 930 281 L930 284 Q810 281.5 692 285 Z"/>'
-+'<g class="near"><path d="M0 320 L0 306 Q150 298 320 300 Q480 303 640 297 Q800 292 960 296 Q1100 299 1200 294 L1200 320 Z"/><path fill="var(--snow)" opacity=".1" d="M250 302 Q410 297 570 300 L570 303 Q410 300 252 305 Z"/><path fill="var(--snow)" opacity=".1" d="M770 294 Q910 289 1050 295 L1050 298 Q910 292 772 297 Z"/></g>'
-+'<g transform="translate(40,265) scale(0.38)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(100,250) scale(0.5)" aria-hidden="true">'+AM_GOJO+'</g>'
-+'<g transform="translate(190,261) scale(0.38)" aria-hidden="true">'+AM_GOJO+'</g>'
-+'<g transform="translate(255,268) scale(0.32)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(650,267) scale(0.3)" aria-hidden="true">'+AM_GOJO+'</g>'
-+'<g transform="translate(860,251) scale(0.42)" aria-hidden="true">'+AM_GOJO+'</g>'
-+'<g transform="translate(950,262) scale(0.34)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(1030,261) scale(0.36)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(1100,246) scale(0.52)" aria-hidden="true">'+AM_ACACIA+'</g>';
++'<path class="far" opacity=".45" d="M620 268 Q652 262 674 252 L682 248 L692 252 Q706 260 726 266 L726 272 L620 272 Z"/>'
++'<path class="far" d="M0 320 L0 272 Q130 266 260 268 Q420 271 540 267 L640 264 Q676 262 700 258 L716 262 L736 250 L756 176 L768 170 L780 196 L792 182 L802 206 L826 150 L840 144 L856 182 L872 166 L886 200 L906 158 L916 156 L934 190 L952 178 L968 208 L986 184 L996 182 L1012 214 Q1060 240 1110 248 Q1160 253 1200 251 L1200 320 Z"/>'
++'<path fill="var(--snow)" opacity=".14" d="M826 152 L840 146 L843 158 L830 164 Z"/>'
++'<path fill="var(--snow)" opacity=".12" d="M906 160 L916 158 L918 168 L909 172 Z"/>'
++'<path fill="var(--snow)" opacity=".32" d="M760.5 184 L764 183 L765 283 L760 283 Z"/>'
++'<path fill="var(--snow)" opacity=".16" d="M767 196 L768.5 196 L769 281 L767 281 Z"/>'
++'<ellipse fill="var(--snow)" opacity=".18" cx="763" cy="285" rx="8" ry="3"/>'
++'<path class="mid" d="M0 320 L0 288 Q150 281 320 284 Q500 287 660 281 Q830 276 990 280 Q1110 283 1200 280 L1200 320 Z"/>'
++'<path fill="var(--bark)" opacity=".14" d="M20 293 Q220 288 430 291 L430 293.5 Q220 290.5 20 295.5 Z"/>'
++'<path fill="var(--bark)" opacity=".12" d="M520 290 Q720 285 940 288 L940 290.5 Q720 287.5 520 292.5 Z"/>'
++'<path fill="var(--bark)" opacity=".12" d="M180 300 Q400 296 620 299 L620 301.5 Q400 298.5 180 302.5 Z"/>'
++'<g class="near"><path d="M0 320 L0 307 Q150 300 320 302 Q500 305 660 299 Q830 294 990 298 Q1110 301 1200 296 L1200 320 Z"/><path fill="var(--snow)" opacity=".1" d="M250 303 Q410 298 570 301 L570 304 Q410 301 252 306 Z"/><path fill="var(--snow)" opacity=".1" d="M770 296 Q910 291 1050 297 L1050 300 Q910 294 772 299 Z"/></g>'
++'<g transform="translate(55,244) scale(0.6)" aria-hidden="true">'+AM_LOBELIA+'</g>'
++'<g transform="translate(140,254) scale(0.48)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(215,264) scale(0.36)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(285,270) scale(0.33)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(600,272) scale(0.3)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(660,266) scale(0.36)" aria-hidden="true">'+AM_GOJO+'</g>'
++'<g transform="translate(1005,247) scale(0.56)" aria-hidden="true">'+AM_LOBELIA+'</g>'
++'<g transform="translate(1080,268) scale(0.33)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1135,256) scale(0.44)" aria-hidden="true">'+AM_GOJO+'</g>';
 const AM_BAND='<circle class="orb-glow" cx="1050" cy="54" r="32"/><circle class="orb" cx="1050" cy="54" r="19"/>'
-+'<path class="far" opacity=".45" d="M680 166 Q706 160 726 152 L732 148 L740 152 Q752 158 768 163 L768 170 L680 170 Z"/>'
-+'<path class="far" d="M0 200 L0 170 Q150 165 320 167 Q470 166 600 164 L690 162 Q740 158 766 150 Q776 140 782 132 L786 126 L836 126 L842 132 Q846 142 852 148 Q856 122 860 98 L864 88 L880 84 L1010 84 L1024 88 Q1030 112 1040 132 Q1054 152 1080 158 Q1140 162 1200 160 L1200 200 Z"/>'
-+'<path class="mid" d="M0 200 L0 182 Q150 176 320 178 Q500 180 680 175 Q860 171 1040 175 Q1140 177 1200 175 L1200 200 Z"/>'
-+'<g class="near"><path d="M0 200 L0 190 Q150 184 320 186 Q500 188 680 183 Q860 179 1040 183 Q1140 185 1200 182 L1200 200 Z"/></g>'
-+'<g transform="translate(30,168) scale(0.22)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(1080,158) scale(0.26)" aria-hidden="true">'+AM_COFFEE+'</g>'
-+'<g transform="translate(1125,154) scale(0.3)" aria-hidden="true">'+AM_GOJO+'</g>';
++'<path class="far" opacity=".45" d="M660 166 Q686 160 704 152 L712 148 L722 152 Q734 158 750 163 L750 170 L660 170 Z"/>'
++'<path class="far" d="M0 200 L0 172 Q150 167 320 169 Q470 168 600 166 L680 164 Q720 161 748 158 L768 160 L780 154 L794 108 L804 104 L816 122 L826 114 L834 130 L848 94 L860 90 L874 114 L886 104 L898 128 L912 100 L920 98 L934 120 Q970 148 1020 156 Q1110 161 1200 159 L1200 200 Z"/>'
++'<path fill="var(--snow)" opacity=".14" d="M848 96 L860 92 L862 102 L851 106 Z"/>'
++'<path class="mid" d="M0 200 L0 182 Q150 177 320 179 Q500 181 680 176 Q860 172 1040 176 Q1140 178 1200 176 L1200 200 Z"/>'
++'<path fill="var(--bark)" opacity=".13" d="M60 186 Q260 182 460 185 L460 187 Q260 184 60 188 Z"/>'
++'<g class="near"><path d="M0 200 L0 190 Q150 185 320 187 Q500 189 680 184 Q860 180 1040 184 Q1140 186 1200 183 L1200 200 Z"/></g>'
++'<g transform="translate(30,160) scale(0.3)" aria-hidden="true">'+AM_LOBELIA+'</g>'
++'<g transform="translate(1070,166) scale(0.24)" aria-hidden="true">'+AM_COFFEE+'</g>'
++'<g transform="translate(1120,161) scale(0.3)" aria-hidden="true">'+AM_GOJO+'</g>';
+/* gelada in the house BUST form (like the yeti): mane tufts ring the frame,
+   head fills it, pale face patch + muzzle. The bob animation on
+   .trail-yeti/.fnode-mascot animates it over the current lesson. */
 function AM_MASCOT(m){
-  var base='<circle cx="32" cy="32" r="21" fill="#8A6B3F"/>' /* golden mane */
-  +'<path d="M12 30 Q10 18 20 12 M52 30 Q54 18 44 12 M22 10 Q32 4 42 10" stroke="#8A6B3F" stroke-width="5" fill="none" stroke-linecap="round"/>' /* mane fluff */
-  +'<ellipse cx="32" cy="33" rx="12.5" ry="14" fill="#C7A97C"/>' /* face */
-  +'<ellipse cx="32" cy="41" rx="7" ry="5.5" fill="#A9855A"/>' /* muzzle */
-  +'<ellipse cx="29.6" cy="40.5" rx="1.2" ry="1.7" fill="#4a3520"/><ellipse cx="34.4" cy="40.5" rx="1.2" ry="1.7" fill="#4a3520"/>' /* nostrils */
-  +'<path d="M20 52 Q32 58 44 52" stroke="#8A6B3F" stroke-width="5" fill="none" stroke-linecap="round"/>'; /* chest fur */
+  var base='<circle cx="20" cy="13" r="6" fill="#8A6440"/><circle cx="32" cy="9" r="7" fill="#8A6440"/><circle cx="44" cy="13" r="6" fill="#8A6440"/><circle cx="12" cy="27" r="6" fill="#8A6440"/><circle cx="52" cy="27" r="6" fill="#8A6440"/><circle cx="11" cy="41" r="7" fill="#8A6440"/><circle cx="53" cy="41" r="7" fill="#8A6440"/>'
+  +'<path d="M32 7 C18 7 12 17 12 31 C12 47 21 58 32 58 C43 58 52 47 52 31 C52 17 46 7 32 7 Z" fill="#A8845C"/>'
+  +'<ellipse cx="32" cy="37" rx="14.5" ry="13.5" fill="#D9BC92"/>'
+  +'<ellipse cx="32" cy="44.5" rx="7.5" ry="5.5" fill="#B08D5C"/>'
+  +'<ellipse cx="29.4" cy="44" rx="1.1" ry="1.6" fill="#4a3520"/><ellipse cx="34.6" cy="44" rx="1.1" ry="1.6" fill="#4a3520"/>'
+  +'<circle cx="21" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/><circle cx="43" cy="40" r="3" fill="var(--crimson)" opacity="0.18"/>';
   var f;
-  if(m==='cheer')f='<path d="M23 27 Q26.5 23.8 30 27" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M34 27 Q37.5 23.8 41 27" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M27 45.5 Q32 49 37 45.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
-  else if(m==='oops')f='<path d="M23 24.5 Q26.5 23.4 30 24.5" fill="none" stroke="#3a2b18" stroke-width="1.6" stroke-linecap="round"/><path d="M34 24.5 Q37.5 23.4 41 24.5" fill="none" stroke="#3a2b18" stroke-width="1.6" stroke-linecap="round"/><circle cx="26.5" cy="27.5" r="2" fill="#3a2b18"/><circle cx="37.5" cy="27.5" r="2" fill="#3a2b18"/><ellipse cx="32" cy="46.5" rx="1.8" ry="2.4" fill="#3a2b18"/>';
-  else f='<circle cx="26.5" cy="27" r="2.4" fill="#3a2b18"/><circle cx="37.5" cy="27" r="2.4" fill="#3a2b18"/><circle cx="27.2" cy="26.2" r="0.7" fill="#fff"/><circle cx="38.2" cy="26.2" r="0.7" fill="#fff"/><path d="M28.5 45.5 Q32 48.2 35.5 45.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
+  if(m==='cheer')f='<path d="M20.5 29 Q24.5 26 28.5 29" fill="none" stroke="#3a2b18" stroke-width="1.5" stroke-linecap="round" opacity=".6"/><path d="M35.5 29 Q39.5 26 43.5 29" fill="none" stroke="#3a2b18" stroke-width="1.5" stroke-linecap="round" opacity=".6"/><path d="M22 34.5 Q25 31 28 34.5" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M36 34.5 Q39 31 42 34.5" fill="none" stroke="#3a2b18" stroke-width="2.2" stroke-linecap="round"/><path d="M27 49.5 Q32 53 37 49.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M21.5 30.5 Q25 29.2 28.5 30.5" fill="none" stroke="#3a2b18" stroke-width="1.5" stroke-linecap="round"/><path d="M35.5 30.5 Q39 29.2 42.5 30.5" fill="none" stroke="#3a2b18" stroke-width="1.5" stroke-linecap="round"/><circle cx="25" cy="34.5" r="2.5" fill="#3a2b18"/><circle cx="39" cy="34.5" r="2.5" fill="#3a2b18"/><path d="M28.5 50.5 Q32 48 35.5 50.5" fill="none" stroke="#3a2b18" stroke-width="1.8" stroke-linecap="round"/><path d="M50 24 Q52.5 29 50 31 Q47.5 29 50 24 Z" fill="#7EC8E3" opacity=".85"/>';
+  else f='<circle cx="25" cy="34" r="2.6" fill="#3a2b18"/><circle cx="39" cy="34" r="2.6" fill="#3a2b18"/><circle cx="25.9" cy="33.1" r="0.7" fill="#fff"/><circle cx="39.9" cy="33.1" r="0.7" fill="#fff"/><path d="M27.5 49.5 Q32 52.5 36.5 49.5" fill="none" stroke="#3a2b18" stroke-width="2" stroke-linecap="round"/>';
   return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 
 /* ---------- Short-term (trip) pack — a visitor to Ethiopia meeting Amharic

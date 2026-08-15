@@ -3997,18 +3997,18 @@ const XH_BAND='<circle class="orb-glow" cx="1050" cy="54" r="32"/><circle class=
 +'<g transform="translate(1085,157.7) scale(0.26)" aria-hidden="true">'+XH_ALOE+'</g>'
 +'<g transform="translate(1128,154) scale(0.3)" aria-hidden="true">'+XH_HUT+'</g>';
 function XH_MASCOT(m){
-  var base='<path d="M41 48 Q56 50 62 60 Q49 58 39 52 Z" fill="#7C93AB"/>' /* wing plume */
-  +'<ellipse cx="32" cy="48" rx="15" ry="10" fill="#8FA6BC"/>' /* body */
-  +'<path d="M26 57 L25 63 M38 57 L39 63" stroke="#B08D5C" stroke-width="2" stroke-linecap="round"/>' /* legs */
-  +'<path d="M27 42 Q23 34 26 27" stroke="#8FA6BC" stroke-width="7" fill="none" stroke-linecap="round"/>' /* neck */
-  +'<path d="M35 55 Q42 51 44 45" stroke="#7C93AB" stroke-width="2.4" fill="none" stroke-linecap="round"/>' /* wing line */
-  +'<circle cx="32" cy="22" r="12.5" fill="#A9BDD1"/>' /* head */
-  +'<path d="M21.5 14.5 Q32 6.5 42.5 14.5 Q32 10.5 21.5 14.5 Z" fill="#EDEFF2"/>' /* pale crown */
-  +'<path d="M28.8 32 L32 40.5 L35.2 32 Q32 30.2 28.8 32 Z" fill="#C2A15A"/>'; /* bill */
+  /* blue crane in the house BUST form — a big head fills the frame, chest
+     rises from the bottom edge (matches the yeti/buffalo/elephant form). */
+  var base='<path d="M13 64 Q13 46 22 39 Q32 33 42 39 Q51 46 51 64 Z" fill="#8FA6BC"/>' /* chest */
+  +'<path d="M44 58 Q54 53 57 46 Q50 48 44 52 Z" fill="#7C93AB"/>' /* wing plume */
+  +'<circle cx="32" cy="24" r="15" fill="#A9BDD1"/>' /* head */
+  +'<path d="M19 14.5 Q32 4.5 45 14.5 Q32 9.5 19 14.5 Z" fill="#EDEFF2"/>' /* pale crown */
+  +'<path d="M30 34.5 L48.5 41.5 L31.5 40.5 Q28.8 37.5 30 34.5 Z" fill="#C2A15A"/>' /* bill, in profile */
+  +'<path d="M30 34.5 L48.5 41.5 L40 40.9" fill="none" stroke="#A8874A" stroke-width="0.8"/>'; /* bill line */
   var f;
-  if(m==='cheer')f='<path d="M22.5 21 Q26 17.8 29.5 21" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M34.5 21 Q38 17.8 41.5 21" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M28 28.5 Q32 31.5 36 28.5" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
-  else if(m==='oops')f='<path d="M22.5 18.5 Q26 17.4 29.5 18.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><path d="M34.5 18.5 Q38 17.4 41.5 18.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><circle cx="26" cy="21.5" r="2" fill="#3E4750"/><circle cx="38" cy="21.5" r="2" fill="#3E4750"/><ellipse cx="32" cy="35" rx="1.5" ry="2" fill="#3E4750"/>';
-  else f='<circle cx="26" cy="21" r="2.4" fill="#3E4750"/><circle cx="38" cy="21" r="2.4" fill="#3E4750"/><circle cx="26.7" cy="20.2" r="0.7" fill="#fff"/><circle cx="38.7" cy="20.2" r="0.7" fill="#fff"/><path d="M28.5 28 Q32 30.6 35.5 28" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
+  if(m==='cheer')f='<path d="M21.5 22.5 Q25 19.3 28.5 22.5" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M35.5 22.5 Q39 19.3 42.5 22.5" fill="none" stroke="#3E4750" stroke-width="2.2" stroke-linecap="round"/><path d="M27.5 31 Q32 34.2 36.5 31" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
+  else if(m==='oops')f='<path d="M21.5 19.5 Q25 18.3 28.5 19.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><path d="M35.5 19.5 Q39 18.3 42.5 19.5" fill="none" stroke="#3E4750" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="23" r="2.3" fill="#3E4750"/><circle cx="39" cy="23" r="2.3" fill="#3E4750"/><path d="M28.5 32.5 Q32 30.2 35.5 32.5" fill="none" stroke="#3E4750" stroke-width="1.8" stroke-linecap="round"/><path d="M49 15 Q51.5 20 49 22 Q46.5 20 49 15 Z" fill="#7EC8E3" opacity=".85"/>';
+  else f='<circle cx="25" cy="23" r="2.6" fill="#3E4750"/><circle cx="39" cy="23" r="2.6" fill="#3E4750"/><circle cx="25.9" cy="22.1" r="0.7" fill="#fff"/><circle cx="39.9" cy="22.1" r="0.7" fill="#fff"/><path d="M28 31 Q32 33.8 36 31" fill="none" stroke="#3E4750" stroke-width="2" stroke-linecap="round"/>';
   return '<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">'+base+f+'</svg>';}
 
 /* ---------- Short-term (trip) pack — a visitor to Cape Town / the Eastern
