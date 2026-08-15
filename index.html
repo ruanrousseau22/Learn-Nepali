@@ -3021,7 +3021,15 @@ function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';c
         const isTest=grp[0].step==='test';
         const peak=document.createElement('button');peak.className='cnode'+(isTest?' test':'')+(locked?' locked':'')+(complete?' done':'')+(isNext?' active-next':'');
         const sym=SYM[grp[0].id]||'·';
-        peak.innerHTML='<span class=\"cinner\"><span class=\"sym\">'+sym+'</span></span>'+(complete?'<span class=\"cbadge done\">✓</span>':locked?'<span class=\"cbadge lock\"><svg class=\"lk\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 11V7.5a4 4 0 0 1 8 0V11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"5.5\" y=\"11\" width=\"13\" height=\"8.5\" rx=\"2.2\" fill=\"currentColor\"/></svg></span>':'');
+        /* Latin labels longer than ~4 chars burst out of the 84px tile at the
+           31px sym size (native-script syms are 1–3 compact glyphs, Latin packs
+           carry whole words — unjani, tabriklayman). Scale by the longest word;
+           non-Latin labels keep the stock size so shipped packs are untouched. */
+        const symFit=(s=>{if(!/^[A-Za-zÀ-ɏʻʼ?!.’'\- ]+$/.test(s))return '';
+          const w=Math.max(...s.split(/\s+/).map(x=>x.length));
+          if(w<=4)return '';const px=Math.max(13,Math.min(31,Math.floor(132/w)));
+          return ' style=\"font-size:'+px+'px\"';})(sym);
+        peak.innerHTML='<span class=\"cinner\"><span class=\"sym\"'+symFit+'>'+sym+'</span></span>'+(complete?'<span class=\"cbadge done\">✓</span>':locked?'<span class=\"cbadge lock\"><svg class=\"lk\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 11V7.5a4 4 0 0 1 8 0V11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"5.5\" y=\"11\" width=\"13\" height=\"8.5\" rx=\"2.2\" fill=\"currentColor\"/></svg></span>':'');
         if(!locked)peak.onclick=()=>startLesson(LESSONS.indexOf(target));
         pw.appendChild(peak);
         const sub=complete?(isTest?'Passed ✓':'Done ✓'):locked?'Locked':isTest?'Take the test →':(doneN>0?doneN+'/'+total+' · Continue →':'Start →');
@@ -3032,7 +3040,18 @@ function buildPath(units,rootId){units=units||UNITS;rootId=rootId||'path-root';c
       /* tests are optional: the next unit unlocks off the last core lesson, not the test */
       prevId=[...u.lessons].reverse().find(id=>{const ll=lessonById(id);return !ll||ll.step!=='test';});
     zone.appendChild(trail);root.appendChild(zone);});
-  if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=artMascot('cheer');lastPw.appendChild(y);const pr=lastPw.closest('.topic-row');if(pr)pr.classList.add('has-next');}}
+  if(!firstUndone&&lastPw){const y=document.createElement('div');y.className='trail-yeti';y.innerHTML=artMascot('cheer');lastPw.appendChild(y);const pr=lastPw.closest('.topic-row');if(pr)pr.classList.add('has-next');}
+  fitSyms(root);}
+/* exact fit pass: the inline length formula above is a guess that also works
+   while hidden; this measures for real once the path is laid out and shrinks
+   any label still wider than the tile. Runs again via rAF for paths built
+   before their view is visible (width reads 0 there). */
+function fitSyms(root){const pass=()=>{root.querySelectorAll('.cnode .sym').forEach(sy=>{
+    const node=sy.closest('.cnode');if(!node)return;const max=node.clientWidth-16;if(max<20)return;
+    for(let k=0;k<3;k++){const w=sy.getBoundingClientRect().width;if(w<=max)break;
+      const fs=parseFloat(getComputedStyle(sy).fontSize);
+      sy.style.fontSize=Math.max(11,Math.floor(fs*max/w))+'px';}});};
+  pass();requestAnimationFrame(pass);}
 
 let curL=0,curE=0;
 let curTrack='home';
