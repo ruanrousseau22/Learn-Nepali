@@ -613,6 +613,298 @@ const AM_LESSONS=[
 {"t":"li","q":"Review — which one do you hear?","say":"ስምህ ማን ነው?","o":["ስምህ ማን ነው?","ከየት ነህ?","ደህና ነህ?"],"a":0},
 {"t":"mc","q":"Review — the Amharic plural ending…","o":["-och","-e","-hu"],"a":0},
 {"t":"mc","q":"Review — good morning literally asks how you spent…","o":["the night","the meal","the road"],"a":0}
+]},
+
+/* ---------- f1 · The family ---------- */
+{"id":"am_f1","title":"The family","step":"learn","meta":"Abbat, ennat — the four at the table","vocab":[["አባት","abbat","father"],["እናት","ennat","mother"],["ወንድም","wendim","brother"],["እህት","ihit","sister"]],"ex":[
+{"t":"note","tag":"The parents","q":"አባት and እናት","body":"<p><b>አባት</b> <i>abbat</i> — <i>father</i> — and <b>እናት</b> <i>ennat</i> — <i>mother</i>. Hold the doubled consonants (ab-bat, en-nat): that lean-in is real Amharic pronunciation, even though the fidel does not write it.</p>","eg":[["አባት","abbat","father"],["እናት","ennat","mother"]]},
+{"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እናት"],"a":0},
+{"t":"mc","q":"What does እናት mean?","o":["mother","father","sister"],"a":0},
+{"t":"note","tag":"The siblings","q":"ወንድም and እህት","body":"<p><b>ወንድም</b> <i>wendim</i> — <i>brother</i> — carries the ወንድ (man) you met in Zone 2. <b>እህት</b> <i>ihit</i> — <i>sister</i>. Ethiopians reach for these words far beyond blood: a stranger your age is already wendim or ihit.</p>","eg":[["ወንድም","wendim","brother"],["እህት","ihit","sister"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወንድም","o":["ወንድም","እህት"],"a":0},
+{"t":"mc","q":"እህት means…","o":["sister","brother","aunt"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","እናት"],"a":0},
+{"t":"mc","q":"The word hiding inside ወንድም is…","o":["ወንድ, man","ወይዘሮ, Mrs.","ሰው, person"],"a":0}
+]},
+{"id":"am_f1_2","title":"Hearing the family","step":"recognize","meta":"The four by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","አባት","እህት"],"a":0},
+{"t":"mc","q":"What does አባት mean?","o":["father","mother","brother"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","ወንድም","እናት"],"a":0},
+{"t":"mc","q":"Which one means brother?","o":["ወንድም","እህት","አባት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እህት","ወንድም"],"a":0},
+{"t":"mc","q":"A stranger your own age may warmly be called…","o":["wendim or ihit","ato only","erswo only"],"a":0}
+]},
+{"id":"am_f1_3","title":"Building the family","step":"build","meta":"Four seats at the table","vocab":[],"ex":[
+{"t":"wb","q":"Build: father and mother","a":["አባት","እናት"],"pool":["አባት","እናት","እህት"]},
+{"t":"mc","q":"Pick the word for sister","o":["እህት","ወንድም","እናት"],"a":0},
+{"t":"wb","q":"Build: brother and sister","a":["ወንድም","እህት"],"pool":["ወንድም","እህት","አባት"]},
+{"t":"mc","q":"Pick the word for father","o":["አባት","እናት","ወንድም"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወንድም","o":["ወንድም","አባት","እህት"],"a":0}
+]},
+{"id":"am_f1_4","title":"The family in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባት","father"],["እናት","mother"]]},
+{"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","እህት","አባት"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ወንድም","brother"],["እህት","sister"]]},
+{"t":"mc","q":"The doubled consonant in abbat and ennat is…","o":["spoken but not written","written twice in fidel","optional"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እህት","o":["እህት","እናት","ወንድም"],"a":0}
+]},
+{"id":"am_f1_5","title":"Checkpoint: the family","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ወንድም mean?","o":["brother","sister","father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባት","o":["አባት","እናት","ወንድም"],"a":0},
+{"t":"mc","q":"Which one means mother?","o":["እናት","አባት","እህት"],"a":0},
+{"t":"mc","q":"Review — ሰዎች means…","o":["people","person","family"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናት","o":["እናት","እህት","አባት"],"a":0}
+]},
+
+/* ---------- f2 · Household and children ---------- */
+{"id":"am_f2","title":"Household and children","step":"learn","meta":"Betesab — the family as a whole","vocab":[["ቤተሰብ","betesab","family"],["ልጅ","lij","child"],["ልጆች","lijoch","children"],["አያት","ayat","grandparent"]],"ex":[
+{"t":"note","tag":"The whole house","q":"ቤተሰብ","body":"<p><b>ቤተሰብ</b> <i>betesab</i> — <i>family</i> — literally <i>house-of-people</i>. In Ethiopia the word stretches wide: cousins, in-laws, the neighbor who eats with you. Asking after someone&rsquo;s betesab is standard caring small talk.</p>","eg":[["ቤተሰብ","betesab","family"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","አባት"],"a":0},
+{"t":"mc","q":"ቤተሰብ literally means…","o":["house of people","blood line","big group"],"a":0},
+{"t":"note","tag":"One child, many","q":"ልጅ → ልጆች","body":"<p><b>ልጅ</b> <i>lij</i> — <i>child</i> (also simply <i>kid</i>, <i>son or daughter</i>). Your -och plural earns its keep: <b>ልጆች</b> <i>lijoch</i> — <i>children</i>.</p>","eg":[["ልጅ","lij","child"],["ልጆች","lijoch","children"]]},
+{"t":"li","q":"One or many — which do you hear?","say":"ልጆች","o":["ልጆች","ልጅ"],"a":0},
+{"t":"mc","q":"ልጆች means…","o":["children","child","parents"],"a":0},
+{"t":"note","tag":"The elders","q":"አያት","body":"<p><b>አያት</b> <i>ayat</i> — <i>grandparent</i>, grandmother or grandfather alike. Ethiopian households often hold three generations, and the ayat holds the stories.</p>","eg":[["አያት","ayat","grandparent"]]},
+{"t":"li","q":"Which one do you hear?","say":"አያት","o":["አያት","ልጅ"],"a":0},
+{"t":"mc","q":"አያት covers…","o":["grandmother and grandfather alike","grandmother only","great-uncles only"],"a":0}
+]},
+{"id":"am_f2_2","title":"Hearing the household","step":"recognize","meta":"The wider family by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ልጅ","o":["ልጅ","ልጆች","አያት"],"a":0},
+{"t":"mc","q":"What does ቤተሰብ mean?","o":["family","house","village"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","ልጅ","ቤተሰብ"],"a":0},
+{"t":"mc","q":"Which one means grandparent?","o":["አያት","እናት","አባት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","አያት","ልጆች"],"a":0},
+{"t":"mc","q":"ልጅ became ልጆች the same way ሰው became…","o":["ሰዎች","ሴት","ስም"],"a":0}
+]},
+{"id":"am_f2_3","title":"Building the household","step":"build","meta":"The wide net of betesab","vocab":[],"ex":[
+{"t":"wb","q":"Build the word: children","a":["ልጅ","ኦች"],"pool":["ልጅ","ኦች","ልጆች"]},
+{"t":"mc","q":"Pick the word for family","o":["ቤተሰብ","አያት","ልጆች"],"a":0},
+{"t":"wb","q":"Build: a child and a grandparent","a":["ልጅ","አያት"],"pool":["ልጅ","አያት","ልጆች"]},
+{"t":"mc","q":"Pick the word for children","o":["ልጆች","ልጅ","ቤተሰብ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አያት","o":["አያት","ቤተሰብ","ልጅ"],"a":0}
+]},
+{"id":"am_f2_4","title":"The household in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ቤተሰብ","family"],["ልጅ","child"],["አያት","grandparent"]]},
+{"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","አያት","ቤተሰብ"],"a":0},
+{"t":"match","q":"Match singular to plural","pairs":[["ልጅ","ልጆች"],["ሰው","ሰዎች"]]},
+{"t":"mc","q":"Asking after someone&rsquo;s betesab is…","o":["standard caring small talk","too personal","only for relatives"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ልጅ","o":["ልጅ","ልጆች","አያት"],"a":0}
+]},
+{"id":"am_f2_5","title":"Checkpoint: the household","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"What does ልጆች mean?","o":["children","child","grandparents"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰብ","o":["ቤተሰብ","ልጆች","አያት"],"a":0},
+{"t":"mc","q":"Which one means grandparent?","o":["አያት","ቤተሰብ","ልጅ"],"a":0},
+{"t":"mc","q":"Review — ጓደኛ means…","o":["friend","family","child"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ልጆች","o":["ልጆች","ቤተሰብ","ልጅ"],"a":0}
+]},
+
+/* ---------- f3 · My and your ---------- */
+{"id":"am_f3","title":"My and your","step":"learn","meta":"Abbate, abbatih, abbatish — endings that own","vocab":[["አባቴ","abbate","my father"],["እናቴ","ennate","my mother"],["አባትህ","abbatih","your father (to a man)"],["አባትሽ","abbatish","your father (to a woman)"]],"ex":[
+{"t":"note","tag":"The -e you already know","q":"አባቴ, እናቴ","body":"<p>Remember ስሜ — <i>my name</i>? The same little <b>-e</b> owns anything: <b>አባቴ</b> <i>abbate</i> — <i>my father</i>; <b>እናቴ</b> <i>ennate</i> — <i>my mother</i>. Amharic glues <i>my</i> onto the end of the word.</p>","eg":[["አባቴ","abbate","my father"],["እናቴ","ennate","my mother"]]},
+{"t":"li","q":"Which one do you hear?","say":"አባቴ","o":["አባቴ","እናቴ"],"a":0},
+{"t":"mc","q":"The -e ending means…","o":["my","your","his"],"a":0},
+{"t":"note","tag":"Your — by gender again","q":"አባትህ, አባትሽ","body":"<p><i>Your</i> splits by gender exactly like neh/nesh did: <b>አባትህ</b> <i>abbatih</i> — <i>your father</i> said to a man — and <b>አባትሽ</b> <i>abbatish</i> to a woman. The -h/-sh pair follows you through the whole language.</p>","eg":[["አባትህ","abbatih","your father (to a man)"],["አባትሽ","abbatish","your father (to a woman)"]]},
+{"t":"li","q":"To a man or a woman — which do you hear?","say":"አባትሽ","o":["አባትሽ","አባትህ"],"a":0},
+{"t":"mc","q":"አባትህ is said to…","o":["a man","a woman","an elder"],"a":0},
+{"t":"li","q":"My or your — which do you hear?","say":"እናቴ","o":["እናቴ","አባትህ"],"a":0},
+{"t":"mc","q":"ስሜ and አባቴ share…","o":["the -e my ending","the same meaning","nothing"],"a":0}
+]},
+{"id":"am_f3_2","title":"Hearing the owners","step":"recognize","meta":"Whose family, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","አባትሽ","አባቴ"],"a":0},
+{"t":"mc","q":"What does እናቴ mean?","o":["my mother","your mother","his mother"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባቴ","o":["አባቴ","አባትህ","እናቴ"],"a":0},
+{"t":"mc","q":"Which one is your father, said to a woman?","o":["አባትሽ","አባትህ","አባቴ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባትሽ","o":["አባትሽ","አባቴ","አባትህ"],"a":0},
+{"t":"mc","q":"Amharic attaches my and your…","o":["to the end of the word","before the word","as separate words only"],"a":0}
+]},
+{"id":"am_f3_3","title":"Building the owners","step":"build","meta":"Endings on, endings off","vocab":[],"ex":[
+{"t":"wb","q":"Build: my father (abbat + e)","a":["አባት","ኤ"],"pool":["አባት","ኤ","ህ"]},
+{"t":"mc","q":"Pick: my mother","o":["እናቴ","እናት","አባቴ"],"a":0},
+{"t":"wb","q":"Build: your father, to a man (abbat + ih)","a":["አባት","ህ"],"pool":["አባት","ህ","ሽ"]},
+{"t":"mc","q":"Pick: your father, to a woman","o":["አባትሽ","አባትህ","እናቴ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናቴ","o":["እናቴ","አባቴ","አባትሽ"],"a":0}
+]},
+{"id":"am_f3_4","title":"The owners in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባቴ","my father"],["አባትህ","your father (man)"],["አባትሽ","your father (woman)"]]},
+{"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","እናቴ","አባትሽ"],"a":0},
+{"t":"match","q":"Match the ending to its meaning","pairs":[["-ኤ","my"],["-ህ","your (man)"],["-ሽ","your (woman)"]]},
+{"t":"mc","q":"እናትሽ would mean…","o":["your mother (to a woman)","my mother","her mother"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባቴ","o":["አባቴ","አባትሽ","እናቴ"],"a":0}
+]},
+{"id":"am_f3_5","title":"Checkpoint: the owners","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አባቴ means…","o":["my father","your father","the father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባትሽ","o":["አባትሽ","አባትህ","አባቴ"],"a":0},
+{"t":"mc","q":"Which one means my mother?","o":["እናቴ","እናት","አባቴ"],"a":0},
+{"t":"mc","q":"Review — ቤተሰብ means…","o":["family","household chores","children"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባትህ","o":["አባትህ","አባቴ","አባትሽ"],"a":0}
+]},
+
+/* ---------- f4 · This is my… ---------- */
+{"id":"am_f4","title":"This is my…","step":"learn","meta":"Yih — pointing people out","vocab":[["ይህ","yih","this"],["ይህ አባቴ ነው","yih abbate new","this is my father"],["እሱ","issu","he"],["እሷ","isswa","she"]],"ex":[
+{"t":"note","tag":"Pointing","q":"ይህ","body":"<p><b>ይህ</b> <i>yih</i> — <i>this</i>. With the ነው you know from ስሜ … ነው, introductions build themselves: <b>ይህ አባቴ ነው</b> <i>yih abbate new</i> — <i>this is my father</i>.</p>","eg":[["ይህ","yih","this"],["ይህ አባቴ ነው","yih abbate new","this is my father"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ አባቴ ነው","o":["ይህ አባቴ ነው","ይህ"],"a":0},
+{"t":"mc","q":"ይህ አባቴ ነው means…","o":["this is my father","my father is here","who is my father?"],"a":0},
+{"t":"note","tag":"He and she","q":"እሱ and እሷ","body":"<p><b>እሱ</b> <i>issu</i> — <i>he</i>; <b>እሷ</b> <i>isswa</i> — <i>she</i>. They pair with the verb endings you keep meeting: እሱ ደህና ነው, እሷ ደህና ናት — he is well, she is well.</p>","eg":[["እሱ","issu","he"],["እሷ","isswa","she"]]},
+{"t":"li","q":"He or she — which do you hear?","say":"እሷ","o":["እሷ","እሱ"],"a":0},
+{"t":"mc","q":"እሱ means…","o":["he","she","they"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሱ"],"a":0},
+{"t":"mc","q":"To introduce your mother, you would say ይህች or simply…","o":["ይህ እናቴ ነው pattern with her word","ስምሽ ማን ነው?","ከየት ነሽ?"],"a":0}
+]},
+{"id":"am_f4_2","title":"Hearing the introductions","step":"recognize","meta":"This-is by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"እሱ","o":["እሱ","እሷ","ይህ"],"a":0},
+{"t":"mc","q":"What does ይህ mean?","o":["this","that","here"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ አባቴ ነው","o":["ይህ አባቴ ነው","ይህ","አባቴ"],"a":0},
+{"t":"mc","q":"Which one means she?","o":["እሷ","እሱ","እኔ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሷ","o":["እሷ","እሱ","እኔ"],"a":0},
+{"t":"mc","q":"The ነው at the end of introductions means…","o":["is","this","my"],"a":0}
+]},
+{"id":"am_f4_3","title":"Building the introductions","step":"build","meta":"Point and present","vocab":[],"ex":[
+{"t":"wb","q":"Build: this is my father","a":["ይህ","አባቴ","ነው"],"pool":["ይህ","አባቴ","ነው","እሱ"]},
+{"t":"mc","q":"Pick the word for he","o":["እሱ","እሷ","ይህ"],"a":0},
+{"t":"wb","q":"Build: this is my friend (gwadegnaye)","a":["ይህ","ጓደኛዬ","ነው"],"pool":["ይህ","ጓደኛዬ","ነው","አባቴ"]},
+{"t":"mc","q":"Pick the word for she","o":["እሷ","እሱ","እናት"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሱ","o":["እሱ","ይህ","እሷ"],"a":0}
+]},
+{"id":"am_f4_4","title":"The introductions in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይህ","this"],["እሱ","he"],["እሷ","she"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሷ","እሱ"],"a":0},
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ይህ አባቴ ነው","this is my father"],["ደህና ነው","he is well"]]},
+{"t":"mc","q":"Introducing your host father to a visitor…","o":["ይህ አባቴ ነው","አባትህ ማን ነው?","እሱ ከየት ነው?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ አባቴ ነው","o":["ይህ አባቴ ነው","እሷ","ይህ"],"a":0}
+]},
+{"id":"am_f4_5","title":"Checkpoint: the introductions","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"ይህ means…","o":["this","he","is"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እሷ","o":["እሷ","እሱ","ይህ"],"a":0},
+{"t":"mc","q":"Which one means he?","o":["እሱ","እሷ","ይህ"],"a":0},
+{"t":"mc","q":"Review — አባትህ means…","o":["your father (to a man)","my father","his father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ","o":["ይህ","እሱ","እሷ"],"a":0}
+]},
+
+/* ---------- f5 · His and her ---------- */
+{"id":"am_f5","title":"His and her","step":"learn","meta":"Abbatu, abbatwa — the endings finish the set","vocab":[["አባቱ","abbatu","his father"],["አባቷ","abbatwa","her father"],["እናቷ","ennatwa","her mother"]],"ex":[
+{"t":"note","tag":"His","q":"አባቱ","body":"<p><i>His</i> is the ending <b>-u</b>: <b>አባቱ</b> <i>abbatu</i> — <i>his father</i>. Say it with እሱ: እሱ አባቱ — his father.</p>","eg":[["አባቱ","abbatu","his father"]]},
+{"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","አባቴ"],"a":0},
+{"t":"mc","q":"The -u ending means…","o":["his","her","my"],"a":0},
+{"t":"note","tag":"Her","q":"አባቷ, እናቷ","body":"<p><i>Her</i> is <b>-wa</b>: <b>አባቷ</b> <i>abbatwa</i> — <i>her father</i>; <b>እናቷ</b> <i>ennatwa</i> — <i>her mother</i>. Six endings now — my, your (m), your (f), polite, his, her — and they fit every noun in the language.</p>","eg":[["አባቷ","abbatwa","her father"],["እናቷ","ennatwa","her mother"]]},
+{"t":"li","q":"His or her — which do you hear?","say":"አባቷ","o":["አባቷ","አባቱ"],"a":0},
+{"t":"mc","q":"እናቷ means…","o":["her mother","his mother","my mother"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ"],"a":0},
+{"t":"mc","q":"The -wa in አባቷ echoes which pronoun?","o":["እሷ, she","እሱ, he","እኔ, I"],"a":0}
+]},
+{"id":"am_f5_2","title":"Hearing his and her","step":"recognize","meta":"Third-person owners by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አባቷ","o":["አባቷ","አባቱ","እናቷ"],"a":0},
+{"t":"mc","q":"What does አባቱ mean?","o":["his father","her father","my father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ","አባቱ"],"a":0},
+{"t":"mc","q":"Which one means her father?","o":["አባቷ","አባቱ","አባቴ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","እናቷ","አባቷ"],"a":0},
+{"t":"mc","q":"እናቱ would mean…","o":["his mother","her mother","our mother"],"a":0}
+]},
+{"id":"am_f5_3","title":"Building his and her","step":"build","meta":"Finish the ending set","vocab":[],"ex":[
+{"t":"wb","q":"Build: his father (abbat + u)","a":["አባት","ኡ"],"pool":["አባት","ኡ","ዋ"]},
+{"t":"mc","q":"Pick: her mother","o":["እናቷ","እናቴ","አባቷ"],"a":0},
+{"t":"wb","q":"Build: her father (abbat + wa)","a":["አባት","ዋ"],"pool":["አባት","ዋ","ኡ"]},
+{"t":"mc","q":"Pick: his father","o":["አባቱ","አባቷ","አባትህ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባቷ","o":["አባቷ","አባቱ","እናቷ"],"a":0}
+]},
+{"id":"am_f5_4","title":"His and her in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባቱ","his father"],["አባቷ","her father"],["እናቷ","her mother"]]},
+{"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","አባቷ","እናቷ"],"a":0},
+{"t":"match","q":"Match the ending to the owner","pairs":[["-ኤ","me"],["-ኡ","him"],["-ዋ","her"]]},
+{"t":"mc","q":"Six owner-endings on one noun — Amharic possessives are…","o":["endings glued to the word","separate little words","optional"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቱ","አባቷ"],"a":0}
+]},
+{"id":"am_f5_5","title":"Checkpoint: his and her","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አባቷ means…","o":["her father","his father","your father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"እናቷ","o":["እናቷ","አባቷ","አባቱ"],"a":0},
+{"t":"mc","q":"Which one means his father?","o":["አባቱ","አባቷ","አባቴ"],"a":0},
+{"t":"mc","q":"Review — ይህ አባቴ ነው means…","o":["this is my father","his father is here","my father knows"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባቱ","o":["አባቱ","እናቷ","አባቷ"],"a":0}
+]},
+
+/* ---------- f6 · Respect in the family ---------- */
+{"id":"am_f6","title":"Respect in the family","step":"learn","meta":"Abbatwo, gash — honor woven into address","vocab":[["አባትዎ","abbatwo","your father (polite)"],["ጋሽ","gash","respectful address for an older man"],["ወይዘሪት","weyzerit","Miss"]],"ex":[
+{"t":"note","tag":"The polite owner","q":"አባትዎ","body":"<p>The polite እርስዎ has its own owner-ending too: <b>አባትዎ</b> <i>abbatwo</i> — <i>your father</i>, said with respect. Asking an elder about their family, this is the form that honors them.</p>","eg":[["አባትዎ","abbatwo","your father (polite)"]]},
+{"t":"li","q":"Plain or polite — which do you hear?","say":"አባትዎ","o":["አባትዎ","አባትህ"],"a":0},
+{"t":"mc","q":"አባትዎ pairs with which pronoun?","o":["እርስዎ","አንተ","እሱ"],"a":0},
+{"t":"note","tag":"Warm honor","q":"ጋሽ","body":"<p><b>ጋሽ</b> <i>gash</i> — literally <i>shield</i> — is the warm, respectful way to address an older man: Gash Kebede. It says elder-I-trust rather than stranger. Use it and watch faces soften.</p>","eg":[["ጋሽ","gash","respectful address for an older man"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","አቶ"],"a":0},
+{"t":"mc","q":"ጋሽ literally means…","o":["shield","father","chief"],"a":0},
+{"t":"note","tag":"The last title","q":"ወይዘሪት","body":"<p><b>ወይዘሪት</b> <i>weyzerit</i> — <i>Miss</i> — completes your title set with አቶ and ወይዘሮ. And remember the body language: elders get the two-handed shake, and standing up when they enter.</p>","eg":[["ወይዘሪት","weyzerit","Miss"]]},
+{"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","ወይዘሮ"],"a":0},
+{"t":"mc","q":"ወይዘሪት means…","o":["Miss","Mrs.","Madam elder"],"a":0}
+]},
+{"id":"am_f6_2","title":"Hearing the honor","step":"recognize","meta":"Respect forms by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"አባትዎ","o":["አባትዎ","ጋሽ","ወይዘሪት"],"a":0},
+{"t":"mc","q":"What does ጋሽ mean?","o":["respectful address for an older man","Mr.","grandfather"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","አባትዎ","ጋሽ"],"a":0},
+{"t":"mc","q":"Which one means your father, politely?","o":["አባትዎ","አባትህ","አባቱ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","ወይዘሪት","አባትዎ"],"a":0},
+{"t":"mc","q":"When an elder enters the room, you…","o":["stand up","stay seated","look away"],"a":0}
+]},
+{"id":"am_f6_3","title":"Building the honor","step":"build","meta":"Respect, assembled","vocab":[],"ex":[
+{"t":"wb","q":"Build: your father, politely (abbat + wo)","a":["አባት","ዎ"],"pool":["አባት","ዎ","ህ"]},
+{"t":"mc","q":"Pick the warm address for an older man","o":["ጋሽ","አቶ","እሱ"],"a":0},
+{"t":"wb","q":"Build: Gash Kebede style — gash + a name slot","a":["ጋሽ","…"],"pool":["ጋሽ","…","ወይዘሪት"]},
+{"t":"mc","q":"Pick the title meaning Miss","o":["ወይዘሪት","ወይዘሮ","አቶ"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባትዎ","o":["አባትዎ","ወይዘሪት","ጋሽ"],"a":0}
+]},
+{"id":"am_f6_4","title":"The honor in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["አባትዎ","your father (polite)"],["ጋሽ","older-man address"],["ወይዘሪት","Miss"]]},
+{"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","አባትዎ","ወይዘሪት"],"a":0},
+{"t":"match","q":"Match the title to the person","pairs":[["አቶ","Mr."],["ወይዘሮ","Mrs."],["ወይዘሪት","Miss"]]},
+{"t":"mc","q":"Greeting your friend&rsquo;s grandfather warmly, you call him…","o":["ጋሽ + his name","እሱ","ወይዘሪት + his name"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ወይዘሪት","o":["ወይዘሪት","ጋሽ","አባትዎ"],"a":0}
+]},
+{"id":"am_f6_5","title":"Checkpoint: the honor","step":"checkpoint","meta":"Show what stuck","vocab":[],"ex":[
+{"t":"mc","q":"አባትዎ is the polite form of…","o":["your father","my father","his father"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ጋሽ","o":["ጋሽ","ወይዘሪት","አባትዎ"],"a":0},
+{"t":"mc","q":"Which one means Miss?","o":["ወይዘሪት","ወይዘሮ","ጋሽ"],"a":0},
+{"t":"mc","q":"Review — the -wa ending means…","o":["her","his","my"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"አባትዎ","o":["አባትዎ","አባትህ","ጋሽ"],"a":0}
+]},
+
+/* ---------- f7 · Who is this? ---------- */
+{"id":"am_f7","title":"Who is this?","step":"learn","meta":"Man new — the zone comes together","vocab":[["ማን ነው?","man new?","who is it?"],["ይህ ጓደኛዬ ነው","yih gwadegnaye new","this is my friend"],["ቤተሰቤ","betesebe","my family"]],"ex":[
+{"t":"note","tag":"The door question","q":"ማን ነው?","body":"<p><b>ማን ነው?</b> <i>man new?</i> — <i>who is it?</i> — the knock-at-the-door question, built from two words you have owned since Zone 1. Amharic keeps rewarding attention like this.</p>","eg":[["ማን ነው?","man new?","who is it?"]]},
+{"t":"li","q":"Which one do you hear?","say":"ማን ነው?","o":["ማን ነው?","ማን"],"a":0},
+{"t":"mc","q":"ማን ነው? asks…","o":["who is it?","what is it?","where is it?"],"a":0},
+{"t":"note","tag":"Answering with a person","q":"ይህ ጓደኛዬ ነው","body":"<p>And the answer pattern: <b>ይህ ጓደኛዬ ነው</b> <i>yih gwadegnaye new</i> — <i>this is my friend</i>. Gwadegna takes -ye for <i>my</i> because it ends in a vowel — the -e ending&rsquo;s only costume change.</p>","eg":[["ይህ ጓደኛዬ ነው","yih gwadegnaye new","this is my friend"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ጓደኛዬ ነው","o":["ይህ ጓደኛዬ ነው","ማን ነው?"],"a":0},
+{"t":"mc","q":"ይህ ጓደኛዬ ነው means…","o":["this is my friend","who is my friend?","my friend is well"],"a":0},
+{"t":"note","tag":"All of them at once","q":"ቤተሰቤ","body":"<p><b>ቤተሰቤ</b> <i>betesebe</i> — <i>my family</i> — betesab wearing your -e. Introduce the whole room in one breath: ይህ ቤተሰቤ ነው — this is my family.</p>","eg":[["ቤተሰቤ","betesebe","my family"]]},
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ቤተሰብ"],"a":0},
+{"t":"mc","q":"ቤተሰቤ means…","o":["my family","the family","our families"],"a":0}
+]},
+{"id":"am_f7_2","title":"Hearing the answers","step":"recognize","meta":"Who and mine, by ear","vocab":[],"ex":[
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ማን ነው?","ይህ ጓደኛዬ ነው"],"a":0},
+{"t":"mc","q":"What does ማን ነው? mean?","o":["who is it?","whose is it?","is anyone home?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ጓደኛዬ ነው","o":["ይህ ጓደኛዬ ነው","ቤተሰቤ","ማን ነው?"],"a":0},
+{"t":"mc","q":"Which one means my family?","o":["ቤተሰቤ","ቤተሰብ","ጓደኛዬ"],"a":0},
+{"t":"li","q":"Bare or mine — which do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ቤተሰብ"],"a":0},
+{"t":"mc","q":"Gwadegna takes -ye instead of -e because it…","o":["ends in a vowel","is borrowed","is plural"],"a":0}
+]},
+{"id":"am_f7_3","title":"Building the answers","step":"build","meta":"Door, friend, family","vocab":[],"ex":[
+{"t":"wb","q":"Build: who is it?","a":["ማን","ነው?"],"pool":["ማን","ነው?","ይህ"]},
+{"t":"wb","q":"Build: this is my friend","a":["ይህ","ጓደኛዬ","ነው"],"pool":["ይህ","ጓደኛዬ","ነው","ቤተሰቤ"]},
+{"t":"mc","q":"Pick: my family","o":["ቤተሰቤ","ቤተሰብ","ጓደኛ"],"a":0},
+{"t":"wb","q":"Build: this is my family","a":["ይህ","ቤተሰቤ","ነው"],"pool":["ይህ","ቤተሰቤ","ነው","ማን"]},
+{"t":"li","q":"Which one do you hear?","say":"ማን ነው?","o":["ማን ነው?","ይህ ጓደኛዬ ነው","ቤተሰቤ"],"a":0}
+]},
+{"id":"am_f7_4","title":"The answers in the wild","step":"mix","meta":"Everything from this topic, mixed","vocab":[],"ex":[
+{"t":"match","q":"Match the Amharic to the meaning","pairs":[["ማን ነው?","who is it?"],["ይህ ጓደኛዬ ነው","this is my friend"],["ቤተሰቤ","my family"]]},
+{"t":"li","q":"Which one do you hear?","say":"ይህ ጓደኛዬ ነው","o":["ይህ ጓደኛዬ ነው","ማን ነው?","ቤተሰቤ"],"a":0},
+{"t":"match","q":"Match the question to its answer","pairs":[["ማን ነው?","ይህ ጓደኛዬ ነው"],["ደህና ነህ?","ደህና ነኝ"]]},
+{"t":"mc","q":"A knock at the door — the question through the wood is…","o":["ማን ነው?","ስምህ ማን ነው?","ከየት ነህ?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ማን ነው?","o":["ማን ነው?","ቤተሰቤ","ይህ ጓደኛዬ ነው"],"a":0}
+]},
+{"id":"am_f7_5","title":"Checkpoint: Zone 3 complete","step":"checkpoint","meta":"Family and respect — show it all","vocab":[],"ex":[
+{"t":"mc","q":"ማን ነው? means…","o":["who is it?","what is this?","are you well?"],"a":0},
+{"t":"li","q":"Which one do you hear?","say":"ቤተሰቤ","o":["ቤተሰቤ","ይህ ጓደኛዬ ነው","ማን ነው?"],"a":0},
+{"t":"mc","q":"Review — his father is…","o":["አባቱ","አባቷ","አባቴ"],"a":0},
+{"t":"mc","q":"Review — the polite your-father is…","o":["አባትዎ","አባትህ","አባትሽ"],"a":0},
+{"t":"li","q":"Review — which one do you hear?","say":"ልጆች","o":["ልጆች","ልጅ","ቤተሰቤ"],"a":0},
+{"t":"mc","q":"Review — ጋሽ warmly addresses…","o":["an older man","a young girl","a crowd"],"a":0},
+{"t":"mc","q":"Review — the -och ending makes…","o":["plurals","questions","possessives"],"a":0}
 ]}
 ];
 
@@ -620,9 +912,11 @@ const AM_UNITS=[
 {"n":1,"t":"The sounds of Amharic","d":"The fidel system, the tight consonants — and your first real words","lessons":["am_s1","am_s1_2","am_s1_3","am_s1_4","am_s1_5","am_s2","am_s2_2","am_s2_3","am_s2_4","am_s2_5","am_s3","am_s3_2","am_s3_3","am_s3_4","am_s3_5","am_s4","am_s4_2","am_s4_3","am_s4_4","am_s4_5","am_s5","am_s5_2","am_s5_3","am_s5_4","am_s5_5","am_s6","am_s6_2","am_s6_3","am_s6_4","am_s6_5","am_s7","am_s7_2","am_s7_3","am_s7_4","am_s7_5"]}
 ,
 {"n":2,"t":"Greetings and people","d":"Dehna neh and dehna nesh, names, the polite you — and thank you","lessons":["am_g1","am_g1_2","am_g1_3","am_g1_4","am_g1_5","am_g2","am_g2_2","am_g2_3","am_g2_4","am_g2_5","am_g3","am_g3_2","am_g3_3","am_g3_4","am_g3_5","am_g4","am_g4_2","am_g4_3","am_g4_4","am_g4_5","am_g5","am_g5_2","am_g5_3","am_g5_4","am_g5_5","am_g6","am_g6_2","am_g6_3","am_g6_4","am_g6_5","am_g7","am_g7_2","am_g7_3","am_g7_4","am_g7_5"]}
+,
+{"n":3,"t":"Family and respect","d":"The household, the owner endings — and honor woven into address","lessons":["am_f1","am_f1_2","am_f1_3","am_f1_4","am_f1_5","am_f2","am_f2_2","am_f2_3","am_f2_4","am_f2_5","am_f3","am_f3_2","am_f3_3","am_f3_4","am_f3_5","am_f4","am_f4_2","am_f4_3","am_f4_4","am_f4_5","am_f5","am_f5_2","am_f5_3","am_f5_4","am_f5_5","am_f6","am_f6_2","am_f6_3","am_f6_4","am_f6_5","am_f7","am_f7_2","am_f7_3","am_f7_4","am_f7_5"]}
 ];
 
-const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው"};
+const AM_SYM={"am_s1":"ለ ሉ ላ","am_s2":"መ ም","am_s3":"ሰላም","am_s4":"ተ ጠ","am_s5":"ማን","am_s6":"ላም","am_s7":"እሺ","am_g1":"ደህና ነህ?","am_g2":"ስም","am_g3":"እንደምን","am_g4":"እርስዎ","am_g5":"ከየት?","am_g6":"ሰዎች","am_g7":"ቻው","am_f1":"አባት","am_f2":"ቤተሰብ","am_f3":"አባቴ","am_f4":"ይህ","am_f5":"አባቷ","am_f6":"ጋሽ","am_f7":"ማን ነው?"};
 
 const AM_SRS_SEED=[];
 
