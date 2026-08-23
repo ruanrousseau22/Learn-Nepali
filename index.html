@@ -1930,8 +1930,37 @@ async function ensureSupabase(){
   sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON);
   sb.auth.onAuthStateChange((_e,s)=>{user=s?.user||null;onAuthChange();});
   try{const {data}=await sb.auth.getSession();user=data.session?.user||null;}catch(e){}
+  /* getSession awaits the client's initialisation, so any magic-link
+     credentials in the URL have now been consumed — drop whatever is left
+     (a spent or rejected link) so it is not carried through the session. */
+  const linkErr=authErrorInUrl();
+  cleanAuthFromUrl();
+  /* Magic links expire and are single-use. Failing silently looks exactly
+     like the routing bug this replaced — say so instead. */
+  if(linkErr&&!user)try{openAuth();const m=document.getElementById('auth-msg');
+    if(m){m.className='msg-line err';m.textContent='That sign-in link did not work (links expire and can only be used once) — send yourself a fresh one.';}}catch(e){}
   onAuthChange();
   return sb;
+}
+/* the reason a callback failed, from either flow's carrier */
+function authErrorInUrl(){
+  try{
+    const q=new URLSearchParams(location.search);
+    let d=q.get('error_description')||q.get('error');
+    if(!d&&location.hash)  {const h=new URLSearchParams(location.hash.replace(/^#/,''));d=h.get('error_description')||h.get('error');}
+    return d?String(d):'';
+  }catch(e){return '';}
+}
+/* strip magic-link credentials from the address bar, keeping the app's own
+   ?lang=/?v= route intact. Only ever called once the library has had its
+   chance at them — stripping earlier is what broke login (see routeURL). */
+function cleanAuthFromUrl(){
+  try{
+    const u=new URL(location.href);let touched=false;
+    AUTH_PARAMS.forEach(function(k){if(u.searchParams.has(k)){u.searchParams.delete(k);touched=true;}});
+    if(/access_token=|refresh_token=|expires_in=|token_type=|error_code=|error_description=/.test(u.hash)){u.hash='';touched=true;}
+    if(touched)history.replaceState(history.state,'',u.pathname+(u.search||'')+(u.hash||''));
+  }catch(e){}
 }
 function initSupabase(){if(!SUPABASE_URL||!SUPABASE_ANON)return;
   if(sbNeeded())ensureSupabase();  /* returning signed-in device, or a magic-link landing */
@@ -3448,20 +3477,41 @@ function savedLang(){
 const FAITH_VIEWS={flib:1,fstory:1,fmore:1};
 let navLock=false; /* set while popstate applies a view, so show() does not re-push it */
 
+/* A magic-link landing carries its credentials IN THE URL — the implicit flow
+   in the hash (#access_token=), PKCE in the query (?code=). supabase-js reads
+   them when its client is created, and that waits on a CDN fetch, so boot
+   always finishes first. Routing therefore has to carry them through every
+   rewrite until the library has consumed them (it strips them itself once the
+   session is stored). Dropping them silently signed every visitor back out —
+   the magic link appeared to work and landed you logged out. */
+const AUTH_PARAMS=['code','token_hash','type','error','error_code','error_description'];
+function authInUrl(){
+  try{
+    if(/access_token=|error_code=|error_description=/.test(location.hash))return true;
+    const q=new URLSearchParams(location.search);
+    return AUTH_PARAMS.some(function(k){return q.get(k)!==null;});
+  }catch(e){return false;}
+}
 function routeURL(v){
   const p=new URLSearchParams();
   if(LANG)p.set('lang',LANG.code);
   if(v&&v!=='home')p.set('v',v);
   if(v==='fstory'&&FSTORY)p.set('s',FSTORY);
+  let hash='';
+  if(authInUrl()){
+    const cur=new URLSearchParams(location.search);
+    AUTH_PARAMS.forEach(function(k){const val=cur.get(k);if(val!==null)p.set(k,val);});
+    hash=location.hash;
+  }
   const q=p.toString();
-  return location.pathname+(q?'?'+q:'');
+  return location.pathname+(q?'?'+q:'')+hash;
 }
 /* called at the end of show(); no-ops when the URL already says this, so
    repainting the same view does not stack duplicate history entries */
 function pushRoute(v){
   if(navLock)return;
   const url=routeURL(v);
-  if(url===location.pathname+location.search)return;
+  if(url===location.pathname+location.search+location.hash)return;
   try{history.pushState({v:v},'',url);}catch(e){}
 }
 window.addEventListener('popstate',async function(){

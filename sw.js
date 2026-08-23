@@ -17,7 +17,7 @@
  *
  * Bump CACHE_VERSION to invalidate everything.
  */
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v3';
 const SHELL  = 'bhasaly-shell-' + CACHE_VERSION;
 const STATIC = 'bhasaly-static-' + CACHE_VERSION;
 const AUDIO  = 'bhasaly-audio-' + CACHE_VERSION;
@@ -104,6 +104,23 @@ async function networkFirst(req, cacheName) {
   }
 }
 
+/* Navigations always cache under "/" — the query string here is app state
+   (?lang=, ?v=) and, on a sign-in landing, a one-time auth code. Keying the
+   cache on the full URL would store a separate copy of the whole page per
+   permutation and pin spent sign-in codes in cache storage. */
+async function navFirst(req) {
+  const cache = await caches.open(SHELL);
+  try {
+    const res = await fetch(req);
+    if (res && res.ok) cache.put('/', res.clone()).catch(function () {});
+    return res;
+  } catch (err) {
+    const hit = await cache.match('/');
+    if (hit) return hit;
+    throw err;
+  }
+}
+
 self.addEventListener('fetch', function (e) {
   const req = e.request;
   /* Only GET. The feedback form POSTs to "/" — intercepting that would
@@ -115,7 +132,7 @@ self.addEventListener('fetch', function (e) {
   /* never touch auth or analytics traffic */
   if (/supabase|umami|plausible/.test(url.hostname) || /supabase/.test(url.pathname)) return;
 
-  if (req.mode === 'navigate')      { e.respondWith(networkFirst(req, SHELL));        return; }
+  if (req.mode === 'navigate')      { e.respondWith(navFirst(req));                   return; }
   if (isAudio(url))                 { e.respondWith(cacheFirst(req, AUDIO, true));    return; }
   if (isFreshCritical(url))         { e.respondWith(networkFirst(req, STATIC));       return; }
   if (isFontOrIcon(url))            { e.respondWith(cacheFirst(req, STATIC, false));  return; }
