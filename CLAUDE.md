@@ -188,6 +188,17 @@ Back out of a lesson exits without the ✕ confirm — deliberate. Query params
 rather than pretty paths on purpose: no Netlify rewrite, so nothing can
 shadow the static `/learn-<slug>` pages.
 
+**Routing must never eat an auth callback.** A sign-in link arrives with its
+credentials IN THE URL — `#access_token=` (implicit flow) or `?code=` (PKCE).
+`supabase-js` reads them when its client is CREATED, and that waits on a CDN
+fetch, so boot always finishes first. `routeURL()` therefore carries auth
+params + the hash through every rewrite while `authInUrl()` is true, and
+`ensureSupabase()` calls `cleanAuthFromUrl()` once the library has consumed
+them. Rebuilding the URL from scratch here silently broke EVERY magic-link
+login for a month (Aug 2026) — the link worked and the app threw the keys
+away microseconds before using them. Test any routing change with
+`/?code=TEST` and `/#access_token=TEST`: both must survive boot.
+
 **Analytics.** `track(name, props)` speaks both Umami and Plausible and is a
 **no-op until a provider script is uncommented in `<head>`**. Event list and
 the privacy rule live in `GROWTH.md` — **props are language codes, lesson
